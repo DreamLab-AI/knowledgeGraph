@@ -160,6 +160,22 @@
       "label": "Carbon Credit Token"
     },
     {
+      "slug": "carbon-credit-token",
+      "label": "Carbon Credit Token"
+    },
+    {
+      "slug": "central-bank-digital-currency-cbdc",
+      "label": "Central Bank Digital Currency (CBDC)"
+    },
+    {
+      "slug": "creator-economy",
+      "label": "Creator Economy"
+    },
+    {
+      "slug": "creator-royalty-token",
+      "label": "Creator Royalty Token"
+    },
+    {
       "slug": "creator-royalty-token",
       "label": "Creator Royalty Token"
     },
@@ -168,12 +184,20 @@
       "label": "Cross Metaverse Commerce"
     },
     {
+      "slug": "crypto-token",
+      "label": "Crypto Token"
+    },
+    {
       "slug": "de-fi-protocol",
       "label": "De Fi Protocol"
     },
     {
       "slug": "decentralized-autonomous-organization",
       "label": "Decentralized Autonomous Organization"
+    },
+    {
+      "slug": "decentralized-exchange-dex",
+      "label": "Decentralized Exchange (DEX)"
     },
     {
       "slug": "deflationary-token",
@@ -188,12 +212,48 @@
       "label": "Deterministic Finality"
     },
     {
+      "slug": "digital-asset-workflow",
+      "label": "Digital Asset Workflow"
+    },
+    {
+      "slug": "digital-goods-registry",
+      "label": "Digital Goods Registry"
+    },
+    {
+      "slug": "digital-goods",
+      "label": "Digital Goods"
+    },
+    {
       "slug": "digital-goods",
       "label": "Digital Goods"
     },
     {
       "slug": "digital-real-estate",
       "label": "Digital Real Estate"
+    },
+    {
+      "slug": "digital-real-estate",
+      "label": "Digital Real Estate"
+    },
+    {
+      "slug": "digital-rights-management-extended",
+      "label": "Digital Rights Management (Extended)"
+    },
+    {
+      "slug": "digital-tax-compliance-node",
+      "label": "Digital Tax Compliance Node"
+    },
+    {
+      "slug": "digital-taxonomy-registry",
+      "label": "Digital Taxonomy Registry"
+    },
+    {
+      "slug": "distributed-ledger-technology-dlt",
+      "label": "Distributed Ledger Technology (DLT)"
+    },
+    {
+      "slug": "etsi-domain-application-industry",
+      "label": "ETSI Domain Application + Industry"
     },
     {
       "slug": "etsi-domain-virtual-economy",
@@ -208,12 +268,28 @@
       "label": "Economic Participation"
     },
     {
+      "slug": "fractionalized-nft",
+      "label": "Fractionalized NFT"
+    },
+    {
       "slug": "inter-world-remittance",
       "label": "Inter-world Remittance"
     },
     {
       "slug": "land-economics",
       "label": "Land Economics"
+    },
+    {
+      "slug": "liquidity-pool",
+      "label": "Liquidity Pool"
+    },
+    {
+      "slug": "loyalty-token",
+      "label": "Loyalty Token"
+    },
+    {
+      "slug": "marketplace",
+      "label": "Marketplace"
     },
     {
       "slug": "marketplace",
@@ -228,20 +304,76 @@
       "label": "Metaverse"
     },
     {
+      "slug": "micropayment",
+      "label": "Micropayment"
+    },
+    {
       "slug": "money",
       "label": "Money"
+    },
+    {
+      "slug": "nft-renting",
+      "label": "NFT Renting"
+    },
+    {
+      "slug": "nft-swapping",
+      "label": "NFT Swapping"
+    },
+    {
+      "slug": "nft-wrapping",
+      "label": "NFT Wrapping"
     },
     {
       "slug": "play-to-earn-p2-e",
       "label": "Play-to-Earn (P2E)"
     },
     {
+      "slug": "play-to-earn-p2-e",
+      "label": "Play-to-Earn (P2E)"
+    },
+    {
+      "slug": "royalty-mechanism",
+      "label": "Royalty Mechanism"
+    },
+    {
       "slug": "sink-mechanism",
       "label": "Sink Mechanism"
     },
     {
+      "slug": "smart-royalties-ledger",
+      "label": "Smart Royalties Ledger"
+    },
+    {
+      "slug": "smart-royalty-contract",
+      "label": "Smart Royalty Contract"
+    },
+    {
+      "slug": "social-token-economy",
+      "label": "Social Token Economy"
+    },
+    {
       "slug": "social-vr",
       "label": "Social VR"
+    },
+    {
+      "slug": "stablecoin",
+      "label": "Stablecoin"
+    },
+    {
+      "slug": "token-bonding-curve",
+      "label": "Token Bonding Curve"
+    },
+    {
+      "slug": "token-custody-service",
+      "label": "Token Custody Service"
+    },
+    {
+      "slug": "tokenization",
+      "label": "Tokenization"
+    },
+    {
+      "slug": "transaction-standard",
+      "label": "Transaction Standard"
     },
     {
       "slug": "transaction",
@@ -250,6 +382,10 @@
     {
       "slug": "utxo-model",
       "label": "UTXO Model"
+    },
+    {
+      "slug": "user-consent-token",
+      "label": "User Consent Token"
     },
     {
       "slug": "value-transfer",
@@ -274,6 +410,18 @@
     {
       "slug": "virtual-labor",
       "label": "Virtual Labor"
+    },
+    {
+      "slug": "virtual-notary-service",
+      "label": "Virtual Notary Service"
+    },
+    {
+      "slug": "virtual-property-right",
+      "label": "Virtual Property Right"
+    },
+    {
+      "slug": "virtual-securities-offering-vso",
+      "label": "Virtual Securities Offering (VSO)"
     },
     {
       "slug": "metaverse-core-concepts",

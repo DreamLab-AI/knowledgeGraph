@@ -411,7 +411,7 @@ public:: true
       "vc:label": "Networking"
     },
     {
-      "@id": "urn:visionflow:linked:networking-domain",
+      "@id": "urn:visionflow:linked:infra-network-and-comms",
       "vc:label": "NetworkingDomain"
     },
     {
@@ -703,7 +703,7 @@ public:: true
       "vc:label": "Gossip Protocol"
     },
     {
-      "@id": "urn:visionflow:owl:class:infrastructure-domain",
+      "@id": "urn:visionflow:owl:class:infrastructure",
       "vc:label": "InfrastructureDomain"
     },
     {
@@ -1615,7 +1615,7 @@ public:: true
     },
     {
       "raw": "[[NetworkingDomain]]",
-      "resolved": "urn:visionflow:linked:networking-domain",
+      "resolved": "urn:visionflow:linked:infra-network-and-comms",
       "kind": "StubLink"
     },
     {
@@ -1980,7 +1980,7 @@ public:: true
     },
     {
       "raw": "[[InfrastructureDomain]]",
-      "resolved": "urn:visionflow:owl:class:infrastructure-domain",
+      "resolved": "urn:visionflow:owl:class:infrastructure",
       "kind": "ResolvedLink"
     },
     {

@@ -344,7 +344,7 @@
       "label": "Data Fabric"
     },
     {
-      "slug": "data-governance-domain",
+      "slug": "data-governance",
       "label": "DataGovernanceDomain"
     },
     {
@@ -536,7 +536,7 @@
       "label": "Information Architecture"
     },
     {
-      "slug": "infrastructure-domain",
+      "slug": "infrastructure",
       "label": "InfrastructureDomain"
     },
     {

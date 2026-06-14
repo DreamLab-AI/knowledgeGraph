@@ -46,10 +46,6 @@
   ],
   "backlinks": [
     {
-      "slug": "identity-domain",
-      "label": "Identity Domain"
-    },
-    {
       "slug": "trust-framework",
       "label": "Trust Framework"
     }

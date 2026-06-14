@@ -264,7 +264,7 @@
       "label": "ComputationalGeometryDomain"
     },
     {
-      "slug": "control-systems-domain",
+      "slug": "robo-actuation-and-control",
       "label": "ControlSystemsDomain"
     },
     {
@@ -364,7 +364,7 @@
       "label": "Mathematical Model"
     },
     {
-      "slug": "mechanical-engineering-domain",
+      "slug": "robo-actuation-and-control",
       "label": "MechanicalEngineeringDomain"
     },
     {
@@ -504,7 +504,7 @@
       "label": "Robot Control"
     },
     {
-      "slug": "robotics-domain",
+      "slug": "robotics",
       "label": "RoboticsDomain"
     },
     {

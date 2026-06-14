@@ -71,7 +71,7 @@ public:: true
       "vc:label": "Dao et al. 2022 FlashAttention"
     },
     {
-      "@id": "urn:visionflow:linked:deep-learning-domain",
+      "@id": "urn:visionflow:linked:deep-learning",
       "vc:label": "DeepLearningDomain"
     },
     {
@@ -347,7 +347,7 @@ public:: true
       "vc:label": "Zaheer et al. 2020 Big Bird"
     },
     {
-      "@id": "urn:visionflow:owl:class:ai-grounded-domain",
+      "@id": "urn:visionflow:owl:class:ai-technique",
       "vc:label": "AI-GroundedDomain"
     },
     {
@@ -367,7 +367,7 @@ public:: true
       "vc:label": "Code Generation"
     },
     {
-      "@id": "urn:visionflow:owl:class:computation-and-intelligence-domain",
+      "@id": "urn:visionflow:owl:class:ai-research-area",
       "vc:label": "ComputationAndIntelligenceDomain"
     },
     {
@@ -780,7 +780,7 @@ public:: true
     },
     {
       "raw": "[[DeepLearningDomain]]",
-      "resolved": "urn:visionflow:linked:deep-learning-domain",
+      "resolved": "urn:visionflow:linked:deep-learning",
       "kind": "StubLink"
     },
     {
@@ -1125,7 +1125,7 @@ public:: true
     },
     {
       "raw": "[[AI-GroundedDomain]]",
-      "resolved": "urn:visionflow:owl:class:ai-grounded-domain",
+      "resolved": "urn:visionflow:owl:class:ai-technique",
       "kind": "ResolvedLink"
     },
     {
@@ -1150,7 +1150,7 @@ public:: true
     },
     {
       "raw": "[[ComputationAndIntelligenceDomain]]",
-      "resolved": "urn:visionflow:owl:class:computation-and-intelligence-domain",
+      "resolved": "urn:visionflow:owl:class:ai-research-area",
       "kind": "ResolvedLink"
     },
     {

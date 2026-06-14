@@ -27,7 +27,7 @@ public:: true
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:retrieval-augmented-generation-rag", "label": "Retrieval-Augmented Generation (RAG)"},
-      {"@id": "urn:ngm:class:ai-grounded-domain", "label": "AI Grounded Domain"}
+      {"@id": "urn:ngm:class:ai-technique", "label": "AI Grounded Domain"}
     ]
   },
   "quality": 0.72

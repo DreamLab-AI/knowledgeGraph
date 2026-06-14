@@ -72,7 +72,7 @@ alias:: MotionCapture
       "vc:label": "Cloth Simulation"
     },
     {
-      "@id": "urn:visionflow:linked:computer-vision-domain",
+      "@id": "urn:visionflow:linked:computer-vision",
       "vc:label": "ComputerVisionDomain"
     },
     {
@@ -657,7 +657,7 @@ alias:: MotionCapture
     },
     {
       "raw": "[[ComputerVisionDomain]]",
-      "resolved": "urn:visionflow:linked:computer-vision-domain",
+      "resolved": "urn:visionflow:linked:computer-vision",
       "kind": "StubLink"
     },
     {

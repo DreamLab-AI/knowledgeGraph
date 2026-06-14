@@ -63,7 +63,7 @@ public:: true
       "vc:label": "COCO Dataset"
     },
     {
-      "@id": "urn:visionflow:linked:computer-vision-domain",
+      "@id": "urn:visionflow:linked:computer-vision",
       "vc:label": "ComputerVisionDomain"
     },
     {
@@ -678,7 +678,7 @@ public:: true
     },
     {
       "raw": "[[ComputerVisionDomain]]",
-      "resolved": "urn:visionflow:linked:computer-vision-domain",
+      "resolved": "urn:visionflow:linked:computer-vision",
       "kind": "StubLink"
     },
     {

@@ -444,7 +444,7 @@
       "label": "GDPR Regulation 2016/679"
     },
     {
-      "slug": "governance-domain",
+      "slug": "governance",
       "label": "GovernanceDomain"
     },
     {
@@ -616,7 +616,7 @@
       "label": "Reactive Incident Response"
     },
     {
-      "slug": "regulatory-domain",
+      "slug": "infra-legal-and-regulatory",
       "label": "RegulatoryDomain"
     },
     {
@@ -780,7 +780,7 @@
       "label": "Federated Learning"
     },
     {
-      "slug": "infrastructure-domain",
+      "slug": "infrastructure",
       "label": "InfrastructureDomain"
     },
     {
@@ -834,10 +834,6 @@
       "label": "Call Centres"
     },
     {
-      "slug": "compliance-domain",
-      "label": "Compliance Domain"
-    },
-    {
       "slug": "cortex-agent",
       "label": "Cortex Agent"
     },
@@ -872,10 +868,6 @@
     {
       "slug": "policy-enforcement",
       "label": "Policy Enforcement"
-    },
-    {
-      "slug": "regulatory-compliance-domain",
-      "label": "Regulatory Compliance Domain"
     },
     {
       "slug": "regulatory-reporting",

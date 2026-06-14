@@ -91,7 +91,7 @@ public:: true
       "vc:label": "DeFi"
     },
     {
-      "@id": "urn:visionflow:linked:decentralised-finance-domain",
+      "@id": "urn:visionflow:linked:decentralised-finance",
       "vc:label": "DecentralisedFinanceDomain"
     },
     {
@@ -223,7 +223,7 @@ public:: true
       "vc:label": "Governance Attack"
     },
     {
-      "@id": "urn:visionflow:linked:governance-domain",
+      "@id": "urn:visionflow:linked:governance",
       "vc:label": "GovernanceDomain"
     },
     {
@@ -463,7 +463,7 @@ public:: true
       "vc:label": "ApplicationLayer"
     },
     {
-      "@id": "urn:visionflow:owl:class:blockchain-domain",
+      "@id": "urn:visionflow:owl:class:blockchain",
       "vc:label": "BlockchainDomain"
     },
     {
@@ -925,7 +925,7 @@ public:: true
     },
     {
       "raw": "[[DecentralisedFinanceDomain]]",
-      "resolved": "urn:visionflow:linked:decentralised-finance-domain",
+      "resolved": "urn:visionflow:linked:decentralised-finance",
       "kind": "StubLink"
     },
     {
@@ -1090,7 +1090,7 @@ public:: true
     },
     {
       "raw": "[[GovernanceDomain]]",
-      "resolved": "urn:visionflow:linked:governance-domain",
+      "resolved": "urn:visionflow:linked:governance",
       "kind": "StubLink"
     },
     {
@@ -1390,7 +1390,7 @@ public:: true
     },
     {
       "raw": "[[BlockchainDomain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-domain",
+      "resolved": "urn:visionflow:owl:class:blockchain",
       "kind": "ResolvedLink"
     },
     {

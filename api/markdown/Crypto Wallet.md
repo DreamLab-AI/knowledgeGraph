@@ -25,7 +25,7 @@ public:: true
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:bc-network-component", "label": "Network Component"}],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:web3", "label": "Web3"}, {"@id": "urn:ngm:class:web-3-domain", "label": "Web3 Domain"}]
+    "relatedTo": [{"@id": "urn:ngm:class:web3", "label": "Web3"}, {"@id": "urn:ngm:class:blockchain", "label": "Web3 Domain"}]
   },
   "quality": 0.72
 }

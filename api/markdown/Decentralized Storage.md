@@ -116,7 +116,7 @@ alias:: DecentralizedStorage
       "vc:label": "ContentAddressing"
     },
     {
-      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "@id": "urn:visionflow:owl:class:metaverse",
       "vc:label": "MetaverseDomain"
     },
     {
@@ -203,7 +203,7 @@ alias:: DecentralizedStorage
     "bridgesTo": [
       {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
       {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
-      {"@id": "urn:ngm:class:metaverse-domain", "label": "Metaverse Domain"}
+      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse Domain"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:storj", "label": "Storj"},
@@ -364,7 +364,7 @@ alias:: DecentralizedStorage
     },
     {
       "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "resolved": "urn:visionflow:owl:class:metaverse",
       "kind": "ResolvedLink"
     },
     {

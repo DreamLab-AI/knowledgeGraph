@@ -143,7 +143,7 @@
       "label": "Autonomous Economic Agents"
     },
     {
-      "slug": "data-management-domain",
+      "slug": "data-management",
       "label": "DataManagementDomain"
     },
     {
@@ -199,7 +199,7 @@
       "label": "Zero-Shot Learning"
     },
     {
-      "slug": "ai-grounded-domain",
+      "slug": "ai-technique",
       "label": "AI-GroundedDomain"
     },
     {
@@ -219,7 +219,7 @@
       "label": "Code Generation"
     },
     {
-      "slug": "computation-and-intelligence-domain",
+      "slug": "ai-research-area",
       "label": "ComputationAndIntelligenceDomain"
     },
     {

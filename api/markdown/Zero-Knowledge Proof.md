@@ -28,7 +28,7 @@ alias:: BC-0023-zero-knowledge-proofs, BC-0202-zero-knowledge-proofs, BC-0315-ze
       "vc:label": "Blockchain Entity"
     },
     {
-      "@id": "urn:visionflow:owl:class:cryptographic-domain",
+      "@id": "urn:visionflow:owl:class:bc-cryptographic-primitive",
       "vc:label": "CryptographicDomain"
     },
     {
@@ -164,7 +164,7 @@ alias:: BC-0023-zero-knowledge-proofs, BC-0202-zero-knowledge-proofs, BC-0315-ze
     },
     {
       "raw": "[[CryptographicDomain]]",
-      "resolved": "urn:visionflow:owl:class:cryptographic-domain",
+      "resolved": "urn:visionflow:owl:class:bc-cryptographic-primitive",
       "kind": "ResolvedLink"
     },
     {

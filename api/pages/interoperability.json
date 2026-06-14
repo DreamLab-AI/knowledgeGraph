@@ -757,7 +757,7 @@
       "label": "Lightning Network"
     },
     {
-      "slug": "metaverse-domain",
+      "slug": "metaverse",
       "label": "MetaverseDomain"
     },
     {
@@ -803,12 +803,24 @@
       "label": "Connext"
     },
     {
+      "slug": "cross-chain-bridge",
+      "label": "Cross-Chain Bridge"
+    },
+    {
+      "slug": "data-integration-interface",
+      "label": "Data Integration Interface"
+    },
+    {
       "slug": "decentralised-web",
       "label": "Decentralised Web"
     },
     {
       "slug": "etsi-domain-interoperability",
       "label": "ETSI_Domain_Interoperability"
+    },
+    {
+      "slug": "etsi-domain-interoperability-creative",
+      "label": "ETSI_Domain_Interoperability___Creative"
     },
     {
       "slug": "etsi-domain-virtual-society",
@@ -841,10 +853,6 @@
     {
       "slug": "layer-zero",
       "label": "LayerZero"
-    },
-    {
-      "slug": "metaverse-domain",
-      "label": "Metaverse Domain"
     },
     {
       "slug": "middleware",
@@ -901,6 +909,10 @@
     {
       "slug": "trustless-coordination",
       "label": "Trustless Coordination"
+    },
+    {
+      "slug": "universal-manifest",
+      "label": "Universal Manifest"
     },
     {
       "slug": "universal-scene-description",

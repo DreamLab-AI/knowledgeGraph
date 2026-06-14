@@ -288,7 +288,7 @@
       "label": "AI Procurement"
     },
     {
-      "slug": "aisafety-domain",
+      "slug": "ai-safety",
       "label": "AISafetyDomain"
     },
     {
@@ -676,7 +676,7 @@
       "label": "AI Governance"
     },
     {
-      "slug": "ai-grounded-domain",
+      "slug": "ai-technique",
       "label": "AI-GroundedDomain"
     },
     {
@@ -688,7 +688,7 @@
       "label": "ApplicationLayer"
     },
     {
-      "slug": "artificial-intelligence-domain",
+      "slug": "artificial-intelligence",
       "label": "ArtificialIntelligenceDomain"
     },
     {

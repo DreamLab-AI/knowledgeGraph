@@ -115,7 +115,7 @@
       "label": "ControlLaw"
     },
     {
-      "slug": "control-theory-domain",
+      "slug": "control-theory",
       "label": "ControlTheoryDomain"
     },
     {
@@ -203,7 +203,7 @@
       "label": "PowerSupply"
     },
     {
-      "slug": "robotics-domain",
+      "slug": "robotics",
       "label": "RoboticsDomain"
     }
   ],

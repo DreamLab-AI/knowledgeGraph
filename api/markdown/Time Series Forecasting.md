@@ -244,7 +244,7 @@ alias:: Time-Series Forecasting
       "vc:label": "Transformer Attention"
     },
     {
-      "@id": "urn:visionflow:owl:class:ai-grounded-domain",
+      "@id": "urn:visionflow:owl:class:ai-technique",
       "vc:label": "AI-GroundedDomain"
     },
     {
@@ -874,7 +874,7 @@ alias:: Time-Series Forecasting
     },
     {
       "raw": "[[AI-GroundedDomain]]",
-      "resolved": "urn:visionflow:owl:class:ai-grounded-domain",
+      "resolved": "urn:visionflow:owl:class:ai-technique",
       "kind": "ResolvedLink"
     },
     {

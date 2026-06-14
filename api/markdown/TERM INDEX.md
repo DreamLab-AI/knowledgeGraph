@@ -27,7 +27,7 @@ public:: true
       "vc:label": "SPARQLQuery"
     },
     {
-      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "@id": "urn:visionflow:owl:class:metaverse",
       "vc:label": "MetaverseDomain"
     }
   ],
@@ -80,7 +80,7 @@ public:: true
     "relatedTo": [
       {"@id": "urn:ngm:class:semantic-web-linked-data-standard", "label": "Semantic Web"},
       {"@id": "urn:ngm:class:linked-data", "label": "Linked Data"},
-      {"@id": "urn:ngm:class:metaverse-domain", "label": "Metaverse Domain"}
+      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse Domain"}
     ]
   },
   "provenance": {
@@ -122,7 +122,7 @@ public:: true
     },
     {
       "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "resolved": "urn:visionflow:owl:class:metaverse",
       "kind": "ResolvedLink"
     }
   ],

@@ -375,7 +375,7 @@ public:: true
       "vc:label": "Yuan et al. 2024 Self-Rewarding Language Models"
     },
     {
-      "@id": "urn:visionflow:owl:class:ai-grounded-domain",
+      "@id": "urn:visionflow:owl:class:ai-technique",
       "vc:label": "AI-GroundedDomain"
     },
     {
@@ -1144,7 +1144,7 @@ public:: true
     },
     {
       "raw": "[[AI-GroundedDomain]]",
-      "resolved": "urn:visionflow:owl:class:ai-grounded-domain",
+      "resolved": "urn:visionflow:owl:class:ai-technique",
       "kind": "ResolvedLink"
     },
     {

@@ -142,10 +142,5 @@
       "label": "Autonomous Vehicle"
     }
   ],
-  "backlinks": [
-    {
-      "slug": "autonomous-systems-domain",
-      "label": "Autonomous Systems Domain"
-    }
-  ]
+  "backlinks": []
 }

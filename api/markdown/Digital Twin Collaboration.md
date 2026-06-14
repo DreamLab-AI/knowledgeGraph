@@ -108,7 +108,7 @@ alias:: TELE-300-digital-twin-collaboration
       "label": "Telepresence"
     },
     {
-      "@id": "urn:ngm:class:telecollaboration-domain",
+      "@id": "urn:ngm:class:telecollaboration",
       "label": "TELE-002-telecollaboration"
     }
   ],

@@ -8,7 +8,7 @@
   "definition": "Sensors are devices that transduce physical quantities\u2014distance, force, temperature, orientation, light, electromagnetic fields\u2014into electrical or digital signals that a robot or computational system can process, providing the perceptual input for state estimation, control, and decision making.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:robotics-domain",
+      "id": "urn:ngm:class:robotics",
       "label": "Robotics Domain"
     }
   ],
@@ -162,7 +162,7 @@
       "label": "Radar"
     },
     {
-      "slug": "robotics-domain",
+      "slug": "robotics",
       "label": "Robotics Domain"
     }
   ],

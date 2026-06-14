@@ -253,11 +253,11 @@
       "label": "WebSocket Protocol"
     },
     {
-      "slug": "blockchain-domain",
+      "slug": "blockchain",
       "label": "Blockchain Domain"
     },
     {
-      "slug": "ngm-domain",
+      "slug": "infrastructure",
       "label": "NGM Domain"
     },
     {
@@ -273,7 +273,7 @@
       "label": "Robot Operating System"
     },
     {
-      "slug": "robotics-domain",
+      "slug": "robotics",
       "label": "Robotics Domain"
     },
     {
@@ -281,7 +281,7 @@
       "label": "Solid Pod"
     },
     {
-      "slug": "telecollaboration-domain",
+      "slug": "telecollaboration",
       "label": "Telecollaboration Domain"
     },
     {
@@ -357,10 +357,6 @@
     {
       "slug": "lang-chain",
       "label": "LangChain"
-    },
-    {
-      "slug": "ngm-domain",
-      "label": "NGM Domain"
     },
     {
       "slug": "nostr-protocol",

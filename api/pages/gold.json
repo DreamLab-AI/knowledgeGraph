@@ -311,11 +311,11 @@
       "label": "Custodian Bank"
     },
     {
-      "slug": "digital-asset-domain",
+      "slug": "digital-asset",
       "label": "DigitalAssetDomain"
     },
     {
-      "slug": "economics-domain",
+      "slug": "economics",
       "label": "EconomicsDomain"
     },
     {
@@ -487,11 +487,11 @@
       "label": "Blockchain"
     },
     {
-      "slug": "blockchain-domain",
+      "slug": "blockchain",
       "label": "Blockchain Domain"
     },
     {
-      "slug": "blockchain-domain",
+      "slug": "blockchain",
       "label": "BlockchainDomain"
     },
     {

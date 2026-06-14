@@ -211,7 +211,7 @@
       "label": "Security Framework"
     },
     {
-      "slug": "trust-and-governance-domain",
+      "slug": "ai-governance-and-ethics",
       "label": "TrustAndGovernanceDomain"
     }
   ],
@@ -267,10 +267,6 @@
     {
       "slug": "privacy-filter",
       "label": "Privacy Filter"
-    },
-    {
-      "slug": "security-domain",
-      "label": "Security Domain"
     },
     {
       "slug": "trust-and-safety",

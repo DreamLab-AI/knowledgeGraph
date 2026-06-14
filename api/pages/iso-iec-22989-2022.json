@@ -53,10 +53,6 @@
       "label": "Autoencoder"
     },
     {
-      "slug": "computer-vision-domain",
-      "label": "Computer Vision Domain"
-    },
-    {
       "slug": "convolutional-neural-network",
       "label": "Convolutional Neural Network"
     },
@@ -67,14 +63,6 @@
     {
       "slug": "dropout",
       "label": "Dropout"
-    },
-    {
-      "slug": "machine-learning-domain",
-      "label": "Machine Learning Domain"
-    },
-    {
-      "slug": "natural-language-processing-domain",
-      "label": "Natural Language Processing Domain"
     },
     {
       "slug": "recurrent-neural-network",

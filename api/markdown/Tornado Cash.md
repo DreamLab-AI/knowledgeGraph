@@ -27,11 +27,11 @@ public:: true
       "vc:label": "zk-SNARK"
     },
     {
-      "@id": "urn:visionflow:linked:regulatory-domain",
+      "@id": "urn:visionflow:linked:infra-legal-and-regulatory",
       "vc:label": "Regulatory Domain"
     },
     {
-      "@id": "urn:visionflow:linked:cryptographic-domain",
+      "@id": "urn:visionflow:linked:bc-cryptographic-primitive",
       "vc:label": "Cryptographic Domain"
     }
   ],
@@ -63,7 +63,7 @@ public:: true
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": {
-    "@id": "urn:ngm:class:cryptographic-domain",
+    "@id": "urn:ngm:class:bc-cryptographic-primitive",
     "label": "Cryptographic Domain"
   },
   "relations": {
@@ -171,7 +171,7 @@ public:: true
         "label": "Financial Privacy"
       },
       {
-        "@id": "urn:ngm:class:regulatory-domain",
+        "@id": "urn:ngm:class:infra-legal-and-regulatory",
         "label": "Regulatory Domain"
       },
       {
@@ -230,12 +230,12 @@ public:: true
     },
     {
       "raw": "[[Regulatory Domain]]",
-      "resolved": "urn:visionflow:linked:regulatory-domain",
+      "resolved": "urn:visionflow:linked:infra-legal-and-regulatory",
       "kind": "ResolvedLink"
     },
     {
       "raw": "[[Cryptographic Domain]]",
-      "resolved": "urn:visionflow:linked:cryptographic-domain",
+      "resolved": "urn:visionflow:linked:bc-cryptographic-primitive",
       "kind": "ResolvedLink"
     }
   ],

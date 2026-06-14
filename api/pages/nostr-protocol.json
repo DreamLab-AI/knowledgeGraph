@@ -268,7 +268,7 @@
       "label": "WebSocket Protocol"
     },
     {
-      "slug": "blockchain-domain",
+      "slug": "blockchain",
       "label": "Blockchain Domain"
     },
     {
@@ -276,7 +276,7 @@
       "label": "DID Nostr Identity"
     },
     {
-      "slug": "metaverse-domain",
+      "slug": "metaverse",
       "label": "Metaverse Domain"
     },
     {
@@ -284,7 +284,7 @@
       "label": "Model Context Protocol"
     },
     {
-      "slug": "ngm-domain",
+      "slug": "infrastructure",
       "label": "NGM Domain"
     },
     {
@@ -296,7 +296,7 @@
       "label": "Solid Pod"
     },
     {
-      "slug": "telecollaboration-domain",
+      "slug": "telecollaboration",
       "label": "Telecollaboration Domain"
     },
     {
@@ -348,10 +348,6 @@
     {
       "slug": "model-inversion",
       "label": "Model Inversion"
-    },
-    {
-      "slug": "ngm-domain",
-      "label": "NGM Domain"
     },
     {
       "slug": "privacy-preserving-dynamic-creative-optimisation",

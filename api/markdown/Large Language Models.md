@@ -24,7 +24,7 @@ alias:: LLM, Large Language Model
       "vc:label": "Autonomous Economic Agents"
     },
     {
-      "@id": "urn:visionflow:linked:data-management-domain",
+      "@id": "urn:visionflow:linked:data-management",
       "vc:label": "DataManagementDomain"
     },
     {
@@ -80,7 +80,7 @@ alias:: LLM, Large Language Model
       "vc:label": "Zero-Shot Learning"
     },
     {
-      "@id": "urn:visionflow:owl:class:ai-grounded-domain",
+      "@id": "urn:visionflow:owl:class:ai-technique",
       "vc:label": "AI-GroundedDomain"
     },
     {
@@ -100,7 +100,7 @@ alias:: LLM, Large Language Model
       "vc:label": "Code Generation"
     },
     {
-      "@id": "urn:visionflow:owl:class:computation-and-intelligence-domain",
+      "@id": "urn:visionflow:owl:class:ai-research-area",
       "vc:label": "ComputationAndIntelligenceDomain"
     },
     {
@@ -381,7 +381,7 @@ alias:: LLM, Large Language Model
     },
     {
       "raw": "[[DataManagementDomain]]",
-      "resolved": "urn:visionflow:linked:data-management-domain",
+      "resolved": "urn:visionflow:linked:data-management",
       "kind": "StubLink"
     },
     {
@@ -451,7 +451,7 @@ alias:: LLM, Large Language Model
     },
     {
       "raw": "[[AI-GroundedDomain]]",
-      "resolved": "urn:visionflow:owl:class:ai-grounded-domain",
+      "resolved": "urn:visionflow:owl:class:ai-technique",
       "kind": "ResolvedLink"
     },
     {
@@ -476,7 +476,7 @@ alias:: LLM, Large Language Model
     },
     {
       "raw": "[[ComputationAndIntelligenceDomain]]",
-      "resolved": "urn:visionflow:owl:class:computation-and-intelligence-domain",
+      "resolved": "urn:visionflow:owl:class:ai-research-area",
       "kind": "ResolvedLink"
     },
     {

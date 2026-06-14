@@ -97,7 +97,7 @@ alias:: TELE-003-social-presence-theory
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:telecollaboration-domain",
+        "@id": "urn:ngm:class:telecollaboration",
         "label": "TELE-002-telecollaboration"
       }
     ]

@@ -33,7 +33,7 @@
         "label": "Reliability"
       },
       {
-        "id": "urn:ngm:class:software-engineering-domain",
+        "id": "urn:ngm:class:software-engineering",
         "label": "Software Engineering Domain"
       }
     ]
@@ -43,10 +43,6 @@
     {
       "slug": "reliability",
       "label": "Reliability"
-    },
-    {
-      "slug": "software-engineering-domain",
-      "label": "Software Engineering Domain"
     }
   ]
 }

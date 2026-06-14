@@ -79,7 +79,7 @@ public:: true
       "vc:label": "Cypher Query Language"
     },
     {
-      "@id": "urn:visionflow:linked:data-management-domain",
+      "@id": "urn:visionflow:linked:data-management",
       "vc:label": "DataManagementDomain"
     },
     {
@@ -219,7 +219,7 @@ public:: true
       "vc:label": "Key-Value Store"
     },
     {
-      "@id": "urn:visionflow:linked:knowledge-representation-domain",
+      "@id": "urn:visionflow:linked:knowledge-representation",
       "vc:label": "KnowledgeRepresentationDomain"
     },
     {
@@ -942,7 +942,7 @@ public:: true
     },
     {
       "raw": "[[DataManagementDomain]]",
-      "resolved": "urn:visionflow:linked:data-management-domain",
+      "resolved": "urn:visionflow:linked:data-management",
       "kind": "StubLink"
     },
     {
@@ -1117,7 +1117,7 @@ public:: true
     },
     {
       "raw": "[[KnowledgeRepresentationDomain]]",
-      "resolved": "urn:visionflow:linked:knowledge-representation-domain",
+      "resolved": "urn:visionflow:linked:knowledge-representation",
       "kind": "StubLink"
     },
     {

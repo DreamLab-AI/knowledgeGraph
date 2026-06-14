@@ -168,7 +168,7 @@
       "label": "Counterfeiting"
     },
     {
-      "slug": "blockchain-domain",
+      "slug": "blockchain",
       "label": "BlockchainDomain"
     },
     {
@@ -200,10 +200,6 @@
     {
       "slug": "fashion",
       "label": "Fashion"
-    },
-    {
-      "slug": "token-economics-domain",
-      "label": "Token Economics Domain"
     }
   ]
 }

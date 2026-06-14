@@ -134,7 +134,7 @@
       "label": "Artificial Intelligence"
     },
     {
-      "slug": "artificial-intelligence-domain",
+      "slug": "artificial-intelligence",
       "label": "ArtificialIntelligenceDomain"
     },
     {
@@ -238,6 +238,14 @@
     {
       "slug": "ai-agent-system",
       "label": "AI Agent System"
+    },
+    {
+      "slug": "ai-upscaling-and-super-resolution",
+      "label": "AI Upscaling and Super-Resolution"
+    },
+    {
+      "slug": "ai-video",
+      "label": "AI Video"
     },
     {
       "slug": "ai-video",
@@ -376,6 +384,10 @@
       "label": "Camera Parameters"
     },
     {
+      "slug": "camera",
+      "label": "Camera"
+    },
+    {
       "slug": "category-hierarchies",
       "label": "Category Hierarchies"
     },
@@ -398,6 +410,10 @@
     {
       "slug": "collision-avoidance",
       "label": "Collision Avoidance"
+    },
+    {
+      "slug": "comfy-ui-workflows",
+      "label": "ComfyUI Workflows"
     },
     {
       "slug": "comfy-ui-for-fashion-and-brands",
@@ -474,6 +490,10 @@
     {
       "slug": "contrastive-learning",
       "label": "Contrastive Learning"
+    },
+    {
+      "slug": "control-net-and-similar-spatial-conditioning-systems",
+      "label": "ControlNet and Similar Spatial Conditioning Systems"
     },
     {
       "slug": "conversion-pipeline",
@@ -566,6 +586,10 @@
     {
       "slug": "definitions-and-frameworks-for-metaverse",
       "label": "Definitions and frameworks for Metaverse"
+    },
+    {
+      "slug": "depth-estimation",
+      "label": "Depth Estimation"
     },
     {
       "slug": "depth-estimation",
@@ -732,6 +756,10 @@
       "label": "Face Recognition"
     },
     {
+      "slug": "face-swap",
+      "label": "Face Swap"
+    },
+    {
       "slug": "fashion",
       "label": "Fashion"
     },
@@ -804,12 +832,24 @@
       "label": "Image and Video Restoration"
     },
     {
+      "slug": "image-and-video-restoration",
+      "label": "Image and Video Restoration"
+    },
+    {
       "slug": "industrial-robot",
       "label": "Industrial Robot"
     },
     {
+      "slug": "inpainting",
+      "label": "Inpainting"
+    },
+    {
       "slug": "intelligent-virtual-entity",
       "label": "Intelligent Virtual Entity"
+    },
+    {
+      "slug": "kohya-dreambooth-and-similar",
+      "label": "KOHYA Dreambooth and similar"
     },
     {
       "slug": "kohya-dreambooth-and-similar",
@@ -822,6 +862,14 @@
     {
       "slug": "lens-and-camera-calibration",
       "label": "Lens and Camera Calibration"
+    },
+    {
+      "slug": "lens-and-camera-calibration",
+      "label": "Lens and Camera Calibration"
+    },
+    {
+      "slug": "linear-algebra",
+      "label": "Linear Algebra"
     },
     {
       "slug": "lo-ra-do-ra-etc",
@@ -856,12 +904,20 @@
       "label": "Mixed Reality"
     },
     {
+      "slug": "mixed-reality",
+      "label": "Mixed Reality"
+    },
+    {
       "slug": "mobile-robot-platform",
       "label": "Mobile Robot Platform"
     },
     {
       "slug": "motion-capture-rig",
       "label": "Motion Capture Rig"
+    },
+    {
+      "slug": "motion-capture",
+      "label": "Motion Capture"
     },
     {
       "slug": "motion-capture",
@@ -932,6 +988,14 @@
       "label": "Pose Estimation"
     },
     {
+      "slug": "pose-estimation",
+      "label": "Pose Estimation"
+    },
+    {
+      "slug": "proprietary-ai-video",
+      "label": "Proprietary AI Video"
+    },
+    {
       "slug": "proprietary-ai-video",
       "label": "Proprietary AI Video"
     },
@@ -950,10 +1014,6 @@
     {
       "slug": "robotics-control",
       "label": "Robotics Control"
-    },
-    {
-      "slug": "robotics-domain",
-      "label": "Robotics Domain"
     },
     {
       "slug": "robotics-platform",
@@ -976,6 +1036,10 @@
       "label": "Segmentation and Identification"
     },
     {
+      "slug": "segmentation-and-identification",
+      "label": "Segmentation and Identification"
+    },
+    {
       "slug": "semantic-segmentation",
       "label": "Semantic Segmentation"
     },
@@ -986,10 +1050,6 @@
     {
       "slug": "social-robotics",
       "label": "Social Robotics"
-    },
-    {
-      "slug": "spatial-computing-layer",
-      "label": "Spatial Computing Layer"
     },
     {
       "slug": "super-resolution",
@@ -1020,12 +1080,20 @@
       "label": "Topological Map"
     },
     {
+      "slug": "topological-map",
+      "label": "Topological Map"
+    },
+    {
       "slug": "training-data",
       "label": "Training Data"
     },
     {
       "slug": "transformers",
       "label": "Transformers"
+    },
+    {
+      "slug": "unreal-engine",
+      "label": "Unreal Engine"
     },
     {
       "slug": "virtual-production",

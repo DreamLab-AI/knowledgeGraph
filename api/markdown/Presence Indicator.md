@@ -83,7 +83,7 @@ public:: true
       "vc:label": "Device Sensors"
     },
     {
-      "@id": "urn:visionflow:linked:distributed-collaboration-domain",
+      "@id": "urn:visionflow:linked:distributed-collaboration",
       "vc:label": "DistributedCollaborationDomain"
     },
     {
@@ -99,7 +99,7 @@ public:: true
       "vc:label": "Focus Mode"
     },
     {
-      "@id": "urn:visionflow:linked:human-computer-interaction-domain",
+      "@id": "urn:visionflow:linked:human-computer-interaction",
       "vc:label": "HumanComputerInteractionDomain"
     },
     {
@@ -504,7 +504,7 @@ public:: true
         "label": "Social Presence Theory"
       },
       {
-        "@id": "urn:ngm:class:spatial-computing-paradigm",
+        "@id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing"
       },
       {
@@ -671,7 +671,7 @@ public:: true
     },
     {
       "raw": "[[DistributedCollaborationDomain]]",
-      "resolved": "urn:visionflow:linked:distributed-collaboration-domain",
+      "resolved": "urn:visionflow:linked:distributed-collaboration",
       "kind": "StubLink"
     },
     {
@@ -691,7 +691,7 @@ public:: true
     },
     {
       "raw": "[[HumanComputerInteractionDomain]]",
-      "resolved": "urn:visionflow:linked:human-computer-interaction-domain",
+      "resolved": "urn:visionflow:linked:human-computer-interaction",
       "kind": "StubLink"
     },
     {

@@ -95,7 +95,7 @@ public:: true
       "vc:label": "Delegated Staking"
     },
     {
-      "@id": "urn:visionflow:linked:distributed-systems-domain",
+      "@id": "urn:visionflow:linked:distributed-systems",
       "vc:label": "DistributedSystemsDomain"
     },
     {
@@ -219,7 +219,7 @@ public:: true
       "vc:label": "Storage Proofs"
     },
     {
-      "@id": "urn:visionflow:linked:sustainability-domain",
+      "@id": "urn:visionflow:linked:sustainability",
       "vc:label": "SustainabilityDomain"
     },
     {
@@ -271,7 +271,7 @@ public:: true
       "vc:label": "Bitcoin Mining"
     },
     {
-      "@id": "urn:visionflow:owl:class:blockchain-domain",
+      "@id": "urn:visionflow:owl:class:blockchain",
       "vc:label": "BlockchainDomain"
     },
     {
@@ -776,7 +776,7 @@ public:: true
     },
     {
       "raw": "[[DistributedSystemsDomain]]",
-      "resolved": "urn:visionflow:linked:distributed-systems-domain",
+      "resolved": "urn:visionflow:linked:distributed-systems",
       "kind": "StubLink"
     },
     {
@@ -931,7 +931,7 @@ public:: true
     },
     {
       "raw": "[[SustainabilityDomain]]",
-      "resolved": "urn:visionflow:linked:sustainability-domain",
+      "resolved": "urn:visionflow:linked:sustainability",
       "kind": "StubLink"
     },
     {
@@ -996,7 +996,7 @@ public:: true
     },
     {
       "raw": "[[BlockchainDomain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-domain",
+      "resolved": "urn:visionflow:owl:class:blockchain",
       "kind": "ResolvedLink"
     },
     {

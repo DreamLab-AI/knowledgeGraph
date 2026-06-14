@@ -1448,7 +1448,7 @@
       "label": "GovAlpha"
     },
     {
-      "slug": "governance-domain",
+      "slug": "governance",
       "label": "GovernanceDomain"
     },
     {
@@ -2936,7 +2936,7 @@
       "label": "block-height"
     },
     {
-      "slug": "blockchain-domain",
+      "slug": "blockchain",
       "label": "BlockchainDomain"
     },
     {

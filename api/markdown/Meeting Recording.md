@@ -35,11 +35,11 @@ public:: true
       "vc:label": "Cloud Storage Infrastructure"
     },
     {
-      "@id": "urn:visionflow:linked:compliance-domain",
+      "@id": "urn:visionflow:linked:compliance",
       "vc:label": "ComplianceDomain"
     },
     {
-      "@id": "urn:visionflow:linked:distributed-collaboration-domain",
+      "@id": "urn:visionflow:linked:distributed-collaboration",
       "vc:label": "DistributedCollaborationDomain"
     },
     {
@@ -555,12 +555,12 @@ public:: true
     },
     {
       "raw": "[[ComplianceDomain]]",
-      "resolved": "urn:visionflow:linked:compliance-domain",
+      "resolved": "urn:visionflow:linked:compliance",
       "kind": "StubLink"
     },
     {
       "raw": "[[DistributedCollaborationDomain]]",
-      "resolved": "urn:visionflow:linked:distributed-collaboration-domain",
+      "resolved": "urn:visionflow:linked:distributed-collaboration",
       "kind": "StubLink"
     },
     {

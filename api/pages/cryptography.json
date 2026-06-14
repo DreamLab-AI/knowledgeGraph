@@ -280,6 +280,18 @@
       "label": "Authentication Service"
     },
     {
+      "slug": "btc-layer-3",
+      "label": "BTC Layer 3"
+    },
+    {
+      "slug": "bitcoin-mining",
+      "label": "Bitcoin Mining"
+    },
+    {
+      "slug": "bitcoin-technical-overview",
+      "label": "Bitcoin Technical Overview"
+    },
+    {
       "slug": "bitcoin-technical-overview",
       "label": "Bitcoin Technical Overview"
     },
@@ -292,8 +304,16 @@
       "label": "Blockchain Infrastructure"
     },
     {
+      "slug": "blockchain-interoperability",
+      "label": "Blockchain Interoperability"
+    },
+    {
       "slug": "blockchain-network",
       "label": "Blockchain Network"
+    },
+    {
+      "slug": "cashu",
+      "label": "Cashu"
     },
     {
       "slug": "cold-chain-monitoring",
@@ -302,6 +322,14 @@
     {
       "slug": "content-provenance",
       "label": "Content Provenance"
+    },
+    {
+      "slug": "cross-chain-bridge",
+      "label": "Cross-Chain Bridge"
+    },
+    {
+      "slug": "cryptocurrency",
+      "label": "Cryptocurrency"
     },
     {
       "slug": "cryptocurrency",
@@ -332,8 +360,16 @@
       "label": "Cryptographic Protocols"
     },
     {
+      "slug": "cyber-security-and-cryptography",
+      "label": "Cyber Security and Cryptography"
+    },
+    {
       "slug": "cyber-security-and-military",
       "label": "Cyber Security and Military"
+    },
+    {
+      "slug": "did-nostr-identity",
+      "label": "DID Nostr Identity"
     },
     {
       "slug": "did",
@@ -356,12 +392,24 @@
       "label": "Decentralised Web"
     },
     {
+      "slug": "digital-identity-wallet",
+      "label": "Digital Identity Wallet"
+    },
+    {
+      "slug": "digital-signature",
+      "label": "Digital Signature"
+    },
+    {
       "slug": "digital-signatures",
       "label": "Digital Signatures"
     },
     {
       "slug": "digital-society-surveillance",
       "label": "Digital Society Surveillance"
+    },
+    {
+      "slug": "distributed-identity",
+      "label": "Distributed Identity"
     },
     {
       "slug": "distributed-identity",
@@ -392,12 +440,24 @@
       "label": "Hash Function"
     },
     {
+      "slug": "hash-function",
+      "label": "Hash Function"
+    },
+    {
       "slug": "hash-functions",
       "label": "Hash Functions"
     },
     {
+      "slug": "hyperledger-indy",
+      "label": "Hyperledger Indy"
+    },
+    {
       "slug": "information-theory",
       "label": "Information Theory"
+    },
+    {
+      "slug": "instant-value-settlement",
+      "label": "Instant value settlement"
     },
     {
       "slug": "io-t-sensor-network",
@@ -416,6 +476,14 @@
       "label": "Lattice Cryptography"
     },
     {
+      "slug": "lightning-network",
+      "label": "Lightning Network"
+    },
+    {
+      "slug": "liquidity-provision",
+      "label": "Liquidity Provision"
+    },
+    {
       "slug": "micropayments",
       "label": "Micropayments"
     },
@@ -428,8 +496,28 @@
       "label": "Modular Arithmetic"
     },
     {
+      "slug": "modular-arithmetic",
+      "label": "Modular Arithmetic"
+    },
+    {
+      "slug": "multi-sig-governance",
+      "label": "Multi Sig Governance"
+    },
+    {
       "slug": "multisig",
       "label": "Multisig"
+    },
+    {
+      "slug": "non-repudiation",
+      "label": "Non-Repudiation"
+    },
+    {
+      "slug": "number-theory",
+      "label": "Number Theory"
+    },
+    {
+      "slug": "on-chain-voting",
+      "label": "On Chain Voting"
     },
     {
       "slug": "plonk",
@@ -440,12 +528,24 @@
       "label": "Peter Todd"
     },
     {
+      "slug": "privacy-preserving-analytics",
+      "label": "Privacy Preserving Analytics"
+    },
+    {
+      "slug": "privacy-preserving-blockchain",
+      "label": "Privacy Preserving Blockchain"
+    },
+    {
       "slug": "privacy-preserving",
       "label": "Privacy-Preserving"
     },
     {
       "slug": "quantum-key-distribution",
       "label": "Quantum Key Distribution"
+    },
+    {
+      "slug": "rgb-and-client-side-validation",
+      "label": "RGB and Client Side Validation"
     },
     {
       "slug": "random-number-generation",
@@ -468,12 +568,32 @@
       "label": "Ring Signature"
     },
     {
+      "slug": "stark",
+      "label": "STARK"
+    },
+    {
+      "slug": "self-sovereign-identity",
+      "label": "Self Sovereign Identity"
+    },
+    {
       "slug": "self-sovereign-identity",
       "label": "Self Sovereign Identity"
     },
     {
       "slug": "shamir-secret-sharing",
       "label": "Shamir Secret Sharing"
+    },
+    {
+      "slug": "shamir-secret-sharing",
+      "label": "Shamir Secret Sharing"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "sovereign-keyset",
+      "label": "Sovereign Keyset"
     },
     {
       "slug": "state-machine",
@@ -486,6 +606,14 @@
     {
       "slug": "symmetric-encryption",
       "label": "Symmetric Encryption"
+    },
+    {
+      "slug": "taproot-assets",
+      "label": "Taproot Assets"
+    },
+    {
+      "slug": "testnet",
+      "label": "Testnet"
     },
     {
       "slug": "testnet",
@@ -510,6 +638,10 @@
     {
       "slug": "user-sovereignty",
       "label": "User Sovereignty"
+    },
+    {
+      "slug": "verifiable-credentials",
+      "label": "Verifiable Credentials"
     },
     {
       "slug": "web3",

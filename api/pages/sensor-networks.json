@@ -62,10 +62,6 @@
       "label": "Cold Chain Monitoring"
     },
     {
-      "slug": "environmental-domain",
-      "label": "Environmental Domain"
-    },
-    {
       "slug": "telecollaboration-and-telepresence",
       "label": "Telecollaboration and Telepresence"
     }

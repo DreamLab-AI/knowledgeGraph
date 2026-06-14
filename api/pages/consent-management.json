@@ -179,7 +179,7 @@
       "label": "Transparency"
     },
     {
-      "slug": "trust-and-governance-domain",
+      "slug": "ai-governance-and-ethics",
       "label": "TrustAndGovernanceDomain"
     },
     {
@@ -187,7 +187,7 @@
       "label": "User Interface"
     },
     {
-      "slug": "virtual-society-domain",
+      "slug": "virtual-society",
       "label": "VirtualSocietyDomain"
     }
   ],
@@ -207,10 +207,6 @@
     {
       "slug": "meeting-ai-assistant",
       "label": "Meeting AI Assistant"
-    },
-    {
-      "slug": "privacy-domain",
-      "label": "Privacy Domain"
     },
     {
       "slug": "right-to-be-forgotten",

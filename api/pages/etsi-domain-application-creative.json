@@ -69,11 +69,11 @@
       "label": "Computer Vision"
     },
     {
-      "slug": "creative-media-domain",
+      "slug": "ai-application",
       "label": "CreativeMediaDomain"
     },
     {
-      "slug": "infrastructure-domain",
+      "slug": "infrastructure",
       "label": "InfrastructureDomain"
     }
   ],

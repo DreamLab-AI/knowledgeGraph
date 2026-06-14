@@ -181,10 +181,6 @@
       "label": "Hydraulic Actuator"
     },
     {
-      "slug": "manufacturing-domain",
-      "label": "Manufacturing Domain"
-    },
-    {
       "slug": "x402-and-l402-payment-protocols",
       "label": "x402 and l402 payment protocols"
     }

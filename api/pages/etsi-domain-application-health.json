@@ -65,7 +65,7 @@
       "label": "Healthcare Application Classification"
     },
     {
-      "slug": "infrastructure-domain",
+      "slug": "infrastructure",
       "label": "InfrastructureDomain"
     },
     {
@@ -73,7 +73,7 @@
       "label": "Telecollaboration"
     },
     {
-      "slug": "virtual-society-domain",
+      "slug": "virtual-society",
       "label": "VirtualSocietyDomain"
     }
   ],

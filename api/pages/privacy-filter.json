@@ -111,7 +111,7 @@
       "label": "ADR-008"
     },
     {
-      "slug": "agentic-systems-domain",
+      "slug": "ai-application",
       "label": "AgenticSystemsDomain"
     },
     {
@@ -135,7 +135,7 @@
       "label": "Data Anonymisation"
     },
     {
-      "slug": "data-governance-domain",
+      "slug": "data-governance",
       "label": "DataGovernanceDomain"
     },
     {
@@ -175,7 +175,7 @@
       "label": "PII Detection Best Practices"
     },
     {
-      "slug": "privacy-domain",
+      "slug": "privacy",
       "label": "PrivacyDomain"
     },
     {

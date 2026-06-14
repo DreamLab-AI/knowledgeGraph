@@ -123,7 +123,7 @@ public:: true
       "vc:label": "Manufacturing Automation"
     },
     {
-      "@id": "urn:visionflow:linked:manufacturing-domain",
+      "@id": "urn:visionflow:linked:robo-actuation-and-control",
       "vc:label": "ManufacturingDomain"
     },
     {
@@ -243,7 +243,7 @@ public:: true
       "vc:label": "Robot Operating System"
     },
     {
-      "@id": "urn:visionflow:owl:class:robotics-domain",
+      "@id": "urn:visionflow:owl:class:robotics",
       "vc:label": "RoboticsDomain"
     },
     {
@@ -656,7 +656,7 @@ public:: true
     },
     {
       "raw": "[[ManufacturingDomain]]",
-      "resolved": "urn:visionflow:linked:manufacturing-domain",
+      "resolved": "urn:visionflow:linked:robo-actuation-and-control",
       "kind": "StubLink"
     },
     {
@@ -806,7 +806,7 @@ public:: true
     },
     {
       "raw": "[[RoboticsDomain]]",
-      "resolved": "urn:visionflow:owl:class:robotics-domain",
+      "resolved": "urn:visionflow:owl:class:robotics",
       "kind": "ResolvedLink"
     },
     {

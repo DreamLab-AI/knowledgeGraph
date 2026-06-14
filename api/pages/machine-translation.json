@@ -165,7 +165,7 @@
       "label": "Anthropic Claude"
     },
     {
-      "slug": "artificial-intelligence-domain",
+      "slug": "artificial-intelligence",
       "label": "ArtificialIntelligenceDomain"
     },
     {
@@ -202,10 +202,6 @@
     }
   ],
   "backlinks": [
-    {
-      "slug": "natural-language-processing-domain",
-      "label": "Natural Language Processing Domain"
-    },
     {
       "slug": "natural-language-processing",
       "label": "Natural Language Processing"

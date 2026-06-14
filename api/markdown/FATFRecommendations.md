@@ -47,7 +47,7 @@ public:: true
       "vc:label": "Coinbase"
     },
     {
-      "@id": "urn:visionflow:linked:compliance-domain",
+      "@id": "urn:visionflow:linked:compliance",
       "vc:label": "ComplianceDomain"
     },
     {
@@ -143,7 +143,7 @@ public:: true
       "vc:label": "Non-Fungible Tokens"
     },
     {
-      "@id": "urn:visionflow:linked:regulatory-domain",
+      "@id": "urn:visionflow:linked:infra-legal-and-regulatory",
       "vc:label": "RegulatoryDomain"
     },
     {
@@ -183,7 +183,7 @@ public:: true
       "vc:label": "Blockchain"
     },
     {
-      "@id": "urn:visionflow:owl:class:blockchain-domain",
+      "@id": "urn:visionflow:owl:class:blockchain",
       "vc:label": "BlockchainDomain"
     },
     {
@@ -339,7 +339,7 @@ public:: true
     },
     {
       "raw": "[[ComplianceDomain]]",
-      "resolved": "urn:visionflow:linked:compliance-domain",
+      "resolved": "urn:visionflow:linked:compliance",
       "kind": "StubLink"
     },
     {
@@ -459,7 +459,7 @@ public:: true
     },
     {
       "raw": "[[RegulatoryDomain]]",
-      "resolved": "urn:visionflow:linked:regulatory-domain",
+      "resolved": "urn:visionflow:linked:infra-legal-and-regulatory",
       "kind": "StubLink"
     },
     {
@@ -509,7 +509,7 @@ public:: true
     },
     {
       "raw": "[[BlockchainDomain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-domain",
+      "resolved": "urn:visionflow:owl:class:blockchain",
       "kind": "ResolvedLink"
     },
     {

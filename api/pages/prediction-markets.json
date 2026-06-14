@@ -8,7 +8,7 @@
   "definition": "Prediction markets are exchanges where participants trade contracts whose payoff depends on the outcome of future events, so the market price reflects an aggregated probability estimate.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:economics-domain",
+      "id": "urn:ngm:class:economics",
       "label": "Economics Domain"
     }
   ],
@@ -57,7 +57,7 @@
       "label": "Automated Market Maker"
     },
     {
-      "slug": "economics-domain",
+      "slug": "economics",
       "label": "Economics Domain"
     }
   ],

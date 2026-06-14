@@ -555,7 +555,7 @@ alias:: RenderingPipeline
         "label": "Real-Time Rendering"
       },
       {
-        "@id": "urn:ngm:class:spatial-computing-paradigm",
+        "@id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing"
       },
       {

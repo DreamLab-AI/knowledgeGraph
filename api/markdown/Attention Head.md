@@ -15,7 +15,7 @@ public:: true
       "vc:label": "Head Gaze"
     },
     {
-      "@id": "urn:visionflow:owl:class:artificial-intelligence-domain",
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
       "vc:label": "ArtificialIntelligenceDomain"
     },
     {
@@ -119,7 +119,7 @@ public:: true
     },
     {
       "raw": "[[ArtificialIntelligenceDomain]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence-domain",
+      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
       "kind": "ResolvedLink"
     },
     {

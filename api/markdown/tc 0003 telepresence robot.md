@@ -331,7 +331,7 @@ public:: true
       "vc:label": "Remote Collaboration"
     },
     {
-      "@id": "urn:visionflow:owl:class:robotics-domain",
+      "@id": "urn:visionflow:owl:class:robotics",
       "vc:label": "RoboticsDomain"
     },
     {
@@ -343,7 +343,7 @@ public:: true
       "vc:label": "Telecollaboration"
     },
     {
-      "@id": "urn:visionflow:owl:class:telecollaboration-domain",
+      "@id": "urn:visionflow:owl:class:telecollaboration",
       "vc:label": "TelecollaborationDomain"
     },
     {
@@ -870,7 +870,7 @@ public:: true
     },
     {
       "raw": "[[RoboticsDomain]]",
-      "resolved": "urn:visionflow:owl:class:robotics-domain",
+      "resolved": "urn:visionflow:owl:class:robotics",
       "kind": "ResolvedLink"
     },
     {
@@ -885,7 +885,7 @@ public:: true
     },
     {
       "raw": "[[TelecollaborationDomain]]",
-      "resolved": "urn:visionflow:owl:class:telecollaboration-domain",
+      "resolved": "urn:visionflow:owl:class:telecollaboration",
       "kind": "ResolvedLink"
     },
     {

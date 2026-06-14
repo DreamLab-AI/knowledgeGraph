@@ -33,7 +33,7 @@
         "label": "Control Algorithm"
       },
       {
-        "id": "urn:ngm:class:mechanical-engineering-domain",
+        "id": "urn:ngm:class:robo-actuation-and-control",
         "label": "Mechanical Engineering Domain"
       }
     ]
@@ -43,10 +43,6 @@
     {
       "slug": "control-algorithm",
       "label": "Control Algorithm"
-    },
-    {
-      "slug": "mechanical-engineering-domain",
-      "label": "Mechanical Engineering Domain"
     }
   ]
 }

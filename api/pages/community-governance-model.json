@@ -187,7 +187,7 @@
       "label": "Treasury Management"
     },
     {
-      "slug": "trust-and-governance-domain",
+      "slug": "ai-governance-and-ethics",
       "label": "TrustAndGovernanceDomain"
     },
     {
@@ -195,7 +195,7 @@
       "label": "Virtual Community Platform"
     },
     {
-      "slug": "virtual-society-domain",
+      "slug": "virtual-society",
       "label": "VirtualSocietyDomain"
     }
   ],

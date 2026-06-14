@@ -131,7 +131,7 @@
       "label": "Blockchain Validation"
     },
     {
-      "slug": "data-management-domain",
+      "slug": "data-management",
       "label": "DataManagementDomain"
     },
     {
@@ -183,7 +183,7 @@
       "label": "Activation Function"
     },
     {
-      "slug": "ai-grounded-domain",
+      "slug": "ai-technique",
       "label": "AI-GroundedDomain"
     },
     {
@@ -195,7 +195,7 @@
       "label": "Backpropagation"
     },
     {
-      "slug": "computation-and-intelligence-domain",
+      "slug": "ai-research-area",
       "label": "ComputationAndIntelligenceDomain"
     },
     {
@@ -313,6 +313,10 @@
       "label": "Attention"
     },
     {
+      "slug": "attention",
+      "label": "Attention"
+    },
+    {
       "slug": "autonomous-robot",
       "label": "Autonomous Robot"
     },
@@ -341,6 +345,10 @@
       "label": "Computer Vision"
     },
     {
+      "slug": "deep-learning-framework",
+      "label": "Deep Learning Framework"
+    },
+    {
       "slug": "deep-mind",
       "label": "DeepMind"
     },
@@ -355,6 +363,10 @@
     {
       "slug": "eleven-labs",
       "label": "ElevenLabs"
+    },
+    {
+      "slug": "feed-forward-network",
+      "label": "Feed Forward Network"
     },
     {
       "slug": "feed-forward-network",
@@ -381,6 +393,10 @@
       "label": "Gradient Checkpointing"
     },
     {
+      "slug": "graph-neural-networks",
+      "label": "Graph Neural Networks"
+    },
+    {
       "slug": "history-and-path-to-agi",
       "label": "History and Path to AGI"
     },
@@ -399,6 +415,10 @@
     {
       "slug": "inpainting",
       "label": "Inpainting"
+    },
+    {
+      "slug": "jax",
+      "label": "JAX"
     },
     {
       "slug": "kohya-dreambooth-and-similar",
@@ -547,6 +567,10 @@
     {
       "slug": "training-and-fine-tuning",
       "label": "Training and fine tuning"
+    },
+    {
+      "slug": "transformers",
+      "label": "Transformers"
     },
     {
       "slug": "transformers",

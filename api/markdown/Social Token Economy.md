@@ -79,7 +79,7 @@ public:: true
       "vc:label": "Token Standard"
     },
     {
-      "@id": "urn:visionflow:owl:class:virtual-economy-domain",
+      "@id": "urn:visionflow:owl:class:virtual-economy",
       "vc:label": "VirtualEconomyDomain"
     }
   ],
@@ -117,13 +117,15 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
       "label": "Platform and Environment"
-    },
-    {
-      "@id": "urn:ngm:class:virtual-economy-domain",
-      "label": "Virtual Economy Domain"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:virtual-economy",
+        "label": "Virtual Economy"
+      }
+    ],
     "hasPart": [
       {
         "@id": "urn:ngm:class:community-token",
@@ -286,7 +288,7 @@ public:: true
     },
     {
       "raw": "[[VirtualEconomyDomain]]",
-      "resolved": "urn:visionflow:owl:class:virtual-economy-domain",
+      "resolved": "urn:visionflow:owl:class:virtual-economy",
       "kind": "ResolvedLink"
     }
   ],

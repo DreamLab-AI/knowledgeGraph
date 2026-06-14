@@ -61,7 +61,7 @@ alias:: TELE-302-shared-whiteboards
       "label": "Workspace Tools"
     },
     {
-      "@id": "urn:ngm:class:telecollaboration-domain",
+      "@id": "urn:ngm:class:telecollaboration",
       "label": "TELE-002-telecollaboration"
     }
   ],

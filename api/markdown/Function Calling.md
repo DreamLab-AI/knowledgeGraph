@@ -23,7 +23,7 @@ public:: true
       "vc:label": "Agentic Capability"
     },
     {
-      "@id": "urn:visionflow:linked:agentic-systems-domain",
+      "@id": "urn:visionflow:linked:ai-application",
       "vc:label": "AgenticSystemsDomain"
     },
     {
@@ -383,7 +383,7 @@ public:: true
       "vc:label": "Yao et al 2023 Tree of Thoughts"
     },
     {
-      "@id": "urn:visionflow:owl:class:ai-grounded-domain",
+      "@id": "urn:visionflow:owl:class:ai-technique",
       "vc:label": "AI-GroundedDomain"
     },
     {
@@ -391,7 +391,7 @@ public:: true
       "vc:label": "ApplicationLayer"
     },
     {
-      "@id": "urn:visionflow:owl:class:computation-and-intelligence-domain",
+      "@id": "urn:visionflow:owl:class:ai-research-area",
       "vc:label": "ComputationAndIntelligenceDomain"
     },
     {
@@ -720,7 +720,7 @@ public:: true
     },
     {
       "raw": "[[AgenticSystemsDomain]]",
-      "resolved": "urn:visionflow:linked:agentic-systems-domain",
+      "resolved": "urn:visionflow:linked:ai-application",
       "kind": "StubLink"
     },
     {
@@ -1170,7 +1170,7 @@ public:: true
     },
     {
       "raw": "[[AI-GroundedDomain]]",
-      "resolved": "urn:visionflow:owl:class:ai-grounded-domain",
+      "resolved": "urn:visionflow:owl:class:ai-technique",
       "kind": "ResolvedLink"
     },
     {
@@ -1180,7 +1180,7 @@ public:: true
     },
     {
       "raw": "[[ComputationAndIntelligenceDomain]]",
-      "resolved": "urn:visionflow:owl:class:computation-and-intelligence-domain",
+      "resolved": "urn:visionflow:owl:class:ai-research-area",
       "kind": "ResolvedLink"
     },
     {

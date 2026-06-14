@@ -39,7 +39,7 @@ public:: true
       "vc:label": "CAN Bus"
     },
     {
-      "@id": "urn:visionflow:linked:control-systems-domain",
+      "@id": "urn:visionflow:linked:robo-actuation-and-control",
       "vc:label": "ControlSystemsDomain"
     },
     {
@@ -75,7 +75,7 @@ public:: true
       "vc:label": "Embedded System"
     },
     {
-      "@id": "urn:visionflow:linked:embedded-systems-domain",
+      "@id": "urn:visionflow:linked:embedded-systems",
       "vc:label": "EmbeddedSystemsDomain"
     },
     {
@@ -275,7 +275,7 @@ public:: true
       "vc:label": "ApplicationLayer"
     },
     {
-      "@id": "urn:visionflow:owl:class:artificial-intelligence-domain",
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
       "vc:label": "ArtificialIntelligenceDomain"
     },
     {
@@ -347,7 +347,7 @@ public:: true
       "vc:label": "Robot Operating System"
     },
     {
-      "@id": "urn:visionflow:owl:class:robotics-domain",
+      "@id": "urn:visionflow:owl:class:robotics",
       "vc:label": "RoboticsDomain"
     },
     {
@@ -760,7 +760,7 @@ public:: true
     },
     {
       "raw": "[[ControlSystemsDomain]]",
-      "resolved": "urn:visionflow:linked:control-systems-domain",
+      "resolved": "urn:visionflow:linked:robo-actuation-and-control",
       "kind": "StubLink"
     },
     {
@@ -805,7 +805,7 @@ public:: true
     },
     {
       "raw": "[[EmbeddedSystemsDomain]]",
-      "resolved": "urn:visionflow:linked:embedded-systems-domain",
+      "resolved": "urn:visionflow:linked:embedded-systems",
       "kind": "StubLink"
     },
     {
@@ -1055,7 +1055,7 @@ public:: true
     },
     {
       "raw": "[[ArtificialIntelligenceDomain]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence-domain",
+      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
       "kind": "ResolvedLink"
     },
     {
@@ -1145,7 +1145,7 @@ public:: true
     },
     {
       "raw": "[[RoboticsDomain]]",
-      "resolved": "urn:visionflow:owl:class:robotics-domain",
+      "resolved": "urn:visionflow:owl:class:robotics",
       "kind": "ResolvedLink"
     },
     {

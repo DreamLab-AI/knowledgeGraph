@@ -291,7 +291,7 @@
       "label": "Distributed Collaboration"
     },
     {
-      "slug": "distributed-collaboration-domain",
+      "slug": "distributed-collaboration",
       "label": "DistributedCollaborationDomain"
     },
     {
@@ -307,7 +307,7 @@
       "label": "H.264 Screen Content Coding"
     },
     {
-      "slug": "human-computer-interaction-domain",
+      "slug": "human-computer-interaction",
       "label": "HumanComputerInteractionDomain"
     },
     {

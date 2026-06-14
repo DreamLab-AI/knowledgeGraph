@@ -144,6 +144,10 @@
       "label": "Conviction Voting"
     },
     {
+      "slug": "conviction-voting",
+      "label": "Conviction Voting"
+    },
+    {
       "slug": "dao-tooling",
       "label": "DAO Tooling"
     },
@@ -172,8 +176,8 @@
       "label": "Governance Token"
     },
     {
-      "slug": "mechanical-engineering-domain",
-      "label": "Mechanical Engineering Domain"
+      "slug": "quadratic-voting",
+      "label": "Quadratic Voting"
     },
     {
       "slug": "quadratic-voting",
@@ -184,12 +188,12 @@
       "label": "Snapshot Voting"
     },
     {
-      "slug": "token-economics-domain",
-      "label": "Token Economics Domain"
-    },
-    {
       "slug": "token-engineering",
       "label": "Token Engineering"
+    },
+    {
+      "slug": "tokenomics-governance",
+      "label": "Tokenomics Governance"
     },
     {
       "slug": "tokenomics-governance",

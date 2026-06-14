@@ -207,14 +207,6 @@
     {
       "slug": "medi-ledger",
       "label": "MediLedger"
-    },
-    {
-      "slug": "supply-chain-domain",
-      "label": "Supply Chain Domain"
-    },
-    {
-      "slug": "trust-and-governance-domain",
-      "label": "Trust and Governance Domain"
     }
   ]
 }

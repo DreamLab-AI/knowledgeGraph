@@ -8,7 +8,7 @@
   "definition": "A software library that provides the building blocks for defining, training and deploying deep neural networks, including tensor operations, automatic differentiation and hardware acceleration.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:deep-learning-domain",
+      "id": "urn:ngm:class:deep-learning",
       "label": "Deep Learning Domain"
     }
   ],
@@ -162,7 +162,7 @@
       "label": "PyTorch"
     },
     {
-      "slug": "deep-learning-domain",
+      "slug": "deep-learning",
       "label": "Deep Learning Domain"
     }
   ],

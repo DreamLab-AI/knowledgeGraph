@@ -159,7 +159,7 @@
       "label": "RetirementProof"
     },
     {
-      "slug": "sustainability-domain",
+      "slug": "sustainability",
       "label": "SustainabilityDomain"
     },
     {
@@ -175,7 +175,7 @@
       "label": "Blockchain"
     },
     {
-      "slug": "blockchain-domain",
+      "slug": "blockchain",
       "label": "BlockchainDomain"
     },
     {

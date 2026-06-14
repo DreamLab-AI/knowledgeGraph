@@ -404,7 +404,7 @@
       "label": "DAO Sustainability"
     },
     {
-      "slug": "de-fi-domain",
+      "slug": "bc-defi-and-economics",
       "label": "DeFiDomain"
     },
     {
@@ -472,7 +472,7 @@
       "label": "Gitcoin"
     },
     {
-      "slug": "governance-domain",
+      "slug": "governance",
       "label": "GovernanceDomain"
     },
     {
@@ -680,7 +680,7 @@
       "label": "Yield Strategy"
     },
     {
-      "slug": "blockchain-domain",
+      "slug": "blockchain",
       "label": "BlockchainDomain"
     },
     {

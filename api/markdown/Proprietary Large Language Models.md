@@ -51,7 +51,7 @@ public:: true
       "vc:label": "Large Scale Compute"
     },
     {
-      "@id": "urn:visionflow:linked:natural-language-processing-domain",
+      "@id": "urn:visionflow:linked:natural-language-processing",
       "vc:label": "NaturalLanguageProcessingDomain"
     },
     {
@@ -127,7 +127,7 @@ public:: true
       "vc:label": "AI Diagram Tools"
     },
     {
-      "@id": "urn:visionflow:owl:class:ai-grounded-domain",
+      "@id": "urn:visionflow:owl:class:ai-technique",
       "vc:label": "AI-GroundedDomain"
     },
     {
@@ -691,7 +691,7 @@ public:: true
     },
     {
       "raw": "[[NaturalLanguageProcessingDomain]]",
-      "resolved": "urn:visionflow:linked:natural-language-processing-domain",
+      "resolved": "urn:visionflow:linked:natural-language-processing",
       "kind": "StubLink"
     },
     {
@@ -786,7 +786,7 @@ public:: true
     },
     {
       "raw": "[[AI-GroundedDomain]]",
-      "resolved": "urn:visionflow:owl:class:ai-grounded-domain",
+      "resolved": "urn:visionflow:owl:class:ai-technique",
       "kind": "ResolvedLink"
     },
     {

@@ -8,7 +8,7 @@
   "definition": "Curve Finance is a decentralised exchange protocol operating across Ethereum and multiple EVM-compatible chains, specialising in low-slippage swaps between assets expected to maintain near-parity in value, such as stablecoins and liquid staking tokens. It employs a hybrid invariant automated market maker that blends constant-sum and constant-product behaviour, concentrating liquidity near the peg to dramatically reduce trading costs for correlated assets. The protocol's CRV governance token is distributed to liquidity providers and can be locked in a vote-escrow mechanism (veCRV) that grants voting power over pool incentive allocation, creating a flywheel dynamic known as the Curve Wars. Curve v2 extended the model to volatile asset pairs using a price-repegging invariant, broadening the protocol's scope from stablecoin-only pools to general concentrated-liquidity trading.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:decentralised-finance-domain",
+      "id": "urn:ngm:class:decentralised-finance",
       "label": "Decentralised Finance Domain"
     }
   ],
@@ -152,7 +152,7 @@
       "label": "Stablecoin"
     },
     {
-      "slug": "decentralised-finance-domain",
+      "slug": "decentralised-finance",
       "label": "Decentralised Finance Domain"
     }
   ],
@@ -184,10 +184,6 @@
     {
       "slug": "liquidity-provision",
       "label": "Liquidity Provision"
-    },
-    {
-      "slug": "token-economics-domain",
-      "label": "Token Economics Domain"
     },
     {
       "slug": "token",

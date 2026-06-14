@@ -83,7 +83,7 @@
         "label": "AR Scene Graph"
       },
       {
-        "id": "urn:ngm:class:spatial-computing-paradigm-system",
+        "id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing System"
       }
     ],
@@ -135,7 +135,7 @@
       "label": "Coordinate System"
     },
     {
-      "slug": "interaction-domain",
+      "slug": "sc-interaction",
       "label": "InteractionDomain"
     },
     {
@@ -167,10 +167,5 @@
       "label": "Visual Marker"
     }
   ],
-  "backlinks": [
-    {
-      "slug": "spatial-computing-domain",
-      "label": "Spatial Computing Domain"
-    }
-  ]
+  "backlinks": []
 }

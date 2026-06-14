@@ -327,7 +327,7 @@
       "label": "ControlArchitectureLayer"
     },
     {
-      "slug": "control-systems-domain",
+      "slug": "robo-actuation-and-control",
       "label": "ControlSystemsDomain"
     },
     {
@@ -467,7 +467,7 @@
       "label": "Linear Variable Differential Transformer"
     },
     {
-      "slug": "mechanical-engineering-domain",
+      "slug": "robo-actuation-and-control",
       "label": "MechanicalEngineeringDomain"
     },
     {
@@ -619,7 +619,7 @@
       "label": "Pneumatic Actuator"
     },
     {
-      "slug": "robotics-domain",
+      "slug": "robotics",
       "label": "RoboticsDomain"
     },
     {

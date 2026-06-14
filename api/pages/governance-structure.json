@@ -251,11 +251,11 @@
       "label": "Companies Act"
     },
     {
-      "slug": "corporate-governance-domain",
+      "slug": "corporate-governance",
       "label": "CorporateGovernanceDomain"
     },
     {
-      "slug": "distributed-collaboration-domain",
+      "slug": "distributed-collaboration",
       "label": "DistributedCollaborationDomain"
     },
     {
@@ -299,7 +299,7 @@
       "label": "Principal Agent Problem"
     },
     {
-      "slug": "regulatory-domain",
+      "slug": "infra-legal-and-regulatory",
       "label": "RegulatoryDomain"
     },
     {

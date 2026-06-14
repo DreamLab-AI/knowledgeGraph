@@ -155,7 +155,7 @@
       "label": "Compute Infrastructure"
     },
     {
-      "slug": "creative-media-domain",
+      "slug": "ai-application",
       "label": "CreativeMediaDomain"
     },
     {
@@ -167,7 +167,7 @@
       "label": "Hardware Acceleration"
     },
     {
-      "slug": "infrastructure-domain",
+      "slug": "infrastructure",
       "label": "InfrastructureDomain"
     },
     {

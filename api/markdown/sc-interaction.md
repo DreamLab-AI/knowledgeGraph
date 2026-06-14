@@ -30,7 +30,7 @@ public:: true
   "domain": "spatial-computing",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:spatial-computing-paradigm",
+      "@id": "urn:ngm:class:spatial-computing",
       "label": "Spatial Computing"
     }
   ],

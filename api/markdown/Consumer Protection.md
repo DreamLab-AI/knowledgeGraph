@@ -288,7 +288,7 @@ alias:: BC-0489-consumer-protection
       "vc:label": "Regulation"
     },
     {
-      "@id": "urn:visionflow:linked:regulation-domain",
+      "@id": "urn:visionflow:linked:regulation",
       "vc:label": "RegulationDomain"
     },
     {
@@ -1083,7 +1083,7 @@ alias:: BC-0489-consumer-protection
     },
     {
       "raw": "[[RegulationDomain]]",
-      "resolved": "urn:visionflow:linked:regulation-domain",
+      "resolved": "urn:visionflow:linked:regulation",
       "kind": "StubLink"
     },
     {

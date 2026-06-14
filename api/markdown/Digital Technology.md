@@ -58,7 +58,7 @@ public:: true
   ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:spatial-computing-paradigm", "label": "Spatial Computing"},
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
       {"@id": "urn:ngm:class:immersive-technology", "label": "Immersive Technology"}
     ],
     "uses": [

@@ -147,7 +147,7 @@ public:: true
       "vc:label": "Human-Centred Design"
     },
     {
-      "@id": "urn:visionflow:linked:human-computer-interaction-domain",
+      "@id": "urn:visionflow:linked:human-computer-interaction",
       "vc:label": "HumanComputerInteractionDomain"
     },
     {
@@ -869,7 +869,7 @@ public:: true
     },
     {
       "raw": "[[HumanComputerInteractionDomain]]",
-      "resolved": "urn:visionflow:linked:human-computer-interaction-domain",
+      "resolved": "urn:visionflow:linked:human-computer-interaction",
       "kind": "StubLink"
     },
     {

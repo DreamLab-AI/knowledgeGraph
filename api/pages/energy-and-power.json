@@ -475,7 +475,7 @@
       "label": "Solar PV"
     },
     {
-      "slug": "sustainability-domain",
+      "slug": "sustainability",
       "label": "SustainabilityDomain"
     },
     {
@@ -575,7 +575,7 @@
       "label": "Infrastructure"
     },
     {
-      "slug": "infrastructure-domain",
+      "slug": "infrastructure",
       "label": "InfrastructureDomain"
     },
     {

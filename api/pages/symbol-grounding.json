@@ -33,17 +33,13 @@
         "label": "Cognitive AI"
       },
       {
-        "id": "urn:ngm:class:ai-grounded-domain",
+        "id": "urn:ngm:class:ai-technique",
         "label": "AI Grounded Domain"
       }
     ]
   },
   "wikilinks": [],
   "backlinks": [
-    {
-      "slug": "ai-grounded-domain",
-      "label": "AI Grounded Domain"
-    },
     {
       "slug": "cognitive-ai",
       "label": "Cognitive AI"

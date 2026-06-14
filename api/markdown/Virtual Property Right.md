@@ -95,7 +95,7 @@ public:: true
       "vc:label": "Smart Contract"
     },
     {
-      "@id": "urn:visionflow:owl:class:trust-and-governance-domain",
+      "@id": "urn:visionflow:owl:class:ai-governance-and-ethics",
       "vc:label": "TrustAndGovernanceDomain"
     },
     {
@@ -103,7 +103,7 @@ public:: true
       "vc:label": "Virtual Asset Trading"
     },
     {
-      "@id": "urn:visionflow:owl:class:virtual-economy-domain",
+      "@id": "urn:visionflow:owl:class:virtual-economy",
       "vc:label": "VirtualEconomyDomain"
     },
     {
@@ -342,7 +342,7 @@ public:: true
     },
     {
       "raw": "[[TrustAndGovernanceDomain]]",
-      "resolved": "urn:visionflow:owl:class:trust-and-governance-domain",
+      "resolved": "urn:visionflow:owl:class:ai-governance-and-ethics",
       "kind": "ResolvedLink"
     },
     {
@@ -352,7 +352,7 @@ public:: true
     },
     {
       "raw": "[[VirtualEconomyDomain]]",
-      "resolved": "urn:visionflow:owl:class:virtual-economy-domain",
+      "resolved": "urn:visionflow:owl:class:virtual-economy",
       "kind": "ResolvedLink"
     },
     {

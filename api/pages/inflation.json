@@ -103,7 +103,7 @@
     "standardizedBy": [],
     "partOf": [
       {
-        "id": "urn:ngm:class:token-economics-domain",
+        "id": "urn:ngm:class:token-economics",
         "label": "TokenEconomicsDomain"
       },
       {
@@ -152,7 +152,7 @@
       "label": "EconomicMechanism"
     },
     {
-      "slug": "token-economics-domain",
+      "slug": "token-economics",
       "label": "TokenEconomicsDomain"
     }
   ],

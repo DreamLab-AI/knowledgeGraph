@@ -127,7 +127,7 @@ public:: true
       "vc:label": "Gitcoin Passport v2 2025"
     },
     {
-      "@id": "urn:visionflow:linked:governance-domain",
+      "@id": "urn:visionflow:linked:governance",
       "vc:label": "GovernanceDomain"
     },
     {
@@ -199,7 +199,7 @@ public:: true
       "vc:label": "Mechanism Design"
     },
     {
-      "@id": "urn:visionflow:linked:mechanism-design-domain",
+      "@id": "urn:visionflow:linked:mechanism-design",
       "vc:label": "MechanismDesignDomain"
     },
     {
@@ -375,7 +375,7 @@ public:: true
       "vc:label": "ApplicationLayer"
     },
     {
-      "@id": "urn:visionflow:owl:class:blockchain-domain",
+      "@id": "urn:visionflow:owl:class:blockchain",
       "vc:label": "BlockchainDomain"
     },
     {
@@ -914,7 +914,7 @@ public:: true
     },
     {
       "raw": "[[GovernanceDomain]]",
-      "resolved": "urn:visionflow:linked:governance-domain",
+      "resolved": "urn:visionflow:linked:governance",
       "kind": "StubLink"
     },
     {
@@ -1004,7 +1004,7 @@ public:: true
     },
     {
       "raw": "[[MechanismDesignDomain]]",
-      "resolved": "urn:visionflow:linked:mechanism-design-domain",
+      "resolved": "urn:visionflow:linked:mechanism-design",
       "kind": "StubLink"
     },
     {
@@ -1224,7 +1224,7 @@ public:: true
     },
     {
       "raw": "[[BlockchainDomain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-domain",
+      "resolved": "urn:visionflow:owl:class:blockchain",
       "kind": "ResolvedLink"
     },
     {

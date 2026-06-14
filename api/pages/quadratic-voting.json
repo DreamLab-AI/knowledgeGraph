@@ -423,7 +423,7 @@
       "label": "Gitcoin Passport v2 2025"
     },
     {
-      "slug": "governance-domain",
+      "slug": "governance",
       "label": "GovernanceDomain"
     },
     {
@@ -495,7 +495,7 @@
       "label": "Mechanism Design"
     },
     {
-      "slug": "mechanism-design-domain",
+      "slug": "mechanism-design",
       "label": "MechanismDesignDomain"
     },
     {
@@ -671,7 +671,7 @@
       "label": "ApplicationLayer"
     },
     {
-      "slug": "blockchain-domain",
+      "slug": "blockchain",
       "label": "BlockchainDomain"
     },
     {

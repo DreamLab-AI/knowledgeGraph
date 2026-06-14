@@ -122,7 +122,7 @@
       "label": "Regional Compute"
     },
     {
-      "slug": "computation-and-intelligence-domain",
+      "slug": "ai-research-area",
       "label": "ComputationAndIntelligenceDomain"
     },
     {
@@ -134,7 +134,7 @@
       "label": "Edge Computing Node"
     },
     {
-      "slug": "infrastructure-domain",
+      "slug": "infrastructure",
       "label": "InfrastructureDomain"
     },
     {

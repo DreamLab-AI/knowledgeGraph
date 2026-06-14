@@ -75,10 +75,6 @@
       "label": "Adapter Slot"
     },
     {
-      "slug": "agentic-systems-domain",
-      "label": "Agentic Systems Domain"
-    },
-    {
       "slug": "agents",
       "label": "Agents"
     },

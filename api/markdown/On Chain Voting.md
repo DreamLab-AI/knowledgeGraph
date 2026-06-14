@@ -80,7 +80,7 @@ alias:: BC-0462-on-chain-voting, On-Chain Voting, OnChainVoting
       "vc:label": "Cryptographic Signature"
     },
     {
-      "@id": "urn:visionflow:linked:cryptography-domain",
+      "@id": "urn:visionflow:linked:cryptography",
       "vc:label": "CryptographyDomain"
     },
     {
@@ -132,7 +132,7 @@ alias:: BC-0462-on-chain-voting, On-Chain Voting, OnChainVoting
       "vc:label": "Futarchy"
     },
     {
-      "@id": "urn:visionflow:linked:governance-domain",
+      "@id": "urn:visionflow:linked:governance",
       "vc:label": "GovernanceDomain"
     },
     {
@@ -296,7 +296,7 @@ alias:: BC-0462-on-chain-voting, On-Chain Voting, OnChainVoting
       "vc:label": "ApplicationLayer"
     },
     {
-      "@id": "urn:visionflow:owl:class:blockchain-domain",
+      "@id": "urn:visionflow:owl:class:blockchain",
       "vc:label": "BlockchainDomain"
     },
     {
@@ -854,7 +854,7 @@ alias:: BC-0462-on-chain-voting, On-Chain Voting, OnChainVoting
     },
     {
       "raw": "[[CryptographyDomain]]",
-      "resolved": "urn:visionflow:linked:cryptography-domain",
+      "resolved": "urn:visionflow:linked:cryptography",
       "kind": "StubLink"
     },
     {
@@ -919,7 +919,7 @@ alias:: BC-0462-on-chain-voting, On-Chain Voting, OnChainVoting
     },
     {
       "raw": "[[GovernanceDomain]]",
-      "resolved": "urn:visionflow:linked:governance-domain",
+      "resolved": "urn:visionflow:linked:governance",
       "kind": "StubLink"
     },
     {
@@ -1124,7 +1124,7 @@ alias:: BC-0462-on-chain-voting, On-Chain Voting, OnChainVoting
     },
     {
       "raw": "[[BlockchainDomain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-domain",
+      "resolved": "urn:visionflow:owl:class:blockchain",
       "kind": "ResolvedLink"
     },
     {

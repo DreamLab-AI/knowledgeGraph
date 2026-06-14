@@ -64,7 +64,7 @@ alias:: Privacy-Preserving Analytics
       "vc:label": "Cryptographic Primitives"
     },
     {
-      "@id": "urn:visionflow:linked:cryptography-domain",
+      "@id": "urn:visionflow:linked:cryptography",
       "vc:label": "CryptographyDomain"
     },
     {
@@ -264,7 +264,7 @@ alias:: Privacy-Preserving Analytics
       "vc:label": "Re-identification Attack"
     },
     {
-      "@id": "urn:visionflow:linked:regulatory-compliance-domain",
+      "@id": "urn:visionflow:linked:regulatory-compliance",
       "vc:label": "RegulatoryComplianceDomain"
     },
     {
@@ -340,7 +340,7 @@ alias:: Privacy-Preserving Analytics
       "vc:label": "AI Governance"
     },
     {
-      "@id": "urn:visionflow:owl:class:ai-grounded-domain",
+      "@id": "urn:visionflow:owl:class:ai-technique",
       "vc:label": "AI-GroundedDomain"
     },
     {
@@ -737,7 +737,7 @@ alias:: Privacy-Preserving Analytics
     },
     {
       "raw": "[[CryptographyDomain]]",
-      "resolved": "urn:visionflow:linked:cryptography-domain",
+      "resolved": "urn:visionflow:linked:cryptography",
       "kind": "StubLink"
     },
     {
@@ -987,7 +987,7 @@ alias:: Privacy-Preserving Analytics
     },
     {
       "raw": "[[RegulatoryComplianceDomain]]",
-      "resolved": "urn:visionflow:linked:regulatory-compliance-domain",
+      "resolved": "urn:visionflow:linked:regulatory-compliance",
       "kind": "StubLink"
     },
     {
@@ -1082,7 +1082,7 @@ alias:: Privacy-Preserving Analytics
     },
     {
       "raw": "[[AI-GroundedDomain]]",
-      "resolved": "urn:visionflow:owl:class:ai-grounded-domain",
+      "resolved": "urn:visionflow:owl:class:ai-technique",
       "kind": "ResolvedLink"
     },
     {

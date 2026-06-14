@@ -33,17 +33,13 @@
         "label": "Predictive Maintenance"
       },
       {
-        "id": "urn:ngm:class:autonomous-systems-domain",
+        "id": "urn:ngm:class:robo-navigation-and-planning",
         "label": "Autonomous Systems Domain"
       }
     ]
   },
   "wikilinks": [],
   "backlinks": [
-    {
-      "slug": "autonomous-systems-domain",
-      "label": "Autonomous Systems Domain"
-    },
     {
       "slug": "predictive-maintenance",
       "label": "Predictive Maintenance"

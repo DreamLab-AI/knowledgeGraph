@@ -83,7 +83,7 @@ public:: true
       "vc:label": "Delta Synchronisation"
     },
     {
-      "@id": "urn:visionflow:linked:distributed-collaboration-domain",
+      "@id": "urn:visionflow:linked:distributed-collaboration",
       "vc:label": "DistributedCollaborationDomain"
     },
     {
@@ -95,7 +95,7 @@ public:: true
       "vc:label": "Distributed Databases"
     },
     {
-      "@id": "urn:visionflow:linked:distributed-systems-domain",
+      "@id": "urn:visionflow:linked:distributed-systems",
       "vc:label": "DistributedSystemsDomain"
     },
     {
@@ -785,7 +785,7 @@ public:: true
     },
     {
       "raw": "[[DistributedCollaborationDomain]]",
-      "resolved": "urn:visionflow:linked:distributed-collaboration-domain",
+      "resolved": "urn:visionflow:linked:distributed-collaboration",
       "kind": "StubLink"
     },
     {
@@ -800,7 +800,7 @@ public:: true
     },
     {
       "raw": "[[DistributedSystemsDomain]]",
-      "resolved": "urn:visionflow:linked:distributed-systems-domain",
+      "resolved": "urn:visionflow:linked:distributed-systems",
       "kind": "StubLink"
     },
     {

@@ -384,7 +384,7 @@
       "label": "Cryptographic Primitives"
     },
     {
-      "slug": "cryptography-domain",
+      "slug": "cryptography",
       "label": "CryptographyDomain"
     },
     {
@@ -536,7 +536,7 @@
       "label": "Privacy Enhancing Technologies"
     },
     {
-      "slug": "risk-management-domain",
+      "slug": "risk-management",
       "label": "RiskManagementDomain"
     },
     {
@@ -548,7 +548,7 @@
       "label": "Secure Enclave"
     },
     {
-      "slug": "security-domain",
+      "slug": "security",
       "label": "SecurityDomain"
     },
     {
@@ -660,7 +660,7 @@
       "label": "Information Security"
     },
     {
-      "slug": "infrastructure-domain",
+      "slug": "infrastructure",
       "label": "InfrastructureDomain"
     },
     {

@@ -408,7 +408,7 @@
       "label": "Software Engineering Agents"
     },
     {
-      "slug": "software-engineering-domain",
+      "slug": "software-engineering",
       "label": "SoftwareEngineeringDomain"
     },
     {
@@ -452,7 +452,7 @@
       "label": "Worker Agent"
     },
     {
-      "slug": "ai-grounded-domain",
+      "slug": "ai-technique",
       "label": "AI-GroundedDomain"
     },
     {

@@ -95,14 +95,9 @@
       "label": "BC-0494-property-registry"
     },
     {
-      "slug": "blockchain-domain",
+      "slug": "blockchain",
       "label": "BlockchainDomain"
     }
   ],
-  "backlinks": [
-    {
-      "slug": "token-economics-domain",
-      "label": "Token Economics Domain"
-    }
-  ]
+  "backlinks": []
 }

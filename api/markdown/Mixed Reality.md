@@ -40,7 +40,7 @@ alias:: MixedReality
       "vc:label": "Compute SoC"
     },
     {
-      "@id": "urn:visionflow:linked:computer-vision-domain",
+      "@id": "urn:visionflow:linked:computer-vision",
       "vc:label": "ComputerVisionDomain"
     },
     {
@@ -92,7 +92,7 @@ alias:: MixedReality
       "vc:label": "Holography"
     },
     {
-      "@id": "urn:visionflow:linked:human-computer-interaction-domain",
+      "@id": "urn:visionflow:linked:human-computer-interaction",
       "vc:label": "HumanComputerInteractionDomain"
     },
     {
@@ -825,7 +825,7 @@ alias:: MixedReality
     },
     {
       "raw": "[[ComputerVisionDomain]]",
-      "resolved": "urn:visionflow:linked:computer-vision-domain",
+      "resolved": "urn:visionflow:linked:computer-vision",
       "kind": "StubLink"
     },
     {
@@ -890,7 +890,7 @@ alias:: MixedReality
     },
     {
       "raw": "[[HumanComputerInteractionDomain]]",
-      "resolved": "urn:visionflow:linked:human-computer-interaction-domain",
+      "resolved": "urn:visionflow:linked:human-computer-interaction",
       "kind": "StubLink"
     },
     {

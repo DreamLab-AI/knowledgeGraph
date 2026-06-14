@@ -26,7 +26,7 @@ public:: true
   "subClassOf": [{"@id": "urn:ngm:class:infra-software-engineering", "label": "Software Engineering"}],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:formal-methods-domain", "label": "Formal Methods Domain"},
+      {"@id": "urn:ngm:class:ai-research-area", "label": "Formal Methods Domain"},
       {"@id": "urn:ngm:class:state-machine", "label": "State Machine"}
     ]
   },

@@ -124,7 +124,7 @@ alias:: DataPipeline
       "vc:label": "FeatureEngineering"
     },
     {
-      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "@id": "urn:visionflow:owl:class:metaverse",
       "vc:label": "MetaverseDomain"
     },
     {
@@ -465,7 +465,7 @@ alias:: DataPipeline
     },
     {
       "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "resolved": "urn:visionflow:owl:class:metaverse",
       "kind": "ResolvedLink"
     },
     {

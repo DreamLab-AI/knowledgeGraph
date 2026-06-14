@@ -323,7 +323,7 @@
       "label": "Cognitive Science"
     },
     {
-      "slug": "cognitive-science-domain",
+      "slug": "cognitive-science",
       "label": "CognitiveScienceDomain"
     },
     {
@@ -599,7 +599,7 @@
       "label": "Working Memory"
     },
     {
-      "slug": "ai-grounded-domain",
+      "slug": "ai-technique",
       "label": "AI-GroundedDomain"
     },
     {
@@ -615,7 +615,7 @@
       "label": "Artificial Intelligence"
     },
     {
-      "slug": "computation-and-intelligence-domain",
+      "slug": "ai-research-area",
       "label": "ComputationAndIntelligenceDomain"
     },
     {

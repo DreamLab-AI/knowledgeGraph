@@ -35,7 +35,7 @@ public:: true
       "vc:label": "Agent Memory"
     },
     {
-      "@id": "urn:visionflow:linked:agentic-systems-domain",
+      "@id": "urn:visionflow:linked:ai-application",
       "vc:label": "AgenticSystemsDomain"
     },
     {
@@ -311,7 +311,7 @@ public:: true
     },
     {
       "raw": "[[AgenticSystemsDomain]]",
-      "resolved": "urn:visionflow:linked:agentic-systems-domain",
+      "resolved": "urn:visionflow:linked:ai-application",
       "kind": "StubLink"
     },
     {

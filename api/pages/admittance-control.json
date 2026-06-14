@@ -156,7 +156,7 @@
       "label": "ControlLayer"
     },
     {
-      "slug": "control-theory-domain",
+      "slug": "control-theory",
       "label": "ControlTheoryDomain"
     },
     {
@@ -256,7 +256,7 @@
       "label": "Virtual Mechanical System"
     },
     {
-      "slug": "ai-grounded-domain",
+      "slug": "ai-technique",
       "label": "AI-GroundedDomain"
     },
     {
@@ -296,7 +296,7 @@
       "label": "Robot Control"
     },
     {
-      "slug": "robotics-domain",
+      "slug": "robotics",
       "label": "RoboticsDomain"
     },
     {

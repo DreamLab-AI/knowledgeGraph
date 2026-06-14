@@ -75,7 +75,7 @@ public:: true
       "vc:label": "Data Acquisition Pipeline"
     },
     {
-      "@id": "urn:visionflow:linked:data-governance-domain",
+      "@id": "urn:visionflow:linked:data-governance",
       "vc:label": "DataGovernanceDomain"
     },
     {
@@ -139,7 +139,7 @@ public:: true
       "vc:label": "IETF RFC 9309"
     },
     {
-      "@id": "urn:visionflow:linked:information-retrieval-domain",
+      "@id": "urn:visionflow:linked:information-retrieval",
       "vc:label": "InformationRetrievalDomain"
     },
     {
@@ -255,7 +255,7 @@ public:: true
       "vc:label": "Web Scraping Tools"
     },
     {
-      "@id": "urn:visionflow:owl:class:ai-grounded-domain",
+      "@id": "urn:visionflow:owl:class:ai-technique",
       "vc:label": "AI-GroundedDomain"
     },
     {
@@ -636,7 +636,7 @@ public:: true
     },
     {
       "raw": "[[DataGovernanceDomain]]",
-      "resolved": "urn:visionflow:linked:data-governance-domain",
+      "resolved": "urn:visionflow:linked:data-governance",
       "kind": "StubLink"
     },
     {
@@ -716,7 +716,7 @@ public:: true
     },
     {
       "raw": "[[InformationRetrievalDomain]]",
-      "resolved": "urn:visionflow:linked:information-retrieval-domain",
+      "resolved": "urn:visionflow:linked:information-retrieval",
       "kind": "StubLink"
     },
     {
@@ -861,7 +861,7 @@ public:: true
     },
     {
       "raw": "[[AI-GroundedDomain]]",
-      "resolved": "urn:visionflow:owl:class:ai-grounded-domain",
+      "resolved": "urn:visionflow:owl:class:ai-technique",
       "kind": "ResolvedLink"
     },
     {

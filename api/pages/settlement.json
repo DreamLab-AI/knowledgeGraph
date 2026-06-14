@@ -8,7 +8,7 @@
   "definition": "Settlement is the final, legally binding transfer of an asset or funds from one party to another that extinguishes the obligation arising from a trade, payment, or contract. In traditional financial markets, settlement follows trade execution after a defined delay (e.g. T+2) during which counterparty risk persists; in distributed ledger systems, settlement occurs when a transaction achieves irreversible confirmation according to the network's consensus rules. Achieving settlement finality is the core objective of payment and securities clearing infrastructure, as it determines when legal title definitively passes and operational risk is eliminated. The shift towards real-time gross settlement (RTGS), delivery-versus-payment (DvP), and atomic settlement on distributed ledgers represents a decades-long effort to compress settlement latency and reduce systemic risk.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:financial-infrastructure-domain",
+      "id": "urn:ngm:class:financial-infrastructure",
       "label": "Financial Infrastructure Domain"
     }
   ],
@@ -111,7 +111,7 @@
     "standardizedBy": [],
     "partOf": [
       {
-        "id": "urn:ngm:class:financial-infrastructure-domain",
+        "id": "urn:ngm:class:financial-infrastructure",
         "label": "Financial Infrastructure Domain"
       },
       {
@@ -148,7 +148,7 @@
       "label": "Cross-Border Settlement"
     },
     {
-      "slug": "financial-infrastructure-domain",
+      "slug": "financial-infrastructure",
       "label": "Financial Infrastructure Domain"
     }
   ],
@@ -156,10 +156,6 @@
     {
       "slug": "cbdc-cross-border-settlement",
       "label": "CBDC Cross-Border Settlement"
-    },
-    {
-      "slug": "financial-infrastructure-domain",
-      "label": "Financial Infrastructure Domain"
     },
     {
       "slug": "transaction-finality",

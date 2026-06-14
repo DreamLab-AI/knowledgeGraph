@@ -399,7 +399,7 @@
       "label": "Inference Infrastructure"
     },
     {
-      "slug": "information-retrieval-domain",
+      "slug": "information-retrieval",
       "label": "InformationRetrievalDomain"
     },
     {
@@ -443,7 +443,7 @@
       "label": "Multi-Source Synthesis"
     },
     {
-      "slug": "natural-language-processing-domain",
+      "slug": "natural-language-processing",
       "label": "NaturalLanguageProcessingDomain"
     },
     {
@@ -543,7 +543,7 @@
       "label": "Zero-Click Information Access"
     },
     {
-      "slug": "ai-grounded-domain",
+      "slug": "ai-technique",
       "label": "AI-GroundedDomain"
     },
     {
@@ -551,7 +551,7 @@
       "label": "ApplicationLayer"
     },
     {
-      "slug": "computation-and-intelligence-domain",
+      "slug": "ai-research-area",
       "label": "ComputationAndIntelligenceDomain"
     },
     {

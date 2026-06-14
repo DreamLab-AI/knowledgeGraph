@@ -159,10 +159,6 @@
     {
       "slug": "control-algorithm",
       "label": "Control Algorithm"
-    },
-    {
-      "slug": "manufacturing-domain",
-      "label": "Manufacturing Domain"
     }
   ]
 }

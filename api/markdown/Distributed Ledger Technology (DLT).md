@@ -83,7 +83,7 @@ public:: true
       "vc:label": "Distributed System"
     },
     {
-      "@id": "urn:visionflow:owl:class:infrastructure-domain",
+      "@id": "urn:visionflow:owl:class:infrastructure",
       "vc:label": "InfrastructureDomain"
     },
     {
@@ -115,11 +115,11 @@ public:: true
       "vc:label": "Transaction Pool"
     },
     {
-      "@id": "urn:visionflow:owl:class:trust-and-governance-domain",
+      "@id": "urn:visionflow:owl:class:ai-governance-and-ethics",
       "vc:label": "TrustAndGovernanceDomain"
     },
     {
-      "@id": "urn:visionflow:owl:class:virtual-economy-domain",
+      "@id": "urn:visionflow:owl:class:virtual-economy",
       "vc:label": "VirtualEconomyDomain"
     },
     {
@@ -361,7 +361,7 @@ public:: true
     },
     {
       "raw": "[[InfrastructureDomain]]",
-      "resolved": "urn:visionflow:owl:class:infrastructure-domain",
+      "resolved": "urn:visionflow:owl:class:infrastructure",
       "kind": "ResolvedLink"
     },
     {
@@ -401,12 +401,12 @@ public:: true
     },
     {
       "raw": "[[TrustAndGovernanceDomain]]",
-      "resolved": "urn:visionflow:owl:class:trust-and-governance-domain",
+      "resolved": "urn:visionflow:owl:class:ai-governance-and-ethics",
       "kind": "ResolvedLink"
     },
     {
       "raw": "[[VirtualEconomyDomain]]",
-      "resolved": "urn:visionflow:owl:class:virtual-economy-domain",
+      "resolved": "urn:visionflow:owl:class:virtual-economy",
       "kind": "ResolvedLink"
     },
     {

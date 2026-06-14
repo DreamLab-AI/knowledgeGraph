@@ -376,7 +376,7 @@
       "label": "Cryptographic Wallet"
     },
     {
-      "slug": "cryptography-domain",
+      "slug": "cryptography",
       "label": "CryptographyDomain"
     },
     {
@@ -420,7 +420,7 @@
       "label": "Financial Inclusion"
     },
     {
-      "slug": "governance-domain",
+      "slug": "governance",
       "label": "GovernanceDomain"
     },
     {
@@ -436,7 +436,7 @@
       "label": "Holder Issuer Verifier Triangle"
     },
     {
-      "slug": "identity-domain",
+      "slug": "identity",
       "label": "IdentityDomain"
     },
     {
@@ -556,7 +556,7 @@
       "label": "Preukschat & Reed 2021 Self-Sovereign Identity"
     },
     {
-      "slug": "privacy-domain",
+      "slug": "privacy",
       "label": "PrivacyDomain"
     },
     {
@@ -684,7 +684,7 @@
       "label": "ApplicationLayer"
     },
     {
-      "slug": "blockchain-domain",
+      "slug": "blockchain",
       "label": "BlockchainDomain"
     },
     {

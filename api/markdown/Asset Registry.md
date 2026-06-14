@@ -43,7 +43,7 @@ public:: true
       "vc:label": "ERC-3643 Standard"
     },
     {
-      "@id": "urn:visionflow:linked:financial-infrastructure-domain",
+      "@id": "urn:visionflow:linked:financial-infrastructure",
       "vc:label": "FinancialInfrastructureDomain"
     },
     {
@@ -55,7 +55,7 @@ public:: true
       "vc:label": "ISO 24165"
     },
     {
-      "@id": "urn:visionflow:linked:legal-tech-domain",
+      "@id": "urn:visionflow:linked:infra-legal-and-regulatory",
       "vc:label": "LegalTechDomain"
     },
     {
@@ -119,7 +119,7 @@ public:: true
       "vc:label": "Blockchain Application"
     },
     {
-      "@id": "urn:visionflow:owl:class:blockchain-domain",
+      "@id": "urn:visionflow:owl:class:blockchain",
       "vc:label": "BlockchainDomain"
     },
     {
@@ -533,7 +533,7 @@ public:: true
     },
     {
       "raw": "[[FinancialInfrastructureDomain]]",
-      "resolved": "urn:visionflow:linked:financial-infrastructure-domain",
+      "resolved": "urn:visionflow:linked:financial-infrastructure",
       "kind": "StubLink"
     },
     {
@@ -548,7 +548,7 @@ public:: true
     },
     {
       "raw": "[[LegalTechDomain]]",
-      "resolved": "urn:visionflow:linked:legal-tech-domain",
+      "resolved": "urn:visionflow:linked:infra-legal-and-regulatory",
       "kind": "StubLink"
     },
     {
@@ -628,7 +628,7 @@ public:: true
     },
     {
       "raw": "[[BlockchainDomain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-domain",
+      "resolved": "urn:visionflow:owl:class:blockchain",
       "kind": "ResolvedLink"
     },
     {

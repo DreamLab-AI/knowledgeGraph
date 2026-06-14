@@ -250,10 +250,6 @@
       "label": "Money"
     },
     {
-      "slug": "payment-systems-domain",
-      "label": "Payment Systems Domain"
-    },
-    {
       "slug": "privacy-preserving-blockchain",
       "label": "Privacy Preserving Blockchain"
     },

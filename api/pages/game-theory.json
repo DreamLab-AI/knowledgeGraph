@@ -159,10 +159,6 @@
       "label": "Economic Model"
     },
     {
-      "slug": "economics-domain",
-      "label": "Economics Domain"
-    },
-    {
       "slug": "economics",
       "label": "Economics"
     },
@@ -179,10 +175,6 @@
       "label": "Institutional Economics"
     },
     {
-      "slug": "mechanism-design-domain",
-      "label": "Mechanism Design Domain"
-    },
-    {
       "slug": "multi-agent-coordination",
       "label": "Multi-Agent Coordination"
     },
@@ -193,10 +185,6 @@
     {
       "slug": "quadratic-voting",
       "label": "Quadratic Voting"
-    },
-    {
-      "slug": "token-economics-domain",
-      "label": "Token Economics Domain"
     },
     {
       "slug": "tokenomics-governance",

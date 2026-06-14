@@ -267,7 +267,7 @@
       "label": "ApplicationLayer"
     },
     {
-      "slug": "blockchain-domain",
+      "slug": "blockchain",
       "label": "BlockchainDomain"
     },
     {
@@ -303,10 +303,6 @@
     {
       "slug": "smart-contract",
       "label": "Smart Contract"
-    },
-    {
-      "slug": "token-economics-domain",
-      "label": "Token Economics Domain"
     },
     {
       "slug": "wallet",

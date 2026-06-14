@@ -79,7 +79,7 @@ public:: true
       "vc:label": "CLIP"
     },
     {
-      "@id": "urn:visionflow:linked:computer-vision-domain",
+      "@id": "urn:visionflow:linked:computer-vision",
       "vc:label": "ComputerVisionDomain"
     },
     {
@@ -143,7 +143,7 @@ public:: true
       "vc:label": "FVD"
     },
     {
-      "@id": "urn:visionflow:linked:generative-modelling-domain",
+      "@id": "urn:visionflow:linked:ai-model-architecture",
       "vc:label": "GenerativeModellingDomain"
     },
     {
@@ -371,7 +371,7 @@ public:: true
       "vc:label": "Yu et al. 2024 MAGVIT-v2"
     },
     {
-      "@id": "urn:visionflow:owl:class:ai-grounded-domain",
+      "@id": "urn:visionflow:owl:class:ai-technique",
       "vc:label": "AI-GroundedDomain"
     },
     {
@@ -832,7 +832,7 @@ public:: true
     },
     {
       "raw": "[[ComputerVisionDomain]]",
-      "resolved": "urn:visionflow:linked:computer-vision-domain",
+      "resolved": "urn:visionflow:linked:computer-vision",
       "kind": "StubLink"
     },
     {
@@ -912,7 +912,7 @@ public:: true
     },
     {
       "raw": "[[GenerativeModellingDomain]]",
-      "resolved": "urn:visionflow:linked:generative-modelling-domain",
+      "resolved": "urn:visionflow:linked:ai-model-architecture",
       "kind": "StubLink"
     },
     {
@@ -1197,7 +1197,7 @@ public:: true
     },
     {
       "raw": "[[AI-GroundedDomain]]",
-      "resolved": "urn:visionflow:owl:class:ai-grounded-domain",
+      "resolved": "urn:visionflow:owl:class:ai-technique",
       "kind": "ResolvedLink"
     },
     {

@@ -71,7 +71,7 @@ public:: true
       "vc:label": "Convex Finance"
     },
     {
-      "@id": "urn:visionflow:linked:cryptography-domain",
+      "@id": "urn:visionflow:linked:cryptography",
       "vc:label": "CryptographyDomain"
     },
     {
@@ -87,7 +87,7 @@ public:: true
       "vc:label": "dYdX"
     },
     {
-      "@id": "urn:visionflow:linked:decentralised-finance-domain",
+      "@id": "urn:visionflow:linked:decentralised-finance",
       "vc:label": "DecentralisedFinanceDomain"
     },
     {
@@ -115,7 +115,7 @@ public:: true
       "vc:label": "Fee Tier"
     },
     {
-      "@id": "urn:visionflow:linked:financial-markets-domain",
+      "@id": "urn:visionflow:linked:bc-defi-and-economics",
       "vc:label": "FinancialMarketsDomain"
     },
     {
@@ -315,7 +315,7 @@ public:: true
       "vc:label": "Automated Market Maker"
     },
     {
-      "@id": "urn:visionflow:owl:class:blockchain-domain",
+      "@id": "urn:visionflow:owl:class:blockchain",
       "vc:label": "BlockchainDomain"
     },
     {
@@ -720,7 +720,7 @@ public:: true
     },
     {
       "raw": "[[CryptographyDomain]]",
-      "resolved": "urn:visionflow:linked:cryptography-domain",
+      "resolved": "urn:visionflow:linked:cryptography",
       "kind": "StubLink"
     },
     {
@@ -740,7 +740,7 @@ public:: true
     },
     {
       "raw": "[[DecentralisedFinanceDomain]]",
-      "resolved": "urn:visionflow:linked:decentralised-finance-domain",
+      "resolved": "urn:visionflow:linked:decentralised-finance",
       "kind": "StubLink"
     },
     {
@@ -775,7 +775,7 @@ public:: true
     },
     {
       "raw": "[[FinancialMarketsDomain]]",
-      "resolved": "urn:visionflow:linked:financial-markets-domain",
+      "resolved": "urn:visionflow:linked:bc-defi-and-economics",
       "kind": "StubLink"
     },
     {
@@ -1025,7 +1025,7 @@ public:: true
     },
     {
       "raw": "[[BlockchainDomain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-domain",
+      "resolved": "urn:visionflow:owl:class:blockchain",
       "kind": "ResolvedLink"
     },
     {

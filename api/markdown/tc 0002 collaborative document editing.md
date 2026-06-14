@@ -239,7 +239,7 @@ public:: true
       "vc:label": "Telecollaboration"
     },
     {
-      "@id": "urn:visionflow:owl:class:telecollaboration-domain",
+      "@id": "urn:visionflow:owl:class:telecollaboration",
       "vc:label": "TelecollaborationDomain"
     }
   ],
@@ -621,7 +621,7 @@ public:: true
     },
     {
       "raw": "[[TelecollaborationDomain]]",
-      "resolved": "urn:visionflow:owl:class:telecollaboration-domain",
+      "resolved": "urn:visionflow:owl:class:telecollaboration",
       "kind": "ResolvedLink"
     }
   ],

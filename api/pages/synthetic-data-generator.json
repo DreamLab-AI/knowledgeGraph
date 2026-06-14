@@ -147,7 +147,7 @@
       "label": "Testing Dataset Creation"
     },
     {
-      "slug": "computation-and-intelligence-domain",
+      "slug": "ai-research-area",
       "label": "ComputationAndIntelligenceDomain"
     },
     {
@@ -171,7 +171,7 @@
       "label": "Generative Model"
     },
     {
-      "slug": "infrastructure-domain",
+      "slug": "infrastructure",
       "label": "InfrastructureDomain"
     },
     {

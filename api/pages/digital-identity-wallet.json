@@ -364,7 +364,7 @@
       "label": "Cryptographic Library"
     },
     {
-      "slug": "cryptography-domain",
+      "slug": "cryptography",
       "label": "CryptographyDomain"
     },
     {
@@ -432,7 +432,7 @@
       "label": "High-Assurance Interoperability Profile HAIP"
     },
     {
-      "slug": "identity-domain",
+      "slug": "identity",
       "label": "IdentityDomain"
     },
     {
@@ -564,7 +564,7 @@
       "label": "Preukschat & Reed 2021 Self-Sovereign Identity Book"
     },
     {
-      "slug": "privacy-domain",
+      "slug": "privacy",
       "label": "PrivacyDomain"
     },
     {
@@ -708,7 +708,7 @@
       "label": "ApplicationLayer"
     },
     {
-      "slug": "blockchain-domain",
+      "slug": "blockchain",
       "label": "BlockchainDomain"
     },
     {

@@ -148,10 +148,6 @@
       "label": "AI Video"
     },
     {
-      "slug": "computer-vision-domain",
-      "label": "Computer Vision Domain"
-    },
-    {
       "slug": "depth-estimation",
       "label": "Depth Estimation"
     },

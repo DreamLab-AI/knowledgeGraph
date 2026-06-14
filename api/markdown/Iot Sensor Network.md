@@ -59,7 +59,7 @@ public:: true
       "vc:label": "Cyber-Physical Systems"
     },
     {
-      "@id": "urn:visionflow:linked:cyber-physical-systems-domain",
+      "@id": "urn:visionflow:linked:cyber-physical-systems",
       "vc:label": "CyberPhysicalSystemsDomain"
     },
     {
@@ -91,7 +91,7 @@ public:: true
       "vc:label": "Embedded Systems"
     },
     {
-      "@id": "urn:visionflow:linked:embedded-systems-domain",
+      "@id": "urn:visionflow:linked:embedded-systems",
       "vc:label": "EmbeddedSystemsDomain"
     },
     {
@@ -303,7 +303,7 @@ public:: true
       "vc:label": "Edge Computing"
     },
     {
-      "@id": "urn:visionflow:owl:class:infrastructure-domain",
+      "@id": "urn:visionflow:owl:class:infrastructure",
       "vc:label": "InfrastructureDomain"
     },
     {
@@ -751,7 +751,7 @@ public:: true
     },
     {
       "raw": "[[CyberPhysicalSystemsDomain]]",
-      "resolved": "urn:visionflow:linked:cyber-physical-systems-domain",
+      "resolved": "urn:visionflow:linked:cyber-physical-systems",
       "kind": "StubLink"
     },
     {
@@ -791,7 +791,7 @@ public:: true
     },
     {
       "raw": "[[EmbeddedSystemsDomain]]",
-      "resolved": "urn:visionflow:linked:embedded-systems-domain",
+      "resolved": "urn:visionflow:linked:embedded-systems",
       "kind": "StubLink"
     },
     {
@@ -1056,7 +1056,7 @@ public:: true
     },
     {
       "raw": "[[InfrastructureDomain]]",
-      "resolved": "urn:visionflow:owl:class:infrastructure-domain",
+      "resolved": "urn:visionflow:owl:class:infrastructure",
       "kind": "ResolvedLink"
     },
     {

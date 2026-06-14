@@ -503,7 +503,7 @@
       "label": "Gini Coefficient Analysis"
     },
     {
-      "slug": "governance-domain",
+      "slug": "governance",
       "label": "GovernanceDomain"
     },
     {
@@ -643,7 +643,7 @@
       "label": "ResearchGate 2025 Lightning Centralization Quantitative Analysis"
     },
     {
-      "slug": "risk-management-domain",
+      "slug": "risk-management",
       "label": "RiskManagementDomain"
     },
     {
@@ -707,7 +707,7 @@
       "label": "Bitcoin"
     },
     {
-      "slug": "blockchain-domain",
+      "slug": "blockchain",
       "label": "BlockchainDomain"
     },
     {

@@ -72,7 +72,7 @@ alias:: PhysicsEngine
       "vc:label": "Compute Layer"
     },
     {
-      "@id": "urn:visionflow:owl:class:creative-media-domain",
+      "@id": "urn:visionflow:owl:class:ai-application",
       "vc:label": "CreativeMediaDomain"
     },
     {
@@ -84,7 +84,7 @@ alias:: PhysicsEngine
       "vc:label": "Graphics API"
     },
     {
-      "@id": "urn:visionflow:owl:class:infrastructure-domain",
+      "@id": "urn:visionflow:owl:class:infrastructure",
       "vc:label": "InfrastructureDomain"
     },
     {
@@ -309,7 +309,7 @@ alias:: PhysicsEngine
     },
     {
       "raw": "[[CreativeMediaDomain]]",
-      "resolved": "urn:visionflow:owl:class:creative-media-domain",
+      "resolved": "urn:visionflow:owl:class:ai-application",
       "kind": "ResolvedLink"
     },
     {
@@ -324,7 +324,7 @@ alias:: PhysicsEngine
     },
     {
       "raw": "[[InfrastructureDomain]]",
-      "resolved": "urn:visionflow:owl:class:infrastructure-domain",
+      "resolved": "urn:visionflow:owl:class:infrastructure",
       "kind": "ResolvedLink"
     },
     {

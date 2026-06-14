@@ -100,7 +100,7 @@ alias:: CreatorEconomy
       "vc:label": "Virtual Currency"
     },
     {
-      "@id": "urn:visionflow:owl:class:virtual-economy-domain",
+      "@id": "urn:visionflow:owl:class:virtual-economy",
       "vc:label": "VirtualEconomyDomain"
     }
   ],
@@ -342,7 +342,7 @@ alias:: CreatorEconomy
     },
     {
       "raw": "[[VirtualEconomyDomain]]",
-      "resolved": "urn:visionflow:owl:class:virtual-economy-domain",
+      "resolved": "urn:visionflow:owl:class:virtual-economy",
       "kind": "ResolvedLink"
     }
   ],

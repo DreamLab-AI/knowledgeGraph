@@ -27,15 +27,15 @@ public:: true
       "vc:label": "Fiat On-Ramp"
     },
     {
-      "@id": "urn:visionflow:linked:regulatory-domain",
+      "@id": "urn:visionflow:linked:infra-legal-and-regulatory",
       "vc:label": "Regulatory Domain"
     },
     {
-      "@id": "urn:visionflow:linked:financial-infrastructure-domain",
+      "@id": "urn:visionflow:linked:financial-infrastructure",
       "vc:label": "Financial Infrastructure Domain"
     },
     {
-      "@id": "urn:visionflow:linked:digital-asset-domain",
+      "@id": "urn:visionflow:linked:digital-asset",
       "vc:label": "Digital Asset Domain"
     }
   ],
@@ -153,11 +153,11 @@ public:: true
     ],
     "bridgesTo": [
       {
-        "@id": "urn:ngm:class:regulatory-domain",
+        "@id": "urn:ngm:class:infra-legal-and-regulatory",
         "label": "Regulatory Domain"
       },
       {
-        "@id": "urn:ngm:class:financial-infrastructure-domain",
+        "@id": "urn:ngm:class:financial-infrastructure",
         "label": "Financial Infrastructure Domain"
       },
       {
@@ -222,17 +222,17 @@ public:: true
     },
     {
       "raw": "[[Regulatory Domain]]",
-      "resolved": "urn:visionflow:linked:regulatory-domain",
+      "resolved": "urn:visionflow:linked:infra-legal-and-regulatory",
       "kind": "ResolvedLink"
     },
     {
       "raw": "[[Financial Infrastructure Domain]]",
-      "resolved": "urn:visionflow:linked:financial-infrastructure-domain",
+      "resolved": "urn:visionflow:linked:financial-infrastructure",
       "kind": "ResolvedLink"
     },
     {
       "raw": "[[Digital Asset Domain]]",
-      "resolved": "urn:visionflow:linked:digital-asset-domain",
+      "resolved": "urn:visionflow:linked:digital-asset",
       "kind": "ResolvedLink"
     }
   ],

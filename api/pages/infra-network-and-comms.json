@@ -84,5 +84,18 @@
     ]
   },
   "wikilinks": [],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "api-gateway",
+      "label": "API Gateway"
+    },
+    {
+      "slug": "bandwidth-adaptation",
+      "label": "Bandwidth Adaptation"
+    },
+    {
+      "slug": "decentralised-web",
+      "label": "Decentralised Web"
+    }
+  ]
 }

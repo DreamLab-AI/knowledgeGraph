@@ -35,7 +35,7 @@ public:: true
       "vc:label": "EconomicMechanism"
     },
     {
-      "@id": "urn:visionflow:owl:class:token-economics-domain",
+      "@id": "urn:visionflow:owl:class:token-economics",
       "vc:label": "TokenEconomicsDomain"
     }
   ],
@@ -80,7 +80,7 @@ public:: true
       {"@id": "urn:ngm:class:inflation-rate-parameter", "label": "Inflation Rate Parameter"}
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:token-economics-domain", "label": "TokenEconomicsDomain"},
+      {"@id": "urn:ngm:class:token-economics", "label": "TokenEconomicsDomain"},
       {"@id": "urn:ngm:class:monetary-policy", "label": "Monetary Policy"}
     ],
     "requires": [
@@ -169,7 +169,7 @@ public:: true
     },
     {
       "raw": "[[TokenEconomicsDomain]]",
-      "resolved": "urn:visionflow:owl:class:token-economics-domain",
+      "resolved": "urn:visionflow:owl:class:token-economics",
       "kind": "ResolvedLink"
     }
   ],

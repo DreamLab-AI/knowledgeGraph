@@ -52,11 +52,11 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:spatial-computing-paradigm",
+        "id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing"
       },
       {
-        "id": "urn:ngm:class:metaverse-domain",
+        "id": "urn:ngm:class:metaverse",
         "label": "Metaverse Domain"
       }
     ]

@@ -28,7 +28,7 @@ alias:: Longest-Chain Rule
       "vc:label": "Blockchain Entity"
     },
     {
-      "@id": "urn:visionflow:owl:class:consensus-domain",
+      "@id": "urn:visionflow:owl:class:bc-protocol-and-consensus",
       "vc:label": "ConsensusDomain"
     },
     {
@@ -144,7 +144,7 @@ alias:: Longest-Chain Rule
     },
     {
       "raw": "[[ConsensusDomain]]",
-      "resolved": "urn:visionflow:owl:class:consensus-domain",
+      "resolved": "urn:visionflow:owl:class:bc-protocol-and-consensus",
       "kind": "ResolvedLink"
     },
     {

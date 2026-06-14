@@ -576,7 +576,7 @@
       "label": "Stochastic Optimization"
     },
     {
-      "slug": "supply-chain-domain",
+      "slug": "supply-chain",
       "label": "SupplyChainDomain"
     },
     {
@@ -624,7 +624,7 @@
       "label": "World Customs Organisation"
     },
     {
-      "slug": "ai-grounded-domain",
+      "slug": "ai-technique",
       "label": "AI-GroundedDomain"
     },
     {

@@ -155,7 +155,7 @@ public:: true
       "vc:label": "WebSocket Protocol"
     },
     {
-      "@id": "urn:visionflow:owl:class:blockchain-domain",
+      "@id": "urn:visionflow:owl:class:blockchain",
       "vc:label": "Blockchain Domain"
     },
     {
@@ -163,7 +163,7 @@ public:: true
       "vc:label": "DID Nostr Identity"
     },
     {
-      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "@id": "urn:visionflow:owl:class:metaverse",
       "vc:label": "Metaverse Domain"
     },
     {
@@ -171,7 +171,7 @@ public:: true
       "vc:label": "Model Context Protocol"
     },
     {
-      "@id": "urn:visionflow:owl:class:ngm-domain",
+      "@id": "urn:visionflow:owl:class:infrastructure",
       "vc:label": "NGM Domain"
     },
     {
@@ -183,7 +183,7 @@ public:: true
       "vc:label": "Solid Pod"
     },
     {
-      "@id": "urn:visionflow:owl:class:telecollaboration-domain",
+      "@id": "urn:visionflow:owl:class:telecollaboration",
       "vc:label": "Telecollaboration Domain"
     },
     {
@@ -531,7 +531,7 @@ public:: true
     },
     {
       "raw": "[[Blockchain Domain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-domain",
+      "resolved": "urn:visionflow:owl:class:blockchain",
       "kind": "ResolvedLink"
     },
     {
@@ -541,7 +541,7 @@ public:: true
     },
     {
       "raw": "[[Metaverse Domain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "resolved": "urn:visionflow:owl:class:metaverse",
       "kind": "ResolvedLink"
     },
     {
@@ -551,7 +551,7 @@ public:: true
     },
     {
       "raw": "[[NGM Domain]]",
-      "resolved": "urn:visionflow:owl:class:ngm-domain",
+      "resolved": "urn:visionflow:owl:class:infrastructure",
       "kind": "ResolvedLink"
     },
     {
@@ -566,7 +566,7 @@ public:: true
     },
     {
       "raw": "[[Telecollaboration Domain]]",
-      "resolved": "urn:visionflow:owl:class:telecollaboration-domain",
+      "resolved": "urn:visionflow:owl:class:telecollaboration",
       "kind": "ResolvedLink"
     },
     {

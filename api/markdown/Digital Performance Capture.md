@@ -71,7 +71,7 @@ public:: true
       "vc:label": "Computer Vision"
     },
     {
-      "@id": "urn:visionflow:owl:class:creative-media-domain",
+      "@id": "urn:visionflow:owl:class:ai-application",
       "vc:label": "CreativeMediaDomain"
     },
     {
@@ -133,7 +133,7 @@ public:: true
   ],
   "relations": {
     "bridgesTo": [
-      {"@id": "urn:ngm:class:creative-media-domain", "label": "Creative Media Domain"}
+      {"@id": "urn:ngm:class:ai-application", "label": "Creative Media Domain"}
     ],
     "hasPart": [
       {
@@ -291,7 +291,7 @@ public:: true
     },
     {
       "raw": "[[CreativeMediaDomain]]",
-      "resolved": "urn:visionflow:owl:class:creative-media-domain",
+      "resolved": "urn:visionflow:owl:class:ai-application",
       "kind": "ResolvedLink"
     },
     {

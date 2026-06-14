@@ -70,7 +70,7 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:metaverse-domain",
+        "@id": "urn:ngm:class:metaverse",
         "label": "Metaverse Domain"
       },
       {

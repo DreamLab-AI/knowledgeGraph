@@ -293,10 +293,6 @@
       "label": "Compliance Monitoring"
     },
     {
-      "slug": "computation-and-intelligence-domain",
-      "label": "Computation And Intelligence Domain"
-    },
-    {
       "slug": "computer-science",
       "label": "Computer Science"
     },
@@ -685,10 +681,6 @@
       "label": "Robot Standard"
     },
     {
-      "slug": "robotics-domain",
-      "label": "Robotics Domain"
-    },
-    {
       "slug": "robotics-platform",
       "label": "Robotics Platform"
     },
@@ -751,10 +743,6 @@
     {
       "slug": "time-series-forecasting",
       "label": "Time Series Forecasting"
-    },
-    {
-      "slug": "token-economics-domain",
-      "label": "Token Economics Domain"
     },
     {
       "slug": "training-data",

@@ -180,10 +180,6 @@
     {
       "slug": "robot-hardware",
       "label": "Robot Hardware"
-    },
-    {
-      "slug": "robotics-domain",
-      "label": "Robotics Domain"
     }
   ]
 }

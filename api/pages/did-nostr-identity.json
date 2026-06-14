@@ -107,7 +107,7 @@
       "label": "ADR-013"
     },
     {
-      "slug": "agentic-systems-domain",
+      "slug": "ai-application",
       "label": "AgenticSystemsDomain"
     },
     {
@@ -139,7 +139,7 @@
       "label": "Cryptographic Identity"
     },
     {
-      "slug": "cryptography-domain",
+      "slug": "cryptography",
       "label": "CryptographyDomain"
     },
     {
@@ -155,7 +155,7 @@
       "label": "Ethereum Name Service"
     },
     {
-      "slug": "identity-domain",
+      "slug": "identity",
       "label": "IdentityDomain"
     },
     {
@@ -331,10 +331,6 @@
     {
       "slug": "federation-surface",
       "label": "Federation Surface"
-    },
-    {
-      "slug": "ngm-domain",
-      "label": "NGM Domain"
     },
     {
       "slug": "nostr-protocol",

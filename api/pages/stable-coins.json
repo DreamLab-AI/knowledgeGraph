@@ -404,7 +404,7 @@
       "label": "Real-World Asset Tokenisation"
     },
     {
-      "slug": "regulatory-domain",
+      "slug": "infra-legal-and-regulatory",
       "label": "RegulatoryDomain"
     },
     {
@@ -512,7 +512,7 @@
       "label": "Blockchain As A Service"
     },
     {
-      "slug": "blockchain-domain",
+      "slug": "blockchain",
       "label": "BlockchainDomain"
     },
     {

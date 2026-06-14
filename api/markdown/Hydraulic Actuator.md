@@ -51,7 +51,7 @@ public:: true
       "vc:label": "ControlArchitectureLayer"
     },
     {
-      "@id": "urn:visionflow:linked:control-systems-domain",
+      "@id": "urn:visionflow:linked:robo-actuation-and-control",
       "vc:label": "ControlSystemsDomain"
     },
     {
@@ -191,7 +191,7 @@ public:: true
       "vc:label": "Linear Variable Differential Transformer"
     },
     {
-      "@id": "urn:visionflow:linked:mechanical-engineering-domain",
+      "@id": "urn:visionflow:linked:robo-actuation-and-control",
       "vc:label": "MechanicalEngineeringDomain"
     },
     {
@@ -343,7 +343,7 @@ public:: true
       "vc:label": "Pneumatic Actuator"
     },
     {
-      "@id": "urn:visionflow:owl:class:robotics-domain",
+      "@id": "urn:visionflow:owl:class:robotics",
       "vc:label": "RoboticsDomain"
     },
     {
@@ -727,7 +727,7 @@ public:: true
     },
     {
       "raw": "[[ControlSystemsDomain]]",
-      "resolved": "urn:visionflow:linked:control-systems-domain",
+      "resolved": "urn:visionflow:linked:robo-actuation-and-control",
       "kind": "StubLink"
     },
     {
@@ -902,7 +902,7 @@ public:: true
     },
     {
       "raw": "[[MechanicalEngineeringDomain]]",
-      "resolved": "urn:visionflow:linked:mechanical-engineering-domain",
+      "resolved": "urn:visionflow:linked:robo-actuation-and-control",
       "kind": "StubLink"
     },
     {
@@ -1092,7 +1092,7 @@ public:: true
     },
     {
       "raw": "[[RoboticsDomain]]",
-      "resolved": "urn:visionflow:owl:class:robotics-domain",
+      "resolved": "urn:visionflow:owl:class:robotics",
       "kind": "ResolvedLink"
     },
     {

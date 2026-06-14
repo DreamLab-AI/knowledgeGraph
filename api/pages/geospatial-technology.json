@@ -8,7 +8,7 @@
   "definition": "Geospatial Technology encompasses the integrated suite of tools, systems, and methodologies used to acquire, store, process, analyse, and visualise data that is referenced to locations on or near the Earth's surface. It combines hardware systems such as GPS receivers, LiDAR scanners, and remote sensing satellites with software platforms including Geographic Information Systems (GIS), geospatial databases, and mapping engines to produce authoritative spatial representations. In spatial computing and immersive environments, geospatial technology provides the world-scale coordinate infrastructure required for digital twin construction, precise AR/VR anchoring, autonomous navigation, and location-aware services. The discipline spans geodesy, photogrammetry, cartography, and real-time positioning, forming a foundational layer beneath smart city infrastructure, environmental monitoring, and logistics optimisation.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing-paradigm",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "Spatial Computing"
     }
   ],

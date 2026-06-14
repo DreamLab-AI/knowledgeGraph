@@ -71,7 +71,7 @@ public:: true
       "vc:label": "Decentralised Finance"
     },
     {
-      "@id": "urn:visionflow:linked:decentralised-finance-domain",
+      "@id": "urn:visionflow:linked:decentralised-finance",
       "vc:label": "DecentralisedFinanceDomain"
     },
     {
@@ -155,7 +155,7 @@ public:: true
       "vc:label": "Mechanism Design"
     },
     {
-      "@id": "urn:visionflow:linked:mechanism-design-domain",
+      "@id": "urn:visionflow:linked:mechanism-design",
       "vc:label": "MechanismDesignDomain"
     },
     {
@@ -291,7 +291,7 @@ public:: true
       "vc:label": "Bitcoin"
     },
     {
-      "@id": "urn:visionflow:owl:class:blockchain-domain",
+      "@id": "urn:visionflow:owl:class:blockchain",
       "vc:label": "BlockchainDomain"
     },
     {
@@ -704,7 +704,7 @@ public:: true
     },
     {
       "raw": "[[DecentralisedFinanceDomain]]",
-      "resolved": "urn:visionflow:linked:decentralised-finance-domain",
+      "resolved": "urn:visionflow:linked:decentralised-finance",
       "kind": "StubLink"
     },
     {
@@ -809,7 +809,7 @@ public:: true
     },
     {
       "raw": "[[MechanismDesignDomain]]",
-      "resolved": "urn:visionflow:linked:mechanism-design-domain",
+      "resolved": "urn:visionflow:linked:mechanism-design",
       "kind": "StubLink"
     },
     {
@@ -979,7 +979,7 @@ public:: true
     },
     {
       "raw": "[[BlockchainDomain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-domain",
+      "resolved": "urn:visionflow:owl:class:blockchain",
       "kind": "ResolvedLink"
     },
     {

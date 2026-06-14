@@ -170,7 +170,7 @@
       "label": "OECD AI Principles"
     },
     {
-      "slug": "artificial-intelligence-domain",
+      "slug": "artificial-intelligence",
       "label": "ArtificialIntelligenceDomain"
     },
     {
@@ -190,10 +190,6 @@
     {
       "slug": "computer-vision",
       "label": "Computer Vision"
-    },
-    {
-      "slug": "deep-learning-domain",
-      "label": "Deep Learning Domain"
     },
     {
       "slug": "feed-forward-network",

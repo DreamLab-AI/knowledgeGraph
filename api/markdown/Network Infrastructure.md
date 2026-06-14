@@ -74,7 +74,7 @@ alias:: NetworkInfrastructure
       {"@id": "urn:ngm:class:power-infrastructure", "label": "Power Infrastructure"}
     ],
     "supports": [
-      {"@id": "urn:ngm:class:spatial-computing-paradigm", "label": "Spatial Computing"},
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
       {"@id": "urn:ngm:class:ai-infrastructure", "label": "AI Infrastructure"},
       {"@id": "urn:ngm:class:autonomous-systems", "label": "Autonomous Systems"}
     ],

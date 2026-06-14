@@ -145,6 +145,14 @@
   ],
   "backlinks": [
     {
+      "slug": "ai-liability",
+      "label": "AI Liability"
+    },
+    {
+      "slug": "access-control-system",
+      "label": "Access Control System"
+    },
+    {
       "slug": "aragon",
       "label": "Aragon"
     },
@@ -153,12 +161,52 @@
       "label": "Authorised Representative"
     },
     {
+      "slug": "bitcoin-centralisation-risks",
+      "label": "Bitcoin Centralisation Risks"
+    },
+    {
+      "slug": "compliance-control",
+      "label": "Compliance Control"
+    },
+    {
+      "slug": "compliance-monitoring",
+      "label": "Compliance Monitoring"
+    },
+    {
+      "slug": "consortium-blockchain",
+      "label": "Consortium Blockchain"
+    },
+    {
+      "slug": "cross-border-compliance",
+      "label": "Cross Border Compliance"
+    },
+    {
+      "slug": "dao-analytics",
+      "label": "DAO Analytics"
+    },
+    {
+      "slug": "dao-legal-structures",
+      "label": "DAO Legal Structures"
+    },
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
       "slug": "daogovernance",
       "label": "DAOGovernance"
     },
     {
       "slug": "decentralized-governance",
       "label": "Decentralized Governance"
+    },
+    {
+      "slug": "digital-society-harms",
+      "label": "Digital Society Harms"
+    },
+    {
+      "slug": "distributed-identity",
+      "label": "Distributed Identity"
     },
     {
       "slug": "etsi-domain-governance-and-ethics",
@@ -173,6 +221,14 @@
       "label": "Employment Social Contract Under Automation"
     },
     {
+      "slug": "employment-social-contract-under-automation",
+      "label": "Employment Social Contract Under Automation"
+    },
+    {
+      "slug": "ethereum-foundation",
+      "label": "Ethereum Foundation"
+    },
+    {
       "slug": "fda",
       "label": "FDA"
     },
@@ -181,8 +237,28 @@
       "label": "Governance Frameworks"
     },
     {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    },
+    {
+      "slug": "identity-management-system",
+      "label": "Identity Management System"
+    },
+    {
       "slug": "law-commission",
       "label": "Law Commission"
+    },
+    {
+      "slug": "multi-sig-governance",
+      "label": "Multi Sig Governance"
+    },
+    {
+      "slug": "oecd",
+      "label": "OECD"
+    },
+    {
+      "slug": "on-chain-voting",
+      "label": "On Chain Voting"
     },
     {
       "slug": "permissionless-innovation",
@@ -197,6 +273,10 @@
       "label": "Political Economy"
     },
     {
+      "slug": "quadratic-voting",
+      "label": "Quadratic Voting"
+    },
+    {
       "slug": "reed-smith",
       "label": "Reed Smith"
     },
@@ -205,8 +285,24 @@
       "label": "Regulation"
     },
     {
+      "slug": "reputation-system",
+      "label": "Reputation System"
+    },
+    {
+      "slug": "risk-assessment",
+      "label": "Risk Assessment"
+    },
+    {
       "slug": "snapshot-off-chain-voting",
       "label": "Snapshot Off-Chain Voting"
+    },
+    {
+      "slug": "snapshot-voting",
+      "label": "Snapshot Voting"
+    },
+    {
+      "slug": "snapshot",
+      "label": "Snapshot"
     },
     {
       "slug": "tally",
@@ -231,6 +327,10 @@
     {
       "slug": "transparent-governance",
       "label": "Transparent Governance"
+    },
+    {
+      "slug": "treasury-management",
+      "label": "Treasury Management"
     },
     {
       "slug": "voting-system",

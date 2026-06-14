@@ -31,11 +31,11 @@ public:: true
       "vc:label": "ETSI Domain: Data Management"
     },
     {
-      "@id": "urn:visionflow:owl:class:infrastructure-domain",
+      "@id": "urn:visionflow:owl:class:infrastructure",
       "vc:label": "InfrastructureDomain"
     },
     {
-      "@id": "urn:visionflow:owl:class:technology-domain",
+      "@id": "urn:visionflow:owl:class:infrastructure",
       "vc:label": "Technology Domain"
     }
   ],
@@ -250,12 +250,12 @@ public:: true
     },
     {
       "raw": "[[InfrastructureDomain]]",
-      "resolved": "urn:visionflow:owl:class:infrastructure-domain",
+      "resolved": "urn:visionflow:owl:class:infrastructure",
       "kind": "ResolvedLink"
     },
     {
       "raw": "[[Technology Domain]]",
-      "resolved": "urn:visionflow:owl:class:technology-domain",
+      "resolved": "urn:visionflow:owl:class:infrastructure",
       "kind": "ResolvedLink"
     }
   ],

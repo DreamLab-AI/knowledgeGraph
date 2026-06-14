@@ -19,7 +19,7 @@ public:: true
       "vc:label": "Llama"
     },
     {
-      "@id": "urn:visionflow:linked:artificial-intelligence-domain",
+      "@id": "urn:visionflow:linked:artificial-intelligence",
       "vc:label": "Artificial Intelligence Domain"
     }
   ],
@@ -210,7 +210,7 @@ public:: true
     },
     {
       "raw": "[[Artificial Intelligence Domain]]",
-      "resolved": "urn:visionflow:linked:artificial-intelligence-domain",
+      "resolved": "urn:visionflow:linked:artificial-intelligence",
       "kind": "ResolvedLink"
     }
   ],

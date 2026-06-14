@@ -167,7 +167,7 @@
       "label": "AI Framework"
     },
     {
-      "slug": "computation-and-intelligence-domain",
+      "slug": "ai-research-area",
       "label": "ComputationAndIntelligenceDomain"
     },
     {
@@ -187,7 +187,7 @@
       "label": "DataLayer"
     },
     {
-      "slug": "interaction-domain",
+      "slug": "sc-interaction",
       "label": "InteractionDomain"
     },
     {

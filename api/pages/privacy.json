@@ -255,7 +255,7 @@
       "label": "Lightning Network"
     },
     {
-      "slug": "metaverse-domain",
+      "slug": "metaverse",
       "label": "MetaverseDomain"
     },
     {
@@ -349,6 +349,10 @@
       "label": "Cashu"
     },
     {
+      "slug": "cashu",
+      "label": "Cashu"
+    },
+    {
       "slug": "corda",
       "label": "Corda"
     },
@@ -373,8 +377,16 @@
       "label": "Digital Divide"
     },
     {
+      "slug": "digital-identity-wallet",
+      "label": "Digital Identity Wallet"
+    },
+    {
       "slug": "digital-society-surveillance",
       "label": "Digital Society Surveillance"
+    },
+    {
+      "slug": "distributed-identity",
+      "label": "Distributed Identity"
     },
     {
       "slug": "etsi-domain-virtual-society",
@@ -409,12 +421,24 @@
       "label": "Open Rights Group"
     },
     {
+      "slug": "privacy-filter",
+      "label": "Privacy Filter"
+    },
+    {
       "slug": "pseudonymity",
       "label": "Pseudonymity"
     },
     {
       "slug": "sd-jwt-vc",
       "label": "SD-JWT VC"
+    },
+    {
+      "slug": "self-sovereign-identity",
+      "label": "Self Sovereign Identity"
+    },
+    {
+      "slug": "solid",
+      "label": "Solid"
     },
     {
       "slug": "telecollaboration-and-telepresence",

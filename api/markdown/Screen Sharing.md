@@ -47,7 +47,7 @@ public:: true
       "vc:label": "Distributed Collaboration"
     },
     {
-      "@id": "urn:visionflow:linked:distributed-collaboration-domain",
+      "@id": "urn:visionflow:linked:distributed-collaboration",
       "vc:label": "DistributedCollaborationDomain"
     },
     {
@@ -63,7 +63,7 @@ public:: true
       "vc:label": "H.264 Screen Content Coding"
     },
     {
-      "@id": "urn:visionflow:linked:human-computer-interaction-domain",
+      "@id": "urn:visionflow:linked:human-computer-interaction",
       "vc:label": "HumanComputerInteractionDomain"
     },
     {
@@ -614,7 +614,7 @@ public:: true
     },
     {
       "raw": "[[DistributedCollaborationDomain]]",
-      "resolved": "urn:visionflow:linked:distributed-collaboration-domain",
+      "resolved": "urn:visionflow:linked:distributed-collaboration",
       "kind": "StubLink"
     },
     {
@@ -634,7 +634,7 @@ public:: true
     },
     {
       "raw": "[[HumanComputerInteractionDomain]]",
-      "resolved": "urn:visionflow:linked:human-computer-interaction-domain",
+      "resolved": "urn:visionflow:linked:human-computer-interaction",
       "kind": "StubLink"
     },
     {

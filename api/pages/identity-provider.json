@@ -431,7 +431,7 @@
       "label": "SCIM"
     },
     {
-      "slug": "security-domain",
+      "slug": "security",
       "label": "SecurityDomain"
     },
     {
@@ -635,10 +635,6 @@
     {
       "slug": "federated-credential-exchange",
       "label": "Federated Credential Exchange"
-    },
-    {
-      "slug": "identity-domain",
-      "label": "Identity Domain"
     },
     {
       "slug": "identity-graph",

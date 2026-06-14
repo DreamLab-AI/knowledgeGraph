@@ -459,7 +459,7 @@
       "label": "Generative AI Tool"
     },
     {
-      "slug": "generative-modelling-domain",
+      "slug": "ai-model-architecture",
       "label": "GenerativeModellingDomain"
     },
     {
@@ -487,7 +487,7 @@
       "label": "Hu et al 2022 LoRA"
     },
     {
-      "slug": "human-computer-interaction-domain",
+      "slug": "human-computer-interaction",
       "label": "HumanComputerInteractionDomain"
     },
     {
@@ -719,7 +719,7 @@
       "label": "AI Agent System"
     },
     {
-      "slug": "ai-grounded-domain",
+      "slug": "ai-technique",
       "label": "AI-GroundedDomain"
     },
     {

@@ -376,7 +376,7 @@
       "label": "Consumer Trust"
     },
     {
-      "slug": "corporate-governance-domain",
+      "slug": "corporate-governance",
       "label": "CorporateGovernanceDomain"
     },
     {
@@ -756,7 +756,7 @@
       "label": "Supplier Identification"
     },
     {
-      "slug": "supply-chain-domain",
+      "slug": "supply-chain",
       "label": "SupplyChainDomain"
     },
     {
@@ -844,7 +844,7 @@
       "label": "Zero-Knowledge Proofs"
     },
     {
-      "slug": "blockchain-domain",
+      "slug": "blockchain",
       "label": "BlockchainDomain"
     },
     {

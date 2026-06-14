@@ -193,10 +193,6 @@
       "label": "Light field"
     },
     {
-      "slug": "metaverse-domain",
-      "label": "Metaverse Domain"
-    },
-    {
       "slug": "mixed-reality",
       "label": "Mixed Reality"
     },
@@ -227,10 +223,6 @@
     {
       "slug": "social-impact",
       "label": "Social Impact"
-    },
-    {
-      "slug": "spatial-computing-domain",
-      "label": "Spatial Computing Domain"
     },
     {
       "slug": "telecollaboration-and-telepresence",

@@ -199,7 +199,7 @@
       "label": "Sentiment Analysis"
     },
     {
-      "slug": "trust-and-governance-domain",
+      "slug": "ai-governance-and-ethics",
       "label": "TrustAndGovernanceDomain"
     },
     {
@@ -207,7 +207,7 @@
       "label": "Virtual Interaction Logging"
     },
     {
-      "slug": "virtual-society-domain",
+      "slug": "virtual-society",
       "label": "VirtualSocietyDomain"
     }
   ],

@@ -49,10 +49,6 @@
       "label": "AI Risks"
     },
     {
-      "slug": "aisafety-domain",
-      "label": "AISafetyDomain"
-    },
-    {
       "slug": "digital-society-harms",
       "label": "Digital Society Harms"
     }

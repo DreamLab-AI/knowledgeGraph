@@ -256,7 +256,7 @@
       "label": "Agentic AI"
     },
     {
-      "slug": "agentic-systems-domain",
+      "slug": "ai-application",
       "label": "AgenticSystemsDomain"
     },
     {
@@ -600,7 +600,7 @@
       "label": "Yao et al 2022 ReAct"
     },
     {
-      "slug": "ai-grounded-domain",
+      "slug": "ai-technique",
       "label": "AI-GroundedDomain"
     },
     {
@@ -612,7 +612,7 @@
       "label": "Attention Mechanism"
     },
     {
-      "slug": "computation-and-intelligence-domain",
+      "slug": "ai-research-area",
       "label": "ComputationAndIntelligenceDomain"
     },
     {

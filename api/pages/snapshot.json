@@ -8,7 +8,7 @@
   "definition": "Snapshot is an off-chain governance platform that lets token holders and decentralised autonomous organisations vote on proposals without paying on-chain transaction fees. Votes are signed cryptographically with a wallet and weighted according to token holdings recorded at a chosen block height, then aggregated and stored on the InterPlanetary File System. Because voting is gasless and non-binding at the protocol level, results are typically executed separately by multisignature wallets or on-chain modules.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:decentralised-finance-domain",
+      "id": "urn:ngm:class:decentralised-finance",
       "label": "Decentralised Finance Domain"
     }
   ],
@@ -120,7 +120,7 @@
     "standardizedBy": [],
     "partOf": [
       {
-        "id": "urn:ngm:class:governance-domain",
+        "id": "urn:ngm:class:governance",
         "label": "Governance Domain"
       }
     ],
@@ -153,11 +153,11 @@
       "label": "Gnosis Safe"
     },
     {
-      "slug": "governance-domain",
+      "slug": "governance",
       "label": "Governance Domain"
     },
     {
-      "slug": "decentralised-finance-domain",
+      "slug": "decentralised-finance",
       "label": "Decentralised Finance Domain"
     }
   ],

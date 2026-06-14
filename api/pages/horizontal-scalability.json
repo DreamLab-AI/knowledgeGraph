@@ -33,7 +33,7 @@
         "label": "Distributed Computing"
       },
       {
-        "id": "urn:ngm:class:distributed-systems-domain",
+        "id": "urn:ngm:class:distributed-systems",
         "label": "Distributed Systems Domain"
       }
     ]
@@ -43,10 +43,6 @@
     {
       "slug": "distributed-computing",
       "label": "Distributed Computing"
-    },
-    {
-      "slug": "distributed-systems-domain",
-      "label": "Distributed Systems Domain"
     }
   ]
 }

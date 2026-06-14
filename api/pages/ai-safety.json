@@ -157,6 +157,10 @@
       "label": "AI Risks"
     },
     {
+      "slug": "ai-risks",
+      "label": "AI Risks"
+    },
+    {
       "slug": "ai-safety-institute",
       "label": "AI Safety Institute"
     },
@@ -167,10 +171,6 @@
     {
       "slug": "aisi",
       "label": "AISI"
-    },
-    {
-      "slug": "aisafety-domain",
-      "label": "AISafetyDomain"
     },
     {
       "slug": "agents",
@@ -193,12 +193,20 @@
       "label": "Evaluation benchmarks and leaderboards"
     },
     {
+      "slug": "evaluation-benchmarks-and-leaderboards",
+      "label": "Evaluation benchmarks and leaderboards"
+    },
+    {
       "slug": "existential-ai-risk",
       "label": "Existential AI Risk"
     },
     {
       "slug": "ground-robot",
       "label": "Ground Robot"
+    },
+    {
+      "slug": "jailbreaking",
+      "label": "Jailbreaking"
     },
     {
       "slug": "jailbreaking",
@@ -223,6 +231,10 @@
     {
       "slug": "proprietary-ai-video",
       "label": "Proprietary AI Video"
+    },
+    {
+      "slug": "risk-assessment",
+      "label": "Risk Assessment"
     },
     {
       "slug": "risk-assessment",

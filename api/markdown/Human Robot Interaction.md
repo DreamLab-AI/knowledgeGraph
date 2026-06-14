@@ -112,7 +112,7 @@ alias:: Human-Robot Interaction, HumanRobotInteraction
       "vc:label": "NaturalLanguageProcessing"
     },
     {
-      "@id": "urn:visionflow:owl:class:robotics-domain",
+      "@id": "urn:visionflow:owl:class:robotics",
       "vc:label": "RoboticsDomain"
     },
     {
@@ -175,7 +175,7 @@ alias:: Human-Robot Interaction, HumanRobotInteraction
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:robotics-domain",
+        "@id": "urn:ngm:class:robotics",
         "label": "Robotics Domain"
       }
     ],
@@ -435,7 +435,7 @@ alias:: Human-Robot Interaction, HumanRobotInteraction
     },
     {
       "raw": "[[RoboticsDomain]]",
-      "resolved": "urn:visionflow:owl:class:robotics-domain",
+      "resolved": "urn:visionflow:owl:class:robotics",
       "kind": "ResolvedLink"
     },
     {

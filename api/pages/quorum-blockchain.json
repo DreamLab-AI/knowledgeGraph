@@ -327,7 +327,7 @@
       "label": "Daml Ledger"
     },
     {
-      "slug": "digital-asset-domain",
+      "slug": "digital-asset",
       "label": "DigitalAssetDomain"
     },
     {
@@ -623,7 +623,7 @@
       "label": "Blockchain As A Service"
     },
     {
-      "slug": "blockchain-domain",
+      "slug": "blockchain",
       "label": "BlockchainDomain"
     },
     {

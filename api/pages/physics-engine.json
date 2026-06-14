@@ -155,7 +155,7 @@
       "label": "Compute Layer"
     },
     {
-      "slug": "creative-media-domain",
+      "slug": "ai-application",
       "label": "CreativeMediaDomain"
     },
     {
@@ -167,7 +167,7 @@
       "label": "Graphics API"
     },
     {
-      "slug": "infrastructure-domain",
+      "slug": "infrastructure",
       "label": "InfrastructureDomain"
     },
     {

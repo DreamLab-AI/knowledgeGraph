@@ -235,7 +235,7 @@ public:: true
       "vc:label": "Naous et al. 2024 Cultural Bias LLMs ACL"
     },
     {
-      "@id": "urn:visionflow:linked:natural-language-processing-domain",
+      "@id": "urn:visionflow:linked:natural-language-processing",
       "vc:label": "NaturalLanguageProcessingDomain"
     },
     {
@@ -383,7 +383,7 @@ public:: true
       "vc:label": "AI Ethics"
     },
     {
-      "@id": "urn:visionflow:owl:class:ai-grounded-domain",
+      "@id": "urn:visionflow:owl:class:ai-technique",
       "vc:label": "AI-GroundedDomain"
     },
     {
@@ -391,7 +391,7 @@ public:: true
       "vc:label": "AI Risks"
     },
     {
-      "@id": "urn:visionflow:owl:class:aiethics-domain",
+      "@id": "urn:visionflow:owl:class:ai-governance-and-ethics",
       "vc:label": "AIEthicsDomain"
     },
     {
@@ -1029,7 +1029,7 @@ public:: true
     },
     {
       "raw": "[[NaturalLanguageProcessingDomain]]",
-      "resolved": "urn:visionflow:linked:natural-language-processing-domain",
+      "resolved": "urn:visionflow:linked:natural-language-processing",
       "kind": "StubLink"
     },
     {
@@ -1214,7 +1214,7 @@ public:: true
     },
     {
       "raw": "[[AI-GroundedDomain]]",
-      "resolved": "urn:visionflow:owl:class:ai-grounded-domain",
+      "resolved": "urn:visionflow:owl:class:ai-technique",
       "kind": "ResolvedLink"
     },
     {
@@ -1224,7 +1224,7 @@ public:: true
     },
     {
       "raw": "[[AIEthicsDomain]]",
-      "resolved": "urn:visionflow:owl:class:aiethics-domain",
+      "resolved": "urn:visionflow:owl:class:ai-governance-and-ethics",
       "kind": "ResolvedLink"
     },
     {

@@ -97,10 +97,5 @@
       "label": "Spatial Mapping"
     }
   ],
-  "backlinks": [
-    {
-      "slug": "spatial-computing-layer",
-      "label": "Spatial Computing Layer"
-    }
-  ]
+  "backlinks": []
 }

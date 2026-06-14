@@ -61,7 +61,7 @@ alias:: VirtualMeeting
     "uses": [
       {"@id": "urn:ngm:class:immersive-technology", "label": "Immersive Technology"},
       {"@id": "urn:ngm:class:collaboration-platform", "label": "Collaboration Platform"},
-      {"@id": "urn:ngm:class:spatial-computing-paradigm", "label": "Spatial Computing"}
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:immersive-workspaces", "label": "Immersive Workspaces"},

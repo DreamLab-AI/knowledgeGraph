@@ -17,7 +17,7 @@ alias:: MachineLearning
       "vc:label": "decision making"
     },
     {
-      "@id": "urn:visionflow:owl:class:artificial-intelligence-domain",
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
       "vc:label": "ArtificialIntelligenceDomain"
     },
     {
@@ -150,7 +150,7 @@ alias:: MachineLearning
     },
     {
       "raw": "[[ArtificialIntelligenceDomain]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence-domain",
+      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
       "kind": "ResolvedLink"
     },
     {

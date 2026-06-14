@@ -79,7 +79,7 @@ public:: true
       "vc:label": "Digital Provenance"
     },
     {
-      "@id": "urn:visionflow:linked:distributed-collaboration-domain",
+      "@id": "urn:visionflow:linked:distributed-collaboration",
       "vc:label": "DistributedCollaborationDomain"
     },
     {
@@ -183,7 +183,7 @@ public:: true
       "vc:label": "Meeting Support Tools"
     },
     {
-      "@id": "urn:visionflow:linked:natural-language-processing-domain",
+      "@id": "urn:visionflow:linked:natural-language-processing",
       "vc:label": "NaturalLanguageProcessingDomain"
     },
     {
@@ -724,7 +724,7 @@ public:: true
     },
     {
       "raw": "[[DistributedCollaborationDomain]]",
-      "resolved": "urn:visionflow:linked:distributed-collaboration-domain",
+      "resolved": "urn:visionflow:linked:distributed-collaboration",
       "kind": "StubLink"
     },
     {
@@ -854,7 +854,7 @@ public:: true
     },
     {
       "raw": "[[NaturalLanguageProcessingDomain]]",
-      "resolved": "urn:visionflow:linked:natural-language-processing-domain",
+      "resolved": "urn:visionflow:linked:natural-language-processing",
       "kind": "StubLink"
     },
     {

@@ -415,7 +415,7 @@
       "label": "ConsensusLayer"
     },
     {
-      "slug": "cryptography-domain",
+      "slug": "cryptography",
       "label": "CryptographyDomain"
     },
     {
@@ -443,7 +443,7 @@
       "label": "Distributed Ledger Technology"
     },
     {
-      "slug": "distributed-systems-domain",
+      "slug": "distributed-systems",
       "label": "DistributedSystemsDomain"
     },
     {
@@ -655,7 +655,7 @@
       "label": "Blockchain"
     },
     {
-      "slug": "blockchain-domain",
+      "slug": "blockchain",
       "label": "BlockchainDomain"
     },
     {

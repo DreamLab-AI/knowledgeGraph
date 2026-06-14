@@ -57,7 +57,7 @@ public:: true
       {"@id": "urn:ngm:class:player-two", "label": "Player Two"}
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:spatial-computing-paradigm", "label": "Spatial Computing"},
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
       {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}
     ]
   },

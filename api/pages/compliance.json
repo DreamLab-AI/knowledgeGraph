@@ -158,8 +158,20 @@
       "label": "Corporate Governance"
     },
     {
+      "slug": "cross-border-compliance",
+      "label": "Cross Border Compliance"
+    },
+    {
+      "slug": "fatfrecommendations",
+      "label": "FATFRecommendations"
+    },
+    {
       "slug": "kyc",
       "label": "KYC"
+    },
+    {
+      "slug": "meeting-recording",
+      "label": "Meeting Recording"
     },
     {
       "slug": "process-regulation",

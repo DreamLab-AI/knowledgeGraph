@@ -63,7 +63,7 @@ public:: true
       "vc:label": "Immersive Gaming"
     },
     {
-      "@id": "urn:visionflow:owl:class:interaction-domain",
+      "@id": "urn:visionflow:owl:class:sc-interaction",
       "vc:label": "InteractionDomain"
     },
     {
@@ -176,7 +176,7 @@ public:: true
         "label": "Stereoscopic Rendering"
       },
       {
-        "@id": "urn:ngm:class:spatial-computing-paradigm",
+        "@id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing"
       }
     ],
@@ -290,7 +290,7 @@ public:: true
     },
     {
       "raw": "[[InteractionDomain]]",
-      "resolved": "urn:visionflow:owl:class:interaction-domain",
+      "resolved": "urn:visionflow:owl:class:sc-interaction",
       "kind": "ResolvedLink"
     },
     {

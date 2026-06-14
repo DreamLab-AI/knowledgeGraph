@@ -29,7 +29,7 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:distributed-collaboration-domain",
+        "id": "urn:ngm:class:distributed-collaboration",
         "label": "Distributed Collaboration Domain"
       },
       {
@@ -47,10 +47,6 @@
     {
       "slug": "digital-twin",
       "label": "Digital Twin"
-    },
-    {
-      "slug": "distributed-collaboration-domain",
-      "label": "Distributed Collaboration Domain"
     }
   ]
 }

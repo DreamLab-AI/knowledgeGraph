@@ -23,7 +23,7 @@ public:: true
       "vc:label": "ETSI_Domain_Interoperability"
     },
     {
-      "@id": "urn:visionflow:owl:class:infrastructure-domain",
+      "@id": "urn:visionflow:owl:class:infrastructure",
       "vc:label": "InfrastructureDomain"
     },
     {
@@ -31,7 +31,7 @@ public:: true
       "vc:label": "Interoperability"
     },
     {
-      "@id": "urn:visionflow:owl:class:technology-domain",
+      "@id": "urn:visionflow:owl:class:infrastructure",
       "vc:label": "Technology Domain"
     }
   ],
@@ -256,7 +256,7 @@ public:: true
     },
     {
       "raw": "[[InfrastructureDomain]]",
-      "resolved": "urn:visionflow:owl:class:infrastructure-domain",
+      "resolved": "urn:visionflow:owl:class:infrastructure",
       "kind": "ResolvedLink"
     },
     {
@@ -266,7 +266,7 @@ public:: true
     },
     {
       "raw": "[[Technology Domain]]",
-      "resolved": "urn:visionflow:owl:class:technology-domain",
+      "resolved": "urn:visionflow:owl:class:infrastructure",
       "kind": "ResolvedLink"
     }
   ],

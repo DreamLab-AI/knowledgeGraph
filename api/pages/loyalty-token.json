@@ -126,11 +126,11 @@
       "label": "Virtual Asset"
     },
     {
-      "slug": "virtual-economy-domain",
+      "slug": "virtual-economy",
       "label": "VirtualEconomyDomain"
     },
     {
-      "slug": "virtual-society-domain",
+      "slug": "virtual-society",
       "label": "VirtualSocietyDomain"
     }
   ],

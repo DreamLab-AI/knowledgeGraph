@@ -496,7 +496,7 @@
       "label": "GDPR Accountability"
     },
     {
-      "slug": "governance-domain",
+      "slug": "governance",
       "label": "GovernanceDomain"
     },
     {
@@ -524,7 +524,7 @@
       "label": "IIA"
     },
     {
-      "slug": "information-security-domain",
+      "slug": "information-security",
       "label": "InformationSecurityDomain"
     },
     {
@@ -644,7 +644,7 @@
       "label": "Regulatory Assurance"
     },
     {
-      "slug": "regulatory-domain",
+      "slug": "infra-legal-and-regulatory",
       "label": "RegulatoryDomain"
     },
     {

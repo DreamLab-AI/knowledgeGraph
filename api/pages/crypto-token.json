@@ -127,7 +127,7 @@
       "label": "Blockchain"
     },
     {
-      "slug": "blockchain-domain",
+      "slug": "blockchain",
       "label": "BlockchainDomain"
     },
     {
@@ -175,7 +175,7 @@
       "label": "Token Standard"
     },
     {
-      "slug": "virtual-economy-domain",
+      "slug": "virtual-economy",
       "label": "VirtualEconomyDomain"
     },
     {

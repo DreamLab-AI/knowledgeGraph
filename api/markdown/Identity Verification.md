@@ -503,7 +503,7 @@ public:: true
       "vc:label": "Ramachandra Busch PAD Survey ACM 2017"
     },
     {
-      "@id": "urn:visionflow:linked:regulatory-compliance-domain",
+      "@id": "urn:visionflow:linked:regulatory-compliance",
       "vc:label": "RegulatoryComplianceDomain"
     },
     {
@@ -547,7 +547,7 @@ public:: true
       "vc:label": "Schroff Kalenichenko Philbin FaceNet CVPR 2015"
     },
     {
-      "@id": "urn:visionflow:linked:security-domain",
+      "@id": "urn:visionflow:linked:security",
       "vc:label": "SecurityDomain"
     },
     {
@@ -1636,7 +1636,7 @@ public:: true
     },
     {
       "raw": "[[RegulatoryComplianceDomain]]",
-      "resolved": "urn:visionflow:linked:regulatory-compliance-domain",
+      "resolved": "urn:visionflow:linked:regulatory-compliance",
       "kind": "StubLink"
     },
     {
@@ -1691,7 +1691,7 @@ public:: true
     },
     {
       "raw": "[[SecurityDomain]]",
-      "resolved": "urn:visionflow:linked:security-domain",
+      "resolved": "urn:visionflow:linked:security",
       "kind": "StubLink"
     },
     {

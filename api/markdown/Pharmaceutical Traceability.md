@@ -112,7 +112,7 @@ alias:: BC-0442-pharmaceutical-traceability
       "vc:label": "Blockchain"
     },
     {
-      "@id": "urn:visionflow:owl:class:blockchain-domain",
+      "@id": "urn:visionflow:owl:class:blockchain",
       "vc:label": "BlockchainDomain"
     },
     {
@@ -329,7 +329,7 @@ alias:: BC-0442-pharmaceutical-traceability
     },
     {
       "raw": "[[BlockchainDomain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-domain",
+      "resolved": "urn:visionflow:owl:class:blockchain",
       "kind": "ResolvedLink"
     },
     {

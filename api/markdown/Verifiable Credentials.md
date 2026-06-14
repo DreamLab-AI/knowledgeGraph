@@ -48,7 +48,7 @@ alias:: BC-0458-verifiable-credentials, Verifiable Credential, VerifiableCredent
       "vc:label": "Cryptographic Proof"
     },
     {
-      "@id": "urn:visionflow:linked:cryptography-domain",
+      "@id": "urn:visionflow:linked:cryptography",
       "vc:label": "CryptographyDomain"
     },
     {
@@ -88,7 +88,7 @@ alias:: BC-0458-verifiable-credentials, Verifiable Credential, VerifiableCredent
       "vc:label": "Healthcare Data Interoperability"
     },
     {
-      "@id": "urn:visionflow:linked:identity-domain",
+      "@id": "urn:visionflow:linked:identity",
       "vc:label": "IdentityDomain"
     },
     {
@@ -200,7 +200,7 @@ alias:: BC-0458-verifiable-credentials, Verifiable Credential, VerifiableCredent
       "vc:label": "ApplicationLayer"
     },
     {
-      "@id": "urn:visionflow:owl:class:blockchain-domain",
+      "@id": "urn:visionflow:owl:class:blockchain",
       "vc:label": "BlockchainDomain"
     },
     {
@@ -566,7 +566,7 @@ alias:: BC-0458-verifiable-credentials, Verifiable Credential, VerifiableCredent
     },
     {
       "raw": "[[CryptographyDomain]]",
-      "resolved": "urn:visionflow:linked:cryptography-domain",
+      "resolved": "urn:visionflow:linked:cryptography",
       "kind": "StubLink"
     },
     {
@@ -616,7 +616,7 @@ alias:: BC-0458-verifiable-credentials, Verifiable Credential, VerifiableCredent
     },
     {
       "raw": "[[IdentityDomain]]",
-      "resolved": "urn:visionflow:linked:identity-domain",
+      "resolved": "urn:visionflow:linked:identity",
       "kind": "StubLink"
     },
     {
@@ -756,7 +756,7 @@ alias:: BC-0458-verifiable-credentials, Verifiable Credential, VerifiableCredent
     },
     {
       "raw": "[[BlockchainDomain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-domain",
+      "resolved": "urn:visionflow:owl:class:blockchain",
       "kind": "ResolvedLink"
     },
     {

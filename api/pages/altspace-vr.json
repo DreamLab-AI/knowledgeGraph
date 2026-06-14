@@ -8,7 +8,7 @@
   "definition": "AltspaceVR was a social virtual reality platform offering avatar-based gatherings, events and shared spaces, later acquired by Microsoft and eventually shut down.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:metaverse-domain",
+      "id": "urn:ngm:class:metaverse",
       "label": "Metaverse Domain"
     }
   ],
@@ -57,7 +57,7 @@
       "label": "Microsoft Mesh"
     },
     {
-      "slug": "metaverse-domain",
+      "slug": "metaverse",
       "label": "Metaverse Domain"
     }
   ],

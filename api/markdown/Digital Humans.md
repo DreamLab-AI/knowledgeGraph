@@ -15,7 +15,7 @@ public:: true
       "vc:label": "DID Nostr Identity"
     },
     {
-      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "@id": "urn:visionflow:owl:class:metaverse",
       "vc:label": "MetaverseDomain"
     }
   ],
@@ -75,7 +75,7 @@ public:: true
       {"@id": "urn:ngm:class:digital-avatar", "label": "Digital Avatar"}
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:spatial-computing-paradigm", "label": "Spatial Computing"},
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
       {"@id": "urn:ngm:class:immersive-technology", "label": "Immersive Technology"}
     ]
   },
@@ -103,7 +103,7 @@ public:: true
     },
     {
       "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "resolved": "urn:visionflow:owl:class:metaverse",
       "kind": "ResolvedLink"
     }
   ],

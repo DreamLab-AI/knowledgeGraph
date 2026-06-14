@@ -26,7 +26,7 @@
         "label": "Augmented Reality"
       },
       {
-        "id": "urn:ngm:class:spatial-computing-paradigm",
+        "id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing"
       },
       {
@@ -129,7 +129,7 @@
       "label": "Spatial Computing"
     },
     {
-      "slug": "technology-domain",
+      "slug": "infrastructure",
       "label": "Technology Domain"
     },
     {
@@ -147,18 +147,6 @@
   ],
   "backlinks": [
     {
-      "slug": "aidomain",
-      "label": "AIDomain"
-    },
-    {
-      "slug": "artificial-intelligence-domain",
-      "label": "Artificial Intelligence Domain"
-    },
-    {
-      "slug": "creative-media-domain",
-      "label": "Creative Media Domain"
-    },
-    {
       "slug": "data-management",
       "label": "Data Management"
     },
@@ -169,10 +157,6 @@
     {
       "slug": "robotics-systems",
       "label": "Robotics Systems"
-    },
-    {
-      "slug": "technology-domain",
-      "label": "Technology Domain"
     }
   ]
 }

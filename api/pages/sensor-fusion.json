@@ -185,7 +185,7 @@
       "label": "robotics"
     },
     {
-      "slug": "robotics-domain",
+      "slug": "robotics",
       "label": "RoboticsDomain"
     },
     {
@@ -203,10 +203,6 @@
       "label": "ADAS"
     },
     {
-      "slug": "ai-grounded-domain",
-      "label": "AI Grounded Domain"
-    },
-    {
       "slug": "ar-frame",
       "label": "AR Frame"
     },
@@ -217,10 +213,6 @@
     {
       "slug": "autonomous-robot",
       "label": "Autonomous Robot"
-    },
-    {
-      "slug": "autonomous-systems-domain",
-      "label": "Autonomous Systems Domain"
     },
     {
       "slug": "autonomous-vehicle",
@@ -329,10 +321,6 @@
     {
       "slug": "robotics-control",
       "label": "Robotics Control"
-    },
-    {
-      "slug": "robotics-domain",
-      "label": "Robotics Domain"
     },
     {
       "slug": "robotics-platform",

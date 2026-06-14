@@ -240,7 +240,7 @@
       "label": "WebID Profile"
     },
     {
-      "slug": "blockchain-domain",
+      "slug": "blockchain",
       "label": "Blockchain Domain"
     },
     {
@@ -256,7 +256,7 @@
       "label": "LangChain"
     },
     {
-      "slug": "metaverse-domain",
+      "slug": "metaverse",
       "label": "Metaverse Domain"
     },
     {
@@ -264,7 +264,7 @@
       "label": "Model Context Protocol"
     },
     {
-      "slug": "ngm-domain",
+      "slug": "infrastructure",
       "label": "NGM Domain"
     },
     {
@@ -276,7 +276,7 @@
       "label": "Personal Data Store"
     },
     {
-      "slug": "telecollaboration-domain",
+      "slug": "telecollaboration",
       "label": "Telecollaboration Domain"
     },
     {
@@ -308,10 +308,6 @@
     {
       "slug": "model-context-protocol",
       "label": "Model Context Protocol"
-    },
-    {
-      "slug": "ngm-domain",
-      "label": "NGM Domain"
     },
     {
       "slug": "nostr-protocol",

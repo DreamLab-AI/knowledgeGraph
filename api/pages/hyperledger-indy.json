@@ -427,7 +427,7 @@
       "label": "CryptographicPrimitiveLayer"
     },
     {
-      "slug": "cryptography-domain",
+      "slug": "cryptography",
       "label": "CryptographyDomain"
     },
     {
@@ -479,7 +479,7 @@
       "label": "Distributed Hash Table Routing"
     },
     {
-      "slug": "distributed-systems-domain",
+      "slug": "distributed-systems",
       "label": "DistributedSystemsDomain"
     },
     {
@@ -543,7 +543,7 @@
       "label": "IATA Travel Pass"
     },
     {
-      "slug": "identity-domain",
+      "slug": "identity",
       "label": "IdentityDomain"
     },
     {
@@ -859,7 +859,7 @@
       "label": "ZKP-Based Anonymous Credentials"
     },
     {
-      "slug": "blockchain-domain",
+      "slug": "blockchain",
       "label": "BlockchainDomain"
     },
     {

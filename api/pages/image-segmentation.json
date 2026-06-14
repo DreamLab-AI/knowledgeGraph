@@ -465,10 +465,6 @@
   ],
   "backlinks": [
     {
-      "slug": "computer-vision-domain",
-      "label": "Computer Vision Domain"
-    },
-    {
       "slug": "image-and-video-restoration",
       "label": "Image and Video Restoration"
     },

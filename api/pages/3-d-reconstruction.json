@@ -194,10 +194,6 @@
       "label": "Camera"
     },
     {
-      "slug": "computer-vision-domain",
-      "label": "Computer Vision Domain"
-    },
-    {
       "slug": "computer-vision",
       "label": "Computer Vision"
     },

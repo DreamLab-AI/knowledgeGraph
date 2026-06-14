@@ -211,7 +211,7 @@
       "label": "Video Generation"
     },
     {
-      "slug": "ai-grounded-domain",
+      "slug": "ai-technique",
       "label": "AI-GroundedDomain"
     },
     {
@@ -223,7 +223,7 @@
       "label": "Code Generation"
     },
     {
-      "slug": "computation-and-intelligence-domain",
+      "slug": "ai-research-area",
       "label": "ComputationAndIntelligenceDomain"
     },
     {
@@ -231,7 +231,7 @@
       "label": "ComputeLayer"
     },
     {
-      "slug": "creative-media-domain",
+      "slug": "ai-application",
       "label": "CreativeMediaDomain"
     },
     {

@@ -71,7 +71,7 @@ public:: true
       "vc:label": "AI Framework"
     },
     {
-      "@id": "urn:visionflow:owl:class:computation-and-intelligence-domain",
+      "@id": "urn:visionflow:owl:class:ai-research-area",
       "vc:label": "ComputationAndIntelligenceDomain"
     },
     {
@@ -91,7 +91,7 @@ public:: true
       "vc:label": "DataLayer"
     },
     {
-      "@id": "urn:visionflow:owl:class:interaction-domain",
+      "@id": "urn:visionflow:owl:class:sc-interaction",
       "vc:label": "InteractionDomain"
     },
     {
@@ -332,7 +332,7 @@ public:: true
     },
     {
       "raw": "[[ComputationAndIntelligenceDomain]]",
-      "resolved": "urn:visionflow:owl:class:computation-and-intelligence-domain",
+      "resolved": "urn:visionflow:owl:class:ai-research-area",
       "kind": "ResolvedLink"
     },
     {
@@ -357,7 +357,7 @@ public:: true
     },
     {
       "raw": "[[InteractionDomain]]",
-      "resolved": "urn:visionflow:owl:class:interaction-domain",
+      "resolved": "urn:visionflow:owl:class:sc-interaction",
       "kind": "ResolvedLink"
     },
     {

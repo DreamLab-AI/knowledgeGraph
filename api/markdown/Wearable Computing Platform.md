@@ -67,7 +67,7 @@ public:: true
     ],
     "enables": [
       {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
-      {"@id": "urn:ngm:class:spatial-computing-paradigm", "label": "Spatial Computing"}
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"}

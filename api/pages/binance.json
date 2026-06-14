@@ -8,7 +8,7 @@
   "definition": "Binance is a centralised cryptocurrency exchange founded in 2017 by Changpeng Zhao (CZ) and Yi He, which rapidly grew to become one of the highest-volume digital-asset trading venues globally. It provides spot trading, perpetual and futures derivatives, margin lending, staking, savings products, and a token launchpad across hundreds of supported assets. Binance created the BNB token as a native utility and fee-discount instrument, and subsequently developed BNB Chain, an EVM-compatible Layer-1 blockchain that hosts a substantial decentralised-finance and Web3 application ecosystem. The exchange has faced extensive regulatory scrutiny across multiple jurisdictions, including a landmark 2023 settlement with the United States Department of Justice and FinCEN, resulting in substantial financial penalties and a change in executive leadership.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:digital-asset-domain",
+      "id": "urn:ngm:class:digital-asset",
       "label": "Digital Asset Domain"
     }
   ],
@@ -160,7 +160,7 @@
       "label": "Coinbase"
     },
     {
-      "slug": "digital-asset-domain",
+      "slug": "digital-asset",
       "label": "Digital Asset Domain"
     }
   ],

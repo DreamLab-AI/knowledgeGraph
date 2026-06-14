@@ -359,7 +359,7 @@
       "label": "Cryptographic Proof"
     },
     {
-      "slug": "cryptography-domain",
+      "slug": "cryptography",
       "label": "CryptographyDomain"
     },
     {
@@ -471,7 +471,7 @@
       "label": "Flash Loan"
     },
     {
-      "slug": "formal-methods-domain",
+      "slug": "ai-research-area",
       "label": "FormalMethodsDomain"
     },
     {
@@ -639,7 +639,7 @@
       "label": "Blockchain"
     },
     {
-      "slug": "blockchain-domain",
+      "slug": "blockchain",
       "label": "BlockchainDomain"
     },
     {
@@ -993,20 +993,12 @@
       "label": "De Fi Protocol"
     },
     {
-      "slug": "de-fi-domain",
-      "label": "DeFi Domain"
-    },
-    {
       "slug": "decentraland",
       "label": "Decentraland"
     },
     {
       "slug": "decentralised-exchange",
       "label": "Decentralised Exchange"
-    },
-    {
-      "slug": "decentralised-finance-domain",
-      "label": "Decentralised Finance Domain"
     },
     {
       "slug": "decentralised-governance",
@@ -1031,10 +1023,6 @@
     {
       "slug": "delta-robot",
       "label": "Delta Robot"
-    },
-    {
-      "slug": "digital-asset-domain",
-      "label": "Digital Asset Domain"
     },
     {
       "slug": "digital-asset-risks",
@@ -1531,10 +1519,6 @@
     {
       "slug": "waste-management",
       "label": "Waste Management"
-    },
-    {
-      "slug": "web-3-domain",
-      "label": "Web3 Domain"
     },
     {
       "slug": "web3",

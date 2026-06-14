@@ -8,7 +8,7 @@
   "definition": "WebXR is a W3C web standard and browser API that enables access to virtual reality and augmented reality hardware, exposing device pose tracking, controller input, reference spaces, and an XR-integrated render loop so that immersive spatial experiences can be delivered through ordinary URLs without native installation.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing-paradigm-domain",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "Spatial Computing Domain"
     }
   ],
@@ -172,10 +172,6 @@
     {
       "slug": "khronos-open-xr",
       "label": "Khronos OpenXR"
-    },
-    {
-      "slug": "metaverse-domain",
-      "label": "Metaverse Domain"
     },
     {
       "slug": "mixed-reality",

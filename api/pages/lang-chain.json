@@ -269,11 +269,11 @@
       "label": "AutoML"
     },
     {
-      "slug": "blockchain-domain",
+      "slug": "blockchain",
       "label": "Blockchain Domain"
     },
     {
-      "slug": "metaverse-domain",
+      "slug": "metaverse",
       "label": "Metaverse Domain"
     },
     {
@@ -281,7 +281,7 @@
       "label": "Model Context Protocol"
     },
     {
-      "slug": "ngm-domain",
+      "slug": "infrastructure",
       "label": "NGM Domain"
     },
     {
@@ -293,7 +293,7 @@
       "label": "Robot Operating System"
     },
     {
-      "slug": "robotics-domain",
+      "slug": "robotics",
       "label": "Robotics Domain"
     },
     {

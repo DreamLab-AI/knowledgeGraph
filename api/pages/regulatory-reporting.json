@@ -280,7 +280,7 @@
       "label": "Cross-Border Data Sharing"
     },
     {
-      "slug": "data-governance-domain",
+      "slug": "data-governance",
       "label": "DataGovernanceDomain"
     },
     {
@@ -400,7 +400,7 @@
       "label": "Prudential Reporting"
     },
     {
-      "slug": "regulation-domain",
+      "slug": "regulation",
       "label": "RegulationDomain"
     },
     {
@@ -472,7 +472,7 @@
       "label": "Blockchain Compliance"
     },
     {
-      "slug": "blockchain-domain",
+      "slug": "blockchain",
       "label": "BlockchainDomain"
     },
     {
@@ -564,10 +564,6 @@
     {
       "slug": "dao-analytics",
       "label": "DAO Analytics"
-    },
-    {
-      "slug": "data-governance-domain",
-      "label": "Data Governance Domain"
     },
     {
       "slug": "domain-ontology",

@@ -8,7 +8,7 @@
   "definition": "VeChain is a public blockchain platform oriented toward supply-chain management and enterprise applications. It uses a proof-of-authority consensus model in which a limited set of authorised validators produce blocks, prioritising throughput and predictability for business use. The platform employs a dual-token design, separating the asset used to hold value from the token used to pay for transaction costs.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:blockchain-domain",
+      "id": "urn:ngm:class:blockchain",
       "label": "Blockchain Domain"
     }
   ],
@@ -90,7 +90,7 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:digital-asset-domain",
+        "id": "urn:ngm:class:digital-asset",
         "label": "Digital Asset Domain"
       },
       {
@@ -162,11 +162,11 @@
       "label": "Internet of Things"
     },
     {
-      "slug": "digital-asset-domain",
+      "slug": "digital-asset",
       "label": "Digital Asset Domain"
     },
     {
-      "slug": "blockchain-domain",
+      "slug": "blockchain",
       "label": "Blockchain Domain"
     }
   ],

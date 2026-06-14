@@ -17,7 +17,7 @@ alias:: Mixture-of-Experts
       "vc:label": "research"
     },
     {
-      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "@id": "urn:visionflow:owl:class:metaverse",
       "vc:label": "MetaverseDomain"
     },
     {
@@ -134,7 +134,7 @@ alias:: Mixture-of-Experts
     },
     {
       "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "resolved": "urn:visionflow:owl:class:metaverse",
       "kind": "ResolvedLink"
     },
     {

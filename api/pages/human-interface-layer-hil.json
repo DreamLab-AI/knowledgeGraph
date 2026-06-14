@@ -12,7 +12,7 @@
       "label": "Interaction Technology"
     },
     {
-      "id": "urn:ngm:class:interaction-domain",
+      "id": "urn:ngm:class:sc-interaction",
       "label": "Interaction Domain"
     }
   ],
@@ -83,7 +83,7 @@
     "standardizedBy": [],
     "partOf": [
       {
-        "id": "urn:ngm:class:interaction-domain",
+        "id": "urn:ngm:class:sc-interaction",
         "label": "Interaction Domain"
       }
     ],
@@ -135,11 +135,11 @@
       "label": "Hardware Abstraction Layer (HAL)"
     },
     {
-      "slug": "interaction-domain",
+      "slug": "sc-interaction",
       "label": "InteractionDomain"
     },
     {
-      "slug": "interaction-domain",
+      "slug": "sc-interaction",
       "label": "Interaction Domain"
     },
     {

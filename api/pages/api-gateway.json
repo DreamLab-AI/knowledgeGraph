@@ -587,7 +587,7 @@
       "label": "Multi-Tenancy"
     },
     {
-      "slug": "networking-domain",
+      "slug": "infra-network-and-comms",
       "label": "NetworkingDomain"
     },
     {
@@ -751,7 +751,7 @@
       "label": "Role-Based Access Control"
     },
     {
-      "slug": "security-domain",
+      "slug": "security",
       "label": "SecurityDomain"
     },
     {
@@ -863,7 +863,7 @@
       "label": "Identity Provider"
     },
     {
-      "slug": "infrastructure-domain",
+      "slug": "infrastructure",
       "label": "InfrastructureDomain"
     },
     {

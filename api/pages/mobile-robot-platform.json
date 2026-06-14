@@ -252,7 +252,7 @@
       "label": "Autonomous System"
     },
     {
-      "slug": "autonomous-systems-domain",
+      "slug": "robo-navigation-and-planning",
       "label": "AutonomousSystemsDomain"
     },
     {
@@ -280,7 +280,7 @@
       "label": "Cyber Physical System"
     },
     {
-      "slug": "cyber-physical-systems-domain",
+      "slug": "cyber-physical-systems",
       "label": "CyberPhysicalSystemsDomain"
     },
     {

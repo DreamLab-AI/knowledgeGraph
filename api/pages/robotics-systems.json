@@ -53,7 +53,7 @@
     "contrastsWith": [],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:technology-domain",
+        "id": "urn:ngm:class:infrastructure",
         "label": "Technology Domain"
       }
     ],
@@ -143,7 +143,7 @@
       "label": "SwarmRobotics"
     },
     {
-      "slug": "technology-domain",
+      "slug": "infrastructure",
       "label": "Technology Domain"
     },
     {
@@ -152,14 +152,6 @@
     }
   ],
   "backlinks": [
-    {
-      "slug": "aidomain",
-      "label": "AIDomain"
-    },
-    {
-      "slug": "artificial-intelligence-domain",
-      "label": "Artificial Intelligence Domain"
-    },
     {
       "slug": "industrial-robot",
       "label": "Industrial Robot"
@@ -183,10 +175,6 @@
     {
       "slug": "state-estimation",
       "label": "State Estimation"
-    },
-    {
-      "slug": "technology-domain",
-      "label": "Technology Domain"
     }
   ]
 }

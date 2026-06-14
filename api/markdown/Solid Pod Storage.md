@@ -39,7 +39,7 @@ public:: true
       "vc:label": "Self-Sovereign Identity"
     },
     {
-      "@id": "urn:visionflow:linked:distributed-systems-domain",
+      "@id": "urn:visionflow:linked:distributed-systems",
       "vc:label": "Distributed Systems Domain"
     }
   ],
@@ -72,7 +72,7 @@ public:: true
   "qualityScore": 0.7,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:distributed-systems-domain",
+      "@id": "urn:ngm:class:distributed-systems",
       "label": "Distributed Systems Domain"
     }
   ],
@@ -157,7 +157,7 @@ public:: true
     },
     {
       "raw": "[[Distributed Systems Domain]]",
-      "resolved": "urn:visionflow:linked:distributed-systems-domain",
+      "resolved": "urn:visionflow:linked:distributed-systems",
       "kind": "ResolvedLink"
     }
   ],

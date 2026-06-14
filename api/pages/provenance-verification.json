@@ -163,7 +163,7 @@
       "label": "Identity Management"
     },
     {
-      "slug": "infrastructure-domain",
+      "slug": "infrastructure",
       "label": "InfrastructureDomain"
     },
     {
@@ -175,7 +175,7 @@
       "label": "MiddlewareLayer"
     },
     {
-      "slug": "trust-and-governance-domain",
+      "slug": "ai-governance-and-ethics",
       "label": "TrustAndGovernanceDomain"
     },
     {
@@ -203,10 +203,6 @@
     {
       "slug": "etsi-domain-virtual-economy",
       "label": "ETSI_Domain_Virtual_Economy"
-    },
-    {
-      "slug": "supply-chain-domain",
-      "label": "Supply Chain Domain"
     },
     {
       "slug": "virtual-notary-service",

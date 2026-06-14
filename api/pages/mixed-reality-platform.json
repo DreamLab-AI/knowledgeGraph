@@ -56,7 +56,7 @@
         "label": "XR Device"
       },
       {
-        "id": "urn:ngm:class:spatial-computing-paradigm",
+        "id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing"
       }
     ],
@@ -71,10 +71,5 @@
       "label": "owl:Thing"
     }
   ],
-  "backlinks": [
-    {
-      "slug": "spatial-computing-system",
-      "label": "Spatial Computing System"
-    }
-  ]
+  "backlinks": []
 }

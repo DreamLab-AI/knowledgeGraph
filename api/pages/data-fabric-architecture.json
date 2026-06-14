@@ -175,7 +175,7 @@
       "label": "Blockchain"
     },
     {
-      "slug": "computation-and-intelligence-domain",
+      "slug": "ai-research-area",
       "label": "Computation And Intelligence Domain"
     },
     {
@@ -223,7 +223,7 @@
       "label": "Policy Engine"
     },
     {
-      "slug": "trust-and-governance-domain",
+      "slug": "ai-governance-and-ethics",
       "label": "Trust And Governance Domain"
     }
   ],

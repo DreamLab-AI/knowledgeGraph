@@ -42,7 +42,7 @@ public:: true
       {"@id": "urn:ngm:class:operating-system", "label": "Operating System"},
       {"@id": "urn:ngm:class:runtime-environment", "label": "Runtime Environment"},
       {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
-      {"@id": "urn:ngm:class:spatial-computing-paradigm-layer", "label": "Spatial Computing Layer"},
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing Layer"},
       {"@id": "urn:ngm:class:wearable-computing-platform", "label": "Wearable Computing Platform"},
       {"@id": "urn:ngm:class:middleware", "label": "Middleware"}
     ],
@@ -52,7 +52,7 @@ public:: true
       {"@id": "urn:ngm:class:sc-interaction", "label": "Interaction Technology"}
     ],
     "enables": [
-      {"@id": "urn:ngm:class:spatial-computing-paradigm-system", "label": "Spatial Computing System"},
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing System"},
       {"@id": "urn:ngm:class:open-xr", "label": "OpenXR"}
     ]
   },

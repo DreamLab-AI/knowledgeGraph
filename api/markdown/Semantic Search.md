@@ -99,7 +99,7 @@ public:: true
       "vc:label": "Hybrid Retrieval"
     },
     {
-      "@id": "urn:visionflow:linked:information-retrieval-domain",
+      "@id": "urn:visionflow:linked:information-retrieval",
       "vc:label": "InformationRetrievalDomain"
     },
     {
@@ -151,7 +151,7 @@ public:: true
       "vc:label": "MTEB Benchmark"
     },
     {
-      "@id": "urn:visionflow:linked:natural-language-processing-domain",
+      "@id": "urn:visionflow:linked:natural-language-processing",
       "vc:label": "NaturalLanguageProcessingDomain"
     },
     {
@@ -227,7 +227,7 @@ public:: true
       "vc:label": "Weaviate"
     },
     {
-      "@id": "urn:visionflow:owl:class:ai-grounded-domain",
+      "@id": "urn:visionflow:owl:class:ai-technique",
       "vc:label": "AI-GroundedDomain"
     },
     {
@@ -673,7 +673,7 @@ public:: true
     },
     {
       "raw": "[[InformationRetrievalDomain]]",
-      "resolved": "urn:visionflow:linked:information-retrieval-domain",
+      "resolved": "urn:visionflow:linked:information-retrieval",
       "kind": "StubLink"
     },
     {
@@ -738,7 +738,7 @@ public:: true
     },
     {
       "raw": "[[NaturalLanguageProcessingDomain]]",
-      "resolved": "urn:visionflow:linked:natural-language-processing-domain",
+      "resolved": "urn:visionflow:linked:natural-language-processing",
       "kind": "StubLink"
     },
     {
@@ -833,7 +833,7 @@ public:: true
     },
     {
       "raw": "[[AI-GroundedDomain]]",
-      "resolved": "urn:visionflow:owl:class:ai-grounded-domain",
+      "resolved": "urn:visionflow:owl:class:ai-technique",
       "kind": "ResolvedLink"
     },
     {

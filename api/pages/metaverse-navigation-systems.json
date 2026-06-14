@@ -58,7 +58,7 @@
         "label": "Metaverse"
       },
       {
-        "id": "urn:ngm:class:spatial-computing-paradigm",
+        "id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing"
       }
     ],
@@ -83,7 +83,7 @@
   },
   "wikilinks": [
     {
-      "slug": "metaverse-domain",
+      "slug": "metaverse",
       "label": "MetaverseDomain"
     },
     {

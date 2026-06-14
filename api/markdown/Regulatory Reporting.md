@@ -40,7 +40,7 @@ alias:: BC-0486-regulatory-reporting
       "vc:label": "Cross-Border Data Sharing"
     },
     {
-      "@id": "urn:visionflow:linked:data-governance-domain",
+      "@id": "urn:visionflow:linked:data-governance",
       "vc:label": "DataGovernanceDomain"
     },
     {
@@ -160,7 +160,7 @@ alias:: BC-0486-regulatory-reporting
       "vc:label": "Prudential Reporting"
     },
     {
-      "@id": "urn:visionflow:linked:regulation-domain",
+      "@id": "urn:visionflow:linked:regulation",
       "vc:label": "RegulationDomain"
     },
     {
@@ -232,7 +232,7 @@ alias:: BC-0486-regulatory-reporting
       "vc:label": "Blockchain Compliance"
     },
     {
-      "@id": "urn:visionflow:owl:class:blockchain-domain",
+      "@id": "urn:visionflow:owl:class:blockchain",
       "vc:label": "BlockchainDomain"
     },
     {
@@ -629,7 +629,7 @@ alias:: BC-0486-regulatory-reporting
     },
     {
       "raw": "[[DataGovernanceDomain]]",
-      "resolved": "urn:visionflow:linked:data-governance-domain",
+      "resolved": "urn:visionflow:linked:data-governance",
       "kind": "StubLink"
     },
     {
@@ -779,7 +779,7 @@ alias:: BC-0486-regulatory-reporting
     },
     {
       "raw": "[[RegulationDomain]]",
-      "resolved": "urn:visionflow:linked:regulation-domain",
+      "resolved": "urn:visionflow:linked:regulation",
       "kind": "StubLink"
     },
     {
@@ -869,7 +869,7 @@ alias:: BC-0486-regulatory-reporting
     },
     {
       "raw": "[[BlockchainDomain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-domain",
+      "resolved": "urn:visionflow:owl:class:blockchain",
       "kind": "ResolvedLink"
     },
     {

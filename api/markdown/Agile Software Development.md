@@ -15,7 +15,7 @@ public:: true
       "vc:label": "Software Development"
     },
     {
-      "@id": "urn:visionflow:linked:software-engineering-domain",
+      "@id": "urn:visionflow:linked:software-engineering",
       "vc:label": "Software Engineering Domain"
     },
     {
@@ -52,7 +52,7 @@ public:: true
   "qualityScore": 0.74,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:software-engineering-domain",
+      "@id": "urn:ngm:class:software-engineering",
       "label": "Software Engineering Domain"
     }
   ],
@@ -128,7 +128,7 @@ public:: true
     },
     {
       "raw": "[[Software Engineering Domain]]",
-      "resolved": "urn:visionflow:linked:software-engineering-domain",
+      "resolved": "urn:visionflow:linked:software-engineering",
       "kind": "ResolvedLink"
     },
     {

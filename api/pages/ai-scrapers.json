@@ -292,7 +292,7 @@
       "label": "Data Acquisition Pipeline"
     },
     {
-      "slug": "data-governance-domain",
+      "slug": "data-governance",
       "label": "DataGovernanceDomain"
     },
     {
@@ -356,7 +356,7 @@
       "label": "IETF RFC 9309"
     },
     {
-      "slug": "information-retrieval-domain",
+      "slug": "information-retrieval",
       "label": "InformationRetrievalDomain"
     },
     {
@@ -472,7 +472,7 @@
       "label": "Web Scraping Tools"
     },
     {
-      "slug": "ai-grounded-domain",
+      "slug": "ai-technique",
       "label": "AI-GroundedDomain"
     },
     {

@@ -84,7 +84,7 @@ public:: true
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:metaverse-architecture", "label": "Metaverse Architecture"},
-      {"@id": "urn:ngm:class:spatial-computing-paradigm", "label": "Spatial Computing"},
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
       {"@id": "urn:ngm:class:remote-rendering", "label": "Remote Rendering"}
     ],
     "standardizedBy": [

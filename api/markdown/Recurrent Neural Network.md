@@ -595,11 +595,11 @@ public:: true
       "vc:label": "Activation Function"
     },
     {
-      "@id": "urn:visionflow:owl:class:artificial-intelligence-domain",
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
       "vc:label": "ArtificialIntelligenceDomain"
     },
     {
-      "@id": "urn:visionflow:owl:class:artificial-intelligence-domain",
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
       "vc:label": "Artificial Intelligence Domain"
     },
     {
@@ -1592,12 +1592,12 @@ public:: true
     },
     {
       "raw": "[[Artificial Intelligence Domain]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence-domain",
+      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
       "kind": "ResolvedLink"
     },
     {
       "raw": "[[ArtificialIntelligenceDomain]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence-domain",
+      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
       "kind": "ResolvedLink"
     },
     {

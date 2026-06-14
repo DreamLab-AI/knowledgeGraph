@@ -75,7 +75,7 @@ public:: true
       "vc:label": "Economic Inequality"
     },
     {
-      "@id": "urn:visionflow:linked:economics-domain",
+      "@id": "urn:visionflow:linked:economics",
       "vc:label": "EconomicsDomain"
     },
     {
@@ -683,7 +683,7 @@ public:: true
     },
     {
       "raw": "[[EconomicsDomain]]",
-      "resolved": "urn:visionflow:linked:economics-domain",
+      "resolved": "urn:visionflow:linked:economics",
       "kind": "StubLink"
     },
     {

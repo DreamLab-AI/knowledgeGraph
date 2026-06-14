@@ -141,6 +141,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "argo-blockchain",
+      "label": "Argo Blockchain"
+    },
+    {
       "slug": "bitcoin-environmental-issues",
       "label": "Bitcoin Environmental Issues"
     },
@@ -157,6 +161,14 @@
       "label": "Carbon Credit Tracking"
     },
     {
+      "slug": "carbon-credit-tracking",
+      "label": "Carbon Credit Tracking"
+    },
+    {
+      "slug": "carbon-footprint-measurement",
+      "label": "Carbon Footprint Measurement"
+    },
+    {
       "slug": "carbon-footprint-measurement",
       "label": "Carbon Footprint Measurement"
     },
@@ -165,8 +177,16 @@
       "label": "Carbon Neutral Blockchain"
     },
     {
+      "slug": "carbon-neutral-blockchain",
+      "label": "Carbon Neutral Blockchain"
+    },
+    {
       "slug": "carbon-offsetting",
       "label": "Carbon Offsetting"
+    },
+    {
+      "slug": "circular-economy",
+      "label": "Circular Economy"
     },
     {
       "slug": "circular-economy",
@@ -189,6 +209,10 @@
       "label": "E-Waste"
     },
     {
+      "slug": "esg-reporting",
+      "label": "ESG Reporting"
+    },
+    {
       "slug": "esg",
       "label": "ESG"
     },
@@ -201,8 +225,20 @@
       "label": "Energy and Power"
     },
     {
+      "slug": "energy-and-power",
+      "label": "Energy and Power"
+    },
+    {
+      "slug": "green-blockchain-initiatives",
+      "label": "Green Blockchain Initiatives"
+    },
+    {
       "slug": "greenwashing",
       "label": "Greenwashing"
+    },
+    {
+      "slug": "marathon-digital",
+      "label": "Marathon Digital"
     },
     {
       "slug": "paris-agreement",
@@ -211,6 +247,22 @@
     {
       "slug": "product-design",
       "label": "Product Design"
+    },
+    {
+      "slug": "renewable-energy-certificates",
+      "label": "Renewable Energy Certificates"
+    },
+    {
+      "slug": "sustainable-consensus",
+      "label": "Sustainable Consensus"
+    },
+    {
+      "slug": "traditional-carbon-registry",
+      "label": "Traditional Carbon Registry"
+    },
+    {
+      "slug": "verra-vcs-standard",
+      "label": "Verra VCS Standard"
     }
   ]
 }

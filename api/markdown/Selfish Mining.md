@@ -31,7 +31,7 @@ public:: true
       "vc:label": "Blockchain Entity"
     },
     {
-      "@id": "urn:visionflow:owl:class:cryptographic-domain",
+      "@id": "urn:visionflow:owl:class:bc-cryptographic-primitive",
       "vc:label": "CryptographicDomain"
     },
     {
@@ -149,7 +149,7 @@ public:: true
     },
     {
       "raw": "[[CryptographicDomain]]",
-      "resolved": "urn:visionflow:owl:class:cryptographic-domain",
+      "resolved": "urn:visionflow:owl:class:bc-cryptographic-primitive",
       "kind": "ResolvedLink"
     },
     {

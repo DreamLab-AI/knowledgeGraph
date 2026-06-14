@@ -35,7 +35,7 @@ public:: true
       "vc:label": "EconomicMechanism"
     },
     {
-      "@id": "urn:visionflow:owl:class:token-economics-domain",
+      "@id": "urn:visionflow:owl:class:token-economics",
       "vc:label": "TokenEconomicsDomain"
     }
   ],
@@ -156,7 +156,7 @@ public:: true
     },
     {
       "raw": "[[TokenEconomicsDomain]]",
-      "resolved": "urn:visionflow:owl:class:token-economics-domain",
+      "resolved": "urn:visionflow:owl:class:token-economics",
       "kind": "ResolvedLink"
     }
   ],

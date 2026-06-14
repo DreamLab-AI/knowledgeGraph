@@ -111,7 +111,7 @@ public:: true
       "vc:label": "Game Asset Generation"
     },
     {
-      "@id": "urn:visionflow:linked:generative-modelling-domain",
+      "@id": "urn:visionflow:linked:ai-model-architecture",
       "vc:label": "GenerativeModellingDomain"
     },
     {
@@ -355,7 +355,7 @@ public:: true
       "vc:label": "Zhang et al. 2023 ControlNet"
     },
     {
-      "@id": "urn:visionflow:owl:class:ai-grounded-domain",
+      "@id": "urn:visionflow:owl:class:ai-technique",
       "vc:label": "AI-GroundedDomain"
     },
     {
@@ -363,7 +363,7 @@ public:: true
       "vc:label": "ApplicationLayer"
     },
     {
-      "@id": "urn:visionflow:owl:class:computation-and-intelligence-domain",
+      "@id": "urn:visionflow:owl:class:ai-research-area",
       "vc:label": "ComputationAndIntelligenceDomain"
     },
     {
@@ -806,7 +806,7 @@ public:: true
     },
     {
       "raw": "[[GenerativeModellingDomain]]",
-      "resolved": "urn:visionflow:linked:generative-modelling-domain",
+      "resolved": "urn:visionflow:linked:ai-model-architecture",
       "kind": "StubLink"
     },
     {
@@ -1111,7 +1111,7 @@ public:: true
     },
     {
       "raw": "[[AI-GroundedDomain]]",
-      "resolved": "urn:visionflow:owl:class:ai-grounded-domain",
+      "resolved": "urn:visionflow:owl:class:ai-technique",
       "kind": "ResolvedLink"
     },
     {
@@ -1121,7 +1121,7 @@ public:: true
     },
     {
       "raw": "[[ComputationAndIntelligenceDomain]]",
-      "resolved": "urn:visionflow:owl:class:computation-and-intelligence-domain",
+      "resolved": "urn:visionflow:owl:class:ai-research-area",
       "kind": "ResolvedLink"
     },
     {

@@ -35,7 +35,7 @@ public:: true
       "vc:label": "CodeFormer"
     },
     {
-      "@id": "urn:visionflow:linked:computer-vision-domain",
+      "@id": "urn:visionflow:linked:computer-vision",
       "vc:label": "ComputerVisionDomain"
     },
     {
@@ -179,7 +179,7 @@ public:: true
       "vc:label": "YouTube"
     },
     {
-      "@id": "urn:visionflow:owl:class:aidomain",
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
       "vc:label": "AIDomain"
     },
     {
@@ -366,7 +366,7 @@ public:: true
     },
     {
       "raw": "[[ComputerVisionDomain]]",
-      "resolved": "urn:visionflow:linked:computer-vision-domain",
+      "resolved": "urn:visionflow:linked:computer-vision",
       "kind": "StubLink"
     },
     {
@@ -546,7 +546,7 @@ public:: true
     },
     {
       "raw": "[[AIDomain]]",
-      "resolved": "urn:visionflow:owl:class:aidomain",
+      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
       "kind": "ResolvedLink"
     },
     {

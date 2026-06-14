@@ -363,7 +363,7 @@
       "label": "Chang & Chen 2018 PSMNet"
     },
     {
-      "slug": "computer-vision-domain",
+      "slug": "computer-vision",
       "label": "ComputerVisionDomain"
     },
     {
@@ -687,7 +687,7 @@
       "label": "3D Reconstruction"
     },
     {
-      "slug": "ai-grounded-domain",
+      "slug": "ai-technique",
       "label": "AI-GroundedDomain"
     },
     {

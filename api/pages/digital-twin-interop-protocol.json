@@ -81,7 +81,7 @@
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:ngm:class:spatial-computing-paradigm",
+        "id": "urn:ngm:class:spatial-computing",
         "label": "spatial-computing"
       }
     ],
@@ -180,7 +180,7 @@
       "label": "Identity Management"
     },
     {
-      "slug": "infrastructure-domain",
+      "slug": "infrastructure",
       "label": "InfrastructureDomain"
     },
     {

@@ -179,6 +179,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "control-theory",
+      "label": "Control Theory"
+    },
+    {
       "slug": "convergence",
       "label": "Convergence"
     },
@@ -193,6 +197,14 @@
     {
       "slug": "io-t-sensor-network",
       "label": "IoT Sensor Network"
+    },
+    {
+      "slug": "io-t-sensor-network",
+      "label": "IoT Sensor Network"
+    },
+    {
+      "slug": "mobile-robot-platform",
+      "label": "Mobile Robot Platform"
     },
     {
       "slug": "real-time",

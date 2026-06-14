@@ -332,7 +332,7 @@
       "label": "Distributed Code Review"
     },
     {
-      "slug": "distributed-collaboration-domain",
+      "slug": "distributed-collaboration",
       "label": "DistributedCollaborationDomain"
     },
     {
@@ -500,7 +500,7 @@
       "label": "Skelton & Pais 2019 Team Topologies"
     },
     {
-      "slug": "software-engineering-domain",
+      "slug": "software-engineering",
       "label": "SoftwareEngineeringDomain"
     },
     {

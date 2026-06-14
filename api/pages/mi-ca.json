@@ -8,7 +8,7 @@
   "definition": "MiCA (Markets in Crypto-Assets Regulation, EU 2023/1114) is the European Union's comprehensive legal framework governing crypto-assets not already covered by existing financial services legislation such as MiFID II. It classifies crypto-assets into three categories \u2014 utility tokens, asset-referenced tokens (ARTs), and e-money tokens (EMTs) \u2014 imposing tiered obligations on issuers including mandatory white-paper disclosures, capital adequacy requirements, and reserve safeguards for stablecoins. Crypto-asset service providers (CASPs) \u2014 encompassing exchanges, custodians, portfolio managers, and advisers \u2014 must obtain authorisation from a national competent authority with passporting rights across the EU single market. MiCA entered into force in June 2023 with stablecoin provisions applying from June 2024 and the full CASP regime from December 2024, making it one of the world's first end-to-end crypto regulatory regimes.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:regulatory-domain",
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
       "label": "Regulatory Domain"
     }
   ],
@@ -162,7 +162,7 @@
       "label": "OECD"
     },
     {
-      "slug": "regulatory-domain",
+      "slug": "infra-legal-and-regulatory",
       "label": "Regulatory Domain"
     },
     {

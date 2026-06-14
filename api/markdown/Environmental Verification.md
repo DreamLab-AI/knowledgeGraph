@@ -90,7 +90,7 @@ public:: true
         "label": "XR Runtime Environment"
       },
       {
-        "@id": "urn:ngm:class:spatial-computing-paradigm",
+        "@id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing"
       }
     ]

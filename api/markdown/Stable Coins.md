@@ -184,7 +184,7 @@ alias:: Stablecoins
       "vc:label": "Real-World Asset Tokenisation"
     },
     {
-      "@id": "urn:visionflow:linked:regulatory-domain",
+      "@id": "urn:visionflow:linked:infra-legal-and-regulatory",
       "vc:label": "RegulatoryDomain"
     },
     {
@@ -292,7 +292,7 @@ alias:: Stablecoins
       "vc:label": "Blockchain As A Service"
     },
     {
-      "@id": "urn:visionflow:owl:class:blockchain-domain",
+      "@id": "urn:visionflow:owl:class:blockchain",
       "vc:label": "BlockchainDomain"
     },
     {
@@ -855,7 +855,7 @@ alias:: Stablecoins
     },
     {
       "raw": "[[RegulatoryDomain]]",
-      "resolved": "urn:visionflow:linked:regulatory-domain",
+      "resolved": "urn:visionflow:linked:infra-legal-and-regulatory",
       "kind": "StubLink"
     },
     {
@@ -990,7 +990,7 @@ alias:: Stablecoins
     },
     {
       "raw": "[[BlockchainDomain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-domain",
+      "resolved": "urn:visionflow:owl:class:blockchain",
       "kind": "ResolvedLink"
     },
     {

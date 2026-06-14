@@ -127,7 +127,7 @@
       "label": "EnergyMix"
     },
     {
-      "slug": "environmental-domain",
+      "slug": "infra-legal-and-regulatory",
       "label": "EnvironmentalDomain"
     },
     {
@@ -175,7 +175,7 @@
       "label": "WaterUsageTracking"
     },
     {
-      "slug": "blockchain-domain",
+      "slug": "blockchain",
       "label": "BlockchainDomain"
     },
     {

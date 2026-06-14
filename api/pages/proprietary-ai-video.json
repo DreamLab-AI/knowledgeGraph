@@ -307,7 +307,7 @@
       "label": "Classifier Free Guidance"
     },
     {
-      "slug": "computer-vision-domain",
+      "slug": "computer-vision",
       "label": "ComputerVisionDomain"
     },
     {
@@ -351,7 +351,7 @@
       "label": "AI companions"
     },
     {
-      "slug": "ai-grounded-domain",
+      "slug": "ai-technique",
       "label": "AI-GroundedDomain"
     },
     {

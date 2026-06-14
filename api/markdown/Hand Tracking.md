@@ -79,7 +79,7 @@ public:: true
       "vc:label": "Hand Skeleton Model"
     },
     {
-      "@id": "urn:visionflow:linked:human-computer-interaction-domain",
+      "@id": "urn:visionflow:linked:human-computer-interaction",
       "vc:label": "HumanComputerInteractionDomain"
     },
     {
@@ -203,7 +203,7 @@ public:: true
       "vc:label": "XR Interaction"
     },
     {
-      "@id": "urn:visionflow:owl:class:ai-grounded-domain",
+      "@id": "urn:visionflow:owl:class:ai-technique",
       "vc:label": "AI-GroundedDomain"
     },
     {
@@ -662,7 +662,7 @@ public:: true
     },
     {
       "raw": "[[HumanComputerInteractionDomain]]",
-      "resolved": "urn:visionflow:linked:human-computer-interaction-domain",
+      "resolved": "urn:visionflow:linked:human-computer-interaction",
       "kind": "StubLink"
     },
     {
@@ -817,7 +817,7 @@ public:: true
     },
     {
       "raw": "[[AI-GroundedDomain]]",
-      "resolved": "urn:visionflow:owl:class:ai-grounded-domain",
+      "resolved": "urn:visionflow:owl:class:ai-technique",
       "kind": "ResolvedLink"
     },
     {

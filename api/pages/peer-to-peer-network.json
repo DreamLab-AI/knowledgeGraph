@@ -167,7 +167,7 @@
       "label": "Blockchain Entity"
     },
     {
-      "slug": "cryptographic-domain",
+      "slug": "bc-cryptographic-primitive",
       "label": "CryptographicDomain"
     },
     {
@@ -227,10 +227,6 @@
     {
       "slug": "distributed-ledger",
       "label": "Distributed Ledger"
-    },
-    {
-      "slug": "networking-domain",
-      "label": "Networking Domain"
     },
     {
       "slug": "ontology-technical-details",

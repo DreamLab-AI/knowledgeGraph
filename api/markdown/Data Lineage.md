@@ -31,7 +31,7 @@ public:: true
       {"@id": "urn:ngm:class:data-transformation-record", "label": "Data Transformation Record"}
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:data-governance-domain", "label": "Data Governance Domain"},
+      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance Domain"},
       {"@id": "urn:ngm:class:metadata-management", "label": "Metadata Management"}
     ],
     "requires": [

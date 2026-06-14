@@ -328,7 +328,7 @@
       "label": "Digital Provenance"
     },
     {
-      "slug": "distributed-collaboration-domain",
+      "slug": "distributed-collaboration",
       "label": "DistributedCollaborationDomain"
     },
     {
@@ -432,7 +432,7 @@
       "label": "Meeting Support Tools"
     },
     {
-      "slug": "natural-language-processing-domain",
+      "slug": "natural-language-processing",
       "label": "NaturalLanguageProcessingDomain"
     },
     {

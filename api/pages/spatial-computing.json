@@ -271,10 +271,6 @@
       "label": "Light field"
     },
     {
-      "slug": "metaverse-domain",
-      "label": "Metaverse Domain"
-    },
-    {
       "slug": "metaverse-technology",
       "label": "Metaverse Technology"
     },
@@ -389,10 +385,6 @@
     {
       "slug": "metaverse-core-concepts",
       "label": "metaverse core concepts"
-    },
-    {
-      "slug": "park-2022-metaverse",
-      "label": "park2022metaverse"
     }
   ]
 }

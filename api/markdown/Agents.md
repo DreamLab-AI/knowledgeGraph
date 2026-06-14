@@ -59,7 +59,7 @@ public:: true
       "vc:label": "Autonomous System"
     },
     {
-      "@id": "urn:visionflow:linked:autonomous-systems-domain",
+      "@id": "urn:visionflow:linked:robo-navigation-and-planning",
       "vc:label": "AutonomousSystemsDomain"
     },
     {
@@ -407,7 +407,7 @@ public:: true
       "vc:label": "AI Alignment"
     },
     {
-      "@id": "urn:visionflow:owl:class:ai-grounded-domain",
+      "@id": "urn:visionflow:owl:class:ai-technique",
       "vc:label": "AI-GroundedDomain"
     },
     {
@@ -427,7 +427,7 @@ public:: true
       "vc:label": "Chatbot"
     },
     {
-      "@id": "urn:visionflow:owl:class:computation-and-intelligence-domain",
+      "@id": "urn:visionflow:owl:class:ai-research-area",
       "vc:label": "ComputationAndIntelligenceDomain"
     },
     {
@@ -831,7 +831,7 @@ public:: true
     },
     {
       "raw": "[[AutonomousSystemsDomain]]",
-      "resolved": "urn:visionflow:linked:autonomous-systems-domain",
+      "resolved": "urn:visionflow:linked:robo-navigation-and-planning",
       "kind": "StubLink"
     },
     {
@@ -1266,7 +1266,7 @@ public:: true
     },
     {
       "raw": "[[AI-GroundedDomain]]",
-      "resolved": "urn:visionflow:owl:class:ai-grounded-domain",
+      "resolved": "urn:visionflow:owl:class:ai-technique",
       "kind": "ResolvedLink"
     },
     {
@@ -1291,7 +1291,7 @@ public:: true
     },
     {
       "raw": "[[ComputationAndIntelligenceDomain]]",
-      "resolved": "urn:visionflow:owl:class:computation-and-intelligence-domain",
+      "resolved": "urn:visionflow:owl:class:ai-research-area",
       "kind": "ResolvedLink"
     },
     {

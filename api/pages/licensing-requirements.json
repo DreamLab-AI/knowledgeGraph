@@ -50,7 +50,7 @@
         "label": "Governance and Regulation"
       },
       {
-        "id": "urn:ngm:class:blockchain-domain",
+        "id": "urn:ngm:class:blockchain",
         "label": "Blockchain Domain"
       }
     ],
@@ -299,7 +299,7 @@
       "label": "Zcash"
     },
     {
-      "slug": "blockchain-domain",
+      "slug": "blockchain",
       "label": "BlockchainDomain"
     },
     {

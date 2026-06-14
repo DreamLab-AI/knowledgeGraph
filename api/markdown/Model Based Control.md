@@ -64,7 +64,7 @@ alias:: Model-based Control
       "vc:label": "ControlLayer"
     },
     {
-      "@id": "urn:visionflow:linked:control-systems-domain",
+      "@id": "urn:visionflow:linked:robo-actuation-and-control",
       "vc:label": "ControlSystemsDomain"
     },
     {
@@ -284,7 +284,7 @@ alias:: Model-based Control
       "vc:label": "Robot Control"
     },
     {
-      "@id": "urn:visionflow:owl:class:robotics-domain",
+      "@id": "urn:visionflow:owl:class:robotics",
       "vc:label": "RoboticsDomain"
     },
     {
@@ -635,7 +635,7 @@ alias:: Model-based Control
     },
     {
       "raw": "[[ControlSystemsDomain]]",
-      "resolved": "urn:visionflow:linked:control-systems-domain",
+      "resolved": "urn:visionflow:linked:robo-actuation-and-control",
       "kind": "StubLink"
     },
     {
@@ -910,7 +910,7 @@ alias:: Model-based Control
     },
     {
       "raw": "[[RoboticsDomain]]",
-      "resolved": "urn:visionflow:owl:class:robotics-domain",
+      "resolved": "urn:visionflow:owl:class:robotics",
       "kind": "ResolvedLink"
     },
     {

@@ -607,7 +607,7 @@
       "label": "Ziebart 2008 Maximum Entropy IRL"
     },
     {
-      "slug": "ai-grounded-domain",
+      "slug": "ai-technique",
       "label": "AI-GroundedDomain"
     },
     {
@@ -615,7 +615,7 @@
       "label": "ApplicationLayer"
     },
     {
-      "slug": "computation-and-intelligence-domain",
+      "slug": "ai-research-area",
       "label": "ComputationAndIntelligenceDomain"
     },
     {
@@ -651,7 +651,7 @@
       "label": "Reinforcement Learning"
     },
     {
-      "slug": "robotics-domain",
+      "slug": "robotics",
       "label": "RoboticsDomain"
     },
     {

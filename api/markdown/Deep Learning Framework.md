@@ -27,7 +27,7 @@ public:: true
       "vc:label": "PyTorch"
     },
     {
-      "@id": "urn:visionflow:linked:deep-learning-domain",
+      "@id": "urn:visionflow:linked:deep-learning",
       "vc:label": "Deep Learning Domain"
     }
   ],
@@ -59,7 +59,7 @@ public:: true
   "maturity": "mature",
   "qualityScore": 0.7,
   "subClassOf": {
-    "@id": "urn:ngm:class:deep-learning-domain",
+    "@id": "urn:ngm:class:deep-learning",
     "label": "Deep Learning Domain"
   },
   "relations": {
@@ -240,7 +240,7 @@ public:: true
     },
     {
       "raw": "[[Deep Learning Domain]]",
-      "resolved": "urn:visionflow:linked:deep-learning-domain",
+      "resolved": "urn:visionflow:linked:deep-learning",
       "kind": "ResolvedLink"
     }
   ],

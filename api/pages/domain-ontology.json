@@ -443,7 +443,7 @@
       "label": "Knowledge Representation Artifact"
     },
     {
-      "slug": "knowledge-representation-domain",
+      "slug": "knowledge-representation",
       "label": "KnowledgeRepresentationDomain"
     },
     {
@@ -683,7 +683,7 @@
       "label": "Decentralised Web"
     },
     {
-      "slug": "infrastructure-domain",
+      "slug": "infrastructure",
       "label": "InfrastructureDomain"
     },
     {

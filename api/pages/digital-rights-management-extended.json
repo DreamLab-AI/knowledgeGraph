@@ -10,10 +10,6 @@
     {
       "id": "urn:ngm:class:sc-governance-and-safety",
       "label": "Governance and Safety"
-    },
-    {
-      "id": "urn:ngm:class:virtual-economy-domain",
-      "label": "Virtual Economy Domain"
     }
   ],
   "entityType": "Class",
@@ -77,7 +73,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:virtual-economy",
+        "label": "Virtual Economy"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
@@ -151,7 +152,7 @@
       "label": "Blockchain Network"
     },
     {
-      "slug": "creative-media-domain",
+      "slug": "ai-application",
       "label": "CreativeMediaDomain"
     },
     {
@@ -171,7 +172,7 @@
       "label": "Smart Contract"
     },
     {
-      "slug": "virtual-economy-domain",
+      "slug": "virtual-economy",
       "label": "VirtualEconomyDomain"
     },
     {

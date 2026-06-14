@@ -98,7 +98,7 @@ public:: true
   "domain": "distributed-collaboration",
   "maturity": "established",
   "subClassOf": {
-    "@id": "urn:ngm:class:telecollaboration-domain",
+    "@id": "urn:ngm:class:telecollaboration",
     "label": "Telecollaboration Domain"
   },
   "relations": {

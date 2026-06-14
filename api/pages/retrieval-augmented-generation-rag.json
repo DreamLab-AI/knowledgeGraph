@@ -399,7 +399,7 @@
       "label": "In-Context Learning"
     },
     {
-      "slug": "information-retrieval-domain",
+      "slug": "information-retrieval",
       "label": "InformationRetrievalDomain"
     },
     {
@@ -431,7 +431,7 @@
       "label": "Multi-Hop Reasoning"
     },
     {
-      "slug": "natural-language-processing-domain",
+      "slug": "natural-language-processing",
       "label": "NaturalLanguageProcessingDomain"
     },
     {
@@ -515,7 +515,7 @@
       "label": "Agents"
     },
     {
-      "slug": "ai-grounded-domain",
+      "slug": "ai-technique",
       "label": "AI-GroundedDomain"
     },
     {

@@ -15,7 +15,7 @@ public:: true
       "vc:label": "ADR-008"
     },
     {
-      "@id": "urn:visionflow:linked:agentic-systems-domain",
+      "@id": "urn:visionflow:linked:ai-application",
       "vc:label": "AgenticSystemsDomain"
     },
     {
@@ -39,7 +39,7 @@ public:: true
       "vc:label": "Data Anonymisation"
     },
     {
-      "@id": "urn:visionflow:linked:data-governance-domain",
+      "@id": "urn:visionflow:linked:data-governance",
       "vc:label": "DataGovernanceDomain"
     },
     {
@@ -79,7 +79,7 @@ public:: true
       "vc:label": "PII Detection Best Practices"
     },
     {
-      "@id": "urn:visionflow:linked:privacy-domain",
+      "@id": "urn:visionflow:linked:privacy",
       "vc:label": "PrivacyDomain"
     },
     {
@@ -282,7 +282,7 @@ public:: true
     },
     {
       "raw": "[[AgenticSystemsDomain]]",
-      "resolved": "urn:visionflow:linked:agentic-systems-domain",
+      "resolved": "urn:visionflow:linked:ai-application",
       "kind": "StubLink"
     },
     {
@@ -312,7 +312,7 @@ public:: true
     },
     {
       "raw": "[[DataGovernanceDomain]]",
-      "resolved": "urn:visionflow:linked:data-governance-domain",
+      "resolved": "urn:visionflow:linked:data-governance",
       "kind": "StubLink"
     },
     {
@@ -362,7 +362,7 @@ public:: true
     },
     {
       "raw": "[[PrivacyDomain]]",
-      "resolved": "urn:visionflow:linked:privacy-domain",
+      "resolved": "urn:visionflow:linked:privacy",
       "kind": "StubLink"
     },
     {

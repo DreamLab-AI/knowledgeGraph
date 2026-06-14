@@ -92,7 +92,7 @@ alias:: DigitalGoods
       "vc:label": "Virtual Economy"
     },
     {
-      "@id": "urn:visionflow:owl:class:virtual-economy-domain",
+      "@id": "urn:visionflow:owl:class:virtual-economy",
       "vc:label": "VirtualEconomyDomain"
     }
   ],
@@ -314,7 +314,7 @@ alias:: DigitalGoods
     },
     {
       "raw": "[[VirtualEconomyDomain]]",
-      "resolved": "urn:visionflow:owl:class:virtual-economy-domain",
+      "resolved": "urn:visionflow:owl:class:virtual-economy",
       "kind": "ResolvedLink"
     }
   ],

@@ -23,7 +23,7 @@ public:: true
       "vc:label": "Autonomous Systems"
     },
     {
-      "@id": "urn:visionflow:linked:autonomous-systems-domain",
+      "@id": "urn:visionflow:linked:robo-navigation-and-planning",
       "vc:label": "AutonomousSystemsDomain"
     },
     {
@@ -375,7 +375,7 @@ public:: true
       "vc:label": "Robotics"
     },
     {
-      "@id": "urn:visionflow:owl:class:robotics-domain",
+      "@id": "urn:visionflow:owl:class:robotics",
       "vc:label": "RoboticsDomain"
     },
     {
@@ -724,7 +724,7 @@ public:: true
     },
     {
       "raw": "[[AutonomousSystemsDomain]]",
-      "resolved": "urn:visionflow:linked:autonomous-systems-domain",
+      "resolved": "urn:visionflow:linked:robo-navigation-and-planning",
       "kind": "StubLink"
     },
     {
@@ -1164,7 +1164,7 @@ public:: true
     },
     {
       "raw": "[[RoboticsDomain]]",
-      "resolved": "urn:visionflow:owl:class:robotics-domain",
+      "resolved": "urn:visionflow:owl:class:robotics",
       "kind": "ResolvedLink"
     },
     {

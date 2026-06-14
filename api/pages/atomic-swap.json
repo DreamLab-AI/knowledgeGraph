@@ -242,10 +242,6 @@
       "label": "Instant value settlement"
     },
     {
-      "slug": "interoperability-domain",
-      "label": "Interoperability Domain"
-    },
-    {
       "slug": "lock-and-mint-mechanism",
       "label": "Lock and Mint Mechanism"
     },

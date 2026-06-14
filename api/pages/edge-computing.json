@@ -680,7 +680,7 @@
       "label": "Hardware Acceleration"
     },
     {
-      "slug": "infrastructure-domain",
+      "slug": "infrastructure",
       "label": "InfrastructureDomain"
     },
     {
@@ -796,10 +796,6 @@
     {
       "slug": "edge-inference",
       "label": "Edge Inference"
-    },
-    {
-      "slug": "embedded-systems-domain",
-      "label": "Embedded Systems Domain"
     },
     {
       "slug": "gartner-prediction",

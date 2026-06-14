@@ -23,11 +23,11 @@ public:: true
       "vc:label": "Blockchain"
     },
     {
-      "@id": "urn:visionflow:linked:cryptographic-domain",
+      "@id": "urn:visionflow:linked:bc-cryptographic-primitive",
       "vc:label": "Cryptographic Domain"
     },
     {
-      "@id": "urn:visionflow:linked:distributed-systems-domain",
+      "@id": "urn:visionflow:linked:distributed-systems",
       "vc:label": "Distributed Systems Domain"
     },
     {
@@ -149,7 +149,7 @@ public:: true
     ],
     "bridgesTo": [
       {
-        "@id": "urn:ngm:class:cryptographic-domain",
+        "@id": "urn:ngm:class:bc-cryptographic-primitive",
         "label": "Cryptographic Domain"
       },
       {
@@ -237,12 +237,12 @@ public:: true
     },
     {
       "raw": "[[Cryptographic Domain]]",
-      "resolved": "urn:visionflow:linked:cryptographic-domain",
+      "resolved": "urn:visionflow:linked:bc-cryptographic-primitive",
       "kind": "ResolvedLink"
     },
     {
       "raw": "[[Distributed Systems Domain]]",
-      "resolved": "urn:visionflow:linked:distributed-systems-domain",
+      "resolved": "urn:visionflow:linked:distributed-systems",
       "kind": "ResolvedLink"
     },
     {

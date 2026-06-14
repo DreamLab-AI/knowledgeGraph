@@ -200,10 +200,6 @@
       "label": "Feed Forward Network"
     },
     {
-      "slug": "financial-markets-domain",
-      "label": "Financial Markets Domain"
-    },
-    {
       "slug": "functional-analysis",
       "label": "Functional Analysis"
     },
@@ -216,24 +212,12 @@
       "label": "Generative Adversarial Networks"
     },
     {
-      "slug": "generative-modelling-domain",
-      "label": "Generative Modelling Domain"
-    },
-    {
-      "slug": "information-retrieval-domain",
-      "label": "Information Retrieval Domain"
-    },
-    {
       "slug": "information-theory",
       "label": "Information Theory"
     },
     {
       "slug": "learning-algorithm",
       "label": "Learning Algorithm"
-    },
-    {
-      "slug": "machine-learning-domain",
-      "label": "Machine Learning Domain"
     },
     {
       "slug": "markov-chain",
@@ -250,10 +234,6 @@
     {
       "slug": "measure-theory",
       "label": "Measure Theory"
-    },
-    {
-      "slug": "natural-language-processing-domain",
-      "label": "Natural Language Processing Domain"
     },
     {
       "slug": "particle-filter",

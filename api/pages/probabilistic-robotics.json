@@ -8,7 +8,7 @@
   "definition": "Probabilistic robotics is an approach to robot perception and control that represents uncertainty explicitly using probability distributions, and reasons about state and action through Bayesian estimation.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:robotics-domain",
+      "id": "urn:ngm:class:robotics",
       "label": "Robotics Domain"
     }
   ],
@@ -69,7 +69,7 @@
       "label": "Particle Filter"
     },
     {
-      "slug": "robotics-domain",
+      "slug": "robotics",
       "label": "Robotics Domain"
     }
   ],

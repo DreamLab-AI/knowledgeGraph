@@ -26,7 +26,7 @@ public:: true
   "subClassOf": [{"@id": "urn:ngm:class:sustainability", "label": "Sustainability"}],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:sustainability-domain", "label": "Sustainability Domain"},
+      {"@id": "urn:ngm:class:sustainability", "label": "Sustainability Domain"},
       {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-environmental-issues", "label": "Bitcoin Environmental Issues"}
     ]
   },

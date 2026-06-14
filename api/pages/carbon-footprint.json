@@ -29,7 +29,7 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:sustainability-domain",
+        "id": "urn:ngm:class:sustainability",
         "label": "Sustainability Domain"
       },
       {
@@ -47,10 +47,6 @@
     {
       "slug": "bitcoin-mining",
       "label": "Bitcoin Mining"
-    },
-    {
-      "slug": "sustainability-domain",
-      "label": "Sustainability Domain"
     },
     {
       "slug": "virtual-production",

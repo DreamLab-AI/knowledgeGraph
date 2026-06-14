@@ -42,7 +42,7 @@
         "label": "Hardware Abstraction Layer (HAL)"
       },
       {
-        "id": "urn:ngm:class:spatial-computing-paradigm-layer",
+        "id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing Layer"
       },
       {
@@ -147,7 +147,7 @@
       "label": "Hardware Abstraction Layer (HAL)"
     },
     {
-      "slug": "infrastructure-domain",
+      "slug": "infrastructure",
       "label": "InfrastructureDomain"
     },
     {
@@ -261,10 +261,6 @@
       "label": "Model Training"
     },
     {
-      "slug": "ngm-domain",
-      "label": "NGM Domain"
-    },
-    {
       "slug": "network-layer",
       "label": "Network Layer"
     },
@@ -307,10 +303,6 @@
     {
       "slug": "sovereign-keyset",
       "label": "Sovereign Keyset"
-    },
-    {
-      "slug": "spatial-computing-layer",
-      "label": "Spatial Computing Layer"
     },
     {
       "slug": "speech-and-voice",

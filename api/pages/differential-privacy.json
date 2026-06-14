@@ -148,7 +148,7 @@
       "label": "U.S. Census 2020"
     },
     {
-      "slug": "aiethics-domain",
+      "slug": "ai-governance-and-ethics",
       "label": "AIEthicsDomain"
     },
     {
@@ -180,10 +180,6 @@
     {
       "slug": "information-security",
       "label": "Information Security"
-    },
-    {
-      "slug": "privacy-domain",
-      "label": "Privacy Domain"
     },
     {
       "slug": "privacy-preserving-analytics",

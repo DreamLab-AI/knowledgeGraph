@@ -158,6 +158,14 @@
       "label": "Asset Registry"
     },
     {
+      "slug": "asset-registry",
+      "label": "Asset Registry"
+    },
+    {
+      "slug": "cambridge-centre-for-alternative-finance",
+      "label": "Cambridge Centre for Alternative Finance"
+    },
+    {
       "slug": "dtcc",
       "label": "DTCC"
     },
@@ -166,12 +174,40 @@
       "label": "Digital Payment System"
     },
     {
+      "slug": "distributed-ledger",
+      "label": "Distributed Ledger"
+    },
+    {
       "slug": "instant-value-settlement",
       "label": "Instant value settlement"
     },
     {
+      "slug": "instant-value-settlement",
+      "label": "Instant value settlement"
+    },
+    {
+      "slug": "kraken",
+      "label": "Kraken"
+    },
+    {
       "slug": "lightning-network",
       "label": "Lightning Network"
+    },
+    {
+      "slug": "lightning-network",
+      "label": "Lightning Network"
+    },
+    {
+      "slug": "r3-corda",
+      "label": "R3 Corda"
+    },
+    {
+      "slug": "swift",
+      "label": "SWIFT"
+    },
+    {
+      "slug": "settlement",
+      "label": "Settlement"
     },
     {
       "slug": "traditional-finance",

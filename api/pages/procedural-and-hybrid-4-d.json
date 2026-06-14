@@ -265,7 +265,7 @@
         "label": "Metaverse"
       },
       {
-        "id": "urn:ngm:class:spatial-computing-paradigm",
+        "id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing"
       }
     ]
@@ -308,7 +308,7 @@
       "label": "Computer Graphics"
     },
     {
-      "slug": "computer-graphics-domain",
+      "slug": "computer-graphics",
       "label": "ComputerGraphicsDomain"
     },
     {
@@ -520,7 +520,7 @@
       "label": "AR Frame"
     },
     {
-      "slug": "artificial-intelligence-domain",
+      "slug": "artificial-intelligence",
       "label": "ArtificialIntelligenceDomain"
     },
     {

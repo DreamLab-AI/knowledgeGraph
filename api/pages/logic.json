@@ -156,18 +156,5 @@
       "label": "owl:Thing"
     }
   ],
-  "backlinks": [
-    {
-      "slug": "formal-methods-domain",
-      "label": "Formal Methods Domain"
-    },
-    {
-      "slug": "knowledge-representation-domain",
-      "label": "Knowledge Representation Domain"
-    },
-    {
-      "slug": "regulation-domain",
-      "label": "Regulation Domain"
-    }
-  ]
+  "backlinks": []
 }

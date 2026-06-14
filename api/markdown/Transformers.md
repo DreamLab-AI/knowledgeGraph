@@ -43,7 +43,7 @@ public:: true
       "vc:label": "DeBERTa"
     },
     {
-      "@id": "urn:visionflow:linked:deep-learning-domain",
+      "@id": "urn:visionflow:linked:deep-learning",
       "vc:label": "DeepLearningDomain"
     },
     {
@@ -135,7 +135,7 @@ public:: true
       "vc:label": "Multimodal Learning"
     },
     {
-      "@id": "urn:visionflow:linked:natural-language-processing-domain",
+      "@id": "urn:visionflow:linked:natural-language-processing",
       "vc:label": "NaturalLanguageProcessingDomain"
     },
     {
@@ -737,7 +737,7 @@ public:: true
     },
     {
       "raw": "[[DeepLearningDomain]]",
-      "resolved": "urn:visionflow:linked:deep-learning-domain",
+      "resolved": "urn:visionflow:linked:deep-learning",
       "kind": "StubLink"
     },
     {
@@ -852,7 +852,7 @@ public:: true
     },
     {
       "raw": "[[NaturalLanguageProcessingDomain]]",
-      "resolved": "urn:visionflow:linked:natural-language-processing-domain",
+      "resolved": "urn:visionflow:linked:natural-language-processing",
       "kind": "StubLink"
     },
     {

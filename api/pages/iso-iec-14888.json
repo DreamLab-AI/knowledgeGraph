@@ -37,10 +37,6 @@
   ],
   "backlinks": [
     {
-      "slug": "cryptographic-domain",
-      "label": "Cryptographic Domain"
-    },
-    {
       "slug": "cryptography",
       "label": "Cryptography"
     }

@@ -33,17 +33,13 @@
         "label": "Semantic Search"
       },
       {
-        "id": "urn:ngm:class:information-retrieval-domain",
+        "id": "urn:ngm:class:information-retrieval",
         "label": "Information Retrieval Domain"
       }
     ]
   },
   "wikilinks": [],
   "backlinks": [
-    {
-      "slug": "information-retrieval-domain",
-      "label": "Information Retrieval Domain"
-    },
     {
       "slug": "semantic-search",
       "label": "Semantic Search"

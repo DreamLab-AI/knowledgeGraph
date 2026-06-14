@@ -568,7 +568,7 @@
       "label": "Financial Regulation"
     },
     {
-      "slug": "financial-regulation-domain",
+      "slug": "financial-regulation",
       "label": "FinancialRegulationDomain"
     },
     {
@@ -704,7 +704,7 @@
       "label": "Payment System Standard"
     },
     {
-      "slug": "payment-systems-domain",
+      "slug": "bc-defi-and-economics",
       "label": "PaymentSystemsDomain"
     },
     {
@@ -788,7 +788,7 @@
       "label": "Atomic Swap"
     },
     {
-      "slug": "blockchain-domain",
+      "slug": "blockchain",
       "label": "BlockchainDomain"
     },
     {

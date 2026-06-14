@@ -169,12 +169,20 @@
       "label": "Data Integration Interface"
     },
     {
+      "slug": "data-integration-interface",
+      "label": "Data Integration Interface"
+    },
+    {
       "slug": "data-provenance",
       "label": "Data Provenance"
     },
     {
       "slug": "data-quality",
       "label": "Data Quality"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
     },
     {
       "slug": "digital-repository",
@@ -201,12 +209,16 @@
       "label": "ETSI Domain: Data Management + Security"
     },
     {
-      "slug": "enterprise-software-domain",
-      "label": "Enterprise Software Domain"
+      "slug": "graph-database",
+      "label": "Graph Database"
     },
     {
       "slug": "image-generation",
       "label": "Image Generation"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
     },
     {
       "slug": "master-data-management",

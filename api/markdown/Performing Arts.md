@@ -64,7 +64,7 @@ public:: true
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:music-and-audio", "label": "Music and Audio"},
-      {"@id": "urn:ngm:class:creative-media-domain", "label": "Creative Media Domain"}
+      {"@id": "urn:ngm:class:ai-application", "label": "Creative Media Domain"}
     ]
   },
   "provenance": {

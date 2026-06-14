@@ -92,7 +92,7 @@ alias:: ConsentManagement
       "vc:label": "Transparency"
     },
     {
-      "@id": "urn:visionflow:owl:class:trust-and-governance-domain",
+      "@id": "urn:visionflow:owl:class:ai-governance-and-ethics",
       "vc:label": "TrustAndGovernanceDomain"
     },
     {
@@ -100,7 +100,7 @@ alias:: ConsentManagement
       "vc:label": "User Interface"
     },
     {
-      "@id": "urn:visionflow:owl:class:virtual-society-domain",
+      "@id": "urn:visionflow:owl:class:virtual-society",
       "vc:label": "VirtualSocietyDomain"
     }
   ],
@@ -334,7 +334,7 @@ alias:: ConsentManagement
     },
     {
       "raw": "[[TrustAndGovernanceDomain]]",
-      "resolved": "urn:visionflow:owl:class:trust-and-governance-domain",
+      "resolved": "urn:visionflow:owl:class:ai-governance-and-ethics",
       "kind": "ResolvedLink"
     },
     {
@@ -344,7 +344,7 @@ alias:: ConsentManagement
     },
     {
       "raw": "[[VirtualSocietyDomain]]",
-      "resolved": "urn:visionflow:owl:class:virtual-society-domain",
+      "resolved": "urn:visionflow:owl:class:virtual-society",
       "kind": "ResolvedLink"
     }
   ],

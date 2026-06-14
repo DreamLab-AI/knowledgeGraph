@@ -160,7 +160,7 @@
       "label": "Blockchain Entity"
     },
     {
-      "slug": "cryptographic-domain",
+      "slug": "bc-cryptographic-primitive",
       "label": "CryptographicDomain"
     },
     {
@@ -200,10 +200,6 @@
     {
       "slug": "cryptographic-system",
       "label": "Cryptographic System"
-    },
-    {
-      "slug": "cryptography-domain",
-      "label": "Cryptography Domain"
     },
     {
       "slug": "cryptography-security-and-privacy",
@@ -264,10 +260,6 @@
     {
       "slug": "self-sovereign-identity",
       "label": "Self Sovereign Identity"
-    },
-    {
-      "slug": "web-3-domain",
-      "label": "Web3 Domain"
     },
     {
       "slug": "web3",

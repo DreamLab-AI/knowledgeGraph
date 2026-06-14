@@ -759,7 +759,7 @@
       "label": "Ramachandra Busch PAD Survey ACM 2017"
     },
     {
-      "slug": "regulatory-compliance-domain",
+      "slug": "regulatory-compliance",
       "label": "RegulatoryComplianceDomain"
     },
     {
@@ -803,7 +803,7 @@
       "label": "Schroff Kalenichenko Philbin FaceNet CVPR 2015"
     },
     {
-      "slug": "security-domain",
+      "slug": "security",
       "label": "SecurityDomain"
     },
     {

@@ -47,7 +47,7 @@ public:: true
       "vc:label": "Human-Robot Interaction"
     },
     {
-      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "@id": "urn:visionflow:owl:class:metaverse",
       "vc:label": "MetaverseDomain"
     }
   ],
@@ -99,7 +99,7 @@ public:: true
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:social-robotics", "label": "Social Robotics"},
-      {"@id": "urn:ngm:class:robotics-domain", "label": "Robotics Domain"}
+      {"@id": "urn:ngm:class:robotics", "label": "Robotics Domain"}
     ]
   },
   "quality": 0.4,
@@ -167,7 +167,7 @@ public:: true
     },
     {
       "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "resolved": "urn:visionflow:owl:class:metaverse",
       "kind": "ResolvedLink"
     }
   ],

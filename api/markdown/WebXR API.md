@@ -15,7 +15,7 @@ public:: true
       "vc:label": "EWG/MSF taxonomy"
     },
     {
-      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "@id": "urn:visionflow:owl:class:metaverse",
       "vc:label": "MetaverseDomain"
     }
   ],
@@ -60,7 +60,7 @@ public:: true
     "enables": [
       {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
       {"@id": "urn:ngm:class:virtual-reality", "label": "Virtual Reality"},
-      {"@id": "urn:ngm:class:spatial-computing-paradigm", "label": "Spatial Computing"}
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
     ],
     "requires": [
       {"@id": "urn:ngm:class:xr-headset", "label": "XR Headset"},
@@ -98,7 +98,7 @@ public:: true
     },
     {
       "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "resolved": "urn:visionflow:owl:class:metaverse",
       "kind": "ResolvedLink"
     }
   ],

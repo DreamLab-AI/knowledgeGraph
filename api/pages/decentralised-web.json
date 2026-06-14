@@ -716,7 +716,7 @@
       "label": "Networking"
     },
     {
-      "slug": "networking-domain",
+      "slug": "infra-network-and-comms",
       "label": "NetworkingDomain"
     },
     {
@@ -1008,7 +1008,7 @@
       "label": "Gossip Protocol"
     },
     {
-      "slug": "infrastructure-domain",
+      "slug": "infrastructure",
       "label": "InfrastructureDomain"
     },
     {

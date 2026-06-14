@@ -231,7 +231,7 @@ public:: true
       "vc:label": "Gnosis Safe / Safe{Wallet}"
     },
     {
-      "@id": "urn:visionflow:linked:governance-domain",
+      "@id": "urn:visionflow:linked:governance",
       "vc:label": "GovernanceDomain"
     },
     {
@@ -455,7 +455,7 @@ public:: true
       "vc:label": "Regulatory Compliance Frameworks"
     },
     {
-      "@id": "urn:visionflow:linked:regulatory-domain",
+      "@id": "urn:visionflow:linked:infra-legal-and-regulatory",
       "vc:label": "RegulatoryDomain"
     },
     {
@@ -631,7 +631,7 @@ public:: true
       "vc:label": "Yarmouth"
     },
     {
-      "@id": "urn:visionflow:owl:class:blockchain-domain",
+      "@id": "urn:visionflow:owl:class:blockchain",
       "vc:label": "BlockchainDomain"
     },
     {
@@ -1286,7 +1286,7 @@ public:: true
     },
     {
       "raw": "[[GovernanceDomain]]",
-      "resolved": "urn:visionflow:linked:governance-domain",
+      "resolved": "urn:visionflow:linked:governance",
       "kind": "StubLink"
     },
     {
@@ -1566,7 +1566,7 @@ public:: true
     },
     {
       "raw": "[[RegulatoryDomain]]",
-      "resolved": "urn:visionflow:linked:regulatory-domain",
+      "resolved": "urn:visionflow:linked:infra-legal-and-regulatory",
       "kind": "StubLink"
     },
     {
@@ -1786,7 +1786,7 @@ public:: true
     },
     {
       "raw": "[[BlockchainDomain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-domain",
+      "resolved": "urn:visionflow:owl:class:blockchain",
       "kind": "ResolvedLink"
     },
     {

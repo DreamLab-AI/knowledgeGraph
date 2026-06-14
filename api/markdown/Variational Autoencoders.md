@@ -1099,7 +1099,7 @@ public:: true
       "vc:label": "ZK-SNARK"
     },
     {
-      "@id": "urn:visionflow:owl:class:aidomain",
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
       "vc:label": "AIDomain"
     },
     {
@@ -2794,7 +2794,7 @@ public:: true
     },
     {
       "raw": "[[AIDomain]]",
-      "resolved": "urn:visionflow:owl:class:aidomain",
+      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
       "kind": "ResolvedLink"
     },
     {

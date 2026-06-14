@@ -163,7 +163,7 @@
       "label": "Reputation System"
     },
     {
-      "slug": "trust-and-governance-domain",
+      "slug": "ai-governance-and-ethics",
       "label": "TrustAndGovernanceDomain"
     },
     {
@@ -175,7 +175,7 @@
       "label": "Verifiable Credentials"
     },
     {
-      "slug": "virtual-society-domain",
+      "slug": "virtual-society",
       "label": "VirtualSocietyDomain"
     }
   ],

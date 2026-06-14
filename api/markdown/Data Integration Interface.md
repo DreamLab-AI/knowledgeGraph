@@ -23,7 +23,7 @@ public:: true
       "vc:label": "Data Federation"
     },
     {
-      "@id": "urn:visionflow:linked:data-management-domain",
+      "@id": "urn:visionflow:linked:data-management",
       "vc:label": "DataManagementDomain"
     },
     {
@@ -35,7 +35,7 @@ public:: true
       "vc:label": "ETSI GR ARF 010"
     },
     {
-      "@id": "urn:visionflow:linked:interoperability-domain",
+      "@id": "urn:visionflow:linked:interoperability",
       "vc:label": "InteroperabilityDomain"
     },
     {
@@ -232,7 +232,7 @@ public:: true
     },
     {
       "raw": "[[DataManagementDomain]]",
-      "resolved": "urn:visionflow:linked:data-management-domain",
+      "resolved": "urn:visionflow:linked:data-management",
       "kind": "StubLink"
     },
     {
@@ -247,7 +247,7 @@ public:: true
     },
     {
       "raw": "[[InteroperabilityDomain]]",
-      "resolved": "urn:visionflow:linked:interoperability-domain",
+      "resolved": "urn:visionflow:linked:interoperability",
       "kind": "StubLink"
     },
     {

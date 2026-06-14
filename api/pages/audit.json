@@ -181,16 +181,8 @@
       "label": "Compliance Control"
     },
     {
-      "slug": "compliance-domain",
-      "label": "Compliance Domain"
-    },
-    {
       "slug": "compliance-layer",
       "label": "Compliance Layer"
-    },
-    {
-      "slug": "corporate-governance-domain",
-      "label": "Corporate Governance Domain"
     },
     {
       "slug": "corporate-governance",

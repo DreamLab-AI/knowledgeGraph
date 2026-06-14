@@ -61,7 +61,7 @@ public:: true
     ],
     "supports": [
       {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
-      {"@id": "urn:ngm:class:spatial-computing-paradigm", "label": "Spatial Computing"}
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
     ]
   },
   "provenance": {

@@ -863,7 +863,7 @@ public:: true
       "vc:label": "Regional AI Regulation"
     },
     {
-      "@id": "urn:visionflow:linked:regulatory-domain",
+      "@id": "urn:visionflow:linked:infra-legal-and-regulatory",
       "vc:label": "RegulatoryDomain"
     },
     {
@@ -1079,7 +1079,7 @@ public:: true
       "vc:label": "AI Governance"
     },
     {
-      "@id": "urn:visionflow:owl:class:ai-grounded-domain",
+      "@id": "urn:visionflow:owl:class:ai-technique",
       "vc:label": "AI-GroundedDomain"
     },
     {
@@ -2490,7 +2490,7 @@ public:: true
     },
     {
       "raw": "[[RegulatoryDomain]]",
-      "resolved": "urn:visionflow:linked:regulatory-domain",
+      "resolved": "urn:visionflow:linked:infra-legal-and-regulatory",
       "kind": "StubLink"
     },
     {
@@ -2760,7 +2760,7 @@ public:: true
     },
     {
       "raw": "[[AI-GroundedDomain]]",
-      "resolved": "urn:visionflow:owl:class:ai-grounded-domain",
+      "resolved": "urn:visionflow:owl:class:ai-technique",
       "kind": "ResolvedLink"
     },
     {

@@ -368,7 +368,7 @@
       "label": "Digital Onboarding"
     },
     {
-      "slug": "distributed-collaboration-domain",
+      "slug": "distributed-collaboration",
       "label": "DistributedCollaborationDomain"
     },
     {
@@ -404,7 +404,7 @@
       "label": "Enterprise Search"
     },
     {
-      "slug": "enterprise-software-domain",
+      "slug": "infra-software-engineering",
       "label": "EnterpriseSoftwareDomain"
     },
     {

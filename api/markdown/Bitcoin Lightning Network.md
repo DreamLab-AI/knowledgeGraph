@@ -35,7 +35,7 @@ public:: true
       "vc:label": "Instant Settlement"
     },
     {
-      "@id": "urn:visionflow:linked:payment-systems-domain",
+      "@id": "urn:visionflow:linked:bc-defi-and-economics",
       "vc:label": "Payment Systems Domain"
     },
     {
@@ -43,7 +43,7 @@ public:: true
       "vc:label": "Liquid Network"
     },
     {
-      "@id": "urn:visionflow:linked:blockchain-domain",
+      "@id": "urn:visionflow:linked:blockchain",
       "vc:label": "Blockchain Domain"
     }
   ],
@@ -181,7 +181,7 @@ public:: true
     ],
     "bridgesTo": [
       {
-        "@id": "urn:ngm:class:payment-systems-domain",
+        "@id": "urn:ngm:class:bc-defi-and-economics",
         "label": "Payment Systems Domain"
       },
       {
@@ -268,7 +268,7 @@ public:: true
     },
     {
       "raw": "[[Payment Systems Domain]]",
-      "resolved": "urn:visionflow:linked:payment-systems-domain",
+      "resolved": "urn:visionflow:linked:bc-defi-and-economics",
       "kind": "ResolvedLink"
     },
     {
@@ -278,7 +278,7 @@ public:: true
     },
     {
       "raw": "[[Blockchain Domain]]",
-      "resolved": "urn:visionflow:linked:blockchain-domain",
+      "resolved": "urn:visionflow:linked:blockchain",
       "kind": "ResolvedLink"
     }
   ],

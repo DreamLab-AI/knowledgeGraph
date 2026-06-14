@@ -24,7 +24,7 @@ alias:: DigitalArt
   "definition": "Digital art encompasses visual, interactive, and generative artworks created, stored, and distributed using digital technologies as primary medium or tool. It spans a wide range of practices—from pixel painting and vector illustration to algorithmically generated pieces, interactive installations, and AI-synthesised imagery. The form has been transformed by NFT infrastructure, which introduced scarcity and provenance guarantees to inherently copyable digital objects. Digital art sits at the intersection of technological capability and aesthetic intent, continuously expanding as new computational tools emerge.",
   "domain": "metaverse",
   "maturity": "established",
-  "subClassOf": {"@id": "urn:ngm:class:creative-media-domain", "label": "Creative Media Domain"},
+  "subClassOf": {"@id": "urn:ngm:class:ai-application", "label": "Creative Media Domain"},
   "relations": {
     "uses": [
       {"@id": "urn:ngm:class:creative-ai", "label": "Creative AI"},

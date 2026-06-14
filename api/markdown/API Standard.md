@@ -51,11 +51,11 @@ public:: true
       "vc:label": "DataLayer"
     },
     {
-      "@id": "urn:visionflow:owl:class:infrastructure-domain",
+      "@id": "urn:visionflow:owl:class:infrastructure",
       "vc:label": "InfrastructureDomain"
     },
     {
-      "@id": "urn:visionflow:owl:class:interaction-domain",
+      "@id": "urn:visionflow:owl:class:sc-interaction",
       "vc:label": "InteractionDomain"
     },
     {
@@ -305,12 +305,12 @@ public:: true
     },
     {
       "raw": "[[InfrastructureDomain]]",
-      "resolved": "urn:visionflow:owl:class:infrastructure-domain",
+      "resolved": "urn:visionflow:owl:class:infrastructure",
       "kind": "ResolvedLink"
     },
     {
       "raw": "[[InteractionDomain]]",
-      "resolved": "urn:visionflow:owl:class:interaction-domain",
+      "resolved": "urn:visionflow:owl:class:sc-interaction",
       "kind": "ResolvedLink"
     },
     {

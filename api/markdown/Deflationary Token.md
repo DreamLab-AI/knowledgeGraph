@@ -39,7 +39,7 @@ public:: true
       "vc:label": "EconomicMechanism"
     },
     {
-      "@id": "urn:visionflow:owl:class:token-economics-domain",
+      "@id": "urn:visionflow:owl:class:token-economics",
       "vc:label": "TokenEconomicsDomain"
     },
     {
@@ -109,7 +109,7 @@ public:: true
       {"@id": "urn:ngm:class:transaction-fee", "label": "Transaction Fee"}
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:token-economics-domain", "label": "Token Economics Domain"}
+      {"@id": "urn:ngm:class:token-economics", "label": "Token Economics Domain"}
     ]
   },
   "provenance": {
@@ -166,7 +166,7 @@ public:: true
     },
     {
       "raw": "[[TokenEconomicsDomain]]",
-      "resolved": "urn:visionflow:owl:class:token-economics-domain",
+      "resolved": "urn:visionflow:owl:class:token-economics",
       "kind": "ResolvedLink"
     },
     {

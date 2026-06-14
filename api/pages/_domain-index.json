@@ -11,11 +11,6 @@
       "qualityScore": 0.68
     },
     {
-      "slug": "ai-governance-domain",
-      "title": "AI Governance Domain",
-      "qualityScore": 0.72
-    },
-    {
       "slug": "ai-governance-law-and-privacy",
       "title": "AI Governance Law and Privacy",
       "qualityScore": 0.0
@@ -301,11 +296,6 @@
       "qualityScore": 0.72
     },
     {
-      "slug": "compliance-domain",
-      "title": "Compliance Domain",
-      "qualityScore": 0.6
-    },
-    {
       "slug": "compliance-evidence",
       "title": "Compliance Evidence",
       "qualityScore": 0.72
@@ -386,11 +376,6 @@
       "qualityScore": 0.8
     },
     {
-      "slug": "corporate-governance-domain",
-      "title": "Corporate Governance Domain",
-      "qualityScore": 0.6
-    },
-    {
       "slug": "corporate-governance",
       "title": "Corporate Governance",
       "qualityScore": 0.72
@@ -424,11 +409,6 @@
       "slug": "data-brokers",
       "title": "Data Brokers",
       "qualityScore": 0.72
-    },
-    {
-      "slug": "data-governance-domain",
-      "title": "Data Governance Domain",
-      "qualityScore": 0.6
     },
     {
       "slug": "data-governance-framework",
@@ -656,11 +636,6 @@
       "qualityScore": 0.68
     },
     {
-      "slug": "environmental-domain",
-      "title": "Environmental Domain",
-      "qualityScore": 0.6
-    },
-    {
       "slug": "environmental-sustainability",
       "title": "Environmental Sustainability",
       "qualityScore": 0.72
@@ -809,11 +784,6 @@
       "slug": "geopolitics",
       "title": "Geopolitics",
       "qualityScore": 0.72
-    },
-    {
-      "slug": "governance-domain",
-      "title": "Governance Domain",
-      "qualityScore": 0.6
     },
     {
       "slug": "governance-framework",
@@ -1091,11 +1061,6 @@
       "qualityScore": 0.72
     },
     {
-      "slug": "legal-tech-domain",
-      "title": "Legal Tech Domain",
-      "qualityScore": 0.6
-    },
-    {
       "slug": "legal-wrapper",
       "title": "Legal Wrapper",
       "qualityScore": 0.72
@@ -1129,11 +1094,6 @@
       "slug": "measurement-methodology",
       "title": "Measurement Methodology",
       "qualityScore": 0.72
-    },
-    {
-      "slug": "mechanism-design-domain",
-      "title": "Mechanism Design Domain",
-      "qualityScore": 0.6
     },
     {
       "slug": "mechanism-design",
@@ -1376,11 +1336,6 @@
       "qualityScore": 0.6
     },
     {
-      "slug": "regulation-domain",
-      "title": "Regulation Domain",
-      "qualityScore": 0.6
-    },
-    {
       "slug": "regulation",
       "title": "Regulation",
       "qualityScore": 0.74
@@ -1406,18 +1361,8 @@
       "qualityScore": 0.6
     },
     {
-      "slug": "regulatory-compliance-domain",
-      "title": "Regulatory Compliance Domain",
-      "qualityScore": 0.6
-    },
-    {
       "slug": "regulatory-conformance",
       "title": "Regulatory Conformance",
-      "qualityScore": 0.72
-    },
-    {
-      "slug": "regulatory-domain",
-      "title": "Regulatory Domain",
       "qualityScore": 0.72
     },
     {
@@ -1599,11 +1544,6 @@
       "slug": "surveillance-capitalism",
       "title": "Surveillance Capitalism",
       "qualityScore": 0.8
-    },
-    {
-      "slug": "sustainability-domain",
-      "title": "Sustainability Domain",
-      "qualityScore": 0.6
     },
     {
       "slug": "sustainability-framework",
@@ -2458,11 +2398,6 @@
       "qualityScore": 0.72
     },
     {
-      "slug": "blockchain-domain",
-      "title": "Blockchain Domain",
-      "qualityScore": 0.7
-    },
-    {
       "slug": "blockchain-economics",
       "title": "Blockchain Economics",
       "qualityScore": 0.0
@@ -2848,11 +2783,6 @@
       "qualityScore": 0.72
     },
     {
-      "slug": "consensus-domain",
-      "title": "Consensus Domain",
-      "qualityScore": 0.5
-    },
-    {
       "slug": "consensus-layer",
       "title": "Consensus Layer",
       "qualityScore": 0.6
@@ -3198,11 +3128,6 @@
       "qualityScore": 0.4
     },
     {
-      "slug": "de-fi-domain",
-      "title": "DeFi Domain",
-      "qualityScore": 0.6
-    },
-    {
       "slug": "defi-protocol",
       "title": "DeFi Protocol",
       "qualityScore": 0.72
@@ -3235,11 +3160,6 @@
     {
       "slug": "decentralised-exchange",
       "title": "Decentralised Exchange",
-      "qualityScore": 0.72
-    },
-    {
-      "slug": "decentralised-finance-domain",
-      "title": "Decentralised Finance Domain",
       "qualityScore": 0.72
     },
     {
@@ -3371,11 +3291,6 @@
       "slug": "digital-asset-custody",
       "title": "Digital Asset Custody",
       "qualityScore": 0.73
-    },
-    {
-      "slug": "digital-asset-domain",
-      "title": "Digital Asset Domain",
-      "qualityScore": 0.72
     },
     {
       "slug": "digital-asset-risks",
@@ -6078,11 +5993,6 @@
       "qualityScore": 0.75
     },
     {
-      "slug": "token-economics-domain",
-      "title": "Token Economics Domain",
-      "qualityScore": 0.5
-    },
-    {
       "slug": "token-economics",
       "title": "Token Economics",
       "qualityScore": 0.72
@@ -6660,11 +6570,6 @@
       "qualityScore": 0.72
     },
     {
-      "slug": "autonomous-systems-domain",
-      "title": "Autonomous Systems Domain",
-      "qualityScore": 0.6
-    },
-    {
       "slug": "autonomous-vehicle",
       "title": "Autonomous Vehicle",
       "qualityScore": 0.72
@@ -6820,16 +6725,6 @@
       "qualityScore": 0.5
     },
     {
-      "slug": "control-systems-domain",
-      "title": "Control Systems Domain",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "control-theory-domain",
-      "title": "Control Theory Domain",
-      "qualityScore": 0.6
-    },
-    {
       "slug": "control-theory",
       "title": "Control Theory",
       "qualityScore": 0.52
@@ -6858,11 +6753,6 @@
       "slug": "current-sensor",
       "title": "Current Sensor",
       "qualityScore": 0.52
-    },
-    {
-      "slug": "cyber-physical-systems-domain",
-      "title": "Cyber Physical Systems Domain",
-      "qualityScore": 0.6
     },
     {
       "slug": "cybersecurity-standard",
@@ -6978,11 +6868,6 @@
       "slug": "electric-motor",
       "title": "Electric Motor",
       "qualityScore": 0.5
-    },
-    {
-      "slug": "embedded-systems-domain",
-      "title": "Embedded Systems Domain",
-      "qualityScore": 0.6
     },
     {
       "slug": "end-effector",
@@ -7540,11 +7425,6 @@
       "qualityScore": 0.74
     },
     {
-      "slug": "manufacturing-domain",
-      "title": "Manufacturing Domain",
-      "qualityScore": 0.6
-    },
-    {
       "slug": "manufacturing-process",
       "title": "Manufacturing Process",
       "qualityScore": 0.8
@@ -7568,11 +7448,6 @@
       "slug": "mechanical-component",
       "title": "Mechanical Component",
       "qualityScore": 0.52
-    },
-    {
-      "slug": "mechanical-engineering-domain",
-      "title": "Mechanical Engineering Domain",
-      "qualityScore": 0.6
     },
     {
       "slug": "mechanical-interface",
@@ -8188,11 +8063,6 @@
       "slug": "robotics-application",
       "title": "Robotics Application",
       "qualityScore": 0.0
-    },
-    {
-      "slug": "robotics-domain",
-      "title": "Robotics Domain",
-      "qualityScore": 0.72
     },
     {
       "slug": "robotics-platform",
@@ -9842,11 +9712,6 @@
       "qualityScore": 0.68
     },
     {
-      "slug": "computer-graphics-domain",
-      "title": "Computer Graphics Domain",
-      "qualityScore": 0.6
-    },
-    {
       "slug": "computer-graphics",
       "title": "Computer Graphics",
       "qualityScore": 0.74
@@ -11107,11 +10972,6 @@
       "qualityScore": 0.74
     },
     {
-      "slug": "interaction-domain",
-      "title": "Interaction Domain",
-      "qualityScore": 0.75
-    },
-    {
       "slug": "interactive-storytelling",
       "title": "Interactive Storytelling",
       "qualityScore": 0.35
@@ -11340,11 +11200,6 @@
       "slug": "metaverse-content-pipeline",
       "title": "Metaverse Content Pipeline",
       "qualityScore": 0.35
-    },
-    {
-      "slug": "metaverse-domain",
-      "title": "Metaverse Domain",
-      "qualityScore": 0.75
     },
     {
       "slug": "metaverse-liability-model",
@@ -12502,26 +12357,6 @@
       "qualityScore": 0.35
     },
     {
-      "slug": "spatial-computing-domain",
-      "title": "Spatial Computing Domain",
-      "qualityScore": 0.72
-    },
-    {
-      "slug": "spatial-computing-layer",
-      "title": "Spatial Computing Layer",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "spatial-computing-paradigm",
-      "title": "Spatial Computing Paradigm",
-      "qualityScore": 0.74
-    },
-    {
-      "slug": "spatial-computing-system",
-      "title": "Spatial Computing System",
-      "qualityScore": 0.35
-    },
-    {
       "slug": "spatial-computing",
       "title": "Spatial Computing",
       "qualityScore": 0.72
@@ -13077,11 +12912,6 @@
       "qualityScore": 0.0
     },
     {
-      "slug": "virtual-economy-domain",
-      "title": "Virtual Economy Domain",
-      "qualityScore": 0.5
-    },
-    {
       "slug": "virtual-economy-market-framing",
       "title": "Virtual Economy Market Framing",
       "qualityScore": 0.0
@@ -13284,11 +13114,6 @@
     {
       "slug": "virtual-set-design",
       "title": "Virtual Set Design",
-      "qualityScore": 0.0
-    },
-    {
-      "slug": "virtual-society-domain",
-      "title": "Virtual Society Domain",
       "qualityScore": 0.0
     },
     {
@@ -13909,19 +13734,9 @@
       "qualityScore": 0.5
     },
     {
-      "slug": "aidomain",
-      "title": "AIDomain",
-      "qualityScore": 0.0
-    },
-    {
       "slug": "aiethics",
       "title": "AIEthics",
       "qualityScore": 0.0
-    },
-    {
-      "slug": "aiethics-domain",
-      "title": "AIEthicsDomain",
-      "qualityScore": 0.68
     },
     {
       "slug": "aiops",
@@ -14132,11 +13947,6 @@
       "slug": "artificial-general-intelligence",
       "title": "Artificial General Intelligence",
       "qualityScore": 0.52
-    },
-    {
-      "slug": "artificial-intelligence-domain",
-      "title": "Artificial Intelligence Domain",
-      "qualityScore": 0.0
     },
     {
       "slug": "artificial-intelligence",
@@ -14484,11 +14294,6 @@
       "qualityScore": 0.75
     },
     {
-      "slug": "computation-and-intelligence-domain",
-      "title": "Computation And Intelligence Domain",
-      "qualityScore": 0.0
-    },
-    {
       "slug": "computational-complexity-theory",
       "title": "Computational Complexity Theory",
       "qualityScore": 0.72
@@ -14607,11 +14412,6 @@
       "slug": "cortex-agent",
       "title": "Cortex Agent",
       "qualityScore": 0.52
-    },
-    {
-      "slug": "creative-media-domain",
-      "title": "Creative Media Domain",
-      "qualityScore": 0.72
     },
     {
       "slug": "cross-attention",
@@ -17059,11 +16859,6 @@
       "qualityScore": 0.74
     },
     {
-      "slug": "trust-and-governance-domain",
-      "title": "Trust and Governance Domain",
-      "qualityScore": 0.35
-    },
-    {
       "slug": "trust-and-safety",
       "title": "Trust and Safety",
       "qualityScore": 0.52
@@ -18391,11 +18186,6 @@
       "qualityScore": 0.35
     },
     {
-      "slug": "disruptive-tech-domain",
-      "title": "Disruptive Tech Domain",
-      "qualityScore": 0.5
-    },
-    {
       "slug": "disruptive-technology",
       "title": "Disruptive Technology",
       "qualityScore": 0.75
@@ -18634,11 +18424,6 @@
       "slug": "ensemble-collaborative-intelligence-principle",
       "title": "Ensemble Collaborative Intelligence Principle",
       "qualityScore": 0.0
-    },
-    {
-      "slug": "enterprise-software-domain",
-      "title": "Enterprise Software Domain",
-      "qualityScore": 0.6
     },
     {
       "slug": "enterprise-software-platform",
@@ -18926,11 +18711,6 @@
       "qualityScore": 0.72
     },
     {
-      "slug": "human-computer-interaction-domain",
-      "title": "Human Computer Interaction Domain",
-      "qualityScore": 0.6
-    },
-    {
       "slug": "human-agent-interaction-surfaces",
       "title": "Human-Agent Interaction Surfaces",
       "qualityScore": 0.0
@@ -19086,11 +18866,6 @@
       "qualityScore": 0.5
     },
     {
-      "slug": "infrastructure-domain",
-      "title": "Infrastructure Domain",
-      "qualityScore": 0.75
-    },
-    {
       "slug": "infrastructure-layer",
       "title": "Infrastructure Layer",
       "qualityScore": 0.35
@@ -19134,11 +18909,6 @@
       "slug": "interoperability-architecture",
       "title": "Interoperability Architecture",
       "qualityScore": 0.5
-    },
-    {
-      "slug": "interoperability-domain",
-      "title": "Interoperability Domain",
-      "qualityScore": 0.6
     },
     {
       "slug": "interoperability-framework",
@@ -19601,11 +19371,6 @@
       "qualityScore": 0.72
     },
     {
-      "slug": "ngm-domain",
-      "title": "NGM Domain",
-      "qualityScore": 0.65
-    },
-    {
       "slug": "ngsi-ld",
       "title": "NGSI-LD",
       "qualityScore": 0.6
@@ -19684,11 +19449,6 @@
       "slug": "network-slicing",
       "title": "Network Slicing",
       "qualityScore": 0.8
-    },
-    {
-      "slug": "networking-domain",
-      "title": "Networking Domain",
-      "qualityScore": 0.6
     },
     {
       "slug": "networking-infrastructure",
@@ -20716,11 +20476,6 @@
       "qualityScore": 0.72
     },
     {
-      "slug": "software-engineering-domain",
-      "title": "Software Engineering Domain",
-      "qualityScore": 0.6
-    },
-    {
       "slug": "software-engineering",
       "title": "Software Engineering",
       "qualityScore": 0.72
@@ -20911,18 +20666,8 @@
       "qualityScore": 0.0
     },
     {
-      "slug": "technology-domain",
-      "title": "Technology Domain",
-      "qualityScore": 0.72
-    },
-    {
       "slug": "technology-ecosystem",
       "title": "Technology Ecosystem",
-      "qualityScore": 0.0
-    },
-    {
-      "slug": "technology-infrastructure-domain",
-      "title": "Infrastructure",
       "qualityScore": 0.0
     },
     {
@@ -21196,11 +20941,6 @@
       "qualityScore": 0.72
     },
     {
-      "slug": "web-3-domain",
-      "title": "Web3 Domain",
-      "qualityScore": 0.6
-    },
-    {
       "slug": "web-assembly",
       "title": "WebAssembly",
       "qualityScore": 0.72
@@ -21403,11 +21143,6 @@
       "qualityScore": 0.72
     },
     {
-      "slug": "ai-grounded-domain",
-      "title": "AI Grounded Domain",
-      "qualityScore": 0.6
-    },
-    {
       "slug": "ai-group-formation",
       "title": "AI Group Formation",
       "qualityScore": 0.72
@@ -21428,11 +21163,6 @@
       "qualityScore": 0.8
     },
     {
-      "slug": "ai-safety-domain",
-      "title": "AI Safety Domain",
-      "qualityScore": 0.6
-    },
-    {
       "slug": "ai-system",
       "title": "AI System",
       "qualityScore": 0.8
@@ -21446,11 +21176,6 @@
       "slug": "ai-talent",
       "title": "AI Talent",
       "qualityScore": 0.8
-    },
-    {
-      "slug": "aisafety-domain",
-      "title": "AISafetyDomain",
-      "qualityScore": 0.6
     },
     {
       "slug": "arc-agi",
@@ -21556,11 +21281,6 @@
       "slug": "agentic-rag",
       "title": "Agentic RAG",
       "qualityScore": 0.72
-    },
-    {
-      "slug": "agentic-systems-domain",
-      "title": "Agentic Systems Domain",
-      "qualityScore": 0.6
     },
     {
       "slug": "agentic-workflow",
@@ -21798,11 +21518,6 @@
       "qualityScore": 0.6
     },
     {
-      "slug": "cognitive-science-domain",
-      "title": "Cognitive Science Domain",
-      "qualityScore": 0.6
-    },
-    {
       "slug": "cohere",
       "title": "Cohere",
       "qualityScore": 0.6
@@ -21843,11 +21558,6 @@
       "qualityScore": 0.72
     },
     {
-      "slug": "computer-vision-domain",
-      "title": "Computer Vision Domain",
-      "qualityScore": 0.6
-    },
-    {
       "slug": "concept-art",
       "title": "Concept Art",
       "qualityScore": 0.72
@@ -21886,11 +21596,6 @@
       "slug": "control-net-conditioning",
       "title": "ControlNet Conditioning",
       "qualityScore": 0.72
-    },
-    {
-      "slug": "creative-ai-domain",
-      "title": "Creative AI Domain",
-      "qualityScore": 0.6
     },
     {
       "slug": "creative-ai",
@@ -22268,11 +21973,6 @@
       "qualityScore": 0.8
     },
     {
-      "slug": "generative-ai-domain",
-      "title": "Generative AI Domain",
-      "qualityScore": 0.6
-    },
-    {
       "slug": "generative-design",
       "title": "Generative Design",
       "qualityScore": 0.8
@@ -22453,11 +22153,6 @@
       "qualityScore": 0.74
     },
     {
-      "slug": "information-retrieval-domain",
-      "title": "Information Retrieval Domain",
-      "qualityScore": 0.6
-    },
-    {
       "slug": "information-retrieval",
       "title": "Information Retrieval",
       "qualityScore": 0.74
@@ -22555,11 +22250,6 @@
     {
       "slug": "knowledge-co-construction",
       "title": "Knowledge Co-Construction",
-      "qualityScore": 0.72
-    },
-    {
-      "slug": "knowledge-representation-domain",
-      "title": "Knowledge Representation Domain",
       "qualityScore": 0.72
     },
     {
@@ -22856,11 +22546,6 @@
       "slug": "nvidia-h-100",
       "title": "NVIDIA H100",
       "qualityScore": 0.75
-    },
-    {
-      "slug": "natural-language-processing-domain",
-      "title": "Natural Language Processing Domain",
-      "qualityScore": 0.6
     },
     {
       "slug": "natural-language-understanding",
@@ -23680,11 +23365,6 @@
       "qualityScore": 0.8
     },
     {
-      "slug": "accessibility-domain",
-      "title": "Accessibility Domain",
-      "qualityScore": 0.6
-    },
-    {
       "slug": "accessibility-standard",
       "title": "Accessibility Standard",
       "qualityScore": 0.68
@@ -24345,11 +24025,6 @@
       "qualityScore": 0.8
     },
     {
-      "slug": "semantic-web-domain",
-      "title": "Semantic Web Domain",
-      "qualityScore": 0.6
-    },
-    {
       "slug": "standards",
       "title": "Standards",
       "qualityScore": 0.72
@@ -24772,11 +24447,6 @@
       "qualityScore": 0.75
     },
     {
-      "slug": "cryptographic-domain",
-      "title": "Cryptographic Domain",
-      "qualityScore": 0.0
-    },
-    {
       "slug": "cryptographic-hash-function",
       "title": "Cryptographic Hash Function",
       "qualityScore": 0.75
@@ -24850,11 +24520,6 @@
       "slug": "cryptographic-verification",
       "title": "Cryptographic Verification",
       "qualityScore": 0.68
-    },
-    {
-      "slug": "cryptography-domain",
-      "title": "Cryptography Domain",
-      "qualityScore": 0.6
     },
     {
       "slug": "cryptography",
@@ -25122,11 +24787,6 @@
       "qualityScore": 0.6
     },
     {
-      "slug": "identity-domain",
-      "title": "Identity Domain",
-      "qualityScore": 0.72
-    },
-    {
       "slug": "identity-layer",
       "title": "Identity Layer",
       "qualityScore": 0.6
@@ -25170,11 +24830,6 @@
       "slug": "incident-response",
       "title": "Incident Response",
       "qualityScore": 0.74
-    },
-    {
-      "slug": "information-security-domain",
-      "title": "Information Security Domain",
-      "qualityScore": 0.6
     },
     {
       "slug": "information-security",
@@ -25350,11 +25005,6 @@
       "slug": "privacy-controls",
       "title": "Privacy Controls",
       "qualityScore": 0.8
-    },
-    {
-      "slug": "privacy-domain",
-      "title": "Privacy Domain",
-      "qualityScore": 0.6
     },
     {
       "slug": "privacy-engineering",
@@ -25580,11 +25230,6 @@
       "slug": "security-audit",
       "title": "Security Audit",
       "qualityScore": 0.72
-    },
-    {
-      "slug": "security-domain",
-      "title": "Security Domain",
-      "qualityScore": 0.6
     },
     {
       "slug": "security-framework",
@@ -26009,11 +25654,6 @@
       "qualityScore": 0.8
     },
     {
-      "slug": "capital-markets-domain",
-      "title": "Capital Markets Domain",
-      "qualityScore": 0.6
-    },
-    {
       "slug": "carbon-credits",
       "title": "Carbon Credits",
       "qualityScore": 0.74
@@ -26154,11 +25794,6 @@
       "qualityScore": 0.8
     },
     {
-      "slug": "economics-domain",
-      "title": "Economics Domain",
-      "qualityScore": 0.6
-    },
-    {
       "slug": "fatf",
       "title": "FATF",
       "qualityScore": 0.74
@@ -26194,11 +25829,6 @@
       "qualityScore": 0.74
     },
     {
-      "slug": "financial-infrastructure-domain",
-      "title": "Financial Infrastructure Domain",
-      "qualityScore": 0.6
-    },
-    {
       "slug": "financial-infrastructure",
       "title": "Financial Infrastructure",
       "qualityScore": 0.72
@@ -26209,19 +25839,9 @@
       "qualityScore": 0.72
     },
     {
-      "slug": "financial-markets-domain",
-      "title": "Financial Markets Domain",
-      "qualityScore": 0.6
-    },
-    {
       "slug": "financial-privacy",
       "title": "Financial Privacy",
       "qualityScore": 0.8
-    },
-    {
-      "slug": "financial-regulation-domain",
-      "title": "Financial Regulation Domain",
-      "qualityScore": 0.6
     },
     {
       "slug": "financial-regulation",
@@ -26439,11 +26059,6 @@
       "qualityScore": 0.74
     },
     {
-      "slug": "payment-systems-domain",
-      "title": "Payment Systems Domain",
-      "qualityScore": 0.6
-    },
-    {
       "slug": "platform-economy",
       "title": "Platform Economy",
       "qualityScore": 0.75
@@ -26476,11 +26091,6 @@
     {
       "slug": "revolut",
       "title": "Revolut",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "risk-management-domain",
-      "title": "Risk Management Domain",
       "qualityScore": 0.6
     },
     {
@@ -26694,11 +26304,6 @@
       "slug": "digital-workplace-platform",
       "title": "Digital Workplace Platform",
       "qualityScore": 0.52
-    },
-    {
-      "slug": "distributed-collaboration-domain",
-      "title": "Distributed Collaboration Domain",
-      "qualityScore": 0.6
     },
     {
       "slug": "distributed-collaboration",
@@ -27041,16 +26646,6 @@
       "qualityScore": 0.5
     },
     {
-      "slug": "telecollaboration-domain",
-      "title": "Telecollaboration Domain",
-      "qualityScore": 0.0
-    },
-    {
-      "slug": "telecollaboration-and-telepresence-domain",
-      "title": "Telecollaboration and Telepresence Domain",
-      "qualityScore": 0.5
-    },
-    {
       "slug": "telecollaboration",
       "title": "Telecollaboration",
       "qualityScore": 0.5
@@ -27353,11 +26948,6 @@
       "qualityScore": 0.74
     },
     {
-      "slug": "deep-learning-domain",
-      "title": "Deep Learning Domain",
-      "qualityScore": 0.6
-    },
-    {
       "slug": "deep-learning-framework",
       "title": "Deep Learning Framework",
       "qualityScore": 0.72
@@ -27473,11 +27063,6 @@
       "qualityScore": 0.74
     },
     {
-      "slug": "formal-methods-domain",
-      "title": "Formal Methods Domain",
-      "qualityScore": 0.6
-    },
-    {
       "slug": "functional-analysis",
       "title": "Functional Analysis",
       "qualityScore": 0.6
@@ -27496,11 +27081,6 @@
       "slug": "gaussian-process",
       "title": "Gaussian Process",
       "qualityScore": 0.74
-    },
-    {
-      "slug": "generative-modelling-domain",
-      "title": "Generative Modelling Domain",
-      "qualityScore": 0.6
     },
     {
       "slug": "gradient-checkpointing",
@@ -27635,11 +27215,6 @@
     {
       "slug": "loss-function",
       "title": "Loss Function",
-      "qualityScore": 0.72
-    },
-    {
-      "slug": "machine-learning-domain",
-      "title": "Machine Learning Domain",
       "qualityScore": 0.72
     },
     {
@@ -28168,11 +27743,6 @@
       "slug": "distributed-system",
       "title": "Distributed System",
       "qualityScore": 0.72
-    },
-    {
-      "slug": "distributed-systems-domain",
-      "title": "Distributed Systems Domain",
-      "qualityScore": 0.7
     },
     {
       "slug": "distributed-systems",
@@ -29155,11 +28725,6 @@
       "slug": "gaming",
       "title": "gaming",
       "qualityScore": 0.6
-    },
-    {
-      "slug": "park-2022-metaverse",
-      "title": "park2022metaverse",
-      "qualityScore": 0.6
     }
   ],
   "data": [
@@ -29307,11 +28872,6 @@
       "slug": "data-lineage",
       "title": "Data Lineage",
       "qualityScore": 0.72
-    },
-    {
-      "slug": "data-management-domain",
-      "title": "Data Management Domain",
-      "qualityScore": 0.6
     },
     {
       "slug": "data-management-system",
@@ -29954,11 +29514,6 @@
       "slug": "scope-3-emissions",
       "title": "Scope 3 Emissions",
       "qualityScore": 0.75
-    },
-    {
-      "slug": "supply-chain-domain",
-      "title": "Supply Chain Domain",
-      "qualityScore": 0.6
     },
     {
       "slug": "supply-chain-management",

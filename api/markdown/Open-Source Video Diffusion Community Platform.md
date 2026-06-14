@@ -69,7 +69,7 @@ elevatedFrom:: [[Banodoco]]
       {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:spatial-computing-paradigm", "label": "Spatial Computing"}
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
     ]
   },
   "quality": 0.35,

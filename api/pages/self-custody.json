@@ -188,10 +188,6 @@
     {
       "slug": "wallet",
       "label": "Wallet"
-    },
-    {
-      "slug": "web-3-domain",
-      "label": "Web3 Domain"
     }
   ]
 }

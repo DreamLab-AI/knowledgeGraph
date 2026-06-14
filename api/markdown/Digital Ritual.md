@@ -111,7 +111,7 @@ public:: true
       "vc:label": "Virtual Community Practice"
     },
     {
-      "@id": "urn:visionflow:owl:class:virtual-society-domain",
+      "@id": "urn:visionflow:owl:class:virtual-society",
       "vc:label": "VirtualSocietyDomain"
     },
     {
@@ -394,7 +394,7 @@ public:: true
     },
     {
       "raw": "[[VirtualSocietyDomain]]",
-      "resolved": "urn:visionflow:owl:class:virtual-society-domain",
+      "resolved": "urn:visionflow:owl:class:virtual-society",
       "kind": "ResolvedLink"
     },
     {

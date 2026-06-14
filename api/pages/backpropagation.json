@@ -144,7 +144,7 @@
       "label": "NIST (National Institute of Standards and Technology)"
     },
     {
-      "slug": "artificial-intelligence-domain",
+      "slug": "artificial-intelligence",
       "label": "ArtificialIntelligenceDomain"
     }
   ],
@@ -160,10 +160,6 @@
     {
       "slug": "control-net-and-similar-spatial-conditioning-systems",
       "label": "ControlNet and Similar Spatial Conditioning Systems"
-    },
-    {
-      "slug": "deep-learning-domain",
-      "label": "Deep Learning Domain"
     },
     {
       "slug": "deep-learning-framework",

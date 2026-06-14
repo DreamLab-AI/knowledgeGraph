@@ -127,7 +127,7 @@ public:: true
   ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:disruptive-tech-domain", "label": "Disruptive Tech Domain"}
+      {"@id": "urn:ngm:class:infra-computing-and-cloud", "label": "Disruptive Tech Domain"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:technology-disruption-dynamics", "label": "Disruption"},

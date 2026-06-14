@@ -149,7 +149,7 @@
     "bridgesTo": [],
     "uses": [
       {
-        "id": "urn:ngm:class:artificial-intelligence-domain",
+        "id": "urn:ngm:class:artificial-intelligence",
         "label": "AI"
       },
       {
@@ -411,7 +411,7 @@
       "label": "Product Carbon Footprint"
     },
     {
-      "slug": "regulatory-domain",
+      "slug": "infra-legal-and-regulatory",
       "label": "RegulatoryDomain"
     },
     {
@@ -471,7 +471,7 @@
       "label": "Supply Chain Transparency"
     },
     {
-      "slug": "sustainability-domain",
+      "slug": "sustainability",
       "label": "SustainabilityDomain"
     },
     {
@@ -519,7 +519,7 @@
       "label": "Environmental Accounting"
     },
     {
-      "slug": "infrastructure-domain",
+      "slug": "infrastructure",
       "label": "InfrastructureDomain"
     },
     {

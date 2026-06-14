@@ -220,11 +220,11 @@ alias:: CircularEconomy
       "vc:label": "Supply Chain"
     },
     {
-      "@id": "urn:visionflow:linked:supply-chain-domain",
+      "@id": "urn:visionflow:linked:supply-chain",
       "vc:label": "SupplyChainDomain"
     },
     {
-      "@id": "urn:visionflow:linked:sustainability-domain",
+      "@id": "urn:visionflow:linked:sustainability",
       "vc:label": "SustainabilityDomain"
     },
     {
@@ -276,7 +276,7 @@ alias:: CircularEconomy
       "vc:label": "Hyperledger Fabric"
     },
     {
-      "@id": "urn:visionflow:owl:class:infrastructure-domain",
+      "@id": "urn:visionflow:owl:class:infrastructure",
       "vc:label": "InfrastructureDomain"
     },
     {
@@ -912,12 +912,12 @@ alias:: CircularEconomy
     },
     {
       "raw": "[[SupplyChainDomain]]",
-      "resolved": "urn:visionflow:linked:supply-chain-domain",
+      "resolved": "urn:visionflow:linked:supply-chain",
       "kind": "StubLink"
     },
     {
       "raw": "[[SustainabilityDomain]]",
-      "resolved": "urn:visionflow:linked:sustainability-domain",
+      "resolved": "urn:visionflow:linked:sustainability",
       "kind": "StubLink"
     },
     {
@@ -982,7 +982,7 @@ alias:: CircularEconomy
     },
     {
       "raw": "[[InfrastructureDomain]]",
-      "resolved": "urn:visionflow:owl:class:infrastructure-domain",
+      "resolved": "urn:visionflow:owl:class:infrastructure",
       "kind": "ResolvedLink"
     },
     {

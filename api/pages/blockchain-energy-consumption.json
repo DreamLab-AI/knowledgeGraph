@@ -192,7 +192,7 @@
       "label": "EnergySource"
     },
     {
-      "slug": "environmental-domain",
+      "slug": "infra-legal-and-regulatory",
       "label": "EnvironmentalDomain"
     },
     {
@@ -224,7 +224,7 @@
       "label": "NetworkSize"
     },
     {
-      "slug": "blockchain-domain",
+      "slug": "blockchain",
       "label": "BlockchainDomain"
     },
     {

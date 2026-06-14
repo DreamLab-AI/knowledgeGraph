@@ -15,7 +15,7 @@ public:: true
       "vc:label": "ADR-013"
     },
     {
-      "@id": "urn:visionflow:linked:agentic-systems-domain",
+      "@id": "urn:visionflow:linked:ai-application",
       "vc:label": "AgenticSystemsDomain"
     },
     {
@@ -39,7 +39,7 @@ public:: true
       "vc:label": "Content-Addressed Storage"
     },
     {
-      "@id": "urn:visionflow:linked:data-governance-domain",
+      "@id": "urn:visionflow:linked:data-governance",
       "vc:label": "DataGovernanceDomain"
     },
     {
@@ -262,7 +262,7 @@ public:: true
     },
     {
       "raw": "[[AgenticSystemsDomain]]",
-      "resolved": "urn:visionflow:linked:agentic-systems-domain",
+      "resolved": "urn:visionflow:linked:ai-application",
       "kind": "StubLink"
     },
     {
@@ -292,7 +292,7 @@ public:: true
     },
     {
       "raw": "[[DataGovernanceDomain]]",
-      "resolved": "urn:visionflow:linked:data-governance-domain",
+      "resolved": "urn:visionflow:linked:data-governance",
       "kind": "StubLink"
     },
     {

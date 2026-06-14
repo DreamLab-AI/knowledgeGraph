@@ -147,7 +147,7 @@ public:: true
       "vc:label": "Product Carbon Footprint"
     },
     {
-      "@id": "urn:visionflow:linked:regulatory-domain",
+      "@id": "urn:visionflow:linked:infra-legal-and-regulatory",
       "vc:label": "RegulatoryDomain"
     },
     {
@@ -207,7 +207,7 @@ public:: true
       "vc:label": "Supply Chain Transparency"
     },
     {
-      "@id": "urn:visionflow:linked:sustainability-domain",
+      "@id": "urn:visionflow:linked:sustainability",
       "vc:label": "SustainabilityDomain"
     },
     {
@@ -255,7 +255,7 @@ public:: true
       "vc:label": "Environmental Accounting"
     },
     {
-      "@id": "urn:visionflow:owl:class:infrastructure-domain",
+      "@id": "urn:visionflow:owl:class:infrastructure",
       "vc:label": "InfrastructureDomain"
     },
     {
@@ -438,7 +438,7 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:artificial-intelligence-domain",
+        "@id": "urn:ngm:class:artificial-intelligence",
         "label": "AI"
       },
       {
@@ -751,7 +751,7 @@ public:: true
     },
     {
       "raw": "[[RegulatoryDomain]]",
-      "resolved": "urn:visionflow:linked:regulatory-domain",
+      "resolved": "urn:visionflow:linked:infra-legal-and-regulatory",
       "kind": "StubLink"
     },
     {
@@ -826,7 +826,7 @@ public:: true
     },
     {
       "raw": "[[SustainabilityDomain]]",
-      "resolved": "urn:visionflow:linked:sustainability-domain",
+      "resolved": "urn:visionflow:linked:sustainability",
       "kind": "StubLink"
     },
     {
@@ -886,7 +886,7 @@ public:: true
     },
     {
       "raw": "[[InfrastructureDomain]]",
-      "resolved": "urn:visionflow:owl:class:infrastructure-domain",
+      "resolved": "urn:visionflow:owl:class:infrastructure",
       "kind": "ResolvedLink"
     },
     {

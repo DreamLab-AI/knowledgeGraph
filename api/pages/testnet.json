@@ -296,7 +296,7 @@
       "label": "Cryptographic Soundness"
     },
     {
-      "slug": "cryptography-domain",
+      "slug": "cryptography",
       "label": "CryptographyDomain"
     },
     {
@@ -320,7 +320,7 @@
       "label": "Developer Onboarding"
     },
     {
-      "slug": "distributed-systems-domain",
+      "slug": "distributed-systems",
       "label": "DistributedSystemsDomain"
     },
     {

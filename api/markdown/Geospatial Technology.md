@@ -48,7 +48,7 @@ public:: true
   "qualityScore": 0.74,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:spatial-computing-paradigm",
+      "@id": "urn:ngm:class:spatial-computing",
       "label": "Spatial Computing"
     }
   ],

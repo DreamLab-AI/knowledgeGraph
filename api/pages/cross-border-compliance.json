@@ -387,7 +387,7 @@
       "label": "Compliance Architecture"
     },
     {
-      "slug": "compliance-domain",
+      "slug": "compliance",
       "label": "ComplianceDomain"
     },
     {
@@ -523,7 +523,7 @@
       "label": "Global Market Access"
     },
     {
-      "slug": "governance-domain",
+      "slug": "governance",
       "label": "GovernanceDomain"
     },
     {
@@ -651,7 +651,7 @@
       "label": "RegTech"
     },
     {
-      "slug": "regulation-domain",
+      "slug": "regulation",
       "label": "RegulationDomain"
     },
     {

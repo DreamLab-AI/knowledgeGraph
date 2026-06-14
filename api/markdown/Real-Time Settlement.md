@@ -26,7 +26,7 @@ public:: true
   "subClassOf": [{"@id": "urn:ngm:class:financial-services", "label": "Financial Services"}],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:financial-infrastructure-domain", "label": "Financial Infrastructure Domain"},
+      {"@id": "urn:ngm:class:financial-infrastructure", "label": "Financial Infrastructure Domain"},
       {"@id": "urn:ngm:class:cbdcs", "label": "CBDCs"}
     ]
   },

@@ -424,7 +424,7 @@
       "label": "Cryptographic Proof System"
     },
     {
-      "slug": "cryptography-domain",
+      "slug": "cryptography",
       "label": "CryptographyDomain"
     },
     {
@@ -440,7 +440,7 @@
       "label": "Destination Chain Execution"
     },
     {
-      "slug": "distributed-systems-domain",
+      "slug": "distributed-systems",
       "label": "DistributedSystemsDomain"
     },
     {
@@ -744,7 +744,7 @@
       "label": "Atomic Swap"
     },
     {
-      "slug": "blockchain-domain",
+      "slug": "blockchain",
       "label": "BlockchainDomain"
     },
     {

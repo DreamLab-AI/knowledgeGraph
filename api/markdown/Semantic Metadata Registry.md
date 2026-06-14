@@ -67,7 +67,7 @@ public:: true
       "vc:label": "Controlled Vocabularies"
     },
     {
-      "@id": "urn:visionflow:owl:class:creative-media-domain",
+      "@id": "urn:visionflow:owl:class:ai-application",
       "vc:label": "CreativeMediaDomain"
     },
     {
@@ -79,7 +79,7 @@ public:: true
       "vc:label": "Data Integration"
     },
     {
-      "@id": "urn:visionflow:owl:class:infrastructure-domain",
+      "@id": "urn:visionflow:owl:class:infrastructure",
       "vc:label": "InfrastructureDomain"
     },
     {
@@ -291,7 +291,7 @@ public:: true
     },
     {
       "raw": "[[CreativeMediaDomain]]",
-      "resolved": "urn:visionflow:owl:class:creative-media-domain",
+      "resolved": "urn:visionflow:owl:class:ai-application",
       "kind": "ResolvedLink"
     },
     {
@@ -306,7 +306,7 @@ public:: true
     },
     {
       "raw": "[[InfrastructureDomain]]",
-      "resolved": "urn:visionflow:owl:class:infrastructure-domain",
+      "resolved": "urn:visionflow:owl:class:infrastructure",
       "kind": "ResolvedLink"
     },
     {

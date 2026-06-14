@@ -15,11 +15,11 @@ public:: true
       "vc:label": "MiCA"
     },
     {
-      "@id": "urn:visionflow:linked:regulatory-domain",
+      "@id": "urn:visionflow:linked:infra-legal-and-regulatory",
       "vc:label": "Regulatory Domain"
     },
     {
-      "@id": "urn:visionflow:linked:governance-domain",
+      "@id": "urn:visionflow:linked:governance",
       "vc:label": "Governance Domain"
     }
   ],
@@ -52,7 +52,7 @@ public:: true
   "qualityScore": 0.7,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:governance-domain",
+      "@id": "urn:ngm:class:governance",
       "label": "Governance Domain"
     }
   ],
@@ -89,7 +89,7 @@ public:: true
       {"@id": "urn:ngm:class:comparative-statistics", "label": "Comparative Statistics"}
     ],
     "supports": [
-      {"@id": "urn:ngm:class:regulatory-domain", "label": "Regulatory Domain"},
+      {"@id": "urn:ngm:class:infra-legal-and-regulatory", "label": "Regulatory Domain"},
       {"@id": "urn:ngm:class:open-government", "label": "Open Government"},
       {"@id": "urn:ngm:class:digital-economy", "label": "Digital Economy"}
     ],
@@ -136,12 +136,12 @@ public:: true
     },
     {
       "raw": "[[Regulatory Domain]]",
-      "resolved": "urn:visionflow:linked:regulatory-domain",
+      "resolved": "urn:visionflow:linked:infra-legal-and-regulatory",
       "kind": "ResolvedLink"
     },
     {
       "raw": "[[Governance Domain]]",
-      "resolved": "urn:visionflow:linked:governance-domain",
+      "resolved": "urn:visionflow:linked:governance",
       "kind": "ResolvedLink"
     }
   ],

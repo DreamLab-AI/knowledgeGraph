@@ -76,7 +76,7 @@ public:: true
       {"@id": "urn:ngm:class:xr-software-platform", "label": "XR Software Platform"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:spatial-computing-paradigm", "label": "Spatial Computing Paradigm"},
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing Paradigm"},
       {"@id": "urn:ngm:class:inside-out-tracking", "label": "Inside-Out Tracking"},
       {"@id": "urn:ngm:class:simultaneous-localisation-and-mapping", "label": "Simultaneous Localisation and Mapping"},
       {"@id": "urn:ngm:class:neural-processing-unit", "label": "Neural Processing Unit"}

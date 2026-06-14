@@ -279,7 +279,7 @@
       "label": "Autonomous Systems"
     },
     {
-      "slug": "autonomous-systems-domain",
+      "slug": "robo-navigation-and-planning",
       "label": "AutonomousSystemsDomain"
     },
     {
@@ -631,7 +631,7 @@
       "label": "Robotics"
     },
     {
-      "slug": "robotics-domain",
+      "slug": "robotics",
       "label": "RoboticsDomain"
     },
     {

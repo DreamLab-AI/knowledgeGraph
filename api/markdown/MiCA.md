@@ -19,7 +19,7 @@ public:: true
       "vc:label": "OECD"
     },
     {
-      "@id": "urn:visionflow:linked:regulatory-domain",
+      "@id": "urn:visionflow:linked:infra-legal-and-regulatory",
       "vc:label": "Regulatory Domain"
     },
     {
@@ -56,7 +56,7 @@ public:: true
   "qualityScore": 0.7,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:regulatory-domain",
+      "@id": "urn:ngm:class:infra-legal-and-regulatory",
       "label": "Regulatory Domain"
     }
   ],
@@ -146,7 +146,7 @@ public:: true
     },
     {
       "raw": "[[Regulatory Domain]]",
-      "resolved": "urn:visionflow:linked:regulatory-domain",
+      "resolved": "urn:visionflow:linked:infra-legal-and-regulatory",
       "kind": "ResolvedLink"
     },
     {

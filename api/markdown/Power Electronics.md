@@ -27,7 +27,7 @@ public:: true
       "vc:label": "Servo Motor"
     },
     {
-      "@id": "urn:visionflow:linked:embedded-systems-domain",
+      "@id": "urn:visionflow:linked:embedded-systems",
       "vc:label": "Embedded Systems Domain"
     }
   ],
@@ -59,7 +59,7 @@ public:: true
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": {
-    "@id": "urn:ngm:class:embedded-systems-domain",
+    "@id": "urn:ngm:class:embedded-systems",
     "label": "Embedded Systems Domain"
   },
   "relations": {
@@ -83,7 +83,7 @@ public:: true
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:embedded-systems-domain",
+        "@id": "urn:ngm:class:embedded-systems",
         "label": "Embedded Systems Domain"
       }
     ],
@@ -248,7 +248,7 @@ public:: true
     },
     {
       "raw": "[[Embedded Systems Domain]]",
-      "resolved": "urn:visionflow:linked:embedded-systems-domain",
+      "resolved": "urn:visionflow:linked:embedded-systems",
       "kind": "ResolvedLink"
     }
   ],

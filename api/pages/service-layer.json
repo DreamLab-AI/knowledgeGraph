@@ -12,7 +12,7 @@
       "label": "Platform and Environment"
     },
     {
-      "id": "urn:ngm:class:spatial-computing-paradigm-layer",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "Spatial Computing Layer"
     }
   ],
@@ -151,7 +151,7 @@
       "label": "Data Layer"
     },
     {
-      "slug": "infrastructure-domain",
+      "slug": "infrastructure",
       "label": "InfrastructureDomain"
     },
     {

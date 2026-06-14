@@ -154,10 +154,6 @@
       "label": "CBDCs"
     },
     {
-      "slug": "cryptographic-domain",
-      "label": "Cryptographic Domain"
-    },
-    {
       "slug": "dao-tooling",
       "label": "DAO Tooling"
     },
@@ -196,10 +192,6 @@
     {
       "slug": "r3-corda",
       "label": "R3 Corda"
-    },
-    {
-      "slug": "token-economics-domain",
-      "label": "Token Economics Domain"
     }
   ]
 }

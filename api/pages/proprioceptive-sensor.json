@@ -255,7 +255,7 @@
       "label": "ControlLayer"
     },
     {
-      "slug": "control-systems-domain",
+      "slug": "robo-actuation-and-control",
       "label": "ControlSystemsDomain"
     },
     {
@@ -479,7 +479,7 @@
       "label": "Robot Operating System"
     },
     {
-      "slug": "robotics-domain",
+      "slug": "robotics",
       "label": "RoboticsDomain"
     },
     {

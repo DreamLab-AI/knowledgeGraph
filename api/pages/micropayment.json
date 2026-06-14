@@ -85,7 +85,7 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:virtual-economy-domain",
+        "id": "urn:ngm:class:virtual-economy",
         "label": "Virtual Economy Domain"
       },
       {
@@ -205,7 +205,7 @@
       "label": "MiddlewareLayer"
     },
     {
-      "slug": "virtual-economy-domain",
+      "slug": "virtual-economy",
       "label": "VirtualEconomyDomain"
     }
   ],

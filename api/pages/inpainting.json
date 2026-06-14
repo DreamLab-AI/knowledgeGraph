@@ -276,7 +276,7 @@
       "label": "Clone Stamp Tool"
     },
     {
-      "slug": "computer-vision-domain",
+      "slug": "computer-vision",
       "label": "ComputerVisionDomain"
     },
     {
@@ -356,7 +356,7 @@
       "label": "Generative Fill"
     },
     {
-      "slug": "generative-modelling-domain",
+      "slug": "ai-model-architecture",
       "label": "GenerativeModellingDomain"
     },
     {
@@ -572,7 +572,7 @@
       "label": "Zhuang et al 2024 PowerPaint ECCV"
     },
     {
-      "slug": "ai-grounded-domain",
+      "slug": "ai-technique",
       "label": "AI-GroundedDomain"
     },
     {

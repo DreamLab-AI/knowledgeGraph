@@ -45,7 +45,7 @@
         "label": "Swarm Robotics"
       },
       {
-        "id": "urn:ngm:class:robotics-domain",
+        "id": "urn:ngm:class:robotics",
         "label": "Robotics Domain"
       }
     ],
@@ -78,7 +78,7 @@
       "label": "Robotics"
     },
     {
-      "slug": "robotics-domain",
+      "slug": "robotics",
       "label": "RoboticsDomain"
     }
   ],

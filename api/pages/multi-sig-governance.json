@@ -423,7 +423,7 @@
       "label": "Cross-Chain Bridge Security"
     },
     {
-      "slug": "cryptography-domain",
+      "slug": "cryptography",
       "label": "CryptographyDomain"
     },
     {
@@ -435,7 +435,7 @@
       "label": "DeFi Protocol Security"
     },
     {
-      "slug": "digital-asset-domain",
+      "slug": "digital-asset",
       "label": "DigitalAssetDomain"
     },
     {
@@ -491,7 +491,7 @@
       "label": "Gnosis Safe"
     },
     {
-      "slug": "governance-domain",
+      "slug": "governance",
       "label": "GovernanceDomain"
     },
     {
@@ -671,7 +671,7 @@
       "label": "Bitcoin Technical Overview"
     },
     {
-      "slug": "blockchain-domain",
+      "slug": "blockchain",
       "label": "BlockchainDomain"
     },
     {

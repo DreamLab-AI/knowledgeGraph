@@ -63,7 +63,7 @@ public:: true
       "vc:label": "Digital Onboarding"
     },
     {
-      "@id": "urn:visionflow:linked:distributed-collaboration-domain",
+      "@id": "urn:visionflow:linked:distributed-collaboration",
       "vc:label": "DistributedCollaborationDomain"
     },
     {
@@ -99,7 +99,7 @@ public:: true
       "vc:label": "Enterprise Search"
     },
     {
-      "@id": "urn:visionflow:linked:enterprise-software-domain",
+      "@id": "urn:visionflow:linked:infra-software-engineering",
       "vc:label": "EnterpriseSoftwareDomain"
     },
     {
@@ -808,7 +808,7 @@ public:: true
     },
     {
       "raw": "[[DistributedCollaborationDomain]]",
-      "resolved": "urn:visionflow:linked:distributed-collaboration-domain",
+      "resolved": "urn:visionflow:linked:distributed-collaboration",
       "kind": "StubLink"
     },
     {
@@ -853,7 +853,7 @@ public:: true
     },
     {
       "raw": "[[EnterpriseSoftwareDomain]]",
-      "resolved": "urn:visionflow:linked:enterprise-software-domain",
+      "resolved": "urn:visionflow:linked:infra-software-engineering",
       "kind": "StubLink"
     },
     {

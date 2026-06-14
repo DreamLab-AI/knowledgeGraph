@@ -11,7 +11,7 @@ public:: true
   "vc:public": true,
   "vc:outboundWikilinks": [
     {
-      "@id": "urn:visionflow:owl:class:aiethics-domain",
+      "@id": "urn:visionflow:owl:class:ai-governance-and-ethics",
       "vc:label": "AIEthicsDomain"
     },
     {
@@ -98,7 +98,7 @@ public:: true
   "vc:resolutions": [
     {
       "raw": "[[AIEthicsDomain]]",
-      "resolved": "urn:visionflow:owl:class:aiethics-domain",
+      "resolved": "urn:visionflow:owl:class:ai-governance-and-ethics",
       "kind": "ResolvedLink"
     },
     {

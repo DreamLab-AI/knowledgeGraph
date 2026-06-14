@@ -171,7 +171,7 @@ public:: true
       "vc:label": "GDPR Accountability"
     },
     {
-      "@id": "urn:visionflow:linked:governance-domain",
+      "@id": "urn:visionflow:linked:governance",
       "vc:label": "GovernanceDomain"
     },
     {
@@ -199,7 +199,7 @@ public:: true
       "vc:label": "IIA"
     },
     {
-      "@id": "urn:visionflow:linked:information-security-domain",
+      "@id": "urn:visionflow:linked:information-security",
       "vc:label": "InformationSecurityDomain"
     },
     {
@@ -319,7 +319,7 @@ public:: true
       "vc:label": "Regulatory Assurance"
     },
     {
-      "@id": "urn:visionflow:linked:regulatory-domain",
+      "@id": "urn:visionflow:linked:infra-legal-and-regulatory",
       "vc:label": "RegulatoryDomain"
     },
     {
@@ -1015,7 +1015,7 @@ public:: true
     },
     {
       "raw": "[[GovernanceDomain]]",
-      "resolved": "urn:visionflow:linked:governance-domain",
+      "resolved": "urn:visionflow:linked:governance",
       "kind": "StubLink"
     },
     {
@@ -1050,7 +1050,7 @@ public:: true
     },
     {
       "raw": "[[InformationSecurityDomain]]",
-      "resolved": "urn:visionflow:linked:information-security-domain",
+      "resolved": "urn:visionflow:linked:information-security",
       "kind": "StubLink"
     },
     {
@@ -1200,7 +1200,7 @@ public:: true
     },
     {
       "raw": "[[RegulatoryDomain]]",
-      "resolved": "urn:visionflow:linked:regulatory-domain",
+      "resolved": "urn:visionflow:linked:infra-legal-and-regulatory",
       "kind": "StubLink"
     },
     {

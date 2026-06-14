@@ -87,7 +87,7 @@ public:: true
       "vc:label": "Chaos Theory"
     },
     {
-      "@id": "urn:visionflow:linked:cognitive-science-domain",
+      "@id": "urn:visionflow:linked:cognitive-science",
       "vc:label": "CognitiveScienceDomain"
     },
     {
@@ -483,7 +483,7 @@ public:: true
       "vc:label": "Wolfram 2002 A New Kind of Science"
     },
     {
-      "@id": "urn:visionflow:owl:class:computation-and-intelligence-domain",
+      "@id": "urn:visionflow:owl:class:ai-research-area",
       "vc:label": "ComputationAndIntelligenceDomain"
     },
     {
@@ -886,7 +886,7 @@ public:: true
     },
     {
       "raw": "[[CognitiveScienceDomain]]",
-      "resolved": "urn:visionflow:linked:cognitive-science-domain",
+      "resolved": "urn:visionflow:linked:cognitive-science",
       "kind": "StubLink"
     },
     {
@@ -1381,7 +1381,7 @@ public:: true
     },
     {
       "raw": "[[ComputationAndIntelligenceDomain]]",
-      "resolved": "urn:visionflow:owl:class:computation-and-intelligence-domain",
+      "resolved": "urn:visionflow:owl:class:ai-research-area",
       "kind": "ResolvedLink"
     },
     {

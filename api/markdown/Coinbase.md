@@ -19,7 +19,7 @@ public:: true
       "vc:label": "Optimism"
     },
     {
-      "@id": "urn:visionflow:linked:digital-asset-domain",
+      "@id": "urn:visionflow:linked:digital-asset",
       "vc:label": "Digital Asset Domain"
     }
   ],
@@ -52,7 +52,7 @@ public:: true
   "qualityScore": 0.7,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:digital-asset-domain",
+      "@id": "urn:ngm:class:digital-asset",
       "label": "Digital Asset Domain"
     }
   ],
@@ -135,7 +135,7 @@ public:: true
     },
     {
       "raw": "[[Digital Asset Domain]]",
-      "resolved": "urn:visionflow:linked:digital-asset-domain",
+      "resolved": "urn:visionflow:linked:digital-asset",
       "kind": "ResolvedLink"
     }
   ],

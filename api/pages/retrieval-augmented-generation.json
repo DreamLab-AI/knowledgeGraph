@@ -215,14 +215,6 @@
       "label": "GPTs and Custom Assistants"
     },
     {
-      "slug": "generative-ai-domain",
-      "label": "Generative AI Domain"
-    },
-    {
-      "slug": "information-retrieval-domain",
-      "label": "Information Retrieval Domain"
-    },
-    {
       "slug": "knowledge-graphing",
       "label": "Knowledge Graphing"
     },

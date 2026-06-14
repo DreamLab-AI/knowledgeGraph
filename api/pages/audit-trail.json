@@ -203,7 +203,7 @@
       "label": "Compliance Verification"
     },
     {
-      "slug": "computation-and-intelligence-domain",
+      "slug": "ai-research-area",
       "label": "ComputationAndIntelligenceDomain"
     },
     {
@@ -227,15 +227,11 @@
       "label": "Provenance Standard"
     },
     {
-      "slug": "trust-and-governance-domain",
+      "slug": "ai-governance-and-ethics",
       "label": "TrustAndGovernanceDomain"
     }
   ],
   "backlinks": [
-    {
-      "slug": "ai-governance-domain",
-      "label": "AI Governance Domain"
-    },
     {
       "slug": "aiethics",
       "label": "AIEthics"
@@ -289,10 +285,6 @@
       "label": "Provenance"
     },
     {
-      "slug": "regulatory-compliance-domain",
-      "label": "Regulatory Compliance Domain"
-    },
-    {
       "slug": "regulatory-compliance",
       "label": "Regulatory Compliance"
     },
@@ -315,10 +307,6 @@
     {
       "slug": "trust-framework",
       "label": "Trust Framework"
-    },
-    {
-      "slug": "trust-and-governance-domain",
-      "label": "Trust and Governance Domain"
     },
     {
       "slug": "user-agreement-compliance",

@@ -104,7 +104,7 @@
       "label": "ADR-013"
     },
     {
-      "slug": "agentic-systems-domain",
+      "slug": "ai-application",
       "label": "AgenticSystemsDomain"
     },
     {
@@ -156,7 +156,7 @@
       "label": "Distributed Hash Table"
     },
     {
-      "slug": "distributed-systems-domain",
+      "slug": "distributed-systems",
       "label": "DistributedSystemsDomain"
     },
     {

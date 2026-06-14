@@ -27,7 +27,7 @@ public:: true
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:confusion-matrix", "label": "Confusion Matrix"},
-      {"@id": "urn:ngm:class:ai-governance-domain", "label": "AI Governance Domain"}
+      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance Domain"}
     ]
   },
   "quality": 0.72

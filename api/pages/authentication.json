@@ -164,10 +164,6 @@
       "label": "Collaborative Whiteboard"
     },
     {
-      "slug": "cryptography-domain",
-      "label": "Cryptography Domain"
-    },
-    {
       "slug": "cryptography-security-and-privacy",
       "label": "Cryptography Security and Privacy"
     },
@@ -208,10 +204,6 @@
       "label": "Human Robot Interaction"
     },
     {
-      "slug": "identity-domain",
-      "label": "Identity Domain"
-    },
-    {
       "slug": "identity-system",
       "label": "Identity System"
     },
@@ -242,10 +234,6 @@
     {
       "slug": "saml",
       "label": "SAML"
-    },
-    {
-      "slug": "security-domain",
-      "label": "Security Domain"
     },
     {
       "slug": "transport-layer-security",

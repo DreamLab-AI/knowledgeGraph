@@ -319,7 +319,7 @@
       "label": "Game Theory"
     },
     {
-      "slug": "generative-modelling-domain",
+      "slug": "ai-model-architecture",
       "label": "GenerativeModellingDomain"
     },
     {
@@ -551,7 +551,7 @@
       "label": "Zhu et al. 2017 CycleGAN"
     },
     {
-      "slug": "ai-grounded-domain",
+      "slug": "ai-technique",
       "label": "AI-GroundedDomain"
     },
     {
@@ -567,7 +567,7 @@
       "label": "Batch Normalisation"
     },
     {
-      "slug": "computation-and-intelligence-domain",
+      "slug": "ai-research-area",
       "label": "ComputationAndIntelligenceDomain"
     },
     {

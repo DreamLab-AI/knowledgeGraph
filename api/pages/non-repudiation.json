@@ -303,7 +303,7 @@
       "label": "CryptographicLayer"
     },
     {
-      "slug": "cryptography-domain",
+      "slug": "cryptography",
       "label": "CryptographyDomain"
     },
     {
@@ -379,7 +379,7 @@
       "label": "LegalFrameworkLayer"
     },
     {
-      "slug": "legal-tech-domain",
+      "slug": "infra-legal-and-regulatory",
       "label": "LegalTechDomain"
     },
     {
@@ -435,7 +435,7 @@
       "label": "Secure Time Source"
     },
     {
-      "slug": "security-domain",
+      "slug": "security",
       "label": "SecurityDomain"
     },
     {
@@ -487,7 +487,7 @@
       "label": "Bitcoin"
     },
     {
-      "slug": "blockchain-domain",
+      "slug": "blockchain",
       "label": "BlockchainDomain"
     },
     {

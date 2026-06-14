@@ -183,7 +183,7 @@
       "label": "Computer Vision"
     },
     {
-      "slug": "creative-media-domain",
+      "slug": "ai-application",
       "label": "CreativeMediaDomain"
     },
     {
@@ -211,7 +211,7 @@
       "label": "Neural Network"
     },
     {
-      "slug": "trust-and-governance-domain",
+      "slug": "ai-governance-and-ethics",
       "label": "TrustAndGovernanceDomain"
     }
   ],

@@ -151,14 +151,6 @@
   "wikilinks": [],
   "backlinks": [
     {
-      "slug": "aidomain",
-      "label": "AIDomain"
-    },
-    {
-      "slug": "artificial-intelligence-domain",
-      "label": "Artificial Intelligence Domain"
-    },
-    {
       "slug": "blockchain-governance",
       "label": "Blockchain Governance"
     },
@@ -181,10 +173,6 @@
     {
       "slug": "human-rights",
       "label": "Human Rights"
-    },
-    {
-      "slug": "metaverse-domain",
-      "label": "Metaverse Domain"
     },
     {
       "slug": "metaverse-technology",
@@ -213,10 +201,6 @@
     {
       "slug": "supply-chain-traceability",
       "label": "Supply Chain Traceability"
-    },
-    {
-      "slug": "technology-domain",
-      "label": "Technology Domain"
     },
     {
       "slug": "virtual-asset",

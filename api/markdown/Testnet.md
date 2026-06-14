@@ -99,7 +99,7 @@ public:: true
       "vc:label": "Cryptographic Soundness"
     },
     {
-      "@id": "urn:visionflow:linked:cryptography-domain",
+      "@id": "urn:visionflow:linked:cryptography",
       "vc:label": "CryptographyDomain"
     },
     {
@@ -123,7 +123,7 @@ public:: true
       "vc:label": "Developer Onboarding"
     },
     {
-      "@id": "urn:visionflow:linked:distributed-systems-domain",
+      "@id": "urn:visionflow:linked:distributed-systems",
       "vc:label": "DistributedSystemsDomain"
     },
     {
@@ -773,7 +773,7 @@ public:: true
     },
     {
       "raw": "[[CryptographyDomain]]",
-      "resolved": "urn:visionflow:linked:cryptography-domain",
+      "resolved": "urn:visionflow:linked:cryptography",
       "kind": "StubLink"
     },
     {
@@ -803,7 +803,7 @@ public:: true
     },
     {
       "raw": "[[DistributedSystemsDomain]]",
-      "resolved": "urn:visionflow:linked:distributed-systems-domain",
+      "resolved": "urn:visionflow:linked:distributed-systems",
       "kind": "StubLink"
     },
     {

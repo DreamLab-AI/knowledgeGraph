@@ -83,10 +83,6 @@
   ],
   "backlinks": [
     {
-      "slug": "ngm-domain",
-      "label": "NGM Domain"
-    },
-    {
       "slug": "ontology-property-definitions",
       "label": "Ontology Property Definitions"
     },

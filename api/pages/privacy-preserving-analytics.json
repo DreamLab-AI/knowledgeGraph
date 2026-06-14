@@ -292,7 +292,7 @@
       "label": "Cryptographic Primitives"
     },
     {
-      "slug": "cryptography-domain",
+      "slug": "cryptography",
       "label": "CryptographyDomain"
     },
     {
@@ -492,7 +492,7 @@
       "label": "Re-identification Attack"
     },
     {
-      "slug": "regulatory-compliance-domain",
+      "slug": "regulatory-compliance",
       "label": "RegulatoryComplianceDomain"
     },
     {
@@ -568,7 +568,7 @@
       "label": "AI Governance"
     },
     {
-      "slug": "ai-grounded-domain",
+      "slug": "ai-technique",
       "label": "AI-GroundedDomain"
     },
     {

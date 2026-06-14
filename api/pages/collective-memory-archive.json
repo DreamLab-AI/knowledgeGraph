@@ -139,7 +139,7 @@
       "label": "Authentication Service"
     },
     {
-      "slug": "creative-media-domain",
+      "slug": "ai-application",
       "label": "CreativeMediaDomain"
     },
     {
@@ -167,7 +167,7 @@
       "label": "Storage Infrastructure"
     },
     {
-      "slug": "virtual-society-domain",
+      "slug": "virtual-society",
       "label": "VirtualSocietyDomain"
     }
   ],

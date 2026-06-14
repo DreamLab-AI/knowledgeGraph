@@ -332,10 +332,6 @@
       "label": "Testnet"
     },
     {
-      "slug": "token-economics-domain",
-      "label": "Token Economics Domain"
-    },
-    {
       "slug": "validator",
       "label": "Validator"
     },

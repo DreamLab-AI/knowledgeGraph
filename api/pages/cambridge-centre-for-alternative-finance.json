@@ -8,7 +8,7 @@
   "definition": "The Cambridge Centre for Alternative Finance (CCAF) is an interdisciplinary research centre at the University of Cambridge Judge Business School that conducts empirical studies on financial instruments and channels operating outside conventional banking systems. It is globally recognised for producing landmark indices and benchmark datasets on cryptoasset markets, distributed ledger technology adoption, digital payments, and the energy consumption of proof-of-work networks. CCAF research informs regulatory policy, industry strategy, and academic discourse through rigorous survey-based methodologies and open data publications. Its work bridges fintech innovation, environmental sustainability analysis, and international financial governance.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:financial-infrastructure-domain",
+      "id": "urn:ngm:class:financial-infrastructure",
       "label": "Financial Infrastructure Domain"
     }
   ],
@@ -153,7 +153,7 @@
       "label": "Bitcoin Environmental Issues"
     },
     {
-      "slug": "financial-infrastructure-domain",
+      "slug": "financial-infrastructure",
       "label": "Financial Infrastructure Domain"
     }
   ],

@@ -65,7 +65,7 @@ public:: true
       {"@id": "urn:ngm:class:embodied-ai", "label": "Embodied AI"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:spatial-computing-paradigm", "label": "Spatial Computing"},
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
       {"@id": "urn:ngm:class:spatial-mapping-technology", "label": "Spatial Mapping Technology"},
       {"@id": "urn:ngm:class:neural-radiance-field", "label": "Neural Radiance Field"}
     ]

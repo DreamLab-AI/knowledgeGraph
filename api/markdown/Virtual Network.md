@@ -68,7 +68,7 @@ public:: true
       {"@id": "urn:ngm:class:encryption", "label": "Encryption"}
     ],
     "supports": [
-      {"@id": "urn:ngm:class:spatial-computing-paradigm", "label": "Spatial Computing"}
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
     ]
   },
   "provenance": {

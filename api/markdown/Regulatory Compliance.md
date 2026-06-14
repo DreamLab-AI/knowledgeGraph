@@ -60,7 +60,7 @@ alias:: BC-0479-regulatory-compliance, RegulatoryCompliance
       "vc:label": "Transparency Obligation"
     },
     {
-      "@id": "urn:visionflow:owl:class:aiethics-domain",
+      "@id": "urn:visionflow:owl:class:ai-governance-and-ethics",
       "vc:label": "AIEthicsDomain"
     },
     {
@@ -216,7 +216,7 @@ alias:: BC-0479-regulatory-compliance, RegulatoryCompliance
     },
     {
       "raw": "[[AIEthicsDomain]]",
-      "resolved": "urn:visionflow:owl:class:aiethics-domain",
+      "resolved": "urn:visionflow:owl:class:ai-governance-and-ethics",
       "kind": "ResolvedLink"
     },
     {

@@ -284,7 +284,7 @@
       "label": "ComputationalPhotographyDomain"
     },
     {
-      "slug": "computer-vision-domain",
+      "slug": "computer-vision",
       "label": "ComputerVisionDomain"
     },
     {
@@ -512,7 +512,7 @@
       "label": "3D Reconstruction"
     },
     {
-      "slug": "ai-grounded-domain",
+      "slug": "ai-technique",
       "label": "AI-GroundedDomain"
     },
     {

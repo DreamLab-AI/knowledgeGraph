@@ -435,7 +435,7 @@
       "label": "Getty Images v. Stability AI"
     },
     {
-      "slug": "governance-domain",
+      "slug": "governance",
       "label": "GovernanceDomain"
     },
     {
@@ -587,7 +587,7 @@
       "label": "Risk Internalisation"
     },
     {
-      "slug": "risk-management-domain",
+      "slug": "risk-management",
       "label": "RiskManagementDomain"
     },
     {
@@ -655,7 +655,7 @@
       "label": "AI Governance"
     },
     {
-      "slug": "ai-grounded-domain",
+      "slug": "ai-technique",
       "label": "AI-GroundedDomain"
     },
     {

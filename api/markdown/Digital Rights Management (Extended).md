@@ -71,7 +71,7 @@ public:: true
       "vc:label": "Blockchain Network"
     },
     {
-      "@id": "urn:visionflow:owl:class:creative-media-domain",
+      "@id": "urn:visionflow:owl:class:ai-application",
       "vc:label": "CreativeMediaDomain"
     },
     {
@@ -91,7 +91,7 @@ public:: true
       "vc:label": "Smart Contract"
     },
     {
-      "@id": "urn:visionflow:owl:class:virtual-economy-domain",
+      "@id": "urn:visionflow:owl:class:virtual-economy",
       "vc:label": "VirtualEconomyDomain"
     },
     {
@@ -133,13 +133,15 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-governance-and-safety",
       "label": "Governance and Safety"
-    },
-    {
-      "@id": "urn:ngm:class:virtual-economy-domain",
-      "label": "Virtual Economy Domain"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:virtual-economy",
+        "label": "Virtual Economy"
+      }
+    ],
     "hasPart": [
       {
         "@id": "urn:ngm:class:access-control-module",
@@ -296,7 +298,7 @@ public:: true
     },
     {
       "raw": "[[CreativeMediaDomain]]",
-      "resolved": "urn:visionflow:owl:class:creative-media-domain",
+      "resolved": "urn:visionflow:owl:class:ai-application",
       "kind": "ResolvedLink"
     },
     {
@@ -321,7 +323,7 @@ public:: true
     },
     {
       "raw": "[[VirtualEconomyDomain]]",
-      "resolved": "urn:visionflow:owl:class:virtual-economy-domain",
+      "resolved": "urn:visionflow:owl:class:virtual-economy",
       "kind": "ResolvedLink"
     },
     {

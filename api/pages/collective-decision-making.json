@@ -162,10 +162,6 @@
     {
       "slug": "governance-board",
       "label": "Governance Board"
-    },
-    {
-      "slug": "governance-domain",
-      "label": "Governance Domain"
     }
   ]
 }

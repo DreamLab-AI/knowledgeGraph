@@ -39,7 +39,7 @@ public:: true
       "vc:label": "ControlLayer"
     },
     {
-      "@id": "urn:visionflow:linked:control-theory-domain",
+      "@id": "urn:visionflow:linked:control-theory",
       "vc:label": "ControlTheoryDomain"
     },
     {
@@ -139,7 +139,7 @@ public:: true
       "vc:label": "Virtual Mechanical System"
     },
     {
-      "@id": "urn:visionflow:owl:class:ai-grounded-domain",
+      "@id": "urn:visionflow:owl:class:ai-technique",
       "vc:label": "AI-GroundedDomain"
     },
     {
@@ -179,7 +179,7 @@ public:: true
       "vc:label": "Robot Control"
     },
     {
-      "@id": "urn:visionflow:owl:class:robotics-domain",
+      "@id": "urn:visionflow:owl:class:robotics",
       "vc:label": "RoboticsDomain"
     },
     {
@@ -386,7 +386,7 @@ public:: true
     },
     {
       "raw": "[[ControlTheoryDomain]]",
-      "resolved": "urn:visionflow:linked:control-theory-domain",
+      "resolved": "urn:visionflow:linked:control-theory",
       "kind": "StubLink"
     },
     {
@@ -511,7 +511,7 @@ public:: true
     },
     {
       "raw": "[[AI-GroundedDomain]]",
-      "resolved": "urn:visionflow:owl:class:ai-grounded-domain",
+      "resolved": "urn:visionflow:owl:class:ai-technique",
       "kind": "ResolvedLink"
     },
     {
@@ -561,7 +561,7 @@ public:: true
     },
     {
       "raw": "[[RoboticsDomain]]",
-      "resolved": "urn:visionflow:owl:class:robotics-domain",
+      "resolved": "urn:visionflow:owl:class:robotics",
       "kind": "ResolvedLink"
     },
     {

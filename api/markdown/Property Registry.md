@@ -35,7 +35,7 @@ public:: true
       "vc:label": "BC-0493-real-estate-tokenization"
     },
     {
-      "@id": "urn:visionflow:owl:class:blockchain-domain",
+      "@id": "urn:visionflow:owl:class:blockchain",
       "vc:label": "BlockchainDomain"
     }
   ],
@@ -87,7 +87,7 @@ public:: true
     ],
     "uses": [
       {"@id": "urn:ngm:class:cryptography", "label": "Cryptography"},
-      {"@id": "urn:ngm:class:blockchain-domain", "label": "Blockchain Domain"}
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain Domain"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:asset-registry", "label": "Asset Registry"},
@@ -148,7 +148,7 @@ public:: true
     },
     {
       "raw": "[[BlockchainDomain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-domain",
+      "resolved": "urn:visionflow:owl:class:blockchain",
       "kind": "ResolvedLink"
     }
   ],

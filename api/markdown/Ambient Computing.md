@@ -32,7 +32,7 @@ public:: true
     ],
     "enables": [
       {"@id": "urn:ngm:class:context-aware-computing", "label": "Context Aware Computing"},
-      {"@id": "urn:ngm:class:spatial-computing-paradigm", "label": "Spatial Computing"}
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:mixed-reality", "label": "Mixed Reality"},

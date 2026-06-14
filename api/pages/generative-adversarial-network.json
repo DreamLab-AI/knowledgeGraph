@@ -152,7 +152,7 @@
       "label": "Generative Adversarial Networks"
     },
     {
-      "slug": "metaverse-domain",
+      "slug": "metaverse",
       "label": "MetaverseDomain"
     },
     {
@@ -168,10 +168,6 @@
     {
       "slug": "gan",
       "label": "GAN"
-    },
-    {
-      "slug": "generative-modelling-domain",
-      "label": "Generative Modelling Domain"
     },
     {
       "slug": "generative-models",

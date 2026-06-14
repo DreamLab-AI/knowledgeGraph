@@ -64,7 +64,7 @@ elevatedFrom:: [[Vision Pro]]
   "relations": {
     "requires": [
       {
-        "@id": "urn:ngm:class:spatial-computing-paradigm",
+        "@id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing"
       }
     ],

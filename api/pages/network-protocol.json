@@ -171,7 +171,7 @@
       "label": "ETSI_Domain_Interoperability"
     },
     {
-      "slug": "infrastructure-domain",
+      "slug": "infrastructure",
       "label": "InfrastructureDomain"
     },
     {
@@ -179,7 +179,7 @@
       "label": "Interoperability"
     },
     {
-      "slug": "technology-domain",
+      "slug": "infrastructure",
       "label": "Technology Domain"
     }
   ],

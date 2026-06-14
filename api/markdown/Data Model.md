@@ -27,7 +27,7 @@ public:: true
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:metadata-standard", "label": "Metadata Standard"},
-      {"@id": "urn:ngm:class:data-management-domain", "label": "Data Management Domain"}
+      {"@id": "urn:ngm:class:data-management", "label": "Data Management Domain"}
     ]
   },
   "quality": 0.72

@@ -183,7 +183,7 @@ public:: true
       "vc:label": "Solar PV"
     },
     {
-      "@id": "urn:visionflow:linked:sustainability-domain",
+      "@id": "urn:visionflow:linked:sustainability",
       "vc:label": "SustainabilityDomain"
     },
     {
@@ -283,7 +283,7 @@ public:: true
       "vc:label": "Infrastructure"
     },
     {
-      "@id": "urn:visionflow:owl:class:infrastructure-domain",
+      "@id": "urn:visionflow:owl:class:infrastructure",
       "vc:label": "InfrastructureDomain"
     },
     {
@@ -852,7 +852,7 @@ public:: true
     },
     {
       "raw": "[[SustainabilityDomain]]",
-      "resolved": "urn:visionflow:linked:sustainability-domain",
+      "resolved": "urn:visionflow:linked:sustainability",
       "kind": "StubLink"
     },
     {
@@ -977,7 +977,7 @@ public:: true
     },
     {
       "raw": "[[InfrastructureDomain]]",
-      "resolved": "urn:visionflow:owl:class:infrastructure-domain",
+      "resolved": "urn:visionflow:owl:class:infrastructure",
       "kind": "ResolvedLink"
     },
     {

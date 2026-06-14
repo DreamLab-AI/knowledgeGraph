@@ -105,7 +105,7 @@
       "label": "Blockchain Entity"
     },
     {
-      "slug": "cryptographic-domain",
+      "slug": "bc-cryptographic-primitive",
       "label": "CryptographicDomain"
     },
     {

@@ -99,7 +99,7 @@ public:: true
       "vc:label": "Identity Federation"
     },
     {
-      "@id": "urn:visionflow:owl:class:infrastructure-domain",
+      "@id": "urn:visionflow:owl:class:infrastructure",
       "vc:label": "InfrastructureDomain"
     },
     {
@@ -131,7 +131,7 @@ public:: true
       "vc:label": "Universal Avatar"
     },
     {
-      "@id": "urn:visionflow:owl:class:virtual-society-domain",
+      "@id": "urn:visionflow:owl:class:virtual-society",
       "vc:label": "VirtualSocietyDomain"
     }
   ],
@@ -399,7 +399,7 @@ public:: true
     },
     {
       "raw": "[[InfrastructureDomain]]",
-      "resolved": "urn:visionflow:owl:class:infrastructure-domain",
+      "resolved": "urn:visionflow:owl:class:infrastructure",
       "kind": "ResolvedLink"
     },
     {
@@ -439,7 +439,7 @@ public:: true
     },
     {
       "raw": "[[VirtualSocietyDomain]]",
-      "resolved": "urn:visionflow:owl:class:virtual-society-domain",
+      "resolved": "urn:visionflow:owl:class:virtual-society",
       "kind": "ResolvedLink"
     }
   ],

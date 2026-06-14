@@ -52,7 +52,7 @@ public:: true
   "relations": {
     "implements": [
       {
-        "@id": "urn:ngm:class:spatial-computing-paradigm",
+        "@id": "urn:ngm:class:spatial-computing",
         "label": "spatial-computing"
       }
     ]

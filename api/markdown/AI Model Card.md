@@ -147,7 +147,7 @@ public:: true
       "vc:label": "Blockchain"
     },
     {
-      "@id": "urn:visionflow:owl:class:computation-and-intelligence-domain",
+      "@id": "urn:visionflow:owl:class:ai-research-area",
       "vc:label": "ComputationAndIntelligenceDomain"
     },
     {
@@ -195,7 +195,7 @@ public:: true
       "vc:label": "Transparency"
     },
     {
-      "@id": "urn:visionflow:owl:class:trust-and-governance-domain",
+      "@id": "urn:visionflow:owl:class:ai-governance-and-ethics",
       "vc:label": "TrustAndGovernanceDomain"
     }
   ],
@@ -535,7 +535,7 @@ public:: true
     },
     {
       "raw": "[[ComputationAndIntelligenceDomain]]",
-      "resolved": "urn:visionflow:owl:class:computation-and-intelligence-domain",
+      "resolved": "urn:visionflow:owl:class:ai-research-area",
       "kind": "ResolvedLink"
     },
     {
@@ -595,7 +595,7 @@ public:: true
     },
     {
       "raw": "[[TrustAndGovernanceDomain]]",
-      "resolved": "urn:visionflow:owl:class:trust-and-governance-domain",
+      "resolved": "urn:visionflow:owl:class:ai-governance-and-ethics",
       "kind": "ResolvedLink"
     }
   ],

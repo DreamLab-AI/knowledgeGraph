@@ -27,7 +27,7 @@ public:: true
       "vc:label": "Blockchain Entity"
     },
     {
-      "@id": "urn:visionflow:owl:class:cryptographic-domain",
+      "@id": "urn:visionflow:owl:class:bc-cryptographic-primitive",
       "vc:label": "CryptographicDomain"
     },
     {
@@ -104,7 +104,7 @@ public:: true
       {"@id": "urn:ngm:class:attack-vector", "label": "Attack Vector"}
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:cryptographic-domain", "label": "Cryptographic Domain"},
+      {"@id": "urn:ngm:class:bc-cryptographic-primitive", "label": "Cryptographic Domain"},
       {"@id": "urn:ngm:class:cryptography-security-and-privacy", "label": "Cryptography Security and Privacy"}
     ]
   },
@@ -147,7 +147,7 @@ public:: true
     },
     {
       "raw": "[[CryptographicDomain]]",
-      "resolved": "urn:visionflow:owl:class:cryptographic-domain",
+      "resolved": "urn:visionflow:owl:class:bc-cryptographic-primitive",
       "kind": "ResolvedLink"
     },
     {

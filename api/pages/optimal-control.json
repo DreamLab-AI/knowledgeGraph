@@ -218,10 +218,6 @@
       "label": "Control Algorithm"
     },
     {
-      "slug": "control-theory-domain",
-      "label": "Control Theory Domain"
-    },
-    {
       "slug": "force-control",
       "label": "Force Control"
     },

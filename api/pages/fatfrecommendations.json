@@ -129,7 +129,7 @@
       "label": "Coinbase"
     },
     {
-      "slug": "compliance-domain",
+      "slug": "compliance",
       "label": "ComplianceDomain"
     },
     {
@@ -225,7 +225,7 @@
       "label": "Non-Fungible Tokens"
     },
     {
-      "slug": "regulatory-domain",
+      "slug": "infra-legal-and-regulatory",
       "label": "RegulatoryDomain"
     },
     {
@@ -265,7 +265,7 @@
       "label": "Blockchain"
     },
     {
-      "slug": "blockchain-domain",
+      "slug": "blockchain",
       "label": "BlockchainDomain"
     },
     {

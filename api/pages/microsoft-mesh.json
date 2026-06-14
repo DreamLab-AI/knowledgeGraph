@@ -8,7 +8,7 @@
   "definition": "Microsoft Mesh is a platform for shared mixed-reality experiences that lets distributed participants meet as avatars in persistent 3D spaces across headsets and conventional devices.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:metaverse-domain",
+      "id": "urn:ngm:class:metaverse",
       "label": "Metaverse Domain"
     }
   ],
@@ -57,7 +57,7 @@
       "label": "Spatial Computing"
     },
     {
-      "slug": "metaverse-domain",
+      "slug": "metaverse",
       "label": "Metaverse Domain"
     }
   ],

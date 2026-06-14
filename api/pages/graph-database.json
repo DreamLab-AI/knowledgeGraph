@@ -351,7 +351,7 @@
       "label": "Cypher Query Language"
     },
     {
-      "slug": "data-management-domain",
+      "slug": "data-management",
       "label": "DataManagementDomain"
     },
     {
@@ -491,7 +491,7 @@
       "label": "Key-Value Store"
     },
     {
-      "slug": "knowledge-representation-domain",
+      "slug": "knowledge-representation",
       "label": "KnowledgeRepresentationDomain"
     },
     {

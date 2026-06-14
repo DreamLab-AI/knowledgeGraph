@@ -256,10 +256,6 @@
       "label": "Enterprise Smart Contracts"
     },
     {
-      "slug": "enterprise-software-domain",
-      "label": "Enterprise Software Domain"
-    },
-    {
       "slug": "ethics-and-law-layer",
       "label": "Ethics & Law Layer"
     },
@@ -286,10 +282,6 @@
     {
       "slug": "identity-verification-system",
       "label": "Identity Verification System"
-    },
-    {
-      "slug": "information-security-domain",
-      "label": "Information Security Domain"
     },
     {
       "slug": "metaverse",

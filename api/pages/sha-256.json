@@ -160,7 +160,7 @@
       "label": "Blockchain Entity"
     },
     {
-      "slug": "cryptographic-domain",
+      "slug": "bc-cryptographic-primitive",
       "label": "CryptographicDomain"
     },
     {
@@ -188,10 +188,6 @@
     {
       "slug": "cryptocurrency",
       "label": "Cryptocurrency"
-    },
-    {
-      "slug": "cryptographic-domain",
-      "label": "Cryptographic Domain"
     },
     {
       "slug": "digital-signature",

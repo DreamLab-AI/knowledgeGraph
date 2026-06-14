@@ -19,7 +19,7 @@ public:: true
       "vc:label": "Proof of Stake"
     },
     {
-      "@id": "urn:visionflow:linked:decentralised-finance-domain",
+      "@id": "urn:visionflow:linked:decentralised-finance",
       "vc:label": "Decentralised Finance Domain"
     },
     {
@@ -35,7 +35,7 @@ public:: true
       "vc:label": "Arbitrum"
     },
     {
-      "@id": "urn:visionflow:linked:blockchain-domain",
+      "@id": "urn:visionflow:linked:blockchain",
       "vc:label": "Blockchain Domain"
     }
   ],
@@ -68,7 +68,7 @@ public:: true
   "qualityScore": 0.7,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:blockchain-domain",
+      "@id": "urn:ngm:class:blockchain",
       "label": "Blockchain Domain"
     }
   ],
@@ -93,7 +93,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:decentralised-finance-domain",
+        "@id": "urn:ngm:class:decentralised-finance",
         "label": "Decentralised Finance Domain"
       },
       {
@@ -220,7 +220,7 @@ public:: true
     },
     {
       "raw": "[[Decentralised Finance Domain]]",
-      "resolved": "urn:visionflow:linked:decentralised-finance-domain",
+      "resolved": "urn:visionflow:linked:decentralised-finance",
       "kind": "ResolvedLink"
     },
     {
@@ -240,7 +240,7 @@ public:: true
     },
     {
       "raw": "[[Blockchain Domain]]",
-      "resolved": "urn:visionflow:linked:blockchain-domain",
+      "resolved": "urn:visionflow:linked:blockchain",
       "kind": "ResolvedLink"
     }
   ],

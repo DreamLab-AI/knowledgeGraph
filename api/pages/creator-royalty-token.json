@@ -175,11 +175,11 @@
       "label": "Blockchain"
     },
     {
-      "slug": "blockchain-domain",
+      "slug": "blockchain",
       "label": "BlockchainDomain"
     },
     {
-      "slug": "creative-media-domain",
+      "slug": "ai-application",
       "label": "CreativeMediaDomain"
     },
     {
@@ -211,7 +211,7 @@
       "label": "Virtual Economy"
     },
     {
-      "slug": "virtual-economy-domain",
+      "slug": "virtual-economy",
       "label": "VirtualEconomyDomain"
     }
   ],

@@ -10,10 +10,6 @@
     {
       "id": "urn:ngm:class:sc-platform-and-environment",
       "label": "Platform and Environment"
-    },
-    {
-      "id": "urn:ngm:class:virtual-economy-domain",
-      "label": "Virtual Economy Domain"
     }
   ],
   "entityType": "Class",
@@ -73,7 +69,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:virtual-economy",
+        "label": "Virtual Economy"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
@@ -155,7 +156,7 @@
       "label": "Token Standard"
     },
     {
-      "slug": "virtual-economy-domain",
+      "slug": "virtual-economy",
       "label": "VirtualEconomyDomain"
     }
   ],

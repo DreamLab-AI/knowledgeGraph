@@ -399,7 +399,7 @@
       "label": "Decentralised Finance"
     },
     {
-      "slug": "distributed-systems-domain",
+      "slug": "distributed-systems",
       "label": "DistributedSystemsDomain"
     },
     {
@@ -439,7 +439,7 @@
       "label": "Financial Conduct Authority"
     },
     {
-      "slug": "financial-infrastructure-domain",
+      "slug": "financial-infrastructure",
       "label": "FinancialInfrastructureDomain"
     },
     {
@@ -815,7 +815,7 @@
       "label": "Blockchain"
     },
     {
-      "slug": "blockchain-domain",
+      "slug": "blockchain",
       "label": "BlockchainDomain"
     },
     {
@@ -965,10 +965,6 @@
       "label": "Decentralized Identity (DID)"
     },
     {
-      "slug": "digital-asset-domain",
-      "label": "Digital Asset Domain"
-    },
-    {
       "slug": "distributed-identity",
       "label": "Distributed Identity"
     },
@@ -1011,10 +1007,6 @@
     {
       "slug": "on-chain-voting",
       "label": "On Chain Voting"
-    },
-    {
-      "slug": "payment-systems-domain",
-      "label": "Payment Systems Domain"
     },
     {
       "slug": "private-blockchain",

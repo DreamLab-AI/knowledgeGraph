@@ -500,7 +500,7 @@
       "label": "Knowledge Graph Embeddings"
     },
     {
-      "slug": "knowledge-representation-domain",
+      "slug": "knowledge-representation",
       "label": "KnowledgeRepresentationDomain"
     },
     {
@@ -644,7 +644,7 @@
       "label": "Agents"
     },
     {
-      "slug": "ai-grounded-domain",
+      "slug": "ai-technique",
       "label": "AI-GroundedDomain"
     },
     {

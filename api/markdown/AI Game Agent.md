@@ -75,7 +75,7 @@ public:: true
       "vc:label": "AI Agent System"
     },
     {
-      "@id": "urn:visionflow:owl:class:ai-grounded-domain",
+      "@id": "urn:visionflow:owl:class:ai-technique",
       "vc:label": "AI-GroundedDomain"
     },
     {
@@ -83,7 +83,7 @@ public:: true
       "vc:label": "ComputeLayer"
     },
     {
-      "@id": "urn:visionflow:owl:class:creative-media-domain",
+      "@id": "urn:visionflow:owl:class:ai-application",
       "vc:label": "CreativeMediaDomain"
     },
     {
@@ -95,7 +95,7 @@ public:: true
       "vc:label": "Intelligent Virtual Entity"
     },
     {
-      "@id": "urn:visionflow:owl:class:interaction-domain",
+      "@id": "urn:visionflow:owl:class:sc-interaction",
       "vc:label": "InteractionDomain"
     },
     {
@@ -323,7 +323,7 @@ public:: true
     },
     {
       "raw": "[[AI-GroundedDomain]]",
-      "resolved": "urn:visionflow:owl:class:ai-grounded-domain",
+      "resolved": "urn:visionflow:owl:class:ai-technique",
       "kind": "ResolvedLink"
     },
     {
@@ -333,7 +333,7 @@ public:: true
     },
     {
       "raw": "[[CreativeMediaDomain]]",
-      "resolved": "urn:visionflow:owl:class:creative-media-domain",
+      "resolved": "urn:visionflow:owl:class:ai-application",
       "kind": "ResolvedLink"
     },
     {
@@ -348,7 +348,7 @@ public:: true
     },
     {
       "raw": "[[InteractionDomain]]",
-      "resolved": "urn:visionflow:owl:class:interaction-domain",
+      "resolved": "urn:visionflow:owl:class:sc-interaction",
       "kind": "ResolvedLink"
     },
     {

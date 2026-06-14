@@ -41,7 +41,7 @@ alias:: GestureRecognition
       {"@id": "urn:ngm:class:motion-capture", "label": "Motion Capture"}
     ],
     "enables": [
-      {"@id": "urn:ngm:class:spatial-computing-paradigm", "label": "Spatial Computing"},
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
       {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
       {"@id": "urn:ngm:class:mixed-reality", "label": "Mixed Reality"},
       {"@id": "urn:ngm:class:user-interface", "label": "User Interface"}

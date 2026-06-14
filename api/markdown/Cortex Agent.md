@@ -11,7 +11,7 @@ public:: true
   "vc:public": true,
   "vc:outboundWikilinks": [
     {
-      "@id": "urn:visionflow:linked:agentic-systems-domain",
+      "@id": "urn:visionflow:linked:ai-application",
       "vc:label": "AgenticSystemsDomain"
     },
     {
@@ -143,7 +143,7 @@ public:: true
       "vc:label": "Agents"
     },
     {
-      "@id": "urn:visionflow:owl:class:ai-grounded-domain",
+      "@id": "urn:visionflow:owl:class:ai-technique",
       "vc:label": "AI-GroundedDomain"
     },
     {
@@ -517,7 +517,7 @@ public:: true
   "vc:resolutions": [
     {
       "raw": "[[AgenticSystemsDomain]]",
-      "resolved": "urn:visionflow:linked:agentic-systems-domain",
+      "resolved": "urn:visionflow:linked:ai-application",
       "kind": "StubLink"
     },
     {
@@ -682,7 +682,7 @@ public:: true
     },
     {
       "raw": "[[AI-GroundedDomain]]",
-      "resolved": "urn:visionflow:owl:class:ai-grounded-domain",
+      "resolved": "urn:visionflow:owl:class:ai-technique",
       "kind": "ResolvedLink"
     },
     {

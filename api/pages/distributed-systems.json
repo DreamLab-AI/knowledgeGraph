@@ -154,12 +154,40 @@
       "label": "Anoma"
     },
     {
+      "slug": "btc-layer-3",
+      "label": "BTC Layer 3"
+    },
+    {
       "slug": "bitcoin-technical-overview",
       "label": "Bitcoin Technical Overview"
     },
     {
+      "slug": "bitcoin-technical-overview",
+      "label": "Bitcoin Technical Overview"
+    },
+    {
+      "slug": "blockchain-as-a-service",
+      "label": "Blockchain As A Service"
+    },
+    {
+      "slug": "blockchain-interoperability",
+      "label": "Blockchain Interoperability"
+    },
+    {
+      "slug": "blockchain-network",
+      "label": "Blockchain Network"
+    },
+    {
       "slug": "byzantine-fault-tolerance",
       "label": "Byzantine Fault Tolerance"
+    },
+    {
+      "slug": "cap-theorem",
+      "label": "CAP Theorem"
+    },
+    {
+      "slug": "crdt",
+      "label": "CRDT"
     },
     {
       "slug": "crdt",
@@ -170,6 +198,10 @@
       "label": "Centralised Database"
     },
     {
+      "slug": "consensus-mechanism",
+      "label": "Consensus Mechanism"
+    },
+    {
       "slug": "consensus-mechanisms",
       "label": "Consensus Mechanisms"
     },
@@ -178,12 +210,24 @@
       "label": "Consensus"
     },
     {
+      "slug": "consortium-blockchain",
+      "label": "Consortium Blockchain"
+    },
+    {
+      "slug": "content-addressing",
+      "label": "Content Addressing"
+    },
+    {
       "slug": "coordination-layer",
       "label": "Coordination Layer"
     },
     {
       "slug": "dds",
       "label": "DDS"
+    },
+    {
+      "slug": "data-engineering",
+      "label": "Data Engineering"
     },
     {
       "slug": "data-replication",
@@ -198,12 +242,24 @@
       "label": "Decentralised Storage"
     },
     {
+      "slug": "decentralised-file-storage",
+      "label": "Decentralised file storage"
+    },
+    {
+      "slug": "decentralized-governance",
+      "label": "Decentralized Governance"
+    },
+    {
       "slug": "decentralized-governance",
       "label": "Decentralized Governance"
     },
     {
       "slug": "distributed-decision-making",
       "label": "Distributed Decision Making"
+    },
+    {
+      "slug": "distributed-ledger",
+      "label": "Distributed Ledger"
     },
     {
       "slug": "distributed-systems-theory",
@@ -218,8 +274,20 @@
       "label": "Ethernet"
     },
     {
+      "slug": "fault-tolerance",
+      "label": "Fault Tolerance"
+    },
+    {
       "slug": "federation",
       "label": "Federation"
+    },
+    {
+      "slug": "graph-theory",
+      "label": "Graph Theory"
+    },
+    {
+      "slug": "hyperledger-indy",
+      "label": "Hyperledger Indy"
     },
     {
       "slug": "internet-infrastructure",
@@ -232,6 +300,14 @@
     {
       "slug": "microsoft",
       "label": "Microsoft"
+    },
+    {
+      "slug": "model-control-protocols-like-mcp",
+      "label": "Model Control Protocols like MCP"
+    },
+    {
+      "slug": "model-training",
+      "label": "Model Training"
     },
     {
       "slug": "observability",
@@ -254,6 +330,10 @@
       "label": "Publish-Subscribe Pattern"
     },
     {
+      "slug": "satoshi-nakamoto",
+      "label": "Satoshi Nakamoto"
+    },
+    {
       "slug": "sensor-networks",
       "label": "Sensor Networks"
     },
@@ -270,8 +350,20 @@
       "label": "Software Architecture"
     },
     {
+      "slug": "solid-pod-storage",
+      "label": "Solid Pod Storage"
+    },
+    {
+      "slug": "state-machine",
+      "label": "State Machine"
+    },
+    {
       "slug": "storage-infrastructure",
       "label": "Storage Infrastructure"
+    },
+    {
+      "slug": "sustainable-consensus",
+      "label": "Sustainable Consensus"
     },
     {
       "slug": "swarm-intelligence",
@@ -286,8 +378,16 @@
       "label": "System Architecture"
     },
     {
+      "slug": "testnet",
+      "label": "Testnet"
+    },
+    {
       "slug": "vircadia",
       "label": "Vircadia"
+    },
+    {
+      "slug": "web3",
+      "label": "Web3"
     },
     {
       "slug": "web3",

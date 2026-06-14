@@ -259,7 +259,7 @@
       "label": "ERC-3643 Standard"
     },
     {
-      "slug": "financial-infrastructure-domain",
+      "slug": "financial-infrastructure",
       "label": "FinancialInfrastructureDomain"
     },
     {
@@ -271,7 +271,7 @@
       "label": "ISO 24165"
     },
     {
-      "slug": "legal-tech-domain",
+      "slug": "infra-legal-and-regulatory",
       "label": "LegalTechDomain"
     },
     {
@@ -335,7 +335,7 @@
       "label": "Blockchain Application"
     },
     {
-      "slug": "blockchain-domain",
+      "slug": "blockchain",
       "label": "BlockchainDomain"
     },
     {

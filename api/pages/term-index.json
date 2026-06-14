@@ -55,7 +55,7 @@
         "label": "Linked Data"
       },
       {
-        "id": "urn:ngm:class:metaverse-domain",
+        "id": "urn:ngm:class:metaverse",
         "label": "Metaverse Domain"
       }
     ]
@@ -78,7 +78,7 @@
       "label": "SPARQLQuery"
     },
     {
-      "slug": "metaverse-domain",
+      "slug": "metaverse",
       "label": "MetaverseDomain"
     }
   ],

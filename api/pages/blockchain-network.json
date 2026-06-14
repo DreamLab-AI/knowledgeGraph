@@ -379,7 +379,7 @@
       "label": "Distributed Ledger Technology"
     },
     {
-      "slug": "distributed-systems-domain",
+      "slug": "distributed-systems",
       "label": "DistributedSystemsDomain"
     },
     {
@@ -615,7 +615,7 @@
       "label": "Blockchain"
     },
     {
-      "slug": "blockchain-domain",
+      "slug": "blockchain",
       "label": "BlockchainDomain"
     },
     {
@@ -635,7 +635,7 @@
       "label": "Consensus Mechanism"
     },
     {
-      "slug": "cryptographic-domain",
+      "slug": "bc-cryptographic-primitive",
       "label": "CryptographicDomain"
     },
     {

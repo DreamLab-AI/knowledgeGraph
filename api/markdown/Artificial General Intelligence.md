@@ -115,7 +115,7 @@ public:: true
       "vc:label": "Chollet 2019 On the Measure of Intelligence"
     },
     {
-      "@id": "urn:visionflow:linked:cognitive-science-domain",
+      "@id": "urn:visionflow:linked:cognitive-science",
       "vc:label": "CognitiveScienceDomain"
     },
     {
@@ -423,7 +423,7 @@ public:: true
       "vc:label": "AI Governance"
     },
     {
-      "@id": "urn:visionflow:owl:class:ai-grounded-domain",
+      "@id": "urn:visionflow:owl:class:ai-technique",
       "vc:label": "AI-GroundedDomain"
     },
     {
@@ -435,7 +435,7 @@ public:: true
       "vc:label": "Artificial Intelligence"
     },
     {
-      "@id": "urn:visionflow:owl:class:computation-and-intelligence-domain",
+      "@id": "urn:visionflow:owl:class:ai-research-area",
       "vc:label": "ComputationAndIntelligenceDomain"
     },
     {
@@ -867,7 +867,7 @@ public:: true
     },
     {
       "raw": "[[CognitiveScienceDomain]]",
-      "resolved": "urn:visionflow:linked:cognitive-science-domain",
+      "resolved": "urn:visionflow:linked:cognitive-science",
       "kind": "StubLink"
     },
     {
@@ -1252,7 +1252,7 @@ public:: true
     },
     {
       "raw": "[[AI-GroundedDomain]]",
-      "resolved": "urn:visionflow:owl:class:ai-grounded-domain",
+      "resolved": "urn:visionflow:owl:class:ai-technique",
       "kind": "ResolvedLink"
     },
     {
@@ -1267,7 +1267,7 @@ public:: true
     },
     {
       "raw": "[[ComputationAndIntelligenceDomain]]",
-      "resolved": "urn:visionflow:owl:class:computation-and-intelligence-domain",
+      "resolved": "urn:visionflow:owl:class:ai-research-area",
       "kind": "ResolvedLink"
     },
     {

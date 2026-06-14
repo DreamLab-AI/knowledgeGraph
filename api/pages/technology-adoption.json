@@ -48,7 +48,7 @@
         "label": "Stakeholder Buy-In"
       },
       {
-        "id": "urn:ngm:class:technology-infrastructure-domain",
+        "id": "urn:ngm:class:technology-infrastructure",
         "label": "Infrastructure"
       },
       {
@@ -138,7 +138,7 @@
       "label": "AI Governance"
     },
     {
-      "slug": "ai-grounded-domain",
+      "slug": "ai-technique",
       "label": "AI-GroundedDomain"
     },
     {
@@ -146,7 +146,7 @@
       "label": "Awareness"
     },
     {
-      "slug": "blockchain-domain",
+      "slug": "blockchain",
       "label": "BlockchainDomain"
     },
     {
@@ -166,11 +166,11 @@
       "label": "Interoperability"
     },
     {
-      "slug": "metaverse-domain",
+      "slug": "metaverse",
       "label": "MetaverseDomain"
     },
     {
-      "slug": "robotics-domain",
+      "slug": "robotics",
       "label": "RoboticsDomain"
     },
     {

@@ -503,7 +503,7 @@
       "label": "Enterprise Ethereum Alliance"
     },
     {
-      "slug": "enterprise-software-domain",
+      "slug": "infra-software-engineering",
       "label": "EnterpriseSoftwareDomain"
     },
     {
@@ -635,7 +635,7 @@
       "label": "Legal Agreement"
     },
     {
-      "slug": "legal-tech-domain",
+      "slug": "infra-legal-and-regulatory",
       "label": "LegalTechDomain"
     },
     {
@@ -807,7 +807,7 @@
       "label": "ApplicationLayer"
     },
     {
-      "slug": "blockchain-domain",
+      "slug": "blockchain",
       "label": "BlockchainDomain"
     },
     {

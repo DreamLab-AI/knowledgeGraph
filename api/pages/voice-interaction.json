@@ -12,7 +12,7 @@
       "label": "Interaction Technology"
     },
     {
-      "id": "urn:ngm:class:interaction-domain",
+      "id": "urn:ngm:class:sc-interaction",
       "label": "Interaction Domain"
     }
   ],
@@ -147,7 +147,7 @@
       "label": "Accessibility"
     },
     {
-      "slug": "interaction-domain",
+      "slug": "sc-interaction",
       "label": "InteractionDomain"
     },
     {
@@ -167,10 +167,5 @@
       "label": "Text-to-Speech"
     }
   ],
-  "backlinks": [
-    {
-      "slug": "interaction-domain",
-      "label": "Interaction Domain"
-    }
-  ]
+  "backlinks": []
 }

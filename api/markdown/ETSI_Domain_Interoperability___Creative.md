@@ -27,7 +27,7 @@ public:: true
       "vc:label": "European Commission Digital Decade 2030"
     },
     {
-      "@id": "urn:visionflow:linked:interoperability-domain",
+      "@id": "urn:visionflow:linked:interoperability",
       "vc:label": "InteroperabilityDomain"
     },
     {
@@ -63,7 +63,7 @@ public:: true
       "vc:label": "Metaverse Content Pipeline"
     },
     {
-      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "@id": "urn:visionflow:owl:class:metaverse",
       "vc:label": "MetaverseDomain"
     }
   ],
@@ -167,7 +167,7 @@ public:: true
     },
     {
       "raw": "[[InteroperabilityDomain]]",
-      "resolved": "urn:visionflow:linked:interoperability-domain",
+      "resolved": "urn:visionflow:linked:interoperability",
       "kind": "StubLink"
     },
     {
@@ -212,7 +212,7 @@ public:: true
     },
     {
       "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "resolved": "urn:visionflow:owl:class:metaverse",
       "kind": "ResolvedLink"
     }
   ],

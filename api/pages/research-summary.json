@@ -55,11 +55,11 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:metaverse-domain",
+        "id": "urn:ngm:class:metaverse",
         "label": "Metaverse Domain"
       },
       {
-        "id": "urn:ngm:class:robotics-domain",
+        "id": "urn:ngm:class:robotics",
         "label": "Robotics Domain"
       },
       {
@@ -82,7 +82,7 @@
       "label": "Metaverse"
     },
     {
-      "slug": "metaverse-domain",
+      "slug": "metaverse",
       "label": "MetaverseDomain"
     },
     {

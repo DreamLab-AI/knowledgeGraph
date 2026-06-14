@@ -164,10 +164,6 @@
     {
       "slug": "economics",
       "label": "Economics"
-    },
-    {
-      "slug": "token-economics-domain",
-      "label": "Token Economics Domain"
     }
   ]
 }

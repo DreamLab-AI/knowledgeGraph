@@ -25,7 +25,7 @@ public:: true
   "maturity": "emerging",
   "subClassOf": [{"@id": "urn:ngm:class:robo-safety-and-standards", "label": "Robotics Safety and Standards"}],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:predictive-maintenance", "label": "Predictive Maintenance"}, {"@id": "urn:ngm:class:autonomous-systems-domain", "label": "Autonomous Systems Domain"}]
+    "relatedTo": [{"@id": "urn:ngm:class:predictive-maintenance", "label": "Predictive Maintenance"}, {"@id": "urn:ngm:class:robo-navigation-and-planning", "label": "Autonomous Systems Domain"}]
   },
   "quality": 0.72
 }

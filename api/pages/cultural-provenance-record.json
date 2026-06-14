@@ -167,7 +167,7 @@
       "label": "Blockchain"
     },
     {
-      "slug": "creative-media-domain",
+      "slug": "ai-application",
       "label": "CreativeMediaDomain"
     },
     {
@@ -191,7 +191,7 @@
       "label": "Provenance Verification"
     },
     {
-      "slug": "trust-and-governance-domain",
+      "slug": "ai-governance-and-ethics",
       "label": "TrustAndGovernanceDomain"
     }
   ],

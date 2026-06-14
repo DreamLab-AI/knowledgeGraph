@@ -8,7 +8,7 @@
   "definition": "A Python library from Google for high-performance numerical computing and machine learning research, combining NumPy-style array operations with automatic differentiation and just-in-time compilation targeting CPUs, GPUs, and TPUs via the XLA compiler.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:deep-learning-domain",
+      "id": "urn:ngm:class:deep-learning",
       "label": "Deep Learning Domain"
     }
   ],
@@ -143,7 +143,7 @@
       "label": "PyTorch"
     },
     {
-      "slug": "deep-learning-domain",
+      "slug": "deep-learning",
       "label": "Deep Learning Domain"
     }
   ],

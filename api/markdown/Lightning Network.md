@@ -32,11 +32,11 @@ alias:: Lightning-Network
       "vc:label": "Channel Factory"
     },
     {
-      "@id": "urn:visionflow:linked:cryptography-domain",
+      "@id": "urn:visionflow:linked:cryptography",
       "vc:label": "CryptographyDomain"
     },
     {
-      "@id": "urn:visionflow:linked:financial-infrastructure-domain",
+      "@id": "urn:visionflow:linked:financial-infrastructure",
       "vc:label": "FinancialInfrastructureDomain"
     },
     {
@@ -172,7 +172,7 @@ alias:: Lightning-Network
       "vc:label": "Bitcoin Value Proposition"
     },
     {
-      "@id": "urn:visionflow:owl:class:blockchain-domain",
+      "@id": "urn:visionflow:owl:class:blockchain",
       "vc:label": "BlockchainDomain"
     },
     {
@@ -607,12 +607,12 @@ alias:: Lightning-Network
     },
     {
       "raw": "[[CryptographyDomain]]",
-      "resolved": "urn:visionflow:linked:cryptography-domain",
+      "resolved": "urn:visionflow:linked:cryptography",
       "kind": "StubLink"
     },
     {
       "raw": "[[FinancialInfrastructureDomain]]",
-      "resolved": "urn:visionflow:linked:financial-infrastructure-domain",
+      "resolved": "urn:visionflow:linked:financial-infrastructure",
       "kind": "StubLink"
     },
     {
@@ -782,7 +782,7 @@ alias:: Lightning-Network
     },
     {
       "raw": "[[BlockchainDomain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-domain",
+      "resolved": "urn:visionflow:owl:class:blockchain",
       "kind": "ResolvedLink"
     },
     {

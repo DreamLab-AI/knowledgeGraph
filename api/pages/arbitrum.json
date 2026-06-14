@@ -54,7 +54,7 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:decentralised-finance-domain",
+        "id": "urn:ngm:class:decentralised-finance",
         "label": "Decentralised Finance Domain"
       },
       {
@@ -170,7 +170,7 @@
       "label": "Fraud Proof"
     },
     {
-      "slug": "decentralised-finance-domain",
+      "slug": "decentralised-finance",
       "label": "Decentralised Finance Domain"
     },
     {
@@ -186,7 +186,7 @@
       "label": "Polygon"
     },
     {
-      "slug": "blockchain-domain",
+      "slug": "blockchain",
       "label": "Blockchain Domain"
     }
   ],

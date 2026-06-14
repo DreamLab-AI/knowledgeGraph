@@ -64,7 +64,7 @@ public:: true
       {"@id": "urn:ngm:class:game-engine", "label": "Game Engine"}
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:spatial-computing-paradigm", "label": "Spatial Computing"}
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
     ]
   },
   "quality": 0.35,

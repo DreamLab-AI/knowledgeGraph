@@ -27,7 +27,7 @@ public:: true
       "vc:label": "Decentralized Exchange"
     },
     {
-      "@id": "urn:visionflow:linked:economics-domain",
+      "@id": "urn:visionflow:linked:economics",
       "vc:label": "Economics Domain"
     }
   ],
@@ -60,7 +60,7 @@ public:: true
   "qualityScore": 0.7,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:economics-domain",
+      "@id": "urn:ngm:class:economics",
       "label": "Economics Domain"
     }
   ],
@@ -118,7 +118,7 @@ public:: true
     },
     {
       "raw": "[[Economics Domain]]",
-      "resolved": "urn:visionflow:linked:economics-domain",
+      "resolved": "urn:visionflow:linked:economics",
       "kind": "ResolvedLink"
     }
   ],

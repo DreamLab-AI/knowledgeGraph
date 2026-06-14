@@ -132,7 +132,7 @@ alias:: DistributedLedger
       "vc:label": "Decentralised Finance"
     },
     {
-      "@id": "urn:visionflow:linked:distributed-systems-domain",
+      "@id": "urn:visionflow:linked:distributed-systems",
       "vc:label": "DistributedSystemsDomain"
     },
     {
@@ -172,7 +172,7 @@ alias:: DistributedLedger
       "vc:label": "Financial Conduct Authority"
     },
     {
-      "@id": "urn:visionflow:linked:financial-infrastructure-domain",
+      "@id": "urn:visionflow:linked:financial-infrastructure",
       "vc:label": "FinancialInfrastructureDomain"
     },
     {
@@ -548,7 +548,7 @@ alias:: DistributedLedger
       "vc:label": "Blockchain"
     },
     {
-      "@id": "urn:visionflow:owl:class:blockchain-domain",
+      "@id": "urn:visionflow:owl:class:blockchain",
       "vc:label": "BlockchainDomain"
     },
     {
@@ -1112,7 +1112,7 @@ alias:: DistributedLedger
     },
     {
       "raw": "[[DistributedSystemsDomain]]",
-      "resolved": "urn:visionflow:linked:distributed-systems-domain",
+      "resolved": "urn:visionflow:linked:distributed-systems",
       "kind": "StubLink"
     },
     {
@@ -1162,7 +1162,7 @@ alias:: DistributedLedger
     },
     {
       "raw": "[[FinancialInfrastructureDomain]]",
-      "resolved": "urn:visionflow:linked:financial-infrastructure-domain",
+      "resolved": "urn:visionflow:linked:financial-infrastructure",
       "kind": "StubLink"
     },
     {
@@ -1632,7 +1632,7 @@ alias:: DistributedLedger
     },
     {
       "raw": "[[BlockchainDomain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-domain",
+      "resolved": "urn:visionflow:owl:class:blockchain",
       "kind": "ResolvedLink"
     },
     {

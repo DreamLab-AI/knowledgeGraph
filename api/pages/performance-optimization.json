@@ -143,11 +143,11 @@
       "label": "User Experience"
     },
     {
-      "slug": "computation-and-intelligence-domain",
+      "slug": "ai-research-area",
       "label": "ComputationAndIntelligenceDomain"
     },
     {
-      "slug": "technology-domain",
+      "slug": "infrastructure",
       "label": "Technology Domain"
     }
   ],

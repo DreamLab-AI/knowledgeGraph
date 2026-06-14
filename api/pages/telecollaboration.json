@@ -224,14 +224,6 @@
   ],
   "backlinks": [
     {
-      "slug": "aidomain",
-      "label": "AIDomain"
-    },
-    {
-      "slug": "aiethics-domain",
-      "label": "AIEthicsDomain"
-    },
-    {
       "slug": "accessibility-audit-tool",
       "label": "Accessibility Audit Tool"
     },
@@ -258,10 +250,6 @@
     {
       "slug": "application-layer",
       "label": "Application Layer"
-    },
-    {
-      "slug": "artificial-intelligence-domain",
-      "label": "Artificial Intelligence Domain"
     },
     {
       "slug": "artificial-intelligence",
@@ -500,12 +488,28 @@
       "label": "Metaverse Technology"
     },
     {
+      "slug": "model-context-protocol",
+      "label": "Model Context Protocol"
+    },
+    {
       "slug": "non-linear-storytelling",
       "label": "Non Linear Storytelling"
     },
     {
+      "slug": "nostr-protocol",
+      "label": "Nostr Protocol"
+    },
+    {
+      "slug": "open-xr",
+      "label": "OpenXR"
+    },
+    {
       "slug": "robotics-systems",
       "label": "Robotics Systems"
+    },
+    {
+      "slug": "self-presence",
+      "label": "Self Presence"
     },
     {
       "slug": "shared-spatial-anchors",
@@ -516,20 +520,20 @@
       "label": "Social Presence"
     },
     {
+      "slug": "social-presence",
+      "label": "Social Presence"
+    },
+    {
+      "slug": "solid-pod",
+      "label": "Solid Pod"
+    },
+    {
       "slug": "tele-107-ai-meeting-assistants",
       "label": "TELE-107-ai-meeting-assistants"
     },
     {
       "slug": "tele-252-dao-governance-telecollaboration",
       "label": "TELE-252-dao-governance-telecollaboration"
-    },
-    {
-      "slug": "technology-domain",
-      "label": "Technology Domain"
-    },
-    {
-      "slug": "telecollaboration-and-telepresence-domain",
-      "label": "Telecollaboration and Telepresence Domain"
     },
     {
       "slug": "telecollaboration-and-telepresence",
@@ -540,12 +544,40 @@
       "label": "Testing Process"
     },
     {
+      "slug": "threaded-messaging",
+      "label": "Threaded Messaging"
+    },
+    {
+      "slug": "video-async",
+      "label": "Video Async"
+    },
+    {
       "slug": "virtual-meeting",
       "label": "Virtual Meeting"
     },
     {
+      "slug": "voice-memo",
+      "label": "Voice Memo"
+    },
+    {
+      "slug": "web-assembly",
+      "label": "WebAssembly"
+    },
+    {
+      "slug": "web-rtc",
+      "label": "WebRTC"
+    },
+    {
       "slug": "tc-0002-collaborative-document-editing",
       "label": "tc 0002 collaborative document editing"
+    },
+    {
+      "slug": "tc-0002-collaborative-document-editing",
+      "label": "tc 0002 collaborative document editing"
+    },
+    {
+      "slug": "tc-0003-telepresence-robot",
+      "label": "tc 0003 telepresence robot"
     },
     {
       "slug": "tc-0003-telepresence-robot",

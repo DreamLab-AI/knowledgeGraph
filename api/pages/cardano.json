@@ -8,7 +8,7 @@
   "definition": "Cardano is a public proof-of-stake blockchain platform launched in 2017 by IOHK, with Charles Hoskinson, a co-founder of Ethereum, among its founders. It is distinctive for its emphasis on peer-reviewed academic research and formal methods, and its consensus protocol Ouroboros was the first proof-of-stake protocol with published security proofs. The platform separates a settlement layer for its ADA cryptocurrency from a computation layer for smart contracts, which were enabled through the Alonzo upgrade in 2021. Cardano uses an extended UTXO accounting model and the functional language Plutus for on-chain logic.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:blockchain-domain",
+      "id": "urn:ngm:class:blockchain",
       "label": "Blockchain Domain"
     }
   ],
@@ -151,7 +151,7 @@
       "label": "Ethereum"
     },
     {
-      "slug": "blockchain-domain",
+      "slug": "blockchain",
       "label": "Blockchain Domain"
     },
     {
@@ -179,10 +179,6 @@
     {
       "slug": "cryptocurrency",
       "label": "Cryptocurrency"
-    },
-    {
-      "slug": "cryptographic-domain",
-      "label": "Cryptographic Domain"
     },
     {
       "slug": "dao-tooling",
@@ -227,10 +223,6 @@
     {
       "slug": "telecollaboration-and-telepresence",
       "label": "Telecollaboration and Telepresence"
-    },
-    {
-      "slug": "token-economics-domain",
-      "label": "Token Economics Domain"
     },
     {
       "slug": "utxo",

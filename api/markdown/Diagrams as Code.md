@@ -247,7 +247,7 @@ public:: true
       "vc:label": "Kembhavi Salvato et al 2016 AI2D Diagram Is Worth a Dozen Images ECCV"
     },
     {
-      "@id": "urn:visionflow:linked:knowledge-representation-domain",
+      "@id": "urn:visionflow:linked:knowledge-representation",
       "vc:label": "KnowledgeRepresentationDomain"
     },
     {
@@ -423,7 +423,7 @@ public:: true
       "vc:label": "Sequence Diagram"
     },
     {
-      "@id": "urn:visionflow:linked:software-engineering-domain",
+      "@id": "urn:visionflow:linked:software-engineering",
       "vc:label": "SoftwareEngineeringDomain"
     },
     {
@@ -579,7 +579,7 @@ public:: true
       "vc:label": "ChatGPT"
     },
     {
-      "@id": "urn:visionflow:owl:class:infrastructure-domain",
+      "@id": "urn:visionflow:owl:class:infrastructure",
       "vc:label": "InfrastructureDomain"
     },
     {
@@ -1208,7 +1208,7 @@ public:: true
     },
     {
       "raw": "[[KnowledgeRepresentationDomain]]",
-      "resolved": "urn:visionflow:linked:knowledge-representation-domain",
+      "resolved": "urn:visionflow:linked:knowledge-representation",
       "kind": "StubLink"
     },
     {
@@ -1428,7 +1428,7 @@ public:: true
     },
     {
       "raw": "[[SoftwareEngineeringDomain]]",
-      "resolved": "urn:visionflow:linked:software-engineering-domain",
+      "resolved": "urn:visionflow:linked:software-engineering",
       "kind": "StubLink"
     },
     {
@@ -1623,7 +1623,7 @@ public:: true
     },
     {
       "raw": "[[InfrastructureDomain]]",
-      "resolved": "urn:visionflow:owl:class:infrastructure-domain",
+      "resolved": "urn:visionflow:owl:class:infrastructure",
       "kind": "ResolvedLink"
     },
     {

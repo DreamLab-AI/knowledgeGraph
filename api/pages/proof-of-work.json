@@ -581,7 +581,7 @@
       "label": "Blockchain"
     },
     {
-      "slug": "blockchain-domain",
+      "slug": "blockchain",
       "label": "BlockchainDomain"
     },
     {
@@ -825,10 +825,6 @@
     {
       "slug": "cryptocurrency",
       "label": "Cryptocurrency"
-    },
-    {
-      "slug": "cryptographic-domain",
-      "label": "Cryptographic Domain"
     },
     {
       "slug": "digital-asset-risks",

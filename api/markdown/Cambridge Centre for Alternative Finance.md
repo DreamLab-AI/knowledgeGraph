@@ -23,7 +23,7 @@ public:: true
       "vc:label": "Bitcoin Environmental Issues"
     },
     {
-      "@id": "urn:visionflow:linked:financial-infrastructure-domain",
+      "@id": "urn:visionflow:linked:financial-infrastructure",
       "vc:label": "Financial Infrastructure Domain"
     }
   ],
@@ -55,7 +55,7 @@ public:: true
   "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:financial-infrastructure-domain",
+      "@id": "urn:ngm:class:financial-infrastructure",
       "label": "Financial Infrastructure Domain"
     }
   ],
@@ -145,7 +145,7 @@ public:: true
     },
     {
       "raw": "[[Financial Infrastructure Domain]]",
-      "resolved": "urn:visionflow:linked:financial-infrastructure-domain",
+      "resolved": "urn:visionflow:linked:financial-infrastructure",
       "kind": "ResolvedLink"
     }
   ],

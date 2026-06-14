@@ -154,11 +154,11 @@
       "label": "Proof of Stake"
     },
     {
-      "slug": "governance-domain",
+      "slug": "governance",
       "label": "Governance Domain"
     },
     {
-      "slug": "blockchain-domain",
+      "slug": "blockchain",
       "label": "Blockchain Domain"
     },
     {

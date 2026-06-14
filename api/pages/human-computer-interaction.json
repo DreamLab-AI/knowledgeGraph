@@ -145,8 +145,32 @@
   ],
   "backlinks": [
     {
+      "slug": "ai-companions",
+      "label": "AI companions"
+    },
+    {
+      "slug": "ai-in-games",
+      "label": "AI in Games"
+    },
+    {
+      "slug": "ar-frame",
+      "label": "AR Frame"
+    },
+    {
+      "slug": "accessibility",
+      "label": "Accessibility"
+    },
+    {
       "slug": "attention-aware-interaction",
       "label": "Attention Aware Interaction"
+    },
+    {
+      "slug": "brain-computer-interfaces",
+      "label": "Brain Computer Interfaces"
+    },
+    {
+      "slug": "chatbots",
+      "label": "Chatbots"
     },
     {
       "slug": "chatbots",
@@ -157,8 +181,24 @@
       "label": "Cognitive AI"
     },
     {
+      "slug": "comfy-ui-client",
+      "label": "ComfyUI Client"
+    },
+    {
+      "slug": "computer-use-and-browser-agents",
+      "label": "Computer Use and Browser Agents"
+    },
+    {
+      "slug": "education-and-ai",
+      "label": "Education and AI"
+    },
+    {
       "slug": "emotion-aware-interaction",
       "label": "Emotion Aware Interaction"
+    },
+    {
+      "slug": "empathetic-ai",
+      "label": "Empathetic AI"
     },
     {
       "slug": "empathetic-ai",
@@ -173,8 +213,12 @@
       "label": "Hand Tracking"
     },
     {
-      "slug": "interaction-domain",
-      "label": "Interaction Domain"
+      "slug": "hand-tracking",
+      "label": "Hand Tracking"
+    },
+    {
+      "slug": "mixed-reality",
+      "label": "Mixed Reality"
     },
     {
       "slug": "mixed-reality",
@@ -185,8 +229,16 @@
       "label": "Pose Estimation"
     },
     {
+      "slug": "presence-indicator",
+      "label": "Presence Indicator"
+    },
+    {
       "slug": "presentation-layer",
       "label": "Presentation Layer"
+    },
+    {
+      "slug": "product-design",
+      "label": "Product Design"
     },
     {
       "slug": "product-design",
@@ -197,8 +249,16 @@
       "label": "Prompt Engineering"
     },
     {
+      "slug": "prompt-engineering",
+      "label": "Prompt Engineering"
+    },
+    {
       "slug": "safety-and-alignment",
       "label": "Safety and alignment"
+    },
+    {
+      "slug": "screen-sharing",
+      "label": "Screen Sharing"
     },
     {
       "slug": "spatial-interaction",

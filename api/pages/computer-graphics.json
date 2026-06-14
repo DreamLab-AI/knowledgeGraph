@@ -152,6 +152,10 @@
       "label": "3D Rendering Engine"
     },
     {
+      "slug": "collision-detection",
+      "label": "Collision Detection"
+    },
+    {
       "slug": "fbx",
       "label": "FBX"
     },
@@ -182,6 +186,14 @@
     {
       "slug": "procedural-and-hybrid-4-d",
       "label": "Procedural and Hybrid 4D"
+    },
+    {
+      "slug": "procedural-and-hybrid-4-d",
+      "label": "Procedural and Hybrid 4D"
+    },
+    {
+      "slug": "ray-tracing",
+      "label": "Ray Tracing"
     },
     {
       "slug": "ray-tracing",

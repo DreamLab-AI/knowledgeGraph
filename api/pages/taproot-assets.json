@@ -383,7 +383,7 @@
       "label": "Cryptographic Commitment Scheme"
     },
     {
-      "slug": "cryptography-domain",
+      "slug": "cryptography",
       "label": "CryptographyDomain"
     },
     {
@@ -391,7 +391,7 @@
       "label": "Decentralised Exchange"
     },
     {
-      "slug": "digital-asset-domain",
+      "slug": "digital-asset",
       "label": "DigitalAssetDomain"
     },
     {
@@ -495,7 +495,7 @@
       "label": "Ordinals Protocol"
     },
     {
-      "slug": "payment-systems-domain",
+      "slug": "bc-defi-and-economics",
       "label": "PaymentSystemsDomain"
     },
     {
@@ -627,7 +627,7 @@
       "label": "Bitcoin Technical Overview"
     },
     {
-      "slug": "blockchain-domain",
+      "slug": "blockchain",
       "label": "BlockchainDomain"
     },
     {

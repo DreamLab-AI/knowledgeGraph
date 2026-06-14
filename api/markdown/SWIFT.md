@@ -23,7 +23,7 @@ public:: true
       "vc:label": "Interbank Settlement"
     },
     {
-      "@id": "urn:visionflow:linked:payment-systems-domain",
+      "@id": "urn:visionflow:linked:bc-defi-and-economics",
       "vc:label": "Payment Systems Domain"
     },
     {
@@ -31,7 +31,7 @@ public:: true
       "vc:label": "ISO 20022"
     },
     {
-      "@id": "urn:visionflow:linked:financial-infrastructure-domain",
+      "@id": "urn:visionflow:linked:financial-infrastructure",
       "vc:label": "Financial Infrastructure Domain"
     }
   ],
@@ -63,7 +63,7 @@ public:: true
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": {
-    "@id": "urn:ngm:class:financial-infrastructure-domain",
+    "@id": "urn:ngm:class:financial-infrastructure",
     "label": "Financial Infrastructure Domain"
   },
   "relations": {
@@ -121,7 +121,7 @@ public:: true
     ],
     "dependsOn": [
       {
-        "@id": "urn:ngm:class:payment-systems-domain",
+        "@id": "urn:ngm:class:bc-defi-and-economics",
         "label": "Payment Systems Domain"
       },
       {
@@ -231,7 +231,7 @@ public:: true
     },
     {
       "raw": "[[Payment Systems Domain]]",
-      "resolved": "urn:visionflow:linked:payment-systems-domain",
+      "resolved": "urn:visionflow:linked:bc-defi-and-economics",
       "kind": "ResolvedLink"
     },
     {
@@ -241,7 +241,7 @@ public:: true
     },
     {
       "raw": "[[Financial Infrastructure Domain]]",
-      "resolved": "urn:visionflow:linked:financial-infrastructure-domain",
+      "resolved": "urn:visionflow:linked:financial-infrastructure",
       "kind": "ResolvedLink"
     }
   ],

@@ -16,7 +16,7 @@ alias:: PolicyEnforcement
       "vc:label": "Narrative Gold Mine"
     },
     {
-      "@id": "urn:visionflow:linked:security-domain",
+      "@id": "urn:visionflow:linked:security",
       "vc:label": "SecurityDomain"
     },
     {
@@ -168,7 +168,7 @@ alias:: PolicyEnforcement
       "vc:label": "Identity Management System"
     },
     {
-      "@id": "urn:visionflow:owl:class:infrastructure-domain",
+      "@id": "urn:visionflow:owl:class:infrastructure",
       "vc:label": "InfrastructureDomain"
     },
     {
@@ -437,7 +437,7 @@ alias:: PolicyEnforcement
     },
     {
       "raw": "[[SecurityDomain]]",
-      "resolved": "urn:visionflow:linked:security-domain",
+      "resolved": "urn:visionflow:linked:security",
       "kind": "StubLink"
     },
     {
@@ -627,7 +627,7 @@ alias:: PolicyEnforcement
     },
     {
       "raw": "[[InfrastructureDomain]]",
-      "resolved": "urn:visionflow:owl:class:infrastructure-domain",
+      "resolved": "urn:visionflow:owl:class:infrastructure",
       "kind": "ResolvedLink"
     },
     {

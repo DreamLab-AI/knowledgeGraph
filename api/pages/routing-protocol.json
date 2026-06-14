@@ -73,10 +73,6 @@
     {
       "slug": "latency",
       "label": "Latency"
-    },
-    {
-      "slug": "networking-domain",
-      "label": "Networking Domain"
     }
   ]
 }

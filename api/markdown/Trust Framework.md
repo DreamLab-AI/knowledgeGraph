@@ -171,7 +171,7 @@ public:: true
       "vc:label": "Privacy Enhancing Technologies"
     },
     {
-      "@id": "urn:visionflow:linked:regulatory-compliance-domain",
+      "@id": "urn:visionflow:linked:regulatory-compliance",
       "vc:label": "RegulatoryComplianceDomain"
     },
     {
@@ -791,7 +791,7 @@ public:: true
     },
     {
       "raw": "[[RegulatoryComplianceDomain]]",
-      "resolved": "urn:visionflow:linked:regulatory-compliance-domain",
+      "resolved": "urn:visionflow:linked:regulatory-compliance",
       "kind": "StubLink"
     },
     {

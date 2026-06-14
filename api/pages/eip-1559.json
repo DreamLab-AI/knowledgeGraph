@@ -167,10 +167,6 @@
       "label": "Proof Of Work"
     },
     {
-      "slug": "token-economics-domain",
-      "label": "Token Economics Domain"
-    },
-    {
       "slug": "tokenomics-governance",
       "label": "Tokenomics Governance"
     }

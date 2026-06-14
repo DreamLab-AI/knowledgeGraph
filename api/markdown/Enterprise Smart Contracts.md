@@ -179,7 +179,7 @@ public:: true
       "vc:label": "Enterprise Ethereum Alliance"
     },
     {
-      "@id": "urn:visionflow:linked:enterprise-software-domain",
+      "@id": "urn:visionflow:linked:infra-software-engineering",
       "vc:label": "EnterpriseSoftwareDomain"
     },
     {
@@ -311,7 +311,7 @@ public:: true
       "vc:label": "Legal Agreement"
     },
     {
-      "@id": "urn:visionflow:linked:legal-tech-domain",
+      "@id": "urn:visionflow:linked:infra-legal-and-regulatory",
       "vc:label": "LegalTechDomain"
     },
     {
@@ -483,7 +483,7 @@ public:: true
       "vc:label": "ApplicationLayer"
     },
     {
-      "@id": "urn:visionflow:owl:class:blockchain-domain",
+      "@id": "urn:visionflow:owl:class:blockchain",
       "vc:label": "BlockchainDomain"
     },
     {
@@ -1143,7 +1143,7 @@ public:: true
     },
     {
       "raw": "[[EnterpriseSoftwareDomain]]",
-      "resolved": "urn:visionflow:linked:enterprise-software-domain",
+      "resolved": "urn:visionflow:linked:infra-software-engineering",
       "kind": "StubLink"
     },
     {
@@ -1308,7 +1308,7 @@ public:: true
     },
     {
       "raw": "[[LegalTechDomain]]",
-      "resolved": "urn:visionflow:linked:legal-tech-domain",
+      "resolved": "urn:visionflow:linked:infra-legal-and-regulatory",
       "kind": "StubLink"
     },
     {
@@ -1523,7 +1523,7 @@ public:: true
     },
     {
       "raw": "[[BlockchainDomain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-domain",
+      "resolved": "urn:visionflow:owl:class:blockchain",
       "kind": "ResolvedLink"
     },
     {

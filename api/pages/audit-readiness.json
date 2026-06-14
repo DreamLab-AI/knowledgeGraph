@@ -29,24 +29,15 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:compliance-domain",
+        "id": "urn:ngm:class:compliance",
         "label": "Compliance Domain"
       },
       {
-        "id": "urn:ngm:class:regulatory-compliance-domain",
+        "id": "urn:ngm:class:regulatory-compliance",
         "label": "Regulatory Compliance Domain"
       }
     ]
   },
   "wikilinks": [],
-  "backlinks": [
-    {
-      "slug": "compliance-domain",
-      "label": "Compliance Domain"
-    },
-    {
-      "slug": "regulatory-compliance-domain",
-      "label": "Regulatory Compliance Domain"
-    }
-  ]
+  "backlinks": []
 }

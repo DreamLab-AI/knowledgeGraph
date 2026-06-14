@@ -155,7 +155,7 @@
       "label": "machine learning"
     },
     {
-      "slug": "metaverse-domain",
+      "slug": "metaverse",
       "label": "MetaverseDomain"
     },
     {
@@ -183,10 +183,6 @@
     {
       "slug": "large-language-models",
       "label": "Large Language Models"
-    },
-    {
-      "slug": "natural-language-processing-domain",
-      "label": "Natural Language Processing Domain"
     },
     {
       "slug": "semantic-search",

@@ -259,11 +259,11 @@
       "label": "Cloud Storage Infrastructure"
     },
     {
-      "slug": "compliance-domain",
+      "slug": "compliance",
       "label": "ComplianceDomain"
     },
     {
-      "slug": "distributed-collaboration-domain",
+      "slug": "distributed-collaboration",
       "label": "DistributedCollaborationDomain"
     },
     {

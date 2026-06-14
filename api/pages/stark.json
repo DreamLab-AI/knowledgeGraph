@@ -8,7 +8,7 @@
   "definition": "A STARK is a scalable transparent argument of knowledge, a cryptographic proof system that lets a verifier check a computation was performed correctly without a trusted setup and with proof verification far cheaper than re-execution.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:cryptography-domain",
+      "id": "urn:ngm:class:cryptography",
       "label": "Cryptography Domain"
     }
   ],
@@ -57,7 +57,7 @@
       "label": "Blockchain"
     },
     {
-      "slug": "cryptography-domain",
+      "slug": "cryptography",
       "label": "Cryptography Domain"
     }
   ],

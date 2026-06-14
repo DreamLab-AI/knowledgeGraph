@@ -163,16 +163,8 @@
   ],
   "backlinks": [
     {
-      "slug": "financial-regulation-domain",
-      "label": "Financial Regulation Domain"
-    },
-    {
       "slug": "risk-assessment",
       "label": "Risk Assessment"
-    },
-    {
-      "slug": "risk-management-domain",
-      "label": "Risk Management Domain"
     }
   ]
 }

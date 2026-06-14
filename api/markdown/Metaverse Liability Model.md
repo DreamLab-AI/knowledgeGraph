@@ -115,11 +115,11 @@ public:: true
       "vc:label": "Risk Management"
     },
     {
-      "@id": "urn:visionflow:owl:class:trust-and-governance-domain",
+      "@id": "urn:visionflow:owl:class:ai-governance-and-ethics",
       "vc:label": "TrustAndGovernanceDomain"
     },
     {
-      "@id": "urn:visionflow:owl:class:virtual-society-domain",
+      "@id": "urn:visionflow:owl:class:virtual-society",
       "vc:label": "VirtualSocietyDomain"
     },
     {
@@ -399,12 +399,12 @@ public:: true
     },
     {
       "raw": "[[TrustAndGovernanceDomain]]",
-      "resolved": "urn:visionflow:owl:class:trust-and-governance-domain",
+      "resolved": "urn:visionflow:owl:class:ai-governance-and-ethics",
       "kind": "ResolvedLink"
     },
     {
       "raw": "[[VirtualSocietyDomain]]",
-      "resolved": "urn:visionflow:owl:class:virtual-society-domain",
+      "resolved": "urn:visionflow:owl:class:virtual-society",
       "kind": "ResolvedLink"
     },
     {

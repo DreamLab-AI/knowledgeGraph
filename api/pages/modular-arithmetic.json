@@ -8,7 +8,7 @@
   "definition": "Modular arithmetic performs integer arithmetic that wraps around a fixed modulus, so numbers are treated as equivalent if they differ by a multiple of that modulus.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:cryptography-domain",
+      "id": "urn:ngm:class:cryptography",
       "label": "Cryptography Domain"
     }
   ],
@@ -57,7 +57,7 @@
       "label": "Cryptography"
     },
     {
-      "slug": "cryptography-domain",
+      "slug": "cryptography",
       "label": "Cryptography Domain"
     }
   ],

@@ -25,7 +25,7 @@ public:: true
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:consumer-protection", "label": "Consumer Protection"}, {"@id": "urn:ngm:class:regulatory-domain", "label": "Regulatory Domain"}]
+    "relatedTo": [{"@id": "urn:ngm:class:consumer-protection", "label": "Consumer Protection"}, {"@id": "urn:ngm:class:infra-legal-and-regulatory", "label": "Regulatory Domain"}]
   },
   "quality": 0.72
 }

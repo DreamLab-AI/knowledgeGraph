@@ -48,10 +48,6 @@
     {
       "slug": "communication-protocol",
       "label": "Communication Protocol"
-    },
-    {
-      "slug": "networking-domain",
-      "label": "Networking Domain"
     }
   ]
 }

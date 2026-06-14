@@ -138,7 +138,7 @@
         "label": "Middleware Layer"
       },
       {
-        "id": "urn:ngm:class:trust-and-governance-domain",
+        "id": "urn:ngm:class:ai-governance-and-ethics",
         "label": "TrustAndGovernanceDomain"
       }
     ]
@@ -197,7 +197,7 @@
       "label": "Telecollaboration"
     },
     {
-      "slug": "trust-and-governance-domain",
+      "slug": "ai-governance-and-ethics",
       "label": "TrustAndGovernanceDomain"
     },
     {

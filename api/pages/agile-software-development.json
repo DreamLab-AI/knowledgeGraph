@@ -8,7 +8,7 @@
   "definition": "Agile Software Development is a family of iterative, incremental approaches to building software that prioritise working product increments, continuous stakeholder collaboration, and rapid adaptation to changing requirements over rigid up-front planning. Rooted in the 2001 Agile Manifesto, it encompasses frameworks such as Scrum, Kanban, Extreme Programming, and SAFe, each operationalising core values through time-boxed iterations, cross-functional teams, and frequent feedback loops. Agile practices shorten the feedback cycle between developers and end users, reduce the cost of change, and improve delivery predictability by surfacing risk early. It has become the dominant paradigm for professional software delivery and is increasingly applied to hardware, policy, and organisational transformation.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:software-engineering-domain",
+      "id": "urn:ngm:class:software-engineering",
       "label": "Software Engineering Domain"
     }
   ],
@@ -143,7 +143,7 @@
       "label": "Software Development"
     },
     {
-      "slug": "software-engineering-domain",
+      "slug": "software-engineering",
       "label": "Software Engineering Domain"
     },
     {

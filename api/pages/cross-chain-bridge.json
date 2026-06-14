@@ -435,7 +435,7 @@
       "label": "Cryptographic Proof System"
     },
     {
-      "slug": "cryptography-domain",
+      "slug": "cryptography",
       "label": "CryptographyDomain"
     },
     {
@@ -443,7 +443,7 @@
       "label": "Custodial Asset Transfer"
     },
     {
-      "slug": "de-fi-domain",
+      "slug": "bc-defi-and-economics",
       "label": "DeFiDomain"
     },
     {
@@ -511,7 +511,7 @@
       "label": "Intent-Based Bridge"
     },
     {
-      "slug": "interoperability-domain",
+      "slug": "interoperability",
       "label": "InteroperabilityDomain"
     },
     {
@@ -723,7 +723,7 @@
       "label": "Atomic Swap"
     },
     {
-      "slug": "blockchain-domain",
+      "slug": "blockchain",
       "label": "BlockchainDomain"
     },
     {
@@ -807,10 +807,6 @@
     {
       "slug": "instant-value-settlement",
       "label": "Instant value settlement"
-    },
-    {
-      "slug": "interoperability-domain",
-      "label": "Interoperability Domain"
     },
     {
       "slug": "layer-0",

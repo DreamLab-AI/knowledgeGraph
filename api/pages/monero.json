@@ -146,7 +146,7 @@
       "label": "Zcash"
     },
     {
-      "slug": "blockchain-domain",
+      "slug": "blockchain",
       "label": "Blockchain Domain"
     }
   ],
@@ -166,10 +166,6 @@
     {
       "slug": "cryptocurrency",
       "label": "Cryptocurrency"
-    },
-    {
-      "slug": "cryptographic-domain",
-      "label": "Cryptographic Domain"
     },
     {
       "slug": "fatfrecommendations",

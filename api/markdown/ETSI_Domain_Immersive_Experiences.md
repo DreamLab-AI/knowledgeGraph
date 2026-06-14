@@ -43,7 +43,7 @@ public:: true
       "vc:label": "Computer Vision"
     },
     {
-      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "@id": "urn:visionflow:owl:class:metaverse",
       "vc:label": "MetaverseDomain"
     },
     {
@@ -99,7 +99,7 @@ public:: true
       {"@id": "urn:ngm:class:mixed-reality", "label": "Mixed Reality"}
     ],
     "requires": [
-      {"@id": "urn:ngm:class:spatial-computing-paradigm", "label": "Spatial Computing"},
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
       {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"}
     ],
     "uses": [
@@ -168,7 +168,7 @@ public:: true
     },
     {
       "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "resolved": "urn:visionflow:owl:class:metaverse",
       "kind": "ResolvedLink"
     },
     {

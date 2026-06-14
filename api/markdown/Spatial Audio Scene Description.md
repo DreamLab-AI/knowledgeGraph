@@ -91,7 +91,7 @@ public:: true
       "vc:label": "Compute Layer"
     },
     {
-      "@id": "urn:visionflow:owl:class:creative-media-domain",
+      "@id": "urn:visionflow:owl:class:ai-application",
       "vc:label": "Creative Media Domain"
     },
     {
@@ -103,7 +103,7 @@ public:: true
       "vc:label": "Immersive Audio System"
     },
     {
-      "@id": "urn:visionflow:owl:class:interaction-domain",
+      "@id": "urn:visionflow:owl:class:sc-interaction",
       "vc:label": "Interaction Domain"
     },
     {
@@ -361,7 +361,7 @@ public:: true
     },
     {
       "raw": "[[Creative Media Domain]]",
-      "resolved": "urn:visionflow:owl:class:creative-media-domain",
+      "resolved": "urn:visionflow:owl:class:ai-application",
       "kind": "ResolvedLink"
     },
     {
@@ -376,7 +376,7 @@ public:: true
     },
     {
       "raw": "[[Interaction Domain]]",
-      "resolved": "urn:visionflow:owl:class:interaction-domain",
+      "resolved": "urn:visionflow:owl:class:sc-interaction",
       "kind": "ResolvedLink"
     },
     {

@@ -33,7 +33,7 @@
         "label": "Consumer Protection"
       },
       {
-        "id": "urn:ngm:class:regulatory-domain",
+        "id": "urn:ngm:class:infra-legal-and-regulatory",
         "label": "Regulatory Domain"
       }
     ]
@@ -43,10 +43,6 @@
     {
       "slug": "consumer-protection",
       "label": "Consumer Protection"
-    },
-    {
-      "slug": "regulatory-domain",
-      "label": "Regulatory Domain"
     }
   ]
 }

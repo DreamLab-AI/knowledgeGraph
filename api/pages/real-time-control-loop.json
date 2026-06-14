@@ -29,7 +29,7 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:cyber-physical-systems-domain",
+        "id": "urn:ngm:class:cyber-physical-systems",
         "label": "Cyber-Physical Systems Domain"
       },
       {
@@ -43,10 +43,6 @@
     {
       "slug": "admittance-control",
       "label": "Admittance Control"
-    },
-    {
-      "slug": "cyber-physical-systems-domain",
-      "label": "Cyber Physical Systems Domain"
     }
   ]
 }

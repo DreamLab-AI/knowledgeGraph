@@ -139,7 +139,7 @@ public:: true
       "vc:label": "Knowledge Graph Embeddings"
     },
     {
-      "@id": "urn:visionflow:linked:knowledge-representation-domain",
+      "@id": "urn:visionflow:linked:knowledge-representation",
       "vc:label": "KnowledgeRepresentationDomain"
     },
     {
@@ -283,7 +283,7 @@ public:: true
       "vc:label": "Agents"
     },
     {
-      "@id": "urn:visionflow:owl:class:ai-grounded-domain",
+      "@id": "urn:visionflow:owl:class:ai-technique",
       "vc:label": "AI-GroundedDomain"
     },
     {
@@ -1059,7 +1059,7 @@ public:: true
     },
     {
       "raw": "[[KnowledgeRepresentationDomain]]",
-      "resolved": "urn:visionflow:linked:knowledge-representation-domain",
+      "resolved": "urn:visionflow:linked:knowledge-representation",
       "kind": "StubLink"
     },
     {
@@ -1239,7 +1239,7 @@ public:: true
     },
     {
       "raw": "[[AI-GroundedDomain]]",
-      "resolved": "urn:visionflow:owl:class:ai-grounded-domain",
+      "resolved": "urn:visionflow:owl:class:ai-technique",
       "kind": "ResolvedLink"
     },
     {

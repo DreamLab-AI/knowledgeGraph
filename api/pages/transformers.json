@@ -295,7 +295,7 @@
       "label": "DeBERTa"
     },
     {
-      "slug": "deep-learning-domain",
+      "slug": "deep-learning",
       "label": "DeepLearningDomain"
     },
     {
@@ -387,7 +387,7 @@
       "label": "Multimodal Learning"
     },
     {
-      "slug": "natural-language-processing-domain",
+      "slug": "natural-language-processing",
       "label": "NaturalLanguageProcessingDomain"
     },
     {

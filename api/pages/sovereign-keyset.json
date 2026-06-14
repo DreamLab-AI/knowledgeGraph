@@ -108,7 +108,7 @@
       "label": "ADR-013"
     },
     {
-      "slug": "agentic-systems-domain",
+      "slug": "ai-application",
       "label": "AgenticSystemsDomain"
     },
     {
@@ -136,7 +136,7 @@
       "label": "Credential Issuance"
     },
     {
-      "slug": "cryptography-domain",
+      "slug": "cryptography",
       "label": "CryptographyDomain"
     },
     {
@@ -148,7 +148,7 @@
       "label": "Hardware Security Module (optional)"
     },
     {
-      "slug": "identity-domain",
+      "slug": "identity",
       "label": "IdentityDomain"
     },
     {

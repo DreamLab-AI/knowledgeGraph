@@ -328,7 +328,7 @@
       "label": "Chain-of-Thought Prompting"
     },
     {
-      "slug": "cognitive-science-domain",
+      "slug": "cognitive-science",
       "label": "CognitiveScienceDomain"
     },
     {
@@ -340,7 +340,7 @@
       "label": "Formal Logic"
     },
     {
-      "slug": "formal-methods-domain",
+      "slug": "ai-research-area",
       "label": "FormalMethodsDomain"
     },
     {
@@ -432,7 +432,7 @@
       "label": "Agents"
     },
     {
-      "slug": "ai-grounded-domain",
+      "slug": "ai-technique",
       "label": "AI-GroundedDomain"
     },
     {
@@ -480,7 +480,7 @@
       "label": "Competition in AI"
     },
     {
-      "slug": "computation-and-intelligence-domain",
+      "slug": "ai-research-area",
       "label": "ComputationAndIntelligenceDomain"
     },
     {
@@ -513,10 +513,6 @@
     }
   ],
   "backlinks": [
-    {
-      "slug": "cognitive-science-domain",
-      "label": "Cognitive Science Domain"
-    },
     {
       "slug": "large-language-models",
       "label": "Large Language Models"

@@ -55,7 +55,7 @@ elevatedFrom:: [[today presentation 2]]
       {"@id": "urn:ngm:class:immersive-learning", "label": "Immersive Learning"}
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:spatial-computing-paradigm", "label": "Spatial Computing"},
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
       {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"}
     ]
   },

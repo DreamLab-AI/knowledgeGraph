@@ -51,7 +51,7 @@
         "label": "Social Robotics"
       },
       {
-        "id": "urn:ngm:class:robotics-domain",
+        "id": "urn:ngm:class:robotics",
         "label": "Robotics Domain"
       }
     ]
@@ -94,7 +94,7 @@
       "label": "Human-Robot Interaction"
     },
     {
-      "slug": "metaverse-domain",
+      "slug": "metaverse",
       "label": "MetaverseDomain"
     }
   ],

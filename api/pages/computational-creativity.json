@@ -33,7 +33,7 @@
         "label": "AI in Games"
       },
       {
-        "id": "urn:ngm:class:creative-ai-domain",
+        "id": "urn:ngm:class:creative-ai",
         "label": "Creative AI Domain"
       }
     ]
@@ -43,10 +43,6 @@
     {
       "slug": "ai-in-games",
       "label": "AI in Games"
-    },
-    {
-      "slug": "creative-ai-domain",
-      "label": "Creative AI Domain"
     }
   ]
 }

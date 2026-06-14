@@ -96,7 +96,7 @@ alias:: TELE-021-augmented-reality-collaboration
       "label": "Telepresence"
     },
     {
-      "@id": "urn:ngm:class:telecollaboration-domain",
+      "@id": "urn:ngm:class:telecollaboration",
       "label": "TELE-002-telecollaboration"
     }
   ],

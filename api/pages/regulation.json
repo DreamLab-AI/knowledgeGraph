@@ -176,6 +176,14 @@
       "label": "Consumer Protection"
     },
     {
+      "slug": "consumer-protection",
+      "label": "Consumer Protection"
+    },
+    {
+      "slug": "cross-border-compliance",
+      "label": "Cross Border Compliance"
+    },
+    {
       "slug": "economics",
       "label": "Economics"
     },
@@ -198,6 +206,10 @@
     {
       "slug": "regulatory-frameworks",
       "label": "Regulatory Frameworks"
+    },
+    {
+      "slug": "regulatory-reporting",
+      "label": "Regulatory Reporting"
     },
     {
       "slug": "regulatory-requirements",

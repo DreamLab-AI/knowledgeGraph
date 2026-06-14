@@ -555,7 +555,7 @@
       "label": "Machinery Regulation"
     },
     {
-      "slug": "manufacturing-domain",
+      "slug": "robo-actuation-and-control",
       "label": "ManufacturingDomain"
     },
     {
@@ -663,7 +663,7 @@
       "label": "Protective Measure"
     },
     {
-      "slug": "regulatory-compliance-domain",
+      "slug": "regulatory-compliance",
       "label": "RegulatoryComplianceDomain"
     },
     {

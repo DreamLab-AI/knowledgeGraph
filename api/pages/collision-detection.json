@@ -419,7 +419,7 @@
       "label": "ComputationalGeometryDomain"
     },
     {
-      "slug": "computer-graphics-domain",
+      "slug": "computer-graphics",
       "label": "ComputerGraphicsDomain"
     },
     {
@@ -951,7 +951,7 @@
       "label": "Robotics"
     },
     {
-      "slug": "robotics-domain",
+      "slug": "robotics",
       "label": "RoboticsDomain"
     },
     {

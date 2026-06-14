@@ -340,7 +340,7 @@
       "label": "CLIP"
     },
     {
-      "slug": "computer-vision-domain",
+      "slug": "computer-vision",
       "label": "ComputerVisionDomain"
     },
     {
@@ -404,7 +404,7 @@
       "label": "FVD"
     },
     {
-      "slug": "generative-modelling-domain",
+      "slug": "ai-model-architecture",
       "label": "GenerativeModellingDomain"
     },
     {
@@ -632,7 +632,7 @@
       "label": "Yu et al. 2024 MAGVIT-v2"
     },
     {
-      "slug": "ai-grounded-domain",
+      "slug": "ai-technique",
       "label": "AI-GroundedDomain"
     },
     {

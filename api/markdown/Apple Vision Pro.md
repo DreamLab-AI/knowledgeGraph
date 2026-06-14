@@ -39,7 +39,7 @@ public:: true
       {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}
     ],
     "enables": [
-      {"@id": "urn:ngm:class:spatial-computing-paradigm", "label": "Spatial Computing"},
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
       {"@id": "urn:ngm:class:mixed-reality", "label": "Mixed Reality"},
       {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"},
       {"@id": "urn:ngm:class:spatial-user-interface", "label": "Spatial User Interface"}

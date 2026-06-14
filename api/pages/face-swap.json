@@ -335,7 +335,7 @@
       "label": "CodeFormer"
     },
     {
-      "slug": "computer-vision-domain",
+      "slug": "computer-vision",
       "label": "ComputerVisionDomain"
     },
     {
@@ -467,7 +467,7 @@
       "label": "Gao et al. 2021 InfoSwap"
     },
     {
-      "slug": "generative-modelling-domain",
+      "slug": "ai-model-architecture",
       "label": "GenerativeModellingDomain"
     },
     {
@@ -695,7 +695,7 @@
       "label": "AI Avatars"
     },
     {
-      "slug": "ai-grounded-domain",
+      "slug": "ai-technique",
       "label": "AI-GroundedDomain"
     },
     {

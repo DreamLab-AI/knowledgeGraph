@@ -8,7 +8,7 @@
   "definition": "Market microstructure studies how the rules and mechanics of trading, such as order types, matching and information flow, shape prices, liquidity and transaction costs.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:economics-domain",
+      "id": "urn:ngm:class:economics",
       "label": "Economics Domain"
     }
   ],
@@ -57,19 +57,11 @@
       "label": "Decentralized Exchange"
     },
     {
-      "slug": "economics-domain",
+      "slug": "economics",
       "label": "Economics Domain"
     }
   ],
   "backlinks": [
-    {
-      "slug": "capital-markets-domain",
-      "label": "Capital Markets Domain"
-    },
-    {
-      "slug": "financial-markets-domain",
-      "label": "Financial Markets Domain"
-    },
     {
       "slug": "price-discovery",
       "label": "Price Discovery"

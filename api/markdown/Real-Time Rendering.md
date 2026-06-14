@@ -23,7 +23,7 @@ public:: true
       "vc:label": "Augmented Reality"
     },
     {
-      "@id": "urn:visionflow:owl:class:creative-media-domain",
+      "@id": "urn:visionflow:owl:class:ai-application",
       "vc:label": "CreativeMediaDomain"
     },
     {
@@ -31,7 +31,7 @@ public:: true
       "vc:label": "ETSI_Domain_Immersive_Experiences"
     },
     {
-      "@id": "urn:visionflow:owl:class:technology-domain",
+      "@id": "urn:visionflow:owl:class:infrastructure",
       "vc:label": "Technology Domain"
     },
     {
@@ -232,7 +232,7 @@ public:: true
     },
     {
       "raw": "[[CreativeMediaDomain]]",
-      "resolved": "urn:visionflow:owl:class:creative-media-domain",
+      "resolved": "urn:visionflow:owl:class:ai-application",
       "kind": "ResolvedLink"
     },
     {
@@ -242,7 +242,7 @@ public:: true
     },
     {
       "raw": "[[Technology Domain]]",
-      "resolved": "urn:visionflow:owl:class:technology-domain",
+      "resolved": "urn:visionflow:owl:class:infrastructure",
       "kind": "ResolvedLink"
     },
     {

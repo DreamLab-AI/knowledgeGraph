@@ -299,7 +299,7 @@
       "label": "FIDO2"
     },
     {
-      "slug": "governance-domain",
+      "slug": "governance",
       "label": "GovernanceDomain"
     },
     {
@@ -379,7 +379,7 @@
       "label": "SCIM 2.0"
     },
     {
-      "slug": "security-domain",
+      "slug": "security",
       "label": "SecurityDomain"
     },
     {
@@ -471,7 +471,7 @@
       "label": "Identity Provider"
     },
     {
-      "slug": "infrastructure-domain",
+      "slug": "infrastructure",
       "label": "InfrastructureDomain"
     },
     {

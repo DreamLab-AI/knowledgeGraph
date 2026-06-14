@@ -52,7 +52,7 @@
         "label": "Stereoscopic Rendering"
       },
       {
-        "id": "urn:ngm:class:spatial-computing-paradigm",
+        "id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing"
       }
     ],
@@ -143,7 +143,7 @@
       "label": "Immersive Gaming"
     },
     {
-      "slug": "interaction-domain",
+      "slug": "sc-interaction",
       "label": "InteractionDomain"
     },
     {

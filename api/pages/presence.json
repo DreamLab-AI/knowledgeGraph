@@ -107,7 +107,7 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:interaction-domain",
+        "id": "urn:ngm:class:sc-interaction",
         "label": "Interaction Domain"
       },
       {
@@ -193,7 +193,7 @@
       "label": "Immersive Experience"
     },
     {
-      "slug": "interaction-domain",
+      "slug": "sc-interaction",
       "label": "InteractionDomain"
     },
     {

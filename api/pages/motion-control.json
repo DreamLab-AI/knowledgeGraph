@@ -548,7 +548,7 @@
       "label": "Robotics"
     },
     {
-      "slug": "robotics-domain",
+      "slug": "robotics",
       "label": "RoboticsDomain"
     },
     {
@@ -568,10 +568,6 @@
     {
       "slug": "control-system",
       "label": "Control System"
-    },
-    {
-      "slug": "control-theory-domain",
-      "label": "Control Theory Domain"
     },
     {
       "slug": "dc-servo-motor",

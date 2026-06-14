@@ -58,14 +58,6 @@
   ],
   "backlinks": [
     {
-      "slug": "control-systems-domain",
-      "label": "Control Systems Domain"
-    },
-    {
-      "slug": "control-theory-domain",
-      "label": "Control Theory Domain"
-    },
-    {
       "slug": "control-theory",
       "label": "Control Theory"
     }

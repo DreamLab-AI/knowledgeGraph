@@ -12,7 +12,7 @@ alias:: Hardware-/Platform-Agnostic
   "vc:public": true,
   "vc:outboundWikilinks": [
     {
-      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "@id": "urn:visionflow:owl:class:metaverse",
       "vc:label": "MetaverseDomain"
     }
   ],
@@ -89,7 +89,7 @@ alias:: Hardware-/Platform-Agnostic
   "vc:resolutions": [
     {
       "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "resolved": "urn:visionflow:owl:class:metaverse",
       "kind": "ResolvedLink"
     }
   ],

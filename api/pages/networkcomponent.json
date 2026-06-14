@@ -161,7 +161,7 @@
       "label": "WirelessAccessPoint"
     },
     {
-      "slug": "infrastructure-domain",
+      "slug": "infrastructure",
       "label": "InfrastructureDomain"
     },
     {
@@ -173,10 +173,5 @@
       "label": "NetworkTopology"
     }
   ],
-  "backlinks": [
-    {
-      "slug": "infrastructure-domain",
-      "label": "Infrastructure Domain"
-    }
-  ]
+  "backlinks": []
 }

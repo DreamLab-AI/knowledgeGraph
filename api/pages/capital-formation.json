@@ -29,7 +29,7 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:capital-markets-domain",
+        "id": "urn:ngm:class:bc-defi-and-economics",
         "label": "Capital Markets Domain"
       },
       {
@@ -40,10 +40,6 @@
   },
   "wikilinks": [],
   "backlinks": [
-    {
-      "slug": "capital-markets-domain",
-      "label": "Capital Markets Domain"
-    },
     {
       "slug": "securities-regulation",
       "label": "Securities Regulation"

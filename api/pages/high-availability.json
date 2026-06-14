@@ -161,10 +161,6 @@
       "label": "Distributed Computing"
     },
     {
-      "slug": "distributed-systems-domain",
-      "label": "Distributed Systems Domain"
-    },
-    {
       "slug": "fault-tolerance",
       "label": "Fault Tolerance"
     },

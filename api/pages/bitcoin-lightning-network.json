@@ -102,7 +102,7 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:payment-systems-domain",
+        "id": "urn:ngm:class:bc-defi-and-economics",
         "label": "Payment Systems Domain"
       },
       {
@@ -173,7 +173,7 @@
       "label": "Instant Settlement"
     },
     {
-      "slug": "payment-systems-domain",
+      "slug": "bc-defi-and-economics",
       "label": "Payment Systems Domain"
     },
     {
@@ -181,7 +181,7 @@
       "label": "Liquid Network"
     },
     {
-      "slug": "blockchain-domain",
+      "slug": "blockchain",
       "label": "Blockchain Domain"
     }
   ],

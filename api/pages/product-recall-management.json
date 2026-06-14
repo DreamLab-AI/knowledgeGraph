@@ -47,7 +47,7 @@
         "label": "Smart Contract"
       },
       {
-        "id": "urn:ngm:class:blockchain-domain",
+        "id": "urn:ngm:class:blockchain",
         "label": "Blockchain Domain"
       }
     ],
@@ -167,7 +167,7 @@
       "label": "Walmart"
     },
     {
-      "slug": "blockchain-domain",
+      "slug": "blockchain",
       "label": "BlockchainDomain"
     },
     {

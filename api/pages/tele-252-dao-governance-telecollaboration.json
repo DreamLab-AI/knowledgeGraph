@@ -79,14 +79,6 @@
       "label": "Synchronous Collaboration"
     },
     {
-      "slug": "telecollaboration-domain",
-      "label": "Telecollaboration Domain"
-    },
-    {
-      "slug": "telecollaboration-and-telepresence-domain",
-      "label": "Telecollaboration and Telepresence Domain"
-    },
-    {
       "slug": "telecollaboration",
       "label": "Telecollaboration"
     }

@@ -27,7 +27,7 @@ public:: true
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:distributed-computing", "label": "Distributed Computing"},
-      {"@id": "urn:ngm:class:distributed-systems-domain", "label": "Distributed Systems Domain"}
+      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems Domain"}
     ]
   },
   "quality": 0.72

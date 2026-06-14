@@ -175,7 +175,7 @@
       "label": "ISO 29100"
     },
     {
-      "slug": "aiethics-domain",
+      "slug": "ai-governance-and-ethics",
       "label": "AIEthicsDomain"
     },
     {
@@ -191,10 +191,6 @@
     {
       "slug": "gdpr-article-25",
       "label": "GDPR Article 25"
-    },
-    {
-      "slug": "privacy-domain",
-      "label": "Privacy Domain"
     },
     {
       "slug": "privacy-filter",

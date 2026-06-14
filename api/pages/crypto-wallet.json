@@ -33,17 +33,13 @@
         "label": "Web3"
       },
       {
-        "id": "urn:ngm:class:web-3-domain",
+        "id": "urn:ngm:class:blockchain",
         "label": "Web3 Domain"
       }
     ]
   },
   "wikilinks": [],
   "backlinks": [
-    {
-      "slug": "web-3-domain",
-      "label": "Web3 Domain"
-    },
     {
       "slug": "web3",
       "label": "Web3"

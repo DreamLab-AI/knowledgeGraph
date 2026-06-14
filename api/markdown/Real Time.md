@@ -120,7 +120,7 @@ alias:: Real-Time
       "vc:label": "Embedded Systems"
     },
     {
-      "@id": "urn:visionflow:linked:embedded-systems-domain",
+      "@id": "urn:visionflow:linked:embedded-systems",
       "vc:label": "EmbeddedSystemsDomain"
     },
     {
@@ -849,7 +849,7 @@ alias:: Real-Time
     },
     {
       "raw": "[[EmbeddedSystemsDomain]]",
-      "resolved": "urn:visionflow:linked:embedded-systems-domain",
+      "resolved": "urn:visionflow:linked:embedded-systems",
       "kind": "StubLink"
     },
     {

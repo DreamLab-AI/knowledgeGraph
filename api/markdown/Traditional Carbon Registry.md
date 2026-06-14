@@ -23,7 +23,7 @@ public:: true
       "vc:label": "Verra VCS Standard"
     },
     {
-      "@id": "urn:visionflow:linked:sustainability-domain",
+      "@id": "urn:visionflow:linked:sustainability",
       "vc:label": "Sustainability Domain"
     },
     {
@@ -113,7 +113,7 @@ public:: true
     },
     {
       "raw": "[[Sustainability Domain]]",
-      "resolved": "urn:visionflow:linked:sustainability-domain",
+      "resolved": "urn:visionflow:linked:sustainability",
       "kind": "ResolvedLink"
     },
     {

@@ -12,7 +12,7 @@ alias:: Brain-Computer Interfaces
   "vc:public": true,
   "vc:outboundWikilinks": [
     {
-      "@id": "urn:visionflow:linked:accessibility-domain",
+      "@id": "urn:visionflow:linked:accessibility",
       "vc:label": "AccessibilityDomain"
     },
     {
@@ -164,7 +164,7 @@ alias:: Brain-Computer Interfaces
       "vc:label": "Hochberg et al. 2012 Reach and Grasp Tetraplegia"
     },
     {
-      "@id": "urn:visionflow:linked:human-computer-interaction-domain",
+      "@id": "urn:visionflow:linked:human-computer-interaction",
       "vc:label": "HumanComputerInteractionDomain"
     },
     {
@@ -480,7 +480,7 @@ alias:: Brain-Computer Interfaces
       "vc:label": "Human-Computer Interface"
     },
     {
-      "@id": "urn:visionflow:owl:class:infrastructure-domain",
+      "@id": "urn:visionflow:owl:class:infrastructure",
       "vc:label": "InfrastructureDomain"
     },
     {
@@ -852,7 +852,7 @@ alias:: Brain-Computer Interfaces
   "vc:resolutions": [
     {
       "raw": "[[AccessibilityDomain]]",
-      "resolved": "urn:visionflow:linked:accessibility-domain",
+      "resolved": "urn:visionflow:linked:accessibility",
       "kind": "StubLink"
     },
     {
@@ -1042,7 +1042,7 @@ alias:: Brain-Computer Interfaces
     },
     {
       "raw": "[[HumanComputerInteractionDomain]]",
-      "resolved": "urn:visionflow:linked:human-computer-interaction-domain",
+      "resolved": "urn:visionflow:linked:human-computer-interaction",
       "kind": "StubLink"
     },
     {
@@ -1437,7 +1437,7 @@ alias:: Brain-Computer Interfaces
     },
     {
       "raw": "[[InfrastructureDomain]]",
-      "resolved": "urn:visionflow:owl:class:infrastructure-domain",
+      "resolved": "urn:visionflow:owl:class:infrastructure",
       "kind": "ResolvedLink"
     },
     {

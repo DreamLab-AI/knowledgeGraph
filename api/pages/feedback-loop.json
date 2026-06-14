@@ -376,7 +376,7 @@
       "label": "Control Mechanism"
     },
     {
-      "slug": "control-theory-domain",
+      "slug": "control-theory",
       "label": "ControlTheoryDomain"
     },
     {
@@ -700,7 +700,7 @@
       "label": "Adaptive Control"
     },
     {
-      "slug": "computation-and-intelligence-domain",
+      "slug": "ai-research-area",
       "label": "ComputationAndIntelligenceDomain"
     },
     {
@@ -740,10 +740,6 @@
     {
       "slug": "control-system",
       "label": "Control System"
-    },
-    {
-      "slug": "control-systems-domain",
-      "label": "Control Systems Domain"
     },
     {
       "slug": "cortex-agent",

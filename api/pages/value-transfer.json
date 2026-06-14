@@ -794,7 +794,7 @@
       "label": "zkSync"
     },
     {
-      "slug": "ai-grounded-domain",
+      "slug": "ai-technique",
       "label": "AI-GroundedDomain"
     },
     {
@@ -814,7 +814,7 @@
       "label": "Blockchain"
     },
     {
-      "slug": "blockchain-domain",
+      "slug": "blockchain",
       "label": "BlockchainDomain"
     },
     {
@@ -862,7 +862,7 @@
       "label": "Lightning Network"
     },
     {
-      "slug": "metaverse-domain",
+      "slug": "metaverse",
       "label": "MetaverseDomain"
     },
     {
@@ -890,7 +890,7 @@
       "label": "Proof-of-Authority"
     },
     {
-      "slug": "robotics-domain",
+      "slug": "robotics",
       "label": "RoboticsDomain"
     },
     {
@@ -924,16 +924,8 @@
       "label": "Blockchain Protocol"
     },
     {
-      "slug": "financial-infrastructure-domain",
-      "label": "Financial Infrastructure Domain"
-    },
-    {
       "slug": "money",
       "label": "Money"
-    },
-    {
-      "slug": "payment-systems-domain",
-      "label": "Payment Systems Domain"
     },
     {
       "slug": "stablecoin",

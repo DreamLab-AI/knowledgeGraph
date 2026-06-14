@@ -404,7 +404,7 @@ public:: true
         "label": "Real-Time Rendering"
       },
       {
-        "@id": "urn:ngm:class:spatial-computing-paradigm",
+        "@id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing"
       },
       {
@@ -536,7 +536,7 @@ public:: true
         "label": "Robotics"
       },
       {
-        "@id": "urn:ngm:class:spatial-computing-paradigm-system",
+        "@id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing System"
       },
       {

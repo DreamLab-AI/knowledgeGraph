@@ -340,7 +340,7 @@
       "label": "CAN Bus"
     },
     {
-      "slug": "control-systems-domain",
+      "slug": "robo-actuation-and-control",
       "label": "ControlSystemsDomain"
     },
     {
@@ -376,7 +376,7 @@
       "label": "Embedded System"
     },
     {
-      "slug": "embedded-systems-domain",
+      "slug": "embedded-systems",
       "label": "EmbeddedSystemsDomain"
     },
     {
@@ -576,7 +576,7 @@
       "label": "ApplicationLayer"
     },
     {
-      "slug": "artificial-intelligence-domain",
+      "slug": "artificial-intelligence",
       "label": "ArtificialIntelligenceDomain"
     },
     {
@@ -648,7 +648,7 @@
       "label": "Robot Operating System"
     },
     {
-      "slug": "robotics-domain",
+      "slug": "robotics",
       "label": "RoboticsDomain"
     },
     {

@@ -25,7 +25,7 @@ public:: true
   "maturity": "emerging",
   "subClassOf": [{"@id": "urn:ngm:class:ai-agent-system", "label": "AI Agent System"}],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:agentic-systems-domain", "label": "Agentic Systems Domain"}, {"@id": "urn:ngm:class:function-calling", "label": "Function Calling"}]
+    "relatedTo": [{"@id": "urn:ngm:class:ai-application", "label": "Agentic Systems Domain"}, {"@id": "urn:ngm:class:function-calling", "label": "Function Calling"}]
   },
   "quality": 0.72
 }

@@ -271,7 +271,7 @@
       "label": "Agentic Capability"
     },
     {
-      "slug": "agentic-systems-domain",
+      "slug": "ai-application",
       "label": "AgenticSystemsDomain"
     },
     {
@@ -631,7 +631,7 @@
       "label": "Yao et al 2023 Tree of Thoughts"
     },
     {
-      "slug": "ai-grounded-domain",
+      "slug": "ai-technique",
       "label": "AI-GroundedDomain"
     },
     {
@@ -639,7 +639,7 @@
       "label": "ApplicationLayer"
     },
     {
-      "slug": "computation-and-intelligence-domain",
+      "slug": "ai-research-area",
       "label": "ComputationAndIntelligenceDomain"
     },
     {

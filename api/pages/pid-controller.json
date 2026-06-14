@@ -71,10 +71,6 @@
     {
       "slug": "control-algorithm",
       "label": "Control Algorithm"
-    },
-    {
-      "slug": "control-theory-domain",
-      "label": "Control Theory Domain"
     }
   ]
 }

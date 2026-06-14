@@ -116,14 +116,9 @@
       "label": "EconomicMechanism"
     },
     {
-      "slug": "token-economics-domain",
+      "slug": "token-economics",
       "label": "TokenEconomicsDomain"
     }
   ],
-  "backlinks": [
-    {
-      "slug": "mechanism-design-domain",
-      "label": "Mechanism Design Domain"
-    }
-  ]
+  "backlinks": []
 }

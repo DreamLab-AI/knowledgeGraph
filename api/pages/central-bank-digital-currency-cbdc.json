@@ -208,11 +208,11 @@
       "label": "Regulatory Framework"
     },
     {
-      "slug": "trust-and-governance-domain",
+      "slug": "ai-governance-and-ethics",
       "label": "TrustAndGovernanceDomain"
     },
     {
-      "slug": "virtual-economy-domain",
+      "slug": "virtual-economy",
       "label": "VirtualEconomyDomain"
     }
   ],
@@ -220,10 +220,6 @@
     {
       "slug": "etsi-domain-virtual-economy",
       "label": "ETSI_Domain_Virtual_Economy"
-    },
-    {
-      "slug": "token-economics-domain",
-      "label": "Token Economics Domain"
     }
   ]
 }

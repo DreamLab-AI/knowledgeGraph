@@ -8,7 +8,7 @@
   "definition": "Situational awareness is an agent's perception of relevant elements in its environment, comprehension of their meaning and projection of their near-future state, supporting timely decisions.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:robotics-domain",
+      "id": "urn:ngm:class:robotics",
       "label": "Robotics Domain"
     }
   ],
@@ -57,7 +57,7 @@
       "label": "Digital Twin"
     },
     {
-      "slug": "robotics-domain",
+      "slug": "robotics",
       "label": "Robotics Domain"
     }
   ],

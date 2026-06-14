@@ -23,7 +23,7 @@ public:: true
       "vc:label": "Stablecoin"
     },
     {
-      "@id": "urn:visionflow:linked:decentralised-finance-domain",
+      "@id": "urn:visionflow:linked:decentralised-finance",
       "vc:label": "Decentralised Finance Domain"
     }
   ],
@@ -56,7 +56,7 @@ public:: true
   "qualityScore": 0.72,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:decentralised-finance-domain",
+      "@id": "urn:ngm:class:decentralised-finance",
       "label": "Decentralised Finance Domain"
     }
   ],
@@ -221,7 +221,7 @@ public:: true
     },
     {
       "raw": "[[Decentralised Finance Domain]]",
-      "resolved": "urn:visionflow:linked:decentralised-finance-domain",
+      "resolved": "urn:visionflow:linked:decentralised-finance",
       "kind": "ResolvedLink"
     }
   ],

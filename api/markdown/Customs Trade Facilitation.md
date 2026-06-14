@@ -203,7 +203,7 @@ public:: true
       "vc:label": "SME Trade Finance Access"
     },
     {
-      "@id": "urn:visionflow:linked:supply-chain-domain",
+      "@id": "urn:visionflow:linked:supply-chain",
       "vc:label": "SupplyChainDomain"
     },
     {
@@ -307,7 +307,7 @@ public:: true
       "vc:label": "Blockchain As A Service"
     },
     {
-      "@id": "urn:visionflow:owl:class:blockchain-domain",
+      "@id": "urn:visionflow:owl:class:blockchain",
       "vc:label": "BlockchainDomain"
     },
     {
@@ -935,7 +935,7 @@ public:: true
     },
     {
       "raw": "[[SupplyChainDomain]]",
-      "resolved": "urn:visionflow:linked:supply-chain-domain",
+      "resolved": "urn:visionflow:linked:supply-chain",
       "kind": "StubLink"
     },
     {
@@ -1065,7 +1065,7 @@ public:: true
     },
     {
       "raw": "[[BlockchainDomain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-domain",
+      "resolved": "urn:visionflow:owl:class:blockchain",
       "kind": "ResolvedLink"
     },
     {

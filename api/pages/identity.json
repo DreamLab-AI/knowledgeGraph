@@ -150,20 +150,56 @@
   ],
   "backlinks": [
     {
+      "slug": "did-nostr-identity",
+      "label": "DID Nostr Identity"
+    },
+    {
       "slug": "decentralised-identifiers",
       "label": "Decentralised Identifiers"
+    },
+    {
+      "slug": "decentralized-identifiers",
+      "label": "Decentralized Identifiers"
+    },
+    {
+      "slug": "digital-identity-wallet",
+      "label": "Digital Identity Wallet"
     },
     {
       "slug": "digital-identity",
       "label": "Digital Identity"
     },
     {
+      "slug": "distributed-identity",
+      "label": "Distributed Identity"
+    },
+    {
       "slug": "ethereum-name-service",
       "label": "Ethereum Name Service"
     },
     {
+      "slug": "hyperledger-indy",
+      "label": "Hyperledger Indy"
+    },
+    {
+      "slug": "reputation-system",
+      "label": "Reputation System"
+    },
+    {
+      "slug": "self-sovereign-identity",
+      "label": "Self Sovereign Identity"
+    },
+    {
       "slug": "soulbound-tokens",
       "label": "Soulbound Tokens"
+    },
+    {
+      "slug": "sovereign-keyset",
+      "label": "Sovereign Keyset"
+    },
+    {
+      "slug": "verifiable-credentials",
+      "label": "Verifiable Credentials"
     }
   ]
 }

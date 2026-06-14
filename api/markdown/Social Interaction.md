@@ -23,7 +23,7 @@ public:: true
   "definition": "Social Interaction refers to the dynamic process by which two or more agents — human or artificial — mutually influence one another's behaviour, cognition, and emotional states through communicative acts, physical co-presence, or mediated channels. It is the fundamental unit of social life, encompassing verbal conversation, nonverbal signals, turn-taking, joint attention, empathic responsiveness, and negotiation of shared meaning. In the context of digital and AI systems, social interaction extends to human-computer interfaces, social robotics, virtual environments, and AI-mediated communication platforms, where the design of interaction modalities profoundly shapes social outcomes and wellbeing.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:interaction-domain", "label": "Interaction Domain"}],
+  "subClassOf": [{"@id": "urn:ngm:class:sc-interaction", "label": "Interaction Domain"}],
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human Robot Interaction"},

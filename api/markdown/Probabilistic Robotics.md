@@ -31,7 +31,7 @@ public:: true
       "vc:label": "Particle Filter"
     },
     {
-      "@id": "urn:visionflow:linked:robotics-domain",
+      "@id": "urn:visionflow:linked:robotics",
       "vc:label": "Robotics Domain"
     }
   ],
@@ -64,7 +64,7 @@ public:: true
   "qualityScore": 0.7,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:robotics-domain",
+      "@id": "urn:ngm:class:robotics",
       "label": "Robotics Domain"
     }
   ],
@@ -135,7 +135,7 @@ public:: true
     },
     {
       "raw": "[[Robotics Domain]]",
-      "resolved": "urn:visionflow:linked:robotics-domain",
+      "resolved": "urn:visionflow:linked:robotics",
       "kind": "ResolvedLink"
     }
   ],

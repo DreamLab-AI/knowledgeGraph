@@ -107,7 +107,7 @@ public:: true
       "vc:label": "Distributed Code Review"
     },
     {
-      "@id": "urn:visionflow:linked:distributed-collaboration-domain",
+      "@id": "urn:visionflow:linked:distributed-collaboration",
       "vc:label": "DistributedCollaborationDomain"
     },
     {
@@ -275,7 +275,7 @@ public:: true
       "vc:label": "Skelton & Pais 2019 Team Topologies"
     },
     {
-      "@id": "urn:visionflow:linked:software-engineering-domain",
+      "@id": "urn:visionflow:linked:software-engineering",
       "vc:label": "SoftwareEngineeringDomain"
     },
     {
@@ -784,7 +784,7 @@ public:: true
     },
     {
       "raw": "[[DistributedCollaborationDomain]]",
-      "resolved": "urn:visionflow:linked:distributed-collaboration-domain",
+      "resolved": "urn:visionflow:linked:distributed-collaboration",
       "kind": "StubLink"
     },
     {
@@ -994,7 +994,7 @@ public:: true
     },
     {
       "raw": "[[SoftwareEngineeringDomain]]",
-      "resolved": "urn:visionflow:linked:software-engineering-domain",
+      "resolved": "urn:visionflow:linked:software-engineering",
       "kind": "StubLink"
     },
     {

@@ -27,7 +27,7 @@ public:: true
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:reliability", "label": "Reliability"},
-      {"@id": "urn:ngm:class:software-engineering-domain", "label": "Software Engineering Domain"}
+      {"@id": "urn:ngm:class:software-engineering", "label": "Software Engineering Domain"}
     ]
   },
   "quality": 0.72

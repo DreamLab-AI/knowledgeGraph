@@ -420,7 +420,7 @@ alias:: Proof-of-Work, ProofOfWork, proof-of-work
       "vc:label": "Blockchain"
     },
     {
-      "@id": "urn:visionflow:owl:class:blockchain-domain",
+      "@id": "urn:visionflow:owl:class:blockchain",
       "vc:label": "BlockchainDomain"
     },
     {
@@ -1223,7 +1223,7 @@ alias:: Proof-of-Work, ProofOfWork, proof-of-work
     },
     {
       "raw": "[[BlockchainDomain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-domain",
+      "resolved": "urn:visionflow:owl:class:blockchain",
       "kind": "ResolvedLink"
     },
     {

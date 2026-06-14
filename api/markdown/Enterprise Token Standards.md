@@ -191,7 +191,7 @@ public:: true
       "vc:label": "Capital Markets and Technology Association CMTAT"
     },
     {
-      "@id": "urn:visionflow:linked:capital-markets-domain",
+      "@id": "urn:visionflow:linked:bc-defi-and-economics",
       "vc:label": "CapitalMarketsDomain"
     },
     {
@@ -331,7 +331,7 @@ public:: true
       "vc:label": "Dematerialised Securities Regulation"
     },
     {
-      "@id": "urn:visionflow:linked:digital-asset-domain",
+      "@id": "urn:visionflow:linked:digital-asset",
       "vc:label": "DigitalAssetDomain"
     },
     {
@@ -1187,7 +1187,7 @@ public:: true
       "vc:label": "Zodia Custody"
     },
     {
-      "@id": "urn:visionflow:owl:class:blockchain-domain",
+      "@id": "urn:visionflow:owl:class:blockchain",
       "vc:label": "BlockchainDomain"
     },
     {
@@ -1824,7 +1824,7 @@ public:: true
     },
     {
       "raw": "[[CapitalMarketsDomain]]",
-      "resolved": "urn:visionflow:linked:capital-markets-domain",
+      "resolved": "urn:visionflow:linked:bc-defi-and-economics",
       "kind": "StubLink"
     },
     {
@@ -1999,7 +1999,7 @@ public:: true
     },
     {
       "raw": "[[DigitalAssetDomain]]",
-      "resolved": "urn:visionflow:linked:digital-asset-domain",
+      "resolved": "urn:visionflow:linked:digital-asset",
       "kind": "StubLink"
     },
     {
@@ -3069,7 +3069,7 @@ public:: true
     },
     {
       "raw": "[[BlockchainDomain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-domain",
+      "resolved": "urn:visionflow:owl:class:blockchain",
       "kind": "ResolvedLink"
     },
     {

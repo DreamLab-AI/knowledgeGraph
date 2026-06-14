@@ -107,7 +107,7 @@
       "label": "CodeFormer"
     },
     {
-      "slug": "computer-vision-domain",
+      "slug": "computer-vision",
       "label": "ComputerVisionDomain"
     },
     {
@@ -251,7 +251,7 @@
       "label": "YouTube"
     },
     {
-      "slug": "aidomain",
+      "slug": "artificial-intelligence",
       "label": "AIDomain"
     },
     {

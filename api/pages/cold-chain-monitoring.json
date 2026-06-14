@@ -572,7 +572,7 @@
       "label": "Supply Chain"
     },
     {
-      "slug": "supply-chain-domain",
+      "slug": "supply-chain",
       "label": "SupplyChainDomain"
     },
     {
@@ -672,7 +672,7 @@
       "label": "Hyperledger Fabric"
     },
     {
-      "slug": "infrastructure-domain",
+      "slug": "infrastructure",
       "label": "InfrastructureDomain"
     },
     {

@@ -67,7 +67,7 @@ public:: true
       "vc:label": "Cryptographic Wallet"
     },
     {
-      "@id": "urn:visionflow:linked:cryptography-domain",
+      "@id": "urn:visionflow:linked:cryptography",
       "vc:label": "CryptographyDomain"
     },
     {
@@ -111,7 +111,7 @@ public:: true
       "vc:label": "Financial Inclusion"
     },
     {
-      "@id": "urn:visionflow:linked:governance-domain",
+      "@id": "urn:visionflow:linked:governance",
       "vc:label": "GovernanceDomain"
     },
     {
@@ -127,7 +127,7 @@ public:: true
       "vc:label": "Holder Issuer Verifier Triangle"
     },
     {
-      "@id": "urn:visionflow:linked:identity-domain",
+      "@id": "urn:visionflow:linked:identity",
       "vc:label": "IdentityDomain"
     },
     {
@@ -247,7 +247,7 @@ public:: true
       "vc:label": "Preukschat & Reed 2021 Self-Sovereign Identity"
     },
     {
-      "@id": "urn:visionflow:linked:privacy-domain",
+      "@id": "urn:visionflow:linked:privacy",
       "vc:label": "PrivacyDomain"
     },
     {
@@ -375,7 +375,7 @@ public:: true
       "vc:label": "ApplicationLayer"
     },
     {
-      "@id": "urn:visionflow:owl:class:blockchain-domain",
+      "@id": "urn:visionflow:owl:class:blockchain",
       "vc:label": "BlockchainDomain"
     },
     {
@@ -901,7 +901,7 @@ public:: true
     },
     {
       "raw": "[[CryptographyDomain]]",
-      "resolved": "urn:visionflow:linked:cryptography-domain",
+      "resolved": "urn:visionflow:linked:cryptography",
       "kind": "StubLink"
     },
     {
@@ -956,7 +956,7 @@ public:: true
     },
     {
       "raw": "[[GovernanceDomain]]",
-      "resolved": "urn:visionflow:linked:governance-domain",
+      "resolved": "urn:visionflow:linked:governance",
       "kind": "StubLink"
     },
     {
@@ -976,7 +976,7 @@ public:: true
     },
     {
       "raw": "[[IdentityDomain]]",
-      "resolved": "urn:visionflow:linked:identity-domain",
+      "resolved": "urn:visionflow:linked:identity",
       "kind": "StubLink"
     },
     {
@@ -1126,7 +1126,7 @@ public:: true
     },
     {
       "raw": "[[PrivacyDomain]]",
-      "resolved": "urn:visionflow:linked:privacy-domain",
+      "resolved": "urn:visionflow:linked:privacy",
       "kind": "StubLink"
     },
     {
@@ -1286,7 +1286,7 @@ public:: true
     },
     {
       "raw": "[[BlockchainDomain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-domain",
+      "resolved": "urn:visionflow:owl:class:blockchain",
       "kind": "ResolvedLink"
     },
     {

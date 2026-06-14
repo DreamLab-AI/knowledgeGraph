@@ -56,7 +56,7 @@ alias:: BC-0188-self-sovereign-identity, BC-0456-self-sovereign-identity, Self-S
       "vc:label": "Cross-Border Identity"
     },
     {
-      "@id": "urn:visionflow:linked:cryptography-domain",
+      "@id": "urn:visionflow:linked:cryptography",
       "vc:label": "CryptographyDomain"
     },
     {
@@ -132,7 +132,7 @@ alias:: BC-0188-self-sovereign-identity, BC-0456-self-sovereign-identity, Self-S
       "vc:label": "Hyperledger Foundation"
     },
     {
-      "@id": "urn:visionflow:linked:identity-domain",
+      "@id": "urn:visionflow:linked:identity",
       "vc:label": "IdentityDomain"
     },
     {
@@ -200,7 +200,7 @@ alias:: BC-0188-self-sovereign-identity, BC-0456-self-sovereign-identity, Self-S
       "vc:label": "Portable Identity"
     },
     {
-      "@id": "urn:visionflow:linked:privacy-domain",
+      "@id": "urn:visionflow:linked:privacy",
       "vc:label": "PrivacyDomain"
     },
     {
@@ -332,7 +332,7 @@ alias:: BC-0188-self-sovereign-identity, BC-0456-self-sovereign-identity, Self-S
       "vc:label": "Bitcoin"
     },
     {
-      "@id": "urn:visionflow:owl:class:blockchain-domain",
+      "@id": "urn:visionflow:owl:class:blockchain",
       "vc:label": "BlockchainDomain"
     },
     {
@@ -861,7 +861,7 @@ alias:: BC-0188-self-sovereign-identity, BC-0456-self-sovereign-identity, Self-S
     },
     {
       "raw": "[[CryptographyDomain]]",
-      "resolved": "urn:visionflow:linked:cryptography-domain",
+      "resolved": "urn:visionflow:linked:cryptography",
       "kind": "StubLink"
     },
     {
@@ -956,7 +956,7 @@ alias:: BC-0188-self-sovereign-identity, BC-0456-self-sovereign-identity, Self-S
     },
     {
       "raw": "[[IdentityDomain]]",
-      "resolved": "urn:visionflow:linked:identity-domain",
+      "resolved": "urn:visionflow:linked:identity",
       "kind": "StubLink"
     },
     {
@@ -1041,7 +1041,7 @@ alias:: BC-0188-self-sovereign-identity, BC-0456-self-sovereign-identity, Self-S
     },
     {
       "raw": "[[PrivacyDomain]]",
-      "resolved": "urn:visionflow:linked:privacy-domain",
+      "resolved": "urn:visionflow:linked:privacy",
       "kind": "StubLink"
     },
     {
@@ -1206,7 +1206,7 @@ alias:: BC-0188-self-sovereign-identity, BC-0456-self-sovereign-identity, Self-S
     },
     {
       "raw": "[[BlockchainDomain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-domain",
+      "resolved": "urn:visionflow:owl:class:blockchain",
       "kind": "ResolvedLink"
     },
     {

@@ -80,7 +80,7 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:regulatory-domain",
+        "id": "urn:ngm:class:infra-legal-and-regulatory",
         "label": "Regulatory Domain"
       },
       {
@@ -123,11 +123,11 @@
     "standardizedBy": [],
     "partOf": [
       {
-        "id": "urn:ngm:class:digital-asset-domain",
+        "id": "urn:ngm:class:digital-asset",
         "label": "Digital Asset Domain"
       },
       {
-        "id": "urn:ngm:class:decentralised-finance-domain",
+        "id": "urn:ngm:class:decentralised-finance",
         "label": "Decentralised Finance Domain"
       }
     ],
@@ -160,15 +160,15 @@
       "label": "Crypto Trading"
     },
     {
-      "slug": "decentralised-finance-domain",
+      "slug": "decentralised-finance",
       "label": "Decentralised Finance Domain"
     },
     {
-      "slug": "regulatory-domain",
+      "slug": "infra-legal-and-regulatory",
       "label": "Regulatory Domain"
     },
     {
-      "slug": "digital-asset-domain",
+      "slug": "digital-asset",
       "label": "Digital Asset Domain"
     }
   ],

@@ -396,7 +396,7 @@
       "label": "Distributed Ledger Technology"
     },
     {
-      "slug": "distributed-systems-domain",
+      "slug": "distributed-systems",
       "label": "DistributedSystemsDomain"
     },
     {
@@ -420,7 +420,7 @@
       "label": "Enterprise Ethereum Alliance"
     },
     {
-      "slug": "enterprise-software-domain",
+      "slug": "infra-software-engineering",
       "label": "EnterpriseSoftwareDomain"
     },
     {
@@ -452,7 +452,7 @@
       "label": "GoQuorum"
     },
     {
-      "slug": "governance-domain",
+      "slug": "governance",
       "label": "GovernanceDomain"
     },
     {
@@ -696,7 +696,7 @@
       "label": "Bitcoin"
     },
     {
-      "slug": "blockchain-domain",
+      "slug": "blockchain",
       "label": "BlockchainDomain"
     },
     {

@@ -165,7 +165,7 @@
       "label": "Delivery Planning"
     },
     {
-      "slug": "metaverse-domain",
+      "slug": "metaverse",
       "label": "MetaverseDomain"
     },
     {
@@ -261,10 +261,6 @@
     {
       "slug": "robotics-control",
       "label": "Robotics Control"
-    },
-    {
-      "slug": "robotics-domain",
-      "label": "Robotics Domain"
     },
     {
       "slug": "robotics-platform",

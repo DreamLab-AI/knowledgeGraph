@@ -47,7 +47,7 @@ public:: true
       "vc:label": "CryptographicLayer"
     },
     {
-      "@id": "urn:visionflow:linked:cryptography-domain",
+      "@id": "urn:visionflow:linked:cryptography",
       "vc:label": "CryptographyDomain"
     },
     {
@@ -123,7 +123,7 @@ public:: true
       "vc:label": "LegalFrameworkLayer"
     },
     {
-      "@id": "urn:visionflow:linked:legal-tech-domain",
+      "@id": "urn:visionflow:linked:infra-legal-and-regulatory",
       "vc:label": "LegalTechDomain"
     },
     {
@@ -179,7 +179,7 @@ public:: true
       "vc:label": "Secure Time Source"
     },
     {
-      "@id": "urn:visionflow:linked:security-domain",
+      "@id": "urn:visionflow:linked:security",
       "vc:label": "SecurityDomain"
     },
     {
@@ -231,7 +231,7 @@ public:: true
       "vc:label": "Bitcoin"
     },
     {
-      "@id": "urn:visionflow:owl:class:blockchain-domain",
+      "@id": "urn:visionflow:owl:class:blockchain",
       "vc:label": "BlockchainDomain"
     },
     {
@@ -670,7 +670,7 @@ public:: true
     },
     {
       "raw": "[[CryptographyDomain]]",
-      "resolved": "urn:visionflow:linked:cryptography-domain",
+      "resolved": "urn:visionflow:linked:cryptography",
       "kind": "StubLink"
     },
     {
@@ -765,7 +765,7 @@ public:: true
     },
     {
       "raw": "[[LegalTechDomain]]",
-      "resolved": "urn:visionflow:linked:legal-tech-domain",
+      "resolved": "urn:visionflow:linked:infra-legal-and-regulatory",
       "kind": "StubLink"
     },
     {
@@ -835,7 +835,7 @@ public:: true
     },
     {
       "raw": "[[SecurityDomain]]",
-      "resolved": "urn:visionflow:linked:security-domain",
+      "resolved": "urn:visionflow:linked:security",
       "kind": "StubLink"
     },
     {
@@ -900,7 +900,7 @@ public:: true
     },
     {
       "raw": "[[BlockchainDomain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-domain",
+      "resolved": "urn:visionflow:owl:class:blockchain",
       "kind": "ResolvedLink"
     },
     {

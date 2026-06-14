@@ -93,7 +93,7 @@
         "label": "Immersive Control"
       },
       {
-        "id": "urn:ngm:class:metaverse-domain",
+        "id": "urn:ngm:class:metaverse",
         "label": "Metaverse Domain"
       },
       {
@@ -231,7 +231,7 @@
       "label": "HapticFeedback"
     },
     {
-      "slug": "metaverse-domain",
+      "slug": "metaverse",
       "label": "MetaverseDomain"
     },
     {

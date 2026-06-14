@@ -143,7 +143,7 @@
       "label": "Knowhere"
     },
     {
-      "slug": "metaverse-domain",
+      "slug": "metaverse",
       "label": "MetaverseDomain"
     },
     {
@@ -199,10 +199,6 @@
     {
       "slug": "segmentation-and-identification",
       "label": "Segmentation and Identification"
-    },
-    {
-      "slug": "spatial-computing-domain",
-      "label": "Spatial Computing Domain"
     },
     {
       "slug": "topological-map",

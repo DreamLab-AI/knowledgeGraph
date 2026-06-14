@@ -8,7 +8,7 @@
   "definition": "MetaversePlatforms denotes the category of systems that host persistent, shared 3D virtual worlds with avatars, user interaction and often user-generated content and economies.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:metaverse-domain",
+      "id": "urn:ngm:class:metaverse",
       "label": "Metaverse Domain"
     }
   ],
@@ -57,7 +57,7 @@
       "label": "AltspaceVR"
     },
     {
-      "slug": "metaverse-domain",
+      "slug": "metaverse",
       "label": "Metaverse Domain"
     }
   ],

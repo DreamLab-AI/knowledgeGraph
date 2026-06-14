@@ -160,7 +160,7 @@ alias:: CLI multi agent systems
       "vc:label": "Software Engineering Agents"
     },
     {
-      "@id": "urn:visionflow:linked:software-engineering-domain",
+      "@id": "urn:visionflow:linked:software-engineering",
       "vc:label": "SoftwareEngineeringDomain"
     },
     {
@@ -204,7 +204,7 @@ alias:: CLI multi agent systems
       "vc:label": "Worker Agent"
     },
     {
-      "@id": "urn:visionflow:owl:class:ai-grounded-domain",
+      "@id": "urn:visionflow:owl:class:ai-technique",
       "vc:label": "AI-GroundedDomain"
     },
     {
@@ -733,7 +733,7 @@ alias:: CLI multi agent systems
     },
     {
       "raw": "[[SoftwareEngineeringDomain]]",
-      "resolved": "urn:visionflow:linked:software-engineering-domain",
+      "resolved": "urn:visionflow:linked:software-engineering",
       "kind": "StubLink"
     },
     {
@@ -788,7 +788,7 @@ alias:: CLI multi agent systems
     },
     {
       "raw": "[[AI-GroundedDomain]]",
-      "resolved": "urn:visionflow:owl:class:ai-grounded-domain",
+      "resolved": "urn:visionflow:owl:class:ai-technique",
       "kind": "ResolvedLink"
     },
     {

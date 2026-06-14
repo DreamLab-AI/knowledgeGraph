@@ -71,20 +71,8 @@
       "label": "Empathetic AI"
     },
     {
-      "slug": "information-security-domain",
-      "label": "Information Security Domain"
-    },
-    {
       "slug": "meeting-ai-assistant",
       "label": "Meeting AI Assistant"
-    },
-    {
-      "slug": "regulatory-compliance-domain",
-      "label": "Regulatory Compliance Domain"
-    },
-    {
-      "slug": "security-domain",
-      "label": "Security Domain"
     },
     {
       "slug": "trust-framework",

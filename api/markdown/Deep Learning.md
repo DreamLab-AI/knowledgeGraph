@@ -24,7 +24,7 @@ alias:: DeepLearning
       "vc:label": "Blockchain Validation"
     },
     {
-      "@id": "urn:visionflow:linked:data-management-domain",
+      "@id": "urn:visionflow:linked:data-management",
       "vc:label": "DataManagementDomain"
     },
     {
@@ -76,7 +76,7 @@ alias:: DeepLearning
       "vc:label": "Activation Function"
     },
     {
-      "@id": "urn:visionflow:owl:class:ai-grounded-domain",
+      "@id": "urn:visionflow:owl:class:ai-technique",
       "vc:label": "AI-GroundedDomain"
     },
     {
@@ -88,7 +88,7 @@ alias:: DeepLearning
       "vc:label": "Backpropagation"
     },
     {
-      "@id": "urn:visionflow:owl:class:computation-and-intelligence-domain",
+      "@id": "urn:visionflow:owl:class:ai-research-area",
       "vc:label": "ComputationAndIntelligenceDomain"
     },
     {
@@ -333,7 +333,7 @@ alias:: DeepLearning
     },
     {
       "raw": "[[DataManagementDomain]]",
-      "resolved": "urn:visionflow:linked:data-management-domain",
+      "resolved": "urn:visionflow:linked:data-management",
       "kind": "StubLink"
     },
     {
@@ -398,7 +398,7 @@ alias:: DeepLearning
     },
     {
       "raw": "[[AI-GroundedDomain]]",
-      "resolved": "urn:visionflow:owl:class:ai-grounded-domain",
+      "resolved": "urn:visionflow:owl:class:ai-technique",
       "kind": "ResolvedLink"
     },
     {
@@ -413,7 +413,7 @@ alias:: DeepLearning
     },
     {
       "raw": "[[ComputationAndIntelligenceDomain]]",
-      "resolved": "urn:visionflow:owl:class:computation-and-intelligence-domain",
+      "resolved": "urn:visionflow:owl:class:ai-research-area",
       "kind": "ResolvedLink"
     },
     {

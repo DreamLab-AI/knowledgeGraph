@@ -84,7 +84,7 @@ alias:: BC-0464-treasury-management, TreasuryManagement
       "vc:label": "DAO Sustainability"
     },
     {
-      "@id": "urn:visionflow:linked:de-fi-domain",
+      "@id": "urn:visionflow:linked:bc-defi-and-economics",
       "vc:label": "DeFiDomain"
     },
     {
@@ -152,7 +152,7 @@ alias:: BC-0464-treasury-management, TreasuryManagement
       "vc:label": "Gitcoin"
     },
     {
-      "@id": "urn:visionflow:linked:governance-domain",
+      "@id": "urn:visionflow:linked:governance",
       "vc:label": "GovernanceDomain"
     },
     {
@@ -360,7 +360,7 @@ alias:: BC-0464-treasury-management, TreasuryManagement
       "vc:label": "Yield Strategy"
     },
     {
-      "@id": "urn:visionflow:owl:class:blockchain-domain",
+      "@id": "urn:visionflow:owl:class:blockchain",
       "vc:label": "BlockchainDomain"
     },
     {
@@ -882,7 +882,7 @@ alias:: BC-0464-treasury-management, TreasuryManagement
     },
     {
       "raw": "[[DeFiDomain]]",
-      "resolved": "urn:visionflow:linked:de-fi-domain",
+      "resolved": "urn:visionflow:linked:bc-defi-and-economics",
       "kind": "StubLink"
     },
     {
@@ -967,7 +967,7 @@ alias:: BC-0464-treasury-management, TreasuryManagement
     },
     {
       "raw": "[[GovernanceDomain]]",
-      "resolved": "urn:visionflow:linked:governance-domain",
+      "resolved": "urn:visionflow:linked:governance",
       "kind": "StubLink"
     },
     {
@@ -1227,7 +1227,7 @@ alias:: BC-0464-treasury-management, TreasuryManagement
     },
     {
       "raw": "[[BlockchainDomain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-domain",
+      "resolved": "urn:visionflow:owl:class:blockchain",
       "kind": "ResolvedLink"
     },
     {

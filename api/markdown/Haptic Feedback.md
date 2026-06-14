@@ -88,7 +88,7 @@ alias:: HapticFeedback
       "vc:label": "MachineLearning"
     },
     {
-      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "@id": "urn:visionflow:owl:class:metaverse",
       "vc:label": "MetaverseDomain"
     },
     {
@@ -263,7 +263,7 @@ alias:: HapticFeedback
         "label": "Haptics"
       },
       {
-        "@id": "urn:ngm:class:metaverse-domain",
+        "@id": "urn:ngm:class:metaverse",
         "label": "Metaverse Domain"
       },
       {
@@ -397,7 +397,7 @@ alias:: HapticFeedback
     },
     {
       "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "resolved": "urn:visionflow:owl:class:metaverse",
       "kind": "ResolvedLink"
     },
     {

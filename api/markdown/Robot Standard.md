@@ -207,7 +207,7 @@ public:: true
       "vc:label": "Machinery Regulation"
     },
     {
-      "@id": "urn:visionflow:linked:manufacturing-domain",
+      "@id": "urn:visionflow:linked:robo-actuation-and-control",
       "vc:label": "ManufacturingDomain"
     },
     {
@@ -315,7 +315,7 @@ public:: true
       "vc:label": "Protective Measure"
     },
     {
-      "@id": "urn:visionflow:linked:regulatory-compliance-domain",
+      "@id": "urn:visionflow:linked:regulatory-compliance",
       "vc:label": "RegulatoryComplianceDomain"
     },
     {
@@ -1082,7 +1082,7 @@ public:: true
     },
     {
       "raw": "[[ManufacturingDomain]]",
-      "resolved": "urn:visionflow:linked:manufacturing-domain",
+      "resolved": "urn:visionflow:linked:robo-actuation-and-control",
       "kind": "StubLink"
     },
     {
@@ -1217,7 +1217,7 @@ public:: true
     },
     {
       "raw": "[[RegulatoryComplianceDomain]]",
-      "resolved": "urn:visionflow:linked:regulatory-compliance-domain",
+      "resolved": "urn:visionflow:linked:regulatory-compliance",
       "kind": "StubLink"
     },
     {

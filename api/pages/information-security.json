@@ -189,6 +189,14 @@
       "label": "Asymmetric Encryption"
     },
     {
+      "slug": "compliance-control",
+      "label": "Compliance Control"
+    },
+    {
+      "slug": "cryptography-security-and-privacy",
+      "label": "Cryptography Security and Privacy"
+    },
+    {
       "slug": "cryptography-security-and-privacy",
       "label": "Cryptography Security and Privacy"
     },
@@ -201,8 +209,16 @@
       "label": "Data Confidentiality"
     },
     {
+      "slug": "digital-signature",
+      "label": "Digital Signature"
+    },
+    {
       "slug": "hipaa",
       "label": "HIPAA"
+    },
+    {
+      "slug": "hash-function",
+      "label": "Hash Function"
     },
     {
       "slug": "intel-sgx",

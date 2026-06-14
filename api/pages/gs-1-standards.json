@@ -169,10 +169,5 @@
       "label": "Internet of Things"
     }
   ],
-  "backlinks": [
-    {
-      "slug": "supply-chain-domain",
-      "label": "Supply Chain Domain"
-    }
-  ]
+  "backlinks": []
 }

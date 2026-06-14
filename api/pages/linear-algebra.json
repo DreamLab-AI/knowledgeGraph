@@ -58,7 +58,7 @@
         "label": "Machine Learning"
       },
       {
-        "id": "urn:ngm:class:computer-vision-domain",
+        "id": "urn:ngm:class:computer-vision",
         "label": "Computer Vision Domain"
       },
       {
@@ -159,7 +159,7 @@
       "label": "Machine Learning"
     },
     {
-      "slug": "computer-vision-domain",
+      "slug": "computer-vision",
       "label": "Computer Vision Domain"
     },
     {
@@ -189,28 +189,12 @@
       "label": "Collision Detection"
     },
     {
-      "slug": "computer-graphics-domain",
-      "label": "Computer Graphics Domain"
-    },
-    {
-      "slug": "computer-vision-domain",
-      "label": "Computer Vision Domain"
-    },
-    {
       "slug": "control-algorithm",
       "label": "Control Algorithm"
     },
     {
-      "slug": "control-theory-domain",
-      "label": "Control Theory Domain"
-    },
-    {
       "slug": "control-theory",
       "label": "Control Theory"
-    },
-    {
-      "slug": "deep-learning-domain",
-      "label": "Deep Learning Domain"
     },
     {
       "slug": "differential-equations",
@@ -251,10 +235,6 @@
     {
       "slug": "linear",
       "label": "Linear"
-    },
-    {
-      "slug": "machine-learning-domain",
-      "label": "Machine Learning Domain"
     },
     {
       "slug": "model-based-control",

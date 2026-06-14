@@ -230,7 +230,7 @@
       "label": "Smart Contract"
     },
     {
-      "slug": "trust-and-governance-domain",
+      "slug": "ai-governance-and-ethics",
       "label": "TrustAndGovernanceDomain"
     },
     {
@@ -246,7 +246,7 @@
       "label": "Virtual Currency"
     },
     {
-      "slug": "virtual-economy-domain",
+      "slug": "virtual-economy",
       "label": "VirtualEconomyDomain"
     }
   ],
@@ -284,20 +284,12 @@
       "label": "DAI"
     },
     {
-      "slug": "decentralised-finance-domain",
-      "label": "Decentralised Finance Domain"
-    },
-    {
       "slug": "decentralized-exchange",
       "label": "Decentralized Exchange"
     },
     {
       "slug": "decentralized-finance-de-fi",
       "label": "Decentralized Finance (DeFi)"
-    },
-    {
-      "slug": "digital-asset-domain",
-      "label": "Digital Asset Domain"
     },
     {
       "slug": "digital-asset-risks",
@@ -350,10 +342,6 @@
     {
       "slug": "payment-protocol",
       "label": "Payment Protocol"
-    },
-    {
-      "slug": "payment-systems-domain",
-      "label": "Payment Systems Domain"
     },
     {
       "slug": "private-blockchain",

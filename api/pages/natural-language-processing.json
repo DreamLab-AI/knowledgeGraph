@@ -173,6 +173,10 @@
       "label": "AI Alignment"
     },
     {
+      "slug": "ai-search",
+      "label": "AI Search"
+    },
+    {
       "slug": "artificial-intelligence",
       "label": "Artificial Intelligence"
     },
@@ -189,12 +193,20 @@
       "label": "Automated Summarization"
     },
     {
+      "slug": "bias-in-large-language-models",
+      "label": "Bias in Large Language Models"
+    },
+    {
       "slug": "call-centres",
       "label": "Call Centres"
     },
     {
       "slug": "chatbot",
       "label": "Chatbot"
+    },
+    {
+      "slug": "chatbots",
+      "label": "Chatbots"
     },
     {
       "slug": "chatbots",
@@ -321,6 +333,10 @@
       "label": "Meeting AI Assistant"
     },
     {
+      "slug": "meeting-ai-assistant",
+      "label": "Meeting AI Assistant"
+    },
+    {
       "slug": "mistral",
       "label": "Mistral"
     },
@@ -369,12 +385,20 @@
       "label": "Proprietary Large Language Models"
     },
     {
+      "slug": "proprietary-large-language-models",
+      "label": "Proprietary Large Language Models"
+    },
+    {
       "slug": "question-answering",
       "label": "Question Answering"
     },
     {
       "slug": "real-time-language-translation",
       "label": "Real-Time Language Translation"
+    },
+    {
+      "slug": "real-time-translation",
+      "label": "Real-time Translation"
     },
     {
       "slug": "real-time-translation",
@@ -397,8 +421,16 @@
       "label": "Retrieval Augmented Generation - RAG"
     },
     {
+      "slug": "retrieval-augmented-generation-rag",
+      "label": "Retrieval Augmented Generation - RAG"
+    },
+    {
       "slug": "safety-and-alignment",
       "label": "Safety and alignment"
+    },
+    {
+      "slug": "semantic-search",
+      "label": "Semantic Search"
     },
     {
       "slug": "semantic-search",
@@ -415,6 +447,10 @@
     {
       "slug": "speech-processing",
       "label": "Speech Processing"
+    },
+    {
+      "slug": "speech-and-voice",
+      "label": "Speech and Voice"
     },
     {
       "slug": "speech-and-voice",
@@ -447,6 +483,14 @@
     {
       "slug": "transformers",
       "label": "Transformers"
+    },
+    {
+      "slug": "transformers",
+      "label": "Transformers"
+    },
+    {
+      "slug": "translation",
+      "label": "Translation"
     },
     {
       "slug": "translation",

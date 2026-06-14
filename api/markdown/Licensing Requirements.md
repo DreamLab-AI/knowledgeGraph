@@ -244,7 +244,7 @@ alias:: BC-0488-licensing-requirements
       "vc:label": "Zcash"
     },
     {
-      "@id": "urn:visionflow:owl:class:blockchain-domain",
+      "@id": "urn:visionflow:owl:class:blockchain",
       "vc:label": "BlockchainDomain"
     },
     {
@@ -300,7 +300,7 @@ alias:: BC-0488-licensing-requirements
     ],
     "partOf": [
       {"@id": "urn:ngm:class:bc-governance-and-regulation", "label": "Governance and Regulation"},
-      {"@id": "urn:ngm:class:blockchain-domain", "label": "Blockchain Domain"}
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain Domain"}
     ],
     "dependsOn": [
       {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
@@ -621,7 +621,7 @@ alias:: BC-0488-licensing-requirements
     },
     {
       "raw": "[[BlockchainDomain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-domain",
+      "resolved": "urn:visionflow:owl:class:blockchain",
       "kind": "ResolvedLink"
     },
     {

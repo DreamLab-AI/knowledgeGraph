@@ -160,7 +160,7 @@
       "label": "visionflow"
     },
     {
-      "slug": "artificial-intelligence-domain",
+      "slug": "artificial-intelligence",
       "label": "ArtificialIntelligenceDomain"
     },
     {
@@ -236,10 +236,6 @@
     {
       "slug": "feed-forward-network",
       "label": "Feed Forward Network"
-    },
-    {
-      "slug": "generative-ai-domain",
-      "label": "Generative AI Domain"
     },
     {
       "slug": "large-language-models",

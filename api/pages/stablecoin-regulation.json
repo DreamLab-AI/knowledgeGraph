@@ -348,7 +348,7 @@
       "label": "Financial Regulation"
     },
     {
-      "slug": "financial-regulation-domain",
+      "slug": "financial-regulation",
       "label": "FinancialRegulationDomain"
     },
     {
@@ -420,7 +420,7 @@
       "label": "Payment Stablecoin Issuance"
     },
     {
-      "slug": "payment-systems-domain",
+      "slug": "bc-defi-and-economics",
       "label": "PaymentSystemsDomain"
     },
     {
@@ -504,7 +504,7 @@
       "label": "AML KYC Compliance"
     },
     {
-      "slug": "blockchain-domain",
+      "slug": "blockchain",
       "label": "BlockchainDomain"
     },
     {

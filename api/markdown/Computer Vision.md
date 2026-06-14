@@ -60,7 +60,7 @@ alias:: ComputerVision
       "vc:label": "Artificial Intelligence"
     },
     {
-      "@id": "urn:visionflow:owl:class:artificial-intelligence-domain",
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
       "vc:label": "ArtificialIntelligenceDomain"
     },
     {
@@ -304,7 +304,7 @@ alias:: ComputerVision
     },
     {
       "raw": "[[ArtificialIntelligenceDomain]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence-domain",
+      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
       "kind": "ResolvedLink"
     },
     {

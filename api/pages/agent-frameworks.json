@@ -560,7 +560,7 @@
       "label": "Shinn et al 2023 Reflexion"
     },
     {
-      "slug": "software-engineering-domain",
+      "slug": "software-engineering",
       "label": "SoftwareEngineeringDomain"
     },
     {
@@ -652,7 +652,7 @@
       "label": "AI Agent System"
     },
     {
-      "slug": "ai-grounded-domain",
+      "slug": "ai-technique",
       "label": "AI-GroundedDomain"
     },
     {
@@ -660,7 +660,7 @@
       "label": "ApplicationLayer"
     },
     {
-      "slug": "computation-and-intelligence-domain",
+      "slug": "ai-research-area",
       "label": "ComputationAndIntelligenceDomain"
     },
     {

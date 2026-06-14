@@ -59,7 +59,7 @@ public:: true
       "vc:label": "Data Fabric"
     },
     {
-      "@id": "urn:visionflow:linked:data-governance-domain",
+      "@id": "urn:visionflow:linked:data-governance",
       "vc:label": "DataGovernanceDomain"
     },
     {
@@ -251,7 +251,7 @@ public:: true
       "vc:label": "Information Architecture"
     },
     {
-      "@id": "urn:visionflow:owl:class:infrastructure-domain",
+      "@id": "urn:visionflow:owl:class:infrastructure",
       "vc:label": "InfrastructureDomain"
     },
     {
@@ -679,7 +679,7 @@ public:: true
     },
     {
       "raw": "[[DataGovernanceDomain]]",
-      "resolved": "urn:visionflow:linked:data-governance-domain",
+      "resolved": "urn:visionflow:linked:data-governance",
       "kind": "StubLink"
     },
     {
@@ -919,7 +919,7 @@ public:: true
     },
     {
       "raw": "[[InfrastructureDomain]]",
-      "resolved": "urn:visionflow:owl:class:infrastructure-domain",
+      "resolved": "urn:visionflow:owl:class:infrastructure",
       "kind": "ResolvedLink"
     },
     {

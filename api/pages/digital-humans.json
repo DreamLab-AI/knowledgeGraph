@@ -58,7 +58,7 @@
     "standardizedBy": [],
     "partOf": [
       {
-        "id": "urn:ngm:class:spatial-computing-paradigm",
+        "id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing"
       },
       {
@@ -87,7 +87,7 @@
       "label": "DID Nostr Identity"
     },
     {
-      "slug": "metaverse-domain",
+      "slug": "metaverse",
       "label": "MetaverseDomain"
     }
   ],

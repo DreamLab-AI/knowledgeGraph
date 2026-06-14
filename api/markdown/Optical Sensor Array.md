@@ -516,7 +516,7 @@ public:: true
         "label": "SLAM"
       },
       {
-        "@id": "urn:ngm:class:spatial-computing-paradigm",
+        "@id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing"
       }
     ],
@@ -566,7 +566,7 @@ public:: true
         "label": "Self Driving Car"
       },
       {
-        "@id": "urn:ngm:class:spatial-computing-paradigm",
+        "@id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing"
       }
     ],

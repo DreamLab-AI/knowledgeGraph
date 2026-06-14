@@ -100,7 +100,7 @@
     "uses": [],
     "supports": [
       {
-        "id": "urn:ngm:class:spatial-computing-paradigm",
+        "id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing"
       },
       {
@@ -228,10 +228,6 @@
     {
       "slug": "industrial-metaverse",
       "label": "Industrial Metaverse"
-    },
-    {
-      "slug": "infrastructure-domain",
-      "label": "Infrastructure Domain"
     },
     {
       "slug": "infrastructure-layer",

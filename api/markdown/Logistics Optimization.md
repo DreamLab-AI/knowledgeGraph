@@ -275,7 +275,7 @@ public:: true
       "vc:label": "Stochastic Optimization"
     },
     {
-      "@id": "urn:visionflow:linked:supply-chain-domain",
+      "@id": "urn:visionflow:linked:supply-chain",
       "vc:label": "SupplyChainDomain"
     },
     {
@@ -323,7 +323,7 @@ public:: true
       "vc:label": "World Customs Organisation"
     },
     {
-      "@id": "urn:visionflow:owl:class:ai-grounded-domain",
+      "@id": "urn:visionflow:owl:class:ai-technique",
       "vc:label": "AI-GroundedDomain"
     },
     {
@@ -1069,7 +1069,7 @@ public:: true
     },
     {
       "raw": "[[SupplyChainDomain]]",
-      "resolved": "urn:visionflow:linked:supply-chain-domain",
+      "resolved": "urn:visionflow:linked:supply-chain",
       "kind": "StubLink"
     },
     {
@@ -1129,7 +1129,7 @@ public:: true
     },
     {
       "raw": "[[AI-GroundedDomain]]",
-      "resolved": "urn:visionflow:owl:class:ai-grounded-domain",
+      "resolved": "urn:visionflow:owl:class:ai-technique",
       "kind": "ResolvedLink"
     },
     {

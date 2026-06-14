@@ -120,7 +120,7 @@ alias:: Hash-Function, HashFunction
       "vc:label": "CryptographicLayer"
     },
     {
-      "@id": "urn:visionflow:linked:cryptography-domain",
+      "@id": "urn:visionflow:linked:cryptography",
       "vc:label": "CryptographyDomain"
     },
     {
@@ -196,7 +196,7 @@ alias:: Hash-Function, HashFunction
       "vc:label": "Indistinguishability"
     },
     {
-      "@id": "urn:visionflow:linked:information-security-domain",
+      "@id": "urn:visionflow:linked:information-security",
       "vc:label": "InformationSecurityDomain"
     },
     {
@@ -384,7 +384,7 @@ alias:: Hash-Function, HashFunction
       "vc:label": "Bitcoin"
     },
     {
-      "@id": "urn:visionflow:owl:class:blockchain-domain",
+      "@id": "urn:visionflow:owl:class:blockchain",
       "vc:label": "BlockchainDomain"
     },
     {
@@ -871,7 +871,7 @@ alias:: Hash-Function, HashFunction
     },
     {
       "raw": "[[CryptographyDomain]]",
-      "resolved": "urn:visionflow:linked:cryptography-domain",
+      "resolved": "urn:visionflow:linked:cryptography",
       "kind": "StubLink"
     },
     {
@@ -966,7 +966,7 @@ alias:: Hash-Function, HashFunction
     },
     {
       "raw": "[[InformationSecurityDomain]]",
-      "resolved": "urn:visionflow:linked:information-security-domain",
+      "resolved": "urn:visionflow:linked:information-security",
       "kind": "StubLink"
     },
     {
@@ -1201,7 +1201,7 @@ alias:: Hash-Function, HashFunction
     },
     {
       "raw": "[[BlockchainDomain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-domain",
+      "resolved": "urn:visionflow:owl:class:blockchain",
       "kind": "ResolvedLink"
     },
     {

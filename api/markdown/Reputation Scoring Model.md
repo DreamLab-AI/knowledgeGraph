@@ -75,7 +75,7 @@ public:: true
       "vc:label": "Risk Assessment"
     },
     {
-      "@id": "urn:visionflow:owl:class:trust-and-governance-domain",
+      "@id": "urn:visionflow:owl:class:ai-governance-and-ethics",
       "vc:label": "TrustAndGovernanceDomain"
     },
     {
@@ -87,7 +87,7 @@ public:: true
       "vc:label": "Trust Score Metric"
     },
     {
-      "@id": "urn:visionflow:owl:class:virtual-society-domain",
+      "@id": "urn:visionflow:owl:class:virtual-society",
       "vc:label": "VirtualSocietyDomain"
     }
   ],
@@ -293,7 +293,7 @@ public:: true
     },
     {
       "raw": "[[TrustAndGovernanceDomain]]",
-      "resolved": "urn:visionflow:owl:class:trust-and-governance-domain",
+      "resolved": "urn:visionflow:owl:class:ai-governance-and-ethics",
       "kind": "ResolvedLink"
     },
     {
@@ -308,7 +308,7 @@ public:: true
     },
     {
       "raw": "[[VirtualSocietyDomain]]",
-      "resolved": "urn:visionflow:owl:class:virtual-society-domain",
+      "resolved": "urn:visionflow:owl:class:virtual-society",
       "kind": "ResolvedLink"
     }
   ],

@@ -23,7 +23,7 @@ public:: true
       "vc:label": "Data Warehouse"
     },
     {
-      "@id": "urn:visionflow:linked:distributed-systems-domain",
+      "@id": "urn:visionflow:linked:distributed-systems",
       "vc:label": "Distributed Systems Domain"
     },
     {
@@ -43,7 +43,7 @@ public:: true
       "vc:label": "Stream Processing"
     },
     {
-      "@id": "urn:visionflow:linked:infrastructure-domain",
+      "@id": "urn:visionflow:linked:infrastructure",
       "vc:label": "Infrastructure Domain"
     }
   ],
@@ -107,7 +107,7 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:distributed-systems-domain",
+        "@id": "urn:ngm:class:distributed-systems",
         "label": "Distributed Systems Domain"
       },
       {
@@ -121,7 +121,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:machine-learning-discipline-domain",
+        "@id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning Domain"
       },
       {
@@ -243,7 +243,7 @@ public:: true
     },
     {
       "raw": "[[Distributed Systems Domain]]",
-      "resolved": "urn:visionflow:linked:distributed-systems-domain",
+      "resolved": "urn:visionflow:linked:distributed-systems",
       "kind": "ResolvedLink"
     },
     {
@@ -268,7 +268,7 @@ public:: true
     },
     {
       "raw": "[[Infrastructure Domain]]",
-      "resolved": "urn:visionflow:linked:infrastructure-domain",
+      "resolved": "urn:visionflow:linked:infrastructure",
       "kind": "ResolvedLink"
     }
   ],

@@ -256,7 +256,7 @@
       "label": "AI Safety Institute"
     },
     {
-      "slug": "aisafety-domain",
+      "slug": "ai-safety",
       "label": "AISafetyDomain"
     },
     {
@@ -332,7 +332,7 @@
       "label": "FSB"
     },
     {
-      "slug": "governance-domain",
+      "slug": "governance",
       "label": "GovernanceDomain"
     },
     {
@@ -606,10 +606,6 @@
       "label": "Ethical Sourcing"
     },
     {
-      "slug": "financial-markets-domain",
-      "label": "Financial Markets Domain"
-    },
-    {
       "slug": "graph-database",
       "label": "Graph Database"
     },
@@ -632,10 +628,6 @@
     {
       "slug": "reputation-scoring-model",
       "label": "Reputation Scoring Model"
-    },
-    {
-      "slug": "risk-management-domain",
-      "label": "Risk Management Domain"
     },
     {
       "slug": "robot-standard",

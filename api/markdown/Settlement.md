@@ -23,7 +23,7 @@ public:: true
       "vc:label": "Cross-Border Settlement"
     },
     {
-      "@id": "urn:visionflow:linked:financial-infrastructure-domain",
+      "@id": "urn:visionflow:linked:financial-infrastructure",
       "vc:label": "Financial Infrastructure Domain"
     }
   ],
@@ -55,7 +55,7 @@ public:: true
   "maturity": "mature",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:financial-infrastructure-domain",
+      "@id": "urn:ngm:class:financial-infrastructure",
       "label": "Financial Infrastructure Domain"
     }
   ],
@@ -76,7 +76,7 @@ public:: true
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:financial-infrastructure-domain",
+        "@id": "urn:ngm:class:financial-infrastructure",
         "label": "Financial Infrastructure Domain"
       },
       {
@@ -220,7 +220,7 @@ public:: true
     },
     {
       "raw": "[[Financial Infrastructure Domain]]",
-      "resolved": "urn:visionflow:linked:financial-infrastructure-domain",
+      "resolved": "urn:visionflow:linked:financial-infrastructure",
       "kind": "ResolvedLink"
     }
   ],

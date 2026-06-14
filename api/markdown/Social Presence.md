@@ -24,7 +24,7 @@ alias:: SocialPresence
       "vc:label": "Telecollaboration"
     },
     {
-      "@id": "urn:visionflow:owl:class:telecollaboration-domain",
+      "@id": "urn:visionflow:owl:class:telecollaboration",
       "vc:label": "TelecollaborationDomain"
     }
   ],
@@ -144,7 +144,7 @@ alias:: SocialPresence
     },
     {
       "raw": "[[TelecollaborationDomain]]",
-      "resolved": "urn:visionflow:owl:class:telecollaboration-domain",
+      "resolved": "urn:visionflow:owl:class:telecollaboration",
       "kind": "ResolvedLink"
     }
   ],

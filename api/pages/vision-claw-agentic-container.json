@@ -163,7 +163,7 @@
       "label": "Agent Bead"
     },
     {
-      "slug": "agentic-systems-domain",
+      "slug": "ai-application",
       "label": "AgenticSystemsDomain"
     },
     {
@@ -431,10 +431,6 @@
     {
       "slug": "model-context-protocol",
       "label": "Model Context Protocol"
-    },
-    {
-      "slug": "ngm-domain",
-      "label": "NGM Domain"
     },
     {
       "slug": "nostr-protocol",

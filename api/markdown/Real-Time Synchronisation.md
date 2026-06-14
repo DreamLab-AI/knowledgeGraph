@@ -26,7 +26,7 @@ public:: true
   "subClassOf": [{"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"}],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:distributed-collaboration-domain", "label": "Distributed Collaboration Domain"},
+      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration Domain"},
       {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
     ]
   },

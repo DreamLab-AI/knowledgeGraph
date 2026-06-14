@@ -46,10 +46,6 @@
   ],
   "backlinks": [
     {
-      "slug": "cryptography-domain",
-      "label": "Cryptography Domain"
-    },
-    {
       "slug": "digital-signature",
       "label": "Digital Signature"
     }

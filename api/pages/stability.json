@@ -33,7 +33,7 @@
         "label": "Feedback Loop"
       },
       {
-        "id": "urn:ngm:class:control-systems-domain",
+        "id": "urn:ngm:class:robo-actuation-and-control",
         "label": "Control Systems Domain"
       }
     ]
@@ -43,10 +43,6 @@
     {
       "slug": "closed-loop-control",
       "label": "Closed-Loop Control"
-    },
-    {
-      "slug": "control-systems-domain",
-      "label": "Control Systems Domain"
     },
     {
       "slug": "feedback-loop",

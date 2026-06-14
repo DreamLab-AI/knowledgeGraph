@@ -15,7 +15,7 @@ public:: true
       "vc:label": "Distributed Database Design"
     },
     {
-      "@id": "urn:visionflow:linked:distributed-systems-domain",
+      "@id": "urn:visionflow:linked:distributed-systems",
       "vc:label": "Distributed Systems Domain"
     },
     {
@@ -201,7 +201,7 @@ public:: true
     },
     {
       "raw": "[[Distributed Systems Domain]]",
-      "resolved": "urn:visionflow:linked:distributed-systems-domain",
+      "resolved": "urn:visionflow:linked:distributed-systems",
       "kind": "ResolvedLink"
     },
     {

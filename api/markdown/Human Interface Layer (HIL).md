@@ -55,11 +55,11 @@ public:: true
       "vc:label": "Hardware Abstraction Layer (HAL)"
     },
     {
-      "@id": "urn:visionflow:owl:class:interaction-domain",
+      "@id": "urn:visionflow:owl:class:sc-interaction",
       "vc:label": "InteractionDomain"
     },
     {
-      "@id": "urn:visionflow:owl:class:interaction-domain",
+      "@id": "urn:visionflow:owl:class:sc-interaction",
       "vc:label": "Interaction Domain"
     },
     {
@@ -111,7 +111,7 @@ public:: true
       "label": "Interaction Technology"
     },
     {
-      "@id": "urn:ngm:class:interaction-domain",
+      "@id": "urn:ngm:class:sc-interaction",
       "label": "Interaction Domain"
     }
   ],
@@ -172,7 +172,7 @@ public:: true
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:interaction-domain",
+        "@id": "urn:ngm:class:sc-interaction",
         "label": "Interaction Domain"
       }
     ]
@@ -252,12 +252,12 @@ public:: true
     },
     {
       "raw": "[[Interaction Domain]]",
-      "resolved": "urn:visionflow:owl:class:interaction-domain",
+      "resolved": "urn:visionflow:owl:class:sc-interaction",
       "kind": "ResolvedLink"
     },
     {
       "raw": "[[InteractionDomain]]",
-      "resolved": "urn:visionflow:owl:class:interaction-domain",
+      "resolved": "urn:visionflow:owl:class:sc-interaction",
       "kind": "ResolvedLink"
     },
     {

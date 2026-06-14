@@ -456,7 +456,7 @@
       "label": "Distributed Ledger Technology"
     },
     {
-      "slug": "distributed-systems-domain",
+      "slug": "distributed-systems",
       "label": "DistributedSystemsDomain"
     },
     {
@@ -768,7 +768,7 @@
       "label": "Bitcoin"
     },
     {
-      "slug": "blockchain-domain",
+      "slug": "blockchain",
       "label": "BlockchainDomain"
     },
     {
@@ -970,10 +970,6 @@
       "label": "Distributed Protocol"
     },
     {
-      "slug": "distributed-systems-domain",
-      "label": "Distributed Systems Domain"
-    },
-    {
       "slug": "enterprise-blockchain-architecture",
       "label": "Enterprise Blockchain Architecture"
     },
@@ -994,10 +990,6 @@
       "label": "Hybrid Consensus"
     },
     {
-      "slug": "interoperability-domain",
-      "label": "Interoperability Domain"
-    },
-    {
       "slug": "layer-0",
       "label": "Layer 0"
     },
@@ -1012,10 +1004,6 @@
     {
       "slug": "ouroboros",
       "label": "Ouroboros"
-    },
-    {
-      "slug": "payment-systems-domain",
-      "label": "Payment Systems Domain"
     },
     {
       "slug": "permissioned-blockchain",

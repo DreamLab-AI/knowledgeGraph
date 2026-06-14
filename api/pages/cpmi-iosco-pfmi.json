@@ -55,18 +55,6 @@
   ],
   "backlinks": [
     {
-      "slug": "capital-markets-domain",
-      "label": "Capital Markets Domain"
-    },
-    {
-      "slug": "financial-infrastructure-domain",
-      "label": "Financial Infrastructure Domain"
-    },
-    {
-      "slug": "payment-systems-domain",
-      "label": "Payment Systems Domain"
-    },
-    {
       "slug": "swift-messaging",
       "label": "SWIFT Messaging"
     }

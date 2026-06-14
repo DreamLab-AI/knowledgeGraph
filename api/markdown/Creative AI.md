@@ -48,7 +48,7 @@ public:: true
     "relatedTo": [
       {"@id": "urn:ngm:class:creative-software", "label": "Creative Software"},
       {"@id": "urn:ngm:class:ai-art-categorization", "label": "AI Art Categorization"},
-      {"@id": "urn:ngm:class:creative-media-domain", "label": "Creative Media Domain"},
+      {"@id": "urn:ngm:class:ai-application", "label": "Creative Media Domain"},
       {"@id": "urn:ngm:class:human-ai-collaboration", "label": "Human-AI Collaboration"},
       {"@id": "urn:ngm:class:intellectual-property", "label": "Intellectual Property"}
     ],

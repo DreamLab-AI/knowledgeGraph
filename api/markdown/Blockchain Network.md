@@ -96,7 +96,7 @@ alias:: BlockchainNetwork
       "vc:label": "Distributed Ledger Technology"
     },
     {
-      "@id": "urn:visionflow:linked:distributed-systems-domain",
+      "@id": "urn:visionflow:linked:distributed-systems",
       "vc:label": "DistributedSystemsDomain"
     },
     {
@@ -332,7 +332,7 @@ alias:: BlockchainNetwork
       "vc:label": "Blockchain"
     },
     {
-      "@id": "urn:visionflow:owl:class:blockchain-domain",
+      "@id": "urn:visionflow:owl:class:blockchain",
       "vc:label": "BlockchainDomain"
     },
     {
@@ -352,7 +352,7 @@ alias:: BlockchainNetwork
       "vc:label": "Consensus Mechanism"
     },
     {
-      "@id": "urn:visionflow:owl:class:cryptographic-domain",
+      "@id": "urn:visionflow:owl:class:bc-cryptographic-primitive",
       "vc:label": "CryptographicDomain"
     },
     {
@@ -915,7 +915,7 @@ alias:: BlockchainNetwork
     },
     {
       "raw": "[[DistributedSystemsDomain]]",
-      "resolved": "urn:visionflow:linked:distributed-systems-domain",
+      "resolved": "urn:visionflow:linked:distributed-systems",
       "kind": "StubLink"
     },
     {
@@ -1210,7 +1210,7 @@ alias:: BlockchainNetwork
     },
     {
       "raw": "[[BlockchainDomain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-domain",
+      "resolved": "urn:visionflow:owl:class:blockchain",
       "kind": "ResolvedLink"
     },
     {
@@ -1235,7 +1235,7 @@ alias:: BlockchainNetwork
     },
     {
       "raw": "[[CryptographicDomain]]",
-      "resolved": "urn:visionflow:owl:class:cryptographic-domain",
+      "resolved": "urn:visionflow:owl:class:bc-cryptographic-primitive",
       "kind": "ResolvedLink"
     },
     {

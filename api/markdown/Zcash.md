@@ -27,7 +27,7 @@ public:: true
       "vc:label": "zkSync"
     },
     {
-      "@id": "urn:visionflow:linked:blockchain-domain",
+      "@id": "urn:visionflow:linked:blockchain",
       "vc:label": "Blockchain Domain"
     },
     {
@@ -173,7 +173,7 @@ public:: true
     ],
     "dependsOn": [
       {
-        "@id": "urn:ngm:class:blockchain-domain",
+        "@id": "urn:ngm:class:blockchain",
         "label": "Blockchain Domain"
       },
       {
@@ -232,7 +232,7 @@ public:: true
     },
     {
       "raw": "[[Blockchain Domain]]",
-      "resolved": "urn:visionflow:linked:blockchain-domain",
+      "resolved": "urn:visionflow:linked:blockchain",
       "kind": "ResolvedLink"
     },
     {

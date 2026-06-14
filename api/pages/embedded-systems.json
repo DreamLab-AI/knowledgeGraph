@@ -187,8 +187,20 @@
       "label": "IoT Sensor Network"
     },
     {
+      "slug": "io-t-sensor-network",
+      "label": "IoT Sensor Network"
+    },
+    {
       "slug": "motion-control",
       "label": "Motion Control"
+    },
+    {
+      "slug": "power-electronics",
+      "label": "Power Electronics"
+    },
+    {
+      "slug": "real-time",
+      "label": "Real Time"
     },
     {
       "slug": "real-time",
@@ -203,8 +215,12 @@
       "label": "Robot Hardware"
     },
     {
-      "slug": "robotics-domain",
-      "label": "Robotics Domain"
+      "slug": "robot-hardware",
+      "label": "Robot Hardware"
+    },
+    {
+      "slug": "robotics-platform",
+      "label": "Robotics Platform"
     },
     {
       "slug": "micro-ros",

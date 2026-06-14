@@ -67,7 +67,7 @@ public:: true
       "vc:label": "Econometrics"
     },
     {
-      "@id": "urn:visionflow:linked:economics-domain",
+      "@id": "urn:visionflow:linked:economics",
       "vc:label": "EconomicsDomain"
     },
     {
@@ -267,7 +267,7 @@ public:: true
       "vc:label": "AI Governance"
     },
     {
-      "@id": "urn:visionflow:owl:class:ai-grounded-domain",
+      "@id": "urn:visionflow:owl:class:ai-technique",
       "vc:label": "AI-GroundedDomain"
     },
     {
@@ -823,7 +823,7 @@ public:: true
     },
     {
       "raw": "[[EconomicsDomain]]",
-      "resolved": "urn:visionflow:linked:economics-domain",
+      "resolved": "urn:visionflow:linked:economics",
       "kind": "StubLink"
     },
     {
@@ -1073,7 +1073,7 @@ public:: true
     },
     {
       "raw": "[[AI-GroundedDomain]]",
-      "resolved": "urn:visionflow:owl:class:ai-grounded-domain",
+      "resolved": "urn:visionflow:owl:class:ai-technique",
       "kind": "ResolvedLink"
     },
     {

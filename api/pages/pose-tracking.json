@@ -29,7 +29,7 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:spatial-computing-paradigm-domain",
+        "id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing Domain"
       },
       {
@@ -43,10 +43,6 @@
     {
       "slug": "ar-display-device",
       "label": "Ar Display Device"
-    },
-    {
-      "slug": "spatial-computing-domain",
-      "label": "Spatial Computing Domain"
     }
   ]
 }

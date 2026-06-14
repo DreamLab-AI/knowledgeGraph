@@ -252,7 +252,7 @@ alias:: BC-0463-governance-token, GovernanceToken
       "vc:label": "DeFi"
     },
     {
-      "@id": "urn:visionflow:linked:de-fi-domain",
+      "@id": "urn:visionflow:linked:bc-defi-and-economics",
       "vc:label": "DeFiDomain"
     },
     {
@@ -276,7 +276,7 @@ alias:: BC-0463-governance-token, GovernanceToken
       "vc:label": "Delegation Mechanism"
     },
     {
-      "@id": "urn:visionflow:linked:digital-asset-domain",
+      "@id": "urn:visionflow:linked:digital-asset",
       "vc:label": "DigitalAssetDomain"
     },
     {
@@ -412,7 +412,7 @@ alias:: BC-0463-governance-token, GovernanceToken
       "vc:label": "Gnosis Safe"
     },
     {
-      "@id": "urn:visionflow:linked:governance-domain",
+      "@id": "urn:visionflow:linked:governance",
       "vc:label": "GovernanceDomain"
     },
     {
@@ -940,7 +940,7 @@ alias:: BC-0463-governance-token, GovernanceToken
       "vc:label": "ApplicationLayer"
     },
     {
-      "@id": "urn:visionflow:owl:class:blockchain-domain",
+      "@id": "urn:visionflow:owl:class:blockchain",
       "vc:label": "BlockchainDomain"
     },
     {
@@ -1678,7 +1678,7 @@ alias:: BC-0463-governance-token, GovernanceToken
     },
     {
       "raw": "[[DeFiDomain]]",
-      "resolved": "urn:visionflow:linked:de-fi-domain",
+      "resolved": "urn:visionflow:linked:bc-defi-and-economics",
       "kind": "StubLink"
     },
     {
@@ -1708,7 +1708,7 @@ alias:: BC-0463-governance-token, GovernanceToken
     },
     {
       "raw": "[[DigitalAssetDomain]]",
-      "resolved": "urn:visionflow:linked:digital-asset-domain",
+      "resolved": "urn:visionflow:linked:digital-asset",
       "kind": "StubLink"
     },
     {
@@ -1878,7 +1878,7 @@ alias:: BC-0463-governance-token, GovernanceToken
     },
     {
       "raw": "[[GovernanceDomain]]",
-      "resolved": "urn:visionflow:linked:governance-domain",
+      "resolved": "urn:visionflow:linked:governance",
       "kind": "StubLink"
     },
     {
@@ -2538,7 +2538,7 @@ alias:: BC-0463-governance-token, GovernanceToken
     },
     {
       "raw": "[[BlockchainDomain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-domain",
+      "resolved": "urn:visionflow:owl:class:blockchain",
       "kind": "ResolvedLink"
     },
     {

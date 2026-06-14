@@ -215,7 +215,7 @@ public:: true
       "vc:label": "IETF CFRG"
     },
     {
-      "@id": "urn:visionflow:linked:information-security-domain",
+      "@id": "urn:visionflow:linked:information-security",
       "vc:label": "InformationSecurityDomain"
     },
     {
@@ -487,7 +487,7 @@ public:: true
       "vc:label": "Blockchain"
     },
     {
-      "@id": "urn:visionflow:owl:class:computation-and-intelligence-domain",
+      "@id": "urn:visionflow:owl:class:ai-research-area",
       "vc:label": "ComputationAndIntelligenceDomain"
     },
     {
@@ -523,7 +523,7 @@ public:: true
       "vc:label": "Information Security"
     },
     {
-      "@id": "urn:visionflow:owl:class:infrastructure-domain",
+      "@id": "urn:visionflow:owl:class:infrastructure",
       "vc:label": "InfrastructureDomain"
     },
     {
@@ -1206,7 +1206,7 @@ public:: true
     },
     {
       "raw": "[[InformationSecurityDomain]]",
-      "resolved": "urn:visionflow:linked:information-security-domain",
+      "resolved": "urn:visionflow:linked:information-security",
       "kind": "StubLink"
     },
     {
@@ -1546,7 +1546,7 @@ public:: true
     },
     {
       "raw": "[[ComputationAndIntelligenceDomain]]",
-      "resolved": "urn:visionflow:owl:class:computation-and-intelligence-domain",
+      "resolved": "urn:visionflow:owl:class:ai-research-area",
       "kind": "ResolvedLink"
     },
     {
@@ -1591,7 +1591,7 @@ public:: true
     },
     {
       "raw": "[[InfrastructureDomain]]",
-      "resolved": "urn:visionflow:owl:class:infrastructure-domain",
+      "resolved": "urn:visionflow:owl:class:infrastructure",
       "kind": "ResolvedLink"
     },
     {

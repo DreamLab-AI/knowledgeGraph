@@ -192,10 +192,6 @@
       "label": "Cryptographic Keys"
     },
     {
-      "slug": "cryptography-domain",
-      "label": "Cryptography Domain"
-    },
-    {
       "slug": "cryptography-security-and-privacy",
       "label": "Cryptography Security and Privacy"
     },

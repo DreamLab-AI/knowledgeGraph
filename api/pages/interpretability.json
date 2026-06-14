@@ -153,15 +153,11 @@
       "label": "Trust"
     },
     {
-      "slug": "metaverse-domain",
+      "slug": "metaverse",
       "label": "MetaverseDomain"
     }
   ],
   "backlinks": [
-    {
-      "slug": "ai-safety-domain",
-      "label": "AI Safety Domain"
-    },
     {
       "slug": "feature-attribution",
       "label": "Feature Attribution"

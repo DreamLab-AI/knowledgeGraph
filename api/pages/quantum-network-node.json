@@ -167,7 +167,7 @@
       "label": "Vibration Isolation"
     },
     {
-      "slug": "infrastructure-domain",
+      "slug": "infrastructure",
       "label": "InfrastructureDomain"
     },
     {
@@ -183,7 +183,7 @@
       "label": "Power Supply"
     },
     {
-      "slug": "trust-and-governance-domain",
+      "slug": "ai-governance-and-ethics",
       "label": "TrustAndGovernanceDomain"
     }
   ],

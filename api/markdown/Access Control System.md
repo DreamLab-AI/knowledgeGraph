@@ -179,7 +179,7 @@ public:: true
       "vc:label": "Governance Control"
     },
     {
-      "@id": "urn:visionflow:linked:governance-domain",
+      "@id": "urn:visionflow:linked:governance",
       "vc:label": "GovernanceDomain"
     },
     {
@@ -415,7 +415,7 @@ public:: true
       "vc:label": "Security Control"
     },
     {
-      "@id": "urn:visionflow:linked:security-domain",
+      "@id": "urn:visionflow:linked:security",
       "vc:label": "SecurityDomain"
     },
     {
@@ -543,7 +543,7 @@ public:: true
       "vc:label": "Identity Provider"
     },
     {
-      "@id": "urn:visionflow:owl:class:infrastructure-domain",
+      "@id": "urn:visionflow:owl:class:infrastructure",
       "vc:label": "InfrastructureDomain"
     },
     {
@@ -1123,7 +1123,7 @@ public:: true
     },
     {
       "raw": "[[GovernanceDomain]]",
-      "resolved": "urn:visionflow:linked:governance-domain",
+      "resolved": "urn:visionflow:linked:governance",
       "kind": "StubLink"
     },
     {
@@ -1418,7 +1418,7 @@ public:: true
     },
     {
       "raw": "[[SecurityDomain]]",
-      "resolved": "urn:visionflow:linked:security-domain",
+      "resolved": "urn:visionflow:linked:security",
       "kind": "StubLink"
     },
     {
@@ -1578,7 +1578,7 @@ public:: true
     },
     {
       "raw": "[[InfrastructureDomain]]",
-      "resolved": "urn:visionflow:owl:class:infrastructure-domain",
+      "resolved": "urn:visionflow:owl:class:infrastructure",
       "kind": "ResolvedLink"
     },
     {

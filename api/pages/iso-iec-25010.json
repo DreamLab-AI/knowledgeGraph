@@ -39,10 +39,6 @@
     {
       "slug": "ai-deployment",
       "label": "AI Deployment"
-    },
-    {
-      "slug": "enterprise-software-domain",
-      "label": "Enterprise Software Domain"
     }
   ]
 }

@@ -360,7 +360,7 @@
       "label": "Autonomous System"
     },
     {
-      "slug": "autonomous-systems-domain",
+      "slug": "robo-navigation-and-planning",
       "label": "AutonomousSystemsDomain"
     },
     {
@@ -500,7 +500,7 @@
       "label": "Hong et al 2024 CogAgent"
     },
     {
-      "slug": "human-computer-interaction-domain",
+      "slug": "human-computer-interaction",
       "label": "HumanComputerInteractionDomain"
     },
     {
@@ -796,7 +796,7 @@
       "label": "AI Alignment"
     },
     {
-      "slug": "ai-grounded-domain",
+      "slug": "ai-technique",
       "label": "AI-GroundedDomain"
     },
     {
@@ -812,7 +812,7 @@
       "label": "Chatbot"
     },
     {
-      "slug": "computation-and-intelligence-domain",
+      "slug": "ai-research-area",
       "label": "ComputationAndIntelligenceDomain"
     },
     {

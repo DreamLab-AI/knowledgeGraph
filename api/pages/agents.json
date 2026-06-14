@@ -316,7 +316,7 @@
       "label": "Autonomous System"
     },
     {
-      "slug": "autonomous-systems-domain",
+      "slug": "robo-navigation-and-planning",
       "label": "AutonomousSystemsDomain"
     },
     {
@@ -664,7 +664,7 @@
       "label": "AI Alignment"
     },
     {
-      "slug": "ai-grounded-domain",
+      "slug": "ai-technique",
       "label": "AI-GroundedDomain"
     },
     {
@@ -684,7 +684,7 @@
       "label": "Chatbot"
     },
     {
-      "slug": "computation-and-intelligence-domain",
+      "slug": "ai-research-area",
       "label": "ComputationAndIntelligenceDomain"
     },
     {

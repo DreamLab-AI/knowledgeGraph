@@ -148,10 +148,6 @@
     {
       "slug": "liquidity-provision",
       "label": "Liquidity Provision"
-    },
-    {
-      "slug": "token-economics-domain",
-      "label": "Token Economics Domain"
     }
   ]
 }

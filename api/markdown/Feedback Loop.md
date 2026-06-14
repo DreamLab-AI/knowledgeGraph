@@ -111,7 +111,7 @@ public:: true
       "vc:label": "Control Mechanism"
     },
     {
-      "@id": "urn:visionflow:linked:control-theory-domain",
+      "@id": "urn:visionflow:linked:control-theory",
       "vc:label": "ControlTheoryDomain"
     },
     {
@@ -435,7 +435,7 @@ public:: true
       "vc:label": "Adaptive Control"
     },
     {
-      "@id": "urn:visionflow:owl:class:computation-and-intelligence-domain",
+      "@id": "urn:visionflow:owl:class:ai-research-area",
       "vc:label": "ComputationAndIntelligenceDomain"
     },
     {
@@ -897,7 +897,7 @@ public:: true
     },
     {
       "raw": "[[ControlTheoryDomain]]",
-      "resolved": "urn:visionflow:linked:control-theory-domain",
+      "resolved": "urn:visionflow:linked:control-theory",
       "kind": "StubLink"
     },
     {
@@ -1302,7 +1302,7 @@ public:: true
     },
     {
       "raw": "[[ComputationAndIntelligenceDomain]]",
-      "resolved": "urn:visionflow:owl:class:computation-and-intelligence-domain",
+      "resolved": "urn:visionflow:owl:class:ai-research-area",
       "kind": "ResolvedLink"
     },
     {

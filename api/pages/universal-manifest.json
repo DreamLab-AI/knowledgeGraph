@@ -127,7 +127,7 @@
       "label": "Identity Credentials"
     },
     {
-      "slug": "interoperability-domain",
+      "slug": "interoperability",
       "label": "Interoperability Domain"
     },
     {
@@ -195,7 +195,7 @@
       "label": "Middleware Layer"
     },
     {
-      "slug": "trust-and-governance-domain",
+      "slug": "ai-governance-and-ethics",
       "label": "Trust And Governance Domain"
     }
   ],

@@ -239,20 +239,12 @@
       "label": "Hyperledger Fabric"
     },
     {
-      "slug": "identity-domain",
-      "label": "Identity Domain"
-    },
-    {
       "slug": "identity-provider-id-p",
       "label": "Identity Provider (IdP)"
     },
     {
       "slug": "identity-system",
       "label": "Identity System"
-    },
-    {
-      "slug": "information-security-domain",
-      "label": "Information Security Domain"
     },
     {
       "slug": "oauth",
@@ -277,10 +269,6 @@
     {
       "slug": "reputation-data",
       "label": "Reputation Data"
-    },
-    {
-      "slug": "security-domain",
-      "label": "Security Domain"
     },
     {
       "slug": "trust-infrastructure",

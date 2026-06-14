@@ -35,7 +35,7 @@ public:: true
       "vc:label": "Chain-of-Thought Prompting"
     },
     {
-      "@id": "urn:visionflow:linked:cognitive-science-domain",
+      "@id": "urn:visionflow:linked:cognitive-science",
       "vc:label": "CognitiveScienceDomain"
     },
     {
@@ -47,7 +47,7 @@ public:: true
       "vc:label": "Formal Logic"
     },
     {
-      "@id": "urn:visionflow:linked:formal-methods-domain",
+      "@id": "urn:visionflow:linked:ai-research-area",
       "vc:label": "FormalMethodsDomain"
     },
     {
@@ -139,7 +139,7 @@ public:: true
       "vc:label": "Agents"
     },
     {
-      "@id": "urn:visionflow:owl:class:ai-grounded-domain",
+      "@id": "urn:visionflow:owl:class:ai-technique",
       "vc:label": "AI-GroundedDomain"
     },
     {
@@ -187,7 +187,7 @@ public:: true
       "vc:label": "Competition in AI"
     },
     {
-      "@id": "urn:visionflow:owl:class:computation-and-intelligence-domain",
+      "@id": "urn:visionflow:owl:class:ai-research-area",
       "vc:label": "ComputationAndIntelligenceDomain"
     },
     {
@@ -589,7 +589,7 @@ public:: true
     },
     {
       "raw": "[[CognitiveScienceDomain]]",
-      "resolved": "urn:visionflow:linked:cognitive-science-domain",
+      "resolved": "urn:visionflow:linked:cognitive-science",
       "kind": "StubLink"
     },
     {
@@ -604,7 +604,7 @@ public:: true
     },
     {
       "raw": "[[FormalMethodsDomain]]",
-      "resolved": "urn:visionflow:linked:formal-methods-domain",
+      "resolved": "urn:visionflow:linked:ai-research-area",
       "kind": "StubLink"
     },
     {
@@ -719,7 +719,7 @@ public:: true
     },
     {
       "raw": "[[AI-GroundedDomain]]",
-      "resolved": "urn:visionflow:owl:class:ai-grounded-domain",
+      "resolved": "urn:visionflow:owl:class:ai-technique",
       "kind": "ResolvedLink"
     },
     {
@@ -779,7 +779,7 @@ public:: true
     },
     {
       "raw": "[[ComputationAndIntelligenceDomain]]",
-      "resolved": "urn:visionflow:owl:class:computation-and-intelligence-domain",
+      "resolved": "urn:visionflow:owl:class:ai-research-area",
       "kind": "ResolvedLink"
     },
     {

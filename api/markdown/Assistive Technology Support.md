@@ -26,7 +26,7 @@ public:: true
   "subClassOf": [{"@id": "urn:ngm:class:human-computer-interaction", "label": "Human-Computer Interaction"}],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:accessibility-domain", "label": "Accessibility Domain"},
+      {"@id": "urn:ngm:class:accessibility", "label": "Accessibility Domain"},
       {"@id": "urn:ngm:class:accessible-experience", "label": "Accessible Experience"}
     ]
   },

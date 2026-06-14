@@ -31,11 +31,11 @@ public:: true
       "vc:label": "Digital Twin"
     },
     {
-      "@id": "urn:visionflow:linked:metaverse-domain",
+      "@id": "urn:visionflow:linked:metaverse",
       "vc:label": "Metaverse Domain"
     },
     {
-      "@id": "urn:visionflow:linked:computer-vision-domain",
+      "@id": "urn:visionflow:linked:computer-vision",
       "vc:label": "Computer Vision Domain"
     },
     {
@@ -43,7 +43,7 @@ public:: true
       "vc:label": "3D Reconstruction"
     },
     {
-      "@id": "urn:visionflow:linked:creative-media-domain",
+      "@id": "urn:visionflow:linked:ai-application",
       "vc:label": "Creative Media Domain"
     }
   ],
@@ -127,7 +127,7 @@ public:: true
         "label": "Digital Twin"
       },
       {
-        "@id": "urn:ngm:class:metaverse-domain",
+        "@id": "urn:ngm:class:metaverse",
         "label": "Metaverse Domain"
       },
       {
@@ -179,7 +179,7 @@ public:: true
     ],
     "bridgesTo": [
       {
-        "@id": "urn:ngm:class:computer-vision-domain",
+        "@id": "urn:ngm:class:computer-vision",
         "label": "Computer Vision Domain"
       },
       {
@@ -257,12 +257,12 @@ public:: true
     },
     {
       "raw": "[[Metaverse Domain]]",
-      "resolved": "urn:visionflow:linked:metaverse-domain",
+      "resolved": "urn:visionflow:linked:metaverse",
       "kind": "ResolvedLink"
     },
     {
       "raw": "[[Computer Vision Domain]]",
-      "resolved": "urn:visionflow:linked:computer-vision-domain",
+      "resolved": "urn:visionflow:linked:computer-vision",
       "kind": "ResolvedLink"
     },
     {
@@ -272,7 +272,7 @@ public:: true
     },
     {
       "raw": "[[Creative Media Domain]]",
-      "resolved": "urn:visionflow:linked:creative-media-domain",
+      "resolved": "urn:visionflow:linked:ai-application",
       "kind": "ResolvedLink"
     }
   ],

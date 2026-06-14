@@ -86,7 +86,7 @@
         "label": "Hand Tracking"
       },
       {
-        "id": "urn:ngm:class:spatial-computing-paradigm",
+        "id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing"
       }
     ],
@@ -240,7 +240,7 @@
       "label": "Hand Tracking"
     },
     {
-      "slug": "metaverse-domain",
+      "slug": "metaverse",
       "label": "Metaverse Domain"
     },
     {
@@ -252,7 +252,7 @@
       "label": "Model Context Protocol"
     },
     {
-      "slug": "ngm-domain",
+      "slug": "infrastructure",
       "label": "NGM Domain"
     },
     {
@@ -260,7 +260,7 @@
       "label": "Robot Operating System"
     },
     {
-      "slug": "robotics-domain",
+      "slug": "robotics",
       "label": "Robotics Domain"
     },
     {
@@ -268,7 +268,7 @@
       "label": "Spatial Computing"
     },
     {
-      "slug": "telecollaboration-domain",
+      "slug": "telecollaboration",
       "label": "Telecollaboration Domain"
     },
     {

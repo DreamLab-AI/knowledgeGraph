@@ -24,7 +24,7 @@ alias:: Privacy-by-Design
       "vc:label": "ISO 29100"
     },
     {
-      "@id": "urn:visionflow:owl:class:aiethics-domain",
+      "@id": "urn:visionflow:owl:class:ai-governance-and-ethics",
       "vc:label": "AIEthicsDomain"
     },
     {
@@ -150,7 +150,7 @@ alias:: Privacy-by-Design
     },
     {
       "raw": "[[AIEthicsDomain]]",
-      "resolved": "urn:visionflow:owl:class:aiethics-domain",
+      "resolved": "urn:visionflow:owl:class:ai-governance-and-ethics",
       "kind": "ResolvedLink"
     },
     {

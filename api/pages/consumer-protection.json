@@ -579,7 +579,7 @@
       "label": "Regulation"
     },
     {
-      "slug": "regulation-domain",
+      "slug": "regulation",
       "label": "RegulationDomain"
     },
     {
@@ -731,10 +731,6 @@
     {
       "slug": "product-recall-management",
       "label": "Product Recall Management"
-    },
-    {
-      "slug": "regulatory-domain",
-      "label": "Regulatory Domain"
     },
     {
       "slug": "stablecoin-regulation",

@@ -311,7 +311,7 @@
       "label": "Decentralised Finance"
     },
     {
-      "slug": "decentralised-finance-domain",
+      "slug": "decentralised-finance",
       "label": "DecentralisedFinanceDomain"
     },
     {
@@ -395,7 +395,7 @@
       "label": "Mechanism Design"
     },
     {
-      "slug": "mechanism-design-domain",
+      "slug": "mechanism-design",
       "label": "MechanismDesignDomain"
     },
     {
@@ -531,7 +531,7 @@
       "label": "Bitcoin"
     },
     {
-      "slug": "blockchain-domain",
+      "slug": "blockchain",
       "label": "BlockchainDomain"
     },
     {

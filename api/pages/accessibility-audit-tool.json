@@ -147,7 +147,7 @@
       "label": "Compliance Verification"
     },
     {
-      "slug": "interaction-domain",
+      "slug": "sc-interaction",
       "label": "InteractionDomain"
     },
     {
@@ -163,7 +163,7 @@
       "label": "Telecollaboration"
     },
     {
-      "slug": "trust-and-governance-domain",
+      "slug": "ai-governance-and-ethics",
       "label": "TrustAndGovernanceDomain"
     },
     {

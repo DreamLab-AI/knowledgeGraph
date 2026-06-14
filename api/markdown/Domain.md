@@ -73,8 +73,8 @@ public:: true
       {"@id": "urn:ngm:class:semantic-web-linked-data-standard-standards", "label": "Semantic Web Standards"}
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:metaverse-domain", "label": "Metaverse Domain"},
-      {"@id": "urn:ngm:class:blockchain-domain", "label": "Blockchain Domain"}
+      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse Domain"},
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain Domain"}
     ]
   },
   "provenance": {

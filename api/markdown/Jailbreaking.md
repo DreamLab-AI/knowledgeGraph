@@ -31,7 +31,7 @@ public:: true
       "vc:label": "AI Regulation"
     },
     {
-      "@id": "urn:visionflow:linked:ai-safety-domain",
+      "@id": "urn:visionflow:linked:ai-safety",
       "vc:label": "AI Safety Domain"
     },
     {
@@ -509,7 +509,7 @@ public:: true
     },
     {
       "raw": "[[AI Safety Domain]]",
-      "resolved": "urn:visionflow:linked:ai-safety-domain",
+      "resolved": "urn:visionflow:linked:ai-safety",
       "kind": "StubLink"
     },
     {

@@ -208,10 +208,6 @@
       "label": "Brain Computer Interfaces"
     },
     {
-      "slug": "computer-vision-domain",
-      "label": "Computer Vision Domain"
-    },
-    {
       "slug": "digital-content-overlay",
       "label": "Digital Content Overlay"
     },
@@ -264,10 +260,6 @@
       "label": "Meta"
     },
     {
-      "slug": "metaverse-domain",
-      "label": "Metaverse Domain"
-    },
-    {
       "slug": "metaverse-technology",
       "label": "Metaverse Technology"
     },
@@ -314,10 +306,6 @@
     {
       "slug": "shared-ar-experiences",
       "label": "Shared Ar Experiences"
-    },
-    {
-      "slug": "spatial-computing-domain",
-      "label": "Spatial Computing Domain"
     },
     {
       "slug": "telecollaboration-and-telepresence",

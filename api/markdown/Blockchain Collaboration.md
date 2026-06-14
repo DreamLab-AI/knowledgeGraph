@@ -80,7 +80,7 @@ alias:: TELE-250-blockchain-collaboration
       "label": "Protocol and Infrastructure"
     },
     {
-      "@id": "urn:ngm:class:telecollaboration-domain",
+      "@id": "urn:ngm:class:telecollaboration",
       "label": "TELE-002-telecollaboration"
     }
   ],

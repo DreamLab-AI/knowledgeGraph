@@ -165,10 +165,6 @@
     {
       "slug": "time-series-forecasting",
       "label": "Time Series Forecasting"
-    },
-    {
-      "slug": "token-economics-domain",
-      "label": "Token Economics Domain"
     }
   ]
 }

@@ -8,7 +8,7 @@
   "definition": "Stellar is an open blockchain network and protocol designed for fast, low-cost transfer and exchange of digital representations of value, including fiat-backed tokens and stablecoins.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:blockchain-domain",
+      "id": "urn:ngm:class:blockchain",
       "label": "Blockchain Domain"
     }
   ],
@@ -57,7 +57,7 @@
       "label": "Payment Network"
     },
     {
-      "slug": "blockchain-domain",
+      "slug": "blockchain",
       "label": "Blockchain Domain"
     }
   ],

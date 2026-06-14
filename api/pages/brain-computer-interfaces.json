@@ -308,7 +308,7 @@
   },
   "wikilinks": [
     {
-      "slug": "accessibility-domain",
+      "slug": "accessibility",
       "label": "AccessibilityDomain"
     },
     {
@@ -460,7 +460,7 @@
       "label": "Hochberg et al. 2012 Reach and Grasp Tetraplegia"
     },
     {
-      "slug": "human-computer-interaction-domain",
+      "slug": "human-computer-interaction",
       "label": "HumanComputerInteractionDomain"
     },
     {
@@ -776,7 +776,7 @@
       "label": "Human-Computer Interface"
     },
     {
-      "slug": "infrastructure-domain",
+      "slug": "infrastructure",
       "label": "InfrastructureDomain"
     },
     {

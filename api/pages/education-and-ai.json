@@ -467,7 +467,7 @@
       "label": "Human-Centred AI"
     },
     {
-      "slug": "human-computer-interaction-domain",
+      "slug": "human-computer-interaction",
       "label": "HumanComputerInteractionDomain"
     },
     {
@@ -723,7 +723,7 @@
       "label": "AI Ethics"
     },
     {
-      "slug": "ai-grounded-domain",
+      "slug": "ai-technique",
       "label": "AI-GroundedDomain"
     },
     {

@@ -208,7 +208,7 @@ alias:: BC-0485-travel-rule
       "vc:label": "Record Keeping"
     },
     {
-      "@id": "urn:visionflow:linked:regulatory-compliance-domain",
+      "@id": "urn:visionflow:linked:regulatory-compliance",
       "vc:label": "RegulatoryComplianceDomain"
     },
     {
@@ -304,7 +304,7 @@ alias:: BC-0485-travel-rule
       "vc:label": "Blockchain"
     },
     {
-      "@id": "urn:visionflow:owl:class:blockchain-domain",
+      "@id": "urn:visionflow:owl:class:blockchain",
       "vc:label": "BlockchainDomain"
     },
     {
@@ -890,7 +890,7 @@ alias:: BC-0485-travel-rule
     },
     {
       "raw": "[[RegulatoryComplianceDomain]]",
-      "resolved": "urn:visionflow:linked:regulatory-compliance-domain",
+      "resolved": "urn:visionflow:linked:regulatory-compliance",
       "kind": "StubLink"
     },
     {
@@ -1010,7 +1010,7 @@ alias:: BC-0485-travel-rule
     },
     {
       "raw": "[[BlockchainDomain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-domain",
+      "resolved": "urn:visionflow:owl:class:blockchain",
       "kind": "ResolvedLink"
     },
     {

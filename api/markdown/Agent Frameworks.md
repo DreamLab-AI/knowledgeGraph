@@ -299,7 +299,7 @@ public:: true
       "vc:label": "Shinn et al 2023 Reflexion"
     },
     {
-      "@id": "urn:visionflow:linked:software-engineering-domain",
+      "@id": "urn:visionflow:linked:software-engineering",
       "vc:label": "SoftwareEngineeringDomain"
     },
     {
@@ -391,7 +391,7 @@ public:: true
       "vc:label": "AI Agent System"
     },
     {
-      "@id": "urn:visionflow:owl:class:ai-grounded-domain",
+      "@id": "urn:visionflow:owl:class:ai-technique",
       "vc:label": "AI-GroundedDomain"
     },
     {
@@ -399,7 +399,7 @@ public:: true
       "vc:label": "ApplicationLayer"
     },
     {
-      "@id": "urn:visionflow:owl:class:computation-and-intelligence-domain",
+      "@id": "urn:visionflow:owl:class:ai-research-area",
       "vc:label": "ComputationAndIntelligenceDomain"
     },
     {
@@ -1092,7 +1092,7 @@ public:: true
     },
     {
       "raw": "[[SoftwareEngineeringDomain]]",
-      "resolved": "urn:visionflow:linked:software-engineering-domain",
+      "resolved": "urn:visionflow:linked:software-engineering",
       "kind": "StubLink"
     },
     {
@@ -1207,7 +1207,7 @@ public:: true
     },
     {
       "raw": "[[AI-GroundedDomain]]",
-      "resolved": "urn:visionflow:owl:class:ai-grounded-domain",
+      "resolved": "urn:visionflow:owl:class:ai-technique",
       "kind": "ResolvedLink"
     },
     {
@@ -1217,7 +1217,7 @@ public:: true
     },
     {
       "raw": "[[ComputationAndIntelligenceDomain]]",
-      "resolved": "urn:visionflow:owl:class:computation-and-intelligence-domain",
+      "resolved": "urn:visionflow:owl:class:ai-research-area",
       "kind": "ResolvedLink"
     },
     {

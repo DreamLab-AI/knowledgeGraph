@@ -8,7 +8,7 @@
   "definition": "Layer 1 is the foundational base protocol of a blockchain network that maintains its own independently verified state, executes a native consensus mechanism, and provides cryptographically final transaction ordering without relying on any external chain. It defines the canonical ledger, enforces network rules (including token issuance schedules and validity criteria), and serves as the trust anchor from which all higher-order protocols derive their security guarantees. Notable examples include Bitcoin, Ethereum, Solana, Cardano, and Avalanche, each differing in their consensus approach, throughput characteristics, and programmability.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:blockchain-domain",
+      "id": "urn:ngm:class:blockchain",
       "label": "Blockchain Domain"
     }
   ],
@@ -150,7 +150,7 @@
       "label": "Distributed Ledger"
     },
     {
-      "slug": "blockchain-domain",
+      "slug": "blockchain",
       "label": "Blockchain Domain"
     }
   ],

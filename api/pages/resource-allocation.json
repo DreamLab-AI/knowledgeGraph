@@ -33,17 +33,13 @@
         "label": "Value Transfer"
       },
       {
-        "id": "urn:ngm:class:economics-domain",
+        "id": "urn:ngm:class:economics",
         "label": "Economics Domain"
       }
     ]
   },
   "wikilinks": [],
   "backlinks": [
-    {
-      "slug": "economics-domain",
-      "label": "Economics Domain"
-    },
     {
       "slug": "value-transfer",
       "label": "Value Transfer"

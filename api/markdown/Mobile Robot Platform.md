@@ -19,7 +19,7 @@ public:: true
       "vc:label": "Autonomous System"
     },
     {
-      "@id": "urn:visionflow:linked:autonomous-systems-domain",
+      "@id": "urn:visionflow:linked:robo-navigation-and-planning",
       "vc:label": "AutonomousSystemsDomain"
     },
     {
@@ -47,7 +47,7 @@ public:: true
       "vc:label": "Cyber Physical System"
     },
     {
-      "@id": "urn:visionflow:linked:cyber-physical-systems-domain",
+      "@id": "urn:visionflow:linked:cyber-physical-systems",
       "vc:label": "CyberPhysicalSystemsDomain"
     },
     {
@@ -598,7 +598,7 @@ public:: true
     },
     {
       "raw": "[[AutonomousSystemsDomain]]",
-      "resolved": "urn:visionflow:linked:autonomous-systems-domain",
+      "resolved": "urn:visionflow:linked:robo-navigation-and-planning",
       "kind": "StubLink"
     },
     {
@@ -633,7 +633,7 @@ public:: true
     },
     {
       "raw": "[[CyberPhysicalSystemsDomain]]",
-      "resolved": "urn:visionflow:linked:cyber-physical-systems-domain",
+      "resolved": "urn:visionflow:linked:cyber-physical-systems",
       "kind": "StubLink"
     },
     {

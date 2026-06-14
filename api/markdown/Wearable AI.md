@@ -60,7 +60,7 @@ public:: true
   "qualityScore": 0.7,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:spatial-computing-paradigm-domain",
+      "@id": "urn:ngm:class:spatial-computing",
       "label": "Spatial Computing Domain"
     }
   ],

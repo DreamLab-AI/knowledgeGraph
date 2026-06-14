@@ -100,7 +100,7 @@ alias:: BC-0432-consortium-blockchain, ConsortiumBlockchain
       "vc:label": "Distributed Ledger Technology"
     },
     {
-      "@id": "urn:visionflow:linked:distributed-systems-domain",
+      "@id": "urn:visionflow:linked:distributed-systems",
       "vc:label": "DistributedSystemsDomain"
     },
     {
@@ -124,7 +124,7 @@ alias:: BC-0432-consortium-blockchain, ConsortiumBlockchain
       "vc:label": "Enterprise Ethereum Alliance"
     },
     {
-      "@id": "urn:visionflow:linked:enterprise-software-domain",
+      "@id": "urn:visionflow:linked:infra-software-engineering",
       "vc:label": "EnterpriseSoftwareDomain"
     },
     {
@@ -156,7 +156,7 @@ alias:: BC-0432-consortium-blockchain, ConsortiumBlockchain
       "vc:label": "GoQuorum"
     },
     {
-      "@id": "urn:visionflow:linked:governance-domain",
+      "@id": "urn:visionflow:linked:governance",
       "vc:label": "GovernanceDomain"
     },
     {
@@ -400,7 +400,7 @@ alias:: BC-0432-consortium-blockchain, ConsortiumBlockchain
       "vc:label": "Bitcoin"
     },
     {
-      "@id": "urn:visionflow:owl:class:blockchain-domain",
+      "@id": "urn:visionflow:owl:class:blockchain",
       "vc:label": "BlockchainDomain"
     },
     {
@@ -958,7 +958,7 @@ alias:: BC-0432-consortium-blockchain, ConsortiumBlockchain
     },
     {
       "raw": "[[DistributedSystemsDomain]]",
-      "resolved": "urn:visionflow:linked:distributed-systems-domain",
+      "resolved": "urn:visionflow:linked:distributed-systems",
       "kind": "StubLink"
     },
     {
@@ -988,7 +988,7 @@ alias:: BC-0432-consortium-blockchain, ConsortiumBlockchain
     },
     {
       "raw": "[[EnterpriseSoftwareDomain]]",
-      "resolved": "urn:visionflow:linked:enterprise-software-domain",
+      "resolved": "urn:visionflow:linked:infra-software-engineering",
       "kind": "StubLink"
     },
     {
@@ -1028,7 +1028,7 @@ alias:: BC-0432-consortium-blockchain, ConsortiumBlockchain
     },
     {
       "raw": "[[GovernanceDomain]]",
-      "resolved": "urn:visionflow:linked:governance-domain",
+      "resolved": "urn:visionflow:linked:governance",
       "kind": "StubLink"
     },
     {
@@ -1333,7 +1333,7 @@ alias:: BC-0432-consortium-blockchain, ConsortiumBlockchain
     },
     {
       "raw": "[[BlockchainDomain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-domain",
+      "resolved": "urn:visionflow:owl:class:blockchain",
       "kind": "ResolvedLink"
     },
     {

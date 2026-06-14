@@ -52,7 +52,7 @@ alias:: BC-0067-hyperledger-fabric, BC-0426-hyperledger-fabric, HyperledgerFabri
       "vc:label": "AccessControl"
     },
     {
-      "@id": "urn:visionflow:owl:class:blockchain-domain",
+      "@id": "urn:visionflow:owl:class:blockchain",
       "vc:label": "BlockchainDomain"
     },
     {
@@ -308,7 +308,7 @@ alias:: BC-0067-hyperledger-fabric, BC-0426-hyperledger-fabric, HyperledgerFabri
     },
     {
       "raw": "[[BlockchainDomain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-domain",
+      "resolved": "urn:visionflow:owl:class:blockchain",
       "kind": "ResolvedLink"
     },
     {

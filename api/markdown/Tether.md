@@ -27,15 +27,15 @@ public:: true
       "vc:label": "Crypto Trading"
     },
     {
-      "@id": "urn:visionflow:linked:decentralised-finance-domain",
+      "@id": "urn:visionflow:linked:decentralised-finance",
       "vc:label": "Decentralised Finance Domain"
     },
     {
-      "@id": "urn:visionflow:linked:regulatory-domain",
+      "@id": "urn:visionflow:linked:infra-legal-and-regulatory",
       "vc:label": "Regulatory Domain"
     },
     {
-      "@id": "urn:visionflow:linked:digital-asset-domain",
+      "@id": "urn:visionflow:linked:digital-asset",
       "vc:label": "Digital Asset Domain"
     }
   ],
@@ -141,11 +141,11 @@ public:: true
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:digital-asset-domain",
+        "@id": "urn:ngm:class:digital-asset",
         "label": "Digital Asset Domain"
       },
       {
-        "@id": "urn:ngm:class:decentralised-finance-domain",
+        "@id": "urn:ngm:class:decentralised-finance",
         "label": "Decentralised Finance Domain"
       }
     ],
@@ -171,7 +171,7 @@ public:: true
     ],
     "bridgesTo": [
       {
-        "@id": "urn:ngm:class:regulatory-domain",
+        "@id": "urn:ngm:class:infra-legal-and-regulatory",
         "label": "Regulatory Domain"
       },
       {
@@ -244,17 +244,17 @@ public:: true
     },
     {
       "raw": "[[Decentralised Finance Domain]]",
-      "resolved": "urn:visionflow:linked:decentralised-finance-domain",
+      "resolved": "urn:visionflow:linked:decentralised-finance",
       "kind": "ResolvedLink"
     },
     {
       "raw": "[[Regulatory Domain]]",
-      "resolved": "urn:visionflow:linked:regulatory-domain",
+      "resolved": "urn:visionflow:linked:infra-legal-and-regulatory",
       "kind": "ResolvedLink"
     },
     {
       "raw": "[[Digital Asset Domain]]",
-      "resolved": "urn:visionflow:linked:digital-asset-domain",
+      "resolved": "urn:visionflow:linked:digital-asset",
       "kind": "ResolvedLink"
     }
   ],

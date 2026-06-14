@@ -523,7 +523,7 @@
       "label": "Kembhavi Salvato et al 2016 AI2D Diagram Is Worth a Dozen Images ECCV"
     },
     {
-      "slug": "knowledge-representation-domain",
+      "slug": "knowledge-representation",
       "label": "KnowledgeRepresentationDomain"
     },
     {
@@ -699,7 +699,7 @@
       "label": "Sequence Diagram"
     },
     {
-      "slug": "software-engineering-domain",
+      "slug": "software-engineering",
       "label": "SoftwareEngineeringDomain"
     },
     {
@@ -855,7 +855,7 @@
       "label": "ChatGPT"
     },
     {
-      "slug": "infrastructure-domain",
+      "slug": "infrastructure",
       "label": "InfrastructureDomain"
     },
     {

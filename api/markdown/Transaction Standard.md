@@ -95,7 +95,7 @@ public:: true
       "vc:label": "Smart Contract Platform"
     },
     {
-      "@id": "urn:visionflow:owl:class:virtual-economy-domain",
+      "@id": "urn:visionflow:owl:class:virtual-economy",
       "vc:label": "Virtual Economy Domain"
     },
     {
@@ -344,7 +344,7 @@ public:: true
     },
     {
       "raw": "[[Virtual Economy Domain]]",
-      "resolved": "urn:visionflow:owl:class:virtual-economy-domain",
+      "resolved": "urn:visionflow:owl:class:virtual-economy",
       "kind": "ResolvedLink"
     },
     {

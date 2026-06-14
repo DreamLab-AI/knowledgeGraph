@@ -8,7 +8,7 @@
   "definition": "Wearable AI refers to body-worn devices that run or stream machine learning to sense context, recognise speech and imagery, and present information, often through glasses, earbuds or wrist devices.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing-paradigm-domain",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "Spatial Computing Domain"
     }
   ],

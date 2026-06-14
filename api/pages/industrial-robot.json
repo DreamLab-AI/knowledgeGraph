@@ -332,7 +332,7 @@
       "label": "Manufacturing Automation"
     },
     {
-      "slug": "manufacturing-domain",
+      "slug": "robo-actuation-and-control",
       "label": "ManufacturingDomain"
     },
     {
@@ -452,7 +452,7 @@
       "label": "Robot Operating System"
     },
     {
-      "slug": "robotics-domain",
+      "slug": "robotics",
       "label": "RoboticsDomain"
     },
     {

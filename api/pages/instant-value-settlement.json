@@ -312,11 +312,11 @@
   },
   "wikilinks": [
     {
-      "slug": "cryptography-domain",
+      "slug": "cryptography",
       "label": "CryptographyDomain"
     },
     {
-      "slug": "financial-infrastructure-domain",
+      "slug": "financial-infrastructure",
       "label": "FinancialInfrastructureDomain"
     },
     {
@@ -324,7 +324,7 @@
       "label": "PaymentsDomain"
     },
     {
-      "slug": "regulatory-domain",
+      "slug": "infra-legal-and-regulatory",
       "label": "RegulatoryDomain"
     },
     {
@@ -356,7 +356,7 @@
       "label": "Bitcoin Technical Overview"
     },
     {
-      "slug": "blockchain-domain",
+      "slug": "blockchain",
       "label": "BlockchainDomain"
     },
     {

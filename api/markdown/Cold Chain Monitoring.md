@@ -240,7 +240,7 @@ alias:: ColdChainMonitoring
       "vc:label": "Supply Chain"
     },
     {
-      "@id": "urn:visionflow:linked:supply-chain-domain",
+      "@id": "urn:visionflow:linked:supply-chain",
       "vc:label": "SupplyChainDomain"
     },
     {
@@ -340,7 +340,7 @@ alias:: ColdChainMonitoring
       "vc:label": "Hyperledger Fabric"
     },
     {
-      "@id": "urn:visionflow:owl:class:infrastructure-domain",
+      "@id": "urn:visionflow:owl:class:infrastructure",
       "vc:label": "InfrastructureDomain"
     },
     {
@@ -1033,7 +1033,7 @@ alias:: ColdChainMonitoring
     },
     {
       "raw": "[[SupplyChainDomain]]",
-      "resolved": "urn:visionflow:linked:supply-chain-domain",
+      "resolved": "urn:visionflow:linked:supply-chain",
       "kind": "StubLink"
     },
     {
@@ -1158,7 +1158,7 @@ alias:: ColdChainMonitoring
     },
     {
       "raw": "[[InfrastructureDomain]]",
-      "resolved": "urn:visionflow:owl:class:infrastructure-domain",
+      "resolved": "urn:visionflow:owl:class:infrastructure",
       "kind": "ResolvedLink"
     },
     {

@@ -33,17 +33,13 @@
         "label": "Confusion Matrix"
       },
       {
-        "id": "urn:ngm:class:ai-governance-domain",
+        "id": "urn:ngm:class:ai-governance",
         "label": "AI Governance Domain"
       }
     ]
   },
   "wikilinks": [],
   "backlinks": [
-    {
-      "slug": "ai-governance-domain",
-      "label": "AI Governance Domain"
-    },
     {
       "slug": "confusion-matrix",
       "label": "Confusion Matrix"

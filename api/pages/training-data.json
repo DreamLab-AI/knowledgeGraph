@@ -300,7 +300,7 @@
       "label": "Data Deduplication"
     },
     {
-      "slug": "data-governance-domain",
+      "slug": "data-governance",
       "label": "DataGovernanceDomain"
     },
     {
@@ -416,7 +416,7 @@
       "label": "Active Learning"
     },
     {
-      "slug": "ai-grounded-domain",
+      "slug": "ai-technique",
       "label": "AI-GroundedDomain"
     },
     {

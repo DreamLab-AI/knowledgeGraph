@@ -159,7 +159,7 @@ public:: true
       "vc:label": "machine learning"
     },
     {
-      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "@id": "urn:visionflow:owl:class:metaverse",
       "vc:label": "MetaverseDomain"
     },
     {
@@ -311,7 +311,7 @@ public:: true
       {"@id": "urn:ngm:class:copyright", "label": "Copyright"}
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:metaverse-domain", "label": "MetaverseDomain"},
+      {"@id": "urn:ngm:class:metaverse", "label": "MetaverseDomain"},
       {"@id": "urn:ngm:class:comfy-ui", "label": "ComfyUI"}
     ],
     "contrastsWith": [
@@ -527,7 +527,7 @@ public:: true
     },
     {
       "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "resolved": "urn:visionflow:owl:class:metaverse",
       "kind": "ResolvedLink"
     },
     {

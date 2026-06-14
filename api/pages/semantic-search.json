@@ -340,7 +340,7 @@
       "label": "Hybrid Retrieval"
     },
     {
-      "slug": "information-retrieval-domain",
+      "slug": "information-retrieval",
       "label": "InformationRetrievalDomain"
     },
     {
@@ -392,7 +392,7 @@
       "label": "MTEB Benchmark"
     },
     {
-      "slug": "natural-language-processing-domain",
+      "slug": "natural-language-processing",
       "label": "NaturalLanguageProcessingDomain"
     },
     {
@@ -468,7 +468,7 @@
       "label": "Weaviate"
     },
     {
-      "slug": "ai-grounded-domain",
+      "slug": "ai-technique",
       "label": "AI-GroundedDomain"
     },
     {
@@ -538,20 +538,12 @@
       "label": "Graph Database"
     },
     {
-      "slug": "information-retrieval-domain",
-      "label": "Information Retrieval Domain"
-    },
-    {
       "slug": "knowledge-graph",
       "label": "Knowledge Graph"
     },
     {
       "slug": "knowledge-graphing",
       "label": "Knowledge Graphing"
-    },
-    {
-      "slug": "knowledge-representation-domain",
-      "label": "Knowledge Representation Domain"
     },
     {
       "slug": "meeting-recording",

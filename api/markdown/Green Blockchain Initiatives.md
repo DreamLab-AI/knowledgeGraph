@@ -27,7 +27,7 @@ public:: true
       "vc:label": "Bitcoin Lightning Network"
     },
     {
-      "@id": "urn:visionflow:linked:capital-markets-domain",
+      "@id": "urn:visionflow:linked:bc-defi-and-economics",
       "vc:label": "CapitalMarketsDomain"
     },
     {
@@ -235,7 +235,7 @@ public:: true
       "vc:label": "Regenerative Finance"
     },
     {
-      "@id": "urn:visionflow:linked:regulatory-domain",
+      "@id": "urn:visionflow:linked:infra-legal-and-regulatory",
       "vc:label": "RegulatoryDomain"
     },
     {
@@ -263,7 +263,7 @@ public:: true
       "vc:label": "SFDR Disclosure"
     },
     {
-      "@id": "urn:visionflow:linked:sustainability-domain",
+      "@id": "urn:visionflow:linked:sustainability",
       "vc:label": "SustainabilityDomain"
     },
     {
@@ -323,7 +323,7 @@ public:: true
       "vc:label": "Bitcoin Mining"
     },
     {
-      "@id": "urn:visionflow:owl:class:blockchain-domain",
+      "@id": "urn:visionflow:owl:class:blockchain",
       "vc:label": "BlockchainDomain"
     },
     {
@@ -781,7 +781,7 @@ public:: true
     },
     {
       "raw": "[[CapitalMarketsDomain]]",
-      "resolved": "urn:visionflow:linked:capital-markets-domain",
+      "resolved": "urn:visionflow:linked:bc-defi-and-economics",
       "kind": "StubLink"
     },
     {
@@ -1041,7 +1041,7 @@ public:: true
     },
     {
       "raw": "[[RegulatoryDomain]]",
-      "resolved": "urn:visionflow:linked:regulatory-domain",
+      "resolved": "urn:visionflow:linked:infra-legal-and-regulatory",
       "kind": "StubLink"
     },
     {
@@ -1076,7 +1076,7 @@ public:: true
     },
     {
       "raw": "[[SustainabilityDomain]]",
-      "resolved": "urn:visionflow:linked:sustainability-domain",
+      "resolved": "urn:visionflow:linked:sustainability",
       "kind": "StubLink"
     },
     {
@@ -1151,7 +1151,7 @@ public:: true
     },
     {
       "raw": "[[BlockchainDomain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-domain",
+      "resolved": "urn:visionflow:owl:class:blockchain",
       "kind": "ResolvedLink"
     },
     {

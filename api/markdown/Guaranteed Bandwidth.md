@@ -65,7 +65,7 @@ public:: true
     "enables": [
       {"@id": "urn:ngm:class:real-time-processing", "label": "Real-time Processing"},
       {"@id": "urn:ngm:class:immersive-communication", "label": "Immersive Communication"},
-      {"@id": "urn:ngm:class:spatial-computing-paradigm", "label": "Spatial Computing"}
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:latency", "label": "Latency"},

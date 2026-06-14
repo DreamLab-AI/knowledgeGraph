@@ -19,7 +19,7 @@ public:: true
       "vc:label": "AI Safety Institute"
     },
     {
-      "@id": "urn:visionflow:linked:aisafety-domain",
+      "@id": "urn:visionflow:linked:ai-safety",
       "vc:label": "AISafetyDomain"
     },
     {
@@ -95,7 +95,7 @@ public:: true
       "vc:label": "FSB"
     },
     {
-      "@id": "urn:visionflow:linked:governance-domain",
+      "@id": "urn:visionflow:linked:governance",
       "vc:label": "GovernanceDomain"
     },
     {
@@ -613,7 +613,7 @@ public:: true
     },
     {
       "raw": "[[AISafetyDomain]]",
-      "resolved": "urn:visionflow:linked:aisafety-domain",
+      "resolved": "urn:visionflow:linked:ai-safety",
       "kind": "StubLink"
     },
     {
@@ -708,7 +708,7 @@ public:: true
     },
     {
       "raw": "[[GovernanceDomain]]",
-      "resolved": "urn:visionflow:linked:governance-domain",
+      "resolved": "urn:visionflow:linked:governance",
       "kind": "StubLink"
     },
     {

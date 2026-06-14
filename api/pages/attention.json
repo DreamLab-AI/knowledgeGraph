@@ -311,7 +311,7 @@
       "label": "Dao et al. 2022 FlashAttention"
     },
     {
-      "slug": "deep-learning-domain",
+      "slug": "deep-learning",
       "label": "DeepLearningDomain"
     },
     {
@@ -587,7 +587,7 @@
       "label": "Zaheer et al. 2020 Big Bird"
     },
     {
-      "slug": "ai-grounded-domain",
+      "slug": "ai-technique",
       "label": "AI-GroundedDomain"
     },
     {
@@ -607,7 +607,7 @@
       "label": "Code Generation"
     },
     {
-      "slug": "computation-and-intelligence-domain",
+      "slug": "ai-research-area",
       "label": "ComputationAndIntelligenceDomain"
     },
     {
@@ -663,10 +663,6 @@
     {
       "slug": "automated-podcasting",
       "label": "Automated Podcasting"
-    },
-    {
-      "slug": "cognitive-science-domain",
-      "label": "Cognitive Science Domain"
     },
     {
       "slug": "cortex-agent",

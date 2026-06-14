@@ -75,7 +75,7 @@ public:: true
       "vc:label": "Computer Graphics"
     },
     {
-      "@id": "urn:visionflow:linked:computer-graphics-domain",
+      "@id": "urn:visionflow:linked:computer-graphics",
       "vc:label": "ComputerGraphicsDomain"
     },
     {
@@ -855,7 +855,7 @@ public:: true
     },
     {
       "raw": "[[ComputerGraphicsDomain]]",
-      "resolved": "urn:visionflow:linked:computer-graphics-domain",
+      "resolved": "urn:visionflow:linked:computer-graphics",
       "kind": "StubLink"
     },
     {

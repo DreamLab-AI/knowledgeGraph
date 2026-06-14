@@ -253,11 +253,11 @@
       "label": "AutoML"
     },
     {
-      "slug": "blockchain-domain",
+      "slug": "blockchain",
       "label": "Blockchain Domain"
     },
     {
-      "slug": "metaverse-domain",
+      "slug": "metaverse",
       "label": "Metaverse Domain"
     },
     {
@@ -265,7 +265,7 @@
       "label": "NetworkLayer"
     },
     {
-      "slug": "ngm-domain",
+      "slug": "infrastructure",
       "label": "NGM Domain"
     },
     {
@@ -285,7 +285,7 @@
       "label": "Robot Operating System"
     },
     {
-      "slug": "robotics-domain",
+      "slug": "robotics",
       "label": "Robotics Domain"
     },
     {
@@ -293,7 +293,7 @@
       "label": "Screen Sharing"
     },
     {
-      "slug": "telecollaboration-domain",
+      "slug": "telecollaboration",
       "label": "Telecollaboration Domain"
     },
     {

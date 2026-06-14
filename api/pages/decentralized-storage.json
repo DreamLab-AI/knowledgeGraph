@@ -90,7 +90,7 @@
         "label": "Digital Twin"
       },
       {
-        "id": "urn:ngm:class:metaverse-domain",
+        "id": "urn:ngm:class:metaverse",
         "label": "Metaverse Domain"
       }
     ],
@@ -251,7 +251,7 @@
       "label": "ContentAddressing"
     },
     {
-      "slug": "metaverse-domain",
+      "slug": "metaverse",
       "label": "MetaverseDomain"
     },
     {

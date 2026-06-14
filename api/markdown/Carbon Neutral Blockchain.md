@@ -175,7 +175,7 @@ public:: true
       "vc:label": "Environmental Accounting Standard"
     },
     {
-      "@id": "urn:visionflow:linked:environmental-domain",
+      "@id": "urn:visionflow:linked:infra-legal-and-regulatory",
       "vc:label": "EnvironmentalDomain"
     },
     {
@@ -367,7 +367,7 @@ public:: true
       "vc:label": "Scope 3 Emissions"
     },
     {
-      "@id": "urn:visionflow:linked:sustainability-domain",
+      "@id": "urn:visionflow:linked:sustainability",
       "vc:label": "SustainabilityDomain"
     },
     {
@@ -435,7 +435,7 @@ public:: true
       "vc:label": "Blockchain"
     },
     {
-      "@id": "urn:visionflow:owl:class:blockchain-domain",
+      "@id": "urn:visionflow:owl:class:blockchain",
       "vc:label": "BlockchainDomain"
     },
     {
@@ -1104,7 +1104,7 @@ public:: true
     },
     {
       "raw": "[[EnvironmentalDomain]]",
-      "resolved": "urn:visionflow:linked:environmental-domain",
+      "resolved": "urn:visionflow:linked:infra-legal-and-regulatory",
       "kind": "StubLink"
     },
     {
@@ -1344,7 +1344,7 @@ public:: true
     },
     {
       "raw": "[[SustainabilityDomain]]",
-      "resolved": "urn:visionflow:linked:sustainability-domain",
+      "resolved": "urn:visionflow:linked:sustainability",
       "kind": "StubLink"
     },
     {
@@ -1429,7 +1429,7 @@ public:: true
     },
     {
       "raw": "[[BlockchainDomain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-domain",
+      "resolved": "urn:visionflow:owl:class:blockchain",
       "kind": "ResolvedLink"
     },
     {

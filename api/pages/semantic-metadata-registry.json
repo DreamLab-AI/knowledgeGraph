@@ -151,7 +151,7 @@
       "label": "Controlled Vocabularies"
     },
     {
-      "slug": "creative-media-domain",
+      "slug": "ai-application",
       "label": "CreativeMediaDomain"
     },
     {
@@ -163,7 +163,7 @@
       "label": "Data Integration"
     },
     {
-      "slug": "infrastructure-domain",
+      "slug": "infrastructure",
       "label": "InfrastructureDomain"
     },
     {

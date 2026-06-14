@@ -33,7 +33,7 @@
         "label": "Cognitive AI"
       },
       {
-        "id": "urn:ngm:class:knowledge-representation-domain",
+        "id": "urn:ngm:class:knowledge-representation",
         "label": "Knowledge Representation Domain"
       }
     ]
@@ -43,10 +43,6 @@
     {
       "slug": "cognitive-ai",
       "label": "Cognitive AI"
-    },
-    {
-      "slug": "knowledge-representation-domain",
-      "label": "Knowledge Representation Domain"
     }
   ]
 }

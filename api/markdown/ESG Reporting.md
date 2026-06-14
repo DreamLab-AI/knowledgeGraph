@@ -99,7 +99,7 @@ public:: true
       "vc:label": "Corporate Disclosure"
     },
     {
-      "@id": "urn:visionflow:linked:corporate-governance-domain",
+      "@id": "urn:visionflow:linked:corporate-governance",
       "vc:label": "CorporateGovernanceDomain"
     },
     {
@@ -195,7 +195,7 @@ public:: true
       "vc:label": "FCA SDR PS23/16"
     },
     {
-      "@id": "urn:visionflow:linked:financial-regulation-domain",
+      "@id": "urn:visionflow:linked:financial-regulation",
       "vc:label": "FinancialRegulationDomain"
     },
     {
@@ -503,7 +503,7 @@ public:: true
       "vc:label": "Sustainability Disclosure"
     },
     {
-      "@id": "urn:visionflow:linked:sustainability-domain",
+      "@id": "urn:visionflow:linked:sustainability",
       "vc:label": "SustainabilityDomain"
     },
     {
@@ -603,7 +603,7 @@ public:: true
       "vc:label": "XBRL Inline Reporting"
     },
     {
-      "@id": "urn:visionflow:owl:class:blockchain-domain",
+      "@id": "urn:visionflow:owl:class:blockchain",
       "vc:label": "BlockchainDomain"
     },
     {
@@ -1189,7 +1189,7 @@ public:: true
     },
     {
       "raw": "[[CorporateGovernanceDomain]]",
-      "resolved": "urn:visionflow:linked:corporate-governance-domain",
+      "resolved": "urn:visionflow:linked:corporate-governance",
       "kind": "StubLink"
     },
     {
@@ -1309,7 +1309,7 @@ public:: true
     },
     {
       "raw": "[[FinancialRegulationDomain]]",
-      "resolved": "urn:visionflow:linked:financial-regulation-domain",
+      "resolved": "urn:visionflow:linked:financial-regulation",
       "kind": "StubLink"
     },
     {
@@ -1694,7 +1694,7 @@ public:: true
     },
     {
       "raw": "[[SustainabilityDomain]]",
-      "resolved": "urn:visionflow:linked:sustainability-domain",
+      "resolved": "urn:visionflow:linked:sustainability",
       "kind": "StubLink"
     },
     {
@@ -1819,7 +1819,7 @@ public:: true
     },
     {
       "raw": "[[BlockchainDomain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-domain",
+      "resolved": "urn:visionflow:owl:class:blockchain",
       "kind": "ResolvedLink"
     },
     {

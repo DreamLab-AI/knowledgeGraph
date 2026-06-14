@@ -339,7 +339,7 @@
       "label": "DeFi"
     },
     {
-      "slug": "decentralised-finance-domain",
+      "slug": "decentralised-finance",
       "label": "DecentralisedFinanceDomain"
     },
     {
@@ -359,7 +359,7 @@
       "label": "Digital Asset Creation"
     },
     {
-      "slug": "digital-asset-domain",
+      "slug": "digital-asset",
       "label": "DigitalAssetDomain"
     },
     {
@@ -523,7 +523,7 @@
       "label": "Bitcoin"
     },
     {
-      "slug": "blockchain-domain",
+      "slug": "blockchain",
       "label": "BlockchainDomain"
     },
     {

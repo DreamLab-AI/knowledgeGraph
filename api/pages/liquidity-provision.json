@@ -319,7 +319,7 @@
       "label": "Convex Finance"
     },
     {
-      "slug": "cryptography-domain",
+      "slug": "cryptography",
       "label": "CryptographyDomain"
     },
     {
@@ -335,7 +335,7 @@
       "label": "dYdX"
     },
     {
-      "slug": "decentralised-finance-domain",
+      "slug": "decentralised-finance",
       "label": "DecentralisedFinanceDomain"
     },
     {
@@ -363,7 +363,7 @@
       "label": "Fee Tier"
     },
     {
-      "slug": "financial-markets-domain",
+      "slug": "bc-defi-and-economics",
       "label": "FinancialMarketsDomain"
     },
     {
@@ -563,7 +563,7 @@
       "label": "Automated Market Maker"
     },
     {
-      "slug": "blockchain-domain",
+      "slug": "blockchain",
       "label": "BlockchainDomain"
     },
     {
@@ -615,10 +615,6 @@
     {
       "slug": "btc-layer-3",
       "label": "BTC Layer 3"
-    },
-    {
-      "slug": "capital-markets-domain",
-      "label": "Capital Markets Domain"
     },
     {
       "slug": "curve-wars",

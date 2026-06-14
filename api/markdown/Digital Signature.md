@@ -116,7 +116,7 @@ alias:: Digital-Signature, DigitalSignature
       "vc:label": "Cryptographically Secure Random Number Generator"
     },
     {
-      "@id": "urn:visionflow:linked:cryptography-domain",
+      "@id": "urn:visionflow:linked:cryptography",
       "vc:label": "CryptographyDomain"
     },
     {
@@ -236,7 +236,7 @@ alias:: Digital-Signature, DigitalSignature
       "vc:label": "in-toto"
     },
     {
-      "@id": "urn:visionflow:linked:information-security-domain",
+      "@id": "urn:visionflow:linked:information-security",
       "vc:label": "InformationSecurityDomain"
     },
     {
@@ -540,7 +540,7 @@ alias:: Digital-Signature, DigitalSignature
       "vc:label": "Bitcoin"
     },
     {
-      "@id": "urn:visionflow:owl:class:blockchain-domain",
+      "@id": "urn:visionflow:owl:class:blockchain",
       "vc:label": "BlockchainDomain"
     },
     {
@@ -1066,7 +1066,7 @@ alias:: Digital-Signature, DigitalSignature
     },
     {
       "raw": "[[CryptographyDomain]]",
-      "resolved": "urn:visionflow:linked:cryptography-domain",
+      "resolved": "urn:visionflow:linked:cryptography",
       "kind": "StubLink"
     },
     {
@@ -1216,7 +1216,7 @@ alias:: Digital-Signature, DigitalSignature
     },
     {
       "raw": "[[InformationSecurityDomain]]",
-      "resolved": "urn:visionflow:linked:information-security-domain",
+      "resolved": "urn:visionflow:linked:information-security",
       "kind": "StubLink"
     },
     {
@@ -1596,7 +1596,7 @@ alias:: Digital-Signature, DigitalSignature
     },
     {
       "raw": "[[BlockchainDomain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-domain",
+      "resolved": "urn:visionflow:owl:class:blockchain",
       "kind": "ResolvedLink"
     },
     {

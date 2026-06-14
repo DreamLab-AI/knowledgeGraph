@@ -111,7 +111,7 @@ public:: true
       "vc:label": "Cutler Ramaker 1979 Dynamic Matrix Control"
     },
     {
-      "@id": "urn:visionflow:linked:cyber-physical-systems-domain",
+      "@id": "urn:visionflow:linked:cyber-physical-systems",
       "vc:label": "CyberPhysicalSystemsDomain"
     },
     {
@@ -451,7 +451,7 @@ public:: true
       "vc:label": "Robotics"
     },
     {
-      "@id": "urn:visionflow:owl:class:robotics-domain",
+      "@id": "urn:visionflow:owl:class:robotics",
       "vc:label": "RoboticsDomain"
     },
     {
@@ -894,7 +894,7 @@ public:: true
     },
     {
       "raw": "[[CyberPhysicalSystemsDomain]]",
-      "resolved": "urn:visionflow:linked:cyber-physical-systems-domain",
+      "resolved": "urn:visionflow:linked:cyber-physical-systems",
       "kind": "StubLink"
     },
     {
@@ -1319,7 +1319,7 @@ public:: true
     },
     {
       "raw": "[[RoboticsDomain]]",
-      "resolved": "urn:visionflow:owl:class:robotics-domain",
+      "resolved": "urn:visionflow:owl:class:robotics",
       "kind": "ResolvedLink"
     },
     {

@@ -182,12 +182,32 @@
       "label": "Avatar Wearable"
     },
     {
+      "slug": "btc-layer-3",
+      "label": "BTC Layer 3"
+    },
+    {
+      "slug": "binance",
+      "label": "Binance"
+    },
+    {
+      "slug": "bitcoin-etf",
+      "label": "Bitcoin ETF"
+    },
+    {
+      "slug": "bitcoin-value-proposition",
+      "label": "Bitcoin Value Proposition"
+    },
+    {
       "slug": "bitcoin-value-proposition",
       "label": "Bitcoin Value Proposition"
     },
     {
       "slug": "blockchain",
       "label": "Blockchain"
+    },
+    {
+      "slug": "coinbase",
+      "label": "Coinbase"
     },
     {
       "slug": "consensus-algorithm",
@@ -230,6 +250,10 @@
       "label": "Economics"
     },
     {
+      "slug": "enterprise-token-standards",
+      "label": "Enterprise Token Standards"
+    },
+    {
       "slug": "fashion",
       "label": "Fashion"
     },
@@ -246,6 +270,14 @@
       "label": "Gold"
     },
     {
+      "slug": "gold",
+      "label": "Gold"
+    },
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    },
+    {
       "slug": "governance-token",
       "label": "Governance Token"
     },
@@ -254,12 +286,28 @@
       "label": "Inter-world Remittance"
     },
     {
+      "slug": "kraken",
+      "label": "Kraken"
+    },
+    {
+      "slug": "liquid-network",
+      "label": "Liquid Network"
+    },
+    {
       "slug": "metaverse-technology",
       "label": "Metaverse Technology"
     },
     {
       "slug": "metaverse",
       "label": "Metaverse"
+    },
+    {
+      "slug": "multi-sig-governance",
+      "label": "Multi Sig Governance"
+    },
+    {
+      "slug": "nft-minting",
+      "label": "NFT Minting"
     },
     {
       "slug": "non-fungible-token-nft",
@@ -272,6 +320,10 @@
     {
       "slug": "pay-pal",
       "label": "PayPal"
+    },
+    {
+      "slug": "quorum-blockchain",
+      "label": "Quorum Blockchain"
     },
     {
       "slug": "quorum-blockchain",
@@ -302,6 +354,14 @@
       "label": "Symbolic Object Library"
     },
     {
+      "slug": "taproot-assets",
+      "label": "Taproot Assets"
+    },
+    {
+      "slug": "tether",
+      "label": "Tether"
+    },
+    {
       "slug": "the-sandbox",
       "label": "The Sandbox"
     },
@@ -312,6 +372,10 @@
     {
       "slug": "us-regulatory-framework",
       "label": "US Regulatory Framework"
+    },
+    {
+      "slug": "ve-chain",
+      "label": "VeChain"
     },
     {
       "slug": "virtual-currency",

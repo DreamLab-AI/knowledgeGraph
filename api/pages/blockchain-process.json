@@ -55,7 +55,7 @@
     "standardizedBy": [],
     "partOf": [
       {
-        "id": "urn:ngm:class:blockchain-domain",
+        "id": "urn:ngm:class:blockchain",
         "label": "Blockchain Domain"
       }
     ],

@@ -8,7 +8,7 @@
   "definition": "Power electronics is the engineering discipline concerned with the conversion and control of electrical power using switching semiconductor devices such as MOSFETs, IGBTs and SiC transistors, central to motor drives, power supplies, inverters and energy management systems.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:embedded-systems-domain",
+      "id": "urn:ngm:class:embedded-systems",
       "label": "Embedded Systems Domain"
     }
   ],
@@ -137,7 +137,7 @@
     ],
     "partOf": [
       {
-        "id": "urn:ngm:class:embedded-systems-domain",
+        "id": "urn:ngm:class:embedded-systems",
         "label": "Embedded Systems Domain"
       }
     ],
@@ -170,7 +170,7 @@
       "label": "Servo Motor"
     },
     {
-      "slug": "embedded-systems-domain",
+      "slug": "embedded-systems",
       "label": "Embedded Systems Domain"
     }
   ],

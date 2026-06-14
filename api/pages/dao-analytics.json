@@ -496,7 +496,7 @@
       "label": "Decentralised Autonomous Organisation"
     },
     {
-      "slug": "decentralised-finance-domain",
+      "slug": "decentralised-finance",
       "label": "DecentralisedFinanceDomain"
     },
     {
@@ -576,7 +576,7 @@
       "label": "Governance Dashboard"
     },
     {
-      "slug": "governance-domain",
+      "slug": "governance",
       "label": "GovernanceDomain"
     },
     {
@@ -796,7 +796,7 @@
       "label": "ApplicationLayer"
     },
     {
-      "slug": "blockchain-domain",
+      "slug": "blockchain",
       "label": "BlockchainDomain"
     },
     {

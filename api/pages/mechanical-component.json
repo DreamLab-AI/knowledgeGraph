@@ -608,7 +608,7 @@
       "label": "Lubrication"
     },
     {
-      "slug": "manufacturing-domain",
+      "slug": "robo-actuation-and-control",
       "label": "ManufacturingDomain"
     },
     {
@@ -628,7 +628,7 @@
       "label": "Mechanical Engineering"
     },
     {
-      "slug": "mechanical-engineering-domain",
+      "slug": "robo-actuation-and-control",
       "label": "MechanicalEngineeringDomain"
     },
     {
@@ -964,7 +964,7 @@
       "label": "Robot Kinematics"
     },
     {
-      "slug": "robotics-domain",
+      "slug": "robotics",
       "label": "RoboticsDomain"
     },
     {

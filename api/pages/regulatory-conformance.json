@@ -29,24 +29,15 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:ai-governance-domain",
+        "id": "urn:ngm:class:ai-governance",
         "label": "AI Governance Domain"
       },
       {
-        "id": "urn:ngm:class:compliance-domain",
+        "id": "urn:ngm:class:compliance",
         "label": "Compliance Domain"
       }
     ]
   },
   "wikilinks": [],
-  "backlinks": [
-    {
-      "slug": "ai-governance-domain",
-      "label": "AI Governance Domain"
-    },
-    {
-      "slug": "compliance-domain",
-      "label": "Compliance Domain"
-    }
-  ]
+  "backlinks": []
 }

@@ -8,7 +8,7 @@
   "definition": "An academic or institutional research unit dedicated to the study, prototyping and evaluation of distributed ledger systems and their applications. Such laboratories produce experimental implementations, measurements and analyses rather than production services.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:blockchain-domain",
+      "id": "urn:ngm:class:blockchain",
       "label": "Blockchain Domain"
     }
   ],
@@ -57,7 +57,7 @@
       "label": "Scalability"
     },
     {
-      "slug": "blockchain-domain",
+      "slug": "blockchain",
       "label": "Blockchain Domain"
     },
     {

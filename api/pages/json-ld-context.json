@@ -92,10 +92,6 @@
       "label": "Linked Data Encoder"
     },
     {
-      "slug": "ngm-domain",
-      "label": "NGM Domain"
-    },
-    {
       "slug": "vision-claw-agentic-container",
       "label": "VisionClaw Agentic Container"
     }

@@ -183,7 +183,7 @@
       "label": "EU AI Act"
     },
     {
-      "slug": "metaverse-domain",
+      "slug": "metaverse",
       "label": "MetaverseDomain"
     }
   ],
@@ -225,10 +225,6 @@
       "label": "Compliance Audit Trail"
     },
     {
-      "slug": "corporate-governance-domain",
-      "label": "Corporate Governance Domain"
-    },
-    {
       "slug": "corporate-governance",
       "label": "Corporate Governance"
     },
@@ -245,10 +241,6 @@
       "label": "Ethical Framework"
     },
     {
-      "slug": "governance-domain",
-      "label": "Governance Domain"
-    },
-    {
       "slug": "governance-framework",
       "label": "Governance Framework"
     },
@@ -259,10 +251,6 @@
     {
       "slug": "human-in-the-loop",
       "label": "Human in the Loop"
-    },
-    {
-      "slug": "identity-domain",
-      "label": "Identity Domain"
     },
     {
       "slug": "legal-framework",
@@ -291,10 +279,6 @@
     {
       "slug": "stakeholder",
       "label": "Stakeholder"
-    },
-    {
-      "slug": "trust-and-governance-domain",
-      "label": "Trust and Governance Domain"
     }
   ]
 }

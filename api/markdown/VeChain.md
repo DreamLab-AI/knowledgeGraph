@@ -31,11 +31,11 @@ public:: true
       "vc:label": "Internet of Things"
     },
     {
-      "@id": "urn:visionflow:linked:digital-asset-domain",
+      "@id": "urn:visionflow:linked:digital-asset",
       "vc:label": "Digital Asset Domain"
     },
     {
-      "@id": "urn:visionflow:linked:blockchain-domain",
+      "@id": "urn:visionflow:linked:blockchain",
       "vc:label": "Blockchain Domain"
     }
   ],
@@ -67,7 +67,7 @@ public:: true
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": {
-    "@id": "urn:ngm:class:blockchain-domain",
+    "@id": "urn:ngm:class:blockchain",
     "label": "Blockchain Domain"
   },
   "relations": {
@@ -175,7 +175,7 @@ public:: true
     ],
     "bridgesTo": [
       {
-        "@id": "urn:ngm:class:digital-asset-domain",
+        "@id": "urn:ngm:class:digital-asset",
         "label": "Digital Asset Domain"
       },
       {
@@ -245,12 +245,12 @@ public:: true
     },
     {
       "raw": "[[Digital Asset Domain]]",
-      "resolved": "urn:visionflow:linked:digital-asset-domain",
+      "resolved": "urn:visionflow:linked:digital-asset",
       "kind": "ResolvedLink"
     },
     {
       "raw": "[[Blockchain Domain]]",
-      "resolved": "urn:visionflow:linked:blockchain-domain",
+      "resolved": "urn:visionflow:linked:blockchain",
       "kind": "ResolvedLink"
     }
   ],

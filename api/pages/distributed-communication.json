@@ -33,7 +33,7 @@
         "label": "Middleware"
       },
       {
-        "id": "urn:ngm:class:networking-domain",
+        "id": "urn:ngm:class:infra-network-and-comms",
         "label": "Networking Domain"
       }
     ]
@@ -43,10 +43,6 @@
     {
       "slug": "middleware",
       "label": "Middleware"
-    },
-    {
-      "slug": "networking-domain",
-      "label": "Networking Domain"
     }
   ]
 }

@@ -311,7 +311,7 @@
       "label": "CLIP Image Encoder"
     },
     {
-      "slug": "computer-vision-domain",
+      "slug": "computer-vision",
       "label": "ComputerVisionDomain"
     },
     {
@@ -387,7 +387,7 @@
       "label": "Feedback Control Architecture"
     },
     {
-      "slug": "generative-modelling-domain",
+      "slug": "ai-model-architecture",
       "label": "GenerativeModellingDomain"
     },
     {
@@ -595,7 +595,7 @@
       "label": "Zhang et al. 2023 ControlNet ICCV"
     },
     {
-      "slug": "ai-grounded-domain",
+      "slug": "ai-technique",
       "label": "AI-GroundedDomain"
     },
     {

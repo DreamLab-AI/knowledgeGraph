@@ -452,7 +452,7 @@
       "label": "Unscented Kalman Filter"
     },
     {
-      "slug": "ai-grounded-domain",
+      "slug": "ai-technique",
       "label": "AI-GroundedDomain"
     },
     {
@@ -536,7 +536,7 @@
       "label": "Odometry"
     },
     {
-      "slug": "robotics-domain",
+      "slug": "robotics",
       "label": "RoboticsDomain"
     },
     {

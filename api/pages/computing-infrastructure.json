@@ -83,11 +83,11 @@
   },
   "wikilinks": [
     {
-      "slug": "infrastructure-domain",
+      "slug": "infrastructure",
       "label": "InfrastructureDomain"
     },
     {
-      "slug": "technology-domain",
+      "slug": "infrastructure",
       "label": "Technology Domain"
     }
   ],

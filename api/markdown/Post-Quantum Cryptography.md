@@ -96,7 +96,7 @@ alias:: Post-Quantum-Cryptography
       "vc:label": "Random Number Generation"
     },
     {
-      "@id": "urn:visionflow:owl:class:trust-and-governance-domain",
+      "@id": "urn:visionflow:owl:class:ai-governance-and-ethics",
       "vc:label": "TrustAndGovernanceDomain"
     }
   ],
@@ -327,7 +327,7 @@ alias:: Post-Quantum-Cryptography
     },
     {
       "raw": "[[TrustAndGovernanceDomain]]",
-      "resolved": "urn:visionflow:owl:class:trust-and-governance-domain",
+      "resolved": "urn:visionflow:owl:class:ai-governance-and-ethics",
       "kind": "ResolvedLink"
     }
   ],

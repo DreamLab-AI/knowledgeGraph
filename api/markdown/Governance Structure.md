@@ -35,11 +35,11 @@ public:: true
       "vc:label": "Companies Act"
     },
     {
-      "@id": "urn:visionflow:linked:corporate-governance-domain",
+      "@id": "urn:visionflow:linked:corporate-governance",
       "vc:label": "CorporateGovernanceDomain"
     },
     {
-      "@id": "urn:visionflow:linked:distributed-collaboration-domain",
+      "@id": "urn:visionflow:linked:distributed-collaboration",
       "vc:label": "DistributedCollaborationDomain"
     },
     {
@@ -83,7 +83,7 @@ public:: true
       "vc:label": "Principal Agent Problem"
     },
     {
-      "@id": "urn:visionflow:linked:regulatory-domain",
+      "@id": "urn:visionflow:linked:infra-legal-and-regulatory",
       "vc:label": "RegulatoryDomain"
     },
     {
@@ -539,12 +539,12 @@ public:: true
     },
     {
       "raw": "[[CorporateGovernanceDomain]]",
-      "resolved": "urn:visionflow:linked:corporate-governance-domain",
+      "resolved": "urn:visionflow:linked:corporate-governance",
       "kind": "StubLink"
     },
     {
       "raw": "[[DistributedCollaborationDomain]]",
-      "resolved": "urn:visionflow:linked:distributed-collaboration-domain",
+      "resolved": "urn:visionflow:linked:distributed-collaboration",
       "kind": "StubLink"
     },
     {
@@ -599,7 +599,7 @@ public:: true
     },
     {
       "raw": "[[RegulatoryDomain]]",
-      "resolved": "urn:visionflow:linked:regulatory-domain",
+      "resolved": "urn:visionflow:linked:infra-legal-and-regulatory",
       "kind": "StubLink"
     },
     {

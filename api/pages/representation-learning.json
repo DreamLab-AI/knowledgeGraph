@@ -139,10 +139,6 @@
       "label": "Attention"
     },
     {
-      "slug": "deep-learning-domain",
-      "label": "Deep Learning Domain"
-    },
-    {
       "slug": "diffusion-models",
       "label": "Diffusion Models"
     },

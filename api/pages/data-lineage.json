@@ -117,7 +117,7 @@
     ],
     "partOf": [
       {
-        "id": "urn:ngm:class:data-governance-domain",
+        "id": "urn:ngm:class:data-governance",
         "label": "Data Governance Domain"
       },
       {
@@ -138,10 +138,6 @@
   },
   "wikilinks": [],
   "backlinks": [
-    {
-      "slug": "data-governance-domain",
-      "label": "Data Governance Domain"
-    },
     {
       "slug": "metadata-management",
       "label": "Metadata Management"

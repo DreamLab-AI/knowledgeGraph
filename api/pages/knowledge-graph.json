@@ -171,7 +171,7 @@
       "label": "W3C RDF"
     },
     {
-      "slug": "computation-and-intelligence-domain",
+      "slug": "ai-research-area",
       "label": "ComputationAndIntelligenceDomain"
     },
     {
@@ -179,7 +179,7 @@
       "label": "Graph Database"
     },
     {
-      "slug": "infrastructure-domain",
+      "slug": "infrastructure",
       "label": "InfrastructureDomain"
     },
     {
@@ -249,10 +249,6 @@
       "label": "Graph Theory"
     },
     {
-      "slug": "knowledge-representation-domain",
-      "label": "Knowledge Representation Domain"
-    },
-    {
       "slug": "knowledge-representation",
       "label": "Knowledge Representation"
     },
@@ -283,10 +279,6 @@
     {
       "slug": "semantic-reasoning-engine",
       "label": "Semantic Reasoning Engine"
-    },
-    {
-      "slug": "semantic-web-domain",
-      "label": "Semantic Web Domain"
     },
     {
       "slug": "semantic-web-linked-data-standard",

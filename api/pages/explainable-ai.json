@@ -179,7 +179,7 @@
       "label": "Machine Learning"
     },
     {
-      "slug": "metaverse-domain",
+      "slug": "metaverse",
       "label": "MetaverseDomain"
     },
     {
@@ -263,10 +263,6 @@
     {
       "slug": "task-planning",
       "label": "Task Planning"
-    },
-    {
-      "slug": "trust-and-governance-domain",
-      "label": "Trust and Governance Domain"
     },
     {
       "slug": "ai-core-concepts",

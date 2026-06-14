@@ -175,8 +175,20 @@
       "label": "DAO Tooling"
     },
     {
+      "slug": "esg-reporting",
+      "label": "ESG Reporting"
+    },
+    {
       "slug": "esg",
       "label": "ESG"
+    },
+    {
+      "slug": "ethical-sourcing",
+      "label": "Ethical Sourcing"
+    },
+    {
+      "slug": "governance-structure",
+      "label": "Governance Structure"
     }
   ]
 }

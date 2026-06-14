@@ -31,7 +31,7 @@ public:: true
       "vc:label": "AI Procurement"
     },
     {
-      "@id": "urn:visionflow:linked:aisafety-domain",
+      "@id": "urn:visionflow:linked:ai-safety",
       "vc:label": "AISafetyDomain"
     },
     {
@@ -419,7 +419,7 @@ public:: true
       "vc:label": "AI Governance"
     },
     {
-      "@id": "urn:visionflow:owl:class:ai-grounded-domain",
+      "@id": "urn:visionflow:owl:class:ai-technique",
       "vc:label": "AI-GroundedDomain"
     },
     {
@@ -431,7 +431,7 @@ public:: true
       "vc:label": "ApplicationLayer"
     },
     {
-      "@id": "urn:visionflow:owl:class:artificial-intelligence-domain",
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
       "vc:label": "ArtificialIntelligenceDomain"
     },
     {
@@ -777,7 +777,7 @@ public:: true
     },
     {
       "raw": "[[AISafetyDomain]]",
-      "resolved": "urn:visionflow:linked:aisafety-domain",
+      "resolved": "urn:visionflow:linked:ai-safety",
       "kind": "StubLink"
     },
     {
@@ -1262,7 +1262,7 @@ public:: true
     },
     {
       "raw": "[[AI-GroundedDomain]]",
-      "resolved": "urn:visionflow:owl:class:ai-grounded-domain",
+      "resolved": "urn:visionflow:owl:class:ai-technique",
       "kind": "ResolvedLink"
     },
     {
@@ -1277,7 +1277,7 @@ public:: true
     },
     {
       "raw": "[[ArtificialIntelligenceDomain]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence-domain",
+      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
       "kind": "ResolvedLink"
     },
     {

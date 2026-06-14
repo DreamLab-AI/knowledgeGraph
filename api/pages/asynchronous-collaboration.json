@@ -8,7 +8,7 @@
   "definition": "Time-independent collaboration mode where distributed participants contribute at different times through shared persistent artifacts, enabling flexible schedules, deep work periods, and global accessibility while maintaining coordination through explicit documentation and version control.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:telecollaboration-domain",
+      "id": "urn:ngm:class:telecollaboration",
       "label": "Telecollaboration Domain"
     }
   ],

@@ -55,7 +55,7 @@ public:: true
       "vc:label": "Determinism"
     },
     {
-      "@id": "urn:visionflow:linked:distributed-systems-domain",
+      "@id": "urn:visionflow:linked:distributed-systems",
       "vc:label": "DistributedSystemsDomain"
     },
     {
@@ -75,7 +75,7 @@ public:: true
       "vc:label": "Formal Method"
     },
     {
-      "@id": "urn:visionflow:linked:formal-methods-domain",
+      "@id": "urn:visionflow:linked:ai-research-area",
       "vc:label": "FormalMethodsDomain"
     },
     {
@@ -155,7 +155,7 @@ public:: true
       "vc:label": "SCXML"
     },
     {
-      "@id": "urn:visionflow:linked:software-engineering-domain",
+      "@id": "urn:visionflow:linked:software-engineering",
       "vc:label": "SoftwareEngineeringDomain"
     },
     {
@@ -658,7 +658,7 @@ public:: true
     },
     {
       "raw": "[[DistributedSystemsDomain]]",
-      "resolved": "urn:visionflow:linked:distributed-systems-domain",
+      "resolved": "urn:visionflow:linked:distributed-systems",
       "kind": "StubLink"
     },
     {
@@ -683,7 +683,7 @@ public:: true
     },
     {
       "raw": "[[FormalMethodsDomain]]",
-      "resolved": "urn:visionflow:linked:formal-methods-domain",
+      "resolved": "urn:visionflow:linked:ai-research-area",
       "kind": "StubLink"
     },
     {
@@ -783,7 +783,7 @@ public:: true
     },
     {
       "raw": "[[SoftwareEngineeringDomain]]",
-      "resolved": "urn:visionflow:linked:software-engineering-domain",
+      "resolved": "urn:visionflow:linked:software-engineering",
       "kind": "StubLink"
     },
     {

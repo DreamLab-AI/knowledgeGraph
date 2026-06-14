@@ -308,7 +308,7 @@
       "label": "Determinism"
     },
     {
-      "slug": "distributed-systems-domain",
+      "slug": "distributed-systems",
       "label": "DistributedSystemsDomain"
     },
     {
@@ -328,7 +328,7 @@
       "label": "Formal Method"
     },
     {
-      "slug": "formal-methods-domain",
+      "slug": "ai-research-area",
       "label": "FormalMethodsDomain"
     },
     {
@@ -408,7 +408,7 @@
       "label": "SCXML"
     },
     {
-      "slug": "software-engineering-domain",
+      "slug": "software-engineering",
       "label": "SoftwareEngineeringDomain"
     },
     {

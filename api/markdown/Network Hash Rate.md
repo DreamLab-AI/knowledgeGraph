@@ -28,7 +28,7 @@ alias:: NetworkHashRate
       "vc:label": "Blockchain Entity"
     },
     {
-      "@id": "urn:visionflow:owl:class:consensus-domain",
+      "@id": "urn:visionflow:owl:class:bc-protocol-and-consensus",
       "vc:label": "ConsensusDomain"
     },
     {
@@ -141,7 +141,7 @@ alias:: NetworkHashRate
     },
     {
       "raw": "[[ConsensusDomain]]",
-      "resolved": "urn:visionflow:owl:class:consensus-domain",
+      "resolved": "urn:visionflow:owl:class:bc-protocol-and-consensus",
       "kind": "ResolvedLink"
     },
     {

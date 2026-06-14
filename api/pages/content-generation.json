@@ -29,7 +29,7 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:generative-ai-domain",
+        "id": "urn:ngm:class:generative-ai",
         "label": "Generative AI Domain"
       },
       {
@@ -43,10 +43,6 @@
     {
       "slug": "ai-machine-learning",
       "label": "Ai Machine Learning"
-    },
-    {
-      "slug": "generative-ai-domain",
-      "label": "Generative AI Domain"
     },
     {
       "slug": "ai-core-concepts",

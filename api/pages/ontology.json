@@ -152,10 +152,6 @@
       "label": "Knowledge Graphing"
     },
     {
-      "slug": "knowledge-representation-domain",
-      "label": "Knowledge Representation Domain"
-    },
-    {
       "slug": "knowledge-representation",
       "label": "Knowledge Representation"
     },
@@ -178,10 +174,6 @@
     {
       "slug": "semantic-search",
       "label": "Semantic Search"
-    },
-    {
-      "slug": "semantic-web-domain",
-      "label": "Semantic Web Domain"
     },
     {
       "slug": "semantic-web-linked-data-standard",

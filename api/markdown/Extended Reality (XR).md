@@ -60,7 +60,7 @@ alias:: Extended Reality Xr, ExtendedRealityXR
       "vc:label": "Immersive Technology"
     },
     {
-      "@id": "urn:visionflow:owl:class:interaction-domain",
+      "@id": "urn:visionflow:owl:class:sc-interaction",
       "vc:label": "InteractionDomain"
     },
     {
@@ -205,7 +205,7 @@ alias:: Extended Reality Xr, ExtendedRealityXR
         "label": "Immersive Technology"
       },
       {
-        "@id": "urn:ngm:class:spatial-computing-paradigm",
+        "@id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing"
       }
     ]
@@ -290,7 +290,7 @@ alias:: Extended Reality Xr, ExtendedRealityXR
     },
     {
       "raw": "[[InteractionDomain]]",
-      "resolved": "urn:visionflow:owl:class:interaction-domain",
+      "resolved": "urn:visionflow:owl:class:sc-interaction",
       "kind": "ResolvedLink"
     },
     {

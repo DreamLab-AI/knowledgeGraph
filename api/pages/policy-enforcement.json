@@ -208,7 +208,7 @@
       "label": "Narrative Gold Mine"
     },
     {
-      "slug": "security-domain",
+      "slug": "security",
       "label": "SecurityDomain"
     },
     {
@@ -360,7 +360,7 @@
       "label": "Identity Management System"
     },
     {
-      "slug": "infrastructure-domain",
+      "slug": "infrastructure",
       "label": "InfrastructureDomain"
     },
     {

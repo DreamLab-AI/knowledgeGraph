@@ -203,7 +203,7 @@
       "label": "Digital Real Estate"
     },
     {
-      "slug": "infrastructure-domain",
+      "slug": "infrastructure",
       "label": "InfrastructureDomain"
     },
     {
@@ -235,7 +235,7 @@
       "label": "Virtual Society"
     },
     {
-      "slug": "virtual-society-domain",
+      "slug": "virtual-society",
       "label": "VirtualSocietyDomain"
     }
   ],
@@ -315,10 +315,6 @@
     {
       "slug": "metaverse-core-concepts",
       "label": "metaverse core concepts"
-    },
-    {
-      "slug": "park-2022-metaverse",
-      "label": "park2022metaverse"
     }
   ]
 }

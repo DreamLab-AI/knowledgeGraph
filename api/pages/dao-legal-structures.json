@@ -540,7 +540,7 @@
       "label": "Gnosis Safe / Safe{Wallet}"
     },
     {
-      "slug": "governance-domain",
+      "slug": "governance",
       "label": "GovernanceDomain"
     },
     {
@@ -764,7 +764,7 @@
       "label": "Regulatory Compliance Frameworks"
     },
     {
-      "slug": "regulatory-domain",
+      "slug": "infra-legal-and-regulatory",
       "label": "RegulatoryDomain"
     },
     {
@@ -940,7 +940,7 @@
       "label": "Yarmouth"
     },
     {
-      "slug": "blockchain-domain",
+      "slug": "blockchain",
       "label": "BlockchainDomain"
     },
     {

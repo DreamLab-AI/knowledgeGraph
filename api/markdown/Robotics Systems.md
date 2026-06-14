@@ -63,7 +63,7 @@ public:: true
       "vc:label": "SwarmRobotics"
     },
     {
-      "@id": "urn:visionflow:owl:class:technology-domain",
+      "@id": "urn:visionflow:owl:class:infrastructure",
       "vc:label": "Technology Domain"
     },
     {
@@ -128,7 +128,7 @@ public:: true
       {"@id": "urn:ngm:class:robo-perception", "label": "Perception and Sensing"}
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:technology-domain", "label": "Technology Domain"}
+      {"@id": "urn:ngm:class:infrastructure", "label": "Technology Domain"}
     ]
   },
   "quality": 0.8,
@@ -216,7 +216,7 @@ public:: true
     },
     {
       "raw": "[[Technology Domain]]",
-      "resolved": "urn:visionflow:owl:class:technology-domain",
+      "resolved": "urn:visionflow:owl:class:infrastructure",
       "kind": "ResolvedLink"
     },
     {

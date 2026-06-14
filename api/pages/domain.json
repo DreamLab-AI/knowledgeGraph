@@ -18,11 +18,11 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:metaverse-domain",
+        "id": "urn:ngm:class:metaverse",
         "label": "Metaverse Domain"
       },
       {
-        "id": "urn:ngm:class:blockchain-domain",
+        "id": "urn:ngm:class:blockchain",
         "label": "Blockchain Domain"
       }
     ],
@@ -75,10 +75,5 @@
       "label": "Blockchain"
     }
   ],
-  "backlinks": [
-    {
-      "slug": "disruptive-tech-domain",
-      "label": "Disruptive Tech Domain"
-    }
-  ]
+  "backlinks": []
 }

@@ -544,7 +544,7 @@
       "label": "IETF CFRG"
     },
     {
-      "slug": "information-security-domain",
+      "slug": "information-security",
       "label": "InformationSecurityDomain"
     },
     {
@@ -816,7 +816,7 @@
       "label": "Blockchain"
     },
     {
-      "slug": "computation-and-intelligence-domain",
+      "slug": "ai-research-area",
       "label": "ComputationAndIntelligenceDomain"
     },
     {
@@ -852,7 +852,7 @@
       "label": "Information Security"
     },
     {
-      "slug": "infrastructure-domain",
+      "slug": "infrastructure",
       "label": "InfrastructureDomain"
     },
     {

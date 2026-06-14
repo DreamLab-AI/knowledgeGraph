@@ -111,7 +111,7 @@ public:: true
       "vc:label": "ComputationalGeometryDomain"
     },
     {
-      "@id": "urn:visionflow:linked:computer-graphics-domain",
+      "@id": "urn:visionflow:linked:computer-graphics",
       "vc:label": "ComputerGraphicsDomain"
     },
     {
@@ -643,7 +643,7 @@ public:: true
       "vc:label": "Robotics"
     },
     {
-      "@id": "urn:visionflow:owl:class:robotics-domain",
+      "@id": "urn:visionflow:owl:class:robotics",
       "vc:label": "RoboticsDomain"
     },
     {
@@ -1138,7 +1138,7 @@ public:: true
     },
     {
       "raw": "[[ComputerGraphicsDomain]]",
-      "resolved": "urn:visionflow:linked:computer-graphics-domain",
+      "resolved": "urn:visionflow:linked:computer-graphics",
       "kind": "StubLink"
     },
     {
@@ -1803,7 +1803,7 @@ public:: true
     },
     {
       "raw": "[[RoboticsDomain]]",
-      "resolved": "urn:visionflow:owl:class:robotics-domain",
+      "resolved": "urn:visionflow:owl:class:robotics",
       "kind": "ResolvedLink"
     },
     {

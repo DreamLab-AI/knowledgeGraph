@@ -168,7 +168,7 @@
       "label": "ArtificialIntelligence"
     },
     {
-      "slug": "artificial-intelligence-domain",
+      "slug": "artificial-intelligence",
       "label": "ArtificialIntelligenceDomain"
     },
     {
@@ -196,10 +196,6 @@
     {
       "slug": "agent-layer",
       "label": "Agent Layer"
-    },
-    {
-      "slug": "agentic-systems-domain",
-      "label": "Agentic Systems Domain"
     },
     {
       "slug": "agents",
@@ -236,10 +232,6 @@
     {
       "slug": "control-system",
       "label": "Control System"
-    },
-    {
-      "slug": "control-theory-domain",
-      "label": "Control Theory Domain"
     },
     {
       "slug": "control-theory",
@@ -308,10 +300,6 @@
     {
       "slug": "logistics-optimization",
       "label": "Logistics Optimization"
-    },
-    {
-      "slug": "machine-learning-domain",
-      "label": "Machine Learning Domain"
     },
     {
       "slug": "manipulator-arm",

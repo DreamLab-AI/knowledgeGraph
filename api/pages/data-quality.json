@@ -164,10 +164,6 @@
       "label": "AI Adoption"
     },
     {
-      "slug": "data-governance-domain",
-      "label": "Data Governance Domain"
-    },
-    {
       "slug": "data-pipeline",
       "label": "Data Pipeline"
     },

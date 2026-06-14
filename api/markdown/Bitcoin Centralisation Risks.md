@@ -227,7 +227,7 @@ public:: true
       "vc:label": "Gini Coefficient Analysis"
     },
     {
-      "@id": "urn:visionflow:linked:governance-domain",
+      "@id": "urn:visionflow:linked:governance",
       "vc:label": "GovernanceDomain"
     },
     {
@@ -367,7 +367,7 @@ public:: true
       "vc:label": "ResearchGate 2025 Lightning Centralization Quantitative Analysis"
     },
     {
-      "@id": "urn:visionflow:linked:risk-management-domain",
+      "@id": "urn:visionflow:linked:risk-management",
       "vc:label": "RiskManagementDomain"
     },
     {
@@ -431,7 +431,7 @@ public:: true
       "vc:label": "Bitcoin"
     },
     {
-      "@id": "urn:visionflow:owl:class:blockchain-domain",
+      "@id": "urn:visionflow:owl:class:blockchain",
       "vc:label": "BlockchainDomain"
     },
     {
@@ -1091,7 +1091,7 @@ public:: true
     },
     {
       "raw": "[[GovernanceDomain]]",
-      "resolved": "urn:visionflow:linked:governance-domain",
+      "resolved": "urn:visionflow:linked:governance",
       "kind": "StubLink"
     },
     {
@@ -1266,7 +1266,7 @@ public:: true
     },
     {
       "raw": "[[RiskManagementDomain]]",
-      "resolved": "urn:visionflow:linked:risk-management-domain",
+      "resolved": "urn:visionflow:linked:risk-management",
       "kind": "StubLink"
     },
     {
@@ -1346,7 +1346,7 @@ public:: true
     },
     {
       "raw": "[[BlockchainDomain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-domain",
+      "resolved": "urn:visionflow:owl:class:blockchain",
       "kind": "ResolvedLink"
     },
     {

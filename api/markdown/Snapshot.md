@@ -27,11 +27,11 @@ public:: true
       "vc:label": "Gnosis Safe"
     },
     {
-      "@id": "urn:visionflow:linked:governance-domain",
+      "@id": "urn:visionflow:linked:governance",
       "vc:label": "Governance Domain"
     },
     {
-      "@id": "urn:visionflow:linked:decentralised-finance-domain",
+      "@id": "urn:visionflow:linked:decentralised-finance",
       "vc:label": "Decentralised Finance Domain"
     }
   ],
@@ -63,7 +63,7 @@ public:: true
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": {
-    "@id": "urn:ngm:class:decentralised-finance-domain",
+    "@id": "urn:ngm:class:decentralised-finance",
     "label": "Decentralised Finance Domain"
   },
   "relations": {
@@ -129,7 +129,7 @@ public:: true
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:governance-domain",
+        "@id": "urn:ngm:class:governance",
         "label": "Governance Domain"
       }
     ],
@@ -230,12 +230,12 @@ public:: true
     },
     {
       "raw": "[[Governance Domain]]",
-      "resolved": "urn:visionflow:linked:governance-domain",
+      "resolved": "urn:visionflow:linked:governance",
       "kind": "ResolvedLink"
     },
     {
       "raw": "[[Decentralised Finance Domain]]",
-      "resolved": "urn:visionflow:linked:decentralised-finance-domain",
+      "resolved": "urn:visionflow:linked:decentralised-finance",
       "kind": "ResolvedLink"
     }
   ],

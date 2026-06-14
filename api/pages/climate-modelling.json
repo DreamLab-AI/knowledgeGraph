@@ -153,10 +153,6 @@
       "label": "Compute Infrastructure"
     },
     {
-      "slug": "environmental-domain",
-      "label": "Environmental Domain"
-    },
-    {
       "slug": "probabilistic-model",
       "label": "Probabilistic Model"
     },

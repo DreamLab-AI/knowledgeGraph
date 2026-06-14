@@ -72,7 +72,7 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:cryptographic-domain",
+        "id": "urn:ngm:class:bc-cryptographic-primitive",
         "label": "Cryptographic Domain"
       },
       {
@@ -154,11 +154,11 @@
       "label": "Blockchain"
     },
     {
-      "slug": "cryptographic-domain",
+      "slug": "bc-cryptographic-primitive",
       "label": "Cryptographic Domain"
     },
     {
-      "slug": "distributed-systems-domain",
+      "slug": "distributed-systems",
       "label": "Distributed Systems Domain"
     },
     {
@@ -194,10 +194,6 @@
     {
       "slug": "bitcoin-related-links",
       "label": "Bitcoin related links"
-    },
-    {
-      "slug": "cryptographic-domain",
-      "label": "Cryptographic Domain"
     },
     {
       "slug": "digital-asset-risks",

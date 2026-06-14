@@ -29,7 +29,7 @@
     "requires": [],
     "enables": [
       {
-        "id": "urn:ngm:class:cryptography-domain",
+        "id": "urn:ngm:class:cryptography",
         "label": "Cryptography Domain"
       },
       {
@@ -57,7 +57,7 @@
       "label": "Modular Arithmetic"
     },
     {
-      "slug": "cryptography-domain",
+      "slug": "cryptography",
       "label": "Cryptography Domain"
     },
     {

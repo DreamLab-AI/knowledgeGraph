@@ -516,7 +516,7 @@
       "label": "Environmental Accounting Standard"
     },
     {
-      "slug": "environmental-domain",
+      "slug": "infra-legal-and-regulatory",
       "label": "EnvironmentalDomain"
     },
     {
@@ -708,7 +708,7 @@
       "label": "Scope 3 Emissions"
     },
     {
-      "slug": "sustainability-domain",
+      "slug": "sustainability",
       "label": "SustainabilityDomain"
     },
     {
@@ -776,7 +776,7 @@
       "label": "Blockchain"
     },
     {
-      "slug": "blockchain-domain",
+      "slug": "blockchain",
       "label": "BlockchainDomain"
     },
     {

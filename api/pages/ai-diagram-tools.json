@@ -400,7 +400,7 @@
       "label": "Kembhavi et al 2016 Diagram Worth Dozen Images"
     },
     {
-      "slug": "knowledge-representation-domain",
+      "slug": "knowledge-representation",
       "label": "KnowledgeRepresentationDomain"
     },
     {
@@ -540,7 +540,7 @@
       "label": "Software Architecture Documentation"
     },
     {
-      "slug": "software-engineering-domain",
+      "slug": "software-engineering",
       "label": "SoftwareEngineeringDomain"
     },
     {
@@ -640,7 +640,7 @@
       "label": "Yang et al 2023 Set-of-Mark Prompting"
     },
     {
-      "slug": "ai-grounded-domain",
+      "slug": "ai-technique",
       "label": "AI-GroundedDomain"
     },
     {

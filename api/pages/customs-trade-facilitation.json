@@ -484,7 +484,7 @@
       "label": "SME Trade Finance Access"
     },
     {
-      "slug": "supply-chain-domain",
+      "slug": "supply-chain",
       "label": "SupplyChainDomain"
     },
     {
@@ -588,7 +588,7 @@
       "label": "Blockchain As A Service"
     },
     {
-      "slug": "blockchain-domain",
+      "slug": "blockchain",
       "label": "BlockchainDomain"
     },
     {

@@ -189,10 +189,6 @@
       "label": "Compliance Monitoring"
     },
     {
-      "slug": "cryptographic-domain",
-      "label": "Cryptographic Domain"
-    },
-    {
       "slug": "dao-tooling",
       "label": "DAO Tooling"
     },

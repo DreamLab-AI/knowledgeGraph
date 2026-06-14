@@ -146,7 +146,7 @@
   },
   "wikilinks": [
     {
-      "slug": "metaverse-domain",
+      "slug": "metaverse",
       "label": "MetaverseDomain"
     }
   ],
@@ -160,16 +160,16 @@
       "label": "AI Deployment"
     },
     {
-      "slug": "ai-governance-domain",
-      "label": "AI Governance Domain"
-    },
-    {
       "slug": "ai-governance",
       "label": "AI Governance"
     },
     {
       "slug": "ai-impact-assessment",
       "label": "AI Impact Assessment"
+    },
+    {
+      "slug": "ai-liability",
+      "label": "AI Liability"
     },
     {
       "slug": "ai-lifecycle",
@@ -204,16 +204,16 @@
       "label": "Basel III"
     },
     {
+      "slug": "bitcoin-centralisation-risks",
+      "label": "Bitcoin Centralisation Risks"
+    },
+    {
       "slug": "black-rock",
       "label": "BlackRock"
     },
     {
       "slug": "compliance-control",
       "label": "Compliance Control"
-    },
-    {
-      "slug": "compliance-domain",
-      "label": "Compliance Domain"
     },
     {
       "slug": "compliance-layer",
@@ -224,12 +224,12 @@
       "label": "Compliance Monitoring"
     },
     {
-      "slug": "corporate-governance-domain",
-      "label": "Corporate Governance Domain"
-    },
-    {
       "slug": "corporate-governance",
       "label": "Corporate Governance"
+    },
+    {
+      "slug": "cyber-security-and-cryptography",
+      "label": "Cyber Security and Cryptography"
     },
     {
       "slug": "cyber-security-and-cryptography",
@@ -242,10 +242,6 @@
     {
       "slug": "etsi-domain-governance-and-compliance",
       "label": "ETSI Domain: Governance & Compliance"
-    },
-    {
-      "slug": "financial-markets-domain",
-      "label": "Financial Markets Domain"
     },
     {
       "slug": "functional-safety",
@@ -286,10 +282,6 @@
     {
       "slug": "treasury-management",
       "label": "Treasury Management"
-    },
-    {
-      "slug": "trust-and-governance-domain",
-      "label": "Trust and Governance Domain"
     },
     {
       "slug": "vulnerability-management",

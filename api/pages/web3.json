@@ -291,7 +291,7 @@
       "label": "Digital Sovereignty"
     },
     {
-      "slug": "distributed-systems-domain",
+      "slug": "distributed-systems",
       "label": "DistributedSystemsDomain"
     },
     {
@@ -415,7 +415,7 @@
       "label": "Blockchain As A Service"
     },
     {
-      "slug": "blockchain-domain",
+      "slug": "blockchain",
       "label": "BlockchainDomain"
     },
     {

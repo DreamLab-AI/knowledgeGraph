@@ -24,7 +24,7 @@ elevatedFrom:: [[Social contract and jobs]]
       "vc:label": "Artificial Intelligence"
     },
     {
-      "@id": "urn:visionflow:linked:governance-domain",
+      "@id": "urn:visionflow:linked:governance",
       "vc:label": "Governance Domain"
     }
   ],
@@ -214,7 +214,7 @@ elevatedFrom:: [[Social contract and jobs]]
     },
     {
       "raw": "[[Governance Domain]]",
-      "resolved": "urn:visionflow:linked:governance-domain",
+      "resolved": "urn:visionflow:linked:governance",
       "kind": "ResolvedLink"
     }
   ],

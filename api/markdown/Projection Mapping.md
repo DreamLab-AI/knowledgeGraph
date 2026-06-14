@@ -57,7 +57,7 @@ public:: true
       {"@id": "urn:ngm:class:immersive-entertainment", "label": "Immersive Entertainment"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:spatial-computing-paradigm", "label": "Spatial Computing"},
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
       {"@id": "urn:ngm:class:ar-technology", "label": "AR Technology"}
     ]
   },

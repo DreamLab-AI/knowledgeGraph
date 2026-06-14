@@ -103,7 +103,7 @@ public:: true
       "vc:label": "DASH Adaptive Streaming"
     },
     {
-      "@id": "urn:visionflow:linked:distributed-collaboration-domain",
+      "@id": "urn:visionflow:linked:distributed-collaboration",
       "vc:label": "DistributedCollaborationDomain"
     },
     {
@@ -195,7 +195,7 @@ public:: true
       "vc:label": "Network Slicing"
     },
     {
-      "@id": "urn:visionflow:linked:networking-domain",
+      "@id": "urn:visionflow:linked:infra-network-and-comms",
       "vc:label": "NetworkingDomain"
     },
     {
@@ -762,7 +762,7 @@ public:: true
     },
     {
       "raw": "[[DistributedCollaborationDomain]]",
-      "resolved": "urn:visionflow:linked:distributed-collaboration-domain",
+      "resolved": "urn:visionflow:linked:distributed-collaboration",
       "kind": "StubLink"
     },
     {
@@ -877,7 +877,7 @@ public:: true
     },
     {
       "raw": "[[NetworkingDomain]]",
-      "resolved": "urn:visionflow:linked:networking-domain",
+      "resolved": "urn:visionflow:linked:infra-network-and-comms",
       "kind": "StubLink"
     },
     {

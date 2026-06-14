@@ -328,7 +328,7 @@
       "label": "Gender Shades Buolamwini Gebru 2018"
     },
     {
-      "slug": "governance-domain",
+      "slug": "governance",
       "label": "GovernanceDomain"
     },
     {
@@ -552,7 +552,7 @@
       "label": "Zuboff Age of Surveillance Capitalism 2019"
     },
     {
-      "slug": "ai-grounded-domain",
+      "slug": "ai-technique",
       "label": "AI-GroundedDomain"
     },
     {

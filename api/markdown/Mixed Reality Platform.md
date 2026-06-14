@@ -55,7 +55,7 @@ public:: true
   "relations": {
     "uses": [
       {"@id": "urn:ngm:class:xr-device", "label": "XR Device"},
-      {"@id": "urn:ngm:class:spatial-computing-paradigm", "label": "Spatial Computing"}
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:extended-reality", "label": "Extended Reality"},

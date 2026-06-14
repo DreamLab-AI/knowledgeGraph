@@ -27,7 +27,7 @@ public:: true
       "vc:label": "Microsoft Mesh"
     },
     {
-      "@id": "urn:visionflow:linked:metaverse-domain",
+      "@id": "urn:visionflow:linked:metaverse",
       "vc:label": "Metaverse Domain"
     }
   ],
@@ -60,7 +60,7 @@ public:: true
   "qualityScore": 0.7,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:metaverse-domain",
+      "@id": "urn:ngm:class:metaverse",
       "label": "Metaverse Domain"
     }
   ],
@@ -118,7 +118,7 @@ public:: true
     },
     {
       "raw": "[[Metaverse Domain]]",
-      "resolved": "urn:visionflow:linked:metaverse-domain",
+      "resolved": "urn:visionflow:linked:metaverse",
       "kind": "ResolvedLink"
     }
   ],

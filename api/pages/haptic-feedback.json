@@ -139,7 +139,7 @@
         "label": "Haptics"
       },
       {
-        "id": "urn:ngm:class:metaverse-domain",
+        "id": "urn:ngm:class:metaverse",
         "label": "Metaverse Domain"
       },
       {
@@ -226,7 +226,7 @@
       "label": "MachineLearning"
     },
     {
-      "slug": "metaverse-domain",
+      "slug": "metaverse",
       "label": "MetaverseDomain"
     },
     {
@@ -274,10 +274,6 @@
     {
       "slug": "immersion",
       "label": "Immersion"
-    },
-    {
-      "slug": "metaverse-domain",
-      "label": "Metaverse Domain"
     },
     {
       "slug": "telecollaboration-and-telepresence",

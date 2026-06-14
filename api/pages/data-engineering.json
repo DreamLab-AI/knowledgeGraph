@@ -44,7 +44,7 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:distributed-systems-domain",
+        "id": "urn:ngm:class:distributed-systems",
         "label": "Distributed Systems Domain"
       },
       {
@@ -58,7 +58,7 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:machine-learning-discipline-domain",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning Domain"
       },
       {
@@ -156,7 +156,7 @@
       "label": "Data Warehouse"
     },
     {
-      "slug": "distributed-systems-domain",
+      "slug": "distributed-systems",
       "label": "Distributed Systems Domain"
     },
     {
@@ -176,7 +176,7 @@
       "label": "Stream Processing"
     },
     {
-      "slug": "infrastructure-domain",
+      "slug": "infrastructure",
       "label": "Infrastructure Domain"
     }
   ],

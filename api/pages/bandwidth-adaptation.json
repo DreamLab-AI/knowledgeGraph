@@ -372,7 +372,7 @@
       "label": "DASH Adaptive Streaming"
     },
     {
-      "slug": "distributed-collaboration-domain",
+      "slug": "distributed-collaboration",
       "label": "DistributedCollaborationDomain"
     },
     {
@@ -464,7 +464,7 @@
       "label": "Network Slicing"
     },
     {
-      "slug": "networking-domain",
+      "slug": "infra-network-and-comms",
       "label": "NetworkingDomain"
     },
     {

@@ -65,10 +65,6 @@
     {
       "slug": "context-awareness",
       "label": "Context Awareness"
-    },
-    {
-      "slug": "interaction-domain",
-      "label": "Interaction Domain"
     }
   ]
 }

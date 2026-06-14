@@ -1,12 +1,12 @@
 {
-  "total_pages": 6011,
-  "pages_with_ontology": 6011,
-  "public_pages": 5997,
-  "total_issues": 869,
+  "total_pages": 5922,
+  "pages_with_ontology": 5922,
+  "public_pages": 5908,
+  "total_issues": 861,
   "errors": 0,
-  "warnings": 869,
+  "warnings": 861,
   "by_code": {
-    "MULTI_PARENT": 869
+    "MULTI_PARENT": 861
   },
   "issues": [
     {
@@ -1336,12 +1336,6 @@
       "message": "Multiple parents (2): Standards and Interoperability, Metadata Repository"
     },
     {
-      "path": "Digital Rights Management (Extended).md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): Governance and Safety, Virtual Economy Domain"
-    },
-    {
       "path": "Digital Ritual.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -1430,12 +1424,6 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Legal and Regulatory, Legal Framework"
-    },
-    {
-      "path": "Disruptive Tech Domain.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): Computing and Cloud, Domain"
     },
     {
       "path": "Distributed Authentication Architecture.md",
@@ -2824,12 +2812,6 @@
       "message": "Multiple parents (2): AI Application, Creative AI"
     },
     {
-      "path": "NGM Domain.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Computing and Cloud, Infra Data Management, Infra Data Management"
-    },
-    {
       "path": "NPC Interaction.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -3922,12 +3904,6 @@
       "message": "Multiple parents (2): Human-Robot Interaction, Human-Robot Interaction"
     },
     {
-      "path": "Social Token Economy.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): Platform and Environment, Virtual Economy Domain"
-    },
-    {
       "path": "Societal and Environmental Wellbeing.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -3986,12 +3962,6 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Display and Rendering, AR Registration"
-    },
-    {
-      "path": "Spatial Computing System.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): Platform and Environment, Mixed Reality Platform"
     },
     {
       "path": "Spatial Coordinates.md",
@@ -4220,12 +4190,6 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): AI Governance and Ethics, AI Trustworthiness Dimensions"
-    },
-    {
-      "path": "Telecollaboration and Telepresence Domain.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): Telepresence, Telecollaboration"
     },
     {
       "path": "Teleoperation Systems.md",
@@ -4612,12 +4576,6 @@
       "message": "Multiple parents (2): Platform and Environment, Virtual Environment"
     },
     {
-      "path": "Virtual Economy Domain.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): Platform and Environment, Digital Economy"
-    },
-    {
       "path": "Virtual Environment Specification.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -4760,12 +4718,6 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Content and Assets, Production Design"
-    },
-    {
-      "path": "Virtual Society Domain.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): Platform and Environment, Digital Society"
     },
     {
       "path": "Virtual Society Regulations.md",

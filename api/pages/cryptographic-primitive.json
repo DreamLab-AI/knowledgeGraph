@@ -158,16 +158,8 @@
       "label": "Cryptographic Commitment"
     },
     {
-      "slug": "cryptography-domain",
-      "label": "Cryptography Domain"
-    },
-    {
       "slug": "difficulty",
       "label": "Difficulty"
-    },
-    {
-      "slug": "digital-asset-domain",
-      "label": "Digital Asset Domain"
     },
     {
       "slug": "digital-signature",
@@ -188,14 +180,6 @@
     {
       "slug": "hash-collision",
       "label": "Hash Collision"
-    },
-    {
-      "slug": "information-security-domain",
-      "label": "Information Security Domain"
-    },
-    {
-      "slug": "interoperability-domain",
-      "label": "Interoperability Domain"
     },
     {
       "slug": "keccak-256",

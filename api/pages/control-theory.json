@@ -367,7 +367,7 @@
       "label": "Cutler Ramaker 1979 Dynamic Matrix Control"
     },
     {
-      "slug": "cyber-physical-systems-domain",
+      "slug": "cyber-physical-systems",
       "label": "CyberPhysicalSystemsDomain"
     },
     {
@@ -707,7 +707,7 @@
       "label": "Robotics"
     },
     {
-      "slug": "robotics-domain",
+      "slug": "robotics",
       "label": "RoboticsDomain"
     },
     {
@@ -731,6 +731,10 @@
     {
       "slug": "adaptive-control",
       "label": "Adaptive Control"
+    },
+    {
+      "slug": "admittance-control",
+      "label": "Admittance Control"
     },
     {
       "slug": "admittance-control",
@@ -763,6 +767,10 @@
     {
       "slug": "feedback-control",
       "label": "Feedback Control"
+    },
+    {
+      "slug": "feedback-loop",
+      "label": "Feedback Loop"
     },
     {
       "slug": "feedback-loop",
@@ -815,6 +823,10 @@
     {
       "slug": "pneumatic-actuator",
       "label": "Pneumatic Actuator"
+    },
+    {
+      "slug": "position-control",
+      "label": "PositionControl"
     },
     {
       "slug": "real-time",

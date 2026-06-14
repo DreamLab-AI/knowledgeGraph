@@ -136,12 +136,16 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "artificial-general-intelligence",
+      "label": "Artificial General Intelligence"
+    },
+    {
       "slug": "cognitive-ai",
       "label": "Cognitive AI"
     },
     {
-      "slug": "computation-and-intelligence-domain",
-      "label": "Computation And Intelligence Domain"
+      "slug": "cognitive-ai",
+      "label": "Cognitive AI"
     },
     {
       "slug": "education-and-ai",
@@ -150,6 +154,14 @@
     {
       "slug": "embodied-minds",
       "label": "Embodied Minds"
+    },
+    {
+      "slug": "embodied-minds",
+      "label": "Embodied Minds"
+    },
+    {
+      "slug": "emergence",
+      "label": "Emergence"
     },
     {
       "slug": "history-and-path-to-agi",
@@ -162,6 +174,10 @@
     {
       "slug": "philosophy-of-mind",
       "label": "Philosophy of Mind"
+    },
+    {
+      "slug": "reasoning",
+      "label": "Reasoning"
     }
   ]
 }

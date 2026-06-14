@@ -479,7 +479,7 @@
       "label": "Dark Pool"
     },
     {
-      "slug": "de-fi-domain",
+      "slug": "bc-defi-and-economics",
       "label": "DeFiDomain"
     },
     {
@@ -535,7 +535,7 @@
       "label": "Financial Inclusion"
     },
     {
-      "slug": "financial-markets-domain",
+      "slug": "bc-defi-and-economics",
       "label": "FinancialMarketsDomain"
     },
     {
@@ -887,7 +887,7 @@
       "label": "Blockchain Application"
     },
     {
-      "slug": "blockchain-domain",
+      "slug": "blockchain",
       "label": "BlockchainDomain"
     },
     {

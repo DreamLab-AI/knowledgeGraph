@@ -106,7 +106,7 @@
       "label": "Blockchain Entity"
     },
     {
-      "slug": "cryptographic-domain",
+      "slug": "bc-cryptographic-primitive",
       "label": "CryptographicDomain"
     },
     {
@@ -128,10 +128,6 @@
       "label": "Distributed Architecture"
     },
     {
-      "slug": "infrastructure-domain",
-      "label": "Infrastructure Domain"
-    },
-    {
       "slug": "io-t-sensor-network",
       "label": "IoT Sensor Network"
     },
@@ -142,10 +138,6 @@
     {
       "slug": "networkcomponent",
       "label": "Networkcomponent"
-    },
-    {
-      "slug": "networking-domain",
-      "label": "Networking Domain"
     },
     {
       "slug": "networking-layer",

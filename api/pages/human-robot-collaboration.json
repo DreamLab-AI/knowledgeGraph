@@ -8,7 +8,7 @@
   "definition": "Human-robot collaboration is the design and operation of robots that work alongside people in a shared workspace, coordinating tasks safely through sensing, control and interaction.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:robotics-domain",
+      "id": "urn:ngm:class:robotics",
       "label": "Robotics Domain"
     }
   ],
@@ -164,7 +164,7 @@
       "label": "Exoskeleton"
     },
     {
-      "slug": "robotics-domain",
+      "slug": "robotics",
       "label": "Robotics Domain"
     }
   ],

@@ -8,7 +8,7 @@
   "definition": "Coinbase is a publicly traded United States cryptocurrency exchange, custody, and financial services company founded in 2012 by Brian Armstrong and Fred Ehrsam. It provides retail and institutional trading, custodial and self-custody wallet services, staking, lending, and payment infrastructure, operating as one of the most regulated crypto platforms in the United States. The company completed a direct listing on Nasdaq in April 2021, becoming the first major cryptocurrency exchange to go public in the US. Beyond exchange operations, Coinbase develops the Base layer-2 network (built on the OP Stack), offers a developer platform for on-chain applications, and provides institutional prime brokerage services.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:digital-asset-domain",
+      "id": "urn:ngm:class:digital-asset",
       "label": "Digital Asset Domain"
     }
   ],
@@ -152,7 +152,7 @@
       "label": "Optimism"
     },
     {
-      "slug": "digital-asset-domain",
+      "slug": "digital-asset",
       "label": "Digital Asset Domain"
     }
   ],

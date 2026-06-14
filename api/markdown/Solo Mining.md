@@ -27,7 +27,7 @@ public:: true
       "vc:label": "Blockchain Entity"
     },
     {
-      "@id": "urn:visionflow:owl:class:consensus-domain",
+      "@id": "urn:visionflow:owl:class:bc-protocol-and-consensus",
       "vc:label": "ConsensusDomain"
     },
     {
@@ -146,7 +146,7 @@ public:: true
     },
     {
       "raw": "[[ConsensusDomain]]",
-      "resolved": "urn:visionflow:owl:class:consensus-domain",
+      "resolved": "urn:visionflow:owl:class:bc-protocol-and-consensus",
       "kind": "ResolvedLink"
     },
     {

@@ -67,10 +67,6 @@
       "label": "Context Awareness"
     },
     {
-      "slug": "interaction-domain",
-      "label": "Interaction Domain"
-    },
-    {
       "slug": "io-t-sensor-network",
       "label": "IoT Sensor Network"
     }

@@ -388,7 +388,7 @@
       "label": "Holmes 2018 Mismatch"
     },
     {
-      "slug": "human-computer-interaction-domain",
+      "slug": "human-computer-interaction",
       "label": "HumanComputerInteractionDomain"
     },
     {
@@ -678,6 +678,10 @@
       "label": "Assistive Technology"
     },
     {
+      "slug": "brain-computer-interfaces",
+      "label": "Brain Computer Interfaces"
+    },
+    {
       "slug": "civic-participation",
       "label": "Civic Participation"
     },
@@ -698,16 +702,16 @@
       "label": "Empathetic AI"
     },
     {
-      "slug": "human-computer-interaction-domain",
-      "label": "Human Computer Interaction Domain"
-    },
-    {
       "slug": "patent",
       "label": "Patent"
     },
     {
       "slug": "product-design",
       "label": "Product Design"
+    },
+    {
+      "slug": "real-time-translation",
+      "label": "Real-time Translation"
     },
     {
       "slug": "real-time-translation",

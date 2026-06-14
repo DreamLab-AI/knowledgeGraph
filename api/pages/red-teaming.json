@@ -145,7 +145,7 @@
   },
   "wikilinks": [
     {
-      "slug": "metaverse-domain",
+      "slug": "metaverse",
       "label": "MetaverseDomain"
     }
   ],
@@ -153,10 +153,6 @@
     {
       "slug": "ai-risks",
       "label": "AI Risks"
-    },
-    {
-      "slug": "ai-safety-domain",
-      "label": "AI Safety Domain"
     },
     {
       "slug": "bias-in-large-language-models",

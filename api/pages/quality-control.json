@@ -33,7 +33,7 @@
         "label": "Computer Vision"
       },
       {
-        "id": "urn:ngm:class:manufacturing-domain",
+        "id": "urn:ngm:class:robo-actuation-and-control",
         "label": "Manufacturing Domain"
       }
     ]
@@ -43,10 +43,6 @@
     {
       "slug": "computer-vision",
       "label": "Computer Vision"
-    },
-    {
-      "slug": "manufacturing-domain",
-      "label": "Manufacturing Domain"
     },
     {
       "slug": "patent",

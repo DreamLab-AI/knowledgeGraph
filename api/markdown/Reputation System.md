@@ -87,7 +87,7 @@ public:: true
       "vc:label": "Gitcoin Passport"
     },
     {
-      "@id": "urn:visionflow:linked:governance-domain",
+      "@id": "urn:visionflow:linked:governance",
       "vc:label": "GovernanceDomain"
     },
     {
@@ -95,7 +95,7 @@ public:: true
       "vc:label": "Graph Theory"
     },
     {
-      "@id": "urn:visionflow:linked:identity-domain",
+      "@id": "urn:visionflow:linked:identity",
       "vc:label": "IdentityDomain"
     },
     {
@@ -227,7 +227,7 @@ public:: true
       "vc:label": "Blockchain"
     },
     {
-      "@id": "urn:visionflow:owl:class:blockchain-domain",
+      "@id": "urn:visionflow:owl:class:blockchain",
       "vc:label": "BlockchainDomain"
     },
     {
@@ -626,7 +626,7 @@ public:: true
     },
     {
       "raw": "[[GovernanceDomain]]",
-      "resolved": "urn:visionflow:linked:governance-domain",
+      "resolved": "urn:visionflow:linked:governance",
       "kind": "StubLink"
     },
     {
@@ -636,7 +636,7 @@ public:: true
     },
     {
       "raw": "[[IdentityDomain]]",
-      "resolved": "urn:visionflow:linked:identity-domain",
+      "resolved": "urn:visionflow:linked:identity",
       "kind": "StubLink"
     },
     {
@@ -801,7 +801,7 @@ public:: true
     },
     {
       "raw": "[[BlockchainDomain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-domain",
+      "resolved": "urn:visionflow:owl:class:blockchain",
       "kind": "ResolvedLink"
     },
     {

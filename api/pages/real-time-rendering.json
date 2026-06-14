@@ -147,7 +147,7 @@
       "label": "Augmented Reality"
     },
     {
-      "slug": "creative-media-domain",
+      "slug": "ai-application",
       "label": "CreativeMediaDomain"
     },
     {
@@ -155,7 +155,7 @@
       "label": "ETSI_Domain_Immersive_Experiences"
     },
     {
-      "slug": "technology-domain",
+      "slug": "infrastructure",
       "label": "Technology Domain"
     },
     {
@@ -183,10 +183,6 @@
     {
       "slug": "compute-layer",
       "label": "Compute Layer"
-    },
-    {
-      "slug": "computer-graphics-domain",
-      "label": "Computer Graphics Domain"
     },
     {
       "slug": "data-processing-hardware",

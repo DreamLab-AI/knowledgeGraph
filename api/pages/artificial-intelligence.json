@@ -178,7 +178,7 @@
       "label": "Artificial Intelligence"
     },
     {
-      "slug": "artificial-intelligence-domain",
+      "slug": "artificial-intelligence",
       "label": "ArtificialIntelligenceDomain"
     },
     {
@@ -292,6 +292,10 @@
       "label": "3D and 4D"
     },
     {
+      "slug": "ai-adoption",
+      "label": "AI Adoption"
+    },
+    {
       "slug": "ai-applications",
       "label": "AI Applications"
     },
@@ -328,12 +332,20 @@
       "label": "AI Risk Management"
     },
     {
+      "slug": "ai-risk",
+      "label": "AI Risk"
+    },
+    {
       "slug": "ai-safety",
       "label": "AI Safety"
     },
     {
       "slug": "ai-security",
       "label": "AI Security"
+    },
+    {
+      "slug": "ai-upscaling-and-super-resolution",
+      "label": "AI Upscaling and Super-Resolution"
     },
     {
       "slug": "ai-user",
@@ -348,8 +360,8 @@
       "label": "AIApplications"
     },
     {
-      "slug": "aidomain",
-      "label": "AIDomain"
+      "slug": "aiapplications",
+      "label": "AIApplications"
     },
     {
       "slug": "aiethics",
@@ -362,6 +374,10 @@
     {
       "slug": "aisystem",
       "label": "AISystem"
+    },
+    {
+      "slug": "activation-function",
+      "label": "Activation Function"
     },
     {
       "slug": "adoption-of-convergent-technologies",
@@ -392,16 +408,24 @@
       "label": "Artificial General Intelligence"
     },
     {
-      "slug": "artificial-intelligence-domain",
-      "label": "Artificial Intelligence Domain"
-    },
-    {
       "slug": "artificial-superintelligence-theory",
       "label": "Artificial Superintelligence Theory"
     },
     {
       "slug": "attack-vector",
       "label": "Attack Vector"
+    },
+    {
+      "slug": "attention-head",
+      "label": "Attention Head"
+    },
+    {
+      "slug": "attention-mask",
+      "label": "Attention Mask"
+    },
+    {
+      "slug": "attention-mechanism",
+      "label": "Attention Mechanism"
     },
     {
       "slug": "attention-weight",
@@ -420,6 +444,18 @@
       "label": "BDI Model"
     },
     {
+      "slug": "backpropagation",
+      "label": "Backpropagation"
+    },
+    {
+      "slug": "batch-normalisation",
+      "label": "Batch Normalisation"
+    },
+    {
+      "slug": "batch-size",
+      "label": "Batch Size"
+    },
+    {
       "slug": "behavior-analysis",
       "label": "Behavior Analysis"
     },
@@ -430,6 +466,10 @@
     {
       "slug": "behavioral-modeling",
       "label": "Behavioral Modeling"
+    },
+    {
+      "slug": "bias",
+      "label": "Bias"
     },
     {
       "slug": "bittensor",
@@ -464,16 +504,16 @@
       "label": "Component"
     },
     {
-      "slug": "computation-and-intelligence-domain",
-      "label": "Computation And Intelligence Domain"
-    },
-    {
       "slug": "computational-component",
       "label": "Computational Component"
     },
     {
       "slug": "computer-vision-task",
       "label": "Computer Vision Task"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
     },
     {
       "slug": "computer-vision",
@@ -500,8 +540,16 @@
       "label": "Context Aware Response"
     },
     {
+      "slug": "context-window",
+      "label": "Context Window"
+    },
+    {
       "slug": "conversational-ai",
       "label": "Conversational AI"
+    },
+    {
+      "slug": "convolutional-neural-network",
+      "label": "Convolutional Neural Network"
     },
     {
       "slug": "cyber-security-and-cryptography",
@@ -514,6 +562,14 @@
     {
       "slug": "data-lake",
       "label": "Data Lake"
+    },
+    {
+      "slug": "data-lake",
+      "label": "Data Lake"
+    },
+    {
+      "slug": "data-versioning",
+      "label": "Data Versioning"
     },
     {
       "slug": "data-versioning",
@@ -540,8 +596,20 @@
       "label": "Documentation Generation"
     },
     {
+      "slug": "dropout",
+      "label": "Dropout"
+    },
+    {
       "slug": "etl-pipeline",
       "label": "ETL Pipeline"
+    },
+    {
+      "slug": "etl-pipeline",
+      "label": "ETL Pipeline"
+    },
+    {
+      "slug": "edge-ai-accelerator",
+      "label": "Edge AI Accelerator"
     },
     {
       "slug": "edge-ai-accelerator",
@@ -572,6 +640,18 @@
       "label": "Entity"
     },
     {
+      "slug": "epoch",
+      "label": "Epoch"
+    },
+    {
+      "slug": "ethan-mollick",
+      "label": "Ethan Mollick"
+    },
+    {
+      "slug": "evaluation-benchmarks-and-leaderboards",
+      "label": "Evaluation benchmarks and leaderboards"
+    },
+    {
       "slug": "explainable-ai",
       "label": "Explainable AI"
     },
@@ -584,8 +664,24 @@
       "label": "Feature Store"
     },
     {
+      "slug": "feature-store",
+      "label": "Feature Store"
+    },
+    {
+      "slug": "feedforward-neural-network",
+      "label": "Feedforward Neural Network"
+    },
+    {
+      "slug": "fine-tuning",
+      "label": "Fine Tuning"
+    },
+    {
       "slug": "fuzzy-logic",
       "label": "Fuzzy Logic"
+    },
+    {
+      "slug": "gpt",
+      "label": "GPT"
     },
     {
       "slug": "gartner-prediction",
@@ -606,6 +702,14 @@
     {
       "slug": "google-ai-technology-corporation",
       "label": "Google AI Technology Corporation"
+    },
+    {
+      "slug": "gradient-clipping",
+      "label": "Gradient Clipping"
+    },
+    {
+      "slug": "gradient-descent",
+      "label": "Gradient Descent"
     },
     {
       "slug": "human-preference",
@@ -636,6 +740,10 @@
       "label": "Image Segmentation"
     },
     {
+      "slug": "inference",
+      "label": "Inference"
+    },
+    {
       "slug": "intelligent-system",
       "label": "Intelligent System"
     },
@@ -654,6 +762,10 @@
     {
       "slug": "large-language-models",
       "label": "Large Language Models"
+    },
+    {
+      "slug": "layer-normalisation",
+      "label": "Layer Normalisation"
     },
     {
       "slug": "learning-algorithm",
@@ -676,6 +788,18 @@
       "label": "Logic Programming"
     },
     {
+      "slug": "logic-programming",
+      "label": "Logic Programming"
+    },
+    {
+      "slug": "loss-function",
+      "label": "Loss Function"
+    },
+    {
+      "slug": "machine-learning-discipline",
+      "label": "Machine Learning Discipline"
+    },
+    {
       "slug": "machine-learning-model",
       "label": "Machine Learning Model"
     },
@@ -686,6 +810,14 @@
     {
       "slug": "machine-learning-technique",
       "label": "Machine Learning Technique"
+    },
+    {
+      "slug": "machine-translation",
+      "label": "Machine Translation"
+    },
+    {
+      "slug": "medical-ai",
+      "label": "Medical AI"
     },
     {
       "slug": "medical-ai",
@@ -700,12 +832,40 @@
       "label": "Metadata Management"
     },
     {
-      "slug": "metaverse-domain",
-      "label": "Metaverse Domain"
-    },
-    {
       "slug": "metaverse-technology",
       "label": "Metaverse Technology"
+    },
+    {
+      "slug": "microsoft-copilot",
+      "label": "Microsoft Copilot"
+    },
+    {
+      "slug": "model-capacity",
+      "label": "Model Capacity"
+    },
+    {
+      "slug": "model-depth",
+      "label": "Model Depth"
+    },
+    {
+      "slug": "model-ensembling",
+      "label": "Model Ensembling"
+    },
+    {
+      "slug": "model-extraction",
+      "label": "Model Extraction"
+    },
+    {
+      "slug": "model-interpretability",
+      "label": "Model Interpretability"
+    },
+    {
+      "slug": "model-inversion",
+      "label": "Model Inversion"
+    },
+    {
+      "slug": "model-parameters",
+      "label": "Model Parameters"
     },
     {
       "slug": "model-parameters",
@@ -716,8 +876,24 @@
       "label": "Model Performance"
     },
     {
+      "slug": "model-performance",
+      "label": "Model Performance"
+    },
+    {
       "slug": "model-property",
       "label": "Model Property"
+    },
+    {
+      "slug": "model-robustness",
+      "label": "Model Robustness"
+    },
+    {
+      "slug": "model-weights",
+      "label": "Model Weights"
+    },
+    {
+      "slug": "model-width",
+      "label": "Model Width"
     },
     {
       "slug": "model",
@@ -732,12 +908,20 @@
       "label": "Module"
     },
     {
+      "slug": "multi-head-attention",
+      "label": "Multi-Head Attention"
+    },
+    {
       "slug": "multimodal-understanding",
       "label": "Multimodal Understanding"
     },
     {
       "slug": "nlptask",
       "label": "NLPTask"
+    },
+    {
+      "slug": "npu",
+      "label": "NPU"
     },
     {
       "slug": "npu",
@@ -760,8 +944,16 @@
       "label": "Neural Network Component"
     },
     {
+      "slug": "neural-network-text-tokenisation",
+      "label": "Neural Network Text Tokenisation"
+    },
+    {
       "slug": "neural-radiance-field",
       "label": "Neural Radiance Field"
+    },
+    {
+      "slug": "neuromorphic-chip",
+      "label": "Neuromorphic Chip"
     },
     {
       "slug": "neuromorphic-chip",
@@ -774,6 +966,10 @@
     {
       "slug": "optimization-algorithm",
       "label": "Optimization Algorithm"
+    },
+    {
+      "slug": "parameter-efficient-fine-tuning",
+      "label": "Parameter-Efficient Fine-Tuning"
     },
     {
       "slug": "parameter",
@@ -828,6 +1024,14 @@
       "label": "Private Blockchain"
     },
     {
+      "slug": "procedural-and-hybrid-4-d",
+      "label": "Procedural and Hybrid 4D"
+    },
+    {
+      "slug": "prompt-tuning",
+      "label": "Prompt Tuning"
+    },
+    {
       "slug": "property",
       "label": "Property"
     },
@@ -852,6 +1056,22 @@
       "label": "Real-time Processing"
     },
     {
+      "slug": "recurrent-neural-network",
+      "label": "Recurrent Neural Network"
+    },
+    {
+      "slug": "recurrent-neural-network",
+      "label": "Recurrent Neural Network"
+    },
+    {
+      "slug": "reinforcement-learning-from-human-feedback",
+      "label": "Reinforcement Learning from Human Feedback"
+    },
+    {
+      "slug": "reinforcement-learning",
+      "label": "Reinforcement Learning"
+    },
+    {
       "slug": "reinforcement-learning",
       "label": "Reinforcement Learning"
     },
@@ -864,8 +1084,12 @@
       "label": "Robot Learning"
     },
     {
-      "slug": "robotics-domain",
-      "label": "Robotics Domain"
+      "slug": "robot-learning",
+      "label": "Robot Learning"
+    },
+    {
+      "slug": "robotics-platform",
+      "label": "Robotics Platform"
     },
     {
       "slug": "robotics-systems",
@@ -900,6 +1124,10 @@
       "label": "Self Improvement"
     },
     {
+      "slug": "semantic-segmentation",
+      "label": "Semantic Segmentation"
+    },
+    {
       "slug": "social-contract",
       "label": "Social Contract"
     },
@@ -924,6 +1152,14 @@
       "label": "Style Transfer"
     },
     {
+      "slug": "supervised-fine-tuning",
+      "label": "Supervised Fine Tuning"
+    },
+    {
+      "slug": "symbolic-ai",
+      "label": "Symbolic AI"
+    },
+    {
       "slug": "symbolic-ai",
       "label": "Symbolic AI"
     },
@@ -940,6 +1176,10 @@
       "label": "TPU"
     },
     {
+      "slug": "tpu",
+      "label": "TPU"
+    },
+    {
       "slug": "task-adaptation",
       "label": "Task Adaptation"
     },
@@ -950,10 +1190,6 @@
     {
       "slug": "technique",
       "label": "Technique"
-    },
-    {
-      "slug": "technology-domain",
-      "label": "Technology Domain"
     },
     {
       "slug": "technology-power-structure-visualisation",
@@ -984,6 +1220,10 @@
       "label": "Third-Party Vulnerability"
     },
     {
+      "slug": "token-embedding",
+      "label": "Token Embedding"
+    },
+    {
       "slug": "toxicity-detection",
       "label": "Toxicity Detection"
     },
@@ -1004,6 +1244,10 @@
       "label": "Training Methods"
     },
     {
+      "slug": "transformer-architecture",
+      "label": "Transformer Architecture"
+    },
+    {
       "slug": "transformers",
       "label": "Transformers"
     },
@@ -1022,6 +1266,14 @@
     {
       "slug": "value",
       "label": "Value"
+    },
+    {
+      "slug": "variational-autoencoders",
+      "label": "Variational Autoencoders"
+    },
+    {
+      "slug": "weight-decay",
+      "label": "Weight Decay"
     },
     {
       "slug": "workforce-augmentation",

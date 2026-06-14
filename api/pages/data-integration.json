@@ -161,10 +161,6 @@
       "label": "Data Aggregation"
     },
     {
-      "slug": "data-management-domain",
-      "label": "Data Management Domain"
-    },
-    {
       "slug": "data-quality",
       "label": "Data Quality"
     },
@@ -177,16 +173,8 @@
       "label": "Domain Ontology"
     },
     {
-      "slug": "enterprise-software-domain",
-      "label": "Enterprise Software Domain"
-    },
-    {
       "slug": "entity-resolution",
       "label": "Entity Resolution"
-    },
-    {
-      "slug": "knowledge-representation-domain",
-      "label": "Knowledge Representation Domain"
     },
     {
       "slug": "master-data-management",

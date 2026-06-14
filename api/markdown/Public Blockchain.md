@@ -44,7 +44,7 @@ alias:: PublicBlockchain
       "vc:label": "Immutability"
     },
     {
-      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "@id": "urn:visionflow:owl:class:metaverse",
       "vc:label": "MetaverseDomain"
     },
     {
@@ -195,7 +195,7 @@ alias:: PublicBlockchain
         "label": "Supply Chain Transparency"
       },
       {
-        "@id": "urn:ngm:class:metaverse-domain",
+        "@id": "urn:ngm:class:metaverse",
         "label": "Metaverse Domain"
       }
     ],
@@ -278,7 +278,7 @@ alias:: PublicBlockchain
     },
     {
       "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "resolved": "urn:visionflow:owl:class:metaverse",
       "kind": "ResolvedLink"
     },
     {

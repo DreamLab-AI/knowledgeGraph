@@ -23,15 +23,15 @@ public:: true
       "vc:label": "OWL 2 Web Ontology Language"
     },
     {
-      "@id": "urn:visionflow:owl:class:aiethics-domain",
+      "@id": "urn:visionflow:owl:class:ai-governance-and-ethics",
       "vc:label": "AIEthicsDomain"
     },
     {
-      "@id": "urn:visionflow:owl:class:blockchain-domain",
+      "@id": "urn:visionflow:owl:class:blockchain",
       "vc:label": "BlockchainDomain"
     },
     {
-      "@id": "urn:visionflow:owl:class:robotics-domain",
+      "@id": "urn:visionflow:owl:class:robotics",
       "vc:label": "RoboticsDomain"
     }
   ],
@@ -85,9 +85,9 @@ public:: true
       {"@id": "urn:ngm:class:owl-class-hierarchy", "label": "OWL Class Hierarchy"}
     ],
     "supports": [
-      {"@id": "urn:ngm:class:blockchain-domain", "label": "Blockchain Domain"},
-      {"@id": "urn:ngm:class:artificial-intelligence-domain", "label": "Artificial Intelligence Domain"},
-      {"@id": "urn:ngm:class:robotics-domain", "label": "Robotics Domain"}
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain Domain"},
+      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence Domain"},
+      {"@id": "urn:ngm:class:robotics", "label": "Robotics Domain"}
     ]
   },
   "quality": 0.8,
@@ -125,17 +125,17 @@ public:: true
     },
     {
       "raw": "[[AIEthicsDomain]]",
-      "resolved": "urn:visionflow:owl:class:aiethics-domain",
+      "resolved": "urn:visionflow:owl:class:ai-governance-and-ethics",
       "kind": "ResolvedLink"
     },
     {
       "raw": "[[BlockchainDomain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-domain",
+      "resolved": "urn:visionflow:owl:class:blockchain",
       "kind": "ResolvedLink"
     },
     {
       "raw": "[[RoboticsDomain]]",
-      "resolved": "urn:visionflow:owl:class:robotics-domain",
+      "resolved": "urn:visionflow:owl:class:robotics",
       "kind": "ResolvedLink"
     }
   ],

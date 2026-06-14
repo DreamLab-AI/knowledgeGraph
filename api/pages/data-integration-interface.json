@@ -99,7 +99,7 @@
       "label": "Data Federation"
     },
     {
-      "slug": "data-management-domain",
+      "slug": "data-management",
       "label": "DataManagementDomain"
     },
     {
@@ -111,7 +111,7 @@
       "label": "ETSI GR ARF 010"
     },
     {
-      "slug": "interoperability-domain",
+      "slug": "interoperability",
       "label": "InteroperabilityDomain"
     },
     {

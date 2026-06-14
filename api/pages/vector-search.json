@@ -154,10 +154,6 @@
       "label": "Context Engineering"
     },
     {
-      "slug": "information-retrieval-domain",
-      "label": "Information Retrieval Domain"
-    },
-    {
       "slug": "pinecone",
       "label": "Pinecone"
     },

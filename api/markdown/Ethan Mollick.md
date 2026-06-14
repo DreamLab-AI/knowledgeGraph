@@ -23,7 +23,7 @@ public:: true
       "vc:label": "Prompt Engineering"
     },
     {
-      "@id": "urn:visionflow:linked:artificial-intelligence-domain",
+      "@id": "urn:visionflow:linked:artificial-intelligence",
       "vc:label": "Artificial Intelligence Domain"
     }
   ],
@@ -56,7 +56,7 @@ public:: true
   "qualityScore": 0.72,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:artificial-intelligence-domain",
+      "@id": "urn:ngm:class:artificial-intelligence",
       "label": "Artificial Intelligence Domain"
     }
   ],
@@ -199,7 +199,7 @@ public:: true
     },
     {
       "raw": "[[Artificial Intelligence Domain]]",
-      "resolved": "urn:visionflow:linked:artificial-intelligence-domain",
+      "resolved": "urn:visionflow:linked:artificial-intelligence",
       "kind": "ResolvedLink"
     }
   ],

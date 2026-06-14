@@ -19,11 +19,11 @@ public:: true
       "vc:label": "Proof of Stake"
     },
     {
-      "@id": "urn:visionflow:linked:governance-domain",
+      "@id": "urn:visionflow:linked:governance",
       "vc:label": "Governance Domain"
     },
     {
-      "@id": "urn:visionflow:linked:blockchain-domain",
+      "@id": "urn:visionflow:linked:blockchain",
       "vc:label": "Blockchain Domain"
     },
     {
@@ -228,12 +228,12 @@ public:: true
     },
     {
       "raw": "[[Governance Domain]]",
-      "resolved": "urn:visionflow:linked:governance-domain",
+      "resolved": "urn:visionflow:linked:governance",
       "kind": "ResolvedLink"
     },
     {
       "raw": "[[Blockchain Domain]]",
-      "resolved": "urn:visionflow:linked:blockchain-domain",
+      "resolved": "urn:visionflow:linked:blockchain",
       "kind": "ResolvedLink"
     },
     {

@@ -27,7 +27,7 @@ public:: true
       "vc:label": "Cryptography"
     },
     {
-      "@id": "urn:visionflow:linked:cryptography-domain",
+      "@id": "urn:visionflow:linked:cryptography",
       "vc:label": "Cryptography Domain"
     }
   ],
@@ -60,7 +60,7 @@ public:: true
   "qualityScore": 0.7,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:cryptography-domain",
+      "@id": "urn:ngm:class:cryptography",
       "label": "Cryptography Domain"
     }
   ],
@@ -118,7 +118,7 @@ public:: true
     },
     {
       "raw": "[[Cryptography Domain]]",
-      "resolved": "urn:visionflow:linked:cryptography-domain",
+      "resolved": "urn:visionflow:linked:cryptography",
       "kind": "ResolvedLink"
     }
   ],

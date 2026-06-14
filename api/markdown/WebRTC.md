@@ -140,11 +140,11 @@ alias:: TELE-150-webrtc
       "vc:label": "AutoML"
     },
     {
-      "@id": "urn:visionflow:owl:class:blockchain-domain",
+      "@id": "urn:visionflow:owl:class:blockchain",
       "vc:label": "Blockchain Domain"
     },
     {
-      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "@id": "urn:visionflow:owl:class:metaverse",
       "vc:label": "Metaverse Domain"
     },
     {
@@ -152,7 +152,7 @@ alias:: TELE-150-webrtc
       "vc:label": "NetworkLayer"
     },
     {
-      "@id": "urn:visionflow:owl:class:ngm-domain",
+      "@id": "urn:visionflow:owl:class:infrastructure",
       "vc:label": "NGM Domain"
     },
     {
@@ -172,7 +172,7 @@ alias:: TELE-150-webrtc
       "vc:label": "Robot Operating System"
     },
     {
-      "@id": "urn:visionflow:owl:class:robotics-domain",
+      "@id": "urn:visionflow:owl:class:robotics",
       "vc:label": "Robotics Domain"
     },
     {
@@ -180,7 +180,7 @@ alias:: TELE-150-webrtc
       "vc:label": "Screen Sharing"
     },
     {
-      "@id": "urn:visionflow:owl:class:telecollaboration-domain",
+      "@id": "urn:visionflow:owl:class:telecollaboration",
       "vc:label": "Telecollaboration Domain"
     },
     {
@@ -510,12 +510,12 @@ alias:: TELE-150-webrtc
     },
     {
       "raw": "[[Blockchain Domain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-domain",
+      "resolved": "urn:visionflow:owl:class:blockchain",
       "kind": "ResolvedLink"
     },
     {
       "raw": "[[Metaverse Domain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "resolved": "urn:visionflow:owl:class:metaverse",
       "kind": "ResolvedLink"
     },
     {
@@ -525,7 +525,7 @@ alias:: TELE-150-webrtc
     },
     {
       "raw": "[[NGM Domain]]",
-      "resolved": "urn:visionflow:owl:class:ngm-domain",
+      "resolved": "urn:visionflow:owl:class:infrastructure",
       "kind": "ResolvedLink"
     },
     {
@@ -550,7 +550,7 @@ alias:: TELE-150-webrtc
     },
     {
       "raw": "[[Robotics Domain]]",
-      "resolved": "urn:visionflow:owl:class:robotics-domain",
+      "resolved": "urn:visionflow:owl:class:robotics",
       "kind": "ResolvedLink"
     },
     {
@@ -560,7 +560,7 @@ alias:: TELE-150-webrtc
     },
     {
       "raw": "[[Telecollaboration Domain]]",
-      "resolved": "urn:visionflow:owl:class:telecollaboration-domain",
+      "resolved": "urn:visionflow:owl:class:telecollaboration",
       "kind": "ResolvedLink"
     },
     {

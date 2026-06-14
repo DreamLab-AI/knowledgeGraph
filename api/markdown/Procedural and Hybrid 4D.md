@@ -47,7 +47,7 @@ public:: true
       "vc:label": "Computer Graphics"
     },
     {
-      "@id": "urn:visionflow:linked:computer-graphics-domain",
+      "@id": "urn:visionflow:linked:computer-graphics",
       "vc:label": "ComputerGraphicsDomain"
     },
     {
@@ -259,7 +259,7 @@ public:: true
       "vc:label": "AR Frame"
     },
     {
-      "@id": "urn:visionflow:owl:class:artificial-intelligence-domain",
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
       "vc:label": "ArtificialIntelligenceDomain"
     },
     {
@@ -560,7 +560,7 @@ public:: true
         "label": "Metaverse"
       },
       {
-        "@id": "urn:ngm:class:spatial-computing-paradigm",
+        "@id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing"
       }
     ],
@@ -680,7 +680,7 @@ public:: true
     },
     {
       "raw": "[[ComputerGraphicsDomain]]",
-      "resolved": "urn:visionflow:linked:computer-graphics-domain",
+      "resolved": "urn:visionflow:linked:computer-graphics",
       "kind": "StubLink"
     },
     {
@@ -945,7 +945,7 @@ public:: true
     },
     {
       "raw": "[[ArtificialIntelligenceDomain]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence-domain",
+      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
       "kind": "ResolvedLink"
     },
     {

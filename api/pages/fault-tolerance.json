@@ -424,7 +424,7 @@
       "label": "Distributed Consensus"
     },
     {
-      "slug": "distributed-systems-domain",
+      "slug": "distributed-systems",
       "label": "DistributedSystemsDomain"
     },
     {
@@ -776,7 +776,7 @@
       "label": "Gossip Protocol"
     },
     {
-      "slug": "infrastructure-domain",
+      "slug": "infrastructure",
       "label": "InfrastructureDomain"
     },
     {
@@ -844,10 +844,6 @@
     {
       "slug": "distributed-computing",
       "label": "Distributed Computing"
-    },
-    {
-      "slug": "distributed-systems-domain",
-      "label": "Distributed Systems Domain"
     },
     {
       "slug": "distributed-systems-theory",

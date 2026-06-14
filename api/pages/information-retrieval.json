@@ -141,6 +141,14 @@
   ],
   "backlinks": [
     {
+      "slug": "ai-scrapers",
+      "label": "AI Scrapers"
+    },
+    {
+      "slug": "ai-search",
+      "label": "AI Search"
+    },
+    {
       "slug": "ai-search",
       "label": "AI Search"
     },
@@ -165,12 +173,20 @@
       "label": "Question Answering"
     },
     {
+      "slug": "retrieval-augmented-generation-rag",
+      "label": "Retrieval Augmented Generation - RAG"
+    },
+    {
       "slug": "search-discovery",
       "label": "Search Discovery"
     },
     {
       "slug": "search-engine",
       "label": "Search Engine"
+    },
+    {
+      "slug": "semantic-search",
+      "label": "Semantic Search"
     },
     {
       "slug": "semantic-search",

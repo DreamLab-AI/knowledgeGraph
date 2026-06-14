@@ -8,7 +8,7 @@
   "definition": "The OECD (Organisation for Economic Co-operation and Development) is an intergovernmental organisation founded in 1961, headquartered in Paris, comprising 38 member states committed to market economies and democratic governance. It produces comparative economic analysis, harmonised statistics, and binding and non-binding policy instruments spanning taxation, trade, education, digital policy, and emerging technology governance. Its AI Principles (2019) were the first intergovernmental standard for trustworthy artificial intelligence, and its Crypto-Asset Reporting Framework (CARF) extends automatic exchange of financial information to digital assets. OECD outputs exert normative influence through peer review, mutual recognition agreements, and adoption by broader multilateral bodies including the G20.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:governance-domain",
+      "id": "urn:ngm:class:governance",
       "label": "Governance Domain"
     }
   ],
@@ -109,7 +109,7 @@
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:regulatory-domain",
+        "id": "urn:ngm:class:infra-legal-and-regulatory",
         "label": "Regulatory Domain"
       },
       {
@@ -158,11 +158,11 @@
       "label": "MiCA"
     },
     {
-      "slug": "regulatory-domain",
+      "slug": "infra-legal-and-regulatory",
       "label": "Regulatory Domain"
     },
     {
-      "slug": "governance-domain",
+      "slug": "governance",
       "label": "Governance Domain"
     }
   ],

@@ -195,7 +195,7 @@ public:: true
       "vc:label": "Getty Images v. Stability AI"
     },
     {
-      "@id": "urn:visionflow:linked:governance-domain",
+      "@id": "urn:visionflow:linked:governance",
       "vc:label": "GovernanceDomain"
     },
     {
@@ -347,7 +347,7 @@ public:: true
       "vc:label": "Risk Internalisation"
     },
     {
-      "@id": "urn:visionflow:linked:risk-management-domain",
+      "@id": "urn:visionflow:linked:risk-management",
       "vc:label": "RiskManagementDomain"
     },
     {
@@ -415,7 +415,7 @@ public:: true
       "vc:label": "AI Governance"
     },
     {
-      "@id": "urn:visionflow:owl:class:ai-grounded-domain",
+      "@id": "urn:visionflow:owl:class:ai-technique",
       "vc:label": "AI-GroundedDomain"
     },
     {
@@ -967,7 +967,7 @@ public:: true
     },
     {
       "raw": "[[GovernanceDomain]]",
-      "resolved": "urn:visionflow:linked:governance-domain",
+      "resolved": "urn:visionflow:linked:governance",
       "kind": "StubLink"
     },
     {
@@ -1157,7 +1157,7 @@ public:: true
     },
     {
       "raw": "[[RiskManagementDomain]]",
-      "resolved": "urn:visionflow:linked:risk-management-domain",
+      "resolved": "urn:visionflow:linked:risk-management",
       "kind": "StubLink"
     },
     {
@@ -1242,7 +1242,7 @@ public:: true
     },
     {
       "raw": "[[AI-GroundedDomain]]",
-      "resolved": "urn:visionflow:owl:class:ai-grounded-domain",
+      "resolved": "urn:visionflow:owl:class:ai-technique",
       "kind": "ResolvedLink"
     },
     {

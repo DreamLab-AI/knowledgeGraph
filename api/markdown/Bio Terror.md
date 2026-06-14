@@ -291,7 +291,7 @@ public:: true
       "vc:label": "RiskDomain"
     },
     {
-      "@id": "urn:visionflow:linked:security-domain",
+      "@id": "urn:visionflow:linked:security",
       "vc:label": "SecurityDomain"
     },
     {
@@ -1049,7 +1049,7 @@ public:: true
     },
     {
       "raw": "[[SecurityDomain]]",
-      "resolved": "urn:visionflow:linked:security-domain",
+      "resolved": "urn:visionflow:linked:security",
       "kind": "StubLink"
     },
     {

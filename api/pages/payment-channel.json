@@ -231,10 +231,6 @@
       "label": "Payment Channels"
     },
     {
-      "slug": "payment-systems-domain",
-      "label": "Payment Systems Domain"
-    },
-    {
       "slug": "rgb-and-client-side-validation",
       "label": "RGB and Client Side Validation"
     },

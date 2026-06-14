@@ -139,11 +139,11 @@ public:: true
       "vc:label": "WebSocket Protocol"
     },
     {
-      "@id": "urn:visionflow:owl:class:blockchain-domain",
+      "@id": "urn:visionflow:owl:class:blockchain",
       "vc:label": "Blockchain Domain"
     },
     {
-      "@id": "urn:visionflow:owl:class:ngm-domain",
+      "@id": "urn:visionflow:owl:class:infrastructure",
       "vc:label": "NGM Domain"
     },
     {
@@ -159,7 +159,7 @@ public:: true
       "vc:label": "Robot Operating System"
     },
     {
-      "@id": "urn:visionflow:owl:class:robotics-domain",
+      "@id": "urn:visionflow:owl:class:robotics",
       "vc:label": "Robotics Domain"
     },
     {
@@ -167,7 +167,7 @@ public:: true
       "vc:label": "Solid Pod"
     },
     {
-      "@id": "urn:visionflow:owl:class:telecollaboration-domain",
+      "@id": "urn:visionflow:owl:class:telecollaboration",
       "vc:label": "Telecollaboration Domain"
     },
     {
@@ -497,12 +497,12 @@ public:: true
     },
     {
       "raw": "[[Blockchain Domain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-domain",
+      "resolved": "urn:visionflow:owl:class:blockchain",
       "kind": "ResolvedLink"
     },
     {
       "raw": "[[NGM Domain]]",
-      "resolved": "urn:visionflow:owl:class:ngm-domain",
+      "resolved": "urn:visionflow:owl:class:infrastructure",
       "kind": "ResolvedLink"
     },
     {
@@ -522,7 +522,7 @@ public:: true
     },
     {
       "raw": "[[Robotics Domain]]",
-      "resolved": "urn:visionflow:owl:class:robotics-domain",
+      "resolved": "urn:visionflow:owl:class:robotics",
       "kind": "ResolvedLink"
     },
     {
@@ -532,7 +532,7 @@ public:: true
     },
     {
       "raw": "[[Telecollaboration Domain]]",
-      "resolved": "urn:visionflow:owl:class:telecollaboration-domain",
+      "resolved": "urn:visionflow:owl:class:telecollaboration",
       "kind": "ResolvedLink"
     },
     {

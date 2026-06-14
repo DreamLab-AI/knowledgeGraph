@@ -327,7 +327,7 @@ public:: true
       "vc:label": "Multi-Tenancy"
     },
     {
-      "@id": "urn:visionflow:linked:networking-domain",
+      "@id": "urn:visionflow:linked:infra-network-and-comms",
       "vc:label": "NetworkingDomain"
     },
     {
@@ -491,7 +491,7 @@ public:: true
       "vc:label": "Role-Based Access Control"
     },
     {
-      "@id": "urn:visionflow:linked:security-domain",
+      "@id": "urn:visionflow:linked:security",
       "vc:label": "SecurityDomain"
     },
     {
@@ -603,7 +603,7 @@ public:: true
       "vc:label": "Identity Provider"
     },
     {
-      "@id": "urn:visionflow:owl:class:infrastructure-domain",
+      "@id": "urn:visionflow:owl:class:infrastructure",
       "vc:label": "InfrastructureDomain"
     },
     {
@@ -1324,7 +1324,7 @@ public:: true
     },
     {
       "raw": "[[NetworkingDomain]]",
-      "resolved": "urn:visionflow:linked:networking-domain",
+      "resolved": "urn:visionflow:linked:infra-network-and-comms",
       "kind": "StubLink"
     },
     {
@@ -1529,7 +1529,7 @@ public:: true
     },
     {
       "raw": "[[SecurityDomain]]",
-      "resolved": "urn:visionflow:linked:security-domain",
+      "resolved": "urn:visionflow:linked:security",
       "kind": "StubLink"
     },
     {
@@ -1669,7 +1669,7 @@ public:: true
     },
     {
       "raw": "[[InfrastructureDomain]]",
-      "resolved": "urn:visionflow:owl:class:infrastructure-domain",
+      "resolved": "urn:visionflow:owl:class:infrastructure",
       "kind": "ResolvedLink"
     },
     {

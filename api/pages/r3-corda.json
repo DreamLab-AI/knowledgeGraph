@@ -396,7 +396,7 @@
       "label": "FCA"
     },
     {
-      "slug": "financial-infrastructure-domain",
+      "slug": "financial-infrastructure",
       "label": "FinancialInfrastructureDomain"
     },
     {
@@ -544,7 +544,7 @@
       "label": "Bitcoin"
     },
     {
-      "slug": "blockchain-domain",
+      "slug": "blockchain",
       "label": "BlockchainDomain"
     },
     {

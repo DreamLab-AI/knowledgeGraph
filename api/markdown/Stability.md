@@ -27,7 +27,7 @@ public:: true
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:feedback-loop", "label": "Feedback Loop"},
-      {"@id": "urn:ngm:class:control-systems-domain", "label": "Control Systems Domain"}
+      {"@id": "urn:ngm:class:robo-actuation-and-control", "label": "Control Systems Domain"}
     ]
   },
   "quality": 0.72

@@ -303,10 +303,6 @@
       "label": "Cryptocurrency"
     },
     {
-      "slug": "cryptographic-domain",
-      "label": "Cryptographic Domain"
-    },
-    {
       "slug": "curve-finance",
       "label": "Curve Finance"
     },
@@ -685,10 +681,6 @@
     {
       "slug": "timelock-contract",
       "label": "Timelock Contract"
-    },
-    {
-      "slug": "token-economics-domain",
-      "label": "Token Economics Domain"
     },
     {
       "slug": "token",

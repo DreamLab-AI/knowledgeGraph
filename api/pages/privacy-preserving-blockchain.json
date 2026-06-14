@@ -411,7 +411,7 @@
       "label": "CryptographicLayer"
     },
     {
-      "slug": "cryptography-domain",
+      "slug": "cryptography",
       "label": "CryptographyDomain"
     },
     {
@@ -743,7 +743,7 @@
       "label": "Range Proofs"
     },
     {
-      "slug": "regulatory-compliance-domain",
+      "slug": "regulatory-compliance",
       "label": "RegulatoryComplianceDomain"
     },
     {
@@ -891,7 +891,7 @@
       "label": "Bitcoin"
     },
     {
-      "slug": "blockchain-domain",
+      "slug": "blockchain",
       "label": "BlockchainDomain"
     },
     {

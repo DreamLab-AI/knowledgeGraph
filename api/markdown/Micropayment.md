@@ -75,7 +75,7 @@ public:: true
       "vc:label": "MiddlewareLayer"
     },
     {
-      "@id": "urn:visionflow:owl:class:virtual-economy-domain",
+      "@id": "urn:visionflow:owl:class:virtual-economy",
       "vc:label": "VirtualEconomyDomain"
     }
   ],
@@ -212,7 +212,7 @@ public:: true
     ],
     "bridgesTo": [
       {
-        "@id": "urn:ngm:class:virtual-economy-domain",
+        "@id": "urn:ngm:class:virtual-economy",
         "label": "Virtual Economy Domain"
       },
       {
@@ -349,7 +349,7 @@ public:: true
     },
     {
       "raw": "[[VirtualEconomyDomain]]",
-      "resolved": "urn:visionflow:owl:class:virtual-economy-domain",
+      "resolved": "urn:visionflow:owl:class:virtual-economy",
       "kind": "ResolvedLink"
     }
   ],

@@ -33,7 +33,7 @@
         "label": "Model Control Protocols like MCP"
       },
       {
-        "id": "urn:ngm:class:networking-domain",
+        "id": "urn:ngm:class:infra-network-and-comms",
         "label": "Networking Domain"
       }
     ]
@@ -43,10 +43,6 @@
     {
       "slug": "model-control-protocols-like-mcp",
       "label": "Model Control Protocols like MCP"
-    },
-    {
-      "slug": "networking-domain",
-      "label": "Networking Domain"
     }
   ]
 }

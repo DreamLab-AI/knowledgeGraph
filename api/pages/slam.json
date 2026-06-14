@@ -85,7 +85,7 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:metaverse-domain",
+        "id": "urn:ngm:class:metaverse",
         "label": "Metaverse Domain"
       },
       {
@@ -119,7 +119,7 @@
     "standardizedBy": [],
     "partOf": [
       {
-        "id": "urn:ngm:class:spatial-computing-paradigm",
+        "id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing"
       }
     ],
@@ -240,7 +240,7 @@
       "label": "Localization"
     },
     {
-      "slug": "metaverse-domain",
+      "slug": "metaverse",
       "label": "MetaverseDomain"
     },
     {

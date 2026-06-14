@@ -23,7 +23,7 @@ public:: true
       "vc:label": "Knowledge Graph"
     },
     {
-      "@id": "urn:visionflow:linked:deep-learning-domain",
+      "@id": "urn:visionflow:linked:deep-learning",
       "vc:label": "Deep Learning Domain"
     },
     {
@@ -243,7 +243,7 @@ public:: true
     },
     {
       "raw": "[[Deep Learning Domain]]",
-      "resolved": "urn:visionflow:linked:deep-learning-domain",
+      "resolved": "urn:visionflow:linked:deep-learning",
       "kind": "ResolvedLink"
     },
     {

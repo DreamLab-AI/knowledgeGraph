@@ -154,7 +154,7 @@
       "label": "Autonomous Robot"
     },
     {
-      "slug": "metaverse-domain",
+      "slug": "metaverse",
       "label": "MetaverseDomain"
     },
     {
@@ -178,10 +178,6 @@
     {
       "slug": "collision-avoidance",
       "label": "Collision Avoidance"
-    },
-    {
-      "slug": "computer-vision-domain",
-      "label": "Computer Vision Domain"
     },
     {
       "slug": "control-theory",

@@ -40,7 +40,7 @@ alias:: ProtocolLayer
   "relations": {
     "implements": [
       {
-        "@id": "urn:ngm:class:technology-infrastructure-domain",
+        "@id": "urn:ngm:class:technology-infrastructure",
         "label": "infrastructure"
       }
     ]

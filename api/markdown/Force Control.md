@@ -72,7 +72,7 @@ alias:: ForceControl
       "vc:label": "ControlLayer"
     },
     {
-      "@id": "urn:visionflow:linked:control-systems-domain",
+      "@id": "urn:visionflow:linked:robo-actuation-and-control",
       "vc:label": "ControlSystemsDomain"
     },
     {
@@ -412,7 +412,7 @@ alias:: ForceControl
       "vc:label": "Rigid Body Dynamics"
     },
     {
-      "@id": "urn:visionflow:owl:class:robotics-domain",
+      "@id": "urn:visionflow:owl:class:robotics",
       "vc:label": "RoboticsDomain"
     },
     {
@@ -809,7 +809,7 @@ alias:: ForceControl
     },
     {
       "raw": "[[ControlSystemsDomain]]",
-      "resolved": "urn:visionflow:linked:control-systems-domain",
+      "resolved": "urn:visionflow:linked:robo-actuation-and-control",
       "kind": "StubLink"
     },
     {
@@ -1234,7 +1234,7 @@ alias:: ForceControl
     },
     {
       "raw": "[[RoboticsDomain]]",
-      "resolved": "urn:visionflow:owl:class:robotics-domain",
+      "resolved": "urn:visionflow:owl:class:robotics",
       "kind": "ResolvedLink"
     },
     {

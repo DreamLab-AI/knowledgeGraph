@@ -47,7 +47,7 @@ public:: true
       "vc:label": "EnergySource"
     },
     {
-      "@id": "urn:visionflow:linked:environmental-domain",
+      "@id": "urn:visionflow:linked:infra-legal-and-regulatory",
       "vc:label": "EnvironmentalDomain"
     },
     {
@@ -79,7 +79,7 @@ public:: true
       "vc:label": "NetworkSize"
     },
     {
-      "@id": "urn:visionflow:owl:class:blockchain-domain",
+      "@id": "urn:visionflow:owl:class:blockchain",
       "vc:label": "BlockchainDomain"
     },
     {
@@ -336,7 +336,7 @@ public:: true
     },
     {
       "raw": "[[EnvironmentalDomain]]",
-      "resolved": "urn:visionflow:linked:environmental-domain",
+      "resolved": "urn:visionflow:linked:infra-legal-and-regulatory",
       "kind": "StubLink"
     },
     {
@@ -376,7 +376,7 @@ public:: true
     },
     {
       "raw": "[[BlockchainDomain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-domain",
+      "resolved": "urn:visionflow:owl:class:blockchain",
       "kind": "ResolvedLink"
     },
     {

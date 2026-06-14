@@ -300,7 +300,7 @@
       "label": "Accent Adaptation"
     },
     {
-      "slug": "accessibility-domain",
+      "slug": "accessibility",
       "label": "AccessibilityDomain"
     },
     {
@@ -404,7 +404,7 @@
       "label": "Distributed Collaboration"
     },
     {
-      "slug": "distributed-collaboration-domain",
+      "slug": "distributed-collaboration",
       "label": "DistributedCollaborationDomain"
     },
     {
@@ -528,7 +528,7 @@
       "label": "Multilingual Video Conferencing"
     },
     {
-      "slug": "natural-language-processing-domain",
+      "slug": "natural-language-processing",
       "label": "NaturalLanguageProcessingDomain"
     },
     {

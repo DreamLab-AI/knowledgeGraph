@@ -295,11 +295,11 @@
       "label": "Channel Factory"
     },
     {
-      "slug": "cryptography-domain",
+      "slug": "cryptography",
       "label": "CryptographyDomain"
     },
     {
-      "slug": "financial-infrastructure-domain",
+      "slug": "financial-infrastructure",
       "label": "FinancialInfrastructureDomain"
     },
     {
@@ -435,7 +435,7 @@
       "label": "Bitcoin Value Proposition"
     },
     {
-      "slug": "blockchain-domain",
+      "slug": "blockchain",
       "label": "BlockchainDomain"
     },
     {

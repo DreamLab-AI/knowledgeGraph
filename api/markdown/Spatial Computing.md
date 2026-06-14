@@ -25,7 +25,7 @@ public:: true
   "maturity": "emerging",
   "subClassOf": [],
   "sameAs": [
-    {"@id": "urn:ngm:class:spatial-computing-paradigm", "label": "Spatial Computing Paradigm"}
+    {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing Paradigm"}
   ],
   "relations": {
     "hasPart": [

@@ -75,7 +75,7 @@ public:: true
       "vc:label": "Computer Vision"
     },
     {
-      "@id": "urn:visionflow:owl:class:infrastructure-domain",
+      "@id": "urn:visionflow:owl:class:infrastructure",
       "vc:label": "Infrastructure Domain"
     },
     {
@@ -297,7 +297,7 @@ public:: true
     },
     {
       "raw": "[[Infrastructure Domain]]",
-      "resolved": "urn:visionflow:owl:class:infrastructure-domain",
+      "resolved": "urn:visionflow:owl:class:infrastructure",
       "kind": "ResolvedLink"
     },
     {

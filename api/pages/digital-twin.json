@@ -305,10 +305,6 @@
       "label": "Cryptography"
     },
     {
-      "slug": "cyber-physical-systems-domain",
-      "label": "Cyber Physical Systems Domain"
-    },
-    {
       "slug": "decentralised-creative-metaverse-framework",
       "label": "Decentralised Creative Metaverse Framework"
     },
@@ -491,10 +487,6 @@
     {
       "slug": "mechanical-component",
       "label": "Mechanical Component"
-    },
-    {
-      "slug": "metaverse-domain",
-      "label": "Metaverse Domain"
     },
     {
       "slug": "mixed-reality",

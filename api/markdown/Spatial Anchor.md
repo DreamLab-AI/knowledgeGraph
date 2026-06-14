@@ -55,7 +55,7 @@ public:: true
       "vc:label": "Coordinate System"
     },
     {
-      "@id": "urn:visionflow:owl:class:interaction-domain",
+      "@id": "urn:visionflow:owl:class:sc-interaction",
       "vc:label": "InteractionDomain"
     },
     {
@@ -184,7 +184,7 @@ public:: true
         "label": "AR Scene Graph"
       },
       {
-        "@id": "urn:ngm:class:spatial-computing-paradigm-system",
+        "@id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing System"
       }
     ]
@@ -270,7 +270,7 @@ public:: true
     },
     {
       "raw": "[[InteractionDomain]]",
-      "resolved": "urn:visionflow:owl:class:interaction-domain",
+      "resolved": "urn:visionflow:owl:class:sc-interaction",
       "kind": "ResolvedLink"
     },
     {

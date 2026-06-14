@@ -23,7 +23,7 @@ public:: true
       "vc:label": "Artificial Intelligence"
     },
     {
-      "@id": "urn:visionflow:owl:class:artificial-intelligence-domain",
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
       "vc:label": "ArtificialIntelligenceDomain"
     }
   ],
@@ -148,7 +148,7 @@ Data lakes differ from traditional data warehouses in that they retain raw, unpr
     },
     {
       "raw": "[[ArtificialIntelligenceDomain]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence-domain",
+      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
       "kind": "ResolvedLink"
     }
   ],

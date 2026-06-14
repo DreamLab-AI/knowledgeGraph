@@ -388,7 +388,7 @@ alias:: BC-0457-decentralized-identifiers
       "vc:label": "IdentifierLayer"
     },
     {
-      "@id": "urn:visionflow:linked:identity-domain",
+      "@id": "urn:visionflow:linked:identity",
       "vc:label": "IdentityDomain"
     },
     {
@@ -812,7 +812,7 @@ alias:: BC-0457-decentralized-identifiers
       "vc:label": "ApplicationLayer"
     },
     {
-      "@id": "urn:visionflow:owl:class:blockchain-domain",
+      "@id": "urn:visionflow:owl:class:blockchain",
       "vc:label": "BlockchainDomain"
     },
     {
@@ -1630,7 +1630,7 @@ alias:: BC-0457-decentralized-identifiers
     },
     {
       "raw": "[[IdentityDomain]]",
-      "resolved": "urn:visionflow:linked:identity-domain",
+      "resolved": "urn:visionflow:linked:identity",
       "kind": "StubLink"
     },
     {
@@ -2160,7 +2160,7 @@ alias:: BC-0457-decentralized-identifiers
     },
     {
       "raw": "[[BlockchainDomain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-domain",
+      "resolved": "urn:visionflow:owl:class:blockchain",
       "kind": "ResolvedLink"
     },
     {

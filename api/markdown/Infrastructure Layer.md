@@ -60,7 +60,7 @@ alias:: InfrastructureLayer
       "vc:label": "Hardware Abstraction Layer (HAL)"
     },
     {
-      "@id": "urn:visionflow:owl:class:infrastructure-domain",
+      "@id": "urn:visionflow:owl:class:infrastructure",
       "vc:label": "InfrastructureDomain"
     },
     {
@@ -147,7 +147,7 @@ alias:: InfrastructureLayer
         "label": "Hardware Abstraction Layer (HAL)"
       },
       {
-        "@id": "urn:ngm:class:spatial-computing-paradigm-layer",
+        "@id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing Layer"
       },
       {
@@ -274,7 +274,7 @@ alias:: InfrastructureLayer
     },
     {
       "raw": "[[InfrastructureDomain]]",
-      "resolved": "urn:visionflow:owl:class:infrastructure-domain",
+      "resolved": "urn:visionflow:owl:class:infrastructure",
       "kind": "ResolvedLink"
     },
     {

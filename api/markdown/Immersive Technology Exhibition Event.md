@@ -58,7 +58,7 @@ elevatedFrom:: [[exhibition]]
       {"@id": "urn:ngm:class:metaverse-core-concepts", "label": "metaverse core concepts"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:spatial-computing-paradigm", "label": "Spatial Computing"},
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
       {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
     ]
   },

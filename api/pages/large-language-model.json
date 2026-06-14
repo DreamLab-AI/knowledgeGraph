@@ -224,10 +224,6 @@
       "label": "Function Calling"
     },
     {
-      "slug": "generative-ai-domain",
-      "label": "Generative AI Domain"
-    },
-    {
       "slug": "lang-chain",
       "label": "LangChain"
     },

@@ -167,10 +167,6 @@
       "label": "Compliance Monitoring"
     },
     {
-      "slug": "cryptographic-domain",
-      "label": "Cryptographic Domain"
-    },
-    {
       "slug": "cryptographic-system",
       "label": "Cryptographic System"
     },

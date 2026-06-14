@@ -187,7 +187,7 @@
       "label": "W3C PROV-O Recommendation"
     },
     {
-      "slug": "infrastructure-domain",
+      "slug": "infrastructure",
       "label": "InfrastructureDomain"
     },
     {
@@ -203,7 +203,7 @@
       "label": "SPARQL Endpoint"
     },
     {
-      "slug": "trust-and-governance-domain",
+      "slug": "ai-governance-and-ethics",
       "label": "TrustAndGovernanceDomain"
     }
   ],

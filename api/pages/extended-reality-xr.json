@@ -87,7 +87,7 @@
         "label": "Immersive Technology"
       },
       {
-        "id": "urn:ngm:class:spatial-computing-paradigm",
+        "id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing"
       }
     ],
@@ -143,7 +143,7 @@
       "label": "Immersive Technology"
     },
     {
-      "slug": "interaction-domain",
+      "slug": "sc-interaction",
       "label": "InteractionDomain"
     },
     {
@@ -195,10 +195,6 @@
     {
       "slug": "driver-software",
       "label": "Driver Software"
-    },
-    {
-      "slug": "metaverse-domain",
-      "label": "Metaverse Domain"
     },
     {
       "slug": "mixed-reality-mr",

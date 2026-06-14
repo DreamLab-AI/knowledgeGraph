@@ -63,10 +63,6 @@
       "label": "Aerial Robot"
     },
     {
-      "slug": "environmental-domain",
-      "label": "Environmental Domain"
-    },
-    {
       "slug": "io-t-sensor-network",
       "label": "IoT Sensor Network"
     }

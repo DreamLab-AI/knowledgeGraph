@@ -152,7 +152,7 @@ alias:: Auto-ML
       "vc:label": "Machine Learning Pipeline"
     },
     {
-      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "@id": "urn:visionflow:owl:class:metaverse",
       "vc:label": "Metaverse Domain"
     },
     {
@@ -160,7 +160,7 @@ alias:: Auto-ML
       "vc:label": "Model Context Protocol"
     },
     {
-      "@id": "urn:visionflow:owl:class:ngm-domain",
+      "@id": "urn:visionflow:owl:class:infrastructure",
       "vc:label": "NGM Domain"
     },
     {
@@ -172,7 +172,7 @@ alias:: Auto-ML
       "vc:label": "Robot Operating System"
     },
     {
-      "@id": "urn:visionflow:owl:class:robotics-domain",
+      "@id": "urn:visionflow:owl:class:robotics",
       "vc:label": "Robotics Domain"
     },
     {
@@ -503,7 +503,7 @@ alias:: Auto-ML
     },
     {
       "raw": "[[Metaverse Domain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "resolved": "urn:visionflow:owl:class:metaverse",
       "kind": "ResolvedLink"
     },
     {
@@ -513,7 +513,7 @@ alias:: Auto-ML
     },
     {
       "raw": "[[NGM Domain]]",
-      "resolved": "urn:visionflow:owl:class:ngm-domain",
+      "resolved": "urn:visionflow:owl:class:infrastructure",
       "kind": "ResolvedLink"
     },
     {
@@ -528,7 +528,7 @@ alias:: Auto-ML
     },
     {
       "raw": "[[Robotics Domain]]",
-      "resolved": "urn:visionflow:owl:class:robotics-domain",
+      "resolved": "urn:visionflow:owl:class:robotics",
       "kind": "ResolvedLink"
     },
     {

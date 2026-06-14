@@ -179,7 +179,7 @@
       "label": "IEEE P2863"
     },
     {
-      "slug": "aiethics-domain",
+      "slug": "ai-governance-and-ethics",
       "label": "AIEthicsDomain"
     },
     {
@@ -200,10 +200,6 @@
     }
   ],
   "backlinks": [
-    {
-      "slug": "ai-governance-domain",
-      "label": "AI Governance Domain"
-    },
     {
       "slug": "ai-liability",
       "label": "AI Liability"

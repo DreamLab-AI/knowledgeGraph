@@ -516,11 +516,11 @@
       "label": "Supply Chain"
     },
     {
-      "slug": "supply-chain-domain",
+      "slug": "supply-chain",
       "label": "SupplyChainDomain"
     },
     {
-      "slug": "sustainability-domain",
+      "slug": "sustainability",
       "label": "SustainabilityDomain"
     },
     {
@@ -572,7 +572,7 @@
       "label": "Hyperledger Fabric"
     },
     {
-      "slug": "infrastructure-domain",
+      "slug": "infrastructure",
       "label": "InfrastructureDomain"
     },
     {
@@ -644,10 +644,6 @@
     {
       "slug": "supply-chain-traceability",
       "label": "Supply Chain Traceability"
-    },
-    {
-      "slug": "sustainability-domain",
-      "label": "Sustainability Domain"
     },
     {
       "slug": "waste-management",

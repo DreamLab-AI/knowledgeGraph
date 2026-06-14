@@ -592,7 +592,7 @@
       "label": "Zakai 1969 Optimal Filtering Diffusion Processes"
     },
     {
-      "slug": "ai-grounded-domain",
+      "slug": "ai-technique",
       "label": "AI-GroundedDomain"
     },
     {
@@ -612,7 +612,7 @@
       "label": "Particle Filter"
     },
     {
-      "slug": "robotics-domain",
+      "slug": "robotics",
       "label": "RoboticsDomain"
     },
     {

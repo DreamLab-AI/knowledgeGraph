@@ -405,7 +405,7 @@
       "label": "Remote Collaboration"
     },
     {
-      "slug": "robotics-domain",
+      "slug": "robotics",
       "label": "RoboticsDomain"
     },
     {
@@ -417,7 +417,7 @@
       "label": "Telecollaboration"
     },
     {
-      "slug": "telecollaboration-domain",
+      "slug": "telecollaboration",
       "label": "TelecollaborationDomain"
     },
     {

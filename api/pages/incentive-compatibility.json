@@ -63,10 +63,6 @@
       "label": "Distributed Decision Making"
     },
     {
-      "slug": "mechanism-design-domain",
-      "label": "Mechanism Design Domain"
-    },
-    {
       "slug": "quadratic-voting",
       "label": "Quadratic Voting"
     }

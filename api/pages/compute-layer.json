@@ -155,7 +155,7 @@
       "label": "Experience Layer"
     },
     {
-      "slug": "infrastructure-domain",
+      "slug": "infrastructure",
       "label": "InfrastructureDomain"
     },
     {
@@ -233,14 +233,6 @@
       "label": "Behavioural Feedback Loop"
     },
     {
-      "slug": "computer-graphics-domain",
-      "label": "Computer Graphics Domain"
-    },
-    {
-      "slug": "deep-learning-domain",
-      "label": "Deep Learning Domain"
-    },
-    {
       "slug": "deep-learning",
       "label": "Deep Learning"
     },
@@ -265,20 +257,12 @@
       "label": "Edge Network"
     },
     {
-      "slug": "embedded-systems-domain",
-      "label": "Embedded Systems Domain"
-    },
-    {
       "slug": "experience-layer",
       "label": "Experience Layer"
     },
     {
       "slug": "extended-reality-xr",
       "label": "Extended Reality (XR)"
-    },
-    {
-      "slug": "generative-ai-domain",
-      "label": "Generative AI Domain"
     },
     {
       "slug": "generative-ai",
@@ -303,10 +287,6 @@
     {
       "slug": "large-language-models",
       "label": "Large Language Models"
-    },
-    {
-      "slug": "machine-learning-domain",
-      "label": "Machine Learning Domain"
     },
     {
       "slug": "metaverse-architecture-stack",

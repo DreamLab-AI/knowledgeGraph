@@ -146,7 +146,7 @@
       "label": "CameraCalibration"
     },
     {
-      "slug": "computer-vision-domain",
+      "slug": "computer-vision",
       "label": "ComputerVisionDomain"
     },
     {
@@ -194,7 +194,7 @@
       "label": "ObjectDetection"
     },
     {
-      "slug": "robotics-domain",
+      "slug": "robotics",
       "label": "RoboticsDomain"
     },
     {

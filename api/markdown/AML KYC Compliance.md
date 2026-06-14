@@ -292,7 +292,7 @@ alias:: AML/KYC Compliance, BC-0457-aml-kyc-compliance, BC-0476-aml-kyc-complian
       "vc:label": "Financial Intelligence Unit"
     },
     {
-      "@id": "urn:visionflow:linked:financial-regulation-domain",
+      "@id": "urn:visionflow:linked:financial-regulation",
       "vc:label": "FinancialRegulationDomain"
     },
     {
@@ -712,7 +712,7 @@ alias:: AML/KYC Compliance, BC-0457-aml-kyc-compliance, BC-0476-aml-kyc-complian
       "vc:label": "Zero-Knowledge KYC"
     },
     {
-      "@id": "urn:visionflow:owl:class:blockchain-domain",
+      "@id": "urn:visionflow:owl:class:blockchain",
       "vc:label": "BlockchainDomain"
     },
     {
@@ -1506,7 +1506,7 @@ alias:: AML/KYC Compliance, BC-0457-aml-kyc-compliance, BC-0476-aml-kyc-complian
     },
     {
       "raw": "[[FinancialRegulationDomain]]",
-      "resolved": "urn:visionflow:linked:financial-regulation-domain",
+      "resolved": "urn:visionflow:linked:financial-regulation",
       "kind": "StubLink"
     },
     {
@@ -2031,7 +2031,7 @@ alias:: AML/KYC Compliance, BC-0457-aml-kyc-compliance, BC-0476-aml-kyc-complian
     },
     {
       "raw": "[[BlockchainDomain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-domain",
+      "resolved": "urn:visionflow:owl:class:blockchain",
       "kind": "ResolvedLink"
     },
     {

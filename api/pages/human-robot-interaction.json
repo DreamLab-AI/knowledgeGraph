@@ -120,7 +120,7 @@
     "standardizedBy": [],
     "partOf": [
       {
-        "id": "urn:ngm:class:robotics-domain",
+        "id": "urn:ngm:class:robotics",
         "label": "Robotics Domain"
       }
     ],
@@ -245,7 +245,7 @@
       "label": "NaturalLanguageProcessing"
     },
     {
-      "slug": "robotics-domain",
+      "slug": "robotics",
       "label": "RoboticsDomain"
     },
     {
@@ -325,10 +325,6 @@
     {
       "slug": "robotic-telepresence",
       "label": "Robotic Telepresence"
-    },
-    {
-      "slug": "robotics-domain",
-      "label": "Robotics Domain"
     },
     {
       "slug": "robotics-platform",

@@ -47,7 +47,7 @@ public:: true
       "vc:label": "Image to Image Translation"
     },
     {
-      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "@id": "urn:visionflow:owl:class:metaverse",
       "vc:label": "MetaverseDomain"
     },
     {
@@ -131,7 +131,7 @@ public:: true
       {"@id": "urn:ngm:class:controlnet", "label": "ControlNet"}
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:metaverse-domain", "label": "MetaverseDomain"},
+      {"@id": "urn:ngm:class:metaverse", "label": "MetaverseDomain"},
       {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
       {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"}
     ]
@@ -205,7 +205,7 @@ public:: true
     },
     {
       "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "resolved": "urn:visionflow:owl:class:metaverse",
       "kind": "ResolvedLink"
     },
     {

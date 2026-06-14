@@ -363,7 +363,7 @@
       "label": "Brokerage-Account Bitcoin Access"
     },
     {
-      "slug": "capital-markets-domain",
+      "slug": "bc-defi-and-economics",
       "label": "CapitalMarketsDomain"
     },
     {
@@ -419,7 +419,7 @@
       "label": "Daily Creation Redemption Mechanism"
     },
     {
-      "slug": "digital-asset-domain",
+      "slug": "digital-asset",
       "label": "DigitalAssetDomain"
     },
     {
@@ -751,7 +751,7 @@
       "label": "Bitcoin"
     },
     {
-      "slug": "blockchain-domain",
+      "slug": "blockchain",
       "label": "BlockchainDomain"
     },
     {

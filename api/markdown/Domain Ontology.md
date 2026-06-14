@@ -188,7 +188,7 @@ alias:: DomainOntology
       "vc:label": "Knowledge Representation Artifact"
     },
     {
-      "@id": "urn:visionflow:linked:knowledge-representation-domain",
+      "@id": "urn:visionflow:linked:knowledge-representation",
       "vc:label": "KnowledgeRepresentationDomain"
     },
     {
@@ -428,7 +428,7 @@ alias:: DomainOntology
       "vc:label": "Decentralised Web"
     },
     {
-      "@id": "urn:visionflow:owl:class:infrastructure-domain",
+      "@id": "urn:visionflow:owl:class:infrastructure",
       "vc:label": "InfrastructureDomain"
     },
     {
@@ -966,7 +966,7 @@ alias:: DomainOntology
     },
     {
       "raw": "[[KnowledgeRepresentationDomain]]",
-      "resolved": "urn:visionflow:linked:knowledge-representation-domain",
+      "resolved": "urn:visionflow:linked:knowledge-representation",
       "kind": "StubLink"
     },
     {
@@ -1266,7 +1266,7 @@ alias:: DomainOntology
     },
     {
       "raw": "[[InfrastructureDomain]]",
-      "resolved": "urn:visionflow:owl:class:infrastructure-domain",
+      "resolved": "urn:visionflow:owl:class:infrastructure",
       "kind": "ResolvedLink"
     },
     {

@@ -20,7 +20,7 @@ elevatedFrom:: [[Constitutional AI]]
       "vc:label": "Constitutional AI"
     },
     {
-      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "@id": "urn:visionflow:owl:class:metaverse",
       "vc:label": "MetaverseDomain"
     }
   ],
@@ -142,7 +142,7 @@ elevatedFrom:: [[Constitutional AI]]
     },
     {
       "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "resolved": "urn:visionflow:owl:class:metaverse",
       "kind": "ResolvedLink"
     }
   ],

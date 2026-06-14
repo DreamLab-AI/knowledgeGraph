@@ -25,7 +25,7 @@ public:: true
   "maturity": "emerging",
   "subClassOf": [{"@id": "urn:ngm:class:ai-governance-and-ethics", "label": "AI Governance and Ethics"}],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:social-impact-assessment-sia", "label": "Social Impact Assessment (SIA)"}, {"@id": "urn:ngm:class:ai-governance-domain", "label": "AI Governance Domain"}]
+    "relatedTo": [{"@id": "urn:ngm:class:social-impact-assessment-sia", "label": "Social Impact Assessment (SIA)"}, {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance Domain"}]
   },
   "quality": 0.72
 }

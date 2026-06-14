@@ -26,8 +26,8 @@ public:: true
   "subClassOf": [{"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:compliance-domain", "label": "Compliance Domain"},
-      {"@id": "urn:ngm:class:regulatory-compliance-domain", "label": "Regulatory Compliance Domain"}
+      {"@id": "urn:ngm:class:compliance", "label": "Compliance Domain"},
+      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance Domain"}
     ]
   },
   "quality": 0.72

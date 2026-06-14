@@ -26,7 +26,7 @@ public:: true
   "subClassOf": [{"@id": "urn:ngm:class:governance", "label": "Governance"}],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:governance-domain", "label": "Governance Domain"},
+      {"@id": "urn:ngm:class:governance", "label": "Governance Domain"},
       {"@id": "urn:ngm:class:governance-framework", "label": "Governance Framework"}
     ]
   },

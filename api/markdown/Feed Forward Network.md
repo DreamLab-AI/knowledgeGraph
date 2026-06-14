@@ -28,7 +28,7 @@ alias:: Feed-Forward Network
       "vc:label": "Calculus"
     },
     {
-      "@id": "urn:visionflow:linked:deep-learning-domain",
+      "@id": "urn:visionflow:linked:deep-learning",
       "vc:label": "DeepLearningDomain"
     },
     {
@@ -156,7 +156,7 @@ alias:: Feed-Forward Network
       "vc:label": "Activation Function"
     },
     {
-      "@id": "urn:visionflow:owl:class:ai-grounded-domain",
+      "@id": "urn:visionflow:owl:class:ai-technique",
       "vc:label": "AI-GroundedDomain"
     },
     {
@@ -530,7 +530,7 @@ alias:: Feed-Forward Network
     },
     {
       "raw": "[[DeepLearningDomain]]",
-      "resolved": "urn:visionflow:linked:deep-learning-domain",
+      "resolved": "urn:visionflow:linked:deep-learning",
       "kind": "StubLink"
     },
     {
@@ -690,7 +690,7 @@ alias:: Feed-Forward Network
     },
     {
       "raw": "[[AI-GroundedDomain]]",
-      "resolved": "urn:visionflow:owl:class:ai-grounded-domain",
+      "resolved": "urn:visionflow:owl:class:ai-technique",
       "kind": "ResolvedLink"
     },
     {

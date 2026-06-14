@@ -43,7 +43,7 @@ public:: true
       "vc:label": "AI Safety Research"
     },
     {
-      "@id": "urn:visionflow:linked:aisafety-domain",
+      "@id": "urn:visionflow:linked:ai-safety",
       "vc:label": "AISafetyDomain"
     },
     {
@@ -471,7 +471,7 @@ public:: true
       "vc:label": "AI Governance"
     },
     {
-      "@id": "urn:visionflow:owl:class:ai-grounded-domain",
+      "@id": "urn:visionflow:owl:class:ai-technique",
       "vc:label": "AI-GroundedDomain"
     },
     {
@@ -925,7 +925,7 @@ public:: true
     },
     {
       "raw": "[[AISafetyDomain]]",
-      "resolved": "urn:visionflow:linked:aisafety-domain",
+      "resolved": "urn:visionflow:linked:ai-safety",
       "kind": "StubLink"
     },
     {
@@ -1460,7 +1460,7 @@ public:: true
     },
     {
       "raw": "[[AI-GroundedDomain]]",
-      "resolved": "urn:visionflow:owl:class:ai-grounded-domain",
+      "resolved": "urn:visionflow:owl:class:ai-technique",
       "kind": "ResolvedLink"
     },
     {

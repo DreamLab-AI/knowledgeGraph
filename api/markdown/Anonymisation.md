@@ -27,7 +27,7 @@ public:: true
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:face-swap", "label": "Face Swap"},
-      {"@id": "urn:ngm:class:privacy-domain", "label": "Privacy Domain"}
+      {"@id": "urn:ngm:class:privacy", "label": "Privacy Domain"}
     ]
   },
   "quality": 0.72

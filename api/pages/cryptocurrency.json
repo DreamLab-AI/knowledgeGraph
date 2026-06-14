@@ -399,7 +399,7 @@
       "label": "Cryptographic Ownership"
     },
     {
-      "slug": "cryptography-domain",
+      "slug": "cryptography",
       "label": "CryptographyDomain"
     },
     {
@@ -491,7 +491,7 @@
       "label": "Financial Inclusion"
     },
     {
-      "slug": "financial-markets-domain",
+      "slug": "bc-defi-and-economics",
       "label": "FinancialMarketsDomain"
     },
     {
@@ -759,7 +759,7 @@
       "label": "Blockchain"
     },
     {
-      "slug": "blockchain-domain",
+      "slug": "blockchain",
       "label": "BlockchainDomain"
     },
     {

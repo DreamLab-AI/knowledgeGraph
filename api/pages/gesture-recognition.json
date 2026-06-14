@@ -20,7 +20,7 @@
     "requires": [],
     "enables": [
       {
-        "id": "urn:ngm:class:spatial-computing-paradigm",
+        "id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing"
       },
       {
@@ -126,10 +126,6 @@
     {
       "slug": "infrared-sensor",
       "label": "InfraredSensor"
-    },
-    {
-      "slug": "interaction-domain",
-      "label": "Interaction Domain"
     },
     {
       "slug": "pose-estimation",

@@ -55,7 +55,7 @@ public:: true
       "vc:label": "Spatial Computing"
     },
     {
-      "@id": "urn:visionflow:owl:class:technology-domain",
+      "@id": "urn:visionflow:owl:class:infrastructure",
       "vc:label": "Technology Domain"
     },
     {
@@ -111,7 +111,7 @@ public:: true
     "hasPart": [
       {"@id": "urn:ngm:class:virtual-world", "label": "Virtual World"},
       {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
-      {"@id": "urn:ngm:class:spatial-computing-paradigm", "label": "Spatial Computing"},
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
       {"@id": "urn:ngm:class:avatar-system", "label": "Avatar System"},
       {"@id": "urn:ngm:class:digital-asset", "label": "Digital Asset"},
       {"@id": "urn:ngm:class:virtual-economy", "label": "Virtual Economy"},
@@ -201,7 +201,7 @@ public:: true
     },
     {
       "raw": "[[Technology Domain]]",
-      "resolved": "urn:visionflow:owl:class:technology-domain",
+      "resolved": "urn:visionflow:owl:class:infrastructure",
       "kind": "ResolvedLink"
     },
     {

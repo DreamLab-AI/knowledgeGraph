@@ -303,7 +303,7 @@
       "label": "Embedded Systems"
     },
     {
-      "slug": "embedded-systems-domain",
+      "slug": "embedded-systems",
       "label": "EmbeddedSystemsDomain"
     },
     {
@@ -575,7 +575,7 @@
       "label": "Proprioceptive Sensor"
     },
     {
-      "slug": "robotics-domain",
+      "slug": "robotics",
       "label": "RoboticsDomain"
     },
     {

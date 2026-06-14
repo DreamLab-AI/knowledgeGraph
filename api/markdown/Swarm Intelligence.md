@@ -27,7 +27,7 @@ public:: true
       "vc:label": "Distributed Systems"
     },
     {
-      "@id": "urn:visionflow:linked:autonomous-systems-domain",
+      "@id": "urn:visionflow:linked:robo-navigation-and-planning",
       "vc:label": "Autonomous Systems Domain"
     }
   ],
@@ -59,7 +59,7 @@ public:: true
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": {
-    "@id": "urn:ngm:class:autonomous-systems-domain",
+    "@id": "urn:ngm:class:robo-navigation-and-planning",
     "label": "Autonomous Systems Domain"
   },
   "relations": {
@@ -236,7 +236,7 @@ public:: true
     },
     {
       "raw": "[[Autonomous Systems Domain]]",
-      "resolved": "urn:visionflow:linked:autonomous-systems-domain",
+      "resolved": "urn:visionflow:linked:robo-navigation-and-planning",
       "kind": "ResolvedLink"
     }
   ],

@@ -29,7 +29,7 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:embedded-systems-domain",
+        "id": "urn:ngm:class:embedded-systems",
         "label": "Embedded Systems Domain"
       },
       {
@@ -43,10 +43,6 @@
     {
       "slug": "control-system",
       "label": "Control System"
-    },
-    {
-      "slug": "embedded-systems-domain",
-      "label": "Embedded Systems Domain"
     }
   ]
 }

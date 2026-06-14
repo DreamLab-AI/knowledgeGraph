@@ -392,7 +392,7 @@
       "label": "Cross-Border Identity"
     },
     {
-      "slug": "cryptography-domain",
+      "slug": "cryptography",
       "label": "CryptographyDomain"
     },
     {
@@ -468,7 +468,7 @@
       "label": "Hyperledger Foundation"
     },
     {
-      "slug": "identity-domain",
+      "slug": "identity",
       "label": "IdentityDomain"
     },
     {
@@ -536,7 +536,7 @@
       "label": "Portable Identity"
     },
     {
-      "slug": "privacy-domain",
+      "slug": "privacy",
       "label": "PrivacyDomain"
     },
     {
@@ -668,7 +668,7 @@
       "label": "Bitcoin"
     },
     {
-      "slug": "blockchain-domain",
+      "slug": "blockchain",
       "label": "BlockchainDomain"
     },
     {
@@ -800,10 +800,6 @@
     {
       "slug": "hyperledger-indy",
       "label": "Hyperledger Indy"
-    },
-    {
-      "slug": "identity-domain",
-      "label": "Identity Domain"
     },
     {
       "slug": "identity-management-system",

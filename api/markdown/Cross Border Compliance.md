@@ -111,7 +111,7 @@ public:: true
       "vc:label": "Compliance Architecture"
     },
     {
-      "@id": "urn:visionflow:linked:compliance-domain",
+      "@id": "urn:visionflow:linked:compliance",
       "vc:label": "ComplianceDomain"
     },
     {
@@ -247,7 +247,7 @@ public:: true
       "vc:label": "Global Market Access"
     },
     {
-      "@id": "urn:visionflow:linked:governance-domain",
+      "@id": "urn:visionflow:linked:governance",
       "vc:label": "GovernanceDomain"
     },
     {
@@ -375,7 +375,7 @@ public:: true
       "vc:label": "RegTech"
     },
     {
-      "@id": "urn:visionflow:linked:regulation-domain",
+      "@id": "urn:visionflow:linked:regulation",
       "vc:label": "RegulationDomain"
     },
     {
@@ -918,7 +918,7 @@ public:: true
     },
     {
       "raw": "[[ComplianceDomain]]",
-      "resolved": "urn:visionflow:linked:compliance-domain",
+      "resolved": "urn:visionflow:linked:compliance",
       "kind": "StubLink"
     },
     {
@@ -1088,7 +1088,7 @@ public:: true
     },
     {
       "raw": "[[GovernanceDomain]]",
-      "resolved": "urn:visionflow:linked:governance-domain",
+      "resolved": "urn:visionflow:linked:governance",
       "kind": "StubLink"
     },
     {
@@ -1248,7 +1248,7 @@ public:: true
     },
     {
       "raw": "[[RegulationDomain]]",
-      "resolved": "urn:visionflow:linked:regulation-domain",
+      "resolved": "urn:visionflow:linked:regulation",
       "kind": "StubLink"
     },
     {

@@ -668,7 +668,7 @@
       "label": "Financial Intelligence Unit"
     },
     {
-      "slug": "financial-regulation-domain",
+      "slug": "financial-regulation",
       "label": "FinancialRegulationDomain"
     },
     {
@@ -1088,7 +1088,7 @@
       "label": "Zero-Knowledge KYC"
     },
     {
-      "slug": "blockchain-domain",
+      "slug": "blockchain",
       "label": "BlockchainDomain"
     },
     {

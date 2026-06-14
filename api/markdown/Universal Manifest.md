@@ -39,7 +39,7 @@ public:: true
       "vc:label": "Identity Credentials"
     },
     {
-      "@id": "urn:visionflow:linked:interoperability-domain",
+      "@id": "urn:visionflow:linked:interoperability",
       "vc:label": "Interoperability Domain"
     },
     {
@@ -107,7 +107,7 @@ public:: true
       "vc:label": "Middleware Layer"
     },
     {
-      "@id": "urn:visionflow:owl:class:trust-and-governance-domain",
+      "@id": "urn:visionflow:owl:class:ai-governance-and-ethics",
       "vc:label": "Trust And Governance Domain"
     }
   ],
@@ -276,7 +276,7 @@ public:: true
     },
     {
       "raw": "[[Interoperability Domain]]",
-      "resolved": "urn:visionflow:linked:interoperability-domain",
+      "resolved": "urn:visionflow:linked:interoperability",
       "kind": "StubLink"
     },
     {
@@ -361,7 +361,7 @@ public:: true
     },
     {
       "raw": "[[Trust And Governance Domain]]",
-      "resolved": "urn:visionflow:owl:class:trust-and-governance-domain",
+      "resolved": "urn:visionflow:owl:class:ai-governance-and-ethics",
       "kind": "ResolvedLink"
     }
   ],

@@ -376,7 +376,7 @@
       "label": "CryptographicLayer"
     },
     {
-      "slug": "cryptography-domain",
+      "slug": "cryptography",
       "label": "CryptographyDomain"
     },
     {
@@ -452,7 +452,7 @@
       "label": "Indistinguishability"
     },
     {
-      "slug": "information-security-domain",
+      "slug": "information-security",
       "label": "InformationSecurityDomain"
     },
     {
@@ -640,7 +640,7 @@
       "label": "Bitcoin"
     },
     {
-      "slug": "blockchain-domain",
+      "slug": "blockchain",
       "label": "BlockchainDomain"
     },
     {
@@ -724,10 +724,6 @@
     {
       "slug": "cryptographic-protocol",
       "label": "Cryptographic Protocol"
-    },
-    {
-      "slug": "cryptography-domain",
-      "label": "Cryptography Domain"
     },
     {
       "slug": "cryptography-security-and-privacy",

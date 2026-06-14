@@ -168,6 +168,10 @@
       "label": "ADR-012"
     },
     {
+      "slug": "ai-diagram-tools",
+      "label": "AI Diagram Tools"
+    },
+    {
       "slug": "ai-user",
       "label": "AI User"
     },
@@ -176,12 +180,32 @@
       "label": "API"
     },
     {
+      "slug": "agent-frameworks",
+      "label": "Agent Frameworks"
+    },
+    {
+      "slug": "agile-software-development",
+      "label": "Agile Software Development"
+    },
+    {
+      "slug": "cli-multi-agent-systems",
+      "label": "CLI Multi-Agent Systems"
+    },
+    {
       "slug": "code-review",
       "label": "Code Review"
     },
     {
       "slug": "computer-science",
       "label": "Computer Science"
+    },
+    {
+      "slug": "diagrams-as-code",
+      "label": "Diagrams as Code"
+    },
+    {
+      "slug": "gpt-engineer",
+      "label": "GPT Engineer"
     },
     {
       "slug": "git",
@@ -204,12 +228,20 @@
       "label": "Programming Paradigm"
     },
     {
+      "slug": "remote-pair-programming",
+      "label": "Remote Pair Programming"
+    },
+    {
       "slug": "robotics-core-concepts",
       "label": "RoboticsCoreConcepts"
     },
     {
       "slug": "scene-understanding",
       "label": "Scene Understanding"
+    },
+    {
+      "slug": "state-machine",
+      "label": "State Machine"
     },
     {
       "slug": "task-specific-head",

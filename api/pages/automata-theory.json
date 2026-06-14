@@ -29,7 +29,7 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:formal-methods-domain",
+        "id": "urn:ngm:class:ai-research-area",
         "label": "Formal Methods Domain"
       },
       {
@@ -40,10 +40,6 @@
   },
   "wikilinks": [],
   "backlinks": [
-    {
-      "slug": "formal-methods-domain",
-      "label": "Formal Methods Domain"
-    },
     {
       "slug": "state-machine",
       "label": "State Machine"

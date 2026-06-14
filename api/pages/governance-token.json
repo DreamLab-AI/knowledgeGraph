@@ -539,7 +539,7 @@
       "label": "DeFi"
     },
     {
-      "slug": "de-fi-domain",
+      "slug": "bc-defi-and-economics",
       "label": "DeFiDomain"
     },
     {
@@ -563,7 +563,7 @@
       "label": "Delegation Mechanism"
     },
     {
-      "slug": "digital-asset-domain",
+      "slug": "digital-asset",
       "label": "DigitalAssetDomain"
     },
     {
@@ -699,7 +699,7 @@
       "label": "Gnosis Safe"
     },
     {
-      "slug": "governance-domain",
+      "slug": "governance",
       "label": "GovernanceDomain"
     },
     {
@@ -1227,7 +1227,7 @@
       "label": "ApplicationLayer"
     },
     {
-      "slug": "blockchain-domain",
+      "slug": "blockchain",
       "label": "BlockchainDomain"
     },
     {

@@ -144,7 +144,7 @@ alias:: CrossChainBridge
       "vc:label": "Cryptographic Proof System"
     },
     {
-      "@id": "urn:visionflow:linked:cryptography-domain",
+      "@id": "urn:visionflow:linked:cryptography",
       "vc:label": "CryptographyDomain"
     },
     {
@@ -152,7 +152,7 @@ alias:: CrossChainBridge
       "vc:label": "Custodial Asset Transfer"
     },
     {
-      "@id": "urn:visionflow:linked:de-fi-domain",
+      "@id": "urn:visionflow:linked:bc-defi-and-economics",
       "vc:label": "DeFiDomain"
     },
     {
@@ -220,7 +220,7 @@ alias:: CrossChainBridge
       "vc:label": "Intent-Based Bridge"
     },
     {
-      "@id": "urn:visionflow:linked:interoperability-domain",
+      "@id": "urn:visionflow:linked:interoperability",
       "vc:label": "InteroperabilityDomain"
     },
     {
@@ -432,7 +432,7 @@ alias:: CrossChainBridge
       "vc:label": "Atomic Swap"
     },
     {
-      "@id": "urn:visionflow:owl:class:blockchain-domain",
+      "@id": "urn:visionflow:owl:class:blockchain",
       "vc:label": "BlockchainDomain"
     },
     {
@@ -971,7 +971,7 @@ alias:: CrossChainBridge
     },
     {
       "raw": "[[CryptographyDomain]]",
-      "resolved": "urn:visionflow:linked:cryptography-domain",
+      "resolved": "urn:visionflow:linked:cryptography",
       "kind": "StubLink"
     },
     {
@@ -981,7 +981,7 @@ alias:: CrossChainBridge
     },
     {
       "raw": "[[DeFiDomain]]",
-      "resolved": "urn:visionflow:linked:de-fi-domain",
+      "resolved": "urn:visionflow:linked:bc-defi-and-economics",
       "kind": "StubLink"
     },
     {
@@ -1066,7 +1066,7 @@ alias:: CrossChainBridge
     },
     {
       "raw": "[[InteroperabilityDomain]]",
-      "resolved": "urn:visionflow:linked:interoperability-domain",
+      "resolved": "urn:visionflow:linked:interoperability",
       "kind": "StubLink"
     },
     {
@@ -1331,7 +1331,7 @@ alias:: CrossChainBridge
     },
     {
       "raw": "[[BlockchainDomain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-domain",
+      "resolved": "urn:visionflow:owl:class:blockchain",
       "kind": "ResolvedLink"
     },
     {

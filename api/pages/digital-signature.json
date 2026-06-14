@@ -388,7 +388,7 @@
       "label": "Cryptographically Secure Random Number Generator"
     },
     {
-      "slug": "cryptography-domain",
+      "slug": "cryptography",
       "label": "CryptographyDomain"
     },
     {
@@ -508,7 +508,7 @@
       "label": "in-toto"
     },
     {
-      "slug": "information-security-domain",
+      "slug": "information-security",
       "label": "InformationSecurityDomain"
     },
     {
@@ -812,7 +812,7 @@
       "label": "Bitcoin"
     },
     {
-      "slug": "blockchain-domain",
+      "slug": "blockchain",
       "label": "BlockchainDomain"
     },
     {
@@ -956,10 +956,6 @@
     {
       "slug": "cryptographic-system",
       "label": "Cryptographic System"
-    },
-    {
-      "slug": "cryptography-domain",
-      "label": "Cryptography Domain"
     },
     {
       "slug": "cryptography-security-and-privacy",

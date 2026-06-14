@@ -100,7 +100,7 @@
       "label": "European Commission Digital Decade 2030"
     },
     {
-      "slug": "interoperability-domain",
+      "slug": "interoperability",
       "label": "InteroperabilityDomain"
     },
     {
@@ -136,7 +136,7 @@
       "label": "Metaverse Content Pipeline"
     },
     {
-      "slug": "metaverse-domain",
+      "slug": "metaverse",
       "label": "MetaverseDomain"
     }
   ],

@@ -34,7 +34,7 @@ public:: true
       {"@id": "urn:ngm:class:voxel-grid", "label": "Voxel Grid"}
     ],
     "enables": [
-      {"@id": "urn:ngm:class:spatial-computing-paradigm", "label": "Spatial Computing"},
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
       {"@id": "urn:ngm:class:3-d-gaussian-splatting", "label": "3D Gaussian Splatting"},
       {"@id": "urn:ngm:class:ne-rf", "label": "NeRF"},
       {"@id": "urn:ngm:class:simultaneous-localisation-and-mapping", "label": "Simultaneous Localisation and Mapping"},

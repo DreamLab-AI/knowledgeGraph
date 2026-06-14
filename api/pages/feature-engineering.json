@@ -163,10 +163,6 @@
       "label": "Hyper personalisation"
     },
     {
-      "slug": "machine-learning-domain",
-      "label": "Machine Learning Domain"
-    },
-    {
       "slug": "machine-learning-pipeline",
       "label": "Machine Learning Pipeline"
     }

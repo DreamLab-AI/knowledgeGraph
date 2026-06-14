@@ -360,7 +360,7 @@
       "label": "Bitcoin Lightning Network"
     },
     {
-      "slug": "capital-markets-domain",
+      "slug": "bc-defi-and-economics",
       "label": "CapitalMarketsDomain"
     },
     {
@@ -568,7 +568,7 @@
       "label": "Regenerative Finance"
     },
     {
-      "slug": "regulatory-domain",
+      "slug": "infra-legal-and-regulatory",
       "label": "RegulatoryDomain"
     },
     {
@@ -596,7 +596,7 @@
       "label": "SFDR Disclosure"
     },
     {
-      "slug": "sustainability-domain",
+      "slug": "sustainability",
       "label": "SustainabilityDomain"
     },
     {
@@ -656,7 +656,7 @@
       "label": "Bitcoin Mining"
     },
     {
-      "slug": "blockchain-domain",
+      "slug": "blockchain",
       "label": "BlockchainDomain"
     },
     {

@@ -29,7 +29,7 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:manufacturing-domain",
+        "id": "urn:ngm:class:robo-actuation-and-control",
         "label": "Manufacturing Domain"
       },
       {
@@ -43,10 +43,6 @@
     {
       "slug": "digital-transformation",
       "label": "Digital Transformation"
-    },
-    {
-      "slug": "manufacturing-domain",
-      "label": "Manufacturing Domain"
     }
   ]
 }

@@ -144,6 +144,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "aml-kyc-compliance",
+      "label": "AML KYC Compliance"
+    },
+    {
       "slug": "basel-iii",
       "label": "Basel III"
     },
@@ -154,6 +158,14 @@
     {
       "slug": "cbdc-frameworks",
       "label": "CBDC Frameworks"
+    },
+    {
+      "slug": "cbdc-frameworks",
+      "label": "CBDC Frameworks"
+    },
+    {
+      "slug": "cbdcs",
+      "label": "CBDCs"
     },
     {
       "slug": "cbdcs",
@@ -178,6 +190,10 @@
     {
       "slug": "crypto-regulation",
       "label": "Crypto Regulation"
+    },
+    {
+      "slug": "esg-reporting",
+      "label": "ESG Reporting"
     },
     {
       "slug": "fsa",
@@ -242,6 +258,10 @@
     {
       "slug": "securities-regulation",
       "label": "Securities Regulation"
+    },
+    {
+      "slug": "stablecoin-regulation",
+      "label": "Stablecoin Regulation"
     },
     {
       "slug": "stablecoin-regulation",

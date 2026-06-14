@@ -23,7 +23,7 @@ public:: true
       "vc:label": "Metaverse"
     },
     {
-      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "@id": "urn:visionflow:owl:class:metaverse",
       "vc:label": "MetaverseDomain"
     },
     {
@@ -80,8 +80,8 @@ public:: true
       {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:metaverse-domain", "label": "Metaverse Domain"},
-      {"@id": "urn:ngm:class:robotics-domain", "label": "Robotics Domain"},
+      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse Domain"},
+      {"@id": "urn:ngm:class:robotics", "label": "Robotics Domain"},
       {"@id": "urn:ngm:class:metaverse-ontology", "label": "Metaverse Ontology"}
     ]
   },
@@ -119,7 +119,7 @@ public:: true
     },
     {
       "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "resolved": "urn:visionflow:owl:class:metaverse",
       "kind": "ResolvedLink"
     },
     {

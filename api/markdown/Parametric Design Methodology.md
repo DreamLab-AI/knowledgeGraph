@@ -63,7 +63,7 @@ elevatedFrom:: [[Parametric]]
       {"@id": "urn:ngm:class:procedural-generation", "label": "Procedural Generation"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:spatial-computing-paradigm", "label": "Spatial Computing"},
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
       {"@id": "urn:ngm:class:rendering-engine", "label": "Rendering Engine"}
     ]
   },

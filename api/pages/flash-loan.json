@@ -159,10 +159,6 @@
       "label": "Smart Contract"
     },
     {
-      "slug": "token-economics-domain",
-      "label": "Token Economics Domain"
-    },
-    {
       "slug": "variational-autoencoders",
       "label": "Variational Autoencoders"
     }

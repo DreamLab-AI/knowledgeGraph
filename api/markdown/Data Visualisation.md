@@ -103,7 +103,7 @@ public:: true
       {"@id": "urn:ngm:class:text-report", "label": "Text Report"}
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:spatial-computing-paradigm", "label": "Spatial Computing"},
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
       {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
       {"@id": "urn:ngm:class:explainable-ai", "label": "Explainable AI"}
     ],

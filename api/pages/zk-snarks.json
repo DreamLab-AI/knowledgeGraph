@@ -81,10 +81,6 @@
       "label": "Blockchain Oracle"
     },
     {
-      "slug": "cryptographic-domain",
-      "label": "Cryptographic Domain"
-    },
-    {
       "slug": "privacy-preserving-blockchain",
       "label": "Privacy Preserving Blockchain"
     },

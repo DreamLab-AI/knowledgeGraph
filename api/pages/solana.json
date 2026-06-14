@@ -180,10 +180,6 @@
       "label": "Cryptocurrency"
     },
     {
-      "slug": "cryptographic-domain",
-      "label": "Cryptographic Domain"
-    },
-    {
       "slug": "dao-tooling",
       "label": "DAO Tooling"
     },
@@ -238,10 +234,6 @@
     {
       "slug": "telecollaboration-and-telepresence",
       "label": "Telecollaboration and Telepresence"
-    },
-    {
-      "slug": "token-economics-domain",
-      "label": "Token Economics Domain"
     },
     {
       "slug": "token",

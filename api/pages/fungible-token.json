@@ -150,10 +150,6 @@
       "label": "BRC-20"
     },
     {
-      "slug": "digital-asset-domain",
-      "label": "Digital Asset Domain"
-    },
-    {
       "slug": "erc20-token",
       "label": "ERC20 Token"
     },

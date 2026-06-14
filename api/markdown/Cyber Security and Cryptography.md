@@ -59,7 +59,7 @@ public:: true
       "vc:label": "Cryptographic Primitives"
     },
     {
-      "@id": "urn:visionflow:linked:cryptography-domain",
+      "@id": "urn:visionflow:linked:cryptography",
       "vc:label": "CryptographyDomain"
     },
     {
@@ -211,7 +211,7 @@ public:: true
       "vc:label": "Privacy Enhancing Technologies"
     },
     {
-      "@id": "urn:visionflow:linked:risk-management-domain",
+      "@id": "urn:visionflow:linked:risk-management",
       "vc:label": "RiskManagementDomain"
     },
     {
@@ -223,7 +223,7 @@ public:: true
       "vc:label": "Secure Enclave"
     },
     {
-      "@id": "urn:visionflow:linked:security-domain",
+      "@id": "urn:visionflow:linked:security",
       "vc:label": "SecurityDomain"
     },
     {
@@ -335,7 +335,7 @@ public:: true
       "vc:label": "Information Security"
     },
     {
-      "@id": "urn:visionflow:owl:class:infrastructure-domain",
+      "@id": "urn:visionflow:owl:class:infrastructure",
       "vc:label": "InfrastructureDomain"
     },
     {
@@ -803,7 +803,7 @@ public:: true
     },
     {
       "raw": "[[CryptographyDomain]]",
-      "resolved": "urn:visionflow:linked:cryptography-domain",
+      "resolved": "urn:visionflow:linked:cryptography",
       "kind": "StubLink"
     },
     {
@@ -993,7 +993,7 @@ public:: true
     },
     {
       "raw": "[[RiskManagementDomain]]",
-      "resolved": "urn:visionflow:linked:risk-management-domain",
+      "resolved": "urn:visionflow:linked:risk-management",
       "kind": "StubLink"
     },
     {
@@ -1008,7 +1008,7 @@ public:: true
     },
     {
       "raw": "[[SecurityDomain]]",
-      "resolved": "urn:visionflow:linked:security-domain",
+      "resolved": "urn:visionflow:linked:security",
       "kind": "StubLink"
     },
     {
@@ -1148,7 +1148,7 @@ public:: true
     },
     {
       "raw": "[[InfrastructureDomain]]",
-      "resolved": "urn:visionflow:owl:class:infrastructure-domain",
+      "resolved": "urn:visionflow:owl:class:infrastructure",
       "kind": "ResolvedLink"
     },
     {

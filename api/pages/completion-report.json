@@ -47,7 +47,7 @@
         "label": "Governance Framework"
       },
       {
-        "id": "urn:ngm:class:metaverse-domain",
+        "id": "urn:ngm:class:metaverse",
         "label": "Metaverse Domain"
       }
     ]
@@ -90,7 +90,7 @@
       "label": "Work Package"
     },
     {
-      "slug": "metaverse-domain",
+      "slug": "metaverse",
       "label": "MetaverseDomain"
     }
   ],

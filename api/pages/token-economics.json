@@ -166,7 +166,7 @@
       "label": "Value Capture"
     },
     {
-      "slug": "blockchain-domain",
+      "slug": "blockchain",
       "label": "BlockchainDomain"
     },
     {
@@ -192,6 +192,10 @@
   ],
   "backlinks": [
     {
+      "slug": "base-fee",
+      "label": "Base Fee"
+    },
+    {
       "slug": "bittensor",
       "label": "Bittensor"
     },
@@ -200,8 +204,20 @@
       "label": "Blockchain"
     },
     {
+      "slug": "burning-mechanism",
+      "label": "Burning Mechanism"
+    },
+    {
+      "slug": "circulating-supply",
+      "label": "Circulating Supply"
+    },
+    {
       "slug": "climate-action-dao",
       "label": "Climate Action DAO"
+    },
+    {
+      "slug": "coin",
+      "label": "Coin"
     },
     {
       "slug": "dao-analytics",
@@ -212,12 +228,68 @@
       "label": "Decentralized Governance"
     },
     {
+      "slug": "deflationary-token",
+      "label": "Deflationary Token"
+    },
+    {
       "slug": "digital-economy",
       "label": "Digital Economy"
     },
     {
-      "slug": "economics-domain",
-      "label": "Economics Domain"
+      "slug": "economic-security",
+      "label": "Economic Security"
+    },
+    {
+      "slug": "emission-schedule",
+      "label": "Emission Schedule"
+    },
+    {
+      "slug": "fee-market",
+      "label": "Fee Market"
+    },
+    {
+      "slug": "gas-limit",
+      "label": "Gas Limit"
+    },
+    {
+      "slug": "gas-price",
+      "label": "Gas Price"
+    },
+    {
+      "slug": "gas",
+      "label": "Gas"
+    },
+    {
+      "slug": "halving",
+      "label": "Halving"
+    },
+    {
+      "slug": "incentive-alignment",
+      "label": "Incentive Alignment"
+    },
+    {
+      "slug": "inflation",
+      "label": "Inflation"
+    },
+    {
+      "slug": "inflationary-token",
+      "label": "Inflationary Token"
+    },
+    {
+      "slug": "market-capitalization",
+      "label": "Market Capitalization"
+    },
+    {
+      "slug": "minting",
+      "label": "Minting"
+    },
+    {
+      "slug": "native-token",
+      "label": "Native Token"
+    },
+    {
+      "slug": "priority-fee",
+      "label": "Priority Fee"
     },
     {
       "slug": "proof-of-stake-sustainability",
@@ -228,8 +300,20 @@
       "label": "Sablier"
     },
     {
+      "slug": "supply-cap",
+      "label": "Supply Cap"
+    },
+    {
       "slug": "token-engineering",
       "label": "Token Engineering"
+    },
+    {
+      "slug": "total-supply",
+      "label": "Total Supply"
+    },
+    {
+      "slug": "transaction-fee",
+      "label": "Transaction Fee"
     }
   ]
 }

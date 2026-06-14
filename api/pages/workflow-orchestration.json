@@ -29,7 +29,7 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:agentic-systems-domain",
+        "id": "urn:ngm:class:ai-application",
         "label": "Agentic Systems Domain"
       },
       {
@@ -40,10 +40,6 @@
   },
   "wikilinks": [],
   "backlinks": [
-    {
-      "slug": "agentic-systems-domain",
-      "label": "Agentic Systems Domain"
-    },
     {
       "slug": "function-calling",
       "label": "Function Calling"

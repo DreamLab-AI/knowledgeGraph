@@ -148,7 +148,7 @@
   },
   "wikilinks": [
     {
-      "slug": "artificial-intelligence-domain",
+      "slug": "artificial-intelligence",
       "label": "ArtificialIntelligenceDomain"
     }
   ],
@@ -156,10 +156,6 @@
     {
       "slug": "knowledge-graphs",
       "label": "Knowledge Graphs"
-    },
-    {
-      "slug": "semantic-web-domain",
-      "label": "Semantic Web Domain"
     }
   ]
 }

@@ -115,7 +115,7 @@ public:: true
       "vc:label": "Localization"
     },
     {
-      "@id": "urn:visionflow:owl:class:metaverse-domain",
+      "@id": "urn:visionflow:owl:class:metaverse",
       "vc:label": "MetaverseDomain"
     },
     {
@@ -187,7 +187,7 @@ public:: true
       {"@id": "urn:ngm:class:kalman-filter", "label": "Kalman Filter"}
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:spatial-computing-paradigm", "label": "Spatial Computing"}
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
     ],
     "dependsOn": [
       {"@id": "urn:ngm:class:inertial-measurement-unit", "label": "Inertial Measurement Unit"},
@@ -197,7 +197,7 @@ public:: true
       {"@id": "urn:ngm:class:gps-navigation", "label": "GPS Navigation"}
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:metaverse-domain", "label": "Metaverse Domain"},
+      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse Domain"},
       {"@id": "urn:ngm:class:virtual-environment", "label": "Virtual Environment"}
     ],
     "relatedTo": [
@@ -359,7 +359,7 @@ public:: true
     },
     {
       "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse-domain",
+      "resolved": "urn:visionflow:owl:class:metaverse",
       "kind": "ResolvedLink"
     },
     {

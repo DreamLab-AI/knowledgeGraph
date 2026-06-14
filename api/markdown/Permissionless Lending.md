@@ -25,7 +25,7 @@ public:: true
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:bc-defi-and-economics", "label": "Blockchain DeFi and Economics"}],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:decentralised-finance-domain", "label": "Decentralised Finance Domain"}, {"@id": "urn:ngm:class:decentralized-finance-de-fi", "label": "Decentralized Finance (DeFi)"}]
+    "relatedTo": [{"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance Domain"}, {"@id": "urn:ngm:class:decentralized-finance-de-fi", "label": "Decentralized Finance (DeFi)"}]
   },
   "quality": 0.72
 }

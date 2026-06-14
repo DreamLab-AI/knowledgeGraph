@@ -15,7 +15,7 @@ public:: true
       "vc:label": "Accent Adaptation"
     },
     {
-      "@id": "urn:visionflow:linked:accessibility-domain",
+      "@id": "urn:visionflow:linked:accessibility",
       "vc:label": "AccessibilityDomain"
     },
     {
@@ -119,7 +119,7 @@ public:: true
       "vc:label": "Distributed Collaboration"
     },
     {
-      "@id": "urn:visionflow:linked:distributed-collaboration-domain",
+      "@id": "urn:visionflow:linked:distributed-collaboration",
       "vc:label": "DistributedCollaborationDomain"
     },
     {
@@ -243,7 +243,7 @@ public:: true
       "vc:label": "Multilingual Video Conferencing"
     },
     {
-      "@id": "urn:visionflow:linked:natural-language-processing-domain",
+      "@id": "urn:visionflow:linked:natural-language-processing",
       "vc:label": "NaturalLanguageProcessingDomain"
     },
     {
@@ -764,7 +764,7 @@ public:: true
     },
     {
       "raw": "[[AccessibilityDomain]]",
-      "resolved": "urn:visionflow:linked:accessibility-domain",
+      "resolved": "urn:visionflow:linked:accessibility",
       "kind": "StubLink"
     },
     {
@@ -894,7 +894,7 @@ public:: true
     },
     {
       "raw": "[[DistributedCollaborationDomain]]",
-      "resolved": "urn:visionflow:linked:distributed-collaboration-domain",
+      "resolved": "urn:visionflow:linked:distributed-collaboration",
       "kind": "StubLink"
     },
     {
@@ -1049,7 +1049,7 @@ public:: true
     },
     {
       "raw": "[[NaturalLanguageProcessingDomain]]",
-      "resolved": "urn:visionflow:linked:natural-language-processing-domain",
+      "resolved": "urn:visionflow:linked:natural-language-processing",
       "kind": "StubLink"
     },
     {

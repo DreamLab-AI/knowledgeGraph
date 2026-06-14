@@ -44,7 +44,7 @@ alias:: BC-0441-supply-chain-traceability, BC-0446-supply-chain-traceability
       "vc:label": "Counterfeiting"
     },
     {
-      "@id": "urn:visionflow:owl:class:blockchain-domain",
+      "@id": "urn:visionflow:owl:class:blockchain",
       "vc:label": "BlockchainDomain"
     },
     {
@@ -206,7 +206,7 @@ alias:: BC-0441-supply-chain-traceability, BC-0446-supply-chain-traceability
     },
     {
       "raw": "[[BlockchainDomain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-domain",
+      "resolved": "urn:visionflow:owl:class:blockchain",
       "kind": "ResolvedLink"
     },
     {

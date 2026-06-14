@@ -195,10 +195,6 @@
       "label": "Mistral"
     },
     {
-      "slug": "natural-language-processing-domain",
-      "label": "Natural Language Processing Domain"
-    },
-    {
       "slug": "open-ai-agents-sdk",
       "label": "OpenAI Agents SDK"
     },

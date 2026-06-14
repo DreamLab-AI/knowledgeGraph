@@ -23,7 +23,7 @@ public:: true
       "vc:label": "Robotics"
     },
     {
-      "@id": "urn:visionflow:owl:class:robotics-domain",
+      "@id": "urn:visionflow:owl:class:robotics",
       "vc:label": "RoboticsDomain"
     }
   ],
@@ -68,7 +68,7 @@ public:: true
   "relations": {
     "partOf": [
       {"@id": "urn:ngm:class:swarm-robotics", "label": "Swarm Robotics"},
-      {"@id": "urn:ngm:class:robotics-domain", "label": "Robotics Domain"}
+      {"@id": "urn:ngm:class:robotics", "label": "Robotics Domain"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:collective-intelligence-system", "label": "Collective Intelligence System"},
@@ -115,7 +115,7 @@ public:: true
     },
     {
       "raw": "[[RoboticsDomain]]",
-      "resolved": "urn:visionflow:owl:class:robotics-domain",
+      "resolved": "urn:visionflow:owl:class:robotics",
       "kind": "ResolvedLink"
     }
   ],

@@ -42,7 +42,7 @@
         "label": "Edge Computing"
       },
       {
-        "id": "urn:ngm:class:spatial-computing-paradigm-layer",
+        "id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing Layer"
       },
       {
@@ -57,7 +57,7 @@
     "requires": [],
     "enables": [
       {
-        "id": "urn:ngm:class:spatial-computing-paradigm-system",
+        "id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing System"
       },
       {

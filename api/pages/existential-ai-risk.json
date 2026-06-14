@@ -156,10 +156,6 @@
       "label": "AI Safety Institute"
     },
     {
-      "slug": "aisafety-domain",
-      "label": "AISafetyDomain"
-    },
-    {
       "slug": "sociotechnical-risk",
       "label": "Sociotechnical Risk"
     }

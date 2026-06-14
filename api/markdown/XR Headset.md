@@ -64,7 +64,7 @@ public:: true
     "enables": [
       {"@id": "urn:ngm:class:virtual-reality", "label": "Virtual Reality"},
       {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
-      {"@id": "urn:ngm:class:spatial-computing-paradigm", "label": "Spatial Computing"}
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
     ],
     "requires": [
       {"@id": "urn:ngm:class:web-xr-api", "label": "WebXR API"},

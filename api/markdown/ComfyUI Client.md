@@ -147,7 +147,7 @@ public:: true
       "vc:label": "Generative AI Tool"
     },
     {
-      "@id": "urn:visionflow:linked:generative-modelling-domain",
+      "@id": "urn:visionflow:linked:ai-model-architecture",
       "vc:label": "GenerativeModellingDomain"
     },
     {
@@ -175,7 +175,7 @@ public:: true
       "vc:label": "Hu et al 2022 LoRA"
     },
     {
-      "@id": "urn:visionflow:linked:human-computer-interaction-domain",
+      "@id": "urn:visionflow:linked:human-computer-interaction",
       "vc:label": "HumanComputerInteractionDomain"
     },
     {
@@ -407,7 +407,7 @@ public:: true
       "vc:label": "AI Agent System"
     },
     {
-      "@id": "urn:visionflow:owl:class:ai-grounded-domain",
+      "@id": "urn:visionflow:owl:class:ai-technique",
       "vc:label": "AI-GroundedDomain"
     },
     {
@@ -991,7 +991,7 @@ public:: true
     },
     {
       "raw": "[[GenerativeModellingDomain]]",
-      "resolved": "urn:visionflow:linked:generative-modelling-domain",
+      "resolved": "urn:visionflow:linked:ai-model-architecture",
       "kind": "StubLink"
     },
     {
@@ -1026,7 +1026,7 @@ public:: true
     },
     {
       "raw": "[[HumanComputerInteractionDomain]]",
-      "resolved": "urn:visionflow:linked:human-computer-interaction-domain",
+      "resolved": "urn:visionflow:linked:human-computer-interaction",
       "kind": "StubLink"
     },
     {
@@ -1316,7 +1316,7 @@ public:: true
     },
     {
       "raw": "[[AI-GroundedDomain]]",
-      "resolved": "urn:visionflow:owl:class:ai-grounded-domain",
+      "resolved": "urn:visionflow:owl:class:ai-technique",
       "kind": "ResolvedLink"
     },
     {

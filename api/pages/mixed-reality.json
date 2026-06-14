@@ -375,7 +375,7 @@
       "label": "Compute SoC"
     },
     {
-      "slug": "computer-vision-domain",
+      "slug": "computer-vision",
       "label": "ComputerVisionDomain"
     },
     {
@@ -427,7 +427,7 @@
       "label": "Holography"
     },
     {
-      "slug": "human-computer-interaction-domain",
+      "slug": "human-computer-interaction",
       "label": "HumanComputerInteractionDomain"
     },
     {
@@ -795,10 +795,6 @@
     {
       "slug": "vircadia",
       "label": "Vircadia"
-    },
-    {
-      "slug": "park-2022-metaverse",
-      "label": "park2022metaverse"
     }
   ]
 }

@@ -25,7 +25,7 @@ public:: true
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:economic-mechanism", "label": "Economic Mechanism"}],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:value-transfer", "label": "Value Transfer"}, {"@id": "urn:ngm:class:economics-domain", "label": "Economics Domain"}]
+    "relatedTo": [{"@id": "urn:ngm:class:value-transfer", "label": "Value Transfer"}, {"@id": "urn:ngm:class:economics", "label": "Economics Domain"}]
   },
   "quality": 0.72
 }

@@ -134,7 +134,7 @@
       "label": "Transparency Obligation"
     },
     {
-      "slug": "aiethics-domain",
+      "slug": "ai-governance-and-ethics",
       "label": "AIEthicsDomain"
     },
     {
@@ -178,10 +178,6 @@
     {
       "slug": "accessibility-audit-tool",
       "label": "Accessibility Audit Tool"
-    },
-    {
-      "slug": "accessibility-domain",
-      "label": "Accessibility Domain"
     },
     {
       "slug": "accessibility",
@@ -308,8 +304,8 @@
       "label": "Identity Management System"
     },
     {
-      "slug": "information-security-domain",
-      "label": "Information Security Domain"
+      "slug": "identity-verification",
+      "label": "Identity Verification"
     },
     {
       "slug": "iso-standards",
@@ -332,8 +328,12 @@
       "label": "Non-Repudiation"
     },
     {
-      "slug": "privacy-domain",
-      "label": "Privacy Domain"
+      "slug": "privacy-preserving-analytics",
+      "label": "Privacy Preserving Analytics"
+    },
+    {
+      "slug": "privacy-preserving-blockchain",
+      "label": "Privacy Preserving Blockchain"
     },
     {
       "slug": "privacy-preserving-blockchain",
@@ -354,6 +354,10 @@
     {
       "slug": "risk-assessment",
       "label": "Risk Assessment"
+    },
+    {
+      "slug": "robot-standard",
+      "label": "Robot Standard"
     },
     {
       "slug": "standardized-asset-classification",
@@ -380,6 +384,10 @@
       "label": "Transparency Obligation"
     },
     {
+      "slug": "travel-rule",
+      "label": "Travel Rule"
+    },
+    {
       "slug": "trust-framework-policy",
       "label": "Trust Framework Policy"
     },
@@ -388,8 +396,8 @@
       "label": "Trust Framework"
     },
     {
-      "slug": "trust-and-governance-domain",
-      "label": "Trust and Governance Domain"
+      "slug": "trust-framework",
+      "label": "Trust Framework"
     },
     {
       "slug": "verra-vcs-standard",

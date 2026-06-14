@@ -239,7 +239,7 @@ public:: true
       "vc:label": "Financial Regulation"
     },
     {
-      "@id": "urn:visionflow:linked:financial-regulation-domain",
+      "@id": "urn:visionflow:linked:financial-regulation",
       "vc:label": "FinancialRegulationDomain"
     },
     {
@@ -359,7 +359,7 @@ public:: true
       "vc:label": "Payment Instrument"
     },
     {
-      "@id": "urn:visionflow:linked:payment-systems-domain",
+      "@id": "urn:visionflow:linked:bc-defi-and-economics",
       "vc:label": "PaymentSystemsDomain"
     },
     {
@@ -479,7 +479,7 @@ public:: true
       "vc:label": "Bitcoin"
     },
     {
-      "@id": "urn:visionflow:owl:class:blockchain-domain",
+      "@id": "urn:visionflow:owl:class:blockchain",
       "vc:label": "BlockchainDomain"
     },
     {
@@ -1130,7 +1130,7 @@ public:: true
     },
     {
       "raw": "[[FinancialRegulationDomain]]",
-      "resolved": "urn:visionflow:linked:financial-regulation-domain",
+      "resolved": "urn:visionflow:linked:financial-regulation",
       "kind": "StubLink"
     },
     {
@@ -1280,7 +1280,7 @@ public:: true
     },
     {
       "raw": "[[PaymentSystemsDomain]]",
-      "resolved": "urn:visionflow:linked:payment-systems-domain",
+      "resolved": "urn:visionflow:linked:bc-defi-and-economics",
       "kind": "StubLink"
     },
     {
@@ -1430,7 +1430,7 @@ public:: true
     },
     {
       "raw": "[[BlockchainDomain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-domain",
+      "resolved": "urn:visionflow:owl:class:blockchain",
       "kind": "ResolvedLink"
     },
     {

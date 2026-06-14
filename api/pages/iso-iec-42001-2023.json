@@ -53,10 +53,6 @@
       "label": "AI Ethics Board"
     },
     {
-      "slug": "ai-governance-domain",
-      "label": "AI Governance Domain"
-    },
-    {
       "slug": "ai-impact-assessment",
       "label": "AI Impact Assessment"
     },
@@ -83,10 +79,6 @@
     {
       "slug": "ethical-review-process",
       "label": "Ethical Review Process"
-    },
-    {
-      "slug": "regulation-domain",
-      "label": "Regulation Domain"
     },
     {
       "slug": "trustworthy-ai-framework",

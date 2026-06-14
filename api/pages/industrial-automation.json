@@ -140,10 +140,6 @@
   "wikilinks": [],
   "backlinks": [
     {
-      "slug": "cyber-physical-systems-domain",
-      "label": "Cyber Physical Systems Domain"
-    },
-    {
       "slug": "hardware-and-edge",
       "label": "Hardware and Edge"
     },
@@ -166,10 +162,6 @@
     {
       "slug": "real-time",
       "label": "Real Time"
-    },
-    {
-      "slug": "robotics-domain",
-      "label": "Robotics Domain"
     },
     {
       "slug": "robotics-platform",

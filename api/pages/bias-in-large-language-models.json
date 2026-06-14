@@ -491,7 +491,7 @@
       "label": "Naous et al. 2024 Cultural Bias LLMs ACL"
     },
     {
-      "slug": "natural-language-processing-domain",
+      "slug": "natural-language-processing",
       "label": "NaturalLanguageProcessingDomain"
     },
     {
@@ -639,7 +639,7 @@
       "label": "AI Ethics"
     },
     {
-      "slug": "ai-grounded-domain",
+      "slug": "ai-technique",
       "label": "AI-GroundedDomain"
     },
     {
@@ -647,7 +647,7 @@
       "label": "AI Risks"
     },
     {
-      "slug": "aiethics-domain",
+      "slug": "ai-governance-and-ethics",
       "label": "AIEthicsDomain"
     },
     {

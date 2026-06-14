@@ -90,10 +90,6 @@
     {
       "slug": "identity-provider",
       "label": "Identity Provider"
-    },
-    {
-      "slug": "infrastructure-domain",
-      "label": "Infrastructure Domain"
     }
   ]
 }

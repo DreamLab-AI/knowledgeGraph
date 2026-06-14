@@ -56,7 +56,7 @@ alias:: RobotLearning
       "vc:label": "AdaptiveControl"
     },
     {
-      "@id": "urn:visionflow:owl:class:aidomain",
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
       "vc:label": "AIDomain"
     },
     {
@@ -88,7 +88,7 @@ alias:: RobotLearning
       "vc:label": "Robotics"
     },
     {
-      "@id": "urn:visionflow:owl:class:robotics-domain",
+      "@id": "urn:visionflow:owl:class:robotics",
       "vc:label": "RoboticsDomain"
     },
     {
@@ -263,7 +263,7 @@ alias:: RobotLearning
     },
     {
       "raw": "[[AIDomain]]",
-      "resolved": "urn:visionflow:owl:class:aidomain",
+      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
       "kind": "ResolvedLink"
     },
     {
@@ -303,7 +303,7 @@ alias:: RobotLearning
     },
     {
       "raw": "[[RoboticsDomain]]",
-      "resolved": "urn:visionflow:owl:class:robotics-domain",
+      "resolved": "urn:visionflow:owl:class:robotics",
       "kind": "ResolvedLink"
     },
     {

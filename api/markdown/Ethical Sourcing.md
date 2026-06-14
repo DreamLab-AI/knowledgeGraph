@@ -104,7 +104,7 @@ alias:: BC-0453-ethical-sourcing
       "vc:label": "Consumer Trust"
     },
     {
-      "@id": "urn:visionflow:linked:corporate-governance-domain",
+      "@id": "urn:visionflow:linked:corporate-governance",
       "vc:label": "CorporateGovernanceDomain"
     },
     {
@@ -484,7 +484,7 @@ alias:: BC-0453-ethical-sourcing
       "vc:label": "Supplier Identification"
     },
     {
-      "@id": "urn:visionflow:linked:supply-chain-domain",
+      "@id": "urn:visionflow:linked:supply-chain",
       "vc:label": "SupplyChainDomain"
     },
     {
@@ -572,7 +572,7 @@ alias:: BC-0453-ethical-sourcing
       "vc:label": "Zero-Knowledge Proofs"
     },
     {
-      "@id": "urn:visionflow:owl:class:blockchain-domain",
+      "@id": "urn:visionflow:owl:class:blockchain",
       "vc:label": "BlockchainDomain"
     },
     {
@@ -1027,7 +1027,7 @@ alias:: BC-0453-ethical-sourcing
     },
     {
       "raw": "[[CorporateGovernanceDomain]]",
-      "resolved": "urn:visionflow:linked:corporate-governance-domain",
+      "resolved": "urn:visionflow:linked:corporate-governance",
       "kind": "StubLink"
     },
     {
@@ -1502,7 +1502,7 @@ alias:: BC-0453-ethical-sourcing
     },
     {
       "raw": "[[SupplyChainDomain]]",
-      "resolved": "urn:visionflow:linked:supply-chain-domain",
+      "resolved": "urn:visionflow:linked:supply-chain",
       "kind": "StubLink"
     },
     {
@@ -1612,7 +1612,7 @@ alias:: BC-0453-ethical-sourcing
     },
     {
       "raw": "[[BlockchainDomain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-domain",
+      "resolved": "urn:visionflow:owl:class:blockchain",
       "kind": "ResolvedLink"
     },
     {

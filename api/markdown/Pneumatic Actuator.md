@@ -263,7 +263,7 @@ public:: true
       "vc:label": "Mechanical Engineering"
     },
     {
-      "@id": "urn:visionflow:linked:mechanical-engineering-domain",
+      "@id": "urn:visionflow:linked:robo-actuation-and-control",
       "vc:label": "MechanicalEngineeringDomain"
     },
     {
@@ -1052,7 +1052,7 @@ public:: true
     },
     {
       "raw": "[[MechanicalEngineeringDomain]]",
-      "resolved": "urn:visionflow:linked:mechanical-engineering-domain",
+      "resolved": "urn:visionflow:linked:robo-actuation-and-control",
       "kind": "StubLink"
     },
     {

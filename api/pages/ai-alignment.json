@@ -132,7 +132,7 @@
       "label": "AI Agent System"
     },
     {
-      "slug": "metaverse-domain",
+      "slug": "metaverse",
       "label": "MetaverseDomain"
     },
     {
@@ -148,10 +148,6 @@
     {
       "slug": "ai-safety-institute",
       "label": "AI Safety Institute"
-    },
-    {
-      "slug": "aisafety-domain",
-      "label": "AISafetyDomain"
     },
     {
       "slug": "agents",

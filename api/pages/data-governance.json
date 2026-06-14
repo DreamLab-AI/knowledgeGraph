@@ -161,6 +161,10 @@
       "label": "AI Governance Framework"
     },
     {
+      "slug": "ai-scrapers",
+      "label": "AI Scrapers"
+    },
+    {
       "slug": "compliance-control",
       "label": "Compliance Control"
     },
@@ -201,12 +205,24 @@
       "label": "Metadata Management"
     },
     {
+      "slug": "metadata-management",
+      "label": "Metadata Management"
+    },
+    {
       "slug": "metadata-registry",
       "label": "Metadata Registry"
     },
     {
       "slug": "metadata-schema",
       "label": "Metadata Schema"
+    },
+    {
+      "slug": "privacy-filter",
+      "label": "Privacy Filter"
+    },
+    {
+      "slug": "regulatory-reporting",
+      "label": "Regulatory Reporting"
     },
     {
       "slug": "regulatory-reporting",
@@ -225,8 +241,12 @@
       "label": "Training Data"
     },
     {
-      "slug": "trust-and-governance-domain",
-      "label": "Trust and Governance Domain"
+      "slug": "training-data",
+      "label": "Training Data"
+    },
+    {
+      "slug": "uri-canonicaliser",
+      "label": "URI Canonicaliser"
     }
   ]
 }

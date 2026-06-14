@@ -208,7 +208,7 @@ alias:: DecentralizedExchange
       "vc:label": "Dark Pool"
     },
     {
-      "@id": "urn:visionflow:linked:de-fi-domain",
+      "@id": "urn:visionflow:linked:bc-defi-and-economics",
       "vc:label": "DeFiDomain"
     },
     {
@@ -264,7 +264,7 @@ alias:: DecentralizedExchange
       "vc:label": "Financial Inclusion"
     },
     {
-      "@id": "urn:visionflow:linked:financial-markets-domain",
+      "@id": "urn:visionflow:linked:bc-defi-and-economics",
       "vc:label": "FinancialMarketsDomain"
     },
     {
@@ -616,7 +616,7 @@ alias:: DecentralizedExchange
       "vc:label": "Blockchain Application"
     },
     {
-      "@id": "urn:visionflow:owl:class:blockchain-domain",
+      "@id": "urn:visionflow:owl:class:blockchain",
       "vc:label": "BlockchainDomain"
     },
     {
@@ -1231,7 +1231,7 @@ alias:: DecentralizedExchange
     },
     {
       "raw": "[[DeFiDomain]]",
-      "resolved": "urn:visionflow:linked:de-fi-domain",
+      "resolved": "urn:visionflow:linked:bc-defi-and-economics",
       "kind": "StubLink"
     },
     {
@@ -1301,7 +1301,7 @@ alias:: DecentralizedExchange
     },
     {
       "raw": "[[FinancialMarketsDomain]]",
-      "resolved": "urn:visionflow:linked:financial-markets-domain",
+      "resolved": "urn:visionflow:linked:bc-defi-and-economics",
       "kind": "StubLink"
     },
     {
@@ -1741,7 +1741,7 @@ alias:: DecentralizedExchange
     },
     {
       "raw": "[[BlockchainDomain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-domain",
+      "resolved": "urn:visionflow:owl:class:blockchain",
       "kind": "ResolvedLink"
     },
     {

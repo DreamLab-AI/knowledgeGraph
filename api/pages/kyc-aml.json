@@ -47,10 +47,6 @@
     {
       "slug": "distributed-identity",
       "label": "Distributed Identity"
-    },
-    {
-      "slug": "token-economics-domain",
-      "label": "Token Economics Domain"
     }
   ]
 }

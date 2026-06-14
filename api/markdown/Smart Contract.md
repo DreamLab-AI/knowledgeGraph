@@ -72,7 +72,7 @@ alias:: SmartContract, smart-contract
       "vc:label": "Cryptographic Proof"
     },
     {
-      "@id": "urn:visionflow:linked:cryptography-domain",
+      "@id": "urn:visionflow:linked:cryptography",
       "vc:label": "CryptographyDomain"
     },
     {
@@ -184,7 +184,7 @@ alias:: SmartContract, smart-contract
       "vc:label": "Flash Loan"
     },
     {
-      "@id": "urn:visionflow:linked:formal-methods-domain",
+      "@id": "urn:visionflow:linked:ai-research-area",
       "vc:label": "FormalMethodsDomain"
     },
     {
@@ -352,7 +352,7 @@ alias:: SmartContract, smart-contract
       "vc:label": "Blockchain"
     },
     {
-      "@id": "urn:visionflow:owl:class:blockchain-domain",
+      "@id": "urn:visionflow:owl:class:blockchain",
       "vc:label": "BlockchainDomain"
     },
     {
@@ -861,7 +861,7 @@ alias:: SmartContract, smart-contract
     },
     {
       "raw": "[[CryptographyDomain]]",
-      "resolved": "urn:visionflow:linked:cryptography-domain",
+      "resolved": "urn:visionflow:linked:cryptography",
       "kind": "StubLink"
     },
     {
@@ -1001,7 +1001,7 @@ alias:: SmartContract, smart-contract
     },
     {
       "raw": "[[FormalMethodsDomain]]",
-      "resolved": "urn:visionflow:linked:formal-methods-domain",
+      "resolved": "urn:visionflow:linked:ai-research-area",
       "kind": "StubLink"
     },
     {
@@ -1211,7 +1211,7 @@ alias:: SmartContract, smart-contract
     },
     {
       "raw": "[[BlockchainDomain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-domain",
+      "resolved": "urn:visionflow:owl:class:blockchain",
       "kind": "ResolvedLink"
     },
     {

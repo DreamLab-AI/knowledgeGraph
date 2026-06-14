@@ -63,7 +63,7 @@
     "standardizedBy": [],
     "partOf": [
       {
-        "id": "urn:ngm:class:cryptographic-domain",
+        "id": "urn:ngm:class:bc-cryptographic-primitive",
         "label": "Cryptographic Domain"
       },
       {
@@ -108,7 +108,7 @@
       "label": "Blockchain Entity"
     },
     {
-      "slug": "cryptographic-domain",
+      "slug": "bc-cryptographic-primitive",
       "label": "CryptographicDomain"
     },
     {

@@ -36,7 +36,7 @@ elevatedFrom:: [[Midjourney]]
       "vc:label": "Stable Diffusion"
     },
     {
-      "@id": "urn:visionflow:linked:creative-media-domain",
+      "@id": "urn:visionflow:linked:ai-application",
       "vc:label": "Creative Media Domain"
     }
   ],
@@ -146,7 +146,7 @@ elevatedFrom:: [[Midjourney]]
         "label": "Generative AI"
       },
       {
-        "@id": "urn:ngm:class:creative-media-domain",
+        "@id": "urn:ngm:class:ai-application",
         "label": "Creative Media Domain"
       }
     ],
@@ -231,7 +231,7 @@ elevatedFrom:: [[Midjourney]]
     },
     {
       "raw": "[[Creative Media Domain]]",
-      "resolved": "urn:visionflow:linked:creative-media-domain",
+      "resolved": "urn:visionflow:linked:ai-application",
       "kind": "ResolvedLink"
     }
   ],

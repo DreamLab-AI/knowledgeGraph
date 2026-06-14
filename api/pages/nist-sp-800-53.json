@@ -44,14 +44,5 @@
       "label": "Technical Standard"
     }
   ],
-  "backlinks": [
-    {
-      "slug": "information-security-domain",
-      "label": "Information Security Domain"
-    },
-    {
-      "slug": "security-domain",
-      "label": "Security Domain"
-    }
-  ]
+  "backlinks": []
 }

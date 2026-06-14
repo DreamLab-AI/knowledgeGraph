@@ -56,7 +56,7 @@ alias:: TELE-006-presence
       "vc:label": "Immersive Experience"
     },
     {
-      "@id": "urn:visionflow:owl:class:interaction-domain",
+      "@id": "urn:visionflow:owl:class:sc-interaction",
       "vc:label": "InteractionDomain"
     },
     {
@@ -191,7 +191,7 @@ alias:: TELE-006-presence
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:interaction-domain",
+        "@id": "urn:ngm:class:sc-interaction",
         "label": "Interaction Domain"
       },
       {
@@ -325,7 +325,7 @@ alias:: TELE-006-presence
     },
     {
       "raw": "[[InteractionDomain]]",
-      "resolved": "urn:visionflow:owl:class:interaction-domain",
+      "resolved": "urn:visionflow:owl:class:sc-interaction",
       "kind": "ResolvedLink"
     },
     {

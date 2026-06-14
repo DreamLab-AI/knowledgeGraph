@@ -33,7 +33,7 @@
         "label": "Domain Ontology"
       },
       {
-        "id": "urn:ngm:class:formal-methods-domain",
+        "id": "urn:ngm:class:ai-research-area",
         "label": "Formal Methods Domain"
       }
     ]
@@ -43,10 +43,6 @@
     {
       "slug": "domain-ontology",
       "label": "Domain Ontology"
-    },
-    {
-      "slug": "formal-methods-domain",
-      "label": "Formal Methods Domain"
     }
   ]
 }

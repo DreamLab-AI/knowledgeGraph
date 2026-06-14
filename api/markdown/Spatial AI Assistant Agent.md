@@ -55,7 +55,7 @@ elevatedFrom:: [[Spatial AI Associate]]
       {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"}
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:spatial-computing-paradigm", "label": "Spatial Computing"}
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:scene-management", "label": "Scene Management"}

@@ -64,7 +64,7 @@
       "label": "AI Agent System"
     },
     {
-      "slug": "blockchain-domain",
+      "slug": "blockchain",
       "label": "BlockchainDomain"
     },
     {
@@ -96,10 +96,6 @@
     {
       "slug": "liquidity-pool",
       "label": "Liquidity Pool"
-    },
-    {
-      "slug": "token-economics-domain",
-      "label": "Token Economics Domain"
     },
     {
       "slug": "treasury-management",

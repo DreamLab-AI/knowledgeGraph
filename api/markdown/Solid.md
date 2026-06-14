@@ -163,7 +163,7 @@ public:: true
       "vc:label": "Pod"
     },
     {
-      "@id": "urn:visionflow:linked:privacy-domain",
+      "@id": "urn:visionflow:linked:privacy",
       "vc:label": "PrivacyDomain"
     },
     {
@@ -861,7 +861,7 @@ public:: true
     },
     {
       "raw": "[[PrivacyDomain]]",
-      "resolved": "urn:visionflow:linked:privacy-domain",
+      "resolved": "urn:visionflow:linked:privacy",
       "kind": "StubLink"
     },
     {

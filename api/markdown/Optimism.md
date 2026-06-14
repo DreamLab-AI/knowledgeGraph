@@ -23,7 +23,7 @@ public:: true
       "vc:label": "Fraud Proof"
     },
     {
-      "@id": "urn:visionflow:linked:decentralised-finance-domain",
+      "@id": "urn:visionflow:linked:decentralised-finance",
       "vc:label": "Decentralised Finance Domain"
     },
     {
@@ -39,7 +39,7 @@ public:: true
       "vc:label": "Polygon"
     },
     {
-      "@id": "urn:visionflow:linked:blockchain-domain",
+      "@id": "urn:visionflow:linked:blockchain",
       "vc:label": "Blockchain Domain"
     }
   ],
@@ -71,7 +71,7 @@ public:: true
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": {
-    "@id": "urn:ngm:class:blockchain-domain",
+    "@id": "urn:ngm:class:blockchain",
     "label": "Blockchain Domain"
   },
   "relations": {
@@ -99,7 +99,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:decentralised-finance-domain",
+        "@id": "urn:ngm:class:decentralised-finance",
         "label": "Decentralised Finance Domain"
       },
       {
@@ -245,7 +245,7 @@ public:: true
     },
     {
       "raw": "[[Decentralised Finance Domain]]",
-      "resolved": "urn:visionflow:linked:decentralised-finance-domain",
+      "resolved": "urn:visionflow:linked:decentralised-finance",
       "kind": "ResolvedLink"
     },
     {
@@ -265,7 +265,7 @@ public:: true
     },
     {
       "raw": "[[Blockchain Domain]]",
-      "resolved": "urn:visionflow:linked:blockchain-domain",
+      "resolved": "urn:visionflow:linked:blockchain",
       "kind": "ResolvedLink"
     }
   ],

@@ -29,7 +29,7 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:governance-domain",
+        "id": "urn:ngm:class:governance",
         "label": "Governance Domain"
       },
       {
@@ -40,10 +40,6 @@
   },
   "wikilinks": [],
   "backlinks": [
-    {
-      "slug": "governance-domain",
-      "label": "Governance Domain"
-    },
     {
       "slug": "governance-framework",
       "label": "Governance Framework"

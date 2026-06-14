@@ -147,7 +147,7 @@
       "label": "LoRA DoRA etc"
     },
     {
-      "slug": "metaverse-domain",
+      "slug": "metaverse",
       "label": "MetaverseDomain"
     },
     {
@@ -183,10 +183,5 @@
       "label": "Text Generation"
     }
   ],
-  "backlinks": [
-    {
-      "slug": "natural-language-processing-domain",
-      "label": "Natural Language Processing Domain"
-    }
-  ]
+  "backlinks": []
 }

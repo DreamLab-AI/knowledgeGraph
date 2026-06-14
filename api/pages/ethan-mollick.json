@@ -8,7 +8,7 @@
   "definition": "Ethan Mollick is an American academic, professor at the Wharton School of the University of Pennsylvania, and widely cited public intellectual on the practical deployment of generative artificial intelligence in work, education, and entrepreneurship. His research bridges management science and AI-adoption theory, investigating how large language models augment human productivity, reshape organisational workflows, and alter pedagogical practice. He is the author of the book 'Co-Intelligence: Living and Working with AI' and is known for his hands-on experimental approach to understanding AI capabilities and their societal implications.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:artificial-intelligence-domain",
+      "id": "urn:ngm:class:artificial-intelligence",
       "label": "Artificial Intelligence Domain"
     }
   ],
@@ -133,7 +133,7 @@
       "label": "Prompt Engineering"
     },
     {
-      "slug": "artificial-intelligence-domain",
+      "slug": "artificial-intelligence",
       "label": "Artificial Intelligence Domain"
     }
   ],

@@ -27,7 +27,7 @@ public:: true
       "vc:label": "ControlLaw"
     },
     {
-      "@id": "urn:visionflow:linked:control-theory-domain",
+      "@id": "urn:visionflow:linked:control-theory",
       "vc:label": "ControlTheoryDomain"
     },
     {
@@ -115,7 +115,7 @@ public:: true
       "vc:label": "PowerSupply"
     },
     {
-      "@id": "urn:visionflow:owl:class:robotics-domain",
+      "@id": "urn:visionflow:owl:class:robotics",
       "vc:label": "RoboticsDomain"
     }
   ],
@@ -269,7 +269,7 @@ public:: true
     },
     {
       "raw": "[[ControlTheoryDomain]]",
-      "resolved": "urn:visionflow:linked:control-theory-domain",
+      "resolved": "urn:visionflow:linked:control-theory",
       "kind": "StubLink"
     },
     {
@@ -379,7 +379,7 @@ public:: true
     },
     {
       "raw": "[[RoboticsDomain]]",
-      "resolved": "urn:visionflow:owl:class:robotics-domain",
+      "resolved": "urn:visionflow:owl:class:robotics",
       "kind": "ResolvedLink"
     }
   ],

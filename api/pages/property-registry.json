@@ -51,7 +51,7 @@
         "label": "Cryptography"
       },
       {
-        "id": "urn:ngm:class:blockchain-domain",
+        "id": "urn:ngm:class:blockchain",
         "label": "Blockchain Domain"
       }
     ],
@@ -95,7 +95,7 @@
       "label": "BC-0493-real-estate-tokenization"
     },
     {
-      "slug": "blockchain-domain",
+      "slug": "blockchain",
       "label": "BlockchainDomain"
     }
   ],

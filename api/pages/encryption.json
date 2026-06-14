@@ -193,10 +193,6 @@
       "label": "Proprietary Video"
     },
     {
-      "slug": "security-domain",
-      "label": "Security Domain"
-    },
-    {
       "slug": "storage-infrastructure",
       "label": "Storage Infrastructure"
     },

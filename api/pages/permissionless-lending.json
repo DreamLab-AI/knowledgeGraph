@@ -29,7 +29,7 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:decentralised-finance-domain",
+        "id": "urn:ngm:class:decentralised-finance",
         "label": "Decentralised Finance Domain"
       },
       {
@@ -40,10 +40,6 @@
   },
   "wikilinks": [],
   "backlinks": [
-    {
-      "slug": "decentralised-finance-domain",
-      "label": "Decentralised Finance Domain"
-    },
     {
       "slug": "decentralized-finance-de-fi",
       "label": "Decentralized Finance (DeFi)"

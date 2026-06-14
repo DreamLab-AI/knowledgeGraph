@@ -520,7 +520,7 @@
       "label": "Capital Markets and Technology Association CMTAT"
     },
     {
-      "slug": "capital-markets-domain",
+      "slug": "bc-defi-and-economics",
       "label": "CapitalMarketsDomain"
     },
     {
@@ -660,7 +660,7 @@
       "label": "Dematerialised Securities Regulation"
     },
     {
-      "slug": "digital-asset-domain",
+      "slug": "digital-asset",
       "label": "DigitalAssetDomain"
     },
     {
@@ -1516,7 +1516,7 @@
       "label": "Zodia Custody"
     },
     {
-      "slug": "blockchain-domain",
+      "slug": "blockchain",
       "label": "BlockchainDomain"
     },
     {

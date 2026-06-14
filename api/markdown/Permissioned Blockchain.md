@@ -40,7 +40,7 @@ alias:: BC-0029-permissioned-blockchain, BC-0429-permissioned-blockchain, Permis
       "vc:label": "BC-0430-private-channels"
     },
     {
-      "@id": "urn:visionflow:owl:class:blockchain-domain",
+      "@id": "urn:visionflow:owl:class:blockchain",
       "vc:label": "BlockchainDomain"
     },
     {
@@ -313,7 +313,7 @@ alias:: BC-0029-permissioned-blockchain, BC-0429-permissioned-blockchain, Permis
     },
     {
       "raw": "[[BlockchainDomain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-domain",
+      "resolved": "urn:visionflow:owl:class:blockchain",
       "kind": "ResolvedLink"
     },
     {

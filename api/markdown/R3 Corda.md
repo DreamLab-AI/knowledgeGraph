@@ -108,7 +108,7 @@ alias:: R3Corda
       "vc:label": "FCA"
     },
     {
-      "@id": "urn:visionflow:linked:financial-infrastructure-domain",
+      "@id": "urn:visionflow:linked:financial-infrastructure",
       "vc:label": "FinancialInfrastructureDomain"
     },
     {
@@ -256,7 +256,7 @@ alias:: R3Corda
       "vc:label": "Bitcoin"
     },
     {
-      "@id": "urn:visionflow:owl:class:blockchain-domain",
+      "@id": "urn:visionflow:owl:class:blockchain",
       "vc:label": "BlockchainDomain"
     },
     {
@@ -812,7 +812,7 @@ alias:: R3Corda
     },
     {
       "raw": "[[FinancialInfrastructureDomain]]",
-      "resolved": "urn:visionflow:linked:financial-infrastructure-domain",
+      "resolved": "urn:visionflow:linked:financial-infrastructure",
       "kind": "StubLink"
     },
     {
@@ -997,7 +997,7 @@ alias:: R3Corda
     },
     {
       "raw": "[[BlockchainDomain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-domain",
+      "resolved": "urn:visionflow:owl:class:blockchain",
       "kind": "ResolvedLink"
     },
     {

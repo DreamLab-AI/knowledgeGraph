@@ -164,7 +164,7 @@
       "label": "AI Agent System"
     },
     {
-      "slug": "ai-grounded-domain",
+      "slug": "ai-technique",
       "label": "AI-GroundedDomain"
     },
     {
@@ -172,7 +172,7 @@
       "label": "ComputeLayer"
     },
     {
-      "slug": "creative-media-domain",
+      "slug": "ai-application",
       "label": "CreativeMediaDomain"
     },
     {
@@ -184,7 +184,7 @@
       "label": "Intelligent Virtual Entity"
     },
     {
-      "slug": "interaction-domain",
+      "slug": "sc-interaction",
       "label": "InteractionDomain"
     },
     {

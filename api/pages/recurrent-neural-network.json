@@ -726,11 +726,11 @@
       "label": "Activation Function"
     },
     {
-      "slug": "artificial-intelligence-domain",
+      "slug": "artificial-intelligence",
       "label": "ArtificialIntelligenceDomain"
     },
     {
-      "slug": "artificial-intelligence-domain",
+      "slug": "artificial-intelligence",
       "label": "Artificial Intelligence Domain"
     },
     {
@@ -902,10 +902,6 @@
     {
       "slug": "brain-computer-interfaces",
       "label": "Brain Computer Interfaces"
-    },
-    {
-      "slug": "deep-learning-domain",
-      "label": "Deep Learning Domain"
     },
     {
       "slug": "feed-forward-network",

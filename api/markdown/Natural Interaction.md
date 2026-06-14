@@ -32,7 +32,7 @@ public:: true
       {"@id": "urn:ngm:class:haptic-feedback", "label": "Haptic Feedback"}
     ],
     "enables": [
-      {"@id": "urn:ngm:class:spatial-computing-paradigm", "label": "Spatial Computing"},
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
       {"@id": "urn:ngm:class:embodied-ai", "label": "Embodied AI"},
       {"@id": "urn:ngm:class:voice-interaction", "label": "Voice Interaction"}
     ],

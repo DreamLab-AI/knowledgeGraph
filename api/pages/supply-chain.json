@@ -157,8 +157,24 @@
       "label": "Circular Economy"
     },
     {
+      "slug": "circular-economy",
+      "label": "Circular Economy"
+    },
+    {
       "slug": "cold-chain-monitoring",
       "label": "Cold Chain Monitoring"
+    },
+    {
+      "slug": "cold-chain-monitoring",
+      "label": "Cold Chain Monitoring"
+    },
+    {
+      "slug": "customs-trade-facilitation",
+      "label": "Customs Trade Facilitation"
+    },
+    {
+      "slug": "ethical-sourcing",
+      "label": "Ethical Sourcing"
     },
     {
       "slug": "everledger",
@@ -171,6 +187,10 @@
     {
       "slug": "ibm-food-trust",
       "label": "IBM Food Trust"
+    },
+    {
+      "slug": "logistics-optimization",
+      "label": "Logistics Optimization"
     },
     {
       "slug": "medi-ledger",

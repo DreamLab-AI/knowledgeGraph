@@ -520,7 +520,7 @@
       "label": "Corporate Disclosure"
     },
     {
-      "slug": "corporate-governance-domain",
+      "slug": "corporate-governance",
       "label": "CorporateGovernanceDomain"
     },
     {
@@ -616,7 +616,7 @@
       "label": "FCA SDR PS23/16"
     },
     {
-      "slug": "financial-regulation-domain",
+      "slug": "financial-regulation",
       "label": "FinancialRegulationDomain"
     },
     {
@@ -924,7 +924,7 @@
       "label": "Sustainability Disclosure"
     },
     {
-      "slug": "sustainability-domain",
+      "slug": "sustainability",
       "label": "SustainabilityDomain"
     },
     {
@@ -1024,7 +1024,7 @@
       "label": "XBRL Inline Reporting"
     },
     {
-      "slug": "blockchain-domain",
+      "slug": "blockchain",
       "label": "BlockchainDomain"
     },
     {

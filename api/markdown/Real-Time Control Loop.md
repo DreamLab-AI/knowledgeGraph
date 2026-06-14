@@ -26,7 +26,7 @@ public:: true
   "subClassOf": [{"@id": "urn:ngm:class:control-system", "label": "Control System"}],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:cyber-physical-systems-domain", "label": "Cyber-Physical Systems Domain"},
+      {"@id": "urn:ngm:class:cyber-physical-systems", "label": "Cyber-Physical Systems Domain"},
       {"@id": "urn:ngm:class:admittance-control", "label": "Admittance Control"}
     ]
   },

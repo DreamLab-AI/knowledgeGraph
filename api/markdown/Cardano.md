@@ -27,7 +27,7 @@ public:: true
       "vc:label": "Ethereum"
     },
     {
-      "@id": "urn:visionflow:linked:blockchain-domain",
+      "@id": "urn:visionflow:linked:blockchain",
       "vc:label": "Blockchain Domain"
     },
     {
@@ -63,7 +63,7 @@ public:: true
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": {
-    "@id": "urn:ngm:class:blockchain-domain",
+    "@id": "urn:ngm:class:blockchain",
     "label": "Blockchain Domain"
   },
   "relations": {
@@ -226,7 +226,7 @@ public:: true
     },
     {
       "raw": "[[Blockchain Domain]]",
-      "resolved": "urn:visionflow:linked:blockchain-domain",
+      "resolved": "urn:visionflow:linked:blockchain",
       "kind": "ResolvedLink"
     },
     {
