@@ -3,7 +3,7 @@
   "title": "Bitcoin Proof-of-Work Protocol",
   "slug": "bitcoin-proof-of-work-protocol",
   "public": true,
-  "classIri": "urn:ngm:class:bitcoin-proof-of-work-protocol-proof-of-work-protocol",
+  "classIri": "urn:ngm:class:bitcoin-proof-of-work-protocol",
   "domain": "blockchain",
   "definition": "Bitcoin is the first decentralised peer-to-peer electronic cash system, introduced by the pseudonymous Satoshi Nakamoto in a 2008 white paper and launched in January 2009. It operates on a public, permissionless blockchain secured by proof-of-work consensus, with a fixed supply cap of 21 million BTC enforced by its protocol. Bitcoin is simultaneously a payment network, a monetary asset, and the foundational reference implementation for the broader cryptocurrency and blockchain industry.",
   "subClassOf": [
@@ -18,26 +18,26 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-proof-of-work-protocol-mining",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-mining",
         "label": "Bitcoin Mining"
       },
       {
-        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-proof-of-work-protocol-technical-overview",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-technical-overview",
         "label": "Bitcoin Technical Overview"
       },
       {
-        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-proof-of-work-protocol-value-proposition",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-value-proposition",
         "label": "Bitcoin Value Proposition"
       }
     ],
     "requires": [],
     "enables": [
       {
-        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-proof-of-work-protocol-as-money",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-as-money",
         "label": "Bitcoin As Money"
       },
       {
-        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-proof-of-work-protocol-standard",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-standard",
         "label": "Bitcoin Standard"
       }
     ],
@@ -49,7 +49,7 @@
         "label": "51% Attack"
       },
       {
-        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-proof-of-work-protocol-centralisation-risks",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-centralisation-risks",
         "label": "Bitcoin Centralisation Risks"
       }
     ],
@@ -93,7 +93,7 @@
         "label": "Distributed Ledger Technology"
       },
       {
-        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-proof-of-work-protocol-etf",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-etf",
         "label": "Bitcoin ETF"
       }
     ]

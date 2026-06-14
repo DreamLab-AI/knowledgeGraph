@@ -672,7 +672,7 @@ public:: true
         "label": "JSON Schema Draft 2020-12"
       },
       {
-        "@id": "urn:ngm:class:openai-research-organisation-research-organisation-function-calling-api",
+        "@id": "urn:ngm:class:openai-research-organisation-function-calling-api",
         "label": "OpenAI Function Calling API"
       },
       {

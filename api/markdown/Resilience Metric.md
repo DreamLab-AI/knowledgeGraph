@@ -74,13 +74,15 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
       "label": "Content and Assets"
-    },
-    {
-      "@id": "urn:ngm:class:distributed-systems",
-      "label": "Distributed Systems"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
+    ],
     "requires": [
       {"@id": "urn:ngm:class:cloud-infrastructure", "label": "Cloud Infrastructure"}
     ],

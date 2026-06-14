@@ -3,7 +3,7 @@
   "title": "Parametric Design Methodology",
   "slug": "parametric-design-methodology",
   "public": true,
-  "classIri": "urn:ngm:class:parametric-design-methodology-design-methodology",
+  "classIri": "urn:ngm:class:parametric-design-methodology",
   "domain": "infrastructure",
   "definition": "A design methodology in which objects, environments, or behaviours are specified through adjustable parameters rather than fixed geometry, enabling variant generation and real-time adaptation. In metaverse and spatial computing contexts, parametric approaches underpin voice-and-text-driven CAD primitive creation, procedural content generation, and digital twin model customisation within shared virtual workspaces.",
   "subClassOf": [
@@ -34,7 +34,7 @@
     "bridgesTo": [],
     "uses": [
       {
-        "id": "urn:ngm:class:parametric-design-methodology-design-methodology-modeling",
+        "id": "urn:ngm:class:parametric-design-methodology-modeling",
         "label": "Parametric Modeling"
       },
       {

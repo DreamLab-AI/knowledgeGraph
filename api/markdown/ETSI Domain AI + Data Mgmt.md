@@ -80,15 +80,14 @@ alias:: ETSI Domain AI Data Mgmt
   "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:ai-infrastructure",
-      "label": "AI Infrastructure (Category)"
-    },
-    {
       "@id": "urn:ngm:class:etsi-domain-ai",
       "label": "ETSI Domain AI"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:ai-infrastructure", "label": "AI Infrastructure"}
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:intelligent-analytics-categorization",

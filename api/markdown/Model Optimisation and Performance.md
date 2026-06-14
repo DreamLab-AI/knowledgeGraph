@@ -359,14 +359,6 @@ public:: true
   "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:ai-infrastructure",
-      "label": "AI Infrastructure (Category)"
-    },
-    {
-      "@id": "urn:ngm:class:ai-infrastructure",
-      "label": "AI Infrastructure"
-    },
-    {
       "@id": "urn:ngm:class:mlops",
       "label": "MLOps"
     }
@@ -579,6 +571,9 @@ public:: true
         "@id": "urn:ngm:class:open-xla",
         "label": "OpenXLA"
       }
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:ai-infrastructure", "label": "AI Infrastructure"}
     ]
   },
   "quality": 0.52,

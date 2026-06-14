@@ -58,13 +58,15 @@ alias:: Real-Time Digital Twin Synchronization
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
       "label": "Platform and Environment"
-    },
-    {
-      "@id": "urn:ngm:class:digital-twin-technology",
-      "label": "Digital Twin Technology"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:digital-twin-technology",
+        "label": "Digital Twin Technology"
+      }
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:virtual-real-interaction",

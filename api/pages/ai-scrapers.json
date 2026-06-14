@@ -8,14 +8,6 @@
   "definition": "AI Scrapers are automated software agents (web crawlers, retrieval bots, and content-fetching pipelines) operated by foundation-model laboratories, AI search vendors, retrieval-augmented-generation services, dataset aggregators, and synthetic-media producers for the purpose of harvesting publicly...",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ai-infrastructure",
-      "label": "AI Infrastructure (Category)"
-    },
-    {
-      "id": "urn:ngm:class:ai-agent-system",
-      "label": "AI Agent System"
-    },
-    {
       "id": "urn:ngm:class:ai-agent-system",
       "label": "AI Agent System"
     }
@@ -130,7 +122,12 @@
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:bloom-filter",

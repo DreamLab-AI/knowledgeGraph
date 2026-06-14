@@ -3,7 +3,7 @@
   "title": "OpenAI Agents SDK",
   "slug": "open-ai-agents-sdk",
   "public": true,
-  "classIri": "urn:ngm:class:openai-research-organisation-research-organisation-agents-sdk",
+  "classIri": "urn:ngm:class:openai-research-organisation-agents-sdk",
   "domain": "artificial-intelligence",
   "definition": "The OpenAI Agents SDK is a software development kit for building agentic applications on OpenAI models, providing primitives for agents, tools and handoffs. It supports orchestrating one or more agents that call functions and pass control between each other.",
   "subClassOf": [

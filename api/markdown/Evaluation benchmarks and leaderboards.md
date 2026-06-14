@@ -483,10 +483,6 @@ public:: true
   "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:ai-infrastructure",
-      "label": "AI Infrastructure (Category)"
-    },
-    {
       "@id": "urn:ngm:class:ai-evaluation",
       "label": "AI Evaluation"
     },
@@ -731,6 +727,9 @@ public:: true
         "@id": "urn:ngm:class:uk-ai-safety-institute",
         "label": "UK AI Safety Institute"
       }
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:ai-infrastructure", "label": "AI Infrastructure"}
     ]
   },
   "quality": 0.52,

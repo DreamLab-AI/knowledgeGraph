@@ -298,10 +298,6 @@ alias:: BC-0458-verifiable-credentials, Verifiable Credential, VerifiableCredent
     {
       "@id": "urn:ngm:class:bc-cryptographic-primitive",
       "label": "Cryptographic Primitive"
-    },
-    {
-      "@id": "urn:ngm:class:cryptographic-proof",
-      "label": "Cryptographic Proof"
     }
   ],
   "relations": {
@@ -501,7 +497,8 @@ alias:: BC-0458-verifiable-credentials, Verifiable Credential, VerifiableCredent
       {
         "@id": "urn:ngm:class:w-3-c-standard",
         "label": "W3C Standard"
-      }
+      },
+      {"@id": "urn:ngm:class:cryptographic-proof", "label": "Cryptographic Proof"}
     ]
   },
   "quality": 0.52,

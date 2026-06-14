@@ -70,7 +70,7 @@
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:ethereum-smart-contract-platform-smart-contract-platform",
+        "id": "urn:ngm:class:ethereum-smart-contract-platform",
         "label": "Ethereum Smart Contract Platform"
       },
       {

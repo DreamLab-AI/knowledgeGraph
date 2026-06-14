@@ -441,15 +441,12 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-display-and-rendering",
       "label": "Display and Rendering"
-    },
-    {
-      "@id": "urn:ngm:class:hardware-abstraction-layer",
-      "label": "Hardware Abstraction Layer"
     }
   ],
   "relations": {
     "bridgesTo": [
-      {"@id": "urn:ngm:class:infra-network-and-comms", "label": "Network and Communication"}
+      {"@id": "urn:ngm:class:infra-network-and-comms", "label": "Network and Communication"},
+      {"@id": "urn:ngm:class:hardware-abstraction-layer", "label": "Hardware Abstraction Layer"}
     ],
     "hasPart": [
       {

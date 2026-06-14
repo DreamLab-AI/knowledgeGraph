@@ -141,13 +141,12 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
       "label": "Platform and Environment"
-    },
-    {
-      "@id": "urn:ngm:class:digital-asset-management",
-      "label": "Digital Asset Management"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:digital-asset-management", "label": "Digital Asset Management"}
+    ],
     "hasPart": [
       {
         "@id": "urn:ngm:class:content-repository",

@@ -57,13 +57,12 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
       "label": "Content and Assets"
-    },
-    {
-      "@id": "urn:ngm:class:digital-asset-management",
-      "label": "Digital Asset Management"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:digital-asset-management", "label": "Digital Asset Management"}
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:content-organisation",

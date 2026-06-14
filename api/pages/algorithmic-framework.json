@@ -10,10 +10,6 @@
     {
       "id": "urn:ngm:class:ai-technique",
       "label": "AI Technique"
-    },
-    {
-      "id": "urn:ngm:class:ai-framework",
-      "label": "AI Framework"
     }
   ],
   "entityType": "Class",
@@ -60,6 +56,10 @@
       {
         "id": "urn:ngm:class:digital-twin",
         "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:ai-framework",
+        "label": "AI Framework"
       }
     ],
     "uses": [],

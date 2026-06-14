@@ -3,17 +3,13 @@
   "title": "Perplexity AI Search Platform",
   "slug": "perplexity-ai-search-platform",
   "public": true,
-  "classIri": "urn:ngm:class:perplexity-ai-search-platform-ai-search-platform",
+  "classIri": "urn:ngm:class:perplexity-ai-search-platform",
   "domain": "infrastructure",
   "definition": "perplexity is a technology infrastructure concept and a type of infrastructure.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-computing-and-cloud",
       "label": "Computing and Cloud"
-    },
-    {
-      "id": "urn:ngm:class:evaluation-metric",
-      "label": "Evaluation Metric"
     }
   ],
   "entityType": "Class",
@@ -26,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:evaluation-metric",
+        "label": "Evaluation Metric"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],

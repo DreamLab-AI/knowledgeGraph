@@ -53,10 +53,6 @@ alias:: Model Ops
   "qualityScore": 0.8,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:ai-infrastructure",
-      "label": "AI Infrastructure (Category)"
-    },
-    {
       "@id": "urn:ngm:class:gartner-prediction",
       "label": "Gartner Prediction"
     }
@@ -86,6 +82,9 @@ alias:: Model Ops
       {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"},
       {"@id": "urn:ngm:class:ai-infrastructure", "label": "AI Infrastructure"},
       {"@id": "urn:ngm:class:ai-governance-framework", "label": "AI Governance Framework"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:ai-infrastructure", "label": "AI Infrastructure"}
     ]
   },
   "provenance": {

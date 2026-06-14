@@ -54,10 +54,6 @@ public:: true
     {
       "@id": "urn:ngm:class:robo-perception",
       "label": "Perception and Sensing"
-    },
-    {
-      "@id": "urn:ngm:class:camera",
-      "label": "Camera"
     }
   ],
   "relations": {
@@ -84,6 +80,9 @@ public:: true
       {"@id": "urn:ngm:class:simultaneous-localisation-and-mapping", "label": "Simultaneous Localisation and Mapping"},
       {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
       {"@id": "urn:ngm:class:autonomous-vehicle", "label": "Autonomous Vehicle"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:camera", "label": "Camera"}
     ]
   },
   "provenance": {

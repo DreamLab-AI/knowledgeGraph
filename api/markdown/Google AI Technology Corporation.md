@@ -48,7 +48,7 @@ elevatedFrom:: [[Google]]
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:google-ai-technology-corporation-ai-technology-corporation",
+  "@id": "urn:ngm:class:google-ai-technology-corporation",
   "@type": "Class",
   "label": "Google AI Technology Corporation",
   "definition": "Google AI Technology Corporation (operating publicly as Google LLC, a subsidiary of Alphabet Inc.) is a multinational technology company whose research and product divisions constitute one of the world's leading forces in artificial intelligence, encompassing large language models, foundation models, and applied machine-learning infrastructure. The company develops and deploys AI across Search, Ads, Cloud, Android, and dedicated AI-native products such as Gemini, while its research arm — Google DeepMind — pursues frontier science in reinforcement learning, protein structure prediction, and multi-modal reasoning. Google's open and proprietary frameworks, including TensorFlow and JAX, underpin a significant portion of the global AI research ecosystem.",

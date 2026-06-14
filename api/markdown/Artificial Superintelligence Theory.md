@@ -44,7 +44,7 @@ elevatedFrom:: [[artificial superintelligence]]
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:artificial-superintelligence-theory-theory",
+  "@id": "urn:ngm:class:artificial-superintelligence-theory",
   "@type": "Class",
   "label": "Artificial Superintelligence Theory",
   "definition": "A hypothetical form of artificial intelligence that surpasses human cognitive performance across all domains, capable of recursive self-improvement leading to an intelligence explosion. Distinguished from artificial general intelligence by the degree of capability surplus; considered an existential risk scenario requiring robust safety and alignment research before any attempt at development.",

@@ -8,10 +8,6 @@
   "definition": "ModelOps is the discipline of industrialising the end-to-end governance and operational lifecycle of AI and machine learning models, encompassing the processes, tooling, and organisational practices required to reliably build, validate, deploy, monitor, and retire models in production environments. It extends MLOps beyond technical pipeline automation to include regulatory compliance, risk management, model lineage tracking, and cross-functional accountability.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ai-infrastructure",
-      "label": "AI Infrastructure (Category)"
-    },
-    {
       "id": "urn:ngm:class:gartner-prediction",
       "label": "Gartner Prediction"
     }
@@ -57,7 +53,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:machine-learning-discipline-framework",

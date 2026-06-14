@@ -394,13 +394,15 @@ alias:: R3Corda
     {
       "@id": "urn:ngm:class:blockchain",
       "label": "Blockchain"
-    },
-    {
-      "@id": "urn:ngm:class:enterprise-blockchain",
-      "label": "Enterprise Blockchain"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:enterprise-blockchain",
+        "label": "Enterprise Blockchain"
+      }
+    ],
     "hasPart": [
       {
         "@id": "urn:ngm:class:contract-code",

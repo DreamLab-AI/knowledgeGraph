@@ -109,13 +109,12 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-interaction",
       "label": "SC Interaction"
-    },
-    {
-      "@id": "urn:ngm:class:user-experience",
-      "label": "User Experience"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:user-experience", "label": "User Experience"}
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:alternative-input-methods",

@@ -427,7 +427,7 @@ public:: true
       "label": "BC Token And Asset"
     },
     {
-      "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-protocol",
+      "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol",
       "label": "Bitcoin Protocol"
     }
   ],

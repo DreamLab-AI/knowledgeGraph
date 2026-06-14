@@ -14,10 +14,6 @@
     {
       "id": "urn:ngm:class:sc-interaction",
       "label": "SC Interaction"
-    },
-    {
-      "id": "urn:ngm:class:user-experience",
-      "label": "User Experience"
     }
   ],
   "entityType": "Class",
@@ -56,7 +52,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:user-experience",
+        "label": "User Experience"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],

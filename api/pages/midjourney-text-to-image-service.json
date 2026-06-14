@@ -3,7 +3,7 @@
   "title": "Midjourney Text-to-Image Service",
   "slug": "midjourney-text-to-image-service",
   "public": true,
-  "classIri": "urn:ngm:class:midjourney-text-to-image-service-text-to-image-service",
+  "classIri": "urn:ngm:class:midjourney-text-to-image-service",
   "domain": "artificial-intelligence",
   "definition": "Midjourney is a proprietary generative artificial intelligence service that produces images from natural-language text prompts. It is operated by an independent research lab of the same name and is accessed primarily through a Discord bot interface and, later, a dedicated web application. The system is known for a distinctive aesthetic and for iterating rapidly through successive model versions that improve coherence, resolution and prompt adherence.",
   "subClassOf": [

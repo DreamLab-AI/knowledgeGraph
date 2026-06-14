@@ -530,7 +530,7 @@ public:: true
         "label": "LoRA Fine Tuning"
       },
       {
-        "@id": "urn:ngm:class:openai-research-organisation-research-organisation-chat-completions-api",
+        "@id": "urn:ngm:class:openai-research-organisation-chat-completions-api",
         "label": "OpenAI Chat Completions API"
       },
       {
@@ -628,7 +628,7 @@ public:: true
         "label": "Hugging Face Hub"
       },
       {
-        "@id": "urn:ngm:class:openai-research-organisation-research-organisation-chat-completions-api",
+        "@id": "urn:ngm:class:openai-research-organisation-chat-completions-api",
         "label": "OpenAI Chat Completions API"
       },
       {

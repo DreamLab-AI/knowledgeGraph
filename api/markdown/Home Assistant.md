@@ -686,7 +686,7 @@ public:: true
         "label": "Node-RED"
       },
       {
-        "@id": "urn:ngm:class:openai-research-organisation-research-organisation-api",
+        "@id": "urn:ngm:class:openai-research-organisation-api",
         "label": "OpenAI API"
       },
       {

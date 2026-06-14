@@ -327,10 +327,6 @@ public:: true
       "label": "AI Technique"
     },
     {
-      "@id": "urn:ngm:class:ai-infrastructure",
-      "label": "AI Infrastructure"
-    },
-    {
       "@id": "urn:ngm:class:neural-network",
       "label": "Neural Networks"
     }
@@ -547,6 +543,9 @@ public:: true
         "@id": "urn:ngm:class:nvidia-corporation",
         "label": "NVIDIA"
       }
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:ai-infrastructure", "label": "AI Infrastructure"}
     ]
   },
   "quality": 0.52,

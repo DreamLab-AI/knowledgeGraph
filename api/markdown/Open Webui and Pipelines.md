@@ -187,10 +187,6 @@ public:: true
   "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:ai-infrastructure",
-      "label": "AI Infrastructure (Category)"
-    },
-    {
       "@id": "urn:ngm:class:chatbots",
       "label": "Chatbots"
     },
@@ -200,6 +196,9 @@ public:: true
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:ai-infrastructure", "label": "AI Infrastructure"}
+    ],
     "hasPart": [
       {
         "@id": "urn:ngm:class:function-calling",
@@ -214,7 +213,7 @@ public:: true
         "label": "Ollama"
       },
       {
-        "@id": "urn:ngm:class:openai-research-organisation-research-organisation-whisper",
+        "@id": "urn:ngm:class:openai-research-organisation-whisper",
         "label": "Open AI Whisper"
       },
       {
@@ -298,7 +297,7 @@ public:: true
         "label": "Ollama"
       },
       {
-        "@id": "urn:ngm:class:openai-research-organisation-research-organisation-whisper",
+        "@id": "urn:ngm:class:openai-research-organisation-whisper",
         "label": "Open AI Whisper"
       },
       {

@@ -36,7 +36,7 @@ elevatedFrom:: [[Radicle]]
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:radicle-decentralised-code-forge-decentralised-code-forge",
+  "@id": "urn:ngm:class:radicle-decentralised-code-forge",
   "@type": "Class",
   "label": "Radicle Decentralised Code Forge",
   "definition": "Radicle is a decentralised, peer-to-peer code collaboration platform built on Git that eliminates dependence on centralised forges such as GitHub or GitLab. It uses a content-addressed, cryptographically signed data model where repositories are identified by public keys rather than server-hosted URLs, enabling sovereign code hosting, offline collaboration, and censorship-resistant software development. Radicle integrates with Ethereum-based smart contracts for governance and funding, positioning it at the intersection of blockchain infrastructure and open-source software tooling.",

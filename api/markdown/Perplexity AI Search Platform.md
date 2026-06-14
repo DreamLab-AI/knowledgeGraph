@@ -31,7 +31,7 @@ elevatedFrom:: [[perplexity]]
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:perplexity-ai-search-platform-ai-search-platform",
+  "@id": "urn:ngm:class:perplexity-ai-search-platform",
   "@type": "Class",
   "label": "Perplexity AI Search Platform",
   "definition": "perplexity is a technology infrastructure concept and a type of infrastructure.",
@@ -41,10 +41,6 @@ elevatedFrom:: [[perplexity]]
     {
       "@id": "urn:ngm:class:infra-computing-and-cloud",
       "label": "Computing and Cloud"
-    },
-    {
-      "@id": "urn:ngm:class:evaluation-metric",
-      "label": "Evaluation Metric"
     }
   ],
   "quality": 0.5,
@@ -54,6 +50,9 @@ elevatedFrom:: [[perplexity]]
     "inferenceRule": "R5DomainRootFallback"
   },
   "relations": {
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:evaluation-metric", "label": "Evaluation Metric"}
+    ],
     "relatedTo": [
       {
         "@id": "urn:ngm:class:technology-infrastructure-domain",

@@ -55,10 +55,6 @@ public:: true
     {
       "@id": "urn:ngm:class:ai-technique",
       "label": "AI Technique"
-    },
-    {
-      "@id": "urn:ngm:class:ai-framework",
-      "label": "AI Framework"
     }
   ],
   "relations": {
@@ -80,7 +76,8 @@ public:: true
       {"@id": "urn:ngm:class:optimization-technique", "label": "Optimization Technique"}
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
+      {"@id": "urn:ngm:class:ai-framework", "label": "AI Framework"}
     ]
   },
   "provenance": {

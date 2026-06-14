@@ -49,14 +49,13 @@ public:: true
     {
       "@id": "urn:ngm:class:robo-perception",
       "label": "Perception and Sensing"
-    },
-    {
-      "@id": "urn:ngm:class:sensor",
-      "label": "Sensor"
     }
   ],
   "quality": 0.7,
   "relations": {
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:sensor", "label": "Sensor"}
+    ],
     "hasPart": [
       {"@id": "urn:ngm:class:rb-0067-force-torque-sensor", "label": "rb 0067 force torque sensor"},
       {"@id": "urn:ngm:class:rb-0068-vision-system", "label": "rb 0068 vision system"},

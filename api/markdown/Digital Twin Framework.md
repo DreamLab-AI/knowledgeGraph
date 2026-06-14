@@ -89,13 +89,15 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
       "label": "Platform and Environment"
-    },
-    {
-      "@id": "urn:ngm:class:enterprise-architecture",
-      "label": "Enterprise Architecture"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:enterprise-architecture",
+        "label": "Enterprise Architecture"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:data-models",

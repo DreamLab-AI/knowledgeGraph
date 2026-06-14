@@ -77,10 +77,6 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-display-and-rendering",
       "label": "Display and Rendering"
-    },
-    {
-      "@id": "urn:ngm:class:spatial-data-structure",
-      "label": "Spatial Data Structure"
     }
   ],
   "relations": {
@@ -111,6 +107,9 @@ public:: true
         "@id": "urn:ngm:class:ray-tracing",
         "label": "Ray Tracing"
       }
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:spatial-data-structure", "label": "Spatial Data Structure"}
     ]
   },
   "quality": 0.35,

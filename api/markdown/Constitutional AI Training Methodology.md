@@ -48,7 +48,7 @@ elevatedFrom:: [[Constitutional AI]]
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:constitutional-ai-training-methodology-training-methodology",
+  "@id": "urn:ngm:class:constitutional-ai-training-methodology",
   "@type": "Class",
   "label": "Constitutional AI Training Methodology",
   "definition": "A method for training AI assistants to be harmless through self-improvement, using a set of principles or \"constitution\" to guide behaviour without human labels for harmful outputs. Constitutional AI combines supervised learning for self-critiques and revisions with Reinforcement Learning from AI Feedback (RLAIF), producing models that are helpful, harmless, and honest at scale.",

@@ -58,10 +58,6 @@ alias:: Constraint-Based Design
     {
       "@id": "urn:ngm:class:ai-technique",
       "label": "AI Technique"
-    },
-    {
-      "@id": "urn:ngm:class:ai-system-component",
-      "label": "AI System Component"
     }
   ],
   "quality": 0.75,
@@ -89,7 +85,8 @@ alias:: Constraint-Based Design
     ],
     "bridgesTo": [
       {"@id": "urn:ngm:class:robotics", "label": "Robotics"},
-      {"@id": "urn:ngm:class:simulation-engine", "label": "Simulation Engine"}
+      {"@id": "urn:ngm:class:simulation-engine", "label": "Simulation Engine"},
+      {"@id": "urn:ngm:class:ai-system-component", "label": "AI System Component"}
     ]
   }
 }

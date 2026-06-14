@@ -18,7 +18,7 @@ elevatedFrom:: [[Stable Diffusion]]
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:stable-diffusion-image-model-image-model",
+  "@id": "urn:ngm:class:stable-diffusion-image-model",
   "@type": "Class",
   "label": "Stable Diffusion Image Model",
   "definition": "Stable Diffusion is an open-source latent diffusion model developed by Stability AI in collaboration with CompVis and Runway, released in 2022, capable of generating high-quality images from text prompts. It operates in a compressed latent space rather than pixel space, dramatically reducing computational requirements compared to earlier diffusion models. The model supports text-to-image, image-to-image, and inpainting tasks, and has become the foundation for a large ecosystem of fine-tuned variants and extension tools.",

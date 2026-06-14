@@ -71,7 +71,7 @@ public:: true
         "label": "Transformer"
       },
       {
-        "@id": "urn:ngm:class:openai-research-organisation-research-organisation",
+        "@id": "urn:ngm:class:openai-research-organisation",
         "label": "OpenAI"
       }
     ],

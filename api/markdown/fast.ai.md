@@ -479,19 +479,14 @@ public:: true
   "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:ai-infrastructure",
-      "label": "AI Infrastructure (Category)"
-    },
-    {
       "@id": "urn:ngm:class:ai-application",
       "label": "AI Application"
-    },
-    {
-      "@id": "urn:ngm:class:ai-infrastructure",
-      "label": "AI Infrastructure"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:ai-infrastructure", "label": "AI Infrastructure"}
+    ],
     "hasPart": [
       {
         "@id": "urn:ngm:class:answer-ai",

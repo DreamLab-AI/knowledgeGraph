@@ -3,7 +3,7 @@
   "title": "Radicle Decentralised Code Forge",
   "slug": "radicle-decentralised-code-forge",
   "public": true,
-  "classIri": "urn:ngm:class:radicle-decentralised-code-forge-decentralised-code-forge",
+  "classIri": "urn:ngm:class:radicle-decentralised-code-forge",
   "domain": "blockchain",
   "definition": "Radicle is a decentralised, peer-to-peer code collaboration platform built on Git that eliminates dependence on centralised forges such as GitHub or GitLab. It uses a content-addressed, cryptographically signed data model where repositories are identified by public keys rather than server-hosted URLs, enabling sovereign code hosting, offline collaboration, and censorship-resistant software development. Radicle integrates with Ethereum-based smart contracts for governance and funding, positioning it at the intersection of blockchain infrastructure and open-source software tooling.",
   "subClassOf": [

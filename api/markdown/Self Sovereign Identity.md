@@ -450,13 +450,15 @@ alias:: BC-0188-self-sovereign-identity, BC-0456-self-sovereign-identity, Self-S
     {
       "@id": "urn:ngm:class:bc-network-component",
       "label": "Network Component"
-    },
-    {
-      "@id": "urn:ngm:class:decentralised-identity",
-      "label": "Decentralised Identity"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      }
+    ],
     "hasPart": [
       {
         "@id": "urn:ngm:class:credential-definition",

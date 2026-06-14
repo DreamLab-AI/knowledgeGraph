@@ -8,8 +8,8 @@
   "definition": "Distributed Collaboration is the set of technologies, protocols, and organisational practices that enable geographically or temporally dispersed individuals and teams to work together on shared tasks, artefacts, and decisions. It encompasses both synchronous modalities\u2014real-time video conferencing, shared virtual workspaces, co-presence mechanisms\u2014and asynchronous modalities such as version-controlled repositories, threaded discussion, and document co-authoring. The field draws on distributed systems theory, human-computer interaction, and organisational science to address challenges of latency, consistency, access control, and remote team coordination. In emerging spatial and AI-augmented contexts, distributed collaboration extends to avatar-based co-presence, AI-assisted meeting facilitation, and decentralised consensus workflows.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:distributed-systems",
-      "label": "Distributed Systems"
+      "id": "urn:ngm:class:owl#Thing",
+      "label": "owl#Thing"
     }
   ],
   "entityType": "Class",
@@ -99,6 +99,10 @@
       {
         "id": "urn:ngm:class:decentralised-autonomous-organisation",
         "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
       }
     ],
     "uses": [

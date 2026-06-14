@@ -23,8 +23,8 @@
   "quality": 0.72,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:distributed-systems",
-      "label": "Distributed Systems"
+      "@id": "urn:ngm:class:owl#Thing",
+      "label": "owl#Thing"
     }
   ],
   "relations": {
@@ -67,7 +67,8 @@
     "bridgesTo": [
       {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
       {"@id": "urn:ngm:class:ai-assisted-collaboration", "label": "AI-Assisted Collaboration"},
-      {"@id": "urn:ngm:class:decentralised-autonomous-organisation", "label": "Decentralised Autonomous Organisation"}
+      {"@id": "urn:ngm:class:decentralised-autonomous-organisation", "label": "Decentralised Autonomous Organisation"},
+      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:computer-supported-cooperative-work", "label": "Computer-Supported Cooperative Work"},

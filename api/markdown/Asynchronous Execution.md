@@ -56,10 +56,6 @@ public:: true
   "qualityScore": 0.7,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:ai-infrastructure",
-      "label": "AI Infrastructure (Category)"
-    },
-    {
       "@id": "urn:ngm:class:execution-model",
       "label": "Execution Model"
     }
@@ -76,6 +72,9 @@ public:: true
     "supports": [
       {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
       {"@id": "urn:ngm:class:ai-agent-system", "label": "AI Agent System"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:ai-infrastructure", "label": "AI Infrastructure"}
     ]
   },
   "quality": 0.5,

@@ -219,10 +219,6 @@ public:: true
   "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:ai-infrastructure",
-      "label": "AI Infrastructure (Category)"
-    },
-    {
       "@id": "urn:ngm:class:ai-agent-system",
       "label": "AI Agent System"
     },
@@ -321,6 +317,9 @@ public:: true
         "@id": "urn:ngm:class:rag-pipeline",
         "label": "RAG Pipeline"
       }
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:ai-infrastructure", "label": "AI Infrastructure"}
     ]
   },
   "quality": 0.6,

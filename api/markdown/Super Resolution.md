@@ -66,13 +66,12 @@ alias:: Super-resolution
     {
       "@id": "urn:ngm:class:sc-display-and-rendering",
       "label": "Display and Rendering"
-    },
-    {
-      "@id": "urn:ngm:class:image-generation",
-      "label": "Image Generation"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:image-generation", "label": "Image Generation"}
+    ],
     "requires": [
       {"@id": "urn:ngm:class:convolutional-neural-network", "label": "Convolutional Neural Network"},
       {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}

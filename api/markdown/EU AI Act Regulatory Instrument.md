@@ -18,7 +18,7 @@ elevatedFrom:: [[EU AI Act]]
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument-regulatory-instrument",
+  "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
   "@type": "Class",
   "label": "EU AI Act Regulatory Instrument",
   "definition": "The EU AI Act (Regulation (EU) 2024/1689) is the European Union's comprehensive, legally binding horizontal regulation for artificial intelligence, establishing a four-tier risk-based classification system that prohibits certain AI practices outright, imposes strict pre-market conformity obligations on high-risk AI systems, mandates transparency duties for limited-risk AI, and introduces a dedicated governance regime for general-purpose AI models. Published in the Official Journal in July 2024 and progressively entering into force through 2025–2027, it represents the world's first binding horizontal AI law and creates a de facto global compliance benchmark through its extraterritorial scope. Enforcement is shared between national market surveillance authorities, the European AI Office, and the European AI Board, with penalties reaching up to €35 million or 7% of global annual turnover.",

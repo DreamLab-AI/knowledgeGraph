@@ -8,10 +8,6 @@
   "definition": "An Identification System is a system that determines or confirms the identity of an entity\u2014person, device, organisation, or digital asset\u2014by collecting, processing, and evaluating identity evidence against registered credentials or biometric templates. In AI contexts, identification systems increasingly use machine learning models for biometric recognition, document verification, and behavioural profiling, raising significant questions about accuracy, fairness, and privacy.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ai-infrastructure",
-      "label": "AI Infrastructure (Category)"
-    },
-    {
       "id": "urn:ngm:class:system",
       "label": "System"
     }
@@ -53,7 +49,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:machine-learning-discipline",

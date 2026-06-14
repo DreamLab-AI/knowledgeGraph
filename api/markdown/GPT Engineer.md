@@ -332,7 +332,7 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:openai-research-organisation-research-organisation-api",
+        "@id": "urn:ngm:class:openai-research-organisation-api",
         "label": "OpenAI API"
       },
       {
@@ -496,7 +496,7 @@ public:: true
         "label": "MBPP Benchmark"
       },
       {
-        "@id": "urn:ngm:class:openai-research-organisation-research-organisation-api",
+        "@id": "urn:ngm:class:openai-research-organisation-api",
         "label": "OpenAI API"
       },
       {

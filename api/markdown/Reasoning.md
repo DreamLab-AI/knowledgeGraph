@@ -255,15 +255,17 @@ public:: true
       "label": "AI Technique"
     },
     {
-      "@id": "urn:ngm:class:formal-verification",
-      "label": "Formal Verification"
-    },
-    {
       "@id": "urn:ngm:class:artificial-general-intelligence",
       "label": "Artificial General Intelligence"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      }
+    ],
     "hasPart": [
       {
         "@id": "urn:ngm:class:beam-search",

@@ -18,7 +18,7 @@ elevatedFrom:: [[Rust]]
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:rust-systems-programming-language-systems-programming-language",
+  "@id": "urn:ngm:class:rust-systems-programming-language",
   "@type": "Class",
   "label": "Rust Systems Programming Language",
   "definition": "Rust is a compiled, statically typed systems programming language created at Mozilla Research and first released in 2015, designed to provide C-like performance and low-level memory control without the memory safety vulnerabilities that plague C and C++. Its defining innovation is the ownership-and-borrowing type system, which enforces at compile time that each value has exactly one owner, references obey strict lifetime rules, and data races are structurally impossible — all without a garbage collector. Rust has rapidly become the preferred language for writing safe, high-performance systems software, blockchain runtimes, WebAssembly modules, embedded firmware, and operating system kernels.",

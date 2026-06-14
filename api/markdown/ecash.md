@@ -258,10 +258,6 @@ public:: true
     {
       "@id": "urn:ngm:class:bc-token-and-asset",
       "label": "Token and Asset"
-    },
-    {
-      "@id": "urn:ngm:class:payment-system",
-      "label": "Payment System"
     }
   ],
   "quality": 0.5,
@@ -271,6 +267,9 @@ public:: true
     "inferenceRule": "R2WikilinkParentInference"
   },
   "relations": {
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:payment-system", "label": "Payment System"}
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:censorship-resistance",

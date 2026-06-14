@@ -58,13 +58,12 @@ alias:: Search & Discovery
     {
       "@id": "urn:ngm:class:sc-standards-and-interop",
       "label": "Standards and Interoperability"
-    },
-    {
-      "@id": "urn:ngm:class:information-retrieval",
-      "label": "Information Retrieval"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:information-retrieval", "label": "Information Retrieval"}
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:user-navigation",

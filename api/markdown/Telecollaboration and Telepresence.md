@@ -4382,13 +4382,12 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
       "label": "Platform and Environment"
-    },
-    {
-      "@id": "urn:ngm:class:telepresence",
-      "label": "Telepresence"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:telepresence", "label": "Telepresence"}
+    ],
     "requires": [
       {"@id": "urn:ngm:class:latency", "label": "Latency"},
       {"@id": "urn:ngm:class:network-protocol", "label": "Network Protocol"},

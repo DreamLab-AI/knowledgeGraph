@@ -19,7 +19,7 @@ alias:: BC-0066-ethereum
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:ethereum-smart-contract-platform-smart-contract-platform",
+  "@id": "urn:ngm:class:ethereum-smart-contract-platform",
   "@type": "Class",
   "label": "Ethereum Smart Contract Platform",
   "definition": "Ethereum is a decentralised, open-source blockchain platform that introduced Turing-complete smart contracts, enabling programmable, self-executing agreements without trusted intermediaries. Launched in 2015 by Vitalik Buterin and co-founders, it underpins the largest ecosystem of decentralised applications (dApps), decentralised finance (DeFi), and NFT markets. Its transition to proof-of-stake consensus via The Merge in September 2022 dramatically reduced its energy footprint while preserving security.",

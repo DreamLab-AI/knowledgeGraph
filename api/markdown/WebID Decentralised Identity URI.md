@@ -36,7 +36,7 @@ elevatedFrom:: [[webid]]
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:webid-decentralised-identity-uri-decentralised-identity-uri",
+  "@id": "urn:ngm:class:webid-decentralised-identity-uri",
   "@type": "Class",
   "label": "WebID Decentralised Identity URI",
   "definition": "A WebID is a URI that uniquely identifies an agent (person, organisation, or software) on the web and dereferences to an RDF profile document containing structured data about that agent. It underpins decentralised identity and access control across the Solid ecosystem and linked-data applications, allowing any service to authenticate and authorise users without a central identity provider.",

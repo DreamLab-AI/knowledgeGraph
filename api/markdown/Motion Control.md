@@ -342,17 +342,12 @@ alias:: MotionControl
     {
       "@id": "urn:ngm:class:robo-actuation-and-control",
       "label": "Actuation and Control"
-    },
-    {
-      "@id": "urn:ngm:class:industrial-automation",
-      "label": "Industrial Automation"
-    },
-    {
-      "@id": "urn:ngm:class:robo-actuation-and-control",
-      "label": "Robo Actuation And Control"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:industrial-automation", "label": "IndustrialAutomation"}
+    ],
     "hasPart": [
       {
         "@id": "urn:ngm:class:cnc",

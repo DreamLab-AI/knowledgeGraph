@@ -65,7 +65,7 @@ elevatedFrom:: [[ChatGPT]]
       {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human-Computer Interaction"}
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:openai-research-organisation-research-organisation", "label": "OpenAI"}
+      {"@id": "urn:ngm:class:openai-research-organisation", "label": "OpenAI"}
     ],
     "supports": [
       {"@id": "urn:ngm:class:code-generation", "label": "Code Generation"},

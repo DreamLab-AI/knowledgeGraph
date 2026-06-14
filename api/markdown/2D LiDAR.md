@@ -53,10 +53,6 @@ public:: true
     {
       "@id": "urn:ngm:class:robo-perception",
       "label": "Perception and Sensing"
-    },
-    {
-      "@id": "urn:ngm:class:lidar",
-      "label": "Lidar"
     }
   ],
   "relations": {
@@ -78,6 +74,9 @@ public:: true
     ],
     "partOf": [
       {"@id": "urn:ngm:class:robo-perception", "label": "Perception and Sensing"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:lidar", "label": "Lidar"}
     ]
   },
   "quality": 0.8,

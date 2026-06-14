@@ -52,10 +52,6 @@ public:: true
   "qualityScore": 0.8,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:ai-infrastructure",
-      "label": "AI Infrastructure (Category)"
-    },
-    {
       "@id": "urn:ngm:class:system",
       "label": "System"
     }
@@ -82,6 +78,9 @@ public:: true
       {"@id": "urn:ngm:class:identity-management-system", "label": "Identity Management System"},
       {"@id": "urn:ngm:class:privacy-preserving-technology", "label": "Privacy Preserving Technology"},
       {"@id": "urn:ngm:class:algorithmic-bias", "label": "Algorithmic Bias"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:ai-infrastructure", "label": "AI Infrastructure"}
     ]
   },
   "provenance": {

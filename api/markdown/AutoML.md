@@ -212,16 +212,8 @@ alias:: Auto-ML
   "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:ai-infrastructure",
-      "label": "AI Infrastructure (Category)"
-    },
-    {
       "@id": "urn:ngm:class:ai-agent-system",
       "label": "AI Agent System"
-    },
-    {
-      "@id": "urn:ngm:class:machine-learning-discipline-pipeline",
-      "label": "Machine Learning Pipeline"
     }
   ],
   "relations": {
@@ -310,6 +302,10 @@ alias:: Auto-ML
         "@id": "urn:ngm:class:mlops-platform",
         "label": "MLOps Platform"
       }
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:machine-learning-discipline-pipeline", "label": "Machine Learning Pipeline"},
+      {"@id": "urn:ngm:class:ai-infrastructure", "label": "AI Infrastructure"}
     ]
   },
   "quality": 0.6,

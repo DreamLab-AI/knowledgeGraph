@@ -680,7 +680,7 @@ public:: true
         "label": "ONNX Operator Set"
       },
       {
-        "@id": "urn:ngm:class:openai-research-organisation-research-organisation-triton",
+        "@id": "urn:ngm:class:openai-research-organisation-triton",
         "label": "OpenAI Triton"
       }
     ]

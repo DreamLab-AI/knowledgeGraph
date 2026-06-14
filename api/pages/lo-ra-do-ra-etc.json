@@ -12,10 +12,6 @@
       "label": "AI Technique"
     },
     {
-      "id": "urn:ngm:class:ai-infrastructure",
-      "label": "AI Infrastructure"
-    },
-    {
       "id": "urn:ngm:class:neural-network",
       "label": "Neural Networks"
     }
@@ -150,7 +146,12 @@
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:gradient-checkpointing",

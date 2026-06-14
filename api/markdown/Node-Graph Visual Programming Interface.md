@@ -42,13 +42,12 @@ elevatedFrom:: [[Node based visual interfaces]]
     {
       "@id": "urn:ngm:class:infra-software-engineering",
       "label": "Software Engineering"
-    },
-    {
-      "@id": "urn:ngm:class:user-interface",
-      "label": "User Interface"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:user-interface", "label": "User Interface"}
+    ],
     "enables": [
       {"@id": "urn:ngm:class:workflow-automation", "label": "Workflow Automation"},
       {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"}

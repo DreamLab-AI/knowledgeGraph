@@ -54,10 +54,6 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
       "label": "Content and Assets"
-    },
-    {
-      "@id": "urn:ngm:class:digital-asset-management",
-      "label": "Digital Asset Management"
     }
   ],
   "provenance": {
@@ -66,6 +62,9 @@ public:: true
     "inferenceRule": "R1Explicit"
   },
   "relations": {
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:digital-asset-management", "label": "Digital Asset Management"}
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:smart-contract",

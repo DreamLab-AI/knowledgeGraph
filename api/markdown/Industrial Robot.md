@@ -299,12 +299,8 @@ public:: true
       "label": "Robot Type"
     },
     {
-      "@id": "urn:ngm:class:manufacturing-automation",
-      "label": "Manufacturing Automation"
-    },
-    {
       "@id": "urn:ngm:class:robo-actuation-and-control",
-      "label": "Robo Actuation And Control"
+      "label": "Actuation and Control"
     }
   ],
   "relations": {
@@ -495,6 +491,9 @@ public:: true
         "@id": "urn:ngm:class:iso-ts-15066",
         "label": "ISO TS 15066"
       }
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:manufacturing-automation", "label": "Manufacturing Automation"}
     ]
   },
   "quality": 0.52,

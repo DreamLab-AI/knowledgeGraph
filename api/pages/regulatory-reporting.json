@@ -10,10 +10,6 @@
     {
       "id": "urn:ngm:class:infra-legal-and-regulatory",
       "label": "Legal and Regulatory"
-    },
-    {
-      "id": "urn:ngm:class:financial-services",
-      "label": "Financial Services"
     }
   ],
   "entityType": "Class",

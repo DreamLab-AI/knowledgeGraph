@@ -10,10 +10,6 @@
     {
       "id": "urn:ngm:class:ai-model-architecture",
       "label": "AI Model Architecture"
-    },
-    {
-      "id": "urn:ngm:class:model-architecture",
-      "label": "Model Architecture"
     }
   ],
   "entityType": "Class",
@@ -54,7 +50,12 @@
         "label": "Neural Network Architecture"
       }
     ],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:model-architecture",
+        "label": "Model Architecture"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],

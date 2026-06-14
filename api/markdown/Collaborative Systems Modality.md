@@ -31,7 +31,7 @@ elevatedFrom:: [[collaborative]]
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:collaborative-systems-modality-systems-modality",
+  "@id": "urn:ngm:class:collaborative-systems-modality",
   "@type": "Class",
   "label": "Collaborative Systems Modality",
   "definition": "Collaborative describes systems, processes, or modalities in which multiple agents—human or robotic—work together toward shared goals, actively coordinating actions, sharing information, and adapting to one another's contributions. In robotics, 'collaborative' is most precisely applied to human–robot collaboration (HRC) per ISO/TS 15066, where robot and human share a workspace without fixed barriers. In knowledge work and software, it describes tools and practices enabling co-creation, distributed editing, and collective decision-making across asynchronous or real-time channels.",
@@ -41,10 +41,6 @@ elevatedFrom:: [[collaborative]]
     {
       "@id": "urn:ngm:class:infra-computing-and-cloud",
       "label": "Computing and Cloud"
-    },
-    {
-      "@id": "urn:ngm:class:collaboration",
-      "label": "Collaboration"
     }
   ],
   "quality": 0.7,
@@ -54,13 +50,16 @@ elevatedFrom:: [[collaborative]]
     "inferenceRule": "R2SemanticLabelMatch"
   },
   "relations": {
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:collaboration", "label": "Collaboration"}
+    ],
     "hasPart": [
-      {"@id": "urn:ngm:class:collaborative-systems-modality-systems-modality-operation", "label": "Collaborative Operation"},
-      {"@id": "urn:ngm:class:collaborative-systems-modality-systems-modality-learning", "label": "Collaborative Learning"},
+      {"@id": "urn:ngm:class:collaborative-systems-modality-operation", "label": "Collaborative Operation"},
+      {"@id": "urn:ngm:class:collaborative-systems-modality-learning", "label": "Collaborative Learning"},
       {"@id": "urn:ngm:class:asynchronous-collaboration", "label": "Asynchronous Collaboration"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:collaborative-systems-modality-systems-modality-robot", "label": "Collaborative Robot"},
+      {"@id": "urn:ngm:class:collaborative-systems-modality-robot", "label": "Collaborative Robot"},
       {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human Robot Interaction"},
       {"@id": "urn:ngm:class:multi-agent-systems", "label": "Multi-Agent Systems"},
       {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"}

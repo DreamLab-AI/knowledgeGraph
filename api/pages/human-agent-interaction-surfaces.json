@@ -10,10 +10,6 @@
     {
       "id": "urn:ngm:class:infra-computing-and-cloud",
       "label": "Computing and Cloud"
-    },
-    {
-      "id": "urn:ngm:class:user-interface",
-      "label": "User Interface"
     }
   ],
   "entityType": "Class",
@@ -35,7 +31,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:user-interface",
+        "label": "User Interface"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:node-graph-visual-programming-interface",

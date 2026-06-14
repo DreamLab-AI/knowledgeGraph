@@ -8,14 +8,6 @@
   "definition": "Model Optimisation and Performance is the body of post-training techniques, inference-time systems, and hardware-aware transformations that reduce the computational cost, memory footprint, and latency of neural networks\u2014particularly large language models (LLMs)\u2014without unacceptable degradation of...",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ai-infrastructure",
-      "label": "AI Infrastructure (Category)"
-    },
-    {
-      "id": "urn:ngm:class:ai-infrastructure",
-      "label": "AI Infrastructure"
-    },
-    {
       "id": "urn:ngm:class:mlops",
       "label": "MLOps"
     }
@@ -142,7 +134,12 @@
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:bfloat16",

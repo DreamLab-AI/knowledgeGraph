@@ -59,7 +59,7 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:openai-research-organisation-research-organisation-agents-sdk",
+  "@id": "urn:ngm:class:openai-research-organisation-agents-sdk",
   "@type": "Class",
   "label": "OpenAI Agents SDK",
   "definition": "The OpenAI Agents SDK is a software development kit for building agentic applications on OpenAI models, providing primitives for agents, tools and handoffs. It supports orchestrating one or more agents that call functions and pass control between each other.",

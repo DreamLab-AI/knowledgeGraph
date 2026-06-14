@@ -8,10 +8,6 @@
   "definition": "Ebenchmarks and leaderboards constitute the standardised measurement infrastructure of contemporary artificial intelligence, comprising curated test datasets, scoring protocols, and publicly comparable scoreboards that quantify model capability, safety, robustness, and alignment across narrowly s...",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ai-infrastructure",
-      "label": "AI Infrastructure (Category)"
-    },
-    {
       "id": "urn:ngm:class:ai-evaluation",
       "label": "AI Evaluation"
     },
@@ -150,7 +146,12 @@
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:adversarial-generation",

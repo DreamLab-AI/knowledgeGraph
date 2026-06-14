@@ -12,12 +12,8 @@
       "label": "Robot Type"
     },
     {
-      "id": "urn:ngm:class:manufacturing-automation",
-      "label": "Manufacturing Automation"
-    },
-    {
       "id": "urn:ngm:class:robo-actuation-and-control",
-      "label": "Robo Actuation And Control"
+      "label": "Actuation and Control"
     }
   ],
   "entityType": "Class",
@@ -126,7 +122,12 @@
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:manufacturing-automation",
+        "label": "Manufacturing Automation"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:ether-cat",

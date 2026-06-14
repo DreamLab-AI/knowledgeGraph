@@ -334,13 +334,15 @@ alias:: BC-0486-regulatory-reporting
     {
       "@id": "urn:ngm:class:infra-legal-and-regulatory",
       "label": "Legal and Regulatory"
-    },
-    {
-      "@id": "urn:ngm:class:financial-services",
-      "label": "Financial Services"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:financial-services",
+        "label": "Financial Services"
+      }
+    ],
     "hasPart": [
       {
         "@id": "urn:ngm:class:incident-reporting",

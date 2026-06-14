@@ -81,10 +81,6 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
       "label": "Content and Assets"
-    },
-    {
-      "@id": "urn:ngm:class:spatial-data-structure",
-      "label": "Spatial Data Structure"
     }
   ],
   "relations": {
@@ -115,6 +111,9 @@ public:: true
         "@id": "urn:ngm:class:semantic-scene-understanding",
         "label": "Semantic Scene Understanding"
       }
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:spatial-data-structure", "label": "Spatial Data Structure"}
     ]
   },
   "quality": 0.35,

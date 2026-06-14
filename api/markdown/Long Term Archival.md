@@ -58,13 +58,15 @@ alias:: Long-Term Archival
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
       "label": "Content and Assets"
-    },
-    {
-      "@id": "urn:ngm:class:digital-preservation",
-      "label": "Digital Preservation"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:digital-preservation",
+        "label": "Digital Preservation"
+      }
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:future-asset-access",

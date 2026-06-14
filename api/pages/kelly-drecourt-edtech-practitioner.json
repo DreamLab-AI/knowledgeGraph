@@ -3,7 +3,7 @@
   "title": "Kelly Drecourt EdTech Practitioner",
   "slug": "kelly-drecourt-edtech-practitioner",
   "public": true,
-  "classIri": "urn:ngm:class:kelly-drecourt-edtech-practitioner-edtech-practitioner",
+  "classIri": "urn:ngm:class:kelly-drecourt-edtech-practitioner",
   "domain": "infrastructure",
   "definition": "Kelly Drecourt is a collaborator and practitioner associated with teacher-support application development, operating at the intersection of educational technology and AI-assisted tools for classroom and curriculum support.",
   "subClassOf": [

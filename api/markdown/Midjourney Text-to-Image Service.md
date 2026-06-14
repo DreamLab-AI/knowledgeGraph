@@ -60,7 +60,7 @@ elevatedFrom:: [[Midjourney]]
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:midjourney-text-to-image-service-text-to-image-service",
+  "@id": "urn:ngm:class:midjourney-text-to-image-service",
   "@type": "Class",
   "label": "Midjourney Text-to-Image Service",
   "definition": "Midjourney is a proprietary generative artificial intelligence service that produces images from natural-language text prompts. It is operated by an independent research lab of the same name and is accessed primarily through a Discord bot interface and, later, a dedicated web application. The system is known for a distinctive aesthetic and for iterating rapidly through successive model versions that improve coherence, resolution and prompt adherence.",

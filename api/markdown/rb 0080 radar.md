@@ -49,14 +49,13 @@ public:: true
     {
       "@id": "urn:ngm:class:robo-perception",
       "label": "Perception and Sensing"
-    },
-    {
-      "@id": "urn:ngm:class:sensor",
-      "label": "Sensor"
     }
   ],
   "quality": 0.7,
   "relations": {
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:sensor", "label": "Sensor"}
+    ],
     "relatedTo": [
       {"@id": "urn:ngm:class:rb-0069-lidar", "label": "rb 0069 lidar"},
       {"@id": "urn:ngm:class:rb-0075-range-finder", "label": "rb 0075 range finder"},

@@ -105,14 +105,6 @@ public:: true
     {
       "@id": "urn:ngm:class:robo-perception",
       "label": "Perception and Sensing"
-    },
-    {
-      "@id": "urn:ngm:class:robo-perception",
-      "label": "Robo Perception"
-    },
-    {
-      "@id": "urn:ngm:class:sensor",
-      "label": "Sensor"
     }
   ],
   "relations": {
@@ -155,6 +147,9 @@ public:: true
         "@id": "urn:ngm:class:robotics",
         "label": "Robotics"
       }
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:sensor", "label": "Sensor"}
     ]
   },
   "quality": 0.56,

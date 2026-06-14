@@ -10,14 +10,6 @@
     {
       "id": "urn:ngm:class:ai-application",
       "label": "AI Application"
-    },
-    {
-      "id": "urn:ngm:class:ai-application",
-      "label": "AI Application"
-    },
-    {
-      "id": "urn:ngm:class:game-development",
-      "label": "Game Development"
     }
   ],
   "entityType": "Class",
@@ -194,7 +186,12 @@
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:game-development",
+        "label": "Game Development"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:domain-randomization",

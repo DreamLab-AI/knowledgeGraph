@@ -708,7 +708,7 @@ public:: true
         "label": "NIST AI RMF"
       },
       {
-        "@id": "urn:ngm:class:openai-research-organisation-research-organisation-charter",
+        "@id": "urn:ngm:class:openai-research-organisation-charter",
         "label": "OpenAI Charter"
       },
       {

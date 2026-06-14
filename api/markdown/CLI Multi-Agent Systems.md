@@ -513,7 +513,7 @@ alias:: CLI multi agent systems
         "label": "Agent2Agent Protocol"
       },
       {
-        "@id": "urn:ngm:class:openai-research-organisation-research-organisation-agents-sdk",
+        "@id": "urn:ngm:class:openai-research-organisation-agents-sdk",
         "label": "OpenAI Agents SDK"
       },
       {

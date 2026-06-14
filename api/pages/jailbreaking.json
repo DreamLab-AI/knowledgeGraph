@@ -12,10 +12,6 @@
       "label": "AI Technique"
     },
     {
-      "id": "urn:ngm:class:adversarial-machine-learning",
-      "label": "Adversarial Machine Learning"
-    },
-    {
       "id": "urn:ngm:class:prompt-engineering",
       "label": "Prompt Engineering"
     }
@@ -118,7 +114,12 @@
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:adversarial-machine-learning",
+        "label": "Adversarial Machine Learning"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:classifier-models",

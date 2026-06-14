@@ -54,13 +54,12 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-standards-and-interop",
       "label": "Standards and Interoperability"
-    },
-    {
-      "@id": "urn:ngm:class:knowledge-management",
-      "label": "Knowledge Management"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:knowledge-management", "label": "Knowledge Management"}
+    ],
     "uses": [
       {"@id": "urn:ngm:class:ontology", "label": "Ontology"},
       {"@id": "urn:ngm:class:controlled-vocabulary", "label": "Controlled Vocabulary"},

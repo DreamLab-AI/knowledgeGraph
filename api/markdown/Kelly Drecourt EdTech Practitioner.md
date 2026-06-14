@@ -31,7 +31,7 @@ elevatedFrom:: [[Kelly Drecourt]]
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:kelly-drecourt-edtech-practitioner-edtech-practitioner",
+  "@id": "urn:ngm:class:kelly-drecourt-edtech-practitioner",
   "@type": "Class",
   "label": "Kelly Drecourt EdTech Practitioner",
   "definition": "Kelly Drecourt is a collaborator and practitioner associated with teacher-support application development, operating at the intersection of educational technology and AI-assisted tools for classroom and curriculum support.",

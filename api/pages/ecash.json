@@ -10,10 +10,6 @@
     {
       "id": "urn:ngm:class:bc-token-and-asset",
       "label": "Token and Asset"
-    },
-    {
-      "id": "urn:ngm:class:payment-system",
-      "label": "Payment System"
     }
   ],
   "entityType": "Class",
@@ -40,7 +36,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:payment-system",
+        "label": "Payment System"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:elliptic-curve-cryptography",

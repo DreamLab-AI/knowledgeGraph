@@ -3,7 +3,7 @@
   "title": "Constitutional AI Training Methodology",
   "slug": "constitutional-ai-training-methodology",
   "public": true,
-  "classIri": "urn:ngm:class:constitutional-ai-training-methodology-training-methodology",
+  "classIri": "urn:ngm:class:constitutional-ai-training-methodology",
   "domain": "artificial-intelligence",
   "definition": "A method for training AI assistants to be harmless through self-improvement, using a set of principles or \"constitution\" to guide behaviour without human labels for harmful outputs. Constitutional AI combines supervised learning for self-critiques and revisions with Reinforcement Learning from AI Feedback (RLAIF), producing models that are helpful, harmless, and honest at scale.",
   "subClassOf": [

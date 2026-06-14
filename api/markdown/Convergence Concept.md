@@ -63,13 +63,12 @@ alias:: ConvergenceConcept
     {
       "@id": "urn:ngm:class:infra-computing-and-cloud",
       "label": "Computing and Cloud"
-    },
-    {
-      "@id": "urn:ngm:class:collaboration",
-      "label": "Collaboration"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:collaboration", "label": "Collaboration"}
+    ],
     "requires": [
       {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"},
       {"@id": "urn:ngm:class:open-xr", "label": "OpenXR"}

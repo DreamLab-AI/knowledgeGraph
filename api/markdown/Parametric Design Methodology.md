@@ -40,7 +40,7 @@ elevatedFrom:: [[Parametric]]
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:parametric-design-methodology-design-methodology",
+  "@id": "urn:ngm:class:parametric-design-methodology",
   "@type": "Class",
   "label": "Parametric Design Methodology",
   "definition": "A design methodology in which objects, environments, or behaviours are specified through adjustable parameters rather than fixed geometry, enabling variant generation and real-time adaptation. In metaverse and spatial computing contexts, parametric approaches underpin voice-and-text-driven CAD primitive creation, procedural content generation, and digital twin model customisation within shared virtual workspaces.",
@@ -55,7 +55,7 @@ elevatedFrom:: [[Parametric]]
   "qualityScore": 0.7,
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:parametric-design-methodology-design-methodology-modeling", "label": "Parametric Modeling"},
+      {"@id": "urn:ngm:class:parametric-design-methodology-modeling", "label": "Parametric Modeling"},
       {"@id": "urn:ngm:class:procedural-content-generation", "label": "Procedural Content Generation"}
     ],
     "enables": [

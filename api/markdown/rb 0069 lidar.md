@@ -113,13 +113,12 @@ public:: true
     {
       "@id": "urn:ngm:class:robo-perception",
       "label": "Perception and Sensing"
-    },
-    {
-      "@id": "urn:ngm:class:lidar",
-      "label": "Lidar"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:lidar", "label": "Lidar"}
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:3-d-mapping",

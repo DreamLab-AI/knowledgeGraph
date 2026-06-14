@@ -8,10 +8,6 @@
   "definition": "An execution model in which operations are initiated without blocking the calling thread; completion is signalled via callbacks, promises, futures, or events, enabling high-throughput concurrent processing particularly suited to I/O-bound workloads and distributed system communication.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ai-infrastructure",
-      "label": "AI Infrastructure (Category)"
-    },
-    {
       "id": "urn:ngm:class:execution-model",
       "label": "Execution Model"
     }
@@ -35,7 +31,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:event-driven-architecture",

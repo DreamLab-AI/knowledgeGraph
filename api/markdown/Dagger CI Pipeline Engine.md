@@ -36,7 +36,7 @@ elevatedFrom:: [[Dagger]]
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:dagger-ci-pipeline-engine-ci-pipeline-engine",
+  "@id": "urn:ngm:class:dagger-ci-pipeline-engine",
   "@type": "Class",
   "label": "Dagger CI Pipeline Engine",
   "definition": "Dagger is a programmable CI/CD engine that unifies pipeline definition and execution within typed, composable functions authored in general-purpose languages such as Go, Python, or TypeScript. Unlike traditional Dockerfile-and-shell-script approaches, Dagger caches the result of every function call at fine granularity, achieves CI/local parity by running identically on developer machines and cloud runners, and exposes pipelines as strongly-typed APIs discoverable via `dagger functions`.",

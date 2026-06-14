@@ -49,10 +49,6 @@ public:: true
     {
       "@id": "urn:ngm:class:robo-perception",
       "label": "Perception and Sensing"
-    },
-    {
-      "@id": "urn:ngm:class:camera",
-      "label": "Camera"
     }
   ],
   "quality": 0.7,
@@ -62,6 +58,9 @@ public:: true
     "inferenceRule": "R3SemanticRefinement"
   },
   "relations": {
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:camera", "label": "Camera"}
+    ],
     "enables": [
       {"@id": "urn:ngm:class:slam", "label": "SLAM"},
       {"@id": "urn:ngm:class:point-cloud", "label": "Point Cloud"},

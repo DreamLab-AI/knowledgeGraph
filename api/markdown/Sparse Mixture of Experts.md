@@ -50,10 +50,6 @@ public:: true
     {
       "@id": "urn:ngm:class:ai-model-architecture",
       "label": "AI Model Architecture"
-    },
-    {
-      "@id": "urn:ngm:class:model-architecture",
-      "label": "Model Architecture"
     }
   ],
   "quality": 0.5,
@@ -63,6 +59,12 @@ public:: true
     "inferenceRule": "R5DomainRootFallback"
   },
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:model-architecture",
+        "label": "Model Architecture"
+      }
+    ],
     "hasPart": [
       {
         "@id": "urn:ngm:class:attention-mechanism",

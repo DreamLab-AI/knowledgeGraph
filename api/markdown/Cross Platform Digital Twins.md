@@ -82,10 +82,6 @@ alias:: Cross-Platform Digital Twins
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
       "label": "Platform and Environment"
-    },
-    {
-      "@id": "urn:ngm:class:digital-twin-technology",
-      "label": "Digital Twin Technology"
     }
   ],
   "relations": {
@@ -116,6 +112,9 @@ alias:: Cross-Platform Digital Twins
         "@id": "urn:ngm:class:data-integration",
         "label": "Data Integration"
       }
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:digital-twin-technology", "label": "Digital Twin Technology"}
     ]
   },
   "quality": 0.35,

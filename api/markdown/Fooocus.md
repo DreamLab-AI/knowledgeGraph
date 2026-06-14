@@ -477,14 +477,6 @@ public:: true
     {
       "@id": "urn:ngm:class:ai-application",
       "label": "AI Application"
-    },
-    {
-      "@id": "urn:ngm:class:ai-infrastructure",
-      "label": "AI Infrastructure"
-    },
-    {
-      "@id": "urn:ngm:class:ai-infrastructure",
-      "label": "AI Infrastructure"
     }
   ],
   "relations": {
@@ -719,6 +711,9 @@ public:: true
         "@id": "urn:ngm:class:hugging-face-model-hub",
         "label": "Hugging Face Model Hub"
       }
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:ai-infrastructure", "label": "AI Infrastructure"}
     ]
   },
   "quality": 0.52,

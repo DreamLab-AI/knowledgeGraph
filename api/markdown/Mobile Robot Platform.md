@@ -345,10 +345,6 @@ public:: true
     {
       "@id": "urn:ngm:class:robo-robot-type",
       "label": "Robot Type"
-    },
-    {
-      "@id": "urn:ngm:class:cyber-physical-systems",
-      "label": "Cyber Physical System"
     }
   ],
   "relations": {
@@ -568,7 +564,8 @@ public:: true
       {
         "@id": "urn:ngm:class:embodied-ai",
         "label": "Embodied AI"
-      }
+      },
+      {"@id": "urn:ngm:class:cyber-physical-systems", "label": "Cyber Physical Systems"}
     ]
   },
   "quality": 0.52,

@@ -31,7 +31,7 @@ elevatedFrom:: [[Dreamlab]]
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:dreamlab-creative-technology-collective-creative-technology-collective",
+  "@id": "urn:ngm:class:dreamlab-creative-technology-collective",
   "@type": "Class",
   "label": "DreamLab Creative Technology Collective",
   "definition": "Dreamlab is a UK-based creative technologist collective offering multidisciplinary services spanning AI and machine learning, virtual production, immersive XR experiences, generative media, spatial computing, and strategic R&D partnerships. It operates at the intersection of advanced AI infrastructure, real-time rendering, and immersive storytelling for creative and enterprise clients.",

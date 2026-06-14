@@ -57,13 +57,12 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-interaction",
       "label": "Interaction Technology"
-    },
-    {
-      "@id": "urn:ngm:class:depth-sensing",
-      "label": "Depth Sensing"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:depth-sensing", "label": "Depth Sensing"}
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:3-d-environment-mapping",

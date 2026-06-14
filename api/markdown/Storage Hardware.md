@@ -51,13 +51,12 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
       "label": "Platform and Environment"
-    },
-    {
-      "@id": "urn:ngm:class:hardware-component",
-      "label": "Hardware Component"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:hardware-component", "label": "Hardware Component"}
+    ],
     "partOf": [
       {"@id": "urn:ngm:class:hardware-and-edge", "label": "Hardware and Edge"},
       {"@id": "urn:ngm:class:computing-hardware", "label": "Computing Hardware"}

@@ -470,7 +470,7 @@ public:: true
         "label": "Retrieval-Augmented Generation"
       },
       {
-        "@id": "urn:ngm:class:openai-research-organisation-research-organisation-whisper",
+        "@id": "urn:ngm:class:openai-research-organisation-whisper",
         "label": "OpenAI Whisper"
       }
     ],

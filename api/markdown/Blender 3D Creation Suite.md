@@ -44,7 +44,7 @@ elevatedFrom:: [[Blender]]
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:blender-3d-creation-suite-3d-creation-suite",
+  "@id": "urn:ngm:class:blender-3d-creation-suite",
   "@type": "Class",
   "label": "Blender 3D Creation Suite",
   "definition": "Blender is a free and open-source 3D creation suite supporting modelling, animation, rendering, and related workflows.",

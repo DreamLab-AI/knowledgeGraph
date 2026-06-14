@@ -31,7 +31,7 @@ elevatedFrom:: [[social media]]
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:social-media-platform-infrastructure-platform-infrastructure",
+  "@id": "urn:ngm:class:social-media-platform-infrastructure",
   "@type": "Class",
   "label": "Social Media Platform Infrastructure",
   "definition": "Digital platforms and applications that enable users to create, share, and interact with user-generated content within networked communities. Social media platforms combine content distribution infrastructure, algorithmic recommendation, identity and profile management, and real-time communication at scale. They are significant vectors for AI application (content moderation, recommendation, advertising optimisation) and raise governance challenges around bias, privacy, and misinformation.",

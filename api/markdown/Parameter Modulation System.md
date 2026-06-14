@@ -57,13 +57,12 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
       "label": "Content and Assets"
-    },
-    {
-      "@id": "urn:ngm:class:audio-system",
-      "label": "Audio System"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:audio-system", "label": "Audio System"}
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:dynamic-sound-design",

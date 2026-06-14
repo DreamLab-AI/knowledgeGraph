@@ -3,7 +3,7 @@
   "title": "NVIDIA Corporation",
   "slug": "nvidia-corporation",
   "public": true,
-  "classIri": "urn:ngm:class:nvidia-corporation-corporation",
+  "classIri": "urn:ngm:class:nvidia-corporation",
   "domain": "artificial-intelligence",
   "definition": "NVIDIA Corporation is an American multinational technology company specialising in the design and manufacture of graphics processing units (GPUs), system-on-chip units, and related software platforms that underpin modern parallel computing workloads. Founded in 1993, NVIDIA pioneered the GPU category and subsequently extended its platform to cover artificial intelligence accelerators, high-performance computing, autonomous vehicles, robotics, and data centre infrastructure. Its CUDA parallel-computing platform, combined with purpose-built AI accelerator hardware such as the A100 and H100, has made NVIDIA the dominant supplier of compute for training large language models and other deep neural networks. NVIDIA's vertically integrated hardware-software stack\u2014spanning chips, drivers, libraries, and cloud services\u2014positions the company as foundational infrastructure for the AI era.",
   "subClassOf": [

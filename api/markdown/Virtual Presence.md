@@ -54,10 +54,6 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
       "label": "Platform and Environment"
-    },
-    {
-      "@id": "urn:ngm:class:telepresence",
-      "label": "Telepresence"
     }
   ],
   "quality": 0.35,
@@ -67,6 +63,9 @@ public:: true
     "inferenceRule": "R1Explicit"
   },
   "relations": {
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:telepresence", "label": "Telepresence"}
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:virtual-reality",

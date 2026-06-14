@@ -51,7 +51,7 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-protocol",
+  "@id": "urn:ngm:class:bitcoin-protocol",
   "@type": "Class",
   "label": "Bitcoin Protocol",
   "definition": "The set of rules governing how Bitcoin transactions are formed, validated, and ordered into blocks by proof-of-work consensus, including the UTXO model, scripting system, block reward schedule, and difficulty adjustment mechanism.",

@@ -10,10 +10,6 @@
     {
       "id": "urn:ngm:class:robo-perception",
       "label": "Perception and Sensing"
-    },
-    {
-      "id": "urn:ngm:class:sensor",
-      "label": "Sensor"
     }
   ],
   "entityType": "Class",
@@ -44,7 +40,12 @@
         "label": "rb 0077 depth camera"
       }
     ],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:sensor",
+        "label": "Sensor"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],

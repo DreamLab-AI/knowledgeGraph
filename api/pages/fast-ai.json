@@ -8,16 +8,8 @@
   "definition": "fast.ai is a research lab, online course series, and open-source Python deep learning library founded by Jeremy Howard (former president and chief scientist of Kaggle, founder of FastMail and Optimal Decisions Group) and Rachel Thomas (UCSF / University of San Francisco data ics researcher), buil...",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ai-infrastructure",
-      "label": "AI Infrastructure (Category)"
-    },
-    {
       "id": "urn:ngm:class:ai-application",
       "label": "AI Application"
-    },
-    {
-      "id": "urn:ngm:class:ai-infrastructure",
-      "label": "AI Infrastructure"
     }
   ],
   "entityType": "Class",
@@ -142,7 +134,12 @@
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:adam-optimiser",

@@ -459,10 +459,6 @@ public:: true
   "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:ai-infrastructure",
-      "label": "AI Infrastructure (Category)"
-    },
-    {
       "@id": "urn:ngm:class:llm-orchestration",
       "label": "LLM Orchestration"
     }
@@ -472,7 +468,8 @@ public:: true
       {
         "@id": "urn:ngm:class:workflow-engine",
         "label": "Workflow Engine"
-      }
+      },
+      {"@id": "urn:ngm:class:ai-infrastructure", "label": "AI Infrastructure"}
     ],
     "hasPart": [
       {

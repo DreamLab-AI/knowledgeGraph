@@ -471,16 +471,8 @@ public:: true
   "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:ai-infrastructure",
-      "label": "AI Infrastructure (Category)"
-    },
-    {
       "@id": "urn:ngm:class:generative-model",
       "label": "Generative Model"
-    },
-    {
-      "@id": "urn:ngm:class:ai-infrastructure",
-      "label": "AI Infrastructure"
     }
   ],
   "relations": {
@@ -759,6 +751,9 @@ public:: true
         "@id": "urn:ngm:class:open-art-workflow-registry",
         "label": "OpenArt Workflow Registry"
       }
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:ai-infrastructure", "label": "AI Infrastructure"}
     ]
   },
   "quality": 0.52,

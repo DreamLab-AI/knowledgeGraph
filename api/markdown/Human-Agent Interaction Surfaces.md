@@ -75,10 +75,6 @@ elevatedFrom:: [[Interfaces]]
     {
       "@id": "urn:ngm:class:infra-computing-and-cloud",
       "label": "Computing and Cloud"
-    },
-    {
-      "@id": "urn:ngm:class:user-interface",
-      "label": "User Interface"
     }
   ],
   "relations": {
@@ -93,6 +89,9 @@ elevatedFrom:: [[Interfaces]]
     "relatedTo": [
       {"@id": "urn:ngm:class:user-interface", "label": "User Interface"},
       {"@id": "urn:ngm:class:api-gateway", "label": "API Gateway"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:user-interface", "label": "User Interface"}
     ]
   },
   "sameAs": [

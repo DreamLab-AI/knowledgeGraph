@@ -10,10 +10,6 @@
     {
       "id": "urn:ngm:class:robo-perception",
       "label": "Perception and Sensing"
-    },
-    {
-      "id": "urn:ngm:class:sensor",
-      "label": "Sensor"
     }
   ],
   "entityType": "Class",
@@ -26,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:sensor",
+        "label": "Sensor"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:sensor-fusion",

@@ -10,10 +10,6 @@
     {
       "id": "urn:ngm:class:robo-actuation-and-control",
       "label": "Actuation and Control"
-    },
-    {
-      "id": "urn:ngm:class:embedded-systems",
-      "label": "Embedded System"
     }
   ],
   "entityType": "Class",
@@ -190,7 +186,7 @@
         "label": "Eigen"
       },
       {
-        "id": "urn:ngm:class:openai-research-organisation-research-organisation-gym",
+        "id": "urn:ngm:class:openai-research-organisation-gym",
         "label": "OpenAI Gym"
       },
       {

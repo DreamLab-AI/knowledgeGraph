@@ -53,10 +53,6 @@ public:: true
     {
       "@id": "urn:ngm:class:robo-perception",
       "label": "Perception and Sensing"
-    },
-    {
-      "@id": "urn:ngm:class:lidar",
-      "label": "Lidar"
     }
   ],
   "relations": {
@@ -75,6 +71,9 @@ public:: true
       {"@id": "urn:ngm:class:lidar-scanning", "label": "Lidar Scanning"},
       {"@id": "urn:ngm:class:stereo-camera", "label": "Stereo Camera"},
       {"@id": "urn:ngm:class:multirotor-uav", "label": "Multirotor UAV"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:lidar", "label": "Lidar"}
     ]
   },
   "quality": 0.8,

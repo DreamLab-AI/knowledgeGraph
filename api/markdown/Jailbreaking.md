@@ -275,10 +275,6 @@ public:: true
       "label": "AI Technique"
     },
     {
-      "@id": "urn:ngm:class:adversarial-machine-learning",
-      "label": "Adversarial Machine Learning"
-    },
-    {
       "@id": "urn:ngm:class:prompt-engineering",
       "label": "Prompt Engineering"
     }
@@ -463,6 +459,9 @@ public:: true
         "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
       }
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:adversarial-machine-learning", "label": "Adversarial Machine Learning"}
     ]
   },
   "quality": 0.52,

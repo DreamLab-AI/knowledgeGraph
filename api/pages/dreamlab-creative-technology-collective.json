@@ -3,7 +3,7 @@
   "title": "DreamLab Creative Technology Collective",
   "slug": "dreamlab-creative-technology-collective",
   "public": true,
-  "classIri": "urn:ngm:class:dreamlab-creative-technology-collective-creative-technology-collective",
+  "classIri": "urn:ngm:class:dreamlab-creative-technology-collective",
   "domain": "infrastructure",
   "definition": "Dreamlab is a UK-based creative technologist collective offering multidisciplinary services spanning AI and machine learning, virtual production, immersive XR experiences, generative media, spatial computing, and strategic R&D partnerships. It operates at the intersection of advanced AI infrastructure, real-time rendering, and immersive storytelling for creative and enterprise clients.",
   "subClassOf": [

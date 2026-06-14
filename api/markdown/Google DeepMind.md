@@ -64,7 +64,7 @@ public:: true
       {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"}
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:openai-research-organisation-research-organisation", "label": "OpenAI"},
+      {"@id": "urn:ngm:class:openai-research-organisation", "label": "OpenAI"},
       {"@id": "urn:ngm:class:anthropic", "label": "Anthropic"},
       {"@id": "urn:ngm:class:meta-ai", "label": "Meta AI"}
     ],

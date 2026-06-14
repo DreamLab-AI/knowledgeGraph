@@ -10,10 +10,6 @@
     {
       "id": "urn:ngm:class:sc-platform-and-environment",
       "label": "Platform and Environment"
-    },
-    {
-      "id": "urn:ngm:class:virtual-event",
-      "label": "Virtual Event"
     }
   ],
   "entityType": "Class",
@@ -39,7 +35,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:virtual-event",
+        "label": "Virtual Event"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:audio-spatialization",

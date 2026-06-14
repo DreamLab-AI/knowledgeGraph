@@ -56,7 +56,7 @@ elevatedFrom:: [[Knowhere]]
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:knowhere-visitor-attention-system-visitor-attention-system",
+  "@id": "urn:ngm:class:knowhere-visitor-attention-system",
   "@type": "Class",
   "label": "KnoWhere Visitor Attention System",
   "definition": "KnoWhere is an AI-driven visitor attention-tracking system for museums and immersive experience spaces, using computer vision and machine vision cameras to capture gaze vectors, emotion signals, and spatial attention metrics in real time without wearables. It enables hyper-personalised narrative adaptation and provides curators with actionable behavioural analytics whilst preserving visitor privacy through anonymised data processing.",

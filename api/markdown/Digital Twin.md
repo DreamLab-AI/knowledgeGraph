@@ -134,13 +134,15 @@ alias:: Digital Twins, Digital-Twin, DigitalTwin
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
       "label": "Platform and Environment"
-    },
-    {
-      "@id": "urn:ngm:class:digital-twin-technology",
-      "label": "Digital Twin Technology"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:digital-twin-technology",
+        "label": "Digital Twin Technology"
+      }
+    ],
     "hasPart": [
       {
         "@id": "urn:ngm:class:control-interface",

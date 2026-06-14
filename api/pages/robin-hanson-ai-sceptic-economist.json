@@ -3,7 +3,7 @@
   "title": "Robin Hanson AI Sceptic Economist",
   "slug": "robin-hanson-ai-sceptic-economist",
   "public": true,
-  "classIri": "urn:ngm:class:robin-hanson-ai-sceptic-economist-ai-sceptic-economist",
+  "classIri": "urn:ngm:class:robin-hanson-ai-sceptic-economist",
   "domain": "infrastructure",
   "definition": "Robin Hanson is an economist, futurist, and author (George Mason University) known for contrarian analysis of AI progress timelines, the economics of prediction markets, and his book Age of Em which models a future dominated by brain emulations. He maintains a measured scepticism about near-term AGI, arguing that inertia, demographic decline, and adoption barriers make transformative AI further off than mainstream discourse suggests. His blog Overcoming Bias applies economic and evolutionary reasoning to cognition, signalling, and technology adoption.",
   "subClassOf": [

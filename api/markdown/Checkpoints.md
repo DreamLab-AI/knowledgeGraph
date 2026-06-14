@@ -337,14 +337,6 @@ public:: true
     {
       "@id": "urn:ngm:class:ai-technique",
       "label": "AI Technique"
-    },
-    {
-      "@id": "urn:ngm:class:ai-infrastructure",
-      "label": "AI Infrastructure"
-    },
-    {
-      "@id": "urn:ngm:class:model-versioning",
-      "label": "Model Versioning"
     }
   ],
   "relations": {
@@ -611,6 +603,10 @@ public:: true
         "@id": "urn:ngm:class:tensor-flow",
         "label": "TensorFlow"
       }
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:model-versioning", "label": "Model Versioning"},
+      {"@id": "urn:ngm:class:ai-infrastructure", "label": "AI Infrastructure"}
     ]
   },
   "quality": 0.52,

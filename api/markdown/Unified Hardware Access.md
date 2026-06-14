@@ -54,13 +54,12 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-standards-and-interop",
       "label": "Standards and Interoperability"
-    },
-    {
-      "@id": "urn:ngm:class:hardware-abstraction",
-      "label": "Hardware Abstraction"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:hardware-abstraction", "label": "Hardware Abstraction"}
+    ],
     "standardizedBy": [
       {"@id": "urn:ngm:class:open-standard", "label": "Open Standard"},
       {"@id": "urn:ngm:class:interoperability-standard", "label": "Interoperability Standard"}

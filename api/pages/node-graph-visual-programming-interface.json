@@ -10,10 +10,6 @@
     {
       "id": "urn:ngm:class:infra-software-engineering",
       "label": "Software Engineering"
-    },
-    {
-      "id": "urn:ngm:class:user-interface",
-      "label": "User Interface"
     }
   ],
   "entityType": "Class",
@@ -35,7 +31,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:user-interface",
+        "label": "User Interface"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:data-visualisation",

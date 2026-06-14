@@ -57,13 +57,12 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
       "label": "Platform and Environment"
-    },
-    {
-      "@id": "urn:ngm:class:multi-user-systems",
-      "label": "Multi-User Systems"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:multi-user-systems", "label": "Multi User Systems"}
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:shared-virtual-experiences",

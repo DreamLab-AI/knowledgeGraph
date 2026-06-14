@@ -3,7 +3,7 @@
   "title": "Multimodal AI Architecture",
   "slug": "multimodal-ai-architecture",
   "public": true,
-  "classIri": "urn:ngm:class:multimodal-ai-architecture-ai-architecture",
+  "classIri": "urn:ngm:class:multimodal-ai-architecture",
   "domain": "artificial-intelligence",
   "definition": "Multimodal AI refers to artificial intelligence systems that process, fuse, and generate content across multiple data modalities\u2014including text, images, audio, video, and 3D\u2014within a unified model architecture. Multimodal systems learn cross-modal alignments through joint embedding spaces, enabling capabilities such as image captioning, visual question answering, text-to-image synthesis, and real-time audio-visual understanding that single-modality models cannot achieve.",
   "subClassOf": [
@@ -59,7 +59,7 @@
         "label": "Speech Recognition"
       },
       {
-        "id": "urn:ngm:class:multimodal-ai-architecture-ai-architecture-ai",
+        "id": "urn:ngm:class:multimodal-ai-architecture-ai",
         "label": "Multimodal AI"
       }
     ]

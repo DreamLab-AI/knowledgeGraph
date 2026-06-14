@@ -14,10 +14,6 @@
     {
       "id": "urn:ngm:class:blockchain",
       "label": "Blockchain"
-    },
-    {
-      "id": "urn:ngm:class:enterprise-blockchain",
-      "label": "Enterprise Blockchain"
     }
   ],
   "entityType": "Class",
@@ -162,7 +158,12 @@
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:enterprise-blockchain",
+        "label": "Enterprise Blockchain"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:amqp",

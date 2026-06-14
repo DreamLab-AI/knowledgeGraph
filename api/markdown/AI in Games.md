@@ -429,17 +429,12 @@ public:: true
     {
       "@id": "urn:ngm:class:ai-application",
       "label": "AI Application"
-    },
-    {
-      "@id": "urn:ngm:class:ai-application",
-      "label": "AI Application"
-    },
-    {
-      "@id": "urn:ngm:class:game-development",
-      "label": "Game Development"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:game-development", "label": "Game Development"}
+    ],
     "hasPart": [
       {
         "@id": "urn:ngm:class:animation-controller",

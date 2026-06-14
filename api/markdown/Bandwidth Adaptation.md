@@ -365,10 +365,6 @@ public:: true
     {
       "@id": "urn:ngm:class:dc-protocol-and-infra",
       "label": "Protocol and Infrastructure"
-    },
-    {
-      "@id": "urn:ngm:class:congestion-control",
-      "label": "Congestion Control"
     }
   ],
   "relations": {
@@ -376,6 +372,10 @@ public:: true
       {
         "@id": "urn:ngm:class:infra-network-and-comms",
         "label": "Network and Communication"
+      },
+      {
+        "@id": "urn:ngm:class:congestion-control",
+        "label": "Congestion Control"
       }
     ],
     "hasPart": [

@@ -14,10 +14,6 @@
     {
       "id": "urn:ngm:class:ai-agent-system",
       "label": "AI Agent System"
-    },
-    {
-      "id": "urn:ngm:class:ai-infrastructure",
-      "label": "AI Infrastructure"
     }
   ],
   "entityType": "Class",
@@ -142,7 +138,12 @@
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:json-data-interchange-format-schema",
@@ -209,7 +210,7 @@
         "label": "LangGraph State Schema"
       },
       {
-        "id": "urn:ngm:class:openai-research-organisation-research-organisation-instruction-hierarchy-spec",
+        "id": "urn:ngm:class:openai-research-organisation-instruction-hierarchy-spec",
         "label": "OpenAI Instruction Hierarchy Spec"
       },
       {

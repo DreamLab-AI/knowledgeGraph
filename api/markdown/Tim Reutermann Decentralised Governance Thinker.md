@@ -31,7 +31,7 @@ elevatedFrom:: [[Tim Reutermann]]
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:tim-reutermann-decentralised-governance-thinker-decentralised-governance-thinker",
+  "@id": "urn:ngm:class:tim-reutermann-decentralised-governance-thinker",
   "@type": "Class",
   "label": "Tim Reutermann Decentralised Governance Thinker",
   "definition": "Tim Reutermann is a writer and technologist whose work synthesises cypherpunk philosophy, decentralised governance models, and AI-driven economic paradigm shifts. He advocates liquid democracy, universal basic income, and open-source systems as mechanisms for aligning economic incentives with social goods in the face of automation-driven disruption.",

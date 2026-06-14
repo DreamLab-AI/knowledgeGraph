@@ -53,13 +53,12 @@ public:: true
     {
       "@id": "urn:ngm:class:robo-perception",
       "label": "Perception and Sensing"
-    },
-    {
-      "@id": "urn:ngm:class:camera",
-      "label": "Camera"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:camera", "label": "Camera"}
+    ],
     "relatedTo": [
       {"@id": "urn:ngm:class:monocular-camera", "label": "Monocular Camera"},
       {"@id": "urn:ngm:class:point-cloud", "label": "Point Cloud"},

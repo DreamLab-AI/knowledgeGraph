@@ -49,10 +49,6 @@ public:: true
     {
       "@id": "urn:ngm:class:robo-perception",
       "label": "Perception and Sensing"
-    },
-    {
-      "@id": "urn:ngm:class:sensor",
-      "label": "Sensor"
     }
   ],
   "quality": 0.5,
@@ -62,6 +58,9 @@ public:: true
     "inferenceRule": "R5DomainRootFallback"
   },
   "relations": {
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:sensor", "label": "Sensor"}
+    ],
     "uses": [
       {
         "@id": "urn:ngm:class:robotics",

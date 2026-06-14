@@ -104,7 +104,7 @@ alias:: InfrastructureDomain
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:technology-infrastructure-domain-domain",
+  "@id": "urn:ngm:class:infrastructure-domain",
   "@type": "Class",
   "label": "Infrastructure Domain",
   "definition": "The Infrastructure Domain is the ontological framework that classifies and relates ICT infrastructure configuration items, resources, and resource groups common across IT service management systems. It encompasses network components, server and compute resources, data centres, storage, databases, cloud services, and security configurations that together underpin network connectivity, communication, and computing services. The domain provides a structured vocabulary for infrastructure-as-code, containerisation, and cloud-native architectures.",

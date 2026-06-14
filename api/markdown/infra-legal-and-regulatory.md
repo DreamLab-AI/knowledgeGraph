@@ -36,7 +36,7 @@ For AI and blockchain systems, this category covers the governance structures, c
   "domain": "infrastructure",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:technology-infrastructure-domain-domain",
+      "@id": "urn:ngm:class:infrastructure",
       "label": "Infrastructure Domain"
     }
   ],

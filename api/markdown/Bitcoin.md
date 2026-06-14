@@ -57,7 +57,7 @@ public:: true
       {"@id": "urn:ngm:class:bip-341-taproot", "label": "BIP-341 Taproot"}
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:ethereum-smart-contract-platform-smart-contract-platform", "label": "Ethereum Smart Contract Platform"},
+      {"@id": "urn:ngm:class:ethereum-smart-contract-platform", "label": "Ethereum Smart Contract Platform"},
       {"@id": "urn:ngm:class:solana", "label": "Solana"},
       {"@id": "urn:ngm:class:digital-currency", "label": "Digital Currency"}
     ],

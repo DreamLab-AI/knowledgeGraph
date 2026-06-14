@@ -466,14 +466,6 @@ alias:: ExteroceptiveSensor
     {
       "@id": "urn:ngm:class:robo-perception",
       "label": "Perception and Sensing"
-    },
-    {
-      "@id": "urn:ngm:class:environmental-sensor",
-      "label": "Environmental Sensor"
-    },
-    {
-      "@id": "urn:ngm:class:robo-perception",
-      "label": "Robo Perception"
     }
   ],
   "relations": {
@@ -696,6 +688,9 @@ alias:: ExteroceptiveSensor
         "@id": "urn:ngm:class:sae-j-3016",
         "label": "SAE J3016"
       }
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:environmental-sensor", "label": "Environmental Sensor"}
     ]
   },
   "quality": 0.52,

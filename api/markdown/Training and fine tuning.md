@@ -546,7 +546,7 @@ public:: true
         "label": "Mistral and Mixtral"
       },
       {
-        "@id": "urn:ngm:class:openai-research-organisation-research-organisation",
+        "@id": "urn:ngm:class:openai-research-organisation",
         "label": "Open AI"
       }
     ],
@@ -564,7 +564,7 @@ public:: true
         "label": "EU AI Act"
       },
       {
-        "@id": "urn:ngm:class:openai-research-organisation-research-organisation",
+        "@id": "urn:ngm:class:openai-research-organisation",
         "label": "Open AI"
       }
     ]

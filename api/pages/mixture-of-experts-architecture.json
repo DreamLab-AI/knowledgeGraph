@@ -3,7 +3,7 @@
   "title": "Mixture-of-Experts Architecture",
   "slug": "mixture-of-experts-architecture",
   "public": true,
-  "classIri": "urn:ngm:class:mixture-of-experts-architecture-architecture",
+  "classIri": "urn:ngm:class:mixture-of-experts-architecture",
   "domain": "artificial-intelligence",
   "definition": "An architecture that uses multiple specialised sub-networks (experts) with a gating mechanism that routes inputs to a sparse subset of experts, enabling scaling without proportional compute increases. MoE is adopted in production LLMs like GPT-4, enabling massive scale with controlled costs.",
   "subClassOf": [

@@ -193,13 +193,15 @@ public:: true
     {
       "@id": "urn:ngm:class:bc-cryptographic-primitive",
       "label": "Cryptographic Primitive"
-    },
-    {
-      "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
-      "label": "Public Key Infrastructure"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      }
+    ],
     "hasPart": [
       {
         "@id": "urn:ngm:class:bip-340-schnorr-keypair",

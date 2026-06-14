@@ -54,10 +54,6 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
       "label": "Platform and Environment"
-    },
-    {
-      "@id": "urn:ngm:class:virtual-event",
-      "label": "Virtual Event"
     }
   ],
   "provenance": {
@@ -66,6 +62,9 @@ public:: true
     "inferenceRule": "R1Explicit"
   },
   "relations": {
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:virtual-event", "label": "Virtual Event"}
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:avatar-system",

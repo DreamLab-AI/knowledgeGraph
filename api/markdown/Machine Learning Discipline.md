@@ -65,7 +65,7 @@ alias:: MachineLearning
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:machine-learning-discipline-discipline",
+  "@id": "urn:ngm:class:machine-learning-discipline",
   "@type": "Class",
   "label": "Machine Learning Discipline",
   "definition": "Machine Learning is the branch of artificial intelligence in which systems learn predictive or generative models directly from data, without being explicitly programmed with domain rules. It encompasses supervised, unsupervised, and reinforcement learning paradigms, and forms the foundation for deep learning, natural language processing, and computer vision applications. Practical machine learning involves data preparation, feature engineering, model selection, training, evaluation, and deployment within a production pipeline.",

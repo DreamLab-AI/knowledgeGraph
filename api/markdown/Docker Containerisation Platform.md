@@ -18,7 +18,7 @@ elevatedFrom:: [[Docker]]
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:docker-containerisation-platform-containerisation-platform",
+  "@id": "urn:ngm:class:docker-containerisation-platform",
   "@type": "Class",
   "label": "Docker Containerisation Platform",
   "definition": "Docker is an open-source platform that automates the deployment, scaling, and management of applications by packaging them together with their runtime dependencies into lightweight, portable containers built on Linux kernel primitives (namespaces and cgroups). Unlike virtual machines, Docker containers share the host operating system kernel, providing process and filesystem isolation with far lower overhead while guaranteeing consistent execution across heterogeneous computing environments. Launched in 2013 by Docker Inc., the platform introduced an intuitive developer-facing toolchain, a layered image format, and the Docker Hub public registry, collectively mainstreaming container technology and catalysing the cloud-native ecosystem. Docker standardised container packaging through the Open Container Initiative (OCI) specification and remains the dominant interface for building, distributing, and running container images in both development and production contexts.",

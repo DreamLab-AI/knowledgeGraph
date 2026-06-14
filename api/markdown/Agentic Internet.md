@@ -1406,7 +1406,7 @@ public:: true
         "label": "Meta Llama"
       },
       {
-        "@id": "urn:ngm:class:openai-research-organisation-research-organisation-gpt",
+        "@id": "urn:ngm:class:openai-research-organisation-gpt",
         "label": "OpenAI GPT"
       },
       {

@@ -10,10 +10,6 @@
     {
       "id": "urn:ngm:class:sc-content-and-assets",
       "label": "Content and Assets"
-    },
-    {
-      "id": "urn:ngm:class:audio-system",
-      "label": "Audio System"
     }
   ],
   "entityType": "Class",
@@ -31,7 +27,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:audio-system",
+        "label": "Audio System"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],

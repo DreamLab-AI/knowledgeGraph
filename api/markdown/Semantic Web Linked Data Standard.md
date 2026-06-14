@@ -53,7 +53,7 @@ alias:: semanticWeb
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:semantic-web-linked-data-standard-linked-data-standard",
+  "@id": "urn:ngm:class:semantic-web-linked-data-standard",
   "@type": "Class",
   "label": "Semantic Web Linked Data Standard",
   "definition": "Semantic Web extends the World Wide Web with machine-readable metadata, ontologies, and linked data to enable intelligent information discovery, integration, and reasoning. Core technologies include RDF, OWL, SPARQL, and knowledge graphs; AI techniques such as entity linking, relation extraction, ontology alignment, and automated reasoning further enhance these systems.",
@@ -116,7 +116,7 @@ alias:: semanticWeb
       {"@id": "urn:ngm:class:verifiable-credential", "label": "Verifiable Credential"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:semantic-web-linked-data-standard-linked-data-standard-standards", "label": "Semantic Web Standards"},
+      {"@id": "urn:ngm:class:semantic-web-linked-data-standard-standards", "label": "Semantic Web Standards"},
       {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
     ]
   }

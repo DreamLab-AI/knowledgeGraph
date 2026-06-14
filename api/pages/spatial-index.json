@@ -10,10 +10,6 @@
     {
       "id": "urn:ngm:class:sc-display-and-rendering",
       "label": "Display and Rendering"
-    },
-    {
-      "id": "urn:ngm:class:spatial-data-structure",
-      "label": "Spatial Data Structure"
     }
   ],
   "entityType": "Class",
@@ -85,7 +81,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:spatial-data-structure",
+        "label": "Spatial Data Structure"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],

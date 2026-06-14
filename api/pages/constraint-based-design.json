@@ -10,10 +10,6 @@
     {
       "id": "urn:ngm:class:ai-technique",
       "label": "AI Technique"
-    },
-    {
-      "id": "urn:ngm:class:ai-system-component",
-      "label": "AI System Component"
     }
   ],
   "entityType": "Class",
@@ -47,6 +43,10 @@
       {
         "id": "urn:ngm:class:simulation-engine",
         "label": "Simulation Engine"
+      },
+      {
+        "id": "urn:ngm:class:ai-system-component",
+        "label": "AI System Component"
       }
     ],
     "uses": [

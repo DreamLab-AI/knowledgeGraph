@@ -10,10 +10,6 @@
     {
       "id": "urn:ngm:class:robo-perception",
       "label": "Perception and Sensing"
-    },
-    {
-      "id": "urn:ngm:class:camera",
-      "label": "Camera"
     }
   ],
   "entityType": "Class",
@@ -39,7 +35,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:camera",
+        "label": "Camera"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:depth-sensing",

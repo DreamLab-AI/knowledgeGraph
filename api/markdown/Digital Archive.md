@@ -81,10 +81,6 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
       "label": "Content and Assets"
-    },
-    {
-      "@id": "urn:ngm:class:digital-preservation",
-      "label": "Digital Preservation"
     }
   ],
   "relations": {
@@ -115,6 +111,9 @@ public:: true
         "@id": "urn:ngm:class:knowledge-preservation",
         "label": "Knowledge Preservation"
       }
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:digital-preservation", "label": "Digital Preservation"}
     ]
   },
   "quality": 0.5,

@@ -54,13 +54,12 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
       "label": "Content and Assets"
-    },
-    {
-      "@id": "urn:ngm:class:3-d-asset",
-      "label": "3D Asset"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:3-d-asset", "label": "3D Asset"}
+    ],
     "uses": [
       {"@id": "urn:ngm:class:photogrammetry", "label": "Photogrammetry"},
       {"@id": "urn:ngm:class:procedural-generation", "label": "Procedural Generation"}

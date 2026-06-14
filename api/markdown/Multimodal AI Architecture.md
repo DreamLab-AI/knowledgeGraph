@@ -48,7 +48,7 @@ elevatedFrom:: [[multimodal]]
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:multimodal-ai-architecture-ai-architecture",
+  "@id": "urn:ngm:class:multimodal-ai-architecture",
   "@type": "Class",
   "label": "Multimodal AI Architecture",
   "definition": "Multimodal AI refers to artificial intelligence systems that process, fuse, and generate content across multiple data modalities—including text, images, audio, video, and 3D—within a unified model architecture. Multimodal systems learn cross-modal alignments through joint embedding spaces, enabling capabilities such as image captioning, visual question answering, text-to-image synthesis, and real-time audio-visual understanding that single-modality models cannot achieve.",
@@ -76,7 +76,7 @@ elevatedFrom:: [[multimodal]]
     "relatedTo": [
       {"@id": "urn:ngm:class:diffusion-models", "label": "Diffusion Models"},
       {"@id": "urn:ngm:class:speech-recognition", "label": "Speech Recognition"},
-      {"@id": "urn:ngm:class:multimodal-ai-architecture-ai-architecture-ai", "label": "Multimodal AI"}
+      {"@id": "urn:ngm:class:multimodal-ai-architecture-ai", "label": "Multimodal AI"}
     ]
   },
   "quality": 0.5,

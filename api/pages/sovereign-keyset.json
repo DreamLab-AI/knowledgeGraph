@@ -10,10 +10,6 @@
     {
       "id": "urn:ngm:class:bc-cryptographic-primitive",
       "label": "Cryptographic Primitive"
-    },
-    {
-      "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
-      "label": "Public Key Infrastructure"
     }
   ],
   "entityType": "Class",
@@ -94,7 +90,12 @@
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],

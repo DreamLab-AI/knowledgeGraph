@@ -18,7 +18,7 @@ elevatedFrom:: [[Apple]]
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:apple-inc-technology-corporation-inc-technology-corporation",
+  "@id": "urn:ngm:class:apple-inc-technology-corporation",
   "@type": "Class",
   "label": "Apple Inc Technology Corporation",
   "definition": "Apple Inc. is an American multinational technology corporation headquartered in Cupertino, California, that designs, manufactures, and markets consumer electronics, computer software, and online services spanning smartphones, personal computers, wearables, and spatial computing devices. Its strategic foundation rests on vertical integration of proprietary silicon (Apple Silicon, A-series, M-series SoCs), operating system platforms (iOS, macOS, visionOS, watchOS), and tightly controlled distribution through the App Store and developer ecosystem. Apple applies on-device machine learning inference, secure enclave hardware, and private cloud compute to deliver privacy-preserving AI features — branded Apple Intelligence — across its device portfolio. As one of the highest market-capitalisation companies globally, Apple's architectural decisions in silicon design, software APIs, and platform policy propagate directly into industry-wide infrastructure and standards.",

@@ -48,7 +48,7 @@ elevatedFrom:: [[Melvin Carvalho]]
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:melvin-carvalho-decentralised-web-advocate-decentralised-web-advocate",
+  "@id": "urn:ngm:class:melvin-carvalho-decentralised-web-advocate",
   "@type": "Class",
   "label": "Melvin Carvalho Decentralised Web Advocate",
   "definition": "Melvin Carvalho is a developer and advocate active in decentralised web and identity standards work, contributing to linked data, Solid and related semantic web technologies.",

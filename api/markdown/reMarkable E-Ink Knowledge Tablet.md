@@ -31,7 +31,7 @@ elevatedFrom:: [[Remarkable]]
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:remarkable-e-ink-knowledge-tablet-e-ink-knowledge-tablet",
+  "@id": "urn:ngm:class:remarkable-e-ink-knowledge-tablet",
   "@type": "Class",
   "label": "reMarkable E-Ink Knowledge Tablet",
   "definition": "The reMarkable is an e-ink tablet designed for distraction-free writing, note-taking, and document annotation, running a Linux-based operating system that exposes SSH access and supports a rich ecosystem of open-source tools. Its platform enables handwriting recognition, LaTeX generation, AI-assisted prompt workflows, and integration with knowledge management systems such as Obsidian. The device occupies a distinct niche as a digital-analogue bridge for researchers and knowledge workers seeking pen-on-paper fidelity with machine-readable output.",

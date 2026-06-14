@@ -463,14 +463,6 @@ public:: true
   "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:ai-infrastructure",
-      "label": "AI Infrastructure (Category)"
-    },
-    {
-      "@id": "urn:ngm:class:ai-application",
-      "label": "AI Application"
-    },
-    {
       "@id": "urn:ngm:class:ai-application",
       "label": "AI Application"
     }
@@ -695,6 +687,9 @@ public:: true
         "@id": "urn:ngm:class:structurizr-dsl-specification",
         "label": "Structurizr DSL Specification"
       }
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:ai-infrastructure", "label": "AI Infrastructure"}
     ]
   },
   "quality": 0.52,

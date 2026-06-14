@@ -405,13 +405,15 @@ public:: true
     {
       "@id": "urn:ngm:class:robo-actuation-and-control",
       "label": "Actuation and Control"
-    },
-    {
-      "@id": "urn:ngm:class:embedded-systems",
-      "label": "Embedded System"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      }
+    ],
     "hasPart": [
       {
         "@id": "urn:ngm:class:dds-middleware",
@@ -574,7 +576,7 @@ public:: true
         "label": "Eigen"
       },
       {
-        "@id": "urn:ngm:class:openai-research-organisation-research-organisation-gym",
+        "@id": "urn:ngm:class:openai-research-organisation-gym",
         "label": "OpenAI Gym"
       },
       {

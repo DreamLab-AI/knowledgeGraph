@@ -129,13 +129,12 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
       "label": "Content and Assets"
-    },
-    {
-      "@id": "urn:ngm:class:creative-media-domain",
-      "label": "Creative Media Domain"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:creative-media-domain", "label": "Creative Media Domain"}
+    ],
     "hasPart": [
       {
         "@id": "urn:ngm:class:facial-capture-system",

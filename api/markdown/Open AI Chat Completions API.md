@@ -17,7 +17,7 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:openai-research-organisation-research-organisation-chat-completions-api",
+  "@id": "urn:ngm:class:openai-research-organisation-chat-completions-api",
   "@type": "Class",
   "label": "Open AI Chat Completions API",
   "definition": "The OpenAI Chat Completions API is a widely adopted HTTP interface for sending a sequence of role-tagged messages to a large language model and receiving a generated response. Its request and response schema, including roles, tool-calling, and streaming, has become a de facto interoperability standard implemented by many open-source and third-party inference servers. This compatibility lets applications swap model backends with minimal code change.",

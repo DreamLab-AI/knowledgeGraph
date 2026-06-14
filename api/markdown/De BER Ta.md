@@ -54,13 +54,12 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
       "label": "Content and Assets"
-    },
-    {
-      "@id": "urn:ngm:class:language-modeling",
-      "label": "Language Modeling"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:language-modeling", "label": "Language Modeling"}
+    ],
     "implements": [
       {"@id": "urn:ngm:class:transformer", "label": "Transformer"},
       {"@id": "urn:ngm:class:language-modeling", "label": "Language Modeling"}

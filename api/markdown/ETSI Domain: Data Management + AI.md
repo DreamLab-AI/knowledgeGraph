@@ -107,15 +107,14 @@ public:: true
   "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:ai-infrastructure",
-      "label": "AI Infrastructure (Category)"
-    },
-    {
       "@id": "urn:ngm:class:etsi-domain-ai-data-mgmt",
       "label": "ETSI Domain AI + Data Mgmt"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:ai-infrastructure", "label": "AI Infrastructure"}
+    ],
     "hasPart": [
       {
         "@id": "urn:ngm:class:empirical-experimental-design-tracking",

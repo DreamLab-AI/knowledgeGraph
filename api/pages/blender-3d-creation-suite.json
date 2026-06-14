@@ -3,7 +3,7 @@
   "title": "Blender 3D Creation Suite",
   "slug": "blender-3d-creation-suite",
   "public": true,
-  "classIri": "urn:ngm:class:blender-3d-creation-suite-3d-creation-suite",
+  "classIri": "urn:ngm:class:blender-3d-creation-suite",
   "domain": "metaverse",
   "definition": "Blender is a free and open-source 3D creation suite supporting modelling, animation, rendering, and related workflows.",
   "subClassOf": [

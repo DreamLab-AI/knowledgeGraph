@@ -8,16 +8,8 @@
   "definition": "Automated Machine Learning (AutoML) is the discipline and associated tooling that automates the end-to-end pipeline of applying machine learning to real-world problems \u2014 encompassing automated data pre-processing, feature engineering, algorithm selection, Neural Architecture Search (NAS), hyp...",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ai-infrastructure",
-      "label": "AI Infrastructure (Category)"
-    },
-    {
       "id": "urn:ngm:class:ai-agent-system",
       "label": "AI Agent System"
-    },
-    {
-      "id": "urn:ngm:class:machine-learning-discipline-pipeline",
-      "label": "Machine Learning Pipeline"
     }
   ],
   "entityType": "Class",
@@ -102,7 +94,16 @@
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:machine-learning-discipline-pipeline",
+        "label": "Machine Learning Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],

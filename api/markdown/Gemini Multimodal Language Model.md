@@ -18,7 +18,7 @@ elevatedFrom:: [[Gemini]]
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:gemini-multimodal-language-model-multimodal-language-model",
+  "@id": "urn:ngm:class:gemini-multimodal-language-model",
   "@type": "Class",
   "label": "Gemini Multimodal Language Model",
   "definition": "Gemini is Google DeepMind's family of natively multimodal large language models, announced in December 2023 as the successor to PaLM 2, designed from the ground up to reason across text, images, audio, video, and code within a single unified architecture. The Gemini family spans Ultra, Pro, Flash, and Nano capability tiers, enabling deployment from data-centre scale to on-device inference. It directly competes with OpenAI's GPT-4 family and Anthropic Claude as one of the three dominant frontier model lineages.",

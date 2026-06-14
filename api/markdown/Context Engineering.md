@@ -453,10 +453,6 @@ public:: true
     {
       "@id": "urn:ngm:class:ai-agent-system",
       "label": "AI Agent System"
-    },
-    {
-      "@id": "urn:ngm:class:ai-infrastructure",
-      "label": "AI Infrastructure"
     }
   ],
   "relations": {
@@ -664,13 +660,16 @@ public:: true
         "label": "LangGraph State Schema"
       },
       {
-        "@id": "urn:ngm:class:openai-research-organisation-research-organisation-instruction-hierarchy-spec",
+        "@id": "urn:ngm:class:openai-research-organisation-instruction-hierarchy-spec",
         "label": "OpenAI Instruction Hierarchy Spec"
       },
       {
         "@id": "urn:ngm:class:model-context-protocol",
         "label": "Model Context Protocol"
       }
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:ai-infrastructure", "label": "AI Infrastructure"}
     ]
   },
   "quality": 0.52,
