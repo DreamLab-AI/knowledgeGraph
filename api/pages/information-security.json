@@ -4,34 +4,100 @@
   "slug": "information-security",
   "public": true,
   "classIri": "urn:ngm:class:information-security",
-  "domain": "artificial-intelligence",
-  "definition": "Information Security in AI addresses the protection of data, models, and AI systems from unauthorised access, adversarial attacks, privacy breaches, and malicious exploitation. Security measures encompass differential privacy, federated learning, robust training methods, secure multi-party computation, and encryption to ensure confidentiality, integrity, and availability of AI systems as critical infrastructure.",
+  "domain": "security",
+  "definition": "Information Security addresses the protection of data, systems, models, and AI infrastructure from unauthorised access, adversarial attacks, privacy breaches, and malicious exploitation. Security measures encompass differential privacy, federated learning, robust training methods, secure multi-party computation, and encryption to ensure confidentiality, integrity, and availability of systems and data as critical infrastructure.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ai-governance-and-ethics",
-      "label": "AI Governance and Ethics"
+      "id": "urn:ngm:class:cybersecurity",
+      "label": "Cybersecurity"
     }
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [
+    "hasPart": [
       {
         "id": "urn:ngm:class:access-control",
         "label": "Access Control"
       },
       {
-        "id": "urn:ngm:class:authentication",
-        "label": "Authentication"
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:intrusion-detection",
+        "label": "Intrusion Detection"
+      },
+      {
+        "id": "urn:ngm:class:vulnerability-management",
+        "label": "Vulnerability Management"
       }
     ],
-    "enables": [],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "id": "urn:ngm:class:authorisation",
+        "label": "Authorisation"
+      },
+      {
+        "id": "urn:ngm:class:threat-modeling",
+        "label": "Threat Modeling"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:trust",
+        "label": "Trust"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:secure-communication-protocols",
+        "label": "Secure Communication Protocols"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:cia-triad",
+        "label": "CIA Triad"
+      },
+      {
+        "id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:adversarial-machine-learning",
+        "label": "Adversarial Machine Learning"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-governance-and-ethics",
+        "label": "AI Governance and Ethics"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems-security",
+        "label": "Distributed Systems Security"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:differential-privacy",
@@ -44,6 +110,10 @@
       {
         "id": "urn:ngm:class:encryption",
         "label": "Encryption"
+      },
+      {
+        "id": "urn:ngm:class:secure-multi-party-computation",
+        "label": "Secure Multi-Party Computation"
       }
     ],
     "supports": [
@@ -54,14 +124,36 @@
       {
         "id": "urn:ngm:class:data-security",
         "label": "Data Security"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
       }
     ],
-    "standardizedBy": [],
-    "partOf": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-iec-27001",
+        "label": "ISO/IEC 27001"
+      },
+      {
+        "id": "urn:ngm:class:nist-cybersecurity-framework",
+        "label": "NIST Cybersecurity Framework"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:cybersecurity",
-        "label": "Cybersecurity"
+        "id": "urn:ngm:class:incident-response",
+        "label": "Incident Response"
+      },
+      {
+        "id": "urn:ngm:class:security-operations",
+        "label": "Security Operations"
       }
     ]
   },

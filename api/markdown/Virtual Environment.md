@@ -50,35 +50,68 @@ alias:: VirtualEnvironment
   "definition": "A simulated three-dimensional (3D) digital space created with computer hardware and software that enables users to explore, interact, and experience an immersive surrounding approximating reality, accessed through devices such as VR headsets, AR glasses, or standard displays.",
   "domain": "spatial-computing",
   "maturity": "emerging",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:sc-platform-and-environment",
-      "label": "Platform and Environment"
-    },
-    {
-      "@id": "urn:ngm:class:metaverse",
-      "label": "Metaverse"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:sc-platform-and-environment",
+    "label": "Platform and Environment"
+  },
   "relations": {
     "hasPart": [
       {"@id": "urn:ngm:class:spatial-audio", "label": "Spatial Audio"},
-      {"@id": "urn:ngm:class:avatar", "label": "Avatar"}
+      {"@id": "urn:ngm:class:avatar", "label": "Avatar"},
+      {"@id": "urn:ngm:class:3d-scene-graph", "label": "3D Scene Graph"},
+      {"@id": "urn:ngm:class:physics-engine", "label": "Physics Engine"},
+      {"@id": "urn:ngm:class:rendering-pipeline", "label": "Rendering Pipeline"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"},
+      {"@id": "urn:ngm:class:xr-ecosystem", "label": "XR Ecosystem"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"},
+      {"@id": "urn:ngm:class:xr-hardware", "label": "XR Hardware"},
+      {"@id": "urn:ngm:class:network-infrastructure", "label": "Network Infrastructure"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
+      {"@id": "urn:ngm:class:virtual-collaboration", "label": "Virtual Collaboration"},
+      {"@id": "urn:ngm:class:spatial-simulation", "label": "Spatial Simulation"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:extended-reality", "label": "Extended Reality"},
-      {"@id": "urn:ngm:class:xr-hardware", "label": "XR Hardware"}
+      {"@id": "urn:ngm:class:game-engine", "label": "Game Engine"},
+      {"@id": "urn:ngm:class:webxr", "label": "WebXR"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
+      {"@id": "urn:ngm:class:computer-graphics", "label": "Computer Graphics"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:physical-environment", "label": "Physical Environment"},
+      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
+      {"@id": "urn:ngm:class:ai-generated-content", "label": "AI Generated Content"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:openxr", "label": "OpenXR"},
+      {"@id": "urn:ngm:class:webxr-device-api", "label": "WebXR Device API"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:presence", "label": "Presence"}
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {"@id": "urn:ngm:class:virtual-world", "label": "Virtual World"},
+    {"@id": "urn:ngm:class:immersive-environment", "label": "Immersive Environment"},
+    {"@id": "urn:ngm:class:synthetic-environment", "label": "Synthetic Environment"}
+  ],
+  "quality": 0.72,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

@@ -76,21 +76,13 @@ alias:: CBDC, CentralBankDigitalCurrency
   "@type": "Class",
   "label": "Central Bank Digital Currency",
   "definition": "A digital form of sovereign fiat money issued directly by a nation's central bank, representing a liability of the monetary authority that can serve as legal tender for retail payments or wholesale settlement, distinct from commercial bank deposits and decentralized cryptocurrencies.",
-  "domain": "infrastructure",
+  "domain": "finance",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:infra-computing-and-cloud",
-      "label": "Computing and Cloud"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:digital-currency",
+    "label": "Digital Currency"
+  },
   "relations": {
-    "bridgesTo": [
-      {
-        "@id": "urn:ngm:class:digital-currency",
-        "label": "Digital Currency"
-      }
-    ],
     "requires": [
       {
         "@id": "urn:ngm:class:central-bank-infrastructure",
@@ -103,6 +95,14 @@ alias:: CBDC, CentralBankDigitalCurrency
       {
         "@id": "urn:ngm:class:digital-identity",
         "label": "Digital Identity"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "@id": "urn:ngm:class:aml-cft-compliance",
+        "label": "AML/CFT Compliance"
       }
     ],
     "enables": [
@@ -117,14 +117,114 @@ alias:: CBDC, CentralBankDigitalCurrency
       {
         "@id": "urn:ngm:class:digital-payments",
         "label": "Digital Payments"
+      },
+      {
+        "@id": "urn:ngm:class:cross-border-payments",
+        "label": "Cross-Border Payments"
+      },
+      {
+        "@id": "urn:ngm:class:programmable-money",
+        "label": "Programmable Money"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:monetary-sovereignty",
+        "label": "Monetary Sovereignty"
+      },
+      {
+        "@id": "urn:ngm:class:legal-tender",
+        "label": "Legal Tender"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-key-management",
+        "label": "Cryptographic Key Management"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "@id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      },
+      {
+        "@id": "urn:ngm:class:commercial-bank-deposit",
+        "label": "Commercial Bank Deposit"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:financial-stability",
+        "label": "Financial Stability"
+      },
+      {
+        "@id": "urn:ngm:class:payment-system-resilience",
+        "label": "Payment System Resilience"
+      },
+      {
+        "@id": "urn:ngm:class:government-benefit-distribution",
+        "label": "Government Benefit Distribution"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:bank-for-international-settlements",
+        "label": "Bank for International Settlements"
+      },
+      {
+        "@id": "urn:ngm:class:international-monetary-fund",
+        "label": "International Monetary Fund"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:monetary-policy",
+        "label": "Monetary Policy"
+      },
+      {
+        "@id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "@id": "urn:ngm:class:digital-wallet",
+        "label": "Digital Wallet"
       }
     ]
   },
-  "quality": 0.35,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:cbdc",
+      "label": "CBDC"
+    },
+    {
+      "@id": "urn:ngm:class:sovereign-digital-currency",
+      "label": "Sovereign Digital Currency"
+    }
+  ],
+  "quality": 0.68,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

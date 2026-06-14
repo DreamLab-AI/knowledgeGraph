@@ -54,35 +54,137 @@ public:: true
   "@id": "urn:ngm:class:decentralised-identifier",
   "@type": "Class",
   "label": "Decentralised Identifier",
-  "definition": "A type of globally unique identifier, defined by a W3C standard, that is controlled by its subject and resolves to a document without depending on a central registry.",
+  "definition": "A type of globally unique identifier, defined by a W3C standard, that is controlled by its subject and resolves to a DID document containing public keys and service endpoints, without depending on a central registry or issuing authority.",
   "domain": "security",
   "maturity": "established",
-  "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:digital-identity",
-      "label": "Digital Identity"
-    }
-  ],
+  "qualityScore": 0.72,
+  "subClassOf": {
+    "@id": "urn:ngm:class:digital-identity",
+    "label": "Digital Identity"
+  },
   "relations": {
     "requires": [
       {
-        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
+        "@id": "urn:ngm:class:public-key-cryptography",
         "label": "Public-Key Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:did-document",
+        "label": "DID Document"
+      },
+      {
+        "@id": "urn:ngm:class:did-method",
+        "label": "DID Method"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:verifiable-credentials",
         "label": "Verifiable Credentials"
+      },
+      {
+        "@id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self-Sovereign Identity"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-authentication",
+        "label": "Decentralised Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:w3c-did-core",
+        "label": "W3C DID Core"
+      },
+      {
+        "@id": "urn:ngm:class:uri-scheme",
+        "label": "URI Scheme"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:w3c",
+        "label": "W3C"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "@id": "urn:ngm:class:json-ld",
+        "label": "JSON-LD"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "@id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:federated-identity",
+        "label": "Federated Identity"
+      },
+      {
+        "@id": "urn:ngm:class:centralised-identifier",
+        "label": "Centralised Identifier"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:oauth",
+        "label": "OAuth"
+      },
+      {
+        "@id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:identity-resolution",
+        "label": "Identity Resolution"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:did",
+      "label": "DID"
+    },
+    {
+      "@id": "urn:ngm:class:w3c-did",
+      "label": "W3C DID"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

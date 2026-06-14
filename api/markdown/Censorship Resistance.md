@@ -70,43 +70,60 @@ alias:: CensorshipResistance, censorship-resistance
   "definition": "Property of blockchain networks guaranteeing that any valid transaction submitted by any participant will eventually be included in the canonical chain, preventing miners, validators, or any coordinated group from systematically excluding transactions. Achieved through decentralised consensus, permissionless participation, and economic incentive alignment.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:bc-protocol-and-consensus",
-      "label": "Protocol and Consensus"
-    },
-    {
-      "@id": "urn:ngm:class:blockchain-entity",
-      "label": "Blockchain Entity"
-    },
-    {
-      "@id": "urn:ngm:class:network-component",
-      "label": "NetworkComponent"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:bc-protocol-and-consensus",
+    "label": "Protocol and Consensus"
+  },
   "relations": {
     "requires": [
       {"@id": "urn:ngm:class:peer-to-peer-network", "label": "Peer-to-Peer Network"},
       {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
-      {"@id": "urn:ngm:class:sybil-resistance", "label": "Sybil Resistance"}
-    ],
-    "relatedTo": [
-      {"@id": "urn:ngm:class:peer-discovery", "label": "Peer Discovery"},
-      {"@id": "urn:ngm:class:fork-choice-rule", "label": "Fork Choice Rule"},
-      {"@id": "urn:ngm:class:byzantine-fault-tolerance", "label": "Byzantine Fault Tolerance"},
-      {"@id": "urn:ngm:class:double-spending", "label": "Double Spending"},
-      {"@id": "urn:ngm:class:blockchain-governance", "label": "Blockchain Governance"}
+      {"@id": "urn:ngm:class:sybil-resistance", "label": "Sybil Resistance"},
+      {"@id": "urn:ngm:class:permissionless-participation", "label": "Permissionless Participation"},
+      {"@id": "urn:ngm:class:decentralisation", "label": "Decentralisation"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:immutability", "label": "Immutability"},
-      {"@id": "urn:ngm:class:decentralized-governance", "label": "Decentralized Governance"}
+      {"@id": "urn:ngm:class:decentralized-governance", "label": "Decentralized Governance"},
+      {"@id": "urn:ngm:class:financial-inclusion", "label": "Financial Inclusion"},
+      {"@id": "urn:ngm:class:trustless-transaction", "label": "Trustless Transaction"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:byzantine-fault-tolerance", "label": "Byzantine Fault Tolerance"},
+      {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"},
+      {"@id": "urn:ngm:class:public-key-cryptography", "label": "Public Key Cryptography"},
+      {"@id": "urn:ngm:class:economic-incentive-design", "label": "Economic Incentive Design"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:permissioned-blockchain", "label": "Permissioned Blockchain"},
+      {"@id": "urn:ngm:class:transaction-filtering", "label": "Transaction Filtering"},
+      {"@id": "urn:ngm:class:ofac-compliance", "label": "OFAC Compliance"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:fork-choice-rule", "label": "Fork Choice Rule"},
+      {"@id": "urn:ngm:class:mempool-propagation", "label": "Mempool Propagation"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:peer-discovery", "label": "Peer Discovery"},
+      {"@id": "urn:ngm:class:double-spending", "label": "Double Spending"},
+      {"@id": "urn:ngm:class:blockchain-governance", "label": "Blockchain Governance"},
+      {"@id": "urn:ngm:class:miner-extractable-value", "label": "Miner Extractable Value"},
+      {"@id": "urn:ngm:class:51-percent-attack", "label": "51% Attack"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:freedom-of-speech", "label": "Freedom of Speech"},
+      {"@id": "urn:ngm:class:information-security", "label": "Information Security"}
     ]
   },
-  "quality": 0.8,
+  "sameAs": [
+    {"@id": "urn:ngm:class:transaction-censorship-resistance", "label": "Transaction Censorship Resistance"},
+    {"@id": "urn:ngm:class:inclusion-liveness", "label": "Inclusion Liveness"}
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

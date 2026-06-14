@@ -55,32 +55,62 @@ alias:: Human-Computer Interaction, HumanComputerInteraction
   "@id": "urn:ngm:class:human-computer-interaction",
   "@type": "Class",
   "label": "Human Computer Interaction",
-  "definition": "Human-Computer Interaction (HCI) in the AI context examines the design, evaluation, and implementation of interactive systems that incorporate artificial intelligence capabilities. This interdisciplinary field addresses usability, accessibility, user experience, and cognitive aspects of AI-powered interfaces.",
+  "definition": "Human-Computer Interaction (HCI) in the AI context examines the design, evaluation, and implementation of interactive systems that incorporate artificial intelligence capabilities. This interdisciplinary field addresses usability, accessibility, user experience, and cognitive aspects of AI-powered interfaces, emphasising transparency, trust calibration, and ethical implications of algorithmic decision-making on human users.",
   "domain": "artificial-intelligence",
   "maturity": "emerging",
-  "quality": 0.35,
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   },
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:ai-research-area",
-      "label": "AI Research Area"
-    }
+  "subClassOf": {
+    "@id": "urn:ngm:class:ai-research-area",
+    "label": "AI Research Area"
+  },
+  "sameAs": [
+    {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human-Computer Interaction"},
+    {"@id": "urn:ngm:class:hci", "label": "HCI"},
+    {"@id": "urn:ngm:class:computer-human-interaction", "label": "Computer-Human Interaction"}
   ],
   "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:user-interface-design", "label": "User Interface Design"},
+      {"@id": "urn:ngm:class:usability-engineering", "label": "Usability Engineering"},
+      {"@id": "urn:ngm:class:interaction-design", "label": "Interaction Design"},
+      {"@id": "urn:ngm:class:cognitive-ergonomics", "label": "Cognitive Ergonomics"}
+    ],
     "enables": [
       {"@id": "urn:ngm:class:user-experience", "label": "User Experience"},
-      {"@id": "urn:ngm:class:accessibility", "label": "Accessibility"}
+      {"@id": "urn:ngm:class:accessibility", "label": "Accessibility"},
+      {"@id": "urn:ngm:class:human-ai-collaboration", "label": "Human-AI Collaboration"},
+      {"@id": "urn:ngm:class:adaptive-user-interface", "label": "Adaptive User Interface"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:cognitive-science", "label": "Cognitive Science"},
+      {"@id": "urn:ngm:class:user-research", "label": "User Research"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:explainable-ai", "label": "Explainable AI"},
+      {"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:conversational-ai", "label": "Conversational AI"},
-      {"@id": "urn:ngm:class:explainable-ai", "label": "Explainable AI"}
+      {"@id": "urn:ngm:class:user-experience-design", "label": "User Experience Design"},
+      {"@id": "urn:ngm:class:affective-computing", "label": "Affective Computing"}
     ],
-    "uses": [
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
+      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
+      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:autonomous-agent", "label": "Autonomous Agent"}
     ]
   }
 }

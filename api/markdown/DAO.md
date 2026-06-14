@@ -71,41 +71,77 @@ alias:: DAOs
   "@id": "urn:ngm:class:dao",
   "@type": "Class",
   "label": "DAO",
-  "definition": "Decentralised Autonomous Organisation operating through transparent code-based rules and distributed governance rather than hierarchical management, enabling community coordination at scale.",
+  "definition": "Decentralised Autonomous Organisation operating through transparent code-based rules and distributed governance rather than hierarchical management, enabling community coordination at scale via smart contracts, token-based voting, and on-chain treasury management.",
   "domain": "blockchain",
   "maturity": "emerging",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:bc-governance-and-regulation",
-      "label": "Governance and Regulation"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:bc-governance-and-regulation",
+    "label": "Governance and Regulation"
+  },
   "relations": {
     "uses": [
       {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:governance-token", "label": "Governance Token"}
+      {"@id": "urn:ngm:class:governance-token", "label": "Governance Token"},
+      {"@id": "urn:ngm:class:multisig-wallet", "label": "Multisig Wallet"},
+      {"@id": "urn:ngm:class:on-chain-voting", "label": "On-Chain Voting"},
+      {"@id": "urn:ngm:class:token-weighted-voting", "label": "Token-Weighted Voting"}
     ],
     "requires": [
-      {"@id": "urn:ngm:class:smart-contract-platform", "label": "Smart Contract Platform"}
+      {"@id": "urn:ngm:class:smart-contract-platform", "label": "Smart Contract Platform"},
+      {"@id": "urn:ngm:class:blockchain-infrastructure", "label": "Blockchain Infrastructure"},
+      {"@id": "urn:ngm:class:distributed-consensus", "label": "Distributed Consensus"}
     ],
     "enables": [
-      {"@id": "urn:ngm:class:decentralized-governance", "label": "Decentralized Governance"}
+      {"@id": "urn:ngm:class:decentralized-governance", "label": "Decentralized Governance"},
+      {"@id": "urn:ngm:class:on-chain-treasury", "label": "On-Chain Treasury"},
+      {"@id": "urn:ngm:class:permissionless-membership", "label": "Permissionless Membership"},
+      {"@id": "urn:ngm:class:community-funded-protocol", "label": "Community-Funded Protocol"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:governance-proposal", "label": "Governance Proposal"},
+      {"@id": "urn:ngm:class:dao-treasury", "label": "DAO Treasury"},
+      {"@id": "urn:ngm:class:voting-mechanism", "label": "Voting Mechanism"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:ethereum", "label": "Ethereum"},
+      {"@id": "urn:ngm:class:layer-2-scaling", "label": "Layer 2 Scaling"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:dao-governance", "label": "DAO Governance"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:traditional-corporation", "label": "Traditional Corporation"},
+      {"@id": "urn:ngm:class:centralised-organisation", "label": "Centralised Organisation"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:blockchain-infrastructure", "label": "Blockchain Infrastructure"},
-      {"@id": "urn:ngm:class:dao-governance", "label": "DAO Governance"}
+      {"@id": "urn:ngm:class:defi-protocol", "label": "DeFi Protocol"},
+      {"@id": "urn:ngm:class:nft-collective", "label": "NFT Collective"},
+      {"@id": "urn:ngm:class:token-economics", "label": "Token Economics"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:ai-agent-system", "label": "AI Agent System"},
+      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"},
+      {"@id": "urn:ngm:class:metaverse-governance", "label": "Metaverse Governance"}
     ]
   },
-  "quality": 0.4,
+  "quality": 0.68,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   },
   "sameAs": [
     {
       "@id": "urn:ngm:class:decentralized-autonomous-organization",
       "label": "Decentralized Autonomous Organization"
+    },
+    {
+      "@id": "urn:ngm:class:on-chain-organisation",
+      "label": "On-Chain Organisation"
+    },
+    {
+      "@id": "urn:ngm:class:blockchain-cooperative",
+      "label": "Blockchain Cooperative"
     }
   ]
 }

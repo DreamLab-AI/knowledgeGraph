@@ -78,13 +78,45 @@ alias:: BC-0013-smart-contracts, BC-0142-smart-contract, SmartContracts, smart-c
   "definition": "Self-executing programs stored on a blockchain that automatically enforce and execute the terms of an agreement when predetermined conditions are met, eliminating the need for intermediaries and enabling trustless, transparent, and immutable transaction automation.",
   "domain": "blockchain",
   "maturity": "emerging",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:bc-network-component",
-      "label": "Network Component"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:bc-network-component",
+    "label": "Network Component"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:contract-abi",
+        "label": "Contract ABI"
+      },
+      {
+        "@id": "urn:ngm:class:gas-mechanism",
+        "label": "Gas Mechanism"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:decentralized-application",
+        "label": "Decentralized Application"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-finance-de-fi",
+        "label": "Decentralized Finance (DeFi)"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-oracle",
+        "label": "Blockchain Oracle"
+      }
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:decentralized-application",
@@ -97,6 +129,30 @@ alias:: BC-0013-smart-contracts, BC-0142-smart-contract, SmartContracts, smart-c
       {
         "@id": "urn:ngm:class:tokenization",
         "label": "Tokenization"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-autonomous-organisation",
+        "label": "Decentralized Autonomous Organisation"
+      },
+      {
+        "@id": "urn:ngm:class:non-fungible-token",
+        "label": "Non-Fungible Token"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "@id": "urn:ngm:class:ethereum-virtual-machine",
+        "label": "Ethereum Virtual Machine"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:erc-token-standard",
+        "label": "ERC Token Standard"
       }
     ],
     "uses": [
@@ -107,35 +163,67 @@ alias:: BC-0013-smart-contracts, BC-0142-smart-contract, SmartContracts, smart-c
       {
         "@id": "urn:ngm:class:digital-signature",
         "label": "Digital Signature"
-      }
-    ],
-    "relatedTo": [
-      {
-        "@id": "urn:ngm:class:decentralized-finance-de-fi",
-        "label": "Decentralized Finance (DeFi)"
       },
       {
-        "@id": "urn:ngm:class:ethereum-smart-contract-platform",
-        "label": "Ethereum"
+        "@id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:supply-chain-automation",
+        "label": "Supply Chain Automation"
+      },
+      {
+        "@id": "urn:ngm:class:parametric-insurance",
+        "label": "Parametric Insurance"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:traditional-legal-contract",
+        "label": "Traditional Legal Contract"
       }
     ],
     "bridgesTo": [
       {
         "@id": "urn:ngm:class:distributed-computing",
         "label": "Distributed Computing"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ethereum-smart-contract-platform",
+        "label": "Ethereum Smart Contract Platform"
+      },
+      {
+        "@id": "urn:ngm:class:reentrancy-attack",
+        "label": "Reentrancy Attack"
       }
     ]
   },
-  "quality": 0.5,
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   },
   "sameAs": [
     {
       "@id": "urn:ngm:class:smart-contract",
       "label": "Smart Contract"
+    },
+    {
+      "@id": "urn:ngm:class:self-executing-contract",
+      "label": "Self-Executing Contract"
+    },
+    {
+      "@id": "urn:ngm:class:chaincode",
+      "label": "Chaincode"
     }
   ]
 }

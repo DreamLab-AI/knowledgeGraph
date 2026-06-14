@@ -24,12 +24,28 @@
       {
         "id": "urn:ngm:class:price-oracle",
         "label": "Price Oracle"
+      },
+      {
+        "id": "urn:ngm:class:oracle-node",
+        "label": "Oracle Node"
+      },
+      {
+        "id": "urn:ngm:class:data-aggregation-layer",
+        "label": "Data Aggregation Layer"
       }
     ],
     "requires": [
       {
         "id": "urn:ngm:class:cryptographic-verification",
         "label": "Cryptographic Verification"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:staking",
+        "label": "Staking"
       }
     ],
     "enables": [
@@ -42,19 +58,15 @@
         "label": "Decentralized Finance (DeFi)"
       },
       {
-        "id": "urn:ngm:class:smart-contract-execution",
-        "label": "Smart Contract Execution"
+        "id": "urn:ngm:class:parametric-insurance",
+        "label": "Parametric Insurance"
+      },
+      {
+        "id": "urn:ngm:class:prediction-markets",
+        "label": "Prediction Markets"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
+    "dependsOn": [
       {
         "id": "urn:ngm:class:blockchain-network",
         "label": "Blockchain Network"
@@ -64,12 +76,68 @@
         "label": "Smart Contracts"
       },
       {
+        "id": "urn:ngm:class:external-data-source",
+        "label": "External Data Source"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:centralized-oracle",
+        "label": "Centralized Oracle"
+      },
+      {
+        "id": "urn:ngm:class:on-chain-data-feed",
+        "label": "On-Chain Data Feed"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      },
+      {
+        "id": "urn:ngm:class:traditional-finance",
+        "label": "Traditional Finance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:multi-source-data-aggregation",
+        "label": "Multi-Source Data Aggregation"
+      },
+      {
+        "id": "urn:ngm:class:trusted-execution-environment",
+        "label": "Trusted Execution Environment"
+      },
+      {
+        "id": "urn:ngm:class:digital-signatures",
+        "label": "Digital Signatures"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
         "id": "urn:ngm:class:smart-contract-platform",
         "label": "Smart Contract Platform"
       },
       {
-        "id": "urn:ngm:class:distributed-ledger-technology",
-        "label": "Distributed Ledger Technology"
+        "id": "urn:ngm:class:oracle-extractable-value",
+        "label": "Oracle Extractable Value"
+      },
+      {
+        "id": "urn:ngm:class:reputation-system",
+        "label": "Reputation System"
       }
     ]
   },

@@ -54,36 +54,63 @@ public:: true
   "@id": "urn:ngm:class:context-window",
   "@type": "Class",
   "label": "Context Window",
-  "definition": "The maximum sequence length that a model can process at once, determining how much prior context it can consider during generation or understanding tasks.",
+  "definition": "The maximum sequence length that a language model can process in a single forward pass, measured in tokens; it determines how much prior context the model can attend to during generation or understanding tasks and directly bounds memory, coherence, and long-range reasoning capabilities.",
   "domain": "artificial-intelligence",
   "maturity": "emerging",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:model-hyperparameter",
+    "label": "Model Hyperparameter"
+  },
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"}
+      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"},
+      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:token", "label": "Token"},
+      {"@id": "urn:ngm:class:positional-encoding", "label": "Positional Encoding"}
     ],
     "requires": [
       {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"},
-      {"@id": "urn:ngm:class:neural-network-text-tokenisation", "label": "Tokenisation"}
+      {"@id": "urn:ngm:class:neural-network-text-tokenisation", "label": "Tokenisation"},
+      {"@id": "urn:ngm:class:key-value-cache", "label": "Key-Value Cache"}
     ],
     "enables": [
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"}
+      {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"},
+      {"@id": "urn:ngm:class:in-context-learning", "label": "In-Context Learning"},
+      {"@id": "urn:ngm:class:few-shot-prompting", "label": "Few-Shot Prompting"},
+      {"@id": "urn:ngm:class:long-document-summarisation", "label": "Long Document Summarisation"},
+      {"@id": "urn:ngm:class:agentic-ai", "label": "Agentic AI"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:gpu-memory", "label": "GPU Memory"},
+      {"@id": "urn:ngm:class:floating-point-precision", "label": "Floating-Point Precision"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:external-memory", "label": "External Memory"},
+      {"@id": "urn:ngm:class:recurrent-neural-network", "label": "Recurrent Neural Network"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:language-modeling", "label": "Language Modeling"}
+      {"@id": "urn:ngm:class:language-modeling", "label": "Language Modeling"},
+      {"@id": "urn:ngm:class:prompt-engineering", "label": "Prompt Engineering"},
+      {"@id": "urn:ngm:class:context-engineering", "label": "Context Engineering"},
+      {"@id": "urn:ngm:class:lost-in-the-middle-effect", "label": "Lost-in-the-Middle Effect"},
+      {"@id": "urn:ngm:class:model-context-protocol", "label": "Model Context Protocol"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:autonomous-robot", "label": "Autonomous Robot"},
+      {"@id": "urn:ngm:class:collaborative-virtual-environment", "label": "Collaborative Virtual Environment"}
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {"@id": "urn:ngm:class:maximum-sequence-length", "label": "Maximum Sequence Length"},
+    {"@id": "urn:ngm:class:context-length", "label": "Context Length"}
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

@@ -122,34 +122,62 @@ public:: true
   "@id": "urn:ngm:class:language-modeling",
   "@type": "Class",
   "label": "Language Modeling",
-  "definition": "Language Modeling is the fundamental NLP task of learning probability distributions over sequences of words or tokens to predict the likelihood of text sequences and generate plausible continuations.",
-  "domain": "spatial-computing",
+  "definition": "Language Modeling is the fundamental NLP task of learning probability distributions over sequences of words or tokens to predict the likelihood of text sequences and generate plausible continuations. Language models underpin virtually all modern NLP applications through pre-training on massive text corpora, capturing syntactic structure, semantic relationships, and world knowledge that transfer to downstream tasks.",
+  "domain": "machine-learning",
   "maturity": "emerging",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:sc-content-and-assets",
-      "label": "Content and Assets"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:natural-language-processing",
+    "label": "Natural Language Processing"
+  },
   "relations": {
     "requires": [
       {"@id": "urn:ngm:class:transformer", "label": "Transformer"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
+      {"@id": "urn:ngm:class:self-attention", "label": "Self Attention"},
+      {"@id": "urn:ngm:class:tokenization", "label": "Tokenization"},
+      {"@id": "urn:ngm:class:training-data", "label": "Training Data"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
       {"@id": "urn:ngm:class:text-generation", "label": "Text Generation"},
-      {"@id": "urn:ngm:class:question-answering", "label": "Question Answering"}
+      {"@id": "urn:ngm:class:question-answering", "label": "Question Answering"},
+      {"@id": "urn:ngm:class:machine-translation", "label": "Machine Translation"},
+      {"@id": "urn:ngm:class:code-generation", "label": "Code Generation"},
+      {"@id": "urn:ngm:class:dialogue-systems", "label": "Dialogue Systems"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:autoregressive-language-modeling", "label": "Autoregressive Language Modeling"},
+      {"@id": "urn:ngm:class:masked-language-modeling", "label": "Masked Language Modeling"},
+      {"@id": "urn:ngm:class:encoder-decoder-architecture", "label": "Encoder-Decoder Architecture"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"},
+      {"@id": "urn:ngm:class:pre-training", "label": "Pre-Training"},
+      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine-Tuning"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:diffusion-models", "label": "Diffusion Models"},
+      {"@id": "urn:ngm:class:state-space-models", "label": "State Space Models"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
+      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
+      {"@id": "urn:ngm:class:scaling-laws", "label": "Scaling Laws"},
+      {"@id": "urn:ngm:class:emergent-abilities", "label": "Emergent Abilities"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:knowledge-graphing", "label": "Knowledge Graphing"},
+      {"@id": "urn:ngm:class:multimodal-ai", "label": "Multimodal AI"}
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {"@id": "urn:ngm:class:statistical-language-modeling", "label": "Statistical Language Modeling"},
+    {"@id": "urn:ngm:class:neural-language-modeling", "label": "Neural Language Modeling"}
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

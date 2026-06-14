@@ -130,35 +130,19 @@ public:: true
   "@id": "urn:ngm:class:blockchain-compliance",
   "@type": "Class",
   "label": "Blockchain Compliance",
-  "definition": "The framework of regulatory requirements, technical controls, and operational procedures ensuring blockchain systems and crypto-asset service providers comply with applicable laws including AML/KYC, GDPR, securities regulations, and jurisdiction-specific mandates while maintaining transparency an...",
+  "definition": "The framework of regulatory requirements, technical controls, and operational procedures ensuring blockchain systems and crypto-asset service providers comply with applicable laws including AML/KYC, GDPR, securities regulations, and jurisdiction-specific mandates while maintaining transparency and security.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:bc-governance-and-regulation",
-      "label": "Governance and Regulation"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:bc-governance-and-regulation",
+    "label": "Governance and Regulation"
+  },
   "relations": {
     "requires": [
       {
         "@id": "urn:ngm:class:identity-verification",
         "label": "Identity Verification"
-      }
-    ],
-    "enables": [
-      {
-        "@id": "urn:ngm:class:institutional-adoption",
-        "label": "Institutional Adoption"
-      }
-    ],
-    "uses": [
-      {
-        "@id": "urn:ngm:class:blockchain-analytics",
-        "label": "Blockchain Analytics"
-      }
-    ],
-    "relatedTo": [
+      },
       {
         "@id": "urn:ngm:class:anti-money-laundering",
         "label": "Anti-Money Laundering"
@@ -168,22 +152,122 @@ public:: true
         "label": "Know Your Customer"
       },
       {
+        "@id": "urn:ngm:class:counter-terrorist-financing",
+        "label": "Counter-Terrorist Financing"
+      },
+      {
+        "@id": "urn:ngm:class:transaction-monitoring",
+        "label": "Transaction Monitoring"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:institutional-adoption",
+        "label": "Institutional Adoption"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-clarity",
+        "label": "Regulatory Clarity"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:blockchain-analytics",
+        "label": "Blockchain Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-identity",
+        "label": "Decentralized Identity"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:mica-markets-in-crypto-assets",
+        "label": "MiCA (Markets in Crypto-Assets)"
+      },
+      {
+        "@id": "urn:ngm:class:fatf-financial-action-task-force",
+        "label": "FATF (Financial Action Task Force)"
+      }
+    ],
+    "dependsOn": [
+      {
         "@id": "urn:ngm:class:blockchain",
         "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-audit-trail",
+        "label": "Cryptographic Audit Trail"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:privacy-coin",
+        "label": "Privacy Coin"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-finance",
+        "label": "Decentralized Finance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:regulatory-technology",
+        "label": "Regulatory Technology"
+      },
+      {
+        "@id": "urn:ngm:class:securities-regulation",
+        "label": "Securities Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:tax-reporting",
+        "label": "Tax Reporting"
       }
     ],
     "bridgesTo": [
       {
         "@id": "urn:ngm:class:regulatory-compliance",
         "label": "Regulatory Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:financial-crime-prevention",
+        "label": "Financial Crime Prevention"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:crypto-asset-compliance",
+      "label": "Crypto-Asset Compliance"
+    },
+    {
+      "@id": "urn:ngm:class:virtual-asset-compliance",
+      "label": "Virtual Asset Compliance"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

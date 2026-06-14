@@ -74,12 +74,10 @@ public:: true
   "domain": "machine-learning",
   "maturity": "established",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:owl-thing",
-      "label": "owl:Thing"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:owl-thing",
+    "label": "owl:Thing"
+  },
   "relations": {
     "hasPart": [
       {
@@ -93,6 +91,28 @@ public:: true
       {
         "@id": "urn:ngm:class:vector-space",
         "label": "Vector Space"
+      },
+      {
+        "@id": "urn:ngm:class:determinant",
+        "label": "Determinant"
+      },
+      {
+        "@id": "urn:ngm:class:singular-value-decomposition",
+        "label": "Singular Value Decomposition"
+      },
+      {
+        "@id": "urn:ngm:class:tensor",
+        "label": "Tensor"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:calculus",
+        "label": "Calculus"
+      },
+      {
+        "@id": "urn:ngm:class:set-theory",
+        "label": "Set Theory"
       }
     ],
     "enables": [
@@ -107,14 +127,94 @@ public:: true
       {
         "@id": "urn:ngm:class:principal-component-analysis",
         "label": "Principal Component Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:dimensionality-reduction",
+        "label": "Dimensionality Reduction"
+      },
+      {
+        "@id": "urn:ngm:class:least-squares-regression",
+        "label": "Least Squares Regression"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:abstract-algebra",
+        "label": "Abstract Algebra"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:gaussian-elimination",
+        "label": "Gaussian Elimination"
+      },
+      {
+        "@id": "urn:ngm:class:matrix-factorization",
+        "label": "Matrix Factorization"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:numerical-methods",
+        "label": "Numerical Methods"
+      },
+      {
+        "@id": "urn:ngm:class:optimization",
+        "label": "Optimization"
+      },
+      {
+        "@id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:graph-theory",
+        "label": "Graph Theory"
+      },
+      {
+        "@id": "urn:ngm:class:information-theory",
+        "label": "Information Theory"
+      },
+      {
+        "@id": "urn:ngm:class:quantum-computing",
+        "label": "Quantum Computing"
+      },
+      {
+        "@id": "urn:ngm:class:computer-graphics",
+        "label": "Computer Graphics"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:probability-theory",
+        "label": "Probability Theory"
+      },
+      {
+        "@id": "urn:ngm:class:statistics",
+        "label": "Statistics"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:matrix-algebra",
+      "label": "Matrix Algebra"
+    },
+    {
+      "@id": "urn:ngm:class:vector-algebra",
+      "label": "Vector Algebra"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

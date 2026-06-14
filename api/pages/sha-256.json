@@ -4,28 +4,30 @@
   "slug": "sha-256",
   "public": true,
   "classIri": "urn:ngm:class:sha-256",
-  "domain": "blockchain",
-  "definition": "Secure Hash Algorithm producing a deterministic 256-bit digest from arbitrary input, forming the cryptographic foundation of Bitcoin's proof-of-work, Merkle tree construction, block header chaining, and address derivation in most major blockchain systems. Produces avalanche-effect collision resistance with 2^128 preimage security.",
+  "domain": "security",
+  "definition": "Secure Hash Algorithm producing a deterministic 256-bit digest from arbitrary input, forming the cryptographic foundation of Bitcoin's proof-of-work, Merkle tree construction, block header chaining, and address derivation in most major blockchain systems. Produces avalanche-effect collision resistance with 2^128 preimage security. Standardised in FIPS 180-4 by NIST as part of the SHA-2 family.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:bc-cryptographic-primitive",
-      "label": "Cryptographic Primitive"
-    },
-    {
-      "id": "urn:ngm:class:blockchain-entity",
-      "label": "Blockchain Entity"
-    },
-    {
       "id": "urn:ngm:class:cryptographic-primitive",
-      "label": "CryptographicPrimitive"
+      "label": "Cryptographic Primitive"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.75,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:256-bit-digest",
+        "label": "256-Bit Digest"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:compression-function",
+        "label": "Compression Function"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:proof-of-work",
@@ -42,21 +44,69 @@
       {
         "id": "urn:ngm:class:immutability",
         "label": "Immutability"
+      },
+      {
+        "id": "urn:ngm:class:data-integrity-verification",
+        "label": "Data Integrity Verification"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:sha-1",
+        "label": "SHA-1"
+      },
+      {
+        "id": "urn:ngm:class:sha-3",
+        "label": "SHA-3"
+      },
+      {
+        "id": "urn:ngm:class:md5",
+        "label": "MD5"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-provenance",
+        "label": "Supply Chain Provenance"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:cryptographic-hash-function",
         "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:merkle-damgard-construction",
+        "label": "Merkle-Damgard Construction"
       }
     ],
     "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:fips-180-4",
+        "label": "FIPS 180-4"
+      },
+      {
+        "id": "urn:ngm:class:nist",
+        "label": "NIST"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:sha-2-family",
+        "label": "SHA-2 Family"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:cryptographic-hash",
@@ -71,7 +121,7 @@
         "label": "Digital Signature"
       },
       {
-        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key",
+        "id": "urn:ngm:class:public-key",
         "label": "Public Key"
       },
       {
@@ -81,6 +131,14 @@
       {
         "id": "urn:ngm:class:collision-resistance",
         "label": "Collision Resistance"
+      },
+      {
+        "id": "urn:ngm:class:preimage-resistance",
+        "label": "Preimage Resistance"
+      },
+      {
+        "id": "urn:ngm:class:hmac",
+        "label": "HMAC"
       }
     ]
   },

@@ -13,10 +13,22 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.4,
+  "qualityScore": 0.65,
   "maturity": "emerging",
   "relationships": {
     "hasPart": [
+      {
+        "id": "urn:ngm:class:data-ingestion",
+        "label": "Data Ingestion"
+      },
+      {
+        "id": "urn:ngm:class:data-transformation",
+        "label": "Data Transformation"
+      },
+      {
+        "id": "urn:ngm:class:data-validation",
+        "label": "Data Validation"
+      },
       {
         "id": "urn:ngm:class:feature-engineering",
         "label": "Feature Engineering"
@@ -24,9 +36,22 @@
       {
         "id": "urn:ngm:class:quality-assurance",
         "label": "Quality Assurance"
+      },
+      {
+        "id": "urn:ngm:class:error-handling",
+        "label": "Error Handling"
       }
     ],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:distributed-storage",
+        "label": "Distributed Storage"
+      },
+      {
+        "id": "urn:ngm:class:message-queue",
+        "label": "Message Queue"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:machine-learning-discipline",
@@ -35,12 +60,43 @@
       {
         "id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:real-time-analytics",
+        "label": "Real-Time Analytics"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:data-source",
+        "label": "Data Source"
+      },
+      {
+        "id": "urn:ngm:class:monitoring",
+        "label": "Monitoring"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:ad-hoc-query",
+        "label": "Ad Hoc Query"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:oracle-service",
+        "label": "Oracle Service"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:etl-pipeline",
@@ -49,19 +105,40 @@
       {
         "id": "urn:ngm:class:distributed-system",
         "label": "Distributed System"
+      },
+      {
+        "id": "urn:ngm:class:stream-processing",
+        "label": "Stream Processing"
+      },
+      {
+        "id": "urn:ngm:class:batch-processing",
+        "label": "Batch Processing"
       }
     ],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:data-reliability",
+        "label": "Data Reliability"
+      },
+      {
+        "id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:blockchain",
-        "label": "Blockchain"
-      },
-      {
         "id": "urn:ngm:class:monitoring-dashboard",
         "label": "Monitoring Dashboard"
+      },
+      {
+        "id": "urn:ngm:class:data-preprocessing",
+        "label": "Data Preprocessing"
+      },
+      {
+        "id": "urn:ngm:class:feature-store",
+        "label": "Feature Store"
       }
     ]
   },

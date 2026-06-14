@@ -4,23 +4,44 @@
   "slug": "image-generation",
   "public": true,
   "classIri": "urn:ngm:class:image-generation",
-  "domain": "spatial-computing",
-  "definition": "Image Generation is the synthesis of realistic or stylised images using generative AI models including Generative Adversarial Networks (GANs), Variational Autoencoders (VAEs), and Diffusion Models.",
+  "domain": "artificial-intelligence",
+  "definition": "Image Generation is the synthesis of realistic or stylised images using generative AI models including Generative Adversarial Networks (GANs), Variational Autoencoders (VAEs), and Diffusion Models. Modern systems such as DALL-E, Stable Diffusion, Midjourney, and Flux produce high-fidelity images from text descriptions, sketches, or latent representations, enabling creative applications, data augmentation, virtual production, and content creation at scale.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:sc-display-and-rendering",
-      "label": "Display and Rendering"
+      "id": "urn:ngm:class:generative-ai",
+      "label": "Generative AI"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.68,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:stable-diffusion",
+        "label": "Stable Diffusion"
+      },
+      {
+        "id": "urn:ngm:class:flux-1",
+        "label": "Flux.1"
+      },
+      {
+        "id": "urn:ngm:class:proprietary-image-generation",
+        "label": "Proprietary Image Generation"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:training-data",
         "label": "Training Data"
+      },
+      {
+        "id": "urn:ngm:class:neural-networks",
+        "label": "Neural Networks"
+      },
+      {
+        "id": "urn:ngm:class:python-and-py-torch",
+        "label": "Python and PyTorch"
       }
     ],
     "enables": [
@@ -31,12 +52,43 @@
       {
         "id": "urn:ngm:class:video-generation",
         "label": "Video Generation"
+      },
+      {
+        "id": "urn:ngm:class:ai-video",
+        "label": "AI Video"
+      },
+      {
+        "id": "urn:ngm:class:data-augmentation",
+        "label": "Data Augmentation"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision (discriminative)"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:metaverse-domain",
+        "label": "MetaverseDomain"
+      },
+      {
+        "id": "urn:ngm:class:comfy-ui",
+        "label": "ComfyUI"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:diffusion-model",
@@ -45,15 +97,44 @@
       {
         "id": "urn:ngm:class:generative-adversarial-network",
         "label": "Generative Adversarial Network"
+      },
+      {
+        "id": "urn:ngm:class:variational-autoencoders",
+        "label": "Variational Autoencoders"
+      },
+      {
+        "id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:control-net-and-similar-spatial-conditioning-systems",
+        "label": "ControlNet and Similar Spatial Conditioning Systems"
       }
     ],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:multimodal",
+        "label": "Multimodal"
+      },
+      {
+        "id": "urn:ngm:class:open-generative-ai-tools",
+        "label": "Open Generative AI Tools"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
       {
         "id": "urn:ngm:class:computer-vision",
         "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:copyright",
+        "label": "Copyright"
       }
     ]
   },

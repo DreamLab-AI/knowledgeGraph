@@ -83,20 +83,46 @@ alias:: Neural Networks, NeuralNetwork, neural network, neural networks
   "@id": "urn:ngm:class:neural-network",
   "@type": "Class",
   "label": "Neural Network",
-  "definition": "A computational model comprising interconnected layers of artificial neurons that learn to approximate functions by adjusting weighted connections through exposure to training data, forming the foundational substrate of deep learning systems including convolutional networks, recurrent networks, a...",
-  "domain": "artificial-intelligence",
+  "definition": "A computational model comprising interconnected layers of artificial neurons that learn to approximate functions by adjusting weighted connections through exposure to training data, forming the foundational substrate of deep learning systems including convolutional networks, recurrent networks, and transformer architectures.",
+  "domain": "machine-learning",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:ai-model-architecture",
-      "label": "AI Model Architecture"
-    },
-    {
-      "@id": "urn:ngm:class:deep-learning",
-      "label": "Deep Learning"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:machine-learning-model",
+    "label": "Machine Learning Model"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:activation-function",
+        "label": "Activation Function"
+      },
+      {
+        "@id": "urn:ngm:class:hidden-layer",
+        "label": "Hidden Layer"
+      },
+      {
+        "@id": "urn:ngm:class:weight-matrix",
+        "label": "Weight Matrix"
+      },
+      {
+        "@id": "urn:ngm:class:neuron",
+        "label": "Neuron"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "@id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      },
+      {
+        "@id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      }
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:computer-vision",
@@ -109,6 +135,58 @@ alias:: Neural Networks, NeuralNetwork, neural network, neural networks
       {
         "@id": "urn:ngm:class:pattern-recognition",
         "label": "Pattern Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "@id": "urn:ngm:class:stochastic-gradient-descent",
+        "label": "Stochastic Gradient Descent"
+      },
+      {
+        "@id": "urn:ngm:class:regularisation",
+        "label": "Regularisation"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:universal-function-approximation",
+        "label": "Universal Function Approximation"
+      },
+      {
+        "@id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:support-vector-machine",
+        "label": "Support Vector Machine"
+      },
+      {
+        "@id": "urn:ngm:class:decision-tree",
+        "label": "Decision Tree"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:robotics-perception",
+        "label": "Robotics Perception"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
       }
     ],
     "relatedTo": [
@@ -127,14 +205,28 @@ alias:: Neural Networks, NeuralNetwork, neural network, neural networks
       {
         "@id": "urn:ngm:class:transformer",
         "label": "Transformer"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:artificial-neural-network",
+      "label": "Artificial Neural Network"
+    },
+    {
+      "@id": "urn:ngm:class:connectionist-model",
+      "label": "Connectionist Model"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

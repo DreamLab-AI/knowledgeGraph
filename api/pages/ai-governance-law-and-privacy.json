@@ -4,7 +4,7 @@
   "slug": "ai-governance-law-and-privacy",
   "public": true,
   "classIri": "urn:ngm:class:ai-governance-law-and-privacy",
-  "domain": "infrastructure",
+  "domain": "governance",
   "definition": "The intersecting domain of political governance, legal frameworks, and individual privacy rights as they apply to AI and digital technologies. This cluster addresses how legislation (e.g., EU AI Act, GDPR), regulatory enforcement, and political economy shape what AI systems are permitted to do, how data about individuals is collected and used, and how citizens can exercise rights against automated decision-making and surveillance.",
   "subClassOf": [
     {
@@ -28,40 +28,144 @@
       {
         "id": "urn:ngm:class:ai-regulation",
         "label": "AI Regulation"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-accountability",
+        "label": "Algorithmic Accountability"
+      },
+      {
+        "id": "urn:ngm:class:biometric-surveillance-regulation",
+        "label": "Biometric Surveillance Regulation"
+      },
+      {
+        "id": "urn:ngm:class:ai-liability-frameworks",
+        "label": "AI Liability Frameworks"
       }
     ],
     "requires": [
       {
         "id": "urn:ngm:class:gdpr-compliance",
         "label": "GDPR Compliance"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-impact-assessment",
+        "label": "Regulatory Impact Assessment"
+      },
+      {
+        "id": "urn:ngm:class:fundamental-rights-impact-assessment",
+        "label": "Fundamental Rights Impact Assessment"
       }
     ],
-    "enables": [],
-    "dependsOn": [],
-    "implements": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:trustworthy-ai",
+        "label": "Trustworthy AI"
+      },
+      {
+        "id": "urn:ngm:class:access-to-justice",
+        "label": "Access to Justice"
+      },
+      {
+        "id": "urn:ngm:class:democratic-oversight-of-ai",
+        "label": "Democratic Oversight of AI"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:data-sovereignty",
+        "label": "Data Sovereignty"
+      },
+      {
+        "id": "urn:ngm:class:rule-of-law",
+        "label": "Rule of Law"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      },
+      {
+        "id": "urn:ngm:class:general-data-protection-regulation",
+        "label": "General Data Protection Regulation"
+      }
+    ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:digital-society-surveillance",
         "label": "Digital Society Surveillance"
+      },
+      {
+        "id": "urn:ngm:class:surveillance-capitalism",
+        "label": "Surveillance Capitalism"
       }
     ],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
+    "bridgesTo": [
       {
         "id": "urn:ngm:class:trust-and-safety",
         "label": "Trust and Safety"
       },
       {
-        "id": "urn:ngm:class:intellectual-property-rights-framework",
-        "label": "copyright"
-      },
-      {
         "id": "urn:ngm:class:education-and-ai",
         "label": "Education and AI"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-transparency",
+        "label": "Supply Chain Transparency"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:conformity-assessment",
+        "label": "Conformity Assessment"
+      },
+      {
+        "id": "urn:ngm:class:risk-classification",
+        "label": "Risk Classification"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:human-oversight",
+        "label": "Human Oversight"
+      },
+      {
+        "id": "urn:ngm:class:civil-liberties",
+        "label": "Civil Liberties"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-iec-42001",
+        "label": "ISO/IEC 42001 AI Management Standard"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI Risk Management Framework"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:digital-governance",
+        "label": "Digital Governance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:intellectual-property-rights-framework",
+        "label": "Intellectual Property Rights Framework"
+      },
+      {
+        "id": "urn:ngm:class:open-source-ai",
+        "label": "Open Source AI"
+      },
+      {
+        "id": "urn:ngm:class:data-brokerage",
+        "label": "Data Brokerage"
+      },
+      {
+        "id": "urn:ngm:class:facial-recognition-technology",
+        "label": "Facial Recognition Technology"
       }
     ]
   },

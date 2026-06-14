@@ -58,31 +58,133 @@ public:: true
   "domain": "security",
   "maturity": "established",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:digital-identity",
-      "label": "Digital Identity"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:digital-identity",
+    "label": "Digital Identity"
+  },
   "relations": {
     "requires": [
       {
         "@id": "urn:ngm:class:cryptography",
         "label": "Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:did-document",
+        "label": "DID Document"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:verifiable-credentials",
         "label": "Verifiable Credentials"
+      },
+      {
+        "@id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self-Sovereign Identity"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-authentication",
+        "label": "Decentralised Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:selective-disclosure",
+        "label": "Selective Disclosure"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:w3c-did-specification",
+        "label": "W3C DID Specification"
+      },
+      {
+        "@id": "urn:ngm:class:uri-scheme",
+        "label": "URI Scheme"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:w3c",
+        "label": "W3C"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:did-method",
+        "label": "DID Method"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-by-design",
+        "label": "Privacy by Design"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:centralised-identity-provider",
+        "label": "Centralised Identity Provider"
+      },
+      {
+        "@id": "urn:ngm:class:oauth",
+        "label": "OAuth"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:identity",
+        "label": "Identity"
+      },
+      {
+        "@id": "urn:ngm:class:trust-framework",
+        "label": "Trust Framework"
+      },
+      {
+        "@id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:web-of-trust",
+        "label": "Web of Trust"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:did",
+      "label": "DID"
+    },
+    {
+      "@id": "urn:ngm:class:w3c-did",
+      "label": "W3C DID"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

@@ -630,42 +630,70 @@ alias:: Proof-of-Work, ProofOfWork, proof-of-work
   "definition": "A consensus mechanism requiring network participants to expend significant computational effort solving a cryptographic puzzle before appending a new block to the blockchain. The difficulty of the puzzle self-adjusts to maintain a target block interval, making chain rewriting computationally prohibitive and providing Sybil resistance through physical resource expenditure.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:bc-protocol-and-consensus",
-      "label": "Protocol and Consensus"
-    },
-    {
-      "@id": "urn:ngm:class:blockchain-entity",
-      "label": "Blockchain Entity"
-    },
-    {
-      "@id": "urn:ngm:class:consensus-protocol",
-      "label": "Consensus Protocol"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:consensus-protocol",
+    "label": "Consensus Protocol"
+  },
   "relations": {
     "uses": [
       {"@id": "urn:ngm:class:hash-function", "label": "Hash Function"},
-      {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"}
+      {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"},
+      {"@id": "urn:ngm:class:nonce", "label": "Nonce"},
+      {"@id": "urn:ngm:class:asic", "label": "ASIC"},
+      {"@id": "urn:ngm:class:sha-256", "label": "SHA-256"}
     ],
     "hasPart": [
       {"@id": "urn:ngm:class:mining-pool", "label": "Mining Pool"},
-      {"@id": "urn:ngm:class:block-reward", "label": "Block Reward"}
+      {"@id": "urn:ngm:class:block-reward", "label": "Block Reward"},
+      {"@id": "urn:ngm:class:difficulty-adjustment", "label": "Difficulty Adjustment"},
+      {"@id": "urn:ngm:class:network-hash-rate", "label": "Network Hash Rate"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:energy-consumption", "label": "Energy Consumption"},
+      {"@id": "urn:ngm:class:mining-hardware", "label": "Mining Hardware"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:distributed-ledger-technology", "label": "Distributed Ledger Technology"},
+      {"@id": "urn:ngm:class:transaction-finality", "label": "Transaction Finality"},
+      {"@id": "urn:ngm:class:immutability", "label": "Immutability"},
+      {"@id": "urn:ngm:class:decentralization", "label": "Decentralization"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
+      {"@id": "urn:ngm:class:peer-to-peer-network", "label": "Peer-to-Peer Network"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:sybil-resistance", "label": "Sybil Resistance"},
+      {"@id": "urn:ngm:class:byzantine-fault-tolerance", "label": "Byzantine Fault Tolerance"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof of Stake"},
+      {"@id": "urn:ngm:class:proof-of-spacetime", "label": "Proof of Spacetime"},
+      {"@id": "urn:ngm:class:proof-of-useful-work", "label": "Proof of Useful Work"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:double-spending-prevention", "label": "Double Spending Prevention"},
+      {"@id": "urn:ngm:class:network-security", "label": "Network Security"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:energy-infrastructure", "label": "Energy Infrastructure"},
+      {"@id": "urn:ngm:class:semiconductor-manufacturing", "label": "Semiconductor Manufacturing"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
       {"@id": "urn:ngm:class:consensus-algorithm", "label": "Consensus Algorithm"},
-      {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof of Stake"},
       {"@id": "urn:ngm:class:blockchain-network", "label": "Blockchain Network"},
-      {"@id": "urn:ngm:class:mempool", "label": "Mempool"}
-    ],
-    "enables": [
-      {"@id": "urn:ngm:class:distributed-ledger-technology", "label": "Distributed Ledger Technology"},
-      {"@id": "urn:ngm:class:transaction-finality", "label": "Transaction Finality"}
+      {"@id": "urn:ngm:class:mempool", "label": "Mempool"},
+      {"@id": "urn:ngm:class:selfish-mining", "label": "Selfish Mining"},
+      {"@id": "urn:ngm:class:51-percent-attack", "label": "51% Attack"},
+      {"@id": "urn:ngm:class:halving", "label": "Halving"}
     ]
   },
-  "quality": 0.8,
+  "sameAs": [
+    {"@id": "urn:ngm:class:pow-consensus", "label": "PoW Consensus"},
+    {"@id": "urn:ngm:class:nakamoto-consensus", "label": "Nakamoto Consensus"}
+  ],
+  "quality": 0.70,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

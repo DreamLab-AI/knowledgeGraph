@@ -66,27 +66,35 @@ public:: true
   "domain": "spatial-computing",
   "maturity": "emerging",
   "qualityScore": 0.7,
-  "subClassOf": [
+  "subClassOf": {
+    "@id": "urn:ngm:class:sc-display-and-rendering",
+    "label": "Display and Rendering"
+  },
+  "quality": 0.68,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  },
+  "sameAs": [
     {
-      "@id": "urn:ngm:class:sc-display-and-rendering",
-      "label": "Display and Rendering"
+      "@id": "urn:ngm:class:scan-conversion",
+      "label": "Scan Conversion"
     },
     {
-      "@id": "urn:ngm:class:metaverse",
-      "label": "Metaverse"
+      "@id": "urn:ngm:class:triangle-rasterization",
+      "label": "Triangle Rasterization"
     }
   ],
-  "quality": 0.5,
-  "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
-  },
   "relations": {
     "contrastsWith": [
       {
         "@id": "urn:ngm:class:ray-tracing",
         "label": "Ray Tracing"
+      },
+      {
+        "@id": "urn:ngm:class:path-tracing",
+        "label": "Path Tracing"
       }
     ],
     "uses": [
@@ -97,12 +105,84 @@ public:: true
       {
         "@id": "urn:ngm:class:pixel-shader",
         "label": "Pixel Shader"
+      },
+      {
+        "@id": "urn:ngm:class:geometry-shader",
+        "label": "Geometry Shader"
+      },
+      {
+        "@id": "urn:ngm:class:z-buffer",
+        "label": "Z-Buffer"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:graphics-processing-unit",
+        "label": "Graphics Processing Unit"
+      },
+      {
+        "@id": "urn:ngm:class:triangle-mesh",
+        "label": "Triangle Mesh"
+      },
+      {
+        "@id": "urn:ngm:class:depth-buffer",
+        "label": "Depth Buffer"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:vertex-processing",
+        "label": "Vertex Processing"
+      },
+      {
+        "@id": "urn:ngm:class:primitive-assembly",
+        "label": "Primitive Assembly"
+      },
+      {
+        "@id": "urn:ngm:class:fragment-shading",
+        "label": "Fragment Shading"
+      },
+      {
+        "@id": "urn:ngm:class:output-merger",
+        "label": "Output Merger"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:graphics-pipeline",
+        "label": "Graphics Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:real-time-3d-graphics",
+        "label": "Real-Time 3D Graphics"
+      },
+      {
+        "@id": "urn:ngm:class:video-game-rendering",
+        "label": "Video Game Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-reality-rendering",
+        "label": "Virtual Reality Rendering"
       }
     ],
     "relatedTo": [
       {
         "@id": "urn:ngm:class:level-of-detail",
         "label": "Level of Detail"
+      },
+      {
+        "@id": "urn:ngm:class:texture-mapping",
+        "label": "Texture Mapping"
+      },
+      {
+        "@id": "urn:ngm:class:antialiasing",
+        "label": "Antialiasing"
       }
     ],
     "supports": [
@@ -113,6 +193,20 @@ public:: true
       {
         "@id": "urn:ngm:class:post-processing",
         "label": "Post Processing"
+      },
+      {
+        "@id": "urn:ngm:class:shadow-mapping",
+        "label": "Shadow Mapping"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
       }
     ]
   }

@@ -5,22 +5,31 @@
   "public": true,
   "classIri": "urn:ngm:class:question-answering",
   "domain": "artificial-intelligence",
-  "definition": "Question Answering (QA) is the NLP task of automatically generating accurate answers to natural language questions posed by users, either by extracting answers from text passages (extractive QA) or generating free-form responses (generative QA).",
+  "definition": "Question Answering (QA) is the NLP task of automatically generating accurate answers to natural language questions posed by users, either by extracting answers from text passages (extractive QA) or generating free-form responses (generative QA). QA systems employ reading comprehension models, retrieval-augmented generation, and knowledge reasoning to power applications including search engines, virtual assistants, and customer support.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ai-application",
-      "label": "AI Application"
-    },
-    {
-      "id": "urn:ngm:class:machine-learning-discipline",
-      "label": "Machine Learning"
+      "id": "urn:ngm:class:natural-language-processing",
+      "label": "Natural Language Processing"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.72,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:extractive-qa",
+        "label": "Extractive QA"
+      },
+      {
+        "id": "urn:ngm:class:generative-qa",
+        "label": "Generative QA"
+      },
+      {
+        "id": "urn:ngm:class:open-domain-qa",
+        "label": "Open-Domain QA"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:natural-language-processing",
@@ -29,6 +38,14 @@
       {
         "id": "urn:ngm:class:information-retrieval",
         "label": "Information Retrieval"
+      },
+      {
+        "id": "urn:ngm:class:reading-comprehension",
+        "label": "Reading Comprehension"
+      },
+      {
+        "id": "urn:ngm:class:language-model",
+        "label": "Language Model"
       }
     ],
     "enables": [
@@ -39,12 +56,47 @@
       {
         "id": "urn:ngm:class:retrieval-augmented-generation",
         "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "id": "urn:ngm:class:virtual-assistant",
+        "label": "Virtual Assistant"
+      },
+      {
+        "id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:text-corpus",
+        "label": "Text Corpus"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:document-retrieval",
+        "label": "Document Retrieval"
+      },
+      {
+        "id": "urn:ngm:class:text-summarization",
+        "label": "Text Summarization"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      },
+      {
+        "id": "urn:ngm:class:enterprise-search",
+        "label": "Enterprise Search"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:transformer",
@@ -53,12 +105,33 @@
       {
         "id": "urn:ngm:class:knowledge-graph",
         "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:embedding",
+        "label": "Embedding"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
       }
     ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:fact-verification",
+        "label": "Fact Verification"
+      },
+      {
+        "id": "urn:ngm:class:multi-hop-reasoning",
+        "label": "Multi-Hop Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:visual-question-answering",
+        "label": "Visual Question Answering"
+      }
+    ]
   },
   "wikilinks": [
     {

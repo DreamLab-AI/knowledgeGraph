@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:database-system",
   "domain": "infrastructure",
-  "definition": "A database system (DBMS - Database Management System) is software that enables users to define, create, maintain, and control access to structured collections of data.",
+  "definition": "A database system (DBMS - Database Management System) is software that enables users to define, create, maintain, and control access to structured collections of data. It encompasses relational databases using SQL for structured table-based data and NoSQL databases supporting flexible schemas for document, key-value, graph, and wide-column data models, providing mechanisms for concurrent access, data integrity, and persistent storage.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-data-management",
@@ -13,11 +13,33 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.72,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:query-engine",
+        "label": "Query Engine"
+      },
+      {
+        "id": "urn:ngm:class:storage-engine",
+        "label": "Storage Engine"
+      },
+      {
+        "id": "urn:ngm:class:transaction-manager",
+        "label": "Transaction Manager"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:file-system",
+        "label": "File System"
+      },
+      {
+        "id": "urn:ngm:class:operating-system",
+        "label": "Operating System"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:data-persistence",
@@ -30,17 +52,92 @@
       {
         "id": "urn:ngm:class:transaction-management",
         "label": "Transaction Management"
+      },
+      {
+        "id": "urn:ngm:class:concurrent-access-control",
+        "label": "Concurrent Access Control"
+      },
+      {
+        "id": "urn:ngm:class:data-analytics",
+        "label": "Data Analytics"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:acid-properties",
+        "label": "ACID Properties"
+      },
+      {
+        "id": "urn:ngm:class:relational-model",
+        "label": "Relational Model"
+      },
+      {
+        "id": "urn:ngm:class:cap-theorem",
+        "label": "CAP Theorem"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:file-system",
+        "label": "File System"
+      },
+      {
+        "id": "urn:ngm:class:in-memory-data-store",
+        "label": "In-Memory Data Store"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-pipeline",
+        "label": "Machine Learning Pipeline"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:structured-query-language",
+        "label": "Structured Query Language"
+      },
+      {
+        "id": "urn:ngm:class:write-ahead-logging",
+        "label": "Write-Ahead Logging"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:data-replication",
+        "label": "Data Replication"
+      },
+      {
+        "id": "urn:ngm:class:role-based-access-control",
+        "label": "Role-Based Access Control"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-iec-9075",
+        "label": "ISO/IEC 9075 SQL Standard"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:data-warehouse",
+        "label": "Data Warehouse"
+      },
+      {
+        "id": "urn:ngm:class:distributed-database",
+        "label": "Distributed Database"
+      },
+      {
+        "id": "urn:ngm:class:cloud-database",
+        "label": "Cloud Database"
+      }
+    ]
   },
   "wikilinks": [
     {

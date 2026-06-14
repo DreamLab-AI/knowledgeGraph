@@ -4,24 +4,16 @@
   "slug": "byzantine-fault-tolerance",
   "public": true,
   "classIri": "urn:ngm:class:byzantine-fault-tolerance",
-  "domain": "blockchain",
-  "definition": "The feature of a distributed network to reach consensus on the same value even when some nodes fail to respond or respond with incorrect information. Enables networks to function correctly despite malicious or faulty nodes comprising less than one-third of the network.",
+  "domain": "distributed-systems",
+  "definition": "The feature of a distributed network to reach consensus on the same value even when some nodes fail to respond or respond with incorrect information. Enables networks to function correctly despite malicious or faulty nodes comprising less than one-third of the network. Derived from the Byzantine Generals Problem; the fundamental theorem states consensus is achievable if and only if more than two-thirds of participants are honest.",
   "subClassOf": [
-    {
-      "id": "urn:ngm:class:bc-protocol-and-consensus",
-      "label": "Protocol and Consensus"
-    },
-    {
-      "id": "urn:ngm:class:bc-protocol-and-consensus",
-      "label": "BC Protocol And Consensus"
-    },
     {
       "id": "urn:ngm:class:consensus-mechanism",
       "label": "Consensus Mechanism"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
     "hasPart": [
@@ -36,6 +28,10 @@
       {
         "id": "urn:ngm:class:voting-round",
         "label": "Voting Round"
+      },
+      {
+        "id": "urn:ngm:class:prepare-phase",
+        "label": "Prepare Phase"
       }
     ],
     "requires": [
@@ -50,6 +46,10 @@
       {
         "id": "urn:ngm:class:quorum",
         "label": "Quorum"
+      },
+      {
+        "id": "urn:ngm:class:distributed-agreement",
+        "label": "Distributed Agreement"
       }
     ],
     "enables": [
@@ -64,17 +64,83 @@
       {
         "id": "urn:ngm:class:fault-tolerance",
         "label": "Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:deterministic-finality",
+        "label": "Deterministic Finality"
+      },
+      {
+        "id": "urn:ngm:class:state-machine-replication",
+        "label": "State Machine Replication"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public Key Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:network-synchrony",
+        "label": "Network Synchrony"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:practical-byzantine-fault-tolerance",
+        "label": "Practical Byzantine Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:hotstuff-protocol",
+        "label": "HotStuff Protocol"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:crash-fault-tolerance",
+        "label": "Crash Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-work",
+        "label": "Proof of Work"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:multi-agent-systems",
+        "label": "Multi-Agent Systems"
+      },
+      {
+        "id": "urn:ngm:class:ai-energy-optimisation",
+        "label": "AI Energy Optimisation"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      },
+      {
+        "id": "urn:ngm:class:validator-set",
+        "label": "Validator Set"
+      },
+      {
+        "id": "urn:ngm:class:casper-ffg",
+        "label": "Casper FFG"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -4,19 +4,32 @@
   "slug": "language-modeling",
   "public": true,
   "classIri": "urn:ngm:class:language-modeling",
-  "domain": "spatial-computing",
-  "definition": "Language Modeling is the fundamental NLP task of learning probability distributions over sequences of words or tokens to predict the likelihood of text sequences and generate plausible continuations.",
+  "domain": "machine-learning",
+  "definition": "Language Modeling is the fundamental NLP task of learning probability distributions over sequences of words or tokens to predict the likelihood of text sequences and generate plausible continuations. Language models underpin virtually all modern NLP applications through pre-training on massive text corpora, capturing syntactic structure, semantic relationships, and world knowledge that transfer to downstream tasks.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:sc-content-and-assets",
-      "label": "Content and Assets"
+      "id": "urn:ngm:class:natural-language-processing",
+      "label": "Natural Language Processing"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.72,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:autoregressive-language-modeling",
+        "label": "Autoregressive Language Modeling"
+      },
+      {
+        "id": "urn:ngm:class:masked-language-modeling",
+        "label": "Masked Language Modeling"
+      },
+      {
+        "id": "urn:ngm:class:encoder-decoder-architecture",
+        "label": "Encoder-Decoder Architecture"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:transformer",
@@ -25,6 +38,18 @@
       {
         "id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:self-attention",
+        "label": "Self Attention"
+      },
+      {
+        "id": "urn:ngm:class:tokenization",
+        "label": "Tokenization"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
       }
     ],
     "enables": [
@@ -39,13 +64,56 @@
       {
         "id": "urn:ngm:class:question-answering",
         "label": "Question Answering"
+      },
+      {
+        "id": "urn:ngm:class:machine-translation",
+        "label": "Machine Translation"
+      },
+      {
+        "id": "urn:ngm:class:code-generation",
+        "label": "Code Generation"
+      },
+      {
+        "id": "urn:ngm:class:dialogue-systems",
+        "label": "Dialogue Systems"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:diffusion-models",
+        "label": "Diffusion Models"
+      },
+      {
+        "id": "urn:ngm:class:state-space-models",
+        "label": "State Space Models"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:knowledge-graphing",
+        "label": "Knowledge Graphing"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-ai",
+        "label": "Multimodal AI"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "id": "urn:ngm:class:pre-training",
+        "label": "Pre-Training"
+      },
+      {
+        "id": "urn:ngm:class:fine-tuning",
+        "label": "Fine-Tuning"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
@@ -53,6 +121,14 @@
       {
         "id": "urn:ngm:class:natural-language-processing",
         "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:scaling-laws",
+        "label": "Scaling Laws"
+      },
+      {
+        "id": "urn:ngm:class:emergent-abilities",
+        "label": "Emergent Abilities"
       }
     ]
   },

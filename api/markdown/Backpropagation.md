@@ -55,32 +55,64 @@ public:: true
   "@type": "Class",
   "label": "Backpropagation",
   "definition": "Backpropagation is the algorithm for computing gradients of the loss function with respect to each weight in a neural network by applying the chain rule of calculus in reverse through the computation graph. It enables efficient gradient calculation across all layers in a single backward pass, making large-scale neural network training computationally feasible.",
-  "domain": "artificial-intelligence",
+  "domain": "machine-learning",
   "maturity": "emerging",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:optimization-algorithm",
+    "label": "Optimization Algorithm"
+  },
   "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:forward-pass", "label": "Forward Pass"},
+      {"@id": "urn:ngm:class:backward-pass", "label": "Backward Pass"},
+      {"@id": "urn:ngm:class:chain-rule", "label": "Chain Rule"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:neural-network-training", "label": "Neural Network Training"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:differentiable-function", "label": "Differentiable Function"},
+      {"@id": "urn:ngm:class:computation-graph", "label": "Computation Graph"}
+    ],
     "enables": [
       {"@id": "urn:ngm:class:gradient-descent", "label": "Gradient Descent"},
-      {"@id": "urn:ngm:class:model-training", "label": "Model Training"}
+      {"@id": "urn:ngm:class:model-training", "label": "Model Training"},
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
+      {"@id": "urn:ngm:class:weight-update", "label": "Weight Update"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:loss-function", "label": "Loss Function"},
+      {"@id": "urn:ngm:class:activation-function", "label": "Activation Function"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
-      {"@id": "urn:ngm:class:loss-function", "label": "Loss Function"}
+      {"@id": "urn:ngm:class:automatic-differentiation", "label": "Automatic Differentiation"},
+      {"@id": "urn:ngm:class:stochastic-gradient-descent", "label": "Stochastic Gradient Descent"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:forward-mode-differentiation", "label": "Forward Mode Differentiation"},
+      {"@id": "urn:ngm:class:genetic-algorithm", "label": "Genetic Algorithm"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:activation-function", "label": "Activation Function"}
+      {"@id": "urn:ngm:class:vanishing-gradient-problem", "label": "Vanishing Gradient Problem"},
+      {"@id": "urn:ngm:class:batch-normalisation", "label": "Batch Normalisation"},
+      {"@id": "urn:ngm:class:dropout-regularisation", "label": "Dropout Regularisation"},
+      {"@id": "urn:ngm:class:recurrent-neural-network", "label": "Recurrent Neural Network"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:neuromorphic-computing", "label": "Neuromorphic Computing"},
+      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"}
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {"@id": "urn:ngm:class:reverse-mode-automatic-differentiation", "label": "Reverse Mode Automatic Differentiation"},
+    {"@id": "urn:ngm:class:reverse-accumulation", "label": "Reverse Accumulation"}
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

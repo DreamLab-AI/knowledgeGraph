@@ -123,40 +123,64 @@ alias:: FederatedLearning
   "@id": "urn:ngm:class:federated-learning",
   "@type": "Class",
   "label": "Federated Learning",
-  "definition": "Distributed machine learning paradigm enabling collaborative model training across decentralized data sources without centralizing sensitive information.",
-  "domain": "infrastructure",
+  "definition": "Distributed machine learning paradigm enabling collaborative model training across decentralized data sources without centralizing sensitive information; model updates are aggregated from local computations whilst raw data remains on-device, preserving privacy and enabling cross-organizational learning.",
+  "domain": "machine-learning",
   "maturity": "emerging",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:infra-computing-and-cloud",
-      "label": "Computing and Cloud"
-    },
-    {
-      "@id": "urn:ngm:class:distributed-computing",
-      "label": "Distributed Computing"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:distributed-learning",
+    "label": "Distributed Learning"
+  },
   "relations": {
     "uses": [
       {"@id": "urn:ngm:class:differential-privacy", "label": "Differential Privacy"},
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"}
+      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
+      {"@id": "urn:ngm:class:secure-aggregation", "label": "Secure Aggregation"},
+      {"@id": "urn:ngm:class:model-compression", "label": "Model Compression"},
+      {"@id": "urn:ngm:class:gradient-descent", "label": "Gradient Descent"}
     ],
     "requires": [
-      {"@id": "urn:ngm:class:model-training", "label": "Model Training"}
+      {"@id": "urn:ngm:class:model-training", "label": "Model Training"},
+      {"@id": "urn:ngm:class:communication-protocol", "label": "Communication Protocol"},
+      {"@id": "urn:ngm:class:distributed-computing", "label": "Distributed Computing"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:privacy-preserving-ml", "label": "Privacy Preserving ML"},
+      {"@id": "urn:ngm:class:collaborative-learning", "label": "Collaborative Learning"},
+      {"@id": "urn:ngm:class:data-sovereignty", "label": "Data Sovereignty"}
     ],
     "supports": [
       {"@id": "urn:ngm:class:privacy-preserving-data-sharing", "label": "Privacy Preserving Data Sharing"},
-      {"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"}
+      {"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"},
+      {"@id": "urn:ngm:class:gdpr-compliance", "label": "GDPR Compliance"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
+      {"@id": "urn:ngm:class:model-aggregation", "label": "Model Aggregation"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:centralised-machine-learning", "label": "Centralised Machine Learning"},
+      {"@id": "urn:ngm:class:data-sharing", "label": "Data Sharing"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:blockchain-network", "label": "Blockchain Network"},
+      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero Knowledge Proof"},
+      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"}
+      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"},
+      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"},
+      {"@id": "urn:ngm:class:homomorphic-encryption", "label": "Homomorphic Encryption"}
     ]
   },
-  "quality": 0.4,
+  "sameAs": [
+    {"@id": "urn:ngm:class:federated-machine-learning", "label": "Federated Machine Learning"},
+    {"@id": "urn:ngm:class:collaborative-federated-learning", "label": "Collaborative Federated Learning"}
+  ],
+  "quality": 0.68,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

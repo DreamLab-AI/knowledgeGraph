@@ -94,25 +94,43 @@ public:: true
   "@id": "urn:ngm:class:3-d-modeling",
   "@type": "Class",
   "label": "3D Modeling",
-  "definition": "3D Modeling is the artistic and technical discipline of creating three-dimensional digital forms using specialised software tools.",
+  "definition": "3D Modeling is the artistic and technical discipline of creating three-dimensional digital forms using specialised software tools, encompassing polygonal modeling, digital sculpting, procedural generation, and CAD techniques to produce assets for animation, rendering, games, and immersive environments.",
   "domain": "spatial-computing",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:sc-content-and-assets",
-      "label": "Content and Assets"
-    },
-    {
-      "@id": "urn:ngm:class:digital-art",
-      "label": "Digital Art"
-    },
-    {
-      "@id": "urn:ngm:class:3-d-development",
-      "label": "3D Development"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:3-d-development",
+    "label": "3D Development"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:sculpting",
+        "label": "Sculpting"
+      },
+      {
+        "@id": "urn:ngm:class:texturing",
+        "label": "Texturing"
+      },
+      {
+        "@id": "urn:ngm:class:rigging",
+        "label": "Rigging"
+      },
+      {
+        "@id": "urn:ngm:class:material-definition",
+        "label": "Material Definition"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:asset-pipeline",
+        "label": "Asset Pipeline"
+      }
+    ],
     "requires": [
+      {
+        "@id": "urn:ngm:class:modelling-software",
+        "label": "Modelling Software"
+      },
       {
         "@id": "urn:ngm:class:anatomical-knowledge",
         "label": "Anatomical Knowledge"
@@ -122,8 +140,8 @@ public:: true
         "label": "Material Understanding"
       },
       {
-        "@id": "urn:ngm:class:modelling-software",
-        "label": "Modelling Software"
+        "@id": "urn:ngm:class:polygon-mesh",
+        "label": "Polygon Mesh"
       }
     ],
     "enables": [
@@ -138,14 +156,104 @@ public:: true
       {
         "@id": "urn:ngm:class:virtual-environment-design",
         "label": "Virtual Environment Design"
+      },
+      {
+        "@id": "urn:ngm:class:rendering",
+        "label": "Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-graphics",
+        "label": "Real-Time Graphics"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:3-d-model",
+        "label": "3D Model"
+      },
+      {
+        "@id": "urn:ngm:class:uv-mapping",
+        "label": "UV Mapping"
+      },
+      {
+        "@id": "urn:ngm:class:level-of-detail",
+        "label": "Level of Detail"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:game-development",
+        "label": "Game Development"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:gltf",
+        "label": "glTF"
+      },
+      {
+        "@id": "urn:ngm:class:obj-format",
+        "label": "OBJ Format"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:digital-art",
+        "label": "Digital Art"
+      },
+      {
+        "@id": "urn:ngm:class:2-d-illustration",
+        "label": "2D Illustration"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:photogrammetry",
+        "label": "Photogrammetry"
+      },
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:3-d-printing",
+        "label": "3D Printing"
+      },
+      {
+        "@id": "urn:ngm:class:visual-effects",
+        "label": "Visual Effects"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:3-d-model-authoring",
+      "label": "3D Model Authoring"
+    },
+    {
+      "@id": "urn:ngm:class:three-dimensional-modeling",
+      "label": "Three-Dimensional Modeling"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

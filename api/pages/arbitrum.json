@@ -8,15 +8,28 @@
   "definition": "Arbitrum is a family of Ethereum layer-2 scaling solutions developed by Offchain Labs that use optimistic rollup technology to increase transaction throughput and reduce fees. Its flagship network, Arbitrum One, launched on mainnet in 2021 and executes transactions in a custom virtual machine while posting transaction data and state commitments to Ethereum. Arbitrum's interactive multi-round fraud-proof protocol distinguishes it from other optimistic rollups by narrowing disputes to a single instruction before on-chain resolution. The ARB token governs the network through the Arbitrum DAO, and Arbitrum Nitro and Orbit extend the technology to custom chains.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:blockchain-domain",
-      "label": "Blockchain Domain"
+      "id": "urn:ngm:class:layer-2-scaling-solution",
+      "label": "Layer-2 Scaling Solution"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:arbitrum-one",
+        "label": "Arbitrum One"
+      },
+      {
+        "id": "urn:ngm:class:arbitrum-nova",
+        "label": "Arbitrum Nova"
+      },
+      {
+        "id": "urn:ngm:class:arbitrum-orbit",
+        "label": "Arbitrum Orbit"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:ethereum-smart-contract-platform",
@@ -29,23 +42,115 @@
       {
         "id": "urn:ngm:class:fraud-proof",
         "label": "Fraud Proof"
+      },
+      {
+        "id": "urn:ngm:class:sequencer",
+        "label": "Sequencer"
+      },
+      {
+        "id": "urn:ngm:class:validator-node",
+        "label": "Validator Node"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:decentralised-finance-domain",
         "label": "Decentralised Finance Domain"
+      },
+      {
+        "id": "urn:ngm:class:low-cost-transaction",
+        "label": "Low-Cost Transaction"
+      },
+      {
+        "id": "urn:ngm:class:high-throughput-blockchain",
+        "label": "High-Throughput Blockchain"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:ethereum-data-availability",
+        "label": "Ethereum Data Availability"
+      },
+      {
+        "id": "urn:ngm:class:challenge-period",
+        "label": "Challenge Period"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:optimistic-rollup",
+        "label": "Optimistic Rollup"
+      },
+      {
+        "id": "urn:ngm:class:interactive-fraud-proof",
+        "label": "Interactive Fraud Proof"
+      },
+      {
+        "id": "urn:ngm:class:evm-compatibility",
+        "label": "EVM Compatibility"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:optimism",
+        "label": "Optimism"
+      },
+      {
+        "id": "urn:ngm:class:zk-sync",
+        "label": "zkSync"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-rollup",
+        "label": "Zero-Knowledge Rollup"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "id": "urn:ngm:class:finance",
+        "label": "Finance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:calldata-compression",
+        "label": "Calldata Compression"
+      },
+      {
+        "id": "urn:ngm:class:webassembly",
+        "label": "WebAssembly"
+      },
+      {
+        "id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:cross-chain-bridge",
+        "label": "Cross-Chain Bridge"
+      }
+    ],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:ethereum-ecosystem",
+        "label": "Ethereum Ecosystem"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:plasma",
+        "label": "Plasma"
+      }
+    ]
   },
   "wikilinks": [
     {

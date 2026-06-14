@@ -10,28 +10,85 @@
     {
       "id": "urn:ngm:class:sc-display-and-rendering",
       "label": "Display and Rendering"
-    },
-    {
-      "id": "urn:ngm:class:metaverse",
-      "label": "Metaverse"
     }
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:discrete-lod",
+        "label": "Discrete LOD"
+      },
+      {
+        "id": "urn:ngm:class:continuous-lod",
+        "label": "Continuous LOD"
+      },
+      {
+        "id": "urn:ngm:class:hierarchical-lod",
+        "label": "Hierarchical LOD"
+      },
+      {
+        "id": "urn:ngm:class:mipmapping",
+        "label": "Mipmapping"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:3-d-asset",
         "label": "3D Asset"
+      },
+      {
+        "id": "urn:ngm:class:mesh-decimation",
+        "label": "Mesh Decimation"
+      },
+      {
+        "id": "urn:ngm:class:scene-graph",
+        "label": "Scene Graph"
       }
     ],
-    "enables": [],
-    "dependsOn": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "id": "urn:ngm:class:open-world-streaming",
+        "label": "Open World Streaming"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:graphics-processing-unit",
+        "label": "Graphics Processing Unit"
+      },
+      {
+        "id": "urn:ngm:class:camera-frustum",
+        "label": "Camera Frustum"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:occlusion-culling",
+        "label": "Occlusion Culling"
+      },
+      {
+        "id": "urn:ngm:class:frustum-culling",
+        "label": "Frustum Culling"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:asset-streaming",
+        "label": "Asset Streaming"
+      },
+      {
+        "id": "urn:ngm:class:spatial-index",
+        "label": "Spatial Index"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:rasterization",
@@ -40,24 +97,45 @@
       {
         "id": "urn:ngm:class:shader",
         "label": "Shader"
+      },
+      {
+        "id": "urn:ngm:class:screen-space-coverage",
+        "label": "Screen-Space Coverage"
       }
     ],
     "supports": [
       {
         "id": "urn:ngm:class:performance-optimization",
         "label": "Performance Optimization"
+      },
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
       }
     ],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
-      {
-        "id": "urn:ngm:class:occlusion-culling",
-        "label": "Occlusion Culling"
-      },
+    "partOf": [
       {
         "id": "urn:ngm:class:rendering-pipeline",
         "label": "Rendering Pipeline"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:instancing",
+        "label": "Instancing"
+      },
+      {
+        "id": "urn:ngm:class:progressive-mesh",
+        "label": "Progressive Mesh"
+      },
+      {
+        "id": "urn:ngm:class:texture-atlas",
+        "label": "Texture Atlas"
       }
     ]
   },

@@ -4,16 +4,16 @@
   "slug": "central-bank-digital-currency",
   "public": true,
   "classIri": "urn:ngm:class:central-bank-digital-currency",
-  "domain": "infrastructure",
+  "domain": "finance",
   "definition": "A digital form of sovereign fiat money issued directly by a nation's central bank, representing a liability of the monetary authority that can serve as legal tender for retail payments or wholesale settlement, distinct from commercial bank deposits and decentralized cryptocurrencies.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:infra-computing-and-cloud",
-      "label": "Computing and Cloud"
+      "id": "urn:ngm:class:digital-currency",
+      "label": "Digital Currency"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.68,
   "maturity": "draft",
   "relationships": {
     "hasPart": [],
@@ -29,6 +29,14 @@
       {
         "id": "urn:ngm:class:digital-identity",
         "label": "Digital Identity"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "id": "urn:ngm:class:aml-cft-compliance",
+        "label": "AML/CFT Compliance"
       }
     ],
     "enables": [
@@ -43,22 +51,100 @@
       {
         "id": "urn:ngm:class:digital-payments",
         "label": "Digital Payments"
+      },
+      {
+        "id": "urn:ngm:class:cross-border-payments",
+        "label": "Cross-Border Payments"
+      },
+      {
+        "id": "urn:ngm:class:programmable-money",
+        "label": "Programmable Money"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [
+    "implements": [
       {
-        "id": "urn:ngm:class:digital-currency",
-        "label": "Digital Currency"
+        "id": "urn:ngm:class:monetary-sovereignty",
+        "label": "Monetary Sovereignty"
+      },
+      {
+        "id": "urn:ngm:class:legal-tender",
+        "label": "Legal Tender"
       }
     ],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      },
+      {
+        "id": "urn:ngm:class:commercial-bank-deposit",
+        "label": "Commercial Bank Deposit"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:digital-wallet",
+        "label": "Digital Wallet"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-key-management",
+        "label": "Cryptographic Key Management"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:financial-stability",
+        "label": "Financial Stability"
+      },
+      {
+        "id": "urn:ngm:class:payment-system-resilience",
+        "label": "Payment System Resilience"
+      },
+      {
+        "id": "urn:ngm:class:government-benefit-distribution",
+        "label": "Government Benefit Distribution"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:bank-for-international-settlements",
+        "label": "Bank for International Settlements"
+      },
+      {
+        "id": "urn:ngm:class:international-monetary-fund",
+        "label": "International Monetary Fund"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:monetary-policy",
+        "label": "Monetary Policy"
+      },
+      {
+        "id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      }
+    ]
   },
   "wikilinks": [
     {

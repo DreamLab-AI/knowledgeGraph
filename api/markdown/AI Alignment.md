@@ -50,39 +50,64 @@ public:: true
   "@id": "urn:ngm:class:ai-alignment",
   "@type": "Class",
   "label": "AI Alignment",
-  "definition": "The process of making AI systems' behaviour and goals consistent with human values, preferences, and intentions. AI alignment encompasses technical mods and research aimed at ensuring AI systems act in accordance with human interests, even as they become more capable.",
+  "definition": "The process of making AI systems' behaviour and goals consistent with human values, preferences, and intentions. AI alignment encompasses technical methods and research aimed at ensuring AI systems act in accordance with human interests, even as they become more capable.",
   "domain": "artificial-intelligence",
   "maturity": "emerging",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:ai-governance-and-ethics",
-      "label": "AI Governance and Ethics"
-    },
-    {
-      "@id": "urn:ngm:class:ai-safety",
-      "label": "AI Safety"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:ai-safety",
+    "label": "AI Safety"
+  },
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"}
+      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},
+      {"@id": "urn:ngm:class:ai-governance-and-ethics", "label": "AI Governance and Ethics"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:value-alignment", "label": "Value Alignment"},
+      {"@id": "urn:ngm:class:constitutional-ai", "label": "Constitutional AI"},
+      {"@id": "urn:ngm:class:scalable-oversight", "label": "Scalable Oversight"}
     ],
     "requires": [
-      {"@id": "urn:ngm:class:reinforcement-learning-from-human-feedback", "label": "Reinforcement Learning from Human Feedback"}
+      {"@id": "urn:ngm:class:reinforcement-learning-from-human-feedback", "label": "Reinforcement Learning from Human Feedback"},
+      {"@id": "urn:ngm:class:reward-modelling", "label": "Reward Modelling"},
+      {"@id": "urn:ngm:class:human-oversight", "label": "Human Oversight"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:safe-ai-deployment", "label": "Safe AI Deployment"},
+      {"@id": "urn:ngm:class:trustworthy-ai", "label": "Trustworthy AI"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:direct-preference-optimisation", "label": "Direct Preference Optimisation"},
+      {"@id": "urn:ngm:class:red-teaming", "label": "Red Teaming"},
+      {"@id": "urn:ngm:class:interpretability", "label": "Interpretability"}
     ],
     "supports": [
       {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"},
       {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"}
     ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:misaligned-ai", "label": "Misaligned AI"},
+      {"@id": "urn:ngm:class:instrumental-convergence", "label": "Instrumental Convergence"}
+    ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:explainable-ai", "label": "Explainable AI"}
+      {"@id": "urn:ngm:class:explainable-ai", "label": "Explainable AI"},
+      {"@id": "urn:ngm:class:ai-robustness", "label": "AI Robustness"},
+      {"@id": "urn:ngm:class:mesa-optimisation", "label": "Mesa-Optimisation"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
+      {"@id": "urn:ngm:class:ethics", "label": "Ethics"}
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {"@id": "urn:ngm:class:value-alignment", "label": "Value Alignment"},
+    {"@id": "urn:ngm:class:machine-ethics", "label": "Machine Ethics"}
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

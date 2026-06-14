@@ -54,16 +54,14 @@ public:: true
   "@id": "urn:ngm:class:non-fungible-token",
   "@type": "Class",
   "label": "Non-Fungible Token",
-  "definition": "A token standard in which each unit is distinct and not interchangeable, used to represent ownership of a specific digital or referenced physical item on a ledger.",
+  "definition": "A token standard in which each unit is distinct and not interchangeable, used to represent ownership of a specific digital or referenced physical item on a distributed ledger; uniqueness is enforced by a token identifier and ownership is tracked via smart-contract state.",
   "domain": "blockchain",
   "maturity": "established",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:token",
-      "label": "Token"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:token",
+    "label": "Token"
+  },
   "relations": {
     "requires": [
       {
@@ -73,14 +71,114 @@ public:: true
       {
         "@id": "urn:ngm:class:erc-721",
         "label": "ERC-721"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-wallet",
+        "label": "Cryptographic Wallet"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:nft-standard",
+        "label": "NFT Standard"
+      },
+      {
+        "@id": "urn:ngm:class:erc-1155",
+        "label": "ERC-1155"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:ipfs",
+        "label": "IPFS"
+      },
+      {
+        "@id": "urn:ngm:class:metadata",
+        "label": "Metadata"
+      },
+      {
+        "@id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public Key Cryptography"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:digital-ownership",
+        "label": "Digital Ownership"
+      },
+      {
+        "@id": "urn:ngm:class:provenance-tracking",
+        "label": "Provenance Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:royalty-enforcement",
+        "label": "Royalty Enforcement"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:nft-marketplace",
+        "label": "NFT Marketplace"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:fungible-token",
+        "label": "Fungible Token"
+      },
+      {
+        "@id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:digital-art",
+        "label": "Digital Art"
+      },
+      {
+        "@id": "urn:ngm:class:tokenisation",
+        "label": "Tokenisation"
+      },
+      {
+        "@id": "urn:ngm:class:copyright",
+        "label": "Copyright"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:virtual-real-estate",
+        "label": "Virtual Real Estate"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:nft",
+      "label": "NFT"
+    },
+    {
+      "@id": "urn:ngm:class:non-interchangeable-token",
+      "label": "Non-Interchangeable Token"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

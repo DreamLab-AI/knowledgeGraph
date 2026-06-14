@@ -68,17 +68,16 @@ alias:: Peer To Peer Network, Peer to Peer Network
   "@type": "Class",
   "label": "Peer-to-Peer Network",
   "definition": "A decentralised communication architecture in which participating nodes connect directly to one another without a central coordinator, enabling distributed ledger technology to broadcast transactions, propagate blocks, and maintain a shared state across an open membership set. It underlies the censorship resistance and fault tolerance of blockchain systems.",
-  "domain": "blockchain",
+  "domain": "distributed-systems",
   "maturity": "established",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:bc-network-component",
-      "label": "Network Component"
-    },
-    {
-      "@id": "urn:ngm:class:blockchain-entity",
-      "label": "Blockchain Entity"
-    }
+  "subClassOf": {
+    "@id": "urn:ngm:class:network-component",
+    "label": "Network Component"
+  },
+  "sameAs": [
+    {"@id": "urn:ngm:class:p2p-network", "label": "P2P Network"},
+    {"@id": "urn:ngm:class:overlay-network", "label": "Overlay Network"},
+    {"@id": "urn:ngm:class:decentralised-network", "label": "Decentralised Network"}
   ],
   "relations": {
     "hasPart": [
@@ -88,18 +87,45 @@ alias:: Peer To Peer Network, Peer to Peer Network
       {"@id": "urn:ngm:class:transaction-pool", "label": "Transaction Pool"},
       {"@id": "urn:ngm:class:bootstrap-node", "label": "Bootstrap Node"},
       {"@id": "urn:ngm:class:archival-node", "label": "Archival Node"},
-      {"@id": "urn:ngm:class:full-node", "label": "Full Node"}
+      {"@id": "urn:ngm:class:full-node", "label": "Full Node"},
+      {"@id": "urn:ngm:class:dht", "label": "Distributed Hash Table"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:blockchain-network", "label": "Blockchain Network"},
-      {"@id": "urn:ngm:class:nakamoto-consensus", "label": "Nakamoto Consensus"}
+      {"@id": "urn:ngm:class:nakamoto-consensus", "label": "Nakamoto Consensus"},
+      {"@id": "urn:ngm:class:distributed-storage", "label": "Distributed Storage"},
+      {"@id": "urn:ngm:class:censorship-resistance", "label": "Censorship Resistance"},
+      {"@id": "urn:ngm:class:fault-tolerance", "label": "Fault Tolerance"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:network-protocol", "label": "Network Protocol"},
+      {"@id": "urn:ngm:class:node", "label": "Node"},
+      {"@id": "urn:ngm:class:tcp-ip", "label": "TCP/IP"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:libp2p", "label": "libp2p"},
+      {"@id": "urn:ngm:class:bittorrent-protocol", "label": "BitTorrent Protocol"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:nat-traversal", "label": "NAT Traversal"},
+      {"@id": "urn:ngm:class:kademlia", "label": "Kademlia"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:client-server-architecture", "label": "Client-Server Architecture"},
+      {"@id": "urn:ngm:class:centralised-network", "label": "Centralised Network"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:consensus-protocol", "label": "Consensus Protocol"}
+      {"@id": "urn:ngm:class:consensus-protocol", "label": "Consensus Protocol"},
+      {"@id": "urn:ngm:class:distributed-ledger-technology", "label": "Distributed Ledger Technology"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:content-delivery-network", "label": "Content Delivery Network"},
+      {"@id": "urn:ngm:class:decentralised-autonomous-organisation", "label": "Decentralised Autonomous Organisation"},
+      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"}
     ]
   },
-  "quality": 0.8,
+  "quality": 0.72,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

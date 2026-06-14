@@ -99,19 +99,13 @@ alias:: RB-1005-forward-kinematics
   "@id": "urn:ngm:class:forward-kinematics",
   "@type": "Class",
   "label": "Forward Kinematics",
-  "definition": "The process of determining the position and orientation of a robot's end-effector in Cartesian space given the joint parameters (angles or displacements). It maps from joint space to task space using geometric and trigonometric relationships.",
+  "definition": "The process of determining the position and orientation of a robot's end-effector in Cartesian space given the joint parameters (angles or displacements). It maps from joint space to task space using geometric and trigonometric relationships, producing a unique closed-form solution via sequential homogeneous transformation matrices.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:robo-actuation-and-control",
-      "label": "Actuation and Control"
-    },
-    {
-      "@id": "urn:ngm:class:kinematics",
-      "label": "Kinematics"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:kinematics",
+    "label": "Kinematics"
+  },
   "relations": {
     "requires": [
       {
@@ -121,6 +115,14 @@ alias:: RB-1005-forward-kinematics
       {
         "@id": "urn:ngm:class:kinematic-model",
         "label": "Kinematic Model"
+      },
+      {
+        "@id": "urn:ngm:class:denavit-hartenberg-parameters",
+        "label": "Denavit-Hartenberg Parameters"
+      },
+      {
+        "@id": "urn:ngm:class:rotation-matrix",
+        "label": "Rotation Matrix"
       }
     ],
     "enables": [
@@ -131,13 +133,21 @@ alias:: RB-1005-forward-kinematics
       {
         "@id": "urn:ngm:class:robot-simulation",
         "label": "Robot Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:workspace-analysis",
+        "label": "Workspace Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:collision-detection",
+        "label": "Collision Detection"
+      },
+      {
+        "@id": "urn:ngm:class:trajectory-planning",
+        "label": "Trajectory Planning"
       }
     ],
     "uses": [
-      {
-        "@id": "urn:ngm:class:denavit-hartenberg-parameters",
-        "label": "Denavit-Hartenberg Parameters"
-      },
       {
         "@id": "urn:ngm:class:homogeneous-coordinates",
         "label": "Homogeneous Coordinates"
@@ -145,14 +155,84 @@ alias:: RB-1005-forward-kinematics
       {
         "@id": "urn:ngm:class:transformation-matrix",
         "label": "Transformation Matrix"
+      },
+      {
+        "@id": "urn:ngm:class:coordinate-frame",
+        "label": "Coordinate Frame"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:joint-angle",
+        "label": "Joint Angle"
+      },
+      {
+        "@id": "urn:ngm:class:end-effector-pose",
+        "label": "End-Effector Pose"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:inverse-kinematics",
+        "label": "Inverse Kinematics"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:rigid-body-mechanics",
+        "label": "Rigid Body Mechanics"
+      },
+      {
+        "@id": "urn:ngm:class:jacobian-matrix",
+        "label": "Jacobian Matrix"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:robot-programming",
+        "label": "Robot Programming"
+      },
+      {
+        "@id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:configuration-space",
+        "label": "Configuration Space"
+      },
+      {
+        "@id": "urn:ngm:class:singularity-analysis",
+        "label": "Singularity Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:velocity-kinematics",
+        "label": "Velocity Kinematics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:direct-kinematics",
+      "label": "Direct Kinematics"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

@@ -102,12 +102,10 @@ public:: true
   "domain": "blockchain",
   "maturity": "emerging",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:blockchain-domain",
-      "label": "Blockchain Domain"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:blockchain-domain",
+    "label": "Blockchain Domain"
+  },
   "relations": {
     "hasPart": [
       {
@@ -129,6 +127,14 @@ public:: true
       {
         "@id": "urn:ngm:class:yield-aggregator",
         "label": "Yield Aggregator"
+      },
+      {
+        "@id": "urn:ngm:class:derivatives-protocol",
+        "label": "Derivatives Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:liquid-staking-protocol",
+        "label": "Liquid Staking Protocol"
       }
     ],
     "requires": [
@@ -143,6 +149,14 @@ public:: true
       {
         "@id": "urn:ngm:class:price-oracle",
         "label": "Price Oracle"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-wallet",
+        "label": "Cryptographic Wallet"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
       }
     ],
     "enables": [
@@ -157,14 +171,124 @@ public:: true
       {
         "@id": "urn:ngm:class:composable-financial-products",
         "label": "Composable Financial Products"
+      },
+      {
+        "@id": "urn:ngm:class:flash-loan",
+        "label": "Flash Loan"
+      },
+      {
+        "@id": "urn:ngm:class:yield-farming",
+        "label": "Yield Farming"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:ethereum-virtual-machine",
+        "label": "Ethereum Virtual Machine"
+      },
+      {
+        "@id": "urn:ngm:class:layer-2-scaling",
+        "label": "Layer 2 Scaling"
+      },
+      {
+        "@id": "urn:ngm:class:tokenisation-standard",
+        "label": "Tokenisation Standard"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:mechanism-design-domain",
+        "label": "Mechanism Design Domain"
+      },
+      {
+        "@id": "urn:ngm:class:token-economic-model",
+        "label": "Token Economic Model"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:liquidity-pool",
+        "label": "Liquidity Pool"
+      },
+      {
+        "@id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:financial-inclusion",
+        "label": "Financial Inclusion"
+      },
+      {
+        "@id": "urn:ngm:class:cross-border-payment",
+        "label": "Cross-Border Payment"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:fatf-virtual-asset-guidance",
+        "label": "FATF Virtual Asset Guidance"
+      },
+      {
+        "@id": "urn:ngm:class:erc-20-standard",
+        "label": "ERC-20 Standard"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:centralised-finance",
+        "label": "Centralised Finance"
+      },
+      {
+        "@id": "urn:ngm:class:traditional-banking",
+        "label": "Traditional Banking"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:payment-systems-domain",
+        "label": "Payment Systems Domain"
+      },
+      {
+        "@id": "urn:ngm:class:risk-management-domain",
+        "label": "Risk Management Domain"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance-domain",
+        "label": "Regulatory Compliance Domain"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "@id": "urn:ngm:class:non-fungible-token",
+        "label": "Non-Fungible Token"
+      },
+      {
+        "@id": "urn:ngm:class:maximal-extractable-value",
+        "label": "Maximal Extractable Value"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:defi-domain",
+      "label": "DeFi Domain"
+    },
+    {
+      "@id": "urn:ngm:class:open-finance-domain",
+      "label": "Open Finance Domain"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```
@@ -282,7 +406,14 @@ public:: true
   - bridges-to:: [[Payment Systems Domain]], [[Mechanism Design Domain]], [[Risk Management Domain]]
   - has-part:: [[Automated Market Maker]], [[Lending Protocol]], [[Stablecoin]], [[Decentralised Exchange]], [[Yield Aggregator]]
   - requires:: [[Smart Contract]], [[Digital Asset Domain]], [[Price Oracle]]
-  - enables:: [[Permissionless Lending]], [[Automated Liquidity Provision]], [[Composable Financial Products]]
+  - enables:: [[Permissionless Lending]], [[Automated Liquidity Provision]], [[Composable Financial Products]], [[Flash Loan]], [[Yield Farming]]
+  - depends-on:: [[Ethereum Virtual Machine]], [[Layer 2 Scaling]], [[Tokenisation Standard]]
+  - implements:: [[Mechanism Design Domain]], [[Token Economic Model]]
+  - uses:: [[Liquidity Pool]], [[Governance Token]]
+  - supports:: [[Financial Inclusion]], [[Cross-Border Payment]]
+  - standardized-by:: [[FATF Virtual Asset Guidance]], [[ERC-20 Standard]]
+  - contrasts-with:: [[Centralised Finance]], [[Traditional Banking]]
+  - related-to:: [[Decentralised Autonomous Organisation]], [[Non-Fungible Token]], [[Maximal Extractable Value]]
 
 - ### Content
   - The Decentralised Finance Domain catalogues financial functions implemented as openly callable smart contracts. Automated market makers price and settle trades against pooled liquidity, lending protocols match suppliers and borrowers through over-collateralised positions, and stablecoins provide a stable unit within these systems. Because contracts expose standard interfaces, products compose freely, so the output of one protocol becomes the input to another.

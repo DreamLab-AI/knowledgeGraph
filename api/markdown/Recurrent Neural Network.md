@@ -791,37 +791,62 @@ public:: true
   "@type": "Class",
   "label": "Recurrent Neural Network",
   "definition": "A neural network architecture that processes sequential data by maintaining a hidden state across time steps, allowing information from earlier inputs to influence later outputs. Key variants include Long Short-Term Memory networks and Gated Recurrent Units, which address vanishing gradient problems and underpin sequence modelling tasks such as speech recognition, language modelling, and time-series forecasting.",
-  "domain": "artificial-intelligence",
+  "domain": "machine-learning",
   "maturity": "established",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:ai-model-architecture",
-      "label": "AI Model Architecture"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:ai-model-architecture",
+    "label": "AI Model Architecture"
+  },
   "relations": {
     "hasPart": [
       {"@id": "urn:ngm:class:long-short-term-memory", "label": "Long Short Term Memory"},
+      {"@id": "urn:ngm:class:gated-recurrent-unit", "label": "Gated Recurrent Unit"},
       {"@id": "urn:ngm:class:hidden-state", "label": "Hidden State"},
-      {"@id": "urn:ngm:class:encoder-decoder-architecture", "label": "Encoder Decoder Architecture"}
+      {"@id": "urn:ngm:class:encoder-decoder-architecture", "label": "Encoder Decoder Architecture"},
+      {"@id": "urn:ngm:class:cell-state", "label": "Cell State"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:backpropagation-through-time", "label": "Backpropagation Through Time"},
+      {"@id": "urn:ngm:class:gradient-clipping", "label": "Gradient Clipping"},
+      {"@id": "urn:ngm:class:activation-function", "label": "Activation Function"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:language-modeling", "label": "Language Modeling"},
       {"@id": "urn:ngm:class:automatic-speech-recognition", "label": "Automatic Speech Recognition"},
       {"@id": "urn:ngm:class:time-series-forecasting", "label": "Time Series Forecasting"},
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
+      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
+      {"@id": "urn:ngm:class:machine-translation", "label": "Machine Translation"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:sequential-data", "label": "Sequential Data"},
+      {"@id": "urn:ngm:class:gradient-descent", "label": "Gradient Descent"},
+      {"@id": "urn:ngm:class:loss-function", "label": "Loss Function"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:feedforward-neural-network", "label": "Feedforward Neural Network"},
+      {"@id": "urn:ngm:class:transformer", "label": "Transformer"},
+      {"@id": "urn:ngm:class:convolutional-neural-network", "label": "Convolutional Neural Network"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:transformer", "label": "Transformer"},
       {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:backpropagation", "label": "Backpropagation"}
+      {"@id": "urn:ngm:class:backpropagation", "label": "Backpropagation"},
+      {"@id": "urn:ngm:class:vanishing-gradient-problem", "label": "Vanishing Gradient Problem"},
+      {"@id": "urn:ngm:class:teacher-forcing", "label": "Teacher Forcing"},
+      {"@id": "urn:ngm:class:state-space-model", "label": "State Space Model"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:neuromorphic-computing", "label": "Neuromorphic Computing"},
+      {"@id": "urn:ngm:class:speech-recognition", "label": "Speech Recognition"}
     ]
   },
-  "quality": 0.8,
+  "sameAs": [
+    {"@id": "urn:ngm:class:rnn", "label": "RNN"}
+  ],
+  "quality": 0.72,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

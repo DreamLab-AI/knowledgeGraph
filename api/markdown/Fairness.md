@@ -58,15 +58,13 @@ public:: true
   "@id": "urn:ngm:class:fairness",
   "@type": "Class",
   "label": "Fairness",
-  "definition": "The property of an AI system whereby it produces equitable outcomes and avoids creating or reinforcing unjustifiable disparities across different demographic groups or individuals, measured through various mathematical definitions and ical principles.",
+  "definition": "The property of an AI system whereby it produces equitable outcomes and avoids creating or reinforcing unjustifiable disparities across different demographic groups or individuals, measured through various mathematical definitions and ethical principles including demographic parity, equalized odds, equal opportunity, calibration, and individual fairness.",
   "domain": "artificial-intelligence",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:ai-governance-and-ethics",
-      "label": "AI Governance and Ethics"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:ai-governance-and-ethics",
+    "label": "AI Governance and Ethics"
+  },
   "relations": {
     "requires": [
       {
@@ -76,6 +74,14 @@ public:: true
       {
         "@id": "urn:ngm:class:bias-mitigation",
         "label": "Bias Mitigation"
+      },
+      {
+        "@id": "urn:ngm:class:protected-attribute",
+        "label": "Protected Attribute"
+      },
+      {
+        "@id": "urn:ngm:class:fairness-metric",
+        "label": "Fairness Metric"
       }
     ],
     "enables": [
@@ -86,14 +92,128 @@ public:: true
       {
         "@id": "urn:ngm:class:non-discrimination",
         "label": "Non-discrimination"
+      },
+      {
+        "@id": "urn:ngm:class:algorithmic-accountability",
+        "label": "Algorithmic Accountability"
+      },
+      {
+        "@id": "urn:ngm:class:trustworthy-ai",
+        "label": "Trustworthy AI"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:group-fairness",
+        "label": "Group Fairness"
+      },
+      {
+        "@id": "urn:ngm:class:individual-fairness",
+        "label": "Individual Fairness"
+      },
+      {
+        "@id": "urn:ngm:class:procedural-fairness",
+        "label": "Procedural Fairness"
+      },
+      {
+        "@id": "urn:ngm:class:distributive-fairness",
+        "label": "Distributive Fairness"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:representative-training-data",
+        "label": "Representative Training Data"
+      },
+      {
+        "@id": "urn:ngm:class:explainability",
+        "label": "Explainability"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      },
+      {
+        "@id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI RMF"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:human-rights",
+        "label": "Human Rights"
+      },
+      {
+        "@id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "@id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:bias",
+        "label": "Bias"
+      },
+      {
+        "@id": "urn:ngm:class:harmful-bias",
+        "label": "Harmful Bias"
+      },
+      {
+        "@id": "urn:ngm:class:disparate-impact",
+        "label": "Disparate Impact"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "@id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:demographic-parity",
+        "label": "Demographic Parity"
+      },
+      {
+        "@id": "urn:ngm:class:equalized-odds",
+        "label": "Equalized Odds"
+      },
+      {
+        "@id": "urn:ngm:class:counterfactual-fairness",
+        "label": "Counterfactual Fairness"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:algorithmic-fairness",
+      "label": "Algorithmic Fairness"
+    },
+    {
+      "@id": "urn:ngm:class:equitable-ai",
+      "label": "Equitable AI"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

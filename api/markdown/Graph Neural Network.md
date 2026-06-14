@@ -191,37 +191,72 @@ public:: true
   "@type": "Class",
   "label": "Graph Neural Network",
   "definition": "A Graph Neural Network (GNN) is a deep learning architecture that operates directly on graph-structured data by iteratively propagating and aggregating feature information across node neighbourhoods. GNNs generalise convolutional and attention mechanisms to non-Euclidean domains, learning node, edge, and graph-level representations suitable for tasks including node classification, link prediction, and graph classification across domains such as knowledge graphs, social networks, molecular modelling, and recommendation systems.",
-  "domain": "artificial-intelligence",
+  "domain": "machine-learning",
   "maturity": "emerging",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:ai-model-architecture",
-      "label": "AI Model Architecture"
-    },
-    {
-      "@id": "urn:ngm:class:neural-network",
-      "label": "Neural Network"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:neural-network",
+    "label": "Neural Network"
+  },
   "relations": {
     "uses": [
       {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
+      {"@id": "urn:ngm:class:message-passing", "label": "Message Passing"},
+      {"@id": "urn:ngm:class:graph-attention-mechanism", "label": "Graph Attention Mechanism"},
+      {"@id": "urn:ngm:class:node-embedding", "label": "Node Embedding"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"},
-      {"@id": "urn:ngm:class:anomaly-detection", "label": "Anomaly Detection"}
+      {"@id": "urn:ngm:class:anomaly-detection", "label": "Anomaly Detection"},
+      {"@id": "urn:ngm:class:link-prediction", "label": "Link Prediction"},
+      {"@id": "urn:ngm:class:node-classification", "label": "Node Classification"},
+      {"@id": "urn:ngm:class:graph-classification", "label": "Graph Classification"},
+      {"@id": "urn:ngm:class:recommendation-system", "label": "Recommendation System"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:graph-structured-data", "label": "Graph-Structured Data"},
+      {"@id": "urn:ngm:class:adjacency-matrix", "label": "Adjacency Matrix"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:backpropagation", "label": "Backpropagation"},
+      {"@id": "urn:ngm:class:gradient-descent", "label": "Gradient Descent"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:graph-convolutional-network", "label": "Graph Convolutional Network"},
+      {"@id": "urn:ngm:class:graph-attention-network", "label": "Graph Attention Network"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:message-passing-neural-network", "label": "Message-Passing Neural Network"},
+      {"@id": "urn:ngm:class:spectral-graph-theory", "label": "Spectral Graph Theory"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:drug-discovery", "label": "Drug Discovery"},
+      {"@id": "urn:ngm:class:social-network-analysis", "label": "Social Network Analysis"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:convolutional-neural-network", "label": "Convolutional Neural Network"},
+      {"@id": "urn:ngm:class:recurrent-neural-network", "label": "Recurrent Neural Network"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:semantic-web-linked-data-standard", "label": "Semantic Web"},
+      {"@id": "urn:ngm:class:knowledge-graphing", "label": "Knowledge Graphing"},
+      {"@id": "urn:ngm:class:fraud-detection", "label": "Fraud Detection"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:transformer", "label": "Transformer"},
-      {"@id": "urn:ngm:class:semantic-web-linked-data-standard", "label": "Semantic Web"}
+      {"@id": "urn:ngm:class:graph-rag", "label": "GraphRAG"},
+      {"@id": "urn:ngm:class:molecular-modelling", "label": "Molecular Modelling"}
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {"@id": "urn:ngm:class:gnn", "label": "GNN"},
+    {"@id": "urn:ngm:class:graph-deep-learning", "label": "Graph Deep Learning"}
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

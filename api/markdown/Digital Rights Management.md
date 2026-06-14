@@ -75,18 +75,12 @@ public:: true
   "@type": "Class",
   "label": "Digital Rights Management",
   "definition": "Technology systems and protocols that control access to, distribution of, and usage rights for digital content including media, software, and virtual assets, increasingly leveraging blockchain and smart contracts for transparent, decentralised rights enforcement and automated royalty distribution.",
-  "domain": "spatial-computing",
+  "domain": "governance",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:sc-governance-and-safety",
-      "label": "Governance and Safety"
-    },
-    {
-      "@id": "urn:ngm:class:content-protection",
-      "label": "Content Protection"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:content-protection",
+    "label": "Content Protection"
+  },
   "relations": {
     "requires": [
       {
@@ -100,6 +94,14 @@ public:: true
       {
         "@id": "urn:ngm:class:smart-contracts",
         "label": "Smart Contracts"
+      },
+      {
+        "@id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:digital-watermarking",
+        "label": "Digital Watermarking"
       }
     ],
     "enables": [
@@ -114,14 +116,110 @@ public:: true
       {
         "@id": "urn:ngm:class:royalty-distribution",
         "label": "Royalty Distribution"
+      },
+      {
+        "@id": "urn:ngm:class:intellectual-property-enforcement",
+        "label": "Intellectual Property Enforcement"
+      },
+      {
+        "@id": "urn:ngm:class:content-monetisation",
+        "label": "Content Monetisation"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:licence-server",
+        "label": "Licence Server"
+      },
+      {
+        "@id": "urn:ngm:class:key-management-system",
+        "label": "Key Management System"
+      },
+      {
+        "@id": "urn:ngm:class:usage-tracking",
+        "label": "Usage Tracking"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:non-fungible-token",
+        "label": "Non-Fungible Token"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:trusted-execution-environment",
+        "label": "Trusted Execution Environment"
+      },
+      {
+        "@id": "urn:ngm:class:open-digital-rights-language",
+        "label": "Open Digital Rights Language"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:w3c-encrypted-media-extensions",
+        "label": "W3C Encrypted Media Extensions"
+      },
+      {
+        "@id": "urn:ngm:class:mpeg-21",
+        "label": "MPEG-21"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:open-source-licensing",
+        "label": "Open Source Licensing"
+      },
+      {
+        "@id": "urn:ngm:class:creative-commons",
+        "label": "Creative Commons"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:copyright-law",
+        "label": "Copyright Law"
+      },
+      {
+        "@id": "urn:ngm:class:trusted-platform-module",
+        "label": "Trusted Platform Module"
       }
     ]
   },
-  "quality": 0.35,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:digital-content-protection",
+      "label": "Digital Content Protection"
+    },
+    {
+      "@id": "urn:ngm:class:rights-management-information",
+      "label": "Rights Management Information"
+    }
+  ],
+  "quality": 0.65,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

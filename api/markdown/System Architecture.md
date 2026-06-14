@@ -54,37 +54,69 @@ public:: true
   "@id": "urn:ngm:class:system-architecture",
   "@type": "Class",
   "label": "System Architecture",
-  "definition": "System Architecture in AI defines the holistic structure integrating hardware, software, data infrastructure, and operational components to deliver intelligent capabilities at scale.",
-  "domain": "artificial-intelligence",
+  "definition": "System Architecture defines the holistic structure integrating hardware, software, data infrastructure, and operational components to deliver capabilities at scale, encompassing distributed training infrastructure, inference servers, data pipelines, model registries, monitoring systems, and edge-cloud coordination.",
+  "domain": "infrastructure",
   "maturity": "emerging",
-  "quality": 0.35,
+  "quality": 0.68,
+  "subClassOf": {
+    "@id": "urn:ngm:class:software-architecture",
+    "label": "Software Architecture"
+  },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:data-pipeline", "label": "Data Pipeline"}
+      {"@id": "urn:ngm:class:data-pipeline", "label": "Data Pipeline"},
+      {"@id": "urn:ngm:class:model-registry", "label": "Model Registry"},
+      {"@id": "urn:ngm:class:inference-server", "label": "Inference Server"},
+      {"@id": "urn:ngm:class:monitoring-system", "label": "Monitoring System"},
+      {"@id": "urn:ngm:class:load-balancer", "label": "Load Balancer"}
     ],
     "requires": [
       {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"},
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"}
+      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
+      {"@id": "urn:ngm:class:container-orchestration", "label": "Container Orchestration"},
+      {"@id": "urn:ngm:class:networking", "label": "Networking"}
     ],
     "enables": [
-      {"@id": "urn:ngm:class:machine-learning-discipline-infrastructure", "label": "Machine Learning Infrastructure"}
+      {"@id": "urn:ngm:class:machine-learning-discipline-infrastructure", "label": "Machine Learning Infrastructure"},
+      {"@id": "urn:ngm:class:high-availability", "label": "High Availability"},
+      {"@id": "urn:ngm:class:elastic-scaling", "label": "Elastic Scaling"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:cloud-computing", "label": "Cloud Computing"},
+      {"@id": "urn:ngm:class:infrastructure-as-code", "label": "Infrastructure as Code"},
+      {"@id": "urn:ngm:class:service-mesh", "label": "Service Mesh"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:fault-tolerance", "label": "Fault Tolerance"},
+      {"@id": "urn:ngm:class:multi-tenancy", "label": "Multi-Tenancy"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:mlops", "label": "MLOps"},
+      {"@id": "urn:ngm:class:devops", "label": "DevOps"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:model-architecture", "label": "Model Architecture"},
+      {"@id": "urn:ngm:class:monolithic-architecture", "label": "Monolithic Architecture"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:microservices-architecture", "label": "Microservices Architecture"},
-      {"@id": "urn:ngm:class:model-architecture", "label": "Model Architecture"}
+      {"@id": "urn:ngm:class:kubernetes", "label": "Kubernetes"},
+      {"@id": "urn:ngm:class:security-architecture", "label": "Security Architecture"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"},
+      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"}
     ]
   },
+  "sameAs": [
+    {"@id": "urn:ngm:class:technical-architecture", "label": "Technical Architecture"},
+    {"@id": "urn:ngm:class:solution-architecture", "label": "Solution Architecture"}
+  ],
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
-  },
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:ai-model-architecture",
-      "label": "AI Model Architecture"
-    }
-  ]
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

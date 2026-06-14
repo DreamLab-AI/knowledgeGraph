@@ -55,40 +55,69 @@ alias:: ObjectDetection
   "@id": "urn:ngm:class:object-detection",
   "@type": "Class",
   "label": "Object Detection",
-  "definition": "Object Detection is the computer vision task of identifying and localising multiple objects within an image by predicting bounding boxes and class labels for each detected instance.",
-  "domain": "spatial-computing",
+  "definition": "Object Detection is the computer vision task of identifying and localising multiple objects within an image or video frame by predicting bounding boxes and class labels for each detected instance, combining spatial localisation with categorical classification in a single forward pass.",
+  "domain": "machine-learning",
   "maturity": "emerging",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:sc-interaction",
-      "label": "Interaction Technology"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:computer-vision",
+    "label": "Computer Vision"
+  },
   "relations": {
-    "bridgesTo": [
-      {
-        "@id": "urn:ngm:class:computer-vision",
-        "label": "Computer Vision"
-      }
-    ],
     "requires": [
       {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
+      {"@id": "urn:ngm:class:convolutional-neural-network", "label": "Convolutional Neural Network"},
+      {"@id": "urn:ngm:class:training-data", "label": "Training Data"},
+      {"@id": "urn:ngm:class:bounding-box-regression", "label": "Bounding Box Regression"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:semantic-segmentation", "label": "Semantic Segmentation"},
-      {"@id": "urn:ngm:class:pose-estimation", "label": "Pose Estimation"}
+      {"@id": "urn:ngm:class:pose-estimation", "label": "Pose Estimation"},
+      {"@id": "urn:ngm:class:object-tracking", "label": "Object Tracking"},
+      {"@id": "urn:ngm:class:autonomous-driving", "label": "Autonomous Driving"},
+      {"@id": "urn:ngm:class:scene-understanding", "label": "Scene Understanding"},
+      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"},
+      {"@id": "urn:ngm:class:anchor-based-detection", "label": "Anchor-Based Detection"},
+      {"@id": "urn:ngm:class:non-maximum-suppression", "label": "Non-Maximum Suppression"},
+      {"@id": "urn:ngm:class:feature-pyramid-network", "label": "Feature Pyramid Network"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:yolo", "label": "YOLO"},
+      {"@id": "urn:ngm:class:faster-r-cnn", "label": "Faster R-CNN"},
+      {"@id": "urn:ngm:class:detr", "label": "DETR"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:image-classification", "label": "Image Classification"},
+      {"@id": "urn:ngm:class:benchmark-dataset", "label": "Benchmark Dataset"}
     ],
     "contrastsWith": [
       {"@id": "urn:ngm:class:image-classification", "label": "Image Classification"},
-      {"@id": "urn:ngm:class:instance-segmentation", "label": "Instance Segmentation"}
+      {"@id": "urn:ngm:class:instance-segmentation", "label": "Instance Segmentation"},
+      {"@id": "urn:ngm:class:panoptic-segmentation", "label": "Panoptic Segmentation"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
+      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"},
+      {"@id": "urn:ngm:class:real-time-inference", "label": "Real-Time Inference"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:robotics-perception", "label": "Robotics Perception"},
+      {"@id": "urn:ngm:class:surveillance-system", "label": "Surveillance System"},
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {"@id": "urn:ngm:class:visual-object-detection", "label": "Visual Object Detection"},
+    {"@id": "urn:ngm:class:multi-object-detection", "label": "Multi-Object Detection"}
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

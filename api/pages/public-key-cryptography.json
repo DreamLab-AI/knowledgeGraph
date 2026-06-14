@@ -4,24 +4,16 @@
   "slug": "public-key-cryptography",
   "public": true,
   "classIri": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
-  "domain": "blockchain",
+  "domain": "security",
   "definition": "An asymmetric cryptographic system using mathematically related key pairs \u2014 a public key for encryption or signature verification and a private key for decryption or signing \u2014 enabling secure communication, digital signatures, and authentication without requiring shared secrets. In blockchain systems it underpins wallet addresses, transaction signing, and identity verification.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:bc-cryptographic-primitive",
-      "label": "Cryptographic Primitive"
-    },
-    {
-      "id": "urn:ngm:class:blockchain-entity",
-      "label": "Blockchain Entity"
-    },
-    {
       "id": "urn:ngm:class:cryptographic-primitive",
-      "label": "CryptographicPrimitive"
+      "label": "Cryptographic Primitive"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.75,
   "maturity": "established",
   "relationships": {
     "hasPart": [
@@ -40,9 +32,22 @@
       {
         "id": "urn:ngm:class:ecdsa",
         "label": "ECDSA"
+      },
+      {
+        "id": "urn:ngm:class:key-pair",
+        "label": "Key Pair"
       }
     ],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:random-number-generation",
+        "label": "Random Number Generation"
+      },
+      {
+        "id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:authentication",
@@ -55,12 +60,47 @@
       {
         "id": "urn:ngm:class:cryptographic-key-management",
         "label": "Cryptographic Key Management"
+      },
+      {
+        "id": "urn:ngm:class:non-repudiation",
+        "label": "Non-Repudiation"
+      },
+      {
+        "id": "urn:ngm:class:secure-key-exchange",
+        "label": "Secure Key Exchange"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:diffie-hellman-key-exchange",
+        "label": "Diffie-Hellman Key Exchange"
+      },
+      {
+        "id": "urn:ngm:class:tls-protocol",
+        "label": "TLS Protocol"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:symmetric-key-cryptography",
+        "label": "Symmetric Key Cryptography"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain-transaction-signing",
+        "label": "Blockchain Transaction Signing"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-identity",
+        "label": "Decentralized Identity"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:elliptic-curve-cryptography",
@@ -69,10 +109,23 @@
       {
         "id": "urn:ngm:class:asymmetric-encryption",
         "label": "Asymmetric Encryption"
+      },
+      {
+        "id": "urn:ngm:class:trapdoor-function",
+        "label": "Trapdoor Function"
       }
     ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:nist-cryptographic-standards",
+        "label": "NIST Cryptographic Standards"
+      },
+      {
+        "id": "urn:ngm:class:rfc-5280",
+        "label": "RFC 5280"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -80,8 +133,12 @@
         "label": "Zero-Knowledge Proof"
       },
       {
-        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
-        "label": "Public Key Infrastructure"
+        "id": "urn:ngm:class:post-quantum-cryptography",
+        "label": "Post-Quantum Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:certificate-authority",
+        "label": "Certificate Authority"
       }
     ]
   },

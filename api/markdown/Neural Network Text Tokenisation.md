@@ -47,35 +47,74 @@ elevatedFrom:: [[Tokenisation]]
   "@id": "urn:ngm:class:neural-network-text-tokenisation",
   "@type": "Class",
   "label": "Neural Network Text Tokenisation",
-  "definition": "The process of breaking text into discrete units (tokens) that can be processed by neural networks, ranging from characters to subwords to whole words.",
-  "domain": "artificial-intelligence",
+  "definition": "The process of segmenting text into discrete units (tokens) — characters, subwords, or words — that serve as the atomic inputs to neural network language models, directly determining vocabulary size, out-of-vocabulary handling, and downstream model performance.",
+  "domain": "machine-learning",
   "maturity": "emerging",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:ai-technique",
+    "label": "AI Technique"
+  },
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
+      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
+      {"@id": "urn:ngm:class:text-preprocessing", "label": "Text Preprocessing"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:byte-pair-encoding", "label": "Byte-Pair Encoding"},
+      {"@id": "urn:ngm:class:wordpiece-tokenisation", "label": "WordPiece Tokenisation"},
+      {"@id": "urn:ngm:class:sentencepiece-tokenisation", "label": "SentencePiece Tokenisation"},
+      {"@id": "urn:ngm:class:subword-tokenisation", "label": "Subword Tokenisation"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"}
+      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"},
+      {"@id": "urn:ngm:class:text-generation", "label": "Text Generation"},
+      {"@id": "urn:ngm:class:machine-translation", "label": "Machine Translation"},
+      {"@id": "urn:ngm:class:text-classification", "label": "Text Classification"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:vocabulary", "label": "Vocabulary"},
+      {"@id": "urn:ngm:class:training-corpus", "label": "Training Corpus"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:language-model", "label": "Language Model"},
+      {"@id": "urn:ngm:class:unicode-text-encoding", "label": "Unicode Text Encoding"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"}
+      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
+      {"@id": "urn:ngm:class:embedding-layer", "label": "Embedding Layer"},
+      {"@id": "urn:ngm:class:statistical-language-model", "label": "Statistical Language Model"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:text-segmentation-algorithm", "label": "Text Segmentation Algorithm"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:named-entity-recognition", "label": "Named Entity Recognition"},
+      {"@id": "urn:ngm:class:sentiment-analysis", "label": "Sentiment Analysis"},
+      {"@id": "urn:ngm:class:question-answering", "label": "Question Answering"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:word-level-tokenisation", "label": "Word-Level Tokenisation"},
+      {"@id": "urn:ngm:class:character-level-tokenisation", "label": "Character-Level Tokenisation"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:text-generation", "label": "Text Generation"}
+      {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"},
+      {"@id": "urn:ngm:class:context-window", "label": "Context Window"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:computational-linguistics", "label": "Computational Linguistics"},
+      {"@id": "urn:ngm:class:digital-asset-tokenisation", "label": "Digital Asset Tokenisation"}
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {"@id": "urn:ngm:class:text-tokenisation", "label": "Text Tokenisation"},
+    {"@id": "urn:ngm:class:nlp-tokenisation", "label": "NLP Tokenisation"}
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```
@@ -119,10 +158,33 @@ elevatedFrom:: [[Tokenisation]]
   - belongs-to-domain:: [[ArtificialIntelligenceDomain]]
 - ### Relationships
   - partOf:: [[Natural Language Processing]]
+  - partOf:: [[Text Preprocessing]]
   - enables:: [[Large Language Models]]
   - enables:: [[Transformer Architecture]]
+  - enables:: [[Text Generation]]
+  - enables:: [[Machine Translation]]
+  - enables:: [[Text Classification]]
+  - hasPart:: [[Byte-Pair Encoding]]
+  - hasPart:: [[WordPiece Tokenisation]]
+  - hasPart:: [[SentencePiece Tokenisation]]
+  - hasPart:: [[Subword Tokenisation]]
+  - requires:: [[Vocabulary]]
+  - requires:: [[Training Corpus]]
+  - dependsOn:: [[Language Model]]
+  - dependsOn:: [[Unicode Text Encoding]]
   - uses:: [[Neural Network]]
-  - relatedTo:: [[Text Generation]]
+  - uses:: [[Embedding Layer]]
+  - uses:: [[Statistical Language Model]]
+  - implements:: [[Text Segmentation Algorithm]]
+  - supports:: [[Named Entity Recognition]]
+  - supports:: [[Sentiment Analysis]]
+  - supports:: [[Question Answering]]
+  - contrastsWith:: [[Word-Level Tokenisation]]
+  - contrastsWith:: [[Character-Level Tokenisation]]
+  - relatedTo:: [[Attention Mechanism]]
+  - relatedTo:: [[Context Window]]
+  - bridgesTo:: [[Computational Linguistics]]
+  - bridgesTo:: [[Digital Asset Tokenisation]]
 - ### Content
   - The process of breaking text into discrete units (tokens) that can be processed by neural networks, ranging from characters to subwords to whole words.
   - ## Mass Movements and Tokenisation

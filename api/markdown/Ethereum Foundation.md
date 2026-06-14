@@ -60,8 +60,8 @@ public:: true
   "qualityScore": 0.7,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:owl-thing",
-      "label": "owl:Thing"
+      "@id": "urn:ngm:class:blockchain-protocol-foundation",
+      "label": "Blockchain Protocol Foundation"
     }
   ],
   "relations": {
@@ -73,10 +73,128 @@ public:: true
       {
         "@id": "urn:ngm:class:proof-of-stake",
         "label": "Proof of Stake"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-application",
+        "label": "Decentralised Application"
+      },
+      {
+        "@id": "urn:ngm:class:layer-2-scaling",
+        "label": "Layer 2 Scaling"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:open-source-protocol-development",
+        "label": "Open Source Protocol Development"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-research",
+        "label": "Cryptographic Research"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "@id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:ethereum-grants-programme",
+        "label": "Ethereum Grants Programme"
+      },
+      {
+        "@id": "urn:ngm:class:devcon-conference",
+        "label": "Devcon Conference"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:ethereum-ecosystem",
+        "label": "Ethereum Ecosystem"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:decentralised-governance",
+        "label": "Decentralised Governance"
+      },
+      {
+        "@id": "urn:ngm:class:validator-network",
+        "label": "Validator Network"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:ethereum-virtual-machine",
+        "label": "Ethereum Virtual Machine"
+      },
+      {
+        "@id": "urn:ngm:class:ethereum-improvement-proposal",
+        "label": "Ethereum Improvement Proposal"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:non-profit-governance-model",
+        "label": "Non-Profit Governance Model"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:public-blockchain",
+        "label": "Public Blockchain"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:bitcoin-core-development",
+        "label": "Bitcoin Core Development"
+      },
+      {
+        "@id": "urn:ngm:class:for-profit-blockchain-company",
+        "label": "For-Profit Blockchain Company"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:web3-foundation",
+        "label": "Web3 Foundation"
+      },
+      {
+        "@id": "urn:ngm:class:defi-protocol",
+        "label": "DeFi Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-security-audit",
+        "label": "Blockchain Security Audit"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:open-source-governance",
+        "label": "Open Source Governance"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:ef-ethereum",
+      "label": "EF (Ethereum Foundation)"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-29T00:00:00Z",

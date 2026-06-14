@@ -13,11 +13,37 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.72,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:generator-network",
+        "label": "Generator Network"
+      },
+      {
+        "id": "urn:ngm:class:discriminator-network",
+        "label": "Discriminator Network"
+      },
+      {
+        "id": "urn:ngm:class:adversarial-training",
+        "label": "Adversarial Training"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:image-generation",
@@ -30,10 +56,31 @@
       {
         "id": "urn:ngm:class:synthetic-media",
         "label": "Synthetic Media"
+      },
+      {
+        "id": "urn:ngm:class:data-augmentation",
+        "label": "Data Augmentation"
+      },
+      {
+        "id": "urn:ngm:class:deepfake",
+        "label": "Deepfake"
+      },
+      {
+        "id": "urn:ngm:class:super-resolution",
+        "label": "Super-Resolution"
       }
     ],
     "dependsOn": [],
-    "implements": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:min-max-game",
+        "label": "Min-Max Game"
+      },
+      {
+        "id": "urn:ngm:class:unsupervised-learning",
+        "label": "Unsupervised Learning"
+      }
+    ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:diffusion-model",
@@ -42,19 +89,54 @@
       {
         "id": "urn:ngm:class:autoencoder",
         "label": "Autoencoder"
+      },
+      {
+        "id": "urn:ngm:class:variational-autoencoder",
+        "label": "Variational Autoencoder"
       }
     ],
-    "bridgesTo": [],
-    "uses": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:privacy-preserving-ai",
+        "label": "Privacy-Preserving AI"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:latent-space",
+        "label": "Latent Space"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [
       {
         "id": "urn:ngm:class:generative-ai",
         "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
       }
     ],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ]
   },
   "wikilinks": [
     {

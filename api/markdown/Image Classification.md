@@ -90,9 +90,9 @@ public:: true
   "@id": "urn:ngm:class:image-classification",
   "@type": "Class",
   "label": "Image Classification",
-  "definition": "Image Classification is the computer vision task of assigning a categorical label to an entire image from a predefined set of classes, determining what is depicted in the image as a whole.",
-  "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "definition": "Image Classification is the computer vision task of assigning a categorical label to an entire image from a predefined set of classes, determining what is depicted in the image as a whole. Modern image classification employs deep convolutional neural networks (ResNet, EfficientNet, Vision Transformers) trained on large-scale datasets such as ImageNet to achieve human-level or super-human performance on diverse visual recognition tasks.",
+  "domain": "machine-learning",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-application",
@@ -100,27 +100,60 @@ public:: true
     }
   ],
   "relations": {
+    "partOf": [
+      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
+      {"@id": "urn:ngm:class:pattern-recognition", "label": "Pattern Recognition"}
+    ],
     "requires": [
       {"@id": "urn:ngm:class:convolutional-neural-network", "label": "Convolutional Neural Network"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
+      {"@id": "urn:ngm:class:labeled-training-data", "label": "Labeled Training Data"},
+      {"@id": "urn:ngm:class:image-preprocessing", "label": "Image Preprocessing"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"}
-    ],
-    "partOf": [
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}
+      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"},
+      {"@id": "urn:ngm:class:softmax-function", "label": "Softmax Function"},
+      {"@id": "urn:ngm:class:data-augmentation", "label": "Data Augmentation"},
+      {"@id": "urn:ngm:class:feature-extraction", "label": "Feature Extraction"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:object-detection", "label": "Object Detection"},
-      {"@id": "urn:ngm:class:scene-understanding", "label": "Scene Understanding"}
+      {"@id": "urn:ngm:class:scene-understanding", "label": "Scene Understanding"},
+      {"@id": "urn:ngm:class:medical-image-analysis", "label": "Medical Image Analysis"},
+      {"@id": "urn:ngm:class:autonomous-driving", "label": "Autonomous Driving"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
+      {"@id": "urn:ngm:class:backpropagation", "label": "Backpropagation"},
+      {"@id": "urn:ngm:class:gpu-computing", "label": "GPU Computing"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:feature-map", "label": "Feature Map"},
+      {"@id": "urn:ngm:class:classification-head", "label": "Classification Head"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:image-segmentation", "label": "Image Segmentation"},
+      {"@id": "urn:ngm:class:instance-segmentation", "label": "Instance Segmentation"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:vision-transformer", "label": "Vision Transformer"},
+      {"@id": "urn:ngm:class:imagenet", "label": "ImageNet"},
+      {"@id": "urn:ngm:class:benchmark-dataset", "label": "Benchmark Dataset"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
+      {"@id": "urn:ngm:class:robotics-perception", "label": "Robotics Perception"}
     ]
   },
-  "maturity": "emerging",
-  "quality": 0.5,
+  "sameAs": [
+    {"@id": "urn:ngm:class:visual-classification", "label": "Visual Classification"},
+    {"@id": "urn:ngm:class:image-recognition", "label": "Image Recognition"}
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

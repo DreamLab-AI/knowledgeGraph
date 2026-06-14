@@ -43,25 +43,29 @@ public:: true
   "@type": "Class",
   "label": "Overfitting",
   "definition": "Overfitting is a phenomenon in machine learning where a model learns the training data too precisely—including noise and spurious correlations—resulting in poor generalisation to unseen data. It corresponds to high variance and low bias in the bias-variance tradeoff, and is mitigated through regularisation, dropout, early stopping, and data augmentation.",
-  "domain": "artificial-intelligence",
+  "domain": "machine-learning",
   "maturity": "emerging",
   "qualityScore": 0.7,
-  "subClassOf": [
+  "subClassOf": {
+    "@id": "urn:ngm:class:machine-learning-phenomenon",
+    "label": "Machine Learning Phenomenon"
+  },
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  },
+  "sameAs": [
     {
-      "@id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique"
+      "@id": "urn:ngm:class:model-overfitting",
+      "label": "Model Overfitting"
     },
     {
-      "@id": "urn:ngm:class:machine-learning-discipline",
-      "label": "Machine Learning"
+      "@id": "urn:ngm:class:overtraining",
+      "label": "Overtraining"
     }
   ],
-  "quality": 0.5,
-  "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
-  },
   "relations": {
     "requires": [
       {
@@ -71,12 +75,36 @@ public:: true
       {
         "@id": "urn:ngm:class:model-training",
         "label": "Model Training"
+      },
+      {
+        "@id": "urn:ngm:class:model-capacity",
+        "label": "Model Capacity"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:memorisation",
+        "label": "Memorisation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:bias-variance-tradeoff",
+        "label": "Bias-Variance Tradeoff"
+      },
+      {
+        "@id": "urn:ngm:class:statistical-learning-theory",
+        "label": "Statistical Learning Theory"
       }
     ],
     "contrastsWith": [
       {
         "@id": "urn:ngm:class:underfitting",
         "label": "Underfitting"
+      },
+      {
+        "@id": "urn:ngm:class:generalisation",
+        "label": "Generalisation"
       }
     ],
     "relatedTo": [
@@ -85,12 +113,52 @@ public:: true
         "label": "Dropout"
       },
       {
-        "@id": "urn:ngm:class:model-capacity",
-        "label": "Model Capacity"
-      },
-      {
         "@id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:regularisation",
+        "label": "Regularisation"
+      },
+      {
+        "@id": "urn:ngm:class:cross-validation",
+        "label": "Cross-Validation"
+      },
+      {
+        "@id": "urn:ngm:class:early-stopping",
+        "label": "Early Stopping"
+      },
+      {
+        "@id": "urn:ngm:class:data-augmentation",
+        "label": "Data Augmentation"
+      },
+      {
+        "@id": "urn:ngm:class:validation-data",
+        "label": "Validation Data"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      },
+      {
+        "@id": "urn:ngm:class:empirical-risk-minimisation",
+        "label": "Empirical Risk Minimisation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:model-governance",
+        "label": "Model Governance"
+      },
+      {
+        "@id": "urn:ngm:class:ai-robustness",
+        "label": "AI Robustness"
       }
     ]
   }
@@ -131,11 +199,25 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 - ### Relationships
   - Contrasts With [[Underfitting]]
+  - Contrasts With [[Generalisation]]
   - Requires [[Training Data]]
   - Requires [[Model Training]]
+  - Requires [[Model Capacity]]
+  - Depends On [[Bias-Variance Tradeoff]]
+  - Depends On [[Statistical Learning Theory]]
   - Related To [[Dropout]]
   - Related To [[Model Capacity]]
   - Related To [[Deep Learning]]
+  - Related To [[Regularisation]]
+  - Related To [[Cross-Validation]]
+  - Related To [[Early Stopping]]
+  - Related To [[Data Augmentation]]
+  - Related To [[Validation Data]]
+  - Related To [[Neural Network]]
+  - Uses [[Loss Function]]
+  - Uses [[Empirical Risk Minimisation]]
+  - Bridges To [[Model Governance]]
+  - Bridges To [[AI Robustness]]
 - ### Content
   - ### Primary Definition
   **Overfitting** is a phenomenon where a model learns training data too well, including noise and artefacts, resulting in poor generalisation to new data. Overfitted models perform well on training data but poorly on test data.

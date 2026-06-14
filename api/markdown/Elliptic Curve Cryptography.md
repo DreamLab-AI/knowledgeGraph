@@ -67,47 +67,74 @@ alias:: EllipticCurveCryptography
   "@id": "urn:ngm:class:elliptic-curve-cryptography",
   "@type": "Class",
   "label": "Elliptic Curve Cryptography",
-  "definition": "A public-key cryptographic system based on the algebraic structure of elliptic curves over finite fields, providing strong security guarantees with shorter key lengths than RSA. ECC underpins digital signatures (ECDSA), key agreement (ECDH), and identity operations throughout blockchain infrastructure.",
-  "domain": "blockchain",
+  "definition": "A public-key cryptographic system based on the algebraic structure of elliptic curves over finite fields, providing strong security guarantees with shorter key lengths than RSA. ECC underpins digital signatures (ECDSA), key agreement (ECDH), and identity operations throughout blockchain infrastructure, TLS, and secure communications.",
+  "domain": "security",
   "maturity": "established",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:bc-cryptographic-primitive",
-      "label": "Cryptographic Primitive"
-    },
-    {
-      "@id": "urn:ngm:class:blockchain-entity",
-      "label": "Blockchain Entity"
-    },
-    {
-      "@id": "urn:ngm:class:cryptographic-primitive",
-      "label": "CryptographicPrimitive"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:cryptographic-primitive",
+    "label": "Cryptographic Primitive"
+  },
   "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:ecdsa", "label": "ECDSA"},
+      {"@id": "urn:ngm:class:ecdh", "label": "ECDH"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:public-key-cryptography", "label": "Public Key Cryptography"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:discrete-logarithm-problem", "label": "Discrete Logarithm Problem"},
+      {"@id": "urn:ngm:class:finite-field", "label": "Finite Field"}
+    ],
     "enables": [
       {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"},
-      {"@id": "urn:ngm:class:cryptographic-key-management", "label": "Cryptographic Key Management"}
+      {"@id": "urn:ngm:class:cryptographic-key-management", "label": "Cryptographic Key Management"},
+      {"@id": "urn:ngm:class:key-exchange", "label": "Key Exchange"},
+      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"},
+      {"@id": "urn:ngm:class:private-key", "label": "Private Key"},
+      {"@id": "urn:ngm:class:public-key", "label": "Public Key"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:secp256k1", "label": "secp256k1"},
+      {"@id": "urn:ngm:class:curve25519", "label": "Curve25519"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"},
-      {"@id": "urn:ngm:class:private-key", "label": "Private Key"}
+      {"@id": "urn:ngm:class:modular-arithmetic", "label": "Modular Arithmetic"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:transport-layer-security", "label": "Transport Layer Security"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:nist", "label": "NIST"},
+      {"@id": "urn:ngm:class:ieee-2418-1", "label": "IEEE 2418.1"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:rsa-cryptography", "label": "RSA Cryptography"},
+      {"@id": "urn:ngm:class:post-quantum-cryptography", "label": "Post-Quantum Cryptography"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:distributed-ledger-technology", "label": "Distributed Ledger Technology"},
+      {"@id": "urn:ngm:class:secure-multi-party-computation", "label": "Secure Multi-Party Computation"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:cryptographic-protocol", "label": "Cryptographic Protocol"},
       {"@id": "urn:ngm:class:cryptographic-security", "label": "Cryptographic Security"},
       {"@id": "urn:ngm:class:cryptographic-signature", "label": "Cryptographic Signature"},
       {"@id": "urn:ngm:class:decentralization", "label": "Decentralization"}
-    ],
-    "partOf": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
     ]
   },
-  "quality": 0.8,
+  "sameAs": [
+    {"@id": "urn:ngm:class:ecc", "label": "ECC"},
+    {"@id": "urn:ngm:class:elliptic-curve-public-key-cryptography", "label": "Elliptic Curve Public Key Cryptography"}
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

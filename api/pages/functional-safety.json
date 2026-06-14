@@ -5,22 +5,31 @@
   "public": true,
   "classIri": "urn:ngm:class:functional-safety",
   "domain": "robotics",
-  "definition": "Functional Safety - The discipline of designing, implementing, and verifying safety-critical control systems (per IEC 61508, ISO 26262) to ensure robots fail safely and prevent hazardous failures that could harm humans, equipment, or processes through systematic risk assessment and redundancy.",
+  "definition": "Functional Safety - The discipline of designing, implementing, and verifying safety-critical control systems (per IEC 61508, ISO 26262) to ensure systems fail safely and prevent hazardous failures that could harm humans, equipment, or processes through systematic risk assessment, safety integrity levels, and redundancy in electrical, electronic, and programmable electronic systems.",
   "subClassOf": [
-    {
-      "id": "urn:ngm:class:robo-safety-and-standards",
-      "label": "Safety and Standards"
-    },
     {
       "id": "urn:ngm:class:safety-engineering",
       "label": "Safety Engineering"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.64,
+  "qualityScore": 0.72,
   "maturity": "draft",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:failure-mode-effects-analysis",
+        "label": "Failure Mode and Effects Analysis"
+      },
+      {
+        "id": "urn:ngm:class:safety-instrumented-system",
+        "label": "Safety Instrumented System"
+      },
+      {
+        "id": "urn:ngm:class:redundancy",
+        "label": "Redundancy"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:fault-tree-analysis",
@@ -33,6 +42,14 @@
       {
         "id": "urn:ngm:class:testing-and-validation",
         "label": "Testing & Validation"
+      },
+      {
+        "id": "urn:ngm:class:safety-integrity-level",
+        "label": "Safety Integrity Level"
+      },
+      {
+        "id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
       }
     ],
     "enables": [
@@ -47,15 +64,50 @@
       {
         "id": "urn:ngm:class:safe-operation-certification",
         "label": "Safe Operation Certification"
+      },
+      {
+        "id": "urn:ngm:class:safety-case",
+        "label": "Safety Case"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:security-engineering",
+        "label": "Security Engineering"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
     "uses": [],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iec-61508",
+        "label": "IEC 61508"
+      },
+      {
+        "id": "urn:ngm:class:iso-26262",
+        "label": "ISO 26262"
+      },
+      {
+        "id": "urn:ngm:class:iso-pas-8800",
+        "label": "ISO/PAS 8800"
+      }
+    ],
     "partOf": [
       {
         "id": "urn:ngm:class:regulatory-compliance",
@@ -64,9 +116,22 @@
       {
         "id": "urn:ngm:class:risk-management",
         "label": "Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:systems-engineering",
+        "label": "Systems Engineering"
       }
     ],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:dependability",
+        "label": "Dependability"
+      },
+      {
+        "id": "urn:ngm:class:alarm-management",
+        "label": "Alarm Management"
+      }
+    ]
   },
   "wikilinks": [
     {

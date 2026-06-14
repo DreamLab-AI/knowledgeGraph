@@ -5,31 +5,65 @@
   "public": true,
   "classIri": "urn:ngm:class:semantic-segmentation",
   "domain": "artificial-intelligence",
-  "definition": "Semantic Segmentation is the computer vision task of assigning a class label to every pixel in an image, partitioning the image into semantically meaningful regions without distinguishing between individual object instances.",
+  "definition": "Semantic Segmentation is the computer vision task of assigning a class label to every pixel in an image, partitioning the image into semantically meaningful regions without distinguishing between individual object instances. Architectures such as FCN, U-Net, and DeepLab produce dense pixel-wise predictions enabling scene understanding in autonomous driving, medical imaging, and satellite analysis.",
   "subClassOf": [
-    {
-      "id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique"
-    },
     {
       "id": "urn:ngm:class:computer-vision",
       "label": "Computer Vision"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.65,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:pixel-classification",
+        "label": "Pixel Classification"
+      },
+      {
+        "id": "urn:ngm:class:feature-extraction",
+        "label": "Feature Extraction"
+      },
+      {
+        "id": "urn:ngm:class:encoder-decoder-architecture",
+        "label": "Encoder-Decoder Architecture"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:annotated-training-data",
+        "label": "Annotated Training Data"
+      },
+      {
+        "id": "urn:ngm:class:gpu-computing",
+        "label": "GPU Computing"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:scene-understanding",
         "label": "Scene Understanding"
       },
       {
+        "id": "urn:ngm:class:autonomous-driving",
+        "label": "Autonomous Driving"
+      },
+      {
+        "id": "urn:ngm:class:medical-image-analysis",
+        "label": "Medical Image Analysis"
+      },
+      {
         "id": "urn:ngm:class:object-detection",
         "label": "Object Detection"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
       }
     ],
     "dependsOn": [],
@@ -42,19 +76,58 @@
       {
         "id": "urn:ngm:class:panoptic-segmentation",
         "label": "Panoptic Segmentation"
+      },
+      {
+        "id": "urn:ngm:class:object-detection",
+        "label": "Object Detection"
       }
     ],
-    "bridgesTo": [],
-    "uses": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:robotics-perception",
+        "label": "Robotics Perception"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [
       {
         "id": "urn:ngm:class:computer-vision",
         "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:image-understanding",
+        "label": "Image Understanding"
       }
     ],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:image-segmentation",
+        "label": "Image Segmentation"
+      },
+      {
+        "id": "urn:ngm:class:point-cloud-segmentation",
+        "label": "Point Cloud Segmentation"
+      }
+    ]
   },
   "wikilinks": [
     {

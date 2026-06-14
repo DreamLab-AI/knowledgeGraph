@@ -54,16 +54,14 @@ public:: true
   "@id": "urn:ngm:class:tensor-flow",
   "@type": "Class",
   "label": "TensorFlow",
-  "definition": "An open-source machine learning framework developed by Google for building and deploying numerical computation and deep learning models across CPUs, GPUs and specialised accelerators.",
+  "definition": "An open-source machine learning framework developed by Google for building and deploying numerical computation and deep learning models across CPUs, GPUs and specialised accelerators, using a dataflow graph paradigm with automatic differentiation and a high-level Keras API.",
   "domain": "machine-learning",
   "maturity": "mature",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:machine-learning-discipline",
-      "label": "Machine Learning"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:deep-learning-framework",
+    "label": "Deep Learning Framework"
+  },
   "relations": {
     "requires": [
       {
@@ -73,20 +71,136 @@ public:: true
       {
         "@id": "urn:ngm:class:hardware-acceleration",
         "label": "Hardware Acceleration"
+      },
+      {
+        "@id": "urn:ngm:class:python-programming-language",
+        "label": "Python Programming Language"
+      },
+      {
+        "@id": "urn:ngm:class:tensor-computation",
+        "label": "Tensor Computation"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:backpropagation",
         "label": "Backpropagation"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-training",
+        "label": "Distributed Training"
+      },
+      {
+        "@id": "urn:ngm:class:model-serving",
+        "label": "Model Serving"
+      },
+      {
+        "@id": "urn:ngm:class:edge-inference",
+        "label": "Edge Inference"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:keras",
+        "label": "Keras"
+      },
+      {
+        "@id": "urn:ngm:class:tensorflow-serving",
+        "label": "TensorFlow Serving"
+      },
+      {
+        "@id": "urn:ngm:class:tensorflow-lite",
+        "label": "TensorFlow Lite"
+      },
+      {
+        "@id": "urn:ngm:class:tensorflow-hub",
+        "label": "TensorFlow Hub"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:dataflow-graph",
+        "label": "Dataflow Graph"
+      },
+      {
+        "@id": "urn:ngm:class:computational-graph",
+        "label": "Computational Graph"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:gpu-computing",
+        "label": "GPU Computing"
+      },
+      {
+        "@id": "urn:ngm:class:tensor-processing-unit",
+        "label": "Tensor Processing Unit"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:recurrent-neural-network",
+        "label": "Recurrent Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:py-torch",
+        "label": "PyTorch"
+      },
+      {
+        "@id": "urn:ngm:class:jax",
+        "label": "JAX"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "@id": "urn:ngm:class:mobile-computing",
+        "label": "Mobile Computing"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:scikit-learn",
+        "label": "Scikit-Learn"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:tf",
+      "label": "TF"
+    },
+    {
+      "@id": "urn:ngm:class:tensorflow-framework",
+      "label": "TensorFlow Framework"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

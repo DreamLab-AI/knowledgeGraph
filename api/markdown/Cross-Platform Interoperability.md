@@ -78,52 +78,158 @@ public:: true
   "@id": "urn:ngm:class:cross-platform-interoperability",
   "@type": "Class",
   "label": "Cross-Platform Interoperability",
-  "definition": "The capability for heterogeneous blockchain networks, software platforms, and distributed systems to communicate, exchange data, and transfer value seamlessly without centralized intermediaries.",
+  "definition": "The capability for heterogeneous blockchain networks, software platforms, and distributed systems to communicate, exchange data, and transfer value seamlessly without centralized intermediaries. Achieved through standardized protocols, light-client verification, and message-passing frameworks that eliminate trusted third parties.",
   "domain": "infrastructure",
   "maturity": "emerging",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:infra-network-and-comms",
-      "label": "Network and Communication"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:infra-network-and-comms",
+    "label": "Network and Communication"
+  },
   "relations": {
-    "enables": [
+    "hasPart": [
       {
-        "@id": "urn:ngm:class:cross-chain-bridge",
-        "label": "Cross-Chain Bridge"
-      }
-    ],
-    "implements": [
+        "@id": "urn:ngm:class:message-passing-protocol",
+        "label": "Message Passing Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:relayer",
+        "label": "Relayer"
+      },
       {
         "@id": "urn:ngm:class:light-client",
         "label": "Light Client"
       }
     ],
-    "uses": [
+    "partOf": [
       {
-        "@id": "urn:ngm:class:relayer",
-        "label": "Relayer"
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
       }
     ],
-    "relatedTo": [
+    "requires": [
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-proof",
+        "label": "Cryptographic Proof"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:cross-chain-bridge",
+        "label": "Cross-Chain Bridge"
+      },
+      {
+        "@id": "urn:ngm:class:atomic-swap",
+        "label": "Atomic Swap"
+      },
+      {
+        "@id": "urn:ngm:class:interchain-account",
+        "label": "Interchain Account"
+      }
+    ],
+    "dependsOn": [
       {
         "@id": "urn:ngm:class:layer-0",
         "label": "Layer 0"
+      },
+      {
+        "@id": "urn:ngm:class:api-standardisation",
+        "label": "API Standardisation"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:ibc-protocol",
+        "label": "IBC Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:inter-blockchain-communication",
+        "label": "Inter-Blockchain Communication"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "@id": "urn:ngm:class:threshold-cryptography",
+        "label": "Threshold Cryptography"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "@id": "urn:ngm:class:token-transfer",
+        "label": "Token Transfer"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:erc-5164",
+        "label": "ERC-5164"
+      },
+      {
+        "@id": "urn:ngm:class:w3c-did",
+        "label": "W3C DID"
+      },
+      {
+        "@id": "urn:ngm:class:ieee-blockchain-standards",
+        "label": "IEEE Blockchain Standards"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:walled-garden-ecosystem",
+        "label": "Walled Garden Ecosystem"
+      },
+      {
+        "@id": "urn:ngm:class:centralised-bridge",
+        "label": "Centralised Bridge"
       }
     ],
     "bridgesTo": [
       {
         "@id": "urn:ngm:class:sc-standards-and-interop",
         "label": "Standards and Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:identity-federation",
+        "label": "Identity Federation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:oracle-network",
+        "label": "Oracle Network"
+      },
+      {
+        "@id": "urn:ngm:class:rollup",
+        "label": "Rollup"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:blockchain-interoperability",
+      "label": "Blockchain Interoperability"
+    },
+    {
+      "@id": "urn:ngm:class:cross-chain-interoperability",
+      "label": "Cross-Chain Interoperability"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

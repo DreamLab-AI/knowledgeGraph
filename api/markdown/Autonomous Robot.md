@@ -159,34 +159,73 @@ alias:: AutonomousRobot
   "@id": "urn:ngm:class:autonomous-robot",
   "@type": "Class",
   "label": "Autonomous Robot",
-  "definition": "A robotic system equipped with sensors, processing units, and actuators that operates independently to perform tasks without direct human control, using Artificial Intelligence and Autonomous Navigation.",
+  "definition": "A robotic system equipped with sensors, processing units, and actuators that operates independently to perform tasks without direct human control, using Artificial Intelligence and Autonomous Navigation to perceive, reason, and act in physical or virtual environments.",
   "domain": "robotics",
   "maturity": "emerging",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:robo-robot-type",
-      "label": "Robot Type"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:robotic-system",
+    "label": "Robotic System"
+  },
   "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:sensors", "label": "Sensors"},
+      {"@id": "urn:ngm:class:actuators", "label": "Actuators"},
+      {"@id": "urn:ngm:class:processing-units", "label": "Processing Units"},
+      {"@id": "urn:ngm:class:obstacle-avoidance", "label": "Obstacle Avoidance"}
+    ],
     "requires": [
       {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}
+      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
+      {"@id": "urn:ngm:class:real-time-control", "label": "Real-time Control"},
+      {"@id": "urn:ngm:class:path-planning", "label": "Path Planning"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"},
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"}
+      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
+      {"@id": "urn:ngm:class:robot-perception", "label": "Robot Perception"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"},
+      {"@id": "urn:ngm:class:warehouse-automation", "label": "Warehouse Automation"},
+      {"@id": "urn:ngm:class:autonomous-delivery", "label": "Autonomous Delivery"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
+      {"@id": "urn:ngm:class:simultaneous-localization-and-mapping", "label": "Simultaneous Localization and Mapping"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:ai-system", "label": "AI System"},
+      {"@id": "urn:ngm:class:mobile-robot", "label": "Mobile Robot"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:multi-agent-systems", "label": "Multi-Agent Systems"},
+      {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human-Robot Interaction"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:teleoperated-robot", "label": "Teleoperated Robot"},
+      {"@id": "urn:ngm:class:remote-controlled-vehicle", "label": "Remote-Controlled Vehicle"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
+      {"@id": "urn:ngm:class:blockchain-identity", "label": "Blockchain Identity"},
+      {"@id": "urn:ngm:class:internet-of-things", "label": "Internet of Things"},
+      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:multi-agent-systems", "label": "Multi-Agent Systems"},
-      {"@id": "urn:ngm:class:robot-learning", "label": "Robot Learning"}
+      {"@id": "urn:ngm:class:robot-learning", "label": "Robot Learning"},
+      {"@id": "urn:ngm:class:swarm-robotics", "label": "Swarm Robotics"}
     ]
   },
-  "quality": 0.4,
+  "sameAs": [
+    {"@id": "urn:ngm:class:autonomous-robotic-system", "label": "Autonomous Robotic System"},
+    {"@id": "urn:ngm:class:self-navigating-robot", "label": "Self-Navigating Robot"}
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

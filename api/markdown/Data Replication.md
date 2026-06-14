@@ -74,22 +74,14 @@ public:: true
   "@id": "urn:ngm:class:data-replication",
   "@type": "Class",
   "label": "Data Replication",
-  "definition": "The process of copying and maintaining data across multiple nodes, servers, or locations in distributed systems to ensure consistency, availability, and fault tolerance, using consensus algorithms like Paxos, Raft, and Byzantine Fault Tolerant protocols to coordinate state across decentralized ne...",
+  "definition": "The process of copying and maintaining data across multiple nodes, servers, or locations in distributed systems to ensure consistency, availability, and fault tolerance, using consensus algorithms like Paxos, Raft, and Byzantine Fault Tolerant protocols to coordinate state across decentralised networks.",
   "domain": "infrastructure",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:infra-data-management",
-      "label": "Data Management"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:infra-data-management",
+    "label": "Data Management"
+  },
   "relations": {
-    "bridgesTo": [
-      {
-        "@id": "urn:ngm:class:distributed-systems",
-        "label": "Distributed Systems"
-      }
-    ],
     "requires": [
       {
         "@id": "urn:ngm:class:storage-systems",
@@ -102,6 +94,10 @@ public:: true
       {
         "@id": "urn:ngm:class:network-infrastructure",
         "label": "Network Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:network-bandwidth",
+        "label": "Network Bandwidth"
       }
     ],
     "enables": [
@@ -116,14 +112,104 @@ public:: true
       {
         "@id": "urn:ngm:class:fault-tolerance",
         "label": "Fault Tolerance"
+      },
+      {
+        "@id": "urn:ngm:class:disaster-recovery",
+        "label": "Disaster Recovery"
+      },
+      {
+        "@id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:leader-election",
+        "label": "Leader Election"
+      },
+      {
+        "@id": "urn:ngm:class:log-replication",
+        "label": "Log Replication"
+      },
+      {
+        "@id": "urn:ngm:class:change-data-capture",
+        "label": "Change Data Capture"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:raft-protocol",
+        "label": "Raft Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:paxos-protocol",
+        "label": "Paxos Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:write-ahead-logging",
+        "label": "Write-Ahead Logging"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "@id": "urn:ngm:class:cap-theorem",
+        "label": "CAP Theorem"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:data-sharding",
+        "label": "Data Sharding"
+      },
+      {
+        "@id": "urn:ngm:class:data-partitioning",
+        "label": "Data Partitioning"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:distributed-database",
+        "label": "Distributed Database"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-storage",
+        "label": "Cloud Storage"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse-state-management",
+        "label": "Metaverse State Management"
       }
     ]
   },
-  "quality": 0.35,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:database-replication",
+      "label": "Database Replication"
+    },
+    {
+      "@id": "urn:ngm:class:state-replication",
+      "label": "State Replication"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

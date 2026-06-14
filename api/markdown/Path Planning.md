@@ -123,19 +123,13 @@ alias:: PathPlanning, RB-1016-path-planning
   "@id": "urn:ngm:class:path-planning",
   "@type": "Class",
   "label": "Path Planning",
-  "definition": "The computational process of finding a feasible path for a robot to move from a start configuration to a goal configuration while avoiding obstacles and satisfying constraints. It determines a sequence of configurations connecting start to goal in the robot's configuration space.",
+  "definition": "The computational process of finding a feasible path for a robot or autonomous agent to move from a start configuration to a goal configuration while avoiding obstacles and satisfying kinematic and dynamic constraints. It determines a sequence of configurations connecting start to goal in the robot's configuration space, and forms the foundational planning layer for navigation, manipulation, and autonomous systems.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:robo-navigation-and-planning",
-      "label": "Navigation and Planning"
-    },
-    {
-      "@id": "urn:ngm:class:motion-planning",
-      "label": "Motion Planning"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:motion-planning",
+    "label": "Motion Planning"
+  },
   "relations": {
     "requires": [
       {
@@ -147,44 +141,150 @@ alias:: PathPlanning, RB-1016-path-planning
         "label": "Goal Configuration"
       },
       {
-        "@id": "urn:ngm:class:mapping",
-        "label": "Mapping"
-      },
-      {
         "@id": "urn:ngm:class:start-configuration",
         "label": "Start Configuration"
       },
       {
+        "@id": "urn:ngm:class:mapping",
+        "label": "Mapping"
+      },
+      {
         "@id": "urn:ngm:class:rb-1013-localization",
-        "label": "RB-1013-localization"
+        "label": "Localization"
+      },
+      {
+        "@id": "urn:ngm:class:configuration-space",
+        "label": "Configuration Space"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:rb-1007-trajectory-generation",
-        "label": "RB-1007-trajectory-generation"
+        "label": "Trajectory Generation"
       },
       {
         "@id": "urn:ngm:class:navigation",
         "label": "Navigation"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-systems",
+        "label": "Autonomous Systems"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-vehicles",
+        "label": "Autonomous Vehicles"
       }
     ],
     "uses": [
       {
         "@id": "urn:ngm:class:rrt-algorithm",
-        "label": "RB-1017-rrt-algorithm"
+        "label": "RRT Algorithm"
       },
       {
         "@id": "urn:ngm:class:dijkstra-algorithm",
-        "label": "RB-1018-dijkstra-algorithm"
+        "label": "Dijkstra Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:a-star-search",
+        "label": "A* Search"
+      },
+      {
+        "@id": "urn:ngm:class:probabilistic-roadmap",
+        "label": "Probabilistic Roadmap"
+      },
+      {
+        "@id": "urn:ngm:class:potential-fields",
+        "label": "Potential Fields"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:global-path-planning",
+        "label": "Global Path Planning"
+      },
+      {
+        "@id": "urn:ngm:class:local-path-planning",
+        "label": "Local Path Planning"
+      },
+      {
+        "@id": "urn:ngm:class:path-smoothing",
+        "label": "Path Smoothing"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:rb-1019-obstacle-avoidance",
+        "label": "Obstacle Avoidance"
+      },
+      {
+        "@id": "urn:ngm:class:graph-search",
+        "label": "Graph Search"
+      },
+      {
+        "@id": "urn:ngm:class:rb-1003-optimal-control",
+        "label": "Optimal Control"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:mobile-robots",
+        "label": "Mobile Robots"
+      },
+      {
+        "@id": "urn:ngm:class:manipulators",
+        "label": "Manipulators"
+      },
+      {
+        "@id": "urn:ngm:class:drone-navigation",
+        "label": "Drone Navigation"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:reactive-navigation",
+        "label": "Reactive Navigation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:slam",
+        "label": "Simultaneous Localisation and Mapping"
+      },
+      {
+        "@id": "urn:ngm:class:multi-robot-coordination",
+        "label": "Multi-Robot Coordination"
+      },
+      {
+        "@id": "urn:ngm:class:coverage-path-planning",
+        "label": "Coverage Path Planning"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:route-planning",
+      "label": "Route Planning"
+    },
+    {
+      "@id": "urn:ngm:class:motion-path-planning",
+      "label": "Motion Path Planning"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

@@ -46,39 +46,39 @@ public:: true
   "domain": "artificial-intelligence",
   "maturity": "emerging",
   "qualityScore": 0.7,
-  "subClassOf": [
+  "subClassOf": {
+    "@id": "urn:ngm:class:ai-model-architecture",
+    "label": "AI Model Architecture"
+  },
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  },
+  "sameAs": [
     {
-      "@id": "urn:ngm:class:ai-model-architecture",
-      "label": "AI Model Architecture"
+      "@id": "urn:ngm:class:generative-pre-trained-transformer",
+      "label": "Generative Pre-trained Transformer"
+    },
+    {
+      "@id": "urn:ngm:class:autoregressive-language-model",
+      "label": "Autoregressive Language Model"
     }
   ],
-  "quality": 0.5,
-  "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
-  },
   "relations": {
-    "enables": [
-      {
-        "@id": "urn:ngm:class:text-generation",
-        "label": "Text Generation"
-      },
-      {
-        "@id": "urn:ngm:class:natural-language-processing",
-        "label": "Natural Language Processing"
-      }
-    ],
-    "dependsOn": [
-      {
-        "@id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
-      }
-    ],
     "implements": [
       {
         "@id": "urn:ngm:class:transformer-architecture",
         "label": "Transformer Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:decoder-only-architecture",
+        "label": "Decoder-Only Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:causal-language-modelling",
+        "label": "Causal Language Modelling"
       }
     ],
     "uses": [
@@ -93,12 +93,94 @@ public:: true
       {
         "@id": "urn:ngm:class:attention-mechanism",
         "label": "Attention Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:next-token-prediction",
+        "label": "Next Token Prediction"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:text-generation",
+        "label": "Text Generation"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:code-generation",
+        "label": "Code Generation"
+      },
+      {
+        "@id": "urn:ngm:class:conversational-ai",
+        "label": "Conversational AI"
+      },
+      {
+        "@id": "urn:ngm:class:few-shot-learning",
+        "label": "Few-Shot Learning"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:unsupervised-learning",
+        "label": "Unsupervised Learning"
+      },
+      {
+        "@id": "urn:ngm:class:neural-scaling-laws",
+        "label": "Neural Scaling Laws"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:self-attention-layer",
+        "label": "Self-Attention Layer"
+      },
+      {
+        "@id": "urn:ngm:class:feed-forward-network",
+        "label": "Feed-Forward Network"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:bert",
+        "label": "BERT"
+      },
+      {
+        "@id": "urn:ngm:class:encoder-decoder-architecture",
+        "label": "Encoder-Decoder Architecture"
       }
     ],
     "relatedTo": [
       {
         "@id": "urn:ngm:class:fine-tuning",
         "label": "Fine Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:chatgpt",
+        "label": "ChatGPT"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:multimodal-ai",
+        "label": "Multimodal AI"
+      },
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
       }
     ]
   }

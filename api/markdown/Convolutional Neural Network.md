@@ -72,35 +72,71 @@ alias:: Convolutional Neural Networks, ConvolutionalNeuralNetwork
   "@type": "Class",
   "label": "Convolutional Neural Network",
   "definition": "A Convolutional Neural Network (CNN) is a feed-forward deep learning architecture that applies learned convolutional filters across spatial dimensions of input data, enabling hierarchical feature extraction from images and other grid-structured inputs. Weight sharing and local receptive fields make CNNs highly parameter-efficient for visual recognition tasks including image classification, object detection, and semantic segmentation.",
-  "domain": "artificial-intelligence",
+  "domain": "machine-learning",
   "maturity": "emerging",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:ai-model-architecture",
-      "label": "AI Model Architecture"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:deep-neural-network",
+    "label": "Deep Neural Network"
+  },
   "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:convolutional-layer", "label": "Convolutional Layer"},
+      {"@id": "urn:ngm:class:pooling-layer", "label": "Pooling Layer"},
+      {"@id": "urn:ngm:class:activation-function", "label": "Activation Function"},
+      {"@id": "urn:ngm:class:fully-connected-layer", "label": "Fully Connected Layer"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:training-data", "label": "Training Data"},
+      {"@id": "urn:ngm:class:gpu-computing", "label": "GPU Computing"}
+    ],
     "uses": [
       {"@id": "urn:ngm:class:backpropagation", "label": "Backpropagation"},
-      {"@id": "urn:ngm:class:training-data", "label": "Training Data"}
+      {"@id": "urn:ngm:class:stochastic-gradient-descent", "label": "Stochastic Gradient Descent"},
+      {"@id": "urn:ngm:class:batch-normalisation", "label": "Batch Normalisation"},
+      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:image-classification", "label": "Image Classification"},
-      {"@id": "urn:ngm:class:object-detection", "label": "Object Detection"}
+      {"@id": "urn:ngm:class:object-detection", "label": "Object Detection"},
+      {"@id": "urn:ngm:class:semantic-segmentation", "label": "Semantic Segmentation"},
+      {"@id": "urn:ngm:class:feature-extraction", "label": "Feature Extraction"}
     ],
     "supports": [
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}
+      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
+      {"@id": "urn:ngm:class:medical-image-analysis", "label": "Medical Image Analysis"}
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:recurrent-neural-network", "label": "Recurrent Neural Network"}
+      {"@id": "urn:ngm:class:recurrent-neural-network", "label": "Recurrent Neural Network"},
+      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:feedforward-neural-network", "label": "Feedforward Neural Network"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:weight-sharing", "label": "Weight Sharing"},
+      {"@id": "urn:ngm:class:gradient-descent-optimisation", "label": "Gradient Descent Optimisation"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:autonomous-vehicle-perception", "label": "Autonomous Vehicle Perception"},
+      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:resnet", "label": "ResNet"},
+      {"@id": "urn:ngm:class:adversarial-robustness", "label": "Adversarial Robustness"}
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {"@id": "urn:ngm:class:convnet", "label": "ConvNet"},
+    {"@id": "urn:ngm:class:deep-convolutional-network", "label": "Deep Convolutional Network"}
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

@@ -58,8 +58,8 @@ public:: true
   "@id": "urn:ngm:class:web-xr",
   "@type": "Class",
   "label": "WebXR",
-  "definition": "WebXR is a web standard and API that lets browsers access virtual and augmented reality devices, providing pose tracking, input and rendering hooks for immersive experiences delivered over the web.",
-  "domain": "metaverse",
+  "definition": "WebXR is a W3C web standard and browser API that enables access to virtual reality and augmented reality hardware, exposing device pose tracking, controller input, reference spaces, and an XR-integrated render loop so that immersive spatial experiences can be delivered through ordinary URLs without native installation.",
+  "domain": "spatial-computing",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [
@@ -77,6 +77,18 @@ public:: true
       {
         "@id": "urn:ngm:class:graphics-api",
         "label": "Graphics API"
+      },
+      {
+        "@id": "urn:ngm:class:webgl",
+        "label": "WebGL"
+      },
+      {
+        "@id": "urn:ngm:class:webgpu",
+        "label": "WebGPU"
+      },
+      {
+        "@id": "urn:ngm:class:xr-hardware",
+        "label": "XR Hardware"
       }
     ],
     "enables": [
@@ -87,14 +99,110 @@ public:: true
       {
         "@id": "urn:ngm:class:augmented-reality",
         "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:mixed-reality",
+        "label": "Mixed Reality"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-web",
+        "label": "Immersive Web"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:w3c-specification",
+        "label": "W3C Specification"
+      },
+      {
+        "@id": "urn:ngm:class:device-api",
+        "label": "Device API"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:gltf",
+        "label": "glTF"
+      },
+      {
+        "@id": "urn:ngm:class:pose-tracking",
+        "label": "Pose Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:reference-space",
+        "label": "Reference Space"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:hand-tracking",
+        "label": "Hand Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:eye-tracking",
+        "label": "Eye Tracking"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:w3c",
+        "label": "W3C"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-web-working-group",
+        "label": "Immersive Web Working Group"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:native-vr-sdk",
+        "label": "Native VR SDK"
+      },
+      {
+        "@id": "urn:ngm:class:openxr",
+        "label": "OpenXR"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:web-platform",
+        "label": "Web Platform"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:three-js",
+        "label": "Three.js"
+      },
+      {
+        "@id": "urn:ngm:class:babylon-js",
+        "label": "Babylon.js"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:webxr-device-api",
+      "label": "WebXR Device API"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

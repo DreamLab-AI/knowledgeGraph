@@ -74,23 +74,15 @@ public:: true
   "@id": "urn:ngm:class:digital-signatures",
   "@type": "Class",
   "label": "Digital Signatures",
-  "definition": "Digital Signatures is a type of Cryptography in the spatial computing domain.",
-  "domain": "spatial-computing",
+  "definition": "A cryptographic mechanism that uses asymmetric key pairs to produce a verifiable seal on digital data, ensuring authenticity, integrity, and non-repudiation of messages, transactions, and documents across distributed and decentralised systems.",
+  "domain": "security",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:sc-governance-and-safety",
-      "label": "Governance and Safety"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:cryptography",
+    "label": "Cryptography"
+  },
   "relations": {
-    "bridgesTo": [
-      {
-        "@id": "urn:ngm:class:cryptography",
-        "label": "Cryptography"
-      }
-    ],
-    "requires": [
+    "hasPart": [
       {
         "@id": "urn:ngm:class:signature-algorithm",
         "label": "Signature Algorithm"
@@ -102,6 +94,24 @@ public:: true
       {
         "@id": "urn:ngm:class:private-key",
         "label": "Private Key"
+      },
+      {
+        "@id": "urn:ngm:class:public-key",
+        "label": "Public Key"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:asymmetric-cryptography",
+        "label": "Asymmetric Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:certificate-authority",
+        "label": "Certificate Authority"
       }
     ],
     "enables": [
@@ -116,19 +126,97 @@ public:: true
       {
         "@id": "urn:ngm:class:non-repudiation",
         "label": "Non-Repudiation"
+      },
+      {
+        "@id": "urn:ngm:class:code-signing",
+        "label": "Code Signing"
+      },
+      {
+        "@id": "urn:ngm:class:transaction-authorisation",
+        "label": "Transaction Authorisation"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:ecdsa",
+        "label": "ECDSA"
+      },
+      {
+        "@id": "urn:ngm:class:eddsa",
+        "label": "EdDSA"
+      },
+      {
+        "@id": "urn:ngm:class:bls-signature",
+        "label": "BLS Signature"
+      },
+      {
+        "@id": "urn:ngm:class:schnorr-signature",
+        "label": "Schnorr Signature"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proofs",
+        "label": "Zero-Knowledge Proofs"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:symmetric-cryptography",
+        "label": "Symmetric Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:message-authentication-code",
+        "label": "Message Authentication Code"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:nist-cryptographic-standards",
+        "label": "NIST Cryptographic Standards"
+      },
+      {
+        "@id": "urn:ngm:class:fips-186",
+        "label": "FIPS 186"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:post-quantum-cryptography",
+        "label": "Post-Quantum Cryptography"
       }
     ]
   },
-  "quality": 0.5,
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   },
   "sameAs": [
     {
       "@id": "urn:ngm:class:digital-signature",
       "label": "Digital Signature"
+    },
+    {
+      "@id": "urn:ngm:class:cryptographic-signature",
+      "label": "Cryptographic Signature"
+    },
+    {
+      "@id": "urn:ngm:class:electronic-signature",
+      "label": "Electronic Signature"
     }
   ]
 }

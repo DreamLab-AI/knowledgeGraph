@@ -4,34 +4,95 @@
   "slug": "asset-management",
   "public": true,
   "classIri": "urn:ngm:class:asset-management",
-  "domain": "infrastructure",
-  "definition": "The professional management of digital and traditional assets through strategies including portfolio construction, risk management, custody, and performance optimization.",
+  "domain": "finance",
+  "definition": "The professional management of digital and traditional assets through strategies including portfolio construction, risk management, custody, and performance optimization. In the context of fintech and DeFi, asset management encompasses crypto portfolio management, tokenized securities, yield optimization, and institutional-grade custody solutions that enable investors to navigate volatile digital markets while maximizing risk-adjusted returns.",
   "subClassOf": [
-    {
-      "id": "urn:ngm:class:infra-computing-and-cloud",
-      "label": "Computing and Cloud"
-    },
     {
       "id": "urn:ngm:class:financial-services",
       "label": "Financial Services"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.72,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:portfolio-management",
+        "label": "Portfolio Management"
+      },
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:custody",
+        "label": "Custody"
+      },
+      {
+        "id": "urn:ngm:class:performance-analytics",
+        "label": "Performance Analytics"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:custody",
+        "label": "Custody"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:portfolio-management",
         "label": "Portfolio Management"
+      },
+      {
+        "id": "urn:ngm:class:institutional-investment",
+        "label": "Institutional Investment"
+      },
+      {
+        "id": "urn:ngm:class:yield-optimization",
+        "label": "Yield Optimization"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:market-data",
+        "label": "Market Data"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:self-custody",
+        "label": "Self-Custody"
+      },
+      {
+        "id": "urn:ngm:class:passive-investing",
+        "label": "Passive Investing"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-finance-de-fi",
+        "label": "Decentralized Finance (DeFi)"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:custody",
@@ -40,24 +101,54 @@
       {
         "id": "urn:ngm:class:risk-management",
         "label": "Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:tokenization",
+        "label": "Tokenization"
+      },
+      {
+        "id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
       }
     ],
     "supports": [
       {
         "id": "urn:ngm:class:institutional-investment",
         "label": "Institutional Investment"
-      }
-    ],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
+      },
       {
         "id": "urn:ngm:class:decentralized-finance-de-fi",
         "label": "Decentralized Finance (DeFi)"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:financial-industry-regulatory-authority",
+        "label": "Financial Industry Regulatory Authority"
       },
+      {
+        "id": "urn:ngm:class:securities-and-exchange-commission",
+        "label": "Securities and Exchange Commission"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:financial-services",
+        "label": "Financial Services"
+      }
+    ],
+    "relatedTo": [
       {
         "id": "urn:ngm:class:tokenization",
         "label": "Tokenization"
+      },
+      {
+        "id": "urn:ngm:class:real-world-asset-tokenization",
+        "label": "Real-World Asset Tokenization"
+      },
+      {
+        "id": "urn:ngm:class:exchange-traded-fund",
+        "label": "Exchange-Traded Fund"
       }
     ]
   },

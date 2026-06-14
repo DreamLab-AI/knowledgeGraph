@@ -62,12 +62,10 @@ public:: true
   "domain": "blockchain",
   "maturity": "established",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:exchange-mechanism",
-      "label": "Exchange Mechanism"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:exchange-mechanism",
+    "label": "Exchange Mechanism"
+  },
   "relations": {
     "requires": [
       {
@@ -77,20 +75,126 @@ public:: true
       {
         "@id": "urn:ngm:class:liquidity-pool",
         "label": "Liquidity Pool"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "@id": "urn:ngm:class:cryptocurrency-wallet",
+        "label": "Cryptocurrency Wallet"
+      },
+      {
+        "@id": "urn:ngm:class:gas-fee",
+        "label": "Gas Fee"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:permissionless-trading",
         "label": "Permissionless Trading"
+      },
+      {
+        "@id": "urn:ngm:class:self-custody",
+        "label": "Self-Custody"
+      },
+      {
+        "@id": "urn:ngm:class:token-swap",
+        "label": "Token Swap"
+      },
+      {
+        "@id": "urn:ngm:class:yield-farming",
+        "label": "Yield Farming"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
+      },
+      {
+        "@id": "urn:ngm:class:order-book",
+        "label": "Order Book"
+      },
+      {
+        "@id": "urn:ngm:class:liquidity-pool",
+        "label": "Liquidity Pool"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-signature",
+        "label": "Cryptographic Signature"
+      },
+      {
+        "@id": "urn:ngm:class:oracle",
+        "label": "Oracle"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:centralised-exchange",
+        "label": "Centralised Exchange"
+      },
+      {
+        "@id": "urn:ngm:class:custodial-trading",
+        "label": "Custodial Trading"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:miner-extractable-value",
+        "label": "Miner Extractable Value"
+      },
+      {
+        "@id": "urn:ngm:class:impermanent-loss",
+        "label": "Impermanent Loss"
+      },
+      {
+        "@id": "urn:ngm:class:slippage",
+        "label": "Slippage"
+      },
+      {
+        "@id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      },
+      {
+        "@id": "urn:ngm:class:financial-market",
+        "label": "Financial Market"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:dex",
+      "label": "DEX"
+    },
+    {
+      "@id": "urn:ngm:class:non-custodial-exchange",
+      "label": "Non-Custodial Exchange"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

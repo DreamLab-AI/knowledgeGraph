@@ -42,34 +42,65 @@ public:: true
   "@id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
   "@type": "Class",
   "label": "Reinforcement Learning from Human Feedback",
-  "definition": "A technique for aligning language models with human preferences by training a reward model from human rankings of outputs and using reinforcement learning (typically PPO) to optimise the policy towards maximising predicted human preference.",
-  "domain": "artificial-intelligence",
+  "definition": "A technique for aligning language models with human preferences by training a reward model from human rankings of outputs and using reinforcement learning (typically PPO) to optimise the policy towards maximising predicted human preference. RLHF enables models to learn complex alignment objectives that are difficult to specify explicitly, forming a three-stage pipeline of supervised fine-tuning, reward model training, and RL optimisation.",
+  "domain": "machine-learning",
   "maturity": "emerging",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:ai-alignment",
+    "label": "AI Alignment"
+  },
   "relations": {
     "requires": [
       {"@id": "urn:ngm:class:reward-model", "label": "Reward Model"},
       {"@id": "urn:ngm:class:human-feedback", "label": "Human Feedback"},
-      {"@id": "urn:ngm:class:supervised-fine-tuning", "label": "Supervised Fine Tuning"}
+      {"@id": "urn:ngm:class:supervised-fine-tuning", "label": "Supervised Fine Tuning"},
+      {"@id": "urn:ngm:class:proximal-policy-optimisation", "label": "Proximal Policy Optimisation"},
+      {"@id": "urn:ngm:class:preference-learning", "label": "Preference Learning"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:ai-alignment", "label": "AI Alignment"},
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}
+      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
+      {"@id": "urn:ngm:class:instruction-following", "label": "Instruction Following"},
+      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
+      {"@id": "urn:ngm:class:preference-based-reinforcement-learning", "label": "Preference-Based Reinforcement Learning"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:bradley-terry-model", "label": "Bradley-Terry Model"},
+      {"@id": "urn:ngm:class:kl-divergence-penalty", "label": "KL Divergence Penalty"},
+      {"@id": "urn:ngm:class:pairwise-comparison", "label": "Pairwise Comparison"},
+      {"@id": "urn:ngm:class:policy-gradient-methods", "label": "Policy Gradient Methods"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:constitutional-ai", "label": "Constitutional AI"},
+      {"@id": "urn:ngm:class:scalable-oversight", "label": "Scalable Oversight"},
+      {"@id": "urn:ngm:class:harmlessness-alignment", "label": "Harmlessness Alignment"}
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:direct-preference-optimisation", "label": "Direct Preference Optimisation"}
+      {"@id": "urn:ngm:class:direct-preference-optimisation", "label": "Direct Preference Optimisation"},
+      {"@id": "urn:ngm:class:rule-based-reward-modelling", "label": "Rule-Based Reward Modelling"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:instruct-gpt", "label": "InstructGPT"},
+      {"@id": "urn:ngm:class:reward-hacking", "label": "Reward Hacking"},
+      {"@id": "urn:ngm:class:human-in-the-loop", "label": "Human-in-the-Loop"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human-Computer Interaction"},
+      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"}
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {"@id": "urn:ngm:class:rlhf", "label": "RLHF"},
+    {"@id": "urn:ngm:class:reinforcement-learning-from-human-preferences", "label": "Reinforcement Learning from Human Preferences"}
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

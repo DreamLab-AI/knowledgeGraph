@@ -49,40 +49,70 @@ public:: true
   "definition": "A continuous volumetric scene representation that uses a multilayer perceptron to map 5D coordinates (3D position plus 2D viewing direction) to colour and volume density, enabling novel view synthesis via differentiable ray marching. NeRF achieves photo-realistic rendering of complex scenes from a sparse set of calibrated images and has spawned instant variants, Gaussian Splatting successors, and robotics perception applications.",
   "domain": "artificial-intelligence",
   "maturity": "established",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:ai-model-architecture",
-      "label": "AI Model Architecture"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:ai-model-architecture",
+    "label": "AI Model Architecture"
+  },
   "sameAs": [
     {
       "@id": "urn:ngm:class:neural-radiance-fields",
       "label": "Neural Radiance Fields"
+    },
+    {
+      "@id": "urn:ngm:class:nerf",
+      "label": "NeRF"
     }
   ],
   "relations": {
-    "relatedTo": [
+    "hasPart": [
+      {"@id": "urn:ngm:class:multilayer-perceptron", "label": "Multilayer Perceptron"},
+      {"@id": "urn:ngm:class:volume-density-field", "label": "Volume Density Field"},
+      {"@id": "urn:ngm:class:positional-encoding", "label": "Positional Encoding"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:camera-calibration", "label": "Camera Calibration"},
+      {"@id": "urn:ngm:class:differentiable-rendering", "label": "Differentiable Rendering"},
+      {"@id": "urn:ngm:class:structure-from-motion", "label": "Structure from Motion"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:novel-view-synthesis", "label": "Novel View Synthesis"},
+      {"@id": "urn:ngm:class:autonomous-robot", "label": "Autonomous Robot"},
+      {"@id": "urn:ngm:class:3-d-scene-reconstruction", "label": "3D Scene Reconstruction"},
+      {"@id": "urn:ngm:class:virtual-reality", "label": "Virtual Reality"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:ray-marching", "label": "Ray Marching"},
+      {"@id": "urn:ngm:class:volume-rendering", "label": "Volume Rendering"},
+      {"@id": "urn:ngm:class:gradient-descent", "label": "Gradient Descent"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
+      {"@id": "urn:ngm:class:implicit-neural-representation", "label": "Implicit Neural Representation"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:implicit-surface-representation", "label": "Implicit Surface Representation"}
+    ],
+    "contrastsWith": [
       {"@id": "urn:ngm:class:gaussian-splatting", "label": "Gaussian Splatting"},
       {"@id": "urn:ngm:class:3-d-gaussian-splatting", "label": "3D Gaussian Splatting"},
       {"@id": "urn:ngm:class:point-cloud", "label": "Point Cloud"},
-      {"@id": "urn:ngm:class:depth-estimation", "label": "Depth Estimation"}
+      {"@id": "urn:ngm:class:mesh-representation", "label": "Mesh Representation"}
     ],
-    "uses": [
-      {"@id": "urn:ngm:class:ray-marching", "label": "Ray Marching"}
+    "relatedTo": [
+      {"@id": "urn:ngm:class:depth-estimation", "label": "Depth Estimation"},
+      {"@id": "urn:ngm:class:instant-ngp", "label": "Instant NGP"},
+      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}
     ],
-    "enables": [
-      {"@id": "urn:ngm:class:autonomous-robot", "label": "Autonomous Robot"}
-    ],
-    "hasPart": [
-      {"@id": "urn:ngm:class:neural-radiance-fields", "label": "Neural Radiance Fields"}
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
+      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
     ]
   },
-  "quality": 0.8,
+  "quality": 0.75,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

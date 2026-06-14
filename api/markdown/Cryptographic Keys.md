@@ -70,34 +70,162 @@ public:: true
   "@id": "urn:ngm:class:cryptographic-keys",
   "@type": "Class",
   "label": "Cryptographic Keys",
-  "definition": "Strings of data used in cryptographic algorithms to encrypt, decrypt, sign, or verify data, serving as the secret parameters that transform plaintext to ciphertext and vice versa.",
-  "domain": "blockchain",
+  "definition": "Strings of data used in cryptographic algorithms to encrypt, decrypt, sign, or verify data, serving as the secret parameters that transform plaintext to ciphertext and vice versa. Keys may be symmetric (single shared secret) or asymmetric (public-private pairs); their security depends on key length, entropy of generation, and rigorous lifecycle management.",
+  "domain": "security",
   "maturity": "emerging",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:bc-cryptographic-primitive",
-      "label": "Cryptographic Primitive"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:cryptographic-primitive",
+    "label": "Cryptographic Primitive"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:public-key",
+        "label": "Public Key"
+      },
+      {
+        "@id": "urn:ngm:class:private-key",
+        "label": "Private Key"
+      },
+      {
+        "@id": "urn:ngm:class:session-key",
+        "label": "Session Key"
+      },
+      {
+        "@id": "urn:ngm:class:master-key",
+        "label": "Master Key"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:random-number-generation",
+        "label": "Random Number Generation"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-key-management",
+        "label": "Cryptographic Key Management"
+      }
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:digital-signature",
         "label": "Digital Signature"
+      },
+      {
+        "@id": "urn:ngm:class:symmetric-encryption",
+        "label": "Symmetric Encryption"
+      },
+      {
+        "@id": "urn:ngm:class:asymmetric-encryption",
+        "label": "Asymmetric Encryption"
+      },
+      {
+        "@id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:data-integrity",
+        "label": "Data Integrity"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:key-derivation-function",
+        "label": "Key Derivation Function"
+      },
+      {
+        "@id": "urn:ngm:class:entropy-source",
+        "label": "Entropy Source"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:cryptographic-algorithm",
+        "label": "Cryptographic Algorithm"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:rsa-algorithm",
+        "label": "RSA Algorithm"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:transport-layer-security",
+        "label": "Transport Layer Security"
+      },
+      {
+        "@id": "urn:ngm:class:secure-communication",
+        "label": "Secure Communication"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:nist-cryptographic-standards",
+        "label": "NIST Cryptographic Standards"
+      },
+      {
+        "@id": "urn:ngm:class:fips-140",
+        "label": "FIPS 140"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:password",
+        "label": "Password"
       }
     ],
     "bridgesTo": [
       {
         "@id": "urn:ngm:class:cryptography",
         "label": "Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-wallet",
+        "label": "Blockchain Wallet"
+      },
+      {
+        "@id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:certificate-authority",
+        "label": "Certificate Authority"
+      },
+      {
+        "@id": "urn:ngm:class:hardware-security-module",
+        "label": "Hardware Security Module"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:cryptographic-key",
+      "label": "Cryptographic Key"
+    },
+    {
+      "@id": "urn:ngm:class:cipher-key",
+      "label": "Cipher Key"
+    }
+  ],
+  "quality": 0.68,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

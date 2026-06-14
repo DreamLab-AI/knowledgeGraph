@@ -71,20 +71,42 @@ alias:: AccessControl
   "@id": "urn:ngm:class:access-control",
   "@type": "Class",
   "label": "Access Control",
-  "definition": "Access control is a fundamental security mechanism that regulates which users, systems, or processes can view, use, or modify resources within a computing environment.",
-  "domain": "infrastructure",
+  "definition": "Access control is a fundamental security mechanism that regulates which users, systems, or processes can view, use, or modify resources within a computing environment. It encompasses the policies, procedures, and technologies that govern the granting and restricting of access rights, ensuring that only authorised entities can perform specific actions on protected resources based on their identity, role, or attributes.",
+  "domain": "security",
   "maturity": "emerging",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:infra-security-and-identity",
-      "label": "Security and Identity"
-    },
-    {
-      "@id": "urn:ngm:class:infra-security-and-identity",
-      "label": "Infra Security And Identity"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:security-mechanism",
+    "label": "Security Mechanism"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:authorisation",
+        "label": "Authorisation"
+      },
+      {
+        "@id": "urn:ngm:class:audit-logging",
+        "label": "Audit Logging"
+      },
+      {
+        "@id": "urn:ngm:class:permission-management",
+        "label": "Permission Management"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      },
+      {
+        "@id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:compliance",
@@ -97,24 +119,106 @@ alias:: AccessControl
       {
         "@id": "urn:ngm:class:data-protection",
         "label": "Data Protection"
+      },
+      {
+        "@id": "urn:ngm:class:least-privilege",
+        "label": "Least Privilege"
+      },
+      {
+        "@id": "urn:ngm:class:separation-of-duties",
+        "label": "Separation of Duties"
       }
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:authorisation",
-        "label": "Authorisation"
+        "@id": "urn:ngm:class:role-based-access-control",
+        "label": "Role-Based Access Control"
       },
       {
-        "@id": "urn:ngm:class:permission-management",
-        "label": "Permission Management"
+        "@id": "urn:ngm:class:attribute-based-access-control",
+        "label": "Attribute-Based Access Control"
+      },
+      {
+        "@id": "urn:ngm:class:mandatory-access-control",
+        "label": "Mandatory Access Control"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:identity-and-access-management",
+        "label": "Identity and Access Management"
+      },
+      {
+        "@id": "urn:ngm:class:privileged-access-management",
+        "label": "Privileged Access Management"
+      },
+      {
+        "@id": "urn:ngm:class:access-control-list",
+        "label": "Access Control List"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:zero-trust-security",
+        "label": "Zero Trust Security"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:nist-sp-800-53",
+        "label": "NIST SP 800-53"
+      },
+      {
+        "@id": "urn:ngm:class:iso-iec-27001",
+        "label": "ISO/IEC 27001"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:open-access",
+        "label": "Open Access"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      },
+      {
+        "@id": "urn:ngm:class:multi-factor-authentication",
+        "label": "Multi-Factor Authentication"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:logical-access-control",
+      "label": "Logical Access Control"
+    },
+    {
+      "@id": "urn:ngm:class:authorisation-control",
+      "label": "Authorisation Control"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

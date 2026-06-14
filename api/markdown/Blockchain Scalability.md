@@ -110,20 +110,10 @@ alias:: BlockchainScalability
   "definition": "Blockchain Scalability encompasses the technical solutions and architectural approaches designed to increase the transaction throughput, reduce latency, and improve the efficiency of blockchain networks while maintaining security and decentralisation.",
   "domain": "blockchain",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:bc-protocol-and-consensus",
-      "label": "Protocol and Consensus"
-    },
-    {
-      "@id": "urn:ngm:class:blockchain",
-      "label": "Blockchain"
-    },
-    {
-      "@id": "urn:ngm:class:blockchain",
-      "label": "Blockchain"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:bc-protocol-and-consensus",
+    "label": "Protocol and Consensus"
+  },
   "relations": {
     "hasPart": [
       {
@@ -141,6 +131,28 @@ alias:: BlockchainScalability
       {
         "@id": "urn:ngm:class:state-channel",
         "label": "State Channel"
+      },
+      {
+        "@id": "urn:ngm:class:optimistic-rollup",
+        "label": "Optimistic Rollup"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-rollup",
+        "label": "Zero-Knowledge Rollup"
+      },
+      {
+        "@id": "urn:ngm:class:payment-channel",
+        "label": "Payment Channel"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:blockchain-technology",
+        "label": "Blockchain Technology"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
       }
     ],
     "requires": [
@@ -155,6 +167,10 @@ alias:: BlockchainScalability
       {
         "@id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:data-availability",
+        "label": "Data Availability"
       }
     ],
     "enables": [
@@ -169,14 +185,112 @@ alias:: BlockchainScalability
       {
         "@id": "urn:ngm:class:mass-adoption",
         "label": "Mass Adoption"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "@id": "urn:ngm:class:micropayment",
+        "label": "Micropayment"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:cryptographic-proof",
+        "label": "Cryptographic Proof"
+      },
+      {
+        "@id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      },
+      {
+        "@id": "urn:ngm:class:data-compression",
+        "label": "Data Compression"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:proof-of-validity",
+        "label": "Proof of Validity"
+      },
+      {
+        "@id": "urn:ngm:class:fraud-proof",
+        "label": "Fraud Proof"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "@id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "@id": "urn:ngm:class:protocol-architecture",
+        "label": "Protocol Architecture"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:blockchain-trilemma",
+        "label": "Blockchain Trilemma"
+      },
+      {
+        "@id": "urn:ngm:class:on-chain-transaction",
+        "label": "On-Chain Transaction"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:ai-energy-optimisation",
+        "label": "AI Energy Optimisation"
+      },
+      {
+        "@id": "urn:ngm:class:system-performance",
+        "label": "System Performance"
+      },
+      {
+        "@id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      },
+      {
+        "@id": "urn:ngm:class:danksharding",
+        "label": "Danksharding"
+      },
+      {
+        "@id": "urn:ngm:class:transaction-finality",
+        "label": "Transaction Finality"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-interoperability",
+        "label": "Blockchain Interoperability"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:blockchain-throughput-scaling",
+      "label": "Blockchain Throughput Scaling"
+    },
+    {
+      "@id": "urn:ngm:class:distributed-ledger-scalability",
+      "label": "Distributed Ledger Scalability"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

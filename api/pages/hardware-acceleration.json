@@ -13,31 +13,126 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.72,
   "maturity": "draft",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      },
+      {
+        "id": "urn:ngm:class:neural-processing-unit",
+        "label": "Neural Processing Unit"
+      },
+      {
+        "id": "urn:ngm:class:tensor-core",
+        "label": "Tensor Core"
+      },
+      {
+        "id": "urn:ngm:class:ray-tracing-core",
+        "label": "Ray Tracing Core"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:parallel-computing",
+        "label": "Parallel Computing"
+      },
+      {
+        "id": "urn:ngm:class:device-driver",
+        "label": "Device Driver"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:real-time-vr-performance",
         "label": "Real-Time VR Performance"
+      },
+      {
+        "id": "urn:ngm:class:foveated-rendering",
+        "label": "Foveated Rendering"
+      },
+      {
+        "id": "urn:ngm:class:real-time-ray-tracing",
+        "label": "Real-Time Ray Tracing"
+      },
+      {
+        "id": "urn:ngm:class:physics-simulation",
+        "label": "Physics Simulation"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:computing-infrastructure",
+        "label": "Computing Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:memory-bandwidth",
+        "label": "Memory Bandwidth"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:software-rendering",
+        "label": "Software Rendering"
+      },
+      {
+        "id": "urn:ngm:class:cpu-compute",
+        "label": "CPU Compute"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:computing-infrastructure",
         "label": "Computing Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-inference",
+        "label": "Machine Learning Inference"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
       }
     ],
-    "uses": [],
-    "supports": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:vulkan-api",
+        "label": "Vulkan API"
+      },
+      {
+        "id": "urn:ngm:class:directx",
+        "label": "DirectX"
+      },
+      {
+        "id": "urn:ngm:class:opencl",
+        "label": "OpenCL"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "id": "urn:ngm:class:cloud-rendering",
+        "label": "Cloud Rendering"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:variable-rate-shading",
+        "label": "Variable Rate Shading"
+      },
+      {
+        "id": "urn:ngm:class:latency-reduction",
+        "label": "Latency Reduction"
+      }
+    ]
   },
   "wikilinks": [
     {

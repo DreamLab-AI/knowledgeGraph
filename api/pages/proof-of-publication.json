@@ -1,0 +1,87 @@
+{
+  "id": "urn:visionflow:page:proof-of-publication",
+  "title": "Proof of Publication",
+  "slug": "proof-of-publication",
+  "public": true,
+  "classIri": "urn:ngm:class:proof-of-publication",
+  "domain": "blockchain",
+  "definition": "Proof of publication is a cryptographic guarantee that a given message has been published to, and ordered within, an append-only medium visible to all relevant parties, such that the publisher cannot later equivocate or hide it. Together with single-use seals it forms one of the two foundations of client-side validation: the publication medium (most commonly the Bitcoin blockchain, but also a Nostr relay set or other consensus system) provides ordering and non-equivocation, while seals bind specific messages to spendable objects. It is the property that lets off-chain smart-contract systems trust that a seal closure was witnessed once and only once.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cryptographic-protocol",
+      "label": "Cryptographic Protocol"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:single-use-seals",
+        "label": "Single Use Seals"
+      },
+      {
+        "id": "urn:ngm:class:client-side-validation",
+        "label": "Client-Side Validation"
+      },
+      {
+        "id": "urn:ngm:class:block-trails",
+        "label": "Block Trails"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:distributed-consensus",
+        "label": "Distributed Consensus"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:nostr",
+        "label": "Nostr"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:bitcoin-network",
+        "label": "Bitcoin Network"
+      },
+      {
+        "id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "id": "urn:ngm:class:timestamping",
+        "label": "Timestamping"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:censorship-resistance",
+        "label": "Censorship Resistance"
+      },
+      {
+        "id": "urn:ngm:class:data-availability",
+        "label": "Data Availability"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:rgb-protocol",
+        "label": "RGB Protocol"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

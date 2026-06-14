@@ -8,12 +8,12 @@
   "definition": "Training techniques that update only a small subset of model parameters during fine-tuning, reducing computational and memory requirements whilst maintaining comparable performance to full fine-tuning. PEFT methods enable adaptation of large models with limited resources by freezing most pre-trained weights and adding or modifying a minimal set of trainable parameters.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique"
+      "id": "urn:ngm:class:model-fine-tuning",
+      "label": "Model Fine-Tuning"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
     "hasPart": [
@@ -36,43 +36,110 @@
       {
         "id": "urn:ngm:class:qlo-ra",
         "label": "QLoRA"
+      },
+      {
+        "id": "urn:ngm:class:ada-lo-ra",
+        "label": "AdaLoRA"
       }
     ],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [
+    "requires": [
+      {
+        "id": "urn:ngm:class:pre-trained-model",
+        "label": "Pre-Trained Model"
+      },
       {
         "id": "urn:ngm:class:training-data",
         "label": "Training Data"
-      },
-      {
-        "id": "urn:ngm:class:model-training",
-        "label": "Model Training"
       }
     ],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
+    "enables": [
+      {
+        "id": "urn:ngm:class:multi-task-learning",
+        "label": "Multi-Task Learning"
+      },
+      {
+        "id": "urn:ngm:class:continual-learning",
+        "label": "Continual Learning"
+      },
+      {
+        "id": "urn:ngm:class:edge-deployment",
+        "label": "Edge Deployment"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
       {
         "id": "urn:ngm:class:full-fine-tuning",
         "label": "Full Fine Tuning"
       },
       {
-        "id": "urn:ngm:class:transfer-learning",
-        "label": "Transfer Learning"
+        "id": "urn:ngm:class:knowledge-distillation",
+        "label": "Knowledge Distillation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:edge-ai",
+        "label": "Edge AI"
       },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      },
+      {
+        "id": "urn:ngm:class:low-rank-decomposition",
+        "label": "Low-Rank Decomposition"
+      },
+      {
+        "id": "urn:ngm:class:model-quantisation",
+        "label": "Model Quantisation"
+      }
+    ],
+    "supports": [
       {
         "id": "urn:ngm:class:large-language-models",
         "label": "Large Language Models"
       },
       {
-        "id": "urn:ngm:class:knowledge-distillation",
-        "label": "Knowledge Distillation"
+        "id": "urn:ngm:class:instruction-tuning",
+        "label": "Instruction Tuning"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "id": "urn:ngm:class:model-adaptation",
+        "label": "Model Adaptation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:model-compression",
+        "label": "Model Compression"
       }
     ]
   },

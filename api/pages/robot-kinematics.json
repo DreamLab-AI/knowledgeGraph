@@ -13,11 +13,41 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.72,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:forward-kinematics",
+        "label": "Forward Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:inverse-kinematics",
+        "label": "Inverse Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:denavit-hartenberg-convention",
+        "label": "Denavit-Hartenberg Convention"
+      },
+      {
+        "id": "urn:ngm:class:jacobian-matrix",
+        "label": "Jacobian Matrix"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:transformation-matrix",
+        "label": "Transformation Matrix"
+      },
+      {
+        "id": "urn:ngm:class:degrees-of-freedom",
+        "label": "Degrees of Freedom"
+      },
+      {
+        "id": "urn:ngm:class:coordinate-frames",
+        "label": "Coordinate Frames"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:motion-planning",
@@ -26,19 +56,63 @@
       {
         "id": "urn:ngm:class:sensor-fusion",
         "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:trajectory-planning",
+        "label": "Trajectory Planning"
+      },
+      {
+        "id": "urn:ngm:class:robot-programming",
+        "label": "Robot Programming"
+      },
+      {
+        "id": "urn:ngm:class:end-effector-control",
+        "label": "End-Effector Control"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:robot-dynamics",
+        "label": "Robot Dynamics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      },
+      {
+        "id": "urn:ngm:class:quaternion-representation",
+        "label": "Quaternion Representation"
+      }
+    ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-8373",
+        "label": "ISO 8373"
+      }
+    ],
     "partOf": [
       {
         "id": "urn:ngm:class:robotics",
         "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:robot-dynamics",
+        "label": "Robot Dynamics"
       }
     ],
     "relatedTo": [
@@ -49,6 +123,18 @@
       {
         "id": "urn:ngm:class:service-robot",
         "label": "Service Robot"
+      },
+      {
+        "id": "urn:ngm:class:industrial-manipulator",
+        "label": "Industrial Manipulator"
+      },
+      {
+        "id": "urn:ngm:class:humanoid-robot",
+        "label": "Humanoid Robot"
+      },
+      {
+        "id": "urn:ngm:class:soft-robotics",
+        "label": "Soft Robotics"
       }
     ]
   },

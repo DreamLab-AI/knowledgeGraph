@@ -4,23 +4,32 @@
   "slug": "kalman-filter",
   "public": true,
   "classIri": "urn:ngm:class:kalman-filter",
-  "domain": "robotics",
-  "definition": "An optimal recursive Bayesian filter that estimates the state of a linear dynamic system from a series of noisy measurements. It minimizes the mean squared error of the estimated state by combining predictions with measurements using weighted averaging based on uncertainty.",
+  "domain": "machine-learning",
+  "definition": "An optimal recursive Bayesian filter that estimates the state of a linear dynamic system from a series of noisy measurements. It minimizes the mean squared error of the estimated state by combining a model-based prediction step with a measurement update step, weighting each by their respective uncertainty covariances to yield the minimum-variance unbiased estimate.",
   "subClassOf": [
-    {
-      "id": "urn:ngm:class:robo-navigation-and-planning",
-      "label": "Navigation and Planning"
-    },
     {
       "id": "urn:ngm:class:state-estimation",
       "label": "State Estimation"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:kalman-gain",
+        "label": "Kalman Gain"
+      },
+      {
+        "id": "urn:ngm:class:prediction-step",
+        "label": "Prediction Step"
+      },
+      {
+        "id": "urn:ngm:class:measurement-update-step",
+        "label": "Measurement Update Step"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:gaussian-noise-assumption",
@@ -29,32 +38,109 @@
       {
         "id": "urn:ngm:class:linear-system-model",
         "label": "Linear System Model"
+      },
+      {
+        "id": "urn:ngm:class:covariance-matrix",
+        "label": "Covariance Matrix"
+      },
+      {
+        "id": "urn:ngm:class:state-transition-model",
+        "label": "State Transition Model"
       }
     ],
-    "enables": [],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [
+    "enables": [
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      },
+      {
+        "id": "urn:ngm:class:target-tracking",
+        "label": "Target Tracking"
+      },
+      {
+        "id": "urn:ngm:class:navigation",
+        "label": "Navigation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:probability-theory",
+        "label": "Probability Theory"
+      },
+      {
+        "id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      }
+    ],
+    "implements": [
       {
         "id": "urn:ngm:class:bayes-filter",
         "label": "Bayes Filter"
+      },
+      {
+        "id": "urn:ngm:class:recursive-estimator",
+        "label": "Recursive Estimator"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:rb-1014-monte-carlo-localization",
+        "label": "Particle Filter"
+      },
+      {
+        "id": "urn:ngm:class:extended-kalman-filter",
+        "label": "Extended Kalman Filter"
+      },
+      {
+        "id": "urn:ngm:class:unscented-kalman-filter",
+        "label": "Unscented Kalman Filter"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:inertial-navigation-system",
+        "label": "Inertial Navigation System"
+      },
+      {
+        "id": "urn:ngm:class:gps-positioning",
+        "label": "GPS Positioning"
       }
     ],
     "uses": [
       {
         "id": "urn:ngm:class:rb-1008-odometry",
-        "label": "RB-1008-odometry"
+        "label": "Odometry"
       },
       {
-        "id": "urn:ngm:class:sensor-fusion",
-        "label": "Sensor Fusion"
+        "id": "urn:ngm:class:mean-squared-error",
+        "label": "Mean Squared Error"
       }
     ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:control-theory",
+        "label": "Control Theory"
+      },
+      {
+        "id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      },
+      {
+        "id": "urn:ngm:class:rb-1013-localization",
+        "label": "Localization"
+      },
+      {
+        "id": "urn:ngm:class:rb-1002-closed-loop-control",
+        "label": "Closed-Loop Control"
+      }
+    ]
   },
   "wikilinks": [
     {

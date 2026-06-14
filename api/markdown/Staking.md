@@ -62,13 +62,35 @@ public:: true
   "domain": "blockchain",
   "maturity": "established",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:proof-of-stake",
-      "label": "Proof of Stake"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:proof-of-stake",
+    "label": "Proof of Stake"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:slashing",
+        "label": "Slashing"
+      },
+      {
+        "@id": "urn:ngm:class:staking-reward",
+        "label": "Staking Reward"
+      },
+      {
+        "@id": "urn:ngm:class:delegation",
+        "label": "Delegation"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:validator",
@@ -77,20 +99,110 @@ public:: true
       {
         "@id": "urn:ngm:class:proof-of-stake",
         "label": "Proof of Stake"
+      },
+      {
+        "@id": "urn:ngm:class:native-token",
+        "label": "Native Token"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:network-security",
         "label": "Network Security"
+      },
+      {
+        "@id": "urn:ngm:class:block-finality",
+        "label": "Block Finality"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-governance",
+        "label": "Decentralised Governance"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-key",
+        "label": "Cryptographic Key"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:bonding-curve",
+        "label": "Bonding Curve"
+      },
+      {
+        "@id": "urn:ngm:class:liquid-staking",
+        "label": "Liquid Staking"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:sybil-resistance",
+        "label": "Sybil Resistance"
+      },
+      {
+        "@id": "urn:ngm:class:economic-security",
+        "label": "Economic Security"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:proof-of-work",
+        "label": "Proof of Work"
+      },
+      {
+        "@id": "urn:ngm:class:mining",
+        "label": "Mining"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:yield-farming",
+        "label": "Yield Farming"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "@id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:validator-set",
+        "label": "Validator Set"
+      },
+      {
+        "@id": "urn:ngm:class:staking-pool",
+        "label": "Staking Pool"
+      },
+      {
+        "@id": "urn:ngm:class:withdrawal-queue",
+        "label": "Withdrawal Queue"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:proof-of-stake-participation",
+      "label": "Proof-of-Stake Participation"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

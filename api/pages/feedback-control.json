@@ -8,19 +8,24 @@
   "definition": "Feedback Control - A closed-loop control mechanism in which Sensor measurements of actual system state are continuously compared against desired Setpoints, and control actions are adjusted in real time to minimise error and maintain stable, accurate Robot Behaviour.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:robo-actuation-and-control",
-      "label": "Actuation and Control"
-    },
-    {
       "id": "urn:ngm:class:control-theory",
       "label": "Control Theory"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.61,
+  "qualityScore": 0.72,
   "maturity": "draft",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:pid-controller",
+        "label": "PID Controller"
+      },
+      {
+        "id": "urn:ngm:class:feedback-loop",
+        "label": "Feedback Loop"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:actuator-response",
@@ -33,6 +38,10 @@
       {
         "id": "urn:ngm:class:control-algorithm",
         "label": "Control Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:sensor",
+        "label": "Sensor"
       }
     ],
     "enables": [
@@ -49,13 +58,72 @@
         "label": "Trajectory Tracking"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:plant-model",
+        "label": "Plant Model"
+      },
+      {
+        "id": "urn:ngm:class:state-estimation",
+        "label": "State Estimation"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:closed-loop-control",
+        "label": "Closed-Loop Control"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:open-loop-control",
+        "label": "Open-Loop Control"
+      },
+      {
+        "id": "urn:ngm:class:feedforward-control",
+        "label": "Feedforward Control"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:transfer-function",
+        "label": "Transfer Function"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:robot-behaviour",
+        "label": "Robot Behaviour"
+      },
+      {
+        "id": "urn:ngm:class:adaptive-control",
+        "label": "Adaptive Control"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-13849",
+        "label": "ISO 13849"
+      },
+      {
+        "id": "urn:ngm:class:iec-61508",
+        "label": "IEC 61508"
+      }
+    ],
     "partOf": [
       {
         "id": "urn:ngm:class:motion-control-system",
@@ -66,7 +134,16 @@
         "label": "Stabilisation Architecture"
       }
     ],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:model-predictive-control",
+        "label": "Model Predictive Control"
+      },
+      {
+        "id": "urn:ngm:class:optimal-control",
+        "label": "Optimal Control"
+      }
+    ]
   },
   "wikilinks": [
     {

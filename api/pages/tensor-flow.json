@@ -5,18 +5,35 @@
   "public": true,
   "classIri": "urn:ngm:class:tensor-flow",
   "domain": "machine-learning",
-  "definition": "An open-source machine learning framework developed by Google for building and deploying numerical computation and deep learning models across CPUs, GPUs and specialised accelerators.",
+  "definition": "An open-source machine learning framework developed by Google for building and deploying numerical computation and deep learning models across CPUs, GPUs and specialised accelerators, using a dataflow graph paradigm with automatic differentiation and a high-level Keras API.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:machine-learning-discipline",
-      "label": "Machine Learning"
+      "id": "urn:ngm:class:deep-learning-framework",
+      "label": "Deep Learning Framework"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "mature",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:keras",
+        "label": "Keras"
+      },
+      {
+        "id": "urn:ngm:class:tensorflow-serving",
+        "label": "TensorFlow Serving"
+      },
+      {
+        "id": "urn:ngm:class:tensorflow-lite",
+        "label": "TensorFlow Lite"
+      },
+      {
+        "id": "urn:ngm:class:tensorflow-hub",
+        "label": "TensorFlow Hub"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:automatic-differentiation",
@@ -25,23 +42,105 @@
       {
         "id": "urn:ngm:class:hardware-acceleration",
         "label": "Hardware Acceleration"
+      },
+      {
+        "id": "urn:ngm:class:python-programming-language",
+        "label": "Python Programming Language"
+      },
+      {
+        "id": "urn:ngm:class:tensor-computation",
+        "label": "Tensor Computation"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:backpropagation",
         "label": "Backpropagation"
+      },
+      {
+        "id": "urn:ngm:class:distributed-training",
+        "label": "Distributed Training"
+      },
+      {
+        "id": "urn:ngm:class:model-serving",
+        "label": "Model Serving"
+      },
+      {
+        "id": "urn:ngm:class:edge-inference",
+        "label": "Edge Inference"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:dataflow-graph",
+        "label": "Dataflow Graph"
+      },
+      {
+        "id": "urn:ngm:class:computational-graph",
+        "label": "Computational Graph"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:py-torch",
+        "label": "PyTorch"
+      },
+      {
+        "id": "urn:ngm:class:jax",
+        "label": "JAX"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:mobile-computing",
+        "label": "Mobile Computing"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:gpu-computing",
+        "label": "GPU Computing"
+      },
+      {
+        "id": "urn:ngm:class:tensor-processing-unit",
+        "label": "Tensor Processing Unit"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:recurrent-neural-network",
+        "label": "Recurrent Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:scikit-learn",
+        "label": "Scikit-Learn"
+      }
+    ]
   },
   "wikilinks": [
     {

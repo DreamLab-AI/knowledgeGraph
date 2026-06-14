@@ -103,9 +103,13 @@ alias:: BlockchainGovernance
   "@id": "urn:ngm:class:blockchain-governance",
   "@type": "Class",
   "label": "Blockchain Governance",
-  "definition": "Blockchain Governance refers to the mechanisms, processes, and structures through which decisions are made about the development, operation, and evolution of blockchain networks and protocols.",
+  "definition": "Blockchain Governance refers to the mechanisms, processes, and structures through which decisions are made about the development, operation, and evolution of blockchain networks and protocols, encompassing on-chain voting systems, decentralised autonomous organisations, and community-driven decision-making frameworks.",
   "domain": "blockchain",
   "maturity": "draft",
+  "subClassOf": {
+    "@id": "urn:ngm:class:bc-governance-and-regulation",
+    "label": "Governance and Regulation"
+  },
   "relations": {
     "hasPart": [
       {
@@ -127,6 +131,14 @@ alias:: BlockchainGovernance
       {
         "@id": "urn:ngm:class:blockchain-entity",
         "label": "Blockchain Entity"
+      },
+      {
+        "@id": "urn:ngm:class:quadratic-voting",
+        "label": "Quadratic Voting"
+      },
+      {
+        "@id": "urn:ngm:class:delegation-mechanism",
+        "label": "Delegation Mechanism"
       }
     ],
     "requires": [
@@ -141,6 +153,10 @@ alias:: BlockchainGovernance
       {
         "@id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
       }
     ],
     "enables": [
@@ -155,21 +171,91 @@ alias:: BlockchainGovernance
       {
         "@id": "urn:ngm:class:protocol-evolution",
         "label": "Protocol Evolution"
+      },
+      {
+        "@id": "urn:ngm:class:protocol-upgrade",
+        "label": "Protocol Upgrade"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:token",
+        "label": "Token"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-proof",
+        "label": "Cryptographic Proof"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:blockchain-technology",
+        "label": "Blockchain Technology"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:centralised-governance",
+        "label": "Centralised Governance"
+      },
+      {
+        "@id": "urn:ngm:class:corporate-governance",
+        "label": "Corporate Governance"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      },
+      {
+        "@id": "urn:ngm:class:collective-intelligence",
+        "label": "Collective Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:digital-democracy",
+        "label": "Digital Democracy"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      },
+      {
+        "@id": "urn:ngm:class:network-effect",
+        "label": "Network Effect"
+      },
+      {
+        "@id": "urn:ngm:class:stakeholder-coordination",
+        "label": "Stakeholder Coordination"
       }
     ]
   },
-  "quality": 0.5,
-  "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
-  },
-  "subClassOf": [
+  "sameAs": [
     {
-      "@id": "urn:ngm:class:bc-governance-and-regulation",
-      "label": "Governance and Regulation"
+      "@id": "urn:ngm:class:decentralised-governance",
+      "label": "Decentralised Governance"
+    },
+    {
+      "@id": "urn:ngm:class:on-chain-governance",
+      "label": "On-Chain Governance"
     }
-  ]
+  ],
+  "quality": 0.68,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

@@ -6,11 +6,25 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 - ### Relationships
   - Contrasts With [[Underfitting]]
+  - Contrasts With [[Generalisation]]
   - Requires [[Training Data]]
   - Requires [[Model Training]]
+  - Requires [[Model Capacity]]
+  - Depends On [[Bias-Variance Tradeoff]]
+  - Depends On [[Statistical Learning Theory]]
   - Related To [[Dropout]]
   - Related To [[Model Capacity]]
   - Related To [[Deep Learning]]
+  - Related To [[Regularisation]]
+  - Related To [[Cross-Validation]]
+  - Related To [[Early Stopping]]
+  - Related To [[Data Augmentation]]
+  - Related To [[Validation Data]]
+  - Related To [[Neural Network]]
+  - Uses [[Loss Function]]
+  - Uses [[Empirical Risk Minimisation]]
+  - Bridges To [[Model Governance]]
+  - Bridges To [[AI Robustness]]
 - ### Content
   - ### Primary Definition
   **Overfitting** is a phenomenon where a model learns training data too well, including noise and artefacts, resulting in poor generalisation to new data. Overfitted models perform well on training data but poorly on test data.

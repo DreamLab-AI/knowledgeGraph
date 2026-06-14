@@ -13,11 +13,20 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:real-time-communication",
+        "label": "Real-Time Communication"
+      },
+      {
+        "id": "urn:ngm:class:low-latency-network",
+        "label": "Low-Latency Network"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:virtual-collaboration",
@@ -26,15 +35,45 @@
       {
         "id": "urn:ngm:class:immersive-experience",
         "label": "Immersive Experience"
+      },
+      {
+        "id": "urn:ngm:class:trust-building",
+        "label": "Trust Building"
+      },
+      {
+        "id": "urn:ngm:class:group-cohesion",
+        "label": "Group Cohesion"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:media-richness",
+        "label": "Media Richness"
+      },
+      {
+        "id": "urn:ngm:class:nonverbal-cues",
+        "label": "Nonverbal Cues"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:asynchronous-communication",
+        "label": "Asynchronous Communication"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:presence",
         "label": "Presence"
+      },
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "id": "urn:ngm:class:metaverse-social-layer",
+        "label": "Metaverse Social Layer"
       }
     ],
     "uses": [
@@ -49,6 +88,14 @@
       {
         "id": "urn:ngm:class:presence-detection",
         "label": "Presence Detection"
+      },
+      {
+        "id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
+      },
+      {
+        "id": "urn:ngm:class:avatar-animation",
+        "label": "Avatar Animation"
       }
     ],
     "supports": [],
@@ -57,6 +104,10 @@
       {
         "id": "urn:ngm:class:dc-communication",
         "label": "Communication Technology"
+      },
+      {
+        "id": "urn:ngm:class:user-experience",
+        "label": "User Experience"
       }
     ],
     "relatedTo": [
@@ -75,6 +126,14 @@
       {
         "id": "urn:ngm:class:haptic-feedback",
         "label": "Haptic Feedback"
+      },
+      {
+        "id": "urn:ngm:class:copresence",
+        "label": "Co-presence"
+      },
+      {
+        "id": "urn:ngm:class:mutual-awareness",
+        "label": "Mutual Awareness"
       }
     ]
   },

@@ -9,9 +9,27 @@
 - ### Relationships
   - uses:: [[Transformer]]
   - uses:: [[Large Language Models]]
+  - uses:: [[Word Embeddings]]
+  - uses:: [[Recurrent Neural Network]]
   - enables:: [[Information Retrieval]]
-  - relatedTo:: [[Named Entity Recognition]]
+  - enables:: [[Social Media Monitoring]]
+  - enables:: [[Customer Feedback Analysis]]
+  - enables:: [[Brand Reputation Management]]
+  - hasPart:: [[Aspect-Based Sentiment Analysis]]
+  - hasPart:: [[Emotion Detection]]
+  - hasPart:: [[Opinion Mining]]
+  - partOf:: [[Natural Language Processing]]
+  - requires:: [[Text Classification]]
+  - requires:: [[Tokenisation]]
+  - dependsOn:: [[Labelled Training Data]]
+  - dependsOn:: [[Feature Extraction]]
+  - contrastsWith:: [[Named Entity Recognition]]
+  - contrastsWith:: [[Machine Translation]]
   - relatedTo:: [[Speech Recognition]]
+  - relatedTo:: [[Subjectivity Analysis]]
+  - relatedTo:: [[Stance Detection]]
+  - bridgesTo:: [[Market Research]]
+  - bridgesTo:: [[Financial Analytics]]
 
 - ### Content
   - Sentiment Analysis is the NLP task of determining the emotional tone, attitude, or opinion expressed in text, classifying content as positive, negative, or neutral, and extracting fine-grained emotional attributes. Sentiment analysis employs transformer-based classifiers to enable applications in social media monitoring, customer feedback analysis, market research, and brand reputation management.

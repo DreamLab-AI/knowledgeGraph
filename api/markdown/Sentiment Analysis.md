@@ -58,37 +58,65 @@ public:: true
   "@id": "urn:ngm:class:sentiment-analysis",
   "@type": "Class",
   "label": "Sentiment Analysis",
-  "definition": "Sentiment Analysis is the NLP task of determining the emotional tone, attitude, or opinion expressed in text, classifying content as positive, negative, or neutral, and extracting fine-grained emotional attributes.",
+  "definition": "Sentiment Analysis is the NLP task of determining the emotional tone, attitude, or opinion expressed in text, classifying content as positive, negative, or neutral, and extracting fine-grained emotional attributes including aspect-level sentiment, emotion detection, and subjectivity classification.",
   "domain": "artificial-intelligence",
   "maturity": "emerging",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:ai-application",
-      "label": "AI Application"
-    },
-    {
-      "@id": "urn:ngm:class:natural-language-processing",
-      "label": "Natural Language Processing"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:natural-language-processing",
+    "label": "Natural Language Processing"
+  },
   "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:aspect-based-sentiment-analysis", "label": "Aspect-Based Sentiment Analysis"},
+      {"@id": "urn:ngm:class:emotion-detection", "label": "Emotion Detection"},
+      {"@id": "urn:ngm:class:opinion-mining", "label": "Opinion Mining"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:text-classification", "label": "Text Classification"},
+      {"@id": "urn:ngm:class:tokenisation", "label": "Tokenisation"}
+    ],
     "uses": [
       {"@id": "urn:ngm:class:transformer", "label": "Transformer"},
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}
+      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
+      {"@id": "urn:ngm:class:word-embeddings", "label": "Word Embeddings"},
+      {"@id": "urn:ngm:class:recurrent-neural-network", "label": "Recurrent Neural Network"}
     ],
     "enables": [
-      {"@id": "urn:ngm:class:information-retrieval", "label": "Information Retrieval"}
+      {"@id": "urn:ngm:class:information-retrieval", "label": "Information Retrieval"},
+      {"@id": "urn:ngm:class:social-media-monitoring", "label": "Social Media Monitoring"},
+      {"@id": "urn:ngm:class:customer-feedback-analysis", "label": "Customer Feedback Analysis"},
+      {"@id": "urn:ngm:class:brand-reputation-management", "label": "Brand Reputation Management"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:labelled-training-data", "label": "Labelled Training Data"},
+      {"@id": "urn:ngm:class:feature-extraction", "label": "Feature Extraction"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:named-entity-recognition", "label": "Named Entity Recognition"},
+      {"@id": "urn:ngm:class:machine-translation", "label": "Machine Translation"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:named-entity-recognition", "label": "Named Entity Recognition"},
-      {"@id": "urn:ngm:class:speech-recognition", "label": "Speech Recognition"}
+      {"@id": "urn:ngm:class:speech-recognition", "label": "Speech Recognition"},
+      {"@id": "urn:ngm:class:subjectivity-analysis", "label": "Subjectivity Analysis"},
+      {"@id": "urn:ngm:class:stance-detection", "label": "Stance Detection"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:market-research", "label": "Market Research"},
+      {"@id": "urn:ngm:class:financial-analytics", "label": "Financial Analytics"}
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {"@id": "urn:ngm:class:opinion-mining", "label": "Opinion Mining"},
+    {"@id": "urn:ngm:class:subjectivity-classification", "label": "Subjectivity Classification"}
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```
@@ -150,9 +178,27 @@ public:: true
 - ### Relationships
   - uses:: [[Transformer]]
   - uses:: [[Large Language Models]]
+  - uses:: [[Word Embeddings]]
+  - uses:: [[Recurrent Neural Network]]
   - enables:: [[Information Retrieval]]
-  - relatedTo:: [[Named Entity Recognition]]
+  - enables:: [[Social Media Monitoring]]
+  - enables:: [[Customer Feedback Analysis]]
+  - enables:: [[Brand Reputation Management]]
+  - hasPart:: [[Aspect-Based Sentiment Analysis]]
+  - hasPart:: [[Emotion Detection]]
+  - hasPart:: [[Opinion Mining]]
+  - partOf:: [[Natural Language Processing]]
+  - requires:: [[Text Classification]]
+  - requires:: [[Tokenisation]]
+  - dependsOn:: [[Labelled Training Data]]
+  - dependsOn:: [[Feature Extraction]]
+  - contrastsWith:: [[Named Entity Recognition]]
+  - contrastsWith:: [[Machine Translation]]
   - relatedTo:: [[Speech Recognition]]
+  - relatedTo:: [[Subjectivity Analysis]]
+  - relatedTo:: [[Stance Detection]]
+  - bridgesTo:: [[Market Research]]
+  - bridgesTo:: [[Financial Analytics]]
 
 - ### Content
   - Sentiment Analysis is the NLP task of determining the emotional tone, attitude, or opinion expressed in text, classifying content as positive, negative, or neutral, and extracting fine-grained emotional attributes. Sentiment analysis employs transformer-based classifiers to enable applications in social media monitoring, customer feedback analysis, market research, and brand reputation management.

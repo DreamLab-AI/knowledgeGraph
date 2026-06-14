@@ -58,36 +58,58 @@ alias:: SocialPresence
   "definition": "Subjective experience of feeling connected to and aware of other people in a mediated communication environment, fostering social interactions and relationships. Social presence is heightened by richer media, avatar fidelity, spatial audio, and shared immersive spaces, and is a key quality metric for telecollaboration and virtual world platforms.",
   "domain": "distributed-collaboration",
   "maturity": "established",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:dc-telepresence",
-      "label": "Telepresence"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:dc-telepresence",
+    "label": "Telepresence"
+  },
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:telecollaboration", "label": "Telecollaboration"},
       {"@id": "urn:ngm:class:immersive-communication", "label": "Immersive Communication"},
       {"@id": "urn:ngm:class:avatar", "label": "Avatar"},
-      {"@id": "urn:ngm:class:haptic-feedback", "label": "Haptic Feedback"}
+      {"@id": "urn:ngm:class:haptic-feedback", "label": "Haptic Feedback"},
+      {"@id": "urn:ngm:class:copresence", "label": "Co-presence"},
+      {"@id": "urn:ngm:class:mutual-awareness", "label": "Mutual Awareness"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:virtual-collaboration", "label": "Virtual Collaboration"},
-      {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"}
+      {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"},
+      {"@id": "urn:ngm:class:trust-building", "label": "Trust Building"},
+      {"@id": "urn:ngm:class:group-cohesion", "label": "Group Cohesion"}
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:dc-communication", "label": "Communication Technology"}
+      {"@id": "urn:ngm:class:dc-communication", "label": "Communication Technology"},
+      {"@id": "urn:ngm:class:user-experience", "label": "User Experience"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:video-conferencing", "label": "Video Conferencing"},
       {"@id": "urn:ngm:class:web-rtc", "label": "WebRTC"},
-      {"@id": "urn:ngm:class:presence-detection", "label": "Presence Detection"}
+      {"@id": "urn:ngm:class:presence-detection", "label": "Presence Detection"},
+      {"@id": "urn:ngm:class:spatial-audio", "label": "Spatial Audio"},
+      {"@id": "urn:ngm:class:avatar-animation", "label": "Avatar Animation"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:real-time-communication", "label": "Real-Time Communication"},
+      {"@id": "urn:ngm:class:low-latency-network", "label": "Low-Latency Network"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:media-richness", "label": "Media Richness"},
+      {"@id": "urn:ngm:class:nonverbal-cues", "label": "Nonverbal Cues"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:asynchronous-communication", "label": "Asynchronous Communication"}
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:presence", "label": "Presence"}
+      {"@id": "urn:ngm:class:presence", "label": "Presence"},
+      {"@id": "urn:ngm:class:virtual-reality", "label": "Virtual Reality"},
+      {"@id": "urn:ngm:class:metaverse-social-layer", "label": "Metaverse Social Layer"}
     ]
   },
-  "quality": 0.8,
+  "sameAs": [
+    {"@id": "urn:ngm:class:social-telepresence", "label": "Social Telepresence"},
+    {"@id": "urn:ngm:class:interpersonal-presence", "label": "Interpersonal Presence"}
+  ],
+  "quality": 0.72,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -147,6 +169,20 @@ alias:: SocialPresence
 
 - ### Relationships
   - is-subclass-of:: [[Presence]]
+  - enables:: [[Virtual Collaboration]]
+  - enables:: [[Trust Building]]
+  - enables:: [[Group Cohesion]]
+  - uses:: [[Spatial Audio]]
+  - uses:: [[Video Conferencing]]
+  - uses:: [[WebRTC]]
+  - requires:: [[Real-Time Communication]]
+  - dependsOn:: [[Media Richness]]
+  - dependsOn:: [[Nonverbal Cues]]
+  - relatedTo:: [[Avatar]]
+  - relatedTo:: [[Co-presence]]
+  - contrastsWith:: [[Asynchronous Communication]]
+  - bridgesTo:: [[Virtual Reality]]
+  - bridgesTo:: [[Metaverse Social Layer]]
 
 - ### Content
   Social Presence — content pending enrichment.

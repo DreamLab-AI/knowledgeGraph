@@ -16,18 +16,70 @@
   "qualityScore": 0.8,
   "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:dead-letter-queue",
+        "label": "Dead-Letter Queue"
+      },
+      {
+        "id": "urn:ngm:class:routing-rule",
+        "label": "Routing Rule"
+      },
+      {
+        "id": "urn:ngm:class:topic",
+        "label": "Topic"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:persistent-storage",
+        "label": "Persistent Storage"
+      },
+      {
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:event-streaming",
         "label": "Event Streaming"
+      },
+      {
+        "id": "urn:ngm:class:asynchronous-messaging",
+        "label": "Asynchronous Messaging"
+      },
+      {
+        "id": "urn:ngm:class:loose-coupling",
+        "label": "Loose Coupling"
+      },
+      {
+        "id": "urn:ngm:class:microservices-architecture",
+        "label": "Microservices Architecture"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:enterprise-service-bus",
+        "label": "Enterprise Service Bus"
+      },
+      {
+        "id": "urn:ngm:class:remote-procedure-call",
+        "label": "Remote Procedure Call"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:multi-agent-system",
+        "label": "Multi-Agent System"
+      },
+      {
+        "id": "urn:ngm:class:iot-platform",
+        "label": "IoT Platform"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:message-queue",
@@ -36,10 +88,23 @@
       {
         "id": "urn:ngm:class:publish-subscribe-pattern",
         "label": "Publish-Subscribe Pattern"
+      },
+      {
+        "id": "urn:ngm:class:amqp",
+        "label": "AMQP"
+      },
+      {
+        "id": "urn:ngm:class:mqtt",
+        "label": "MQTT"
       }
     ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:amqp",
+        "label": "AMQP"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -49,6 +114,18 @@
       {
         "id": "urn:ngm:class:event-driven-architecture",
         "label": "Event-Driven Architecture"
+      },
+      {
+        "id": "urn:ngm:class:rabbitmq",
+        "label": "RabbitMQ"
+      },
+      {
+        "id": "urn:ngm:class:apache-pulsar",
+        "label": "Apache Pulsar"
+      },
+      {
+        "id": "urn:ngm:class:event-sourcing",
+        "label": "Event Sourcing"
       }
     ]
   },

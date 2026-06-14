@@ -83,45 +83,153 @@ public:: true
   "@type": "Class",
   "label": "Cryptographic Key Management",
   "definition": "The administration of cryptographic keys throughout their lifecycle, including generation, storage, distribution, rotation, backup, recovery, and destruction, ensuring the security and availability of keying material while preventing unauthorized access or compromise.",
-  "domain": "blockchain",
+  "domain": "security",
   "maturity": "emerging",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:bc-cryptographic-primitive",
-      "label": "Cryptographic Primitive"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:cryptography",
+    "label": "Cryptography"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:key-generation",
+        "label": "Key Generation"
+      },
+      {
+        "@id": "urn:ngm:class:key-rotation",
+        "label": "Key Rotation"
+      },
+      {
+        "@id": "urn:ngm:class:key-revocation",
+        "label": "Key Revocation"
+      },
+      {
+        "@id": "urn:ngm:class:key-escrow",
+        "label": "Key Escrow"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:security-architecture",
+        "label": "Security Architecture"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:random-number-generation",
         "label": "Random Number Generation"
+      },
+      {
+        "@id": "urn:ngm:class:hardware-security-module",
+        "label": "Hardware Security Module"
+      },
+      {
+        "@id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:digital-signature",
         "label": "Digital Signature"
+      },
+      {
+        "@id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      },
+      {
+        "@id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:cryptographic-keys",
+        "label": "Cryptographic Keys"
+      },
+      {
+        "@id": "urn:ngm:class:private-key",
+        "label": "Private Key"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:nist-sp-800-57",
+        "label": "NIST SP 800-57"
+      },
+      {
+        "@id": "urn:ngm:class:fips-140-3",
+        "label": "FIPS 140-3"
       }
     ],
     "uses": [
       {
         "@id": "urn:ngm:class:key-derivation-function",
         "label": "Key Derivation Function"
+      },
+      {
+        "@id": "urn:ngm:class:secure-enclave",
+        "label": "Secure Enclave"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:zero-trust-security",
+        "label": "Zero Trust Security"
+      },
+      {
+        "@id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:nist",
+        "label": "NIST"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:password-management",
+        "label": "Password Management"
       }
     ],
     "bridgesTo": [
       {
-        "@id": "urn:ngm:class:cryptography",
-        "label": "Cryptography"
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:certificate-management",
+        "label": "Certificate Management"
+      },
+      {
+        "@id": "urn:ngm:class:post-quantum-cryptography",
+        "label": "Post-Quantum Cryptography"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:key-lifecycle-management",
+      "label": "Key Lifecycle Management"
+    },
+    {
+      "@id": "urn:ngm:class:cryptokey-management",
+      "label": "CryptoKey Management"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

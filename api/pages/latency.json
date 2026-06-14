@@ -4,19 +4,36 @@
   "slug": "latency",
   "public": true,
   "classIri": "urn:ngm:class:latency",
-  "domain": "spatial-computing",
-  "definition": "Virtual performance metric representing the time delay between a user action and corresponding system response within networked immersive environments.",
+  "domain": "infrastructure",
+  "definition": "Performance metric representing the time delay between a stimulus (user action, network request, or computation trigger) and the corresponding system response; a fundamental constraint in networked, real-time, and interactive systems spanning communication networks, distributed computing, and immersive environments.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:sc-content-and-assets",
-      "label": "Content and Assets"
+      "id": "urn:ngm:class:network-performance-metrics",
+      "label": "Network Performance Metrics"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:propagation-delay",
+        "label": "Propagation Delay"
+      },
+      {
+        "id": "urn:ngm:class:processing-delay",
+        "label": "Processing Delay"
+      },
+      {
+        "id": "urn:ngm:class:queuing-delay",
+        "label": "Queuing Delay"
+      },
+      {
+        "id": "urn:ngm:class:transmission-delay",
+        "label": "Transmission Delay"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:measurement-tools",
@@ -47,12 +64,63 @@
       {
         "id": "urn:ngm:class:performance-optimization",
         "label": "Performance Optimization"
+      },
+      {
+        "id": "urn:ngm:class:real-time-control",
+        "label": "Real-Time Control"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:routing-protocol",
+        "label": "Routing Protocol"
+      },
+      {
+        "id": "urn:ngm:class:bandwidth",
+        "label": "Bandwidth"
+      },
+      {
+        "id": "urn:ngm:class:physical-layer",
+        "label": "Physical Layer"
+      },
+      {
+        "id": "urn:ngm:class:network-layer",
+        "label": "Network Layer"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:throughput",
+        "label": "Throughput"
+      },
+      {
+        "id": "urn:ngm:class:jitter",
+        "label": "Jitter"
+      },
+      {
+        "id": "urn:ngm:class:packet-loss",
+        "label": "Packet Loss"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:inference-serving",
+        "label": "Inference Serving"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
@@ -66,7 +134,20 @@
         "label": "Quality of Service"
       }
     ],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:round-trip-time",
+        "label": "Round-Trip Time"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
+      }
+    ]
   },
   "wikilinks": [
     {

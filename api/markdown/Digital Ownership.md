@@ -75,19 +75,13 @@ alias:: DigitalOwnership
   "@id": "urn:ngm:class:digital-ownership",
   "@type": "Class",
   "label": "Digital Ownership",
-  "definition": "The cryptographically verified right to possess, control, and transfer digital assets including NFTs, virtual real estate, in-game items, and tokenised content, established through blockchain technology and smart contracts that provide immutable proof of authenticity and provenance within metaver...",
-  "domain": "spatial-computing",
+  "definition": "The cryptographically verified right to possess, control, and transfer digital assets including NFTs, virtual real estate, in-game items, and tokenised content, established through blockchain technology and smart contracts that provide immutable proof of authenticity and provenance within metaverse economies and broader digital commerce contexts.",
+  "domain": "blockchain",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:sc-governance-and-safety",
-      "label": "Governance and Safety"
-    },
-    {
-      "@id": "urn:ngm:class:property-rights",
-      "label": "Property Rights"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:property-rights",
+    "label": "Property Rights"
+  },
   "relations": {
     "requires": [
       {
@@ -101,6 +95,14 @@ alias:: DigitalOwnership
       {
         "@id": "urn:ngm:class:smart-contracts",
         "label": "Smart Contracts"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-key-management",
+        "label": "Cryptographic Key Management"
+      },
+      {
+        "@id": "urn:ngm:class:token-standard",
+        "label": "Token Standard"
       }
     ],
     "enables": [
@@ -115,14 +117,110 @@ alias:: DigitalOwnership
       {
         "@id": "urn:ngm:class:provenance-tracking",
         "label": "Provenance Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:fractional-ownership",
+        "label": "Fractional Ownership"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-marketplace",
+        "label": "Decentralised Marketplace"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:non-fungible-token",
+        "label": "Non-Fungible Token"
+      },
+      {
+        "@id": "urn:ngm:class:ownership-record",
+        "label": "Ownership Record"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-storage",
+        "label": "Decentralised Storage"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:erc-721",
+        "label": "ERC-721"
+      },
+      {
+        "@id": "urn:ngm:class:erc-1155",
+        "label": "ERC-1155"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:tokenised-real-world-assets",
+        "label": "Tokenised Real-World Assets"
+      },
+      {
+        "@id": "urn:ngm:class:digital-rights-management",
+        "label": "Digital Rights Management"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:intellectual-property-rights",
+        "label": "Intellectual Property Rights"
+      },
+      {
+        "@id": "urn:ngm:class:traditional-property-law",
+        "label": "Traditional Property Law"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain-provenance",
+        "label": "Supply Chain Provenance"
+      },
+      {
+        "@id": "urn:ngm:class:data-sovereignty",
+        "label": "Data Sovereignty"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "@id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self-Sovereign Identity"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:on-chain-ownership",
+      "label": "On-Chain Ownership"
+    },
+    {
+      "@id": "urn:ngm:class:tokenised-asset-ownership",
+      "label": "Tokenised Asset Ownership"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

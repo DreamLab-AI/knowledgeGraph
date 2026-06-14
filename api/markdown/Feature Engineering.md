@@ -52,26 +52,64 @@ alias:: FeatureEngineering
   "@type": "Class",
   "label": "Feature Engineering",
   "definition": "The process of using domain knowledge and statistical transformations to construct, select, and encode input variables from raw data so that they better represent the underlying predictive signal for machine learning models. Techniques include polynomial expansion, normalisation, temporal feature extraction, embedding of categorical variables, and dimensionality reduction via PCA or autoencoders.",
-  "domain": "artificial-intelligence",
+  "domain": "machine-learning",
   "maturity": "emerging",
   "qualityScore": 0.7,
-  "subClassOf": [
+  "subClassOf": {
+    "@id": "urn:ngm:class:data-preprocessing",
+    "label": "Data Preprocessing"
+  },
+  "sameAs": [
     {
-      "@id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique"
+      "@id": "urn:ngm:class:feature-extraction",
+      "label": "Feature Extraction"
     },
     {
-      "@id": "urn:ngm:class:data-preprocessing",
-      "label": "Data Preprocessing"
+      "@id": "urn:ngm:class:feature-construction",
+      "label": "Feature Construction"
     }
   ],
-  "quality": 0.5,
+  "quality": 0.68,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:feature-selection",
+        "label": "Feature Selection"
+      },
+      {
+        "@id": "urn:ngm:class:dimensionality-reduction",
+        "label": "Dimensionality Reduction"
+      },
+      {
+        "@id": "urn:ngm:class:categorical-encoding",
+        "label": "Categorical Encoding"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:machine-learning-pipeline",
+        "label": "Machine Learning Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:automl",
+        "label": "AutoML"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:data-preprocessing",
+        "label": "Data Preprocessing"
+      },
+      {
+        "@id": "urn:ngm:class:exploratory-data-analysis",
+        "label": "Exploratory Data Analysis"
+      }
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:machine-learning-discipline",
@@ -80,28 +118,78 @@ alias:: FeatureEngineering
       {
         "@id": "urn:ngm:class:model-training",
         "label": "Model Training"
+      },
+      {
+        "@id": "urn:ngm:class:predictive-modelling",
+        "label": "Predictive Modelling"
       }
     ],
-    "bridgesTo": [
+    "dependsOn": [
       {
-        "@id": "urn:ngm:class:digital-twin",
-        "label": "Digital Twin"
+        "@id": "urn:ngm:class:domain-knowledge",
+        "label": "Domain Knowledge"
+      },
+      {
+        "@id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
       }
     ],
     "uses": [
       {
         "@id": "urn:ngm:class:data-pipeline",
         "label": "Data Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:principal-component-analysis",
+        "label": "Principal Component Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:autoencoder",
+        "label": "Autoencoder"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:representation-learning",
+        "label": "Representation Learning"
+      },
+      {
+        "@id": "urn:ngm:class:end-to-end-learning",
+        "label": "End-to-End Learning"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
       }
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:transfer-learning",
-        "label": "Transfer Learning"
-      },
-      {
         "@id": "urn:ngm:class:feature-store",
         "label": "Feature Store"
+      },
+      {
+        "@id": "urn:ngm:class:data-augmentation",
+        "label": "Data Augmentation"
+      },
+      {
+        "@id": "urn:ngm:class:shap-values",
+        "label": "SHAP Values"
       }
     ]
   }

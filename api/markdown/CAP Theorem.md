@@ -62,25 +62,121 @@ public:: true
   "domain": "distributed-systems",
   "maturity": "established",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:owl-thing",
-      "label": "owl:Thing"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:distributed-systems-theorem",
+    "label": "Distributed Systems Theorem"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:consistency",
+        "label": "Consistency"
+      },
+      {
+        "@id": "urn:ngm:class:availability",
+        "label": "Availability"
+      },
+      {
+        "@id": "urn:ngm:class:partition-tolerance",
+        "label": "Partition Tolerance"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:network-partition",
+        "label": "Network Partition"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-data-store",
+        "label": "Distributed Data Store"
+      }
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:distributed-database-design",
         "label": "Distributed Database Design"
+      },
+      {
+        "@id": "urn:ngm:class:system-fault-tolerance",
+        "label": "System Fault Tolerance"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:replication",
+        "label": "Replication"
+      },
+      {
+        "@id": "urn:ngm:class:consensus",
+        "label": "Consensus"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:acid-properties",
+        "label": "ACID Properties"
+      },
+      {
+        "@id": "urn:ngm:class:pacelc-theorem",
+        "label": "PACELC Theorem"
+      },
+      {
+        "@id": "urn:ngm:class:base-properties",
+        "label": "BASE Properties"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:eventual-consistency",
+        "label": "Eventual Consistency"
+      },
+      {
+        "@id": "urn:ngm:class:strong-consistency",
+        "label": "Strong Consistency"
+      },
+      {
+        "@id": "urn:ngm:class:linearizability",
+        "label": "Linearizability"
+      },
+      {
+        "@id": "urn:ngm:class:two-phase-commit",
+        "label": "Two-Phase Commit"
+      },
+      {
+        "@id": "urn:ngm:class:raft-consensus",
+        "label": "Raft Consensus"
+      },
+      {
+        "@id": "urn:ngm:class:paxos-protocol",
+        "label": "Paxos Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:nosql-database",
+        "label": "NoSQL Database"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:blockchain-consensus",
+        "label": "Blockchain Consensus"
+      },
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:brewer-theorem",
+      "label": "Brewer's Theorem"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

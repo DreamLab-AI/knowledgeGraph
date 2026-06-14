@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:sensor-fusion",
   "domain": "robotics",
-  "definition": "Sensor Fusion is the process of combining data from multiple sensors (camera, lidar, radar, GPS, IMU) to produce more accurate, reliable, and complete information than could be obtained from any individual sensor.",
+  "definition": "Sensor Fusion is the process of combining data from multiple sensors (camera, lidar, radar, GPS, IMU) to produce more accurate, reliable, and complete information than could be obtained from any individual sensor. It employs algorithms including Kalman filtering, particle filtering, and deep learning-based fusion to integrate complementary sensor modalities whilst managing noise, uncertainties, and hardware failures.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-perception",
@@ -13,11 +13,41 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.72,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:kalman-filter",
+        "label": "Kalman Filter"
+      },
+      {
+        "id": "urn:ngm:class:particle-filter",
+        "label": "Particle Filter"
+      },
+      {
+        "id": "urn:ngm:class:imu",
+        "label": "Inertial Measurement Unit"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:lidar",
+        "label": "LiDAR"
+      },
+      {
+        "id": "urn:ngm:class:radar",
+        "label": "Radar"
+      },
+      {
+        "id": "urn:ngm:class:camera-sensor",
+        "label": "Camera Sensor"
+      },
+      {
+        "id": "urn:ngm:class:gps",
+        "label": "GPS"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:slam",
@@ -26,15 +56,45 @@
       {
         "id": "urn:ngm:class:autonomous-vehicle",
         "label": "Autonomous Vehicle"
+      },
+      {
+        "id": "urn:ngm:class:localisation",
+        "label": "Localisation"
+      },
+      {
+        "id": "urn:ngm:class:obstacle-avoidance",
+        "label": "Obstacle Avoidance"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:single-sensor-perception",
+        "label": "Single-Sensor Perception"
+      }
+    ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:perception-system",
-        "label": "Perception System"
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
       }
     ],
     "uses": [
@@ -45,17 +105,47 @@
       {
         "id": "urn:ngm:class:object-detection",
         "label": "Object Detection"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
       }
     ],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:simultaneous-localisation-and-mapping",
+        "label": "Simultaneous Localisation and Mapping"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [
       {
         "id": "urn:ngm:class:perception-system",
         "label": "Perception System"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicle"
       }
     ],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:probabilistic-robotics",
+        "label": "Probabilistic Robotics"
+      },
+      {
+        "id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      }
+    ]
   },
   "wikilinks": [
     {

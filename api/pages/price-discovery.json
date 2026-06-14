@@ -4,24 +4,42 @@
   "slug": "price-discovery",
   "public": true,
   "classIri": "urn:ngm:class:price-discovery",
-  "domain": "blockchain",
+  "domain": "finance",
   "definition": "Price discovery is the market mechanism through which asset prices are determined via the continuous interaction of buyers and sellers, incorporating supply/demand dynamics, order flow analysis, bid-ask spread formation, and arbitrage across venues to establish fair market value in real-time.",
   "subClassOf": [
-    {
-      "id": "urn:ngm:class:bc-defi-and-economics",
-      "label": "DeFi and Economics"
-    },
     {
       "id": "urn:ngm:class:market-microstructure",
       "label": "Market Microstructure"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.68,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:bid-ask-spread",
+        "label": "Bid-Ask Spread"
+      },
+      {
+        "id": "urn:ngm:class:order-book",
+        "label": "Order Book"
+      },
+      {
+        "id": "urn:ngm:class:auction-mechanism",
+        "label": "Auction Mechanism"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:liquidity",
+        "label": "Liquidity"
+      },
+      {
+        "id": "urn:ngm:class:information-asymmetry",
+        "label": "Information Asymmetry"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:fair-valuation",
@@ -34,17 +52,78 @@
       {
         "id": "urn:ngm:class:price-transparency",
         "label": "Price Transparency"
+      },
+      {
+        "id": "urn:ngm:class:capital-allocation",
+        "label": "Capital Allocation"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:supply-and-demand",
+        "label": "Supply and Demand"
+      },
+      {
+        "id": "urn:ngm:class:market-structure",
+        "label": "Market Structure"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:market-manipulation",
+        "label": "Market Manipulation"
+      },
+      {
+        "id": "urn:ngm:class:information-asymmetry",
+        "label": "Information Asymmetry"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
+      },
+      {
+        "id": "urn:ngm:class:oracle-network",
+        "label": "Oracle Network"
+      },
+      {
+        "id": "urn:ngm:class:mev",
+        "label": "MEV"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:arbitrage",
+        "label": "Arbitrage"
+      },
+      {
+        "id": "urn:ngm:class:order-flow-analysis",
+        "label": "Order Flow Analysis"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:high-frequency-trading",
+        "label": "High-Frequency Trading"
+      },
+      {
+        "id": "urn:ngm:class:benchmark-rate",
+        "label": "Benchmark Rate"
+      },
+      {
+        "id": "urn:ngm:class:consolidated-tape",
+        "label": "Consolidated Tape"
+      },
+      {
+        "id": "urn:ngm:class:futures-market",
+        "label": "Futures Market"
+      }
+    ]
   },
   "wikilinks": [
     {

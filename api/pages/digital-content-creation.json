@@ -13,11 +13,37 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.65,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:3d-modelling",
+        "label": "3D Modelling"
+      },
+      {
+        "id": "urn:ngm:class:texture-authoring",
+        "label": "Texture Authoring"
+      },
+      {
+        "id": "urn:ngm:class:audio-production",
+        "label": "Audio Production"
+      },
+      {
+        "id": "urn:ngm:class:video-editing",
+        "label": "Video Editing"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:digital-asset-management",
+        "label": "Digital Asset Management"
+      },
+      {
+        "id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:digital-content",
@@ -26,12 +52,43 @@
       {
         "id": "urn:ngm:class:metaverse-content-pipeline",
         "label": "Metaverse Content Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      },
+      {
+        "id": "urn:ngm:class:interactive-media",
+        "label": "Interactive Media"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:graphics-processing-unit",
+        "label": "Graphics Processing Unit"
+      },
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:analogue-content-production",
+        "label": "Analogue Content Production"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:non-fungible-token",
+        "label": "Non-Fungible Token"
+      },
+      {
+        "id": "urn:ngm:class:distributed-storage",
+        "label": "Distributed Storage"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:generative-ai",
@@ -40,9 +97,26 @@
       {
         "id": "urn:ngm:class:rendering-technology",
         "label": "Rendering Technology"
+      },
+      {
+        "id": "urn:ngm:class:physically-based-rendering",
+        "label": "Physically Based Rendering"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
       }
     ],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "id": "urn:ngm:class:virtual-world",
+        "label": "Virtual World"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [
       {
@@ -54,6 +128,14 @@
       {
         "id": "urn:ngm:class:digital-content-layer",
         "label": "Digital Content Layer"
+      },
+      {
+        "id": "urn:ngm:class:open-usd",
+        "label": "OpenUSD"
+      },
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
       }
     ]
   },

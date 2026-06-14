@@ -46,35 +46,65 @@ public:: true
   "domain": "artificial-intelligence",
   "maturity": "emerging",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:ai-governance-and-ethics",
-      "label": "AI Governance and Ethics"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:ai-governance-and-ethics",
+    "label": "AI Governance and Ethics"
+  },
   "relations": {
     "hasPart": [
       {"@id": "urn:ngm:class:fairness", "label": "Fairness"},
       {"@id": "urn:ngm:class:explainability", "label": "Explainability"},
       {"@id": "urn:ngm:class:accountability", "label": "Accountability"},
-      {"@id": "urn:ngm:class:bias", "label": "Bias"}
+      {"@id": "urn:ngm:class:bias", "label": "Bias"},
+      {"@id": "urn:ngm:class:transparency", "label": "Transparency"},
+      {"@id": "urn:ngm:class:algorithmic-impact-assessment", "label": "Algorithmic Impact Assessment"},
+      {"@id": "urn:ngm:class:value-alignment", "label": "Value Alignment"}
     ],
     "requires": [
       {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},
-      {"@id": "urn:ngm:class:governance-framework", "label": "Governance Framework"}
+      {"@id": "urn:ngm:class:governance-framework", "label": "Governance Framework"},
+      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"},
+      {"@id": "urn:ngm:class:trustworthy-ai", "label": "Trustworthy AI"},
+      {"@id": "urn:ngm:class:human-oversight", "label": "Human Oversight"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:risk-assessment", "label": "Risk Assessment"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:fairness-metrics", "label": "Fairness Metrics"},
+      {"@id": "urn:ngm:class:bias-mitigation", "label": "Bias Mitigation"}
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:eu-ai-act-regulatory-instrument", "label": "EU AI Act"}
+      {"@id": "urn:ngm:class:eu-ai-act-regulatory-instrument", "label": "EU AI Act"},
+      {"@id": "urn:ngm:class:nist-ai-risk-management-framework", "label": "NIST AI Risk Management Framework"},
+      {"@id": "urn:ngm:class:ieee-ethically-aligned-design", "label": "IEEE Ethically Aligned Design"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:machine-learning-domain", "label": "MachineLearningDomain"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:telecollaboration", "label": "Telecollaboration"},
+      {"@id": "urn:ngm:class:blockchain-domain", "label": "BlockchainDomain"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:aiethics", "label": "AIEthics"}
+      {"@id": "urn:ngm:class:aiethics", "label": "AIEthics"},
+      {"@id": "urn:ngm:class:differential-privacy", "label": "Differential Privacy"},
+      {"@id": "urn:ngm:class:algorithmic-auditing", "label": "Algorithmic Auditing"}
     ]
   },
-  "quality": 0.35,
+  "sameAs": [
+    {"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"},
+    {"@id": "urn:ngm:class:responsible-ai-domain", "label": "Responsible AI Domain"}
+  ],
+  "quality": 0.68,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

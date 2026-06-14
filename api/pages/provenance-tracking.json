@@ -5,15 +5,15 @@
   "public": true,
   "classIri": "urn:ngm:class:provenance-tracking",
   "domain": "blockchain",
-  "definition": "Blockchain-based systems employing immutable distributed ledgers, IoT sensors, and smart contracts to create comprehensive audit trails tracking product journeys from origin to consumer, enabling dramatic reduction in tracing time (7 days to 2.2 seconds), combating counterfeit markets, and supporting food safety, pharmaceutical traceability, luxury goods authentication, and ethical sourcing verification.",
+  "definition": "Systems employing immutable distributed ledgers, IoT sensors, and smart contracts to create comprehensive audit trails tracking entities (products, data, AI model outputs) from origin to consumer or end-use, enabling rapid traceability, counterfeit prevention, regulatory compliance, and ethical sourcing verification across food safety, pharmaceuticals, luxury goods, and AI governance contexts.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:bc-network-component",
-      "label": "Network Component"
+      "id": "urn:ngm:class:supply-chain-management",
+      "label": "Supply Chain Management"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
     "hasPart": [
@@ -24,14 +24,75 @@
       {
         "id": "urn:ngm:class:traceability-mechanism",
         "label": "Traceability Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:chain-of-custody",
+        "label": "Chain of Custody"
       }
     ],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:permissioned-blockchain",
+        "label": "Permissioned Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:data-integrity",
+        "label": "Data Integrity"
+      },
+      {
+        "id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:food-safety-blockchain",
+        "label": "Food Safety Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:pharmaceutical-traceability",
+        "label": "Pharmaceutical Traceability"
+      },
+      {
+        "id": "urn:ngm:class:luxury-goods-authentication",
+        "label": "Luxury Goods Authentication"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:epcis",
+        "label": "EPCIS"
+      },
+      {
+        "id": "urn:ngm:class:gs1-standards",
+        "label": "GS1 Standards"
+      },
+      {
+        "id": "urn:ngm:class:w3c-prov",
+        "label": "W3C PROV"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:centralised-database",
+        "label": "Centralised Database"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-model-governance",
+        "label": "AI Model Governance"
+      },
+      {
+        "id": "urn:ngm:class:data-lineage",
+        "label": "Data Lineage"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:smart-contract",
@@ -52,6 +113,14 @@
       {
         "id": "urn:ngm:class:immutability",
         "label": "Immutability"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash",
+        "label": "Cryptographic Hash"
+      },
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
       }
     ],
     "supports": [],
@@ -69,10 +138,6 @@
       {
         "id": "urn:ngm:class:blockchain-compliance",
         "label": "Blockchain Compliance"
-      },
-      {
-        "id": "urn:ngm:class:digital-signature",
-        "label": "Digital Signature"
       }
     ]
   },

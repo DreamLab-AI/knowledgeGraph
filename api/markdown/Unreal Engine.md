@@ -74,12 +74,10 @@ public:: true
   "domain": "spatial-computing",
   "maturity": "established",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:creative-media-domain",
-      "label": "Creative Media Domain"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:game-engine",
+    "label": "Game Engine"
+  },
   "relations": {
     "hasPart": [
       {
@@ -89,12 +87,34 @@ public:: true
       {
         "@id": "urn:ngm:class:lumen",
         "label": "Lumen"
+      },
+      {
+        "@id": "urn:ngm:class:blueprints-visual-scripting",
+        "label": "Blueprints Visual Scripting"
+      },
+      {
+        "@id": "urn:ngm:class:chaos-physics",
+        "label": "Chaos Physics"
+      },
+      {
+        "@id": "urn:ngm:class:niagara-vfx",
+        "label": "Niagara VFX"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:epic-games-ecosystem",
+        "label": "Epic Games Ecosystem"
       }
     ],
     "requires": [
       {
         "@id": "urn:ngm:class:gpu-rendering",
         "label": "GPU Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
       }
     ],
     "enables": [
@@ -109,14 +129,94 @@ public:: true
       {
         "@id": "urn:ngm:class:metaverse-domain",
         "label": "Metaverse Domain"
+      },
+      {
+        "@id": "urn:ngm:class:architectural-visualisation",
+        "label": "Architectural Visualisation"
+      },
+      {
+        "@id": "urn:ngm:class:xr-application",
+        "label": "XR Application"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:physically-based-rendering",
+        "label": "Physically Based Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:ray-tracing",
+        "label": "Ray Tracing"
+      },
+      {
+        "@id": "urn:ngm:class:level-of-detail",
+        "label": "Level of Detail"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:multiplayer-networking",
+        "label": "Multiplayer Networking"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:unity-engine",
+        "label": "Unity Engine"
+      },
+      {
+        "@id": "urn:ngm:class:godot-engine",
+        "label": "Godot Engine"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:computer-vision-domain",
+        "label": "Computer Vision Domain"
+      },
+      {
+        "@id": "urn:ngm:class:3d-reconstruction",
+        "label": "3D Reconstruction"
+      },
+      {
+        "@id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:fortnite",
+        "label": "Fortnite"
+      },
+      {
+        "@id": "urn:ngm:class:metahuman",
+        "label": "MetaHuman"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:ue5",
+      "label": "UE5"
+    },
+    {
+      "@id": "urn:ngm:class:unreal-engine-5",
+      "label": "Unreal Engine 5"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

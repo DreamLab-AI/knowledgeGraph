@@ -62,12 +62,10 @@ public:: true
   "domain": "blockchain",
   "maturity": "established",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:blockchain-domain",
-      "label": "Blockchain Domain"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:blockchain-domain",
+    "label": "Blockchain Domain"
+  },
   "relations": {
     "requires": [
       {
@@ -77,20 +75,122 @@ public:: true
       {
         "@id": "urn:ngm:class:utxo",
         "label": "UTXO"
+      },
+      {
+        "@id": "urn:ngm:class:ada-cryptocurrency",
+        "label": "ADA Cryptocurrency"
+      },
+      {
+        "@id": "urn:ngm:class:peer-reviewed-research",
+        "label": "Peer-Reviewed Research"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "@id": "urn:ngm:class:native-token",
+        "label": "Native Token"
+      },
+      {
+        "@id": "urn:ngm:class:on-chain-governance",
+        "label": "On-Chain Governance"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:ouroboros-protocol",
+        "label": "Ouroboros Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:extended-utxo-model",
+        "label": "Extended UTXO Model"
+      },
+      {
+        "@id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:plutus",
+        "label": "Plutus"
+      },
+      {
+        "@id": "urn:ngm:class:haskell",
+        "label": "Haskell"
+      },
+      {
+        "@id": "urn:ngm:class:stake-pool",
+        "label": "Stake Pool"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:cardano-settlement-layer",
+        "label": "Cardano Settlement Layer"
+      },
+      {
+        "@id": "urn:ngm:class:cardano-computation-layer",
+        "label": "Cardano Computation Layer"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      },
+      {
+        "@id": "urn:ngm:class:solana",
+        "label": "Solana"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain-traceability",
+        "label": "Supply Chain Traceability"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:iohk",
+        "label": "IOHK"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:layer-1-blockchain",
+        "label": "Layer 1 Blockchain"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:ada-blockchain",
+      "label": "ADA Blockchain"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

@@ -4,20 +4,42 @@
   "slug": "network-protocol",
   "public": true,
   "classIri": "urn:ngm:class:network-protocol",
-  "domain": "distributed-collaboration",
-  "definition": "A network protocol is a set of established rules that specify how to format, send, and receive data between networked devices, enabling diverse communication systems to interact using standard procedures.",
+  "domain": "infrastructure",
+  "definition": "A network protocol is a set of established rules that specify how to format, send, and receive data between networked devices, enabling diverse communication systems to interact using standard procedures. Protocols are organized into layered architectures (OSI, TCP/IP) and govern addressing, routing, error detection, session management, and application-layer services.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:dc-protocol-and-infra",
-      "label": "Protocol and Infrastructure"
+      "id": "urn:ngm:class:communication-standard",
+      "label": "Communication Standard"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.72,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:packet-header",
+        "label": "Packet Header"
+      },
+      {
+        "id": "urn:ngm:class:protocol-stack",
+        "label": "Protocol Stack"
+      },
+      {
+        "id": "urn:ngm:class:network-frame",
+        "label": "Network Frame"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:network-addressing",
+        "label": "Network Addressing"
+      },
+      {
+        "id": "urn:ngm:class:error-detection",
+        "label": "Error Detection"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:data-transmission",
@@ -30,22 +52,106 @@
       {
         "id": "urn:ngm:class:interoperability",
         "label": "Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      },
+      {
+        "id": "urn:ngm:class:internet-connectivity",
+        "label": "Internet Connectivity"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:physical-layer",
+        "label": "Physical Layer"
+      }
+    ],
     "implements": [
       {
-        "id": "urn:ngm:class:distributed-collaboration",
-        "label": "distributed-collaboration"
+        "id": "urn:ngm:class:osi-model",
+        "label": "OSI Model"
+      },
+      {
+        "id": "urn:ngm:class:tcp-ip-model",
+        "label": "TCP/IP Model"
       }
     ],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:proprietary-protocol",
+        "label": "Proprietary Protocol"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-protocol",
+        "label": "Cryptographic Protocol"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:packet-switching",
+        "label": "Packet Switching"
+      },
+      {
+        "id": "urn:ngm:class:flow-control",
+        "label": "Flow Control"
+      },
+      {
+        "id": "urn:ngm:class:routing-algorithm",
+        "label": "Routing Algorithm"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      },
+      {
+        "id": "urn:ngm:class:quality-of-service",
+        "label": "Quality of Service"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      },
+      {
+        "id": "urn:ngm:class:iso",
+        "label": "ISO"
+      },
+      {
+        "id": "urn:ngm:class:ieee",
+        "label": "IEEE"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:internet-architecture",
+        "label": "Internet Architecture"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:bandwidth",
+        "label": "Bandwidth"
+      },
+      {
+        "id": "urn:ngm:class:latency",
+        "label": "Latency"
+      }
+    ]
   },
   "wikilinks": [
     {

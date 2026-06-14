@@ -10,14 +10,10 @@
     {
       "id": "urn:ngm:class:sc-display-and-rendering",
       "label": "Display and Rendering"
-    },
-    {
-      "id": "urn:ngm:class:metaverse",
-      "label": "Metaverse"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.68,
   "maturity": "emerging",
   "relationships": {
     "hasPart": [
@@ -28,9 +24,22 @@
       {
         "id": "urn:ngm:class:pixel-shader",
         "label": "Pixel Shader"
+      },
+      {
+        "id": "urn:ngm:class:workgroup",
+        "label": "Workgroup"
       }
     ],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:graphics-processing-unit",
+        "label": "Graphics Processing Unit"
+      },
+      {
+        "id": "urn:ngm:class:shader-compiler",
+        "label": "Shader Compiler"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:physics-simulation",
@@ -43,12 +52,47 @@
       {
         "id": "urn:ngm:class:post-processing",
         "label": "Post Processing"
+      },
+      {
+        "id": "urn:ngm:class:gpu-driven-rendering",
+        "label": "GPU-Driven Rendering"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:parallel-computing",
+        "label": "Parallel Computing"
+      },
+      {
+        "id": "urn:ngm:class:memory-model",
+        "label": "Memory Model"
+      },
+      {
+        "id": "urn:ngm:class:thread-synchronization",
+        "label": "Thread Synchronization"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:cpu-computing",
+        "label": "CPU Computing"
+      },
+      {
+        "id": "urn:ngm:class:sequential-algorithm",
+        "label": "Sequential Algorithm"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:machine-learning-inference",
+        "label": "Machine Learning Inference"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:parallel-processing",
@@ -57,12 +101,47 @@
       {
         "id": "urn:ngm:class:real-time-rendering",
         "label": "Real-Time Rendering"
+      },
+      {
+        "id": "urn:ngm:class:hlsl",
+        "label": "HLSL"
       }
     ],
     "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:vulkan-api",
+        "label": "Vulkan API"
+      },
+      {
+        "id": "urn:ngm:class:directx-12",
+        "label": "DirectX 12"
+      },
+      {
+        "id": "urn:ngm:class:webgpu",
+        "label": "WebGPU"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:gpu-pipeline",
+        "label": "GPU Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:gpgpu",
+        "label": "GPGPU"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cuda",
+        "label": "CUDA"
+      },
+      {
+        "id": "urn:ngm:class:opencl",
+        "label": "OpenCL"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -62,34 +62,64 @@ public:: true
   "@id": "urn:ngm:class:scene-understanding",
   "@type": "Class",
   "label": "Scene Understanding",
-  "definition": "Scene Understanding is the high-level semantic interpretation of visual and sensor data to comprehend the structure, context, objects, relationships, and dynamics of an environment.",
+  "definition": "Scene Understanding is the high-level semantic interpretation of visual and sensor data to comprehend the structure, context, objects, relationships, and dynamics of an environment. It encompasses object detection and recognition, spatial layout inference, activity recognition, contextual reasoning, and semantic scene categorisation, enabling autonomous and interactive systems to make contextually appropriate decisions.",
   "domain": "spatial-computing",
-  "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:sc-interaction",
-      "label": "Interaction Technology"
-    }
-  ],
+  "maturity": "emerging",
+  "subClassOf": {
+    "@id": "urn:ngm:class:perception-system",
+    "label": "Perception System"
+  },
   "relations": {
-    "requires": [
+    "hasPart": [
       {"@id": "urn:ngm:class:semantic-segmentation", "label": "Semantic Segmentation"},
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}
+      {"@id": "urn:ngm:class:object-detection", "label": "Object Detection"},
+      {"@id": "urn:ngm:class:depth-estimation", "label": "Depth Estimation"},
+      {"@id": "urn:ngm:class:activity-recognition", "label": "Activity Recognition"},
+      {"@id": "urn:ngm:class:panoptic-segmentation", "label": "Panoptic Segmentation"}
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:perception-system", "label": "Perception System"}
+      {"@id": "urn:ngm:class:perception-system", "label": "Perception System"},
+      {"@id": "urn:ngm:class:autonomous-systems", "label": "Autonomous Systems"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
+      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:autonomous-vehicle", "label": "Autonomous Vehicle"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
+      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
+      {"@id": "urn:ngm:class:robot-navigation", "label": "Robot Navigation"},
+      {"@id": "urn:ngm:class:spatial-mapping", "label": "Spatial Mapping"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:graph-neural-network", "label": "Graph Neural Network"},
+      {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"},
+      {"@id": "urn:ngm:class:3d-point-cloud", "label": "3D Point Cloud"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:object-recognition", "label": "Object Recognition"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:robotics-perception", "label": "Robotics Perception"},
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
+      {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human-Computer Interaction"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:universal-scene-description", "label": "Universal Scene Description"},
+      {"@id": "urn:ngm:class:contextual-reasoning", "label": "Contextual Reasoning"}
     ]
   },
-  "maturity": "emerging",
-  "quality": 0.5,
+  "sameAs": [
+    {"@id": "urn:ngm:class:visual-scene-analysis", "label": "Visual Scene Analysis"},
+    {"@id": "urn:ngm:class:environment-perception", "label": "Environment Perception"}
+  ],
+  "quality": 0.70,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

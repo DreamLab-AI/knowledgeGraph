@@ -54,17 +54,45 @@ public:: true
   "@id": "urn:ngm:class:alan-turing-institute",
   "@type": "Class",
   "label": "Alan Turing Institute",
-  "definition": "The United Kingdom's national institute for data science and artificial intelligence, founded in 2015 and headquartered in London.",
+  "definition": "The United Kingdom's national institute for data science and artificial intelligence, founded in 2015 and headquartered in London, convening research across partner universities and applying AI and data science methods to challenges in health, defence, security, and the public sector.",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:entity",
-      "label": "Entity"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:research-institute",
+    "label": "Research Institute"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:data-science-programme",
+        "label": "Data Science Programme"
+      },
+      {
+        "@id": "urn:ngm:class:ai-safety-research",
+        "label": "AI Safety Research"
+      },
+      {
+        "@id": "urn:ngm:class:public-policy-programme",
+        "label": "Public Policy Programme"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:uk-national-ai-strategy",
+        "label": "UK National AI Strategy"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:university-partnership",
+        "label": "University Partnership"
+      },
+      {
+        "@id": "urn:ngm:class:government-funding",
+        "label": "Government Funding"
+      }
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:artificial-intelligence",
@@ -73,14 +101,96 @@ public:: true
       {
         "@id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "@id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:data-science",
+        "label": "Data Science"
+      },
+      {
+        "@id": "urn:ngm:class:open-source-software",
+        "label": "Open Source Software"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:reproducible-research",
+        "label": "Reproducible Research"
+      },
+      {
+        "@id": "urn:ngm:class:open-data",
+        "label": "Open Data"
+      },
+      {
+        "@id": "urn:ngm:class:national-health-service",
+        "label": "National Health Service"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:university-college-london",
+        "label": "University College London"
+      },
+      {
+        "@id": "urn:ngm:class:university-of-oxford",
+        "label": "University of Oxford"
+      },
+      {
+        "@id": "urn:ngm:class:uk-research-and-innovation",
+        "label": "UK Research and Innovation"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:private-ai-laboratory",
+        "label": "Private AI Laboratory"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:defence-and-security",
+        "label": "Defence and Security"
+      },
+      {
+        "@id": "urn:ngm:class:digital-health",
+        "label": "Digital Health"
+      },
+      {
+        "@id": "urn:ngm:class:public-sector-data",
+        "label": "Public Sector Data"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:alan-turing",
+        "label": "Alan Turing"
+      },
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:turing-institute",
+      "label": "Turing Institute"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

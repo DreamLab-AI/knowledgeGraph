@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:api-standard",
   "domain": "infrastructure",
-  "definition": "Specification defining how independent software components communicate within metaverse systems, establishing protocols and data formats for interoperability.",
+  "definition": "Specification defining how independent software components communicate, establishing protocols, data formats, versioning rules, and authentication mechanisms to ensure interoperability across systems and platforms.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-network-and-comms",
@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
     "hasPart": [
@@ -28,12 +28,20 @@
       {
         "id": "urn:ngm:class:communication-protocol",
         "label": "Communication Protocol"
+      },
+      {
+        "id": "urn:ngm:class:api-versioning",
+        "label": "API Versioning"
       }
     ],
     "requires": [
       {
         "id": "urn:ngm:class:technical-specification-document",
         "label": "Technical Specification Document"
+      },
+      {
+        "id": "urn:ngm:class:schema-definition",
+        "label": "Schema Definition"
       }
     ],
     "enables": [
@@ -44,22 +52,97 @@
       {
         "id": "urn:ngm:class:system-interoperability",
         "label": "System Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:microservices-architecture",
+        "label": "Microservices Architecture"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:network-transport-layer",
+        "label": "Network Transport Layer"
+      },
+      {
+        "id": "urn:ngm:class:identity-and-access-management",
+        "label": "Identity and Access Management"
+      }
+    ],
     "implements": [
       {
-        "id": "urn:ngm:class:technology-infrastructure-domain",
-        "label": "infrastructure"
+        "id": "urn:ngm:class:openapi-specification",
+        "label": "OpenAPI Specification"
+      },
+      {
+        "id": "urn:ngm:class:rest-architectural-style",
+        "label": "REST Architectural Style"
       }
     ],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:proprietary-interface",
+        "label": "Proprietary Interface"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-smart-contract",
+        "label": "Blockchain Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing-runtime",
+        "label": "Spatial Computing Runtime"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:json-data-format",
+        "label": "JSON Data Format"
+      },
+      {
+        "id": "urn:ngm:class:http-protocol",
+        "label": "HTTP Protocol"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      },
+      {
+        "id": "urn:ngm:class:developer-portal",
+        "label": "Developer Portal"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      },
+      {
+        "id": "urn:ngm:class:w3c",
+        "label": "W3C"
+      },
+      {
+        "id": "urn:ngm:class:oma3",
+        "label": "OMA3"
+      },
+      {
+        "id": "urn:ngm:class:etsi",
+        "label": "ETSI"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:service-mesh",
+        "label": "Service Mesh"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -49,30 +49,64 @@ public:: true
   "definition": "Robot Kinematics is the mathematical study of the geometry of robot motion—comprising forward kinematics (mapping joint parameters to end-effector pose) and inverse kinematics (computing joint configurations that achieve a desired pose)—without regard to the forces or torques that produce that motion. It is foundational to robot programming, trajectory planning, and the design of manipulation systems.",
   "domain": "robotics",
   "maturity": "emerging",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:robo-actuation-and-control",
-      "label": "Actuation and Control"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:robo-actuation-and-control",
+    "label": "Actuation and Control"
+  },
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:robotics", "label": "Robotics"}
+      {"@id": "urn:ngm:class:robotics", "label": "Robotics"},
+      {"@id": "urn:ngm:class:robot-dynamics", "label": "Robot Dynamics"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:forward-kinematics", "label": "Forward Kinematics"},
+      {"@id": "urn:ngm:class:inverse-kinematics", "label": "Inverse Kinematics"},
+      {"@id": "urn:ngm:class:denavit-hartenberg-convention", "label": "Denavit-Hartenberg Convention"},
+      {"@id": "urn:ngm:class:jacobian-matrix", "label": "Jacobian Matrix"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:transformation-matrix", "label": "Transformation Matrix"},
+      {"@id": "urn:ngm:class:degrees-of-freedom", "label": "Degrees of Freedom"},
+      {"@id": "urn:ngm:class:coordinate-frames", "label": "Coordinate Frames"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"},
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"}
+      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
+      {"@id": "urn:ngm:class:trajectory-planning", "label": "Trajectory Planning"},
+      {"@id": "urn:ngm:class:robot-programming", "label": "Robot Programming"},
+      {"@id": "urn:ngm:class:end-effector-control", "label": "End-Effector Control"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:linear-algebra", "label": "Linear Algebra"},
+      {"@id": "urn:ngm:class:quaternion-representation", "label": "Quaternion Representation"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:robot-dynamics", "label": "Robot Dynamics"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:iso-8373", "label": "ISO 8373"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
+      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:surgical-robot", "label": "Surgical Robot"},
-      {"@id": "urn:ngm:class:service-robot", "label": "Service Robot"}
+      {"@id": "urn:ngm:class:service-robot", "label": "Service Robot"},
+      {"@id": "urn:ngm:class:industrial-manipulator", "label": "Industrial Manipulator"},
+      {"@id": "urn:ngm:class:humanoid-robot", "label": "Humanoid Robot"},
+      {"@id": "urn:ngm:class:soft-robotics", "label": "Soft Robotics"}
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {"@id": "urn:ngm:class:kinematic-analysis-of-robots", "label": "Kinematic Analysis of Robots"},
+    {"@id": "urn:ngm:class:robotic-kinematics", "label": "Robotic Kinematics"}
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

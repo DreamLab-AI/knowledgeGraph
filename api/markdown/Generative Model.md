@@ -50,16 +50,10 @@ alias:: GenerativeModel
   "definition": "A class of machine learning models that learn the underlying probability distribution of training data and can sample novel instances from that distribution. Architectures include generative adversarial networks, variational autoencoders, diffusion models, normalising flows, and autoregressive transformers, covering domains such as text, image, audio, and code generation.",
   "domain": "artificial-intelligence",
   "maturity": "established",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:ai-model-architecture",
-      "label": "AI Model Architecture"
-    },
-    {
-      "@id": "urn:ngm:class:machine-learning-discipline",
-      "label": "Machine Learning"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:machine-learning-discipline",
+    "label": "Machine Learning"
+  },
   "relations": {
     "hasPart": [
       {"@id": "urn:ngm:class:generative-adversarial-network", "label": "Generative Adversarial Network"},
@@ -67,22 +61,50 @@ alias:: GenerativeModel
       {"@id": "urn:ngm:class:diffusion-model", "label": "Diffusion Model"},
       {"@id": "urn:ngm:class:latent-diffusion", "label": "Latent Diffusion"},
       {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:deep-generative-model", "label": "Deep Generative Model"}
+      {"@id": "urn:ngm:class:deep-generative-model", "label": "Deep Generative Model"},
+      {"@id": "urn:ngm:class:variational-autoencoder", "label": "Variational Autoencoder"},
+      {"@id": "urn:ngm:class:normalising-flow", "label": "Normalising Flow"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:training-data", "label": "Training Data"},
+      {"@id": "urn:ngm:class:probability-distribution", "label": "Probability Distribution"},
+      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:text-generation", "label": "Text Generation"},
-      {"@id": "urn:ngm:class:image-generation", "label": "Image Generation"}
+      {"@id": "urn:ngm:class:image-generation", "label": "Image Generation"},
+      {"@id": "urn:ngm:class:audio-synthesis", "label": "Audio Synthesis"},
+      {"@id": "urn:ngm:class:code-generation", "label": "Code Generation"},
+      {"@id": "urn:ngm:class:data-augmentation", "label": "Data Augmentation"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
+      {"@id": "urn:ngm:class:unsupervised-learning", "label": "Unsupervised Learning"},
+      {"@id": "urn:ngm:class:latent-space", "label": "Latent Space"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:discriminative-model", "label": "Discriminative Model"},
+      {"@id": "urn:ngm:class:supervised-learning", "label": "Supervised Learning"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:transformer", "label": "Transformer"}
+      {"@id": "urn:ngm:class:transformer", "label": "Transformer"},
+      {"@id": "urn:ngm:class:foundation-model", "label": "Foundation Model"},
+      {"@id": "urn:ngm:class:reinforcement-learning-from-human-feedback", "label": "Reinforcement Learning from Human Feedback"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:synthetic-data", "label": "Synthetic Data"},
+      {"@id": "urn:ngm:class:content-creation", "label": "Content Creation"}
     ]
   },
+  "sameAs": [
+    {"@id": "urn:ngm:class:deep-generative-model", "label": "Deep Generative Model"},
+    {"@id": "urn:ngm:class:probabilistic-generative-model", "label": "Probabilistic Generative Model"}
+  ],
   "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

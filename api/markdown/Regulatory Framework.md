@@ -51,32 +51,148 @@ alias:: RegulatoryFramework
   "@id": "urn:ngm:class:regulatory-framework",
   "@type": "Class",
   "label": "Regulatory Framework",
-  "definition": "A regulatory framework for blockchain and cryptoassets comprises the laws, regulations, guidelines, and supervisory structures established by governmental authorities to govern the issuance, trading, and custody of digital assets.",
-  "domain": "infrastructure",
+  "definition": "A regulatory framework for blockchain and cryptoassets comprises the laws, regulations, guidelines, and supervisory structures established by governmental authorities to govern the issuance, trading, and custody of digital assets. These frameworks address consumer protection, market integrity, anti-money laundering compliance, and financial stability whilst balancing innovation enablement with risk mitigation.",
+  "domain": "governance",
   "maturity": "emerging",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:infra-legal-and-regulatory",
-      "label": "Legal and Regulatory"
-    },
-    {
-      "@id": "urn:ngm:class:legal-framework",
-      "label": "Legal Framework"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:legal-framework",
+    "label": "Legal Framework"
+  },
   "relations": {
     "enables": [
       {
         "@id": "urn:ngm:class:market-integrity",
         "label": "Market Integrity"
+      },
+      {
+        "@id": "urn:ngm:class:consumer-protection",
+        "label": "Consumer Protection"
+      },
+      {
+        "@id": "urn:ngm:class:institutional-adoption",
+        "label": "Institutional Adoption"
+      },
+      {
+        "@id": "urn:ngm:class:financial-stability",
+        "label": "Financial Stability"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:licensing",
+        "label": "Licensing"
+      },
+      {
+        "@id": "urn:ngm:class:know-your-customer",
+        "label": "Know Your Customer"
+      },
+      {
+        "@id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:prudential-regulation",
+        "label": "Prudential Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:disclosure-requirements",
+        "label": "Disclosure Requirements"
+      },
+      {
+        "@id": "urn:ngm:class:enforcement-mechanism",
+        "label": "Enforcement Mechanism"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:financial-action-task-force",
+        "label": "Financial Action Task Force"
+      },
+      {
+        "@id": "urn:ngm:class:bank-for-international-settlements",
+        "label": "Bank for International Settlements"
+      },
+      {
+        "@id": "urn:ngm:class:international-organization-of-securities-commissions",
+        "label": "International Organization of Securities Commissions"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:eu-mi-ca-regulation",
+        "label": "EU MiCA Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:genius-act",
+        "label": "GENIUS Act"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:regulatory-arbitrage",
+        "label": "Regulatory Arbitrage"
+      },
+      {
+        "@id": "urn:ngm:class:self-regulation",
+        "label": "Self-Regulation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:legal-jurisdiction",
+        "label": "Legal Jurisdiction"
+      },
+      {
+        "@id": "urn:ngm:class:supervisory-authority",
+        "label": "Supervisory Authority"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      },
+      {
+        "@id": "urn:ngm:class:cryptoasset",
+        "label": "Cryptoasset"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:decentralized-finance",
+        "label": "Decentralized Finance"
+      },
+      {
+        "@id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:regulatory-regime",
+      "label": "Regulatory Regime"
+    },
+    {
+      "@id": "urn:ngm:class:compliance-framework",
+      "label": "Compliance Framework"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

@@ -21,7 +21,7 @@ public:: true
   "@type": "Class",
   "label": "Scope 3 Emissions",
   "definition": "Scope 3 emissions are the indirect greenhouse gas (GHG) emissions that occur across an organisation's value chain as a consequence of its activities but outside its operational boundary, encompassing both upstream sources such as purchased goods and services, capital goods, and business travel, and downstream sources such as the use and end-of-life treatment of sold products. Defined under Category 3 of the GHG Protocol Corporate Standard, Scope 3 emissions typically constitute the largest share of a company's total carbon footprint — often exceeding 70 percent — making their measurement, reporting, and reduction critical to credible corporate climate strategies. Accurate Scope 3 accounting requires collaboration across supply chains and the use of spend-based, activity-based, or supplier-specific emission factors.",
-  "domain": "governance",
+  "domain": "supply-chain",
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:carbon-accounting", "label": "Carbon Accounting"}],
   "relations": {
@@ -29,18 +29,53 @@ public:: true
       {"@id": "urn:ngm:class:scope-1-emissions", "label": "Scope 1 Emissions"},
       {"@id": "urn:ngm:class:scope-2-emissions", "label": "Scope 2 Emissions"},
       {"@id": "urn:ngm:class:ghg-protocol", "label": "GHG Protocol"},
-      {"@id": "urn:ngm:class:supply-chain", "label": "Supply Chain"}
+      {"@id": "urn:ngm:class:supply-chain", "label": "Supply Chain"},
+      {"@id": "urn:ngm:class:corporate-climate-strategy", "label": "Corporate Climate Strategy"},
+      {"@id": "urn:ngm:class:financed-emissions", "label": "Financed Emissions"},
+      {"@id": "urn:ngm:class:embodied-carbon", "label": "Embodied Carbon"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:esg-reporting", "label": "ESG Reporting"},
-      {"@id": "urn:ngm:class:sustainability-reporting", "label": "SustainabilityReporting"}
+      {"@id": "urn:ngm:class:sustainability-reporting", "label": "Sustainability Reporting"},
+      {"@id": "urn:ngm:class:net-zero-commitments", "label": "Net-Zero Commitments"},
+      {"@id": "urn:ngm:class:supplier-decarbonisation", "label": "Supplier Decarbonisation"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:emission-factors", "label": "Emission Factors"},
-      {"@id": "urn:ngm:class:environmental-accounting", "label": "Environmental Accounting"}
+      {"@id": "urn:ngm:class:environmental-accounting", "label": "Environmental Accounting"},
+      {"@id": "urn:ngm:class:life-cycle-assessment", "label": "Life Cycle Assessment"},
+      {"@id": "urn:ngm:class:spend-based-method", "label": "Spend-Based Method"},
+      {"@id": "urn:ngm:class:activity-based-costing", "label": "Activity-Based Costing"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:ghg-protocol-scope-3-standard", "label": "GHG Protocol Scope 3 Standard"},
+      {"@id": "urn:ngm:class:ifrs-s2", "label": "IFRS S2"},
+      {"@id": "urn:ngm:class:corporate-sustainability-reporting-directive", "label": "Corporate Sustainability Reporting Directive"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:supplier-data-collection", "label": "Supplier Data Collection"},
+      {"@id": "urn:ngm:class:value-chain-transparency", "label": "Value Chain Transparency"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:scope-1-emissions", "label": "Scope 1 Emissions"},
+      {"@id": "urn:ngm:class:scope-2-emissions", "label": "Scope 2 Emissions"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:digital-product-passport", "label": "Digital Product Passport"},
+      {"@id": "urn:ngm:class:blockchain-provenance-tracking", "label": "Blockchain Provenance Tracking"},
+      {"@id": "urn:ngm:class:supply-chain-analytics", "label": "Supply Chain Analytics"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:value-chain-emissions", "label": "Value Chain Emissions"},
+    {"@id": "urn:ngm:class:indirect-emissions-scope-3", "label": "Indirect Emissions Scope 3"}
+  ],
+  "quality": 0.75,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

@@ -94,16 +94,32 @@ public:: true
   "@id": "urn:ngm:class:medical-ai",
   "@type": "Class",
   "label": "Medical AI",
-  "definition": "Medical AI encompasses artificial intelligence and machine learning applications in healthcare for disease detection, diagnosis, treatment planning, and clinical decision support.",
+  "definition": "Medical AI encompasses artificial intelligence and machine learning applications in healthcare for disease detection, diagnosis, treatment planning, clinical decision support, drug discovery, and patient outcome prediction, subject to medical-device regulation and clinical validation requirements.",
   "domain": "artificial-intelligence",
   "maturity": "established",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:ai-application",
-      "label": "AI Application"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:ai-application",
+    "label": "AI Application"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:medical-imaging-ai",
+        "label": "Medical Imaging AI"
+      },
+      {
+        "@id": "urn:ngm:class:clinical-decision-support",
+        "label": "Clinical Decision Support"
+      },
+      {
+        "@id": "urn:ngm:class:medical-diagnosis-ai",
+        "label": "Medical Diagnosis AI"
+      },
+      {
+        "@id": "urn:ngm:class:healthcare-analytics",
+        "label": "Healthcare Analytics"
+      }
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:drug-discovery",
@@ -118,22 +134,108 @@ public:: true
         "label": "Personalized Medicine"
       },
       {
-        "@id": "urn:ngm:class:clinical-decision-support",
-        "label": "Clinical Decision Support"
+        "@id": "urn:ngm:class:precision-medicine",
+        "label": "Precision Medicine"
+      },
+      {
+        "@id": "urn:ngm:class:early-disease-detection",
+        "label": "Early Disease Detection"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:clinical-validation",
+        "label": "Clinical Validation"
+      },
+      {
+        "@id": "urn:ngm:class:medical-data-governance",
+        "label": "Medical Data Governance"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "@id": "urn:ngm:class:uncertainty-quantification",
+        "label": "Uncertainty Quantification"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:fda-samd-guidance",
+        "label": "FDA SaMD Guidance"
+      },
+      {
+        "@id": "urn:ngm:class:iec-62304",
+        "label": "IEC 62304"
+      },
+      {
+        "@id": "urn:ngm:class:hl7-fhir",
+        "label": "HL7 FHIR"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:general-purpose-ai",
+        "label": "General-Purpose AI"
       }
     ],
     "bridgesTo": [
       {
         "@id": "urn:ngm:class:healthcare-technology",
         "label": "Healthcare Technology"
+      },
+      {
+        "@id": "urn:ngm:class:genomics",
+        "label": "Genomics"
+      },
+      {
+        "@id": "urn:ngm:class:robotic-surgery",
+        "label": "Robotic Surgery"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:electronic-health-record",
+        "label": "Electronic Health Record"
+      },
+      {
+        "@id": "urn:ngm:class:telemedicine",
+        "label": "Telemedicine"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:healthcare-ai",
+      "label": "Healthcare AI"
+    },
+    {
+      "@id": "urn:ngm:class:clinical-ai",
+      "label": "Clinical AI"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

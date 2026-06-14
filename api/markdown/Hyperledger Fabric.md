@@ -99,28 +99,150 @@ alias:: BC-0067-hyperledger-fabric, BC-0426-hyperledger-fabric, HyperledgerFabri
   "@id": "urn:ngm:class:hyperledger-fabric",
   "@type": "Class",
   "label": "Hyperledger Fabric",
-  "definition": "Permissioned blockchain framework enabling enterprise consortia to build modular, confidential systems through PrivateChannels, SmartContract|chaincode, and pluggable consensus mechanisms.",
+  "definition": "Permissioned blockchain framework enabling enterprise consortia to build modular, confidential distributed-ledger systems through private channels, chaincode (smart contracts), pluggable consensus mechanisms, and membership service providers enforcing identity and access control.",
   "domain": "blockchain",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:bc-network-component",
-      "label": "Network Component"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:permissioned-blockchain",
+    "label": "Permissioned Blockchain"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:chaincode",
+        "label": "Chaincode"
+      },
+      {
+        "@id": "urn:ngm:class:private-channels",
+        "label": "Private Channels"
+      },
+      {
+        "@id": "urn:ngm:class:membership-service-provider",
+        "label": "Membership Service Provider"
+      },
+      {
+        "@id": "urn:ngm:class:ordering-service",
+        "label": "Ordering Service"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:hyperledger-foundation",
+        "label": "Hyperledger Foundation"
+      },
+      {
+        "@id": "urn:ngm:class:enterprise-blockchain-architecture",
+        "label": "Enterprise Blockchain Architecture"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:certificate-authority",
+        "label": "Certificate Authority"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:supply-chain-traceability",
+        "label": "Supply Chain Traceability"
+      },
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "@id": "urn:ngm:class:confidential-transaction",
+        "label": "Confidential Transaction"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:execute-order-validate",
+        "label": "Execute-Order-Validate Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
     "uses": [
       {
         "@id": "urn:ngm:class:private-channels",
-        "label": "PrivateChannels"
+        "label": "Private Channels"
+      },
+      {
+        "@id": "urn:ngm:class:raft-consensus",
+        "label": "Raft Consensus"
+      },
+      {
+        "@id": "urn:ngm:class:practical-byzantine-fault-tolerance",
+        "label": "Practical Byzantine Fault Tolerance"
+      },
+      {
+        "@id": "urn:ngm:class:gossip-protocol",
+        "label": "Gossip Protocol"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:pluggable-consensus",
+        "label": "Pluggable Consensus"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:public-blockchain",
+        "label": "Public Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:hyperledger-besu",
+        "label": "Hyperledger Besu"
+      },
+      {
+        "@id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      },
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
       }
     ]
   },
-  "quality": 0.4,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:fabric-blockchain",
+      "label": "Fabric Blockchain"
+    },
+    {
+      "@id": "urn:ngm:class:hl-fabric",
+      "label": "HL Fabric"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

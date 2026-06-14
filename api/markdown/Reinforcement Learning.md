@@ -83,35 +83,66 @@ alias:: ReinforcementLearning
   "@id": "urn:ngm:class:reinforcement-learning",
   "@type": "Class",
   "label": "Reinforcement Learning",
-  "definition": "Reinforcement learning is a machine learning paradigm in which agents learn optimal BC-0452-policy|policies through interaction with an environment, receiving reward signals for actions and iteratively improving their decision-making through trial and error.",
-  "domain": "artificial-intelligence",
+  "definition": "Reinforcement learning is a machine learning paradigm in which agents learn optimal policies through interaction with an environment, receiving reward signals for actions and iteratively improving their decision-making through trial and error, encompassing model-free and model-based methods, policy gradient techniques, and value-based approaches.",
+  "domain": "machine-learning",
   "maturity": "emerging",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:ai-research-area",
-      "label": "AI Research Area"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:machine-learning",
+    "label": "Machine Learning"
+  },
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"}
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:policy-gradient-method", "label": "Policy Gradient Method"},
+      {"@id": "urn:ngm:class:q-learning", "label": "Q-Learning"},
+      {"@id": "urn:ngm:class:temporal-difference-learning", "label": "Temporal Difference Learning"},
+      {"@id": "urn:ngm:class:value-function", "label": "Value Function"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:reward-signal", "label": "Reward Signal"},
+      {"@id": "urn:ngm:class:markov-decision-process", "label": "Markov Decision Process"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"},
-      {"@id": "urn:ngm:class:autonomous-robot", "label": "Autonomous Robot"}
+      {"@id": "urn:ngm:class:autonomous-robot", "label": "Autonomous Robot"},
+      {"@id": "urn:ngm:class:game-playing-agent", "label": "Game Playing Agent"},
+      {"@id": "urn:ngm:class:recommendation-system", "label": "Recommendation System"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
+      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
+      {"@id": "urn:ngm:class:model-based-planning", "label": "Model-Based Planning"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:bellman-equation", "label": "Bellman Equation"},
+      {"@id": "urn:ngm:class:exploration-exploitation-tradeoff", "label": "Exploration-Exploitation Tradeoff"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:supervised-learning", "label": "Supervised Learning"},
+      {"@id": "urn:ngm:class:unsupervised-learning", "label": "Unsupervised Learning"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:robotic-control", "label": "Robotic Control"},
+      {"@id": "urn:ngm:class:autonomous-vehicle", "label": "Autonomous Vehicle"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:reinforcement-learning-from-human-feedback", "label": "Reinforcement Learning from Human Feedback"}
+      {"@id": "urn:ngm:class:reinforcement-learning-from-human-feedback", "label": "Reinforcement Learning from Human Feedback"},
+      {"@id": "urn:ngm:class:multi-agent-system", "label": "Multi-Agent System"},
+      {"@id": "urn:ngm:class:imitation-learning", "label": "Imitation Learning"}
     ]
   },
-  "quality": 0.4,
+  "sameAs": [
+    {"@id": "urn:ngm:class:sequential-decision-learning", "label": "Sequential Decision Learning"},
+    {"@id": "urn:ngm:class:trial-and-error-learning", "label": "Trial and Error Learning"}
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

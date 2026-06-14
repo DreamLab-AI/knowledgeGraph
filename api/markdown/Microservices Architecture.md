@@ -52,33 +52,155 @@ alias:: MicroservicesArchitecture
   "@type": "Class",
   "label": "Microservices Architecture",
   "definition": "A distributed software architecture pattern that decomposes applications into independent, loosely coupled services communicating via APIs, enabling high concurrency, scalability, and resilience through containerisation technologies like Docker and orchestration platforms like Kubernetes.",
-  "domain": "infrastructure",
+  "domain": "distributed-systems",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:infra-software-engineering",
-      "label": "Software Engineering"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:system-architecture",
+    "label": "System Architecture"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      },
+      {
+        "@id": "urn:ngm:class:service-mesh",
+        "label": "Service Mesh"
+      },
+      {
+        "@id": "urn:ngm:class:container",
+        "label": "Container"
+      },
+      {
+        "@id": "urn:ngm:class:message-broker",
+        "label": "Message Broker"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:cloud-native-computing",
+        "label": "Cloud-Native Computing"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:container-orchestration",
+        "label": "Container Orchestration"
+      },
+      {
+        "@id": "urn:ngm:class:continuous-integration-and-delivery",
+        "label": "Continuous Integration and Delivery"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-tracing",
+        "label": "Distributed Tracing"
+      }
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:scalable-applications",
         "label": "Scalable Applications"
+      },
+      {
+        "@id": "urn:ngm:class:fault-isolation",
+        "label": "Fault Isolation"
+      },
+      {
+        "@id": "urn:ngm:class:independent-deployability",
+        "label": "Independent Deployability"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
+      },
+      {
+        "@id": "urn:ngm:class:docker",
+        "label": "Docker"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:domain-driven-design",
+        "label": "Domain-Driven Design"
+      },
+      {
+        "@id": "urn:ngm:class:event-driven-architecture",
+        "label": "Event-Driven Architecture"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:rest-api",
+        "label": "REST API"
+      },
+      {
+        "@id": "urn:ngm:class:grpc",
+        "label": "gRPC"
+      },
+      {
+        "@id": "urn:ngm:class:saga-pattern",
+        "label": "Saga Pattern"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:devops",
+        "label": "DevOps"
+      },
+      {
+        "@id": "urn:ngm:class:observability",
+        "label": "Observability"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:monolithic-architecture",
+        "label": "Monolithic Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:service-oriented-architecture",
+        "label": "Service-Oriented Architecture"
       }
     ],
     "bridgesTo": [
       {
-        "@id": "urn:ngm:class:system-architecture",
-        "label": "System Architecture"
+        "@id": "urn:ngm:class:serverless-computing",
+        "label": "Serverless Computing"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:twelve-factor-app",
+        "label": "Twelve-Factor App"
+      },
+      {
+        "@id": "urn:ngm:class:circuit-breaker-pattern",
+        "label": "Circuit Breaker Pattern"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:microservices",
+      "label": "Microservices"
+    },
+    {
+      "@id": "urn:ngm:class:micro-services-pattern",
+      "label": "Micro-Services Pattern"
+    }
+  ],
+  "quality": 0.70,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

@@ -182,38 +182,65 @@ public:: true
   "@id": "urn:ngm:class:text-generation",
   "@type": "Class",
   "label": "Text Generation",
-  "definition": "Text Generation is the NLP task of producing coherent, contextually appropriate natural language text using neural language models, including applications such as story generation, article writing, code generation, and creative content production.",
-  "domain": "spatial-computing",
+  "definition": "Text Generation is the NLP task of producing coherent, contextually appropriate natural language text using neural language models, including applications such as story generation, article writing, code generation, and creative content production. Modern text generation employs transformer-based language models with autoregressive or sequence-to-sequence architectures, controllable generation techniques, and prompt engineering to produce human-quality text across diverse domains and styles.",
+  "domain": "artificial-intelligence",
   "maturity": "emerging",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:sc-content-and-assets",
-      "label": "Content and Assets"
-    },
-    {
-      "@id": "urn:ngm:class:language-modeling",
-      "label": "Language Modeling"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:language-modeling",
+    "label": "Language Modeling"
+  },
   "relations": {
     "requires": [
       {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:transformer", "label": "Transformer"}
+      {"@id": "urn:ngm:class:transformer", "label": "Transformer"},
+      {"@id": "urn:ngm:class:neural-networks", "label": "Neural Networks"},
+      {"@id": "urn:ngm:class:training-data", "label": "Training Data"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
-      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"}
+      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
+      {"@id": "urn:ngm:class:code-generation", "label": "Code Generation"},
+      {"@id": "urn:ngm:class:summarisation", "label": "Summarisation"},
+      {"@id": "urn:ngm:class:translation", "label": "Translation"},
+      {"@id": "urn:ngm:class:question-answering", "label": "Question Answering"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:sampling", "label": "Sampling"},
-      {"@id": "urn:ngm:class:prompt-engineering", "label": "Prompt Engineering"}
+      {"@id": "urn:ngm:class:prompt-engineering", "label": "Prompt Engineering"},
+      {"@id": "urn:ngm:class:tokenisation", "label": "Tokenisation"},
+      {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"},
+      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine-Tuning"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:autoregressive-generation", "label": "Autoregressive Generation"},
+      {"@id": "urn:ngm:class:beam-search", "label": "Beam Search"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:language-modeling", "label": "Language Modeling"},
+      {"@id": "urn:ngm:class:latent-space", "label": "Latent Space"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:image-generation", "label": "Image Generation"},
+      {"@id": "urn:ngm:class:speech-and-voice", "label": "Speech and Voice"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:agent-frameworks", "label": "Agent Frameworks"},
+      {"@id": "urn:ngm:class:knowledge-graphing", "label": "Knowledge Graphing"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:gpt", "label": "GPT"},
+      {"@id": "urn:ngm:class:deepfakes-and-fraudulent-content", "label": "Deepfakes and Fraudulent Content"}
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {"@id": "urn:ngm:class:natural-language-generation", "label": "Natural Language Generation"},
+    {"@id": "urn:ngm:class:language-generation", "label": "Language Generation"}
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

@@ -7,7 +7,32 @@
   - belongs-to-domain:: [[BlockchainDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses:: [[Smart Contract]]
+  - uses:: [[Distributed Ledger Technology]]
+  - uses:: [[Internet of Things]]
+  - uses:: [[Audit Trail]]
+  - uses:: [[Immutability]]
+  - uses:: [[Cryptographic Hash]]
+  - uses:: [[Digital Signature]]
+  - hasPart:: [[Supply Chain Traceability]]
+  - hasPart:: [[Traceability Mechanism]]
+  - hasPart:: [[Chain of Custody]]
+  - requires:: [[Permissioned Blockchain]]
+  - requires:: [[Data Integrity]]
+  - requires:: [[Identity Management]]
+  - enables:: [[Food Safety Blockchain]]
+  - enables:: [[Pharmaceutical Traceability]]
+  - enables:: [[Luxury Goods Authentication]]
+  - enables:: [[Regulatory Compliance]]
+  - implements:: [[EPCIS]]
+  - implements:: [[GS1 Standards]]
+  - implements:: [[W3C PROV]]
+  - relatedTo:: [[Supply Chain Blockchain]]
+  - relatedTo:: [[Supply Chain Management]]
+  - relatedTo:: [[Blockchain Compliance]]
+  - contrastsWith:: [[Centralised Database]]
+  - bridgesTo:: [[AI Model Governance]]
+  - bridgesTo:: [[Data Lineage]]
 
 - ### Content
   - Provenance tracking represents one of blockchain technology's most transformative applications, addressing fundamental challenges in supply chain transparency, authenticity verification, and consumer trust across multiple industries. Traditional supply chains rely on fragmented record-keeping systems where each participant maintains separate databases, creating information silos that make it nearly impossible to verify the complete journey of products from origin to consumer. This opacity enables fraud, counterfeiting, and ethical violations whilst hindering rapid response to safety incidents. [[Blockchain]] technology fundamentally transforms this landscape by creating immutable, shared records of product journeys that all authorised participants can access whilst maintaining data integrity and security.

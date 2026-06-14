@@ -59,38 +59,72 @@ alias:: AutonomousNavigation
   "@id": "urn:ngm:class:autonomous-navigation",
   "@type": "Class",
   "label": "Autonomous Navigation",
-  "definition": "Autonomous Navigation encompasses the complete system capability for a robot or autonomous agent to move from one location to another without human guidance, integrating perception, localisation, mapping, path planning, obstacle avoidance, and control.",
-  "domain": "spatial-computing",
+  "definition": "Autonomous Navigation encompasses the complete system capability for a robot or autonomous agent to move from one location to another without human guidance, integrating perception, localisation, mapping, path planning, obstacle avoidance, and control. Autonomous navigation systems employ SLAM, sensor fusion, and AI-based decision-making to operate safely in unknown or dynamic environments.",
+  "domain": "robotics",
   "maturity": "emerging",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:sc-platform-and-environment",
-      "label": "Platform and Environment"
-    },
-    {
-      "@id": "urn:ngm:class:autonomous-agent",
-      "label": "Autonomous Agent"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:autonomous-agent",
+    "label": "Autonomous Agent"
+  },
   "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:localisation", "label": "Localisation"},
+      {"@id": "urn:ngm:class:obstacle-avoidance", "label": "Obstacle Avoidance"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:mobile-robotics", "label": "Mobile Robotics"}
+    ],
     "requires": [
       {"@id": "urn:ngm:class:slam", "label": "SLAM"},
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"}
+      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
+      {"@id": "urn:ngm:class:odometry", "label": "Odometry"},
+      {"@id": "urn:ngm:class:perception", "label": "Perception"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:path-planning", "label": "Path Planning"},
-      {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"}
+      {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"},
+      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
+      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
+      {"@id": "urn:ngm:class:lidar", "label": "LiDAR"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:autonomous-robot", "label": "Autonomous Robot"},
-      {"@id": "urn:ngm:class:autonomous-vehicle", "label": "Autonomous Vehicle"}
+      {"@id": "urn:ngm:class:autonomous-vehicle", "label": "Autonomous Vehicle"},
+      {"@id": "urn:ngm:class:unmanned-aerial-vehicle", "label": "Unmanned Aerial Vehicle"},
+      {"@id": "urn:ngm:class:delivery-robot", "label": "Delivery Robot"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:real-time-computing", "label": "Real-Time Computing"},
+      {"@id": "urn:ngm:class:coordinate-frame", "label": "Coordinate Frame"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:a-star-algorithm", "label": "A* Algorithm"},
+      {"@id": "urn:ngm:class:pid-controller", "label": "PID Controller"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human-Robot Interaction"},
+      {"@id": "urn:ngm:class:search-and-rescue-robotics", "label": "Search and Rescue Robotics"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:teleoperation", "label": "Teleoperation"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
+      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:kalman-filter", "label": "Kalman Filter"}
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {"@id": "urn:ngm:class:robot-navigation", "label": "Robot Navigation"},
+    {"@id": "urn:ngm:class:autonomous-mobility", "label": "Autonomous Mobility"}
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```
@@ -153,10 +187,30 @@ alias:: AutonomousNavigation
   - bridges-to:: [[Autonomous Robot]] (rb)
   - requires:: [[SLAM]]
   - requires:: [[Sensor Fusion]]
+  - requires:: [[Odometry]]
+  - requires:: [[Perception]]
   - uses:: [[Path Planning]]
   - uses:: [[Motion Planning]]
+  - uses:: [[Reinforcement Learning]]
+  - uses:: [[Computer Vision]]
+  - uses:: [[LiDAR]]
   - enables:: [[Autonomous Robot]]
   - enables:: [[Autonomous Vehicle]]
+  - enables:: [[Unmanned Aerial Vehicle]]
+  - enables:: [[Delivery Robot]]
+  - hasPart:: [[Localisation]]
+  - hasPart:: [[Obstacle Avoidance]]
+  - partOf:: [[Mobile Robotics]]
+  - dependsOn:: [[Real-Time Computing]]
+  - dependsOn:: [[Coordinate Frame]]
+  - implements:: [[A* Algorithm]]
+  - implements:: [[PID Controller]]
+  - supports:: [[Human-Robot Interaction]]
+  - supports:: [[Search and Rescue Robotics]]
+  - contrastsWith:: [[Teleoperation]]
+  - bridgesTo:: [[Spatial Computing]]
+  - bridgesTo:: [[Digital Twin]]
+  - relatedTo:: [[Kalman Filter]]
 
 - ### Content
   - Autonomous Navigation encompasses the complete system capability for a robot or autonomous agent to move from one location to another without human guidance, integrating perception, localisation, mapping, path planning, obstacle avoidance, and control. Autonomous navigation systems employ SLAM, sensor fusion, and AI-based decision-making to operate in unknown or dynamic environments.

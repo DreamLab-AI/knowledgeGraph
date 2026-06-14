@@ -54,21 +54,31 @@ public:: true
   "@id": "urn:ngm:class:schnorr-signatures",
   "@type": "Class",
   "label": "Schnorr Signatures",
-  "definition": "A digital signature scheme based on the discrete logarithm problem, producing compact signatures with linear key and signature aggregation properties.",
+  "definition": "A digital signature scheme based on the discrete logarithm problem over elliptic curve groups, producing compact fixed-size signatures with linear aggregation properties that enable efficient multi-signature and threshold constructions.",
   "domain": "security",
   "maturity": "established",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:digital-signature",
-      "label": "Digital Signature"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:digital-signature",
+    "label": "Digital Signature"
+  },
   "relations": {
     "requires": [
       {
         "@id": "urn:ngm:class:elliptic-curve-cryptography",
         "label": "Elliptic Curve Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:discrete-logarithm-problem",
+        "label": "Discrete Logarithm Problem"
+      },
+      {
+        "@id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      },
+      {
+        "@id": "urn:ngm:class:random-oracle-model",
+        "label": "Random Oracle Model"
       }
     ],
     "enables": [
@@ -79,14 +89,96 @@ public:: true
       {
         "@id": "urn:ngm:class:taproot",
         "label": "Taproot"
+      },
+      {
+        "@id": "urn:ngm:class:key-aggregation",
+        "label": "Key Aggregation"
+      },
+      {
+        "@id": "urn:ngm:class:threshold-signature",
+        "label": "Threshold Signature"
+      },
+      {
+        "@id": "urn:ngm:class:batch-verification",
+        "label": "Batch Verification"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:bip-340",
+        "label": "BIP-340"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:secp256k1",
+        "label": "secp256k1"
+      },
+      {
+        "@id": "urn:ngm:class:commitment-scheme",
+        "label": "Commitment Scheme"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-preserving-protocol",
+        "label": "Privacy-Preserving Protocol"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:ecdsa",
+        "label": "ECDSA"
+      },
+      {
+        "@id": "urn:ngm:class:rsa-signature",
+        "label": "RSA Signature"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "@id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public Key Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:non-interactive-zero-knowledge",
+        "label": "Non-Interactive Zero-Knowledge"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:schnorr-signature",
+      "label": "Schnorr Signature"
+    },
+    {
+      "@id": "urn:ngm:class:bip340-signature",
+      "label": "BIP340 Signature"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

@@ -237,14 +237,6 @@ public:: true
     {
       "@id": "urn:ngm:class:infra-computing-and-cloud",
       "label": "Computing and Cloud"
-    },
-    {
-      "@id": "urn:ngm:class:infra-network-and-comms",
-      "label": "Infra Network And Comms"
-    },
-    {
-      "@id": "urn:ngm:class:infra-network-and-comms",
-      "label": "Infra Network And Comms"
     }
   ],
   "relations": {
@@ -321,9 +313,25 @@ public:: true
         "@id": "urn:ngm:class:vision-claw-agentic-container",
         "label": "VisionClaw Agentic Container"
       }
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:rust", "label": "Rust"},
+      {"@id": "urn:ngm:class:javascript", "label": "JavaScript"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:smart-contract-execution", "label": "Smart Contract Execution"},
+      {"@id": "urn:ngm:class:web-contracts", "label": "Web Contracts"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:cloudflare-workers", "label": "Cloudflare Workers"},
+      {"@id": "urn:ngm:class:runtime-environment", "label": "Runtime Environment"}
     ]
   },
-  "quality": 0.7,
+  "quality": 0.72,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

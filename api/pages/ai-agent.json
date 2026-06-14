@@ -4,7 +4,7 @@
   "slug": "ai-agent",
   "public": true,
   "classIri": "urn:ngm:class:ai-agent",
-  "domain": "artificial-intelligence",
+  "domain": "ai",
   "definition": "A software system that perceives its environment, makes decisions and takes actions to achieve goals, often using a language model together with tools and memory.",
   "subClassOf": [
     {
@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "growing",
   "relationships": {
     "hasPart": [],
@@ -25,23 +25,105 @@
       {
         "id": "urn:ngm:class:large-language-models",
         "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:memory-management",
+        "label": "Memory Management"
+      },
+      {
+        "id": "urn:ngm:class:reasoning-engine",
+        "label": "Reasoning Engine"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:automated-planning",
         "label": "Automated Planning"
+      },
+      {
+        "id": "urn:ngm:class:task-automation",
+        "label": "Task Automation"
+      },
+      {
+        "id": "urn:ngm:class:multi-agent-systems",
+        "label": "Multi-Agent Systems"
+      },
+      {
+        "id": "urn:ngm:class:workflow-orchestration",
+        "label": "Workflow Orchestration"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
+      },
+      {
+        "id": "urn:ngm:class:api-interface",
+        "label": "API Interface"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:react-pattern",
+        "label": "ReAct Pattern"
+      },
+      {
+        "id": "urn:ngm:class:sense-plan-act",
+        "label": "Sense-Plan-Act"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:chatbot",
+        "label": "Chatbot"
+      },
+      {
+        "id": "urn:ngm:class:rule-based-system",
+        "label": "Rule-Based System"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:robotic-process-automation",
+        "label": "Robotic Process Automation"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "id": "urn:ngm:class:function-calling",
+        "label": "Function Calling"
+      },
+      {
+        "id": "urn:ngm:class:chain-of-thought",
+        "label": "Chain of Thought"
+      },
+      {
+        "id": "urn:ngm:class:vector-database",
+        "label": "Vector Database"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
+    ]
   },
   "wikilinks": [
     {

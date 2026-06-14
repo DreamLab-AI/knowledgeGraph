@@ -122,50 +122,172 @@ public:: true
   "@id": "urn:ngm:class:cryptography",
   "@type": "Class",
   "label": "Cryptography",
-  "definition": "Cryptography is the mathematical science of transforming information through encryption, ensuring confidentiality, authenticity, and integrity in digital communications and blockchain systems.",
-  "domain": "infrastructure",
+  "definition": "Cryptography is the mathematical science of transforming information through encryption and related primitives, ensuring confidentiality, authenticity, and integrity in digital communications, blockchain systems, and distributed networks.",
+  "domain": "security",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:infra-security-and-identity",
-      "label": "Security and Identity"
-    },
-    {
-      "@id": "urn:ngm:class:cryptographic-security",
-      "label": "Cryptographic Security"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:cryptographic-security",
+    "label": "Cryptographic Security"
+  },
   "relations": {
-    "requires": [
+    "hasPart": [
       {
-        "@id": "urn:ngm:class:encryption-scheme",
-        "label": "Encryption-Scheme"
+        "@id": "urn:ngm:class:symmetric-encryption",
+        "label": "Symmetric Encryption"
+      },
+      {
+        "@id": "urn:ngm:class:asymmetric-encryption",
+        "label": "Asymmetric Encryption"
+      },
+      {
+        "@id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
       },
       {
         "@id": "urn:ngm:class:digital-signature",
-        "label": "Digital-Signature"
+        "label": "Digital Signature"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:security",
+        "label": "Security"
+      },
+      {
+        "@id": "urn:ngm:class:digital-infrastructure",
+        "label": "Digital Infrastructure"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:encryption-scheme",
+        "label": "Encryption Scheme"
+      },
+      {
+        "@id": "urn:ngm:class:key-management",
+        "label": "Key Management"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:consensus-protocol",
-        "label": "Consensus-Protocol"
+        "label": "Consensus Protocol"
       },
       {
         "@id": "urn:ngm:class:cryptographic-protocol",
-        "label": "Cryptographic-Protocol"
+        "label": "Cryptographic Protocol"
       },
       {
         "@id": "urn:ngm:class:digital-asset",
-        "label": "Digital-Asset"
+        "label": "Digital Asset"
+      },
+      {
+        "@id": "urn:ngm:class:secure-communication",
+        "label": "Secure Communication"
+      },
+      {
+        "@id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:number-theory",
+        "label": "Number Theory"
+      },
+      {
+        "@id": "urn:ngm:class:computational-complexity",
+        "label": "Computational Complexity"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:data-privacy",
+        "label": "Data Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:nist",
+        "label": "NIST"
+      },
+      {
+        "@id": "urn:ngm:class:iso-iec",
+        "label": "ISO/IEC"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:steganography",
+        "label": "Steganography"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:quantum-computing",
+        "label": "Quantum Computing"
+      },
+      {
+        "@id": "urn:ngm:class:post-quantum-cryptography",
+        "label": "Post-Quantum Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:homomorphic-encryption",
+        "label": "Homomorphic Encryption"
+      },
+      {
+        "@id": "urn:ngm:class:multi-party-computation",
+        "label": "Multi-Party Computation"
+      },
+      {
+        "@id": "urn:ngm:class:threshold-cryptography",
+        "label": "Threshold Cryptography"
       }
     ]
   },
-  "quality": 0.55,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:cryptology",
+      "label": "Cryptology"
+    },
+    {
+      "@id": "urn:ngm:class:cryptographic-science",
+      "label": "Cryptographic Science"
+    }
+  ],
+  "quality": 0.70,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

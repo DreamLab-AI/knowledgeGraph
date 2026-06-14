@@ -58,36 +58,68 @@ public:: true
   "@id": "urn:ngm:class:knowledge-distillation",
   "@type": "Class",
   "label": "Knowledge Distillation",
-  "definition": "A model compression technique where a smaller \"student\" model is trained to mimic the behaviour of a larger \"teacher\" model, transferring knowledge through soft targets.",
-  "domain": "artificial-intelligence",
+  "definition": "A model compression technique where a smaller \"student\" model is trained to mimic the behaviour of a larger \"teacher\" model, transferring knowledge through soft targets. The student learns from the teacher's output probability distributions (soft targets) rather than ground-truth hard labels, enabling competitive performance at a fraction of the computational cost.",
+  "domain": "machine-learning",
   "maturity": "emerging",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:model-compression",
+    "label": "Model Compression"
+  },
   "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:teacher-model", "label": "Teacher Model"},
+      {"@id": "urn:ngm:class:student-model", "label": "Student Model"},
+      {"@id": "urn:ngm:class:soft-targets", "label": "Soft Targets"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:model-compression", "label": "Model Compression"},
+      {"@id": "urn:ngm:class:neural-network-optimisation", "label": "Neural Network Optimisation"}
+    ],
     "requires": [
       {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:training-data", "label": "Training Data"}
+      {"@id": "urn:ngm:class:training-data", "label": "Training Data"},
+      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
+      {"@id": "urn:ngm:class:softmax-temperature", "label": "Softmax Temperature"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
-      {"@id": "urn:ngm:class:model-compression-for-edge", "label": "Model Compression for Edge"}
+      {"@id": "urn:ngm:class:model-compression-for-edge", "label": "Model Compression for Edge"},
+      {"@id": "urn:ngm:class:on-device-inference", "label": "On-Device Inference"},
+      {"@id": "urn:ngm:class:efficient-inference", "label": "Efficient Inference"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:kullback-leibler-divergence", "label": "Kullback-Leibler Divergence"},
+      {"@id": "urn:ngm:class:cross-entropy-loss", "label": "Cross-Entropy Loss"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:offline-distillation", "label": "Offline Distillation"},
+      {"@id": "urn:ngm:class:online-distillation", "label": "Online Distillation"},
+      {"@id": "urn:ngm:class:self-distillation", "label": "Self-Distillation"}
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:parameter-efficient-fine-tuning", "label": "Parameter-Efficient Fine-Tuning"}
+      {"@id": "urn:ngm:class:parameter-efficient-fine-tuning", "label": "Parameter-Efficient Fine-Tuning"},
+      {"@id": "urn:ngm:class:model-pruning", "label": "Model Pruning"},
+      {"@id": "urn:ngm:class:quantisation", "label": "Quantisation"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"}
+      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"},
+      {"@id": "urn:ngm:class:distilbert", "label": "DistilBERT"},
+      {"@id": "urn:ngm:class:reinforcement-learning-from-human-feedback", "label": "Reinforcement Learning from Human Feedback"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"},
+      {"@id": "urn:ngm:class:iot-devices", "label": "IoT Devices"}
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {"@id": "urn:ngm:class:model-distillation", "label": "Model Distillation"},
+    {"@id": "urn:ngm:class:teacher-student-learning", "label": "Teacher-Student Learning"}
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

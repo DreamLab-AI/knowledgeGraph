@@ -110,16 +110,50 @@ public:: true
   "@id": "urn:ngm:class:transformer",
   "@type": "Class",
   "label": "Transformer",
-  "definition": "A neural network architecture that relies on self-attention mechanisms rather than recurrence or convolution to process sequential data in parallel, serving as the foundation for modern large language models including GPT, BERT, and their successors.",
+  "definition": "A neural network architecture that relies entirely on self-attention mechanisms rather than recurrence or convolution to process sequential data in parallel, serving as the foundation for modern large language models, vision models, and multimodal systems including GPT, BERT, and their successors.",
   "domain": "artificial-intelligence",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:ai-model-architecture",
-      "label": "AI Model Architecture"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:ai-model-architecture",
+    "label": "AI Model Architecture"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:self-attention",
+        "label": "Self Attention"
+      },
+      {
+        "@id": "urn:ngm:class:multi-head-attention",
+        "label": "Multi-Head Attention"
+      },
+      {
+        "@id": "urn:ngm:class:positional-encoding",
+        "label": "Positional Encoding"
+      },
+      {
+        "@id": "urn:ngm:class:feed-forward-network",
+        "label": "Feed-Forward Network"
+      },
+      {
+        "@id": "urn:ngm:class:layer-normalisation",
+        "label": "Layer Normalisation"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "@id": "urn:ngm:class:parallel-computing",
+        "label": "Parallel Computing"
+      }
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:large-scale-pretrained-foundation-model",
@@ -132,6 +166,66 @@ public:: true
       {
         "@id": "urn:ngm:class:gpt",
         "label": "GPT"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:in-context-learning",
+        "label": "In-Context Learning"
+      },
+      {
+        "@id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:self-supervised-learning",
+        "label": "Self-Supervised Learning"
+      },
+      {
+        "@id": "urn:ngm:class:tokenisation",
+        "label": "Tokenisation"
+      },
+      {
+        "@id": "urn:ngm:class:embedding",
+        "label": "Embedding"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:recurrent-neural-network",
+        "label": "Recurrent Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:state-space-model",
+        "label": "State Space Model"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:iso-iec-22989",
+        "label": "ISO/IEC 22989"
+      },
+      {
+        "@id": "urn:ngm:class:nist-ai-600-1",
+        "label": "NIST AI 600-1"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:robotics-policy",
+        "label": "Robotics Policy"
       }
     ],
     "relatedTo": [
@@ -150,19 +244,31 @@ public:: true
       {
         "@id": "urn:ngm:class:self-attention",
         "label": "Self Attention"
+      },
+      {
+        "@id": "urn:ngm:class:neural-scaling-law",
+        "label": "Neural Scaling Law"
       }
     ]
   },
-  "quality": 0.5,
+  "quality": 0.72,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "inferenceRule": "RelationEnrichment"
   },
   "sameAs": [
     {
       "@id": "urn:ngm:class:transformers",
       "label": "Transformers"
+    },
+    {
+      "@id": "urn:ngm:class:transformer-architecture",
+      "label": "Transformer Architecture"
+    },
+    {
+      "@id": "urn:ngm:class:attention-is-all-you-need-architecture",
+      "label": "Attention Is All You Need Architecture"
     }
   ]
 }

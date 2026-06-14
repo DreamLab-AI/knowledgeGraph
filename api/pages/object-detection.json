@@ -4,16 +4,16 @@
   "slug": "object-detection",
   "public": true,
   "classIri": "urn:ngm:class:object-detection",
-  "domain": "spatial-computing",
-  "definition": "Object Detection is the computer vision task of identifying and localising multiple objects within an image by predicting bounding boxes and class labels for each detected instance.",
+  "domain": "machine-learning",
+  "definition": "Object Detection is the computer vision task of identifying and localising multiple objects within an image or video frame by predicting bounding boxes and class labels for each detected instance, combining spatial localisation with categorical classification in a single forward pass.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:sc-interaction",
-      "label": "Interaction Technology"
+      "id": "urn:ngm:class:computer-vision",
+      "label": "Computer Vision"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.72,
   "maturity": "emerging",
   "relationships": {
     "hasPart": [],
@@ -25,6 +25,18 @@
       {
         "id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "id": "urn:ngm:class:bounding-box-regression",
+        "label": "Bounding Box Regression"
       }
     ],
     "enables": [
@@ -35,10 +47,48 @@
       {
         "id": "urn:ngm:class:pose-estimation",
         "label": "Pose Estimation"
+      },
+      {
+        "id": "urn:ngm:class:object-tracking",
+        "label": "Object Tracking"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-driving",
+        "label": "Autonomous Driving"
+      },
+      {
+        "id": "urn:ngm:class:scene-understanding",
+        "label": "Scene Understanding"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:image-classification",
+        "label": "Image Classification"
+      },
+      {
+        "id": "urn:ngm:class:benchmark-dataset",
+        "label": "Benchmark Dataset"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:yolo",
+        "label": "YOLO"
+      },
+      {
+        "id": "urn:ngm:class:faster-r-cnn",
+        "label": "Faster R-CNN"
+      },
+      {
+        "id": "urn:ngm:class:detr",
+        "label": "DETR"
+      }
+    ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:image-classification",
@@ -47,19 +97,61 @@
       {
         "id": "urn:ngm:class:instance-segmentation",
         "label": "Instance Segmentation"
+      },
+      {
+        "id": "urn:ngm:class:panoptic-segmentation",
+        "label": "Panoptic Segmentation"
       }
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:computer-vision",
-        "label": "Computer Vision"
+        "id": "urn:ngm:class:robotics-perception",
+        "label": "Robotics Perception"
+      },
+      {
+        "id": "urn:ngm:class:surveillance-system",
+        "label": "Surveillance System"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
       }
     ],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "id": "urn:ngm:class:anchor-based-detection",
+        "label": "Anchor-Based Detection"
+      },
+      {
+        "id": "urn:ngm:class:non-maximum-suppression",
+        "label": "Non-Maximum Suppression"
+      },
+      {
+        "id": "urn:ngm:class:feature-pyramid-network",
+        "label": "Feature Pyramid Network"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "id": "urn:ngm:class:real-time-inference",
+        "label": "Real-Time Inference"
+      }
+    ]
   },
   "wikilinks": [
     {

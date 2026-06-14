@@ -90,44 +90,158 @@ public:: true
   "@id": "urn:ngm:class:video-conferencing",
   "@type": "Class",
   "label": "Video Conferencing",
-  "definition": "\"Real-time audio-visual communication technology enabling multiple geographically distributed participants to see and hear each other simultaneously through internet-connected devices, supporting face-to-face interaction across distances.\"",
+  "definition": "Real-time audio-visual communication technology enabling multiple geographically distributed participants to see and hear each other simultaneously through internet-connected devices, supporting face-to-face interaction across distances via compressed media streams, network protocols, and centralised or peer-to-peer media routing.",
   "domain": "distributed-collaboration",
   "maturity": "established",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:dc-communication",
-      "label": "Communication Technology"
-    },
-    {
-      "@id": "urn:ngm:class:synchronous-collaboration",
-      "label": "TC-0010-Synchronous-Collaboration"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:synchronous-collaboration",
+    "label": "Synchronous Collaboration"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:video-codec",
+        "label": "Video Codec"
+      },
+      {
+        "@id": "urn:ngm:class:audio-codec",
+        "label": "Audio Codec"
+      },
+      {
+        "@id": "urn:ngm:class:media-server",
+        "label": "Media Server"
+      },
+      {
+        "@id": "urn:ngm:class:screen-sharing",
+        "label": "Screen Sharing"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:unified-communications",
+        "label": "Unified Communications"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:real-time-communication-protocols",
         "label": "Real-Time Communication Protocols"
+      },
+      {
+        "@id": "urn:ngm:class:broadband-internet",
+        "label": "Broadband Internet"
+      },
+      {
+        "@id": "urn:ngm:class:end-to-end-encryption",
+        "label": "End-to-End Encryption"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:face-to-face-interaction",
         "label": "Face-to-Face Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:remote-work",
+        "label": "Remote Work"
+      },
+      {
+        "@id": "urn:ngm:class:telemedicine",
+        "label": "Telemedicine"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
       }
     ],
     "implements": [
       {
         "@id": "urn:ngm:class:web-rtc",
-        "label": "TELE-150-webrtc"
+        "label": "WebRTC"
+      },
+      {
+        "@id": "urn:ngm:class:session-initiation-protocol",
+        "label": "Session Initiation Protocol"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:ai-meeting-assistants",
+        "label": "AI Meeting Assistants"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-language-translation",
+        "label": "Real-Time Language Translation"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:remote-pair-programming",
+        "label": "Remote Pair Programming"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      },
+      {
+        "@id": "urn:ngm:class:w3c",
+        "label": "W3C"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:asynchronous-communication",
+        "label": "Asynchronous Communication"
+      },
+      {
+        "@id": "urn:ngm:class:audio-conferencing",
+        "label": "Audio Conferencing"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:virtual-reality-telepresence",
+        "label": "Virtual Reality Telepresence"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality-collaboration",
+        "label": "Augmented Reality Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:ai-avatars",
+        "label": "AI Avatars"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:5g-telepresence",
+        "label": "5G Telepresence"
+      },
+      {
+        "@id": "urn:ngm:class:zero-trust-security",
+        "label": "Zero-Trust Security"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:videotelephony",
+      "label": "Videotelephony"
+    },
+    {
+      "@id": "urn:ngm:class:virtual-meeting-platform",
+      "label": "Virtual Meeting Platform"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

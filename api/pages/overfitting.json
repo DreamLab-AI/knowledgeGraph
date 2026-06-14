@@ -4,20 +4,16 @@
   "slug": "overfitting",
   "public": true,
   "classIri": "urn:ngm:class:overfitting",
-  "domain": "artificial-intelligence",
+  "domain": "machine-learning",
   "definition": "Overfitting is a phenomenon in machine learning where a model learns the training data too precisely\u2014including noise and spurious correlations\u2014resulting in poor generalisation to unseen data. It corresponds to high variance and low bias in the bias-variance tradeoff, and is mitigated through regularisation, dropout, early stopping, and data augmentation.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique"
-    },
-    {
-      "id": "urn:ngm:class:machine-learning-discipline",
-      "label": "Machine Learning"
+      "id": "urn:ngm:class:machine-learning-phenomenon",
+      "label": "Machine Learning Phenomenon"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.72,
   "maturity": "emerging",
   "relationships": {
     "hasPart": [],
@@ -29,19 +25,59 @@
       {
         "id": "urn:ngm:class:model-training",
         "label": "Model Training"
+      },
+      {
+        "id": "urn:ngm:class:model-capacity",
+        "label": "Model Capacity"
       }
     ],
-    "enables": [],
-    "dependsOn": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:memorisation",
+        "label": "Memorisation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:bias-variance-tradeoff",
+        "label": "Bias-Variance Tradeoff"
+      },
+      {
+        "id": "urn:ngm:class:statistical-learning-theory",
+        "label": "Statistical Learning Theory"
+      }
+    ],
     "implements": [],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:underfitting",
         "label": "Underfitting"
+      },
+      {
+        "id": "urn:ngm:class:generalisation",
+        "label": "Generalisation"
       }
     ],
-    "bridgesTo": [],
-    "uses": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:model-governance",
+        "label": "Model Governance"
+      },
+      {
+        "id": "urn:ngm:class:ai-robustness",
+        "label": "AI Robustness"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      },
+      {
+        "id": "urn:ngm:class:empirical-risk-minimisation",
+        "label": "Empirical Risk Minimisation"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
@@ -51,12 +87,32 @@
         "label": "Dropout"
       },
       {
-        "id": "urn:ngm:class:model-capacity",
-        "label": "Model Capacity"
-      },
-      {
         "id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:regularisation",
+        "label": "Regularisation"
+      },
+      {
+        "id": "urn:ngm:class:cross-validation",
+        "label": "Cross-Validation"
+      },
+      {
+        "id": "urn:ngm:class:early-stopping",
+        "label": "Early Stopping"
+      },
+      {
+        "id": "urn:ngm:class:data-augmentation",
+        "label": "Data Augmentation"
+      },
+      {
+        "id": "urn:ngm:class:validation-data",
+        "label": "Validation Data"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
       }
     ]
   },

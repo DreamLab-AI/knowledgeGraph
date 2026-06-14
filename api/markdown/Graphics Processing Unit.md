@@ -58,21 +58,43 @@ public:: true
   "@id": "urn:ngm:class:graphics-processing-unit",
   "@type": "Class",
   "label": "Graphics Processing Unit",
-  "definition": "A Graphics Processing Unit is a parallel processor designed to accelerate the rendering of images and other data-parallel workloads through many concurrent execution units.",
+  "definition": "A Graphics Processing Unit is a parallel processor designed to accelerate the rendering of images and other data-parallel workloads through many concurrent execution units, and widely repurposed for general-purpose computing in machine learning, scientific simulation, and spatial computing.",
   "domain": "infrastructure",
   "maturity": "established",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:graphics-processing",
-      "label": "Graphics Processing"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:graphics-processing",
+    "label": "Graphics Processing"
+  },
   "relations": {
-    "requires": [
+    "hasPart": [
       {
         "@id": "urn:ngm:class:shader",
         "label": "Shader"
+      },
+      {
+        "@id": "urn:ngm:class:compute-shader",
+        "label": "Compute Shader"
+      },
+      {
+        "@id": "urn:ngm:class:texture-unit",
+        "label": "Texture Unit"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:graphics-pipeline",
+        "label": "Graphics Pipeline"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:video-memory",
+        "label": "Video Memory"
+      },
+      {
+        "@id": "urn:ngm:class:device-driver",
+        "label": "Device Driver"
       }
     ],
     "enables": [
@@ -81,16 +103,112 @@ public:: true
         "label": "Real-Time Rendering"
       },
       {
-        "@id": "urn:ngm:class:compute-shader",
-        "label": "Compute Shader"
+        "@id": "urn:ngm:class:ray-tracing",
+        "label": "Ray Tracing"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network-training",
+        "label": "Neural Network Training"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:pcie-bus",
+        "label": "PCIe Bus"
+      },
+      {
+        "@id": "urn:ngm:class:opengl",
+        "label": "OpenGL"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:single-instruction-multiple-data",
+        "label": "Single Instruction Multiple Data"
+      },
+      {
+        "@id": "urn:ngm:class:parallel-computing",
+        "label": "Parallel Computing"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:floating-point-arithmetic",
+        "label": "Floating-Point Arithmetic"
+      },
+      {
+        "@id": "urn:ngm:class:memory-bandwidth",
+        "label": "Memory Bandwidth"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:vulkan",
+        "label": "Vulkan"
+      },
+      {
+        "@id": "urn:ngm:class:directx",
+        "label": "DirectX"
+      },
+      {
+        "@id": "urn:ngm:class:opencl",
+        "label": "OpenCL"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:central-processing-unit",
+        "label": "Central Processing Unit"
+      },
+      {
+        "@id": "urn:ngm:class:neural-processing-unit",
+        "label": "Neural Processing Unit"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:machine-learning-accelerator",
+        "label": "Machine Learning Accelerator"
+      },
+      {
+        "@id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "@id": "urn:ngm:class:cryptocurrency-mining",
+        "label": "Cryptocurrency Mining"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:cuda",
+        "label": "CUDA"
+      },
+      {
+        "@id": "urn:ngm:class:tensor-core",
+        "label": "Tensor Core"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:gpu",
+      "label": "GPU"
+    },
+    {
+      "@id": "urn:ngm:class:visual-processing-unit",
+      "label": "Visual Processing Unit"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

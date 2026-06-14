@@ -43,33 +43,65 @@ public:: true
   "@type": "Class",
   "label": "Training",
   "definition": "Training is the supervised or self-supervised process of iteratively adjusting the parameters of a machine learning model to minimise a loss function over a labelled or unlabelled dataset. It encompasses forward passes, backpropagation, gradient descent optimisation, and regularisation techniques such as dropout and weight decay. The output of training is a fitted model whose learned weights encode patterns from the training data, ready for inference on unseen inputs.",
-  "domain": "artificial-intelligence",
+  "domain": "machine-learning",
   "maturity": "emerging",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:ai-technique",
+    "label": "AI Technique"
+  },
   "relations": {
     "requires": [
       {"@id": "urn:ngm:class:training-data", "label": "Training Data"},
-      {"@id": "urn:ngm:class:gradient-descent", "label": "Gradient Descent"}
+      {"@id": "urn:ngm:class:gradient-descent", "label": "Gradient Descent"},
+      {"@id": "urn:ngm:class:loss-function", "label": "Loss Function"},
+      {"@id": "urn:ngm:class:labelled-dataset", "label": "Labelled Dataset"},
+      {"@id": "urn:ngm:class:compute-resource", "label": "Compute Resource"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:inference", "label": "Inference"},
-      {"@id": "urn:ngm:class:machine-learning-discipline-model", "label": "Machine Learning Model"}
+      {"@id": "urn:ngm:class:machine-learning-model", "label": "Machine Learning Model"},
+      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine-Tuning"},
+      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:backpropagation", "label": "Backpropagation"},
-      {"@id": "urn:ngm:class:regularisation", "label": "Regularisation"}
+      {"@id": "urn:ngm:class:regularisation", "label": "Regularisation"},
+      {"@id": "urn:ngm:class:stochastic-gradient-descent", "label": "Stochastic Gradient Descent"},
+      {"@id": "urn:ngm:class:dropout", "label": "Dropout"},
+      {"@id": "urn:ngm:class:batch-normalisation", "label": "Batch Normalisation"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:forward-pass", "label": "Forward Pass"},
+      {"@id": "urn:ngm:class:backward-pass", "label": "Backward Pass"},
+      {"@id": "urn:ngm:class:validation", "label": "Validation"},
+      {"@id": "urn:ngm:class:hyperparameter-tuning", "label": "Hyperparameter Tuning"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:inference", "label": "Inference"},
+      {"@id": "urn:ngm:class:overfitting", "label": "Overfitting"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:neural-network-architecture", "label": "Neural Network Architecture"},
+      {"@id": "urn:ngm:class:optimiser", "label": "Optimiser"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:iso-iec-22989", "label": "ISO/IEC 22989"},
+      {"@id": "urn:ngm:class:nist-ai-rmf", "label": "NIST AI RMF"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"},
+      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"}
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {"@id": "urn:ngm:class:model-training", "label": "Model Training"},
+    {"@id": "urn:ngm:class:supervised-training", "label": "Supervised Training"}
+  ],
+  "quality": 0.68,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

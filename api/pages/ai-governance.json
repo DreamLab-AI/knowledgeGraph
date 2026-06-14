@@ -4,23 +4,36 @@
   "slug": "ai-governance",
   "public": true,
   "classIri": "urn:ngm:class:ai-governance",
-  "domain": "artificial-intelligence",
-  "definition": "AI Governance encompasses the policies, frameworks, standards, and institutional mechanisms for overseeing the responsible development, deployment, and use of artificial intelligence technologies.",
+  "domain": "governance",
+  "definition": "AI Governance encompasses the policies, frameworks, standards, and institutional mechanisms for overseeing the responsible development, deployment, and use of artificial intelligence technologies, including regulatory compliance, organisational accountability structures, risk-based assessment, algorithmic transparency requirements, and stakeholder engagement processes that balance innovation with societal protection.",
   "subClassOf": [
-    {
-      "id": "urn:ngm:class:ai-governance-and-ethics",
-      "label": "AI Governance and Ethics"
-    },
     {
       "id": "urn:ngm:class:governance-framework",
       "label": "Governance Framework"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.72,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:ai-impact-assessment",
+        "label": "AI Impact Assessment"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-accountability",
+        "label": "Algorithmic Accountability"
+      },
+      {
+        "id": "urn:ngm:class:ai-audit",
+        "label": "AI Audit"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics-board",
+        "label": "AI Ethics Board"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:ai-ethics",
@@ -29,34 +42,100 @@
       {
         "id": "urn:ngm:class:regulatory-compliance",
         "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:human-oversight",
+        "label": "Human Oversight"
+      },
+      {
+        "id": "urn:ngm:class:transparency",
+        "label": "Transparency"
       }
     ],
-    "enables": [],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [
+    "enables": [
       {
         "id": "urn:ngm:class:responsible-ai",
         "label": "Responsible AI"
       },
       {
-        "id": "urn:ngm:class:ai-safety",
-        "label": "AI Safety"
+        "id": "urn:ngm:class:trustworthy-ai",
+        "label": "Trustworthy AI"
       }
     ],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
+    "dependsOn": [
       {
         "id": "urn:ngm:class:risk-management",
         "label": "Risk Management"
       },
       {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI RMF"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:ai-deregulation",
+        "label": "AI Deregulation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      }
+    ],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
         "id": "urn:ngm:class:ai-alignment",
         "label": "AI Alignment"
+      },
+      {
+        "id": "urn:ngm:class:digital-rights",
+        "label": "Digital Rights"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-iec-42001",
+        "label": "ISO/IEC 42001"
+      },
+      {
+        "id": "urn:ngm:class:oecd-ai-principles",
+        "label": "OECD AI Principles"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      },
+      {
+        "id": "urn:ngm:class:bias-mitigation",
+        "label": "Bias Mitigation"
       }
     ]
   },

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:semantic-web-linked-data-standard-linked-data-standard",
   "domain": "artificial-intelligence",
-  "definition": "Semantic Web extends the World Wide Web with machine-readable metadata, ontologies, and linked data to enable intelligent information discovery, integration, and reasoning.",
+  "definition": "Semantic Web extends the World Wide Web with machine-readable metadata, ontologies, and linked data to enable intelligent information discovery, integration, and reasoning. Core technologies include RDF, OWL, SPARQL, and knowledge graphs; AI techniques such as entity linking, relation extraction, ontology alignment, and automated reasoning further enhance these systems.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-research-area",
@@ -13,11 +13,33 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.68,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      },
+      {
+        "id": "urn:ngm:class:uri-iri",
+        "label": "URI IRI"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:information-extraction",
+        "label": "Information Extraction"
+      },
+      {
+        "id": "urn:ngm:class:entity-linking",
+        "label": "Entity Linking"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:knowledge-graph",
@@ -26,12 +48,47 @@
       {
         "id": "urn:ngm:class:knowledge-representation",
         "label": "Knowledge Representation"
+      },
+      {
+        "id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      },
+      {
+        "id": "urn:ngm:class:automated-reasoning",
+        "label": "Automated Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:ontology-alignment",
+        "label": "Ontology Alignment"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:open-world-assumption",
+        "label": "Open World Assumption"
+      },
+      {
+        "id": "urn:ngm:class:description-logics",
+        "label": "Description Logics"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:relational-database",
+        "label": "Relational Database"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:decentralized-identifier",
+        "label": "Decentralized Identifier"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-credential",
+        "label": "Verifiable Credential"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:rdf",
@@ -40,19 +97,45 @@
       {
         "id": "urn:ngm:class:sparql",
         "label": "SPARQL"
+      },
+      {
+        "id": "urn:ngm:class:owl-web-ontology-language",
+        "label": "OWL Web Ontology Language"
+      },
+      {
+        "id": "urn:ngm:class:turtle-syntax",
+        "label": "Turtle Syntax"
+      },
+      {
+        "id": "urn:ngm:class:json-ld",
+        "label": "JSON-LD"
       }
     ],
-    "supports": [],
-    "standardizedBy": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:data-integration",
+        "label": "Data Integration"
+      },
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:w3c",
+        "label": "W3C"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:linked-data",
-        "label": "Linked Data"
-      },
-      {
         "id": "urn:ngm:class:semantic-web-linked-data-standard-linked-data-standard-standards",
         "label": "Semantic Web Standards"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
       }
     ]
   },

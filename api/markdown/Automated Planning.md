@@ -50,32 +50,156 @@ public:: true
   "@id": "urn:ngm:class:automated-planning",
   "@type": "Class",
   "label": "Automated Planning",
-  "definition": "Automated Planning is a artificial intelligence concept and a type of Planning and Scheduling. that enables Autonomous Systems.",
-  "domain": "artificial-intelligence",
+  "definition": "Automated Planning is a field of artificial intelligence concerned with the computational synthesis of action sequences (plans) that transform an initial world state into a desired goal state, using formal representations of states, actions, and constraints alongside algorithmic search and reasoning techniques.",
+  "domain": "ai",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique"
-    },
-    {
-      "@id": "urn:ngm:class:planning-and-scheduling",
-      "label": "Planning and Scheduling"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:planning-and-scheduling",
+    "label": "Planning and Scheduling"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:state-space-search",
+        "label": "State Space Search"
+      },
+      {
+        "@id": "urn:ngm:class:hierarchical-task-network",
+        "label": "Hierarchical Task Network"
+      },
+      {
+        "@id": "urn:ngm:class:pddl",
+        "label": "PDDL"
+      },
+      {
+        "@id": "urn:ngm:class:plan-space-search",
+        "label": "Plan Space Search"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:decision-making",
+        "label": "Decision Making"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      },
+      {
+        "@id": "urn:ngm:class:formal-logic",
+        "label": "Formal Logic"
+      }
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:autonomous-system",
         "label": "Autonomous Systems"
+      },
+      {
+        "@id": "urn:ngm:class:task-automation",
+        "label": "Task Automation"
+      },
+      {
+        "@id": "urn:ngm:class:multi-agent-coordination",
+        "label": "Multi-Agent Coordination"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:search-algorithm",
+        "label": "Search Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:heuristic-function",
+        "label": "Heuristic Function"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:strips",
+        "label": "STRIPS"
+      },
+      {
+        "@id": "urn:ngm:class:graphplan",
+        "label": "GraphPlan"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:sat-solver",
+        "label": "SAT Solver"
+      },
+      {
+        "@id": "urn:ngm:class:constraint-satisfaction",
+        "label": "Constraint Satisfaction"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      },
+      {
+        "@id": "urn:ngm:class:logistics-optimisation",
+        "label": "Logistics Optimisation"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:reactive-planning",
+        "label": "Reactive Planning"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:scheduling",
+        "label": "Scheduling"
+      },
+      {
+        "@id": "urn:ngm:class:temporal-reasoning",
+        "label": "Temporal Reasoning"
+      },
+      {
+        "@id": "urn:ngm:class:markov-decision-process",
+        "label": "Markov Decision Process"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:ai-planning",
+      "label": "AI Planning"
+    },
+    {
+      "@id": "urn:ngm:class:automated-plan-synthesis",
+      "label": "Automated Plan Synthesis"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

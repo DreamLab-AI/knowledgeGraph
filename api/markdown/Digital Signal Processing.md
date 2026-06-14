@@ -74,20 +74,38 @@ public:: true
   "@id": "urn:ngm:class:digital-signal-processing",
   "@type": "Class",
   "label": "Digital Signal Processing",
-  "definition": "The mathematical and computational techniques for representing, transforming, and manipulating signals in digital form, enabling real-time audio processing, video enhancement, spatial audio for VR/AR, and sensor data analysis critical for immersive metaverse experiences.",
-  "domain": "spatial-computing",
+  "definition": "The mathematical and computational techniques for representing, transforming, and manipulating signals in digital form, including filtering, spectral analysis, compression, and enhancement — enabling real-time audio processing, video analysis, spatial audio for VR/AR, and sensor data interpretation critical for immersive and intelligent systems.",
+  "domain": "data",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:sc-display-and-rendering",
-      "label": "Display and Rendering"
-    },
-    {
-      "@id": "urn:ngm:class:signal-processing",
-      "label": "Signal Processing"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:signal-processing",
+    "label": "Signal Processing"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:fast-fourier-transform",
+        "label": "Fast Fourier Transform"
+      },
+      {
+        "@id": "urn:ngm:class:digital-filter",
+        "label": "Digital Filter"
+      },
+      {
+        "@id": "urn:ngm:class:wavelet-transform",
+        "label": "Wavelet Transform"
+      },
+      {
+        "@id": "urn:ngm:class:data-compression",
+        "label": "Data Compression"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:algorithm",
@@ -100,6 +118,14 @@ public:: true
       {
         "@id": "urn:ngm:class:sensor",
         "label": "Sensors"
+      },
+      {
+        "@id": "urn:ngm:class:analog-to-digital-conversion",
+        "label": "Analog-to-Digital Conversion"
+      },
+      {
+        "@id": "urn:ngm:class:sampling-theory",
+        "label": "Sampling Theory"
       }
     ],
     "enables": [
@@ -114,14 +140,92 @@ public:: true
       {
         "@id": "urn:ngm:class:computer-vision-video-analysis",
         "label": "Video Processing"
+      },
+      {
+        "@id": "urn:ngm:class:noise-cancellation",
+        "label": "Noise Cancellation"
+      },
+      {
+        "@id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      },
+      {
+        "@id": "urn:ngm:class:numerical-methods",
+        "label": "Numerical Methods"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:field-programmable-gate-array",
+        "label": "Field Programmable Gate Array"
+      },
+      {
+        "@id": "urn:ngm:class:graphics-processing-unit",
+        "label": "Graphics Processing Unit"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-systems",
+        "label": "Real-Time Systems"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:analog-signal-processing",
+        "label": "Analog Signal Processing"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
+        "@id": "urn:ngm:class:telecommunications",
+        "label": "Telecommunications"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:image-processing",
+        "label": "Image Processing"
+      },
+      {
+        "@id": "urn:ngm:class:radar-signal-processing",
+        "label": "Radar Signal Processing"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:dsp",
+      "label": "DSP"
+    },
+    {
+      "@id": "urn:ngm:class:discrete-time-signal-processing",
+      "label": "Discrete-Time Signal Processing"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

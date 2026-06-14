@@ -21,26 +21,60 @@ public:: true
   "@type": "Class",
   "label": "Neural Architecture Search",
   "definition": "Neural Architecture Search (NAS) is an automated machine learning technique that searches a defined space of neural network designs to discover architectures that maximise predictive performance or satisfy multi-objective constraints such as latency, parameter count, and energy consumption. NAS algorithms explore the architecture search space using strategies that include reinforcement learning, evolutionary algorithms, differentiable relaxations (DARTS), and predictor-based approaches, each making different trade-offs between search cost and solution quality. The field emerged from the observation that hand-designed architectures require substantial expert knowledge and iterative experimentation, and that automated search can discover non-obvious configurations that outperform human-designed baselines on targeted hardware or task distributions.",
-  "domain": "ai",
+  "domain": "machine-learning",
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:auto-ml", "label": "AutoML"}],
   "relations": {
     "uses": [
       {"@id": "urn:ngm:class:differentiable-architecture", "label": "Differentiable Architecture"},
       {"@id": "urn:ngm:class:hyperparameter-tuning", "label": "Hyperparameter Tuning"},
-      {"@id": "urn:ngm:class:machine-learning-discipline-framework", "label": "Machine Learning Framework"}
+      {"@id": "urn:ngm:class:machine-learning-discipline-framework", "label": "Machine Learning Framework"},
+      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
+      {"@id": "urn:ngm:class:evolutionary-algorithm", "label": "Evolutionary Algorithm"},
+      {"@id": "urn:ngm:class:bayesian-optimisation", "label": "Bayesian Optimisation"},
+      {"@id": "urn:ngm:class:weight-sharing", "label": "Weight Sharing"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:knowledge-distillation-for-edge", "label": "Knowledge Distillation for Edge"},
-      {"@id": "urn:ngm:class:model-compression-for-edge", "label": "Model Compression for Edge"}
+      {"@id": "urn:ngm:class:model-compression-for-edge", "label": "Model Compression for Edge"},
+      {"@id": "urn:ngm:class:hardware-aware-inference", "label": "Hardware-Aware Inference"},
+      {"@id": "urn:ngm:class:efficient-neural-network", "label": "Efficient Neural Network"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:search-space-definition", "label": "Search Space Definition"},
+      {"@id": "urn:ngm:class:performance-estimation-strategy", "label": "Performance Estimation Strategy"},
+      {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:neural-network-architecture", "label": "Neural Network Architecture"},
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
+      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:hand-crafted-architecture", "label": "Hand-Crafted Architecture"},
+      {"@id": "urn:ngm:class:manual-feature-engineering", "label": "Manual Feature Engineering"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:neural-network-architecture", "label": "Neural Network Architecture"},
-      {"@id": "urn:ngm:class:machine-learning-discipline-pipeline", "label": "Machine Learning Pipeline"}
+      {"@id": "urn:ngm:class:machine-learning-discipline-pipeline", "label": "Machine Learning Pipeline"},
+      {"@id": "urn:ngm:class:zero-cost-proxy", "label": "Zero-Cost Proxy"},
+      {"@id": "urn:ngm:class:mixture-of-experts", "label": "Mixture of Experts"},
+      {"@id": "urn:ngm:class:foundation-model", "label": "Foundation Model"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
+      {"@id": "urn:ngm:class:hardware-software-co-design", "label": "Hardware-Software Co-Design"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:automated-architecture-design", "label": "Automated Architecture Design"},
+    {"@id": "urn:ngm:class:architecture-search", "label": "Architecture Search"}
+  ],
+  "quality": 0.75,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:graphics-processing-unit",
   "domain": "infrastructure",
-  "definition": "A Graphics Processing Unit is a parallel processor designed to accelerate the rendering of images and other data-parallel workloads through many concurrent execution units.",
+  "definition": "A Graphics Processing Unit is a parallel processor designed to accelerate the rendering of images and other data-parallel workloads through many concurrent execution units, and widely repurposed for general-purpose computing in machine learning, scientific simulation, and spatial computing.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:graphics-processing",
@@ -13,14 +13,31 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [
+    "hasPart": [
       {
         "id": "urn:ngm:class:shader",
         "label": "Shader"
+      },
+      {
+        "id": "urn:ngm:class:compute-shader",
+        "label": "Compute Shader"
+      },
+      {
+        "id": "urn:ngm:class:texture-unit",
+        "label": "Texture Unit"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:video-memory",
+        "label": "Video Memory"
+      },
+      {
+        "id": "urn:ngm:class:device-driver",
+        "label": "Device Driver"
       }
     ],
     "enables": [
@@ -29,19 +46,103 @@
         "label": "Real-Time Rendering"
       },
       {
-        "id": "urn:ngm:class:compute-shader",
-        "label": "Compute Shader"
+        "id": "urn:ngm:class:ray-tracing",
+        "label": "Ray Tracing"
+      },
+      {
+        "id": "urn:ngm:class:neural-network-training",
+        "label": "Neural Network Training"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:pcie-bus",
+        "label": "PCIe Bus"
+      },
+      {
+        "id": "urn:ngm:class:opengl",
+        "label": "OpenGL"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:single-instruction-multiple-data",
+        "label": "Single Instruction Multiple Data"
+      },
+      {
+        "id": "urn:ngm:class:parallel-computing",
+        "label": "Parallel Computing"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:central-processing-unit",
+        "label": "Central Processing Unit"
+      },
+      {
+        "id": "urn:ngm:class:neural-processing-unit",
+        "label": "Neural Processing Unit"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:machine-learning-accelerator",
+        "label": "Machine Learning Accelerator"
+      },
+      {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "id": "urn:ngm:class:cryptocurrency-mining",
+        "label": "Cryptocurrency Mining"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:floating-point-arithmetic",
+        "label": "Floating-Point Arithmetic"
+      },
+      {
+        "id": "urn:ngm:class:memory-bandwidth",
+        "label": "Memory Bandwidth"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:vulkan",
+        "label": "Vulkan"
+      },
+      {
+        "id": "urn:ngm:class:directx",
+        "label": "DirectX"
+      },
+      {
+        "id": "urn:ngm:class:opencl",
+        "label": "OpenCL"
+      }
+    ],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:graphics-pipeline",
+        "label": "Graphics Pipeline"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cuda",
+        "label": "CUDA"
+      },
+      {
+        "id": "urn:ngm:class:tensor-core",
+        "label": "Tensor Core"
+      }
+    ]
   },
   "wikilinks": [
     {

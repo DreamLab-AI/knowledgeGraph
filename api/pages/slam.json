@@ -5,26 +5,47 @@
   "public": true,
   "classIri": "urn:ngm:class:slam",
   "domain": "spatial-computing",
-  "definition": "Simultaneous Localization and Mapping (SLAM) is a robotics and computer vision technique enabling devices to build maps of unknown environments whilst simultaneously tracking their own position within those environments, combining LocalizationTechnique|localisation and",
+  "definition": "Simultaneous Localization and Mapping (SLAM) is a robotics and computer vision technique enabling devices to build maps of unknown environments whilst simultaneously tracking their own position within those environments, combining localisation and map construction in real-time using probabilistic state estimation and sensor fusion.",
   "subClassOf": [
-    {
-      "id": "urn:ngm:class:sc-interaction",
-      "label": "Interaction Technology"
-    },
     {
       "id": "urn:ngm:class:spatial-mapping",
       "label": "Spatial Mapping"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.4,
+  "qualityScore": 0.65,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:localization",
+        "label": "Localization"
+      },
+      {
+        "id": "urn:ngm:class:map-construction",
+        "label": "Map Construction"
+      },
+      {
+        "id": "urn:ngm:class:occupancy-grid",
+        "label": "Occupancy Grid"
+      },
+      {
+        "id": "urn:ngm:class:pose-graph-optimization",
+        "label": "Pose Graph Optimization"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:sensor-fusion",
         "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:probabilistic-state-estimation",
+        "label": "Probabilistic State Estimation"
+      },
+      {
+        "id": "urn:ngm:class:loop-closure",
+        "label": "Loop Closure"
       }
     ],
     "enables": [
@@ -35,12 +56,43 @@
       {
         "id": "urn:ngm:class:augmented-reality",
         "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:inertial-measurement-unit",
+        "label": "Inertial Measurement Unit"
+      },
+      {
+        "id": "urn:ngm:class:point-cloud-processing",
+        "label": "Point Cloud Processing"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:gps-navigation",
+        "label": "GPS Navigation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:metaverse-domain",
+        "label": "Metaverse Domain"
+      },
+      {
+        "id": "urn:ngm:class:virtual-environment",
+        "label": "Virtual Environment"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:deep-learning",
@@ -49,6 +101,18 @@
       {
         "id": "urn:ngm:class:pose-estimation",
         "label": "Pose Estimation"
+      },
+      {
+        "id": "urn:ngm:class:lidar",
+        "label": "LiDAR"
+      },
+      {
+        "id": "urn:ngm:class:visual-odometry",
+        "label": "Visual Odometry"
+      },
+      {
+        "id": "urn:ngm:class:kalman-filter",
+        "label": "Kalman Filter"
       }
     ],
     "supports": [],
@@ -59,7 +123,16 @@
         "label": "Spatial Computing"
       }
     ],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:graph-optimization",
+        "label": "Graph Optimization"
+      }
+    ]
   },
   "wikilinks": [
     {

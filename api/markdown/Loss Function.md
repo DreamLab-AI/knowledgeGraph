@@ -42,32 +42,160 @@ public:: true
   "@id": "urn:ngm:class:loss-function",
   "@type": "Class",
   "label": "Loss Function",
-  "definition": "Loss Function is a artificial intelligence concept and a type of artificial-intelligence.",
-  "domain": "artificial-intelligence",
-  "maturity": "draft",
-  "subClassOf": [
+  "definition": "A Loss Function is a mathematical function that quantifies the discrepancy between a model's predicted outputs and true target values, producing a scalar error measure that serves as the objective for optimisation algorithms during training.",
+  "domain": "machine-learning",
+  "maturity": "stable",
+  "subClassOf": {
+    "@id": "urn:ngm:class:objective-function",
+    "label": "Objective Function"
+  },
+  "sameAs": [
     {
-      "@id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique"
+      "@id": "urn:ngm:class:cost-function",
+      "label": "Cost Function"
+    },
+    {
+      "@id": "urn:ngm:class:error-function",
+      "label": "Error Function"
+    },
+    {
+      "@id": "urn:ngm:class:criterion-function",
+      "label": "Criterion Function"
     }
   ],
-  "quality": 0.5,
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:mean-squared-error",
+        "label": "Mean Squared Error"
+      },
+      {
+        "@id": "urn:ngm:class:cross-entropy-loss",
+        "label": "Cross-Entropy Loss"
+      },
+      {
+        "@id": "urn:ngm:class:hinge-loss",
+        "label": "Hinge Loss"
+      },
+      {
+        "@id": "urn:ngm:class:mean-absolute-error",
+        "label": "Mean Absolute Error"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:model-training-pipeline",
+        "label": "Model Training Pipeline"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:ground-truth-label",
+        "label": "Ground Truth Label"
+      },
+      {
+        "@id": "urn:ngm:class:model-prediction",
+        "label": "Model Prediction"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "@id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "@id": "urn:ngm:class:model-convergence",
+        "label": "Model Convergence"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:statistical-risk-minimisation",
+        "label": "Statistical Risk Minimisation"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:calculus-chain-rule",
+        "label": "Calculus Chain Rule"
+      },
+      {
+        "@id": "urn:ngm:class:automatic-differentiation",
+        "label": "Automatic Differentiation"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:generative-adversarial-network",
+        "label": "Generative Adversarial Network"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:iso-iec-22989-2022",
+        "label": "ISO/IEC 22989:2022"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:evaluation-metric",
+        "label": "Evaluation Metric"
+      },
+      {
+        "@id": "urn:ngm:class:overfitting",
+        "label": "Overfitting"
+      }
+    ],
     "bridgesTo": [
       {
         "@id": "urn:ngm:class:evaluation-metric",
         "label": "Evaluation Metric"
+      },
+      {
+        "@id": "urn:ngm:class:optimisation-theory",
+        "label": "Optimisation Theory"
       }
     ],
     "relatedTo": [
       {
         "@id": "urn:ngm:class:artificial-intelligence",
-        "label": "artificial-intelligence"
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:regularisation",
+        "label": "Regularisation"
+      },
+      {
+        "@id": "urn:ngm:class:hyperparameter-tuning",
+        "label": "Hyperparameter Tuning"
       }
     ]
   }

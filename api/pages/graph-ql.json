@@ -13,11 +13,29 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:graphql-schema-definition-language",
+        "label": "GraphQL Schema Definition Language"
+      },
+      {
+        "id": "urn:ngm:class:graphql-query",
+        "label": "GraphQL Query"
+      },
+      {
+        "id": "urn:ngm:class:graphql-subscription",
+        "label": "GraphQL Subscription"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:type-system",
+        "label": "Type System"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:api-integration",
@@ -26,16 +44,47 @@
       {
         "id": "urn:ngm:class:microservices-architecture",
         "label": "Microservices Architecture"
+      },
+      {
+        "id": "urn:ngm:class:schema-introspection",
+        "label": "Schema Introspection"
+      },
+      {
+        "id": "urn:ngm:class:code-generation",
+        "label": "Code Generation"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:declarative-data-fetching",
+        "label": "Declarative Data Fetching"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:rest-api",
+        "label": "REST API"
+      },
+      {
+        "id": "urn:ngm:class:grpc",
+        "label": "gRPC"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:json-data-interchange-format",
-        "label": "json"
+        "label": "JSON Data Interchange Format"
       },
       {
         "id": "urn:ngm:class:schema-definition",
@@ -44,10 +93,32 @@
       {
         "id": "urn:ngm:class:http-protocol",
         "label": "HTTP Protocol"
+      },
+      {
+        "id": "urn:ngm:class:type-system",
+        "label": "Type System"
       }
     ],
-    "supports": [],
-    "standardizedBy": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:federation-pattern",
+        "label": "Federation Pattern"
+      },
+      {
+        "id": "urn:ngm:class:dataloader-pattern",
+        "label": "DataLoader Pattern"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:graphql-foundation",
+        "label": "GraphQL Foundation"
+      },
+      {
+        "id": "urn:ngm:class:linux-foundation",
+        "label": "Linux Foundation"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -61,6 +132,14 @@
       {
         "id": "urn:ngm:class:api-gateway",
         "label": "API Gateway"
+      },
+      {
+        "id": "urn:ngm:class:grpc",
+        "label": "gRPC"
+      },
+      {
+        "id": "urn:ngm:class:openapi-specification",
+        "label": "OpenAPI Specification"
       }
     ]
   },

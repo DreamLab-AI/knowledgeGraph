@@ -90,23 +90,51 @@ public:: true
   "domain": "artificial-intelligence",
   "maturity": "emerging",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:ai-application",
-      "label": "AI Application"
-    },
-    {
-      "@id": "urn:ngm:class:natural-language-processing",
-      "label": "Natural Language Processing"
-    }
-  ],
-  "quality": 0.5,
+  "subClassOf": {
+    "@id": "urn:ngm:class:natural-language-processing",
+    "label": "Natural Language Processing"
+  },
+  "quality": 0.65,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
   },
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:neural-machine-translation",
+      "label": "Neural Machine Translation"
+    },
+    {
+      "@id": "urn:ngm:class:automated-translation",
+      "label": "Automated Translation"
+    },
+    {
+      "@id": "urn:ngm:class:computational-translation",
+      "label": "Computational Translation"
+    }
+  ],
   "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:encoder-decoder-architecture",
+        "label": "Encoder Decoder Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:beam-search-decoding",
+        "label": "Beam Search Decoding"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:language-modeling",
@@ -115,16 +143,76 @@ public:: true
       {
         "@id": "urn:ngm:class:training-data",
         "label": "Training Data"
+      },
+      {
+        "@id": "urn:ngm:class:multilingual-corpus",
+        "label": "Multilingual Corpus"
+      },
+      {
+        "@id": "urn:ngm:class:tokenisation",
+        "label": "Tokenisation"
       }
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:attention-mechanism",
-        "label": "Attention Mechanism"
+        "@id": "urn:ngm:class:transformer",
+        "label": "Transformer"
       },
       {
-        "@id": "urn:ngm:class:encoder-decoder-architecture",
-        "label": "Encoder Decoder Architecture"
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:cross-lingual-transfer-learning",
+        "label": "Cross-Lingual Transfer Learning"
+      },
+      {
+        "@id": "urn:ngm:class:byte-pair-encoding",
+        "label": "Byte Pair Encoding"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:document-localisation",
+        "label": "Document Localisation"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-interpretation",
+        "label": "Real-Time Interpretation"
+      },
+      {
+        "@id": "urn:ngm:class:multilingual-content-access",
+        "label": "Multilingual Content Access"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:parallel-corpora",
+        "label": "Parallel Corpora"
+      },
+      {
+        "@id": "urn:ngm:class:word-embeddings",
+        "label": "Word Embeddings"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:sequence-to-sequence-model",
+        "label": "Sequence-to-Sequence Model"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:rule-based-machine-translation",
+        "label": "Rule-Based Machine Translation"
+      },
+      {
+        "@id": "urn:ngm:class:statistical-machine-translation",
+        "label": "Statistical Machine Translation"
+      },
+      {
+        "@id": "urn:ngm:class:human-translation",
+        "label": "Human Translation"
       }
     ],
     "relatedTo": [
@@ -135,6 +223,28 @@ public:: true
       {
         "@id": "urn:ngm:class:transfer-learning",
         "label": "Transfer Learning"
+      },
+      {
+        "@id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:bleu-score",
+        "label": "BLEU Score"
+      },
+      {
+        "@id": "urn:ngm:class:low-resource-language",
+        "label": "Low-Resource Language"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:metaverse-interoperability",
+        "label": "Metaverse Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:protocol-translation",
+        "label": "Protocol Translation"
       }
     ]
   }

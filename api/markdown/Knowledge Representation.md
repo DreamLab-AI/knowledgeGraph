@@ -58,35 +58,70 @@ public:: true
   "@id": "urn:ngm:class:knowledge-representation",
   "@type": "Class",
   "label": "Knowledge Representation",
-  "definition": "Knowledge Representation in AI involves the formal encoding of information about the world in a computationally tractable format that enables reasoning, inference, and decision-making.",
+  "definition": "Knowledge Representation in AI involves the formal encoding of information about the world in a computationally tractable format that enables reasoning, inference, and decision-making. Approaches include symbolic systems (first-order logic, description logics, semantic networks), graph-based representations (knowledge graphs, ontologies), probabilistic models (Bayesian networks, Markov logic networks), and distributed representations (embeddings, neural-symbolic integration).",
   "domain": "artificial-intelligence",
   "maturity": "emerging",
+  "subClassOf": {
+    "@id": "urn:ngm:class:ai-research-area",
+    "label": "AI Research Area"
+  },
   "relations": {
     "uses": [
       {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
       {"@id": "urn:ngm:class:semantic-web-linked-data-standard", "label": "Semantic Web"},
-      {"@id": "urn:ngm:class:ontology", "label": "Ontology"}
+      {"@id": "urn:ngm:class:ontology", "label": "Ontology"},
+      {"@id": "urn:ngm:class:description-logic", "label": "Description Logic"},
+      {"@id": "urn:ngm:class:first-order-logic", "label": "First-Order Logic"},
+      {"@id": "urn:ngm:class:semantic-network", "label": "Semantic Network"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:bayesian-inference", "label": "Bayesian Inference"},
-      {"@id": "urn:ngm:class:question-answering", "label": "Question Answering"}
+      {"@id": "urn:ngm:class:question-answering", "label": "Question Answering"},
+      {"@id": "urn:ngm:class:automated-reasoning", "label": "Automated Reasoning"},
+      {"@id": "urn:ngm:class:explainable-ai", "label": "Explainable AI"},
+      {"@id": "urn:ngm:class:expert-system", "label": "Expert System"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:ontology", "label": "Ontology"},
+      {"@id": "urn:ngm:class:frame-representation", "label": "Frame Representation"},
+      {"@id": "urn:ngm:class:production-rule-system", "label": "Production Rule System"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:formal-logic", "label": "Formal Logic"},
+      {"@id": "urn:ngm:class:controlled-vocabulary", "label": "Controlled Vocabulary"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:open-world-assumption", "label": "Open World Assumption"},
+      {"@id": "urn:ngm:class:closed-world-assumption", "label": "Closed World Assumption"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:knowledge-management", "label": "Knowledge Management"},
+      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
+      {"@id": "urn:ngm:class:sub-symbolic-ai", "label": "Sub-Symbolic AI"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:linked-data", "label": "Linked Data"},
+      {"@id": "urn:ngm:class:database-schema", "label": "Database Schema"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:knowledge-management", "label": "Knowledge Management"}
+      {"@id": "urn:ngm:class:knowledge-management", "label": "Knowledge Management"},
+      {"@id": "urn:ngm:class:neural-symbolic-integration", "label": "Neural-Symbolic Integration"},
+      {"@id": "urn:ngm:class:information-extraction", "label": "Information Extraction"}
     ]
   },
-  "quality": 0.35,
+  "sameAs": [
+    {"@id": "urn:ngm:class:knowledge-engineering", "label": "Knowledge Engineering"},
+    {"@id": "urn:ngm:class:kr-and-r", "label": "KR&R"}
+  ],
+  "quality": 0.65,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
-  },
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:ai-research-area",
-      "label": "AI Research Area"
-    }
-  ]
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

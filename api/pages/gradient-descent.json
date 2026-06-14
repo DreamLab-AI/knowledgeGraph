@@ -4,19 +4,32 @@
   "slug": "gradient-descent",
   "public": true,
   "classIri": "urn:ngm:class:gradient-descent",
-  "domain": "artificial-intelligence",
+  "domain": "machine-learning",
   "definition": "Gradient Descent is an iterative first-order optimisation algorithm that minimises a differentiable loss function by repeatedly updating model parameters in the direction of the negative gradient. It is the foundational optimisation strategy for training machine learning models, with variants including batch, stochastic, and mini-batch gradient descent, as well as adaptive-rate methods such as Adam and RMSProp.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique"
+      "id": "urn:ngm:class:optimisation-algorithm",
+      "label": "Optimisation Algorithm"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.72,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:stochastic-gradient-descent",
+        "label": "Stochastic Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:batch-gradient-descent",
+        "label": "Batch Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:mini-batch-gradient-descent",
+        "label": "Mini-Batch Gradient Descent"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:backpropagation",
@@ -25,6 +38,14 @@
       {
         "id": "urn:ngm:class:loss-function",
         "label": "Loss Function"
+      },
+      {
+        "id": "urn:ngm:class:differentiable-function",
+        "label": "Differentiable Function"
+      },
+      {
+        "id": "urn:ngm:class:learning-rate",
+        "label": "Learning Rate"
       }
     ],
     "enables": [
@@ -35,22 +56,91 @@
       {
         "id": "urn:ngm:class:fine-tuning",
         "label": "Fine Tuning"
+      },
+      {
+        "id": "urn:ngm:class:neural-network-training",
+        "label": "Neural Network Training"
+      },
+      {
+        "id": "urn:ngm:class:convergence",
+        "label": "Convergence"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:objective-function",
+        "label": "Objective Function"
+      },
+      {
+        "id": "urn:ngm:class:parameter-space",
+        "label": "Parameter Space"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:first-order-optimisation",
+        "label": "First-Order Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:numerical-optimisation",
+        "label": "Numerical Optimisation"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:second-order-optimisation",
+        "label": "Second-Order Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:evolutionary-algorithm",
+        "label": "Evolutionary Algorithm"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:distributed-training",
+        "label": "Distributed Training"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:hyperparameter",
         "label": "Hyperparameter"
+      },
+      {
+        "id": "urn:ngm:class:gradient",
+        "label": "Gradient"
+      },
+      {
+        "id": "urn:ngm:class:mini-batch",
+        "label": "Mini-Batch"
       }
     ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:adam-optimiser",
+        "label": "Adam Optimiser"
+      },
+      {
+        "id": "urn:ngm:class:rmsprop",
+        "label": "RMSProp"
+      },
+      {
+        "id": "urn:ngm:class:momentum",
+        "label": "Momentum"
+      },
+      {
+        "id": "urn:ngm:class:weight-initialisation",
+        "label": "Weight Initialisation"
+      }
+    ]
   },
   "wikilinks": [
     {

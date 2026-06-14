@@ -84,18 +84,12 @@ alias:: CarbonAccounting
   "@type": "Class",
   "label": "Carbon Accounting",
   "definition": "The systematic process of measuring, recording, and reporting an organization's greenhouse gas emissions across direct operations (Scope 1), purchased energy (Scope 2), and value chain activities (Scope 3), expressed in CO2 equivalent units to quantify climate impact and enable reduction strategies.",
-  "domain": "spatial-computing",
+  "domain": "governance",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:sc-governance-and-safety",
-      "label": "Governance and Safety"
-    },
-    {
-      "@id": "urn:ngm:class:environmental-accounting",
-      "label": "Environmental Accounting"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:environmental-accounting",
+    "label": "Environmental Accounting"
+  },
   "relations": {
     "requires": [
       {
@@ -109,6 +103,14 @@ alias:: CarbonAccounting
       {
         "@id": "urn:ngm:class:verification-process",
         "label": "Verification Process"
+      },
+      {
+        "@id": "urn:ngm:class:greenhouse-gas-protocol",
+        "label": "Greenhouse Gas Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:materiality-assessment",
+        "label": "Materiality Assessment"
       }
     ],
     "enables": [
@@ -123,14 +125,110 @@ alias:: CarbonAccounting
       {
         "@id": "urn:ngm:class:regulatory-compliance",
         "label": "Regulatory Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:net-zero-target-setting",
+        "label": "Net Zero Target Setting"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-offsetting",
+        "label": "Carbon Offsetting"
+      },
+      {
+        "@id": "urn:ngm:class:esg-disclosure",
+        "label": "ESG Disclosure"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:scope-1-emissions",
+        "label": "Scope 1 Emissions"
+      },
+      {
+        "@id": "urn:ngm:class:scope-2-emissions",
+        "label": "Scope 2 Emissions"
+      },
+      {
+        "@id": "urn:ngm:class:scope-3-emissions",
+        "label": "Scope 3 Emissions"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:corporate-sustainability-reporting",
+        "label": "Corporate Sustainability Reporting"
+      },
+      {
+        "@id": "urn:ngm:class:climate-risk-management",
+        "label": "Climate Risk Management"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:iso-14064",
+        "label": "ISO 14064"
+      },
+      {
+        "@id": "urn:ngm:class:issb-ifrs-s2",
+        "label": "ISSB IFRS S2"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:life-cycle-assessment",
+        "label": "Life Cycle Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain-data",
+        "label": "Supply Chain Data"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:carbon-footprinting",
+        "label": "Carbon Footprinting"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      },
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:carbon-credit",
+        "label": "Carbon Credit"
+      },
+      {
+        "@id": "urn:ngm:class:science-based-targets",
+        "label": "Science Based Targets"
       }
     ]
   },
-  "quality": 0.35,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:ghg-accounting",
+      "label": "GHG Accounting"
+    },
+    {
+      "@id": "urn:ngm:class:greenhouse-gas-accounting",
+      "label": "Greenhouse Gas Accounting"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

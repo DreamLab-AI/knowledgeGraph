@@ -22,26 +22,55 @@ alias:: CollectiveIntelligence
   "@type": "Class",
   "label": "Collective Intelligence",
   "definition": "Collective intelligence is the shared or group intelligence that emerges from the collaboration, competition, and collective decision-making of many individuals or agents, producing cognitive capacities — prediction accuracy, problem-solving breadth, creative output — that exceed what any individual participant could achieve alone. It manifests in biological systems such as ant colonies and immune networks, human social institutions, and engineered multi-agent systems, and is characterised by distributed information processing, diversity of perspective, and aggregation mechanisms.",
-  "domain": "ai",
+  "domain": "distributed-collaboration",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:collective-intelligence-system", "label": "Collective Intelligence System"}],
+  "subClassOf": {"@id": "urn:ngm:class:collective-intelligence-system", "label": "Collective Intelligence System"},
   "relations": {
     "uses": [
       {"@id": "urn:ngm:class:multi-agent-system", "label": "Multi-Agent System"},
-      {"@id": "urn:ngm:class:knowledge-management", "label": "Knowledge Management"}
+      {"@id": "urn:ngm:class:knowledge-management", "label": "Knowledge Management"},
+      {"@id": "urn:ngm:class:aggregation-mechanism", "label": "Aggregation Mechanism"},
+      {"@id": "urn:ngm:class:swarm-intelligence", "label": "Swarm Intelligence"},
+      {"@id": "urn:ngm:class:prediction-market", "label": "Prediction Market"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:collective-decision-making", "label": "Collective Decision Making"},
       {"@id": "urn:ngm:class:emergence", "label": "Emergence"},
-      {"@id": "urn:ngm:class:decentralised-coordination", "label": "Decentralised Coordination"}
+      {"@id": "urn:ngm:class:decentralised-coordination", "label": "Decentralised Coordination"},
+      {"@id": "urn:ngm:class:open-source-development", "label": "Open Source Development"},
+      {"@id": "urn:ngm:class:crowd-sourcing", "label": "Crowd Sourcing"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:diversity-of-perspective", "label": "Diversity of Perspective"},
+      {"@id": "urn:ngm:class:distributed-information-processing", "label": "Distributed Information Processing"},
+      {"@id": "urn:ngm:class:incentive-design", "label": "Incentive Design"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:wisdom-of-crowds", "label": "Wisdom of Crowds"},
+      {"@id": "urn:ngm:class:stigmergy", "label": "Stigmergy"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:multi-agent-systems", "label": "Multi-Agent Systems"},
       {"@id": "urn:ngm:class:governance", "label": "Governance"},
-      {"@id": "urn:ngm:class:agent-based-models", "label": "Agent-Based Models"}
+      {"@id": "urn:ngm:class:agent-based-models", "label": "Agent-Based Models"},
+      {"@id": "urn:ngm:class:ensemble-learning", "label": "Ensemble Learning"},
+      {"@id": "urn:ngm:class:superforecasting", "label": "Superforecasting"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:decentralised-autonomous-organisation", "label": "Decentralised Autonomous Organisation"},
+      {"@id": "urn:ngm:class:ant-colony-optimisation", "label": "Ant Colony Optimisation"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:group-intelligence", "label": "Group Intelligence"},
+    {"@id": "urn:ngm:class:wisdom-of-crowds", "label": "Wisdom of Crowds"}
+  ],
+  "quality": 0.8,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

@@ -94,17 +94,35 @@ alias:: End-Effector
   "definition": "End Effector - A task-specific tool or manipulator mounted at the Robot Wrist that physically interacts with the environment (gripper, welder, drill, camera), translating robotic control commands into productive work through mechanical, electrical, or pneumatic actuation.",
   "domain": "robotics",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:robo-actuation-and-control",
-      "label": "Actuation and Control"
-    },
-    {
-      "@id": "urn:ngm:class:mechanical-component",
-      "label": "Mechanical Component"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:robo-actuation-and-control",
+    "label": "Actuation and Control"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:gripper",
+        "label": "Gripper"
+      },
+      {
+        "@id": "urn:ngm:class:tactile-sensor",
+        "label": "Tactile Sensor"
+      },
+      {
+        "@id": "urn:ngm:class:tool-changer",
+        "label": "Tool Changer"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:manipulation-system",
+        "label": "Manipulation System"
+      },
+      {
+        "@id": "urn:ngm:class:robot-arm",
+        "label": "Robot Arm"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:control-interface",
@@ -117,6 +135,14 @@ alias:: End-Effector
       {
         "@id": "urn:ngm:class:mechanical-interface",
         "label": "Mechanical Interface"
+      },
+      {
+        "@id": "urn:ngm:class:robot-wrist",
+        "label": "Robot Wrist"
+      },
+      {
+        "@id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
       }
     ],
     "enables": [
@@ -131,24 +157,98 @@ alias:: End-Effector
       {
         "@id": "urn:ngm:class:precision-manufacturing",
         "label": "Precision Manufacturing"
-      }
-    ],
-    "partOf": [
-      {
-        "@id": "urn:ngm:class:manipulation-system",
-        "label": "Manipulation System"
       },
       {
-        "@id": "urn:ngm:class:robot-arm",
-        "label": "Robot Arm"
+        "@id": "urn:ngm:class:pick-and-place",
+        "label": "Pick and Place"
+      },
+      {
+        "@id": "urn:ngm:class:human-robot-collaboration",
+        "label": "Human-Robot Collaboration"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:robot-kinematics",
+        "label": "Robot Kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:inverse-kinematics",
+        "label": "Inverse Kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:pneumatic-actuation",
+        "label": "Pneumatic Actuation"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:industrial-automation",
+        "label": "Industrial Automation"
+      },
+      {
+        "@id": "urn:ngm:class:collaborative-robotics",
+        "label": "Collaborative Robotics"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:iso-8373",
+        "label": "ISO 8373"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:robot-joint",
+        "label": "Robot Joint"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain-automation",
+        "label": "Supply Chain Automation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:soft-robotics",
+        "label": "Soft Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:degrees-of-freedom",
+        "label": "Degrees of Freedom"
       }
     ]
   },
-  "quality": 0.59,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:robot-end-effector",
+      "label": "Robot End-Effector"
+    },
+    {
+      "@id": "urn:ngm:class:robotic-tool",
+      "label": "Robotic Tool"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

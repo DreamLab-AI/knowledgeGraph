@@ -8,11 +8,30 @@
 
 - ### Relationships
   - partOf [[Generative AI]]
+  - partOf [[Deep Learning]]
+  - hasPart [[Generator Network]]
+  - hasPart [[Discriminator Network]]
+  - hasPart [[Adversarial Training]]
+  - requires [[Neural Network]]
+  - requires [[Training Data]]
+  - requires [[Backpropagation]]
   - enables [[Image Generation]]
   - enables [[Synthetic Data]]
   - enables [[Synthetic Media]]
+  - enables [[Data Augmentation]]
+  - enables [[Deepfake]]
+  - enables [[Super-Resolution]]
+  - implements [[Min-Max Game]]
+  - implements [[Unsupervised Learning]]
+  - uses [[Convolutional Neural Network]]
+  - uses [[Latent Space]]
   - contrastsWith [[Diffusion Model]]
   - contrastsWith [[Autoencoder]]
+  - contrastsWith [[Variational Autoencoder]]
+  - relatedTo [[Computer Vision]]
+  - relatedTo [[Natural Language Processing]]
+  - bridgesTo [[Federated Learning]]
+  - bridgesTo [[Privacy-Preserving AI]]
 
 - ### Content
   - ### Primary Definition

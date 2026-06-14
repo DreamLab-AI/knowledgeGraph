@@ -58,17 +58,39 @@ public:: true
   "@id": "urn:ngm:class:gl-tf",
   "@type": "Class",
   "label": "glTF",
-  "definition": "glTF (GL Transmission Format) is an open royalty-free standard from the Khronos Group for the efficient transmission and loading of 3D scenes and models, defining geometry, materials, animation and scene structure in a compact runtime format.",
-  "domain": "metaverse",
+  "definition": "glTF (GL Transmission Format) is an open royalty-free standard from the Khronos Group for the efficient transmission and loading of 3D scenes and models, defining geometry, materials, animation and scene structure in a compact runtime format optimised for direct upload to graphics APIs.",
+  "domain": "spatial-computing",
   "maturity": "established",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:3-d-file-format",
-      "label": "3D File Format"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:3-d-file-format",
+    "label": "3D File Format"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:binary-buffer",
+        "label": "Binary Buffer"
+      },
+      {
+        "@id": "urn:ngm:class:scene-graph",
+        "label": "Scene Graph"
+      },
+      {
+        "@id": "urn:ngm:class:physically-based-rendering-material",
+        "label": "Physically Based Rendering Material"
+      },
+      {
+        "@id": "urn:ngm:class:skeletal-animation",
+        "label": "Skeletal Animation"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:3-d-asset-pipeline",
+        "label": "3D Asset Pipeline"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:3-d-model",
@@ -87,14 +109,112 @@ public:: true
       {
         "@id": "urn:ngm:class:real-time-rendering",
         "label": "Real-Time Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:web-based-3-d-rendering",
+        "label": "Web-Based 3D Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality-content-delivery",
+        "label": "Augmented Reality Content Delivery"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:webgl",
+        "label": "WebGL"
+      },
+      {
+        "@id": "urn:ngm:class:json",
+        "label": "JSON"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:khronos-group-standard",
+        "label": "Khronos Group Standard"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:draco-mesh-compression",
+        "label": "Draco Mesh Compression"
+      },
+      {
+        "@id": "urn:ngm:class:meshopt-compression",
+        "label": "Meshopt Compression"
+      },
+      {
+        "@id": "urn:ngm:class:ktx2-texture",
+        "label": "KTX2 Texture"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:web-xr",
+        "label": "WebXR"
+      },
+      {
+        "@id": "urn:ngm:class:threejs",
+        "label": "Three.js"
+      },
+      {
+        "@id": "urn:ngm:class:babylon-js",
+        "label": "Babylon.js"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:khronos-group",
+        "label": "Khronos Group"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:fbx",
+        "label": "FBX"
+      },
+      {
+        "@id": "urn:ngm:class:obj-file-format",
+        "label": "OBJ File Format"
+      },
+      {
+        "@id": "urn:ngm:class:collada",
+        "label": "COLLADA"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:metaverse-platform",
+        "label": "Metaverse Platform"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:usd-universal-scene-description",
+        "label": "USD Universal Scene Description"
+      },
+      {
+        "@id": "urn:ngm:class:open-xr",
+        "label": "OpenXR"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:gl-transmission-format",
+      "label": "GL Transmission Format"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

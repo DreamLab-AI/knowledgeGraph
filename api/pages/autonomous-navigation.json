@@ -4,23 +4,28 @@
   "slug": "autonomous-navigation",
   "public": true,
   "classIri": "urn:ngm:class:autonomous-navigation",
-  "domain": "spatial-computing",
-  "definition": "Autonomous Navigation encompasses the complete system capability for a robot or autonomous agent to move from one location to another without human guidance, integrating perception, localisation, mapping, path planning, obstacle avoidance, and control.",
+  "domain": "robotics",
+  "definition": "Autonomous Navigation encompasses the complete system capability for a robot or autonomous agent to move from one location to another without human guidance, integrating perception, localisation, mapping, path planning, obstacle avoidance, and control. Autonomous navigation systems employ SLAM, sensor fusion, and AI-based decision-making to operate safely in unknown or dynamic environments.",
   "subClassOf": [
-    {
-      "id": "urn:ngm:class:sc-platform-and-environment",
-      "label": "Platform and Environment"
-    },
     {
       "id": "urn:ngm:class:autonomous-agent",
       "label": "Autonomous Agent"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.72,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:localisation",
+        "label": "Localisation"
+      },
+      {
+        "id": "urn:ngm:class:obstacle-avoidance",
+        "label": "Obstacle Avoidance"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:slam",
@@ -29,6 +34,14 @@
       {
         "id": "urn:ngm:class:sensor-fusion",
         "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:odometry",
+        "label": "Odometry"
+      },
+      {
+        "id": "urn:ngm:class:perception",
+        "label": "Perception"
       }
     ],
     "enables": [
@@ -39,12 +52,52 @@
       {
         "id": "urn:ngm:class:autonomous-vehicle",
         "label": "Autonomous Vehicle"
+      },
+      {
+        "id": "urn:ngm:class:unmanned-aerial-vehicle",
+        "label": "Unmanned Aerial Vehicle"
+      },
+      {
+        "id": "urn:ngm:class:delivery-robot",
+        "label": "Delivery Robot"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:real-time-computing",
+        "label": "Real-Time Computing"
+      },
+      {
+        "id": "urn:ngm:class:coordinate-frame",
+        "label": "Coordinate Frame"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:a-star-algorithm",
+        "label": "A* Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:pid-controller",
+        "label": "PID Controller"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:teleoperation",
+        "label": "Teleoperation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:path-planning",
@@ -53,12 +106,43 @@
       {
         "id": "urn:ngm:class:motion-planning",
         "label": "Motion Planning"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:lidar",
+        "label": "LiDAR"
       }
     ],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human-Robot Interaction"
+      },
+      {
+        "id": "urn:ngm:class:search-and-rescue-robotics",
+        "label": "Search and Rescue Robotics"
+      }
+    ],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:mobile-robotics",
+        "label": "Mobile Robotics"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:kalman-filter",
+        "label": "Kalman Filter"
+      }
+    ]
   },
   "wikilinks": [
     {

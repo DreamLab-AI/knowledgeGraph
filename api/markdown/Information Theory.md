@@ -82,12 +82,10 @@ public:: true
   "domain": "machine-learning",
   "maturity": "established",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:owl-thing",
-      "label": "owl:Thing"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:applied-mathematics",
+    "label": "Applied Mathematics"
+  },
   "relations": {
     "hasPart": [
       {
@@ -101,12 +99,28 @@ public:: true
       {
         "@id": "urn:ngm:class:channel-capacity",
         "label": "Channel Capacity"
+      },
+      {
+        "@id": "urn:ngm:class:kullback-leibler-divergence",
+        "label": "Kullback-Leibler Divergence"
+      },
+      {
+        "@id": "urn:ngm:class:source-coding",
+        "label": "Source Coding"
+      },
+      {
+        "@id": "urn:ngm:class:channel-coding",
+        "label": "Channel Coding"
       }
     ],
     "requires": [
       {
         "@id": "urn:ngm:class:probability-theory",
         "label": "Probability Theory"
+      },
+      {
+        "@id": "urn:ngm:class:statistics",
+        "label": "Statistics"
       }
     ],
     "enables": [
@@ -121,14 +135,82 @@ public:: true
       {
         "@id": "urn:ngm:class:cryptography",
         "label": "Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:digital-communication",
+        "label": "Digital Communication"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:feature-selection",
+        "label": "Feature Selection"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:random-variable",
+        "label": "Random Variable"
+      },
+      {
+        "@id": "urn:ngm:class:logarithmic-measure",
+        "label": "Logarithmic Measure"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:algorithmic-information-theory",
+        "label": "Algorithmic Information Theory"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:thermodynamics",
+        "label": "Thermodynamics"
+      },
+      {
+        "@id": "urn:ngm:class:quantum-information",
+        "label": "Quantum Information"
+      },
+      {
+        "@id": "urn:ngm:class:network-coding",
+        "label": "Network Coding"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:coding-theory",
+        "label": "Coding Theory"
+      },
+      {
+        "@id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:shannon-theory",
+      "label": "Shannon Theory"
+    },
+    {
+      "@id": "urn:ngm:class:mathematical-theory-of-communication",
+      "label": "Mathematical Theory of Communication"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

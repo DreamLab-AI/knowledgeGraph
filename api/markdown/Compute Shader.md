@@ -73,36 +73,67 @@ public:: true
   "definition": "A Compute Shader is a programmable GPU kernel that executes arbitrary parallel computations outside the traditional graphics rendering pipeline, enabling general-purpose GPU (GPGPU) workloads such as physics simulation, procedural generation, image post-processing, and data-parallel algorithms within real-time 3D and metaverse applications.",
   "domain": "spatial-computing",
   "maturity": "emerging",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:sc-display-and-rendering",
-      "label": "Display and Rendering"
-    },
-    {
-      "@id": "urn:ngm:class:metaverse",
-      "label": "Metaverse"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:sc-display-and-rendering",
+    "label": "Display and Rendering"
+  },
   "relations": {
     "hasPart": [
       {"@id": "urn:ngm:class:vertex-shader", "label": "Vertex Shader"},
-      {"@id": "urn:ngm:class:pixel-shader", "label": "Pixel Shader"}
+      {"@id": "urn:ngm:class:pixel-shader", "label": "Pixel Shader"},
+      {"@id": "urn:ngm:class:workgroup", "label": "Workgroup"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:gpu-pipeline", "label": "GPU Pipeline"},
+      {"@id": "urn:ngm:class:gpgpu", "label": "GPGPU"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:graphics-processing-unit", "label": "Graphics Processing Unit"},
+      {"@id": "urn:ngm:class:shader-compiler", "label": "Shader Compiler"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:physics-simulation", "label": "Physics Simulation"},
       {"@id": "urn:ngm:class:procedural-generation", "label": "Procedural Generation"},
-      {"@id": "urn:ngm:class:post-processing", "label": "Post Processing"}
+      {"@id": "urn:ngm:class:post-processing", "label": "Post Processing"},
+      {"@id": "urn:ngm:class:gpu-driven-rendering", "label": "GPU-Driven Rendering"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:parallel-computing", "label": "Parallel Computing"},
+      {"@id": "urn:ngm:class:memory-model", "label": "Memory Model"},
+      {"@id": "urn:ngm:class:thread-synchronization", "label": "Thread Synchronization"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:parallel-processing", "label": "Parallel Processing"},
-      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"}
+      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"},
+      {"@id": "urn:ngm:class:hlsl", "label": "HLSL"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:cpu-computing", "label": "CPU Computing"},
+      {"@id": "urn:ngm:class:sequential-algorithm", "label": "Sequential Algorithm"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:machine-learning-inference", "label": "Machine Learning Inference"},
+      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:vulkan-api", "label": "Vulkan API"},
+      {"@id": "urn:ngm:class:directx-12", "label": "DirectX 12"},
+      {"@id": "urn:ngm:class:webgpu", "label": "WebGPU"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:cuda", "label": "CUDA"},
+      {"@id": "urn:ngm:class:opencl", "label": "OpenCL"}
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {"@id": "urn:ngm:class:gpu-compute-kernel", "label": "GPU Compute Kernel"},
+    {"@id": "urn:ngm:class:general-purpose-gpu-shader", "label": "General-Purpose GPU Shader"}
+  ],
+  "quality": 0.68,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

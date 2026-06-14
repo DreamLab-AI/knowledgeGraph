@@ -58,17 +58,35 @@ public:: true
   "@id": "urn:ngm:class:decentralised-governance",
   "@type": "Class",
   "label": "Decentralised Governance",
-  "definition": "A model of collective decision-making in which authority is distributed across participants rather than concentrated in a central body, often implemented through on-chain voting and smart contracts.",
+  "definition": "A model of collective decision-making in which authority is distributed across participants rather than concentrated in a central body, often implemented through on-chain voting, token-weighted proposals, and smart contracts that execute decisions automatically once thresholds are met.",
   "domain": "governance",
   "maturity": "established",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:governance-framework",
-      "label": "Governance Framework"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:governance-framework",
+    "label": "Governance Framework"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:on-chain-voting",
+        "label": "On-Chain Voting"
+      },
+      {
+        "@id": "urn:ngm:class:token-weighted-voting",
+        "label": "Token-Weighted Voting"
+      },
+      {
+        "@id": "urn:ngm:class:proposal-mechanism",
+        "label": "Proposal Mechanism"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:decentralisation",
+        "label": "Decentralisation"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:smart-contract",
@@ -77,20 +95,116 @@ public:: true
       {
         "@id": "urn:ngm:class:transparency",
         "label": "Transparency"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:decentralised-autonomous-organisation",
         "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "@id": "urn:ngm:class:community-treasury",
+        "label": "Community Treasury"
+      },
+      {
+        "@id": "urn:ngm:class:permissionless-participation",
+        "label": "Permissionless Participation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:token",
+        "label": "Token"
+      },
+      {
+        "@id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:dao",
+        "label": "DAO"
+      },
+      {
+        "@id": "urn:ngm:class:liquid-democracy",
+        "label": "Liquid Democracy"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "@id": "urn:ngm:class:quadratic-voting",
+        "label": "Quadratic Voting"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:open-source-governance",
+        "label": "Open Source Governance"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:centralised-governance",
+        "label": "Centralised Governance"
+      },
+      {
+        "@id": "urn:ngm:class:hierarchical-organisation",
+        "label": "Hierarchical Organisation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "@id": "urn:ngm:class:collective-intelligence",
+        "label": "Collective Intelligence"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:voting-mechanism",
+        "label": "Voting Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:stakeholder-participation",
+        "label": "Stakeholder Participation"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:distributed-governance",
+      "label": "Distributed Governance"
+    },
+    {
+      "@id": "urn:ngm:class:on-chain-governance",
+      "label": "On-Chain Governance"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

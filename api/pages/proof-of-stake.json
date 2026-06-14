@@ -8,16 +8,12 @@
   "definition": "A consensus mechanism allowing blockchains to validate transactions and create new blocks based on the number of tokens held or staked by network participants. Validators are selected proportionally to their stake, replacing the energy-intensive mining of Proof of Work with a capital-cost security model that achieves deterministic or probabilistic finality.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:bc-protocol-and-consensus",
-      "label": "Protocol and Consensus"
-    },
-    {
       "id": "urn:ngm:class:proof-based-consensus",
       "label": "Proof-Based Consensus"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
     "hasPart": [
@@ -40,28 +36,92 @@
       {
         "id": "urn:ngm:class:liquid-proof-of-stake",
         "label": "Liquid Proof of Stake"
+      },
+      {
+        "id": "urn:ngm:class:slashing-condition",
+        "label": "Slashing Condition"
+      },
+      {
+        "id": "urn:ngm:class:staking-reward",
+        "label": "Staking Reward"
       }
     ],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:stake-deposit",
+        "label": "Stake Deposit"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-signature",
+        "label": "Cryptographic Signature"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:blockchain-sustainability",
         "label": "Blockchain Sustainability"
+      },
+      {
+        "id": "urn:ngm:class:sharding",
+        "label": "Sharding"
+      },
+      {
+        "id": "urn:ngm:class:layer-2-scaling",
+        "label": "Layer 2 Scaling"
+      },
+      {
+        "id": "urn:ngm:class:on-chain-governance",
+        "label": "On-Chain Governance"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public Key Cryptography"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:proof-of-work",
+        "label": "Proof of Work"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-authority",
+        "label": "Proof of Authority"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-history",
+        "label": "Proof of History"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:carbon-footprint",
+        "label": "Carbon Footprint"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
-      {
-        "id": "urn:ngm:class:proof-of-work",
-        "label": "Proof Of Work"
-      },
       {
         "id": "urn:ngm:class:finality",
         "label": "Finality"
@@ -73,6 +133,14 @@
       {
         "id": "urn:ngm:class:sustainable-consensus",
         "label": "Sustainable Consensus"
+      },
+      {
+        "id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:sybil-resistance",
+        "label": "Sybil Resistance"
       }
     ]
   },

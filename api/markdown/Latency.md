@@ -110,16 +110,42 @@ public:: true
   "@id": "urn:ngm:class:latency",
   "@type": "Class",
   "label": "Latency",
-  "definition": "Virtual performance metric representing the time delay between a user action and corresponding system response within networked immersive environments.",
-  "domain": "spatial-computing",
+  "definition": "Performance metric representing the time delay between a stimulus (user action, network request, or computation trigger) and the corresponding system response; a fundamental constraint in networked, real-time, and interactive systems spanning communication networks, distributed computing, and immersive environments.",
+  "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:sc-content-and-assets",
-      "label": "Content and Assets"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:network-performance-metrics",
+    "label": "Network Performance Metrics"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:propagation-delay",
+        "label": "Propagation Delay"
+      },
+      {
+        "@id": "urn:ngm:class:processing-delay",
+        "label": "Processing Delay"
+      },
+      {
+        "@id": "urn:ngm:class:queuing-delay",
+        "label": "Queuing Delay"
+      },
+      {
+        "@id": "urn:ngm:class:transmission-delay",
+        "label": "Transmission Delay"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:network-performance-metrics",
+        "label": "Network Performance Metrics"
+      },
+      {
+        "@id": "urn:ngm:class:quality-of-service",
+        "label": "Quality of Service"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:measurement-tools",
@@ -150,24 +176,92 @@ public:: true
       {
         "@id": "urn:ngm:class:performance-optimization",
         "label": "Performance Optimization"
-      }
-    ],
-    "partOf": [
-      {
-        "@id": "urn:ngm:class:network-performance-metrics",
-        "label": "Network Performance Metrics"
       },
       {
-        "@id": "urn:ngm:class:quality-of-service",
-        "label": "Quality of Service"
+        "@id": "urn:ngm:class:real-time-control",
+        "label": "Real-Time Control"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:routing-protocol",
+        "label": "Routing Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:bandwidth",
+        "label": "Bandwidth"
+      },
+      {
+        "@id": "urn:ngm:class:physical-layer",
+        "label": "Physical Layer"
+      },
+      {
+        "@id": "urn:ngm:class:network-layer",
+        "label": "Network Layer"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:throughput",
+        "label": "Throughput"
+      },
+      {
+        "@id": "urn:ngm:class:jitter",
+        "label": "Jitter"
+      },
+      {
+        "@id": "urn:ngm:class:packet-loss",
+        "label": "Packet Loss"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:round-trip-time",
+        "label": "Round-Trip Time"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "@id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:inference-serving",
+        "label": "Inference Serving"
       }
     ]
   },
-  "quality": 0.35,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:network-delay",
+      "label": "Network Delay"
+    },
+    {
+      "@id": "urn:ngm:class:response-time",
+      "label": "Response Time"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

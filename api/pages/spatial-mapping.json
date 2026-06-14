@@ -13,11 +13,37 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.7,
+  "qualityScore": 0.72,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:voxel-grid",
+        "label": "Voxel Grid"
+      },
+      {
+        "id": "urn:ngm:class:surface-mesh",
+        "label": "Surface Mesh"
+      },
+      {
+        "id": "urn:ngm:class:semantic-map",
+        "label": "Semantic Map"
+      },
+      {
+        "id": "urn:ngm:class:loop-closure-detection",
+        "label": "Loop Closure Detection"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:real-time-processing",
+        "label": "Real-Time Processing"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:augmented-reality",
@@ -26,12 +52,47 @@
       {
         "id": "urn:ngm:class:spatial-anchor",
         "label": "Spatial Anchor"
+      },
+      {
+        "id": "urn:ngm:class:occlusion",
+        "label": "Occlusion"
+      },
+      {
+        "id": "urn:ngm:class:indoor-navigation",
+        "label": "Indoor Navigation"
+      },
+      {
+        "id": "urn:ngm:class:mixed-reality",
+        "label": "Mixed Reality"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      },
+      {
+        "id": "urn:ngm:class:odometry",
+        "label": "Odometry"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:gps-positioning",
+        "label": "GPS Positioning"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicle"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:slam",
@@ -44,6 +105,22 @@
       {
         "id": "urn:ngm:class:computer-vision-system",
         "label": "Computer Vision System"
+      },
+      {
+        "id": "urn:ngm:class:depth-camera",
+        "label": "Depth Camera"
+      },
+      {
+        "id": "urn:ngm:class:inertial-measurement-unit",
+        "label": "Inertial Measurement Unit"
+      },
+      {
+        "id": "urn:ngm:class:photogrammetry",
+        "label": "Photogrammetry"
+      },
+      {
+        "id": "urn:ngm:class:neural-radiance-field",
+        "label": "Neural Radiance Field"
       }
     ],
     "supports": [],
@@ -53,6 +130,14 @@
       {
         "id": "urn:ngm:class:ar-technology",
         "label": "AR Technology"
+      },
+      {
+        "id": "urn:ngm:class:scene-understanding",
+        "label": "Scene Understanding"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
       }
     ]
   },

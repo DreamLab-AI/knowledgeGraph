@@ -74,19 +74,13 @@ public:: true
   "@id": "urn:ngm:class:avatar",
   "@type": "Class",
   "label": "Avatar",
-  "definition": "Digital representation of a person or agent used to interact within a virtual environment.",
+  "definition": "A digital representation of a person or autonomous agent used to perceive, act, and interact within a virtual or mixed-reality environment, embodying identity, appearance, and behavioural state.",
   "domain": "spatial-computing",
   "maturity": "established",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:sc-content-and-assets",
-      "label": "Content and Assets"
-    },
-    {
-      "@id": "urn:ngm:class:metaverse",
-      "label": "Metaverse"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:sc-content-and-assets",
+    "label": "Content and Assets"
+  },
   "relations": {
     "hasPart": [
       {
@@ -96,12 +90,38 @@ public:: true
       {
         "@id": "urn:ngm:class:visual-mesh",
         "label": "Visual Mesh"
+      },
+      {
+        "@id": "urn:ngm:class:skeleton",
+        "label": "Skeleton"
+      },
+      {
+        "@id": "urn:ngm:class:identity-credential",
+        "label": "Identity Credential"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-world",
+        "label": "Virtual World"
       }
     ],
     "requires": [
       {
         "@id": "urn:ngm:class:3-d-rendering-engine",
         "label": "3D Rendering Engine"
+      },
+      {
+        "@id": "urn:ngm:class:motion-capture",
+        "label": "Motion Capture"
+      },
+      {
+        "@id": "urn:ngm:class:physics-engine",
+        "label": "Physics Engine"
       }
     ],
     "enables": [
@@ -112,20 +132,116 @@ public:: true
       {
         "@id": "urn:ngm:class:social-presence",
         "label": "Social Presence"
+      },
+      {
+        "@id": "urn:ngm:class:non-verbal-communication",
+        "label": "Non-Verbal Communication"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
       }
     ],
-    "partOf": [
+    "dependsOn": [
       {
-        "@id": "urn:ngm:class:metaverse",
-        "label": "Metaverse"
+        "@id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      },
+      {
+        "@id": "urn:ngm:class:network-synchronisation",
+        "label": "Network Synchronisation"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:hanim",
+        "label": "HAnim"
+      },
+      {
+        "@id": "urn:ngm:class:glb-gltf",
+        "label": "glTF/GLB"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:inverse-kinematics",
+        "label": "Inverse Kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:level-of-detail",
+        "label": "Level of Detail"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      },
+      {
+        "@id": "urn:ngm:class:personalisation",
+        "label": "Personalisation"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:acm-web3-d-hanim",
+        "label": "ACM + Web3D HAnim"
+      },
+      {
+        "@id": "urn:ngm:class:iso-iec-19775",
+        "label": "ISO/IEC 19775 X3D"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:non-player-character",
+        "label": "Non-Player Character"
+      },
+      {
+        "@id": "urn:ngm:class:ai-agent",
+        "label": "AI Agent"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self-Sovereign Identity"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:xr-user-interface",
+        "label": "XR User Interface"
       }
     ]
   },
-  "quality": 0.35,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:virtual-agent",
+      "label": "Virtual Agent"
+    },
+    {
+      "@id": "urn:ngm:class:digital-persona",
+      "label": "Digital Persona"
+    }
+  ],
+  "quality": 0.70,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

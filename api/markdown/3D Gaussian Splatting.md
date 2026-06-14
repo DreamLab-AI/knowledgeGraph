@@ -67,40 +67,154 @@ alias:: TELE-051-3d-gaussian-splatting
   "@id": "urn:ngm:class:3-d-gaussian-splatting",
   "@type": "Class",
   "label": "3D Gaussian Splatting",
-  "definition": "\"A neural rendering technique that represents 3D scenes as collections of s of 3D Gaussian primitives with learnable positions, colours, opacities, and covariances, enabling photorealistic real-time rendering at 100+ frames per second through GPU-accelerated rasterisation, revolutionising telepre...",
-  "domain": "distributed-collaboration",
+  "definition": "A neural rendering technique that represents 3D scenes as collections of millions of 3D Gaussian primitives with learnable positions, colours, opacities, and covariances, enabling photorealistic real-time rendering at 100+ frames per second through GPU-accelerated rasterisation, revolutionising telepresence and immersive collaboration with unprecedented visual fidelity.",
+  "domain": "spatial-computing",
   "maturity": "emerging",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:dc-telepresence",
-      "label": "Telepresence"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:neural-rendering",
+    "label": "Neural Rendering"
+  },
   "relations": {
-    "bridgesTo": [
+    "hasPart": [
       {
-        "@id": "urn:ngm:class:tele-050-neural-rendering-telepresence",
-        "label": "TELE-050-neural-rendering-telepresence"
+        "@id": "urn:ngm:class:gaussian-primitive",
+        "label": "Gaussian Primitive"
+      },
+      {
+        "@id": "urn:ngm:class:spherical-harmonics",
+        "label": "Spherical Harmonics"
+      },
+      {
+        "@id": "urn:ngm:class:adaptive-density-control",
+        "label": "Adaptive Density Control"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:novel-view-synthesis",
+        "label": "Novel View Synthesis"
       }
     ],
     "requires": [
       {
         "@id": "urn:ngm:class:differentiable-rendering",
-        "label": "DifferentiableRendering"
+        "label": "Differentiable Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:structure-from-motion",
+        "label": "Structure from Motion"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-rasterisation",
+        "label": "GPU Rasterisation"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:photorealistic-telepresence",
-        "label": "PhotorealisticTelepresence"
+        "label": "Photorealistic Telepresence"
+      },
+      {
+        "@id": "urn:ngm:class:volumetric-video-conferencing",
+        "label": "Volumetric Video Conferencing"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-novel-view-synthesis",
+        "label": "Real-Time Novel View Synthesis"
+      },
+      {
+        "@id": "urn:ngm:class:photorealistic-avatar",
+        "label": "Photorealistic Avatar"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:multi-view-photography",
+        "label": "Multi-View Photography"
+      },
+      {
+        "@id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      },
+      {
+        "@id": "urn:ngm:class:adam-optimiser",
+        "label": "Adam Optimiser"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:alpha-blending",
+        "label": "Alpha Blending"
+      },
+      {
+        "@id": "urn:ngm:class:painters-algorithm",
+        "label": "Painter's Algorithm"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:stochastic-gradient-descent",
+        "label": "Stochastic Gradient Descent"
+      },
+      {
+        "@id": "urn:ngm:class:ssim-loss",
+        "label": "SSIM Loss"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:neural-radiance-fields",
+        "label": "Neural Radiance Fields"
+      },
+      {
+        "@id": "urn:ngm:class:mesh-based-rendering",
+        "label": "Mesh-Based Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:instant-ngp",
+        "label": "Instant NGP"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:tele-050-neural-rendering-telepresence",
+        "label": "Neural Rendering Telepresence"
+      },
+      {
+        "@id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "@id": "urn:ngm:class:webxr",
+        "label": "WebXR"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:virtual-reality-telepresence",
+        "label": "Virtual Reality Telepresence"
+      },
+      {
+        "@id": "urn:ngm:class:scene-reconstruction",
+        "label": "Scene Reconstruction"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:3dgs",
+      "label": "3DGS"
+    },
+    {
+      "@id": "urn:ngm:class:gaussian-splatting",
+      "label": "Gaussian Splatting"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

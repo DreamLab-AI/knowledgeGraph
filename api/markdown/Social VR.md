@@ -150,35 +150,69 @@ alias:: SocialVR
   "definition": "Social VR encompasses immersive virtual reality experiences specifically designed for real-time social interaction and collaboration among multiple users within shared persistent virtual spaces, leveraging avatar-based presence and synchronised communication.",
   "domain": "spatial-computing",
   "maturity": "emerging",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:sc-platform-and-environment",
-      "label": "Platform and Environment"
-    },
-    {
-      "@id": "urn:ngm:class:virtual-reality",
-      "label": "Virtual Reality"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:virtual-reality",
+    "label": "Virtual Reality"
+  },
   "relations": {
-    "requires": [
+    "hasPart": [
       {"@id": "urn:ngm:class:avatar", "label": "Avatar"},
-      {"@id": "urn:ngm:class:spatial-audio", "label": "Spatial Audio"}
+      {"@id": "urn:ngm:class:spatial-audio", "label": "Spatial Audio"},
+      {"@id": "urn:ngm:class:virtual-meeting-space", "label": "Virtual Meeting Space"},
+      {"@id": "urn:ngm:class:gesture-recognition", "label": "Gesture Recognition"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:vr-headset", "label": "VR Headset"},
+      {"@id": "urn:ngm:class:real-time-networking", "label": "Real-Time Networking"},
+      {"@id": "urn:ngm:class:user-authentication", "label": "User Authentication"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:virtual-collaboration", "label": "Virtual Collaboration"},
-      {"@id": "urn:ngm:class:immersive-communication", "label": "Immersive Communication"}
+      {"@id": "urn:ngm:class:immersive-communication", "label": "Immersive Communication"},
+      {"@id": "urn:ngm:class:social-presence", "label": "Social Presence"},
+      {"@id": "urn:ngm:class:virtual-event", "label": "Virtual Event"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:3d-rendering-engine", "label": "3D Rendering Engine"},
+      {"@id": "urn:ngm:class:voice-chat", "label": "Voice Chat"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:embodied-interaction", "label": "Embodied Interaction"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:decentralized-identity", "label": "Decentralized Identity"},
+      {"@id": "urn:ngm:class:virtual-economy", "label": "Virtual Economy"},
+      {"@id": "urn:ngm:class:non-fungible-token", "label": "Non-Fungible Token"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:cross-platform-interoperability", "label": "Cross-Platform Interoperability"},
+      {"@id": "urn:ngm:class:user-generated-content", "label": "User Generated Content"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:video-conferencing", "label": "Video Conferencing"},
+      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"},
+      {"@id": "urn:ngm:class:community-governance", "label": "Community Governance"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:virtual-economy", "label": "Virtual Economy"},
-      {"@id": "urn:ngm:class:collaboration", "label": "Collaboration"}
+      {"@id": "urn:ngm:class:collaboration", "label": "Collaboration"},
+      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
     ]
   },
-  "quality": 0.4,
+  "sameAs": [
+    {"@id": "urn:ngm:class:multi-user-virtual-environment", "label": "Multi-User Virtual Environment"},
+    {"@id": "urn:ngm:class:social-metaverse", "label": "Social Metaverse"}
+  ],
+  "quality": 0.68,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

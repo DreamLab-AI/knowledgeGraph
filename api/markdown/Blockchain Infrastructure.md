@@ -86,24 +86,54 @@ public:: true
   "@id": "urn:ngm:class:blockchain-infrastructure",
   "@type": "Class",
   "label": "Blockchain Infrastructure",
-  "definition": "The foundational technical components enabling blockchain networks to operate, including nodes, networking protocols, consensus mechanisms, storage systems, and cryptographic primitives that toger provide the physical and logical substrate for distributed ledger operation and decentralized applic...",
+  "definition": "The foundational technical components enabling blockchain networks to operate, including nodes, networking protocols, consensus mechanisms, storage systems, and cryptographic primitives that together provide the physical and logical substrate for distributed ledger operation and decentralized application execution.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:bc-network-component",
-      "label": "Network Component"
-    },
-    {
-      "@id": "urn:ngm:class:blockchain",
-      "label": "Blockchain"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:blockchain",
+    "label": "Blockchain"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:blockchain-node",
+        "label": "Blockchain Node"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      },
+      {
+        "@id": "urn:ngm:class:cross-chain-bridge",
+        "label": "Cross-Chain Bridge"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:distributed-systems-infrastructure",
+        "label": "Distributed Systems Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:web3-infrastructure",
+        "label": "Web3 Infrastructure"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:cryptography",
         "label": "Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
       }
     ],
     "enables": [
@@ -112,14 +142,84 @@ public:: true
         "label": "Blockchain Application"
       },
       {
-        "@id": "urn:ngm:class:smart-contracts",
-        "label": "Smart Contracts"
+        "@id": "urn:ngm:class:decentralized-finance",
+        "label": "Decentralized Finance"
+      },
+      {
+        "@id": "urn:ngm:class:layer-2-scaling",
+        "label": "Layer 2 Scaling"
+      },
+      {
+        "@id": "urn:ngm:class:tokenization",
+        "label": "Tokenization"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "@id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-work",
+        "label": "Proof of Work"
       }
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:peer-to-peer-network",
-        "label": "Peer-to-Peer Network"
+        "@id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:decentralized-autonomous-organization",
+        "label": "Decentralized Autonomous Organization"
+      },
+      {
+        "@id": "urn:ngm:class:non-fungible-token",
+        "label": "Non-Fungible Token"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:centralized-database",
+        "label": "Centralized Database"
+      },
+      {
+        "@id": "urn:ngm:class:traditional-financial-infrastructure",
+        "label": "Traditional Financial Infrastructure"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:ai-energy-optimisation",
+        "label": "AI Energy Optimisation"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-identity",
+        "label": "Decentralized Identity"
+      },
+      {
+        "@id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
       }
     ],
     "relatedTo": [
@@ -128,16 +228,26 @@ public:: true
         "label": "Blockchain"
       },
       {
-        "@id": "urn:ngm:class:consensus-mechanism",
-        "label": "Consensus Mechanism"
+        "@id": "urn:ngm:class:modular-blockchain",
+        "label": "Modular Blockchain"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:distributed-ledger-infrastructure",
+      "label": "Distributed Ledger Infrastructure"
+    },
+    {
+      "@id": "urn:ngm:class:blockchain-network-infrastructure",
+      "label": "Blockchain Network Infrastructure"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

@@ -8,16 +8,12 @@
   "definition": "Conversational AI encompasses systems that engage in natural-language dialogue with humans, including chatbots, voice assistants, and large-language-model-powered interfaces. It applies natural language processing, language modeling, dialogue management, and speech recognition to understand intent and generate contextually appropriate responses.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ai-research-area",
-      "label": "AI Research Area"
-    },
-    {
       "id": "urn:ngm:class:natural-language-processing",
       "label": "Natural Language Processing"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.75,
   "maturity": "established",
   "relationships": {
     "hasPart": [
@@ -40,14 +36,75 @@
       {
         "id": "urn:ngm:class:voice-interaction",
         "label": "Voice Interaction"
+      },
+      {
+        "id": "urn:ngm:class:intent-recognition",
+        "label": "Intent Recognition"
       }
     ],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:language-modeling",
+        "label": "Language Modeling"
+      },
+      {
+        "id": "urn:ngm:class:context-management",
+        "label": "Context Management"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-base",
+        "label": "Knowledge Base"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:virtual-assistant",
+        "label": "Virtual Assistant"
+      },
+      {
+        "id": "urn:ngm:class:customer-service-automation",
+        "label": "Customer Service Automation"
+      },
+      {
+        "id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human-Robot Interaction"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:speech-processing",
+        "label": "Speech Processing"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:rule-based-systems",
+        "label": "Rule-Based Systems"
+      },
+      {
+        "id": "urn:ngm:class:batch-data-processing",
+        "label": "Batch Data Processing"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:large-language-models",
@@ -60,6 +117,14 @@
       {
         "id": "urn:ngm:class:speech-recognition",
         "label": "Speech Recognition"
+      },
+      {
+        "id": "urn:ngm:class:text-to-speech",
+        "label": "Text-to-Speech"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
       }
     ],
     "supports": [],
@@ -67,12 +132,12 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:language-modeling",
-        "label": "Language Modeling"
-      },
-      {
         "id": "urn:ngm:class:multimodal-ai-architecture-ai",
         "label": "Multimodal AI"
+      },
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
       }
     ]
   },

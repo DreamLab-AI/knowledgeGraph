@@ -70,13 +70,39 @@ public:: true
   "domain": "blockchain",
   "maturity": "established",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:blockchain-domain",
-      "label": "Blockchain Domain"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:zk-rollup",
+    "label": "ZK Rollup"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:zk-sync-era",
+        "label": "zkSync Era"
+      },
+      {
+        "@id": "urn:ngm:class:zk-stack",
+        "label": "ZK Stack"
+      },
+      {
+        "@id": "urn:ngm:class:zk-sync-lite",
+        "label": "zkSync Lite"
+      },
+      {
+        "@id": "urn:ngm:class:validity-proof",
+        "label": "Validity Proof"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:ethereum-ecosystem",
+        "label": "Ethereum Ecosystem"
+      },
+      {
+        "@id": "urn:ngm:class:layer-2-scaling-ecosystem",
+        "label": "Layer-2 Scaling Ecosystem"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:ethereum-smart-contract-platform",
@@ -89,20 +115,136 @@ public:: true
       {
         "@id": "urn:ngm:class:zero-knowledge-proof",
         "label": "Zero Knowledge Proof"
+      },
+      {
+        "@id": "urn:ngm:class:zk-prover",
+        "label": "ZK Prover"
+      },
+      {
+        "@id": "urn:ngm:class:data-availability",
+        "label": "Data Availability"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:decentralised-finance-domain",
         "label": "Decentralised Finance Domain"
+      },
+      {
+        "@id": "urn:ngm:class:low-cost-blockchain-transaction",
+        "label": "Low-Cost Blockchain Transaction"
+      },
+      {
+        "@id": "urn:ngm:class:cross-chain-bridging",
+        "label": "Cross-Chain Bridging"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:ethereum-mainnet",
+        "label": "Ethereum Mainnet"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "@id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:zk-rollup",
+        "label": "ZK Rollup"
+      },
+      {
+        "@id": "urn:ngm:class:evm-compatibility",
+        "label": "EVM Compatibility"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:zk-snark",
+        "label": "ZK-SNARK"
+      },
+      {
+        "@id": "urn:ngm:class:zk-stark",
+        "label": "ZK-STARK"
+      },
+      {
+        "@id": "urn:ngm:class:solidity",
+        "label": "Solidity"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:erc-20-token",
+        "label": "ERC-20 Token"
+      },
+      {
+        "@id": "urn:ngm:class:non-fungible-token",
+        "label": "Non-Fungible Token"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:optimism",
+        "label": "Optimism"
+      },
+      {
+        "@id": "urn:ngm:class:arbitrum",
+        "label": "Arbitrum"
+      },
+      {
+        "@id": "urn:ngm:class:starknet",
+        "label": "StarkNet"
+      },
+      {
+        "@id": "urn:ngm:class:optimistic-rollup",
+        "label": "Optimistic Rollup"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:security",
+        "label": "Security"
+      },
+      {
+        "@id": "urn:ngm:class:finance",
+        "label": "Finance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:polygon",
+        "label": "Polygon"
+      },
+      {
+        "@id": "urn:ngm:class:polygon-zkevm",
+        "label": "Polygon zkEVM"
+      },
+      {
+        "@id": "urn:ngm:class:layer-2-network",
+        "label": "Layer-2 Network"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:zk-sync-era",
+      "label": "zkSync Era"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

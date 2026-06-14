@@ -70,12 +70,10 @@ public:: true
   "domain": "blockchain",
   "maturity": "established",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:blockchain-domain",
-      "label": "Blockchain Domain"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:blockchain-domain",
+    "label": "Blockchain Domain"
+  },
   "relations": {
     "requires": [
       {
@@ -89,20 +87,134 @@ public:: true
       {
         "@id": "urn:ngm:class:fraud-proof",
         "label": "Fraud Proof"
+      },
+      {
+        "@id": "urn:ngm:class:sequencer",
+        "label": "Sequencer"
+      },
+      {
+        "@id": "urn:ngm:class:dispute-game",
+        "label": "Dispute Game"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:decentralised-finance-domain",
         "label": "Decentralised Finance Domain"
+      },
+      {
+        "@id": "urn:ngm:class:layer-2-scaling",
+        "label": "Layer-2 Scaling"
+      },
+      {
+        "@id": "urn:ngm:class:superchain",
+        "label": "Superchain"
+      },
+      {
+        "@id": "urn:ngm:class:public-goods-funding",
+        "label": "Public Goods Funding"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:op-stack",
+        "label": "OP Stack"
+      },
+      {
+        "@id": "urn:ngm:class:optimism-collective",
+        "label": "Optimism Collective"
+      },
+      {
+        "@id": "urn:ngm:class:op-token",
+        "label": "OP Token"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:ethereum-ecosystem",
+        "label": "Ethereum Ecosystem"
+      },
+      {
+        "@id": "urn:ngm:class:superchain",
+        "label": "Superchain"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:optimistic-rollup",
+        "label": "Optimistic Rollup"
+      },
+      {
+        "@id": "urn:ngm:class:evm-equivalence",
+        "label": "EVM Equivalence"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:state-commitment",
+        "label": "State Commitment"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:arbitrum",
+        "label": "Arbitrum"
+      },
+      {
+        "@id": "urn:ngm:class:zk-sync",
+        "label": "zkSync"
+      },
+      {
+        "@id": "urn:ngm:class:polygon",
+        "label": "Polygon"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-rollup",
+        "label": "Zero-Knowledge Rollup"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:eip-4844",
+        "label": "EIP-4844"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:decentralised-governance",
+        "label": "Decentralised Governance"
+      },
+      {
+        "@id": "urn:ngm:class:retroactive-public-goods-funding",
+        "label": "Retroactive Public Goods Funding"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:base-chain",
+        "label": "Base Chain"
+      },
+      {
+        "@id": "urn:ngm:class:cross-chain-interoperability",
+        "label": "Cross-Chain Interoperability"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:op-mainnet",
+      "label": "OP Mainnet"
+    },
+    {
+      "@id": "urn:ngm:class:optimism-network",
+      "label": "Optimism Network"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

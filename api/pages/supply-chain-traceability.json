@@ -4,24 +4,42 @@
   "slug": "supply-chain-traceability",
   "public": true,
   "classIri": "urn:ngm:class:supply-chain-traceability",
-  "domain": "blockchain",
-  "definition": "Supply chain traceability employs BlockchainTechnology|blockchain and SmartContract|smart contracts to create immutable, transparent records of product journey from origin through manufacturing, distribution, and final delivery, enabling verification of authenticity and compliance at each...",
+  "domain": "supply-chain",
+  "definition": "Supply chain traceability employs blockchain and smart contracts to create immutable, transparent records of a product's journey from origin through manufacturing, distribution, and final delivery, enabling verification of authenticity and regulatory compliance at each stage. Implementations track provenance, environmental conditions, and certifications, providing cryptographic proof of authenticity and preventing counterfeiting across food safety, pharmaceuticals, luxury goods, and circular-economy initiatives.",
   "subClassOf": [
-    {
-      "id": "urn:ngm:class:bc-network-component",
-      "label": "Network Component"
-    },
     {
       "id": "urn:ngm:class:blockchain-application",
       "label": "Blockchain Application"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.4,
+  "qualityScore": 0.7,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:provenance-record",
+        "label": "Provenance Record"
+      },
+      {
+        "id": "urn:ngm:class:chain-of-custody",
+        "label": "Chain of Custody"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-integrity",
+        "label": "Data Integrity"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:audit-trail",
@@ -30,12 +48,38 @@
       {
         "id": "urn:ngm:class:cold-chain-monitoring",
         "label": "Cold Chain Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:product-provenance",
+        "label": "Product Provenance"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:anti-counterfeiting",
+        "label": "Anti-Counterfeiting"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:centralised-database",
+        "label": "Centralised Database"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:smart-contract",
@@ -44,19 +88,49 @@
       {
         "id": "urn:ngm:class:hyperledger-fabric",
         "label": "Hyperledger Fabric"
+      },
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
+        "id": "urn:ngm:class:rfid",
+        "label": "RFID"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
       }
     ],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
+    "supports": [
       {
         "id": "urn:ngm:class:circular-economy",
         "label": "Circular Economy"
       },
       {
+        "id": "urn:ngm:class:food-safety",
+        "label": "Food Safety"
+      },
+      {
+        "id": "urn:ngm:class:pharmaceutical-verification",
+        "label": "Pharmaceutical Verification"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:gs1-standards",
+        "label": "GS1 Standards"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
         "id": "urn:ngm:class:transparency",
         "label": "Transparency"
+      },
+      {
+        "id": "urn:ngm:class:sustainability-reporting",
+        "label": "Sustainability Reporting"
       }
     ]
   },

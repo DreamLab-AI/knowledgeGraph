@@ -154,40 +154,66 @@ public:: true
   "@id": "urn:ngm:class:slam",
   "@type": "Class",
   "label": "SLAM",
-  "definition": "Simultaneous Localization and Mapping (SLAM) is a robotics and computer vision technique enabling devices to build maps of unknown environments whilst simultaneously tracking their own position within those environments, combining LocalizationTechnique|localisation and",
+  "definition": "Simultaneous Localization and Mapping (SLAM) is a robotics and computer vision technique enabling devices to build maps of unknown environments whilst simultaneously tracking their own position within those environments, combining localisation and map construction in real-time using probabilistic state estimation and sensor fusion.",
   "domain": "spatial-computing",
   "maturity": "emerging",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:sc-interaction",
-      "label": "Interaction Technology"
-    },
-    {
-      "@id": "urn:ngm:class:spatial-mapping",
-      "label": "Spatial Mapping"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:spatial-mapping",
+    "label": "Spatial Mapping"
+  },
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"}
+      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
+      {"@id": "urn:ngm:class:probabilistic-state-estimation", "label": "Probabilistic State Estimation"},
+      {"@id": "urn:ngm:class:loop-closure", "label": "Loop Closure"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:localization", "label": "Localization"},
+      {"@id": "urn:ngm:class:map-construction", "label": "Map Construction"},
+      {"@id": "urn:ngm:class:occupancy-grid", "label": "Occupancy Grid"},
+      {"@id": "urn:ngm:class:pose-graph-optimization", "label": "Pose Graph Optimization"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"},
-      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"}
+      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
+      {"@id": "urn:ngm:class:autonomous-robot", "label": "Autonomous Robot"},
+      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:pose-estimation", "label": "Pose Estimation"}
+      {"@id": "urn:ngm:class:pose-estimation", "label": "Pose Estimation"},
+      {"@id": "urn:ngm:class:lidar", "label": "LiDAR"},
+      {"@id": "urn:ngm:class:visual-odometry", "label": "Visual Odometry"},
+      {"@id": "urn:ngm:class:kalman-filter", "label": "Kalman Filter"}
     ],
     "partOf": [
       {"@id": "urn:ngm:class:spatial-computing-paradigm", "label": "Spatial Computing"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:inertial-measurement-unit", "label": "Inertial Measurement Unit"},
+      {"@id": "urn:ngm:class:point-cloud-processing", "label": "Point Cloud Processing"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:gps-navigation", "label": "GPS Navigation"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:metaverse-domain", "label": "Metaverse Domain"},
+      {"@id": "urn:ngm:class:virtual-environment", "label": "Virtual Environment"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
+      {"@id": "urn:ngm:class:graph-optimization", "label": "Graph Optimization"}
     ]
   },
-  "quality": 0.4,
+  "sameAs": [
+    {"@id": "urn:ngm:class:simultaneous-localization-and-mapping", "label": "Simultaneous Localization and Mapping"},
+    {"@id": "urn:ngm:class:concurrent-mapping-and-localization", "label": "Concurrent Mapping and Localization"}
+  ],
+  "quality": 0.65,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

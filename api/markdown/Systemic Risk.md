@@ -42,35 +42,73 @@ public:: true
   "@id": "urn:ngm:class:systemic-risk",
   "@type": "Class",
   "label": "Systemic Risk",
-  "definition": "Risk specific to high-impact capabilities of general-purpose AI models with significant impact on the Union market due to reach, or actual or foreseeable negative effects on public health, safety, fundamental rights, environment, democracy, or rule of law.",
+  "definition": "Risk specific to high-impact capabilities of general-purpose AI models with significant impact on the Union market due to reach, or actual or foreseeable negative effects on public health, safety, fundamental rights, environment, democracy, or rule of law. Under EU AI Act Article 51, models exceeding 10^25 FLOPs training compute or matching the most advanced GPAI capabilities are presumed to carry systemic risk and face enhanced obligations including adversarial testing, incident reporting, and cybersecurity protection.",
   "domain": "artificial-intelligence",
   "maturity": "emerging",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:ai-governance-and-ethics",
-      "label": "AI Governance and Ethics"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:ai-governance-and-ethics",
+    "label": "AI Governance and Ethics"
+  },
   "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:serious-incident-reporting", "label": "Serious Incident Reporting"},
+      {"@id": "urn:ngm:class:energy-efficiency-reporting", "label": "Energy Efficiency Reporting"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:general-purpose-ai-regulation", "label": "General-Purpose AI Regulation"}
+    ],
     "requires": [
       {"@id": "urn:ngm:class:risk-assessment", "label": "Risk Assessment"},
-      {"@id": "urn:ngm:class:adversarial-testing", "label": "Adversarial Testing"}
+      {"@id": "urn:ngm:class:adversarial-testing", "label": "Adversarial Testing"},
+      {"@id": "urn:ngm:class:model-evaluation", "label": "Model Evaluation"},
+      {"@id": "urn:ngm:class:incident-response", "label": "Incident Response"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:red-teaming", "label": "Red Teaming"},
-      {"@id": "urn:ngm:class:conformity-assessment", "label": "Conformity Assessment"}
+      {"@id": "urn:ngm:class:conformity-assessment", "label": "Conformity Assessment"},
+      {"@id": "urn:ngm:class:capability-evaluation", "label": "Capability Evaluation"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:foundation-model", "label": "Foundation Model"},
+      {"@id": "urn:ngm:class:compute-threshold", "label": "Compute Threshold"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:eu-ai-act", "label": "EU AI Act"},
+      {"@id": "urn:ngm:class:ai-safety-framework", "label": "AI Safety Framework"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:flop-computation-metric", "label": "FLOP Computation Metric"},
+      {"@id": "urn:ngm:class:benchmark-evaluation", "label": "Benchmark Evaluation"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:ai-office", "label": "AI Office"},
+      {"@id": "urn:ngm:class:scientific-panel", "label": "Scientific Panel"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:limited-risk-ai", "label": "Limited Risk AI"},
+      {"@id": "urn:ngm:class:minimal-risk-ai", "label": "Minimal Risk AI"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:critical-infrastructure-security", "label": "Critical Infrastructure Security"},
+      {"@id": "urn:ngm:class:financial-systemic-risk", "label": "Financial Systemic Risk"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:ai-regulation", "label": "AI Regulation"},
       {"@id": "urn:ngm:class:human-oversight", "label": "Human Oversight"},
-      {"@id": "urn:ngm:class:cybersecurity", "label": "Cybersecurity"}
+      {"@id": "urn:ngm:class:cybersecurity", "label": "Cybersecurity"},
+      {"@id": "urn:ngm:class:ai-alignment", "label": "AI Alignment"},
+      {"@id": "urn:ngm:class:emergent-capabilities", "label": "Emergent Capabilities"}
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {"@id": "urn:ngm:class:gpai-systemic-risk", "label": "GPAI Systemic Risk"},
+    {"@id": "urn:ngm:class:frontier-model-risk", "label": "Frontier Model Risk"}
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```
@@ -117,6 +155,26 @@ public:: true
   - relatedTo [[AI Regulation]]
   - relatedTo [[Human Oversight]]
   - relatedTo [[Cybersecurity]]
+  - hasPart [[Serious Incident Reporting]]
+  - hasPart [[Energy Efficiency Reporting]]
+  - partOf [[General-Purpose AI Regulation]]
+  - requires [[Model Evaluation]]
+  - requires [[Incident Response]]
+  - enables [[Capability Evaluation]]
+  - dependsOn [[Foundation Model]]
+  - dependsOn [[Compute Threshold]]
+  - implements [[EU AI Act]]
+  - implements [[AI Safety Framework]]
+  - uses [[FLOP Computation Metric]]
+  - uses [[Benchmark Evaluation]]
+  - supports [[AI Office]]
+  - supports [[Scientific Panel]]
+  - contrastsWith [[Limited Risk AI]]
+  - contrastsWith [[Minimal Risk AI]]
+  - bridgesTo [[Critical Infrastructure Security]]
+  - bridgesTo [[Financial Systemic Risk]]
+  - relatedTo [[AI Alignment]]
+  - relatedTo [[Emergent Capabilities]]
 
 - ### Content
   - Risk specific to high-impact capabilities of general-purpose AI models with significant impact on the Union market due to reach, or actual or foreseeable negative effects on public health, safety, fundamental rights, environment, democracy, or rule of law.

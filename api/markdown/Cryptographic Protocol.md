@@ -147,42 +147,70 @@ alias:: Cryptographic-Protocol
   "@id": "urn:ngm:class:cryptographic-protocol",
   "@type": "Class",
   "label": "Cryptographic Protocol",
-  "definition": "Cryptographic-Protocol encompasses mathematical frameworks and algorithmic procedures securing blockchain through cryptographic primitives.",
-  "domain": "infrastructure",
+  "definition": "Cryptographic Protocol encompasses mathematical frameworks and algorithmic procedures that secure digital systems through cryptographic primitives including hash functions, digital signatures, encryption schemes, zero-knowledge proofs, and commitment protocols, enabling confidentiality, integrity, authentication, and non-repudiation across distributed and blockchain applications.",
+  "domain": "security",
   "maturity": "draft",
+  "subClassOf": {
+    "@id": "urn:ngm:class:cryptography",
+    "label": "Cryptography"
+  },
   "relations": {
     "requires": [
       {
         "@id": "urn:ngm:class:encryption-scheme",
-        "label": "Encryption-Scheme"
+        "label": "Encryption Scheme"
       },
       {
         "@id": "urn:ngm:class:digital-signature",
-        "label": "Digital-Signature"
+        "label": "Digital Signature"
       },
       {
         "@id": "urn:ngm:class:hash-function",
-        "label": "Hash-Function"
+        "label": "Hash Function"
+      },
+      {
+        "@id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:random-number-generator",
+        "label": "Random Number Generator"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:blockchain-security",
-        "label": "Blockchain-Security"
+        "label": "Blockchain Security"
       },
       {
         "@id": "urn:ngm:class:privacy-preservation",
-        "label": "Privacy-Preservation"
+        "label": "Privacy Preservation"
       },
       {
         "@id": "urn:ngm:class:consensus-protocol",
-        "label": "Consensus-Protocol"
+        "label": "Consensus Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:secure-communication",
+        "label": "Secure Communication"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
       }
     ],
-    "implements": [
+    "hasPart": [
       {
-        "@id": "urn:ngm:class:security-framework",
-        "label": "Security Framework"
+        "@id": "urn:ngm:class:key-exchange-protocol",
+        "label": "Key Exchange Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:authentication-protocol",
+        "label": "Authentication Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:commitment-scheme",
+        "label": "Commitment Scheme"
       }
     ],
     "partOf": [
@@ -190,20 +218,108 @@ alias:: Cryptographic-Protocol
         "@id": "urn:ngm:class:cryptography",
         "label": "Cryptography"
       }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:security-framework",
+        "label": "Security Framework"
+      },
+      {
+        "@id": "urn:ngm:class:trust-model",
+        "label": "Trust Model"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:ecdsa",
+        "label": "ECDSA"
+      },
+      {
+        "@id": "urn:ngm:class:eddsa",
+        "label": "EdDSA"
+      },
+      {
+        "@id": "urn:ngm:class:schnorr-signature",
+        "label": "Schnorr Signature"
+      },
+      {
+        "@id": "urn:ngm:class:hmac",
+        "label": "HMAC"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:nist-post-quantum-cryptography",
+        "label": "NIST Post-Quantum Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:post-quantum-cryptography-standards",
+        "label": "Post-Quantum Cryptography Standards"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:computational-hardness-assumption",
+        "label": "Computational Hardness Assumption"
+      },
+      {
+        "@id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:post-quantum-cryptography",
+        "label": "Post-Quantum Cryptography"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:quantum-computing",
+        "label": "Quantum Computing"
+      },
+      {
+        "@id": "urn:ngm:class:multi-party-computation",
+        "label": "Multi-Party Computation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:digital-infrastructure",
+        "label": "Digital Infrastructure"
+      }
     ]
   },
-  "quality": 0.55,
-  "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
-  },
-  "subClassOf": [
+  "sameAs": [
     {
-      "@id": "urn:ngm:class:infra-security-and-identity",
-      "label": "Security and Identity"
+      "@id": "urn:ngm:class:security-protocol",
+      "label": "Security Protocol"
+    },
+    {
+      "@id": "urn:ngm:class:cryptographic-scheme",
+      "label": "Cryptographic Scheme"
     }
-  ]
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

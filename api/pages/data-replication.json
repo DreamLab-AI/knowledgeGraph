@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:data-replication",
   "domain": "infrastructure",
-  "definition": "The process of copying and maintaining data across multiple nodes, servers, or locations in distributed systems to ensure consistency, availability, and fault tolerance, using consensus algorithms like Paxos, Raft, and Byzantine Fault Tolerant protocols to coordinate state across decentralized ne...",
+  "definition": "The process of copying and maintaining data across multiple nodes, servers, or locations in distributed systems to ensure consistency, availability, and fault tolerance, using consensus algorithms like Paxos, Raft, and Byzantine Fault Tolerant protocols to coordinate state across decentralised networks.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-data-management",
@@ -13,10 +13,23 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.72,
   "maturity": "draft",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:leader-election",
+        "label": "Leader Election"
+      },
+      {
+        "id": "urn:ngm:class:log-replication",
+        "label": "Log Replication"
+      },
+      {
+        "id": "urn:ngm:class:change-data-capture",
+        "label": "Change Data Capture"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:storage-systems",
@@ -29,6 +42,10 @@
       {
         "id": "urn:ngm:class:network-infrastructure",
         "label": "Network Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:network-bandwidth",
+        "label": "Network Bandwidth"
       }
     ],
     "enables": [
@@ -43,19 +60,75 @@
       {
         "id": "urn:ngm:class:fault-tolerance",
         "label": "Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:disaster-recovery",
+        "label": "Disaster Recovery"
+      },
+      {
+        "id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [
+    "dependsOn": [
       {
         "id": "urn:ngm:class:distributed-systems",
         "label": "Distributed Systems"
+      },
+      {
+        "id": "urn:ngm:class:cap-theorem",
+        "label": "CAP Theorem"
       }
     ],
-    "uses": [],
-    "supports": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:data-sharding",
+        "label": "Data Sharding"
+      },
+      {
+        "id": "urn:ngm:class:data-partitioning",
+        "label": "Data Partitioning"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:metaverse-state-management",
+        "label": "Metaverse State Management"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:raft-protocol",
+        "label": "Raft Protocol"
+      },
+      {
+        "id": "urn:ngm:class:paxos-protocol",
+        "label": "Paxos Protocol"
+      },
+      {
+        "id": "urn:ngm:class:write-ahead-logging",
+        "label": "Write-Ahead Logging"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:distributed-database",
+        "label": "Distributed Database"
+      },
+      {
+        "id": "urn:ngm:class:cloud-storage",
+        "label": "Cloud Storage"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": []

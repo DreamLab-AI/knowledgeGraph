@@ -107,19 +107,13 @@ alias:: RB-1003-optimal-control
   "@id": "urn:ngm:class:optimal-control",
   "@type": "Class",
   "label": "Optimal Control",
-  "definition": "A control strategy that determines control inputs to minimize or maximize a performance criterion (cost function) while satisfying system constraints. It seeks the best possible control policy according to specified objectives.",
+  "definition": "A control strategy that determines control inputs to minimize or maximize a performance criterion (cost function) while satisfying system dynamics and constraints. It seeks the best possible control policy according to specified objectives, using mathematical frameworks such as dynamic programming, the Hamilton-Jacobi-Bellman equation, and Pontryagin's Maximum Principle.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:robo-actuation-and-control",
-      "label": "Actuation and Control"
-    },
-    {
-      "@id": "urn:ngm:class:closed-loop-control",
-      "label": "RB-1002-closed-loop-control"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:closed-loop-control",
+    "label": "Closed-Loop Control"
+  },
   "relations": {
     "requires": [
       {
@@ -129,12 +123,32 @@ alias:: RB-1003-optimal-control
       {
         "@id": "urn:ngm:class:system-dynamics-model",
         "label": "System Dynamics Model"
+      },
+      {
+        "@id": "urn:ngm:class:state-space-representation",
+        "label": "State Space Representation"
+      },
+      {
+        "@id": "urn:ngm:class:optimization-algorithm",
+        "label": "Optimization Algorithm"
       }
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:rb-1007-trajectory-generation",
-        "label": "RB-1007-trajectory-generation"
+        "@id": "urn:ngm:class:trajectory-generation",
+        "label": "Trajectory Generation"
+      },
+      {
+        "@id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-vehicle-control",
+        "label": "Autonomous Vehicle Control"
+      },
+      {
+        "@id": "urn:ngm:class:spacecraft-attitude-control",
+        "label": "Spacecraft Attitude Control"
       }
     ],
     "uses": [
@@ -147,16 +161,98 @@ alias:: RB-1003-optimal-control
         "label": "Model Predictive Control"
       },
       {
-        "@id": "urn:ngm:class:optimization-algorithm",
-        "label": "Optimization Algorithm"
+        "@id": "urn:ngm:class:dynamic-programming",
+        "label": "Dynamic Programming"
+      },
+      {
+        "@id": "urn:ngm:class:calculus-of-variations",
+        "label": "Calculus of Variations"
+      },
+      {
+        "@id": "urn:ngm:class:pontryagins-maximum-principle",
+        "label": "Pontryagin's Maximum Principle"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:hamilton-jacobi-bellman-equation",
+        "label": "Hamilton-Jacobi-Bellman Equation"
+      },
+      {
+        "@id": "urn:ngm:class:bellman-optimality-principle",
+        "label": "Bellman Optimality Principle"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:control-theory",
+        "label": "Control Theory"
+      },
+      {
+        "@id": "urn:ngm:class:optimization-theory",
+        "label": "Optimization Theory"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:adaptive-control",
+        "label": "Adaptive Control"
+      },
+      {
+        "@id": "urn:ngm:class:robot-arm-trajectory-optimization",
+        "label": "Robot Arm Trajectory Optimization"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:heuristic-control",
+        "label": "Heuristic Control"
+      },
+      {
+        "@id": "urn:ngm:class:pid-controller",
+        "label": "PID Controller"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:stochastic-control",
+        "label": "Stochastic Control"
+      },
+      {
+        "@id": "urn:ngm:class:robust-control",
+        "label": "Robust Control"
+      },
+      {
+        "@id": "urn:ngm:class:numerical-optimization",
+        "label": "Numerical Optimization"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:optimal-control-theory",
+      "label": "Optimal Control Theory"
+    },
+    {
+      "@id": "urn:ngm:class:variational-optimal-control",
+      "label": "Variational Optimal Control"
+    }
+  ],
+  "quality": 0.68,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

@@ -5,33 +5,90 @@
   "public": true,
   "classIri": "urn:ngm:class:sentiment-analysis",
   "domain": "artificial-intelligence",
-  "definition": "Sentiment Analysis is the NLP task of determining the emotional tone, attitude, or opinion expressed in text, classifying content as positive, negative, or neutral, and extracting fine-grained emotional attributes.",
+  "definition": "Sentiment Analysis is the NLP task of determining the emotional tone, attitude, or opinion expressed in text, classifying content as positive, negative, or neutral, and extracting fine-grained emotional attributes including aspect-level sentiment, emotion detection, and subjectivity classification.",
   "subClassOf": [
-    {
-      "id": "urn:ngm:class:ai-application",
-      "label": "AI Application"
-    },
     {
       "id": "urn:ngm:class:natural-language-processing",
       "label": "Natural Language Processing"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.72,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:aspect-based-sentiment-analysis",
+        "label": "Aspect-Based Sentiment Analysis"
+      },
+      {
+        "id": "urn:ngm:class:emotion-detection",
+        "label": "Emotion Detection"
+      },
+      {
+        "id": "urn:ngm:class:opinion-mining",
+        "label": "Opinion Mining"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:text-classification",
+        "label": "Text Classification"
+      },
+      {
+        "id": "urn:ngm:class:tokenisation",
+        "label": "Tokenisation"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:information-retrieval",
         "label": "Information Retrieval"
+      },
+      {
+        "id": "urn:ngm:class:social-media-monitoring",
+        "label": "Social Media Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:customer-feedback-analysis",
+        "label": "Customer Feedback Analysis"
+      },
+      {
+        "id": "urn:ngm:class:brand-reputation-management",
+        "label": "Brand Reputation Management"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:labelled-training-data",
+        "label": "Labelled Training Data"
+      },
+      {
+        "id": "urn:ngm:class:feature-extraction",
+        "label": "Feature Extraction"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:named-entity-recognition",
+        "label": "Named Entity Recognition"
+      },
+      {
+        "id": "urn:ngm:class:machine-translation",
+        "label": "Machine Translation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:market-research",
+        "label": "Market Research"
+      },
+      {
+        "id": "urn:ngm:class:financial-analytics",
+        "label": "Financial Analytics"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:transformer",
@@ -40,19 +97,36 @@
       {
         "id": "urn:ngm:class:large-language-models",
         "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:word-embeddings",
+        "label": "Word Embeddings"
+      },
+      {
+        "id": "urn:ngm:class:recurrent-neural-network",
+        "label": "Recurrent Neural Network"
       }
     ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
+    "partOf": [
       {
-        "id": "urn:ngm:class:named-entity-recognition",
-        "label": "Named Entity Recognition"
-      },
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
+    "relatedTo": [
       {
         "id": "urn:ngm:class:speech-recognition",
         "label": "Speech Recognition"
+      },
+      {
+        "id": "urn:ngm:class:subjectivity-analysis",
+        "label": "Subjectivity Analysis"
+      },
+      {
+        "id": "urn:ngm:class:stance-detection",
+        "label": "Stance Detection"
       }
     ]
   },

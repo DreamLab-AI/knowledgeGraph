@@ -167,20 +167,40 @@ alias:: DataPipeline
   "domain": "infrastructure",
   "maturity": "emerging",
   "qualityScore": 0.7,
-  "subClassOf": [
+  "subClassOf": {
+    "@id": "urn:ngm:class:infra-data-management",
+    "label": "Data Management"
+  },
+  "quality": 0.65,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  },
+  "sameAs": [
     {
-      "@id": "urn:ngm:class:infra-data-management",
-      "label": "Data Management"
+      "@id": "urn:ngm:class:data-workflow",
+      "label": "Data Workflow"
+    },
+    {
+      "@id": "urn:ngm:class:automated-pipeline",
+      "label": "Automated Pipeline"
     }
   ],
-  "quality": 0.4,
-  "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
-  },
   "relations": {
     "hasPart": [
+      {
+        "@id": "urn:ngm:class:data-ingestion",
+        "label": "Data Ingestion"
+      },
+      {
+        "@id": "urn:ngm:class:data-transformation",
+        "label": "Data Transformation"
+      },
+      {
+        "@id": "urn:ngm:class:data-validation",
+        "label": "Data Validation"
+      },
       {
         "@id": "urn:ngm:class:feature-engineering",
         "label": "Feature Engineering"
@@ -188,6 +208,20 @@ alias:: DataPipeline
       {
         "@id": "urn:ngm:class:quality-assurance",
         "label": "Quality Assurance"
+      },
+      {
+        "@id": "urn:ngm:class:error-handling",
+        "label": "Error Handling"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:distributed-storage",
+        "label": "Distributed Storage"
+      },
+      {
+        "@id": "urn:ngm:class:message-queue",
+        "label": "Message Queue"
       }
     ],
     "enables": [
@@ -198,6 +232,20 @@ alias:: DataPipeline
       {
         "@id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-analytics",
+        "label": "Real-Time Analytics"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:data-source",
+        "label": "Data Source"
+      },
+      {
+        "@id": "urn:ngm:class:monitoring",
+        "label": "Monitoring"
       }
     ],
     "uses": [
@@ -208,16 +256,58 @@ alias:: DataPipeline
       {
         "@id": "urn:ngm:class:distributed-system",
         "label": "Distributed System"
+      },
+      {
+        "@id": "urn:ngm:class:stream-processing",
+        "label": "Stream Processing"
+      },
+      {
+        "@id": "urn:ngm:class:batch-processing",
+        "label": "Batch Processing"
       }
     ],
-    "relatedTo": [
+    "supports": [
+      {
+        "@id": "urn:ngm:class:data-reliability",
+        "label": "Data Reliability"
+      },
+      {
+        "@id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:ad-hoc-query",
+        "label": "Ad Hoc Query"
+      }
+    ],
+    "bridgesTo": [
       {
         "@id": "urn:ngm:class:blockchain",
         "label": "Blockchain"
       },
       {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:oracle-service",
+        "label": "Oracle Service"
+      }
+    ],
+    "relatedTo": [
+      {
         "@id": "urn:ngm:class:monitoring-dashboard",
         "label": "Monitoring Dashboard"
+      },
+      {
+        "@id": "urn:ngm:class:data-preprocessing",
+        "label": "Data Preprocessing"
+      },
+      {
+        "@id": "urn:ngm:class:feature-store",
+        "label": "Feature Store"
       }
     ]
   }

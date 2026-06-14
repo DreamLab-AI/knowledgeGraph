@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:schnorr-signatures",
   "domain": "security",
-  "definition": "A digital signature scheme based on the discrete logarithm problem, producing compact signatures with linear key and signature aggregation properties.",
+  "definition": "A digital signature scheme based on the discrete logarithm problem over elliptic curve groups, producing compact fixed-size signatures with linear aggregation properties that enable efficient multi-signature and threshold constructions.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:digital-signature",
@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
@@ -21,6 +21,18 @@
       {
         "id": "urn:ngm:class:elliptic-curve-cryptography",
         "label": "Elliptic Curve Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:discrete-logarithm-problem",
+        "label": "Discrete Logarithm Problem"
+      },
+      {
+        "id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:random-oracle-model",
+        "label": "Random Oracle Model"
       }
     ],
     "enables": [
@@ -31,17 +43,83 @@
       {
         "id": "urn:ngm:class:taproot",
         "label": "Taproot"
+      },
+      {
+        "id": "urn:ngm:class:key-aggregation",
+        "label": "Key Aggregation"
+      },
+      {
+        "id": "urn:ngm:class:threshold-signature",
+        "label": "Threshold Signature"
+      },
+      {
+        "id": "urn:ngm:class:batch-verification",
+        "label": "Batch Verification"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:bip-340",
+        "label": "BIP-340"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:ecdsa",
+        "label": "ECDSA"
+      },
+      {
+        "id": "urn:ngm:class:rsa-signature",
+        "label": "RSA Signature"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:secp256k1",
+        "label": "secp256k1"
+      },
+      {
+        "id": "urn:ngm:class:commitment-scheme",
+        "label": "Commitment Scheme"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      },
+      {
+        "id": "urn:ngm:class:privacy-preserving-protocol",
+        "label": "Privacy-Preserving Protocol"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public Key Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:non-interactive-zero-knowledge",
+        "label": "Non-Interactive Zero-Knowledge"
+      }
+    ]
   },
   "wikilinks": [
     {

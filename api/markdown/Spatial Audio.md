@@ -54,29 +54,155 @@ alias:: SpatialAudio
   "definition": "Three-dimensional sound technology that uses head-related transfer functions (HRTF) and object-based mixing to position audio sources in 3D space around the listener, creating immersive auditory experiences that replicate natural sound perception.",
   "domain": "spatial-computing",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:sc-display-and-rendering",
-      "label": "Display and Rendering"
-    },
-    {
-      "@id": "urn:ngm:class:audio-technology",
-      "label": "Audio Technology"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:audio-technology",
+    "label": "Audio Technology"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:head-related-transfer-function",
+        "label": "Head-Related Transfer Function"
+      },
+      {
+        "@id": "urn:ngm:class:binaural-audio",
+        "label": "Binaural Audio"
+      },
+      {
+        "@id": "urn:ngm:class:ambisonics",
+        "label": "Ambisonics"
+      },
+      {
+        "@id": "urn:ngm:class:object-based-audio",
+        "label": "Object-Based Audio"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:immersive-media",
+        "label": "Immersive Media"
+      },
+      {
+        "@id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:digital-signal-processing",
+        "label": "Digital Signal Processing"
+      },
+      {
+        "@id": "urn:ngm:class:psychoacoustics",
+        "label": "Psychoacoustics"
+      }
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:immersive-experiences",
         "label": "Immersive Experiences"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-presence",
+        "label": "Virtual Presence"
+      },
+      {
+        "@id": "urn:ngm:class:audio-augmented-reality",
+        "label": "Audio Augmented Reality"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:audio-codec",
+        "label": "Audio Codec"
+      },
+      {
+        "@id": "urn:ngm:class:speaker-system",
+        "label": "Speaker System"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:dolby-atmos",
+        "label": "Dolby Atmos"
+      },
+      {
+        "@id": "urn:ngm:class:dts-x",
+        "label": "DTS:X"
+      },
+      {
+        "@id": "urn:ngm:class:mpeg-h-audio",
+        "label": "MPEG-H Audio"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:room-acoustics-modelling",
+        "label": "Room Acoustics Modelling"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "@id": "urn:ngm:class:gaming",
+        "label": "Gaming"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:3gpp",
+        "label": "3GPP"
+      },
+      {
+        "@id": "urn:ngm:class:mpeg",
+        "label": "MPEG"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:stereo-audio",
+        "label": "Stereo Audio"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "@id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human-Computer Interaction"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:surround-sound",
+        "label": "Surround Sound"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
       }
     ]
   },
-  "quality": 0.35,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:3d-audio",
+      "label": "3D Audio"
+    },
+    {
+      "@id": "urn:ngm:class:immersive-audio",
+      "label": "Immersive Audio"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

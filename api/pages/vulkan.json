@@ -13,11 +13,33 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:render-pass",
+        "label": "Render Pass"
+      },
+      {
+        "id": "urn:ngm:class:pipeline-state-object",
+        "label": "Pipeline State Object"
+      },
+      {
+        "id": "urn:ngm:class:queue-family",
+        "label": "Queue Family"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:gpu-driver",
+        "label": "GPU Driver"
+      },
+      {
+        "id": "urn:ngm:class:spirv",
+        "label": "SPIR-V"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:real-time-rendering",
@@ -30,12 +52,47 @@
       {
         "id": "urn:ngm:class:real-time-rendering-pipeline",
         "label": "Real-Time Rendering Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:ray-tracing",
+        "label": "Ray Tracing"
+      },
+      {
+        "id": "urn:ngm:class:mesh-shading",
+        "label": "Mesh Shading"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:open-xr",
+        "label": "OpenXR"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:opengl",
+        "label": "OpenGL"
+      },
+      {
+        "id": "urn:ngm:class:direct3d",
+        "label": "Direct3D"
+      },
+      {
+        "id": "urn:ngm:class:metal-api",
+        "label": "Metal API"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:machine-learning-inference",
+        "label": "Machine Learning Inference"
+      },
+      {
+        "id": "urn:ngm:class:automotive-safety-critical-systems",
+        "label": "Automotive Safety-Critical Systems"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:shader-language",
@@ -44,10 +101,23 @@
       {
         "id": "urn:ngm:class:gpu-computing",
         "label": "GPU Computing"
+      },
+      {
+        "id": "urn:ngm:class:command-buffer",
+        "label": "Command Buffer"
+      },
+      {
+        "id": "urn:ngm:class:descriptor-set",
+        "label": "Descriptor Set"
       }
     ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:khronos-group",
+        "label": "Khronos Group"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -63,8 +133,12 @@
         "label": "Rendering Pipeline"
       },
       {
-        "id": "urn:ngm:class:open-xr",
-        "label": "OpenXR"
+        "id": "urn:ngm:class:moltenvk",
+        "label": "MoltenVK"
+      },
+      {
+        "id": "urn:ngm:class:dxvk",
+        "label": "DXVK"
       }
     ]
   },

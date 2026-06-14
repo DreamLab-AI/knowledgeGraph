@@ -48,33 +48,65 @@ alias:: DistributedSystems
   "@type": "Class",
   "label": "Distributed Systems",
   "definition": "Collections of independent computing nodes that coordinate through message passing to present a unified service, providing fault tolerance, horizontal scalability, and geographic distribution. Distributed systems are foundational to metaverse platforms, blockchain networks, and large-scale AI inference pipelines, where no single node holds all state and consistency guarantees (CAP theorem trade-offs) govern design choices.",
-  "domain": "spatial-computing",
+  "domain": "distributed-systems",
   "maturity": "emerging",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:sc-platform-and-environment",
-      "label": "Platform and Environment"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:digital-infrastructure",
+    "label": "Digital Infrastructure"
+  },
   "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
+      {"@id": "urn:ngm:class:replication", "label": "Replication"},
+      {"@id": "urn:ngm:class:message-passing", "label": "Message Passing"},
+      {"@id": "urn:ngm:class:fault-tolerance", "label": "Fault Tolerance"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:network-protocol", "label": "Network Protocol"},
+      {"@id": "urn:ngm:class:clock-synchronisation", "label": "Clock Synchronisation"}
+    ],
     "enables": [
       {"@id": "urn:ngm:class:orchestration", "label": "Orchestration"},
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
+      {"@id": "urn:ngm:class:horizontal-scalability", "label": "Horizontal Scalability"},
+      {"@id": "urn:ngm:class:high-availability", "label": "High Availability"}
     ],
-    "relatedTo": [
-      {"@id": "urn:ngm:class:digital-infrastructure", "label": "Digital Infrastructure"},
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"}
+    "implements": [
+      {"@id": "urn:ngm:class:cap-theorem", "label": "CAP Theorem"},
+      {"@id": "urn:ngm:class:eventual-consistency", "label": "Eventual Consistency"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:remote-procedure-call", "label": "Remote Procedure Call"},
+      {"@id": "urn:ngm:class:service-discovery", "label": "Service Discovery"}
     ],
     "supports": [
       {"@id": "urn:ngm:class:microservices-architecture", "label": "Microservices Architecture"},
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"}
+      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
+      {"@id": "urn:ngm:class:stream-processing", "label": "Stream Processing"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:centralised-computing", "label": "Centralised Computing"},
+      {"@id": "urn:ngm:class:monolithic-architecture", "label": "Monolithic Architecture"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"},
+      {"@id": "urn:ngm:class:decentralised-governance", "label": "Decentralised Governance"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:digital-infrastructure", "label": "Digital Infrastructure"},
+      {"@id": "urn:ngm:class:cloud-computing", "label": "Cloud Computing"},
+      {"@id": "urn:ngm:class:peer-to-peer-network", "label": "Peer-to-Peer Network"}
     ]
   },
-  "quality": 0.7,
+  "sameAs": [
+    {"@id": "urn:ngm:class:distributed-computing", "label": "Distributed Computing"},
+    {"@id": "urn:ngm:class:decentralised-systems", "label": "Decentralised Systems"}
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

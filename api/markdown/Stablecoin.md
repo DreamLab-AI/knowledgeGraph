@@ -117,16 +117,10 @@ public:: true
   "definition": "A cryptocurrency whose value is algorithmically or institutionally pegged to a reserve asset to maintain price stability, enabling reliable medium of exchange and store of value in virtual economies.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:bc-token-and-asset",
-      "label": "Token and Asset"
-    },
-    {
-      "@id": "urn:ngm:class:crypto-token",
-      "label": "Crypto Token"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:crypto-token",
+    "label": "Crypto Token"
+  },
   "relations": {
     "requires": [
       {
@@ -144,6 +138,14 @@ public:: true
       {
         "@id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:reserve-asset",
+        "label": "Reserve Asset"
+      },
+      {
+        "@id": "urn:ngm:class:peg-mechanism",
+        "label": "Peg Mechanism"
       }
     ],
     "enables": [
@@ -162,6 +164,14 @@ public:: true
       {
         "@id": "urn:ngm:class:virtual-commerce",
         "label": "Virtual Commerce"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-finance",
+        "label": "Decentralized Finance"
+      },
+      {
+        "@id": "urn:ngm:class:remittance",
+        "label": "Remittance"
       }
     ],
     "partOf": [
@@ -177,13 +187,111 @@ public:: true
         "@id": "urn:ngm:class:virtual-currency",
         "label": "Virtual Currency"
       }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:stabilization-algorithm",
+        "label": "Stabilization Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-ledger",
+        "label": "Decentralized Ledger"
+      },
+      {
+        "@id": "urn:ngm:class:monetary-policy",
+        "label": "Monetary Policy"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:algorithmic-peg",
+        "label": "Algorithmic Peg"
+      },
+      {
+        "@id": "urn:ngm:class:fiat-backed-token",
+        "label": "Fiat-Backed Token"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:proof-of-reserve",
+        "label": "Proof of Reserve"
+      },
+      {
+        "@id": "urn:ngm:class:overcollateralization",
+        "label": "Overcollateralization"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:payment-settlement",
+        "label": "Payment Settlement"
+      },
+      {
+        "@id": "urn:ngm:class:liquidity-provision",
+        "label": "Liquidity Provision"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:iso-24165",
+        "label": "ISO 24165"
+      },
+      {
+        "@id": "urn:ngm:class:fsb-regulatory-framework",
+        "label": "FSB Regulatory Framework"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:volatile-cryptocurrency",
+        "label": "Volatile Cryptocurrency"
+      },
+      {
+        "@id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      },
+      {
+        "@id": "urn:ngm:class:traditional-payment-system",
+        "label": "Traditional Payment System"
+      },
+      {
+        "@id": "urn:ngm:class:foreign-exchange-market",
+        "label": "Foreign Exchange Market"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:tokenized-asset",
+        "label": "Tokenized Asset"
+      },
+      {
+        "@id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
+      }
     ]
   },
-  "quality": 0.35,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:price-stable-cryptocurrency",
+      "label": "Price-Stable Cryptocurrency"
+    },
+    {
+      "@id": "urn:ngm:class:pegged-digital-currency",
+      "label": "Pegged Digital Currency"
+    }
+  ],
+  "quality": 0.65,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

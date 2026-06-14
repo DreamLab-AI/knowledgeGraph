@@ -40,30 +40,62 @@ public:: true
   "definition": "The automated coordination, scheduling, and lifecycle management of containerised workloads, microservices, and distributed agents across heterogeneous infrastructure. In the context of metaverse and telecollaboration systems, orchestration—exemplified by Kubernetes—ensures that compute-intensive rendering, AI inference, and real-time communication services scale elastically and recover automatically from failures.",
   "domain": "infrastructure",
   "maturity": "emerging",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:infra-computing-and-cloud",
-      "label": "Computing and Cloud"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:infra-computing-and-cloud",
+    "label": "Computing and Cloud"
+  },
   "relations": {
-    "enables": [
-      {"@id": "urn:ngm:class:microservices-architecture", "label": "Microservices Architecture"},
-      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"}
+    "hasPart": [
+      {"@id": "urn:ngm:class:scheduler", "label": "Scheduler"},
+      {"@id": "urn:ngm:class:service-mesh", "label": "Service Mesh"},
+      {"@id": "urn:ngm:class:control-plane", "label": "Control Plane"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:cloud-native-computing", "label": "Cloud Native Computing"}
     ],
     "requires": [
-      {"@id": "urn:ngm:class:digital-infrastructure", "label": "Digital Infrastructure"}
+      {"@id": "urn:ngm:class:digital-infrastructure", "label": "Digital Infrastructure"},
+      {"@id": "urn:ngm:class:container", "label": "Container"},
+      {"@id": "urn:ngm:class:networking", "label": "Networking"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:microservices-architecture", "label": "Microservices Architecture"},
+      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"},
+      {"@id": "urn:ngm:class:auto-scaling", "label": "Auto-Scaling"},
+      {"@id": "urn:ngm:class:fault-tolerance", "label": "Fault Tolerance"},
+      {"@id": "urn:ngm:class:continuous-deployment", "label": "Continuous Deployment"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:kubernetes", "label": "Kubernetes"},
+      {"@id": "urn:ngm:class:declarative-configuration", "label": "Declarative Configuration"},
+      {"@id": "urn:ngm:class:load-balancing", "label": "Load Balancing"}
     ],
     "supports": [
       {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
-      {"@id": "urn:ngm:class:latency", "label": "Latency"}
+      {"@id": "urn:ngm:class:latency", "label": "Latency"},
+      {"@id": "urn:ngm:class:high-availability", "label": "High Availability"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:infrastructure-as-code", "label": "Infrastructure as Code"},
+      {"@id": "urn:ngm:class:observability", "label": "Observability"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:choreography", "label": "Choreography"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:ai-inference", "label": "AI Inference"},
+      {"@id": "urn:ngm:class:multi-agent-systems", "label": "Multi-Agent Systems"}
     ]
   },
-  "quality": 0.7,
+  "sameAs": [
+    {"@id": "urn:ngm:class:container-orchestration", "label": "Container Orchestration"},
+    {"@id": "urn:ngm:class:workload-management", "label": "Workload Management"}
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

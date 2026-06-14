@@ -50,15 +50,13 @@ public:: true
   "@id": "urn:ngm:class:transparency",
   "@type": "Class",
   "label": "Transparency",
-  "definition": "The property of an AI system whereby relevant information about the system's design, operation, capabilities, limitations, and decision-making processes is accessible and understandable to appropriate stakeholders.",
+  "definition": "The property of an AI system whereby relevant information about the system's design, operation, capabilities, limitations, and decision-making processes is accessible and understandable to appropriate stakeholders, enabling informed oversight, trust, and accountability.",
   "domain": "artificial-intelligence",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:ai-governance-and-ethics",
-      "label": "AI Governance and Ethics"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:ai-governance-and-ethics",
+    "label": "AI Governance and Ethics"
+  },
   "relations": {
     "enables": [
       {
@@ -68,14 +66,144 @@ public:: true
       {
         "@id": "urn:ngm:class:explainability-ai-0064",
         "label": "Explainability (AI-0064)"
+      },
+      {
+        "@id": "urn:ngm:class:ai-audit",
+        "label": "AI Audit"
+      },
+      {
+        "@id": "urn:ngm:class:informed-consent",
+        "label": "Informed Consent"
+      },
+      {
+        "@id": "urn:ngm:class:stakeholder-trust",
+        "label": "Stakeholder Trust"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:data-documentation",
+        "label": "Data Documentation"
+      },
+      {
+        "@id": "urn:ngm:class:model-card",
+        "label": "Model Card"
+      },
+      {
+        "@id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:ai-trustworthiness",
+        "label": "AI Trustworthiness"
+      },
+      {
+        "@id": "urn:ngm:class:conformity-assessment",
+        "label": "Conformity Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:data-transparency",
+        "label": "Data Transparency"
+      },
+      {
+        "@id": "urn:ngm:class:algorithmic-transparency",
+        "label": "Algorithmic Transparency"
+      },
+      {
+        "@id": "urn:ngm:class:operational-transparency",
+        "label": "Operational Transparency"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:interpretability",
+        "label": "Interpretability"
+      },
+      {
+        "@id": "urn:ngm:class:explainability-ai-0064",
+        "label": "Explainability (AI-0064)"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:opacity",
+        "label": "Opacity"
+      },
+      {
+        "@id": "urn:ngm:class:black-box-model",
+        "label": "Black-Box Model"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      },
+      {
+        "@id": "urn:ngm:class:ieee-7001-2021",
+        "label": "IEEE 7001-2021"
+      },
+      {
+        "@id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI Risk Management Framework"
+      },
+      {
+        "@id": "urn:ngm:class:iso-iec-tr-24028",
+        "label": "ISO/IEC TR 24028"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:open-source-software",
+        "label": "Open-Source Software"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-auditability",
+        "label": "Blockchain Auditability"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:fairness",
+        "label": "Fairness"
+      },
+      {
+        "@id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:human-oversight",
+        "label": "Human Oversight"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:openness",
+      "label": "Openness"
+    },
+    {
+      "@id": "urn:ngm:class:discoverability",
+      "label": "Discoverability"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

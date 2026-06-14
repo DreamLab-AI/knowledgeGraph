@@ -13,11 +13,24 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.75,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:json-web-signature",
+        "label": "JSON Web Signature"
+      },
+      {
+        "id": "urn:ngm:class:json-web-algorithms",
+        "label": "JSON Web Algorithms"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:authentication",
@@ -30,12 +43,55 @@
       {
         "id": "urn:ngm:class:rest-api",
         "label": "REST API"
+      },
+      {
+        "id": "urn:ngm:class:stateless-session-management",
+        "label": "Stateless Session Management"
+      },
+      {
+        "id": "urn:ngm:class:single-sign-on",
+        "label": "Single Sign-On"
+      },
+      {
+        "id": "urn:ngm:class:federated-identity",
+        "label": "Federated Identity"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:bearer-token",
+        "label": "Bearer Token"
+      },
+      {
+        "id": "urn:ngm:class:claims-based-identity",
+        "label": "Claims-Based Identity"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:opaque-token",
+        "label": "Opaque Token"
+      },
+      {
+        "id": "urn:ngm:class:session-cookie",
+        "label": "Session Cookie"
+      },
+      {
+        "id": "urn:ngm:class:saml-assertion",
+        "label": "SAML Assertion"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:verifiable-credential",
+        "label": "Verifiable Credential"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-identifier",
+        "label": "Decentralised Identifier"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:cryptographic-signature",
@@ -48,10 +104,31 @@
       {
         "id": "urn:ngm:class:ietf",
         "label": "IETF"
+      },
+      {
+        "id": "urn:ngm:class:base64url-encoding",
+        "label": "Base64URL Encoding"
+      },
+      {
+        "id": "urn:ngm:class:hmac",
+        "label": "HMAC"
+      },
+      {
+        "id": "urn:ngm:class:rsa-algorithm",
+        "label": "RSA Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:elliptic-curve-digital-signature-algorithm",
+        "label": "Elliptic Curve Digital Signature Algorithm"
       }
     ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:rfc-7519",
+        "label": "RFC 7519"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -69,6 +146,22 @@
       {
         "id": "urn:ngm:class:sd-jwt",
         "label": "SD-JWT"
+      },
+      {
+        "id": "urn:ngm:class:json-web-encryption",
+        "label": "JSON Web Encryption"
+      },
+      {
+        "id": "urn:ngm:class:refresh-token",
+        "label": "Refresh Token"
+      },
+      {
+        "id": "urn:ngm:class:microservices-architecture",
+        "label": "Microservices Architecture"
+      },
+      {
+        "id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
       }
     ]
   },

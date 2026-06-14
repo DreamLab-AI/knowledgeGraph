@@ -5,30 +5,18 @@
   "public": true,
   "classIri": "urn:ngm:class:camera",
   "domain": "robotics",
-  "definition": "An imaging sensor device that captures visual information in robotics systems, enabling computer vision applications including object detection, SLAM, 3D reconstruction, visual servoing, and semantic scene understanding through various modalities (RGB, depth, thermal, event-based) and technologie...",
+  "definition": "An imaging sensor device that captures visual information in robotics and spatial-computing systems, enabling computer vision applications including object detection, SLAM, 3D reconstruction, visual servoing, and semantic scene understanding through various modalities (RGB, depth, thermal, event-based) and sensor technologies (CCD, CMOS, ToF, structured light).",
   "subClassOf": [
-    {
-      "id": "urn:ngm:class:robo-perception",
-      "label": "Perception and Sensing"
-    },
-    {
-      "id": "urn:ngm:class:visual-perception",
-      "label": "VisualPerception"
-    },
     {
       "id": "urn:ngm:class:sensor",
       "label": "Sensor"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
     "hasPart": [
-      {
-        "id": "urn:ngm:class:camera-calibration",
-        "label": "CameraCalibration"
-      },
       {
         "id": "urn:ngm:class:image-sensor",
         "label": "ImageSensor"
@@ -40,9 +28,18 @@
       {
         "id": "urn:ngm:class:processing-unit",
         "label": "ProcessingUnit"
+      },
+      {
+        "id": "urn:ngm:class:camera-calibration",
+        "label": "CameraCalibration"
       }
     ],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:optics",
+        "label": "Optics"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:visual-servoing",
@@ -63,17 +60,85 @@
       {
         "id": "urn:ngm:class:slam",
         "label": "SLAM"
+      },
+      {
+        "id": "urn:ngm:class:visual-odometry",
+        "label": "Visual Odometry"
+      },
+      {
+        "id": "urn:ngm:class:depth-estimation",
+        "label": "Depth Estimation"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:visual-perception",
+        "label": "VisualPerception"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:lidar",
+        "label": "LiDAR"
+      },
+      {
+        "id": "urn:ngm:class:radar",
+        "label": "Radar"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      }
+    ],
     "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ieee",
+        "label": "IEEE"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec",
+        "label": "ISO/IEC"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:robot-perception-system",
+        "label": "Robot Perception System"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:structure-from-motion",
+        "label": "Structure from Motion"
+      },
+      {
+        "id": "urn:ngm:class:neural-radiance-field",
+        "label": "Neural Radiance Field"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -83,20 +83,44 @@ alias:: TokenEconomics
   "@id": "urn:ngm:class:token-economics",
   "@type": "Class",
   "label": "Token Economics",
-  "definition": "Tokenomics is the study and design of the economic systems governing cryptocurrency tokens, encompassing supply mechanics (inflation/deflation), distribution schedules, utility functions, governance rights, and incentive structures that determine token value, network security, and sustainable eco...",
+  "definition": "Tokenomics is the study and design of the economic systems governing cryptocurrency tokens, encompassing supply mechanics (inflation/deflation), distribution schedules, utility functions, governance rights, and incentive structures that determine token value, network security, and sustainable ecosystem growth.",
   "domain": "blockchain",
   "maturity": "emerging",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:bc-defi-and-economics",
-      "label": "DeFi and Economics"
-    },
-    {
-      "@id": "urn:ngm:class:blockchain-core",
-      "label": "Blockchain"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:bc-defi-and-economics",
+    "label": "DeFi and Economics"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:token-supply-mechanics",
+        "label": "Token Supply Mechanics"
+      },
+      {
+        "@id": "urn:ngm:class:token-distribution",
+        "label": "Token Distribution"
+      },
+      {
+        "@id": "urn:ngm:class:incentive-structure",
+        "label": "Incentive Structure"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:blockchain-economics",
+        "label": "Blockchain Economics"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      }
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:decentralized-governance",
@@ -109,14 +133,106 @@ alias:: TokenEconomics
       {
         "@id": "urn:ngm:class:value-capture",
         "label": "Value Capture"
+      },
+      {
+        "@id": "urn:ngm:class:liquidity-mining",
+        "label": "Liquidity Mining"
+      },
+      {
+        "@id": "urn:ngm:class:staking",
+        "label": "Staking"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      },
+      {
+        "@id": "urn:ngm:class:mechanism-design",
+        "label": "Mechanism Design"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:monetary-policy",
+        "label": "Monetary Policy"
+      },
+      {
+        "@id": "urn:ngm:class:deflationary-mechanism",
+        "label": "Deflationary Mechanism"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "@id": "urn:ngm:class:utility-token",
+        "label": "Utility Token"
+      },
+      {
+        "@id": "urn:ngm:class:mev",
+        "label": "MEV"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:decentralized-finance",
+        "label": "DeFi"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:fiat-currency",
+        "label": "Fiat Currency"
+      },
+      {
+        "@id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:behavioural-economics",
+        "label": "Behavioural Economics"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:real-world-asset-tokenisation",
+        "label": "Real World Asset Tokenisation"
+      },
+      {
+        "@id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:tokenomics",
+      "label": "Tokenomics"
+    },
+    {
+      "@id": "urn:ngm:class:crypto-economics",
+      "label": "Crypto Economics"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

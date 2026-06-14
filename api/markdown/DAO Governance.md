@@ -46,32 +46,154 @@ public:: true
   "@id": "urn:ngm:class:dao-governance",
   "@type": "Class",
   "label": "DAO Governance",
-  "definition": "DAO governance refers to the decision-making structures and voting mechanisms within Decentralised Autonomous Organisations, enabling token holders to collectively govern protocol parameters, treasury allocations, and organisational direction through on-chain and off-chain processes.",
-  "domain": "artificial-intelligence",
+  "definition": "DAO governance refers to the decision-making structures and voting mechanisms within Decentralised Autonomous Organisations, enabling token holders to collectively govern protocol parameters, treasury allocations, and organisational direction through on-chain and off-chain processes. Governance rules are encoded as smart contracts that automatically execute approved decisions, supporting a spectrum of voting models including token-weighted, quadratic, delegated, conviction, and reputation-based approaches.",
+  "domain": "blockchain",
   "maturity": "emerging",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:ai-governance-and-ethics",
-      "label": "AI Governance and Ethics"
-    },
-    {
-      "@id": "urn:ngm:class:community-governance",
-      "label": "Community Governance"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:community-governance",
+    "label": "Community Governance"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:token-based-voting",
+        "label": "Token-Based Voting"
+      },
+      {
+        "@id": "urn:ngm:class:quadratic-voting",
+        "label": "Quadratic Voting"
+      },
+      {
+        "@id": "urn:ngm:class:delegated-voting",
+        "label": "Delegated Voting"
+      },
+      {
+        "@id": "urn:ngm:class:conviction-voting",
+        "label": "Conviction Voting"
+      },
+      {
+        "@id": "urn:ngm:class:holographic-consensus",
+        "label": "Holographic Consensus"
+      },
+      {
+        "@id": "urn:ngm:class:on-chain-treasury",
+        "label": "On-Chain Treasury"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:decentralised-decision-making",
         "label": "Decentralised Decision-Making"
+      },
+      {
+        "@id": "urn:ngm:class:protocol-upgrade",
+        "label": "Protocol Upgrade"
+      },
+      {
+        "@id": "urn:ngm:class:treasury-allocation",
+        "label": "Treasury Allocation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-signature",
+        "label": "Cryptographic Signature"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:liquid-democracy",
+        "label": "Liquid Democracy"
+      },
+      {
+        "@id": "urn:ngm:class:meritocratic-governance",
+        "label": "Meritocratic Governance"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:soulbound-token",
+        "label": "Soulbound Token"
+      },
+      {
+        "@id": "urn:ngm:class:reputation-system",
+        "label": "Reputation System"
+      },
+      {
+        "@id": "urn:ngm:class:snapshot-voting",
+        "label": "Snapshot Voting"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:centralised-governance",
+        "label": "Centralised Governance"
+      },
+      {
+        "@id": "urn:ngm:class:corporate-board-governance",
+        "label": "Corporate Board Governance"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:ai-governance-and-ethics",
+        "label": "AI Governance and Ethics"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:defi-protocol",
+        "label": "DeFi Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:decentralised-governance",
+      "label": "Decentralised Governance"
+    },
+    {
+      "@id": "urn:ngm:class:on-chain-governance",
+      "label": "On-Chain Governance"
+    }
+  ],
+  "quality": 0.68,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

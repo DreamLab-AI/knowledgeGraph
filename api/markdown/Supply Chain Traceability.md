@@ -91,38 +91,66 @@ alias:: BC-0441-supply-chain-traceability, BC-0446-supply-chain-traceability
   "@id": "urn:ngm:class:supply-chain-traceability",
   "@type": "Class",
   "label": "Supply Chain Traceability",
-  "definition": "Supply chain traceability employs BlockchainTechnology|blockchain and SmartContract|smart contracts to create immutable, transparent records of product journey from origin through manufacturing, distribution, and final delivery, enabling verification of authenticity and compliance at each...",
-  "domain": "blockchain",
+  "definition": "Supply chain traceability employs blockchain and smart contracts to create immutable, transparent records of a product's journey from origin through manufacturing, distribution, and final delivery, enabling verification of authenticity and regulatory compliance at each stage. Implementations track provenance, environmental conditions, and certifications, providing cryptographic proof of authenticity and preventing counterfeiting across food safety, pharmaceuticals, luxury goods, and circular-economy initiatives.",
+  "domain": "supply-chain",
   "maturity": "emerging",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:bc-network-component",
-      "label": "Network Component"
-    },
-    {
-      "@id": "urn:ngm:class:blockchain-application",
-      "label": "Blockchain Application"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:blockchain-application",
+    "label": "Blockchain Application"
+  },
   "relations": {
     "uses": [
       {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:hyperledger-fabric", "label": "Hyperledger Fabric"}
+      {"@id": "urn:ngm:class:hyperledger-fabric", "label": "Hyperledger Fabric"},
+      {"@id": "urn:ngm:class:internet-of-things", "label": "Internet of Things"},
+      {"@id": "urn:ngm:class:rfid", "label": "RFID"},
+      {"@id": "urn:ngm:class:distributed-ledger-technology", "label": "Distributed Ledger Technology"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:audit-trail", "label": "Audit Trail"},
-      {"@id": "urn:ngm:class:cold-chain-monitoring", "label": "Cold Chain Monitoring"}
+      {"@id": "urn:ngm:class:cold-chain-monitoring", "label": "Cold Chain Monitoring"},
+      {"@id": "urn:ngm:class:product-provenance", "label": "Product Provenance"},
+      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"},
+      {"@id": "urn:ngm:class:anti-counterfeiting", "label": "Anti-Counterfeiting"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:data-integrity", "label": "Data Integrity"},
+      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
+      {"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:provenance-record", "label": "Provenance Record"},
+      {"@id": "urn:ngm:class:chain-of-custody", "label": "Chain of Custody"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:circular-economy", "label": "Circular Economy"},
+      {"@id": "urn:ngm:class:food-safety", "label": "Food Safety"},
+      {"@id": "urn:ngm:class:pharmaceutical-verification", "label": "Pharmaceutical Verification"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:gs1-standards", "label": "GS1 Standards"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:centralised-database", "label": "Centralised Database"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:circular-economy", "label": "Circular Economy"},
-      {"@id": "urn:ngm:class:transparency", "label": "Transparency"}
+      {"@id": "urn:ngm:class:transparency", "label": "Transparency"},
+      {"@id": "urn:ngm:class:sustainability-reporting", "label": "Sustainability Reporting"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"},
+      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"}
     ]
   },
-  "quality": 0.4,
+  "sameAs": [
+    {"@id": "urn:ngm:class:product-traceability", "label": "Product Traceability"},
+    {"@id": "urn:ngm:class:supply-chain-visibility", "label": "Supply Chain Visibility"}
+  ],
+  "quality": 0.70,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

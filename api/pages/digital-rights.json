@@ -4,20 +4,16 @@
   "slug": "digital-rights",
   "public": true,
   "classIri": "urn:ngm:class:digital-rights",
-  "domain": "spatial-computing",
-  "definition": "The human rights and freedoms applicable to digital contexts including privacy, data protection, freedom of expression, access to information, and digital ownership within virtual environments, metaverse platforms, and online spaces, increasingly codified through international frameworks and nati...",
+  "domain": "governance",
+  "definition": "The human rights and freedoms applicable to digital contexts including privacy, data protection, freedom of expression, access to information, and digital ownership within virtual environments, metaverse platforms, and online spaces, increasingly codified through international frameworks and national legislation.",
   "subClassOf": [
-    {
-      "id": "urn:ngm:class:sc-governance-and-safety",
-      "label": "Governance and Safety"
-    },
     {
       "id": "urn:ngm:class:human-rights",
       "label": "Human Rights"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.72,
   "maturity": "draft",
   "relationships": {
     "hasPart": [],
@@ -33,6 +29,10 @@
       {
         "id": "urn:ngm:class:legal-framework",
         "label": "Legal Framework"
+      },
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
       }
     ],
     "enables": [
@@ -47,17 +47,95 @@
       {
         "id": "urn:ngm:class:privacy-protection",
         "label": "Privacy Protection"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-accountability",
+        "label": "Algorithmic Accountability"
+      },
+      {
+        "id": "urn:ngm:class:content-moderation",
+        "label": "Content Moderation"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      },
+      {
+        "id": "urn:ngm:class:freedom-of-expression",
+        "label": "Freedom of Expression"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:surveillance-capitalism",
+        "label": "Surveillance Capitalism"
+      },
+      {
+        "id": "urn:ngm:class:censorship",
+        "label": "Censorship"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-identity",
+        "label": "Decentralised Identity"
+      }
+    ],
     "uses": [],
-    "supports": [],
-    "standardizedBy": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:digital-inclusion",
+        "label": "Digital Inclusion"
+      },
+      {
+        "id": "urn:ngm:class:open-internet",
+        "label": "Open Internet"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "id": "urn:ngm:class:digital-services-act",
+        "label": "Digital Services Act"
+      },
+      {
+        "id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      },
+      {
+        "id": "urn:ngm:class:e-idas",
+        "label": "eIDAS"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cyber-security",
+        "label": "Cybersecurity"
+      },
+      {
+        "id": "urn:ngm:class:net-neutrality",
+        "label": "Net Neutrality"
+      },
+      {
+        "id": "urn:ngm:class:intellectual-property",
+        "label": "Intellectual Property"
+      }
+    ]
   },
   "wikilinks": [
     {

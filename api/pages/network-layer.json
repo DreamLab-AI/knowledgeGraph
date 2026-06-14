@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:network-layer",
   "domain": "infrastructure",
-  "definition": "Architectural layer governing communication protocols, packet routing, congestion control, and network topology. Provides reliable end-to-end message delivery, bandwidth management, and quality-of-service guarantees for distributed narrative systems across heterogeneous networks.",
+  "definition": "Architectural layer governing communication protocols, packet routing, congestion control, and network topology. Provides reliable end-to-end message delivery, bandwidth management, and quality-of-service guarantees for distributed systems across heterogeneous networks.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-network-and-comms",
@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.68,
   "maturity": "draft",
   "relationships": {
     "hasPart": [
@@ -36,9 +36,26 @@
       {
         "id": "urn:ngm:class:network-topology",
         "label": "Network Topology"
+      },
+      {
+        "id": "urn:ngm:class:packet-switching",
+        "label": "Packet Switching"
+      },
+      {
+        "id": "urn:ngm:class:network-interface",
+        "label": "Network Interface"
       }
     ],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:physical-layer",
+        "label": "Physical Layer"
+      },
+      {
+        "id": "urn:ngm:class:data-link-layer",
+        "label": "Data Link Layer"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:bandwidth-allocation",
@@ -55,22 +72,105 @@
       {
         "id": "urn:ngm:class:network-resilience",
         "label": "Network Resilience"
+      },
+      {
+        "id": "urn:ngm:class:multipath-routing",
+        "label": "Multipath Routing"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:infrastructure-layer",
+        "label": "Infrastructure Layer"
+      },
+      {
+        "id": "urn:ngm:class:ip-addressing",
+        "label": "IP Addressing"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:internet-protocol",
+        "label": "Internet Protocol"
+      },
+      {
+        "id": "urn:ngm:class:icmp",
+        "label": "ICMP"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:transport-layer",
+        "label": "Transport Layer"
+      },
+      {
+        "id": "urn:ngm:class:application-layer",
+        "label": "Application Layer"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:architectural-layer",
         "label": "ArchitecturalLayer"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "id": "urn:ngm:class:software-defined-networking",
+        "label": "Software Defined Networking"
       }
     ],
     "uses": [],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "supports": [
+      {
+        "id": "urn:ngm:class:middleware-layer",
+        "label": "Middleware Layer"
+      },
+      {
+        "id": "urn:ngm:class:transport-layer",
+        "label": "Transport Layer"
+      },
+      {
+        "id": "urn:ngm:class:overlay-network",
+        "label": "Overlay Network"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      },
+      {
+        "id": "urn:ngm:class:ieee-802",
+        "label": "IEEE 802"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:osi-model",
+        "label": "OSI Model"
+      },
+      {
+        "id": "urn:ngm:class:internet-protocol-suite",
+        "label": "Internet Protocol Suite"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      },
+      {
+        "id": "urn:ngm:class:firewall",
+        "label": "Firewall"
+      },
+      {
+        "id": "urn:ngm:class:virtual-private-network",
+        "label": "Virtual Private Network"
+      }
+    ]
   },
   "wikilinks": [
     {

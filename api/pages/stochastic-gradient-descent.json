@@ -4,20 +4,42 @@
   "slug": "stochastic-gradient-descent",
   "public": true,
   "classIri": "urn:ngm:class:stochastic-gradient-descent",
-  "domain": "artificial-intelligence",
+  "domain": "machine-learning",
   "definition": "Stochastic Gradient Descent (SGD) is an iterative optimisation algorithm that updates model parameters by computing gradients from randomly sampled mini-batches rather than the full training dataset, trading gradient accuracy for computational efficiency and the ability to escape shallow local minima. SGD and its adaptive variants (Adam, RMSprop, AdaGrad) are the primary training algorithms for deep neural networks across vision, language, and reinforcement learning domains.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:sc-content-and-assets",
-      "label": "Content and Assets"
+      "id": "urn:ngm:class:gradient-descent",
+      "label": "Gradient Descent"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.72,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:mini-batch",
+        "label": "Mini-Batch"
+      },
+      {
+        "id": "urn:ngm:class:learning-rate-schedule",
+        "label": "Learning Rate Schedule"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      },
+      {
+        "id": "urn:ngm:class:learning-rate",
+        "label": "Learning Rate"
+      },
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:deep-learning",
@@ -26,21 +48,79 @@
       {
         "id": "urn:ngm:class:neural-network",
         "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:automatic-differentiation",
+        "label": "Automatic Differentiation"
+      },
+      {
+        "id": "urn:ngm:class:computational-graph",
+        "label": "Computational Graph"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:first-order-optimisation",
+        "label": "First-Order Optimisation"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:batch-gradient-descent",
+        "label": "Batch Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:second-order-optimisation",
+        "label": "Second-Order Optimisation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      },
+      {
+        "id": "urn:ngm:class:scientific-computing",
+        "label": "Scientific Computing"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:gpu-accelerated-computing",
+        "label": "GPU Accelerated Computing"
       }
     ],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:reinforcement-learning",
@@ -49,6 +129,14 @@
       {
         "id": "urn:ngm:class:transfer-learning",
         "label": "Transfer Learning"
+      },
+      {
+        "id": "urn:ngm:class:hyperparameter-optimisation",
+        "label": "Hyperparameter Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:adam-optimiser",
+        "label": "Adam Optimiser"
       }
     ]
   },

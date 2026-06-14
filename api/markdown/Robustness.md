@@ -45,27 +45,135 @@ public:: true
   "definition": "The ability of an AI system to maintain consistent, correct, and safe performance across diverse operating conditions, including unexpected inputs, environmental variations, and adversarial perturbations, without catastrophic failure or significant degradation.",
   "domain": "artificial-intelligence",
   "maturity": "emerging",
-  "qualityScore": 0.7,
-  "subClassOf": [
+  "qualityScore": 0.72,
+  "subClassOf": {
+    "@id": "urn:ngm:class:ai-safety",
+    "label": "AI Safety"
+  },
+  "sameAs": [
     {
-      "@id": "urn:ngm:class:ai-governance-and-ethics",
-      "label": "AI Governance and Ethics"
+      "@id": "urn:ngm:class:model-robustness",
+      "label": "Model Robustness"
     },
     {
-      "@id": "urn:ngm:class:ai-safety",
-      "label": "AI Safety"
+      "@id": "urn:ngm:class:adversarial-robustness",
+      "label": "Adversarial Robustness"
     }
   ],
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:input-robustness",
+        "label": "Input Robustness"
+      },
+      {
+        "@id": "urn:ngm:class:distributional-robustness",
+        "label": "Distributional Robustness"
+      },
+      {
+        "@id": "urn:ngm:class:certified-robustness",
+        "label": "Certified Robustness"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:ai-trustworthiness",
+        "label": "AI Trustworthiness"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:adversarial-training",
+        "label": "Adversarial Training"
+      },
+      {
+        "@id": "urn:ngm:class:uncertainty-quantification",
+        "label": "Uncertainty Quantification"
+      },
+      {
+        "@id": "urn:ngm:class:data-augmentation",
+        "label": "Data Augmentation"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:reliable-deployment",
+        "label": "Reliable Deployment"
+      },
+      {
+        "@id": "urn:ngm:class:safety-fine-tuning",
+        "label": "Safety Fine Tuning"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:out-of-distribution-detection",
+        "label": "Out-of-Distribution Detection"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:iso-iec-24029",
+        "label": "ISO IEC 24029"
+      },
+      {
+        "@id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI RMF"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:perturbation-testing",
+        "label": "Perturbation Testing"
+      },
+      {
+        "@id": "urn:ngm:class:metamorphic-testing",
+        "label": "Metamorphic Testing"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "@id": "urn:ngm:class:ai-governance-and-ethics",
+        "label": "AI Governance and Ethics"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      },
+      {
+        "@id": "urn:ngm:class:iso-iec-23894",
+        "label": "ISO IEC 23894"
+      }
+    ],
     "contrastsWith": [
       {
         "@id": "urn:ngm:class:adversarial-attack",
         "label": "Adversarial Attack"
+      },
+      {
+        "@id": "urn:ngm:class:overfitting",
+        "label": "Overfitting"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "@id": "urn:ngm:class:resilience",
+        "label": "Resilience"
       }
     ],
     "relatedTo": [
@@ -80,16 +188,10 @@ public:: true
       {
         "@id": "urn:ngm:class:bias",
         "label": "Bias"
-      }
-    ],
-    "supports": [
-      {
-        "@id": "urn:ngm:class:ai-safety",
-        "label": "AI Safety"
       },
       {
-        "@id": "urn:ngm:class:safety-fine-tuning",
-        "label": "Safety Fine Tuning"
+        "@id": "urn:ngm:class:reliability",
+        "label": "Reliability"
       }
     ]
   }

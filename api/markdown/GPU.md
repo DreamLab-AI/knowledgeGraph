@@ -58,21 +58,47 @@ public:: true
   "@id": "urn:ngm:class:gpu",
   "@type": "Class",
   "label": "GPU",
-  "definition": "A GPU (Graphics Processing Unit) is a highly parallel processor optimised for the throughput-oriented computation required to render images and to accelerate data-parallel workloads.",
+  "definition": "A GPU (Graphics Processing Unit) is a highly parallel processor optimised for the throughput-oriented computation required to render images and to accelerate data-parallel workloads, and increasingly used as the primary compute substrate for deep learning, scientific simulation, and XR rendering.",
   "domain": "infrastructure",
   "maturity": "established",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:graphics-processing",
-      "label": "Graphics Processing"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:graphics-processing",
+    "label": "Graphics Processing"
+  },
   "relations": {
-    "requires": [
+    "hasPart": [
       {
         "@id": "urn:ngm:class:shader",
         "label": "Shader"
+      },
+      {
+        "@id": "urn:ngm:class:tensor-core",
+        "label": "Tensor Core"
+      },
+      {
+        "@id": "urn:ngm:class:video-memory",
+        "label": "Video Memory"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:compute-node",
+        "label": "Compute Node"
+      },
+      {
+        "@id": "urn:ngm:class:heterogeneous-computing-system",
+        "label": "Heterogeneous Computing System"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:parallel-programming-model",
+        "label": "Parallel Programming Model"
+      },
+      {
+        "@id": "urn:ngm:class:graphics-driver",
+        "label": "Graphics Driver"
       }
     ],
     "enables": [
@@ -87,14 +113,116 @@ public:: true
       {
         "@id": "urn:ngm:class:ray-tracing",
         "label": "Ray Tracing"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning-training",
+        "label": "Deep Learning Training"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network-inference",
+        "label": "Neural Network Inference"
+      },
+      {
+        "@id": "urn:ngm:class:scientific-computing",
+        "label": "Scientific Computing"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:pcie-bus",
+        "label": "PCIe Bus"
+      },
+      {
+        "@id": "urn:ngm:class:cpu",
+        "label": "CPU"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:simd-execution",
+        "label": "SIMD Execution"
+      },
+      {
+        "@id": "urn:ngm:class:single-instruction-multiple-thread",
+        "label": "Single-Instruction Multiple-Thread"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:cuda",
+        "label": "CUDA"
+      },
+      {
+        "@id": "urn:ngm:class:opencl",
+        "label": "OpenCL"
+      },
+      {
+        "@id": "urn:ngm:class:vulkan",
+        "label": "Vulkan"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:khronos-group",
+        "label": "Khronos Group"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:cpu",
+        "label": "CPU"
+      },
+      {
+        "@id": "urn:ngm:class:neural-processing-unit",
+        "label": "Neural Processing Unit"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-mining",
+        "label": "Blockchain Mining"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:graphics-pipeline",
+        "label": "Graphics Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:compute-shader",
+        "label": "Compute Shader"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:graphics-processing-unit",
+      "label": "Graphics Processing Unit"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

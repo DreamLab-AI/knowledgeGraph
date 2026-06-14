@@ -16,8 +16,30 @@
   "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:log-entry",
+        "label": "Log Entry"
+      },
+      {
+        "id": "urn:ngm:class:event-record",
+        "label": "Event Record"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:append-only-storage",
+        "label": "Append-Only Storage"
+      },
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "id": "urn:ngm:class:trusted-timestamping",
+        "label": "Trusted Timestamping"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:algorithmic-auditing",
@@ -26,12 +48,47 @@
       {
         "id": "urn:ngm:class:compliance-verification",
         "label": "Compliance Verification"
+      },
+      {
+        "id": "urn:ngm:class:incident-response",
+        "label": "Incident Response"
+      },
+      {
+        "id": "urn:ngm:class:forensic-analysis",
+        "label": "Forensic Analysis"
+      },
+      {
+        "id": "urn:ngm:class:non-repudiation",
+        "label": "Non-Repudiation"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:log-integrity-verification",
+        "label": "Log Integrity Verification"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:application-logging",
+        "label": "Application Logging"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:data-provenance",
+        "label": "Data Provenance"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-immutability",
+        "label": "Blockchain Immutability"
+      }
+    ],
     "uses": [],
     "supports": [
       {
@@ -45,10 +102,36 @@
       {
         "id": "urn:ngm:class:compliance-monitoring",
         "label": "Compliance Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-reporting",
+        "label": "Regulatory Reporting"
       }
     ],
-    "standardizedBy": [],
-    "partOf": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:nist-sp-800-92",
+        "label": "NIST SP 800-92"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-27001",
+        "label": "ISO/IEC 27001"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:security-information-and-event-management",
+        "label": "Security Information and Event Management"
+      },
+      {
+        "id": "urn:ngm:class:identity-and-access-management",
+        "label": "Identity and Access Management"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:information-security",

@@ -70,44 +70,66 @@ alias:: Merkle Trees, MerkleTree
   "definition": "A binary tree of cryptographic hashes in which each leaf node contains the hash of a data block and each non-leaf node contains the hash of its children. Merkle trees enable efficient and tamper-evident verification of large data sets; in blockchain systems they allow nodes to confirm individual transaction inclusion without downloading an entire block.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:bc-cryptographic-primitive",
-      "label": "Cryptographic Primitive"
-    },
-    {
-      "@id": "urn:ngm:class:blockchain-entity",
-      "label": "Blockchain Entity"
-    },
-    {
-      "@id": "urn:ngm:class:cryptographic-primitive",
-      "label": "CryptographicPrimitive"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:cryptographic-primitive",
+    "label": "Cryptographic Primitive"
+  },
   "relations": {
     "hasPart": [
       {"@id": "urn:ngm:class:merkle-root", "label": "Merkle Root"},
-      {"@id": "urn:ngm:class:merkle-proof", "label": "Merkle Proof"}
+      {"@id": "urn:ngm:class:merkle-proof", "label": "Merkle Proof"},
+      {"@id": "urn:ngm:class:leaf-node", "label": "Leaf Node"},
+      {"@id": "urn:ngm:class:internal-node", "label": "Internal Node"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:block-header", "label": "Block Header"},
+      {"@id": "urn:ngm:class:distributed-ledger", "label": "Distributed Ledger"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"},
-      {"@id": "urn:ngm:class:cryptographic-hash", "label": "Cryptographic Hash"}
+      {"@id": "urn:ngm:class:cryptographic-hash", "label": "Cryptographic Hash"},
+      {"@id": "urn:ngm:class:sha-256", "label": "SHA-256"},
+      {"@id": "urn:ngm:class:binary-tree", "label": "Binary Tree"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:blockchain-transaction", "label": "Blockchain Transaction"},
-      {"@id": "urn:ngm:class:block-header", "label": "Block Header"}
+      {"@id": "urn:ngm:class:simplified-payment-verification", "label": "Simplified Payment Verification"},
+      {"@id": "urn:ngm:class:light-client", "label": "Light Client"},
+      {"@id": "urn:ngm:class:data-integrity-verification", "label": "Data Integrity Verification"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:collision-resistant-hash", "label": "Collision-Resistant Hash"},
+      {"@id": "urn:ngm:class:deterministic-ordering", "label": "Deterministic Ordering"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:proof-of-inclusion", "label": "Proof of Inclusion"},
+      {"@id": "urn:ngm:class:proof-of-exclusion", "label": "Proof of Exclusion"},
+      {"@id": "urn:ngm:class:blockchain-scalability", "label": "Blockchain Scalability"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:patricia-trie", "label": "Patricia Trie"},
+      {"@id": "urn:ngm:class:linked-list", "label": "Linked List"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:content-addressable-storage", "label": "Content-Addressable Storage"},
+      {"@id": "urn:ngm:class:distributed-file-system", "label": "Distributed File System"},
+      {"@id": "urn:ngm:class:version-control-system", "label": "Version Control System"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:block", "label": "Block"},
       {"@id": "urn:ngm:class:cryptographic-commitment", "label": "Cryptographic Commitment"},
-      {"@id": "urn:ngm:class:blockchain-scalability", "label": "Blockchain Scalability"}
+      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"},
+      {"@id": "urn:ngm:class:vector-commitment", "label": "Vector Commitment"}
     ]
   },
+  "sameAs": [
+    {"@id": "urn:ngm:class:hash-tree", "label": "Hash Tree"}
+  ],
   "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

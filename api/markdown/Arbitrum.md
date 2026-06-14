@@ -70,12 +70,10 @@ public:: true
   "domain": "blockchain",
   "maturity": "established",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:blockchain-domain",
-      "label": "Blockchain Domain"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:layer-2-scaling-solution",
+    "label": "Layer-2 Scaling Solution"
+  },
   "relations": {
     "requires": [
       {
@@ -89,20 +87,140 @@ public:: true
       {
         "@id": "urn:ngm:class:fraud-proof",
         "label": "Fraud Proof"
+      },
+      {
+        "@id": "urn:ngm:class:sequencer",
+        "label": "Sequencer"
+      },
+      {
+        "@id": "urn:ngm:class:validator-node",
+        "label": "Validator Node"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:optimistic-rollup",
+        "label": "Optimistic Rollup"
+      },
+      {
+        "@id": "urn:ngm:class:interactive-fraud-proof",
+        "label": "Interactive Fraud Proof"
+      },
+      {
+        "@id": "urn:ngm:class:evm-compatibility",
+        "label": "EVM Compatibility"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:decentralised-finance-domain",
         "label": "Decentralised Finance Domain"
+      },
+      {
+        "@id": "urn:ngm:class:low-cost-transaction",
+        "label": "Low-Cost Transaction"
+      },
+      {
+        "@id": "urn:ngm:class:high-throughput-blockchain",
+        "label": "High-Throughput Blockchain"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:calldata-compression",
+        "label": "Calldata Compression"
+      },
+      {
+        "@id": "urn:ngm:class:webassembly",
+        "label": "WebAssembly"
+      },
+      {
+        "@id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:arbitrum-one",
+        "label": "Arbitrum One"
+      },
+      {
+        "@id": "urn:ngm:class:arbitrum-nova",
+        "label": "Arbitrum Nova"
+      },
+      {
+        "@id": "urn:ngm:class:arbitrum-orbit",
+        "label": "Arbitrum Orbit"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:ethereum-ecosystem",
+        "label": "Ethereum Ecosystem"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:ethereum-data-availability",
+        "label": "Ethereum Data Availability"
+      },
+      {
+        "@id": "urn:ngm:class:challenge-period",
+        "label": "Challenge Period"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:cross-chain-bridge",
+        "label": "Cross-Chain Bridge"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:optimism",
+        "label": "Optimism"
+      },
+      {
+        "@id": "urn:ngm:class:zk-sync",
+        "label": "zkSync"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-rollup",
+        "label": "Zero-Knowledge Rollup"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "@id": "urn:ngm:class:finance",
+        "label": "Finance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:plasma",
+        "label": "Plasma"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:arbitrum-one",
+      "label": "Arbitrum One"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

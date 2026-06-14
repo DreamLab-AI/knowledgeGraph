@@ -75,19 +75,31 @@ public:: true
   "@type": "Class",
   "label": "Digital Currency",
   "definition": "Any form of monetary value that exists purely in electronic format, encompassing central bank digital currencies, cryptocurrencies, stablecoins, and virtual currencies used within metaverse economies for transactions, payments, and value exchange without physical representation.",
-  "domain": "spatial-computing",
+  "domain": "finance",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:sc-platform-and-environment",
-      "label": "Platform and Environment"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:financial-technology",
+    "label": "Financial Technology"
+  },
   "relations": {
-    "bridgesTo": [
+    "hasPart": [
       {
-        "@id": "urn:ngm:class:financial-technology",
-        "label": "Financial Technology"
+        "@id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "@id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      },
+      {
+        "@id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:monetary-system",
+        "label": "Monetary System"
       }
     ],
     "requires": [
@@ -102,6 +114,14 @@ public:: true
       {
         "@id": "urn:ngm:class:digital-wallet",
         "label": "Digital Wallet"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-key-management",
+        "label": "Cryptographic Key Management"
       }
     ],
     "enables": [
@@ -116,14 +136,92 @@ public:: true
       {
         "@id": "urn:ngm:class:digital-payments",
         "label": "Digital Payments"
+      },
+      {
+        "@id": "urn:ngm:class:cross-border-remittance",
+        "label": "Cross-Border Remittance"
+      },
+      {
+        "@id": "urn:ngm:class:financial-inclusion",
+        "label": "Financial Inclusion"
+      },
+      {
+        "@id": "urn:ngm:class:micropayment",
+        "label": "Micropayment"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:monetary-policy",
+        "label": "Monetary Policy"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:fiat-currency",
+        "label": "Fiat Currency"
+      },
+      {
+        "@id": "urn:ngm:class:physical-cash",
+        "label": "Physical Cash"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:financial-technology",
+        "label": "Financial Technology"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse-economy",
+        "label": "Metaverse Economy"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:payment-system",
+        "label": "Payment System"
+      },
+      {
+        "@id": "urn:ngm:class:tokenisation",
+        "label": "Tokenisation"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:electronic-money",
+      "label": "Electronic Money"
+    },
+    {
+      "@id": "urn:ngm:class:virtual-currency",
+      "label": "Virtual Currency"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

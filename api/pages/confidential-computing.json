@@ -4,12 +4,12 @@
   "slug": "confidential-computing",
   "public": true,
   "classIri": "urn:ngm:class:confidential-computing",
-  "domain": "artificial-intelligence",
+  "domain": "security",
   "definition": "A hardware-based security paradigm that protects data in use by isolating computation within trusted execution environments (TEEs) backed by processor security extensions (Intel SGX, AMD SEV, ARM TrustZone). It extends encryption from data at rest and in transit to data actively being processed, preventing access even by privileged software, hypervisors, or cloud providers. Key AI applications include secure model training, private inference, and TEE-protected federated learning aggregation.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ai-infrastructure",
-      "label": "AI Infrastructure (Category)"
+      "id": "urn:ngm:class:hardware-security",
+      "label": "Hardware Security"
     }
   ],
   "entityType": "Class",
@@ -26,25 +26,74 @@
         "label": "Secure Enclave"
       },
       {
-        "id": "urn:ngm:class:hardware-security-module",
-        "label": "Hardware Security Module"
+        "id": "urn:ngm:class:remote-attestation",
+        "label": "Remote Attestation"
       }
     ],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:memory-encryption",
+        "label": "Memory Encryption"
+      },
+      {
+        "id": "urn:ngm:class:processor-security-extensions",
+        "label": "Processor Security Extensions"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:federated-learning",
         "label": "Federated Learning"
       },
       {
-        "id": "urn:ngm:class:homomorphic-encryption-for-machine-learning",
-        "label": "Homomorphic Encryption for Machine Learning"
+        "id": "urn:ngm:class:private-inference",
+        "label": "Private Inference"
+      },
+      {
+        "id": "urn:ngm:class:privacy-preserving-machine-learning",
+        "label": "Privacy-Preserving Machine Learning"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:intel-sgx",
+        "label": "Intel SGX"
+      },
+      {
+        "id": "urn:ngm:class:amd-sev",
+        "label": "AMD SEV"
+      },
+      {
+        "id": "urn:ngm:class:arm-trustzone",
+        "label": "ARM TrustZone"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:full-disk-encryption",
+        "label": "Full Disk Encryption"
+      },
+      {
+        "id": "urn:ngm:class:transport-layer-security",
+        "label": "Transport Layer Security"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:homomorphic-encryption",
@@ -59,9 +108,28 @@
         "label": "Differential Privacy"
       }
     ],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:gdpr-compliance",
+        "label": "GDPR Compliance"
+      },
+      {
+        "id": "urn:ngm:class:hardware-security-module",
+        "label": "Hardware Security Module"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:confidential-computing-consortium",
+        "label": "Confidential Computing Consortium"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:cloud-security",
+        "label": "Cloud Security"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:cybersecurity",

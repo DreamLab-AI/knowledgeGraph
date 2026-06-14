@@ -73,38 +73,61 @@ public:: true
   "definition": "Unspent Transaction Output accounting model used in Bitcoin and related blockchains, where each coin is represented as a discrete unspent output that must be fully consumed and re-created by a transaction. The model enables straightforward parallel validation, eliminates double-spend via simple output-state queries, and underpins script-based programmability.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:bc-protocol-and-consensus",
-      "label": "Protocol and Consensus"
-    },
-    {
-      "@id": "urn:ngm:class:blockchain-entity",
-      "label": "Blockchain Entity"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:bc-protocol-and-consensus",
+    "label": "Protocol and Consensus"
+  },
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:bc-protocol-and-consensus", "label": "Protocol and Consensus"}
+      {"@id": "urn:ngm:class:bc-protocol-and-consensus", "label": "Protocol and Consensus"},
+      {"@id": "urn:ngm:class:bitcoin-protocol", "label": "Bitcoin Protocol"}
     ],
-    "relatedTo": [
-      {"@id": "urn:ngm:class:blockchain-transaction", "label": "Blockchain Transaction"},
-      {"@id": "urn:ngm:class:merkle-tree", "label": "Merkle Tree"},
-      {"@id": "urn:ngm:class:transaction-fee", "label": "Transaction Fee"},
-      {"@id": "urn:ngm:class:wallet", "label": "Wallet"}
+    "hasPart": [
+      {"@id": "urn:ngm:class:transaction-output", "label": "Transaction Output"},
+      {"@id": "urn:ngm:class:locking-script", "label": "Locking Script"},
+      {"@id": "urn:ngm:class:utxo-set", "label": "UTXO Set"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"},
+      {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"},
+      {"@id": "urn:ngm:class:public-key-cryptography", "label": "Public Key Cryptography"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:immutability", "label": "Immutability"},
-      {"@id": "urn:ngm:class:cryptographic-verification", "label": "Cryptographic Verification"}
+      {"@id": "urn:ngm:class:cryptographic-verification", "label": "Cryptographic Verification"},
+      {"@id": "urn:ngm:class:double-spend-prevention", "label": "Double-Spend Prevention"},
+      {"@id": "urn:ngm:class:parallel-transaction-validation", "label": "Parallel Transaction Validation"},
+      {"@id": "urn:ngm:class:simplified-payment-verification", "label": "Simplified Payment Verification"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:distributed-ledger", "label": "Distributed Ledger"},
+      {"@id": "urn:ngm:class:merkle-tree", "label": "Merkle Tree"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:transaction-validity-rule", "label": "Transaction Validity Rule"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"},
-      {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"}
+      {"@id": "urn:ngm:class:bitcoin-script", "label": "Bitcoin Script"},
+      {"@id": "urn:ngm:class:transaction-fee", "label": "Transaction Fee"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:blockchain-transaction", "label": "Blockchain Transaction"},
+      {"@id": "urn:ngm:class:wallet", "label": "Wallet"},
+      {"@id": "urn:ngm:class:coinbase-transaction", "label": "Coinbase Transaction"},
+      {"@id": "urn:ngm:class:block", "label": "Block"}
     ],
     "contrastsWith": [
+      {"@id": "urn:ngm:class:account-based-model", "label": "Account-Based Model"},
       {"@id": "urn:ngm:class:decentralized-finance-de-fi", "label": "Decentralized Finance (DeFi)"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
+      {"@id": "urn:ngm:class:state-channel", "label": "State Channel"}
     ]
   },
+  "sameAs": [
+    {"@id": "urn:ngm:class:unspent-transaction-output-model", "label": "Unspent Transaction Output Model"}
+  ],
   "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",

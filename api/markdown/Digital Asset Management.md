@@ -75,21 +75,13 @@ public:: true
   "@type": "Class",
   "label": "Digital Asset Management",
   "definition": "The professional oversight and administration of cryptocurrency portfolios, tokenized assets, and blockchain-based investments through systematic strategies, risk management frameworks, and fiduciary practices to optimise returns and preserve capital for individuals and institutions.",
-  "domain": "spatial-computing",
+  "domain": "finance",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:sc-platform-and-environment",
-      "label": "Platform and Environment"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:investment-management",
+    "label": "Investment Management"
+  },
   "relations": {
-    "bridgesTo": [
-      {
-        "@id": "urn:ngm:class:investment-management",
-        "label": "Investment Management"
-      }
-    ],
     "requires": [
       {
         "@id": "urn:ngm:class:analytics-tools",
@@ -102,6 +94,14 @@ public:: true
       {
         "@id": "urn:ngm:class:custody-solutions",
         "label": "Custody Solutions"
+      },
+      {
+        "@id": "urn:ngm:class:kyc-aml",
+        "label": "KYC/AML"
+      },
+      {
+        "@id": "urn:ngm:class:fiduciary-duty",
+        "label": "Fiduciary Duty"
       }
     ],
     "enables": [
@@ -116,14 +116,100 @@ public:: true
       {
         "@id": "urn:ngm:class:risk-management",
         "label": "Risk Management"
+      },
+      {
+        "@id": "urn:ngm:class:institutional-investment",
+        "label": "Institutional Investment"
+      },
+      {
+        "@id": "urn:ngm:class:treasury-management",
+        "label": "Treasury Management"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-finance",
+        "label": "Decentralized Finance"
+      },
+      {
+        "@id": "urn:ngm:class:tokenization",
+        "label": "Tokenization"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:regulatory-framework",
+        "label": "Regulatory Framework"
+      },
+      {
+        "@id": "urn:ngm:class:market-liquidity",
+        "label": "Market Liquidity"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:wealth-management",
+        "label": "Wealth Management"
+      },
+      {
+        "@id": "urn:ngm:class:fund-administration",
+        "label": "Fund Administration"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:traditional-asset-management",
+        "label": "Traditional Asset Management"
+      },
+      {
+        "@id": "urn:ngm:class:self-custody",
+        "label": "Self Custody"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:decentralized-autonomous-organization",
+        "label": "Decentralized Autonomous Organization"
+      },
+      {
+        "@id": "urn:ngm:class:non-fungible-token",
+        "label": "Non-Fungible Token"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:exchange-traded-fund",
+        "label": "Exchange Traded Fund"
+      },
+      {
+        "@id": "urn:ngm:class:staking",
+        "label": "Staking"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:crypto-asset-management",
+      "label": "Crypto Asset Management"
+    },
+    {
+      "@id": "urn:ngm:class:digital-wealth-management",
+      "label": "Digital Wealth Management"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

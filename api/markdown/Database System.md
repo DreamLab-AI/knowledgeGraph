@@ -66,16 +66,28 @@ public:: true
   "@id": "urn:ngm:class:database-system",
   "@type": "Class",
   "label": "Database System",
-  "definition": "A database system (DBMS - Database Management System) is software that enables users to define, create, maintain, and control access to structured collections of data.",
+  "definition": "A database system (DBMS - Database Management System) is software that enables users to define, create, maintain, and control access to structured collections of data. It encompasses relational databases using SQL for structured table-based data and NoSQL databases supporting flexible schemas for document, key-value, graph, and wide-column data models, providing mechanisms for concurrent access, data integrity, and persistent storage.",
   "domain": "infrastructure",
   "maturity": "emerging",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:infra-data-management",
-      "label": "Data Management"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:infra-data-management",
+    "label": "Data Management"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:query-engine",
+        "label": "Query Engine"
+      },
+      {
+        "@id": "urn:ngm:class:storage-engine",
+        "label": "Storage Engine"
+      },
+      {
+        "@id": "urn:ngm:class:transaction-manager",
+        "label": "Transaction Manager"
+      }
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:data-persistence",
@@ -88,14 +100,116 @@ public:: true
       {
         "@id": "urn:ngm:class:transaction-management",
         "label": "Transaction Management"
+      },
+      {
+        "@id": "urn:ngm:class:concurrent-access-control",
+        "label": "Concurrent Access Control"
+      },
+      {
+        "@id": "urn:ngm:class:data-analytics",
+        "label": "Data Analytics"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:file-system",
+        "label": "File System"
+      },
+      {
+        "@id": "urn:ngm:class:operating-system",
+        "label": "Operating System"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:acid-properties",
+        "label": "ACID Properties"
+      },
+      {
+        "@id": "urn:ngm:class:relational-model",
+        "label": "Relational Model"
+      },
+      {
+        "@id": "urn:ngm:class:cap-theorem",
+        "label": "CAP Theorem"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:structured-query-language",
+        "label": "Structured Query Language"
+      },
+      {
+        "@id": "urn:ngm:class:write-ahead-logging",
+        "label": "Write-Ahead Logging"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:data-replication",
+        "label": "Data Replication"
+      },
+      {
+        "@id": "urn:ngm:class:role-based-access-control",
+        "label": "Role-Based Access Control"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:iso-iec-9075",
+        "label": "ISO/IEC 9075 SQL Standard"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:file-system",
+        "label": "File System"
+      },
+      {
+        "@id": "urn:ngm:class:in-memory-data-store",
+        "label": "In-Memory Data Store"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning-pipeline",
+        "label": "Machine Learning Pipeline"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:data-warehouse",
+        "label": "Data Warehouse"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-database",
+        "label": "Distributed Database"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-database",
+        "label": "Cloud Database"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:dbms",
+      "label": "DBMS"
+    },
+    {
+      "@id": "urn:ngm:class:database-management-system",
+      "label": "Database Management System"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```
@@ -166,8 +280,17 @@ public:: true
 
 - ### Relationships
   - enables:: [[Data Persistence]], [[Query Processing]], [[Transaction Management]]
-
+  - enables:: [[Concurrent Access Control]], [[Data Analytics]]
+  - hasPart:: [[Query Engine]], [[Storage Engine]], [[Transaction Manager]], [[Index Structure]]
+  - requires:: [[File System]], [[Operating System]], [[Network Infrastructure]]
+  - implements:: [[ACID Properties]], [[Relational Model]], [[CAP Theorem]]
+  - uses:: [[Structured Query Language]], [[B-Tree Index]], [[Write-Ahead Logging]]
+  - supports:: [[Data Replication]], [[Backup and Recovery]], [[Role-Based Access Control]]
+  - standardizedBy:: [[ISO/IEC 9075 SQL Standard]], [[ANSI SQL]]
+  - contrastsWith:: [[File System]], [[In-Memory Data Store]]
+  - relatedTo:: [[Data Warehouse]], [[Data Lake]], [[Distributed Database]], [[Cloud Database]]
   - bridges-to:: [[Blockchain]] (bc)
+  - bridges-to:: [[Distributed Ledger]], [[Machine Learning Pipeline]]
 - ### Content
 
   ## Relational Databases (SQL/RDBMS)

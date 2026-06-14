@@ -8,16 +8,12 @@
   "definition": "A cryptocurrency whose value is algorithmically or institutionally pegged to a reserve asset to maintain price stability, enabling reliable medium of exchange and store of value in virtual economies.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:bc-token-and-asset",
-      "label": "Token and Asset"
-    },
-    {
       "id": "urn:ngm:class:crypto-token",
       "label": "Crypto Token"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.65,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
@@ -37,6 +33,14 @@
       {
         "id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:reserve-asset",
+        "label": "Reserve Asset"
+      },
+      {
+        "id": "urn:ngm:class:peg-mechanism",
+        "label": "Peg Mechanism"
       }
     ],
     "enables": [
@@ -55,15 +59,94 @@
       {
         "id": "urn:ngm:class:virtual-commerce",
         "label": "Virtual Commerce"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-finance",
+        "label": "Decentralized Finance"
+      },
+      {
+        "id": "urn:ngm:class:remittance",
+        "label": "Remittance"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:stabilization-algorithm",
+        "label": "Stabilization Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-ledger",
+        "label": "Decentralized Ledger"
+      },
+      {
+        "id": "urn:ngm:class:monetary-policy",
+        "label": "Monetary Policy"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:algorithmic-peg",
+        "label": "Algorithmic Peg"
+      },
+      {
+        "id": "urn:ngm:class:fiat-backed-token",
+        "label": "Fiat-Backed Token"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:volatile-cryptocurrency",
+        "label": "Volatile Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      },
+      {
+        "id": "urn:ngm:class:traditional-payment-system",
+        "label": "Traditional Payment System"
+      },
+      {
+        "id": "urn:ngm:class:foreign-exchange-market",
+        "label": "Foreign Exchange Market"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:proof-of-reserve",
+        "label": "Proof of Reserve"
+      },
+      {
+        "id": "urn:ngm:class:overcollateralization",
+        "label": "Overcollateralization"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:payment-settlement",
+        "label": "Payment Settlement"
+      },
+      {
+        "id": "urn:ngm:class:liquidity-provision",
+        "label": "Liquidity Provision"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-24165",
+        "label": "ISO 24165"
+      },
+      {
+        "id": "urn:ngm:class:fsb-regulatory-framework",
+        "label": "FSB Regulatory Framework"
+      }
+    ],
     "partOf": [
       {
         "id": "urn:ngm:class:crypto-token",
@@ -78,7 +161,16 @@
         "label": "Virtual Currency"
       }
     ],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:tokenized-asset",
+        "label": "Tokenized Asset"
+      },
+      {
+        "id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
+      }
+    ]
   },
   "wikilinks": [
     {

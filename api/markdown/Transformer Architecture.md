@@ -54,39 +54,68 @@ public:: true
   "@id": "urn:ngm:class:transformer-architecture",
   "@type": "Class",
   "label": "Transformer Architecture",
-  "definition": "A neural network architecture based solely on attention mechanisms, dispensing with recurrence and convolutions entirely, designed for sequence-to-sequence tasks.",
+  "definition": "A neural network architecture based solely on self-attention mechanisms, dispensing with recurrence and convolutions entirely, enabling parallel sequence processing and underpinning modern large language models and multimodal AI systems.",
   "domain": "artificial-intelligence",
-  "maturity": "emerging",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:ai-model-architecture",
-      "label": "AI Model Architecture"
-    },
-    {
-      "@id": "urn:ngm:class:neural-network",
-      "label": "Neural Network"
-    }
-  ],
+  "maturity": "established",
+  "subClassOf": {
+    "@id": "urn:ngm:class:ai-model-architecture",
+    "label": "AI Model Architecture"
+  },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"}
+      {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"},
+      {"@id": "urn:ngm:class:multi-head-attention", "label": "Multi-Head Attention"},
+      {"@id": "urn:ngm:class:positional-encoding", "label": "Positional Encoding"},
+      {"@id": "urn:ngm:class:feed-forward-network", "label": "Feed-Forward Network"},
+      {"@id": "urn:ngm:class:encoder-decoder-architecture", "label": "Encoder-Decoder Architecture"},
+      {"@id": "urn:ngm:class:layer-normalisation", "label": "Layer Normalisation"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
+      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
+      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"},
+      {"@id": "urn:ngm:class:multimodal-learning", "label": "Multimodal Learning"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"}
+      {"@id": "urn:ngm:class:self-attention", "label": "Self-Attention"},
+      {"@id": "urn:ngm:class:embedding", "label": "Embedding"}
     ],
     "supports": [
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}
+      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
+      {"@id": "urn:ngm:class:speech-recognition", "label": "Speech Recognition"},
+      {"@id": "urn:ngm:class:protein-structure-prediction", "label": "Protein Structure Prediction"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:parallel-computation", "label": "Parallel Computation"},
+      {"@id": "urn:ngm:class:gpu-accelerated-computing", "label": "GPU Accelerated Computing"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:sequence-to-sequence-modelling", "label": "Sequence-to-Sequence Modelling"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:recurrent-neural-network", "label": "Recurrent Neural Network"},
+      {"@id": "urn:ngm:class:convolutional-neural-network", "label": "Convolutional Neural Network"},
+      {"@id": "urn:ngm:class:state-space-model", "label": "State Space Model"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:bert", "label": "BERT"},
+      {"@id": "urn:ngm:class:gpt", "label": "GPT"},
+      {"@id": "urn:ngm:class:mixture-of-experts", "label": "Mixture of Experts"},
+      {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:ai-agent", "label": "AI Agent"}
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {"@id": "urn:ngm:class:attention-is-all-you-need-architecture", "label": "Attention Is All You Need Architecture"},
+    {"@id": "urn:ngm:class:vanilla-transformer", "label": "Vanilla Transformer"}
+  ],
+  "quality": 0.65,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

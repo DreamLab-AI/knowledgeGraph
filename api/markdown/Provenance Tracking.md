@@ -183,35 +183,63 @@ alias:: BC-0441-provenance-tracking
   "@id": "urn:ngm:class:provenance-tracking",
   "@type": "Class",
   "label": "Provenance Tracking",
-  "definition": "Blockchain-based systems employing immutable distributed ledgers, IoT sensors, and smart contracts to create comprehensive audit trails tracking product journeys from origin to consumer, enabling dramatic reduction in tracing time (7 days to 2.2 seconds), combating counterfeit markets, and supporting food safety, pharmaceutical traceability, luxury goods authentication, and ethical sourcing verification.",
+  "definition": "Systems employing immutable distributed ledgers, IoT sensors, and smart contracts to create comprehensive audit trails tracking entities (products, data, AI model outputs) from origin to consumer or end-use, enabling rapid traceability, counterfeit prevention, regulatory compliance, and ethical sourcing verification across food safety, pharmaceuticals, luxury goods, and AI governance contexts.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:bc-network-component",
-      "label": "Network Component"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:supply-chain-management",
+    "label": "Supply Chain Management"
+  },
   "relations": {
     "uses": [
       {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
       {"@id": "urn:ngm:class:distributed-ledger-technology", "label": "Distributed Ledger Technology"},
       {"@id": "urn:ngm:class:internet-of-things", "label": "Internet of Things"},
       {"@id": "urn:ngm:class:audit-trail", "label": "Audit Trail"},
-      {"@id": "urn:ngm:class:immutability", "label": "Immutability"}
+      {"@id": "urn:ngm:class:immutability", "label": "Immutability"},
+      {"@id": "urn:ngm:class:cryptographic-hash", "label": "Cryptographic Hash"},
+      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"}
     ],
     "hasPart": [
       {"@id": "urn:ngm:class:supply-chain-traceability", "label": "Supply Chain Traceability"},
-      {"@id": "urn:ngm:class:traceability-mechanism", "label": "Traceability Mechanism"}
+      {"@id": "urn:ngm:class:traceability-mechanism", "label": "Traceability Mechanism"},
+      {"@id": "urn:ngm:class:chain-of-custody", "label": "Chain of Custody"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:permissioned-blockchain", "label": "Permissioned Blockchain"},
+      {"@id": "urn:ngm:class:data-integrity", "label": "Data Integrity"},
+      {"@id": "urn:ngm:class:identity-management", "label": "Identity Management"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:food-safety-blockchain", "label": "Food Safety Blockchain"},
+      {"@id": "urn:ngm:class:pharmaceutical-traceability", "label": "Pharmaceutical Traceability"},
+      {"@id": "urn:ngm:class:luxury-goods-authentication", "label": "Luxury Goods Authentication"},
+      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:epcis", "label": "EPCIS"},
+      {"@id": "urn:ngm:class:gs1-standards", "label": "GS1 Standards"},
+      {"@id": "urn:ngm:class:w3c-prov", "label": "W3C PROV"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:supply-chain-blockchain", "label": "Supply Chain Blockchain"},
       {"@id": "urn:ngm:class:supply-chain-management", "label": "Supply Chain Management"},
-      {"@id": "urn:ngm:class:blockchain-compliance", "label": "Blockchain Compliance"},
-      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"}
+      {"@id": "urn:ngm:class:blockchain-compliance", "label": "Blockchain Compliance"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:centralised-database", "label": "Centralised Database"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:ai-model-governance", "label": "AI Model Governance"},
+      {"@id": "urn:ngm:class:data-lineage", "label": "Data Lineage"}
     ]
   },
-  "quality": 0.8,
+  "sameAs": [
+    {"@id": "urn:ngm:class:supply-chain-provenance", "label": "Supply Chain Provenance"},
+    {"@id": "urn:ngm:class:chain-of-custody-tracking", "label": "Chain of Custody Tracking"},
+    {"@id": "urn:ngm:class:product-traceability", "label": "Product Traceability"}
+  ],
+  "quality": 0.72,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -430,7 +458,32 @@ alias:: BC-0441-provenance-tracking
   - belongs-to-domain:: [[BlockchainDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses:: [[Smart Contract]]
+  - uses:: [[Distributed Ledger Technology]]
+  - uses:: [[Internet of Things]]
+  - uses:: [[Audit Trail]]
+  - uses:: [[Immutability]]
+  - uses:: [[Cryptographic Hash]]
+  - uses:: [[Digital Signature]]
+  - hasPart:: [[Supply Chain Traceability]]
+  - hasPart:: [[Traceability Mechanism]]
+  - hasPart:: [[Chain of Custody]]
+  - requires:: [[Permissioned Blockchain]]
+  - requires:: [[Data Integrity]]
+  - requires:: [[Identity Management]]
+  - enables:: [[Food Safety Blockchain]]
+  - enables:: [[Pharmaceutical Traceability]]
+  - enables:: [[Luxury Goods Authentication]]
+  - enables:: [[Regulatory Compliance]]
+  - implements:: [[EPCIS]]
+  - implements:: [[GS1 Standards]]
+  - implements:: [[W3C PROV]]
+  - relatedTo:: [[Supply Chain Blockchain]]
+  - relatedTo:: [[Supply Chain Management]]
+  - relatedTo:: [[Blockchain Compliance]]
+  - contrastsWith:: [[Centralised Database]]
+  - bridgesTo:: [[AI Model Governance]]
+  - bridgesTo:: [[Data Lineage]]
 
 - ### Content
   - Provenance tracking represents one of blockchain technology's most transformative applications, addressing fundamental challenges in supply chain transparency, authenticity verification, and consumer trust across multiple industries. Traditional supply chains rely on fragmented record-keeping systems where each participant maintains separate databases, creating information silos that make it nearly impossible to verify the complete journey of products from origin to consumer. This opacity enables fraud, counterfeiting, and ethical violations whilst hindering rapid response to safety incidents. [[Blockchain]] technology fundamentally transforms this landscape by creating immutable, shared records of product journeys that all authorised participants can access whilst maintaining data integrity and security.

@@ -91,15 +91,13 @@ alias:: NetworkLayer
   "@id": "urn:ngm:class:network-layer",
   "@type": "Class",
   "label": "Network Layer",
-  "definition": "Architectural layer governing communication protocols, packet routing, congestion control, and network topology. Provides reliable end-to-end message delivery, bandwidth management, and quality-of-service guarantees for distributed narrative systems across heterogeneous networks.",
+  "definition": "Architectural layer governing communication protocols, packet routing, congestion control, and network topology. Provides reliable end-to-end message delivery, bandwidth management, and quality-of-service guarantees for distributed systems across heterogeneous networks.",
   "domain": "infrastructure",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:infra-network-and-comms",
-      "label": "Network and Communication"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:infra-network-and-comms",
+    "label": "Network and Communication"
+  },
   "relations": {
     "hasPart": [
       {
@@ -121,6 +119,34 @@ alias:: NetworkLayer
       {
         "@id": "urn:ngm:class:network-topology",
         "label": "Network Topology"
+      },
+      {
+        "@id": "urn:ngm:class:packet-switching",
+        "label": "Packet Switching"
+      },
+      {
+        "@id": "urn:ngm:class:network-interface",
+        "label": "Network Interface"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:osi-model",
+        "label": "OSI Model"
+      },
+      {
+        "@id": "urn:ngm:class:internet-protocol-suite",
+        "label": "Internet Protocol Suite"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:physical-layer",
+        "label": "Physical Layer"
+      },
+      {
+        "@id": "urn:ngm:class:data-link-layer",
+        "label": "Data Link Layer"
       }
     ],
     "enables": [
@@ -139,17 +165,110 @@ alias:: NetworkLayer
       {
         "@id": "urn:ngm:class:network-resilience",
         "label": "Network Resilience"
+      },
+      {
+        "@id": "urn:ngm:class:multipath-routing",
+        "label": "Multipath Routing"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:infrastructure-layer",
+        "label": "Infrastructure Layer"
+      },
+      {
+        "@id": "urn:ngm:class:ip-addressing",
+        "label": "IP Addressing"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:internet-protocol",
+        "label": "Internet Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:icmp",
+        "label": "ICMP"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:middleware-layer",
+        "label": "Middleware Layer"
+      },
+      {
+        "@id": "urn:ngm:class:transport-layer",
+        "label": "Transport Layer"
+      },
+      {
+        "@id": "urn:ngm:class:overlay-network",
+        "label": "Overlay Network"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      },
+      {
+        "@id": "urn:ngm:class:ieee-802",
+        "label": "IEEE 802"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:transport-layer",
+        "label": "Transport Layer"
+      },
+      {
+        "@id": "urn:ngm:class:application-layer",
+        "label": "Application Layer"
       }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:architectural-layer", "label": "ArchitecturalLayer"}
+      {
+        "@id": "urn:ngm:class:architectural-layer",
+        "label": "ArchitecturalLayer"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "@id": "urn:ngm:class:software-defined-networking",
+        "label": "Software Defined Networking"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      },
+      {
+        "@id": "urn:ngm:class:firewall",
+        "label": "Firewall"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-private-network",
+        "label": "Virtual Private Network"
+      }
     ]
   },
-  "quality": 0.35,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:osi-layer-3",
+      "label": "OSI Layer 3"
+    },
+    {
+      "@id": "urn:ngm:class:ip-layer",
+      "label": "IP Layer"
+    }
+  ],
+  "quality": 0.68,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

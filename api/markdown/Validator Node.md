@@ -69,39 +69,68 @@ public:: true
   "definition": "A network participant in a Proof of Stake or similar blockchain that locks collateral (stake) to earn the right to propose and attest to blocks, and is subject to slashing penalties for equivocation or liveness failures. Validator nodes form the security backbone of staking-based consensus, replacing the hash-rate competition of mining.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:bc-network-component",
-      "label": "Network Component"
-    },
-    {
-      "@id": "urn:ngm:class:blockchain-entity",
-      "label": "Blockchain Entity"
-    },
-    {
-      "@id": "urn:ngm:class:network-component",
-      "label": "NetworkComponent"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:blockchain-entity",
+    "label": "Blockchain Entity"
+  },
   "relations": {
     "partOf": [
       {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof of Stake"},
-      {"@id": "urn:ngm:class:validator-set", "label": "Validator Set"}
+      {"@id": "urn:ngm:class:validator-set", "label": "Validator Set"},
+      {"@id": "urn:ngm:class:peer-to-peer-network", "label": "Peer-to-Peer Network"},
+      {"@id": "urn:ngm:class:blockchain-network", "label": "Blockchain Network"}
     ],
-    "relatedTo": [
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
-      {"@id": "urn:ngm:class:epoch", "label": "Epoch"},
-      {"@id": "urn:ngm:class:finality", "label": "Finality"}
+    "hasPart": [
+      {"@id": "urn:ngm:class:validator-client", "label": "Validator Client"},
+      {"@id": "urn:ngm:class:beacon-node", "label": "Beacon Node"},
+      {"@id": "urn:ngm:class:staking-key", "label": "Staking Key"}
     ],
-    "uses": [
-      {"@id": "urn:ngm:class:cryptographic-signature", "label": "Cryptographic Signature"},
-      {"@id": "urn:ngm:class:schnorr-signature", "label": "Schnorr Signature"}
+    "requires": [
+      {"@id": "urn:ngm:class:stake", "label": "Stake"},
+      {"@id": "urn:ngm:class:slashing-condition", "label": "Slashing Condition"},
+      {"@id": "urn:ngm:class:bls-signature", "label": "BLS Signature"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:block", "label": "Block"},
-      {"@id": "urn:ngm:class:transaction-finality", "label": "Transaction Finality"}
+      {"@id": "urn:ngm:class:transaction-finality", "label": "Transaction Finality"},
+      {"@id": "urn:ngm:class:block-attestation", "label": "Block Attestation"},
+      {"@id": "urn:ngm:class:staking-reward", "label": "Staking Reward"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
+      {"@id": "urn:ngm:class:epoch", "label": "Epoch"},
+      {"@id": "urn:ngm:class:committee-selection", "label": "Committee Selection"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof of Stake"},
+      {"@id": "urn:ngm:class:byzantine-fault-tolerance", "label": "Byzantine Fault Tolerance"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:cryptographic-signature", "label": "Cryptographic Signature"},
+      {"@id": "urn:ngm:class:schnorr-signature", "label": "Schnorr Signature"},
+      {"@id": "urn:ngm:class:public-key-infrastructure", "label": "Public Key Infrastructure"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:network-security", "label": "Network Security"},
+      {"@id": "urn:ngm:class:decentralization", "label": "Decentralization"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:mining-node", "label": "Mining Node"},
+      {"@id": "urn:ngm:class:full-node", "label": "Full Node"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:finality", "label": "Finality"},
+      {"@id": "urn:ngm:class:sybil-resistance", "label": "Sybil Resistance"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:distributed-system", "label": "Distributed System"},
+      {"@id": "urn:ngm:class:trusted-execution-environment", "label": "Trusted Execution Environment"}
     ]
   },
+  "sameAs": [
+    {"@id": "urn:ngm:class:staking-node", "label": "Staking Node"},
+    {"@id": "urn:ngm:class:block-validator", "label": "Block Validator"}
+  ],
   "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",

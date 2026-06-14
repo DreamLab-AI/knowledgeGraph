@@ -57,12 +57,10 @@ public:: true
   "definition": "The degree to which a human can understand the internal mechanics, decision-making processes, and cause-effect relationships within an AI system, independent of external explanation tools.",
   "domain": "artificial-intelligence",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:ai-governance-and-ethics",
-      "label": "AI Governance and Ethics"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:ai-governance-and-ethics",
+    "label": "AI Governance and Ethics"
+  },
   "relations": {
     "enables": [
       {
@@ -76,14 +74,126 @@ public:: true
       {
         "@id": "urn:ngm:class:trust",
         "label": "Trust"
+      },
+      {
+        "@id": "urn:ngm:class:ai-auditing",
+        "label": "AI Auditing"
+      },
+      {
+        "@id": "urn:ngm:class:human-oversight",
+        "label": "Human Oversight"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      },
+      {
+        "@id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:mechanistic-interpretability",
+        "label": "Mechanistic Interpretability"
+      },
+      {
+        "@id": "urn:ngm:class:global-interpretability",
+        "label": "Global Interpretability"
+      },
+      {
+        "@id": "urn:ngm:class:local-interpretability",
+        "label": "Local Interpretability"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:ai-trustworthiness",
+        "label": "AI Trustworthiness"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:model-complexity",
+        "label": "Model Complexity"
+      },
+      {
+        "@id": "urn:ngm:class:sparse-representations",
+        "label": "Sparse Representations"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:explainability",
+        "label": "Explainability"
+      },
+      {
+        "@id": "urn:ngm:class:black-box-model",
+        "label": "Black-Box Model"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:sparse-autoencoder",
+        "label": "Sparse Autoencoder"
+      },
+      {
+        "@id": "urn:ngm:class:decision-tree",
+        "label": "Decision Tree"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:circuit-discovery",
+        "label": "Circuit Discovery"
+      },
+      {
+        "@id": "urn:ngm:class:probing",
+        "label": "Probing"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "@id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human-Computer Interaction"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:model-interpretability",
+      "label": "Model Interpretability"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

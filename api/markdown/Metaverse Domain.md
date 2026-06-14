@@ -108,38 +108,60 @@ alias:: MetaverseDomain
   "maturity": "emerging",
   "qualityScore": 0.75,
   "quality": 0.75,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:sc-platform-and-environment",
-      "label": "Platform and Environment"
-    },
-    {
-      "@id": "urn:ngm:class:extended-reality-xr",
-      "label": "Extended Reality (XR)"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:extended-reality-xr",
+    "label": "Extended Reality (XR)"
+  },
   "relations": {
     "hasPart": [
       {"@id": "urn:ngm:class:virtual-reality", "label": "Virtual Reality"},
       {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
       {"@id": "urn:ngm:class:avatar-system", "label": "Avatar System"},
       {"@id": "urn:ngm:class:virtual-economy", "label": "Virtual Economy"},
-      {"@id": "urn:ngm:class:haptic-feedback", "label": "Haptic Feedback"}
+      {"@id": "urn:ngm:class:haptic-feedback", "label": "Haptic Feedback"},
+      {"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"},
+      {"@id": "urn:ngm:class:virtual-world", "label": "Virtual World"}
     ],
     "requires": [
-      {"@id": "urn:ngm:class:spatial-computing-paradigm", "label": "Spatial Computing"},
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
       {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"}
+      {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"},
+      {"@id": "urn:ngm:class:cloud-computing", "label": "Cloud Computing"},
+      {"@id": "urn:ngm:class:network-infrastructure", "label": "Network Infrastructure"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:persistent-online-world", "label": "Persistent Online World"},
+      {"@id": "urn:ngm:class:social-presence", "label": "Social Presence"},
+      {"@id": "urn:ngm:class:digital-commerce", "label": "Digital Commerce"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"},
+      {"@id": "urn:ngm:class:open-standards", "label": "Open Standards"},
+      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:web-xr", "label": "WebXR"},
+      {"@id": "urn:ngm:class:non-fungible-token", "label": "Non-Fungible Token"},
+      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
       {"@id": "urn:ngm:class:nft", "label": "NFT"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:decentralized-finance", "label": "Decentralized Finance"},
+      {"@id": "urn:ngm:class:distributed-ledger-technology", "label": "Distributed Ledger Technology"},
+      {"@id": "urn:ngm:class:data-sovereignty", "label": "Data Sovereignty"}
     ]
   },
+  "sameAs": [
+    {"@id": "urn:ngm:class:immersive-internet", "label": "Immersive Internet"},
+    {"@id": "urn:ngm:class:spatial-web", "label": "Spatial Web"}
+  ],
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

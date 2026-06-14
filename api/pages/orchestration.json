@@ -13,14 +13,35 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.7,
+  "qualityScore": 0.72,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:scheduler",
+        "label": "Scheduler"
+      },
+      {
+        "id": "urn:ngm:class:service-mesh",
+        "label": "Service Mesh"
+      },
+      {
+        "id": "urn:ngm:class:control-plane",
+        "label": "Control Plane"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:digital-infrastructure",
         "label": "Digital Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:container",
+        "label": "Container"
+      },
+      {
+        "id": "urn:ngm:class:networking",
+        "label": "Networking"
       }
     ],
     "enables": [
@@ -31,13 +52,61 @@
       {
         "id": "urn:ngm:class:distributed-systems",
         "label": "Distributed Systems"
+      },
+      {
+        "id": "urn:ngm:class:auto-scaling",
+        "label": "Auto-Scaling"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:continuous-deployment",
+        "label": "Continuous Deployment"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:infrastructure-as-code",
+        "label": "Infrastructure as Code"
+      },
+      {
+        "id": "urn:ngm:class:observability",
+        "label": "Observability"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:choreography",
+        "label": "Choreography"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-inference",
+        "label": "AI Inference"
+      },
+      {
+        "id": "urn:ngm:class:multi-agent-systems",
+        "label": "Multi-Agent Systems"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
+      },
+      {
+        "id": "urn:ngm:class:declarative-configuration",
+        "label": "Declarative Configuration"
+      },
+      {
+        "id": "urn:ngm:class:load-balancing",
+        "label": "Load Balancing"
+      }
+    ],
     "supports": [
       {
         "id": "urn:ngm:class:edge-computing",
@@ -46,10 +115,19 @@
       {
         "id": "urn:ngm:class:latency",
         "label": "Latency"
+      },
+      {
+        "id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
       }
     ],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:cloud-native-computing",
+        "label": "Cloud Native Computing"
+      }
+    ],
     "relatedTo": []
   },
   "wikilinks": [],

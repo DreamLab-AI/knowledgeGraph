@@ -66,31 +66,72 @@ alias:: Digital-Infrastructure
   "definition": "The foundational computing, networking, and storage systems that underpin large-scale digital services and telecollaboration platforms, including hyperscale data centres with GPU clusters, content delivery networks, software-defined networking, and edge computing nodes. Digital infrastructure is increasingly defined by cloud-native patterns—containerisation, orchestration, and infrastructure-as-code—enabling programmatic resource allocation and resilient, globally distributed deployments.",
   "domain": "infrastructure",
   "maturity": "emerging",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:infra-computing-and-cloud",
-      "label": "Computing and Cloud"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:infra-computing-and-cloud",
+    "label": "Computing and Cloud"
+  },
   "relations": {
     "hasPart": [
       {"@id": "urn:ngm:class:content-delivery-network", "label": "Content Delivery Network"},
       {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
-      {"@id": "urn:ngm:class:network-infrastructure", "label": "Network Infrastructure"}
+      {"@id": "urn:ngm:class:network-infrastructure", "label": "Network Infrastructure"},
+      {"@id": "urn:ngm:class:data-centre", "label": "Data Centre"},
+      {"@id": "urn:ngm:class:cloud-storage", "label": "Cloud Storage"},
+      {"@id": "urn:ngm:class:software-defined-networking", "label": "Software-Defined Networking"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:power-grid", "label": "Power Grid"},
+      {"@id": "urn:ngm:class:physical-network", "label": "Physical Network"},
+      {"@id": "urn:ngm:class:cooling-systems", "label": "Cooling Systems"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"},
-      {"@id": "urn:ngm:class:orchestration", "label": "Orchestration"}
+      {"@id": "urn:ngm:class:orchestration", "label": "Orchestration"},
+      {"@id": "urn:ngm:class:cloud-computing", "label": "Cloud Computing"},
+      {"@id": "urn:ngm:class:digital-services", "label": "Digital Services"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:internet-protocols", "label": "Internet Protocols"},
+      {"@id": "urn:ngm:class:open-source-software", "label": "Open Source Software"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:infrastructure-as-code", "label": "Infrastructure as Code"},
+      {"@id": "urn:ngm:class:containerisation", "label": "Containerisation"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:kubernetes", "label": "Kubernetes"},
+      {"@id": "urn:ngm:class:serverless-computing", "label": "Serverless Computing"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
+      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:ietf", "label": "IETF"},
+      {"@id": "urn:ngm:class:ieee", "label": "IEEE"},
+      {"@id": "urn:ngm:class:cncf", "label": "CNCF"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:physical-infrastructure", "label": "Physical Infrastructure"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+      {"@id": "urn:ngm:class:cybersecurity", "label": "Cybersecurity"},
+      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"}
     ]
   },
-  "quality": 0.7,
+  "sameAs": [
+    {"@id": "urn:ngm:class:it-infrastructure", "label": "IT Infrastructure"},
+    {"@id": "urn:ngm:class:technology-infrastructure", "label": "Technology Infrastructure"}
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

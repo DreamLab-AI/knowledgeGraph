@@ -4,24 +4,42 @@
   "slug": "feature-engineering",
   "public": true,
   "classIri": "urn:ngm:class:feature-engineering",
-  "domain": "artificial-intelligence",
+  "domain": "machine-learning",
   "definition": "The process of using domain knowledge and statistical transformations to construct, select, and encode input variables from raw data so that they better represent the underlying predictive signal for machine learning models. Techniques include polynomial expansion, normalisation, temporal feature extraction, embedding of categorical variables, and dimensionality reduction via PCA or autoencoders.",
   "subClassOf": [
-    {
-      "id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique"
-    },
     {
       "id": "urn:ngm:class:data-preprocessing",
       "label": "Data Preprocessing"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.68,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:feature-selection",
+        "label": "Feature Selection"
+      },
+      {
+        "id": "urn:ngm:class:dimensionality-reduction",
+        "label": "Dimensionality Reduction"
+      },
+      {
+        "id": "urn:ngm:class:categorical-encoding",
+        "label": "Categorical Encoding"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-preprocessing",
+        "label": "Data Preprocessing"
+      },
+      {
+        "id": "urn:ngm:class:exploratory-data-analysis",
+        "label": "Exploratory Data Analysis"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:machine-learning-discipline",
@@ -30,34 +48,90 @@
       {
         "id": "urn:ngm:class:model-training",
         "label": "Model Training"
+      },
+      {
+        "id": "urn:ngm:class:predictive-modelling",
+        "label": "Predictive Modelling"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:domain-knowledge",
+        "label": "Domain Knowledge"
+      },
+      {
+        "id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:representation-learning",
+        "label": "Representation Learning"
+      },
+      {
+        "id": "urn:ngm:class:end-to-end-learning",
+        "label": "End-to-End Learning"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:digital-twin",
         "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
       }
     ],
     "uses": [
       {
         "id": "urn:ngm:class:data-pipeline",
         "label": "Data Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:principal-component-analysis",
+        "label": "Principal Component Analysis"
+      },
+      {
+        "id": "urn:ngm:class:autoencoder",
+        "label": "Autoencoder"
       }
     ],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
+    "supports": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
       {
         "id": "urn:ngm:class:transfer-learning",
         "label": "Transfer Learning"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:machine-learning-pipeline",
+        "label": "Machine Learning Pipeline"
       },
+      {
+        "id": "urn:ngm:class:automl",
+        "label": "AutoML"
+      }
+    ],
+    "relatedTo": [
       {
         "id": "urn:ngm:class:feature-store",
         "label": "Feature Store"
+      },
+      {
+        "id": "urn:ngm:class:data-augmentation",
+        "label": "Data Augmentation"
+      },
+      {
+        "id": "urn:ngm:class:shap-values",
+        "label": "SHAP Values"
       }
     ]
   },

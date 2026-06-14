@@ -86,19 +86,13 @@ public:: true
   "@id": "urn:ngm:class:functional-safety",
   "@type": "Class",
   "label": "Functional Safety",
-  "definition": "Functional Safety - The discipline of designing, implementing, and verifying safety-critical control systems (per IEC 61508, ISO 26262) to ensure robots fail safely and prevent hazardous failures that could harm humans, equipment, or processes through systematic risk assessment and redundancy.",
+  "definition": "Functional Safety - The discipline of designing, implementing, and verifying safety-critical control systems (per IEC 61508, ISO 26262) to ensure systems fail safely and prevent hazardous failures that could harm humans, equipment, or processes through systematic risk assessment, safety integrity levels, and redundancy in electrical, electronic, and programmable electronic systems.",
   "domain": "robotics",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:robo-safety-and-standards",
-      "label": "Safety and Standards"
-    },
-    {
-      "@id": "urn:ngm:class:safety-engineering",
-      "label": "Safety Engineering"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:safety-engineering",
+    "label": "Safety Engineering"
+  },
   "relations": {
     "requires": [
       {
@@ -112,6 +106,14 @@ public:: true
       {
         "@id": "urn:ngm:class:testing-and-validation",
         "label": "Testing & Validation"
+      },
+      {
+        "@id": "urn:ngm:class:safety-integrity-level",
+        "label": "Safety Integrity Level"
+      },
+      {
+        "@id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
       }
     ],
     "enables": [
@@ -126,6 +128,10 @@ public:: true
       {
         "@id": "urn:ngm:class:safe-operation-certification",
         "label": "Safe Operation Certification"
+      },
+      {
+        "@id": "urn:ngm:class:safety-case",
+        "label": "Safety Case"
       }
     ],
     "partOf": [
@@ -136,14 +142,82 @@ public:: true
       {
         "@id": "urn:ngm:class:risk-management",
         "label": "Risk Management"
+      },
+      {
+        "@id": "urn:ngm:class:systems-engineering",
+        "label": "Systems Engineering"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:iec-61508",
+        "label": "IEC 61508"
+      },
+      {
+        "@id": "urn:ngm:class:iso-26262",
+        "label": "ISO 26262"
+      },
+      {
+        "@id": "urn:ngm:class:iso-pas-8800",
+        "label": "ISO/PAS 8800"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:failure-mode-effects-analysis",
+        "label": "Failure Mode and Effects Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:safety-instrumented-system",
+        "label": "Safety Instrumented System"
+      },
+      {
+        "@id": "urn:ngm:class:redundancy",
+        "label": "Redundancy"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:security-engineering",
+        "label": "Security Engineering"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "@id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:dependability",
+        "label": "Dependability"
+      },
+      {
+        "@id": "urn:ngm:class:alarm-management",
+        "label": "Alarm Management"
       }
     ]
   },
-  "quality": 0.64,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:safety-related-system-assurance",
+      "label": "Safety-Related System Assurance"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

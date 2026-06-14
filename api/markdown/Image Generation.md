@@ -266,36 +266,67 @@ public:: true
   "@id": "urn:ngm:class:image-generation",
   "@type": "Class",
   "label": "Image Generation",
-  "definition": "Image Generation is the synthesis of realistic or stylised images using generative AI models including Generative Adversarial Networks (GANs), Variational Autoencoders (VAEs), and Diffusion Models.",
-  "domain": "spatial-computing",
+  "definition": "Image Generation is the synthesis of realistic or stylised images using generative AI models including Generative Adversarial Networks (GANs), Variational Autoencoders (VAEs), and Diffusion Models. Modern systems such as DALL-E, Stable Diffusion, Midjourney, and Flux produce high-fidelity images from text descriptions, sketches, or latent representations, enabling creative applications, data augmentation, virtual production, and content creation at scale.",
+  "domain": "artificial-intelligence",
   "maturity": "emerging",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:sc-display-and-rendering",
-      "label": "Display and Rendering"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:generative-ai",
+    "label": "Generative AI"
+  },
   "relations": {
     "uses": [
       {"@id": "urn:ngm:class:diffusion-model", "label": "Diffusion Model"},
-      {"@id": "urn:ngm:class:generative-adversarial-network", "label": "Generative Adversarial Network"}
+      {"@id": "urn:ngm:class:generative-adversarial-network", "label": "Generative Adversarial Network"},
+      {"@id": "urn:ngm:class:variational-autoencoders", "label": "Variational Autoencoders"},
+      {"@id": "urn:ngm:class:prompt-engineering", "label": "Prompt Engineering"},
+      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
+      {"@id": "urn:ngm:class:control-net-and-similar-spatial-conditioning-systems", "label": "ControlNet and Similar Spatial Conditioning Systems"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:text-to-image", "label": "Text-to-Image"},
-      {"@id": "urn:ngm:class:video-generation", "label": "Video Generation"}
+      {"@id": "urn:ngm:class:video-generation", "label": "Video Generation"},
+      {"@id": "urn:ngm:class:ai-video", "label": "AI Video"},
+      {"@id": "urn:ngm:class:data-augmentation", "label": "Data Augmentation"}
     ],
     "requires": [
-      {"@id": "urn:ngm:class:training-data", "label": "Training Data"}
+      {"@id": "urn:ngm:class:training-data", "label": "Training Data"},
+      {"@id": "urn:ngm:class:neural-networks", "label": "Neural Networks"},
+      {"@id": "urn:ngm:class:python-and-py-torch", "label": "Python and PyTorch"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:stable-diffusion", "label": "Stable Diffusion"},
+      {"@id": "urn:ngm:class:flux-1", "label": "Flux.1"},
+      {"@id": "urn:ngm:class:proprietary-image-generation", "label": "Proprietary Image Generation"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:multimodal", "label": "Multimodal"},
+      {"@id": "urn:ngm:class:open-generative-ai-tools", "label": "Open Generative AI Tools"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}
+      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
+      {"@id": "urn:ngm:class:copyright", "label": "Copyright"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:metaverse-domain", "label": "MetaverseDomain"},
+      {"@id": "urn:ngm:class:comfy-ui", "label": "ComfyUI"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision (discriminative)"}
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {"@id": "urn:ngm:class:ai-image-synthesis", "label": "AI Image Synthesis"},
+    {"@id": "urn:ngm:class:generative-image-synthesis", "label": "Generative Image Synthesis"}
+  ],
+  "quality": 0.68,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

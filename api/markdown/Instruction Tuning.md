@@ -42,34 +42,60 @@ public:: true
   "@id": "urn:ngm:class:instruction-tuning",
   "@type": "Class",
   "label": "Instruction Tuning",
-  "definition": "A fine-tuning technique that trains language models to follow natural language instructions by training on diverse instruction-response pairs. Instruction tuning enables models to generalise to new tasks described through instructions without task-specific training data.",
-  "domain": "spatial-computing",
+  "definition": "A fine-tuning technique that trains language models to follow natural language instructions by learning from diverse instruction-response pairs. Instruction tuning enables models to generalise to new tasks described through instructions without task-specific training data, bridging raw language modelling and practical assistive behaviour.",
+  "domain": "machine-learning",
   "maturity": "emerging",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:sc-content-and-assets",
-      "label": "Content and Assets"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:fine-tuning",
+    "label": "Fine Tuning"
+  },
   "relations": {
     "requires": [
       {"@id": "urn:ngm:class:supervised-learning", "label": "Supervised Learning"},
-      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine Tuning"}
+      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine Tuning"},
+      {"@id": "urn:ngm:class:large-language-model", "label": "Large Language Model"},
+      {"@id": "urn:ngm:class:instruction-response-dataset", "label": "Instruction Response Dataset"}
     ],
     "enables": [
-      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"}
+      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
+      {"@id": "urn:ngm:class:zero-shot-learning", "label": "Zero Shot Learning"},
+      {"@id": "urn:ngm:class:ai-alignment", "label": "AI Alignment"},
+      {"@id": "urn:ngm:class:conversational-ai", "label": "Conversational AI"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:pre-trained-language-model", "label": "Pre Trained Language Model"},
+      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:chain-of-thought-prompting", "label": "Chain Of Thought Prompting"},
+      {"@id": "urn:ngm:class:self-instruct", "label": "Self Instruct"},
+      {"@id": "urn:ngm:class:parameter-efficient-fine-tuning", "label": "Parameter Efficient Fine Tuning"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:few-shot-prompting", "label": "Few Shot Prompting"},
+      {"@id": "urn:ngm:class:pretraining", "label": "Pretraining"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human Computer Interaction"},
+      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:rlhf", "label": "RLHF"},
       {"@id": "urn:ngm:class:prompt-engineering", "label": "Prompt Engineering"},
-      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"}
+      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"},
+      {"@id": "urn:ngm:class:multi-task-learning", "label": "Multi Task Learning"},
+      {"@id": "urn:ngm:class:direct-preference-optimisation", "label": "Direct Preference Optimisation"}
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {"@id": "urn:ngm:class:supervised-instruction-fine-tuning", "label": "Supervised Instruction Fine Tuning"},
+    {"@id": "urn:ngm:class:instruction-following-fine-tuning", "label": "Instruction Following Fine Tuning"}
+  ],
+  "quality": 0.68,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

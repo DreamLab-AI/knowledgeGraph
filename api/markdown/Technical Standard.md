@@ -66,9 +66,13 @@ public:: true
   "@id": "urn:ngm:class:technical-standard",
   "@type": "Class",
   "label": "Technical Standard",
-  "definition": "A technical standard is a formal document that establishes uniform engineering or technical criteria, mods, processes, and practices to ensure that products, services, and systems are safe, reliable, interoperable, and consistently perform as intended.",
-  "domain": "infrastructure",
+  "definition": "A technical standard is a formal document that establishes uniform engineering or technical criteria, methods, processes, and practices to ensure that products, services, and systems are safe, reliable, interoperable, and consistently perform as intended. Standards are developed through consensus-based processes by authoritative bodies and provide the foundation for quality control, innovation, and global technology interoperability.",
+  "domain": "standards",
   "maturity": "emerging",
+  "subClassOf": {
+    "@id": "urn:ngm:class:specification",
+    "label": "Specification"
+  },
   "relations": {
     "enables": [
       {
@@ -82,6 +86,14 @@ public:: true
       {
         "@id": "urn:ngm:class:safety",
         "label": "Safety"
+      },
+      {
+        "@id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:market-access",
+        "label": "Market Access"
       }
     ],
     "implements": [
@@ -97,20 +109,118 @@ public:: true
         "@id": "urn:ngm:class:specification",
         "label": "Specification"
       }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:conformance-clause",
+        "label": "Conformance Clause"
+      },
+      {
+        "@id": "urn:ngm:class:normative-reference",
+        "label": "Normative Reference"
+      },
+      {
+        "@id": "urn:ngm:class:test-method",
+        "label": "Test Method"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:iso",
+        "label": "ISO"
+      },
+      {
+        "@id": "urn:ngm:class:ieee",
+        "label": "IEEE"
+      },
+      {
+        "@id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      },
+      {
+        "@id": "urn:ngm:class:w3c",
+        "label": "W3C"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:consensus-process",
+        "label": "Consensus Process"
+      },
+      {
+        "@id": "urn:ngm:class:governance-framework",
+        "label": "Governance Framework"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:certification",
+        "label": "Certification"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:procurement",
+        "label": "Procurement"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:proprietary-specification",
+        "label": "Proprietary Specification"
+      },
+      {
+        "@id": "urn:ngm:class:de-facto-standard",
+        "label": "De Facto Standard"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:security-protocol",
+        "label": "Security Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:data-format",
+        "label": "Data Format"
+      },
+      {
+        "@id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
+      },
+      {
+        "@id": "urn:ngm:class:protocol",
+        "label": "Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:industry-framework",
+        "label": "Industry Framework"
+      }
     ]
   },
-  "quality": 0.5,
-  "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
-  },
-  "subClassOf": [
+  "sameAs": [
     {
-      "@id": "urn:ngm:class:infra-legal-and-regulatory",
-      "label": "Legal and Regulatory"
+      "@id": "urn:ngm:class:open-standard",
+      "label": "Open Standard"
+    },
+    {
+      "@id": "urn:ngm:class:engineering-standard",
+      "label": "Engineering Standard"
     }
-  ]
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

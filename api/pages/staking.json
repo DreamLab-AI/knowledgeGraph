@@ -13,10 +13,23 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:slashing",
+        "label": "Slashing"
+      },
+      {
+        "id": "urn:ngm:class:staking-reward",
+        "label": "Staking Reward"
+      },
+      {
+        "id": "urn:ngm:class:delegation",
+        "label": "Delegation"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:validator",
@@ -25,23 +38,110 @@
       {
         "id": "urn:ngm:class:proof-of-stake",
         "label": "Proof of Stake"
+      },
+      {
+        "id": "urn:ngm:class:native-token",
+        "label": "Native Token"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:network-security",
         "label": "Network Security"
+      },
+      {
+        "id": "urn:ngm:class:block-finality",
+        "label": "Block Finality"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-governance",
+        "label": "Decentralised Governance"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-key",
+        "label": "Cryptographic Key"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:proof-of-work",
+        "label": "Proof of Work"
+      },
+      {
+        "id": "urn:ngm:class:mining",
+        "label": "Mining"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:yield-farming",
+        "label": "Yield Farming"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:bonding-curve",
+        "label": "Bonding Curve"
+      },
+      {
+        "id": "urn:ngm:class:liquid-staking",
+        "label": "Liquid Staking"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:sybil-resistance",
+        "label": "Sybil Resistance"
+      },
+      {
+        "id": "urn:ngm:class:economic-security",
+        "label": "Economic Security"
+      }
+    ],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:validator-set",
+        "label": "Validator Set"
+      },
+      {
+        "id": "urn:ngm:class:staking-pool",
+        "label": "Staking Pool"
+      },
+      {
+        "id": "urn:ngm:class:withdrawal-queue",
+        "label": "Withdrawal Queue"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -13,11 +13,33 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.72,
   "maturity": "draft",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:mechanistic-interpretability",
+        "label": "Mechanistic Interpretability"
+      },
+      {
+        "id": "urn:ngm:class:global-interpretability",
+        "label": "Global Interpretability"
+      },
+      {
+        "id": "urn:ngm:class:local-interpretability",
+        "label": "Local Interpretability"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      },
+      {
+        "id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:debugging",
@@ -30,17 +52,92 @@
       {
         "id": "urn:ngm:class:trust",
         "label": "Trust"
+      },
+      {
+        "id": "urn:ngm:class:ai-auditing",
+        "label": "AI Auditing"
+      },
+      {
+        "id": "urn:ngm:class:human-oversight",
+        "label": "Human Oversight"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:model-complexity",
+        "label": "Model Complexity"
+      },
+      {
+        "id": "urn:ngm:class:sparse-representations",
+        "label": "Sparse Representations"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:explainability",
+        "label": "Explainability"
+      },
+      {
+        "id": "urn:ngm:class:black-box-model",
+        "label": "Black-Box Model"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human-Computer Interaction"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:sparse-autoencoder",
+        "label": "Sparse Autoencoder"
+      },
+      {
+        "id": "urn:ngm:class:decision-tree",
+        "label": "Decision Tree"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:ai-trustworthiness",
+        "label": "AI Trustworthiness"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:circuit-discovery",
+        "label": "Circuit Discovery"
+      },
+      {
+        "id": "urn:ngm:class:probing",
+        "label": "Probing"
+      }
+    ]
   },
   "wikilinks": [
     {

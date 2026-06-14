@@ -4,7 +4,7 @@
   "slug": "scope-3-emissions",
   "public": true,
   "classIri": "urn:ngm:class:scope-3-emissions",
-  "domain": "governance",
+  "domain": "supply-chain",
   "definition": "Scope 3 emissions are the indirect greenhouse gas (GHG) emissions that occur across an organisation's value chain as a consequence of its activities but outside its operational boundary, encompassing both upstream sources such as purchased goods and services, capital goods, and business travel, and downstream sources such as the use and end-of-life treatment of sold products. Defined under Category 3 of the GHG Protocol Corporate Standard, Scope 3 emissions typically constitute the largest share of a company's total carbon footprint \u2014 often exceeding 70 percent \u2014 making their measurement, reporting, and reduction critical to credible corporate climate strategies. Accurate Scope 3 accounting requires collaboration across supply chains and the use of spend-based, activity-based, or supplier-specific emission factors.",
   "subClassOf": [
     {
@@ -13,11 +13,20 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.75,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:supplier-data-collection",
+        "label": "Supplier Data Collection"
+      },
+      {
+        "id": "urn:ngm:class:value-chain-transparency",
+        "label": "Value Chain Transparency"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:esg-reporting",
@@ -25,13 +34,43 @@
       },
       {
         "id": "urn:ngm:class:sustainability-reporting",
-        "label": "SustainabilityReporting"
+        "label": "Sustainability Reporting"
+      },
+      {
+        "id": "urn:ngm:class:net-zero-commitments",
+        "label": "Net-Zero Commitments"
+      },
+      {
+        "id": "urn:ngm:class:supplier-decarbonisation",
+        "label": "Supplier Decarbonisation"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:scope-1-emissions",
+        "label": "Scope 1 Emissions"
+      },
+      {
+        "id": "urn:ngm:class:scope-2-emissions",
+        "label": "Scope 2 Emissions"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:digital-product-passport",
+        "label": "Digital Product Passport"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-provenance-tracking",
+        "label": "Blockchain Provenance Tracking"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-analytics",
+        "label": "Supply Chain Analytics"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:emission-factors",
@@ -40,10 +79,35 @@
       {
         "id": "urn:ngm:class:environmental-accounting",
         "label": "Environmental Accounting"
+      },
+      {
+        "id": "urn:ngm:class:life-cycle-assessment",
+        "label": "Life Cycle Assessment"
+      },
+      {
+        "id": "urn:ngm:class:spend-based-method",
+        "label": "Spend-Based Method"
+      },
+      {
+        "id": "urn:ngm:class:activity-based-costing",
+        "label": "Activity-Based Costing"
       }
     ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ghg-protocol-scope-3-standard",
+        "label": "GHG Protocol Scope 3 Standard"
+      },
+      {
+        "id": "urn:ngm:class:ifrs-s2",
+        "label": "IFRS S2"
+      },
+      {
+        "id": "urn:ngm:class:corporate-sustainability-reporting-directive",
+        "label": "Corporate Sustainability Reporting Directive"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -61,6 +125,18 @@
       {
         "id": "urn:ngm:class:supply-chain",
         "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:corporate-climate-strategy",
+        "label": "Corporate Climate Strategy"
+      },
+      {
+        "id": "urn:ngm:class:financed-emissions",
+        "label": "Financed Emissions"
+      },
+      {
+        "id": "urn:ngm:class:embodied-carbon",
+        "label": "Embodied Carbon"
       }
     ]
   },

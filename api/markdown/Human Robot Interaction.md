@@ -147,34 +147,150 @@ alias:: Human-Robot Interaction, HumanRobotInteraction
   "@id": "urn:ngm:class:human-robot-interaction",
   "@type": "Class",
   "label": "Human Robot Interaction",
-  "definition": "Interdisciplinary field studying how humans and robots communicate, collaborate, and interact safely and effectively in shared physical and virtual spaces.",
+  "definition": "Interdisciplinary field studying how humans and robots communicate, collaborate, and interact safely and effectively in shared physical and virtual spaces. HRI combines robotics engineering, AI, human factors engineering, and cognitive science to design systems with natural interaction modalities including gesture recognition, natural language processing, and haptic feedback.",
   "domain": "robotics",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:robo-human-robot-interaction",
-      "label": "Human-Robot Interaction"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:interaction-paradigm",
+    "label": "Interaction Paradigm"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:gesture-recognition",
+        "label": "Gesture Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      },
+      {
+        "@id": "urn:ngm:class:safety-protocol",
+        "label": "Safety Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:teach-pendant",
+        "label": "Teach Pendant"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:robotics-domain",
+        "label": "Robotics Domain"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:safety-metrics",
+        "label": "Safety Metrics"
+      },
+      {
+        "@id": "urn:ngm:class:shared-workspace",
+        "label": "Shared Workspace"
+      }
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:safety-metrics",
-        "label": "SafetyMetrics"
+        "label": "Safety Metrics"
+      },
+      {
+        "@id": "urn:ngm:class:collaborative-robot",
+        "label": "Collaborative Robot"
+      },
+      {
+        "@id": "urn:ngm:class:intuitive-interface",
+        "label": "Intuitive Interface"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
       }
     ],
     "uses": [
       {
         "@id": "urn:ngm:class:artificial-intelligence",
-        "label": "ArtificialIntelligence"
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:manipulator-arm",
+        "label": "Manipulator Arm"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:assistive-robotics",
+        "label": "Assistive Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:social-robotics",
+        "label": "Social Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:telepresence",
+        "label": "Telepresence"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human Computer Interaction"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:cognitive-ergonomics",
+        "label": "Cognitive Ergonomics"
+      },
+      {
+        "@id": "urn:ngm:class:robot-ethics",
+        "label": "Robot Ethics"
+      },
+      {
+        "@id": "urn:ngm:class:intent-recognition",
+        "label": "Intent Recognition"
       }
     ]
   },
-  "quality": 0.4,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:human-robot-collaboration",
+      "label": "Human-Robot Collaboration"
+    },
+    {
+      "@id": "urn:ngm:class:hri",
+      "label": "HRI"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

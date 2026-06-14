@@ -8,12 +8,12 @@
   "definition": "Unreal Engine is a real-time three-dimensional creation tool and game engine developed by Epic Games. It provides rendering, physics, animation, audio and scripting systems used to build games, virtual production environments, architectural visualisations and simulations. The engine is widely adopted for its high-fidelity rendering, its visual scripting system Blueprints, and its use in film and television virtual production with LED volume stages.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:creative-media-domain",
-      "label": "Creative Media Domain"
+      "id": "urn:ngm:class:game-engine",
+      "label": "Game Engine"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
     "hasPart": [
@@ -24,12 +24,28 @@
       {
         "id": "urn:ngm:class:lumen",
         "label": "Lumen"
+      },
+      {
+        "id": "urn:ngm:class:blueprints-visual-scripting",
+        "label": "Blueprints Visual Scripting"
+      },
+      {
+        "id": "urn:ngm:class:chaos-physics",
+        "label": "Chaos Physics"
+      },
+      {
+        "id": "urn:ngm:class:niagara-vfx",
+        "label": "Niagara VFX"
       }
     ],
     "requires": [
       {
         "id": "urn:ngm:class:gpu-rendering",
         "label": "GPU Rendering"
+      },
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
       }
     ],
     "enables": [
@@ -44,17 +60,87 @@
       {
         "id": "urn:ngm:class:metaverse-domain",
         "label": "Metaverse Domain"
+      },
+      {
+        "id": "urn:ngm:class:architectural-visualisation",
+        "label": "Architectural Visualisation"
+      },
+      {
+        "id": "urn:ngm:class:xr-application",
+        "label": "XR Application"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:unity-engine",
+        "label": "Unity Engine"
+      },
+      {
+        "id": "urn:ngm:class:godot-engine",
+        "label": "Godot Engine"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:computer-vision-domain",
+        "label": "Computer Vision Domain"
+      },
+      {
+        "id": "urn:ngm:class:3d-reconstruction",
+        "label": "3D Reconstruction"
+      },
+      {
+        "id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:physically-based-rendering",
+        "label": "Physically Based Rendering"
+      },
+      {
+        "id": "urn:ngm:class:ray-tracing",
+        "label": "Ray Tracing"
+      },
+      {
+        "id": "urn:ngm:class:level-of-detail",
+        "label": "Level of Detail"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:multiplayer-networking",
+        "label": "Multiplayer Networking"
+      }
+    ],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:epic-games-ecosystem",
+        "label": "Epic Games Ecosystem"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:fortnite",
+        "label": "Fortnite"
+      },
+      {
+        "id": "urn:ngm:class:metahuman",
+        "label": "MetaHuman"
+      }
+    ]
   },
   "wikilinks": [
     {

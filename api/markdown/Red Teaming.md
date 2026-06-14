@@ -43,34 +43,70 @@ alias:: Red-Teaming
   "@id": "urn:ngm:class:red-teaming",
   "@type": "Class",
   "label": "Red Teaming",
-  "definition": "The practice of deliberately attempting to elicit harmful, biased, or undesired outputs from AI systems to identify vulnerabilities and weaknesses.",
-  "domain": "spatial-computing",
+  "definition": "The practice of deliberately attempting to elicit harmful, biased, or undesired outputs from AI systems to identify vulnerabilities and weaknesses. Red teaming involves structured adversarial testing where human evaluators or automated systems probe for failure modes across security, ethics, and alignment dimensions, informing safety improvements and deployment decisions.",
+  "domain": "security",
   "maturity": "emerging",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:sc-governance-and-safety",
-      "label": "Governance and Safety"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:adversarial-testing",
+    "label": "Adversarial Testing"
+  },
   "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:prompt-injection", "label": "Prompt Injection"},
+      {"@id": "urn:ngm:class:jailbreak-attack", "label": "Jailbreak Attack"},
+      {"@id": "urn:ngm:class:threat-modelling", "label": "Threat Modelling"},
+      {"@id": "urn:ngm:class:vulnerability-assessment", "label": "Vulnerability Assessment"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:ai-safety-evaluation", "label": "AI Safety Evaluation"}
+    ],
     "requires": [
       {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:adversarial-testing", "label": "Adversarial Testing"}
+      {"@id": "urn:ngm:class:adversarial-testing", "label": "Adversarial Testing"},
+      {"@id": "urn:ngm:class:safety-policy", "label": "Safety Policy"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},
-      {"@id": "urn:ngm:class:safety-fine-tuning", "label": "Safety Fine Tuning"}
+      {"@id": "urn:ngm:class:safety-fine-tuning", "label": "Safety Fine Tuning"},
+      {"@id": "urn:ngm:class:model-hardening", "label": "Model Hardening"},
+      {"@id": "urn:ngm:class:responsible-ai-deployment", "label": "Responsible AI Deployment"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:attack-simulation", "label": "Attack Simulation"},
+      {"@id": "urn:ngm:class:human-evaluation", "label": "Human Evaluation"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:mitre-attck", "label": "MITRE ATT&CK"},
+      {"@id": "urn:ngm:class:nist-cybersecurity-framework", "label": "NIST Cybersecurity Framework"}
     ],
     "supports": [
       {"@id": "urn:ngm:class:ai-alignment", "label": "AI Alignment"},
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"}
+      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
+      {"@id": "urn:ngm:class:trustworthy-ai", "label": "Trustworthy AI"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:blue-team", "label": "Blue Team"},
+      {"@id": "urn:ngm:class:penetration-testing", "label": "Penetration Testing"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:machine-learning-security", "label": "Machine Learning Security"},
+      {"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:reinforcement-learning-from-human-feedback", "label": "Reinforcement Learning from Human Feedback"},
+      {"@id": "urn:ngm:class:bias-detection", "label": "Bias Detection"},
+      {"@id": "urn:ngm:class:model-evaluation", "label": "Model Evaluation"}
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {"@id": "urn:ngm:class:adversarial-ai-evaluation", "label": "Adversarial AI Evaluation"},
+    {"@id": "urn:ngm:class:ai-red-teaming", "label": "AI Red Teaming"}
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

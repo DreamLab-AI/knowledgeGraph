@@ -25,19 +25,61 @@ public:: true
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:audit-log", "label": "Audit Log"}],
   "relations": {
-    "supports": [
-      {"@id": "urn:ngm:class:compliance-framework", "label": "Compliance Framework"},
-      {"@id": "urn:ngm:class:audit-trail", "label": "Audit Trail"},
-      {"@id": "urn:ngm:class:compliance-monitoring", "label": "Compliance Monitoring"}
+    "hasPart": [
+      {"@id": "urn:ngm:class:log-entry", "label": "Log Entry"},
+      {"@id": "urn:ngm:class:event-record", "label": "Event Record"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:security-information-and-event-management", "label": "Security Information and Event Management"},
+      {"@id": "urn:ngm:class:identity-and-access-management", "label": "Identity and Access Management"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:append-only-storage", "label": "Append-Only Storage"},
+      {"@id": "urn:ngm:class:access-control", "label": "Access Control"},
+      {"@id": "urn:ngm:class:trusted-timestamping", "label": "Trusted Timestamping"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:algorithmic-auditing", "label": "Algorithmic Auditing"},
-      {"@id": "urn:ngm:class:compliance-verification", "label": "Compliance Verification"}
+      {"@id": "urn:ngm:class:compliance-verification", "label": "Compliance Verification"},
+      {"@id": "urn:ngm:class:incident-response", "label": "Incident Response"},
+      {"@id": "urn:ngm:class:forensic-analysis", "label": "Forensic Analysis"},
+      {"@id": "urn:ngm:class:non-repudiation", "label": "Non-Repudiation"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"},
+      {"@id": "urn:ngm:class:log-integrity-verification", "label": "Log Integrity Verification"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:compliance-framework", "label": "Compliance Framework"},
+      {"@id": "urn:ngm:class:audit-trail", "label": "Audit Trail"},
+      {"@id": "urn:ngm:class:compliance-monitoring", "label": "Compliance Monitoring"},
+      {"@id": "urn:ngm:class:zero-trust-architecture", "label": "Zero Trust Architecture"},
+      {"@id": "urn:ngm:class:regulatory-reporting", "label": "Regulatory Reporting"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:nist-sp-800-92", "label": "NIST SP 800-92"},
+      {"@id": "urn:ngm:class:iso-iec-27001", "label": "ISO/IEC 27001"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:application-logging", "label": "Application Logging"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:data-provenance", "label": "Data Provenance"},
+      {"@id": "urn:ngm:class:blockchain-immutability", "label": "Blockchain Immutability"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:information-security", "label": "Information Security"},
       {"@id": "urn:ngm:class:cybersecurity", "label": "Cybersecurity"}
     ]
+  },
+  "sameAs": [
+    {"@id": "urn:ngm:class:security-audit-log", "label": "Security Audit Log"},
+    {"@id": "urn:ngm:class:event-logging", "label": "Event Logging"}
+  ],
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   },
   "quality": 0.8
 }

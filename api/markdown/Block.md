@@ -73,40 +73,61 @@ public:: true
   "definition": "The fundamental unit of a blockchain: a cryptographically linked, immutable data container that batches a set of transactions together with a block header containing the Merkle root of those transactions, a timestamp, the previous block's hash, and consensus-specific fields such as a nonce or validator signature. Sequential blocks form the chain that provides an append-only audit trail.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:bc-protocol-and-consensus",
-      "label": "Protocol and Consensus"
-    },
-    {
-      "@id": "urn:ngm:class:blockchain-entity",
-      "label": "Blockchain Entity"
-    },
-    {
-      "@id": "urn:ngm:class:distributed-data-structure",
-      "label": "DistributedDataStructure"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:distributed-data-structure",
+    "label": "DistributedDataStructure"
+  },
   "relations": {
     "hasPart": [
       {"@id": "urn:ngm:class:block-header", "label": "Block Header"},
       {"@id": "urn:ngm:class:merkle-root", "label": "Merkle Root"},
       {"@id": "urn:ngm:class:blockchain-transaction", "label": "Blockchain Transaction"},
-      {"@id": "urn:ngm:class:coinbase-transaction", "label": "Coinbase Transaction"}
+      {"@id": "urn:ngm:class:coinbase-transaction", "label": "Coinbase Transaction"},
+      {"@id": "urn:ngm:class:nonce", "label": "Nonce"},
+      {"@id": "urn:ngm:class:timestamp", "label": "Timestamp"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
+      {"@id": "urn:ngm:class:blockchain-ledger", "label": "Blockchain Ledger"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
+      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:immutability", "label": "Immutability"},
+      {"@id": "urn:ngm:class:finality", "label": "Finality"},
+      {"@id": "urn:ngm:class:smart-contract-execution", "label": "Smart Contract Execution"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:peer-to-peer-network", "label": "Peer-to-Peer Network"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:merkle-tree", "label": "Merkle Tree"},
+      {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:orphan-block", "label": "Orphan Block"},
+      {"@id": "urn:ngm:class:uncle-block", "label": "Uncle Block"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:distributed-ledger-technology", "label": "Distributed Ledger Technology"},
+      {"@id": "urn:ngm:class:data-integrity", "label": "Data Integrity"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:genesis-block", "label": "Genesis Block"},
       {"@id": "urn:ngm:class:block-time", "label": "Block Time"},
       {"@id": "urn:ngm:class:block-size", "label": "Block Size"},
       {"@id": "urn:ngm:class:block-reward", "label": "Block Reward"},
-      {"@id": "urn:ngm:class:block-propagation", "label": "Block Propagation"}
-    ],
-    "uses": [
-      {"@id": "urn:ngm:class:merkle-tree", "label": "Merkle Tree"},
-      {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"}
+      {"@id": "urn:ngm:class:block-propagation", "label": "Block Propagation"},
+      {"@id": "urn:ngm:class:fork", "label": "Fork"}
     ]
   },
-  "quality": 0.8,
+  "sameAs": [
+    {"@id": "urn:ngm:class:blockchain-block", "label": "Blockchain Block"},
+    {"@id": "urn:ngm:class:ledger-block", "label": "Ledger Block"}
+  ],
+  "quality": 0.72,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

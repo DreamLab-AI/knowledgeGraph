@@ -73,17 +73,25 @@ public:: true
   "definition": "A software application or hardware device that stores private keys and enables users to manage, send, and receive cryptocurrencies and digital assets on blockchain networks, with self-custody wallets providing complete user control over private keys without third-party intermediaries.",
   "domain": "blockchain",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:bc-network-component",
-      "label": "Network Component"
-    },
-    {
-      "@id": "urn:ngm:class:blockchain-core",
-      "label": "Blockchain"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:cryptocurrency-storage",
+    "label": "Cryptocurrency Storage"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:private-key",
+        "label": "Private Key"
+      },
+      {
+        "@id": "urn:ngm:class:public-key",
+        "label": "Public Key"
+      },
+      {
+        "@id": "urn:ngm:class:seed-phrase",
+        "label": "Seed Phrase"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:blockchain-network",
@@ -94,8 +102,8 @@ public:: true
         "label": "Cryptographic Security"
       },
       {
-        "@id": "urn:ngm:class:private-key",
-        "label": "Private Key"
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
       }
     ],
     "enables": [
@@ -110,14 +118,92 @@ public:: true
       {
         "@id": "urn:ngm:class:asset-management",
         "label": "Asset Management"
+      },
+      {
+        "@id": "urn:ngm:class:nft-management",
+        "label": "NFT Management"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-identity",
+        "label": "Decentralized Identity"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:account-abstraction",
+        "label": "Account Abstraction"
+      },
+      {
+        "@id": "urn:ngm:class:bip-39",
+        "label": "BIP-39"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:multi-chain-interoperability",
+        "label": "Multi-Chain Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:web3-authentication",
+        "label": "Web3 Authentication"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:custodial-wallet",
+        "label": "Custodial Wallet"
+      },
+      {
+        "@id": "urn:ngm:class:centralized-exchange",
+        "label": "Centralized Exchange"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "@id": "urn:ngm:class:payment-system",
+        "label": "Payment System"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:hardware-security-module",
+        "label": "Hardware Security Module"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:crypto-wallet",
+      "label": "Crypto Wallet"
+    },
+    {
+      "@id": "urn:ngm:class:web3-wallet",
+      "label": "Web3 Wallet"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

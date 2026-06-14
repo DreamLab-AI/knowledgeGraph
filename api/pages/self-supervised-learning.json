@@ -4,7 +4,7 @@
   "slug": "self-supervised-learning",
   "public": true,
   "classIri": "urn:ngm:class:self-supervised-learning",
-  "domain": "ai",
+  "domain": "machine-learning",
   "definition": "Self-Supervised Learning (SSL) is a machine learning paradigm in which a model learns rich representations of data by solving pretext tasks whose supervisory signal is derived automatically from the input data itself, requiring no human-provided labels. The model learns to predict masked or hidden portions of an input, to match different views of the same data, or to distinguish positive from negative data pairs, developing features that transfer effectively to downstream supervised tasks with limited labelled data. Self-supervised learning has become the dominant pre-training strategy for large language models, visual foundation models, and multimodal systems, enabling training at scales that would be infeasible with manually annotated datasets.",
   "subClassOf": [
     {
@@ -13,11 +13,33 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:masked-language-modelling",
+        "label": "Masked Language Modelling"
+      },
+      {
+        "id": "urn:ngm:class:contrastive-learning",
+        "label": "Contrastive Learning"
+      },
+      {
+        "id": "urn:ngm:class:masked-image-modelling",
+        "label": "Masked Image Modelling"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:unlabelled-data",
+        "label": "Unlabelled Data"
+      },
+      {
+        "id": "urn:ngm:class:pretext-task",
+        "label": "Pretext Task"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:large-scale-pretrained-foundation-model",
@@ -26,12 +48,47 @@
       {
         "id": "urn:ngm:class:parameter-efficient-fine-tuning",
         "label": "Parameter-Efficient Fine-Tuning"
+      },
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "id": "urn:ngm:class:zero-shot-learning",
+        "label": "Zero-Shot Learning"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:data-augmentation",
+        "label": "Data Augmentation"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
+      },
+      {
+        "id": "urn:ngm:class:unsupervised-learning",
+        "label": "Unsupervised Learning"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:robotics-perception",
+        "label": "Robotics Perception"
+      },
+      {
+        "id": "urn:ngm:class:spatial-ai",
+        "label": "Spatial AI"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:transformer-architecture",
@@ -40,28 +97,45 @@
       {
         "id": "urn:ngm:class:pretrained-model",
         "label": "Pretrained Model"
+      },
+      {
+        "id": "urn:ngm:class:encoder-decoder-architecture",
+        "label": "Encoder-Decoder Architecture"
       }
     ],
     "supports": [
       {
         "id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
       }
     ],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:representation-learning",
+        "label": "Representation Learning"
+      }
+    ],
     "relatedTo": [
-      {
-        "id": "urn:ngm:class:contrastive-learning",
-        "label": "Contrastive Learning"
-      },
-      {
-        "id": "urn:ngm:class:unsupervised-learning",
-        "label": "Unsupervised Learning"
-      },
       {
         "id": "urn:ngm:class:semi-supervised-learning",
         "label": "Semi-Supervised Learning"
+      },
+      {
+        "id": "urn:ngm:class:generative-adversarial-network",
+        "label": "Generative Adversarial Network"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-learning",
+        "label": "Multimodal Learning"
       }
     ]
   },

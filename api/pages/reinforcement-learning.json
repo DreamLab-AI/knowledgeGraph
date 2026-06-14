@@ -4,20 +4,46 @@
   "slug": "reinforcement-learning",
   "public": true,
   "classIri": "urn:ngm:class:reinforcement-learning",
-  "domain": "artificial-intelligence",
-  "definition": "Reinforcement learning is a machine learning paradigm in which agents learn optimal BC-0452-policy|policies through interaction with an environment, receiving reward signals for actions and iteratively improving their decision-making through trial and error.",
+  "domain": "machine-learning",
+  "definition": "Reinforcement learning is a machine learning paradigm in which agents learn optimal policies through interaction with an environment, receiving reward signals for actions and iteratively improving their decision-making through trial and error, encompassing model-free and model-based methods, policy gradient techniques, and value-based approaches.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ai-research-area",
-      "label": "AI Research Area"
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.4,
+  "qualityScore": 0.72,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:policy-gradient-method",
+        "label": "Policy Gradient Method"
+      },
+      {
+        "id": "urn:ngm:class:q-learning",
+        "label": "Q-Learning"
+      },
+      {
+        "id": "urn:ngm:class:temporal-difference-learning",
+        "label": "Temporal Difference Learning"
+      },
+      {
+        "id": "urn:ngm:class:value-function",
+        "label": "Value Function"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:reward-signal",
+        "label": "Reward Signal"
+      },
+      {
+        "id": "urn:ngm:class:markov-decision-process",
+        "label": "Markov Decision Process"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:autonomous-navigation",
@@ -26,30 +52,85 @@
       {
         "id": "urn:ngm:class:autonomous-robot",
         "label": "Autonomous Robot"
+      },
+      {
+        "id": "urn:ngm:class:game-playing-agent",
+        "label": "Game Playing Agent"
+      },
+      {
+        "id": "urn:ngm:class:recommendation-system",
+        "label": "Recommendation System"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:bellman-equation",
+        "label": "Bellman Equation"
+      },
+      {
+        "id": "urn:ngm:class:exploration-exploitation-tradeoff",
+        "label": "Exploration-Exploitation Tradeoff"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
+      },
+      {
+        "id": "urn:ngm:class:unsupervised-learning",
+        "label": "Unsupervised Learning"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:robotic-control",
+        "label": "Robotic Control"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicle"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:model-based-planning",
+        "label": "Model-Based Planning"
       }
     ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
       }
     ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
         "label": "Reinforcement Learning from Human Feedback"
+      },
+      {
+        "id": "urn:ngm:class:multi-agent-system",
+        "label": "Multi-Agent System"
+      },
+      {
+        "id": "urn:ngm:class:imitation-learning",
+        "label": "Imitation Learning"
       }
     ]
   },

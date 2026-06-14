@@ -5,48 +5,145 @@
   "public": true,
   "classIri": "urn:ngm:class:video-conferencing",
   "domain": "distributed-collaboration",
-  "definition": "\"Real-time audio-visual communication technology enabling multiple geographically distributed participants to see and hear each other simultaneously through internet-connected devices, supporting face-to-face interaction across distances.\"",
+  "definition": "Real-time audio-visual communication technology enabling multiple geographically distributed participants to see and hear each other simultaneously through internet-connected devices, supporting face-to-face interaction across distances via compressed media streams, network protocols, and centralised or peer-to-peer media routing.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:dc-communication",
-      "label": "Communication Technology"
-    },
-    {
       "id": "urn:ngm:class:synchronous-collaboration",
-      "label": "TC-0010-Synchronous-Collaboration"
+      "label": "Synchronous Collaboration"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:video-codec",
+        "label": "Video Codec"
+      },
+      {
+        "id": "urn:ngm:class:audio-codec",
+        "label": "Audio Codec"
+      },
+      {
+        "id": "urn:ngm:class:media-server",
+        "label": "Media Server"
+      },
+      {
+        "id": "urn:ngm:class:screen-sharing",
+        "label": "Screen Sharing"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:real-time-communication-protocols",
         "label": "Real-Time Communication Protocols"
+      },
+      {
+        "id": "urn:ngm:class:broadband-internet",
+        "label": "Broadband Internet"
+      },
+      {
+        "id": "urn:ngm:class:end-to-end-encryption",
+        "label": "End-to-End Encryption"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:face-to-face-interaction",
         "label": "Face-to-Face Interaction"
+      },
+      {
+        "id": "urn:ngm:class:remote-work",
+        "label": "Remote Work"
+      },
+      {
+        "id": "urn:ngm:class:telemedicine",
+        "label": "Telemedicine"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:web-rtc",
-        "label": "TELE-150-webrtc"
+        "label": "WebRTC"
+      },
+      {
+        "id": "urn:ngm:class:session-initiation-protocol",
+        "label": "Session Initiation Protocol"
       }
     ],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:asynchronous-communication",
+        "label": "Asynchronous Communication"
+      },
+      {
+        "id": "urn:ngm:class:audio-conferencing",
+        "label": "Audio Conferencing"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:virtual-reality-telepresence",
+        "label": "Virtual Reality Telepresence"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality-collaboration",
+        "label": "Augmented Reality Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:ai-avatars",
+        "label": "AI Avatars"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:ai-meeting-assistants",
+        "label": "AI Meeting Assistants"
+      },
+      {
+        "id": "urn:ngm:class:real-time-language-translation",
+        "label": "Real-Time Language Translation"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:remote-pair-programming",
+        "label": "Remote Pair Programming"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      },
+      {
+        "id": "urn:ngm:class:w3c",
+        "label": "W3C"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:unified-communications",
+        "label": "Unified Communications"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:5g-telepresence",
+        "label": "5G Telepresence"
+      },
+      {
+        "id": "urn:ngm:class:zero-trust-security",
+        "label": "Zero-Trust Security"
+      }
+    ]
   },
   "wikilinks": [
     {

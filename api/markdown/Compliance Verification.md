@@ -46,32 +46,156 @@ public:: true
   "@id": "urn:ngm:class:compliance-verification",
   "@type": "Class",
   "label": "Compliance Verification",
-  "definition": "Compliance verification in blockchain contexts encompasses the automated and manual processes for ensuring that cryptoasset transactions, service providers, and participants adhere to regulatory requirements including Know Your Customer (KYC), Anti-Money Laundering (AML), sanctions screening, and...",
-  "domain": "infrastructure",
+  "definition": "Compliance verification in blockchain contexts encompasses the automated and manual processes for ensuring that cryptoasset transactions, service providers, and participants adhere to regulatory requirements including Know Your Customer (KYC), Anti-Money Laundering (AML), sanctions screening, and transaction monitoring obligations. Blockchain-based compliance systems leverage immutable ledgers, smart contracts, and AI-driven analytics to maintain tamper-proof records and detect suspicious activities in real-time.",
+  "domain": "governance",
   "maturity": "emerging",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:infra-legal-and-regulatory",
-      "label": "Legal and Regulatory"
-    },
-    {
-      "@id": "urn:ngm:class:compliance-monitoring",
-      "label": "Compliance Monitoring"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:compliance-monitoring",
+    "label": "Compliance Monitoring"
+  },
   "relations": {
     "enables": [
       {
         "@id": "urn:ngm:class:kyc-aml-requirements",
         "label": "KYC/AML Requirements"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-reporting",
+        "label": "Regulatory Reporting"
+      },
+      {
+        "@id": "urn:ngm:class:sanctions-screening",
+        "label": "Sanctions Screening"
+      },
+      {
+        "@id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      },
+      {
+        "@id": "urn:ngm:class:transaction-monitoring",
+        "label": "Transaction Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:aml-screening",
+        "label": "AML Screening"
+      },
+      {
+        "@id": "urn:ngm:class:pep-screening",
+        "label": "PEP Screening"
+      },
+      {
+        "@id": "urn:ngm:class:wallet-screening",
+        "label": "Wallet Screening"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proofs",
+        "label": "Zero-Knowledge Proofs"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:travel-rule",
+        "label": "Travel Rule"
+      },
+      {
+        "@id": "urn:ngm:class:fatf-recommendations",
+        "label": "FATF Recommendations"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:financial-action-task-force",
+        "label": "Financial Action Task Force"
+      },
+      {
+        "@id": "urn:ngm:class:transfer-of-funds-regulation",
+        "label": "Transfer of Funds Regulation"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:defi-compliance",
+        "label": "DeFi Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:regtech",
+        "label": "RegTech"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:privacy-preserving-computation",
+        "label": "Privacy-Preserving Computation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self-Sovereign Identity"
+      },
+      {
+        "@id": "urn:ngm:class:on-chain-governance",
+        "label": "On-Chain Governance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:financial-crime-prevention",
+        "label": "Financial Crime Prevention"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:regulatory-compliance-verification",
+      "label": "Regulatory Compliance Verification"
+    },
+    {
+      "@id": "urn:ngm:class:compliance-assurance",
+      "label": "Compliance Assurance"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

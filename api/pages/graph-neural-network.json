@@ -4,24 +4,38 @@
   "slug": "graph-neural-network",
   "public": true,
   "classIri": "urn:ngm:class:graph-neural-network",
-  "domain": "artificial-intelligence",
+  "domain": "machine-learning",
   "definition": "A Graph Neural Network (GNN) is a deep learning architecture that operates directly on graph-structured data by iteratively propagating and aggregating feature information across node neighbourhoods. GNNs generalise convolutional and attention mechanisms to non-Euclidean domains, learning node, edge, and graph-level representations suitable for tasks including node classification, link prediction, and graph classification across domains such as knowledge graphs, social networks, molecular modelling, and recommendation systems.",
   "subClassOf": [
-    {
-      "id": "urn:ngm:class:ai-model-architecture",
-      "label": "AI Model Architecture"
-    },
     {
       "id": "urn:ngm:class:neural-network",
       "label": "Neural Network"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.72,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:graph-convolutional-network",
+        "label": "Graph Convolutional Network"
+      },
+      {
+        "id": "urn:ngm:class:graph-attention-network",
+        "label": "Graph Attention Network"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:graph-structured-data",
+        "label": "Graph-Structured Data"
+      },
+      {
+        "id": "urn:ngm:class:adjacency-matrix",
+        "label": "Adjacency Matrix"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:retrieval-augmented-generation",
@@ -30,12 +44,68 @@
       {
         "id": "urn:ngm:class:anomaly-detection",
         "label": "Anomaly Detection"
+      },
+      {
+        "id": "urn:ngm:class:link-prediction",
+        "label": "Link Prediction"
+      },
+      {
+        "id": "urn:ngm:class:node-classification",
+        "label": "Node Classification"
+      },
+      {
+        "id": "urn:ngm:class:graph-classification",
+        "label": "Graph Classification"
+      },
+      {
+        "id": "urn:ngm:class:recommendation-system",
+        "label": "Recommendation System"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:message-passing-neural-network",
+        "label": "Message-Passing Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:spectral-graph-theory",
+        "label": "Spectral Graph Theory"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:recurrent-neural-network",
+        "label": "Recurrent Neural Network"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:semantic-web-linked-data-standard",
+        "label": "Semantic Web"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graphing",
+        "label": "Knowledge Graphing"
+      },
+      {
+        "id": "urn:ngm:class:fraud-detection",
+        "label": "Fraud Detection"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:knowledge-graph",
@@ -44,9 +114,30 @@
       {
         "id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:message-passing",
+        "label": "Message Passing"
+      },
+      {
+        "id": "urn:ngm:class:graph-attention-mechanism",
+        "label": "Graph Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:node-embedding",
+        "label": "Node Embedding"
       }
     ],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:drug-discovery",
+        "label": "Drug Discovery"
+      },
+      {
+        "id": "urn:ngm:class:social-network-analysis",
+        "label": "Social Network Analysis"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
@@ -55,8 +146,12 @@
         "label": "Transformer"
       },
       {
-        "id": "urn:ngm:class:semantic-web-linked-data-standard",
-        "label": "Semantic Web"
+        "id": "urn:ngm:class:graph-rag",
+        "label": "GraphRAG"
+      },
+      {
+        "id": "urn:ngm:class:molecular-modelling",
+        "label": "Molecular Modelling"
       }
     ]
   },

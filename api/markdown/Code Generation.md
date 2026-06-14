@@ -49,35 +49,64 @@ public:: true
   "definition": "The automated production of source code by AI systems from natural language specifications, partial code, or structured prompts. Code generation systems leverage large language models trained on code corpora to synthesise functions, classes, and complete programs, accelerating software development workflows.",
   "domain": "artificial-intelligence",
   "maturity": "established",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:ai-application",
-      "label": "AI Application"
-    },
-    {
-      "@id": "urn:ngm:class:generative-ai",
-      "label": "Generative AI"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:generative-ai",
+    "label": "Generative AI"
+  },
   "relations": {
     "uses": [
       {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
       {"@id": "urn:ngm:class:transformer", "label": "Transformer"},
-      {"@id": "urn:ngm:class:prompt-engineering", "label": "Prompt Engineering"}
+      {"@id": "urn:ngm:class:prompt-engineering", "label": "Prompt Engineering"},
+      {"@id": "urn:ngm:class:code-aware-tokenisation", "label": "Code-Aware Tokenisation"},
+      {"@id": "urn:ngm:class:reinforcement-learning-from-human-feedback", "label": "Reinforcement Learning from Human Feedback"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:software-development-process", "label": "Software Development Process"},
-      {"@id": "urn:ngm:class:documentation-generation", "label": "Documentation Generation"}
+      {"@id": "urn:ngm:class:documentation-generation", "label": "Documentation Generation"},
+      {"@id": "urn:ngm:class:automated-code-review", "label": "Automated Code Review"},
+      {"@id": "urn:ngm:class:test-driven-development", "label": "Test-Driven Development"},
+      {"@id": "urn:ngm:class:continuous-integration", "label": "Continuous Integration"}
     ],
-    "relatedTo": [
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
-      {"@id": "urn:ngm:class:software-testing", "label": "Software Testing"},
-      {"@id": "urn:ngm:class:software-architecture", "label": "Software Architecture"}
+    "requires": [
+      {"@id": "urn:ngm:class:training-data", "label": "Training Data"},
+      {"@id": "urn:ngm:class:source-code-corpus", "label": "Source Code Corpus"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:fill-in-the-middle-completion", "label": "Fill-in-the-Middle Completion"},
+      {"@id": "urn:ngm:class:repository-level-context", "label": "Repository-Level Context"}
     ],
     "partOf": [
       {"@id": "urn:ngm:class:infra-software-engineering", "label": "Software Engineering"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:program-synthesis", "label": "Program Synthesis"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:ide-integration", "label": "IDE Integration"},
+      {"@id": "urn:ngm:class:devops", "label": "DevOps"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:manual-software-development", "label": "Manual Software Development"},
+      {"@id": "urn:ngm:class:low-code-platform", "label": "Low-Code Platform"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:infrastructure-as-code", "label": "Infrastructure as Code"},
+      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:software-testing", "label": "Software Testing"},
+      {"@id": "urn:ngm:class:software-architecture", "label": "Software Architecture"},
+      {"@id": "urn:ngm:class:static-analysis", "label": "Static Analysis"}
     ]
   },
+  "sameAs": [
+    {"@id": "urn:ngm:class:automated-code-synthesis", "label": "Automated Code Synthesis"},
+    {"@id": "urn:ngm:class:ai-code-generation", "label": "AI Code Generation"}
+  ],
   "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",

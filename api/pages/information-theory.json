@@ -8,12 +8,12 @@
   "definition": "Information Theory is the mathematical study of the quantification, storage and communication of information, founded by Claude Shannon in 1948. It introduces entropy as a measure of uncertainty in a random source and defines channel capacity, the maximum rate at which information can be transmitted reliably over a noisy channel. The theory underpins data compression, error-correcting codes and modern digital communication. It also connects to statistics, cryptography and machine learning through measures such as mutual information and Kullback-Leibler divergence.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:owl-thing",
-      "label": "owl:Thing"
+      "id": "urn:ngm:class:applied-mathematics",
+      "label": "Applied Mathematics"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
     "hasPart": [
@@ -28,12 +28,28 @@
       {
         "id": "urn:ngm:class:channel-capacity",
         "label": "Channel Capacity"
+      },
+      {
+        "id": "urn:ngm:class:kullback-leibler-divergence",
+        "label": "Kullback-Leibler Divergence"
+      },
+      {
+        "id": "urn:ngm:class:source-coding",
+        "label": "Source Coding"
+      },
+      {
+        "id": "urn:ngm:class:channel-coding",
+        "label": "Channel Coding"
       }
     ],
     "requires": [
       {
         "id": "urn:ngm:class:probability-theory",
         "label": "Probability Theory"
+      },
+      {
+        "id": "urn:ngm:class:statistics",
+        "label": "Statistics"
       }
     ],
     "enables": [
@@ -48,17 +64,70 @@
       {
         "id": "urn:ngm:class:cryptography",
         "label": "Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:digital-communication",
+        "label": "Digital Communication"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:algorithmic-information-theory",
+        "label": "Algorithmic Information Theory"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:thermodynamics",
+        "label": "Thermodynamics"
+      },
+      {
+        "id": "urn:ngm:class:quantum-information",
+        "label": "Quantum Information"
+      },
+      {
+        "id": "urn:ngm:class:network-coding",
+        "label": "Network Coding"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:random-variable",
+        "label": "Random Variable"
+      },
+      {
+        "id": "urn:ngm:class:logarithmic-measure",
+        "label": "Logarithmic Measure"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:feature-selection",
+        "label": "Feature Selection"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:coding-theory",
+        "label": "Coding Theory"
+      },
+      {
+        "id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      }
+    ]
   },
   "wikilinks": [
     {

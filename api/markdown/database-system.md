@@ -8,8 +8,17 @@
 
 - ### Relationships
   - enables:: [[Data Persistence]], [[Query Processing]], [[Transaction Management]]
-
+  - enables:: [[Concurrent Access Control]], [[Data Analytics]]
+  - hasPart:: [[Query Engine]], [[Storage Engine]], [[Transaction Manager]], [[Index Structure]]
+  - requires:: [[File System]], [[Operating System]], [[Network Infrastructure]]
+  - implements:: [[ACID Properties]], [[Relational Model]], [[CAP Theorem]]
+  - uses:: [[Structured Query Language]], [[B-Tree Index]], [[Write-Ahead Logging]]
+  - supports:: [[Data Replication]], [[Backup and Recovery]], [[Role-Based Access Control]]
+  - standardizedBy:: [[ISO/IEC 9075 SQL Standard]], [[ANSI SQL]]
+  - contrastsWith:: [[File System]], [[In-Memory Data Store]]
+  - relatedTo:: [[Data Warehouse]], [[Data Lake]], [[Distributed Database]], [[Cloud Database]]
   - bridges-to:: [[Blockchain]] (bc)
+  - bridges-to:: [[Distributed Ledger]], [[Machine Learning Pipeline]]
 - ### Content
 
   ## Relational Databases (SQL/RDBMS)

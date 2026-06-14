@@ -67,15 +67,13 @@ public:: true
   "@type": "Class",
   "label": "Graph Theory",
   "definition": "Graph Theory is the branch of mathematics that studies graphs, structures consisting of vertices connected by edges, used to model pairwise relationships between objects. It examines properties such as connectivity, paths, cycles, colourings, matchings and flows, and classifies graphs by structure (for example trees, bipartite and planar graphs). Originating with Euler's 1736 solution of the Seven Bridges of Konigsberg problem, it now underpins network analysis, optimisation and computer science. Graph algorithms are fundamental to routing, scheduling, social network analysis and the representation of knowledge.",
-  "domain": "machine-learning",
+  "domain": "data",
   "maturity": "established",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:owl-thing",
-      "label": "owl:Thing"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:owl-thing",
+    "label": "owl:Thing"
+  },
   "relations": {
     "hasPart": [
       {
@@ -89,6 +87,18 @@ public:: true
       {
         "@id": "urn:ngm:class:graph-colouring",
         "label": "Graph Colouring"
+      },
+      {
+        "@id": "urn:ngm:class:spanning-tree",
+        "label": "Spanning Tree"
+      },
+      {
+        "@id": "urn:ngm:class:graph-traversal",
+        "label": "Graph Traversal"
+      },
+      {
+        "@id": "urn:ngm:class:cycle-detection",
+        "label": "Cycle Detection"
       }
     ],
     "enables": [
@@ -99,14 +109,100 @@ public:: true
       {
         "@id": "urn:ngm:class:knowledge-graph",
         "label": "Knowledge Graph"
+      },
+      {
+        "@id": "urn:ngm:class:routing-protocol",
+        "label": "Routing Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:recommendation-system",
+        "label": "Recommendation System"
+      },
+      {
+        "@id": "urn:ngm:class:social-network-analysis",
+        "label": "Social Network Analysis"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:combinatorics",
+        "label": "Combinatorics"
+      },
+      {
+        "@id": "urn:ngm:class:set-theory",
+        "label": "Set Theory"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      },
+      {
+        "@id": "urn:ngm:class:adjacency-matrix",
+        "label": "Adjacency Matrix"
+      },
+      {
+        "@id": "urn:ngm:class:dynamic-programming",
+        "label": "Dynamic Programming"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:graph-neural-network",
+        "label": "Graph Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:relational-algebra",
+        "label": "Relational Algebra"
+      },
+      {
+        "@id": "urn:ngm:class:euclidean-geometry",
+        "label": "Euclidean Geometry"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "@id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:topology",
+        "label": "Topology"
+      },
+      {
+        "@id": "urn:ngm:class:computational-complexity",
+        "label": "Computational Complexity"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:graph-mathematics",
+      "label": "Graph Mathematics"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

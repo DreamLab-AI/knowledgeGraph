@@ -13,16 +13,16 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.75,
+  "qualityScore": 0.72,
   "maturity": "emerging",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:robo-actuation-and-control",
+        "id": "urn:ngm:class:actuation-and-control",
         "label": "Actuation and Control"
       },
       {
-        "id": "urn:ngm:class:robo-human-robot-interaction",
+        "id": "urn:ngm:class:human-robot-interaction",
         "label": "Human-Robot Interaction"
       },
       {
@@ -40,26 +40,108 @@
       {
         "id": "urn:ngm:class:autonomous-robot",
         "label": "Autonomous Robot"
+      },
+      {
+        "id": "urn:ngm:class:industrial-automation",
+        "label": "Industrial Automation"
+      },
+      {
+        "id": "urn:ngm:class:robot-kinematics",
+        "label": "Robot Kinematics"
       }
     ],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      },
+      {
+        "id": "urn:ngm:class:control-systems",
+        "label": "Control Systems"
+      },
+      {
+        "id": "urn:ngm:class:real-time-operating-system",
+        "label": "Real-Time Operating System"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "id": "urn:ngm:class:collaborative-robotics",
+        "label": "Collaborative Robotics"
+      },
+      {
+        "id": "urn:ngm:class:robotic-process-automation",
+        "label": "Robotic Process Automation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:mechatronics",
+        "label": "Mechatronics"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:virtual-agent",
+        "label": "Virtual Agent"
+      },
+      {
+        "id": "urn:ngm:class:software-automation",
+        "label": "Software Automation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      }
+    ],
     "uses": [
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:computer-vision",
         "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:simultaneous-localization-and-mapping",
+        "label": "Simultaneous Localisation and Mapping"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
       }
     ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ieee-1872",
+        "label": "IEEE 1872 CORA Ontology"
+      },
+      {
+        "id": "urn:ngm:class:iso-10218",
+        "label": "ISO 10218 Industrial Robot Safety"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -69,6 +151,10 @@
       {
         "id": "urn:ngm:class:robotics",
         "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:swarm-robotics",
+        "label": "Swarm Robotics"
       }
     ]
   },

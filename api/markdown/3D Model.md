@@ -90,17 +90,37 @@ public:: true
   "@id": "urn:ngm:class:3-d-model",
   "@type": "Class",
   "label": "3D Model",
-  "definition": "A 3D Model is a digital representation of a three-dimensional object or environment constructed from vertices, edges, faces, and materials, encoded in formats such as 3D File Format.",
+  "definition": "A 3D Model is a digital representation of a three-dimensional object or environment constructed from vertices, edges, faces, and materials, encoded in standard formats such as glTF, OBJ, FBX, or USD, and used as a foundational asset in spatial computing, simulation, gaming, and metaverse applications.",
   "domain": "spatial-computing",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:sc-content-and-assets",
-      "label": "Content and Assets"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:sc-content-and-assets",
+    "label": "Content and Assets"
+  },
   "relations": {
-    "bridgesTo": [
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:mesh-data",
+        "label": "Mesh Data"
+      },
+      {
+        "@id": "urn:ngm:class:material-definition",
+        "label": "Material Definition"
+      },
+      {
+        "@id": "urn:ngm:class:texture-mapping",
+        "label": "Texture Mapping"
+      },
+      {
+        "@id": "urn:ngm:class:skeletal-rig",
+        "label": "Skeletal Rig"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:virtual-environment-design",
+        "label": "Virtual Environment Design"
+      },
       {
         "@id": "urn:ngm:class:digital-asset",
         "label": "Digital Asset"
@@ -108,16 +128,12 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:material-definition",
-        "label": "Material Definition"
+        "@id": "urn:ngm:class:3-d-file-format",
+        "label": "3D File Format"
       },
       {
-        "@id": "urn:ngm:class:mesh-data",
-        "label": "Mesh Data"
-      },
-      {
-        "@id": "urn:ngm:class:texture-mapping",
-        "label": "Texture Mapping"
+        "@id": "urn:ngm:class:3-d-modeling",
+        "label": "3D Modeling"
       }
     ],
     "enables": [
@@ -130,16 +146,84 @@ public:: true
         "label": "Interactive Visualization"
       },
       {
-        "@id": "urn:ngm:class:virtual-environment-design",
-        "label": "Virtual Environment Design"
+        "@id": "urn:ngm:class:animation-retargeting",
+        "label": "Animation Retargeting"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:level-of-detail",
+        "label": "Level of Detail"
+      },
+      {
+        "@id": "urn:ngm:class:uv-mapping",
+        "label": "UV Mapping"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:gltf-standard",
+        "label": "glTF Standard"
+      },
+      {
+        "@id": "urn:ngm:class:universal-scene-description",
+        "label": "Universal Scene Description"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-development",
+        "label": "3D Development"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:photogrammetry",
+        "label": "Photogrammetry"
+      },
+      {
+        "@id": "urn:ngm:class:procedural-generation",
+        "label": "Procedural Generation"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:three-dimensional-model",
+      "label": "Three-Dimensional Model"
+    },
+    {
+      "@id": "urn:ngm:class:3-d-object",
+      "label": "3D Object"
+    }
+  ],
+  "quality": 0.70,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

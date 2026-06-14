@@ -16,7 +16,16 @@
   "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:single-use-seals",
+        "label": "Single Use Seals"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-publication",
+        "label": "Proof of Publication"
+      }
+    ],
     "requires": [],
     "enables": [
       {
@@ -26,6 +35,14 @@
       {
         "id": "urn:ngm:class:zero-knowledge-proof",
         "label": "Zero-Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:block-trails",
+        "label": "Block Trails"
+      },
+      {
+        "id": "urn:ngm:class:web-contracts",
+        "label": "Web Contracts"
       }
     ],
     "dependsOn": [],

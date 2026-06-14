@@ -46,31 +46,69 @@ alias:: RiskManagement
   "definition": "The coordinated activities to direct and control an AI system with regard to risk, encompassing risk identification, assessment, treatment, monitoring, and communication throughout the AI lifecycle to minimize potential adverse effects while maximizing benefits.",
   "domain": "artificial-intelligence",
   "maturity": "emerging",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:ai-governance-and-ethics",
-      "label": "AI Governance and Ethics"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:ai-governance-and-ethics",
+    "label": "AI Governance and Ethics"
+  },
   "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:risk-assessment", "label": "Risk Assessment"},
+      {"@id": "urn:ngm:class:risk-mitigation", "label": "Risk Mitigation"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:ai-governance-and-ethics", "label": "AI Governance and Ethics"},
+      {"@id": "urn:ngm:class:enterprise-risk-management", "label": "Enterprise Risk Management"}
+    ],
     "requires": [
       {"@id": "urn:ngm:class:explainability", "label": "Explainability"},
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"}
+      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"},
+      {"@id": "urn:ngm:class:transparency", "label": "Transparency"},
+      {"@id": "urn:ngm:class:accountability", "label": "Accountability"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:ai-trustworthiness", "label": "AI Trustworthiness"},
+      {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"},
+      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:risk-register", "label": "Risk Register"},
+      {"@id": "urn:ngm:class:threat-modeling", "label": "Threat Modeling"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:nist-ai-rmf", "label": "NIST AI RMF"},
+      {"@id": "urn:ngm:class:iso-23894", "label": "ISO 23894"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:failure-mode-analysis", "label": "Failure Mode Analysis"},
+      {"@id": "urn:ngm:class:bias-detection", "label": "Bias Detection"}
     ],
     "supports": [
       {"@id": "urn:ngm:class:compliance-framework", "label": "Compliance Framework"},
-      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"}
+      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},
+      {"@id": "urn:ngm:class:stakeholder-trust", "label": "Stakeholder Trust"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:iso-31000", "label": "ISO 31000"},
+      {"@id": "urn:ngm:class:eu-ai-act", "label": "EU AI Act"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:cybersecurity-risk-management", "label": "Cybersecurity Risk Management"},
+      {"@id": "urn:ngm:class:financial-risk-management", "label": "Financial Risk Management"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"},
-      {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"}
+      {"@id": "urn:ngm:class:incident-response", "label": "Incident Response"}
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {"@id": "urn:ngm:class:ai-risk-management", "label": "AI Risk Management"},
+    {"@id": "urn:ngm:class:risk-governance", "label": "Risk Governance"}
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```
@@ -112,10 +150,28 @@ alias:: RiskManagement
 - ### Relationships
   - requires:: [[Explainability]]
   - requires:: [[Data Governance]]
+  - requires:: [[Transparency]]
+  - requires:: [[Accountability]]
   - supports:: [[Compliance Framework]]
   - supports:: [[AI Safety]]
+  - supports:: [[Stakeholder Trust]]
   - relatedTo:: [[AI Ethics]]
   - relatedTo:: [[Responsible AI]]
+  - relatedTo:: [[Incident Response]]
+  - hasPart:: [[Risk Assessment]]
+  - hasPart:: [[Risk Mitigation]]
+  - hasPart:: [[Risk Monitoring]]
+  - hasPart:: [[Risk Communication]]
+  - partOf:: [[Enterprise Risk Management]]
+  - enables:: [[AI Trustworthiness]]
+  - enables:: [[Regulatory Compliance]]
+  - dependsOn:: [[Threat Modeling]]
+  - implements:: [[NIST AI RMF]]
+  - implements:: [[ISO 23894]]
+  - standardizedBy:: [[ISO 31000]]
+  - standardizedBy:: [[EU AI Act]]
+  - bridgesTo:: [[Cybersecurity Risk Management]]
+  - bridgesTo:: [[Financial Risk Management]]
 
 - ### Content
   - The coordinated activities to direct and control an AI system with regard to risk, encompassing risk identification, assessment, treatment, monitoring, and communication throughout the AI lifecycle to minimize potential adverse effects while maximizing benefits.

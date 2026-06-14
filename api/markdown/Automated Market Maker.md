@@ -75,27 +75,43 @@ public:: true
   "@type": "Class",
   "label": "Automated Market Maker",
   "definition": "Automated Market Maker (AMM) is a decentralized exchange protocol that uses algorithmic pricing mechanisms and liquidity pools instead of traditional order books, enabling permissionless token swaps where prices adjust automatically based on supply and demand within smart contract-managed reserves.",
-  "domain": "spatial-computing",
+  "domain": "blockchain",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:sc-platform-and-environment",
-      "label": "Platform and Environment"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:defi-protocol",
+    "label": "DeFi Protocol"
+  },
   "relations": {
-    "requires": [
+    "hasPart": [
       {
         "@id": "urn:ngm:class:liquidity-pool",
-        "label": "Liquidity Pools"
+        "label": "Liquidity Pool"
+      },
+      {
+        "@id": "urn:ngm:class:lp-token",
+        "label": "LP Token"
+      },
+      {
+        "@id": "urn:ngm:class:constant-product-formula",
+        "label": "Constant Product Formula"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
       },
       {
         "@id": "urn:ngm:class:pricing-algorithms",
         "label": "Pricing Algorithms"
       },
       {
-        "@id": "urn:ngm:class:smart-contracts",
-        "label": "Smart Contracts"
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:token-standard",
+        "label": "Token Standard"
       }
     ],
     "enables": [
@@ -110,14 +126,90 @@ public:: true
       {
         "@id": "urn:ngm:class:liquidity-provision",
         "label": "Liquidity Provision"
+      },
+      {
+        "@id": "urn:ngm:class:yield-farming",
+        "label": "Yield Farming"
+      },
+      {
+        "@id": "urn:ngm:class:price-discovery",
+        "label": "Price Discovery"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:constant-function-market-maker",
+        "label": "Constant Function Market Maker"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-exchange",
+        "label": "Decentralized Exchange"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:bonding-curve",
+        "label": "Bonding Curve"
+      },
+      {
+        "@id": "urn:ngm:class:oracle",
+        "label": "Oracle"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:order-book-exchange",
+        "label": "Order Book Exchange"
+      },
+      {
+        "@id": "urn:ngm:class:centralized-exchange",
+        "label": "Centralized Exchange"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:impermanent-loss",
+        "label": "Impermanent Loss"
+      },
+      {
+        "@id": "urn:ngm:class:slippage",
+        "label": "Slippage"
+      },
+      {
+        "@id": "urn:ngm:class:arbitrage",
+        "label": "Arbitrage"
+      },
+      {
+        "@id": "urn:ngm:class:miner-extractable-value",
+        "label": "Miner Extractable Value"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:decentralized-finance",
+        "label": "Decentralized Finance"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-economy",
+        "label": "Virtual Economy"
       }
     ]
   },
-  "quality": 0.35,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:amm",
+      "label": "AMM"
+    },
+    {
+      "@id": "urn:ngm:class:constant-function-market-maker",
+      "label": "Constant Function Market Maker"
+    }
+  ],
+  "quality": 0.70,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

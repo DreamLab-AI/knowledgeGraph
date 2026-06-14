@@ -8,19 +8,28 @@
   "definition": "Machine Translation is the automated translation of text or speech from one natural language to another using neural network models, particularly transformer-based sequence-to-sequence architectures. Modern neural MT systems achieve near-human quality through pre-training on massive multilingual corpora, cross-lingual transfer learning, and attention mechanisms that model long-range linguistic dependencies.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ai-application",
-      "label": "AI Application"
-    },
-    {
       "id": "urn:ngm:class:natural-language-processing",
       "label": "Natural Language Processing"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.65,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:encoder-decoder-architecture",
+        "label": "Encoder Decoder Architecture"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:beam-search-decoding",
+        "label": "Beam Search Decoding"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:language-modeling",
@@ -29,26 +38,96 @@
       {
         "id": "urn:ngm:class:training-data",
         "label": "Training Data"
-      }
-    ],
-    "enables": [],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [
-      {
-        "id": "urn:ngm:class:attention-mechanism",
-        "label": "Attention Mechanism"
       },
       {
-        "id": "urn:ngm:class:encoder-decoder-architecture",
-        "label": "Encoder Decoder Architecture"
+        "id": "urn:ngm:class:multilingual-corpus",
+        "label": "Multilingual Corpus"
+      },
+      {
+        "id": "urn:ngm:class:tokenisation",
+        "label": "Tokenisation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:document-localisation",
+        "label": "Document Localisation"
+      },
+      {
+        "id": "urn:ngm:class:real-time-interpretation",
+        "label": "Real-Time Interpretation"
+      },
+      {
+        "id": "urn:ngm:class:multilingual-content-access",
+        "label": "Multilingual Content Access"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:parallel-corpora",
+        "label": "Parallel Corpora"
+      },
+      {
+        "id": "urn:ngm:class:word-embeddings",
+        "label": "Word Embeddings"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:sequence-to-sequence-model",
+        "label": "Sequence-to-Sequence Model"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:rule-based-machine-translation",
+        "label": "Rule-Based Machine Translation"
+      },
+      {
+        "id": "urn:ngm:class:statistical-machine-translation",
+        "label": "Statistical Machine Translation"
+      },
+      {
+        "id": "urn:ngm:class:human-translation",
+        "label": "Human Translation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:metaverse-interoperability",
+        "label": "Metaverse Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:protocol-translation",
+        "label": "Protocol Translation"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:cross-lingual-transfer-learning",
+        "label": "Cross-Lingual Transfer Learning"
+      },
+      {
+        "id": "urn:ngm:class:byte-pair-encoding",
+        "label": "Byte Pair Encoding"
       }
     ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:language-translation",
@@ -57,6 +136,18 @@
       {
         "id": "urn:ngm:class:transfer-learning",
         "label": "Transfer Learning"
+      },
+      {
+        "id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
+      },
+      {
+        "id": "urn:ngm:class:bleu-score",
+        "label": "BLEU Score"
+      },
+      {
+        "id": "urn:ngm:class:low-resource-language",
+        "label": "Low-Resource Language"
       }
     ]
   },

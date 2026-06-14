@@ -59,39 +59,67 @@ alias:: Privacy-by-Design
   "@id": "urn:ngm:class:privacy-by-design",
   "@type": "Class",
   "label": "Privacy By Design",
-  "definition": "Privacy by Design is a proactive privacy framework and GDPR requirement (Article 25) mandating that data protection be embedded into system architecture, business practices, and technologies from inception rather than bolted on as afterthought, implementing privacy as the default setting. The framework comprises seven foundational principles including data minimisation, consent management, and transparency, requiring engineers and product teams to treat privacy as a design constraint from the earliest specification stage.",
-  "domain": "artificial-intelligence",
+  "definition": "Privacy by Design is a proactive privacy framework and GDPR requirement (Article 25) mandating that data protection be embedded into system architecture, business practices, and technologies from inception rather than bolted on as afterthought, implementing privacy as the default setting. The framework comprises seven foundational principles articulated by Ann Cavoukian — including proactive prevention, privacy as default, full functionality (positive-sum), end-to-end lifecycle security, visibility and transparency, and respect for user privacy — requiring engineers and product teams to treat privacy as a core design constraint from the earliest specification stage.",
+  "domain": "governance",
   "maturity": "established",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:ai-governance-and-ethics",
-      "label": "AI Governance and Ethics"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:data-governance",
+    "label": "Data Governance"
+  },
   "relations": {
     "requires": [
       {"@id": "urn:ngm:class:consent-management", "label": "Consent Management"},
       {"@id": "urn:ngm:class:data-protection", "label": "Data Protection"},
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"}
+      {"@id": "urn:ngm:class:data-minimisation", "label": "Data Minimisation"},
+      {"@id": "urn:ngm:class:pseudonymisation", "label": "Pseudonymisation"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:gdpr-compliance", "label": "GDPR Compliance"},
       {"@id": "urn:ngm:class:differential-privacy", "label": "Differential Privacy"},
-      {"@id": "urn:ngm:class:transparency", "label": "Transparency"}
+      {"@id": "urn:ngm:class:transparency", "label": "Transparency"},
+      {"@id": "urn:ngm:class:user-trust", "label": "User Trust"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:gdpr-article-25", "label": "GDPR Article 25"},
+      {"@id": "urn:ngm:class:iso-29100", "label": "ISO 29100"},
+      {"@id": "urn:ngm:class:data-protection-by-default", "label": "Data Protection by Default"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:access-control", "label": "Access Control"},
+      {"@id": "urn:ngm:class:encryption", "label": "Encryption"},
+      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:algorithmic-accountability", "label": "Algorithmic Accountability"},
+      {"@id": "urn:ngm:class:data-subject-rights", "label": "Data Subject Rights"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:gdpr", "label": "GDPR"},
+      {"@id": "urn:ngm:class:iso-29101", "label": "ISO 29101"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:privacy-bolt-on", "label": "Privacy Bolt-On"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:secure-by-design", "label": "Secure By Design"},
+      {"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"},
-      {"@id": "urn:ngm:class:algorithmic-accountability", "label": "Algorithmic Accountability"},
       {"@id": "urn:ngm:class:data-protection-regulation", "label": "Data Protection Regulation"},
       {"@id": "urn:ngm:class:transparency-and-explainability", "label": "Transparency and Explainability"},
-      {"@id": "urn:ngm:class:ai-risk-management", "label": "AI Risk Management"}
+      {"@id": "urn:ngm:class:ai-governance-and-ethics", "label": "AI Governance and Ethics"},
+      {"@id": "urn:ngm:class:privacy-impact-assessment", "label": "Privacy Impact Assessment"}
     ]
   },
-  "quality": 0.8,
+  "sameAs": [
+    {"@id": "urn:ngm:class:privacy-by-default", "label": "Privacy By Default"},
+    {"@id": "urn:ngm:class:data-protection-by-design", "label": "Data Protection By Design"}
+  ],
+  "quality": 0.73,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

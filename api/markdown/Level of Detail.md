@@ -65,27 +65,83 @@ public:: true
   "definition": "Level of Detail (LOD) is a rendering optimisation technique that dynamically adjusts the geometric complexity, texture resolution, and shader fidelity of 3D objects based on viewing distance or screen-space coverage, trading visual precision for computational efficiency. LOD is essential for maintaining real-time frame rates in large-scale metaverse and spatial computing scenes.",
   "domain": "spatial-computing",
   "maturity": "emerging",
-  "qualityScore": 0.7,
-  "subClassOf": [
+  "qualityScore": 0.72,
+  "subClassOf": {
+    "@id": "urn:ngm:class:sc-display-and-rendering",
+    "label": "Display and Rendering"
+  },
+  "sameAs": [
     {
-      "@id": "urn:ngm:class:sc-display-and-rendering",
-      "label": "Display and Rendering"
+      "@id": "urn:ngm:class:lod",
+      "label": "LOD"
     },
     {
-      "@id": "urn:ngm:class:metaverse",
-      "label": "Metaverse"
+      "@id": "urn:ngm:class:mesh-lod",
+      "label": "Mesh LOD"
     }
   ],
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "inferenceRule": "RelationEnrichment"
   },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:discrete-lod",
+        "label": "Discrete LOD"
+      },
+      {
+        "@id": "urn:ngm:class:continuous-lod",
+        "label": "Continuous LOD"
+      },
+      {
+        "@id": "urn:ngm:class:hierarchical-lod",
+        "label": "Hierarchical LOD"
+      },
+      {
+        "@id": "urn:ngm:class:mipmapping",
+        "label": "Mipmapping"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:3-d-asset",
         "label": "3D Asset"
+      },
+      {
+        "@id": "urn:ngm:class:mesh-decimation",
+        "label": "Mesh Decimation"
+      },
+      {
+        "@id": "urn:ngm:class:scene-graph",
+        "label": "Scene Graph"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:open-world-streaming",
+        "label": "Open World Streaming"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:graphics-processing-unit",
+        "label": "Graphics Processing Unit"
+      },
+      {
+        "@id": "urn:ngm:class:camera-frustum",
+        "label": "Camera Frustum"
       }
     ],
     "uses": [
@@ -96,22 +152,58 @@ public:: true
       {
         "@id": "urn:ngm:class:shader",
         "label": "Shader"
-      }
-    ],
-    "relatedTo": [
-      {
-        "@id": "urn:ngm:class:occlusion-culling",
-        "label": "Occlusion Culling"
       },
       {
-        "@id": "urn:ngm:class:rendering-pipeline",
-        "label": "Rendering Pipeline"
+        "@id": "urn:ngm:class:screen-space-coverage",
+        "label": "Screen-Space Coverage"
       }
     ],
     "supports": [
       {
         "@id": "urn:ngm:class:performance-optimization",
         "label": "Performance Optimization"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:occlusion-culling",
+        "label": "Occlusion Culling"
+      },
+      {
+        "@id": "urn:ngm:class:frustum-culling",
+        "label": "Frustum Culling"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:asset-streaming",
+        "label": "Asset Streaming"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-index",
+        "label": "Spatial Index"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:instancing",
+        "label": "Instancing"
+      },
+      {
+        "@id": "urn:ngm:class:progressive-mesh",
+        "label": "Progressive Mesh"
+      },
+      {
+        "@id": "urn:ngm:class:texture-atlas",
+        "label": "Texture Atlas"
       }
     ]
   }

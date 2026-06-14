@@ -1,0 +1,101 @@
+{
+  "id": "urn:visionflow:page:git-mark",
+  "title": "Git Mark",
+  "slug": "git-mark",
+  "public": true,
+  "classIri": "urn:ngm:class:git-mark",
+  "domain": "blockchain",
+  "definition": "Git Mark is a Block Trails Profile that anchors a Git history to Bitcoin by using each commit hash as the tweak that advances a trail, so the sequence of commits becomes a single-use-seal chain whose ordering and uniqueness are enforced by Bitcoin's UTXO model. The Blocktrails verifier checks a git-mark trail against the chain, confirming that each marked commit was timestamped and is tamper-evident on Bitcoin \u2014 it proves the history's immutability and temporal anchoring, not the correctness of the code itself. This gives a Bitcoin-secured provenance log for source repositories without storing any repository data on-chain.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:block-trails",
+      "label": "Block Trails"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:provenance-tracking",
+        "label": "Provenance Tracking"
+      },
+      {
+        "id": "urn:ngm:class:software-supply-chain-security",
+        "label": "Software Supply Chain Security"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:bitcoin-network",
+        "label": "Bitcoin Network"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-publication",
+        "label": "Proof of Publication"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:timestamping",
+        "label": "Timestamping"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      },
+      {
+        "id": "urn:ngm:class:continuous-integration",
+        "label": "Continuous Integration"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:git",
+        "label": "Git"
+      },
+      {
+        "id": "urn:ngm:class:single-use-seals",
+        "label": "Single Use Seals"
+      },
+      {
+        "id": "urn:ngm:class:taproot",
+        "label": "Taproot"
+      },
+      {
+        "id": "urn:ngm:class:sha-256",
+        "label": "SHA-256"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:block-trails",
+        "label": "Block Trails"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:content-provenance",
+        "label": "Content Provenance"
+      },
+      {
+        "id": "urn:ngm:class:audit-log",
+        "label": "Audit Log"
+      },
+      {
+        "id": "urn:ngm:class:client-side-validation",
+        "label": "Client-Side Validation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

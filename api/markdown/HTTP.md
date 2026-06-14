@@ -58,31 +58,153 @@ public:: true
   "domain": "infrastructure",
   "maturity": "established",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:application-layer",
-      "label": "Application Layer"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:application-layer",
+    "label": "Application Layer"
+  },
   "relations": {
     "requires": [
       {
         "@id": "urn:ngm:class:transport-layer",
         "label": "Transport Layer"
+      },
+      {
+        "@id": "urn:ngm:class:tcp",
+        "label": "TCP"
+      },
+      {
+        "@id": "urn:ngm:class:dns",
+        "label": "DNS"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:api",
         "label": "API"
+      },
+      {
+        "@id": "urn:ngm:class:restful-api",
+        "label": "RESTful API"
+      },
+      {
+        "@id": "urn:ngm:class:web-browser",
+        "label": "Web Browser"
+      },
+      {
+        "@id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:request-response-pattern",
+        "label": "Request-Response Pattern"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:url",
+        "label": "URL"
+      },
+      {
+        "@id": "urn:ngm:class:tls",
+        "label": "TLS"
+      },
+      {
+        "@id": "urn:ngm:class:http-header",
+        "label": "HTTP Header"
+      },
+      {
+        "@id": "urn:ngm:class:http-status-code",
+        "label": "HTTP Status Code"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:websocket",
+        "label": "WebSocket"
+      },
+      {
+        "@id": "urn:ngm:class:server-sent-events",
+        "label": "Server-Sent Events"
+      },
+      {
+        "@id": "urn:ngm:class:graphql",
+        "label": "GraphQL"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      },
+      {
+        "@id": "urn:ngm:class:w3c",
+        "label": "W3C"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:ftp",
+        "label": "FTP"
+      },
+      {
+        "@id": "urn:ngm:class:websocket",
+        "label": "WebSocket"
+      },
+      {
+        "@id": "urn:ngm:class:grpc",
+        "label": "gRPC"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:communication-protocols",
+        "label": "Communication Protocols"
+      },
+      {
+        "@id": "urn:ngm:class:https",
+        "label": "HTTPS"
+      },
+      {
+        "@id": "urn:ngm:class:http2",
+        "label": "HTTP/2"
+      },
+      {
+        "@id": "urn:ngm:class:http3",
+        "label": "HTTP/3"
+      },
+      {
+        "@id": "urn:ngm:class:quic",
+        "label": "QUIC"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      },
+      {
+        "@id": "urn:ngm:class:service-mesh",
+        "label": "Service Mesh"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:hypertext-transfer-protocol",
+      "label": "Hypertext Transfer Protocol"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

@@ -66,8 +66,8 @@ public:: true
   "@id": "urn:ngm:class:legal-framework",
   "@type": "Class",
   "label": "Legal Framework",
-  "definition": "A legal framework for technology systems comprises the body of laws, regulations, and legal requirements that govern the development, deployment, and operation of information technology.",
-  "domain": "infrastructure",
+  "definition": "A legal framework for technology systems comprises the body of laws, regulations, and legal requirements that govern the development, deployment, and operation of information technology. It establishes obligations for data protection, privacy, security, and compliance, defining the legal boundaries within which organisations must operate when processing personal data, deploying AI systems, and conducting digital operations.",
+  "domain": "governance",
   "maturity": "emerging",
   "relations": {
     "enables": [
@@ -82,6 +82,14 @@ public:: true
       {
         "@id": "urn:ngm:class:accountability",
         "label": "Accountability"
+      },
+      {
+        "@id": "urn:ngm:class:data-subject-rights",
+        "label": "Data Subject Rights"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-enforcement",
+        "label": "Regulatory Enforcement"
       }
     ],
     "implements": [
@@ -92,21 +100,121 @@ public:: true
       {
         "@id": "urn:ngm:class:security-obligations",
         "label": "Security Obligations"
+      },
+      {
+        "@id": "urn:ngm:class:data-protection-by-design",
+        "label": "Data Protection by Design"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:regulatory-framework",
+        "label": "Regulatory Framework"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-programme",
+        "label": "Compliance Programme"
+      },
+      {
+        "@id": "urn:ngm:class:data-protection-officer",
+        "label": "Data Protection Officer"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:data-protection-regulation",
+        "label": "Data Protection Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:breach-notification",
+        "label": "Breach Notification"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:jurisdiction",
+        "label": "Jurisdiction"
+      },
+      {
+        "@id": "urn:ngm:class:legislative-process",
+        "label": "Legislative Process"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "@id": "urn:ngm:class:trust-framework",
+        "label": "Trust Framework"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "@id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:self-regulation",
+        "label": "Self-Regulation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "@id": "urn:ngm:class:cybersecurity-policy",
+        "label": "Cybersecurity Policy"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:consent-management",
+        "label": "Consent Management"
+      },
+      {
+        "@id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
       }
     ]
   },
-  "quality": 0.5,
-  "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
-  },
-  "subClassOf": [
+  "sameAs": [
     {
-      "@id": "urn:ngm:class:infra-legal-and-regulatory",
-      "label": "Legal and Regulatory"
+      "@id": "urn:ngm:class:legal-and-regulatory-framework",
+      "label": "Legal and Regulatory Framework"
+    },
+    {
+      "@id": "urn:ngm:class:regulatory-legal-structure",
+      "label": "Regulatory Legal Structure"
     }
-  ]
+  ],
+  "quality": 0.7,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  },
+  "subClassOf": {
+    "@id": "urn:ngm:class:infra-legal-and-regulatory",
+    "label": "Legal and Regulatory"
+  }
 }
 ```
 

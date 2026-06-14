@@ -53,13 +53,45 @@ public:: true
   "definition": "The extent to which an AI system's decision-making processes, outputs, and behaviors can be understood and articulated in human-comprehensible terms, enabling stakeholders to grasp how and why specific outcomes were produced.",
   "domain": "artificial-intelligence",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:ai-governance-and-ethics",
-      "label": "AI Governance and Ethics"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:ai-governance-and-ethics",
+    "label": "AI Governance and Ethics"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:local-explanation",
+        "label": "Local Explanation"
+      },
+      {
+        "@id": "urn:ngm:class:global-explanation",
+        "label": "Global Explanation"
+      },
+      {
+        "@id": "urn:ngm:class:counterfactual-explanation",
+        "label": "Counterfactual Explanation"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:ai-trustworthiness",
+        "label": "AI Trustworthiness"
+      },
+      {
+        "@id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:model-transparency",
+        "label": "Model Transparency"
+      },
+      {
+        "@id": "urn:ngm:class:feature-attribution",
+        "label": "Feature Attribution"
+      }
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:accountability-ai-0068",
@@ -68,14 +100,132 @@ public:: true
       {
         "@id": "urn:ngm:class:contestability-ai-0043",
         "label": "Contestability (AI-0043)"
+      },
+      {
+        "@id": "urn:ngm:class:ai-auditing",
+        "label": "AI Auditing"
+      },
+      {
+        "@id": "urn:ngm:class:human-oversight",
+        "label": "Human Oversight"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:model-interpretability",
+        "label": "Model Interpretability"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:shap-shapley-additive-explanations",
+        "label": "SHAP (Shapley Additive Explanations)"
+      },
+      {
+        "@id": "urn:ngm:class:lime-local-interpretable-model-agnostic-explanations",
+        "label": "LIME (Local Interpretable Model-Agnostic Explanations)"
+      },
+      {
+        "@id": "urn:ngm:class:gradient-based-saliency",
+        "label": "Gradient-Based Saliency"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:decision-tree",
+        "label": "Decision Tree"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:fairness-assessment",
+        "label": "Fairness Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:bias-detection",
+        "label": "Bias Detection"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      },
+      {
+        "@id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
+      },
+      {
+        "@id": "urn:ngm:class:iso-iec-23894",
+        "label": "ISO/IEC 23894"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:black-box-model",
+        "label": "Black-Box Model"
+      },
+      {
+        "@id": "urn:ngm:class:opacity",
+        "label": "Opacity"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      },
+      {
+        "@id": "urn:ngm:class:fairness",
+        "label": "Fairness"
+      },
+      {
+        "@id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "@id": "urn:ngm:class:causal-inference",
+        "label": "Causal Inference"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human-Computer Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:cognitive-science",
+        "label": "Cognitive Science"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:explainable-ai",
+      "label": "Explainable AI"
+    },
+    {
+      "@id": "urn:ngm:class:xai",
+      "label": "XAI"
+    }
+  ],
+  "quality": 0.65,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

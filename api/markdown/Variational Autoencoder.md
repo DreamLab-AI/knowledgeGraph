@@ -54,16 +54,14 @@ public:: true
   "@id": "urn:ngm:class:variational-autoencoder",
   "@type": "Class",
   "label": "Variational Autoencoder",
-  "definition": "A generative model that pairs an encoder mapping inputs to a probability distribution over a latent space with a decoder that reconstructs inputs, trained to maximise a variational lower bound on the data likelihood.",
+  "definition": "A generative model that pairs an encoder mapping inputs to a probability distribution over a latent space with a decoder that reconstructs inputs, trained to maximise a variational lower bound (ELBO) on the data likelihood via the reparameterisation trick.",
   "domain": "machine-learning",
   "maturity": "established",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:autoencoder",
-      "label": "Autoencoder"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:autoencoder",
+    "label": "Autoencoder"
+  },
   "relations": {
     "requires": [
       {
@@ -73,20 +71,118 @@ public:: true
       {
         "@id": "urn:ngm:class:backpropagation",
         "label": "Backpropagation"
+      },
+      {
+        "@id": "urn:ngm:class:reparameterisation-trick",
+        "label": "Reparameterisation Trick"
+      },
+      {
+        "@id": "urn:ngm:class:kullback-leibler-divergence",
+        "label": "Kullback-Leibler Divergence"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:image-generation",
         "label": "Image Generation"
+      },
+      {
+        "@id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      },
+      {
+        "@id": "urn:ngm:class:representation-learning",
+        "label": "Representation Learning"
+      },
+      {
+        "@id": "urn:ngm:class:latent-space-interpolation",
+        "label": "Latent Space Interpolation"
+      },
+      {
+        "@id": "urn:ngm:class:drug-discovery",
+        "label": "Drug Discovery"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:encoder-network",
+        "label": "Encoder Network"
+      },
+      {
+        "@id": "urn:ngm:class:decoder-network",
+        "label": "Decoder Network"
+      },
+      {
+        "@id": "urn:ngm:class:latent-space",
+        "label": "Latent Space"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:gaussian-distribution",
+        "label": "Gaussian Distribution"
+      },
+      {
+        "@id": "urn:ngm:class:evidence-lower-bound",
+        "label": "Evidence Lower Bound"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:generative-model",
+        "label": "Generative Model"
+      },
+      {
+        "@id": "urn:ngm:class:probabilistic-graphical-model",
+        "label": "Probabilistic Graphical Model"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:generative-adversarial-network",
+        "label": "Generative Adversarial Network"
+      },
+      {
+        "@id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "@id": "urn:ngm:class:normalising-flow",
+        "label": "Normalising Flow"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:unsupervised-learning",
+        "label": "Unsupervised Learning"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:molecular-design",
+        "label": "Molecular Design"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:vae",
+      "label": "VAE"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

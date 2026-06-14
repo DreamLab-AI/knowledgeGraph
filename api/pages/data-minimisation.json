@@ -4,45 +4,115 @@
   "slug": "data-minimisation",
   "public": true,
   "classIri": "urn:ngm:class:data-minimisation",
-  "domain": "artificial-intelligence",
+  "domain": "data",
   "definition": "Data Minimisation is a privacy principle and GDPR requirement (Article 5(1)(c)) mandating that personal data collection and processing be limited to what is adequate, relevant, and necessary for specified purposes, reducing privacy risks by avoiding accumulation of excessive data that could be misused, breached, or enable function creep.",
   "subClassOf": [
-    {
-      "id": "urn:ngm:class:ai-governance-and-ethics",
-      "label": "AI Governance and Ethics"
-    },
     {
       "id": "urn:ngm:class:privacy-and-data-governance",
       "label": "Privacy and Data Governance"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:purpose-limitation",
+        "label": "Purpose Limitation"
+      },
+      {
+        "id": "urn:ngm:class:data-retention-policy",
+        "label": "Data Retention Policy"
+      },
+      {
+        "id": "urn:ngm:class:feature-selection",
+        "label": "Feature Selection"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:consent-management",
+        "label": "Consent Management"
+      },
+      {
+        "id": "urn:ngm:class:data-classification",
+        "label": "Data Classification"
+      },
+      {
+        "id": "urn:ngm:class:privacy-impact-assessment",
+        "label": "Privacy Impact Assessment"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:federated-learning",
         "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:differential-privacy",
+        "label": "Differential Privacy"
+      },
+      {
+        "id": "urn:ngm:class:model-distillation",
+        "label": "Model Distillation"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:data-lifecycle-management",
+        "label": "Data Lifecycle Management"
+      },
+      {
+        "id": "urn:ngm:class:data-governance-framework",
+        "label": "Data Governance Framework"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:gdpr-article-5",
+        "label": "GDPR Article 5"
+      },
+      {
+        "id": "urn:ngm:class:iso-29100",
+        "label": "ISO 29100"
+      }
+    ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:personal-data-store",
         "label": "Personal Data Store"
+      },
+      {
+        "id": "urn:ngm:class:data-maximisation",
+        "label": "Data Maximisation"
       }
     ],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [
+    "bridgesTo": [
       {
-        "id": "urn:ngm:class:gdpr-compliance",
-        "label": "GDPR Compliance"
+        "id": "urn:ngm:class:machine-learning-pipeline",
+        "label": "Machine Learning Pipeline"
       },
+      {
+        "id": "urn:ngm:class:secure-multi-party-computation",
+        "label": "Secure Multi-Party Computation"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:data-anonymization-pipeline",
+        "label": "Data Anonymization Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:dimensionality-reduction",
+        "label": "Dimensionality Reduction"
+      },
+      {
+        "id": "urn:ngm:class:statistical-sampling",
+        "label": "Statistical Sampling"
+      }
+    ],
+    "supports": [
       {
         "id": "urn:ngm:class:data-protection",
         "label": "Data Protection"
@@ -50,30 +120,44 @@
       {
         "id": "urn:ngm:class:privacy-framework",
         "label": "Privacy Framework"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
       }
     ],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
+    "standardizedBy": [
       {
-        "id": "urn:ngm:class:differential-privacy",
-        "label": "Differential Privacy"
+        "id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
       },
+      {
+        "id": "urn:ngm:class:ccpa",
+        "label": "CCPA"
+      }
+    ],
+    "partOf": [
       {
         "id": "urn:ngm:class:privacy-by-design",
         "label": "Privacy By Design"
       },
       {
-        "id": "urn:ngm:class:consent-management",
-        "label": "Consent Management"
-      },
-      {
-        "id": "urn:ngm:class:data-anonymization-pipeline",
-        "label": "Data Anonymization Pipeline"
-      },
+        "id": "urn:ngm:class:gdpr-compliance",
+        "label": "GDPR Compliance"
+      }
+    ],
+    "relatedTo": [
       {
         "id": "urn:ngm:class:privacy-impact-assessment",
         "label": "Privacy Impact Assessment"
+      },
+      {
+        "id": "urn:ngm:class:right-to-erasure",
+        "label": "Right to Erasure"
+      },
+      {
+        "id": "urn:ngm:class:data-subject-rights",
+        "label": "Data Subject Rights"
       }
     ]
   },

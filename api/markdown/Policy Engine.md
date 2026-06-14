@@ -47,37 +47,67 @@ public:: true
   "@type": "Class",
   "label": "Policy Engine",
   "definition": "A Policy Engine is an automated software component that evaluates, enforces, and logs governance, access-control, and behavioural rules within a metaverse or spatial computing system. It interprets declarative policy specifications (e.g., XACML, OPA Rego, or bespoke ontology-derived rules) and applies them at runtime to user actions, asset transactions, and inter-platform communications, enabling consistent compliance across distributed, multi-stakeholder virtual environments.",
-  "domain": "spatial-computing",
+  "domain": "governance",
   "maturity": "emerging",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:sc-governance-and-safety",
-      "label": "Governance and Safety"
-    },
-    {
-      "@id": "urn:ngm:class:metaverse-governance-and-safeguarding",
-      "label": "Metaverse governance and safeguarding"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:sc-governance-and-safety",
+    "label": "Governance and Safety"
+  },
   "relations": {
     "implements": [
       {"@id": "urn:ngm:class:access-control", "label": "Access Control"},
-      {"@id": "urn:ngm:class:policy-enforcement", "label": "Policy Enforcement"}
+      {"@id": "urn:ngm:class:policy-enforcement", "label": "Policy Enforcement"},
+      {"@id": "urn:ngm:class:attribute-based-access-control", "label": "Attribute-Based Access Control"},
+      {"@id": "urn:ngm:class:role-based-access-control", "label": "Role-Based Access Control"}
     ],
     "requires": [
       {"@id": "urn:ngm:class:technical-standards", "label": "Technical Standards"},
-      {"@id": "urn:ngm:class:authentication", "label": "Authentication"}
+      {"@id": "urn:ngm:class:authentication", "label": "Authentication"},
+      {"@id": "urn:ngm:class:identity-management", "label": "Identity Management"},
+      {"@id": "urn:ngm:class:policy-specification-language", "label": "Policy Specification Language"}
     ],
     "supports": [
       {"@id": "urn:ngm:class:metaverse-governance-and-safeguarding", "label": "Metaverse governance and safeguarding"},
-      {"@id": "urn:ngm:class:compliance-framework", "label": "Compliance Framework"}
+      {"@id": "urn:ngm:class:compliance-framework", "label": "Compliance Framework"},
+      {"@id": "urn:ngm:class:audit-logging", "label": "Audit Logging"},
+      {"@id": "urn:ngm:class:trust-management", "label": "Trust Management"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"},
+      {"@id": "urn:ngm:class:decentralised-governance", "label": "Decentralised Governance"},
+      {"@id": "urn:ngm:class:data-sovereignty", "label": "Data Sovereignty"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:ontology", "label": "Ontology"},
+      {"@id": "urn:ngm:class:rule-engine", "label": "Rule Engine"},
+      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:xacml", "label": "XACML"},
+      {"@id": "urn:ngm:class:open-policy-agent", "label": "Open Policy Agent"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:manual-moderation", "label": "Manual Moderation"},
+      {"@id": "urn:ngm:class:hardcoded-access-control", "label": "Hardcoded Access Control"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
+      {"@id": "urn:ngm:class:decentralised-autonomous-organisation", "label": "Decentralised Autonomous Organisation"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:privacy-by-design", "label": "Privacy by Design"},
+      {"@id": "urn:ngm:class:zero-trust-architecture", "label": "Zero Trust Architecture"}
     ]
   },
-  "quality": 0.35,
+  "sameAs": [
+    {"@id": "urn:ngm:class:policy-decision-point", "label": "Policy Decision Point"},
+    {"@id": "urn:ngm:class:authorization-engine", "label": "Authorization Engine"}
+  ],
+  "quality": 0.70,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```
@@ -124,10 +154,30 @@ public:: true
 - ### Relationships
   - implements [[Access Control]]
   - implements [[Policy Enforcement]]
+  - implements [[Attribute-Based Access Control]]
+  - implements [[Role-Based Access Control]]
   - requires [[Technical Standards]]
   - requires [[Authentication]]
+  - requires [[Identity Management]]
+  - requires [[Policy Specification Language]]
   - supports [[Metaverse governance and safeguarding]]
   - supports [[Compliance Framework]]
+  - supports [[Audit Logging]]
+  - supports [[Trust Management]]
+  - enables [[Interoperability]]
+  - enables [[Decentralised Governance]]
+  - enables [[Data Sovereignty]]
+  - uses [[Ontology]]
+  - uses [[Rule Engine]]
+  - uses [[Digital Twin]]
+  - standardizedBy [[XACML]]
+  - standardizedBy [[Open Policy Agent]]
+  - contrastsWith [[Manual Moderation]]
+  - bridgesTo [[Smart Contract]]
+  - bridgesTo [[Decentralised Autonomous Organisation]]
+  - relatedTo [[Privacy by Design]]
+  - relatedTo [[Zero Trust Architecture]]
+  - relatedTo [[Content Moderation]]
 
 - ### Content
   - automated component that applies governance or access-control rules within a metaverse system.

@@ -131,7 +131,7 @@ alias:: HapticFeedback
   "@id": "urn:ngm:class:haptic-feedback",
   "@type": "Class",
   "label": "Haptic Feedback",
-  "definition": "Tactile sensory technology providing physical sensations to enhance virtual experiences through actuators integrated into controllers, gloves, and body suits.",
+  "definition": "Tactile sensory technology that provides physical sensations to enhance virtual and augmented experiences by translating digital signals into mechanical vibrations, force responses, and pressure cues through actuators integrated into controllers, gloves, and body suits, enabling users to perceive touch, texture, and resistance when interacting with virtual objects.",
   "domain": "spatial-computing",
   "maturity": "draft",
   "subClassOf": [
@@ -141,18 +141,152 @@ alias:: HapticFeedback
     }
   ],
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:tactile-actuator",
+        "label": "Tactile Actuator"
+      },
+      {
+        "@id": "urn:ngm:class:force-feedback",
+        "label": "Force Feedback"
+      },
+      {
+        "@id": "urn:ngm:class:vibrotactile-feedback",
+        "label": "Vibrotactile Feedback"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:sensory-immersion",
+        "label": "Sensory Immersion"
+      },
+      {
+        "@id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human-Computer Interaction"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:embedded-actuator",
+        "label": "Embedded Actuator"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-signal-processing",
+        "label": "Real-Time Signal Processing"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:touch-simulation",
+        "label": "Touch Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-presence",
+        "label": "Immersive Presence"
+      },
+      {
+        "@id": "urn:ngm:class:remote-robotic-control",
+        "label": "Remote Robotic Control"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:motion-tracking",
+        "label": "Motion Tracking"
+      }
+    ],
     "uses": [
       {
         "@id": "urn:ngm:class:tactile-actuator",
-        "label": "TactileActuator"
+        "label": "Tactile Actuator"
+      },
+      {
+        "@id": "urn:ngm:class:wearable-haptics",
+        "label": "Wearable Haptics"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:surgical-simulation",
+        "label": "Surgical Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:accessibility-interface",
+        "label": "Accessibility Interface"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:ieee-standards",
+        "label": "IEEE Standards"
+      },
+      {
+        "@id": "urn:ngm:class:iso-standards",
+        "label": "ISO Standards"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:visual-feedback",
+        "label": "Visual Feedback"
+      },
+      {
+        "@id": "urn:ngm:class:audio-feedback",
+        "label": "Audio Feedback"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:robotic-system",
+        "label": "Robotic System"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:haptics",
+        "label": "Haptics"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse-domain",
+        "label": "Metaverse Domain"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
       }
     ]
   },
-  "quality": 0.4,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:haptic-technology",
+      "label": "Haptic Technology"
+    },
+    {
+      "@id": "urn:ngm:class:tactile-feedback",
+      "label": "Tactile Feedback"
+    }
+  ],
+  "quality": 0.65,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

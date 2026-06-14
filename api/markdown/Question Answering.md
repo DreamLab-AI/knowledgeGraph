@@ -70,38 +70,64 @@ public:: true
   "@id": "urn:ngm:class:question-answering",
   "@type": "Class",
   "label": "Question Answering",
-  "definition": "Question Answering (QA) is the NLP task of automatically generating accurate answers to natural language questions posed by users, either by extracting answers from text passages (extractive QA) or generating free-form responses (generative QA).",
+  "definition": "Question Answering (QA) is the NLP task of automatically generating accurate answers to natural language questions posed by users, either by extracting answers from text passages (extractive QA) or generating free-form responses (generative QA). QA systems employ reading comprehension models, retrieval-augmented generation, and knowledge reasoning to power applications including search engines, virtual assistants, and customer support.",
   "domain": "artificial-intelligence",
   "maturity": "emerging",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:ai-application",
-      "label": "AI Application"
-    },
-    {
-      "@id": "urn:ngm:class:machine-learning-discipline",
-      "label": "Machine Learning"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:natural-language-processing",
+    "label": "Natural Language Processing"
+  },
   "relations": {
     "requires": [
       {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
-      {"@id": "urn:ngm:class:information-retrieval", "label": "Information Retrieval"}
+      {"@id": "urn:ngm:class:information-retrieval", "label": "Information Retrieval"},
+      {"@id": "urn:ngm:class:reading-comprehension", "label": "Reading Comprehension"},
+      {"@id": "urn:ngm:class:language-model", "label": "Language Model"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:dialogue-system", "label": "Dialogue System"},
-      {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"}
+      {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"},
+      {"@id": "urn:ngm:class:virtual-assistant", "label": "Virtual Assistant"},
+      {"@id": "urn:ngm:class:semantic-search", "label": "Semantic Search"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:transformer", "label": "Transformer"},
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"}
+      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
+      {"@id": "urn:ngm:class:embedding", "label": "Embedding"},
+      {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:extractive-qa", "label": "Extractive QA"},
+      {"@id": "urn:ngm:class:generative-qa", "label": "Generative QA"},
+      {"@id": "urn:ngm:class:open-domain-qa", "label": "Open-Domain QA"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:text-corpus", "label": "Text Corpus"},
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:document-retrieval", "label": "Document Retrieval"},
+      {"@id": "urn:ngm:class:text-summarization", "label": "Text Summarization"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:fact-verification", "label": "Fact Verification"},
+      {"@id": "urn:ngm:class:multi-hop-reasoning", "label": "Multi-Hop Reasoning"},
+      {"@id": "urn:ngm:class:visual-question-answering", "label": "Visual Question Answering"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:knowledge-management", "label": "Knowledge Management"},
+      {"@id": "urn:ngm:class:enterprise-search", "label": "Enterprise Search"}
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {"@id": "urn:ngm:class:qa-system", "label": "QA System"},
+    {"@id": "urn:ngm:class:automated-question-answering", "label": "Automated Question Answering"}
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

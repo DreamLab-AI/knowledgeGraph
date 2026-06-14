@@ -69,46 +69,64 @@ public:: true
   "definition": "Mining is the proof-of-work block-creation process in which participating nodes compete to solve a cryptographic hash puzzle, with the winner appending the next block to the chain and receiving a block reward. Mining provides Sybil resistance, ensures probabilistic finality, and anchors chain security to real-world energy expenditure.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:bc-protocol-and-consensus",
-      "label": "Protocol and Consensus"
-    },
-    {
-      "@id": "urn:ngm:class:blockchain-entity",
-      "label": "Blockchain Entity"
-    },
-    {
-      "@id": "urn:ngm:class:consensus-protocol",
-      "label": "ConsensusProtocol"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:consensus-protocol",
+    "label": "ConsensusProtocol"
+  },
   "relations": {
     "hasPart": [
       {"@id": "urn:ngm:class:mining-pool", "label": "Mining Pool"},
       {"@id": "urn:ngm:class:mining-reward", "label": "Mining Reward"},
-      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-mining", "label": "Bitcoin Mining"},
       {"@id": "urn:ngm:class:nonce", "label": "Nonce"},
       {"@id": "urn:ngm:class:block-reward", "label": "Block Reward"},
-      {"@id": "urn:ngm:class:network-hash-rate", "label": "Network Hash Rate"}
+      {"@id": "urn:ngm:class:network-hash-rate", "label": "Network Hash Rate"},
+      {"@id": "urn:ngm:class:mining-difficulty", "label": "Mining Difficulty"},
+      {"@id": "urn:ngm:class:coinbase-transaction", "label": "Coinbase Transaction"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"}
+      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"},
+      {"@id": "urn:ngm:class:sha-256", "label": "SHA-256"},
+      {"@id": "urn:ngm:class:application-specific-integrated-circuit", "label": "Application Specific Integrated Circuit"},
+      {"@id": "urn:ngm:class:merkle-tree", "label": "Merkle Tree"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:peer-to-peer-network", "label": "Peer To Peer Network"},
+      {"@id": "urn:ngm:class:blockchain-energy-consumption", "label": "Blockchain Energy Consumption"},
+      {"@id": "urn:ngm:class:block-header", "label": "Block Header"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:nakamoto-consensus", "label": "Nakamoto Consensus"},
+      {"@id": "urn:ngm:class:double-spend-prevention", "label": "Double Spend Prevention"},
+      {"@id": "urn:ngm:class:sybil-resistance", "label": "Sybil Resistance"},
+      {"@id": "urn:ngm:class:immutability", "label": "Immutability"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"},
+      {"@id": "urn:ngm:class:distributed-ledger", "label": "Distributed Ledger"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:blockchain-energy-consumption", "label": "Blockchain Energy Consumption"},
-      {"@id": "urn:ngm:class:nakamoto-consensus", "label": "Nakamoto Consensus"},
-      {"@id": "urn:ngm:class:probabilistic-finality", "label": "Probabilistic Finality"}
+      {"@id": "urn:ngm:class:probabilistic-finality", "label": "Probabilistic Finality"},
+      {"@id": "urn:ngm:class:transaction-fee", "label": "Transaction Fee"}
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof of Stake"}
+      {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof of Stake"},
+      {"@id": "urn:ngm:class:proof-of-authority", "label": "Proof of Authority"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:renewable-energy", "label": "Renewable Energy"},
+      {"@id": "urn:ngm:class:carbon-footprint", "label": "Carbon Footprint"}
     ]
   },
-  "quality": 0.8,
+  "sameAs": [
+    {"@id": "urn:ngm:class:proof-of-work-mining", "label": "Proof Of Work Mining"},
+    {"@id": "urn:ngm:class:bitcoin-mining", "label": "Bitcoin Mining"},
+    {"@id": "urn:ngm:class:cryptocurrency-mining", "label": "Cryptocurrency Mining"}
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

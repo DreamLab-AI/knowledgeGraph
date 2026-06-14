@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.7,
+  "qualityScore": 0.72,
   "maturity": "emerging",
   "relationships": {
     "hasPart": [
@@ -28,6 +28,18 @@
       {
         "id": "urn:ngm:class:confusion-matrix",
         "label": "Confusion Matrix"
+      },
+      {
+        "id": "urn:ngm:class:precision",
+        "label": "Precision"
+      },
+      {
+        "id": "urn:ngm:class:recall",
+        "label": "Recall"
+      },
+      {
+        "id": "urn:ngm:class:roc-curve",
+        "label": "ROC Curve"
       }
     ],
     "requires": [
@@ -38,17 +50,70 @@
       {
         "id": "urn:ngm:class:model-training",
         "label": "Model Training"
+      },
+      {
+        "id": "urn:ngm:class:test-dataset",
+        "label": "Test Dataset"
+      },
+      {
+        "id": "urn:ngm:class:evaluation-metric",
+        "label": "Evaluation Metric"
       }
     ],
-    "enables": [],
-    "dependsOn": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:model-selection",
+        "label": "Model Selection"
+      },
+      {
+        "id": "urn:ngm:class:hyperparameter-tuning",
+        "label": "Hyperparameter Tuning"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "id": "urn:ngm:class:data-drift",
+        "label": "Data Drift"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:overfitting",
+        "label": "Overfitting"
+      },
+      {
+        "id": "urn:ngm:class:underfitting",
+        "label": "Underfitting"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:model-card",
+        "label": "Model Card"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      },
+      {
+        "id": "urn:ngm:class:ai-lifecycle",
+        "label": "AI Lifecycle"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:fairness",
@@ -61,6 +126,14 @@
       {
         "id": "urn:ngm:class:ai-monitoring",
         "label": "AI Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:calibration",
+        "label": "Calibration"
+      },
+      {
+        "id": "urn:ngm:class:explainability",
+        "label": "Explainability"
       }
     ]
   },

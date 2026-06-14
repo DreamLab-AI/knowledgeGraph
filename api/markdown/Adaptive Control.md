@@ -107,19 +107,13 @@ alias:: AdaptiveControl, RB-1004-adaptive-control
   "@id": "urn:ngm:class:adaptive-control",
   "@type": "Class",
   "label": "Adaptive Control",
-  "definition": "A control strategy that automatically adjusts its parameters in real-time to maintain desired performance as system dynamics change or uncertainties are encountered. The controller learns and adapts to variations in the system or environment.",
+  "definition": "A control strategy that automatically adjusts its parameters in real-time to maintain desired performance as system dynamics change or uncertainties are encountered. The controller learns and adapts to variations in the system or environment, using mechanisms such as system identification, parameter estimation, and online learning to compensate for model uncertainty and external disturbances.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:robo-actuation-and-control",
-      "label": "Actuation and Control"
-    },
-    {
-      "@id": "urn:ngm:class:closed-loop-control",
-      "label": "RB-1002-closed-loop-control"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:closed-loop-control",
+    "label": "Closed-Loop Control"
+  },
   "relations": {
     "requires": [
       {
@@ -129,6 +123,14 @@ alias:: AdaptiveControl, RB-1004-adaptive-control
       {
         "@id": "urn:ngm:class:system-identification",
         "label": "System Identification"
+      },
+      {
+        "@id": "urn:ngm:class:persistent-excitation",
+        "label": "Persistent Excitation"
+      },
+      {
+        "@id": "urn:ngm:class:stability-analysis",
+        "label": "Stability Analysis"
       }
     ],
     "enables": [
@@ -139,6 +141,14 @@ alias:: AdaptiveControl, RB-1004-adaptive-control
       {
         "@id": "urn:ngm:class:robust-control",
         "label": "Robust Control"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-systems",
+        "label": "Autonomous Systems"
+      },
+      {
+        "@id": "urn:ngm:class:fault-tolerant-control",
+        "label": "Fault-Tolerant Control"
       }
     ],
     "uses": [
@@ -147,16 +157,106 @@ alias:: AdaptiveControl, RB-1004-adaptive-control
         "label": "Parameter Estimation"
       },
       {
-        "@id": "urn:ngm:class:system-identification",
-        "label": "System Identification"
+        "@id": "urn:ngm:class:lyapunov-stability-theory",
+        "label": "Lyapunov Stability Theory"
+      },
+      {
+        "@id": "urn:ngm:class:recursive-least-squares",
+        "label": "Recursive Least Squares"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:model-reference-adaptive-control",
+        "label": "Model Reference Adaptive Control"
+      },
+      {
+        "@id": "urn:ngm:class:self-tuning-regulator",
+        "label": "Self-Tuning Regulator"
+      },
+      {
+        "@id": "urn:ngm:class:gain-scheduling",
+        "label": "Gain Scheduling"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:control-theory",
+        "label": "Control Theory"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:feedback-control",
+        "label": "Feedback Control"
+      },
+      {
+        "@id": "urn:ngm:class:state-estimation",
+        "label": "State Estimation"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:online-learning",
+        "label": "Online Learning"
+      },
+      {
+        "@id": "urn:ngm:class:optimal-control",
+        "label": "Optimal Control"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:robust-control",
+        "label": "Robust Control"
+      },
+      {
+        "@id": "urn:ngm:class:pid-control",
+        "label": "PID Control"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:adaptive-systems",
+        "label": "Adaptive Systems"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:adaptive-controller",
+      "label": "Adaptive Controller"
+    },
+    {
+      "@id": "urn:ngm:class:self-adapting-control",
+      "label": "Self-Adapting Control"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

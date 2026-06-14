@@ -66,9 +66,13 @@ public:: true
   "@id": "urn:ngm:class:gossip-protocol",
   "@type": "Class",
   "label": "Gossip Protocol",
-  "definition": "Information propagation mod within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
-  "domain": "blockchain",
+  "definition": "A peer-to-peer communication protocol in which nodes periodically exchange state information with randomly selected neighbours, enabling eventual consistency and fault-tolerant information dissemination across large-scale distributed systems without centralised coordination.",
+  "domain": "distributed-systems",
   "maturity": "established",
+  "subClassOf": {
+    "@id": "urn:ngm:class:peer-to-peer-protocol",
+    "label": "Peer-to-Peer Protocol"
+  },
   "relations": {
     "implements": [
       {
@@ -78,21 +82,137 @@ public:: true
       {
         "@id": "urn:ngm:class:network-component",
         "label": "NetworkComponent"
+      },
+      {
+        "@id": "urn:ngm:class:eventual-consistency",
+        "label": "Eventual Consistency"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:anti-entropy",
+        "label": "Anti-Entropy"
+      },
+      {
+        "@id": "urn:ngm:class:rumour-mongering",
+        "label": "Rumour Mongering"
+      },
+      {
+        "@id": "urn:ngm:class:push-pull-synchronisation",
+        "label": "Push-Pull Synchronisation"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "@id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:peer-discovery",
+        "label": "Peer Discovery"
+      },
+      {
+        "@id": "urn:ngm:class:node-membership-protocol",
+        "label": "Node Membership Protocol"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-consensus",
+        "label": "Decentralised Consensus"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-transaction-propagation",
+        "label": "Blockchain Transaction Propagation"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:network-component",
+        "label": "NetworkComponent"
+      },
+      {
+        "@id": "urn:ngm:class:probabilistic-broadcast",
+        "label": "Probabilistic Broadcast"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:epidemic-algorithm",
+        "label": "Epidemic Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:random-graph-theory",
+        "label": "Random Graph Theory"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:distributed-hash-table",
+        "label": "Distributed Hash Table"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:flooding-protocol",
+        "label": "Flooding Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:centralised-message-broker",
+        "label": "Centralised Message Broker"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:security-layer",
+        "label": "SecurityLayer"
+      },
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:apache-cassandra",
+        "label": "Apache Cassandra"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin-p2p-network",
+        "label": "Bitcoin P2P Network"
       }
     ]
   },
-  "quality": 0.5,
-  "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
-  },
-  "subClassOf": [
+  "sameAs": [
     {
-      "@id": "urn:ngm:class:bc-protocol-and-consensus",
-      "label": "Protocol and Consensus"
+      "@id": "urn:ngm:class:epidemic-protocol",
+      "label": "Epidemic Protocol"
+    },
+    {
+      "@id": "urn:ngm:class:gossip-dissemination-protocol",
+      "label": "Gossip Dissemination Protocol"
     }
-  ]
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

@@ -86,19 +86,13 @@ public:: true
   "@id": "urn:ngm:class:impedance-control",
   "@type": "Class",
   "label": "Impedance Control",
-  "definition": "Impedance Control - A Hybrid Control strategy that dynamically modulates a robot's mechanical compliance (stiffness and damping) to establish compliant contact with objects or humans, enabling safe interaction and force regulation without explicit force feedback in some configurations.",
+  "definition": "A robot control strategy that dynamically modulates mechanical compliance (stiffness, damping, and inertia) to regulate the dynamic relationship between force and motion at the robot end-effector, enabling compliant and safe interaction with objects, surfaces, and humans without requiring explicit force feedback in all configurations.",
   "domain": "robotics",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:robo-actuation-and-control",
-      "label": "Actuation and Control"
-    },
-    {
-      "@id": "urn:ngm:class:control-system",
-      "label": "Control Systems"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:compliant-motion-control",
+    "label": "Compliant Motion Control"
+  },
   "relations": {
     "requires": [
       {
@@ -112,6 +106,14 @@ public:: true
       {
         "@id": "urn:ngm:class:virtual-dynamics-model",
         "label": "Virtual Dynamics Model"
+      },
+      {
+        "@id": "urn:ngm:class:robot-dynamics",
+        "label": "Robot Dynamics"
+      },
+      {
+        "@id": "urn:ngm:class:joint-torque-sensing",
+        "label": "Joint Torque Sensing"
       }
     ],
     "enables": [
@@ -126,24 +128,132 @@ public:: true
       {
         "@id": "urn:ngm:class:soft-contact-tasks",
         "label": "Soft Contact Tasks"
+      },
+      {
+        "@id": "urn:ngm:class:human-robot-collaboration",
+        "label": "Human-Robot Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:physical-human-robot-interaction",
+        "label": "Physical Human-Robot Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:robot-assembly-tasks",
+        "label": "Robot Assembly Tasks"
       }
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:compliant-motion-control",
-        "label": "Compliant Motion Control"
-      },
-      {
         "@id": "urn:ngm:class:force-regulation",
         "label": "Force Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:interaction-control",
+        "label": "Interaction Control"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:position-control-loop",
+        "label": "Position Control Loop"
+      },
+      {
+        "@id": "urn:ngm:class:force-control-loop",
+        "label": "Force Control Loop"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:mechanical-impedance-model",
+        "label": "Mechanical Impedance Model"
+      },
+      {
+        "@id": "urn:ngm:class:mass-spring-damper-system",
+        "label": "Mass-Spring-Damper System"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:end-effector-kinematics",
+        "label": "End-Effector Kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:force-torque-sensor",
+        "label": "Force-Torque Sensor"
+      },
+      {
+        "@id": "urn:ngm:class:jacobian-matrix",
+        "label": "Jacobian Matrix"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:admittance-control",
+        "label": "Admittance Control"
+      },
+      {
+        "@id": "urn:ngm:class:position-control",
+        "label": "Position Control"
+      },
+      {
+        "@id": "urn:ngm:class:hybrid-force-position-control",
+        "label": "Hybrid Force-Position Control"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:passivity-based-control",
+        "label": "Passivity-Based Control"
+      },
+      {
+        "@id": "urn:ngm:class:variable-stiffness-actuator",
+        "label": "Variable Stiffness Actuator"
+      },
+      {
+        "@id": "urn:ngm:class:hybrid-control",
+        "label": "Hybrid Control"
+      },
+      {
+        "@id": "urn:ngm:class:rehabilitation-robotics",
+        "label": "Rehabilitation Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:surgical-robotics",
+        "label": "Surgical Robotics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:reinforcement-learning-control",
+        "label": "Reinforcement Learning Control"
+      },
+      {
+        "@id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:iso-8373",
+        "label": "ISO 8373 Robotics Vocabulary"
       }
     ]
   },
-  "quality": 0.66,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:mechanical-impedance-control",
+      "label": "Mechanical Impedance Control"
+    },
+    {
+      "@id": "urn:ngm:class:hogan-impedance-control",
+      "label": "Hogan Impedance Control"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:teleoperation",
   "domain": "robotics",
-  "definition": "Teleoperation is remote control of AutonomousRobot|robots and physical systems by human operators in real-time, enabling task execution in hazardous, distant, or inaccessible environments whilst maintaining human supervision and decision-making authority.",
+  "definition": "Teleoperation is the remote control of robots and physical systems by human operators in real-time, enabling task execution in hazardous, distant, or inaccessible environments whilst maintaining human supervision and decision-making authority.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-human-robot-interaction",
@@ -13,10 +13,23 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.4,
+  "qualityScore": 0.7,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:haptic-interface",
+        "label": "Haptic Interface"
+      },
+      {
+        "id": "urn:ngm:class:bilateral-control",
+        "label": "Bilateral Control"
+      },
+      {
+        "id": "urn:ngm:class:control-loop",
+        "label": "Control Loop"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:haptic-feedback",
@@ -25,18 +38,69 @@
       {
         "id": "urn:ngm:class:autonomous-robot",
         "label": "Autonomous Robot"
+      },
+      {
+        "id": "urn:ngm:class:low-latency-network",
+        "label": "Low-Latency Network"
+      },
+      {
+        "id": "urn:ngm:class:encrypted-channel",
+        "label": "Encrypted Channel"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:telepresence",
         "label": "Telepresence"
+      },
+      {
+        "id": "urn:ngm:class:surgical-robotics",
+        "label": "Surgical Robotics"
+      },
+      {
+        "id": "urn:ngm:class:rescue-operations",
+        "label": "Rescue Operations"
+      },
+      {
+        "id": "urn:ngm:class:deep-sea-exploration",
+        "label": "Deep Sea Exploration"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:5g",
+        "label": "5G"
+      },
+      {
+        "id": "urn:ngm:class:shared-autonomy",
+        "label": "Shared Autonomy"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      },
+      {
+        "id": "urn:ngm:class:remote-control",
+        "label": "Remote Control"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:immersive-control",
+        "label": "Immersive Control"
+      },
+      {
+        "id": "urn:ngm:class:metaverse-domain",
+        "label": "Metaverse Domain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:virtual-reality",
@@ -54,7 +118,16 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:operator-workload",
+        "label": "Operator Workload"
+      },
+      {
+        "id": "urn:ngm:class:situational-awareness",
+        "label": "Situational Awareness"
+      }
+    ]
   },
   "wikilinks": [
     {

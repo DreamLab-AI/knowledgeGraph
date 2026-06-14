@@ -90,31 +90,70 @@ alias:: ExplainableAI
   "definition": "AI systems designed to provide clear, understandable explanations of their decision-making processes, enabling stakeholders to comprehend how and why specific outputs are generated.",
   "domain": "artificial-intelligence",
   "maturity": "emerging",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:ai-governance-and-ethics",
-      "label": "AI Governance and Ethics"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:ai-governance-and-ethics",
+    "label": "AI Governance and Ethics"
+  },
   "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:post-hoc-explanation", "label": "Post Hoc Explanation"},
+      {"@id": "urn:ngm:class:intrinsic-interpretability", "label": "Intrinsic Interpretability"},
+      {"@id": "urn:ngm:class:feature-attribution", "label": "Feature Attribution"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"},
+      {"@id": "urn:ngm:class:trustworthy-ai", "label": "Trustworthy AI"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:model-interpretability", "label": "Model Interpretability"},
+      {"@id": "urn:ngm:class:algorithmic-transparency", "label": "Algorithmic Transparency"}
+    ],
     "enables": [
       {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
-      {"@id": "urn:ngm:class:bias-detection-methods", "label": "Bias Detection Methods"}
+      {"@id": "urn:ngm:class:bias-detection-methods", "label": "Bias Detection Methods"},
+      {"@id": "urn:ngm:class:human-ai-collaboration", "label": "Human-AI Collaboration"},
+      {"@id": "urn:ngm:class:ai-auditing", "label": "AI Auditing"}
     ],
-    "relatedTo": [
-      {"@id": "urn:ngm:class:model-interpretability", "label": "Model Interpretability"},
-      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"}
+    "dependsOn": [
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:shap", "label": "SHAP"},
+      {"@id": "urn:ngm:class:lime", "label": "LIME"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:causal-inference", "label": "Causal Inference"}
     ],
     "supports": [
       {"@id": "urn:ngm:class:ai-governance-framework", "label": "AI Governance Framework"},
-      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}
+      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"},
+      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:ieee-p2976", "label": "IEEE P2976 (XAI)"},
+      {"@id": "urn:ngm:class:iso-iec-12792", "label": "ISO/IEC 12792"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:black-box-model", "label": "Black-Box Model"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:healthcare-ai", "label": "Healthcare AI"},
+      {"@id": "urn:ngm:class:gdpr-compliance", "label": "GDPR Compliance"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:interpretable-ai", "label": "Interpretable AI"},
+      {"@id": "urn:ngm:class:xai-methods", "label": "XAI Methods"}
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {"@id": "urn:ngm:class:xai", "label": "XAI"},
+    {"@id": "urn:ngm:class:interpretable-machine-learning", "label": "Interpretable Machine Learning"}
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

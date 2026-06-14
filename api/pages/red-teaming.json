@@ -4,19 +4,36 @@
   "slug": "red-teaming",
   "public": true,
   "classIri": "urn:ngm:class:red-teaming",
-  "domain": "spatial-computing",
-  "definition": "The practice of deliberately attempting to elicit harmful, biased, or undesired outputs from AI systems to identify vulnerabilities and weaknesses.",
+  "domain": "security",
+  "definition": "The practice of deliberately attempting to elicit harmful, biased, or undesired outputs from AI systems to identify vulnerabilities and weaknesses. Red teaming involves structured adversarial testing where human evaluators or automated systems probe for failure modes across security, ethics, and alignment dimensions, informing safety improvements and deployment decisions.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:sc-governance-and-safety",
-      "label": "Governance and Safety"
+      "id": "urn:ngm:class:adversarial-testing",
+      "label": "Adversarial Testing"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.72,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:prompt-injection",
+        "label": "Prompt Injection"
+      },
+      {
+        "id": "urn:ngm:class:jailbreak-attack",
+        "label": "Jailbreak Attack"
+      },
+      {
+        "id": "urn:ngm:class:threat-modelling",
+        "label": "Threat Modelling"
+      },
+      {
+        "id": "urn:ngm:class:vulnerability-assessment",
+        "label": "Vulnerability Assessment"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:large-language-models",
@@ -25,6 +42,10 @@
       {
         "id": "urn:ngm:class:adversarial-testing",
         "label": "Adversarial Testing"
+      },
+      {
+        "id": "urn:ngm:class:safety-policy",
+        "label": "Safety Policy"
       }
     ],
     "enables": [
@@ -35,13 +56,57 @@
       {
         "id": "urn:ngm:class:safety-fine-tuning",
         "label": "Safety Fine Tuning"
+      },
+      {
+        "id": "urn:ngm:class:model-hardening",
+        "label": "Model Hardening"
+      },
+      {
+        "id": "urn:ngm:class:responsible-ai-deployment",
+        "label": "Responsible AI Deployment"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:attack-simulation",
+        "label": "Attack Simulation"
+      },
+      {
+        "id": "urn:ngm:class:human-evaluation",
+        "label": "Human Evaluation"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:blue-team",
+        "label": "Blue Team"
+      },
+      {
+        "id": "urn:ngm:class:penetration-testing",
+        "label": "Penetration Testing"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:machine-learning-security",
+        "label": "Machine Learning Security"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:mitre-attck",
+        "label": "MITRE ATT&CK"
+      },
+      {
+        "id": "urn:ngm:class:nist-cybersecurity-framework",
+        "label": "NIST Cybersecurity Framework"
+      }
+    ],
     "supports": [
       {
         "id": "urn:ngm:class:ai-alignment",
@@ -50,11 +115,33 @@
       {
         "id": "urn:ngm:class:ai-governance",
         "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:trustworthy-ai",
+        "label": "Trustworthy AI"
       }
     ],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:ai-safety-evaluation",
+        "label": "AI Safety Evaluation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
+      },
+      {
+        "id": "urn:ngm:class:bias-detection",
+        "label": "Bias Detection"
+      },
+      {
+        "id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -4,19 +4,32 @@
   "slug": "supervised-learning",
   "public": true,
   "classIri": "urn:ngm:class:supervised-learning",
-  "domain": "artificial-intelligence",
-  "definition": "Supervised Learning is the machine learning paradigm where models learn from labeled training data to predict outputs for new, unseen inputs. The learning algorithm finds patterns mapping input features to target labels, guided by a loss function measuring prediction errors.",
+  "domain": "machine-learning",
+  "definition": "Supervised Learning is the machine learning paradigm where models learn from labeled training data to predict outputs for new, unseen inputs. The learning algorithm finds patterns mapping input features to target labels, guided by a loss function measuring prediction errors. Key tasks include classification (discrete labels) and regression (continuous values), spanning linear models, decision trees, support vector machines, neural networks, and ensemble methods.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique"
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning"
     }
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:classification",
+        "label": "Classification"
+      },
+      {
+        "id": "urn:ngm:class:regression",
+        "label": "Regression"
+      },
+      {
+        "id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:training-data",
@@ -25,16 +38,49 @@
       {
         "id": "urn:ngm:class:loss-function",
         "label": "Loss Function"
+      },
+      {
+        "id": "urn:ngm:class:labeled-dataset",
+        "label": "Labeled Dataset"
+      },
+      {
+        "id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:predictive-modelling",
+        "label": "Predictive Modelling"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
       }
     ],
     "dependsOn": [],
-    "implements": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:decision-tree",
+        "label": "Decision Tree"
+      },
+      {
+        "id": "urn:ngm:class:support-vector-machine",
+        "label": "Support Vector Machine"
+      }
+    ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:unsupervised-learning",
@@ -43,9 +89,22 @@
       {
         "id": "urn:ngm:class:reinforcement-learning",
         "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:semi-supervised-learning",
+        "label": "Semi-Supervised Learning"
       }
     ],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:backpropagation",
@@ -54,12 +113,34 @@
       {
         "id": "urn:ngm:class:gradient-descent",
         "label": "Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:cross-validation",
+        "label": "Cross-Validation"
+      },
+      {
+        "id": "urn:ngm:class:regularisation",
+        "label": "Regularisation"
       }
     ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:overfitting",
+        "label": "Overfitting"
+      },
+      {
+        "id": "urn:ngm:class:bias-variance-tradeoff",
+        "label": "Bias-Variance Tradeoff"
+      }
+    ]
   },
   "wikilinks": [
     {

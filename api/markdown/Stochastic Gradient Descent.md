@@ -43,32 +43,71 @@ public:: true
   "@type": "Class",
   "label": "Stochastic Gradient Descent",
   "definition": "Stochastic Gradient Descent (SGD) is an iterative optimisation algorithm that updates model parameters by computing gradients from randomly sampled mini-batches rather than the full training dataset, trading gradient accuracy for computational efficiency and the ability to escape shallow local minima. SGD and its adaptive variants (Adam, RMSprop, AdaGrad) are the primary training algorithms for deep neural networks across vision, language, and reinforcement learning domains.",
-  "domain": "artificial-intelligence",
+  "domain": "machine-learning",
   "maturity": "emerging",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:sc-content-and-assets",
-      "label": "Content and Assets"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:gradient-descent",
+    "label": "Gradient Descent"
+  },
   "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:mini-batch", "label": "Mini-Batch"},
+      {"@id": "urn:ngm:class:learning-rate-schedule", "label": "Learning Rate Schedule"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:model-training", "label": "Model Training"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:loss-function", "label": "Loss Function"},
+      {"@id": "urn:ngm:class:learning-rate", "label": "Learning Rate"},
+      {"@id": "urn:ngm:class:backpropagation", "label": "Backpropagation"}
+    ],
     "enables": [
       {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"}
+      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
+      {"@id": "urn:ngm:class:large-language-model", "label": "Large Language Model"},
+      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:automatic-differentiation", "label": "Automatic Differentiation"},
+      {"@id": "urn:ngm:class:computational-graph", "label": "Computational Graph"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:first-order-optimisation", "label": "First-Order Optimisation"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"}
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:gpu-accelerated-computing", "label": "GPU Accelerated Computing"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
+      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:batch-gradient-descent", "label": "Batch Gradient Descent"},
+      {"@id": "urn:ngm:class:second-order-optimisation", "label": "Second-Order Optimisation"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:distributed-computing", "label": "Distributed Computing"},
+      {"@id": "urn:ngm:class:scientific-computing", "label": "Scientific Computing"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
-      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"}
+      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"},
+      {"@id": "urn:ngm:class:hyperparameter-optimisation", "label": "Hyperparameter Optimisation"},
+      {"@id": "urn:ngm:class:adam-optimiser", "label": "Adam Optimiser"}
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {"@id": "urn:ngm:class:sgd", "label": "SGD"},
+    {"@id": "urn:ngm:class:mini-batch-gradient-descent", "label": "Mini-Batch Gradient Descent"},
+    {"@id": "urn:ngm:class:online-gradient-descent", "label": "Online Gradient Descent"}
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

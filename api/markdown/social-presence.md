@@ -8,6 +8,20 @@
 
 - ### Relationships
   - is-subclass-of:: [[Presence]]
+  - enables:: [[Virtual Collaboration]]
+  - enables:: [[Trust Building]]
+  - enables:: [[Group Cohesion]]
+  - uses:: [[Spatial Audio]]
+  - uses:: [[Video Conferencing]]
+  - uses:: [[WebRTC]]
+  - requires:: [[Real-Time Communication]]
+  - dependsOn:: [[Media Richness]]
+  - dependsOn:: [[Nonverbal Cues]]
+  - relatedTo:: [[Avatar]]
+  - relatedTo:: [[Co-presence]]
+  - contrastsWith:: [[Asynchronous Communication]]
+  - bridgesTo:: [[Virtual Reality]]
+  - bridgesTo:: [[Metaverse Social Layer]]
 
 - ### Content
   Social Presence — content pending enrichment.

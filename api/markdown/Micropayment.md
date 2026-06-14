@@ -106,19 +106,13 @@ public:: true
   "@id": "urn:ngm:class:micropayment",
   "@type": "Class",
   "label": "Micropayment",
-  "definition": "Very small electronic payment processed automatically within digital environments for low-value transactions.",
-  "domain": "blockchain",
+  "definition": "A very small electronic payment, typically fractions of a cent to a few dollars, processed automatically within digital environments to enable low-value, high-frequency transactions that are economically infeasible with traditional payment infrastructure.",
+  "domain": "finance",
   "maturity": "established",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:bc-defi-and-economics",
-      "label": "DeFi and Economics"
-    },
-    {
-      "@id": "urn:ngm:class:digital-wallet",
-      "label": "Digital Wallet"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:digital-payment-system",
+    "label": "Digital Payment System"
+  },
   "relations": {
     "hasPart": [
       {
@@ -138,18 +132,28 @@ public:: true
         "label": "Transaction Validation"
       }
     ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:digital-payment-system",
+        "label": "Digital Payment System"
+      },
+      {
+        "@id": "urn:ngm:class:payment-network",
+        "label": "Payment Network"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:cryptographic-authentication",
         "label": "Cryptographic Authentication"
       },
       {
-        "@id": "urn:ngm:class:payment-network",
-        "label": "Payment Network"
-      },
-      {
         "@id": "urn:ngm:class:digital-wallet",
         "label": "Digital Wallet"
+      },
+      {
+        "@id": "urn:ngm:class:payment-channel",
+        "label": "Payment Channel"
       }
     ],
     "enables": [
@@ -164,25 +168,91 @@ public:: true
       {
         "@id": "urn:ngm:class:pay-per-use-models",
         "label": "Pay-Per-Use Models"
+      },
+      {
+        "@id": "urn:ngm:class:content-monetisation",
+        "label": "Content Monetisation"
       }
     ],
-    "partOf": [
+    "dependsOn": [
       {
-        "@id": "urn:ngm:class:digital-payment-system",
-        "label": "Digital Payment System"
+        "@id": "urn:ngm:class:blockchain-infrastructure",
+        "label": "Blockchain Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:digital-currency",
+        "label": "Digital Currency"
+      },
+      {
+        "@id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:w3c-payment-request-api",
+        "label": "W3C Payment Request API"
+      },
+      {
+        "@id": "urn:ngm:class:iso-20022",
+        "label": "ISO 20022"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:traditional-banking-transfer",
+        "label": "Traditional Banking Transfer"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:virtual-economy-domain",
+        "label": "Virtual Economy Domain"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "@id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:tokenisation",
+        "label": "Tokenisation"
+      },
+      {
+        "@id": "urn:ngm:class:financial-inclusion",
+        "label": "Financial Inclusion"
       }
     ]
   },
-  "quality": 0.35,
+  "quality": 0.70,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   },
   "sameAs": [
     {
       "@id": "urn:ngm:class:micropayments",
       "label": "Micropayments"
+    },
+    {
+      "@id": "urn:ngm:class:micro-payment",
+      "label": "Micro-Payment"
+    },
+    {
+      "@id": "urn:ngm:class:nano-payment",
+      "label": "Nano-Payment"
     }
   ]
 }

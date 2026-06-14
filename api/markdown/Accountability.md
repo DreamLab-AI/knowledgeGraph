@@ -93,16 +93,10 @@ public:: true
   "definition": "The assignment of clear responsibilities for AI system development, deployment, and outcomes, coupled with mechanisms for oversight, redress, and remediation, ensuring that actors can be held answerable for system impacts and failures.",
   "domain": "artificial-intelligence",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:ai-governance-and-ethics",
-      "label": "AI Governance and Ethics"
-    },
-    {
-      "@id": "urn:ngm:class:ai-governance",
-      "label": "AI Governance"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:ai-governance",
+    "label": "AI Governance"
+  },
   "relations": {
     "requires": [
       {
@@ -112,6 +106,14 @@ public:: true
       {
         "@id": "urn:ngm:class:transparency-ai-0062",
         "label": "Transparency (AI-0062)"
+      },
+      {
+        "@id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      },
+      {
+        "@id": "urn:ngm:class:human-oversight",
+        "label": "Human Oversight"
       }
     ],
     "enables": [
@@ -126,14 +128,104 @@ public:: true
       {
         "@id": "urn:ngm:class:trust",
         "label": "Trust"
+      },
+      {
+        "@id": "urn:ngm:class:redress-mechanism",
+        "label": "Redress Mechanism"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:fairness",
+        "label": "Fairness"
+      },
+      {
+        "@id": "urn:ngm:class:safety",
+        "label": "Safety"
+      },
+      {
+        "@id": "urn:ngm:class:ai-trustworthiness",
+        "label": "AI Trustworthiness"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      },
+      {
+        "@id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "@id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI RMF"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:iso-iec-23894-2023",
+        "label": "ISO/IEC 23894:2023"
+      },
+      {
+        "@id": "urn:ngm:class:iso-iec-38500-2024",
+        "label": "ISO/IEC 38500:2024"
+      },
+      {
+        "@id": "urn:ngm:class:oecd-ai-principles",
+        "label": "OECD AI Principles"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:opacity",
+        "label": "Opacity"
+      },
+      {
+        "@id": "urn:ngm:class:diffused-responsibility",
+        "label": "Diffused Responsibility"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ai-audit",
+        "label": "AI Audit"
+      },
+      {
+        "@id": "urn:ngm:class:governance-framework",
+        "label": "Governance Framework"
+      },
+      {
+        "@id": "urn:ngm:class:algorithmic-bias",
+        "label": "Algorithmic Bias"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:answerability",
+      "label": "Answerability"
+    },
+    {
+      "@id": "urn:ngm:class:responsible-ai",
+      "label": "Responsible AI"
+    }
+  ],
+  "quality": 0.70,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

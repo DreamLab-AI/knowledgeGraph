@@ -70,14 +70,34 @@ public:: true
   "@id": "urn:ngm:class:governance-framework",
   "@type": "Class",
   "label": "Governance Framework",
-  "definition": "A governance framework is a structured system of policies, processes, procedures, and controls that organisations use to align their technology resources and operations with business objectives.",
-  "domain": "artificial-intelligence",
+  "definition": "A governance framework is a structured system of policies, processes, procedures, and controls that organisations use to align their technology resources and operations with business objectives, providing the foundation for strategic decision-making, risk management, resource optimisation, performance measurement, and compliance.",
+  "domain": "governance",
   "maturity": "emerging",
+  "subClassOf": {
+    "@id": "urn:ngm:class:organisational-framework",
+    "label": "Organisational Framework"
+  },
   "relations": {
     "hasPart": [
       {
         "@id": "urn:ngm:class:organisational-framework",
         "label": "Organisational Framework"
+      },
+      {
+        "@id": "urn:ngm:class:policy-enforcement",
+        "label": "Policy Enforcement"
+      },
+      {
+        "@id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "@id": "urn:ngm:class:decision-rights",
+        "label": "Decision Rights"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-management",
+        "label": "Compliance Management"
       }
     ],
     "enables": [
@@ -92,6 +112,14 @@ public:: true
       {
         "@id": "urn:ngm:class:risk-management",
         "label": "Risk Management"
+      },
+      {
+        "@id": "urn:ngm:class:value-delivery",
+        "label": "Value Delivery"
+      },
+      {
+        "@id": "urn:ngm:class:resource-management",
+        "label": "Resource Management"
       }
     ],
     "implements": [
@@ -106,21 +134,85 @@ public:: true
       {
         "@id": "urn:ngm:class:policy-enforcement",
         "label": "Policy Enforcement"
+      },
+      {
+        "@id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:cobit",
+        "label": "COBIT"
+      },
+      {
+        "@id": "urn:ngm:class:itil",
+        "label": "ITIL"
+      },
+      {
+        "@id": "urn:ngm:class:iso-iec-38500",
+        "label": "ISO/IEC 38500"
+      },
+      {
+        "@id": "urn:ngm:class:togaf",
+        "label": "TOGAF"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:executive-sponsorship",
+        "label": "Executive Sponsorship"
+      },
+      {
+        "@id": "urn:ngm:class:audit-and-oversight",
+        "label": "Audit and Oversight"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:ai-governance-and-ethics",
+        "label": "AI Governance and Ethics"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:enterprise-architecture",
+        "label": "Enterprise Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:change-management",
+        "label": "Change Management"
       }
     ]
   },
-  "quality": 0.5,
-  "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
-  },
-  "subClassOf": [
+  "sameAs": [
     {
-      "@id": "urn:ngm:class:ai-governance-and-ethics",
-      "label": "AI Governance and Ethics"
+      "@id": "urn:ngm:class:it-governance-framework",
+      "label": "IT Governance Framework"
+    },
+    {
+      "@id": "urn:ngm:class:corporate-governance-framework",
+      "label": "Corporate Governance Framework"
     }
-  ]
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

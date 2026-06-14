@@ -13,15 +13,10 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.72,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [
-      {
-        "id": "urn:ngm:class:virtual-reality",
-        "label": "Virtual Reality"
-      },
+    "hasPart": [
       {
         "id": "urn:ngm:class:spatial-audio",
         "label": "Spatial Audio"
@@ -29,6 +24,28 @@
       {
         "id": "urn:ngm:class:haptic-feedback",
         "label": "Haptic Feedback"
+      },
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "id": "urn:ngm:class:presence",
+        "label": "Presence"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "id": "urn:ngm:class:head-mounted-display",
+        "label": "Head-Mounted Display"
+      },
+      {
+        "id": "urn:ngm:class:motion-tracking",
+        "label": "Motion Tracking"
       }
     ],
     "enables": [
@@ -39,20 +56,112 @@
       {
         "id": "urn:ngm:class:telepresence",
         "label": "Telepresence"
+      },
+      {
+        "id": "urn:ngm:class:experiential-learning",
+        "label": "Experiential Learning"
+      },
+      {
+        "id": "urn:ngm:class:flow-state",
+        "label": "Flow State"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:low-latency-network",
+        "label": "Low Latency Network"
+      },
+      {
+        "id": "urn:ngm:class:gpu-rendering-pipeline",
+        "label": "GPU Rendering Pipeline"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:presence-theory",
+        "label": "Presence Theory"
+      },
+      {
+        "id": "urn:ngm:class:flow-theory",
+        "label": "Flow Theory"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:passive-media-consumption",
+        "label": "Passive Media Consumption"
+      },
+      {
+        "id": "urn:ngm:class:flat-screen-interface",
+        "label": "Flat Screen Interface"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
+    "uses": [
       {
         "id": "urn:ngm:class:augmented-reality",
         "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:mixed-reality",
+        "label": "Mixed Reality"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:natural-user-interface",
+        "label": "Natural User Interface"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:vr-therapy",
+        "label": "VR Therapy"
+      },
+      {
+        "id": "urn:ngm:class:virtual-collaboration",
+        "label": "Virtual Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:experiential-marketing",
+        "label": "Experiential Marketing"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:openxr",
+        "label": "OpenXR"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "id": "urn:ngm:class:sensory-fidelity",
+        "label": "Sensory Fidelity"
       }
     ]
   },

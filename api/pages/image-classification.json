@@ -4,8 +4,8 @@
   "slug": "image-classification",
   "public": true,
   "classIri": "urn:ngm:class:image-classification",
-  "domain": "artificial-intelligence",
-  "definition": "Image Classification is the computer vision task of assigning a categorical label to an entire image from a predefined set of classes, determining what is depicted in the image as a whole.",
+  "domain": "machine-learning",
+  "definition": "Image Classification is the computer vision task of assigning a categorical label to an entire image from a predefined set of classes, determining what is depicted in the image as a whole. Modern image classification employs deep convolutional neural networks (ResNet, EfficientNet, Vision Transformers) trained on large-scale datasets such as ImageNet to achieve human-level or super-human performance on diverse visual recognition tasks.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-application",
@@ -13,10 +13,19 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.72,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:feature-map",
+        "label": "Feature Map"
+      },
+      {
+        "id": "urn:ngm:class:classification-head",
+        "label": "Classification Head"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:convolutional-neural-network",
@@ -25,6 +34,14 @@
       {
         "id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:labeled-training-data",
+        "label": "Labeled Training Data"
+      },
+      {
+        "id": "urn:ngm:class:image-preprocessing",
+        "label": "Image Preprocessing"
       }
     ],
     "enables": [
@@ -35,16 +52,67 @@
       {
         "id": "urn:ngm:class:scene-understanding",
         "label": "Scene Understanding"
+      },
+      {
+        "id": "urn:ngm:class:medical-image-analysis",
+        "label": "Medical Image Analysis"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-driving",
+        "label": "Autonomous Driving"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "id": "urn:ngm:class:gpu-computing",
+        "label": "GPU Computing"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:image-segmentation",
+        "label": "Image Segmentation"
+      },
+      {
+        "id": "urn:ngm:class:instance-segmentation",
+        "label": "Instance Segmentation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:robotics-perception",
+        "label": "Robotics Perception"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:transfer-learning",
         "label": "Transfer Learning"
+      },
+      {
+        "id": "urn:ngm:class:softmax-function",
+        "label": "Softmax Function"
+      },
+      {
+        "id": "urn:ngm:class:data-augmentation",
+        "label": "Data Augmentation"
+      },
+      {
+        "id": "urn:ngm:class:feature-extraction",
+        "label": "Feature Extraction"
       }
     ],
     "supports": [],
@@ -53,9 +121,26 @@
       {
         "id": "urn:ngm:class:computer-vision",
         "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:pattern-recognition",
+        "label": "Pattern Recognition"
       }
     ],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:vision-transformer",
+        "label": "Vision Transformer"
+      },
+      {
+        "id": "urn:ngm:class:imagenet",
+        "label": "ImageNet"
+      },
+      {
+        "id": "urn:ngm:class:benchmark-dataset",
+        "label": "Benchmark Dataset"
+      }
+    ]
   },
   "wikilinks": [
     {

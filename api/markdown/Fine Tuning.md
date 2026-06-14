@@ -112,32 +112,68 @@ alias:: Fine-Tuning, Fine-tuning
   "@type": "Class",
   "label": "Fine Tuning",
   "definition": "The process of adapting a pre-trained model to a specific downstream task by continuing training on task-specific data, typically with a lower learning rate. Fine-tuning leverages knowledge acquired during pre-training whilst specialising the model for particular applications.",
-  "domain": "artificial-intelligence",
+  "domain": "machine-learning",
   "maturity": "emerging",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:transfer-learning",
+    "label": "Transfer Learning"
+  },
   "relations": {
     "dependsOn": [
       {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"},
-      {"@id": "urn:ngm:class:training-data", "label": "Training Data"}
+      {"@id": "urn:ngm:class:training-data", "label": "Training Data"},
+      {"@id": "urn:ngm:class:pre-trained-model", "label": "Pre-Trained Model"},
+      {"@id": "urn:ngm:class:labelled-dataset", "label": "Labelled Dataset"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:gradient-descent", "label": "Gradient Descent"}
+      {"@id": "urn:ngm:class:gradient-descent", "label": "Gradient Descent"},
+      {"@id": "urn:ngm:class:backpropagation", "label": "Backpropagation"},
+      {"@id": "urn:ngm:class:learning-rate-scheduling", "label": "Learning Rate Scheduling"},
+      {"@id": "urn:ngm:class:low-rank-adaptation", "label": "Low-Rank Adaptation"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:image-generation", "label": "Image Generation"}
+      {"@id": "urn:ngm:class:image-generation", "label": "Image Generation"},
+      {"@id": "urn:ngm:class:instruction-following", "label": "Instruction Following"},
+      {"@id": "urn:ngm:class:domain-adaptation", "label": "Domain Adaptation"},
+      {"@id": "urn:ngm:class:reinforcement-learning-from-human-feedback", "label": "Reinforcement Learning from Human Feedback"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:parameter-efficient-fine-tuning", "label": "Parameter-Efficient Fine-Tuning"},
+      {"@id": "urn:ngm:class:full-fine-tuning", "label": "Full Fine-Tuning"},
+      {"@id": "urn:ngm:class:supervised-fine-tuning", "label": "Supervised Fine-Tuning"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:model-training-pipeline", "label": "Model Training Pipeline"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"},
+      {"@id": "urn:ngm:class:task-specific-dataset", "label": "Task-Specific Dataset"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"},
+      {"@id": "urn:ngm:class:prompt-engineering", "label": "Prompt Engineering"},
+      {"@id": "urn:ngm:class:training-from-scratch", "label": "Training From Scratch"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:model-alignment", "label": "Model Alignment"},
+      {"@id": "urn:ngm:class:overfitting", "label": "Overfitting"},
+      {"@id": "urn:ngm:class:knowledge-distillation", "label": "Knowledge Distillation"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:style-transfer", "label": "Style Transfer"},
+      {"@id": "urn:ngm:class:multimodal-models", "label": "Multimodal Models"}
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {"@id": "urn:ngm:class:model-fine-tuning", "label": "Model Fine-Tuning"},
+    {"@id": "urn:ngm:class:supervised-adaptation", "label": "Supervised Adaptation"}
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

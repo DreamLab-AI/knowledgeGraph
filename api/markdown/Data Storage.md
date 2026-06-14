@@ -70,16 +70,52 @@ public:: true
   "@id": "urn:ngm:class:data-storage",
   "@type": "Class",
   "label": "Data Storage",
-  "definition": "Data storage encompasses the systems, technologies, and architectures used to capture, retain, and retrieve digital information for ongoing and future use.",
+  "definition": "Data storage encompasses the systems, technologies, and architectures used to capture, retain, and retrieve digital information for ongoing and future use. It includes file, block, and object storage paradigms alongside the hardware and software infrastructure ensuring data persistence, accessibility, availability, and protection against loss or corruption.",
   "domain": "infrastructure",
   "maturity": "emerging",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:infra-data-management",
-      "label": "Data Management"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:infra-data-management",
+    "label": "Data Management"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:file-storage",
+        "label": "File Storage"
+      },
+      {
+        "@id": "urn:ngm:class:block-storage",
+        "label": "Block Storage"
+      },
+      {
+        "@id": "urn:ngm:class:object-storage",
+        "label": "Object Storage"
+      },
+      {
+        "@id": "urn:ngm:class:storage-area-network",
+        "label": "Storage Area Network"
+      },
+      {
+        "@id": "urn:ngm:class:network-attached-storage",
+        "label": "Network-Attached Storage"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:data-centre-infrastructure",
+        "label": "Data Centre Infrastructure"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:storage-media",
+        "label": "Storage Media"
+      },
+      {
+        "@id": "urn:ngm:class:file-system",
+        "label": "File System"
+      }
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:backup-and-recovery",
@@ -92,6 +128,10 @@ public:: true
       {
         "@id": "urn:ngm:class:information-retrieval",
         "label": "Information Retrieval"
+      },
+      {
+        "@id": "urn:ngm:class:data-analytics",
+        "label": "Data Analytics"
       }
     ],
     "implements": [
@@ -102,20 +142,72 @@ public:: true
       {
         "@id": "urn:ngm:class:storage-architecture",
         "label": "Storage Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:data-encryption-at-rest",
+        "label": "Data Encryption at Rest"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:raid",
+        "label": "RAID"
+      },
+      {
+        "@id": "urn:ngm:class:erasure-coding",
+        "label": "Erasure Coding"
+      },
+      {
+        "@id": "urn:ngm:class:data-compression",
+        "label": "Data Compression"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:disaster-recovery",
+        "label": "Disaster Recovery"
+      },
+      {
+        "@id": "urn:ngm:class:data-lifecycle-management",
+        "label": "Data Lifecycle Management"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:in-memory-computing",
+        "label": "In-Memory Computing"
       }
     ],
     "bridgesTo": [
       {
-        "@id": "urn:ngm:class:technology-infrastructure-domain-component",
-        "label": "Infrastructure Component"
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-file-system",
+        "label": "Distributed File System"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:digital-storage",
+      "label": "Digital Storage"
+    },
+    {
+      "@id": "urn:ngm:class:data-persistence-layer",
+      "label": "Data Persistence Layer"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

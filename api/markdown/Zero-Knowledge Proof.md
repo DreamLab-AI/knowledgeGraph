@@ -68,43 +68,63 @@ alias:: BC-0023-zero-knowledge-proofs, BC-0202-zero-knowledge-proofs, BC-0315-ze
   "@type": "Class",
   "label": "Zero-Knowledge Proof",
   "definition": "A cryptographic protocol allowing one party (prover) to convince another party (verifier) that a statement is true without revealing any information beyond the validity of the statement itself. Zero-knowledge proofs provide privacy-preserving verification in blockchain systems, enabling private transactions, identity attestation, and scalable computation via ZK-rollups.",
-  "domain": "blockchain",
+  "domain": "security",
   "maturity": "established",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:bc-cryptographic-primitive",
-      "label": "Cryptographic Primitive"
-    },
-    {
-      "@id": "urn:ngm:class:blockchain-entity",
-      "label": "Blockchain Entity"
-    },
-    {
-      "@id": "urn:ngm:class:cryptographic-primitive",
-      "label": "CryptographicPrimitive"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:cryptographic-primitive",
+    "label": "Cryptographic Primitive"
+  },
   "relations": {
     "hasPart": [
       {"@id": "urn:ngm:class:zk-snarks", "label": "ZK-SNARKs"},
-      {"@id": "urn:ngm:class:zk-starks", "label": "ZK-STARKs"}
+      {"@id": "urn:ngm:class:zk-starks", "label": "ZK-STARKs"},
+      {"@id": "urn:ngm:class:bulletproofs", "label": "Bulletproofs"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:cryptographic-protocol", "label": "Cryptographic Protocol"},
+      {"@id": "urn:ngm:class:privacy-enhancing-technology", "label": "Privacy-Enhancing Technology"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:interactive-proof-system", "label": "Interactive Proof System"},
+      {"@id": "urn:ngm:class:computational-hardness-assumption", "label": "Computational Hardness Assumption"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:cryptographic-commitment", "label": "Cryptographic Commitment"},
       {"@id": "urn:ngm:class:hash-function", "label": "Hash Function"},
-      {"@id": "urn:ngm:class:elliptic-curve-cryptography", "label": "Elliptic Curve Cryptography"}
+      {"@id": "urn:ngm:class:elliptic-curve-cryptography", "label": "Elliptic Curve Cryptography"},
+      {"@id": "urn:ngm:class:polynomial-arithmetic", "label": "Polynomial Arithmetic"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:differential-privacy", "label": "Differential Privacy"},
-      {"@id": "urn:ngm:class:zero-knowledge-machine-learning", "label": "Zero-Knowledge Machine Learning"}
+      {"@id": "urn:ngm:class:zero-knowledge-machine-learning", "label": "Zero-Knowledge Machine Learning"},
+      {"@id": "urn:ngm:class:zk-rollup", "label": "ZK-Rollup"},
+      {"@id": "urn:ngm:class:private-smart-contract", "label": "Private Smart Contract"},
+      {"@id": "urn:ngm:class:decentralised-identity", "label": "Decentralised Identity"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:trusted-setup", "label": "Trusted Setup"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:interactive-proof-system", "label": "Interactive Proof System"},
+      {"@id": "urn:ngm:class:secure-multiparty-computation", "label": "Secure Multi-Party Computation"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
+      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"},
+      {"@id": "urn:ngm:class:verifiable-credential", "label": "Verifiable Credential"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:homomorphic-encryption", "label": "Homomorphic Encryption"},
       {"@id": "urn:ngm:class:cryptographic-verification", "label": "Cryptographic Verification"},
-      {"@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography", "label": "Public-Key Cryptography"}
+      {"@id": "urn:ngm:class:public-key-cryptography", "label": "Public-Key Cryptography"},
+      {"@id": "urn:ngm:class:merkle-tree", "label": "Merkle Tree"}
     ]
   },
-  "quality": 0.8,
+  "sameAs": [
+    {"@id": "urn:ngm:class:zk-proof", "label": "ZK Proof"},
+    {"@id": "urn:ngm:class:zero-knowledge-protocol", "label": "Zero-Knowledge Protocol"}
+  ],
+  "quality": 0.80,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

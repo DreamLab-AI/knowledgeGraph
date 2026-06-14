@@ -47,32 +47,30 @@ public:: true
   "@type": "Class",
   "label": "Cryptographic Verification",
   "definition": "Cryptographic Verification is the process of using cryptographic primitives—such as digital signatures, hash functions, and zero-knowledge proofs—to confirm the authenticity, integrity, and non-repudiation of data, identities, or transactions. It forms the trust foundation for blockchain systems, content authentication, and decentralised identity schemes.",
-  "domain": "infrastructure",
+  "domain": "security",
   "maturity": "emerging",
   "qualityScore": 0.7,
-  "subClassOf": [
+  "subClassOf": {
+    "@id": "urn:ngm:class:infra-security-and-identity",
+    "label": "Security and Identity"
+  },
+  "quality": 0.68,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  },
+  "sameAs": [
     {
-      "@id": "urn:ngm:class:infra-security-and-identity",
-      "label": "Security and Identity"
+      "@id": "urn:ngm:class:cryptographic-authentication",
+      "label": "Cryptographic Authentication"
+    },
+    {
+      "@id": "urn:ngm:class:cryptographic-proof",
+      "label": "Cryptographic Proof"
     }
   ],
-  "quality": 0.35,
-  "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
-  },
   "relations": {
-    "enables": [
-      {
-        "@id": "urn:ngm:class:content-authentication",
-        "label": "Content Authentication"
-      },
-      {
-        "@id": "urn:ngm:class:blockchain",
-        "label": "Blockchain"
-      }
-    ],
     "uses": [
       {
         "@id": "urn:ngm:class:cryptographic-hash-function",
@@ -81,6 +79,90 @@ public:: true
       {
         "@id": "urn:ngm:class:digital-signature",
         "label": "Digital Signature"
+      },
+      {
+        "@id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
+        "label": "Public-Key Cryptography"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:content-authentication",
+        "label": "Content Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "@id": "urn:ngm:class:non-repudiation",
+        "label": "Non-Repudiation"
+      },
+      {
+        "@id": "urn:ngm:class:trusted-execution-environment",
+        "label": "Trusted Execution Environment"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:cryptographic-key-management",
+        "label": "Cryptographic Key Management"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "@id": "urn:ngm:class:message-authentication-code",
+        "label": "Message Authentication Code"
+      },
+      {
+        "@id": "urn:ngm:class:certificate-authority",
+        "label": "Certificate Authority"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:data-integrity",
+        "label": "Data Integrity"
+      },
+      {
+        "@id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain-provenance",
+        "label": "Supply Chain Provenance"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:nist-cryptographic-standards",
+        "label": "NIST Cryptographic Standards"
+      },
+      {
+        "@id": "urn:ngm:class:x509-certificate-standard",
+        "label": "X.509 Certificate Standard"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:password-based-authentication",
+        "label": "Password-Based Authentication"
       }
     ],
     "relatedTo": [
@@ -89,14 +171,26 @@ public:: true
         "label": "Zero-Knowledge Proof"
       },
       {
-        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
-        "label": "Public-Key Cryptography"
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:transport-layer-security",
+        "label": "Transport Layer Security"
       }
     ],
     "bridgesTo": [
       {
         "@id": "urn:ngm:class:cryptographic-system",
         "label": "Cryptographic System"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:verifiable-credential",
+        "label": "Verifiable Credential"
       }
     ]
   }

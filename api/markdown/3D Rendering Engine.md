@@ -58,20 +58,52 @@ public:: true
   "@id": "urn:ngm:class:3-d-rendering-engine",
   "@type": "Class",
   "label": "3D Rendering Engine",
-  "definition": "A 3D rendering engine is software that converts three-dimensional geometric data into two-dimensional images through processes including lighting calculation, texture mapping, and rasterisation.",
+  "definition": "A 3D rendering engine is software that converts three-dimensional geometric data into two-dimensional images through processes including geometry processing, lighting calculation, texture mapping, and rasterisation or ray tracing. In real-time contexts it targets interactive frame rates (90 Hz+) and must minimise motion-to-photon latency for XR presence.",
   "domain": "spatial-computing",
   "maturity": "established",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:sc-display-and-rendering",
-      "label": "Display and Rendering"
-    },
-    {
-      "@id": "urn:ngm:class:computer-graphics",
-      "label": "Computer Graphics"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:computer-graphics",
+    "label": "Computer Graphics"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:shader-pipeline",
+        "label": "Shader Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:rasteriser",
+        "label": "Rasteriser"
+      },
+      {
+        "@id": "urn:ngm:class:scene-graph",
+        "label": "Scene Graph"
+      },
+      {
+        "@id": "urn:ngm:class:texture-mapping",
+        "label": "Texture Mapping"
+      },
+      {
+        "@id": "urn:ngm:class:level-of-detail",
+        "label": "Level of Detail"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:graphics-processing-unit",
+        "label": "Graphics Processing Unit"
+      },
+      {
+        "@id": "urn:ngm:class:graphics-api",
+        "label": "Graphics API"
+      }
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:real-time-visualisation",
@@ -84,14 +116,112 @@ public:: true
       {
         "@id": "urn:ngm:class:immersive-experiences",
         "label": "Immersive Experiences"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:foveated-rendering",
+        "label": "Foveated Rendering"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:physics-engine",
+        "label": "Physics Engine"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:ray-tracing",
+        "label": "Ray Tracing"
+      },
+      {
+        "@id": "urn:ngm:class:rasterisation",
+        "label": "Rasterisation"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:vulkan",
+        "label": "Vulkan"
+      },
+      {
+        "@id": "urn:ngm:class:opengl",
+        "label": "OpenGL"
+      },
+      {
+        "@id": "urn:ngm:class:directx",
+        "label": "DirectX"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:stereoscopic-display",
+        "label": "Stereoscopic Display"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:khronos-group",
+        "label": "Khronos Group"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:offline-rendering",
+        "label": "Offline Rendering"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning-inference",
+        "label": "Machine Learning Inference"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:motion-to-photon-latency",
+        "label": "Motion-to-Photon Latency"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
       }
     ]
   },
-  "quality": 0.35,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:graphics-rendering-engine",
+      "label": "Graphics Rendering Engine"
+    },
+    {
+      "@id": "urn:ngm:class:real-time-rendering-engine",
+      "label": "Real-Time Rendering Engine"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

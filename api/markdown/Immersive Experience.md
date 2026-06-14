@@ -46,36 +46,85 @@ alias:: ImmersiveExperience
   "definition": "An Immersive Experience is a deeply engaging interaction or environment that induces a compelling sense of presence by combining high-fidelity multi-sensory stimulation, responsive interaction, and narrative coherence across visual, auditory, and haptic channels. Underpinned by virtual reality, augmented reality, and spatial audio technologies, immersive experiences span VR training simulations, therapeutic applications, collaborative virtual workspaces, and entertainment, with quality measured through presence questionnaires, physiological indicators, and behavioural engagement metrics.",
   "domain": "spatial-computing",
   "maturity": "emerging",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:sc-platform-and-environment",
-      "label": "Platform and Environment"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:sc-platform-and-environment",
+    "label": "Platform and Environment"
+  },
   "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:spatial-audio", "label": "Spatial Audio"},
+      {"@id": "urn:ngm:class:haptic-feedback", "label": "Haptic Feedback"},
+      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"},
+      {"@id": "urn:ngm:class:presence", "label": "Presence"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"},
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
+    ],
     "requires": [
       {"@id": "urn:ngm:class:virtual-reality", "label": "Virtual Reality"},
-      {"@id": "urn:ngm:class:spatial-audio", "label": "Spatial Audio"},
-      {"@id": "urn:ngm:class:haptic-feedback", "label": "Haptic Feedback"}
+      {"@id": "urn:ngm:class:head-mounted-display", "label": "Head-Mounted Display"},
+      {"@id": "urn:ngm:class:motion-tracking", "label": "Motion Tracking"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:simulation", "label": "Simulation"},
-      {"@id": "urn:ngm:class:telepresence", "label": "Telepresence"}
+      {"@id": "urn:ngm:class:telepresence", "label": "Telepresence"},
+      {"@id": "urn:ngm:class:experiential-learning", "label": "Experiential Learning"},
+      {"@id": "urn:ngm:class:flow-state", "label": "Flow State"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:low-latency-network", "label": "Low Latency Network"},
+      {"@id": "urn:ngm:class:gpu-rendering-pipeline", "label": "GPU Rendering Pipeline"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:presence-theory", "label": "Presence Theory"},
+      {"@id": "urn:ngm:class:flow-theory", "label": "Flow Theory"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
+      {"@id": "urn:ngm:class:mixed-reality", "label": "Mixed Reality"},
+      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
+      {"@id": "urn:ngm:class:natural-user-interface", "label": "Natural User Interface"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:vr-therapy", "label": "VR Therapy"},
+      {"@id": "urn:ngm:class:virtual-collaboration", "label": "Virtual Collaboration"},
+      {"@id": "urn:ngm:class:experiential-marketing", "label": "Experiential Marketing"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:openxr", "label": "OpenXR"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:passive-media-consumption", "label": "Passive Media Consumption"},
+      {"@id": "urn:ngm:class:flat-screen-interface", "label": "Flat Screen Interface"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"}
+      {"@id": "urn:ngm:class:extended-reality", "label": "Extended Reality"},
+      {"@id": "urn:ngm:class:sensory-fidelity", "label": "Sensory Fidelity"}
     ]
   },
-  "quality": 0.5,
+  "quality": 0.72,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "inferenceRule": "RelationEnrichment"
   },
   "sameAs": [
     {
       "@id": "urn:ngm:class:immersive-experiences",
       "label": "Immersive Experiences"
+    },
+    {
+      "@id": "urn:ngm:class:extended-reality-experience",
+      "label": "Extended Reality Experience"
+    },
+    {
+      "@id": "urn:ngm:class:xr-experience",
+      "label": "XR Experience"
     }
   ]
 }

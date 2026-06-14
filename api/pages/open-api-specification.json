@@ -13,11 +13,33 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.75,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:json-schema",
+        "label": "JSON Schema"
+      },
+      {
+        "id": "urn:ngm:class:yaml",
+        "label": "YAML"
+      },
+      {
+        "id": "urn:ngm:class:swagger-ui",
+        "label": "Swagger UI"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:http-protocol",
+        "label": "HTTP Protocol"
+      },
+      {
+        "id": "urn:ngm:class:rest-architectural-style",
+        "label": "REST Architectural Style"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:api-integration",
@@ -30,12 +52,46 @@
       {
         "id": "urn:ngm:class:microservices",
         "label": "Microservices"
+      },
+      {
+        "id": "urn:ngm:class:contract-testing",
+        "label": "Contract Testing"
+      },
+      {
+        "id": "urn:ngm:class:code-generation",
+        "label": "Code Generation"
+      },
+      {
+        "id": "urn:ngm:class:mock-server",
+        "label": "Mock Server"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:graphql",
+        "label": "GraphQL"
+      },
+      {
+        "id": "urn:ngm:class:grpc",
+        "label": "gRPC"
+      },
+      {
+        "id": "urn:ngm:class:asyncapi",
+        "label": "AsyncAPI"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-tool-calling",
+        "label": "AI Tool Calling"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:rest-api",
@@ -51,8 +107,22 @@
       }
     ],
     "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:openapi-initiative",
+        "label": "OpenAPI Initiative"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:openapi-initiative",
+        "label": "OpenAPI Initiative"
+      },
+      {
+        "id": "urn:ngm:class:linux-foundation",
+        "label": "Linux Foundation"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:api-management",
@@ -61,6 +131,18 @@
       {
         "id": "urn:ngm:class:api-gateway",
         "label": "API Gateway"
+      },
+      {
+        "id": "urn:ngm:class:swagger-specification",
+        "label": "Swagger Specification"
+      },
+      {
+        "id": "urn:ngm:class:api-first-design",
+        "label": "API-First Design"
+      },
+      {
+        "id": "urn:ngm:class:api-versioning",
+        "label": "API Versioning"
       }
     ]
   },

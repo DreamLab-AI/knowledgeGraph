@@ -66,38 +66,69 @@ public:: true
   "@id": "urn:ngm:class:ai-governance",
   "@type": "Class",
   "label": "AI Governance",
-  "definition": "AI Governance encompasses the policies, frameworks, standards, and institutional mechanisms for overseeing the responsible development, deployment, and use of artificial intelligence technologies.",
-  "domain": "artificial-intelligence",
+  "definition": "AI Governance encompasses the policies, frameworks, standards, and institutional mechanisms for overseeing the responsible development, deployment, and use of artificial intelligence technologies, including regulatory compliance, organisational accountability structures, risk-based assessment, algorithmic transparency requirements, and stakeholder engagement processes that balance innovation with societal protection.",
+  "domain": "governance",
   "maturity": "emerging",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:ai-governance-and-ethics",
-      "label": "AI Governance and Ethics"
-    },
-    {
-      "@id": "urn:ngm:class:governance-framework",
-      "label": "Governance Framework"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:governance-framework",
+    "label": "Governance Framework"
+  },
   "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:ai-impact-assessment", "label": "AI Impact Assessment"},
+      {"@id": "urn:ngm:class:algorithmic-accountability", "label": "Algorithmic Accountability"},
+      {"@id": "urn:ngm:class:ai-audit", "label": "AI Audit"},
+      {"@id": "urn:ngm:class:ai-ethics-board", "label": "AI Ethics Board"}
+    ],
     "requires": [
       {"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"},
-      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}
+      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"},
+      {"@id": "urn:ngm:class:human-oversight", "label": "Human Oversight"},
+      {"@id": "urn:ngm:class:transparency", "label": "Transparency"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"},
+      {"@id": "urn:ngm:class:trustworthy-ai", "label": "Trustworthy AI"}
     ],
     "supports": [
-      {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"},
-      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"}
+      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},
+      {"@id": "urn:ngm:class:ai-alignment", "label": "AI Alignment"},
+      {"@id": "urn:ngm:class:digital-rights", "label": "Digital Rights"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:eu-ai-act", "label": "EU AI Act"},
+      {"@id": "urn:ngm:class:nist-ai-rmf", "label": "NIST AI RMF"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:iso-iec-42001", "label": "ISO/IEC 42001"},
+      {"@id": "urn:ngm:class:oecd-ai-principles", "label": "OECD AI Principles"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:risk-management", "label": "Risk Management"},
+      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:ai-deregulation", "label": "AI Deregulation"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
+      {"@id": "urn:ngm:class:decentralised-autonomous-organisation", "label": "Decentralised Autonomous Organisation"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:risk-management", "label": "Risk Management"},
-      {"@id": "urn:ngm:class:ai-alignment", "label": "AI Alignment"}
+      {"@id": "urn:ngm:class:gdpr", "label": "GDPR"},
+      {"@id": "urn:ngm:class:explainable-ai", "label": "Explainable AI"},
+      {"@id": "urn:ngm:class:bias-mitigation", "label": "Bias Mitigation"}
     ]
   },
-  "quality": 0.35,
+  "sameAs": [
+    {"@id": "urn:ngm:class:ai-regulation", "label": "AI Regulation"},
+    {"@id": "urn:ngm:class:artificial-intelligence-governance", "label": "Artificial Intelligence Governance"}
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

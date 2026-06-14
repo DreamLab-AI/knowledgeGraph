@@ -4,20 +4,46 @@
   "slug": "convolutional-neural-network",
   "public": true,
   "classIri": "urn:ngm:class:convolutional-neural-network",
-  "domain": "artificial-intelligence",
+  "domain": "machine-learning",
   "definition": "A Convolutional Neural Network (CNN) is a feed-forward deep learning architecture that applies learned convolutional filters across spatial dimensions of input data, enabling hierarchical feature extraction from images and other grid-structured inputs. Weight sharing and local receptive fields make CNNs highly parameter-efficient for visual recognition tasks including image classification, object detection, and semantic segmentation.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ai-model-architecture",
-      "label": "AI Model Architecture"
+      "id": "urn:ngm:class:deep-neural-network",
+      "label": "Deep Neural Network"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.72,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:convolutional-layer",
+        "label": "Convolutional Layer"
+      },
+      {
+        "id": "urn:ngm:class:pooling-layer",
+        "label": "Pooling Layer"
+      },
+      {
+        "id": "urn:ngm:class:activation-function",
+        "label": "Activation Function"
+      },
+      {
+        "id": "urn:ngm:class:fully-connected-layer",
+        "label": "Fully Connected Layer"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "id": "urn:ngm:class:gpu-computing",
+        "label": "GPU Computing"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:image-classification",
@@ -26,36 +52,97 @@
       {
         "id": "urn:ngm:class:object-detection",
         "label": "Object Detection"
+      },
+      {
+        "id": "urn:ngm:class:semantic-segmentation",
+        "label": "Semantic Segmentation"
+      },
+      {
+        "id": "urn:ngm:class:feature-extraction",
+        "label": "Feature Extraction"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:weight-sharing",
+        "label": "Weight Sharing"
+      },
+      {
+        "id": "urn:ngm:class:gradient-descent-optimisation",
+        "label": "Gradient Descent Optimisation"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:feedforward-neural-network",
+        "label": "Feedforward Neural Network"
+      }
+    ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:recurrent-neural-network",
         "label": "Recurrent Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
       }
     ],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:autonomous-vehicle-perception",
+        "label": "Autonomous Vehicle Perception"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:backpropagation",
         "label": "Backpropagation"
       },
       {
-        "id": "urn:ngm:class:training-data",
-        "label": "Training Data"
+        "id": "urn:ngm:class:stochastic-gradient-descent",
+        "label": "Stochastic Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:batch-normalisation",
+        "label": "Batch Normalisation"
+      },
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
       }
     ],
     "supports": [
       {
         "id": "urn:ngm:class:computer-vision",
         "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:medical-image-analysis",
+        "label": "Medical Image Analysis"
       }
     ],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:resnet",
+        "label": "ResNet"
+      },
+      {
+        "id": "urn:ngm:class:adversarial-robustness",
+        "label": "Adversarial Robustness"
+      }
+    ]
   },
   "wikilinks": [
     {

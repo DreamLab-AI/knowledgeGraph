@@ -95,32 +95,50 @@ alias:: CollaborativeRobot
   "@id": "urn:ngm:class:collaborative-systems-modality-robot",
   "@type": "Class",
   "label": "Collaborative Robot",
-  "definition": "Collaborative Robot (cobot) - A lightweight robotic arm engineered to operate safely alongside human workers, combining force/torque sensing, reduced kinetic energy, and speed limitations to enable Human-Robot Collaboration in shared manufacturing and assembly environments.",
+  "definition": "Collaborative Robot (cobot) - A lightweight robotic arm engineered to operate safely alongside human workers, combining force/torque sensing, reduced kinetic energy, and speed limitations to enable Human-Robot Collaboration in shared manufacturing and assembly environments. Cobots are distinguished from traditional industrial robots by their intrinsic safety mechanisms, ease of programming, and ability to share workspace with humans without physical guarding barriers.",
   "domain": "robotics",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:robo-robot-type",
-      "label": "Robot Type"
-    },
-    {
-      "@id": "urn:ngm:class:industrial-robot",
-      "label": "Industrial Robot"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:industrial-robot",
+    "label": "Industrial Robot"
+  },
   "relations": {
-    "requires": [
+    "hasPart": [
       {
-        "@id": "urn:ngm:class:iso-ts-15066-compliance",
-        "label": "ISO/TS 15066 Compliance"
+        "@id": "urn:ngm:class:force-torque-sensor",
+        "label": "Force Torque Sensor"
       },
       {
         "@id": "urn:ngm:class:safety-controller",
         "label": "Safety Controller"
       },
       {
-        "@id": "urn:ngm:class:force-torque-sensor",
-        "label": "Force Torque Sensor"
+        "@id": "urn:ngm:class:end-effector",
+        "label": "End Effector"
+      },
+      {
+        "@id": "urn:ngm:class:collision-detection-system",
+        "label": "Collision Detection System"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:collaborative-systems-modality-manufacturing-system",
+        "label": "Collaborative Manufacturing System"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:iso-ts-15066-compliance",
+        "label": "ISO/TS 15066 Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:power-and-force-limiting",
+        "label": "Power and Force Limiting"
+      },
+      {
+        "@id": "urn:ngm:class:speed-and-separation-monitoring",
+        "label": "Speed and Separation Monitoring"
       }
     ],
     "enables": [
@@ -135,20 +153,96 @@ alias:: CollaborativeRobot
       {
         "@id": "urn:ngm:class:reduced-labour-costs",
         "label": "Reduced Labour Costs"
+      },
+      {
+        "@id": "urn:ngm:class:human-robot-collaboration",
+        "label": "Human-Robot Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:agile-manufacturing",
+        "label": "Agile Manufacturing"
       }
     ],
-    "partOf": [
+    "uses": [
       {
-        "@id": "urn:ngm:class:collaborative-systems-modality-manufacturing-system",
-        "label": "Collaborative Manufacturing System"
+        "@id": "urn:ngm:class:robot-operating-system",
+        "label": "Robot Operating System"
+      },
+      {
+        "@id": "urn:ngm:class:machine-vision",
+        "label": "Machine Vision"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:iso-10218-safety-standard",
+        "label": "ISO 10218 Safety Standard"
+      },
+      {
+        "@id": "urn:ngm:class:hand-guiding-mode",
+        "label": "Hand Guiding Mode"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:iso-international-organization-for-standardization",
+        "label": "ISO (International Organization for Standardization)"
+      },
+      {
+        "@id": "urn:ngm:class:ieee-institute-of-electrical-and-electronics-engineers",
+        "label": "IEEE (Institute of Electrical and Electronics Engineers)"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:industrial-robot",
+        "label": "Industrial Robot"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-mobile-robot",
+        "label": "Autonomous Mobile Robot"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:teleoperation",
+        "label": "Teleoperation"
       }
     ]
   },
-  "quality": 0.62,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:cobot",
+      "label": "Cobot"
+    },
+    {
+      "@id": "urn:ngm:class:human-cooperative-robot",
+      "label": "Human-Cooperative Robot"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

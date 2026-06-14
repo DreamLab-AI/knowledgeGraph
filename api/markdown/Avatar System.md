@@ -69,17 +69,39 @@ public:: true
   "definition": "Avatar System is the integrated technical architecture for creating, customizing, animating, and rendering digital representations of users in virtual environments, encompassing character models, animation systems, facial expression rigs, physics simulations, and real-time rendering pipelines.",
   "domain": "spatial-computing",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:sc-platform-and-environment",
-      "label": "Platform and Environment"
-    },
-    {
-      "@id": "urn:ngm:class:sc-interaction",
-      "label": "SC Interaction"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:virtual-character-system",
+    "label": "Virtual Character System"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:animation-controller",
+        "label": "Animation Controller"
+      },
+      {
+        "@id": "urn:ngm:class:expression-system",
+        "label": "Expression System"
+      },
+      {
+        "@id": "urn:ngm:class:physics-simulation",
+        "label": "Physics Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:level-of-detail-system",
+        "label": "Level of Detail System"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:virtual-world-platform",
+        "label": "Virtual World Platform"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse-infrastructure",
+        "label": "Metaverse Infrastructure"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:animation-controller",
@@ -92,6 +114,10 @@ public:: true
       {
         "@id": "urn:ngm:class:3-d-rendering-engine",
         "label": "3D Rendering Engine"
+      },
+      {
+        "@id": "urn:ngm:class:skeletal-mesh",
+        "label": "Skeletal Mesh"
       }
     ],
     "enables": [
@@ -106,14 +132,110 @@ public:: true
       {
         "@id": "urn:ngm:class:user-representation",
         "label": "User Representation"
+      },
+      {
+        "@id": "urn:ngm:class:nonverbal-communication",
+        "label": "Nonverbal Communication"
+      },
+      {
+        "@id": "urn:ngm:class:identity-expression",
+        "label": "Identity Expression"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:real-time-graphics-pipeline",
+        "label": "Real-Time Graphics Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:motion-capture-system",
+        "label": "Motion Capture System"
+      },
+      {
+        "@id": "urn:ngm:class:facial-tracking",
+        "label": "Facial Tracking"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:inverse-kinematics",
+        "label": "Inverse Kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:physically-based-rendering",
+        "label": "Physically Based Rendering"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:blend-shape",
+        "label": "Blend Shape"
+      },
+      {
+        "@id": "urn:ngm:class:eye-tracking",
+        "label": "Eye Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:voice-driven-lip-sync",
+        "label": "Voice Driven Lip Sync"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:avatar-customization",
+        "label": "Avatar Customization"
+      },
+      {
+        "@id": "urn:ngm:class:cross-platform-avatar-interoperability",
+        "label": "Cross-Platform Avatar Interoperability"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:non-player-character",
+        "label": "Non-Player Character"
+      },
+      {
+        "@id": "urn:ngm:class:static-user-profile",
+        "label": "Static User Profile"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "@id": "urn:ngm:class:nft-wearable",
+        "label": "NFT Wearable"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
       }
     ]
   },
-  "quality": 0.35,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:player-avatar-system",
+      "label": "Player Avatar System"
+    },
+    {
+      "@id": "urn:ngm:class:digital-avatar",
+      "label": "Digital Avatar"
+    }
+  ],
+  "quality": 0.70,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

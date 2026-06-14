@@ -4,23 +4,32 @@
   "slug": "digital-rights-management",
   "public": true,
   "classIri": "urn:ngm:class:digital-rights-management",
-  "domain": "spatial-computing",
+  "domain": "governance",
   "definition": "Technology systems and protocols that control access to, distribution of, and usage rights for digital content including media, software, and virtual assets, increasingly leveraging blockchain and smart contracts for transparent, decentralised rights enforcement and automated royalty distribution.",
   "subClassOf": [
-    {
-      "id": "urn:ngm:class:sc-governance-and-safety",
-      "label": "Governance and Safety"
-    },
     {
       "id": "urn:ngm:class:content-protection",
       "label": "Content Protection"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.65,
   "maturity": "draft",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:licence-server",
+        "label": "Licence Server"
+      },
+      {
+        "id": "urn:ngm:class:key-management-system",
+        "label": "Key Management System"
+      },
+      {
+        "id": "urn:ngm:class:usage-tracking",
+        "label": "Usage Tracking"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:encryption",
@@ -33,6 +42,14 @@
       {
         "id": "urn:ngm:class:smart-contracts",
         "label": "Smart Contracts"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:digital-watermarking",
+        "label": "Digital Watermarking"
       }
     ],
     "enables": [
@@ -47,17 +64,83 @@
       {
         "id": "urn:ngm:class:royalty-distribution",
         "label": "Royalty Distribution"
+      },
+      {
+        "id": "urn:ngm:class:intellectual-property-enforcement",
+        "label": "Intellectual Property Enforcement"
+      },
+      {
+        "id": "urn:ngm:class:content-monetisation",
+        "label": "Content Monetisation"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:trusted-execution-environment",
+        "label": "Trusted Execution Environment"
+      },
+      {
+        "id": "urn:ngm:class:open-digital-rights-language",
+        "label": "Open Digital Rights Language"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:open-source-licensing",
+        "label": "Open Source Licensing"
+      },
+      {
+        "id": "urn:ngm:class:creative-commons",
+        "label": "Creative Commons"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:non-fungible-token",
+        "label": "Non-Fungible Token"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      }
+    ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:w3c-encrypted-media-extensions",
+        "label": "W3C Encrypted Media Extensions"
+      },
+      {
+        "id": "urn:ngm:class:mpeg-21",
+        "label": "MPEG-21"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:copyright-law",
+        "label": "Copyright Law"
+      },
+      {
+        "id": "urn:ngm:class:trusted-platform-module",
+        "label": "Trusted Platform Module"
+      }
+    ]
   },
   "wikilinks": [
     {

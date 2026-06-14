@@ -55,28 +55,61 @@ alias:: BlockchainDomain
   "domain": "blockchain",
   "maturity": "emerging",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:bc-network-component",
-      "label": "Network Component"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:bc-network-component",
+    "label": "Network Component"
+  },
   "relations": {
     "hasPart": [
       {"@id": "urn:ngm:class:consensus-domain", "label": "Consensus Domain"},
       {"@id": "urn:ngm:class:cryptographic-domain", "label": "Cryptographic Domain"},
-      {"@id": "urn:ngm:class:blockchain-process", "label": "Blockchain Process"}
+      {"@id": "urn:ngm:class:blockchain-process", "label": "Blockchain Process"},
+      {"@id": "urn:ngm:class:token-economics-domain", "label": "Token Economics Domain"},
+      {"@id": "urn:ngm:class:smart-contract-system", "label": "Smart Contract System"}
     ],
     "requires": [
       {"@id": "urn:ngm:class:bc-cryptographic-primitive", "label": "Cryptographic Primitive"},
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"}
+      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
+      {"@id": "urn:ngm:class:peer-to-peer-network", "label": "Peer-to-Peer Network"},
+      {"@id": "urn:ngm:class:distributed-ledger", "label": "Distributed Ledger"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:blockchain-application", "label": "Blockchain Application"},
-      {"@id": "urn:ngm:class:blockchain-governance", "label": "Blockchain Governance"}
+      {"@id": "urn:ngm:class:blockchain-governance", "label": "Blockchain Governance"},
+      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"},
+      {"@id": "urn:ngm:class:non-fungible-token", "label": "Non-Fungible Token"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:hash-function", "label": "Hash Function"},
+      {"@id": "urn:ngm:class:digital-signature-scheme", "label": "Digital Signature Scheme"},
+      {"@id": "urn:ngm:class:merkle-tree", "label": "Merkle Tree"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:byzantine-fault-tolerance", "label": "Byzantine Fault Tolerance"},
+      {"@id": "urn:ngm:class:distributed-consensus-protocol", "label": "Distributed Consensus Protocol"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:iso-iec-23257", "label": "ISO/IEC 23257 Blockchain Standard"},
+      {"@id": "urn:ngm:class:ieee-2418-1", "label": "IEEE 2418.1 Blockchain Standard"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:centralised-database", "label": "Centralised Database"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:supply-chain-domain", "label": "Supply Chain Domain"},
+      {"@id": "urn:ngm:class:decentralised-identity", "label": "Decentralised Identity"},
+      {"@id": "urn:ngm:class:metaverse-domain", "label": "Metaverse Domain"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"},
+      {"@id": "urn:ngm:class:enterprise-blockchain", "label": "Enterprise Blockchain"}
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {"@id": "urn:ngm:class:distributed-ledger-technology-domain", "label": "Distributed Ledger Technology Domain"},
+    {"@id": "urn:ngm:class:dlt-domain", "label": "DLT Domain"}
+  ],
+  "quality": 0.70,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",

@@ -57,39 +57,63 @@ public:: true
   "definition": "Conversational AI encompasses systems that engage in natural-language dialogue with humans, including chatbots, voice assistants, and large-language-model-powered interfaces. It applies natural language processing, language modeling, dialogue management, and speech recognition to understand intent and generate contextually appropriate responses.",
   "domain": "artificial-intelligence",
   "maturity": "established",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:ai-research-area",
-      "label": "AI Research Area"
-    },
-    {
-      "@id": "urn:ngm:class:natural-language-processing",
-      "label": "Natural Language Processing"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:natural-language-processing",
+    "label": "Natural Language Processing"
+  },
   "relations": {
     "hasPart": [
       {"@id": "urn:ngm:class:chatbots", "label": "Chatbots"},
       {"@id": "urn:ngm:class:dialogue-system", "label": "Dialogue System"},
       {"@id": "urn:ngm:class:natural-language-understanding", "label": "Natural Language Understanding"},
       {"@id": "urn:ngm:class:sentiment-analysis", "label": "Sentiment Analysis"},
-      {"@id": "urn:ngm:class:voice-interaction", "label": "Voice Interaction"}
+      {"@id": "urn:ngm:class:voice-interaction", "label": "Voice Interaction"},
+      {"@id": "urn:ngm:class:intent-recognition", "label": "Intent Recognition"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
       {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"},
-      {"@id": "urn:ngm:class:speech-recognition", "label": "Speech Recognition"}
+      {"@id": "urn:ngm:class:speech-recognition", "label": "Speech Recognition"},
+      {"@id": "urn:ngm:class:text-to-speech", "label": "Text-to-Speech"},
+      {"@id": "urn:ngm:class:reinforcement-learning-from-human-feedback", "label": "Reinforcement Learning from Human Feedback"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:language-modeling", "label": "Language Modeling"},
+      {"@id": "urn:ngm:class:context-management", "label": "Context Management"},
+      {"@id": "urn:ngm:class:knowledge-base", "label": "Knowledge Base"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:virtual-assistant", "label": "Virtual Assistant"},
+      {"@id": "urn:ngm:class:customer-service-automation", "label": "Customer Service Automation"},
+      {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human-Robot Interaction"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:speech-processing", "label": "Speech Processing"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:rule-based-systems", "label": "Rule-Based Systems"},
+      {"@id": "urn:ngm:class:batch-data-processing", "label": "Batch Data Processing"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
+      {"@id": "urn:ngm:class:autonomous-robot", "label": "Autonomous Robot"},
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:language-modeling", "label": "Language Modeling"},
-      {"@id": "urn:ngm:class:multimodal-ai-architecture-ai", "label": "Multimodal AI"}
+      {"@id": "urn:ngm:class:multimodal-ai-architecture-ai", "label": "Multimodal AI"},
+      {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"}
     ]
   },
-  "quality": 0.8,
+  "sameAs": [
+    {"@id": "urn:ngm:class:dialogue-ai", "label": "Dialogue AI"},
+    {"@id": "urn:ngm:class:chat-ai", "label": "Chat AI"}
+  ],
+  "quality": 0.75,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

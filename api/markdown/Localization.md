@@ -118,34 +118,70 @@ public:: true
   "@id": "urn:ngm:class:localization",
   "@type": "Class",
   "label": "Localization",
-  "definition": "The process of determining a mobile robot's position and orientation (pose) within a known or unknown environment using sensor measurements and a map or environmental model. It answers the question \"Where am I?\"",
+  "definition": "The process of determining a mobile robot's position and orientation (pose) within a known or unknown environment using sensor measurements and a map or environmental model. It answers the question \"Where am I?\" and is foundational to all autonomous navigation and planning tasks.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:robo-navigation-and-planning",
-      "label": "Navigation and Planning"
-    },
-    {
-      "@id": "urn:ngm:class:state-estimation",
-      "label": "State Estimation"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:state-estimation",
+    "label": "State Estimation"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:position-tracking",
+        "label": "Position Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:global-localization",
+        "label": "Global Localization"
+      },
+      {
+        "@id": "urn:ngm:class:belief-representation",
+        "label": "Belief Representation"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:sensor-system",
         "label": "Sensor System"
+      },
+      {
+        "@id": "urn:ngm:class:environmental-model",
+        "label": "Environmental Model"
+      },
+      {
+        "@id": "urn:ngm:class:recursive-estimation",
+        "label": "Recursive Estimation"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:path-planning",
-        "label": "RB-1016-path-planning"
+        "label": "Path Planning"
       },
       {
         "@id": "urn:ngm:class:navigation",
         "label": "Navigation"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:probabilistic-robotics",
+        "label": "Probabilistic Robotics"
       }
     ],
     "uses": [
@@ -154,24 +190,82 @@ public:: true
         "label": "Probabilistic Methods"
       },
       {
-        "@id": "urn:ngm:class:rb-1008-odometry",
-        "label": "RB-1008-odometry"
+        "@id": "urn:ngm:class:odometry",
+        "label": "Odometry"
       },
       {
         "@id": "urn:ngm:class:monte-carlo-localization",
-        "label": "RB-1014-monte-carlo-localization"
+        "label": "Monte Carlo Localization"
       },
       {
         "@id": "urn:ngm:class:kalman-filter",
-        "label": "RB-1015-kalman-filter"
+        "label": "Kalman Filter"
+      },
+      {
+        "@id": "urn:ngm:class:bayes-filter",
+        "label": "Bayes Filter"
+      },
+      {
+        "@id": "urn:ngm:class:motion-model",
+        "label": "Motion Model"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-model",
+        "label": "Sensor Model"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:autonomous-vehicles",
+        "label": "Autonomous Vehicles"
+      },
+      {
+        "@id": "urn:ngm:class:mobile-robotics",
+        "label": "Mobile Robotics"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:mapping",
+        "label": "Mapping"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:indoor-positioning-systems",
+        "label": "Indoor Positioning Systems"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:robot-pose",
+        "label": "Robot Pose"
+      },
+      {
+        "@id": "urn:ngm:class:uncertainty",
+        "label": "Uncertainty"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:robot-localization",
+      "label": "Robot Localization"
+    },
+    {
+      "@id": "urn:ngm:class:pose-estimation",
+      "label": "Pose Estimation"
+    }
+  ],
+  "quality": 0.70,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

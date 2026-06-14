@@ -62,14 +62,70 @@ public:: true
   "@id": "urn:ngm:class:token-standard",
   "@type": "Class",
   "label": "Token Standard",
-  "definition": "Technical specification defining rules, interfaces, and functions that smart contract tokens must implement to ensure interoperability within a blockchain ecosystem.",
+  "definition": "Technical specification defining rules, interfaces, and functions that smart contract tokens must implement to ensure interoperability within a blockchain ecosystem, exemplified by ERC-20 (fungible tokens), ERC-721 (NFTs), and ERC-1155 (multi-token), establishing common APIs for transfers, balance queries, approvals, and metadata across wallets, exchanges, and decentralised applications.",
   "domain": "blockchain",
   "maturity": "emerging",
+  "subClassOf": {
+    "@id": "urn:ngm:class:bc-token-and-asset",
+    "label": "Token and Asset"
+  },
   "relations": {
-    "enables": [
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:erc-20",
+        "label": "ERC-20"
+      },
+      {
+        "@id": "urn:ngm:class:erc-721",
+        "label": "ERC-721"
+      },
+      {
+        "@id": "urn:ngm:class:erc-1155",
+        "label": "ERC-1155"
+      },
+      {
+        "@id": "urn:ngm:class:token-interface",
+        "label": "Token Interface"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:blockchain-protocol",
+        "label": "Blockchain Protocol"
+      }
+    ],
+    "requires": [
       {
         "@id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:application-binary-interface",
+        "label": "Application Binary Interface"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:decentralized-exchange",
+        "label": "Decentralized Exchange"
+      },
+      {
+        "@id": "urn:ngm:class:de-fi",
+        "label": "DeFi"
+      },
+      {
+        "@id": "urn:ngm:class:token-interoperability",
+        "label": "Token Interoperability"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:ethereum-virtual-machine",
+        "label": "Ethereum Virtual Machine"
       }
     ],
     "implements": [
@@ -78,29 +134,87 @@ public:: true
         "label": "Fungibility"
       },
       {
-        "@id": "urn:ngm:class:blockchain",
-        "label": "Blockchain"
+        "@id": "urn:ngm:class:token-approval-mechanism",
+        "label": "Token Approval Mechanism"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "@id": "urn:ngm:class:event-log",
+        "label": "Event Log"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:nft",
+        "label": "NFT"
+      },
+      {
+        "@id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      },
+      {
+        "@id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:ethereum-improvement-proposal",
+        "label": "Ethereum Improvement Proposal"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:native-currency",
+        "label": "Native Currency"
+      },
+      {
+        "@id": "urn:ngm:class:cbdc",
+        "label": "CBDC"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:digital-asset-standard",
+        "label": "Digital Asset Standard"
+      },
+      {
+        "@id": "urn:ngm:class:data-schema",
+        "label": "Data Schema"
       }
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:nft",
-        "label": "NFT"
+        "@id": "urn:ngm:class:wallet",
+        "label": "Wallet"
+      },
+      {
+        "@id": "urn:ngm:class:token-metadata",
+        "label": "Token Metadata"
       }
     ]
   },
-  "quality": 0.5,
-  "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
-  },
-  "subClassOf": [
+  "sameAs": [
     {
-      "@id": "urn:ngm:class:bc-token-and-asset",
-      "label": "Token and Asset"
+      "@id": "urn:ngm:class:token-interface-specification",
+      "label": "Token Interface Specification"
+    },
+    {
+      "@id": "urn:ngm:class:smart-contract-token-standard",
+      "label": "Smart Contract Token Standard"
     }
-  ]
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

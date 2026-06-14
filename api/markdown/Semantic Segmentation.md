@@ -79,37 +79,63 @@ alias:: SemanticSegmentation
   "@id": "urn:ngm:class:semantic-segmentation",
   "@type": "Class",
   "label": "Semantic Segmentation",
-  "definition": "Semantic Segmentation is the computer vision task of assigning a class label to every pixel in an image, partitioning the image into semantically meaningful regions without distinguishing between individual object instances.",
+  "definition": "Semantic Segmentation is the computer vision task of assigning a class label to every pixel in an image, partitioning the image into semantically meaningful regions without distinguishing between individual object instances. Architectures such as FCN, U-Net, and DeepLab produce dense pixel-wise predictions enabling scene understanding in autonomous driving, medical imaging, and satellite analysis.",
   "domain": "artificial-intelligence",
   "maturity": "emerging",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique"
-    },
-    {
-      "@id": "urn:ngm:class:computer-vision",
-      "label": "Computer Vision"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:computer-vision",
+    "label": "Computer Vision"
+  },
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}
+      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
+      {"@id": "urn:ngm:class:image-understanding", "label": "Image Understanding"}
     ],
-    "contrastsWith": [
-      {"@id": "urn:ngm:class:instance-segmentation", "label": "Instance Segmentation"},
-      {"@id": "urn:ngm:class:panoptic-segmentation", "label": "Panoptic Segmentation"}
+    "hasPart": [
+      {"@id": "urn:ngm:class:pixel-classification", "label": "Pixel Classification"},
+      {"@id": "urn:ngm:class:feature-extraction", "label": "Feature Extraction"},
+      {"@id": "urn:ngm:class:encoder-decoder-architecture", "label": "Encoder-Decoder Architecture"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:convolutional-neural-network", "label": "Convolutional Neural Network"},
+      {"@id": "urn:ngm:class:annotated-training-data", "label": "Annotated Training Data"},
+      {"@id": "urn:ngm:class:gpu-computing", "label": "GPU Computing"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:scene-understanding", "label": "Scene Understanding"},
+      {"@id": "urn:ngm:class:autonomous-driving", "label": "Autonomous Driving"},
+      {"@id": "urn:ngm:class:medical-image-analysis", "label": "Medical Image Analysis"},
+      {"@id": "urn:ngm:class:object-detection", "label": "Object Detection"},
+      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
+      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"},
+      {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:instance-segmentation", "label": "Instance Segmentation"},
+      {"@id": "urn:ngm:class:panoptic-segmentation", "label": "Panoptic Segmentation"},
       {"@id": "urn:ngm:class:object-detection", "label": "Object Detection"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:image-segmentation", "label": "Image Segmentation"},
+      {"@id": "urn:ngm:class:point-cloud-segmentation", "label": "Point Cloud Segmentation"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
+      {"@id": "urn:ngm:class:robotics-perception", "label": "Robotics Perception"}
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {"@id": "urn:ngm:class:dense-prediction", "label": "Dense Prediction"},
+    {"@id": "urn:ngm:class:pixel-wise-classification", "label": "Pixel-Wise Classification"}
+  ],
+  "quality": 0.65,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

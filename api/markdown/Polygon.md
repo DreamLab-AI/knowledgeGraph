@@ -81,20 +81,120 @@ public:: true
       {
         "@id": "urn:ngm:class:proof-of-stake",
         "label": "Proof of Stake"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "@id": "urn:ngm:class:validator-node",
+        "label": "Validator Node"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:decentralised-finance-domain",
         "label": "Decentralised Finance Domain"
+      },
+      {
+        "@id": "urn:ngm:class:layer-2-scaling",
+        "label": "Layer 2 Scaling"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-interoperability",
+        "label": "Blockchain Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:rollup",
+        "label": "Rollup"
+      },
+      {
+        "@id": "urn:ngm:class:zk-rollup",
+        "label": "ZK-Rollup"
+      },
+      {
+        "@id": "urn:ngm:class:ethereum-virtual-machine",
+        "label": "Ethereum Virtual Machine"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:zk-evm",
+        "label": "zkEVM"
+      },
+      {
+        "@id": "urn:ngm:class:staking",
+        "label": "Staking"
+      },
+      {
+        "@id": "urn:ngm:class:validity-proof",
+        "label": "Validity Proof"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:arbitrum",
+        "label": "Arbitrum"
+      },
+      {
+        "@id": "urn:ngm:class:zk-sync",
+        "label": "zkSync"
+      },
+      {
+        "@id": "urn:ngm:class:optimism",
+        "label": "Optimism"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:decentralised-application",
+        "label": "Decentralised Application"
+      },
+      {
+        "@id": "urn:ngm:class:non-fungible-token",
+        "label": "Non-Fungible Token"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:sidechain",
+        "label": "Sidechain"
+      },
+      {
+        "@id": "urn:ngm:class:gas-fee",
+        "label": "Gas Fee"
+      },
+      {
+        "@id": "urn:ngm:class:cross-chain-bridge",
+        "label": "Cross-Chain Bridge"
+      },
+      {
+        "@id": "urn:ngm:class:token-standard",
+        "label": "Token Standard"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:matic-network",
+      "label": "Matic Network"
+    },
+    {
+      "@id": "urn:ngm:class:polygon-pos",
+      "label": "Polygon PoS"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

@@ -1,0 +1,130 @@
+{
+  "id": "urn:visionflow:page:block-trails",
+  "title": "Block Trails",
+  "slug": "block-trails",
+  "public": true,
+  "classIri": "urn:ngm:class:block-trails",
+  "domain": "blockchain",
+  "definition": "Block Trails is a minimal Bitcoin-native state-anchoring primitive that records an evolving sequence of states as a cryptographic chain of key tweaks mirroring a Bitcoin spend chain. Each state transition derives a tweak t_i = SHA256(state_i) mod n which is scalar-added to the previous key (d_i = d_(i-1) + t_i), producing a fresh pay-to-Taproot (P2TR) key-path output; spending that output to create the next commitment makes every UTXO a single-use seal. The state bytes themselves live off-chain on IPFS, Git, or Nostr relays, while Bitcoin's UTXO model supplies ordering and double-spend protection so that exactly one valid history can exist. Because trails use full secp256k1 keys, existing Nostr identities can own and advance a trail without key conversion. Application semantics are defined by Profiles such as MRC20 (a fungible-token ledger) and Git-mark (anchoring Git commits).",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:client-side-validation",
+      "label": "Client-Side Validation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.74,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:single-use-seals",
+        "label": "Single Use Seals"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:provenance-tracking",
+        "label": "Provenance Tracking"
+      },
+      {
+        "id": "urn:ngm:class:fungible-token",
+        "label": "Fungible Token"
+      },
+      {
+        "id": "urn:ngm:class:asset-tokenisation",
+        "label": "Asset Tokenisation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:bitcoin-network",
+        "label": "Bitcoin Network"
+      },
+      {
+        "id": "urn:ngm:class:utxo-model",
+        "label": "UTXO Model"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-publication",
+        "label": "Proof of Publication"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:client-side-validation",
+        "label": "Client-Side Validation"
+      },
+      {
+        "id": "urn:ngm:class:single-use-seals",
+        "label": "Single Use Seals"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:rgb-protocol",
+        "label": "RGB Protocol"
+      },
+      {
+        "id": "urn:ngm:class:taproot-assets",
+        "label": "Taproot Assets"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:nostr",
+        "label": "Nostr"
+      },
+      {
+        "id": "urn:ngm:class:content-addressed-storage",
+        "label": "Content-Addressed Storage"
+      },
+      {
+        "id": "urn:ngm:class:git",
+        "label": "Git"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:taproot",
+        "label": "Taproot"
+      },
+      {
+        "id": "urn:ngm:class:secp256k1",
+        "label": "secp256k1"
+      },
+      {
+        "id": "urn:ngm:class:schnorr-signature",
+        "label": "Schnorr Signature"
+      },
+      {
+        "id": "urn:ngm:class:sha-256",
+        "label": "SHA-256"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-commitment",
+        "label": "Cryptographic Commitment"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:layer-2-scaling",
+        "label": "Layer 2 Scaling"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-application",
+        "label": "Decentralised Application"
+      },
+      {
+        "id": "urn:ngm:class:rgb-and-client-side-validation",
+        "label": "RGB and Client Side Validation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

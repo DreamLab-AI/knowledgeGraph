@@ -63,20 +63,56 @@ alias:: AugmentedReality
   "@id": "urn:ngm:class:augmented-reality",
   "@type": "Class",
   "label": "Augmented Reality",
-  "definition": "Augmented Reality (AR) is a technology that overlays digital content onto the real world in real-time, enhancing users' perception of their physical environment through smartphones, head-mounted displays, or smart glasses.",
+  "definition": "Augmented Reality (AR) is a technology that overlays digital content onto the real world in real-time, enhancing users' perception of their physical environment through smartphones, head-mounted displays, or smart glasses. AR systems require coupling of real and virtual environments, real-time interaction, and precise 3D registration of virtual objects aligned with physical space.",
   "domain": "spatial-computing",
   "maturity": "established",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:sc-platform-and-environment",
-      "label": "Platform and Environment"
-    },
-    {
-      "@id": "urn:ngm:class:extended-reality",
-      "label": "Extended Reality"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:extended-reality",
+    "label": "Extended Reality"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:spatial-mapping",
+        "label": "Spatial Mapping"
+      },
+      {
+        "@id": "urn:ngm:class:marker-tracking",
+        "label": "Marker Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:occlusion-handling",
+        "label": "Occlusion Handling"
+      },
+      {
+        "@id": "urn:ngm:class:light-estimation",
+        "label": "Light Estimation"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:inertial-measurement-unit",
+        "label": "Inertial Measurement Unit"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      }
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:contextual-information-display",
@@ -89,14 +125,110 @@ alias:: AugmentedReality
       {
         "@id": "urn:ngm:class:immersive-experiences",
         "label": "Immersive Experiences"
+      },
+      {
+        "@id": "urn:ngm:class:surgical-guidance",
+        "label": "Surgical Guidance"
+      },
+      {
+        "@id": "urn:ngm:class:industrial-maintenance",
+        "label": "Industrial Maintenance"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:simultaneous-localisation-and-mapping",
+        "label": "Simultaneous Localisation and Mapping"
+      },
+      {
+        "@id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:head-mounted-display",
+        "label": "Head-Mounted Display"
+      },
+      {
+        "@id": "urn:ngm:class:depth-sensor",
+        "label": "Depth Sensor"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:remote-collaboration",
+        "label": "Remote Collaboration"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:openxr",
+        "label": "OpenXR"
+      },
+      {
+        "@id": "urn:ngm:class:webxr",
+        "label": "WebXR"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "@id": "urn:ngm:class:mixed-reality",
+        "label": "Mixed Reality"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:gesture-recognition",
+        "label": "Gesture Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:scene-understanding",
+        "label": "Scene Understanding"
       }
     ]
   },
-  "quality": 0.35,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:ar",
+      "label": "AR"
+    },
+    {
+      "@id": "urn:ngm:class:mixed-reality-overlay",
+      "label": "Mixed Reality Overlay"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

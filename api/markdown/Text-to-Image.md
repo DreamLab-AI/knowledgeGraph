@@ -50,36 +50,57 @@ alias:: Text to Image
   "definition": "A generative AI capability that synthesises visual imagery from natural language textual descriptions. Systems such as diffusion models iteratively denoise latent representations conditioned on text embeddings, enabling creation of photorealistic and artistic images from prompts without requiring explicit pixel-level instructions.",
   "domain": "artificial-intelligence",
   "maturity": "established",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:ai-application",
-      "label": "AI Application"
-    },
-    {
-      "@id": "urn:ngm:class:generative-ai",
-      "label": "Generative AI"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:generative-ai",
+    "label": "Generative AI"
+  },
   "relations": {
     "uses": [
       {"@id": "urn:ngm:class:diffusion-model", "label": "Diffusion Model"},
       {"@id": "urn:ngm:class:transformer", "label": "Transformer"},
-      {"@id": "urn:ngm:class:prompt-engineering", "label": "Prompt Engineering"}
+      {"@id": "urn:ngm:class:prompt-engineering", "label": "Prompt Engineering"},
+      {"@id": "urn:ngm:class:clip", "label": "CLIP"},
+      {"@id": "urn:ngm:class:text-encoder", "label": "Text Encoder"},
+      {"@id": "urn:ngm:class:latent-diffusion", "label": "Latent Diffusion"},
+      {"@id": "urn:ngm:class:variational-autoencoder", "label": "Variational Autoencoder"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:text-embedding", "label": "Text Embedding"},
+      {"@id": "urn:ngm:class:training-dataset", "label": "Training Dataset"},
+      {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:3-d-content-generation", "label": "3D Content Generation"},
+      {"@id": "urn:ngm:class:synthetic-data-generation", "label": "Synthetic Data Generation"},
+      {"@id": "urn:ngm:class:digital-art-creation", "label": "Digital Art Creation"},
+      {"@id": "urn:ngm:class:inpainting", "label": "Inpainting"},
+      {"@id": "urn:ngm:class:concept-visualisation", "label": "Concept Visualisation"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:generative-ai-engineering", "label": "Generative AI Engineering"},
+      {"@id": "urn:ngm:class:multimodal-ai", "label": "Multimodal AI"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:text-to-video", "label": "Text-to-Video"},
+      {"@id": "urn:ngm:class:image-to-text", "label": "Image-to-Text"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:digital-content-creation", "label": "Digital Content Creation"},
+      {"@id": "urn:ngm:class:virtual-world-generation", "label": "Virtual World Generation"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:image-generation", "label": "Image Generation"},
-      {"@id": "urn:ngm:class:multimodal-ai-architecture-ai", "label": "Multimodal AI"},
-      {"@id": "urn:ngm:class:diffusion-models", "label": "Diffusion Models"},
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
-    ],
-    "enables": [
-      {"@id": "urn:ngm:class:3-d-content-generation", "label": "3D Content Generation"}
-    ],
-    "partOf": [
-      {"@id": "urn:ngm:class:generative-ai-engineering", "label": "Generative AI Engineering"}
+      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
+      {"@id": "urn:ngm:class:stable-diffusion", "label": "Stable Diffusion"},
+      {"@id": "urn:ngm:class:generative-adversarial-network", "label": "Generative Adversarial Network"},
+      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine-Tuning"}
     ]
   },
-  "quality": 0.8,
+  "sameAs": [
+    {"@id": "urn:ngm:class:text-conditioned-image-synthesis", "label": "Text-Conditioned Image Synthesis"},
+    {"@id": "urn:ngm:class:text-driven-image-generation", "label": "Text-Driven Image Generation"}
+  ],
+  "quality": 0.75,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

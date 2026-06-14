@@ -90,9 +90,13 @@ public:: true
   "@id": "urn:ngm:class:api-standard",
   "@type": "Class",
   "label": "API Standard",
-  "definition": "Specification defining how independent software components communicate within metaverse systems, establishing protocols and data formats for interoperability.",
+  "definition": "Specification defining how independent software components communicate, establishing protocols, data formats, versioning rules, and authentication mechanisms to ensure interoperability across systems and platforms.",
   "domain": "infrastructure",
   "maturity": "established",
+  "subClassOf": {
+    "@id": "urn:ngm:class:infra-network-and-comms",
+    "label": "Network and Communication"
+  },
   "relations": {
     "hasPart": [
       {
@@ -106,12 +110,20 @@ public:: true
       {
         "@id": "urn:ngm:class:communication-protocol",
         "label": "Communication Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:api-versioning",
+        "label": "API Versioning"
       }
     ],
     "requires": [
       {
         "@id": "urn:ngm:class:technical-specification-document",
         "label": "Technical Specification Document"
+      },
+      {
+        "@id": "urn:ngm:class:schema-definition",
+        "label": "Schema Definition"
       }
     ],
     "enables": [
@@ -122,27 +134,113 @@ public:: true
       {
         "@id": "urn:ngm:class:system-interoperability",
         "label": "System Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:microservices-architecture",
+        "label": "Microservices Architecture"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:network-transport-layer",
+        "label": "Network Transport Layer"
+      },
+      {
+        "@id": "urn:ngm:class:identity-and-access-management",
+        "label": "Identity and Access Management"
       }
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:technology-infrastructure-domain",
-        "label": "infrastructure"
+        "@id": "urn:ngm:class:openapi-specification",
+        "label": "OpenAPI Specification"
+      },
+      {
+        "@id": "urn:ngm:class:rest-architectural-style",
+        "label": "REST Architectural Style"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:json-data-format",
+        "label": "JSON Data Format"
+      },
+      {
+        "@id": "urn:ngm:class:http-protocol",
+        "label": "HTTP Protocol"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      },
+      {
+        "@id": "urn:ngm:class:developer-portal",
+        "label": "Developer Portal"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      },
+      {
+        "@id": "urn:ngm:class:w3c",
+        "label": "W3C"
+      },
+      {
+        "@id": "urn:ngm:class:oma3",
+        "label": "OMA3"
+      },
+      {
+        "@id": "urn:ngm:class:etsi",
+        "label": "ETSI"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:proprietary-interface",
+        "label": "Proprietary Interface"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-smart-contract",
+        "label": "Blockchain Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing-runtime",
+        "label": "Spatial Computing Runtime"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:service-mesh",
+        "label": "Service Mesh"
       }
     ]
   },
-  "quality": 0.35,
-  "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
-  },
-  "subClassOf": [
+  "sameAs": [
     {
-      "@id": "urn:ngm:class:infra-network-and-comms",
-      "label": "Network and Communication"
+      "@id": "urn:ngm:class:web-api-specification",
+      "label": "Web API Specification"
+    },
+    {
+      "@id": "urn:ngm:class:interface-specification",
+      "label": "Interface Specification"
     }
-  ]
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

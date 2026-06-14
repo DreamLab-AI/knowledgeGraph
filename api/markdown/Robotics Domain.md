@@ -98,36 +98,70 @@ alias:: RoboticsDomain
   "definition": "The Robotics Domain is a top-level knowledge domain encompassing the design, construction, operation, and governance of intelligent machines. It provides a formal ontological framework — anchored in standards such as IEEE 1872 (CORA) — for representing robot architectures, sensor systems, actuators, motion planning, perception, and human-robot interaction, enabling unambiguous knowledge transfer among humans, robots, and AI systems.",
   "domain": "robotics",
   "maturity": "emerging",
-  "qualityScore": 0.75,
-  "quality": 0.75,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:technology-domain",
-      "label": "Technology Domain"
-    }
-  ],
+  "qualityScore": 0.72,
+  "quality": 0.72,
+  "subClassOf": {
+    "@id": "urn:ngm:class:technology-domain",
+    "label": "Technology Domain"
+  },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:robo-actuation-and-control", "label": "Actuation and Control"},
-      {"@id": "urn:ngm:class:robo-human-robot-interaction", "label": "Human-Robot Interaction"},
+      {"@id": "urn:ngm:class:actuation-and-control", "label": "Actuation and Control"},
+      {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human-Robot Interaction"},
       {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"},
       {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
       {"@id": "urn:ngm:class:perception-system", "label": "Perception System"},
-      {"@id": "urn:ngm:class:autonomous-robot", "label": "Autonomous Robot"}
+      {"@id": "urn:ngm:class:autonomous-robot", "label": "Autonomous Robot"},
+      {"@id": "urn:ngm:class:industrial-automation", "label": "Industrial Automation"},
+      {"@id": "urn:ngm:class:robot-kinematics", "label": "Robot Kinematics"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:embedded-systems", "label": "Embedded Systems"},
+      {"@id": "urn:ngm:class:control-systems", "label": "Control Systems"},
+      {"@id": "urn:ngm:class:real-time-operating-system", "label": "Real-Time Operating System"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"},
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
+      {"@id": "urn:ngm:class:simultaneous-localization-and-mapping", "label": "Simultaneous Localisation and Mapping"},
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"},
+      {"@id": "urn:ngm:class:collaborative-robotics", "label": "Collaborative Robotics"},
+      {"@id": "urn:ngm:class:robotic-process-automation", "label": "Robotic Process Automation"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
+      {"@id": "urn:ngm:class:mechatronics", "label": "Mechatronics"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:ieee-1872", "label": "IEEE 1872 CORA Ontology"},
+      {"@id": "urn:ngm:class:iso-10218", "label": "ISO 10218 Industrial Robot Safety"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:virtual-agent", "label": "Virtual Agent"},
+      {"@id": "urn:ngm:class:software-automation", "label": "Software Automation"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
+      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
+      {"@id": "urn:ngm:class:internet-of-things", "label": "Internet of Things"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human Robot Interaction"},
-      {"@id": "urn:ngm:class:robotics", "label": "Robotics"}
+      {"@id": "urn:ngm:class:robotics", "label": "Robotics"},
+      {"@id": "urn:ngm:class:swarm-robotics", "label": "Swarm Robotics"}
     ]
   },
+  "sameAs": [
+    {"@id": "urn:ngm:class:robotics", "label": "Robotics"},
+    {"@id": "urn:ngm:class:automated-systems-domain", "label": "Automated Systems Domain"}
+  ],
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

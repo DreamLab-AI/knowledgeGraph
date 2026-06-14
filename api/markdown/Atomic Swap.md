@@ -98,23 +98,11 @@ alias:: Atomic Swaps, AtomicSwap
   "definition": "Trustless peer-to-peer cryptocurrency exchange mechanism across different blockchains using Hash Time-Locked Contracts (HTLCs) that guarantees atomic execution where the swap either completes fully or not at all, eliminating counterparty risk without requiring centralized intermediaries.",
   "domain": "blockchain",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:bc-protocol-and-consensus",
-      "label": "Protocol and Consensus"
-    },
-    {
-      "@id": "urn:ngm:class:blockchain-protocol",
-      "label": "Blockchain Protocol"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:blockchain-protocol",
+    "label": "Blockchain Protocol"
+  },
   "relations": {
-    "enables": [
-      {
-        "@id": "urn:ngm:class:cross-chain-interoperability",
-        "label": "Cross-Chain Interoperability"
-      }
-    ],
     "implements": [
       {
         "@id": "urn:ngm:class:hash-time-locked-contract",
@@ -125,14 +113,138 @@ alias:: Atomic Swaps, AtomicSwap
       {
         "@id": "urn:ngm:class:hash-function",
         "label": "Hash Function"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-commitment-scheme",
+        "label": "Cryptographic Commitment Scheme"
+      },
+      {
+        "@id": "urn:ngm:class:time-lock-encryption",
+        "label": "Time-Lock Encryption"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:cross-chain-interoperability",
+        "label": "Cross-Chain Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-exchange",
+        "label": "Decentralized Exchange"
+      },
+      {
+        "@id": "urn:ngm:class:cross-chain-arbitrage",
+        "label": "Cross-Chain Arbitrage"
+      },
+      {
+        "@id": "urn:ngm:class:non-custodial-trading",
+        "label": "Non-Custodial Trading"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-scripting-language",
+        "label": "Blockchain Scripting Language"
+      },
+      {
+        "@id": "urn:ngm:class:payment-channel",
+        "label": "Payment Channel"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      },
+      {
+        "@id": "urn:ngm:class:submarine-swap",
+        "label": "Submarine Swap"
+      },
+      {
+        "@id": "urn:ngm:class:adaptor-signature",
+        "label": "Adaptor Signature"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:cross-chain-bridge",
+        "label": "Cross-Chain Bridge"
+      },
+      {
+        "@id": "urn:ngm:class:centralized-exchange",
+        "label": "Centralized Exchange"
+      },
+      {
+        "@id": "urn:ngm:class:wrapped-token",
+        "label": "Wrapped Token"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:decentralized-finance",
+        "label": "Decentralized Finance"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-economy",
+        "label": "Virtual Economy"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      },
+      {
+        "@id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "@id": "urn:ngm:class:erc-20-token",
+        "label": "ERC-20 Token"
+      },
+      {
+        "@id": "urn:ngm:class:polkadot",
+        "label": "Polkadot"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:cross-chain-atomic-swap",
+      "label": "Cross-Chain Atomic Swap"
+    },
+    {
+      "@id": "urn:ngm:class:trustless-swap",
+      "label": "Trustless Swap"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

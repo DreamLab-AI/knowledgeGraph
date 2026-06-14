@@ -115,20 +115,24 @@ alias:: InverseKinematics, RB-1006-inverse-kinematics
   "@id": "urn:ngm:class:inverse-kinematics",
   "@type": "Class",
   "label": "Inverse Kinematics",
-  "definition": "The process of determining the joint parameters (angles or displacements) required to place a robot's end-effector at a desired position and orientation in Cartesian space. It maps from task space to joint space.",
+  "definition": "The process of determining the joint parameters (angles or displacements) required to place a robot's end-effector at a desired position and orientation in Cartesian space. It maps from task space to joint space, inverting the forward kinematic function and resolving ambiguities such as multiple solutions, singularities, and joint-limit violations.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:robo-actuation-and-control",
-      "label": "Actuation and Control"
-    },
-    {
-      "@id": "urn:ngm:class:kinematics",
-      "label": "Kinematics"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:kinematics",
+    "label": "Kinematics"
+  },
   "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:robot-motion-planning",
+        "label": "Robot Motion Planning"
+      },
+      {
+        "@id": "urn:ngm:class:robo-actuation-and-control",
+        "label": "Actuation and Control"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:kinematic-model",
@@ -137,16 +141,46 @@ alias:: InverseKinematics, RB-1006-inverse-kinematics
       {
         "@id": "urn:ngm:class:target-pose",
         "label": "Target Pose"
+      },
+      {
+        "@id": "urn:ngm:class:joint-configuration",
+        "label": "Joint Configuration"
+      },
+      {
+        "@id": "urn:ngm:class:degrees-of-freedom",
+        "label": "Degrees of Freedom"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:path-planning",
-        "label": "RB-1016-path-planning"
+        "label": "Path Planning"
       },
       {
         "@id": "urn:ngm:class:robot-control",
         "label": "Robot Control"
+      },
+      {
+        "@id": "urn:ngm:class:teleoperation",
+        "label": "Teleoperation"
+      },
+      {
+        "@id": "urn:ngm:class:computer-animation",
+        "label": "Computer Animation"
+      },
+      {
+        "@id": "urn:ngm:class:surgical-robotics",
+        "label": "Surgical Robotics"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:forward-kinematics",
+        "label": "Forward Kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:coordinate-frame",
+        "label": "Coordinate Frame"
       }
     ],
     "uses": [
@@ -161,14 +195,70 @@ alias:: InverseKinematics, RB-1006-inverse-kinematics
       {
         "@id": "urn:ngm:class:numerical-methods",
         "label": "Numerical Methods"
+      },
+      {
+        "@id": "urn:ngm:class:pseudoinverse",
+        "label": "Pseudoinverse"
+      },
+      {
+        "@id": "urn:ngm:class:optimization",
+        "label": "Optimization"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:forward-kinematics",
+        "label": "Forward Kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:singularities",
+        "label": "Singularities"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:joint-limits",
+        "label": "Joint Limits"
+      },
+      {
+        "@id": "urn:ngm:class:workspace",
+        "label": "Workspace"
+      },
+      {
+        "@id": "urn:ngm:class:redundant-robot",
+        "label": "Redundant Robot"
+      },
+      {
+        "@id": "urn:ngm:class:end-effector",
+        "label": "End-Effector"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:character-animation",
+        "label": "Character Animation"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-reality-interaction",
+        "label": "Virtual Reality Interaction"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:ik-solver",
+      "label": "IK Solver"
+    },
+    {
+      "@id": "urn:ngm:class:joint-space-mapping",
+      "label": "Joint Space Mapping"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

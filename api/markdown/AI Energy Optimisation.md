@@ -54,39 +54,155 @@ public:: true
   "@id": "urn:ngm:class:ai-energy-optimisation",
   "@type": "Class",
   "label": "AI Energy Optimisation",
-  "definition": "The set of techniques and engineering practices that reduce the energy consumed by training and running artificial intelligence systems while preserving acceptable task performance.",
+  "definition": "The set of techniques and engineering practices that reduce the energy consumed by training and running artificial intelligence systems while preserving acceptable task performance, spanning model compression, efficient hardware selection, workload scheduling, and data-centre operation.",
   "domain": "artificial-intelligence",
   "maturity": "growing",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:artificial-intelligence",
-      "label": "Artificial Intelligence"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:artificial-intelligence",
+    "label": "Artificial Intelligence"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:model-quantisation",
+        "label": "Model Quantisation"
+      },
+      {
+        "@id": "urn:ngm:class:model-pruning",
+        "label": "Model Pruning"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-distillation",
+        "label": "Knowledge Distillation"
+      },
+      {
+        "@id": "urn:ngm:class:neural-architecture-search",
+        "label": "Neural Architecture Search"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:sustainable-ai",
+        "label": "Sustainable AI"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:hardware-acceleration",
         "label": "Hardware Acceleration"
       },
       {
-        "@id": "urn:ngm:class:knowledge-distillation",
-        "label": "Knowledge Distillation"
+        "@id": "urn:ngm:class:energy-measurement",
+        "label": "Energy Measurement"
+      },
+      {
+        "@id": "urn:ngm:class:ml-benchmarking",
+        "label": "ML Benchmarking"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:edge-ai",
         "label": "Edge AI"
+      },
+      {
+        "@id": "urn:ngm:class:green-data-centre",
+        "label": "Green Data Centre"
+      },
+      {
+        "@id": "urn:ngm:class:low-power-inference",
+        "label": "Low-Power Inference"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-computing",
+        "label": "GPU Computing"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-aware-computing",
+        "label": "Carbon-Aware Computing"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:mixed-precision-training",
+        "label": "Mixed Precision Training"
+      },
+      {
+        "@id": "urn:ngm:class:sparse-computation",
+        "label": "Sparse Computation"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:high-performance-computing",
+        "label": "High-Performance Computing"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:data-centre-infrastructure",
+        "label": "Data Centre Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:renewable-energy",
+        "label": "Renewable Energy"
+      },
+      {
+        "@id": "urn:ngm:class:environmental-sustainability",
+        "label": "Environmental Sustainability"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "@id": "urn:ngm:class:efficient-transformers",
+        "label": "Efficient Transformers"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:green-ai",
+      "label": "Green AI"
+    },
+    {
+      "@id": "urn:ngm:class:efficient-ai",
+      "label": "Efficient AI"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

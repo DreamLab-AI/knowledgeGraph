@@ -74,20 +74,32 @@ public:: true
   "@id": "urn:ngm:class:digital-economy",
   "@type": "Class",
   "label": "Digital Economy",
-  "definition": "The interconnected system of economic activities, transactions, and value creation occurring through digital platforms, blockchain networks, and virtual environments, encompassing cryptocurrency markets, NFT trading, virtual real estate, and the tokenised exchange of goods and services in the met...",
-  "domain": "spatial-computing",
+  "definition": "The interconnected system of economic activities, transactions, and value creation occurring through digital platforms, blockchain networks, and virtual environments, encompassing cryptocurrency markets, NFT trading, virtual real estate, and the tokenised exchange of goods and services in the metaverse.",
+  "domain": "finance",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:sc-platform-and-environment",
-      "label": "Platform and Environment"
-    },
-    {
-      "@id": "urn:ngm:class:economic-systems",
-      "label": "Economic Systems"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:economic-systems",
+    "label": "Economic Systems"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "@id": "urn:ngm:class:nft-marketplace",
+        "label": "NFT Marketplace"
+      },
+      {
+        "@id": "urn:ngm:class:cryptocurrency-exchange",
+        "label": "Cryptocurrency Exchange"
+      },
+      {
+        "@id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:blockchain-infrastructure",
@@ -100,6 +112,10 @@ public:: true
       {
         "@id": "urn:ngm:class:smart-contracts",
         "label": "Smart Contracts"
+      },
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
       }
     ],
     "enables": [
@@ -108,20 +124,92 @@ public:: true
         "label": "Digital Value Exchange"
       },
       {
-        "@id": "urn:ngm:class:token-economics",
-        "label": "Token Economics"
-      },
-      {
         "@id": "urn:ngm:class:virtual-commerce",
         "label": "Virtual Commerce"
+      },
+      {
+        "@id": "urn:ngm:class:play-to-earn",
+        "label": "Play-to-Earn"
+      },
+      {
+        "@id": "urn:ngm:class:creator-monetisation",
+        "label": "Creator Monetisation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:internet-infrastructure",
+        "label": "Internet Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "@id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:financial-inclusion",
+        "label": "Financial Inclusion"
+      },
+      {
+        "@id": "urn:ngm:class:cross-border-payments",
+        "label": "Cross-Border Payments"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:traditional-economy",
+        "label": "Traditional Economy"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:platform-economy",
+        "label": "Platform Economy"
+      },
+      {
+        "@id": "urn:ngm:class:gig-economy",
+        "label": "Gig Economy"
+      },
+      {
+        "@id": "urn:ngm:class:open-banking",
+        "label": "Open Banking"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:e-economy",
+      "label": "E-Economy"
+    },
+    {
+      "@id": "urn:ngm:class:internet-economy",
+      "label": "Internet Economy"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

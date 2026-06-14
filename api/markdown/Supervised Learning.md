@@ -55,22 +55,50 @@ alias:: SupervisedLearning
   "@id": "urn:ngm:class:supervised-learning",
   "@type": "Class",
   "label": "Supervised Learning",
-  "definition": "Supervised Learning is the machine learning paradigm where models learn from labeled training data to predict outputs for new, unseen inputs. The learning algorithm finds patterns mapping input features to target labels, guided by a loss function measuring prediction errors.",
-  "domain": "artificial-intelligence",
+  "definition": "Supervised Learning is the machine learning paradigm where models learn from labeled training data to predict outputs for new, unseen inputs. The learning algorithm finds patterns mapping input features to target labels, guided by a loss function measuring prediction errors. Key tasks include classification (discrete labels) and regression (continuous values), spanning linear models, decision trees, support vector machines, neural networks, and ensemble methods.",
+  "domain": "machine-learning",
   "maturity": "emerging",
-  "qualityScore": 0.7,
-  "subClassOf": [
+  "qualityScore": 0.72,
+  "subClassOf": {
+    "@id": "urn:ngm:class:machine-learning",
+    "label": "Machine Learning"
+  },
+  "sameAs": [
     {
-      "@id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique"
+      "@id": "urn:ngm:class:supervised-machine-learning",
+      "label": "Supervised Machine Learning"
+    },
+    {
+      "@id": "urn:ngm:class:inductive-learning",
+      "label": "Inductive Learning"
     }
   ],
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:classification",
+        "label": "Classification"
+      },
+      {
+        "@id": "urn:ngm:class:regression",
+        "label": "Regression"
+      },
+      {
+        "@id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:training-data",
@@ -79,22 +107,32 @@ alias:: SupervisedLearning
       {
         "@id": "urn:ngm:class:loss-function",
         "label": "Loss Function"
+      },
+      {
+        "@id": "urn:ngm:class:labeled-dataset",
+        "label": "Labeled Dataset"
+      },
+      {
+        "@id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning"
-      }
-    ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:unsupervised-learning",
-        "label": "Unsupervised Learning"
       },
       {
-        "@id": "urn:ngm:class:reinforcement-learning",
-        "label": "Reinforcement Learning"
+        "@id": "urn:ngm:class:predictive-modelling",
+        "label": "Predictive Modelling"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
       }
     ],
     "uses": [
@@ -105,6 +143,62 @@ alias:: SupervisedLearning
       {
         "@id": "urn:ngm:class:gradient-descent",
         "label": "Gradient Descent"
+      },
+      {
+        "@id": "urn:ngm:class:cross-validation",
+        "label": "Cross-Validation"
+      },
+      {
+        "@id": "urn:ngm:class:regularisation",
+        "label": "Regularisation"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:decision-tree",
+        "label": "Decision Tree"
+      },
+      {
+        "@id": "urn:ngm:class:support-vector-machine",
+        "label": "Support Vector Machine"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:unsupervised-learning",
+        "label": "Unsupervised Learning"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:semi-supervised-learning",
+        "label": "Semi-Supervised Learning"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:overfitting",
+        "label": "Overfitting"
+      },
+      {
+        "@id": "urn:ngm:class:bias-variance-tradeoff",
+        "label": "Bias-Variance Tradeoff"
       }
     ]
   }

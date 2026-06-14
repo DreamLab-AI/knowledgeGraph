@@ -50,34 +50,152 @@ public:: true
   "@id": "urn:ngm:class:machine-learning-discipline-infrastructure",
   "@type": "Class",
   "label": "Machine Learning Infrastructure",
-  "definition": "Hardware and software systems that support machine learning workloads, including GPU clusters, cloud computing platforms, storage systems, and orchestration tools required for training and deploying AI models at scale.",
-  "domain": "artificial-intelligence",
+  "definition": "Hardware and software systems that support machine learning workloads, including GPU clusters, cloud computing platforms, distributed storage systems, and orchestration tools required for training and deploying AI models at scale.",
+  "domain": "machine-learning",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:ai-infrastructure",
-      "label": "AI Infrastructure (Category)"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:ai-infrastructure",
+    "label": "AI Infrastructure"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:gpu-cluster",
+        "label": "GPU Cluster"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-storage-system",
+        "label": "Distributed Storage System"
+      },
+      {
+        "@id": "urn:ngm:class:high-performance-networking",
+        "label": "High-Performance Networking"
+      },
+      {
+        "@id": "urn:ngm:class:model-serving-platform",
+        "label": "Model Serving Platform"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:container-orchestration",
+        "label": "Container Orchestration"
+      },
+      {
+        "@id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:infiniband-networking",
+        "label": "InfiniBand Networking"
+      }
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:scalable-ai-training",
         "label": "Scalable AI Training"
+      },
+      {
+        "@id": "urn:ngm:class:model-inference",
+        "label": "Model Inference"
+      },
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-accelerated-computing",
+        "label": "GPU-Accelerated Computing"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
+      },
+      {
+        "@id": "urn:ngm:class:nvidia-cuda",
+        "label": "NVIDIA CUDA"
+      },
+      {
+        "@id": "urn:ngm:class:object-storage",
+        "label": "Object Storage"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
       }
     ],
     "bridgesTo": [
       {
         "@id": "urn:ngm:class:computing-infrastructure",
         "label": "Computing Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:data-center",
+        "label": "Data Center"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:hyperscale-computing",
+        "label": "Hyperscale Computing"
+      },
+      {
+        "@id": "urn:ngm:class:tensor-processing-unit",
+        "label": "Tensor Processing Unit"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:ai-compute-infrastructure",
+      "label": "AI Compute Infrastructure"
+    },
+    {
+      "@id": "urn:ngm:class:ml-platform-infrastructure",
+      "label": "ML Platform Infrastructure"
+    }
+  ],
+  "quality": 0.68,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

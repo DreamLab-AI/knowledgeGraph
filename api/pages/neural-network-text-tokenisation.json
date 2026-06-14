@@ -4,8 +4,8 @@
   "slug": "neural-network-text-tokenisation",
   "public": true,
   "classIri": "urn:ngm:class:neural-network-text-tokenisation",
-  "domain": "artificial-intelligence",
-  "definition": "The process of breaking text into discrete units (tokens) that can be processed by neural networks, ranging from characters to subwords to whole words.",
+  "domain": "machine-learning",
+  "definition": "The process of segmenting text into discrete units (tokens) \u2014 characters, subwords, or words \u2014 that serve as the atomic inputs to neural network language models, directly determining vocabulary size, out-of-vocabulary handling, and downstream model performance.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-technique",
@@ -13,11 +13,37 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.72,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:byte-pair-encoding",
+        "label": "Byte-Pair Encoding"
+      },
+      {
+        "id": "urn:ngm:class:wordpiece-tokenisation",
+        "label": "WordPiece Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:sentencepiece-tokenisation",
+        "label": "SentencePiece Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:subword-tokenisation",
+        "label": "Subword Tokenisation"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:vocabulary",
+        "label": "Vocabulary"
+      },
+      {
+        "id": "urn:ngm:class:training-corpus",
+        "label": "Training Corpus"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:large-language-models",
@@ -26,30 +52,103 @@
       {
         "id": "urn:ngm:class:transformer-architecture",
         "label": "Transformer Architecture"
+      },
+      {
+        "id": "urn:ngm:class:text-generation",
+        "label": "Text Generation"
+      },
+      {
+        "id": "urn:ngm:class:machine-translation",
+        "label": "Machine Translation"
+      },
+      {
+        "id": "urn:ngm:class:text-classification",
+        "label": "Text Classification"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:language-model",
+        "label": "Language Model"
+      },
+      {
+        "id": "urn:ngm:class:unicode-text-encoding",
+        "label": "Unicode Text Encoding"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:text-segmentation-algorithm",
+        "label": "Text Segmentation Algorithm"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:word-level-tokenisation",
+        "label": "Word-Level Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:character-level-tokenisation",
+        "label": "Character-Level Tokenisation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:computational-linguistics",
+        "label": "Computational Linguistics"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset-tokenisation",
+        "label": "Digital Asset Tokenisation"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:neural-network",
         "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:embedding-layer",
+        "label": "Embedding Layer"
+      },
+      {
+        "id": "urn:ngm:class:statistical-language-model",
+        "label": "Statistical Language Model"
       }
     ],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:named-entity-recognition",
+        "label": "Named Entity Recognition"
+      },
+      {
+        "id": "urn:ngm:class:sentiment-analysis",
+        "label": "Sentiment Analysis"
+      },
+      {
+        "id": "urn:ngm:class:question-answering",
+        "label": "Question Answering"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [
       {
         "id": "urn:ngm:class:natural-language-processing",
         "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:text-preprocessing",
+        "label": "Text Preprocessing"
       }
     ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:text-generation",
-        "label": "Text Generation"
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:context-window",
+        "label": "Context Window"
       }
     ]
   },

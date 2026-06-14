@@ -10,7 +10,14 @@
   - bridges-to:: [[Payment Systems Domain]], [[Mechanism Design Domain]], [[Risk Management Domain]]
   - has-part:: [[Automated Market Maker]], [[Lending Protocol]], [[Stablecoin]], [[Decentralised Exchange]], [[Yield Aggregator]]
   - requires:: [[Smart Contract]], [[Digital Asset Domain]], [[Price Oracle]]
-  - enables:: [[Permissionless Lending]], [[Automated Liquidity Provision]], [[Composable Financial Products]]
+  - enables:: [[Permissionless Lending]], [[Automated Liquidity Provision]], [[Composable Financial Products]], [[Flash Loan]], [[Yield Farming]]
+  - depends-on:: [[Ethereum Virtual Machine]], [[Layer 2 Scaling]], [[Tokenisation Standard]]
+  - implements:: [[Mechanism Design Domain]], [[Token Economic Model]]
+  - uses:: [[Liquidity Pool]], [[Governance Token]]
+  - supports:: [[Financial Inclusion]], [[Cross-Border Payment]]
+  - standardized-by:: [[FATF Virtual Asset Guidance]], [[ERC-20 Standard]]
+  - contrasts-with:: [[Centralised Finance]], [[Traditional Banking]]
+  - related-to:: [[Decentralised Autonomous Organisation]], [[Non-Fungible Token]], [[Maximal Extractable Value]]
 
 - ### Content
   - The Decentralised Finance Domain catalogues financial functions implemented as openly callable smart contracts. Automated market makers price and settle trades against pooled liquidity, lending protocols match suppliers and borrowers through over-collateralised positions, and stablecoins provide a stable unit within these systems. Because contracts expose standard interfaces, products compose freely, so the output of one protocol becomes the input to another.

@@ -50,32 +50,162 @@ public:: true
   "@id": "urn:ngm:class:interoperability-standard",
   "@type": "Class",
   "label": "Interoperability Standard",
-  "definition": "Formal specifications and protocols that enable different metaverse platforms, XR devices, and virtual environments to exchange data and operate toger seamlessly, including OpenXR, glTF, and emerging standards from the Metaverse Standards Forum.",
+  "definition": "Formal specifications and protocols that enable different metaverse platforms, XR devices, and virtual environments to exchange data and operate together seamlessly, including OpenXR, glTF, USD, and emerging standards from the Metaverse Standards Forum.",
   "domain": "infrastructure",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:infra-legal-and-regulatory",
-      "label": "Legal and Regulatory"
-    },
-    {
-      "@id": "urn:ngm:class:technical-standard",
-      "label": "Technical Standard"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:technical-standard",
+    "label": "Technical Standard"
+  },
   "relations": {
     "enables": [
       {
         "@id": "urn:ngm:class:cross-platform-compatibility",
         "label": "Cross-Platform Compatibility"
+      },
+      {
+        "@id": "urn:ngm:class:xr-content-portability",
+        "label": "XR Content Portability"
+      },
+      {
+        "@id": "urn:ngm:class:vendor-neutral-api",
+        "label": "Vendor-Neutral API"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:openxr",
+        "label": "OpenXR"
+      },
+      {
+        "@id": "urn:ngm:class:gltf",
+        "label": "glTF"
+      },
+      {
+        "@id": "urn:ngm:class:universal-scene-description",
+        "label": "Universal Scene Description"
+      },
+      {
+        "@id": "urn:ngm:class:webxr",
+        "label": "WebXR"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:open-standards-ecosystem",
+        "label": "Open Standards Ecosystem"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:protocol-specification",
+        "label": "Protocol Specification"
+      },
+      {
+        "@id": "urn:ngm:class:conformance-testing",
+        "label": "Conformance Testing"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:standards-body",
+        "label": "Standards Body"
+      },
+      {
+        "@id": "urn:ngm:class:industry-consortium",
+        "label": "Industry Consortium"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:khronos-group",
+        "label": "Khronos Group"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse-standards-forum",
+        "label": "Metaverse Standards Forum"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:api-specification",
+        "label": "API Specification"
+      },
+      {
+        "@id": "urn:ngm:class:data-format-standard",
+        "label": "Data Format Standard"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:khronos-group",
+        "label": "Khronos Group"
+      },
+      {
+        "@id": "urn:ngm:class:w3c",
+        "label": "W3C"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:proprietary-platform-lock-in",
+        "label": "Proprietary Platform Lock-In"
+      },
+      {
+        "@id": "urn:ngm:class:fragmented-ecosystem",
+        "label": "Fragmented Ecosystem"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:interoperability-specification",
+      "label": "Interoperability Specification"
+    },
+    {
+      "@id": "urn:ngm:class:open-standard",
+      "label": "Open Standard"
+    }
+  ],
+  "quality": 0.70,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

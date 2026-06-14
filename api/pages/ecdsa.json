@@ -4,16 +4,12 @@
   "slug": "ecdsa",
   "public": true,
   "classIri": "urn:ngm:class:ecdsa",
-  "domain": "blockchain",
+  "domain": "security",
   "definition": "Elliptic Curve Digital Signature Algorithm (ECDSA) is a cryptographic primitive that uses elliptic curve mathematics to generate and verify digital signatures, underpinning transaction authentication in Bitcoin, Ethereum, and most public blockchain networks. ECDSA provides non-repudiation, integrity verification, and ownership proof with compact key sizes relative to RSA equivalents.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:bc-cryptographic-primitive",
-      "label": "Cryptographic Primitive"
-    },
-    {
-      "id": "urn:ngm:class:cryptographic-primitive",
-      "label": "CryptographicPrimitive"
+      "id": "urn:ngm:class:digital-signature-algorithm",
+      "label": "Digital Signature Algorithm"
     }
   ],
   "entityType": "Class",
@@ -21,7 +17,16 @@
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:elliptic-curve-parameters",
+        "label": "Elliptic Curve Parameters"
+      },
+      {
+        "id": "urn:ngm:class:cryptographically-secure-prng",
+        "label": "Cryptographically Secure PRNG"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:digital-signature",
@@ -34,12 +39,60 @@
       {
         "id": "urn:ngm:class:authentication",
         "label": "Authentication"
+      },
+      {
+        "id": "urn:ngm:class:non-repudiation",
+        "label": "Non-Repudiation"
+      },
+      {
+        "id": "urn:ngm:class:transaction-signing",
+        "label": "Transaction Signing"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:elliptic-curve-discrete-logarithm-problem",
+        "label": "Elliptic Curve Discrete Logarithm Problem"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-key-management",
+        "label": "Cryptographic Key Management"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public-Key Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:digital-signature-standard",
+        "label": "Digital Signature Standard"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:rsa-signature",
+        "label": "RSA Signature"
+      },
+      {
+        "id": "urn:ngm:class:eddsa",
+        "label": "EdDSA"
+      },
+      {
+        "id": "urn:ngm:class:schnorr-signature",
+        "label": "Schnorr Signature"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:pki",
+        "label": "Public Key Infrastructure"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:elliptic-curve-cryptography",
@@ -54,25 +107,63 @@
         "label": "Private Key"
       },
       {
-        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key",
+        "id": "urn:ngm:class:public-key",
         "label": "Public Key"
+      },
+      {
+        "id": "urn:ngm:class:finite-field-arithmetic",
+        "label": "Finite Field Arithmetic"
+      },
+      {
+        "id": "urn:ngm:class:random-number-generator",
+        "label": "Random Number Generator"
       }
     ],
-    "supports": [],
-    "standardizedBy": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      },
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "id": "urn:ngm:class:tls",
+        "label": "TLS"
+      },
+      {
+        "id": "urn:ngm:class:code-signing",
+        "label": "Code Signing"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:nist",
+        "label": "NIST"
+      },
+      {
+        "id": "urn:ngm:class:ansi-x9-62",
+        "label": "ANSI X9.62"
+      },
+      {
+        "id": "urn:ngm:class:sec-standards",
+        "label": "SEC Standards"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:cryptographic-key-management",
-        "label": "Cryptographic Key Management"
-      },
-      {
-        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
-        "label": "Public-Key Cryptography"
-      },
-      {
         "id": "urn:ngm:class:cryptographic-protocol",
         "label": "Cryptographic Protocol"
+      },
+      {
+        "id": "urn:ngm:class:secp256k1",
+        "label": "secp256k1"
+      },
+      {
+        "id": "urn:ngm:class:p-256-curve",
+        "label": "P-256 Curve"
       }
     ]
   },

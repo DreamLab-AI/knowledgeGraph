@@ -8,12 +8,12 @@
   "definition": "A Rollup is a blockchain scaling technique that executes transactions off a base layer such as Ethereum while posting compressed transaction data and state commitments back to it for settlement and data availability. By batching many transactions and proving or asserting their validity on the main chain, rollups increase throughput and reduce fees while inheriting much of the base layer's security. Two main types exist: optimistic rollups, which assume validity and rely on fraud proofs during a challenge window, and zero-knowledge rollups, which post validity proofs verifying each batch. Rollups are central to Ethereum's layer-2 scaling strategy.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:blockchain-domain",
-      "label": "Blockchain Domain"
+      "id": "urn:ngm:class:layer-2-scaling",
+      "label": "Layer 2 Scaling"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
     "hasPart": [
@@ -24,12 +24,24 @@
       {
         "id": "urn:ngm:class:zero-knowledge-proof",
         "label": "Zero Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:sequencer",
+        "label": "Sequencer"
       }
     ],
     "requires": [
       {
         "id": "urn:ngm:class:ethereum-smart-contract-platform",
         "label": "Ethereum"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:data-availability",
+        "label": "Data Availability"
       }
     ],
     "enables": [
@@ -44,17 +56,92 @@
       {
         "id": "urn:ngm:class:zk-sync",
         "label": "zkSync"
+      },
+      {
+        "id": "urn:ngm:class:polygon",
+        "label": "Polygon"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-application",
+        "label": "Decentralised Application"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:ethereum-virtual-machine",
+        "label": "Ethereum Virtual Machine"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-proof",
+        "label": "Cryptographic Proof"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:off-chain-computation",
+        "label": "Off-Chain Computation"
+      },
+      {
+        "id": "urn:ngm:class:transaction-batching",
+        "label": "Transaction Batching"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:sidechain",
+        "label": "Sidechain"
+      },
+      {
+        "id": "urn:ngm:class:state-channel",
+        "label": "State Channel"
+      },
+      {
+        "id": "urn:ngm:class:plasma",
+        "label": "Plasma"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:cross-chain-bridge",
+        "label": "Cross-Chain Bridge"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "id": "urn:ngm:class:calldata",
+        "label": "Calldata"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:ethereum-scaling-roadmap",
+        "label": "Ethereum Scaling Roadmap"
+      },
+      {
+        "id": "urn:ngm:class:layer-2-scaling",
+        "label": "Layer 2 Scaling"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:proto-danksharding",
+        "label": "Proto-Danksharding"
+      },
+      {
+        "id": "urn:ngm:class:danksharding",
+        "label": "Danksharding"
+      }
+    ]
   },
   "wikilinks": [
     {

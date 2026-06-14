@@ -94,23 +94,13 @@ public:: true
   "@id": "urn:ngm:class:byzantine-fault-tolerance",
   "@type": "Class",
   "label": "Byzantine Fault Tolerance",
-  "definition": "The feature of a distributed network to reach consensus on the same value even when some nodes fail to respond or respond with incorrect information. Enables networks to function correctly despite malicious or faulty nodes comprising less than one-third of the network.",
-  "domain": "blockchain",
+  "definition": "The feature of a distributed network to reach consensus on the same value even when some nodes fail to respond or respond with incorrect information. Enables networks to function correctly despite malicious or faulty nodes comprising less than one-third of the network. Derived from the Byzantine Generals Problem; the fundamental theorem states consensus is achievable if and only if more than two-thirds of participants are honest.",
+  "domain": "distributed-systems",
   "maturity": "established",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:bc-protocol-and-consensus",
-      "label": "Protocol and Consensus"
-    },
-    {
-      "@id": "urn:ngm:class:bc-protocol-and-consensus",
-      "label": "BC Protocol And Consensus"
-    },
-    {
-      "@id": "urn:ngm:class:consensus-mechanism",
-      "label": "Consensus Mechanism"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:consensus-mechanism",
+    "label": "Consensus Mechanism"
+  },
   "relations": {
     "hasPart": [
       {
@@ -124,6 +114,20 @@ public:: true
       {
         "@id": "urn:ngm:class:voting-round",
         "label": "Voting Round"
+      },
+      {
+        "@id": "urn:ngm:class:prepare-phase",
+        "label": "Prepare Phase"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
       }
     ],
     "requires": [
@@ -138,6 +142,10 @@ public:: true
       {
         "@id": "urn:ngm:class:quorum",
         "label": "Quorum"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-agreement",
+        "label": "Distributed Agreement"
       }
     ],
     "enables": [
@@ -152,14 +160,86 @@ public:: true
       {
         "@id": "urn:ngm:class:fault-tolerance",
         "label": "Fault Tolerance"
+      },
+      {
+        "@id": "urn:ngm:class:deterministic-finality",
+        "label": "Deterministic Finality"
+      },
+      {
+        "@id": "urn:ngm:class:state-machine-replication",
+        "label": "State Machine Replication"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:practical-byzantine-fault-tolerance",
+        "label": "Practical Byzantine Fault Tolerance"
+      },
+      {
+        "@id": "urn:ngm:class:hotstuff-protocol",
+        "label": "HotStuff Protocol"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public Key Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:network-synchrony",
+        "label": "Network Synchrony"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:crash-fault-tolerance",
+        "label": "Crash Fault Tolerance"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-work",
+        "label": "Proof of Work"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      },
+      {
+        "@id": "urn:ngm:class:validator-set",
+        "label": "Validator Set"
+      },
+      {
+        "@id": "urn:ngm:class:casper-ffg",
+        "label": "Casper FFG"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:multi-agent-systems",
+        "label": "Multi-Agent Systems"
+      },
+      {
+        "@id": "urn:ngm:class:ai-energy-optimisation",
+        "label": "AI Energy Optimisation"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:bft-consensus",
+      "label": "BFT Consensus"
+    },
+    {
+      "@id": "urn:ngm:class:byzantine-agreement",
+      "label": "Byzantine Agreement"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

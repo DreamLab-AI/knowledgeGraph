@@ -4,20 +4,19 @@
   "slug": "digital-signatures",
   "public": true,
   "classIri": "urn:ngm:class:digital-signatures",
-  "domain": "spatial-computing",
-  "definition": "Digital Signatures is a type of Cryptography in the spatial computing domain.",
+  "domain": "security",
+  "definition": "A cryptographic mechanism that uses asymmetric key pairs to produce a verifiable seal on digital data, ensuring authenticity, integrity, and non-repudiation of messages, transactions, and documents across distributed and decentralised systems.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:sc-governance-and-safety",
-      "label": "Governance and Safety"
+      "id": "urn:ngm:class:cryptography",
+      "label": "Cryptography"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.72,
   "maturity": "draft",
   "relationships": {
-    "hasPart": [],
-    "requires": [
+    "hasPart": [
       {
         "id": "urn:ngm:class:signature-algorithm",
         "label": "Signature Algorithm"
@@ -29,6 +28,24 @@
       {
         "id": "urn:ngm:class:private-key",
         "label": "Private Key"
+      },
+      {
+        "id": "urn:ngm:class:public-key",
+        "label": "Public Key"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:asymmetric-cryptography",
+        "label": "Asymmetric Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:certificate-authority",
+        "label": "Certificate Authority"
       }
     ],
     "enables": [
@@ -43,20 +60,80 @@
       {
         "id": "urn:ngm:class:non-repudiation",
         "label": "Non-Repudiation"
+      },
+      {
+        "id": "urn:ngm:class:code-signing",
+        "label": "Code Signing"
+      },
+      {
+        "id": "urn:ngm:class:transaction-authorisation",
+        "label": "Transaction Authorisation"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:ecdsa",
+        "label": "ECDSA"
+      },
+      {
+        "id": "urn:ngm:class:eddsa",
+        "label": "EdDSA"
+      },
+      {
+        "id": "urn:ngm:class:bls-signature",
+        "label": "BLS Signature"
+      },
+      {
+        "id": "urn:ngm:class:schnorr-signature",
+        "label": "Schnorr Signature"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:symmetric-cryptography",
+        "label": "Symmetric Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:message-authentication-code",
+        "label": "Message Authentication Code"
+      }
+    ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:cryptography",
-        "label": "Cryptography"
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:post-quantum-cryptography",
+        "label": "Post-Quantum Cryptography"
       }
     ],
     "uses": [],
-    "supports": [],
-    "standardizedBy": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proofs",
+        "label": "Zero-Knowledge Proofs"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:nist-cryptographic-standards",
+        "label": "NIST Cryptographic Standards"
+      },
+      {
+        "id": "urn:ngm:class:fips-186",
+        "label": "FIPS 186"
+      }
+    ],
     "partOf": [],
     "relatedTo": []
   },

@@ -8,19 +8,32 @@
   "definition": "Avatar System is the integrated technical architecture for creating, customizing, animating, and rendering digital representations of users in virtual environments, encompassing character models, animation systems, facial expression rigs, physics simulations, and real-time rendering pipelines.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:sc-platform-and-environment",
-      "label": "Platform and Environment"
-    },
-    {
-      "id": "urn:ngm:class:sc-interaction",
-      "label": "SC Interaction"
+      "id": "urn:ngm:class:virtual-character-system",
+      "label": "Virtual Character System"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.7,
   "maturity": "draft",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:animation-controller",
+        "label": "Animation Controller"
+      },
+      {
+        "id": "urn:ngm:class:expression-system",
+        "label": "Expression System"
+      },
+      {
+        "id": "urn:ngm:class:physics-simulation",
+        "label": "Physics Simulation"
+      },
+      {
+        "id": "urn:ngm:class:level-of-detail-system",
+        "label": "Level of Detail System"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:animation-controller",
@@ -33,6 +46,10 @@
       {
         "id": "urn:ngm:class:3-d-rendering-engine",
         "label": "3D Rendering Engine"
+      },
+      {
+        "id": "urn:ngm:class:skeletal-mesh",
+        "label": "Skeletal Mesh"
       }
     ],
     "enables": [
@@ -47,17 +64,105 @@
       {
         "id": "urn:ngm:class:user-representation",
         "label": "User Representation"
+      },
+      {
+        "id": "urn:ngm:class:nonverbal-communication",
+        "label": "Nonverbal Communication"
+      },
+      {
+        "id": "urn:ngm:class:identity-expression",
+        "label": "Identity Expression"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:real-time-graphics-pipeline",
+        "label": "Real-Time Graphics Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:motion-capture-system",
+        "label": "Motion Capture System"
+      },
+      {
+        "id": "urn:ngm:class:facial-tracking",
+        "label": "Facial Tracking"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:inverse-kinematics",
+        "label": "Inverse Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:physically-based-rendering",
+        "label": "Physically Based Rendering"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:non-player-character",
+        "label": "Non-Player Character"
+      },
+      {
+        "id": "urn:ngm:class:static-user-profile",
+        "label": "Static User Profile"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "id": "urn:ngm:class:nft-wearable",
+        "label": "NFT Wearable"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:blend-shape",
+        "label": "Blend Shape"
+      },
+      {
+        "id": "urn:ngm:class:eye-tracking",
+        "label": "Eye Tracking"
+      },
+      {
+        "id": "urn:ngm:class:voice-driven-lip-sync",
+        "label": "Voice Driven Lip Sync"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:avatar-customization",
+        "label": "Avatar Customization"
+      },
+      {
+        "id": "urn:ngm:class:cross-platform-avatar-interoperability",
+        "label": "Cross-Platform Avatar Interoperability"
+      }
+    ],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:virtual-world-platform",
+        "label": "Virtual World Platform"
+      },
+      {
+        "id": "urn:ngm:class:metaverse-infrastructure",
+        "label": "Metaverse Infrastructure"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
+    ]
   },
   "wikilinks": [
     {

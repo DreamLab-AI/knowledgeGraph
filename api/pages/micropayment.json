@@ -4,20 +4,16 @@
   "slug": "micropayment",
   "public": true,
   "classIri": "urn:ngm:class:micropayment",
-  "domain": "blockchain",
-  "definition": "Very small electronic payment processed automatically within digital environments for low-value transactions.",
+  "domain": "finance",
+  "definition": "A very small electronic payment, typically fractions of a cent to a few dollars, processed automatically within digital environments to enable low-value, high-frequency transactions that are economically infeasible with traditional payment infrastructure.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:bc-defi-and-economics",
-      "label": "DeFi and Economics"
-    },
-    {
-      "id": "urn:ngm:class:digital-wallet",
-      "label": "Digital Wallet"
+      "id": "urn:ngm:class:digital-payment-system",
+      "label": "Digital Payment System"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.7,
   "maturity": "established",
   "relationships": {
     "hasPart": [
@@ -44,12 +40,12 @@
         "label": "Cryptographic Authentication"
       },
       {
-        "id": "urn:ngm:class:payment-network",
-        "label": "Payment Network"
-      },
-      {
         "id": "urn:ngm:class:digital-wallet",
         "label": "Digital Wallet"
+      },
+      {
+        "id": "urn:ngm:class:payment-channel",
+        "label": "Payment Channel"
       }
     ],
     "enables": [
@@ -64,22 +60,84 @@
       {
         "id": "urn:ngm:class:pay-per-use-models",
         "label": "Pay-Per-Use Models"
+      },
+      {
+        "id": "urn:ngm:class:content-monetisation",
+        "label": "Content Monetisation"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:blockchain-infrastructure",
+        "label": "Blockchain Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:traditional-banking-transfer",
+        "label": "Traditional Banking Transfer"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:virtual-economy-domain",
+        "label": "Virtual Economy Domain"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:digital-currency",
+        "label": "Digital Currency"
+      },
+      {
+        "id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      }
+    ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:w3c-payment-request-api",
+        "label": "W3C Payment Request API"
+      },
+      {
+        "id": "urn:ngm:class:iso-20022",
+        "label": "ISO 20022"
+      }
+    ],
     "partOf": [
       {
         "id": "urn:ngm:class:digital-payment-system",
         "label": "Digital Payment System"
+      },
+      {
+        "id": "urn:ngm:class:payment-network",
+        "label": "Payment Network"
       }
     ],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:tokenisation",
+        "label": "Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:financial-inclusion",
+        "label": "Financial Inclusion"
+      }
+    ]
   },
   "wikilinks": [
     {

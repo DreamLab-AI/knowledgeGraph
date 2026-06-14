@@ -90,19 +90,13 @@ public:: true
   "@id": "urn:ngm:class:digital-rights",
   "@type": "Class",
   "label": "Digital Rights",
-  "definition": "The human rights and freedoms applicable to digital contexts including privacy, data protection, freedom of expression, access to information, and digital ownership within virtual environments, metaverse platforms, and online spaces, increasingly codified through international frameworks and nati...",
-  "domain": "spatial-computing",
+  "definition": "The human rights and freedoms applicable to digital contexts including privacy, data protection, freedom of expression, access to information, and digital ownership within virtual environments, metaverse platforms, and online spaces, increasingly codified through international frameworks and national legislation.",
+  "domain": "governance",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:sc-governance-and-safety",
-      "label": "Governance and Safety"
-    },
-    {
-      "@id": "urn:ngm:class:human-rights",
-      "label": "Human Rights"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:human-rights",
+    "label": "Human Rights"
+  },
   "relations": {
     "requires": [
       {
@@ -116,6 +110,10 @@ public:: true
       {
         "@id": "urn:ngm:class:legal-framework",
         "label": "Legal Framework"
+      },
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
       }
     ],
     "enables": [
@@ -130,14 +128,108 @@ public:: true
       {
         "@id": "urn:ngm:class:privacy-protection",
         "label": "Privacy Protection"
+      },
+      {
+        "@id": "urn:ngm:class:algorithmic-accountability",
+        "label": "Algorithmic Accountability"
+      },
+      {
+        "@id": "urn:ngm:class:content-moderation",
+        "label": "Content Moderation"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "@id": "urn:ngm:class:digital-services-act",
+        "label": "Digital Services Act"
+      },
+      {
+        "@id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      },
+      {
+        "@id": "urn:ngm:class:e-idas",
+        "label": "eIDAS"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      },
+      {
+        "@id": "urn:ngm:class:freedom-of-expression",
+        "label": "Freedom of Expression"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:digital-inclusion",
+        "label": "Digital Inclusion"
+      },
+      {
+        "@id": "urn:ngm:class:open-internet",
+        "label": "Open Internet"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:surveillance-capitalism",
+        "label": "Surveillance Capitalism"
+      },
+      {
+        "@id": "urn:ngm:class:censorship",
+        "label": "Censorship"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-identity",
+        "label": "Decentralised Identity"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:cyber-security",
+        "label": "Cybersecurity"
+      },
+      {
+        "@id": "urn:ngm:class:net-neutrality",
+        "label": "Net Neutrality"
+      },
+      {
+        "@id": "urn:ngm:class:intellectual-property",
+        "label": "Intellectual Property"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:digital-human-rights",
+      "label": "Digital Human Rights"
+    },
+    {
+      "@id": "urn:ngm:class:internet-rights",
+      "label": "Internet Rights"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

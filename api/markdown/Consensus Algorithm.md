@@ -163,34 +163,68 @@ alias:: ConsensusAlgorithm
   "@id": "urn:ngm:class:consensus-algorithm",
   "@type": "Class",
   "label": "Consensus Algorithm",
-  "definition": "Distributed computational protocol ensuring all participants in a Blockchain Network agree on the canonical transaction history and current state without centralised authority.",
+  "definition": "Distributed computational protocol ensuring all participants in a Blockchain Network agree on the canonical transaction history and current state without centralised authority, tolerating a bounded fraction of faulty or malicious nodes.",
   "domain": "blockchain",
   "maturity": "emerging",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:bc-protocol-and-consensus",
-      "label": "Protocol and Consensus"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:bc-protocol-and-consensus",
+    "label": "Protocol and Consensus"
+  },
   "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"},
+      {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof of Stake"},
+      {"@id": "urn:ngm:class:practical-byzantine-fault-tolerance", "label": "Practical Byzantine Fault Tolerance"},
+      {"@id": "urn:ngm:class:delegated-proof-of-stake", "label": "Delegated Proof of Stake"}
+    ],
     "requires": [
       {"@id": "urn:ngm:class:blockchain-network", "label": "Blockchain Network"},
-      {"@id": "urn:ngm:class:byzantine-fault-tolerance", "label": "Byzantine Fault Tolerance"}
+      {"@id": "urn:ngm:class:byzantine-fault-tolerance", "label": "Byzantine Fault Tolerance"},
+      {"@id": "urn:ngm:class:validator-node", "label": "Validator Node"},
+      {"@id": "urn:ngm:class:peer-to-peer-network", "label": "Peer-to-Peer Network"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:blockchain-transaction", "label": "Blockchain Transaction"},
-      {"@id": "urn:ngm:class:distributed-ledger", "label": "Distributed Ledger"}
+      {"@id": "urn:ngm:class:distributed-ledger", "label": "Distributed Ledger"},
+      {"@id": "urn:ngm:class:transaction-finality", "label": "Transaction Finality"},
+      {"@id": "urn:ngm:class:trustless-coordination", "label": "Trustless Coordination"}
     ],
-    "hasPart": [
-      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"},
-      {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof of Stake"}
+    "dependsOn": [
+      {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"},
+      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"},
+      {"@id": "urn:ngm:class:fault-tolerance", "label": "Fault Tolerance"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:distributed-consensus", "label": "Distributed Consensus"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:decentralised-governance", "label": "Decentralised Governance"},
+      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
+      {"@id": "urn:ngm:class:dao", "label": "DAO"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:centralised-database", "label": "Centralised Database"},
+      {"@id": "urn:ngm:class:two-phase-commit", "label": "Two-Phase Commit"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:network-security", "label": "Network Security"},
+      {"@id": "urn:ngm:class:data-integrity", "label": "Data Integrity"},
+      {"@id": "urn:ngm:class:sharding", "label": "Sharding"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:multi-agent-system", "label": "Multi-Agent System"},
+      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
     ]
   },
-  "quality": 0.4,
+  "sameAs": [
+    {"@id": "urn:ngm:class:distributed-consensus-protocol", "label": "Distributed Consensus Protocol"},
+    {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"}
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

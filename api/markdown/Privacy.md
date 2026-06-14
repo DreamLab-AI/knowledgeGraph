@@ -194,39 +194,65 @@ public:: true
   "@id": "urn:ngm:class:privacy",
   "@type": "Class",
   "label": "Privacy",
-  "definition": "The protection of personal information and individual autonomy in AI systems, encompassing data minimization, purpose limitation, transparency, and individual control over how personal data is collected, processed, stored, and shared throughout the AI lifecycle.",
-  "domain": "infrastructure",
+  "definition": "The protection of personal information and individual autonomy in digital and AI systems, encompassing data minimization, purpose limitation, transparency, consent management, and individual control over how personal data is collected, processed, stored, and shared; grounded in legal frameworks (GDPR, AI Act) and technical mechanisms (encryption, differential privacy, zero-knowledge proofs) across the full data lifecycle.",
+  "domain": "governance",
   "maturity": "emerging",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:infra-legal-and-regulatory",
-      "label": "Legal and Regulatory"
-    },
-    {
-      "@id": "urn:ngm:class:privacy-framework",
-      "label": "Privacy Framework"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:data-rights",
+    "label": "Data Rights"
+  },
   "relations": {
     "requires": [
       {"@id": "urn:ngm:class:encryption", "label": "Encryption"},
-      {"@id": "urn:ngm:class:consent-management", "label": "Consent Management"}
-    ],
-    "relatedTo": [
-      {"@id": "urn:ngm:class:data-protection", "label": "Data Protection"},
-      {"@id": "urn:ngm:class:cybersecurity", "label": "Cybersecurity"},
-      {"@id": "urn:ngm:class:access-control", "label": "Access Control"}
+      {"@id": "urn:ngm:class:consent-management", "label": "Consent Management"},
+      {"@id": "urn:ngm:class:access-control", "label": "Access Control"},
+      {"@id": "urn:ngm:class:data-minimisation", "label": "Data Minimisation"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:differential-privacy", "label": "Differential Privacy"},
-      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"}
+      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"},
+      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self-Sovereign Identity"},
+      {"@id": "urn:ngm:class:anonymous-credential", "label": "Anonymous Credential"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:data-protection", "label": "Data Protection"},
+      {"@id": "urn:ngm:class:identity-management", "label": "Identity Management"},
+      {"@id": "urn:ngm:class:trust-and-safety", "label": "Trust and Safety"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:gdpr", "label": "GDPR"},
+      {"@id": "urn:ngm:class:iso-iec-27701", "label": "ISO/IEC 27701"},
+      {"@id": "urn:ngm:class:privacy-by-design", "label": "Privacy by Design"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:iso-iec-29100", "label": "ISO/IEC 29100"},
+      {"@id": "urn:ngm:class:nist-privacy-framework", "label": "NIST Privacy Framework"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:surveillance", "label": "Surveillance"},
+      {"@id": "urn:ngm:class:mass-data-collection", "label": "Mass Data Collection"},
+      {"@id": "urn:ngm:class:hyper-personalisation", "label": "Hyper Personalisation"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:cybersecurity", "label": "Cybersecurity"},
+      {"@id": "urn:ngm:class:digital-rights", "label": "Digital Rights"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:cypherpunk", "label": "Cypherpunk"},
+      {"@id": "urn:ngm:class:decentralised-web", "label": "Decentralised Web"},
+      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"},
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {"@id": "urn:ngm:class:informational-privacy", "label": "Informational Privacy"},
+    {"@id": "urn:ngm:class:data-privacy", "label": "Data Privacy"}
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

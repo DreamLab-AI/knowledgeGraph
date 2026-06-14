@@ -8,10 +8,6 @@
   "definition": "The study and design of economic mechanisms governing blockchain networks, including incentive structures for validators, fee markets, token supply schedules, governance models, and the emergent macro-economic properties of decentralised systems. Blockchain economics integrates mechanism design, game theory, and monetary theory to sustain network security and participant alignment.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:bc-defi-and-economics",
-      "label": "DeFi and Economics"
-    },
-    {
       "id": "urn:ngm:class:token-economics",
       "label": "Token Economics"
     }
@@ -28,9 +24,30 @@
       {
         "id": "urn:ngm:class:governance-token",
         "label": "Governance Token"
+      },
+      {
+        "id": "urn:ngm:class:fee-market",
+        "label": "Fee Market"
+      },
+      {
+        "id": "urn:ngm:class:token-emission-schedule",
+        "label": "Token Emission Schedule"
+      },
+      {
+        "id": "urn:ngm:class:validator-incentive",
+        "label": "Validator Incentive"
       }
     ],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:mechanism-design",
+        "label": "Mechanism Design"
+      },
+      {
+        "id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:decentralised-finance",
@@ -39,14 +56,59 @@
       {
         "id": "urn:ngm:class:digital-asset-market",
         "label": "Digital Asset Market"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-primitive",
+        "label": "Cryptographic Primitive"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:traditional-monetary-policy",
+        "label": "Traditional Monetary Policy"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-finance",
+        "label": "Supply Chain Finance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:auction-theory",
+        "label": "Auction Theory"
+      },
+      {
+        "id": "urn:ngm:class:monetary-theory",
+        "label": "Monetary Theory"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      },
+      {
+        "id": "urn:ngm:class:on-chain-governance",
+        "label": "On-Chain Governance"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
@@ -57,6 +119,14 @@
       {
         "id": "urn:ngm:class:cryptocurrency-token",
         "label": "Cryptocurrency Token"
+      },
+      {
+        "id": "urn:ngm:class:staking",
+        "label": "Staking"
+      },
+      {
+        "id": "urn:ngm:class:miner-extractable-value",
+        "label": "Miner Extractable Value"
       }
     ]
   },

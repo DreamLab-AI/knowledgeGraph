@@ -13,11 +13,33 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.72,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:post-hoc-explanation",
+        "label": "Post Hoc Explanation"
+      },
+      {
+        "id": "urn:ngm:class:intrinsic-interpretability",
+        "label": "Intrinsic Interpretability"
+      },
+      {
+        "id": "urn:ngm:class:feature-attribution",
+        "label": "Feature Attribution"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:model-interpretability",
+        "label": "Model Interpretability"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-transparency",
+        "label": "Algorithmic Transparency"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:ai-governance",
@@ -26,13 +48,54 @@
       {
         "id": "urn:ngm:class:bias-detection-methods",
         "label": "Bias Detection Methods"
+      },
+      {
+        "id": "urn:ngm:class:human-ai-collaboration",
+        "label": "Human-AI Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:ai-auditing",
+        "label": "AI Auditing"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:shap",
+        "label": "SHAP"
+      },
+      {
+        "id": "urn:ngm:class:lime",
+        "label": "LIME"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:black-box-model",
+        "label": "Black-Box Model"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:healthcare-ai",
+        "label": "Healthcare AI"
+      },
+      {
+        "id": "urn:ngm:class:gdpr-compliance",
+        "label": "GDPR Compliance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:causal-inference",
+        "label": "Causal Inference"
+      }
+    ],
     "supports": [
       {
         "id": "urn:ngm:class:ai-governance-framework",
@@ -41,18 +104,40 @@
       {
         "id": "urn:ngm:class:regulatory-compliance",
         "label": "Regulatory Compliance"
-      }
-    ],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
-      {
-        "id": "urn:ngm:class:model-interpretability",
-        "label": "Model Interpretability"
       },
       {
         "id": "urn:ngm:class:ai-safety",
         "label": "AI Safety"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ieee-p2976",
+        "label": "IEEE P2976 (XAI)"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-12792",
+        "label": "ISO/IEC 12792"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "id": "urn:ngm:class:trustworthy-ai",
+        "label": "Trustworthy AI"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:interpretable-ai",
+        "label": "Interpretable AI"
+      },
+      {
+        "id": "urn:ngm:class:xai-methods",
+        "label": "XAI Methods"
       }
     ]
   },

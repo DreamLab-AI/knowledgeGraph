@@ -4,8 +4,8 @@
   "slug": "machine-learning-pipeline",
   "public": true,
   "classIri": "urn:ngm:class:machine-learning-discipline-pipeline",
-  "domain": "artificial-intelligence",
-  "definition": "Machine Learning Pipeline represents the end-to-end workflow for developing, training, validating, deploying, and monitoring ML models. This encompasses data ingestion, preprocessing, feature engineering, model selection, hyperparameter tuning, training, edeployment, and continuous monitoring.",
+  "domain": "machine-learning",
+  "definition": "A Machine Learning Pipeline is the end-to-end automated workflow for developing, training, validating, deploying, and monitoring ML models. It encompasses data ingestion, preprocessing, feature engineering, model selection, hyperparameter tuning, training, evaluation, deployment, and continuous monitoring, and typically adopts MLOps practices with automated orchestration, versioning, and experiment tracking to ensure reproducibility, scalability, and maintainability of ML systems in production environments.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-infrastructure",
@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.68,
   "maturity": "emerging",
   "relationships": {
     "hasPart": [
@@ -24,9 +24,42 @@
       {
         "id": "urn:ngm:class:data-pipeline",
         "label": "Data Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:data-preprocessing",
+        "label": "Data Preprocessing"
+      },
+      {
+        "id": "urn:ngm:class:hyperparameter-tuning",
+        "label": "Hyperparameter Tuning"
+      },
+      {
+        "id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      },
+      {
+        "id": "urn:ngm:class:model-deployment",
+        "label": "Model Deployment"
+      },
+      {
+        "id": "urn:ngm:class:model-monitoring",
+        "label": "Model Monitoring"
       }
     ],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "id": "urn:ngm:class:compute-infrastructure",
+        "label": "Compute Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:data-versioning",
+        "label": "Data Versioning"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:model-training",
@@ -35,26 +68,88 @@
       {
         "id": "urn:ngm:class:inference",
         "label": "Inference"
+      },
+      {
+        "id": "urn:ngm:class:continuous-training",
+        "label": "Continuous Training"
+      },
+      {
+        "id": "urn:ngm:class:reproducibility",
+        "label": "Reproducibility"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [
+    "dependsOn": [
       {
-        "id": "urn:ngm:class:training-data",
-        "label": "Training Data"
+        "id": "urn:ngm:class:experiment-tracking",
+        "label": "Experiment Tracking"
       },
+      {
+        "id": "urn:ngm:class:workflow-orchestration",
+        "label": "Workflow Orchestration"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      },
+      {
+        "id": "urn:ngm:class:continuous-integration-and-delivery",
+        "label": "Continuous Integration and Delivery"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:ad-hoc-experimentation",
+        "label": "Ad-Hoc Experimentation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:data-engineering",
+        "label": "Data Engineering"
+      },
+      {
+        "id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      }
+    ],
+    "uses": [
       {
         "id": "urn:ngm:class:performance-metrics",
         "label": "Performance Metrics"
+      },
+      {
+        "id": "urn:ngm:class:container-orchestration",
+        "label": "Container Orchestration"
+      },
+      {
+        "id": "urn:ngm:class:model-registry",
+        "label": "Model Registry"
       }
     ],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:a-b-testing",
+        "label": "A/B Testing"
+      },
+      {
+        "id": "urn:ngm:class:model-governance",
+        "label": "Model Governance"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:automl",
+        "label": "AutoML"
+      }
+    ]
   },
   "wikilinks": [
     {

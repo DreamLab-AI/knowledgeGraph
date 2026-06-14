@@ -4,24 +4,46 @@
   "slug": "human-oversight",
   "public": true,
   "classIri": "urn:ngm:class:human-oversight",
-  "domain": "spatial-computing",
-  "definition": "The continuous or periodic involvement of competent human actors in the governance, development, deployment, and operation of artificial intelligence systems, exercising meaningful control, judgment, and intervention capabilities to ensure AI system decisions and actions remain aligned with human...",
+  "domain": "governance",
+  "definition": "The continuous or periodic involvement of competent human actors in the governance, development, deployment, and operation of artificial intelligence systems, exercising meaningful control, judgment, and intervention capabilities to ensure AI system decisions and actions remain aligned with human values, ethical principles, legal requirements, and intended purposes, with particular emphasis on preventing, detecting, and correcting harmful or inappropriate AI behaviours through informed human decision-making authority.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:sc-governance-and-safety",
-      "label": "Governance and Safety"
-    },
-    {
-      "id": "urn:ngm:class:metaverse-governance-and-safeguarding",
-      "label": "Metaverse governance and safeguarding"
+      "id": "urn:ngm:class:ai-governance",
+      "label": "AI Governance"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.65,
   "maturity": "draft",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:human-in-the-loop",
+        "label": "Human in the Loop"
+      },
+      {
+        "id": "urn:ngm:class:human-on-the-loop",
+        "label": "Human on the Loop"
+      },
+      {
+        "id": "urn:ngm:class:human-in-command",
+        "label": "Human in Command"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:explainability",
+        "label": "Explainability"
+      },
+      {
+        "id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      },
+      {
+        "id": "urn:ngm:class:ai-audit",
+        "label": "AI Audit"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:continuous-improvement",
@@ -34,17 +56,92 @@
       {
         "id": "urn:ngm:class:accountability",
         "label": "Accountability"
+      },
+      {
+        "id": "urn:ngm:class:trust",
+        "label": "Trust"
+      },
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:interpretability",
+        "label": "Interpretability"
+      },
+      {
+        "id": "urn:ngm:class:ai-monitoring",
+        "label": "AI Monitoring"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:automation-bias",
+        "label": "Automation Bias"
+      },
+      {
+        "id": "urn:ngm:class:fully-autonomous-ai",
+        "label": "Fully Autonomous AI"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:human-factors",
+        "label": "Human Factors"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:ai-operator",
+        "label": "AI Operator"
+      },
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-accountability",
+        "label": "Algorithmic Accountability"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI RMF"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-42001",
+        "label": "ISO/IEC 42001"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "id": "urn:ngm:class:decision-support-systems",
+        "label": "Decision Support Systems"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -4,24 +4,38 @@
   "slug": "self-attention",
   "public": true,
   "classIri": "urn:ngm:class:self-attention",
-  "domain": "artificial-intelligence",
-  "definition": "An attention mechanism where every token in a sequence attends to every other token in the same sequence, allowing the model to capture intra-sequence dependencies.",
+  "domain": "machine-learning",
+  "definition": "An attention mechanism where every token in a sequence attends to every other token in the same sequence, computing query-key compatibility scores to produce context-aware weighted value representations that capture intra-sequence dependencies without recurrence.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ai-model-architecture",
-      "label": "AI Model Architecture"
-    },
-    {
-      "id": "urn:ngm:class:transformer",
-      "label": "Transformer"
+      "id": "urn:ngm:class:attention-mechanism",
+      "label": "Attention Mechanism"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.72,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:scaled-dot-product-attention",
+        "label": "Scaled Dot-Product Attention"
+      },
+      {
+        "id": "urn:ngm:class:query-key-value-projection",
+        "label": "Query-Key-Value Projection"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:positional-encoding",
+        "label": "Positional Encoding"
+      },
+      {
+        "id": "urn:ngm:class:input-embeddings",
+        "label": "Input Embeddings"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:large-language-models",
@@ -30,30 +44,99 @@
       {
         "id": "urn:ngm:class:natural-language-processing",
         "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:vision-transformer",
+        "label": "Vision Transformer"
+      },
+      {
+        "id": "urn:ngm:class:sequence-to-sequence-learning",
+        "label": "Sequence-to-Sequence Learning"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:matrix-multiplication",
+        "label": "Matrix Multiplication"
+      },
+      {
+        "id": "urn:ngm:class:softmax-function",
+        "label": "Softmax Function"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      }
+    ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:reinforcement-learning",
-        "label": "Reinforcement Learning"
+        "id": "urn:ngm:class:recurrent-neural-network",
+        "label": "Recurrent Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:state-space-model",
+        "label": "State Space Model"
+      },
+      {
+        "id": "urn:ngm:class:cross-attention",
+        "label": "Cross-Attention"
       }
     ],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:bioinformatics",
+        "label": "Bioinformatics"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:weight-matrix",
+        "label": "Weight Matrix"
+      },
+      {
+        "id": "urn:ngm:class:feed-forward-neural-network",
+        "label": "Feed-Forward Neural Network"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:parallel-computation",
+        "label": "Parallel Computation"
+      },
+      {
+        "id": "urn:ngm:class:long-range-dependency-modelling",
+        "label": "Long-Range Dependency Modelling"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [
       {
         "id": "urn:ngm:class:transformer",
         "label": "Transformer"
+      },
+      {
+        "id": "urn:ngm:class:multi-head-attention",
+        "label": "Multi-Head Attention"
       }
     ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:attention-mechanism",
         "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:graph-attention-network",
+        "label": "Graph Attention Network"
       }
     ]
   },

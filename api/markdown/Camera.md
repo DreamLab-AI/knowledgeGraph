@@ -106,29 +106,15 @@ public:: true
   "@id": "urn:ngm:class:camera",
   "@type": "Class",
   "label": "Camera",
-  "definition": "An imaging sensor device that captures visual information in robotics systems, enabling computer vision applications including object detection, SLAM, 3D reconstruction, visual servoing, and semantic scene understanding through various modalities (RGB, depth, thermal, event-based) and technologie...",
+  "definition": "An imaging sensor device that captures visual information in robotics and spatial-computing systems, enabling computer vision applications including object detection, SLAM, 3D reconstruction, visual servoing, and semantic scene understanding through various modalities (RGB, depth, thermal, event-based) and sensor technologies (CCD, CMOS, ToF, structured light).",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:robo-perception",
-      "label": "Perception and Sensing"
-    },
-    {
-      "@id": "urn:ngm:class:visual-perception",
-      "label": "VisualPerception"
-    },
-    {
-      "@id": "urn:ngm:class:sensor",
-      "label": "Sensor"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:sensor",
+    "label": "Sensor"
+  },
   "relations": {
     "hasPart": [
-      {
-        "@id": "urn:ngm:class:camera-calibration",
-        "label": "CameraCalibration"
-      },
       {
         "@id": "urn:ngm:class:image-sensor",
         "label": "ImageSensor"
@@ -140,6 +126,22 @@ public:: true
       {
         "@id": "urn:ngm:class:processing-unit",
         "label": "ProcessingUnit"
+      },
+      {
+        "@id": "urn:ngm:class:camera-calibration",
+        "label": "CameraCalibration"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:robot-perception-system",
+        "label": "Robot Perception System"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:optics",
+        "label": "Optics"
       }
     ],
     "enables": [
@@ -162,14 +164,94 @@ public:: true
       {
         "@id": "urn:ngm:class:slam",
         "label": "SLAM"
+      },
+      {
+        "@id": "urn:ngm:class:visual-odometry",
+        "label": "Visual Odometry"
+      },
+      {
+        "@id": "urn:ngm:class:depth-estimation",
+        "label": "Depth Estimation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:visual-perception",
+        "label": "VisualPerception"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:ieee",
+        "label": "IEEE"
+      },
+      {
+        "@id": "urn:ngm:class:iso-iec",
+        "label": "ISO/IEC"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:lidar",
+        "label": "LiDAR"
+      },
+      {
+        "@id": "urn:ngm:class:radar",
+        "label": "Radar"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:structure-from-motion",
+        "label": "Structure from Motion"
+      },
+      {
+        "@id": "urn:ngm:class:neural-radiance-field",
+        "label": "Neural Radiance Field"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:imaging-sensor",
+      "label": "Imaging Sensor"
+    },
+    {
+      "@id": "urn:ngm:class:vision-sensor",
+      "label": "Vision Sensor"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

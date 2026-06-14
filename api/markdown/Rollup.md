@@ -70,12 +70,10 @@ public:: true
   "domain": "blockchain",
   "maturity": "established",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:blockchain-domain",
-      "label": "Blockchain Domain"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:layer-2-scaling",
+    "label": "Layer 2 Scaling"
+  },
   "relations": {
     "hasPart": [
       {
@@ -85,12 +83,34 @@ public:: true
       {
         "@id": "urn:ngm:class:zero-knowledge-proof",
         "label": "Zero Knowledge Proof"
+      },
+      {
+        "@id": "urn:ngm:class:sequencer",
+        "label": "Sequencer"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:ethereum-scaling-roadmap",
+        "label": "Ethereum Scaling Roadmap"
+      },
+      {
+        "@id": "urn:ngm:class:layer-2-scaling",
+        "label": "Layer 2 Scaling"
       }
     ],
     "requires": [
       {
         "@id": "urn:ngm:class:ethereum-smart-contract-platform",
         "label": "Ethereum"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:data-availability",
+        "label": "Data Availability"
       }
     ],
     "enables": [
@@ -105,14 +125,96 @@ public:: true
       {
         "@id": "urn:ngm:class:zk-sync",
         "label": "zkSync"
+      },
+      {
+        "@id": "urn:ngm:class:polygon",
+        "label": "Polygon"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-application",
+        "label": "Decentralised Application"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:ethereum-virtual-machine",
+        "label": "Ethereum Virtual Machine"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-proof",
+        "label": "Cryptographic Proof"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:off-chain-computation",
+        "label": "Off-Chain Computation"
+      },
+      {
+        "@id": "urn:ngm:class:transaction-batching",
+        "label": "Transaction Batching"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "@id": "urn:ngm:class:calldata",
+        "label": "Calldata"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:sidechain",
+        "label": "Sidechain"
+      },
+      {
+        "@id": "urn:ngm:class:state-channel",
+        "label": "State Channel"
+      },
+      {
+        "@id": "urn:ngm:class:plasma",
+        "label": "Plasma"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "@id": "urn:ngm:class:cross-chain-bridge",
+        "label": "Cross-Chain Bridge"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:proto-danksharding",
+        "label": "Proto-Danksharding"
+      },
+      {
+        "@id": "urn:ngm:class:danksharding",
+        "label": "Danksharding"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:layer-2-rollup",
+      "label": "Layer-2 Rollup"
+    },
+    {
+      "@id": "urn:ngm:class:blockchain-rollup",
+      "label": "Blockchain Rollup"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

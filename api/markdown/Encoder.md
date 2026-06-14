@@ -46,34 +46,76 @@ public:: true
   "@id": "urn:ngm:class:encoder",
   "@type": "Class",
   "label": "Encoder",
-  "definition": "The component in an encoder-decoder architecture that processes the input sequence and produces contextualised representations, using self-attention and feed-forward layers.",
-  "domain": "artificial-intelligence",
+  "definition": "The component in an encoder-decoder architecture that processes an input sequence and produces contextualised representations via stacked self-attention and position-wise feed-forward layers; used as the representation-learning backbone in transformer models such as BERT and T5.",
+  "domain": "machine-learning",
   "maturity": "emerging",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:ai-model-architecture",
-      "label": "AI Model Architecture"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:ai-model-architecture",
+    "label": "AI Model Architecture"
+  },
   "relations": {
     "partOf": [
       {"@id": "urn:ngm:class:encoder-decoder-architecture", "label": "Encoder Decoder Architecture"},
       {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"}
     ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:multi-head-self-attention", "label": "Multi Head Self Attention"},
+      {"@id": "urn:ngm:class:feed-forward-network", "label": "Feed Forward Network"},
+      {"@id": "urn:ngm:class:layer-normalisation", "label": "Layer Normalisation"},
+      {"@id": "urn:ngm:class:residual-connection", "label": "Residual Connection"}
+    ],
     "uses": [
       {"@id": "urn:ngm:class:self-attention", "label": "Self Attention"},
-      {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"}
+      {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"},
+      {"@id": "urn:ngm:class:positional-encoding", "label": "Positional Encoding"},
+      {"@id": "urn:ngm:class:tokenisation", "label": "Tokenisation"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:feature-extraction", "label": "Feature Extraction"},
-      {"@id": "urn:ngm:class:language-modeling", "label": "Language Modeling"}
+      {"@id": "urn:ngm:class:language-modeling", "label": "Language Modeling"},
+      {"@id": "urn:ngm:class:contextual-embedding", "label": "Contextual Embedding"},
+      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:embedding-layer", "label": "Embedding Layer"},
+      {"@id": "urn:ngm:class:training-data", "label": "Training Data"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:representation-learning", "label": "Representation Learning"},
+      {"@id": "urn:ngm:class:bidirectional-context", "label": "Bidirectional Context"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
+      {"@id": "urn:ngm:class:sequence-classification", "label": "Sequence Classification"},
+      {"@id": "urn:ngm:class:named-entity-recognition", "label": "Named Entity Recognition"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:decoder", "label": "Decoder"},
+      {"@id": "urn:ngm:class:recurrent-neural-network", "label": "Recurrent Neural Network"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:matrix-multiplication", "label": "Matrix Multiplication"},
+      {"@id": "urn:ngm:class:softmax-function", "label": "Softmax Function"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:bert", "label": "BERT"},
+      {"@id": "urn:ngm:class:roberta", "label": "RoBERTa"},
+      {"@id": "urn:ngm:class:t5-model", "label": "T5 Model"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:multimodal-model", "label": "Multimodal Model"},
+      {"@id": "urn:ngm:class:speech-recognition", "label": "Speech Recognition"}
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {"@id": "urn:ngm:class:transformer-encoder", "label": "Transformer Encoder"},
+    {"@id": "urn:ngm:class:encoder-stack", "label": "Encoder Stack"}
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

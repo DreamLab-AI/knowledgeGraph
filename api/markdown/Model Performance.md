@@ -135,23 +135,54 @@ public:: true
     "hasPart": [
       {"@id": "urn:ngm:class:accuracy", "label": "Accuracy"},
       {"@id": "urn:ngm:class:f1-score", "label": "F1 Score"},
-      {"@id": "urn:ngm:class:confusion-matrix", "label": "Confusion Matrix"}
+      {"@id": "urn:ngm:class:confusion-matrix", "label": "Confusion Matrix"},
+      {"@id": "urn:ngm:class:precision", "label": "Precision"},
+      {"@id": "urn:ngm:class:recall", "label": "Recall"},
+      {"@id": "urn:ngm:class:roc-curve", "label": "ROC Curve"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:model-evaluation", "label": "Model Evaluation"},
+      {"@id": "urn:ngm:class:ai-lifecycle", "label": "AI Lifecycle"}
     ],
     "requires": [
       {"@id": "urn:ngm:class:benchmark-standard", "label": "Benchmark Standard"},
-      {"@id": "urn:ngm:class:model-training", "label": "Model Training"}
+      {"@id": "urn:ngm:class:model-training", "label": "Model Training"},
+      {"@id": "urn:ngm:class:test-dataset", "label": "Test Dataset"},
+      {"@id": "urn:ngm:class:evaluation-metric", "label": "Evaluation Metric"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:model-selection", "label": "Model Selection"},
+      {"@id": "urn:ngm:class:hyperparameter-tuning", "label": "Hyperparameter Tuning"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:training-data", "label": "Training Data"},
+      {"@id": "urn:ngm:class:data-drift", "label": "Data Drift"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:overfitting", "label": "Overfitting"},
+      {"@id": "urn:ngm:class:underfitting", "label": "Underfitting"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:fairness", "label": "Fairness"},
       {"@id": "urn:ngm:class:robustness", "label": "Robustness"},
-      {"@id": "urn:ngm:class:ai-monitoring", "label": "AI Monitoring"}
+      {"@id": "urn:ngm:class:ai-monitoring", "label": "AI Monitoring"},
+      {"@id": "urn:ngm:class:calibration", "label": "Calibration"},
+      {"@id": "urn:ngm:class:explainability", "label": "Explainability"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"},
+      {"@id": "urn:ngm:class:model-card", "label": "Model Card"}
     ]
   },
-  "quality": 0.7,
+  "sameAs": [
+    {"@id": "urn:ngm:class:model-quality", "label": "Model Quality"},
+    {"@id": "urn:ngm:class:predictive-performance", "label": "Predictive Performance"}
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

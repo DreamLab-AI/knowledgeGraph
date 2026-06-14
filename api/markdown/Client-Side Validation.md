@@ -28,7 +28,13 @@ alias:: client-side-validation
   "relations": {
     "enables": [
       {"@id": "urn:ngm:class:rgb-protocol", "label": "RGB Protocol"},
-      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"}
+      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"},
+      {"@id": "urn:ngm:class:block-trails", "label": "Block Trails"},
+      {"@id": "urn:ngm:class:web-contracts", "label": "Web Contracts"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:single-use-seals", "label": "Single Use Seals"},
+      {"@id": "urn:ngm:class:proof-of-publication", "label": "Proof of Publication"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:cryptographic-proof", "label": "Cryptographic Proof"},

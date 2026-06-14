@@ -61,36 +61,69 @@ public:: true
   "definition": "A Generative Adversarial Network (GAN) is a deep learning architecture in which a generator network and a discriminator network are trained simultaneously in an adversarial min-max game: the generator learns to produce synthetic samples indistinguishable from real data, while the discriminator learns to detect fakes. GANs underpin high-fidelity image synthesis, video generation, data augmentation, and synthetic data creation across domains including healthcare, finance, and computer vision.",
   "domain": "artificial-intelligence",
   "maturity": "emerging",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:ai-model-architecture",
-      "label": "AI Model Architecture"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:ai-model-architecture",
+    "label": "AI Model Architecture"
+  },
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"}
+      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:generator-network", "label": "Generator Network"},
+      {"@id": "urn:ngm:class:discriminator-network", "label": "Discriminator Network"},
+      {"@id": "urn:ngm:class:adversarial-training", "label": "Adversarial Training"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
+      {"@id": "urn:ngm:class:training-data", "label": "Training Data"},
+      {"@id": "urn:ngm:class:backpropagation", "label": "Backpropagation"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:image-generation", "label": "Image Generation"},
       {"@id": "urn:ngm:class:synthetic-data", "label": "Synthetic Data"},
-      {"@id": "urn:ngm:class:synthetic-media", "label": "Synthetic Media"}
+      {"@id": "urn:ngm:class:synthetic-media", "label": "Synthetic Media"},
+      {"@id": "urn:ngm:class:data-augmentation", "label": "Data Augmentation"},
+      {"@id": "urn:ngm:class:deepfake", "label": "Deepfake"},
+      {"@id": "urn:ngm:class:super-resolution", "label": "Super-Resolution"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:min-max-game", "label": "Min-Max Game"},
+      {"@id": "urn:ngm:class:unsupervised-learning", "label": "Unsupervised Learning"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:convolutional-neural-network", "label": "Convolutional Neural Network"},
+      {"@id": "urn:ngm:class:latent-space", "label": "Latent Space"}
     ],
     "contrastsWith": [
       {"@id": "urn:ngm:class:diffusion-model", "label": "Diffusion Model"},
-      {"@id": "urn:ngm:class:autoencoder", "label": "Autoencoder"}
+      {"@id": "urn:ngm:class:autoencoder", "label": "Autoencoder"},
+      {"@id": "urn:ngm:class:variational-autoencoder", "label": "Variational Autoencoder"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
+      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"},
+      {"@id": "urn:ngm:class:privacy-preserving-ai", "label": "Privacy-Preserving AI"}
     ]
   },
-  "quality": 0.5,
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   },
   "sameAs": [
     {
       "@id": "urn:ngm:class:generative-adversarial-networks",
       "label": "Generative Adversarial Networks"
+    },
+    {
+      "@id": "urn:ngm:class:gan",
+      "label": "GAN"
     }
   ]
 }
@@ -152,11 +185,30 @@ public:: true
 
 - ### Relationships
   - partOf [[Generative AI]]
+  - partOf [[Deep Learning]]
+  - hasPart [[Generator Network]]
+  - hasPart [[Discriminator Network]]
+  - hasPart [[Adversarial Training]]
+  - requires [[Neural Network]]
+  - requires [[Training Data]]
+  - requires [[Backpropagation]]
   - enables [[Image Generation]]
   - enables [[Synthetic Data]]
   - enables [[Synthetic Media]]
+  - enables [[Data Augmentation]]
+  - enables [[Deepfake]]
+  - enables [[Super-Resolution]]
+  - implements [[Min-Max Game]]
+  - implements [[Unsupervised Learning]]
+  - uses [[Convolutional Neural Network]]
+  - uses [[Latent Space]]
   - contrastsWith [[Diffusion Model]]
   - contrastsWith [[Autoencoder]]
+  - contrastsWith [[Variational Autoencoder]]
+  - relatedTo [[Computer Vision]]
+  - relatedTo [[Natural Language Processing]]
+  - bridgesTo [[Federated Learning]]
+  - bridgesTo [[Privacy-Preserving AI]]
 
 - ### Content
   - ### Primary Definition

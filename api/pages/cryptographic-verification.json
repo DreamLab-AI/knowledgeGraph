@@ -4,7 +4,7 @@
   "slug": "cryptographic-verification",
   "public": true,
   "classIri": "urn:ngm:class:cryptographic-verification",
-  "domain": "infrastructure",
+  "domain": "security",
   "definition": "Cryptographic Verification is the process of using cryptographic primitives\u2014such as digital signatures, hash functions, and zero-knowledge proofs\u2014to confirm the authenticity, integrity, and non-repudiation of data, identities, or transactions. It forms the trust foundation for blockchain systems, content authentication, and decentralised identity schemes.",
   "subClassOf": [
     {
@@ -13,11 +13,16 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.68,
   "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cryptographic-key-management",
+        "label": "Cryptographic Key Management"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:content-authentication",
@@ -26,15 +31,53 @@
       {
         "id": "urn:ngm:class:blockchain",
         "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "id": "urn:ngm:class:non-repudiation",
+        "label": "Non-Repudiation"
+      },
+      {
+        "id": "urn:ngm:class:trusted-execution-environment",
+        "label": "Trusted Execution Environment"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:message-authentication-code",
+        "label": "Message Authentication Code"
+      },
+      {
+        "id": "urn:ngm:class:certificate-authority",
+        "label": "Certificate Authority"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:password-based-authentication",
+        "label": "Password-Based Authentication"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:cryptographic-system",
         "label": "Cryptographic System"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-credential",
+        "label": "Verifiable Credential"
       }
     ],
     "uses": [
@@ -45,10 +88,44 @@
       {
         "id": "urn:ngm:class:digital-signature",
         "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
+        "label": "Public-Key Cryptography"
       }
     ],
-    "supports": [],
-    "standardizedBy": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:data-integrity",
+        "label": "Data Integrity"
+      },
+      {
+        "id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-provenance",
+        "label": "Supply Chain Provenance"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:nist-cryptographic-standards",
+        "label": "NIST Cryptographic Standards"
+      },
+      {
+        "id": "urn:ngm:class:x509-certificate-standard",
+        "label": "X.509 Certificate Standard"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -56,8 +133,12 @@
         "label": "Zero-Knowledge Proof"
       },
       {
-        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
-        "label": "Public-Key Cryptography"
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:transport-layer-security",
+        "label": "Transport Layer Security"
       }
     ]
   },

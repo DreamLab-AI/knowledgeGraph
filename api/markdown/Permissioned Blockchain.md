@@ -107,28 +107,162 @@ alias:: BC-0029-permissioned-blockchain, BC-0429-permissioned-blockchain, Permis
   "@id": "urn:ngm:class:permissioned-blockchain",
   "@type": "Class",
   "label": "Permissioned Blockchain",
-  "definition": "A restricted-access distributed ledger controlled by known participants using predefined permissions and pluggable Consensus Mechanism|consensus mechanisms, enabling organisations to leverage blockchain technology's immutability, transparency, and smart contract capabilities whilst maintainin...",
+  "definition": "A restricted-access distributed ledger controlled by known participants using predefined permissions and pluggable consensus mechanisms, enabling organisations to leverage blockchain technology's immutability, transparency, and smart contract capabilities whilst maintaining regulatory compliance and business confidentiality. Access control is enforced at multiple layers—node permissioning restricting which organisations participate, account permissioning controlling transaction submission, and private channels enabling confidential subsets of participants to conduct transactions invisibly to others.",
   "domain": "blockchain",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:bc-network-component",
-      "label": "Network Component"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:distributed-ledger",
+    "label": "Distributed Ledger"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:private-channels",
+        "label": "Private Channels"
+      },
+      {
+        "@id": "urn:ngm:class:membership-service-provider",
+        "label": "Membership Service Provider"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:enterprise-blockchain-architecture",
+        "label": "Enterprise Blockchain Architecture"
+      }
+    ],
     "requires": [
       {
-        "@id": "urn:ngm:class:bc-0120-consensus-mechanism",
-        "label": "BC-0120-consensus-mechanism"
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-authority",
+        "label": "Proof of Authority"
+      },
+      {
+        "@id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      },
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:data-privacy",
+        "label": "Data Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:auditability",
+        "label": "Auditability"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:hyperledger-fabric",
+        "label": "Hyperledger Fabric"
+      },
+      {
+        "@id": "urn:ngm:class:hyperledger-besu",
+        "label": "Hyperledger Besu"
+      },
+      {
+        "@id": "urn:ngm:class:quorum-blockchain",
+        "label": "Quorum Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:r3-corda",
+        "label": "R3 Corda"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-hashing",
+        "label": "Cryptographic Hashing"
+      },
+      {
+        "@id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      },
+      {
+        "@id": "urn:ngm:class:trade-finance",
+        "label": "Trade Finance"
+      },
+      {
+        "@id": "urn:ngm:class:healthcare-data-exchange",
+        "label": "Healthcare Data Exchange"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:public-blockchain",
+        "label": "Public Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:private-blockchain",
+        "label": "Private Blockchain"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-consensus",
+        "label": "Distributed Consensus"
+      },
+      {
+        "@id": "urn:ngm:class:tokenisation",
+        "label": "Tokenisation"
       }
     ]
   },
-  "quality": 0.4,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:consortium-blockchain",
+      "label": "Consortium Blockchain"
+    },
+    {
+      "@id": "urn:ngm:class:enterprise-blockchain",
+      "label": "Enterprise Blockchain"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

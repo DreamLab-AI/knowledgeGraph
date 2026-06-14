@@ -54,35 +54,72 @@ public:: true
   "@id": "urn:ngm:class:software-architecture",
   "@type": "Class",
   "label": "Software Architecture",
-  "definition": "Software Architecture for AI systems defines high-level structural patterns, component interactions, and design principles for building scalable, maintainable, and robust artificial intelligence applications.",
+  "definition": "Software Architecture for AI systems defines high-level structural patterns, component interactions, and design principles for building scalable, maintainable, and robust artificial intelligence applications. It encompasses microservices decomposition, event-driven designs, lambda and kappa architectures, feature stores, model registries, and observability pipelines, balancing modularity, reproducibility, and operational excellence.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "subClassOf": {
+    "@id": "urn:ngm:class:ai-infrastructure",
+    "label": "AI Infrastructure (Category)"
+  },
   "relations": {
     "hasPart": [
       {"@id": "urn:ngm:class:microservices-architecture", "label": "Microservices Architecture"},
-      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"}
+      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"},
+      {"@id": "urn:ngm:class:api-gateway", "label": "API Gateway"},
+      {"@id": "urn:ngm:class:feature-store", "label": "Feature Store"},
+      {"@id": "urn:ngm:class:model-registry", "label": "Model Registry"}
     ],
-    "enables": [
+    "partOf": [
       {"@id": "urn:ngm:class:software-engineering", "label": "Software Engineering"}
     ],
-    "relatedTo": [
+    "requires": [
+      {"@id": "urn:ngm:class:system-design", "label": "System Design"},
+      {"@id": "urn:ngm:class:data-pipeline", "label": "Data Pipeline"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:mlops", "label": "MLOps"},
+      {"@id": "urn:ngm:class:continuous-integration", "label": "Continuous Integration"},
+      {"@id": "urn:ngm:class:scalability", "label": "Scalability"},
+      {"@id": "urn:ngm:class:observability", "label": "Observability"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:cloud-computing", "label": "Cloud Computing"},
+      {"@id": "urn:ngm:class:containerisation", "label": "Containerisation"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:design-pattern", "label": "Design Pattern"},
+      {"@id": "urn:ngm:class:event-driven-architecture", "label": "Event-Driven Architecture"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:message-queue", "label": "Message Queue"},
+      {"@id": "urn:ngm:class:service-mesh", "label": "Service Mesh"}
+    ],
+    "supports": [
       {"@id": "urn:ngm:class:machine-learning-discipline-infrastructure", "label": "Machine Learning Infrastructure"},
       {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:monolithic-architecture", "label": "Monolithic Architecture"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:infrastructure-as-code", "label": "Infrastructure as Code"},
+      {"@id": "urn:ngm:class:devops", "label": "DevOps"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:technical-debt", "label": "Technical Debt"},
+      {"@id": "urn:ngm:class:domain-driven-design", "label": "Domain-Driven Design"}
     ]
   },
-  "maturity": "emerging",
-  "quality": 0.35,
+  "sameAs": [
+    {"@id": "urn:ngm:class:application-architecture", "label": "Application Architecture"},
+    {"@id": "urn:ngm:class:system-architecture", "label": "System Architecture"}
+  ],
+  "quality": 0.68,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
-  },
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:ai-infrastructure",
-      "label": "AI Infrastructure (Category)"
-    }
-  ]
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

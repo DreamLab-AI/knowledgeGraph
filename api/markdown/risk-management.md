@@ -9,10 +9,28 @@
 - ### Relationships
   - requires:: [[Explainability]]
   - requires:: [[Data Governance]]
+  - requires:: [[Transparency]]
+  - requires:: [[Accountability]]
   - supports:: [[Compliance Framework]]
   - supports:: [[AI Safety]]
+  - supports:: [[Stakeholder Trust]]
   - relatedTo:: [[AI Ethics]]
   - relatedTo:: [[Responsible AI]]
+  - relatedTo:: [[Incident Response]]
+  - hasPart:: [[Risk Assessment]]
+  - hasPart:: [[Risk Mitigation]]
+  - hasPart:: [[Risk Monitoring]]
+  - hasPart:: [[Risk Communication]]
+  - partOf:: [[Enterprise Risk Management]]
+  - enables:: [[AI Trustworthiness]]
+  - enables:: [[Regulatory Compliance]]
+  - dependsOn:: [[Threat Modeling]]
+  - implements:: [[NIST AI RMF]]
+  - implements:: [[ISO 23894]]
+  - standardizedBy:: [[ISO 31000]]
+  - standardizedBy:: [[EU AI Act]]
+  - bridgesTo:: [[Cybersecurity Risk Management]]
+  - bridgesTo:: [[Financial Risk Management]]
 
 - ### Content
   - The coordinated activities to direct and control an AI system with regard to risk, encompassing risk identification, assessment, treatment, monitoring, and communication throughout the AI lifecycle to minimize potential adverse effects while maximizing benefits.

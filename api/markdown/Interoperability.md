@@ -662,34 +662,70 @@ public:: true
   "@id": "urn:ngm:class:interoperability",
   "@type": "Class",
   "label": "Interoperability",
-  "definition": "The capability of distinct systems, applications, or organizational entities to exchange information, interpret shared data correctly, and utilize exchanged information for coordinated operations.",
-  "domain": "infrastructure",
+  "definition": "The capability of distinct systems, applications, or organizational entities to exchange information, interpret shared data correctly, and utilize exchanged information for coordinated operations. Encompasses technical protocol compatibility, semantic data alignment, and organizational process integration across heterogeneous environments including blockchain networks, healthcare systems, and distributed infrastructure.",
+  "domain": "distributed-systems",
   "maturity": "emerging",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:infra-network-and-comms",
-      "label": "Network and Communication"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:infra-network-and-comms",
+    "label": "Network and Communication"
+  },
   "relations": {
     "requires": [
       {"@id": "urn:ngm:class:technical-standards", "label": "Technical Standards"},
-      {"@id": "urn:ngm:class:interoperability-standard", "label": "Interoperability Standard"}
+      {"@id": "urn:ngm:class:interoperability-standard", "label": "Interoperability Standard"},
+      {"@id": "urn:ngm:class:protocol-compatibility", "label": "Protocol Compatibility"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:cross-platform-interoperability", "label": "Cross-Platform Interoperability"},
-      {"@id": "urn:ngm:class:blockchain-interoperability", "label": "Blockchain Interoperability"}
+      {"@id": "urn:ngm:class:blockchain-interoperability", "label": "Blockchain Interoperability"},
+      {"@id": "urn:ngm:class:data-portability", "label": "Data Portability"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:network-connectivity", "label": "Network Connectivity"},
+      {"@id": "urn:ngm:class:identity-management", "label": "Identity Management"},
+      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:protocol-negotiation", "label": "Protocol Negotiation"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:api-gateway", "label": "API Gateway"},
+      {"@id": "urn:ngm:class:cross-chain-bridge", "label": "Cross-Chain Bridge"},
+      {"@id": "urn:ngm:class:hash-time-locked-contracts", "label": "Hash Time-Locked Contracts"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:decentralized-finance", "label": "Decentralized Finance"},
+      {"@id": "urn:ngm:class:multi-chain-ecosystem", "label": "Multi-Chain Ecosystem"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:cosmos-ibc", "label": "Cosmos IBC"},
+      {"@id": "urn:ngm:class:w3c-standards", "label": "W3C Standards"},
+      {"@id": "urn:ngm:class:hl7-fhir", "label": "HL7 FHIR"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:vendor-lock-in", "label": "Vendor Lock-In"},
+      {"@id": "urn:ngm:class:system-isolation", "label": "System Isolation"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:semantic-web-linked-data-standard", "label": "Semantic Web"},
+      {"@id": "urn:ngm:class:artificial-intelligence-integration", "label": "AI Integration"},
+      {"@id": "urn:ngm:class:metaverse-cross-platform", "label": "Metaverse Cross-Platform Standards"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:semantic-web-linked-data-standard", "label": "Semantic Web"},
-      {"@id": "urn:ngm:class:data-standards", "label": "Data Standards"}
+      {"@id": "urn:ngm:class:data-standards", "label": "Data Standards"},
+      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"},
+      {"@id": "urn:ngm:class:decentralized-identifier", "label": "Decentralized Identifier"}
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {"@id": "urn:ngm:class:cross-system-integration", "label": "Cross-System Integration"},
+    {"@id": "urn:ngm:class:system-integration-capability", "label": "System Integration Capability"}
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

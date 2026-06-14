@@ -4,19 +4,32 @@
   "slug": "digital-currency",
   "public": true,
   "classIri": "urn:ngm:class:digital-currency",
-  "domain": "spatial-computing",
+  "domain": "finance",
   "definition": "Any form of monetary value that exists purely in electronic format, encompassing central bank digital currencies, cryptocurrencies, stablecoins, and virtual currencies used within metaverse economies for transactions, payments, and value exchange without physical representation.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:sc-platform-and-environment",
-      "label": "Platform and Environment"
+      "id": "urn:ngm:class:financial-technology",
+      "label": "Financial Technology"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.72,
   "maturity": "draft",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      },
+      {
+        "id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:security-infrastructure",
@@ -29,6 +42,14 @@
       {
         "id": "urn:ngm:class:digital-wallet",
         "label": "Digital Wallet"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-key-management",
+        "label": "Cryptographic Key Management"
       }
     ],
     "enables": [
@@ -43,22 +64,84 @@
       {
         "id": "urn:ngm:class:digital-payments",
         "label": "Digital Payments"
+      },
+      {
+        "id": "urn:ngm:class:cross-border-remittance",
+        "label": "Cross-Border Remittance"
+      },
+      {
+        "id": "urn:ngm:class:financial-inclusion",
+        "label": "Financial Inclusion"
+      },
+      {
+        "id": "urn:ngm:class:micropayment",
+        "label": "Micropayment"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:monetary-policy",
+        "label": "Monetary Policy"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:fiat-currency",
+        "label": "Fiat Currency"
+      },
+      {
+        "id": "urn:ngm:class:physical-cash",
+        "label": "Physical Cash"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:financial-technology",
         "label": "Financial Technology"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:metaverse-economy",
+        "label": "Metaverse Economy"
       }
     ],
     "uses": [],
     "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:monetary-system",
+        "label": "Monetary System"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:payment-system",
+        "label": "Payment System"
+      },
+      {
+        "id": "urn:ngm:class:tokenisation",
+        "label": "Tokenisation"
+      }
+    ]
   },
   "wikilinks": [
     {

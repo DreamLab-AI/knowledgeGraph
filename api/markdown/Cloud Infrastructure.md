@@ -63,16 +63,42 @@ alias:: CloudInfrastructure
   "@id": "urn:ngm:class:cloud-infrastructure",
   "@type": "Class",
   "label": "Cloud Infrastructure",
-  "definition": "Cloud infrastructure is a computing model that provides on-demand access to virtualized computing resources including servers, storage, networking, and platform services delivered over the internet.",
+  "definition": "Cloud infrastructure is a computing model that provides on-demand access to virtualized computing resources including servers, storage, networking, and platform services delivered over the internet, enabling organizations to provision and scale IT resources dynamically through IaaS, PaaS, and SaaS service models without managing physical hardware.",
   "domain": "infrastructure",
   "maturity": "emerging",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:infra-computing-and-cloud",
-      "label": "Computing and Cloud"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:infra-computing-and-cloud",
+    "label": "Computing and Cloud"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:virtual-machine",
+        "label": "Virtual Machine"
+      },
+      {
+        "@id": "urn:ngm:class:object-storage",
+        "label": "Object Storage"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-private-cloud",
+        "label": "Virtual Private Cloud"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:virtualisation",
+        "label": "Virtualisation"
+      },
+      {
+        "@id": "urn:ngm:class:network-connectivity",
+        "label": "Network Connectivity"
+      },
+      {
+        "@id": "urn:ngm:class:identity-and-access-management",
+        "label": "Identity and Access Management"
+      }
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:elasticity",
@@ -85,14 +111,100 @@ alias:: CloudInfrastructure
       {
         "@id": "urn:ngm:class:self-service-provisioning",
         "label": "Self-Service Provisioning"
+      },
+      {
+        "@id": "urn:ngm:class:infrastructure-as-a-service",
+        "label": "Infrastructure as a Service"
+      },
+      {
+        "@id": "urn:ngm:class:platform-as-a-service",
+        "label": "Platform as a Service"
+      },
+      {
+        "@id": "urn:ngm:class:software-as-a-service",
+        "label": "Software as a Service"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:multi-tenancy",
+        "label": "Multi-Tenancy"
+      },
+      {
+        "@id": "urn:ngm:class:pay-as-you-go-pricing",
+        "label": "Pay-as-you-go Pricing"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:hybrid-cloud",
+        "label": "Hybrid Cloud"
+      },
+      {
+        "@id": "urn:ngm:class:multi-cloud",
+        "label": "Multi-Cloud"
+      },
+      {
+        "@id": "urn:ngm:class:containerisation",
+        "label": "Containerisation"
+      },
+      {
+        "@id": "urn:ngm:class:serverless-computing",
+        "label": "Serverless Computing"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:nist-sp-800-145",
+        "label": "NIST SP 800-145"
+      },
+      {
+        "@id": "urn:ngm:class:iso-iec-17788",
+        "label": "ISO/IEC 17788"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:on-premises-infrastructure",
+        "label": "On-Premises Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:artificial-intelligence-infrastructure",
+        "label": "Artificial Intelligence Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:devops",
+        "label": "DevOps"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-native-application",
+        "label": "Cloud-Native Application"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:cloud-computing-infrastructure",
+      "label": "Cloud Computing Infrastructure"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

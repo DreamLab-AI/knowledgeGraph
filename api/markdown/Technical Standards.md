@@ -46,43 +46,71 @@ public:: true
   "@id": "urn:ngm:class:technical-standards",
   "@type": "Class",
   "label": "Technical Standards",
-  "definition": "Formal specifications, protocols, and guidelines that define how metaverse technologies, components, and systems should operate and interact, ensuring interoperability, quality, and compatibility across different platforms and implementations.",
-  "domain": "spatial-computing",
+  "definition": "Formal specifications, protocols, and guidelines that define how technologies, components, and systems should operate and interact, ensuring interoperability, quality, and compatibility across different platforms and implementations.",
+  "domain": "standards",
   "maturity": "emerging",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:sc-standards-and-interop",
-      "label": "Standards and Interoperability"
-    },
-    {
-      "@id": "urn:ngm:class:standards",
-      "label": "Standards"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:sc-standards-and-interop",
+    "label": "Standards and Interoperability"
+  },
   "relations": {
     "enables": [
       {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"},
-      {"@id": "urn:ngm:class:cross-platform-interoperability", "label": "Cross-Platform Interoperability"}
+      {"@id": "urn:ngm:class:cross-platform-interoperability", "label": "Cross-Platform Interoperability"},
+      {"@id": "urn:ngm:class:protocol-compatibility", "label": "Protocol Compatibility"},
+      {"@id": "urn:ngm:class:vendor-neutrality", "label": "Vendor Neutrality"}
     ],
     "standardizedBy": [
       {"@id": "urn:ngm:class:interoperability-standard", "label": "Interoperability Standard"},
-      {"@id": "urn:ngm:class:3-d-asset-standard", "label": "3D Asset Standard"}
+      {"@id": "urn:ngm:class:3-d-asset-standard", "label": "3D Asset Standard"},
+      {"@id": "urn:ngm:class:ieee-standards-association", "label": "IEEE Standards Association"},
+      {"@id": "urn:ngm:class:w3c", "label": "W3C"},
+      {"@id": "urn:ngm:class:khronos-group", "label": "Khronos Group"},
+      {"@id": "urn:ngm:class:iso", "label": "ISO"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:universal-scene-description", "label": "Universal Scene Description"},
-      {"@id": "urn:ngm:class:3-d-file-format", "label": "3D File Format"}
+      {"@id": "urn:ngm:class:3-d-file-format", "label": "3D File Format"},
+      {"@id": "urn:ngm:class:metaverse-standards-forum", "label": "Metaverse Standards Forum"},
+      {"@id": "urn:ngm:class:open-standard", "label": "Open Standard"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:webxr", "label": "WebXR"},
+      {"@id": "urn:ngm:class:gltf", "label": "glTF"},
+      {"@id": "urn:ngm:class:3d-tiles", "label": "3D Tiles"},
+      {"@id": "urn:ngm:class:ieee-p2874", "label": "IEEE P2874"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:conformance-testing", "label": "Conformance Testing"},
+      {"@id": "urn:ngm:class:reference-implementation", "label": "Reference Implementation"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:proprietary-protocol", "label": "Proprietary Protocol"},
+      {"@id": "urn:ngm:class:vendor-lock-in", "label": "Vendor Lock-In"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:governance", "label": "Governance"},
+      {"@id": "urn:ngm:class:security-standard", "label": "Security Standard"}
     ]
   },
-  "quality": 0.5,
+  "quality": 0.65,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "inferenceRule": "RelationEnrichment"
   },
   "sameAs": [
     {
       "@id": "urn:ngm:class:technical-standard",
       "label": "Technical Standard"
+    },
+    {
+      "@id": "urn:ngm:class:technical-specification",
+      "label": "Technical Specification"
+    },
+    {
+      "@id": "urn:ngm:class:industry-standard",
+      "label": "Industry Standard"
     }
   ]
 }

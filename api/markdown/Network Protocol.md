@@ -62,10 +62,44 @@ public:: true
   "@id": "urn:ngm:class:network-protocol",
   "@type": "Class",
   "label": "Network Protocol",
-  "definition": "A network protocol is a set of established rules that specify how to format, send, and receive data between networked devices, enabling diverse communication systems to interact using standard procedures.",
-  "domain": "distributed-collaboration",
+  "definition": "A network protocol is a set of established rules that specify how to format, send, and receive data between networked devices, enabling diverse communication systems to interact using standard procedures. Protocols are organized into layered architectures (OSI, TCP/IP) and govern addressing, routing, error detection, session management, and application-layer services.",
+  "domain": "infrastructure",
   "maturity": "emerging",
+  "subClassOf": {
+    "@id": "urn:ngm:class:communication-standard",
+    "label": "Communication Standard"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:packet-header",
+        "label": "Packet Header"
+      },
+      {
+        "@id": "urn:ngm:class:protocol-stack",
+        "label": "Protocol Stack"
+      },
+      {
+        "@id": "urn:ngm:class:network-frame",
+        "label": "Network Frame"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:internet-architecture",
+        "label": "Internet Architecture"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:network-addressing",
+        "label": "Network Addressing"
+      },
+      {
+        "@id": "urn:ngm:class:error-detection",
+        "label": "Error Detection"
+      }
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:data-transmission",
@@ -78,27 +112,117 @@ public:: true
       {
         "@id": "urn:ngm:class:interoperability",
         "label": "Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      },
+      {
+        "@id": "urn:ngm:class:internet-connectivity",
+        "label": "Internet Connectivity"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:physical-layer",
+        "label": "Physical Layer"
       }
     ],
     "implements": [
       {
+        "@id": "urn:ngm:class:osi-model",
+        "label": "OSI Model"
+      },
+      {
+        "@id": "urn:ngm:class:tcp-ip-model",
+        "label": "TCP/IP Model"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:packet-switching",
+        "label": "Packet Switching"
+      },
+      {
+        "@id": "urn:ngm:class:flow-control",
+        "label": "Flow Control"
+      },
+      {
+        "@id": "urn:ngm:class:routing-algorithm",
+        "label": "Routing Algorithm"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      },
+      {
+        "@id": "urn:ngm:class:quality-of-service",
+        "label": "Quality of Service"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      },
+      {
+        "@id": "urn:ngm:class:iso",
+        "label": "ISO"
+      },
+      {
+        "@id": "urn:ngm:class:ieee",
+        "label": "IEEE"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:proprietary-protocol",
+        "label": "Proprietary Protocol"
+      }
+    ],
+    "bridgesTo": [
+      {
         "@id": "urn:ngm:class:distributed-collaboration",
-        "label": "distributed-collaboration"
+        "label": "Distributed Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-protocol",
+        "label": "Cryptographic Protocol"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:bandwidth",
+        "label": "Bandwidth"
+      },
+      {
+        "@id": "urn:ngm:class:latency",
+        "label": "Latency"
       }
     ]
   },
-  "quality": 0.5,
-  "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
-  },
-  "subClassOf": [
+  "sameAs": [
     {
-      "@id": "urn:ngm:class:dc-protocol-and-infra",
-      "label": "Protocol and Infrastructure"
+      "@id": "urn:ngm:class:communication-protocol",
+      "label": "Communication Protocol"
+    },
+    {
+      "@id": "urn:ngm:class:data-link-protocol",
+      "label": "Data Link Protocol"
     }
-  ]
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

@@ -4,24 +4,42 @@
   "slug": "secure-multi-party-computation",
   "public": true,
   "classIri": "urn:ngm:class:secure-multi-party-computation",
-  "domain": "infrastructure",
+  "domain": "security",
   "definition": "Secure Multi-Party Computation (MPC) is a cryptographic protocol enabling multiple parties to jointly compute functions over their combined private inputs without revealing individual inputs to other participants or third parties. Only the final output is disclosed; intermediate computations remain confidential. Key implementation techniques include secret sharing (Shamir), garbled circuits (Yao), and oblivious transfer primitives.",
   "subClassOf": [
-    {
-      "id": "urn:ngm:class:infra-security-and-identity",
-      "label": "Security and Identity"
-    },
     {
       "id": "urn:ngm:class:cryptography",
       "label": "Cryptography"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:secret-sharing",
+        "label": "Secret Sharing"
+      },
+      {
+        "id": "urn:ngm:class:garbled-circuit",
+        "label": "Garbled Circuit"
+      },
+      {
+        "id": "urn:ngm:class:oblivious-transfer",
+        "label": "Oblivious Transfer"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cryptographic-primitive",
+        "label": "Cryptographic Primitive"
+      },
+      {
+        "id": "urn:ngm:class:secure-channel",
+        "label": "Secure Channel"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:federated-learning",
@@ -34,12 +52,38 @@
       {
         "id": "urn:ngm:class:differential-privacy",
         "label": "Differential Privacy"
+      },
+      {
+        "id": "urn:ngm:class:private-set-intersection",
+        "label": "Private Set Intersection"
+      },
+      {
+        "id": "urn:ngm:class:secure-aggregation",
+        "label": "Secure Aggregation"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:trusted-execution-environment",
+        "label": "Trusted Execution Environment"
+      },
+      {
+        "id": "urn:ngm:class:fully-homomorphic-encryption",
+        "label": "Fully Homomorphic Encryption"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:privacy-preserving-machine-learning",
+        "label": "Privacy-Preserving Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:cryptographic-protocol",
@@ -52,23 +96,36 @@
       {
         "id": "urn:ngm:class:homomorphic-encryption",
         "label": "Homomorphic Encryption"
+      },
+      {
+        "id": "urn:ngm:class:shamir-secret-sharing",
+        "label": "Shamir Secret Sharing"
+      },
+      {
+        "id": "urn:ngm:class:yao-s-garbled-circuits",
+        "label": "Yao's Garbled Circuits"
       }
     ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:privacy-enhancing-computation-pec",
+        "label": "Privacy-Enhancing Computation (PEC)"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:privacy-preserving-technology",
         "label": "Privacy Preserving Technology"
       },
       {
-        "id": "urn:ngm:class:cryptographic-primitive",
-        "label": "Cryptographic Primitive"
-      },
-      {
         "id": "urn:ngm:class:privacy-enhancing-computation-pec",
         "label": "Privacy-Enhancing Computation (PEC)"
+      },
+      {
+        "id": "urn:ngm:class:threshold-cryptography",
+        "label": "Threshold Cryptography"
       }
     ]
   },

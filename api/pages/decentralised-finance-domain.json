@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "emerging",
   "relationships": {
     "hasPart": [
@@ -36,6 +36,14 @@
       {
         "id": "urn:ngm:class:yield-aggregator",
         "label": "Yield Aggregator"
+      },
+      {
+        "id": "urn:ngm:class:derivatives-protocol",
+        "label": "Derivatives Protocol"
+      },
+      {
+        "id": "urn:ngm:class:liquid-staking-protocol",
+        "label": "Liquid Staking Protocol"
       }
     ],
     "requires": [
@@ -50,6 +58,14 @@
       {
         "id": "urn:ngm:class:price-oracle",
         "label": "Price Oracle"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-wallet",
+        "label": "Cryptographic Wallet"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
       }
     ],
     "enables": [
@@ -64,17 +80,109 @@
       {
         "id": "urn:ngm:class:composable-financial-products",
         "label": "Composable Financial Products"
+      },
+      {
+        "id": "urn:ngm:class:flash-loan",
+        "label": "Flash Loan"
+      },
+      {
+        "id": "urn:ngm:class:yield-farming",
+        "label": "Yield Farming"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:ethereum-virtual-machine",
+        "label": "Ethereum Virtual Machine"
+      },
+      {
+        "id": "urn:ngm:class:layer-2-scaling",
+        "label": "Layer 2 Scaling"
+      },
+      {
+        "id": "urn:ngm:class:tokenisation-standard",
+        "label": "Tokenisation Standard"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:mechanism-design-domain",
+        "label": "Mechanism Design Domain"
+      },
+      {
+        "id": "urn:ngm:class:token-economic-model",
+        "label": "Token Economic Model"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:centralised-finance",
+        "label": "Centralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:traditional-banking",
+        "label": "Traditional Banking"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:payment-systems-domain",
+        "label": "Payment Systems Domain"
+      },
+      {
+        "id": "urn:ngm:class:risk-management-domain",
+        "label": "Risk Management Domain"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance-domain",
+        "label": "Regulatory Compliance Domain"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:liquidity-pool",
+        "label": "Liquidity Pool"
+      },
+      {
+        "id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:financial-inclusion",
+        "label": "Financial Inclusion"
+      },
+      {
+        "id": "urn:ngm:class:cross-border-payment",
+        "label": "Cross-Border Payment"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:fatf-virtual-asset-guidance",
+        "label": "FATF Virtual Asset Guidance"
+      },
+      {
+        "id": "urn:ngm:class:erc-20-standard",
+        "label": "ERC-20 Standard"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "id": "urn:ngm:class:non-fungible-token",
+        "label": "Non-Fungible Token"
+      },
+      {
+        "id": "urn:ngm:class:maximal-extractable-value",
+        "label": "Maximal Extractable Value"
+      }
+    ]
   },
   "wikilinks": [
     {

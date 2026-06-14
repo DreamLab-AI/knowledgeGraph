@@ -586,16 +586,56 @@ public:: true
   "@id": "urn:ngm:class:perception-system",
   "@type": "Class",
   "label": "Perception System",
-  "definition": "A Perception System is the sensor processing and environmental understanding component of Autonomous Systems that interprets raw Sensor Data to build a coherent representation of the surrounding environment, including Object Detection, Classification, Tracking,",
+  "definition": "A Perception System is the sensor processing and environmental understanding component of Autonomous Systems that interprets raw Sensor Data to build a coherent representation of the surrounding environment, including Object Detection, Classification, Tracking, Localization, and Scene Understanding. Perception systems fuse data from multiple Sensor Modalities (Camera, LiDAR, Radar, Ultrasonic Sensors) to create robust environmental models for Autonomous Decision-Making.",
   "domain": "artificial-intelligence",
   "maturity": "established",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:ai-technique",
+    "label": "AI Technique"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:object-detection",
+        "label": "Object Detection"
+      },
+      {
+        "@id": "urn:ngm:class:scene-understanding",
+        "label": "Scene Understanding"
+      },
+      {
+        "@id": "urn:ngm:class:localization",
+        "label": "Localization"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous Systems"
+      },
+      {
+        "@id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "@id": "urn:ngm:class:robotics-systems",
+        "label": "Robotics Systems"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:sensor-data",
+        "label": "Sensor Data"
+      },
+      {
+        "@id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:environmental-mapping",
@@ -612,32 +652,88 @@ public:: true
       {
         "@id": "urn:ngm:class:autonomous-navigation",
         "label": "Autonomous Navigation"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-decision-making",
+        "label": "Autonomous Decision-Making"
       }
     ],
-    "partOf": [
+    "uses": [
       {
-        "@id": "urn:ngm:class:autonomous-system",
-        "label": "Autonomous Systems"
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
       },
       {
-        "@id": "urn:ngm:class:ai-agent-system",
-        "label": "AI Agent System"
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
       },
+      {
+        "@id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:uncertainty-quantification",
+        "label": "Uncertainty Quantification"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:iso-26262",
+        "label": "ISO 26262"
+      },
+      {
+        "@id": "urn:ngm:class:iso-21448",
+        "label": "ISO 21448"
+      },
+      {
+        "@id": "urn:ngm:class:sae-j3016",
+        "label": "SAE J3016"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:end-to-end-learning",
+        "label": "End-to-End Learning"
+      }
+    ],
+    "bridgesTo": [
       {
         "@id": "urn:ngm:class:intelligent-virtual-entity",
         "label": "Intelligent Virtual Entity"
       },
       {
-        "@id": "urn:ngm:class:robotics-systems",
-        "label": "Robotics Systems"
+        "@id": "urn:ngm:class:smart-cities",
+        "label": "Smart Cities"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:adversarial-robustness",
+        "label": "Adversarial Robustness"
+      },
+      {
+        "@id": "urn:ngm:class:multi-agent-perception",
+        "label": "Multi-Agent Perception"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:perception-systems",
+      "label": "Perception Systems"
+    },
+    {
+      "@id": "urn:ngm:class:environmental-perception",
+      "label": "Environmental Perception"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

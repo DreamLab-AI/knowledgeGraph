@@ -45,30 +45,66 @@ public:: true
   "definition": "Inference is the process of applying a trained AI model to new, unseen data to produce predictions, classifications, or generated outputs. It is distinct from training in that model parameters are fixed; the computational objective is throughput, latency, and memory efficiency. Inference is the primary execution path in production deployments and is governed by ISO/IEC 22989:2022 clause 3.3.4.",
   "domain": "artificial-intelligence",
   "maturity": "emerging",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:ai-technique",
+    "label": "AI Technique"
+  },
   "relations": {
     "dependsOn": [
       {"@id": "urn:ngm:class:model-training", "label": "Model Training"},
-      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"}
+      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
+      {"@id": "urn:ngm:class:trained-model", "label": "Trained Model"},
+      {"@id": "urn:ngm:class:compute-resource", "label": "Compute Resource"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:hardware-acceleration", "label": "Hardware Acceleration"},
-      {"@id": "urn:ngm:class:inference-hardware", "label": "Inference Hardware"}
+      {"@id": "urn:ngm:class:inference-hardware", "label": "Inference Hardware"},
+      {"@id": "urn:ngm:class:quantization", "label": "Quantization"},
+      {"@id": "urn:ngm:class:batching", "label": "Batching"},
+      {"@id": "urn:ngm:class:runtime-engine", "label": "Runtime Engine"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:prediction", "label": "Prediction"},
+      {"@id": "urn:ngm:class:ai-deployment", "label": "AI Deployment"},
+      {"@id": "urn:ngm:class:real-time-ai", "label": "Real-Time AI"},
+      {"@id": "urn:ngm:class:edge-ai", "label": "Edge AI"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:forward-pass", "label": "Forward Pass"},
+      {"@id": "urn:ngm:class:token-generation", "label": "Token Generation"},
+      {"@id": "urn:ngm:class:post-processing", "label": "Post-Processing"}
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:training", "label": "Training"}
+      {"@id": "urn:ngm:class:training", "label": "Training"},
+      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine-Tuning"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:model-serving", "label": "Model Serving"},
+      {"@id": "urn:ngm:class:mlops", "label": "MLOps"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:iso-iec-22989", "label": "ISO/IEC 22989"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
+      {"@id": "urn:ngm:class:spatial-ai", "label": "Spatial AI"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:latency", "label": "Latency"},
+      {"@id": "urn:ngm:class:throughput", "label": "Throughput"},
+      {"@id": "urn:ngm:class:model-compression", "label": "Model Compression"},
+      {"@id": "urn:ngm:class:onnx", "label": "ONNX"}
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {"@id": "urn:ngm:class:model-inference", "label": "Model Inference"},
+    {"@id": "urn:ngm:class:ai-inference", "label": "AI Inference"}
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

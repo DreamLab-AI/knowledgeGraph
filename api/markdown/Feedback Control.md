@@ -102,16 +102,10 @@ alias:: FeedbackControl
   "definition": "Feedback Control - A closed-loop control mechanism in which Sensor measurements of actual system state are continuously compared against desired Setpoints, and control actions are adjusted in real time to minimise error and maintain stable, accurate Robot Behaviour.",
   "domain": "robotics",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:robo-actuation-and-control",
-      "label": "Actuation and Control"
-    },
-    {
-      "@id": "urn:ngm:class:control-theory",
-      "label": "Control Theory"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:control-theory",
+    "label": "Control Theory"
+  },
   "relations": {
     "requires": [
       {
@@ -125,6 +119,10 @@ alias:: FeedbackControl
       {
         "@id": "urn:ngm:class:control-algorithm",
         "label": "Control Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:sensor",
+        "label": "Sensor"
       }
     ],
     "enables": [
@@ -150,13 +148,109 @@ alias:: FeedbackControl
         "@id": "urn:ngm:class:stabilisation-architecture",
         "label": "Stabilisation Architecture"
       }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:pid-controller",
+        "label": "PID Controller"
+      },
+      {
+        "@id": "urn:ngm:class:feedback-loop",
+        "label": "Feedback Loop"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:plant-model",
+        "label": "Plant Model"
+      },
+      {
+        "@id": "urn:ngm:class:state-estimation",
+        "label": "State Estimation"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:closed-loop-control",
+        "label": "Closed-Loop Control"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:transfer-function",
+        "label": "Transfer Function"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:robot-behaviour",
+        "label": "Robot Behaviour"
+      },
+      {
+        "@id": "urn:ngm:class:adaptive-control",
+        "label": "Adaptive Control"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:iso-13849",
+        "label": "ISO 13849"
+      },
+      {
+        "@id": "urn:ngm:class:iec-61508",
+        "label": "IEC 61508"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:open-loop-control",
+        "label": "Open-Loop Control"
+      },
+      {
+        "@id": "urn:ngm:class:feedforward-control",
+        "label": "Feedforward Control"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:model-predictive-control",
+        "label": "Model Predictive Control"
+      },
+      {
+        "@id": "urn:ngm:class:optimal-control",
+        "label": "Optimal Control"
+      }
     ]
   },
-  "quality": 0.61,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:closed-loop-control",
+      "label": "Closed-Loop Control"
+    },
+    {
+      "@id": "urn:ngm:class:negative-feedback-control",
+      "label": "Negative Feedback Control"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

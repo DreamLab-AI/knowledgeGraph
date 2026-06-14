@@ -56,13 +56,57 @@ public:: true
       "label": "Content and Assets"
     }
   ],
-  "quality": 0.35,
+  "quality": 0.65,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   },
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:digital-media-production",
+      "label": "Digital Media Production"
+    },
+    {
+      "@id": "urn:ngm:class:content-authoring",
+      "label": "Content Authoring"
+    }
+  ],
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:3d-modelling",
+        "label": "3D Modelling"
+      },
+      {
+        "@id": "urn:ngm:class:texture-authoring",
+        "label": "Texture Authoring"
+      },
+      {
+        "@id": "urn:ngm:class:audio-production",
+        "label": "Audio Production"
+      },
+      {
+        "@id": "urn:ngm:class:video-editing",
+        "label": "Video Editing"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:content-production-workflow",
+        "label": "Content Production Workflow"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:digital-asset-management",
+        "label": "Digital Asset Management"
+      },
+      {
+        "@id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
+      }
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:digital-content",
@@ -71,6 +115,14 @@ public:: true
       {
         "@id": "urn:ngm:class:metaverse-content-pipeline",
         "label": "Metaverse Content Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      },
+      {
+        "@id": "urn:ngm:class:interactive-media",
+        "label": "Interactive Media"
       }
     ],
     "uses": [
@@ -81,18 +133,64 @@ public:: true
       {
         "@id": "urn:ngm:class:rendering-technology",
         "label": "Rendering Technology"
+      },
+      {
+        "@id": "urn:ngm:class:physically-based-rendering",
+        "label": "Physically Based Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-world",
+        "label": "Virtual World"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:graphics-processing-unit",
+        "label": "Graphics Processing Unit"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:analogue-content-production",
+        "label": "Analogue Content Production"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:non-fungible-token",
+        "label": "Non-Fungible Token"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-storage",
+        "label": "Distributed Storage"
       }
     ],
     "relatedTo": [
       {
         "@id": "urn:ngm:class:digital-content-layer",
         "label": "Digital Content Layer"
-      }
-    ],
-    "partOf": [
+      },
       {
-        "@id": "urn:ngm:class:content-production-workflow",
-        "label": "Content Production Workflow"
+        "@id": "urn:ngm:class:open-usd",
+        "label": "OpenUSD"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
       }
     ]
   }

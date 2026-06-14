@@ -4,20 +4,16 @@
   "slug": "policy-engine",
   "public": true,
   "classIri": "urn:ngm:class:policy-engine",
-  "domain": "spatial-computing",
+  "domain": "governance",
   "definition": "A Policy Engine is an automated software component that evaluates, enforces, and logs governance, access-control, and behavioural rules within a metaverse or spatial computing system. It interprets declarative policy specifications (e.g., XACML, OPA Rego, or bespoke ontology-derived rules) and applies them at runtime to user actions, asset transactions, and inter-platform communications, enabling consistent compliance across distributed, multi-stakeholder virtual environments.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-governance-and-safety",
       "label": "Governance and Safety"
-    },
-    {
-      "id": "urn:ngm:class:metaverse-governance-and-safeguarding",
-      "label": "Metaverse governance and safeguarding"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.7,
   "maturity": "emerging",
   "relationships": {
     "hasPart": [],
@@ -29,9 +25,30 @@
       {
         "id": "urn:ngm:class:authentication",
         "label": "Authentication"
+      },
+      {
+        "id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      },
+      {
+        "id": "urn:ngm:class:policy-specification-language",
+        "label": "Policy Specification Language"
       }
     ],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-governance",
+        "label": "Decentralised Governance"
+      },
+      {
+        "id": "urn:ngm:class:data-sovereignty",
+        "label": "Data Sovereignty"
+      }
+    ],
     "dependsOn": [],
     "implements": [
       {
@@ -41,11 +58,50 @@
       {
         "id": "urn:ngm:class:policy-enforcement",
         "label": "Policy Enforcement"
+      },
+      {
+        "id": "urn:ngm:class:attribute-based-access-control",
+        "label": "Attribute-Based Access Control"
+      },
+      {
+        "id": "urn:ngm:class:role-based-access-control",
+        "label": "Role-Based Access Control"
       }
     ],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:manual-moderation",
+        "label": "Manual Moderation"
+      },
+      {
+        "id": "urn:ngm:class:hardcoded-access-control",
+        "label": "Hardcoded Access Control"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "id": "urn:ngm:class:rule-engine",
+        "label": "Rule Engine"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
     "supports": [
       {
         "id": "urn:ngm:class:metaverse-governance-and-safeguarding",
@@ -54,11 +110,37 @@
       {
         "id": "urn:ngm:class:compliance-framework",
         "label": "Compliance Framework"
+      },
+      {
+        "id": "urn:ngm:class:audit-logging",
+        "label": "Audit Logging"
+      },
+      {
+        "id": "urn:ngm:class:trust-management",
+        "label": "Trust Management"
       }
     ],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:xacml",
+        "label": "XACML"
+      },
+      {
+        "id": "urn:ngm:class:open-policy-agent",
+        "label": "Open Policy Agent"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:privacy-by-design",
+        "label": "Privacy by Design"
+      },
+      {
+        "id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      }
+    ]
   },
   "wikilinks": [
     {

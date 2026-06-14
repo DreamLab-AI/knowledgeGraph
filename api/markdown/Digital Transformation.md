@@ -75,22 +75,14 @@ alias:: DigitalTransformation
   "@id": "urn:ngm:class:digital-transformation",
   "@type": "Class",
   "label": "Digital Transformation",
-  "definition": "The comprehensive integration of digital technologies across all areas of business and society, fundamentally changing how organisations operate, deliver value, and engage with customers through technologies such as AI, cloud computing, IoT, and immersive platforms including the metaverse.",
-  "domain": "spatial-computing",
+  "definition": "The comprehensive integration of digital technologies across all areas of business and society, fundamentally changing how organisations operate, deliver value, and engage with customers through technologies such as AI, cloud computing, IoT, data analytics, and immersive platforms; encompassing cultural, process, and structural change alongside technology adoption.",
+  "domain": "infrastructure",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:sc-standards-and-interop",
-      "label": "Standards and Interoperability"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:organizational-change",
+    "label": "Organizational Change"
+  },
   "relations": {
-    "bridgesTo": [
-      {
-        "@id": "urn:ngm:class:organizational-change",
-        "label": "Organizational Change"
-      }
-    ],
     "requires": [
       {
         "@id": "urn:ngm:class:change-management",
@@ -103,6 +95,14 @@ alias:: DigitalTransformation
       {
         "@id": "urn:ngm:class:data-analytics",
         "label": "Data Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:digital-strategy",
+        "label": "Digital Strategy"
+      },
+      {
+        "@id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
       }
     ],
     "enables": [
@@ -117,14 +117,94 @@ alias:: DigitalTransformation
       {
         "@id": "urn:ngm:class:operational-efficiency",
         "label": "Operational Efficiency"
+      },
+      {
+        "@id": "urn:ngm:class:smart-manufacturing",
+        "label": "Smart Manufacturing"
+      },
+      {
+        "@id": "urn:ngm:class:data-driven-decision-making",
+        "label": "Data-Driven Decision Making"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
+        "@id": "urn:ngm:class:robotic-process-automation",
+        "label": "Robotic Process Automation"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:agile-transformation",
+        "label": "Agile Transformation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:industry-4-0",
+        "label": "Industry 4.0"
+      },
+      {
+        "@id": "urn:ngm:class:enterprise-architecture",
+        "label": "Enterprise Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:platform-economy",
+        "label": "Platform Economy"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain-digitisation",
+        "label": "Supply Chain Digitisation"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:legacy-systems",
+        "label": "Legacy Systems"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:digital-business-transformation",
+      "label": "Digital Business Transformation"
+    },
+    {
+      "@id": "urn:ngm:class:enterprise-digitalisation",
+      "label": "Enterprise Digitalisation"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

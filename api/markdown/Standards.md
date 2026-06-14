@@ -51,34 +51,152 @@ public:: true
   "@type": "Class",
   "label": "Standards",
   "definition": "Established tools, protocols, formats, services, and specifications that support the creation, operation, continuous improvement, and common use of metaverse technologies, enabling interoperability between disparate systems, platforms, and applications.",
-  "domain": "spatial-computing",
+  "domain": "standards",
   "maturity": "draft",
+  "subClassOf": {
+    "@id": "urn:ngm:class:sc-standards-and-interop",
+    "label": "Standards and Interoperability"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:technical-standards",
+        "label": "Technical Standards"
+      },
+      {
+        "@id": "urn:ngm:class:standards-compliance",
+        "label": "Standards Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:standards-conformance",
+        "label": "Standards Conformance"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:open-protocols",
+        "label": "Open Protocols"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:cross-platform-compatibility",
+        "label": "Cross-Platform Compatibility"
+      },
+      {
+        "@id": "urn:ngm:class:data-portability",
+        "label": "Data Portability"
+      },
+      {
+        "@id": "urn:ngm:class:avatar-portability",
+        "label": "Avatar Portability"
+      }
+    ],
     "implements": [
       {
         "@id": "urn:ngm:class:metaverse",
         "label": "Metaverse"
       }
     ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:gltf",
+        "label": "glTF"
+      },
+      {
+        "@id": "urn:ngm:class:universal-scene-description",
+        "label": "Universal Scene Description"
+      },
+      {
+        "@id": "urn:ngm:class:webxr",
+        "label": "WebXR"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:standards-development-organisation",
+        "label": "Standards Development Organisation"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse-standards-forum",
+        "label": "Metaverse Standards Forum"
+      },
+      {
+        "@id": "urn:ngm:class:ieee",
+        "label": "IEEE"
+      },
+      {
+        "@id": "urn:ngm:class:khronos-group",
+        "label": "Khronos Group"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:proprietary-protocol",
+        "label": "Proprietary Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:vendor-lock-in",
+        "label": "Vendor Lock-In"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:web3",
+        "label": "Web3"
+      },
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
+    ],
     "relatedTo": [
       {
         "@id": "urn:ngm:class:interoperability",
         "label": "Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:open-source",
+        "label": "Open Source"
       }
     ]
   },
-  "quality": 0.5,
-  "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
-  },
-  "subClassOf": [
+  "sameAs": [
     {
-      "@id": "urn:ngm:class:sc-standards-and-interop",
-      "label": "Standards and Interoperability"
+      "@id": "urn:ngm:class:technical-specification",
+      "label": "Technical Specification"
+    },
+    {
+      "@id": "urn:ngm:class:protocol-standard",
+      "label": "Protocol Standard"
     }
-  ]
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

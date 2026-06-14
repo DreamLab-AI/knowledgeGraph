@@ -8,30 +8,78 @@
   "definition": "A sandboxed runtime environment that executes smart contract bytecode deterministically across distributed nodes, translating high-level contract code into low-level operations whilst metering computational resource consumption and enforcing state-transition rules. The Ethereum Virtual Machine is the canonical reference implementation, with alternatives including WebAssembly-based runtimes for improved performance.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:infra-computing-and-cloud",
-      "label": "Computing and Cloud"
-    },
-    {
       "id": "urn:ngm:class:computing-infrastructure",
       "label": "Computing Infrastructure"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.4,
+  "qualityScore": 0.65,
   "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:gas-metering",
+        "label": "Gas Metering"
+      },
+      {
+        "id": "urn:ngm:class:deterministic-execution",
+        "label": "Deterministic Execution"
+      },
+      {
+        "id": "urn:ngm:class:sandboxed-execution",
+        "label": "Sandboxed Execution"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-application",
+        "label": "Decentralised Application"
+      },
+      {
+        "id": "urn:ngm:class:programmable-blockchain",
+        "label": "Programmable Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:on-chain-computation",
+        "label": "On-Chain Computation"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:stack-based-architecture",
+        "label": "Stack-Based Architecture"
+      },
+      {
+        "id": "urn:ngm:class:state-transition-function",
+        "label": "State Transition Function"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:hypervisor",
+        "label": "Hypervisor"
+      },
+      {
+        "id": "urn:ngm:class:container-runtime",
+        "label": "Container Runtime"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:blockchain",
@@ -40,20 +88,49 @@
       {
         "id": "urn:ngm:class:cryptography",
         "label": "Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:bytecode",
+        "label": "Bytecode"
+      },
+      {
+        "id": "urn:ngm:class:opcode",
+        "label": "Opcode"
       }
     ],
     "supports": [
       {
         "id": "urn:ngm:class:distributed-system",
         "label": "Distributed System"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:turing-completeness",
+        "label": "Turing Completeness"
       }
     ],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:blockchain-node",
+        "label": "Blockchain Node"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:smart-contract-execution",
         "label": "Smart Contract Execution"
+      },
+      {
+        "id": "urn:ngm:class:ethereum-virtual-machine",
+        "label": "Ethereum Virtual Machine"
+      },
+      {
+        "id": "urn:ngm:class:webassembly",
+        "label": "WebAssembly"
       }
     ]
   },

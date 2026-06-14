@@ -74,27 +74,43 @@ public:: true
   "domain": "infrastructure",
   "maturity": "emerging",
   "qualityScore": 0.7,
-  "subClassOf": [
+  "subClassOf": {
+    "@id": "urn:ngm:class:computing-infrastructure",
+    "label": "Computing Infrastructure"
+  },
+  "quality": 0.65,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  },
+  "sameAs": [
     {
-      "@id": "urn:ngm:class:infra-computing-and-cloud",
-      "label": "Computing and Cloud"
+      "@id": "urn:ngm:class:blockchain-runtime",
+      "label": "Blockchain Runtime"
     },
     {
-      "@id": "urn:ngm:class:computing-infrastructure",
-      "label": "Computing Infrastructure"
+      "@id": "urn:ngm:class:contract-execution-environment",
+      "label": "Contract Execution Environment"
     }
   ],
-  "quality": 0.4,
-  "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
-  },
   "relations": {
     "enables": [
       {
         "@id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-application",
+        "label": "Decentralised Application"
+      },
+      {
+        "@id": "urn:ngm:class:programmable-blockchain",
+        "label": "Programmable Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:on-chain-computation",
+        "label": "On-Chain Computation"
       }
     ],
     "uses": [
@@ -105,18 +121,92 @@ public:: true
       {
         "@id": "urn:ngm:class:cryptography",
         "label": "Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:bytecode",
+        "label": "Bytecode"
+      },
+      {
+        "@id": "urn:ngm:class:opcode",
+        "label": "Opcode"
       }
     ],
-    "relatedTo": [
+    "requires": [
       {
-        "@id": "urn:ngm:class:smart-contract-execution",
-        "label": "Smart Contract Execution"
+        "@id": "urn:ngm:class:gas-metering",
+        "label": "Gas Metering"
+      },
+      {
+        "@id": "urn:ngm:class:deterministic-execution",
+        "label": "Deterministic Execution"
+      },
+      {
+        "@id": "urn:ngm:class:sandboxed-execution",
+        "label": "Sandboxed Execution"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:stack-based-architecture",
+        "label": "Stack-Based Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:state-transition-function",
+        "label": "State Transition Function"
       }
     ],
     "supports": [
       {
         "@id": "urn:ngm:class:distributed-system",
         "label": "Distributed System"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:turing-completeness",
+        "label": "Turing Completeness"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:blockchain-node",
+        "label": "Blockchain Node"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:hypervisor",
+        "label": "Hypervisor"
+      },
+      {
+        "@id": "urn:ngm:class:container-runtime",
+        "label": "Container Runtime"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:smart-contract-execution",
+        "label": "Smart Contract Execution"
+      },
+      {
+        "@id": "urn:ngm:class:ethereum-virtual-machine",
+        "label": "Ethereum Virtual Machine"
+      },
+      {
+        "@id": "urn:ngm:class:webassembly",
+        "label": "WebAssembly"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
       }
     ]
   }

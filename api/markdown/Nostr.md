@@ -68,7 +68,11 @@ public:: true
     ],
     "bridgesTo": [
       {"@id": "urn:ngm:class:agent-to-agent-communication", "label": "Agent-to-Agent Communication"},
-      {"@id": "urn:ngm:class:decentralised-ai", "label": "Decentralised AI"}
+      {"@id": "urn:ngm:class:decentralised-ai", "label": "Decentralised AI"},
+      {"@id": "urn:ngm:class:did-nostr", "label": "did:nostr"},
+      {"@id": "urn:ngm:class:block-trails", "label": "Block Trails"},
+      {"@id": "urn:ngm:class:web-contracts", "label": "Web Contracts"},
+      {"@id": "urn:ngm:class:javascript-solid-server", "label": "JavaScript Solid Server"}
     ]
   },
   "sameAs": [

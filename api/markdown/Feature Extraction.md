@@ -43,33 +43,65 @@ public:: true
   "@type": "Class",
   "label": "Feature Extraction",
   "definition": "Feature Extraction is the process of transforming raw data into a reduced set of meaningful representations that capture task-relevant information for machine learning models. Deep learning architectures perform hierarchical feature extraction automatically through successive layers, whilst classical techniques such as PCA or wavelet transforms require manual engineering. Feature extraction reduces dimensionality, improves computational efficiency, and determines the quality of downstream model predictions.",
-  "domain": "artificial-intelligence",
+  "domain": "machine-learning",
   "maturity": "emerging",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:sc-content-and-assets",
-      "label": "Content and Assets"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:representation-learning",
+    "label": "Representation Learning"
+  },
   "relations": {
-    "uses": [
-      {"@id": "urn:ngm:class:convolutional-neural-network", "label": "Convolutional Neural Network"},
-      {"@id": "urn:ngm:class:autoencoder", "label": "Autoencoder"}
+    "hasPart": [
+      {"@id": "urn:ngm:class:principal-component-analysis", "label": "Principal Component Analysis"},
+      {"@id": "urn:ngm:class:wavelet-transform", "label": "Wavelet Transform"},
+      {"@id": "urn:ngm:class:bag-of-words", "label": "Bag of Words"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:machine-learning-pipeline", "label": "Machine Learning Pipeline"},
+      {"@id": "urn:ngm:class:data-preprocessing", "label": "Data Preprocessing"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:training-data", "label": "Training Data"},
+      {"@id": "urn:ngm:class:data-normalisation", "label": "Data Normalisation"}
     ],
     "enables": [
-      {"@id": "urn:ngm:class:machine-learning-discipline-pipeline", "label": "Machine Learning Pipeline"},
-      {"@id": "urn:ngm:class:dimensionality-reduction", "label": "Dimensionality Reduction"}
+      {"@id": "urn:ngm:class:dimensionality-reduction", "label": "Dimensionality Reduction"},
+      {"@id": "urn:ngm:class:object-recognition", "label": "Object Recognition"},
+      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
+      {"@id": "urn:ngm:class:anomaly-detection", "label": "Anomaly Detection"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:convolutional-neural-network", "label": "Convolutional Neural Network"},
+      {"@id": "urn:ngm:class:autoencoder", "label": "Autoencoder"},
+      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"},
+      {"@id": "urn:ngm:class:recurrent-neural-network", "label": "Recurrent Neural Network"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
+      {"@id": "urn:ngm:class:signal-processing", "label": "Signal Processing"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:feature-engineering", "label": "Feature Engineering"},
+      {"@id": "urn:ngm:class:raw-data-processing", "label": "Raw Data Processing"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:feature-engineering", "label": "Feature Engineering"},
-      {"@id": "urn:ngm:class:embedding-model", "label": "Embedding Model"}
+      {"@id": "urn:ngm:class:embedding-model", "label": "Embedding Model"},
+      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"},
+      {"@id": "urn:ngm:class:feature-selection", "label": "Feature Selection"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
+      {"@id": "urn:ngm:class:speech-recognition", "label": "Speech Recognition"}
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {"@id": "urn:ngm:class:feature-learning", "label": "Feature Learning"},
+    {"@id": "urn:ngm:class:automated-feature-extraction", "label": "Automated Feature Extraction"}
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```
