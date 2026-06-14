@@ -8,8 +8,8 @@
   "definition": "A short-range wireless communication standard for exchanging data between devices over radio frequencies in the 2.4 gigahertz band. It is widely used for peripherals, audio, and low-power sensors.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:owl-thing",
-      "label": "owl:Thing"
+      "id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Infra Network And Comms"
     }
   ],
   "entityType": "Class",

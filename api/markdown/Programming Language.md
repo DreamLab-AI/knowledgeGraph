@@ -58,10 +58,12 @@ public:: true
   "domain": "artificial-intelligence",
   "maturity": "emerging",
   "qualityScore": 0.72,
-  "subClassOf": {
-    "@id": "urn:ngm:class:formal-language",
-    "label": "Formal Language"
-  },
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:infra-software-engineering",
+      "label": "Infra Software Engineering"
+    }
+  ],
   "sameAs": [
     {
       "@id": "urn:ngm:class:computer-language",

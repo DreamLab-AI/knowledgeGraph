@@ -62,8 +62,8 @@ public:: true
   "domain": "machine-learning",
   "maturity": "emerging",
   "subClassOf": {
-    "@id": "urn:ngm:class:model-compression",
-    "label": "Model Compression"
+    "@id": "urn:ngm:class:ai-technique",
+    "label": "Ai Technique"
   },
   "relations": {
     "hasPart": [

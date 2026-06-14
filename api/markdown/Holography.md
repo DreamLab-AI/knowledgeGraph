@@ -56,8 +56,8 @@ public:: true
   "qualityScore": 0.7,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:owl-thing",
-      "label": "owl:Thing"
+      "@id": "urn:ngm:class:sc-display-and-rendering",
+      "label": "Sc Display And Rendering"
     }
   ],
   "relations": {

@@ -8,8 +8,8 @@
   "definition": "The evolving set of expectations, obligations and entitlements linking workers, employers and the state around employment, income security and social protection, examined specifically under conditions of technological displacement driven by automation, robotics and artificial intelligence. The concept encompasses both descriptive analysis of how existing labour-market settlements are stressed by AI-driven task substitution and normative debates about how governments, firms and civil society should renegotiate the terms of work, welfare and the distribution of productivity gains. It spans labour economics, political philosophy and public policy, treating technological change as a structural challenge to long-standing institutions such as collective bargaining, unemployment insurance and occupational licensing.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:labour-market-policy",
-      "label": "Labour Market Policy"
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "Ai Governance And Ethics"
     }
   ],
   "entityType": "Class",

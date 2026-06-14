@@ -70,10 +70,12 @@ public:: true
   "domain": "data",
   "maturity": "established",
   "qualityScore": 0.7,
-  "subClassOf": {
-    "@id": "urn:ngm:class:owl-thing",
-    "label": "owl:Thing"
-  },
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-research-area",
+      "label": "Ai Research Area"
+    }
+  ],
   "relations": {
     "hasPart": [
       {

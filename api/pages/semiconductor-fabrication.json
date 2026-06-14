@@ -8,8 +8,8 @@
   "definition": "Semiconductor fabrication is the industrial process by which integrated circuits and discrete semiconductor devices are constructed on crystalline silicon or compound semiconductor wafers through iterative cycles of deposition, photolithography, etching, doping, and planarisation. Each process generation, characterised by a technology node (e.g. 7 nm, 3 nm, 2 nm), defines achievable feature sizes and transistor densities, directly determining the computational density and power efficiency of the resulting chips. Fabrication occurs in ISO Class 1\u20135 cleanrooms to suppress particle contamination, with yield management and statistical process control being critical disciplines. The field bridges materials science, quantum mechanics, chemical engineering, and precision metrology to produce the foundational hardware layer for all digital computing, AI accelerators, communications infrastructure, and embedded systems.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:advanced-manufacturing",
-      "label": "Advanced Manufacturing"
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Infra Computing And Cloud"
     }
   ],
   "entityType": "Class",

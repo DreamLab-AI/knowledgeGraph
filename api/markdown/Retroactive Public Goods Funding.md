@@ -32,8 +32,8 @@ public:: true
   "maturity": "emerging",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:public-goods-funding",
-      "label": "Public Goods Funding"
+      "@id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "Bc Defi And Economics"
     }
   ],
   "relations": {

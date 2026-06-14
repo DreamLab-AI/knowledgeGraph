@@ -8,8 +8,8 @@
   "definition": "SPARQL (SPARQL Protocol and RDF Query Language) is a W3C Recommendation defining a query language, update language, and HTTP-based protocol for retrieving and modifying data stored in RDF graph databases and Linked Data endpoints. SPARQL 1.1 (2013) introduced federated queries across multiple remote endpoints via the SERVICE keyword, property paths for graph traversal, aggregation functions, and the SPARQL Update (SPARUL) sublanguage for graph mutation. It serves as the standard access layer for the Semantic Web and knowledge graph ecosystems, occupying a role analogous to SQL for relational databases. The four primary query forms \u2014 SELECT, CONSTRUCT, ASK, and DESCRIBE \u2014 provide flexible mechanisms for retrieving variable bindings, materialising derived graphs, testing graph patterns, and describing resources.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:query-language",
-      "label": "Query Language"
+      "id": "urn:ngm:class:infra-data-management",
+      "label": "Infra Data Management"
     }
   ],
   "entityType": "Class",

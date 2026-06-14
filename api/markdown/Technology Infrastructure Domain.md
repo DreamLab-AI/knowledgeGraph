@@ -43,8 +43,8 @@ elevatedFrom:: [[infrastructure]]
   "domain": "infrastructure",
   "subClassOf": [
     {
-      "@id": "owl:Thing",
-      "label": "Thing"
+      "@id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure"
     }
   ],
   "relations": {

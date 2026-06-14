@@ -33,8 +33,8 @@ alias:: LinkedData
   "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:semantic-web",
-      "label": "Semantic Web"
+      "@id": "urn:ngm:class:infra-data-management",
+      "label": "Infra Data Management"
     }
   ],
   "relations": {

@@ -46,8 +46,8 @@ public:: true
   "domain": "machine-learning",
   "maturity": "stable",
   "subClassOf": {
-    "@id": "urn:ngm:class:objective-function",
-    "label": "Objective Function"
+    "@id": "urn:ngm:class:ai-technique",
+    "label": "Ai Technique"
   },
   "sameAs": [
     {

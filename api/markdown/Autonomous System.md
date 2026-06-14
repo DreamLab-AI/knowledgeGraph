@@ -24,8 +24,8 @@ alias:: Autonomous Systems
   "quality": 0.72,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:intelligent-agent",
-      "label": "Intelligent Agent"
+      "@id": "urn:ngm:class:robo-robot-type",
+      "label": "Robo Robot Type"
     }
   ],
   "sameAs": [

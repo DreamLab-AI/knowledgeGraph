@@ -8,8 +8,8 @@
   "definition": "Cognitive psychology is the branch of psychology that studies internal mental processes such as perception, attention, memory, language, and reasoning.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:owl-thing",
-      "label": "owl:Thing"
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "Ai Research Area"
     }
   ],
   "entityType": "Class",

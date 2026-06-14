@@ -8,8 +8,8 @@
   "definition": "The Regulatory Compliance Domain classifies concepts concerning the practices by which organisations meet and demonstrate adherence to applicable rules. It covers controls, monitoring, evidence and the audit processes that confirm conformance. As a top-level subject axis it operationalises the obligations set by the Regulatory Domain within systems and processes.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:owl-thing",
-      "label": "owl:Thing"
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Infra Legal And Regulatory"
     }
   ],
   "entityType": "Class",

@@ -32,8 +32,8 @@ public:: true
   "maturity": "mature",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:objective-function",
-      "label": "Objective Function"
+      "@id": "urn:ngm:class:ai-technique",
+      "label": "Ai Technique"
     }
   ],
   "relations": {

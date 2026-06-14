@@ -24,7 +24,7 @@ public:: true
   "domain": "infrastructure",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:observability-platform", "label": "Observability Platform"}
+    {"@id": "urn:ngm:class:infra-computing-and-cloud", "label": "Infra Computing And Cloud"}
   ],
   "relations": {
     "hasPart": [

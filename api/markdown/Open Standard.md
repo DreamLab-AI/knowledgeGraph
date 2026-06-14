@@ -42,8 +42,8 @@ public:: true
   "maturity": "mature",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:technical-specification",
-      "label": "Technical Specification"
+      "@id": "urn:ngm:class:sc-standards-and-interop",
+      "label": "Sc Standards And Interop"
     }
   ],
   "relations": {

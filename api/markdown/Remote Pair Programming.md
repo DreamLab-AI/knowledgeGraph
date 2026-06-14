@@ -431,15 +431,14 @@ public:: true
       "label": "Workspace Tools"
     },
     {
-      "@id": "urn:ngm:class:agile-software-development",
-      "label": "Agile Software Development"
-    },
-    {
       "@id": "urn:ngm:class:dc-communication",
       "label": "DC Communication"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:agile-software-development", "label": "Agile Software Development"}
+    ],
     "hasPart": [
       {
         "@id": "urn:ngm:class:audio-video-channel",

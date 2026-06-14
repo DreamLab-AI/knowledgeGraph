@@ -22,8 +22,8 @@
   "maturity": "mature",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:probabilistic-reasoning",
-      "label": "Probabilistic Reasoning"
+      "@id": "urn:ngm:class:ai-technique",
+      "label": "Ai Technique"
     }
   ],
   "relations": {

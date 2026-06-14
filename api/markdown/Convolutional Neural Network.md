@@ -75,8 +75,8 @@ alias:: Convolutional Neural Networks, ConvolutionalNeuralNetwork
   "domain": "machine-learning",
   "maturity": "emerging",
   "subClassOf": {
-    "@id": "urn:ngm:class:deep-neural-network",
-    "label": "Deep Neural Network"
+    "@id": "urn:ngm:class:ai-model-architecture",
+    "label": "Ai Model Architecture"
   },
   "relations": {
     "hasPart": [

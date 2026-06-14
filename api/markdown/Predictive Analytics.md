@@ -42,8 +42,8 @@ public:: true
   "maturity": "mature",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:data-science",
-      "label": "Data Science"
+      "@id": "urn:ngm:class:ai-application",
+      "label": "Ai Application"
     }
   ],
   "sameAs": [

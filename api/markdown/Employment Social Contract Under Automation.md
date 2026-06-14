@@ -57,8 +57,8 @@ elevatedFrom:: [[Social contract and jobs]]
   "qualityScore": 0.7,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:labour-market-policy",
-      "label": "Labour Market Policy"
+      "@id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "Ai Governance And Ethics"
     }
   ],
   "relations": {

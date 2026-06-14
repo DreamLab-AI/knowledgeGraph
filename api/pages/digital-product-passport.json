@@ -8,8 +8,8 @@
   "definition": "A Digital Product Passport (DPP) is a standardised, machine-readable digital record that captures and communicates authoritative information about a product's material composition, manufacturing origin, environmental footprint, repair history, and end-of-life options throughout its full lifecycle. Mandated across product categories by the EU Ecodesign for Sustainable Products Regulation (ESPR) and related instruments such as the EU Battery Regulation, DPPs are accessible to consumers, regulators, recyclers, and supply chain actors via data carriers such as QR codes, NFC tags, or RFID. They serve as a foundational infrastructure of circular economy policy by enabling traceability, transparency, and interoperability across complex global supply chains. DPPs are frequently implemented atop distributed ledger or verifiable credential technologies to ensure provenance integrity and tamper-evident audit trails.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:product-lifecycle-management",
-      "label": "Product Lifecycle Management"
+      "id": "urn:ngm:class:dc-protocol-and-infra",
+      "label": "Dc Protocol And Infra"
     }
   ],
   "entityType": "Class",

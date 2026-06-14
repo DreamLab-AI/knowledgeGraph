@@ -23,7 +23,7 @@ public:: true
   "definition": "Chaos theory is the study of deterministic dynamical systems whose long-term behaviour is highly sensitive to initial conditions, making them practically unpredictable despite obeying fixed deterministic rules. It characterises phenomena such as strange attractors, bifurcations, and the exponential divergence of nearby trajectories measured by Lyapunov exponents. It matters because it explains how simple nonlinear rules can produce complex, aperiodic behaviour, bridging deterministic dynamics and apparent randomness in physical, biological, and economic systems.",
   "domain": "data",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:owl-thing", "label": "Thing"}],
+  "subClassOf": [{"@id": "urn:ngm:class:ai-research-area", "label": "Ai Research Area"}],
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:emergence", "label": "Emergence"},

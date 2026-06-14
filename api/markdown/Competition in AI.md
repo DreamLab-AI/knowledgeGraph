@@ -277,14 +277,6 @@ public:: true
     {
       "@id": "urn:ngm:class:ai-governance-and-ethics",
       "label": "AI Governance and Ethics"
-    },
-    {
-      "@id": "urn:ngm:class:geopolitics",
-      "label": "Geopolitics"
-    },
-    {
-      "@id": "urn:ngm:class:ai-governance-and-ethics",
-      "label": "AI Governance And Ethics"
     }
   ],
   "relations": {
@@ -506,6 +498,12 @@ public:: true
       {
         "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:geopolitics",
+        "label": "Geopolitics"
       }
     ]
   },

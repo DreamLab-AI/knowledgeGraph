@@ -8,8 +8,8 @@
   "definition": "Data Annotation is the process of labeling or tagging raw data (images, text, audio, video) with structured, meaningful labels that provide ground truth for supervised machine learning models, enabling algorithms to learn from human-validated examples.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:machine-learning-pipeline",
-      "label": "Machine Learning Pipeline"
+      "id": "urn:ngm:class:ai-technique",
+      "label": "Ai Technique"
     }
   ],
   "entityType": "Class",

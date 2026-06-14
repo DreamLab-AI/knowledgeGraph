@@ -42,8 +42,8 @@ public:: true
   "maturity": "mature",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:computational-modelling",
-      "label": "Computational Modelling"
+      "@id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Sc Platform And Environment"
     }
   ],
   "relations": {

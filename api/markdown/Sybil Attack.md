@@ -69,10 +69,12 @@ public:: true
   "definition": "A Sybil Attack is a network security threat in which a single adversary creates a large number of pseudonymous identities to gain disproportionate influence over a peer-to-peer system. In blockchain and distributed ledger contexts it can subvert reputation systems, distort consensus voting, facilitate eclipse attacks, and undermine proof-of-stake weighting. Countermeasures include proof-of-work, stake-weighted voting, identity verification, and peer diversity requirements.",
   "domain": "security",
   "maturity": "established",
-  "subClassOf": {
-    "@id": "urn:ngm:class:network-attack",
-    "label": "Network Attack"
-  },
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Infra Security And Identity"
+    }
+  ],
   "relations": {
     "enables": [
       {"@id": "urn:ngm:class:eclipse-attack", "label": "Eclipse Attack"},

@@ -86,10 +86,12 @@ alias:: Neural Networks, NeuralNetwork, neural network, neural networks
   "definition": "A computational model comprising interconnected layers of artificial neurons that learn to approximate functions by adjusting weighted connections through exposure to training data, forming the foundational substrate of deep learning systems including convolutional networks, recurrent networks, and transformer architectures.",
   "domain": "machine-learning",
   "maturity": "draft",
-  "subClassOf": {
-    "@id": "urn:ngm:class:machine-learning-model",
-    "label": "Machine Learning Model"
-  },
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-model-architecture",
+      "label": "Ai Model Architecture"
+    }
+  ],
   "relations": {
     "hasPart": [
       {

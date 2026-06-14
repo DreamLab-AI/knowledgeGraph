@@ -8,8 +8,8 @@
   "definition": "Classifier-Free Guidance (CFG) is a conditional generation technique for diffusion models that steers the denoising trajectory towards a specified condition by computing a weighted extrapolation between a conditional score estimate and an unconditional score estimate produced by the same single model. Unlike classifier guidance, which requires a separately trained differentiable classifier, CFG trains one network jointly on conditional and unconditional objectives by randomly replacing conditioning inputs with a null embedding during training. At inference, the guided score is: score_guided = score_unconditional + w * (score_conditional - score_unconditional), where w is the guidance scale hyperparameter controlling the trade-off between sample diversity and condition alignment. CFG has become the dominant conditioning mechanism across text-to-image, text-to-video, and audio generation systems.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:conditional-generation",
-      "label": "Conditional Generation"
+      "id": "urn:ngm:class:ai-technique",
+      "label": "Ai Technique"
     }
   ],
   "entityType": "Class",

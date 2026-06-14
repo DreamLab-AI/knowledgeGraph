@@ -8,8 +8,8 @@
   "definition": "The Security Domain classifies concepts concerning the protection of systems, data and communications against unauthorised access, modification and disruption. It covers the principles of confidentiality, integrity and availability and the controls that enforce them. As a top-level subject axis it applies across all architectural layers, framing how trust is established and threats are countered.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:owl-thing",
-      "label": "owl:Thing"
+      "id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Infra Security And Identity"
     }
   ],
   "entityType": "Class",

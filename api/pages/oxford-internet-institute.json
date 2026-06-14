@@ -8,8 +8,8 @@
   "definition": "The Oxford Internet Institute is a department of the University of Oxford that conducts multidisciplinary research on the social and economic effects of the internet and digital technologies.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:owl-thing",
-      "label": "owl:Thing"
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "Ai Governance And Ethics"
     }
   ],
   "entityType": "Class",

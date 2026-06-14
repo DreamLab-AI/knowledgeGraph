@@ -8,8 +8,8 @@
   "definition": "Reed Smith is an international law firm headquartered in the United States with offices across several regions. It provides legal services to corporate and institutional clients.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:owl-thing",
-      "label": "owl:Thing"
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Infra Legal And Regulatory"
     }
   ],
   "entityType": "Class",

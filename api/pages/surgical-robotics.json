@@ -8,8 +8,8 @@
   "definition": "Surgical robotics is the application of robotic systems, real-time computer vision, and AI-driven control to assist surgeons or perform procedures with enhanced precision, dexterity, tremor cancellation, and minimally invasive access. Systems range from teleoperated master-slave platforms\u2014where a surgeon's hand movements are scaled, filtered, and transmitted to slave arms\u2014to semi-autonomous robots capable of tissue manipulation and suturing under human supervision. Key technical challenges include sub-millimetre motion tracking, intraoperative tissue deformation modelling, real-time haptic feedback, safe human-robot interaction, and regulatory compliance under medical device frameworks such as ISO 13485, IEC 62304, and EU MDR. The field sits at the intersection of mechatronics, control theory, computer vision, AI inference, and clinical medicine.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:medical-robotics",
-      "label": "Medical Robotics"
+      "id": "urn:ngm:class:robo-robot-type",
+      "label": "Robo Robot Type"
     }
   ],
   "entityType": "Class",

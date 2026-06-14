@@ -8,8 +8,8 @@
   "definition": "Linked Data is a set of design principles articulated by Tim Berners-Lee for publishing machine-readable structured data on the Web, requiring that entities be identified by HTTP URIs, that those URIs dereference to useful RDF descriptions, and that descriptions include typed links to further URIs enabling traversal across a global Web of Data. It constitutes the application layer of the Semantic Web stack and provides the architectural foundation for open knowledge graphs such as Wikidata, DBpedia, and the Linked Open Data cloud. The four canonical principles \u2014 use URIs as names, use HTTP URIs, return structured data on lookup, and include outbound links \u2014 create a decentralised, self-describing information mesh that transcends the boundaries of individual databases and siloed repositories.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:semantic-web",
-      "label": "Semantic Web"
+      "id": "urn:ngm:class:infra-data-management",
+      "label": "Infra Data Management"
     }
   ],
   "entityType": "Class",

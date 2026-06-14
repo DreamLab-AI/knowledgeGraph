@@ -10,14 +10,6 @@
     {
       "id": "urn:ngm:class:ai-governance-and-ethics",
       "label": "AI Governance and Ethics"
-    },
-    {
-      "id": "urn:ngm:class:geopolitics",
-      "label": "Geopolitics"
-    },
-    {
-      "id": "urn:ngm:class:ai-governance-and-ethics",
-      "label": "AI Governance And Ethics"
     }
   ],
   "entityType": "Class",
@@ -142,7 +134,12 @@
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:geopolitics",
+        "label": "Geopolitics"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:agentic-ai-systems",

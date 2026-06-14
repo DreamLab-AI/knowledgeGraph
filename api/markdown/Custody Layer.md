@@ -68,8 +68,8 @@ public:: true
   "qualityScore": 0.7,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:owl-thing",
-      "label": "owl:Thing"
+      "@id": "urn:ngm:class:bc-token-and-asset",
+      "label": "Bc Token And Asset"
     }
   ],
   "relations": {

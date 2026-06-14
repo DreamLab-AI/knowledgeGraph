@@ -42,8 +42,8 @@ public:: true
   "maturity": "mature",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:domain-specific-language",
-      "label": "Domain-Specific Language"
+      "@id": "urn:ngm:class:sc-display-and-rendering",
+      "label": "Sc Display And Rendering"
     }
   ],
   "relations": {

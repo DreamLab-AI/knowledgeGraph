@@ -32,8 +32,8 @@ public:: true
   "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:inference-optimisation",
-      "label": "Inference Optimisation"
+      "@id": "urn:ngm:class:ai-technique",
+      "label": "Ai Technique"
     }
   ],
   "relations": {

@@ -74,8 +74,8 @@ public:: true
   "domain": "governance",
   "maturity": "emerging",
   "subClassOf": {
-    "@id": "urn:ngm:class:organisational-framework",
-    "label": "Organisational Framework"
+    "@id": "urn:ngm:class:infra-legal-and-regulatory",
+    "label": "Infra Legal And Regulatory"
   },
   "relations": {
     "hasPart": [

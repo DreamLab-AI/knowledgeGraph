@@ -8,8 +8,8 @@
   "definition": "A distributed storage infrastructure that distributes data across peer-to-peer networks rather than centralised data centres, enabling data persistence, redundancy, and access without single points of failure, often incentivised by cryptographic token mechanisms.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:distributed-file-system",
-      "label": "Distributed File System"
+      "id": "urn:ngm:class:infra-data-management",
+      "label": "Infra Data Management"
     }
   ],
   "entityType": "Class",

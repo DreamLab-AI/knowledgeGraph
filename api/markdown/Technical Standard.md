@@ -69,10 +69,12 @@ public:: true
   "definition": "A technical standard is a formal document that establishes uniform engineering or technical criteria, methods, processes, and practices to ensure that products, services, and systems are safe, reliable, interoperable, and consistently perform as intended. Standards are developed through consensus-based processes by authoritative bodies and provide the foundation for quality control, innovation, and global technology interoperability.",
   "domain": "standards",
   "maturity": "emerging",
-  "subClassOf": {
-    "@id": "urn:ngm:class:specification",
-    "label": "Specification"
-  },
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Infra Legal And Regulatory"
+    }
+  ],
   "relations": {
     "enables": [
       {

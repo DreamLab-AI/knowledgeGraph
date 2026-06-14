@@ -8,8 +8,8 @@
   "definition": "The Social Layer is the cross-cutting stratum that represents the human relationships, norms, and communities that surround and use a system. It sits above the institutional structures that formalise it and informs governance and application design. It contains community norms, reputation, communication channels, and the informal conventions that shape behaviour.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:owl-thing",
-      "label": "owl:Thing"
+      "id": "urn:ngm:class:dc-communication",
+      "label": "Dc Communication"
     }
   ],
   "entityType": "Class",

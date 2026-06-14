@@ -8,8 +8,8 @@
   "definition": "A robot is an actuated mechanism, programmable in two or more axes with a degree of autonomy, that moves within its environment to perform intended tasks without direct human intervention at the moment of task execution. Robots integrate mechanical structure, actuation, sensing, and control software to perceive their environment, reason about goals, and execute physical or digital actions. The concept spans a wide spectrum from fixed industrial manipulators to mobile autonomous agents, collaborative cobots, and software robots (robotic process automation). Standardised by ISO 8373:2021, the definition distinguishes robots from simple automated machines by requiring reprogrammability and environmental interaction.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:mechatronic-system",
-      "label": "Mechatronic System"
+      "id": "urn:ngm:class:robo-robot-type",
+      "label": "Robo Robot Type"
     }
   ],
   "entityType": "Class",

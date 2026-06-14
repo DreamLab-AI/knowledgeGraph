@@ -8,8 +8,8 @@
   "definition": "Software Testing is the systematic discipline of evaluating software systems and components by executing them under controlled conditions, observing emergent behaviour, and verifying conformance to specified requirements, design intent, and quality attributes. It encompasses a hierarchy of test granularity \u2014 from unit and integration tests that validate individual components to system, end-to-end, and acceptance tests that assess the complete product \u2014 as well as specialised dimensions such as performance, security, accessibility, regression, and exploratory testing. Testing is an integral quality assurance mechanism embedded throughout the software development lifecycle, supporting early defect detection, risk mitigation, and continuous delivery. Alongside static analysis and formal verification, it constitutes the primary empirical evidence base for software correctness and reliability.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:software-quality-assurance",
-      "label": "Software Quality Assurance"
+      "id": "urn:ngm:class:infra-software-engineering",
+      "label": "Infra Software Engineering"
     }
   ],
   "entityType": "Class",

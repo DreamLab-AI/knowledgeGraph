@@ -8,8 +8,8 @@
   "definition": "BIP-341 is the Bitcoin Improvement Proposal that specifies the Taproot upgrade, introducing Pay-to-Taproot (P2TR) as a native SegWit version 1 output type that unifies key-path and script-path spending under a single Schnorr-based commitment. It integrates Merklised Alternative Script Trees (MAST) so that only the executed spending branch is revealed on-chain, preserving the privacy of unexplored script conditions. BIP-341 activated on the Bitcoin mainnet at block 709,632 in November 2021 via the Speedy Trial soft-fork mechanism, requiring 90% miner signalling. It forms part of the Taproot bundle alongside BIP-340 (Schnorr signatures for Bitcoin) and BIP-342 (Tapscript), collectively the largest upgrade to Bitcoin's scripting system since SegWit.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:bitcoin-improvement-proposals",
-      "label": "Bitcoin Improvement Proposals"
+      "id": "urn:ngm:class:bc-protocol-and-consensus",
+      "label": "Bc Protocol And Consensus"
     }
   ],
   "entityType": "Class",

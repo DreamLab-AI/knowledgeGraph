@@ -56,8 +56,8 @@ public:: true
   "qualityScore": 0.74,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:combinatorial-optimisation",
-      "label": "Combinatorial Optimisation"
+      "@id": "urn:ngm:class:ai-technique",
+      "label": "Ai Technique"
     }
   ],
   "sameAs": [

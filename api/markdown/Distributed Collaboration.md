@@ -23,8 +23,8 @@
   "quality": 0.72,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:owl#Thing",
-      "label": "owl#Thing"
+      "@id": "owl:Thing",
+      "label": "Thing"
     }
   ],
   "relations": {

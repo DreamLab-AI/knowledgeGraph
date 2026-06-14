@@ -8,8 +8,8 @@
   "definition": "Equations relating a function to its derivatives, used to model how quantities change with respect to one or more independent variables.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:owl-thing",
-      "label": "owl:Thing"
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "Ai Research Area"
     }
   ],
   "entityType": "Class",

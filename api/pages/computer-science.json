@@ -8,8 +8,8 @@
   "definition": "Computer science is the systematic study of computation, algorithms, data structures, programming languages, and the principles underlying the design and analysis of computing systems. It encompasses both theoretical foundations \u2014 including computability theory, computational complexity, formal languages, and logic \u2014 and applied disciplines such as software engineering, artificial intelligence, databases, and computer networks. As a rigorous scientific and engineering discipline, it provides the intellectual and practical frameworks for building reliable, efficient, and scalable digital systems. Computer science intersects with mathematics, electrical engineering, cognitive science, and the natural sciences, and it underpins virtually every domain of modern technological infrastructure.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:information-technology",
-      "label": "Information Technology"
+      "id": "urn:ngm:class:infra-software-engineering",
+      "label": "Infra Software Engineering"
     }
   ],
   "entityType": "Class",

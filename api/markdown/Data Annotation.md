@@ -66,8 +66,8 @@ public:: true
   "domain": "machine-learning",
   "maturity": "draft",
   "subClassOf": {
-    "@id": "urn:ngm:class:machine-learning-pipeline",
-    "label": "Machine Learning Pipeline"
+    "@id": "urn:ngm:class:ai-technique",
+    "label": "Ai Technique"
   },
   "relations": {
     "enables": [

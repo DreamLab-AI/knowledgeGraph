@@ -50,10 +50,12 @@ public:: true
   "domain": "finance",
   "maturity": "emerging",
   "qualityScore": 0.72,
-  "subClassOf": {
-    "@id": "urn:ngm:class:financial-market",
-    "label": "Financial Market"
-  },
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "DeFi and Economics"
+    }
+  ],
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-14T00:00:00Z",

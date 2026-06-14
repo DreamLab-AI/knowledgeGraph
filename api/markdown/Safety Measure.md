@@ -54,13 +54,12 @@ public:: true
     {
       "@id": "urn:ngm:class:ai-governance-and-ethics",
       "label": "AI Governance and Ethics"
-    },
-    {
-      "@id": "urn:ngm:class:ai-governance",
-      "label": "Ai Governance"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:ai-governance", "label": "Ai Governance"}
+    ],
     "requires": [
       {"@id": "urn:ngm:class:risk-assessment", "label": "Risk Assessment"},
       {"@id": "urn:ngm:class:formal-verification", "label": "Formal Verification"}

@@ -8,8 +8,8 @@
   "definition": "A family of formal knowledge representation languages used to describe concepts, roles, and individuals with well-defined model-theoretic semantics, providing decidable fragments of first-order logic tailored to structured knowledge representation and automated reasoning.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:formal-logic",
-      "label": "Formal Logic"
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "Ai Research Area"
     }
   ],
   "entityType": "Class",

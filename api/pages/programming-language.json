@@ -8,8 +8,8 @@
   "definition": "A formal notation system used to specify algorithms, data structures, and computational models for AI and software applications, characterised by defined syntax and semantics; prominent examples include Python for machine-learning ecosystems, Julia for high-performance numerical computing, and domain-specific languages embedded in ML frameworks.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:formal-language",
-      "label": "Formal Language"
+      "id": "urn:ngm:class:infra-software-engineering",
+      "label": "Infra Software Engineering"
     }
   ],
   "entityType": "Class",

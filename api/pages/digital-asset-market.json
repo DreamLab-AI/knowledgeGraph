@@ -8,8 +8,8 @@
   "definition": "A marketplace \u2014 centralised or decentralised \u2014 where digital assets including cryptocurrencies, NFTs, and tokenised securities are bought, sold, and exchanged. Digital asset markets encompass order-book exchanges, automated market makers, NFT marketplaces, and OTC desks, each governed by distinct liquidity, pricing, and regulatory mechanisms.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:financial-market",
-      "label": "Financial Market"
+      "id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "DeFi and Economics"
     }
   ],
   "entityType": "Class",

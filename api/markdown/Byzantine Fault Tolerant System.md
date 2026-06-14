@@ -23,8 +23,8 @@
   "quality": 0.74,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:fault-tolerant-system",
-      "label": "Fault Tolerant System"
+      "@id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Infra Computing And Cloud"
     }
   ],
   "sameAs": [

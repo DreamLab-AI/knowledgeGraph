@@ -8,8 +8,8 @@
   "definition": "Monte Carlo methods are a broad class of computational algorithms that employ repeated random sampling to approximate numerical quantities that are analytically intractable, including high-dimensional integrals, expectations under complex probability distributions, and optimal policies in stochastic decision processes. The fundamental principle holds that averaging a function over sufficiently many independent samples drawn from an appropriate distribution converges, by the law of large numbers, to the true expected value at a rate of O(1/\u221aN) independent of dimensionality. Monte Carlo methods underpin Bayesian inference, reinforcement learning, sequential Monte Carlo particle filters, and physics simulation, and are foundational to risk analysis, financial modelling, and scientific computing. Variance reduction techniques \u2014 including importance sampling, control variates, stratified sampling, and quasi-Monte Carlo sequences \u2014 substantially improve practical convergence.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:probabilistic-methods",
-      "label": "Probabilistic Methods"
+      "id": "urn:ngm:class:ai-technique",
+      "label": "Ai Technique"
     }
   ],
   "entityType": "Class",

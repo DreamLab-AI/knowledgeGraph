@@ -57,13 +57,12 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
       "label": "Platform and Environment"
-    },
-    {
-      "@id": "urn:ngm:class:tokenomics",
-      "label": "Tokenomics"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:tokenomics", "label": "Tokenomics"}
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:network-participation",

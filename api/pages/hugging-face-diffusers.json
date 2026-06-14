@@ -8,8 +8,8 @@
   "definition": "Hugging Face Diffusers is an open-source Python library that provides a modular, composable toolkit for training, fine-tuning, and running inference with state-of-the-art diffusion models for image, audio, and video generation. The library abstracts the scheduling, noise prediction, and decoder stages of diffusion pipelines behind a consistent API, exposing interchangeable components \u2014 noise schedulers (DDPM, DDIM, DPM-Solver), denoising U-Net or Diffusion Transformer (DiT) backbones, and variational autoencoders \u2014 that researchers can recombine freely. It integrates natively with the Hugging Face Hub for model discovery, versioning, and model-card governance, and supports PyTorch and JAX as compute backends with optional xFormers memory-efficient attention and Accelerate-based distributed training.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:machine-learning-framework",
-      "label": "Machine Learning Framework"
+      "id": "urn:ngm:class:cat-ai-infrastructure",
+      "label": "Cat Ai Infrastructure"
     }
   ],
   "entityType": "Class",

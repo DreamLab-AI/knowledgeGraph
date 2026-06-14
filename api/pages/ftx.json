@@ -8,8 +8,8 @@
   "definition": "A cryptocurrency exchange founded in 2019 that collapsed in November 2022 amid a liquidity crisis and revelations of misuse of customer funds. Its failure led to bankruptcy proceedings and criminal convictions of its leadership.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:owl-thing",
-      "label": "owl:Thing"
+      "id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "Bc Defi And Economics"
     }
   ],
   "entityType": "Class",

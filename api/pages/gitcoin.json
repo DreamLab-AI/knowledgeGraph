@@ -8,8 +8,8 @@
   "definition": "Gitcoin is a blockchain-based public goods funding platform founded in 2017 that finances open-source software development through decentralised grant programmes, bounties, and hackathons, most notably employing quadratic funding to allocate matching pools democratically. The platform uses the Ethereum ecosystem as its primary coordination layer, with GTC governance tokens enabling decentralised community control via its DAO. Gitcoin Passport, a credential aggregation system layering Verifiable Credentials from multiple identity providers, addresses Sybil resistance within open grant rounds and serves as broader Web3 identity infrastructure. Together these mechanisms position Gitcoin as a reference implementation of public goods coordination, bridging open-source software sustainability with decentralised finance and digital identity.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:public-goods-funding",
-      "label": "Public Goods Funding"
+      "id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "Bc Defi And Economics"
     }
   ],
   "entityType": "Class",

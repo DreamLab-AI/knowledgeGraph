@@ -33,8 +33,8 @@ alias:: Classifier Free Guidance
   "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:conditional-generation",
-      "label": "Conditional Generation"
+      "@id": "urn:ngm:class:ai-technique",
+      "label": "Ai Technique"
     }
   ],
   "relations": {

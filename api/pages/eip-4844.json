@@ -8,8 +8,8 @@
   "definition": "EIP-4844, known as Proto-Danksharding or 'Shard Blob Transactions', is an Ethereum Improvement Proposal activated on the Ethereum mainnet in March 2024 that introduces a new transaction type carrying temporary binary large objects (blobs) of data. Each blob is approximately 128 KB, persists for a short window (roughly two weeks) rather than being stored permanently in Ethereum state, and is made accessible to smart contracts only via a cryptographic commitment. The proposal dramatically reduces the data posting costs for Layer-2 rollups by creating a dedicated, cheap data-availability lane, providing a foundation for full Danksharding without requiring immediate shard implementation.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ethereum-improvement-proposal",
-      "label": "Ethereum Improvement Proposal"
+      "id": "urn:ngm:class:bc-protocol-and-consensus",
+      "label": "Bc Protocol And Consensus"
     }
   ],
   "entityType": "Class",

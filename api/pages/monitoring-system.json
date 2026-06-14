@@ -8,8 +8,8 @@
   "definition": "A monitoring system is an integrated observability platform that continuously collects, aggregates, and evaluates telemetry signals \u2014 metrics, logs, traces, and events \u2014 from target environments spanning software services, physical infrastructure, AI models, and distributed systems, in order to detect anomalies, assess operational health, and trigger alerts or automated remediation responses. It encompasses data-collection agents, instrumentation SDKs, time-series storage engines, query and alerting pipelines, and visualisation dashboards that together form a closed-loop feedback mechanism for operational reliability. Monitoring systems implement the three pillars of observability (metrics, logs, traces) and serve as the foundational layer for site reliability engineering, incident management, and compliance auditing in modern distributed architectures.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:observability-platform",
-      "label": "Observability Platform"
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Infra Computing And Cloud"
     }
   ],
   "entityType": "Class",

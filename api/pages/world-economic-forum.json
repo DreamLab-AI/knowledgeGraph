@@ -8,8 +8,8 @@
   "definition": "The World Economic Forum is an international organisation based in Switzerland that convenes leaders from business, government, and civil society to discuss global issues. It is best known for its annual meeting in Davos.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:owl-thing",
-      "label": "owl:Thing"
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Infra Legal And Regulatory"
     }
   ],
   "entityType": "Class",

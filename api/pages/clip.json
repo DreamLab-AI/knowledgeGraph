@@ -8,8 +8,8 @@
   "definition": "CLIP (Contrastive Language-Image Pre-training) is a dual-encoder neural network architecture developed by OpenAI in which a vision encoder (Vision Transformer or CNN) and a text encoder (Transformer) are jointly trained on large-scale internet-sourced image-text pairs using an InfoNCE contrastive objective. The training maximises cosine similarity between embeddings of matched image-text pairs and minimises it for unmatched pairs within a batch, yielding a shared multimodal embedding space where semantically related images and text are geometrically proximate. This shared space enables zero-shot image classification by comparing image embeddings to natural language class descriptions without task-specific fine-tuning, and has become a foundational component in text-to-image diffusion models, open-vocabulary object detection, and cross-modal retrieval systems.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:multimodal-model",
-      "label": "Multimodal Model"
+      "id": "urn:ngm:class:ai-model-architecture",
+      "label": "Ai Model Architecture"
     }
   ],
   "entityType": "Class",

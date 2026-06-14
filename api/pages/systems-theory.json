@@ -8,8 +8,8 @@
   "definition": "Systems theory is an interdisciplinary study of systems as sets of interrelated components, focusing on the relationships, feedback, and emergent behaviour that arise from interaction.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:owl-thing",
-      "label": "owl:Thing"
+      "id": "urn:ngm:class:infra-software-engineering",
+      "label": "Infra Software Engineering"
     }
   ],
   "entityType": "Class",

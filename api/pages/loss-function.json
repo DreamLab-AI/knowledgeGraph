@@ -8,8 +8,8 @@
   "definition": "A Loss Function is a mathematical function that quantifies the discrepancy between a model's predicted outputs and true target values, producing a scalar error measure that serves as the objective for optimisation algorithms during training.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:objective-function",
-      "label": "Objective Function"
+      "id": "urn:ngm:class:ai-technique",
+      "label": "Ai Technique"
     }
   ],
   "entityType": "Class",

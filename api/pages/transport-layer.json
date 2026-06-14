@@ -8,8 +8,8 @@
   "definition": "The Transport Layer is the stratum that provides end-to-end delivery of data between endpoints over a network. It sits above the Network Layer that routes packets and below the protocol and integration strata that rely on reliable channels. It contains segmentation, flow and congestion control, and connection management.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:network-stack",
-      "label": "Network Stack"
+      "id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Infra Network And Comms"
     }
   ],
   "entityType": "Class",

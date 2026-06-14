@@ -14,10 +14,6 @@
     {
       "id": "urn:ngm:class:ai-agent-system",
       "label": "AI Agent System"
-    },
-    {
-      "id": "urn:ngm:class:sociotechnical-system",
-      "label": "Sociotechnical System"
     }
   ],
   "entityType": "Class",
@@ -170,7 +166,12 @@
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:sociotechnical-system",
+        "label": "Sociotechnical System"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:embeddings",

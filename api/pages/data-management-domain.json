@@ -8,8 +8,8 @@
   "definition": "The Data Management Domain classifies concepts concerning the storage, organisation, retrieval and lifecycle of data within systems. It covers data models, storage architectures, integration and the operations that maintain availability and integrity. As a top-level subject axis it provides the technical foundation on which analytics, governance and applications operate.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:owl-thing",
-      "label": "owl:Thing"
+      "id": "urn:ngm:class:infra-data-management",
+      "label": "Infra Data Management"
     }
   ],
   "entityType": "Class",

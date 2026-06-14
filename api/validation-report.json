@@ -1,12 +1,12 @@
 {
-  "total_pages": 5975,
-  "pages_with_ontology": 5975,
-  "public_pages": 5961,
-  "total_issues": 892,
+  "total_pages": 5976,
+  "pages_with_ontology": 5976,
+  "public_pages": 5962,
+  "total_issues": 869,
   "errors": 0,
-  "warnings": 892,
+  "warnings": 869,
   "by_code": {
-    "MULTI_PARENT": 892
+    "MULTI_PARENT": 869
   },
   "issues": [
     {
@@ -52,12 +52,6 @@
       "message": "Multiple parents (2): AI Application, AI Agent System"
     },
     {
-      "path": "AI Governance Framework.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): AI Governance and Ethics, AI Governance"
-    },
-    {
       "path": "AI Incident.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -68,12 +62,6 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (3): AI Governance and Ethics, AI Governance And Ethics, AI Governance And Ethics"
-    },
-    {
-      "path": "AI Operator.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): AI Governance and Ethics, AI Deployment"
     },
     {
       "path": "AI Risk Register.md",
@@ -235,7 +223,7 @@
       "path": "Agentic Internet.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): AI Research Area, AI Agent System, Sociotechnical System"
+      "message": "Multiple parents (2): AI Research Area, AI Agent System"
     },
     {
       "path": "Agreement Protocol.md",
@@ -248,18 +236,6 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Robot Type, Mobile Robot"
-    },
-    {
-      "path": "Ai Art Categorization.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): AI Application, Governance"
-    },
-    {
-      "path": "Ai Transparency Framework.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): AI Governance and Ethics, AI Governance"
     },
     {
       "path": "Algorithmic Bias and Variance.md",
@@ -844,12 +820,6 @@
       "message": "Multiple parents (2): Standards and Interoperability, Technical Standards"
     },
     {
-      "path": "Competition in AI.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): AI Governance and Ethics, Geopolitics, AI Governance And Ethics"
-    },
-    {
       "path": "Compliance Control.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -994,12 +964,6 @@
       "message": "Multiple parents (2): Platform and Environment, Loyalty Programs"
     },
     {
-      "path": "Cyber Security and Cryptography.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): Security and Identity, Applied Mathematics"
-    },
-    {
       "path": "Cybersecurity Standard.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -1120,12 +1084,6 @@
       "message": "Multiple parents (2): Platform and Environment, Digital Asset Ecosystem"
     },
     {
-      "path": "Death of the Internet.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): AI Governance and Ethics, Governance"
-    },
-    {
       "path": "Decentralised Web.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -1238,12 +1196,6 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (3): Actuation and Control, Robo Actuation And Control, Robo Actuation And Control"
-    },
-    {
-      "path": "Destination Marketing.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): Content and Assets, Digital Marketing"
     },
     {
       "path": "Diagrams as Code.md",
@@ -1606,12 +1558,6 @@
       "message": "Multiple parents (2): Content and Assets, ETSI Metaverse Domain Taxonomy"
     },
     {
-      "path": "ETSI Domain: Governance & Compliance.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): AI Governance and Ethics, Governance Framework"
-    },
-    {
       "path": "ETSI_Domain_Reality_Capture___Creative.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -1724,12 +1670,6 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (3): Network Component, Blockchain, Blockchain"
-    },
-    {
-      "path": "Environmental Asset Market.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): Governance and Safety, Digital Asset Market"
     },
     {
       "path": "Environmental Standards.md",
@@ -1942,12 +1882,6 @@
       "message": "Multiple parents (2): AI Technique, Explainability"
     },
     {
-      "path": "Global Inequality.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): AI Governance and Ethics, Governance, Governance"
-    },
-    {
       "path": "Goal.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -1958,12 +1892,6 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (3): Token and Asset, BC Token And Asset, Hard Money"
-    },
-    {
-      "path": "Governance Architecture.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): AI Governance and Ethics, Platform Governance"
     },
     {
       "path": "Governance Board.md",
@@ -1988,12 +1916,6 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (3): Data Management, Data Management System, Infra Data Management"
-    },
-    {
-      "path": "Green Blockchain Initiatives.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): Governance and Regulation, Sustainable Finance"
     },
     {
       "path": "Ground Robot.md",
@@ -2558,12 +2480,6 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Platform and Environment, Loyalty Programs"
-    },
-    {
-      "path": "Luxury Goods Authentication.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): Network Component, Provenance Tracking"
     },
     {
       "path": "MS Phi models.md",
@@ -3655,7 +3571,7 @@
       "path": "Remote Pair Programming.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Workspace Tools, Agile Software Development, DC Communication"
+      "message": "Multiple parents (2): Workspace Tools, DC Communication"
     },
     {
       "path": "Remotely Operated Vehicle (ROV).md",
@@ -3730,12 +3646,6 @@
       "message": "Multiple parents (2): Content and Assets, Creator Economy"
     },
     {
-      "path": "Reward Distribution.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): Platform and Environment, Tokenomics"
-    },
-    {
       "path": "Right to Be Forgotten.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -3784,12 +3694,6 @@
       "message": "Multiple parents (2): Legal and Regulatory, Legal Framework"
     },
     {
-      "path": "Runtime Inspection.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): AI Governance and Ethics, AI Governance"
-    },
-    {
       "path": "SCARA Robot.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -3808,22 +3712,10 @@
       "message": "Multiple parents (2): AI Technique, Knowledge Representation"
     },
     {
-      "path": "Safe Immersive Experience.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): Governance and Safety, User Safety"
-    },
-    {
       "path": "Safety Fine Tuning.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): AI Governance and Ethics, AI Alignment"
-    },
-    {
-      "path": "Safety Measure.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): AI Governance and Ethics, Ai Governance"
     },
     {
       "path": "Safety and alignment.md",
@@ -3962,12 +3854,6 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Platform and Environment, Augmented Reality"
-    },
-    {
-      "path": "Shared Knowledge Base.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): Content and Assets, Knowledge Management System"
     },
     {
       "path": "Shared Virtual World.md",
@@ -4142,12 +4028,6 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): AI Research Area, Multimodal AI"
-    },
-    {
-      "path": "Stablecoin Regulation.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): Governance and Regulation, Crypto Regulation"
     },
     {
       "path": "Stablecoin Token.md",
@@ -4510,34 +4390,16 @@
       "message": "Multiple parents (3): AI Application, Natural Language Processing, Natural Language Processing"
     },
     {
-      "path": "Transparency Metrics.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): AI Governance and Ethics, Governance"
-    },
-    {
       "path": "Transparent Data Processing.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Data Management, Data Processing"
     },
     {
-      "path": "Transparent Governance.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): AI Governance and Ethics, Governance"
-    },
-    {
       "path": "Transparent Revenue Sharing.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Governance and Safety, Revenue Distribution"
-    },
-    {
-      "path": "Travel Rule.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): Governance and Regulation, Counter-Terrorist Financing"
     },
     {
       "path": "Treatment Planning AI.md",

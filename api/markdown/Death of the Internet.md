@@ -457,10 +457,6 @@ public:: true
     {
       "@id": "urn:ngm:class:ai-governance-and-ethics",
       "label": "AI Governance and Ethics"
-    },
-    {
-      "@id": "urn:ngm:class:governance",
-      "label": "Governance"
     }
   ],
   "relations": {
@@ -468,6 +464,10 @@ public:: true
       {
         "@id": "urn:ngm:class:infra-security-and-identity",
         "label": "Security and Identity"
+      },
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
       }
     ],
     "hasPart": [

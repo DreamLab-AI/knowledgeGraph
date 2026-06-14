@@ -8,8 +8,8 @@
   "definition": "SWIFT Messaging is the standardised, structured financial message exchange system operated over the Society for Worldwide Interbank Financial Telecommunication (SWIFT) network, enabling banks, brokers, custodians, and other financial institutions to communicate payment instructions, securities transactions, treasury operations, and trade finance data. Messages are governed by two principal format families: the legacy MT (Message Type) standards encoded in SWIFT's own syntax, and the modern ISO 20022 MX messages encoded in XML, which carry richer, more granular data and support global harmonisation. SWIFT itself functions as a secure messaging infrastructure rather than a settlement system; actual fund movement occurs via correspondent banking relationships, real-time gross settlement (RTGS) systems, and central bank facilities. The network is subject to multi-jurisdictional regulatory oversight and is a critical node in the global financial stability architecture.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:financial-messaging",
-      "label": "Financial Messaging"
+      "id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Infra Network And Comms"
     }
   ],
   "entityType": "Class",

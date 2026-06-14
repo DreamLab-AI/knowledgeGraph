@@ -8,8 +8,8 @@
   "definition": "Bundle adjustment is a non-linear least-squares optimisation technique in computer vision and photogrammetry that simultaneously refines estimates of 3-D structure (point cloud positions) and camera parameters (extrinsics and intrinsics) so that reprojected 3-D points best match their observed 2-D image locations across all views. The name derives from the bundle of light rays connecting each camera centre to visible scene points; optimising the geometry tightens these bundles. It is the gold-standard global refinement step in structure-from-motion pipelines, visual SLAM, and aerial photogrammetry, producing metrically accurate 3-D reconstructions from overlapping images or video frames. Computationally it exploits the sparse block structure of the Jacobian via Schur complement elimination and is typically solved with the Levenberg-Marquardt algorithm.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:non-linear-optimisation",
-      "label": "Non-Linear Optimisation"
+      "id": "urn:ngm:class:ai-technique",
+      "label": "Ai Technique"
     }
   ],
   "entityType": "Class",

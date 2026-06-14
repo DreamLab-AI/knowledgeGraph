@@ -8,8 +8,8 @@
   "definition": "A federal republic in North America and one of the world's largest economies, with a leading role in technology, finance, and research. It comprises fifty states and a federal district.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:owl-thing",
-      "label": "owl:Thing"
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Infra Legal And Regulatory"
     }
   ],
   "entityType": "Class",

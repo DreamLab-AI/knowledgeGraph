@@ -57,13 +57,12 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
       "label": "Content and Assets"
-    },
-    {
-      "@id": "urn:ngm:class:knowledge-management-system",
-      "label": "Knowledge Management System"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:knowledge-management-system", "label": "Knowledge Management System"}
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:collaborative-systems-modality-knowledge-discovery",

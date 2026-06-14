@@ -8,8 +8,8 @@
   "definition": "Data Analytics is the systematic computational examination of raw data sets to uncover patterns, correlations, and actionable insights that support organisational decision-making. It spans four analytical tiers: descriptive analytics (summarising historical state), diagnostic analytics (identifying causes of past events), predictive analytics (forecasting future outcomes via statistical and machine learning models), and prescriptive analytics (recommending optimal actions). Analytics pipelines ingest data from heterogeneous sources, apply transformation and enrichment steps, execute statistical or ML algorithms, and surface results through visualisations, dashboards, and automated alerts. As a discipline, data analytics integrates elements of statistics, computer science, domain knowledge, and data engineering to create measurable business and scientific value.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:data-science",
-      "label": "Data Science"
+      "id": "urn:ngm:class:infra-data-management",
+      "label": "Infra Data Management"
     }
   ],
   "entityType": "Class",

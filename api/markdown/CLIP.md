@@ -32,8 +32,8 @@ public:: true
   "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:multimodal-model",
-      "label": "Multimodal Model"
+      "@id": "urn:ngm:class:ai-model-architecture",
+      "label": "Ai Model Architecture"
     }
   ],
   "sameAs": [

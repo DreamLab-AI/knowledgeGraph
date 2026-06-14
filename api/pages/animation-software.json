@@ -8,8 +8,8 @@
   "definition": "Animation Software encompasses digital tools and applications for creating computer-generated moving images through 3D modeling, rigging, motion graphics, rendering, and compositing, supporting the complete animation pipeline from asset creation to final output for games, film, and metaverse content.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:digital-content-creation-tools",
-      "label": "Digital Content Creation Tools"
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Sc Content And Assets"
     }
   ],
   "entityType": "Class",

@@ -8,8 +8,8 @@
   "definition": "Monero (XMR) is an open-source, privacy-preserving cryptocurrency launched in April 2014 as a fork of the Bytecoin codebase, distinguished by making confidentiality mandatory for every transaction rather than optional. It achieves unlinkability and untraceability through three complementary cryptographic primitives: ring signatures that blend the spender's output among decoys drawn from the blockchain history, one-time stealth addresses that prevent linking payments to a recipient's public key, and Ring Confidential Transactions (RingCT) that hide transferred amounts using Pedersen commitments. The protocol employs a proof-of-work algorithm \u2014 originally CryptoNight, later RandomX \u2014 engineered to maintain parity between CPUs and GPUs while resisting ASIC specialisation, thereby preserving decentralised mining participation.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:privacy-coin",
-      "label": "Privacy Coin"
+      "id": "urn:ngm:class:bc-token-and-asset",
+      "label": "Bc Token And Asset"
     }
   ],
   "entityType": "Class",

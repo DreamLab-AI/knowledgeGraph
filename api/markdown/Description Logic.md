@@ -59,8 +59,8 @@ public:: true
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": {
-    "@id": "urn:ngm:class:formal-logic",
-    "label": "Formal Logic"
+    "@id": "urn:ngm:class:ai-research-area",
+    "label": "Ai Research Area"
   },
   "sameAs": [
     {

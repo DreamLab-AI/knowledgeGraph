@@ -8,8 +8,8 @@
   "definition": "Applied mathematics is the use of mathematical methods to solve problems in science, engineering, economics and industry. It includes areas such as modelling, numerical analysis and optimisation.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:owl-thing",
-      "label": "owl:Thing"
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "Ai Research Area"
     }
   ],
   "entityType": "Class",

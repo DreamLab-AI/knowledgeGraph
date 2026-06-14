@@ -75,8 +75,8 @@ public:: true
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": {
-    "@id": "urn:ngm:class:technology-infrastructure-domain-domain",
-    "label": "Infrastructure Domain"
+    "@id": "urn:ngm:class:infra-data-management",
+    "label": "Infra Data Management"
   },
   "relations": {
     "hasPart": [

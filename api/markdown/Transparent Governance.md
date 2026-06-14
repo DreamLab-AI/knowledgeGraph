@@ -54,13 +54,12 @@ alias:: TransparentGovernance
     {
       "@id": "urn:ngm:class:ai-governance-and-ethics",
       "label": "AI Governance and Ethics"
-    },
-    {
-      "@id": "urn:ngm:class:governance",
-      "label": "Governance"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:governance", "label": "Governance"}
+    ],
     "requires": [
       {"@id": "urn:ngm:class:accountability", "label": "Accountability"},
       {"@id": "urn:ngm:class:audit-trail", "label": "Audit Trail"}

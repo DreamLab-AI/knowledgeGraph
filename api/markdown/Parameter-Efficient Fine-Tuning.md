@@ -65,10 +65,12 @@ public:: true
   "definition": "Training techniques that update only a small subset of model parameters during fine-tuning, reducing computational and memory requirements whilst maintaining comparable performance to full fine-tuning. PEFT methods enable adaptation of large models with limited resources by freezing most pre-trained weights and adding or modifying a minimal set of trainable parameters.",
   "domain": "artificial-intelligence",
   "maturity": "established",
-  "subClassOf": {
-    "@id": "urn:ngm:class:model-fine-tuning",
-    "label": "Model Fine-Tuning"
-  },
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-technique",
+      "label": "Ai Technique"
+    }
+  ],
   "relations": {
     "hasPart": [
       {"@id": "urn:ngm:class:lo-ra-fine-tuning", "label": "LoRA Fine-Tuning"},

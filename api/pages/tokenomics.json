@@ -8,8 +8,8 @@
   "definition": "Tokenomics is the study and design of the economic systems underpinning blockchain-based tokens, encompassing token supply mechanics (fixed supply, inflationary, or deflationary schedules), distribution models (initial coin offerings, airdrops, liquidity mining), utility functions (governance rights, access control, fee payment), and incentive alignment mechanisms. A well-designed tokenomic model balances value creation and capture across stakeholders \u2014 developers, users, liquidity providers, and governance participants \u2014 through mechanisms such as staking, burning, bonding curves, and vesting schedules. Tokenomics draws from monetary theory, game theory, and mechanism design to engineer sustainable digital economies where token holders are incentivised to act in ways that grow the ecosystem's long-term value.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:cryptoeconomics",
-      "label": "Cryptoeconomics"
+      "id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "Bc Defi And Economics"
     }
   ],
   "entityType": "Class",

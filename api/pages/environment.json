@@ -8,8 +8,8 @@
   "definition": "Environment is the external context in which an agent or system operates, providing inputs and responding to actions, a central concept in robotics and reinforcement learning.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:owl-thing",
-      "label": "owl:Thing"
+      "id": "urn:ngm:class:robo-navigation-and-planning",
+      "label": "Robo Navigation And Planning"
     }
   ],
   "entityType": "Class",

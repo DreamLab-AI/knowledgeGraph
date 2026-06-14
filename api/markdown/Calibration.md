@@ -32,8 +32,8 @@ public:: true
   "maturity": "mature",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:metrology",
-      "label": "Metrology"
+      "@id": "urn:ngm:class:robo-perception",
+      "label": "Robo Perception"
     }
   ],
   "relations": {

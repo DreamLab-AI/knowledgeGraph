@@ -32,8 +32,8 @@ public:: true
   "maturity": "emerging",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:product-lifecycle-management",
-      "label": "Product Lifecycle Management"
+      "@id": "urn:ngm:class:dc-protocol-and-infra",
+      "label": "Dc Protocol And Infra"
     }
   ],
   "relations": {

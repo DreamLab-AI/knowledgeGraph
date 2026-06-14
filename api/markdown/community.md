@@ -52,8 +52,8 @@ public:: true
   "qualityScore": 0.7,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:owl-thing",
-      "label": "owl:Thing"
+      "@id": "urn:ngm:class:dc-communication",
+      "label": "Dc Communication"
     }
   ],
   "relations": {

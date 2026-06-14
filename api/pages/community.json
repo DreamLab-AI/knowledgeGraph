@@ -8,8 +8,8 @@
   "definition": "A community is a group of people who interact around a shared interest, project, or platform, contributing to its development, governance, or use.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:owl-thing",
-      "label": "owl:Thing"
+      "id": "urn:ngm:class:dc-communication",
+      "label": "Dc Communication"
     }
   ],
   "entityType": "Class",

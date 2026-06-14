@@ -8,8 +8,8 @@
   "definition": "Speculative decoding is an inference acceleration technique for autoregressive language models in which a smaller, faster draft model proposes multiple candidate tokens that a larger target model verifies in a single parallel forward pass. Accepted tokens are committed to the output sequence; rejected tokens trigger a corrected sample from the residual distribution, ensuring the final output is statistically identical to sampling from the target model alone. Because modern GPU accelerators are memory-bandwidth-bound during autoregressive generation, batching verification of several candidate tokens substantially increases arithmetic utilisation and can raise effective throughput two to four times without altering the model's output distribution. The technique is now integrated into mainstream inference frameworks and sits at the intersection of model efficiency, hardware utilisation, and production LLM serving.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:inference-optimisation",
-      "label": "Inference Optimisation"
+      "id": "urn:ngm:class:ai-technique",
+      "label": "Ai Technique"
     }
   ],
   "entityType": "Class",

@@ -67,8 +67,8 @@ public:: true
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": {
-    "@id": "urn:ngm:class:multisignature-wallet",
-    "label": "Multisignature Wallet"
+    "@id": "urn:ngm:class:bc-network-component",
+    "label": "Bc Network Component"
   },
   "relations": {
     "requires": [

@@ -48,8 +48,8 @@ public:: true
   "quality": 0.74,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:software-quality-assurance",
-      "label": "Software Quality Assurance"
+      "@id": "urn:ngm:class:infra-software-engineering",
+      "label": "Infra Software Engineering"
     }
   ],
   "sameAs": [

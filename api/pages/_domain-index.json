@@ -17254,6 +17254,11 @@
       "qualityScore": 0.0
     },
     {
+      "slug": "cat-ai-infrastructure",
+      "title": "AI Infrastructure",
+      "qualityScore": 0.85
+    },
+    {
       "slug": "fast-ai",
       "title": "fast.ai",
       "qualityScore": 0.52
@@ -19089,6 +19094,11 @@
       "slug": "infrastructure-layer",
       "title": "Infrastructure Layer",
       "qualityScore": 0.35
+    },
+    {
+      "slug": "infrastructure",
+      "title": "Infrastructure",
+      "qualityScore": 0.9
     },
     {
       "slug": "integration-layer",
@@ -24457,11 +24467,6 @@
     {
       "slug": "web-rtc-w-3-c-specification",
       "title": "WebRTC W3C Specification",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "owl-thing",
-      "title": "owl:Thing",
       "qualityScore": 0.6
     },
     {

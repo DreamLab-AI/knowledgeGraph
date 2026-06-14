@@ -8,8 +8,8 @@
   "definition": "Digital Technology Access Equity is the principle that all individuals and communities, regardless of geographic location, socioeconomic status, disability, gender, age, or ethnicity, should have fair and meaningful access to digital technologies, connectivity infrastructure, and the skills required to participate fully in digital economies. The concept extends beyond physical access to broadband or devices to encompass affordability, digital literacy, relevant content, and the capacity to derive genuine benefit from AI, cloud computing, and platform ecosystems. It directly shapes policy frameworks, international development agendas, and corporate social responsibility obligations by treating technology access as a prerequisite for social and economic inclusion. Addressing equity gaps requires coordinated interventions across infrastructure deployment, education, regulatory mandates, and localised content production.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:digital-inclusion",
-      "label": "Digital Inclusion"
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "Ai Governance And Ethics"
     }
   ],
   "entityType": "Class",

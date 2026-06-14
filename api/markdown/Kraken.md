@@ -67,8 +67,8 @@ public:: true
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": {
-    "@id": "urn:ngm:class:centralised-exchange",
-    "label": "Centralised Exchange"
+    "@id": "urn:ngm:class:bc-defi-and-economics",
+    "label": "Bc Defi And Economics"
   },
   "relations": {
     "hasPart": [

@@ -8,8 +8,8 @@
   "definition": "EtherCAT (Ethernet for Control Automation Technology) is an open, IEC 61158-standardised real-time Ethernet fieldbus protocol developed by Beckhoff Automation, enabling deterministic, high-bandwidth communication between industrial master controllers and distributed slave devices such as servo drives, I/O modules, and encoders. Its on-the-fly processing architecture allows each slave node to extract addressed data from and insert its response into a propagating Ethernet frame, achieving sub-microsecond synchronisation across large distributed networks. Governed by the EtherCAT Technology Group (ETG), the standard is widely deployed in industrial robotics, CNC machining, semiconductor manufacturing, and laboratory automation, with the Safety over EtherCAT (FSoE) extension providing IEC 61784-3-compliant functional safety over the same physical layer.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:fieldbus",
-      "label": "Fieldbus"
+      "id": "urn:ngm:class:robo-actuation-and-control",
+      "label": "Robo Actuation And Control"
     }
   ],
   "entityType": "Class",

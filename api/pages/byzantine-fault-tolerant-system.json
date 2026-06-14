@@ -8,8 +8,8 @@
   "definition": "A Byzantine Fault Tolerant System is a distributed computing system designed to continue operating correctly even when a fraction of its nodes exhibit arbitrary, potentially malicious failures \u2014 including sending conflicting, incorrect, or no messages to different peers. Such systems implement consensus protocols that guarantee safety (agreement) and liveness (progress) provided strictly fewer than one-third of participating nodes are faulty, a bound established by the foundational Byzantine Generals Problem. BFT systems underpin the security of permissioned and permissionless blockchain networks, replicated state machines, and safety-critical distributed infrastructure where adversarial behaviour must be tolerated without compromising overall correctness.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:fault-tolerant-system",
-      "label": "Fault Tolerant System"
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Infra Computing And Cloud"
     }
   ],
   "entityType": "Class",

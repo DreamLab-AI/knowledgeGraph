@@ -8,8 +8,8 @@
   "definition": "Quantisation is a model compression technique that reduces the numerical precision of a neural network's weights and activations from high-precision floating-point formats used during training (typically FP32 or BF16) to lower bit-widths such as INT8, INT4, FP8, or binary representations. This precision reduction decreases memory footprint and accelerates matrix operations on hardware with native low-precision arithmetic units, enabling deployment of large models on memory-constrained or power-limited devices with minimal accuracy degradation. The two primary paradigms are post-training quantisation (PTQ), which applies precision reduction after training using a calibration dataset, and quantisation-aware training (QAT), which simulates low-precision arithmetic during the forward pass so the model adapts its weight distributions to minimise quantisation error. Advanced algorithms such as GPTQ, AWQ, and SmoothQuant extend these approaches to very large language models and diffusion models.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:model-compression",
-      "label": "Model Compression"
+      "id": "urn:ngm:class:ai-technique",
+      "label": "Ai Technique"
     }
   ],
   "entityType": "Class",

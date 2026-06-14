@@ -55,8 +55,8 @@ public:: true
   "maturity": "mature",
   "qualityScore": 0.7,
   "subClassOf": {
-    "@id": "urn:ngm:class:probability-distribution",
-    "label": "Probability Distribution"
+    "@id": "urn:ngm:class:ai-technique",
+    "label": "Ai Technique"
   },
   "sameAs": [
     {

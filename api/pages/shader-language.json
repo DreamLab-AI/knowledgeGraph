@@ -8,8 +8,8 @@
   "definition": "A Shader Language is a domain-specific programming language designed to express GPU-executable programs that control one or more programmable stages of a graphics or compute pipeline. Shader languages provide specialised type systems encompassing vectors, matrices, samplers, and atomic types, while deliberately restricting features incompatible with massively parallel execution such as dynamic memory allocation and unbounded recursion. Major production languages include GLSL (OpenGL Shading Language) for OpenGL and WebGL, HLSL (High-Level Shading Language) for DirectX, Metal Shading Language for Apple silicon and macOS/iOS platforms, and the emerging WGSL (WebGPU Shading Language) for the web-native WebGPU API. Modern shader toolchains commonly cross-compile to the hardware-agnostic intermediate representation SPIR-V, enabling portability across vendors and runtime environments.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:domain-specific-language",
-      "label": "Domain-Specific Language"
+      "id": "urn:ngm:class:sc-display-and-rendering",
+      "label": "Sc Display And Rendering"
     }
   ],
   "entityType": "Class",

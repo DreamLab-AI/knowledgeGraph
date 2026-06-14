@@ -58,10 +58,12 @@ public:: true
   "domain": "machine-learning",
   "maturity": "established",
   "qualityScore": 0.7,
-  "subClassOf": {
-    "@id": "urn:ngm:class:statistical-inference",
-    "label": "Statistical Inference"
-  },
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-technique",
+      "label": "Ai Technique"
+    }
+  ],
   "sameAs": [
     {
       "@id": "urn:ngm:class:bayesian-inference",

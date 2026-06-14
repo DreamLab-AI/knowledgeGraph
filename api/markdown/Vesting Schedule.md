@@ -56,8 +56,8 @@ public:: true
   "qualityScore": 0.7,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:token-distribution",
-      "label": "Token Distribution"
+      "@id": "urn:ngm:class:bc-token-and-asset",
+      "label": "Bc Token And Asset"
     }
   ],
   "sameAs": [

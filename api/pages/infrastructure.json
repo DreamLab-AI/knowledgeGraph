@@ -1,0 +1,95 @@
+{
+  "id": "urn:visionflow:page:ngm-infrastructure-domain-root",
+  "title": "Infrastructure",
+  "slug": "infrastructure",
+  "public": true,
+  "classIri": "urn:ngm:class:infrastructure",
+  "domain": "infrastructure",
+  "definition": "The Infrastructure domain encompasses the foundational computing, networking, storage, data-management, security, and software-engineering systems that underpin every other technology domain. It is the substrate on which artificial-intelligence, spatial-computing, blockchain, robotics, and distributed-collaboration applications operate, spanning cloud and compute platforms, communications networks, data and identity management, legal/regulatory frameworks, and software engineering practice.",
+  "subClassOf": [
+    {
+      "id": "owl:Thing",
+      "label": "Thing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.9,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-frontier-capability-survey",
+      "label": "AI Frontier Capability Survey"
+    },
+    {
+      "slug": "ai-assisted-developer-tooling",
+      "label": "AI-Assisted Developer Tooling"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "compute-infrastructure",
+      "label": "Compute Infrastructure"
+    },
+    {
+      "slug": "drug-discovery-ai",
+      "label": "Drug Discovery AI"
+    },
+    {
+      "slug": "energy-and-power",
+      "label": "Energy and Power"
+    },
+    {
+      "slug": "graph-neural-network",
+      "label": "Graph Neural Network"
+    },
+    {
+      "slug": "human-agent-interaction-surfaces",
+      "label": "Human-Agent Interaction Surfaces"
+    },
+    {
+      "slug": "privacy",
+      "label": "Privacy"
+    },
+    {
+      "slug": "safety",
+      "label": "Safety"
+    },
+    {
+      "slug": "storage-infrastructure",
+      "label": "Storage Infrastructure"
+    },
+    {
+      "slug": "technology-adoption",
+      "label": "Technology Adoption"
+    },
+    {
+      "slug": "text-generation",
+      "label": "Text Generation"
+    },
+    {
+      "slug": "trust-infrastructure",
+      "label": "Trust Infrastructure"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    }
+  ]
+}

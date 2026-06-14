@@ -24,7 +24,7 @@ public:: true
   "domain": "artificial-intelligence",
   "maturity": "mature",
   "subClassOf": [
-    {"@id": "urn:ngm:class:decision-theory", "label": "Decision Theory"}
+    {"@id": "urn:ngm:class:ai-research-area", "label": "Ai Research Area"}
   ],
   "sameAs": [
     {"@id": "urn:ngm:class:strategic-interaction-theory", "label": "Strategic Interaction Theory"},

@@ -10,10 +10,6 @@
     {
       "id": "urn:ngm:class:ai-governance-and-ethics",
       "label": "AI Governance and Ethics"
-    },
-    {
-      "id": "urn:ngm:class:ai-governance",
-      "label": "Ai Governance"
     }
   ],
   "entityType": "Class",
@@ -48,7 +44,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "Ai Governance"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:red-teaming",

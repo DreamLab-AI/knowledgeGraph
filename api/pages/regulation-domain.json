@@ -8,8 +8,8 @@
   "definition": "The Regulation Domain covers the creation, interpretation and enforcement of rules that govern conduct across sectors. Its scope includes statutory frameworks, standards, supervisory regimes and enforcement mechanisms. It is a top-level subject classification that supplies obligations to many other domains. The boundary excludes the demonstration of adherence to those rules, which belongs to the Compliance Domain.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:owl-thing",
-      "label": "owl:Thing"
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Infra Legal And Regulatory"
     }
   ],
   "entityType": "Class",

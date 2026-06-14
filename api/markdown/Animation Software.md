@@ -78,8 +78,8 @@ public:: true
   "domain": "spatial-computing",
   "maturity": "draft",
   "subClassOf": {
-    "@id": "urn:ngm:class:digital-content-creation-tools",
-    "label": "Digital Content Creation Tools"
+    "@id": "urn:ngm:class:sc-content-and-assets",
+    "label": "Sc Content And Assets"
   },
   "relations": {
     "hasPart": [

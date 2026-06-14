@@ -109,13 +109,15 @@ public:: true
     {
       "@id": "urn:ngm:class:ai-governance-and-ethics",
       "label": "AI Governance and Ethics"
-    },
-    {
-      "@id": "urn:ngm:class:ai-deployment",
-      "label": "AI Deployment"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:ai-deployment",
+        "label": "AI Deployment"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:competence-development",

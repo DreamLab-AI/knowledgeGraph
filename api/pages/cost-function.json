@@ -8,8 +8,8 @@
   "definition": "A cost function is a scalar-valued mathematical function that maps a model's parameters or a system's state to a real number representing the magnitude of error, resource expenditure, or divergence from a desired outcome. In supervised machine learning, the cost function (also called a loss function) measures the aggregate discrepancy between predicted and ground-truth outputs across a training set, providing the objective that optimisation algorithms such as gradient descent minimise. In control theory and robotics, cost functions encode trajectory quality criteria including path length, energy consumption, and collision risk, enabling optimal control policies via formulations such as LQR and model predictive control. The design of the cost function is one of the most consequential decisions in any learning or optimisation system, as misspecified objectives lead to reward hacking, degenerate solutions, or physically unrealisable behaviours.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:objective-function",
-      "label": "Objective Function"
+      "id": "urn:ngm:class:ai-technique",
+      "label": "Ai Technique"
     }
   ],
   "entityType": "Class",

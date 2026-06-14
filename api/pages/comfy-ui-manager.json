@@ -8,8 +8,8 @@
   "definition": "ComfyUI Manager is a community-developed extension for the ComfyUI node-based image and video generation interface that provides an integrated package management system for discovering, installing, updating, and disabling custom nodes and their Python dependencies. It maintains a curated registry of available custom node repositories and model assets, resolves dependency conflicts, and enables reproducible workflow sharing by exporting workflow snapshots that encode all required node specifications. The extension also integrates model management features for downloading checkpoint, LoRA, VAE, and ControlNet files from external repositories, and performs missing-node detection when importing workflows created on other machines. As the de facto package manager for the ComfyUI ecosystem, it substantially lowers the barrier to extending the platform with community-developed preprocessing, sampling, and post-processing nodes.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:package-manager",
-      "label": "Package Manager"
+      "id": "urn:ngm:class:ai-application",
+      "label": "Ai Application"
     }
   ],
   "entityType": "Class",

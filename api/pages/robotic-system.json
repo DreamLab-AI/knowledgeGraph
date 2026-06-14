@@ -8,8 +8,8 @@
   "definition": "An integrated assembly of mechanical, electronic, and computational subsystems \u2014 including actuators, sensors, a control architecture, and software \u2014 that perceives its environment and executes physical tasks autonomously or under remote human direction, spanning industrial, collaborative, and telepresence applications.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:cyber-physical-system",
-      "label": "Cyber-Physical System"
+      "id": "urn:ngm:class:robo-robot-type",
+      "label": "Robo Robot Type"
     }
   ],
   "entityType": "Class",

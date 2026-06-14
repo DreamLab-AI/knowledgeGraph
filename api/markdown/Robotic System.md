@@ -47,10 +47,12 @@ alias:: RoboticSystem
   "domain": "robotics",
   "maturity": "emerging",
   "qualityScore": 0.72,
-  "subClassOf": {
-    "@id": "urn:ngm:class:cyber-physical-system",
-    "label": "Cyber-Physical System"
-  },
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:robo-robot-type",
+      "label": "Robo Robot Type"
+    }
+  ],
   "sameAs": [
     {
       "@id": "urn:ngm:class:autonomous-robot",

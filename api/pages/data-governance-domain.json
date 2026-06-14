@@ -8,8 +8,8 @@
   "definition": "The Data Governance Domain classifies concepts concerning the policies, roles and controls that govern data as an organisational asset. It covers ownership, quality, lineage and the rules for access, retention and use. As a top-level subject axis it establishes how data is managed responsibly across systems and throughout its lifecycle.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:owl-thing",
-      "label": "owl:Thing"
+      "id": "urn:ngm:class:infra-data-management",
+      "label": "Infra Data Management"
     }
   ],
   "entityType": "Class",

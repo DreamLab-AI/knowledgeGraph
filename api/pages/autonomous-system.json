@@ -8,8 +8,8 @@
   "definition": "An Autonomous System is a computational or physical entity capable of perceiving its environment through sensors, reasoning over that perception, and executing goal-directed actions without continuous human intervention, forming closed-loop sense-plan-act cycles. Architecturally, autonomous systems combine perception pipelines, world-model maintenance, deliberative or reactive planning, and actuator control, often augmented by machine learning to handle environmental uncertainty. They operate across a spectrum from fully automated (no human input required) to conditionally autonomous (human on the loop), and encompass platforms as diverse as self-driving vehicles, unmanned aerial systems, autonomous underwater vehicles, industrial robotic cells, and intelligent software agents.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:intelligent-agent",
-      "label": "Intelligent Agent"
+      "id": "urn:ngm:class:robo-robot-type",
+      "label": "Robo Robot Type"
     }
   ],
   "entityType": "Class",

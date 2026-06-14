@@ -8,8 +8,8 @@
   "definition": "Sybil resistance is a security property of distributed and decentralised networks that constrains the ability of a single adversary to gain disproportionate influence by fabricating multiple pseudonymous or fake identities. The property is foundational to any permissionless system where voting power, reputation, resource allocation, or participation rights are tied to the concept of a unique participant. Mechanisms achieving sybil resistance range from resource-binding consensus protocols \u2014 proof-of-work and proof-of-stake \u2014 to cryptographic proof-of-personhood schemes and social trust-graph analysis, each balancing security guarantees against privacy requirements.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:distributed-systems-security",
-      "label": "Distributed Systems Security"
+      "id": "urn:ngm:class:bc-protocol-and-consensus",
+      "label": "Bc Protocol And Consensus"
     }
   ],
   "entityType": "Class",

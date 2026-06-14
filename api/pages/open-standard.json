@@ -8,8 +8,8 @@
   "definition": "An open standard is a publicly accessible specification for a technology, protocol, format, or interface that is developed through a transparent, consensus-based process and can be implemented and used without discriminatory restrictions. Open standards enable interoperability between systems from different vendors by providing a shared, stable technical baseline. They are maintained by recognised standards bodies and are typically available royalty-free or under FRAND (Fair, Reasonable And Non-Discriminatory) licensing terms. Open standards contrast with proprietary specifications controlled by a single vendor and are foundational to open, competitive ecosystems.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:technical-specification",
-      "label": "Technical Specification"
+      "id": "urn:ngm:class:sc-standards-and-interop",
+      "label": "Sc Standards And Interop"
     }
   ],
   "entityType": "Class",

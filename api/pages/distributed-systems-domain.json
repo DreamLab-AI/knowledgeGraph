@@ -8,8 +8,8 @@
   "definition": "The Distributed Systems Domain classifies concepts concerning computation across multiple networked nodes that coordinate without shared memory or a single clock. It covers the theory and engineering of consistency, coordination and failure handling under partial knowledge and unreliable communication. As a top-level subject axis it underpins infrastructure, blockchain and cloud systems that depend on agreement among independent processes.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:owl-thing",
-      "label": "owl:Thing"
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Infra Computing And Cloud"
     }
   ],
   "entityType": "Class",

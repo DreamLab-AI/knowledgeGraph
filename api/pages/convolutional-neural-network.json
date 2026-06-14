@@ -8,8 +8,8 @@
   "definition": "A Convolutional Neural Network (CNN) is a feed-forward deep learning architecture that applies learned convolutional filters across spatial dimensions of input data, enabling hierarchical feature extraction from images and other grid-structured inputs. Weight sharing and local receptive fields make CNNs highly parameter-efficient for visual recognition tasks including image classification, object detection, and semantic segmentation.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:deep-neural-network",
-      "label": "Deep Neural Network"
+      "id": "urn:ngm:class:ai-model-architecture",
+      "label": "Ai Model Architecture"
     }
   ],
   "entityType": "Class",

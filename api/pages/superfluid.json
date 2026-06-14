@@ -8,8 +8,8 @@
   "definition": "A phase of matter that flows without viscosity, exhibiting effects such as frictionless flow and the ability to climb container walls. It arises in certain quantum systems at very low temperatures.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:owl-thing",
-      "label": "owl:Thing"
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "Ai Research Area"
     }
   ],
   "entityType": "Class",

@@ -68,8 +68,8 @@ public:: true
   "qualityScore": 0.7,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:owl-thing",
-      "label": "owl:Thing"
+      "@id": "urn:ngm:class:dc-workspace-tools",
+      "label": "Dc Workspace Tools"
     }
   ],
   "relations": {

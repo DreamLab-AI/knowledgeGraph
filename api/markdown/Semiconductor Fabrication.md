@@ -52,8 +52,8 @@ public:: true
   "qualityScore": 0.75,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:advanced-manufacturing",
-      "label": "Advanced Manufacturing"
+      "@id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Infra Computing And Cloud"
     }
   ],
   "relations": {

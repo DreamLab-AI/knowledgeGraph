@@ -8,8 +8,8 @@
   "definition": "The Organisational Layer is the cross-cutting stratum that represents the internal structure, roles, and processes of an operating body. It sits above the Institutional Layer that grants it standing and supports operational and social activity. It contains organisational units, responsibilities, reporting lines, and internal processes.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:owl-thing",
-      "label": "owl:Thing"
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Infra Legal And Regulatory"
     }
   ],
   "entityType": "Class",

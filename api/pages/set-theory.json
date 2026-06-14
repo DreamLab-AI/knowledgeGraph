@@ -8,8 +8,8 @@
   "definition": "The branch of mathematical logic that studies collections of objects called sets, providing a foundational language for most of modern mathematics including logic, topology, algebra, and knowledge representation.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:mathematical-logic",
-      "label": "Mathematical Logic"
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "Ai Research Area"
     }
   ],
   "entityType": "Class",

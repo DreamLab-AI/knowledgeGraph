@@ -8,8 +8,8 @@
   "definition": "Distributed training is a machine learning paradigm that partitions computation, data, and model parameters across multiple processors, accelerators, or networked nodes so that training jobs too large or too slow for a single device can complete at scale. The four primary parallelism axes are data parallelism (each worker processes a distinct data shard and aggregates gradients), model parallelism (layers assigned to different devices), tensor parallelism (individual weight matrices sharded across devices), and pipeline parallelism (the forward pass staged across devices as a micro-batch pipeline). These strategies are composed into multi-dimensional schemes \u2014 commonly called 3D parallelism \u2014 that balance compute, memory, and communication trade-offs for workloads ranging from fine-tuning to pre-training frontier models with hundreds of billions of parameters.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:machine-learning-infrastructure",
-      "label": "Machine Learning Infrastructure"
+      "id": "urn:ngm:class:cat-ai-infrastructure",
+      "label": "Cat Ai Infrastructure"
     }
   ],
   "entityType": "Class",

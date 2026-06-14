@@ -56,8 +56,8 @@ public:: true
   "qualityScore": 0.7,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:concurrency-control",
-      "label": "Concurrency Control"
+      "@id": "urn:ngm:class:dc-protocol-and-infra",
+      "label": "Dc Protocol And Infra"
     }
   ],
   "relations": {

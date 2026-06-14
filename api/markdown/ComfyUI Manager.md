@@ -32,8 +32,8 @@ public:: true
   "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:package-manager",
-      "label": "Package Manager"
+      "@id": "urn:ngm:class:ai-application",
+      "label": "Ai Application"
     }
   ],
   "relations": {

@@ -142,10 +142,12 @@ alias:: SwarmRobotics
   "definition": "Swarm robotics employs large numbers of simple, autonomous agents that exhibit sophisticated collective behaviours through local interactions and decentralised control without centralised coordination, inspired by biological swarms like ant colonies and bird flocks. Individual robots with limited sensing, computation, and actuation communicate locally with neighbours, creating emergent system-level intelligence enabling tasks like coordinated navigation, object transport, and environmental sensing that exceed individual capabilities.",
   "domain": "robotics",
   "maturity": "emerging",
-  "subClassOf": {
-    "@id": "urn:ngm:class:multi-robot-system",
-    "label": "Multi-Robot System"
-  },
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:robo-robot-type",
+      "label": "Robo Robot Type"
+    }
+  ],
   "relations": {
     "hasPart": [
       {"@id": "urn:ngm:class:autonomous-robot", "label": "Autonomous Robot"},

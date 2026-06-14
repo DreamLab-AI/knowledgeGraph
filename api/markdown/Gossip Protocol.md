@@ -70,8 +70,8 @@ public:: true
   "domain": "distributed-systems",
   "maturity": "established",
   "subClassOf": {
-    "@id": "urn:ngm:class:peer-to-peer-protocol",
-    "label": "Peer-to-Peer Protocol"
+    "@id": "urn:ngm:class:infra-network-and-comms",
+    "label": "Infra Network And Comms"
   },
   "relations": {
     "implements": [

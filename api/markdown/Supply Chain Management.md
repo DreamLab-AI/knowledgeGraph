@@ -52,8 +52,8 @@ alias:: BC-0044-supply-chain-management
   "maturity": "mature",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:operations-management",
-      "label": "Operations Management"
+      "@id": "urn:ngm:class:dc-protocol-and-infra",
+      "label": "Dc Protocol And Infra"
     }
   ],
   "relations": {

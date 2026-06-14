@@ -8,8 +8,8 @@
   "definition": "The Sensor Fusion Layer is the stratum that combines data from multiple sensors into a single, more reliable estimate of state. It sits above the Hardware sensing devices and below the Perception Layer that interprets the fused result. It contains alignment, filtering, and fusion algorithms together with uncertainty models.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:owl-thing",
-      "label": "owl:Thing"
+      "id": "urn:ngm:class:robo-perception",
+      "label": "Robo Perception"
     }
   ],
   "entityType": "Class",

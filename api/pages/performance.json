@@ -8,8 +8,8 @@
   "definition": "Performance is a measure of how efficiently a system completes its work, commonly expressed through throughput, latency, and resource usage.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:owl-thing",
-      "label": "owl:Thing"
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Infra Computing And Cloud"
     }
   ],
   "entityType": "Class",

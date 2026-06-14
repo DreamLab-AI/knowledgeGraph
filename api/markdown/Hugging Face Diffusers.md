@@ -32,8 +32,8 @@ public:: true
   "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:machine-learning-framework",
-      "label": "Machine Learning Framework"
+      "@id": "urn:ngm:class:cat-ai-infrastructure",
+      "label": "Cat Ai Infrastructure"
     }
   ],
   "relations": {

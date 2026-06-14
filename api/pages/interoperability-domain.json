@@ -8,8 +8,8 @@
   "definition": "The Interoperability Domain classifies concepts that allow distinct systems, ledgers, or networks to exchange data and value and to act on it consistently. It covers bridges, messaging protocols, common data formats, and the standards that define shared semantics. As a top-level subject classification, it scopes the connective mechanisms between systems rather than the systems themselves.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:owl-thing",
-      "label": "owl:Thing"
+      "id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Infra Network And Comms"
     }
   ],
   "entityType": "Class",

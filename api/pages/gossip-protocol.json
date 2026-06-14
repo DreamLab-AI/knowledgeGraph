@@ -8,8 +8,8 @@
   "definition": "A peer-to-peer communication protocol in which nodes periodically exchange state information with randomly selected neighbours, enabling eventual consistency and fault-tolerant information dissemination across large-scale distributed systems without centralised coordination.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:peer-to-peer-protocol",
-      "label": "Peer-to-Peer Protocol"
+      "id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Infra Network And Comms"
     }
   ],
   "entityType": "Class",

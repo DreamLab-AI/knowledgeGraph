@@ -59,8 +59,8 @@ public:: true
   "maturity": "mature",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:mechatronic-system",
-      "label": "Mechatronic System"
+      "@id": "urn:ngm:class:robo-robot-type",
+      "label": "Robo Robot Type"
     }
   ],
   "relations": {

@@ -8,8 +8,8 @@
   "definition": "A country in East Asia and the world's most populous nation for much of recent history, with a large economy and significant influence in technology, manufacturing, and digital currency policy.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:owl-thing",
-      "label": "owl:Thing"
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Infra Legal And Regulatory"
     }
   ],
   "entityType": "Class",

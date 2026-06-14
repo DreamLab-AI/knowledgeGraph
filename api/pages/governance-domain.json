@@ -8,8 +8,8 @@
   "definition": "The Governance Domain classifies concepts concerned with the structures, processes and decision rights by which collective systems are directed and held accountable. It covers the formation, ratification and enforcement of rules across organisations, protocols and public institutions. As a top-level subject axis, it is orthogonal to architectural Layer and provides the social and procedural framing for systems that other domains realise technically.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:owl-thing",
-      "label": "owl:Thing"
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Infra Legal And Regulatory"
     }
   ],
   "entityType": "Class",

@@ -8,8 +8,8 @@
   "definition": "A Knowledge Artefact Update Cycle is a structured, recurring process through which knowledge assets \u2014 including ontology classes, documentation nodes, linked data graphs, and curated references \u2014 are reviewed, validated, corrected, and re-published to maintain epistemic accuracy and semantic coherence. The cycle defines per-artefact cadences calibrated to the rate of change of underlying domains, balancing maintenance cost against information decay. It sits at the intersection of knowledge lifecycle management, data stewardship, and continuous integration practices applied to semantic knowledge bases. Effective update cycles incorporate provenance tracking, diff-based change detection, and staleness thresholds to trigger targeted refresh actions without wholesale reconstruction of the knowledge graph.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:knowledge-lifecycle-management",
-      "label": "Knowledge Lifecycle Management"
+      "id": "urn:ngm:class:infra-data-management",
+      "label": "Infra Data Management"
     }
   ],
   "entityType": "Class",

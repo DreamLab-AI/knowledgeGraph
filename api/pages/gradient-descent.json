@@ -8,8 +8,8 @@
   "definition": "Gradient Descent is an iterative first-order optimisation algorithm that minimises a differentiable loss function by repeatedly updating model parameters in the direction of the negative gradient. It is the foundational optimisation strategy for training machine learning models, with variants including batch, stochastic, and mini-batch gradient descent, as well as adaptive-rate methods such as Adam and RMSProp.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:optimisation-algorithm",
-      "label": "Optimisation Algorithm"
+      "id": "urn:ngm:class:ai-technique",
+      "label": "Ai Technique"
     }
   ],
   "entityType": "Class",

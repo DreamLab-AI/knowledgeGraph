@@ -1241,10 +1241,6 @@ public:: true
     {
       "@id": "urn:ngm:class:ai-agent-system",
       "label": "AI Agent System"
-    },
-    {
-      "@id": "urn:ngm:class:sociotechnical-system",
-      "label": "Sociotechnical System"
     }
   ],
   "relations": {
@@ -1526,6 +1522,12 @@ public:: true
       {
         "@id": "urn:ngm:class:w3-c",
         "label": "W3C"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:sociotechnical-system",
+        "label": "Sociotechnical System"
       }
     ]
   },

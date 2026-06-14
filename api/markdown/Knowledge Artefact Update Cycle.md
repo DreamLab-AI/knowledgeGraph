@@ -40,8 +40,8 @@ elevatedFrom:: [[Update Cycle]]
   "qualityScore": 0.72,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:knowledge-lifecycle-management",
-      "label": "Knowledge Lifecycle Management"
+      "@id": "urn:ngm:class:infra-data-management",
+      "label": "Infra Data Management"
     }
   ],
   "relations": {

@@ -8,8 +8,8 @@
   "definition": "The Privacy Domain classifies concepts concerning the appropriate handling of personal information and the rights of individuals over data about them. It covers data minimisation, consent, purpose limitation and the techniques that protect identity. As a top-level subject axis it constrains how systems collect, process and disclose personal data.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:owl-thing",
-      "label": "owl:Thing"
+      "id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Infra Security And Identity"
     }
   ],
   "entityType": "Class",

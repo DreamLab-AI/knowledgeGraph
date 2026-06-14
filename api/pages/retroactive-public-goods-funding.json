@@ -8,8 +8,8 @@
   "definition": "Retroactive Public Goods Funding (RetroPGF) is a capital allocation mechanism that rewards contributors to open-source software, protocol infrastructure, or public-benefit projects after they have demonstrably created value, rather than distributing speculative upfront grants based on predicted future impact. By funding proven outcomes rather than promises, RetroPGF reduces misallocation risk and aligns incentives so that contributors can invest effort in public goods with confidence that eventual recognition is possible. Evaluation is typically performed by a trusted body \u2014 such as a DAO committee, a citizen house of badge holders, or an expert panel \u2014 who assess demonstrated impact and distribute treasury funds accordingly. The mechanism was pioneered by Vitalik Buterin and operationalised at scale by the Optimism Collective, making it one of the most influential experiments in decentralised public goods economics.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:public-goods-funding",
-      "label": "Public Goods Funding"
+      "id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "Bc Defi And Economics"
     }
   ],
   "entityType": "Class",

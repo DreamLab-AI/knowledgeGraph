@@ -8,8 +8,8 @@
   "definition": "The Mechanism Design Domain classifies concepts concerned with engineering rules and incentives so that self-interested participants produce a desired collective outcome. It covers auctions, voting and governance schemes, incentive-compatible protocols, and the analysis that proves their properties. As a top-level subject classification, it scopes the deliberate construction of mechanisms rather than the broader economic theory it draws upon.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:owl-thing",
-      "label": "owl:Thing"
+      "id": "urn:ngm:class:bc-governance-and-regulation",
+      "label": "Bc Governance And Regulation"
     }
   ],
   "entityType": "Class",

@@ -8,8 +8,8 @@
   "definition": "The Tooling Layer is the cross-cutting stratum that provides the development, deployment, and observability instruments used to build and operate the rest of the system. It sits beside the production strata rather than within the runtime data path and supports operational and research work. It contains build systems, debuggers, monitors, and automation utilities.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:owl-thing",
-      "label": "owl:Thing"
+      "id": "urn:ngm:class:infra-software-engineering",
+      "label": "Infra Software Engineering"
     }
   ],
   "entityType": "Class",

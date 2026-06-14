@@ -8,8 +8,8 @@
   "definition": "Farcaster is a sufficiently decentralised social networking protocol built on Ethereum and Optimism that anchors user identity and account data on-chain while storing social graph content and messages off-chain across a peer-to-peer network of Hubs. It separates identity (Farcaster ID, FID) from the client application layer, enabling permissionless third-party clients such as Warpcast to build on shared social data without platform lock-in. The protocol specifies message encoding via a data availability layer called Hubs and enforces message ordering through a CRDT-based conflict resolution mechanism, making it a credibly neutral substrate for decentralised social applications.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:decentralised-social-protocol",
-      "label": "Decentralised Social Protocol"
+      "id": "urn:ngm:class:bc-network-component",
+      "label": "Bc Network Component"
     }
   ],
   "entityType": "Class",

@@ -109,10 +109,6 @@ public:: true
     {
       "@id": "urn:ngm:class:ai-governance-and-ethics",
       "label": "AI Governance and Ethics"
-    },
-    {
-      "@id": "urn:ngm:class:governance-framework",
-      "label": "Governance Framework"
     }
   ],
   "relations": {
@@ -162,6 +158,12 @@ public:: true
       {
         "@id": "urn:ngm:class:etsi-metaverse-domain-taxonomy",
         "label": "ETSI Metaverse Domain Taxonomy"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:governance-framework",
+        "label": "Governance Framework"
       }
     ]
   },

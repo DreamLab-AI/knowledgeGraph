@@ -8,8 +8,8 @@
   "definition": "Game theory is the mathematical study of strategic interaction among rational agents, providing formal models for analysing decisions when outcomes depend on the choices of multiple actors with potentially conflicting interests. Founded by von Neumann and Morgenstern (1944) and extended by Nash's equilibrium concept (1950), it encompasses non-cooperative and cooperative game theory, mechanism design, and evolutionary dynamics. Its core solution concepts \u2014 Nash equilibrium, dominant strategy equilibrium, subgame-perfect equilibrium, and correlated equilibrium \u2014 are applied across economics, computer science, evolutionary biology, AI alignment research, and blockchain protocol design.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:decision-theory",
-      "label": "Decision Theory"
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "Ai Research Area"
     }
   ],
   "entityType": "Class",

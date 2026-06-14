@@ -57,13 +57,12 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-governance-and-safety",
       "label": "Governance and Safety"
-    },
-    {
-      "@id": "urn:ngm:class:user-safety",
-      "label": "User Safety"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:user-safety", "label": "User Safety"}
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:responsible-xr-design",

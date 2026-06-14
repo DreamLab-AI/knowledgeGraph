@@ -10,10 +10,6 @@
     {
       "id": "urn:ngm:class:bc-governance-and-regulation",
       "label": "Governance and Regulation"
-    },
-    {
-      "id": "urn:ngm:class:sustainable-finance",
-      "label": "Sustainable Finance"
     }
   ],
   "entityType": "Class",
@@ -170,6 +166,10 @@
       {
         "id": "urn:ngm:class:esg",
         "label": "ESG"
+      },
+      {
+        "id": "urn:ngm:class:sustainable-finance",
+        "label": "Sustainable Finance"
       }
     ],
     "uses": [

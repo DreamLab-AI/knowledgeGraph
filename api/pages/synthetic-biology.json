@@ -8,8 +8,8 @@
   "definition": "Synthetic biology is a field that applies engineering principles to design and construct biological systems and organisms. It combines biology, genetics, and engineering.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:owl-thing",
-      "label": "owl:Thing"
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "Ai Research Area"
     }
   ],
   "entityType": "Class",

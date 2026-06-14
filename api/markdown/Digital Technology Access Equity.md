@@ -45,8 +45,8 @@ elevatedFrom:: [[Equity]]
   "qualityScore": 0.72,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:digital-inclusion",
-      "label": "Digital Inclusion"
+      "@id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "Ai Governance And Ethics"
     }
   ],
   "relations": {

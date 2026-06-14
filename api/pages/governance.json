@@ -8,8 +8,8 @@
   "definition": "Governance is the set of processes, institutions, norms, rules, and practices by which authority is exercised and decisions are made within an organisation, system, or society. It encompasses the mechanisms through which stakeholders participate in, constrain, and are held accountable by decision-making structures, balancing competing interests through legitimate frameworks. In technical and sociotechnical contexts, governance determines who controls shared resources, how policies are formed and enforced, and how disputes are resolved. Effective governance integrates regulatory compliance, ethical accountability, risk management, and participatory design to achieve legitimate and adaptive coordination.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:institutional-framework",
-      "label": "Institutional Framework"
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Infra Legal And Regulatory"
     }
   ],
   "entityType": "Class",

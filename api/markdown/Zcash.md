@@ -62,10 +62,12 @@ public:: true
   "domain": "blockchain",
   "maturity": "established",
   "qualityScore": 0.7,
-  "subClassOf": {
-    "@id": "urn:ngm:class:privacy-coin",
-    "label": "Privacy Coin"
-  },
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:bc-token-and-asset",
+      "label": "Bc Token And Asset"
+    }
+  ],
   "relations": {
     "requires": [
       {

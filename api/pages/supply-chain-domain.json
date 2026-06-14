@@ -8,8 +8,8 @@
   "definition": "The Supply Chain Domain classifies concepts concerning the flow of goods, information and finance from source to end customer. It covers sourcing, logistics, inventory and the traceability and coordination of multi-party networks. As a top-level subject axis it frames how physical and informational flows are planned, executed and verified across organisations.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:owl-thing",
-      "label": "owl:Thing"
+      "id": "urn:ngm:class:dc-communication",
+      "label": "Dc Communication"
     }
   ],
   "entityType": "Class",

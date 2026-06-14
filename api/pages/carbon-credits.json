@@ -8,8 +8,8 @@
   "definition": "Carbon credits are tradeable instruments, each representing the verified reduction or removal of one tonne of carbon dioxide equivalent (tCO\u2082e) from the atmosphere, used in both compliance and voluntary markets to incentivise greenhouse gas mitigation. In compliance cap-and-trade systems, regulators issue a capped total of allowances and require regulated emitters to surrender one allowance per tonne emitted, creating a price signal for abatement. Voluntary carbon markets allow organisations to purchase credits from validated offset projects \u2014 such as reforestation, renewable energy deployment, or methane capture \u2014 to offset residual emissions. Market integrity depends on independently certified additionality, permanence, and measurability, overseen by standards bodies such as Verra, Gold Standard, and the American Carbon Registry.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:environmental-finance",
-      "label": "Environmental Finance"
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Infra Legal And Regulatory"
     }
   ],
   "entityType": "Class",

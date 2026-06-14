@@ -8,8 +8,8 @@
   "definition": "Sensor data comprises the raw or pre-processed digital measurements produced by physical transducers\u2014including cameras, LiDAR scanners, inertial measurement units (IMUs), ultrasonic rangers, and microphones\u2014that encode observable properties of the environment such as geometry, colour, acceleration, and sound. In robotic, autonomous, and spatial computing systems, sensor data forms the primary input to perception pipelines responsible for state estimation, object detection, and scene understanding. Data quality characteristics\u2014including frame rate, resolution, noise floor, and synchronisation latency\u2014directly constrain the capabilities of downstream algorithms such as SLAM, sensor fusion, and learned perception models. Sensor data is collected, timestamped, and transmitted through data acquisition systems before being processed through calibration, fusion, and inference stages to produce actionable world representations.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:telemetry",
-      "label": "Telemetry"
+      "id": "urn:ngm:class:robo-perception",
+      "label": "Robo Perception"
     }
   ],
   "entityType": "Class",

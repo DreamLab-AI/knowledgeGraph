@@ -60,8 +60,8 @@ public:: true
   "qualityScore": 0.7,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:mathematical-logic",
-      "label": "Mathematical Logic"
+      "@id": "urn:ngm:class:ai-research-area",
+      "label": "Ai Research Area"
     }
   ],
   "relations": {

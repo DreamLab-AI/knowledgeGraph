@@ -8,8 +8,8 @@
   "definition": "The Hardware Layer is the lowest stratum of the canonical stack, comprising the physical computing, storage, and signalling devices on which everything above runs. Nothing sits below it; immediately above it is the Network Layer, which connects discrete machines. It contains processors, memory, storage media, accelerators, and the physical transmission media that carry signals.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:owl-thing",
-      "label": "owl:Thing"
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Infra Computing And Cloud"
     }
   ],
   "entityType": "Class",

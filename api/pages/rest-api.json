@@ -8,8 +8,8 @@
   "definition": "A REST API (Representational State Transfer Application Programming Interface) is a web service interface conforming to Roy Fielding's six architectural constraints \u2014 client\u2013server separation, statelessness, cacheability, uniform interface, layered system, and optional code-on-demand \u2014 originally formalised in his 2000 doctoral dissertation. Resources are uniquely addressed by URIs, manipulated through standard HTTP verbs (GET, POST, PUT, PATCH, DELETE), and represented in negotiated formats such as JSON or XML. The uniform interface constraint \u2014 encompassing resource identification, manipulation through representations, self-descriptive messages, and hypermedia as the engine of application state (HATEOAS) \u2014 is the defining characteristic that separates REST from earlier RPC and SOAP-based architectures. REST APIs have become the dominant integration surface across cloud platforms, AI model serving, microservices ecosystems, and public developer APIs precisely because they align with existing HTTP infrastructure including caches, proxies, load balancers, and API gateways.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:web-api",
-      "label": "Web API"
+      "id": "urn:ngm:class:infra-software-engineering",
+      "label": "Infra Software Engineering"
     }
   ],
   "entityType": "Class",

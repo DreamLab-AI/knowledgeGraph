@@ -405,10 +405,6 @@ public:: true
     {
       "@id": "urn:ngm:class:infra-security-and-identity",
       "label": "Security and Identity"
-    },
-    {
-      "@id": "urn:ngm:class:applied-mathematics",
-      "label": "Applied Mathematics"
     }
   ],
   "relations": {
@@ -720,6 +716,10 @@ public:: true
       {
         "@id": "urn:ngm:class:network-security",
         "label": "Network Security"
+      },
+      {
+        "@id": "urn:ngm:class:applied-mathematics",
+        "label": "Applied Mathematics"
       }
     ]
   },

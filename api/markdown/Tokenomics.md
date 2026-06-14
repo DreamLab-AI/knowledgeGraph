@@ -47,8 +47,8 @@ public:: true
   "maturity": "emerging",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:cryptoeconomics",
-      "label": "Cryptoeconomics"
+      "@id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "Bc Defi And Economics"
     }
   ],
   "sameAs": [

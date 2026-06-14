@@ -8,8 +8,8 @@
   "definition": "The Enterprise Software Domain classifies concepts for applications and platforms that support the operations of organisations at scale, including resource planning, customer management, and integration middleware. It covers architecture patterns, data management, and the governance that large deployments require. As a top-level subject classification, it scopes business-grade software systems rather than the underlying infrastructure or the networks they run on.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:owl-thing",
-      "label": "owl:Thing"
+      "id": "urn:ngm:class:infra-software-engineering",
+      "label": "Infra Software Engineering"
     }
   ],
   "entityType": "Class",

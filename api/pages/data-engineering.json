@@ -8,8 +8,8 @@
   "definition": "Data Engineering is the discipline concerned with designing, building and operating the systems that collect, store, transform and serve data at scale. It covers data pipelines, storage architectures, batch and streaming processing, data modelling and the orchestration and monitoring of workflows. Its purpose is to make reliable, well-structured data available for analytics, reporting and machine learning.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:technology-infrastructure-domain-domain",
-      "label": "Infrastructure Domain"
+      "id": "urn:ngm:class:infra-data-management",
+      "label": "Infra Data Management"
     }
   ],
   "entityType": "Class",

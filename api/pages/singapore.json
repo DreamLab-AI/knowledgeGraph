@@ -8,8 +8,8 @@
   "definition": "A sovereign island city-state in Southeast Asia and a major financial and technology hub. It is known for its role in global trade, finance, and as a centre for fintech and digital asset regulation.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:owl-thing",
-      "label": "owl:Thing"
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Infra Legal And Regulatory"
     }
   ],
   "entityType": "Class",

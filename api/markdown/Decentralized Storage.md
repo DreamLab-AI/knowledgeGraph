@@ -155,8 +155,8 @@ alias:: DecentralizedStorage
   "domain": "distributed-systems",
   "maturity": "emerging",
   "subClassOf": {
-    "@id": "urn:ngm:class:distributed-file-system",
-    "label": "Distributed File System"
+    "@id": "urn:ngm:class:infra-data-management",
+    "label": "Infra Data Management"
   },
   "relations": {
     "hasPart": [

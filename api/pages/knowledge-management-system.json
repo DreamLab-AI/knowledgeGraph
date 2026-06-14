@@ -8,8 +8,8 @@
   "definition": "A Knowledge Management System (KMS) is an integrated software platform that captures, organises, stores, retrieves, and distributes explicit and tacit knowledge across an organisation or community of practice. It combines document repositories, knowledge graphs, semantic search, ontologies, and collaborative authoring tools to make institutional knowledge discoverable, reusable, and actionable. A KMS supports the full knowledge lifecycle \u2014 from creation and curation through to sharing, governance, and retirement \u2014 enabling informed decision-making and reducing knowledge silos. Modern systems layer machine learning and natural language processing atop structured metadata to surface contextually relevant information at the point of need.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:information-system",
-      "label": "Information System"
+      "id": "urn:ngm:class:infra-data-management",
+      "label": "Infra Data Management"
     }
   ],
   "entityType": "Class",

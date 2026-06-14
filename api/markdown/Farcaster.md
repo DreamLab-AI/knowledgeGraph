@@ -52,8 +52,8 @@ public:: true
   "qualityScore": 0.74,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:decentralised-social-protocol",
-      "label": "Decentralised Social Protocol"
+      "@id": "urn:ngm:class:bc-network-component",
+      "label": "Bc Network Component"
     }
   ],
   "sameAs": [

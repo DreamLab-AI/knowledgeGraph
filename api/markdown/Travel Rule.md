@@ -370,10 +370,6 @@ alias:: BC-0485-travel-rule
     {
       "@id": "urn:ngm:class:bc-governance-and-regulation",
       "label": "Governance and Regulation"
-    },
-    {
-      "@id": "urn:ngm:class:counter-terrorist-financing",
-      "label": "Counter-Terrorist Financing"
     }
   ],
   "relations": {
@@ -381,7 +377,8 @@ alias:: BC-0485-travel-rule
       {
         "@id": "urn:ngm:class:anti-money-laundering",
         "label": "Anti-Money Laundering"
-      }
+      },
+      {"@id": "urn:ngm:class:counter-terrorist-financing", "label": "Counter-Terrorist Financing"}
     ],
     "hasPart": [
       {

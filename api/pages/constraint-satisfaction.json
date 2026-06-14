@@ -8,8 +8,8 @@
   "definition": "Constraint Satisfaction is a paradigm in artificial intelligence and combinatorial mathematics in which a problem is represented as a set of variables, each with a domain of possible values, and a set of constraints that restrict the allowable combinations of those values. The goal is to find an assignment of values to all variables such that every constraint is simultaneously satisfied, or to determine that no such assignment exists. Solution methods combine systematic backtracking search with constraint propagation techniques \u2014 notably arc consistency and path consistency \u2014 that prune infeasible values early, dramatically reducing the search space. Constraint satisfaction underpins scheduling, configuration, planning, and combinatorial optimisation across virtually every engineering domain.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:combinatorial-optimisation",
-      "label": "Combinatorial Optimisation"
+      "id": "urn:ngm:class:ai-technique",
+      "label": "Ai Technique"
     }
   ],
   "entityType": "Class",

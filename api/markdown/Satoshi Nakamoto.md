@@ -66,10 +66,12 @@ public:: true
   "domain": "blockchain",
   "maturity": "established",
   "qualityScore": 0.7,
-  "subClassOf": {
-    "@id": "urn:ngm:class:owl-thing",
-    "label": "owl:Thing"
-  },
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:bc-protocol-and-consensus",
+      "label": "Bc Protocol And Consensus"
+    }
+  ],
   "relations": {
     "enables": [
       {

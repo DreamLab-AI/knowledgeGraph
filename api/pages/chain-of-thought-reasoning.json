@@ -8,8 +8,8 @@
   "definition": "Chain-of-Thought Reasoning is the capacity of large language models to generate coherent sequences of intermediate logical, mathematical, or factual steps as part of producing a final answer, treating each intermediate token as an active computational resource that reshapes residual stream activations for subsequent Transformer layers. Unlike the surface prompting technique that elicits it, CoT Reasoning denotes an emergent model capability \u2014 present above certain parameter-scale thresholds \u2014 whereby the model decomposes complex problems into verifiable sub-steps rather than collapsing directly to a final token. This capability underpins inference-time compute scaling strategies including self-consistency sampling, process reward models, step-level verifiers, and tree-of-thought search, and connects neural language modelling to classical AI paradigms of deductive planning and symbolic reasoning.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ai-reasoning",
-      "label": "AI Reasoning"
+      "id": "urn:ngm:class:ai-technique",
+      "label": "Ai Technique"
     }
   ],
   "entityType": "Class",

@@ -8,8 +8,8 @@
   "definition": "A public research university in Sheffield, England, and a member of the Russell Group of research-intensive universities. It is known for engineering, materials science, and natural language processing research.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:owl-thing",
-      "label": "owl:Thing"
+      "id": "urn:ngm:class:infra-software-engineering",
+      "label": "Infra Software Engineering"
     }
   ],
   "entityType": "Class",

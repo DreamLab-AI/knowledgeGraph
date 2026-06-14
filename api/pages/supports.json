@@ -8,8 +8,8 @@
   "definition": "Supports is a relational predicate used in the knowledge graph to indicate that one entity provides backing, compatibility, or enabling capability for another.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:owl-thing",
-      "label": "owl:Thing"
+      "id": "urn:ngm:class:infra-software-engineering",
+      "label": "Infra Software Engineering"
     }
   ],
   "entityType": "Class",

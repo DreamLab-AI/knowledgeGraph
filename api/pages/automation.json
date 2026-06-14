@@ -8,8 +8,8 @@
   "definition": "Automation is the application of technology, control systems, and software to execute processes, tasks, or workflows with minimal or no human intervention, transferring decision-making and execution from people to machines or algorithms. It encompasses industrial and manufacturing automation driven by programmable logic controllers and robotics, as well as software-driven process automation that replicates repetitive digital workflows. The primary goals are to increase throughput, reduce error rates, lower operational costs, and free human attention for non-routine judgement tasks. Automation exists on a spectrum from fixed mechanisation through programmable control, flexible automation, and fully autonomous adaptive systems.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:control-systems",
-      "label": "Control Systems"
+      "id": "urn:ngm:class:infra-software-engineering",
+      "label": "Infra Software Engineering"
     }
   ],
   "entityType": "Class",

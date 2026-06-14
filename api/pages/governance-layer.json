@@ -8,8 +8,8 @@
   "definition": "The Governance Layer is the cross-cutting stratum where human and institutional intent over a system is decided, recorded, and amended. It sits above the Policy Layer, which it parameterises, and draws on identity and economic structures to allocate decision rights. It contains decision processes, voting mechanisms, charters, and the records of who may change what.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:owl-thing",
-      "label": "owl:Thing"
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Infra Legal And Regulatory"
     }
   ],
   "entityType": "Class",

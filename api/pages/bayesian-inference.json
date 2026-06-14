@@ -8,8 +8,8 @@
   "definition": "Bayesian Inference is a principled statistical framework that updates the probability of a hypothesis as new evidence is observed, using Bayes' theorem to combine a prior distribution over parameters with a likelihood function derived from data to yield a posterior distribution. Unlike frequentist methods, it treats probability as a degree of belief and propagates uncertainty through every step of reasoning, enabling calibrated predictions and natural model comparison via marginal likelihoods. In machine learning, it underpins probabilistic graphical models, Gaussian processes, Bayesian neural networks, variational inference, and Markov Chain Monte Carlo methods. Its capacity to incorporate domain knowledge through priors and to quantify epistemic uncertainty makes it foundational for safety-critical AI, active learning, and sequential decision-making.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:probabilistic-reasoning",
-      "label": "Probabilistic Reasoning"
+      "id": "urn:ngm:class:ai-technique",
+      "label": "Ai Technique"
     }
   ],
   "entityType": "Class",

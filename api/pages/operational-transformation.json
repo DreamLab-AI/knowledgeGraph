@@ -8,8 +8,8 @@
   "definition": "Operational Transformation (OT) is a concurrency control technique for real-time collaborative editing systems that enables multiple users to concurrently modify a shared document by representing edits as discrete operations and automatically transforming each incoming operation against previously applied operations to preserve user intent. The core insight is that when two concurrent operations are applied in different orders across distributed replicas, at least one must be adjusted \u2014 transformed \u2014 so that the final document state converges to a consistent result. OT requires a pair of transformation functions (IT and ET for inclusion and exclusion transformation) and must satisfy formal consistency properties (TP1 and TP2) to guarantee convergence under all interleavings. It underpins real-time collaborative editors including Google Docs, Apache Wave, and Etherpad, and remains a foundational technique in distributed collaboration research despite the later emergence of CRDTs.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:concurrency-control",
-      "label": "Concurrency Control"
+      "id": "urn:ngm:class:dc-protocol-and-infra",
+      "label": "Dc Protocol And Infra"
     }
   ],
   "entityType": "Class",

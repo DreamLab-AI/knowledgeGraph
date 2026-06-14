@@ -70,10 +70,12 @@ public:: true
   "domain": "blockchain",
   "maturity": "established",
   "qualityScore": 0.7,
-  "subClassOf": {
-    "@id": "urn:ngm:class:zk-rollup",
-    "label": "ZK Rollup"
-  },
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:bc-network-component",
+      "label": "Bc Network Component"
+    }
+  ],
   "relations": {
     "hasPart": [
       {

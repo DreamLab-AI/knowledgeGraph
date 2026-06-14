@@ -8,8 +8,8 @@
   "definition": "Physics Simulation is the computational modelling of physical phenomena \u2014 encompassing rigid-body dynamics, soft-body deformation, fluid behaviour, cloth simulation, collision detection, and constraint solving \u2014 to produce physically plausible behaviour in real-time or offline virtual environments. It applies classical mechanics, continuum mechanics, and numerical integration methods to generate deterministic or probabilistic trajectories of simulated objects and agents. Physics simulation is foundational to interactive 3D applications, robotics training, digital-twin fidelity, and scientific computation, enabling rapid exploration of scenarios that would be costly or dangerous in the physical world. Modern implementations exploit GPU parallelism, hierarchical spatial data structures, and position-based dynamics to meet real-time performance budgets across heterogeneous hardware.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:computational-modelling",
-      "label": "Computational Modelling"
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Sc Platform And Environment"
     }
   ],
   "entityType": "Class",

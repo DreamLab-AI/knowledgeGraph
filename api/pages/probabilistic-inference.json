@@ -8,8 +8,8 @@
   "definition": "Probabilistic inference is the computation of the probability of unknown quantities given observed evidence within a probabilistic model. It produces posterior distributions used for prediction and decision making under uncertainty.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:statistical-inference",
-      "label": "Statistical Inference"
+      "id": "urn:ngm:class:ai-technique",
+      "label": "Ai Technique"
     }
   ],
   "entityType": "Class",

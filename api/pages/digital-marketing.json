@@ -8,8 +8,8 @@
   "definition": "Digital Marketing is the practice of promoting products, services, and brands through internet-connected and data-driven channels \u2014 including search engines, social media platforms, email, content networks, and programmatic advertising systems \u2014 to reach and convert target audiences. It encompasses both inbound strategies such as search engine optimisation and content marketing, and outbound strategies such as paid search, display advertising, and email campaigns. Modern digital marketing is distinguished by its measurability, real-time feedback loops, and ability to personalise messages at scale through machine learning, behavioural analytics, and customer data platforms. It intersects with artificial intelligence for predictive targeting, with data infrastructure for audience segmentation and attribution, and with emerging channels such as augmented reality and conversational interfaces.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:marketing",
-      "label": "Marketing"
+      "id": "urn:ngm:class:infra-data-management",
+      "label": "Infra Data Management"
     }
   ],
   "entityType": "Class",

@@ -24,7 +24,7 @@ alias:: MultiAgentSystem
   "definition": "A Multi-Agent System (MAS) is a computational architecture in which multiple autonomous agents — each equipped with local perception, internal state, and independent decision-making capability — interact within a shared environment to accomplish individual or collective objectives. Coordination emerges from direct communication, environmental signalling, stigmergy, or market-like auction mechanisms, without requiring any single agent to hold global knowledge or exert centralised control. MAS formalises distributed problem-solving by composing heterogeneous or homogeneous agent populations whose aggregate behaviour frequently exhibits emergence — properties absent in any individual agent. The paradigm spans robotics swarms, AI orchestration pipelines, financial market simulation, smart-grid balancing, and autonomous software engineering.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:distributed-artificial-intelligence", "label": "Distributed Artificial Intelligence"}],
+  "subClassOf": [{"@id": "urn:ngm:class:ai-research-area", "label": "Ai Research Area"}],
   "sameAs": [
     {"@id": "urn:ngm:class:mas", "label": "MAS"},
     {"@id": "urn:ngm:class:agent-based-system", "label": "Agent-Based System"}

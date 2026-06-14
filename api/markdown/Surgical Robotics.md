@@ -33,8 +33,8 @@ alias:: SurgicalRobotics
   "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:medical-robotics",
-      "label": "Medical Robotics"
+      "@id": "urn:ngm:class:robo-robot-type",
+      "label": "Robo Robot Type"
     }
   ],
   "relations": {

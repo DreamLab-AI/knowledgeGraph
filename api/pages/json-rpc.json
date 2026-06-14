@@ -8,8 +8,8 @@
   "definition": "JSON-RPC is a lightweight, stateless, transport-agnostic remote procedure call (RPC) protocol that encodes method invocations and their responses as JSON objects. The JSON-RPC 2.0 specification, finalised in 2013, defines a minimal request envelope comprising a jsonrpc version field, a method name, an optional params argument (array or object), and a correlation id; the response carries either a result or a structured error object. The protocol operates over any byte-stream transport \u2014 HTTP, WebSocket, TCP, Unix domain sockets, or stdin/stdout \u2014 making it uniquely portable across networked and embedded contexts. It underpins foundational cross-domain infrastructure including the Ethereum node API, the Language Server Protocol, and the Model Context Protocol used for AI tool-calling.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:remote-procedure-call",
-      "label": "Remote Procedure Call"
+      "id": "urn:ngm:class:infra-software-engineering",
+      "label": "Infra Software Engineering"
     }
   ],
   "entityType": "Class",

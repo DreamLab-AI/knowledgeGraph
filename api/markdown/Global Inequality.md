@@ -345,14 +345,6 @@ public:: true
     {
       "@id": "urn:ngm:class:ai-governance-and-ethics",
       "label": "AI Governance and Ethics"
-    },
-    {
-      "@id": "urn:ngm:class:governance",
-      "label": "Governance"
-    },
-    {
-      "@id": "urn:ngm:class:governance",
-      "label": "Governance"
     }
   ],
   "relations": {
@@ -582,6 +574,12 @@ public:: true
       {
         "@id": "urn:ngm:class:world-bank-povcal-net-standards",
         "label": "World Bank PovcalNet Standards"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
       }
     ]
   },

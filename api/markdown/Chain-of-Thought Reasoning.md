@@ -33,8 +33,8 @@ alias:: Chain of Thought Reasoning
   "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:ai-reasoning",
-      "label": "AI Reasoning"
+      "@id": "urn:ngm:class:ai-technique",
+      "label": "Ai Technique"
     }
   ],
   "sameAs": [

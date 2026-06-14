@@ -353,10 +353,6 @@ public:: true
     {
       "@id": "urn:ngm:class:bc-governance-and-regulation",
       "label": "Governance and Regulation"
-    },
-    {
-      "@id": "urn:ngm:class:crypto-regulation",
-      "label": "Crypto Regulation"
     }
   ],
   "relations": {
@@ -364,7 +360,8 @@ public:: true
       {
         "@id": "urn:ngm:class:infra-legal-and-regulatory",
         "label": "Legal and Regulatory"
-      }
+      },
+      {"@id": "urn:ngm:class:crypto-regulation", "label": "Crypto Regulation"}
     ],
     "hasPart": [
       {

@@ -33,8 +33,8 @@ alias:: SensorData
   "maturity": "mature",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:telemetry",
-      "label": "Telemetry"
+      "@id": "urn:ngm:class:robo-perception",
+      "label": "Robo Perception"
     }
   ],
   "relations": {

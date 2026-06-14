@@ -129,10 +129,6 @@ public:: true
     {
       "@id": "urn:ngm:class:ai-governance-and-ethics",
       "label": "AI Governance and Ethics"
-    },
-    {
-      "@id": "urn:ngm:class:ai-governance",
-      "label": "AI Governance"
     }
   ],
   "relations": {
@@ -198,6 +194,12 @@ public:: true
       {
         "@id": "urn:ngm:class:governance-model",
         "label": "Governance Model"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
       }
     ]
   },

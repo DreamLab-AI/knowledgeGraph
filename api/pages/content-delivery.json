@@ -8,8 +8,8 @@
   "definition": "Content delivery is the distribution of digital media such as web pages, video and software to end users, typically optimised for speed and reliability. It is commonly accelerated by content delivery networks.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:owl-thing",
-      "label": "owl:Thing"
+      "id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Infra Network And Comms"
     }
   ],
   "entityType": "Class",

@@ -54,13 +54,12 @@ public:: true
     {
       "@id": "urn:ngm:class:ai-governance-and-ethics",
       "label": "AI Governance and Ethics"
-    },
-    {
-      "@id": "urn:ngm:class:ai-governance",
-      "label": "AI Governance"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"}
+    ],
     "requires": [
       {"@id": "urn:ngm:class:interpretability", "label": "Interpretability"},
       {"@id": "urn:ngm:class:audit-trail", "label": "Audit Trail"}

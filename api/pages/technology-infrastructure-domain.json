@@ -8,8 +8,8 @@
   "definition": "Top-level domain category encompassing the foundational computing, networking, storage, and platform systems that underpin all technology domains within the NarrativeGoldmine ontology. Infrastructure provides the substrate on which AI, blockchain, metaverse, and robotics applications operate.",
   "subClassOf": [
     {
-      "id": "owl:Thing",
-      "label": "Thing"
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure"
     }
   ],
   "entityType": "Class",

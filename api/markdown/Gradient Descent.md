@@ -46,8 +46,8 @@ public:: true
   "domain": "machine-learning",
   "maturity": "emerging",
   "subClassOf": {
-    "@id": "urn:ngm:class:optimisation-algorithm",
-    "label": "Optimisation Algorithm"
+    "@id": "urn:ngm:class:ai-technique",
+    "label": "Ai Technique"
   },
   "relations": {
     "requires": [

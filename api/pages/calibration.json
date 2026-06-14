@@ -8,8 +8,8 @@
   "definition": "Calibration is the systematic process of establishing, verifying, and correcting the quantitative relationship between a measurement instrument's or computational model's output and a known reference standard, encompassing intrinsic parameter estimation (gain, offset, nonlinearity, bias), extrinsic parameter determination (spatial pose and orientation relative to a reference frame), and inter-device consistency alignment. In physical systems it removes systematic error between raw sensor readings and true physical quantities; in machine learning it aligns predicted probability distributions to empirical frequencies. Calibration is a prerequisite for metrically accurate perception, reliable closed-loop control, trustworthy probabilistic inference, and coherent multi-modal data fusion across robotics, spatial computing, and AI systems.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:metrology",
-      "label": "Metrology"
+      "id": "urn:ngm:class:robo-perception",
+      "label": "Robo Perception"
     }
   ],
   "entityType": "Class",

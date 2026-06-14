@@ -8,8 +8,8 @@
   "definition": "A Certificate Authority (CA) is a trusted third-party organisation that issues, signs, and manages the lifecycle of X.509 digital certificates, cryptographically binding a public key to an entity's verified identity within a Public Key Infrastructure (PKI). CAs operate within a hierarchical trust model where offline root CAs delegate signing authority to online intermediate CAs, which in turn issue end-entity certificates for servers, users, clients, and devices. The CA's signing operations \u2014 governed by RFC 5280, the CA/Browser Forum Baseline Requirements, and WebTrust auditing standards \u2014 underpin the TLS handshake, code-signing pipelines, S/MIME email encryption, mutual TLS (mTLS) in service meshes, and document-signing workflows across the internet. Trust propagates via chain-of-trust verification: a relying party validates each certificate against its issuer's signature, tracing back to an implicitly trusted root embedded in OS or browser trust stores.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:public-key-infrastructure",
-      "label": "Public Key Infrastructure"
+      "id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Infra Security And Identity"
     }
   ],
   "entityType": "Class",

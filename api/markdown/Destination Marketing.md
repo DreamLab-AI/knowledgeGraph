@@ -81,13 +81,15 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
       "label": "Content and Assets"
-    },
-    {
-      "@id": "urn:ngm:class:digital-marketing",
-      "label": "Digital Marketing"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:digital-marketing",
+        "label": "Digital Marketing"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:3-d-content-creation",
