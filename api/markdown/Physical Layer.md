@@ -397,7 +397,7 @@ alias:: PhysicalLayer
     },
     {
       "@id": "urn:ngm:class:infra-network-and-comms",
-      "label": "Infra Network And Comms"
+      "label": "Network and Communication"
     },
     {
       "@id": "urn:ngm:class:hardware-layer",
@@ -472,7 +472,7 @@ alias:: PhysicalLayer
       },
       {
         "@id": "urn:ngm:class:lo-ra",
-        "label": "LoRa"
+        "label": "Lo RA"
       }
     ],
     "requires": [
@@ -524,7 +524,7 @@ alias:: PhysicalLayer
       },
       {
         "@id": "urn:ngm:class:high-performance-computing",
-        "label": "High Performance Computing"
+        "label": "High-Performance Computing"
       },
       {
         "@id": "urn:ngm:class:hyperscale-data-centre",
@@ -660,7 +660,7 @@ alias:: PhysicalLayer
     "supports": [
       {
         "@id": "urn:ngm:class:autonomous-vehicle",
-        "label": "Autonomous Vehicles"
+        "label": "Autonomous Vehicle"
       },
       {
         "@id": "urn:ngm:class:financial-trading-networks",
@@ -714,7 +714,7 @@ alias:: PhysicalLayer
       },
       {
         "@id": "urn:ngm:class:iso-iec-jtc-1",
-        "label": "ISO IEC JTC 1"
+        "label": "ISO/IEC JTC 1"
       },
       {
         "@id": "urn:ngm:class:itu-t-sg15",

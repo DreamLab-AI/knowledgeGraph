@@ -20,7 +20,7 @@
     "requires": [
       {
         "id": "urn:ngm:class:peer-to-peer-network",
-        "label": "Peer To Peer Network"
+        "label": "Peer-to-Peer Network"
       },
       {
         "id": "urn:ngm:class:block-propagation",
@@ -46,7 +46,7 @@
       },
       {
         "id": "urn:ngm:class:double-spend-prevention",
-        "label": "Double Spend Prevention"
+        "label": "Double-Spend Prevention"
       }
     ],
     "dependsOn": [
@@ -104,7 +104,7 @@
       },
       {
         "id": "urn:ngm:class:proof-of-stake",
-        "label": "Proof Of Stake"
+        "label": "Proof of Stake"
       },
       {
         "id": "urn:ngm:class:validator-attestation",

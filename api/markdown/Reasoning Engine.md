@@ -34,7 +34,7 @@ public:: true
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:llm-agents", "label": "LLM Agents"},
-      {"@id": "urn:ngm:class:semantic-web-linked-data-standard", "label": "Semantic Web"}
+      {"@id": "urn:ngm:class:semantic-web-linked-data-standard", "label": "Semantic Web Linked Data Standard"}
     ]
   },
   "quality": 0.8

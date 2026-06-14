@@ -133,7 +133,7 @@ public:: true
   ],
   "relations": {
     "bridgesTo": [
-      {"@id": "urn:ngm:class:ai-application", "label": "Creative Media Domain"}
+      {"@id": "urn:ngm:class:ai-application", "label": "AI Application"}
     ],
     "hasPart": [
       {
@@ -168,7 +168,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:marker-based-tracking",
-        "label": "Marker-Based Tracking"
+        "label": "Marker Based Tracking"
       }
     ],
     "enables": [
@@ -182,7 +182,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:real-time-character-animation",
-        "label": "Real-Time Character Animation"
+        "label": "Real Time Character Animation"
       },
       {
         "@id": "urn:ngm:class:virtual-production",

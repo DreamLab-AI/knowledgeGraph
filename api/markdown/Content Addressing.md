@@ -220,7 +220,7 @@ alias:: ContentAddressing
     "enables": [
       {
         "@id": "urn:ngm:class:decentralized-storage",
-        "label": "Decentralised Storage"
+        "label": "Decentralized Storage"
       },
       {
         "@id": "urn:ngm:class:deduplication",

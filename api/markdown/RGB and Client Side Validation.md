@@ -892,7 +892,7 @@ public:: true
     },
     {
       "@id": "urn:ngm:class:bc-network-component",
-      "label": "BC Network Component"
+      "label": "Network Component"
     }
   ],
   "relations": {
@@ -955,7 +955,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:single-use-seals",
-        "label": "Single-Use Seals"
+        "label": "Single Use Seals"
       },
       {
         "@id": "urn:ngm:class:strict-types",
@@ -1003,7 +1003,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:atomic-swap",
-        "label": "Atomic Swaps"
+        "label": "Atomic Swap"
       },
       {
         "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-native-de-fi",
@@ -1083,7 +1083,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:hash-time-locked-contract",
-        "label": "Hash Time-Locked Contracts"
+        "label": "Hash Time-Locked Contract"
       },
       {
         "@id": "urn:ngm:class:op-ret",
@@ -1091,7 +1091,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:pedersen-commitment",
-        "label": "Pedersen Commitments"
+        "label": "Pedersen Commitment"
       },
       {
         "@id": "urn:ngm:class:stark-proofs",
@@ -1129,7 +1129,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:lnp-bp-standards-association",
-        "label": "LNP/BP Standards Association"
+        "label": "LNP-BP Standards Association"
       },
       {
         "@id": "urn:ngm:class:maxim-orlovsky",
@@ -1167,7 +1167,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:decentralized-exchange",
-        "label": "Decentralised Exchange"
+        "label": "Decentralized Exchange"
       },
       {
         "@id": "urn:ngm:class:micropayment-infrastructure",

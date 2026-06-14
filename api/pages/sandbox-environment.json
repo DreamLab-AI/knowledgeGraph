@@ -9,7 +9,7 @@
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-computing-and-cloud",
-      "label": "Infrastructure Computing and Cloud"
+      "label": "Computing and Cloud"
     }
   ],
   "entityType": "Class",
@@ -30,7 +30,7 @@
     "relatedTo": [
       {
         "id": "urn:ngm:class:gpt-engineer",
-        "label": "GPT-Engineer"
+        "label": "GPT Engineer"
       },
       {
         "id": "urn:ngm:class:cli-multi-agent-systems",

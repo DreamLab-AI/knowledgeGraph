@@ -60,7 +60,7 @@ elevatedFrom:: [[Tokenisation]]
       {"@id": "urn:ngm:class:text-preprocessing", "label": "Text Preprocessing"}
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:byte-pair-encoding", "label": "Byte-Pair Encoding"},
+      {"@id": "urn:ngm:class:byte-pair-encoding", "label": "Byte Pair Encoding"},
       {"@id": "urn:ngm:class:wordpiece-tokenisation", "label": "WordPiece Tokenisation"},
       {"@id": "urn:ngm:class:sentencepiece-tokenisation", "label": "SentencePiece Tokenisation"},
       {"@id": "urn:ngm:class:subword-tokenisation", "label": "Subword Tokenisation"}

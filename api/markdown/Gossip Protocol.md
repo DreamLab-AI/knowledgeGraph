@@ -71,7 +71,7 @@ public:: true
   "maturity": "established",
   "subClassOf": {
     "@id": "urn:ngm:class:infra-network-and-comms",
-    "label": "Infra Network And Comms"
+    "label": "Network and Communication"
   },
   "relations": {
     "implements": [
@@ -81,7 +81,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:network-component",
-        "label": "NetworkComponent"
+        "label": "Network Component"
       },
       {
         "@id": "urn:ngm:class:eventual-consistency",
@@ -139,7 +139,7 @@ public:: true
     "uses": [
       {
         "@id": "urn:ngm:class:network-component",
-        "label": "NetworkComponent"
+        "label": "Network Component"
       },
       {
         "@id": "urn:ngm:class:probabilistic-broadcast",
@@ -179,7 +179,7 @@ public:: true
     "bridgesTo": [
       {
         "@id": "urn:ngm:class:security-layer",
-        "label": "SecurityLayer"
+        "label": "Security Layer"
       },
       {
         "@id": "urn:ngm:class:federated-learning",

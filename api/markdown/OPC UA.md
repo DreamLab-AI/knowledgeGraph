@@ -39,14 +39,14 @@ alias:: OPC-UA
       {"@id": "urn:ngm:class:tcp-ip", "label": "TCP/IP"}
     ],
     "enables": [
-      {"@id": "urn:ngm:class:industrial-automation", "label": "Industrial Automation"},
+      {"@id": "urn:ngm:class:industrial-automation", "label": "IndustrialAutomation"},
       {"@id": "urn:ngm:class:industrial-io-t", "label": "Industrial IoT"},
       {"@id": "urn:ngm:class:real-time-monitoring", "label": "Real-Time Monitoring"},
       {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
       {"@id": "urn:ngm:class:smart-manufacturing", "label": "Smart Manufacturing"}
     ],
     "implements": [
-      {"@id": "urn:ngm:class:service-oriented-architecture", "label": "Service-Oriented Architecture"},
+      {"@id": "urn:ngm:class:service-oriented-architecture", "label": "Service Oriented Architecture"},
       {"@id": "urn:ngm:class:publish-subscribe-pattern", "label": "Publish-Subscribe Pattern"}
     ],
     "uses": [

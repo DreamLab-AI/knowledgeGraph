@@ -13,7 +13,7 @@
     },
     {
       "id": "urn:ngm:class:bc-defi-and-economics",
-      "label": "BC DeFi And Economics"
+      "label": "DeFi and Economics"
     }
   ],
   "entityType": "Class",
@@ -229,7 +229,7 @@
       },
       {
         "id": "urn:ngm:class:real-world-asset-tokenisation",
-        "label": "Real World Asset Tokenisation"
+        "label": "Real-World Asset Tokenisation"
       },
       {
         "id": "urn:ngm:class:spot-bitcoin-etf",

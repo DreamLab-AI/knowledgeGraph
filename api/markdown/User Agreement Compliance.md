@@ -153,7 +153,7 @@ public:: true
     "requires": [
       {
         "@id": "urn:ngm:class:enforcement-mechanism",
-        "label": "Enforcement Mechanisms"
+        "label": "Enforcement Mechanism"
       },
       {
         "@id": "urn:ngm:class:monitoring-system",

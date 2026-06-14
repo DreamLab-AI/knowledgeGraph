@@ -27,7 +27,7 @@ public:: true
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:consortium-blockchain", "label": "Consortium Blockchain"},
-      {"@id": "urn:ngm:class:blockchain-as-a-service", "label": "Blockchain as a Service"},
+      {"@id": "urn:ngm:class:blockchain-as-a-service", "label": "Blockchain As A Service"},
       {"@id": "urn:ngm:class:byzantine-fault-tolerance", "label": "Byzantine Fault Tolerance"}
     ]
   },

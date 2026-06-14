@@ -33,7 +33,7 @@ public:: true
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-network-and-comms",
-      "label": "Infra Network And Comms"
+      "label": "Network and Communication"
     }
   ],
   "relations": {
@@ -48,7 +48,7 @@ public:: true
       {"@id": "urn:ngm:class:live-notifications", "label": "Live Notifications"}
     ],
     "implements": [
-      {"@id": "urn:ngm:class:event-driven-architecture", "label": "Event-Driven Architecture"},
+      {"@id": "urn:ngm:class:event-driven-architecture", "label": "Event Driven Architecture"},
       {"@id": "urn:ngm:class:publish-subscribe-pattern", "label": "Publish-Subscribe Pattern"}
     ],
     "uses": [

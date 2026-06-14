@@ -35,7 +35,7 @@
     "uses": [
       {
         "id": "urn:ngm:class:mixed-precision-training",
-        "label": "Mixed-Precision Training"
+        "label": "Mixed Precision Training"
       },
       {
         "id": "urn:ngm:class:gradient-checkpointing",

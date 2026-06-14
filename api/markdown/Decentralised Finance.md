@@ -34,7 +34,7 @@ alias:: DecentralisedFinance
   "subClassOf": [
     {
       "@id": "urn:ngm:class:bc-defi-and-economics",
-      "label": "BC DeFi and Economics"
+      "label": "DeFi and Economics"
     }
   ],
   "sameAs": [

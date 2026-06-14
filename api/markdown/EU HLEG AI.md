@@ -134,7 +134,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:privacy-by-design",
-        "label": "Privacy by Design"
+        "label": "Privacy By Design"
       },
       {
         "@id": "urn:ngm:class:explainable-ai",
@@ -148,7 +148,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:nist-ai-rmf",
-        "label": "NIST AI Risk Management Framework"
+        "label": "NIST AI RMF"
       }
     ],
     "bridgesTo": [

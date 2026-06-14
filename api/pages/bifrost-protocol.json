@@ -9,7 +9,7 @@
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-protocol-and-consensus",
-      "label": "Blockchain Protocol and Consensus"
+      "label": "Protocol and Consensus"
     }
   ],
   "entityType": "Class",
@@ -30,7 +30,7 @@
     "relatedTo": [
       {
         "id": "urn:ngm:class:rgb-and-client-side-validation",
-        "label": "RGB and Client-Side Validation"
+        "label": "RGB and Client Side Validation"
       }
     ]
   },

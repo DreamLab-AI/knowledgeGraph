@@ -42,7 +42,7 @@ alias:: Cryptographic Hash Functions
       {"@id": "urn:ngm:class:merkle-tree", "label": "Merkle Tree"},
       {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"},
       {"@id": "urn:ngm:class:message-authentication-code", "label": "Message Authentication Code"},
-      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof of Work"},
+      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"},
       {"@id": "urn:ngm:class:commitment-scheme", "label": "Commitment Scheme"},
       {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"}
     ],

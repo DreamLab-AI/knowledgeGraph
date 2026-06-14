@@ -42,7 +42,7 @@
       },
       {
         "id": "urn:ngm:class:decentralised-decision-making",
-        "label": "Decentralised Decision-making"
+        "label": "Decentralised Decision-Making"
       }
     ],
     "dependsOn": [],
@@ -63,11 +63,11 @@
     "contrastsWith": [
       {
         "id": "urn:ngm:class:proof-of-work",
-        "label": "Proof of Work"
+        "label": "Proof Of Work"
       },
       {
         "id": "urn:ngm:class:longest-chain-rule",
-        "label": "Longest-chain Rule"
+        "label": "Longest Chain Rule"
       }
     ],
     "bridgesTo": [
@@ -109,7 +109,7 @@
       },
       {
         "id": "urn:ngm:class:multi-signature-wallet",
-        "label": "Multi-signature Wallet"
+        "label": "Multi-Signature Wallet"
       },
       {
         "id": "urn:ngm:class:treasury-management",

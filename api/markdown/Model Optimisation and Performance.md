@@ -367,7 +367,7 @@ public:: true
     "hasPart": [
       {
         "@id": "urn:ngm:class:flash-attention",
-        "label": "FlashAttention"
+        "label": "Flash Attention"
       },
       {
         "@id": "urn:ngm:class:gguf-format",
@@ -399,7 +399,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:mixture-of-experts-architecture",
-        "label": "Mixture of Experts"
+        "label": "Mixture-of-Experts Architecture"
       }
     ],
     "requires": [
@@ -413,7 +413,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:floating-point-arithmetic",
-        "label": "Floating Point Arithmetic"
+        "label": "Floating-Point Arithmetic"
       },
       {
         "@id": "urn:ngm:class:gpu-compute",
@@ -531,7 +531,7 @@ public:: true
     "supports": [
       {
         "@id": "urn:ngm:class:autonomous-system",
-        "label": "Autonomous Systems"
+        "label": "Autonomous System"
       },
       {
         "@id": "urn:ngm:class:code-generation",

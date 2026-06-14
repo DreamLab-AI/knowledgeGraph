@@ -33,7 +33,7 @@ public:: true
       {"@id": "urn:ngm:class:human-factors", "label": "Human Factors"}
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human-Computer Interaction"}
+      {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human Computer Interaction"}
     ],
     "contrastsWith": [
       {"@id": "urn:ngm:class:sociotechnical-harm", "label": "Sociotechnical Harm"}

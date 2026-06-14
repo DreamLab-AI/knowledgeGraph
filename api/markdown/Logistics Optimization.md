@@ -501,7 +501,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:io-t-sensors",
-        "label": "IoT Sensors"
+        "label": "Io T Sensors"
       },
       {
         "@id": "urn:ngm:class:reinforcement-learning",
@@ -621,7 +621,7 @@ public:: true
     "relatedTo": [
       {
         "@id": "urn:ngm:class:autonomous-vehicle",
-        "label": "Autonomous Vehicles"
+        "label": "Autonomous Vehicle"
       },
       {
         "@id": "urn:ngm:class:io-t-integration",
@@ -715,7 +715,7 @@ public:: true
     "bridgesTo": [
       {
         "@id": "urn:ngm:class:infra-data-management",
-        "label": "Infra Data Management"
+        "label": "Data Management"
       }
     ]
   },

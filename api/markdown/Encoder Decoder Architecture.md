@@ -154,7 +154,7 @@ public:: true
     "uses": [
       {
         "@id": "urn:ngm:class:multi-head-attention",
-        "label": "Multi Head Attention"
+        "label": "Multi-Head Attention"
       },
       {
         "@id": "urn:ngm:class:softmax-function",

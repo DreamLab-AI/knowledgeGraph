@@ -108,7 +108,7 @@ public:: true
     },
     {
       "@id": "urn:ngm:class:sc-interaction",
-      "label": "SC Interaction"
+      "label": "Interaction Technology"
     }
   ],
   "relations": {

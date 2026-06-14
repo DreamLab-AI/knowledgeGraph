@@ -62,7 +62,7 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:chinese-seal-art-ai-classification-pipeline", "label": "Seals"},
+      {"@id": "urn:ngm:class:chinese-seal-art-ai-classification-pipeline", "label": "Chinese Seal Art AI Classification Pipeline"},
       {"@id": "urn:ngm:class:pressure-sensor", "label": "Pressure Sensor"}
     ],
     "requires": [

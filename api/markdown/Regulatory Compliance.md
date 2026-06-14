@@ -113,7 +113,7 @@ alias:: BC-0479-regulatory-compliance, RegulatoryCompliance
     },
     {
       "@id": "urn:ngm:class:ai-governance-principle",
-      "label": "AI Governance Principle"
+      "label": "Ai Governance Principle"
     }
   ],
   "relations": {

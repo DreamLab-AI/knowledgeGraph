@@ -671,7 +671,7 @@ public:: true
     "bridgesTo": [
       {
         "@id": "urn:ngm:class:infra-software-engineering",
-        "label": "Infra Software Engineering"
+        "label": "Software Engineering"
       },
       {
         "@id": "urn:ngm:class:design-thinking",

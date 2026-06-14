@@ -9,7 +9,7 @@
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-network-and-comms",
-      "label": "Network and Communications"
+      "label": "Network and Communication"
     }
   ],
   "entityType": "Class",
@@ -42,11 +42,11 @@
       },
       {
         "id": "urn:ngm:class:telemetry-and-analytics",
-        "label": "Telemetry and Analytics"
+        "label": "Telemetry & Analytics"
       },
       {
         "id": "urn:ngm:class:event-driven-architecture",
-        "label": "Event-Driven Architecture"
+        "label": "Event Driven Architecture"
       }
     ],
     "dependsOn": [

@@ -68,7 +68,7 @@ public:: true
     ],
     "requires": [
       {"@id": "urn:ngm:class:research-funding", "label": "Research Funding"},
-      {"@id": "urn:ngm:class:high-performance-computing", "label": "High Performance Computing"}
+      {"@id": "urn:ngm:class:high-performance-computing", "label": "High-Performance Computing"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:technology-transfer", "label": "Technology Transfer"},

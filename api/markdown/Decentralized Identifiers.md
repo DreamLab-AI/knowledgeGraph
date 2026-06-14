@@ -936,7 +936,7 @@ alias:: BC-0457-decentralized-identifiers
       },
       {
         "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
-        "label": "Public Key Cryptography"
+        "label": "Public-Key Cryptography"
       },
       {
         "@id": "urn:ngm:class:verifiable-data-registry",
@@ -962,7 +962,7 @@ alias:: BC-0457-decentralized-identifiers
       },
       {
         "@id": "urn:ngm:class:self-sovereign-identity",
-        "label": "Self-Sovereign Identity"
+        "label": "Self Sovereign Identity"
       },
       {
         "@id": "urn:ngm:class:verifiable-credentials",
@@ -1056,7 +1056,7 @@ alias:: BC-0457-decentralized-identifiers
       },
       {
         "@id": "urn:ngm:class:trust-over-ip-foundation",
-        "label": "Trust over IP Foundation"
+        "label": "Trust Over IP Foundation"
       },
       {
         "@id": "urn:ngm:class:digital-identity-wallet",
@@ -1068,7 +1068,7 @@ alias:: BC-0457-decentralized-identifiers
       },
       {
         "@id": "urn:ngm:class:self-sovereign-identity",
-        "label": "Self-Sovereign Identity"
+        "label": "Self Sovereign Identity"
       },
       {
         "@id": "urn:ngm:class:verifiable-credentials",
@@ -1128,7 +1128,7 @@ alias:: BC-0457-decentralized-identifiers
       },
       {
         "@id": "urn:ngm:class:trust-over-ip-foundation",
-        "label": "Trust over IP Foundation"
+        "label": "Trust Over IP Foundation"
       },
       {
         "@id": "urn:ngm:class:w-3-c-did-working-group",

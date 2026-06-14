@@ -13,7 +13,7 @@
     },
     {
       "id": "urn:ngm:class:autonomous-system",
-      "label": "Autonomous Systems"
+      "label": "Autonomous System"
     }
   ],
   "entityType": "Class",
@@ -35,7 +35,7 @@
       },
       {
         "id": "urn:ngm:class:power-systems",
-        "label": "Power System"
+        "label": "Power Systems"
       },
       {
         "id": "urn:ngm:class:safety-system",
@@ -146,7 +146,7 @@
       },
       {
         "id": "urn:ngm:class:whole-body-control",
-        "label": "Whole-Body Control"
+        "label": "Whole Body Control"
       }
     ],
     "contrastsWith": [],
@@ -262,7 +262,7 @@
       },
       {
         "id": "urn:ngm:class:human-robot-interaction",
-        "label": "Human-Robot Interaction"
+        "label": "Human Robot Interaction"
       }
     ]
   },

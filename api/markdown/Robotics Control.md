@@ -79,14 +79,14 @@ public:: true
       {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
       {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
       {"@id": "urn:ngm:class:imitation-learning", "label": "Imitation Learning"},
-      {"@id": "urn:ngm:class:pid-controller", "label": "PID Controller"},
+      {"@id": "urn:ngm:class:pid-controller", "label": "Pid Controller"},
       {"@id": "urn:ngm:class:kinematics", "label": "Kinematics"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"},
       {"@id": "urn:ngm:class:autonomous-robot", "label": "Autonomous Robot"},
       {"@id": "urn:ngm:class:robot-manipulation", "label": "Robot Manipulation"},
-      {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human-Robot Interaction"}
+      {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human Robot Interaction"}
     ],
     "dependsOn": [
       {"@id": "urn:ngm:class:state-estimation", "label": "State Estimation"},
@@ -102,7 +102,7 @@ public:: true
     ],
     "bridgesTo": [
       {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
-      {"@id": "urn:ngm:class:cyber-physical-systems", "label": "Cyber-Physical Systems"}
+      {"@id": "urn:ngm:class:cyber-physical-systems", "label": "Cyber Physical Systems"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:sim-to-real-transfer", "label": "Sim-to-Real Transfer"},

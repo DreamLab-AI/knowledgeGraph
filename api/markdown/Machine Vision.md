@@ -131,7 +131,7 @@ public:: true
     "supports": [
       {
         "@id": "urn:ngm:class:industrial-automation",
-        "label": "Industrial Automation"
+        "label": "IndustrialAutomation"
       },
       {
         "@id": "urn:ngm:class:quality-control",

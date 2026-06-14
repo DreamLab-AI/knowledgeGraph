@@ -33,7 +33,7 @@ public:: true
   "subClassOf": [
     {
       "@id": "urn:ngm:class:robo-navigation-and-planning",
-      "label": "Robo Navigation and Planning"
+      "label": "Navigation and Planning"
     }
   ],
   "relations": {
@@ -52,10 +52,10 @@ public:: true
     ],
     "uses": [
       {"@id": "urn:ngm:class:model-predictive-control", "label": "Model Predictive Control"},
-      {"@id": "urn:ngm:class:whole-body-control", "label": "Whole-Body Control"},
+      {"@id": "urn:ngm:class:whole-body-control", "label": "Whole Body Control"},
       {"@id": "urn:ngm:class:quadratic-programming", "label": "Quadratic Programming"},
       {"@id": "urn:ngm:class:inertial-measurement-unit", "label": "Inertial Measurement Unit"},
-      {"@id": "urn:ngm:class:lidar", "label": "LiDAR"}
+      {"@id": "urn:ngm:class:lidar", "label": "Lidar"}
     ],
     "hasPart": [
       {"@id": "urn:ngm:class:gait-planning", "label": "Gait Planning"},

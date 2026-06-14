@@ -23,7 +23,7 @@ public:: true
   "definition": "User monitoring is the observation and logging of user behaviour and interactions within a platform to detect policy violations, abuse, safety risks or anomalous activity. In metaverse and online environments it supports trust-and-safety enforcement and agreement compliance, balancing protective oversight against privacy and consent. It typically feeds moderation, incident response and compliance reporting workflows.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:sc-governance-and-safety", "label": "Metaverse Governance and Safety"}],
+  "subClassOf": [{"@id": "urn:ngm:class:sc-governance-and-safety", "label": "Governance and Safety"}],
   "relations": {
     "relatedTo": [{"@id": "urn:ngm:class:metaverse-safety-protocol", "label": "Metaverse Safety Protocol"}, {"@id": "urn:ngm:class:user-agreement-compliance", "label": "User Agreement Compliance"}]
   },

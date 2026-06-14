@@ -513,7 +513,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:proof-of-work-energy-consumption",
-        "label": "Proof of Work Energy Consumption"
+        "label": "Proof-of-Work Energy Consumption"
       },
       {
         "@id": "urn:ngm:class:stranded-energy-monetisation",
@@ -643,7 +643,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:e-waste",
-        "label": "E-waste"
+        "label": "E-Waste"
       },
       {
         "@id": "urn:ngm:class:energy-markets",
@@ -671,7 +671,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:proof-of-work",
-        "label": "Proof of Work"
+        "label": "Proof Of Work"
       },
       {
         "@id": "urn:ngm:class:sustainability",
@@ -723,7 +723,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:mi-ca-regulation",
-        "label": "EU MiCA Regulation"
+        "label": "MiCA Regulation"
       }
     ]
   },

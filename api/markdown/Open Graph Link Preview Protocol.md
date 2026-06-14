@@ -48,10 +48,10 @@ elevatedFrom:: [[Link Preview]]
     "relatedTo": [
       {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
       {"@id": "urn:ngm:class:user-interface", "label": "User Interface"},
-      {"@id": "urn:ngm:class:social-media-platform-infrastructure", "label": "social media"}
+      {"@id": "urn:ngm:class:social-media-platform-infrastructure", "label": "Social Media Platform Infrastructure"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:semantic-web-linked-data-standard", "label": "Semantic Web"}
+      {"@id": "urn:ngm:class:semantic-web-linked-data-standard", "label": "Semantic Web Linked Data Standard"}
     ]
   },
   "quality": 0.35,

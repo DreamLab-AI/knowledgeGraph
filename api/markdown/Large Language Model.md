@@ -68,13 +68,13 @@ public:: true
       {"@id": "urn:ngm:class:mixture-of-experts", "label": "Mixture of Experts"},
       {"@id": "urn:ngm:class:quantisation", "label": "Quantisation"},
       {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},
-      {"@id": "urn:ngm:class:constitutional-ai-training-methodology", "label": "Constitutional AI"},
+      {"@id": "urn:ngm:class:constitutional-ai-training-methodology", "label": "Constitutional AI Training Methodology"},
       {"@id": "urn:ngm:class:hallucination", "label": "Hallucination"}
     ],
     "bridgesTo": [
       {"@id": "urn:ngm:class:multi-agent-system", "label": "Multi-Agent System"},
       {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
-      {"@id": "urn:ngm:class:eu-ai-act-regulatory-instrument", "label": "EU AI Act"}
+      {"@id": "urn:ngm:class:eu-ai-act-regulatory-instrument", "label": "EU AI Act Regulatory Instrument"}
     ]
   },
   "quality": 0.74,

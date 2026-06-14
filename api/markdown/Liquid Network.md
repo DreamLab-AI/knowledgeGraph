@@ -68,13 +68,13 @@ public:: true
   "qualityScore": 0.7,
   "subClassOf": {
     "@id": "urn:ngm:class:blockchain",
-    "label": "Blockchain Domain"
+    "label": "Blockchain"
   },
   "relations": {
     "requires": [
       {
         "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol",
-        "label": "Bitcoin"
+        "label": "Bitcoin Proof-of-Work Protocol"
       },
       {
         "@id": "urn:ngm:class:federation",
@@ -160,7 +160,7 @@ public:: true
     "bridgesTo": [
       {
         "@id": "urn:ngm:class:digital-asset",
-        "label": "Digital Asset Domain"
+        "label": "Digital Asset"
       },
       {
         "@id": "urn:ngm:class:institutional-finance",

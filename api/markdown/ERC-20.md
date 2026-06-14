@@ -75,7 +75,7 @@ public:: true
       {"@id": "urn:ngm:class:token-approval", "label": "Token Approval"}
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:on-chain-governance", "label": "On-Chain Governance"},
+      {"@id": "urn:ngm:class:on-chain-governance", "label": "On-chain Governance"},
       {"@id": "urn:ngm:class:tokenisation", "label": "Tokenisation"}
     ]
   },

@@ -57,7 +57,7 @@ alias:: Real Time Operating System
     "supports": [
       {"@id": "urn:ngm:class:robotic-system", "label": "Robotic System"},
       {"@id": "urn:ngm:class:motor-driver", "label": "Motor Driver"},
-      {"@id": "urn:ngm:class:industrial-automation", "label": "Industrial Automation"},
+      {"@id": "urn:ngm:class:industrial-automation", "label": "IndustrialAutomation"},
       {"@id": "urn:ngm:class:internet-of-things", "label": "Internet of Things"}
     ],
     "relatedTo": [
@@ -72,7 +72,7 @@ alias:: Real Time Operating System
     ],
     "bridgesTo": [
       {"@id": "urn:ngm:class:edge-ai", "label": "Edge AI"},
-      {"@id": "urn:ngm:class:cyber-physical-systems", "label": "Cyber-Physical Systems"}
+      {"@id": "urn:ngm:class:cyber-physical-systems", "label": "Cyber Physical Systems"}
     ]
   },
   "sameAs": [

@@ -480,7 +480,7 @@ public:: true
     },
     {
       "@id": "urn:ngm:class:infra-security-and-identity",
-      "label": "Infra Security And Identity"
+      "label": "Security and Identity"
     }
   ],
   "relations": {
@@ -667,7 +667,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning"
+        "label": "Machine Learning Discipline"
       }
     ],
     "relatedTo": [
@@ -681,7 +681,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:third-party-risk-management",
-        "label": "Third Party Risk Management"
+        "label": "Third-Party Risk Management"
       },
       {
         "@id": "urn:ngm:class:access-control-system",
@@ -727,7 +727,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:third-party-risk-management",
-        "label": "Third Party Risk Management"
+        "label": "Third-Party Risk Management"
       },
       {
         "@id": "urn:ngm:class:aml-kyc-compliance",

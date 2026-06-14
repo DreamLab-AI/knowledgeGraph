@@ -26,7 +26,7 @@ public:: true
   "subClassOf": [{"@id": "urn:ngm:class:optimisation", "label": "Optimisation"}],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:robo-actuation-and-control", "label": "Manufacturing Domain"},
+      {"@id": "urn:ngm:class:robo-actuation-and-control", "label": "Actuation and Control"},
       {"@id": "urn:ngm:class:digital-transformation", "label": "Digital Transformation"}
     ]
   },

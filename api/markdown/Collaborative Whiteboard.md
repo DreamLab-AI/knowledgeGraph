@@ -400,11 +400,11 @@ public:: true
     },
     {
       "@id": "urn:ngm:class:dc-communication",
-      "label": "DC Communication"
+      "label": "Communication Technology"
     },
     {
       "@id": "urn:ngm:class:dc-communication",
-      "label": "DC Communication"
+      "label": "Communication Technology"
     }
   ],
   "relations": {
@@ -467,7 +467,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:voting-systems",
-        "label": "Voting System"
+        "label": "Voting Systems"
       },
       {
         "@id": "urn:ngm:class:crdt",
@@ -569,7 +569,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:or-set",
-        "label": "OR Set"
+        "label": "OR-Set"
       },
       {
         "@id": "urn:ngm:class:vector-graphics",
@@ -615,7 +615,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:json-data-interchange-format",
-        "label": "JSON"
+        "label": "JSON Data Interchange Format"
       },
       {
         "@id": "urn:ngm:class:large-language-models",

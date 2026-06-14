@@ -46,11 +46,11 @@
       },
       {
         "id": "urn:ngm:class:real-time-analytics",
-        "label": "Real-time Analytics"
+        "label": "Real-Time Analytics"
       },
       {
         "id": "urn:ngm:class:event-driven-architecture",
-        "label": "Event-Driven Architecture"
+        "label": "Event Driven Architecture"
       },
       {
         "id": "urn:ngm:class:complex-event-processing",

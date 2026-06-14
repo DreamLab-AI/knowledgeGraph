@@ -50,7 +50,7 @@ public:: true
     "enables": [
       {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"},
       {"@id": "urn:ngm:class:blockchain-interoperability", "label": "Blockchain Interoperability"},
-      {"@id": "urn:ngm:class:cross-chain-asset-transfer", "label": "Cross-Chain Asset Transfer"},
+      {"@id": "urn:ngm:class:cross-chain-asset-transfer", "label": "Cross Chain Asset Transfer"},
       {"@id": "urn:ngm:class:micropayment", "label": "Micropayment"},
       {"@id": "urn:ngm:class:gas-optimisation", "label": "Gas Optimisation"}
     ],

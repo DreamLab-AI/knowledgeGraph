@@ -67,7 +67,7 @@ public:: true
     "enables": [
       {
         "@id": "urn:ngm:class:shared-ar-experiences",
-        "label": "Shared AR Experiences"
+        "label": "Shared Ar Experiences"
       }
     ]
   },

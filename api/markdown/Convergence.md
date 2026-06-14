@@ -383,7 +383,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:quantum-computation-paradigm",
-        "label": "Quantum Computing"
+        "label": "Quantum Computation Paradigm"
       },
       {
         "@id": "urn:ngm:class:spatial-computing",
@@ -397,7 +397,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:interoperability-protocol",
-        "label": "Interoperability Protocols"
+        "label": "Interoperability Protocol"
       },
       {
         "@id": "urn:ngm:class:moore-s-law",
@@ -405,7 +405,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:open-standard",
-        "label": "Open Standards"
+        "label": "Open Standard"
       },
       {
         "@id": "urn:ngm:class:regulatory-coordination",
@@ -415,7 +415,7 @@ public:: true
     "enables": [
       {
         "@id": "urn:ngm:class:autonomous-system",
-        "label": "Autonomous Systems"
+        "label": "Autonomous System"
       },
       {
         "@id": "urn:ngm:class:embodied-ai",
@@ -479,11 +479,11 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:large-scale-pretrained-foundation-model",
-        "label": "Foundation Models"
+        "label": "Large-Scale Pretrained Foundation Model"
       },
       {
         "@id": "urn:ngm:class:quantum-computation-paradigm",
-        "label": "Quantum Computing"
+        "label": "Quantum Computation Paradigm"
       }
     ],
     "relatedTo": [
@@ -553,7 +553,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
-        "label": "EU AI Act"
+        "label": "EU AI Act Regulatory Instrument"
       }
     ]
   },

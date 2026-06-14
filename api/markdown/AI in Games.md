@@ -442,7 +442,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:behaviour-tree",
-        "label": "Behaviour Trees"
+        "label": "Behaviour Tree"
       },
       {
         "@id": "urn:ngm:class:finite-state-machine",

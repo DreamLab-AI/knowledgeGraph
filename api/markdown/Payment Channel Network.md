@@ -23,7 +23,7 @@ public:: true
   "definition": "A Payment Channel Network is a layer-2 scaling architecture in which participants open bilateral payment channels and route payments across a graph of connected channels without settling each transaction on the underlying blockchain. Funds are locked in multisignature channels, and balances update off-chain through signed state, with only channel opening and closing recorded on-chain. This enables high-throughput, low-fee, near-instant payments while inheriting base-layer security.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:bc-network-component", "label": "Blockchain Network Component"}],
+  "subClassOf": [{"@id": "urn:ngm:class:bc-network-component", "label": "Network Component"}],
   "relations": {
     "relatedTo": [{"@id": "urn:ngm:class:lightning-network", "label": "Lightning Network"}]
   },

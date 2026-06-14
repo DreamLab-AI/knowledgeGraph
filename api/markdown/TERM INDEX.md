@@ -78,9 +78,9 @@ public:: true
       {"@id": "urn:ngm:class:sparql", "label": "SPARQL"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:semantic-web-linked-data-standard", "label": "Semantic Web"},
+      {"@id": "urn:ngm:class:semantic-web-linked-data-standard", "label": "Semantic Web Linked Data Standard"},
       {"@id": "urn:ngm:class:linked-data", "label": "Linked Data"},
-      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse Domain"}
+      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"}
     ]
   },
   "provenance": {

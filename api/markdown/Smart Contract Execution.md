@@ -68,7 +68,7 @@ public:: true
     ],
     "supports": [
       {"@id": "urn:ngm:class:formal-verification", "label": "Formal Verification"},
-      {"@id": "urn:ngm:class:layer-2-scaling", "label": "Layer-2 Scaling"},
+      {"@id": "urn:ngm:class:layer-2-scaling", "label": "Layer 2 Scaling"},
       {"@id": "urn:ngm:class:oracle-network", "label": "Oracle Network"}
     ],
     "contrastsWith": [
@@ -82,7 +82,7 @@ public:: true
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:smart-contract-audit", "label": "Smart Contract Audit"},
-      {"@id": "urn:ngm:class:mev", "label": "Maximal Extractable Value"},
+      {"@id": "urn:ngm:class:mev", "label": "MEV"},
       {"@id": "urn:ngm:class:inter-blockchain-communication", "label": "Inter-Blockchain Communication"}
     ]
   },

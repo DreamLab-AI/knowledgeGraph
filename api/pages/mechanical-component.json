@@ -75,7 +75,7 @@
       },
       {
         "id": "urn:ngm:class:end-effector",
-        "label": "End-Effector"
+        "label": "End Effector"
       }
     ],
     "requires": [
@@ -189,7 +189,7 @@
     "bridgesTo": [
       {
         "id": "urn:ngm:class:infra-software-engineering",
-        "label": "Infra Software Engineering"
+        "label": "Software Engineering"
       }
     ],
     "uses": [
@@ -233,11 +233,11 @@
     "supports": [
       {
         "id": "urn:ngm:class:collaborative-systems-modality-robot",
-        "label": "Collaborative Robots"
+        "label": "Collaborative Robot"
       },
       {
         "id": "urn:ngm:class:humanoid-robot",
-        "label": "Humanoid Robots"
+        "label": "Humanoid Robot"
       },
       {
         "id": "urn:ngm:class:industrial-manipulators",

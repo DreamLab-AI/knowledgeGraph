@@ -86,7 +86,7 @@ alias:: block-height
     },
     {
       "@id": "urn:ngm:class:distributed-data-structure",
-      "label": "DistributedDataStructure"
+      "label": "Distributed Data Structure"
     }
   ],
   "relations": {

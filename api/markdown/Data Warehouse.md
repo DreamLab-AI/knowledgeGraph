@@ -23,7 +23,7 @@ public:: true
   "definition": "A data warehouse is a centralised analytical repository that integrates cleansed, structured data from multiple operational sources into a subject-oriented, historical model optimised for querying and reporting. It supports business intelligence through schemas such as star and snowflake and columnar storage for fast aggregation. It is a core data-engineering asset enabling consistent enterprise analytics.",
   "domain": "data",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:infra-data-management", "label": "Infrastructure Data Management"}],
+  "subClassOf": [{"@id": "urn:ngm:class:infra-data-management", "label": "Data Management"}],
   "relations": {
     "hasPart": [
       {"@id": "urn:ngm:class:etl-pipeline", "label": "ETL Pipeline"},

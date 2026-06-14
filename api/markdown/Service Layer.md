@@ -121,7 +121,7 @@ alias:: ServiceLayer
     },
     {
       "@id": "urn:ngm:class:spatial-computing",
-      "label": "Spatial Computing Layer"
+      "label": "Spatial Computing"
     }
   ],
   "relations": {

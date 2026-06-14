@@ -76,7 +76,7 @@ public:: true
   "qualityScore": 0.7,
   "subClassOf": {
     "@id": "urn:ngm:class:infra-data-management",
-    "label": "Infra Data Management"
+    "label": "Data Management"
   },
   "relations": {
     "hasPart": [
@@ -108,7 +108,7 @@ public:: true
     "requires": [
       {
         "@id": "urn:ngm:class:distributed-systems",
-        "label": "Distributed Systems Domain"
+        "label": "Distributed Systems"
       },
       {
         "@id": "urn:ngm:class:data-modelling",
@@ -122,7 +122,7 @@ public:: true
     "enables": [
       {
         "@id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Domain"
+        "label": "Machine Learning Discipline"
       },
       {
         "@id": "urn:ngm:class:business-intelligence",

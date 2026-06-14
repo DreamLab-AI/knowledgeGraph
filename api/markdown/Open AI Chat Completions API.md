@@ -25,7 +25,7 @@ public:: true
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:ai-infrastructure", "label": "AI Infrastructure"}],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:open-generative-ai-tools", "label": "Open Generative AI Tools"}]
+    "relatedTo": [{"@id": "urn:ngm:class:open-generative-ai-tools", "label": "Open Generative AI tools"}]
   },
   "quality": 0.72
 }

@@ -23,7 +23,7 @@ public:: true
   "definition": "Scalable deployment is the practice of releasing and operating software so that capacity can grow or shrink with demand without redesign. It relies on stateless services, horizontal scaling, load balancing, container orchestration, and infrastructure-as-code to add resources elastically. It is essential for systems such as digital twins that must serve fluctuating workloads reliably.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:infra-computing-and-cloud", "label": "Infrastructure Computing and Cloud"}],
+  "subClassOf": [{"@id": "urn:ngm:class:infra-computing-and-cloud", "label": "Computing and Cloud"}],
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:digital-twin-infrastructure", "label": "Digital Twin Infrastructure"},

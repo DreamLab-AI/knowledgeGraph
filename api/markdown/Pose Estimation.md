@@ -477,7 +477,7 @@ alias:: PoseEstimation
     },
     {
       "@id": "urn:ngm:class:human-computer-interaction",
-      "label": "Human-Computer Interaction"
+      "label": "Human Computer Interaction"
     }
   ],
   "relations": {
@@ -526,7 +526,7 @@ alias:: PoseEstimation
       },
       {
         "@id": "urn:ngm:class:convolutional-neural-network",
-        "label": "Convolutional Neural Networks"
+        "label": "Convolutional Neural Network"
       },
       {
         "@id": "urn:ngm:class:image-features",
@@ -684,7 +684,7 @@ alias:: PoseEstimation
       },
       {
         "@id": "urn:ngm:class:autonomous-vehicle",
-        "label": "Autonomous Vehicles"
+        "label": "Autonomous Vehicle"
       },
       {
         "@id": "urn:ngm:class:clinical-gait-analysis",

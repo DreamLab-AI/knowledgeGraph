@@ -1482,7 +1482,7 @@ public:: true
   "qualityScore": 0.7,
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:intellectual-property-rights-framework", "label": "copyright"},
+      {"@id": "urn:ngm:class:intellectual-property-rights-framework", "label": "Intellectual Property Rights Framework"},
       {"@id": "urn:ngm:class:ai-regulation", "label": "AI Regulation"},
       {"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"}
     ],

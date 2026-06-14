@@ -17,7 +17,7 @@
     },
     {
       "id": "urn:ngm:class:economic-mechanism",
-      "label": "EconomicMechanism"
+      "label": "Economic Mechanism"
     }
   ],
   "entityType": "Class",
@@ -55,7 +55,7 @@
     "partOf": [
       {
         "id": "urn:ngm:class:token-economics",
-        "label": "Token Economics Domain"
+        "label": "Token Economics"
       }
     ],
     "relatedTo": [

@@ -61,7 +61,7 @@ elevatedFrom:: [[Disruption]]
     "relatedTo": [
       {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
       {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
-      {"@id": "urn:ngm:class:decentralised-agentic-infrastructure-stack", "label": "Emerging tech stack"}
+      {"@id": "urn:ngm:class:decentralised-agentic-infrastructure-stack", "label": "Decentralised Agentic Infrastructure Stack"}
     ],
     "contrastsWith": [
       {"@id": "urn:ngm:class:supply-chain-management", "label": "Supply Chain Management"}

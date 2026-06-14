@@ -51,7 +51,7 @@ elevatedFrom:: [[Tax]]
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:uk-company-financial-filing-obligations", "label": "Accounts"},
+      {"@id": "urn:ngm:class:uk-company-financial-filing-obligations", "label": "UK Company Financial Filing Obligations"},
       {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}
     ],
     "relatedTo": [

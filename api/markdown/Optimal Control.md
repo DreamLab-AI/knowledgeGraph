@@ -210,7 +210,7 @@ alias:: RB-1003-optimal-control
       },
       {
         "@id": "urn:ngm:class:pid-controller",
-        "label": "PID Controller"
+        "label": "Pid Controller"
       }
     ],
     "bridgesTo": [

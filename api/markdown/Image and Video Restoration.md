@@ -521,7 +521,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:computer-vision-video-analysis",
-        "label": "Video Processing"
+        "label": "Computer Vision Video Analysis"
       }
     ],
     "supports": [

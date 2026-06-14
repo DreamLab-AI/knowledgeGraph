@@ -161,7 +161,7 @@ public:: true
     "requires": [
       {
         "@id": "urn:ngm:class:identity-systems",
-        "label": "Identity System"
+        "label": "Identity Systems"
       },
       {
         "@id": "urn:ngm:class:payment-gateway",
@@ -187,7 +187,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:multi-party-royalties",
-        "label": "Multi-Party Royalties"
+        "label": "Multi Party Royalties"
       },
       {
         "@id": "urn:ngm:class:transparent-revenue-sharing",

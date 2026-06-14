@@ -30,7 +30,7 @@
     "relatedTo": [
       {
         "id": "urn:ngm:class:multi-sig-governance",
-        "label": "Multi-Sig Governance"
+        "label": "Multi Sig Governance"
       },
       {
         "id": "urn:ngm:class:custody-infrastructure",

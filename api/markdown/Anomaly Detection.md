@@ -33,7 +33,7 @@ public:: true
   "subClassOf": [
     {
       "@id": "urn:ngm:class:machine-learning-discipline",
-      "label": "Machine Learning"
+      "label": "Machine Learning Discipline"
     }
   ],
   "relations": {
@@ -53,7 +53,7 @@ public:: true
       {"@id": "urn:ngm:class:intrusion-detection-system", "label": "Intrusion Detection System"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"},
       {"@id": "urn:ngm:class:pattern-recognition", "label": "Pattern Recognition"},
       {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
       {"@id": "urn:ngm:class:autoencoder", "label": "Autoencoder"},

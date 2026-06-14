@@ -27,7 +27,7 @@ public:: true
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:decentralised-coordination", "label": "Decentralised Coordination"},
-      {"@id": "urn:ngm:class:rgb-and-client-side-validation", "label": "RGB and Client-Side Validation"}
+      {"@id": "urn:ngm:class:rgb-and-client-side-validation", "label": "RGB and Client Side Validation"}
     ]
   },
   "quality": 0.72

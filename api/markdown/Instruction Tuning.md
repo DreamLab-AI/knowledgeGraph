@@ -67,12 +67,12 @@ public:: true
       {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:chain-of-thought-prompting", "label": "Chain Of Thought Prompting"},
+      {"@id": "urn:ngm:class:chain-of-thought-prompting", "label": "Chain-of-Thought Prompting"},
       {"@id": "urn:ngm:class:self-instruct", "label": "Self Instruct"},
-      {"@id": "urn:ngm:class:parameter-efficient-fine-tuning", "label": "Parameter Efficient Fine Tuning"}
+      {"@id": "urn:ngm:class:parameter-efficient-fine-tuning", "label": "Parameter-Efficient Fine-Tuning"}
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:few-shot-prompting", "label": "Few Shot Prompting"},
+      {"@id": "urn:ngm:class:few-shot-prompting", "label": "Few-Shot Prompting"},
       {"@id": "urn:ngm:class:pretraining", "label": "Pretraining"}
     ],
     "bridgesTo": [

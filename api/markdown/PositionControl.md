@@ -163,19 +163,19 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:control-law",
-        "label": "ControlLaw"
+        "label": "Control Law"
       },
       {
         "@id": "urn:ngm:class:error-calculation",
-        "label": "ErrorCalculation"
+        "label": "Error Calculation"
       },
       {
         "@id": "urn:ngm:class:feedforward-compensation",
-        "label": "FeedforwardCompensation"
+        "label": "Feedforward Compensation"
       },
       {
         "@id": "urn:ngm:class:position-sensor",
-        "label": "PositionSensor"
+        "label": "Position Sensor"
       }
     ],
     "requires": [
@@ -189,7 +189,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:motor-driver",
-        "label": "MotorDriver"
+        "label": "Motor Driver"
       },
       {
         "@id": "urn:ngm:class:position-feedback",
@@ -197,7 +197,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:power-supply",
-        "label": "PowerSupply"
+        "label": "Power Supply"
       }
     ],
     "enables": [
@@ -211,7 +211,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:pick-and-place",
-        "label": "PickAndPlace"
+        "label": "Pick and Place"
       },
       {
         "@id": "urn:ngm:class:synchronization",
@@ -219,13 +219,13 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:trajectory-tracking",
-        "label": "TrajectoryTracking"
+        "label": "Trajectory Tracking"
       }
     ],
     "bridgesTo": [
       {
         "@id": "urn:ngm:class:control-algorithm",
-        "label": "ControlAlgorithm"
+        "label": "Control Algorithm"
       }
     ]
   },

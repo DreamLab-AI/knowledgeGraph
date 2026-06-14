@@ -27,7 +27,7 @@ public:: true
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:mobile-robot-platform", "label": "Mobile Robot Platform"},
-      {"@id": "urn:ngm:class:tc-0003-telepresence-robot", "label": "Telepresence Robot"}
+      {"@id": "urn:ngm:class:tc-0003-telepresence-robot", "label": "tc 0003 telepresence robot"}
     ]
   },
   "quality": 0.72

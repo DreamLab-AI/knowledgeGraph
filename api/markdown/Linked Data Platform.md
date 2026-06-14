@@ -78,7 +78,7 @@ public:: true
     "enables": [
       {
         "@id": "urn:ngm:class:semantic-web-linked-data-standard",
-        "label": "Semantic Web"
+        "label": "Semantic Web Linked Data Standard"
       }
     ]
   },

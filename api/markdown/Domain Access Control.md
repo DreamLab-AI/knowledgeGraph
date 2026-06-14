@@ -23,7 +23,7 @@ public:: true
   "definition": "Domain Access Control is the set of mechanisms that govern which users, avatars, or services may enter, view, or modify resources within a bounded virtual-world domain or server cluster. In metaverse platforms it enforces ownership and permission boundaries at the level of a hosted domain, mediating connection requests and content rights. It is foundational to multi-tenant virtual environments where independent operators host interoperable spaces.",
   "domain": "metaverse",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:sc-governance-and-safety", "label": "Metaverse Governance and Safety"}],
+  "subClassOf": [{"@id": "urn:ngm:class:sc-governance-and-safety", "label": "Governance and Safety"}],
   "relations": {
     "relatedTo": [{"@id": "urn:ngm:class:vircadia", "label": "Vircadia"}]
   },

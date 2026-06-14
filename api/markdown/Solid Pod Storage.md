@@ -73,7 +73,7 @@ public:: true
   "subClassOf": [
     {
       "@id": "urn:ngm:class:distributed-systems",
-      "label": "Distributed Systems Domain"
+      "label": "Distributed Systems"
     }
   ],
   "relations": {

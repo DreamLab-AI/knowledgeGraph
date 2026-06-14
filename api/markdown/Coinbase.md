@@ -53,7 +53,7 @@ public:: true
   "subClassOf": [
     {
       "@id": "urn:ngm:class:digital-asset",
-      "label": "Digital Asset Domain"
+      "label": "Digital Asset"
     }
   ],
   "relations": {
@@ -98,7 +98,7 @@ public:: true
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:optimism", "label": "Optimism"},
-      {"@id": "urn:ngm:class:layer-2-scaling", "label": "Layer-2 Scaling"},
+      {"@id": "urn:ngm:class:layer-2-scaling", "label": "Layer 2 Scaling"},
       {"@id": "urn:ngm:class:centralised-exchange", "label": "Centralised Exchange"}
     ]
   },

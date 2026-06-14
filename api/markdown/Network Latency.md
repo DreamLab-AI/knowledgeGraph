@@ -83,7 +83,7 @@ alias:: NetworkLatency
     ],
     "partOf": [
       {"@id": "urn:ngm:class:network-performance", "label": "Network Performance"},
-      {"@id": "urn:ngm:class:quality-of-service", "label": "Quality of Service"}
+      {"@id": "urn:ngm:class:quality-of-service", "label": "Quality Of Service"}
     ],
     "requires": [
       {"@id": "urn:ngm:class:latency-management-protocol", "label": "Latency Management Protocol"},

@@ -98,17 +98,17 @@ alias:: SensorFusion
     "hasPart": [
       {"@id": "urn:ngm:class:kalman-filter", "label": "Kalman Filter"},
       {"@id": "urn:ngm:class:particle-filter", "label": "Particle Filter"},
-      {"@id": "urn:ngm:class:imu", "label": "Inertial Measurement Unit"}
+      {"@id": "urn:ngm:class:imu", "label": "IMU"}
     ],
     "partOf": [
       {"@id": "urn:ngm:class:perception-system", "label": "Perception System"},
       {"@id": "urn:ngm:class:autonomous-vehicle", "label": "Autonomous Vehicle"}
     ],
     "requires": [
-      {"@id": "urn:ngm:class:lidar", "label": "LiDAR"},
+      {"@id": "urn:ngm:class:lidar", "label": "Lidar"},
       {"@id": "urn:ngm:class:radar", "label": "Radar"},
       {"@id": "urn:ngm:class:camera-sensor", "label": "Camera Sensor"},
-      {"@id": "urn:ngm:class:gps", "label": "GPS"}
+      {"@id": "urn:ngm:class:gps", "label": "Gps"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:slam", "label": "SLAM"},

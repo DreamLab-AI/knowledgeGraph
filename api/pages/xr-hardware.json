@@ -99,7 +99,7 @@
     "uses": [
       {
         "id": "urn:ngm:class:spatial-computing",
-        "label": "Spatial Computing Paradigm"
+        "label": "Spatial Computing"
       },
       {
         "id": "urn:ngm:class:inside-out-tracking",
@@ -150,7 +150,7 @@
       },
       {
         "id": "urn:ngm:class:human-computer-interaction",
-        "label": "Human-Computer Interaction"
+        "label": "Human Computer Interaction"
       }
     ]
   },

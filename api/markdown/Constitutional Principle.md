@@ -62,7 +62,7 @@ public:: true
   ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:constitutional-ai-training-methodology", "label": "Constitutional AI"}
+      {"@id": "urn:ngm:class:constitutional-ai-training-methodology", "label": "Constitutional AI Training Methodology"}
     ],
     "requires": [
       {"@id": "urn:ngm:class:value-alignment", "label": "Value Alignment"},

@@ -84,14 +84,14 @@ public:: true
     },
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
-      "label": "SC Platform And Environment"
+      "label": "Platform and Environment"
     }
   ],
   "relations": {
     "requires": [
       {
         "@id": "urn:ngm:class:ar-display-device",
-        "label": "AR Display Devices"
+        "label": "Ar Display Device"
       },
       {
         "@id": "urn:ngm:class:computer-vision",

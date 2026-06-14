@@ -28,7 +28,7 @@ public:: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:vector-embedding", "label": "Vector Embeddings"},
+      {"@id": "urn:ngm:class:vector-embedding", "label": "Vector Embedding"},
       {"@id": "urn:ngm:class:vector-store", "label": "Vector Store"}
     ],
     "requires": [

@@ -60,7 +60,7 @@ public:: true
       {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
       {"@id": "urn:ngm:class:real-time-system", "label": "Real-Time System"},
       {"@id": "urn:ngm:class:financial-trading-infrastructure", "label": "Financial Trading Infrastructure"},
-      {"@id": "urn:ngm:class:industrial-automation", "label": "Industrial Automation"}
+      {"@id": "urn:ngm:class:industrial-automation", "label": "IndustrialAutomation"}
     ],
     "dependsOn": [
       {"@id": "urn:ngm:class:network-infrastructure", "label": "Network Infrastructure"},

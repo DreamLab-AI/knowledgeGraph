@@ -33,7 +33,7 @@ public:: true
   "subClassOf": [
     {
       "@id": "urn:ngm:class:cat-ai-infrastructure",
-      "label": "Cat Ai Infrastructure"
+      "label": "AI Infrastructure"
     }
   ],
   "relations": {

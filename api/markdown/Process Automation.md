@@ -33,10 +33,10 @@ public:: true
     "requires": [
       {"@id": "urn:ngm:class:api-integration", "label": "API Integration"},
       {"@id": "urn:ngm:class:workflow-engine", "label": "Workflow Engine"},
-      {"@id": "urn:ngm:class:event-driven-architecture", "label": "Event-Driven Architecture"}
+      {"@id": "urn:ngm:class:event-driven-architecture", "label": "Event Driven Architecture"}
     ],
     "enables": [
-      {"@id": "urn:ngm:class:industrial-automation", "label": "Industrial Automation"},
+      {"@id": "urn:ngm:class:industrial-automation", "label": "IndustrialAutomation"},
       {"@id": "urn:ngm:class:digital-transformation", "label": "Digital Transformation"},
       {"@id": "urn:ngm:class:customer-service-automation", "label": "Customer Service Automation"},
       {"@id": "urn:ngm:class:hyperautomation", "label": "Hyperautomation"}

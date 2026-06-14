@@ -13,7 +13,7 @@
     },
     {
       "id": "urn:ngm:class:sc-interaction",
-      "label": "Interaction Domain"
+      "label": "Interaction Technology"
     }
   ],
   "entityType": "Class",
@@ -53,7 +53,7 @@
       },
       {
         "id": "urn:ngm:class:speech-synthesis",
-        "label": "Speech Synthesis"
+        "label": "SpeechSynthesis"
       }
     ],
     "enables": [

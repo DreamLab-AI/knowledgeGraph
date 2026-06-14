@@ -72,7 +72,7 @@ public:: true
       {"@id": "urn:ngm:class:inference", "label": "Inference"}
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"}
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"}
     ]
   },
   "quality": 0.8,

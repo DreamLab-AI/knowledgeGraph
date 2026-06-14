@@ -53,7 +53,7 @@ public:: true
   "subClassOf": [
     {
       "@id": "urn:ngm:class:dc-workspace-tools",
-      "label": "Dc Workspace Tools"
+      "label": "Workspace Tools"
     }
   ],
   "relations": {

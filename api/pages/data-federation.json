@@ -9,7 +9,7 @@
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-data-management",
-      "label": "Infrastructure Data Management"
+      "label": "Data Management"
     }
   ],
   "entityType": "Class",

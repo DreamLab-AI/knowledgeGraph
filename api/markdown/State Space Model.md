@@ -144,7 +144,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:self-attention",
-        "label": "Self-Attention"
+        "label": "Self Attention"
       },
       {
         "@id": "urn:ngm:class:convolutional-neural-network",

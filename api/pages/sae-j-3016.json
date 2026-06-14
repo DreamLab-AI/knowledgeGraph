@@ -47,7 +47,7 @@
       },
       {
         "id": "urn:ngm:class:self-driving-car",
-        "label": "Self-Driving Car"
+        "label": "Self Driving Car"
       },
       {
         "id": "urn:ngm:class:vehicle-certification",
@@ -120,7 +120,7 @@
       },
       {
         "id": "urn:ngm:class:lidar",
-        "label": "LiDAR"
+        "label": "Lidar"
       },
       {
         "id": "urn:ngm:class:computer-vision",

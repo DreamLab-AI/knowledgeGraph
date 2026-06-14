@@ -13,11 +13,11 @@
     },
     {
       "id": "urn:ngm:class:bc-token-and-asset",
-      "label": "BC Token And Asset"
+      "label": "Token and Asset"
     },
     {
       "id": "urn:ngm:class:bitcoin-proof-of-work-protocol",
-      "label": "Bitcoin Protocol"
+      "label": "Bitcoin Proof-of-Work Protocol"
     }
   ],
   "entityType": "Class",
@@ -69,7 +69,7 @@
       },
       {
         "id": "urn:ngm:class:schnorr-signature",
-        "label": "Schnorr Signatures"
+        "label": "Schnorr Signature"
       },
       {
         "id": "urn:ngm:class:taproot-upgrade",
@@ -99,7 +99,7 @@
       },
       {
         "id": "urn:ngm:class:machine-to-machine-payments",
-        "label": "Machine-to-Machine Payments"
+        "label": "Machine to Machine Payments"
       },
       {
         "id": "urn:ngm:class:multi-asset-lightning-payments",
@@ -162,7 +162,7 @@
       },
       {
         "id": "urn:ngm:class:schnorr-signature",
-        "label": "Schnorr Signatures"
+        "label": "Schnorr Signature"
       },
       {
         "id": "urn:ngm:class:taproot-transactions",
@@ -188,11 +188,11 @@
       },
       {
         "id": "urn:ngm:class:decentralized-exchange",
-        "label": "Decentralised Exchange"
+        "label": "Decentralized Exchange"
       },
       {
         "id": "urn:ngm:class:machine-to-machine-payments",
-        "label": "Machine-to-Machine Payments"
+        "label": "Machine to Machine Payments"
       },
       {
         "id": "urn:ngm:class:programmable-assets",
@@ -241,7 +241,7 @@
     "relatedTo": [
       {
         "id": "urn:ngm:class:atomic-swap",
-        "label": "Atomic Swaps"
+        "label": "Atomic Swap"
       },
       {
         "id": "urn:ngm:class:joltz-wallet",

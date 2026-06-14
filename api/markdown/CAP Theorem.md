@@ -64,7 +64,7 @@ public:: true
   "qualityScore": 0.7,
   "subClassOf": {
     "@id": "urn:ngm:class:infra-computing-and-cloud",
-    "label": "Infra Computing And Cloud"
+    "label": "Computing and Cloud"
   },
   "relations": {
     "hasPart": [
@@ -144,7 +144,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:raft-consensus",
-        "label": "Raft Consensus"
+        "label": "RAFT Consensus"
       },
       {
         "@id": "urn:ngm:class:paxos-protocol",

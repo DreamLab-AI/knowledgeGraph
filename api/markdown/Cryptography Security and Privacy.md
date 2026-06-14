@@ -655,7 +655,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
-        "label": "Public Key Cryptography"
+        "label": "Public-Key Cryptography"
       },
       {
         "@id": "urn:ngm:class:random-number-generation",
@@ -773,7 +773,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:schnorr-signature",
-        "label": "Schnorr Signatures"
+        "label": "Schnorr Signature"
       },
       {
         "@id": "urn:ngm:class:sha-3",
@@ -913,7 +913,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:iso-iec-jtc-1-sc-27",
-        "label": "ISO IEC JTC 1 SC 27"
+        "label": "ISO/IEC JTC 1/SC 27"
       },
       {
         "@id": "urn:ngm:class:ncsc-uk",

@@ -230,7 +230,7 @@ alias:: Control Systems
     "bridgesTo": [
       {
         "@id": "urn:ngm:class:robotic-system",
-        "label": "Robotic Systems"
+        "label": "Robotic System"
       }
     ]
   },

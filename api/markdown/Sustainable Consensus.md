@@ -493,7 +493,7 @@ public:: true
     "enables": [
       {
         "@id": "urn:ngm:class:esg-compliant-blockchain",
-        "label": "ESG Compliant Blockchain"
+        "label": "ESG-Compliant Blockchain"
       },
       {
         "@id": "urn:ngm:class:green-bond-settlement",
@@ -549,7 +549,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:merkle-tree",
-        "label": "Merkle Trees"
+        "label": "Merkle Tree"
       },
       {
         "@id": "urn:ngm:class:storage-proofs",
@@ -613,7 +613,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:smart-contract-platform",
-        "label": "Smart Contract Platforms"
+        "label": "Smart Contract Platform"
       },
       {
         "@id": "urn:ngm:class:carbon-credit-tracking",

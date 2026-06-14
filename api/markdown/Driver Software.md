@@ -71,7 +71,7 @@ public:: true
     "enables": [
       {
         "@id": "urn:ngm:class:extended-reality-xr",
-        "label": "Extended Reality Xr"
+        "label": "Extended Reality (XR)"
       }
     ]
   },

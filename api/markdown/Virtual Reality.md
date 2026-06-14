@@ -84,7 +84,7 @@ alias:: VirtualReality
       {"@id": "urn:ngm:class:mixed-reality", "label": "Mixed Reality"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human-Computer Interaction"},
+      {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human Computer Interaction"},
       {"@id": "urn:ngm:class:computer-graphics", "label": "Computer Graphics"},
       {"@id": "urn:ngm:class:presence-telepresence", "label": "Presence and Telepresence"}
     ],

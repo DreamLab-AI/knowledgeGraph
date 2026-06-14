@@ -27,7 +27,7 @@ public:: true
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:decentralized-identifiers", "label": "Decentralized Identifiers"},
-      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self-Sovereign Identity"}
+      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self Sovereign Identity"}
     ]
   },
   "quality": 0.72

@@ -99,7 +99,7 @@ public:: true
     "partOf": [
       {
         "@id": "urn:ngm:class:cyber-physical-systems",
-        "label": "Cyber-Physical Systems"
+        "label": "Cyber Physical Systems"
       },
       {
         "@id": "urn:ngm:class:industrial-internet-of-things",
@@ -167,7 +167,7 @@ public:: true
     "implements": [
       {
         "@id": "urn:ngm:class:iso-23247",
-        "label": "ISO 23247 Digital Twin Manufacturing"
+        "label": "ISO 23247"
       }
     ],
     "uses": [
@@ -177,7 +177,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:lidar",
-        "label": "LiDAR"
+        "label": "Lidar"
       },
       {
         "@id": "urn:ngm:class:augmented-reality",

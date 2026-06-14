@@ -63,7 +63,7 @@ public:: true
       {"@id": "urn:ngm:class:etsi-domain-application-tourism", "label": "ETSI Domain Application + Tourism"}
     ],
     "enables": [
-      {"@id": "urn:ngm:class:venue-tethered-immersive-experience", "label": "Location Based Experience"}
+      {"@id": "urn:ngm:class:venue-tethered-immersive-experience", "label": "Venue-Tethered Immersive Experience"}
     ]
   },
   "provenance": {

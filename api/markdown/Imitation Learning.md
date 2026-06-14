@@ -582,7 +582,7 @@ alias:: ImitationLearning
       },
       {
         "@id": "urn:ngm:class:dagger-ci-pipeline-engine",
-        "label": "DAgger"
+        "label": "Dagger CI Pipeline Engine"
       }
     ],
     "uses": [
@@ -592,7 +592,7 @@ alias:: ImitationLearning
       },
       {
         "@id": "urn:ngm:class:neural-network",
-        "label": "Neural Networks"
+        "label": "Neural Network"
       },
       {
         "@id": "urn:ngm:class:transformer-policies",
@@ -600,7 +600,7 @@ alias:: ImitationLearning
       },
       {
         "@id": "urn:ngm:class:vision-language-model",
-        "label": "Vision Language Models"
+        "label": "Vision Language Model"
       },
       {
         "@id": "urn:ngm:class:diffusion-models",
@@ -634,11 +634,11 @@ alias:: ImitationLearning
       },
       {
         "@id": "urn:ngm:class:vision-language-action-models",
-        "label": "Vision Language Action Models"
+        "label": "Vision-Language-Action Models"
       },
       {
         "@id": "urn:ngm:class:large-scale-pretrained-foundation-model",
-        "label": "Foundation Models"
+        "label": "Large-Scale Pretrained Foundation Model"
       }
     ],
     "supports": [

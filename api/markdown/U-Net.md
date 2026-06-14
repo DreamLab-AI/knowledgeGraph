@@ -124,7 +124,7 @@ public:: true
     "implements": [
       {
         "@id": "urn:ngm:class:encoder-decoder-architecture",
-        "label": "Encoder-Decoder Architecture"
+        "label": "Encoder Decoder Architecture"
       },
       {
         "@id": "urn:ngm:class:feature-pyramid",

@@ -9,7 +9,7 @@
   "subClassOf": [
     {
       "id": "urn:ngm:class:consensus-protocol",
-      "label": "ConsensusProtocol"
+      "label": "Consensus Protocol"
     }
   ],
   "entityType": "Class",
@@ -49,7 +49,7 @@
     "requires": [
       {
         "id": "urn:ngm:class:peer-to-peer-network",
-        "label": "Peer To Peer Network"
+        "label": "Peer-to-Peer Network"
       },
       {
         "id": "urn:ngm:class:blockchain-energy-consumption",
@@ -67,7 +67,7 @@
       },
       {
         "id": "urn:ngm:class:double-spend-prevention",
-        "label": "Double Spend Prevention"
+        "label": "Double-Spend Prevention"
       },
       {
         "id": "urn:ngm:class:sybil-resistance",

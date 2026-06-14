@@ -33,7 +33,7 @@ public:: true
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-model-architecture",
-      "label": "Ai Model Architecture"
+      "label": "AI Model Architecture"
     }
   ],
   "sameAs": [
@@ -67,7 +67,7 @@ public:: true
       {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"}
     ],
     "supports": [
-      {"@id": "urn:ngm:class:text-to-image", "label": "Text-to-Image Generation"},
+      {"@id": "urn:ngm:class:text-to-image", "label": "Text-to-Image"},
       {"@id": "urn:ngm:class:stable-diffusion", "label": "Stable Diffusion"},
       {"@id": "urn:ngm:class:multimodal-search", "label": "Multimodal Search"}
     ],
@@ -77,7 +77,7 @@ public:: true
       {"@id": "urn:ngm:class:coca", "label": "CoCa"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:vision-language-model", "label": "Vision-Language Model"},
+      {"@id": "urn:ngm:class:vision-language-model", "label": "Vision Language Model"},
       {"@id": "urn:ngm:class:prompt-engineering", "label": "Prompt Engineering"},
       {"@id": "urn:ngm:class:multimodal-ai-architecture-ai", "label": "Multimodal AI"}
     ],

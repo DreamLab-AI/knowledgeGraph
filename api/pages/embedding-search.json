@@ -36,7 +36,7 @@
     "uses": [
       {
         "id": "urn:ngm:class:vector-embedding",
-        "label": "Vector Embeddings"
+        "label": "Vector Embedding"
       },
       {
         "id": "urn:ngm:class:vector-store",

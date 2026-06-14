@@ -30,7 +30,7 @@ alias:: OpenAI Whisper
       {"@id": "urn:ngm:class:speech-recognition", "label": "Speech Recognition"},
       {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"},
       {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
-      {"@id": "urn:ngm:class:openai-research-organisation", "label": "OpenAI"}
+      {"@id": "urn:ngm:class:openai-research-organisation", "label": "OpenAI Research Organisation"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:real-time-transcription", "label": "Real-time Transcription"},

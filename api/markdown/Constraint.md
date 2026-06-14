@@ -76,7 +76,7 @@ public:: true
       {"@id": "urn:ngm:class:inference", "label": "Inference"}
     ],
     "supports": [
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"},
       {"@id": "urn:ngm:class:fairness", "label": "Fairness"},
       {"@id": "urn:ngm:class:ontology", "label": "Ontology"}
     ],

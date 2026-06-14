@@ -37,13 +37,13 @@ public:: true
     ],
     "requires": [
       {"@id": "urn:ngm:class:process-notation", "label": "Process Notation"},
-      {"@id": "urn:ngm:class:event-driven-architecture", "label": "Event-Driven Architecture"}
+      {"@id": "urn:ngm:class:event-driven-architecture", "label": "Event Driven Architecture"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:process-automation", "label": "Process Automation"},
       {"@id": "urn:ngm:class:workflow-automation", "label": "Workflow Automation"},
       {"@id": "urn:ngm:class:digital-transformation", "label": "Digital Transformation"},
-      {"@id": "urn:ngm:class:continuous-improvement", "label": "Continuous Improvement"},
+      {"@id": "urn:ngm:class:continuous-improvement", "label": "continuous improvement"},
       {"@id": "urn:ngm:class:operational-efficiency", "label": "Operational Efficiency"}
     ],
     "uses": [

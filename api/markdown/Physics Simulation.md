@@ -43,7 +43,7 @@ public:: true
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
-      "label": "Sc Platform And Environment"
+      "label": "Platform and Environment"
     }
   ],
   "relations": {

@@ -62,7 +62,7 @@ alias:: TELE-302-shared-whiteboards
     },
     {
       "@id": "urn:ngm:class:telecollaboration",
-      "label": "TELE-002-telecollaboration"
+      "label": "Telecollaboration"
     }
   ],
   "relations": {

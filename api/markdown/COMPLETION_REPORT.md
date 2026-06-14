@@ -98,7 +98,7 @@ public:: true
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:governance-framework", "label": "Governance Framework"},
-      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse Domain"}
+      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"}
     ]
   },
   "quality": 0.4,

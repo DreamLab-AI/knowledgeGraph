@@ -27,7 +27,7 @@ public:: true
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:knowledge-graphing", "label": "Knowledge Graphing"},
-      {"@id": "urn:ngm:class:retrieval-augmented-generation-rag", "label": "Retrieval-Augmented Generation (RAG)"}
+      {"@id": "urn:ngm:class:retrieval-augmented-generation-rag", "label": "Retrieval Augmented Generation - RAG"}
     ]
   },
   "quality": 0.72

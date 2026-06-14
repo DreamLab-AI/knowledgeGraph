@@ -29,7 +29,7 @@ public:: true
       {"@id": "urn:ngm:class:low-rank-adaptation", "label": "Low-Rank Adaptation"}
     ],
     "enables": [
-      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine-Tuning"}
+      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine Tuning"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}

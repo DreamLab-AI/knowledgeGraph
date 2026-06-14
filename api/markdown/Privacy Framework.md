@@ -50,7 +50,7 @@ public:: true
     "hasPart": [
       {"@id": "urn:ngm:class:consent-management", "label": "Consent Management"},
       {"@id": "urn:ngm:class:data-minimisation", "label": "Data Minimisation"},
-      {"@id": "urn:ngm:class:privacy-by-design", "label": "Privacy by Design"},
+      {"@id": "urn:ngm:class:privacy-by-design", "label": "Privacy By Design"},
       {"@id": "urn:ngm:class:data-protection-impact-assessment", "label": "Data Protection Impact Assessment"}
     ],
     "requires": [
@@ -84,7 +84,7 @@ public:: true
     ],
     "bridgesTo": [
       {"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"},
-      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self-Sovereign Identity"},
+      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self Sovereign Identity"},
       {"@id": "urn:ngm:class:homomorphic-encryption", "label": "Homomorphic Encryption"}
     ],
     "relatedTo": [

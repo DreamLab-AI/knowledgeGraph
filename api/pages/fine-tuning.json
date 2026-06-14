@@ -23,11 +23,11 @@
       },
       {
         "id": "urn:ngm:class:full-fine-tuning",
-        "label": "Full Fine-Tuning"
+        "label": "Full Fine Tuning"
       },
       {
         "id": "urn:ngm:class:supervised-fine-tuning",
-        "label": "Supervised Fine-Tuning"
+        "label": "Supervised Fine Tuning"
       }
     ],
     "requires": [

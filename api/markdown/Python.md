@@ -77,7 +77,7 @@ public:: true
       {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:python-pytorch-deep-learning-stack", "label": "Python and PyTorch"},
+      {"@id": "urn:ngm:class:python-pytorch-deep-learning-stack", "label": "Python PyTorch Deep Learning Stack"},
       {"@id": "urn:ngm:class:machine-learning-pipeline", "label": "Machine Learning Pipeline"},
       {"@id": "urn:ngm:class:machine-learning-framework", "label": "Machine Learning Framework"},
       {"@id": "urn:ngm:class:ai-infrastructure", "label": "AI Infrastructure"}

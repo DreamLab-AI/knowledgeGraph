@@ -127,7 +127,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:identity-provider",
-        "label": "Identity Providers"
+        "label": "Identity Provider"
       },
       {
         "@id": "urn:ngm:class:public-key-infrastructure",
@@ -145,7 +145,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:privacy-controls",
-        "label": "Privacy Control"
+        "label": "Privacy Controls"
       },
       {
         "@id": "urn:ngm:class:selective-disclosure",
@@ -159,7 +159,7 @@ public:: true
     "implements": [
       {
         "@id": "urn:ngm:class:self-sovereign-identity",
-        "label": "Self-Sovereign Identity"
+        "label": "Self Sovereign Identity"
       },
       {
         "@id": "urn:ngm:class:zero-knowledge-proof",

@@ -19,11 +19,11 @@
     "hasPart": [
       {
         "id": "urn:ngm:class:knowhere-visitor-attention-system",
-        "label": "Knowhere"
+        "label": "KnoWhere Visitor Attention System"
       },
       {
         "id": "urn:ngm:class:dreamlab-creative-technology-collective",
-        "label": "Dreamlab"
+        "label": "DreamLab Creative Technology Collective"
       }
     ],
     "requires": [],
@@ -38,7 +38,7 @@
       },
       {
         "id": "urn:ngm:class:venue-tethered-immersive-experience",
-        "label": "Location Based Experience"
+        "label": "Venue-Tethered Immersive Experience"
       }
     ],
     "uses": [
@@ -57,7 +57,7 @@
     "relatedTo": [
       {
         "id": "urn:ngm:class:nicve-virtual-reality-research-centre",
-        "label": "National Industrial Centre for Virtual Environments"
+        "label": "NICVE Virtual Reality Research Centre"
       },
       {
         "id": "urn:ngm:class:mixed-reality",

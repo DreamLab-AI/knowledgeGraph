@@ -59,7 +59,7 @@ alias:: AI-inference
     ],
     "contrastsWith": [
       {"@id": "urn:ngm:class:model-training", "label": "Model Training"},
-      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine-Tuning"}
+      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine Tuning"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},

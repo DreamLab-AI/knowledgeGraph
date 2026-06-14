@@ -71,8 +71,8 @@ alias:: MiddlewareLayer
       {"@id": "urn:ngm:class:transport-layer", "label": "Transport Layer"}
     ],
     "implements": [
-      {"@id": "urn:ngm:class:service-oriented-architecture", "label": "Service-Oriented Architecture"},
-      {"@id": "urn:ngm:class:event-driven-architecture", "label": "Event-Driven Architecture"}
+      {"@id": "urn:ngm:class:service-oriented-architecture", "label": "Service Oriented Architecture"},
+      {"@id": "urn:ngm:class:event-driven-architecture", "label": "Event Driven Architecture"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:remote-procedure-call", "label": "Remote Procedure Call"},

@@ -215,7 +215,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:separation-of-powers",
-        "label": "Separation of Powers"
+        "label": "Separation Of Powers"
       }
     ],
     "requires": [

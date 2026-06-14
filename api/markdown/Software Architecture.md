@@ -59,7 +59,7 @@ public:: true
   "maturity": "emerging",
   "subClassOf": {
     "@id": "urn:ngm:class:ai-infrastructure",
-    "label": "AI Infrastructure (Category)"
+    "label": "AI Infrastructure"
   },
   "relations": {
     "hasPart": [
@@ -88,7 +88,7 @@ public:: true
     ],
     "implements": [
       {"@id": "urn:ngm:class:design-pattern", "label": "Design Pattern"},
-      {"@id": "urn:ngm:class:event-driven-architecture", "label": "Event-Driven Architecture"}
+      {"@id": "urn:ngm:class:event-driven-architecture", "label": "Event Driven Architecture"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:message-queue", "label": "Message Queue"},

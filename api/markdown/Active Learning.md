@@ -268,7 +268,7 @@ public:: true
     },
     {
       "@id": "urn:ngm:class:data-efficient-learning",
-      "label": "Data-Efficient Learning"
+      "label": "Data Efficient Learning"
     },
     {
       "@id": "urn:ngm:class:interactive-learning",
@@ -347,7 +347,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:data-efficient-learning",
-        "label": "Data-Efficient Learning"
+        "label": "Data Efficient Learning"
       }
     ],
     "implements": [

@@ -84,7 +84,7 @@
     "uses": [
       {
         "id": "urn:ngm:class:lidar-sensor",
-        "label": "Lidar Sensor"
+        "label": "LiDAR Sensor"
       },
       {
         "id": "urn:ngm:class:sensor-fusion",

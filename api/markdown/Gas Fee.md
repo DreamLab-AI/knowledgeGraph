@@ -132,7 +132,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:layer-2-scaling",
-        "label": "Layer-2 Scaling"
+        "label": "Layer 2 Scaling"
       }
     ],
     "contrastsWith": [

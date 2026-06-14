@@ -395,11 +395,11 @@ public:: true
     "enables": [
       {
         "@id": "urn:ngm:class:autonomous-system",
-        "label": "Autonomous Systems"
+        "label": "Autonomous System"
       },
       {
         "@id": "urn:ngm:class:industrial-automation",
-        "label": "Industrial Automation"
+        "label": "IndustrialAutomation"
       },
       {
         "@id": "urn:ngm:class:on-device-inference",
@@ -473,7 +473,7 @@ public:: true
     "relatedTo": [
       {
         "@id": "urn:ngm:class:autonomous-system",
-        "label": "Autonomous Systems"
+        "label": "Autonomous System"
       },
       {
         "@id": "urn:ngm:class:internet-of-things",
@@ -489,7 +489,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:large-scale-pretrained-foundation-model",
-        "label": "Foundation Models"
+        "label": "Large-Scale Pretrained Foundation Model"
       },
       {
         "@id": "urn:ngm:class:proprietary-large-language-models",

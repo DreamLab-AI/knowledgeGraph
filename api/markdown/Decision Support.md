@@ -23,7 +23,7 @@ public:: true
   "definition": "Decision Support refers to the class of information systems, analytical frameworks, and AI-augmented tools designed to improve the quality, speed, and consistency of human or automated decision-making by surfacing relevant data, models, and recommendations at the point of choice. Modern decision support systems integrate structured data from enterprise systems with unstructured signals from documents, sensor streams, and language models to present synthesised options with associated confidence levels and risk profiles. They range from simple rule-based dashboards to sophisticated agentic pipelines that autonomously gather evidence, run simulations, and present ranked courses of action. The field spans domains including clinical medicine, financial trading, military command, supply chain management, and public policy.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence Domain"},
+  "subClassOf": {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
   "relations": {
     "hasPart": [
       {"@id": "urn:ngm:class:recommendation-engine", "label": "Recommendation Engine"},
@@ -55,7 +55,7 @@ public:: true
     "supports": [
       {"@id": "urn:ngm:class:decision-transparency", "label": "Decision Transparency"},
       {"@id": "urn:ngm:class:bounded-rationality", "label": "Bounded Rationality"},
-      {"@id": "urn:ngm:class:human-in-the-loop", "label": "Human-in-the-Loop"}
+      {"@id": "urn:ngm:class:human-in-the-loop", "label": "Human in the Loop"}
     ],
     "contrastsWith": [
       {"@id": "urn:ngm:class:fully-automated-decision-making", "label": "Fully Automated Decision Making"},
@@ -67,7 +67,7 @@ public:: true
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:clinical-decision-support", "label": "Clinical Decision Support"},
-      {"@id": "urn:ngm:class:informed-decision-making", "label": "Informed Decision-Making"},
+      {"@id": "urn:ngm:class:informed-decision-making", "label": "Informed decision-making"},
       {"@id": "urn:ngm:class:predictive-analytics", "label": "Predictive Analytics"},
       {"@id": "urn:ngm:class:transparent-decision-making", "label": "Transparent Decision Making"}
     ]

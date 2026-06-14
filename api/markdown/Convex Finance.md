@@ -23,7 +23,7 @@ public:: true
   "definition": "Convex Finance is a decentralised finance (DeFi) meta-protocol built on Ethereum that enables Curve Finance liquidity providers and CRV holders to earn enhanced rewards without individually locking their own CRV tokens as veCRV. By aggregating vote-escrowed CRV (veCRV) from users who deposit CRV in exchange for cvxCRV, Convex accumulates collective governance and boost power which it redistributes pro-rata to depositors, eliminating the individual capital lockup barrier inherent in Curve's vote-escrow tokenomics. The protocol's native CVX token governs allocation of this aggregated veCRV voting power via vlCVX staking, creating a secondary governance layer — the so-called Curve Wars — in which DeFi protocols competitively bribe CVX holders to direct CRV emissions toward their own liquidity pools.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:de-fi-protocol", "label": "DeFi Protocol"}],
+  "subClassOf": [{"@id": "urn:ngm:class:de-fi-protocol", "label": "De Fi Protocol"}],
   "relations": {
     "partOf": [
       {"@id": "urn:ngm:class:decentralized-finance-de-fi", "label": "Decentralized Finance (DeFi)"},
@@ -63,7 +63,7 @@ public:: true
       {"@id": "urn:ngm:class:frax-finance", "label": "Frax Finance"}
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:on-chain-governance", "label": "On-Chain Governance"},
+      {"@id": "urn:ngm:class:on-chain-governance", "label": "On-chain Governance"},
       {"@id": "urn:ngm:class:mechanism-design", "label": "Mechanism Design"}
     ]
   },

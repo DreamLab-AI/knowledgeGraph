@@ -1122,7 +1122,7 @@ alias:: BC-0463-governance-token, GovernanceToken
       },
       {
         "@id": "urn:ngm:class:erc-20-tokens",
-        "label": "ERC-20 Token"
+        "label": "ERC-20 Tokens"
       }
     ],
     "requires": [
@@ -1158,7 +1158,7 @@ alias:: BC-0463-governance-token, GovernanceToken
     "enables": [
       {
         "@id": "urn:ngm:class:decentralized-governance",
-        "label": "Decentralised Governance"
+        "label": "Decentralized Governance"
       },
       {
         "@id": "urn:ngm:class:gauge-weight-allocation",
@@ -1182,7 +1182,7 @@ alias:: BC-0463-governance-token, GovernanceToken
       },
       {
         "@id": "urn:ngm:class:on-chain-voting",
-        "label": "On-Chain Voting"
+        "label": "On Chain Voting"
       },
       {
         "@id": "urn:ngm:class:treasury-management",
@@ -1318,7 +1318,7 @@ alias:: BC-0463-governance-token, GovernanceToken
       },
       {
         "@id": "urn:ngm:class:de-fi-protocol",
-        "label": "DeFi Protocol"
+        "label": "De Fi Protocol"
       }
     ],
     "standardizedBy": [
@@ -1344,7 +1344,7 @@ alias:: BC-0463-governance-token, GovernanceToken
       },
       {
         "@id": "urn:ngm:class:erc-20-votes",
-        "label": "ERC20Votes"
+        "label": "ERC-20 Votes"
       },
       {
         "@id": "urn:ngm:class:open-zeppelin-governor-contracts",

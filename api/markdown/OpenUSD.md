@@ -73,7 +73,7 @@ public:: true
       {"@id": "urn:ngm:class:iso-iec-22886", "label": "ISO/IEC 22886"}
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:gltf-standard", "label": "glTF Standard"},
+      {"@id": "urn:ngm:class:gltf-standard", "label": "Gltf Standard"},
       {"@id": "urn:ngm:class:fbx-format", "label": "FBX Format"},
       {"@id": "urn:ngm:class:collada-format", "label": "COLLADA Format"}
     ],

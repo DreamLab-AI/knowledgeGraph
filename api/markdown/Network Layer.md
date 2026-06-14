@@ -228,7 +228,7 @@ alias:: NetworkLayer
     "bridgesTo": [
       {
         "@id": "urn:ngm:class:architectural-layer",
-        "label": "ArchitecturalLayer"
+        "label": "Architectural Layer"
       },
       {
         "@id": "urn:ngm:class:distributed-systems",

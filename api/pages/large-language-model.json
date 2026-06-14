@@ -110,7 +110,7 @@
       },
       {
         "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
-        "label": "EU AI Act"
+        "label": "EU AI Act Regulatory Instrument"
       }
     ],
     "uses": [
@@ -153,7 +153,7 @@
       },
       {
         "id": "urn:ngm:class:constitutional-ai-training-methodology",
-        "label": "Constitutional AI"
+        "label": "Constitutional AI Training Methodology"
       },
       {
         "id": "urn:ngm:class:hallucination",

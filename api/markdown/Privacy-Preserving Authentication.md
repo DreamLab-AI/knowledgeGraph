@@ -49,7 +49,7 @@ public:: true
       {"@id": "urn:ngm:class:minimal-disclosure-principle", "label": "Minimal Disclosure Principle"}
     ],
     "supports": [
-      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self-Sovereign Identity"},
+      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self Sovereign Identity"},
       {"@id": "urn:ngm:class:digital-identity-wallet", "label": "Digital Identity Wallet"},
       {"@id": "urn:ngm:class:age-verification", "label": "Age Verification"}
     ],

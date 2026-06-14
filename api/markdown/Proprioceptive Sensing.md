@@ -23,7 +23,7 @@ public:: true
   "definition": "Proprioceptive sensing is a robot's perception of its own internal state, such as joint angles, motor torques, link velocities, and body orientation, as distinct from exteroceptive sensing of the external environment. It relies on encoders, force/torque sensors, and inertial measurement units. It is essential for balance, whole-body control, and safe interaction, especially in legged and humanoid robots.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:robo-perception", "label": "Robot Perception"}],
+  "subClassOf": [{"@id": "urn:ngm:class:robo-perception", "label": "Perception and Sensing"}],
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:mechanical-component", "label": "Mechanical Component"},

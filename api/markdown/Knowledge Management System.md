@@ -48,7 +48,7 @@ public:: true
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-data-management",
-      "label": "Infra Data Management"
+      "label": "Data Management"
     }
   ],
   "relations": {

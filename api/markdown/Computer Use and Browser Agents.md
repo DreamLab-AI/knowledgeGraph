@@ -611,7 +611,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:set-of-mark-prompting",
-        "label": "Set of Mark Prompting"
+        "label": "Set-of-Mark Prompting"
       },
       {
         "@id": "urn:ngm:class:tool-schema",
@@ -637,7 +637,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:large-scale-pretrained-foundation-model",
-        "label": "Foundation Model"
+        "label": "Large-Scale Pretrained Foundation Model"
       },
       {
         "@id": "urn:ngm:class:inference-compute",
@@ -709,7 +709,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:plan-and-execute",
-        "label": "Plan-and-Execute"
+        "label": "Plan and Execute"
       },
       {
         "@id": "urn:ngm:class:re-act",
@@ -725,7 +725,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:set-of-mark-prompting",
-        "label": "Set of Mark Prompting"
+        "label": "Set-of-Mark Prompting"
       },
       {
         "@id": "urn:ngm:class:visual-grounding",
@@ -853,11 +853,11 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:model-context-protocol-anthropic-2024",
-        "label": "Model Context Protocol (Anthropic 2024)"
+        "label": "Model Context Protocol Anthropic 2024"
       },
       {
         "@id": "urn:ngm:class:owasp-llm-top-10-2025",
-        "label": "OWASP LLM Top 10 (2025)"
+        "label": "OWASP LLM Top 10 2025"
       },
       {
         "@id": "urn:ngm:class:web-driver-bi-di-w3-c-2024",
@@ -867,7 +867,7 @@ public:: true
     "bridgesTo": [
       {
         "@id": "urn:ngm:class:intelligent-systems",
-        "label": "Intelligent System"
+        "label": "Intelligent Systems"
       },
       {
         "@id": "urn:ngm:class:cognitive-architecture",

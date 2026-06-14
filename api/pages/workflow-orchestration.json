@@ -30,7 +30,7 @@
     "relatedTo": [
       {
         "id": "urn:ngm:class:ai-application",
-        "label": "Agentic Systems Domain"
+        "label": "AI Application"
       },
       {
         "id": "urn:ngm:class:function-calling",

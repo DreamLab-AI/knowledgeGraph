@@ -57,7 +57,7 @@ public:: true
   "subClassOf": [
     {
       "@id": "urn:ngm:class:decentralised-finance",
-      "label": "Decentralised Finance Domain"
+      "label": "Decentralised Finance"
     }
   ],
   "relations": {

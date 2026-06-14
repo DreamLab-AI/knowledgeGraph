@@ -884,7 +884,7 @@ alias:: BC-0431-privacy-preserving-blockchain, Privacy-Preserving Blockchain
       },
       {
         "@id": "urn:ngm:class:secure-enclave",
-        "label": "Secure Enclaves"
+        "label": "Secure Enclave"
       },
       {
         "@id": "urn:ngm:class:viewing-keys",
@@ -892,11 +892,11 @@ alias:: BC-0431-privacy-preserving-blockchain, Privacy-Preserving Blockchain
       },
       {
         "@id": "urn:ngm:class:zk-snarks",
-        "label": "zk-SNARKs"
+        "label": "ZK-SNARKs"
       },
       {
         "@id": "urn:ngm:class:zk-starks",
-        "label": "zk-STARKs"
+        "label": "ZK-STARKs"
       }
     ],
     "relatedTo": [
@@ -990,7 +990,7 @@ alias:: BC-0431-privacy-preserving-blockchain, Privacy-Preserving Blockchain
       },
       {
         "@id": "urn:ngm:class:mi-ca-regulation",
-        "label": "EU MiCA Regulation"
+        "label": "MiCA Regulation"
       }
     ]
   },

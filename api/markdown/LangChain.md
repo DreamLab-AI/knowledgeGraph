@@ -265,7 +265,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Model"
+        "label": "Large Language Models"
       },
       {
         "@id": "urn:ngm:class:python-3",
@@ -287,7 +287,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:retrieval-augmented-generation",
-        "label": "Retrieval Augmented Generation"
+        "label": "Retrieval-Augmented Generation"
       },
       {
         "@id": "urn:ngm:class:tool-calling-agent",

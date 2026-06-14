@@ -156,7 +156,7 @@ alias:: DecentralizedStorage
   "maturity": "emerging",
   "subClassOf": {
     "@id": "urn:ngm:class:infra-data-management",
-    "label": "Infra Data Management"
+    "label": "Data Management"
   },
   "relations": {
     "hasPart": [
@@ -203,7 +203,7 @@ alias:: DecentralizedStorage
     "bridgesTo": [
       {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
       {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
-      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse Domain"}
+      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:storj", "label": "Storj"},

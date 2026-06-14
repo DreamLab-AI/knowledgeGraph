@@ -99,7 +99,7 @@ public:: true
     "enables": [
       {
         "@id": "urn:ngm:class:autonomous-system",
-        "label": "Autonomous Systems"
+        "label": "Autonomous System"
       },
       {
         "@id": "urn:ngm:class:task-automation",

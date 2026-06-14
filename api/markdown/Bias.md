@@ -113,7 +113,7 @@ public:: true
       {"@id": "urn:ngm:class:transparency", "label": "Transparency"},
       {"@id": "urn:ngm:class:accountability", "label": "Accountability"},
       {"@id": "urn:ngm:class:discrimination", "label": "Discrimination"},
-      {"@id": "urn:ngm:class:safety-and-alignment", "label": "Safety and Alignment"}
+      {"@id": "urn:ngm:class:safety-and-alignment", "label": "Safety and alignment"}
     ],
     "requires": [
       {"@id": "urn:ngm:class:bias-detection-methods", "label": "Bias Detection Methods"},
@@ -142,8 +142,8 @@ public:: true
     ],
     "standardizedBy": [
       {"@id": "urn:ngm:class:eu-ai-act", "label": "EU AI Act"},
-      {"@id": "urn:ngm:class:nist-ai-rmf", "label": "NIST AI Risk Management Framework"},
-      {"@id": "urn:ngm:class:iso-iec-tr-24027", "label": "ISO/IEC TR 24027"}
+      {"@id": "urn:ngm:class:nist-ai-rmf", "label": "NIST AI RMF"},
+      {"@id": "urn:ngm:class:iso-iec-tr-24027", "label": "ISO-IEC TR 24027"}
     ],
     "bridgesTo": [
       {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"},

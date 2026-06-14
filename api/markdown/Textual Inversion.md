@@ -26,7 +26,7 @@ public:: true
   "subClassOf": [{"@id": "urn:ngm:class:parameter-efficient-fine-tuning", "label": "Parameter-Efficient Fine-Tuning"}],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:kohya-dreambooth-and-similar", "label": "Kohya, DreamBooth and Similar"},
+      {"@id": "urn:ngm:class:kohya-dreambooth-and-similar", "label": "KOHYA Dreambooth and similar"},
       {"@id": "urn:ngm:class:generative-model", "label": "Generative Model"}
     ]
   },

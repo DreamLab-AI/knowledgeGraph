@@ -25,7 +25,7 @@ public:: true
   "maturity": "emerging",
   "subClassOf": [{"@id": "urn:ngm:class:standards-body", "label": "Standards Body"}],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:hyperledger-indy", "label": "Hyperledger Indy"}, {"@id": "urn:ngm:class:blockchain-as-a-service", "label": "Blockchain as a Service"}]
+    "relatedTo": [{"@id": "urn:ngm:class:hyperledger-indy", "label": "Hyperledger Indy"}, {"@id": "urn:ngm:class:blockchain-as-a-service", "label": "Blockchain As A Service"}]
   },
   "quality": 0.72
 }

@@ -25,7 +25,7 @@ public:: true
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:sensor", "label": "Sensor"}],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:brain-computer-interfaces", "label": "Brain-Computer Interfaces"}, {"@id": "urn:ngm:class:environmental-monitoring", "label": "Environmental Monitoring"}]
+    "relatedTo": [{"@id": "urn:ngm:class:brain-computer-interfaces", "label": "Brain Computer Interfaces"}, {"@id": "urn:ngm:class:environmental-monitoring", "label": "Environmental Monitoring"}]
   },
   "quality": 0.72
 }

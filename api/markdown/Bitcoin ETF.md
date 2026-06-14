@@ -564,7 +564,7 @@ public:: true
     },
     {
       "@id": "urn:ngm:class:bc-token-and-asset",
-      "label": "BC Token And Asset"
+      "label": "Token and Asset"
     },
     {
       "@id": "urn:ngm:class:exchange-traded-fund",
@@ -715,7 +715,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:multi-signature-wallet",
-        "label": "Multi-Signature Wallets"
+        "label": "Multi-Signature Wallet"
       }
     ],
     "relatedTo": [

@@ -25,7 +25,7 @@ public:: true
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:ai-application", "label": "AI Application"}],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:midjourney-text-to-image-service", "label": "Midjourney"}, {"@id": "urn:ngm:class:proprietary-image-generation", "label": "Proprietary Image Generation"}]
+    "relatedTo": [{"@id": "urn:ngm:class:midjourney-text-to-image-service", "label": "Midjourney Text-to-Image Service"}, {"@id": "urn:ngm:class:proprietary-image-generation", "label": "Proprietary Image Generation"}]
   },
   "quality": 0.72
 }

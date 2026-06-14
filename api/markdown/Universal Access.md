@@ -23,7 +23,7 @@ public:: true
   "definition": "Universal access is the design principle and policy goal that products, services and digital experiences be usable by the widest possible range of people regardless of ability, device, connectivity or context. In immersive and metaverse settings it requires accommodating diverse sensory, motor and cognitive capabilities so that no user is excluded from participation. It is the foundation on which accessible experiences and accessibility guidelines are built.",
   "domain": "metaverse",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:sc-governance-and-safety", "label": "Metaverse Governance and Safety"}],
+  "subClassOf": [{"@id": "urn:ngm:class:sc-governance-and-safety", "label": "Governance and Safety"}],
   "relations": {
     "relatedTo": [{"@id": "urn:ngm:class:accessible-experience", "label": "Accessible Experience"}, {"@id": "urn:ngm:class:xr-accessibility-guideline", "label": "XR Accessibility Guideline"}]
   },

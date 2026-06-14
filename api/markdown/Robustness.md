@@ -153,7 +153,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:iso-iec-23894",
-        "label": "ISO IEC 23894"
+        "label": "ISO-IEC 23894"
       }
     ],
     "contrastsWith": [

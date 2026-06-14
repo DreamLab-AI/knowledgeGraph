@@ -92,7 +92,7 @@ public:: true
     "relatedTo": [
       {
         "@id": "urn:ngm:class:intellectual-property-rights-framework",
-        "label": "copyright"
+        "label": "Intellectual Property Rights Framework"
       }
     ]
   }

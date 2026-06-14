@@ -39,7 +39,7 @@
     "relatedTo": [
       {
         "id": "urn:ngm:class:cryptographic-privacy-activist",
-        "label": "cypherpunk"
+        "label": "Cryptographic Privacy Activist"
       },
       {
         "id": "urn:ngm:class:dao-governance",

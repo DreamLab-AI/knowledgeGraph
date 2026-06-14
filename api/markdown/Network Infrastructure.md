@@ -93,7 +93,7 @@ alias:: NetworkInfrastructure
     "relatedTo": [
       {"@id": "urn:ngm:class:cybersecurity", "label": "Cybersecurity"},
       {"@id": "urn:ngm:class:network-topology", "label": "Network Topology"},
-      {"@id": "urn:ngm:class:quality-of-service", "label": "Quality of Service"}
+      {"@id": "urn:ngm:class:quality-of-service", "label": "Quality Of Service"}
     ]
   },
   "sameAs": [

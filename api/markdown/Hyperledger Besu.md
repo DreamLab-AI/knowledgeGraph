@@ -158,7 +158,7 @@ alias:: BC-0427-hyperledger-besu
       },
       {
         "@id": "urn:ngm:class:privacy-preserving-blockchain",
-        "label": "Privacy-Preserving Blockchain"
+        "label": "Privacy Preserving Blockchain"
       },
       {
         "@id": "urn:ngm:class:private-transaction",
@@ -168,7 +168,7 @@ alias:: BC-0427-hyperledger-besu
     "uses": [
       {
         "@id": "urn:ngm:class:proof-of-work",
-        "label": "Proof of Work"
+        "label": "Proof Of Work"
       },
       {
         "@id": "urn:ngm:class:private-channels",
@@ -216,7 +216,7 @@ alias:: BC-0427-hyperledger-besu
       },
       {
         "@id": "urn:ngm:class:decentralized-finance",
-        "label": "Decentralised Finance"
+        "label": "Decentralized Finance"
       }
     ],
     "standardizedBy": [

@@ -190,7 +190,7 @@ alias:: TechnologyAdoption
       },
       {
         "@id": "urn:ngm:class:technology-infrastructure",
-        "label": "Infrastructure"
+        "label": "Technology Infrastructure"
       },
       {
         "@id": "urn:ngm:class:training",

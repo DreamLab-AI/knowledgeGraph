@@ -19,7 +19,7 @@
     "hasPart": [
       {
         "id": "urn:ngm:class:byte-pair-encoding",
-        "label": "Byte-Pair Encoding"
+        "label": "Byte Pair Encoding"
       },
       {
         "id": "urn:ngm:class:wordpiece-tokenisation",

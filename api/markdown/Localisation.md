@@ -33,7 +33,7 @@ public:: true
   "subClassOf": [
     {
       "@id": "urn:ngm:class:robo-navigation-and-planning",
-      "label": "Robo Navigation and Planning"
+      "label": "Navigation and Planning"
     }
   ],
   "relations": {

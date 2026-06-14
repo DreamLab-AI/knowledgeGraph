@@ -9,7 +9,7 @@
   "subClassOf": [
     {
       "id": "urn:ngm:class:artificial-intelligence",
-      "label": "Artificial Intelligence Domain"
+      "label": "Artificial Intelligence"
     }
   ],
   "entityType": "Class",
@@ -114,7 +114,7 @@
       },
       {
         "id": "urn:ngm:class:human-in-the-loop",
-        "label": "Human-in-the-Loop"
+        "label": "Human in the Loop"
       }
     ],
     "standardizedBy": [],
@@ -131,7 +131,7 @@
       },
       {
         "id": "urn:ngm:class:informed-decision-making",
-        "label": "Informed Decision-Making"
+        "label": "Informed decision-making"
       },
       {
         "id": "urn:ngm:class:predictive-analytics",

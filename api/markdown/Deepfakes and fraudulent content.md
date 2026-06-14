@@ -655,11 +655,11 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:node-based-diffusion-pipeline-interface",
-        "label": "ComfyUI"
+        "label": "Node-Based Diffusion Pipeline Interface"
       },
       {
         "@id": "urn:ngm:class:face-swap",
-        "label": "FaceSwap"
+        "label": "Face Swap"
       }
     ],
     "relatedTo": [

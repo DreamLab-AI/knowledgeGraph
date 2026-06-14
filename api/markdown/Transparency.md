@@ -153,7 +153,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:nist-ai-rmf",
-        "label": "NIST AI Risk Management Framework"
+        "label": "NIST AI RMF"
       },
       {
         "@id": "urn:ngm:class:iso-iec-tr-24028",
@@ -163,7 +163,7 @@ public:: true
     "bridgesTo": [
       {
         "@id": "urn:ngm:class:open-source-software",
-        "label": "Open-Source Software"
+        "label": "Open Source Software"
       },
       {
         "@id": "urn:ngm:class:blockchain-auditability",

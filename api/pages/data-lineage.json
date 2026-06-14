@@ -9,7 +9,7 @@
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-data-management",
-      "label": "Infrastructure Data Management"
+      "label": "Data Management"
     }
   ],
   "entityType": "Class",
@@ -118,7 +118,7 @@
     "partOf": [
       {
         "id": "urn:ngm:class:data-governance",
-        "label": "Data Governance Domain"
+        "label": "Data Governance"
       },
       {
         "id": "urn:ngm:class:metadata-management",

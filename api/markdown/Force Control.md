@@ -469,7 +469,7 @@ alias:: ForceControl
     },
     {
       "@id": "urn:ngm:class:robo-actuation-and-control",
-      "label": "Robo Actuation And Control"
+      "label": "Actuation and Control"
     },
     {
       "@id": "urn:ngm:class:robotic-control",
@@ -522,7 +522,7 @@ alias:: ForceControl
       },
       {
         "@id": "urn:ngm:class:real-time-computation",
-        "label": "Real-time Computation"
+        "label": "Real-Time Computation"
       },
       {
         "@id": "urn:ngm:class:robot-dynamics-model",

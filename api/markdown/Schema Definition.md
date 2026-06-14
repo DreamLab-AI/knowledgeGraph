@@ -38,7 +38,7 @@ public:: true
     "enables": [
       {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
       {"@id": "urn:ngm:class:linked-data", "label": "Linked Data"},
-      {"@id": "urn:ngm:class:semantic-web-linked-data-standard", "label": "Semantic Web"}
+      {"@id": "urn:ngm:class:semantic-web-linked-data-standard", "label": "Semantic Web Linked Data Standard"}
     ],
     "supports": [
       {"@id": "urn:ngm:class:data-schema", "label": "Data Schema"},

@@ -72,7 +72,7 @@ public:: true
     "requires": [
       {"@id": "urn:ngm:class:camera-calibration", "label": "Camera Calibration"},
       {"@id": "urn:ngm:class:differentiable-rendering", "label": "Differentiable Rendering"},
-      {"@id": "urn:ngm:class:structure-from-motion", "label": "Structure from Motion"}
+      {"@id": "urn:ngm:class:structure-from-motion", "label": "Structure-from-Motion"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:novel-view-synthesis", "label": "Novel View Synthesis"},

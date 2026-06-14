@@ -156,7 +156,7 @@ alias:: Extended Reality Xr, ExtendedRealityXR
       },
       {
         "@id": "urn:ngm:class:reality-virtuality-continuum",
-        "label": "Reality-Virtuality Continuum"
+        "label": "Reality Virtuality Continuum"
       },
       {
         "@id": "urn:ngm:class:virtual-reality-vr",

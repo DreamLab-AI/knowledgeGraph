@@ -9,7 +9,7 @@
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-network-and-comms",
-      "label": "Infra Network And Comms"
+      "label": "Network and Communication"
     }
   ],
   "entityType": "Class",
@@ -49,7 +49,7 @@
     "implements": [
       {
         "id": "urn:ngm:class:event-driven-architecture",
-        "label": "Event-Driven Architecture"
+        "label": "Event Driven Architecture"
       },
       {
         "id": "urn:ngm:class:publish-subscribe-pattern",

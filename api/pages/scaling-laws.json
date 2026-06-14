@@ -34,7 +34,7 @@
     "enables": [
       {
         "id": "urn:ngm:class:pre-training",
-        "label": "Pre-Training"
+        "label": "Pre Training"
       },
       {
         "id": "urn:ngm:class:large-language-models",

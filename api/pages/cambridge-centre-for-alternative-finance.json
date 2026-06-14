@@ -9,7 +9,7 @@
   "subClassOf": [
     {
       "id": "urn:ngm:class:financial-infrastructure",
-      "label": "Financial Infrastructure Domain"
+      "label": "Financial Infrastructure"
     }
   ],
   "entityType": "Class",
@@ -92,7 +92,7 @@
     "uses": [
       {
         "id": "urn:ngm:class:proof-of-work",
-        "label": "Proof of Work"
+        "label": "Proof Of Work"
       },
       {
         "id": "urn:ngm:class:distributed-ledger-technology",

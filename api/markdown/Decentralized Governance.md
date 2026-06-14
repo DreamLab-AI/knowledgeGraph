@@ -425,7 +425,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:dao",
-        "label": "DAOs"
+        "label": "DAO"
       },
       {
         "@id": "urn:ngm:class:decentralized-finance",
@@ -505,7 +505,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:timelock",
-        "label": "Timelocks"
+        "label": "Timelock"
       }
     ],
     "relatedTo": [
@@ -549,7 +549,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:de-fi-protocol",
-        "label": "DeFi Protocols"
+        "label": "De Fi Protocol"
       },
       {
         "@id": "urn:ngm:class:gitcoin-grants",
@@ -575,7 +575,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:compound-governor-bravo",
-        "label": "Compound GovernorBravo"
+        "label": "Compound Governor Bravo"
       },
       {
         "@id": "urn:ngm:class:cosmos-governance-module",

@@ -94,7 +94,7 @@ elevatedFrom:: [[Coding support]]
       {"@id": "urn:ngm:class:software-engineering", "label": "Software Engineering"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:practitioner-workflow-optimisation-heuristics", "label": "Tips and Tricks"},
+      {"@id": "urn:ngm:class:practitioner-workflow-optimisation-heuristics", "label": "Practitioner Workflow Optimisation Heuristics"},
       {"@id": "urn:ngm:class:gpt-engineer", "label": "GPT Engineer"}
     ]
   },

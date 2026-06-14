@@ -26,7 +26,7 @@
     "enables": [
       {
         "id": "urn:ngm:class:telecollaboration",
-        "label": "TELE-002-telecollaboration"
+        "label": "Telecollaboration"
       }
     ],
     "dependsOn": [],

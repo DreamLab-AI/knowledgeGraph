@@ -25,7 +25,7 @@ public:: true
   "maturity": "emerging",
   "subClassOf": [{"@id": "urn:ngm:class:ai-governance-framework", "label": "AI Governance Framework"}],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:ai-search", "label": "AI Search"}, {"@id": "urn:ngm:class:hyper-personalisation", "label": "Hyper-Personalisation"}]
+    "relatedTo": [{"@id": "urn:ngm:class:ai-search", "label": "AI Search"}, {"@id": "urn:ngm:class:hyper-personalisation", "label": "Hyper personalisation"}]
   },
   "quality": 0.72
 }

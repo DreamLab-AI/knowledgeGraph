@@ -127,17 +127,17 @@ public:: true
   ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:infra-computing-and-cloud", "label": "Disruptive Tech Domain"}
+      {"@id": "urn:ngm:class:infra-computing-and-cloud", "label": "Computing and Cloud"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:technology-disruption-dynamics", "label": "Disruption"},
+      {"@id": "urn:ngm:class:technology-disruption-dynamics", "label": "Technology Disruption Dynamics"},
       {"@id": "urn:ngm:class:technology-adoption", "label": "Technology Adoption"},
       {"@id": "urn:ngm:class:digital-transformation", "label": "Digital Transformation"},
       {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"},
       {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
       {"@id": "urn:ngm:class:internet-of-things", "label": "Internet of Things"}
     ],

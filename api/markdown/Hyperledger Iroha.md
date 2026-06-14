@@ -667,7 +667,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:protocol-buffer",
-        "label": "Protocol Buffers"
+        "label": "Protocol Buffer"
       },
       {
         "@id": "urn:ngm:class:rocks-db",
@@ -697,7 +697,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:m-bridge",
-        "label": "mBridge"
+        "label": "M-Bridge"
       },
       {
         "@id": "urn:ngm:class:polkadot",

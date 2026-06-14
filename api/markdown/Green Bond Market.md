@@ -23,7 +23,7 @@ public:: true
   "definition": "The green bond market is the segment of fixed-income capital markets in which debt instruments are issued specifically to finance projects with environmental or climate benefits, such as renewable energy, clean transport, or sustainable infrastructure. Proceeds are ring-fenced and reported against recognised frameworks like the ICMA Green Bond Principles. It channels institutional capital toward decarbonisation while offering investors verifiable sustainability exposure.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:bc-defi-and-economics", "label": "BC DeFi and Economics"}],
+  "subClassOf": [{"@id": "urn:ngm:class:bc-defi-and-economics", "label": "DeFi and Economics"}],
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:sustainable-finance", "label": "Sustainable Finance"},

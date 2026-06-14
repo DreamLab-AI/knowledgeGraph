@@ -65,7 +65,7 @@ public:: true
       {"@id": "urn:ngm:class:ietf", "label": "IETF"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:quality-of-service", "label": "Quality of Service"},
+      {"@id": "urn:ngm:class:quality-of-service", "label": "Quality Of Service"},
       {"@id": "urn:ngm:class:network-latency", "label": "Network Latency"},
       {"@id": "urn:ngm:class:bandwidth-adaptation", "label": "Bandwidth Adaptation"}
     ],

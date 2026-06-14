@@ -56,7 +56,7 @@ public:: true
   "qualityScore": 0.72,
   "subClassOf": {
     "@id": "urn:ngm:class:ai-technique",
-    "label": "Ai Technique"
+    "label": "AI Technique"
   },
   "sameAs": [
     {

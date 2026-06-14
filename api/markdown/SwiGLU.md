@@ -26,7 +26,7 @@ public:: true
   "subClassOf": [{"@id": "urn:ngm:class:neural-network", "label": "Neural Network"}],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:feed-forward-network", "label": "Feed-Forward Network"},
+      {"@id": "urn:ngm:class:feed-forward-network", "label": "Feed Forward Network"},
       {"@id": "urn:ngm:class:transformers", "label": "Transformers"}
     ]
   },

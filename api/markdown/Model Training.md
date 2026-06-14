@@ -480,7 +480,7 @@ public:: true
     },
     {
       "@id": "urn:ngm:class:neural-network",
-      "label": "Neural Networks"
+      "label": "Neural Network"
     },
     {
       "@id": "urn:ngm:class:optimisation",
@@ -511,7 +511,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:constitutional-ai-training-methodology",
-        "label": "Constitutional AI"
+        "label": "Constitutional AI Training Methodology"
       },
       {
         "@id": "urn:ngm:class:direct-preference-optimization",
@@ -523,7 +523,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:pre-training",
-        "label": "Pre-training"
+        "label": "Pre Training"
       },
       {
         "@id": "urn:ngm:class:reward-model",
@@ -537,7 +537,7 @@ public:: true
     "requires": [
       {
         "@id": "urn:ngm:class:gpu-cluster",
-        "label": "GPU Clusters"
+        "label": "GPU Cluster"
       },
       {
         "@id": "urn:ngm:class:tokeniser",
@@ -587,7 +587,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:large-scale-pretrained-foundation-model",
-        "label": "Foundation Models"
+        "label": "Large-Scale Pretrained Foundation Model"
       },
       {
         "@id": "urn:ngm:class:large-language-models",
@@ -663,7 +663,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:large-scale-pretrained-foundation-model",
-        "label": "Foundation Models"
+        "label": "Large-Scale Pretrained Foundation Model"
       }
     ],
     "relatedTo": [
@@ -707,11 +707,11 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:constitutional-ai-training-methodology-language-model-family",
-        "label": "Anthropic Claude"
+        "label": "Constitutional AI Language Model Family"
       },
       {
         "@id": "urn:ngm:class:instruction-following-conversational-ai-system",
-        "label": "ChatGPT"
+        "label": "Instruction-Following Conversational AI System"
       },
       {
         "@id": "urn:ngm:class:evaluation-benchmarks-and-leaderboards",
@@ -737,11 +737,11 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:responsible-scaling-policy",
-        "label": "Responsible Scaling Policies"
+        "label": "Responsible Scaling Policy"
       },
       {
         "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
-        "label": "EU AI Act"
+        "label": "EU AI Act Regulatory Instrument"
       }
     ]
   },

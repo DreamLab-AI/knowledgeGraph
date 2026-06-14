@@ -24,7 +24,7 @@ public:: true
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:bc-defi-and-economics", "label": "Bc Defi And Economics"}
+    {"@id": "urn:ngm:class:bc-defi-and-economics", "label": "DeFi and Economics"}
   ],
   "relations": {
     "partOf": [

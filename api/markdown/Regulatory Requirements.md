@@ -152,7 +152,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:self-regulation",
-        "label": "Self Regulation"
+        "label": "Self-Regulation"
       }
     ],
     "bridgesTo": [

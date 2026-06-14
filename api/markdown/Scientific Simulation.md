@@ -23,7 +23,7 @@ public:: true
   "definition": "Scientific simulation is the numerical modelling of physical, chemical, or biological systems to predict behaviour that is impractical to observe directly. It solves governing equations across discretised domains, as in fluid dynamics, molecular dynamics, and climate modelling, typically on high-performance computing infrastructure. Machine learning increasingly augments simulation through learned surrogates and data-driven generation.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:infra-computing-and-cloud", "label": "Infrastructure Computing and Cloud"}],
+  "subClassOf": [{"@id": "urn:ngm:class:infra-computing-and-cloud", "label": "Computing and Cloud"}],
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:generative-adversarial-networks", "label": "Generative Adversarial Networks"},

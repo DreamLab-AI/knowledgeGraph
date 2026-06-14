@@ -23,7 +23,7 @@ public:: true
   "definition": "An Endorsement Policy is a rule, used in permissioned blockchains such as Hyperledger Fabric, that specifies which organisations' peers must execute and cryptographically sign a transaction proposal before it is considered valid. It encodes the trust and approval requirements for a smart contract, for example requiring signatures from a majority or a named set of consortium members. Endorsement policies are central to multi-party governance of enterprise distributed ledgers.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:bc-protocol-and-consensus", "label": "Blockchain Protocol and Consensus"}],
+  "subClassOf": [{"@id": "urn:ngm:class:bc-protocol-and-consensus", "label": "Protocol and Consensus"}],
   "relations": {
     "relatedTo": [{"@id": "urn:ngm:class:consortium-blockchain", "label": "Consortium Blockchain"}, {"@id": "urn:ngm:class:enterprise-smart-contracts", "label": "Enterprise Smart Contracts"}]
   },

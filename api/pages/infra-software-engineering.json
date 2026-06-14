@@ -9,7 +9,7 @@
   "subClassOf": [
     {
       "id": "urn:ngm:class:infrastructure",
-      "label": "Infrastructure Domain"
+      "label": "Infrastructure"
     }
   ],
   "entityType": "Class",

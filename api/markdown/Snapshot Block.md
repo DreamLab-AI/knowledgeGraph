@@ -23,7 +23,7 @@ public:: true
   "definition": "A snapshot block is a specific block height at which token balances are recorded to determine voting weight in a governance proposal, freezing eligibility so that votes reflect holdings at one fixed moment rather than fluctuating balances. Using a past block prevents vote-buying or borrowing tokens after a proposal opens. It is a core primitive in off-chain and on-chain DAO voting systems.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:bc-governance-and-regulation", "label": "Blockchain Governance and Regulation"}],
+  "subClassOf": [{"@id": "urn:ngm:class:bc-governance-and-regulation", "label": "Governance and Regulation"}],
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:snapshot-voting", "label": "Snapshot Voting"},

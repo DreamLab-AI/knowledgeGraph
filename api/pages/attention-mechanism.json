@@ -19,7 +19,7 @@
     "hasPart": [
       {
         "id": "urn:ngm:class:self-attention",
-        "label": "Self-Attention"
+        "label": "Self Attention"
       },
       {
         "id": "urn:ngm:class:multi-head-attention",
@@ -27,7 +27,7 @@
       },
       {
         "id": "urn:ngm:class:query-key-value",
-        "label": "Query-Key-Value"
+        "label": "Query Key Value"
       },
       {
         "id": "urn:ngm:class:softmax-function",
@@ -85,7 +85,7 @@
       },
       {
         "id": "urn:ngm:class:long-short-term-memory",
-        "label": "Long Short-Term Memory"
+        "label": "Long Short Term Memory"
       }
     ],
     "bridgesTo": [

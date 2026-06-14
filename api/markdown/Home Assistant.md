@@ -577,13 +577,13 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:docker-containerisation-platform",
-        "label": "Docker"
+        "label": "Docker Containerisation Platform"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:demand-side-response",
-        "label": "Demand Side Response"
+        "label": "Demand-Side Response"
       },
       {
         "@id": "urn:ngm:class:device-interoperability",
@@ -711,11 +711,11 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:constitutional-ai-training-methodology-language-model-family",
-        "label": "Anthropic Claude"
+        "label": "Constitutional AI Language Model Family"
       },
       {
         "@id": "urn:ngm:class:local-llm-runtime-platform",
-        "label": "Ollama"
+        "label": "Local LLM Runtime Platform"
       }
     ],
     "relatedTo": [
@@ -725,7 +725,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:demand-side-response",
-        "label": "Demand Side Response"
+        "label": "Demand-Side Response"
       },
       {
         "@id": "urn:ngm:class:edge-ai",

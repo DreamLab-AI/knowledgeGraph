@@ -623,7 +623,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:iso-iec-18013-5-m-dl",
-        "label": "ISO/IEC 18013-5 mDL"
+        "label": "ISO-IEC 18013-5 mDL"
       },
       {
         "@id": "urn:ngm:class:mdoc-cbor",
@@ -711,7 +711,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:self-sovereign-identity",
-        "label": "Self-Sovereign Identity"
+        "label": "Self Sovereign Identity"
       }
     ],
     "supports": [

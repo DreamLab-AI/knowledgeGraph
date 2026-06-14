@@ -78,7 +78,7 @@ public:: true
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:extended-reality", "label": "Extended Reality"},
-      {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human-Computer Interaction"},
+      {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human Computer Interaction"},
       {"@id": "urn:ngm:class:accessibility", "label": "Accessibility"},
       {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
     ],

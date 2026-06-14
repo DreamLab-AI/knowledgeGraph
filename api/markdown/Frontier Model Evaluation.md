@@ -25,7 +25,7 @@ public:: true
   "maturity": "emerging",
   "subClassOf": [{"@id": "urn:ngm:class:ai-governance-and-ethics", "label": "AI Governance and Ethics"}],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:frontier-models", "label": "Frontier Models"}, {"@id": "urn:ngm:class:asia-pacific-regulation", "label": "Asia-Pacific Regulation"}]
+    "relatedTo": [{"@id": "urn:ngm:class:frontier-models", "label": "Frontier Models"}, {"@id": "urn:ngm:class:asia-pacific-regulation", "label": "Asia Pacific Regulation"}]
   },
   "quality": 0.72
 }

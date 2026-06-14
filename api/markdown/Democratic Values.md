@@ -90,7 +90,7 @@ public:: true
       {"@id": "urn:ngm:class:attack-vector", "label": "Attack Vector"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:eu-ai-act-regulatory-instrument", "label": "EU AI Act"},
+      {"@id": "urn:ngm:class:eu-ai-act-regulatory-instrument", "label": "EU AI Act Regulatory Instrument"},
       {"@id": "urn:ngm:class:democratic-governance", "label": "Democratic Governance"},
       {"@id": "urn:ngm:class:privacy", "label": "Privacy"}
     ]

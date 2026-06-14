@@ -30,7 +30,7 @@ alias:: ISO IEC JTC 1 SC 42, ISO/IEC JTC 1/SC 42, ISO/IEC JTC1 SC42
       {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
       {"@id": "urn:ngm:class:ai-governance-framework", "label": "AI Governance Framework"},
       {"@id": "urn:ngm:class:nist-ai-rmf", "label": "NIST AI RMF"},
-      {"@id": "urn:ngm:class:eu-ai-act-regulatory-instrument", "label": "EU AI Act"}
+      {"@id": "urn:ngm:class:eu-ai-act-regulatory-instrument", "label": "EU AI Act Regulatory Instrument"}
     ],
     "standardizedBy": [
       {"@id": "urn:ngm:class:ai-trustworthiness", "label": "AI Trustworthiness"},

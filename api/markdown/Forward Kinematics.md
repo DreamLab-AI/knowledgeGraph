@@ -114,7 +114,7 @@ alias:: RB-1005-forward-kinematics
       },
       {
         "@id": "urn:ngm:class:kinematic-model",
-        "label": "Kinematic Model"
+        "label": "KinematicModel"
       },
       {
         "@id": "urn:ngm:class:denavit-hartenberg-parameters",

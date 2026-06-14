@@ -94,7 +94,7 @@ alias:: SemanticSegmentation
     "hasPart": [
       {"@id": "urn:ngm:class:pixel-classification", "label": "Pixel Classification"},
       {"@id": "urn:ngm:class:feature-extraction", "label": "Feature Extraction"},
-      {"@id": "urn:ngm:class:encoder-decoder-architecture", "label": "Encoder-Decoder Architecture"}
+      {"@id": "urn:ngm:class:encoder-decoder-architecture", "label": "Encoder Decoder Architecture"}
     ],
     "requires": [
       {"@id": "urn:ngm:class:convolutional-neural-network", "label": "Convolutional Neural Network"},

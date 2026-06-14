@@ -24,7 +24,7 @@
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-computing-and-cloud",
-      "label": "Infra Computing And Cloud"
+      "label": "Computing and Cloud"
     }
   ],
   "sameAs": [
@@ -65,11 +65,11 @@
     "contrastsWith": [
       {"@id": "urn:ngm:class:crash-fault-tolerant-system", "label": "Crash Fault Tolerant System"},
       {"@id": "urn:ngm:class:paxos-consensus", "label": "Paxos Consensus"},
-      {"@id": "urn:ngm:class:raft-consensus", "label": "Raft Consensus"}
+      {"@id": "urn:ngm:class:raft-consensus", "label": "RAFT Consensus"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:byzantine-generals-problem", "label": "Byzantine Generals Problem"},
-      {"@id": "urn:ngm:class:pbft", "label": "Practical Byzantine Fault Tolerance"},
+      {"@id": "urn:ngm:class:pbft", "label": "PBFT"},
       {"@id": "urn:ngm:class:tendermint", "label": "Tendermint"},
       {"@id": "urn:ngm:class:hotstuff-protocol", "label": "HotStuff Protocol"}
     ],

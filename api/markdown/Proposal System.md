@@ -200,7 +200,7 @@ alias:: ProposalSystem
     "enables": [
       {
         "@id": "urn:ngm:class:on-chain-voting",
-        "label": "On-Chain Voting"
+        "label": "On Chain Voting"
       },
       {
         "@id": "urn:ngm:class:protocol-upgrade",

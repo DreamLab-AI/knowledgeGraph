@@ -23,7 +23,7 @@ public:: true
   "definition": "API Management is the discipline and tooling concerned with designing, publishing, documenting, securing, monitoring, and analysing application programming interfaces throughout their lifecycle. It provides a centralised control plane that governs how internal and external consumers discover and consume backend services, enforcing policies such as authentication, rate-limiting, and traffic shaping at a gateway layer. Modern API management platforms combine developer portals, analytics dashboards, and policy engines to ensure reliability, security, and business alignment across distributed service ecosystems.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:technology-infrastructure", "label": "Infrastructure"}],
+  "subClassOf": [{"@id": "urn:ngm:class:technology-infrastructure", "label": "Technology Infrastructure"}],
   "relations": {
     "hasPart": [
       {"@id": "urn:ngm:class:api-gateway", "label": "API Gateway"},

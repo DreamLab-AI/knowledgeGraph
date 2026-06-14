@@ -33,7 +33,7 @@ public:: true
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-application",
-      "label": "Ai Application"
+      "label": "AI Application"
     }
   ],
   "relations": {

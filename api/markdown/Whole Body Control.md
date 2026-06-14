@@ -33,7 +33,7 @@ alias:: Whole-Body Control
   "subClassOf": [
     {
       "@id": "urn:ngm:class:robo-actuation-and-control",
-      "label": "Robo Actuation and Control"
+      "label": "Actuation and Control"
     }
   ],
   "relations": {

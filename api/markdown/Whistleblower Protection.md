@@ -25,7 +25,7 @@ public:: true
   "maturity": "emerging",
   "subClassOf": [{"@id": "urn:ngm:class:ai-governance-and-ethics", "label": "AI Governance and Ethics"}],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:california-ai-bill", "label": "California AI Bill"}, {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}]
+    "relatedTo": [{"@id": "urn:ngm:class:california-ai-bill", "label": "California AI bill"}, {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}]
   },
   "quality": 0.72
 }

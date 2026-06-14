@@ -23,7 +23,7 @@ public:: true
   "definition": "Environmental sensing is the acquisition of data about physical surroundings, such as temperature, light, humidity, air quality, sound, or proximity, using sensors. It provides the raw perceptual input that systems use to understand and respond to their context. In robotics, IoT, and context-aware applications it is the foundational layer enabling situational awareness and adaptive behaviour.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:robo-perception", "label": "Robot Perception"}],
+  "subClassOf": [{"@id": "urn:ngm:class:robo-perception", "label": "Perception and Sensing"}],
   "relations": {
     "relatedTo": [{"@id": "urn:ngm:class:context-awareness", "label": "Context Awareness"}, {"@id": "urn:ngm:class:sensor", "label": "Sensor"}]
   },

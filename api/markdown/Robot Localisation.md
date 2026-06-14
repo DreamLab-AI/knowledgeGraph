@@ -23,7 +23,7 @@ public:: true
   "definition": "Robot localisation is the problem of estimating a robot's pose, its position and orientation, within a known map from noisy sensor measurements and motion commands. It is typically solved with probabilistic filters that maintain a belief over possible poses and update it as new observations arrive. Accurate localisation is a prerequisite for reliable navigation and planning.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:robo-navigation-and-planning", "label": "Robotics Navigation and Planning"}],
+  "subClassOf": [{"@id": "urn:ngm:class:robo-navigation-and-planning", "label": "Navigation and Planning"}],
   "relations": {
     "relatedTo": [{"@id": "urn:ngm:class:bayes-filter", "label": "Bayes Filter"}, {"@id": "urn:ngm:class:particle-filter", "label": "Particle Filter"}]
   },

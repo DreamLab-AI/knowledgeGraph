@@ -141,7 +141,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:database-system",
-        "label": "Database Systems"
+        "label": "Database System"
       },
       {
         "@id": "urn:ngm:class:replication-mechanisms",
@@ -165,7 +165,7 @@ public:: true
     "partOf": [
       {
         "@id": "urn:ngm:class:etsi-metaverse-domain-taxonomy",
-        "label": "ETSI Metaverse Domain Taxonomy"
+        "label": "Etsi Metaverse Domain Taxonomy"
       }
     ]
   },

@@ -20,7 +20,7 @@
     "requires": [
       {
         "id": "urn:ngm:class:end-effector",
-        "label": "End-Effector"
+        "label": "End Effector"
       },
       {
         "id": "urn:ngm:class:grasp-planning",

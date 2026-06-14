@@ -26,7 +26,7 @@ public:: true
   "subClassOf": [{"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"}],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:etsi-domain-data-management", "label": "ETSI Domain Data Management"},
+      {"@id": "urn:ngm:class:etsi-domain-data-management", "label": "ETSI Domain: Data Management"},
       {"@id": "urn:ngm:class:collective-intelligence-system", "label": "Collective Intelligence System"}
     ]
   },

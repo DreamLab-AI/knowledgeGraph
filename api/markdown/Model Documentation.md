@@ -26,7 +26,7 @@ public:: true
   "subClassOf": [{"@id": "urn:ngm:class:ai-governance-and-ethics", "label": "AI Governance and Ethics"}],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance Domain"},
+      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
       {"@id": "urn:ngm:class:algorithmic-transparency-index", "label": "Algorithmic Transparency Index"}
     ]
   },

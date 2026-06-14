@@ -56,7 +56,7 @@
       {"@id": "urn:ngm:class:stochastic-gradient-descent", "label": "Stochastic Gradient Descent"},
       {"@id": "urn:ngm:class:backpropagation", "label": "Backpropagation"},
       {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"},
-      {"@id": "urn:ngm:class:encoder-decoder-architecture", "label": "Encoder-Decoder Architecture"}
+      {"@id": "urn:ngm:class:encoder-decoder-architecture", "label": "Encoder Decoder Architecture"}
     ],
     "contrastsWith": [
       {"@id": "urn:ngm:class:discriminative-model", "label": "Discriminative Model"},

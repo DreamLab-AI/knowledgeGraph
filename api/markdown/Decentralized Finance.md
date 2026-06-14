@@ -23,7 +23,7 @@ public:: true
   "definition": "Decentralized finance (DeFi) is an ecosystem of financial services built on public blockchains using smart contracts to provide lending, trading, derivatives and asset management without traditional intermediaries. Protocols are composable and permissionless, letting users transact directly from self-custodied wallets. DeFi introduces novel mechanisms such as automated market makers and liquidity pools, along with risks like impermanent loss and smart-contract exploits.",
   "domain": "blockchain",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:bc-defi-and-economics", "label": "Blockchain DeFi and Economics"}],
+  "subClassOf": [{"@id": "urn:ngm:class:bc-defi-and-economics", "label": "DeFi and Economics"}],
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:impermanent-loss", "label": "Impermanent Loss"},

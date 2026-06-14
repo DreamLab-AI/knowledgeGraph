@@ -35,7 +35,7 @@
     "uses": [
       {
         "id": "urn:ngm:class:cross-chain-messaging",
-        "label": "Cross Chain Messaging"
+        "label": "Cross-Chain Messaging"
       },
       {
         "id": "urn:ngm:class:cross-chain-interoperability",

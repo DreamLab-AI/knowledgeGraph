@@ -51,7 +51,7 @@ alias:: InclusiveDesign
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:accessibility-standard", "label": "Accessibility Standard"},
-      {"@id": "urn:ngm:class:digital-technology-access-equity", "label": "Equity"},
+      {"@id": "urn:ngm:class:digital-technology-access-equity", "label": "Digital Technology Access Equity"},
       {"@id": "urn:ngm:class:usability", "label": "Usability"},
       {"@id": "urn:ngm:class:disability-rights", "label": "Disability Rights"},
       {"@id": "urn:ngm:class:design-thinking", "label": "Design Thinking"}

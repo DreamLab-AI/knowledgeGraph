@@ -24,7 +24,7 @@ public:: true
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:bc-defi-and-economics", "label": "Bc Defi And Economics"}
+    {"@id": "urn:ngm:class:bc-defi-and-economics", "label": "DeFi and Economics"}
   ],
   "relations": {
     "hasPart": [
@@ -46,7 +46,7 @@ public:: true
     "uses": [
       {"@id": "urn:ngm:class:verifiable-credentials", "label": "Verifiable Credentials"},
       {"@id": "urn:ngm:class:dao", "label": "DAO"},
-      {"@id": "urn:ngm:class:on-chain-governance", "label": "On-Chain Governance"},
+      {"@id": "urn:ngm:class:on-chain-governance", "label": "On-chain Governance"},
       {"@id": "urn:ngm:class:identity-attestation", "label": "Identity Attestation"}
     ],
     "dependsOn": [
@@ -62,7 +62,7 @@ public:: true
       {"@id": "urn:ngm:class:venture-capital", "label": "Venture Capital"}
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self-Sovereign Identity"},
+      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self Sovereign Identity"},
       {"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"},
       {"@id": "urn:ngm:class:coordination-mechanism", "label": "Coordination Mechanism"}
     ],

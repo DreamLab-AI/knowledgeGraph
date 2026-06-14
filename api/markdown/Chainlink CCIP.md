@@ -34,7 +34,7 @@ alias:: Chainlink-CCIP
       {"@id": "urn:ngm:class:merkle-tree", "label": "Merkle Tree"}
     ],
     "enables": [
-      {"@id": "urn:ngm:class:cross-chain-asset-transfer", "label": "Cross-Chain Asset Transfer"},
+      {"@id": "urn:ngm:class:cross-chain-asset-transfer", "label": "Cross Chain Asset Transfer"},
       {"@id": "urn:ngm:class:cross-chain-messaging", "label": "Cross-Chain Messaging"},
       {"@id": "urn:ngm:class:programmable-token-transfer", "label": "Programmable Token Transfer"},
       {"@id": "urn:ngm:class:cross-chain-defi", "label": "Cross-Chain DeFi"},

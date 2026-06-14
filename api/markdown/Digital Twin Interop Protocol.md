@@ -201,13 +201,13 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:cross-platform-digital-twins",
-        "label": "Cross-Platform Digital Twins"
+        "label": "Cross Platform Digital Twins"
       }
     ],
     "implements": [
       {
         "@id": "urn:ngm:class:spatial-computing",
-        "label": "spatial-computing"
+        "label": "Spatial Computing"
       }
     ],
     "partOf": [

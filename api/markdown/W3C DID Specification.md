@@ -29,7 +29,7 @@ public:: true
       {"@id": "urn:ngm:class:w3-c", "label": "W3C"},
       {"@id": "urn:ngm:class:decentralized-identifiers", "label": "Decentralized Identifiers"},
       {"@id": "urn:ngm:class:did-document", "label": "DID Document"},
-      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self-Sovereign Identity"},
+      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self Sovereign Identity"},
       {"@id": "urn:ngm:class:digital-identity-standards", "label": "Digital Identity Standards"}
     ],
     "enables": [

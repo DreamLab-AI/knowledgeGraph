@@ -164,7 +164,7 @@ alias:: CollisionAvoidance
       },
       {
         "@id": "urn:ngm:class:lidar",
-        "label": "LiDAR"
+        "label": "Lidar"
       },
       {
         "@id": "urn:ngm:class:path-planning",
@@ -178,7 +178,7 @@ alias:: CollisionAvoidance
     "dependsOn": [
       {
         "@id": "urn:ngm:class:real-time-operating-system",
-        "label": "Real-time Operating System"
+        "label": "Real-Time Operating System"
       },
       {
         "@id": "urn:ngm:class:robot-trajectories",

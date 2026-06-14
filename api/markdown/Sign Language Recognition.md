@@ -25,7 +25,7 @@ public:: true
   "maturity": "emerging",
   "subClassOf": [{"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:hand-tracking", "label": "Hand Tracking"}, {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human-Computer Interaction"}]
+    "relatedTo": [{"@id": "urn:ngm:class:hand-tracking", "label": "Hand Tracking"}, {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human Computer Interaction"}]
   },
   "quality": 0.72
 }

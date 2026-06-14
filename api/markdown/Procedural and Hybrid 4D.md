@@ -364,7 +364,7 @@ public:: true
     },
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
-      "label": "SC Content And Assets"
+      "label": "Content and Assets"
     }
   ],
   "relations": {
@@ -545,7 +545,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:node-based-diffusion-pipeline-interface",
-        "label": "ComfyUI"
+        "label": "Node-Based Diffusion Pipeline Interface"
       },
       {
         "@id": "urn:ngm:class:digital-twin",

@@ -51,7 +51,7 @@ elevatedFrom:: [[Sam Hammond]]
   ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:ai-capability-temporal-horizon-framework", "label": "Soon-Next-Later (AI futurology)"},
+      {"@id": "urn:ngm:class:ai-capability-temporal-horizon-framework", "label": "AI Capability Temporal Horizon Framework"},
       {"@id": "urn:ngm:class:social-contract", "label": "Social Contract"},
       {"@id": "urn:ngm:class:artificial-general-intelligence", "label": "Artificial General Intelligence"}
     ],

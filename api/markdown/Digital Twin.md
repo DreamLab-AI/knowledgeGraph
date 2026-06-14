@@ -184,7 +184,7 @@ alias:: Digital Twins, Digital-Twin, DigitalTwin
       },
       {
         "@id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning"
+        "label": "Machine Learning Discipline"
       }
     ],
     "enables": [

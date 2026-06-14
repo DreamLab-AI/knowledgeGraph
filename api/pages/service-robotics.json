@@ -30,7 +30,7 @@
     "relatedTo": [
       {
         "id": "urn:ngm:class:robotics-core-concepts",
-        "label": "Robotics Core Concepts"
+        "label": "RoboticsCoreConcepts"
       },
       {
         "id": "urn:ngm:class:task-planning",

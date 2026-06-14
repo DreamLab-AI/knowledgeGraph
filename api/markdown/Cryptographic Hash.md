@@ -115,7 +115,7 @@ alias:: CryptographicHash
     "enables": [
       {"@id": "urn:ngm:class:digital-signatures", "label": "Digital Signatures"},
       {"@id": "urn:ngm:class:merkle-tree", "label": "Merkle Tree"},
-      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof of Work"},
+      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"},
       {"@id": "urn:ngm:class:password-hashing", "label": "Password Hashing"},
       {"@id": "urn:ngm:class:message-authentication-code", "label": "Message Authentication Code"},
       {"@id": "urn:ngm:class:commitment-scheme", "label": "Commitment Scheme"}

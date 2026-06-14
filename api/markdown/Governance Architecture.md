@@ -69,7 +69,7 @@ public:: true
     "enables": [
       {
         "@id": "urn:ngm:class:decentralised-decision-making",
-        "label": "Decentralised Decision Making"
+        "label": "Decentralised Decision-Making"
       }
     ]
   },

@@ -27,7 +27,7 @@ public:: true
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:motion-control", "label": "Motion Control"},
-      {"@id": "urn:ngm:class:velocity-control", "label": "Velocity Control"}
+      {"@id": "urn:ngm:class:velocity-control", "label": "VelocityControl"}
     ]
   },
   "quality": 0.72

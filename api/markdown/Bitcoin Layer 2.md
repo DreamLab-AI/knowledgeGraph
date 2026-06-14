@@ -23,7 +23,7 @@ public:: true
   "definition": "Bitcoin Layer 2 refers to protocols built on top of the Bitcoin base chain that increase transaction throughput, reduce fees, or add functionality while inheriting Bitcoin's security. Examples include the Lightning Network for fast payments and federated systems such as Fedimint and Cashu for custodial and ecash-style scaling. These layers settle to the base chain periodically, trading some on-chain finality for speed and cost efficiency.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:bc-protocol-and-consensus", "label": "Blockchain Protocol and Consensus"}],
+  "subClassOf": [{"@id": "urn:ngm:class:bc-protocol-and-consensus", "label": "Protocol and Consensus"}],
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:cashu", "label": "Cashu"},

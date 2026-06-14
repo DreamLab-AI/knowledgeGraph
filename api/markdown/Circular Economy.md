@@ -448,7 +448,7 @@ alias:: CircularEconomy
       },
       {
         "@id": "urn:ngm:class:neural-network-text-tokenisation",
-        "label": "Tokenisation"
+        "label": "Neural Network Text Tokenisation"
       }
     ],
     "implements": [
@@ -462,7 +462,7 @@ alias:: CircularEconomy
       },
       {
         "@id": "urn:ngm:class:ecodesign-for-sustainable-products-regulation",
-        "label": "Ecodesign for Sustainable Products Regulation"
+        "label": "Ecodesign For Sustainable Products Regulation"
       },
       {
         "@id": "urn:ngm:class:ellen-mac-arthur-foundation",
@@ -480,7 +480,7 @@ alias:: CircularEconomy
     "uses": [
       {
         "@id": "urn:ngm:class:digital-twin",
-        "label": "Digital Twins"
+        "label": "Digital Twin"
       },
       {
         "@id": "urn:ngm:class:gs1",
@@ -512,7 +512,7 @@ alias:: CircularEconomy
       },
       {
         "@id": "urn:ngm:class:neural-network-text-tokenisation",
-        "label": "Tokenisation"
+        "label": "Neural Network Text Tokenisation"
       }
     ],
     "relatedTo": [
@@ -550,7 +550,7 @@ alias:: CircularEconomy
       },
       {
         "@id": "urn:ngm:class:neural-network-text-tokenisation",
-        "label": "Tokenisation"
+        "label": "Neural Network Text Tokenisation"
       },
       {
         "@id": "urn:ngm:class:waste-management",
@@ -584,13 +584,13 @@ alias:: CircularEconomy
       },
       {
         "@id": "urn:ngm:class:neural-network-text-tokenisation",
-        "label": "Tokenisation"
+        "label": "Neural Network Text Tokenisation"
       }
     ],
     "standardizedBy": [
       {
         "@id": "urn:ngm:class:ecodesign-for-sustainable-products-regulation",
-        "label": "Ecodesign for Sustainable Products Regulation"
+        "label": "Ecodesign For Sustainable Products Regulation"
       },
       {
         "@id": "urn:ngm:class:epcis",

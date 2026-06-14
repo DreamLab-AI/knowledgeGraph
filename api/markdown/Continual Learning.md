@@ -141,7 +141,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:multi-task-learning",
-        "label": "Multi-Task Learning"
+        "label": "Multi Task Learning"
       }
     ],
     "uses": [

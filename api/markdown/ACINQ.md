@@ -156,7 +156,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:bolt-12",
-        "label": "BOLT 12"
+        "label": "BOLT12"
       }
     ],
     "bridgesTo": [

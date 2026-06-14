@@ -25,7 +25,7 @@ public:: true
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"}],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:blockchain-protocol", "label": "Blockchain Protocol"}, {"@id": "urn:ngm:class:proof-of-stake-sustainability", "label": "Proof-of-Stake Sustainability"}]
+    "relatedTo": [{"@id": "urn:ngm:class:blockchain-protocol", "label": "Blockchain Protocol"}, {"@id": "urn:ngm:class:proof-of-stake-sustainability", "label": "Proof Of Stake Sustainability"}]
   },
   "quality": 0.72
 }

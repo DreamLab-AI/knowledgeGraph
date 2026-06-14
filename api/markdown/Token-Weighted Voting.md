@@ -33,13 +33,13 @@ public:: true
   "subClassOf": [
     {
       "@id": "urn:ngm:class:bc-governance-and-regulation",
-      "label": "Blockchain Governance and Regulation"
+      "label": "Governance and Regulation"
     }
   ],
   "relations": {
     "uses": [
       {"@id": "urn:ngm:class:governance-token", "label": "Governance Token"},
-      {"@id": "urn:ngm:class:on-chain-voting", "label": "On-Chain Voting"},
+      {"@id": "urn:ngm:class:on-chain-voting", "label": "On Chain Voting"},
       {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
       {"@id": "urn:ngm:class:vote-escrow", "label": "Vote Escrow"},
       {"@id": "urn:ngm:class:liquid-democracy", "label": "Liquid Democracy"}
@@ -71,7 +71,7 @@ public:: true
     ],
     "implements": [
       {"@id": "urn:ngm:class:dao-governance", "label": "DAO Governance"},
-      {"@id": "urn:ngm:class:on-chain-governance", "label": "On-Chain Governance"}
+      {"@id": "urn:ngm:class:on-chain-governance", "label": "On-chain Governance"}
     ],
     "bridgesTo": [
       {"@id": "urn:ngm:class:mechanism-design", "label": "Mechanism Design"},

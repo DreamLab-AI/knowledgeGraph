@@ -25,7 +25,7 @@ public:: true
   "maturity": "experimental",
   "subClassOf": [{"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"}],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:safety-and-alignment", "label": "Safety and Alignment"}, {"@id": "urn:ngm:class:ai-risks", "label": "AI Risks"}]
+    "relatedTo": [{"@id": "urn:ngm:class:safety-and-alignment", "label": "Safety and alignment"}, {"@id": "urn:ngm:class:ai-risks", "label": "AI Risks"}]
   },
   "quality": 0.72
 }

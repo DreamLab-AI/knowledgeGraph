@@ -64,7 +64,7 @@ public:: true
     ],
     "contrastsWith": [
       {"@id": "urn:ngm:class:ethereum-network", "label": "Ethereum Network"},
-      {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof Of Stake"}
+      {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof of Stake"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-technical-overview", "label": "Bitcoin Technical Overview"},

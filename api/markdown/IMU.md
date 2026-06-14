@@ -82,7 +82,7 @@ public:: true
       {"@id": "urn:ngm:class:ieee-952", "label": "IEEE 952"}
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:gps", "label": "GPS"},
+      {"@id": "urn:ngm:class:gps", "label": "Gps"},
       {"@id": "urn:ngm:class:optical-tracking", "label": "Optical Tracking"}
     ],
     "dependsOn": [
@@ -94,7 +94,7 @@ public:: true
       {"@id": "urn:ngm:class:human-motion-capture", "label": "Human Motion Capture"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:lidar", "label": "LiDAR"},
+      {"@id": "urn:ngm:class:lidar", "label": "Lidar"},
       {"@id": "urn:ngm:class:motion-sickness", "label": "Motion Sickness"},
       {"@id": "urn:ngm:class:extended-reality", "label": "Extended Reality"},
       {"@id": "urn:ngm:class:gnss", "label": "GNSS"}

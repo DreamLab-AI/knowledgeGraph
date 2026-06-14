@@ -319,7 +319,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:neural-network-latent-space",
-        "label": "Latent Space"
+        "label": "Neural Network Latent Space"
       },
       {
         "@id": "urn:ngm:class:model-optimisation-and-performance",
@@ -327,7 +327,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:stable-diffusion-image-model",
-        "label": "Stable Diffusion"
+        "label": "Stable Diffusion Image Model"
       },
       {
         "@id": "urn:ngm:class:transformers",
@@ -345,7 +345,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:large-scale-pretrained-foundation-model",
-        "label": "Foundation Models"
+        "label": "Large-Scale Pretrained Foundation Model"
       },
       {
         "@id": "urn:ngm:class:hardware-and-edge",
@@ -353,7 +353,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:neural-network-latent-space",
-        "label": "Latent Space"
+        "label": "Neural Network Latent Space"
       },
       {
         "@id": "urn:ngm:class:model-training",
@@ -421,7 +421,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:neural-network-latent-space",
-        "label": "Latent Space"
+        "label": "Neural Network Latent Space"
       },
       {
         "@id": "urn:ngm:class:lo-ra-do-ra-etc",
@@ -435,7 +435,7 @@ public:: true
     "uses": [
       {
         "@id": "urn:ngm:class:temporal-motion-diffusion-adapter",
-        "label": "AnimateDiff"
+        "label": "Temporal Motion Diffusion Adapter"
       },
       {
         "@id": "urn:ngm:class:attention",
@@ -443,7 +443,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:node-based-diffusion-pipeline-interface",
-        "label": "ComfyUI"
+        "label": "Node-Based Diffusion Pipeline Interface"
       },
       {
         "@id": "urn:ngm:class:node-based-diffusion-pipeline-interface-workflows",
@@ -455,15 +455,15 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:neural-network-latent-space",
-        "label": "Latent Space"
+        "label": "Neural Network Latent Space"
       },
       {
         "@id": "urn:ngm:class:stable-diffusion-image-model",
-        "label": "Stable Diffusion"
+        "label": "Stable Diffusion Image Model"
       },
       {
         "@id": "urn:ngm:class:latent-diffusion-model-training",
-        "label": "Stable Diffusion Training"
+        "label": "Latent Diffusion Model Training"
       },
       {
         "@id": "urn:ngm:class:transformers",
@@ -489,7 +489,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:constitutional-ai-training-methodology-language-model-family",
-        "label": "Anthropic Claude"
+        "label": "Constitutional AI Language Model Family"
       },
       {
         "@id": "urn:ngm:class:competition-in-ai",
@@ -501,7 +501,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:large-scale-pretrained-foundation-model",
-        "label": "Foundation Models"
+        "label": "Large-Scale Pretrained Foundation Model"
       },
       {
         "@id": "urn:ngm:class:google-ai-technology-corporation-deep-mind",
@@ -543,7 +543,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:social-media-platform-infrastructure",
-        "label": "Social Media"
+        "label": "Social Media Platform Infrastructure"
       }
     ],
     "standardizedBy": [
@@ -557,7 +557,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
-        "label": "EU AI Act"
+        "label": "EU AI Act Regulatory Instrument"
       },
       {
         "@id": "urn:ngm:class:safety-and-alignment",

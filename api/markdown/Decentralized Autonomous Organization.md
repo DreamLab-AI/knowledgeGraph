@@ -98,7 +98,7 @@ alias:: DecentralizedAutonomousOrganization
       {"@id": "urn:ngm:class:cryptographic-wallet", "label": "Cryptographic Wallet"}
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:on-chain-voting", "label": "On-Chain Voting"},
+      {"@id": "urn:ngm:class:on-chain-voting", "label": "On Chain Voting"},
       {"@id": "urn:ngm:class:treasury-management", "label": "Treasury Management"},
       {"@id": "urn:ngm:class:proposal-system", "label": "Proposal System"},
       {"@id": "urn:ngm:class:multisig-wallet", "label": "Multisig Wallet"}

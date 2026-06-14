@@ -32,14 +32,14 @@ public:: true
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-interaction",
-      "label": "Interaction"
+      "label": "Interaction Technology"
     }
   ],
   "relations": {
     "bridgesTo": [
       {
         "@id": "urn:ngm:class:brain-computer-interfaces",
-        "label": "Brain-Computer Interfaces"
+        "label": "Brain Computer Interfaces"
       }
     ],
     "relatedTo": [

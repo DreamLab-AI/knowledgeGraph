@@ -64,7 +64,7 @@ public:: true
     ],
     "contrastsWith": [
       {"@id": "urn:ngm:class:user-message", "label": "User Message"},
-      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine-Tuning"},
+      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine Tuning"},
       {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"}
     ],
     "relatedTo": [

@@ -143,7 +143,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:lidar-sensor",
-        "label": "LIDAR Sensor"
+        "label": "LiDAR Sensor"
       },
       {
         "@id": "urn:ngm:class:photogrammetry-camera",

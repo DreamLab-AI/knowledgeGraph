@@ -23,7 +23,7 @@ public:: true
   "definition": "Last-mile delivery is the final stage of a logistics chain in which goods move from a transport hub or distribution centre to the end recipient. It is typically the most expensive, time-sensitive and operationally complex segment because of fragmented destinations and traffic constraints. It is a primary target for automation through delivery robots, drones and route-optimisation systems.",
   "domain": "robotics",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:robo-navigation-and-planning", "label": "Robotics Navigation and Planning"}],
+  "subClassOf": [{"@id": "urn:ngm:class:robo-navigation-and-planning", "label": "Navigation and Planning"}],
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:logistics-optimization", "label": "Logistics Optimization"},

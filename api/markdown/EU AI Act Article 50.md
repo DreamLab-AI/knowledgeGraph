@@ -23,7 +23,7 @@ public:: true
   "definition": "EU AI Act Article 50 establishes transparency obligations that apply to providers and deployers of specific categories of AI system within the European Union's Artificial Intelligence Act regulatory framework. The article requires that AI systems designed to interact with natural persons, or that generate synthetic audio, image, video, or text content, must disclose their AI nature to affected individuals. Providers of deep fake content generation tools are required to label outputs in machine-readable form, and broadcast media and online platforms carrying synthetic media must carry appropriate disclosures. The article represents the EU's approach to mandating content authentication and countering AI-generated deception at scale.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:eu-ai-act-regulatory-instrument", "label": "EU AI Act"}],
+  "subClassOf": [{"@id": "urn:ngm:class:eu-ai-act-regulatory-instrument", "label": "EU AI Act Regulatory Instrument"}],
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:ai-generated-content-disclosure", "label": "AI-Generated Content Disclosure"},

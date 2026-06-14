@@ -537,7 +537,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Model"
+        "label": "Large Language Models"
       },
       {
         "@id": "urn:ngm:class:persistent-storage",
@@ -639,7 +639,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:speech-synthesis",
-        "label": "Speech Synthesis"
+        "label": "SpeechSynthesis"
       },
       {
         "@id": "urn:ngm:class:direct-preference-optimisation",
@@ -729,7 +729,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
-        "label": "EU AI Act"
+        "label": "EU AI Act Regulatory Instrument"
       }
     ]
   },

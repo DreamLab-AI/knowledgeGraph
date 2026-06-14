@@ -36,7 +36,7 @@ alias:: low-latency
       {"@id": "urn:ngm:class:extended-reality-xr", "label": "Extended Reality (XR)"},
       {"@id": "urn:ngm:class:high-frequency-trading", "label": "High-Frequency Trading"},
       {"@id": "urn:ngm:class:autonomous-robotics", "label": "Autonomous Robotics"},
-      {"@id": "urn:ngm:class:industrial-automation", "label": "Industrial Automation"}
+      {"@id": "urn:ngm:class:industrial-automation", "label": "IndustrialAutomation"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},

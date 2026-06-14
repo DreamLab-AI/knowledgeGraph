@@ -120,11 +120,11 @@
       },
       {
         "id": "urn:ngm:class:ai-art-categorization",
-        "label": "AI Art Categorization"
+        "label": "Ai Art Categorization"
       },
       {
         "id": "urn:ngm:class:ai-application",
-        "label": "Creative Media Domain"
+        "label": "AI Application"
       },
       {
         "id": "urn:ngm:class:human-ai-collaboration",

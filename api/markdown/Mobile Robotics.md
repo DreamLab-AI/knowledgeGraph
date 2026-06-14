@@ -31,7 +31,7 @@ public:: true
       {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
       {"@id": "urn:ngm:class:simultaneous-localisation-and-mapping", "label": "Simultaneous Localisation and Mapping"},
       {"@id": "urn:ngm:class:motion-control", "label": "Motion Control"},
-      {"@id": "urn:ngm:class:lidar", "label": "LiDAR"},
+      {"@id": "urn:ngm:class:lidar", "label": "Lidar"},
       {"@id": "urn:ngm:class:inertial-measurement-unit", "label": "Inertial Measurement Unit"}
     ],
     "enables": [

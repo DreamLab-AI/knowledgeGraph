@@ -541,7 +541,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:kyc-aml-compliance",
-        "label": "KYC AML Compliance"
+        "label": "KYC/AML Compliance"
       },
       {
         "@id": "urn:ngm:class:oracle-network",
@@ -587,7 +587,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:voluntary-carbon-market",
-        "label": "Voluntary Carbon Markets"
+        "label": "Voluntary Carbon Market"
       }
     ],
     "implements": [
@@ -643,7 +643,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:ethereum-smart-contract-platform",
-        "label": "Ethereum"
+        "label": "Ethereum Smart Contract Platform"
       }
     ],
     "relatedTo": [
@@ -669,11 +669,11 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:nft",
-        "label": "NFTs"
+        "label": "NFT"
       },
       {
         "@id": "urn:ngm:class:voluntary-carbon-market",
-        "label": "Voluntary Carbon Markets"
+        "label": "Voluntary Carbon Market"
       },
       {
         "@id": "urn:ngm:class:carbon-neutral-blockchain",
@@ -685,7 +685,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:neural-network-text-tokenisation",
-        "label": "Tokenisation"
+        "label": "Neural Network Text Tokenisation"
       }
     ],
     "supports": [

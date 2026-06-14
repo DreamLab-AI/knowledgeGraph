@@ -49,7 +49,7 @@
     "relatedTo": [
       {
         "id": "urn:ngm:class:json-data-interchange-format",
-        "label": "json"
+        "label": "JSON Data Interchange Format"
       },
       {
         "id": "urn:ngm:class:protocol-buffer",

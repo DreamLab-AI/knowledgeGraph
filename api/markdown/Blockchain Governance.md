@@ -118,7 +118,7 @@ alias:: BlockchainGovernance
       },
       {
         "@id": "urn:ngm:class:on-chain-voting",
-        "label": "On-Chain Voting"
+        "label": "On Chain Voting"
       },
       {
         "@id": "urn:ngm:class:proposal-system",
@@ -247,7 +247,7 @@ alias:: BlockchainGovernance
     },
     {
       "@id": "urn:ngm:class:on-chain-governance",
-      "label": "On-Chain Governance"
+      "label": "On-chain Governance"
     }
   ],
   "quality": 0.68,

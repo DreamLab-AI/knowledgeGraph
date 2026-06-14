@@ -30,11 +30,11 @@
     "relatedTo": [
       {
         "id": "urn:ngm:class:generative-ai",
-        "label": "Generative AI Domain"
+        "label": "Generative AI"
       },
       {
         "id": "urn:ngm:class:ai-machine-learning",
-        "label": "AI Machine Learning"
+        "label": "Ai Machine Learning"
       }
     ]
   },

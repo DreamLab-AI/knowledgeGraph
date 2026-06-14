@@ -647,7 +647,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:mixture-of-experts-architecture",
-        "label": "Mixture-of-Experts"
+        "label": "Mixture-of-Experts Architecture"
       },
       {
         "@id": "urn:ngm:class:reinforcement-learning-from-human-feedback",

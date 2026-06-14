@@ -416,11 +416,11 @@ public:: true
     },
     {
       "@id": "urn:ngm:class:ai-governance-and-ethics",
-      "label": "AI Governance And Ethics"
+      "label": "AI Governance and Ethics"
     },
     {
       "@id": "urn:ngm:class:ai-governance-and-ethics",
-      "label": "AI Governance And Ethics"
+      "label": "AI Governance and Ethics"
     }
   ],
   "relations": {
@@ -489,7 +489,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:legal-framework",
-        "label": "Legal Frameworks"
+        "label": "Legal Framework"
       },
       {
         "@id": "urn:ngm:class:network-interception-infrastructure",
@@ -645,7 +645,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:constitutional-ai-training-methodology-language-model-family",
-        "label": "Anthropic Claude"
+        "label": "Constitutional AI Language Model Family"
       },
       {
         "@id": "urn:ngm:class:bias-in-large-language-models",
@@ -717,7 +717,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
-        "label": "EU AI Act"
+        "label": "EU AI Act Regulatory Instrument"
       }
     ]
   },

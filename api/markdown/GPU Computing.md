@@ -33,7 +33,7 @@ public:: true
       {"@id": "urn:ngm:class:parallel-processing", "label": "Parallel Processing"},
       {"@id": "urn:ngm:class:compute-shader", "label": "Compute Shader"},
       {"@id": "urn:ngm:class:triton-compiler", "label": "Triton Compiler"},
-      {"@id": "urn:ngm:class:mixed-precision-training", "label": "Mixed-Precision Training"}
+      {"@id": "urn:ngm:class:mixed-precision-training", "label": "Mixed Precision Training"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
@@ -44,7 +44,7 @@ public:: true
       {"@id": "urn:ngm:class:scientific-computing", "label": "Scientific Computing"}
     ],
     "requires": [
-      {"@id": "urn:ngm:class:high-bandwidth-memory", "label": "High-Bandwidth Memory"},
+      {"@id": "urn:ngm:class:high-bandwidth-memory", "label": "High Bandwidth Memory"},
       {"@id": "urn:ngm:class:gpu-driver", "label": "GPU Driver"},
       {"@id": "urn:ngm:class:interconnect-fabric", "label": "Interconnect Fabric"}
     ],

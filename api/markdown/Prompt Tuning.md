@@ -204,7 +204,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:full-fine-tuning",
-        "label": "Full Fine-Tuning"
+        "label": "Full Fine Tuning"
       }
     ],
     "bridgesTo": [

@@ -26,7 +26,7 @@ public:: true
   "subClassOf": [{"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:kohya-dreambooth-and-similar", "label": "Kohya DreamBooth and Similar"}
+      {"@id": "urn:ngm:class:kohya-dreambooth-and-similar", "label": "KOHYA Dreambooth and similar"}
     ]
   },
   "quality": 0.72

@@ -27,7 +27,7 @@ public:: true
   "relations": {
     "hasPart": [
       {"@id": "urn:ngm:class:forecast-horizon", "label": "Forecast Horizon"},
-      {"@id": "urn:ngm:class:time-series-analysis", "label": "Time Series Analysis"},
+      {"@id": "urn:ngm:class:time-series-analysis", "label": "Time-Series Analysis"},
       {"@id": "urn:ngm:class:probabilistic-forecasting", "label": "Probabilistic Forecasting"},
       {"@id": "urn:ngm:class:hierarchical-forecasting", "label": "Hierarchical Forecasting"}
     ],
@@ -46,7 +46,7 @@ public:: true
       {"@id": "urn:ngm:class:capacity-planning", "label": "Capacity Planning"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"},
       {"@id": "urn:ngm:class:gradient-boosted-trees", "label": "Gradient Boosted Trees"},
       {"@id": "urn:ngm:class:recurrent-neural-network", "label": "Recurrent Neural Network"},
       {"@id": "urn:ngm:class:exponential-smoothing", "label": "Exponential Smoothing"},

@@ -154,7 +154,7 @@ alias:: DigitalAvatar
     },
     {
       "@id": "urn:ngm:class:sc-interaction",
-      "label": "SC Interaction"
+      "label": "Interaction Technology"
     }
   ],
   "quality": 0.4,
@@ -167,17 +167,17 @@ alias:: DigitalAvatar
     "requires": [
       {
         "@id": "urn:ngm:class:digital-identity",
-        "label": "DigitalIdentity"
+        "label": "Digital Identity"
       },
       {
         "@id": "urn:ngm:class:virtual-identity",
-        "label": "VirtualIdentity"
+        "label": "Virtual Identity"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:social-presence",
-        "label": "SocialPresence"
+        "label": "Social Presence"
       },
       {
         "@id": "urn:ngm:class:avatar-interoperability",
@@ -191,7 +191,7 @@ alias:: DigitalAvatar
       },
       {
         "@id": "urn:ngm:class:motion-capture",
-        "label": "MotionCapture"
+        "label": "Motion Capture"
       },
       {
         "@id": "urn:ngm:class:generative-ai",

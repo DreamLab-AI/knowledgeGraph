@@ -9,7 +9,7 @@
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-standards-and-interop",
-      "label": "Spatial Computing Standards and Interoperability"
+      "label": "Standards and Interoperability"
     }
   ],
   "entityType": "Class",
@@ -30,7 +30,7 @@
     "relatedTo": [
       {
         "id": "urn:ngm:class:gl-tf-3-d-file-format",
-        "label": "glTF 3D File Format"
+        "label": "glTF (3D File Format)"
       },
       {
         "id": "urn:ngm:class:metaverse-content-pipeline",

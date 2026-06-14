@@ -55,7 +55,7 @@ public:: true
     ],
     "enables": [
       {"@id": "urn:ngm:class:just-in-time-manufacturing", "label": "Just-in-Time Manufacturing"},
-      {"@id": "urn:ngm:class:sustainability-reporting", "label": "Sustainability Reporting"},
+      {"@id": "urn:ngm:class:sustainability-reporting", "label": "SustainabilityReporting"},
       {"@id": "urn:ngm:class:trade-compliance", "label": "Trade Compliance"}
     ],
     "dependsOn": [

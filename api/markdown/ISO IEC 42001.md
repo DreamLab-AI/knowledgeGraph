@@ -57,8 +57,8 @@ alias:: ISO/IEC 42001
       {"@id": "urn:ngm:class:ai-regulation", "label": "AI Regulation"},
       {"@id": "urn:ngm:class:compliance-framework", "label": "Compliance Framework"},
       {"@id": "urn:ngm:class:iso-9001", "label": "ISO 9001"},
-      {"@id": "urn:ngm:class:iso-iec-27001", "label": "ISO IEC 27001"},
-      {"@id": "urn:ngm:class:iso-iec-27701", "label": "ISO IEC 27701"}
+      {"@id": "urn:ngm:class:iso-iec-27001", "label": "ISO/IEC 27001"},
+      {"@id": "urn:ngm:class:iso-iec-27701", "label": "ISO-IEC 27701"}
     ],
     "standardizedBy": [
       {"@id": "urn:ngm:class:ai-governance-framework", "label": "AI Governance Framework"},
@@ -69,12 +69,12 @@ alias:: ISO/IEC 42001
       {"@id": "urn:ngm:class:nist-ai-rmf", "label": "NIST AI RMF"}
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:iso-iec-23894", "label": "ISO IEC 23894"},
+      {"@id": "urn:ngm:class:iso-iec-23894", "label": "ISO-IEC 23894"},
       {"@id": "urn:ngm:class:ieee-7000", "label": "IEEE 7000"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:third-party-audit", "label": "Third-Party Audit"},
-      {"@id": "urn:ngm:class:continuous-improvement", "label": "Continuous Improvement"},
+      {"@id": "urn:ngm:class:continuous-improvement", "label": "continuous improvement"},
       {"@id": "urn:ngm:class:ai-supply-chain-management", "label": "AI Supply Chain Management"}
     ]
   },

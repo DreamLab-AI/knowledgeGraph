@@ -1341,7 +1341,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:atomic-delivery-versus-payment",
-        "label": "Atomic Delivery Versus Payment"
+        "label": "Atomic Delivery versus Payment"
       },
       {
         "@id": "urn:ngm:class:automated-corporate-actions",
@@ -1367,7 +1367,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:kyc-aml-compliance",
-        "label": "KYC AML Compliance"
+        "label": "KYC/AML Compliance"
       },
       {
         "@id": "urn:ngm:class:selective-disclosure",

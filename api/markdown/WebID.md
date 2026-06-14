@@ -33,8 +33,8 @@ public:: true
       {"@id": "urn:ngm:class:federated-identity", "label": "Federated Identity"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self-Sovereign Identity"},
-      {"@id": "urn:ngm:class:semantic-web-linked-data-standard", "label": "Semantic Web"}
+      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self Sovereign Identity"},
+      {"@id": "urn:ngm:class:semantic-web-linked-data-standard", "label": "Semantic Web Linked Data Standard"}
     ]
   },
   "quality": 0.8

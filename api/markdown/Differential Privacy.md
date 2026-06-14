@@ -94,7 +94,7 @@ public:: true
       {"@id": "urn:ngm:class:privacy-mechanism", "label": "Privacy Mechanism"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"},
       {"@id": "urn:ngm:class:stochastic-gradient-descent", "label": "Stochastic Gradient Descent"},
       {"@id": "urn:ngm:class:composition-theorem", "label": "Composition Theorem"}
     ],

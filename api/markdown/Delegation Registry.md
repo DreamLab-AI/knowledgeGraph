@@ -27,7 +27,7 @@ public:: true
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:snapshot-voting", "label": "Snapshot Voting"},
-      {"@id": "urn:ngm:class:on-chain-voting", "label": "On-Chain Voting"}
+      {"@id": "urn:ngm:class:on-chain-voting", "label": "On Chain Voting"}
     ]
   },
   "quality": 0.72

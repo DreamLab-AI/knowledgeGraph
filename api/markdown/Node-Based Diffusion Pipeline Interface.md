@@ -27,7 +27,7 @@ elevatedFrom:: [[ComfyUI]]
   "subClassOf": [{"@id": "urn:ngm:class:ai-application", "label": "AI Application"}],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:stable-diffusion-image-model", "label": "Stable Diffusion"},
+      {"@id": "urn:ngm:class:stable-diffusion-image-model", "label": "Stable Diffusion Image Model"},
       {"@id": "urn:ngm:class:diffusion-model", "label": "Diffusion Model"},
       {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"},
       {"@id": "urn:ngm:class:latent-diffusion-model", "label": "Latent Diffusion Model"},
@@ -56,7 +56,7 @@ elevatedFrom:: [[ComfyUI]]
       {"@id": "urn:ngm:class:generative-ai-toolchain", "label": "Generative AI Toolchain"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:node-based-editor", "label": "Node-Based Editor"},
+      {"@id": "urn:ngm:class:node-based-editor", "label": "Node Based Editor"},
       {"@id": "urn:ngm:class:open-source-software", "label": "Open Source Software"},
       {"@id": "urn:ngm:class:machine-learning-discipline-pipeline", "label": "Machine Learning Pipeline"},
       {"@id": "urn:ngm:class:dataflow-programming", "label": "Dataflow Programming"},

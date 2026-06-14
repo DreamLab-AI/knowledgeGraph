@@ -602,7 +602,7 @@ alias:: BC-0462-on-chain-voting, On-Chain Voting, OnChainVoting
       },
       {
         "@id": "urn:ngm:class:vote-escrow-model",
-        "label": "Vote Escrow Model"
+        "label": "Vote-Escrow Model"
       },
       {
         "@id": "urn:ngm:class:zk-anonymous-voting",
@@ -640,15 +640,15 @@ alias:: BC-0462-on-chain-voting, On-Chain Voting, OnChainVoting
       },
       {
         "@id": "urn:ngm:class:prediction-markets",
-        "label": "Prediction Market"
+        "label": "Prediction Markets"
       },
       {
         "@id": "urn:ngm:class:zero-knowledge-proof",
-        "label": "Zero Knowledge Proofs"
+        "label": "Zero-Knowledge Proof"
       },
       {
         "@id": "urn:ngm:class:zk-snarks",
-        "label": "ZK-SNARK"
+        "label": "ZK-SNARKs"
       },
       {
         "@id": "urn:ngm:class:merkle-tree",
@@ -696,7 +696,7 @@ alias:: BC-0462-on-chain-voting, On-Chain Voting, OnChainVoting
     "supports": [
       {
         "@id": "urn:ngm:class:decentralized-exchange",
-        "label": "Decentralised Exchange"
+        "label": "Decentralized Exchange"
       },
       {
         "@id": "urn:ngm:class:compliance-monitoring",
@@ -738,7 +738,7 @@ alias:: BC-0462-on-chain-voting, On-Chain Voting, OnChainVoting
       },
       {
         "@id": "urn:ngm:class:erc-20-votes",
-        "label": "ERC20Votes"
+        "label": "ERC-20 Votes"
       },
       {
         "@id": "urn:ngm:class:open-zeppelin-governor-standard",

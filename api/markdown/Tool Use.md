@@ -64,12 +64,12 @@ public:: true
       {"@id": "urn:ngm:class:prompt-engineering", "label": "Prompt Engineering"}
     ],
     "supports": [
-      {"@id": "urn:ngm:class:human-in-the-loop", "label": "Human-in-the-Loop"},
+      {"@id": "urn:ngm:class:human-in-the-loop", "label": "Human in the Loop"},
       {"@id": "urn:ngm:class:audit-logging", "label": "Audit Logging"},
       {"@id": "urn:ngm:class:access-control", "label": "Access Control"}
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine-Tuning"},
+      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine Tuning"},
       {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"}
     ],
     "relatedTo": [

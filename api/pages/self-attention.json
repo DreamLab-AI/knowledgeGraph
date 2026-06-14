@@ -19,7 +19,7 @@
     "hasPart": [
       {
         "id": "urn:ngm:class:scaled-dot-product-attention",
-        "label": "Scaled Dot-Product Attention"
+        "label": "Scaled Dot Product Attention"
       },
       {
         "id": "urn:ngm:class:query-key-value-projection",
@@ -81,7 +81,7 @@
       },
       {
         "id": "urn:ngm:class:cross-attention",
-        "label": "Cross-Attention"
+        "label": "Cross Attention"
       }
     ],
     "bridgesTo": [

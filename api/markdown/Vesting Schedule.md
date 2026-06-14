@@ -57,7 +57,7 @@ public:: true
   "subClassOf": [
     {
       "@id": "urn:ngm:class:bc-token-and-asset",
-      "label": "Bc Token And Asset"
+      "label": "Token and Asset"
     }
   ],
   "sameAs": [

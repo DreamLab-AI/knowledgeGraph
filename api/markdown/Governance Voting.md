@@ -23,7 +23,7 @@ public:: true
   "definition": "Governance voting is the mechanism by which holders of governance tokens or members of a decentralised organisation cast votes on proposals to direct a protocol's decisions. Voting power is typically proportional to token holdings or delegated stake, and outcomes can execute automatically on-chain. It is the primary means by which token holders exercise collective control over protocol changes.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:bc-governance-and-regulation", "label": "Blockchain Governance and Regulation"}],
+  "subClassOf": [{"@id": "urn:ngm:class:bc-governance-and-regulation", "label": "Governance and Regulation"}],
   "relations": {
     "relatedTo": [{"@id": "urn:ngm:class:blockchain-protocol", "label": "Blockchain Protocol"}, {"@id": "urn:ngm:class:crypto-token", "label": "Crypto Token"}]
   },

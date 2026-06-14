@@ -176,7 +176,7 @@ alias:: Human-Robot Interaction, HumanRobotInteraction
     "partOf": [
       {
         "@id": "urn:ngm:class:robotics",
-        "label": "Robotics Domain"
+        "label": "Robotics"
       }
     ],
     "requires": [

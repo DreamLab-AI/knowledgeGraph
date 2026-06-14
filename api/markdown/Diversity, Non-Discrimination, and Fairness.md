@@ -86,7 +86,7 @@ public:: true
     ],
     "enables": [
       {"@id": "urn:ngm:class:trustworthy-ai", "label": "Trustworthy AI"},
-      {"@id": "urn:ngm:class:digital-technology-access-equity", "label": "Equity"},
+      {"@id": "urn:ngm:class:digital-technology-access-equity", "label": "Digital Technology Access Equity"},
       {"@id": "urn:ngm:class:accessibility", "label": "Accessibility"}
     ],
     "uses": [

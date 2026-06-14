@@ -74,7 +74,7 @@ public:: true
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:graph-database", "label": "Graph Database"},
-      {"@id": "urn:ngm:class:semantic-web-linked-data-standard", "label": "Semantic Web"},
+      {"@id": "urn:ngm:class:semantic-web-linked-data-standard", "label": "Semantic Web Linked Data Standard"},
       {"@id": "urn:ngm:class:knowledge-representation", "label": "Knowledge Representation"},
       {"@id": "urn:ngm:class:database-query", "label": "Database Query"},
       {"@id": "urn:ngm:class:sparql-examples", "label": "SPARQL EXAMPLES"}

@@ -509,7 +509,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Model"
+        "label": "Large Language Models"
       },
       {
         "@id": "urn:ngm:class:layout-engine",

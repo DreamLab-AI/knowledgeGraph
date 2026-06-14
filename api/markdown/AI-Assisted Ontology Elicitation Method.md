@@ -83,7 +83,7 @@ elevatedFrom:: [[Ontology conversation with AIs]]
     "relatedTo": [
       {
         "@id": "urn:ngm:class:multi-layer-agentic-governance-framework",
-        "label": "Agentic Mycelia"
+        "label": "Multi-Layer Agentic Governance Framework"
       }
     ]
   }

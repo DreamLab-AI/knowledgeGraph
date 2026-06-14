@@ -43,7 +43,7 @@ public:: true
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-application",
-      "label": "Ai Application"
+      "label": "AI Application"
     }
   ],
   "sameAs": [
@@ -62,11 +62,11 @@ public:: true
     "uses": [
       {"@id": "urn:ngm:class:data-pipeline", "label": "Data Pipeline"},
       {"@id": "urn:ngm:class:model-training", "label": "Model Training"},
-      {"@id": "urn:ngm:class:cross-validation", "label": "Cross Validation"},
+      {"@id": "urn:ngm:class:cross-validation", "label": "Cross-Validation"},
       {"@id": "urn:ngm:class:regression-analysis", "label": "Regression Analysis"},
       {"@id": "urn:ngm:class:classification", "label": "Classification"},
       {"@id": "urn:ngm:class:ensemble-methods", "label": "Ensemble Methods"},
-      {"@id": "urn:ngm:class:time-series-analysis", "label": "Time Series Analysis"}
+      {"@id": "urn:ngm:class:time-series-analysis", "label": "Time-Series Analysis"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:anomaly-detection", "label": "Anomaly Detection"},

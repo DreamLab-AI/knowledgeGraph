@@ -34,7 +34,7 @@ alias:: Industrial Automation
   "subClassOf": [
     {
       "@id": "urn:ngm:class:cyber-physical-systems",
-      "label": "Cyber-Physical Systems"
+      "label": "Cyber Physical Systems"
     }
   ],
   "sameAs": [
@@ -73,7 +73,7 @@ alias:: Industrial Automation
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
-      {"@id": "urn:ngm:class:real-time-processing", "label": "Real-Time Processing"},
+      {"@id": "urn:ngm:class:real-time-processing", "label": "Real-time Processing"},
       {"@id": "urn:ngm:class:collaborative-robot", "label": "Collaborative Robot"}
     ],
     "bridgesTo": [

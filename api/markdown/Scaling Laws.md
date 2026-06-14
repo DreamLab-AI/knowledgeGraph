@@ -44,7 +44,7 @@ public:: true
       {"@id": "urn:ngm:class:cross-entropy-loss", "label": "Cross-Entropy Loss"}
     ],
     "enables": [
-      {"@id": "urn:ngm:class:pre-training", "label": "Pre-Training"},
+      {"@id": "urn:ngm:class:pre-training", "label": "Pre Training"},
       {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
       {"@id": "urn:ngm:class:capability-forecasting", "label": "Capability Forecasting"},
       {"@id": "urn:ngm:class:compute-optimal-training", "label": "Compute-Optimal Training"}

@@ -349,7 +349,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:safety-standard",
-        "label": "Safety Standards"
+        "label": "Safety Standard"
       },
       {
         "@id": "urn:ngm:class:motion-planning",
@@ -423,7 +423,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:ros-industrial",
-        "label": "ROS Industrial"
+        "label": "ROS-Industrial"
       }
     ],
     "relatedTo": [

@@ -38,8 +38,8 @@ public:: true
       {"@id": "urn:ngm:class:fraud-detection", "label": "Fraud Detection"},
       {"@id": "urn:ngm:class:behavioral-analytics", "label": "Behavioral Analytics"},
       {"@id": "urn:ngm:class:data-pipeline", "label": "Data Pipeline"},
-      {"@id": "urn:ngm:class:real-time-analytics", "label": "Real-time Analytics"},
-      {"@id": "urn:ngm:class:event-driven-architecture", "label": "Event-Driven Architecture"},
+      {"@id": "urn:ngm:class:real-time-analytics", "label": "Real-Time Analytics"},
+      {"@id": "urn:ngm:class:event-driven-architecture", "label": "Event Driven Architecture"},
       {"@id": "urn:ngm:class:complex-event-processing", "label": "Complex Event Processing"}
     ],
     "requires": [

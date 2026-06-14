@@ -165,7 +165,7 @@ public:: true
     "standardizedBy": [
       {
         "@id": "urn:ngm:class:iso-iec-23894-2023",
-        "label": "ISO/IEC 23894:2023"
+        "label": "ISO-IEC 23894 2023"
       },
       {
         "@id": "urn:ngm:class:iso-iec-38500-2024",

@@ -38,7 +38,7 @@ public:: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:json-data-interchange-format", "label": "JSON"},
+      {"@id": "urn:ngm:class:json-data-interchange-format", "label": "JSON Data Interchange Format"},
       {"@id": "urn:ngm:class:schema-validation", "label": "Schema Validation"}
     ],
     "enables": [

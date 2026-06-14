@@ -27,7 +27,7 @@
       },
       {
         "id": "urn:ngm:class:hugging-face-hub",
-        "label": "Hugging Face Hub"
+        "label": "HuggingFace Hub"
       },
       {
         "id": "urn:ngm:class:parameter-efficient-fine-tuning",

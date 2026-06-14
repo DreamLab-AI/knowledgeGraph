@@ -615,7 +615,7 @@ public:: true
     "bridgesTo": [
       {
         "@id": "urn:ngm:class:ai-agents",
-        "label": "AI Agent"
+        "label": "AI Agents"
       }
     ]
   },

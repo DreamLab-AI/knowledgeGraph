@@ -9,7 +9,7 @@
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-interaction",
-      "label": "Metaverse Interaction"
+      "label": "Interaction Technology"
     }
   ],
   "entityType": "Class",

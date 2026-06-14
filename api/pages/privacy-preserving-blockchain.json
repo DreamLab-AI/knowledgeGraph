@@ -170,7 +170,7 @@
       },
       {
         "id": "urn:ngm:class:secure-enclave",
-        "label": "Secure Enclaves"
+        "label": "Secure Enclave"
       },
       {
         "id": "urn:ngm:class:viewing-keys",
@@ -178,11 +178,11 @@
       },
       {
         "id": "urn:ngm:class:zk-snarks",
-        "label": "zk-SNARKs"
+        "label": "ZK-SNARKs"
       },
       {
         "id": "urn:ngm:class:zk-starks",
-        "label": "zk-STARKs"
+        "label": "ZK-STARKs"
       }
     ],
     "supports": [
@@ -234,7 +234,7 @@
       },
       {
         "id": "urn:ngm:class:mi-ca-regulation",
-        "label": "EU MiCA Regulation"
+        "label": "MiCA Regulation"
       }
     ],
     "partOf": [],

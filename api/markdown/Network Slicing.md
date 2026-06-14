@@ -65,7 +65,7 @@ alias:: NetworkSlicing
       {"@id": "urn:ngm:class:dedicated-hardware-provisioning", "label": "Dedicated Hardware Provisioning"}
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:multi-access-edge-computing", "label": "Multi-Access Edge Computing"},
+      {"@id": "urn:ngm:class:multi-access-edge-computing", "label": "MultiAccessEdgeComputing"},
       {"@id": "urn:ngm:class:intent-based-networking", "label": "Intent-Based Networking"}
     ],
     "relatedTo": [

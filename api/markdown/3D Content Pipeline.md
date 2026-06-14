@@ -77,7 +77,7 @@ public:: true
       {"@id": "urn:ngm:class:continuous-asset-delivery", "label": "Continuous Asset Delivery"}
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:gltf-standard", "label": "glTF Standard"},
+      {"@id": "urn:ngm:class:gltf-standard", "label": "Gltf Standard"},
       {"@id": "urn:ngm:class:universal-scene-description", "label": "Universal Scene Description"}
     ],
     "contrastsWith": [

@@ -199,7 +199,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:privacy-preserving-data-sharing",
-        "label": "Privacy-Preserving Data Sharing"
+        "label": "Privacy Preserving Data Sharing"
       }
     ],
     "partOf": [

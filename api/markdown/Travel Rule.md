@@ -527,7 +527,7 @@ alias:: BC-0485-travel-rule
       },
       {
         "@id": "urn:ngm:class:zero-knowledge-proof",
-        "label": "Zero-Knowledge Proofs"
+        "label": "Zero-Knowledge Proof"
       },
       {
         "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
@@ -553,7 +553,7 @@ alias:: BC-0485-travel-rule
       },
       {
         "@id": "urn:ngm:class:stablecoin",
-        "label": "Stablecoins"
+        "label": "Stablecoin"
       },
       {
         "@id": "urn:ngm:class:blockchain-interoperability",

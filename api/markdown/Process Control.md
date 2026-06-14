@@ -26,7 +26,7 @@ public:: true
   "subClassOf": [{"@id": "urn:ngm:class:control-system", "label": "Control System"}],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:model-based-control", "label": "Model-Based Control"},
+      {"@id": "urn:ngm:class:model-based-control", "label": "Model Based Control"},
       {"@id": "urn:ngm:class:feedback-loop", "label": "Feedback Loop"}
     ]
   },

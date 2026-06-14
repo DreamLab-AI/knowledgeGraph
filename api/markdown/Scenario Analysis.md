@@ -26,7 +26,7 @@ public:: true
   "subClassOf": [{"@id": "urn:ngm:class:data-management", "label": "Data Management"}],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:time-series-forecasting", "label": "Time-Series Forecasting"},
+      {"@id": "urn:ngm:class:time-series-forecasting", "label": "Time Series Forecasting"},
       {"@id": "urn:ngm:class:risk-assessment", "label": "Risk Assessment"}
     ]
   },

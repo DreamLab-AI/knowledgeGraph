@@ -9,7 +9,7 @@
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-interaction",
-      "label": "Spatial Computing Interaction"
+      "label": "Interaction Technology"
     }
   ],
   "entityType": "Class",

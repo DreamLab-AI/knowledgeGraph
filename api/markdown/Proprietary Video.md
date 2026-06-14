@@ -456,7 +456,7 @@ public:: true
     },
     {
       "@id": "urn:ngm:class:infra-legal-and-regulatory",
-      "label": "Infra Legal And Regulatory"
+      "label": "Legal and Regulatory"
     },
     {
       "@id": "urn:ngm:class:content-delivery-network",
@@ -701,7 +701,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:regulatory-framework",
-        "label": "Regulatory Frameworks"
+        "label": "Regulatory Framework"
       },
       {
         "@id": "urn:ngm:class:streaming-services",
@@ -767,7 +767,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:regulatory-framework",
-        "label": "Regulatory Frameworks"
+        "label": "Regulatory Framework"
       },
       {
         "@id": "urn:ngm:class:sky-glass",
@@ -805,7 +805,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:iso-iec",
-        "label": "ISO IEC"
+        "label": "ISO/IEC"
       },
       {
         "@id": "urn:ngm:class:itu-t",
@@ -825,11 +825,11 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:apple-inc-technology-corporation",
-        "label": "Apple"
+        "label": "Apple Inc Technology Corporation"
       },
       {
         "@id": "urn:ngm:class:google-ai-technology-corporation",
-        "label": "Google"
+        "label": "Google AI Technology Corporation"
       }
     ]
   },

@@ -27,7 +27,7 @@ alias:: IP Adapter
   "subClassOf": [{"@id": "urn:ngm:class:adapter-modules", "label": "Adapter Modules"}],
   "relations": {
     "dependsOn": [
-      {"@id": "urn:ngm:class:stable-diffusion-image-model", "label": "Stable Diffusion"},
+      {"@id": "urn:ngm:class:stable-diffusion-image-model", "label": "Stable Diffusion Image Model"},
       {"@id": "urn:ngm:class:diffusion-model", "label": "Diffusion Model"},
       {"@id": "urn:ngm:class:cross-attention", "label": "Cross Attention"},
       {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"}

@@ -24,7 +24,7 @@ public:: true
   "domain": "artificial-intelligence",
   "maturity": "mature",
   "subClassOf": [
-    {"@id": "urn:ngm:class:ai-research-area", "label": "Ai Research Area"}
+    {"@id": "urn:ngm:class:ai-research-area", "label": "AI Research Area"}
   ],
   "sameAs": [
     {"@id": "urn:ngm:class:strategic-interaction-theory", "label": "Strategic Interaction Theory"},
@@ -41,7 +41,7 @@ public:: true
       {"@id": "urn:ngm:class:mechanism-design", "label": "Mechanism Design"},
       {"@id": "urn:ngm:class:incentive-alignment", "label": "Incentive Alignment"},
       {"@id": "urn:ngm:class:auction-theory", "label": "Auction Theory"},
-      {"@id": "urn:ngm:class:prediction-markets", "label": "Prediction Market"},
+      {"@id": "urn:ngm:class:prediction-markets", "label": "Prediction Markets"},
       {"@id": "urn:ngm:class:multi-agent-reinforcement-learning", "label": "Multi-Agent Reinforcement Learning"}
     ],
     "requires": [

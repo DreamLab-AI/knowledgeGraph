@@ -101,7 +101,7 @@ public:: true
       {"@id": "urn:ngm:class:settlement", "label": "Settlement"}
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof of Work"},
+      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"},
       {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof of Stake"},
       {"@id": "urn:ngm:class:network-partition-tolerance", "label": "Network Partition Tolerance"}
     ],

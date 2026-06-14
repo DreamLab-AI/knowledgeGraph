@@ -79,7 +79,7 @@ public:: true
       {"@id": "urn:ngm:class:document-management", "label": "Document Management"}
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:semantic-web-linked-data-standard", "label": "Semantic Web"},
+      {"@id": "urn:ngm:class:semantic-web-linked-data-standard", "label": "Semantic Web Linked Data Standard"},
       {"@id": "urn:ngm:class:large-language-model", "label": "Large Language Model"},
       {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"}
     ],

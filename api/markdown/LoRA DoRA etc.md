@@ -328,7 +328,7 @@ public:: true
     },
     {
       "@id": "urn:ngm:class:neural-network",
-      "label": "Neural Networks"
+      "label": "Neural Network"
     }
   ],
   "relations": {
@@ -371,7 +371,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:lo-ra",
-        "label": "LoRA"
+        "label": "Lo RA"
       },
       {
         "@id": "urn:ngm:class:prefix-tuning",
@@ -393,7 +393,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:pretrained-model",
-        "label": "Pre-trained Model"
+        "label": "Pretrained Model"
       },
       {
         "@id": "urn:ngm:class:task-specific-dataset",
@@ -471,7 +471,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:node-based-diffusion-pipeline-interface",
-        "label": "ComfyUI"
+        "label": "Node-Based Diffusion Pipeline Interface"
       },
       {
         "@id": "urn:ngm:class:mixed-precision-training",
@@ -503,15 +503,15 @@ public:: true
     "supports": [
       {
         "@id": "urn:ngm:class:meta-llama-model-family",
-        "label": "Llama"
+        "label": "Meta Llama Model Family"
       },
       {
         "@id": "urn:ngm:class:constitutional-ai-training-methodology-language-model-family",
-        "label": "Anthropic Claude"
+        "label": "Constitutional AI Language Model Family"
       },
       {
         "@id": "urn:ngm:class:instruction-following-conversational-ai-system",
-        "label": "ChatGPT"
+        "label": "Instruction-Following Conversational AI System"
       },
       {
         "@id": "urn:ngm:class:computer-vision",
@@ -523,7 +523,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:stable-diffusion-image-model",
-        "label": "Stable Diffusion"
+        "label": "Stable Diffusion Image Model"
       }
     ],
     "standardizedBy": [
@@ -541,7 +541,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:nvidia-corporation",
-        "label": "NVIDIA"
+        "label": "NVIDIA Corporation"
       }
     ],
     "bridgesTo": [

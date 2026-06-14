@@ -165,7 +165,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:storage-systems",
-        "label": "Storage System"
+        "label": "Storage Systems"
       },
       {
         "@id": "urn:ngm:class:network-infrastructure",

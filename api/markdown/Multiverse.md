@@ -172,7 +172,7 @@ public:: true
     },
     {
       "@id": "urn:ngm:class:semantic-spatial-web-layer",
-      "label": "Spatial Web"
+      "label": "Semantic Spatial Web Layer"
     }
   ],
   "relations": {
@@ -255,7 +255,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:cross-metaverse-commerce",
-        "label": "Cross-Metaverse Commerce"
+        "label": "Cross Metaverse Commerce"
       },
       {
         "@id": "urn:ngm:class:universal-avatar",
@@ -265,7 +265,7 @@ public:: true
     "partOf": [
       {
         "@id": "urn:ngm:class:semantic-spatial-web-layer",
-        "label": "Spatial Web"
+        "label": "Semantic Spatial Web Layer"
       }
     ]
   },

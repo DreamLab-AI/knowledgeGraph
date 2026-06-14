@@ -23,7 +23,7 @@ public:: true
   "definition": "Event streaming is a data-processing paradigm in which records of events are captured, stored as an ordered, append-only log, and continuously delivered to consumers in real time. Platforms such as Apache Kafka and Pulsar implement it to decouple producers from consumers and enable scalable, replayable data pipelines. It underpins real-time analytics, event-driven microservices, and the ingestion side of modern data architectures.",
   "domain": "data",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:infra-data-management", "label": "Data Management Infrastructure"}],
+  "subClassOf": [{"@id": "urn:ngm:class:infra-data-management", "label": "Data Management"}],
   "relations": {
     "relatedTo": [{"@id": "urn:ngm:class:message-broker", "label": "Message Broker"}, {"@id": "urn:ngm:class:metadata-management", "label": "Metadata Management"}]
   },

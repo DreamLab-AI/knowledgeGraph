@@ -33,7 +33,7 @@ public:: true
     "enables": [
       {"@id": "urn:ngm:class:fault-tolerance-system", "label": "Fault Tolerance System"},
       {"@id": "urn:ngm:class:distributed-storage", "label": "Distributed Storage"},
-      {"@id": "urn:ngm:class:quantum-computation-paradigm", "label": "Quantum Computing"}
+      {"@id": "urn:ngm:class:quantum-computation-paradigm", "label": "Quantum Computation Paradigm"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:data-compression", "label": "Data Compression"},

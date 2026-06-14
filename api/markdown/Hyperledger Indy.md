@@ -632,7 +632,7 @@ public:: true
     },
     {
       "@id": "urn:ngm:class:bc-network-component",
-      "label": "BC Network Component"
+      "label": "Network Component"
     }
   ],
   "relations": {
@@ -761,7 +761,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:self-sovereign-identity",
-        "label": "Self-Sovereign Identity"
+        "label": "Self Sovereign Identity"
       }
     ],
     "uses": [
@@ -799,7 +799,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:rust-systems-programming-language",
-        "label": "Rust"
+        "label": "Rust Systems Programming Language"
       }
     ],
     "relatedTo": [
@@ -849,7 +849,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:trust-over-ip-foundation",
-        "label": "Trust over IP Foundation"
+        "label": "Trust Over IP Foundation"
       }
     ],
     "supports": [
@@ -893,7 +893,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:iso-iec-18013-5-m-dl",
-        "label": "ISO/IEC 18013-5 (mDL)"
+        "label": "ISO-IEC 18013-5 mDL"
       },
       {
         "@id": "urn:ngm:class:sovrin-governance-framework-v2",

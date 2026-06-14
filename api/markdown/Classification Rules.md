@@ -31,7 +31,7 @@ public:: true
       {"@id": "urn:ngm:class:logic-programming", "label": "Logic Programming"}
     ],
     "enables": [
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"},
       {"@id": "urn:ngm:class:expert-systems", "label": "Expert Systems"}
     ],
     "relatedTo": [

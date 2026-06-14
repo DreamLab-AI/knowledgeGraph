@@ -2827,7 +2827,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:decentralized-storage",
-        "label": "Decentralised Storage"
+        "label": "Decentralized Storage"
       },
       {
         "@id": "urn:ngm:class:multi-signature-wallet",
@@ -2857,7 +2857,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:on-chain-governance",
-        "label": "On-Chain Governance"
+        "label": "On-chain Governance"
       },
       {
         "@id": "urn:ngm:class:optimistic-execution",
@@ -2903,7 +2903,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:reality-eth-oracle",
-        "label": "Reality.eth Oracle"
+        "label": "Reality ETH Oracle"
       },
       {
         "@id": "urn:ngm:class:safe-multi-sig",
@@ -3019,7 +3019,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:erc-20-votes",
-        "label": "ERC-20Votes"
+        "label": "ERC-20 Votes"
       },
       {
         "@id": "urn:ngm:class:erc-721-votes",

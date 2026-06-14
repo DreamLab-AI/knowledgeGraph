@@ -92,7 +92,7 @@ elevatedFrom:: [[Client side DCO]]
   "relations": {
     "uses": [
       {"@id": "urn:ngm:class:nostr-protocol", "label": "Nostr Protocol"},
-      {"@id": "urn:ngm:class:neural-network-latent-space", "label": "latent space"},
+      {"@id": "urn:ngm:class:neural-network-latent-space", "label": "Neural Network Latent Space"},
       {"@id": "urn:ngm:class:hardware-and-edge", "label": "Hardware and Edge"}
     ],
     "enables": [
@@ -103,7 +103,7 @@ elevatedFrom:: [[Client side DCO]]
       {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"}
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:multimodal-ai-architecture", "label": "multimodal"}
+      {"@id": "urn:ngm:class:multimodal-ai-architecture", "label": "Multimodal AI Architecture"}
     ]
   },
   "quality": 0.5,

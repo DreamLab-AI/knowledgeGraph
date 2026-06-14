@@ -23,9 +23,9 @@ public:: true
   "definition": "The Personal Information Protection Law (PIPL) is China's comprehensive data-protection statute, effective 2021, governing how personal information of individuals in China is collected, processed, and transferred. It establishes consent and necessity requirements, data-subject rights, security obligations, and strict cross-border transfer controls, with extraterritorial reach and significant penalties. PIPL is a cornerstone of Asia-Pacific data-privacy regulation alongside frameworks like the GDPR.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:infra-legal-and-regulatory", "label": "Infrastructure Legal and Regulatory"}],
+  "subClassOf": [{"@id": "urn:ngm:class:infra-legal-and-regulatory", "label": "Legal and Regulatory"}],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:asia-pacific-regulation", "label": "Asia-Pacific Regulation"}]
+    "relatedTo": [{"@id": "urn:ngm:class:asia-pacific-regulation", "label": "Asia Pacific Regulation"}]
   },
   "quality": 0.72
 }

@@ -25,7 +25,7 @@ public:: true
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:machine-learning-discipline-technique", "label": "Machine Learning Technique"}],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:lo-ra-do-ra-etc", "label": "LoRA, DoRA, etc"}, {"@id": "urn:ngm:class:hyper-personalisation", "label": "Hyper-Personalisation"}]
+    "relatedTo": [{"@id": "urn:ngm:class:lo-ra-do-ra-etc", "label": "LoRA DoRA etc"}, {"@id": "urn:ngm:class:hyper-personalisation", "label": "Hyper personalisation"}]
   },
   "quality": 0.72
 }

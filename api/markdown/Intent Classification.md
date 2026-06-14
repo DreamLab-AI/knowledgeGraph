@@ -23,7 +23,7 @@ public:: true
   "definition": "Intent classification is a natural language processing task that assigns a user utterance to one or more predefined intent categories, enabling a system to determine the semantic goal behind an input. It forms the core routing component of conversational AI systems, mapping raw text to structured action labels such as 'book_flight', 'check_balance', or 'cancel_order'.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:nlptask", "label": "NLP Task"}],
+  "subClassOf": [{"@id": "urn:ngm:class:nlptask", "label": "NLPTask"}],
   "relations": {
     "requires": [{"@id": "urn:ngm:class:natural-language-understanding", "label": "Natural Language Understanding"}],
     "enables": [{"@id": "urn:ngm:class:dialogue-system", "label": "Dialogue System"}, {"@id": "urn:ngm:class:conversational-ai", "label": "Conversational AI"}],

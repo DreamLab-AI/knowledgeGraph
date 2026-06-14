@@ -375,7 +375,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:power-systems",
-        "label": "Power System"
+        "label": "Power Systems"
       },
       {
         "@id": "urn:ngm:class:sensor-suite",
@@ -531,7 +531,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:human-robot-interaction",
-        "label": "Human-Robot Interaction"
+        "label": "Human Robot Interaction"
       }
     ],
     "standardizedBy": [

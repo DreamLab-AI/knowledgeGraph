@@ -55,7 +55,7 @@ public:: true
     "relatedTo": [
       {"@id": "urn:ngm:class:performance-metrics", "label": "Performance Metrics"},
       {"@id": "urn:ngm:class:hyperparameter-tuning", "label": "Hyperparameter Tuning"},
-      {"@id": "urn:ngm:class:red-teaming", "label": "Red-Teaming"},
+      {"@id": "urn:ngm:class:red-teaming", "label": "Red Teaming"},
       {"@id": "urn:ngm:class:interpretability", "label": "Interpretability"},
       {"@id": "urn:ngm:class:bias-and-fairness", "label": "Bias and Fairness"}
     ],

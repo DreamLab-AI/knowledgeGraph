@@ -27,7 +27,7 @@ public:: true
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:control-net-and-similar-spatial-conditioning-systems", "label": "ControlNet and Similar Spatial Conditioning Systems"},
-      {"@id": "urn:ngm:class:deepfakes-and-fraudulent-content", "label": "Deepfakes and Fraudulent Content"}
+      {"@id": "urn:ngm:class:deepfakes-and-fraudulent-content", "label": "Deepfakes and fraudulent content"}
     ]
   },
   "quality": 0.72

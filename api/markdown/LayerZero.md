@@ -72,7 +72,7 @@ public:: true
   "qualityScore": 0.7,
   "subClassOf": {
     "@id": "urn:ngm:class:blockchain",
-    "label": "Blockchain Domain"
+    "label": "Blockchain"
   },
   "relations": {
     "requires": [

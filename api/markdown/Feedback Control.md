@@ -152,7 +152,7 @@ alias:: FeedbackControl
     "hasPart": [
       {
         "@id": "urn:ngm:class:pid-controller",
-        "label": "PID Controller"
+        "label": "Pid Controller"
       },
       {
         "@id": "urn:ngm:class:feedback-loop",

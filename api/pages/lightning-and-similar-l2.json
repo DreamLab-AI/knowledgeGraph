@@ -9,7 +9,7 @@
   "subClassOf": [
     {
       "id": "urn:ngm:class:layer2",
-      "label": "Layer 2"
+      "label": "Layer2"
     }
   ],
   "entityType": "Class",
@@ -27,7 +27,7 @@
       },
       {
         "id": "urn:ngm:class:hash-time-locked-contract",
-        "label": "Hash Time Locked Contract"
+        "label": "Hash Time-Locked Contract"
       },
       {
         "id": "urn:ngm:class:watchtower",

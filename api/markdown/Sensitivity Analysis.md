@@ -25,7 +25,7 @@ public:: true
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:optimisation", "label": "Optimisation"}],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:calculation-parameters", "label": "Calculation Parameters"}, {"@id": "urn:ngm:class:privacy-preserving-analytics", "label": "Privacy-Preserving Analytics"}]
+    "relatedTo": [{"@id": "urn:ngm:class:calculation-parameters", "label": "Calculation Parameters"}, {"@id": "urn:ngm:class:privacy-preserving-analytics", "label": "Privacy Preserving Analytics"}]
   },
   "quality": 0.72
 }

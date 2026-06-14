@@ -60,7 +60,7 @@ public:: true
     "requires": [
       {
         "@id": "urn:ngm:class:decentralized-identifier",
-        "label": "Decentralised Identifier"
+        "label": "Decentralized Identifier"
       },
       {
         "@id": "urn:ngm:class:did-document",
@@ -78,7 +78,7 @@ public:: true
     "enables": [
       {
         "@id": "urn:ngm:class:self-sovereign-identity",
-        "label": "Self-Sovereign Identity"
+        "label": "Self Sovereign Identity"
       },
       {
         "@id": "urn:ngm:class:verifiable-credentials",

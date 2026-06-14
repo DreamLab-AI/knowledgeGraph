@@ -448,7 +448,7 @@ alias:: ColdChainMonitoring
       },
       {
         "@id": "urn:ngm:class:io-t-sensors",
-        "label": "IoT Sensors"
+        "label": "Io T Sensors"
       },
       {
         "@id": "urn:ngm:class:smart-contracts",
@@ -512,7 +512,7 @@ alias:: ColdChainMonitoring
       },
       {
         "@id": "urn:ngm:class:sustainability-reporting",
-        "label": "Sustainability Reporting"
+        "label": "SustainabilityReporting"
       },
       {
         "@id": "urn:ngm:class:traceability",
@@ -584,7 +584,7 @@ alias:: ColdChainMonitoring
       },
       {
         "@id": "urn:ngm:class:zero-knowledge-proof",
-        "label": "Zero-Knowledge Proofs"
+        "label": "Zero-Knowledge Proof"
       },
       {
         "@id": "urn:ngm:class:blockchain",
@@ -596,7 +596,7 @@ alias:: ColdChainMonitoring
       },
       {
         "@id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning"
+        "label": "Machine Learning Discipline"
       },
       {
         "@id": "urn:ngm:class:smart-contracts",
@@ -676,7 +676,7 @@ alias:: ColdChainMonitoring
       },
       {
         "@id": "urn:ngm:class:sustainability-reporting",
-        "label": "Sustainability Reporting"
+        "label": "SustainabilityReporting"
       },
       {
         "@id": "urn:ngm:class:vaccine-distribution",

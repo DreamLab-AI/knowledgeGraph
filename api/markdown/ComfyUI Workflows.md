@@ -541,11 +541,11 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:node-based-diffusion-pipeline-interface",
-        "label": "ComfyUI"
+        "label": "Node-Based Diffusion Pipeline Interface"
       },
       {
         "@id": "urn:ngm:class:stable-diffusion-image-model",
-        "label": "Stable Diffusion"
+        "label": "Stable Diffusion Image Model"
       }
     ],
     "enables": [
@@ -627,7 +627,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:hugging-face-hub",
-        "label": "Hugging Face Hub"
+        "label": "HuggingFace Hub"
       },
       {
         "@id": "urn:ngm:class:json-data-interchange-format-serialisation",
@@ -665,7 +665,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:temporal-motion-diffusion-adapter",
-        "label": "AnimateDiff"
+        "label": "Temporal Motion Diffusion Adapter"
       },
       {
         "@id": "urn:ngm:class:control-net-and-similar-spatial-conditioning-systems",
@@ -693,7 +693,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:stable-diffusion-image-model",
-        "label": "Stable Diffusion"
+        "label": "Stable Diffusion Image Model"
       }
     ],
     "supports": [
@@ -719,7 +719,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:temporal-motion-diffusion-adapter",
-        "label": "AnimateDiff"
+        "label": "Temporal Motion Diffusion Adapter"
       },
       {
         "@id": "urn:ngm:class:inpainting",
@@ -731,7 +731,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:lo-ra",
-        "label": "LoRA"
+        "label": "Lo RA"
       }
     ],
     "standardizedBy": [

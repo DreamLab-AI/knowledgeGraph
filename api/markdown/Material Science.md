@@ -57,7 +57,7 @@ public:: true
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-software-engineering",
-      "label": "Infra Software Engineering"
+      "label": "Software Engineering"
     }
   ],
   "relations": {

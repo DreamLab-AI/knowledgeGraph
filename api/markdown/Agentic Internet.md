@@ -1301,7 +1301,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Model"
+        "label": "Large Language Models"
       },
       {
         "@id": "urn:ngm:class:persistent-memory",
@@ -1415,7 +1415,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:constitutional-ai-training-methodology-language-model-family",
-        "label": "Anthropic Claude"
+        "label": "Constitutional AI Language Model Family"
       },
       {
         "@id": "urn:ngm:class:mistral",
@@ -1433,7 +1433,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:autonomous-agent",
-        "label": "Autonomous Agents"
+        "label": "Autonomous Agent"
       },
       {
         "@id": "urn:ngm:class:browser-use",
@@ -1517,7 +1517,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:trust-over-ip-foundation",
-        "label": "Trust over IP Foundation"
+        "label": "Trust Over IP Foundation"
       },
       {
         "@id": "urn:ngm:class:w3-c",

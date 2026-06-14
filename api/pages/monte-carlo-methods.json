@@ -9,7 +9,7 @@
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-technique",
-      "label": "Ai Technique"
+      "label": "AI Technique"
     }
   ],
   "entityType": "Class",
@@ -59,7 +59,7 @@
       },
       {
         "id": "urn:ngm:class:monte-carlo-localization",
-        "label": "Monte Carlo Localisation"
+        "label": "Monte Carlo Localization"
       },
       {
         "id": "urn:ngm:class:reinforcement-learning",

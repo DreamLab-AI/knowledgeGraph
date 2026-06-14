@@ -62,7 +62,7 @@ elevatedFrom:: [[flossverse]]
       {"@id": "urn:ngm:class:extended-reality-xr", "label": "Extended Reality (XR)"}
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:decentralised-creative-metaverse-framework", "label": "Agentic Metaverse for Global Creatives"},
+      {"@id": "urn:ngm:class:decentralised-creative-metaverse-framework", "label": "Decentralised Creative Metaverse Framework"},
       {"@id": "urn:ngm:class:open-standard", "label": "Open Standard"}
     ]
   },

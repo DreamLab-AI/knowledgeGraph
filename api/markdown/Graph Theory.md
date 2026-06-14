@@ -73,7 +73,7 @@ public:: true
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-research-area",
-      "label": "Ai Research Area"
+      "label": "AI Research Area"
     }
   ],
   "relations": {

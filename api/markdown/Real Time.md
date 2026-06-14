@@ -453,11 +453,11 @@ alias:: Real-Time
     },
     {
       "@id": "urn:ngm:class:operating-system",
-      "label": "Operating Systems"
+      "label": "Operating System"
     },
     {
       "@id": "urn:ngm:class:safety-critical-systems",
-      "label": "Safety Critical Systems"
+      "label": "Safety-Critical Systems"
     }
   ],
   "relations": {
@@ -528,7 +528,7 @@ alias:: Real-Time
       },
       {
         "@id": "urn:ngm:class:autonomous-system",
-        "label": "Autonomous Systems"
+        "label": "Autonomous System"
       },
       {
         "@id": "urn:ngm:class:avionics",
@@ -540,7 +540,7 @@ alias:: Real-Time
       },
       {
         "@id": "urn:ngm:class:industrial-automation",
-        "label": "Industrial Automation"
+        "label": "IndustrialAutomation"
       },
       {
         "@id": "urn:ngm:class:real-time-ai-inference",
@@ -640,7 +640,7 @@ alias:: Real-Time
     "supports": [
       {
         "@id": "urn:ngm:class:autonomous-vehicle",
-        "label": "Autonomous Vehicles"
+        "label": "Autonomous Vehicle"
       },
       {
         "@id": "urn:ngm:class:avionics",

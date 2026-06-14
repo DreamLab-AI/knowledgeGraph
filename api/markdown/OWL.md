@@ -23,7 +23,7 @@ public:: true
   "definition": "OWL (Web Ontology Language) is a W3C-standardised semantic web language for defining and sharing ontologies on the World Wide Web, built on RDF and grounded in Description Logics to provide formal semantics with decidable reasoning. OWL enables the specification of classes, properties, individuals, and axioms that constrain their relationships, supporting automated inference and knowledge graph construction.",
   "domain": "standards",
   "maturity": "mature",
-  "subClassOf": {"@id": "urn:ngm:class:semantic-web-linked-data-standard", "label": "Semantic Web"},
+  "subClassOf": {"@id": "urn:ngm:class:semantic-web-linked-data-standard", "label": "Semantic Web Linked Data Standard"},
   "relations": {
     "requires": [
       {"@id": "urn:ngm:class:rdf", "label": "RDF"},

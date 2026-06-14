@@ -58,7 +58,7 @@ public:: true
       {"@id": "urn:ngm:class:eu-ai-act", "label": "EU AI Act"}
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:iso-iec-42001", "label": "ISO/IEC 42001"}
+      {"@id": "urn:ngm:class:iso-iec-42001", "label": "ISO IEC 42001"}
     ],
     "contrastsWith": [
       {"@id": "urn:ngm:class:self-certification", "label": "Self-Certification"},

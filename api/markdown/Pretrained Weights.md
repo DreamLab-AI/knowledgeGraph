@@ -73,7 +73,7 @@ public:: true
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:pretrained-model", "label": "Pretrained Model"},
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"},
       {"@id": "urn:ngm:class:feature-engineering", "label": "Feature Engineering"}
     ]
   },

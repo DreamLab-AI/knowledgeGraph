@@ -583,7 +583,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:variational-autoencoders",
-        "label": "Variational Autoencoder"
+        "label": "Variational Autoencoders"
       },
       {
         "@id": "urn:ngm:class:cross-attention",

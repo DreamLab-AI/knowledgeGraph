@@ -48,7 +48,7 @@ public:: true
   "qualityScore": 0.7,
   "subClassOf": {
     "@id": "urn:ngm:class:sustainability-reporting",
-    "label": "Sustainability Reporting"
+    "label": "SustainabilityReporting"
   },
   "quality": 0.68,
   "provenance": {
@@ -116,7 +116,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:sustainability-reporting",
-        "label": "Sustainability Reporting"
+        "label": "SustainabilityReporting"
       },
       {
         "@id": "urn:ngm:class:regulatory-compliance",

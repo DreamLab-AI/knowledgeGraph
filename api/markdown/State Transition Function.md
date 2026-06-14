@@ -23,7 +23,7 @@ public:: true
   "definition": "A state transition function is the deterministic rule of a blockchain protocol that maps a current ledger state and a validated block of transactions to the next state, defining exactly how balances, contract storage, and other state evolve. Because every honest node applies the same function to the same inputs, all nodes converge on identical state, which is the basis of replicated consensus. It is the formal heart of a blockchain understood as a replicated state machine.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:bc-protocol-and-consensus", "label": "Blockchain Protocol and Consensus"}],
+  "subClassOf": [{"@id": "urn:ngm:class:bc-protocol-and-consensus", "label": "Protocol and Consensus"}],
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:distributed-ledger", "label": "Distributed Ledger"},

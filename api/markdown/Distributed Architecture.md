@@ -183,7 +183,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:synchronization-protocol",
-        "label": "Synchronization Protocols"
+        "label": "Synchronization Protocol"
       },
       {
         "@id": "urn:ngm:class:fault-tolerance",

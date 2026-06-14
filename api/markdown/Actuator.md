@@ -33,7 +33,7 @@ public:: true
   "subClassOf": [
     {
       "@id": "urn:ngm:class:robo-actuation-and-control",
-      "label": "Robo Actuation and Control"
+      "label": "Actuation and Control"
     }
   ],
   "relations": {
@@ -57,13 +57,13 @@ public:: true
     ],
     "enables": [
       {"@id": "urn:ngm:class:robot-kinematics", "label": "Robot Kinematics"},
-      {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human-Robot Interaction"},
+      {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human Robot Interaction"},
       {"@id": "urn:ngm:class:teleoperation", "label": "Teleoperation"},
       {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"}
     ],
     "dependsOn": [
       {"@id": "urn:ngm:class:encoder", "label": "Encoder"},
-      {"@id": "urn:ngm:class:pid-controller", "label": "PID Controller"},
+      {"@id": "urn:ngm:class:pid-controller", "label": "Pid Controller"},
       {"@id": "urn:ngm:class:embedded-system", "label": "Embedded System"}
     ],
     "contrastsWith": [
@@ -74,7 +74,7 @@ public:: true
       {"@id": "urn:ngm:class:torque-control", "label": "Torque Control"},
       {"@id": "urn:ngm:class:impedance-control", "label": "Impedance Control"},
       {"@id": "urn:ngm:class:soft-robotics", "label": "Soft Robotics"},
-      {"@id": "urn:ngm:class:industrial-automation", "label": "Industrial Automation"}
+      {"@id": "urn:ngm:class:industrial-automation", "label": "IndustrialAutomation"}
     ],
     "bridgesTo": [
       {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},

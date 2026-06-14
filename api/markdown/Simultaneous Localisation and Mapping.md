@@ -40,7 +40,7 @@ public:: true
     "uses": [
       {"@id": "urn:ngm:class:kalman-filter", "label": "Kalman Filter"},
       {"@id": "urn:ngm:class:particle-filter", "label": "Particle Filter"},
-      {"@id": "urn:ngm:class:lidar", "label": "LiDAR"},
+      {"@id": "urn:ngm:class:lidar", "label": "Lidar"},
       {"@id": "urn:ngm:class:factor-graph", "label": "Factor Graph"},
       {"@id": "urn:ngm:class:inertial-measurement-unit", "label": "Inertial Measurement Unit"},
       {"@id": "urn:ngm:class:bayesian-inference", "label": "Bayesian Inference"},
@@ -62,7 +62,7 @@ public:: true
       {"@id": "urn:ngm:class:localisation", "label": "Localisation"},
       {"@id": "urn:ngm:class:odometry", "label": "Odometry"},
       {"@id": "urn:ngm:class:occupancy-grid", "label": "Occupancy Grid"},
-      {"@id": "urn:ngm:class:structure-from-motion", "label": "Structure from Motion"},
+      {"@id": "urn:ngm:class:structure-from-motion", "label": "Structure-from-Motion"},
       {"@id": "urn:ngm:class:place-recognition", "label": "Place Recognition"}
     ],
     "dependsOn": [

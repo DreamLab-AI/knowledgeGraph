@@ -494,7 +494,7 @@ alias:: Model-based Control
       },
       {
         "@id": "urn:ngm:class:sim-to-real-transfer",
-        "label": "Sim to Real Transfer"
+        "label": "Sim-to-Real Transfer"
       },
       {
         "@id": "urn:ngm:class:digital-twin",

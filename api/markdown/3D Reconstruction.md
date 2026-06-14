@@ -157,7 +157,7 @@ public:: true
     "uses": [
       {
         "@id": "urn:ngm:class:lidar",
-        "label": "LiDAR"
+        "label": "Lidar"
       },
       {
         "@id": "urn:ngm:class:neural-radiance-field",

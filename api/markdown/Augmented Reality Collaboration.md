@@ -97,20 +97,20 @@ alias:: TELE-021-augmented-reality-collaboration
     },
     {
       "@id": "urn:ngm:class:telecollaboration",
-      "label": "TELE-002-telecollaboration"
+      "label": "Telecollaboration"
     }
   ],
   "relations": {
     "requires": [
       {
         "@id": "urn:ngm:class:web-rtc",
-        "label": "TELE-150-webrtc"
+        "label": "WebRTC"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:collaborative-systems-modality-design",
-        "label": "CollaborativeDesign"
+        "label": "Collaborative Design"
       }
     ]
   },

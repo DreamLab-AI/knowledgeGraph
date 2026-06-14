@@ -377,7 +377,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:time-series-analysis",
-        "label": "Time Series Analysis"
+        "label": "Time-Series Analysis"
       },
       {
         "@id": "urn:ngm:class:cloud-computing",
@@ -429,7 +429,7 @@ public:: true
     "implements": [
       {
         "@id": "urn:ngm:class:convolutional-neural-network",
-        "label": "Convolutional Neural Networks"
+        "label": "Convolutional Neural Network"
       },
       {
         "@id": "urn:ngm:class:envelope-analysis",
@@ -475,7 +475,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:opc-ua",
-        "label": "OPC-UA"
+        "label": "OPC UA"
       },
       {
         "@id": "urn:ngm:class:siemens-xcelerator",
@@ -483,7 +483,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:nvidia-corporation-omniverse-platform",
-        "label": "NVIDIA Omniverse"
+        "label": "NVIDIA Omniverse Platform"
       }
     ],
     "relatedTo": [
@@ -571,7 +571,7 @@ public:: true
     "bridgesTo": [
       {
         "@id": "urn:ngm:class:infra-software-engineering",
-        "label": "Infra Software Engineering"
+        "label": "Software Engineering"
       }
     ]
   },

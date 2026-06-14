@@ -52,7 +52,7 @@ public:: true
     "enables": [
       {"@id": "urn:ngm:class:predictive-maintenance", "label": "Predictive Maintenance"},
       {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
-      {"@id": "urn:ngm:class:industrial-automation", "label": "Industrial Automation"},
+      {"@id": "urn:ngm:class:industrial-automation", "label": "IndustrialAutomation"},
       {"@id": "urn:ngm:class:condition-monitoring", "label": "Condition Monitoring"}
     ],
     "requires": [
@@ -72,7 +72,7 @@ public:: true
       {"@id": "urn:ngm:class:consumer-iot", "label": "Consumer IoT"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:cyber-physical-systems", "label": "Cyber-Physical Systems"},
+      {"@id": "urn:ngm:class:cyber-physical-systems", "label": "Cyber Physical Systems"},
       {"@id": "urn:ngm:class:industry-4-0", "label": "Industry 4.0"}
     ],
     "bridgesTo": [

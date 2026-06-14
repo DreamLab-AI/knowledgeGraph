@@ -36,7 +36,7 @@ public:: true
     ],
     "hasPart": [
       {"@id": "urn:ngm:class:cls-token", "label": "CLS Token"},
-      {"@id": "urn:ngm:class:feed-forward-network", "label": "Feed-Forward Network"},
+      {"@id": "urn:ngm:class:feed-forward-network", "label": "Feed Forward Network"},
       {"@id": "urn:ngm:class:layer-normalisation", "label": "Layer Normalisation"}
     ],
     "requires": [

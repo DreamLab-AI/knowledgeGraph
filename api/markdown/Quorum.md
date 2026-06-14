@@ -37,7 +37,7 @@ public:: true
       {"@id": "urn:ngm:class:on-chain-governance", "label": "On-chain Governance"},
       {"@id": "urn:ngm:class:fault-tolerance", "label": "Fault Tolerance"},
       {"@id": "urn:ngm:class:linearisability", "label": "Linearisability"},
-      {"@id": "urn:ngm:class:decentralised-decision-making", "label": "Decentralised Decision-making"}
+      {"@id": "urn:ngm:class:decentralised-decision-making", "label": "Decentralised Decision-Making"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:voting-mechanism", "label": "Voting Mechanism"},
@@ -48,7 +48,7 @@ public:: true
     "supports": [
       {"@id": "urn:ngm:class:dao-governance", "label": "DAO Governance"},
       {"@id": "urn:ngm:class:blockchain-governance", "label": "Blockchain Governance"},
-      {"@id": "urn:ngm:class:multi-signature-wallet", "label": "Multi-signature Wallet"},
+      {"@id": "urn:ngm:class:multi-signature-wallet", "label": "Multi-Signature Wallet"},
       {"@id": "urn:ngm:class:treasury-management", "label": "Treasury Management"}
     ],
     "requires": [
@@ -61,8 +61,8 @@ public:: true
       {"@id": "urn:ngm:class:tendermint", "label": "Tendermint"}
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof of Work"},
-      {"@id": "urn:ngm:class:longest-chain-rule", "label": "Longest-chain Rule"}
+      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"},
+      {"@id": "urn:ngm:class:longest-chain-rule", "label": "Longest Chain Rule"}
     ],
     "bridgesTo": [
       {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"},

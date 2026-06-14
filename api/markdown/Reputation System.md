@@ -312,7 +312,7 @@ public:: true
     },
     {
       "@id": "urn:ngm:class:decentralized-governance",
-      "label": "Decentralised Governance"
+      "label": "Decentralized Governance"
     }
   ],
   "relations": {
@@ -409,7 +409,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:zero-knowledge-proof",
-        "label": "Zero Knowledge Proof"
+        "label": "Zero-Knowledge Proof"
       }
     ],
     "uses": [
@@ -431,7 +431,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:zero-knowledge-proof",
-        "label": "Zero Knowledge Proof"
+        "label": "Zero-Knowledge Proof"
       }
     ],
     "relatedTo": [

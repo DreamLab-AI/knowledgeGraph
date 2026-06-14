@@ -30,7 +30,7 @@ public:: true
     ],
     "enables": [
       {"@id": "urn:ngm:class:decentralized-identity", "label": "Decentralized Identity"},
-      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self-Sovereign Identity"}
+      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self Sovereign Identity"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:identity-provider", "label": "Identity Provider"}

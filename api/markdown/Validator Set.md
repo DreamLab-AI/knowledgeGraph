@@ -65,7 +65,7 @@ public:: true
       {"@id": "urn:ngm:class:verifiable-random-function", "label": "Verifiable Random Function"}
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof of Work"},
+      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"},
       {"@id": "urn:ngm:class:mining-pool", "label": "Mining Pool"}
     ],
     "relatedTo": [

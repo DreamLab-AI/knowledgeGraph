@@ -33,7 +33,7 @@ public:: true
   "subClassOf": [
     {
       "@id": "urn:ngm:class:speech-synthesis",
-      "label": "Speech Synthesis"
+      "label": "SpeechSynthesis"
     }
   ],
   "relations": {

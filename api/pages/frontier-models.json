@@ -9,7 +9,7 @@
   "subClassOf": [
     {
       "id": "urn:ngm:class:large-scale-pretrained-foundation-model",
-      "label": "Foundation Models"
+      "label": "Large-Scale Pretrained Foundation Model"
     }
   ],
   "entityType": "Class",

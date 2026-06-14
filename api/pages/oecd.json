@@ -9,7 +9,7 @@
   "subClassOf": [
     {
       "id": "urn:ngm:class:governance",
-      "label": "Governance Domain"
+      "label": "Governance"
     }
   ],
   "entityType": "Class",
@@ -110,7 +110,7 @@
     "supports": [
       {
         "id": "urn:ngm:class:infra-legal-and-regulatory",
-        "label": "Regulatory Domain"
+        "label": "Legal and Regulatory"
       },
       {
         "id": "urn:ngm:class:open-government",

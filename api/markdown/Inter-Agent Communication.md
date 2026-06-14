@@ -66,7 +66,7 @@ public:: true
       {"@id": "urn:ngm:class:single-agent-system", "label": "Single-Agent System"}
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:service-oriented-architecture", "label": "Service-Oriented Architecture"},
+      {"@id": "urn:ngm:class:service-oriented-architecture", "label": "Service Oriented Architecture"},
       {"@id": "urn:ngm:class:microservices", "label": "Microservices"}
     ]
   },

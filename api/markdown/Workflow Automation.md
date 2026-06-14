@@ -41,7 +41,7 @@ public:: true
       {"@id": "urn:ngm:class:orchestration", "label": "Orchestration"},
       {"@id": "urn:ngm:class:agentic-ai", "label": "Agentic AI"},
       {"@id": "urn:ngm:class:function-calling", "label": "Function Calling"},
-      {"@id": "urn:ngm:class:event-driven-architecture", "label": "Event-Driven Architecture"},
+      {"@id": "urn:ngm:class:event-driven-architecture", "label": "Event Driven Architecture"},
       {"@id": "urn:ngm:class:state-machine", "label": "State Machine"}
     ],
     "enables": [
@@ -58,7 +58,7 @@ public:: true
     "hasPart": [
       {"@id": "urn:ngm:class:robotic-process-automation", "label": "Robotic Process Automation"},
       {"@id": "urn:ngm:class:task-scheduling", "label": "Task Scheduling"},
-      {"@id": "urn:ngm:class:human-in-the-loop", "label": "Human-in-the-Loop"}
+      {"@id": "urn:ngm:class:human-in-the-loop", "label": "Human in the Loop"}
     ],
     "dependsOn": [
       {"@id": "urn:ngm:class:planning-and-scheduling", "label": "Planning and Scheduling"},

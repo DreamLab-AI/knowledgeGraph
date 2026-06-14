@@ -443,7 +443,7 @@ public:: true
     "enables": [
       {
         "@id": "urn:ngm:class:autonomous-agent",
-        "label": "Autonomous Agents"
+        "label": "Autonomous Agent"
       },
       {
         "@id": "urn:ngm:class:few-shot-learning",
@@ -467,7 +467,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:large-scale-pretrained-foundation-model",
-        "label": "Foundation Models"
+        "label": "Large-Scale Pretrained Foundation Model"
       },
       {
         "@id": "urn:ngm:class:model-training",
@@ -547,7 +547,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:neural-network",
-        "label": "Neural Networks"
+        "label": "Neural Network"
       },
       {
         "@id": "urn:ngm:class:backpropagation",
@@ -591,7 +591,7 @@ public:: true
     "supports": [
       {
         "@id": "urn:ngm:class:autonomous-vehicle",
-        "label": "Autonomous Vehicles"
+        "label": "Autonomous Vehicle"
       },
       {
         "@id": "urn:ngm:class:drug-discovery",

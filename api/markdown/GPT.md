@@ -146,7 +146,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:feed-forward-network",
-        "label": "Feed-Forward Network"
+        "label": "Feed Forward Network"
       }
     ],
     "contrastsWith": [
@@ -156,7 +156,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:encoder-decoder-architecture",
-        "label": "Encoder-Decoder Architecture"
+        "label": "Encoder Decoder Architecture"
       }
     ],
     "relatedTo": [

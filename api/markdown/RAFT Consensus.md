@@ -32,7 +32,7 @@ public:: true
   "subClassOf": [
     {
       "@id": "urn:ngm:class:bc-protocol-and-consensus",
-      "label": "Blockchain Protocol and Consensus"
+      "label": "Protocol and Consensus"
     }
   ],
   "relations": {

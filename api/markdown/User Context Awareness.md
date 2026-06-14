@@ -57,7 +57,7 @@ public:: true
     },
     {
       "@id": "urn:ngm:class:context-aware-computing",
-      "label": "Context-Aware Computing"
+      "label": "Context Aware Computing"
     }
   ],
   "relations": {

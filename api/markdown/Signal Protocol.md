@@ -44,7 +44,7 @@ public:: true
     ],
     "dependsOn": [
       {"@id": "urn:ngm:class:cryptography", "label": "Cryptography"},
-      {"@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography", "label": "Public Key Cryptography"}
+      {"@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography", "label": "Public-Key Cryptography"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:private-messaging", "label": "Private Messaging"},

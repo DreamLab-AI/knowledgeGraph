@@ -83,7 +83,7 @@ public:: true
       {"@id": "urn:ngm:class:multi-head-attention", "label": "Multi-Head Attention"}
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:scaled-dot-product-attention", "label": "Scaled Dot-Product Attention"},
+      {"@id": "urn:ngm:class:scaled-dot-product-attention", "label": "Scaled Dot Product Attention"},
       {"@id": "urn:ngm:class:query-key-value-projection", "label": "Query-Key-Value Projection"}
     ],
     "requires": [
@@ -114,7 +114,7 @@ public:: true
     "contrastsWith": [
       {"@id": "urn:ngm:class:recurrent-neural-network", "label": "Recurrent Neural Network"},
       {"@id": "urn:ngm:class:state-space-model", "label": "State Space Model"},
-      {"@id": "urn:ngm:class:cross-attention", "label": "Cross-Attention"}
+      {"@id": "urn:ngm:class:cross-attention", "label": "Cross Attention"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"},

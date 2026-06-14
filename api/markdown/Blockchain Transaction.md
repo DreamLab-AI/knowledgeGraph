@@ -68,7 +68,7 @@ public:: true
       {"@id": "urn:ngm:class:transaction-fee", "label": "Transaction Fee"}
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:utxo", "label": "UTXO (Unspent Transaction Output)"},
+      {"@id": "urn:ngm:class:utxo", "label": "UTXO"},
       {"@id": "urn:ngm:class:transaction-input", "label": "Transaction Input"},
       {"@id": "urn:ngm:class:transaction-output", "label": "Transaction Output"},
       {"@id": "urn:ngm:class:transaction-nonce", "label": "Transaction Nonce"},

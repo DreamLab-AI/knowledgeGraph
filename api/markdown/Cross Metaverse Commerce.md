@@ -88,7 +88,7 @@ alias:: Cross-Metaverse Commerce
     "requires": [
       {
         "@id": "urn:ngm:class:interoperability-standard",
-        "label": "Interoperability Standards"
+        "label": "Interoperability Standard"
       },
       {
         "@id": "urn:ngm:class:blockchain-infrastructure",

@@ -53,7 +53,7 @@ public:: true
   "subClassOf": [
     {
       "@id": "urn:ngm:class:bc-network-component",
-      "label": "Bc Network Component"
+      "label": "Network Component"
     }
   ],
   "sameAs": [
@@ -140,7 +140,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:proof-of-work",
-        "label": "Proof of Work"
+        "label": "Proof Of Work"
       },
       {
         "@id": "urn:ngm:class:content-addressing",

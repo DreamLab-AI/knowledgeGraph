@@ -112,7 +112,7 @@ public:: true
     },
     {
       "@id": "urn:ngm:class:sc-interaction",
-      "label": "Interaction Domain"
+      "label": "Interaction Technology"
     }
   ],
   "relations": {
@@ -135,7 +135,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:tracking-system",
-        "label": "Tracking Systems"
+        "label": "Tracking System"
       }
     ],
     "requires": [
@@ -173,7 +173,7 @@ public:: true
     "partOf": [
       {
         "@id": "urn:ngm:class:sc-interaction",
-        "label": "Interaction Domain"
+        "label": "Interaction Technology"
       }
     ]
   },

@@ -48,7 +48,7 @@ public:: true
     ],
     "requires": [
       {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"},
-      {"@id": "urn:ngm:class:pre-training", "label": "Pre-Training"},
+      {"@id": "urn:ngm:class:pre-training", "label": "Pre Training"},
       {"@id": "urn:ngm:class:large-scale-corpus", "label": "Large-Scale Corpus"}
     ],
     "relatedTo": [
@@ -67,7 +67,7 @@ public:: true
       {"@id": "urn:ngm:class:autoregressive-language-model", "label": "Autoregressive Language Model"}
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval Augmented Generation"},
+      {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"},
       {"@id": "urn:ngm:class:knowledge-graph-embedding", "label": "Knowledge Graph Embedding"}
     ],
     "hasPart": [

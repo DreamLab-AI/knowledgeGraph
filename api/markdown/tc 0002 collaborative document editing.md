@@ -280,7 +280,7 @@ public:: true
     },
     {
       "@id": "urn:ngm:class:dc-telepresence",
-      "label": "DC Telepresence"
+      "label": "Telepresence"
     }
   ],
   "relations": {

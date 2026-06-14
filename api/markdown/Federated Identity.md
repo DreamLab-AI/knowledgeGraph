@@ -70,7 +70,7 @@ public:: true
     "bridgesTo": [
       {"@id": "urn:ngm:class:decentralized-identity", "label": "Decentralized Identity"},
       {"@id": "urn:ngm:class:verifiable-credentials", "label": "Verifiable Credentials"},
-      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self-Sovereign Identity"}
+      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self Sovereign Identity"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:privilege-access-management", "label": "Privilege Access Management"},

@@ -26,7 +26,7 @@ public:: true
   "subClassOf": [{"@id": "urn:ngm:class:data-management", "label": "Data Management"}],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:etsi-metaverse-domain-taxonomy", "label": "ETSI Metaverse Domain Taxonomy"},
+      {"@id": "urn:ngm:class:etsi-metaverse-domain-taxonomy", "label": "Etsi Metaverse Domain Taxonomy"},
       {"@id": "urn:ngm:class:domain-ontology", "label": "Domain Ontology"}
     ]
   },

@@ -179,7 +179,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:force-torque-sensor",
-        "label": "Force-Torque Sensor"
+        "label": "Force Torque Sensor"
       },
       {
         "@id": "urn:ngm:class:jacobian-matrix",
@@ -193,7 +193,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:position-control",
-        "label": "Position Control"
+        "label": "PositionControl"
       },
       {
         "@id": "urn:ngm:class:hybrid-force-position-control",
@@ -239,7 +239,7 @@ public:: true
     "standardizedBy": [
       {
         "@id": "urn:ngm:class:iso-8373",
-        "label": "ISO 8373 Robotics Vocabulary"
+        "label": "ISO 8373"
       }
     ]
   },

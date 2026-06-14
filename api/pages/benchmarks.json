@@ -9,7 +9,7 @@
   "subClassOf": [
     {
       "id": "urn:ngm:class:evaluation-benchmarks-and-leaderboards",
-      "label": "Evaluation Benchmarks and Leaderboards"
+      "label": "Evaluation benchmarks and leaderboards"
     }
   ],
   "entityType": "Class",

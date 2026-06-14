@@ -9,7 +9,7 @@
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-robot-type",
-      "label": "Robotics Robot Type"
+      "label": "Robot Type"
     }
   ],
   "entityType": "Class",

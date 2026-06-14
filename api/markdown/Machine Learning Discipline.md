@@ -73,7 +73,7 @@ alias:: MachineLearning
   "maturity": "emerging",
   "subClassOf": {
     "@id": "urn:ngm:class:artificial-intelligence-core",
-    "label": "Artificial Intelligence"
+    "label": "Artificial Intelligence Core"
   },
   "relations": {
     "hasPart": [

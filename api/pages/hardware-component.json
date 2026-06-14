@@ -9,7 +9,7 @@
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-computing-and-cloud",
-      "label": "Infra Computing and Cloud"
+      "label": "Computing and Cloud"
     }
   ],
   "entityType": "Class",
@@ -67,7 +67,7 @@
       },
       {
         "id": "urn:ngm:class:real-time-processing",
-        "label": "Real-Time Processing"
+        "label": "Real-time Processing"
       },
       {
         "id": "urn:ngm:class:edge-inference",

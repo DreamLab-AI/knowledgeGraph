@@ -63,7 +63,7 @@ public:: true
   "relations": {
     "requires": [
       {"@id": "urn:ngm:class:probabilistic-model", "label": "Probabilistic Model"},
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"},
       {"@id": "urn:ngm:class:feature-extraction", "label": "Feature Extraction"}
     ],
     "enables": [

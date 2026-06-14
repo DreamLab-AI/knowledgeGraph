@@ -9,7 +9,7 @@
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-network-and-comms",
-      "label": "Infra Network And Comms"
+      "label": "Network and Communication"
     }
   ],
   "entityType": "Class",
@@ -75,7 +75,7 @@
     "implements": [
       {
         "id": "urn:ngm:class:self-sovereign-identity",
-        "label": "Self-Sovereign Identity"
+        "label": "Self Sovereign Identity"
       },
       {
         "id": "urn:ngm:class:open-protocol",

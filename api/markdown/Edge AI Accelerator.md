@@ -70,7 +70,7 @@ public:: true
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-infrastructure",
-      "label": "AI Infrastructure (Category)"
+      "label": "AI Infrastructure"
     },
     {
       "@id": "urn:ngm:class:ai-hardware",

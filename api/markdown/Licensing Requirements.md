@@ -300,7 +300,7 @@ alias:: BC-0488-licensing-requirements
     ],
     "partOf": [
       {"@id": "urn:ngm:class:bc-governance-and-regulation", "label": "Governance and Regulation"},
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain Domain"}
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
     ],
     "dependsOn": [
       {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},

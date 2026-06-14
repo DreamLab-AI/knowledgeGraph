@@ -9,7 +9,7 @@
   "subClassOf": [
     {
       "id": "urn:ngm:class:quantum-computation-paradigm",
-      "label": "Quantum Computing"
+      "label": "Quantum Computation Paradigm"
     }
   ],
   "entityType": "Class",
@@ -20,7 +20,7 @@
     "requires": [
       {
         "id": "urn:ngm:class:quantum-computation-paradigm",
-        "label": "Quantum Computing"
+        "label": "Quantum Computation Paradigm"
       }
     ],
     "enables": [

@@ -109,20 +109,20 @@ alias:: TELE-300-digital-twin-collaboration
     },
     {
       "@id": "urn:ngm:class:telecollaboration",
-      "label": "TELE-002-telecollaboration"
+      "label": "Telecollaboration"
     }
   ],
   "relations": {
     "requires": [
       {
         "@id": "urn:ngm:class:cloud-computing",
-        "label": "CloudComputing"
+        "label": "Cloud Computing"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:collaborative-systems-modality-simulation",
-        "label": "CollaborativeSimulation"
+        "label": "Collaborative Simulation"
       }
     ]
   },

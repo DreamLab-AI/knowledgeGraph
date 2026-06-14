@@ -27,7 +27,7 @@ public:: true
   "relations": {
     "enables": [
       {"@id": "urn:ngm:class:video-encoding", "label": "Video Encoding"},
-      {"@id": "urn:ngm:class:computer-vision-video-analysis", "label": "Video Processing"},
+      {"@id": "urn:ngm:class:computer-vision-video-analysis", "label": "Computer Vision Video Analysis"},
       {"@id": "urn:ngm:class:bandwidth-optimization", "label": "Bandwidth Optimization"}
     ],
     "uses": [

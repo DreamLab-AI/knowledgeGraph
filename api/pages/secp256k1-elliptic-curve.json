@@ -9,7 +9,7 @@
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-cryptographic-primitive",
-      "label": "Blockchain Cryptographic Primitive"
+      "label": "Cryptographic Primitive"
     }
   ],
   "entityType": "Class",

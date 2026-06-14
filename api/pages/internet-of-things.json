@@ -51,7 +51,7 @@
       },
       {
         "id": "urn:ngm:class:telemetry-and-analytics",
-        "label": "Telemetry and Analytics"
+        "label": "Telemetry & Analytics"
       },
       {
         "id": "urn:ngm:class:smart-city",
@@ -59,7 +59,7 @@
       },
       {
         "id": "urn:ngm:class:industrial-automation",
-        "label": "Industrial Automation"
+        "label": "IndustrialAutomation"
       },
       {
         "id": "urn:ngm:class:predictive-maintenance",
@@ -133,7 +133,7 @@
     "relatedTo": [
       {
         "id": "urn:ngm:class:cyber-physical-systems",
-        "label": "Cyber-Physical Systems"
+        "label": "Cyber Physical Systems"
       },
       {
         "id": "urn:ngm:class:5g",

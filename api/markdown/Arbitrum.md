@@ -72,13 +72,13 @@ public:: true
   "qualityScore": 0.7,
   "subClassOf": {
     "@id": "urn:ngm:class:bc-protocol-and-consensus",
-    "label": "Bc Protocol And Consensus"
+    "label": "Protocol and Consensus"
   },
   "relations": {
     "requires": [
       {
         "@id": "urn:ngm:class:ethereum-smart-contract-platform",
-        "label": "Ethereum"
+        "label": "Ethereum Smart Contract Platform"
       },
       {
         "@id": "urn:ngm:class:rollup",
@@ -114,7 +114,7 @@ public:: true
     "enables": [
       {
         "@id": "urn:ngm:class:decentralised-finance",
-        "label": "Decentralised Finance Domain"
+        "label": "Decentralised Finance"
       },
       {
         "@id": "urn:ngm:class:low-cost-transaction",

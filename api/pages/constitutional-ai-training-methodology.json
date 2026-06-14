@@ -19,7 +19,7 @@
     "hasPart": [
       {
         "id": "urn:ngm:class:supervised-fine-tuning",
-        "label": "Supervised Fine-Tuning"
+        "label": "Supervised Fine Tuning"
       },
       {
         "id": "urn:ngm:class:reinforcement-learning-from-ai-feedback",
@@ -113,7 +113,7 @@
       },
       {
         "id": "urn:ngm:class:red-teaming",
-        "label": "Red-Teaming"
+        "label": "Red Teaming"
       }
     ],
     "supports": [

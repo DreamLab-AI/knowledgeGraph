@@ -409,7 +409,7 @@ alias:: MotionControl
       },
       {
         "@id": "urn:ngm:class:kinematic-model",
-        "label": "Kinematic Model"
+        "label": "KinematicModel"
       },
       {
         "@id": "urn:ngm:class:real-time-operating-system",
@@ -535,11 +535,11 @@ alias:: MotionControl
       },
       {
         "@id": "urn:ngm:class:collaborative-systems-modality-robot",
-        "label": "Collaborative Robots"
+        "label": "Collaborative Robot"
       },
       {
         "@id": "urn:ngm:class:delta-robot",
-        "label": "Delta Robots"
+        "label": "Delta Robot"
       },
       {
         "@id": "urn:ngm:class:gantry-systems",
@@ -551,7 +551,7 @@ alias:: MotionControl
       },
       {
         "@id": "urn:ngm:class:scara-robot",
-        "label": "SCARA Robots"
+        "label": "SCARA Robot"
       }
     ],
     "standardizedBy": [

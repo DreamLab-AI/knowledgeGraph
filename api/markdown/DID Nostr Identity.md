@@ -237,7 +237,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:schnorr-signature",
-        "label": "Schnorr Signatures"
+        "label": "Schnorr Signature"
       },
       {
         "@id": "urn:ngm:class:w3-c-did-core",

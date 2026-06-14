@@ -33,7 +33,7 @@ public:: true
   "subClassOf": [
     {
       "@id": "urn:ngm:class:bc-governance-and-regulation",
-      "label": "Blockchain Governance and Regulation"
+      "label": "Governance and Regulation"
     }
   ],
   "relations": {
@@ -46,7 +46,7 @@ public:: true
     "uses": [
       {"@id": "urn:ngm:class:dao-governance", "label": "DAO Governance"},
       {"@id": "urn:ngm:class:governance-token", "label": "Governance Token"},
-      {"@id": "urn:ngm:class:on-chain-voting", "label": "On-Chain Voting"},
+      {"@id": "urn:ngm:class:on-chain-voting", "label": "On Chain Voting"},
       {"@id": "urn:ngm:class:time-lock", "label": "Time-Lock"}
     ],
     "enables": [
@@ -60,7 +60,7 @@ public:: true
       {"@id": "urn:ngm:class:fraud-proof", "label": "Fraud Proof"}
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:on-chain-governance", "label": "On-Chain Governance"},
+      {"@id": "urn:ngm:class:on-chain-governance", "label": "On-chain Governance"},
       {"@id": "urn:ngm:class:off-chain-governance", "label": "Off-Chain Governance"},
       {"@id": "urn:ngm:class:centralised-governance", "label": "Centralised Governance"}
     ],

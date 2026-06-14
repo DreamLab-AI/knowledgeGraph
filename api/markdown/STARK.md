@@ -61,7 +61,7 @@ public:: true
   "subClassOf": [
     {
       "@id": "urn:ngm:class:cryptography",
-      "label": "Cryptography Domain"
+      "label": "Cryptography"
     }
   ],
   "relations": {

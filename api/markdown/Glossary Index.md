@@ -168,7 +168,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:skos-vocabulary",
-        "label": "SKOS Vocabulary"
+        "label": "Skos Vocabulary"
       }
     ],
     "enables": [

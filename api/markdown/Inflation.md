@@ -71,7 +71,7 @@ public:: true
   "maturity": "established",
   "subClassOf": {
     "@id": "urn:ngm:class:economic-mechanism",
-    "label": "EconomicMechanism"
+    "label": "Economic Mechanism"
   },
   "relations": {
     "hasPart": [
@@ -80,7 +80,7 @@ public:: true
       {"@id": "urn:ngm:class:inflation-rate-parameter", "label": "Inflation Rate Parameter"}
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:token-economics", "label": "TokenEconomicsDomain"},
+      {"@id": "urn:ngm:class:token-economics", "label": "Token Economics"},
       {"@id": "urn:ngm:class:monetary-policy", "label": "Monetary Policy"}
     ],
     "requires": [

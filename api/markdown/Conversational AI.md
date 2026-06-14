@@ -85,7 +85,7 @@ public:: true
     "enables": [
       {"@id": "urn:ngm:class:virtual-assistant", "label": "Virtual Assistant"},
       {"@id": "urn:ngm:class:customer-service-automation", "label": "Customer Service Automation"},
-      {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human-Robot Interaction"}
+      {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human Robot Interaction"}
     ],
     "dependsOn": [
       {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},

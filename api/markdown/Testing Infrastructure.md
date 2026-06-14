@@ -53,7 +53,7 @@ public:: true
     },
     {
       "@id": "urn:ngm:class:quality-assurance",
-      "label": "quality-assurance"
+      "label": "Quality Assurance"
     }
   ],
   "quality": 0.35,

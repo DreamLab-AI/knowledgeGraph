@@ -511,7 +511,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:variational-autoencoders",
-        "label": "Variational Autoencoder"
+        "label": "Variational Autoencoders"
       },
       {
         "@id": "urn:ngm:class:particle-filter",
@@ -551,7 +551,7 @@ public:: true
     "supports": [
       {
         "@id": "urn:ngm:class:autonomous-system",
-        "label": "Autonomous Systems"
+        "label": "Autonomous System"
       },
       {
         "@id": "urn:ngm:class:climate-modelling",

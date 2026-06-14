@@ -76,7 +76,7 @@
     "contrastsWith": [
       {
         "id": "urn:ngm:class:pick-and-place",
-        "label": "Pick-and-Place"
+        "label": "Pick and Place"
       },
       {
         "id": "urn:ngm:class:rigid-gripper",

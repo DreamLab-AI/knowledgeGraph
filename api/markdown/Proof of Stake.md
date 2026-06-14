@@ -73,7 +73,7 @@ alias:: Proof-of-Stake, ProofOfStake, proof-of-stake
       {"@id": "urn:ngm:class:blockchain-sustainability", "label": "Blockchain Sustainability"},
       {"@id": "urn:ngm:class:sharding", "label": "Sharding"},
       {"@id": "urn:ngm:class:layer-2-scaling", "label": "Layer 2 Scaling"},
-      {"@id": "urn:ngm:class:on-chain-governance", "label": "On-Chain Governance"}
+      {"@id": "urn:ngm:class:on-chain-governance", "label": "On-chain Governance"}
     ],
     "dependsOn": [
       {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
@@ -81,7 +81,7 @@ alias:: Proof-of-Stake, ProofOfStake, proof-of-stake
       {"@id": "urn:ngm:class:public-key-cryptography", "label": "Public Key Cryptography"}
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof of Work"},
+      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"},
       {"@id": "urn:ngm:class:proof-of-authority", "label": "Proof of Authority"},
       {"@id": "urn:ngm:class:proof-of-history", "label": "Proof of History"}
     ],

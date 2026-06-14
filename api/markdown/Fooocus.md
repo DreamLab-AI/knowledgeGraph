@@ -551,7 +551,7 @@ public:: true
     "enables": [
       {
         "@id": "urn:ngm:class:face-swap",
-        "label": "Faceswap"
+        "label": "Face Swap"
       },
       {
         "@id": "urn:ngm:class:local-ai-art-creation",
@@ -567,7 +567,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:text-to-image-generation",
-        "label": "Text to Image Generation"
+        "label": "Text-to-Image Generation"
       },
       {
         "@id": "urn:ngm:class:image-to-image-translation",

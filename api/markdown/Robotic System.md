@@ -50,7 +50,7 @@ alias:: RoboticSystem
   "subClassOf": [
     {
       "@id": "urn:ngm:class:robo-robot-type",
-      "label": "Robo Robot Type"
+      "label": "Robot Type"
     }
   ],
   "sameAs": [
@@ -134,7 +134,7 @@ alias:: RoboticSystem
       },
       {
         "@id": "urn:ngm:class:industrial-automation",
-        "label": "Industrial Automation"
+        "label": "IndustrialAutomation"
       },
       {
         "@id": "urn:ngm:class:autonomous-navigation",

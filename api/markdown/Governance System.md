@@ -23,7 +23,7 @@ public:: true
   "definition": "A governance system is the structured set of rules, roles, and processes by which a blockchain protocol or organisation makes collective decisions about its parameters, upgrades, and resource allocation. It defines who can propose changes, how they are ratified, and how outcomes are enforced and recorded. In blockchains it is integral to protocol evolution and to the auditability of decisions.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:bc-governance-and-regulation", "label": "Blockchain Governance and Regulation"}],
+  "subClassOf": [{"@id": "urn:ngm:class:bc-governance-and-regulation", "label": "Governance and Regulation"}],
   "relations": {
     "relatedTo": [{"@id": "urn:ngm:class:blockchain-protocol", "label": "Blockchain Protocol"}, {"@id": "urn:ngm:class:audit-trail", "label": "Audit Trail"}]
   },

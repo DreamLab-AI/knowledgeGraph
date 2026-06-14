@@ -203,7 +203,7 @@ public:: true
     "relatedTo": [
       {
         "@id": "urn:ngm:class:zero-knowledge-proof",
-        "label": "Zero Knowledge Proof"
+        "label": "Zero-Knowledge Proof"
       },
       {
         "@id": "urn:ngm:class:multi-party-computation",

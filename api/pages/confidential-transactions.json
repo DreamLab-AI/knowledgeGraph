@@ -72,7 +72,7 @@
     "contrastsWith": [
       {
         "id": "urn:ngm:class:zk-snark",
-        "label": "zk-SNARK"
+        "label": "ZK-SNARK"
       },
       {
         "id": "urn:ngm:class:transparent-blockchain",

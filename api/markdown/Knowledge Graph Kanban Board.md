@@ -70,12 +70,12 @@ elevatedFrom:: [[Planning Kanban - currently broken]]
     },
     {
       "@id": "urn:ngm:class:active-research-projects-registry",
-      "label": "Projects"
+      "label": "Active Research Projects Registry"
     }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:active-research-projects-registry", "label": "Projects"},
+      {"@id": "urn:ngm:class:active-research-projects-registry", "label": "Active Research Projects Registry"},
       {"@id": "urn:ngm:class:player-two", "label": "Player Two"}
     ],
     "uses": [
@@ -83,7 +83,7 @@ elevatedFrom:: [[Planning Kanban - currently broken]]
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:multi-agent-systems", "label": "Multi-Agent Systems"},
-      {"@id": "urn:ngm:class:decentralised-agent-coordination-initiative", "label": "Agentic Alliance"}
+      {"@id": "urn:ngm:class:decentralised-agent-coordination-initiative", "label": "Decentralised Agent Coordination Initiative"}
     ]
   },
   "quality": 0.35,

@@ -35,7 +35,7 @@
     "uses": [
       {
         "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning"
+        "label": "Machine Learning Discipline"
       },
       {
         "id": "urn:ngm:class:automated-compliance",
@@ -45,7 +45,7 @@
     "supports": [
       {
         "id": "urn:ngm:class:ai-driven-workforce-displacement-registry",
-        "label": "Layoff tracker and threatened roles"
+        "label": "AI-Driven Workforce Displacement Registry"
       }
     ],
     "standardizedBy": [],

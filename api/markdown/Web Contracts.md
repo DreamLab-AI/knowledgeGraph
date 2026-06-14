@@ -35,12 +35,12 @@ alias:: webcontracts, Web Contract, WebContracts
     "uses": [
       {"@id": "urn:ngm:class:block-trails", "label": "Block Trails"},
       {"@id": "urn:ngm:class:did-nostr", "label": "did:nostr"},
-      {"@id": "urn:ngm:class:json-data-interchange-format", "label": "JSON"},
+      {"@id": "urn:ngm:class:json-data-interchange-format", "label": "JSON Data Interchange Format"},
       {"@id": "urn:ngm:class:sha-256", "label": "SHA-256"},
       {"@id": "urn:ngm:class:json-schema", "label": "JSON Schema"}
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:state-machine-replication", "label": "Hash Chain"},
+      {"@id": "urn:ngm:class:state-machine-replication", "label": "State Machine Replication"},
       {"@id": "urn:ngm:class:ledger", "label": "Ledger"}
     ],
     "dependsOn": [

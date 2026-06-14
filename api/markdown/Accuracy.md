@@ -235,7 +235,7 @@ public:: true
     "standardizedBy": [
       {
         "@id": "urn:ngm:class:iso-iec-25059",
-        "label": "ISO/IEC 25059"
+        "label": "ISO-IEC 25059"
       },
       {
         "@id": "urn:ngm:class:nist-ai-rmf",

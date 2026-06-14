@@ -109,7 +109,7 @@
       },
       {
         "id": "urn:ngm:class:publish-subscribe-pattern",
-        "label": "Publish Subscribe Pattern"
+        "label": "Publish-Subscribe Pattern"
       },
       {
         "id": "urn:ngm:class:serialisation",

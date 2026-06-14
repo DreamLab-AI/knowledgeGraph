@@ -72,7 +72,7 @@ public:: true
     "requires": [
       {
         "@id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning"
+        "label": "Machine Learning Discipline"
       }
     ],
     "enables": [

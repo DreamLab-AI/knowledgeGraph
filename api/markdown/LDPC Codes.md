@@ -23,7 +23,7 @@ public:: true
   "definition": "Low-Density Parity-Check (LDPC) codes are a class of linear error-correcting codes defined by a sparse parity-check matrix and decoded with iterative belief-propagation algorithms. They approach the Shannon capacity limit while remaining computationally tractable, making them a dominant forward-error-correction scheme in modern communications. LDPC codes are mandated in standards such as Wi-Fi 6, 5G NR data channels, and DVB-S2.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:infra-network-and-comms", "label": "Infrastructure Network and Communications"}],
+  "subClassOf": [{"@id": "urn:ngm:class:infra-network-and-comms", "label": "Network and Communication"}],
   "relations": {
     "relatedTo": [{"@id": "urn:ngm:class:forward-error-correction", "label": "Forward Error Correction"}, {"@id": "urn:ngm:class:physical-layer", "label": "Physical Layer"}]
   },

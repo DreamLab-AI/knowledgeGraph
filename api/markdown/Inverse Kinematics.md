@@ -136,7 +136,7 @@ alias:: InverseKinematics, RB-1006-inverse-kinematics
     "requires": [
       {
         "@id": "urn:ngm:class:kinematic-model",
-        "label": "Kinematic Model"
+        "label": "KinematicModel"
       },
       {
         "@id": "urn:ngm:class:target-pose",
@@ -230,7 +230,7 @@ alias:: InverseKinematics, RB-1006-inverse-kinematics
       },
       {
         "@id": "urn:ngm:class:end-effector",
-        "label": "End-Effector"
+        "label": "End Effector"
       }
     ],
     "bridgesTo": [

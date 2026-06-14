@@ -44,7 +44,7 @@ public:: true
     ],
     "enables": [
       {"@id": "urn:ngm:class:avatar-animation", "label": "Avatar Animation"},
-      {"@id": "urn:ngm:class:real-time-character-animation", "label": "Real-Time Character Animation"},
+      {"@id": "urn:ngm:class:real-time-character-animation", "label": "Real Time Character Animation"},
       {"@id": "urn:ngm:class:pose-estimation", "label": "Pose Estimation"},
       {"@id": "urn:ngm:class:facial-animation", "label": "Facial Animation"},
       {"@id": "urn:ngm:class:virtual-production", "label": "Virtual Production"}

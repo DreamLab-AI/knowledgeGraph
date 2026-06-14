@@ -26,8 +26,8 @@ public:: true
   "subClassOf": [{"@id": "urn:ngm:class:mechanism-design", "label": "Mechanism Design"}],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol", "label": "Bitcoin"},
-      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof of Work"},
+      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol", "label": "Bitcoin Proof-of-Work Protocol"},
+      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"},
       {"@id": "urn:ngm:class:mining-pool", "label": "Mining Pool"}
     ]
   },

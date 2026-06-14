@@ -194,7 +194,7 @@ alias:: End-Effector
     "supports": [
       {
         "@id": "urn:ngm:class:industrial-automation",
-        "label": "Industrial Automation"
+        "label": "IndustrialAutomation"
       },
       {
         "@id": "urn:ngm:class:collaborative-robotics",

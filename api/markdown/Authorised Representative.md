@@ -66,7 +66,7 @@ public:: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:eu-ai-act-regulatory-instrument", "label": "EU AI Act"},
+      {"@id": "urn:ngm:class:eu-ai-act-regulatory-instrument", "label": "EU AI Act Regulatory Instrument"},
       {"@id": "urn:ngm:class:compliance-framework", "label": "Compliance Framework"}
     ],
     "supports": [

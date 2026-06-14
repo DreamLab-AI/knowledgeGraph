@@ -43,7 +43,7 @@ public:: true
       {"@id": "urn:ngm:class:blockchain-interoperability", "label": "Blockchain Interoperability"},
       {"@id": "urn:ngm:class:shared-security", "label": "Shared Security"},
       {"@id": "urn:ngm:class:forkless-upgrades", "label": "Forkless Upgrades"},
-      {"@id": "urn:ngm:class:on-chain-governance", "label": "On-Chain Governance"}
+      {"@id": "urn:ngm:class:on-chain-governance", "label": "On-chain Governance"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:substrate-framework", "label": "Substrate Framework"},

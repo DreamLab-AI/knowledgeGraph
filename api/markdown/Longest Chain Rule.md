@@ -81,7 +81,7 @@ alias:: Longest-Chain Rule
     },
     {
       "@id": "urn:ngm:class:consensus-protocol",
-      "label": "ConsensusProtocol"
+      "label": "Consensus Protocol"
     }
   ],
   "relations": {

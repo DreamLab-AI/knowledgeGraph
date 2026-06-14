@@ -101,11 +101,11 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:image-to-image-translation",
-        "label": "Image-to-Image Translation"
+        "label": "Image to Image Translation"
       },
       {
         "@id": "urn:ngm:class:super-resolution",
-        "label": "Super-Resolution"
+        "label": "Super Resolution"
       },
       {
         "@id": "urn:ngm:class:data-augmentation",

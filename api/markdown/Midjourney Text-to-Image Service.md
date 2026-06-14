@@ -147,7 +147,7 @@ elevatedFrom:: [[Midjourney]]
       },
       {
         "@id": "urn:ngm:class:ai-application",
-        "label": "Creative Media Domain"
+        "label": "AI Application"
       }
     ],
     "relatedTo": [

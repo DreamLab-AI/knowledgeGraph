@@ -119,11 +119,11 @@
       },
       {
         "id": "urn:ngm:class:nist-ai-rmf",
-        "label": "NIST AI Risk Management Framework"
+        "label": "NIST AI RMF"
       },
       {
         "id": "urn:ngm:class:iso-iec-tr-24027",
-        "label": "ISO/IEC TR 24027"
+        "label": "ISO-IEC TR 24027"
       }
     ],
     "partOf": [],

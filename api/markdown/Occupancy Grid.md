@@ -29,7 +29,7 @@ alias:: OccupancyGrid
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:lidar-sensor", "label": "Lidar Sensor"},
+      {"@id": "urn:ngm:class:lidar-sensor", "label": "LiDAR Sensor"},
       {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
       {"@id": "urn:ngm:class:bayesian-inference", "label": "Bayesian Inference"},
       {"@id": "urn:ngm:class:log-odds-representation", "label": "Log-Odds Representation"},

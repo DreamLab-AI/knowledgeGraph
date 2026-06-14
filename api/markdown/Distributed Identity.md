@@ -587,7 +587,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
-        "label": "Public Key Cryptography"
+        "label": "Public-Key Cryptography"
       },
       {
         "@id": "urn:ngm:class:trust-framework",
@@ -621,7 +621,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:self-sovereign-identity",
-        "label": "Self-Sovereign Identity"
+        "label": "Self Sovereign Identity"
       },
       {
         "@id": "urn:ngm:class:verifiable-credentials",
@@ -761,7 +761,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:kyc-aml",
-        "label": "KYC AML"
+        "label": "KYC/AML"
       },
       {
         "@id": "urn:ngm:class:supply-chain-transparency",

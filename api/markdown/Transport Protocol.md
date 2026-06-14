@@ -25,7 +25,7 @@ public:: true
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:network-protocol", "label": "Network Protocol"}],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:model-control-protocols-like-mcp", "label": "Model Control Protocols like MCP"}, {"@id": "urn:ngm:class:infra-network-and-comms", "label": "Networking Domain"}]
+    "relatedTo": [{"@id": "urn:ngm:class:model-control-protocols-like-mcp", "label": "Model Control Protocols like MCP"}, {"@id": "urn:ngm:class:infra-network-and-comms", "label": "Network and Communication"}]
   },
   "quality": 0.72
 }

@@ -64,7 +64,7 @@ public:: true
   "qualityScore": 0.7,
   "subClassOf": {
     "@id": "urn:ngm:class:bc-cryptographic-primitive",
-    "label": "Cryptographic Domain"
+    "label": "Cryptographic Primitive"
   },
   "relations": {
     "requires": [
@@ -78,7 +78,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:zk-snark",
-        "label": "zk-SNARK"
+        "label": "ZK-SNARK"
       },
       {
         "@id": "urn:ngm:class:merkle-tree",
@@ -172,7 +172,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:infra-legal-and-regulatory",
-        "label": "Regulatory Domain"
+        "label": "Legal and Regulatory"
       },
       {
         "@id": "urn:ngm:class:open-source-software-liability",

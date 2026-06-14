@@ -59,8 +59,8 @@ public:: true
       {"@id": "urn:ngm:class:eip-1559", "label": "EIP-1559"},
       {"@id": "urn:ngm:class:eip-4844", "label": "EIP-4844"},
       {"@id": "urn:ngm:class:eip", "label": "EIP"},
-      {"@id": "urn:ngm:class:erc20", "label": "ERC-20"},
-      {"@id": "urn:ngm:class:erc721", "label": "ERC-721"}
+      {"@id": "urn:ngm:class:erc20", "label": "ERC20"},
+      {"@id": "urn:ngm:class:erc721", "label": "ERC721"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},

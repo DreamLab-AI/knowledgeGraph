@@ -19,7 +19,7 @@
     "hasPart": [
       {
         "id": "urn:ngm:class:generative-ai-near-term-forecasts",
-        "label": "Predictions"
+        "label": "Generative AI Near-Term Forecasts"
       }
     ],
     "requires": [],

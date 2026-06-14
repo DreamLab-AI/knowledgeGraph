@@ -168,7 +168,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:human-in-the-loop",
-        "label": "Human-in-the-Loop"
+        "label": "Human in the Loop"
       }
     ],
     "bridgesTo": [

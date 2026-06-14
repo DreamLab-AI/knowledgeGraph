@@ -34,7 +34,7 @@ alias:: SurgicalRobotics
   "subClassOf": [
     {
       "@id": "urn:ngm:class:robo-robot-type",
-      "label": "Robo Robot Type"
+      "label": "Robot Type"
     }
   ],
   "relations": {

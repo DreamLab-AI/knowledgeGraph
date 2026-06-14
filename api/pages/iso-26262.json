@@ -49,7 +49,7 @@
       },
       {
         "id": "urn:ngm:class:traceability",
-        "label": "Requirements Traceability"
+        "label": "Traceability"
       }
     ],
     "enables": [
@@ -63,7 +63,7 @@
       },
       {
         "id": "urn:ngm:class:self-driving-car",
-        "label": "Self-Driving Car"
+        "label": "Self Driving Car"
       },
       {
         "id": "urn:ngm:class:automotive-embedded-system",
@@ -137,7 +137,7 @@
       },
       {
         "id": "urn:ngm:class:iso-21448",
-        "label": "ISO 21448 (SOTIF)"
+        "label": "ISO 21448"
       },
       {
         "id": "urn:ngm:class:iso-sae-21434",

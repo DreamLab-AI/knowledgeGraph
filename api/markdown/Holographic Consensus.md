@@ -23,7 +23,7 @@ public:: true
   "definition": "Holographic consensus is a DAO governance mechanism that uses a prediction market of staked tokens to surface which proposals reflect the collective will, allowing a small attentive subset to make decisions that represent the whole. Predictors stake on whether a proposal will pass, boosting promising proposals to a faster majority-vote track while filtering spam. It addresses scalability of decentralised governance without requiring every member to vote on everything.",
   "domain": "blockchain",
   "maturity": "experimental",
-  "subClassOf": [{"@id": "urn:ngm:class:bc-governance-and-regulation", "label": "BC Governance and Regulation"}],
+  "subClassOf": [{"@id": "urn:ngm:class:bc-governance-and-regulation", "label": "Governance and Regulation"}],
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:governance-token", "label": "Governance Token"},

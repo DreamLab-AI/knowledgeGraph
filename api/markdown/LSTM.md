@@ -117,7 +117,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:time-series-forecasting",
-        "label": "Time-Series Forecasting"
+        "label": "Time Series Forecasting"
       },
       {
         "@id": "urn:ngm:class:handwriting-recognition",
@@ -184,7 +184,7 @@ public:: true
   "sameAs": [
     {
       "@id": "urn:ngm:class:long-short-term-memory",
-      "label": "Long Short-Term Memory"
+      "label": "Long Short Term Memory"
     }
   ],
   "quality": 0.75,

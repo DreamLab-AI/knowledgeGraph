@@ -26,7 +26,7 @@ public:: true
   "subClassOf": [{"@id": "urn:ngm:class:ai-technique", "label": "AI Technique"}],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:vision-language-model", "label": "Vision-Language Model"},
+      {"@id": "urn:ngm:class:vision-language-model", "label": "Vision Language Model"},
       {"@id": "urn:ngm:class:attention", "label": "Attention"}
     ]
   },

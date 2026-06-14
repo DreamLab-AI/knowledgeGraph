@@ -59,7 +59,7 @@ public:: true
       {"@id": "urn:ngm:class:decentralised-identifier", "label": "Decentralised Identifier"}
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self-Sovereign Identity"},
+      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self Sovereign Identity"},
       {"@id": "urn:ngm:class:trust-framework", "label": "Trust Framework"}
     ],
     "hasPart": [

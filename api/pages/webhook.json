@@ -9,7 +9,7 @@
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-network-and-comms",
-      "label": "Network and Communications"
+      "label": "Network and Communication"
     }
   ],
   "entityType": "Class",

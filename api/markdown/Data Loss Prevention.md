@@ -23,7 +23,7 @@ public:: true
   "definition": "Data loss prevention (DLP) is a set of security controls and technologies that detect and block the unauthorised exfiltration, leakage or misuse of sensitive data. DLP systems classify content, monitor data in use, in motion and at rest, and enforce policies at endpoints, networks and cloud services. It is a core data-protection capability supporting compliance with privacy and confidentiality requirements.",
   "domain": "security",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:infra-security-and-identity", "label": "Infrastructure Security and Identity"}],
+  "subClassOf": [{"@id": "urn:ngm:class:infra-security-and-identity", "label": "Security and Identity"}],
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:data-protection", "label": "Data Protection"},

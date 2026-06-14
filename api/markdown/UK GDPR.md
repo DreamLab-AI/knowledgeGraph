@@ -26,7 +26,7 @@ public:: true
   "subClassOf": [{"@id": "urn:ngm:class:data-protection-regulation", "label": "Data Protection Regulation"}],
   "relations": {
     "relatedTo": [{"@id": "urn:ngm:class:gdpr", "label": "GDPR"}, {"@id": "urn:ngm:class:ico", "label": "ICO"}, {"@id": "urn:ngm:class:data-protection-law", "label": "Data Protection Law"}],
-    "requires": [{"@id": "urn:ngm:class:privacy-by-design", "label": "Privacy by Design"}, {"@id": "urn:ngm:class:consent-management", "label": "Consent Management"}],
+    "requires": [{"@id": "urn:ngm:class:privacy-by-design", "label": "Privacy By Design"}, {"@id": "urn:ngm:class:consent-management", "label": "Consent Management"}],
     "enables": [{"@id": "urn:ngm:class:data-privacy", "label": "Data Privacy"}]
   },
   "quality": 0.8

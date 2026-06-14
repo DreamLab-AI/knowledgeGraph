@@ -74,7 +74,7 @@ public:: true
       {"@id": "urn:ngm:class:centralised-identity-provider", "label": "Centralised Identity Provider"}
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero Knowledge Proof"},
+      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"},
       {"@id": "urn:ngm:class:digital-wallet", "label": "Digital Wallet"}
     ]
   },

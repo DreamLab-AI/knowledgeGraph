@@ -25,7 +25,7 @@ public:: true
   "maturity": "emerging",
   "subClassOf": [{"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"}],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self-Sovereign Identity"}, {"@id": "urn:ngm:class:distributed-identity", "label": "Distributed Identity"}]
+    "relatedTo": [{"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self Sovereign Identity"}, {"@id": "urn:ngm:class:distributed-identity", "label": "Distributed Identity"}]
   },
   "quality": 0.72
 }

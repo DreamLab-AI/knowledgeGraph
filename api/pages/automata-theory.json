@@ -30,7 +30,7 @@
     "relatedTo": [
       {
         "id": "urn:ngm:class:ai-research-area",
-        "label": "Formal Methods Domain"
+        "label": "AI Research Area"
       },
       {
         "id": "urn:ngm:class:state-machine",

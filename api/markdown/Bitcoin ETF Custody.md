@@ -26,7 +26,7 @@ public:: true
   "subClassOf": [{"@id": "urn:ngm:class:digital-asset", "label": "Digital Asset"}],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:multi-sig-governance", "label": "Multi-Sig Governance"}
+      {"@id": "urn:ngm:class:multi-sig-governance", "label": "Multi Sig Governance"}
     ]
   },
   "quality": 0.72

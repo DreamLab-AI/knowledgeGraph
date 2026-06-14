@@ -496,7 +496,7 @@ public:: true
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-infrastructure",
-      "label": "AI Infrastructure (Category)"
+      "label": "AI Infrastructure"
     },
     {
       "@id": "urn:ngm:class:ai-infrastructure",
@@ -581,7 +581,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:stable-diffusion-image-model",
-        "label": "Stable Diffusion"
+        "label": "Stable Diffusion Image Model"
       }
     ],
     "enables": [
@@ -691,7 +691,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:json-data-interchange-format",
-        "label": "JSON"
+        "label": "JSON Data Interchange Format"
       }
     ],
     "relatedTo": [
@@ -737,11 +737,11 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:lo-ra",
-        "label": "LoRA"
+        "label": "Lo RA"
       },
       {
         "@id": "urn:ngm:class:stable-diffusion-image-model",
-        "label": "Stable Diffusion"
+        "label": "Stable Diffusion Image Model"
       }
     ],
     "supports": [

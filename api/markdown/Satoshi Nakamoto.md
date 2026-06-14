@@ -69,7 +69,7 @@ public:: true
   "subClassOf": [
     {
       "@id": "urn:ngm:class:bc-protocol-and-consensus",
-      "label": "Bc Protocol And Consensus"
+      "label": "Protocol and Consensus"
     }
   ],
   "relations": {
@@ -80,7 +80,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:proof-of-work",
-        "label": "Proof of Work"
+        "label": "Proof Of Work"
       },
       {
         "@id": "urn:ngm:class:blockchain",
@@ -150,7 +150,7 @@ public:: true
     "bridgesTo": [
       {
         "@id": "urn:ngm:class:bc-cryptographic-primitive",
-        "label": "Cryptographic Domain"
+        "label": "Cryptographic Primitive"
       },
       {
         "@id": "urn:ngm:class:distributed-systems",

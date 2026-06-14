@@ -62,7 +62,7 @@ elevatedFrom:: [[webid]]
       {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self Sovereign Identity"},
       {"@id": "urn:ngm:class:rdf", "label": "RDF"},
       {"@id": "urn:ngm:class:linked-data", "label": "Linked Data"},
-      {"@id": "urn:ngm:class:semantic-web-linked-data-standard", "label": "Semantic Web"}
+      {"@id": "urn:ngm:class:semantic-web-linked-data-standard", "label": "Semantic Web Linked Data Standard"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:authentication", "label": "Authentication"},

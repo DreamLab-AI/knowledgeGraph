@@ -58,7 +58,7 @@ public:: true
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
-      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse Domain"}
+      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:distributed-system", "label": "Distributed System"}

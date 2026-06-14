@@ -173,7 +173,7 @@ public:: true
     "requires": [
       {
         "@id": "urn:ngm:class:edge-computing-node",
-        "label": "Edge Computing Nodes"
+        "label": "Edge Computing Node"
       },
       {
         "@id": "urn:ngm:class:network-performance-metrics",

@@ -135,7 +135,7 @@ public:: true
     "contrastsWith": [
       {
         "@id": "urn:ngm:class:automatic1111",
-        "label": "AUTOMATIC1111"
+        "label": "Automatic1111"
       },
       {
         "@id": "urn:ngm:class:comfyui",
@@ -165,7 +165,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:fine-tuning",
-        "label": "Fine-Tuning"
+        "label": "Fine Tuning"
       }
     ],
     "bridgesTo": [

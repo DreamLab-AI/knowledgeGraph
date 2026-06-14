@@ -56,14 +56,14 @@ public:: true
     },
     {
       "@id": "urn:ngm:class:machine-learning-discipline",
-      "label": "Machine Learning"
+      "label": "Machine Learning Discipline"
     }
   ],
   "relations": {
     "enables": [
       {
         "@id": "urn:ngm:class:data-efficient-learning",
-        "label": "Data-Efficient Learning"
+        "label": "Data Efficient Learning"
       }
     ]
   },

@@ -33,7 +33,7 @@ public:: true
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-software-engineering",
-      "label": "Infra Software Engineering"
+      "label": "Software Engineering"
     }
   ],
   "relations": {
@@ -45,12 +45,12 @@ public:: true
     ],
     "enables": [
       {"@id": "urn:ngm:class:microservices-architecture", "label": "Microservices Architecture"},
-      {"@id": "urn:ngm:class:service-oriented-architecture", "label": "Service-Oriented Architecture"},
+      {"@id": "urn:ngm:class:service-oriented-architecture", "label": "Service Oriented Architecture"},
       {"@id": "urn:ngm:class:cloud-native-computing", "label": "Cloud Native Computing"},
       {"@id": "urn:ngm:class:api-economy", "label": "API Economy"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:json-data-interchange-format", "label": "JSON"},
+      {"@id": "urn:ngm:class:json-data-interchange-format", "label": "JSON Data Interchange Format"},
       {"@id": "urn:ngm:class:xml", "label": "XML"},
       {"@id": "urn:ngm:class:oauth2", "label": "OAuth 2.0"},
       {"@id": "urn:ngm:class:tls", "label": "TLS"}

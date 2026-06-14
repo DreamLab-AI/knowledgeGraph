@@ -9,7 +9,7 @@
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-governance-and-regulation",
-      "label": "Blockchain Governance and Regulation"
+      "label": "Governance and Regulation"
     }
   ],
   "entityType": "Class",
@@ -30,7 +30,7 @@
     "relatedTo": [
       {
         "id": "urn:ngm:class:on-chain-voting",
-        "label": "On-Chain Voting"
+        "label": "On Chain Voting"
       },
       {
         "id": "urn:ngm:class:decentralized-governance",

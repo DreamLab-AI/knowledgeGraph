@@ -159,7 +159,7 @@ public:: true
     "contrastsWith": [
       {
         "@id": "urn:ngm:class:artificial-superintelligence-theory",
-        "label": "artificial superintelligence"
+        "label": "Artificial Superintelligence Theory"
       }
     ],
     "relatedTo": [

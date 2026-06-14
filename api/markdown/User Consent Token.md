@@ -181,7 +181,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:cryptographic-keys",
-        "label": "Cryptographic Key"
+        "label": "Cryptographic Keys"
       },
       {
         "@id": "urn:ngm:class:data-schema",

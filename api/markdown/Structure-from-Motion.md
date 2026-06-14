@@ -63,7 +63,7 @@ alias:: Structure from Motion
     "contrastsWith": [
       {"@id": "urn:ngm:class:slam", "label": "SLAM"},
       {"@id": "urn:ngm:class:visual-odometry", "label": "Visual Odometry"},
-      {"@id": "urn:ngm:class:lidar-scanning", "label": "LiDAR Scanning"}
+      {"@id": "urn:ngm:class:lidar-scanning", "label": "Lidar Scanning"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:neural-radiance-fields", "label": "Neural Radiance Fields"},

@@ -57,7 +57,7 @@ public:: true
   "subClassOf": [
     {
       "@id": "urn:ngm:class:proof-of-work",
-      "label": "Proof of Work"
+      "label": "Proof Of Work"
     }
   ],
   "relations": {
@@ -96,7 +96,7 @@ public:: true
     "implements": [
       {
         "@id": "urn:ngm:class:proof-of-work",
-        "label": "Proof of Work"
+        "label": "Proof Of Work"
       },
       {
         "@id": "urn:ngm:class:computational-puzzle",

@@ -119,7 +119,7 @@ public:: true
     "hasPart": [
       {
         "@id": "urn:ngm:class:ethical-framework",
-        "label": "Ethical Frameworks"
+        "label": "Ethical Framework"
       },
       {
         "@id": "urn:ngm:class:legal-compliance",
@@ -161,7 +161,7 @@ public:: true
     "partOf": [
       {
         "@id": "urn:ngm:class:etsi-metaverse-domain-taxonomy",
-        "label": "ETSI Metaverse Domain Taxonomy"
+        "label": "Etsi Metaverse Domain Taxonomy"
       }
     ]
   },

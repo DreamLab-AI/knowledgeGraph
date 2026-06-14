@@ -376,7 +376,7 @@ alias:: Feed-Forward Network
       },
       {
         "@id": "urn:ngm:class:fine-tuning",
-        "label": "Fine-tuning"
+        "label": "Fine Tuning"
       },
       {
         "@id": "urn:ngm:class:pattern-recognition",
@@ -398,7 +398,7 @@ alias:: Feed-Forward Network
       },
       {
         "@id": "urn:ngm:class:mixture-of-experts-architecture",
-        "label": "Mixture of Experts"
+        "label": "Mixture-of-Experts Architecture"
       },
       {
         "@id": "urn:ngm:class:residual-connection",
@@ -434,11 +434,11 @@ alias:: Feed-Forward Network
       },
       {
         "@id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Model"
+        "label": "Large Language Models"
       },
       {
         "@id": "urn:ngm:class:variational-autoencoders",
-        "label": "Variational Autoencoder"
+        "label": "Variational Autoencoders"
       },
       {
         "@id": "urn:ngm:class:autoencoder",

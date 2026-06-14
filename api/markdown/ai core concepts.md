@@ -158,7 +158,7 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"},
       {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
       {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
       {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"}

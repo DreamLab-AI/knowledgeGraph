@@ -30,7 +30,7 @@
     "relatedTo": [
       {
         "id": "urn:ngm:class:tc-0003-telepresence-robot",
-        "label": "Telepresence Robot"
+        "label": "tc 0003 telepresence robot"
       },
       {
         "id": "urn:ngm:class:voice-interaction",

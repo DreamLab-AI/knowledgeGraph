@@ -396,7 +396,7 @@ alias:: Control-Algorithm, ControlAlgorithm
       },
       {
         "@id": "urn:ngm:class:pid-controller",
-        "label": "PID Controller"
+        "label": "Pid Controller"
       }
     ],
     "requires": [
@@ -428,7 +428,7 @@ alias:: Control-Algorithm, ControlAlgorithm
     "enables": [
       {
         "@id": "urn:ngm:class:autonomous-system",
-        "label": "Autonomous Systems"
+        "label": "Autonomous System"
       },
       {
         "@id": "urn:ngm:class:energy-management",
@@ -482,7 +482,7 @@ alias:: Control-Algorithm, ControlAlgorithm
       },
       {
         "@id": "urn:ngm:class:pid-controller",
-        "label": "PID Controller"
+        "label": "Pid Controller"
       },
       {
         "@id": "urn:ngm:class:reinforcement-learning",
@@ -538,7 +538,7 @@ alias:: Control-Algorithm, ControlAlgorithm
       },
       {
         "@id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning"
+        "label": "Machine Learning Discipline"
       }
     ],
     "supports": [
@@ -548,7 +548,7 @@ alias:: Control-Algorithm, ControlAlgorithm
       },
       {
         "@id": "urn:ngm:class:autonomous-vehicle",
-        "label": "Autonomous Vehicles"
+        "label": "Autonomous Vehicle"
       },
       {
         "@id": "urn:ngm:class:chemical-process-control",

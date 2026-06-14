@@ -38,7 +38,7 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:constitutional-ai-training-methodology", "label": "Constitutional AI"},
+      {"@id": "urn:ngm:class:constitutional-ai-training-methodology", "label": "Constitutional AI Training Methodology"},
       {"@id": "urn:ngm:class:responsible-scaling-policy", "label": "Responsible Scaling Policy"},
       {"@id": "urn:ngm:class:mechanistic-interpretability", "label": "Mechanistic Interpretability"}
     ],

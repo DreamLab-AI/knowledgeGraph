@@ -33,7 +33,7 @@ public:: true
       {"@id": "urn:ngm:class:consent-management", "label": "Consent Management"},
       {"@id": "urn:ngm:class:data-anonymization-pipeline", "label": "Data Anonymization Pipeline"},
       {"@id": "urn:ngm:class:data-minimisation", "label": "Data Minimisation"},
-      {"@id": "urn:ngm:class:privacy-by-design", "label": "Privacy by Design"}
+      {"@id": "urn:ngm:class:privacy-by-design", "label": "Privacy By Design"}
     ],
     "requires": [
       {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"},

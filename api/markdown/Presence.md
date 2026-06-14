@@ -192,7 +192,7 @@ alias:: TELE-006-presence
     "uses": [
       {
         "@id": "urn:ngm:class:sc-interaction",
-        "label": "Interaction Domain"
+        "label": "Interaction Technology"
       },
       {
         "@id": "urn:ngm:class:compute-layer",

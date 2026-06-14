@@ -356,7 +356,7 @@ public:: true
     },
     {
       "@id": "urn:ngm:class:infra-software-engineering",
-      "label": "Infra Software Engineering"
+      "label": "Software Engineering"
     }
   ],
   "relations": {
@@ -465,7 +465,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:nist-ai-rmf",
-        "label": "NIST AI Risk Management Framework"
+        "label": "NIST AI RMF"
       },
       {
         "@id": "urn:ngm:class:owasp-llm-top-10",
@@ -547,7 +547,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
-        "label": "EU AI Act"
+        "label": "EU AI Act Regulatory Instrument"
       }
     ],
     "standardizedBy": [
@@ -569,11 +569,11 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:nist-ai-rmf",
-        "label": "NIST AI Risk Management Framework"
+        "label": "NIST AI RMF"
       },
       {
         "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
-        "label": "EU AI Act"
+        "label": "EU AI Act Regulatory Instrument"
       }
     ],
     "bridgesTo": [

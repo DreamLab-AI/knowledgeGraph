@@ -23,7 +23,7 @@ public:: true
   "definition": "Linked data consumption is the process by which applications dereference, parse, and integrate RDF resources discovered through URIs and typed links across distributed sources. It involves following links, reconciling vocabularies, and querying federated graphs to assemble a coherent view of decentralised data. Robust consumption underpins the Semantic Web's promise of machine-readable, interoperable information.",
   "domain": "data",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:infra-data-management", "label": "Infrastructure Data Management"}],
+  "subClassOf": [{"@id": "urn:ngm:class:infra-data-management", "label": "Data Management"}],
   "relations": {
     "relatedTo": [{"@id": "urn:ngm:class:federation-surface", "label": "Federation Surface"}, {"@id": "urn:ngm:class:linked-data-encoder", "label": "Linked Data Encoder"}]
   },

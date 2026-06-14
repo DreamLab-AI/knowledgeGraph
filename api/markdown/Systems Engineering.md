@@ -68,7 +68,7 @@
     "bridgesTo": [
       {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
       {"@id": "urn:ngm:class:robotics", "label": "Robotics"},
-      {"@id": "urn:ngm:class:cyber-physical-systems", "label": "Cyber-Physical Systems"}
+      {"@id": "urn:ngm:class:cyber-physical-systems", "label": "Cyber Physical Systems"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:engineering-methodology", "label": "Engineering Methodology"},

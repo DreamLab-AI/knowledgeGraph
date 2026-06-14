@@ -635,7 +635,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:vision-language-model",
-        "label": "Vision-Language Models"
+        "label": "Vision Language Model"
       },
       {
         "@id": "urn:ngm:class:large-language-models",
@@ -709,7 +709,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:iso-iec-23053",
-        "label": "ISO IEC 23053"
+        "label": "ISO-IEC 23053"
       },
       {
         "@id": "urn:ngm:class:mlcommons",
@@ -717,7 +717,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:nist-ai-rmf",
-        "label": "NIST AI Risk Management Framework"
+        "label": "NIST AI RMF"
       },
       {
         "@id": "urn:ngm:class:stanford-crfm-helm",

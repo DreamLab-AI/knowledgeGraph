@@ -23,7 +23,7 @@ public:: true
   "definition": "A servo valve is an electrohydraulic device that proportionally controls the flow and pressure of hydraulic fluid in response to a low-power electrical command, typically via a torque-motor-driven pilot stage. It provides high-bandwidth, closed-loop modulation of hydraulic actuators, delivering large forces with precise position control. It is a key element of high-power robotic and aerospace actuation systems.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:robo-actuation-and-control", "label": "Robotics Actuation and Control"}],
+  "subClassOf": [{"@id": "urn:ngm:class:robo-actuation-and-control", "label": "Actuation and Control"}],
   "relations": {
     "relatedTo": [{"@id": "urn:ngm:class:hydraulic-actuator", "label": "Hydraulic Actuator"}, {"@id": "urn:ngm:class:proportional-valve", "label": "Proportional Valve"}]
   },

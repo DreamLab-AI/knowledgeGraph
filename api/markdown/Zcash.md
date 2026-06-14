@@ -65,18 +65,18 @@ public:: true
   "subClassOf": [
     {
       "@id": "urn:ngm:class:bc-token-and-asset",
-      "label": "Bc Token And Asset"
+      "label": "Token and Asset"
     }
   ],
   "relations": {
     "requires": [
       {
         "@id": "urn:ngm:class:zero-knowledge-proof",
-        "label": "Zero Knowledge Proof"
+        "label": "Zero-Knowledge Proof"
       },
       {
         "@id": "urn:ngm:class:proof-of-work",
-        "label": "Proof of Work"
+        "label": "Proof Of Work"
       },
       {
         "@id": "urn:ngm:class:trusted-setup-ceremony",
@@ -90,7 +90,7 @@ public:: true
     "implements": [
       {
         "@id": "urn:ngm:class:zk-snark",
-        "label": "zk-SNARK"
+        "label": "ZK-SNARK"
       },
       {
         "@id": "urn:ngm:class:shielded-transaction",
@@ -174,7 +174,7 @@ public:: true
     "dependsOn": [
       {
         "@id": "urn:ngm:class:blockchain",
-        "label": "Blockchain Domain"
+        "label": "Blockchain"
       },
       {
         "@id": "urn:ngm:class:public-key-cryptography",

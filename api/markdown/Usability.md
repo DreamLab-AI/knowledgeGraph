@@ -80,7 +80,7 @@ public:: true
     ],
     "partOf": [
       {"@id": "urn:ngm:class:user-experience", "label": "User Experience"},
-      {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human-Computer Interaction"}
+      {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human Computer Interaction"}
     ],
     "requires": [
       {"@id": "urn:ngm:class:user-research", "label": "User Research"},
@@ -106,7 +106,7 @@ public:: true
       {"@id": "urn:ngm:class:eye-tracking", "label": "Eye Tracking"}
     ],
     "supports": [
-      {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human-Robot Interaction"},
+      {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human Robot Interaction"},
       {"@id": "urn:ngm:class:interface-design", "label": "Interface Design"}
     ],
     "standardizedBy": [
@@ -119,7 +119,7 @@ public:: true
     ],
     "bridgesTo": [
       {"@id": "urn:ngm:class:explainability", "label": "Explainability"},
-      {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human-Robot Interaction"},
+      {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human Robot Interaction"},
       {"@id": "urn:ngm:class:spatial-user-interface", "label": "Spatial User Interface"}
     ],
     "relatedTo": [

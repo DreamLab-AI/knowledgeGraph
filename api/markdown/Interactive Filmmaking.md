@@ -23,7 +23,7 @@ public:: true
   "definition": "Interactive filmmaking is the production of cinematic content in which viewers influence the narrative, perspective, or outcome through their choices or presence, blurring the line between film and game. It leverages real-time game engines and virtual production techniques to render branching or responsive scenes on demand. It is enabled by virtual production volumes and real-time rendering pipelines that allow scenes to be reshaped live.",
   "domain": "metaverse",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:sc-content-and-assets", "label": "Supply Chain Content and Assets"}],
+  "subClassOf": [{"@id": "urn:ngm:class:sc-content-and-assets", "label": "Content and Assets"}],
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:virtual-production-volume", "label": "Virtual Production Volume"},

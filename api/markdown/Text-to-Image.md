@@ -93,7 +93,7 @@ alias:: Text to Image
       {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
       {"@id": "urn:ngm:class:stable-diffusion", "label": "Stable Diffusion"},
       {"@id": "urn:ngm:class:generative-adversarial-network", "label": "Generative Adversarial Network"},
-      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine-Tuning"}
+      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine Tuning"}
     ]
   },
   "sameAs": [

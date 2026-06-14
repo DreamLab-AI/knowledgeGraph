@@ -449,7 +449,7 @@ public:: true
     "standardizedBy": [
       {
         "@id": "urn:ngm:class:iso-iec-23257-2021",
-        "label": "ISO/IEC 23257:2021"
+        "label": "ISO-IEC 23257 2021"
       },
       {
         "@id": "urn:ngm:class:erc-standards",

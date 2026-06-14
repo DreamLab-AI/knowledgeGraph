@@ -71,7 +71,7 @@ public:: true
     ],
     "bridgesTo": [
       {"@id": "urn:ngm:class:ai-accelerator", "label": "AI Accelerator"},
-      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof of Work"}
+      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"}
     ]
   },
   "sameAs": [

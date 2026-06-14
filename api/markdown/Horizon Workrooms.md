@@ -97,14 +97,14 @@ alias:: TELE-028-horizon-workrooms
     },
     {
       "@id": "urn:ngm:class:virtual-reality-telepresence",
-      "label": "TELE-020-virtual-reality-telepresence"
+      "label": "Virtual Reality Telepresence"
     }
   ],
   "relations": {
     "requires": [
       {
         "@id": "urn:ngm:class:ai-avatars",
-        "label": "TELE-100-ai-avatars"
+        "label": "AI Avatars"
       }
     ],
     "enables": [

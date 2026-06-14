@@ -23,7 +23,7 @@ public:: true
   "definition": "Sensory feedback is the delivery of stimuli to a user's senses, including visual, auditory, haptic, and proprioceptive channels, in response to their actions within a virtual or mixed environment. Timely and coherent feedback closes the perception-action loop and is a precondition for the user's sense of presence and emotional engagement. It is a core mechanism of immersive interaction design.",
   "domain": "metaverse",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:sc-interaction", "label": "Spatial Computing Interaction"}],
+  "subClassOf": [{"@id": "urn:ngm:class:sc-interaction", "label": "Interaction Technology"}],
   "relations": {
     "relatedTo": [{"@id": "urn:ngm:class:presence", "label": "Presence"}, {"@id": "urn:ngm:class:emotional-immersion", "label": "Emotional Immersion"}]
   },

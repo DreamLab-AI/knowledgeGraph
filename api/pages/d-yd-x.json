@@ -9,7 +9,7 @@
   "subClassOf": [
     {
       "id": "urn:ngm:class:decentralised-finance",
-      "label": "Decentralised Finance Domain"
+      "label": "Decentralised Finance"
     }
   ],
   "entityType": "Class",
@@ -137,7 +137,7 @@
     "partOf": [
       {
         "id": "urn:ngm:class:decentralised-finance",
-        "label": "Decentralised Finance Domain"
+        "label": "Decentralised Finance"
       },
       {
         "id": "urn:ngm:class:defi-derivatives-market",

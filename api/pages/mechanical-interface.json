@@ -9,7 +9,7 @@
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-actuation-and-control",
-      "label": "Robotics Actuation and Control"
+      "label": "Actuation and Control"
     }
   ],
   "entityType": "Class",
@@ -30,7 +30,7 @@
     "relatedTo": [
       {
         "id": "urn:ngm:class:end-effector",
-        "label": "End-Effector"
+        "label": "End Effector"
       },
       {
         "id": "urn:ngm:class:electric-actuator",

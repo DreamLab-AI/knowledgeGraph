@@ -561,7 +561,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:nvidia-corporation-omniverse-platform",
-        "label": "NVIDIA Omniverse"
+        "label": "NVIDIA Omniverse Platform"
       },
       {
         "@id": "urn:ngm:class:predictive-maintenance",

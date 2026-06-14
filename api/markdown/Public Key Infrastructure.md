@@ -89,7 +89,7 @@ alias:: Public-Key Infrastructure, PublicKeyInfrastructure
       {"@id": "urn:ngm:class:decentralised-identifier", "label": "Decentralised Identifier"}
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self-Sovereign Identity"},
+      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self Sovereign Identity"},
       {"@id": "urn:ngm:class:blockchain-identity", "label": "Blockchain Identity"},
       {"@id": "urn:ngm:class:verifiable-credential", "label": "Verifiable Credential"}
     ],

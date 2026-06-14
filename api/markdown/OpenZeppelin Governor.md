@@ -33,7 +33,7 @@ public:: true
   "subClassOf": [
     {
       "@id": "urn:ngm:class:bc-governance-and-regulation",
-      "label": "Blockchain Governance and Regulation"
+      "label": "Governance and Regulation"
     }
   ],
   "relations": {
@@ -46,7 +46,7 @@ public:: true
       {"@id": "urn:ngm:class:governance-token", "label": "Governance Token"},
       {"@id": "urn:ngm:class:erc-20", "label": "ERC-20"},
       {"@id": "urn:ngm:class:erc-721", "label": "ERC-721"},
-      {"@id": "urn:ngm:class:timelock-controller", "label": "TimelockController"}
+      {"@id": "urn:ngm:class:timelock-controller", "label": "Timelock Controller"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:dao-governance", "label": "DAO Governance"},

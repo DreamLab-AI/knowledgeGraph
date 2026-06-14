@@ -105,7 +105,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:error-correction",
-        "label": "error correction"
+        "label": "Error Correction"
       },
       {
         "@id": "urn:ngm:class:accountability",
@@ -189,7 +189,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:iso-iec-42001",
-        "label": "ISO/IEC 42001"
+        "label": "ISO IEC 42001"
       }
     ],
     "supports": [

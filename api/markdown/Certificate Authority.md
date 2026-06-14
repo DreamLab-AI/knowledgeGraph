@@ -33,7 +33,7 @@ public:: true
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-security-and-identity",
-      "label": "Infra Security And Identity"
+      "label": "Security and Identity"
     }
   ],
   "relations": {
@@ -73,7 +73,7 @@ public:: true
     "contrastsWith": [
       {"@id": "urn:ngm:class:decentralised-identity", "label": "Decentralised Identity"},
       {"@id": "urn:ngm:class:web-of-trust", "label": "Web of Trust"},
-      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self-Sovereign Identity"}
+      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self Sovereign Identity"}
     ],
     "bridgesTo": [
       {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},

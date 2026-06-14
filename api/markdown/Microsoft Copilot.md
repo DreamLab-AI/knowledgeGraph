@@ -59,7 +59,7 @@ public:: true
     "requires": [
       {
         "@id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Model"
+        "label": "Large Language Models"
       },
       {
         "@id": "urn:ngm:class:retrieval-augmented-generation",
@@ -73,7 +73,7 @@ public:: true
     "uses": [
       {
         "@id": "urn:ngm:class:gpt-4",
-        "label": "GPT-4"
+        "label": "GPT 4"
       },
       {
         "@id": "urn:ngm:class:natural-language-processing",

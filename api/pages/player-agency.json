@@ -9,7 +9,7 @@
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-interaction",
-      "label": "Spatial Computing Interaction"
+      "label": "Interaction Technology"
     }
   ],
   "entityType": "Class",
@@ -34,7 +34,7 @@
       },
       {
         "id": "urn:ngm:class:non-linear-narrative",
-        "label": "Non-Linear Narrative"
+        "label": "Non Linear Narrative"
       }
     ]
   },

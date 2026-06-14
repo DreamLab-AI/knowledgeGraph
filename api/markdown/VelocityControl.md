@@ -187,11 +187,11 @@ public:: true
     "hasPart": [
       {
         "@id": "urn:ngm:class:error-calculation",
-        "label": "ErrorCalculation"
+        "label": "Error Calculation"
       },
       {
         "@id": "urn:ngm:class:feedforward-compensation",
-        "label": "FeedforwardCompensation"
+        "label": "Feedforward Compensation"
       },
       {
         "@id": "urn:ngm:class:picontroller",
@@ -199,7 +199,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:state-observer",
-        "label": "StateObserver"
+        "label": "State Observer"
       },
       {
         "@id": "urn:ngm:class:velocity-measurement",
@@ -221,7 +221,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:stability-analysis",
-        "label": "StabilityAnalysis"
+        "label": "Stability Analysis"
       },
       {
         "@id": "urn:ngm:class:velocity-estimation",
@@ -235,7 +235,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:energy-efficiency",
-        "label": "EnergyEfficiency"
+        "label": "Energy Efficiency"
       },
       {
         "@id": "urn:ngm:class:speed-regulation",
@@ -257,7 +257,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:feedforward-control",
-        "label": "FeedforwardControl"
+        "label": "Feedforward Control"
       },
       {
         "@id": "urn:ngm:class:observer-design",
@@ -269,7 +269,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:adaptive-control",
-        "label": "AdaptiveControl"
+        "label": "Adaptive Control"
       }
     ]
   },

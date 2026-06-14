@@ -27,7 +27,7 @@ public:: true
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:middleware", "label": "Middleware"},
-      {"@id": "urn:ngm:class:infra-network-and-comms", "label": "Networking Domain"}
+      {"@id": "urn:ngm:class:infra-network-and-comms", "label": "Network and Communication"}
     ]
   },
   "quality": 0.72

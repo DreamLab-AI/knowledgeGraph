@@ -105,7 +105,7 @@ alias:: TC-0010-Synchronous-Collaboration
     },
     {
       "@id": "urn:ngm:class:telecollaboration",
-      "label": "TC-0001-telecollaboration-domain"
+      "label": "Telecollaboration"
     }
   ],
   "relations": {

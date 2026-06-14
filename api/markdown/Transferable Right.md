@@ -92,7 +92,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:intellectual-property-licence-instrument",
-        "label": "license"
+        "label": "Intellectual Property Licence Instrument"
       }
     ]
   }

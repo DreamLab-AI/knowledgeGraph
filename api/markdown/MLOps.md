@@ -23,7 +23,7 @@ public:: true
   "definition": "MLOps (Machine Learning Operations) is the set of practices, tools, and cultural norms that operationalise machine learning models at production scale by applying DevOps and Site Reliability Engineering principles to the full ML lifecycle. It covers end-to-end automation of ML pipelines — data ingestion, feature engineering, model training, evaluation, deployment, serving, and continuous retraining — and addresses the unique challenge that code, data, and model weights all evolve independently and must be versioned, tested, and governed together. MLOps introduces specialised artefacts such as model registries, feature stores, and experiment trackers that have no direct analogue in traditional software delivery. The discipline bridges the organisational gap between data science teams and production engineering, enabling reliable, auditable, and scalable model delivery at the pace business demands.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"}],
+  "subClassOf": [{"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"}],
   "relations": {
     "hasPart": [
       {"@id": "urn:ngm:class:model-registry", "label": "Model Registry"},

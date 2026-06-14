@@ -420,11 +420,11 @@ public:: true
     },
     {
       "@id": "urn:ngm:class:ai-governance-and-ethics",
-      "label": "AI Governance And Ethics"
+      "label": "AI Governance and Ethics"
     },
     {
       "@id": "urn:ngm:class:ai-governance-and-ethics",
-      "label": "AI Governance And Ethics"
+      "label": "AI Governance and Ethics"
     }
   ],
   "relations": {
@@ -645,7 +645,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:openai-research-organisation",
-        "label": "OpenAI"
+        "label": "OpenAI Research Organisation"
       }
     ],
     "supports": [
@@ -655,7 +655,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:open-source-ai",
-        "label": "Open Source AI"
+        "label": "Open-Source AI"
       },
       {
         "@id": "urn:ngm:class:startup-ecosystem",
@@ -689,7 +689,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:iso-iec-jtc-1-sc-42",
-        "label": "ISO IEC JTC 1 SC 42"
+        "label": "ISO/IEC JTC 1/SC 42"
       },
       {
         "@id": "urn:ngm:class:nist",

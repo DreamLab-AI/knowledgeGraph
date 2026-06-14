@@ -44,7 +44,7 @@ public:: true
       {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine-Tuning"},
+      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine Tuning"},
       {"@id": "urn:ngm:class:zero-shot-prompting", "label": "Zero-Shot Prompting"},
       {"@id": "urn:ngm:class:supervised-learning", "label": "Supervised Learning"},
       {"@id": "urn:ngm:class:parameter-efficient-fine-tuning", "label": "Parameter-Efficient Fine-Tuning"}

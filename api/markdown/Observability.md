@@ -183,7 +183,7 @@ public:: true
     "relatedTo": [
       {
         "@id": "urn:ngm:class:performance",
-        "label": "Performance"
+        "label": "performance"
       },
       {
         "@id": "urn:ngm:class:fault-tolerance",

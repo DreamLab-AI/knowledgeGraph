@@ -23,10 +23,10 @@ public:: true
   "definition": "A hardware wallet is a dedicated physical device that stores cryptocurrency private keys in a secure element and signs transactions internally, so the keys never leave the device or touch an internet-connected computer. It protects against malware and remote key theft by isolating signing operations behind on-device confirmation. Hardware wallets are a foundational tool for self-custody of digital assets.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:infra-security-and-identity", "label": "Infra Security and Identity"}],
+  "subClassOf": [{"@id": "urn:ngm:class:infra-security-and-identity", "label": "Security and Identity"}],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:multi-sig-governance", "label": "Multi-Sig Governance"}
+      {"@id": "urn:ngm:class:multi-sig-governance", "label": "Multi Sig Governance"}
     ]
   },
   "quality": 0.72

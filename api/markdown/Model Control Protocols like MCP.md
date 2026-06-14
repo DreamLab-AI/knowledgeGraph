@@ -325,7 +325,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:stdio-transport",
-        "label": "stdio Transport"
+        "label": "Stdio Transport"
       },
       {
         "@id": "urn:ngm:class:tool-schema",
@@ -355,7 +355,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:constitutional-ai-training-methodology-language-model-family",
-        "label": "Anthropic Claude"
+        "label": "Constitutional AI Language Model Family"
       }
     ],
     "enables": [
@@ -471,7 +471,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:constitutional-ai-training-methodology-language-model-family",
-        "label": "Anthropic Claude"
+        "label": "Constitutional AI Language Model Family"
       },
       {
         "@id": "urn:ngm:class:api-gateway",
@@ -479,7 +479,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:instruction-following-conversational-ai-system",
-        "label": "ChatGPT"
+        "label": "Instruction-Following Conversational AI System"
       }
     ],
     "supports": [
@@ -532,7 +532,7 @@ public:: true
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-infrastructure",
-      "label": "AI Infrastructure (Category)"
+      "label": "AI Infrastructure"
     }
   ]
 }

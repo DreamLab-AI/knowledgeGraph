@@ -427,13 +427,13 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:docker-containerisation-platform",
-        "label": "Docker"
+        "label": "Docker Containerisation Platform"
       }
     ],
     "relatedTo": [
       {
         "@id": "urn:ngm:class:open-source-ai",
-        "label": "Open Source AI"
+        "label": "Open-Source AI"
       },
       {
         "@id": "urn:ngm:class:agent-frameworks",
@@ -445,11 +445,11 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:constitutional-ai-training-methodology-language-model-family",
-        "label": "Anthropic Claude"
+        "label": "Constitutional AI Language Model Family"
       },
       {
         "@id": "urn:ngm:class:instruction-following-conversational-ai-system",
-        "label": "ChatGPT"
+        "label": "Instruction-Following Conversational AI System"
       },
       {
         "@id": "urn:ngm:class:cognitive-ai",
@@ -471,7 +471,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:open-source-ai",
-        "label": "Open Source AI"
+        "label": "Open-Source AI"
       },
       {
         "@id": "urn:ngm:class:software-development",
@@ -505,7 +505,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:constitutional-ai-training-methodology-language-model-family",
-        "label": "Anthropic Claude"
+        "label": "Constitutional AI Language Model Family"
       }
     ]
   },

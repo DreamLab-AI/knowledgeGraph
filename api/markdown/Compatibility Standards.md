@@ -103,7 +103,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:standards-body",
-        "label": "Standards Bodies"
+        "label": "Standards Body"
       }
     ],
     "enables": [

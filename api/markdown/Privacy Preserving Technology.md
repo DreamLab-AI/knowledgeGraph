@@ -61,7 +61,7 @@ alias:: Privacy-Preserving Technology
       {"@id": "urn:ngm:class:public-key-infrastructure", "label": "Public Key Infrastructure"}
     ],
     "enables": [
-      {"@id": "urn:ngm:class:privacy-by-design", "label": "Privacy by Design"},
+      {"@id": "urn:ngm:class:privacy-by-design", "label": "Privacy By Design"},
       {"@id": "urn:ngm:class:decentralised-identity", "label": "Decentralised Identity"},
       {"@id": "urn:ngm:class:confidential-computing", "label": "Confidential Computing"},
       {"@id": "urn:ngm:class:consent-management", "label": "Consent Management"}

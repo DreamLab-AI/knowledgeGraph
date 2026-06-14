@@ -77,7 +77,7 @@ public:: true
     ],
     "requires": [
       {"@id": "urn:ngm:class:human-in-the-loop", "label": "Human in the Loop"},
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"}
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"}
     ],
     "supports": [
       {"@id": "urn:ngm:class:ai-alignment", "label": "AI Alignment"},

@@ -65,7 +65,7 @@ public:: true
       {"@id": "urn:ngm:class:ipfs", "label": "IPFS"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:semantic-web-linked-data-standard", "label": "Semantic Web"},
+      {"@id": "urn:ngm:class:semantic-web-linked-data-standard", "label": "Semantic Web Linked Data Standard"},
       {"@id": "urn:ngm:class:mastodon", "label": "Mastodon"},
       {"@id": "urn:ngm:class:fediverse", "label": "Fediverse"}
     ]

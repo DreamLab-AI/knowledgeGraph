@@ -55,7 +55,7 @@ public:: true
       {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:iso-iec-27701", "label": "ISO/IEC 27701"},
+      {"@id": "urn:ngm:class:iso-iec-27701", "label": "ISO-IEC 27701"},
       {"@id": "urn:ngm:class:gdpr", "label": "GDPR"}
     ],
     "contrastsWith": [

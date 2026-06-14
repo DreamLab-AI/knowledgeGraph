@@ -176,7 +176,7 @@ alias:: AutonomousRobot
     "requires": [
       {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
       {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:real-time-control", "label": "Real-time Control"},
+      {"@id": "urn:ngm:class:real-time-control", "label": "Real-Time Control"},
       {"@id": "urn:ngm:class:path-planning", "label": "Path Planning"}
     ],
     "uses": [
@@ -200,7 +200,7 @@ alias:: AutonomousRobot
     ],
     "supports": [
       {"@id": "urn:ngm:class:multi-agent-systems", "label": "Multi-Agent Systems"},
-      {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human-Robot Interaction"}
+      {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human Robot Interaction"}
     ],
     "contrastsWith": [
       {"@id": "urn:ngm:class:teleoperated-robot", "label": "Teleoperated Robot"},

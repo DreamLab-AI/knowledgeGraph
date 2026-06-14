@@ -684,7 +684,7 @@ alias:: FaceSwap
       },
       {
         "@id": "urn:ngm:class:lo-ra",
-        "label": "LoRA"
+        "label": "Lo RA"
       }
     ],
     "relatedTo": [

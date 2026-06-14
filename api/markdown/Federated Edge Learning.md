@@ -80,7 +80,7 @@ public:: true
       {"@id": "urn:ngm:class:gradient-descent", "label": "Gradient Descent"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"},
       {"@id": "urn:ngm:class:distributed-computing", "label": "Distributed Computing"},
       {"@id": "urn:ngm:class:privacy-utility-tradeoffs", "label": "Privacy Utility Tradeoffs"},
       {"@id": "urn:ngm:class:autonomous-robot", "label": "Autonomous Robot"}

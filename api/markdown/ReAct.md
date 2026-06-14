@@ -51,7 +51,7 @@ public:: true
       {"@id": "urn:ngm:class:agentic-ai", "label": "Agentic AI"},
       {"@id": "urn:ngm:class:autonomous-agent", "label": "Autonomous Agent"},
       {"@id": "urn:ngm:class:tool-augmented-language-model", "label": "Tool-Augmented Language Model"},
-      {"@id": "urn:ngm:class:human-in-the-loop", "label": "Human-in-the-Loop"},
+      {"@id": "urn:ngm:class:human-in-the-loop", "label": "Human in the Loop"},
       {"@id": "urn:ngm:class:interpretable-ai", "label": "Interpretable AI"}
     ],
     "dependsOn": [
@@ -63,7 +63,7 @@ public:: true
       {"@id": "urn:ngm:class:grounded-reasoning", "label": "Grounded Reasoning"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval Augmented Generation"},
+      {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"},
       {"@id": "urn:ngm:class:in-context-learning", "label": "In-Context Learning"},
       {"@id": "urn:ngm:class:scratchpad-reasoning", "label": "Scratchpad Reasoning"}
     ],

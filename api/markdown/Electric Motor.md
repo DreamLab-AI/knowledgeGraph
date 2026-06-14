@@ -152,7 +152,7 @@ public:: true
     },
     {
       "@id": "urn:ngm:class:robo-actuation-and-control",
-      "label": "Robo Actuation And Control"
+      "label": "Actuation and Control"
     },
     {
       "@id": "urn:ngm:class:electric-actuator",

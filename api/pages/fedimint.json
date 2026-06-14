@@ -9,7 +9,7 @@
   "subClassOf": [
     {
       "id": "urn:ngm:class:ecash",
-      "label": "Ecash"
+      "label": "ecash"
     }
   ],
   "entityType": "Class",

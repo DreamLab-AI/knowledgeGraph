@@ -97,7 +97,7 @@ public:: true
       {"@id": "urn:ngm:class:risk-management", "label": "Risk Management"}
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:nist-ai-rmf", "label": "NIST AI Risk Management Framework"},
+      {"@id": "urn:ngm:class:nist-ai-rmf", "label": "NIST AI RMF"},
       {"@id": "urn:ngm:class:iso-iec-tr-24029-1", "label": "ISO/IEC TR 24029-1:2021"}
     ],
     "contrastsWith": [

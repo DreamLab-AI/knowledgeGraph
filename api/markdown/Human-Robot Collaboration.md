@@ -64,7 +64,7 @@ public:: true
   "qualityScore": 0.7,
   "subClassOf": {
     "@id": "urn:ngm:class:robotics",
-    "label": "Robotics Domain"
+    "label": "Robotics"
   },
   "relations": {
     "requires": [
@@ -148,7 +148,7 @@ public:: true
     "standardizedBy": [
       {
         "@id": "urn:ngm:class:iso-ts-15066",
-        "label": "ISO/TS 15066"
+        "label": "ISO TS 15066"
       },
       {
         "@id": "urn:ngm:class:iso-10218",
@@ -162,7 +162,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:industrial-automation",
-        "label": "Industrial Automation"
+        "label": "IndustrialAutomation"
       }
     ],
     "bridgesTo": [
@@ -176,7 +176,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:human-computer-interaction",
-        "label": "Human-Computer Interaction"
+        "label": "Human Computer Interaction"
       }
     ],
     "relatedTo": [

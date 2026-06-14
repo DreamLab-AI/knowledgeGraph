@@ -9,7 +9,7 @@
   "subClassOf": [
     {
       "id": "urn:ngm:class:blockchain",
-      "label": "Blockchain Domain"
+      "label": "Blockchain"
     }
   ],
   "entityType": "Class",
@@ -51,11 +51,11 @@
       },
       {
         "id": "urn:ngm:class:anti-counterfeiting",
-        "label": "Anti-Counterfeiting"
+        "label": "Anti Counterfeiting"
       },
       {
         "id": "urn:ngm:class:sustainability-reporting",
-        "label": "Sustainability Reporting"
+        "label": "SustainabilityReporting"
       }
     ],
     "dependsOn": [
@@ -91,7 +91,7 @@
     "bridgesTo": [
       {
         "id": "urn:ngm:class:digital-asset",
-        "label": "Digital Asset Domain"
+        "label": "Digital Asset"
       },
       {
         "id": "urn:ngm:class:supply-chain-management",

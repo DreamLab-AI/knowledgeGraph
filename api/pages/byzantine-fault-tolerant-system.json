@@ -9,7 +9,7 @@
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-computing-and-cloud",
-      "label": "Infra Computing And Cloud"
+      "label": "Computing and Cloud"
     }
   ],
   "entityType": "Class",
@@ -97,7 +97,7 @@
       },
       {
         "id": "urn:ngm:class:raft-consensus",
-        "label": "Raft Consensus"
+        "label": "RAFT Consensus"
       }
     ],
     "bridgesTo": [
@@ -134,7 +134,7 @@
       },
       {
         "id": "urn:ngm:class:pbft",
-        "label": "Practical Byzantine Fault Tolerance"
+        "label": "PBFT"
       },
       {
         "id": "urn:ngm:class:tendermint",

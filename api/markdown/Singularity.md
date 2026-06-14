@@ -317,7 +317,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:large-scale-pretrained-foundation-model",
-        "label": "Foundation Models"
+        "label": "Large-Scale Pretrained Foundation Model"
       }
     ],
     "enables": [
@@ -385,7 +385,7 @@ public:: true
     "relatedTo": [
       {
         "@id": "urn:ngm:class:constitutional-ai-training-methodology-language-model-family",
-        "label": "Anthropic Claude"
+        "label": "Constitutional AI Language Model Family"
       },
       {
         "@id": "urn:ngm:class:brain-computer-interfaces",
@@ -423,7 +423,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:safety-and-alignment",
-        "label": "Safety and Alignment"
+        "label": "Safety and alignment"
       }
     ],
     "standardizedBy": [

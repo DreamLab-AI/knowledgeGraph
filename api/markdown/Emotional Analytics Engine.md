@@ -177,7 +177,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:real-time-processing",
-        "label": "Real-Time Processing"
+        "label": "Real-time Processing"
       }
     ],
     "enables": [
@@ -191,7 +191,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:emotion-aware-interaction",
-        "label": "Emotion-Aware Interaction"
+        "label": "Emotion Aware Interaction"
       },
       {
         "@id": "urn:ngm:class:sentiment-analysis",

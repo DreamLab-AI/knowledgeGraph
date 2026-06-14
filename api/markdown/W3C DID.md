@@ -41,7 +41,7 @@ public:: true
       {"@id": "urn:ngm:class:decentralised-trust", "label": "Decentralised Trust"},
       {"@id": "urn:ngm:class:authentication", "label": "Authentication"},
       {"@id": "urn:ngm:class:digital-identity-management", "label": "Digital Identity Management"},
-      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self-Sovereign Identity"},
+      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self Sovereign Identity"},
       {"@id": "urn:ngm:class:selective-disclosure", "label": "Selective Disclosure"}
     ],
     "implements": [

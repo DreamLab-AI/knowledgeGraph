@@ -64,7 +64,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:neural-network-text-tokenisation",
-        "label": "Tokenisation"
+        "label": "Neural Network Text Tokenisation"
       }
     ]
   },

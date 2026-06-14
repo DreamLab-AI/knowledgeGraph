@@ -50,11 +50,11 @@ elevatedFrom:: [[State Space and Other Approaches]]
       {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"}
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:mixture-of-experts-architecture", "label": "Mixture of Experts"},
+      {"@id": "urn:ngm:class:mixture-of-experts-architecture", "label": "Mixture-of-Experts Architecture"},
       {"@id": "urn:ngm:class:recurrent-neural-network", "label": "Recurrent Neural Network"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"},
       {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
     ],
     "relatedTo": [

@@ -23,9 +23,9 @@ public:: true
   "definition": "Player agency is the degree to which a participant's choices meaningfully shape the state, narrative, and outcomes of an interactive virtual experience. High agency means decisions have consequential, non-trivial effects rather than cosmetic ones, giving players authorship over their path through the world. It is a core design value of open-world and non-linear interactive systems.",
   "domain": "metaverse",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:sc-interaction", "label": "Spatial Computing Interaction"}],
+  "subClassOf": [{"@id": "urn:ngm:class:sc-interaction", "label": "Interaction Technology"}],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:open-world", "label": "Open World"}, {"@id": "urn:ngm:class:non-linear-narrative", "label": "Non-Linear Narrative"}]
+    "relatedTo": [{"@id": "urn:ngm:class:open-world", "label": "Open World"}, {"@id": "urn:ngm:class:non-linear-narrative", "label": "Non Linear Narrative"}]
   },
   "quality": 0.72
 }

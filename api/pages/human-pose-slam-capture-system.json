@@ -37,7 +37,7 @@
       },
       {
         "id": "urn:ngm:class:real-time-processing",
-        "label": "Real-Time Processing"
+        "label": "Real-time Processing"
       },
       {
         "id": "urn:ngm:class:sensor-fusion",
@@ -63,7 +63,7 @@
       },
       {
         "id": "urn:ngm:class:human-robot-interaction",
-        "label": "Human-Robot Interaction"
+        "label": "Human Robot Interaction"
       }
     ],
     "dependsOn": [

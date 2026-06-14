@@ -136,7 +136,7 @@ public:: true
     "dependsOn": [
       {
         "@id": "urn:ngm:class:sigma-algebra",
-        "label": "Sigma Algebra"
+        "label": "Sigma-Algebra"
       },
       {
         "@id": "urn:ngm:class:filtration",
@@ -146,7 +146,7 @@ public:: true
     "uses": [
       {
         "@id": "urn:ngm:class:time-series-analysis",
-        "label": "Time Series Analysis"
+        "label": "Time-Series Analysis"
       },
       {
         "@id": "urn:ngm:class:monte-carlo-methods",

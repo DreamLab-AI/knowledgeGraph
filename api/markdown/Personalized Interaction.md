@@ -23,9 +23,9 @@ public:: true
   "definition": "Personalized interaction is a conversational or interface exchange that adapts in real time to the specific user it is engaging, using their context, history, and inferred state. Unlike static personalization of content, it tailors the moment-to-moment dialogue, tone, and follow-ups based on prior turns and behavioural feedback. It is central to adaptive assistants that improve as they learn an individual's patterns.",
   "domain": "ai",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:human-computer-interaction", "label": "Human-Computer Interaction"}],
+  "subClassOf": [{"@id": "urn:ngm:class:human-computer-interaction", "label": "Human Computer Interaction"}],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:context-aware-response", "label": "Context-Aware Response"}, {"@id": "urn:ngm:class:behavioural-feedback-loop", "label": "Behavioural Feedback Loop"}]
+    "relatedTo": [{"@id": "urn:ngm:class:context-aware-response", "label": "Context Aware Response"}, {"@id": "urn:ngm:class:behavioural-feedback-loop", "label": "Behavioural Feedback Loop"}]
   },
   "quality": 0.72
 }

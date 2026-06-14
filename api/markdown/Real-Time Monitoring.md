@@ -23,7 +23,7 @@ public:: true
   "definition": "Real-time monitoring is the continuous collection, processing, and presentation of operational telemetry — encompassing metrics, logs, and traces — with sufficiently low latency that resulting insights can drive immediate human decisions or automated responses without batch delay. It integrates instrumentation agents, stream-processing pipelines, and visualisation dashboards to maintain a live, actionable picture of system health across software, hardware, network, and physical domains. The discipline spans IT operations, industrial control, MLOps observability, and smart infrastructure, where the defining criterion is actionability: data must arrive within a window that permits meaningful intervention before a fault, breach, or degradation cascades. Real-time monitoring is architecturally distinct from batch analytics in its emphasis on bounded latency, stateful windowing, and continuous alerting over persistent connections.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": {"@id": "urn:ngm:class:real-time-processing", "label": "Real-Time Processing"},
+  "subClassOf": {"@id": "urn:ngm:class:real-time-processing", "label": "Real-time Processing"},
   "relations": {
     "hasPart": [
       {"@id": "urn:ngm:class:telemetry", "label": "Telemetry"},
@@ -35,7 +35,7 @@ public:: true
       {"@id": "urn:ngm:class:stream-processing", "label": "Stream Processing"},
       {"@id": "urn:ngm:class:io-t-sensor-network", "label": "IoT Sensor Network"},
       {"@id": "urn:ngm:class:anomaly-detection", "label": "Anomaly Detection"},
-      {"@id": "urn:ngm:class:event-driven-architecture", "label": "Event-Driven Architecture"}
+      {"@id": "urn:ngm:class:event-driven-architecture", "label": "Event Driven Architecture"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:compliance-monitoring", "label": "Compliance Monitoring"},
@@ -63,7 +63,7 @@ public:: true
       {"@id": "urn:ngm:class:historical-analytics", "label": "Historical Analytics"}
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:cyber-physical-systems", "label": "Cyber-Physical Systems"},
+      {"@id": "urn:ngm:class:cyber-physical-systems", "label": "Cyber Physical Systems"},
       {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
       {"@id": "urn:ngm:class:model-drift-detection", "label": "Model Drift Detection"}
     ],

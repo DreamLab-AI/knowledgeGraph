@@ -104,7 +104,7 @@ public:: true
       {"@id": "urn:ngm:class:robotics-perception", "label": "Robotics Perception"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"},
       {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
       {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
     ]

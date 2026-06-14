@@ -40,7 +40,7 @@
     "dependsOn": [
       {
         "id": "urn:ngm:class:multimodal-ai-architecture",
-        "label": "multimodal"
+        "label": "Multimodal AI Architecture"
       }
     ],
     "implements": [],
@@ -53,7 +53,7 @@
       },
       {
         "id": "urn:ngm:class:neural-network-latent-space",
-        "label": "latent space"
+        "label": "Neural Network Latent Space"
       },
       {
         "id": "urn:ngm:class:hardware-and-edge",

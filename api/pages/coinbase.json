@@ -9,7 +9,7 @@
   "subClassOf": [
     {
       "id": "urn:ngm:class:digital-asset",
-      "label": "Digital Asset Domain"
+      "label": "Digital Asset"
     }
   ],
   "entityType": "Class",
@@ -134,7 +134,7 @@
       },
       {
         "id": "urn:ngm:class:layer-2-scaling",
-        "label": "Layer-2 Scaling"
+        "label": "Layer 2 Scaling"
       },
       {
         "id": "urn:ngm:class:centralised-exchange",

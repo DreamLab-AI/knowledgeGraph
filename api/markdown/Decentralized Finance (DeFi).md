@@ -353,11 +353,11 @@ public:: true
     "hasPart": [
       {
         "@id": "urn:ngm:class:decentralized-exchange",
-        "label": "Decentralised Exchange"
+        "label": "Decentralized Exchange"
       },
       {
         "@id": "urn:ngm:class:flash-loan",
-        "label": "Flash Loans"
+        "label": "Flash Loan"
       },
       {
         "@id": "urn:ngm:class:lending-protocol",
@@ -411,7 +411,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:gas-fee",
-        "label": "Gas Fees"
+        "label": "Gas Fee"
       },
       {
         "@id": "urn:ngm:class:liquidity-provider",
@@ -419,7 +419,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:ethereum-smart-contract-platform",
-        "label": "Ethereum"
+        "label": "Ethereum Smart Contract Platform"
       },
       {
         "@id": "urn:ngm:class:knowledge-graph-publication-classifier-blockchain",
@@ -437,7 +437,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:on-chain-governance",
-        "label": "On-Chain Governance"
+        "label": "On-chain Governance"
       },
       {
         "@id": "urn:ngm:class:permissionless-lending",
@@ -501,7 +501,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:merkle-tree",
-        "label": "Merkle Trees"
+        "label": "Merkle Tree"
       },
       {
         "@id": "urn:ngm:class:solidity",
@@ -509,7 +509,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:zero-knowledge-proof",
-        "label": "Zero Knowledge Proofs"
+        "label": "Zero-Knowledge Proof"
       }
     ],
     "relatedTo": [

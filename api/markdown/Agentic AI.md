@@ -74,7 +74,7 @@ public:: true
       {"@id": "urn:ngm:class:reactive-system", "label": "Reactive System"}
     ],
     "supports": [
-      {"@id": "urn:ngm:class:human-in-the-loop", "label": "Human-in-the-Loop"},
+      {"@id": "urn:ngm:class:human-in-the-loop", "label": "Human in the Loop"},
       {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"}
     ],
     "relatedTo": [

@@ -1555,7 +1555,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:longest-chain-rule",
-        "label": "Longest-Chain Rule"
+        "label": "Longest Chain Rule"
       },
       {
         "@id": "urn:ngm:class:nakamoto-consensus",
@@ -1619,7 +1619,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol",
-        "label": "Bitcoin"
+        "label": "Bitcoin Proof-of-Work Protocol"
       },
       {
         "@id": "urn:ngm:class:halving",

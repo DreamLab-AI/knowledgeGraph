@@ -660,7 +660,7 @@ public:: true
     },
     {
       "@id": "urn:ngm:class:infra-network-and-comms",
-      "label": "Infra Network And Comms"
+      "label": "Network and Communication"
     },
     {
       "@id": "urn:ngm:class:policy-enforcement-point",
@@ -819,7 +819,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:protocol-buffer",
-        "label": "Protocol Buffers"
+        "label": "Protocol Buffer"
       },
       {
         "@id": "urn:ngm:class:w3-c-trace-context",

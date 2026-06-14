@@ -63,7 +63,7 @@ elevatedFrom:: [[Sovereign AI bid]]
       {"@id": "urn:ngm:class:ai-deployment", "label": "AI Deployment"}
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:ai-capability-temporal-horizon-framework", "label": "Soon-Next-Later (AI futurology)"}
+      {"@id": "urn:ngm:class:ai-capability-temporal-horizon-framework", "label": "AI Capability Temporal Horizon Framework"}
     ]
   },
   "quality": 0.7,

@@ -31,7 +31,7 @@
       },
       {
         "id": "urn:ngm:class:implementation-examples",
-        "label": "Implementation Example"
+        "label": "implementation examples"
       }
     ],
     "requires": [
@@ -55,7 +55,7 @@
       },
       {
         "id": "urn:ngm:class:inclusive-xr-design",
-        "label": "Inclusive XR Design"
+        "label": "Inclusive Xr Design"
       }
     ],
     "dependsOn": [],

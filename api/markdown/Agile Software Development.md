@@ -53,7 +53,7 @@ public:: true
   "subClassOf": [
     {
       "@id": "urn:ngm:class:software-engineering",
-      "label": "Software Engineering Domain"
+      "label": "Software Engineering"
     }
   ],
   "relations": {

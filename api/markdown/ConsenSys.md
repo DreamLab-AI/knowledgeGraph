@@ -53,7 +53,7 @@ public:: true
   "subClassOf": [
     {
       "@id": "urn:ngm:class:bc-network-component",
-      "label": "Bc Network Component"
+      "label": "Network Component"
     }
   ],
   "relations": {

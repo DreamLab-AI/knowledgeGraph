@@ -99,11 +99,11 @@ public:: true
     "requires": [
       {
         "@id": "urn:ngm:class:etsi-domain-immersive",
-        "label": "ETSI Domain Immersive"
+        "label": "Etsi Domain Immersive"
       },
       {
         "@id": "urn:ngm:class:etsi-domain-reality-capture",
-        "label": "ETSI Domain Reality Capture"
+        "label": "ETSI_Domain_Reality_Capture"
       }
     ],
     "enables": [
@@ -123,7 +123,7 @@ public:: true
     "partOf": [
       {
         "@id": "urn:ngm:class:etsi-metaverse-domain-model",
-        "label": "ETSI Metaverse Domain Model"
+        "label": "Etsi Metaverse Domain Model"
       }
     ]
   },

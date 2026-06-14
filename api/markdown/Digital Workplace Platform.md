@@ -428,7 +428,7 @@ public:: true
     },
     {
       "@id": "urn:ngm:class:dc-communication",
-      "label": "DC Communication"
+      "label": "Communication Technology"
     }
   ],
   "relations": {
@@ -579,7 +579,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:zero-trust-architecture",
-        "label": "Zero-Trust Architecture"
+        "label": "Zero Trust Architecture"
       }
     ],
     "uses": [
@@ -669,7 +669,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:knowledge-management-system",
-        "label": "Knowledge Management Systems"
+        "label": "Knowledge Management System"
       },
       {
         "@id": "urn:ngm:class:project-management",

@@ -116,7 +116,7 @@
       },
       {
         "id": "urn:ngm:class:cross-attention",
-        "label": "Cross-Attention"
+        "label": "Cross Attention"
       },
       {
         "id": "urn:ngm:class:optical-flow",

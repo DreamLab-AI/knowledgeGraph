@@ -51,7 +51,7 @@ public:: true
   "maturity": "established",
   "subClassOf": {
     "@id": "urn:ngm:class:machine-learning-discipline",
-    "label": "Machine Learning"
+    "label": "Machine Learning Discipline"
   },
   "relations": {
     "hasPart": [
@@ -89,7 +89,7 @@ public:: true
     ],
     "supports": [
       {"@id": "urn:ngm:class:robotics", "label": "Robotics"},
-      {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human-Computer Interaction"}
+      {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human Computer Interaction"}
     ],
     "contrastsWith": [
       {"@id": "urn:ngm:class:rule-based-system", "label": "Rule-Based System"}

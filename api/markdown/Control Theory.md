@@ -519,7 +519,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:feedback-loop",
-        "label": "Feedback Loops"
+        "label": "Feedback Loop"
       },
       {
         "@id": "urn:ngm:class:plant-model",
@@ -655,7 +655,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:state-space-model",
-        "label": "State-Space Model"
+        "label": "State Space Model"
       },
       {
         "@id": "urn:ngm:class:transfer-function",
@@ -695,7 +695,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:autonomous-vehicle",
-        "label": "Autonomous Vehicles"
+        "label": "Autonomous Vehicle"
       },
       {
         "@id": "urn:ngm:class:biomedical-engineering",

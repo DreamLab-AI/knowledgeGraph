@@ -46,7 +46,7 @@ public:: true
       {"@id": "urn:ngm:class:human-feedback", "label": "Human Feedback"},
       {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
       {"@id": "urn:ngm:class:proximal-policy-optimisation", "label": "Proximal Policy Optimisation"},
-      {"@id": "urn:ngm:class:supervised-fine-tuning", "label": "Supervised Fine-Tuning"}
+      {"@id": "urn:ngm:class:supervised-fine-tuning", "label": "Supervised Fine Tuning"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:ai-alignment", "label": "AI Alignment"},
@@ -62,11 +62,11 @@ public:: true
     ],
     "contrastsWith": [
       {"@id": "urn:ngm:class:direct-preference-optimisation", "label": "Direct Preference Optimisation"},
-      {"@id": "urn:ngm:class:supervised-fine-tuning", "label": "Supervised Fine-Tuning"},
+      {"@id": "urn:ngm:class:supervised-fine-tuning", "label": "Supervised Fine Tuning"},
       {"@id": "urn:ngm:class:rlaif", "label": "RLAIF"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:constitutional-ai-training-methodology", "label": "Constitutional AI"},
+      {"@id": "urn:ngm:class:constitutional-ai-training-methodology", "label": "Constitutional AI Training Methodology"},
       {"@id": "urn:ngm:class:reward-hacking", "label": "Reward Hacking"},
       {"@id": "urn:ngm:class:policy-gradient", "label": "Policy Gradient"},
       {"@id": "urn:ngm:class:instruct-gpt", "label": "InstructGPT"}
@@ -75,7 +75,7 @@ public:: true
       {"@id": "urn:ngm:class:model-alignment-pipeline", "label": "Model Alignment Pipeline"}
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human-Computer Interaction"},
+      {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human Computer Interaction"},
       {"@id": "urn:ngm:class:data-annotation", "label": "Data Annotation"},
       {"@id": "urn:ngm:class:crowdsourcing", "label": "Crowdsourcing"}
     ]

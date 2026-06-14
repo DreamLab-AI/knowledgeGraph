@@ -23,7 +23,7 @@ public:: true
   "definition": "Treasury diversification is the practice of spreading an organisation's or DAO's reserves across multiple asset types, such as stablecoins, native tokens, blue-chip crypto, and yield-bearing positions, to reduce concentration risk and stabilise runway. It mitigates the volatility and correlation exposure that arises when a treasury holds predominantly its own governance token.",
   "domain": "blockchain",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:bc-defi-and-economics", "label": "Blockchain DeFi and Economics"}],
+  "subClassOf": [{"@id": "urn:ngm:class:bc-defi-and-economics", "label": "DeFi and Economics"}],
   "relations": {
     "relatedTo": [{"@id": "urn:ngm:class:treasury-management", "label": "Treasury Management"}, {"@id": "urn:ngm:class:dao-tooling", "label": "DAO Tooling"}]
   },

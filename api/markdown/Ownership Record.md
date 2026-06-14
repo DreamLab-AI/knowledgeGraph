@@ -23,7 +23,7 @@ public:: true
   "definition": "An Ownership Record is a persistent entry that attests who holds title to an asset at a given time. On a blockchain it is an immutable, timestamped ledger entry binding an asset identifier to a controlling address, providing tamper-evident provenance and transfer history. Such records underpin tokenized assets like certificates and royalty instruments where verifiable, auditable ownership is essential.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:bc-token-and-asset", "label": "Blockchain Token and Asset"}],
+  "subClassOf": [{"@id": "urn:ngm:class:bc-token-and-asset", "label": "Token and Asset"}],
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:renewable-energy-certificates", "label": "Renewable Energy Certificates"},

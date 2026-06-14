@@ -83,7 +83,7 @@ alias:: DAOs
       {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
       {"@id": "urn:ngm:class:governance-token", "label": "Governance Token"},
       {"@id": "urn:ngm:class:multisig-wallet", "label": "Multisig Wallet"},
-      {"@id": "urn:ngm:class:on-chain-voting", "label": "On-Chain Voting"},
+      {"@id": "urn:ngm:class:on-chain-voting", "label": "On Chain Voting"},
       {"@id": "urn:ngm:class:token-weighted-voting", "label": "Token-Weighted Voting"}
     ],
     "requires": [

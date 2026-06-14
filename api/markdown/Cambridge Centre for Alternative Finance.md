@@ -56,7 +56,7 @@ public:: true
   "subClassOf": [
     {
       "@id": "urn:ngm:class:financial-infrastructure",
-      "label": "Financial Infrastructure Domain"
+      "label": "Financial Infrastructure"
     }
   ],
   "relations": {
@@ -82,7 +82,7 @@ public:: true
       {"@id": "urn:ngm:class:open-data-publishing", "label": "Open Data Publishing"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof of Work"},
+      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"},
       {"@id": "urn:ngm:class:distributed-ledger-technology", "label": "Distributed Ledger Technology"},
       {"@id": "urn:ngm:class:peer-to-peer-lending", "label": "Peer-to-Peer Lending"}
     ],

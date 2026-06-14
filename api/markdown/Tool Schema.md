@@ -33,7 +33,7 @@ public:: true
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-technique",
-      "label": "Ai Technique"
+      "label": "AI Technique"
     }
   ],
   "sameAs": [
@@ -72,10 +72,10 @@ public:: true
     ],
     "supports": [
       {"@id": "urn:ngm:class:multi-agent-system", "label": "Multi-Agent System"},
-      {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval Augmented Generation"}
+      {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"}
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine-Tuning"},
+      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine Tuning"},
       {"@id": "urn:ngm:class:prompt-engineering", "label": "Prompt Engineering"}
     ],
     "bridgesTo": [

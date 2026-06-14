@@ -98,7 +98,7 @@ public:: true
     ],
     "standardizedBy": [
       {"@id": "urn:ngm:class:ieee-p7003-2021", "label": "IEEE P7003-2021"},
-      {"@id": "urn:ngm:class:iso-iec-tr-24027", "label": "ISO/IEC TR 24027"},
+      {"@id": "urn:ngm:class:iso-iec-tr-24027", "label": "ISO-IEC TR 24027"},
       {"@id": "urn:ngm:class:nist-sp-1270", "label": "NIST SP 1270"}
     ],
     "contrastsWith": [

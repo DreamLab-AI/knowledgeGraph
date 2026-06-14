@@ -26,7 +26,7 @@ public:: true
   "subClassOf": [{"@id": "urn:ngm:class:cryptographic-protocol", "label": "Cryptographic Protocol"}],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:cryptography-security-and-privacy", "label": "Cryptography, Security and Privacy"},
+      {"@id": "urn:ngm:class:cryptography-security-and-privacy", "label": "Cryptography Security and Privacy"},
       {"@id": "urn:ngm:class:signal-protocol", "label": "Signal Protocol"}
     ]
   },

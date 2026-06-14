@@ -383,7 +383,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:large-scale-pretrained-foundation-model",
-        "label": "Foundation Models"
+        "label": "Large-Scale Pretrained Foundation Model"
       },
       {
         "@id": "urn:ngm:class:large-language-models",
@@ -395,7 +395,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:stable-diffusion-image-model",
-        "label": "Stable Diffusion"
+        "label": "Stable Diffusion Image Model"
       }
     ],
     "implements": [
@@ -473,11 +473,11 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:node-based-diffusion-pipeline-interface",
-        "label": "ComfyUI"
+        "label": "Node-Based Diffusion Pipeline Interface"
       },
       {
         "@id": "urn:ngm:class:large-scale-pretrained-foundation-model",
-        "label": "Foundation Models"
+        "label": "Large-Scale Pretrained Foundation Model"
       },
       {
         "@id": "urn:ngm:class:model-optimisation-and-performance",
@@ -493,7 +493,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:stable-diffusion-image-model",
-        "label": "Stable Diffusion"
+        "label": "Stable Diffusion Image Model"
       },
       {
         "@id": "urn:ngm:class:training-data",
@@ -511,7 +511,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:node-based-diffusion-pipeline-interface",
-        "label": "ComfyUI"
+        "label": "Node-Based Diffusion Pipeline Interface"
       },
       {
         "@id": "urn:ngm:class:node-based-diffusion-pipeline-interface-workflows",

@@ -303,7 +303,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:informed-decision-making",
-        "label": "Informed Decision Making"
+        "label": "Informed decision-making"
       },
       {
         "@id": "urn:ngm:class:procurement-due-diligence",

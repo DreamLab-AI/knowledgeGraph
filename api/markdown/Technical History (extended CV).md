@@ -106,13 +106,13 @@ public:: true
   ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:nicve-virtual-reality-research-centre", "label": "National Industrial Centre for Virtual Environments"},
+      {"@id": "urn:ngm:class:nicve-virtual-reality-research-centre", "label": "NICVE Virtual Reality Research Centre"},
       {"@id": "urn:ngm:class:mixed-reality", "label": "Mixed Reality"},
       {"@id": "urn:ngm:class:metaverse-and-telecollaboration", "label": "Metaverse and Telecollaboration"}
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:knowhere-visitor-attention-system", "label": "Knowhere"},
-      {"@id": "urn:ngm:class:dreamlab-creative-technology-collective", "label": "Dreamlab"}
+      {"@id": "urn:ngm:class:knowhere-visitor-attention-system", "label": "KnoWhere Visitor Attention System"},
+      {"@id": "urn:ngm:class:dreamlab-creative-technology-collective", "label": "DreamLab Creative Technology Collective"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:proprietary-large-language-models", "label": "Proprietary Large Language Models"},
@@ -120,7 +120,7 @@ public:: true
     ],
     "bridgesTo": [
       {"@id": "urn:ngm:class:trust-and-safety", "label": "Trust and Safety"},
-      {"@id": "urn:ngm:class:venue-tethered-immersive-experience", "label": "Location Based Experience"}
+      {"@id": "urn:ngm:class:venue-tethered-immersive-experience", "label": "Venue-Tethered Immersive Experience"}
     ]
   },
   "provenance": {

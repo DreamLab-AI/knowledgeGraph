@@ -499,11 +499,11 @@ public:: true
     "requires": [
       {
         "@id": "urn:ngm:class:consensus-rule",
-        "label": "Consensus Rules"
+        "label": "Consensus Rule"
       },
       {
         "@id": "urn:ngm:class:cryptographic-primitive",
-        "label": "Cryptographic Primitives"
+        "label": "Cryptographic Primitive"
       },
       {
         "@id": "urn:ngm:class:native-token-distribution",
@@ -511,7 +511,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:peerto-peer-protocol",
-        "label": "Peer-to-Peer Protocol"
+        "label": "Peerto Peer Protocol"
       },
       {
         "@id": "urn:ngm:class:state-management",
@@ -551,11 +551,11 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:proof-of-stake",
-        "label": "Proof-of-Stake"
+        "label": "Proof of Stake"
       },
       {
         "@id": "urn:ngm:class:proof-of-work",
-        "label": "Proof-of-Work"
+        "label": "Proof Of Work"
       },
       {
         "@id": "urn:ngm:class:state-machine-replication",
@@ -565,7 +565,7 @@ public:: true
     "uses": [
       {
         "@id": "urn:ngm:class:merkle-tree",
-        "label": "Merkle Trees"
+        "label": "Merkle Tree"
       },
       {
         "@id": "urn:ngm:class:rlp-encoding",

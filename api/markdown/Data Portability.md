@@ -23,7 +23,7 @@ public:: true
   "definition": "Data portability is the ability for users to obtain, move and reuse their personal or application data across services in a structured, machine-readable format without lock-in. It is both a legal right under regimes such as GDPR and a technical property enabled by open formats and interoperable storage. In decentralised-web designs it lets individuals carry data between providers, shifting control from platforms to users.",
   "domain": "data",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:infra-data-management", "label": "Infrastructure Data Management"}],
+  "subClassOf": [{"@id": "urn:ngm:class:infra-data-management", "label": "Data Management"}],
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:decentralised-web", "label": "Decentralised Web"},

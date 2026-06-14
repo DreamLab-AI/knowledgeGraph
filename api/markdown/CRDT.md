@@ -501,7 +501,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:local-first-software",
-        "label": "Local-first Software"
+        "label": "Local-First Software"
       },
       {
         "@id": "urn:ngm:class:multi-datacenter-replication",
@@ -525,7 +525,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:real-time-collaborative-editing",
-        "label": "Real-time Collaborative Editing"
+        "label": "Real-Time Collaborative Editing"
       }
     ],
     "implements": [
@@ -551,7 +551,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:join-semilattice",
-        "label": "Join Semilattice"
+        "label": "Join-Semilattice"
       },
       {
         "@id": "urn:ngm:class:state-lattice-merge",
@@ -573,7 +573,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:join-semilattice",
-        "label": "Join Semilattice"
+        "label": "Join-Semilattice"
       },
       {
         "@id": "urn:ngm:class:logical-clocks",
@@ -603,7 +603,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:local-first-software",
-        "label": "Local-first Software"
+        "label": "Local-First Software"
       },
       {
         "@id": "urn:ngm:class:merkle-dag",
@@ -653,7 +653,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:real-time-collaborative-editing",
-        "label": "Real-time Collaborative Editing"
+        "label": "Real-Time Collaborative Editing"
       },
       {
         "@id": "urn:ngm:class:edge-computing",

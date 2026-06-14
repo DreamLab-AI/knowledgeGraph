@@ -99,7 +99,7 @@ public:: true
       {"@id": "urn:ngm:class:data-augmentation", "label": "Data Augmentation"}
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:iso-iec-22989-2022", "label": "ISO/IEC 22989:2022"},
+      {"@id": "urn:ngm:class:iso-iec-22989-2022", "label": "ISO-IEC 22989 2022"},
       {"@id": "urn:ngm:class:nist-ai-rmf", "label": "NIST AI RMF"}
     ],
     "bridgesTo": [

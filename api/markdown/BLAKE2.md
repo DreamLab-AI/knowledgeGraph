@@ -85,7 +85,7 @@ public:: true
     },
     {
       "@id": "urn:ngm:class:cryptographic-primitive",
-      "label": "CryptographicPrimitive"
+      "label": "Cryptographic Primitive"
     }
   ],
   "relations": {
@@ -104,7 +104,7 @@ public:: true
       {"@id": "urn:ngm:class:hash-function", "label": "Hash Function"}
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:cryptographic-primitive", "label": "CryptographicPrimitive"}
+      {"@id": "urn:ngm:class:cryptographic-primitive", "label": "Cryptographic Primitive"}
     ],
     "contrastsWith": [
       {"@id": "urn:ngm:class:sha-256", "label": "SHA-256"}

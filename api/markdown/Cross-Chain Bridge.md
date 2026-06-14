@@ -505,11 +505,11 @@ alias:: CrossChainBridge
     },
     {
       "@id": "urn:ngm:class:bc-network-component",
-      "label": "BC Network Component"
+      "label": "Network Component"
     },
     {
       "@id": "urn:ngm:class:bc-network-component",
-      "label": "BC Network Component"
+      "label": "Network Component"
     }
   ],
   "relations": {
@@ -580,7 +580,7 @@ alias:: CrossChainBridge
       },
       {
         "@id": "urn:ngm:class:cross-chain-asset-transfer",
-        "label": "Cross-Chain Asset Transfer"
+        "label": "Cross Chain Asset Transfer"
       },
       {
         "@id": "urn:ngm:class:cross-chain-composability",
@@ -664,7 +664,7 @@ alias:: CrossChainBridge
       },
       {
         "@id": "urn:ngm:class:zk-snarks",
-        "label": "ZK-SNARK"
+        "label": "ZK-SNARKs"
       }
     ],
     "relatedTo": [
@@ -756,7 +756,7 @@ alias:: CrossChainBridge
       },
       {
         "@id": "urn:ngm:class:tokenised-real-world-asset-transfer",
-        "label": "Tokenised Real-World Asset Transfer"
+        "label": "Tokenised Real World Asset Transfer"
       }
     ],
     "standardizedBy": [

@@ -685,7 +685,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:science-based-targets",
-        "label": "Science-Based Target"
+        "label": "Science Based Targets"
       },
       {
         "@id": "urn:ngm:class:scope-1-emissions",

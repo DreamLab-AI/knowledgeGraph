@@ -34,7 +34,7 @@ public:: true
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:data-privacy", "label": "Data Privacy"},
-      {"@id": "urn:ngm:class:social-media-platform-infrastructure", "label": "social media"},
+      {"@id": "urn:ngm:class:social-media-platform-infrastructure", "label": "Social Media Platform Infrastructure"},
       {"@id": "urn:ngm:class:gdpr", "label": "GDPR"}
     ]
   },

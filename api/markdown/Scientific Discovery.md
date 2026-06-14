@@ -41,7 +41,7 @@ public:: true
       {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"},
       {"@id": "urn:ngm:class:generative-model", "label": "Generative Model"}
     ],
     "relatedTo": [

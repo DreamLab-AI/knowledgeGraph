@@ -56,7 +56,7 @@ public:: true
   "subClassOf": [
     {
       "@id": "urn:ngm:class:bc-protocol-and-consensus",
-      "label": "Bc Protocol And Consensus"
+      "label": "Protocol and Consensus"
     }
   ],
   "relations": {
@@ -81,7 +81,7 @@ public:: true
     "enables": [
       {
         "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol",
-        "label": "Bitcoin Protocol"
+        "label": "Bitcoin Proof-of-Work Protocol"
       },
       {
         "@id": "urn:ngm:class:decentralised-finance",
@@ -99,7 +99,7 @@ public:: true
     "implements": [
       {
         "@id": "urn:ngm:class:proof-of-work",
-        "label": "Proof of Work"
+        "label": "Proof Of Work"
       },
       {
         "@id": "urn:ngm:class:peer-to-peer-network",

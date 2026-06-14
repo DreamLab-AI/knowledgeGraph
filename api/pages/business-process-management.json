@@ -41,7 +41,7 @@
       },
       {
         "id": "urn:ngm:class:event-driven-architecture",
-        "label": "Event-Driven Architecture"
+        "label": "Event Driven Architecture"
       }
     ],
     "enables": [
@@ -59,7 +59,7 @@
       },
       {
         "id": "urn:ngm:class:continuous-improvement",
-        "label": "Continuous Improvement"
+        "label": "continuous improvement"
       },
       {
         "id": "urn:ngm:class:operational-efficiency",

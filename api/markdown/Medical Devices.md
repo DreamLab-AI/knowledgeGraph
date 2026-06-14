@@ -25,7 +25,7 @@ public:: true
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:system-architecture", "label": "System Architecture"}],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:fault-tolerance", "label": "Fault Tolerance"}, {"@id": "urn:ngm:class:real-time", "label": "Real-Time"}]
+    "relatedTo": [{"@id": "urn:ngm:class:fault-tolerance", "label": "Fault Tolerance"}, {"@id": "urn:ngm:class:real-time", "label": "Real Time"}]
   },
   "quality": 0.72
 }

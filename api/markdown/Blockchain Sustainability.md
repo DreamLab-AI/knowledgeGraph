@@ -101,7 +101,7 @@ public:: true
     "enables": [
       {
         "@id": "urn:ngm:class:carbon-credits",
-        "label": "Carbon Credit"
+        "label": "Carbon Credits"
       },
       {
         "@id": "urn:ngm:class:tokenized-carbon-market",
@@ -115,21 +115,21 @@ public:: true
     "implements": [
       {
         "@id": "urn:ngm:class:proof-of-stake",
-        "label": "Proof-of-Stake"
+        "label": "Proof of Stake"
       },
       {
         "@id": "urn:ngm:class:delegated-proof-of-stake",
-        "label": "Delegated Proof-of-Stake"
+        "label": "Delegated Proof of Stake"
       },
       {
         "@id": "urn:ngm:class:proof-of-authority",
-        "label": "Proof-of-Authority"
+        "label": "Proof of Authority"
       }
     ],
     "contrastsWith": [
       {
         "@id": "urn:ngm:class:proof-of-work",
-        "label": "Proof-of-Work"
+        "label": "Proof Of Work"
       }
     ],
     "uses": [

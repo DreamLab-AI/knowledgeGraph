@@ -23,7 +23,7 @@ public:: true
   "definition": "IEEE 802.15.4 is a low-rate wireless personal area network (LR-WPAN) standard that specifies the physical layer (PHY) and medium access control (MAC) sublayer for short-range, low-power, low-data-rate wireless communication, operating primarily in the 2.4 GHz ISM band at up to 250 kbps. It serves as the foundational radio layer for higher-level IoT protocols including Zigbee, Thread, WirelessHART, and 6LoWPAN, enabling battery-powered sensor and actuator networks with multi-year device lifetimes.",
   "domain": "infrastructure",
   "maturity": "mature",
-  "subClassOf": {"@id": "urn:ngm:class:ieee-802-x", "label": "IEEE 802.x"},
+  "subClassOf": {"@id": "urn:ngm:class:ieee-802-x", "label": "IEEE 802-X"},
   "relations": {
     "hasPart": [
       {"@id": "urn:ngm:class:physical-layer", "label": "Physical Layer"},
@@ -32,7 +32,7 @@ public:: true
       {"@id": "urn:ngm:class:ultra-wideband", "label": "Ultra-Wideband"}
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:ieee-802-x", "label": "IEEE 802.x"},
+      {"@id": "urn:ngm:class:ieee-802-x", "label": "IEEE 802-X"},
       {"@id": "urn:ngm:class:low-rate-wpan", "label": "Low-Rate WPAN"}
     ],
     "requires": [
@@ -54,7 +54,7 @@ public:: true
     "supports": [
       {"@id": "urn:ngm:class:matter-protocol", "label": "Matter Protocol"},
       {"@id": "urn:ngm:class:smart-metering", "label": "Smart Metering"},
-      {"@id": "urn:ngm:class:industrial-automation", "label": "Industrial Automation"}
+      {"@id": "urn:ngm:class:industrial-automation", "label": "IndustrialAutomation"}
     ],
     "standardizedBy": [
       {"@id": "urn:ngm:class:ieee", "label": "IEEE"},

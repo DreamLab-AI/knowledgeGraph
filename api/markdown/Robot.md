@@ -60,7 +60,7 @@ public:: true
   "subClassOf": [
     {
       "@id": "urn:ngm:class:robo-robot-type",
-      "label": "Robo Robot Type"
+      "label": "Robot Type"
     }
   ],
   "relations": {
@@ -113,7 +113,7 @@ public:: true
     "enables": [
       {
         "@id": "urn:ngm:class:industrial-automation",
-        "label": "Industrial Automation"
+        "label": "IndustrialAutomation"
       },
       {
         "@id": "urn:ngm:class:robot-process-automation",

@@ -25,7 +25,7 @@ public:: true
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:infra-security-and-identity", "label": "Security and Identity"}],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:biometric-binding-mechanism", "label": "Biometric Binding Mechanism"}, {"@id": "urn:ngm:class:etsi-domain-data-management-security", "label": "ETSI Domain Data Management Security"}]
+    "relatedTo": [{"@id": "urn:ngm:class:biometric-binding-mechanism", "label": "Biometric Binding Mechanism"}, {"@id": "urn:ngm:class:etsi-domain-data-management-security", "label": "ETSI Domain: Data Management + Security"}]
   },
   "quality": 0.72
 }

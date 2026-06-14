@@ -26,7 +26,7 @@ public:: true
   "subClassOf": [{"@id": "urn:ngm:class:financial-regulation", "label": "Financial Regulation"}],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:asia-pacific-regulation", "label": "Asia-Pacific Regulation"},
+      {"@id": "urn:ngm:class:asia-pacific-regulation", "label": "Asia Pacific Regulation"},
       {"@id": "urn:ngm:class:adoption-of-convergent-technologies", "label": "Adoption of Convergent Technologies"}
     ]
   },

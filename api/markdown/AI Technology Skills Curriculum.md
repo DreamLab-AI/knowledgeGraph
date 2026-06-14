@@ -64,7 +64,7 @@ elevatedFrom:: [[Courses and Training]]
     ],
     "supports": [
       {"@id": "urn:ngm:class:education-technology", "label": "Education Technology"},
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"}
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}

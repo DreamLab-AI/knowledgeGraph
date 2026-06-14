@@ -455,11 +455,11 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:feed-forward-network",
-        "label": "Feed-Forward Network"
+        "label": "Feed Forward Network"
       },
       {
         "@id": "urn:ngm:class:mixture-of-experts-architecture",
-        "label": "Mixture of Experts"
+        "label": "Mixture-of-Experts Architecture"
       },
       {
         "@id": "urn:ngm:class:multi-head-attention",
@@ -507,7 +507,7 @@ public:: true
     "enables": [
       {
         "@id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Model"
+        "label": "Large Language Models"
       },
       {
         "@id": "urn:ngm:class:multimodal-ai-architecture-learning",
@@ -613,7 +613,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:gemini-multimodal-language-model",
-        "label": "Gemini"
+        "label": "Gemini Multimodal Language Model"
       },
       {
         "@id": "urn:ngm:class:gpt",
@@ -621,7 +621,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:meta-llama-model-family",
-        "label": "LLaMA"
+        "label": "Meta Llama Model Family"
       },
       {
         "@id": "urn:ngm:class:mistral",

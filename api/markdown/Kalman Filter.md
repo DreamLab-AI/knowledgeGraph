@@ -178,7 +178,7 @@ alias:: RB-1015-kalman-filter
     "uses": [
       {
         "@id": "urn:ngm:class:rb-1008-odometry",
-        "label": "Odometry"
+        "label": "RB-1008-odometry"
       },
       {
         "@id": "urn:ngm:class:mean-squared-error",
@@ -244,7 +244,7 @@ alias:: RB-1015-kalman-filter
       },
       {
         "@id": "urn:ngm:class:rb-1013-localization",
-        "label": "Localization"
+        "label": "RB 1013 localization"
       },
       {
         "@id": "urn:ngm:class:rb-1002-closed-loop-control",

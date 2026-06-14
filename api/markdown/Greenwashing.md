@@ -61,7 +61,7 @@ public:: true
     "relatedTo": [
       {"@id": "urn:ngm:class:corporate-social-responsibility", "label": "Corporate Social Responsibility"},
       {"@id": "urn:ngm:class:environmental-disclosure", "label": "Environmental Disclosure"},
-      {"@id": "urn:ngm:class:sustainability-reporting", "label": "Sustainability Reporting"},
+      {"@id": "urn:ngm:class:sustainability-reporting", "label": "SustainabilityReporting"},
       {"@id": "urn:ngm:class:consumer-protection", "label": "Consumer Protection"},
       {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"},
       {"@id": "urn:ngm:class:reputational-risk", "label": "Reputational Risk"},

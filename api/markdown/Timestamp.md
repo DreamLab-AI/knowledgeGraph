@@ -71,7 +71,7 @@ public:: true
   "maturity": "established",
   "subClassOf": {
     "@id": "urn:ngm:class:distributed-data-structure",
-    "label": "DistributedDataStructure"
+    "label": "Distributed Data Structure"
   },
   "relations": {
     "partOf": [
@@ -95,7 +95,7 @@ public:: true
     ],
     "dependsOn": [
       {"@id": "urn:ngm:class:consensus-protocol", "label": "Consensus Protocol"},
-      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof of Work"}
+      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:block-time", "label": "Block Time"},
@@ -106,7 +106,7 @@ public:: true
       {"@id": "urn:ngm:class:time-locked-transaction", "label": "Time-Locked Transaction"}
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:iso-iec-23257-2021", "label": "ISO/IEC 23257:2021"},
+      {"@id": "urn:ngm:class:iso-iec-23257-2021", "label": "ISO-IEC 23257 2021"},
       {"@id": "urn:ngm:class:ieee-2418-1", "label": "IEEE 2418.1"}
     ],
     "contrastsWith": [

@@ -69,7 +69,7 @@ public:: true
     ],
     "requires": [
       {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
-      {"@id": "urn:ngm:class:real-time-processing", "label": "Real-Time Processing"}
+      {"@id": "urn:ngm:class:real-time-processing", "label": "Real-time Processing"}
     ],
     "dependsOn": [
       {"@id": "urn:ngm:class:point-cloud", "label": "Point Cloud"},

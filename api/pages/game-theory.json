@@ -9,7 +9,7 @@
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-research-area",
-      "label": "Ai Research Area"
+      "label": "AI Research Area"
     }
   ],
   "entityType": "Class",
@@ -59,7 +59,7 @@
       },
       {
         "id": "urn:ngm:class:prediction-markets",
-        "label": "Prediction Market"
+        "label": "Prediction Markets"
       },
       {
         "id": "urn:ngm:class:multi-agent-reinforcement-learning",

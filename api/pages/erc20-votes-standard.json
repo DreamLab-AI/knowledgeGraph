@@ -9,7 +9,7 @@
   "subClassOf": [
     {
       "id": "urn:ngm:class:erc20-standard",
-      "label": "ERC-20 Standard"
+      "label": "ERC20 Standard"
     }
   ],
   "entityType": "Class",
@@ -44,7 +44,7 @@
       },
       {
         "id": "urn:ngm:class:ethereum-smart-contract-platform",
-        "label": "Ethereum"
+        "label": "Ethereum Smart Contract Platform"
       }
     ]
   },

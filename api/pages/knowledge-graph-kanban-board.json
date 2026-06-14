@@ -13,7 +13,7 @@
     },
     {
       "id": "urn:ngm:class:active-research-projects-registry",
-      "label": "Projects"
+      "label": "Active Research Projects Registry"
     }
   ],
   "entityType": "Class",
@@ -23,7 +23,7 @@
     "hasPart": [
       {
         "id": "urn:ngm:class:active-research-projects-registry",
-        "label": "Projects"
+        "label": "Active Research Projects Registry"
       },
       {
         "id": "urn:ngm:class:player-two",
@@ -52,7 +52,7 @@
       },
       {
         "id": "urn:ngm:class:decentralised-agent-coordination-initiative",
-        "label": "Agentic Alliance"
+        "label": "Decentralised Agent Coordination Initiative"
       }
     ]
   },

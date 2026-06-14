@@ -36,7 +36,7 @@ public:: true
     ],
     "enables": [
       {"@id": "urn:ngm:class:esg-reporting", "label": "ESG Reporting"},
-      {"@id": "urn:ngm:class:sustainability-reporting", "label": "Sustainability Reporting"},
+      {"@id": "urn:ngm:class:sustainability-reporting", "label": "SustainabilityReporting"},
       {"@id": "urn:ngm:class:net-zero-commitments", "label": "Net-Zero Commitments"},
       {"@id": "urn:ngm:class:supplier-decarbonisation", "label": "Supplier Decarbonisation"}
     ],

@@ -268,7 +268,7 @@ public:: true
     },
     {
       "@id": "urn:ngm:class:bc-token-and-asset",
-      "label": "BC Token And Asset"
+      "label": "Token and Asset"
     },
     {
       "@id": "urn:ngm:class:blockchain-application",
@@ -347,7 +347,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:real-world-asset-tokenisation",
-        "label": "Real World Asset Tokenisation"
+        "label": "Real-World Asset Tokenisation"
       },
       {
         "@id": "urn:ngm:class:secondary-market-liquidity",
@@ -361,7 +361,7 @@ public:: true
     "implements": [
       {
         "@id": "urn:ngm:class:erc3643-standard",
-        "label": "ERC-3643 Standard"
+        "label": "ERC3643 Standard"
       },
       {
         "@id": "urn:ngm:class:aml-kyc-compliance",
@@ -457,7 +457,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:erc3643-standard",
-        "label": "ERC-3643 Standard"
+        "label": "ERC3643 Standard"
       },
       {
         "@id": "urn:ngm:class:iso-24165",

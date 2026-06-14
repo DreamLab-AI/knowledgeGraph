@@ -125,7 +125,7 @@ public:: true
     "requires": [
       {
         "@id": "urn:ngm:class:cryptographic-primitive",
-        "label": "Cryptographic Primitives"
+        "label": "Cryptographic Primitive"
       },
       {
         "@id": "urn:ngm:class:distributed-storage",

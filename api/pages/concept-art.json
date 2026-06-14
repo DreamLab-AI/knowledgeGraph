@@ -30,7 +30,7 @@
     "relatedTo": [
       {
         "id": "urn:ngm:class:midjourney-text-to-image-service",
-        "label": "Midjourney"
+        "label": "Midjourney Text-to-Image Service"
       },
       {
         "id": "urn:ngm:class:proprietary-image-generation",

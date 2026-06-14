@@ -127,7 +127,7 @@ public:: true
     "relatedTo": [
       {"@id": "urn:ngm:class:data-augmentation-strategies", "label": "Data Augmentation Strategies"},
       {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"},
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"}
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"}
     ]
   },
   "provenance": {

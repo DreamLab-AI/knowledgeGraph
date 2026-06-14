@@ -36,7 +36,7 @@ public:: true
       {"@id": "urn:ngm:class:layer-2-scaling", "label": "Layer 2 Scaling"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:ethereum-smart-contract-platform", "label": "Ethereum"},
+      {"@id": "urn:ngm:class:ethereum-smart-contract-platform", "label": "Ethereum Smart Contract Platform"},
       {"@id": "urn:ngm:class:validator-economics", "label": "Validator Economics"},
       {"@id": "urn:ngm:class:liquid-proof-of-stake", "label": "Liquid Proof of Stake"}
     ]

@@ -9,7 +9,7 @@
   "subClassOf": [
     {
       "id": "urn:ngm:class:artificial-superintelligence-theory",
-      "label": "Artificial Superintelligence"
+      "label": "Artificial Superintelligence Theory"
     }
   ],
   "entityType": "Class",

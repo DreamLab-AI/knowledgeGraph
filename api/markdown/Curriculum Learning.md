@@ -64,7 +64,7 @@ public:: true
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:training-strategy", "label": "Training Strategy"},
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"},
       {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"},
       {"@id": "urn:ngm:class:contrastive-learning", "label": "Contrastive Learning"},
       {"@id": "urn:ngm:class:active-learning", "label": "Active Learning"},

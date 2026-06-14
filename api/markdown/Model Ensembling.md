@@ -62,12 +62,12 @@ public:: true
       {"@id": "urn:ngm:class:accuracy", "label": "Accuracy"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"},
       {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
     ],
     "contrastsWith": [
       {"@id": "urn:ngm:class:knowledge-distillation", "label": "Knowledge Distillation"},
-      {"@id": "urn:ngm:class:mixture-of-experts-architecture", "label": "Mixture of Experts"}
+      {"@id": "urn:ngm:class:mixture-of-experts-architecture", "label": "Mixture-of-Experts Architecture"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:overfitting", "label": "Overfitting"},

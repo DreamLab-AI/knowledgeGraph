@@ -129,7 +129,7 @@ public:: true
     "implements": [
       {
         "@id": "urn:ngm:class:quality-of-service",
-        "label": "Quality of Service"
+        "label": "Quality Of Service"
       },
       {
         "@id": "urn:ngm:class:service-level-agreement",

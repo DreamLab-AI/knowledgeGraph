@@ -95,7 +95,7 @@ public:: true
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:bandwidth-adaptation", "label": "Bandwidth Adaptation"},
-      {"@id": "urn:ngm:class:quality-of-service", "label": "Quality of Service"},
+      {"@id": "urn:ngm:class:quality-of-service", "label": "Quality Of Service"},
       {"@id": "urn:ngm:class:digital-rights-management", "label": "Digital Rights Management"}
     ]
   },

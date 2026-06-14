@@ -33,7 +33,7 @@ public:: true
       {"@id": "urn:ngm:class:foundation-model", "label": "Foundation Model"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:constitutional-ai-training-methodology", "label": "Constitutional AI"},
+      {"@id": "urn:ngm:class:constitutional-ai-training-methodology", "label": "Constitutional AI Training Methodology"},
       {"@id": "urn:ngm:class:rlhf", "label": "RLHF"},
       {"@id": "urn:ngm:class:agentic-workflow", "label": "Agentic Workflow"},
       {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"},
@@ -52,7 +52,7 @@ public:: true
       {"@id": "urn:ngm:class:ai-model-card", "label": "AI Model Card"}
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:gpt-4", "label": "GPT-4"},
+      {"@id": "urn:ngm:class:gpt-4", "label": "GPT 4"},
       {"@id": "urn:ngm:class:gemini", "label": "Gemini"},
       {"@id": "urn:ngm:class:llama", "label": "Llama"}
     ],
@@ -61,7 +61,7 @@ public:: true
       {"@id": "urn:ngm:class:workflow-automation", "label": "Workflow Automation"}
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:pre-training", "label": "Pre-Training"},
+      {"@id": "urn:ngm:class:pre-training", "label": "Pre Training"},
       {"@id": "urn:ngm:class:human-feedback", "label": "Human Feedback"}
     ]
   },

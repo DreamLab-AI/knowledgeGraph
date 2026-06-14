@@ -27,7 +27,7 @@ public:: true
   "relations": {
     "uses": [
       {"@id": "urn:ngm:class:encoder", "label": "Encoder"},
-      {"@id": "urn:ngm:class:computer-vision-video-analysis", "label": "Video Processing"}
+      {"@id": "urn:ngm:class:computer-vision-video-analysis", "label": "Computer Vision Video Analysis"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:cdn", "label": "CDN"},

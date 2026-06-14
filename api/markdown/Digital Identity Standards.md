@@ -121,7 +121,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:standards-body",
-        "label": "Standards Bodies"
+        "label": "Standards Body"
       }
     ],
     "enables": [
@@ -135,7 +135,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:trust-framework",
-        "label": "Trust Frameworks"
+        "label": "Trust Framework"
       }
     ]
   },

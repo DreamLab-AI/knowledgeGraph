@@ -321,7 +321,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:consensus-protocol",
-        "label": "Consensus Protocols"
+        "label": "Consensus Protocol"
       },
       {
         "@id": "urn:ngm:class:decision-documentation",
@@ -337,7 +337,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:voting-mechanism",
-        "label": "Voting Mechanisms"
+        "label": "Voting Mechanism"
       }
     ],
     "requires": [
@@ -365,7 +365,7 @@ public:: true
     "enables": [
       {
         "@id": "urn:ngm:class:decentralised-autonomous-organisation",
-        "label": "Decentralised Autonomous Organisations"
+        "label": "Decentralised Autonomous Organisation"
       },
       {
         "@id": "urn:ngm:class:decision-traceability",
@@ -399,7 +399,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:raft-consensus",
-        "label": "Raft Consensus"
+        "label": "RAFT Consensus"
       },
       {
         "@id": "urn:ngm:class:tendermint",
@@ -429,7 +429,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:zero-knowledge-proof",
-        "label": "Zero-Knowledge Proofs"
+        "label": "Zero-Knowledge Proof"
       },
       {
         "@id": "urn:ngm:class:smart-contracts",

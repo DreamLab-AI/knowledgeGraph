@@ -359,7 +359,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:constitutional-ai-training-methodology",
-        "label": "Constitutional AI"
+        "label": "Constitutional AI Training Methodology"
       },
       {
         "@id": "urn:ngm:class:context-window",
@@ -385,7 +385,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:large-scale-compute",
-        "label": "Large Scale Compute"
+        "label": "Large-Scale Compute"
       },
       {
         "@id": "urn:ngm:class:rlhf",
@@ -453,7 +453,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:retrieval-augmented-generation",
-        "label": "Retrieval Augmented Generation"
+        "label": "Retrieval-Augmented Generation"
       },
       {
         "@id": "urn:ngm:class:tool-use",
@@ -465,11 +465,11 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:constitutional-ai-training-methodology",
-        "label": "Constitutional AI"
+        "label": "Constitutional AI Training Methodology"
       },
       {
         "@id": "urn:ngm:class:multimodal-ai-architecture",
-        "label": "Multimodal"
+        "label": "Multimodal AI Architecture"
       },
       {
         "@id": "urn:ngm:class:reinforcement-learning",
@@ -487,7 +487,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:retrieval-augmented-generation",
-        "label": "Retrieval Augmented Generation"
+        "label": "Retrieval-Augmented Generation"
       },
       {
         "@id": "urn:ngm:class:rlhf",
@@ -507,11 +507,11 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:constitutional-ai-training-methodology",
-        "label": "Constitutional AI"
+        "label": "Constitutional AI Training Methodology"
       },
       {
         "@id": "urn:ngm:class:multimodal-ai-architecture",
-        "label": "Multimodal"
+        "label": "Multimodal AI Architecture"
       }
     ],
     "relatedTo": [
@@ -529,7 +529,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:constitutional-ai-training-methodology-language-model-family",
-        "label": "Anthropic Claude"
+        "label": "Constitutional AI Language Model Family"
       },
       {
         "@id": "urn:ngm:class:artificial-general-intelligence",
@@ -537,7 +537,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:artificial-superintelligence-theory",
-        "label": "Artificial Superintelligence"
+        "label": "Artificial Superintelligence Theory"
       },
       {
         "@id": "urn:ngm:class:bias-in-large-language-models",
@@ -549,7 +549,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:instruction-following-conversational-ai-system",
-        "label": "ChatGPT"
+        "label": "Instruction-Following Conversational AI System"
       },
       {
         "@id": "urn:ngm:class:competition-in-ai",
@@ -617,7 +617,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
-        "label": "EU AI Act"
+        "label": "EU AI Act Regulatory Instrument"
       }
     ]
   },

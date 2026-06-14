@@ -48,7 +48,7 @@ public:: true
     "enables": [
       {"@id": "urn:ngm:class:decentralised-web", "label": "Decentralised Web"},
       {"@id": "urn:ngm:class:nft", "label": "NFT"},
-      {"@id": "urn:ngm:class:decentralised-file-storage", "label": "Decentralised File Storage"},
+      {"@id": "urn:ngm:class:decentralised-file-storage", "label": "Decentralised file storage"},
       {"@id": "urn:ngm:class:web3", "label": "Web3"}
     ],
     "requires": [

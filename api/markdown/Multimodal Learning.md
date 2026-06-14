@@ -24,7 +24,7 @@ public:: true
   "domain": "machine-learning",
   "maturity": "emerging",
   "subClassOf": [
-    {"@id": "urn:ngm:class:ai-machine-learning", "label": "AI Machine Learning"}
+    {"@id": "urn:ngm:class:ai-machine-learning", "label": "Ai Machine Learning"}
   ],
   "relations": {
     "hasPart": [

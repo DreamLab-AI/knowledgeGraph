@@ -53,7 +53,7 @@
       },
       {
         "id": "urn:ngm:class:kyc-aml",
-        "label": "KYC / AML"
+        "label": "KYC/AML"
       }
     ],
     "enables": [

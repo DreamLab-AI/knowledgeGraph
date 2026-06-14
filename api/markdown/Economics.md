@@ -645,7 +645,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:instruction-following-conversational-ai-system",
-        "label": "ChatGPT"
+        "label": "Instruction-Following Conversational AI System"
       },
       {
         "@id": "urn:ngm:class:cli-multi-agent-systems",

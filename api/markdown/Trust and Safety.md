@@ -377,7 +377,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
-        "label": "EU AI Act"
+        "label": "EU AI Act Regulatory Instrument"
       },
       {
         "@id": "urn:ngm:class:identity-verification",
@@ -407,7 +407,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:large-language-models",
-        "label": "large language models"
+        "label": "Large Language Models"
       },
       {
         "@id": "urn:ngm:class:self-sovereign-identity",
@@ -497,7 +497,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
-        "label": "EU AI Act"
+        "label": "EU AI Act Regulatory Instrument"
       }
     ]
   },

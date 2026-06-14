@@ -86,7 +86,7 @@ public:: true
       {"@id": "urn:ngm:class:sentiment-analysis", "label": "Sentiment Analysis"},
       {"@id": "urn:ngm:class:speaker-diarisation", "label": "Speaker Diarisation"},
       {"@id": "urn:ngm:class:text-to-speech", "label": "Text-to-Speech"},
-      {"@id": "urn:ngm:class:speech-synthesis", "label": "Speech Synthesis"},
+      {"@id": "urn:ngm:class:speech-synthesis", "label": "SpeechSynthesis"},
       {"@id": "urn:ngm:class:named-entity-recognition", "label": "Named Entity Recognition"}
     ],
     "standardizedBy": [

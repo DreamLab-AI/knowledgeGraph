@@ -687,7 +687,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:responsible-scaling-policy",
-        "label": "Responsible Scaling Policies"
+        "label": "Responsible Scaling Policy"
       },
       {
         "@id": "urn:ngm:class:ai-governance",
@@ -829,11 +829,11 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:iso-iec-23894",
-        "label": "ISO/IEC 23894"
+        "label": "ISO-IEC 23894"
       },
       {
         "@id": "urn:ngm:class:iso-iec-42001",
-        "label": "ISO/IEC 42001"
+        "label": "ISO IEC 42001"
       },
       {
         "@id": "urn:ngm:class:mit-ai-risk-repository",
@@ -861,7 +861,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
-        "label": "EU AI Act"
+        "label": "EU AI Act Regulatory Instrument"
       }
     ]
   },

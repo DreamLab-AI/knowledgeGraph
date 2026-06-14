@@ -9,7 +9,7 @@
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-content-and-assets",
-      "label": "Supply Chain Content and Assets"
+      "label": "Content and Assets"
     }
   ],
   "entityType": "Class",

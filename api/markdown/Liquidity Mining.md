@@ -58,10 +58,10 @@ public:: true
       {"@id": "urn:ngm:class:governance-token", "label": "Governance Token"},
       {"@id": "urn:ngm:class:lp-token", "label": "LP Token"},
       {"@id": "urn:ngm:class:bonding-curve", "label": "Bonding Curve"},
-      {"@id": "urn:ngm:class:vote-escrow", "label": "Vote-Escrow"}
+      {"@id": "urn:ngm:class:vote-escrow", "label": "Vote Escrow"}
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof of Work"},
+      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"},
       {"@id": "urn:ngm:class:order-book-exchange", "label": "Order Book Exchange"},
       {"@id": "urn:ngm:class:traditional-market-making", "label": "Traditional Market Making"}
     ],

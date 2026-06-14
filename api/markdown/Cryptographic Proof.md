@@ -38,10 +38,10 @@ alias:: CryptographicProof
       {"@id": "urn:ngm:class:elliptic-curve-cryptography", "label": "Elliptic Curve Cryptography"}
     ],
     "enables": [
-      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof of Work"},
+      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"},
       {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof of Stake"},
       {"@id": "urn:ngm:class:zk-rollup", "label": "ZK-Rollup"},
-      {"@id": "urn:ngm:class:privacy-preserving-blockchain", "label": "Privacy-Preserving Blockchain"},
+      {"@id": "urn:ngm:class:privacy-preserving-blockchain", "label": "Privacy Preserving Blockchain"},
       {"@id": "urn:ngm:class:verifiable-computation", "label": "Verifiable Computation"},
       {"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"}
     ],
@@ -52,7 +52,7 @@ alias:: CryptographicProof
     ],
     "supports": [
       {"@id": "urn:ngm:class:data-integrity", "label": "Data Integrity"},
-      {"@id": "urn:ngm:class:verification", "label": "Verification"},
+      {"@id": "urn:ngm:class:verification", "label": "VERIFICATION"},
       {"@id": "urn:ngm:class:authentication", "label": "Authentication"},
       {"@id": "urn:ngm:class:non-repudiation", "label": "Non-Repudiation"}
     ],

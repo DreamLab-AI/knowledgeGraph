@@ -167,11 +167,11 @@ public:: true
     "bridgesTo": [
       {
         "@id": "urn:ngm:class:self-sovereign-identity",
-        "label": "Self-Sovereign Identity"
+        "label": "Self Sovereign Identity"
       },
       {
         "@id": "urn:ngm:class:on-chain-governance",
-        "label": "On-Chain Governance"
+        "label": "On-chain Governance"
       }
     ],
     "relatedTo": [

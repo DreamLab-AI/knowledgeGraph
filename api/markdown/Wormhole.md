@@ -28,7 +28,7 @@ public:: true
   ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:cross-chain-asset-transfer", "label": "Cross-Chain Asset Transfer"},
+      {"@id": "urn:ngm:class:cross-chain-asset-transfer", "label": "Cross Chain Asset Transfer"},
       {"@id": "urn:ngm:class:cross-chain-messaging", "label": "Cross-Chain Messaging"},
       {"@id": "urn:ngm:class:token-bridging", "label": "Token Bridging"},
       {"@id": "urn:ngm:class:nft-bridging", "label": "NFT Bridging"}
@@ -37,7 +37,7 @@ public:: true
       {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
       {"@id": "urn:ngm:class:guardian-network", "label": "Guardian Network"},
       {"@id": "urn:ngm:class:multisignature-scheme", "label": "Multisignature Scheme"},
-      {"@id": "urn:ngm:class:lock-and-mint-mechanism", "label": "Lock-and-Mint Mechanism"}
+      {"@id": "urn:ngm:class:lock-and-mint-mechanism", "label": "Lock and Mint Mechanism"}
     ],
     "requires": [
       {"@id": "urn:ngm:class:validator-node", "label": "Validator Node"},

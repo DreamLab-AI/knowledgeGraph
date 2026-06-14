@@ -647,7 +647,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol",
-        "label": "Bitcoin"
+        "label": "Bitcoin Proof-of-Work Protocol"
       },
       {
         "@id": "urn:ngm:class:lightning-network",
@@ -779,7 +779,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol",
-        "label": "Bitcoin"
+        "label": "Bitcoin Proof-of-Work Protocol"
       },
       {
         "@id": "urn:ngm:class:micro-strategy",
@@ -805,7 +805,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:self-custody",
-        "label": "Self Custody"
+        "label": "Self-Custody"
       },
       {
         "@id": "urn:ngm:class:separation-of-money-and-state",

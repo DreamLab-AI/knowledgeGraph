@@ -436,7 +436,7 @@ public:: true
     },
     {
       "@id": "urn:ngm:class:dynamical-systems",
-      "label": "Dynamical System"
+      "label": "Dynamical Systems"
     }
   ],
   "relations": {
@@ -507,7 +507,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:sigma-algebra",
-        "label": "Sigma Algebra"
+        "label": "Sigma-Algebra"
       },
       {
         "@id": "urn:ngm:class:stochastic-integration",
@@ -627,7 +627,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning"
+        "label": "Machine Learning Discipline"
       }
     ],
     "supports": [

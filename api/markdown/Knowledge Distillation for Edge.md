@@ -59,7 +59,7 @@ public:: true
     "uses": [
       {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
       {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"},
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"}
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:tiny-ml", "label": "TinyML"},

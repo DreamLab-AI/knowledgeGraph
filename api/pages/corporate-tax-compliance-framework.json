@@ -20,7 +20,7 @@
     "requires": [
       {
         "id": "urn:ngm:class:uk-company-financial-filing-obligations",
-        "label": "Accounts"
+        "label": "UK Company Financial Filing Obligations"
       },
       {
         "id": "urn:ngm:class:regulatory-compliance",

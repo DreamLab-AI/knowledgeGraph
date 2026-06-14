@@ -444,7 +444,7 @@ public:: true
     },
     {
       "@id": "urn:ngm:class:computer-vision",
-      "label": "computer-vision"
+      "label": "Computer Vision"
     }
   ],
   "relations": {
@@ -471,7 +471,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:structure-from-motion",
-        "label": "Structure from Motion"
+        "label": "Structure-from-Motion"
       },
       {
         "@id": "urn:ngm:class:volume-rendering",
@@ -603,7 +603,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:reality-capture",
-        "label": "RealityCapture"
+        "label": "Reality Capture"
       },
       {
         "@id": "urn:ngm:class:3-d-gaussian-splatting",
@@ -633,7 +633,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:human-pose-slam-capture-system",
-        "label": "Human tracking and SLAM capture"
+        "label": "Human Pose SLAM Capture System"
       },
       {
         "@id": "urn:ngm:class:image-segmentation",

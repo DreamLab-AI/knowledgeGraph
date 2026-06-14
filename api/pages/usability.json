@@ -103,7 +103,7 @@
       },
       {
         "id": "urn:ngm:class:human-robot-interaction",
-        "label": "Human-Robot Interaction"
+        "label": "Human Robot Interaction"
       },
       {
         "id": "urn:ngm:class:spatial-user-interface",
@@ -127,7 +127,7 @@
     "supports": [
       {
         "id": "urn:ngm:class:human-robot-interaction",
-        "label": "Human-Robot Interaction"
+        "label": "Human Robot Interaction"
       },
       {
         "id": "urn:ngm:class:interface-design",
@@ -151,7 +151,7 @@
       },
       {
         "id": "urn:ngm:class:human-computer-interaction",
-        "label": "Human-Computer Interaction"
+        "label": "Human Computer Interaction"
       }
     ],
     "relatedTo": [

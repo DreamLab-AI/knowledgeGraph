@@ -23,7 +23,7 @@ public:: true
   "definition": "Benchmarks are standardised tasks, datasets, or workloads used to measure and compare the capabilities or performance of systems, models, or components under controlled, reproducible conditions. In artificial intelligence they encompass curated evaluation suites that probe language understanding, mathematical reasoning, coding, and multimodal perception to produce comparable scores across model generations and research groups. In computing, robotics, and hardware engineering, benchmarks quantify throughput, latency, accuracy, and energy efficiency against fixed reference workloads. Benchmark results are published via leaderboards and model cards to support reproducible science, informed procurement, and regulatory accountability.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:evaluation-benchmarks-and-leaderboards", "label": "Evaluation Benchmarks and Leaderboards"}],
+  "subClassOf": [{"@id": "urn:ngm:class:evaluation-benchmarks-and-leaderboards", "label": "Evaluation benchmarks and leaderboards"}],
   "relations": {
     "uses": [
       {"@id": "urn:ngm:class:evaluation-metric", "label": "Evaluation Metric"},

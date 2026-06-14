@@ -34,7 +34,7 @@ public:: true
     ],
     "uses": [
       {"@id": "urn:ngm:class:cryptocurrency", "label": "Cryptocurrency"},
-      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self-Sovereign Identity"}
+      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self Sovereign Identity"}
     ],
     "contrastsWith": [
       {"@id": "urn:ngm:class:central-bank-digital-currency-cbdc", "label": "Central Bank Digital Currency (CBDC)"}

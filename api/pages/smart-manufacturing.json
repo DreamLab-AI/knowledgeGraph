@@ -55,7 +55,7 @@
       },
       {
         "id": "urn:ngm:class:industrial-automation",
-        "label": "Industrial Automation"
+        "label": "IndustrialAutomation"
       },
       {
         "id": "urn:ngm:class:supply-chain-management",
@@ -109,7 +109,7 @@
       },
       {
         "id": "urn:ngm:class:opc-ua",
-        "label": "OPC-UA"
+        "label": "OPC UA"
       }
     ],
     "supports": [

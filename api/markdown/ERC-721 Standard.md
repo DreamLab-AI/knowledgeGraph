@@ -29,11 +29,11 @@ public:: true
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:nft", "label": "NFT"},
-      {"@id": "urn:ngm:class:ethereum-smart-contract-platform", "label": "Ethereum"},
+      {"@id": "urn:ngm:class:ethereum-smart-contract-platform", "label": "Ethereum Smart Contract Platform"},
       {"@id": "urn:ngm:class:erc-1155", "label": "ERC-1155"}
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:erc20-standard", "label": "ERC-20 Standard"}
+      {"@id": "urn:ngm:class:erc20-standard", "label": "ERC20 Standard"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:ipfs", "label": "IPFS"}

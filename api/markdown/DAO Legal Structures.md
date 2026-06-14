@@ -849,7 +849,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:multi-signature-wallet",
-        "label": "Multi-Signature Wallets"
+        "label": "Multi-Signature Wallet"
       },
       {
         "@id": "urn:ngm:class:smart-contract-governance",
@@ -861,7 +861,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:on-chain-voting",
-        "label": "On-Chain Voting"
+        "label": "On Chain Voting"
       },
       {
         "@id": "urn:ngm:class:quadratic-voting",
@@ -883,7 +883,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:decentralised-autonomous-organisation",
-        "label": "Decentralised Autonomous Organisations"
+        "label": "Decentralised Autonomous Organisation"
       },
       {
         "@id": "urn:ngm:class:howey-test",

@@ -64,7 +64,7 @@ elevatedFrom:: [[Project BroBots]]
   "relations": {
     "uses": [
       {"@id": "urn:ngm:class:agents", "label": "Agents"},
-      {"@id": "urn:ngm:class:decentralised-agent-coordination-initiative", "label": "Agentic Alliance"},
+      {"@id": "urn:ngm:class:decentralised-agent-coordination-initiative", "label": "Decentralised Agent Coordination Initiative"},
       {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
     ],
     "enables": [
@@ -75,7 +75,7 @@ elevatedFrom:: [[Project BroBots]]
       {"@id": "urn:ngm:class:death-of-the-internet", "label": "Death of the Internet"}
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:active-research-projects-registry", "label": "Projects"}
+      {"@id": "urn:ngm:class:active-research-projects-registry", "label": "Active Research Projects Registry"}
     ]
   },
   "quality": 0.35,

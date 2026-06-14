@@ -79,7 +79,7 @@ public:: true
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:optimization-algorithm", "label": "Optimization Algorithm"},
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"},
       {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"},
       {"@id": "urn:ngm:class:mixed-precision-training", "label": "Mixed Precision Training"},
       {"@id": "urn:ngm:class:distributed-training", "label": "Distributed Training"},

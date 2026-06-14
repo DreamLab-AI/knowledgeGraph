@@ -27,7 +27,7 @@ elevatedFrom:: [[Mistral and Mixtral]]
   "subClassOf": [{"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:mixture-of-experts-architecture", "label": "Mixture of Experts"},
+      {"@id": "urn:ngm:class:mixture-of-experts-architecture", "label": "Mixture-of-Experts Architecture"},
       {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"},
       {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"},
       {"@id": "urn:ngm:class:context-window", "label": "Context Window"}
@@ -39,7 +39,7 @@ elevatedFrom:: [[Mistral and Mixtral]]
       {"@id": "urn:ngm:class:instruction-tuning", "label": "Instruction Tuning"}
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:constitutional-ai-training-methodology-language-model-family", "label": "Anthropic Claude"},
+      {"@id": "urn:ngm:class:constitutional-ai-training-methodology-language-model-family", "label": "Constitutional AI Language Model Family"},
       {"@id": "urn:ngm:class:gpt", "label": "GPT"}
     ]
   },

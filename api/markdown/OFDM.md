@@ -23,7 +23,7 @@ public:: true
   "definition": "OFDM (Orthogonal Frequency-Division Multiplexing) is a digital modulation scheme that transmits data in parallel over many closely spaced, mutually orthogonal subcarriers. Splitting a high-rate stream into many low-rate subcarriers makes the signal robust to multipath fading and allows simple frequency-domain equalisation. It is the physical-layer foundation of Wi-Fi, LTE, 5G, DVB, and many other modern broadband systems.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:infra-network-and-comms", "label": "Infrastructure Network and Comms"}],
+  "subClassOf": [{"@id": "urn:ngm:class:infra-network-and-comms", "label": "Network and Communication"}],
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:physical-layer", "label": "Physical Layer"}

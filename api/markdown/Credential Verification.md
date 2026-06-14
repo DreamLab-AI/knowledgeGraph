@@ -65,7 +65,7 @@ public:: true
     "relatedTo": [
       {"@id": "urn:ngm:class:decentralized-identity", "label": "Decentralized Identity"},
       {"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"},
-      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self-Sovereign Identity"},
+      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self Sovereign Identity"},
       {"@id": "urn:ngm:class:know-your-customer", "label": "Know Your Customer"},
       {"@id": "urn:ngm:class:mobile-driving-licence", "label": "Mobile Driving Licence"}
     ],

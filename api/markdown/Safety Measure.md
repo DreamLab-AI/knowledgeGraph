@@ -58,7 +58,7 @@ public:: true
   ],
   "relations": {
     "bridgesTo": [
-      {"@id": "urn:ngm:class:ai-governance", "label": "Ai Governance"}
+      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"}
     ],
     "requires": [
       {"@id": "urn:ngm:class:risk-assessment", "label": "Risk Assessment"},

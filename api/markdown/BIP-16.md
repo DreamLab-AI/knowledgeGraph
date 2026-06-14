@@ -26,7 +26,7 @@ public:: true
   "subClassOf": [{"@id": "urn:ngm:class:technical-standard", "label": "Technical Standard"}],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:multi-sig-governance", "label": "Multi-Sig Governance"}
+      {"@id": "urn:ngm:class:multi-sig-governance", "label": "Multi Sig Governance"}
     ]
   },
   "quality": 0.72

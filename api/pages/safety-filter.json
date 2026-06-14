@@ -30,7 +30,7 @@
     "relatedTo": [
       {
         "id": "urn:ngm:class:ai-companions",
-        "label": "AI Companions"
+        "label": "AI companions"
       },
       {
         "id": "urn:ngm:class:proprietary-image-generation",

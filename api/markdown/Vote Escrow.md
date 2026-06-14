@@ -25,7 +25,7 @@ public:: true
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:bc-defi-and-economics", "label": "DeFi and Economics"}],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:tokenomics-governance", "label": "Tokenomics Governance"}, {"@id": "urn:ngm:class:on-chain-voting", "label": "On-Chain Voting"}]
+    "relatedTo": [{"@id": "urn:ngm:class:tokenomics-governance", "label": "Tokenomics Governance"}, {"@id": "urn:ngm:class:on-chain-voting", "label": "On Chain Voting"}]
   },
   "quality": 0.72
 }

@@ -67,14 +67,14 @@ public:: true
     ],
     "enables": [
       {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
-      {"@id": "urn:ngm:class:semantic-web-linked-data-standard", "label": "Semantic Web"}
+      {"@id": "urn:ngm:class:semantic-web-linked-data-standard", "label": "Semantic Web Linked Data Standard"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:semantic-web-linked-data-standard-standards", "label": "Semantic Web Standards"}
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse Domain"},
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain Domain"}
+      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"},
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
     ]
   },
   "provenance": {

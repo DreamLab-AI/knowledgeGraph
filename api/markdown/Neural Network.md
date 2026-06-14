@@ -89,7 +89,7 @@ alias:: Neural Networks, NeuralNetwork, neural network, neural networks
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-model-architecture",
-      "label": "Ai Model Architecture"
+      "label": "AI Model Architecture"
     }
   ],
   "relations": {

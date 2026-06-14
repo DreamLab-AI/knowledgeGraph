@@ -867,7 +867,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:neural-network-text-tokenisation",
-        "label": "Tokenisation"
+        "label": "Neural Network Text Tokenisation"
       },
       {
         "@id": "urn:ngm:class:zero-knowledge-proof",

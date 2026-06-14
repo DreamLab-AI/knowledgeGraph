@@ -53,7 +53,7 @@ public:: true
     },
     {
       "@id": "urn:ngm:class:neural-network-text-tokenisation",
-      "label": "Tokenisation"
+      "label": "Neural Network Text Tokenisation"
     }
   ],
   "relations": {
@@ -69,7 +69,7 @@ public:: true
       {"@id": "urn:ngm:class:word-piece", "label": "WordPiece"}
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:neural-network-text-tokenisation", "label": "Tokenisation"}
+      {"@id": "urn:ngm:class:neural-network-text-tokenisation", "label": "Neural Network Text Tokenisation"}
     ]
   },
   "quality": 0.7,

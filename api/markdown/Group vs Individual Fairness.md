@@ -90,7 +90,7 @@ public:: true
       {"@id": "urn:ngm:class:fairness-oecd", "label": "Fairness (OECD)"},
       {"@id": "urn:ngm:class:disparate-impact", "label": "Disparate Impact"},
       {"@id": "urn:ngm:class:algorithmic-bias", "label": "Algorithmic Bias"},
-      {"@id": "urn:ngm:class:digital-technology-access-equity", "label": "Equity"}
+      {"@id": "urn:ngm:class:digital-technology-access-equity", "label": "Digital Technology Access Equity"}
     ],
     "contrastsWith": [
       {"@id": "urn:ngm:class:fairness-accuracy-tradeoffs", "label": "Fairness Accuracy Tradeoffs"}

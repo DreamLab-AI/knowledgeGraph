@@ -623,7 +623,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:game-engine",
-        "label": "Game Engines"
+        "label": "Game Engine"
       },
       {
         "@id": "urn:ngm:class:medical-imaging",
@@ -665,7 +665,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:apple-inc-technology-corporation",
-        "label": "Apple"
+        "label": "Apple Inc Technology Corporation"
       }
     ]
   },

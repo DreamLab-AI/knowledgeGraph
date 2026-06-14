@@ -17,7 +17,7 @@
     },
     {
       "id": "urn:ngm:class:human-computer-interaction",
-      "label": "Human-Computer Interaction"
+      "label": "Human Computer Interaction"
     }
   ],
   "entityType": "Class",
@@ -69,7 +69,7 @@
       },
       {
         "id": "urn:ngm:class:convolutional-neural-network",
-        "label": "Convolutional Neural Networks"
+        "label": "Convolutional Neural Network"
       },
       {
         "id": "urn:ngm:class:image-features",
@@ -200,7 +200,7 @@
       },
       {
         "id": "urn:ngm:class:autonomous-vehicle",
-        "label": "Autonomous Vehicles"
+        "label": "Autonomous Vehicle"
       },
       {
         "id": "urn:ngm:class:clinical-gait-analysis",

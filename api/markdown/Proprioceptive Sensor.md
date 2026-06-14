@@ -328,11 +328,11 @@ public:: true
     },
     {
       "@id": "urn:ngm:class:robo-actuation-and-control",
-      "label": "Robo Actuation And Control"
+      "label": "Actuation and Control"
     },
     {
       "@id": "urn:ngm:class:robo-actuation-and-control",
-      "label": "Robo Actuation And Control"
+      "label": "Actuation and Control"
     }
   ],
   "relations": {
@@ -363,7 +363,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:force-torque-sensor",
-        "label": "Force-Torque Sensor"
+        "label": "Force Torque Sensor"
       },
       {
         "@id": "urn:ngm:class:tactile-sensor",
@@ -381,7 +381,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:real-time-operating-system",
-        "label": "Real Time Operating System"
+        "label": "Real-Time Operating System"
       },
       {
         "@id": "urn:ngm:class:sensor-calibration",
@@ -393,7 +393,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:analog-to-digital-converter",
-        "label": "Analog to Digital Converter"
+        "label": "Analog To Digital Converter"
       }
     ],
     "enables": [
@@ -407,7 +407,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:closed-loop-control",
-        "label": "Closed Loop Control"
+        "label": "Closed-Loop Control"
       },
       {
         "@id": "urn:ngm:class:collision-detection",

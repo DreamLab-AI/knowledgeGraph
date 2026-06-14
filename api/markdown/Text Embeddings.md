@@ -26,7 +26,7 @@ public:: true
   "subClassOf": [{"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:retrieval-augmented-generation-rag", "label": "Retrieval-Augmented Generation (RAG)"},
+      {"@id": "urn:ngm:class:retrieval-augmented-generation-rag", "label": "Retrieval Augmented Generation - RAG"},
       {"@id": "urn:ngm:class:semantic-search", "label": "Semantic Search"}
     ]
   },

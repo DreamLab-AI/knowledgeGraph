@@ -613,7 +613,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:constitutional-ai-training-methodology",
-        "label": "Constitutional AI"
+        "label": "Constitutional AI Training Methodology"
       }
     ],
     "supports": [
@@ -635,7 +635,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:constitutional-ai-training-methodology",
-        "label": "Constitutional AI"
+        "label": "Constitutional AI Training Methodology"
       }
     ],
     "standardizedBy": [

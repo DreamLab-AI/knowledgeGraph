@@ -67,7 +67,7 @@ public:: true
     "enables": [
       {
         "@id": "urn:ngm:class:real-time-vfx",
-        "label": "Real Time VFX"
+        "label": "Real-Time VFX"
       }
     ]
   },

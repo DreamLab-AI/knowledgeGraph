@@ -39,7 +39,7 @@ public:: true
   "relations": {
     "uses": [
       {"@id": "urn:ngm:class:feedback-control", "label": "Feedback Control"},
-      {"@id": "urn:ngm:class:pid-controller", "label": "PID Controller"},
+      {"@id": "urn:ngm:class:pid-controller", "label": "Pid Controller"},
       {"@id": "urn:ngm:class:state-space-model", "label": "State Space Model"},
       {"@id": "urn:ngm:class:control-law", "label": "Control Law"}
     ],
@@ -74,7 +74,7 @@ public:: true
       {"@id": "urn:ngm:class:real-time-computing", "label": "Real-Time Computing"}
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:open-loop-control", "label": "Open Loop Control"},
+      {"@id": "urn:ngm:class:open-loop-control", "label": "Open-Loop Control"},
       {"@id": "urn:ngm:class:manual-control", "label": "Manual Control"}
     ],
     "bridgesTo": [

@@ -307,7 +307,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:nostr-protocol",
-        "label": "Nostr protocol"
+        "label": "Nostr Protocol"
       },
       {
         "@id": "urn:ngm:class:smart-contract",
@@ -425,7 +425,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:nostr-protocol",
-        "label": "Nostr protocol"
+        "label": "Nostr Protocol"
       },
       {
         "@id": "urn:ngm:class:stable-coins",

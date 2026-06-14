@@ -96,15 +96,15 @@ elevatedFrom:: [[State of the art in AI]]
       {"@id": "urn:ngm:class:hardware-and-edge", "label": "Hardware and Edge"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:ai-capability-temporal-horizon-framework", "label": "Soon-Next-Later (AI futurology)"},
+      {"@id": "urn:ngm:class:ai-capability-temporal-horizon-framework", "label": "AI Capability Temporal Horizon Framework"},
       {"@id": "urn:ngm:class:trust-and-safety", "label": "Trust and Safety"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:adoption-of-convergent-technologies", "label": "Adoption of Convergent Technologies"}
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:ai-governance-law-and-privacy", "label": "Politics, Law, Privacy"},
-      {"@id": "urn:ngm:class:knowledge-artefact-update-cycle", "label": "Update Cycle"}
+      {"@id": "urn:ngm:class:ai-governance-law-and-privacy", "label": "AI Governance Law and Privacy"},
+      {"@id": "urn:ngm:class:knowledge-artefact-update-cycle", "label": "Knowledge Artefact Update Cycle"}
     ]
   },
   "provenance": {

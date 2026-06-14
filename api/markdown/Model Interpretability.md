@@ -126,7 +126,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:post-hoc-explanation",
-        "label": "Post-Hoc Explanation"
+        "label": "Post Hoc Explanation"
       },
       {
         "@id": "urn:ngm:class:surrogate-model",
@@ -136,7 +136,7 @@ public:: true
     "requires": [
       {
         "@id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning"
+        "label": "Machine Learning Discipline"
       },
       {
         "@id": "urn:ngm:class:predictive-model",

@@ -47,7 +47,7 @@ public:: true
   "maturity": "established",
   "subClassOf": {
     "@id": "urn:ngm:class:machine-learning-discipline",
-    "label": "Machine Learning"
+    "label": "Machine Learning Discipline"
   },
   "relations": {
     "hasPart": [

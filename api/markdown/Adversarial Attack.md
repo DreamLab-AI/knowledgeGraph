@@ -56,7 +56,7 @@ public:: true
   "qualityScore": 0.72,
   "subClassOf": {
     "@id": "urn:ngm:class:ai-governance-and-ethics",
-    "label": "Ai Governance And Ethics"
+    "label": "AI Governance and Ethics"
   },
   "sameAs": [
     {

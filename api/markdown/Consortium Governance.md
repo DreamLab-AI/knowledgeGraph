@@ -23,9 +23,9 @@ public:: true
   "definition": "Consortium governance is the model by which a defined group of organisations jointly operates and controls a permissioned blockchain or shared infrastructure. Membership, validator rights, and decision-making authority are restricted to vetted participants who agree to a governing charter. It balances the decentralisation benefits of distributed ledgers with the accountability and access control enterprises require.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:bc-governance-and-regulation", "label": "Blockchain Governance and Regulation"}],
+  "subClassOf": [{"@id": "urn:ngm:class:bc-governance-and-regulation", "label": "Governance and Regulation"}],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:enterprise-smart-contracts", "label": "Enterprise Smart Contracts"}, {"@id": "urn:ngm:class:blockchain-as-a-service", "label": "Blockchain as a Service"}]
+    "relatedTo": [{"@id": "urn:ngm:class:enterprise-smart-contracts", "label": "Enterprise Smart Contracts"}, {"@id": "urn:ngm:class:blockchain-as-a-service", "label": "Blockchain As A Service"}]
   },
   "quality": 0.72
 }

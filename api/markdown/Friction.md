@@ -133,7 +133,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:model-based-control",
-        "label": "Model-based Control"
+        "label": "Model Based Control"
       }
     ],
     "partOf": [

@@ -76,7 +76,7 @@ public:: true
       {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"}
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:state-space-sequence-models", "label": "State Space and Other Approaches"}
+      {"@id": "urn:ngm:class:state-space-sequence-models", "label": "State Space Sequence Models"}
     ]
   },
   "quality": 0.8,

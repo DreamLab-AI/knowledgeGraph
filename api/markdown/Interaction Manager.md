@@ -23,7 +23,7 @@ public:: true
   "definition": "An interaction manager is the software component that coordinates the flow of communication between a user and an intelligent virtual entity, governing turn-taking, context tracking, and the selection of responses or behaviours. It mediates between perception, dialogue state, and action so that an agent's experience layer feels coherent and responsive. It is the control hub that converts understood input into appropriately timed and styled output.",
   "domain": "metaverse",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:sc-interaction", "label": "Supply Chain Interaction"}],
+  "subClassOf": [{"@id": "urn:ngm:class:sc-interaction", "label": "Interaction Technology"}],
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:intelligent-virtual-entity", "label": "Intelligent Virtual Entity"},

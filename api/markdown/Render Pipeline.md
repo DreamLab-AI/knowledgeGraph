@@ -54,7 +54,7 @@ public:: true
       {"@id": "urn:ngm:class:compute-shader", "label": "Compute Shader"},
       {"@id": "urn:ngm:class:rasteriser", "label": "Rasteriser"},
       {"@id": "urn:ngm:class:depth-buffer", "label": "Depth Buffer"},
-      {"@id": "urn:ngm:class:post-processing", "label": "Post-Processing"}
+      {"@id": "urn:ngm:class:post-processing", "label": "Post Processing"}
     ],
     "requires": [
       {"@id": "urn:ngm:class:gpu", "label": "GPU"},

@@ -71,7 +71,7 @@ public:: true
     ],
     "requires": [
       {"@id": "urn:ngm:class:network-security", "label": "Network Security"},
-      {"@id": "urn:ngm:class:quality-of-service", "label": "Quality of Service"},
+      {"@id": "urn:ngm:class:quality-of-service", "label": "Quality Of Service"},
       {"@id": "urn:ngm:class:traffic-engineering", "label": "Traffic Engineering"}
     ],
     "supports": [

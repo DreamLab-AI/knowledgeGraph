@@ -25,7 +25,7 @@ public:: true
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:control-theory", "label": "Control Theory"}],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:position-control", "label": "Position Control"}, {"@id": "urn:ngm:class:force-control", "label": "Force Control"}]
+    "relatedTo": [{"@id": "urn:ngm:class:position-control", "label": "PositionControl"}, {"@id": "urn:ngm:class:force-control", "label": "Force Control"}]
   },
   "quality": 0.72
 }

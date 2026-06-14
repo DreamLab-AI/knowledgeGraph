@@ -41,7 +41,7 @@ alias:: Single-Use Seal, Single-Use Seals, Single Use Seal
     ],
     "dependsOn": [
       {"@id": "urn:ngm:class:proof-of-publication", "label": "Proof of Publication"},
-      {"@id": "urn:ngm:class:double-spending", "label": "Double-Spending"}
+      {"@id": "urn:ngm:class:double-spending", "label": "Double Spending"}
     ],
     "contrastsWith": [
       {"@id": "urn:ngm:class:on-chain-validation", "label": "On-Chain Validation"}

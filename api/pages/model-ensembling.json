@@ -37,14 +37,14 @@
       },
       {
         "id": "urn:ngm:class:mixture-of-experts-architecture",
-        "label": "Mixture of Experts"
+        "label": "Mixture-of-Experts Architecture"
       }
     ],
     "bridgesTo": [],
     "uses": [
       {
         "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning"
+        "label": "Machine Learning Discipline"
       },
       {
         "id": "urn:ngm:class:deep-learning",

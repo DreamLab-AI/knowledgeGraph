@@ -71,7 +71,7 @@ elevatedFrom:: [[Conspiracies]]
   ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:ai-governance-law-and-privacy", "label": "Politics, Law, Privacy"},
+      {"@id": "urn:ngm:class:ai-governance-law-and-privacy", "label": "AI Governance Law and Privacy"},
       {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
     ],
     "contrastsWith": [

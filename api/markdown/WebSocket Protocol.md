@@ -45,7 +45,7 @@ public:: true
     "supports": [
       {"@id": "urn:ngm:class:asynchronous-communication", "label": "Asynchronous Communication"},
       {"@id": "urn:ngm:class:event-driven-architecture", "label": "Event Driven Architecture"},
-      {"@id": "urn:ngm:class:publish-subscribe-pattern", "label": "Publish Subscribe Pattern"}
+      {"@id": "urn:ngm:class:publish-subscribe-pattern", "label": "Publish-Subscribe Pattern"}
     ],
     "implements": [
       {"@id": "urn:ngm:class:rfc-6455", "label": "RFC 6455"},

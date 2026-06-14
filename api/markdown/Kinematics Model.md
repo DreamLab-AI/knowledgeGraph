@@ -399,7 +399,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:visual-servoing",
-        "label": "Visual Servoing"
+        "label": "VisualServoing"
       },
       {
         "@id": "urn:ngm:class:force-control",
@@ -525,7 +525,7 @@ public:: true
     "standardizedBy": [
       {
         "@id": "urn:ngm:class:ieee-robotics-and-automation-society",
-        "label": "IEEE Robotics and Automation Society"
+        "label": "IEEE Robotics And Automation Society"
       },
       {
         "@id": "urn:ngm:class:ros-industrial-consortium",

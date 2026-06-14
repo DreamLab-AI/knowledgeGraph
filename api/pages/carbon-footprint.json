@@ -30,7 +30,7 @@
     "relatedTo": [
       {
         "id": "urn:ngm:class:sustainability",
-        "label": "Sustainability Domain"
+        "label": "Sustainability"
       },
       {
         "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-environmental-issues",

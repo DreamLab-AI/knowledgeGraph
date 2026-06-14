@@ -411,7 +411,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:mixture-of-experts-architecture",
-        "label": "Mixture of Experts"
+        "label": "Mixture-of-Experts Architecture"
       },
       {
         "@id": "urn:ngm:class:multi-head-attention",
@@ -577,7 +577,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:large-scale-pretrained-foundation-model",
-        "label": "Foundation Models"
+        "label": "Large-Scale Pretrained Foundation Model"
       },
       {
         "@id": "urn:ngm:class:responsible-ai",
@@ -621,7 +621,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
-        "label": "EU AI Act"
+        "label": "EU AI Act Regulatory Instrument"
       },
       {
         "@id": "urn:ngm:class:responsible-ai",

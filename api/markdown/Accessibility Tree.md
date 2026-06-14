@@ -23,7 +23,7 @@ public:: true
   "definition": "The Accessibility Tree is a structured representation of a user interface that exposes each element's role, name, state, and value to assistive technologies and automation agents. Browsers derive it from the DOM, filtering out presentational nodes and computing accessible names so that screen readers and programmatic clients can understand and operate the page. It provides a stable semantic model that AI browser agents use to locate and interact with controls without parsing raw pixels.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:human-computer-interaction", "label": "Human-Computer Interaction"}],
+  "subClassOf": [{"@id": "urn:ngm:class:human-computer-interaction", "label": "Human Computer Interaction"}],
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:computer-use-and-browser-agents", "label": "Computer Use and Browser Agents"}

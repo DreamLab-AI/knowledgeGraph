@@ -23,7 +23,7 @@ public:: true
   "definition": "Snapshot Hub is the backend service of the Snapshot off-chain governance platform that stores proposals, collects signed votes, and computes results using token balances read at a chosen block height. Votes are signed messages that incur no gas, while the hub indexes and tallies them according to a configurable voting strategy. It lets DAOs run gasless, verifiable governance while final execution remains optional and off-chain.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:bc-network-component", "label": "Blockchain Network Component"}],
+  "subClassOf": [{"@id": "urn:ngm:class:bc-network-component", "label": "Network Component"}],
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:snapshot-voting", "label": "Snapshot Voting"},

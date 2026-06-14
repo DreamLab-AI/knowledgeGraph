@@ -54,7 +54,7 @@ elevatedFrom:: [[debug linked node]]
       {"@id": "urn:ngm:class:software-testing", "label": "Software Testing"},
       {"@id": "urn:ngm:class:node", "label": "Node"},
       {"@id": "urn:ngm:class:linked-data", "label": "Linked Data"},
-      {"@id": "urn:ngm:class:distributed-logseq-knowledge-network", "label": "lognet"}
+      {"@id": "urn:ngm:class:distributed-logseq-knowledge-network", "label": "Distributed Logseq Knowledge Network"}
     ],
     "supports": [
       {"@id": "urn:ngm:class:knowledge-graph-construction", "label": "Knowledge Graph Construction"}

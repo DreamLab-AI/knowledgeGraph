@@ -254,7 +254,7 @@ alias:: ArtificialIntelligence
       },
       {
         "@id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning"
+        "label": "Machine Learning Discipline"
       },
       {
         "@id": "urn:ngm:class:natural-language-processing",
@@ -272,7 +272,7 @@ alias:: ArtificialIntelligence
       },
       {
         "@id": "urn:ngm:class:neural-network",
-        "label": "Neural Networks"
+        "label": "Neural Network"
       },
       {
         "@id": "urn:ngm:class:training-data",
@@ -282,7 +282,7 @@ alias:: ArtificialIntelligence
     "enables": [
       {
         "@id": "urn:ngm:class:autonomous-system",
-        "label": "Autonomous Systems"
+        "label": "Autonomous System"
       },
       {
         "@id": "urn:ngm:class:decision-support",

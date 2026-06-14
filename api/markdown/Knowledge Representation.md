@@ -68,7 +68,7 @@ public:: true
   "relations": {
     "uses": [
       {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
-      {"@id": "urn:ngm:class:semantic-web-linked-data-standard", "label": "Semantic Web"},
+      {"@id": "urn:ngm:class:semantic-web-linked-data-standard", "label": "Semantic Web Linked Data Standard"},
       {"@id": "urn:ngm:class:ontology", "label": "Ontology"},
       {"@id": "urn:ngm:class:description-logic", "label": "Description Logic"},
       {"@id": "urn:ngm:class:first-order-logic", "label": "First-Order Logic"},

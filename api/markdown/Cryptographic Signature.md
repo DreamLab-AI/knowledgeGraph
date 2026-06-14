@@ -81,7 +81,7 @@ public:: true
       {"@id": "urn:ngm:class:symmetric-encryption", "label": "Symmetric Encryption"}
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self-Sovereign Identity"},
+      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self Sovereign Identity"},
       {"@id": "urn:ngm:class:ai-model-provenance", "label": "AI Model Provenance"},
       {"@id": "urn:ngm:class:supply-chain-attestation", "label": "Supply Chain Attestation"}
     ],

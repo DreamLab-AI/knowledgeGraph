@@ -72,13 +72,13 @@ public:: true
   "qualityScore": 0.7,
   "subClassOf": {
     "@id": "urn:ngm:class:blockchain",
-    "label": "Blockchain Domain"
+    "label": "Blockchain"
   },
   "relations": {
     "requires": [
       {
         "@id": "urn:ngm:class:ethereum-smart-contract-platform",
-        "label": "Ethereum"
+        "label": "Ethereum Smart Contract Platform"
       },
       {
         "@id": "urn:ngm:class:rollup",
@@ -100,11 +100,11 @@ public:: true
     "enables": [
       {
         "@id": "urn:ngm:class:decentralised-finance",
-        "label": "Decentralised Finance Domain"
+        "label": "Decentralised Finance"
       },
       {
         "@id": "urn:ngm:class:layer-2-scaling",
-        "label": "Layer-2 Scaling"
+        "label": "Layer 2 Scaling"
       },
       {
         "@id": "urn:ngm:class:superchain",

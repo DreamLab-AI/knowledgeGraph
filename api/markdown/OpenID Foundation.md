@@ -62,7 +62,7 @@ public:: true
     "relatedTo": [
       {"@id": "urn:ngm:class:identity-federation", "label": "Identity Federation"},
       {"@id": "urn:ngm:class:authentication-standards", "label": "Authentication Standards"},
-      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self-Sovereign Identity"},
+      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self Sovereign Identity"},
       {"@id": "urn:ngm:class:decentralised-identity", "label": "Decentralised Identity"}
     ],
     "contrastsWith": [

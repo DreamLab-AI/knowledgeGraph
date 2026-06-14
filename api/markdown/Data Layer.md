@@ -393,7 +393,7 @@ alias:: DataLayer
     },
     {
       "@id": "urn:ngm:class:infra-network-and-comms",
-      "label": "Infra Network And Comms"
+      "label": "Network and Communication"
     }
   ],
   "relations": {
@@ -506,7 +506,7 @@ alias:: DataLayer
       },
       {
         "@id": "urn:ngm:class:retrieval-augmented-generation",
-        "label": "Retrieval Augmented Generation"
+        "label": "Retrieval-Augmented Generation"
       },
       {
         "@id": "urn:ngm:class:rollup-scaling",

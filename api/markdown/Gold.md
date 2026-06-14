@@ -320,7 +320,7 @@ public:: true
     },
     {
       "@id": "urn:ngm:class:bc-token-and-asset",
-      "label": "BC Token And Asset"
+      "label": "Token and Asset"
     },
     {
       "@id": "urn:ngm:class:hard-money",
@@ -503,7 +503,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol",
-        "label": "Bitcoin"
+        "label": "Bitcoin Proof-of-Work Protocol"
       },
       {
         "@id": "urn:ngm:class:cbdcs",

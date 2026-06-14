@@ -59,7 +59,7 @@ public:: true
       {"@id": "urn:ngm:class:robot-control", "label": "Robot Control"},
       {"@id": "urn:ngm:class:trajectory-optimisation", "label": "Trajectory Optimisation"},
       {"@id": "urn:ngm:class:robot-simulation", "label": "Robot Simulation"},
-      {"@id": "urn:ngm:class:whole-body-control", "label": "Whole-Body Control"}
+      {"@id": "urn:ngm:class:whole-body-control", "label": "Whole Body Control"}
     ],
     "hasPart": [
       {"@id": "urn:ngm:class:forward-dynamics", "label": "Forward Dynamics"},
@@ -74,7 +74,7 @@ public:: true
     ],
     "supports": [
       {"@id": "urn:ngm:class:legged-locomotion", "label": "Legged Locomotion"},
-      {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human-Robot Interaction"},
+      {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human Robot Interaction"},
       {"@id": "urn:ngm:class:compliant-actuation", "label": "Compliant Actuation"}
     ],
     "relatedTo": [

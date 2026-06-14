@@ -120,7 +120,7 @@
       },
       {
         "id": "urn:ngm:class:fine-tuning",
-        "label": "Fine-Tuning"
+        "label": "Fine Tuning"
       }
     ],
     "supports": [],
@@ -133,7 +133,7 @@
       },
       {
         "id": "urn:ngm:class:deepfakes-and-fraudulent-content",
-        "label": "Deepfakes and Fraudulent Content"
+        "label": "Deepfakes and fraudulent content"
       }
     ]
   },

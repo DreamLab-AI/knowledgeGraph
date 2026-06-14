@@ -107,7 +107,7 @@ public:: true
     "enables": [
       {
         "@id": "urn:ngm:class:digital-twin",
-        "label": "Digital Twins"
+        "label": "Digital Twin"
       },
       {
         "@id": "urn:ngm:class:synthetic-media",

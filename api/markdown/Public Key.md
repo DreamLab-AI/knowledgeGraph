@@ -105,7 +105,7 @@ public:: true
     ],
     "standardizedBy": [
       {"@id": "urn:ngm:class:nist-nistir", "label": "NIST NISTIR"},
-      {"@id": "urn:ngm:class:iso-iec-23257-2021", "label": "ISO/IEC 23257:2021"},
+      {"@id": "urn:ngm:class:iso-iec-23257-2021", "label": "ISO-IEC 23257 2021"},
       {"@id": "urn:ngm:class:x-509-certificate-standard", "label": "X.509 Certificate Standard"}
     ],
     "contrastsWith": [

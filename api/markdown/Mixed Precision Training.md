@@ -71,7 +71,7 @@ alias:: Mixed-Precision Training
       {"@id": "urn:ngm:class:large-scale-distributed-training", "label": "Large-Scale Distributed Training"}
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:floating-point-arithmetic", "label": "Floating Point Arithmetic"},
+      {"@id": "urn:ngm:class:floating-point-arithmetic", "label": "Floating-Point Arithmetic"},
       {"@id": "urn:ngm:class:gradient-computation", "label": "Gradient Computation"},
       {"@id": "urn:ngm:class:automatic-differentiation", "label": "Automatic Differentiation"}
     ],

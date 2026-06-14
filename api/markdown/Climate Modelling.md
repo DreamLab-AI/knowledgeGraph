@@ -37,14 +37,14 @@ public:: true
     ],
     "uses": [
       {"@id": "urn:ngm:class:time-series-forecasting", "label": "Time Series Forecasting"},
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"},
       {"@id": "urn:ngm:class:neural-network-emulator", "label": "Neural Network Emulator"},
       {"@id": "urn:ngm:class:gpu-acceleration", "label": "GPU Acceleration"},
       {"@id": "urn:ngm:class:data-assimilation", "label": "Data Assimilation"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:carbon-footprint-measurement", "label": "Carbon Footprint Measurement"},
-      {"@id": "urn:ngm:class:sustainability-reporting", "label": "Sustainability Reporting"},
+      {"@id": "urn:ngm:class:sustainability-reporting", "label": "SustainabilityReporting"},
       {"@id": "urn:ngm:class:carbon-neutrality-planning", "label": "Carbon Neutrality Planning"},
       {"@id": "urn:ngm:class:climate-risk-assessment", "label": "Climate Risk Assessment"},
       {"@id": "urn:ngm:class:extreme-weather-prediction", "label": "Extreme Weather Prediction"}

@@ -80,7 +80,7 @@ public:: true
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:newcastle-ai-and-health-innovation", "label": "Newcastle AI & Health Innovation"},
-      {"@id": "urn:ngm:class:nicve-virtual-reality-research-centre", "label": "National Industrial Centre for Virtual Environments"},
+      {"@id": "urn:ngm:class:nicve-virtual-reality-research-centre", "label": "NICVE Virtual Reality Research Centre"},
       {"@id": "urn:ngm:class:sustainable-technology", "label": "Sustainable Technology"}
     ]
   },

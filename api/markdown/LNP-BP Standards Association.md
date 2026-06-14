@@ -25,7 +25,7 @@ public:: true
   "maturity": "emerging",
   "subClassOf": [{"@id": "urn:ngm:class:standards-body", "label": "Standards Body"}],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:rgb-and-client-side-validation", "label": "RGB and Client-Side Validation"}, {"@id": "urn:ngm:class:btc-layer-3", "label": "BTC Layer 3"}]
+    "relatedTo": [{"@id": "urn:ngm:class:rgb-and-client-side-validation", "label": "RGB and Client Side Validation"}, {"@id": "urn:ngm:class:btc-layer-3", "label": "BTC Layer 3"}]
   },
   "quality": 0.72
 }

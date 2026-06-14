@@ -55,7 +55,7 @@ elevatedFrom:: [[Some legacy Linked-JSON]]
     ],
     "uses": [
       {"@id": "urn:ngm:class:rdf", "label": "RDF"},
-      {"@id": "urn:ngm:class:semantic-web-linked-data-standard", "label": "Semantic Web"}
+      {"@id": "urn:ngm:class:semantic-web-linked-data-standard", "label": "Semantic Web Linked Data Standard"}
     ]
   },
   "quality": 0.7,

@@ -9,7 +9,7 @@
   "subClassOf": [
     {
       "id": "urn:ngm:class:machine-learning-discipline",
-      "label": "Machine Learning"
+      "label": "Machine Learning Discipline"
     }
   ],
   "entityType": "Class",
@@ -123,7 +123,7 @@
       },
       {
         "id": "urn:ngm:class:human-computer-interaction",
-        "label": "Human-Computer Interaction"
+        "label": "Human Computer Interaction"
       }
     ],
     "standardizedBy": [],

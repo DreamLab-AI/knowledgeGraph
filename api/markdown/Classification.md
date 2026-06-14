@@ -130,7 +130,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:cross-validation",
-        "label": "Cross Validation"
+        "label": "Cross-Validation"
       },
       {
         "@id": "urn:ngm:class:hyperparameter-tuning",

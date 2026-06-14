@@ -23,7 +23,7 @@ public:: true
   "definition": "Affective computing is a branch of artificial intelligence and human-computer interaction concerned with systems that can recognise, interpret, process, and simulate human emotions and affective states. It draws on psychology, cognitive science, and machine learning to endow machines with emotional intelligence, enabling them to adapt their behaviour in response to detected user affect. The field encompasses technologies for emotion detection from facial expressions, speech, physiological signals, and body language, as well as methods for generating emotionally congruent responses. Foundational work by Rosalind Picard at MIT established that recognising and appropriately responding to affect is essential for natural, effective human-machine communication.",
   "domain": "ai",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:human-computer-interaction", "label": "Human-Computer Interaction"}],
+  "subClassOf": [{"@id": "urn:ngm:class:human-computer-interaction", "label": "Human Computer Interaction"}],
   "relations": {
     "uses": [
       {"@id": "urn:ngm:class:sentiment-analysis", "label": "Sentiment Analysis"},

@@ -449,7 +449,7 @@ alias:: MixedReality
     },
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
-      "label": "SC Platform And Environment"
+      "label": "Platform and Environment"
     }
   ],
   "relations": {
@@ -480,7 +480,7 @@ alias:: MixedReality
       },
       {
         "@id": "urn:ngm:class:visual-inertial-odometry",
-        "label": "Visual Inertial Odometry"
+        "label": "Visual-Inertial Odometry"
       },
       {
         "@id": "urn:ngm:class:world-anchor",
@@ -534,7 +534,7 @@ alias:: MixedReality
       },
       {
         "@id": "urn:ngm:class:visual-inertial-odometry",
-        "label": "Visual Inertial Odometry"
+        "label": "Visual-Inertial Odometry"
       },
       {
         "@id": "urn:ngm:class:waveguide-optics",
@@ -618,7 +618,7 @@ alias:: MixedReality
       },
       {
         "@id": "urn:ngm:class:reality-virtuality-continuum",
-        "label": "Reality-Virtuality Continuum"
+        "label": "Reality Virtuality Continuum"
       }
     ],
     "uses": [
@@ -678,7 +678,7 @@ alias:: MixedReality
       },
       {
         "@id": "urn:ngm:class:ai-companions",
-        "label": "AI Companions"
+        "label": "AI companions"
       },
       {
         "@id": "urn:ngm:class:brain-computer-interfaces",
@@ -694,7 +694,7 @@ alias:: MixedReality
       },
       {
         "@id": "urn:ngm:class:semantic-spatial-web-layer",
-        "label": "Spatial Web"
+        "label": "Semantic Spatial Web Layer"
       },
       {
         "@id": "urn:ngm:class:telepresence",

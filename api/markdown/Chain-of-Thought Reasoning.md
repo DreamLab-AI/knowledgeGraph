@@ -34,7 +34,7 @@ alias:: Chain of Thought Reasoning
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-technique",
-      "label": "Ai Technique"
+      "label": "AI Technique"
     }
   ],
   "sameAs": [

@@ -214,7 +214,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:long-term-archival",
-        "label": "Long-Term Archival"
+        "label": "Long Term Archival"
       }
     ]
   },

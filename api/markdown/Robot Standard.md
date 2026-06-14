@@ -607,7 +607,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:iso-tc-299",
-        "label": "ISO TC 299"
+        "label": "ISO/TC 299"
       },
       {
         "@id": "urn:ngm:class:opc-ua-node-set",
@@ -731,11 +731,11 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:ros-industrial",
-        "label": "ROS Industrial"
+        "label": "ROS-Industrial"
       },
       {
         "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
-        "label": "EU AI Act"
+        "label": "EU AI Act Regulatory Instrument"
       }
     ],
     "supports": [
@@ -745,7 +745,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:collaborative-systems-modality-robot",
-        "label": "Collaborative Robots"
+        "label": "Collaborative Robot"
       },
       {
         "@id": "urn:ngm:class:driverless-industrial-trucks",
@@ -753,11 +753,11 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:exoskeleton",
-        "label": "Exoskeletons"
+        "label": "Exoskeleton"
       },
       {
         "@id": "urn:ngm:class:industrial-robot",
-        "label": "Industrial Robots"
+        "label": "Industrial Robot"
       },
       {
         "@id": "urn:ngm:class:modular-robots",
@@ -769,7 +769,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:surgical-robot",
-        "label": "Surgical Robots"
+        "label": "Surgical Robot"
       },
       {
         "@id": "urn:ngm:class:swarm-robotics",
@@ -795,11 +795,11 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:ieee-robotics-and-automation-society",
-        "label": "IEEE Robotics and Automation Society"
+        "label": "IEEE Robotics And Automation Society"
       },
       {
         "@id": "urn:ngm:class:iso-tc-299",
-        "label": "ISO TC 299"
+        "label": "ISO/TC 299"
       },
       {
         "@id": "urn:ngm:class:opc-foundation",

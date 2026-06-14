@@ -146,7 +146,7 @@ alias:: Force-Torque Sensor, Force/Torque Sensor
       },
       {
         "@id": "urn:ngm:class:analog-to-digital-converter",
-        "label": "Analog to Digital Converter"
+        "label": "Analog To Digital Converter"
       }
     ],
     "enables": [
@@ -198,7 +198,7 @@ alias:: Force-Torque Sensor, Force/Torque Sensor
     "supports": [
       {
         "@id": "urn:ngm:class:human-robot-interaction",
-        "label": "Human-Robot Interaction"
+        "label": "Human Robot Interaction"
       },
       {
         "@id": "urn:ngm:class:collaborative-robotics",

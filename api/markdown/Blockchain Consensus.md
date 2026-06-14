@@ -60,7 +60,7 @@ alias:: BlockchainConsensus
     ],
     "contrastsWith": [
       {"@id": "urn:ngm:class:centralised-database", "label": "Centralised Database"},
-      {"@id": "urn:ngm:class:raft-consensus", "label": "Raft Consensus"},
+      {"@id": "urn:ngm:class:raft-consensus", "label": "RAFT Consensus"},
       {"@id": "urn:ngm:class:paxos", "label": "Paxos"}
     ],
     "bridgesTo": [

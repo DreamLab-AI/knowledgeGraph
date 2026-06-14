@@ -52,7 +52,7 @@ public:: true
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-software-engineering",
-      "label": "Infra Software Engineering"
+      "label": "Software Engineering"
     }
   ],
   "sameAs": [
@@ -141,7 +141,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:human-computer-interaction",
-        "label": "Human-Computer Interaction"
+        "label": "Human Computer Interaction"
       },
       {
         "@id": "urn:ngm:class:information-theory",

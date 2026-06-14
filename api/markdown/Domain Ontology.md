@@ -481,7 +481,7 @@ alias:: DomainOntology
     },
     {
       "@id": "urn:ngm:class:infra-data-management",
-      "label": "Infra Data Management"
+      "label": "Data Management"
     },
     {
       "@id": "urn:ngm:class:formal-specification",
@@ -688,7 +688,7 @@ alias:: DomainOntology
       },
       {
         "@id": "urn:ngm:class:semantic-web-linked-data-standard",
-        "label": "Semantic Web"
+        "label": "Semantic Web Linked Data Standard"
       }
     ],
     "standardizedBy": [

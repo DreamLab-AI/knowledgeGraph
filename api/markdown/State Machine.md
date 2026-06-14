@@ -365,7 +365,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:stacks",
-        "label": "Stack"
+        "label": "Stacks"
       },
       {
         "@id": "urn:ngm:class:start-state",
@@ -519,7 +519,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:ethereum-smart-contract-platform",
-        "label": "Ethereum"
+        "label": "Ethereum Smart Contract Platform"
       },
       {
         "@id": "urn:ngm:class:fault-tolerance",
@@ -563,7 +563,7 @@ public:: true
     "standardizedBy": [
       {
         "@id": "urn:ngm:class:ieee-802-x",
-        "label": "IEEE 802.X"
+        "label": "IEEE 802-X"
       },
       {
         "@id": "urn:ngm:class:ietf-rfc-9562",

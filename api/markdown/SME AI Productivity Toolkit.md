@@ -63,7 +63,7 @@ elevatedFrom:: [[Consumer Tools for SMEs]]
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:ai-assisted-developer-tooling", "label": "Coding support"}
+      {"@id": "urn:ngm:class:ai-assisted-developer-tooling", "label": "AI-Assisted Developer Tooling"}
     ]
   },
   "quality": 0.5,

@@ -360,7 +360,7 @@ public:: true
     },
     {
       "@id": "urn:ngm:class:peerto-peer-protocol",
-      "label": "Peer-to-Peer Protocol"
+      "label": "Peerto Peer Protocol"
     }
   ],
   "relations": {
@@ -433,7 +433,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:cryptographic-primitive",
-        "label": "Cryptographic Primitives"
+        "label": "Cryptographic Primitive"
       },
       {
         "@id": "urn:ngm:class:economic-incentives",

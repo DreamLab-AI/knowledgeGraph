@@ -56,7 +56,7 @@ public:: true
     "relatedTo": [
       {"@id": "urn:ngm:class:explainability-oecd", "label": "Explainability (OECD)"},
       {"@id": "urn:ngm:class:accountability-oecd", "label": "Accountability (OECD)"},
-      {"@id": "urn:ngm:class:digital-technology-access-equity", "label": "Equity"}
+      {"@id": "urn:ngm:class:digital-technology-access-equity", "label": "Digital Technology Access Equity"}
     ],
     "requires": [
       {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"},

@@ -67,7 +67,7 @@ public:: true
   "maturity": "draft",
   "subClassOf": {
     "@id": "urn:ngm:class:ai-technique",
-    "label": "Ai Technique"
+    "label": "AI Technique"
   },
   "relations": {
     "enables": [

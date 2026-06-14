@@ -114,11 +114,11 @@
       },
       {
         "id": "urn:ngm:class:erc20",
-        "label": "ERC-20"
+        "label": "ERC20"
       },
       {
         "id": "urn:ngm:class:erc721",
-        "label": "ERC-721"
+        "label": "ERC721"
       }
     ],
     "contrastsWith": [

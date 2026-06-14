@@ -106,7 +106,7 @@ public:: true
       {"@id": "urn:ngm:class:constitutional-ai", "label": "Constitutional AI"}
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human-Computer Interaction"},
+      {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human Computer Interaction"},
       {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"}
     ]
   },

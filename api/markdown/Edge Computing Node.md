@@ -188,7 +188,7 @@ alias:: EdgeComputingNode
       },
       {
         "@id": "urn:ngm:class:real-time-analytics",
-        "label": "Real-time Analytics"
+        "label": "Real-Time Analytics"
       }
     ],
     "partOf": [

@@ -179,7 +179,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:infrared-led-illuminator",
-        "label": "Infrared LED Illuminator"
+        "label": "Infrared Led Illuminator"
       }
     ],
     "requires": [

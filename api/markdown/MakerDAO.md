@@ -59,7 +59,7 @@ public:: true
     "requires": [
       {"@id": "urn:ngm:class:over-collateralisation", "label": "Over-Collateralisation"},
       {"@id": "urn:ngm:class:oracle-network", "label": "Oracle Network"},
-      {"@id": "urn:ngm:class:on-chain-governance", "label": "On-Chain Governance"}
+      {"@id": "urn:ngm:class:on-chain-governance", "label": "On-chain Governance"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:dao", "label": "DAO"},

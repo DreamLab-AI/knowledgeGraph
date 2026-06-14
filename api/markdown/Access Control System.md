@@ -632,11 +632,11 @@ public:: true
     },
     {
       "@id": "urn:ngm:class:infra-security-and-identity",
-      "label": "Infra Security And Identity"
+      "label": "Security and Identity"
     },
     {
       "@id": "urn:ngm:class:infra-security-and-identity",
-      "label": "Infra Security And Identity"
+      "label": "Security and Identity"
     }
   ],
   "relations": {
@@ -689,7 +689,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:cryptographic-primitive",
-        "label": "Cryptographic Primitives"
+        "label": "Cryptographic Primitive"
       },
       {
         "@id": "urn:ngm:class:trusted-time-source",

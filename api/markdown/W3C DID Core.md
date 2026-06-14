@@ -41,7 +41,7 @@ public:: true
       {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self Sovereign Identity"},
       {"@id": "urn:ngm:class:verifiable-credentials", "label": "Verifiable Credentials"},
       {"@id": "urn:ngm:class:digital-identity-wallet", "label": "Digital Identity Wallet"},
-      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero Knowledge Proof"}
+      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"}
     ],
     "requires": [
       {"@id": "urn:ngm:class:public-key-cryptography", "label": "Public Key Cryptography"},

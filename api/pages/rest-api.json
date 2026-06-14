@@ -9,7 +9,7 @@
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-software-engineering",
-      "label": "Infra Software Engineering"
+      "label": "Software Engineering"
     }
   ],
   "entityType": "Class",
@@ -34,7 +34,7 @@
       },
       {
         "id": "urn:ngm:class:service-oriented-architecture",
-        "label": "Service-Oriented Architecture"
+        "label": "Service Oriented Architecture"
       },
       {
         "id": "urn:ngm:class:cloud-native-computing",
@@ -99,7 +99,7 @@
     "uses": [
       {
         "id": "urn:ngm:class:json-data-interchange-format",
-        "label": "JSON"
+        "label": "JSON Data Interchange Format"
       },
       {
         "id": "urn:ngm:class:xml",

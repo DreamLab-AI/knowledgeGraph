@@ -36,15 +36,15 @@
     "supports": [
       {
         "id": "urn:ngm:class:blockchain",
-        "label": "Blockchain Domain"
+        "label": "Blockchain"
       },
       {
         "id": "urn:ngm:class:artificial-intelligence",
-        "label": "Artificial Intelligence Domain"
+        "label": "Artificial Intelligence"
       },
       {
         "id": "urn:ngm:class:robotics",
-        "label": "Robotics Domain"
+        "label": "Robotics"
       }
     ],
     "standardizedBy": [],

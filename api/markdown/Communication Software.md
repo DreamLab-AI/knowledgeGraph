@@ -105,11 +105,11 @@ public:: true
     "enables": [
       {
         "@id": "urn:ngm:class:realtime-collaboration",
-        "label": "Real-Time Collaboration"
+        "label": "Realtime Collaboration"
       },
       {
         "@id": "urn:ngm:class:virtual-meeting",
-        "label": "Virtual Meetings"
+        "label": "Virtual Meeting"
       },
       {
         "@id": "urn:ngm:class:remote-communication",

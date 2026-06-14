@@ -28,7 +28,7 @@ public:: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:lidar", "label": "LiDAR"},
+      {"@id": "urn:ngm:class:lidar", "label": "Lidar"},
       {"@id": "urn:ngm:class:photogrammetry", "label": "Photogrammetry"},
       {"@id": "urn:ngm:class:depth-sensing", "label": "Depth Sensing"}
     ],

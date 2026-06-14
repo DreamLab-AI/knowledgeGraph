@@ -109,7 +109,7 @@ public:: true
       {"@id": "urn:ngm:class:bdi-model", "label": "BDI Model"}
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:eu-ai-act-regulatory-instrument", "label": "EU AI Act"}
+      {"@id": "urn:ngm:class:eu-ai-act-regulatory-instrument", "label": "EU AI Act Regulatory Instrument"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:goal", "label": "Goal"},

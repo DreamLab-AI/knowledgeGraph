@@ -69,7 +69,7 @@ alias:: Human-Computer Interaction, HumanComputerInteraction
     "label": "AI Research Area"
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human-Computer Interaction"},
+    {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human Computer Interaction"},
     {"@id": "urn:ngm:class:hci", "label": "HCI"},
     {"@id": "urn:ngm:class:computer-human-interaction", "label": "Computer-Human Interaction"}
   ],

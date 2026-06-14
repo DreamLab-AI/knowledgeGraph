@@ -57,7 +57,7 @@ public:: true
   "subClassOf": [
     {
       "@id": "urn:ngm:class:artificial-intelligence",
-      "label": "Artificial Intelligence Domain"
+      "label": "Artificial Intelligence"
     }
   ],
   "relations": {

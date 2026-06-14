@@ -756,7 +756,7 @@ alias:: MechanicalComponent
       },
       {
         "@id": "urn:ngm:class:end-effector",
-        "label": "End-Effector"
+        "label": "End Effector"
       }
     ],
     "requires": [
@@ -940,11 +940,11 @@ alias:: MechanicalComponent
     "supports": [
       {
         "@id": "urn:ngm:class:collaborative-systems-modality-robot",
-        "label": "Collaborative Robots"
+        "label": "Collaborative Robot"
       },
       {
         "@id": "urn:ngm:class:humanoid-robot",
-        "label": "Humanoid Robots"
+        "label": "Humanoid Robot"
       },
       {
         "@id": "urn:ngm:class:industrial-manipulators",
@@ -1004,7 +1004,7 @@ alias:: MechanicalComponent
     "bridgesTo": [
       {
         "@id": "urn:ngm:class:infra-software-engineering",
-        "label": "Infra Software Engineering"
+        "label": "Software Engineering"
       }
     ]
   },

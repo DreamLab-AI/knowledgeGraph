@@ -55,7 +55,7 @@ elevatedFrom:: [[Queries]]
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:database-query", "label": "Database Query"},
-      {"@id": "urn:ngm:class:semantic-web-linked-data-standard", "label": "Semantic Web"},
+      {"@id": "urn:ngm:class:semantic-web-linked-data-standard", "label": "Semantic Web Linked Data Standard"},
       {"@id": "urn:ngm:class:linked-data", "label": "Linked Data"}
     ]
   },

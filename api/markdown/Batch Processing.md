@@ -165,7 +165,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:real-time-processing",
-        "label": "Real-Time Processing"
+        "label": "Real-time Processing"
       }
     ],
     "bridgesTo": [

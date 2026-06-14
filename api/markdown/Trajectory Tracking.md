@@ -61,7 +61,7 @@ alias:: TrajectoryTracking
     "relatedTo": [
       {"@id": "urn:ngm:class:trajectory-generation", "label": "Trajectory Generation"},
       {"@id": "urn:ngm:class:path-planning", "label": "Path Planning"},
-      {"@id": "urn:ngm:class:whole-body-control", "label": "Whole-Body Control"},
+      {"@id": "urn:ngm:class:whole-body-control", "label": "Whole Body Control"},
       {"@id": "urn:ngm:class:robust-control", "label": "Robust Control"}
     ],
     "bridgesTo": [

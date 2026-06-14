@@ -61,7 +61,7 @@ elevatedFrom:: [[Constitutional AI]]
   "quality": 0.72,
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:supervised-fine-tuning", "label": "Supervised Fine-Tuning"},
+      {"@id": "urn:ngm:class:supervised-fine-tuning", "label": "Supervised Fine Tuning"},
       {"@id": "urn:ngm:class:reinforcement-learning-from-ai-feedback", "label": "Reinforcement Learning from AI Feedback"},
       {"@id": "urn:ngm:class:self-critique-and-revision", "label": "Self-Critique and Revision"},
       {"@id": "urn:ngm:class:preference-model", "label": "Preference Model"}
@@ -90,7 +90,7 @@ elevatedFrom:: [[Constitutional AI]]
     ],
     "uses": [
       {"@id": "urn:ngm:class:ai-feedback", "label": "AI Feedback"},
-      {"@id": "urn:ngm:class:red-teaming", "label": "Red-Teaming"}
+      {"@id": "urn:ngm:class:red-teaming", "label": "Red Teaming"}
     ],
     "supports": [
       {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"},

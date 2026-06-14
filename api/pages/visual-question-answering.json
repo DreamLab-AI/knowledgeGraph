@@ -30,7 +30,7 @@
     "relatedTo": [
       {
         "id": "urn:ngm:class:vision-language-model",
-        "label": "Vision-Language Model"
+        "label": "Vision Language Model"
       },
       {
         "id": "urn:ngm:class:ar-frame",

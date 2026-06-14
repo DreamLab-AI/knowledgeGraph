@@ -27,8 +27,8 @@ elevatedFrom:: [[Gemini]]
   "subClassOf": [{"@id": "urn:ngm:class:multimodal-ai-architecture-ai", "label": "Multimodal AI"}],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:instruction-following-conversational-ai-system", "label": "ChatGPT"},
-      {"@id": "urn:ngm:class:constitutional-ai-training-methodology-language-model-family", "label": "Anthropic Claude"},
+      {"@id": "urn:ngm:class:instruction-following-conversational-ai-system", "label": "Instruction-Following Conversational AI System"},
+      {"@id": "urn:ngm:class:constitutional-ai-training-methodology-language-model-family", "label": "Constitutional AI Language Model Family"},
       {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}
     ],
     "uses": [
@@ -46,8 +46,8 @@ elevatedFrom:: [[Gemini]]
       {"@id": "urn:ngm:class:high-performance-computing", "label": "High-Performance Computing"}
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:instruction-following-conversational-ai-system", "label": "ChatGPT"},
-      {"@id": "urn:ngm:class:constitutional-ai-training-methodology-language-model-family", "label": "Anthropic Claude"}
+      {"@id": "urn:ngm:class:instruction-following-conversational-ai-system", "label": "Instruction-Following Conversational AI System"},
+      {"@id": "urn:ngm:class:constitutional-ai-training-methodology-language-model-family", "label": "Constitutional AI Language Model Family"}
     ],
     "standardizedBy": [
       {"@id": "urn:ngm:class:evaluation-metric", "label": "Evaluation Metric"}

@@ -537,7 +537,7 @@ alias:: FaultTolerance
     },
     {
       "@id": "urn:ngm:class:infra-software-engineering",
-      "label": "Infra Software Engineering"
+      "label": "Software Engineering"
     }
   ],
   "relations": {
@@ -775,7 +775,7 @@ alias:: FaultTolerance
       },
       {
         "@id": "urn:ngm:class:autonomous-vehicle",
-        "label": "Autonomous Vehicles"
+        "label": "Autonomous Vehicle"
       },
       {
         "@id": "urn:ngm:class:distributed-training",

@@ -211,11 +211,11 @@ public:: true
     "standardizedBy": [
       {
         "@id": "urn:ngm:class:iso-iec-42001-2023",
-        "label": "ISO/IEC 42001:2023"
+        "label": "ISO-IEC 42001 2023"
       },
       {
         "@id": "urn:ngm:class:iso-iec-5338-2023",
-        "label": "ISO/IEC 5338:2023"
+        "label": "ISO-IEC 5338 2023"
       },
       {
         "@id": "urn:ngm:class:nist-ai-risk-management-framework",
@@ -249,7 +249,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:iso-iec-25010",
-        "label": "ISO/IEC 25010"
+        "label": "ISO-IEC 25010"
       }
     ]
   },

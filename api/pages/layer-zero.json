@@ -9,7 +9,7 @@
   "subClassOf": [
     {
       "id": "urn:ngm:class:blockchain",
-      "label": "Blockchain Domain"
+      "label": "Blockchain"
     }
   ],
   "entityType": "Class",

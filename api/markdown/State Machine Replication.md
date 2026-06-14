@@ -64,9 +64,9 @@ public:: true
     ],
     "implements": [
       {"@id": "urn:ngm:class:paxos", "label": "Paxos"},
-      {"@id": "urn:ngm:class:raft-consensus", "label": "Raft Consensus"},
+      {"@id": "urn:ngm:class:raft-consensus", "label": "RAFT Consensus"},
       {"@id": "urn:ngm:class:viewstamped-replication", "label": "Viewstamped Replication"},
-      {"@id": "urn:ngm:class:pbft", "label": "Practical Byzantine Fault Tolerance"}
+      {"@id": "urn:ngm:class:pbft", "label": "PBFT"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:high-availability", "label": "High Availability"},

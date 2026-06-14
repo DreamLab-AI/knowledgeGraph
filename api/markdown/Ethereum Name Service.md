@@ -57,7 +57,7 @@ public:: true
   "subClassOf": [
     {
       "@id": "urn:ngm:class:bc-network-component",
-      "label": "BC Network Component"
+      "label": "Network Component"
     }
   ],
   "relations": {
@@ -164,7 +164,7 @@ public:: true
     "bridgesTo": [
       {
         "@id": "urn:ngm:class:self-sovereign-identity",
-        "label": "Self-Sovereign Identity"
+        "label": "Self Sovereign Identity"
       },
       {
         "@id": "urn:ngm:class:verifiable-credential",

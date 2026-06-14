@@ -34,7 +34,7 @@
       },
       {
         "id": "urn:ngm:class:velocity-control",
-        "label": "Velocity Control"
+        "label": "VelocityControl"
       }
     ]
   },

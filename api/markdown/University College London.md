@@ -124,7 +124,7 @@ public:: true
     "uses": [
       {
         "@id": "urn:ngm:class:high-performance-computing",
-        "label": "High Performance Computing"
+        "label": "High-Performance Computing"
       },
       {
         "@id": "urn:ngm:class:federated-learning",

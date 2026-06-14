@@ -140,7 +140,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:sustainability-reporting",
-        "label": "Sustainability Reporting"
+        "label": "SustainabilityReporting"
       }
     ],
     "contrastsWith": [

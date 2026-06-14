@@ -42,7 +42,7 @@ alias:: DecentralizedIdentity
     ],
     "enables": [
       {"@id": "urn:ngm:class:privacy-by-design", "label": "Privacy By Design"},
-      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self-Sovereign Identity"},
+      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self Sovereign Identity"},
       {"@id": "urn:ngm:class:selective-disclosure", "label": "Selective Disclosure"},
       {"@id": "urn:ngm:class:cross-border-authentication", "label": "Cross-Border Authentication"}
     ],
@@ -76,7 +76,7 @@ alias:: DecentralizedIdentity
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self-Sovereign Identity"},
+    {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self Sovereign Identity"},
     {"@id": "urn:ngm:class:did-based-identity", "label": "DID-Based Identity"}
   ],
   "quality": 0.74,

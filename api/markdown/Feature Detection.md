@@ -27,7 +27,7 @@ public:: true
   "relations": {
     "enables": [{"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}, {"@id": "urn:ngm:class:object-detection", "label": "Object Detection"}],
     "uses": [{"@id": "urn:ngm:class:runtime-environment", "label": "Runtime Environment"}],
-    "relatedTo": [{"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"}, {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"}],
+    "relatedTo": [{"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"}, {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"}],
     "supports": [{"@id": "urn:ngm:class:computer-vision-system", "label": "Computer Vision System"}]
   },
   "quality": 0.8

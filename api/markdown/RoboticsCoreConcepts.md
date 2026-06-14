@@ -176,27 +176,27 @@ alias:: Robotics Core Concepts
     "hasPart": [
       {
         "@id": "urn:ngm:class:autonomous-robot",
-        "label": "AutonomousRobot"
+        "label": "Autonomous Robot"
       },
       {
         "@id": "urn:ngm:class:human-robot-interaction",
-        "label": "HumanRobotInteraction"
+        "label": "Human Robot Interaction"
       },
       {
         "@id": "urn:ngm:class:manipulator-arm",
-        "label": "ManipulatorArm"
+        "label": "Manipulator Arm"
       },
       {
         "@id": "urn:ngm:class:path-planning",
-        "label": "PathPlanning"
+        "label": "Path Planning"
       },
       {
         "@id": "urn:ngm:class:robot-learning",
-        "label": "RobotLearning"
+        "label": "Robot Learning"
       },
       {
         "@id": "urn:ngm:class:sensor-fusion",
-        "label": "SensorFusion"
+        "label": "Sensor Fusion"
       },
       {
         "@id": "urn:ngm:class:slam",
@@ -204,11 +204,11 @@ alias:: Robotics Core Concepts
       },
       {
         "@id": "urn:ngm:class:soft-robotics",
-        "label": "SoftRobotics"
+        "label": "Soft Robotics"
       },
       {
         "@id": "urn:ngm:class:swarm-robotics",
-        "label": "SwarmRobotics"
+        "label": "Swarm Robotics"
       },
       {
         "@id": "urn:ngm:class:teleoperation",
@@ -226,7 +226,7 @@ alias:: Robotics Core Concepts
       },
       {
         "@id": "urn:ngm:class:mathematical-foundations",
-        "label": "MathematicalFoundations"
+        "label": "Mathematical Foundations"
       },
       {
         "@id": "urn:ngm:class:physics-modeling",
@@ -234,13 +234,13 @@ alias:: Robotics Core Concepts
       },
       {
         "@id": "urn:ngm:class:software-engineering",
-        "label": "SoftwareEngineering"
+        "label": "Software Engineering"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:autonomous-vehicle",
-        "label": "AutonomousVehicles"
+        "label": "Autonomous Vehicle"
       },
       {
         "@id": "urn:ngm:class:industrial-automation",
@@ -256,7 +256,7 @@ alias:: Robotics Core Concepts
       },
       {
         "@id": "urn:ngm:class:service-robotics",
-        "label": "ServiceRobotics"
+        "label": "Service Robotics"
       }
     ]
   },

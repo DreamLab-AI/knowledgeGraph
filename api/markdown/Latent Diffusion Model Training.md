@@ -27,7 +27,7 @@ elevatedFrom:: [[Stable Diffusion Training]]
   "subClassOf": [{"@id": "urn:ngm:class:generative-model", "label": "Generative Model"}],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:fast-ai", "label": "Fast.ai"},
+      {"@id": "urn:ngm:class:fast-ai", "label": "fast.ai"},
       {"@id": "urn:ngm:class:proprietary-ai-video", "label": "Proprietary AI Video"}
     ]
   },

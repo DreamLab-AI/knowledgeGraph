@@ -48,7 +48,7 @@ elevatedFrom:: [[p(doom)]]
     "relatedTo": [
       {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},
       {"@id": "urn:ngm:class:ai-risk", "label": "AI Risk"},
-      {"@id": "urn:ngm:class:artificial-superintelligence-theory", "label": "artificial superintelligence"},
+      {"@id": "urn:ngm:class:artificial-superintelligence-theory", "label": "Artificial Superintelligence Theory"},
       {"@id": "urn:ngm:class:safety-and-alignment", "label": "Safety and alignment"}
     ],
     "uses": [

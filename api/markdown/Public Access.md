@@ -27,7 +27,7 @@ public:: true
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:digital-curation-platform", "label": "Digital Curation Platform"},
-      {"@id": "urn:ngm:class:etsi-domain-data-management-cultural-heritage", "label": "ETSI Domain Data Management Cultural Heritage"}
+      {"@id": "urn:ngm:class:etsi-domain-data-management-cultural-heritage", "label": "ETSI Domain: Data Management + Cultural Heritage"}
     ]
   },
   "quality": 0.72

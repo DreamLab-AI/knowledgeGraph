@@ -50,7 +50,7 @@ public:: true
   "domain": "spatial-computing",
   "maturity": "mature",
   "subClassOf": [
-    {"@id": "urn:ngm:class:sc-display-and-rendering", "label": "SC Display and Rendering"}
+    {"@id": "urn:ngm:class:sc-display-and-rendering", "label": "Display and Rendering"}
   ],
   "relations": {
     "hasPart": [

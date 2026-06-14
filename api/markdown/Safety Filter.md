@@ -25,7 +25,7 @@ public:: true
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"}],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:ai-companions", "label": "AI Companions"}, {"@id": "urn:ngm:class:proprietary-image-generation", "label": "Proprietary Image Generation"}]
+    "relatedTo": [{"@id": "urn:ngm:class:ai-companions", "label": "AI companions"}, {"@id": "urn:ngm:class:proprietary-image-generation", "label": "Proprietary Image Generation"}]
   },
   "quality": 0.72
 }

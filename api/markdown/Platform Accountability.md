@@ -23,7 +23,7 @@ public:: true
   "definition": "Platform accountability is the principle and regulatory expectation that online platforms bear responsibility for the systems, content, and harms arising on their services. It encompasses obligations such as transparency reporting, risk assessment, content-moderation due process, and remedies for illegal or harmful material. Frameworks like the Digital Services Act codify these duties, shifting platforms from passive intermediaries toward governed actors.",
   "domain": "governance",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:infra-legal-and-regulatory", "label": "Infrastructure Legal and Regulatory"}],
+  "subClassOf": [{"@id": "urn:ngm:class:infra-legal-and-regulatory", "label": "Legal and Regulatory"}],
   "relations": {
     "relatedTo": [{"@id": "urn:ngm:class:digital-services-act", "label": "Digital Services Act"}, {"@id": "urn:ngm:class:death-of-the-internet", "label": "Death of the Internet"}]
   },

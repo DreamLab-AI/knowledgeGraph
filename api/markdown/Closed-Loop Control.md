@@ -150,7 +150,7 @@ alias:: Closed Loop Control, RB-1002-closed-loop-control
       },
       {
         "@id": "urn:ngm:class:rb-1013-localization",
-        "label": "RB-1013-localization"
+        "label": "RB 1013 localization"
       }
     ],
     "implements": [
@@ -160,7 +160,7 @@ alias:: Closed Loop Control, RB-1002-closed-loop-control
       },
       {
         "@id": "urn:ngm:class:adaptive-control",
-        "label": "RB-1004-adaptive-control"
+        "label": "Adaptive Control"
       }
     ],
     "uses": [

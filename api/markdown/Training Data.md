@@ -345,7 +345,7 @@ alias:: TrainingData
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-infrastructure",
-      "label": "AI Infrastructure (Category)"
+      "label": "AI Infrastructure"
     },
     {
       "@id": "urn:ngm:class:data-governance",
@@ -436,7 +436,7 @@ alias:: TrainingData
       },
       {
         "@id": "urn:ngm:class:large-scale-pretrained-foundation-model",
-        "label": "Foundation Models"
+        "label": "Large-Scale Pretrained Foundation Model"
       },
       {
         "@id": "urn:ngm:class:instruction-tuning",
@@ -458,7 +458,7 @@ alias:: TrainingData
       },
       {
         "@id": "urn:ngm:class:locality-sensitive-hashing",
-        "label": "Locality Sensitive Hashing"
+        "label": "Locality-Sensitive Hashing"
       },
       {
         "@id": "urn:ngm:class:min-hash",
@@ -518,7 +518,7 @@ alias:: TrainingData
       },
       {
         "@id": "urn:ngm:class:intellectual-property-rights-framework",
-        "label": "Copyright"
+        "label": "Intellectual Property Rights Framework"
       },
       {
         "@id": "urn:ngm:class:evaluation-benchmarks-and-leaderboards",
@@ -582,7 +582,7 @@ alias:: TrainingData
       },
       {
         "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
-        "label": "EU AI Act"
+        "label": "EU AI Act Regulatory Instrument"
       }
     ],
     "bridgesTo": [

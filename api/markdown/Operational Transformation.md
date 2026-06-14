@@ -57,7 +57,7 @@ public:: true
   "subClassOf": [
     {
       "@id": "urn:ngm:class:dc-protocol-and-infra",
-      "label": "Dc Protocol And Infra"
+      "label": "Protocol and Infrastructure"
     }
   ],
   "relations": {

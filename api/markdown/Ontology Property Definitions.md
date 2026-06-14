@@ -85,9 +85,9 @@ public:: true
       {"@id": "urn:ngm:class:owl-class-hierarchy", "label": "OWL Class Hierarchy"}
     ],
     "supports": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain Domain"},
-      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence Domain"},
-      {"@id": "urn:ngm:class:robotics", "label": "Robotics Domain"}
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
+      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
+      {"@id": "urn:ngm:class:robotics", "label": "Robotics"}
     ]
   },
   "quality": 0.8,

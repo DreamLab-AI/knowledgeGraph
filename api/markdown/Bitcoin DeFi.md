@@ -26,7 +26,7 @@ public:: true
   "subClassOf": [{"@id": "urn:ngm:class:de-fi", "label": "DeFi"}],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:btc-layer-3", "label": "BTC Layer-3"}
+      {"@id": "urn:ngm:class:btc-layer-3", "label": "BTC Layer 3"}
     ]
   },
   "quality": 0.72

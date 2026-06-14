@@ -72,7 +72,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:high-bandwidth-memory",
-        "label": "High-Bandwidth Memory"
+        "label": "High Bandwidth Memory"
       },
       {
         "@id": "urn:ngm:class:nvswitch",
@@ -92,7 +92,7 @@ public:: true
     "requires": [
       {
         "@id": "urn:ngm:class:high-bandwidth-memory",
-        "label": "High-Bandwidth Memory"
+        "label": "High Bandwidth Memory"
       },
       {
         "@id": "urn:ngm:class:cuda",

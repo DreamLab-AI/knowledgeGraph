@@ -34,12 +34,12 @@ alias:: VotingMechanism
   "subClassOf": [
     {
       "@id": "urn:ngm:class:bc-governance-and-regulation",
-      "label": "Blockchain Governance and Regulation"
+      "label": "Governance and Regulation"
     }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:on-chain-voting", "label": "On-Chain Voting"},
+      {"@id": "urn:ngm:class:on-chain-voting", "label": "On Chain Voting"},
       {"@id": "urn:ngm:class:off-chain-voting", "label": "Off-Chain Voting"},
       {"@id": "urn:ngm:class:token-weighted-voting", "label": "Token-Weighted Voting"},
       {"@id": "urn:ngm:class:quadratic-voting", "label": "Quadratic Voting"},
@@ -47,7 +47,7 @@ alias:: VotingMechanism
       {"@id": "urn:ngm:class:liquid-democracy", "label": "Liquid Democracy"}
     ],
     "enables": [
-      {"@id": "urn:ngm:class:on-chain-governance", "label": "On-Chain Governance"},
+      {"@id": "urn:ngm:class:on-chain-governance", "label": "On-chain Governance"},
       {"@id": "urn:ngm:class:dao-governance", "label": "DAO Governance"},
       {"@id": "urn:ngm:class:decentralised-decision-making", "label": "Decentralised Decision-Making"},
       {"@id": "urn:ngm:class:protocol-upgrade", "label": "Protocol Upgrade"}
@@ -65,8 +65,8 @@ alias:: VotingMechanism
     ],
     "contrastsWith": [
       {"@id": "urn:ngm:class:plutocratic-governance", "label": "Plutocratic Governance"},
-      {"@id": "urn:ngm:class:delegated-proof-of-stake", "label": "Delegated Proof-of-Stake"},
-      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof of Work"}
+      {"@id": "urn:ngm:class:delegated-proof-of-stake", "label": "Delegated Proof of Stake"},
+      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:social-choice-theory", "label": "Social Choice Theory"},

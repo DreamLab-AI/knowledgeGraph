@@ -59,7 +59,7 @@ public:: true
     "enables": [
       {
         "@id": "urn:ngm:class:control-system",
-        "label": "Control Systems"
+        "label": "Control System"
       }
     ]
   },

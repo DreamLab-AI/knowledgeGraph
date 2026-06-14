@@ -583,7 +583,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Model"
+        "label": "Large Language Models"
       },
       {
         "@id": "urn:ngm:class:production-system",
@@ -647,7 +647,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:human-computer-interaction",
-        "label": "Human-Computer Interaction"
+        "label": "Human Computer Interaction"
       }
     ],
     "standardizedBy": [

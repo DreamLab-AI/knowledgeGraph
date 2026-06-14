@@ -685,7 +685,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:physically-based-rendering",
-        "label": "Physically-Based Rendering"
+        "label": "Physically Based Rendering"
       }
     ],
     "supports": [

@@ -167,7 +167,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:scope-definition",
-        "label": "ScopeDefinition"
+        "label": "Scope Definition"
       },
       {
         "@id": "urn:ngm:class:water-usage-tracking",
@@ -189,17 +189,17 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:consensus-algorithm",
-        "label": "ConsensusAlgorithm"
+        "label": "Consensus Algorithm"
       },
       {
         "@id": "urn:ngm:class:network-hash-rate",
-        "label": "NetworkHashRate"
+        "label": "Network Hash Rate"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:investor-disclosure",
-        "label": "InvestorDisclosure"
+        "label": "Investor Disclosure"
       },
       {
         "@id": "urn:ngm:class:sustainability-reporting",
@@ -207,11 +207,11 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:carbon-accounting",
-        "label": "CarbonAccounting"
+        "label": "Carbon Accounting"
       },
       {
         "@id": "urn:ngm:class:regulatory-compliance",
-        "label": "RegulatoryCompliance"
+        "label": "Regulatory Compliance"
       }
     ],
     "bridgesTo": [

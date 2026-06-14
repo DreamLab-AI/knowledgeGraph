@@ -23,7 +23,7 @@ public:: true
   "definition": "Visual perception is a robot or agent's capability to interpret its environment from camera and visual sensor data, extracting the objects, surfaces, motion and spatial structure needed to act. It transforms raw imagery into actionable scene understanding that drives behaviours such as gaze control, manipulation and navigation. Visual perception is a core perceptual modality for embodied robotic systems.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:robo-perception", "label": "Robot Perception"}],
+  "subClassOf": [{"@id": "urn:ngm:class:robo-perception", "label": "Perception and Sensing"}],
   "relations": {
     "relatedTo": [{"@id": "urn:ngm:class:gaze-control", "label": "Gaze Control"}, {"@id": "urn:ngm:class:camera", "label": "Camera"}]
   },

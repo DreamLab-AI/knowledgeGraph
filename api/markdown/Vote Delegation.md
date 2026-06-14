@@ -23,7 +23,7 @@ public:: true
   "definition": "Vote delegation is a governance mechanism by which a token holder assigns their voting power to another address that votes on their behalf, without transferring ownership of the underlying assets. It is central to on-chain DAO governance, enabling passive holders to entrust active, informed delegates and improving participation rates. Delegation can be revoked or reassigned, and may be liquid, allowing chained or topic-specific delegation.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:bc-governance-and-regulation", "label": "Blockchain Governance and Regulation"}],
+  "subClassOf": [{"@id": "urn:ngm:class:bc-governance-and-regulation", "label": "Governance and Regulation"}],
   "relations": {
     "relatedTo": [{"@id": "urn:ngm:class:delegate-democracy", "label": "Delegate Democracy"}, {"@id": "urn:ngm:class:governance-token", "label": "Governance Token"}]
   },

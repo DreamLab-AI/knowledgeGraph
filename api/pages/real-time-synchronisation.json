@@ -30,7 +30,7 @@
     "relatedTo": [
       {
         "id": "urn:ngm:class:distributed-collaboration",
-        "label": "Distributed Collaboration Domain"
+        "label": "Distributed Collaboration"
       },
       {
         "id": "urn:ngm:class:digital-twin",

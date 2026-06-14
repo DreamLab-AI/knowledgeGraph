@@ -66,7 +66,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:venue-tethered-immersive-experience",
-        "label": "Location Based Experience"
+        "label": "Venue-Tethered Immersive Experience"
       }
     ],
     "uses": [

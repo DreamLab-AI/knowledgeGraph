@@ -31,7 +31,7 @@ public:: true
       {"@id": "urn:ngm:class:planning-and-scheduling", "label": "Planning and Scheduling"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"},
       {"@id": "urn:ngm:class:automated-compliance", "label": "Automated Compliance"}
     ],
     "enables": [
@@ -39,7 +39,7 @@ public:: true
       {"@id": "urn:ngm:class:customer-service-automation", "label": "Customer Service Automation"}
     ],
     "supports": [
-      {"@id": "urn:ngm:class:ai-driven-workforce-displacement-registry", "label": "Layoff tracker and threatened roles"}
+      {"@id": "urn:ngm:class:ai-driven-workforce-displacement-registry", "label": "AI-Driven Workforce Displacement Registry"}
     ]
   },
   "quality": 0.8

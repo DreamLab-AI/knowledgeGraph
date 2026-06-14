@@ -104,7 +104,7 @@ alias:: Human-in-the-Loop Learning
     "supports": [
       {
         "@id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning"
+        "label": "Machine Learning Discipline"
       }
     ]
   }

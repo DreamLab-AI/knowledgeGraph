@@ -479,7 +479,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:virtual-event",
-        "label": "Virtual Events"
+        "label": "Virtual Event"
       },
       {
         "@id": "urn:ngm:class:avatar-portability",

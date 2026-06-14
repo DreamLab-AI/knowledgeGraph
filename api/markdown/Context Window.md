@@ -72,7 +72,7 @@ public:: true
     ],
     "requires": [
       {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"},
-      {"@id": "urn:ngm:class:neural-network-text-tokenisation", "label": "Tokenisation"},
+      {"@id": "urn:ngm:class:neural-network-text-tokenisation", "label": "Neural Network Text Tokenisation"},
       {"@id": "urn:ngm:class:key-value-cache", "label": "Key-Value Cache"}
     ],
     "enables": [

@@ -473,7 +473,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:cryptographic-primitive",
-        "label": "Cryptographic Primitives"
+        "label": "Cryptographic Primitive"
       },
       {
         "@id": "urn:ngm:class:entropy",
@@ -565,7 +565,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:zero-knowledge-proof",
-        "label": "Zero-Knowledge Proofs"
+        "label": "Zero-Knowledge Proof"
       },
       {
         "@id": "urn:ngm:class:zero-trust-architecture",
@@ -637,7 +637,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:quantum-computation-paradigm",
-        "label": "Quantum Computing"
+        "label": "Quantum Computation Paradigm"
       },
       {
         "@id": "urn:ngm:class:regulatory-compliance",

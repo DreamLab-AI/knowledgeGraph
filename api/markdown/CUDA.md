@@ -73,7 +73,7 @@ public:: true
     ],
     "bridgesTo": [
       {"@id": "urn:ngm:class:gpu-accelerated-rendering", "label": "GPU Accelerated Rendering"},
-      {"@id": "urn:ngm:class:high-performance-computing", "label": "High Performance Computing"}
+      {"@id": "urn:ngm:class:high-performance-computing", "label": "High-Performance Computing"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:pytorch", "label": "PyTorch"},

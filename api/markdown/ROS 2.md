@@ -59,7 +59,7 @@ alias:: ROS2
     ],
     "requires": [
       {"@id": "urn:ngm:class:dds-security", "label": "DDS-Security"},
-      {"@id": "urn:ngm:class:quality-of-service", "label": "Quality of Service"}
+      {"@id": "urn:ngm:class:quality-of-service", "label": "Quality Of Service"}
     ],
     "implements": [
       {"@id": "urn:ngm:class:robotics-middleware", "label": "Robotics Middleware"},
@@ -80,7 +80,7 @@ alias:: ROS2
     ],
     "bridgesTo": [
       {"@id": "urn:ngm:class:middleware", "label": "Middleware"},
-      {"@id": "urn:ngm:class:industrial-automation", "label": "Industrial Automation"},
+      {"@id": "urn:ngm:class:industrial-automation", "label": "IndustrialAutomation"},
       {"@id": "urn:ngm:class:autonomous-vehicles", "label": "Autonomous Vehicles"}
     ]
   },

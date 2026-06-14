@@ -434,7 +434,7 @@ alias:: Stablecoins
       },
       {
         "@id": "urn:ngm:class:reserve-asset",
-        "label": "Reserve Assets"
+        "label": "Reserve Asset"
       },
       {
         "@id": "urn:ngm:class:smart-contract-vault",
@@ -538,7 +538,7 @@ alias:: Stablecoins
       },
       {
         "@id": "urn:ngm:class:ethereum-smart-contract-platform",
-        "label": "Ethereum"
+        "label": "Ethereum Smart Contract Platform"
       },
       {
         "@id": "urn:ngm:class:solana",
@@ -582,7 +582,7 @@ alias:: Stablecoins
       },
       {
         "@id": "urn:ngm:class:decentralized-exchange",
-        "label": "Decentralised Exchange"
+        "label": "Decentralized Exchange"
       },
       {
         "@id": "urn:ngm:class:emerging-market-finance",

@@ -91,7 +91,7 @@ public:: true
     "requires": [
       {
         "@id": "urn:ngm:class:neural-network",
-        "label": "Neural Networks"
+        "label": "Neural Network"
       },
       {
         "@id": "urn:ngm:class:generative-ai",

@@ -653,7 +653,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:autonomous-system",
-        "label": "Autonomous Systems"
+        "label": "Autonomous System"
       },
       {
         "@id": "urn:ngm:class:enterprise-ai-adoption",
@@ -705,7 +705,7 @@ public:: true
     "uses": [
       {
         "@id": "urn:ngm:class:chain-of-thought-reasoning",
-        "label": "Chain of Thought Reasoning"
+        "label": "Chain-of-Thought Reasoning"
       },
       {
         "@id": "urn:ngm:class:distributed-training",
@@ -713,15 +713,15 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:retrieval-augmented-generation",
-        "label": "Retrieval Augmented Generation"
+        "label": "Retrieval-Augmented Generation"
       },
       {
         "@id": "urn:ngm:class:constitutional-ai-training-methodology",
-        "label": "Constitutional AI"
+        "label": "Constitutional AI Training Methodology"
       },
       {
         "@id": "urn:ngm:class:mixture-of-experts-architecture",
-        "label": "Mixture of Experts"
+        "label": "Mixture-of-Experts Architecture"
       },
       {
         "@id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
@@ -807,7 +807,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:nist-ai-rmf",
-        "label": "NIST AI Risk Management Framework"
+        "label": "NIST AI RMF"
       },
       {
         "@id": "urn:ngm:class:partnership-on-ai",
@@ -823,7 +823,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
-        "label": "EU AI Act"
+        "label": "EU AI Act Regulatory Instrument"
       }
     ]
   },

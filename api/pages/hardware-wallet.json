@@ -9,7 +9,7 @@
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-security-and-identity",
-      "label": "Infra Security and Identity"
+      "label": "Security and Identity"
     }
   ],
   "entityType": "Class",
@@ -30,7 +30,7 @@
     "relatedTo": [
       {
         "id": "urn:ngm:class:multi-sig-governance",
-        "label": "Multi-Sig Governance"
+        "label": "Multi Sig Governance"
       }
     ]
   },

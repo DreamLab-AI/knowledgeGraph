@@ -34,7 +34,7 @@ public:: true
     ],
     "enables": [
       {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
-      {"@id": "urn:ngm:class:semantic-web-linked-data-standard", "label": "Semantic Web"},
+      {"@id": "urn:ngm:class:semantic-web-linked-data-standard", "label": "Semantic Web Linked Data Standard"},
       {"@id": "urn:ngm:class:rich-snippet", "label": "Rich Snippet"},
       {"@id": "urn:ngm:class:structured-data-markup", "label": "Structured Data Markup"},
       {"@id": "urn:ngm:class:entity-recognition", "label": "Entity Recognition"}

@@ -9,7 +9,7 @@
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-actuation-and-control",
-      "label": "Robotics Actuation and Control"
+      "label": "Actuation and Control"
     }
   ],
   "entityType": "Class",

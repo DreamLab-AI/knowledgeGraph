@@ -155,7 +155,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:ar-display-device",
-        "label": "AR Display Device"
+        "label": "Ar Display Device"
       },
       {
         "@id": "urn:ngm:class:digital-content-overlay",

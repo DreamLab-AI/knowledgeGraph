@@ -63,7 +63,7 @@ public:: true
       {"@id": "urn:ngm:class:embodied-ai-simulation", "label": "Embodied AI Simulation"},
       {"@id": "urn:ngm:class:autonomous-agent", "label": "Autonomous Agent"},
       {"@id": "urn:ngm:class:physics-simulation", "label": "Physics Simulation"},
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"},
       {"@id": "urn:ngm:class:simulation", "label": "Simulation"}
     ]
   },

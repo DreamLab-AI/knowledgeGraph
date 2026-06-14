@@ -68,7 +68,7 @@ public:: true
     ],
     "requires": [
       {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"}
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:empathetic-ai", "label": "Empathetic AI"},

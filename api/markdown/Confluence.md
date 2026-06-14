@@ -23,7 +23,7 @@ public:: true
   "definition": "Confluence is a team workspace and wiki product developed by Atlassian for collaborative documentation, knowledge management, and project information sharing. It organises content into spaces and pages with rich editing, versioning, and tight integration with issue-tracking tools such as Jira. It is widely deployed as a digital-workplace platform for enterprise knowledge capture.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:dc-workspace-tools", "label": "Digital Collaboration Workspace Tools"}],
+  "subClassOf": [{"@id": "urn:ngm:class:dc-workspace-tools", "label": "Workspace Tools"}],
   "relations": {
     "relatedTo": [{"@id": "urn:ngm:class:collaborative-systems-modality-whiteboard", "label": "Collaborative Whiteboard"}, {"@id": "urn:ngm:class:digital-workplace-platform", "label": "Digital Workplace Platform"}]
   },

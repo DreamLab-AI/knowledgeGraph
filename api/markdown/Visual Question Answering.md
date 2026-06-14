@@ -25,7 +25,7 @@ public:: true
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:vision-language-model", "label": "Vision-Language Model"}, {"@id": "urn:ngm:class:ar-frame", "label": "AR Frame"}]
+    "relatedTo": [{"@id": "urn:ngm:class:vision-language-model", "label": "Vision Language Model"}, {"@id": "urn:ngm:class:ar-frame", "label": "AR Frame"}]
   },
   "quality": 0.72
 }

@@ -54,7 +54,7 @@ public:: true
       {"@id": "urn:ngm:class:agent-memory", "label": "Agent Memory"}
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:plan-and-execute-pattern", "label": "Plan-and-Execute Pattern"},
+      {"@id": "urn:ngm:class:plan-and-execute-pattern", "label": "Plan and Execute Pattern"},
       {"@id": "urn:ngm:class:reflection-pattern", "label": "Reflection Pattern"},
       {"@id": "urn:ngm:class:tool-call-loop", "label": "Tool Call Loop"}
     ],
@@ -67,7 +67,7 @@ public:: true
       {"@id": "urn:ngm:class:traditional-workflow-orchestration", "label": "Traditional Workflow Orchestration"}
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:human-in-the-loop", "label": "Human-in-the-Loop"},
+      {"@id": "urn:ngm:class:human-in-the-loop", "label": "Human in the Loop"},
       {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},
       {"@id": "urn:ngm:class:prompt-injection", "label": "Prompt Injection"}
     ]

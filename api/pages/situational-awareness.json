@@ -9,7 +9,7 @@
   "subClassOf": [
     {
       "id": "urn:ngm:class:robotics",
-      "label": "Robotics Domain"
+      "label": "Robotics"
     }
   ],
   "entityType": "Class",

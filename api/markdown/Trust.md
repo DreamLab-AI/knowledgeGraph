@@ -68,7 +68,7 @@ public:: true
     ],
     "standardizedBy": [
       {"@id": "urn:ngm:class:nist-ai-rmf", "label": "NIST AI RMF"},
-      {"@id": "urn:ngm:class:iso-iec-42001", "label": "ISO/IEC 42001"},
+      {"@id": "urn:ngm:class:iso-iec-42001", "label": "ISO IEC 42001"},
       {"@id": "urn:ngm:class:eu-ai-act", "label": "EU AI Act"}
     ]
   },

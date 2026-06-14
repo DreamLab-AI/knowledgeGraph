@@ -9,7 +9,7 @@
   "subClassOf": [
     {
       "id": "urn:ngm:class:pre-training",
-      "label": "Pre-Training"
+      "label": "Pre Training"
     }
   ],
   "entityType": "Class",
@@ -19,11 +19,11 @@
     "hasPart": [
       {
         "id": "urn:ngm:class:pre-training",
-        "label": "Pre-Training"
+        "label": "Pre Training"
       },
       {
         "id": "urn:ngm:class:supervised-fine-tuning",
-        "label": "Supervised Fine-Tuning"
+        "label": "Supervised Fine Tuning"
       },
       {
         "id": "urn:ngm:class:alignment-stage",
@@ -55,7 +55,7 @@
       },
       {
         "id": "urn:ngm:class:fine-tuning",
-        "label": "Fine-Tuning"
+        "label": "Fine Tuning"
       },
       {
         "id": "urn:ngm:class:emergent-capability",
@@ -90,7 +90,7 @@
     "bridgesTo": [
       {
         "id": "urn:ngm:class:high-performance-computing",
-        "label": "High Performance Computing"
+        "label": "High-Performance Computing"
       },
       {
         "id": "urn:ngm:class:data-centre-infrastructure",

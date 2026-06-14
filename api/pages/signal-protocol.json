@@ -44,7 +44,7 @@
       },
       {
         "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
-        "label": "Public Key Cryptography"
+        "label": "Public-Key Cryptography"
       }
     ],
     "implements": [

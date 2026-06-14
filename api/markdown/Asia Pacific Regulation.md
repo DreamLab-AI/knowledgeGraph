@@ -1148,11 +1148,11 @@ public:: true
     },
     {
       "@id": "urn:ngm:class:ai-governance-and-ethics",
-      "label": "AI Governance And Ethics"
+      "label": "AI Governance and Ethics"
     },
     {
       "@id": "urn:ngm:class:ai-governance-and-ethics",
-      "label": "AI Governance And Ethics"
+      "label": "AI Governance and Ethics"
     }
   ],
   "relations": {
@@ -1295,7 +1295,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:model-cards",
-        "label": "Model Card"
+        "label": "Model Cards"
       },
       {
         "@id": "urn:ngm:class:regulatory-sandbox",

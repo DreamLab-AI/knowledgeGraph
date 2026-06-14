@@ -33,7 +33,7 @@ public:: true
   "subClassOf": [
     {
       "@id": "urn:ngm:class:bc-governance-and-regulation",
-      "label": "Blockchain Governance and Regulation"
+      "label": "Governance and Regulation"
     }
   ],
   "relations": {
@@ -66,7 +66,7 @@ public:: true
     ],
     "dependsOn": [
       {"@id": "urn:ngm:class:erc-20-votes", "label": "ERC-20 Votes"},
-      {"@id": "urn:ngm:class:token-weighted-voting", "label": "Token-weighted Voting"}
+      {"@id": "urn:ngm:class:token-weighted-voting", "label": "Token-Weighted Voting"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:decentralised-autonomous-organisation", "label": "Decentralised Autonomous Organisation"},

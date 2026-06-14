@@ -357,7 +357,7 @@ alias:: MotionCapture
     },
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
-      "label": "SC Content And Assets"
+      "label": "Content and Assets"
     }
   ],
   "relations": {
@@ -420,7 +420,7 @@ alias:: MotionCapture
     "enables": [
       {
         "@id": "urn:ngm:class:digital-humans",
-        "label": "Digital Human"
+        "label": "Digital Humans"
       },
       {
         "@id": "urn:ngm:class:film-vfx",
@@ -524,7 +524,7 @@ alias:: MotionCapture
       },
       {
         "@id": "urn:ngm:class:digital-twin",
-        "label": "Digital Twins"
+        "label": "Digital Twin"
       },
       {
         "@id": "urn:ngm:class:extended-reality",

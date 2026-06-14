@@ -72,7 +72,7 @@ public:: true
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:process-algebra", "label": "Process Algebra"},
-      {"@id": "urn:ngm:class:raft-consensus", "label": "Raft Consensus"}
+      {"@id": "urn:ngm:class:raft-consensus", "label": "RAFT Consensus"}
     ]
   },
   "sameAs": [

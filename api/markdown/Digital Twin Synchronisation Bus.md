@@ -179,7 +179,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:real-time-digital-twin-synchronization",
-        "label": "Real-Time Digital Twin Synchronization"
+        "label": "Real Time Digital Twin Synchronization"
       }
     ],
     "partOf": [

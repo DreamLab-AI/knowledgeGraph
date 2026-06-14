@@ -23,7 +23,7 @@ public:: true
   "definition": "A database management system (DBMS) is software that defines, stores, retrieves, secures and manages structured data while enforcing integrity, concurrency and durability. It mediates all access to the underlying database through a query interface and transaction manager, supporting models such as relational, document, key-value and graph. It is the foundational platform for persistent data services including ontology repositories and taxonomy registries.",
   "domain": "data",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:infra-data-management", "label": "Infrastructure Data Management"}],
+  "subClassOf": [{"@id": "urn:ngm:class:infra-data-management", "label": "Data Management"}],
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:digital-ontology-repository", "label": "Digital Ontology Repository"},

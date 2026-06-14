@@ -147,7 +147,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:long-term-preservation",
-        "label": "Long-term Preservation"
+        "label": "Long-Term Preservation"
       },
       {
         "@id": "urn:ngm:class:knowledge-graph-publication-classifier-access",
@@ -157,7 +157,7 @@ public:: true
     "partOf": [
       {
         "@id": "urn:ngm:class:etsi-metaverse-domain-taxonomy",
-        "label": "ETSI Metaverse Domain Taxonomy"
+        "label": "Etsi Metaverse Domain Taxonomy"
       }
     ]
   },

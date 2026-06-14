@@ -23,7 +23,7 @@ public:: true
   "definition": "Data lineage is the documented record of data's origins, movements, transformations and consumption as it flows through systems and pipelines. It maps how a data element is derived end to end, supporting impact analysis, debugging, audit and regulatory compliance. As a pillar of data governance and metadata management it makes data trustworthy by exposing its provenance.",
   "domain": "data",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:infra-data-management", "label": "Infrastructure Data Management"}],
+  "subClassOf": [{"@id": "urn:ngm:class:infra-data-management", "label": "Data Management"}],
   "relations": {
     "hasPart": [
       {"@id": "urn:ngm:class:data-provenance", "label": "Data Provenance"},
@@ -31,7 +31,7 @@ public:: true
       {"@id": "urn:ngm:class:data-transformation-record", "label": "Data Transformation Record"}
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance Domain"},
+      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"},
       {"@id": "urn:ngm:class:metadata-management", "label": "Metadata Management"}
     ],
     "requires": [

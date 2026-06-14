@@ -83,7 +83,7 @@ public:: true
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:ontology", "label": "Ontology"},
-      {"@id": "urn:ngm:class:scholarly-manuscript-composition-process", "label": "Paper Writing"}
+      {"@id": "urn:ngm:class:scholarly-manuscript-composition-process", "label": "Scholarly Manuscript Composition Process"}
     ]
   },
   "provenance": {

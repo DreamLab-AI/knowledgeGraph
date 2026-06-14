@@ -52,7 +52,7 @@ alias:: SelectiveDisclosure
     "implements": [
       {"@id": "urn:ngm:class:bbs-plus-signatures", "label": "BBS+ Signatures"},
       {"@id": "urn:ngm:class:sd-jwt", "label": "SD-JWT"},
-      {"@id": "urn:ngm:class:zk-snarks", "label": "zk-SNARKs"}
+      {"@id": "urn:ngm:class:zk-snarks", "label": "ZK-SNARKs"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"},
@@ -68,7 +68,7 @@ alias:: SelectiveDisclosure
     "supports": [
       {"@id": "urn:ngm:class:eidas-2", "label": "eIDAS 2.0"},
       {"@id": "urn:ngm:class:gdpr-compliance", "label": "GDPR Compliance"},
-      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self-Sovereign Identity"}
+      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self Sovereign Identity"}
     ],
     "contrastsWith": [
       {"@id": "urn:ngm:class:full-credential-presentation", "label": "Full Credential Presentation"},

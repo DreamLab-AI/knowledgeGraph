@@ -108,7 +108,7 @@
     "uses": [
       {
         "id": "urn:ngm:class:stable-diffusion-image-model",
-        "label": "Stable Diffusion"
+        "label": "Stable Diffusion Image Model"
       },
       {
         "id": "urn:ngm:class:diffusion-model",
@@ -142,7 +142,7 @@
     "relatedTo": [
       {
         "id": "urn:ngm:class:node-based-editor",
-        "label": "Node-Based Editor"
+        "label": "Node Based Editor"
       },
       {
         "id": "urn:ngm:class:open-source-software",

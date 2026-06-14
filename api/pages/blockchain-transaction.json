@@ -19,7 +19,7 @@
     "hasPart": [
       {
         "id": "urn:ngm:class:utxo",
-        "label": "UTXO (Unspent Transaction Output)"
+        "label": "UTXO"
       },
       {
         "id": "urn:ngm:class:transaction-input",

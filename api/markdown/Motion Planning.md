@@ -110,7 +110,7 @@ alias:: MotionPlanning
       {"@id": "urn:ngm:class:autonomous-vehicle", "label": "Autonomous Vehicle"},
       {"@id": "urn:ngm:class:autonomous-robot", "label": "Autonomous Robot"},
       {"@id": "urn:ngm:class:robotic-manipulation", "label": "Robotic Manipulation"},
-      {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human-Robot Interaction"}
+      {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human Robot Interaction"}
     ],
     "dependsOn": [
       {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},

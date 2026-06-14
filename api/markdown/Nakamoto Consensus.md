@@ -97,9 +97,9 @@ public:: true
       {"@id": "urn:ngm:class:permissionless-participation", "label": "Permissionless Participation"}
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof Of Stake"},
+      {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof of Stake"},
       {"@id": "urn:ngm:class:practical-byzantine-fault-tolerance", "label": "Practical Byzantine Fault Tolerance"},
-      {"@id": "urn:ngm:class:delegated-proof-of-stake", "label": "Delegated Proof Of Stake"}
+      {"@id": "urn:ngm:class:delegated-proof-of-stake", "label": "Delegated Proof of Stake"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:byzantine-fault-tolerance", "label": "Byzantine Fault Tolerance"},

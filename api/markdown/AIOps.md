@@ -53,7 +53,7 @@ public:: true
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-infrastructure",
-      "label": "AI Infrastructure (Category)"
+      "label": "AI Infrastructure"
     }
   ],
   "relations": {
@@ -63,7 +63,7 @@ public:: true
       {"@id": "urn:ngm:class:ai-incident", "label": "AI Incident"}
     ],
     "requires": [
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"},
       {"@id": "urn:ngm:class:data-pipeline", "label": "Data Pipeline"},
       {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
     ],

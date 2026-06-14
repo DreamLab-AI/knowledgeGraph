@@ -9,7 +9,7 @@
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-network-component",
-      "label": "BC Network Component"
+      "label": "Network Component"
     }
   ],
   "entityType": "Class",
@@ -81,7 +81,7 @@
     "bridgesTo": [
       {
         "id": "urn:ngm:class:self-sovereign-identity",
-        "label": "Self-Sovereign Identity"
+        "label": "Self Sovereign Identity"
       },
       {
         "id": "urn:ngm:class:verifiable-credential",

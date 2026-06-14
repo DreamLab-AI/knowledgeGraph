@@ -145,7 +145,7 @@ public:: true
     "requires": [
       {
         "@id": "urn:ngm:class:brain-computer-interfaces",
-        "label": "Brain-Computer Interface"
+        "label": "Brain Computer Interfaces"
       },
       {
         "@id": "urn:ngm:class:cognitive-model",
@@ -157,7 +157,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning"
+        "label": "Machine Learning Discipline"
       }
     ],
     "enables": [
@@ -175,7 +175,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:attention-aware-interaction",
-        "label": "Attention-Aware Interaction"
+        "label": "Attention Aware Interaction"
       }
     ]
   },

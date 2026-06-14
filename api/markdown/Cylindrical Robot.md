@@ -136,11 +136,11 @@ public:: true
     },
     {
       "@id": "urn:ngm:class:robo-robot-type",
-      "label": "Robo Robot Type"
+      "label": "Robot Type"
     },
     {
       "@id": "urn:ngm:class:robo-actuation-and-control",
-      "label": "Robo Actuation And Control"
+      "label": "Actuation and Control"
     }
   ],
   "relations": {

@@ -23,7 +23,7 @@ public:: true
   "definition": "Standardized formats are openly specified, consistently structured file and data encodings, such as glTF for 3D assets, USD for scene description, or VRM for avatars, that allow content to be created in one tool and faithfully consumed in another. By fixing geometry, material, animation, and metadata conventions, they decouple content from any single application or platform. They are the precondition for portability, archival longevity, and interoperability across the metaverse content pipeline.",
   "domain": "metaverse",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:sc-standards-and-interop", "label": "Supply-Chain Standards and Interoperability"}],
+  "subClassOf": [{"@id": "urn:ngm:class:sc-standards-and-interop", "label": "Standards and Interoperability"}],
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:avatar-portability", "label": "Avatar Portability"},

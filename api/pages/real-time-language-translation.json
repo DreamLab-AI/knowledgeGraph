@@ -20,7 +20,7 @@
     "requires": [
       {
         "id": "urn:ngm:class:neural-machine-translation",
-        "label": "NeuralMachineTranslation"
+        "label": "Neural Machine Translation"
       }
     ],
     "enables": [

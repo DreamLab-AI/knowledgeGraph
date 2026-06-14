@@ -25,7 +25,7 @@ alias:: Autonomous Systems
   "subClassOf": [
     {
       "@id": "urn:ngm:class:robo-robot-type",
-      "label": "Robo Robot Type"
+      "label": "Robot Type"
     }
   ],
   "sameAs": [
@@ -64,7 +64,7 @@ alias:: Autonomous Systems
       {"@id": "urn:ngm:class:control-theory", "label": "Control Theory"}
     ],
     "supports": [
-      {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human-Robot Interaction"},
+      {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human Robot Interaction"},
       {"@id": "urn:ngm:class:multi-robot-systems", "label": "Multi-Robot Systems"}
     ],
     "standardizedBy": [

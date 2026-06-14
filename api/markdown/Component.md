@@ -48,7 +48,7 @@ public:: true
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-infrastructure",
-      "label": "AI Infrastructure (Category)"
+      "label": "AI Infrastructure"
     }
   ],
   "relations": {

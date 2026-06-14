@@ -109,7 +109,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:de-fi-services",
-        "label": "DeFi Services"
+        "label": "De Fi Services"
       },
       {
         "@id": "urn:ngm:class:digital-ownership",

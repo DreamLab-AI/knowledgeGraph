@@ -23,7 +23,7 @@ public:: true
   "definition": "Legal evidence is information presented to a court or tribunal to establish facts in dispute, which must satisfy admissibility criteria such as authenticity, relevance, and chain of custody. In digital contexts it includes logs, signed records, timestamps, and cryptographic proofs that demonstrate integrity and origin. Sound evidence handling is essential for proving non-repudiation and supporting enforcement.",
   "domain": "security",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:infra-legal-and-regulatory", "label": "Infrastructure Legal and Regulatory"}],
+  "subClassOf": [{"@id": "urn:ngm:class:infra-legal-and-regulatory", "label": "Legal and Regulatory"}],
   "relations": {
     "relatedTo": [{"@id": "urn:ngm:class:evidence-collection", "label": "Evidence Collection"}, {"@id": "urn:ngm:class:non-repudiation", "label": "Non-Repudiation"}]
   },

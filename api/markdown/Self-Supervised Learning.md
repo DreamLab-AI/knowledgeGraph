@@ -39,7 +39,7 @@ alias:: SelfSupervisedLearning
       {"@id": "urn:ngm:class:pretext-task", "label": "Pretext Task"}
     ],
     "enables": [
-      {"@id": "urn:ngm:class:large-scale-pretrained-foundation-model", "label": "Foundation Models"},
+      {"@id": "urn:ngm:class:large-scale-pretrained-foundation-model", "label": "Large-Scale Pretrained Foundation Model"},
       {"@id": "urn:ngm:class:parameter-efficient-fine-tuning", "label": "Parameter-Efficient Fine-Tuning"},
       {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"},
       {"@id": "urn:ngm:class:zero-shot-learning", "label": "Zero-Shot Learning"}
@@ -51,7 +51,7 @@ alias:: SelfSupervisedLearning
     "uses": [
       {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"},
       {"@id": "urn:ngm:class:pretrained-model", "label": "Pretrained Model"},
-      {"@id": "urn:ngm:class:encoder-decoder-architecture", "label": "Encoder-Decoder Architecture"}
+      {"@id": "urn:ngm:class:encoder-decoder-architecture", "label": "Encoder Decoder Architecture"}
     ],
     "supports": [
       {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},

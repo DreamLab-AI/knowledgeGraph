@@ -68,7 +68,7 @@ public:: true
   "qualityScore": 0.7,
   "subClassOf": {
     "@id": "urn:ngm:class:bc-network-component",
-    "label": "Bc Network Component"
+    "label": "Network Component"
   },
   "relations": {
     "requires": [
@@ -78,7 +78,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:ethereum-smart-contract-platform",
-        "label": "Ethereum"
+        "label": "Ethereum Smart Contract Platform"
       },
       {
         "@id": "urn:ngm:class:threshold-signature-scheme",
@@ -100,7 +100,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:on-chain-governance",
-        "label": "On-Chain Governance"
+        "label": "On-chain Governance"
       },
       {
         "@id": "urn:ngm:class:spending-limit",
@@ -114,7 +114,7 @@ public:: true
     "implements": [
       {
         "@id": "urn:ngm:class:erc-4337",
-        "label": "ERC-4337 Account Abstraction"
+        "label": "ERC-4337"
       },
       {
         "@id": "urn:ngm:class:erc-1271",

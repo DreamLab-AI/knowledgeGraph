@@ -599,11 +599,11 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:neural-network-text-tokenisation",
-        "label": "Tokenisation"
+        "label": "Neural Network Text Tokenisation"
       },
       {
         "@id": "urn:ngm:class:zero-knowledge-proof",
-        "label": "Zero Knowledge Proof"
+        "label": "Zero-Knowledge Proof"
       }
     ],
     "relatedTo": [
@@ -653,7 +653,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:ethereum-smart-contract-platform",
-        "label": "Ethereum"
+        "label": "Ethereum Smart Contract Platform"
       },
       {
         "@id": "urn:ngm:class:solana",
@@ -661,7 +661,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:neural-network-text-tokenisation",
-        "label": "Tokenisation"
+        "label": "Neural Network Text Tokenisation"
       }
     ],
     "supports": [

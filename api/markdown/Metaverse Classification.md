@@ -71,7 +71,7 @@ public:: true
     "relatedTo": [
       {
         "@id": "urn:ngm:class:metaverse",
-        "label": "Metaverse Domain"
+        "label": "Metaverse"
       },
       {
         "@id": "urn:ngm:class:metaverse-ontology",

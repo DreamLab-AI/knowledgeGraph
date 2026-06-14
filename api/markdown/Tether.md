@@ -142,11 +142,11 @@ public:: true
     "partOf": [
       {
         "@id": "urn:ngm:class:digital-asset",
-        "label": "Digital Asset Domain"
+        "label": "Digital Asset"
       },
       {
         "@id": "urn:ngm:class:decentralised-finance",
-        "label": "Decentralised Finance Domain"
+        "label": "Decentralised Finance"
       }
     ],
     "dependsOn": [
@@ -172,7 +172,7 @@ public:: true
     "bridgesTo": [
       {
         "@id": "urn:ngm:class:infra-legal-and-regulatory",
-        "label": "Regulatory Domain"
+        "label": "Legal and Regulatory"
       },
       {
         "@id": "urn:ngm:class:financial-regulation",

@@ -48,7 +48,7 @@ public:: true
     },
     {
       "@id": "urn:ngm:class:digital-human-avatar-representation",
-      "label": "Humans, Avatars , Character"
+      "label": "Digital Human Avatar Representation"
     }
   ],
   "relations": {

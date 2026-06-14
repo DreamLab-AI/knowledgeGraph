@@ -92,7 +92,7 @@ public:: true
       {"@id": "urn:ngm:class:avatar-streaming", "label": "Avatar Streaming"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:quality-of-service", "label": "Quality of Service"},
+      {"@id": "urn:ngm:class:quality-of-service", "label": "Quality Of Service"},
       {"@id": "urn:ngm:class:end-to-end-encryption", "label": "End-to-End Encryption"},
       {"@id": "urn:ngm:class:content-delivery-network", "label": "Content Delivery Network"}
     ]

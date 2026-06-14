@@ -379,7 +379,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:structure-from-motion",
-        "label": "Structure from Motion"
+        "label": "Structure-from-Motion"
       }
     ],
     "enables": [
@@ -465,7 +465,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:structure-from-motion",
-        "label": "Structure from Motion"
+        "label": "Structure-from-Motion"
       }
     ],
     "relatedTo": [
@@ -537,7 +537,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:spatial-computing",
-        "label": "Spatial Computing System"
+        "label": "Spatial Computing"
       },
       {
         "@id": "urn:ngm:class:apple-mixed-reality-headset",

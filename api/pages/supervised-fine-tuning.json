@@ -51,7 +51,7 @@
       },
       {
         "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
-        "label": "Reinforcement Learning From Human Feedback"
+        "label": "Reinforcement Learning from Human Feedback"
       },
       {
         "id": "urn:ngm:class:instruction-following",
@@ -113,7 +113,7 @@
     "uses": [
       {
         "id": "urn:ngm:class:parameter-efficient-fine-tuning",
-        "label": "Parameter Efficient Fine Tuning"
+        "label": "Parameter-Efficient Fine-Tuning"
       },
       {
         "id": "urn:ngm:class:lora",

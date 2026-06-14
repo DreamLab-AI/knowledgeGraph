@@ -63,7 +63,7 @@ elevatedFrom:: [[Agentic Workshop]]
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:agent-frameworks", "label": "Agent Frameworks"},
-      {"@id": "urn:ngm:class:generative-ai-development-methodology", "label": "Advice for developing GenAI"}
+      {"@id": "urn:ngm:class:generative-ai-development-methodology", "label": "Generative AI Development Methodology"}
     ]
   },
   "quality": 0.5,

@@ -96,7 +96,7 @@ alias:: AI & Machine Learning
       },
       {
         "@id": "urn:ngm:class:neural-network-architecture",
-        "label": "Neural Network Architectures"
+        "label": "Neural Network Architecture"
       },
       {
         "@id": "urn:ngm:class:training-data",

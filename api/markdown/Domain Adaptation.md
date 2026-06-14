@@ -65,14 +65,14 @@ public:: true
     "contrastsWith": [
       {"@id": "urn:ngm:class:domain-generalisation", "label": "Domain Generalisation"},
       {"@id": "urn:ngm:class:multi-task-learning", "label": "Multi Task Learning"},
-      {"@id": "urn:ngm:class:meta-learning", "label": "Meta Learning"}
+      {"@id": "urn:ngm:class:meta-learning", "label": "Meta-Learning"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:knowledge-distillation", "label": "Knowledge Distillation"},
       {"@id": "urn:ngm:class:covariate-shift", "label": "Covariate Shift"},
       {"@id": "urn:ngm:class:concept-drift", "label": "Concept Drift"},
       {"@id": "urn:ngm:class:distribution-shift", "label": "Distribution Shift"},
-      {"@id": "urn:ngm:class:parameter-efficient-fine-tuning", "label": "Parameter Efficient Fine Tuning"}
+      {"@id": "urn:ngm:class:parameter-efficient-fine-tuning", "label": "Parameter-Efficient Fine-Tuning"}
     ],
     "bridgesTo": [
       {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"},

@@ -114,7 +114,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:whole-body-control",
-        "label": "Whole-Body Control"
+        "label": "Whole Body Control"
       },
       {
         "@id": "urn:ngm:class:joint-configuration",
@@ -184,7 +184,7 @@ public:: true
     "bridgesTo": [
       {
         "@id": "urn:ngm:class:human-robot-interaction",
-        "label": "Human-Robot Interaction"
+        "label": "Human Robot Interaction"
       },
       {
         "@id": "urn:ngm:class:spatial-computing",

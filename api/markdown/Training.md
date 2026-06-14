@@ -60,7 +60,7 @@ public:: true
     "enables": [
       {"@id": "urn:ngm:class:inference", "label": "Inference"},
       {"@id": "urn:ngm:class:machine-learning-model", "label": "Machine Learning Model"},
-      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine-Tuning"},
+      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine Tuning"},
       {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"}
     ],
     "uses": [

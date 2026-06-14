@@ -133,7 +133,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:feed-forward-network",
-        "label": "Feed-Forward Network"
+        "label": "Feed Forward Network"
       },
       {
         "@id": "urn:ngm:class:layer-normalisation",
@@ -157,7 +157,7 @@ public:: true
     "enables": [
       {
         "@id": "urn:ngm:class:large-scale-pretrained-foundation-model",
-        "label": "Foundation Model"
+        "label": "Large-Scale Pretrained Foundation Model"
       },
       {
         "@id": "urn:ngm:class:bert",
@@ -169,7 +169,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Model"
+        "label": "Large Language Models"
       },
       {
         "@id": "urn:ngm:class:in-context-learning",
@@ -231,11 +231,11 @@ public:: true
     "relatedTo": [
       {
         "@id": "urn:ngm:class:large-scale-pretrained-foundation-model",
-        "label": "Foundation Model"
+        "label": "Large-Scale Pretrained Foundation Model"
       },
       {
         "@id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Model"
+        "label": "Large Language Models"
       },
       {
         "@id": "urn:ngm:class:attention-mechanism",

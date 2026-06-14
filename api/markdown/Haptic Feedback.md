@@ -162,7 +162,7 @@ alias:: HapticFeedback
       },
       {
         "@id": "urn:ngm:class:human-computer-interaction",
-        "label": "Human-Computer Interaction"
+        "label": "Human Computer Interaction"
       }
     ],
     "requires": [
@@ -234,7 +234,7 @@ alias:: HapticFeedback
       },
       {
         "@id": "urn:ngm:class:iso-standards",
-        "label": "ISO Standards"
+        "label": "Iso Standards"
       }
     ],
     "contrastsWith": [
@@ -264,7 +264,7 @@ alias:: HapticFeedback
       },
       {
         "@id": "urn:ngm:class:metaverse",
-        "label": "Metaverse Domain"
+        "label": "Metaverse"
       },
       {
         "@id": "urn:ngm:class:digital-twin",

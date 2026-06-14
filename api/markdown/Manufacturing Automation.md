@@ -23,7 +23,7 @@ public:: true
   "definition": "Manufacturing automation is the systematic application of control technologies, robotics, sensors, machine vision, and software to perform production tasks with minimal human intervention across discrete, process, and hybrid manufacturing environments. It encompasses programmable logic controllers (PLCs), industrial robots, computer numerical control (CNC) machines, distributed control systems (DCS), and integrated supervisory architectures that coordinate material flow, quality inspection, and assembly operations. Modern implementations leverage AI-driven process optimisation, digital twin synchronisation, and edge-cloud hybrid architectures to achieve adaptive, self-correcting production lines capable of real-time reconfiguration. The discipline aims to increase throughput, improve consistency, reduce cycle times, and enhance worker safety by reassigning operators away from hazardous or highly repetitive tasks.",
   "domain": "robotics",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:industrial-automation", "label": "Industrial Automation"}],
+  "subClassOf": [{"@id": "urn:ngm:class:industrial-automation", "label": "IndustrialAutomation"}],
   "relations": {
     "hasPart": [
       {"@id": "urn:ngm:class:industrial-robot", "label": "Industrial Robot"},

@@ -30,7 +30,7 @@
     "relatedTo": [
       {
         "id": "urn:ngm:class:real-time-translation",
-        "label": "Real-Time Translation"
+        "label": "Real-time Translation"
       },
       {
         "id": "urn:ngm:class:accessibility",

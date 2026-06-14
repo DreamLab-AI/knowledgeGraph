@@ -30,11 +30,11 @@
     "relatedTo": [
       {
         "id": "urn:ngm:class:lo-ra-do-ra-etc",
-        "label": "LoRA, DoRA, etc"
+        "label": "LoRA DoRA etc"
       },
       {
         "id": "urn:ngm:class:hyper-personalisation",
-        "label": "Hyper-Personalisation"
+        "label": "Hyper personalisation"
       }
     ]
   },

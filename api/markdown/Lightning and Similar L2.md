@@ -675,13 +675,13 @@ public:: true
   "maturity": "emerging",
   "subClassOf": {
     "@id": "urn:ngm:class:layer2",
-    "label": "Layer 2"
+    "label": "Layer2"
   },
   "relations": {
     "hasPart": [
       {"@id": "urn:ngm:class:lightning-network", "label": "Lightning Network"},
       {"@id": "urn:ngm:class:payment-channels", "label": "Payment Channels"},
-      {"@id": "urn:ngm:class:hash-time-locked-contract", "label": "Hash Time Locked Contract"},
+      {"@id": "urn:ngm:class:hash-time-locked-contract", "label": "Hash Time-Locked Contract"},
       {"@id": "urn:ngm:class:watchtower", "label": "Watchtower"}
     ],
     "partOf": [

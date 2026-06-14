@@ -63,7 +63,7 @@ public:: true
     ],
     "enables": [
       {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"},
-      {"@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure", "label": "Public-Key Infrastructure"},
+      {"@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure", "label": "Public Key Infrastructure"},
       {"@id": "urn:ngm:class:censorship-resistance", "label": "Censorship Resistance"}
     ],
     "uses": [
@@ -75,7 +75,7 @@ public:: true
       {"@id": "urn:ngm:class:cybersecurity-standard", "label": "Cybersecurity Standard"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:quantum-computation-paradigm", "label": "Quantum Computing"},
+      {"@id": "urn:ngm:class:quantum-computation-paradigm", "label": "Quantum Computation Paradigm"},
       {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"},
       {"@id": "urn:ngm:class:blockchain-application", "label": "Blockchain Application"},
       {"@id": "urn:ngm:class:digital-signature-verification", "label": "Digital Signature Verification"}

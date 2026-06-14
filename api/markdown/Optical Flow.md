@@ -23,7 +23,7 @@ public:: true
   "definition": "Optical flow is the pattern of apparent motion of objects, surfaces, and edges in a visual scene between consecutive frames of video, caused by relative movement between the observer and the scene. It is computed as a dense or sparse 2D velocity field over the image plane and is used in computer vision for motion estimation, video interpolation, action recognition, and autonomous navigation. Classical algorithms (Horn-Schunck, Lucas-Kanade) and deep learning approaches (RAFT, FlowNet) constitute the main methodological lineages.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:ai-technique", "label": "Ai Technique"}],
+  "subClassOf": [{"@id": "urn:ngm:class:ai-technique", "label": "AI Technique"}],
   "relations": {
     "enables": [
       {"@id": "urn:ngm:class:motion-capture-technology", "label": "Motion Capture Technology"},

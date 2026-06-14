@@ -59,7 +59,7 @@
       },
       {
         "id": "urn:ngm:class:midjourney-text-to-image-service",
-        "label": "Midjourney"
+        "label": "Midjourney Text-to-Image Service"
       },
       {
         "id": "urn:ngm:class:prompt-engineering",
@@ -73,7 +73,7 @@
       },
       {
         "id": "urn:ngm:class:large-scale-compute",
-        "label": "Large Scale Compute"
+        "label": "Large-Scale Compute"
       },
       {
         "id": "urn:ngm:class:latent-diffusion-architecture",
@@ -227,7 +227,7 @@
       },
       {
         "id": "urn:ngm:class:iso-iec-jtc-1-sc-42",
-        "label": "ISO/IEC JTC1 SC42"
+        "label": "ISO/IEC JTC 1/SC 42"
       },
       {
         "id": "urn:ngm:class:nist-ai-rmf",
@@ -235,7 +235,7 @@
       },
       {
         "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
-        "label": "EU AI Act"
+        "label": "EU AI Act Regulatory Instrument"
       }
     ],
     "partOf": [],

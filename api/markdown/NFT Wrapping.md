@@ -143,7 +143,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:cross-chain-asset-transfer",
-        "label": "Cross-Chain Asset Transfer"
+        "label": "Cross Chain Asset Transfer"
       },
       {
         "@id": "urn:ngm:class:enhanced-token-functionality",

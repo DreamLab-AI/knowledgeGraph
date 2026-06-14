@@ -9,7 +9,7 @@
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-computing-and-cloud",
-      "label": "Infrastructure Computing and Cloud"
+      "label": "Computing and Cloud"
     }
   ],
   "entityType": "Class",
@@ -30,7 +30,7 @@
     "relatedTo": [
       {
         "id": "urn:ngm:class:stable-coins",
-        "label": "Stablecoins"
+        "label": "Stable Coins"
       },
       {
         "id": "urn:ngm:class:payment-processor",

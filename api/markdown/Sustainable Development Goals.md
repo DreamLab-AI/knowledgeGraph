@@ -35,7 +35,7 @@ public:: true
       {"@id": "urn:ngm:class:un-global-governance-framework", "label": "UN Global Governance Framework"}
     ],
     "requires": [
-      {"@id": "urn:ngm:class:sustainability-reporting", "label": "Sustainability Reporting"},
+      {"@id": "urn:ngm:class:sustainability-reporting", "label": "SustainabilityReporting"},
       {"@id": "urn:ngm:class:environmental-sustainability", "label": "Environmental Sustainability"},
       {"@id": "urn:ngm:class:multilateral-cooperation", "label": "Multilateral Cooperation"},
       {"@id": "urn:ngm:class:official-development-assistance", "label": "Official Development Assistance"}

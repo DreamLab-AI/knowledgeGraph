@@ -23,7 +23,7 @@ public:: true
   "definition": "Vision-language-action (VLA) models are foundation models that jointly process visual observations and natural-language instructions to produce executable action sequences for embodied agents such as robots. Extending vision-language models with an action-generation head, VLAs are trained on large datasets pairing perception and instructions with demonstrated behaviour, enabling generalisation across tasks, objects, and embodiments. They represent a convergence of multimodal learning and robotics, aiming for generalist policies that follow open-ended commands rather than executing narrowly scripted skills.",
   "domain": "ai",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:vision-language-model", "label": "Vision-Language Model"}],
+  "subClassOf": [{"@id": "urn:ngm:class:vision-language-model", "label": "Vision Language Model"}],
   "relations": {
     "uses": [
       {"@id": "urn:ngm:class:multimodal-ai-architecture-learning", "label": "Multimodal Learning"},

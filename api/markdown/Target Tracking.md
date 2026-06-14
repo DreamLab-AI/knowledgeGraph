@@ -36,7 +36,7 @@ public:: true
       {"@id": "urn:ngm:class:spatial-tracking-system", "label": "Spatial Tracking System"}
     ],
     "enables": [
-      {"@id": "urn:ngm:class:human-pose-slam-capture-system", "label": "Human tracking and SLAM capture"},
+      {"@id": "urn:ngm:class:human-pose-slam-capture-system", "label": "Human Pose SLAM Capture System"},
       {"@id": "urn:ngm:class:anomaly-detection", "label": "Anomaly Detection"}
     ]
   },

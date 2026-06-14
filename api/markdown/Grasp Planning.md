@@ -35,7 +35,7 @@ alias:: GraspPlanning
       {"@id": "urn:ngm:class:collision-detection", "label": "Collision Detection"}
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:end-effector", "label": "End-Effector"},
+      {"@id": "urn:ngm:class:end-effector", "label": "End Effector"},
       {"@id": "urn:ngm:class:inverse-kinematics", "label": "Inverse Kinematics"},
       {"@id": "urn:ngm:class:object-recognition", "label": "Object Recognition"},
       {"@id": "urn:ngm:class:3d-shape-representation", "label": "3D Shape Representation"}

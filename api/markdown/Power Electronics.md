@@ -60,7 +60,7 @@ public:: true
   "qualityScore": 0.7,
   "subClassOf": {
     "@id": "urn:ngm:class:embedded-systems",
-    "label": "Embedded Systems Domain"
+    "label": "Embedded Systems"
   },
   "relations": {
     "hasPart": [
@@ -84,7 +84,7 @@ public:: true
     "partOf": [
       {
         "@id": "urn:ngm:class:embedded-systems",
-        "label": "Embedded Systems Domain"
+        "label": "Embedded Systems"
       }
     ],
     "requires": [

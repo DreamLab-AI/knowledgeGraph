@@ -84,7 +84,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:self-sovereign-identity",
-        "label": "Self-Sovereign Identity"
+        "label": "Self Sovereign Identity"
       },
       {
         "@id": "urn:ngm:class:decentralised-authentication",
@@ -132,7 +132,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:privacy-by-design",
-        "label": "Privacy by Design"
+        "label": "Privacy By Design"
       }
     ],
     "contrastsWith": [

@@ -27,7 +27,7 @@ public:: true
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:blockchain-analysis", "label": "Blockchain Analysis"},
-      {"@id": "urn:ngm:class:aml-kyc-compliance", "label": "AML/KYC Compliance"}
+      {"@id": "urn:ngm:class:aml-kyc-compliance", "label": "AML KYC Compliance"}
     ]
   },
   "quality": 0.72

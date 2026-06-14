@@ -195,7 +195,7 @@ public:: true
     "contrastsWith": [
       {
         "@id": "urn:ngm:class:non-player-character",
-        "label": "Non-Player Character"
+        "label": "Non Player Character"
       },
       {
         "@id": "urn:ngm:class:ai-agent",
@@ -209,7 +209,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:self-sovereign-identity",
-        "label": "Self-Sovereign Identity"
+        "label": "Self Sovereign Identity"
       }
     ],
     "relatedTo": [

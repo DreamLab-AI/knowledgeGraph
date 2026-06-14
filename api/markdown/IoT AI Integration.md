@@ -53,7 +53,7 @@ public:: true
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-infrastructure",
-      "label": "AI Infrastructure (Category)"
+      "label": "AI Infrastructure"
     }
   ],
   "relations": {
@@ -66,7 +66,7 @@ public:: true
       {"@id": "urn:ngm:class:internet-of-things", "label": "Internet of Things"},
       {"@id": "urn:ngm:class:embedded-systems", "label": "Embedded Systems"},
       {"@id": "urn:ngm:class:mqtt", "label": "MQTT"},
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"}
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:anomaly-detection", "label": "Anomaly Detection"},

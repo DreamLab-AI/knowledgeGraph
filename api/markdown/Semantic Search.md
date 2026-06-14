@@ -469,7 +469,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:knowledge-graph",
-        "label": "Knowledge Graphs"
+        "label": "Knowledge Graph"
       },
       {
         "@id": "urn:ngm:class:ontology",

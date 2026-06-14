@@ -21,7 +21,7 @@
     "enables": [
       {
         "id": "urn:ngm:class:time-series-forecasting",
-        "label": "Time-Series Forecasting"
+        "label": "Time Series Forecasting"
       },
       {
         "id": "urn:ngm:class:anomaly-detection",
@@ -57,7 +57,7 @@
       },
       {
         "id": "urn:ngm:class:prediction-markets",
-        "label": "Prediction Market"
+        "label": "Prediction Markets"
       }
     ]
   },

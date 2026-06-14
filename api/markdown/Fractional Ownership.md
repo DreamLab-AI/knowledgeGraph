@@ -66,7 +66,7 @@ public:: true
     "relatedTo": [
       {"@id": "urn:ngm:class:digital-ownership", "label": "Digital Ownership"},
       {"@id": "urn:ngm:class:digital-property-rights", "label": "Digital Property Rights"},
-      {"@id": "urn:ngm:class:digital-technology-access-equity", "label": "Equity"},
+      {"@id": "urn:ngm:class:digital-technology-access-equity", "label": "Digital Technology Access Equity"},
       {"@id": "urn:ngm:class:secondary-market", "label": "Secondary Market"}
     ]
   },

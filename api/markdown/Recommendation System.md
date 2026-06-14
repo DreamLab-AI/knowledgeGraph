@@ -61,7 +61,7 @@ alias:: RecommendationSystem
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:video-streaming", "label": "Video Streaming"},
-      {"@id": "urn:ngm:class:social-media-platform-infrastructure", "label": "Social Media"},
+      {"@id": "urn:ngm:class:social-media-platform-infrastructure", "label": "Social Media Platform Infrastructure"},
       {"@id": "urn:ngm:class:information-retrieval", "label": "Information Retrieval"},
       {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
     ]

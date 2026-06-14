@@ -165,11 +165,11 @@ alias:: Infrared Sensor
     },
     {
       "@id": "urn:ngm:class:robo-perception",
-      "label": "Robo Perception"
+      "label": "Perception and Sensing"
     },
     {
       "@id": "urn:ngm:class:robo-perception",
-      "label": "Robo Perception"
+      "label": "Perception and Sensing"
     }
   ],
   "relations": {
@@ -196,7 +196,7 @@ alias:: Infrared Sensor
       },
       {
         "@id": "urn:ngm:class:signal-amplifier",
-        "label": "SignalAmplifier"
+        "label": "Signal Amplifier"
       }
     ],
     "requires": [
@@ -214,17 +214,17 @@ alias:: Infrared Sensor
       },
       {
         "@id": "urn:ngm:class:power-supply",
-        "label": "PowerSupply"
+        "label": "Power Supply"
       },
       {
         "@id": "urn:ngm:class:signal-processing",
-        "label": "SignalProcessing"
+        "label": "Signal Processing"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:gesture-recognition",
-        "label": "GestureRecognition"
+        "label": "Gesture Recognition"
       },
       {
         "@id": "urn:ngm:class:line-following",
@@ -240,11 +240,11 @@ alias:: Infrared Sensor
       },
       {
         "@id": "urn:ngm:class:obstacle-avoidance",
-        "label": "ObstacleAvoidance"
+        "label": "Obstacle Avoidance"
       },
       {
         "@id": "urn:ngm:class:presence-detection",
-        "label": "PresenceDetection"
+        "label": "Presence Detection"
       }
     ]
   },

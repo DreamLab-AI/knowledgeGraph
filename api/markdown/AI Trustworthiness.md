@@ -191,7 +191,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:privacy-by-design",
-        "label": "Privacy by Design"
+        "label": "Privacy By Design"
       }
     ],
     "bridgesTo": [

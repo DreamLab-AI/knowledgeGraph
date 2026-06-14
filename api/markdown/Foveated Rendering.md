@@ -49,7 +49,7 @@ public:: true
       {"@id": "urn:ngm:class:level-of-detail", "label": "Level of Detail"},
       {"@id": "urn:ngm:class:rendering-pipeline", "label": "Rendering Pipeline"},
       {"@id": "urn:ngm:class:reprojection", "label": "Reprojection"},
-      {"@id": "urn:ngm:class:super-resolution", "label": "Super-Resolution"},
+      {"@id": "urn:ngm:class:super-resolution", "label": "Super Resolution"},
       {"@id": "urn:ngm:class:mipmap", "label": "Mipmap"}
     ],
     "enables": [

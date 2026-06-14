@@ -50,9 +50,9 @@ public:: true
       {"@id": "urn:ngm:class:model-documentation", "label": "Model Documentation"}
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:nist-ai-rmf", "label": "NIST AI Risk Management Framework"},
+      {"@id": "urn:ngm:class:nist-ai-rmf", "label": "NIST AI RMF"},
       {"@id": "urn:ngm:class:eu-ai-act", "label": "EU AI Act"},
-      {"@id": "urn:ngm:class:iso-iec-42001", "label": "ISO/IEC 42001"}
+      {"@id": "urn:ngm:class:iso-iec-42001", "label": "ISO IEC 42001"}
     ],
     "hasPart": [
       {"@id": "urn:ngm:class:failure-mode-analysis", "label": "Failure Mode Analysis"},

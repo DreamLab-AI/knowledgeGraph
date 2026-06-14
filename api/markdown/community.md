@@ -53,14 +53,14 @@ public:: true
   "subClassOf": [
     {
       "@id": "urn:ngm:class:dc-communication",
-      "label": "Dc Communication"
+      "label": "Communication Technology"
     }
   ],
   "relations": {
     "enables": [
       {
         "@id": "urn:ngm:class:open-source",
-        "label": "open source"
+        "label": "Open Source"
       }
     ]
   },

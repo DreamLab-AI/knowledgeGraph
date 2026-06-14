@@ -167,7 +167,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:mounting-interface",
-        "label": "MountingInterface"
+        "label": "Mounting Interface"
       },
       {
         "@id": "urn:ngm:class:surface-finish",
@@ -203,7 +203,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:kinematic-chain",
-        "label": "KinematicChain"
+        "label": "Kinematic Chain"
       },
       {
         "@id": "urn:ngm:class:motion-propagation",

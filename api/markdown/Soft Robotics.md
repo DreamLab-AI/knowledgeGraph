@@ -138,7 +138,7 @@ alias:: SoftRobotics
     ],
     "uses": [
       {"@id": "urn:ngm:class:physics-engine", "label": "Physics Engine"},
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"},
       {"@id": "urn:ngm:class:simulation", "label": "Simulation"},
       {"@id": "urn:ngm:class:generative-design", "label": "Generative Design"},
       {"@id": "urn:ngm:class:3d-printing", "label": "3D Printing"}

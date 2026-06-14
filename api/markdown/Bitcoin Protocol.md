@@ -61,7 +61,7 @@ public:: true
   "subClassOf": [
     {
       "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol",
-      "label": "Bitcoin"
+      "label": "Bitcoin Proof-of-Work Protocol"
     }
   ],
   "relations": {
@@ -94,7 +94,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:proof-of-work",
-        "label": "Proof of Work"
+        "label": "Proof Of Work"
       },
       {
         "@id": "urn:ngm:class:cryptographic-hash-function",

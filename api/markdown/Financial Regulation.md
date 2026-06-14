@@ -50,7 +50,7 @@
       {"@id": "urn:ngm:class:supervisory-authority", "label": "Supervisory Authority"}
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:basel-committee", "label": "Basel Committee on Banking Supervision"},
+      {"@id": "urn:ngm:class:basel-committee", "label": "Basel Committee"},
       {"@id": "urn:ngm:class:financial-stability-board", "label": "Financial Stability Board"},
       {"@id": "urn:ngm:class:iosco", "label": "IOSCO"},
       {"@id": "urn:ngm:class:fatf", "label": "FATF"}

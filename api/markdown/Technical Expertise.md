@@ -27,7 +27,7 @@ public:: true
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:ai-development", "label": "AI Development"},
-      {"@id": "urn:ngm:class:bio-terror", "label": "Bio-Terror"}
+      {"@id": "urn:ngm:class:bio-terror", "label": "Bio Terror"}
     ]
   },
   "quality": 0.72

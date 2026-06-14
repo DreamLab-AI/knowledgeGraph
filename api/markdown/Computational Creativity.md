@@ -25,7 +25,7 @@ public:: true
   "maturity": "emerging",
   "subClassOf": [{"@id": "urn:ngm:class:ai-research-area", "label": "AI Research Area"}],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:ai-in-games", "label": "AI in Games"}, {"@id": "urn:ngm:class:creative-ai", "label": "Creative AI Domain"}]
+    "relatedTo": [{"@id": "urn:ngm:class:ai-in-games", "label": "AI in Games"}, {"@id": "urn:ngm:class:creative-ai", "label": "Creative AI"}]
   },
   "quality": 0.72
 }

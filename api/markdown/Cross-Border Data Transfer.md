@@ -25,7 +25,7 @@ public:: true
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:asia-pacific-regulation", "label": "Asia-Pacific Regulation"}]
+    "relatedTo": [{"@id": "urn:ngm:class:asia-pacific-regulation", "label": "Asia Pacific Regulation"}]
   },
   "quality": 0.72
 }

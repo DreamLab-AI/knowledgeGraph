@@ -488,11 +488,11 @@ public:: true
     },
     {
       "@id": "urn:ngm:class:ai-governance-and-ethics",
-      "label": "AI Governance And Ethics"
+      "label": "AI Governance and Ethics"
     },
     {
       "@id": "urn:ngm:class:ai-governance-and-ethics",
-      "label": "AI Governance And Ethics"
+      "label": "AI Governance and Ethics"
     }
   ],
   "relations": {
@@ -601,7 +601,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
-        "label": "EU AI Act"
+        "label": "EU AI Act Regulatory Instrument"
       }
     ],
     "uses": [
@@ -633,7 +633,7 @@ public:: true
     "relatedTo": [
       {
         "@id": "urn:ngm:class:large-scale-pretrained-foundation-model",
-        "label": "Foundation Model"
+        "label": "Large-Scale Pretrained Foundation Model"
       },
       {
         "@id": "urn:ngm:class:frontier-ai",
@@ -701,11 +701,11 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:iso-iec-42001",
-        "label": "ISO/IEC 42001"
+        "label": "ISO IEC 42001"
       },
       {
         "@id": "urn:ngm:class:nist-ai-rmf",
-        "label": "NIST AI Risk Management Framework"
+        "label": "NIST AI RMF"
       },
       {
         "@id": "urn:ngm:class:product-liability-directive",
@@ -713,7 +713,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
-        "label": "EU AI Act"
+        "label": "EU AI Act Regulatory Instrument"
       }
     ]
   },

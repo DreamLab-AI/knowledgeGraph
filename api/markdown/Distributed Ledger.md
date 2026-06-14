@@ -685,11 +685,11 @@ alias:: DistributedLedger
     },
     {
       "@id": "urn:ngm:class:bc-network-component",
-      "label": "BC Network Component"
+      "label": "Network Component"
     },
     {
       "@id": "urn:ngm:class:bc-network-component",
-      "label": "BC Network Component"
+      "label": "Network Component"
     }
   ],
   "relations": {
@@ -726,7 +726,7 @@ alias:: DistributedLedger
     "requires": [
       {
         "@id": "urn:ngm:class:cryptographic-primitive",
-        "label": "Cryptographic Primitives"
+        "label": "Cryptographic Primitive"
       },
       {
         "@id": "urn:ngm:class:node-software",
@@ -756,7 +756,7 @@ alias:: DistributedLedger
       },
       {
         "@id": "urn:ngm:class:cbdcs",
-        "label": "CBDC"
+        "label": "CBDCs"
       },
       {
         "@id": "urn:ngm:class:cross-border-payments",
@@ -784,7 +784,7 @@ alias:: DistributedLedger
       },
       {
         "@id": "urn:ngm:class:neural-network-text-tokenisation",
-        "label": "Tokenisation"
+        "label": "Neural Network Text Tokenisation"
       }
     ],
     "implements": [
@@ -820,7 +820,7 @@ alias:: DistributedLedger
       },
       {
         "@id": "urn:ngm:class:merkle-tree",
-        "label": "Merkle Trees"
+        "label": "Merkle Tree"
       },
       {
         "@id": "urn:ngm:class:multi-party-computation",
@@ -832,7 +832,7 @@ alias:: DistributedLedger
       },
       {
         "@id": "urn:ngm:class:zero-knowledge-proof",
-        "label": "Zero Knowledge Proofs"
+        "label": "Zero-Knowledge Proof"
       },
       {
         "@id": "urn:ngm:class:digital-signatures",
@@ -842,7 +842,7 @@ alias:: DistributedLedger
     "relatedTo": [
       {
         "@id": "urn:ngm:class:cbdcs",
-        "label": "CBDC"
+        "label": "CBDCs"
       },
       {
         "@id": "urn:ngm:class:decentralised-finance",
@@ -866,7 +866,7 @@ alias:: DistributedLedger
       },
       {
         "@id": "urn:ngm:class:neural-network-text-tokenisation",
-        "label": "Tokenisation"
+        "label": "Neural Network Text Tokenisation"
       },
       {
         "@id": "urn:ngm:class:web3",
@@ -892,7 +892,7 @@ alias:: DistributedLedger
       },
       {
         "@id": "urn:ngm:class:tokenised-real-world-assets",
-        "label": "Tokenised Real-World Assets"
+        "label": "Tokenised Real World Assets"
       },
       {
         "@id": "urn:ngm:class:trade-finance",

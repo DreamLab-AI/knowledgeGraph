@@ -39,12 +39,12 @@ public:: true
     "uses": [
       {"@id": "urn:ngm:class:clock-synchronization", "label": "Clock Synchronization"},
       {"@id": "urn:ngm:class:traffic-scheduling", "label": "Traffic Scheduling"},
-      {"@id": "urn:ngm:class:quality-of-service", "label": "Quality of Service"}
+      {"@id": "urn:ngm:class:quality-of-service", "label": "Quality Of Service"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"},
       {"@id": "urn:ngm:class:deterministic-networking", "label": "Deterministic Networking"},
-      {"@id": "urn:ngm:class:industrial-automation", "label": "Industrial Automation"},
+      {"@id": "urn:ngm:class:industrial-automation", "label": "IndustrialAutomation"},
       {"@id": "urn:ngm:class:converged-network", "label": "Converged Network"}
     ],
     "standardizedBy": [

@@ -28,8 +28,8 @@ public:: true
     "hasPart": [
       {"@id": "urn:ngm:class:bip-32", "label": "BIP-32 HD Wallets"},
       {"@id": "urn:ngm:class:bip-141", "label": "BIP-141 SegWit"},
-      {"@id": "urn:ngm:class:bip-340", "label": "BIP-340 Schnorr Signatures"},
-      {"@id": "urn:ngm:class:bip-341", "label": "BIP-341 Taproot"},
+      {"@id": "urn:ngm:class:bip-340", "label": "BIP-340"},
+      {"@id": "urn:ngm:class:bip-341", "label": "BIP-341"},
       {"@id": "urn:ngm:class:bip-173", "label": "BIP-173 Bech32"}
     ],
     "partOf": [

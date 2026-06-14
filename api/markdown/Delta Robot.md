@@ -144,7 +144,7 @@ public:: true
     },
     {
       "@id": "urn:ngm:class:parallel-robot",
-      "label": "Parallel Robots"
+      "label": "Parallel Robot"
     },
     {
       "@id": "urn:ngm:class:industrial-robot",
@@ -163,7 +163,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:kinematic-chain",
-        "label": "Kinematic Chains"
+        "label": "Kinematic Chain"
       },
       {
         "@id": "urn:ngm:class:parallelogram-linkages",

@@ -84,7 +84,7 @@ alias:: TELE-105-real-time-language-translation
     "requires": [
       {
         "@id": "urn:ngm:class:neural-machine-translation",
-        "label": "NeuralMachineTranslation"
+        "label": "Neural Machine Translation"
       }
     ],
     "enables": [

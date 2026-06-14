@@ -77,7 +77,7 @@ public:: true
     ],
     "implements": [
       {"@id": "urn:ngm:class:microservices-architecture", "label": "Microservices Architecture"},
-      {"@id": "urn:ngm:class:event-driven-architecture", "label": "Event-Driven Architecture"}
+      {"@id": "urn:ngm:class:event-driven-architecture", "label": "Event Driven Architecture"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:restful-api", "label": "RESTful API"},

@@ -181,7 +181,7 @@ public:: true
     "standardizedBy": [
       {
         "@id": "urn:ngm:class:gltf-standard",
-        "label": "glTF Standard"
+        "label": "Gltf Standard"
       },
       {
         "@id": "urn:ngm:class:universal-scene-description",

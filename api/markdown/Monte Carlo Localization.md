@@ -133,7 +133,7 @@ alias:: RB-1014-monte-carlo-localization
     },
     {
       "@id": "urn:ngm:class:rb-1013-localization",
-      "label": "RB-1013-localization"
+      "label": "RB 1013 localization"
     }
   ],
   "relations": {

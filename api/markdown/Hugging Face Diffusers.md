@@ -33,7 +33,7 @@ public:: true
   "subClassOf": [
     {
       "@id": "urn:ngm:class:cat-ai-infrastructure",
-      "label": "Cat Ai Infrastructure"
+      "label": "AI Infrastructure"
     }
   ],
   "relations": {
@@ -52,13 +52,13 @@ public:: true
     "enables": [
       {"@id": "urn:ngm:class:image-generation", "label": "Image Generation"},
       {"@id": "urn:ngm:class:text-to-image", "label": "Text-to-Image"},
-      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine-Tuning"},
+      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine Tuning"},
       {"@id": "urn:ngm:class:audio-generation", "label": "Audio Generation"},
       {"@id": "urn:ngm:class:video-generation", "label": "Video Generation"},
       {"@id": "urn:ngm:class:inpainting", "label": "Inpainting"}
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:hugging-face-hub", "label": "Hugging Face Hub"},
+      {"@id": "urn:ngm:class:hugging-face-hub", "label": "HuggingFace Hub"},
       {"@id": "urn:ngm:class:transformers-library", "label": "Transformers Library"}
     ],
     "implements": [

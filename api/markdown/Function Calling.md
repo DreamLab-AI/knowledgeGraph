@@ -513,7 +513,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Model"
+        "label": "Large Language Models"
       },
       {
         "@id": "urn:ngm:class:tool-implementation",
@@ -557,7 +557,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:plan-and-execute-pattern",
-        "label": "Plan-and-Execute Pattern"
+        "label": "Plan and Execute Pattern"
       },
       {
         "@id": "urn:ngm:class:re-act-pattern",

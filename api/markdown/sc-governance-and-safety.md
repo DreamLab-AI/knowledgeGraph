@@ -42,7 +42,7 @@ public:: true
       {"@id": "urn:ngm:class:user-safety", "label": "User Safety"},
       {"@id": "urn:ngm:class:digital-safety", "label": "Digital Safety"},
       {"@id": "urn:ngm:class:risk-management", "label": "Risk Management"},
-      {"@id": "urn:ngm:class:spatial-embodiment-harm-taxonomy", "label": "Metaverse and Spatial Risks"}
+      {"@id": "urn:ngm:class:spatial-embodiment-harm-taxonomy", "label": "Spatial Embodiment Harm Taxonomy"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:sc-standards-and-interop", "label": "Standards and Interoperability"},

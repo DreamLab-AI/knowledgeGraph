@@ -53,7 +53,7 @@ alias:: Confidential-Transactions
       {"@id": "urn:ngm:class:homomorphic-commitment", "label": "Homomorphic Commitment"}
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:zk-snark", "label": "zk-SNARK"},
+      {"@id": "urn:ngm:class:zk-snark", "label": "ZK-SNARK"},
       {"@id": "urn:ngm:class:transparent-blockchain", "label": "Transparent Blockchain"},
       {"@id": "urn:ngm:class:public-transaction", "label": "Public Transaction"}
     ],

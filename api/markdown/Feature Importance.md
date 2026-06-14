@@ -100,7 +100,7 @@ public:: true
     ],
     "uses": [
       {"@id": "urn:ngm:class:dimensionality-reduction", "label": "Dimensionality Reduction"},
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"},
       {"@id": "urn:ngm:class:random-forest", "label": "Random Forest"},
       {"@id": "urn:ngm:class:gradient-boosting", "label": "Gradient Boosting"},
       {"@id": "urn:ngm:class:shapley-values", "label": "Shapley Values"}

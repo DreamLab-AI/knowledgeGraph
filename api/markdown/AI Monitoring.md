@@ -189,7 +189,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:monitoring-infrastructure",
-        "label": "Monitoring infrastructure"
+        "label": "Monitoring Infrastructure"
       },
       {
         "@id": "urn:ngm:class:data-logging",
@@ -249,7 +249,7 @@ public:: true
     "standardizedBy": [
       {
         "@id": "urn:ngm:class:iso-iec-42001-2023",
-        "label": "ISO/IEC 42001:2023"
+        "label": "ISO-IEC 42001 2023"
       },
       {
         "@id": "urn:ngm:class:nist-ai-risk-management-framework",
@@ -261,7 +261,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:iso-iec-23894-2023",
-        "label": "ISO/IEC 23894:2023"
+        "label": "ISO-IEC 23894 2023"
       }
     ],
     "contrastsWith": [

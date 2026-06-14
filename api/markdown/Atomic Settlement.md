@@ -55,7 +55,7 @@ public:: true
     ],
     "implements": [
       {"@id": "urn:ngm:class:acid-properties", "label": "ACID Properties"},
-      {"@id": "urn:ngm:class:delivery-versus-payment", "label": "Delivery-versus-Payment"}
+      {"@id": "urn:ngm:class:delivery-versus-payment", "label": "Delivery-Versus-Payment"}
     ],
     "supports": [
       {"@id": "urn:ngm:class:cbdc", "label": "Central Bank Digital Currency"},

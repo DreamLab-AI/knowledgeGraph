@@ -41,7 +41,7 @@ public:: true
       {"@id": "urn:ngm:class:neural-network-architecture", "label": "Neural Network Architecture"}
     ],
     "enables": [
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"}
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:hyperparameter", "label": "Hyperparameter"},

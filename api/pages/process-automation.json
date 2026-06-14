@@ -41,13 +41,13 @@
       },
       {
         "id": "urn:ngm:class:event-driven-architecture",
-        "label": "Event-Driven Architecture"
+        "label": "Event Driven Architecture"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:industrial-automation",
-        "label": "Industrial Automation"
+        "label": "IndustrialAutomation"
       },
       {
         "id": "urn:ngm:class:digital-transformation",

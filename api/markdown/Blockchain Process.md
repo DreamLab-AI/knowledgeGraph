@@ -62,7 +62,7 @@ public:: true
       {"@id": "urn:ngm:class:blockchain-network", "label": "Blockchain Network"}
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain Domain"}
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:blockchain-transaction", "label": "Blockchain Transaction"},

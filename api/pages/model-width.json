@@ -21,7 +21,7 @@
     "enables": [
       {
         "id": "urn:ngm:class:mixture-of-experts-architecture",
-        "label": "Mixture of Experts"
+        "label": "Mixture-of-Experts Architecture"
       }
     ],
     "dependsOn": [

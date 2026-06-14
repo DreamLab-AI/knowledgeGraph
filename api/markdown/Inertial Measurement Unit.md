@@ -67,7 +67,7 @@ public:: true
       {"@id": "urn:ngm:class:slam", "label": "SLAM"},
       {"@id": "urn:ngm:class:pose-estimation", "label": "Pose Estimation"},
       {"@id": "urn:ngm:class:gnss", "label": "GNSS"},
-      {"@id": "urn:ngm:class:lidar", "label": "LiDAR"},
+      {"@id": "urn:ngm:class:lidar", "label": "Lidar"},
       {"@id": "urn:ngm:class:allan-variance", "label": "Allan Variance"}
     ],
     "contrastsWith": [

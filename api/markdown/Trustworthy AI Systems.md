@@ -25,7 +25,7 @@ public:: true
   "maturity": "emerging",
   "subClassOf": [{"@id": "urn:ngm:class:ai-governance-and-ethics", "label": "AI Governance and Ethics"}],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:safety-and-alignment", "label": "Safety and Alignment"}, {"@id": "urn:ngm:class:model-transparency", "label": "Model Transparency"}]
+    "relatedTo": [{"@id": "urn:ngm:class:safety-and-alignment", "label": "Safety and alignment"}, {"@id": "urn:ngm:class:model-transparency", "label": "Model Transparency"}]
   },
   "quality": 0.72
 }

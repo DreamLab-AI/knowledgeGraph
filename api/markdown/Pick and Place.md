@@ -25,7 +25,7 @@ public:: true
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:manipulation", "label": "Manipulation"}],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:position-control", "label": "Position Control"}, {"@id": "urn:ngm:class:cylindrical-robot", "label": "Cylindrical Robot"}]
+    "relatedTo": [{"@id": "urn:ngm:class:position-control", "label": "PositionControl"}, {"@id": "urn:ngm:class:cylindrical-robot", "label": "Cylindrical Robot"}]
   },
   "quality": 0.72
 }

@@ -43,11 +43,11 @@
     "bridgesTo": [
       {
         "id": "urn:ngm:class:ai-governance-law-and-privacy",
-        "label": "Politics, Law, Privacy"
+        "label": "AI Governance Law and Privacy"
       },
       {
         "id": "urn:ngm:class:knowledge-artefact-update-cycle",
-        "label": "Update Cycle"
+        "label": "Knowledge Artefact Update Cycle"
       }
     ],
     "uses": [],
@@ -57,7 +57,7 @@
     "relatedTo": [
       {
         "id": "urn:ngm:class:ai-capability-temporal-horizon-framework",
-        "label": "Soon-Next-Later (AI futurology)"
+        "label": "AI Capability Temporal Horizon Framework"
       },
       {
         "id": "urn:ngm:class:trust-and-safety",

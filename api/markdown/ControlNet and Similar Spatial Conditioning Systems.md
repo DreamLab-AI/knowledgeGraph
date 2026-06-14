@@ -460,7 +460,7 @@ public:: true
     },
     {
       "@id": "urn:ngm:class:fine-tuning",
-      "label": "Fine-tuning"
+      "label": "Fine Tuning"
     }
   ],
   "relations": {
@@ -637,7 +637,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:stable-diffusion-image-model",
-        "label": "Stable Diffusion"
+        "label": "Stable Diffusion Image Model"
       }
     ],
     "supports": [
@@ -659,7 +659,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:node-based-diffusion-pipeline-interface",
-        "label": "ComfyUI"
+        "label": "Node-Based Diffusion Pipeline Interface"
       },
       {
         "@id": "urn:ngm:class:inpainting",
@@ -667,7 +667,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:lo-ra",
-        "label": "LoRA"
+        "label": "Lo RA"
       }
     ],
     "standardizedBy": [

@@ -30,7 +30,7 @@ public:: true
       {"@id": "urn:ngm:class:linked-data", "label": "Linked Data"}
     ],
     "enables": [
-      {"@id": "urn:ngm:class:semantic-web-linked-data-standard", "label": "Semantic Web"}
+      {"@id": "urn:ngm:class:semantic-web-linked-data-standard", "label": "Semantic Web Linked Data Standard"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:ontology", "label": "Ontology"},

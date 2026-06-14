@@ -26,7 +26,7 @@ public:: true
   "subClassOf": [{"@id": "urn:ngm:class:sc-display-and-rendering", "label": "Display and Rendering"}],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:ar-display-device", "label": "AR Display Device"},
+      {"@id": "urn:ngm:class:ar-display-device", "label": "Ar Display Device"},
       {"@id": "urn:ngm:class:display-hardware", "label": "Display Hardware"}
     ]
   },

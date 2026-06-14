@@ -97,7 +97,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:convolutional-neural-network",
-        "label": "Convolutional Neural Networks"
+        "label": "Convolutional Neural Network"
       },
       {
         "@id": "urn:ngm:class:style-representations",

@@ -118,7 +118,7 @@
     "supports": [
       {
         "id": "urn:ngm:class:human-in-the-loop",
-        "label": "Human-in-the-Loop"
+        "label": "Human in the Loop"
       },
       {
         "id": "urn:ngm:class:ai-safety",

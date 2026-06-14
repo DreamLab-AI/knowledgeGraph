@@ -431,7 +431,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:fine-tuning",
-        "label": "Fine-tuning"
+        "label": "Fine Tuning"
       }
     ],
     "implements": [
@@ -445,7 +445,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:hugging-face-hub",
-        "label": "Hugging Face Hub"
+        "label": "HuggingFace Hub"
       },
       {
         "@id": "urn:ngm:class:mlflow",
@@ -513,7 +513,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:hugging-face-hub",
-        "label": "Hugging Face Hub"
+        "label": "HuggingFace Hub"
       },
       {
         "@id": "urn:ngm:class:mlflow",
@@ -545,7 +545,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:lo-ra",
-        "label": "LoRA"
+        "label": "Lo RA"
       }
     ],
     "supports": [
@@ -567,11 +567,11 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:fine-tuning",
-        "label": "Fine-tuning"
+        "label": "Fine Tuning"
       },
       {
         "@id": "urn:ngm:class:large-scale-pretrained-foundation-model",
-        "label": "Foundation Models"
+        "label": "Large-Scale Pretrained Foundation Model"
       },
       {
         "@id": "urn:ngm:class:large-language-models",

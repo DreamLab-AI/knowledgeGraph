@@ -32,7 +32,7 @@ public:: true
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
-      "label": "SC Content and Assets"
+      "label": "Content and Assets"
     }
   ],
   "relations": {

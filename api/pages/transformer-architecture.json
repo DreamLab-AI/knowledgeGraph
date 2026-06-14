@@ -31,11 +31,11 @@
       },
       {
         "id": "urn:ngm:class:feed-forward-network",
-        "label": "Feed-Forward Network"
+        "label": "Feed Forward Network"
       },
       {
         "id": "urn:ngm:class:encoder-decoder-architecture",
-        "label": "Encoder-Decoder Architecture"
+        "label": "Encoder Decoder Architecture"
       },
       {
         "id": "urn:ngm:class:layer-normalisation",
@@ -100,7 +100,7 @@
     "uses": [
       {
         "id": "urn:ngm:class:self-attention",
-        "label": "Self-Attention"
+        "label": "Self Attention"
       },
       {
         "id": "urn:ngm:class:embedding",

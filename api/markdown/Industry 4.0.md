@@ -24,11 +24,11 @@ public:: true
   "domain": "infrastructure",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:industrial-automation", "label": "Industrial Automation"}
+    {"@id": "urn:ngm:class:industrial-automation", "label": "IndustrialAutomation"}
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:cyber-physical-systems", "label": "Cyber-Physical Systems"},
+      {"@id": "urn:ngm:class:cyber-physical-systems", "label": "Cyber Physical Systems"},
       {"@id": "urn:ngm:class:industrial-io-t", "label": "Industrial IoT"},
       {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
       {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},

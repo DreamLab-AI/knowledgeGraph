@@ -105,7 +105,7 @@
       },
       {
         "id": "urn:ngm:class:privacy-preserving-computation",
-        "label": "Privacy Preserving Computation"
+        "label": "Privacy-Preserving Computation"
       }
     ],
     "standardizedBy": [
@@ -126,7 +126,7 @@
       },
       {
         "id": "urn:ngm:class:zero-knowledge-proof",
-        "label": "Zero Knowledge Proof"
+        "label": "Zero-Knowledge Proof"
       },
       {
         "id": "urn:ngm:class:trust-framework",

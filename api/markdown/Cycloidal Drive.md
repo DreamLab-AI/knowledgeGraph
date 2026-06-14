@@ -23,7 +23,7 @@ public:: true
   "definition": "A cycloidal drive is a mechanical speed-reduction gearbox in which an eccentrically mounted cycloidal disc engages a ring of pins to transmit motion at a high reduction ratio. It offers low backlash, high torque density and good shock resistance, making it a favoured actuator component in robot joints and precision positioning systems. Compared with planetary gearing it tolerates impact loads and distributes force across many contact points.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:robo-actuation-and-control", "label": "Robotics Actuation and Control"}],
+  "subClassOf": [{"@id": "urn:ngm:class:robo-actuation-and-control", "label": "Actuation and Control"}],
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:mechanical-component", "label": "Mechanical Component"}

@@ -78,7 +78,7 @@ public:: true
       {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:ethereum-smart-contract-platform", "label": "Ethereum"},
+      {"@id": "urn:ngm:class:ethereum-smart-contract-platform", "label": "Ethereum Smart Contract Platform"},
       {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
     ],
     "enables": [

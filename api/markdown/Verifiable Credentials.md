@@ -326,7 +326,7 @@ alias:: BC-0458-verifiable-credentials, Verifiable Credential, VerifiableCredent
     "requires": [
       {
         "@id": "urn:ngm:class:decentralized-identifiers",
-        "label": "Decentralised Identifiers"
+        "label": "Decentralized Identifiers"
       },
       {
         "@id": "urn:ngm:class:did-document",
@@ -364,7 +364,7 @@ alias:: BC-0458-verifiable-credentials, Verifiable Credential, VerifiableCredent
       },
       {
         "@id": "urn:ngm:class:self-sovereign-identity",
-        "label": "Self-Sovereign Identity"
+        "label": "Self Sovereign Identity"
       }
     ],
     "implements": [

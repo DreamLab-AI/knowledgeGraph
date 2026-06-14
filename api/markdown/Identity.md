@@ -116,7 +116,7 @@ public:: true
     "implements": [
       {
         "@id": "urn:ngm:class:self-sovereign-identity",
-        "label": "Self-Sovereign Identity"
+        "label": "Self Sovereign Identity"
       },
       {
         "@id": "urn:ngm:class:federated-identity",
@@ -126,7 +126,7 @@ public:: true
     "dependsOn": [
       {
         "@id": "urn:ngm:class:zero-knowledge-proof",
-        "label": "Zero Knowledge Proof"
+        "label": "Zero-Knowledge Proof"
       },
       {
         "@id": "urn:ngm:class:distributed-ledger",

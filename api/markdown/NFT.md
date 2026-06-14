@@ -34,7 +34,7 @@ alias:: NFTs
   "subClassOf": [
     {
       "@id": "urn:ngm:class:bc-token-and-asset",
-      "label": "BC Token and Asset"
+      "label": "Token and Asset"
     }
   ],
   "relations": {

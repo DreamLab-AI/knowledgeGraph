@@ -300,7 +300,7 @@ alias:: PolicyEnforcement
       },
       {
         "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
-        "label": "EU AI Act"
+        "label": "EU AI Act Regulatory Instrument"
       },
       {
         "@id": "urn:ngm:class:gdpr-article-22-compliance",
@@ -398,7 +398,7 @@ alias:: PolicyEnforcement
       },
       {
         "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
-        "label": "EU AI Act"
+        "label": "EU AI Act Regulatory Instrument"
       },
       {
         "@id": "urn:ngm:class:gdpr-article-22-compliance",

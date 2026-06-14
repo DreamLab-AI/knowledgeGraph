@@ -27,7 +27,7 @@ public:: true
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:existential-risk", "label": "Existential Risk"},
-      {"@id": "urn:ngm:class:safety-and-alignment", "label": "Safety and Alignment"}
+      {"@id": "urn:ngm:class:safety-and-alignment", "label": "Safety and alignment"}
     ]
   },
   "quality": 0.72

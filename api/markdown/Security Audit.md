@@ -27,7 +27,7 @@ public:: true
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:threat-surface-map", "label": "Threat Surface Map"},
-      {"@id": "urn:ngm:class:etsi-domain-data-management-security", "label": "ETSI Domain Data Management Security"}
+      {"@id": "urn:ngm:class:etsi-domain-data-management-security", "label": "ETSI Domain: Data Management + Security"}
     ]
   },
   "quality": 0.72

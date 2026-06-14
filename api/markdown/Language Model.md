@@ -44,7 +44,7 @@ public:: true
       {"@id": "urn:ngm:class:code-generation", "label": "Code Generation"},
       {"@id": "urn:ngm:class:machine-translation", "label": "Machine Translation"},
       {"@id": "urn:ngm:class:question-answering", "label": "Question Answering"},
-      {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval Augmented Generation"}
+      {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"}
     ],
     "requires": [
       {"@id": "urn:ngm:class:pretraining", "label": "Pretraining"},
@@ -53,7 +53,7 @@ public:: true
     ],
     "hasPart": [
       {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"},
-      {"@id": "urn:ngm:class:feed-forward-network", "label": "Feed-Forward Network"},
+      {"@id": "urn:ngm:class:feed-forward-network", "label": "Feed Forward Network"},
       {"@id": "urn:ngm:class:positional-encoding", "label": "Positional Encoding"}
     ],
     "contrastsWith": [

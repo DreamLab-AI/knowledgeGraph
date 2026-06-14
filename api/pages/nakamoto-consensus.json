@@ -75,7 +75,7 @@
     "contrastsWith": [
       {
         "id": "urn:ngm:class:proof-of-stake",
-        "label": "Proof Of Stake"
+        "label": "Proof of Stake"
       },
       {
         "id": "urn:ngm:class:practical-byzantine-fault-tolerance",
@@ -83,7 +83,7 @@
       },
       {
         "id": "urn:ngm:class:delegated-proof-of-stake",
-        "label": "Delegated Proof Of Stake"
+        "label": "Delegated Proof of Stake"
       }
     ],
     "bridgesTo": [

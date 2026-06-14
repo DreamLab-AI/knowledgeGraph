@@ -74,7 +74,7 @@ public:: true
       {"@id": "urn:ngm:class:workload-scheduling", "label": "Workload Scheduling"}
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof of Work"},
+      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"},
       {"@id": "urn:ngm:class:energy-efficiency", "label": "Energy Efficiency"}
     ],
     "relatedTo": [

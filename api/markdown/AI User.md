@@ -264,7 +264,7 @@ public:: true
       {"@id": "urn:ngm:class:explainability", "label": "Explainability"}
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:eu-ai-act-regulatory-instrument", "label": "EU AI Act"},
+      {"@id": "urn:ngm:class:eu-ai-act-regulatory-instrument", "label": "EU AI Act Regulatory Instrument"},
       {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"}
     ]
   },

@@ -384,11 +384,11 @@ public:: true
     },
     {
       "@id": "urn:ngm:class:robo-navigation-and-planning",
-      "label": "Robo Navigation And Planning"
+      "label": "Navigation and Planning"
     },
     {
       "@id": "urn:ngm:class:robo-robot-type",
-      "label": "Robo Robot Type"
+      "label": "Robot Type"
     }
   ],
   "relations": {
@@ -463,7 +463,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:human-robot-interaction",
-        "label": "Human-Robot Interaction"
+        "label": "Human Robot Interaction"
       },
       {
         "@id": "urn:ngm:class:path-planning",
@@ -503,11 +503,11 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:convolutional-neural-network",
-        "label": "Convolutional Neural Networks"
+        "label": "Convolutional Neural Network"
       },
       {
         "@id": "urn:ngm:class:graph-neural-network",
-        "label": "Graph Neural Networks"
+        "label": "Graph Neural Network"
       },
       {
         "@id": "urn:ngm:class:ransac",
@@ -547,7 +547,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:service-robot",
-        "label": "Service Robots"
+        "label": "Service Robot"
       },
       {
         "@id": "urn:ngm:class:warehouse-robotics",

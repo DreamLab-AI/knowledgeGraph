@@ -66,7 +66,7 @@ public:: true
       {"@id": "urn:ngm:class:national-security", "label": "National Security"}
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:iso-iec-27701", "label": "ISO/IEC 27701"}
+      {"@id": "urn:ngm:class:iso-iec-27701", "label": "ISO-IEC 27701"}
     ],
     "contrastsWith": [
       {"@id": "urn:ngm:class:data-free-flow", "label": "Data Free Flow"},

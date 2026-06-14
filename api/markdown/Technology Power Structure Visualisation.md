@@ -68,7 +68,7 @@ elevatedFrom:: [[Calculating Empires]]
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
-      {"@id": "urn:ngm:class:ai-governance-law-and-privacy", "label": "Politics, Law, Privacy"}
+      {"@id": "urn:ngm:class:ai-governance-law-and-privacy", "label": "AI Governance Law and Privacy"}
     ],
     "bridgesTo": [
       {"@id": "urn:ngm:class:digital-society-surveillance", "label": "Digital Society Surveillance"},

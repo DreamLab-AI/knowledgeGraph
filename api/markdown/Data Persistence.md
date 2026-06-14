@@ -73,7 +73,7 @@ public:: true
       {"@id": "urn:ngm:class:erasure-coding", "label": "Erasure Coding"}
     ],
     "supports": [
-      {"@id": "urn:ngm:class:event-driven-architecture", "label": "Event-Driven Architecture"},
+      {"@id": "urn:ngm:class:event-driven-architecture", "label": "Event Driven Architecture"},
       {"@id": "urn:ngm:class:cqrs-pattern", "label": "CQRS Pattern"},
       {"@id": "urn:ngm:class:microservices-architecture", "label": "Microservices Architecture"}
     ],

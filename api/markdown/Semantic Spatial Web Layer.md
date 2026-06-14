@@ -58,7 +58,7 @@ elevatedFrom:: [[Spatial Web]]
     ],
     "bridgesTo": [
       {"@id": "urn:ngm:class:web3", "label": "Web3"},
-      {"@id": "urn:ngm:class:semantic-web-linked-data-standard", "label": "Semantic Web"}
+      {"@id": "urn:ngm:class:semantic-web-linked-data-standard", "label": "Semantic Web Linked Data Standard"}
     ]
   },
   "quality": 0.35,

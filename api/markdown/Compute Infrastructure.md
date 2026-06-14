@@ -855,7 +855,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:high-bandwidth-memory",
-        "label": "High-Bandwidth Memory"
+        "label": "High Bandwidth Memory"
       },
       {
         "@id": "urn:ngm:class:infini-band",
@@ -1039,7 +1039,7 @@ public:: true
     "supports": [
       {
         "@id": "urn:ngm:class:autonomous-system",
-        "label": "Autonomous Systems"
+        "label": "Autonomous System"
       },
       {
         "@id": "urn:ngm:class:climate-modelling",

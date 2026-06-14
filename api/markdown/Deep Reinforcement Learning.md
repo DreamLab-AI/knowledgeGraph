@@ -35,7 +35,7 @@ public:: true
       {"@id": "urn:ngm:class:agentic-ai", "label": "Agentic AI"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"}
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"}
     ]
   },
   "quality": 0.8

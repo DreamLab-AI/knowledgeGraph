@@ -23,7 +23,7 @@ public:: true
   "definition": "A likelihood function expresses the probability of observed data as a function of the parameters of a statistical model, treating the data as fixed and the parameters as variable. It is the central object in maximum-likelihood estimation and Bayesian inference, where it weights how well candidate parameter values explain the evidence. In sequential filtering it scores how consistent each hypothesis is with a new measurement.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"}],
+  "subClassOf": [{"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"}],
   "relations": {
     "relatedTo": [{"@id": "urn:ngm:class:particle-filter", "label": "Particle Filter"}, {"@id": "urn:ngm:class:probabilistic-model", "label": "Probabilistic Model"}]
   },

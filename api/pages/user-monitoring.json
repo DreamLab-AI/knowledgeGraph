@@ -9,7 +9,7 @@
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-governance-and-safety",
-      "label": "Metaverse Governance and Safety"
+      "label": "Governance and Safety"
     }
   ],
   "entityType": "Class",

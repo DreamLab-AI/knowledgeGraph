@@ -668,11 +668,11 @@ public:: true
     },
     {
       "@id": "urn:ngm:class:bc-token-and-asset",
-      "label": "BC Token And Asset"
+      "label": "Token and Asset"
     },
     {
       "@id": "urn:ngm:class:bc-network-component",
-      "label": "BC Network Component"
+      "label": "Network Component"
     }
   ],
   "relations": {
@@ -737,7 +737,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:proof-of-work",
-        "label": "Proof of Work"
+        "label": "Proof Of Work"
       }
     ],
     "enables": [
@@ -837,7 +837,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:decentralized-exchange",
-        "label": "Decentralised Exchange"
+        "label": "Decentralized Exchange"
       },
       {
         "@id": "urn:ngm:class:real-world-asset",
@@ -849,11 +849,11 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol",
-        "label": "Bitcoin"
+        "label": "Bitcoin Proof-of-Work Protocol"
       },
       {
         "@id": "urn:ngm:class:ethereum-smart-contract-platform",
-        "label": "Ethereum"
+        "label": "Ethereum Smart Contract Platform"
       },
       {
         "@id": "urn:ngm:class:micro-strategy",
@@ -869,7 +869,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:neural-network-text-tokenisation",
-        "label": "Tokenisation"
+        "label": "Neural Network Text Tokenisation"
       }
     ],
     "supports": [
@@ -895,7 +895,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:neural-network-text-tokenisation",
-        "label": "Tokenisation"
+        "label": "Neural Network Text Tokenisation"
       },
       {
         "@id": "urn:ngm:class:web3",
@@ -905,7 +905,7 @@ public:: true
     "standardizedBy": [
       {
         "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-improvement-proposals",
-        "label": "Bitcoin Improvement Proposal"
+        "label": "Bitcoin Improvement Proposals"
       },
       {
         "@id": "urn:ngm:class:ethereum-smart-contract-platform-request-for-comments",

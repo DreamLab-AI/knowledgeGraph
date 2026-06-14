@@ -57,7 +57,7 @@ public:: true
     ],
     "uses": [
       {"@id": "urn:ngm:class:large-language-model", "label": "Large Language Model"},
-      {"@id": "urn:ngm:class:vision-language-model", "label": "Vision-Language Model"},
+      {"@id": "urn:ngm:class:vision-language-model", "label": "Vision Language Model"},
       {"@id": "urn:ngm:class:domain-randomisation", "label": "Domain Randomisation"},
       {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"}
     ],

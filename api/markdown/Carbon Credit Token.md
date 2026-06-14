@@ -204,7 +204,7 @@ alias:: CarbonCreditToken
       },
       {
         "@id": "urn:ngm:class:sustainability-reporting",
-        "label": "Sustainability Reporting"
+        "label": "SustainabilityReporting"
       },
       {
         "@id": "urn:ngm:class:carbon-offset-trading",

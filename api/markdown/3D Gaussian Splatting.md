@@ -102,7 +102,7 @@ alias:: TELE-051-3d-gaussian-splatting
       },
       {
         "@id": "urn:ngm:class:structure-from-motion",
-        "label": "Structure from Motion"
+        "label": "Structure-from-Motion"
       },
       {
         "@id": "urn:ngm:class:gpu-rasterisation",
@@ -178,7 +178,7 @@ alias:: TELE-051-3d-gaussian-splatting
     "bridgesTo": [
       {
         "@id": "urn:ngm:class:tele-050-neural-rendering-telepresence",
-        "label": "Neural Rendering Telepresence"
+        "label": "TELE-050-neural-rendering-telepresence"
       },
       {
         "@id": "urn:ngm:class:extended-reality",

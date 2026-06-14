@@ -80,7 +80,7 @@ public:: true
     },
     {
       "@id": "urn:ngm:class:network-component",
-      "label": "NetworkComponent"
+      "label": "Network Component"
     }
   ],
   "relations": {

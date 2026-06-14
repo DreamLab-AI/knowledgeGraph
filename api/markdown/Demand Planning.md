@@ -23,11 +23,11 @@ public:: true
   "definition": "Demand planning is the supply-chain process of estimating future customer demand and aligning inventory, production, and procurement to meet it efficiently. It consolidates statistical forecasts, market intelligence, and business constraints into an actionable plan that minimises stockouts and excess holding. Modern demand planning increasingly relies on time-series forecasting and machine-learning models fed by historical sales and external signals.",
   "domain": "supply-chain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:sc-platform-and-environment", "label": "Supply Chain Platform and Environment"}],
+  "subClassOf": [{"@id": "urn:ngm:class:sc-platform-and-environment", "label": "Platform and Environment"}],
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:demand-forecasting", "label": "Demand Forecasting"},
-      {"@id": "urn:ngm:class:time-series-forecasting", "label": "Time-Series Forecasting"}
+      {"@id": "urn:ngm:class:time-series-forecasting", "label": "Time Series Forecasting"}
     ]
   },
   "quality": 0.72

@@ -33,7 +33,7 @@ public:: true
   "subClassOf": [
     {
       "@id": "urn:ngm:class:robo-actuation-and-control",
-      "label": "Robo Actuation and Control"
+      "label": "Actuation and Control"
     }
   ],
   "relations": {
@@ -59,7 +59,7 @@ public:: true
     ],
     "dependsOn": [
       {"@id": "urn:ngm:class:actuator", "label": "Actuator"},
-      {"@id": "urn:ngm:class:pid-controller", "label": "PID Controller"},
+      {"@id": "urn:ngm:class:pid-controller", "label": "Pid Controller"},
       {"@id": "urn:ngm:class:mechanical-compliance", "label": "Mechanical Compliance"}
     ],
     "uses": [

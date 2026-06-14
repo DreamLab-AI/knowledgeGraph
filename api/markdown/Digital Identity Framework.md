@@ -145,11 +145,11 @@ public:: true
     "requires": [
       {
         "@id": "urn:ngm:class:cryptographic-system",
-        "label": "Cryptographic Systems"
+        "label": "Cryptographic System"
       },
       {
         "@id": "urn:ngm:class:policy-framework",
-        "label": "Policy Frameworks"
+        "label": "Policy Framework"
       },
       {
         "@id": "urn:ngm:class:standardization-bodies",

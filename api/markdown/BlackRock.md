@@ -180,7 +180,7 @@ public:: true
     "relatedTo": [
       {
         "@id": "urn:ngm:class:exchange-traded-fund",
-        "label": "Exchange Traded Fund"
+        "label": "Exchange-Traded Fund"
       },
       {
         "@id": "urn:ngm:class:fixed-income",

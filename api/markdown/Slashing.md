@@ -122,7 +122,7 @@ public:: true
     "contrastsWith": [
       {
         "@id": "urn:ngm:class:proof-of-work",
-        "label": "Proof of Work"
+        "label": "Proof Of Work"
       },
       {
         "@id": "urn:ngm:class:inactivity-leak",

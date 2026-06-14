@@ -24,7 +24,7 @@ elevatedFrom:: [[NVIDIA Omniverse]]
   "definition": "NVIDIA Omniverse Platform is a real-time 3D simulation, rendering, and collaborative development platform built by NVIDIA on the OpenUSD (Universal Scene Description) open standard, designed to enable physically accurate digital twins, multi-user design workflows, and large-scale synthetic data generation for AI and robotics training. It provides a unified GPU-accelerated compute and rendering fabric — comprising the Nucleus collaboration server, the Kit application framework, and Connector plugins — that allows multiple applications and users to simultaneously edit shared 3D scenes with physically based rendering, ray tracing, and physics simulation. Omniverse bridges creative content-creation pipelines, industrial engineering workflows, and AI training infrastructure, with deployments spanning automotive design, factory digital twins, autonomous vehicle simulation, and robot learning environments.",
   "domain": "spatial-computing",
   "maturity": "established",
-  "subClassOf": {"@id": "urn:ngm:class:sc-platform-and-environment", "label": "SC Platform And Environment"},
+  "subClassOf": {"@id": "urn:ngm:class:sc-platform-and-environment", "label": "Platform and Environment"},
   "relations": {
     "uses": [
       {"@id": "urn:ngm:class:open-usd", "label": "OpenUSD"},

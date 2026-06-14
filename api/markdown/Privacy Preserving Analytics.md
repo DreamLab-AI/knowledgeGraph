@@ -488,7 +488,7 @@ alias:: Privacy-Preserving Analytics
     "requires": [
       {
         "@id": "urn:ngm:class:cryptographic-primitive",
-        "label": "Cryptographic Primitives"
+        "label": "Cryptographic Primitive"
       },
       {
         "@id": "urn:ngm:class:data-governance-framework",
@@ -526,7 +526,7 @@ alias:: Privacy-Preserving Analytics
       },
       {
         "@id": "urn:ngm:class:privacy-by-design",
-        "label": "Privacy-by-Design"
+        "label": "Privacy By Design"
       }
     ],
     "implements": [
@@ -582,7 +582,7 @@ alias:: Privacy-Preserving Analytics
       },
       {
         "@id": "urn:ngm:class:zero-knowledge-proof",
-        "label": "Zero-Knowledge Proofs"
+        "label": "Zero-Knowledge Proof"
       }
     ],
     "relatedTo": [
@@ -640,7 +640,7 @@ alias:: Privacy-Preserving Analytics
       },
       {
         "@id": "urn:ngm:class:iso-iec-27701",
-        "label": "ISO/IEC 27701"
+        "label": "ISO-IEC 27701"
       },
       {
         "@id": "urn:ngm:class:nist-privacy-framework",

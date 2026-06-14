@@ -56,7 +56,7 @@ public:: true
       {"@id": "urn:ngm:class:tls-encryption", "label": "TLS Encryption"}
     ],
     "supports": [
-      {"@id": "urn:ngm:class:quality-of-service", "label": "Quality of Service"},
+      {"@id": "urn:ngm:class:quality-of-service", "label": "Quality Of Service"},
       {"@id": "urn:ngm:class:network-security", "label": "Network Security"}
     ],
     "standardizedBy": [

@@ -9,7 +9,7 @@
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-content-and-assets",
-      "label": "Spatial Computing Content and Assets"
+      "label": "Content and Assets"
     }
   ],
   "entityType": "Class",

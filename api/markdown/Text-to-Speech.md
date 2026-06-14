@@ -79,7 +79,7 @@ public:: true
       {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"}
     ],
     "implements": [
-      {"@id": "urn:ngm:class:speech-synthesis", "label": "Speech Synthesis"}
+      {"@id": "urn:ngm:class:speech-synthesis", "label": "SpeechSynthesis"}
     ],
     "contrastsWith": [
       {"@id": "urn:ngm:class:speech-recognition", "label": "Speech Recognition"}
@@ -92,12 +92,12 @@ public:: true
       {"@id": "urn:ngm:class:multilingual-model", "label": "Multilingual Model"}
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human-Computer Interaction"},
+      {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human Computer Interaction"},
       {"@id": "urn:ngm:class:extended-reality", "label": "Extended Reality"}
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:speech-synthesis", "label": "Speech Synthesis"},
+    {"@id": "urn:ngm:class:speech-synthesis", "label": "SpeechSynthesis"},
     {"@id": "urn:ngm:class:tts", "label": "TTS"}
   ],
   "quality": 0.72,

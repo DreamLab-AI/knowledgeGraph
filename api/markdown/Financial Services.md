@@ -43,7 +43,7 @@
     "requires": [
       {"@id": "urn:ngm:class:financial-regulation", "label": "Financial Regulation"},
       {"@id": "urn:ngm:class:financial-infrastructure", "label": "Financial Infrastructure"},
-      {"@id": "urn:ngm:class:kyc-aml", "label": "KYC / AML"}
+      {"@id": "urn:ngm:class:kyc-aml", "label": "KYC/AML"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:capital-allocation", "label": "Capital Allocation"},

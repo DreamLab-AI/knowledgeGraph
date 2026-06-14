@@ -707,7 +707,7 @@ public:: true
       {"@id": "urn:ngm:class:system-isolation", "label": "System Isolation"}
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:semantic-web-linked-data-standard", "label": "Semantic Web"},
+      {"@id": "urn:ngm:class:semantic-web-linked-data-standard", "label": "Semantic Web Linked Data Standard"},
       {"@id": "urn:ngm:class:artificial-intelligence-integration", "label": "AI Integration"},
       {"@id": "urn:ngm:class:metaverse-cross-platform", "label": "Metaverse Cross-Platform Standards"}
     ],

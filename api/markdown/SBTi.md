@@ -27,7 +27,7 @@ public:: true
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:esg-reporting", "label": "ESG Reporting"},
-      {"@id": "urn:ngm:class:science-based-targets", "label": "Science-Based Targets"}
+      {"@id": "urn:ngm:class:science-based-targets", "label": "Science Based Targets"}
     ]
   },
   "quality": 0.72

@@ -21,7 +21,7 @@
     "enables": [
       {
         "id": "urn:ngm:class:inclusive-xr-experience",
-        "label": "Inclusive XR Experience"
+        "label": "Inclusive Xr Experience"
       },
       {
         "id": "urn:ngm:class:inclusive-participation",

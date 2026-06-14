@@ -146,7 +146,7 @@
     "relatedTo": [
       {
         "id": "urn:ngm:class:quality-of-service",
-        "label": "Quality of Service"
+        "label": "Quality Of Service"
       },
       {
         "id": "urn:ngm:class:end-to-end-encryption",

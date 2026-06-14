@@ -55,7 +55,7 @@
     "partOf": [
       {
         "id": "urn:ngm:class:state-space-sequence-models",
-        "label": "State Space and Other Approaches"
+        "label": "State Space Sequence Models"
       }
     ],
     "relatedTo": [

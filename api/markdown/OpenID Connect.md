@@ -77,7 +77,7 @@ public:: true
       {"@id": "urn:ngm:class:financial-grade-api", "label": "Financial Grade API"}
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self-Sovereign Identity"},
+      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self Sovereign Identity"},
       {"@id": "urn:ngm:class:verifiable-credentials", "label": "Verifiable Credentials"},
       {"@id": "urn:ngm:class:eu-digital-identity-wallet", "label": "EU Digital Identity Wallet"}
     ]

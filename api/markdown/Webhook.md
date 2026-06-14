@@ -23,7 +23,7 @@ public:: true
   "definition": "A webhook is an event-driven integration mechanism in which a server sends an HTTP request to a pre-registered URL when a specified event occurs, pushing data to consumers instead of requiring them to poll. It enables loosely coupled, near-real-time communication between web services and is a standard pattern for notifications, CI triggers, and payment events. Reliability concerns are addressed through retries, idempotency keys, and signature verification.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:infra-network-and-comms", "label": "Network and Communications"}],
+  "subClassOf": [{"@id": "urn:ngm:class:infra-network-and-comms", "label": "Network and Communication"}],
   "relations": {
     "relatedTo": [{"@id": "urn:ngm:class:api-gateway", "label": "API Gateway"}, {"@id": "urn:ngm:class:presence-indicator", "label": "Presence Indicator"}]
   },

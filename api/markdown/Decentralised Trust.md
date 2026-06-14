@@ -39,7 +39,7 @@ public:: true
       {"@id": "urn:ngm:class:decentralised-identity", "label": "Decentralised Identity"},
       {"@id": "urn:ngm:class:trustless-settlement", "label": "Trustless Settlement"},
       {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"},
-      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self-Sovereign Identity"},
+      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self Sovereign Identity"},
       {"@id": "urn:ngm:class:permissionless-participation", "label": "Permissionless Participation"}
     ],
     "requires": [

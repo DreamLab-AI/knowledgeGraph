@@ -515,7 +515,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:interoperability-standard",
-        "label": "Interoperability Standards"
+        "label": "Interoperability Standard"
       },
       {
         "@id": "urn:ngm:class:investment-capital",
@@ -747,7 +747,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
-        "label": "EU AI Act"
+        "label": "EU AI Act Regulatory Instrument"
       },
       {
         "@id": "urn:ngm:class:open-xr",

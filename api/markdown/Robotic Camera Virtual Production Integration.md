@@ -47,7 +47,7 @@ elevatedFrom:: [[VP robotics project]]
   "relations": {
     "uses": [
       {"@id": "urn:ngm:class:robotics", "label": "Robotics"},
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"}
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:virtual-production", "label": "Virtual Production"},

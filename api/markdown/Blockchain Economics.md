@@ -139,7 +139,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:on-chain-governance",
-        "label": "On-Chain Governance"
+        "label": "On-chain Governance"
       }
     ],
     "contrastsWith": [

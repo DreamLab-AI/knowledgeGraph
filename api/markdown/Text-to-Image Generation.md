@@ -30,7 +30,7 @@ alias:: Text to Image Generation
       {"@id": "urn:ngm:class:diffusion-model", "label": "Diffusion Model"},
       {"@id": "urn:ngm:class:latent-diffusion", "label": "Latent Diffusion"},
       {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"},
-      {"@id": "urn:ngm:class:cross-attention", "label": "Cross-Attention"},
+      {"@id": "urn:ngm:class:cross-attention", "label": "Cross Attention"},
       {"@id": "urn:ngm:class:variational-autoencoder", "label": "Variational Autoencoder"},
       {"@id": "urn:ngm:class:clip", "label": "CLIP"},
       {"@id": "urn:ngm:class:contrastive-learning", "label": "Contrastive Learning"}
@@ -55,7 +55,7 @@ alias:: Text to Image Generation
     "relatedTo": [
       {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
       {"@id": "urn:ngm:class:stable-diffusion", "label": "Stable Diffusion"},
-      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine-Tuning"},
+      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine Tuning"},
       {"@id": "urn:ngm:class:lora", "label": "LoRA"},
       {"@id": "urn:ngm:class:dreambooth", "label": "DreamBooth"},
       {"@id": "urn:ngm:class:content-moderation", "label": "Content Moderation"}

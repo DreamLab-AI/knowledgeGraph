@@ -109,7 +109,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:monitoring-system",
-        "label": "Monitoring Systems"
+        "label": "Monitoring System"
       },
       {
         "@id": "urn:ngm:class:regulatory-guidance",
@@ -167,13 +167,13 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:iso-standards",
-        "label": "ISO Standards"
+        "label": "Iso Standards"
       }
     ],
     "uses": [
       {
         "@id": "urn:ngm:class:privacy-by-design",
-        "label": "Privacy by Design"
+        "label": "Privacy By Design"
       },
       {
         "@id": "urn:ngm:class:data-governance",

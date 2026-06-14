@@ -45,7 +45,7 @@ alias:: BiometricAuthentication
     ],
     "requires": [
       {"@id": "urn:ngm:class:data-protection", "label": "Data Protection"},
-      {"@id": "urn:ngm:class:privacy-by-design", "label": "Privacy by Design"},
+      {"@id": "urn:ngm:class:privacy-by-design", "label": "Privacy By Design"},
       {"@id": "urn:ngm:class:hardware-security-module", "label": "Hardware Security Module"}
     ],
     "implements": [

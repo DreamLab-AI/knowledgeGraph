@@ -27,11 +27,11 @@
       },
       {
         "id": "urn:ngm:class:bip-340",
-        "label": "BIP-340 Schnorr Signatures"
+        "label": "BIP-340"
       },
       {
         "id": "urn:ngm:class:bip-341",
-        "label": "BIP-341 Taproot"
+        "label": "BIP-341"
       },
       {
         "id": "urn:ngm:class:bip-173",

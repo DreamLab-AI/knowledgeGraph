@@ -207,7 +207,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:privacy-preserving-analytics",
-        "label": "Privacy-Preserving Analytics"
+        "label": "Privacy Preserving Analytics"
       },
       {
         "@id": "urn:ngm:class:secure-data-sharing",

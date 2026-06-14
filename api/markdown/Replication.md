@@ -59,7 +59,7 @@ public:: true
     "relatedTo": [
       {"@id": "urn:ngm:class:distributed-storage", "label": "Distributed Storage"},
       {"@id": "urn:ngm:class:cap-theorem", "label": "CAP Theorem"},
-      {"@id": "urn:ngm:class:raft-consensus", "label": "Raft Consensus"},
+      {"@id": "urn:ngm:class:raft-consensus", "label": "RAFT Consensus"},
       {"@id": "urn:ngm:class:paxos", "label": "Paxos"}
     ],
     "bridgesTo": [

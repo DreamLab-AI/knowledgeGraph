@@ -467,7 +467,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:neural-network-latent-space",
-        "label": "Latent Space"
+        "label": "Neural Network Latent Space"
       },
       {
         "@id": "urn:ngm:class:optimiser",

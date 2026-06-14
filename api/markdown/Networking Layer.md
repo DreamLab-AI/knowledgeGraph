@@ -152,7 +152,7 @@ alias:: NetworkingLayer
     "requires": [
       {
         "@id": "urn:ngm:class:communication-protocol",
-        "label": "Communication Protocols"
+        "label": "Communication Protocol"
       },
       {
         "@id": "urn:ngm:class:network-standards",
@@ -170,11 +170,11 @@ alias:: NetworkingLayer
       },
       {
         "@id": "urn:ngm:class:low-latency-interaction",
-        "label": "Low-latency Interaction"
+        "label": "Low-Latency Interaction"
       },
       {
         "@id": "urn:ngm:class:real-time-communication",
-        "label": "Real-time Communication"
+        "label": "Real-Time Communication"
       },
       {
         "@id": "urn:ngm:class:distributed-computing",

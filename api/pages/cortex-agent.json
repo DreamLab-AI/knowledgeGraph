@@ -65,7 +65,7 @@
       },
       {
         "id": "urn:ngm:class:large-scale-pretrained-foundation-model",
-        "label": "Foundation Models"
+        "label": "Large-Scale Pretrained Foundation Model"
       }
     ],
     "enables": [
@@ -94,7 +94,7 @@
     "implements": [
       {
         "id": "urn:ngm:class:retrieval-augmented-generation",
-        "label": "Retrieval Augmented Generation"
+        "label": "Retrieval-Augmented Generation"
       },
       {
         "id": "urn:ngm:class:attention",
@@ -118,7 +118,7 @@
     "uses": [
       {
         "id": "urn:ngm:class:constitutional-ai-training-methodology-language-model-family",
-        "label": "Anthropic Claude"
+        "label": "Constitutional AI Language Model Family"
       },
       {
         "id": "urn:ngm:class:attention",
@@ -134,7 +134,7 @@
       },
       {
         "id": "urn:ngm:class:large-scale-pretrained-foundation-model",
-        "label": "Foundation Models"
+        "label": "Large-Scale Pretrained Foundation Model"
       }
     ],
     "supports": [

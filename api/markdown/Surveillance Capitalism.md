@@ -38,7 +38,7 @@ public:: true
     "enables": [
       {"@id": "urn:ngm:class:targeted-advertising", "label": "Targeted Advertising"},
       {"@id": "urn:ngm:class:algorithmic-accountability", "label": "Algorithmic Accountability"},
-      {"@id": "urn:ngm:class:social-media-platform-infrastructure", "label": "Social Media"}
+      {"@id": "urn:ngm:class:social-media-platform-infrastructure", "label": "Social Media Platform Infrastructure"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:data-broker", "label": "Data Broker"},

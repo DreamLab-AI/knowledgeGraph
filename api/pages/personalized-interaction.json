@@ -9,7 +9,7 @@
   "subClassOf": [
     {
       "id": "urn:ngm:class:human-computer-interaction",
-      "label": "Human-Computer Interaction"
+      "label": "Human Computer Interaction"
     }
   ],
   "entityType": "Class",
@@ -30,7 +30,7 @@
     "relatedTo": [
       {
         "id": "urn:ngm:class:context-aware-response",
-        "label": "Context-Aware Response"
+        "label": "Context Aware Response"
       },
       {
         "id": "urn:ngm:class:behavioural-feedback-loop",

@@ -501,7 +501,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Model"
+        "label": "Large Language Models"
       },
       {
         "@id": "urn:ngm:class:memory-store",
@@ -587,7 +587,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:vector-embedding",
-        "label": "Vector Embeddings"
+        "label": "Vector Embedding"
       },
       {
         "@id": "urn:ngm:class:xml-tags",

@@ -23,7 +23,7 @@ public:: true
   "definition": "An AprilTag is a square fiducial marker, resembling a simplified QR code, designed for robust detection and accurate 6-DoF pose estimation by computer-vision systems. Each tag encodes a unique ID with strong error correction, enabling reliable recognition under poor lighting, partial occlusion, and oblique viewing angles. AprilTags are widely used as visual landmarks for camera calibration, robot localization, and augmented-reality registration.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:robo-perception", "label": "Robot Perception"}],
+  "subClassOf": [{"@id": "urn:ngm:class:robo-perception", "label": "Perception and Sensing"}],
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:lens-and-camera-calibration", "label": "Lens and Camera Calibration"}

@@ -25,7 +25,7 @@ public:: true
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:ai-governance-and-ethics", "label": "AI Governance and Ethics"}],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:consent-management", "label": "Consent Management"}, {"@id": "urn:ngm:class:etsi-domain-data-management-ethics", "label": "ETSI Domain Data Management Ethics"}]
+    "relatedTo": [{"@id": "urn:ngm:class:consent-management", "label": "Consent Management"}, {"@id": "urn:ngm:class:etsi-domain-data-management-ethics", "label": "ETSI Domain: Data Management + Ethics"}]
   },
   "quality": 0.72
 }

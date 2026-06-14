@@ -25,7 +25,7 @@ public:: true
   "maturity": "emerging",
   "subClassOf": [{"@id": "urn:ngm:class:dc-telepresence", "label": "Telepresence"}],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:haptics", "label": "Haptics"}, {"@id": "urn:ngm:class:tc-0003-telepresence-robot", "label": "TC-0003 Telepresence Robot"}]
+    "relatedTo": [{"@id": "urn:ngm:class:haptics", "label": "Haptics"}, {"@id": "urn:ngm:class:tc-0003-telepresence-robot", "label": "tc 0003 telepresence robot"}]
   },
   "quality": 0.72
 }

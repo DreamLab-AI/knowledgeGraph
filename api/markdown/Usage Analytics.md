@@ -25,7 +25,7 @@ public:: true
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:data-management", "label": "Data Management"}],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:telemetry-and-analytics", "label": "Telemetry and Analytics"}, {"@id": "urn:ngm:class:digital-well-being-index", "label": "Digital Well-Being Index"}]
+    "relatedTo": [{"@id": "urn:ngm:class:telemetry-and-analytics", "label": "Telemetry & Analytics"}, {"@id": "urn:ngm:class:digital-well-being-index", "label": "Digital Well-Being Index"}]
   },
   "quality": 0.72
 }

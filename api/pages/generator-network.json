@@ -39,7 +39,7 @@
     "uses": [
       {
         "id": "urn:ngm:class:neural-network-latent-space",
-        "label": "latent space"
+        "label": "Neural Network Latent Space"
       },
       {
         "id": "urn:ngm:class:neural-network-architecture",

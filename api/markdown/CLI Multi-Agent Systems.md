@@ -330,7 +330,7 @@ alias:: CLI multi agent systems
     "requires": [
       {
         "@id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Model"
+        "label": "Large Language Models"
       },
       {
         "@id": "urn:ngm:class:orchestration-protocol",
@@ -368,7 +368,7 @@ alias:: CLI multi agent systems
       },
       {
         "@id": "urn:ngm:class:ci-cd-automation",
-        "label": "CI/CD Automation"
+        "label": "CI-CD Automation"
       },
       {
         "@id": "urn:ngm:class:dev-sec-ops",
@@ -436,7 +436,7 @@ alias:: CLI multi agent systems
       },
       {
         "@id": "urn:ngm:class:docker-containerisation-platform",
-        "label": "Docker"
+        "label": "Docker Containerisation Platform"
       },
       {
         "@id": "urn:ngm:class:model-context-protocol",
@@ -450,7 +450,7 @@ alias:: CLI multi agent systems
       },
       {
         "@id": "urn:ngm:class:autonomous-agent",
-        "label": "Autonomous Agents"
+        "label": "Autonomous Agent"
       },
       {
         "@id": "urn:ngm:class:code-execution",
@@ -504,7 +504,7 @@ alias:: CLI multi agent systems
       },
       {
         "@id": "urn:ngm:class:human-in-the-loop-learning",
-        "label": "Human-in-the-Loop Learning"
+        "label": "Human-in-the- Loop Learning"
       }
     ],
     "standardizedBy": [

@@ -23,7 +23,7 @@ public:: true
   "definition": "Large Language Model Training is the computational process of optimising the parameters of a transformer-based neural network with billions to trillions of weights on web-scale text corpora using autoregressive next-token prediction objectives, followed by instruction tuning and reinforcement learning from human feedback (RLHF) alignment stages. The process requires distributed training across thousands of GPU or TPU accelerators coordinated through data, tensor, and pipeline parallelism, consuming petabytes of training data and megawatt-hours of electrical energy.",
   "domain": "machine-learning",
   "maturity": "established",
-  "subClassOf": {"@id": "urn:ngm:class:pre-training", "label": "Pre-Training"},
+  "subClassOf": {"@id": "urn:ngm:class:pre-training", "label": "Pre Training"},
   "relations": {
     "requires": [
       {"@id": "urn:ngm:class:gpu-cluster", "label": "GPU Cluster"},
@@ -42,13 +42,13 @@ public:: true
     ],
     "enables": [
       {"@id": "urn:ngm:class:in-context-learning", "label": "In-Context Learning"},
-      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine-Tuning"},
+      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine Tuning"},
       {"@id": "urn:ngm:class:emergent-capability", "label": "Emergent Capability"},
       {"@id": "urn:ngm:class:foundation-model", "label": "Foundation Model"}
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:pre-training", "label": "Pre-Training"},
-      {"@id": "urn:ngm:class:supervised-fine-tuning", "label": "Supervised Fine-Tuning"},
+      {"@id": "urn:ngm:class:pre-training", "label": "Pre Training"},
+      {"@id": "urn:ngm:class:supervised-fine-tuning", "label": "Supervised Fine Tuning"},
       {"@id": "urn:ngm:class:alignment-stage", "label": "Alignment Stage"}
     ],
     "dependsOn": [
@@ -60,7 +60,7 @@ public:: true
       {"@id": "urn:ngm:class:parameter-efficient-fine-tuning", "label": "Parameter-Efficient Fine-Tuning"}
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:high-performance-computing", "label": "High Performance Computing"},
+      {"@id": "urn:ngm:class:high-performance-computing", "label": "High-Performance Computing"},
       {"@id": "urn:ngm:class:data-centre-infrastructure", "label": "Data Centre Infrastructure"}
     ],
     "relatedTo": [

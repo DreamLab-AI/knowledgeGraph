@@ -30,7 +30,7 @@ public:: true
     "uses": [
       {"@id": "urn:ngm:class:demand-forecasting", "label": "Demand Forecasting"},
       {"@id": "urn:ngm:class:queuing-theory", "label": "Queuing Theory"},
-      {"@id": "urn:ngm:class:time-series-analysis", "label": "Time Series Analysis"},
+      {"@id": "urn:ngm:class:time-series-analysis", "label": "Time-Series Analysis"},
       {"@id": "urn:ngm:class:utilisation-monitoring", "label": "Utilisation Monitoring"}
     ],
     "enables": [

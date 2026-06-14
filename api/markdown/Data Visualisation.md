@@ -53,7 +53,7 @@ public:: true
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-data-management",
-      "label": "Infra Data Management"
+      "label": "Data Management"
     }
   ],
   "sameAs": [
@@ -82,7 +82,7 @@ public:: true
       {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
       {"@id": "urn:ngm:class:dimensionality-reduction", "label": "Dimensionality Reduction"},
       {"@id": "urn:ngm:class:colour-theory", "label": "Colour Theory"},
-      {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human-Computer Interaction"}
+      {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human Computer Interaction"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},

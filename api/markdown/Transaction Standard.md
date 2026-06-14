@@ -177,7 +177,7 @@ public:: true
     "enables": [
       {
         "@id": "urn:ngm:class:atomic-swap",
-        "label": "Atomic Swaps"
+        "label": "Atomic Swap"
       },
       {
         "@id": "urn:ngm:class:economic-interoperability",
@@ -193,7 +193,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:multi-party-transactions",
-        "label": "Multi-Party Transactions"
+        "label": "Multi Party Transactions"
       }
     ],
     "implements": [

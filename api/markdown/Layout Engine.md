@@ -23,7 +23,7 @@ public:: true
   "definition": "A layout engine is a software component that applies one or more layout algorithms to a model of visual elements and produces a concrete arrangement ready for rendering. It manages coordinate systems, constraint solving, sizing, and incremental relayout in response to data changes. Layout engines power diagram tools, document renderers, and graphical user interface frameworks.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:infra-software-engineering", "label": "Infrastructure Software Engineering"}],
+  "subClassOf": [{"@id": "urn:ngm:class:infra-software-engineering", "label": "Software Engineering"}],
   "relations": {
     "relatedTo": [{"@id": "urn:ngm:class:layout-algorithm", "label": "Layout Algorithm"}, {"@id": "urn:ngm:class:diagrams-as-code", "label": "Diagrams as Code"}]
   },

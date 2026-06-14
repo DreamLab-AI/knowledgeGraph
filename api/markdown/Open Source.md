@@ -167,7 +167,7 @@ public:: true
     "bridgesTo": [
       {
         "@id": "urn:ngm:class:open-source-ai",
-        "label": "Open Source AI"
+        "label": "Open-Source AI"
       },
       {
         "@id": "urn:ngm:class:decentralised-autonomous-organisation",

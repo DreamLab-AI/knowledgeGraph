@@ -596,11 +596,11 @@ public:: true
     },
     {
       "@id": "urn:ngm:class:bc-governance-and-regulation",
-      "label": "BC Governance And Regulation"
+      "label": "Governance and Regulation"
     },
     {
       "@id": "urn:ngm:class:bc-governance-and-regulation",
-      "label": "BC Governance And Regulation"
+      "label": "Governance and Regulation"
     }
   ],
   "relations": {

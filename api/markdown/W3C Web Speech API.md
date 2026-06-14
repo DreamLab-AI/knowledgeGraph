@@ -25,7 +25,7 @@ public:: true
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:technical-standard", "label": "Technical Standard"}],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:speech-and-voice", "label": "Speech and Voice"}, {"@id": "urn:ngm:class:real-time-translation", "label": "Real-Time Translation"}]
+    "relatedTo": [{"@id": "urn:ngm:class:speech-and-voice", "label": "Speech and Voice"}, {"@id": "urn:ngm:class:real-time-translation", "label": "Real-time Translation"}]
   },
   "quality": 0.72
 }

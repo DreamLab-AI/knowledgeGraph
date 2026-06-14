@@ -104,7 +104,7 @@ public:: true
     "bridgesTo": [
       {"@id": "urn:ngm:class:robotics-perception", "label": "Robotics Perception"},
       {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
-      {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human-Computer Interaction"}
+      {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human Computer Interaction"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:universal-scene-description", "label": "Universal Scene Description"},

@@ -212,11 +212,11 @@ public:: true
     },
     {
       "@id": "urn:ngm:class:sc-standards-and-interop",
-      "label": "SC Standards And Interop"
+      "label": "Standards and Interoperability"
     },
     {
       "@id": "urn:ngm:class:sc-standards-and-interop",
-      "label": "SC Standards And Interop"
+      "label": "Standards and Interoperability"
     }
   ],
   "relations": {

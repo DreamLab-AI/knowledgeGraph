@@ -528,7 +528,7 @@ public:: true
     },
     {
       "@id": "urn:ngm:class:peer-to-peer-network",
-      "label": "Peer To Peer Network"
+      "label": "Peer-to-Peer Network"
     }
   ],
   "relations": {
@@ -547,7 +547,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:seg-wit",
-        "label": "Segwit"
+        "label": "SegWit"
       },
       {
         "@id": "urn:ngm:class:taproot",
@@ -579,7 +579,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:proof-of-work",
-        "label": "Proof of Work"
+        "label": "Proof Of Work"
       },
       {
         "@id": "urn:ngm:class:utxo-model",
@@ -589,7 +589,7 @@ public:: true
     "requires": [
       {
         "@id": "urn:ngm:class:schnorr-signature",
-        "label": "Schnorr Signatures"
+        "label": "Schnorr Signature"
       },
       {
         "@id": "urn:ngm:class:secp256k1",
@@ -613,7 +613,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:peer-to-peer-network",
-        "label": "Peer to Peer Network"
+        "label": "Peer-to-Peer Network"
       },
       {
         "@id": "urn:ngm:class:sha-256",
@@ -673,7 +673,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:proof-of-work",
-        "label": "Proof of Work"
+        "label": "Proof Of Work"
       },
       {
         "@id": "urn:ngm:class:utxo-model",
@@ -683,7 +683,7 @@ public:: true
     "uses": [
       {
         "@id": "urn:ngm:class:bloom-filter",
-        "label": "Bloom Filters"
+        "label": "Bloom Filter"
       },
       {
         "@id": "urn:ngm:class:compact-block-relay",
@@ -695,7 +695,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:schnorr-signature",
-        "label": "Schnorr Signatures"
+        "label": "Schnorr Signature"
       },
       {
         "@id": "urn:ngm:class:secp256k1",
@@ -763,7 +763,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:seg-wit",
-        "label": "Segwit"
+        "label": "SegWit"
       },
       {
         "@id": "urn:ngm:class:taproot",
@@ -805,7 +805,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:bolt-specifications",
-        "label": "BOLT Specification"
+        "label": "BOLT Specifications"
       }
     ]
   },

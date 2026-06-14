@@ -9,7 +9,7 @@
   "subClassOf": [
     {
       "id": "urn:ngm:class:economic-mechanism",
-      "label": "EconomicMechanism"
+      "label": "Economic Mechanism"
     }
   ],
   "entityType": "Class",
@@ -104,7 +104,7 @@
     "partOf": [
       {
         "id": "urn:ngm:class:token-economics",
-        "label": "TokenEconomicsDomain"
+        "label": "Token Economics"
       },
       {
         "id": "urn:ngm:class:monetary-policy",

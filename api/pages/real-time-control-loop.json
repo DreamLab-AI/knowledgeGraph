@@ -30,7 +30,7 @@
     "relatedTo": [
       {
         "id": "urn:ngm:class:cyber-physical-systems",
-        "label": "Cyber-Physical Systems Domain"
+        "label": "Cyber Physical Systems"
       },
       {
         "id": "urn:ngm:class:admittance-control",

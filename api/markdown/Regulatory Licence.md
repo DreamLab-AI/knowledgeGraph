@@ -27,7 +27,7 @@ public:: true
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:stablecoin-regulation", "label": "Stablecoin Regulation"},
-      {"@id": "urn:ngm:class:stable-coins", "label": "Stablecoins"}
+      {"@id": "urn:ngm:class:stable-coins", "label": "Stable Coins"}
     ]
   },
   "quality": 0.72

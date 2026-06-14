@@ -37,7 +37,7 @@
       },
       {
         "id": "urn:ngm:class:analog-to-digital-converter",
-        "label": "Analog to Digital Converter"
+        "label": "Analog To Digital Converter"
       }
     ],
     "enables": [
@@ -110,7 +110,7 @@
     "supports": [
       {
         "id": "urn:ngm:class:human-robot-interaction",
-        "label": "Human-Robot Interaction"
+        "label": "Human Robot Interaction"
       },
       {
         "id": "urn:ngm:class:collaborative-robotics",

@@ -64,13 +64,13 @@ public:: true
   "qualityScore": 0.7,
   "subClassOf": {
     "@id": "urn:ngm:class:blockchain",
-    "label": "Blockchain Domain"
+    "label": "Blockchain"
   },
   "relations": {
     "requires": [
       {
         "@id": "urn:ngm:class:proof-of-work",
-        "label": "Proof of Work"
+        "label": "Proof Of Work"
       },
       {
         "@id": "urn:ngm:class:scrypt",

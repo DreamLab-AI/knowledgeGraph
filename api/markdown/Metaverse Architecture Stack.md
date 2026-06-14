@@ -165,7 +165,7 @@ public:: true
     "requires": [
       {
         "@id": "urn:ngm:class:interoperability-protocol",
-        "label": "Interoperability Protocols"
+        "label": "Interoperability Protocol"
       },
       {
         "@id": "urn:ngm:class:layering-principles",

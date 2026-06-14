@@ -93,7 +93,7 @@ public:: true
     "requires": [
       {
         "@id": "urn:ngm:class:access-control",
-        "label": "Access Controls"
+        "label": "Access Control"
       },
       {
         "@id": "urn:ngm:class:metadata-standards",

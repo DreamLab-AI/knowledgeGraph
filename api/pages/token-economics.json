@@ -43,7 +43,7 @@
     "enables": [
       {
         "id": "urn:ngm:class:decentralized-governance",
-        "label": "Decentralised Governance"
+        "label": "Decentralized Governance"
       },
       {
         "id": "urn:ngm:class:network-incentives",
@@ -119,7 +119,7 @@
     "supports": [
       {
         "id": "urn:ngm:class:decentralized-finance",
-        "label": "DeFi"
+        "label": "Decentralized Finance"
       },
       {
         "id": "urn:ngm:class:proof-of-stake",
@@ -136,7 +136,7 @@
     "relatedTo": [
       {
         "id": "urn:ngm:class:real-world-asset-tokenisation",
-        "label": "Real World Asset Tokenisation"
+        "label": "Real-World Asset Tokenisation"
       },
       {
         "id": "urn:ngm:class:automated-market-maker",

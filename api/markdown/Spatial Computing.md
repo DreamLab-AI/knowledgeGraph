@@ -25,7 +25,7 @@ public:: true
   "maturity": "emerging",
   "subClassOf": [],
   "sameAs": [
-    {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing Paradigm"}
+    {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
   ],
   "relations": {
     "hasPart": [
@@ -64,7 +64,7 @@ public:: true
       {"@id": "urn:ngm:class:pervasive-computing", "label": "Pervasive Computing"}
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:extended-reality-xr", "label": "Extended Reality"},
+      {"@id": "urn:ngm:class:extended-reality-xr", "label": "Extended Reality (XR)"},
       {"@id": "urn:ngm:class:3-d-reconstruction", "label": "3D Reconstruction"},
       {"@id": "urn:ngm:class:gesture-recognition", "label": "Gesture Recognition"}
     ],

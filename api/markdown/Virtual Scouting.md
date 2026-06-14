@@ -57,7 +57,7 @@ public:: true
     },
     {
       "@id": "urn:ngm:class:pre-production",
-      "label": "Pre-Production"
+      "label": "Pre Production"
     }
   ],
   "relations": {

@@ -50,7 +50,7 @@ public:: true
     ],
     "standardizedBy": [
       {"@id": "urn:ngm:class:iso-10218", "label": "ISO 10218"},
-      {"@id": "urn:ngm:class:iso-ts-15066", "label": "ISO/TS 15066"}
+      {"@id": "urn:ngm:class:iso-ts-15066", "label": "ISO TS 15066"}
     ],
     "contrastsWith": [
       {"@id": "urn:ngm:class:industrial-robot", "label": "Industrial Robot"},

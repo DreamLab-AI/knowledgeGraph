@@ -27,7 +27,7 @@ public:: true
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:network-effects", "label": "Network Effects"},
-      {"@id": "urn:ngm:class:california-ai-bill", "label": "California AI Bill"}
+      {"@id": "urn:ngm:class:california-ai-bill", "label": "California AI bill"}
     ]
   },
   "quality": 0.72

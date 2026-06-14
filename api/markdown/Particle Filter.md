@@ -352,7 +352,7 @@ public:: true
     },
     {
       "@id": "urn:ngm:class:monte-carlo-methods",
-      "label": "Monte Carlo Method"
+      "label": "Monte Carlo Methods"
     }
   ],
   "relations": {
@@ -513,7 +513,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning"
+        "label": "Machine Learning Discipline"
       },
       {
         "@id": "urn:ngm:class:monte-carlo-tree-search",

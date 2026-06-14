@@ -41,7 +41,7 @@
       },
       {
         "id": "urn:ngm:class:structure-from-motion",
-        "label": "Structure from Motion"
+        "label": "Structure-from-Motion"
       }
     ],
     "enables": [

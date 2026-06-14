@@ -33,7 +33,7 @@ public:: true
   "subClassOf": [
     {
       "@id": "urn:ngm:class:bc-defi-and-economics",
-      "label": "BC DeFi and Economics"
+      "label": "DeFi and Economics"
     }
   ],
   "relations": {

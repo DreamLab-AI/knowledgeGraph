@@ -160,7 +160,7 @@ public:: true
     "partOf": [
       {
         "@id": "urn:ngm:class:etsi-metaverse-domain-taxonomy",
-        "label": "ETSI Metaverse Domain Taxonomy"
+        "label": "Etsi Metaverse Domain Taxonomy"
       }
     ]
   },

@@ -63,7 +63,7 @@ elevatedFrom:: [[Product and Risk Management]]
       {"@id": "urn:ngm:class:safety-and-alignment", "label": "Safety and alignment"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:ai-governance-law-and-privacy", "label": "Politics, Law, Privacy"},
+      {"@id": "urn:ngm:class:ai-governance-law-and-privacy", "label": "AI Governance Law and Privacy"},
       {"@id": "urn:ngm:class:ai-risk-management", "label": "AI Risk Management"}
     ],
     "contrastsWith": [

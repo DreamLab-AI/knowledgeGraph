@@ -477,7 +477,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:privacy-by-design",
-        "label": "Privacy by Design"
+        "label": "Privacy By Design"
       }
     ],
     "implements": [
@@ -587,7 +587,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:semantic-web-linked-data-standard",
-        "label": "Semantic Web"
+        "label": "Semantic Web Linked Data Standard"
       },
       {
         "@id": "urn:ngm:class:verifiable-credentials",

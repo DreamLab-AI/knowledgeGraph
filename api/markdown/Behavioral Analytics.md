@@ -57,7 +57,7 @@ public:: true
     },
     {
       "@id": "urn:ngm:class:machine-learning-discipline",
-      "label": "Machine Learning"
+      "label": "Machine Learning Discipline"
     }
   ],
   "relations": {
@@ -71,7 +71,7 @@ public:: true
       {"@id": "urn:ngm:class:data-analytics", "label": "Data Analytics"}
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"},
       {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
     ],
     "relatedTo": [

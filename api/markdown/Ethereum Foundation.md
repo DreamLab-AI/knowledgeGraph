@@ -61,14 +61,14 @@ public:: true
   "subClassOf": [
     {
       "@id": "urn:ngm:class:bc-governance-and-regulation",
-      "label": "BC Governance and Regulation"
+      "label": "Governance and Regulation"
     }
   ],
   "relations": {
     "enables": [
       {
         "@id": "urn:ngm:class:ethereum-smart-contract-platform",
-        "label": "Ethereum"
+        "label": "Ethereum Smart Contract Platform"
       },
       {
         "@id": "urn:ngm:class:proof-of-stake",

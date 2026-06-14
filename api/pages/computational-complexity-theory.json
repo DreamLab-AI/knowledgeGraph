@@ -9,7 +9,7 @@
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-research-area",
-      "label": "Ai Research Area"
+      "label": "AI Research Area"
     }
   ],
   "entityType": "Class",

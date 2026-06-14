@@ -433,7 +433,7 @@ alias:: RenderingPipeline
     },
     {
       "@id": "urn:ngm:class:rasterization",
-      "label": "Rasterisation"
+      "label": "Rasterization"
     }
   ],
   "relations": {
@@ -544,7 +544,7 @@ alias:: RenderingPipeline
       },
       {
         "@id": "urn:ngm:class:post-processing",
-        "label": "Post-Processing"
+        "label": "Post Processing"
       },
       {
         "@id": "urn:ngm:class:ray-tracing",

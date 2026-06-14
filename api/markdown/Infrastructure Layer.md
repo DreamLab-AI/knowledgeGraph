@@ -148,7 +148,7 @@ alias:: InfrastructureLayer
       },
       {
         "@id": "urn:ngm:class:spatial-computing",
-        "label": "Spatial Computing Layer"
+        "label": "Spatial Computing"
       },
       {
         "@id": "urn:ngm:class:storage-layer",

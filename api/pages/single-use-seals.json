@@ -39,7 +39,7 @@
       },
       {
         "id": "urn:ngm:class:double-spending",
-        "label": "Double-Spending"
+        "label": "Double Spending"
       }
     ],
     "implements": [],

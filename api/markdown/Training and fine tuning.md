@@ -339,7 +339,7 @@ public:: true
     "hasPart": [
       {
         "@id": "urn:ngm:class:constitutional-ai-training-methodology",
-        "label": "Constitutional AI"
+        "label": "Constitutional AI Training Methodology"
       },
       {
         "@id": "urn:ngm:class:direct-preference-optimisation",
@@ -381,7 +381,7 @@ public:: true
     "requires": [
       {
         "@id": "urn:ngm:class:pretrained-model",
-        "label": "Pre-trained Model"
+        "label": "Pretrained Model"
       },
       {
         "@id": "urn:ngm:class:compute-infrastructure",
@@ -501,7 +501,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:constitutional-ai-training-methodology",
-        "label": "Constitutional AI"
+        "label": "Constitutional AI Training Methodology"
       },
       {
         "@id": "urn:ngm:class:emergence",
@@ -523,19 +523,19 @@ public:: true
     "supports": [
       {
         "@id": "urn:ngm:class:constitutional-ai-training-methodology-language-model-family",
-        "label": "Anthropic Claude"
+        "label": "Constitutional AI Language Model Family"
       },
       {
         "@id": "urn:ngm:class:instruction-following-conversational-ai-system",
-        "label": "ChatGPT"
+        "label": "Instruction-Following Conversational AI System"
       },
       {
         "@id": "urn:ngm:class:gemini-multimodal-language-model",
-        "label": "Gemini"
+        "label": "Gemini Multimodal Language Model"
       },
       {
         "@id": "urn:ngm:class:meta-llama-model-family",
-        "label": "LLaMA"
+        "label": "Meta Llama Model Family"
       },
       {
         "@id": "urn:ngm:class:meta-llama-model-family-3",
@@ -543,11 +543,11 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:mistral-ai-open-weight-model-family",
-        "label": "Mistral and Mixtral"
+        "label": "Mistral AI Open-Weight Model Family"
       },
       {
         "@id": "urn:ngm:class:openai-research-organisation",
-        "label": "Open AI"
+        "label": "OpenAI Research Organisation"
       }
     ],
     "standardizedBy": [
@@ -561,11 +561,11 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
-        "label": "EU AI Act"
+        "label": "EU AI Act Regulatory Instrument"
       },
       {
         "@id": "urn:ngm:class:openai-research-organisation",
-        "label": "Open AI"
+        "label": "OpenAI Research Organisation"
       }
     ]
   },

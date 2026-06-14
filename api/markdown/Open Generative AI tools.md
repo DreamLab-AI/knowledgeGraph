@@ -340,7 +340,7 @@ public:: true
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-infrastructure",
-      "label": "AI Infrastructure (Category)"
+      "label": "AI Infrastructure"
     },
     {
       "@id": "urn:ngm:class:machine-learning-discipline-infrastructure",
@@ -355,7 +355,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:hugging-face-hub",
-        "label": "Hugging Face Hub"
+        "label": "HuggingFace Hub"
       },
       {
         "@id": "urn:ngm:class:llm-inference",
@@ -363,7 +363,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:lo-ra-fine-tuning",
-        "label": "LoRA Fine Tuning"
+        "label": "LoRA Fine-Tuning"
       },
       {
         "@id": "urn:ngm:class:quantisation",
@@ -371,11 +371,11 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:temporal-motion-diffusion-adapter",
-        "label": "AnimateDiff"
+        "label": "Temporal Motion Diffusion Adapter"
       },
       {
         "@id": "urn:ngm:class:node-based-diffusion-pipeline-interface",
-        "label": "ComfyUI"
+        "label": "Node-Based Diffusion Pipeline Interface"
       },
       {
         "@id": "urn:ngm:class:fine-tuning",
@@ -391,15 +391,15 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:mistral-ai-open-weight-model-family",
-        "label": "Mistral and Mixtral"
+        "label": "Mistral AI Open-Weight Model Family"
       },
       {
         "@id": "urn:ngm:class:local-llm-runtime-platform",
-        "label": "ollama"
+        "label": "Local LLM Runtime Platform"
       },
       {
         "@id": "urn:ngm:class:stable-diffusion-image-model",
-        "label": "Stable Diffusion"
+        "label": "Stable Diffusion Image Model"
       }
     ],
     "requires": [
@@ -505,7 +505,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:mixture-of-experts-architecture",
-        "label": "Mixture of Experts"
+        "label": "Mixture-of-Experts Architecture"
       },
       {
         "@id": "urn:ngm:class:transformer-architecture",
@@ -527,11 +527,11 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:lo-ra-fine-tuning",
-        "label": "LoRA Fine Tuning"
+        "label": "LoRA Fine-Tuning"
       },
       {
         "@id": "urn:ngm:class:openai-research-organisation-chat-completions-api",
-        "label": "OpenAI Chat Completions API"
+        "label": "Open AI Chat Completions API"
       },
       {
         "@id": "urn:ngm:class:py-torch",
@@ -539,7 +539,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:safetensors",
-        "label": "safetensors"
+        "label": "Safetensors"
       },
       {
         "@id": "urn:ngm:class:transformers-library",
@@ -607,7 +607,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:node-based-diffusion-pipeline-interface",
-        "label": "ComfyUI"
+        "label": "Node-Based Diffusion Pipeline Interface"
       },
       {
         "@id": "urn:ngm:class:node-based-diffusion-pipeline-interface-workflows",
@@ -625,15 +625,15 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:hugging-face-hub",
-        "label": "Hugging Face Hub"
+        "label": "HuggingFace Hub"
       },
       {
         "@id": "urn:ngm:class:openai-research-organisation-chat-completions-api",
-        "label": "OpenAI Chat Completions API"
+        "label": "Open AI Chat Completions API"
       },
       {
         "@id": "urn:ngm:class:safetensors-format",
-        "label": "safetensors Format"
+        "label": "Safetensors Format"
       }
     ],
     "bridgesTo": [

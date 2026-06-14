@@ -27,7 +27,7 @@
       },
       {
         "id": "urn:ngm:class:high-bandwidth-memory",
-        "label": "High-Bandwidth Memory"
+        "label": "High Bandwidth Memory"
       }
     ],
     "requires": [
@@ -124,7 +124,7 @@
       },
       {
         "id": "urn:ngm:class:mixed-precision-training",
-        "label": "Mixed-Precision Training"
+        "label": "Mixed Precision Training"
       }
     ],
     "supports": [

@@ -125,7 +125,7 @@ alias:: VoiceInteraction
     },
     {
       "@id": "urn:ngm:class:sc-interaction",
-      "label": "Interaction Domain"
+      "label": "Interaction Technology"
     }
   ],
   "relations": {
@@ -162,7 +162,7 @@ alias:: VoiceInteraction
       },
       {
         "@id": "urn:ngm:class:speech-synthesis",
-        "label": "Speech Synthesis"
+        "label": "SpeechSynthesis"
       }
     ],
     "enables": [

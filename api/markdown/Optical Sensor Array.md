@@ -319,7 +319,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:infrared-sensor",
-        "label": "Infrared Sensor"
+        "label": "InfraredSensor"
       },
       {
         "@id": "urn:ngm:class:lens-and-camera-calibration",
@@ -391,7 +391,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:human-pose-slam-capture-system",
-        "label": "Human tracking and SLAM capture"
+        "label": "Human Pose SLAM Capture System"
       },
       {
         "@id": "urn:ngm:class:point-cloud",
@@ -421,7 +421,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:human-pose-slam-capture-system",
-        "label": "Human tracking and SLAM capture"
+        "label": "Human Pose SLAM Capture System"
       },
       {
         "@id": "urn:ngm:class:image-classification",
@@ -493,7 +493,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:human-pose-slam-capture-system",
-        "label": "Human tracking and SLAM capture"
+        "label": "Human Pose SLAM Capture System"
       },
       {
         "@id": "urn:ngm:class:lidar",

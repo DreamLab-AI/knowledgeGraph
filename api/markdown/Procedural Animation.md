@@ -61,7 +61,7 @@ public:: true
       {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"},
       {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
       {"@id": "urn:ngm:class:crowd-simulation", "label": "Crowd Simulation"},
-      {"@id": "urn:ngm:class:non-player-character", "label": "Non-Player Character"}
+      {"@id": "urn:ngm:class:non-player-character", "label": "Non Player Character"}
     ],
     "requires": [
       {"@id": "urn:ngm:class:forward-kinematics", "label": "Forward Kinematics"},

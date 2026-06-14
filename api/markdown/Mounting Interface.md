@@ -27,7 +27,7 @@ public:: true
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:mechanical-component", "label": "Mechanical Component"},
-      {"@id": "urn:ngm:class:robot-link", "label": "Robot Link"}
+      {"@id": "urn:ngm:class:robot-link", "label": "RobotLink"}
     ]
   },
   "quality": 0.72

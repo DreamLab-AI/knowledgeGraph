@@ -37,7 +37,7 @@ public:: true
       {"@id": "urn:ngm:class:data-collection", "label": "Data Collection"}
     ],
     "enables": [
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"},
       {"@id": "urn:ngm:class:training-dataset", "label": "Training Dataset"}
     ]
   },

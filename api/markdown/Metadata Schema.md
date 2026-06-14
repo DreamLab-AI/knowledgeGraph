@@ -75,7 +75,7 @@ public:: true
   "maturity": "emerging",
   "subClassOf": {
     "@id": "urn:ngm:class:infra-data-management",
-    "label": "Infra Data Management"
+    "label": "Data Management"
   },
   "relations": {
     "hasPart": [
@@ -195,7 +195,7 @@ public:: true
     "bridgesTo": [
       {
         "@id": "urn:ngm:class:data-standards",
-        "label": "Data Standard"
+        "label": "Data Standards"
       },
       {
         "@id": "urn:ngm:class:semantic-web",

@@ -55,7 +55,7 @@ elevatedFrom:: [[Landscape]]
       {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"}
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"}
     ],
     "partOf": [
       {"@id": "urn:ngm:class:infra-computing-and-cloud", "label": "Computing and Cloud"}

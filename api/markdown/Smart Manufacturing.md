@@ -46,11 +46,11 @@ public:: true
     "uses": [
       {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
       {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:opc-ua", "label": "OPC-UA"}
+      {"@id": "urn:ngm:class:opc-ua", "label": "OPC UA"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:predictive-maintenance", "label": "Predictive Maintenance"},
-      {"@id": "urn:ngm:class:industrial-automation", "label": "Industrial Automation"},
+      {"@id": "urn:ngm:class:industrial-automation", "label": "IndustrialAutomation"},
       {"@id": "urn:ngm:class:supply-chain-management", "label": "Supply Chain Management"},
       {"@id": "urn:ngm:class:mass-customisation", "label": "Mass Customisation"}
     ],

@@ -66,7 +66,7 @@ public:: true
       {"@id": "urn:ngm:class:api-gateway", "label": "API Gateway"},
       {"@id": "urn:ngm:class:message-broker", "label": "Message Broker"},
       {"@id": "urn:ngm:class:data-pipeline", "label": "Data Pipeline"},
-      {"@id": "urn:ngm:class:data-catalog", "label": "Data Catalogue"}
+      {"@id": "urn:ngm:class:data-catalog", "label": "Data Catalog"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:data-interoperability", "label": "Data Interoperability"},

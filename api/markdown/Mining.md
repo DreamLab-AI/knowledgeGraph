@@ -71,7 +71,7 @@ public:: true
   "maturity": "established",
   "subClassOf": {
     "@id": "urn:ngm:class:consensus-protocol",
-    "label": "ConsensusProtocol"
+    "label": "Consensus Protocol"
   },
   "relations": {
     "hasPart": [
@@ -90,13 +90,13 @@ public:: true
       {"@id": "urn:ngm:class:merkle-tree", "label": "Merkle Tree"}
     ],
     "requires": [
-      {"@id": "urn:ngm:class:peer-to-peer-network", "label": "Peer To Peer Network"},
+      {"@id": "urn:ngm:class:peer-to-peer-network", "label": "Peer-to-Peer Network"},
       {"@id": "urn:ngm:class:blockchain-energy-consumption", "label": "Blockchain Energy Consumption"},
       {"@id": "urn:ngm:class:block-header", "label": "Block Header"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:nakamoto-consensus", "label": "Nakamoto Consensus"},
-      {"@id": "urn:ngm:class:double-spend-prevention", "label": "Double Spend Prevention"},
+      {"@id": "urn:ngm:class:double-spend-prevention", "label": "Double-Spend Prevention"},
       {"@id": "urn:ngm:class:sybil-resistance", "label": "Sybil Resistance"},
       {"@id": "urn:ngm:class:immutability", "label": "Immutability"}
     ],

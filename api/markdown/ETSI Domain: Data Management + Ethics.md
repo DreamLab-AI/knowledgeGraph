@@ -133,7 +133,7 @@ public:: true
     "requires": [
       {
         "@id": "urn:ngm:class:ethics-and-law",
-        "label": "Ethics & Law"
+        "label": "Ethics and Law"
       },
       {
         "@id": "urn:ngm:class:data-management",
@@ -151,13 +151,13 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:privacy-preserving-analytics",
-        "label": "Privacy-Preserving Analytics"
+        "label": "Privacy Preserving Analytics"
       }
     ],
     "partOf": [
       {
         "@id": "urn:ngm:class:etsi-metaverse-domain-taxonomy",
-        "label": "ETSI Metaverse Domain Taxonomy"
+        "label": "Etsi Metaverse Domain Taxonomy"
       }
     ]
   },

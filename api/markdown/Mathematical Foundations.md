@@ -27,7 +27,7 @@ alias:: MathematicalFoundations
   "subClassOf": [{"@id": "urn:ngm:class:mathematical-science", "label": "Mathematical Science"}],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"},
       {"@id": "urn:ngm:class:cryptography", "label": "Cryptography"},
       {"@id": "urn:ngm:class:optimization-algorithm", "label": "Optimization Algorithm"},
       {"@id": "urn:ngm:class:formal-verification", "label": "Formal Verification"}
@@ -35,7 +35,7 @@ alias:: MathematicalFoundations
     "relatedTo": [
       {"@id": "urn:ngm:class:mathematical-reasoning", "label": "Mathematical Reasoning"},
       {"@id": "urn:ngm:class:mathematical-hard-problems", "label": "Mathematical Hard Problems"},
-      {"@id": "urn:ngm:class:quantum-computation-paradigm", "label": "Quantum Computing"}
+      {"@id": "urn:ngm:class:quantum-computation-paradigm", "label": "Quantum Computation Paradigm"}
     ],
     "supports": [
       {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},

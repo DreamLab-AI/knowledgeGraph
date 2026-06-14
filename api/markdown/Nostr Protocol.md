@@ -255,7 +255,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:schnorr-signature",
-        "label": "Schnorr Signatures"
+        "label": "Schnorr Signature"
       },
       {
         "@id": "urn:ngm:class:web-id-profile",
@@ -269,7 +269,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:schnorr-signature",
-        "label": "Schnorr Signatures"
+        "label": "Schnorr Signature"
       },
       {
         "@id": "urn:ngm:class:secp256k1-elliptic-curve",

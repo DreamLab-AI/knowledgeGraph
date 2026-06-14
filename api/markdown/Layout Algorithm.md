@@ -23,7 +23,7 @@ public:: true
   "definition": "A layout algorithm is a computational procedure that automatically assigns spatial positions to graphical elements such as nodes, edges, or boxes to produce a readable diagram or interface. Common families include force-directed, hierarchical (Sugiyama), orthogonal, and tree layouts, each optimising criteria like minimal edge crossings, uniform spacing, or compactness. Layout algorithms are central to diagram rendering and graph visualisation.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:infra-software-engineering", "label": "Infrastructure Software Engineering"}],
+  "subClassOf": [{"@id": "urn:ngm:class:infra-software-engineering", "label": "Software Engineering"}],
   "relations": {
     "relatedTo": [{"@id": "urn:ngm:class:diagrams-as-code", "label": "Diagrams as Code"}, {"@id": "urn:ngm:class:ai-diagram-tools", "label": "AI Diagram Tools"}]
   },

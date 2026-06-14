@@ -336,7 +336,7 @@ public:: true
     },
     {
       "@id": "urn:ngm:class:infra-software-engineering",
-      "label": "Infra Software Engineering"
+      "label": "Software Engineering"
     },
     {
       "@id": "urn:ngm:class:grid-infrastructure",
@@ -567,7 +567,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:constitutional-ai-training-methodology-language-model-family",
-        "label": "Anthropic Claude"
+        "label": "Constitutional AI Language Model Family"
       },
       {
         "@id": "urn:ngm:class:artificial-intelligence",
@@ -583,7 +583,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:instruction-following-conversational-ai-system",
-        "label": "ChatGPT"
+        "label": "Instruction-Following Conversational AI System"
       }
     ],
     "standardizedBy": [

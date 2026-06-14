@@ -26,7 +26,7 @@ public:: true
   "subClassOf": [{"@id": "urn:ngm:class:robo-navigation-and-planning", "label": "Navigation and Planning"}],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:gps", "label": "GPS"},
+      {"@id": "urn:ngm:class:gps", "label": "Gps"},
       {"@id": "urn:ngm:class:task-planning", "label": "Task Planning"}
     ]
   },

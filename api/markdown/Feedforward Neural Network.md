@@ -67,7 +67,7 @@ public:: true
     ],
     "enables": [
       {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"}
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"}
     ],
     "partOf": [
       {"@id": "urn:ngm:class:convolutional-neural-network", "label": "Convolutional Neural Network"}

@@ -28,12 +28,12 @@ public:: true
   ],
   "sameAs": [
     {"@id": "urn:ngm:class:large-pretrained-model", "label": "Large Pre-Trained Model"},
-    {"@id": "urn:ngm:class:pretrained-model", "label": "Pre-Trained Model"}
+    {"@id": "urn:ngm:class:pretrained-model", "label": "Pretrained Model"}
   ],
   "relations": {
     "hasPart": [
       {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"},
-      {"@id": "urn:ngm:class:pre-training", "label": "Pre-Training"},
+      {"@id": "urn:ngm:class:pre-training", "label": "Pre Training"},
       {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
       {"@id": "urn:ngm:class:context-window", "label": "Context Window"}
     ],

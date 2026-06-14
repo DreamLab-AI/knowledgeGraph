@@ -91,7 +91,7 @@ elevatedFrom:: [[Soon-Next-Later (AI futurology)]]
   ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:sam-hammond-ai-policy-economist", "label": "Sam Hammond"},
+      {"@id": "urn:ngm:class:sam-hammond-ai-policy-economist", "label": "Sam Hammond AI Policy Economist"},
       {"@id": "urn:ngm:class:artificial-general-intelligence", "label": "Artificial General Intelligence"},
       {"@id": "urn:ngm:class:social-contract", "label": "Social Contract"}
     ],
@@ -103,7 +103,7 @@ elevatedFrom:: [[Soon-Next-Later (AI futurology)]]
       {"@id": "urn:ngm:class:ai-risk", "label": "AI Risk"}
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:national-sovereign-ai-procurement-initiative", "label": "Sovereign AI bid"}
+      {"@id": "urn:ngm:class:national-sovereign-ai-procurement-initiative", "label": "National Sovereign AI Procurement Initiative"}
     ]
   },
   "quality": 0.7,

@@ -52,7 +52,7 @@ public:: true
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:apache-kafka", "label": "Apache Kafka"},
-      {"@id": "urn:ngm:class:event-driven-architecture", "label": "Event-Driven Architecture"},
+      {"@id": "urn:ngm:class:event-driven-architecture", "label": "Event Driven Architecture"},
       {"@id": "urn:ngm:class:rabbitmq", "label": "RabbitMQ"},
       {"@id": "urn:ngm:class:apache-pulsar", "label": "Apache Pulsar"},
       {"@id": "urn:ngm:class:event-sourcing", "label": "Event Sourcing"}

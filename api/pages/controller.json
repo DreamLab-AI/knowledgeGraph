@@ -93,7 +93,7 @@
     "contrastsWith": [
       {
         "id": "urn:ngm:class:open-loop-control",
-        "label": "Open Loop Control"
+        "label": "Open-Loop Control"
       },
       {
         "id": "urn:ngm:class:manual-control",
@@ -121,7 +121,7 @@
       },
       {
         "id": "urn:ngm:class:pid-controller",
-        "label": "PID Controller"
+        "label": "Pid Controller"
       },
       {
         "id": "urn:ngm:class:state-space-model",

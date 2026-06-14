@@ -148,12 +148,12 @@ public:: true
     "hasPart": [
       {"@id": "urn:ngm:class:autoregressive-language-modeling", "label": "Autoregressive Language Modeling"},
       {"@id": "urn:ngm:class:masked-language-modeling", "label": "Masked Language Modeling"},
-      {"@id": "urn:ngm:class:encoder-decoder-architecture", "label": "Encoder-Decoder Architecture"}
+      {"@id": "urn:ngm:class:encoder-decoder-architecture", "label": "Encoder Decoder Architecture"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"},
-      {"@id": "urn:ngm:class:pre-training", "label": "Pre-Training"},
-      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine-Tuning"}
+      {"@id": "urn:ngm:class:pre-training", "label": "Pre Training"},
+      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine Tuning"}
     ],
     "contrastsWith": [
       {"@id": "urn:ngm:class:diffusion-models", "label": "Diffusion Models"},

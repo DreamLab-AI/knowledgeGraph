@@ -67,7 +67,7 @@ alias:: Retrieval Augmented Generation, RAG, Retrieval-Augmented LLM
       {"@id": "urn:ngm:class:context-window-management", "label": "Context Window Management"}
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine-Tuning"},
+      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine Tuning"},
       {"@id": "urn:ngm:class:parametric-knowledge", "label": "Parametric Knowledge"},
       {"@id": "urn:ngm:class:model-pretraining", "label": "Model Pre-training"}
     ],

@@ -80,7 +80,7 @@ public:: true
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:network-security", "label": "Network Security"},
-      {"@id": "urn:ngm:class:quality-of-service", "label": "Quality of Service"}
+      {"@id": "urn:ngm:class:quality-of-service", "label": "Quality Of Service"}
     ]
   },
   "sameAs": [

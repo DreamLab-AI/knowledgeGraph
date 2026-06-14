@@ -44,7 +44,7 @@
       },
       {
         "id": "urn:ngm:class:decentralised-agent-coordination-initiative",
-        "label": "Agentic Alliance"
+        "label": "Decentralised Agent Coordination Initiative"
       },
       {
         "id": "urn:ngm:class:natural-language-processing",
@@ -56,7 +56,7 @@
     "partOf": [
       {
         "id": "urn:ngm:class:active-research-projects-registry",
-        "label": "Projects"
+        "label": "Active Research Projects Registry"
       }
     ],
     "relatedTo": []

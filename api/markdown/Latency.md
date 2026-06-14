@@ -143,7 +143,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:quality-of-service",
-        "label": "Quality of Service"
+        "label": "Quality Of Service"
       }
     ],
     "requires": [

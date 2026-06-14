@@ -32,7 +32,7 @@
       },
       {
         "id": "urn:ngm:class:kyc",
-        "label": "Know Your Customer"
+        "label": "KYC"
       }
     ],
     "enables": [
@@ -89,7 +89,7 @@
       },
       {
         "id": "urn:ngm:class:self-sovereign-identity",
-        "label": "Self-Sovereign Identity"
+        "label": "Self Sovereign Identity"
       }
     ],
     "uses": [

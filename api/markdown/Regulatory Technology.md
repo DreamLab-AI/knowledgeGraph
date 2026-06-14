@@ -59,7 +59,7 @@ public:: true
       {"@id": "urn:ngm:class:risk-management", "label": "Risk Management"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"},
       {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
       {"@id": "urn:ngm:class:smart-contracts", "label": "Smart Contracts"},
       {"@id": "urn:ngm:class:cloud-computing", "label": "Cloud Computing"},

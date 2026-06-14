@@ -46,7 +46,7 @@ public:: true
     ],
     "uses": [
       {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:layer-2-scaling", "label": "Layer-2 Scaling"},
+      {"@id": "urn:ngm:class:layer-2-scaling", "label": "Layer 2 Scaling"},
       {"@id": "urn:ngm:class:account-abstraction", "label": "Account Abstraction"}
     ],
     "enables": [
@@ -71,7 +71,7 @@ public:: true
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:dapp", "label": "dApp"},
+    {"@id": "urn:ngm:class:dapp", "label": "DApp"},
     {"@id": "urn:ngm:class:decentralised-application", "label": "Decentralised Application"}
   ],
   "provenance": {

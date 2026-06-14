@@ -66,7 +66,7 @@ public:: true
       {"@id": "urn:ngm:class:latent-variable-model", "label": "Latent Variable Model"},
       {"@id": "urn:ngm:class:probabilistic-topic-modelling", "label": "Probabilistic Topic Modelling"},
       {"@id": "urn:ngm:class:bayesian-deep-learning", "label": "Bayesian Deep Learning"},
-      {"@id": "urn:ngm:class:expectation-maximisation", "label": "Expectation-Maximisation"}
+      {"@id": "urn:ngm:class:expectation-maximisation", "label": "Expectation Maximisation"}
     ],
     "bridgesTo": [
       {"@id": "urn:ngm:class:neural-network-architecture", "label": "Neural Network Architecture"},

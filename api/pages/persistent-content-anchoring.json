@@ -9,7 +9,7 @@
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-display-and-rendering",
-      "label": "Spatial Computing Display and Rendering"
+      "label": "Display and Rendering"
     }
   ],
   "entityType": "Class",

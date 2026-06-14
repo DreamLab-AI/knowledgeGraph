@@ -26,7 +26,7 @@ public:: true
   "subClassOf": [{"@id": "urn:ngm:class:distributed-training", "label": "Distributed Training"}],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:mixed-precision-training", "label": "Mixed-Precision Training"},
+      {"@id": "urn:ngm:class:mixed-precision-training", "label": "Mixed Precision Training"},
       {"@id": "urn:ngm:class:gradient-checkpointing", "label": "Gradient Checkpointing"}
     ],
     "enables": [

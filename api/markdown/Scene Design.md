@@ -23,10 +23,10 @@ public:: true
   "definition": "Scene design is the process of composing and arranging the spatial, visual, and behavioural elements of a virtual or augmented environment. It encompasses layout of geometry, lighting, materials, cameras, and interactive objects within a scene graph. It is a foundational creative activity in metaverse, game, and immersive-media authoring.",
   "domain": "metaverse",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:sc-content-and-assets", "label": "Spatial Content and Assets"}],
+  "subClassOf": [{"@id": "urn:ngm:class:sc-content-and-assets", "label": "Content and Assets"}],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:etsi-domain-creative-media", "label": "ETSI Domain Creative Media"},
+      {"@id": "urn:ngm:class:etsi-domain-creative-media", "label": "ETSI Domain: Creative Media"},
       {"@id": "urn:ngm:class:authoring-tool", "label": "Authoring Tool"}
     ]
   },

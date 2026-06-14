@@ -36,12 +36,12 @@ alias:: Time Series Analysis
       {"@id": "urn:ngm:class:bayesian-inference", "label": "Bayesian Inference"}
     ],
     "enables": [
-      {"@id": "urn:ngm:class:time-series-forecasting", "label": "Time-Series Forecasting"},
+      {"@id": "urn:ngm:class:time-series-forecasting", "label": "Time Series Forecasting"},
       {"@id": "urn:ngm:class:anomaly-detection", "label": "Anomaly Detection"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:markov-chain-monte-carlo", "label": "Markov Chain Monte Carlo"},
-      {"@id": "urn:ngm:class:prediction-markets", "label": "Prediction Market"}
+      {"@id": "urn:ngm:class:prediction-markets", "label": "Prediction Markets"}
     ]
   },
   "quality": 0.8

@@ -543,7 +543,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:sensor",
-        "label": "Sensors"
+        "label": "Sensor"
       }
     ],
     "enables": [
@@ -665,7 +665,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:autonomous-vehicle",
-        "label": "Autonomous Vehicles"
+        "label": "Autonomous Vehicle"
       },
       {
         "@id": "urn:ngm:class:domestic-robotics",

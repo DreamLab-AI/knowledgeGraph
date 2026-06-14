@@ -118,7 +118,7 @@ alias:: TELE-100-ai-avatars
     "enables": [
       {
         "@id": "urn:ngm:class:photorealistic-telepresence",
-        "label": "PhotorealisticTelepresence"
+        "label": "Photorealistic Telepresence"
       }
     ]
   },

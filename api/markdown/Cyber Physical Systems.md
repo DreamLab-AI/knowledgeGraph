@@ -29,7 +29,7 @@ alias:: Cyber-Physical Systems
     }
   ],
   "sameAs": [
-    {"@id": "urn:ngm:class:cyber-physical-systems", "label": "CPS"},
+    {"@id": "urn:ngm:class:cyber-physical-systems", "label": "Cyber Physical Systems"},
     {"@id": "urn:ngm:class:networked-embedded-systems", "label": "Networked Embedded Systems"}
   ],
   "relations": {
@@ -48,7 +48,7 @@ alias:: Cyber-Physical Systems
     ],
     "enables": [
       {"@id": "urn:ngm:class:autonomous-vehicle", "label": "Autonomous Vehicle"},
-      {"@id": "urn:ngm:class:industrial-automation", "label": "Industrial Automation"},
+      {"@id": "urn:ngm:class:industrial-automation", "label": "IndustrialAutomation"},
       {"@id": "urn:ngm:class:smart-grid", "label": "Smart Grid"},
       {"@id": "urn:ngm:class:precision-medicine", "label": "Precision Medicine"},
       {"@id": "urn:ngm:class:smart-city", "label": "Smart City"}
@@ -60,7 +60,7 @@ alias:: Cyber-Physical Systems
     ],
     "implements": [
       {"@id": "urn:ngm:class:feedback-control", "label": "Feedback Control"},
-      {"@id": "urn:ngm:class:pid-controller", "label": "PID Controller"}
+      {"@id": "urn:ngm:class:pid-controller", "label": "Pid Controller"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},

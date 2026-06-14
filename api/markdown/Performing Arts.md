@@ -60,11 +60,11 @@ public:: true
     ],
     "enables": [
       {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"},
-      {"@id": "urn:ngm:class:venue-tethered-immersive-experience", "label": "Location Based Experience"}
+      {"@id": "urn:ngm:class:venue-tethered-immersive-experience", "label": "Venue-Tethered Immersive Experience"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:music-and-audio", "label": "Music and Audio"},
-      {"@id": "urn:ngm:class:ai-application", "label": "Creative Media Domain"}
+      {"@id": "urn:ngm:class:ai-application", "label": "AI Application"}
     ]
   },
   "provenance": {

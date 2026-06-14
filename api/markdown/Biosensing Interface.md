@@ -215,7 +215,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:analog-to-digital-converter",
-        "label": "Analog-to-Digital Converter"
+        "label": "Analog To Digital Converter"
       },
       {
         "@id": "urn:ngm:class:power-supply",

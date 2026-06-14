@@ -497,7 +497,7 @@ public:: true
     "uses": [
       {
         "@id": "urn:ngm:class:multisignature-wallets",
-        "label": "Multisignature Wallet"
+        "label": "Multisignature Wallets"
       },
       {
         "@id": "urn:ngm:class:open-zeppelin-governor",
@@ -591,7 +591,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:erc20-standard",
-        "label": "ERC-20 Standard"
+        "label": "ERC20 Standard"
       },
       {
         "@id": "urn:ngm:class:maker-dao-endgame-framework",

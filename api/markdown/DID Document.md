@@ -39,7 +39,7 @@ public:: true
   "relations": {
     "partOf": [
       {"@id": "urn:ngm:class:decentralised-identifier", "label": "Decentralised Identifier"},
-      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self-Sovereign Identity"}
+      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self Sovereign Identity"}
     ],
     "hasPart": [
       {"@id": "urn:ngm:class:verification-method", "label": "Verification Method"},

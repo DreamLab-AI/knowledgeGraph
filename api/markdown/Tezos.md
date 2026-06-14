@@ -86,7 +86,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:on-chain-governance",
-        "label": "On-Chain Governance"
+        "label": "On-chain Governance"
       },
       {
         "@id": "urn:ngm:class:digital-asset-custody",
@@ -110,7 +110,7 @@ public:: true
     "implements": [
       {
         "@id": "urn:ngm:class:on-chain-governance",
-        "label": "On-Chain Governance"
+        "label": "On-chain Governance"
       },
       {
         "@id": "urn:ngm:class:bft-consensus",

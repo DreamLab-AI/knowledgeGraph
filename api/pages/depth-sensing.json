@@ -94,7 +94,7 @@
       },
       {
         "id": "urn:ngm:class:infrared-sensor",
-        "label": "Infrared Sensor"
+        "label": "InfraredSensor"
       }
     ],
     "supports": [

@@ -207,7 +207,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:non-linear-narrative",
-        "label": "Non-Linear Narrative"
+        "label": "Non Linear Narrative"
       },
       {
         "@id": "urn:ngm:class:virtual-environment",
@@ -263,7 +263,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:non-linear-storytelling",
-        "label": "Non-Linear Storytelling"
+        "label": "Non Linear Storytelling"
       }
     ]
   },

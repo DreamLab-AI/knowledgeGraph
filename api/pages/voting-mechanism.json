@@ -9,7 +9,7 @@
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-governance-and-regulation",
-      "label": "Blockchain Governance and Regulation"
+      "label": "Governance and Regulation"
     }
   ],
   "entityType": "Class",
@@ -19,7 +19,7 @@
     "hasPart": [
       {
         "id": "urn:ngm:class:on-chain-voting",
-        "label": "On-Chain Voting"
+        "label": "On Chain Voting"
       },
       {
         "id": "urn:ngm:class:off-chain-voting",
@@ -59,7 +59,7 @@
     "enables": [
       {
         "id": "urn:ngm:class:on-chain-governance",
-        "label": "On-Chain Governance"
+        "label": "On-chain Governance"
       },
       {
         "id": "urn:ngm:class:dao-governance",
@@ -83,11 +83,11 @@
       },
       {
         "id": "urn:ngm:class:delegated-proof-of-stake",
-        "label": "Delegated Proof-of-Stake"
+        "label": "Delegated Proof of Stake"
       },
       {
         "id": "urn:ngm:class:proof-of-work",
-        "label": "Proof of Work"
+        "label": "Proof Of Work"
       }
     ],
     "bridgesTo": [

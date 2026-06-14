@@ -109,7 +109,7 @@ public:: true
     "requires": [
       {
         "@id": "urn:ngm:class:algorithm",
-        "label": "Algorithms"
+        "label": "Algorithm"
       },
       {
         "@id": "urn:ngm:class:dsp-hardware",
@@ -117,7 +117,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:sensor",
-        "label": "Sensors"
+        "label": "Sensor"
       },
       {
         "@id": "urn:ngm:class:analog-to-digital-conversion",
@@ -139,7 +139,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:computer-vision-video-analysis",
-        "label": "Video Processing"
+        "label": "Computer Vision Video Analysis"
       },
       {
         "@id": "urn:ngm:class:noise-cancellation",

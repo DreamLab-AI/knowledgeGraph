@@ -39,7 +39,7 @@ public:: true
       {"@id": "urn:ngm:class:hugging-face-diffusers", "label": "Hugging Face Diffusers"}
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:stable-diffusion-image-model", "label": "Stable Diffusion"}
+      {"@id": "urn:ngm:class:stable-diffusion-image-model", "label": "Stable Diffusion Image Model"}
     ]
   },
   "quality": 0.8

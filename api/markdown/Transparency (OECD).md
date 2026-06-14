@@ -75,7 +75,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:trust",
-        "label": "trust"
+        "label": "Trust"
       }
     ]
   },

@@ -30,7 +30,7 @@
     "relatedTo": [
       {
         "id": "urn:ngm:class:ai-governance",
-        "label": "AI Governance Domain"
+        "label": "AI Governance"
       },
       {
         "id": "urn:ngm:class:algorithmic-transparency-index",

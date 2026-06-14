@@ -33,7 +33,7 @@ public:: true
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-standards-and-interop",
-      "label": "Sc Standards And Interop"
+      "label": "Standards and Interoperability"
     }
   ],
   "relations": {

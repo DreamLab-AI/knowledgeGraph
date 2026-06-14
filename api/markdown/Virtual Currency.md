@@ -184,7 +184,7 @@ alias:: VirtualCurrency
     "relatedTo": [
       {
         "@id": "urn:ngm:class:anti-money-laundering",
-        "label": "Anti Money Laundering"
+        "label": "Anti-Money Laundering"
       },
       {
         "@id": "urn:ngm:class:know-your-customer",

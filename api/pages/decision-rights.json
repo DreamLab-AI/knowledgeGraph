@@ -30,7 +30,7 @@
     "relatedTo": [
       {
         "id": "urn:ngm:class:governance",
-        "label": "Governance Domain"
+        "label": "Governance"
       },
       {
         "id": "urn:ngm:class:governance-framework",

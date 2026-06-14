@@ -133,7 +133,7 @@ public:: true
     "requires": [
       {
         "@id": "urn:ngm:class:governance-framework",
-        "label": "Governance Frameworks"
+        "label": "Governance Framework"
       },
       {
         "@id": "urn:ngm:class:regulatory-standards",
@@ -143,7 +143,7 @@ public:: true
     "enables": [
       {
         "@id": "urn:ngm:class:audit-trail",
-        "label": "Audit Trails"
+        "label": "Audit Trail"
       },
       {
         "@id": "urn:ngm:class:automated-compliance",
@@ -157,7 +157,7 @@ public:: true
     "partOf": [
       {
         "@id": "urn:ngm:class:etsi-metaverse-domain-taxonomy",
-        "label": "ETSI Metaverse Domain Taxonomy"
+        "label": "Etsi Metaverse Domain Taxonomy"
       }
     ],
     "bridgesTo": [

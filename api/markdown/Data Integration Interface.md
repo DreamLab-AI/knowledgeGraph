@@ -183,7 +183,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:real-time-synchronization",
-        "label": "Real-Time Synchronization"
+        "label": "Real-time Synchronization"
       }
     ],
     "partOf": [

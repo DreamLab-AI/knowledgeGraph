@@ -304,18 +304,18 @@ public:: true
     ],
     "supports": [
       {"@id": "urn:ngm:class:multimodal", "label": "Multimodal"},
-      {"@id": "urn:ngm:class:open-generative-ai-tools", "label": "Open Generative AI Tools"}
+      {"@id": "urn:ngm:class:open-generative-ai-tools", "label": "Open Generative AI tools"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
       {"@id": "urn:ngm:class:copyright", "label": "Copyright"}
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:metaverse", "label": "MetaverseDomain"},
+      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"},
       {"@id": "urn:ngm:class:comfy-ui", "label": "ComfyUI"}
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision (discriminative)"}
+      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}
     ]
   },
   "sameAs": [

@@ -123,7 +123,7 @@ public:: true
   "maturity": "established",
   "subClassOf": {
     "@id": "urn:ngm:class:bc-governance-and-regulation",
-    "label": "Bc Governance And Regulation"
+    "label": "Governance and Regulation"
   },
   "relations": {
     "hasPart": [
@@ -179,7 +179,7 @@ public:: true
     "uses": [
       {
         "@id": "urn:ngm:class:proof-of-work",
-        "label": "Proof of Work"
+        "label": "Proof Of Work"
       },
       {
         "@id": "urn:ngm:class:proof-of-stake",

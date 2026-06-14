@@ -9,7 +9,7 @@
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-computing-and-cloud",
-      "label": "Infrastructure Computing and Cloud"
+      "label": "Computing and Cloud"
     }
   ],
   "entityType": "Class",

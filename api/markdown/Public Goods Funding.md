@@ -52,11 +52,11 @@ public:: true
     ],
     "requires": [
       {"@id": "urn:ngm:class:mechanism-design", "label": "Mechanism Design"},
-      {"@id": "urn:ngm:class:on-chain-governance", "label": "On-Chain Governance"},
+      {"@id": "urn:ngm:class:on-chain-governance", "label": "On-chain Governance"},
       {"@id": "urn:ngm:class:identity-verification", "label": "Identity Verification"}
     ],
     "enables": [
-      {"@id": "urn:ngm:class:open-source-software", "label": "Open-Source Software"},
+      {"@id": "urn:ngm:class:open-source-software", "label": "Open Source Software"},
       {"@id": "urn:ngm:class:protocol-development", "label": "Protocol Development"},
       {"@id": "urn:ngm:class:commons-based-peer-production", "label": "Commons-Based Peer Production"}
     ],

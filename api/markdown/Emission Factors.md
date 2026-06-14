@@ -56,7 +56,7 @@ public:: true
       {"@id": "urn:ngm:class:iea-statistics", "label": "IEA Statistics"}
     ],
     "supports": [
-      {"@id": "urn:ngm:class:sustainability-reporting", "label": "Sustainability Reporting"},
+      {"@id": "urn:ngm:class:sustainability-reporting", "label": "SustainabilityReporting"},
       {"@id": "urn:ngm:class:carbon-credits", "label": "Carbon Credits"},
       {"@id": "urn:ngm:class:net-zero-target-setting", "label": "Net Zero Target Setting"}
     ],

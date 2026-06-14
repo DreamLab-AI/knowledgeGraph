@@ -53,14 +53,14 @@ public:: true
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-research-area",
-      "label": "Ai Research Area"
+      "label": "AI Research Area"
     }
   ],
   "relations": {
     "requires": [
       {
         "@id": "urn:ngm:class:quantum-computation-paradigm",
-        "label": "Quantum Computing"
+        "label": "Quantum Computation Paradigm"
       }
     ]
   },

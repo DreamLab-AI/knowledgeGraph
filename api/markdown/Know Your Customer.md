@@ -63,13 +63,13 @@ public:: true
       {"@id": "urn:ngm:class:basel-committee-on-banking-supervision", "label": "Basel Committee on Banking Supervision"}
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:privacy-by-design", "label": "Privacy by Design"},
+      {"@id": "urn:ngm:class:privacy-by-design", "label": "Privacy By Design"},
       {"@id": "urn:ngm:class:anonymous-transaction", "label": "Anonymous Transaction"}
     ],
     "bridgesTo": [
       {"@id": "urn:ngm:class:decentralised-identity", "label": "Decentralised Identity"},
       {"@id": "urn:ngm:class:verifiable-credential", "label": "Verifiable Credential"},
-      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self-Sovereign Identity"}
+      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self Sovereign Identity"}
     ]
   },
   "quality": 0.74,

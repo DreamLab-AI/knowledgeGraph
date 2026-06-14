@@ -63,7 +63,7 @@ public:: true
     ],
     "enables": [
       {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
-      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse Domain"}
+      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"}
     ],
     "dependsOn": [
       {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"}

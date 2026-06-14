@@ -39,7 +39,7 @@ alias:: FlashAttention
   ],
   "relations": {
     "implements": [
-      {"@id": "urn:ngm:class:scaled-dot-product-attention", "label": "Scaled Dot-Product Attention"},
+      {"@id": "urn:ngm:class:scaled-dot-product-attention", "label": "Scaled Dot Product Attention"},
       {"@id": "urn:ngm:class:online-softmax", "label": "Online Softmax"}
     ],
     "uses": [
@@ -60,7 +60,7 @@ alias:: FlashAttention
       {"@id": "urn:ngm:class:multi-head-attention", "label": "Multi-Head Attention"}
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:high-bandwidth-memory", "label": "High-Bandwidth Memory"},
+      {"@id": "urn:ngm:class:high-bandwidth-memory", "label": "High Bandwidth Memory"},
       {"@id": "urn:ngm:class:model-training", "label": "Model Training"}
     ],
     "contrastsWith": [

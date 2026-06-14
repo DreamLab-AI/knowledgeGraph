@@ -38,7 +38,7 @@
       },
       {
         "id": "urn:ngm:class:continuous-improvement",
-        "label": "Continuous Improvement"
+        "label": "continuous improvement"
       },
       {
         "id": "urn:ngm:class:ai-supply-chain-management",
@@ -59,7 +59,7 @@
     "contrastsWith": [
       {
         "id": "urn:ngm:class:iso-iec-23894",
-        "label": "ISO IEC 23894"
+        "label": "ISO-IEC 23894"
       },
       {
         "id": "urn:ngm:class:ieee-7000",
@@ -121,11 +121,11 @@
       },
       {
         "id": "urn:ngm:class:iso-iec-27001",
-        "label": "ISO IEC 27001"
+        "label": "ISO/IEC 27001"
       },
       {
         "id": "urn:ngm:class:iso-iec-27701",
-        "label": "ISO IEC 27701"
+        "label": "ISO-IEC 27701"
       }
     ]
   },

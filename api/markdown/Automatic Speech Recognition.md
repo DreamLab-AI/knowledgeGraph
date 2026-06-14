@@ -63,7 +63,7 @@ public:: true
     "supports": [
       {"@id": "urn:ngm:class:accessibility", "label": "Accessibility"},
       {"@id": "urn:ngm:class:multimodal-ai", "label": "Multimodal AI"},
-      {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human-Computer Interaction"}
+      {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human Computer Interaction"}
     ],
     "contrastsWith": [
       {"@id": "urn:ngm:class:text-to-speech", "label": "Text-to-Speech"},

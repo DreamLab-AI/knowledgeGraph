@@ -26,7 +26,7 @@ public:: true
   "subClassOf": [{"@id": "urn:ngm:class:cryptographic-primitive", "label": "Cryptographic Primitive"}],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:rgb-and-client-side-validation", "label": "RGB and Client-Side Validation"},
+      {"@id": "urn:ngm:class:rgb-and-client-side-validation", "label": "RGB and Client Side Validation"},
       {"@id": "urn:ngm:class:strict-types", "label": "Strict Types"}
     ]
   },

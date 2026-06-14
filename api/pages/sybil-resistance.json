@@ -9,7 +9,7 @@
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-protocol-and-consensus",
-      "label": "Bc Protocol And Consensus"
+      "label": "Protocol and Consensus"
     }
   ],
   "entityType": "Class",
@@ -91,7 +91,7 @@
     "uses": [
       {
         "id": "urn:ngm:class:proof-of-work",
-        "label": "Proof of Work"
+        "label": "Proof Of Work"
       },
       {
         "id": "urn:ngm:class:proof-of-stake",

@@ -23,7 +23,7 @@ public:: true
   "definition": "A behavior tree is a hierarchical, modular control architecture for structuring the decision-making of autonomous agents and robots. It composes leaf action and condition nodes under control-flow nodes (sequence, fallback, parallel, decorator) that are evaluated by periodic ticks, returning success, failure, or running. Behavior trees offer greater modularity and reactivity than finite-state machines and are widely used in robotics middleware and game AI.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:robo-navigation-and-planning", "label": "Robot Navigation and Planning"}],
+  "subClassOf": [{"@id": "urn:ngm:class:robo-navigation-and-planning", "label": "Navigation and Planning"}],
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:nav2", "label": "Nav2"},

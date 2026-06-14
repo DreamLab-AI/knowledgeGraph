@@ -209,7 +209,7 @@ public:: true
       {"@id": "urn:ngm:class:prompt-engineering", "label": "Prompt Engineering"},
       {"@id": "urn:ngm:class:tokenisation", "label": "Tokenisation"},
       {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"},
-      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine-Tuning"}
+      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine Tuning"}
     ],
     "hasPart": [
       {"@id": "urn:ngm:class:autoregressive-generation", "label": "Autoregressive Generation"},
@@ -229,7 +229,7 @@ public:: true
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:gpt", "label": "GPT"},
-      {"@id": "urn:ngm:class:deepfakes-and-fraudulent-content", "label": "Deepfakes and Fraudulent Content"}
+      {"@id": "urn:ngm:class:deepfakes-and-fraudulent-content", "label": "Deepfakes and fraudulent content"}
     ]
   },
   "sameAs": [

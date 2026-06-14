@@ -9,7 +9,7 @@
   "subClassOf": [
     {
       "id": "urn:ngm:class:distributed-data-structure",
-      "label": "DistributedDataStructure"
+      "label": "Distributed Data Structure"
     }
   ],
   "entityType": "Class",
@@ -61,7 +61,7 @@
       },
       {
         "id": "urn:ngm:class:proof-of-work",
-        "label": "Proof of Work"
+        "label": "Proof Of Work"
       }
     ],
     "implements": [],
@@ -108,7 +108,7 @@
     "standardizedBy": [
       {
         "id": "urn:ngm:class:iso-iec-23257-2021",
-        "label": "ISO/IEC 23257:2021"
+        "label": "ISO-IEC 23257 2021"
       },
       {
         "id": "urn:ngm:class:ieee-2418-1",

@@ -82,7 +82,7 @@ public:: true
       {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"}
     ],
     "supports": [
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"},
       {"@id": "urn:ngm:class:predictive-analytics", "label": "Predictive Analytics"}
     ],
     "bridgesTo": [

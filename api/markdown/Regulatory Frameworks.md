@@ -154,7 +154,7 @@ public:: true
     "standardizedBy": [
       {
         "@id": "urn:ngm:class:iso-standards",
-        "label": "ISO Standards"
+        "label": "Iso Standards"
       },
       {
         "@id": "urn:ngm:class:oecd-guidelines",

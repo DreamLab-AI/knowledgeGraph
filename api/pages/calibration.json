@@ -9,7 +9,7 @@
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-perception",
-      "label": "Robo Perception"
+      "label": "Perception and Sensing"
     }
   ],
   "entityType": "Class",
@@ -88,7 +88,7 @@
       },
       {
         "id": "urn:ngm:class:verification",
-        "label": "Verification"
+        "label": "VERIFICATION"
       }
     ],
     "bridgesTo": [

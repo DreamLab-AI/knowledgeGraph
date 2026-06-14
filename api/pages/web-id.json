@@ -44,11 +44,11 @@
     "relatedTo": [
       {
         "id": "urn:ngm:class:self-sovereign-identity",
-        "label": "Self-Sovereign Identity"
+        "label": "Self Sovereign Identity"
       },
       {
         "id": "urn:ngm:class:semantic-web-linked-data-standard",
-        "label": "Semantic Web"
+        "label": "Semantic Web Linked Data Standard"
       }
     ]
   },

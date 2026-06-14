@@ -159,7 +159,7 @@ public:: true
     "supports": [
       {
         "@id": "urn:ngm:class:human-robot-interaction",
-        "label": "Human-Robot Interaction"
+        "label": "Human Robot Interaction"
       },
       {
         "@id": "urn:ngm:class:robot-end-effector",
@@ -169,7 +169,7 @@ public:: true
     "standardizedBy": [
       {
         "@id": "urn:ngm:class:iso-9283",
-        "label": "ISO 9283 Manipulating Industrial Robots"
+        "label": "ISO 9283"
       },
       {
         "@id": "urn:ngm:class:iec-61800",

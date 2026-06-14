@@ -37,7 +37,7 @@ public:: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:multimodal-ai-architecture", "label": "multimodal"},
+      {"@id": "urn:ngm:class:multimodal-ai-architecture", "label": "Multimodal AI Architecture"},
       {"@id": "urn:ngm:class:tool-use", "label": "Tool Use"}
     ],
     "enables": [

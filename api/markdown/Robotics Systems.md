@@ -128,7 +128,7 @@ public:: true
       {"@id": "urn:ngm:class:robo-perception", "label": "Perception and Sensing"}
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:infrastructure", "label": "Technology Domain"}
+      {"@id": "urn:ngm:class:infrastructure", "label": "Infrastructure"}
     ]
   },
   "quality": 0.8,

@@ -66,7 +66,7 @@ public:: true
   ],
   "relations": {
     "standardizedBy": [
-      {"@id": "urn:ngm:class:eu-ai-act-regulatory-instrument", "label": "EU AI Act"}
+      {"@id": "urn:ngm:class:eu-ai-act-regulatory-instrument", "label": "EU AI Act Regulatory Instrument"}
     ],
     "requires": [
       {"@id": "urn:ngm:class:ai-risk-management", "label": "AI Risk Management"},

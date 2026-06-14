@@ -71,7 +71,7 @@
     "contrastsWith": [
       {
         "id": "urn:ngm:class:proof-of-work",
-        "label": "Proof of Work"
+        "label": "Proof Of Work"
       },
       {
         "id": "urn:ngm:class:order-book-exchange",
@@ -107,7 +107,7 @@
       },
       {
         "id": "urn:ngm:class:vote-escrow",
-        "label": "Vote-Escrow"
+        "label": "Vote Escrow"
       }
     ],
     "supports": [],

@@ -65,7 +65,7 @@ public:: true
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
-      "label": "Sc Content And Assets"
+      "label": "Content and Assets"
     }
   ],
   "relations": {

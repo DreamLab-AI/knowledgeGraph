@@ -107,7 +107,7 @@ public:: true
     "hasPart": [
       {
         "@id": "urn:ngm:class:ai-system",
-        "label": "AI Systems"
+        "label": "AI System"
       },
       {
         "@id": "urn:ngm:class:data-analytics",
@@ -119,7 +119,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning"
+        "label": "Machine Learning Discipline"
       }
     ],
     "enables": [
@@ -139,7 +139,7 @@ public:: true
     "partOf": [
       {
         "@id": "urn:ngm:class:etsi-metaverse-domain-model",
-        "label": "ETSI Metaverse Domain Model"
+        "label": "Etsi Metaverse Domain Model"
       }
     ]
   },

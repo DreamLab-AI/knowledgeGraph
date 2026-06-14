@@ -54,7 +54,7 @@ public:: true
     "uses": [
       {"@id": "urn:ngm:class:welfare-economics", "label": "Welfare Economics"},
       {"@id": "urn:ngm:class:matching-funds", "label": "Matching Funds"},
-      {"@id": "urn:ngm:class:on-chain-governance", "label": "On-Chain Governance"}
+      {"@id": "urn:ngm:class:on-chain-governance", "label": "On-chain Governance"}
     ],
     "contrastsWith": [
       {"@id": "urn:ngm:class:quadratic-voting", "label": "Quadratic Voting"},

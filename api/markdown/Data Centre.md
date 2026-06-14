@@ -39,7 +39,7 @@ public:: true
     "enables": [
       {"@id": "urn:ngm:class:cloud-computing", "label": "Cloud Computing"},
       {"@id": "urn:ngm:class:ai-model-training", "label": "AI Model Training"},
-      {"@id": "urn:ngm:class:high-performance-computing", "label": "High Performance Computing"},
+      {"@id": "urn:ngm:class:high-performance-computing", "label": "High-Performance Computing"},
       {"@id": "urn:ngm:class:content-delivery-network", "label": "Content Delivery Network"}
     ],
     "dependsOn": [

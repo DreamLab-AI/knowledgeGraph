@@ -123,7 +123,7 @@
     "supports": [
       {
         "id": "urn:ngm:class:human-robot-collaboration",
-        "label": "Human Robot Collaboration"
+        "label": "Human-Robot Collaboration"
       },
       {
         "id": "urn:ngm:class:workplace-safety",
@@ -151,7 +151,7 @@
       },
       {
         "id": "urn:ngm:class:industrial-automation",
-        "label": "Industrial Automation"
+        "label": "IndustrialAutomation"
       }
     ],
     "relatedTo": [

@@ -171,7 +171,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:voting-systems",
-        "label": "Voting System"
+        "label": "Voting Systems"
       },
       {
         "@id": "urn:ngm:class:governance-token",

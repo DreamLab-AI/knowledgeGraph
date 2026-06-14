@@ -25,7 +25,7 @@ public:: true
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:control-theory", "label": "Control Theory"}],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:control-algorithm", "label": "Control Algorithm"}, {"@id": "urn:ngm:class:model-based-control", "label": "Model-Based Control"}]
+    "relatedTo": [{"@id": "urn:ngm:class:control-algorithm", "label": "Control Algorithm"}, {"@id": "urn:ngm:class:model-based-control", "label": "Model Based Control"}]
   },
   "quality": 0.72
 }

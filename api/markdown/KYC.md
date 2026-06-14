@@ -162,7 +162,7 @@ public:: true
     "bridgesTo": [
       {
         "@id": "urn:ngm:class:self-sovereign-identity",
-        "label": "Self-Sovereign Identity"
+        "label": "Self Sovereign Identity"
       },
       {
         "@id": "urn:ngm:class:decentralized-identity",

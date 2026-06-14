@@ -30,7 +30,7 @@
     "relatedTo": [
       {
         "id": "urn:ngm:class:retrieval-augmented-generation-rag",
-        "label": "Retrieval-Augmented Generation (RAG)"
+        "label": "Retrieval Augmented Generation - RAG"
       },
       {
         "id": "urn:ngm:class:rag-pipeline",

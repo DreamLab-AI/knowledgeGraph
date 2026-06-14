@@ -24,7 +24,7 @@ public:: true
   "domain": "infrastructure",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:infra-software-engineering", "label": "Infra Software Engineering"}
+    {"@id": "urn:ngm:class:infra-software-engineering", "label": "Software Engineering"}
   ],
   "relations": {
     "hasPart": [

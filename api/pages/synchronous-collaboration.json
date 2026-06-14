@@ -13,7 +13,7 @@
     },
     {
       "id": "urn:ngm:class:telecollaboration",
-      "label": "TC-0001-telecollaboration-domain"
+      "label": "Telecollaboration"
     }
   ],
   "entityType": "Class",

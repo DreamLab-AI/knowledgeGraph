@@ -571,7 +571,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:decentralised-web",
-        "label": "Decentralized Web"
+        "label": "Decentralised Web"
       },
       {
         "@id": "urn:ngm:class:nft",

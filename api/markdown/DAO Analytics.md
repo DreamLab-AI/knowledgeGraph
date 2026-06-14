@@ -725,7 +725,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:graph-database",
-        "label": "Graph Databases"
+        "label": "Graph Database"
       },
       {
         "@id": "urn:ngm:class:graph-ql",
@@ -745,11 +745,11 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:zero-knowledge-proof",
-        "label": "Zero-Knowledge Proofs"
+        "label": "Zero-Knowledge Proof"
       },
       {
         "@id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning"
+        "label": "Machine Learning Discipline"
       },
       {
         "@id": "urn:ngm:class:natural-language-processing",
@@ -783,7 +783,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:voting-mechanism",
-        "label": "Voting Mechanisms"
+        "label": "Voting Mechanism"
       },
       {
         "@id": "urn:ngm:class:delegate-democracy",

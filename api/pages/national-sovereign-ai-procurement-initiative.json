@@ -39,7 +39,7 @@
     "bridgesTo": [
       {
         "id": "urn:ngm:class:ai-capability-temporal-horizon-framework",
-        "label": "Soon-Next-Later (AI futurology)"
+        "label": "AI Capability Temporal Horizon Framework"
       }
     ],
     "uses": [],

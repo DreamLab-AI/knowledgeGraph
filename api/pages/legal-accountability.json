@@ -9,7 +9,7 @@
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-legal-and-regulatory",
-      "label": "Infrastructure Legal and Regulatory"
+      "label": "Legal and Regulatory"
     }
   ],
   "entityType": "Class",
@@ -34,7 +34,7 @@
       },
       {
         "id": "urn:ngm:class:etsi-domain-ethics-and-law",
-        "label": "ETSI Domain Ethics and Law"
+        "label": "ETSI Domain: Ethics & Law"
       }
     ]
   },

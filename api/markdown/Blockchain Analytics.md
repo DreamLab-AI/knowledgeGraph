@@ -46,7 +46,7 @@ public:: true
     ],
     "dependsOn": [
       {"@id": "urn:ngm:class:high-performance-computing", "label": "High-Performance Computing"},
-      {"@id": "urn:ngm:class:ethereum-smart-contract-platform", "label": "Ethereum"}
+      {"@id": "urn:ngm:class:ethereum-smart-contract-platform", "label": "Ethereum Smart Contract Platform"}
     ]
   },
   "quality": 0.8

@@ -23,7 +23,7 @@ public:: true
   "definition": "A risk scoring engine is a software component that computes a numerical risk score for an entity, transaction, or session by combining multiple weighted signals through rules or models. In compliance and identity systems it quantifies how likely an action is fraudulent or non-compliant, feeding thresholds that trigger review, blocking, or escalation. The score provides a consistent, tunable basis for automated decisions.",
   "domain": "security",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:infra-security-and-identity", "label": "Infrastructure Security and Identity"}],
+  "subClassOf": [{"@id": "urn:ngm:class:infra-security-and-identity", "label": "Security and Identity"}],
   "relations": {
     "relatedTo": [{"@id": "urn:ngm:class:compliance-monitoring", "label": "Compliance Monitoring"}, {"@id": "urn:ngm:class:identity-verification", "label": "Identity Verification"}]
   },

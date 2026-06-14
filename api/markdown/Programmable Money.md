@@ -48,7 +48,7 @@ public:: true
       {"@id": "urn:ngm:class:payment-system", "label": "Payment System"},
       {"@id": "urn:ngm:class:automated-market-maker", "label": "Automated Market Maker"},
       {"@id": "urn:ngm:class:atomic-swap", "label": "Atomic Swap"},
-      {"@id": "urn:ngm:class:delivery-versus-payment", "label": "Delivery Versus Payment"}
+      {"@id": "urn:ngm:class:delivery-versus-payment", "label": "Delivery-Versus-Payment"}
     ],
     "hasPart": [
       {"@id": "urn:ngm:class:stablecoin", "label": "Stablecoin"},

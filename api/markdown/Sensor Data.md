@@ -34,7 +34,7 @@ alias:: SensorData
   "subClassOf": [
     {
       "@id": "urn:ngm:class:robo-perception",
-      "label": "Robo Perception"
+      "label": "Perception and Sensing"
     }
   ],
   "relations": {

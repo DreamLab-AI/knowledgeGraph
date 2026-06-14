@@ -9,7 +9,7 @@
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-infrastructure",
-      "label": "AI Infrastructure (Category)"
+      "label": "AI Infrastructure"
     }
   ],
   "entityType": "Class",
@@ -33,7 +33,7 @@
     "requires": [
       {
         "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning"
+        "label": "Machine Learning Discipline"
       },
       {
         "id": "urn:ngm:class:data-pipeline",

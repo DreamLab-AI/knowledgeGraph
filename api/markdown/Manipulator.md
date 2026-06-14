@@ -74,7 +74,7 @@ alias:: RB-0003-manipulator
     "hasPart": [
       {
         "@id": "urn:ngm:class:end-effector",
-        "label": "End-Effector"
+        "label": "End Effector"
       },
       {
         "@id": "urn:ngm:class:joint",
@@ -110,7 +110,7 @@ alias:: RB-0003-manipulator
       },
       {
         "@id": "urn:ngm:class:kinematic-model",
-        "label": "Kinematic Model"
+        "label": "KinematicModel"
       },
       {
         "@id": "urn:ngm:class:trajectory-planning",
@@ -152,7 +152,7 @@ alias:: RB-0003-manipulator
     "implements": [
       {
         "@id": "urn:ngm:class:iso-8373-2021",
-        "label": "ISO 8373:2021"
+        "label": "ISO 8373 2021"
       },
       {
         "@id": "urn:ngm:class:denavit-hartenberg-convention",
@@ -166,7 +166,7 @@ alias:: RB-0003-manipulator
       },
       {
         "@id": "urn:ngm:class:force-torque-sensor",
-        "label": "Force-Torque Sensor"
+        "label": "Force Torque Sensor"
       },
       {
         "@id": "urn:ngm:class:servo-motor",

@@ -64,7 +64,7 @@ public:: true
     "uses": [
       {
         "@id": "urn:ngm:class:robotics",
-        "label": "robotics"
+        "label": "Robotics"
       }
     ]
   }

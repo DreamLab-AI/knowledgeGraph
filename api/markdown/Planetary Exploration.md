@@ -23,7 +23,7 @@ public:: true
   "definition": "Planetary exploration is the robotic investigation of planets, moons, and other bodies using rovers, landers, and orbiters operating in remote, unstructured, communication-delayed environments. It demands highly autonomous navigation and perception because round-trip signal delays make teleoperation impractical, requiring robots to plan paths and avoid hazards on their own. It is a demanding proving ground for autonomous ground-robot capability.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:robo-navigation-and-planning", "label": "Robotics Navigation and Planning"}],
+  "subClassOf": [{"@id": "urn:ngm:class:robo-navigation-and-planning", "label": "Navigation and Planning"}],
   "relations": {
     "relatedTo": [{"@id": "urn:ngm:class:navigation", "label": "Navigation"}, {"@id": "urn:ngm:class:ground-robot", "label": "Ground Robot"}]
   },

@@ -78,8 +78,8 @@ alias:: QualityAssurance
       {"@id": "urn:ngm:class:fairness-in-ai", "label": "Fairness in AI"}
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:iso-iec-25010", "label": "ISO/IEC 25010"},
-      {"@id": "urn:ngm:class:iso-iec-42001", "label": "ISO/IEC 42001"},
+      {"@id": "urn:ngm:class:iso-iec-25010", "label": "ISO-IEC 25010"},
+      {"@id": "urn:ngm:class:iso-iec-42001", "label": "ISO IEC 42001"},
       {"@id": "urn:ngm:class:ieee-829", "label": "IEEE 829"}
     ],
     "contrastsWith": [

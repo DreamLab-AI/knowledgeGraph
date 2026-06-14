@@ -65,7 +65,7 @@ elevatedFrom:: [[license]]
       },
       {
         "@id": "urn:ngm:class:intellectual-property-rights-framework",
-        "label": "copyright"
+        "label": "Intellectual Property Rights Framework"
       }
     ],
     "supports": [

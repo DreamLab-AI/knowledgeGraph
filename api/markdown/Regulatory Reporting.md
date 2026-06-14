@@ -452,7 +452,7 @@ alias:: BC-0486-regulatory-reporting
       },
       {
         "@id": "urn:ngm:class:mi-ca-regulation",
-        "label": "EU MiCA Regulation"
+        "label": "MiCA Regulation"
       }
     ],
     "uses": [

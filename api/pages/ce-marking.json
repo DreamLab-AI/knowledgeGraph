@@ -9,7 +9,7 @@
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-safety-and-standards",
-      "label": "Robotic Safety and Standards"
+      "label": "Safety and Standards"
     }
   ],
   "entityType": "Class",

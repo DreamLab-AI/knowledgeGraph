@@ -44,7 +44,7 @@ public:: true
       {"@id": "urn:ngm:class:compiler", "label": "Compiler"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:ethereum-smart-contract-platform", "label": "Ethereum"},
+      {"@id": "urn:ngm:class:ethereum-smart-contract-platform", "label": "Ethereum Smart Contract Platform"},
       {"@id": "urn:ngm:class:abi", "label": "Application Binary Interface"},
       {"@id": "urn:ngm:class:opcode", "label": "Opcode"}
     ],

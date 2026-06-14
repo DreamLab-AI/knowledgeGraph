@@ -32,7 +32,7 @@ public:: true
       {"@id": "urn:ngm:class:image-generation", "label": "Image Generation"}
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:stable-diffusion-image-model", "label": "Stable Diffusion"}
+      {"@id": "urn:ngm:class:stable-diffusion-image-model", "label": "Stable Diffusion Image Model"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:inpainting", "label": "Inpainting"},

@@ -25,7 +25,7 @@
       },
       {
         "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning"
+        "label": "Machine Learning Discipline"
       },
       {
         "id": "urn:ngm:class:edge-computing",
@@ -51,13 +51,13 @@
     "partOf": [
       {
         "id": "urn:ngm:class:infra-computing-and-cloud",
-        "label": "Disruptive Tech Domain"
+        "label": "Computing and Cloud"
       }
     ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:technology-disruption-dynamics",
-        "label": "Disruption"
+        "label": "Technology Disruption Dynamics"
       },
       {
         "id": "urn:ngm:class:technology-adoption",

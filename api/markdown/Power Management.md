@@ -71,7 +71,7 @@ public:: true
       {"@id": "urn:ngm:class:high-performance-computing", "label": "High-Performance Computing"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:real-time-processing", "label": "Real-Time Processing"},
+      {"@id": "urn:ngm:class:real-time-processing", "label": "Real-time Processing"},
       {"@id": "urn:ngm:class:functional-safety", "label": "Functional Safety"},
       {"@id": "urn:ngm:class:system-on-chip", "label": "System-on-Chip"}
     ],

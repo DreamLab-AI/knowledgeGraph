@@ -196,7 +196,7 @@ alias:: TELE-002-telecollaboration
       },
       {
         "@id": "urn:ngm:class:virtual-workspace",
-        "label": "Virtual Workspaces"
+        "label": "Virtual Workspace"
       },
       {
         "@id": "urn:ngm:class:asynchronous-collaboration",
@@ -218,7 +218,7 @@ alias:: TELE-002-telecollaboration
       },
       {
         "@id": "urn:ngm:class:coordination-mechanisms",
-        "label": "CoordinationMechanisms"
+        "label": "Coordination Mechanisms"
       },
       {
         "@id": "urn:ngm:class:real-time-protocols",

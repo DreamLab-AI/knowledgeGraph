@@ -245,7 +245,7 @@ alias:: LLM, Large Language Model
     },
     {
       "@id": "urn:ngm:class:large-scale-pretrained-foundation-model",
-      "label": "Foundation Models"
+      "label": "Large-Scale Pretrained Foundation Model"
     }
   ],
   "relations": {

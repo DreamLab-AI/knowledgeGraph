@@ -176,7 +176,7 @@ alias:: BC-0067-hyperledger-fabric, BC-0426-hyperledger-fabric, HyperledgerFabri
       },
       {
         "@id": "urn:ngm:class:raft-consensus",
-        "label": "Raft Consensus"
+        "label": "RAFT Consensus"
       },
       {
         "@id": "urn:ngm:class:practical-byzantine-fault-tolerance",

@@ -57,7 +57,7 @@ public:: true
     ],
     "supports": [
       {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
-      {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human-Computer Interaction"},
+      {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human Computer Interaction"},
       {"@id": "urn:ngm:class:telecommunications", "label": "Telecommunications"}
     ],
     "standardizedBy": [
@@ -69,7 +69,7 @@ public:: true
       {"@id": "urn:ngm:class:analogue-signal-processing", "label": "Analogue Signal Processing"}
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:audio-spatialization", "label": "Audio Spatialisation"},
+      {"@id": "urn:ngm:class:audio-spatialization", "label": "Audio Spatialization"},
       {"@id": "urn:ngm:class:spatial-audio", "label": "Spatial Audio"},
       {"@id": "urn:ngm:class:extended-reality", "label": "Extended Reality"}
     ],

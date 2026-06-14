@@ -23,7 +23,7 @@ public:: true
   "definition": "A data fabric is an architectural approach that provides a unified, metadata-driven layer for accessing, integrating and governing data across heterogeneous and distributed sources. It uses active metadata, knowledge graphs and automation to connect data without forcing physical consolidation. By abstracting underlying systems it delivers consistent discovery, access and governance, reducing the friction of fragmented data estates.",
   "domain": "data",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:infra-data-management", "label": "Infrastructure Data Management"}],
+  "subClassOf": [{"@id": "urn:ngm:class:infra-data-management", "label": "Data Management"}],
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:metadata-management", "label": "Metadata Management"}

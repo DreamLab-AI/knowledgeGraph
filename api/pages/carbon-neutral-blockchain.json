@@ -19,7 +19,7 @@
     "hasPart": [
       {
         "id": "urn:ngm:class:carbon-credits",
-        "label": "Carbon Credit"
+        "label": "Carbon Credits"
       },
       {
         "id": "urn:ngm:class:carbon-offset-programme",
@@ -35,7 +35,7 @@
       },
       {
         "id": "urn:ngm:class:renewable-energy-certificates",
-        "label": "Renewable Energy Certificate"
+        "label": "Renewable Energy Certificates"
       },
       {
         "id": "urn:ngm:class:renewable-energy-integration",
@@ -65,7 +65,7 @@
       },
       {
         "id": "urn:ngm:class:renewable-energy-certificates",
-        "label": "Renewable Energy Certificate"
+        "label": "Renewable Energy Certificates"
       },
       {
         "id": "urn:ngm:class:scope-1-emissions",
@@ -199,7 +199,7 @@
       },
       {
         "id": "urn:ngm:class:renewable-energy-certificates",
-        "label": "Renewable Energy Certificate"
+        "label": "Renewable Energy Certificates"
       },
       {
         "id": "urn:ngm:class:toucan-protocol",
@@ -298,7 +298,7 @@
       },
       {
         "id": "urn:ngm:class:carbon-credits",
-        "label": "Carbon Credit"
+        "label": "Carbon Credits"
       },
       {
         "id": "urn:ngm:class:carbon-markets",
@@ -338,7 +338,7 @@
       },
       {
         "id": "urn:ngm:class:ethereum-smart-contract-platform",
-        "label": "Ethereum"
+        "label": "Ethereum Smart Contract Platform"
       },
       {
         "id": "urn:ngm:class:smart-contract",

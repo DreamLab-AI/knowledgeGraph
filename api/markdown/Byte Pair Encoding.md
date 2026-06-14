@@ -53,7 +53,7 @@ public:: true
   ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:neural-network-text-tokenisation", "label": "Tokenisation"}
+      {"@id": "urn:ngm:class:neural-network-text-tokenisation", "label": "Neural Network Text Tokenisation"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},

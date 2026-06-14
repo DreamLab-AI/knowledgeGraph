@@ -50,7 +50,7 @@ public:: true
   "domain": "data",
   "maturity": "mature",
   "subClassOf": [
-    {"@id": "urn:ngm:class:infra-data-management", "label": "Infra Data Management"}
+    {"@id": "urn:ngm:class:infra-data-management", "label": "Data Management"}
   ],
   "relations": {
     "hasPart": [
@@ -66,7 +66,7 @@ public:: true
       {"@id": "urn:ngm:class:access-control", "label": "Access Control"}
     ],
     "enables": [
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"},
       {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"},
       {"@id": "urn:ngm:class:data-analytics", "label": "Data Analytics"},
       {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}

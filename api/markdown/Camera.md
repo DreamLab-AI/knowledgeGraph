@@ -117,7 +117,7 @@ public:: true
     "hasPart": [
       {
         "@id": "urn:ngm:class:image-sensor",
-        "label": "ImageSensor"
+        "label": "Image Sensor"
       },
       {
         "@id": "urn:ngm:class:lens",
@@ -129,7 +129,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:camera-calibration",
-        "label": "CameraCalibration"
+        "label": "Camera Calibration"
       }
     ],
     "partOf": [
@@ -155,11 +155,11 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:object-detection",
-        "label": "ObjectDetection"
+        "label": "Object Detection"
       },
       {
         "@id": "urn:ngm:class:semantic-segmentation",
-        "label": "SemanticSegmentation"
+        "label": "Semantic Segmentation"
       },
       {
         "@id": "urn:ngm:class:slam",
@@ -183,7 +183,7 @@ public:: true
     "implements": [
       {
         "@id": "urn:ngm:class:visual-perception",
-        "label": "VisualPerception"
+        "label": "Visual Perception"
       }
     ],
     "uses": [
@@ -205,7 +205,7 @@ public:: true
     "contrastsWith": [
       {
         "@id": "urn:ngm:class:lidar",
-        "label": "LiDAR"
+        "label": "Lidar"
       },
       {
         "@id": "urn:ngm:class:radar",
@@ -229,7 +229,7 @@ public:: true
     "relatedTo": [
       {
         "@id": "urn:ngm:class:structure-from-motion",
-        "label": "Structure from Motion"
+        "label": "Structure-from-Motion"
       },
       {
         "@id": "urn:ngm:class:neural-radiance-field",

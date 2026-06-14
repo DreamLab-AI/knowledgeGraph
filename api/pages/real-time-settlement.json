@@ -30,7 +30,7 @@
     "relatedTo": [
       {
         "id": "urn:ngm:class:financial-infrastructure",
-        "label": "Financial Infrastructure Domain"
+        "label": "Financial Infrastructure"
       },
       {
         "id": "urn:ngm:class:cbdcs",

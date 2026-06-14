@@ -23,7 +23,7 @@ public:: true
   "definition": "Perpetual futures are derivative contracts that track an underlying asset's price without an expiry or settlement date. A periodic funding-rate payment between long and short holders tethers the contract price to the spot index, replacing the convergence that expiry provides in traditional futures. They are a dominant instrument in crypto derivatives markets, enabling leveraged directional exposure that can be held indefinitely.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:bc-defi-and-economics", "label": "Blockchain DeFi and Economics"}],
+  "subClassOf": [{"@id": "urn:ngm:class:bc-defi-and-economics", "label": "DeFi and Economics"}],
   "relations": {
     "relatedTo": [{"@id": "urn:ngm:class:d-yd-x", "label": "dYdX"}, {"@id": "urn:ngm:class:gmx", "label": "GMX"}]
   },

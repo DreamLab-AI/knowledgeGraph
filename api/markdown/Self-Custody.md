@@ -73,7 +73,7 @@ alias:: Self Custody
       {"@id": "urn:ngm:class:air-gap", "label": "Air Gap"}
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self-Sovereign Identity"},
+      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self Sovereign Identity"},
       {"@id": "urn:ngm:class:verifiable-credential", "label": "Verifiable Credential"}
     ]
   },

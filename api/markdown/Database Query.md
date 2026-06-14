@@ -197,7 +197,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:semantic-web-linked-data-standard",
-        "label": "Semantic Web"
+        "label": "Semantic Web Linked Data Standard"
       },
       {
         "@id": "urn:ngm:class:transaction-processing",

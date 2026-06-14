@@ -26,7 +26,7 @@ public:: true
   "subClassOf": [{"@id": "urn:ngm:class:data-format", "label": "Data Format"}],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:json-data-interchange-format", "label": "json"},
+      {"@id": "urn:ngm:class:json-data-interchange-format", "label": "JSON Data Interchange Format"},
       {"@id": "urn:ngm:class:protocol-buffer", "label": "Protocol Buffer"},
       {"@id": "urn:ngm:class:schema-registry", "label": "Schema Registry"},
       {"@id": "urn:ngm:class:data-format-standard", "label": "Data Format Standard"},

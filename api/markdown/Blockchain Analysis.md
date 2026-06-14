@@ -30,7 +30,7 @@ public:: true
       {"@id": "urn:ngm:class:heuristic-methods", "label": "Heuristic Methods"}
     ],
     "supports": [
-      {"@id": "urn:ngm:class:aml-kyc-compliance", "label": "AML/KYC Compliance"},
+      {"@id": "urn:ngm:class:aml-kyc-compliance", "label": "AML KYC Compliance"},
       {"@id": "urn:ngm:class:kyc-aml", "label": "KYC/AML"}
     ],
     "relatedTo": [

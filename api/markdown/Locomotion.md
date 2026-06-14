@@ -23,7 +23,7 @@ public:: true
   "definition": "Locomotion is the capability of a robot or embodied agent to move its body through an environment by coordinating actuators against ground or fluid reaction forces. It encompasses gait generation, balance control, and trajectory execution across modalities such as legged walking, wheeled rolling, and aerial or aquatic propulsion. Robust locomotion is fundamental to autonomous mobility and physical task execution.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:robo-actuation-and-control", "label": "Robotics Actuation and Control"}],
+  "subClassOf": [{"@id": "urn:ngm:class:robo-actuation-and-control", "label": "Actuation and Control"}],
   "relations": {
     "relatedTo": [{"@id": "urn:ngm:class:mobile-robot", "label": "Mobile Robot"}, {"@id": "urn:ngm:class:control-system", "label": "Control System"}]
   },

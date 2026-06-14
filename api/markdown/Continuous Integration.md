@@ -76,7 +76,7 @@ public:: true
       {"@id": "urn:ngm:class:big-bang-integration", "label": "Big-Bang Integration"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:ci-cd-automation", "label": "CI/CD Automation"},
+      {"@id": "urn:ngm:class:ci-cd-automation", "label": "CI-CD Automation"},
       {"@id": "urn:ngm:class:feature-flags", "label": "Feature Flags"},
       {"@id": "urn:ngm:class:observability", "label": "Observability"}
     ],

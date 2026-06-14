@@ -108,7 +108,7 @@ public:: true
     ],
     "contrastsWith": [
       {"@id": "urn:ngm:class:solo-mining", "label": "Solo Mining"},
-      {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof Of Stake"},
+      {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof of Stake"},
       {"@id": "urn:ngm:class:merged-mining", "label": "Merged Mining"}
     ],
     "relatedTo": [

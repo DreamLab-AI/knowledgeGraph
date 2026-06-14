@@ -176,7 +176,7 @@ public:: true
     },
     {
       "@id": "urn:ngm:class:robo-robot-type",
-      "label": "Robo Robot Type"
+      "label": "Robot Type"
     },
     {
       "@id": "urn:ngm:class:wheeled-robot",
@@ -213,7 +213,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:motor-driver",
-        "label": "Motor Drivers"
+        "label": "Motor Driver"
       },
       {
         "@id": "urn:ngm:class:odometry-sensors",

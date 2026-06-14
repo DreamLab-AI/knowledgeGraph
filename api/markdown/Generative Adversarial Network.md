@@ -86,7 +86,7 @@ public:: true
       {"@id": "urn:ngm:class:synthetic-media", "label": "Synthetic Media"},
       {"@id": "urn:ngm:class:data-augmentation", "label": "Data Augmentation"},
       {"@id": "urn:ngm:class:deepfake", "label": "Deepfake"},
-      {"@id": "urn:ngm:class:super-resolution", "label": "Super-Resolution"}
+      {"@id": "urn:ngm:class:super-resolution", "label": "Super Resolution"}
     ],
     "implements": [
       {"@id": "urn:ngm:class:min-max-game", "label": "Min-Max Game"},

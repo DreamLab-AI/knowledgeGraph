@@ -9,7 +9,7 @@
   "subClassOf": [
     {
       "id": "urn:ngm:class:metaverse-governance-and-safeguarding",
-      "label": "Metaverse Governance and Safeguarding"
+      "label": "Metaverse governance and safeguarding"
     }
   ],
   "entityType": "Class",

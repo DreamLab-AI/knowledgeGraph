@@ -48,7 +48,7 @@ public:: true
   "subClassOf": [
     {
       "@id": "urn:ngm:class:bc-token-and-asset",
-      "label": "Bc Token And Asset"
+      "label": "Token and Asset"
     }
   ],
   "relations": {
@@ -79,7 +79,7 @@ public:: true
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:digital-asset", "label": "Digital Asset"},
-      {"@id": "urn:ngm:class:decentralized-finance", "label": "Decentralised Finance"},
+      {"@id": "urn:ngm:class:decentralized-finance", "label": "Decentralized Finance"},
       {"@id": "urn:ngm:class:capital-markets", "label": "Capital Markets"},
       {"@id": "urn:ngm:class:tokenomics", "label": "Tokenomics"},
       {"@id": "urn:ngm:class:token-offering", "label": "Token Offering"}
@@ -90,7 +90,7 @@ public:: true
     ],
     "bridgesTo": [
       {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:decentralized-autonomous-organization", "label": "Decentralised Autonomous Organisation"}
+      {"@id": "urn:ngm:class:decentralized-autonomous-organization", "label": "Decentralized Autonomous Organization"}
     ]
   },
   "sameAs": [

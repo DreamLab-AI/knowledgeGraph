@@ -45,7 +45,7 @@ public:: true
       {"@id": "urn:ngm:class:depth-estimation", "label": "Depth Estimation"},
       {"@id": "urn:ngm:class:camera-calibration", "label": "Camera Calibration"},
       {"@id": "urn:ngm:class:volume-rendering", "label": "Volume Rendering"},
-      {"@id": "urn:ngm:class:structure-from-motion", "label": "Structure from Motion"},
+      {"@id": "urn:ngm:class:structure-from-motion", "label": "Structure-from-Motion"},
       {"@id": "urn:ngm:class:multi-layer-perceptron", "label": "Multi-Layer Perceptron"}
     ],
     "requires": [

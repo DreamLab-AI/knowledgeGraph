@@ -157,7 +157,7 @@ public:: true
     "uses": [
       {
         "@id": "urn:ngm:class:saml",
-        "label": "SAML 2.0"
+        "label": "SAML"
       },
       {
         "@id": "urn:ngm:class:scim",

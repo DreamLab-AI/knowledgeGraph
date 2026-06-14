@@ -97,7 +97,7 @@ public:: true
       {"@id": "urn:ngm:class:inference-engine", "label": "Inference Engine"}
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"},
       {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
       {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
       {"@id": "urn:ngm:class:connectionism", "label": "Connectionism"}

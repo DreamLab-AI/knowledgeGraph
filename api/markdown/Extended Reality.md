@@ -66,7 +66,7 @@ alias:: ExtendedReality
       {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human-Computer Interaction"},
+      {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human Computer Interaction"},
       {"@id": "urn:ngm:class:presence", "label": "Presence"},
       {"@id": "urn:ngm:class:embodied-cognition", "label": "Embodied Cognition"},
       {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"}

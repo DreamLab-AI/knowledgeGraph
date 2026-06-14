@@ -57,7 +57,7 @@ public:: true
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ethereum-smart-contract-platform",
-      "label": "Ethereum"
+      "label": "Ethereum Smart Contract Platform"
     }
   ],
   "relations": {

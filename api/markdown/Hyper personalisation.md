@@ -449,7 +449,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:graph-neural-network",
-        "label": "Graph Neural Networks"
+        "label": "Graph Neural Network"
       },
       {
         "@id": "urn:ngm:class:matrix-factorisation",
@@ -533,11 +533,11 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
-        "label": "EU AI Act"
+        "label": "EU AI Act Regulatory Instrument"
       },
       {
         "@id": "urn:ngm:class:large-scale-pretrained-foundation-model",
-        "label": "Foundation Models"
+        "label": "Large-Scale Pretrained Foundation Model"
       }
     ],
     "supports": [
@@ -585,7 +585,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
-        "label": "EU AI Act"
+        "label": "EU AI Act Regulatory Instrument"
       }
     ],
     "bridgesTo": [

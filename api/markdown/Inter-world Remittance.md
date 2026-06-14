@@ -77,7 +77,7 @@ public:: true
       {"@id": "urn:ngm:class:virtual-economy", "label": "Virtual Economy"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:neural-network-text-tokenisation", "label": "Tokenisation"},
+      {"@id": "urn:ngm:class:neural-network-text-tokenisation", "label": "Neural Network Text Tokenisation"},
       {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
     ]
   },

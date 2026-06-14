@@ -100,7 +100,7 @@ public:: true
     "uses": [
       {
         "@id": "urn:ngm:class:nvidia-corporation-omniverse-platform",
-        "label": "NVIDIA Omniverse"
+        "label": "NVIDIA Omniverse Platform"
       },
       {
         "@id": "urn:ngm:class:generative-adversarial-network",

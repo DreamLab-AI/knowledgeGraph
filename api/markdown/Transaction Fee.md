@@ -111,7 +111,7 @@ public:: true
       {"@id": "urn:ngm:class:mining", "label": "Mining"},
       {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"},
       {"@id": "urn:ngm:class:tokenomics", "label": "Tokenomics"},
-      {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof Of Stake"},
+      {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof of Stake"},
       {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"}
     ],
     "bridgesTo": [

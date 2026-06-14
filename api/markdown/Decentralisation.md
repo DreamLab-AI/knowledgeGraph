@@ -63,7 +63,7 @@ public:: true
     "relatedTo": [
       {"@id": "urn:ngm:class:open-source-software", "label": "Open Source Software"},
       {"@id": "urn:ngm:class:network-topology", "label": "Network Topology"},
-      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self-Sovereign Identity"}
+      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self Sovereign Identity"}
     ]
   },
   "sameAs": [

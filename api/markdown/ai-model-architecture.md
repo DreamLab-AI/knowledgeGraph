@@ -41,7 +41,7 @@ alias:: AI Model Architecture
       {"@id": "urn:ngm:class:convolutional-neural-network", "label": "Convolutional Neural Network"},
       {"@id": "urn:ngm:class:recurrent-neural-network", "label": "Recurrent Neural Network"},
       {"@id": "urn:ngm:class:diffusion-model", "label": "Diffusion Model"},
-      {"@id": "urn:ngm:class:mixture-of-experts-architecture", "label": "Mixture of Experts"},
+      {"@id": "urn:ngm:class:mixture-of-experts-architecture", "label": "Mixture-of-Experts Architecture"},
       {"@id": "urn:ngm:class:encoder-decoder-architecture", "label": "Encoder Decoder Architecture"},
       {"@id": "urn:ngm:class:autoencoder", "label": "Autoencoder"}
     ],

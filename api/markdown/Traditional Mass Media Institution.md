@@ -54,7 +54,7 @@ elevatedFrom:: [[legacy media]]
     "contrastsWith": [
       {
         "@id": "urn:ngm:class:social-media-platform-infrastructure",
-        "label": "social media"
+        "label": "Social Media Platform Infrastructure"
       }
     ],
     "bridgesTo": [

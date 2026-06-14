@@ -23,7 +23,7 @@
     "hasPart": [
       {
         "id": "urn:ngm:class:april-tag",
-        "label": "AprilTag"
+        "label": "April Tag"
       },
       {
         "id": "urn:ngm:class:bundle-adjustment",
@@ -111,7 +111,7 @@
       },
       {
         "id": "urn:ngm:class:structure-from-motion",
-        "label": "Structure from Motion"
+        "label": "Structure-from-Motion"
       },
       {
         "id": "urn:ngm:class:visual-odometry",
@@ -167,7 +167,7 @@
     "uses": [
       {
         "id": "urn:ngm:class:april-tag",
-        "label": "AprilTag"
+        "label": "April Tag"
       },
       {
         "id": "urn:ngm:class:ar-uco",
@@ -205,7 +205,7 @@
     "supports": [
       {
         "id": "urn:ngm:class:autonomous-vehicle",
-        "label": "Autonomous Vehicles"
+        "label": "Autonomous Vehicle"
       },
       {
         "id": "urn:ngm:class:drone-photogrammetry",
@@ -274,7 +274,7 @@
       },
       {
         "id": "urn:ngm:class:structure-from-motion",
-        "label": "Structure from Motion"
+        "label": "Structure-from-Motion"
       },
       {
         "id": "urn:ngm:class:visual-odometry",

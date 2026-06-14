@@ -169,7 +169,7 @@ public:: true
     "requires": [
       {
         "@id": "urn:ngm:class:identity-systems",
-        "label": "Identity System"
+        "label": "Identity Systems"
       },
       {
         "@id": "urn:ngm:class:asset-registry",

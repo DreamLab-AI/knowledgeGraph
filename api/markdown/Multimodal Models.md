@@ -67,7 +67,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:cross-attention",
-        "label": "Cross-Attention"
+        "label": "Cross Attention"
       },
       {
         "@id": "urn:ngm:class:paired-training-data",
@@ -169,7 +169,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:human-computer-interaction",
-        "label": "Human-Computer Interaction"
+        "label": "Human Computer Interaction"
       }
     ]
   },

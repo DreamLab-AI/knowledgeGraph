@@ -91,7 +91,7 @@
       },
       {
         "id": "urn:ngm:class:large-scale-pretrained-foundation-model",
-        "label": "Foundation Models"
+        "label": "Large-Scale Pretrained Foundation Model"
       },
       {
         "id": "urn:ngm:class:large-language-models",
@@ -103,7 +103,7 @@
       },
       {
         "id": "urn:ngm:class:stable-diffusion-image-model",
-        "label": "Stable Diffusion"
+        "label": "Stable Diffusion Image Model"
       }
     ],
     "dependsOn": [],
@@ -176,7 +176,7 @@
       },
       {
         "id": "urn:ngm:class:node-based-diffusion-pipeline-interface",
-        "label": "ComfyUI"
+        "label": "Node-Based Diffusion Pipeline Interface"
       },
       {
         "id": "urn:ngm:class:node-based-diffusion-pipeline-interface-workflows",
@@ -233,11 +233,11 @@
       },
       {
         "id": "urn:ngm:class:node-based-diffusion-pipeline-interface",
-        "label": "ComfyUI"
+        "label": "Node-Based Diffusion Pipeline Interface"
       },
       {
         "id": "urn:ngm:class:large-scale-pretrained-foundation-model",
-        "label": "Foundation Models"
+        "label": "Large-Scale Pretrained Foundation Model"
       },
       {
         "id": "urn:ngm:class:model-optimisation-and-performance",
@@ -253,7 +253,7 @@
       },
       {
         "id": "urn:ngm:class:stable-diffusion-image-model",
-        "label": "Stable Diffusion"
+        "label": "Stable Diffusion Image Model"
       },
       {
         "id": "urn:ngm:class:training-data",

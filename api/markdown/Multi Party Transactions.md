@@ -57,7 +57,7 @@ alias:: Multi-Party Transactions
     },
     {
       "@id": "urn:ngm:class:blockchain-transaction",
-      "label": "Blockchain Transactions"
+      "label": "Blockchain Transaction"
     }
   ],
   "relations": {

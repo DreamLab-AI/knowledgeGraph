@@ -51,7 +51,7 @@ elevatedFrom:: [[Presentation%3A Conclusion]]
       {"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"}
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:active-research-projects-registry", "label": "Projects"}
+      {"@id": "urn:ngm:class:active-research-projects-registry", "label": "Active Research Projects Registry"}
     ]
   },
   "quality": 0.35,

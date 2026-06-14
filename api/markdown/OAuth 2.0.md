@@ -33,7 +33,7 @@ public:: true
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-security-and-identity",
-      "label": "Infra Security and Identity"
+      "label": "Security and Identity"
     }
   ],
   "relations": {

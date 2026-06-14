@@ -66,7 +66,7 @@ public:: true
       {"@id": "urn:ngm:class:consumer-protection", "label": "Consumer Protection"}
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:iso-iec-42001", "label": "ISO/IEC 42001"},
+      {"@id": "urn:ngm:class:iso-iec-42001", "label": "ISO IEC 42001"},
       {"@id": "urn:ngm:class:nist-ai-rmf", "label": "NIST AI RMF"},
       {"@id": "urn:ngm:class:gdpr", "label": "GDPR"},
       {"@id": "urn:ngm:class:eu-ai-act", "label": "EU AI Act"}
@@ -77,7 +77,7 @@ public:: true
     ],
     "bridgesTo": [
       {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:privacy-enhancing-technologies", "label": "Privacy-Enhancing Technologies"},
+      {"@id": "urn:ngm:class:privacy-enhancing-technologies", "label": "Privacy Enhancing Technologies"},
       {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"}
     ],
     "relatedTo": [

@@ -50,7 +50,7 @@ elevatedFrom:: [[Remarkable]]
       {"@id": "urn:ngm:class:data-annotation", "label": "Data Annotation"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"},
       {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}
     ],
     "relatedTo": [

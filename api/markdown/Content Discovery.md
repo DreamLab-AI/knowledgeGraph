@@ -31,7 +31,7 @@ public:: true
       {"@id": "urn:ngm:class:algorithmic-bias", "label": "Algorithmic Bias"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"},
       {"@id": "urn:ngm:class:recommendation-systems", "label": "Recommendation Systems"},
       {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
     ],

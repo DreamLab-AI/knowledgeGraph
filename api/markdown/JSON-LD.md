@@ -40,7 +40,7 @@ public:: true
     "implements": [
       {"@id": "urn:ngm:class:linked-data", "label": "Linked Data"},
       {"@id": "urn:ngm:class:rdf", "label": "RDF"},
-      {"@id": "urn:ngm:class:semantic-web-linked-data-standard", "label": "Semantic Web"}
+      {"@id": "urn:ngm:class:semantic-web-linked-data-standard", "label": "Semantic Web Linked Data Standard"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:verifiable-credentials", "label": "Verifiable Credentials"},
@@ -51,7 +51,7 @@ public:: true
     ],
     "requires": [
       {"@id": "urn:ngm:class:iri", "label": "IRI"},
-      {"@id": "urn:ngm:class:json-data-interchange-format", "label": "JSON"}
+      {"@id": "urn:ngm:class:json-data-interchange-format", "label": "JSON Data Interchange Format"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:schema-org", "label": "Schema.org"},

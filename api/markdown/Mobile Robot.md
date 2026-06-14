@@ -138,7 +138,7 @@ alias:: Mobile Robots, MobileRobot
     "uses": [
       {
         "@id": "urn:ngm:class:lidar",
-        "label": "LiDAR"
+        "label": "Lidar"
       },
       {
         "@id": "urn:ngm:class:inertial-measurement-unit",
@@ -166,7 +166,7 @@ alias:: Mobile Robots, MobileRobot
     "standardizedBy": [
       {
         "@id": "urn:ngm:class:iso-8373-2021",
-        "label": "ISO 8373:2021"
+        "label": "ISO 8373 2021"
       },
       {
         "@id": "urn:ngm:class:ansi-ria-r15-08",

@@ -632,7 +632,7 @@ public:: true
     },
     {
       "@id": "urn:ngm:class:bc-defi-and-economics",
-      "label": "BC DeFi And Economics"
+      "label": "DeFi and Economics"
     },
     {
       "@id": "urn:ngm:class:store-of-value",
@@ -679,7 +679,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:self-custody",
-        "label": "Self Custody"
+        "label": "Self-Custody"
       },
       {
         "@id": "urn:ngm:class:censorship-resistance",
@@ -717,7 +717,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:proof-of-work",
-        "label": "Proof of Work"
+        "label": "Proof Of Work"
       }
     ],
     "enables": [
@@ -759,7 +759,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:self-custody",
-        "label": "Self Custody"
+        "label": "Self-Custody"
       },
       {
         "@id": "urn:ngm:class:sovereign-bitcoin-reserve",
@@ -823,7 +823,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:spot-bitcoin-etf",
-        "label": "Spot Bitcoin ETFs"
+        "label": "Spot Bitcoin ETF"
       },
       {
         "@id": "urn:ngm:class:x-402",

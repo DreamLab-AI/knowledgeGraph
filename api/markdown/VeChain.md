@@ -68,7 +68,7 @@ public:: true
   "qualityScore": 0.7,
   "subClassOf": {
     "@id": "urn:ngm:class:blockchain",
-    "label": "Blockchain Domain"
+    "label": "Blockchain"
   },
   "relations": {
     "requires": [
@@ -96,11 +96,11 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:anti-counterfeiting",
-        "label": "Anti-Counterfeiting"
+        "label": "Anti Counterfeiting"
       },
       {
         "@id": "urn:ngm:class:sustainability-reporting",
-        "label": "Sustainability Reporting"
+        "label": "SustainabilityReporting"
       }
     ],
     "uses": [
@@ -176,7 +176,7 @@ public:: true
     "bridgesTo": [
       {
         "@id": "urn:ngm:class:digital-asset",
-        "label": "Digital Asset Domain"
+        "label": "Digital Asset"
       },
       {
         "@id": "urn:ngm:class:supply-chain-management",

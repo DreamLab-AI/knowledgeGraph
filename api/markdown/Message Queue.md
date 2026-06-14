@@ -43,7 +43,7 @@ public:: true
     ],
     "uses": [
       {"@id": "urn:ngm:class:asynchronous-communication", "label": "Asynchronous Communication"},
-      {"@id": "urn:ngm:class:publish-subscribe-pattern", "label": "Publish Subscribe Pattern"},
+      {"@id": "urn:ngm:class:publish-subscribe-pattern", "label": "Publish-Subscribe Pattern"},
       {"@id": "urn:ngm:class:serialisation", "label": "Serialisation"}
     ],
     "implements": [

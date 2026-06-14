@@ -36,7 +36,7 @@ public:: true
     "relatedTo": [
       {"@id": "urn:ngm:class:adobe-creative-cloud", "label": "Adobe Creative Cloud"},
       {"@id": "urn:ngm:class:content-licensing", "label": "Content Licensing"},
-      {"@id": "urn:ngm:class:digital-content-provenance-marking", "label": "Watermarks"}
+      {"@id": "urn:ngm:class:digital-content-provenance-marking", "label": "Digital Content Provenance Marking"}
     ]
   },
   "quality": 0.8

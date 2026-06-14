@@ -61,7 +61,7 @@ elevatedFrom:: [[personal accounts]]
     ],
     "dependsOn": [
       {"@id": "urn:ngm:class:cryptocurrency", "label": "Cryptocurrency"},
-      {"@id": "urn:ngm:class:corporate-tax-compliance-framework", "label": "Tax"},
+      {"@id": "urn:ngm:class:corporate-tax-compliance-framework", "label": "Corporate Tax Compliance Framework"},
       {"@id": "urn:ngm:class:corporate-tax-compliance-framework-treatment-crypto", "label": "Tax Treatment Crypto"}
     ]
   }

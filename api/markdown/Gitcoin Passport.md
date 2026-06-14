@@ -64,7 +64,7 @@ public:: true
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:identity-verification", "label": "Identity Verification"},
-      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self-Sovereign Identity"},
+      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self Sovereign Identity"},
       {"@id": "urn:ngm:class:reputation-system", "label": "Reputation System"}
     ],
     "bridgesTo": [

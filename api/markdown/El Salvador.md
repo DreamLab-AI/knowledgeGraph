@@ -57,7 +57,7 @@ public:: true
   "subClassOf": [
     {
       "@id": "urn:ngm:class:bc-governance-and-regulation",
-      "label": "BC Governance and Regulation"
+      "label": "Governance and Regulation"
     }
   ],
   "relations": {
@@ -86,7 +86,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:proof-of-work",
-        "label": "Proof of Work"
+        "label": "Proof Of Work"
       }
     ],
     "enables": [

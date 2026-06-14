@@ -499,7 +499,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:rag-pipeline",
-        "label": "RAG Pipelines"
+        "label": "RAG Pipeline"
       },
       {
         "@id": "urn:ngm:class:ai-search",

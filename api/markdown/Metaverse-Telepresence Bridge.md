@@ -115,7 +115,7 @@ public:: true
     "requires": [
       {
         "@id": "urn:ngm:class:virtual-reality-telepresence",
-        "label": "TELE-020-virtual-reality-telepresence"
+        "label": "Virtual Reality Telepresence"
       }
     ],
     "enables": [

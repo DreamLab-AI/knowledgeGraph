@@ -56,7 +56,7 @@ public:: true
       {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"}
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:pick-and-place", "label": "Pick-and-Place"},
+      {"@id": "urn:ngm:class:pick-and-place", "label": "Pick and Place"},
       {"@id": "urn:ngm:class:rigid-gripper", "label": "Rigid Gripper"}
     ],
     "relatedTo": [

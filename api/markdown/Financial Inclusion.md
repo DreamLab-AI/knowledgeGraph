@@ -75,7 +75,7 @@ public:: true
       {"@id": "urn:ngm:class:predatory-lending", "label": "Predatory Lending"}
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self-Sovereign Identity"},
+      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self Sovereign Identity"},
       {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
     ],
     "standardizedBy": [

@@ -528,11 +528,11 @@ public:: true
     },
     {
       "@id": "urn:ngm:class:bc-token-and-asset",
-      "label": "BC Token And Asset"
+      "label": "Token and Asset"
     },
     {
       "@id": "urn:ngm:class:bc-governance-and-regulation",
-      "label": "BC Governance And Regulation"
+      "label": "Governance and Regulation"
     }
   ],
   "relations": {
@@ -661,7 +661,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:reality-eth-oracle",
-        "label": "Reality.eth Oracle"
+        "label": "Reality ETH Oracle"
       },
       {
         "@id": "urn:ngm:class:snapshot-block-mechanism",

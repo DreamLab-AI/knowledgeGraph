@@ -57,7 +57,7 @@ public:: true
     "enables": [
       {
         "@id": "urn:ngm:class:cross-platform-asset-exchange",
-        "label": "Cross Platform Asset Exchange"
+        "label": "Cross-Platform Asset Exchange"
       }
     ],
     "implements": [

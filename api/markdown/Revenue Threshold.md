@@ -25,7 +25,7 @@ public:: true
   "maturity": "emerging",
   "subClassOf": [{"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:california-ai-bill", "label": "California AI Bill"}]
+    "relatedTo": [{"@id": "urn:ngm:class:california-ai-bill", "label": "California AI bill"}]
   },
   "quality": 0.72
 }

@@ -123,7 +123,7 @@ public:: true
     "uses": [
       {
         "@id": "urn:ngm:class:light-field",
-        "label": "Light Field"
+        "label": "Light field"
       },
       {
         "@id": "urn:ngm:class:diffraction",

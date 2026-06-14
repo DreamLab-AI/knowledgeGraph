@@ -9,7 +9,7 @@
   "subClassOf": [
     {
       "id": "urn:ngm:class:dc-workspace-tools",
-      "label": "Digital Collaboration Workspace Tools"
+      "label": "Workspace Tools"
     }
   ],
   "entityType": "Class",

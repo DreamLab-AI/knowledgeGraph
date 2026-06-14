@@ -56,7 +56,7 @@ elevatedFrom:: [[Landvættir]]
     "relatedTo": [
       {"@id": "urn:ngm:class:virtual-world", "label": "Virtual World"},
       {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"},
-      {"@id": "urn:ngm:class:technology-sector-landscape-analysis", "label": "Landscape"}
+      {"@id": "urn:ngm:class:technology-sector-landscape-analysis", "label": "Technology Sector Landscape Analysis"}
     ]
   },
   "quality": 0.5,

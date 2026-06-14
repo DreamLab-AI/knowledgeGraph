@@ -171,7 +171,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:iso-iec-jtc-1-sc-24",
-        "label": "ISO/IEC JTC 1/SC 24"
+        "label": "ISO-IEC JTC 1-SC 24"
       }
     ],
     "contrastsWith": [

@@ -85,14 +85,14 @@ alias:: TELE-200-robotic-telepresence
     },
     {
       "@id": "urn:ngm:class:tele-001-telepresence",
-      "label": "TELE-001-telepresence"
+      "label": "TELE 001 telepresence"
     }
   ],
   "relations": {
     "requires": [
       {
         "@id": "urn:ngm:class:autonomous-navigation",
-        "label": "AutonomousNavigation"
+        "label": "Autonomous Navigation"
       }
     ],
     "enables": [

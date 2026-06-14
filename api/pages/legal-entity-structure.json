@@ -9,7 +9,7 @@
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-legal-and-regulatory",
-      "label": "Infrastructure Legal and Regulatory"
+      "label": "Legal and Regulatory"
     }
   ],
   "entityType": "Class",
@@ -30,7 +30,7 @@
     "relatedTo": [
       {
         "id": "urn:ngm:class:cross-border-compliance",
-        "label": "Cross-Border Compliance"
+        "label": "Cross Border Compliance"
       },
       {
         "id": "urn:ngm:class:treasury-management",

@@ -9,7 +9,7 @@
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-navigation-and-planning",
-      "label": "Robo Navigation and Planning"
+      "label": "Navigation and Planning"
     }
   ],
   "entityType": "Class",
@@ -103,7 +103,7 @@
       },
       {
         "id": "urn:ngm:class:whole-body-control",
-        "label": "Whole-Body Control"
+        "label": "Whole Body Control"
       },
       {
         "id": "urn:ngm:class:quadratic-programming",
@@ -115,7 +115,7 @@
       },
       {
         "id": "urn:ngm:class:lidar",
-        "label": "LiDAR"
+        "label": "Lidar"
       }
     ],
     "supports": [],

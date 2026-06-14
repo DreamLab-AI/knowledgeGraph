@@ -400,7 +400,7 @@ alias:: StorageInfrastructure
       },
       {
         "@id": "urn:ngm:class:data-lake",
-        "label": "Data Lakes"
+        "label": "Data Lake"
       },
       {
         "@id": "urn:ngm:class:distributed-storage",
@@ -476,11 +476,11 @@ alias:: StorageInfrastructure
       },
       {
         "@id": "urn:ngm:class:content-delivery-network",
-        "label": "Content Delivery Networks"
+        "label": "Content Delivery Network"
       },
       {
         "@id": "urn:ngm:class:data-lake",
-        "label": "Data Lakes"
+        "label": "Data Lake"
       },
       {
         "@id": "urn:ngm:class:decentralised-applications",
@@ -504,7 +504,7 @@ alias:: StorageInfrastructure
       },
       {
         "@id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning"
+        "label": "Machine Learning Discipline"
       }
     ],
     "implements": [
@@ -518,7 +518,7 @@ alias:: StorageInfrastructure
       },
       {
         "@id": "urn:ngm:class:crdt",
-        "label": "CRDTs"
+        "label": "CRDT"
       },
       {
         "@id": "urn:ngm:class:crush-algorithm",
@@ -556,7 +556,7 @@ alias:: StorageInfrastructure
       },
       {
         "@id": "urn:ngm:class:blake3",
-        "label": "Blake3"
+        "label": "BLAKE3"
       },
       {
         "@id": "urn:ngm:class:consistent-hashing",
@@ -564,7 +564,7 @@ alias:: StorageInfrastructure
       },
       {
         "@id": "urn:ngm:class:merkle-tree",
-        "label": "Merkle Trees"
+        "label": "Merkle Tree"
       },
       {
         "@id": "urn:ngm:class:raft-consensus",

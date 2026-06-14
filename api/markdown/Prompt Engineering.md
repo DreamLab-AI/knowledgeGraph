@@ -391,7 +391,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:prompt-template",
-        "label": "Prompt Templates"
+        "label": "Prompt Template"
       },
       {
         "@id": "urn:ngm:class:re-act",
@@ -407,7 +407,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:system-prompt",
-        "label": "System Prompts"
+        "label": "System Prompt"
       },
       {
         "@id": "urn:ngm:class:tree-of-thoughts",
@@ -441,7 +441,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:neural-network-text-tokenisation",
-        "label": "Tokenisation"
+        "label": "Neural Network Text Tokenisation"
       },
       {
         "@id": "urn:ngm:class:transformer-architecture",
@@ -451,7 +451,7 @@ public:: true
     "enables": [
       {
         "@id": "urn:ngm:class:retrieval-augmented-generation",
-        "label": "Retrieval Augmented Generation"
+        "label": "Retrieval-Augmented Generation"
       },
       {
         "@id": "urn:ngm:class:structured-output",
@@ -523,15 +523,15 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:constitutional-ai-training-methodology-language-model-family",
-        "label": "Anthropic Claude"
+        "label": "Constitutional AI Language Model Family"
       },
       {
         "@id": "urn:ngm:class:instruction-following-conversational-ai-system",
-        "label": "ChatGPT"
+        "label": "Instruction-Following Conversational AI System"
       },
       {
         "@id": "urn:ngm:class:node-based-diffusion-pipeline-interface",
-        "label": "ComfyUI"
+        "label": "Node-Based Diffusion Pipeline Interface"
       },
       {
         "@id": "urn:ngm:class:lang-chain",
@@ -543,7 +543,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:stable-diffusion-image-model",
-        "label": "Stable Diffusion"
+        "label": "Stable Diffusion Image Model"
       }
     ],
     "relatedTo": [
@@ -583,7 +583,7 @@ public:: true
     "supports": [
       {
         "@id": "urn:ngm:class:retrieval-augmented-generation",
-        "label": "Retrieval Augmented Generation"
+        "label": "Retrieval-Augmented Generation"
       },
       {
         "@id": "urn:ngm:class:agent-frameworks",
@@ -617,11 +617,11 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:constitutional-ai-training-methodology-language-model-family",
-        "label": "Anthropic Claude"
+        "label": "Constitutional AI Language Model Family"
       },
       {
         "@id": "urn:ngm:class:ai-technology-skills-curriculum",
-        "label": "Courses and Training"
+        "label": "AI Technology Skills Curriculum"
       },
       {
         "@id": "urn:ngm:class:evaluation-benchmarks-and-leaderboards",
@@ -629,7 +629,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:openai-research-organisation",
-        "label": "OpenAI"
+        "label": "OpenAI Research Organisation"
       }
     ]
   },

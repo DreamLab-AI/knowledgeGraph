@@ -23,7 +23,7 @@ public:: true
   "definition": "The Bank for International Settlements (BIS) is an international financial institution owned by 63 member central banks, founded in 1930 and headquartered in Basel, Switzerland. It acts as banker to central banks, providing settlement, custody, and asset management services while fostering monetary and financial cooperation through research, policy forums, and standard-setting committees. The BIS hosts the Basel Committee on Banking Supervision, the Financial Stability Board secretariat, and the Committee on Payments and Market Infrastructures, which together produce globally binding prudential and operational standards such as the Basel Accords and CPMI principles. Through the BIS Innovation Hub it actively researches central bank digital currencies, tokenisation of financial assets, and cyber resilience for financial market infrastructures.",
   "domain": "finance",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:infra-legal-and-regulatory", "label": "Infra Legal And Regulatory"}],
+  "subClassOf": [{"@id": "urn:ngm:class:infra-legal-and-regulatory", "label": "Legal and Regulatory"}],
   "relations": {
     "hasPart": [
       {"@id": "urn:ngm:class:basel-committee-on-banking-supervision", "label": "Basel Committee on Banking Supervision"},

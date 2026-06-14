@@ -70,7 +70,7 @@ public:: true
     "hasPart": [
       {
         "@id": "urn:ngm:class:on-chain-voting",
-        "label": "On-Chain Voting"
+        "label": "On Chain Voting"
       },
       {
         "@id": "urn:ngm:class:token-weighted-voting",
@@ -197,7 +197,7 @@ public:: true
     },
     {
       "@id": "urn:ngm:class:on-chain-governance",
-      "label": "On-Chain Governance"
+      "label": "On-chain Governance"
     }
   ],
   "quality": 0.72,

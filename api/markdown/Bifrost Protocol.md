@@ -23,10 +23,10 @@ public:: true
   "definition": "Bifrost is a Bitcoin-focused protocol stack associated with RGB and client-side validation, providing transport and interoperability for off-chain smart-contract state. In the RGB ecosystem it handles the peer-to-peer exchange of consignments and validation data so that asset and contract state can move between parties without publishing it on-chain. By keeping contract data client-side, it preserves Bitcoin's scalability and privacy while enabling rich asset issuance.",
   "domain": "blockchain",
   "maturity": "experimental",
-  "subClassOf": [{"@id": "urn:ngm:class:bc-protocol-and-consensus", "label": "Blockchain Protocol and Consensus"}],
+  "subClassOf": [{"@id": "urn:ngm:class:bc-protocol-and-consensus", "label": "Protocol and Consensus"}],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:rgb-and-client-side-validation", "label": "RGB and Client-Side Validation"}
+      {"@id": "urn:ngm:class:rgb-and-client-side-validation", "label": "RGB and Client Side Validation"}
     ]
   },
   "quality": 0.72

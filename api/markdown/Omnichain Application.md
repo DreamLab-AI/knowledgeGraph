@@ -26,7 +26,7 @@ public:: true
   "subClassOf": [{"@id": "urn:ngm:class:decentralized-application", "label": "Decentralized Application"}],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:cross-chain-messaging", "label": "Cross Chain Messaging"},
+      {"@id": "urn:ngm:class:cross-chain-messaging", "label": "Cross-Chain Messaging"},
       {"@id": "urn:ngm:class:cross-chain-interoperability", "label": "Cross-Chain Interoperability"},
       {"@id": "urn:ngm:class:blockchain-interoperability", "label": "Blockchain Interoperability"}
     ],

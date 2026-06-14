@@ -65,7 +65,7 @@ public:: true
     "hasPart": [
       {
         "@id": "urn:ngm:class:lidar",
-        "label": "LiDAR"
+        "label": "Lidar"
       },
       {
         "@id": "urn:ngm:class:camera",
@@ -77,7 +77,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:force-torque-sensor",
-        "label": "Force-Torque Sensor"
+        "label": "Force Torque Sensor"
       },
       {
         "@id": "urn:ngm:class:encoder",
@@ -105,7 +105,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:analog-to-digital-converter",
-        "label": "Analog-to-Digital Converter"
+        "label": "Analog To Digital Converter"
       }
     ],
     "enables": [

@@ -567,7 +567,7 @@ public:: true
     "enables": [
       {
         "@id": "urn:ngm:class:autonomous-agent",
-        "label": "Autonomous Agents"
+        "label": "Autonomous Agent"
       },
       {
         "@id": "urn:ngm:class:economic-automation",
@@ -605,11 +605,11 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:constitutional-ai-training-methodology",
-        "label": "Constitutional AI"
+        "label": "Constitutional AI Training Methodology"
       },
       {
         "@id": "urn:ngm:class:mixture-of-experts-architecture",
-        "label": "Mixture of Experts"
+        "label": "Mixture-of-Experts Architecture"
       }
     ],
     "uses": [
@@ -649,7 +649,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:large-scale-pretrained-foundation-model",
-        "label": "Foundation Model"
+        "label": "Large-Scale Pretrained Foundation Model"
       },
       {
         "@id": "urn:ngm:class:frontier-ai",
@@ -713,7 +713,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
-        "label": "EU AI Act"
+        "label": "EU AI Act Regulatory Instrument"
       }
     ]
   },

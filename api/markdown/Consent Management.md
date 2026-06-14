@@ -196,7 +196,7 @@ alias:: ConsentManagement
       },
       {
         "@id": "urn:ngm:class:right-to-be-forgotten",
-        "label": "Right to be Forgotten"
+        "label": "Right to Be Forgotten"
       },
       {
         "@id": "urn:ngm:class:right-to-be-forgotten",

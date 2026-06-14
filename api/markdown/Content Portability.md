@@ -23,7 +23,7 @@ public:: true
   "definition": "Content portability is the property that allows users to move their digital content and the associated rights between services, platforms, or virtual environments. It depends on standardised data formats and export mechanisms so that assets retain structure and meaning after transfer. It supports user ownership, reduces vendor lock-in, and is a stated goal of open data and open metaverse initiatives.",
   "domain": "metaverse",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:sc-standards-and-interop", "label": "Spatial Computing Standards and Interoperability"}],
+  "subClassOf": [{"@id": "urn:ngm:class:sc-standards-and-interop", "label": "Standards and Interoperability"}],
   "relations": {
     "relatedTo": [{"@id": "urn:ngm:class:asset-format-standards", "label": "Asset Format Standards"}, {"@id": "urn:ngm:class:data-format-standard", "label": "Data Format Standard"}]
   },

@@ -527,7 +527,7 @@ public:: true
     "uses": [
       {
         "@id": "urn:ngm:class:attention-mechanism",
-        "label": "Attention Mechanisms"
+        "label": "Attention Mechanism"
       },
       {
         "@id": "urn:ngm:class:facial-landmark-detection",
@@ -613,7 +613,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
-        "label": "EU AI Act"
+        "label": "EU AI Act Regulatory Instrument"
       }
     ]
   },

@@ -118,7 +118,7 @@ alias:: BlockchainScalability
     "hasPart": [
       {
         "@id": "urn:ngm:class:layer-2-solutions",
-        "label": "Layer 2 Solution"
+        "label": "Layer 2 Solutions"
       },
       {
         "@id": "urn:ngm:class:rollup",

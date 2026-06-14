@@ -23,7 +23,7 @@ public:: true
   "definition": "Moderation tools are software systems that detect, review, and act on user-generated content or behaviour that violates platform policies, combining automated classifiers, reporting queues, and human-review workflows. They enforce community standards by flagging, filtering, age-gating, or removing content and sanctioning accounts. In immersive and social platforms they increasingly cover real-time voice, spatial, and behavioural moderation.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:metaverse-governance-and-safeguarding", "label": "Metaverse Governance and Safeguarding"}],
+  "subClassOf": [{"@id": "urn:ngm:class:metaverse-governance-and-safeguarding", "label": "Metaverse governance and safeguarding"}],
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:community-standards", "label": "Community Standards"},

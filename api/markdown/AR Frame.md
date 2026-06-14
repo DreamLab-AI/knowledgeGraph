@@ -476,11 +476,11 @@ public:: true
     },
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
-      "label": "SC Platform And Environment"
+      "label": "Platform and Environment"
     },
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
-      "label": "SC Platform And Environment"
+      "label": "Platform and Environment"
     }
   ],
   "relations": {
@@ -575,7 +575,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:real-time-translation",
-        "label": "Real-Time Translation"
+        "label": "Real-time Translation"
       }
     ],
     "implements": [
@@ -619,7 +619,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:micro-oled-display",
-        "label": "MicroOLED Display"
+        "label": "Micro-OLED Display"
       },
       {
         "@id": "urn:ngm:class:snapdragon-ar-so-c",

@@ -25,7 +25,7 @@ public:: true
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:hardware", "label": "Hardware"}],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:infrared-sensor", "label": "Infrared Sensor"}, {"@id": "urn:ngm:class:brain-computer-interfaces", "label": "Brain-Computer Interfaces"}]
+    "relatedTo": [{"@id": "urn:ngm:class:infrared-sensor", "label": "InfraredSensor"}, {"@id": "urn:ngm:class:brain-computer-interfaces", "label": "Brain Computer Interfaces"}]
   },
   "quality": 0.72
 }

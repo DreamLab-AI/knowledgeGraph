@@ -756,7 +756,7 @@ public:: true
     },
     {
       "@id": "urn:ngm:class:infra-security-and-identity",
-      "label": "Infra Security And Identity"
+      "label": "Security and Identity"
     },
     {
       "@id": "urn:ngm:class:identity-proofing",
@@ -895,7 +895,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:near-field-communication",
-        "label": "Near-Field Communication"
+        "label": "Near Field Communication"
       },
       {
         "@id": "urn:ngm:class:convolutional-neural-network",
@@ -913,7 +913,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:deepfakes",
-        "label": "Deepfake"
+        "label": "Deepfakes"
       },
       {
         "@id": "urn:ngm:class:presentation-attack-detection",
@@ -929,7 +929,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:self-sovereign-identity",
-        "label": "Self-Sovereign Identity"
+        "label": "Self Sovereign Identity"
       }
     ],
     "supports": [

@@ -23,7 +23,7 @@ public:: true
   "definition": "Stakeholder Engagement is the structured process through which organisations identify, communicate with, and incorporate the perspectives of individuals and groups who have interests in or are affected by a project, system, or policy. Effective engagement moves along a spectrum from one-way information provision through consultation to active co-design and ongoing collaborative governance. In the context of emerging technologies such as AI, robust stakeholder engagement is recognised as essential for identifying ethical risks, ensuring societal legitimacy, and building the trust necessary for adoption. Regulatory frameworks and voluntary standards increasingly mandate evidence of meaningful stakeholder engagement as a condition of approval or certification.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:infra-legal-and-regulatory", "label": "Infra Legal And Regulatory"}],
+  "subClassOf": [{"@id": "urn:ngm:class:infra-legal-and-regulatory", "label": "Legal and Regulatory"}],
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:stakeholder-engagement-in-ai", "label": "Stakeholder Engagement in AI"},

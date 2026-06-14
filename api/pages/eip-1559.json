@@ -9,7 +9,7 @@
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-protocol-and-consensus",
-      "label": "Blockchain Protocol and Consensus"
+      "label": "Protocol and Consensus"
     }
   ],
   "entityType": "Class",
@@ -77,7 +77,7 @@
       },
       {
         "id": "urn:ngm:class:proof-of-work",
-        "label": "Proof of Work"
+        "label": "Proof Of Work"
       }
     ],
     "bridgesTo": [

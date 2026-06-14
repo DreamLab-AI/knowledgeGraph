@@ -86,7 +86,7 @@ alias:: PracticalByzantineFaultTolerance
     "contrastsWith": [
       {"@id": "urn:ngm:class:nakamoto-consensus", "label": "Nakamoto Consensus"},
       {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof of Stake"},
-      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof of Work"}
+      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"}
     ],
     "bridgesTo": [
       {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"},

@@ -56,7 +56,7 @@ alias:: Consensus-Protocol, ConsensusProtocol
     "hasPart": [
       {
         "@id": "urn:ngm:class:proof-of-work",
-        "label": "Proof of Work"
+        "label": "Proof Of Work"
       },
       {
         "@id": "urn:ngm:class:proof-of-stake",
@@ -130,7 +130,7 @@ alias:: Consensus-Protocol, ConsensusProtocol
       },
       {
         "@id": "urn:ngm:class:raft-consensus",
-        "label": "Raft Consensus"
+        "label": "RAFT Consensus"
       }
     ],
     "relatedTo": [

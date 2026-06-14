@@ -26,7 +26,7 @@
     "uses": [
       {
         "id": "urn:ngm:class:semantic-web-linked-data-standard",
-        "label": "Semantic Web"
+        "label": "Semantic Web Linked Data Standard"
       }
     ],
     "supports": [],
@@ -43,7 +43,7 @@
       },
       {
         "id": "urn:ngm:class:social-media-platform-infrastructure",
-        "label": "social media"
+        "label": "Social Media Platform Infrastructure"
       }
     ]
   },

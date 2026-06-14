@@ -316,11 +316,11 @@ public:: true
     },
     {
       "@id": "urn:ngm:class:dc-communication",
-      "label": "DC Communication"
+      "label": "Communication Technology"
     },
     {
       "@id": "urn:ngm:class:dc-communication",
-      "label": "DC Communication"
+      "label": "Communication Technology"
     }
   ],
   "relations": {
@@ -489,7 +489,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:mixed-reality",
-        "label": "Mixed reality"
+        "label": "Mixed Reality"
       },
       {
         "@id": "urn:ngm:class:remote-pair-programming",

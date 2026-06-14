@@ -25,7 +25,7 @@ public:: true
   "maturity": "emerging",
   "subClassOf": [{"@id": "urn:ngm:class:financial-services", "label": "Financial Services"}],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:stable-coins", "label": "Stablecoins"}]
+    "relatedTo": [{"@id": "urn:ngm:class:stable-coins", "label": "Stable Coins"}]
   },
   "quality": 0.72
 }

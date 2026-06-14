@@ -482,11 +482,11 @@ alias:: R3Corda
       },
       {
         "@id": "urn:ngm:class:cross-border-payments",
-        "label": "Cross-Border Payment"
+        "label": "Cross-Border Payments"
       },
       {
         "@id": "urn:ngm:class:delivery-versus-payment",
-        "label": "Delivery Versus Payment"
+        "label": "Delivery-Versus-Payment"
       },
       {
         "@id": "urn:ngm:class:legal-agreement-automation",
@@ -520,7 +520,7 @@ alias:: R3Corda
       },
       {
         "@id": "urn:ngm:class:raft-consensus",
-        "label": "Raft Consensus"
+        "label": "RAFT Consensus"
       },
       {
         "@id": "urn:ngm:class:ricardian-contract",
@@ -574,7 +574,7 @@ alias:: R3Corda
       },
       {
         "@id": "urn:ngm:class:docker-containerisation-platform",
-        "label": "Docker"
+        "label": "Docker Containerisation Platform"
       }
     ],
     "relatedTo": [
@@ -584,7 +584,7 @@ alias:: R3Corda
       },
       {
         "@id": "urn:ngm:class:digital-security",
-        "label": "Digital Securities"
+        "label": "Digital Security"
       },
       {
         "@id": "urn:ngm:class:fnality",
@@ -604,7 +604,7 @@ alias:: R3Corda
       },
       {
         "@id": "urn:ngm:class:neural-network-text-tokenisation",
-        "label": "Tokenisation"
+        "label": "Neural Network Text Tokenisation"
       }
     ],
     "supports": [
@@ -668,7 +668,7 @@ alias:: R3Corda
       },
       {
         "@id": "urn:ngm:class:iso-tc-307",
-        "label": "ISO TC307"
+        "label": "ISO TC 307"
       }
     ]
   },

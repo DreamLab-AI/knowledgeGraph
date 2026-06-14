@@ -69,7 +69,7 @@ public:: true
       {"@id": "urn:ngm:class:long-context-modeling", "label": "Long-Context Modeling"}
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:self-attention", "label": "Self-Attention"},
+      {"@id": "urn:ngm:class:self-attention", "label": "Self Attention"},
       {"@id": "urn:ngm:class:neural-network-architecture", "label": "Neural Network Architecture"}
     ],
     "implements": [
@@ -82,7 +82,7 @@ public:: true
     "supports": [
       {"@id": "urn:ngm:class:large-language-model", "label": "Large Language Model"},
       {"@id": "urn:ngm:class:vision-transformer", "label": "Vision Transformer"},
-      {"@id": "urn:ngm:class:time-series-forecasting", "label": "Time-Series Forecasting"}
+      {"@id": "urn:ngm:class:time-series-forecasting", "label": "Time Series Forecasting"}
     ],
     "contrastsWith": [
       {"@id": "urn:ngm:class:recurrent-neural-network", "label": "Recurrent Neural Network"},

@@ -25,7 +25,7 @@ public:: true
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:software-architecture", "label": "Software Architecture"}],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:etsi-metaverse-domain-model", "label": "ETSI Metaverse Domain Model"}, {"@id": "urn:ngm:class:data-layer", "label": "Data Layer"}]
+    "relatedTo": [{"@id": "urn:ngm:class:etsi-metaverse-domain-model", "label": "Etsi Metaverse Domain Model"}, {"@id": "urn:ngm:class:data-layer", "label": "Data Layer"}]
   },
   "quality": 0.72
 }

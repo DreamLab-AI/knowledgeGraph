@@ -57,14 +57,14 @@ public:: true
   "subClassOf": [
     {
       "@id": "urn:ngm:class:stable-diffusion-image-model",
-      "label": "Stable Diffusion"
+      "label": "Stable Diffusion Image Model"
     }
   ],
   "relations": {
     "requires": [
       {
         "@id": "urn:ngm:class:stable-diffusion-image-model",
-        "label": "Stable Diffusion"
+        "label": "Stable Diffusion Image Model"
       }
     ],
     "enables": [

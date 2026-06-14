@@ -62,7 +62,7 @@ public:: true
     ],
     "dependsOn": [
       {"@id": "urn:ngm:class:token-economics", "label": "Token Economics"},
-      {"@id": "urn:ngm:class:on-chain-governance", "label": "On-Chain Governance"},
+      {"@id": "urn:ngm:class:on-chain-governance", "label": "On-chain Governance"},
       {"@id": "urn:ngm:class:price-oracle", "label": "Price Oracle"}
     ],
     "contrastsWith": [
@@ -74,7 +74,7 @@ public:: true
       {"@id": "urn:ngm:class:sushiswap", "label": "SushiSwap"},
       {"@id": "urn:ngm:class:impermanent-loss", "label": "Impermanent Loss"},
       {"@id": "urn:ngm:class:flash-loan", "label": "Flash Loan"},
-      {"@id": "urn:ngm:class:mev", "label": "Maximal Extractable Value"}
+      {"@id": "urn:ngm:class:mev", "label": "MEV"}
     ],
     "bridgesTo": [
       {"@id": "urn:ngm:class:decentralised-autonomous-organisation", "label": "Decentralised Autonomous Organisation"},

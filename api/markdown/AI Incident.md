@@ -80,7 +80,7 @@ public:: true
     "relatedTo": [
       {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},
       {"@id": "urn:ngm:class:bias", "label": "Bias"},
-      {"@id": "urn:ngm:class:eu-ai-act-regulatory-instrument", "label": "EU AI Act"}
+      {"@id": "urn:ngm:class:eu-ai-act-regulatory-instrument", "label": "EU AI Act Regulatory Instrument"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"},

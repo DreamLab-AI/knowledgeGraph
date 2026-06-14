@@ -61,7 +61,7 @@ public:: true
   "subClassOf": [
     {
       "@id": "urn:ngm:class:robotics",
-      "label": "Robotics Domain"
+      "label": "Robotics"
     }
   ],
   "relations": {

@@ -78,11 +78,11 @@ public:: true
       {"@id": "urn:ngm:class:consensus-algorithm", "label": "Consensus Algorithm"},
       {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
       {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"},
-      {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof Of Stake"},
+      {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof of Stake"},
       {"@id": "urn:ngm:class:validator-attestation", "label": "Validator Attestation"}
     ],
     "requires": [
-      {"@id": "urn:ngm:class:peer-to-peer-network", "label": "Peer To Peer Network"},
+      {"@id": "urn:ngm:class:peer-to-peer-network", "label": "Peer-to-Peer Network"},
       {"@id": "urn:ngm:class:block-propagation", "label": "Block Propagation"},
       {"@id": "urn:ngm:class:peer-discovery", "label": "Peer Discovery"}
     ],
@@ -90,7 +90,7 @@ public:: true
       {"@id": "urn:ngm:class:immutability", "label": "Immutability"},
       {"@id": "urn:ngm:class:blockchain-finality", "label": "Blockchain Finality"},
       {"@id": "urn:ngm:class:blockchain-scalability", "label": "Blockchain Scalability"},
-      {"@id": "urn:ngm:class:double-spend-prevention", "label": "Double Spend Prevention"}
+      {"@id": "urn:ngm:class:double-spend-prevention", "label": "Double-Spend Prevention"}
     ],
     "implements": [
       {"@id": "urn:ngm:class:consensus-protocol", "label": "Consensus Protocol"},

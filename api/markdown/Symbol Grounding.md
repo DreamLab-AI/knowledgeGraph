@@ -27,7 +27,7 @@ public:: true
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:cognitive-ai", "label": "Cognitive AI"},
-      {"@id": "urn:ngm:class:ai-technique", "label": "AI Grounded Domain"}
+      {"@id": "urn:ngm:class:ai-technique", "label": "AI Technique"}
     ]
   },
   "quality": 0.72

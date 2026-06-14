@@ -23,7 +23,7 @@ public:: true
   "definition": "A graphical model is a probabilistic model that expresses the conditional dependence structure among random variables as a graph, where nodes are variables and edges encode statistical relationships. Bayesian networks use directed acyclic graphs while Markov random fields use undirected graphs, both enabling compact representation of joint distributions. They support efficient inference and learning by exploiting conditional independence.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"}],
+  "subClassOf": [{"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"}],
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:probabilistic-model", "label": "Probabilistic Model"}

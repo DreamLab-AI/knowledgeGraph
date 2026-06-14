@@ -656,7 +656,7 @@ alias:: SmartContract, smart-contract
       },
       {
         "@id": "urn:ngm:class:rust-systems-programming-language",
-        "label": "Rust"
+        "label": "Rust Systems Programming Language"
       },
       {
         "@id": "urn:ngm:class:web-assembly",
@@ -690,7 +690,7 @@ alias:: SmartContract, smart-contract
       },
       {
         "@id": "urn:ngm:class:ethereum-smart-contract-platform",
-        "label": "Ethereum"
+        "label": "Ethereum Smart Contract Platform"
       },
       {
         "@id": "urn:ngm:class:mev",
@@ -702,7 +702,7 @@ alias:: SmartContract, smart-contract
       },
       {
         "@id": "urn:ngm:class:zero-knowledge-proof",
-        "label": "Zero Knowledge Proof"
+        "label": "Zero-Knowledge Proof"
       }
     ],
     "supports": [

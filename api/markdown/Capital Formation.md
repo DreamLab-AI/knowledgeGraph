@@ -26,7 +26,7 @@ public:: true
   "subClassOf": [{"@id": "urn:ngm:class:economic-mechanism", "label": "Economic Mechanism"}],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:bc-defi-and-economics", "label": "Capital Markets Domain"},
+      {"@id": "urn:ngm:class:bc-defi-and-economics", "label": "DeFi and Economics"},
       {"@id": "urn:ngm:class:securities-regulation", "label": "Securities Regulation"}
     ]
   },

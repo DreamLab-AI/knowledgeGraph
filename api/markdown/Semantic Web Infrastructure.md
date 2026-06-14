@@ -23,7 +23,7 @@ public:: true
   "definition": "Semantic web infrastructure is the stack of standards, vocabularies, and services that enable machine-readable, linked data on the web, including RDF, OWL, SPARQL endpoints, triple stores, and ontology registries. It provides the technical substrate for representing entities and relationships as interoperable graphs that agents can query and reason over. It is the backbone for knowledge graphs and linked-data ecosystems.",
   "domain": "data",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:infra-data-management", "label": "Infrastructure Data Management"}],
+  "subClassOf": [{"@id": "urn:ngm:class:infra-data-management", "label": "Data Management"}],
   "relations": {
     "relatedTo": [{"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"}, {"@id": "urn:ngm:class:metaverse-ontology-schema", "label": "Metaverse Ontology Schema"}]
   },

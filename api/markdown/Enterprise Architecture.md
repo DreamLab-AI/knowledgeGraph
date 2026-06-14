@@ -180,7 +180,7 @@ alias:: EnterpriseArchitecture
       },
       {
         "@id": "urn:ngm:class:service-oriented-architecture",
-        "label": "Service-Oriented Architecture"
+        "label": "Service Oriented Architecture"
       }
     ]
   },

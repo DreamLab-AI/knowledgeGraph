@@ -30,7 +30,7 @@
     "relatedTo": [
       {
         "id": "urn:ngm:class:fast-ai",
-        "label": "Fast.ai"
+        "label": "fast.ai"
       },
       {
         "id": "urn:ngm:class:proprietary-ai-video",

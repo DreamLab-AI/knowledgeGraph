@@ -56,7 +56,7 @@ elevatedFrom:: [[Ideas]]
     ],
     "bridgesTo": [
       {"@id": "urn:ngm:class:ai-technique", "label": "AI Technique"},
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"}
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"}
     ]
   },
   "provenance": {

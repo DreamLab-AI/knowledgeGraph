@@ -784,7 +784,7 @@ public:: true
     },
     {
       "@id": "urn:ngm:class:artificial-intelligence-core",
-      "label": "Artificial Intelligence"
+      "label": "Artificial Intelligence Core"
     }
   ],
   "relations": {

@@ -105,7 +105,7 @@ public:: true
       {"@id": "urn:ngm:class:parameter-count", "label": "Parameter Count"}
     ],
     "enables": [
-      {"@id": "urn:ngm:class:mixture-of-experts-architecture", "label": "Mixture of Experts"}
+      {"@id": "urn:ngm:class:mixture-of-experts-architecture", "label": "Mixture-of-Experts Architecture"}
     ]
   },
   "provenance": {

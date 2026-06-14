@@ -169,7 +169,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:iso-iec-23894",
-        "label": "ISO/IEC 23894"
+        "label": "ISO-IEC 23894"
       }
     ],
     "contrastsWith": [
@@ -203,7 +203,7 @@ public:: true
     "bridgesTo": [
       {
         "@id": "urn:ngm:class:human-computer-interaction",
-        "label": "Human-Computer Interaction"
+        "label": "Human Computer Interaction"
       },
       {
         "@id": "urn:ngm:class:cognitive-science",

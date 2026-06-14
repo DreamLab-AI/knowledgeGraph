@@ -155,23 +155,23 @@ public:: true
     "hasPart": [
       {
         "@id": "urn:ngm:class:impact-metrics",
-        "label": "ImpactMetrics"
+        "label": "Impact Metrics"
       },
       {
         "@id": "urn:ngm:class:voting-mechanism",
-        "label": "VotingMechanism"
+        "label": "Voting Mechanism"
       },
       {
         "@id": "urn:ngm:class:governance-token",
-        "label": "GovernanceToken"
+        "label": "Governance Token"
       },
       {
         "@id": "urn:ngm:class:proposal-system",
-        "label": "ProposalSystem"
+        "label": "Proposal System"
       },
       {
         "@id": "urn:ngm:class:treasury-management",
-        "label": "TreasuryManagement"
+        "label": "Treasury Management"
       }
     ],
     "requires": [
@@ -185,17 +185,17 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:smart-contracts",
-        "label": "SmartContracts"
+        "label": "Smart Contracts"
       },
       {
         "@id": "urn:ngm:class:token-economics",
-        "label": "TokenEconomics"
+        "label": "Token Economics"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:carbon-credit-retirement",
-        "label": "CarbonCreditRetirement"
+        "label": "Carbon Credit Retirement"
       },
       {
         "@id": "urn:ngm:class:climate-project-funding",
@@ -207,7 +207,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:transparent-governance",
-        "label": "TransparentGovernance"
+        "label": "Transparent Governance"
       }
     ],
     "bridgesTo": [

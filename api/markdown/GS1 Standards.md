@@ -181,7 +181,7 @@ public:: true
     "relatedTo": [
       {
         "@id": "urn:ngm:class:iso-standards",
-        "label": "ISO Standards"
+        "label": "Iso Standards"
       },
       {
         "@id": "urn:ngm:class:product-master-data",

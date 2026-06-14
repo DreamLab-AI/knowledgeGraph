@@ -182,7 +182,7 @@ public:: true
     "uses": [
       {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
       {"@id": "urn:ngm:class:pose-estimation", "label": "Pose Estimation"},
-      {"@id": "urn:ngm:class:lidar", "label": "LiDAR"},
+      {"@id": "urn:ngm:class:lidar", "label": "Lidar"},
       {"@id": "urn:ngm:class:visual-odometry", "label": "Visual Odometry"},
       {"@id": "urn:ngm:class:kalman-filter", "label": "Kalman Filter"}
     ],
@@ -197,7 +197,7 @@ public:: true
       {"@id": "urn:ngm:class:gps-navigation", "label": "GPS Navigation"}
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse Domain"},
+      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"},
       {"@id": "urn:ngm:class:virtual-environment", "label": "Virtual Environment"}
     ],
     "relatedTo": [

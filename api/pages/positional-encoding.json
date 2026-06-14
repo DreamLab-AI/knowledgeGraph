@@ -57,7 +57,7 @@
     "dependsOn": [
       {
         "id": "urn:ngm:class:self-attention",
-        "label": "Self-Attention"
+        "label": "Self Attention"
       },
       {
         "id": "urn:ngm:class:neural-network-architecture",
@@ -111,7 +111,7 @@
       },
       {
         "id": "urn:ngm:class:time-series-forecasting",
-        "label": "Time-Series Forecasting"
+        "label": "Time Series Forecasting"
       }
     ],
     "standardizedBy": [],

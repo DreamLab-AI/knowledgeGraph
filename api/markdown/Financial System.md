@@ -48,7 +48,7 @@ public:: true
   "qualityScore": 0.72,
   "subClassOf": {
     "@id": "urn:ngm:class:bc-defi-and-economics",
-    "label": "BC DeFi and Economics"
+    "label": "DeFi and Economics"
   },
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",

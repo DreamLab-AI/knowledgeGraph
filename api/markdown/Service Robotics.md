@@ -25,7 +25,7 @@ public:: true
   "maturity": "emerging",
   "subClassOf": [{"@id": "urn:ngm:class:robotics", "label": "Robotics"}],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:robotics-core-concepts", "label": "Robotics Core Concepts"}, {"@id": "urn:ngm:class:task-planning", "label": "Task Planning"}]
+    "relatedTo": [{"@id": "urn:ngm:class:robotics-core-concepts", "label": "RoboticsCoreConcepts"}, {"@id": "urn:ngm:class:task-planning", "label": "Task Planning"}]
   },
   "quality": 0.72
 }

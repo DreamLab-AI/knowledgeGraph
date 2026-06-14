@@ -60,7 +60,7 @@ public:: true
       {"@id": "urn:ngm:class:synthetic-asset", "label": "Synthetic Asset"},
       {"@id": "urn:ngm:class:perpetual-futures", "label": "Perpetual Futures"},
       {"@id": "urn:ngm:class:liquidation-mechanism", "label": "Liquidation Mechanism"},
-      {"@id": "urn:ngm:class:real-world-asset-tokenisation", "label": "Real World Asset Tokenisation"}
+      {"@id": "urn:ngm:class:real-world-asset-tokenisation", "label": "Real-World Asset Tokenisation"}
     ],
     "supports": [
       {"@id": "urn:ngm:class:liquidity-pool", "label": "Liquidity Pool"},

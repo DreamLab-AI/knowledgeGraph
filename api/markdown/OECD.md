@@ -53,7 +53,7 @@ public:: true
   "subClassOf": [
     {
       "@id": "urn:ngm:class:governance",
-      "label": "Governance Domain"
+      "label": "Governance"
     }
   ],
   "relations": {
@@ -89,7 +89,7 @@ public:: true
       {"@id": "urn:ngm:class:comparative-statistics", "label": "Comparative Statistics"}
     ],
     "supports": [
-      {"@id": "urn:ngm:class:infra-legal-and-regulatory", "label": "Regulatory Domain"},
+      {"@id": "urn:ngm:class:infra-legal-and-regulatory", "label": "Legal and Regulatory"},
       {"@id": "urn:ngm:class:open-government", "label": "Open Government"},
       {"@id": "urn:ngm:class:digital-economy", "label": "Digital Economy"}
     ],

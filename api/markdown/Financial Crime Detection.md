@@ -25,7 +25,7 @@ public:: true
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:fraud-detection", "label": "Fraud Detection"}],
   "relations": {
-    "uses": [{"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"}, {"@id": "urn:ngm:class:transaction-monitoring", "label": "Transaction Monitoring"}],
+    "uses": [{"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"}, {"@id": "urn:ngm:class:transaction-monitoring", "label": "Transaction Monitoring"}],
     "enables": [{"@id": "urn:ngm:class:anti-money-laundering", "label": "Anti-Money Laundering"}, {"@id": "urn:ngm:class:compliance", "label": "Compliance"}],
     "relatedTo": [{"@id": "urn:ngm:class:know-your-customer", "label": "Know Your Customer"}, {"@id": "urn:ngm:class:aml-kyc-compliance", "label": "AML KYC Compliance"}],
     "supports": [{"@id": "urn:ngm:class:blockchain-analytics", "label": "Blockchain Analytics"}]

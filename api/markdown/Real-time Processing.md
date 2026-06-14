@@ -141,7 +141,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:event-driven-architecture",
-        "label": "Event-Driven Architecture"
+        "label": "Event Driven Architecture"
       }
     ],
     "uses": [

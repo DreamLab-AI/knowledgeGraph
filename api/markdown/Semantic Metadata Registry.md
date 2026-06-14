@@ -139,7 +139,7 @@ public:: true
     "hasPart": [
       {
         "@id": "urn:ngm:class:metadata-schema",
-        "label": "Metadata Schemas"
+        "label": "Metadata Schema"
       },
       {
         "@id": "urn:ngm:class:namespace-management",

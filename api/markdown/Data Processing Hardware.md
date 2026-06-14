@@ -91,11 +91,11 @@ public:: true
     "requires": [
       {
         "@id": "urn:ngm:class:cooling-system",
-        "label": "Cooling Systems"
+        "label": "Cooling System"
       },
       {
         "@id": "urn:ngm:class:high-bandwidth-memory",
-        "label": "High-Bandwidth Memory"
+        "label": "High Bandwidth Memory"
       },
       {
         "@id": "urn:ngm:class:power-infrastructure",

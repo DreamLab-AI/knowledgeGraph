@@ -71,7 +71,7 @@ public:: true
     ],
     "uses": [
       {"@id": "urn:ngm:class:3d-convolution", "label": "3D Convolution"},
-      {"@id": "urn:ngm:class:cross-attention", "label": "Cross-Attention"},
+      {"@id": "urn:ngm:class:cross-attention", "label": "Cross Attention"},
       {"@id": "urn:ngm:class:optical-flow", "label": "Optical Flow"},
       {"@id": "urn:ngm:class:variational-autoencoder", "label": "Variational Autoencoder"}
     ],

@@ -9,7 +9,7 @@
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-standards-and-interop",
-      "label": "Spatial Computing Standards and Interoperability"
+      "label": "Standards and Interoperability"
     }
   ],
   "entityType": "Class",

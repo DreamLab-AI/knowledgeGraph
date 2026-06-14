@@ -210,7 +210,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:local-llm-runtime-platform",
-        "label": "Ollama"
+        "label": "Local LLM Runtime Platform"
       },
       {
         "@id": "urn:ngm:class:openai-research-organisation-whisper",
@@ -222,7 +222,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:stable-diffusion-image-model",
-        "label": "Stable Diffusion"
+        "label": "Stable Diffusion Image Model"
       }
     ],
     "requires": [
@@ -232,7 +232,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:docker-containerisation-platform",
-        "label": "Docker"
+        "label": "Docker Containerisation Platform"
       },
       {
         "@id": "urn:ngm:class:large-language-models",
@@ -240,7 +240,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:local-llm-runtime-platform",
-        "label": "Ollama"
+        "label": "Local LLM Runtime Platform"
       }
     ],
     "enables": [
@@ -286,7 +286,7 @@ public:: true
     "uses": [
       {
         "@id": "urn:ngm:class:node-based-diffusion-pipeline-interface",
-        "label": "ComfyUI"
+        "label": "Node-Based Diffusion Pipeline Interface"
       },
       {
         "@id": "urn:ngm:class:flux-1",
@@ -294,7 +294,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:local-llm-runtime-platform",
-        "label": "Ollama"
+        "label": "Local LLM Runtime Platform"
       },
       {
         "@id": "urn:ngm:class:openai-research-organisation-whisper",
@@ -302,7 +302,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:stable-diffusion-image-model",
-        "label": "Stable Diffusion"
+        "label": "Stable Diffusion Image Model"
       }
     ],
     "relatedTo": [
@@ -312,7 +312,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:large-scale-pretrained-foundation-model",
-        "label": "Foundation Models"
+        "label": "Large-Scale Pretrained Foundation Model"
       },
       {
         "@id": "urn:ngm:class:hardware-and-edge",
@@ -324,7 +324,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:mistral-ai-open-weight-model-family",
-        "label": "Mistral and Mixtral"
+        "label": "Mistral AI Open-Weight Model Family"
       }
     ],
     "supports": [

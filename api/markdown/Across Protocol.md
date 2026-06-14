@@ -37,7 +37,7 @@ alias:: Across-Protocol
       {"@id": "urn:ngm:class:cross-chain-interoperability", "label": "Cross-Chain Interoperability"}
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:ethereum-smart-contract-platform", "label": "Ethereum"},
+      {"@id": "urn:ngm:class:ethereum-smart-contract-platform", "label": "Ethereum Smart Contract Platform"},
       {"@id": "urn:ngm:class:layer-2-solutions", "label": "Layer 2 Solutions"}
     ],
     "relatedTo": [

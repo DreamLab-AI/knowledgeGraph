@@ -25,7 +25,7 @@ public:: true
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:sustainability", "label": "Sustainability"}],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:sustainability", "label": "Sustainability"}, {"@id": "urn:ngm:class:velocity-control", "label": "Velocity Control"}]
+    "relatedTo": [{"@id": "urn:ngm:class:sustainability", "label": "Sustainability"}, {"@id": "urn:ngm:class:velocity-control", "label": "VelocityControl"}]
   },
   "quality": 0.72
 }

@@ -13,7 +13,7 @@
     },
     {
       "id": "urn:ngm:class:telecollaboration",
-      "label": "TELE-002-telecollaboration"
+      "label": "Telecollaboration"
     }
   ],
   "entityType": "Class",
@@ -24,13 +24,13 @@
     "requires": [
       {
         "id": "urn:ngm:class:cloud-computing",
-        "label": "CloudComputing"
+        "label": "Cloud Computing"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:collaborative-systems-modality-simulation",
-        "label": "CollaborativeSimulation"
+        "label": "Collaborative Simulation"
       }
     ],
     "dependsOn": [],

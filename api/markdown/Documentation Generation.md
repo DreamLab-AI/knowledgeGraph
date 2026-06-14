@@ -64,7 +64,7 @@ public:: true
     },
     {
       "@id": "urn:ngm:class:generative-ai",
-      "label": "Generative Ai"
+      "label": "Generative AI"
     }
   ],
   "relations": {
@@ -77,7 +77,7 @@ public:: true
     "relatedTo": [
       {"@id": "urn:ngm:class:software-engineering", "label": "Software Engineering"},
       {"@id": "urn:ngm:class:language-modeling", "label": "Language Modeling"},
-      {"@id": "urn:ngm:class:generative-ai", "label": "Generative Ai"}
+      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"}
     ],
     "partOf": [
       {"@id": "urn:ngm:class:ai-application", "label": "AI Application"}

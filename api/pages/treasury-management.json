@@ -23,7 +23,7 @@
       },
       {
         "id": "urn:ngm:class:grant-programs",
-        "label": "Grant Program"
+        "label": "Grant Programs"
       },
       {
         "id": "urn:ngm:class:multisig-wallet",
@@ -77,7 +77,7 @@
       },
       {
         "id": "urn:ngm:class:on-chain-governance",
-        "label": "On-Chain Governance"
+        "label": "On-chain Governance"
       },
       {
         "id": "urn:ngm:class:risk-framework",
@@ -203,7 +203,7 @@
       },
       {
         "id": "urn:ngm:class:meta-llama-model-family",
-        "label": "Llama"
+        "label": "Meta Llama Model Family"
       },
       {
         "id": "urn:ngm:class:nansen",
@@ -314,7 +314,7 @@
       },
       {
         "id": "urn:ngm:class:olympus-dao",
-        "label": "OlympusDAO"
+        "label": "Olympus DAO"
       },
       {
         "id": "urn:ngm:class:optimism",

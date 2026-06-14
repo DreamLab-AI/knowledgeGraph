@@ -411,7 +411,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:autonomous-system",
-        "label": "Autonomous Systems"
+        "label": "Autonomous System"
       },
       {
         "@id": "urn:ngm:class:frontier-ai-evaluation",
@@ -445,7 +445,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:constitutional-ai-training-methodology",
-        "label": "Constitutional AI"
+        "label": "Constitutional AI Training Methodology"
       },
       {
         "@id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
@@ -459,7 +459,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:neural-network",
-        "label": "Neural Networks"
+        "label": "Neural Network"
       },
       {
         "@id": "urn:ngm:class:probabilistic-inference",
@@ -489,7 +489,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:constitutional-ai-training-methodology-language-model-family",
-        "label": "Anthropic Claude"
+        "label": "Constitutional AI Language Model Family"
       },
       {
         "@id": "urn:ngm:class:artificial-general-intelligence",
@@ -497,7 +497,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:instruction-following-conversational-ai-system",
-        "label": "ChatGPT"
+        "label": "Instruction-Following Conversational AI System"
       },
       {
         "@id": "urn:ngm:class:competition-in-ai",
@@ -519,7 +519,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning"
+        "label": "Machine Learning Discipline"
       },
       {
         "@id": "urn:ngm:class:natural-language-processing",

@@ -55,7 +55,7 @@ public:: true
       {"@id": "urn:ngm:class:rdf-dataset", "label": "RDF Dataset"}
     ],
     "implements": [
-      {"@id": "urn:ngm:class:semantic-web-linked-data-standard", "label": "Semantic Web"},
+      {"@id": "urn:ngm:class:semantic-web-linked-data-standard", "label": "Semantic Web Linked Data Standard"},
       {"@id": "urn:ngm:class:owl2", "label": "OWL2"}
     ],
     "standardizedBy": [

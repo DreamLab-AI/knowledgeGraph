@@ -56,7 +56,7 @@ public:: true
   "subClassOf": [
     {
       "@id": "urn:ngm:class:blockchain",
-      "label": "Blockchain Domain"
+      "label": "Blockchain"
     }
   ],
   "relations": {
@@ -131,7 +131,7 @@ public:: true
     "relatedTo": [
       {
         "@id": "urn:ngm:class:proof-of-work",
-        "label": "Proof of Work"
+        "label": "Proof Of Work"
       },
       {
         "@id": "urn:ngm:class:proof-of-stake",

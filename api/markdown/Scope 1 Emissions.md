@@ -41,7 +41,7 @@ public:: true
     ],
     "enables": [
       {"@id": "urn:ngm:class:esg-reporting", "label": "ESG Reporting"},
-      {"@id": "urn:ngm:class:sustainability-reporting", "label": "Sustainability Reporting"},
+      {"@id": "urn:ngm:class:sustainability-reporting", "label": "SustainabilityReporting"},
       {"@id": "urn:ngm:class:carbon-neutrality-planning", "label": "Carbon Neutrality Planning"},
       {"@id": "urn:ngm:class:net-zero-target-setting", "label": "Net Zero Target Setting"},
       {"@id": "urn:ngm:class:carbon-trading", "label": "Carbon Trading"}

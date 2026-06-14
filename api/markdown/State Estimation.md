@@ -76,10 +76,10 @@ public:: true
       {"@id": "urn:ngm:class:linear-algebra", "label": "Linear Algebra"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:lidar", "label": "LiDAR"},
+      {"@id": "urn:ngm:class:lidar", "label": "Lidar"},
       {"@id": "urn:ngm:class:visual-odometry", "label": "Visual Odometry"},
       {"@id": "urn:ngm:class:wheel-odometry", "label": "Wheel Odometry"},
-      {"@id": "urn:ngm:class:gps", "label": "GPS"}
+      {"@id": "urn:ngm:class:gps", "label": "Gps"}
     ],
     "contrastsWith": [
       {"@id": "urn:ngm:class:deterministic-control", "label": "Deterministic Control"},

@@ -85,10 +85,10 @@ public:: true
     "relatedTo": [
       {"@id": "urn:ngm:class:instruct-gpt", "label": "InstructGPT"},
       {"@id": "urn:ngm:class:reward-hacking", "label": "Reward Hacking"},
-      {"@id": "urn:ngm:class:human-in-the-loop", "label": "Human-in-the-Loop"}
+      {"@id": "urn:ngm:class:human-in-the-loop", "label": "Human in the Loop"}
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human-Computer Interaction"},
+      {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human Computer Interaction"},
       {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"}
     ]
   },

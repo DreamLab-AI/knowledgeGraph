@@ -54,7 +54,7 @@ public:: true
     "requires": [
       {"@id": "urn:ngm:class:neural-network-architecture", "label": "Neural Network Architecture"},
       {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"},
-      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine-Tuning"}
+      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine Tuning"}
     ],
     "dependsOn": [
       {"@id": "urn:ngm:class:denoising-diffusion", "label": "Denoising Diffusion"},

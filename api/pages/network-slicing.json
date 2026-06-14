@@ -99,7 +99,7 @@
     "bridgesTo": [
       {
         "id": "urn:ngm:class:multi-access-edge-computing",
-        "label": "Multi-Access Edge Computing"
+        "label": "MultiAccessEdgeComputing"
       },
       {
         "id": "urn:ngm:class:intent-based-networking",

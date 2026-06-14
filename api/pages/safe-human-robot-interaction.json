@@ -9,7 +9,7 @@
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-human-robot-interaction",
-      "label": "Robotics Human-Robot Interaction"
+      "label": "Human-Robot Interaction"
     }
   ],
   "entityType": "Class",

@@ -30,7 +30,7 @@
     "relatedTo": [
       {
         "id": "urn:ngm:class:ar-scene-graph",
-        "label": "AR Scene Graph"
+        "label": "Ar Scene Graph"
       },
       {
         "id": "urn:ngm:class:mixed-reality",

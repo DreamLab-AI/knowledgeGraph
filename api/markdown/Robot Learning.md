@@ -136,37 +136,37 @@ alias:: RobotLearning
     "hasPart": [
       {
         "@id": "urn:ngm:class:self-supervised-learning",
-        "label": "SelfSupervisedLearning"
+        "label": "Self-Supervised Learning"
       },
       {
         "@id": "urn:ngm:class:transfer-learning",
-        "label": "TransferLearning"
+        "label": "Transfer Learning"
       },
       {
         "@id": "urn:ngm:class:imitation-learning",
-        "label": "ImitationLearning"
+        "label": "Imitation Learning"
       },
       {
         "@id": "urn:ngm:class:reinforcement-learning",
-        "label": "ReinforcementLearning"
+        "label": "Reinforcement Learning"
       }
     ],
     "requires": [
       {
         "@id": "urn:ngm:class:compute-resources",
-        "label": "ComputeResources"
+        "label": "Compute Resources"
       },
       {
         "@id": "urn:ngm:class:sensor-data",
-        "label": "SensorData"
+        "label": "Sensor Data"
       },
       {
         "@id": "urn:ngm:class:simulation-environment",
-        "label": "SimulationEnvironment"
+        "label": "Simulation Environment"
       },
       {
         "@id": "urn:ngm:class:training-data",
-        "label": "TrainingData"
+        "label": "Training Data"
       }
     ],
     "enables": [
@@ -176,11 +176,11 @@ alias:: RobotLearning
       },
       {
         "@id": "urn:ngm:class:adaptive-control",
-        "label": "AdaptiveControl"
+        "label": "Adaptive Control"
       },
       {
         "@id": "urn:ngm:class:autonomous-navigation",
-        "label": "AutonomousNavigation"
+        "label": "Autonomous Navigation"
       },
       {
         "@id": "urn:ngm:class:manipulation",

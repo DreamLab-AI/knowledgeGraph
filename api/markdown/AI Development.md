@@ -156,18 +156,18 @@ public:: true
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-infrastructure",
-      "label": "AI Infrastructure (Category)"
+      "label": "AI Infrastructure"
     }
   ],
   "relations": {
     "requires": [
       {
         "@id": "urn:ngm:class:computational-resources",
-        "label": "computational resources"
+        "label": "Computational Resources"
       },
       {
         "@id": "urn:ngm:class:technical-expertise",
-        "label": "technical expertise"
+        "label": "Technical Expertise"
       },
       {
         "@id": "urn:ngm:class:training-data",

@@ -284,7 +284,7 @@ public:: true
     },
     {
       "@id": "urn:ngm:class:dialogue-system",
-      "label": "Dialogue Systems"
+      "label": "Dialogue System"
     },
     {
       "@id": "urn:ngm:class:ai-agent-system",
@@ -377,11 +377,11 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:multi-turn-dialogue",
-        "label": "Multi-turn Dialogue"
+        "label": "Multi-Turn Dialogue"
       },
       {
         "@id": "urn:ngm:class:retrieval-augmented-generation",
-        "label": "Retrieval Augmented Generation"
+        "label": "Retrieval-Augmented Generation"
       },
       {
         "@id": "urn:ngm:class:slot-filling",
@@ -411,7 +411,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:constitutional-ai-training-methodology",
-        "label": "Constitutional AI"
+        "label": "Constitutional AI Training Methodology"
       },
       {
         "@id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
@@ -421,7 +421,7 @@ public:: true
     "relatedTo": [
       {
         "@id": "urn:ngm:class:multi-turn-dialogue",
-        "label": "Multi-turn Dialogue"
+        "label": "Multi-Turn Dialogue"
       },
       {
         "@id": "urn:ngm:class:persona",
@@ -429,7 +429,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:retrieval-augmented-generation",
-        "label": "Retrieval Augmented Generation"
+        "label": "Retrieval-Augmented Generation"
       },
       {
         "@id": "urn:ngm:class:voice-interfaces",
@@ -437,7 +437,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:instruction-following-conversational-ai-system",
-        "label": "ChatGPT"
+        "label": "Instruction-Following Conversational AI System"
       },
       {
         "@id": "urn:ngm:class:claude",
@@ -445,7 +445,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:gemini-multimodal-language-model",
-        "label": "Gemini"
+        "label": "Gemini Multimodal Language Model"
       }
     ],
     "supports": [
@@ -467,7 +467,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:e-commerce",
-        "label": "E-commerce"
+        "label": "E-Commerce"
       }
     ],
     "standardizedBy": [

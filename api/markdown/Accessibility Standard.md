@@ -167,7 +167,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:inclusive-xr-experience",
-        "label": "Inclusive XR Experience"
+        "label": "Inclusive Xr Experience"
       },
       {
         "@id": "urn:ngm:class:digital-inclusion",
@@ -221,7 +221,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:human-computer-interaction",
-        "label": "Human-Computer Interaction"
+        "label": "Human Computer Interaction"
       }
     ],
     "relatedTo": [
@@ -231,7 +231,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:ai-governance-and-ethics",
-        "label": "TrustAndGovernanceDomain"
+        "label": "AI Governance and Ethics"
       }
     ]
   },

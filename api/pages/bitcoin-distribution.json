@@ -13,7 +13,7 @@
     },
     {
       "id": "urn:ngm:class:bitcoin-proof-of-work-protocol",
-      "label": "Bitcoin"
+      "label": "Bitcoin Proof-of-Work Protocol"
     }
   ],
   "entityType": "Class",
@@ -31,7 +31,7 @@
       },
       {
         "id": "urn:ngm:class:gini-coefficient",
-        "label": "GINI Coefficient"
+        "label": "Gini Coefficient"
       },
       {
         "id": "urn:ngm:class:hodl-waves",
@@ -142,7 +142,7 @@
       },
       {
         "id": "urn:ngm:class:gini-coefficient",
-        "label": "GINI Coefficient"
+        "label": "Gini Coefficient"
       },
       {
         "id": "urn:ngm:class:hodl-waves",

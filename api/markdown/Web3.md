@@ -337,7 +337,7 @@ public:: true
     "requires": [
       {
         "@id": "urn:ngm:class:content-addressed-storage",
-        "label": "Content Addressed Storage"
+        "label": "Content-Addressed Storage"
       },
       {
         "@id": "urn:ngm:class:consensus-mechanism",
@@ -349,11 +349,11 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:ethereum-smart-contract-platform",
-        "label": "Ethereum"
+        "label": "Ethereum Smart Contract Platform"
       },
       {
         "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
-        "label": "Public Key Cryptography"
+        "label": "Public-Key Cryptography"
       },
       {
         "@id": "urn:ngm:class:smart-contract",
@@ -383,7 +383,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:neural-network-text-tokenisation",
-        "label": "Tokenisation"
+        "label": "Neural Network Text Tokenisation"
       }
     ],
     "implements": [

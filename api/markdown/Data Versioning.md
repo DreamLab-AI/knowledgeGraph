@@ -88,7 +88,7 @@ public:: true
     ],
     "enables": [
       {"@id": "urn:ngm:class:model-training", "label": "Model Training"},
-      {"@id": "urn:ngm:class:empirical-experimental-design", "label": "experiment"},
+      {"@id": "urn:ngm:class:empirical-experimental-design", "label": "Empirical Experimental Design"},
       {"@id": "urn:ngm:class:feature-engineering", "label": "Feature Engineering"}
     ],
     "requires": [

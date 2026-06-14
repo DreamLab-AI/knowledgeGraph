@@ -128,7 +128,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:metaverse",
-        "label": "Metaverse Domain"
+        "label": "Metaverse"
       },
       {
         "@id": "urn:ngm:class:architectural-visualisation",
@@ -180,7 +180,7 @@ public:: true
     "bridgesTo": [
       {
         "@id": "urn:ngm:class:computer-vision",
-        "label": "Computer Vision Domain"
+        "label": "Computer Vision"
       },
       {
         "@id": "urn:ngm:class:3d-reconstruction",

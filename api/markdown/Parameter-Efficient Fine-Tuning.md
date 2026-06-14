@@ -68,7 +68,7 @@ public:: true
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-technique",
-      "label": "Ai Technique"
+      "label": "AI Technique"
     }
   ],
   "relations": {
@@ -89,7 +89,7 @@ public:: true
       {"@id": "urn:ngm:class:training-data", "label": "Training Data"}
     ],
     "enables": [
-      {"@id": "urn:ngm:class:multi-task-learning", "label": "Multi-Task Learning"},
+      {"@id": "urn:ngm:class:multi-task-learning", "label": "Multi Task Learning"},
       {"@id": "urn:ngm:class:continual-learning", "label": "Continual Learning"},
       {"@id": "urn:ngm:class:edge-deployment", "label": "Edge Deployment"}
     ],

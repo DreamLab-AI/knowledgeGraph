@@ -27,7 +27,7 @@ public:: true
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:collaborative-systems-modality-whiteboard", "label": "Collaborative Whiteboard"},
-      {"@id": "urn:ngm:class:real-time", "label": "Real-Time"}
+      {"@id": "urn:ngm:class:real-time", "label": "Real Time"}
     ]
   },
   "quality": 0.72

@@ -26,7 +26,7 @@ public:: true
   "subClassOf": [{"@id": "urn:ngm:class:sensor", "label": "Sensor"}],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:tc-0003-telepresence-robot", "label": "Telepresence Robot"},
+      {"@id": "urn:ngm:class:tc-0003-telepresence-robot", "label": "tc 0003 telepresence robot"},
       {"@id": "urn:ngm:class:voice-interaction", "label": "Voice Interaction"}
     ]
   },

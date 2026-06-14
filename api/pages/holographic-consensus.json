@@ -9,7 +9,7 @@
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-governance-and-regulation",
-      "label": "BC Governance and Regulation"
+      "label": "Governance and Regulation"
     }
   ],
   "entityType": "Class",

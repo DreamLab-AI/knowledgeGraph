@@ -179,7 +179,7 @@ public:: true
     "relatedTo": [
       {
         "@id": "urn:ngm:class:blockchain-as-a-service",
-        "label": "Blockchain-as-a-Service"
+        "label": "Blockchain As A Service"
       },
       {
         "@id": "urn:ngm:class:tokenisation",

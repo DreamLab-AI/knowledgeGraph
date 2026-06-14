@@ -52,7 +52,7 @@ public:: true
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-software-engineering",
-      "label": "Infra Software Engineering"
+      "label": "Software Engineering"
     }
   ],
   "relations": {
@@ -73,7 +73,7 @@ public:: true
     "partOf": [
       {
         "@id": "urn:ngm:class:event-driven-architecture",
-        "label": "Event-Driven Architecture"
+        "label": "Event Driven Architecture"
       }
     ],
     "requires": [
@@ -93,7 +93,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:event-driven-architecture",
-        "label": "Event-Driven Architecture"
+        "label": "Event Driven Architecture"
       },
       {
         "@id": "urn:ngm:class:stream-processing",

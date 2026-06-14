@@ -107,7 +107,7 @@ public:: true
     "requires": [
       {
         "@id": "urn:ngm:class:stakeholder-engagement",
-        "label": "stakeholder engagement"
+        "label": "Stakeholder Engagement"
       },
       {
         "@id": "urn:ngm:class:ai-governance",

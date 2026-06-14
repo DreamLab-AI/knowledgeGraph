@@ -46,7 +46,7 @@ public:: true
     ],
     "partOf": [
       {"@id": "urn:ngm:class:data-acquisition", "label": "Data Acquisition"},
-      {"@id": "urn:ngm:class:robo-perception", "label": "Robot Perception"}
+      {"@id": "urn:ngm:class:robo-perception", "label": "Perception and Sensing"}
     ],
     "requires": [
       {"@id": "urn:ngm:class:sensor", "label": "Sensor"},
@@ -74,7 +74,7 @@ public:: true
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:accelerometer", "label": "Accelerometer"},
-      {"@id": "urn:ngm:class:force-torque-sensor", "label": "Force-Torque Sensor"},
+      {"@id": "urn:ngm:class:force-torque-sensor", "label": "Force Torque Sensor"},
       {"@id": "urn:ngm:class:noise-reduction", "label": "Noise Reduction"},
       {"@id": "urn:ngm:class:embedded-systems", "label": "Embedded Systems"}
     ],

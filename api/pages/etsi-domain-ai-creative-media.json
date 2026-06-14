@@ -25,7 +25,7 @@
       },
       {
         "id": "urn:ngm:class:ai-art-categorization",
-        "label": "AI Art Categorization"
+        "label": "Ai Art Categorization"
       }
     ],
     "dependsOn": [],

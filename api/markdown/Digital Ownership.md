@@ -164,7 +164,7 @@ alias:: DigitalOwnership
     "supports": [
       {
         "@id": "urn:ngm:class:tokenised-real-world-assets",
-        "label": "Tokenised Real-World Assets"
+        "label": "Tokenised Real World Assets"
       },
       {
         "@id": "urn:ngm:class:digital-rights-management",
@@ -202,7 +202,7 @@ alias:: DigitalOwnership
       },
       {
         "@id": "urn:ngm:class:self-sovereign-identity",
-        "label": "Self-Sovereign Identity"
+        "label": "Self Sovereign Identity"
       }
     ]
   },

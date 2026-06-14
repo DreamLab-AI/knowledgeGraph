@@ -29,7 +29,7 @@ public:: true
       {"@id": "urn:ngm:class:institutional-investment", "label": "Institutional Investment"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol", "label": "Bitcoin"},
+      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol", "label": "Bitcoin Proof-of-Work Protocol"},
       {"@id": "urn:ngm:class:securities-regulation", "label": "Securities Regulation"},
       {"@id": "urn:ngm:class:financial-regulation", "label": "Financial Regulation"}
     ]

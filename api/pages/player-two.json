@@ -23,7 +23,7 @@
     "hasPart": [
       {
         "id": "urn:ngm:class:player-two-platform-implementation",
-        "label": "Player Two code"
+        "label": "Player Two Platform Implementation"
       }
     ],
     "requires": [],

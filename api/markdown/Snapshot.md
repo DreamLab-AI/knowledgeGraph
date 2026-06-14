@@ -64,7 +64,7 @@ public:: true
   "qualityScore": 0.7,
   "subClassOf": {
     "@id": "urn:ngm:class:decentralised-finance",
-    "label": "Decentralised Finance Domain"
+    "label": "Decentralised Finance"
   },
   "relations": {
     "requires": [
@@ -74,7 +74,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:ethereum-smart-contract-platform",
-        "label": "Ethereum"
+        "label": "Ethereum Smart Contract Platform"
       },
       {
         "@id": "urn:ngm:class:cryptographic-signature",
@@ -92,7 +92,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:on-chain-governance",
-        "label": "On-Chain Governance"
+        "label": "On-chain Governance"
       },
       {
         "@id": "urn:ngm:class:quadratic-voting",
@@ -130,7 +130,7 @@ public:: true
     "partOf": [
       {
         "@id": "urn:ngm:class:governance",
-        "label": "Governance Domain"
+        "label": "Governance"
       }
     ],
     "supports": [
@@ -156,7 +156,7 @@ public:: true
     "contrastsWith": [
       {
         "@id": "urn:ngm:class:on-chain-voting",
-        "label": "On-Chain Voting"
+        "label": "On Chain Voting"
       },
       {
         "@id": "urn:ngm:class:compound-governance",

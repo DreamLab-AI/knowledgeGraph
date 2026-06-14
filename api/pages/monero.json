@@ -9,7 +9,7 @@
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-token-and-asset",
-      "label": "Bc Token And Asset"
+      "label": "Token and Asset"
     }
   ],
   "entityType": "Class",
@@ -32,7 +32,7 @@
       },
       {
         "id": "urn:ngm:class:proof-of-work",
-        "label": "Proof of Work"
+        "label": "Proof Of Work"
       }
     ],
     "enables": [

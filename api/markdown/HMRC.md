@@ -57,7 +57,7 @@ public:: true
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-legal-and-regulatory",
-      "label": "Infra Legal and Regulatory"
+      "label": "Legal and Regulatory"
     }
   ],
   "relations": {

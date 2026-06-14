@@ -64,7 +64,7 @@ public:: true
   "qualityScore": 0.7,
   "subClassOf": {
     "@id": "urn:ngm:class:machine-learning-discipline",
-    "label": "Machine Learning"
+    "label": "Machine Learning Discipline"
   },
   "relations": {
     "requires": [

@@ -51,7 +51,7 @@
     "enables": [
       {
         "id": "urn:ngm:class:proof-of-work",
-        "label": "Proof of Work"
+        "label": "Proof Of Work"
       },
       {
         "id": "urn:ngm:class:proof-of-stake",
@@ -63,7 +63,7 @@
       },
       {
         "id": "urn:ngm:class:privacy-preserving-blockchain",
-        "label": "Privacy-Preserving Blockchain"
+        "label": "Privacy Preserving Blockchain"
       },
       {
         "id": "urn:ngm:class:verifiable-computation",
@@ -121,7 +121,7 @@
       },
       {
         "id": "urn:ngm:class:verification",
-        "label": "Verification"
+        "label": "VERIFICATION"
       },
       {
         "id": "urn:ngm:class:authentication",

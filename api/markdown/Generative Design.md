@@ -28,7 +28,7 @@ alias:: GenerativeDesign
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:generative-design-tool", "label": "Generative Design Tool"},
-      {"@id": "urn:ngm:class:parametric-design-methodology", "label": "Parametric"},
+      {"@id": "urn:ngm:class:parametric-design-methodology", "label": "Parametric Design Methodology"},
       {"@id": "urn:ngm:class:optimization-algorithm", "label": "Optimization Algorithm"}
     ],
     "uses": [

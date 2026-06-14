@@ -23,7 +23,7 @@ public:: true
   "definition": "Low-latency interaction is the design property of a system in which the delay between a user action and the corresponding system response is minimised to preserve a sense of immediacy. In immersive and real-time contexts such as the metaverse, latency below roughly 20 milliseconds is critical to avoid perceptual disconnect and motion sickness. Achieving it requires optimised networking, predictive rendering, and edge computation.",
   "domain": "metaverse",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:sc-interaction", "label": "Metaverse Interaction"}],
+  "subClassOf": [{"@id": "urn:ngm:class:sc-interaction", "label": "Interaction Technology"}],
   "relations": {
     "relatedTo": [{"@id": "urn:ngm:class:networking-layer", "label": "Networking Layer"}, {"@id": "urn:ngm:class:latency-management-protocol", "label": "Latency Management Protocol"}]
   },

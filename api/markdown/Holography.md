@@ -57,7 +57,7 @@ public:: true
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-display-and-rendering",
-      "label": "Sc Display And Rendering"
+      "label": "Display and Rendering"
     }
   ],
   "relations": {

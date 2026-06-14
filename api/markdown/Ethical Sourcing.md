@@ -778,7 +778,7 @@ alias:: BC-0453-ethical-sourcing
       },
       {
         "@id": "urn:ngm:class:zero-knowledge-proof",
-        "label": "Zero-Knowledge Proofs"
+        "label": "Zero-Knowledge Proof"
       },
       {
         "@id": "urn:ngm:class:io-t-sensor-network",
@@ -786,7 +786,7 @@ alias:: BC-0453-ethical-sourcing
       },
       {
         "@id": "urn:ngm:class:self-sovereign-identity",
-        "label": "Self-Sovereign Identity"
+        "label": "Self Sovereign Identity"
       }
     ],
     "relatedTo": [

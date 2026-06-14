@@ -30,7 +30,7 @@
     "relatedTo": [
       {
         "id": "urn:ngm:class:feed-forward-network",
-        "label": "Feed-Forward Network"
+        "label": "Feed Forward Network"
       },
       {
         "id": "urn:ngm:class:deep-learning",

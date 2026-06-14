@@ -76,7 +76,7 @@ public:: true
       {"@id": "urn:ngm:class:first-order-optimisation", "label": "First-Order Optimisation"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"},
       {"@id": "urn:ngm:class:gpu-accelerated-computing", "label": "GPU Accelerated Computing"}
     ],
     "supports": [

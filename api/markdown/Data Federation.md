@@ -23,7 +23,7 @@ public:: true
   "definition": "Data federation is a data integration technique that presents multiple distributed and heterogeneous data sources as a single virtual database queryable in place, without physically moving or copying the data. A federation engine decomposes queries, pushes work to source systems and combines results on the fly. It enables real-time unified access and is a core mechanism behind data virtualization and integration interfaces.",
   "domain": "data",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:infra-data-management", "label": "Infrastructure Data Management"}],
+  "subClassOf": [{"@id": "urn:ngm:class:infra-data-management", "label": "Data Management"}],
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:data-virtualization", "label": "Data Virtualization"},

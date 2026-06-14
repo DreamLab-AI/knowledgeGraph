@@ -33,7 +33,7 @@ public:: true
   "subClassOf": [
     {
       "@id": "urn:ngm:class:robo-perception",
-      "label": "Robo Perception"
+      "label": "Perception and Sensing"
     }
   ],
   "relations": {
@@ -76,7 +76,7 @@ public:: true
     ],
     "contrastsWith": [
       {"@id": "urn:ngm:class:validation", "label": "Validation"},
-      {"@id": "urn:ngm:class:verification", "label": "Verification"}
+      {"@id": "urn:ngm:class:verification", "label": "VERIFICATION"}
     ],
     "bridgesTo": [
       {"@id": "urn:ngm:class:probabilistic-calibration", "label": "Probabilistic Calibration"},

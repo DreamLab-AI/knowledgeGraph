@@ -25,7 +25,7 @@ public:: true
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:governance-framework", "label": "Governance Framework"}],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:compliance", "label": "Compliance Domain"}, {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance Domain"}]
+    "relatedTo": [{"@id": "urn:ngm:class:compliance", "label": "Compliance"}, {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}]
   },
   "quality": 0.72
 }

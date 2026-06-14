@@ -81,20 +81,20 @@ alias:: TELE-250-blockchain-collaboration
     },
     {
       "@id": "urn:ngm:class:telecollaboration",
-      "label": "TELE-002-telecollaboration"
+      "label": "Telecollaboration"
     }
   ],
   "relations": {
     "requires": [
       {
         "@id": "urn:ngm:class:consensus-protocol",
-        "label": "ConsensusProtocol"
+        "label": "Consensus Protocol"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:transparent-decision-making",
-        "label": "TransparentDecisionMaking"
+        "label": "Transparent Decision Making"
       }
     ]
   },

@@ -53,7 +53,7 @@ public:: true
     },
     {
       "@id": "urn:ngm:class:spatial-embodiment-harm-taxonomy",
-      "label": "Metaverse and Spatial Risks"
+      "label": "Spatial Embodiment Harm Taxonomy"
     }
   ],
   "relations": {

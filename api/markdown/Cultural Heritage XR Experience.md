@@ -159,7 +159,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:ar-overlay",
-        "label": "AR Overlay"
+        "label": "Ar Overlay"
       },
       {
         "@id": "urn:ngm:class:educational-narrative",

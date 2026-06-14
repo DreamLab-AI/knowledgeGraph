@@ -79,7 +79,7 @@ elevatedFrom:: [[Interfaces]]
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:node-graph-visual-programming-interface", "label": "Node based visual interfaces"},
+      {"@id": "urn:ngm:class:node-graph-visual-programming-interface", "label": "Node-Graph Visual Programming Interface"},
       {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}
     ],
     "enables": [

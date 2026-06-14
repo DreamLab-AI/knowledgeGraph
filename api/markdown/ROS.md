@@ -140,7 +140,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:service-oriented-architecture",
-        "label": "Service-Oriented Architecture"
+        "label": "Service Oriented Architecture"
       }
     ],
     "uses": [
@@ -194,7 +194,7 @@ public:: true
     "relatedTo": [
       {
         "@id": "urn:ngm:class:slam",
-        "label": "Simultaneous Localisation and Mapping"
+        "label": "SLAM"
       },
       {
         "@id": "urn:ngm:class:motion-planning",

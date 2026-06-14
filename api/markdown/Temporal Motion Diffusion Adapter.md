@@ -43,10 +43,10 @@ elevatedFrom:: [[AnimateDiff]]
       {"@id": "urn:ngm:class:parameter-efficient-fine-tuning", "label": "Parameter-Efficient Fine-Tuning"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:stable-diffusion-image-model", "label": "Stable Diffusion"},
+      {"@id": "urn:ngm:class:stable-diffusion-image-model", "label": "Stable Diffusion Image Model"},
       {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
       {"@id": "urn:ngm:class:3-d-animation", "label": "3D Animation"},
-      {"@id": "urn:ngm:class:computer-vision-video-analysis", "label": "Video Processing"}
+      {"@id": "urn:ngm:class:computer-vision-video-analysis", "label": "Computer Vision Video Analysis"}
     ],
     "contrastsWith": [
       {"@id": "urn:ngm:class:motion-capture-technology", "label": "Motion Capture Technology"}

@@ -28,12 +28,12 @@ elevatedFrom:: [[Anthropic Claude]]
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:anthropic", "label": "Anthropic"},
-      {"@id": "urn:ngm:class:constitutional-ai-training-methodology", "label": "Constitutional AI"},
+      {"@id": "urn:ngm:class:constitutional-ai-training-methodology", "label": "Constitutional AI Training Methodology"},
       {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
       {"@id": "urn:ngm:class:rlhf", "label": "RLHF"}
     ],
     "implements": [
-      {"@id": "urn:ngm:class:constitutional-ai-training-methodology", "label": "Constitutional AI"},
+      {"@id": "urn:ngm:class:constitutional-ai-training-methodology", "label": "Constitutional AI Training Methodology"},
       {"@id": "urn:ngm:class:instruction-tuning", "label": "Instruction Tuning"}
     ],
     "enables": [
@@ -45,8 +45,8 @@ elevatedFrom:: [[Anthropic Claude]]
       {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:gemini-multimodal-language-model", "label": "Gemini"},
-      {"@id": "urn:ngm:class:instruction-following-conversational-ai-system", "label": "ChatGPT"}
+      {"@id": "urn:ngm:class:gemini-multimodal-language-model", "label": "Gemini Multimodal Language Model"},
+      {"@id": "urn:ngm:class:instruction-following-conversational-ai-system", "label": "Instruction-Following Conversational AI System"}
     ],
     "supports": [
       {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},

@@ -45,7 +45,7 @@ public:: true
       {"@id": "urn:ngm:class:cross-device-authentication", "label": "Cross-Device Authentication"}
     ],
     "implements": [
-      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self-Sovereign Identity"},
+      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self Sovereign Identity"},
       {"@id": "urn:ngm:class:w3c-verifiable-credentials-data-model", "label": "W3C Verifiable Credentials Data Model"}
     ],
     "supports": [

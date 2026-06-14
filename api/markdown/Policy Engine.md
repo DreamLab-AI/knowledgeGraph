@@ -95,7 +95,7 @@ public:: true
       {"@id": "urn:ngm:class:decentralised-autonomous-organisation", "label": "Decentralised Autonomous Organisation"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:privacy-by-design", "label": "Privacy by Design"},
+      {"@id": "urn:ngm:class:privacy-by-design", "label": "Privacy By Design"},
       {"@id": "urn:ngm:class:zero-trust-architecture", "label": "Zero Trust Architecture"}
     ]
   },

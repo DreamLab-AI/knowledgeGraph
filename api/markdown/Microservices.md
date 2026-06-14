@@ -56,11 +56,11 @@ public:: true
     ],
     "contrastsWith": [
       {"@id": "urn:ngm:class:monolithic-architecture", "label": "Monolithic Architecture"},
-      {"@id": "urn:ngm:class:service-oriented-architecture", "label": "Service-Oriented Architecture"}
+      {"@id": "urn:ngm:class:service-oriented-architecture", "label": "Service Oriented Architecture"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:domain-driven-design", "label": "Domain-Driven Design"},
-      {"@id": "urn:ngm:class:event-driven-architecture", "label": "Event-Driven Architecture"},
+      {"@id": "urn:ngm:class:event-driven-architecture", "label": "Event Driven Architecture"},
       {"@id": "urn:ngm:class:twelve-factor-app", "label": "Twelve-Factor App"}
     ],
     "bridgesTo": [

@@ -60,7 +60,7 @@ public:: true
   "qualityScore": 0.7,
   "subClassOf": {
     "@id": "urn:ngm:class:deep-learning",
-    "label": "Deep Learning Domain"
+    "label": "Deep Learning"
   },
   "relations": {
     "requires": [

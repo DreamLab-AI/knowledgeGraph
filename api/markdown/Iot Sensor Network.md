@@ -555,7 +555,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:x-509-certificate",
-        "label": "X.509 Certificates"
+        "label": "X.509 Certificate"
       },
       {
         "@id": "urn:ngm:class:tiny-ml",
@@ -565,7 +565,7 @@ public:: true
     "relatedTo": [
       {
         "@id": "urn:ngm:class:5-g-network",
-        "label": "5G Networks"
+        "label": "5G Network"
       },
       {
         "@id": "urn:ngm:class:embedded-systems",

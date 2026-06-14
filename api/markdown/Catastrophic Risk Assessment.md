@@ -26,7 +26,7 @@ public:: true
   "subClassOf": [{"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"}],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:california-ai-bill", "label": "California AI Bill"},
+      {"@id": "urn:ngm:class:california-ai-bill", "label": "California AI bill"},
       {"@id": "urn:ngm:class:existential-risk", "label": "Existential Risk"}
     ]
   },

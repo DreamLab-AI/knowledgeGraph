@@ -163,7 +163,7 @@ public:: true
     ],
     "uses": [
       {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain Domain"}
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:consumer-protection", "label": "Consumer Protection"},

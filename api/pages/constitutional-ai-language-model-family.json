@@ -41,7 +41,7 @@
     "implements": [
       {
         "id": "urn:ngm:class:constitutional-ai-training-methodology",
-        "label": "Constitutional AI"
+        "label": "Constitutional AI Training Methodology"
       },
       {
         "id": "urn:ngm:class:instruction-tuning",
@@ -51,11 +51,11 @@
     "contrastsWith": [
       {
         "id": "urn:ngm:class:gemini-multimodal-language-model",
-        "label": "Gemini"
+        "label": "Gemini Multimodal Language Model"
       },
       {
         "id": "urn:ngm:class:instruction-following-conversational-ai-system",
-        "label": "ChatGPT"
+        "label": "Instruction-Following Conversational AI System"
       }
     ],
     "bridgesTo": [],
@@ -79,7 +79,7 @@
       },
       {
         "id": "urn:ngm:class:constitutional-ai-training-methodology",
-        "label": "Constitutional AI"
+        "label": "Constitutional AI Training Methodology"
       },
       {
         "id": "urn:ngm:class:large-language-models",

@@ -31,7 +31,7 @@ alias:: 5G Networks
     "hasPart": [
       {"@id": "urn:ngm:class:5-g-nr", "label": "5G New Radio"},
       {"@id": "urn:ngm:class:5-g-core", "label": "5G Core"},
-      {"@id": "urn:ngm:class:multi-access-edge-computing", "label": "Multi-Access Edge Computing"},
+      {"@id": "urn:ngm:class:multi-access-edge-computing", "label": "MultiAccessEdgeComputing"},
       {"@id": "urn:ngm:class:network-slicing", "label": "Network Slicing"}
     ],
     "enables": [

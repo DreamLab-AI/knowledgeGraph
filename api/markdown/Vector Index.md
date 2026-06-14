@@ -25,7 +25,7 @@ public:: true
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:information-retrieval", "label": "Information Retrieval"}],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:retrieval-augmented-generation-rag", "label": "Retrieval-Augmented Generation (RAG)"}, {"@id": "urn:ngm:class:semantic-search", "label": "Semantic Search"}]
+    "relatedTo": [{"@id": "urn:ngm:class:retrieval-augmented-generation-rag", "label": "Retrieval Augmented Generation - RAG"}, {"@id": "urn:ngm:class:semantic-search", "label": "Semantic Search"}]
   },
   "quality": 0.72
 }

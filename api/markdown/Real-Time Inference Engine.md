@@ -27,7 +27,7 @@ public:: true
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:onnx-runtime", "label": "ONNX Runtime"},
-      {"@id": "urn:ngm:class:hyper-personalisation", "label": "Hyper-Personalisation"}
+      {"@id": "urn:ngm:class:hyper-personalisation", "label": "Hyper personalisation"}
     ]
   },
   "quality": 0.72

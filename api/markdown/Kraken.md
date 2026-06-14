@@ -68,7 +68,7 @@ public:: true
   "qualityScore": 0.7,
   "subClassOf": {
     "@id": "urn:ngm:class:bc-defi-and-economics",
-    "label": "Bc Defi And Economics"
+    "label": "DeFi and Economics"
   },
   "relations": {
     "hasPart": [
@@ -154,11 +154,11 @@ public:: true
     "bridgesTo": [
       {
         "@id": "urn:ngm:class:infra-legal-and-regulatory",
-        "label": "Regulatory Domain"
+        "label": "Legal and Regulatory"
       },
       {
         "@id": "urn:ngm:class:financial-infrastructure",
-        "label": "Financial Infrastructure Domain"
+        "label": "Financial Infrastructure"
       },
       {
         "@id": "urn:ngm:class:traditional-finance",

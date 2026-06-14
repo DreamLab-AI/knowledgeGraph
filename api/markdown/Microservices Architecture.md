@@ -128,7 +128,7 @@ alias:: MicroservicesArchitecture
       },
       {
         "@id": "urn:ngm:class:event-driven-architecture",
-        "label": "Event-Driven Architecture"
+        "label": "Event Driven Architecture"
       }
     ],
     "uses": [
@@ -162,7 +162,7 @@ alias:: MicroservicesArchitecture
       },
       {
         "@id": "urn:ngm:class:service-oriented-architecture",
-        "label": "Service-Oriented Architecture"
+        "label": "Service Oriented Architecture"
       }
     ],
     "bridgesTo": [

@@ -82,7 +82,7 @@ alias:: IdentityManagement
     "enables": [
       {
         "@id": "urn:ngm:class:self-sovereign-identity",
-        "label": "Self-Sovereign Identity"
+        "label": "Self Sovereign Identity"
       },
       {
         "@id": "urn:ngm:class:privacy-preserving-authentication",
@@ -140,7 +140,7 @@ alias:: IdentityManagement
       },
       {
         "@id": "urn:ngm:class:iso-iec-24760",
-        "label": "ISO/IEC 24760"
+        "label": "ISO-IEC 24760"
       }
     ],
     "contrastsWith": [

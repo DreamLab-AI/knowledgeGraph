@@ -179,7 +179,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:constraint-based-design",
-        "label": "Constraint-Based Design"
+        "label": "Constraint Based Design"
       },
       {
         "@id": "urn:ngm:class:parametric-design-methodology-modeling",

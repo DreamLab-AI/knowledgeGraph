@@ -76,7 +76,7 @@ public:: true
   "qualityScore": 0.7,
   "subClassOf": {
     "@id": "urn:ngm:class:ai-research-area",
-    "label": "Ai Research Area"
+    "label": "AI Research Area"
   },
   "relations": {
     "hasPart": [
@@ -118,11 +118,11 @@ public:: true
     "enables": [
       {
         "@id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning"
+        "label": "Machine Learning Discipline"
       },
       {
         "@id": "urn:ngm:class:computer-vision",
-        "label": "Computer Vision Domain"
+        "label": "Computer Vision"
       },
       {
         "@id": "urn:ngm:class:principal-component-analysis",

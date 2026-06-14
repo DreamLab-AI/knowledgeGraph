@@ -32,7 +32,7 @@ public:: true
     ],
     "uses": [
       {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"},
       {"@id": "urn:ngm:class:convolutional-neural-network", "label": "Convolutional Neural Network"},
       {"@id": "urn:ngm:class:vision-transformer", "label": "Vision Transformer"},
       {"@id": "urn:ngm:class:frequency-domain-analysis", "label": "Frequency Domain Analysis"},

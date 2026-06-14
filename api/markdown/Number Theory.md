@@ -69,7 +69,7 @@ public:: true
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-research-area",
-      "label": "Ai Research Area"
+      "label": "AI Research Area"
     }
   ],
   "relations": {
@@ -86,11 +86,11 @@ public:: true
     "enables": [
       {
         "@id": "urn:ngm:class:cryptography",
-        "label": "Cryptography Domain"
+        "label": "Cryptography"
       },
       {
         "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
-        "label": "Public Key Cryptography"
+        "label": "Public-Key Cryptography"
       }
     ]
   },

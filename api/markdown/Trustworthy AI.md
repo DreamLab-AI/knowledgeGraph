@@ -42,7 +42,7 @@ public:: true
       {"@id": "urn:ngm:class:explainable-ai", "label": "Explainable AI"},
       {"@id": "urn:ngm:class:algorithmic-accountability", "label": "Algorithmic Accountability"},
       {"@id": "urn:ngm:class:bias-mitigation", "label": "Bias Mitigation"},
-      {"@id": "urn:ngm:class:privacy-by-design", "label": "Privacy by Design"}
+      {"@id": "urn:ngm:class:privacy-by-design", "label": "Privacy By Design"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:ai-adoption", "label": "AI Adoption"},
@@ -58,7 +58,7 @@ public:: true
     "implements": [
       {"@id": "urn:ngm:class:eu-ai-act", "label": "EU AI Act"},
       {"@id": "urn:ngm:class:nist-ai-rmf", "label": "NIST AI RMF"},
-      {"@id": "urn:ngm:class:iso-iec-42001", "label": "ISO/IEC 42001"}
+      {"@id": "urn:ngm:class:iso-iec-42001", "label": "ISO IEC 42001"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:model-cards", "label": "Model Cards"},

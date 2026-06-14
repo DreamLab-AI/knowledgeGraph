@@ -199,7 +199,7 @@ public:: true
   "maturity": "emerging",
   "subClassOf": {
     "@id": "urn:ngm:class:infra-legal-and-regulatory",
-    "label": "Infra Legal And Regulatory"
+    "label": "Legal and Regulatory"
   },
   "relations": {
     "requires": [
@@ -211,7 +211,7 @@ public:: true
     "enables": [
       {"@id": "urn:ngm:class:differential-privacy", "label": "Differential Privacy"},
       {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"},
-      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self-Sovereign Identity"},
+      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self Sovereign Identity"},
       {"@id": "urn:ngm:class:anonymous-credential", "label": "Anonymous Credential"}
     ],
     "dependsOn": [
@@ -221,8 +221,8 @@ public:: true
     ],
     "implements": [
       {"@id": "urn:ngm:class:gdpr", "label": "GDPR"},
-      {"@id": "urn:ngm:class:iso-iec-27701", "label": "ISO/IEC 27701"},
-      {"@id": "urn:ngm:class:privacy-by-design", "label": "Privacy by Design"}
+      {"@id": "urn:ngm:class:iso-iec-27701", "label": "ISO-IEC 27701"},
+      {"@id": "urn:ngm:class:privacy-by-design", "label": "Privacy By Design"}
     ],
     "standardizedBy": [
       {"@id": "urn:ngm:class:iso-iec-29100", "label": "ISO/IEC 29100"},
@@ -231,7 +231,7 @@ public:: true
     "contrastsWith": [
       {"@id": "urn:ngm:class:surveillance", "label": "Surveillance"},
       {"@id": "urn:ngm:class:mass-data-collection", "label": "Mass Data Collection"},
-      {"@id": "urn:ngm:class:hyper-personalisation", "label": "Hyper Personalisation"}
+      {"@id": "urn:ngm:class:hyper-personalisation", "label": "Hyper personalisation"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:cybersecurity", "label": "Cybersecurity"},

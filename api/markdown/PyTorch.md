@@ -37,7 +37,7 @@ public:: true
       {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:python-pytorch-deep-learning-stack", "label": "Python and PyTorch"},
+      {"@id": "urn:ngm:class:python-pytorch-deep-learning-stack", "label": "Python PyTorch Deep Learning Stack"},
       {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"},
       {"@id": "urn:ngm:class:batch-processing", "label": "Batch Processing"}
     ],
@@ -48,7 +48,7 @@ public:: true
     "relatedTo": [
       {"@id": "urn:ngm:class:open-source-framework", "label": "Open Source Framework"},
       {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
-      {"@id": "urn:ngm:class:large-scale-pretrained-foundation-model", "label": "Foundation Models"}
+      {"@id": "urn:ngm:class:large-scale-pretrained-foundation-model", "label": "Large-Scale Pretrained Foundation Model"}
     ]
   },
   "quality": 0.8

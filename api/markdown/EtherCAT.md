@@ -33,7 +33,7 @@ public:: true
   "subClassOf": [
     {
       "@id": "urn:ngm:class:robo-actuation-and-control",
-      "label": "Robo Actuation And Control"
+      "label": "Actuation and Control"
     }
   ],
   "relations": {
@@ -74,9 +74,9 @@ public:: true
       {"@id": "urn:ngm:class:sercos-iii", "label": "SERCOS III"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:industrial-automation", "label": "Industrial Automation"},
+      {"@id": "urn:ngm:class:industrial-automation", "label": "IndustrialAutomation"},
       {"@id": "urn:ngm:class:functional-safety", "label": "Functional Safety"},
-      {"@id": "urn:ngm:class:opc-ua", "label": "OPC-UA"},
+      {"@id": "urn:ngm:class:opc-ua", "label": "OPC UA"},
       {"@id": "urn:ngm:class:robot-operating-system", "label": "Robot Operating System"}
     ],
     "bridgesTo": [

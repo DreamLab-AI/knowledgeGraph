@@ -658,11 +658,11 @@ alias:: BC-0432-consortium-blockchain, ConsortiumBlockchain
       },
       {
         "@id": "urn:ngm:class:raft-consensus",
-        "label": "Raft Consensus"
+        "label": "RAFT Consensus"
       },
       {
         "@id": "urn:ngm:class:smart-bft",
-        "label": "Smart BFT"
+        "label": "SMaRT-BFT"
       },
       {
         "@id": "urn:ngm:class:proof-of-authority",
@@ -706,7 +706,7 @@ alias:: BC-0432-consortium-blockchain, ConsortiumBlockchain
     "relatedTo": [
       {
         "@id": "urn:ngm:class:cbdcs",
-        "label": "CBDC"
+        "label": "CBDCs"
       },
       {
         "@id": "urn:ngm:class:distributed-ledger-technology",
@@ -722,7 +722,7 @@ alias:: BC-0432-consortium-blockchain, ConsortiumBlockchain
       },
       {
         "@id": "urn:ngm:class:self-sovereign-identity",
-        "label": "Self-Sovereign Identity"
+        "label": "Self Sovereign Identity"
       },
       {
         "@id": "urn:ngm:class:smart-contract",
@@ -734,7 +734,7 @@ alias:: BC-0432-consortium-blockchain, ConsortiumBlockchain
       },
       {
         "@id": "urn:ngm:class:neural-network-text-tokenisation",
-        "label": "Tokenisation"
+        "label": "Neural Network Text Tokenisation"
       },
       {
         "@id": "urn:ngm:class:verifiable-credentials",

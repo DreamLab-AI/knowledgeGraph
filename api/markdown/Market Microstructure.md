@@ -61,7 +61,7 @@ public:: true
   "subClassOf": [
     {
       "@id": "urn:ngm:class:economics",
-      "label": "Economics Domain"
+      "label": "Economics"
     }
   ],
   "relations": {

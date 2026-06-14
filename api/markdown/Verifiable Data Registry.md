@@ -86,7 +86,7 @@ public:: true
     ],
     "supports": [
       {"@id": "urn:ngm:class:trust-framework", "label": "Trust Framework"},
-      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero Knowledge Proof"}
+      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"}
     ],
     "standardizedBy": [
       {"@id": "urn:ngm:class:w3c", "label": "W3C"},

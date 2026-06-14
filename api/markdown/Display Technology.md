@@ -49,7 +49,7 @@ public:: true
     ],
     "supports": [
       {"@id": "urn:ngm:class:xr-device", "label": "XR Device"},
-      {"@id": "urn:ngm:class:ar-display-device", "label": "AR Display Device"},
+      {"@id": "urn:ngm:class:ar-display-device", "label": "Ar Display Device"},
       {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human Computer Interaction"}
     ],
     "dependsOn": [

@@ -135,7 +135,7 @@
     "supports": [
       {
         "id": "urn:ngm:class:event-driven-architecture",
-        "label": "Event-Driven Architecture"
+        "label": "Event Driven Architecture"
       },
       {
         "id": "urn:ngm:class:cqrs-pattern",

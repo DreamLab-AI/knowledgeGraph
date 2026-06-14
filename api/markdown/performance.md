@@ -49,7 +49,7 @@ public:: true
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-computing-and-cloud",
-      "label": "Infra Computing And Cloud"
+      "label": "Computing and Cloud"
     }
   ],
   "quality": 0.6,

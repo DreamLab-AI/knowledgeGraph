@@ -705,11 +705,11 @@ alias:: DecentralizedExchange
     },
     {
       "@id": "urn:ngm:class:bc-defi-and-economics",
-      "label": "BC DeFi And Economics"
+      "label": "DeFi and Economics"
     },
     {
       "@id": "urn:ngm:class:bc-defi-and-economics",
-      "label": "BC DeFi And Economics"
+      "label": "DeFi and Economics"
     }
   ],
   "relations": {
@@ -864,7 +864,7 @@ alias:: DecentralizedExchange
       },
       {
         "@id": "urn:ngm:class:stable-swap-invariant",
-        "label": "StableSwap Invariant"
+        "label": "Stable Swap Invariant"
       },
       {
         "@id": "urn:ngm:class:threshold-signature-scheme",

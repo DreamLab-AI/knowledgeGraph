@@ -33,7 +33,7 @@ public:: true
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
-      "label": "SC Content and Assets"
+      "label": "Content and Assets"
     }
   ],
   "sameAs": [
@@ -74,7 +74,7 @@ public:: true
     "relatedTo": [
       {"@id": "urn:ngm:class:interactive-software-development", "label": "Interactive Software Development"},
       {"@id": "urn:ngm:class:computer-graphics", "label": "Computer Graphics"},
-      {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human-Computer Interaction"},
+      {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human Computer Interaction"},
       {"@id": "urn:ngm:class:virtual-world", "label": "Virtual World"},
       {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"}
     ],

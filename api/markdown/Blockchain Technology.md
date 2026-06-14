@@ -63,7 +63,7 @@ alias:: BlockchainTechnology
       {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"},
       {"@id": "urn:ngm:class:cross-chain-interoperability", "label": "Cross-Chain Interoperability"},
       {"@id": "urn:ngm:class:sidechain", "label": "Sidechain"},
-      {"@id": "urn:ngm:class:layer-2-scaling", "label": "Layer-2 Scaling"}
+      {"@id": "urn:ngm:class:layer-2-scaling", "label": "Layer 2 Scaling"}
     ],
     "bridgesTo": [
       {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"},

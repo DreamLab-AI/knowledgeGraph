@@ -26,7 +26,7 @@ public:: true
   "subClassOf": [{"@id": "urn:ngm:class:generative-design", "label": "Generative Design"}],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"},
       {"@id": "urn:ngm:class:algorithm", "label": "Algorithm"},
       {"@id": "urn:ngm:class:simulation", "label": "Simulation"}
     ],

@@ -46,12 +46,12 @@ elevatedFrom:: [[Revision List]]
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"},
       {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:machine-learning-discipline-pipeline", "label": "Machine Learning Pipeline"},
-      {"@id": "urn:ngm:class:python-pytorch-deep-learning-stack", "label": "Python and PyTorch"}
+      {"@id": "urn:ngm:class:python-pytorch-deep-learning-stack", "label": "Python PyTorch Deep Learning Stack"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:knowledge-management", "label": "Knowledge Management"}

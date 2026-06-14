@@ -80,7 +80,7 @@ public:: true
     },
     {
       "@id": "urn:ngm:class:sc-display-and-rendering",
-      "label": "SC Display And Rendering"
+      "label": "Display and Rendering"
     }
   ],
   "relations": {

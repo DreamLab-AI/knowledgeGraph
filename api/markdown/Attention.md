@@ -475,7 +475,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:datalog-knowledge-graph-query-language",
-        "label": "Query"
+        "label": "Datalog Knowledge Graph Query Language"
       },
       {
         "@id": "urn:ngm:class:softmax",
@@ -535,7 +535,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Model"
+        "label": "Large Language Models"
       },
       {
         "@id": "urn:ngm:class:long-context-window",
@@ -625,7 +625,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:mixture-of-experts-architecture",
-        "label": "Mixture of Experts"
+        "label": "Mixture-of-Experts Architecture"
       }
     ],
     "supports": [
@@ -635,7 +635,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:large-scale-pretrained-foundation-model",
-        "label": "Foundation Model"
+        "label": "Large-Scale Pretrained Foundation Model"
       },
       {
         "@id": "urn:ngm:class:multimodal-ai-architecture-reasoning",

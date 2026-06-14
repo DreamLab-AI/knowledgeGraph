@@ -44,7 +44,7 @@ public:: true
     "implements": [
       {"@id": "urn:ngm:class:algorand-virtual-machine", "label": "Algorand Virtual Machine"},
       {"@id": "urn:ngm:class:arc-token-standard", "label": "ARC Token Standard"},
-      {"@id": "urn:ngm:class:on-chain-governance", "label": "On-Chain Governance"}
+      {"@id": "urn:ngm:class:on-chain-governance", "label": "On-chain Governance"}
     ],
     "requires": [
       {"@id": "urn:ngm:class:algo-token", "label": "ALGO Token"},
@@ -57,7 +57,7 @@ public:: true
       {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"}
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof of Work"},
+      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"},
       {"@id": "urn:ngm:class:delegated-proof-of-stake", "label": "Delegated Proof of Stake"}
     ],
     "bridgesTo": [

@@ -475,11 +475,11 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
-        "label": "EU AI Act"
+        "label": "EU AI Act Regulatory Instrument"
       },
       {
         "@id": "urn:ngm:class:iso-standards",
-        "label": "ISO Standards"
+        "label": "Iso Standards"
       }
     ]
   },

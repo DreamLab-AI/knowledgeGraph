@@ -27,7 +27,7 @@ public:: true
     {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"}
   ],
   "sameAs": [
-    {"@id": "urn:ngm:class:decentralized-finance", "label": "Decentralized Finance (DeFi)"}
+    {"@id": "urn:ngm:class:decentralized-finance", "label": "Decentralized Finance"}
   ],
   "relations": {
     "hasPart": [

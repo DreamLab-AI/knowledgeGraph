@@ -185,7 +185,7 @@ public:: true
     "uses": [
       {
         "@id": "urn:ngm:class:cryptographic-proof",
-        "label": "CryptographicProof"
+        "label": "Cryptographic Proof"
       }
     ]
   },

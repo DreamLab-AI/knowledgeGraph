@@ -38,7 +38,7 @@ public:: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"},
       {"@id": "urn:ngm:class:supervised-learning", "label": "Supervised Learning"},
       {"@id": "urn:ngm:class:graph-neural-networks", "label": "Graph Neural Networks"},
       {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},

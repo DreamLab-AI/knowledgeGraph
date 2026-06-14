@@ -189,7 +189,7 @@ public:: true
     "partOf": [
       {
         "@id": "urn:ngm:class:de-fi-protocol",
-        "label": "DeFi Protocol"
+        "label": "De Fi Protocol"
       },
       {
         "@id": "urn:ngm:class:decentralized-exchange",

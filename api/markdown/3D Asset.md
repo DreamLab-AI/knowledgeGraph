@@ -71,7 +71,7 @@ public:: true
       {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:gltf-standard", "label": "glTF Standard"},
+      {"@id": "urn:ngm:class:gltf-standard", "label": "Gltf Standard"},
       {"@id": "urn:ngm:class:universal-scene-description", "label": "Universal Scene Description"},
       {"@id": "urn:ngm:class:digital-asset-management", "label": "Digital Asset Management"},
       {"@id": "urn:ngm:class:texture-compression", "label": "Texture Compression"}

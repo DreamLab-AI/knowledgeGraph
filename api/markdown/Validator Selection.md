@@ -25,7 +25,7 @@ public:: true
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:proof-of-stake", "label": "Proof of Stake"}],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:testnet", "label": "Testnet"}, {"@id": "urn:ngm:class:proof-of-stake-sustainability", "label": "Proof of Stake Sustainability"}]
+    "relatedTo": [{"@id": "urn:ngm:class:testnet", "label": "Testnet"}, {"@id": "urn:ngm:class:proof-of-stake-sustainability", "label": "Proof Of Stake Sustainability"}]
   },
   "quality": 0.72
 }

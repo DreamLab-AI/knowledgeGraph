@@ -43,7 +43,7 @@ public:: true
     "supports": [
       {"@id": "urn:ngm:class:renewable-energy-certificates", "label": "Renewable Energy Certificates"},
       {"@id": "urn:ngm:class:renewable-energy", "label": "Renewable Energy"},
-      {"@id": "urn:ngm:class:sustainability-reporting", "label": "Sustainability Reporting"},
+      {"@id": "urn:ngm:class:sustainability-reporting", "label": "SustainabilityReporting"},
       {"@id": "urn:ngm:class:power-purchase-agreement", "label": "Power Purchase Agreement"}
     ],
     "partOf": [

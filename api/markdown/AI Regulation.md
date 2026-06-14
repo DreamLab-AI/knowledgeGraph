@@ -64,7 +64,7 @@ public:: true
       {"@id": "urn:ngm:class:audit-and-certification", "label": "Audit and Certification"}
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:iso-iec-42001", "label": "ISO/IEC 42001"},
+      {"@id": "urn:ngm:class:iso-iec-42001", "label": "ISO IEC 42001"},
       {"@id": "urn:ngm:class:nist-ai-rmf", "label": "NIST AI RMF"},
       {"@id": "urn:ngm:class:oecd-ai-principles", "label": "OECD AI Principles"}
     ],

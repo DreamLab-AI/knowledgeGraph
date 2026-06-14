@@ -67,7 +67,7 @@ public:: true
       {"@id": "urn:ngm:class:self-reported-origin", "label": "Self-Reported Origin"}
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero Knowledge Proof"}
+      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"}
     ]
   },
   "sameAs": [

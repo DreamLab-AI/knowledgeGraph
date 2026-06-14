@@ -135,7 +135,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:human-robot-interaction",
-        "label": "Human-Robot Interaction"
+        "label": "Human Robot Interaction"
       }
     ]
   },

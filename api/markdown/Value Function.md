@@ -33,7 +33,7 @@ alias:: ValueFunction
       {"@id": "urn:ngm:class:optimal-control", "label": "Optimal Control"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"}
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"}
     ]
   },
   "quality": 0.8

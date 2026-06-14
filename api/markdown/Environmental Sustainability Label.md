@@ -157,7 +157,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:third-party-auditor",
-        "label": "Third-Party Auditor"
+        "label": "Third Party Auditor"
       }
     ],
     "enables": [
@@ -167,7 +167,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:sustainability-reporting",
-        "label": "Sustainability Reporting"
+        "label": "SustainabilityReporting"
       },
       {
         "@id": "urn:ngm:class:user-trust-building",

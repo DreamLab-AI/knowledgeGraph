@@ -69,7 +69,7 @@ public:: true
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:dapp", "label": "dApp"},
+    {"@id": "urn:ngm:class:dapp", "label": "DApp"},
     {"@id": "urn:ngm:class:decentralized-application", "label": "Decentralized Application"}
   ],
   "quality": 0.72,

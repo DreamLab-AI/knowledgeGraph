@@ -75,7 +75,7 @@ public:: true
       {"@id": "urn:ngm:class:real-time-inference", "label": "Real-Time Inference"}
     ],
     "supports": [
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"},
       {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
       {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}
     ],

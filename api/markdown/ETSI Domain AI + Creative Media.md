@@ -92,7 +92,7 @@ alias:: ETSI Domain AI Creative Media
       },
       {
         "@id": "urn:ngm:class:ai-art-categorization",
-        "label": "AI Art Categorization"
+        "label": "Ai Art Categorization"
       }
     ],
     "partOf": [

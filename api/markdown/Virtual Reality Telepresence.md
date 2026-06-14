@@ -101,7 +101,7 @@ alias:: TELE-020-virtual-reality-telepresence
     },
     {
       "@id": "urn:ngm:class:tele-001-telepresence",
-      "label": "TELE-001-telepresence"
+      "label": "TELE 001 telepresence"
     }
   ],
   "relations": {

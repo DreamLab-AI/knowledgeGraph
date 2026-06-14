@@ -26,8 +26,8 @@ public:: true
   "subClassOf": [{"@id": "urn:ngm:class:control-system", "label": "Control System"}],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:velocity-control", "label": "Velocity Control"},
-      {"@id": "urn:ngm:class:position-control", "label": "Position Control"}
+      {"@id": "urn:ngm:class:velocity-control", "label": "VelocityControl"},
+      {"@id": "urn:ngm:class:position-control", "label": "PositionControl"}
     ]
   },
   "quality": 0.72

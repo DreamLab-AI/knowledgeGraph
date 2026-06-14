@@ -131,7 +131,7 @@ public:: true
       {"@id": "urn:ngm:class:controlnet", "label": "ControlNet"}
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:metaverse", "label": "MetaverseDomain"},
+      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"},
       {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
       {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"}
     ]

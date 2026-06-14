@@ -438,7 +438,7 @@ public:: true
     "enables": [
       {
         "@id": "urn:ngm:class:cross-border-payments",
-        "label": "Cross-Border Payment"
+        "label": "Cross-Border Payments"
       },
       {
         "@id": "urn:ngm:class:de-fi-integration",
@@ -488,7 +488,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:mi-ca-regulation",
-        "label": "EU MiCA Regulation"
+        "label": "MiCA Regulation"
       }
     ],
     "uses": [
@@ -544,7 +544,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:mi-ca-regulation",
-        "label": "EU MiCA Regulation"
+        "label": "MiCA Regulation"
       },
       {
         "@id": "urn:ngm:class:micropayments",

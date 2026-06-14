@@ -25,7 +25,7 @@ alias:: EmbeddedSystems
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-computing-and-cloud",
-      "label": "Infra Computing and Cloud"
+      "label": "Computing and Cloud"
     }
   ],
   "relations": {
@@ -44,7 +44,7 @@ alias:: EmbeddedSystems
     "enables": [
       {"@id": "urn:ngm:class:robotics", "label": "Robotics"},
       {"@id": "urn:ngm:class:internet-of-things", "label": "Internet of Things"},
-      {"@id": "urn:ngm:class:industrial-automation", "label": "Industrial Automation"},
+      {"@id": "urn:ngm:class:industrial-automation", "label": "IndustrialAutomation"},
       {"@id": "urn:ngm:class:edge-ai", "label": "Edge AI"}
     ],
     "requires": [
@@ -74,7 +74,7 @@ alias:: EmbeddedSystems
     ],
     "bridgesTo": [
       {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
-      {"@id": "urn:ngm:class:cyber-physical-systems", "label": "Cyber-Physical Systems"},
+      {"@id": "urn:ngm:class:cyber-physical-systems", "label": "Cyber Physical Systems"},
       {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
     ],
     "relatedTo": [

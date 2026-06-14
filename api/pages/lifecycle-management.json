@@ -9,7 +9,7 @@
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-software-engineering",
-      "label": "Infrastructure Software Engineering"
+      "label": "Software Engineering"
     }
   ],
   "entityType": "Class",

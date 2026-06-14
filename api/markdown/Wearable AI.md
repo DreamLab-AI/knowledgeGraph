@@ -61,7 +61,7 @@ public:: true
   "subClassOf": [
     {
       "@id": "urn:ngm:class:spatial-computing",
-      "label": "Spatial Computing Domain"
+      "label": "Spatial Computing"
     }
   ],
   "relations": {

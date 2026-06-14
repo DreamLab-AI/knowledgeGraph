@@ -92,7 +92,7 @@ alias:: Cross-Platform Digital Twins
       },
       {
         "@id": "urn:ngm:class:interoperability-standard",
-        "label": "Interoperability Standards"
+        "label": "Interoperability Standard"
       },
       {
         "@id": "urn:ngm:class:universal-scene-description",

@@ -465,7 +465,7 @@ alias:: EdgeComputing
     },
     {
       "@id": "urn:ngm:class:infra-network-and-comms",
-      "label": "Infra Network And Comms"
+      "label": "Network and Communication"
     }
   ],
   "relations": {
@@ -596,7 +596,7 @@ alias:: EdgeComputing
       },
       {
         "@id": "urn:ngm:class:multi-access-edge-computing",
-        "label": "Multi-access Edge Computing"
+        "label": "MultiAccessEdgeComputing"
       },
       {
         "@id": "urn:ngm:class:network-slicing",
@@ -670,7 +670,7 @@ alias:: EdgeComputing
     "supports": [
       {
         "@id": "urn:ngm:class:autonomous-vehicle",
-        "label": "Autonomous Vehicles"
+        "label": "Autonomous Vehicle"
       },
       {
         "@id": "urn:ngm:class:content-delivery-network",

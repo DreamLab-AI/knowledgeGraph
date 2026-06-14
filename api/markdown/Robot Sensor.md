@@ -87,7 +87,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:analog-to-digital-converter",
-        "label": "Analog-to-Digital Converter"
+        "label": "Analog To Digital Converter"
       }
     ],
     "requires": [
@@ -145,17 +145,17 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:human-robot-interaction",
-        "label": "Human-Robot Interaction"
+        "label": "Human Robot Interaction"
       }
     ],
     "standardizedBy": [
       {
         "@id": "urn:ngm:class:iso-8373",
-        "label": "ISO 8373 Robotics Vocabulary"
+        "label": "ISO 8373"
       },
       {
         "@id": "urn:ngm:class:iec-61508",
-        "label": "IEC 61508 Functional Safety"
+        "label": "IEC 61508"
       }
     ],
     "contrastsWith": [
@@ -185,7 +185,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:force-torque-sensor",
-        "label": "Force-Torque Sensor"
+        "label": "Force Torque Sensor"
       },
       {
         "@id": "urn:ngm:class:inertial-measurement-unit",

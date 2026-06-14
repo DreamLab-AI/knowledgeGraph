@@ -46,7 +46,7 @@ public:: true
     ],
     "implements": [
       {"@id": "urn:ngm:class:data-minimisation", "label": "Data Minimisation"},
-      {"@id": "urn:ngm:class:privacy-by-design", "label": "Privacy by Design"}
+      {"@id": "urn:ngm:class:privacy-by-design", "label": "Privacy By Design"}
     ],
     "supports": [
       {"@id": "urn:ngm:class:gdpr-compliance", "label": "GDPR Compliance"},
@@ -63,12 +63,12 @@ public:: true
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
-      {"@id": "urn:ngm:class:cryptography-security-and-privacy", "label": "Cryptography, Security and Privacy"}
+      {"@id": "urn:ngm:class:cryptography-security-and-privacy", "label": "Cryptography Security and Privacy"}
     ]
   },
   "sameAs": [
     {"@id": "urn:ngm:class:secure-computation", "label": "Secure Computation"},
-    {"@id": "urn:ngm:class:privacy-enhancing-technologies", "label": "Privacy-Enhancing Technologies"}
+    {"@id": "urn:ngm:class:privacy-enhancing-technologies", "label": "Privacy Enhancing Technologies"}
   ],
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",

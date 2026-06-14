@@ -51,7 +51,7 @@ public:: true
       {"@id": "urn:ngm:class:machine-learning-algorithm", "label": "Machine Learning Algorithm"}
     ],
     "supports": [
-      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine-Tuning"},
+      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine Tuning"},
       {"@id": "urn:ngm:class:model-quantization", "label": "Model Quantization"}
     ],
     "contrastsWith": [

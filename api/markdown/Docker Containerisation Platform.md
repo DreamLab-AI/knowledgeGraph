@@ -55,7 +55,7 @@ elevatedFrom:: [[Docker]]
     "supports": [
       {"@id": "urn:ngm:class:machine-learning-discipline-pipeline", "label": "Machine Learning Pipeline"},
       {"@id": "urn:ngm:class:software-engineering", "label": "Software Engineering"},
-      {"@id": "urn:ngm:class:model-ops", "label": "Model Ops"},
+      {"@id": "urn:ngm:class:model-ops", "label": "ModelOps"},
       {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"}
     ],
     "standardizedBy": [

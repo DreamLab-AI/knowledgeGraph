@@ -30,7 +30,7 @@
     "relatedTo": [
       {
         "id": "urn:ngm:class:etsi-metaverse-domain-model",
-        "label": "ETSI Metaverse Domain Model"
+        "label": "Etsi Metaverse Domain Model"
       },
       {
         "id": "urn:ngm:class:data-layer",

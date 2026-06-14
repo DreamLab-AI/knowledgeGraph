@@ -26,7 +26,7 @@ public:: true
   "subClassOf": [{"@id": "urn:ngm:class:neural-network", "label": "Neural Network"}],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:safety-and-alignment", "label": "Safety and Alignment"},
+      {"@id": "urn:ngm:class:safety-and-alignment", "label": "Safety and alignment"},
       {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
     ]
   },

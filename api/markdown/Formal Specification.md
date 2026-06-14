@@ -25,7 +25,7 @@ public:: true
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:infra-software-engineering", "label": "Software Engineering"}],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:domain-ontology", "label": "Domain Ontology"}, {"@id": "urn:ngm:class:ai-research-area", "label": "Formal Methods Domain"}]
+    "relatedTo": [{"@id": "urn:ngm:class:domain-ontology", "label": "Domain Ontology"}, {"@id": "urn:ngm:class:ai-research-area", "label": "AI Research Area"}]
   },
   "quality": 0.72
 }

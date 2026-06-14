@@ -605,7 +605,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:rust-systems-programming-language",
-        "label": "Rust"
+        "label": "Rust Systems Programming Language"
       }
     ],
     "relatedTo": [
@@ -615,7 +615,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:autonomous-vehicle",
-        "label": "Autonomous Vehicles"
+        "label": "Autonomous Vehicle"
       },
       {
         "@id": "urn:ngm:class:digital-manufacturing",
@@ -635,7 +635,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning"
+        "label": "Machine Learning Discipline"
       }
     ],
     "supports": [
@@ -653,7 +653,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:industrial-automation",
-        "label": "Industrial Automation"
+        "label": "IndustrialAutomation"
       },
       {
         "@id": "urn:ngm:class:space-robotics",

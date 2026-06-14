@@ -57,7 +57,7 @@ public:: true
       {"@id": "urn:ngm:class:instruction-following", "label": "Instruction Following"}
     ],
     "supports": [
-      {"@id": "urn:ngm:class:human-in-the-loop", "label": "Human-in-the-Loop"},
+      {"@id": "urn:ngm:class:human-in-the-loop", "label": "Human in the Loop"},
       {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"}
     ],
     "bridgesTo": [

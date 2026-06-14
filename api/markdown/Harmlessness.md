@@ -70,7 +70,7 @@ public:: true
       {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:constitutional-ai-training-methodology", "label": "Constitutional AI"},
+      {"@id": "urn:ngm:class:constitutional-ai-training-methodology", "label": "Constitutional AI Training Methodology"},
       {"@id": "urn:ngm:class:reinforcement-learning-from-human-feedback", "label": "Reinforcement Learning from Human Feedback"}
     ],
     "contrastsWith": [

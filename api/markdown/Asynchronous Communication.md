@@ -39,7 +39,7 @@
     "uses": [
       {"@id": "urn:ngm:class:message-queue", "label": "Message Queue"},
       {"@id": "urn:ngm:class:message-broker", "label": "Message Broker"},
-      {"@id": "urn:ngm:class:publish-subscribe-pattern", "label": "Publish Subscribe Pattern"},
+      {"@id": "urn:ngm:class:publish-subscribe-pattern", "label": "Publish-Subscribe Pattern"},
       {"@id": "urn:ngm:class:protocol-buffers", "label": "Protocol Buffers"}
     ],
     "supports": [

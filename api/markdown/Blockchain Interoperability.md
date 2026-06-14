@@ -529,7 +529,7 @@ alias:: BC-0440-blockchain-interoperability
     },
     {
       "@id": "urn:ngm:class:cross-chain-communication",
-      "label": "Cross Chain Communication"
+      "label": "Cross-Chain Communication"
     }
   ],
   "relations": {
@@ -684,7 +684,7 @@ alias:: BC-0440-blockchain-interoperability
       },
       {
         "@id": "urn:ngm:class:zk-snarks",
-        "label": "ZK-SNARK"
+        "label": "ZK-SNARKs"
       }
     ],
     "relatedTo": [
@@ -742,7 +742,7 @@ alias:: BC-0440-blockchain-interoperability
       },
       {
         "@id": "urn:ngm:class:rollup",
-        "label": "Rollups"
+        "label": "Rollup"
       },
       {
         "@id": "urn:ngm:class:wormhole",
@@ -776,7 +776,7 @@ alias:: BC-0440-blockchain-interoperability
       },
       {
         "@id": "urn:ngm:class:tokenised-real-world-asset-transfer",
-        "label": "Tokenised Real-World Asset Transfer"
+        "label": "Tokenised Real World Asset Transfer"
       },
       {
         "@id": "urn:ngm:class:wrapped-token",

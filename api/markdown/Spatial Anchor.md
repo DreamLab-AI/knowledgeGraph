@@ -124,7 +124,7 @@ public:: true
     },
     {
       "@id": "urn:ngm:class:ar-scene-graph",
-      "label": "AR Scene Graph"
+      "label": "Ar Scene Graph"
     }
   ],
   "relations": {
@@ -171,21 +171,21 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:physical-virtual-registration",
-        "label": "Physical-Virtual Registration"
+        "label": "Physical Virtual Registration"
       },
       {
         "@id": "urn:ngm:class:shared-ar-experiences",
-        "label": "Shared AR Experiences"
+        "label": "Shared Ar Experiences"
       }
     ],
     "partOf": [
       {
         "@id": "urn:ngm:class:ar-scene-graph",
-        "label": "AR Scene Graph"
+        "label": "Ar Scene Graph"
       },
       {
         "@id": "urn:ngm:class:spatial-computing",
-        "label": "Spatial Computing System"
+        "label": "Spatial Computing"
       }
     ]
   },

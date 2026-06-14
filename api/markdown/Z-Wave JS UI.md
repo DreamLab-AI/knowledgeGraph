@@ -23,7 +23,7 @@ public:: true
   "definition": "Z-Wave JS UI is an open-source application that wraps the Z-Wave JS driver to manage a Z-Wave mesh network of smart-home devices through a web interface and to bridge it to home-automation platforms via MQTT. It handles device inclusion, configuration, firmware updates, and network healing, exposing Z-Wave nodes as controllable entities. It matters as a primary integration path between Z-Wave hardware and Home Assistant.",
   "domain": "infrastructure",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:infra-software-engineering", "label": "Infrastructure Software Engineering"}],
+  "subClassOf": [{"@id": "urn:ngm:class:infra-software-engineering", "label": "Software Engineering"}],
   "relations": {
     "relatedTo": [{"@id": "urn:ngm:class:home-assistant", "label": "Home Assistant"}]
   },

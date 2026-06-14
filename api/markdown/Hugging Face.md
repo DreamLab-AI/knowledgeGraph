@@ -41,7 +41,7 @@ alias:: HuggingFace
     "hasPart": [
       {"@id": "urn:ngm:class:transformers-library", "label": "Transformers Library"},
       {"@id": "urn:ngm:class:diffusers-library", "label": "Diffusers Library"},
-      {"@id": "urn:ngm:class:hugging-face-hub", "label": "Hugging Face Hub"},
+      {"@id": "urn:ngm:class:hugging-face-hub", "label": "HuggingFace Hub"},
       {"@id": "urn:ngm:class:parameter-efficient-fine-tuning", "label": "Parameter-Efficient Fine-Tuning"}
     ],
     "enables": [

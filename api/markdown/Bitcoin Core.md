@@ -54,7 +54,7 @@ public:: true
     ],
     "dependsOn": [
       {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-network", "label": "Bitcoin Network"},
-      {"@id": "urn:ngm:class:open-source-software", "label": "Open-Source Software"}
+      {"@id": "urn:ngm:class:open-source-software", "label": "Open Source Software"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-mining", "label": "Bitcoin Mining"},
@@ -65,7 +65,7 @@ public:: true
     ],
     "contrastsWith": [
       {"@id": "urn:ngm:class:ethereum", "label": "Ethereum"},
-      {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof Of Stake"}
+      {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof of Stake"}
     ],
     "bridgesTo": [
       {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"},

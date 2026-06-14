@@ -27,13 +27,13 @@ public:: true
   "relations": {
     "uses": [
       {"@id": "urn:ngm:class:mining-pool", "label": "Mining Pool"},
-      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof of Work"}
+      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:censorship-resistance", "label": "Censorship Resistance"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol", "label": "Bitcoin"}
+      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol", "label": "Bitcoin Proof-of-Work Protocol"}
     ]
   },
   "quality": 0.8

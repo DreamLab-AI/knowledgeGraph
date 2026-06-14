@@ -32,7 +32,7 @@ public:: true
     ],
     "enables": [
       {"@id": "urn:ngm:class:inclusive-design", "label": "Inclusive Design"},
-      {"@id": "urn:ngm:class:digital-technology-access-equity", "label": "Equity"},
+      {"@id": "urn:ngm:class:digital-technology-access-equity", "label": "Digital Technology Access Equity"},
       {"@id": "urn:ngm:class:community-governance", "label": "Community Governance"}
     ],
     "relatedTo": [

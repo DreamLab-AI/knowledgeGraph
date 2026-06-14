@@ -71,7 +71,7 @@ public:: true
     ],
     "standardizedBy": [
       {"@id": "urn:ngm:class:nist", "label": "NIST"},
-      {"@id": "urn:ngm:class:iso-iec-18033", "label": "ISO/IEC 18033"}
+      {"@id": "urn:ngm:class:iso-iec-18033", "label": "ISO-IEC 18033"}
     ],
     "contrastsWith": [
       {"@id": "urn:ngm:class:steganography", "label": "Steganography"},

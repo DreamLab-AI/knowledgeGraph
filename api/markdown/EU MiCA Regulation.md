@@ -74,7 +74,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:kyc-aml-compliance",
-        "label": "KYC AML Compliance"
+        "label": "KYC/AML Compliance"
       },
       {
         "@id": "urn:ngm:class:crypto-asset-service-provider",

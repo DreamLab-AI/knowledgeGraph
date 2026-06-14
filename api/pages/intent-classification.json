@@ -9,7 +9,7 @@
   "subClassOf": [
     {
       "id": "urn:ngm:class:nlptask",
-      "label": "NLP Task"
+      "label": "NLPTask"
     }
   ],
   "entityType": "Class",

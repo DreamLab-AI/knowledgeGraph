@@ -23,11 +23,11 @@ public:: true
   "definition": "A data model is an abstract specification of how data elements are structured, related and constrained within a domain or system. It defines entities, attributes, relationships and integrity rules at conceptual, logical or physical levels of abstraction. Data models are prerequisites for metadata standards and for designing storage, exchange and querying of data.",
   "domain": "data",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:infra-data-management", "label": "Infrastructure Data Management"}],
+  "subClassOf": [{"@id": "urn:ngm:class:infra-data-management", "label": "Data Management"}],
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:metadata-standard", "label": "Metadata Standard"},
-      {"@id": "urn:ngm:class:data-management", "label": "Data Management Domain"}
+      {"@id": "urn:ngm:class:data-management", "label": "Data Management"}
     ]
   },
   "quality": 0.72

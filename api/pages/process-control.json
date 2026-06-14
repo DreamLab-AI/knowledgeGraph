@@ -30,7 +30,7 @@
     "relatedTo": [
       {
         "id": "urn:ngm:class:model-based-control",
-        "label": "Model-Based Control"
+        "label": "Model Based Control"
       },
       {
         "id": "urn:ngm:class:feedback-loop",

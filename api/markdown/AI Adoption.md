@@ -475,7 +475,7 @@ public:: true
     "bridgesTo": [
       {
         "@id": "urn:ngm:class:organizational-change",
-        "label": "Organisational Change"
+        "label": "Organizational Change"
       }
     ],
     "hasPart": [
@@ -617,7 +617,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning"
+        "label": "Machine Learning Discipline"
       },
       {
         "@id": "urn:ngm:class:natural-language-processing",
@@ -683,11 +683,11 @@ public:: true
     "standardizedBy": [
       {
         "@id": "urn:ngm:class:iso-iec-42001-ai-management-system",
-        "label": "ISO/IEC 42001 AI Management System"
+        "label": "ISO IEC 42001 AI Management System"
       },
       {
         "@id": "urn:ngm:class:nist-ai-rmf",
-        "label": "NIST AI Risk Management Framework"
+        "label": "NIST AI RMF"
       },
       {
         "@id": "urn:ngm:class:oecd-ai-principles",
@@ -703,7 +703,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
-        "label": "EU AI Act"
+        "label": "EU AI Act Regulatory Instrument"
       }
     ]
   },

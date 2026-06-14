@@ -95,19 +95,19 @@ public:: true
     "hasPart": [
       {
         "@id": "urn:ngm:class:etsi-domain-ai-creative-media",
-        "label": "ETSI Domain AI Creative Media"
+        "label": "ETSI Domain AI + Creative Media"
       },
       {
         "@id": "urn:ngm:class:etsi-domain-ai-data-mgmt",
-        "label": "ETSI Domain AI Data Mgmt"
+        "label": "ETSI Domain AI + Data Mgmt"
       },
       {
         "@id": "urn:ngm:class:etsi-domain-ai-governance",
-        "label": "ETSI Domain AI Governance"
+        "label": "ETSI Domain AI + Governance"
       },
       {
         "@id": "urn:ngm:class:etsi-domain-ai-human-interface",
-        "label": "ETSI Domain AI Human Interface"
+        "label": "ETSI Domain AI + Human Interface"
       }
     ],
     "enables": [

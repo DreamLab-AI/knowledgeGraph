@@ -26,7 +26,7 @@ public:: true
   "subClassOf": [{"@id": "urn:ngm:class:control-system", "label": "Control System"}],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:real-time", "label": "Real-Time"}
+      {"@id": "urn:ngm:class:real-time", "label": "Real Time"}
     ]
   },
   "quality": 0.72

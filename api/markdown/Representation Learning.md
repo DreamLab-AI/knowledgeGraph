@@ -27,7 +27,7 @@ public:: true
   "relations": {
     "uses": [
       {"@id": "urn:ngm:class:embeddings", "label": "Embeddings"},
-      {"@id": "urn:ngm:class:neural-network-latent-space", "label": "Latent Space"},
+      {"@id": "urn:ngm:class:neural-network-latent-space", "label": "Neural Network Latent Space"},
       {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
       {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"},
       {"@id": "urn:ngm:class:autoencoder", "label": "Autoencoder"},

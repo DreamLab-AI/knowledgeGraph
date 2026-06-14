@@ -87,7 +87,7 @@ public:: true
     ],
     "uses": [
       {"@id": "urn:ngm:class:cryptography", "label": "Cryptography"},
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain Domain"}
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:asset-registry", "label": "Asset Registry"},

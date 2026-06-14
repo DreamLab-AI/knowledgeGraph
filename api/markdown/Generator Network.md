@@ -26,7 +26,7 @@ public:: true
   "subClassOf": [{"@id": "urn:ngm:class:generative-model", "label": "Generative Model"}],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:neural-network-latent-space", "label": "latent space"},
+      {"@id": "urn:ngm:class:neural-network-latent-space", "label": "Neural Network Latent Space"},
       {"@id": "urn:ngm:class:neural-network-architecture", "label": "Neural Network Architecture"},
       {"@id": "urn:ngm:class:generative-adversarial-network", "label": "Generative Adversarial Network"}
     ],

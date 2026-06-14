@@ -23,7 +23,7 @@ public:: true
   "definition": "A risk assessment engine is a software component that automatically evaluates the risk associated with transactions, shipments, or entities by applying rules, statistical models, or machine learning to available data. In customs and trade systems it scores consignments to prioritise inspection while expediting low-risk flows. It enables consistent, scalable, and auditable risk-based decision making.",
   "domain": "supply-chain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:infra-software-engineering", "label": "Infrastructure Software Engineering"}],
+  "subClassOf": [{"@id": "urn:ngm:class:infra-software-engineering", "label": "Software Engineering"}],
   "relations": {
     "relatedTo": [{"@id": "urn:ngm:class:customs-trade-facilitation", "label": "Customs Trade Facilitation"}, {"@id": "urn:ngm:class:risk-assessment-methodology", "label": "Risk Assessment Methodology"}]
   },

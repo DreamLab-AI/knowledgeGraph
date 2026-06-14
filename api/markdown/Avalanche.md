@@ -40,7 +40,7 @@ public:: true
     "enables": [
       {"@id": "urn:ngm:class:decentralized-finance-de-fi", "label": "Decentralized Finance (DeFi)"},
       {"@id": "urn:ngm:class:cross-chain-interoperability", "label": "Cross-Chain Interoperability"},
-      {"@id": "urn:ngm:class:decentralized-application", "label": "Decentralised Application"},
+      {"@id": "urn:ngm:class:decentralized-application", "label": "Decentralized Application"},
       {"@id": "urn:ngm:class:tokenisation", "label": "Tokenisation"}
     ],
     "requires": [

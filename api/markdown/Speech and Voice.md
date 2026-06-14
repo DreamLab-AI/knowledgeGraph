@@ -363,7 +363,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:language-model",
-        "label": "Language Models"
+        "label": "Language Model"
       },
       {
         "@id": "urn:ngm:class:low-latency-computing",
@@ -371,7 +371,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:neural-network",
-        "label": "Neural Networks"
+        "label": "Neural Network"
       },
       {
         "@id": "urn:ngm:class:speech-corpus",
@@ -389,7 +389,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:voice-assistant",
-        "label": "Voice Assistants"
+        "label": "Voice Assistant"
       },
       {
         "@id": "urn:ngm:class:voice-security",
@@ -413,7 +413,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:real-time-translation",
-        "label": "Real-Time Translation"
+        "label": "Real-time Translation"
       }
     ],
     "implements": [
@@ -457,7 +457,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:rest-api",
-        "label": "REST APIs"
+        "label": "REST API"
       },
       {
         "@id": "urn:ngm:class:telephony",

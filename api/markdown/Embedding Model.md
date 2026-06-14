@@ -60,7 +60,7 @@ public:: true
     ],
     "requires": [
       {"@id": "urn:ngm:class:gpu-computing", "label": "GPU Computing"},
-      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine-Tuning"}
+      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine Tuning"}
     ],
     "contrastsWith": [
       {"@id": "urn:ngm:class:sparse-representation", "label": "Sparse Representation"},

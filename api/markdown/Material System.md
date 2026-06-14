@@ -157,7 +157,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:iso-standards",
-        "label": "ISO Standards"
+        "label": "Iso Standards"
       }
     ],
     "contrastsWith": [

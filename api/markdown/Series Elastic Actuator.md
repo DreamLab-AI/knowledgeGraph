@@ -55,7 +55,7 @@ public:: true
       {"@id": "urn:ngm:class:position-sensor", "label": "Position Sensor"},
       {"@id": "urn:ngm:class:torque-control", "label": "Torque Control"},
       {"@id": "urn:ngm:class:hookes-law", "label": "Hookes Law"},
-      {"@id": "urn:ngm:class:pid-controller", "label": "PID Controller"}
+      {"@id": "urn:ngm:class:pid-controller", "label": "Pid Controller"}
     ],
     "supports": [
       {"@id": "urn:ngm:class:impedance-control", "label": "Impedance Control"},

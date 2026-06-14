@@ -162,7 +162,7 @@ public:: true
       {"@id": "urn:ngm:class:data-management", "label": "Data Management"}
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:record-keeping-system", "label": "Record-Keeping System"}
+      {"@id": "urn:ngm:class:record-keeping-system", "label": "Record Keeping System"}
     ]
   },
   "provenance": {

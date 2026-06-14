@@ -54,8 +54,8 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:gps", "label": "GPS"},
-      {"@id": "urn:ngm:class:lidar", "label": "LiDAR"},
+      {"@id": "urn:ngm:class:gps", "label": "Gps"},
+      {"@id": "urn:ngm:class:lidar", "label": "Lidar"},
       {"@id": "urn:ngm:class:remote-sensing", "label": "Remote Sensing"},
       {"@id": "urn:ngm:class:geographic-information-system", "label": "Geographic Information System"},
       {"@id": "urn:ngm:class:geospatial-information", "label": "Geospatial Information"},
@@ -63,7 +63,7 @@ public:: true
     ],
     "enables": [
       {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
-      {"@id": "urn:ngm:class:venue-tethered-immersive-experience", "label": "Location Based Experience"},
+      {"@id": "urn:ngm:class:venue-tethered-immersive-experience", "label": "Venue-Tethered Immersive Experience"},
       {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"},
       {"@id": "urn:ngm:class:smart-city", "label": "Smart City"},
       {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"}

@@ -45,7 +45,7 @@ public:: true
       {"@id": "urn:ngm:class:instruction-tuning", "label": "Instruction Tuning"},
       {"@id": "urn:ngm:class:rlhf", "label": "RLHF"},
       {"@id": "urn:ngm:class:large-language-model", "label": "Large Language Model"},
-      {"@id": "urn:ngm:class:supervised-fine-tuning", "label": "Supervised Fine-Tuning"}
+      {"@id": "urn:ngm:class:supervised-fine-tuning", "label": "Supervised Fine Tuning"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:tool-use", "label": "Tool Use"},
@@ -77,7 +77,7 @@ public:: true
       {"@id": "urn:ngm:class:helpfulness", "label": "Helpfulness"}
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human-Computer Interaction"},
+      {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human Computer Interaction"},
       {"@id": "urn:ngm:class:robotic-task-planning", "label": "Robotic Task Planning"}
     ]
   },

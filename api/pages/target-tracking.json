@@ -21,7 +21,7 @@
     "enables": [
       {
         "id": "urn:ngm:class:human-pose-slam-capture-system",
-        "label": "Human tracking and SLAM capture"
+        "label": "Human Pose SLAM Capture System"
       },
       {
         "id": "urn:ngm:class:anomaly-detection",

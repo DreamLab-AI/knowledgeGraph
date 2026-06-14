@@ -25,7 +25,7 @@ public:: true
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:control-system", "label": "Control System"}],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:embedded-systems", "label": "Embedded Systems Domain"}, {"@id": "urn:ngm:class:control-system", "label": "Control System"}]
+    "relatedTo": [{"@id": "urn:ngm:class:embedded-systems", "label": "Embedded Systems"}, {"@id": "urn:ngm:class:control-system", "label": "Control System"}]
   },
   "quality": 0.72
 }

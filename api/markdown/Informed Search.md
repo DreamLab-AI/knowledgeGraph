@@ -54,7 +54,7 @@ public:: true
   ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"}
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:machine-learning-discipline-technique", "label": "Machine Learning Technique"}

@@ -388,11 +388,11 @@ public:: true
     },
     {
       "@id": "urn:ngm:class:bc-defi-and-economics",
-      "label": "BC DeFi And Economics"
+      "label": "DeFi and Economics"
     },
     {
       "@id": "urn:ngm:class:bc-defi-and-economics",
-      "label": "BC DeFi And Economics"
+      "label": "DeFi and Economics"
     }
   ],
   "relations": {
@@ -433,7 +433,7 @@ public:: true
     "requires": [
       {
         "@id": "urn:ngm:class:erc-20-tokens",
-        "label": "ERC-20 Token"
+        "label": "ERC-20 Tokens"
       },
       {
         "@id": "urn:ngm:class:price-oracle",
@@ -493,7 +493,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:stable-swap-invariant",
-        "label": "StableSwap Invariant"
+        "label": "Stable Swap Invariant"
       },
       {
         "@id": "urn:ngm:class:weighted-pool-invariant",

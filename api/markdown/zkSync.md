@@ -73,7 +73,7 @@ public:: true
   "subClassOf": [
     {
       "@id": "urn:ngm:class:bc-network-component",
-      "label": "Bc Network Component"
+      "label": "Network Component"
     }
   ],
   "relations": {
@@ -108,7 +108,7 @@ public:: true
     "requires": [
       {
         "@id": "urn:ngm:class:ethereum-smart-contract-platform",
-        "label": "Ethereum"
+        "label": "Ethereum Smart Contract Platform"
       },
       {
         "@id": "urn:ngm:class:rollup",
@@ -116,7 +116,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:zero-knowledge-proof",
-        "label": "Zero Knowledge Proof"
+        "label": "Zero-Knowledge Proof"
       },
       {
         "@id": "urn:ngm:class:zk-prover",
@@ -130,7 +130,7 @@ public:: true
     "enables": [
       {
         "@id": "urn:ngm:class:decentralised-finance",
-        "label": "Decentralised Finance Domain"
+        "label": "Decentralised Finance"
       },
       {
         "@id": "urn:ngm:class:low-cost-blockchain-transaction",
@@ -204,7 +204,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:starknet",
-        "label": "StarkNet"
+        "label": "Starknet"
       },
       {
         "@id": "urn:ngm:class:optimistic-rollup",

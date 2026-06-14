@@ -89,7 +89,7 @@ public:: true
     "requires": [
       {
         "@id": "urn:ngm:class:notification-system",
-        "label": "Notification Systems"
+        "label": "Notification System"
       },
       {
         "@id": "urn:ngm:class:presence-detection",

@@ -93,7 +93,7 @@ public:: true
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:library-science", "label": "Library Science"},
-      {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human-Computer Interaction"},
+      {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human Computer Interaction"},
       {"@id": "urn:ngm:class:content-management-system", "label": "Content Management System"}
     ]
   },

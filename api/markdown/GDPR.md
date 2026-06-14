@@ -44,7 +44,7 @@ public:: true
       {"@id": "urn:ngm:class:data-protection-officer", "label": "Data Protection Officer"}
     ],
     "enables": [
-      {"@id": "urn:ngm:class:privacy-by-design", "label": "Privacy by Design"},
+      {"@id": "urn:ngm:class:privacy-by-design", "label": "Privacy By Design"},
       {"@id": "urn:ngm:class:privacy-impact-assessment", "label": "Privacy Impact Assessment"},
       {"@id": "urn:ngm:class:accountability", "label": "Accountability"},
       {"@id": "urn:ngm:class:data-subject-rights", "label": "Data Subject Rights"}

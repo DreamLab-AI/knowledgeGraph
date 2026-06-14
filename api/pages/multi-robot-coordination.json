@@ -30,7 +30,7 @@
     "relatedTo": [
       {
         "id": "urn:ngm:class:gps",
-        "label": "GPS"
+        "label": "Gps"
       },
       {
         "id": "urn:ngm:class:task-planning",

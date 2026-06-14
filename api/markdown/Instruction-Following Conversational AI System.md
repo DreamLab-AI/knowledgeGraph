@@ -55,17 +55,17 @@ elevatedFrom:: [[ChatGPT]]
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:gpt", "label": "GPT"},
-      {"@id": "urn:ngm:class:gemini-multimodal-language-model", "label": "Gemini"},
-      {"@id": "urn:ngm:class:constitutional-ai-training-methodology-language-model-family", "label": "Anthropic Claude"},
+      {"@id": "urn:ngm:class:gemini-multimodal-language-model", "label": "Gemini Multimodal Language Model"},
+      {"@id": "urn:ngm:class:constitutional-ai-training-methodology-language-model-family", "label": "Constitutional AI Language Model Family"},
       {"@id": "urn:ngm:class:hallucination-in-language-models", "label": "Hallucination in Language Models"},
       {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"}
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:eu-ai-act-regulatory-instrument", "label": "EU AI Act"},
-      {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human-Computer Interaction"}
+      {"@id": "urn:ngm:class:eu-ai-act-regulatory-instrument", "label": "EU AI Act Regulatory Instrument"},
+      {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human Computer Interaction"}
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:openai-research-organisation", "label": "OpenAI"}
+      {"@id": "urn:ngm:class:openai-research-organisation", "label": "OpenAI Research Organisation"}
     ],
     "supports": [
       {"@id": "urn:ngm:class:code-generation", "label": "Code Generation"},

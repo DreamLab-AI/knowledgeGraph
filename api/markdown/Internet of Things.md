@@ -48,9 +48,9 @@ alias:: InternetOfThings
     ],
     "enables": [
       {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
-      {"@id": "urn:ngm:class:telemetry-and-analytics", "label": "Telemetry and Analytics"},
+      {"@id": "urn:ngm:class:telemetry-and-analytics", "label": "Telemetry & Analytics"},
       {"@id": "urn:ngm:class:smart-city", "label": "Smart City"},
-      {"@id": "urn:ngm:class:industrial-automation", "label": "Industrial Automation"},
+      {"@id": "urn:ngm:class:industrial-automation", "label": "IndustrialAutomation"},
       {"@id": "urn:ngm:class:predictive-maintenance", "label": "Predictive Maintenance"}
     ],
     "requires": [
@@ -77,7 +77,7 @@ alias:: InternetOfThings
       {"@id": "urn:ngm:class:traditional-scada", "label": "Traditional SCADA"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:cyber-physical-systems", "label": "Cyber-Physical Systems"},
+      {"@id": "urn:ngm:class:cyber-physical-systems", "label": "Cyber Physical Systems"},
       {"@id": "urn:ngm:class:5g", "label": "5G"},
       {"@id": "urn:ngm:class:fog-computing", "label": "Fog Computing"},
       {"@id": "urn:ngm:class:device-management", "label": "Device Management"}

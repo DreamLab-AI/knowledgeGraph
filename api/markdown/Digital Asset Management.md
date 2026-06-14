@@ -171,7 +171,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:self-custody",
-        "label": "Self Custody"
+        "label": "Self-Custody"
       }
     ],
     "bridgesTo": [
@@ -187,7 +187,7 @@ public:: true
     "relatedTo": [
       {
         "@id": "urn:ngm:class:exchange-traded-fund",
-        "label": "Exchange Traded Fund"
+        "label": "Exchange-Traded Fund"
       },
       {
         "@id": "urn:ngm:class:staking",

@@ -71,7 +71,7 @@ public:: true
   "maturity": "draft",
   "subClassOf": {
     "@id": "urn:ngm:class:sc-content-and-assets",
-    "label": "Sc Content And Assets"
+    "label": "Content and Assets"
   },
   "relations": {
     "hasPart": [
@@ -193,7 +193,7 @@ public:: true
     "contrastsWith": [
       {
         "@id": "urn:ngm:class:non-player-character",
-        "label": "Non-Player Character"
+        "label": "Non Player Character"
       },
       {
         "@id": "urn:ngm:class:static-user-profile",

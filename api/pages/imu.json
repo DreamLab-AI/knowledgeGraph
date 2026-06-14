@@ -89,7 +89,7 @@
     "contrastsWith": [
       {
         "id": "urn:ngm:class:gps",
-        "label": "GPS"
+        "label": "Gps"
       },
       {
         "id": "urn:ngm:class:optical-tracking",
@@ -177,7 +177,7 @@
     "relatedTo": [
       {
         "id": "urn:ngm:class:lidar",
-        "label": "LiDAR"
+        "label": "Lidar"
       },
       {
         "id": "urn:ngm:class:motion-sickness",

@@ -23,7 +23,7 @@ public:: true
   "definition": "A coordinate frame is a reference system defined by an origin and a set of axes against which positions, orientations, and motions are measured. In robotics and perception, multiple frames (world, base, sensor, tool) are related by rigid-body transforms so that data from different sources can be expressed consistently. Correct frame management is essential for sensor fusion, motion planning, and collision checking.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:robo-navigation-and-planning", "label": "Robotics Navigation and Planning"}],
+  "subClassOf": [{"@id": "urn:ngm:class:robo-navigation-and-planning", "label": "Navigation and Planning"}],
   "relations": {
     "relatedTo": [{"@id": "urn:ngm:class:exteroceptive-sensor", "label": "Exteroceptive Sensor"}, {"@id": "urn:ngm:class:collision-detection", "label": "Collision Detection"}]
   },

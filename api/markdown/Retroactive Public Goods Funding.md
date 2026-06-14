@@ -33,7 +33,7 @@ public:: true
   "subClassOf": [
     {
       "@id": "urn:ngm:class:bc-defi-and-economics",
-      "label": "Bc Defi And Economics"
+      "label": "DeFi and Economics"
     }
   ],
   "relations": {
@@ -46,7 +46,7 @@ public:: true
       {"@id": "urn:ngm:class:treasury-management", "label": "Treasury Management"},
       {"@id": "urn:ngm:class:impact-attestation", "label": "Impact Attestation"},
       {"@id": "urn:ngm:class:quadratic-voting", "label": "Quadratic Voting"},
-      {"@id": "urn:ngm:class:on-chain-governance", "label": "On-Chain Governance"}
+      {"@id": "urn:ngm:class:on-chain-governance", "label": "On-chain Governance"}
     ],
     "requires": [
       {"@id": "urn:ngm:class:impact-evaluation", "label": "Impact Evaluation"},

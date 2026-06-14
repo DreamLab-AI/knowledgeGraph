@@ -311,7 +311,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:open-source-ai",
-        "label": "Open Source AI"
+        "label": "Open-Source AI"
       },
       {
         "@id": "urn:ngm:class:talent-concentration",
@@ -337,7 +337,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:regulatory-framework",
-        "label": "Regulatory Frameworks"
+        "label": "Regulatory Framework"
       },
       {
         "@id": "urn:ngm:class:cloud-infrastructure",
@@ -407,11 +407,11 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:large-scale-pretrained-foundation-model",
-        "label": "Foundation Models"
+        "label": "Large-Scale Pretrained Foundation Model"
       },
       {
         "@id": "urn:ngm:class:mixture-of-experts-architecture",
-        "label": "Mixture of Experts"
+        "label": "Mixture-of-Experts Architecture"
       },
       {
         "@id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
@@ -457,7 +457,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:openai-research-organisation",
-        "label": "OpenAI"
+        "label": "OpenAI Research Organisation"
       }
     ],
     "supports": [
@@ -493,11 +493,11 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:nist-ai-rmf",
-        "label": "NIST AI Risk Management Framework"
+        "label": "NIST AI RMF"
       },
       {
         "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
-        "label": "EU AI Act"
+        "label": "EU AI Act Regulatory Instrument"
       }
     ],
     "bridgesTo": [

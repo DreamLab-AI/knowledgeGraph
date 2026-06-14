@@ -33,7 +33,7 @@ public:: true
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-network-and-comms",
-      "label": "Network and Communications"
+      "label": "Network and Communication"
     }
   ],
   "relations": {
@@ -41,8 +41,8 @@ public:: true
       {"@id": "urn:ngm:class:internet-of-things", "label": "Internet of Things"},
       {"@id": "urn:ngm:class:sensor-data", "label": "Sensor Data"},
       {"@id": "urn:ngm:class:real-time-data-streaming", "label": "Real-Time Data Streaming"},
-      {"@id": "urn:ngm:class:telemetry-and-analytics", "label": "Telemetry and Analytics"},
-      {"@id": "urn:ngm:class:event-driven-architecture", "label": "Event-Driven Architecture"}
+      {"@id": "urn:ngm:class:telemetry-and-analytics", "label": "Telemetry & Analytics"},
+      {"@id": "urn:ngm:class:event-driven-architecture", "label": "Event Driven Architecture"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:communication-protocol", "label": "Communication Protocol"},

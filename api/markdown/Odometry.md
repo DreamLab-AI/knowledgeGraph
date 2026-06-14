@@ -157,7 +157,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:kinematic-model",
-        "label": "Kinematic Model"
+        "label": "KinematicModel"
       }
     ],
     "enables": [
@@ -167,7 +167,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:rb-1013-localization",
-        "label": "RB-1013-localization"
+        "label": "RB 1013 localization"
       },
       {
         "@id": "urn:ngm:class:robot-pose",
@@ -199,7 +199,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:lidar",
-        "label": "LiDAR"
+        "label": "Lidar"
       }
     ],
     "supports": [

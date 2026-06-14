@@ -43,7 +43,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:quantum-computation-paradigm",
-        "label": "Quantum Computing"
+        "label": "Quantum Computation Paradigm"
       }
     ],
     "contrastsWith": [

@@ -46,7 +46,7 @@ alias:: Real Time Control
       {"@id": "urn:ngm:class:motion-control", "label": "Motion Control"},
       {"@id": "urn:ngm:class:closed-loop-control", "label": "Closed-Loop Control"},
       {"@id": "urn:ngm:class:autonomous-systems", "label": "Autonomous Systems"},
-      {"@id": "urn:ngm:class:industrial-automation", "label": "Industrial Automation"}
+      {"@id": "urn:ngm:class:industrial-automation", "label": "IndustrialAutomation"}
     ],
     "requires": [
       {"@id": "urn:ngm:class:task-scheduling", "label": "Task Scheduling"},

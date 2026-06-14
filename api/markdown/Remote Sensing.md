@@ -23,7 +23,7 @@ public:: true
   "definition": "Remote sensing is the acquisition of information about physical objects or phenomena from a distance, typically using sensors mounted on satellites, aircraft, drones, or ground-based platforms, without direct physical contact with the subject. It encompasses passive sensing (measuring reflected or emitted electromagnetic radiation across optical, infrared, and microwave bands) and active sensing (radar and LiDAR, which emit and measure return signals). Remote sensing data underpins earth observation, environmental monitoring, precision agriculture, disaster response, urban planning, and military reconnaissance.",
   "domain": "spatial-computing",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:sc-platform-and-environment", "label": "Sc Platform And Environment"}],
+  "subClassOf": [{"@id": "urn:ngm:class:sc-platform-and-environment", "label": "Platform and Environment"}],
   "relations": {
     "hasPart": [
       {"@id": "urn:ngm:class:synthetic-aperture-radar", "label": "Synthetic Aperture Radar"},

@@ -25,7 +25,7 @@ public:: true
   "maturity": "experimental",
   "subClassOf": [{"@id": "urn:ngm:class:programming-language", "label": "Programming Language"}],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:rgb-and-client-side-validation", "label": "RGB and Client-Side Validation"}]
+    "relatedTo": [{"@id": "urn:ngm:class:rgb-and-client-side-validation", "label": "RGB and Client Side Validation"}]
   },
   "quality": 0.72
 }

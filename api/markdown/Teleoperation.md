@@ -190,7 +190,7 @@ public:: true
     ],
     "bridgesTo": [
       {"@id": "urn:ngm:class:immersive-control", "label": "Immersive Control"},
-      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse Domain"},
+      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"},
       {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
     ],
     "relatedTo": [

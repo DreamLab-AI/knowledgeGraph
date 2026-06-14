@@ -26,7 +26,7 @@ public:: true
   "subClassOf": [{"@id": "urn:ngm:class:ai-governance-framework", "label": "AI Governance Framework"}],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:asia-pacific-regulation", "label": "Asia-Pacific Regulation"}
+      {"@id": "urn:ngm:class:asia-pacific-regulation", "label": "Asia Pacific Regulation"}
     ]
   },
   "quality": 0.72

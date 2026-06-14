@@ -213,7 +213,7 @@ public:: true
     "bridgesTo": [
       {
         "@id": "urn:ngm:class:virtual-economy",
-        "label": "Virtual Economy Domain"
+        "label": "Virtual Economy"
       },
       {
         "@id": "urn:ngm:class:decentralised-finance",

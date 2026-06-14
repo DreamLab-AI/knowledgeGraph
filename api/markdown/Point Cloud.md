@@ -56,7 +56,7 @@ public:: true
     ],
     "requires": [
       {"@id": "urn:ngm:class:depth-sensing", "label": "Depth Sensing"},
-      {"@id": "urn:ngm:class:lidar", "label": "LiDAR"},
+      {"@id": "urn:ngm:class:lidar", "label": "Lidar"},
       {"@id": "urn:ngm:class:coordinate-system", "label": "Coordinate System"}
     ],
     "enables": [
@@ -93,7 +93,7 @@ public:: true
       {"@id": "urn:ngm:class:3-d-object-segmentation", "label": "3D Object Segmentation"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:structure-from-motion", "label": "Structure from Motion"},
+      {"@id": "urn:ngm:class:structure-from-motion", "label": "Structure-from-Motion"},
       {"@id": "urn:ngm:class:occupancy-mapping", "label": "Occupancy Mapping"},
       {"@id": "urn:ngm:class:geospatial-data", "label": "Geospatial Data"}
     ]

@@ -26,7 +26,7 @@ public:: true
   "subClassOf": [{"@id": "urn:ngm:class:standards-body", "label": "Standards Body"}],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:cryptography-security-and-privacy", "label": "Cryptography, Security and Privacy"},
+      {"@id": "urn:ngm:class:cryptography-security-and-privacy", "label": "Cryptography Security and Privacy"},
       {"@id": "urn:ngm:class:decentralized-identifiers", "label": "Decentralized Identifiers"}
     ]
   },

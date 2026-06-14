@@ -300,7 +300,7 @@ public:: true
     },
     {
       "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol",
-      "label": "Bitcoin"
+      "label": "Bitcoin Proof-of-Work Protocol"
     }
   ],
   "relations": {
@@ -315,7 +315,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:gini-coefficient",
-        "label": "GINI Coefficient"
+        "label": "Gini Coefficient"
       },
       {
         "@id": "urn:ngm:class:hodl-waves",
@@ -425,7 +425,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:gini-coefficient",
-        "label": "GINI Coefficient"
+        "label": "Gini Coefficient"
       },
       {
         "@id": "urn:ngm:class:hodl-waves",

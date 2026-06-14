@@ -525,7 +525,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:variational-autoencoders",
-        "label": "Variational Autoencoder"
+        "label": "Variational Autoencoders"
       },
       {
         "@id": "urn:ngm:class:transformers",
@@ -577,7 +577,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:intellectual-property-rights-framework",
-        "label": "Copyright"
+        "label": "Intellectual Property Rights Framework"
       },
       {
         "@id": "urn:ngm:class:deepfakes-and-fraudulent-content",
@@ -649,7 +649,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
-        "label": "EU AI Act"
+        "label": "EU AI Act Regulatory Instrument"
       }
     ],
     "bridgesTo": [

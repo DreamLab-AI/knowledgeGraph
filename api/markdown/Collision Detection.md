@@ -931,7 +931,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:autonomous-vehicle",
-        "label": "Autonomous Vehicles"
+        "label": "Autonomous Vehicle"
       },
       {
         "@id": "urn:ngm:class:cad-software",
@@ -965,7 +965,7 @@ public:: true
     "standardizedBy": [
       {
         "@id": "urn:ngm:class:iso-iec-18039",
-        "label": "ISO/IEC 18039"
+        "label": "ISO-IEC 18039"
       },
       {
         "@id": "urn:ngm:class:khronos-open-xr",

@@ -53,7 +53,7 @@ public:: true
     "implements": [
       {
         "@id": "urn:ngm:class:spatial-computing",
-        "label": "spatial-computing"
+        "label": "Spatial Computing"
       }
     ]
   },

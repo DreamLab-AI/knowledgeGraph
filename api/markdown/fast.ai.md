@@ -490,7 +490,7 @@ public:: true
     "hasPart": [
       {
         "@id": "urn:ngm:class:answer-ai",
-        "label": "Answer.AI"
+        "label": "Answer AI"
       },
       {
         "@id": "urn:ngm:class:callback-system",
@@ -610,7 +610,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:convolutional-neural-network",
-        "label": "Convolutional Neural Networks"
+        "label": "Convolutional Neural Network"
       },
       {
         "@id": "urn:ngm:class:cosine-annealing",
@@ -636,7 +636,7 @@ public:: true
     "relatedTo": [
       {
         "@id": "urn:ngm:class:answer-ai",
-        "label": "Answer.AI"
+        "label": "Answer AI"
       },
       {
         "@id": "urn:ngm:class:claudette",
@@ -664,7 +664,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:stable-diffusion-image-model",
-        "label": "Stable Diffusion"
+        "label": "Stable Diffusion Image Model"
       }
     ],
     "supports": [
@@ -694,7 +694,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:latent-diffusion-model-training",
-        "label": "Stable Diffusion Training"
+        "label": "Latent Diffusion Model Training"
       }
     ],
     "standardizedBy": [

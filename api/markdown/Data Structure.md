@@ -70,7 +70,7 @@ alias:: DataStructure
   },
   "subClassOf": {
     "@id": "urn:ngm:class:infra-software-engineering",
-    "label": "Infra Software Engineering"
+    "label": "Software Engineering"
   },
   "sameAs": [
     {"@id": "urn:ngm:class:abstract-data-type", "label": "Abstract Data Type"},
@@ -106,7 +106,7 @@ alias:: DataStructure
       {"@id": "urn:ngm:class:pointer", "label": "Pointer"}
     ],
     "supports": [
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"},
       {"@id": "urn:ngm:class:sparse-matrix", "label": "Sparse Matrix"},
       {"@id": "urn:ngm:class:computational-complexity", "label": "Computational Complexity"}
     ],

@@ -63,7 +63,7 @@ alias:: EconomicLayer
     "enables": [
       {
         "@id": "urn:ngm:class:virtual-economy-market-framing",
-        "label": "Metaverse as Markets"
+        "label": "Virtual Economy Market Framing"
       }
     ],
     "relatedTo": [

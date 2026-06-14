@@ -46,7 +46,7 @@ public:: true
       {"@id": "urn:ngm:class:model-training", "label": "Model Training"},
       {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
       {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"},
-      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine-Tuning"},
+      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine Tuning"},
       {"@id": "urn:ngm:class:hyperparameter-optimisation", "label": "Hyperparameter Optimisation"}
     ],
     "hasPart": [

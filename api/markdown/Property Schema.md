@@ -50,7 +50,7 @@ public:: true
     ],
     "implements": [
       {"@id": "urn:ngm:class:linked-data", "label": "Linked Data"},
-      {"@id": "urn:ngm:class:semantic-web-linked-data-standard", "label": "Semantic Web"}
+      {"@id": "urn:ngm:class:semantic-web-linked-data-standard", "label": "Semantic Web Linked Data Standard"}
     ],
     "standardizedBy": [
       {"@id": "urn:ngm:class:rdf", "label": "RDF"}

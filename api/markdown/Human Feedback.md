@@ -91,7 +91,7 @@ public:: true
       {"@id": "urn:ngm:class:implicit-feedback", "label": "Implicit Feedback"}
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human-Computer Interaction"},
+      {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human Computer Interaction"},
       {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"}
     ],
     "relatedTo": [

@@ -123,7 +123,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:data-format",
-        "label": "Data Formats"
+        "label": "Data Format"
       },
       {
         "@id": "urn:ngm:class:protocol-definitions",

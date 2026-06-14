@@ -9,7 +9,7 @@
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-security-and-identity",
-      "label": "Infrastructure Security and Identity"
+      "label": "Security and Identity"
     }
   ],
   "entityType": "Class",
@@ -34,7 +34,7 @@
       },
       {
         "id": "urn:ngm:class:privacy",
-        "label": "Privacy Domain"
+        "label": "Privacy"
       }
     ]
   },

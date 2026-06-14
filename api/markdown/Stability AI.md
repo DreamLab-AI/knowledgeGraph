@@ -93,7 +93,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:fine-tuning",
-        "label": "Fine-Tuning"
+        "label": "Fine Tuning"
       }
     ],
     "uses": [

@@ -88,7 +88,7 @@ public:: true
     },
     {
       "@id": "urn:ngm:class:environmental-k-p-i",
-      "label": "Environmental KPI"
+      "label": "Environmental K P I"
     }
   ],
   "relations": {

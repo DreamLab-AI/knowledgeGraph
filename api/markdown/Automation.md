@@ -52,7 +52,7 @@ public:: true
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-software-engineering",
-      "label": "Infra Software Engineering"
+      "label": "Software Engineering"
     }
   ],
   "relations": {
@@ -63,7 +63,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:industrial-automation",
-        "label": "Industrial Automation"
+        "label": "IndustrialAutomation"
       },
       {
         "@id": "urn:ngm:class:workflow-automation",
@@ -151,7 +151,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:human-in-the-loop",
-        "label": "Human-in-the-Loop"
+        "label": "Human in the Loop"
       }
     ],
     "bridgesTo": [

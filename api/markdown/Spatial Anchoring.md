@@ -85,7 +85,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:shared-ar-experiences",
-        "label": "Shared AR Experiences"
+        "label": "Shared Ar Experiences"
       },
       {
         "@id": "urn:ngm:class:indoor-navigation",

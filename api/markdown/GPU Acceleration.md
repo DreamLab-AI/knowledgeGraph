@@ -28,7 +28,7 @@ public:: true
     "hasPart": [
       {"@id": "urn:ngm:class:tensor-core", "label": "Tensor Core"},
       {"@id": "urn:ngm:class:streaming-multiprocessor", "label": "Streaming Multiprocessor"},
-      {"@id": "urn:ngm:class:high-bandwidth-memory", "label": "High-Bandwidth Memory"}
+      {"@id": "urn:ngm:class:high-bandwidth-memory", "label": "High Bandwidth Memory"}
     ],
     "requires": [
       {"@id": "urn:ngm:class:cuda", "label": "CUDA"},
@@ -46,7 +46,7 @@ public:: true
       {"@id": "urn:ngm:class:cuda", "label": "CUDA"},
       {"@id": "urn:ngm:class:compute-shader", "label": "Compute Shader"},
       {"@id": "urn:ngm:class:opencl", "label": "OpenCL"},
-      {"@id": "urn:ngm:class:mixed-precision-training", "label": "Mixed-Precision Training"}
+      {"@id": "urn:ngm:class:mixed-precision-training", "label": "Mixed Precision Training"}
     ],
     "dependsOn": [
       {"@id": "urn:ngm:class:compute-infrastructure", "label": "Compute Infrastructure"},

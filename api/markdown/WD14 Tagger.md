@@ -25,7 +25,7 @@ public:: true
   "maturity": "emerging",
   "subClassOf": [{"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:kohya-dreambooth-and-similar", "label": "Kohya DreamBooth and Similar"}, {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"}]
+    "relatedTo": [{"@id": "urn:ngm:class:kohya-dreambooth-and-similar", "label": "KOHYA Dreambooth and similar"}, {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"}]
   },
   "quality": 0.72
 }

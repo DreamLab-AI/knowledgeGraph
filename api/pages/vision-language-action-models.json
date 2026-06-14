@@ -9,7 +9,7 @@
   "subClassOf": [
     {
       "id": "urn:ngm:class:vision-language-model",
-      "label": "Vision-Language Model"
+      "label": "Vision Language Model"
     }
   ],
   "entityType": "Class",

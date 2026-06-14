@@ -139,7 +139,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:zero-knowledge-proof",
-        "label": "Zero-Knowledge Proofs"
+        "label": "Zero-Knowledge Proof"
       },
       {
         "@id": "urn:ngm:class:differential-privacy",
@@ -153,7 +153,7 @@ public:: true
     "requires": [
       {
         "@id": "urn:ngm:class:cryptographic-primitive",
-        "label": "Cryptographic Primitives"
+        "label": "Cryptographic Primitive"
       },
       {
         "@id": "urn:ngm:class:key-management",
@@ -175,7 +175,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:privacy-preserving-analytics",
-        "label": "Privacy-Preserving Analytics"
+        "label": "Privacy Preserving Analytics"
       },
       {
         "@id": "urn:ngm:class:secure-data-sharing",

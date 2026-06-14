@@ -107,7 +107,7 @@ public:: true
     "requires": [
       {
         "@id": "urn:ngm:class:haptic-feedback-telepresence",
-        "label": "TELE-203-haptic-feedback-telepresence"
+        "label": "Haptic Feedback Telepresence"
       }
     ],
     "enables": [

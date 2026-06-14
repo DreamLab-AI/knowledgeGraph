@@ -99,7 +99,7 @@ public:: true
     ],
     "enables": [
       {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"},
-      {"@id": "urn:ngm:class:human-pose-slam-capture-system", "label": "Human tracking and SLAM capture"}
+      {"@id": "urn:ngm:class:human-pose-slam-capture-system", "label": "Human Pose SLAM Capture System"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:image-segmentation", "label": "Image Segmentation"},

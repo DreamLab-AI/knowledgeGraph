@@ -69,7 +69,7 @@ public:: true
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-network-and-comms",
-      "label": "Infra Network And Comms"
+      "label": "Network and Communication"
     }
   ],
   "relations": {
@@ -206,7 +206,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:quality-of-service",
-        "label": "Quality of Service"
+        "label": "Quality Of Service"
       }
     ]
   },

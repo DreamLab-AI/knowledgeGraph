@@ -27,7 +27,7 @@ public:: true
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:digital-performance-capture", "label": "Digital Performance Capture"},
-      {"@id": "urn:ngm:class:human-capture-and-recognition", "label": "Human Capture and Recognition"}
+      {"@id": "urn:ngm:class:human-capture-and-recognition", "label": "Human Capture & Recognition"}
     ]
   },
   "quality": 0.72

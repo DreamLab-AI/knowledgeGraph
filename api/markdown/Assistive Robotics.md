@@ -67,7 +67,7 @@ public:: true
       {"@id": "urn:ngm:class:industrial-robotics", "label": "Industrial Robotics"}
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:ai-companions", "label": "AI Companions"},
+      {"@id": "urn:ngm:class:ai-companions", "label": "AI companions"},
       {"@id": "urn:ngm:class:affective-computing", "label": "Affective Computing"}
     ],
     "relatedTo": [

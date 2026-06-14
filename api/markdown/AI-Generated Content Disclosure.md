@@ -120,7 +120,7 @@ public:: true
     },
     {
       "@id": "urn:ngm:class:ai-transparency-framework",
-      "label": "AI Transparency Framework"
+      "label": "Ai Transparency Framework"
     }
   ],
   "relations": {
@@ -135,7 +135,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:ai-origin-declaration",
-        "label": "AI Origin Declaration"
+        "label": "Ai Origin Declaration"
       },
       {
         "@id": "urn:ngm:class:transparency-notice",
@@ -177,7 +177,7 @@ public:: true
     "partOf": [
       {
         "@id": "urn:ngm:class:ai-transparency-framework",
-        "label": "AI Transparency Framework"
+        "label": "Ai Transparency Framework"
       }
     ]
   },

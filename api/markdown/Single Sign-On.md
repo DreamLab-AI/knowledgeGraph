@@ -76,7 +76,7 @@ public:: true
       {"@id": "urn:ngm:class:authentication-standards", "label": "Authentication Standards"}
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self-Sovereign Identity"},
+      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self Sovereign Identity"},
       {"@id": "urn:ngm:class:verifiable-credentials", "label": "Verifiable Credentials"}
     ]
   },

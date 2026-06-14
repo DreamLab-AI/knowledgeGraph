@@ -55,7 +55,7 @@ public:: true
       {"@id": "urn:ngm:class:explainability", "label": "Explainability"}
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:iso-iec-42001", "label": "ISO/IEC 42001"},
+      {"@id": "urn:ngm:class:iso-iec-42001", "label": "ISO IEC 42001"},
       {"@id": "urn:ngm:class:eu-ai-act", "label": "EU AI Act"}
     ],
     "contrastsWith": [

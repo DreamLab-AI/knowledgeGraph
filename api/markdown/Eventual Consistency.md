@@ -52,7 +52,7 @@ public:: true
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-computing-and-cloud",
-      "label": "Infra Computing and Cloud"
+      "label": "Computing and Cloud"
     }
   ],
   "sameAs": [

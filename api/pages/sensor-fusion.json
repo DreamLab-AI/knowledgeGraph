@@ -27,13 +27,13 @@
       },
       {
         "id": "urn:ngm:class:imu",
-        "label": "Inertial Measurement Unit"
+        "label": "IMU"
       }
     ],
     "requires": [
       {
         "id": "urn:ngm:class:lidar",
-        "label": "LiDAR"
+        "label": "Lidar"
       },
       {
         "id": "urn:ngm:class:radar",
@@ -45,7 +45,7 @@
       },
       {
         "id": "urn:ngm:class:gps",
-        "label": "GPS"
+        "label": "Gps"
       }
     ],
     "enables": [

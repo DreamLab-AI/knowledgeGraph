@@ -171,7 +171,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:post-processing",
-        "label": "Post-Processing"
+        "label": "Post Processing"
       },
       {
         "@id": "urn:ngm:class:rasterization",
@@ -181,7 +181,7 @@ public:: true
     "requires": [
       {
         "@id": "urn:ngm:class:3-d-model",
-        "label": "3D Models"
+        "label": "3D Model"
       },
       {
         "@id": "urn:ngm:class:graphics-processing-unit",
@@ -189,7 +189,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:shader",
-        "label": "Shaders"
+        "label": "Shader"
       },
       {
         "@id": "urn:ngm:class:textures",

@@ -70,7 +70,7 @@ public:: true
   ],
   "relations": {
     "supports": [
-      {"@id": "urn:ngm:class:eu-ai-act-regulatory-instrument", "label": "EU AI Act"},
+      {"@id": "urn:ngm:class:eu-ai-act-regulatory-instrument", "label": "EU AI Act Regulatory Instrument"},
       {"@id": "urn:ngm:class:ai-board", "label": "AI Board"}
     ],
     "enables": [

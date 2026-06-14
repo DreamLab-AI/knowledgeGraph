@@ -364,7 +364,7 @@ alias:: BC-0319-micropayments
       },
       {
         "@id": "urn:ngm:class:ecash",
-        "label": "Ecash"
+        "label": "ecash"
       },
       {
         "@id": "urn:ngm:class:lightning-and-similar-l2",
@@ -372,13 +372,13 @@ alias:: BC-0319-micropayments
       },
       {
         "@id": "urn:ngm:class:nostr-protocol",
-        "label": "Nostr protocol"
+        "label": "Nostr Protocol"
       }
     ],
     "requires": [
       {
         "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol",
-        "label": "Bitcoin"
+        "label": "Bitcoin Proof-of-Work Protocol"
       },
       {
         "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-technical-overview",
@@ -446,13 +446,13 @@ alias:: BC-0319-micropayments
       },
       {
         "@id": "urn:ngm:class:nostr-protocol",
-        "label": "Nostr protocol"
+        "label": "Nostr Protocol"
       }
     ],
     "uses": [
       {
         "@id": "urn:ngm:class:zero-knowledge-proof",
-        "label": "Zero Knowledge Proofs"
+        "label": "Zero-Knowledge Proof"
       },
       {
         "@id": "urn:ngm:class:cashu",
@@ -472,7 +472,7 @@ alias:: BC-0319-micropayments
       },
       {
         "@id": "urn:ngm:class:nostr-protocol",
-        "label": "Nostr protocol"
+        "label": "Nostr Protocol"
       }
     ],
     "relatedTo": [
@@ -482,7 +482,7 @@ alias:: BC-0319-micropayments
       },
       {
         "@id": "urn:ngm:class:constitutional-ai-training-methodology-language-model-family",
-        "label": "Anthropic Claude"
+        "label": "Constitutional AI Language Model Family"
       },
       {
         "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-as-money",
@@ -524,7 +524,7 @@ alias:: BC-0319-micropayments
       },
       {
         "@id": "urn:ngm:class:constitutional-ai-training-methodology-language-model-family",
-        "label": "Anthropic Claude"
+        "label": "Constitutional AI Language Model Family"
       },
       {
         "@id": "urn:ngm:class:competition-in-ai",
@@ -532,7 +532,7 @@ alias:: BC-0319-micropayments
       },
       {
         "@id": "urn:ngm:class:nostr-protocol",
-        "label": "Nostr protocol"
+        "label": "Nostr Protocol"
       }
     ],
     "standardizedBy": [
@@ -554,17 +554,17 @@ alias:: BC-0319-micropayments
       },
       {
         "@id": "urn:ngm:class:nostr-protocol",
-        "label": "Nostr protocol"
+        "label": "Nostr Protocol"
       }
     ],
     "bridgesTo": [
       {
         "@id": "urn:ngm:class:bc-defi-and-economics",
-        "label": "BC DeFi And Economics"
+        "label": "DeFi and Economics"
       },
       {
         "@id": "urn:ngm:class:payment-system",
-        "label": "Payment Systems"
+        "label": "Payment System"
       }
     ]
   },

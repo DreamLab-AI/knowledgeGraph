@@ -46,10 +46,10 @@ elevatedFrom:: [[today presentation 2]]
   "quality": 0.7,
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:dreamlab-creative-technology-collective", "label": "Dreamlab"},
+      {"@id": "urn:ngm:class:dreamlab-creative-technology-collective", "label": "DreamLab Creative Technology Collective"},
       {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
       {"@id": "urn:ngm:class:presentation-concluding-synthesis-slide", "label": "Presentation: Conclusion"},
-      {"@id": "urn:ngm:class:open-space-responsible-ai-gathering", "label": "Responsible AI Unconference"}
+      {"@id": "urn:ngm:class:open-space-responsible-ai-gathering", "label": "Open-Space Responsible AI Gathering"}
     ],
     "partOf": [
       {"@id": "urn:ngm:class:immersive-learning", "label": "Immersive Learning"}

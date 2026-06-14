@@ -27,7 +27,7 @@ public:: true
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:semantic-search", "label": "Semantic Search"},
-      {"@id": "urn:ngm:class:information-retrieval", "label": "Information Retrieval Domain"}
+      {"@id": "urn:ngm:class:information-retrieval", "label": "Information Retrieval"}
     ]
   },
   "quality": 0.72

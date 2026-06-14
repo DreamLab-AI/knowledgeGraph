@@ -66,8 +66,8 @@ public:: true
       {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"},
       {"@id": "urn:ngm:class:multi-head-attention", "label": "Multi-Head Attention"},
       {"@id": "urn:ngm:class:positional-encoding", "label": "Positional Encoding"},
-      {"@id": "urn:ngm:class:feed-forward-network", "label": "Feed-Forward Network"},
-      {"@id": "urn:ngm:class:encoder-decoder-architecture", "label": "Encoder-Decoder Architecture"},
+      {"@id": "urn:ngm:class:feed-forward-network", "label": "Feed Forward Network"},
+      {"@id": "urn:ngm:class:encoder-decoder-architecture", "label": "Encoder Decoder Architecture"},
       {"@id": "urn:ngm:class:layer-normalisation", "label": "Layer Normalisation"}
     ],
     "enables": [
@@ -77,7 +77,7 @@ public:: true
       {"@id": "urn:ngm:class:multimodal-learning", "label": "Multimodal Learning"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:self-attention", "label": "Self-Attention"},
+      {"@id": "urn:ngm:class:self-attention", "label": "Self Attention"},
       {"@id": "urn:ngm:class:embedding", "label": "Embedding"}
     ],
     "supports": [

@@ -163,7 +163,7 @@ alias:: FederatedLearning
     ],
     "bridgesTo": [
       {"@id": "urn:ngm:class:blockchain-network", "label": "Blockchain Network"},
-      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero Knowledge Proof"},
+      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"},
       {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
     ],
     "relatedTo": [

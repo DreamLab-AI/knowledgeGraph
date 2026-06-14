@@ -25,7 +25,7 @@ public:: true
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:control-theory", "label": "Control Theory"}],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:control-algorithm", "label": "Control Algorithm"}, {"@id": "urn:ngm:class:robo-actuation-and-control", "label": "Mechanical Engineering Domain"}]
+    "relatedTo": [{"@id": "urn:ngm:class:control-algorithm", "label": "Control Algorithm"}, {"@id": "urn:ngm:class:robo-actuation-and-control", "label": "Actuation and Control"}]
   },
   "quality": 0.72
 }

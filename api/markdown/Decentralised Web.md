@@ -899,7 +899,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:self-sovereign-identity",
-        "label": "Self-Sovereign Identity"
+        "label": "Self Sovereign Identity"
       }
     ],
     "enables": [
@@ -989,7 +989,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:schnorr-signature",
-        "label": "Schnorr Signatures"
+        "label": "Schnorr Signature"
       },
       {
         "@id": "urn:ngm:class:web-socket",
@@ -1023,11 +1023,11 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:self-sovereign-identity",
-        "label": "Self-Sovereign Identity"
+        "label": "Self Sovereign Identity"
       },
       {
         "@id": "urn:ngm:class:semantic-web-linked-data-standard",
-        "label": "Semantic Web"
+        "label": "Semantic Web Linked Data Standard"
       },
       {
         "@id": "urn:ngm:class:web3",
@@ -1041,7 +1041,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:decentralized-storage",
-        "label": "Decentralised Storage"
+        "label": "Decentralized Storage"
       },
       {
         "@id": "urn:ngm:class:open-knowledge-graphs",
@@ -1061,7 +1061,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:self-sovereign-identity",
-        "label": "Self-Sovereign Identity"
+        "label": "Self Sovereign Identity"
       }
     ],
     "standardizedBy": [
@@ -1087,7 +1087,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:trust-over-ip-foundation",
-        "label": "Trust over IP Foundation"
+        "label": "Trust Over IP Foundation"
       },
       {
         "@id": "urn:ngm:class:w3-c",

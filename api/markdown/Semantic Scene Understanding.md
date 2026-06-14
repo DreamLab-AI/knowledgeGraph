@@ -25,7 +25,7 @@ public:: true
   "maturity": "emerging",
   "subClassOf": [{"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:ar-scene-graph", "label": "AR Scene Graph"}, {"@id": "urn:ngm:class:mixed-reality", "label": "Mixed Reality"}]
+    "relatedTo": [{"@id": "urn:ngm:class:ar-scene-graph", "label": "Ar Scene Graph"}, {"@id": "urn:ngm:class:mixed-reality", "label": "Mixed Reality"}]
   },
   "quality": 0.72
 }

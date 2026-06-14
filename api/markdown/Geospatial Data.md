@@ -68,7 +68,7 @@ public:: true
     "relatedTo": [
       {"@id": "urn:ngm:class:logistics-optimization", "label": "Logistics Optimization"},
       {"@id": "urn:ngm:class:point-cloud-generation", "label": "Point Cloud Generation"},
-      {"@id": "urn:ngm:class:lidar", "label": "LiDAR"},
+      {"@id": "urn:ngm:class:lidar", "label": "Lidar"},
       {"@id": "urn:ngm:class:spatial-analysis", "label": "Spatial Analysis"}
     ]
   },

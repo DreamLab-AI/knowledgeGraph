@@ -23,7 +23,7 @@ public:: true
   "definition": "Environment mapping is the robotics and computer-vision process of building a spatial representation of a robot's surroundings from sensor data such as lidar, cameras, or depth sensors. Representations include occupancy grids, point clouds, and topological or semantic maps that record obstacles, free space, and landmarks. Accurate mapping is a prerequisite for localisation, path planning, and safe autonomous navigation.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:robo-navigation-and-planning", "label": "Robot Navigation and Planning"}],
+  "subClassOf": [{"@id": "urn:ngm:class:robo-navigation-and-planning", "label": "Navigation and Planning"}],
   "relations": {
     "relatedTo": [{"@id": "urn:ngm:class:occupancy-grid", "label": "Occupancy Grid"}, {"@id": "urn:ngm:class:mobile-robot-platform", "label": "Mobile Robot Platform"}]
   },

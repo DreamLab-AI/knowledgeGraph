@@ -468,7 +468,7 @@ alias:: BC-0464-treasury-management, TreasuryManagement
       },
       {
         "@id": "urn:ngm:class:grant-programs",
-        "label": "Grant Program"
+        "label": "Grant Programs"
       },
       {
         "@id": "urn:ngm:class:multisig-wallet",
@@ -522,7 +522,7 @@ alias:: BC-0464-treasury-management, TreasuryManagement
       },
       {
         "@id": "urn:ngm:class:on-chain-governance",
-        "label": "On-Chain Governance"
+        "label": "On-chain Governance"
       },
       {
         "@id": "urn:ngm:class:risk-framework",
@@ -640,7 +640,7 @@ alias:: BC-0464-treasury-management, TreasuryManagement
       },
       {
         "@id": "urn:ngm:class:meta-llama-model-family",
-        "label": "Llama"
+        "label": "Meta Llama Model Family"
       },
       {
         "@id": "urn:ngm:class:nansen",
@@ -694,7 +694,7 @@ alias:: BC-0464-treasury-management, TreasuryManagement
       },
       {
         "@id": "urn:ngm:class:olympus-dao",
-        "label": "OlympusDAO"
+        "label": "Olympus DAO"
       },
       {
         "@id": "urn:ngm:class:optimism",

@@ -9,7 +9,7 @@
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-application",
-      "label": "Ai Application"
+      "label": "AI Application"
     }
   ],
   "entityType": "Class",
@@ -90,7 +90,7 @@
       },
       {
         "id": "urn:ngm:class:cross-validation",
-        "label": "Cross Validation"
+        "label": "Cross-Validation"
       },
       {
         "id": "urn:ngm:class:regression-analysis",
@@ -106,7 +106,7 @@
       },
       {
         "id": "urn:ngm:class:time-series-analysis",
-        "label": "Time Series Analysis"
+        "label": "Time-Series Analysis"
       }
     ],
     "supports": [],

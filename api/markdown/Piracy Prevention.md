@@ -23,9 +23,9 @@ public:: true
   "definition": "Piracy prevention is the set of technical and procedural measures that deter and detect unauthorised copying, distribution, and use of digital content. It encompasses encryption, licensing, access control, watermarking, and tamper resistance, typically delivered through digital rights management systems. Its objective is to enforce usage rights while balancing legitimate user access and interoperability.",
   "domain": "security",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:infra-security-and-identity", "label": "Infrastructure Security and Identity"}],
+  "subClassOf": [{"@id": "urn:ngm:class:infra-security-and-identity", "label": "Security and Identity"}],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:digital-rights-management", "label": "Digital Rights Management"}, {"@id": "urn:ngm:class:digital-rights-management-extended", "label": "Digital Rights Management Extended"}]
+    "relatedTo": [{"@id": "urn:ngm:class:digital-rights-management", "label": "Digital Rights Management"}, {"@id": "urn:ngm:class:digital-rights-management-extended", "label": "Digital Rights Management (Extended)"}]
   },
   "quality": 0.72
 }

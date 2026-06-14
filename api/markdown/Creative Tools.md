@@ -61,7 +61,7 @@ public:: true
       {"@id": "urn:ngm:class:api-endpoint", "label": "API Endpoint"}
     ],
     "supports": [
-      {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human-Computer Interaction"},
+      {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human Computer Interaction"},
       {"@id": "urn:ngm:class:creative-economy", "label": "Creative Economy"}
     ],
     "contrastsWith": [

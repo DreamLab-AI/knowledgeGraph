@@ -333,11 +333,11 @@ public:: true
     "requires": [
       {
         "@id": "urn:ngm:class:convolutional-neural-network",
-        "label": "Convolutional Neural Networks"
+        "label": "Convolutional Neural Network"
       },
       {
         "@id": "urn:ngm:class:evaluation-metric",
-        "label": "Evaluation Metrics"
+        "label": "Evaluation Metric"
       },
       {
         "@id": "urn:ngm:class:gpu-compute",
@@ -349,13 +349,13 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:loss-function",
-        "label": "Loss Functions"
+        "label": "Loss Function"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:autonomous-vehicle",
-        "label": "Autonomous Vehicles"
+        "label": "Autonomous Vehicle"
       },
       {
         "@id": "urn:ngm:class:medical-imaging",
@@ -407,7 +407,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:cross-entropy-loss",
-        "label": "Cross Entropy Loss"
+        "label": "Cross-Entropy Loss"
       },
       {
         "@id": "urn:ngm:class:dice-coefficient",
@@ -429,7 +429,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:multimodal-ai-architecture-learning",
-        "label": "Multi-Modal Learning"
+        "label": "Multimodal Learning"
       },
       {
         "@id": "urn:ngm:class:optical-flow",
@@ -441,7 +441,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:large-scale-pretrained-foundation-model",
-        "label": "Foundation Models"
+        "label": "Large-Scale Pretrained Foundation Model"
       }
     ],
     "supports": [

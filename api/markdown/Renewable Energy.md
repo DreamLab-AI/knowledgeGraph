@@ -65,7 +65,7 @@ public:: true
     "relatedTo": [
       {"@id": "urn:ngm:class:scope-2-emissions", "label": "Scope 2 Emissions"},
       {"@id": "urn:ngm:class:environmental-sustainability", "label": "Environmental Sustainability"},
-      {"@id": "urn:ngm:class:sustainability-reporting", "label": "Sustainability Reporting"},
+      {"@id": "urn:ngm:class:sustainability-reporting", "label": "SustainabilityReporting"},
       {"@id": "urn:ngm:class:carbon-market", "label": "Carbon Market"}
     ],
     "bridgesTo": [

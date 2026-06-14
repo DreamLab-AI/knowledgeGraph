@@ -9,7 +9,7 @@
   "subClassOf": [
     {
       "id": "urn:ngm:class:ieee-802-x",
-      "label": "IEEE 802.x"
+      "label": "IEEE 802-X"
     }
   ],
   "entityType": "Class",
@@ -117,7 +117,7 @@
       },
       {
         "id": "urn:ngm:class:industrial-automation",
-        "label": "Industrial Automation"
+        "label": "IndustrialAutomation"
       }
     ],
     "standardizedBy": [
@@ -133,7 +133,7 @@
     "partOf": [
       {
         "id": "urn:ngm:class:ieee-802-x",
-        "label": "IEEE 802.x"
+        "label": "IEEE 802-X"
       },
       {
         "id": "urn:ngm:class:low-rate-wpan",

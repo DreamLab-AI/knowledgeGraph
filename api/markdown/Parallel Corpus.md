@@ -27,7 +27,7 @@ public:: true
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:translation", "label": "Translation"},
-      {"@id": "urn:ngm:class:real-time-translation", "label": "Real-Time Translation"}
+      {"@id": "urn:ngm:class:real-time-translation", "label": "Real-time Translation"}
     ]
   },
   "quality": 0.72

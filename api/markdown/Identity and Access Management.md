@@ -82,7 +82,7 @@ public:: true
       {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"}
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self-Sovereign Identity"},
+      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self Sovereign Identity"},
       {"@id": "urn:ngm:class:decentralised-identity", "label": "Decentralised Identity"}
     ]
   },

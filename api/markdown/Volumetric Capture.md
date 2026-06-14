@@ -56,7 +56,7 @@ public:: true
       {"@id": "urn:ngm:class:photogrammetry", "label": "Photogrammetry"},
       {"@id": "urn:ngm:class:point-cloud", "label": "Point Cloud"},
       {"@id": "urn:ngm:class:structured-light", "label": "Structured Light"},
-      {"@id": "urn:ngm:class:lidar", "label": "LiDAR"},
+      {"@id": "urn:ngm:class:lidar", "label": "Lidar"},
       {"@id": "urn:ngm:class:neural-radiance-field", "label": "Neural Radiance Field"},
       {"@id": "urn:ngm:class:camera-calibration", "label": "Camera Calibration"}
     ],

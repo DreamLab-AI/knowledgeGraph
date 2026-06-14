@@ -60,7 +60,7 @@ public:: true
     "uses": [
       {"@id": "urn:ngm:class:cuda", "label": "CUDA"},
       {"@id": "urn:ngm:class:rocm", "label": "ROCm"},
-      {"@id": "urn:ngm:class:mixed-precision-training", "label": "Mixed-Precision Training"},
+      {"@id": "urn:ngm:class:mixed-precision-training", "label": "Mixed Precision Training"},
       {"@id": "urn:ngm:class:parallel-computing", "label": "Parallel Computing"}
     ],
     "supports": [

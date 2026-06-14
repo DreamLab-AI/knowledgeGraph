@@ -66,7 +66,7 @@ public:: true
     ],
     "enables": [
       {"@id": "urn:ngm:class:reward-model", "label": "Reward Model"},
-      {"@id": "urn:ngm:class:reinforcement-learning-from-human-feedback", "label": "Reinforcement Learning From Human Feedback"},
+      {"@id": "urn:ngm:class:reinforcement-learning-from-human-feedback", "label": "Reinforcement Learning from Human Feedback"},
       {"@id": "urn:ngm:class:instruction-following", "label": "Instruction Following"},
       {"@id": "urn:ngm:class:direct-preference-optimisation", "label": "Direct Preference Optimisation"}
     ],
@@ -80,7 +80,7 @@ public:: true
       {"@id": "urn:ngm:class:supervised-learning", "label": "Supervised Learning"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:parameter-efficient-fine-tuning", "label": "Parameter Efficient Fine Tuning"},
+      {"@id": "urn:ngm:class:parameter-efficient-fine-tuning", "label": "Parameter-Efficient Fine-Tuning"},
       {"@id": "urn:ngm:class:lora", "label": "LoRA"}
     ],
     "contrastsWith": [

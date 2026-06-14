@@ -55,7 +55,7 @@
       },
       {
         "id": "urn:ngm:class:real-world-asset-tokenisation",
-        "label": "Real World Asset Tokenisation"
+        "label": "Real-World Asset Tokenisation"
       }
     ],
     "dependsOn": [

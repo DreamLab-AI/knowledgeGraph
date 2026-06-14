@@ -57,7 +57,7 @@
     "relatedTo": [
       {
         "id": "urn:ngm:class:practitioner-workflow-optimisation-heuristics",
-        "label": "Tips and Tricks"
+        "label": "Practitioner Workflow Optimisation Heuristics"
       },
       {
         "id": "urn:ngm:class:gpt-engineer",

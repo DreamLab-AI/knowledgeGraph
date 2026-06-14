@@ -104,7 +104,7 @@ public:: true
     "hasPart": [
       {
         "@id": "urn:ngm:class:lock-and-mint-mechanism",
-        "label": "Lock And Mint Mechanism"
+        "label": "Lock and Mint Mechanism"
       },
       {
         "@id": "urn:ngm:class:burn-and-release-mechanism",

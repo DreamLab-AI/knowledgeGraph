@@ -23,7 +23,7 @@ public:: true
   "definition": "Leveraged trading is the practice of opening market positions whose notional size exceeds the trader's posted collateral by borrowing capital or using derivatives such as perpetual futures. It amplifies both gains and losses and exposes positions to liquidation when collateral falls below maintenance margin. In DeFi it is implemented by perpetual and margin protocols that enforce margin rules through smart contracts and on-chain oracles.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:bc-defi-and-economics", "label": "Blockchain DeFi and Economics"}],
+  "subClassOf": [{"@id": "urn:ngm:class:bc-defi-and-economics", "label": "DeFi and Economics"}],
   "relations": {
     "relatedTo": [{"@id": "urn:ngm:class:gmx", "label": "GMX"}, {"@id": "urn:ngm:class:d-yd-x", "label": "dYdX"}]
   },

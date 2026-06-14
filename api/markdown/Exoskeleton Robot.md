@@ -100,14 +100,14 @@ public:: true
     },
     {
       "@id": "urn:ngm:class:robo-robot-type",
-      "label": "Robo Robot Type"
+      "label": "Robot Type"
     }
   ],
   "relations": {
     "requires": [
       {
         "@id": "urn:ngm:class:real-time-control",
-        "label": "Real-time Control"
+        "label": "Real-Time Control"
       },
       {
         "@id": "urn:ngm:class:motion-capture",

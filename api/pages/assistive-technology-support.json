@@ -9,7 +9,7 @@
   "subClassOf": [
     {
       "id": "urn:ngm:class:human-computer-interaction",
-      "label": "Human-Computer Interaction"
+      "label": "Human Computer Interaction"
     }
   ],
   "entityType": "Class",
@@ -30,7 +30,7 @@
     "relatedTo": [
       {
         "id": "urn:ngm:class:accessibility",
-        "label": "Accessibility Domain"
+        "label": "Accessibility"
       },
       {
         "id": "urn:ngm:class:accessible-experience",

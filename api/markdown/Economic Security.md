@@ -76,7 +76,7 @@ public:: true
     },
     {
       "@id": "urn:ngm:class:economic-mechanism",
-      "label": "EconomicMechanism"
+      "label": "Economic Mechanism"
     }
   ],
   "relations": {

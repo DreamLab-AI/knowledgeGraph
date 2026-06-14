@@ -186,7 +186,7 @@ alias:: AvatarCustomization
       },
       {
         "@id": "urn:ngm:class:non-player-character",
-        "label": "Non-Player Character"
+        "label": "Non Player Character"
       }
     ],
     "bridgesTo": [

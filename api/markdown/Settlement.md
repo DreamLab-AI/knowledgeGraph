@@ -56,7 +56,7 @@ public:: true
   "subClassOf": [
     {
       "@id": "urn:ngm:class:financial-infrastructure",
-      "label": "Financial Infrastructure Domain"
+      "label": "Financial Infrastructure"
     }
   ],
   "relations": {
@@ -67,7 +67,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:delivery-versus-payment",
-        "label": "Delivery Versus Payment"
+        "label": "Delivery-Versus-Payment"
       },
       {
         "@id": "urn:ngm:class:netting",
@@ -77,7 +77,7 @@ public:: true
     "partOf": [
       {
         "@id": "urn:ngm:class:financial-infrastructure",
-        "label": "Financial Infrastructure Domain"
+        "label": "Financial Infrastructure"
       },
       {
         "@id": "urn:ngm:class:post-trade-processing",

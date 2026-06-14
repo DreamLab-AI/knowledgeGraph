@@ -23,7 +23,7 @@ public:: true
   "definition": "The European Blockchain Services Infrastructure (EBSI) is a pan-European permissioned blockchain network operated by EU member states and the European Commission to deliver cross-border public services. It anchors verifiable credentials and decentralised identifiers, enabling trusted exchange of diplomas, official documents, and identity attestations between governments. EBSI is a leading example of a public-sector consortium blockchain supporting self-sovereign identity.",
   "domain": "blockchain",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:bc-network-component", "label": "Blockchain Network Component"}],
+  "subClassOf": [{"@id": "urn:ngm:class:bc-network-component", "label": "Network Component"}],
   "relations": {
     "relatedTo": [{"@id": "urn:ngm:class:consortium-blockchain", "label": "Consortium Blockchain"}, {"@id": "urn:ngm:class:decentralized-identifiers", "label": "Decentralized Identifiers"}]
   },

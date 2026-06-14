@@ -131,7 +131,7 @@
     "relatedTo": [
       {
         "id": "urn:ngm:class:real-time-processing",
-        "label": "Real-Time Processing"
+        "label": "Real-time Processing"
       },
       {
         "id": "urn:ngm:class:functional-safety",

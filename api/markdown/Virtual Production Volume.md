@@ -169,7 +169,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:real-time-rendering-engine",
-        "label": "Real-time Rendering Engine"
+        "label": "Real-Time Rendering Engine"
       },
       {
         "@id": "urn:ngm:class:network-infrastructure",

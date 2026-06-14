@@ -77,7 +77,7 @@ public:: true
       {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"},
       {"@id": "urn:ngm:class:secure-multi-party-computation", "label": "Secure Multi-Party Computation"}
     ],
     "supports": [

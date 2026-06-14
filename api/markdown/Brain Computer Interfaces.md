@@ -580,7 +580,7 @@ alias:: Brain-Computer Interfaces
       },
       {
         "@id": "urn:ngm:class:analog-to-digital-converter",
-        "label": "Analog-to-Digital Converter"
+        "label": "Analog To Digital Converter"
       },
       {
         "@id": "urn:ngm:class:surgical-robot",

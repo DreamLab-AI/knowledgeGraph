@@ -49,7 +49,7 @@ alias:: Open API Specification
     ],
     "uses": [
       {"@id": "urn:ngm:class:rest-api", "label": "REST API"},
-      {"@id": "urn:ngm:class:json-data-interchange-format", "label": "json"},
+      {"@id": "urn:ngm:class:json-data-interchange-format", "label": "JSON Data Interchange Format"},
       {"@id": "urn:ngm:class:data-schema", "label": "Data Schema"}
     ],
     "standardizedBy": [

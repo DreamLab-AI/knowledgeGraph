@@ -27,7 +27,7 @@ public:: true
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:robo-actuation-and-control", "label": "Manufacturing Domain"}
+      {"@id": "urn:ngm:class:robo-actuation-and-control", "label": "Actuation and Control"}
     ]
   },
   "quality": 0.72

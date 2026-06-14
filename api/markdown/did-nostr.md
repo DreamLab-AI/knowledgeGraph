@@ -43,7 +43,7 @@ alias:: did:nostr, DID Nostr, nostr-did, DID-Nostr
       {"@id": "urn:ngm:class:solid-oidc", "label": "Solid-OIDC"},
       {"@id": "urn:ngm:class:single-sign-on", "label": "Single Sign-On"},
       {"@id": "urn:ngm:class:w3c-verifiable-credentials", "label": "W3C Verifiable Credentials"},
-      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self-Sovereign Identity"}
+      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self Sovereign Identity"}
     ],
     "dependsOn": [
       {"@id": "urn:ngm:class:did-resolution", "label": "DID Resolution"}

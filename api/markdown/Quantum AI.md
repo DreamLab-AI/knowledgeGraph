@@ -55,8 +55,8 @@ public:: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:quantum-computation-paradigm", "label": "Quantum Computing"},
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:quantum-computation-paradigm", "label": "Quantum Computation Paradigm"},
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"},
       {"@id": "urn:ngm:class:algorithm", "label": "Algorithm"}
     ],
     "enables": [

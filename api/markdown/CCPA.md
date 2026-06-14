@@ -160,7 +160,7 @@ public:: true
     "supports": [
       {
         "@id": "urn:ngm:class:privacy-by-design",
-        "label": "Privacy by Design"
+        "label": "Privacy By Design"
       },
       {
         "@id": "urn:ngm:class:data-minimisation",

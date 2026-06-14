@@ -23,7 +23,7 @@ public:: true
   "definition": "Data models are the collected structural specifications that define how information is represented, related and constrained within a system or framework. In digital-twin and layered service architectures they describe the shape of state, telemetry and interactions exchanged between components. Well-defined data models are a prerequisite for interoperability, validation and consistent behaviour across service layers.",
   "domain": "data",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:infra-data-management", "label": "Infrastructure Data Management"}],
+  "subClassOf": [{"@id": "urn:ngm:class:infra-data-management", "label": "Data Management"}],
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:digital-twin-framework", "label": "Digital Twin Framework"},

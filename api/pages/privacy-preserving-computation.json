@@ -75,7 +75,7 @@
       },
       {
         "id": "urn:ngm:class:privacy-by-design",
-        "label": "Privacy by Design"
+        "label": "Privacy By Design"
       }
     ],
     "contrastsWith": [
@@ -122,7 +122,7 @@
       },
       {
         "id": "urn:ngm:class:cryptography-security-and-privacy",
-        "label": "Cryptography, Security and Privacy"
+        "label": "Cryptography Security and Privacy"
       }
     ]
   },

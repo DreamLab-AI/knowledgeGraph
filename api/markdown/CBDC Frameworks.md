@@ -581,7 +581,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:api-standard",
-        "label": "API Standards"
+        "label": "API Standard"
       },
       {
         "@id": "urn:ngm:class:central-bank",
@@ -623,7 +623,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:cross-border-payments",
-        "label": "Cross Border Payments"
+        "label": "Cross-Border Payments"
       },
       {
         "@id": "urn:ngm:class:financial-inclusion",
@@ -639,7 +639,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:privacy-preserving-compliance",
-        "label": "Privacy Preserving Compliance"
+        "label": "Privacy-Preserving Compliance"
       },
       {
         "@id": "urn:ngm:class:programmable-money",
@@ -685,7 +685,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:privacy-by-design",
-        "label": "Privacy by Design"
+        "label": "Privacy By Design"
       }
     ],
     "uses": [
@@ -699,7 +699,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:multi-party-computation",
-        "label": "Multi Party Computation"
+        "label": "Multi-Party Computation"
       },
       {
         "@id": "urn:ngm:class:near-field-communication",
@@ -707,7 +707,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:zero-knowledge-proof",
-        "label": "Zero Knowledge Proofs"
+        "label": "Zero-Knowledge Proof"
       },
       {
         "@id": "urn:ngm:class:api-gateway",
@@ -723,7 +723,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:neural-network-text-tokenisation",
-        "label": "Tokenisation"
+        "label": "Neural Network Text Tokenisation"
       }
     ],
     "relatedTo": [
@@ -737,7 +737,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:cross-border-payments",
-        "label": "Cross Border Payments"
+        "label": "Cross-Border Payments"
       },
       {
         "@id": "urn:ngm:class:digital-euro",
@@ -777,7 +777,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:zero-knowledge-proof",
-        "label": "Zero Knowledge Proofs"
+        "label": "Zero-Knowledge Proof"
       },
       {
         "@id": "urn:ngm:class:cbdcs",
@@ -791,7 +791,7 @@ public:: true
     "supports": [
       {
         "@id": "urn:ngm:class:cross-border-payments",
-        "label": "Cross Border Payments"
+        "label": "Cross-Border Payments"
       },
       {
         "@id": "urn:ngm:class:digital-euro",

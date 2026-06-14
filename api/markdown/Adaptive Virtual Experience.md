@@ -84,7 +84,7 @@ public:: true
     },
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
-      "label": "SC Platform And Environment"
+      "label": "Platform and Environment"
     }
   ],
   "relations": {
@@ -99,7 +99,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning"
+        "label": "Machine Learning Discipline"
       }
     ],
     "enables": [

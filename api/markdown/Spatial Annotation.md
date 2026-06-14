@@ -23,11 +23,11 @@ public:: true
   "definition": "Spatial annotation is the placement of digital notes, labels, or markers anchored to specific positions in a three-dimensional physical or virtual space, so that the content persists relative to real-world geometry as the viewer moves. It relies on spatial mapping and pose tracking to keep annotations registered to surfaces or objects. It is a foundational interaction for augmented reality collaboration, maintenance guidance, and shared spatial computing.",
   "domain": "metaverse",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:sc-interaction", "label": "Supply-Chain Interaction"}],
+  "subClassOf": [{"@id": "urn:ngm:class:sc-interaction", "label": "Interaction Technology"}],
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:digital-content-overlay", "label": "Digital Content Overlay"},
-      {"@id": "urn:ngm:class:ar-overlay", "label": "AR Overlay"}
+      {"@id": "urn:ngm:class:ar-overlay", "label": "Ar Overlay"}
     ]
   },
   "quality": 0.72

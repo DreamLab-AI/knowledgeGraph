@@ -31,7 +31,7 @@ public:: true
       {"@id": "urn:ngm:class:verifiable-credentials", "label": "Verifiable Credentials"},
       {"@id": "urn:ngm:class:decentralized-identifiers", "label": "Decentralized Identifiers"},
       {"@id": "urn:ngm:class:bbs-plus-signatures", "label": "BBS+ Signatures"},
-      {"@id": "urn:ngm:class:zk-snark", "label": "zk-SNARK"},
+      {"@id": "urn:ngm:class:zk-snark", "label": "ZK-SNARK"},
       {"@id": "urn:ngm:class:trusted-execution-environment", "label": "Trusted Execution Environment"}
     ],
     "enables": [
@@ -39,7 +39,7 @@ public:: true
       {"@id": "urn:ngm:class:identity-verification", "label": "Identity Verification"},
       {"@id": "urn:ngm:class:anonymous-credential", "label": "Anonymous Credential"},
       {"@id": "urn:ngm:class:age-verification", "label": "Age Verification"},
-      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self-Sovereign Identity"}
+      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self Sovereign Identity"}
     ],
     "requires": [
       {"@id": "urn:ngm:class:cryptographic-commitment", "label": "Cryptographic Commitment"},

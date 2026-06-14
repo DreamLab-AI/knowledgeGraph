@@ -72,7 +72,7 @@ public:: true
   "qualityScore": 0.7,
   "subClassOf": {
     "@id": "urn:ngm:class:decentralised-finance",
-    "label": "Decentralised Finance Domain"
+    "label": "Decentralised Finance"
   },
   "relations": {
     "hasPart": [
@@ -92,7 +92,7 @@ public:: true
     "partOf": [
       {
         "@id": "urn:ngm:class:decentralised-finance",
-        "label": "Decentralised Finance Domain"
+        "label": "Decentralised Finance"
       },
       {
         "@id": "urn:ngm:class:layer-two-ecosystem",

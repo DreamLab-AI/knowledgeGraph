@@ -360,11 +360,11 @@ public:: true
     },
     {
       "@id": "urn:ngm:class:bc-token-and-asset",
-      "label": "BC Token And Asset"
+      "label": "Token and Asset"
     },
     {
       "@id": "urn:ngm:class:bc-token-and-asset",
-      "label": "BC Token And Asset"
+      "label": "Token and Asset"
     }
   ],
   "relations": {
@@ -375,11 +375,11 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:creator-royalties",
-        "label": "Creator Royalty"
+        "label": "Creator Royalties"
       },
       {
         "@id": "urn:ngm:class:erc1155-standard",
-        "label": "ERC-1155 Standard"
+        "label": "ERC1155 Standard"
       },
       {
         "@id": "urn:ngm:class:erc-721-standard",
@@ -451,11 +451,11 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:real-world-asset-tokenisation",
-        "label": "Real World Asset Tokenisation"
+        "label": "Real-World Asset Tokenisation"
       },
       {
         "@id": "urn:ngm:class:soulbound-tokens",
-        "label": "Soulbound Token"
+        "label": "Soulbound Tokens"
       },
       {
         "@id": "urn:ngm:class:digital-ownership",
@@ -489,7 +489,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:erc1155-standard",
-        "label": "ERC-1155 Standard"
+        "label": "ERC1155 Standard"
       },
       {
         "@id": "urn:ngm:class:erc-721-standard",
@@ -591,7 +591,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:real-world-asset-tokenisation",
-        "label": "Real World Asset Tokenisation"
+        "label": "Real-World Asset Tokenisation"
       }
     ],
     "standardizedBy": [

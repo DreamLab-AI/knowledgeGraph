@@ -113,7 +113,7 @@ alias:: FeatureEngineering
     "enables": [
       {
         "@id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning"
+        "label": "Machine Learning Discipline"
       },
       {
         "@id": "urn:ngm:class:model-training",

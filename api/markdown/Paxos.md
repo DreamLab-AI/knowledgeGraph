@@ -50,7 +50,7 @@ public:: true
     "contrastsWith": [
       {"@id": "urn:ngm:class:byzantine-fault-tolerance", "label": "Byzantine Fault Tolerance"},
       {"@id": "urn:ngm:class:nakamoto-consensus", "label": "Nakamoto Consensus"},
-      {"@id": "urn:ngm:class:raft-consensus", "label": "Raft Consensus"},
+      {"@id": "urn:ngm:class:raft-consensus", "label": "RAFT Consensus"},
       {"@id": "urn:ngm:class:hot-stuff-consensus", "label": "HotStuff Consensus"}
     ],
     "relatedTo": [

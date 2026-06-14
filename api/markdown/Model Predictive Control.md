@@ -62,7 +62,7 @@ public:: true
     ],
     "uses": [
       {"@id": "urn:ngm:class:kalman-filter", "label": "Kalman Filter"},
-      {"@id": "urn:ngm:class:state-space-model", "label": "State-Space Model"},
+      {"@id": "urn:ngm:class:state-space-model", "label": "State Space Model"},
       {"@id": "urn:ngm:class:nonlinear-programming", "label": "Nonlinear Programming"}
     ],
     "contrastsWith": [
@@ -71,7 +71,7 @@ public:: true
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
-      {"@id": "urn:ngm:class:whole-body-control", "label": "Whole-Body Control"},
+      {"@id": "urn:ngm:class:whole-body-control", "label": "Whole Body Control"},
       {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"}
     ],
     "bridgesTo": [

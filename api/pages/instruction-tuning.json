@@ -67,7 +67,7 @@
     "contrastsWith": [
       {
         "id": "urn:ngm:class:few-shot-prompting",
-        "label": "Few Shot Prompting"
+        "label": "Few-Shot Prompting"
       },
       {
         "id": "urn:ngm:class:pretraining",
@@ -87,7 +87,7 @@
     "uses": [
       {
         "id": "urn:ngm:class:chain-of-thought-prompting",
-        "label": "Chain Of Thought Prompting"
+        "label": "Chain-of-Thought Prompting"
       },
       {
         "id": "urn:ngm:class:self-instruct",
@@ -95,7 +95,7 @@
       },
       {
         "id": "urn:ngm:class:parameter-efficient-fine-tuning",
-        "label": "Parameter Efficient Fine Tuning"
+        "label": "Parameter-Efficient Fine-Tuning"
       }
     ],
     "supports": [],

@@ -29,7 +29,7 @@ alias:: W3C (World Wide Web Consortium)
     "relatedTo": [
       {"@id": "urn:ngm:class:web-standard", "label": "Web Standard"},
       {"@id": "urn:ngm:class:web-standards", "label": "Web Standards"},
-      {"@id": "urn:ngm:class:semantic-web-linked-data-standard", "label": "Semantic Web"},
+      {"@id": "urn:ngm:class:semantic-web-linked-data-standard", "label": "Semantic Web Linked Data Standard"},
       {"@id": "urn:ngm:class:linked-data", "label": "Linked Data"},
       {"@id": "urn:ngm:class:ietf", "label": "IETF"}
     ],

@@ -71,7 +71,7 @@ public:: true
     ],
     "bridgesTo": [
       {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:on-chain-governance", "label": "On-Chain Governance"}
+      {"@id": "urn:ngm:class:on-chain-governance", "label": "On-chain Governance"}
     ],
     "standardizedBy": [
       {"@id": "urn:ngm:class:bank-for-international-settlements", "label": "Bank for International Settlements"},

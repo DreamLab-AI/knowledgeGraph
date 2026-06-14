@@ -37,7 +37,7 @@ public:: true
     ],
     "enables": [
       {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"},
-      {"@id": "urn:ngm:class:technology-programme-delivery-planning", "label": "Delivery Planning"}
+      {"@id": "urn:ngm:class:technology-programme-delivery-planning", "label": "Technology Programme Delivery Planning"}
     ]
   },
   "quality": 0.8

@@ -49,7 +49,7 @@
       },
       {
         "id": "urn:ngm:class:rb-1013-localization",
-        "label": "Localization"
+        "label": "RB 1013 localization"
       },
       {
         "id": "urn:ngm:class:configuration-space",
@@ -59,7 +59,7 @@
     "enables": [
       {
         "id": "urn:ngm:class:rb-1007-trajectory-generation",
-        "label": "Trajectory Generation"
+        "label": "RB-1007-trajectory-generation"
       },
       {
         "id": "urn:ngm:class:navigation",
@@ -146,7 +146,7 @@
     "relatedTo": [
       {
         "id": "urn:ngm:class:slam",
-        "label": "Simultaneous Localisation and Mapping"
+        "label": "SLAM"
       },
       {
         "id": "urn:ngm:class:multi-robot-coordination",

@@ -45,7 +45,7 @@
       {"@id": "urn:ngm:class:psychology", "label": "Psychology"}
     ],
     "supports": [
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"},
       {"@id": "urn:ngm:class:explainable-ai", "label": "Explainable AI"},
       {"@id": "urn:ngm:class:user-experience-design", "label": "User Experience Design"}
     ],

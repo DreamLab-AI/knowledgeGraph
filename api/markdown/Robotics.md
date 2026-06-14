@@ -151,7 +151,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning"
+        "label": "Machine Learning Discipline"
       },
       {
         "@id": "urn:ngm:class:motion-control",
@@ -165,7 +165,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:control-system",
-        "label": "Control Systems"
+        "label": "Control System"
       },
       {
         "@id": "urn:ngm:class:kinematics",
@@ -183,7 +183,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:industrial-automation",
-        "label": "Industrial Automation"
+        "label": "IndustrialAutomation"
       },
       {
         "@id": "urn:ngm:class:precision-engineering",

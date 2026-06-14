@@ -25,7 +25,7 @@ public:: true
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:machine-learning-discipline-technique", "label": "Machine Learning Technique"}],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:safety-and-alignment", "label": "Safety and Alignment"}, {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"}]
+    "relatedTo": [{"@id": "urn:ngm:class:safety-and-alignment", "label": "Safety and alignment"}, {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"}]
   },
   "quality": 0.72
 }

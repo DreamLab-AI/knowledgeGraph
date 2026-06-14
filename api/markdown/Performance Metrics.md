@@ -90,7 +90,7 @@ public:: true
     "relatedTo": [
       {"@id": "urn:ngm:class:confusion-matrix", "label": "Confusion Matrix"},
       {"@id": "urn:ngm:class:roc-curve", "label": "ROC Curve"},
-      {"@id": "urn:ngm:class:auc", "label": "Area Under the Curve"}
+      {"@id": "urn:ngm:class:auc", "label": "AUC"}
     ]
   },
   "sameAs": [

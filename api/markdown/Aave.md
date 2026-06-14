@@ -52,7 +52,7 @@ public:: true
       {"@id": "urn:ngm:class:self-liquidation", "label": "Self-Liquidation"}
     ],
     "implements": [
-      {"@id": "urn:ngm:class:on-chain-governance", "label": "On-Chain Governance"},
+      {"@id": "urn:ngm:class:on-chain-governance", "label": "On-chain Governance"},
       {"@id": "urn:ngm:class:algorithmic-interest-rate", "label": "Algorithmic Interest Rate"},
       {"@id": "urn:ngm:class:atoken", "label": "aToken"}
     ],

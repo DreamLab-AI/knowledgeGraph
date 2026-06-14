@@ -91,7 +91,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:industrial-automation",
-        "label": "Industrial Automation"
+        "label": "IndustrialAutomation"
       },
       {
         "@id": "urn:ngm:class:flight-control-systems",
@@ -139,7 +139,7 @@ public:: true
     "supports": [
       {
         "@id": "urn:ngm:class:cyber-physical-systems",
-        "label": "Cyber-Physical Systems"
+        "label": "Cyber Physical Systems"
       },
       {
         "@id": "urn:ngm:class:edge-computing",

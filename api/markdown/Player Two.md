@@ -67,7 +67,7 @@ alias:: PlayerTwo
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:player-two-platform-implementation", "label": "Player Two code"}
+      {"@id": "urn:ngm:class:player-two-platform-implementation", "label": "Player Two Platform Implementation"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:ai-video", "label": "AI Video"},

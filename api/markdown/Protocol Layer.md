@@ -41,7 +41,7 @@ alias:: ProtocolLayer
     "implements": [
       {
         "@id": "urn:ngm:class:technology-infrastructure",
-        "label": "infrastructure"
+        "label": "Technology Infrastructure"
       }
     ]
   },

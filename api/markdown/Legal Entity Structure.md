@@ -23,9 +23,9 @@ public:: true
   "definition": "A legal entity structure is the organisational arrangement of incorporated bodies, subsidiaries, foundations, and operating companies through which an organisation conducts business and holds assets. It determines liability boundaries, tax treatment, governance rights, and regulatory obligations across jurisdictions. In crypto and DAO contexts it often pairs on-chain governance with off-chain foundations or LLCs to obtain legal personality.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:infra-legal-and-regulatory", "label": "Infrastructure Legal and Regulatory"}],
+  "subClassOf": [{"@id": "urn:ngm:class:infra-legal-and-regulatory", "label": "Legal and Regulatory"}],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:cross-border-compliance", "label": "Cross-Border Compliance"}, {"@id": "urn:ngm:class:treasury-management", "label": "Treasury Management"}]
+    "relatedTo": [{"@id": "urn:ngm:class:cross-border-compliance", "label": "Cross Border Compliance"}, {"@id": "urn:ngm:class:treasury-management", "label": "Treasury Management"}]
   },
   "quality": 0.72
 }

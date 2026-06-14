@@ -51,7 +51,7 @@ elevatedFrom:: [[Vibe Coding]]
   "relations": {
     "uses": [
       {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"}
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"}
     ],
     "requires": [
       {"@id": "urn:ngm:class:software-engineering", "label": "Software Engineering"}

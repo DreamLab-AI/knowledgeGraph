@@ -271,7 +271,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:kinematic-model",
-        "label": "Kinematic Model"
+        "label": "KinematicModel"
       },
       {
         "@id": "urn:ngm:class:position-controlled-robot",
@@ -283,7 +283,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:force-torque-sensor",
-        "label": "Force/Torque Sensor"
+        "label": "Force Torque Sensor"
       }
     ],
     "enables": [

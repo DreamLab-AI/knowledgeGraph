@@ -635,7 +635,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:multi-hop-reasoning",
-        "label": "Multi-hop Reasoning"
+        "label": "Multi-Hop Reasoning"
       },
       {
         "@id": "urn:ngm:class:recommendation-systems",
@@ -643,7 +643,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:retrieval-augmented-generation",
-        "label": "Retrieval Augmented Generation"
+        "label": "Retrieval-Augmented Generation"
       },
       {
         "@id": "urn:ngm:class:ai-search",
@@ -673,7 +673,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:description-logic",
-        "label": "Description Logics"
+        "label": "Description Logic"
       },
       {
         "@id": "urn:ngm:class:graph-embedding",
@@ -723,7 +723,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:node-based-diffusion-pipeline-interface",
-        "label": "ComfyUI"
+        "label": "Node-Based Diffusion Pipeline Interface"
       },
       {
         "@id": "urn:ngm:class:evaluation-benchmarks-and-leaderboards",
@@ -789,15 +789,15 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:multi-agent-rag-architecture-compendium",
-        "label": "Multi Agent RAG scrapbook"
+        "label": "Multi-Agent RAG Architecture Compendium"
       },
       {
         "@id": "urn:ngm:class:ai-assisted-ontology-elicitation-method",
-        "label": "Ontology conversation with AIs"
+        "label": "AI-Assisted Ontology Elicitation Method"
       },
       {
         "@id": "urn:ngm:class:semantic-web-linked-data-standard",
-        "label": "Semantic Web"
+        "label": "Semantic Web Linked Data Standard"
       }
     ],
     "supports": [
@@ -831,11 +831,11 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:constitutional-ai-training-methodology-language-model-family",
-        "label": "Anthropic Claude"
+        "label": "Constitutional AI Language Model Family"
       },
       {
         "@id": "urn:ngm:class:instruction-following-conversational-ai-system",
-        "label": "ChatGPT"
+        "label": "Instruction-Following Conversational AI System"
       },
       {
         "@id": "urn:ngm:class:clinical-decision-support",
@@ -849,7 +849,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:open-standard",
-        "label": "Open Standards"
+        "label": "Open Standard"
       },
       {
         "@id": "urn:ngm:class:owl-2-w3-c-recommendation",

@@ -88,7 +88,7 @@ public:: true
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:pattern-recognition", "label": "Pattern Recognition"},
-      {"@id": "urn:ngm:class:real-time-processing", "label": "Real-Time Processing"}
+      {"@id": "urn:ngm:class:real-time-processing", "label": "Real-time Processing"}
     ],
     "contrastsWith": [
       {"@id": "urn:ngm:class:lidar-system", "label": "LiDAR System"}

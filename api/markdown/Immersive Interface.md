@@ -61,7 +61,7 @@ alias:: ImmersiveInterface
     },
     {
       "@id": "urn:ngm:class:human-computer-interface",
-      "label": "Human-Computer Interface"
+      "label": "Human Computer Interface"
     }
   ],
   "relations": {

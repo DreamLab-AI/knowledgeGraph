@@ -31,7 +31,7 @@ public:: true
       {"@id": "urn:ngm:class:hyper-personalisation", "label": "Hyper personalisation"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"},
       {"@id": "urn:ngm:class:embeddings", "label": "Embeddings"}
     ],
     "relatedTo": [

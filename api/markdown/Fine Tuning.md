@@ -140,8 +140,8 @@ alias:: Fine-Tuning, Fine-tuning
     ],
     "hasPart": [
       {"@id": "urn:ngm:class:parameter-efficient-fine-tuning", "label": "Parameter-Efficient Fine-Tuning"},
-      {"@id": "urn:ngm:class:full-fine-tuning", "label": "Full Fine-Tuning"},
-      {"@id": "urn:ngm:class:supervised-fine-tuning", "label": "Supervised Fine-Tuning"}
+      {"@id": "urn:ngm:class:full-fine-tuning", "label": "Full Fine Tuning"},
+      {"@id": "urn:ngm:class:supervised-fine-tuning", "label": "Supervised Fine Tuning"}
     ],
     "partOf": [
       {"@id": "urn:ngm:class:model-training-pipeline", "label": "Model Training Pipeline"}

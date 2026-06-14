@@ -28,7 +28,7 @@ public:: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:end-effector", "label": "End-Effector"},
+      {"@id": "urn:ngm:class:end-effector", "label": "End Effector"},
       {"@id": "urn:ngm:class:grasp-planning", "label": "Grasp Planning"},
       {"@id": "urn:ngm:class:robot-perception", "label": "Robot Perception"}
     ],

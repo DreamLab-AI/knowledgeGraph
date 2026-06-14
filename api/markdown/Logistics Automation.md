@@ -28,7 +28,7 @@ public:: true
     "uses": [
       {"@id": "urn:ngm:class:warehouse-automation", "label": "Warehouse Automation"},
       {"@id": "urn:ngm:class:autonomous-vehicle", "label": "Autonomous Vehicle"},
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"}
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:supply-chain", "label": "Supply Chain"},

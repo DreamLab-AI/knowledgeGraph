@@ -150,7 +150,7 @@ alias:: PathPlanning, RB-1016-path-planning
       },
       {
         "@id": "urn:ngm:class:rb-1013-localization",
-        "label": "Localization"
+        "label": "RB 1013 localization"
       },
       {
         "@id": "urn:ngm:class:configuration-space",
@@ -160,7 +160,7 @@ alias:: PathPlanning, RB-1016-path-planning
     "enables": [
       {
         "@id": "urn:ngm:class:rb-1007-trajectory-generation",
-        "label": "Trajectory Generation"
+        "label": "RB-1007-trajectory-generation"
       },
       {
         "@id": "urn:ngm:class:navigation",
@@ -248,7 +248,7 @@ alias:: PathPlanning, RB-1016-path-planning
     "relatedTo": [
       {
         "@id": "urn:ngm:class:slam",
-        "label": "Simultaneous Localisation and Mapping"
+        "label": "SLAM"
       },
       {
         "@id": "urn:ngm:class:multi-robot-coordination",

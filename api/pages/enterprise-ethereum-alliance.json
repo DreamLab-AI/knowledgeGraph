@@ -9,7 +9,7 @@
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-governance-and-regulation",
-      "label": "BC Governance and Regulation"
+      "label": "Governance and Regulation"
     }
   ],
   "entityType": "Class",
@@ -95,7 +95,7 @@
     "bridgesTo": [
       {
         "id": "urn:ngm:class:decentralized-finance",
-        "label": "Decentralised Finance"
+        "label": "Decentralized Finance"
       },
       {
         "id": "urn:ngm:class:supply-chain-management",

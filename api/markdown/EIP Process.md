@@ -23,7 +23,7 @@ public:: true
   "definition": "The EIP Process is the governance workflow by which Ethereum Improvement Proposals are submitted, reviewed, and standardised. It defines proposal types (Core, Networking, Interface, ERC, Meta), status stages from Draft through Final, and the role of editors and community review in reaching rough consensus. It is the mechanism through which protocol changes and token standards such as ERC-20 are coordinated across the Ethereum ecosystem.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:bc-governance-and-regulation", "label": "Blockchain Governance and Regulation"}],
+  "subClassOf": [{"@id": "urn:ngm:class:bc-governance-and-regulation", "label": "Governance and Regulation"}],
   "relations": {
     "relatedTo": [{"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}, {"@id": "urn:ngm:class:decentralized-governance", "label": "Decentralized Governance"}]
   },

@@ -152,7 +152,7 @@
     "relatedTo": [
       {
         "id": "urn:ngm:class:ci-cd-automation",
-        "label": "CI/CD Automation"
+        "label": "CI-CD Automation"
       },
       {
         "id": "urn:ngm:class:feature-flags",

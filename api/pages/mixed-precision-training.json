@@ -61,7 +61,7 @@
     "dependsOn": [
       {
         "id": "urn:ngm:class:floating-point-arithmetic",
-        "label": "Floating Point Arithmetic"
+        "label": "Floating-Point Arithmetic"
       },
       {
         "id": "urn:ngm:class:gradient-computation",

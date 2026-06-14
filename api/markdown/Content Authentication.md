@@ -76,7 +76,7 @@ public:: true
     "uses": [
       {
         "@id": "urn:ngm:class:digital-content-provenance-marking",
-        "label": "Watermarks"
+        "label": "Digital Content Provenance Marking"
       },
       {
         "@id": "urn:ngm:class:blockchain",

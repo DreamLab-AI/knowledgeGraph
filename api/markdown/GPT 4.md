@@ -72,7 +72,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:openai-research-organisation",
-        "label": "OpenAI"
+        "label": "OpenAI Research Organisation"
       }
     ],
     "enables": [

@@ -52,14 +52,14 @@ public:: true
       {"@id": "urn:ngm:class:trust-framework", "label": "Trust Framework"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:eu-ai-act-regulatory-instrument", "label": "EU AI Act"},
+      {"@id": "urn:ngm:class:eu-ai-act-regulatory-instrument", "label": "EU AI Act Regulatory Instrument"},
       {"@id": "urn:ngm:class:nist-ai-rmf", "label": "NIST AI RMF"},
       {"@id": "urn:ngm:class:gdpr", "label": "GDPR"},
       {"@id": "urn:ngm:class:algorithmic-accountability", "label": "Algorithmic Accountability"}
     ],
     "standardizedBy": [
       {"@id": "urn:ngm:class:nist", "label": "NIST"},
-      {"@id": "urn:ngm:class:iso-standards", "label": "ISO Standards"},
+      {"@id": "urn:ngm:class:iso-standards", "label": "Iso Standards"},
       {"@id": "urn:ngm:class:iso-iec-jtc1-sc42", "label": "ISO/IEC JTC 1/SC 42"}
     ],
     "contrastsWith": [

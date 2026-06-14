@@ -121,7 +121,7 @@ alias:: EthicalFramework
     },
     {
       "@id": "urn:ngm:class:ai-governance-principle",
-      "label": "AI Governance Principle"
+      "label": "Ai Governance Principle"
     }
   ],
   "relations": {

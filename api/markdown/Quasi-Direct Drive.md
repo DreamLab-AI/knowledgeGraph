@@ -23,7 +23,7 @@ public:: true
   "definition": "Quasi-direct drive (QDD) is an actuation architecture that pairs a high-torque electric motor with a low-ratio gearbox to achieve high force fidelity, backdrivability, and impact tolerance while retaining usable torque density. By minimising gear reduction it preserves transparency between the motor and the load, enabling accurate force sensing and control without dedicated torque sensors. It is a dominant approach in legged and dynamic robots.",
   "domain": "robotics",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:robo-actuation-and-control", "label": "Robotics Actuation and Control"}],
+  "subClassOf": [{"@id": "urn:ngm:class:robo-actuation-and-control", "label": "Actuation and Control"}],
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:mechanical-component", "label": "Mechanical Component"}

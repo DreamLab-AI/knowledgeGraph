@@ -165,14 +165,14 @@ alias:: VirtualWorld
     },
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
-      "label": "SC Platform And Environment"
+      "label": "Platform and Environment"
     }
   ],
   "relations": {
     "hasPart": [
       {
         "@id": "urn:ngm:class:economic-systems",
-        "label": "Economic System"
+        "label": "Economic Systems"
       },
       {
         "@id": "urn:ngm:class:object-persistence",

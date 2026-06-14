@@ -119,7 +119,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:implementation-examples",
-        "label": "Implementation Example"
+        "label": "implementation examples"
       }
     ],
     "requires": [
@@ -143,7 +143,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:inclusive-xr-design",
-        "label": "Inclusive XR Design"
+        "label": "Inclusive Xr Design"
       }
     ],
     "partOf": [

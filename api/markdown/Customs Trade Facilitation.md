@@ -449,7 +449,7 @@ public:: true
     "requires": [
       {
         "@id": "urn:ngm:class:cryptographic-hash-function",
-        "label": "Cryptographic Hash Functions"
+        "label": "Cryptographic Hash Function"
       },
       {
         "@id": "urn:ngm:class:data-governance-framework",
@@ -465,7 +465,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:interoperability-standard",
-        "label": "Interoperability Standards"
+        "label": "Interoperability Standard"
       },
       {
         "@id": "urn:ngm:class:risk-scoring-algorithm",
@@ -551,11 +551,11 @@ public:: true
     "uses": [
       {
         "@id": "urn:ngm:class:cryptographic-hash-function",
-        "label": "Cryptographic Hash Functions"
+        "label": "Cryptographic Hash Function"
       },
       {
         "@id": "urn:ngm:class:decentralized-identifiers",
-        "label": "Decentralised Identifiers"
+        "label": "Decentralized Identifiers"
       },
       {
         "@id": "urn:ngm:class:optical-character-recognition",
@@ -563,11 +563,11 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:zero-knowledge-proof",
-        "label": "Zero-Knowledge Proofs"
+        "label": "Zero-Knowledge Proof"
       },
       {
         "@id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning"
+        "label": "Machine Learning Discipline"
       },
       {
         "@id": "urn:ngm:class:natural-language-processing",

@@ -23,7 +23,7 @@ public:: true
   "definition": "A tokenization system is the end-to-end technical and operational infrastructure that converts rights, assets, or value into blockchain tokens and manages their lifecycle of issuance, transfer, custody, and redemption. It combines smart-contract templates, identity and compliance modules, and registry services to ensure that tokens reliably represent and preserve their underlying claims.",
   "domain": "blockchain",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:bc-token-and-asset", "label": "Blockchain Token and Asset"}],
+  "subClassOf": [{"@id": "urn:ngm:class:bc-token-and-asset", "label": "Token and Asset"}],
   "relations": {
     "relatedTo": [{"@id": "urn:ngm:class:fractionalized-nft", "label": "Fractionalized NFT"}, {"@id": "urn:ngm:class:crypto-token", "label": "Crypto Token"}]
   },

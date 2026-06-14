@@ -23,7 +23,7 @@ public:: true
   "definition": "An observation model (or measurement model) is the probabilistic relationship that specifies the likelihood of a sensor measurement given the underlying state of a system. In recursive Bayesian estimation it provides the likelihood term used to correct a predicted state belief against incoming data. Its accuracy, including the noise characteristics it encodes, directly governs the quality of state estimation.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:robo-perception", "label": "Robotics Perception"}],
+  "subClassOf": [{"@id": "urn:ngm:class:robo-perception", "label": "Perception and Sensing"}],
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:bayes-filter", "label": "Bayes Filter"},

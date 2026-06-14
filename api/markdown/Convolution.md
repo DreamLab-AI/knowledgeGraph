@@ -54,7 +54,7 @@ public:: true
       {"@id": "urn:ngm:class:translation-equivariance", "label": "Translation Equivariance"}
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:self-attention", "label": "Self-Attention"},
+      {"@id": "urn:ngm:class:self-attention", "label": "Self Attention"},
       {"@id": "urn:ngm:class:recurrent-neural-network", "label": "Recurrent Neural Network"}
     ],
     "relatedTo": [

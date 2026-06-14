@@ -27,7 +27,7 @@ public:: true
   "relations": {
     "uses": [{"@id": "urn:ngm:class:digital-rights", "label": "Digital Rights"}],
     "enables": [{"@id": "urn:ngm:class:royalty-distribution", "label": "Royalty Distribution"}],
-    "relatedTo": [{"@id": "urn:ngm:class:intellectual-property-rights-framework", "label": "copyright"}, {"@id": "urn:ngm:class:content-creation", "label": "Content Creation"}],
+    "relatedTo": [{"@id": "urn:ngm:class:intellectual-property-rights-framework", "label": "Intellectual Property Rights Framework"}, {"@id": "urn:ngm:class:content-creation", "label": "Content Creation"}],
     "requires": [{"@id": "urn:ngm:class:asset-management", "label": "Asset Management"}]
   },
   "quality": 0.8

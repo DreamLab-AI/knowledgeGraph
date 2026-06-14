@@ -401,7 +401,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:convolutional-neural-network",
-        "label": "Convolutional Neural Networks"
+        "label": "Convolutional Neural Network"
       },
       {
         "@id": "urn:ngm:class:feature-pyramid-network",
@@ -537,7 +537,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:node-based-diffusion-pipeline-interface",
-        "label": "ComfyUI"
+        "label": "Node-Based Diffusion Pipeline Interface"
       },
       {
         "@id": "urn:ngm:class:computer-vision",
@@ -545,7 +545,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:human-pose-slam-capture-system",
-        "label": "Human tracking and SLAM capture"
+        "label": "Human Pose SLAM Capture System"
       }
     ],
     "supports": [

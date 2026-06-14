@@ -27,7 +27,7 @@ public:: true
   "relations": {
     "hasPart": [
       {"@id": "urn:ngm:class:alphafold", "label": "AlphaFold"},
-      {"@id": "urn:ngm:class:gemini-multimodal-language-model", "label": "Gemini"},
+      {"@id": "urn:ngm:class:gemini-multimodal-language-model", "label": "Gemini Multimodal Language Model"},
       {"@id": "urn:ngm:class:alphacode", "label": "AlphaCode"}
     ],
     "partOf": [
@@ -64,7 +64,7 @@ public:: true
       {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"}
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:openai-research-organisation", "label": "OpenAI"},
+      {"@id": "urn:ngm:class:openai-research-organisation", "label": "OpenAI Research Organisation"},
       {"@id": "urn:ngm:class:anthropic", "label": "Anthropic"},
       {"@id": "urn:ngm:class:meta-ai", "label": "Meta AI"}
     ],

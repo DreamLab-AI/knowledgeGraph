@@ -13,11 +13,11 @@
     },
     {
       "id": "urn:ngm:class:infra-legal-and-regulatory",
-      "label": "Infra Legal And Regulatory"
+      "label": "Legal and Regulatory"
     },
     {
       "id": "urn:ngm:class:infra-security-and-identity",
-      "label": "Infra Security And Identity"
+      "label": "Security and Identity"
     }
   ],
   "entityType": "Class",
@@ -43,7 +43,7 @@
       },
       {
         "id": "urn:ngm:class:life-cycle-assessment",
-        "label": "Lifecycle Assessment"
+        "label": "Life Cycle Assessment"
       },
       {
         "id": "urn:ngm:class:satellite-monitoring",
@@ -115,7 +115,7 @@
       },
       {
         "id": "urn:ngm:class:science-based-targets",
-        "label": "Science-Based Targets"
+        "label": "Science Based Targets"
       }
     ],
     "dependsOn": [],
@@ -150,7 +150,7 @@
     "uses": [
       {
         "id": "urn:ngm:class:artificial-intelligence",
-        "label": "AI"
+        "label": "Artificial Intelligence"
       },
       {
         "id": "urn:ngm:class:digital-product-passport",
@@ -158,7 +158,7 @@
       },
       {
         "id": "urn:ngm:class:life-cycle-assessment",
-        "label": "Lifecycle Assessment"
+        "label": "Life Cycle Assessment"
       },
       {
         "id": "urn:ngm:class:remote-sensing",
@@ -174,7 +174,7 @@
       },
       {
         "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning"
+        "label": "Machine Learning Discipline"
       }
     ],
     "supports": [
@@ -196,7 +196,7 @@
       },
       {
         "id": "urn:ngm:class:sustainability-reporting",
-        "label": "Sustainability Reporting"
+        "label": "SustainabilityReporting"
       },
       {
         "id": "urn:ngm:class:circular-economy",

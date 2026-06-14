@@ -492,7 +492,7 @@ alias:: ExteroceptiveSensor
       },
       {
         "@id": "urn:ngm:class:analog-to-digital-converter",
-        "label": "Analog-to-Digital Converter"
+        "label": "Analog To Digital Converter"
       },
       {
         "@id": "urn:ngm:class:calibration-target",
@@ -540,7 +540,7 @@ alias:: ExteroceptiveSensor
       },
       {
         "@id": "urn:ngm:class:visual-servoing",
-        "label": "Visual Servoing"
+        "label": "VisualServoing"
       },
       {
         "@id": "urn:ngm:class:object-detection",
@@ -626,7 +626,7 @@ alias:: ExteroceptiveSensor
       },
       {
         "@id": "urn:ngm:class:multimodal-ai-architecture-learning",
-        "label": "Multi-Modal Learning"
+        "label": "Multimodal Learning"
       },
       {
         "@id": "urn:ngm:class:computer-vision",
@@ -678,7 +678,7 @@ alias:: ExteroceptiveSensor
       },
       {
         "@id": "urn:ngm:class:iso-ts-15066",
-        "label": "ISO/TS 15066"
+        "label": "ISO TS 15066"
       },
       {
         "@id": "urn:ngm:class:ros-sensor-msgs",

@@ -69,7 +69,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:anti-counterfeiting",
-        "label": "Anti-Counterfeiting"
+        "label": "Anti Counterfeiting"
       }
     ],
     "requires": [

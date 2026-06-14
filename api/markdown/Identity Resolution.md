@@ -65,10 +65,10 @@ public:: true
     ],
     "bridgesTo": [
       {"@id": "urn:ngm:class:verifiable-credential", "label": "Verifiable Credential"},
-      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self-Sovereign Identity"}
+      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self Sovereign Identity"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:privacy-preserving-analytics", "label": "Privacy-Preserving Analytics"},
+      {"@id": "urn:ngm:class:privacy-preserving-analytics", "label": "Privacy Preserving Analytics"},
       {"@id": "urn:ngm:class:data-clean-room", "label": "Data Clean Room"},
       {"@id": "urn:ngm:class:consent-management", "label": "Consent Management"}
     ]

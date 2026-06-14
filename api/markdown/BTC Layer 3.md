@@ -768,11 +768,11 @@ public:: true
     },
     {
       "@id": "urn:ngm:class:bc-network-component",
-      "label": "BC Network Component"
+      "label": "Network Component"
     },
     {
       "@id": "urn:ngm:class:bc-network-component",
-      "label": "BC Network Component"
+      "label": "Network Component"
     }
   ],
   "relations": {
@@ -837,7 +837,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:cryptographic-commitment",
-        "label": "Cryptographic Commitments"
+        "label": "Cryptographic Commitment"
       },
       {
         "@id": "urn:ngm:class:seg-wit",
@@ -849,7 +849,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol",
-        "label": "Bitcoin"
+        "label": "Bitcoin Proof-of-Work Protocol"
       },
       {
         "@id": "urn:ngm:class:lightning-network",
@@ -867,7 +867,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:atomic-swap",
-        "label": "Atomic Swaps"
+        "label": "Atomic Swap"
       },
       {
         "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-de-fi",
@@ -879,7 +879,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:non-fungible-token",
-        "label": "Non-Fungible Tokens"
+        "label": "Non-Fungible Token"
       },
       {
         "@id": "urn:ngm:class:smart-contracts-on-bitcoin",
@@ -905,7 +905,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:fraud-proof",
-        "label": "Fraud Proofs"
+        "label": "Fraud Proof"
       },
       {
         "@id": "urn:ngm:class:merged-mining",
@@ -935,11 +935,11 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:hash-time-locked-contract",
-        "label": "Hash Time-Locked Contracts"
+        "label": "Hash Time-Locked Contract"
       },
       {
         "@id": "urn:ngm:class:merkle-proof",
-        "label": "Merkle Proofs"
+        "label": "Merkle Proof"
       },
       {
         "@id": "urn:ngm:class:point-time-locked-contracts",
@@ -947,7 +947,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:schnorr-signature",
-        "label": "Schnorr Signatures"
+        "label": "Schnorr Signature"
       },
       {
         "@id": "urn:ngm:class:taproot-witnesses",
@@ -959,7 +959,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:zero-knowledge-proof",
-        "label": "Zero-Knowledge Proofs"
+        "label": "Zero-Knowledge Proof"
       }
     ],
     "relatedTo": [
@@ -969,7 +969,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:de-fi-protocol",
-        "label": "DeFi Protocols"
+        "label": "De Fi Protocol"
       },
       {
         "@id": "urn:ngm:class:layer-2-solutions",
@@ -981,11 +981,11 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:state-channel",
-        "label": "State Channels"
+        "label": "State Channel"
       },
       {
         "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol",
-        "label": "Bitcoin"
+        "label": "Bitcoin Proof-of-Work Protocol"
       },
       {
         "@id": "urn:ngm:class:digital-asset-risks",
@@ -1041,7 +1041,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:lnp-bp-standards-association",
-        "label": "LNP/BP Standards Association"
+        "label": "LNP-BP Standards Association"
       }
     ]
   },

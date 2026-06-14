@@ -75,7 +75,7 @@ public:: true
   "maturity": "emerging",
   "subClassOf": {
     "@id": "urn:ngm:class:infra-legal-and-regulatory",
-    "label": "Infra Legal And Regulatory"
+    "label": "Legal and Regulatory"
   },
   "relations": {
     "hasPart": [
@@ -151,7 +151,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:iso-iec-38500",
-        "label": "ISO/IEC 38500"
+        "label": "ISO-IEC 38500"
       },
       {
         "@id": "urn:ngm:class:togaf",

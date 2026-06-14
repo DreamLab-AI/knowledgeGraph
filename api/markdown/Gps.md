@@ -121,11 +121,11 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:long-range-navigation",
-        "label": "Long-range Navigation"
+        "label": "Long-Range Navigation"
       },
       {
         "@id": "urn:ngm:class:multi-robot-coordination",
-        "label": "Multi-robot Coordination"
+        "label": "Multi-Robot Coordination"
       }
     ],
     "partOf": [

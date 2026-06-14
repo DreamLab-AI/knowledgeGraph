@@ -61,7 +61,7 @@ public:: true
   "subClassOf": [
     {
       "@id": "urn:ngm:class:metaverse",
-      "label": "Metaverse Domain"
+      "label": "Metaverse"
     }
   ],
   "relations": {

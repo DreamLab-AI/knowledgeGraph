@@ -52,7 +52,7 @@
     "dependsOn": [
       {
         "id": "urn:ngm:class:high-bandwidth-memory",
-        "label": "High-Bandwidth Memory"
+        "label": "High Bandwidth Memory"
       },
       {
         "id": "urn:ngm:class:model-training",
@@ -62,7 +62,7 @@
     "implements": [
       {
         "id": "urn:ngm:class:scaled-dot-product-attention",
-        "label": "Scaled Dot-Product Attention"
+        "label": "Scaled Dot Product Attention"
       },
       {
         "id": "urn:ngm:class:online-softmax",

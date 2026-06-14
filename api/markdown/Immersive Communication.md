@@ -149,7 +149,7 @@ public:: true
     "bridgesTo": [
       {
         "@id": "urn:ngm:class:human-computer-interaction",
-        "label": "Human-Computer Interaction"
+        "label": "Human Computer Interaction"
       },
       {
         "@id": "urn:ngm:class:spatial-computing",

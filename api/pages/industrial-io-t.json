@@ -59,7 +59,7 @@
       },
       {
         "id": "urn:ngm:class:industrial-automation",
-        "label": "Industrial Automation"
+        "label": "IndustrialAutomation"
       },
       {
         "id": "urn:ngm:class:condition-monitoring",
@@ -126,7 +126,7 @@
     "relatedTo": [
       {
         "id": "urn:ngm:class:cyber-physical-systems",
-        "label": "Cyber-Physical Systems"
+        "label": "Cyber Physical Systems"
       },
       {
         "id": "urn:ngm:class:industry-4-0",

@@ -37,7 +37,7 @@ public:: true
     "enables": [
       {"@id": "urn:ngm:class:decentralized-authentication", "label": "Decentralized Authentication"},
       {"@id": "urn:ngm:class:verifiable-credentials", "label": "Verifiable Credentials"},
-      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self-Sovereign Identity"}
+      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self Sovereign Identity"}
     ],
     "dependsOn": [
       {"@id": "urn:ngm:class:public-key-infrastructure", "label": "Public Key Infrastructure"},

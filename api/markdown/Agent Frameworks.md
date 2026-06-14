@@ -520,7 +520,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Model"
+        "label": "Large Language Models"
       },
       {
         "@id": "urn:ngm:class:observability-stack",
@@ -576,7 +576,7 @@ public:: true
     "implements": [
       {
         "@id": "urn:ngm:class:chain-of-thought",
-        "label": "Chain-of-Thought"
+        "label": "Chain of Thought"
       },
       {
         "@id": "urn:ngm:class:hierarchical-topology",
@@ -588,7 +588,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:plan-and-execute-pattern",
-        "label": "Plan-and-Execute Pattern"
+        "label": "Plan and Execute Pattern"
       },
       {
         "@id": "urn:ngm:class:re-act-pattern",
@@ -660,7 +660,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:large-scale-pretrained-foundation-model",
-        "label": "Foundation Models"
+        "label": "Large-Scale Pretrained Foundation Model"
       },
       {
         "@id": "urn:ngm:class:prompt-engineering",

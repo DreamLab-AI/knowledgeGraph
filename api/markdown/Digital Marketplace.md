@@ -91,7 +91,7 @@ public:: true
     "requires": [
       {
         "@id": "urn:ngm:class:digital-wallet",
-        "label": "Digital Wallets"
+        "label": "Digital Wallet"
       },
       {
         "@id": "urn:ngm:class:blockchain-infrastructure",

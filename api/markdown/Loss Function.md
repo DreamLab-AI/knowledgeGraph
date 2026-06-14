@@ -47,7 +47,7 @@ public:: true
   "maturity": "stable",
   "subClassOf": {
     "@id": "urn:ngm:class:ai-technique",
-    "label": "Ai Technique"
+    "label": "AI Technique"
   },
   "sameAs": [
     {
@@ -161,7 +161,7 @@ public:: true
     "standardizedBy": [
       {
         "@id": "urn:ngm:class:iso-iec-22989-2022",
-        "label": "ISO/IEC 22989:2022"
+        "label": "ISO-IEC 22989 2022"
       }
     ],
     "contrastsWith": [

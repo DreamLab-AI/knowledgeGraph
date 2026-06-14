@@ -65,7 +65,7 @@ public:: true
       {"@id": "urn:ngm:class:stereo-camera", "label": "Stereo Camera"},
       {"@id": "urn:ngm:class:time-of-flight-sensor", "label": "Time-of-Flight Sensor"},
       {"@id": "urn:ngm:class:structured-light", "label": "Structured Light"},
-      {"@id": "urn:ngm:class:infrared-sensor", "label": "Infrared Sensor"}
+      {"@id": "urn:ngm:class:infrared-sensor", "label": "InfraredSensor"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:3-d-reconstruction", "label": "3D Reconstruction"},

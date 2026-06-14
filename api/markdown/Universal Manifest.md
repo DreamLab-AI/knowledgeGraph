@@ -177,11 +177,11 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:decentralized-identifiers",
-        "label": "Decentralized Identifier"
+        "label": "Decentralized Identifiers"
       },
       {
         "@id": "urn:ngm:class:verifiable-credentials",
-        "label": "Verifiable Credential"
+        "label": "Verifiable Credentials"
       },
       {
         "@id": "urn:ngm:class:metadata-schema",

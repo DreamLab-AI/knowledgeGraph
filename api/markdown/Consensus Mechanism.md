@@ -762,19 +762,19 @@ alias:: ConsensusMechanism
       },
       {
         "@id": "urn:ngm:class:proof-of-authority",
-        "label": "Proof-of-Authority"
+        "label": "Proof of Authority"
       },
       {
         "@id": "urn:ngm:class:proof-of-history",
-        "label": "Proof-of-History"
+        "label": "Proof of History"
       },
       {
         "@id": "urn:ngm:class:proof-of-stake",
-        "label": "Proof-of-Stake"
+        "label": "Proof of Stake"
       },
       {
         "@id": "urn:ngm:class:proof-of-work",
-        "label": "Proof-of-Work"
+        "label": "Proof Of Work"
       }
     ],
     "uses": [
@@ -840,7 +840,7 @@ alias:: ConsensusMechanism
     "supports": [
       {
         "@id": "urn:ngm:class:cross-chain-bridge",
-        "label": "Cross-Chain Bridges"
+        "label": "Cross-Chain Bridge"
       },
       {
         "@id": "urn:ngm:class:data-availability",

@@ -238,7 +238,7 @@ public:: true
       {"@id": "urn:ngm:class:recurrent-neural-network", "label": "Recurrent Neural Network"}
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:semantic-web-linked-data-standard", "label": "Semantic Web"},
+      {"@id": "urn:ngm:class:semantic-web-linked-data-standard", "label": "Semantic Web Linked Data Standard"},
       {"@id": "urn:ngm:class:knowledge-graphing", "label": "Knowledge Graphing"},
       {"@id": "urn:ngm:class:fraud-detection", "label": "Fraud Detection"}
     ],

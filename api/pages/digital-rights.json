@@ -20,7 +20,7 @@
     "requires": [
       {
         "id": "urn:ngm:class:enforcement-mechanism",
-        "label": "Enforcement Mechanisms"
+        "label": "Enforcement Mechanism"
       },
       {
         "id": "urn:ngm:class:technical-safeguards",
@@ -89,7 +89,7 @@
       },
       {
         "id": "urn:ngm:class:decentralized-identity",
-        "label": "Decentralised Identity"
+        "label": "Decentralized Identity"
       }
     ],
     "uses": [],

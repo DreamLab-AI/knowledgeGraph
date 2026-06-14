@@ -61,7 +61,7 @@ public:: true
     ],
     "partOf": [
       {"@id": "urn:ngm:class:robotics", "label": "Robotics"},
-      {"@id": "urn:ngm:class:industrial-automation", "label": "Industrial Automation"}
+      {"@id": "urn:ngm:class:industrial-automation", "label": "IndustrialAutomation"}
     ],
     "requires": [
       {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
@@ -90,7 +90,7 @@ public:: true
       {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
     ],
     "supports": [
-      {"@id": "urn:ngm:class:human-robot-collaboration", "label": "Human Robot Collaboration"},
+      {"@id": "urn:ngm:class:human-robot-collaboration", "label": "Human-Robot Collaboration"},
       {"@id": "urn:ngm:class:workplace-safety", "label": "Workplace Safety"}
     ],
     "standardizedBy": [

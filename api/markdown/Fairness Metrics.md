@@ -102,8 +102,8 @@ public:: true
     ],
     "standardizedBy": [
       {"@id": "urn:ngm:class:ieee-p7003-2021", "label": "IEEE P7003-2021"},
-      {"@id": "urn:ngm:class:nist-ai-rmf", "label": "NIST AI Risk Management Framework"},
-      {"@id": "urn:ngm:class:iso-iec-tr-24027", "label": "ISO/IEC TR 24027"}
+      {"@id": "urn:ngm:class:nist-ai-rmf", "label": "NIST AI RMF"},
+      {"@id": "urn:ngm:class:iso-iec-tr-24027", "label": "ISO-IEC TR 24027"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:ai-fairness", "label": "AI Fairness"},

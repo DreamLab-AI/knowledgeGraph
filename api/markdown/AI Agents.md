@@ -75,7 +75,7 @@ public:: true
       {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
       {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},
       {"@id": "urn:ngm:class:prompt-injection", "label": "Prompt Injection"},
-      {"@id": "urn:ngm:class:human-in-the-loop", "label": "Human-in-the-Loop"}
+      {"@id": "urn:ngm:class:human-in-the-loop", "label": "Human in the Loop"}
     ],
     "bridgesTo": [
       {"@id": "urn:ngm:class:robotic-systems", "label": "Robotic Systems"},

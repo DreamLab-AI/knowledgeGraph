@@ -89,7 +89,7 @@ public:: true
     },
     {
       "@id": "urn:ngm:class:economic-mechanism",
-      "label": "EconomicMechanism"
+      "label": "Economic Mechanism"
     }
   ],
   "relations": {
@@ -109,7 +109,7 @@ public:: true
       {"@id": "urn:ngm:class:transaction-fee", "label": "Transaction Fee"}
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:token-economics", "label": "Token Economics Domain"}
+      {"@id": "urn:ngm:class:token-economics", "label": "Token Economics"}
     ]
   },
   "provenance": {

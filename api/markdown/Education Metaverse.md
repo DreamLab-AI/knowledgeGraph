@@ -159,7 +159,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:collaboration-tools",
-        "label": "Collaboration Tool"
+        "label": "Collaboration Tools"
       },
       {
         "@id": "urn:ngm:class:content-authoring-system",

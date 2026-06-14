@@ -399,7 +399,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:digital-twin",
-        "label": "Digital Twins"
+        "label": "Digital Twin"
       },
       {
         "@id": "urn:ngm:class:non-destructive-editing",
@@ -489,11 +489,11 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:blender-3d-creation-suite",
-        "label": "Blender"
+        "label": "Blender 3D Creation Suite"
       },
       {
         "@id": "urn:ngm:class:nvidia-corporation-omniverse-platform",
-        "label": "NVIDIA Omniverse"
+        "label": "NVIDIA Omniverse Platform"
       },
       {
         "@id": "urn:ngm:class:unreal-engine",
@@ -519,7 +519,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:metaverse-platform",
-        "label": "Metaverse Platforms"
+        "label": "Metaverse Platform"
       },
       {
         "@id": "urn:ngm:class:robotics-simulation",

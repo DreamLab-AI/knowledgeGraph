@@ -99,7 +99,7 @@ public:: true
   "maturity": "established",
   "subClassOf": {
     "@id": "urn:ngm:class:telecollaboration",
-    "label": "Telecollaboration Domain"
+    "label": "Telecollaboration"
   },
   "relations": {
     "requires": [

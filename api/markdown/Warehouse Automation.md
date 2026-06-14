@@ -33,7 +33,7 @@ public:: true
   "subClassOf": [
     {
       "@id": "urn:ngm:class:industrial-automation",
-      "label": "Industrial Automation"
+      "label": "IndustrialAutomation"
     }
   ],
   "relations": {

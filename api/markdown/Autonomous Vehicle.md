@@ -109,7 +109,7 @@ alias:: Autonomous Vehicles
       {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
       {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
       {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
-      {"@id": "urn:ngm:class:lidar", "label": "LiDAR"}
+      {"@id": "urn:ngm:class:lidar", "label": "Lidar"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"},
@@ -135,12 +135,12 @@ alias:: Autonomous Vehicles
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:path-planning", "label": "Path Planning"},
-      {"@id": "urn:ngm:class:self-driving-car", "label": "Self-Driving Car"},
+      {"@id": "urn:ngm:class:self-driving-car", "label": "Self Driving Car"},
       {"@id": "urn:ngm:class:unmanned-ground-vehicle", "label": "Unmanned Ground Vehicle"}
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:self-driving-car", "label": "Self-Driving Car"},
+    {"@id": "urn:ngm:class:self-driving-car", "label": "Self Driving Car"},
     {"@id": "urn:ngm:class:driverless-vehicle", "label": "Driverless Vehicle"},
     {"@id": "urn:ngm:class:automated-vehicle", "label": "Automated Vehicle"}
   ],

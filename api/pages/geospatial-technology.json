@@ -19,11 +19,11 @@
     "hasPart": [
       {
         "id": "urn:ngm:class:gps",
-        "label": "GPS"
+        "label": "Gps"
       },
       {
         "id": "urn:ngm:class:lidar",
-        "label": "LiDAR"
+        "label": "Lidar"
       },
       {
         "id": "urn:ngm:class:remote-sensing",
@@ -59,7 +59,7 @@
       },
       {
         "id": "urn:ngm:class:venue-tethered-immersive-experience",
-        "label": "Location Based Experience"
+        "label": "Venue-Tethered Immersive Experience"
       },
       {
         "id": "urn:ngm:class:autonomous-navigation",

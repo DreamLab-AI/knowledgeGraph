@@ -121,7 +121,7 @@ public:: true
     "relatedTo": [
       {
         "@id": "urn:ngm:class:artificial-intelligence",
-        "label": "artificial-intelligence"
+        "label": "Artificial Intelligence"
       }
     ]
   },

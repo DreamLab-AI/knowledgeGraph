@@ -31,11 +31,11 @@ public:: true
       {"@id": "urn:ngm:class:pneumatic-actuator", "label": "Pneumatic Actuator"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:pid-controller", "label": "PID Controller"},
+      {"@id": "urn:ngm:class:pid-controller", "label": "Pid Controller"},
       {"@id": "urn:ngm:class:feedback-control", "label": "Feedback Control"}
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:industrial-automation", "label": "Industrial Automation"}
+      {"@id": "urn:ngm:class:industrial-automation", "label": "IndustrialAutomation"}
     ]
   },
   "quality": 0.85

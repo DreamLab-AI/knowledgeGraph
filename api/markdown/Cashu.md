@@ -681,11 +681,11 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:hash-function",
-        "label": "Hash Functions"
+        "label": "Hash Function"
       },
       {
         "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol",
-        "label": "Bitcoin"
+        "label": "Bitcoin Proof-of-Work Protocol"
       },
       {
         "@id": "urn:ngm:class:elliptic-curve-cryptography",
@@ -809,7 +809,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:ecash",
-        "label": "Ecash"
+        "label": "ecash"
       }
     ],
     "supports": [

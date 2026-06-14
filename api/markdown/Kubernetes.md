@@ -30,7 +30,7 @@ public:: true
       {"@id": "urn:ngm:class:distributed-system", "label": "Distributed System"},
       {"@id": "urn:ngm:class:cloud-native-applications", "label": "Cloud-Native Applications"},
       {"@id": "urn:ngm:class:software-platform", "label": "Software Platform"},
-      {"@id": "urn:ngm:class:technology-infrastructure", "label": "Infrastructure"}
+      {"@id": "urn:ngm:class:technology-infrastructure", "label": "Technology Infrastructure"}
     ],
     "dependsOn": [
       {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"},

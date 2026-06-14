@@ -836,11 +836,11 @@ alias:: BC-0434-blockchain-as-a-service
       },
       {
         "@id": "urn:ngm:class:raft-consensus",
-        "label": "Raft Consensus"
+        "label": "RAFT Consensus"
       },
       {
         "@id": "urn:ngm:class:smart-bft",
-        "label": "SmartBFT"
+        "label": "SMaRT-BFT"
       },
       {
         "@id": "urn:ngm:class:byzantine-fault-tolerance",
@@ -848,7 +848,7 @@ alias:: BC-0434-blockchain-as-a-service
       },
       {
         "@id": "urn:ngm:class:ethereum-smart-contract-platform",
-        "label": "Ethereum"
+        "label": "Ethereum Smart Contract Platform"
       },
       {
         "@id": "urn:ngm:class:hyperledger-besu",
@@ -906,7 +906,7 @@ alias:: BC-0434-blockchain-as-a-service
       },
       {
         "@id": "urn:ngm:class:docker-containerisation-platform",
-        "label": "Docker"
+        "label": "Docker Containerisation Platform"
       }
     ],
     "relatedTo": [
@@ -916,7 +916,7 @@ alias:: BC-0434-blockchain-as-a-service
       },
       {
         "@id": "urn:ngm:class:cbdcs",
-        "label": "CBDC"
+        "label": "CBDCs"
       },
       {
         "@id": "urn:ngm:class:decentralised-identity",
@@ -928,7 +928,7 @@ alias:: BC-0434-blockchain-as-a-service
       },
       {
         "@id": "urn:ngm:class:digital-asset",
-        "label": "Digital Assets"
+        "label": "Digital Asset"
       },
       {
         "@id": "urn:ngm:class:distributed-ledger-technology",
@@ -936,7 +936,7 @@ alias:: BC-0434-blockchain-as-a-service
       },
       {
         "@id": "urn:ngm:class:zero-knowledge-proof",
-        "label": "Zero-Knowledge Proofs"
+        "label": "Zero-Knowledge Proof"
       },
       {
         "@id": "urn:ngm:class:cloud-computing",
@@ -956,7 +956,7 @@ alias:: BC-0434-blockchain-as-a-service
       },
       {
         "@id": "urn:ngm:class:neural-network-text-tokenisation",
-        "label": "Tokenisation"
+        "label": "Neural Network Text Tokenisation"
       }
     ],
     "supports": [

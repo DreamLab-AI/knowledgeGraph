@@ -23,7 +23,7 @@ public:: true
   "definition": "Sensor measurements are the time-stamped observations produced by physical or virtual sensors, each carrying a value, a unit, and an associated uncertainty or noise model. In probabilistic robotics they form the observation stream that estimators condition on to infer latent state such as pose or velocity. Their statistical characterisation is essential for filtering, fusion, and localisation.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:robo-perception", "label": "Robotics Perception"}],
+  "subClassOf": [{"@id": "urn:ngm:class:robo-perception", "label": "Perception and Sensing"}],
   "relations": {
     "relatedTo": [{"@id": "urn:ngm:class:bayes-filter", "label": "Bayes Filter"}, {"@id": "urn:ngm:class:monte-carlo-localization", "label": "Monte Carlo Localization"}]
   },

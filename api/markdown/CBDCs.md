@@ -568,11 +568,11 @@ public:: true
     },
     {
       "@id": "urn:ngm:class:bc-token-and-asset",
-      "label": "BC Token And Asset"
+      "label": "Token and Asset"
     },
     {
       "@id": "urn:ngm:class:bc-token-and-asset",
-      "label": "BC Token And Asset"
+      "label": "Token and Asset"
     }
   ],
   "relations": {
@@ -643,7 +643,7 @@ public:: true
     "enables": [
       {
         "@id": "urn:ngm:class:cross-border-payments",
-        "label": "Cross Border Payments"
+        "label": "Cross-Border Payments"
       },
       {
         "@id": "urn:ngm:class:financial-inclusion",
@@ -663,7 +663,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:real-time-settlement",
-        "label": "Real Time Settlement"
+        "label": "Real-Time Settlement"
       },
       {
         "@id": "urn:ngm:class:smart-contract-execution",
@@ -693,7 +693,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:two-tier-distribution-model",
-        "label": "Two Tier Distribution Model"
+        "label": "Two-Tier Distribution Model"
       },
       {
         "@id": "urn:ngm:class:privacy-by-design",
@@ -703,7 +703,7 @@ public:: true
     "uses": [
       {
         "@id": "urn:ngm:class:api-standard",
-        "label": "API Standards"
+        "label": "API Standard"
       },
       {
         "@id": "urn:ngm:class:dlt",
@@ -715,7 +715,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:zero-knowledge-proof",
-        "label": "Zero Knowledge Proofs"
+        "label": "Zero-Knowledge Proof"
       },
       {
         "@id": "urn:ngm:class:permissioned-blockchain",
@@ -723,13 +723,13 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:neural-network-text-tokenisation",
-        "label": "Tokenisation"
+        "label": "Neural Network Text Tokenisation"
       }
     ],
     "relatedTo": [
       {
         "@id": "urn:ngm:class:cross-border-payments",
-        "label": "Cross Border Payments"
+        "label": "Cross-Border Payments"
       },
       {
         "@id": "urn:ngm:class:digital-euro",
@@ -753,7 +753,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:m-bridge",
-        "label": "mBridge"
+        "label": "M-Bridge"
       },
       {
         "@id": "urn:ngm:class:monetary-policy",
@@ -775,7 +775,7 @@ public:: true
     "supports": [
       {
         "@id": "urn:ngm:class:anti-money-laundering",
-        "label": "Anti Money Laundering"
+        "label": "Anti-Money Laundering"
       },
       {
         "@id": "urn:ngm:class:currency-internationalisation",
@@ -817,7 +817,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:fsb-cross-border-payments-roadmap",
-        "label": "FSB Cross Border Payments Roadmap"
+        "label": "FSB Cross-Border Payments Roadmap"
       },
       {
         "@id": "urn:ngm:class:imf-cbdc-framework",

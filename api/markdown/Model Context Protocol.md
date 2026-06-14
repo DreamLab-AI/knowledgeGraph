@@ -212,7 +212,7 @@ public:: true
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-infrastructure",
-      "label": "AI Infrastructure (Category)"
+      "label": "AI Infrastructure"
     }
   ],
   "relations": {
@@ -253,7 +253,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:stdio-transport",
-        "label": "STDIO Transport"
+        "label": "Stdio Transport"
       },
       {
         "@id": "urn:ngm:class:web-socket-protocol",
@@ -309,7 +309,7 @@ public:: true
     "bridgesTo": [
       {
         "@id": "urn:ngm:class:infra-network-and-comms",
-        "label": "Infra Network And Comms"
+        "label": "Network and Communication"
       },
       {
         "@id": "urn:ngm:class:agent-communication-protocol",

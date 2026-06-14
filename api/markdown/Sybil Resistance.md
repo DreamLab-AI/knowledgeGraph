@@ -33,7 +33,7 @@ public:: true
   "subClassOf": [
     {
       "@id": "urn:ngm:class:bc-protocol-and-consensus",
-      "label": "Bc Protocol And Consensus"
+      "label": "Protocol and Consensus"
     }
   ],
   "relations": {
@@ -54,7 +54,7 @@ public:: true
       {"@id": "urn:ngm:class:fair-airdrop", "label": "Fair Airdrop"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof of Work"},
+      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"},
       {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof of Stake"},
       {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"},
       {"@id": "urn:ngm:class:trust-graph", "label": "Trust Graph"},

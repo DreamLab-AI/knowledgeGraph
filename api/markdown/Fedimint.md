@@ -24,7 +24,7 @@ public:: true
   "domain": "blockchain",
   "maturity": "emerging",
   "subClassOf": [
-    {"@id": "urn:ngm:class:ecash", "label": "Ecash"}
+    {"@id": "urn:ngm:class:ecash", "label": "ecash"}
   ],
   "relations": {
     "uses": [

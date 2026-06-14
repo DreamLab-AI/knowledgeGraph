@@ -23,7 +23,7 @@ public:: true
   "definition": "Lifecycle management is the disciplined coordination of an asset, product, or system across all phases of its existence, from creation and deployment through operation, maintenance, and decommissioning. It defines processes, versioning, and governance that keep the entity consistent and accountable over time. For digital twins it ensures the virtual model stays synchronised with the physical asset throughout its operational life.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:infra-software-engineering", "label": "Infrastructure Software Engineering"}],
+  "subClassOf": [{"@id": "urn:ngm:class:infra-software-engineering", "label": "Software Engineering"}],
   "relations": {
     "relatedTo": [{"@id": "urn:ngm:class:digital-twin-creation", "label": "Digital Twin Creation"}, {"@id": "urn:ngm:class:construction-digital-twin", "label": "Construction Digital Twin"}]
   },

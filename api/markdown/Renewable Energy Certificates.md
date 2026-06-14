@@ -159,7 +159,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:ownership-record",
-        "label": "OwnershipRecord"
+        "label": "Ownership Record"
       },
       {
         "@id": "urn:ngm:class:retirement-proof",
@@ -191,7 +191,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:renewable-energy-tracking",
-        "label": "RenewableEnergyTracking"
+        "label": "Renewable Energy Tracking"
       },
       {
         "@id": "urn:ngm:class:sustainability-reporting",
@@ -199,13 +199,13 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:carbon-accounting",
-        "label": "CarbonAccounting"
+        "label": "Carbon Accounting"
       }
     ],
     "bridgesTo": [
       {
         "@id": "urn:ngm:class:carbon-credits",
-        "label": "CarbonCredit"
+        "label": "Carbon Credits"
       }
     ]
   },

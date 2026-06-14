@@ -119,7 +119,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:lidar",
-        "label": "LiDAR"
+        "label": "Lidar"
       },
       {
         "@id": "urn:ngm:class:ultra-wideband",

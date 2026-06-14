@@ -9,7 +9,7 @@
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-model-architecture",
-      "label": "Ai Model Architecture"
+      "label": "AI Model Architecture"
     }
   ],
   "entityType": "Class",
@@ -113,7 +113,7 @@
     "supports": [
       {
         "id": "urn:ngm:class:text-to-image",
-        "label": "Text-to-Image Generation"
+        "label": "Text-to-Image"
       },
       {
         "id": "urn:ngm:class:stable-diffusion",
@@ -134,7 +134,7 @@
     "relatedTo": [
       {
         "id": "urn:ngm:class:vision-language-model",
-        "label": "Vision-Language Model"
+        "label": "Vision Language Model"
       },
       {
         "id": "urn:ngm:class:prompt-engineering",

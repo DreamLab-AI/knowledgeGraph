@@ -464,7 +464,7 @@ public:: true
     },
     {
       "@id": "urn:ngm:class:bc-governance-and-regulation",
-      "label": "BC Governance And Regulation"
+      "label": "Governance and Regulation"
     },
     {
       "@id": "urn:ngm:class:knowledge-graph-publication-classifier-goods-funding",
@@ -521,7 +521,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:merkle-proof",
-        "label": "Merkle Proofs"
+        "label": "Merkle Proof"
       },
       {
         "@id": "urn:ngm:class:sybil-resistance",
@@ -545,7 +545,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:zero-knowledge-proof",
-        "label": "Zero Knowledge Proof"
+        "label": "Zero-Knowledge Proof"
       }
     ],
     "enables": [
@@ -635,7 +635,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:merkle-proof",
-        "label": "Merkle Proofs"
+        "label": "Merkle Proof"
       },
       {
         "@id": "urn:ngm:class:polygon-id",

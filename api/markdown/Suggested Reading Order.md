@@ -190,17 +190,17 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:semantic-web-linked-data-standard", "label": "Semantic Web"},
+      {"@id": "urn:ngm:class:semantic-web-linked-data-standard", "label": "Semantic Web Linked Data Standard"},
       {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
       {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
-      {"@id": "urn:ngm:class:ai-frontier-capability-survey", "label": "State of the art in AI"}
+      {"@id": "urn:ngm:class:ai-frontier-capability-survey", "label": "AI Frontier Capability Survey"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:adoption-of-convergent-technologies", "label": "Adoption of Convergent Technologies"},
       {"@id": "urn:ngm:class:convergence", "label": "Convergence"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:knowledge-artefact-update-cycle", "label": "Update Cycle"},
+      {"@id": "urn:ngm:class:knowledge-artefact-update-cycle", "label": "Knowledge Artefact Update Cycle"},
       {"@id": "urn:ngm:class:distributed-identity", "label": "Distributed Identity"}
     ]
   },

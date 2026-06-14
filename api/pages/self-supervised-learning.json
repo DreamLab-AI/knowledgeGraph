@@ -43,7 +43,7 @@
     "enables": [
       {
         "id": "urn:ngm:class:large-scale-pretrained-foundation-model",
-        "label": "Foundation Models"
+        "label": "Large-Scale Pretrained Foundation Model"
       },
       {
         "id": "urn:ngm:class:parameter-efficient-fine-tuning",
@@ -100,7 +100,7 @@
       },
       {
         "id": "urn:ngm:class:encoder-decoder-architecture",
-        "label": "Encoder-Decoder Architecture"
+        "label": "Encoder Decoder Architecture"
       }
     ],
     "supports": [

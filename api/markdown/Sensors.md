@@ -60,7 +60,7 @@ public:: true
   "qualityScore": 0.7,
   "subClassOf": {
     "@id": "urn:ngm:class:robotics",
-    "label": "Robotics Domain"
+    "label": "Robotics"
   },
   "relations": {
     "hasPart": [

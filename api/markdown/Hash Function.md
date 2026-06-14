@@ -570,7 +570,7 @@ alias:: Hash-Function, HashFunction
       },
       {
         "@id": "urn:ngm:class:proof-of-work",
-        "label": "Proof-of-Work"
+        "label": "Proof Of Work"
       }
     ],
     "implements": [
@@ -580,7 +580,7 @@ alias:: Hash-Function, HashFunction
       },
       {
         "@id": "urn:ngm:class:preimage-resistance",
-        "label": "Pre-Image Resistance"
+        "label": "Preimage Resistance"
       },
       {
         "@id": "urn:ngm:class:random-oracle-model",
@@ -640,7 +640,7 @@ alias:: Hash-Function, HashFunction
       },
       {
         "@id": "urn:ngm:class:quantum-computation-paradigm",
-        "label": "Quantum Computing"
+        "label": "Quantum Computation Paradigm"
       }
     ],
     "supports": [
@@ -666,15 +666,15 @@ alias:: Hash-Function, HashFunction
       },
       {
         "@id": "urn:ngm:class:zero-knowledge-proof",
-        "label": "Zero-Knowledge Proofs"
+        "label": "Zero-Knowledge Proof"
       },
       {
         "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol",
-        "label": "Bitcoin"
+        "label": "Bitcoin Proof-of-Work Protocol"
       },
       {
         "@id": "urn:ngm:class:ethereum-smart-contract-platform",
-        "label": "Ethereum"
+        "label": "Ethereum Smart Contract Platform"
       },
       {
         "@id": "urn:ngm:class:post-quantum-cryptography",

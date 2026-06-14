@@ -23,7 +23,7 @@ public:: true
   "definition": "Voice interfaces are human-computer interaction systems that accept spoken input and respond with synthesised speech, chaining automatic speech recognition, natural-language understanding, dialogue management, and text-to-speech. They enable hands-free, eyes-free interaction across smart speakers, vehicles, and accessibility tools. Latency, recognition accuracy in noise, and natural turn-taking are the principal usability constraints.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:human-computer-interaction", "label": "Human-Computer Interaction"}],
+  "subClassOf": [{"@id": "urn:ngm:class:human-computer-interaction", "label": "Human Computer Interaction"}],
   "relations": {
     "relatedTo": [{"@id": "urn:ngm:class:chatbots", "label": "Chatbots"}, {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}]
   },

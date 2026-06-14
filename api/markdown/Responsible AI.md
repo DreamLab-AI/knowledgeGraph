@@ -169,7 +169,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:iso-iec-42001",
-        "label": "ISO/IEC 42001"
+        "label": "ISO IEC 42001"
       }
     ],
     "standardizedBy": [

@@ -118,7 +118,7 @@ alias:: PublicBlockchain
     "requires": [
       {
         "@id": "urn:ngm:class:proof-of-work",
-        "label": "Proof of Work"
+        "label": "Proof Of Work"
       },
       {
         "@id": "urn:ngm:class:proof-of-stake",
@@ -196,7 +196,7 @@ alias:: PublicBlockchain
       },
       {
         "@id": "urn:ngm:class:metaverse",
-        "label": "Metaverse Domain"
+        "label": "Metaverse"
       }
     ],
     "relatedTo": [

@@ -85,7 +85,7 @@ alias:: AutonomousNavigation
       {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"},
       {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
       {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:lidar", "label": "LiDAR"}
+      {"@id": "urn:ngm:class:lidar", "label": "Lidar"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:autonomous-robot", "label": "Autonomous Robot"},
@@ -99,10 +99,10 @@ alias:: AutonomousNavigation
     ],
     "implements": [
       {"@id": "urn:ngm:class:a-star-algorithm", "label": "A* Algorithm"},
-      {"@id": "urn:ngm:class:pid-controller", "label": "PID Controller"}
+      {"@id": "urn:ngm:class:pid-controller", "label": "Pid Controller"}
     ],
     "supports": [
-      {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human-Robot Interaction"},
+      {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human Robot Interaction"},
       {"@id": "urn:ngm:class:search-and-rescue-robotics", "label": "Search and Rescue Robotics"}
     ],
     "contrastsWith": [

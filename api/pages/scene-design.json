@@ -9,7 +9,7 @@
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-content-and-assets",
-      "label": "Spatial Content and Assets"
+      "label": "Content and Assets"
     }
   ],
   "entityType": "Class",
@@ -30,7 +30,7 @@
     "relatedTo": [
       {
         "id": "urn:ngm:class:etsi-domain-creative-media",
-        "label": "ETSI Domain Creative Media"
+        "label": "ETSI Domain: Creative Media"
       },
       {
         "id": "urn:ngm:class:authoring-tool",

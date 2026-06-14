@@ -60,7 +60,7 @@ public:: true
   "qualityScore": 0.7,
   "subClassOf": {
     "@id": "urn:ngm:class:ai-research-area",
-    "label": "Ai Research Area"
+    "label": "AI Research Area"
   },
   "sameAs": [
     {

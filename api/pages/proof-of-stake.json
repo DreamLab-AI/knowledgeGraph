@@ -75,7 +75,7 @@
       },
       {
         "id": "urn:ngm:class:on-chain-governance",
-        "label": "On-Chain Governance"
+        "label": "On-chain Governance"
       }
     ],
     "dependsOn": [
@@ -96,7 +96,7 @@
     "contrastsWith": [
       {
         "id": "urn:ngm:class:proof-of-work",
-        "label": "Proof of Work"
+        "label": "Proof Of Work"
       },
       {
         "id": "urn:ngm:class:proof-of-authority",

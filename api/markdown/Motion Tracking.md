@@ -82,7 +82,7 @@ public:: true
     "requires": [
       {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
       {"@id": "urn:ngm:class:depth-sensing", "label": "Depth Sensing"},
-      {"@id": "urn:ngm:class:real-time-processing", "label": "Real-Time Processing"}
+      {"@id": "urn:ngm:class:real-time-processing", "label": "Real-time Processing"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:avatar-animation", "label": "Avatar Animation"},

@@ -99,7 +99,7 @@ public:: true
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:social-robotics", "label": "Social Robotics"},
-      {"@id": "urn:ngm:class:robotics", "label": "Robotics Domain"}
+      {"@id": "urn:ngm:class:robotics", "label": "Robotics"}
     ]
   },
   "quality": 0.4,

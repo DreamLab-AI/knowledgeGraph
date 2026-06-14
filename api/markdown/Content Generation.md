@@ -25,7 +25,7 @@ public:: true
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"}],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:generative-ai", "label": "Generative AI Domain"}, {"@id": "urn:ngm:class:ai-machine-learning", "label": "AI Machine Learning"}]
+    "relatedTo": [{"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"}, {"@id": "urn:ngm:class:ai-machine-learning", "label": "Ai Machine Learning"}]
   },
   "quality": 0.72
 }

@@ -39,11 +39,11 @@
       },
       {
         "id": "urn:ngm:class:zk-snarks",
-        "label": "zk-SNARKs"
+        "label": "ZK-SNARKs"
       },
       {
         "id": "urn:ngm:class:zk-starks",
-        "label": "zk-STARKs"
+        "label": "ZK-STARKs"
       }
     ],
     "requires": [

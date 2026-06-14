@@ -23,9 +23,9 @@ public:: true
   "definition": "Content interoperability is the ability of digital assets to be created, exchanged, and rendered consistently across different platforms, engines, and tools without loss of fidelity. It depends on shared open formats, agreed schemas, and conformant import/export behaviour. In the metaverse it is the precondition for portable 3D assets, avatars, and scenes that work across virtual worlds.",
   "domain": "metaverse",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:sc-standards-and-interop", "label": "Spatial Computing Standards and Interoperability"}],
+  "subClassOf": [{"@id": "urn:ngm:class:sc-standards-and-interop", "label": "Standards and Interoperability"}],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:gl-tf-3-d-file-format", "label": "glTF 3D File Format"}, {"@id": "urn:ngm:class:metaverse-content-pipeline", "label": "Metaverse Content Pipeline"}]
+    "relatedTo": [{"@id": "urn:ngm:class:gl-tf-3-d-file-format", "label": "glTF (3D File Format)"}, {"@id": "urn:ngm:class:metaverse-content-pipeline", "label": "Metaverse Content Pipeline"}]
   },
   "quality": 0.72
 }

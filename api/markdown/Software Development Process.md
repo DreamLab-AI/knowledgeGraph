@@ -65,7 +65,7 @@ public:: true
   },
   "subClassOf": {
     "@id": "urn:ngm:class:ai-infrastructure",
-    "label": "AI Infrastructure (Category)"
+    "label": "AI Infrastructure"
   },
   "sameAs": [
     {"@id": "urn:ngm:class:software-development-lifecycle", "label": "Software Development Lifecycle"},

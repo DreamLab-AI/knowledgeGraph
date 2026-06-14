@@ -60,7 +60,7 @@ public:: true
     "supports": [
       {"@id": "urn:ngm:class:identity", "label": "Identity"},
       {"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"},
-      {"@id": "urn:ngm:class:privacy-preserving-computation", "label": "Privacy Preserving Computation"}
+      {"@id": "urn:ngm:class:privacy-preserving-computation", "label": "Privacy-Preserving Computation"}
     ],
     "standardizedBy": [
       {"@id": "urn:ngm:class:world-wide-web-consortium", "label": "World Wide Web Consortium"},
@@ -72,7 +72,7 @@ public:: true
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero Knowledge Proof"},
+      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"},
       {"@id": "urn:ngm:class:trust-framework", "label": "Trust Framework"}
     ],
     "bridgesTo": [

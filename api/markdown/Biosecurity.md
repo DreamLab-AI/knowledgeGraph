@@ -27,7 +27,7 @@ public:: true
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:existential-risk", "label": "Existential Risk"},
-      {"@id": "urn:ngm:class:bio-terror", "label": "Bio-Terror"}
+      {"@id": "urn:ngm:class:bio-terror", "label": "Bio Terror"}
     ]
   },
   "quality": 0.72

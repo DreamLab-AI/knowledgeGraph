@@ -26,7 +26,7 @@ public:: true
   "subClassOf": [{"@id": "urn:ngm:class:programming-language", "label": "Programming Language"}],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:rgb-and-client-side-validation", "label": "RGB and Client-Side Validation"},
+      {"@id": "urn:ngm:class:rgb-and-client-side-validation", "label": "RGB and Client Side Validation"},
       {"@id": "urn:ngm:class:strict-encoding", "label": "Strict Encoding"}
     ]
   },

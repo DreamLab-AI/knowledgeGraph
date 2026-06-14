@@ -133,7 +133,7 @@ alias:: RB-1018-dijkstra-algorithm
     },
     {
       "@id": "urn:ngm:class:path-planning",
-      "label": "RB-1016-path-planning"
+      "label": "Path Planning"
     }
   ],
   "relations": {

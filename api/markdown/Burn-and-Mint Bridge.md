@@ -31,7 +31,7 @@ public:: true
       {"@id": "urn:ngm:class:blockchain-interoperability", "label": "Blockchain Interoperability"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:cross-chain-messaging", "label": "Cross Chain Messaging"},
+      {"@id": "urn:ngm:class:cross-chain-messaging", "label": "Cross-Chain Messaging"},
       {"@id": "urn:ngm:class:cryptographic-proof", "label": "Cryptographic Proof"}
     ],
     "relatedTo": [{"@id": "urn:ngm:class:tokenomics", "label": "Tokenomics"}]

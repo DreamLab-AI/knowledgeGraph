@@ -53,7 +53,7 @@ alias:: BC-0044-supply-chain-management
   "subClassOf": [
     {
       "@id": "urn:ngm:class:dc-protocol-and-infra",
-      "label": "Dc Protocol And Infra"
+      "label": "Protocol and Infrastructure"
     }
   ],
   "relations": {
@@ -72,7 +72,7 @@ alias:: BC-0044-supply-chain-management
     "enables": [
       {"@id": "urn:ngm:class:provenance-tracking", "label": "Provenance Tracking"},
       {"@id": "urn:ngm:class:trade-finance", "label": "Trade Finance"},
-      {"@id": "urn:ngm:class:sustainability-reporting", "label": "Sustainability Reporting"}
+      {"@id": "urn:ngm:class:sustainability-reporting", "label": "SustainabilityReporting"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},

@@ -108,7 +108,7 @@ public:: true
     },
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
-      "label": "SC Content And Assets"
+      "label": "Content and Assets"
     }
   ],
   "relations": {
@@ -133,7 +133,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:real-time-rendering",
-        "label": "Real-time Rendering"
+        "label": "Real-Time Rendering"
       }
     ],
     "implements": [

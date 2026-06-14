@@ -64,7 +64,7 @@ public:: true
     "hasPart": [
       {
         "@id": "urn:ngm:class:lnd",
-        "label": "lnd"
+        "label": "LND"
       },
       {
         "@id": "urn:ngm:class:loop",

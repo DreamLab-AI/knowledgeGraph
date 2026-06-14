@@ -30,7 +30,7 @@ public:: true
       {"@id": "urn:ngm:class:pattern-recognition", "label": "Pattern Recognition"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"},
       {"@id": "urn:ngm:class:cognitive-science", "label": "Cognitive Science"}
     ],
     "relatedTo": [

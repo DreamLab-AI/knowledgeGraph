@@ -23,7 +23,7 @@ public:: true
   "definition": "Tessera is a private-transaction manager used with the Quorum enterprise Ethereum client to store and exchange encrypted payloads between authorised parties off the main chain. It enables confidential smart-contract state by keeping private data outside public blocks while anchoring only encrypted hashes on-chain. Tessera is a key component for enterprises that need permissioned, privacy-preserving distributed-ledger deployments.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:bc-network-component", "label": "Blockchain Network Component"}],
+  "subClassOf": [{"@id": "urn:ngm:class:bc-network-component", "label": "Network Component"}],
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:quorum-blockchain", "label": "Quorum Blockchain"},

@@ -63,7 +63,7 @@ alias:: Open AI
       {"@id": "urn:ngm:class:meta-ai-research", "label": "Meta AI Research"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:open-source-ai", "label": "Open Source AI"},
+      {"@id": "urn:ngm:class:open-source-ai", "label": "Open-Source AI"},
       {"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"},
       {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"},
       {"@id": "urn:ngm:class:ai-research-organisation", "label": "AI Research Organisation"}

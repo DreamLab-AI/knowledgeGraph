@@ -63,7 +63,7 @@ public:: true
   "relations": {
     "supports": [
       {"@id": "urn:ngm:class:ai-office", "label": "AI Office"},
-      {"@id": "urn:ngm:class:eu-ai-act-regulatory-instrument", "label": "EU AI Act"}
+      {"@id": "urn:ngm:class:eu-ai-act-regulatory-instrument", "label": "EU AI Act Regulatory Instrument"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},

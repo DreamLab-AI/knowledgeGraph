@@ -47,7 +47,7 @@ elevatedFrom:: [[Virscapes]]
   "relations": {
     "uses": [
       {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"}
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:nft-marketplace", "label": "NFT Marketplace"}

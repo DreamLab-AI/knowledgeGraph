@@ -50,7 +50,7 @@ alias:: ISO (International Organization for Standardization)
     ],
     "uses": [
       {"@id": "urn:ngm:class:iso-iec-27001", "label": "ISO/IEC 27001"},
-      {"@id": "urn:ngm:class:iso-iec-42001", "label": "ISO/IEC 42001"},
+      {"@id": "urn:ngm:class:iso-iec-42001", "label": "ISO IEC 42001"},
       {"@id": "urn:ngm:class:iso-9001", "label": "ISO 9001"},
       {"@id": "urn:ngm:class:iso-14001", "label": "ISO 14001"}
     ],

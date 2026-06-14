@@ -109,7 +109,7 @@ elevatedFrom:: [[Llama]]
     "enables": [
       {
         "@id": "urn:ngm:class:fine-tuning",
-        "label": "Fine-Tuning"
+        "label": "Fine Tuning"
       },
       {
         "@id": "urn:ngm:class:retrieval-augmented-generation",
@@ -147,7 +147,7 @@ elevatedFrom:: [[Llama]]
     "contrastsWith": [
       {
         "@id": "urn:ngm:class:gpt-4",
-        "label": "GPT-4"
+        "label": "GPT 4"
       },
       {
         "@id": "urn:ngm:class:gemini-model-family",

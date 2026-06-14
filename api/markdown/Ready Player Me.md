@@ -52,7 +52,7 @@ public:: true
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
-      "label": "Sc Platform And Environment"
+      "label": "Platform and Environment"
     }
   ],
   "relations": {
@@ -153,7 +153,7 @@ public:: true
     "bridgesTo": [
       {
         "@id": "urn:ngm:class:self-sovereign-identity",
-        "label": "Self-Sovereign Identity"
+        "label": "Self Sovereign Identity"
       },
       {
         "@id": "urn:ngm:class:nft",

@@ -48,7 +48,7 @@ public:: true
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-computing-and-cloud",
-      "label": "Infra Computing and Cloud"
+      "label": "Computing and Cloud"
     }
   ],
   "relations": {
@@ -72,7 +72,7 @@ public:: true
     "enables": [
       {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
       {"@id": "urn:ngm:class:haptic-feedback", "label": "Haptic Feedback"},
-      {"@id": "urn:ngm:class:real-time-processing", "label": "Real-Time Processing"},
+      {"@id": "urn:ngm:class:real-time-processing", "label": "Real-time Processing"},
       {"@id": "urn:ngm:class:edge-inference", "label": "Edge Inference"}
     ],
     "dependsOn": [

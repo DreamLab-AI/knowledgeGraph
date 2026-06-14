@@ -324,7 +324,7 @@ public:: true
     },
     {
       "@id": "urn:ngm:class:infra-software-engineering",
-      "label": "Infra Software Engineering"
+      "label": "Software Engineering"
     }
   ],
   "relations": {
@@ -456,7 +456,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:stable-diffusion-image-model",
-        "label": "Stable Diffusion"
+        "label": "Stable Diffusion Image Model"
       },
       {
         "@id": "urn:ngm:class:supply-chain-traceability",
@@ -498,7 +498,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:multi-agent-rag-architecture-compendium",
-        "label": "Multi Agent RAG scrapbook"
+        "label": "Multi-Agent RAG Architecture Compendium"
       }
     ],
     "relatedTo": [
@@ -520,7 +520,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:temporal-motion-diffusion-adapter",
-        "label": "AnimateDiff"
+        "label": "Temporal Motion Diffusion Adapter"
       },
       {
         "@id": "urn:ngm:class:brain-computer-interfaces",
@@ -538,7 +538,7 @@ public:: true
     "supports": [
       {
         "@id": "urn:ngm:class:decentralised-creative-metaverse-framework",
-        "label": "Agentic Metaverse for Global Creatives"
+        "label": "Decentralised Creative Metaverse Framework"
       },
       {
         "@id": "urn:ngm:class:aml-kyc-compliance",

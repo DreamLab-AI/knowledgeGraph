@@ -101,7 +101,7 @@ public:: true
     "requires": [
       {
         "@id": "urn:ngm:class:audit-mechanism",
-        "label": "Audit Mechanisms"
+        "label": "Audit Mechanism"
       },
       {
         "@id": "urn:ngm:class:stakeholder-communication",

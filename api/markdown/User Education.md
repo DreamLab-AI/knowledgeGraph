@@ -77,7 +77,7 @@ public:: true
     "relatedTo": [
       {
         "@id": "urn:ngm:class:ai-technology-skills-curriculum",
-        "label": "Courses and Training"
+        "label": "AI Technology Skills Curriculum"
       },
       {
         "@id": "urn:ngm:class:education-and-ai",

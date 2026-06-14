@@ -23,7 +23,7 @@ public:: true
   "definition": "Contact Centre as a Service (CCaaS) is a cloud-delivered model that provides the software for managing inbound and outbound customer interactions across voice, chat, email, and messaging channels. It removes the need for on-premises telephony infrastructure by offering routing, queuing, agent tooling, and analytics on a subscription basis. Modern CCaaS platforms increasingly embed AI for self-service, transcription, and agent assistance.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:infra-computing-and-cloud", "label": "Infrastructure Computing and Cloud"}],
+  "subClassOf": [{"@id": "urn:ngm:class:infra-computing-and-cloud", "label": "Computing and Cloud"}],
   "relations": {
     "relatedTo": [{"@id": "urn:ngm:class:call-centres", "label": "Call Centres"}]
   },

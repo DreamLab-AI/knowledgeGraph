@@ -78,7 +78,7 @@ public:: true
       {"@id": "urn:ngm:class:representation-learning", "label": "Representation Learning"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:neural-network-latent-space", "label": "Latent Space"},
+      {"@id": "urn:ngm:class:neural-network-latent-space", "label": "Neural Network Latent Space"},
       {"@id": "urn:ngm:class:unsupervised-learning", "label": "Unsupervised Learning"},
       {"@id": "urn:ngm:class:gradient-descent", "label": "Gradient Descent"}
     ],

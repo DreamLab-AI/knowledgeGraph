@@ -23,7 +23,7 @@ public:: true
   "definition": "Screen capture is the acquisition of the visual contents of a display, window, or application as still images or a stream of frames. It underpins screenshots, screen recording, and remote presentation, and is increasingly used to provide perceptual input to AI agents that operate graphical interfaces. Capture is mediated by operating-system or browser APIs subject to user permission.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:human-computer-interaction", "label": "Human-Computer Interaction"}],
+  "subClassOf": [{"@id": "urn:ngm:class:human-computer-interaction", "label": "Human Computer Interaction"}],
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:computer-use-and-browser-agents", "label": "Computer Use and Browser Agents"},

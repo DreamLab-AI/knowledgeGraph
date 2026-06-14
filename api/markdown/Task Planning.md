@@ -335,7 +335,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:behaviour-tree",
-        "label": "Behaviour Trees"
+        "label": "Behaviour Tree"
       },
       {
         "@id": "urn:ngm:class:goal-oriented-action-planning",
@@ -419,7 +419,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:human-robot-interaction",
-        "label": "Human-Robot Interaction"
+        "label": "Human Robot Interaction"
       }
     ],
     "implements": [
@@ -459,7 +459,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:neural-network",
-        "label": "Neural Networks"
+        "label": "Neural Network"
       },
       {
         "@id": "urn:ngm:class:sat-solving",
@@ -503,7 +503,7 @@ public:: true
     "supports": [
       {
         "@id": "urn:ngm:class:autonomous-vehicle",
-        "label": "Autonomous Vehicles"
+        "label": "Autonomous Vehicle"
       },
       {
         "@id": "urn:ngm:class:manufacturing-automation",

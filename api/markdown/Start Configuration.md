@@ -23,7 +23,7 @@ public:: true
   "definition": "A start configuration is the initial pose of a robot or articulated system, expressed as a point in its configuration space, from which a motion or path planner must compute a feasible route to a goal configuration. It encodes the complete set of joint values or positional parameters that fully describe the system's state at the beginning of a planned motion. Together with the goal configuration, it bounds the planning query.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:robo-navigation-and-planning", "label": "Robotics Navigation and Planning"}],
+  "subClassOf": [{"@id": "urn:ngm:class:robo-navigation-and-planning", "label": "Navigation and Planning"}],
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:path-planning", "label": "Path Planning"},

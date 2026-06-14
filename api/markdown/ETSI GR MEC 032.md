@@ -49,7 +49,7 @@ public:: true
   "subClassOf": [
     {
       "@id": "urn:ngm:class:multi-access-edge-computing",
-      "label": "Multi-access Edge Computing"
+      "label": "MultiAccessEdgeComputing"
     }
   ],
   "relations": {

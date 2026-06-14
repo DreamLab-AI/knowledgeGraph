@@ -23,7 +23,7 @@ public:: true
   "definition": "Distributed teams are groups of collaborators who work from different geographic locations and often across time zones, coordinating primarily through digital communication and collaboration tools. They rely on asynchronous workflows, shared documentation, and recorded or AI-assisted meetings to maintain alignment without co-location. They have become a dominant model of knowledge work, trading the spontaneity of the office for flexibility and access to a global talent pool.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:dc-communication", "label": "Communication"}],
+  "subClassOf": [{"@id": "urn:ngm:class:dc-communication", "label": "Communication Technology"}],
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:asynchronous-video", "label": "Asynchronous Video"},

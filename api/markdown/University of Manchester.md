@@ -72,7 +72,7 @@ public:: true
     ],
     "requires": [
       {"@id": "urn:ngm:class:research-funding", "label": "Research Funding"},
-      {"@id": "urn:ngm:class:high-performance-computing", "label": "High Performance Computing"}
+      {"@id": "urn:ngm:class:high-performance-computing", "label": "High-Performance Computing"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:machine-learning-research", "label": "Machine Learning Research"},

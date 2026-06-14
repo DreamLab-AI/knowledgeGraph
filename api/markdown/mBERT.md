@@ -61,7 +61,7 @@ public:: true
     ],
     "uses": [
       {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"},
-      {"@id": "urn:ngm:class:neural-network-text-tokenisation", "label": "Tokenisation"}
+      {"@id": "urn:ngm:class:neural-network-text-tokenisation", "label": "Neural Network Text Tokenisation"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"},

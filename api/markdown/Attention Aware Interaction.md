@@ -85,7 +85,7 @@ alias:: Attention-Aware Interaction
     },
     {
       "@id": "urn:ngm:class:human-computer-interaction",
-      "label": "Human-Computer Interaction"
+      "label": "Human Computer Interaction"
     }
   ],
   "relations": {

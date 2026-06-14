@@ -529,7 +529,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:transferable-right",
-        "label": "Transferable Rights"
+        "label": "Transferable Right"
       },
       {
         "@id": "urn:ngm:class:typed-payload",
@@ -701,7 +701,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:digital-twin",
-        "label": "Digital Twins"
+        "label": "Digital Twin"
       },
       {
         "@id": "urn:ngm:class:internet-of-things",

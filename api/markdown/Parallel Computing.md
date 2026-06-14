@@ -88,7 +88,7 @@ public:: true
     "partOf": [
       {
         "@id": "urn:ngm:class:high-performance-computing",
-        "label": "High Performance Computing"
+        "label": "High-Performance Computing"
       }
     ],
     "requires": [

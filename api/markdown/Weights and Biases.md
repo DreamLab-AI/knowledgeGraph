@@ -25,7 +25,7 @@ public:: true
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:ai-infrastructure", "label": "AI Infrastructure"}],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:checkpoints", "label": "Checkpoints"}, {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"}]
+    "relatedTo": [{"@id": "urn:ngm:class:checkpoints", "label": "Checkpoints"}, {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"}]
   },
   "quality": 0.72
 }

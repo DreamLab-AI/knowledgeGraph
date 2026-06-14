@@ -508,11 +508,11 @@ public:: true
     },
     {
       "@id": "urn:ngm:class:infra-legal-and-regulatory",
-      "label": "Infra Legal And Regulatory"
+      "label": "Legal and Regulatory"
     },
     {
       "@id": "urn:ngm:class:infra-legal-and-regulatory",
-      "label": "Infra Legal And Regulatory"
+      "label": "Legal and Regulatory"
     }
   ],
   "relations": {

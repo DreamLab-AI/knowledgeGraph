@@ -471,7 +471,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:lo-ra",
-        "label": "LoRA"
+        "label": "Lo RA"
       }
     ],
     "requires": [
@@ -505,7 +505,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:stable-diffusion-image-model",
-        "label": "Stable Diffusion"
+        "label": "Stable Diffusion Image Model"
       }
     ],
     "enables": [
@@ -561,7 +561,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:low-rank-adaptation",
-        "label": "Low Rank Adaptation"
+        "label": "Low-Rank Adaptation"
       },
       {
         "@id": "urn:ngm:class:ly-coris",
@@ -599,7 +599,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:flash-attention",
-        "label": "FlashAttention"
+        "label": "Flash Attention"
       },
       {
         "@id": "urn:ngm:class:lla-va",
@@ -633,11 +633,11 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:temporal-motion-diffusion-adapter",
-        "label": "AnimateDiff"
+        "label": "Temporal Motion Diffusion Adapter"
       },
       {
         "@id": "urn:ngm:class:node-based-diffusion-pipeline-interface",
-        "label": "ComfyUI"
+        "label": "Node-Based Diffusion Pipeline Interface"
       },
       {
         "@id": "urn:ngm:class:node-based-diffusion-pipeline-interface-workflows",
@@ -645,23 +645,23 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:flux-1",
-        "label": "FLUX.1"
+        "label": "Flux.1"
       },
       {
         "@id": "urn:ngm:class:ip-adapter",
-        "label": "IP Adapter"
+        "label": "IP-Adapter"
       },
       {
         "@id": "urn:ngm:class:midjourney-text-to-image-service",
-        "label": "Midjourney"
+        "label": "Midjourney Text-to-Image Service"
       },
       {
         "@id": "urn:ngm:class:stable-diffusion-image-model",
-        "label": "Stable Diffusion"
+        "label": "Stable Diffusion Image Model"
       },
       {
         "@id": "urn:ngm:class:text-to-image",
-        "label": "Text to Image"
+        "label": "Text-to-Image"
       }
     ],
     "supports": [
@@ -687,11 +687,11 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:node-based-diffusion-pipeline-interface",
-        "label": "ComfyUI"
+        "label": "Node-Based Diffusion Pipeline Interface"
       },
       {
         "@id": "urn:ngm:class:flux-1",
-        "label": "FLUX.1"
+        "label": "Flux.1"
       }
     ],
     "standardizedBy": [

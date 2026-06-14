@@ -34,7 +34,7 @@ public:: true
       {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
       {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
       {"@id": "urn:ngm:class:benchmark-standard", "label": "Benchmark Standard"},
-      {"@id": "urn:ngm:class:evaluation-benchmarks-and-leaderboards", "label": "Evaluation Benchmarks and Leaderboards"},
+      {"@id": "urn:ngm:class:evaluation-benchmarks-and-leaderboards", "label": "Evaluation benchmarks and leaderboards"},
       {"@id": "urn:ngm:class:computational-neuroscience", "label": "Computational Neuroscience"},
       {"@id": "urn:ngm:class:ai-research", "label": "AI Research"},
       {"@id": "urn:ngm:class:academic-conference", "label": "Academic Conference"}

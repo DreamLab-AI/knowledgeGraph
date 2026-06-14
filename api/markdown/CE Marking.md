@@ -23,7 +23,7 @@ public:: true
   "definition": "CE marking is a mandatory conformity mark indicating that a product placed on the European Economic Area market meets the applicable EU health, safety, and environmental protection requirements. For machinery and robots it signals compliance with directives such as the Machinery Regulation, the EMC Directive, and relevant harmonised standards, often supported by a declaration of conformity and technical file. It matters because it is a legal precondition for market access and embeds robot safety standards into commercial deployment.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:robo-safety-and-standards", "label": "Robotic Safety and Standards"}],
+  "subClassOf": [{"@id": "urn:ngm:class:robo-safety-and-standards", "label": "Safety and Standards"}],
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:robot-standard", "label": "Robot Standard"}

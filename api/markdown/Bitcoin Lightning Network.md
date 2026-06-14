@@ -76,7 +76,7 @@ public:: true
   "qualityScore": 0.7,
   "subClassOf": {
     "@id": "urn:ngm:class:bc-protocol-and-consensus",
-    "label": "Bc Protocol And Consensus"
+    "label": "Protocol and Consensus"
   },
   "relations": {
     "hasPart": [
@@ -106,7 +106,7 @@ public:: true
     "requires": [
       {
         "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol",
-        "label": "Bitcoin"
+        "label": "Bitcoin Proof-of-Work Protocol"
       },
       {
         "@id": "urn:ngm:class:multisignature",
@@ -172,7 +172,7 @@ public:: true
     "contrastsWith": [
       {
         "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol",
-        "label": "Bitcoin Base Layer"
+        "label": "Bitcoin Proof-of-Work Protocol"
       },
       {
         "@id": "urn:ngm:class:ethereum-state-channels",
@@ -182,7 +182,7 @@ public:: true
     "bridgesTo": [
       {
         "@id": "urn:ngm:class:bc-defi-and-economics",
-        "label": "Payment Systems Domain"
+        "label": "DeFi and Economics"
       },
       {
         "@id": "urn:ngm:class:liquid-network",

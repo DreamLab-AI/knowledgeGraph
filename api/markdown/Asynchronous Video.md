@@ -388,11 +388,11 @@ public:: true
     },
     {
       "@id": "urn:ngm:class:dc-communication",
-      "label": "DC Communication"
+      "label": "Communication Technology"
     },
     {
       "@id": "urn:ngm:class:dc-communication",
-      "label": "DC Communication"
+      "label": "Communication Technology"
     }
   ],
   "relations": {
@@ -441,7 +441,7 @@ public:: true
     "requires": [
       {
         "@id": "urn:ngm:class:browser-based-screen-capture",
-        "label": "Browser-based Screen Capture"
+        "label": "Browser-Based Screen Capture"
       },
       {
         "@id": "urn:ngm:class:cloud-storage",

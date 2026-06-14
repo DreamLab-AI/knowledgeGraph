@@ -148,7 +148,7 @@ alias:: SpatialAudio
       },
       {
         "@id": "urn:ngm:class:gaming",
-        "label": "Gaming"
+        "label": "gaming"
       }
     ],
     "standardizedBy": [
@@ -174,7 +174,7 @@ alias:: SpatialAudio
       },
       {
         "@id": "urn:ngm:class:human-computer-interaction",
-        "label": "Human-Computer Interaction"
+        "label": "Human Computer Interaction"
       }
     ],
     "relatedTo": [

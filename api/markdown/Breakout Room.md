@@ -312,11 +312,11 @@ public:: true
     },
     {
       "@id": "urn:ngm:class:dc-communication",
-      "label": "DC Communication"
+      "label": "Communication Technology"
     },
     {
       "@id": "urn:ngm:class:dc-communication",
-      "label": "DC Communication"
+      "label": "Communication Technology"
     }
   ],
   "relations": {

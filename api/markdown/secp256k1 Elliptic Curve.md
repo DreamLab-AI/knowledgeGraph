@@ -23,7 +23,7 @@ public:: true
   "definition": "secp256k1 is a specific elliptic curve defined over a 256-bit prime field, standardised by the SEC and chosen for its efficient, verifiable parameters. It underpins ECDSA and Schnorr signatures used by Bitcoin, Nostr, and many other systems for key generation and digital signing. Its near-rigid, low-entropy parameters reduce concern about hidden weaknesses.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:bc-cryptographic-primitive", "label": "Blockchain Cryptographic Primitive"}],
+  "subClassOf": [{"@id": "urn:ngm:class:bc-cryptographic-primitive", "label": "Cryptographic Primitive"}],
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:sovereign-keyset", "label": "Sovereign Keyset"},

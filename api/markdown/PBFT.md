@@ -58,7 +58,7 @@ public:: true
     ],
     "contrastsWith": [
       {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"},
-      {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof Of Stake"},
+      {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof of Stake"},
       {"@id": "urn:ngm:class:crash-fault-tolerance", "label": "Crash Fault Tolerance"}
     ],
     "bridgesTo": [

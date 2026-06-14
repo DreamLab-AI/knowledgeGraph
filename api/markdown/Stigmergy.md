@@ -68,7 +68,7 @@ public:: true
   "relations": {
     "partOf": [
       {"@id": "urn:ngm:class:swarm-robotics", "label": "Swarm Robotics"},
-      {"@id": "urn:ngm:class:robotics", "label": "Robotics Domain"}
+      {"@id": "urn:ngm:class:robotics", "label": "Robotics"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:collective-intelligence-system", "label": "Collective Intelligence System"},

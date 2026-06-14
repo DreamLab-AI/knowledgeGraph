@@ -53,7 +53,7 @@ alias:: LoRA, LoRa
     },
     {
       "@id": "urn:ngm:class:parameter-efficient-fine-tuning",
-      "label": "Parameter Efficient Fine-Tuning"
+      "label": "Parameter-Efficient Fine-Tuning"
     }
   ],
   "relations": {

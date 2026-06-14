@@ -28,7 +28,7 @@ public:: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:ci-cd-automation", "label": "CI/CD Automation"},
+      {"@id": "urn:ngm:class:ci-cd-automation", "label": "CI-CD Automation"},
       {"@id": "urn:ngm:class:vulnerability-scanner", "label": "Vulnerability Scanner"}
     ],
     "uses": [

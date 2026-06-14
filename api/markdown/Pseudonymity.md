@@ -90,7 +90,7 @@ public:: true
       {"@id": "urn:ngm:class:identity-management", "label": "Identity Management"}
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self-Sovereign Identity"},
+      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self Sovereign Identity"},
       {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
       {"@id": "urn:ngm:class:tor-network", "label": "Tor Network"}
     ],

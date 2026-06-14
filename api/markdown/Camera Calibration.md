@@ -64,7 +64,7 @@ alias:: CameraCalibration
       {"@id": "urn:ngm:class:slam", "label": "SLAM"},
       {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
       {"@id": "urn:ngm:class:stereo-vision", "label": "Stereo Vision"},
-      {"@id": "urn:ngm:class:structure-from-motion", "label": "Structure from Motion"}
+      {"@id": "urn:ngm:class:structure-from-motion", "label": "Structure-from-Motion"}
     ],
     "contrastsWith": [
       {"@id": "urn:ngm:class:self-calibration", "label": "Self-Calibration"},

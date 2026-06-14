@@ -40,7 +40,7 @@
       {"@id": "urn:ngm:class:agentic-ai", "label": "Agentic AI"},
       {"@id": "urn:ngm:class:symbolic-reasoning", "label": "Symbolic Reasoning"},
       {"@id": "urn:ngm:class:autonomous-agents", "label": "Autonomous Agents"},
-      {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human-Computer Interaction"}
+      {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human Computer Interaction"}
     ],
     "requires": [
       {"@id": "urn:ngm:class:knowledge-representation", "label": "Knowledge Representation"},

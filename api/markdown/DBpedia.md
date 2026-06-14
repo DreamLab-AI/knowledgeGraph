@@ -23,7 +23,7 @@ public:: true
   "definition": "DBpedia is a community project that extracts structured information from Wikipedia and publishes it as an interlinked, openly licensed knowledge graph in RDF. It exposes millions of entities through a SPARQL endpoint and dereferenceable URIs, forming a central hub of the Linked Open Data cloud. It is widely used as background knowledge for knowledge-graph construction, entity linking and semantic search.",
   "domain": "data",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:infra-data-management", "label": "Infrastructure Data Management"}],
+  "subClassOf": [{"@id": "urn:ngm:class:infra-data-management", "label": "Data Management"}],
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:knowledge-graphing", "label": "Knowledge Graphing"}

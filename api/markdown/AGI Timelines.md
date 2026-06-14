@@ -23,7 +23,7 @@ public:: true
   "definition": "AGI timelines are structured forecasts estimating when artificial general intelligence — AI matching or exceeding human cognitive ability across most economically valuable tasks — might be achieved. Such forecasts aggregate expert surveys, compute-scaling extrapolations, benchmark-progress curves, and Bayesian models of research milestones to produce probability distributions over future dates. Timelines are inherently uncertain and contested, and they materially influence research prioritisation, safety investment, and public policy. They are a distinct object of study within AI forecasting rather than a single predicted date.",
   "domain": "ai",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:time-series-forecasting", "label": "Time-Series Forecasting"}],
+  "subClassOf": [{"@id": "urn:ngm:class:time-series-forecasting", "label": "Time Series Forecasting"}],
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:artificial-general-intelligence", "label": "Artificial General Intelligence"},

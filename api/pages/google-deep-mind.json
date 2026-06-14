@@ -23,7 +23,7 @@
       },
       {
         "id": "urn:ngm:class:gemini-multimodal-language-model",
-        "label": "Gemini"
+        "label": "Gemini Multimodal Language Model"
       },
       {
         "id": "urn:ngm:class:alphacode",
@@ -76,7 +76,7 @@
     "contrastsWith": [
       {
         "id": "urn:ngm:class:openai-research-organisation",
-        "label": "OpenAI"
+        "label": "OpenAI Research Organisation"
       },
       {
         "id": "urn:ngm:class:anthropic",

@@ -49,7 +49,7 @@ public:: true
     ],
     "enables": [
       {"@id": "urn:ngm:class:confidential-computing", "label": "Confidential Computing"},
-      {"@id": "urn:ngm:class:privacy-enhancing-computation-pec", "label": "Privacy-Enhancing Computation"},
+      {"@id": "urn:ngm:class:privacy-enhancing-computation-pec", "label": "Privacy-Enhancing Computation (PEC)"},
       {"@id": "urn:ngm:class:secure-multi-party-computation", "label": "Secure Multi-Party Computation"},
       {"@id": "urn:ngm:class:private-inference", "label": "Private Inference"}
     ],

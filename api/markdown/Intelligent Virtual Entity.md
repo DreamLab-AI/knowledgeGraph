@@ -219,7 +219,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:context-aware-response",
-        "label": "Context-Aware Response"
+        "label": "Context Aware Response"
       }
     ],
     "partOf": [

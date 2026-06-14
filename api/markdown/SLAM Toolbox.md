@@ -23,7 +23,7 @@ public:: true
   "definition": "SLAM Toolbox is an open-source ROS package for 2D simultaneous localisation and mapping using laser scan matching and pose-graph optimisation. It supports online mapping, lifelong mapping with map serialisation and continuation, and localisation against pre-built maps, making it a default mapping stack for indoor mobile robots. It is widely deployed on ground robots running the ROS navigation stack.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:robo-navigation-and-planning", "label": "Robotics Navigation and Planning"}],
+  "subClassOf": [{"@id": "urn:ngm:class:robo-navigation-and-planning", "label": "Navigation and Planning"}],
   "relations": {
     "relatedTo": [{"@id": "urn:ngm:class:ground-robot", "label": "Ground Robot"}, {"@id": "urn:ngm:class:mobile-robot-platform", "label": "Mobile Robot Platform"}]
   },

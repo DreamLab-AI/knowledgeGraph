@@ -23,7 +23,7 @@ public:: true
   "definition": "Neural Radiance Field (NeRF) is a neural scene representation technique that encodes a continuous volumetric scene as a multi-layer perceptron mapping 3D coordinates and viewing directions to colour and density values, enabling photorealistic novel view synthesis from a sparse set of calibrated input images. Introduced by Mildenhall et al. at ECCV 2020, NeRF employs volumetric ray marching and differentiable rendering to optimise network weights via photometric loss against held-out views, without requiring explicit mesh or voxel geometry. The technique catalysed a broad family of neural rendering methods spanning real-time variants, dynamic scenes, large-scale outdoor capture, and hybrid neural-explicit representations such as 3D Gaussian Splatting.",
   "domain": "spatial-computing",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:sc-display-and-rendering", "label": "Sc Display And Rendering"}],
+  "subClassOf": [{"@id": "urn:ngm:class:sc-display-and-rendering", "label": "Display and Rendering"}],
   "sameAs": [
     {"@id": "urn:ngm:class:neural-radiance-field", "label": "Neural Radiance Field"}
   ],
@@ -56,7 +56,7 @@ public:: true
     "relatedTo": [
       {"@id": "urn:ngm:class:volumetric-capture", "label": "Volumetric Capture"},
       {"@id": "urn:ngm:class:neural-rendering", "label": "Neural Rendering"},
-      {"@id": "urn:ngm:class:structure-from-motion", "label": "Structure from Motion"}
+      {"@id": "urn:ngm:class:structure-from-motion", "label": "Structure-from-Motion"}
     ],
     "bridgesTo": [
       {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},

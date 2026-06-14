@@ -61,7 +61,7 @@
       },
       {
         "id": "urn:ngm:class:open-source-software",
-        "label": "Open-Source Software"
+        "label": "Open Source Software"
       }
     ],
     "implements": [
@@ -89,7 +89,7 @@
       },
       {
         "id": "urn:ngm:class:proof-of-stake",
-        "label": "Proof Of Stake"
+        "label": "Proof of Stake"
       }
     ],
     "bridgesTo": [

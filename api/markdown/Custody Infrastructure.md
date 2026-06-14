@@ -45,7 +45,7 @@ public:: true
     ],
     "enables": [
       {"@id": "urn:ngm:class:institutional-digital-asset-custody", "label": "Institutional Digital Asset Custody"},
-      {"@id": "urn:ngm:class:tokenised-real-world-assets", "label": "Tokenised Real-World Assets"},
+      {"@id": "urn:ngm:class:tokenised-real-world-assets", "label": "Tokenised Real World Assets"},
       {"@id": "urn:ngm:class:digital-asset-etf", "label": "Digital Asset ETF"}
     ],
     "uses": [

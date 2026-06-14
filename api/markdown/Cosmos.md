@@ -43,7 +43,7 @@ public:: true
     "enables": [
       {"@id": "urn:ngm:class:blockchain-interoperability", "label": "Blockchain Interoperability"},
       {"@id": "urn:ngm:class:cross-chain-interoperability", "label": "Cross-Chain Interoperability"},
-      {"@id": "urn:ngm:class:cross-chain-asset-transfer", "label": "Cross-Chain Asset Transfer"},
+      {"@id": "urn:ngm:class:cross-chain-asset-transfer", "label": "Cross Chain Asset Transfer"},
       {"@id": "urn:ngm:class:interchain-accounts", "label": "Interchain Accounts"},
       {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"}
     ],
@@ -51,7 +51,7 @@ public:: true
       {"@id": "urn:ngm:class:tendermint-consensus", "label": "Tendermint Consensus"},
       {"@id": "urn:ngm:class:deterministic-finality", "label": "Deterministic Finality"},
       {"@id": "urn:ngm:class:light-client", "label": "Light Client"},
-      {"@id": "urn:ngm:class:on-chain-governance", "label": "On-Chain Governance"}
+      {"@id": "urn:ngm:class:on-chain-governance", "label": "On-chain Governance"}
     ],
     "contrastsWith": [
       {"@id": "urn:ngm:class:polkadot", "label": "Polkadot"},

@@ -90,7 +90,7 @@ alias:: AccessibilityStandards
       },
       {
         "@id": "urn:ngm:class:human-computer-interaction",
-        "label": "Human-Computer Interaction"
+        "label": "Human Computer Interaction"
       }
     ],
     "requires": [

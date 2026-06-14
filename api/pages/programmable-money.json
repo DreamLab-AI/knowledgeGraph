@@ -67,7 +67,7 @@
       },
       {
         "id": "urn:ngm:class:delivery-versus-payment",
-        "label": "Delivery Versus Payment"
+        "label": "Delivery-Versus-Payment"
       }
     ],
     "dependsOn": [

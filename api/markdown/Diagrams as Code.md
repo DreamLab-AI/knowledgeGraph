@@ -628,11 +628,11 @@ public:: true
     },
     {
       "@id": "urn:ngm:class:infra-software-engineering",
-      "label": "Infra Software Engineering"
+      "label": "Software Engineering"
     },
     {
       "@id": "urn:ngm:class:documentation-as-code",
-      "label": "Documentation as Code"
+      "label": "Documentation As Code"
     }
   ],
   "relations": {
@@ -761,7 +761,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:markdown-diagramming-as-code-tool",
-        "label": "Mermaid"
+        "label": "Markdown Diagramming As Code Tool"
       }
     ],
     "uses": [
@@ -801,7 +801,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:documentation-as-code",
-        "label": "Documentation as Code"
+        "label": "Documentation As Code"
       },
       {
         "@id": "urn:ngm:class:excalidraw",

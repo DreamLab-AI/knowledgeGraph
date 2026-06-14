@@ -25,7 +25,7 @@ public:: true
   "maturity": "emerging",
   "subClassOf": [{"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:cross-border-compliance", "label": "Cross-Border Compliance"}, {"@id": "urn:ngm:class:digital-jurisdiction", "label": "Digital Jurisdiction"}]
+    "relatedTo": [{"@id": "urn:ngm:class:cross-border-compliance", "label": "Cross Border Compliance"}, {"@id": "urn:ngm:class:digital-jurisdiction", "label": "Digital Jurisdiction"}]
   },
   "quality": 0.72
 }

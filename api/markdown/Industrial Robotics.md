@@ -84,7 +84,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:cyber-physical-systems",
-        "label": "Cyber-Physical Systems"
+        "label": "Cyber Physical Systems"
       }
     ],
     "requires": [

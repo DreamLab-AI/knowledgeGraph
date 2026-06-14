@@ -27,7 +27,7 @@ public:: true
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:force-control", "label": "Force Control"},
-      {"@id": "urn:ngm:class:model-based-control", "label": "Model-Based Control"}
+      {"@id": "urn:ngm:class:model-based-control", "label": "Model Based Control"}
     ]
   },
   "quality": 0.72

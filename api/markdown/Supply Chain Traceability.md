@@ -111,7 +111,7 @@ alias:: BC-0441-supply-chain-traceability, BC-0446-supply-chain-traceability
       {"@id": "urn:ngm:class:cold-chain-monitoring", "label": "Cold Chain Monitoring"},
       {"@id": "urn:ngm:class:product-provenance", "label": "Product Provenance"},
       {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"},
-      {"@id": "urn:ngm:class:anti-counterfeiting", "label": "Anti-Counterfeiting"}
+      {"@id": "urn:ngm:class:anti-counterfeiting", "label": "Anti Counterfeiting"}
     ],
     "requires": [
       {"@id": "urn:ngm:class:data-integrity", "label": "Data Integrity"},
@@ -135,7 +135,7 @@ alias:: BC-0441-supply-chain-traceability, BC-0446-supply-chain-traceability
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:transparency", "label": "Transparency"},
-      {"@id": "urn:ngm:class:sustainability-reporting", "label": "Sustainability Reporting"}
+      {"@id": "urn:ngm:class:sustainability-reporting", "label": "SustainabilityReporting"}
     ],
     "bridgesTo": [
       {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"},

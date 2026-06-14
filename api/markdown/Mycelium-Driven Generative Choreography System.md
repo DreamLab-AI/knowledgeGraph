@@ -46,7 +46,7 @@ elevatedFrom:: [[GOLM]]
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"},
       {"@id": "urn:ngm:class:motion-capture", "label": "Motion Capture"}
     ],
     "relatedTo": [

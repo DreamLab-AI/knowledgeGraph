@@ -66,7 +66,7 @@
       },
       {
         "id": "urn:ngm:class:lidar-scanning",
-        "label": "LiDAR Scanning"
+        "label": "Lidar Scanning"
       }
     ],
     "bridgesTo": [

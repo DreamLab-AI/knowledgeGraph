@@ -199,7 +199,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:virtual-physical-collision",
-        "label": "Virtual-Physical Collision"
+        "label": "Virtual Physical Collision"
       }
     ],
     "partOf": [

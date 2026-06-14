@@ -43,7 +43,7 @@ public:: true
       {"@id": "urn:ngm:class:serverless-architecture", "label": "Serverless Architecture"},
       {"@id": "urn:ngm:class:microservices-architecture", "label": "Microservices Architecture"},
       {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"},
-      {"@id": "urn:ngm:class:quantum-computation-paradigm", "label": "Quantum Computing"},
+      {"@id": "urn:ngm:class:quantum-computation-paradigm", "label": "Quantum Computation Paradigm"},
       {"@id": "urn:ngm:class:tpu", "label": "TPU"},
       {"@id": "urn:ngm:class:fpga", "label": "FPGA"}
     ],

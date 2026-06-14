@@ -80,7 +80,7 @@ elevatedFrom:: [[Training for Design Practitioners]]
       {"@id": "urn:ngm:class:prompt-engineering", "label": "Prompt Engineering"}
     ],
     "enables": [
-      {"@id": "urn:ngm:class:sme-ai-productivity-toolkit", "label": "Consumer Tools for SMEs"},
+      {"@id": "urn:ngm:class:sme-ai-productivity-toolkit", "label": "SME AI Productivity Toolkit"},
       {"@id": "urn:ngm:class:knowledge-graphing", "label": "Knowledge Graphing"}
     ],
     "supports": [

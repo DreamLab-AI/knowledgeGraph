@@ -106,8 +106,8 @@ elevatedFrom:: [[Politics, Law, Privacy]]
       {"@id": "urn:ngm:class:civil-liberties", "label": "Civil Liberties"}
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:iso-iec-42001", "label": "ISO/IEC 42001 AI Management Standard"},
-      {"@id": "urn:ngm:class:nist-ai-rmf", "label": "NIST AI Risk Management Framework"}
+      {"@id": "urn:ngm:class:iso-iec-42001", "label": "ISO IEC 42001"},
+      {"@id": "urn:ngm:class:nist-ai-rmf", "label": "NIST AI RMF"}
     ],
     "contrastsWith": [
       {"@id": "urn:ngm:class:digital-society-surveillance", "label": "Digital Society Surveillance"},
@@ -120,7 +120,7 @@ elevatedFrom:: [[Politics, Law, Privacy]]
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:intellectual-property-rights-framework", "label": "Intellectual Property Rights Framework"},
-      {"@id": "urn:ngm:class:open-source-ai", "label": "Open Source AI"},
+      {"@id": "urn:ngm:class:open-source-ai", "label": "Open-Source AI"},
       {"@id": "urn:ngm:class:data-brokerage", "label": "Data Brokerage"},
       {"@id": "urn:ngm:class:facial-recognition-technology", "label": "Facial Recognition Technology"}
     ]

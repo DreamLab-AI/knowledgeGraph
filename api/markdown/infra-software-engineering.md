@@ -37,7 +37,7 @@ Core sub-domains include software architecture (defining system structure, compo
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infrastructure",
-      "label": "Infrastructure Domain"
+      "label": "Infrastructure"
     }
   ],
   "relations": {

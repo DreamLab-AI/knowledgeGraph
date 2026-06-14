@@ -166,7 +166,7 @@
       },
       {
         "id": "urn:ngm:class:gemini-multimodal-language-model",
-        "label": "Gemini"
+        "label": "Gemini Multimodal Language Model"
       },
       {
         "id": "urn:ngm:class:gpt-4",
@@ -174,7 +174,7 @@
       },
       {
         "id": "urn:ngm:class:perplexity-ai-search-platform",
-        "label": "Perplexity"
+        "label": "Perplexity AI Search Platform"
       }
     ],
     "supports": [

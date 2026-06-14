@@ -465,7 +465,7 @@ alias:: Multi-Sig Governance
     },
     {
       "@id": "urn:ngm:class:bc-governance-and-regulation",
-      "label": "BC Governance And Regulation"
+      "label": "Governance and Regulation"
     }
   ],
   "relations": {
@@ -538,7 +538,7 @@ alias:: Multi-Sig Governance
       },
       {
         "@id": "urn:ngm:class:schnorr-signature",
-        "label": "Schnorr Signatures"
+        "label": "Schnorr Signature"
       },
       {
         "@id": "urn:ngm:class:secure-key-storage",
@@ -558,7 +558,7 @@ alias:: Multi-Sig Governance
       },
       {
         "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
-        "label": "Public Key Cryptography"
+        "label": "Public-Key Cryptography"
       }
     ],
     "enables": [
@@ -706,7 +706,7 @@ alias:: Multi-Sig Governance
       },
       {
         "@id": "urn:ngm:class:ethereum-smart-contract-platform",
-        "label": "Ethereum"
+        "label": "Ethereum Smart Contract Platform"
       },
       {
         "@id": "urn:ngm:class:governance-token",

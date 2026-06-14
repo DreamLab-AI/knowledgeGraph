@@ -40,7 +40,7 @@ public:: true
       {"@id": "urn:ngm:class:ontology-in-llm-operations", "label": "Ontology in LLM Operations"}
     ],
     "supports": [
-      {"@id": "urn:ngm:class:semantic-web-linked-data-standard", "label": "Semantic Web"}
+      {"@id": "urn:ngm:class:semantic-web-linked-data-standard", "label": "Semantic Web Linked Data Standard"}
     ]
   },
   "quality": 0.8

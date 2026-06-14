@@ -332,11 +332,11 @@ alias:: Lightning-Network
       },
       {
         "@id": "urn:ngm:class:hash-time-locked-contract",
-        "label": "Hash Time-Locked Contracts"
+        "label": "Hash Time-Locked Contract"
       },
       {
         "@id": "urn:ngm:class:lightning-service-provider",
-        "label": "Lightning Service Providers"
+        "label": "Lightning Service Provider"
       },
       {
         "@id": "urn:ngm:class:onion-routing",
@@ -430,7 +430,7 @@ alias:: Lightning-Network
       },
       {
         "@id": "urn:ngm:class:hash-time-locked-contract",
-        "label": "Hash Time-Locked Contracts"
+        "label": "Hash Time-Locked Contract"
       },
       {
         "@id": "urn:ngm:class:lnurl-protocol",
@@ -464,7 +464,7 @@ alias:: Lightning-Network
       },
       {
         "@id": "urn:ngm:class:schnorr-signature",
-        "label": "Schnorr Signatures"
+        "label": "Schnorr Signature"
       },
       {
         "@id": "urn:ngm:class:sphinx-protocol",

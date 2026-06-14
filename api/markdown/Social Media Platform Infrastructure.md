@@ -51,7 +51,7 @@ elevatedFrom:: [[social media]]
     ],
     "uses": [
       {"@id": "urn:ngm:class:content-moderation", "label": "Content Moderation"},
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"}
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"}

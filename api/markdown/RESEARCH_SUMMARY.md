@@ -80,8 +80,8 @@ public:: true
       {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse Domain"},
-      {"@id": "urn:ngm:class:robotics", "label": "Robotics Domain"},
+      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"},
+      {"@id": "urn:ngm:class:robotics", "label": "Robotics"},
       {"@id": "urn:ngm:class:metaverse-ontology", "label": "Metaverse Ontology"}
     ]
   },

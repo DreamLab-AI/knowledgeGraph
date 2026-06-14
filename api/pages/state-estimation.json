@@ -108,7 +108,7 @@
     "uses": [
       {
         "id": "urn:ngm:class:lidar",
-        "label": "LiDAR"
+        "label": "Lidar"
       },
       {
         "id": "urn:ngm:class:visual-odometry",
@@ -120,7 +120,7 @@
       },
       {
         "id": "urn:ngm:class:gps",
-        "label": "GPS"
+        "label": "Gps"
       }
     ],
     "supports": [],

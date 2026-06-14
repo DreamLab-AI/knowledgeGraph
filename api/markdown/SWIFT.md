@@ -64,7 +64,7 @@ public:: true
   "qualityScore": 0.7,
   "subClassOf": {
     "@id": "urn:ngm:class:financial-infrastructure",
-    "label": "Financial Infrastructure Domain"
+    "label": "Financial Infrastructure"
   },
   "relations": {
     "hasPart": [
@@ -122,7 +122,7 @@ public:: true
     "dependsOn": [
       {
         "@id": "urn:ngm:class:bc-defi-and-economics",
-        "label": "Payment Systems Domain"
+        "label": "DeFi and Economics"
       },
       {
         "@id": "urn:ngm:class:network-infrastructure",

@@ -30,11 +30,11 @@
     "relatedTo": [
       {
         "id": "urn:ngm:class:spatial-computing",
-        "label": "Spatial Computing Domain"
+        "label": "Spatial Computing"
       },
       {
         "id": "urn:ngm:class:ar-display-device",
-        "label": "AR Display Device"
+        "label": "Ar Display Device"
       }
     ]
   },

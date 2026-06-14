@@ -31,7 +31,7 @@ public:: true
       {"@id": "urn:ngm:class:net-zero-targets", "label": "Net Zero Targets"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"},
       {"@id": "urn:ngm:class:environmental-monitoring", "label": "Environmental Monitoring"}
     ],
     "relatedTo": [

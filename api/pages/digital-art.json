@@ -9,7 +9,7 @@
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-application",
-      "label": "Creative Media Domain"
+      "label": "AI Application"
     }
   ],
   "entityType": "Class",
@@ -105,7 +105,7 @@
     "supports": [
       {
         "id": "urn:ngm:class:decentralised-creative-metaverse-framework",
-        "label": "Agentic Metaverse for Global Creatives"
+        "label": "Decentralised Creative Metaverse Framework"
       },
       {
         "id": "urn:ngm:class:digital-cultural-heritage",

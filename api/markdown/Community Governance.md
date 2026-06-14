@@ -111,7 +111,7 @@ public:: true
     "enables": [
       {
         "@id": "urn:ngm:class:collective-decision-making",
-        "label": "Collective Decision-Making"
+        "label": "Collective Decision Making"
       },
       {
         "@id": "urn:ngm:class:commons-management",

@@ -165,7 +165,7 @@ public:: true
     "implements": [
       {
         "@id": "urn:ngm:class:safety-and-alignment",
-        "label": "Safety and Alignment"
+        "label": "Safety and alignment"
       },
       {
         "@id": "urn:ngm:class:defense-in-depth",
@@ -183,7 +183,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:nist-ai-rmf",
-        "label": "NIST AI Risk Management Framework"
+        "label": "NIST AI RMF"
       }
     ],
     "contrastsWith": [

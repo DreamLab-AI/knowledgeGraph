@@ -40,7 +40,7 @@ public:: true
     "requires": [
       {"@id": "urn:ngm:class:variational-autoencoder", "label": "Variational Autoencoder"},
       {"@id": "urn:ngm:class:u-net", "label": "U-Net"},
-      {"@id": "urn:ngm:class:cross-attention", "label": "Cross-Attention"}
+      {"@id": "urn:ngm:class:cross-attention", "label": "Cross Attention"}
     ],
     "hasPart": [
       {"@id": "urn:ngm:class:encoder-decoder", "label": "Encoder-Decoder"},
@@ -51,7 +51,7 @@ public:: true
       {"@id": "urn:ngm:class:text-to-image", "label": "Text-to-Image"},
       {"@id": "urn:ngm:class:image-generation", "label": "Image Generation"},
       {"@id": "urn:ngm:class:image-inpainting", "label": "Image Inpainting"},
-      {"@id": "urn:ngm:class:image-to-image-translation", "label": "Image-to-Image Translation"},
+      {"@id": "urn:ngm:class:image-to-image-translation", "label": "Image to Image Translation"},
       {"@id": "urn:ngm:class:video-generation", "label": "Video Generation"}
     ],
     "uses": [
@@ -70,7 +70,7 @@ public:: true
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:generative-model", "label": "Generative Model"},
-      {"@id": "urn:ngm:class:neural-network-latent-space", "label": "Latent Space"},
+      {"@id": "urn:ngm:class:neural-network-latent-space", "label": "Neural Network Latent Space"},
       {"@id": "urn:ngm:class:transformer", "label": "Transformer"},
       {"@id": "urn:ngm:class:foundation-model", "label": "Foundation Model"}
     ],

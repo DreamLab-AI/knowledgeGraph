@@ -25,7 +25,7 @@ public:: true
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:ai-application", "label": "AI Application"}],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:ai-machine-learning", "label": "AI Machine Learning"}, {"@id": "urn:ngm:class:context-awareness", "label": "Context Awareness"}]
+    "relatedTo": [{"@id": "urn:ngm:class:ai-machine-learning", "label": "Ai Machine Learning"}, {"@id": "urn:ngm:class:context-awareness", "label": "Context Awareness"}]
   },
   "quality": 0.72
 }

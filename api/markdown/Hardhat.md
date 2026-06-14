@@ -53,7 +53,7 @@ public:: true
   "subClassOf": [
     {
       "@id": "urn:ngm:class:bc-network-component",
-      "label": "BC Network Component"
+      "label": "Network Component"
     }
   ],
   "relations": {
@@ -106,7 +106,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:evm",
-        "label": "Ethereum Virtual Machine"
+        "label": "EVM"
       }
     ],
     "uses": [

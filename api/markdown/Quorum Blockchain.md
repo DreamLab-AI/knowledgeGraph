@@ -485,7 +485,7 @@ alias:: QuorumBlockchain
     },
     {
       "@id": "urn:ngm:class:ethereum-smart-contract-platform",
-      "label": "Ethereum"
+      "label": "Ethereum Smart Contract Platform"
     }
   ],
   "relations": {
@@ -520,7 +520,7 @@ alias:: QuorumBlockchain
       },
       {
         "@id": "urn:ngm:class:raft-consensus",
-        "label": "Raft Consensus"
+        "label": "RAFT Consensus"
       },
       {
         "@id": "urn:ngm:class:solidity",
@@ -550,7 +550,7 @@ alias:: QuorumBlockchain
       },
       {
         "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
-        "label": "Public Key Cryptography"
+        "label": "Public-Key Cryptography"
       },
       {
         "@id": "urn:ngm:class:smart-contracts",
@@ -598,7 +598,7 @@ alias:: QuorumBlockchain
       },
       {
         "@id": "urn:ngm:class:erc20-standard",
-        "label": "ERC-20 Standard"
+        "label": "ERC20 Standard"
       },
       {
         "@id": "urn:ngm:class:erc-721-standard",
@@ -614,7 +614,7 @@ alias:: QuorumBlockchain
       },
       {
         "@id": "urn:ngm:class:raft-consensus",
-        "label": "Raft Consensus"
+        "label": "RAFT Consensus"
       }
     ],
     "uses": [

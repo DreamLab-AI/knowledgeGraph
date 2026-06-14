@@ -113,7 +113,7 @@ public:: true
     ],
     "bridgesTo": [
       {"@id": "urn:ngm:class:decentralised-identity", "label": "Decentralised Identity"},
-      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self-Sovereign Identity"}
+      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self Sovereign Identity"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:cryptographic-keys", "label": "Cryptographic Keys"},

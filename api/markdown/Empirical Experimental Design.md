@@ -54,7 +54,7 @@ elevatedFrom:: [[experiment]]
       {"@id": "urn:ngm:class:research-methods", "label": "Research Methods"},
       {"@id": "urn:ngm:class:scientific-discovery", "label": "Scientific Discovery"},
       {"@id": "urn:ngm:class:evaluation-benchmarks-and-leaderboards", "label": "Evaluation benchmarks and leaderboards"},
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"}
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:software-testing", "label": "Software Testing"},

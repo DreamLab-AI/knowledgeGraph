@@ -42,7 +42,7 @@ public:: true
       {"@id": "urn:ngm:class:lpwan", "label": "LPWAN"}
     ],
     "enables": [
-      {"@id": "urn:ngm:class:industrial-automation", "label": "Industrial Automation"},
+      {"@id": "urn:ngm:class:industrial-automation", "label": "IndustrialAutomation"},
       {"@id": "urn:ngm:class:supply-chain-management", "label": "Supply Chain Management"},
       {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
       {"@id": "urn:ngm:class:smart-city", "label": "Smart City"},

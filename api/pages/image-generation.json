@@ -76,13 +76,13 @@
     "contrastsWith": [
       {
         "id": "urn:ngm:class:computer-vision",
-        "label": "Computer Vision (discriminative)"
+        "label": "Computer Vision"
       }
     ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:metaverse",
-        "label": "MetaverseDomain"
+        "label": "Metaverse"
       },
       {
         "id": "urn:ngm:class:comfy-ui",
@@ -122,7 +122,7 @@
       },
       {
         "id": "urn:ngm:class:open-generative-ai-tools",
-        "label": "Open Generative AI Tools"
+        "label": "Open Generative AI tools"
       }
     ],
     "standardizedBy": [],

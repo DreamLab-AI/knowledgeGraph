@@ -57,11 +57,11 @@ elevatedFrom:: [[Human tracking and SLAM capture]]
       {"@id": "urn:ngm:class:motion-capture", "label": "Motion Capture"},
       {"@id": "urn:ngm:class:avatar-animation", "label": "Avatar Animation"},
       {"@id": "urn:ngm:class:extended-reality", "label": "Extended Reality"},
-      {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human-Robot Interaction"}
+      {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human Robot Interaction"}
     ],
     "requires": [
       {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:real-time-processing", "label": "Real-Time Processing"},
+      {"@id": "urn:ngm:class:real-time-processing", "label": "Real-time Processing"},
       {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"}
     ],
     "hasPart": [

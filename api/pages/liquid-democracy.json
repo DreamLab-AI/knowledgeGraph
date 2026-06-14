@@ -9,7 +9,7 @@
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-governance-and-regulation",
-      "label": "Blockchain Governance and Regulation"
+      "label": "Governance and Regulation"
     }
   ],
   "entityType": "Class",
@@ -56,7 +56,7 @@
       },
       {
         "id": "urn:ngm:class:token-weighted-voting",
-        "label": "Token-weighted Voting"
+        "label": "Token-Weighted Voting"
       }
     ],
     "implements": [

@@ -57,7 +57,7 @@ public:: true
   "subClassOf": [
     {
       "@id": "urn:ngm:class:bc-token-and-asset",
-      "label": "Bc Token And Asset"
+      "label": "Token and Asset"
     }
   ],
   "relations": {
@@ -76,7 +76,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:proof-of-work",
-        "label": "Proof of Work"
+        "label": "Proof Of Work"
       }
     ],
     "implements": [

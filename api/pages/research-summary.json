@@ -56,11 +56,11 @@
     "relatedTo": [
       {
         "id": "urn:ngm:class:metaverse",
-        "label": "Metaverse Domain"
+        "label": "Metaverse"
       },
       {
         "id": "urn:ngm:class:robotics",
-        "label": "Robotics Domain"
+        "label": "Robotics"
       },
       {
         "id": "urn:ngm:class:metaverse-ontology",

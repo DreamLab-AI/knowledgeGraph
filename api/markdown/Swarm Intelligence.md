@@ -60,7 +60,7 @@ public:: true
   "qualityScore": 0.7,
   "subClassOf": {
     "@id": "urn:ngm:class:robo-navigation-and-planning",
-    "label": "Autonomous Systems Domain"
+    "label": "Navigation and Planning"
   },
   "relations": {
     "hasPart": [

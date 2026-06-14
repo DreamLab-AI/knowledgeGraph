@@ -163,7 +163,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:near-field-communication",
-        "label": "Near-Field Communication"
+        "label": "Near Field Communication"
       },
       {
         "@id": "urn:ngm:class:stablecoin",

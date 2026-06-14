@@ -33,7 +33,7 @@ public:: true
     ],
     "enables": [
       {"@id": "urn:ngm:class:network-function-virtualization", "label": "Network Function Virtualization"},
-      {"@id": "urn:ngm:class:multi-access-edge-computing", "label": "Multi-Access Edge Computing"},
+      {"@id": "urn:ngm:class:multi-access-edge-computing", "label": "MultiAccessEdgeComputing"},
       {"@id": "urn:ngm:class:internet-of-things", "label": "Internet of Things"},
       {"@id": "urn:ngm:class:vehicle-to-everything", "label": "Vehicle-to-Everything"},
       {"@id": "urn:ngm:class:network-slicing", "label": "Network Slicing"}

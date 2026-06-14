@@ -47,7 +47,7 @@ elevatedFrom:: [[Plotting a graph using matplotlib python library]]
   "relations": {
     "uses": [
       {"@id": "urn:ngm:class:data-visualisation", "label": "Data Visualisation"},
-      {"@id": "urn:ngm:class:python-pytorch-deep-learning-stack", "label": "Python and PyTorch"},
+      {"@id": "urn:ngm:class:python-pytorch-deep-learning-stack", "label": "Python PyTorch Deep Learning Stack"},
       {"@id": "urn:ngm:class:software-library", "label": "Software Library"}
     ],
     "enables": [

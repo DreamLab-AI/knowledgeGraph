@@ -179,27 +179,27 @@ public:: true
     "hasPart": [
       {
         "@id": "urn:ngm:class:content-delivery-network",
-        "label": "ContentDeliveryNetwork"
+        "label": "Content Delivery Network"
       },
       {
         "@id": "urn:ngm:class:distributed-storage",
-        "label": "DistributedStorage"
+        "label": "Distributed Storage"
       },
       {
         "@id": "urn:ngm:class:network-slicing",
-        "label": "NetworkSlicing"
+        "label": "Network Slicing"
       },
       {
         "@id": "urn:ngm:class:edge-computing-node",
-        "label": "EdgeComputingNode"
+        "label": "Edge Computing Node"
       },
       {
         "@id": "urn:ngm:class:game-engine",
-        "label": "GameEngine"
+        "label": "Game Engine"
       },
       {
         "@id": "urn:ngm:class:rendering-pipeline",
-        "label": "RenderingPipeline"
+        "label": "Rendering Pipeline"
       }
     ],
     "requires": [
@@ -227,7 +227,7 @@ public:: true
     "enables": [
       {
         "@id": "urn:ngm:class:extended-reality",
-        "label": "ExtendedReality"
+        "label": "Extended Reality"
       },
       {
         "@id": "urn:ngm:class:metaverse-environment",
@@ -235,15 +235,15 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:real-time-synchronization",
-        "label": "RealtimeSynchronization"
+        "label": "Real-time Synchronization"
       },
       {
         "@id": "urn:ngm:class:immersive-experience",
-        "label": "ImmersiveExperience"
+        "label": "Immersive Experience"
       },
       {
         "@id": "urn:ngm:class:spatial-computing",
-        "label": "SpatialComputing"
+        "label": "Spatial Computing"
       }
     ]
   },

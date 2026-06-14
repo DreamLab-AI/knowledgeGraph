@@ -669,7 +669,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:constitutional-ai-training-methodology",
-        "label": "Constitutional AI"
+        "label": "Constitutional AI Training Methodology"
       }
     ],
     "supports": [
@@ -717,7 +717,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:iso-iec-tr-24027",
-        "label": "ISO/IEC TR 24027"
+        "label": "ISO-IEC TR 24027"
       },
       {
         "@id": "urn:ngm:class:neur-ips",

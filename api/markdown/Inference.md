@@ -72,11 +72,11 @@ public:: true
     "hasPart": [
       {"@id": "urn:ngm:class:forward-pass", "label": "Forward Pass"},
       {"@id": "urn:ngm:class:token-generation", "label": "Token Generation"},
-      {"@id": "urn:ngm:class:post-processing", "label": "Post-Processing"}
+      {"@id": "urn:ngm:class:post-processing", "label": "Post Processing"}
     ],
     "contrastsWith": [
       {"@id": "urn:ngm:class:training", "label": "Training"},
-      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine-Tuning"}
+      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine Tuning"}
     ],
     "supports": [
       {"@id": "urn:ngm:class:model-serving", "label": "Model Serving"},

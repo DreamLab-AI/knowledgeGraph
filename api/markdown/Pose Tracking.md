@@ -26,8 +26,8 @@ public:: true
   "subClassOf": [{"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing Domain"},
-      {"@id": "urn:ngm:class:ar-display-device", "label": "AR Display Device"}
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
+      {"@id": "urn:ngm:class:ar-display-device", "label": "Ar Display Device"}
     ]
   },
   "quality": 0.72

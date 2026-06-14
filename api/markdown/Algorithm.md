@@ -100,7 +100,7 @@ public:: true
       {"@id": "urn:ngm:class:robotic-process-automation", "label": "Robotic Process Automation"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"},
       {"@id": "urn:ngm:class:algorithmic-framework", "label": "Algorithmic Framework"},
       {"@id": "urn:ngm:class:algorithmic-bias", "label": "Algorithmic Bias"}
     ]

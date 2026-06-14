@@ -66,7 +66,7 @@ public:: true
       {"@id": "urn:ngm:class:access-control", "label": "Access Control"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"},
       {"@id": "urn:ngm:class:biometric-binding-mechanism", "label": "Biometric Binding Mechanism"},
       {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
     ],

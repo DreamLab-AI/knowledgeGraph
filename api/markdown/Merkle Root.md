@@ -81,7 +81,7 @@ public:: true
     },
     {
       "@id": "urn:ngm:class:cryptographic-primitive",
-      "label": "CryptographicPrimitive"
+      "label": "Cryptographic Primitive"
     }
   ],
   "relations": {

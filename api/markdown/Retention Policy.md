@@ -25,7 +25,7 @@ public:: true
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:data-management", "label": "Data Management"}],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:meeting-recording", "label": "Meeting Recording"}, {"@id": "urn:ngm:class:data-governance", "label": "Data Governance Domain"}]
+    "relatedTo": [{"@id": "urn:ngm:class:meeting-recording", "label": "Meeting Recording"}, {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"}]
   },
   "quality": 0.72
 }

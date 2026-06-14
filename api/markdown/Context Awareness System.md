@@ -95,7 +95,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:io-t-sensors",
-        "label": "IoT Sensors"
+        "label": "Io T Sensors"
       },
       {
         "@id": "urn:ngm:class:network-infrastructure",

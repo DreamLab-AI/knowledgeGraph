@@ -203,7 +203,7 @@ public:: true
     "enables": [
       {
         "@id": "urn:ngm:class:audit-trail",
-        "label": "Audit Trails"
+        "label": "Audit Trail"
       },
       {
         "@id": "urn:ngm:class:blockchain-provenance",

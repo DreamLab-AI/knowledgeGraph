@@ -1925,7 +1925,7 @@ public:: true
     "implements": [
       {
         "@id": "urn:ngm:class:blockchain",
-        "label": "blockchain"
+        "label": "Blockchain"
       }
     ]
   },

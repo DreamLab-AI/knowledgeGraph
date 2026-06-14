@@ -50,7 +50,7 @@
       },
       {
         "id": "urn:ngm:class:human-in-the-loop",
-        "label": "Human-in-the-Loop"
+        "label": "Human in the Loop"
       },
       {
         "id": "urn:ngm:class:interpretable-ai",
@@ -108,7 +108,7 @@
     "uses": [
       {
         "id": "urn:ngm:class:retrieval-augmented-generation",
-        "label": "Retrieval Augmented Generation"
+        "label": "Retrieval-Augmented Generation"
       },
       {
         "id": "urn:ngm:class:in-context-learning",

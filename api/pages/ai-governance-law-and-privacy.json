@@ -137,11 +137,11 @@
     "standardizedBy": [
       {
         "id": "urn:ngm:class:iso-iec-42001",
-        "label": "ISO/IEC 42001 AI Management Standard"
+        "label": "ISO IEC 42001"
       },
       {
         "id": "urn:ngm:class:nist-ai-rmf",
-        "label": "NIST AI Risk Management Framework"
+        "label": "NIST AI RMF"
       }
     ],
     "partOf": [
@@ -157,7 +157,7 @@
       },
       {
         "id": "urn:ngm:class:open-source-ai",
-        "label": "Open Source AI"
+        "label": "Open-Source AI"
       },
       {
         "id": "urn:ngm:class:data-brokerage",

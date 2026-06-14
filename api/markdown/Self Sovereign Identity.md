@@ -540,7 +540,7 @@ alias:: BC-0188-self-sovereign-identity, BC-0456-self-sovereign-identity, Self-S
       },
       {
         "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
-        "label": "Public Key Cryptography"
+        "label": "Public-Key Cryptography"
       },
       {
         "@id": "urn:ngm:class:trust-framework",
@@ -616,7 +616,7 @@ alias:: BC-0188-self-sovereign-identity, BC-0456-self-sovereign-identity, Self-S
       },
       {
         "@id": "urn:ngm:class:trust-over-ip-stack",
-        "label": "Trust Over IP Stack"
+        "label": "Trust over IP Stack"
       },
       {
         "@id": "urn:ngm:class:w3-c-did-core",

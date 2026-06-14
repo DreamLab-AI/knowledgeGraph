@@ -23,7 +23,7 @@ public:: true
   "definition": "Frontier models are large-scale AI systems trained at the leading edge of compute, data, and capability, exhibiting emergent behaviours not observed in smaller models and presenting both transformative societal potential and novel safety risks. The term typically refers to the most capable foundation models available at any given time, assessed across benchmarks spanning reasoning, coding, science, and multimodal tasks.",
   "domain": "artificial-intelligence",
   "maturity": "emerging",
-  "subClassOf": {"@id": "urn:ngm:class:large-scale-pretrained-foundation-model", "label": "Foundation Models"},
+  "subClassOf": {"@id": "urn:ngm:class:large-scale-pretrained-foundation-model", "label": "Large-Scale Pretrained Foundation Model"},
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:emergent-capabilities", "label": "Emergent Capabilities"},

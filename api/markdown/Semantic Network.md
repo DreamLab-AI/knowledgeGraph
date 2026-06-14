@@ -27,7 +27,7 @@ public:: true
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:cognitive-ai", "label": "Cognitive AI"},
-      {"@id": "urn:ngm:class:knowledge-representation", "label": "Knowledge Representation Domain"}
+      {"@id": "urn:ngm:class:knowledge-representation", "label": "Knowledge Representation"}
     ]
   },
   "quality": 0.72

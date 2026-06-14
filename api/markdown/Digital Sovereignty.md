@@ -29,7 +29,7 @@ public:: true
       {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
       {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"},
       {"@id": "urn:ngm:class:digital-regulation", "label": "Digital Regulation"},
-      {"@id": "urn:ngm:class:eu-ai-act-regulatory-instrument", "label": "EU AI Act"},
+      {"@id": "urn:ngm:class:eu-ai-act-regulatory-instrument", "label": "EU AI Act Regulatory Instrument"},
       {"@id": "urn:ngm:class:data-protection", "label": "Data Protection"},
       {"@id": "urn:ngm:class:internet-governance", "label": "Internet Governance"},
       {"@id": "urn:ngm:class:national-security", "label": "National Security"},

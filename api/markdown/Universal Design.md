@@ -34,7 +34,7 @@ public:: true
       {"@id": "urn:ngm:class:ergonomics", "label": "Ergonomics"}
     ],
     "enables": [
-      {"@id": "urn:ngm:class:inclusive-xr-experience", "label": "Inclusive XR Experience"},
+      {"@id": "urn:ngm:class:inclusive-xr-experience", "label": "Inclusive Xr Experience"},
       {"@id": "urn:ngm:class:inclusive-participation", "label": "Inclusive Participation"},
       {"@id": "urn:ngm:class:xr-accessibility-standards", "label": "XR Accessibility Standards"},
       {"@id": "urn:ngm:class:digital-equity", "label": "Digital Equity"},

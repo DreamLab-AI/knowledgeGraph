@@ -40,7 +40,7 @@ public:: true
     ],
     "enables": [
       {"@id": "urn:ngm:class:decentralized-governance", "label": "Decentralized Governance"},
-      {"@id": "urn:ngm:class:on-chain-governance", "label": "On-Chain Governance"},
+      {"@id": "urn:ngm:class:on-chain-governance", "label": "On-chain Governance"},
       {"@id": "urn:ngm:class:optimistic-governance", "label": "Optimistic Governance"},
       {"@id": "urn:ngm:class:fraud-proof-window", "label": "Fraud Proof Window"}
     ],

@@ -33,7 +33,7 @@ public:: true
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-technique",
-      "label": "Ai Technique"
+      "label": "AI Technique"
     }
   ],
   "sameAs": [
@@ -55,7 +55,7 @@ public:: true
     ],
     "enables": [
       {"@id": "urn:ngm:class:bayesian-inference", "label": "Bayesian Inference"},
-      {"@id": "urn:ngm:class:monte-carlo-localization", "label": "Monte Carlo Localisation"},
+      {"@id": "urn:ngm:class:monte-carlo-localization", "label": "Monte Carlo Localization"},
       {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
       {"@id": "urn:ngm:class:risk-analysis", "label": "Risk Analysis"},
       {"@id": "urn:ngm:class:probabilistic-programming", "label": "Probabilistic Programming"}

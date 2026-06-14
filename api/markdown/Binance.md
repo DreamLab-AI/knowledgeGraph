@@ -49,7 +49,7 @@ public:: true
   "subClassOf": [
     {
       "@id": "urn:ngm:class:digital-asset",
-      "label": "Digital Asset Domain"
+      "label": "Digital Asset"
     }
   ],
   "relations": {

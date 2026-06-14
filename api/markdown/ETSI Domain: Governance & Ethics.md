@@ -131,7 +131,7 @@ public:: true
     "requires": [
       {
         "@id": "urn:ngm:class:ethics-and-law",
-        "label": "Ethics & Law"
+        "label": "Ethics and Law"
       },
       {
         "@id": "urn:ngm:class:governance",
@@ -155,7 +155,7 @@ public:: true
     "partOf": [
       {
         "@id": "urn:ngm:class:etsi-metaverse-domain-taxonomy",
-        "label": "ETSI Metaverse Domain Taxonomy"
+        "label": "Etsi Metaverse Domain Taxonomy"
       }
     ]
   },

@@ -651,15 +651,15 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:human-ai-capability-complementarity",
-        "label": "Human vs AI"
+        "label": "Human-AI Capability Complementarity"
       },
       {
         "@id": "urn:ngm:class:neural-network-latent-space",
-        "label": "Latent Space"
+        "label": "Neural Network Latent Space"
       },
       {
         "@id": "urn:ngm:class:traditional-mass-media-institution",
-        "label": "Legacy Media"
+        "label": "Traditional Mass Media Institution"
       },
       {
         "@id": "urn:ngm:class:trust-and-safety",
@@ -681,7 +681,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:open-source-ai",
-        "label": "Open Source AI"
+        "label": "Open-Source AI"
       },
       {
         "@id": "urn:ngm:class:decentralised-web",
@@ -727,7 +727,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
-        "label": "EU AI Act"
+        "label": "EU AI Act Regulatory Instrument"
       }
     ]
   },

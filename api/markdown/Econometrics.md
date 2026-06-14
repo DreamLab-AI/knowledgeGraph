@@ -25,7 +25,7 @@ public:: true
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:economics", "label": "Economics"}],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:time-series-forecasting", "label": "Time-Series Forecasting"}, {"@id": "urn:ngm:class:economics", "label": "Economics"}]
+    "relatedTo": [{"@id": "urn:ngm:class:time-series-forecasting", "label": "Time Series Forecasting"}, {"@id": "urn:ngm:class:economics", "label": "Economics"}]
   },
   "quality": 0.72
 }

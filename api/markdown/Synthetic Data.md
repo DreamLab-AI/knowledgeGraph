@@ -69,7 +69,7 @@ public:: true
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:differential-privacy", "label": "Differential Privacy"},
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"},
       {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"},
       {"@id": "urn:ngm:class:bias-in-ai", "label": "Bias in AI"}
     ],

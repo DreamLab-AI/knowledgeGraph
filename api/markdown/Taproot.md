@@ -23,7 +23,7 @@ public:: true
   "definition": "Taproot is a soft-fork upgrade to the Bitcoin protocol, activated at block 709,632 in November 2021, comprising BIPs 340, 341, and 342. It introduces Schnorr signatures (BIP 340), Pay-to-Taproot (P2TR) outputs with Merkelised Abstract Syntax Tree (MAST) spending-condition commitments (BIP 341), and Tapscript — an updated Bitcoin Script dialect (BIP 342). Together these improvements enhance transaction privacy by making complex multi-condition spends indistinguishable from simple key-path spends, improve efficiency via Schnorr signature aggregation, and expand smart-contract expressiveness on Bitcoin's base layer.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:bc-protocol-and-consensus", "label": "Bc Protocol And Consensus"}],
+  "subClassOf": [{"@id": "urn:ngm:class:bc-protocol-and-consensus", "label": "Protocol and Consensus"}],
   "relations": {
     "hasPart": [
       {"@id": "urn:ngm:class:schnorr-signatures", "label": "Schnorr Signatures"},

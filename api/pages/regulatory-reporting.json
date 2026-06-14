@@ -126,7 +126,7 @@
       },
       {
         "id": "urn:ngm:class:mi-ca-regulation",
-        "label": "EU MiCA Regulation"
+        "label": "MiCA Regulation"
       }
     ],
     "contrastsWith": [],

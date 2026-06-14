@@ -45,7 +45,7 @@ public:: true
     ],
     "implements": [
       {"@id": "urn:ngm:class:token-economics", "label": "Token Economics"},
-      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof of Work"}
+      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:distributed-storage", "label": "Distributed Storage"},

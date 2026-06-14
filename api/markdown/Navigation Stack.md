@@ -23,7 +23,7 @@ public:: true
   "definition": "A navigation stack is the integrated software subsystem of a mobile robot responsible for taking it from a current pose to a goal pose while avoiding obstacles. It composes mapping, localisation, global path planning, and local trajectory control into a coordinated pipeline. The stack consumes sensor data and a map, and emits velocity commands that drive the robot's actuators.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:robo-navigation-and-planning", "label": "Robotics Navigation and Planning"}],
+  "subClassOf": [{"@id": "urn:ngm:class:robo-navigation-and-planning", "label": "Navigation and Planning"}],
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:nav2", "label": "Nav2"},

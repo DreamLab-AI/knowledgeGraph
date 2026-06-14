@@ -81,7 +81,7 @@ public:: true
     },
     {
       "@id": "urn:ngm:class:cryptographic-primitive",
-      "label": "CryptographicPrimitive"
+      "label": "Cryptographic Primitive"
     }
   ],
   "relations": {
@@ -96,7 +96,7 @@ public:: true
       {"@id": "urn:ngm:class:cryptographic-commitment", "label": "Cryptographic Commitment"}
     ],
     "requires": [
-      {"@id": "urn:ngm:class:cryptographic-primitive", "label": "CryptographicPrimitive"},
+      {"@id": "urn:ngm:class:cryptographic-primitive", "label": "Cryptographic Primitive"},
       {"@id": "urn:ngm:class:cryptography", "label": "Cryptography"}
     ],
     "enables": [
@@ -104,7 +104,7 @@ public:: true
       {"@id": "urn:ngm:class:attack-vector", "label": "Attack Vector"}
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:bc-cryptographic-primitive", "label": "Cryptographic Domain"},
+      {"@id": "urn:ngm:class:bc-cryptographic-primitive", "label": "Cryptographic Primitive"},
       {"@id": "urn:ngm:class:cryptography-security-and-privacy", "label": "Cryptography Security and Privacy"}
     ]
   },

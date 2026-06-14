@@ -448,14 +448,14 @@ public:: true
     },
     {
       "@id": "urn:ngm:class:autonomous-system",
-      "label": "Autonomous Systems"
+      "label": "Autonomous System"
     }
   ],
   "relations": {
     "hasPart": [
       {
         "@id": "urn:ngm:class:behaviour-tree",
-        "label": "Behaviour Trees"
+        "label": "Behaviour Tree"
       },
       {
         "@id": "urn:ngm:class:costmap",
@@ -527,7 +527,7 @@ public:: true
     "enables": [
       {
         "@id": "urn:ngm:class:autonomous-vehicle",
-        "label": "Autonomous Vehicles"
+        "label": "Autonomous Vehicle"
       },
       {
         "@id": "urn:ngm:class:drone-navigation",
@@ -557,7 +557,7 @@ public:: true
     "implements": [
       {
         "@id": "urn:ngm:class:behaviour-tree",
-        "label": "Behaviour Trees"
+        "label": "Behaviour Tree"
       },
       {
         "@id": "urn:ngm:class:d-star-lite",
@@ -603,7 +603,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:neural-network",
-        "label": "Neural Networks"
+        "label": "Neural Network"
       },
       {
         "@id": "urn:ngm:class:rgb-d-cameras",
@@ -615,11 +615,11 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:gps",
-        "label": "GPS"
+        "label": "Gps"
       },
       {
         "@id": "urn:ngm:class:lidar",
-        "label": "LIDAR"
+        "label": "Lidar"
       },
       {
         "@id": "urn:ngm:class:transformers",
@@ -637,7 +637,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:large-scale-pretrained-foundation-model",
-        "label": "Foundation Models"
+        "label": "Large-Scale Pretrained Foundation Model"
       },
       {
         "@id": "urn:ngm:class:object-detection",
@@ -651,11 +651,11 @@ public:: true
     "supports": [
       {
         "@id": "urn:ngm:class:multi-agent-systems",
-        "label": "Multi Agent Systems"
+        "label": "Multi-Agent Systems"
       },
       {
         "@id": "urn:ngm:class:simulation-environment",
-        "label": "Simulation Environments"
+        "label": "Simulation Environment"
       },
       {
         "@id": "urn:ngm:class:digital-twin",

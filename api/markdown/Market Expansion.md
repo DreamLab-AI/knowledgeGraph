@@ -25,7 +25,7 @@ public:: true
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:economic-mechanism", "label": "Economic Mechanism"}],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:real-time-translation", "label": "Real-Time Translation"}, {"@id": "urn:ngm:class:accessibility", "label": "Accessibility"}]
+    "relatedTo": [{"@id": "urn:ngm:class:real-time-translation", "label": "Real-time Translation"}, {"@id": "urn:ngm:class:accessibility", "label": "Accessibility"}]
   },
   "quality": 0.72
 }

@@ -40,7 +40,7 @@
       {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"},
       {"@id": "urn:ngm:class:tokenisation", "label": "Tokenisation"},
       {"@id": "urn:ngm:class:central-bank-digital-currency", "label": "Central Bank Digital Currency"},
-      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self-Sovereign Identity"}
+      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self Sovereign Identity"}
     ],
     "requires": [
       {"@id": "urn:ngm:class:public-key-cryptography", "label": "Public Key Cryptography"},

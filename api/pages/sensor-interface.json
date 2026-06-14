@@ -30,7 +30,7 @@
     "relatedTo": [
       {
         "id": "urn:ngm:class:embedded-systems",
-        "label": "Embedded Systems Domain"
+        "label": "Embedded Systems"
       },
       {
         "id": "urn:ngm:class:control-system",

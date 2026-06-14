@@ -645,7 +645,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:dialogue-system",
-        "label": "Dialogue Systems"
+        "label": "Dialogue System"
       },
       {
         "@id": "urn:ngm:class:domain-adaptation",
@@ -725,7 +725,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:w3-c-web-speech-api",
-        "label": "W3C WebSpeech API"
+        "label": "W3C Web Speech API"
       }
     ],
     "bridgesTo": [

@@ -156,11 +156,11 @@ alias:: ObstacleAvoidance, RB-1019-obstacle-avoidance
     "requires": [
       {
         "@id": "urn:ngm:class:proximity-sensor",
-        "label": "Proximity Sensors"
+        "label": "Proximity Sensor"
       },
       {
         "@id": "urn:ngm:class:real-time-processing",
-        "label": "Real-Time Processing"
+        "label": "Real-time Processing"
       },
       {
         "@id": "urn:ngm:class:sensor-fusion",
@@ -196,7 +196,7 @@ alias:: ObstacleAvoidance, RB-1019-obstacle-avoidance
       },
       {
         "@id": "urn:ngm:class:lidar",
-        "label": "LIDAR"
+        "label": "Lidar"
       },
       {
         "@id": "urn:ngm:class:ultrasonic-sensor",
@@ -232,7 +232,7 @@ alias:: ObstacleAvoidance, RB-1019-obstacle-avoidance
       },
       {
         "@id": "urn:ngm:class:human-robot-interaction",
-        "label": "Human-Robot Interaction"
+        "label": "Human Robot Interaction"
       }
     ],
     "contrastsWith": [

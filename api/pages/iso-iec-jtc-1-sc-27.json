@@ -30,7 +30,7 @@
     "relatedTo": [
       {
         "id": "urn:ngm:class:cryptography-security-and-privacy",
-        "label": "Cryptography, Security and Privacy"
+        "label": "Cryptography Security and Privacy"
       },
       {
         "id": "urn:ngm:class:decentralized-identifiers",

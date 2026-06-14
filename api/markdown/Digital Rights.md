@@ -101,7 +101,7 @@ public:: true
     "requires": [
       {
         "@id": "urn:ngm:class:enforcement-mechanism",
-        "label": "Enforcement Mechanisms"
+        "label": "Enforcement Mechanism"
       },
       {
         "@id": "urn:ngm:class:technical-safeguards",
@@ -197,7 +197,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:decentralized-identity",
-        "label": "Decentralised Identity"
+        "label": "Decentralized Identity"
       }
     ],
     "relatedTo": [

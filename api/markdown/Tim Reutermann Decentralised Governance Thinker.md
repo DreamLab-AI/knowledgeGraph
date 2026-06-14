@@ -46,7 +46,7 @@ elevatedFrom:: [[Tim Reutermann]]
   ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:cryptographic-privacy-activist", "label": "cypherpunk"},
+      {"@id": "urn:ngm:class:cryptographic-privacy-activist", "label": "Cryptographic Privacy Activist"},
       {"@id": "urn:ngm:class:dao-governance", "label": "DAO Governance"},
       {"@id": "urn:ngm:class:blockchain-governance", "label": "Blockchain Governance"}
     ],

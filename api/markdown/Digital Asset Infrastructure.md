@@ -91,7 +91,7 @@ public:: true
     "requires": [
       {
         "@id": "urn:ngm:class:cryptographic-system",
-        "label": "Cryptographic Systems"
+        "label": "Cryptographic System"
       },
       {
         "@id": "urn:ngm:class:node-network",

@@ -23,7 +23,7 @@ public:: true
   "definition": "The Task Force on Climate-related Financial Disclosures (TCFD) is a disclosure framework established by the Financial Stability Board in 2015 under Mark Carney's initiative, designed to help companies and financial institutions consistently report material climate-related risks and opportunities in a format useful to investors, lenders, and insurers. The framework is structured around four thematic pillars—Governance, Strategy, Risk Management, and Metrics and Targets—and emphasises scenario analysis to disclose how different climate futures (aligned with 1.5°C, 2°C, or 4°C pathways) affect an organisation's financial position. TCFD recommendations have been incorporated into mandatory regulatory regimes in the UK, EU, New Zealand, and other jurisdictions, and serve as the conceptual foundation for the IFRS Sustainability Disclosure Standards (ISSB S2).",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": {"@id": "urn:ngm:class:sustainability-reporting", "label": "Sustainability Reporting"},
+  "subClassOf": {"@id": "urn:ngm:class:sustainability-reporting", "label": "SustainabilityReporting"},
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:esg-reporting", "label": "ESG Reporting"},

@@ -676,7 +676,7 @@ alias:: BC-0487-compliance-monitoring
     "enables": [
       {
         "@id": "urn:ngm:class:anti-money-laundering",
-        "label": "Anti Money Laundering"
+        "label": "Anti-Money Laundering"
       },
       {
         "@id": "urn:ngm:class:financial-regulation",
@@ -744,7 +744,7 @@ alias:: BC-0487-compliance-monitoring
       },
       {
         "@id": "urn:ngm:class:knowledge-graph",
-        "label": "Knowledge Graphs"
+        "label": "Knowledge Graph"
       },
       {
         "@id": "urn:ngm:class:digital-identity",
@@ -758,7 +758,7 @@ alias:: BC-0487-compliance-monitoring
     "relatedTo": [
       {
         "@id": "urn:ngm:class:anti-money-laundering",
-        "label": "Anti Money Laundering"
+        "label": "Anti-Money Laundering"
       },
       {
         "@id": "urn:ngm:class:digital-operational-resilience",

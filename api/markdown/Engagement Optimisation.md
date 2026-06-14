@@ -25,7 +25,7 @@ public:: true
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:ai-technique", "label": "AI Technique"}],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:feedback-loop", "label": "Feedback Loop"}, {"@id": "urn:ngm:class:ai-companions", "label": "AI Companions"}]
+    "relatedTo": [{"@id": "urn:ngm:class:feedback-loop", "label": "Feedback Loop"}, {"@id": "urn:ngm:class:ai-companions", "label": "AI companions"}]
   },
   "quality": 0.72
 }

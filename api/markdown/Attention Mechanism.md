@@ -63,9 +63,9 @@ public:: true
   },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:self-attention", "label": "Self-Attention"},
+      {"@id": "urn:ngm:class:self-attention", "label": "Self Attention"},
       {"@id": "urn:ngm:class:multi-head-attention", "label": "Multi-Head Attention"},
-      {"@id": "urn:ngm:class:query-key-value", "label": "Query-Key-Value"},
+      {"@id": "urn:ngm:class:query-key-value", "label": "Query Key Value"},
       {"@id": "urn:ngm:class:softmax-function", "label": "Softmax Function"}
     ],
     "partOf": [
@@ -98,7 +98,7 @@ public:: true
     ],
     "contrastsWith": [
       {"@id": "urn:ngm:class:recurrent-neural-network", "label": "Recurrent Neural Network"},
-      {"@id": "urn:ngm:class:long-short-term-memory", "label": "Long Short-Term Memory"}
+      {"@id": "urn:ngm:class:long-short-term-memory", "label": "Long Short Term Memory"}
     ],
     "bridgesTo": [
       {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},

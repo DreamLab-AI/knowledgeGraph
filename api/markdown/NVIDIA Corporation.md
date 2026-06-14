@@ -164,7 +164,7 @@ elevatedFrom:: [[NVIDIA]]
       },
       {
         "@id": "urn:ngm:class:omniverse",
-        "label": "NVIDIA Omniverse"
+        "label": "Omniverse"
       }
     ],
     "relatedTo": [

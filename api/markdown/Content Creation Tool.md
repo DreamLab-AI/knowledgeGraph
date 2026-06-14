@@ -23,7 +23,7 @@ public:: true
   "definition": "A content creation tool is software that enables users to author, edit, and produce digital media such as text, images, audio, 3D assets, or video. It provides the interfaces and primitives needed to turn creative intent into finished, exportable artefacts. Generative AI has expanded this category to include tools that synthesise content from prompts and steer it within a production pipeline.",
   "domain": "metaverse",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:sc-content-and-assets", "label": "Spatial Computing Content and Assets"}],
+  "subClassOf": [{"@id": "urn:ngm:class:sc-content-and-assets", "label": "Content and Assets"}],
   "relations": {
     "relatedTo": [{"@id": "urn:ngm:class:generative-design-tool", "label": "Generative Design Tool"}, {"@id": "urn:ngm:class:content-creation-pipeline", "label": "Content Creation Pipeline"}]
   },

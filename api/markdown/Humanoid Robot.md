@@ -344,11 +344,11 @@ public:: true
     },
     {
       "@id": "urn:ngm:class:robo-robot-type",
-      "label": "Robo Robot Type"
+      "label": "Robot Type"
     },
     {
       "@id": "urn:ngm:class:robo-robot-type",
-      "label": "Robo Robot Type"
+      "label": "Robot Type"
     }
   ],
   "relations": {
@@ -383,7 +383,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:whole-body-control",
-        "label": "Whole-Body Control"
+        "label": "Whole Body Control"
       }
     ],
     "requires": [
@@ -457,7 +457,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:whole-body-control",
-        "label": "Whole-Body Control"
+        "label": "Whole Body Control"
       },
       {
         "@id": "urn:ngm:class:reinforcement-learning",
@@ -527,7 +527,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:human-robot-interaction",
-        "label": "Human-Robot Interaction"
+        "label": "Human Robot Interaction"
       },
       {
         "@id": "urn:ngm:class:imitation-learning",
@@ -549,7 +549,7 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:iso-ts-15066",
-        "label": "ISO/TS 15066"
+        "label": "ISO TS 15066"
       }
     ]
   },
