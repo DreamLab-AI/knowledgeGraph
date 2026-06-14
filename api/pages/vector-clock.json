@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:ngm-dc-vector-clock",
+  "title": "Vector Clock",
+  "slug": "vector-clock",
+  "public": true,
+  "classIri": "urn:ngm:class:vector-clock",
+  "domain": "distributed-collaboration",
+  "definition": "A vector clock is a data structure used in distributed systems to capture causal relationships between events across multiple nodes without relying on synchronised physical time. Each node maintains a counter for every other node in the system, incrementing its own counter on each local event and merging received counters on communication. By comparing vector timestamps, systems can determine whether events are causally related, concurrent, or ordered, which is fundamental for conflict detection and resolution in collaborative editing.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:dc-protocol-and-infra",
+      "label": "Protocol and Infrastructure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:crdt",
+        "label": "CRDT"
+      },
+      {
+        "id": "urn:ngm:class:operational-transformation",
+        "label": "Operational Transformation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:real-time-synchronisation",
+        "label": "Real-Time Synchronisation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

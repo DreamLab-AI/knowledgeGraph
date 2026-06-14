@@ -1,0 +1,2 @@
+- ### Definition
+  - Anchored annotations on shared documents that enable threaded asynchronous feedback and review discussions without modifying core content.

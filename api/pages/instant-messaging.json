@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:ngm-dc-instant-messaging",
+  "title": "Instant Messaging",
+  "slug": "instant-messaging",
+  "public": true,
+  "classIri": "urn:ngm:class:instant-messaging",
+  "domain": "distributed-collaboration",
+  "definition": "Instant messaging is a form of real-time, text-based direct communication between two or more participants over a network. Messages are delivered with minimal latency, enabling synchronous or near-synchronous conversation without the formality of email. It serves as a foundational channel for informal coordination and rapid decision-making in distributed teams.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:dc-communication",
+      "label": "Communication Technology"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:real-time-communication",
+        "label": "Real-Time Communication"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:group-chat-channel",
+        "label": "Group Chat Channel"
+      },
+      {
+        "id": "urn:ngm:class:mentions-and-notifications",
+        "label": "Mentions and Notifications"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "asynchronous-video",
+      "label": "Asynchronous Video"
+    }
+  ]
+}

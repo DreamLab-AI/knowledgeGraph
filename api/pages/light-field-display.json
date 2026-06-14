@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:ngm-dc-light-field-display",
+  "title": "Light Field Display",
+  "slug": "light-field-display",
+  "public": true,
+  "classIri": "urn:ngm:class:light-field-display",
+  "domain": "distributed-collaboration",
+  "definition": "A Light Field Display is an output device that reproduces the full four-dimensional light field of a scene, emitting rays of light in directions that recreate the optical properties of real objects without requiring the viewer to wear special glasses. Unlike conventional stereoscopic displays, light field displays support motion parallax, correct focus cues, and multiple simultaneous viewer perspectives. They are a key enabling technology for glasses-free holographic telepresence and high-fidelity volumetric visualisation in collaborative settings.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:dc-telepresence",
+      "label": "Telepresence"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:holographic-telepresence",
+        "label": "Holographic Telepresence"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:volumetric-video",
+        "label": "Volumetric Video"
+      },
+      {
+        "id": "urn:ngm:class:photorealistic-telepresence",
+        "label": "Photorealistic Telepresence"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "light-field",
+      "label": "Light field"
+    }
+  ]
+}

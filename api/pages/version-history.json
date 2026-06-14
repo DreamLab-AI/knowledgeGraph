@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:ngm-dc-version-history",
+  "title": "Version History",
+  "slug": "version-history",
+  "public": true,
+  "classIri": "urn:ngm:class:version-history",
+  "domain": "distributed-collaboration",
+  "definition": "Version History is a chronological record of all changes made to a shared document or workspace, capturing who made each change and when. It enables collaborators to review past states, compare diffs, and restore previous versions if an edit introduces errors. This audit trail is critical for accountability and safe experimentation in distributed teams.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:dc-workspace-tools",
+      "label": "Workspace Tools"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:change-audit-trail",
+        "label": "Change Audit Trail"
+      },
+      {
+        "id": "urn:ngm:class:rollback",
+        "label": "Rollback"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:live-co-authoring",
+        "label": "Live Co-authoring"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "tc-0002-collaborative-document-editing",
+      "label": "tc 0002 collaborative document editing"
+    }
+  ]
+}

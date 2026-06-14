@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:ngm-dc-shared-cursors",
+  "title": "Shared Cursors",
+  "slug": "shared-cursors",
+  "public": true,
+  "classIri": "urn:ngm:class:shared-cursors",
+  "domain": "distributed-collaboration",
+  "definition": "Shared Cursors are real-time visual indicators that show the pointer position and identity of each collaborator within a shared document or canvas. By rendering each participant's cursor with a distinct colour and name label, they communicate spatial presence and prevent conflicting edits without requiring verbal interruptions. They are a foundational multiplayer feature in live co-authoring environments such as Figma and Google Docs.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:dc-workspace-tools",
+      "label": "Workspace Tools"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:live-co-authoring",
+        "label": "Live Co-authoring"
+      },
+      {
+        "id": "urn:ngm:class:presence-awareness",
+        "label": "Presence Awareness"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:collaborative-whiteboard",
+        "label": "Collaborative Whiteboard"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

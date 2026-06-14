@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:ngm-dc-stun-and-turn",
+  "title": "STUN and TURN",
+  "slug": "stun-and-turn",
+  "public": true,
+  "classIri": "urn:ngm:class:stun-and-turn",
+  "domain": "distributed-collaboration",
+  "definition": "STUN (Session Traversal Utilities for NAT) and TURN (Traversal Using Relays around NAT) are complementary protocols used to establish peer-to-peer connectivity across Network Address Translators and firewalls. STUN allows a client to discover its public IP address and port mapping, while TURN provides a relay server as a fallback when direct connectivity cannot be achieved. Together they form the ICE (Interactive Connectivity Establishment) framework used by WebRTC.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:dc-protocol-and-infra",
+      "label": "Protocol and Infrastructure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:webrtc",
+        "label": "WebRTC"
+      },
+      {
+        "id": "urn:ngm:class:signaling-server",
+        "label": "Signaling Server"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

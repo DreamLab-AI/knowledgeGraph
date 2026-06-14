@@ -26611,6 +26611,16 @@
       "qualityScore": 0.5
     },
     {
+      "slug": "automerge",
+      "title": "Automerge",
+      "qualityScore": 0.7
+    },
+    {
+      "slug": "avatar-embodiment",
+      "title": "Avatar Embodiment",
+      "qualityScore": 0.7
+    },
+    {
       "slug": "bandwidth-adaptation",
       "title": "Bandwidth Adaptation",
       "qualityScore": 0.52
@@ -26701,14 +26711,34 @@
       "qualityScore": 0.52
     },
     {
+      "slug": "document-comments",
+      "title": "Document Comments",
+      "qualityScore": 0.7
+    },
+    {
       "slug": "domain-expert-contact-index",
       "title": "Domain Expert Contact Index",
       "qualityScore": 0.0
     },
     {
+      "slug": "end-to-end-encrypted-collaboration",
+      "title": "End-to-End Encrypted Collaboration",
+      "qualityScore": 0.7
+    },
+    {
       "slug": "enterprise-workflow",
       "title": "Enterprise Workflow",
       "qualityScore": 0.6
+    },
+    {
+      "slug": "eye-contact-correction",
+      "title": "Eye Contact Correction",
+      "qualityScore": 0.7
+    },
+    {
+      "slug": "gaze-awareness",
+      "title": "Gaze Awareness",
+      "qualityScore": 0.7
     },
     {
       "slug": "git",
@@ -26721,9 +26751,24 @@
       "qualityScore": 0.72
     },
     {
+      "slug": "group-chat-channel",
+      "title": "Group Chat Channel",
+      "qualityScore": 0.7
+    },
+    {
+      "slug": "hand-tracking-telepresence",
+      "title": "Hand Tracking Telepresence",
+      "qualityScore": 0.7
+    },
+    {
       "slug": "haptic-feedback-telepresence",
       "title": "Haptic Feedback Telepresence",
       "qualityScore": 0.75
+    },
+    {
+      "slug": "holographic-telepresence",
+      "title": "Holographic Telepresence",
+      "qualityScore": 0.7
     },
     {
       "slug": "horizon-workrooms",
@@ -26731,9 +26776,44 @@
       "qualityScore": 0.5
     },
     {
+      "slug": "instant-messaging",
+      "title": "Instant Messaging",
+      "qualityScore": 0.7
+    },
+    {
+      "slug": "kanban-board",
+      "title": "Kanban Board",
+      "qualityScore": 0.7
+    },
+    {
       "slug": "language-translation",
       "title": "Language Translation",
       "qualityScore": 0.0
+    },
+    {
+      "slug": "light-field-display",
+      "title": "Light Field Display",
+      "qualityScore": 0.7
+    },
+    {
+      "slug": "live-captions",
+      "title": "Live Captions",
+      "qualityScore": 0.7
+    },
+    {
+      "slug": "live-co-authoring",
+      "title": "Live Co-authoring",
+      "qualityScore": 0.7
+    },
+    {
+      "slug": "live-polls-and-qanda",
+      "title": "Live Polls and QandA",
+      "qualityScore": 0.7
+    },
+    {
+      "slug": "matrix-protocol",
+      "title": "Matrix Protocol",
+      "qualityScore": 0.7
     },
     {
       "slug": "media-richness-theory",
@@ -26756,6 +26836,16 @@
       "qualityScore": 0.52
     },
     {
+      "slug": "mentions-and-notifications",
+      "title": "Mentions and Notifications",
+      "qualityScore": 0.7
+    },
+    {
+      "slug": "message-reactions",
+      "title": "Message Reactions",
+      "qualityScore": 0.7
+    },
+    {
       "slug": "metaverse-application",
       "title": "Metaverse Application",
       "qualityScore": 0.0
@@ -26766,6 +26856,11 @@
       "qualityScore": 0.6
     },
     {
+      "slug": "mixed-reality-meeting",
+      "title": "Mixed Reality Meeting",
+      "qualityScore": 0.7
+    },
+    {
       "slug": "networkcomponent",
       "title": "Networkcomponent",
       "qualityScore": 0.75
@@ -26774,6 +26869,11 @@
       "slug": "neural-radiance-fields",
       "title": "Neural Radiance Fields",
       "qualityScore": 0.75
+    },
+    {
+      "slug": "noise-suppression",
+      "title": "Noise Suppression",
+      "qualityScore": 0.7
     },
     {
       "slug": "notion",
@@ -26804,6 +26904,11 @@
       "slug": "presence-indicator",
       "title": "Presence Indicator",
       "qualityScore": 0.52
+    },
+    {
+      "slug": "read-receipts",
+      "title": "Read Receipts",
+      "qualityScore": 0.7
     },
     {
       "slug": "real-time-language-translation",
@@ -26851,9 +26956,19 @@
       "qualityScore": 0.6
     },
     {
+      "slug": "stun-and-turn",
+      "title": "STUN and TURN",
+      "qualityScore": 0.7
+    },
+    {
       "slug": "screen-sharing",
       "title": "Screen Sharing",
       "qualityScore": 0.52
+    },
+    {
+      "slug": "selective-forwarding-unit",
+      "title": "Selective Forwarding Unit",
+      "qualityScore": 0.7
     },
     {
       "slug": "self-presence",
@@ -26861,9 +26976,24 @@
       "qualityScore": 0.75
     },
     {
+      "slug": "shared-cursors",
+      "title": "Shared Cursors",
+      "qualityScore": 0.7
+    },
+    {
+      "slug": "shared-virtual-space",
+      "title": "Shared Virtual Space",
+      "qualityScore": 0.7
+    },
+    {
       "slug": "shared-whiteboards",
       "title": "Shared Whiteboards",
       "qualityScore": 0.0
+    },
+    {
+      "slug": "signaling-server",
+      "title": "Signaling Server",
+      "qualityScore": 0.7
     },
     {
       "slug": "smart-contract-coordination",
@@ -26884,6 +27014,11 @@
       "slug": "social-presence",
       "title": "Social Presence",
       "qualityScore": 0.72
+    },
+    {
+      "slug": "sticky-notes",
+      "title": "Sticky Notes",
+      "qualityScore": 0.7
     },
     {
       "slug": "synchronous-collaboration",
@@ -26931,6 +27066,21 @@
       "qualityScore": 0.0
     },
     {
+      "slug": "typing-indicators",
+      "title": "Typing Indicators",
+      "qualityScore": 0.7
+    },
+    {
+      "slug": "vector-clock",
+      "title": "Vector Clock",
+      "qualityScore": 0.7
+    },
+    {
+      "slug": "version-history",
+      "title": "Version History",
+      "qualityScore": 0.7
+    },
+    {
       "slug": "video-async",
       "title": "Video Async",
       "qualityScore": 0.75
@@ -26939,6 +27089,11 @@
       "slug": "video-conferencing",
       "title": "Video Conferencing",
       "qualityScore": 0.72
+    },
+    {
+      "slug": "virtual-background",
+      "title": "Virtual Background",
+      "qualityScore": 0.7
     },
     {
       "slug": "virtual-meeting",
@@ -26964,6 +27119,26 @@
       "slug": "web-rtc",
       "title": "WebRTC",
       "qualityScore": 0.6
+    },
+    {
+      "slug": "webinar-broadcast",
+      "title": "Webinar Broadcast",
+      "qualityScore": 0.7
+    },
+    {
+      "slug": "workspace-templates",
+      "title": "Workspace Templates",
+      "qualityScore": 0.7
+    },
+    {
+      "slug": "yjs-framework",
+      "title": "Yjs Framework",
+      "qualityScore": 0.7
+    },
+    {
+      "slug": "zoom-meetings",
+      "title": "Zoom Meetings",
+      "qualityScore": 0.7
     },
     {
       "slug": "community",

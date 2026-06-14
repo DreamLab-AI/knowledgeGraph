@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:ngm-dc-signaling-server",
+  "title": "Signaling Server",
+  "slug": "signaling-server",
+  "public": true,
+  "classIri": "urn:ngm:class:signaling-server",
+  "domain": "distributed-collaboration",
+  "definition": "A signaling server is an intermediary service used in WebRTC and peer-to-peer systems to exchange session control messages between peers before a direct connection is established. It transmits session descriptions (SDP offers and answers) and ICE candidates so that peers can negotiate codec capabilities, network addresses, and connection parameters. Once the direct peer connection is set up, the signaling server is no longer involved in data transfer.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:dc-protocol-and-infra",
+      "label": "Protocol and Infrastructure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:webrtc",
+        "label": "WebRTC"
+      },
+      {
+        "id": "urn:ngm:class:stun-and-turn",
+        "label": "STUN and TURN"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

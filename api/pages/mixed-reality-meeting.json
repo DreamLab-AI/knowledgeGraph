@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:ngm-dc-mixed-reality-meeting",
+  "title": "Mixed Reality Meeting",
+  "slug": "mixed-reality-meeting",
+  "public": true,
+  "classIri": "urn:ngm:class:mixed-reality-meeting",
+  "domain": "distributed-collaboration",
+  "definition": "A Mixed Reality Meeting is a collaborative session in which remote and local participants interact within an environment that blends physical and virtual elements through mixed reality headsets or displays. Remote attendees may appear as holograms or avatars anchored in the local physical space, while shared digital artefacts are overlaid onto the real world for all participants. This format dissolves the boundary between in-room and remote presence, enabling richer spatial and contextual collaboration than traditional video conferencing.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:dc-telepresence",
+      "label": "Telepresence"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:immersive-collaboration",
+        "label": "Immersive Collaboration"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:holographic-telepresence",
+        "label": "Holographic Telepresence"
+      },
+      {
+        "id": "urn:ngm:class:shared-virtual-space",
+        "label": "Shared Virtual Space"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

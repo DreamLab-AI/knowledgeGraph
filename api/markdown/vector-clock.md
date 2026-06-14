@@ -1,0 +1,2 @@
+- ### Definition
+  - A vector clock is a distributed systems mechanism that tracks causal ordering of events across nodes using per-node counters, enabling conflict detection and resolution in collaborative editing without requiring a global clock.

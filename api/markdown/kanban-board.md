@@ -1,0 +1,2 @@
+- ### Definition
+  - A visual board that organises tasks into workflow-stage columns to give distributed teams a shared, real-time view of work status.

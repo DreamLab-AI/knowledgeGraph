@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:ngm-dc-shared-virtual-space",
+  "title": "Shared Virtual Space",
+  "slug": "shared-virtual-space",
+  "public": true,
+  "classIri": "urn:ngm:class:shared-virtual-space",
+  "domain": "distributed-collaboration",
+  "definition": "A Shared Virtual Space is a persistent, synchronised three-dimensional environment that multiple remote participants inhabit simultaneously through their avatars or representations. It provides a common spatial context for collaboration, enabling participants to co-locate, manipulate shared artefacts, and engage in spatial communication as if physically together. Such spaces underpin immersive remote collaboration by combining real-time synchronisation, access control, and spatial audio to create a convincing sense of co-presence.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:dc-telepresence",
+      "label": "Telepresence"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:immersive-collaboration",
+        "label": "Immersive Collaboration"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:avatar-embodiment",
+        "label": "Avatar Embodiment"
+      },
+      {
+        "id": "urn:ngm:class:virtual-reality-telepresence",
+        "label": "Virtual Reality Telepresence"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

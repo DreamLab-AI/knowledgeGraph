@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:ngm-dc-avatar-embodiment",
+  "title": "Avatar Embodiment",
+  "slug": "avatar-embodiment",
+  "public": true,
+  "classIri": "urn:ngm:class:avatar-embodiment",
+  "domain": "distributed-collaboration",
+  "definition": "Avatar Embodiment is the psychological and technical phenomenon in which a user perceives a digital avatar as an extension or representation of their own body within a virtual or mixed reality environment. It involves mapping real-time motion capture, physiological signals, and expressive cues from the user onto the avatar to create a sense of ownership and presence. High-fidelity embodiment enhances social telepresence by allowing remote participants to express identity, emotion, and intent through their avatars.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:dc-telepresence",
+      "label": "Telepresence"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:social-presence",
+        "label": "Social Presence"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:shared-virtual-space",
+        "label": "Shared Virtual Space"
+      },
+      {
+        "id": "urn:ngm:class:virtual-reality-telepresence",
+        "label": "Virtual Reality Telepresence"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

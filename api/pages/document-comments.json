@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:ngm-dc-document-comments",
+  "title": "Document Comments",
+  "slug": "document-comments",
+  "public": true,
+  "classIri": "urn:ngm:class:document-comments",
+  "domain": "distributed-collaboration",
+  "definition": "Document Comments are annotations anchored to specific sections of a shared document that allow collaborators to ask questions, suggest changes, or provide feedback without altering the primary content. They support threaded replies, @mentions, and resolution states so discussions are traceable and actionable. This asynchronous feedback mechanism is essential for distributed review workflows across time zones.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:dc-workspace-tools",
+      "label": "Workspace Tools"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:asynchronous-collaboration",
+        "label": "Asynchronous Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:peer-review",
+        "label": "Peer Review"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:live-co-authoring",
+        "label": "Live Co-authoring"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

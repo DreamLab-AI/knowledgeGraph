@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:ngm-dc-live-polls-and-qanda",
+  "title": "Live Polls and QandA",
+  "slug": "live-polls-and-qanda",
+  "public": true,
+  "classIri": "urn:ngm:class:live-polls-and-qanda",
+  "domain": "distributed-collaboration",
+  "definition": "Live polls and Q&A are interactive audience-engagement features embedded in virtual meetings and webinars that allow participants to submit questions and vote on answer options in real time. Polls provide immediate quantitative feedback and gauge audience sentiment, while Q&A queues enable structured moderation of participant questions. Together they transform passive viewing into participatory events, increasing engagement across distributed audiences.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:dc-communication",
+      "label": "Communication Technology"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:audience-engagement",
+        "label": "Audience Engagement"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:webinar-broadcast",
+        "label": "Webinar Broadcast"
+      },
+      {
+        "id": "urn:ngm:class:group-chat-channel",
+        "label": "Group Chat Channel"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

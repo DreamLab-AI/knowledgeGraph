@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:ngm-dc-mentions-and-notifications",
+  "title": "Mentions and Notifications",
+  "slug": "mentions-and-notifications",
+  "public": true,
+  "classIri": "urn:ngm:class:mentions-and-notifications",
+  "domain": "distributed-collaboration",
+  "definition": "Mentions and notifications are mechanisms that direct a participant's attention to specific messages, tasks, or events by referencing their identity with an @-symbol or equivalent trigger. They bridge asynchronous communication gaps by alerting individuals even when they are not actively monitoring a channel. Effective notification design balances urgency with focus protection to avoid alert fatigue in distributed teams.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:dc-communication",
+      "label": "Communication Technology"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:attention-management",
+        "label": "Attention Management"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:group-chat-channel",
+        "label": "Group Chat Channel"
+      },
+      {
+        "id": "urn:ngm:class:instant-messaging",
+        "label": "Instant Messaging"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

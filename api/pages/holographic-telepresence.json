@@ -1,0 +1,57 @@
+{
+  "id": "urn:visionflow:page:ngm-dc-holographic-telepresence",
+  "title": "Holographic Telepresence",
+  "slug": "holographic-telepresence",
+  "public": true,
+  "classIri": "urn:ngm:class:holographic-telepresence",
+  "domain": "distributed-collaboration",
+  "definition": "Holographic Telepresence is a form of remote presence technology that projects three-dimensional, life-size representations of remote participants into a shared physical or virtual space. It combines light field capture, display, and rendering techniques to create the illusion that a remote person is physically co-located with local participants. This approach enables natural interaction cues such as eye contact, spatial positioning, and gestural communication that are absent in conventional video conferencing.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:dc-telepresence",
+      "label": "Telepresence"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:social-presence",
+        "label": "Social Presence"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:light-field-display",
+        "label": "Light Field Display"
+      },
+      {
+        "id": "urn:ngm:class:volumetric-video",
+        "label": "Volumetric Video"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "virtual-production",
+      "label": "Virtual Production"
+    }
+  ]
+}

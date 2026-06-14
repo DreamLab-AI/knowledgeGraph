@@ -1,0 +1,2 @@
+- ### Definition
+  - A cloud video conferencing platform providing synchronous audio-video sessions, screen sharing, and breakout rooms for distributed teams.

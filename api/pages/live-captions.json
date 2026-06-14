@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:ngm-dc-live-captions",
+  "title": "Live Captions",
+  "slug": "live-captions",
+  "public": true,
+  "classIri": "urn:ngm:class:live-captions",
+  "domain": "distributed-collaboration",
+  "definition": "Live captions are automatically generated, real-time text transcriptions of spoken audio displayed synchronously during a video call or webinar. They enhance accessibility for participants with hearing impairments and support comprehension across language barriers and noisy environments. Powered by automatic speech recognition, they may be supplemented by human stenographers for high-accuracy requirements.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:dc-communication",
+      "label": "Communication Technology"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:webinar-broadcast",
+        "label": "Webinar Broadcast"
+      },
+      {
+        "id": "urn:ngm:class:noise-suppression",
+        "label": "Noise Suppression"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

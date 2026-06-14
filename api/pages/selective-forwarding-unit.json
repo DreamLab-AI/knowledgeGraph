@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:ngm-dc-selective-forwarding-unit",
+  "title": "Selective Forwarding Unit",
+  "slug": "selective-forwarding-unit",
+  "public": true,
+  "classIri": "urn:ngm:class:selective-forwarding-unit",
+  "domain": "distributed-collaboration",
+  "definition": "A Selective Forwarding Unit (SFU) is a media server architecture used in multi-party real-time communication that receives media streams from each participant and selectively forwards them to other participants without mixing or decoding the content. This approach reduces server-side computational cost compared to Multipoint Control Units (MCUs) while still enabling scalable group video and audio sessions. SFUs allow clients to subscribe to individual streams, supporting adaptive bitrate and simulcast strategies.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:dc-protocol-and-infra",
+      "label": "Protocol and Infrastructure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:webrtc",
+        "label": "WebRTC"
+      },
+      {
+        "id": "urn:ngm:class:real-time-synchronisation",
+        "label": "Real-Time Synchronisation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:signaling-server",
+        "label": "Signaling Server"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

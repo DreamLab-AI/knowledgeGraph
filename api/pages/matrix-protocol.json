@@ -1,0 +1,57 @@
+{
+  "id": "urn:visionflow:page:ngm-dc-matrix-protocol",
+  "title": "Matrix Protocol",
+  "slug": "matrix-protocol",
+  "public": true,
+  "classIri": "urn:ngm:class:matrix-protocol",
+  "domain": "distributed-collaboration",
+  "definition": "Matrix is an open standard and communication protocol for real-time, decentralised communication over the internet. It enables interoperable, federated messaging and collaboration by allowing servers from different organisations to synchronise shared conversation state. The protocol supports end-to-end encryption, persistent history, and a rich ecosystem of clients and bridges.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:dc-protocol-and-infra",
+      "label": "Protocol and Infrastructure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:federation-protocol",
+        "label": "Federation Protocol"
+      },
+      {
+        "id": "urn:ngm:class:end-to-end-encrypted-collaboration",
+        "label": "End-to-End Encrypted Collaboration"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:real-time-synchronisation",
+        "label": "Real-Time Synchronisation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "asynchronous-video",
+      "label": "Asynchronous Video"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

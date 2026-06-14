@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:ngm-dc-live-co-authoring",
+  "title": "Live Co-authoring",
+  "slug": "live-co-authoring",
+  "public": true,
+  "classIri": "urn:ngm:class:live-co-authoring",
+  "domain": "distributed-collaboration",
+  "definition": "Live Co-authoring is the capability that allows multiple users to edit the same document or artifact concurrently, with changes propagated to all participants in near real time. It relies on conflict-resolution mechanisms such as operational transformation or CRDTs to merge simultaneous edits without data loss. Platforms such as Google Docs, Microsoft 365, and Notion use live co-authoring as their primary collaborative editing model.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:dc-workspace-tools",
+      "label": "Workspace Tools"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:shared-cursors",
+        "label": "Shared Cursors"
+      },
+      {
+        "id": "urn:ngm:class:document-comments",
+        "label": "Document Comments"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:version-history",
+        "label": "Version History"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:ngm-dc-read-receipts",
+  "title": "Read Receipts",
+  "slug": "read-receipts",
+  "public": true,
+  "classIri": "urn:ngm:class:read-receipts",
+  "domain": "distributed-collaboration",
+  "definition": "Read receipts are delivery-confirmation signals that indicate whether a message has been seen by its recipient, typically displayed as a checkmark, avatar, or timestamp. They provide senders with visibility into message consumption, reducing uncertainty in asynchronous communication. Their use in distributed collaboration can improve follow-up timing but must be balanced against recipient privacy expectations.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:dc-communication",
+      "label": "Communication Technology"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:message-accountability",
+        "label": "Message Accountability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:instant-messaging",
+        "label": "Instant Messaging"
+      },
+      {
+        "id": "urn:ngm:class:typing-indicators",
+        "label": "Typing Indicators"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

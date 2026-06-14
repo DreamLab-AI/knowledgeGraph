@@ -1,0 +1,2 @@
+- ### Definition
+  - Pre-configured workspace layouts that teams instantiate to bootstrap recurring collaboration activities with consistent structure and conventions.

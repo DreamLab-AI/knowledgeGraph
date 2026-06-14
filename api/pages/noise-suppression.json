@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:ngm-dc-noise-suppression",
+  "title": "Noise Suppression",
+  "slug": "noise-suppression",
+  "public": true,
+  "classIri": "urn:ngm:class:noise-suppression",
+  "domain": "distributed-collaboration",
+  "definition": "Noise suppression is a signal-processing technique that filters ambient, background, and non-speech sounds from audio streams in real time during virtual communication sessions. Modern implementations use deep-learning models to distinguish voice from environmental noise such as keyboard clicks, fan hum, and room echo. It is a foundational audio quality feature for distributed teams working from heterogeneous home or office environments.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:dc-communication",
+      "label": "Communication Technology"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:audio-quality",
+        "label": "Audio Quality"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:live-captions",
+        "label": "Live Captions"
+      },
+      {
+        "id": "urn:ngm:class:webinar-broadcast",
+        "label": "Webinar Broadcast"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

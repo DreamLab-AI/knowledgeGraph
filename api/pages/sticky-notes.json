@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:ngm-dc-sticky-notes",
+  "title": "Sticky Notes",
+  "slug": "sticky-notes",
+  "public": true,
+  "classIri": "urn:ngm:class:sticky-notes",
+  "domain": "distributed-collaboration",
+  "definition": "Sticky Notes are digital equivalents of physical adhesive notes used on virtual whiteboards or collaboration surfaces to capture brief ideas, action items, or annotations. Multiple participants can add, move, and colour-code notes simultaneously, making them a lightweight tool for brainstorming and retrospectives in remote teams. They are widely supported in tools such as Miro, FigJam, and Microsoft Whiteboard.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:dc-workspace-tools",
+      "label": "Workspace Tools"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:brainstorming",
+        "label": "Brainstorming"
+      },
+      {
+        "id": "urn:ngm:class:retrospective",
+        "label": "Retrospective"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:collaborative-whiteboard",
+        "label": "Collaborative Whiteboard"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "collaborative-whiteboard",
+      "label": "Collaborative Whiteboard"
+    }
+  ]
+}

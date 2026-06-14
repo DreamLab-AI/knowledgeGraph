@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:ngm-dc-hand-tracking-telepresence",
+  "title": "Hand Tracking Telepresence",
+  "slug": "hand-tracking-telepresence",
+  "public": true,
+  "classIri": "urn:ngm:class:hand-tracking-telepresence",
+  "domain": "distributed-collaboration",
+  "definition": "Hand Tracking Telepresence is the real-time capture, transmission, and rendering of hand pose and gesture data from a remote participant into a local or shared virtual environment. It enables natural gestural communication \u2014 such as pointing, waving, or manipulating shared objects \u2014 between geographically distributed collaborators. By preserving expressive hand movements, this technology significantly enriches the non-verbal communication channel in remote collaboration systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:dc-telepresence",
+      "label": "Telepresence"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:immersive-collaboration",
+        "label": "Immersive Collaboration"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:avatar-embodiment",
+        "label": "Avatar Embodiment"
+      },
+      {
+        "id": "urn:ngm:class:shared-virtual-space",
+        "label": "Shared Virtual Space"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

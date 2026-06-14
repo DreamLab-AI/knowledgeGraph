@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:ngm-dc-webinar-broadcast",
+  "title": "Webinar Broadcast",
+  "slug": "webinar-broadcast",
+  "public": true,
+  "classIri": "urn:ngm:class:webinar-broadcast",
+  "domain": "distributed-collaboration",
+  "definition": "A webinar broadcast is a one-to-many online event in which one or more presenters stream audio and video to a large remote audience with limited bidirectional interaction. Participants typically engage through moderated Q&A, polls, and chat rather than direct audio or video contribution. Webinars are used for training, product launches, and large-scale knowledge dissemination across geographically distributed audiences.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:dc-communication",
+      "label": "Communication Technology"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:large-scale-knowledge-dissemination",
+        "label": "Large-Scale Knowledge Dissemination"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:live-polls-and-qanda",
+        "label": "Live Polls and QandA"
+      },
+      {
+        "id": "urn:ngm:class:live-captions",
+        "label": "Live Captions"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

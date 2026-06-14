@@ -1,0 +1,2 @@
+- ### Definition
+  - A chronological log of document changes with author attribution that lets teams audit edits and restore any prior state.

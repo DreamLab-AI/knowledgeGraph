@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:ngm-dc-workspace-templates",
+  "title": "Workspace Templates",
+  "slug": "workspace-templates",
+  "public": true,
+  "classIri": "urn:ngm:class:workspace-templates",
+  "domain": "distributed-collaboration",
+  "definition": "Workspace Templates are pre-configured layouts, page structures, or project scaffolds that teams can instantiate to quickly start a new collaboration session with consistent conventions. They encode best practices for recurring activities such as sprint planning, meeting notes, or design reviews, reducing setup time for distributed teams. Templates are a standard feature in platforms such as Notion, Confluence, and Miro.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:dc-workspace-tools",
+      "label": "Workspace Tools"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:standardised-workflows",
+        "label": "Standardised Workflows"
+      },
+      {
+        "id": "urn:ngm:class:onboarding",
+        "label": "Onboarding"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:kanban-board",
+        "label": "Kanban Board"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

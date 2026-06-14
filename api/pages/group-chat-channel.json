@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:ngm-dc-group-chat-channel",
+  "title": "Group Chat Channel",
+  "slug": "group-chat-channel",
+  "public": true,
+  "classIri": "urn:ngm:class:group-chat-channel",
+  "domain": "distributed-collaboration",
+  "definition": "A group chat channel is a persistent, named messaging space where multiple participants can send and receive messages collectively. Channels are typically organised by topic, project, or team, providing a shared context for ongoing conversation and record-keeping. They support both synchronous and asynchronous communication patterns within distributed organisations.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:dc-communication",
+      "label": "Communication Technology"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:team-collaboration",
+        "label": "Team Collaboration"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:instant-messaging",
+        "label": "Instant Messaging"
+      },
+      {
+        "id": "urn:ngm:class:mentions-and-notifications",
+        "label": "Mentions and Notifications"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}
