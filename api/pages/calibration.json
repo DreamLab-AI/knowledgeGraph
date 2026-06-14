@@ -5,26 +5,47 @@
   "public": true,
   "classIri": "urn:ngm:class:calibration",
   "domain": "robotics",
-  "definition": "Calibration in robotics and sensing is the systematic process of determining, verifying, and correcting the quantitative relationship between a sensor's or actuator's raw output and the physical quantity it represents, encompassing intrinsic parameters (gain, offset, nonlinearity), extrinsic parameters (pose relative to a reference frame), and inter-sensor spatial relationships. Calibration is prerequisite for metrically accurate perception, closed-loop control, and multi-modal Sensor Fusion in robotic systems. It applies to diverse transducers including cameras, Lidar scanners, IMUs, force-torque sensors, joint encoders, and end-effector tools.",
+  "definition": "Calibration is the systematic process of establishing, verifying, and correcting the quantitative relationship between a measurement instrument's or computational model's output and a known reference standard, encompassing intrinsic parameter estimation (gain, offset, nonlinearity, bias), extrinsic parameter determination (spatial pose and orientation relative to a reference frame), and inter-device consistency alignment. In physical systems it removes systematic error between raw sensor readings and true physical quantities; in machine learning it aligns predicted probability distributions to empirical frequencies. Calibration is a prerequisite for metrically accurate perception, reliable closed-loop control, trustworthy probabilistic inference, and coherent multi-modal data fusion across robotics, spatial computing, and AI systems.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:robo-perception",
-      "label": "Robot Perception"
+      "id": "urn:ngm:class:metrology",
+      "label": "Metrology"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.75,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [
+    "hasPart": [
       {
-        "id": "urn:ngm:class:robot-sensor",
-        "label": "Robot Sensor"
+        "id": "urn:ngm:class:camera-calibration",
+        "label": "Camera Calibration"
       },
       {
-        "id": "urn:ngm:class:imu",
-        "label": "IMU"
+        "id": "urn:ngm:class:imu-calibration",
+        "label": "IMU Calibration"
+      },
+      {
+        "id": "urn:ngm:class:extrinsic-calibration",
+        "label": "Extrinsic Calibration"
+      },
+      {
+        "id": "urn:ngm:class:temporal-calibration",
+        "label": "Temporal Calibration"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:reference-standard",
+        "label": "Reference Standard"
+      },
+      {
+        "id": "urn:ngm:class:ground-truth",
+        "label": "Ground Truth"
+      },
+      {
+        "id": "urn:ngm:class:error-model",
+        "label": "Error Model"
       }
     ],
     "enables": [
@@ -33,28 +54,114 @@
         "label": "Sensor Fusion"
       },
       {
-        "id": "urn:ngm:class:camera-calibration",
-        "label": "Camera Calibration"
-      }
-    ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [
-      {
         "id": "urn:ngm:class:slam",
         "label": "SLAM"
       },
       {
+        "id": "urn:ngm:class:pose-estimation",
+        "label": "Pose Estimation"
+      },
+      {
         "id": "urn:ngm:class:robot-control",
         "label": "Robot Control"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:optimisation",
+        "label": "Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:least-squares",
+        "label": "Least Squares"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:validation",
+        "label": "Validation"
+      },
+      {
+        "id": "urn:ngm:class:verification",
+        "label": "Verification"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:probabilistic-calibration",
+        "label": "Probabilistic Calibration"
+      },
+      {
+        "id": "urn:ngm:class:model-calibration",
+        "label": "Model Calibration"
+      },
+      {
+        "id": "urn:ngm:class:uncertainty-quantification",
+        "label": "Uncertainty Quantification"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:imu",
+        "label": "IMU"
+      },
+      {
+        "id": "urn:ngm:class:lidar",
+        "label": "Lidar"
+      },
+      {
+        "id": "urn:ngm:class:fiducial-marker",
+        "label": "Fiducial Marker"
+      },
+      {
+        "id": "urn:ngm:class:checkerboard-pattern",
+        "label": "Checkerboard Pattern"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:autonomous-driving",
+        "label": "Autonomous Driving"
+      },
+      {
+        "id": "urn:ngm:class:robotic-manipulation",
+        "label": "Robotic Manipulation"
+      },
+      {
+        "id": "urn:ngm:class:medical-imaging",
+        "label": "Medical Imaging"
       }
     ],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:quality-assurance",
+        "label": "Quality Assurance"
+      },
+      {
+        "id": "urn:ngm:class:sensor-pipeline",
+        "label": "Sensor Pipeline"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:sensor-noise",
+        "label": "Sensor Noise"
+      },
+      {
+        "id": "urn:ngm:class:systematic-error",
+        "label": "Systematic Error"
+      },
+      {
+        "id": "urn:ngm:class:kinematic-calibration",
+        "label": "Kinematic Calibration"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

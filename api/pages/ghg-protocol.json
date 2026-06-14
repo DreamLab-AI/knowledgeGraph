@@ -4,50 +4,134 @@
   "slug": "ghg-protocol",
   "public": true,
   "classIri": "urn:ngm:class:ghg-protocol",
-  "domain": "infrastructure",
-  "definition": "The GHG Protocol is the internationally recognised greenhouse gas accounting and reporting framework developed by the World Resources Institute (WRI) and the World Business Council for Sustainable Development (WBCSD). It defines the methodologies by which organisations measure and categorise greenhouse gas emissions across three scopes: Scope 1 (direct emissions from owned or controlled sources), Scope 2 (indirect emissions from purchased energy), and Scope 3 (all other indirect emissions in the value chain). The GHG Protocol Corporate Standard and its sector-specific supplements underpin most corporate carbon reporting requirements globally, including those mandated by ESG disclosure frameworks and regulatory regimes.",
+  "domain": "governance",
+  "definition": "The GHG Protocol is the globally dominant greenhouse gas accounting and reporting framework, co-developed by the World Resources Institute (WRI) and the World Business Council for Sustainable Development (WBCSD) and first published as the Corporate Standard in 2001. It establishes methodologies for measuring and categorising greenhouse gas emissions across three scopes: Scope 1 (direct emissions from owned or controlled sources), Scope 2 (indirect emissions from purchased energy), and Scope 3 (all other upstream and downstream value-chain emissions). The framework underpins virtually all major corporate carbon reporting mandates, voluntary disclosure programmes, and science-based target-setting initiatives worldwide, making it the de facto lingua franca of corporate climate accounting.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:infra-legal-and-regulatory",
-      "label": "Legal and Regulatory"
+      "id": "urn:ngm:class:environmental-standards",
+      "label": "Environmental Standards"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [
+    "hasPart": [
       {
-        "id": "urn:ngm:class:carbon-accounting",
-        "label": "Carbon Accounting"
+        "id": "urn:ngm:class:scope-1-emissions",
+        "label": "Scope 1 Emissions"
       },
+      {
+        "id": "urn:ngm:class:scope-2-emissions",
+        "label": "Scope 2 Emissions"
+      },
+      {
+        "id": "urn:ngm:class:scope-3-emissions",
+        "label": "Scope 3 Emissions"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:greenhouse-gas-inventory",
+        "label": "Greenhouse Gas Inventory"
+      },
+      {
+        "id": "urn:ngm:class:emissions-factor",
+        "label": "Emissions Factor"
+      }
+    ],
+    "enables": [
       {
         "id": "urn:ngm:class:esg-reporting",
         "label": "ESG Reporting"
+      },
+      {
+        "id": "urn:ngm:class:science-based-targets",
+        "label": "Science Based Targets"
+      },
+      {
+        "id": "urn:ngm:class:carbon-offsetting",
+        "label": "Carbon Offsetting"
+      },
+      {
+        "id": "urn:ngm:class:carbon-neutral-certification",
+        "label": "Carbon Neutral Certification"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
+    "implements": [
       {
-        "id": "urn:ngm:class:environmental-standards",
-        "label": "Environmental Standards"
+        "id": "urn:ngm:class:corporate-sustainability-reporting",
+        "label": "Corporate Sustainability Reporting"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:iso-14067",
+        "label": "ISO 14067"
+      },
+      {
+        "id": "urn:ngm:class:pas-2060",
+        "label": "PAS 2060"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain-carbon-credits",
+        "label": "Blockchain Carbon Credits"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-transparency",
+        "label": "Supply Chain Transparency"
+      },
+      {
+        "id": "urn:ngm:class:digital-product-passport",
+        "label": "Digital Product Passport"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:life-cycle-assessment",
+        "label": "Life Cycle Assessment"
       },
       {
         "id": "urn:ngm:class:carbon-footprint-measurement",
         "label": "Carbon Footprint Measurement"
-      },
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [
       {
         "id": "urn:ngm:class:iso-14064",
         "label": "ISO 14064"
+      },
+      {
+        "id": "urn:ngm:class:world-resources-institute",
+        "label": "World Resources Institute"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:carbon-accounting",
+        "label": "Carbon Accounting"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:tcfd",
+        "label": "TCFD"
+      },
+      {
+        "id": "urn:ngm:class:eu-csrd",
+        "label": "EU CSRD"
+      },
+      {
+        "id": "urn:ngm:class:cdp-reporting",
+        "label": "CDP Reporting"
+      },
+      {
+        "id": "urn:ngm:class:net-zero-transition",
+        "label": "Net Zero Transition"
       }
     ]
   },

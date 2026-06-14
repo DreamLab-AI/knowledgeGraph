@@ -4,8 +4,8 @@
   "slug": "bright-id",
   "public": true,
   "classIri": "urn:ngm:class:bright-id",
-  "domain": "general",
-  "definition": "A decentralised social identity network that aims to verify that each user is a unique person through analysis of a social connection graph.",
+  "domain": "blockchain",
+  "definition": "BrightID is a decentralised social identity network that establishes the uniqueness of human participants by analysing the topology of a peer-to-peer social connection graph, without collecting personally identifying information. Each user creates an account identified solely by a public key, then builds mutual verification links with trusted contacts; graph-analysis algorithms infer whether an account corresponds to a distinct human rather than a bot or duplicate. The system provides applications with a binary or graded uniqueness signal usable for Sybil-resistant resource allocation, quadratic voting, and universal basic income distribution without requiring biometric data or a central identity authority.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:digital-identity",
@@ -13,30 +13,115 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:social-graph",
+        "label": "Social Graph"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      },
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public Key Cryptography"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:sybil-resistance",
         "label": "Sybil Resistance"
       },
       {
-        "id": "urn:ngm:class:reputation-system",
-        "label": "Reputation System"
+        "id": "urn:ngm:class:quadratic-voting",
+        "label": "Quadratic Voting"
+      },
+      {
+        "id": "urn:ngm:class:universal-basic-income",
+        "label": "Universal Basic Income"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-governance",
+        "label": "Decentralised Governance"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:sybil-attack",
+        "label": "Sybil Attack"
+      },
+      {
+        "id": "urn:ngm:class:centralised-identity",
+        "label": "Centralised Identity"
+      },
+      {
+        "id": "urn:ngm:class:biometric-identity",
+        "label": "Biometric Identity"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:reputation-system",
+        "label": "Reputation System"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:privacy-preserving-computation",
+        "label": "Privacy-Preserving Computation"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:graph-analysis",
+        "label": "Graph Analysis"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-application",
+        "label": "Decentralised Application"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self-Sovereign Identity"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-personhood",
+        "label": "Proof of Personhood"
+      },
+      {
+        "id": "urn:ngm:class:web-of-trust",
+        "label": "Web of Trust"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-identifier",
+        "label": "Decentralised Identifier"
+      },
+      {
+        "id": "urn:ngm:class:token-distribution",
+        "label": "Token Distribution"
+      },
+      {
+        "id": "urn:ngm:class:airdrop",
+        "label": "Airdrop"
+      }
+    ]
   },
   "wikilinks": [
     {

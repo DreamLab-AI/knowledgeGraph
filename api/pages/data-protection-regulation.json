@@ -4,19 +4,36 @@
   "slug": "data-protection-regulation",
   "public": true,
   "classIri": "urn:ngm:class:data-protection-regulation",
-  "domain": "artificial-intelligence",
-  "definition": "Data Protection Regulation refers to the legal and policy frameworks\u2014such as the EU General Data Protection Regulation (GDPR) and the UK Data Protection Act 2018\u2014that govern how personal data may be collected, processed, stored, and shared by organisations. These regulations impose obligations around lawful basis for processing, data subject rights, cross-border transfer restrictions, and mandatory breach notification, creating compliance requirements for AI systems that handle personal data.",
+  "domain": "governance",
+  "definition": "Data Protection Regulation comprises the body of legally binding instruments \u2014 including the EU General Data Protection Regulation (GDPR, 2018), the UK Data Protection Act 2018, the California Consumer Privacy Act (CCPA), and equivalent national or regional laws \u2014 that govern the collection, processing, storage, transfer, and erasure of personal data by organisations. These frameworks establish fundamental principles such as lawfulness, purpose limitation, data minimisation, and accountability; confer enforceable rights on data subjects (access, rectification, erasure, portability, and objection); and require proportionate technical and organisational safeguards, including impact assessments for high-risk processing. The regulation of personal data intersects directly with AI system design, automated decision-making constraints, consent management infrastructure, and cross-border data flows in globally distributed architectures.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ai-governance-and-ethics",
-      "label": "AI Governance and Ethics"
+      "id": "urn:ngm:class:regulatory-framework",
+      "label": "Regulatory Framework"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "id": "urn:ngm:class:data-subject-rights",
+        "label": "Data Subject Rights"
+      },
+      {
+        "id": "urn:ngm:class:privacy-impact-assessment",
+        "label": "Privacy Impact Assessment"
+      },
+      {
+        "id": "urn:ngm:class:consent-management",
+        "label": "Consent Management"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:data-governance",
@@ -25,18 +42,69 @@
       {
         "id": "urn:ngm:class:privacy-preserving-technology",
         "label": "Privacy Preserving Technology"
+      },
+      {
+        "id": "urn:ngm:class:data-minimisation",
+        "label": "Data Minimisation"
+      },
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
       }
     ],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:data-subject-rights",
+        "label": "Data Subject Rights"
+      },
+      {
+        "id": "urn:ngm:class:informed-consent",
+        "label": "Informed Consent"
+      },
+      {
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:data-free-flow",
+        "label": "Data Free Flow"
+      },
+      {
+        "id": "urn:ngm:class:surveillance-capitalism",
+        "label": "Surveillance Capitalism"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
+    ],
     "uses": [],
     "supports": [
       {
         "id": "urn:ngm:class:compliance-framework",
         "label": "Compliance Framework"
+      },
+      {
+        "id": "urn:ngm:class:digital-trust",
+        "label": "Digital Trust"
+      },
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
       }
     ],
     "standardizedBy": [],
@@ -49,6 +117,18 @@
       {
         "id": "urn:ngm:class:regulatory-technology",
         "label": "Regulatory Technology"
+      },
+      {
+        "id": "urn:ngm:class:cybersecurity-law",
+        "label": "Cybersecurity Law"
+      },
+      {
+        "id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      },
+      {
+        "id": "urn:ngm:class:data-residency",
+        "label": "Data Residency"
       }
     ]
   },

@@ -4,8 +4,8 @@
   "slug": "optical-character-recognition",
   "public": true,
   "classIri": "urn:ngm:class:optical-character-recognition",
-  "domain": "metaverse",
-  "definition": "Optical character recognition converts images of printed or handwritten text into machine-readable character data, enabling search, editing and downstream processing of documents.",
+  "domain": "ai",
+  "definition": "Optical Character Recognition (OCR) is a technology that converts images of typed, printed, or handwritten text into machine-encoded character sequences, enabling downstream search, editing, and automated processing of scanned documents and photographs. Classical approaches segment character glyphs and classify them against trained feature descriptors; contemporary deep-learning pipelines \u2014 typically convolutional neural networks paired with sequence models such as CTC or Transformer decoders \u2014 recognise whole text lines end-to-end without explicit segmentation. OCR is a foundational building block of document intelligence, information extraction, and accessibility tooling, and underlies virtually every large-scale digitisation effort from cultural heritage archives to enterprise content management.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:computer-vision",
@@ -13,31 +13,129 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
-  "maturity": "established",
+  "qualityScore": 0.74,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:text-detection",
+        "label": "Text Detection"
+      },
+      {
+        "id": "urn:ngm:class:layout-analysis",
+        "label": "Layout Analysis"
+      },
+      {
+        "id": "urn:ngm:class:character-segmentation",
+        "label": "Character Segmentation"
+      },
+      {
+        "id": "urn:ngm:class:language-model",
+        "label": "Language Model"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:computer-vision",
         "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:image-preprocessing",
+        "label": "Image Preprocessing"
+      },
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
       }
     ],
     "enables": [
       {
+        "id": "urn:ngm:class:document-intelligence",
+        "label": "Document Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:information-extraction",
+        "label": "Information Extraction"
+      },
+      {
         "id": "urn:ngm:class:legal-research",
         "label": "Legal Research"
+      },
+      {
+        "id": "urn:ngm:class:digital-accessibility",
+        "label": "Digital Accessibility"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:intelligent-character-recognition",
+        "label": "Intelligent Character Recognition"
+      },
+      {
+        "id": "urn:ngm:class:optical-mark-recognition",
+        "label": "Optical Mark Recognition"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:robotic-process-automation",
+        "label": "Robotic Process Automation"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-visibility",
+        "label": "Supply Chain Visibility"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:recurrent-neural-network",
+        "label": "Recurrent Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
+    ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:unicode-standard",
+        "label": "Unicode Standard"
+      },
+      {
+        "id": "urn:ngm:class:pdf-ua",
+        "label": "PDF/UA"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:named-entity-recognition",
+        "label": "Named Entity Recognition"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -1,19 +1,73 @@
 - ### Definition
-  - The final and irreversible transfer of an asset from one party to another that discharges the obligation arising from a trade or payment.
+  - Settlement is the final, legally binding discharge of an obligation arising from a trade, payment, or financial contract, achieved through the definitive transfer of assets or funds between counterparties. It is the culminating step in [[Post-Trade Processing]], converting a contractual claim into actual legal ownership, and is closely related to concepts of [[Settlement Finality]], [[Clearing]], and [[Delivery Versus Payment]]. The mechanics of settlement underpin every [[Payment System]] and securities market, determining how [[Counterparty Risk Management]] is achieved and how [[Systemic Risk]] is contained across the financial system.
 
-- ### Semantic Classification
-  - owl-class:: blockchain:Settlement
-  - owl-role:: Class
+- ### Overview
+  - Settlement is not merely a technical step but a legal event: the moment at which legal title irrevocably passes and the originating obligation is extinguished. Prior to settlement, both parties carry exposure to the risk that the other will default before completion — a risk known as settlement risk or Herstatt risk (named after a 1974 German bank failure caused by cross-time-zone FX settlement gaps).
+  - In securities markets, the gap between trade execution and settlement (historically T+5, compressed to T+2 in most major markets, and increasingly to T+1 or T+0) creates a window of counterparty exposure. The [[Central Securities Depository]] (CSD) and the [[Central Bank]] together provide the infrastructure that makes final settlement possible, with central bank money providing the ultimate settlement asset.
+  - On [[Distributed Ledger Technology]] platforms, settlement occurs when a transaction achieves irreversible confirmation under the network's [[Consensus Mechanism]], collapsing clearing and settlement into a single atomic step and eliminating the interstitial risk window entirely.
+  - Why it matters:
+    - Determines when legal title passes and risk is transferred
+    - Drives capital requirements: unsettled trades consume counterparty credit limits
+    - Settlement failures propagate through the system, creating [[Systemic Risk]]
+    - The cost and latency of settlement influences market liquidity and access
+    - Cross-border settlement inefficiencies are a major source of friction in [[Correspondent Banking]] and international trade finance
+
+- ### Key Mechanisms
+  - **Real-Time Gross Settlement (RTGS)**: Each payment settles individually and immediately in central bank money. Used by [[Real-Time Gross Settlement]] systems such as CHAPS (UK), Fedwire (US), and TARGET2 (EU). Eliminates credit risk between banks but demands high intraday liquidity.
+  - **Deferred Net Settlement (DNS)**: Obligations across multiple counterparties are netted over a cycle (e.g. end of day) before settlement. Reduces liquidity needs but introduces systemic risk if a participant fails before settlement.
+  - **Delivery Versus Payment (DvP)**: The simultaneous exchange of securities and funds such that delivery of one leg occurs if and only if the other also occurs. Core principle of [[Delivery Versus Payment]] frameworks enforced by CSDs. Eliminates principal risk.
+  - **Netting**: [[Netting]] compresses gross bilateral or multilateral obligations into a single net position, dramatically reducing the value of funds that must move at settlement.
+  - **Atomic Settlement**: [[Atomic Settlement]] on distributed ledgers uses cryptographic guarantees to ensure that both legs of an exchange complete atomically — either both succeed or both are rolled back — without requiring a central counterparty. Often implemented via [[Smart Contract]] logic or [[Hash Time-Locked Contract]] (HTLC) protocols.
+  - **Settlement Finality**: [[Settlement Finality]] refers to the point at which a settlement becomes unconditional and irrevocable — a legally protected status in most jurisdictions, governed by the EU Settlement Finality Directive and equivalent national laws.
+  - **Central Counterparty (CCP)**: A [[Central Counterparty Clearing House]] interposes itself between buyer and seller, becoming the buyer to every seller and the seller to every buyer. This concentrates and mutualises credit risk, simplifying settlement while creating a systemically important node.
+
+- ### Applications and Use Cases
+  - **Equity Markets**: National CSDs (e.g. DTCC in the US, Euroclear, Clearstream) settle equity trades in central bank or commercial bank money, with custody held in book-entry form. The US market moved to T+1 settlement in 2024.
+  - **Fixed Income and Repo**: Government bond markets use DvP settlement via CSDs. Repo settlement is critical to overnight money market functioning and [[Liquidity]] management by banks.
+  - **Foreign Exchange Settlement**: FX settlement is historically vulnerable to Herstatt risk due to time-zone differences. CLS Bank (Continuous Linked Settlement) operates a payment-versus-payment (PvP) mechanism covering major currency pairs, netting and settling net positions in central bank accounts.
+  - **Blockchain and Tokenised Assets**: [[Distributed Ledger Technology]] platforms such as Ethereum, Solana, and permissioned networks (e.g. R3 Corda, Hyperledger Fabric) enable on-chain settlement of [[Tokenisation|tokenised]] assets. [[Smart Contract]] logic enforces DvP without a CSD intermediary.
+  - **Central Bank Digital Currencies**: [[Central Bank Digital Currency]] (CBDC) projects target wholesale interbank settlement, with central banks exploring direct on-ledger settlement to eliminate commercial bank intermediation risk.
+  - **Cross-Border Payments**: [[Cross-Border Settlement]] via [[Correspondent Banking]] is slow (T+3 to T+5), opaque, and costly. Projects such as mBridge (multi-CBDC platform), RippleNet, and ISO 20022-enabled messaging aim to reduce settlement latency and cost.
+  - **Securities Tokenisation**: Tokenising traditional securities on distributed ledgers enables T+0 or near-instant settlement, potentially unlocking significant capital currently tied up in the settlement window.
+  - **Trade Finance**: Documentary credits and supply-chain finance rely on settlement of payment obligations triggered by presentation of shipping documents, increasingly automated via [[Smart Contract]] platforms.
+
+- ### Settlement Risk and Failure Modes
+  - **Counterparty Default Risk**: The risk that a counterparty defaults between trade execution and settlement, leaving the surviving party exposed to replacement cost.
+  - **Operational Failure**: Systems outages, reconciliation errors, or insufficient liquidity can cause settlement failure, triggering fail-buy-in mechanisms.
+  - **Cross-Border Time-Zone Risk (Herstatt Risk)**: A bank settles one leg of an FX transaction in one jurisdiction before the other leg settles in a different time zone, leaving an intraday exposure.
+  - **Liquidity Risk**: Deferred settlement systems require participants to fund positions that may be larger than their net obligations, straining [[Liquidity]].
+  - **Contagion**: Settlement failures are contagious — a failed settlement may prevent the receiving party from settling its own downstream obligations, creating a cascade.
 
 - ### Relationships
-  - is-subclass-of:: [[Financial Infrastructure Domain]]
-  - bridges-to:: [[Payment System]], [[Cross-Border Settlement]]
-  - enables:: [[Atomic Settlement]]
+  - hasPart:: [[Settlement Finality]], [[Delivery Versus Payment]], [[Netting]]
+  - partOf:: [[Financial Infrastructure Domain]], [[Post-Trade Processing]]
+  - requires:: [[Clearing]], [[Counterparty Risk Management]], [[Liquidity]]
+  - enables:: [[Atomic Settlement]], [[Cross-Border Settlement]], [[Securities Transfer]]
+  - dependsOn:: [[Payment System]], [[Central Securities Depository]], [[Central Bank]]
+  - implements:: [[Real-Time Gross Settlement]], [[Deferred Net Settlement]]
+  - contrastsWith:: [[Clearing]], [[Trade Execution]]
+  - bridgesTo:: [[Smart Contract]], [[Distributed Ledger Technology]], [[Central Bank Digital Currency]]
+  - relatedTo:: [[Systemic Risk]], [[Correspondent Banking]], [[Tokenisation]]
+  - sameAs:: [[Trade Settlement]], [[Payment Settlement]]
 
-- ### Content
-  - Settlement is the step at which ownership of an asset passes definitively to the recipient and the underlying obligation is extinguished. In traditional systems it may follow trade execution after a delay during which counterparty and operational risk persists.
-  - On public ledgers settlement occurs when a transaction is included and confirmed, and finality is reached according to the consensus rules of the chain. This allows delivery and payment to be linked atomically, so that both legs of an exchange either complete together or not at all, reducing the settlement risk present in delayed systems.
+- ### Standards and Governance Context
+  - **BIS CPMI Principles for Financial Market Infrastructures (PFMIs)**: The primary international standards framework for settlement systems, issued by the Bank for International Settlements Committee on Payments and Market Infrastructures and IOSCO. Covers governance, credit risk, liquidity risk, settlement finality, and default management for systemically important financial market infrastructures (SIFIs).
+  - **EU Settlement Finality Directive (SFD, 98/26/EC)**: Establishes legal certainty for settlement orders entered into designated payment and securities settlement systems in EU member states, protecting them from insolvency proceedings.
+  - **EU Central Securities Depositories Regulation (CSDR)**: Harmonises CSD rules in the EU, introduces mandatory buy-ins for settlement failures, and sets standards for settlement discipline.
+  - **ISO 20022**: The global financial messaging standard for payment and securities settlement instructions, replacing legacy SWIFT MT formats. Adoption is required for RTGS and cross-border payment systems under central bank mandates.
+  - **ISO 15022 / FIX Protocol**: Legacy securities messaging standards used in settlement instructions, being progressively replaced by ISO 20022.
+  - **T+1 Compression**: The US SEC mandated T+1 settlement for equity securities from May 2024. The EU and UK are evaluating similar moves, with industry bodies coordinating via the T+1 Taskforce.
+  - **CLS Bank / PvP Settlement**: CLS (Continuous Linked Settlement) is the global payment-versus-payment system for FX settlement, overseen by the Federal Reserve and a college of central banks, operating under the PFMIs.
+  - **mBridge / Project Dunbar**: Central bank multi-CBDC projects targeting wholesale cross-border settlement in central bank money, coordinated through BIS Innovation Hub.
+
+- ### Blockchain and Distributed Ledger Settlement
+  - On public blockchains, "settlement" is synonymous with on-chain transaction finality. [[Consensus Mechanism]] design determines finality characteristics:
+    - **Proof of Work**: Probabilistic finality — settlement risk diminishes with each additional block confirmation (Bitcoin convention: 6 blocks ≈ 60 minutes).
+    - **Proof of Stake with BFT finality**: Deterministic finality within 1–2 epochs (e.g. Ethereum post-Merge, Tendermint-based chains). Settlement is final once the supermajority threshold is reached.
+    - **DAG-based systems**: Some networks (e.g. Hedera Hashgraph) provide fast finality in seconds using asynchronous Byzantine fault tolerance.
+  - [[Hash Time-Locked Contract]] (HTLC) and [[Payment Channel]] networks (e.g. Bitcoin Lightning Network) enable off-chain settlement with on-chain enforcement, trading latency for throughput.
+  - [[Central Counterparty Clearing House]] functions may be partially replaced by [[Smart Contract]] escrow on DLT platforms, though systemic risk concentrations shift rather than disappear.
 
 - ### Provenance
-  - sources::
-  - migration-date:: 2026-05-29T00:00:00Z
+  - sources:: BIS CPMI Principles for Financial Market Infrastructures (2012, updated 2016); EU Settlement Finality Directive 98/26/EC; EU CSDR (909/2014); CLS Bank operational documentation; ISO 20022 standard (ISO TC68); DTCC T+1 transition documentation; Herstatt Risk literature (BIS Working Papers)
+  - updated:: 2026-06-13

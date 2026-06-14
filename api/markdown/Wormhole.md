@@ -20,7 +20,7 @@ public:: true
   "@id": "urn:ngm:class:wormhole",
   "@type": "Class",
   "label": "Wormhole",
-  "definition": "Wormhole is a decentralised cross-chain messaging and asset-transfer protocol that enables the movement of tokens, NFTs, and arbitrary messages between heterogeneous blockchain networks by relying on a network of off-chain guardian validators who attest to events on one chain, producing signed VAA (Verified Action Approval) messages that unlock corresponding assets or trigger logic on the destination chain. Originally launched as a wrapped-asset bridge between Solana and Ethereum in 2020, Wormhole has evolved into a generic interoperability layer supporting over 30 ecosystems. A significant exploit in February 2022 resulted in the theft of approximately 120,000 wETH, subsequently made whole by Jump Crypto.",
+  "definition": "Wormhole is a decentralised, generic cross-chain messaging and asset-transfer protocol that connects heterogeneous blockchain networks by relying on a permissioned guardian network whose supermajority attestations produce signed Verified Action Approval (VAA) messages. On-chain core contracts on each supported network verify VAAs to lock, mint, or burn assets and to route arbitrary data payloads, making Wormhole a general-purpose interoperability layer rather than a simple token bridge. Originally launched in 2020 as a Solana–Ethereum wrapped-asset bridge by Certus One, it has expanded to support over 30 layer-1 and layer-2 ecosystems under stewardship of the independent Wormhole Foundation.",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
@@ -28,33 +28,134 @@ public:: true
   ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:cross-chain-asset-transfer", "label": "Cross Chain Asset Transfer"},
-      {"@id": "urn:ngm:class:cross-chain-messaging", "label": "Cross Chain Communication"}
+      {"@id": "urn:ngm:class:cross-chain-asset-transfer", "label": "Cross-Chain Asset Transfer"},
+      {"@id": "urn:ngm:class:cross-chain-messaging", "label": "Cross-Chain Messaging"},
+      {"@id": "urn:ngm:class:token-bridging", "label": "Token Bridging"},
+      {"@id": "urn:ngm:class:nft-bridging", "label": "NFT Bridging"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:bridge-contract", "label": "Bridge Contract"}
+      {"@id": "urn:ngm:class:guardian-network", "label": "Guardian Network"},
+      {"@id": "urn:ngm:class:multisignature-scheme", "label": "Multisignature Scheme"},
+      {"@id": "urn:ngm:class:lock-and-mint-mechanism", "label": "Lock-and-Mint Mechanism"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:validator-node", "label": "Validator Node"},
+      {"@id": "urn:ngm:class:quorum-consensus", "label": "Quorum Consensus"},
+      {"@id": "urn:ngm:class:event-log", "label": "Event Log"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:layerzero", "label": "LayerZero"},
+      {"@id": "urn:ngm:class:axelar", "label": "Axelar"},
+      {"@id": "urn:ngm:class:ibc-protocol", "label": "IBC Protocol"},
+      {"@id": "urn:ngm:class:light-client-bridge", "label": "Light-Client Bridge"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:cross-chain-interoperability", "label": "Cross-Chain Interoperability"},
-      {"@id": "urn:ngm:class:blockchain-interoperability", "label": "Blockchain Interoperability"}
+      {"@id": "urn:ngm:class:blockchain-interoperability", "label": "Blockchain Interoperability"},
+      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"},
+      {"@id": "urn:ngm:class:oracle-network", "label": "Oracle Network"},
+      {"@id": "urn:ngm:class:governance-token", "label": "Governance Token"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"},
+      {"@id": "urn:ngm:class:intent-based-bridging", "label": "Intent-Based Bridging"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:multichain-ecosystem", "label": "Multi-Chain Ecosystem"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:wormhole-protocol", "label": "Wormhole Protocol"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-13T00:00:00Z",
+    "inferenceRule": "ManualEnrichment"
+  }
 }
 ```
 
 - ### Definition
-  - [[Wormhole]] is a generic [[Cross-Chain Bridge]] and message-passing protocol that connects over 30 layer-1 and layer-2 blockchain networks, enabling bidirectional transfer of tokens, non-fungible tokens, and arbitrary data payloads. Its security model relies on a permissioned set of guardian validators — 19 entities operating nodes across all supported chains — who must reach a two-thirds supermajority before issuing a VAA (Verified Action Approval). Smart contracts on source and destination chains lock or mint assets in accordance with the VAA, making Wormhole a lock-and-mint bridge rather than a trustless light-client approach.
+  - [[Wormhole]] is a generic [[Cross-Chain Bridge]] and message-passing protocol that connects over 30 [[Layer-1 Blockchain]] and [[Layer-2 Network]] ecosystems, enabling bidirectional transfer of tokens, [[Non-Fungible Token]]s, and arbitrary data payloads via a guardian-attested [[Verified Action Approval]] (VAA) system. Its security model relies on a permissioned set of 19 guardian validators who must reach a two-thirds supermajority before issuing a VAA; [[Smart Contract]]s on source and destination chains lock or mint assets in accordance with the VAA, making Wormhole a [[Lock-and-Mint Mechanism]] rather than a trustless [[Light-Client Bridge]] approach. The protocol underpins [[Blockchain Interoperability]] across Ethereum, Solana, BNB Chain, Polygon, Avalanche, Aptos, Sui, and many others, and serves as the messaging backbone for derivative protocols including the [[Pyth Network]] oracle.
+
+- ### Overview
+  - Wormhole addresses the fundamental challenge of [[Cross-Chain Interoperability]]: enabling assets and messages to move securely between independent blockchains with incompatible consensus and execution environments.
+  - Rather than constructing cryptographic proofs of source-chain state (as in [[IBC Protocol]] or [[Light-Client Bridge]] designs), Wormhole delegates trust to its guardian network — a fixed, named set of reputable validators who monitor every supported chain and co-sign state attestations.
+  - This design choice prioritises broad ecosystem coverage and operational simplicity over trustlessness, allowing rapid integration with new chains without waiting for light-client implementations.
+  - The protocol is structured around the concept of the VAA (Verified Action Approval): a message encoding the source chain, emitter address, sequence number, consistency level, and an arbitrary payload, signed by a guardian supermajority and verifiable on any destination chain by checking the guardian set's aggregate signature.
+  - Wormhole's generic messaging capability distinguishes it from earlier narrow-purpose token bridges, enabling complex cross-chain applications such as cross-chain governance, cross-chain NFT minting, and cross-chain oracle data delivery.
+
+- ### Key Components
+  - **Guardian Network** — 19 independent validator nodes operated by reputable ecosystem participants (exchanges, infrastructure providers, DeFi protocols). Each guardian independently observes emitted events on every supported chain and contributes a signature when threshold criteria are met. See [[Guardian Network]].
+  - **Core Contract** — a canonical [[Smart Contract]] deployed on each supported chain; it emits messages from on-chain transactions and verifies incoming VAAs against the current guardian set's public keys. See [[Bridge Contract]].
+  - **Verified Action Approval (VAA)** — the canonical attested message format carrying payload, metadata, and a BFT-quorum signature. VAAs are the fundamental primitive that destination-chain contracts verify before executing bridged logic.
+  - **Token Bridge** — a higher-level application contract built on the core messaging layer, implementing the [[Lock-and-Mint Mechanism]]: locking native assets on the source chain and minting wrapped representations on the destination chain (e.g. Wormhole-wrapped ETH on Solana). See [[Token Bridging]].
+  - **NFT Bridge** — extends the token bridge to support [[Non-Fungible Token]] transfers, preserving metadata URIs across chains. See [[NFT Bridging]].
+  - **Relayer Network** — an optional off-chain service that submits VAAs to destination chains on behalf of users, enabling automated delivery without requiring the user to interact with the destination chain. See [[Cross-Chain Relayer]].
+  - **Wormhole Gateway** — a Cosmos-SDK chain that acts as a routing hub for IBC-connected ecosystems, bridging the guardian-attested world to the [[IBC Protocol]] world.
+  - **Connect SDK** — a developer toolkit providing abstractions over the messaging layer, simplifying [[Cross-Chain Messaging]] integration for application developers.
+
+- ### Mechanisms
+  - **Two-Step Attestation Flow**
+    - Step 1 — Emitter: a user or application calls the source-chain core contract, which emits a structured event logged on-chain.
+    - Step 2 — Guardian observation: each guardian node detects the event on the source chain and checks that the configured consistency level (block finality or confirmation depth) has been met before signing.
+    - Step 3 — VAA assembly: once 13 of 19 guardians have signed, any party (a relayer or the user) can assemble the VAA and submit it to the destination-chain core contract.
+    - Step 4 — Destination execution: the core contract verifies the guardian signatures and, if valid, executes the encoded payload (release tokens, trigger logic, deliver data). See [[Quorum Consensus]].
+  - **Guardian Set Upgrades** — the guardian set itself is governed by the existing guardian set issuing a governance VAA; this allows rotating compromised or inactive guardians without a hard fork.
+  - **Consistency Levels** — the protocol supports configurable finality thresholds, enabling fast (pre-finality) or safe (post-finality) VAA issuance depending on application risk tolerance.
+  - **Zero-Knowledge Verification (emerging)** — research efforts explore replacing guardian-signature verification with [[Zero-Knowledge Proof]] circuits that prove source-chain state cryptographically, reducing trust assumptions substantially. See [[ZK Bridge]].
+  - **Intent-Based Bridging Integration** — newer integrations pair Wormhole messaging with [[Intent-Based Bridging]] solvers (e.g. Mayan Finance) that use Wormhole VAAs to settle user intents cross-chain, improving user experience and capital efficiency.
+
+- ### Applications and Use Cases
+  - **DeFi Cross-Chain Liquidity** — [[Decentralised Finance]] protocols use Wormhole to move liquidity across chains, enabling unified yield strategies and cross-chain lending markets (e.g. [[Uniswap]] governance cross-chain, [[Stargate Finance]] predecessor designs).
+  - **Wrapped Asset Issuance** — Wormhole wrapped tokens (e.g. wETH on Solana, wSOL on Ethereum) provide unified representations of native assets, enabling cross-chain trading on [[Decentralised Exchange]]s.
+  - **NFT Portability** — creators and platforms use the NFT bridge to move digital collectibles across chains without losing provenance or metadata, leveraging [[Non-Fungible Token]] standards on multiple ecosystems.
+  - **Oracle Data Delivery** — the [[Pyth Network]] price oracle uses Wormhole to broadcast verified price feeds from its aggregation chain to over 40 destination chains in near real-time, making Wormhole a critical [[Oracle Network]] substrate.
+  - **Cross-Chain Governance** — DAO protocols use Wormhole messages to synchronise governance decisions (e.g. parameter updates, upgrades) across deployments on multiple chains. See [[On-Chain Governance]].
+  - **Gaming and Metaverse Assets** — [[Blockchain Gaming]] projects use Wormhole to port in-game items represented as NFTs across different chain environments, increasing asset utility and market liquidity.
+  - **Institutional Cross-Chain Settlement** — institutional participants use the protocol for cross-chain settlement flows in tokenised asset markets, exploiting its broad chain coverage relative to bespoke bilateral bridges.
 
 - ### Relationships
-  - [[Wormhole]] is a prominent instance of [[Cross-Chain Bridge]] infrastructure, enabling [[Cross Chain Asset Transfer]] and general [[Cross Chain Communication]] across heterogeneous ecosystems. It deploys [[Bridge Contract]] and [[Smart Contract]] code on each supported chain as the on-chain endpoint of the VAA verification pipeline. Its operation contributes to [[Blockchain Interoperability]] and broader [[Cross-Chain Interoperability]] goals pursued by multi-chain application developers.
+  - enables:: [[Cross-Chain Asset Transfer]]
+  - enables:: [[Cross-Chain Messaging]]
+  - enables:: [[Token Bridging]]
+  - enables:: [[NFT Bridging]]
+  - uses:: [[Smart Contract]]
+  - uses:: [[Guardian Network]]
+  - uses:: [[Multisignature Scheme]]
+  - uses:: [[Lock-and-Mint Mechanism]]
+  - requires:: [[Validator Node]]
+  - requires:: [[Quorum Consensus]]
+  - requires:: [[Event Log]]
+  - contrastsWith:: [[LayerZero]]
+  - contrastsWith:: [[Axelar]]
+  - contrastsWith:: [[IBC Protocol]]
+  - contrastsWith:: [[Light-Client Bridge]]
+  - relatedTo:: [[Blockchain Interoperability]]
+  - relatedTo:: [[Cross-Chain Interoperability]]
+  - relatedTo:: [[Decentralised Finance]]
+  - relatedTo:: [[Oracle Network]]
+  - relatedTo:: [[Governance Token]]
+  - bridges-to:: [[Zero-Knowledge Proof]]
+  - bridges-to:: [[Intent-Based Bridging]]
+  - partOf:: [[Multi-Chain Ecosystem]]
 
-- ### Content
-  - Wormhole was developed by Certus One (later acquired by Jump Crypto) and launched in 2020 as a Solana-Ethereum token bridge during the peak of decentralised finance growth. The initial version used a limited guardian set to relay attestations, a model chosen for operational simplicity over fully trust-minimised light-client verification. The February 2022 exploit — which drained 120,000 wETH (approximately $320 million at the time) by forging guardian signatures via a Solana programme vulnerability — prompted an emergency recapitalisation by Jump Crypto and an extensive security overhaul.
+- ### Security and Risk Profile
+  - **Guardian Trust Model** — security depends on the honest majority of the 19-guardian set. A ≥ 13-guardian compromise or collusion enables forged VAAs and total protocol insolvency. This is a weaker trust model than [[Light-Client Bridge]] designs that rely on the destination chain's validator set.
+  - **2022 Exploit** — In February 2022, an attacker exploited a signature-verification vulnerability in the Solana core contract to forge a VAA without legitimate guardian signatures, draining 120,000 wETH (approximately $320 million at the time). Jump Crypto recapitalised the bridge to make users whole within 24 hours.
+  - **Smart Contract Risk** — the protocol's attack surface spans core contracts on every supported chain; a vulnerability in any single deployment can potentially affect the entire protocol. Regular audits by firms such as Trail of Bits and Neodyme address this risk. See [[Smart Contract Audit]].
+  - **Relayer Censorship** — while any party can submit a VAA, dependence on the optional relayer network introduces liveness risks if relayers are unavailable or censored. Self-relaying is always an option for users with destination-chain accounts.
+  - **Governance Centralisation** — guardian set membership and governance VAA issuance are controlled by the existing guardian set, creating a degree of operational centralisation that contrasts with fully on-chain decentralised governance models. See [[Decentralised Governance]].
 
-  - The Wormhole protocol uses a two-step process: (1) a transaction on the source chain emits an event that guardians observe and sign independently; (2) once a quorum (13 of 19) of guardian signatures is gathered, a VAA is formed and submitted to the destination chain's core contract for verification. This architecture supports not just asset transfers but any arbitrary payload, making Wormhole a general-purpose messaging layer. The native PYTH oracle network and several NFT bridges are built on the same guardian infrastructure.
+- ### Standards and Context
+  - Wormhole does not implement a formal external standard but publishes open specifications for its VAA format, core contract interfaces, and Connect SDK under the Apache 2.0 licence.
+  - The [[Wormhole Foundation]], established in 2023 as an independent steward of the protocol, coordinates guardian set membership, protocol upgrades, and ecosystem grants.
+  - The **W governance token** was launched in April 2024 via a community airdrop to Solana and Ethereum ecosystem participants; it governs protocol parameters and foundation treasury allocation.
+  - Wormhole is referenced in academic and industry discussions of cross-chain interoperability alongside [[LayerZero]], [[Axelar]], [[Connext]], and [[Synapse Protocol]] as a principal representative of the guardian/oracle-based bridge category (distinct from the light-client and relay-market categories).
+  - Security audits covering the protocol's Solana and EVM contracts have been published by Trail of Bits, Neodyme, and OtterSec. The exploit post-mortem is cited in cross-chain security research as a reference case for validator-set attack surfaces.
 
-  - As of 2024, Wormhole is one of the highest-volume cross-chain messaging systems, with cumulative transfers exceeding tens of billions of dollars in notional value. It supports Ethereum, Solana, BNB Chain, Polygon, Avalanche, Aptos, Sui, and numerous other networks. The Wormhole Foundation was established in 2023 to steward the open protocol independently of Jump Crypto, and the W token was launched in 2024 via an airdrop to incentivise governance participation.
-
-  - The 2024-2025 landscape sees Wormhole competing and coexisting with other cross-chain messaging systems, including LayerZero and Axelar. Ongoing research focuses on reducing trust assumptions through zero-knowledge proof verification of guardian attestations, which would allow destination chains to verify proofs of source-chain state without depending on the guardian set's honesty. Integration with intent-based bridging protocols represents a further evolution of its role in the multi-chain application stack.
+- ### Provenance
+  - sources:: Wormhole whitepaper and documentation (docs.wormhole.com); Wormhole Foundation blog; Trail of Bits and Neodyme audit reports; public post-mortems of the February 2022 exploit
+  - updated:: 2026-06-13

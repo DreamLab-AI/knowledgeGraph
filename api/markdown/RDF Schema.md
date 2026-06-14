@@ -59,7 +59,7 @@ public:: true
   "@type": "Class",
   "label": "RDF Schema",
   "definition": "A World Wide Web Consortium vocabulary that extends the Resource Description Framework with the means to describe classes, properties and their hierarchies. It provides a lightweight modelling layer for typing resources and defining property domains and ranges.",
-  "domain": "general",
+  "domain": "standards",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

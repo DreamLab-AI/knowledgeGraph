@@ -5,55 +5,170 @@
   "public": true,
   "classIri": "urn:ngm:class:telepresence",
   "domain": "spatial-computing",
-  "definition": "Telepresence encompasses technologies and interaction paradigms that create a compelling perception of physical presence in a remote or virtual location, enabling natural communication and manipulation at a distance. Systems range from high-definition video conferencing with matched room geometries and spatial audio through robotic telepresence platforms to fully immersive XR environments that deliver volumetric representations and haptic feedback, reducing the cognitive and social costs of geographic separation.",
+  "definition": "Telepresence is a suite of technologies and interaction paradigms that create a compelling perceptual sense of physical presence in a remote or virtual location, enabling natural communication, social interaction, and physical manipulation across geographic distance. Systems span high-definition video conferencing with matched room geometries and spatial audio, robotic telepresence platforms that provide mobile embodied presence, and fully immersive extended-reality environments that deliver volumetric representations and haptic feedback. The defining characteristic is the degree of presence \u2014 the subjective feeling of 'being there' \u2014 which depends on sensory fidelity, low latency, spatial coherence, and natural interaction affordances. Convergent advances in spatial computing, network infrastructure, and AI-driven media processing are progressively closing the gap between telepresent and co-located experience.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:sc-platform-and-environment",
-      "label": "Platform and Environment"
+      "id": "urn:ngm:class:distributed-collaboration",
+      "label": "Distributed Collaboration"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "emerging",
+  "qualityScore": 0.72,
+  "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [
+    "hasPart": [
       {
         "id": "urn:ngm:class:spatial-audio",
         "label": "Spatial Audio"
       },
       {
-        "id": "urn:ngm:class:virtual-reality",
-        "label": "Virtual Reality"
-      }
-    ],
-    "enables": [
-      {
-        "id": "urn:ngm:class:immersive-experience",
-        "label": "Immersive Experience"
-      }
-    ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [
-      {
         "id": "urn:ngm:class:haptic-feedback",
         "label": "Haptic Feedback"
       },
       {
-        "id": "urn:ngm:class:teleoperation",
-        "label": "Teleoperation"
+        "id": "urn:ngm:class:volumetric-capture",
+        "label": "Volumetric Capture"
+      },
+      {
+        "id": "urn:ngm:class:video-conferencing",
+        "label": "Video Conferencing"
       }
     ],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
+    "requires": [
+      {
+        "id": "urn:ngm:class:low-latency-networking",
+        "label": "Low-Latency Networking"
+      },
+      {
+        "id": "urn:ngm:class:real-time-communication",
+        "label": "Real-Time Communication"
+      },
+      {
+        "id": "urn:ngm:class:display-technology",
+        "label": "Display Technology"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:remote-work",
+        "label": "Remote Work"
+      },
+      {
+        "id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      },
+      {
+        "id": "urn:ngm:class:remote-surgery",
+        "label": "Remote Surgery"
+      },
+      {
+        "id": "urn:ngm:class:virtual-collaboration",
+        "label": "Virtual Collaboration"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:5g-networks",
+        "label": "5G Networks"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:webrtc",
+        "label": "WebRTC"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:co-location",
+        "label": "Co-location"
+      },
+      {
+        "id": "urn:ngm:class:asynchronous-communication",
+        "label": "Asynchronous Communication"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:robotic-systems",
+        "label": "Robotic Systems"
+      },
+      {
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
       {
         "id": "urn:ngm:class:augmented-reality",
         "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:teleoperation",
+        "label": "Teleoperation"
+      },
+      {
+        "id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      },
+      {
+        "id": "urn:ngm:class:neural-rendering",
+        "label": "Neural Rendering"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:hybrid-work",
+        "label": "Hybrid Work"
+      },
+      {
+        "id": "urn:ngm:class:telemedicine",
+        "label": "Telemedicine"
+      },
+      {
+        "id": "urn:ngm:class:remote-education",
+        "label": "Remote Education"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:itu-t",
+        "label": "ITU-T"
+      },
+      {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:presence-technology",
+        "label": "Presence Technology"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:holographic-display",
+        "label": "Holographic Display"
       }
     ]
   },

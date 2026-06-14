@@ -55,7 +55,7 @@ public:: true
   "@type": "Class",
   "label": "Zero-Shot Prompting",
   "definition": "Zero-shot prompting is the technique of instructing a language model to perform a task using only a description, without providing worked examples. It relies on knowledge the model acquired during pretraining.",
-  "domain": "natural-language-processing",
+  "domain": "ai",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

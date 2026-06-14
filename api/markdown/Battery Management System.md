@@ -21,7 +21,7 @@ public:: true
   "@type": "Class",
   "label": "Battery Management System",
   "definition": "A Battery Management System (BMS) is an embedded electronic system that monitors, protects, and optimises the operation of a rechargeable battery pack by continuously measuring cell voltages, currents, and temperatures, then enforcing safety limits and balancing cell state-of-charge to extend pack lifetime. It provides the digital intelligence layer between raw electrochemical energy storage and the broader power electronics or vehicle system, communicating pack status via standardised interfaces such as CAN bus. Accurate state-of-charge and state-of-health estimation algorithms are the defining computational challenge of modern BMS design.",
-  "domain": "hardware",
+  "domain": "infrastructure",
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:embedded-systems", "label": "Embedded Systems"}],
   "relations": {

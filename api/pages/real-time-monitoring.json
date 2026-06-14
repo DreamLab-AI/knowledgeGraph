@@ -5,19 +5,49 @@
   "public": true,
   "classIri": "urn:ngm:class:real-time-monitoring",
   "domain": "infrastructure",
-  "definition": "Real-time monitoring is the continuous collection, processing, and presentation of operational data with sufficiently low latency that the resulting insights can drive immediate decision-making or automated responses. It encompasses telemetry ingestion from sensors and software agents, stream processing to detect anomalies or threshold violations, and dashboard visualisation for human operators. Real-time monitoring is fundamental to industrial control systems, network operations centres, AI model serving, and smart infrastructure management. The discipline balances completeness of observation against the computational and bandwidth cost of high-frequency data collection.",
+  "definition": "Real-time monitoring is the continuous collection, processing, and presentation of operational telemetry \u2014 encompassing metrics, logs, and traces \u2014 with sufficiently low latency that resulting insights can drive immediate human decisions or automated responses without batch delay. It integrates instrumentation agents, stream-processing pipelines, and visualisation dashboards to maintain a live, actionable picture of system health across software, hardware, network, and physical domains. The discipline spans IT operations, industrial control, MLOps observability, and smart infrastructure, where the defining criterion is actionability: data must arrive within a window that permits meaningful intervention before a fault, breach, or degradation cascades. Real-time monitoring is architecturally distinct from batch analytics in its emphasis on bounded latency, stateful windowing, and continuous alerting over persistent connections.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:real-time-processing",
-      "label": "Real-time Processing"
+      "label": "Real-Time Processing"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:telemetry",
+        "label": "Telemetry"
+      },
+      {
+        "id": "urn:ngm:class:monitoring-dashboard",
+        "label": "Monitoring Dashboard"
+      },
+      {
+        "id": "urn:ngm:class:alerting",
+        "label": "Alerting"
+      },
+      {
+        "id": "urn:ngm:class:time-series-database",
+        "label": "Time-Series Database"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:observability",
+        "label": "Observability"
+      },
+      {
+        "id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:compliance-monitoring",
@@ -30,13 +60,56 @@
       {
         "id": "urn:ngm:class:ai-monitoring",
         "label": "AI Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:incident-response",
+        "label": "Incident Response"
+      },
+      {
+        "id": "urn:ngm:class:predictive-maintenance",
+        "label": "Predictive Maintenance"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:message-broker",
+        "label": "Message Broker"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:batch-processing",
+        "label": "Batch Processing"
+      },
+      {
+        "id": "urn:ngm:class:historical-analytics",
+        "label": "Historical Analytics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:cyber-physical-systems",
+        "label": "Cyber-Physical Systems"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:model-drift-detection",
+        "label": "Model Drift Detection"
+      }
+    ],
     "uses": [
+      {
+        "id": "urn:ngm:class:stream-processing",
+        "label": "Stream Processing"
+      },
       {
         "id": "urn:ngm:class:io-t-sensor-network",
         "label": "IoT Sensor Network"
@@ -46,25 +119,42 @@
         "label": "Anomaly Detection"
       },
       {
-        "id": "urn:ngm:class:monitoring-dashboard",
-        "label": "Monitoring Dashboard"
+        "id": "urn:ngm:class:event-driven-architecture",
+        "label": "Event-Driven Architecture"
       }
     ],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:site-reliability-engineering",
+        "label": "Site Reliability Engineering"
+      },
+      {
+        "id": "urn:ngm:class:scada",
+        "label": "SCADA"
+      },
+      {
+        "id": "urn:ngm:class:ml-ops",
+        "label": "MLOps"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
-      {
-        "id": "urn:ngm:class:real-time",
-        "label": "Real Time"
-      },
       {
         "id": "urn:ngm:class:performance-metrics",
         "label": "Performance Metrics"
       },
       {
-        "id": "urn:ngm:class:cyber-physical-systems",
-        "label": "Cyber Physical Systems"
+        "id": "urn:ngm:class:distributed-tracing",
+        "label": "Distributed Tracing"
+      },
+      {
+        "id": "urn:ngm:class:log-management",
+        "label": "Log Management"
+      },
+      {
+        "id": "urn:ngm:class:service-level-objective",
+        "label": "Service Level Objective"
       }
     ]
   },

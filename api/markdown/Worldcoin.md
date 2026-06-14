@@ -55,7 +55,7 @@ public:: true
   "@type": "Class",
   "label": "Worldcoin",
   "definition": "A digital identity and cryptocurrency project that uses iris biometrics to issue a unique identifier intended to distinguish individual humans online.",
-  "domain": "general",
+  "domain": "blockchain",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

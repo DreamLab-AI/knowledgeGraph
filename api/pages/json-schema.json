@@ -4,23 +4,27 @@
   "slug": "json-schema",
   "public": true,
   "classIri": "urn:ngm:class:json-data-interchange-format-schema",
-  "domain": "artificial-intelligence",
-  "definition": "JSON Schema is an IETF-standardised declarative vocabulary for annotating and validating the structure, data types, required fields, and value constraints of JSON documents. It enables machine-readable contracts between API producers and consumers by expressing rules such as property types, enumerated values, pattern matching, minimum/maximum boundaries, and composition via allOf, anyOf, and oneOf combiners. JSON Schema is widely used in REST API description languages, configuration file validation, and as the basis for verifiable credential schemas in decentralised identity systems.",
+  "domain": "standards",
+  "definition": "JSON Schema is an IETF-standardised declarative vocabulary for annotating and validating the structure, data types, required fields, and value constraints of JSON documents. It defines a set of keywords \u2014 including type, properties, required, additionalProperties, format, pattern, minimum, maximum, and combiners such as allOf, anyOf, and oneOf \u2014 that together constitute a machine-readable contract between data producers and consumers. Originally developed as a series of Internet-Drafts, the 2020-12 dialect is the most widely implemented stable revision. JSON Schema underpins REST API documentation via OpenAPI, event-driven API documentation via AsyncAPI, configuration validation in Kubernetes CRDs and Helm charts, and verifiable credential subject validation in decentralised identity ecosystems.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique"
+      "id": "urn:ngm:class:schema-language",
+      "label": "Schema Language"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.72,
+  "maturity": "mature",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
         "id": "urn:ngm:class:json-data-interchange-format",
-        "label": "json"
+        "label": "JSON"
+      },
+      {
+        "id": "urn:ngm:class:schema-validation",
+        "label": "Schema Validation"
       }
     ],
     "enables": [
@@ -31,19 +35,87 @@
       {
         "id": "urn:ngm:class:credential-schema",
         "label": "Credential Schema"
+      },
+      {
+        "id": "urn:ngm:class:api-contract-testing",
+        "label": "API Contract Testing"
+      },
+      {
+        "id": "urn:ngm:class:code-generation",
+        "label": "Code Generation"
+      },
+      {
+        "id": "urn:ngm:class:form-generation",
+        "label": "Form Generation"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [
+    "implements": [
       {
-        "id": "urn:ngm:class:data-format-standard",
-        "label": "Data Format Standard"
+        "id": "urn:ngm:class:ietf-standard",
+        "label": "IETF Standard"
+      },
+      {
+        "id": "urn:ngm:class:declarative-constraint-specification",
+        "label": "Declarative Constraint Specification"
       }
     ],
-    "uses": [],
-    "supports": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:xml-schema-definition",
+        "label": "XML Schema Definition"
+      },
+      {
+        "id": "urn:ngm:class:apache-avro",
+        "label": "Apache Avro"
+      },
+      {
+        "id": "urn:ngm:class:protocol-buffers",
+        "label": "Protocol Buffers"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "id": "urn:ngm:class:infrastructure-as-code",
+        "label": "Infrastructure as Code"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:keyword-vocabulary",
+        "label": "Keyword Vocabulary"
+      },
+      {
+        "id": "urn:ngm:class:regular-expression",
+        "label": "Regular Expression"
+      },
+      {
+        "id": "urn:ngm:class:uri-reference",
+        "label": "URI Reference"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:openapi",
+        "label": "OpenAPI"
+      },
+      {
+        "id": "urn:ngm:class:asyncapi",
+        "label": "AsyncAPI"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      },
+      {
+        "id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
@@ -54,6 +126,14 @@
       {
         "id": "urn:ngm:class:data-format",
         "label": "Data Format"
+      },
+      {
+        "id": "urn:ngm:class:open-api-specification",
+        "label": "OpenAPI Specification"
+      },
+      {
+        "id": "urn:ngm:class:graphql-schema",
+        "label": "GraphQL Schema"
       }
     ]
   },

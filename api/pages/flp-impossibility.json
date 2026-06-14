@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:flp-impossibility",
   "domain": "distributed-systems",
-  "definition": "A foundational result in distributed computing showing that no deterministic consensus protocol can guarantee agreement in an asynchronous system if even a single process may fail.",
+  "definition": "The FLP Impossibility (Fischer, Lynch, Paterson 1985) is a foundational theorem in distributed computing proving that no deterministic protocol can solve the [[Consensus]] problem in a fully asynchronous message-passing system if even one process may crash. The result arises because message delays are unbounded, making it impossible to distinguish a crashed process from a slow one, so any protocol that always terminates can be manipulated into a state of permanent indecision. Consequently, every practical [[Consensus Algorithm]] must relax at least one of the FLP assumptions \u2014 typically by introducing partial synchrony, randomisation, or probabilistic termination.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:distributed-consensus",
@@ -13,26 +13,108 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
-  "maturity": "established",
+  "qualityScore": 0.74,
+  "maturity": "mature",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:distributed-consensus",
-        "label": "Distributed Consensus"
+        "id": "urn:ngm:class:asynchronous-network",
+        "label": "Asynchronous Network"
+      },
+      {
+        "id": "urn:ngm:class:crash-fault-model",
+        "label": "Crash Fault Model"
       }
     ],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:partial-synchrony",
+        "label": "Partial Synchrony"
+      },
+      {
+        "id": "urn:ngm:class:randomised-consensus",
+        "label": "Randomised Consensus"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:cap-theorem",
+        "label": "CAP Theorem"
+      },
+      {
+        "id": "urn:ngm:class:paxi-impossibility",
+        "label": "PAXI Impossibility"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain-consensus",
+        "label": "Blockchain Consensus"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract-execution",
+        "label": "Smart Contract Execution"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:formal-proof",
+        "label": "Formal Proof"
+      },
+      {
+        "id": "urn:ngm:class:valence-argument",
+        "label": "Valence Argument"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:computability-theory",
+        "label": "Computability Theory"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems-theory",
+        "label": "Distributed Systems Theory"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:paxos",
+        "label": "Paxos"
+      },
+      {
+        "id": "urn:ngm:class:raft-consensus",
+        "label": "Raft Consensus"
+      },
+      {
+        "id": "urn:ngm:class:two-phase-commit",
+        "label": "Two-Phase Commit"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      },
+      {
+        "id": "urn:ngm:class:state-machine-replication",
+        "label": "State Machine Replication"
+      },
+      {
+        "id": "urn:ngm:class:bivalent-configuration",
+        "label": "Bivalent Configuration"
+      },
+      {
+        "id": "urn:ngm:class:safety-liveness-tradeoff",
+        "label": "Safety-Liveness Tradeoff"
+      }
+    ]
   },
   "wikilinks": [
     {

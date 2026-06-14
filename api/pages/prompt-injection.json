@@ -4,44 +4,114 @@
   "slug": "prompt-injection",
   "public": true,
   "classIri": "urn:ngm:class:prompt-injection",
-  "domain": "artificial-intelligence",
-  "definition": "Prompt injection is a class of adversarial attacks against large language model systems in which attacker-controlled text embedded in the model's input context overrides or subverts the developer-specified system prompt, causing the model to follow attacker instructions rather than its intended operating constraints. Direct prompt injection occurs when a user submits malicious instructions in their own turn; indirect prompt injection occurs when the model retrieves or processes external content (web pages, documents, tool outputs) that contains embedded adversarial instructions. As LLMs are deployed in agentic pipelines with tool-calling access to external systems, prompt injection becomes a significant security boundary violation risk.",
+  "domain": "security",
+  "definition": "Prompt injection is a class of adversarial attacks against large language model (LLM) systems in which attacker-controlled text embedded within the model's input context overrides or subverts the developer-specified system prompt, causing the model to follow attacker instructions instead of its intended operating constraints. Direct prompt injection occurs when a user submits malicious instructions directly; indirect prompt injection occurs when the model retrieves or processes external content such as web pages, documents, or tool outputs that contain embedded adversarial instructions. As LLMs are increasingly deployed in agentic pipelines with tool-calling and autonomous action capabilities, prompt injection constitutes a critical security boundary violation that can lead to data exfiltration, privilege escalation, and unauthorised actions on external systems.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ai-governance-and-ethics",
-      "label": "AI Governance and Ethics"
+      "id": "urn:ngm:class:adversarial-attack",
+      "label": "Adversarial Attack"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:direct-prompt-injection",
+        "label": "Direct Prompt Injection"
+      },
+      {
+        "id": "urn:ngm:class:indirect-prompt-injection",
+        "label": "Indirect Prompt Injection"
+      }
+    ],
     "requires": [
       {
-        "id": "urn:ngm:class:adversarial-attack",
-        "label": "Adversarial Attack"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:system-prompt",
+        "label": "System Prompt"
       }
     ],
     "enables": [
+      {
+        "id": "urn:ngm:class:data-exfiltration",
+        "label": "Data Exfiltration"
+      },
+      {
+        "id": "urn:ngm:class:privilege-escalation",
+        "label": "Privilege Escalation"
+      },
       {
         "id": "urn:ngm:class:adversarial-testing",
         "label": "Adversarial Testing"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:instruction-following",
+        "label": "Instruction Following"
+      },
+      {
+        "id": "urn:ngm:class:context-window",
+        "label": "Context Window"
+      }
+    ],
     "implements": [],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:adversarial-robustness",
         "label": "Adversarial Robustness"
+      },
+      {
+        "id": "urn:ngm:class:input-sanitisation",
+        "label": "Input Sanitisation"
       }
     ],
-    "bridgesTo": [],
-    "uses": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      }
+    ],
     "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:owasp-llm-top-10",
+        "label": "OWASP LLM Top 10"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI RMF"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:llm-security",
+        "label": "LLM Security"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:jailbreaking",
@@ -52,8 +122,20 @@
         "label": "Red Teaming"
       },
       {
-        "id": "urn:ngm:class:ai-safety",
-        "label": "AI Safety"
+        "id": "urn:ngm:class:sql-injection",
+        "label": "SQL Injection"
+      },
+      {
+        "id": "urn:ngm:class:social-engineering",
+        "label": "Social Engineering"
+      },
+      {
+        "id": "urn:ngm:class:alignment",
+        "label": "Alignment"
+      },
+      {
+        "id": "urn:ngm:class:constitutional-ai",
+        "label": "Constitutional AI"
       }
     ]
   },

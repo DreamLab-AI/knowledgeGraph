@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:interoperability-protocol",
   "domain": "infrastructure",
-  "definition": "An interoperability protocol is a formally specified set of rules, message formats, and coordination mechanisms that enable distinct systems, networks, or platforms to exchange information and invoke services without requiring shared implementation. Such protocols define syntax, semantics, and sequencing so that heterogeneous participants can interact predictably. Interoperability protocols are foundational infrastructure across blockchain networks, spatial computing environments, data exchanges, and AI service ecosystems.",
+  "definition": "An interoperability protocol is a formally specified set of rules, message formats, sequencing constraints, and coordination mechanisms that enable independently implemented systems, networks, or platforms to exchange information and invoke services without requiring shared internal architecture or governance. Such protocols define both syntactic structure and semantic contracts so that heterogeneous participants can interact predictably and verifiably. Interoperability protocols range from low-level wire formats to high-level semantic agreements, and form the foundational connective tissue of distributed computing ecosystems including blockchain networks, spatial computing platforms, AI service meshes, and cross-organisational data exchanges. Their design and governance determine whether digital infrastructure remains open and composable or becomes fragmented and extractive.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:network-protocol",
@@ -13,11 +13,24 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.74,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
+      },
+      {
+        "id": "urn:ngm:class:schema-definition",
+        "label": "Schema Definition"
+      },
+      {
+        "id": "urn:ngm:class:protocol-specification",
+        "label": "Protocol Specification"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:interoperability",
@@ -30,16 +43,64 @@
       {
         "id": "urn:ngm:class:blockchain-interoperability",
         "label": "Blockchain Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:federated-identity",
+        "label": "Federated Identity"
+      },
+      {
+        "id": "urn:ngm:class:multi-agent-system",
+        "label": "Multi-Agent System"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:interoperability-standard",
+        "label": "Interoperability Standard"
+      },
+      {
+        "id": "urn:ngm:class:data-exchange-format",
+        "label": "Data Exchange Format"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:proprietary-api",
+        "label": "Proprietary API"
+      },
+      {
+        "id": "urn:ngm:class:vendor-lock-in",
+        "label": "Vendor Lock-In"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:agent-communication-language",
+        "label": "Agent Communication Language"
+      },
+      {
+        "id": "urn:ngm:class:openxr",
+        "label": "OpenXR"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:api-standard",
+        "label": "API Standard"
+      },
+      {
+        "id": "urn:ngm:class:message-format",
+        "label": "Message Format"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-proof",
+        "label": "Cryptographic Proof"
+      }
+    ],
     "supports": [
       {
-        "id": "urn:ngm:class:spatial-computing-paradigm",
+        "id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing"
       },
       {
@@ -49,15 +110,32 @@
       {
         "id": "urn:ngm:class:digital-asset-ecosystem",
         "label": "Digital Asset Ecosystem"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
       }
     ],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      },
+      {
+        "id": "urn:ngm:class:w3c",
+        "label": "W3C"
+      },
+      {
+        "id": "urn:ngm:class:khronos-group",
+        "label": "Khronos Group"
+      },
+      {
+        "id": "urn:ngm:class:ieee",
+        "label": "IEEE"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
-      {
-        "id": "urn:ngm:class:interoperability-standard",
-        "label": "Interoperability Standard"
-      },
       {
         "id": "urn:ngm:class:interoperability-framework",
         "label": "Interoperability Framework"
@@ -67,12 +145,16 @@
         "label": "Communication Protocol"
       },
       {
-        "id": "urn:ngm:class:api-standard",
-        "label": "API Standard"
+        "id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
       },
       {
-        "id": "urn:ngm:class:open-standard",
-        "label": "Open Standard"
+        "id": "urn:ngm:class:verifiable-credential",
+        "label": "Verifiable Credential"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-identifier",
+        "label": "Decentralised Identifier"
       }
     ]
   },

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:liquid-democracy",
   "domain": "blockchain",
-  "definition": "Liquid democracy is a hybrid governance model that combines direct and representative democracy by allowing participants to vote on proposals themselves or transitively delegate their voting power to a trusted proxy, who may further re-delegate to another delegate, forming an arbitrarily deep delegation chain. Delegations are revocable at any time, allowing voters to reclaim their votes before a proposal closes. In blockchain governance contexts, liquid democracy is implemented via governance token delegation mechanisms, enabling token holders to assign their on-chain voting weight to domain experts while retaining the right to override delegated votes on individual proposals.",
+  "definition": "Liquid democracy is a hybrid participatory governance model that synthesises direct democracy and representative democracy by permitting each participant either to cast their vote on a proposal directly or to delegate their voting weight transitively to a trusted proxy, who may in turn re-delegate to another agent, forming an arbitrarily deep delegation chain. Delegations are revocable at any point before a proposal closes, preserving individual sovereignty over the vote. In distributed-systems and blockchain governance contexts the model is implemented via smart-contract delegation registries and off-chain signalling layers, enabling token holders or identity-verified citizens to assign on-chain voting power to domain experts while retaining the right to override on any individual proposal.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-governance-and-regulation",
@@ -13,11 +13,24 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
+  "qualityScore": 0.74,
   "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      },
+      {
+        "id": "urn:ngm:class:sybil-resistance",
+        "label": "Sybil Resistance"
+      },
+      {
+        "id": "urn:ngm:class:vote-checkpointing",
+        "label": "Vote Checkpointing"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:dao-governance",
@@ -26,17 +39,64 @@
       {
         "id": "urn:ngm:class:on-chain-governance",
         "label": "On-chain Governance"
+      },
+      {
+        "id": "urn:ngm:class:delegative-democracy",
+        "label": "Delegative Democracy"
+      },
+      {
+        "id": "urn:ngm:class:participatory-governance",
+        "label": "Participatory Governance"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:erc-20-votes",
+        "label": "ERC-20 Votes"
+      },
+      {
+        "id": "urn:ngm:class:token-weighted-voting",
+        "label": "Token-weighted Voting"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:transitive-delegation",
+        "label": "Transitive Delegation"
+      },
+      {
+        "id": "urn:ngm:class:vote-weight-aggregation",
+        "label": "Vote Weight Aggregation"
+      }
+    ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:quadratic-voting",
         "label": "Quadratic Voting"
+      },
+      {
+        "id": "urn:ngm:class:conviction-voting",
+        "label": "Conviction Voting"
+      },
+      {
+        "id": "urn:ngm:class:representative-democracy",
+        "label": "Representative Democracy"
+      },
+      {
+        "id": "urn:ngm:class:direct-democracy",
+        "label": "Direct Democracy"
       }
     ],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:collective-intelligence",
+        "label": "Collective Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:multi-agent-systems",
+        "label": "Multi-Agent Systems"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:governance-token",
@@ -45,12 +105,37 @@
       {
         "id": "urn:ngm:class:voting-mechanism",
         "label": "Voting Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:delegation-graph",
+        "label": "Delegation Graph"
       }
     ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "id": "urn:ngm:class:snapshot-governance",
+        "label": "Snapshot Governance"
+      },
+      {
+        "id": "urn:ngm:class:futarchy",
+        "label": "Futarchy"
+      },
+      {
+        "id": "urn:ngm:class:holographic-consensus",
+        "label": "Holographic Consensus"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

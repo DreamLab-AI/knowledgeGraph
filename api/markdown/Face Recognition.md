@@ -47,7 +47,7 @@ public:: true
   "@type": "Class",
   "label": "Face Recognition",
   "definition": "A biometric technique that identifies or verifies a person from an image or video of their face by comparing facial features against stored templates. It is a subfield of computer vision and biometrics.",
-  "domain": "computer-vision",
+  "domain": "ai",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

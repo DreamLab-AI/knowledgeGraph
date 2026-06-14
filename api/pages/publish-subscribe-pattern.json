@@ -4,40 +4,154 @@
   "slug": "publish-subscribe-pattern",
   "public": true,
   "classIri": "urn:ngm:class:publish-subscribe-pattern",
-  "domain": "software-architecture",
-  "definition": "A messaging pattern in which senders, called publishers, categorise messages into topics without knowledge of which receivers, called subscribers, will consume them. A broker or event channel delivers messages to interested subscribers.",
+  "domain": "infrastructure",
+  "definition": "A messaging design pattern in which message producers (publishers) emit typed events to named topics or channels without direct knowledge of consumers, and message consumers (subscribers) declare interest in specific topics to receive matching events asynchronously. A broker or event bus mediates delivery, fully decoupling senders from receivers in space, time, and control flow. This architectural separation enables independent scaling, fault isolation, and runtime addition or removal of participants without coordination. Pub/Sub underpins event-driven architectures, stream processing systems, and reactive microservices.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:message-queue",
-      "label": "Message Queue"
+      "id": "urn:ngm:class:messaging-pattern",
+      "label": "Messaging Pattern"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
-  "maturity": "established",
+  "qualityScore": 0.74,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:message-broker",
+        "label": "Message Broker"
+      },
+      {
+        "id": "urn:ngm:class:event-channel",
+        "label": "Event Channel"
+      },
+      {
+        "id": "urn:ngm:class:topic",
+        "label": "Topic"
+      }
+    ],
     "requires": [
+      {
+        "id": "urn:ngm:class:message-broker",
+        "label": "Message Broker"
+      },
+      {
+        "id": "urn:ngm:class:network-transport",
+        "label": "Network Transport"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:loose-coupling",
+        "label": "Loose Coupling"
+      },
+      {
+        "id": "urn:ngm:class:event-driven-architecture",
+        "label": "Event-Driven Architecture"
+      },
+      {
+        "id": "urn:ngm:class:stream-processing",
+        "label": "Stream Processing"
+      },
+      {
+        "id": "urn:ngm:class:reactive-systems",
+        "label": "Reactive Systems"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
       {
         "id": "urn:ngm:class:message-queue",
         "label": "Message Queue"
       }
     ],
-    "enables": [
+    "implements": [
       {
-        "id": "urn:ngm:class:distributed-systems",
-        "label": "Distributed Systems"
+        "id": "urn:ngm:class:observer-pattern",
+        "label": "Observer Pattern"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:request-reply-pattern",
+        "label": "Request-Reply Pattern"
+      },
+      {
+        "id": "urn:ngm:class:point-to-point-messaging",
+        "label": "Point-to-Point Messaging"
+      },
+      {
+        "id": "urn:ngm:class:polling-pattern",
+        "label": "Polling Pattern"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:serialisation",
+        "label": "Serialisation"
+      },
+      {
+        "id": "urn:ngm:class:content-based-routing",
+        "label": "Content-Based Routing"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:microservices-architecture",
+        "label": "Microservices Architecture"
+      },
+      {
+        "id": "urn:ngm:class:iot-architecture",
+        "label": "IoT Architecture"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:mqtt",
+        "label": "MQTT"
+      },
+      {
+        "id": "urn:ngm:class:amqp",
+        "label": "AMQP"
+      },
+      {
+        "id": "urn:ngm:class:apache-kafka",
+        "label": "Apache Kafka"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:event-driven-architecture",
+        "label": "Event-Driven Architecture"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:software-architecture",
+        "label": "Software Architecture"
+      },
+      {
+        "id": "urn:ngm:class:event-sourcing",
+        "label": "Event Sourcing"
+      },
+      {
+        "id": "urn:ngm:class:cqrs",
+        "label": "CQRS"
+      }
+    ]
   },
   "wikilinks": [
     {

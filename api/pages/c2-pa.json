@@ -4,32 +4,75 @@
   "slug": "c2-pa",
   "public": true,
   "classIri": "urn:ngm:class:c2-pa",
-  "domain": "artificial-intelligence",
-  "definition": "C2PA (Coalition for Content Provenance and Authenticity) is a cross-industry technical standards initiative and specification that defines how to cryptographically bind signed provenance metadata \u2014 including capture origin, AI generation disclosure, and editing history \u2014 to digital media assets such as images, video, audio, and documents. Founded by Adobe, Arm, BBC, Intel, Microsoft, and Truepic, C2PA publishes the C2PA technical specification under the Joint Development Foundation, which defines the manifest container format (JUMBF), assertion vocabularies, signing mechanism (COSE), and trust model. C2PA Content Credentials are the concrete artefact instantiating the specification.",
+  "domain": "standards",
+  "definition": "C2PA (Coalition for Content Provenance and Authenticity) is a cross-industry open technical standards body and specification that cryptographically binds signed provenance metadata \u2014 covering capture origin, editing history, and AI generation disclosure \u2014 to digital media assets including images, video, audio, and documents. Founded by Adobe, Arm, BBC, Intel, Microsoft, and Truepic under the Joint Development Foundation, the C2PA specification defines the manifest container format (JUMBF/ISO 19566-5), assertion vocabularies, COSE-based signing mechanism, X.509 PKI trust model, and the resulting Content Credentials artefact. C2PA consolidates two prior initiatives \u2014 Adobe's Content Authenticity Initiative (CAI) and the BBC-led Project Origin \u2014 into a single interoperable standard for end-to-end media provenance across capture, editing, distribution, and verification stages.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ai-governance-and-ethics",
-      "label": "AI Governance and Ethics"
+      "id": "urn:ngm:class:digital-media-standards",
+      "label": "Digital Media Standards"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [
+    "hasPart": [
       {
         "id": "urn:ngm:class:c2-pa-content-credentials",
         "label": "C2PA Content Credentials"
       },
       {
+        "id": "urn:ngm:class:c2-pa-manifest",
+        "label": "C2PA Manifest"
+      },
+      {
+        "id": "urn:ngm:class:c2-pa-assertion",
+        "label": "C2PA Assertion"
+      },
+      {
+        "id": "urn:ngm:class:c2-pa-trust-list",
+        "label": "C2PA Trust List"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:certificate-authority",
+        "label": "Certificate Authority"
+      }
+    ],
+    "enables": [
+      {
         "id": "urn:ngm:class:provenance-verification",
         "label": "Provenance Verification"
+      },
+      {
+        "id": "urn:ngm:class:media-authentication",
+        "label": "Media Authentication"
+      },
+      {
+        "id": "urn:ngm:class:ai-disclosure",
+        "label": "AI Disclosure"
       }
     ],
     "dependsOn": [],
-    "implements": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:content-authenticity-initiative",
+        "label": "Content Authenticity Initiative"
+      },
+      {
+        "id": "urn:ngm:class:project-origin",
+        "label": "Project Origin"
+      }
+    ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:deepfakes",
@@ -40,21 +83,68 @@
         "label": "Synthetic Media"
       }
     ],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-governance-and-ethics",
+        "label": "AI Governance and Ethics"
+      },
+      {
+        "id": "urn:ngm:class:watermarking",
+        "label": "Watermarking"
+      },
+      {
+        "id": "urn:ngm:class:prov-o",
+        "label": "PROV-O"
+      }
+    ],
     "uses": [
       {
-        "id": "urn:ngm:class:digital-signature",
-        "label": "Digital Signature"
+        "id": "urn:ngm:class:jumbf",
+        "label": "JUMBF"
+      },
+      {
+        "id": "urn:ngm:class:cose",
+        "label": "COSE"
       },
       {
         "id": "urn:ngm:class:provenance-tracking",
         "label": "Provenance Tracking"
+      },
+      {
+        "id": "urn:ngm:class:x-509-certificate",
+        "label": "X.509 Certificate"
       }
     ],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:disinformation-countermeasures",
+        "label": "Disinformation Countermeasures"
+      },
+      {
+        "id": "urn:ngm:class:media-integrity",
+        "label": "Media Integrity"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-transparency",
+        "label": "Supply Chain Transparency"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:open-media-alliance",
+        "label": "Open Media Alliance"
+      },
+      {
+        "id": "urn:ngm:class:w3c-verifiable-credentials",
+        "label": "W3C Verifiable Credentials"
+      },
+      {
+        "id": "urn:ngm:class:joint-development-foundation",
+        "label": "Joint Development Foundation"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

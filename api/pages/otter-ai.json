@@ -4,7 +4,7 @@
   "slug": "otter-ai",
   "public": true,
   "classIri": "urn:ngm:class:otter-ai",
-  "domain": "natural-language-processing",
+  "domain": "ai",
   "definition": "An American company that provides automatic speech recognition and transcription software for meetings and conversations. It generates real-time transcripts, summaries, and notes from audio.",
   "subClassOf": [
     {

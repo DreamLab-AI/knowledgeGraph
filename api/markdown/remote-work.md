@@ -1,14 +1,83 @@
 - ### Definition
-  - [[Remote Work]] is a work modality in which knowledge workers execute their responsibilities from locations outside traditional employer premises, coordinating through [[Collaboration Platform]] tools and [[Asynchronous Communication]] norms within [[Distributed Team Collaboration]] structures, fundamentally restructuring the relationship between physical location and professional productivity.
+  - [[Remote Work]] is a work modality in which knowledge workers execute their professional responsibilities from locations outside traditional employer premises — including home offices, [[Co-Working Space]] facilities, or while travelling — coordinating through [[Collaboration Platform]] tools, [[Asynchronous Communication]] norms, and [[Digital Workplace Platform]] environments within [[Distributed Team Collaboration]] structures. The practice fundamentally restructures the relationship between physical location and professional productivity, enabling organisations to operate across geographies, time zones, and contractual arrangements that were previously impractical at scale.
+
+- ### Overview
+  - Remote work as a formal organisational practice emerged from the convergence of affordable [[Broadband Internet]], [[Cloud Computing]] infrastructure, and software-as-a-service [[Collaboration Platform]] tools during the 2000s and 2010s. While field sales, travelling workers, and home-based cottage industries historically involved working away from a central location, modern remote work is distinctive in enabling full cognitive knowledge work — software development, legal analysis, financial modelling, creative production — entirely outside shared physical premises.
+  - Three primary models have emerged in organisational practice:
+    - **Fully remote**: the organisation has no mandatory physical office; employees are distributed globally or regionally and coordinate entirely through digital channels. Exemplified by GitLab, Automattic, and Basecamp, which have published open-source operational playbooks.
+    - **Hybrid work**: employees split time between home and office, typically on a structured schedule (e.g. 2-3 days in-office per week) or at individual discretion. This is the dominant post-pandemic equilibrium for knowledge-work organisations with existing office estates.
+    - **Remote-first**: the default mode is remote and async; in-office use is optional. All documentation, decisions, and communication are structured to be accessible to those not present in the room.
+  - The practice intersects with [[Workforce Management]], [[Organisational Design]], [[Identity and Access Management]], [[Endpoint Security]], and emerging fields of [[AI Meeting Assistant]] tooling that partially replicate serendipitous knowledge sharing from physical co-location.
+
+- ### Key Components
+  - **Communication Infrastructure**
+    - [[Video Conferencing]] systems (e.g. Zoom, Microsoft Teams, Google Meet) handle synchronous interaction and replicate many meeting-room functions
+    - [[Asynchronous Communication]] via threaded messaging platforms (Slack, Discord, Teams channels) decouples interaction from real-time co-presence
+    - [[Digital Communication Infrastructure]] — stable [[Broadband Internet]] and mobile data connectivity — is a prerequisite for participation
+  - **Collaboration and Productivity Tools**
+    - [[Digital Workplace Platform]] environments integrate document co-editing, task tracking, and persistent shared spaces
+    - [[Project Management Software]] (Jira, Linear, Asana, Notion) provides structured coordination of work across distributed contributors
+    - [[Cloud Storage]] (Google Drive, Dropbox, OneDrive, S3) makes artefacts accessible across geographies without VPN latency penalties
+    - [[Asynchronous Collaboration]] tools — Loom for video messaging, Miro for collaborative whiteboarding, Figma for design — extend remote capability beyond text
+  - **Security and Access**
+    - [[Identity and Access Management]] (SSO, MFA, SCIM) controls who can access which systems without physical badge checks
+    - [[Virtual Private Network]] tunnels encrypt traffic from untrusted home and co-working networks to corporate resources
+    - [[Zero-Trust Security]] architectures extend access controls beyond perimeter-based models, treating each device and user as potentially untrusted regardless of network origin — particularly well-suited to distributed remote workforces
+    - [[Endpoint Security]] — managed device policies, MDM, EDR — compensates for the loss of office-perimeter network security
+  - **Organisational Practices**
+    - Documentation culture: asynchronous-first organisations invest heavily in written [[Knowledge Management]] — Wikis, RFCs, decision logs — to compensate for the ambient information sharing of physical co-location
+    - Results-based management: performance measurement shifts from presence and visibility to measurable outputs, OKRs, and shipping velocity
+    - [[Work-Life Integration]] norms must be explicitly designed; without them, remote workers risk always-on burnout from the collapse of commute-imposed boundaries
+    - Distributed onboarding: structured programmes to integrate new joiners who may never meet colleagues in person
+
+- ### Applications and Use Cases
+  - **Software engineering and technology**: the domain most thoroughly adapted to remote work, with distributed open-source development (Linux kernel, Kubernetes, Mozilla) long predating commercial remote adoption. Continuous integration, code review tooling, and asynchronous pull-request workflows are the canonical remote-native engineering model.
+  - **Creative and design professions**: graphic design, UX/UI design (via [[Figma]] and similar real-time co-design tools), copywriting, and video production are routinely conducted across globally distributed teams.
+  - **Customer support and operations**: large-scale distributed support teams operate via ticketing systems, knowledge bases, and [[Cloud Computing]]-hosted CRM platforms, enabling 24/7 coverage across time zones without requiring third-shift in-office staffing.
+  - **Financial services and consulting**: advisory, analysis, and modelling work that historically required in-person client proximity has partially migrated to remote delivery, though regulated firms face compliance constraints around data handling and supervision.
+  - **Education and training**: [[Remote Learning]] and online course delivery platforms extend remote-work patterns into educational contexts, enabling instructors and learners to operate asynchronously across geographies.
+  - **Distributed R&D and scientific collaboration**: research teams across universities and labs collaborate on shared datasets, co-author papers, and run experiments using remote lab access tools and [[Cloud Computing]] HPC resources.
+  - **Digital nomadism**: a subset of remote workers leverage location-independence to work while travelling internationally, supported by digital-nomad visa programmes introduced by countries including Portugal, Estonia, and Costa Rica seeking to attract mobile knowledge workers.
 
 - ### Relationships
-  - [[Remote Work]] depends on a stack of enabling technologies: [[Digital Workplace Platform]] environments provide the persistent digital office; [[Asynchronous Communication]] protocols reduce the timezone-coordination burden for globally [[Distributed Team Collaboration]]; and [[Telecollaboration]] systems handle synchronous video interactions. The practice enables [[Distributed Collaboration]] at organisational scale and drives demand for [[Asynchronous Collaboration]] tools that preserve context without requiring simultaneous presence. [[Workforce Management]] functions must adapt performance measurement from presence-based to output-based models.
+  - uses:: [[Collaboration Platform]]
+  - uses:: [[Asynchronous Communication]]
+  - uses:: [[Digital Workplace Platform]]
+  - uses:: [[Video Conferencing]]
+  - uses:: [[Cloud Computing]]
+  - uses:: [[Virtual Private Network]]
+  - enables:: [[Distributed Collaboration]]
+  - enables:: [[Asynchronous Collaboration]]
+  - enables:: [[Global Talent Acquisition]]
+  - enables:: [[Work-Life Integration]]
+  - requires:: [[Identity and Access Management]]
+  - requires:: [[Endpoint Security]]
+  - requires:: [[Digital Communication Infrastructure]]
+  - dependsOn:: [[Broadband Internet]]
+  - dependsOn:: [[Cloud Storage]]
+  - dependsOn:: [[Project Management Software]]
+  - relatedTo:: [[Distributed Team Collaboration]]
+  - relatedTo:: [[Remote Collaboration]]
+  - relatedTo:: [[Telecollaboration]]
+  - relatedTo:: [[Workforce Management]]
+  - relatedTo:: [[Hybrid Work]]
+  - relatedTo:: [[Organisational Design]]
+  - relatedTo:: [[Knowledge Management]]
+  - contrastsWith:: [[Collocated Work]]
+  - contrastsWith:: [[Open-Plan Office]]
+  - bridges-to:: [[AI Meeting Assistant]]
+  - bridges-to:: [[Virtual Reality Workspace]]
+  - bridges-to:: [[Zero-Trust Security]]
 
-- ### Content
-  - Remote work as a concept predates digital technology — field sales, travelling workers, and home-based cottage industries all involve working away from a central location. Modern remote work was first adopted by technology companies in Silicon Valley during the 1990s, enabled by internet connectivity and email. Early remote work research by Nicholas Bloom and others from the 2010s documented productivity gains of 13-15% for home-based call centre workers, providing empirical grounding for corporate pilots. However, mainstream adoption remained limited to specific roles and progressive organisations prior to 2020.
+- ### Standards and Context
+  - **ISO/IEC standards**: ISO/IEC 27001 (information security management) and ISO/IEC 27002 provide the baseline control framework that remote work security policies implement. Organisations extending controls to home offices must adapt physical security controls from the standard.
+  - **GDPR and data protection**: remote work across jurisdictions triggers cross-border data transfer obligations, particularly when employees in one regulatory zone handle data of subjects in another. Home-office processing environments must meet equivalent controller safeguards.
+  - **Occupational health and safety**: many jurisdictions extend employer duty-of-care obligations to home-office environments (e.g. the UK Health and Safety at Work Act 1974 as applied via HSE guidance for homeworkers), requiring ergonomic risk assessments and suitable equipment provision.
+  - **Labour law and right-to-disconnect**: France (2017), Portugal (2021), and several other jurisdictions have legislated right-to-disconnect provisions limiting employer expectations on out-of-hours availability — directly relevant to always-on remote work cultures.
+  - **Network security frameworks**: NIST SP 800-46 (Guide to Enterprise Telework, Remote Access, and BYOD Security) is the authoritative US federal guidance for remote-access security architecture.
+  - **Broadband and digital infrastructure policy**: universal broadband programmes (e.g. the UK's Project Gigabit, the US Infrastructure Investment and Jobs Act broadband funding) are increasingly framed as enabling remote work participation equity.
+  - Relevant industry bodies: **SHRM** (Society for Human Resource Management) on remote HR practice; **IEEE** on distributed systems underpinning remote collaboration; **CISA** on endpoint and zero-trust security for remote workers.
 
-  - The COVID-19 pandemic from March 2020 constituted the largest unplanned remote work experiment in history, forcing an estimated 30-40% of the global knowledge workforce to work from home virtually overnight. Organisations that had resisted remote work for cultural reasons discovered that productivity, measured by software output metrics, customer satisfaction scores, and financial results, was maintained or in many cases improved. The Collaboration Platform market exploded: Zoom's revenue grew 326% in fiscal 2021; Microsoft Teams grew from 32 million to 270 million daily active users between 2019 and 2023.
-
-  - Remote work's significance extends beyond convenience to structural labour market effects. Geographic talent pools expanded dramatically: companies could hire from anywhere, depressing salaries in high-cost cities while raising them in secondary markets. Commercial real estate in major CBDs faced sustained vacancy increases. The "Great Resignation" of 2021-22, in which millions of workers voluntarily left jobs, was partly driven by employer return-to-office mandates conflicting with worker preferences for remote flexibility. Remote-first companies like GitLab and Basecamp produced detailed playbooks for asynchronous-first operations, documenting practices around written communication, documentation culture, and results-based management.
-
-  - By 2024-2025 the pendulum has partially reversed, with major employers including Amazon, Goldman Sachs, and JPMorgan Chase mandating five-day in-office attendance, citing collaboration quality, mentorship, and culture preservation. The dominant equilibrium is hybrid work (typically 2-3 office days per week), validated by Microsoft's Work Trend Index showing hybrid workers report higher productivity than either fully remote or fully in-office counterparts. AI tools are becoming central to remote work infrastructure, with transcription, meeting summarisation, and ambient AI assistants partially offsetting the serendipitous information sharing that physical co-location facilitates.
+- ### Provenance
+  - sources:: Nicholas Bloom remote work research series (Stanford); GitLab Remote Playbook (handbook.gitlab.com); Microsoft Work Trend Index; NIST SP 800-46 Rev 2; HSE Homeworking Guidance (UK); SHRM Remote Work Policy frameworks
+  - updated:: 2026-06-13

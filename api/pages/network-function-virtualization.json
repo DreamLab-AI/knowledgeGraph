@@ -4,40 +4,145 @@
   "slug": "network-function-virtualization",
   "public": true,
   "classIri": "urn:ngm:class:network-function-virtualization",
-  "domain": "spatial-computing",
-  "definition": "A network architecture approach that decouples network functions from proprietary hardware by deploying them as virtual machines or containers on commercial off-the-shelf servers, enabling flexible, scalable network services without vendor lock-in.",
+  "domain": "infrastructure",
+  "definition": "Network Function Virtualization (NFV) is an architectural paradigm that decouples network functions \u2014 such as firewalls, load balancers, intrusion detection systems, and routers \u2014 from dedicated proprietary hardware appliances and implements them as software running on commercial off-the-shelf (COTS) servers, switches, and storage. Standardised by ETSI's NFV Industry Specification Group, NFV introduces a three-layer model comprising the NFV Infrastructure (NFVI), Virtual Network Functions (VNFs), and the NFV Management and Orchestration (MANO) framework. By enabling elastic provisioning, rapid deployment, and lifecycle automation of network services, NFV reduces capital and operational expenditure while providing the flexibility required for 5G, edge computing, and cloud-native telecom architectures. It is closely related to and operationally complementary with Software-Defined Networking (SDN), which separates the network control plane from the data plane.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:sc-platform-and-environment",
-      "label": "Platform and Environment"
+      "id": "urn:ngm:class:network-architecture",
+      "label": "Network Architecture"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.74,
+  "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:virtual-network-function",
+        "label": "Virtual Network Function"
+      },
+      {
+        "id": "urn:ngm:class:nfv-infrastructure",
+        "label": "NFV Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:nfv-mano",
+        "label": "NFV Management and Orchestration"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:hypervisor",
+        "label": "Hypervisor"
+      },
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:virtualisation",
+        "label": "Virtualisation"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:network-scalability",
         "label": "Network Scalability"
+      },
+      {
+        "id": "urn:ngm:class:network-slicing",
+        "label": "Network Slicing"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:service-function-chaining",
+        "label": "Service Function Chaining"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:software-defined-networking",
+        "label": "Software-Defined Networking"
+      },
+      {
+        "id": "urn:ngm:class:commercial-off-the-shelf-hardware",
+        "label": "Commercial Off-the-Shelf Hardware"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:etsi-nfv-standard",
+        "label": "ETSI NFV Standard"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:network-appliance",
+        "label": "Network Appliance"
+      },
+      {
+        "id": "urn:ngm:class:proprietary-hardware",
+        "label": "Proprietary Hardware"
+      }
+    ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:network-architecture",
-        "label": "Network Architecture"
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "id": "urn:ngm:class:edge-ai",
+        "label": "Edge AI"
       }
     ],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:container-orchestration",
+        "label": "Container Orchestration"
+      },
+      {
+        "id": "urn:ngm:class:microservices-architecture",
+        "label": "Microservices Architecture"
+      },
+      {
+        "id": "urn:ngm:class:open-stack",
+        "label": "OpenStack"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:5g-networks",
+        "label": "5G Networks"
+      },
+      {
+        "id": "urn:ngm:class:telecom-cloud",
+        "label": "Telecom Cloud"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:etsi",
+        "label": "ETSI"
+      },
+      {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:software-defined-networking",
+        "label": "Software-Defined Networking"
+      },
+      {
+        "id": "urn:ngm:class:cloud-native-network-function",
+        "label": "Cloud-Native Network Function"
+      }
+    ]
   },
   "wikilinks": [
     {

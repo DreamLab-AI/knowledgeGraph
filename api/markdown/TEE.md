@@ -47,7 +47,7 @@ public:: true
   "@type": "Class",
   "label": "TEE",
   "definition": "A trusted execution environment, a secure area of a processor that isolates code and data so that they are protected from the rest of the system, including a compromised operating system. It provides confidentiality and integrity for sensitive computation.",
-  "domain": "information-security",
+  "domain": "security",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

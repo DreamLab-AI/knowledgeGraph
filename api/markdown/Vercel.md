@@ -47,7 +47,7 @@ public:: true
   "@type": "Class",
   "label": "Vercel",
   "definition": "Vercel is a company that provides a cloud platform for deploying and hosting web applications, with an emphasis on frontend frameworks.",
-  "domain": "general",
+  "domain": "infrastructure",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

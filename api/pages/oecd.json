@@ -4,8 +4,8 @@
   "slug": "oecd",
   "public": true,
   "classIri": "urn:ngm:class:oecd",
-  "domain": "oecd",
-  "definition": "The OECD (Organisation for Economic Co-operation and Development) is an intergovernmental organisation founded in 1961 and headquartered in Paris, comprising mostly high-income member countries committed to market economies and democratic governance. It produces economic analysis, statistics and policy recommendations, and develops international standards on taxation, trade, education and digital policy. In the technology and finance domains it has led work on the taxation of digital assets through its Crypto-Asset Reporting Framework and on principles for trustworthy artificial intelligence. Its outputs are influential in shaping national and international policy.",
+  "domain": "governance",
+  "definition": "The OECD (Organisation for Economic Co-operation and Development) is an intergovernmental organisation founded in 1961, headquartered in Paris, comprising 38 member states committed to market economies and democratic governance. It produces comparative economic analysis, harmonised statistics, and binding and non-binding policy instruments spanning taxation, trade, education, digital policy, and emerging technology governance. Its AI Principles (2019) were the first intergovernmental standard for trustworthy artificial intelligence, and its Crypto-Asset Reporting Framework (CARF) extends automatic exchange of financial information to digital assets. OECD outputs exert normative influence through peer review, mutual recognition agreements, and adoption by broader multilateral bodies including the G20.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:governance-domain",
@@ -13,21 +13,144 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
-  "maturity": "established",
+  "qualityScore": 0.74,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:ai-principles",
+        "label": "AI Principles"
+      },
+      {
+        "id": "urn:ngm:class:crypto-asset-reporting-framework",
+        "label": "Crypto-Asset Reporting Framework"
+      },
+      {
+        "id": "urn:ngm:class:base-erosion-and-profit-shifting",
+        "label": "Base Erosion and Profit Shifting"
+      },
+      {
+        "id": "urn:ngm:class:programme-for-international-student-assessment",
+        "label": "Programme for International Student Assessment"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:multilateral-cooperation",
+        "label": "Multilateral Cooperation"
+      },
+      {
+        "id": "urn:ngm:class:data-sharing",
+        "label": "Data Sharing"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:automatic-exchange-of-information",
+        "label": "Automatic Exchange of Information"
+      },
+      {
+        "id": "urn:ngm:class:international-tax-compliance",
+        "label": "International Tax Compliance"
+      },
+      {
+        "id": "urn:ngm:class:policy-harmonisation",
+        "label": "Policy Harmonisation"
+      },
+      {
+        "id": "urn:ngm:class:trustworthy-ai",
+        "label": "Trustworthy AI"
+      }
+    ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "implements": [
+      {
+        "id": "urn:ngm:class:common-reporting-standard",
+        "label": "Common Reporting Standard"
+      },
+      {
+        "id": "urn:ngm:class:global-minimum-tax",
+        "label": "Global Minimum Tax"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:world-trade-organization",
+        "label": "World Trade Organization"
+      },
+      {
+        "id": "urn:ngm:class:international-monetary-fund",
+        "label": "International Monetary Fund"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-regulation",
+        "label": "Blockchain Regulation"
+      },
+      {
+        "id": "urn:ngm:class:mi-ca",
+        "label": "MiCA"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:peer-review",
+        "label": "Peer Review"
+      },
+      {
+        "id": "urn:ngm:class:comparative-statistics",
+        "label": "Comparative Statistics"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:regulatory-domain",
+        "label": "Regulatory Domain"
+      },
+      {
+        "id": "urn:ngm:class:open-government",
+        "label": "Open Government"
+      },
+      {
+        "id": "urn:ngm:class:digital-economy",
+        "label": "Digital Economy"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:oecd-council",
+        "label": "OECD Council"
+      },
+      {
+        "id": "urn:ngm:class:g20",
+        "label": "G20"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:international-governance-institutions",
+        "label": "International Governance Institutions"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:fatf",
+        "label": "FATF"
+      },
+      {
+        "id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      },
+      {
+        "id": "urn:ngm:class:financial-stability-board",
+        "label": "Financial Stability Board"
+      }
+    ]
   },
   "wikilinks": [
     {

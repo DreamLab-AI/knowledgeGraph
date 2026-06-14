@@ -4,7 +4,7 @@
   "slug": "corporate-governance-domain",
   "public": true,
   "classIri": "urn:ngm:class:corporate-governance-domain",
-  "domain": "corporate-governance",
+  "domain": "governance",
   "definition": "The Corporate Governance Domain covers the structures and processes by which organisations are directed, controlled and held accountable. Its scope includes board oversight, internal control, shareholder rights and disclosure. It is a top-level subject classification concerned with organisational accountability. The boundary excludes external regulatory rule-making, which belongs to the Regulation Domain.",
   "subClassOf": [
     {

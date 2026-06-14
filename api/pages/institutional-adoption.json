@@ -5,15 +5,15 @@
   "public": true,
   "classIri": "urn:ngm:class:institutional-adoption",
   "domain": "finance",
-  "definition": "Institutional adoption is the process by which large organisations such as banks, asset managers, and corporations begin to use a technology or asset class at scale.",
+  "definition": "Institutional adoption is the process by which regulated, large-scale organisations \u2014 including banks, asset managers, pension funds, sovereign wealth funds, and corporations \u2014 integrate a novel technology, protocol, or asset class into their core operations, risk frameworks, and balance sheets. It is characterised by formal governance procedures, compliance with applicable regulatory regimes, and deployment of significant capital under fiduciary obligations. Unlike retail or speculative uptake, institutional adoption requires custodial infrastructure, legal certainty, and integration with existing settlement, reporting, and audit systems. It typically follows a maturation arc: proof-of-concept pilots by innovation teams, limited production deployment, and finally full strategic integration with dedicated product lines.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:owl-thing",
-      "label": "owl:Thing"
+      "id": "urn:ngm:class:technology-adoption",
+      "label": "Technology Adoption"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.74,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
@@ -21,18 +21,117 @@
       {
         "id": "urn:ngm:class:financial-regulation",
         "label": "Financial Regulation"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset-custody",
+        "label": "Digital Asset Custody"
+      },
+      {
+        "id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      },
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
       }
     ],
-    "enables": [],
-    "dependsOn": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:asset-tokenisation",
+        "label": "Asset Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:market-liquidity",
+        "label": "Market Liquidity"
+      },
+      {
+        "id": "urn:ngm:class:price-discovery",
+        "label": "Price Discovery"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:regulatory-clarity",
+        "label": "Regulatory Clarity"
+      },
+      {
+        "id": "urn:ngm:class:settlement-infrastructure",
+        "label": "Settlement Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:know-your-customer",
+        "label": "Know Your Customer"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:retail-adoption",
+        "label": "Retail Adoption"
+      },
+      {
+        "id": "urn:ngm:class:speculative-investment",
+        "label": "Speculative Investment"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:enterprise-ai",
+        "label": "Enterprise AI"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "id": "urn:ngm:class:exchange-traded-fund",
+        "label": "Exchange-Traded Fund"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:traditional-finance",
+        "label": "Traditional Finance"
+      },
+      {
+        "id": "urn:ngm:class:capital-markets",
+        "label": "Capital Markets"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:tokenised-securities",
+        "label": "Tokenised Securities"
+      },
+      {
+        "id": "urn:ngm:class:defi-protocol",
+        "label": "DeFi Protocol"
+      },
+      {
+        "id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      },
+      {
+        "id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      }
+    ]
   },
   "wikilinks": [
     {

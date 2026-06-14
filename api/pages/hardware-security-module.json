@@ -4,48 +4,58 @@
   "slug": "hardware-security-module",
   "public": true,
   "classIri": "urn:ngm:class:hardware-security-module",
-  "domain": "infrastructure",
-  "definition": "A Hardware Security Module (HSM) is a dedicated, tamper-evident and tamper-resistant hardware appliance that generates, stores, and manages cryptographic keys in a physically protected environment and performs sensitive cryptographic operations\u2014such as signing, encryption, and key derivation\u2014entirely within that secure boundary, so that plaintext key material is never exposed to the host system. HSMs are validated against formal security standards such as FIPS 140-2/140-3 (at levels 2 and 3) and Common Criteria, and are mandated by financial payment schemes (PCI-DSS), certificate authorities, and government PKI infrastructures.",
+  "domain": "security",
+  "definition": "A Hardware Security Module (HSM) is a dedicated, tamper-evident and tamper-resistant hardware appliance that generates, stores, and manages cryptographic keys in a physically protected environment, performing sensitive cryptographic operations\u2014such as digital signing, bulk encryption, key derivation, and random-number generation\u2014entirely within its secure boundary so that plaintext key material is never exposed to the host system. HSMs are validated against formal security standards including FIPS 140-2/140-3 (Levels 1\u20134) and Common Criteria EAL4+, and are mandated by payment card schemes (PCI-DSS, PCI-P2PE), certificate authority trust frameworks, and government PKI and national-security infrastructures. They are available as PCIe cards, rack-mounted network appliances, USB tokens, and cloud-hosted dedicated services, all exposing a standardised PKCS#11 (Cryptoki) API. Unlike software keystores or Trusted Execution Environments, HSMs respond to physical tamper events by irreversibly zeroing all stored key material, making them the highest-assurance key-custody mechanism in mainstream deployment.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:infra-security-and-identity",
-      "label": "Infra Security and Identity"
+      "id": "urn:ngm:class:cryptographic-hardware",
+      "label": "Cryptographic Hardware"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.76,
+  "maturity": "mature",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:tamper-resistance",
+        "label": "Tamper Resistance"
+      },
+      {
+        "id": "urn:ngm:class:hardware-root-of-trust",
+        "label": "Hardware Root of Trust"
+      }
+    ],
     "enables": [
       {
-        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
+        "id": "urn:ngm:class:public-key-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
         "id": "urn:ngm:class:key-management",
         "label": "Key Management"
+      },
+      {
+        "id": "urn:ngm:class:code-signing",
+        "label": "Code Signing"
+      },
+      {
+        "id": "urn:ngm:class:certificate-authority",
+        "label": "Certificate Authority"
+      },
+      {
+        "id": "urn:ngm:class:payment-security",
+        "label": "Payment Security"
+      },
+      {
+        "id": "urn:ngm:class:secure-boot",
+        "label": "Secure Boot"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [
-      {
-        "id": "urn:ngm:class:cryptographic-key-management",
-        "label": "Cryptographic Key Management"
-      },
-      {
-        "id": "urn:ngm:class:encryption",
-        "label": "Encryption"
-      }
-    ],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
+    "contrastsWith": [
       {
         "id": "urn:ngm:class:trusted-execution-environment",
         "label": "Trusted Execution Environment"
@@ -55,8 +65,86 @@
         "label": "Secure Enclave"
       },
       {
+        "id": "urn:ngm:class:software-keystore",
+        "label": "Software Keystore"
+      },
+      {
+        "id": "urn:ngm:class:trusted-platform-module",
+        "label": "Trusted Platform Module"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain-key-custody",
+        "label": "Blockchain Key Custody"
+      },
+      {
+        "id": "urn:ngm:class:confidential-computing",
+        "label": "Confidential Computing"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cryptographic-key-management",
+        "label": "Cryptographic Key Management"
+      },
+      {
+        "id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      },
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:random-number-generation",
+        "label": "Random Number Generation"
+      },
+      {
+        "id": "urn:ngm:class:pkcs11",
+        "label": "PKCS#11"
+      },
+      {
+        "id": "urn:ngm:class:symmetric-key-cryptography",
+        "label": "Symmetric Key Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:asymmetric-key-cryptography",
+        "label": "Asymmetric Key Cryptography"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:fips-140",
+        "label": "FIPS 140"
+      },
+      {
+        "id": "urn:ngm:class:common-criteria",
+        "label": "Common Criteria"
+      },
+      {
+        "id": "urn:ngm:class:pci-dss",
+        "label": "PCI-DSS"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
         "id": "urn:ngm:class:cryptography",
         "label": "Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      },
+      {
+        "id": "urn:ngm:class:secure-element",
+        "label": "Secure Element"
+      },
+      {
+        "id": "urn:ngm:class:cloud-key-management-service",
+        "label": "Cloud Key Management Service"
       }
     ]
   },

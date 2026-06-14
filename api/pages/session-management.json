@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:session-management",
   "domain": "infrastructure",
-  "definition": "The infrastructure mechanisms for creating, maintaining, and terminating authenticated user sessions within a networked application or virtual environment. Session management encompasses token issuance, state synchronisation, session timeout and recovery, and revocation, forming a critical layer between user authentication and persistent application state.",
+  "definition": "Session management is the set of mechanisms by which a networked system creates, maintains, secures, and terminates bounded interaction contexts \u2014 called sessions \u2014 between a client and a server or distributed service. It encompasses token issuance and validation, state serialisation and synchronisation, session expiry and renewal, concurrent-session policy, and secure revocation. Session management bridges authentication (establishing identity) and authorisation (enforcing capability) by preserving verified context across otherwise stateless request\u2013response cycles. It is a foundational layer for any multi-user application, from web platforms and APIs to real-time collaborative environments and spatial computing runtimes.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-security-and-identity",
@@ -14,7 +14,7 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "emerging",
+  "maturity": "mature",
   "relationships": {
     "hasPart": [],
     "requires": [
@@ -25,32 +25,96 @@
       {
         "id": "urn:ngm:class:identity-management",
         "label": "Identity Management"
+      },
+      {
+        "id": "urn:ngm:class:secure-token",
+        "label": "Secure Token"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:persistent-state",
         "label": "Persistent State"
+      },
+      {
+        "id": "urn:ngm:class:stateful-api",
+        "label": "Stateful API"
+      },
+      {
+        "id": "urn:ngm:class:multi-user-collaboration",
+        "label": "Multi-User Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:single-sign-on",
+        "label": "Single Sign-On"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:transport-layer-security",
+        "label": "Transport Layer Security"
+      },
+      {
+        "id": "urn:ngm:class:key-management",
+        "label": "Key Management"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:stateless-architecture",
+        "label": "Stateless Architecture"
+      },
+      {
+        "id": "urn:ngm:class:anonymous-access",
+        "label": "Anonymous Access"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:encryption",
         "label": "Encryption"
+      },
+      {
+        "id": "urn:ngm:class:json-web-token",
+        "label": "JSON Web Token"
+      },
+      {
+        "id": "urn:ngm:class:cookie",
+        "label": "Cookie"
+      },
+      {
+        "id": "urn:ngm:class:cache",
+        "label": "Cache"
       }
     ],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
+    "supports": [
       {
         "id": "urn:ngm:class:access-control",
         "label": "Access Control"
       },
+      {
+        "id": "urn:ngm:class:audit-logging",
+        "label": "Audit Logging"
+      },
+      {
+        "id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
       {
         "id": "urn:ngm:class:cybersecurity",
         "label": "Cybersecurity"
@@ -58,6 +122,14 @@
       {
         "id": "urn:ngm:class:cloud-infrastructure",
         "label": "Cloud Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "id": "urn:ngm:class:oauth2",
+        "label": "OAuth2"
       }
     ]
   },

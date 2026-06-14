@@ -4,8 +4,8 @@
   "slug": "mu-sig-2",
   "public": true,
   "classIri": "urn:ngm:class:mu-sig-2",
-  "domain": "cryptographic",
-  "definition": "A two-round multi-signature scheme based on Schnorr signatures that lets several signers produce a single aggregate signature verifiable as one key.",
+  "domain": "security",
+  "definition": "MuSig2 is a two-round multi-signature protocol for the Schnorr signature scheme, enabling a group of signers to collaboratively produce a single aggregate signature and a single aggregate public key that are indistinguishable on-chain from a standard single-signer Schnorr signature. It improves upon the original MuSig (three-round) by eliminating one communication round without sacrificing security, using a technique of committing to multiple nonces per signer and computing a linear combination of those nonces after seeing all co-signers' commitments. The scheme is proven secure in the random oracle model under the discrete logarithm assumption and is resistant to the rogue-key and Wagner attacks that affect naive key-aggregation approaches.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:multisignature",
@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.75,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
@@ -21,23 +21,134 @@
       {
         "id": "urn:ngm:class:schnorr-signatures",
         "label": "Schnorr Signatures"
+      },
+      {
+        "id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:key-aggregation",
+        "label": "Key Aggregation"
+      },
+      {
+        "id": "urn:ngm:class:nonce-commitment",
+        "label": "Nonce Commitment"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:taproot",
         "label": "Taproot"
+      },
+      {
+        "id": "urn:ngm:class:threshold-signatures",
+        "label": "Threshold Signatures"
+      },
+      {
+        "id": "urn:ngm:class:privacy-preserving-transactions",
+        "label": "Privacy-Preserving Transactions"
+      },
+      {
+        "id": "urn:ngm:class:collaborative-custody",
+        "label": "Collaborative Custody"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:bip-327",
+        "label": "BIP-327"
+      },
+      {
+        "id": "urn:ngm:class:key-aggregation-protocol",
+        "label": "Key Aggregation Protocol"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:musig",
+        "label": "MuSig"
+      },
+      {
+        "id": "urn:ngm:class:frost",
+        "label": "FROST"
+      },
+      {
+        "id": "urn:ngm:class:ecdsa-multisig",
+        "label": "ECDSA Multisig"
+      },
+      {
+        "id": "urn:ngm:class:shamir-secret-sharing",
+        "label": "Shamir Secret Sharing"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "id": "urn:ngm:class:secure-multi-party-computation",
+        "label": "Secure Multi-Party Computation"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:secp256k1",
+        "label": "secp256k1"
+      },
+      {
+        "id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:random-oracle-model",
+        "label": "Random Oracle Model"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      },
+      {
+        "id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      },
+      {
+        "id": "urn:ngm:class:hardware-wallet",
+        "label": "Hardware Wallet"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:bitcoin-improvement-proposal",
+        "label": "Bitcoin Improvement Proposal"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-work",
+        "label": "Proof of Work"
+      },
+      {
+        "id": "urn:ngm:class:script-less-contracts",
+        "label": "Script-less Contracts"
+      },
+      {
+        "id": "urn:ngm:class:adaptor-signatures",
+        "label": "Adaptor Signatures"
+      },
+      {
+        "id": "urn:ngm:class:discrete-logarithm",
+        "label": "Discrete Logarithm"
+      }
+    ]
   },
   "wikilinks": [
     {

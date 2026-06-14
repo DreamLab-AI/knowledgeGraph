@@ -67,7 +67,7 @@ public:: true
   "@type": "Class",
   "label": "OWL 2 Web Ontology Language",
   "definition": "A World Wide Web Consortium standard for representing ontologies on the web, providing formal semantics based on description logic for classes, properties and individuals. It extends earlier web ontology work with richer modelling features and defined reasoning profiles.",
-  "domain": "general",
+  "domain": "standards",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

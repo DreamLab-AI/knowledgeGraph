@@ -4,7 +4,7 @@
   "slug": "vector-store",
   "public": true,
   "classIri": "urn:ngm:class:vector-store",
-  "domain": "data-management",
+  "domain": "data",
   "definition": "A storage system optimised for holding high-dimensional vector embeddings and retrieving them by similarity. It supports nearest-neighbour search used in semantic retrieval and machine learning applications.",
   "subClassOf": [
     {

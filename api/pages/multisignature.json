@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:multisignature",
   "domain": "blockchain",
-  "definition": "Multisignature (multisig) is a cryptographic access control scheme in which a transaction or operation requires a quorum of independent signatures \u2014 expressed as an M-of-N threshold \u2014 before it can be authorised and executed. Applied to cryptocurrency wallets and smart contracts, multisignature eliminates single points of failure in key custody by distributing signing authority across multiple keyholders, devices, or organisations.",
+  "definition": "Multisignature (multisig) is a cryptographic access-control scheme in which a transaction or operation requires a quorum of M independent signatures drawn from a declared set of N authorised keyholders before it can be validated and executed. Applied to cryptocurrency wallets, smart contracts, and DAO treasuries, the M-of-N threshold eliminates single points of failure in key custody by distributing signing authority across multiple parties, devices, or organisations. More advanced variants \u2014 threshold signature schemes (TSS) and multi-party computation (MPC) \u2014 achieve the same security guarantee without assembling the full key set on-chain, reducing transaction cost and improving privacy.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:cryptographic-signature",
@@ -13,11 +13,24 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.74,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:private-key",
+        "label": "Private Key"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:quorum-threshold",
+        "label": "Quorum Threshold"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:multi-signature-wallet",
@@ -26,12 +39,56 @@
       {
         "id": "urn:ngm:class:self-custody",
         "label": "Self-Custody"
+      },
+      {
+        "id": "urn:ngm:class:dao-treasury-management",
+        "label": "DAO Treasury Management"
+      },
+      {
+        "id": "urn:ngm:class:institutional-custody",
+        "label": "Institutional Custody"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:bitcoin-script",
+        "label": "Bitcoin Script"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "id": "urn:ngm:class:distributed-trust",
+        "label": "Distributed Trust"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:single-key-wallet",
+        "label": "Single-Key Wallet"
+      },
+      {
+        "id": "urn:ngm:class:custodial-wallet",
+        "label": "Custodial Wallet"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:decentralised-governance",
+        "label": "Decentralised Governance"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:digital-signatures",
@@ -44,6 +101,18 @@
       {
         "id": "urn:ngm:class:key-management",
         "label": "Key Management"
+      },
+      {
+        "id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:schnorr-signature",
+        "label": "Schnorr Signature"
+      },
+      {
+        "id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
       }
     ],
     "supports": [],
@@ -55,12 +124,20 @@
         "label": "Multi Sig Governance"
       },
       {
-        "id": "urn:ngm:class:quorum-threshold",
-        "label": "Quorum Threshold"
+        "id": "urn:ngm:class:multi-party-computation",
+        "label": "Multi-Party Computation"
       },
       {
-        "id": "urn:ngm:class:schnorr-signature",
-        "label": "Schnorr Signature"
+        "id": "urn:ngm:class:account-abstraction",
+        "label": "Account Abstraction"
+      },
+      {
+        "id": "urn:ngm:class:hardware-security-module",
+        "label": "Hardware Security Module"
+      },
+      {
+        "id": "urn:ngm:class:secret-sharing",
+        "label": "Secret Sharing"
       }
     ]
   },

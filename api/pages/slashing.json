@@ -5,43 +5,124 @@
   "public": true,
   "classIri": "urn:ngm:class:slashing",
   "domain": "blockchain",
-  "definition": "A penalty mechanism in proof-of-stake blockchains that confiscates part or all of a validator's staked funds when it behaves improperly, such as by double-signing or being persistently unavailable. It deters misbehaviour.",
+  "definition": "Slashing is an automated penalty mechanism in proof-of-stake and delegated proof-of-stake blockchain networks that permanently destroys or confiscates a portion of a validator's bonded stake when that validator commits a provably attributable protocol violation, such as double-signing conflicting blocks or surround voting. The mechanism converts the cost of Byzantine behaviour into a concrete financial loss, aligning validator incentives with honest participation and securing the network's economic finality. Slashing conditions and penalty magnitudes are encoded in the consensus rules of each network and are adjudicated deterministically by all full nodes.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:proof-of-stake",
-      "label": "Proof of Stake"
+      "id": "urn:ngm:class:consensus-mechanism",
+      "label": "Consensus Mechanism"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.75,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:proof-of-stake",
-        "label": "Proof of Stake"
-      },
-      {
         "id": "urn:ngm:class:validator",
         "label": "Validator"
+      },
+      {
+        "id": "urn:ngm:class:staking",
+        "label": "Staking"
+      },
+      {
+        "id": "urn:ngm:class:bonded-stake",
+        "label": "Bonded Stake"
+      },
+      {
+        "id": "urn:ngm:class:equivocation-detection",
+        "label": "Equivocation Detection"
       }
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:consensus-mechanism",
-        "label": "Consensus Mechanism"
+        "id": "urn:ngm:class:economic-finality",
+        "label": "Economic Finality"
+      },
+      {
+        "id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:validator-accountability",
+        "label": "Validator Accountability"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-proof",
+        "label": "Cryptographic Proof"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:proof-of-work",
+        "label": "Proof of Work"
+      },
+      {
+        "id": "urn:ngm:class:inactivity-leak",
+        "label": "Inactivity Leak"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:mechanism-design",
+        "label": "Mechanism Design"
+      },
+      {
+        "id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      },
+      {
+        "id": "urn:ngm:class:incentive-alignment",
+        "label": "Incentive Alignment"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-security",
+        "label": "Blockchain Security"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:delegated-proof-of-stake",
+        "label": "Delegated Proof of Stake"
+      },
+      {
+        "id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      },
+      {
+        "id": "urn:ngm:class:attestation",
+        "label": "Attestation"
+      },
+      {
+        "id": "urn:ngm:class:block-production",
+        "label": "Block Production"
+      },
+      {
+        "id": "urn:ngm:class:unbonding-period",
+        "label": "Unbonding Period"
+      }
+    ]
   },
   "wikilinks": [
     {

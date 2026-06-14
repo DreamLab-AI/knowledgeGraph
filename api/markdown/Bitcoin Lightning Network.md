@@ -71,7 +71,7 @@ public:: true
   "@type": "Class",
   "label": "Bitcoin Lightning Network",
   "definition": "The Bitcoin Lightning Network is a layer-two payment protocol built on top of Bitcoin that enables fast, low-cost transactions through bidirectional payment channels. Two parties lock funds in a multisignature channel and exchange signed balance updates off-chain, settling the final state on the Bitcoin blockchain only when the channel closes. Payments can be routed across a network of connected channels, allowing transfers between parties that do not share a direct channel.",
-  "domain": "bitcoin-lightning-network",
+  "domain": "blockchain",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:ai-safety-research",
   "domain": "artificial-intelligence",
-  "definition": "AI Safety Research is an interdisciplinary field that develops theoretical frameworks, empirical methods, and engineering techniques to ensure advanced AI systems behave in ways that are safe, reliable, and aligned with human values across a range of capability levels. The field spans near-term concerns \u2014 such as robustness, fairness, and adversarial resistance \u2014 and longer-term challenges including scalable oversight, corrigibility, and the avoidance of catastrophic risks from highly capable systems. It draws on machine learning, decision theory, formal verification, and cognitive science.",
+  "definition": "AI Safety Research is an interdisciplinary field that develops theoretical frameworks, empirical methods, and engineering techniques to ensure advanced AI systems behave in ways that are safe, reliable, and aligned with human values across a range of capability levels. The field spans near-term concerns \u2014 such as robustness, fairness, and adversarial resistance \u2014 and longer-term challenges including scalable oversight, corrigibility, and the avoidance of catastrophic risks from highly capable systems. It draws on machine learning, decision theory, formal verification, and cognitive science to produce both immediately deployable safety interventions and foundational understanding of how intelligent systems can be made reliably beneficial.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-governance-and-ethics",
@@ -13,11 +13,24 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
+  "qualityScore": 0.74,
   "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:decision-theory",
+        "label": "Decision Theory"
+      },
+      {
+        "id": "urn:ngm:class:robustness",
+        "label": "Robustness"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:responsible-ai",
@@ -26,12 +39,34 @@
       {
         "id": "urn:ngm:class:ai-alignment",
         "label": "AI Alignment"
+      },
+      {
+        "id": "urn:ngm:class:trustworthy-ai",
+        "label": "Trustworthy AI"
+      },
+      {
+        "id": "urn:ngm:class:corrigibility",
+        "label": "Corrigibility"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:ai-capabilities-research",
+        "label": "AI Capabilities Research"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-governance-and-ethics",
+        "label": "AI Governance and Ethics"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-science",
+        "label": "Cognitive Science"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:interpretability",
@@ -40,15 +75,56 @@
       {
         "id": "urn:ngm:class:red-teaming",
         "label": "Red Teaming"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
+      },
+      {
+        "id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      },
+      {
+        "id": "urn:ngm:class:uncertainty-quantification",
+        "label": "Uncertainty Quantification"
       }
     ],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-policy",
+        "label": "AI Policy"
+      },
+      {
+        "id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      },
+      {
+        "id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
       {
         "id": "urn:ngm:class:ai-risk",
         "label": "AI Risk"
+      },
+      {
+        "id": "urn:ngm:class:existential-risk",
+        "label": "Existential Risk"
+      },
+      {
+        "id": "urn:ngm:class:fairness-in-machine-learning",
+        "label": "Fairness in Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:scalable-oversight",
+        "label": "Scalable Oversight"
+      },
+      {
+        "id": "urn:ngm:class:mechanistic-interpretability",
+        "label": "Mechanistic Interpretability"
       }
     ]
   },

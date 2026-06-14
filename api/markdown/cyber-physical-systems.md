@@ -1,11 +1,110 @@
-## Cyber Physical Systems
+- ### Definition
+  - Cyber Physical Systems (CPS) are engineered systems in which [[Embedded Systems]] and physical processes are tightly coupled through continuous feedback loops driven by [[Sensor Network|sensor networks]], [[Actuator|actuators]], and networked computation. They extend classical [[Control Systems]] by introducing adaptive autonomy, distributed intelligence, and large-scale coordination across heterogeneous components — enabling systems like [[Autonomous Vehicle|autonomous vehicles]], [[Smart Grid|smart grids]], and [[Industrial Automation|industrial automation]] to respond to physical reality in real time. CPS sit at the convergence of [[Computing]], [[Communication]], and control, demanding co-design across hardware, software, and physical plant to meet safety and timing constraints that purely digital systems never face.
 
-Cyber Physical Systems (CPS) are engineered systems that tightly integrate computational processes with physical dynamics through networked sensing, actuation, and control. CPS span autonomous vehicles, industrial automation, smart infrastructure, and medical devices, requiring real-time feedback loops, embedded computing, and communication across heterogeneous networks while meeting safety-critical timing and reliability constraints.
+- ### Overview
+  - CPS emerged as a research agenda formalised by Helen Gill at the US National Science Foundation around 2006, building on decades of prior work in [[Embedded Systems]], [[Control Theory]], and [[Real-Time Computing]].
+  - The core idea is that computation and physical dynamics are inseparable: the software cannot be reasoned about without the physics, and the physics cannot be engineered without the software.
+  - Unlike traditional IT systems, CPS failures can directly harm people, infrastructure, or the environment — making correctness, timing guarantees, and safety certification non-negotiable.
+  - Scale ranges from a single microcontroller regulating a pacemaker to continent-spanning power grid management systems coordinating millions of nodes.
+  - The [[Internet of Things]] (IoT) is a related paradigm emphasising connectivity; CPS emphasises the tighter integration of control loops and physical dynamics, often with higher assurance requirements.
+  - Modern CPS increasingly incorporate [[Machine Learning]] for perception and adaptive control, creating new verification challenges since learned models lack formal guarantees.
 
-### Relationships
-- requires [[Embedded Systems]]
-- requires [[Internet of Things]]
-- enables [[Autonomous Vehicle]]
-- enables [[IndustrialAutomation]]
-- relatedTo [[Digital Twin]]
-- relatedTo [[Edge Computing]]
+- ### Key Components
+  - #### Sensing Layer
+    - [[Sensor Network|Sensor networks]] transduce physical quantities (temperature, position, velocity, pressure, current) into digital signals.
+    - MEMS sensors, LiDAR, cameras, accelerometers, and encoders are common CPS transducers.
+    - Sensor fusion — combining multiple sensor modalities via [[Kalman Filter]] or deep networks — improves state estimation robustness.
+  - #### Computation Layer
+    - [[Real-Time Operating System|Real-Time Operating Systems]] (RTOS) such as FreeRTOS, QNX, and VxWorks provide deterministic scheduling guarantees.
+    - [[Embedded Systems]] run on microcontrollers (ARM Cortex-M, RISC-V) through to multi-core SoCs and GPUs for perception tasks.
+    - [[Edge Computing]] pushes computation closer to the physical process, reducing latency and dependence on cloud connectivity.
+  - #### Communication Layer
+    - Fieldbuses (CAN, EtherCAT, Profibus), wireless protocols (5G, WirelessHART, TSN), and [[Network Protocols]] interconnect CPS nodes.
+    - [[Time-Sensitive Networking]] (TSN) IEEE 802.1 standards provide deterministic Ethernet for industrial CPS.
+    - End-to-end latency budgets are partitioned across sensing, computation, and actuation to meet hard real-time deadlines.
+  - #### Control and Actuation Layer
+    - [[Feedback Control]] — particularly [[PID Controller|PID controllers]] and [[Model Predictive Control]] — closes the loop between perceived state and actuator commands.
+    - [[Actuator|Actuators]] include electric motors, hydraulics, pneumatics, and micro-electromechanical (MEMS) devices.
+    - Hierarchical control architectures decompose high-level objectives (path planning) into low-level servo loops.
+  - #### Safety and Verification
+    - [[Functional Safety]] standards (IEC 61508, ISO 26262) define systematic processes for achieving required Safety Integrity Levels.
+    - [[Formal Verification]] tools (model checkers, theorem provers) are used to guarantee temporal logic properties of control software.
+    - Redundancy, fail-safe states, and watchdog timers are standard reliability mechanisms.
+
+- ### Applications and Use Cases
+  - #### Autonomous Vehicles
+    - Self-driving cars and trucks integrate perception (camera, LiDAR, radar), planning, and drive-by-wire actuation in a tight CPS loop.
+    - Functional safety certification follows ISO 26262 (road vehicles) and, for higher automation, ISO/PAS 21448 (SOTIF).
+  - #### Industrial Automation and Industry 4.0
+    - CPS form the backbone of [[Industry 4.0]], enabling flexible manufacturing, collaborative robotics (cobots), and predictive maintenance.
+    - [[Industrial Internet of Things]] (IIoT) connects CPS nodes to enterprise data platforms, supporting digital manufacturing.
+    - [[SCADA]] and [[Distributed Control Systems]] (DCS) are legacy antecedents; modern CPS replaces them with IP-based, cloud-connected architectures.
+  - #### Smart Grid and Energy Infrastructure
+    - [[Smart Grid]] systems monitor and control electricity generation, transmission, and distribution in real time.
+    - Phasor measurement units (PMUs) sample grid state at 30–120 Hz, feeding wide-area monitoring and automatic protective relaying.
+    - Vehicle-to-grid (V2G) integration treats EV batteries as distributed CPS actuators for load balancing.
+  - #### Medical Devices and Healthcare
+    - Implantable cardiac defibrillators, infusion pumps, and closed-loop artificial pancreas systems are safety-critical CPS.
+    - The FDA's Total Product Lifecycle (TPLC) framework addresses software as a medical device (SaMD) within CPS.
+    - Networked medical devices introduce [[Cyber Security]] attack surfaces that must be managed alongside patient safety.
+  - #### Aerospace and Defence
+    - Fly-by-wire aircraft, UAV swarms, and satellite attitude control systems are mature CPS domains.
+    - DO-178C governs airborne software; DO-254 covers hardware; together they address the CPS stack.
+  - #### Smart Cities and Built Environment
+    - [[Smart City]] deployments integrate building management, traffic control, water treatment, and public safety into coordinated CPS.
+    - Digital twins of city infrastructure (using [[Digital Twin]] technology) enable simulation-driven operational planning.
+
+- ### Relationships
+  - hasPart:: [[Embedded Systems]]
+  - hasPart:: [[Sensor Network]]
+  - hasPart:: [[Actuator]]
+  - hasPart:: [[Real-Time Operating System]]
+  - hasPart:: [[Control Loop]]
+  - requires:: [[Real-Time Computing]]
+  - requires:: [[Wireless Communication]]
+  - requires:: [[Formal Verification]]
+  - requires:: [[Functional Safety]]
+  - enables:: [[Autonomous Vehicle]]
+  - enables:: [[Industrial Automation]]
+  - enables:: [[Smart Grid]]
+  - enables:: [[Smart City]]
+  - dependsOn:: [[Internet of Things]]
+  - dependsOn:: [[Edge Computing]]
+  - dependsOn:: [[Network Protocols]]
+  - implements:: [[Feedback Control]]
+  - uses:: [[Digital Twin]]
+  - uses:: [[Machine Learning]]
+  - uses:: [[Model Predictive Control]]
+  - supports:: [[Industrial Internet of Things]]
+  - supports:: [[Robotics]]
+  - contrastsWith:: [[Information Technology]]
+  - contrastsWith:: [[Operational Technology]]
+  - bridges-to:: [[Artificial Intelligence]]
+  - bridges-to:: [[Blockchain]]
+  - bridges-to:: [[Spatial Computing]]
+  - relatedTo:: [[SCADA]]
+  - relatedTo:: [[Cyber Security]]
+
+- ### Standards and Context
+  - **IEC 61508** — Functional safety of electrical/electronic/programmable electronic safety-related systems; the root standard for CPS safety assurance.
+  - **ISO 26262** — Functional safety for road vehicles; defines Automotive Safety Integrity Levels (ASIL A–D).
+  - **ISO/PAS 21448 (SOTIF)** — Safety of the Intended Functionality; addresses ML-induced hazards in autonomous CPS.
+  - **NIST CPS Framework** (NIST SP 1500-201) — Provides a conceptual model and vocabulary for CPS design and interoperability.
+  - **IEEE 802.1 TSN** — Time-Sensitive Networking suite providing deterministic Ethernet for industrial CPS.
+  - **IEC 62443** — Industrial communication networks and IT security; addresses CPS cybersecurity for industrial automation.
+  - **DO-178C / DO-254** — Avionics software and hardware standards for safety-critical airborne CPS.
+  - Key research communities: ACM/IEEE ICCPS (International Conference on Cyber-Physical Systems), IEEE Transactions on Industrial Informatics, NSF CPS programme.
+  - Regulatory bodies include the FDA (medical CPS), FAA (avionics), NHTSA (automotive), NERC CIP (energy grid CPS).
+
+- ### Design Challenges
+  - **Heterogeneity** — CPS compose components built with different models of computation (dataflow, state machines, continuous differential equations) that must interoperate.
+  - **Timing guarantees** — End-to-end latency and jitter constraints must be met across hardware, OS, network, and application layers simultaneously.
+  - **Scalability** — Coordinating thousands to millions of nodes (e.g. smart grid) requires hierarchical and distributed control architectures.
+  - **Security-safety tension** — Adding cybersecurity controls (encryption, authentication) introduces latency and complexity that can conflict with real-time safety requirements.
+  - **Verification of learned components** — [[Machine Learning]] components (neural networks for perception) lack formal guarantees; runtime monitoring and conformal prediction are active research areas.
+  - **Model-based co-design** — Tools such as Ptolemy II, Modelica, MATLAB/Simulink, and SCADE support multi-formalism co-simulation but integration remains labour-intensive.
+  - **Legacy interoperability** — Industrial CPS must coexist with decades-old [[Operational Technology]] using proprietary protocols (Modbus, DNP3, OPC-UA).
+
+- ### Provenance
+  - sources:: NIST SP 1500-201 CPS Framework; Lee & Seshia "Introduction to Embedded Systems: A Cyber-Physical Systems Approach"; IEEE Transactions on Industrial Informatics; NSF CPS programme documentation
+  - updated:: 2026-06-13

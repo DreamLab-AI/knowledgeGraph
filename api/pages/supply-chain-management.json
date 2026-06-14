@@ -4,38 +4,94 @@
   "slug": "supply-chain-management",
   "public": true,
   "classIri": "urn:ngm:class:supply-chain-management",
-  "domain": "blockchain",
-  "definition": "Supply Chain Management in blockchain contexts refers to the application of distributed ledger technology for tracking, verifying, and managing the flow of goods, services, and information across supply networks.",
+  "domain": "supply-chain",
+  "definition": "Supply Chain Management (SCM) is the end-to-end coordination of the flow of goods, services, information, and finances from raw-material suppliers through manufacturers, distributors, and retailers to end consumers, with the goal of maximising value and minimising waste. It encompasses strategic planning, demand forecasting, procurement, inventory control, logistics, and supplier relationship management as an integrated discipline. Modern SCM increasingly employs digital technologies \u2014 including IoT sensors, AI-driven demand planning, blockchain-based provenance tracking, and digital twins \u2014 to achieve visibility, resilience, and sustainability across multi-tier networks. The field draws on operations research, systems theory, and data science to optimise trade-offs between cost, service levels, lead times, and risk.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:bc-network-component",
-      "label": "Network Component"
-    },
-    {
-      "id": "urn:ngm:class:blockchain-entity",
-      "label": "Blockchain Entity"
+      "id": "urn:ngm:class:operations-management",
+      "label": "Operations Management"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "emerging",
+  "qualityScore": 0.72,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:demand-forecasting",
+        "label": "Demand Forecasting"
+      },
+      {
+        "id": "urn:ngm:class:inventory-management",
+        "label": "Inventory Management"
+      },
+      {
+        "id": "urn:ngm:class:procurement",
+        "label": "Procurement"
+      },
+      {
+        "id": "urn:ngm:class:logistics-optimization",
+        "label": "Logistics Optimization"
+      },
+      {
+        "id": "urn:ngm:class:supplier-relationship-management",
+        "label": "Supplier Relationship Management"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-integration",
+        "label": "Data Integration"
+      },
+      {
+        "id": "urn:ngm:class:enterprise-resource-planning",
+        "label": "Enterprise Resource Planning"
+      },
+      {
+        "id": "urn:ngm:class:iot-sensor",
+        "label": "IoT Sensor"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:provenance-tracking",
         "label": "Provenance Tracking"
       },
       {
-        "id": "urn:ngm:class:provenance-verification",
-        "label": "Provenance Verification"
+        "id": "urn:ngm:class:trade-finance",
+        "label": "Trade Finance"
+      },
+      {
+        "id": "urn:ngm:class:sustainability-reporting",
+        "label": "Sustainability Reporting"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:value-chain-management",
+        "label": "Value Chain Management"
+      },
+      {
+        "id": "urn:ngm:class:just-in-time-manufacturing",
+        "label": "Just-In-Time Manufacturing"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:ai-agent",
+        "label": "AI Agent"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:blockchain",
@@ -44,19 +100,44 @@
       {
         "id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
-      }
-    ],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
-      {
-        "id": "urn:ngm:class:logistics-optimization",
-        "label": "Logistics Optimization"
       },
       {
         "id": "urn:ngm:class:digital-twin",
         "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:rfid",
+        "label": "RFID"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:gs1-standards",
+        "label": "GS1 Standards"
+      },
+      {
+        "id": "urn:ngm:class:iso-28000",
+        "label": "ISO 28000"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:resilience-engineering",
+        "label": "Resilience Engineering"
+      },
+      {
+        "id": "urn:ngm:class:circular-economy",
+        "label": "Circular Economy"
+      },
+      {
+        "id": "urn:ngm:class:trade-compliance",
+        "label": "Trade Compliance"
       }
     ]
   },

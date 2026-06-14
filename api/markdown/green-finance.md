@@ -1,27 +1,99 @@
 - ### Definition
-  - Green finance is the set of financial instruments, investment strategies, market mechanisms, and regulatory frameworks that channel capital towards environmentally sustainable projects and activities, with the explicit goal of mitigating climate change, protecting biodiversity, and supporting the transition to a low-carbon economy. It encompasses green bonds, sustainability-linked loans, green funds, carbon markets, and blended finance structures, underpinned by taxonomies such as the EU Taxonomy for Sustainable Activities that define what qualifies as environmentally sustainable. Blockchain technology is being applied in green finance to provide transparent, immutable registries for carbon credits and ESG data, reducing double-counting and greenwashing risks.
+  - Green finance is the domain of financial instruments, investment strategies, market mechanisms, and regulatory frameworks that direct capital towards environmentally sustainable economic activities, encompassing [[Green Bonds]], [[Sustainability-Linked Loans]], [[Carbon Markets]], [[Impact Investing]], and [[Blended Finance]] structures. It operates within [[Sustainable Finance]] as a whole and is closely related to [[ESG Investing]], requiring [[ESG Reporting]], robust [[Green Taxonomy]] classification, and [[Life Cycle Assessment]] methodologies to verify environmental claims and prevent [[Greenwashing]].
 
-- ### Semantic Classification
-  - owl-class:: green-finance:Green Finance
-  - owl-role:: Concept
+- ### Overview
+  - Green finance mobilises private and public capital to fund the transition to a low-carbon, resource-efficient economy aligned with global targets such as the Paris Agreement and the [[Sustainable Development Goals]]. It addresses the systemic market failure whereby environmental costs (carbon emissions, biodiversity loss, pollution) are not priced into conventional financial decisions, causing chronic underinvestment in sustainable infrastructure and clean technology.
+  - The field has expanded significantly since the first labelled green bond was issued by the European Investment Bank in 2007. Today it encompasses a diverse asset class landscape—from sovereign green bonds to green securitisations, from voluntary [[Carbon Credits]] to regulated emissions trading systems—supported by an evolving international standards architecture.
+  - Governments and central banks increasingly treat green finance not merely as a niche market segment but as a systemic financial stability issue, given that [[Climate Risk]] (physical and transition risk) poses material threats to asset valuations and financial system resilience.
+
+- ### Key Components
+  - #### Green Bonds
+    - Debt instruments whose proceeds are ring-fenced for projects with documented environmental benefits, primarily in renewable energy, energy efficiency, sustainable transport, and water management.
+    - Governed by the [[ICMA Green Bond Principles]] (GBP), which establish four core components: use of proceeds, project evaluation and selection, management of proceeds, and reporting.
+    - The [[EU Green Bond Standard]] (EU GBS) adds a requirement that proceeds align with the [[EU Taxonomy]] for Sustainable Activities, making it the most stringent labelling framework globally.
+    - Sovereign green bonds—issued by national governments—have become a major segment, providing benchmark instruments and signalling policy credibility.
+  - #### Sustainability-Linked Bonds and Loans
+    - Unlike use-of-proceeds instruments, sustainability-linked bonds (SLBs) and [[Sustainability-Linked Loans]] tie financial terms (coupon step-ups, margin adjustments) to the issuer achieving pre-defined Sustainability Performance Targets (SPTs), such as reducing greenhouse gas intensity by a specified percentage.
+    - Governed by ICMA Sustainability-Linked Bond Principles and the LMA/APLMA/LSTA Sustainability-Linked Loan Principles.
+    - Criticised for weak target ambition and insufficient external verification; regulators are tightening disclosure requirements.
+  - #### Carbon Markets
+    - [[Carbon Markets]] are central to green finance, creating a price signal for carbon emissions.
+    - Compliance markets (e.g., the EU Emissions Trading System, California Cap-and-Trade) operate under mandatory regulatory caps, where covered entities must surrender allowances matching their emissions.
+    - [[Voluntary Carbon Markets]] (VCMs) allow organisations to purchase carbon credits outside mandatory frameworks, certified by standards such as Verra VCS, Gold Standard, and the American Carbon Registry.
+    - The Integrity Council for the Voluntary Carbon Market (ICVCM) developed the Core Carbon Principles (CCPs) to address quality concerns around additionality, permanence, and double-counting in VCMs.
+  - #### ESG Reporting and Disclosure
+    - [[ESG Reporting]] is foundational to green finance, enabling investors to assess environmental, social, and governance risks and opportunities.
+    - Key frameworks include TCFD (climate-related financial disclosures), GRI (Global Reporting Initiative), SASB (Sustainability Accounting Standards Board), and ISSB (International Sustainability Standards Board), which published IFRS S1 and S2 in 2023.
+    - The EU Corporate Sustainability Reporting Directive ([[CSRD]]) mandates detailed sustainability reporting for large companies, backed by European Sustainability Reporting Standards (ESRS).
+  - #### Taxonomies and Classification Systems
+    - [[Green Taxonomy]] systems define which economic activities qualify as environmentally sustainable, providing the definitional backbone for product labelling and regulatory compliance.
+    - The [[EU Taxonomy]] is the most developed, covering six environmental objectives: climate change mitigation, climate change adaptation, water and marine resources, circular economy, pollution prevention, and biodiversity.
+    - Other jurisdictions (UK, China, Singapore, Canada) are developing national taxonomies, with interoperability a key challenge.
+  - #### Impact Investing and Blended Finance
+    - [[Impact Investing]] seeks measurable positive environmental or social outcomes alongside financial returns, spanning private equity, private debt, and infrastructure.
+    - [[Blended Finance]] uses concessional public or philanthropic capital to de-risk investments and crowd in private capital for projects that would otherwise be uncommercial, commonly used in emerging markets for adaptation and nature finance.
+
+- ### Applications and Use Cases
+  - **Renewable Energy Infrastructure**: Green bonds and project finance structures fund solar, wind, and hydropower projects; green finance de-risks long-duration infrastructure through credit enhancements and public guarantees.
+  - **Energy Efficiency**: Green mortgages and building retrofit programmes channel capital into improving the energy performance of buildings, a major source of emissions in developed economies.
+  - **Sustainable Transport**: Sovereign and corporate green bonds finance electric vehicle charging infrastructure, rail electrification, and urban mass transit systems.
+  - **Nature-Based Solutions**: Blue bonds fund ocean conservation; debt-for-nature swaps restructure sovereign debt in exchange for conservation commitments; biodiversity credits are an emerging asset class mirroring carbon markets.
+  - **Emerging Market Adaptation Finance**: Blended finance vehicles and concessional climate funds (Green Climate Fund, Adaptation Fund) direct capital to developing nations disproportionately affected by physical climate risk.
+  - **Tokenised Carbon Credits**: [[Blockchain Tokenisation]] platforms (e.g., Toucan Protocol, Moss.Earth) convert certified carbon credits into on-chain tokens, enabling DeFi integration and increasing liquidity whilst raising concerns about credit quality and double-counting.
+  - **Regenerative Finance (ReFi)**: [[Regenerative Finance]] is an emerging movement applying [[Decentralised Finance]] primitives to automate impact verification, reward ecological restoration, and align financial incentives with planetary boundaries.
 
 - ### Relationships
-  - uses [[Carbon Credits]]
-  - uses [[ESG Reporting]]
-  - enables [[Carbon Credit Tracking]]
-  - enables [[Environmental Sustainability]]
-  - relatedTo [[ESG Investing]]
-  - relatedTo [[Financial Instruments]]
+  - hasPart:: [[Green Bonds]]
+  - hasPart:: [[Sustainability-Linked Loans]]
+  - hasPart:: [[Carbon Markets]]
+  - hasPart:: [[Impact Investing]]
+  - hasPart:: [[Blended Finance]]
+  - partOf:: [[Sustainable Finance]]
+  - partOf:: [[Capital Markets]]
+  - requires:: [[ESG Reporting]]
+  - requires:: [[Green Taxonomy]]
+  - requires:: [[Life Cycle Assessment]]
+  - enables:: [[Environmental Sustainability]]
+  - enables:: [[Carbon Credit Tracking]]
+  - enables:: [[Net Zero Transition]]
+  - enables:: [[Renewable Energy Investment]]
+  - uses:: [[Carbon Credits]]
+  - uses:: [[ESG Investing]]
+  - uses:: [[Financial Instruments]]
+  - uses:: [[Risk Assessment]]
+  - standardizedBy:: [[ICMA Green Bond Principles]]
+  - standardizedBy:: [[EU Taxonomy]]
+  - standardizedBy:: [[TCFD]]
+  - contrastsWith:: [[Conventional Finance]]
+  - contrastsWith:: [[Greenwashing]]
+  - bridges-to:: [[Decentralised Finance]]
+  - bridges-to:: [[Blockchain Tokenisation]]
+  - bridges-to:: [[Regenerative Finance]]
+  - relatedTo:: [[Corporate Social Responsibility]]
+  - relatedTo:: [[Climate Risk]]
+  - relatedTo:: [[Sustainable Development Goals]]
 
-- ### Content
-  - Green finance encompasses a spectrum of instruments at different risk and return profiles. Green bonds—the largest asset class—finance projects with documented environmental benefits (renewable energy, energy efficiency, sustainable transport) and are governed by the ICMA Green Bond Principles, which require use-of-proceeds transparency, project evaluation processes, and post-issuance reporting. Sustainability-linked bonds and loans differ in that the financial terms (coupon, margin) are tied to the issuer achieving pre-defined sustainability performance targets (SPTs) such as carbon intensity reductions.
-  - Carbon markets—both compliance (ETS, such as the EU Emissions Trading System) and voluntary—are a central mechanism of green finance. Voluntary Carbon Markets (VCMs) allow organisations to offset residual emissions by purchasing carbon credits representing verified emission reductions or removals. Standards such as Verra VCS and Gold Standard certify project methodologies; blockchain platforms are emerging as a means to tokenise these credits (as carbon credit tokens), providing an auditable chain of custody and preventing double-issuance across registries.
-  - ESG Reporting obligations—mandated by frameworks such as TCFD, GRI, SASB, and the EU Corporate Sustainability Reporting Directive (CSRD)—require companies to disclose climate-related risks, governance structures, and environmental impact metrics. Green finance decision-making increasingly relies on Life Cycle Assessment data to evaluate the full environmental footprint of financed assets across their operational lifetimes. Decentralised Finance (DeFi) protocols are experimenting with on-chain carbon credit markets and regenerative finance (ReFi) mechanisms that automate impact verification and reward distribution.
+- ### Standards and Regulatory Context
+  - **ICMA Green Bond Principles (GBP)**: Voluntary process guidelines for issuers, the de facto market standard since 2014; updated regularly to address social and sustainability dimensions.
+  - **ICMA Sustainability-Linked Bond Principles (SLBP)**: Governs KPI selection and SPT ambition for SLBs, with growing regulatory scrutiny over target quality.
+  - **EU Taxonomy Regulation**: Legally binding classification system for the EU, establishing Technical Screening Criteria (TSC) and Do No Significant Harm (DNSH) requirements across six environmental objectives.
+  - **EU Green Bond Standard (EU GBS)**: Voluntary standard (with mandatory disclosure requirements) requiring full alignment with the EU Taxonomy; enforced by the European Securities and Markets Authority (ESMA).
+  - **CSRD / ESRS**: EU Corporate Sustainability Reporting Directive mandates double materiality reporting; the ESRS provide sector-specific and cross-cutting standards including climate, biodiversity, and water.
+  - **TCFD**: Task Force on Climate-related Financial Disclosures recommendations, widely adopted and now incorporated into regulatory frameworks in the UK, EU, and other jurisdictions.
+  - **ISSB (IFRS S1 / IFRS S2)**: The International Sustainability Standards Board's standards unify sustainability and climate disclosure for capital markets; IFRS S2 is substantially aligned with TCFD.
+  - **IOSCO Principles**: The International Organisation of Securities Commissions has published guidance on sustainability-related issuer disclosures and the integrity of voluntary carbon markets.
+  - **Science-Based Targets initiative (SBTi)**: Independent body that validates corporate net-zero and emissions reduction targets against climate science; critical for credibility of sustainability-linked finance instruments.
+  - **Integrity Council for the Voluntary Carbon Market (ICVCM)**: Established Core Carbon Principles (CCPs) and an Assessment Framework to define high-quality carbon credits eligible for the CCP label.
+
+- ### Challenges and Critiques
+  - **Greenwashing**: The core integrity risk of green finance; issuers and products may claim environmental credentials without robust underlying impact, driving regulatory intervention and investor scepticism.
+  - **Additionality**: A persistent challenge in carbon markets—whether a financed activity delivers emissions reductions beyond what would have occurred anyway.
+  - **Data Quality and Standardisation**: ESG data from corporate disclosures is inconsistent, incomparable, and often unaudited; taxonomic fragmentation across jurisdictions creates compliance complexity.
+  - **Transition Finance Gap**: Debate over whether green finance frameworks should accommodate high-emitting sectors undergoing credible decarbonisation pathways (transition finance), or whether strict green-only definitions leave carbon-intensive industries without a financing pathway.
+  - **Nature and Biodiversity**: Carbon-centric frameworks inadequately address biodiversity, land use, and ecosystem services; biodiversity credit markets are nascent and methodologically immature.
+  - **Emerging Market Access**: Most green capital is directed to developed economies; the structural financing gap for adaptation in low-income countries remains unmet.
 
 - ### Provenance
-  - sources::
-  - migration-date:: 2026-05-19T00:00:00Z
-
-- ### Provenance
-  - sources::
+  - sources:: ICMA Green Bond Principles; EU Taxonomy Regulation (EU) 2020/852; TCFD Recommendations; ISSB IFRS S1/S2; ICVCM Core Carbon Principles; IOSCO Voluntary Carbon Markets Guidance
+  - updated:: 2026-06-13
   - migration-date:: 2026-05-19T00:00:00Z

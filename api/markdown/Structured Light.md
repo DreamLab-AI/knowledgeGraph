@@ -21,7 +21,7 @@ public:: true
   "@type": "Class",
   "label": "Structured Light",
   "definition": "Structured light is a 3D surface measurement technique that projects one or more known patterns — typically binary stripe sequences, sinusoidal fringes, or dot grids — onto a scene using a projector or laser, then captures the deformed pattern with one or more calibrated cameras. Because the geometry of the projection and capture system is precisely known, the per-pixel deformation of the projected pattern encodes depth, allowing a complete 3D point cloud or depth map of the object surface to be recovered through triangulation. Structured light systems achieve sub-millimetre to micrometre-scale depth accuracy and are widely deployed in industrial metrology, 3D scanning, face recognition, robotic guidance, and augmented reality depth sensing.",
-  "domain": "hardware",
+  "domain": "infrastructure",
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:depth-sensing", "label": "Depth Sensing"}],
   "relations": {

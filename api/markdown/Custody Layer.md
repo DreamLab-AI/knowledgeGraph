@@ -63,7 +63,7 @@ public:: true
   "@type": "Class",
   "label": "Custody Layer",
   "definition": "The Custody Layer is the stratum that governs the safekeeping and authorised control of assets and the keys that command them. It sits above the Cryptographic and Identity strata it depends on and below the settlement and application activity that moves assets. It contains key storage, signing policies, and the authorisation rules for asset control.",
-  "domain": "custody",
+  "domain": "blockchain",
   "maturity": "emerging",
   "qualityScore": 0.7,
   "subClassOf": [

@@ -1,14 +1,107 @@
 - ### Definition
-  - [[Probability Theory]] is the mathematical framework for reasoning about uncertainty, formalising the study of random variables, distributions, and stochastic processes over [[Measure Theory|measure-theoretic]] foundations.
+  - [[Probability Theory]] is the mathematical framework for rigorously quantifying and reasoning about uncertainty and random phenomena. Grounded in [[Measure Theory]] via Kolmogorov's 1933 axiomatisation, it treats probability as a normalised measure on a [[Sigma-Algebra]] of events, yielding a unified language for [[Random Variable|random variables]], [[Probability Distribution|probability distributions]], [[Stochastic Process|stochastic processes]], and expectation operators. Both the frequentist interpretation (probability as limiting relative frequency) and the Bayesian interpretation (probability as degree of belief) are accommodated within this single formal structure, making it the indispensable foundation for [[Statistical Inference]], [[Machine Learning]], and [[Information Theory]].
+
+- ### Overview
+  - Probability theory emerged from early work on games of chance by Pascal and Fermat in the seventeenth century, passed through Laplace's classical treatment, and was placed on a fully rigorous footing by Andrei Kolmogorov's *Grundbegriffe der Wahrscheinlichkeitsrechnung* (1933).
+  - Kolmogorov's axioms — non-negativity, normalisation, and countable additivity — define a probability measure P on a measurable space, turning the informal notion of "chance" into a precise mathematical object.
+  - The framework unifies previously divergent interpretations (classical, frequentist, logical, subjective) by treating each as a distinct method of assigning values to the measure P rather than as competing definitions of probability itself.
+  - Why it matters:
+    - It is the shared language of [[Statistics]], [[Machine Learning]], [[Actuarial Science]], [[Quantum Mechanics]], [[Financial Mathematics]], and [[Information Theory]].
+    - Modern AI depends on it directly: training objectives are probabilistic loss functions, generative models are learned distributions, and [[Uncertainty Quantification]] in safety-critical systems rests on probabilistic calibration.
+    - Theoretical guarantees in learning theory (PAC learning, VC dimension bounds) are probabilistic statements.
+
+- ### Key Components
+  - #### Probability Space
+    - A triple (Ω, F, P) where Ω is the sample space of all possible outcomes, F is a [[Sigma-Algebra]] of measurable subsets (events), and P: F → [0,1] is a countably additive probability measure with P(Ω) = 1.
+    - The sigma-algebra encodes which subsets of outcomes can be assigned probabilities and is closed under complements and countable unions.
+  - #### Random Variables
+    - A [[Random Variable]] is a measurable function X: Ω → ℝ (or more generally into a measurable space), mapping outcomes to numerical values.
+    - The distribution of X is the pushforward measure P∘X⁻¹, characterised by its cumulative distribution function, probability density (if it exists), or probability mass function for discrete variables.
+    - Key summary statistics: expectation E[X] = ∫ X dP (Lebesgue integral), variance Var(X) = E[(X−E[X])²], and moments of all orders.
+  - #### Probability Distributions
+    - [[Probability Distribution|Probability distributions]] specify how probability is spread across outcome spaces.
+    - Key families: Bernoulli and Binomial (discrete, two outcomes); Poisson (rare events); Gaussian / Normal (continuous, central to the [[Central Limit Theorem]]); Exponential and Gamma (waiting times); Dirichlet (over simplices, widely used in [[Bayesian Inference]]).
+    - Characteristic functions (Fourier transforms of distributions) and moment-generating functions provide powerful tools for proving limit theorems and computing convolutions.
+  - #### Conditional Probability and Independence
+    - Conditional probability P(A|B) = P(A∩B)/P(B) (for P(B) > 0) formalises the idea of updating probability given partial information.
+    - [[Bayes' Theorem]]: P(A|B) = P(B|A)·P(A)/P(B) — the cornerstone of [[Bayesian Inference]] and [[Bayesian Decision Theory]].
+    - Independence: events A, B are independent iff P(A∩B) = P(A)·P(B); random variables X, Y are independent iff their joint distribution factorises as the product of marginals.
+  - #### Limit Theorems
+    - Law of Large Numbers (weak and strong): the sample mean of i.i.d. random variables converges (in probability / almost surely) to the population mean as n→∞.
+    - [[Central Limit Theorem]]: suitably normalised sums of i.i.d. finite-variance random variables converge in distribution to the standard normal, explaining the ubiquity of Gaussian distributions.
+    - Large deviations theory characterises the exponential decay of probabilities of rare events, relevant to [[Statistical Inference]] and [[Information Theory]].
+  - #### Stochastic Processes
+    - A [[Stochastic Process]] is a collection of random variables indexed by time or space, e.g. Brownian motion (Wiener process), [[Markov Chain|Markov chains]], Poisson processes.
+    - Filtrations (increasing families of sigma-algebras) formalise the accumulation of information over time and underpin the theory of martingales and [[Stochastic Differential Equation|stochastic differential equations]].
+    - Itô calculus extends ordinary calculus to stochastic integrals, enabling [[Stochastic Differential Equation|SDEs]] that model systems driven by noise.
+  - #### Entropy and Information
+    - Shannon entropy H(X) = −∑ p(x) log p(x) quantifies the uncertainty in a [[Random Variable]], bridging probability theory and [[Information Theory]].
+    - KL divergence D_KL(P‖Q) measures the difference between distributions; it appears in maximum likelihood estimation, variational inference, and as a component of the ELBO in [[Variational Autoencoders]].
+
+- ### Applications
+  - #### Machine Learning and AI
+    - [[Probabilistic Graphical Models]] (Bayesian networks, Markov random fields) represent joint distributions over many variables compactly, enabling efficient inference and learning.
+    - [[Diffusion Models]] for image, video, and audio generation are built on forward-and-reverse [[Stochastic Differential Equation|SDEs]], with learned score functions reversing a noise-injection process — a direct application of Itô calculus and probability theory.
+    - [[Reinforcement Learning]] uses Markov decision processes (extensions of [[Markov Chain|Markov chains]]) and value-function estimation grounded in expectation operators.
+    - [[Conformal Prediction]] provides distribution-free probabilistic coverage guarantees for machine learning model outputs.
+    - Variational inference approximates intractable posteriors using optimisation over parametric distribution families, minimising KL divergence.
+  - #### [[Statistical Inference]]
+    - Hypothesis testing (Neyman-Pearson framework) and confidence intervals translate probability theory directly into scientific methodology.
+    - Bayesian posterior computation — via [[Monte Carlo Methods]] such as MCMC — applies probability theory to update models from data.
+    - Maximum likelihood estimation is grounded in the log-probability of observed data under a parametric family.
+  - #### Finance and Actuarial Science
+    - [[Financial Mathematics]] uses risk-neutral probability measures and the Girsanov theorem (change of measure) to price derivatives.
+    - The Black-Scholes model is derived from an SDE for stock prices; the martingale approach to arbitrage-free pricing is a direct application of probability theory.
+    - Actuarial ruin theory and life-table models are built on probability distributions over claims and lifetimes.
+  - #### Physics and Engineering
+    - Statistical mechanics derives thermodynamic laws from probability distributions over microstates.
+    - Quantum mechanics is inherently probabilistic: the Born rule assigns probabilities to measurement outcomes from wave-function amplitudes.
+    - Signal processing, communications (channel capacity, error-correcting codes), and control theory (Kalman filtering) all rely on probabilistic models.
+  - #### [[Causal Inference]]
+    - Pearl's do-calculus and structural causal models extend probability theory with interventional and counterfactual distributions, enabling causal reasoning from observational data.
+    - Potential outcomes frameworks (Rubin causal model) use probability to define treatment effects.
 
 - ### Relationships
-  - Probability theory underpins [[Bayesian Inference]] and [[Bayesian Decision Theory]], providing the axiomatic basis for updating beliefs given evidence. It enables the rigorous formulation of [[Stochastic Differential Equation|stochastic differential equations]] and [[Monte Carlo Methods]], and supplies the structural backbone for [[Markov Chain]] analysis and [[Stochastic Process]] modelling.
+  - partOf:: [[Measure Theory]]
+  - hasPart:: [[Bayesian Inference]]
+  - hasPart:: [[Markov Chain]]
+  - hasPart:: [[Random Variable]]
+  - hasPart:: [[Probability Distribution]]
+  - hasPart:: [[Stochastic Process]]
+  - hasPart:: [[Central Limit Theorem]]
+  - enables:: [[Stochastic Differential Equation]]
+  - enables:: [[Monte Carlo Methods]]
+  - enables:: [[Statistical Inference]]
+  - enables:: [[Uncertainty Quantification]]
+  - enables:: [[Reinforcement Learning]]
+  - enables:: [[Information Theory]]
+  - requires:: [[Measure Theory]]
+  - requires:: [[Set Theory]]
+  - requires:: [[Real Analysis]]
+  - dependsOn:: [[Sigma-Algebra]]
+  - dependsOn:: [[Lebesgue Integration]]
+  - supports:: [[Machine Learning]]
+  - supports:: [[Bayesian Networks]]
+  - supports:: [[Probabilistic Graphical Models]]
+  - relatedTo:: [[Bayesian Decision Theory]]
+  - relatedTo:: [[Statistics]]
+  - relatedTo:: [[Causal Inference]]
+  - relatedTo:: [[Information Geometry]]
+  - relatedTo:: [[Optimal Transport]]
+  - bridges-to:: [[Diffusion Models]]
+  - bridges-to:: [[Conformal Prediction]]
+  - bridges-to:: [[Financial Mathematics]]
+  - contrastsWith:: [[Fuzzy Logic]]
+  - contrastsWith:: [[Deterministic Computation]]
 
-- ### Content
-  - The modern axiomatic treatment of probability was established by Andrei Kolmogorov in his 1933 monograph *Grundbegriffe der Wahrscheinlichkeitsrechnung*, which unified the field under measure theory. Prior traditions — frequentist, classical, and logical — were reconciled within a single framework that defines probability as a normalised measure on a sigma-algebra of events. The central limit theorem and the law of large numbers, proved rigorously in this framework, became foundational results connecting probability to statistics.
+- ### Standards & Context
+  - The Kolmogorov axioms (1933) are the universally accepted standard foundation; no competing axiom system has displaced them in mainstream mathematics or applications.
+  - [[Bayesian Inference]] and frequentist inference differ not in the axioms but in the interpretation of probability and the procedures used (prior elicitation vs. repeated-sampling guarantees).
+  - ISO/IEC standards in software reliability and safety (e.g. IEC 61508 for functional safety) mandate probabilistic risk assessments derived from this framework.
+  - The IEEE Signal Processing Society and ACM SIGKDD community journals routinely publish advances that rest on probability-theoretic foundations.
+  - PAC (Probably Approximately Correct) learning theory, developed by Valiant (1984), translates probability theory into computational learning guarantees and informs modern understanding of [[Machine Learning]] generalisation.
+  - [[Information Theory]] (Shannon 1948) is an immediate application domain that has reciprocally enriched probability theory through concentration inequalities and entropy-based proof techniques.
 
-  - Probability theory operates through the construction of probability spaces (Omega, F, P), where Omega is a sample space, F a sigma-algebra of subsets, and P a countably additive measure satisfying P(Omega)=1. Random variables are measurable functions from Omega to a measurable space; expectation is the Lebesgue integral with respect to P. Conditional probability and independence are defined in terms of this measure, giving rise to the full apparatus of distributions, characteristic functions, and moment-generating functions.
-
-  - The theory's practical applications span virtually every quantitative discipline: statistical mechanics, quantum mechanics, financial mathematics, actuarial science, information theory, and machine learning. In AI specifically, probabilistic graphical models, Bayesian networks, and reinforcement learning algorithms are all grounded in probability theory. The Bayesian paradigm treats probability as a degree of belief, enabling principled uncertainty quantification in complex inference problems.
-
-  - As of 2024-2025, probability theory remains foundational to the leading edge of AI research. Diffusion models for image and video generation exploit stochastic differential equations; large language model training uses probabilistic loss functions; and uncertainty quantification in safety-critical AI systems relies on probabilistic calibration and conformal prediction methods. The field continues to evolve at the interface with information geometry, optimal transport, and causal inference.
+- ### Provenance
+  - sources:: Kolmogorov, A.N. (1933), *Grundbegriffe der Wahrscheinlichkeitsrechnung*; Billingsley, P. (1995), *Probability and Measure* (3rd ed.); Williams, D. (1991), *Probability with Martingales*; Durrett, R. (2019), *Probability: Theory and Examples* (5th ed.); Pearl, J. (2009), *Causality*; Shannon, C.E. (1948), "A Mathematical Theory of Communication"
+  - updated:: 2026-06-13

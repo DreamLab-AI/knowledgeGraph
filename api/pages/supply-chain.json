@@ -5,16 +5,16 @@
   "public": true,
   "classIri": "urn:ngm:class:supply-chain",
   "domain": "infrastructure",
-  "definition": "A supply chain is the end-to-end network of organisations, processes, logistics flows, and information systems involved in producing and delivering a product from raw material sourcing through manufacturing, distribution, and retail to the final consumer. Supply chains are characterised by multi-tier supplier relationships, demand variability, lead-time uncertainty, and growing regulatory requirements around environmental and social provenance. Blockchain-based traceability systems and AI-driven demand-forecasting tools are increasingly applied to improve resilience, transparency, and sustainability reporting across supply chain tiers.",
+  "definition": "A supply chain is the end-to-end network of organisations, people, activities, information flows, and resources involved in transforming raw materials into finished products and delivering them to end consumers. It spans procurement, manufacturing, quality assurance, logistics, customs compliance, and retail fulfilment across multiple tiers of suppliers and distributors. Modern supply chains are subject to geopolitical risk, demand variability, regulatory traceability mandates, and sustainability-reporting requirements under frameworks such as CSRD and the GHG Protocol. Digital technologies including blockchain-based provenance tracking, AI-driven demand forecasting, digital twins, and IoT-enabled visibility platforms are increasingly deployed to improve resilience, transparency, and efficiency.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:infra-data-management",
-      "label": "Data Management"
+      "id": "urn:ngm:class:logistics-optimization",
+      "label": "Logistics Optimization"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.72,
+  "maturity": "mature",
   "relationships": {
     "hasPart": [
       {
@@ -24,10 +24,21 @@
       {
         "id": "urn:ngm:class:supply-chain-traceability",
         "label": "Supply Chain Traceability"
+      },
+      {
+        "id": "urn:ngm:class:procurement",
+        "label": "Procurement"
+      },
+      {
+        "id": "urn:ngm:class:inventory-management",
+        "label": "Inventory Management"
+      },
+      {
+        "id": "urn:ngm:class:demand-forecasting",
+        "label": "Demand Forecasting"
       }
     ],
-    "requires": [],
-    "enables": [
+    "requires": [
       {
         "id": "urn:ngm:class:provenance-tracking",
         "label": "Provenance Tracking"
@@ -35,20 +46,95 @@
       {
         "id": "urn:ngm:class:logistics-optimization",
         "label": "Logistics Optimization"
+      },
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
       }
     ],
-    "dependsOn": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:just-in-time-manufacturing",
+        "label": "Just-in-Time Manufacturing"
+      },
+      {
+        "id": "urn:ngm:class:sustainability-reporting",
+        "label": "Sustainability Reporting"
+      },
+      {
+        "id": "urn:ngm:class:trade-compliance",
+        "label": "Trade Compliance"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:enterprise-resource-planning",
+        "label": "Enterprise Resource Planning"
+      },
+      {
+        "id": "urn:ngm:class:iot",
+        "label": "IoT"
+      },
+      {
+        "id": "urn:ngm:class:data-integration",
+        "label": "Data Integration"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:demand-chain",
+        "label": "Demand Chain"
+      }
+    ],
+    "bridgesTo": [
       {
         "id": "urn:ngm:class:supply-chain-blockchain",
         "label": "Supply Chain Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:gs1-standards",
+        "label": "GS1 Standards"
+      },
+      {
+        "id": "urn:ngm:class:iso-28000",
+        "label": "ISO 28000"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:circular-economy",
+        "label": "Circular Economy"
+      },
+      {
+        "id": "urn:ngm:class:trade-finance",
+        "label": "Trade Finance"
+      },
+      {
+        "id": "urn:ngm:class:scope-3-emissions",
+        "label": "Scope 3 Emissions"
       }
     ]
   },

@@ -1,16 +1,104 @@
-## Extended Reality
+- ### Definition
+  - Extended Reality (XR) is the umbrella term for the full spectrum of immersive and mixed-reality technologies spanning [[Virtual Reality]], [[Augmented Reality]], and [[Mixed Reality]]. First systematised through Milgram and Kishino's Reality-Virtuality Continuum (1994), XR describes any system that digitally augments, replaces, or blends the user's perception of the physical environment. As the experiential layer of [[Spatial Computing]], XR relies on [[Head-Mounted Display]] hardware, [[Spatial Tracking]], and [[Real-Time Rendering]] to produce coherent, interactive three-dimensional environments that respond to user position, gaze, and gesture in real time.
 
-Extended Reality (XR) is the umbrella term for immersive technologies spanning Virtual Reality (VR), Augmented Reality (AR), and Mixed Reality (MR).
+- ### Overview
+  - XR technologies occupy a continuum running from fully synthetic [[Virtual Reality]] environments — in which all sensory input is computer-generated — through [[Augmented Reality]] overlays that annotate the physical world with digital information, to [[Mixed Reality]] that anchors digital objects to physical surfaces with full environmental awareness.
+  - The XR stack operates across three tiers: perception (sensors, [[Spatial Tracking]], [[Eye Tracking]], [[Hand Tracking]]), processing ([[Real-Time Rendering]], scene understanding, AI inference), and presentation (optics, [[Spatial Audio]], [[Haptics]]).
+  - Why it matters: XR collapses spatial distance for [[Remote Collaboration]], enables risk-free rehearsal of dangerous tasks (surgical, industrial, military), and opens new modes of human-computer interaction beyond the [[Two-Dimensional Interface]] paradigm that has dominated computing since the desktop era.
+  - The transition from tethered, high-end headsets to standalone, lightweight devices has significantly lowered the deployment barrier, enabling enterprise adoption at scale.
 
-### Relationships
-- hasPart [[Virtual Reality]]
-- hasPart [[Augmented Reality]]
-- hasPart [[Mixed Reality]]
-- uses [[XR Hardware]]
-- uses [[Haptics]]
-- enables [[Virtual Environment]]
-- enables [[Immersive Experience]]
+- ### Key Components
+  - #### Hardware Platform
+    - [[Head-Mounted Display]] (HMD) — the primary visual output device, ranging from opaque VR enclosures to optical see-through AR waveguides.
+    - [[XR Hardware]] ecosystem: controllers, trackers, depth cameras, and inertial measurement units (IMUs).
+    - [[Haptics]] — tactile feedback gloves, vests, and controllers providing kinaesthetic presence.
+    - [[Hand Tracking]] — markerless optical hand pose estimation replacing physical controllers.
+    - [[Eye Tracking]] — enables foveated rendering (reducing GPU load), social gaze interaction, and attention analytics.
+  - #### Sensing and Localisation
+    - [[Spatial Tracking]] — inside-out tracking uses on-device cameras to estimate 6-DoF headset pose without external infrastructure.
+    - [[Simultaneous Localisation and Mapping]] (SLAM) — builds and updates a map of the environment while tracking device position within it; foundational to [[Augmented Reality]] and [[Mixed Reality]].
+    - Depth sensing (structured light, time-of-flight, stereo) enables mesh reconstruction of physical environments.
+  - #### Rendering and Compute
+    - [[Real-Time Rendering]] at high frame rates (72–120 Hz) is essential to prevent motion sickness (vestibulo-ocular conflict).
+    - Foveated rendering — rendering high resolution only in the gaze direction detected via [[Eye Tracking]] — reduces GPU cost.
+    - [[Edge Computing]] and cloud render-streaming offload heavy compute from constrained headset hardware.
+  - #### Software and Standards
+    - [[OpenXR]] (Khronos Group) — a royalty-free, cross-vendor API enabling a single codebase to run across headsets from multiple manufacturers.
+    - [[WebXR Device API]] (W3C) — exposes XR device capabilities to web browsers, enabling zero-install XR experiences.
+    - Game engines ([[Unity]], [[Unreal Engine]]) serve as primary development environments for XR content.
+  - #### Modality
+    - [[Virtual Reality]] — fully immersive; physical environment replaced entirely.
+    - [[Augmented Reality]] — digital overlays composited on live camera feed or optical see-through view.
+    - [[Mixed Reality]] — digital content spatially anchored to and occluded by real-world geometry.
+    - [[WebXR]] — browser-based XR delivery without native installation.
 
-### Content
+- ### Applications and Use Cases
+  - #### Enterprise and Industrial
+    - Maintenance and repair training: technicians rehearse complex procedures on [[Digital Twin]] representations of equipment, reducing errors and downtime.
+    - Remote expert assistance: field workers stream their field of view to remote specialists who overlay annotations via [[Augmented Reality]].
+    - Architectural and design review: spatial walkthroughs of building information models (BIM) before construction.
+    - Manufacturing assembly guidance: step-by-step AR instructions projected onto physical workpieces.
+  - #### Healthcare
+    - Surgical simulation and planning using patient-specific [[Digital Twin]] anatomy.
+    - Phobia and PTSD treatment through controlled exposure in [[Virtual Reality]].
+    - Pain management — VR distraction therapy during wound care and chemotherapy.
+    - Medical education: anatomy training in immersive 3D rather than cadaveric dissection alone.
+  - #### Education and Training
+    - Vocational training for hazardous environments (mining, aviation, nuclear) without physical risk.
+    - Language immersion through contextual [[Virtual Reality]] environments.
+    - Collaborative virtual classrooms enabling [[Remote Collaboration]] across geographies.
+  - #### Consumer and Entertainment
+    - Immersive gaming and interactive narrative experiences in [[Virtual Reality]].
+    - Live events (concerts, sports) with spatial presence.
+    - Social platforms building towards the [[Metaverse]] vision of persistent, shared XR spaces.
+  - #### Defence and Public Safety
+    - Mission rehearsal and combined-arms simulation.
+    - Situational awareness overlays for first responders via [[Augmented Reality]] headsets.
 
-XR technologies span a continuum from fully immersive VR environments — where all sensory input is computer-generated — to AR overlays that annotate the physical world with digital information. Mixed reality occupies the middle ground, anchoring digital objects to physical surfaces with spatial awareness. The XR hardware ecosystem includes head-mounted displays (HMDs), spatial tracking systems, hand-tracking peripherals, and haptic feedback devices. WebXR provides a browser-based access layer, lowering the deployment barrier for experiential content. Enterprise adoption spans industrial training, remote assistance, surgical simulation, and architectural visualisation. Standards coordination through the Khronos OpenXR specification enables cross-vendor application portability, addressing the fragmentation that historically slowed ecosystem growth.
+- ### Relationships
+  - hasPart:: [[Virtual Reality]]
+  - hasPart:: [[Augmented Reality]]
+  - hasPart:: [[Mixed Reality]]
+  - hasPart:: [[WebXR]]
+  - requires:: [[XR Hardware]]
+  - requires:: [[Spatial Tracking]]
+  - requires:: [[Real-Time Rendering]]
+  - uses:: [[Haptics]]
+  - uses:: [[Hand Tracking]]
+  - uses:: [[Eye Tracking]]
+  - uses:: [[Simultaneous Localisation and Mapping]]
+  - enables:: [[Immersive Experience]]
+  - enables:: [[Digital Twin]]
+  - enables:: [[Remote Collaboration]]
+  - enables:: [[Spatial Audio]]
+  - standardizedBy:: [[OpenXR]]
+  - standardizedBy:: [[WebXR Device API]]
+  - contrastsWith:: [[Two-Dimensional Interface]]
+  - bridgesTo:: [[Metaverse]]
+  - bridgesTo:: [[Computer Vision]]
+  - bridgesTo:: [[Machine Learning]]
+  - relatedTo:: [[Human-Computer Interaction]]
+  - relatedTo:: [[Presence]]
+  - relatedTo:: [[Embodied Cognition]]
+  - relatedTo:: [[Edge Computing]]
+  - relatedTo:: [[Spatial Computing]]
+
+- ### Standards and Governance
+  - **Khronos Group [[OpenXR]]** — the primary cross-vendor API standard. Ratified 2019; adopted by Meta, Microsoft, Valve, Sony, HTC, and others. Separates application code from vendor-specific runtimes, ending the era of per-headset SDK fragmentation.
+  - **W3C [[WebXR Device API]]** — standardises access to XR hardware from web browsers (Chrome, Firefox Reality, Samsung Internet). Covers session lifecycle, reference spaces, input sources, and hit-testing for AR.
+  - **IEEE 2048 (Virtual Reality and Augmented Reality)** — a working group addressing terminology, latency, tracking accuracy, and interoperability testing methodologies.
+  - **ISO/IEC JTC1 SC24** — computer graphics, image processing, and environmental data representation; underpins geometry and scene graph standards relevant to XR.
+  - **GSMA XR Traffic** — mobile network operator guidelines for streaming XR traffic (latency budgets, uplink throughput requirements for cloud render-streaming).
+  - Platform governance: Meta (Quest platform), Apple (visionOS), Microsoft (HoloLens / Windows Mixed Reality), and Google (ARCore) each maintain proprietary layers above the [[OpenXR]] baseline, creating partial fragmentation at the feature layer.
+
+- ### Challenges and Limitations
+  - **Latency** — motion-to-photon latency must remain below ~20 ms to prevent motion sickness; this constrains wireless streaming fidelity.
+  - **Field of view** — current HMDs offer 90°–120° FoV vs. human binocular ~200°, breaking peripheral immersion.
+  - **Form factor** — headset weight and thermal dissipation limit comfortable wear to sub-hour sessions for many users.
+  - **Content fragmentation** — despite [[OpenXR]], feature-layer extensions remain vendor-specific; [[Spatial Audio]], eye-tracked foveated rendering, and hand-tracking APIs diverge across platforms.
+  - **Privacy** — inside-out tracking cameras and [[Eye Tracking]] generate dense behavioural biometric data; regulatory frameworks (GDPR, CCPA) are still adapting.
+  - **Accessibility** — vestibulo-ocular conflicts, inter-pupillary distance ranges, and controller affordances exclude users with certain disabilities or conditions.
+
+- ### Provenance
+  - sources:: Milgram & Kishino (1994) Reality-Virtuality Continuum; Khronos OpenXR 1.x specification; W3C WebXR Device API W3C Recommendation; IEEE 2048 Working Group; industry analyst reports (IDC, Gartner) on XR adoption
+  - updated:: 2026-06-13

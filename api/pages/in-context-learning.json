@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:in-context-learning",
   "domain": "ai",
-  "definition": "In-Context Learning (ICL) is a capability of large language models whereby the model adapts its behaviour to a new task at inference time by conditioning on a small number of input-output demonstrations supplied within the prompt, without any gradient-based weight updates. The model implicitly extracts task structure from the provided examples and applies it to unseen queries, enabling rapid task generalisation without retraining.",
+  "definition": "In-Context Learning (ICL) is the capability of large language models to adapt their output distribution to a novel task at inference time by conditioning on a small number of labelled input-output demonstrations embedded directly within the prompt, without any gradient-based parameter updates. The model implicitly extracts task structure and decision boundaries from the provided examples and applies that inferred structure to unseen queries, enabling rapid generalisation across domains. ICL is an emergent phenomenon that scales with model size and training-data diversity, and is theoretically framed as implicit Bayesian inference over a latent space of task hypotheses. It underpins the practical utility of modern large language models by eliminating the need for task-specific fine-tuning pipelines.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:meta-learning",
@@ -13,46 +13,114 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.74,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:large-language-model-training",
-        "label": "Large Language Model Training"
-      }
-    ],
-    "enables": [],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
       {
         "id": "urn:ngm:class:attention-mechanism",
         "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
       }
     ],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
-      {
-        "id": "urn:ngm:class:few-shot-learning",
-        "label": "Few-Shot Learning"
-      },
+    "enables": [
       {
         "id": "urn:ngm:class:few-shot-prompting",
         "label": "Few-Shot Prompting"
+      },
+      {
+        "id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      },
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "id": "urn:ngm:class:task-adaptation",
+        "label": "Task Adaptation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:fine-tuning",
+        "label": "Fine-Tuning"
       },
       {
         "id": "urn:ngm:class:zero-shot-prompting",
         "label": "Zero-Shot Prompting"
       },
       {
+        "id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
+      },
+      {
+        "id": "urn:ngm:class:parameter-efficient-fine-tuning",
+        "label": "Parameter-Efficient Fine-Tuning"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:agent-reasoning",
+        "label": "Agent Reasoning"
+      }
+    ],
+    "uses": [
+      {
         "id": "urn:ngm:class:chain-of-thought-prompting",
         "label": "Chain-of-Thought Prompting"
+      },
+      {
+        "id": "urn:ngm:class:demonstration-selection",
+        "label": "Demonstration Selection"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:few-shot-learning",
+        "label": "Few-Shot Learning"
+      },
+      {
+        "id": "urn:ngm:class:emergent-capabilities",
+        "label": "Emergent Capabilities"
+      },
+      {
+        "id": "urn:ngm:class:instruction-tuning",
+        "label": "Instruction Tuning"
+      },
+      {
+        "id": "urn:ngm:class:mechanistic-interpretability",
+        "label": "Mechanistic Interpretability"
+      },
+      {
+        "id": "urn:ngm:class:context-window",
+        "label": "Context Window"
       }
     ]
   },

@@ -43,7 +43,7 @@ public:: true
   "@type": "Class",
   "label": "supports",
   "definition": "Supports is a relational predicate used in the knowledge graph to indicate that one entity provides backing, compatibility, or enabling capability for another.",
-  "domain": "ontology",
+  "domain": "standards",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

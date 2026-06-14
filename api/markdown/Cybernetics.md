@@ -21,7 +21,7 @@ public:: true
   "@type": "Class",
   "label": "Cybernetics",
   "definition": "Cybernetics is the transdisciplinary science of regulatory systems, feedback mechanisms, and goal-directed behaviour in animals, machines, and organisations, founded by Norbert Wiener in 1948 to provide a unified framework for understanding how systems use information to maintain stability and achieve purposes across biological, mechanical, and social domains. It centres on the study of circular causal processes — feedback loops — through which a system compares its actual state against a desired state and acts to reduce the discrepancy, extending naturally to concepts of information, communication, control, and self-organisation. Second-order cybernetics extends this to include the observer as a participant in the system being observed, influencing systems theory, cognitive science, constructivism, and AI.",
-  "domain": "science",
+  "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:control-theory", "label": "Control Theory"}],
   "relations": {

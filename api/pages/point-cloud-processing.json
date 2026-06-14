@@ -4,8 +4,8 @@
   "slug": "point-cloud-processing",
   "public": true,
   "classIri": "urn:ngm:class:point-cloud-processing",
-  "domain": "graphics",
-  "definition": "Point cloud processing is the set of computational algorithms and pipelines that transform raw collections of georeferenced 3D coordinate samples \u2014 produced by LiDAR scanners, depth cameras, structured-light systems, or photogrammetric reconstruction \u2014 into structured, semantically meaningful representations suitable for downstream applications such as autonomous navigation, digital twin construction, heritage documentation, and environmental monitoring. Core operations include filtering, registration (alignment of multiple scans), segmentation, feature extraction, surface reconstruction, and compression, often executed on GPU-accelerated or specialised embedded hardware to meet real-time constraints.",
+  "domain": "spatial-computing",
+  "definition": "Point cloud processing is the body of computational algorithms and end-to-end pipelines that transform raw collections of georeferenced 3D coordinate samples \u2014 produced by LiDAR scanners, depth cameras, structured-light systems, or photogrammetric reconstruction \u2014 into structured, semantically meaningful representations suitable for downstream applications such as autonomous navigation, digital twin construction, heritage documentation, and environmental monitoring. Core operations include noise filtering, voxel downsampling, multi-scan registration via Iterative Closest Point (ICP) and feature-based variants, normal estimation, segmentation, surface reconstruction, and compression. These operations are increasingly augmented by deep learning models operating directly on unordered point sets (PointNet family, sparse 3D CNNs), often executed on GPU-accelerated or specialised embedded hardware to meet real-time constraints. The field bridges classical computational geometry with modern neural scene representations such as NeRF and 3D Gaussian Splatting.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:point-cloud",
@@ -13,11 +13,37 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.75,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:point-cloud-registration",
+        "label": "Point Cloud Registration"
+      },
+      {
+        "id": "urn:ngm:class:point-cloud-segmentation",
+        "label": "Point Cloud Segmentation"
+      },
+      {
+        "id": "urn:ngm:class:surface-reconstruction",
+        "label": "Surface Reconstruction"
+      },
+      {
+        "id": "urn:ngm:class:normal-estimation",
+        "label": "Normal Estimation"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:gpu-computing",
+        "label": "GPU Computing"
+      },
+      {
+        "id": "urn:ngm:class:3d-coordinate-geometry",
+        "label": "3D Coordinate Geometry"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:spatial-computing-paradigm",
@@ -30,12 +56,42 @@
       {
         "id": "urn:ngm:class:ne-rf",
         "label": "NeRF"
+      },
+      {
+        "id": "urn:ngm:class:simultaneous-localisation-and-mapping",
+        "label": "Simultaneous Localisation and Mapping"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-vehicle-perception",
+        "label": "Autonomous Vehicle Perception"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:photogrammetry",
+        "label": "Photogrammetry"
+      },
+      {
+        "id": "urn:ngm:class:lidar-scanning",
+        "label": "Lidar Scanning"
+      }
+    ],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:robotics-perception",
+        "label": "Robotics Perception"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:lidar",
@@ -48,6 +104,18 @@
       {
         "id": "urn:ngm:class:spatial-data-structure",
         "label": "Spatial Data Structure"
+      },
+      {
+        "id": "urn:ngm:class:iterative-closest-point",
+        "label": "Iterative Closest Point"
+      },
+      {
+        "id": "urn:ngm:class:octree",
+        "label": "Octree"
+      },
+      {
+        "id": "urn:ngm:class:voxel-grid",
+        "label": "Voxel Grid"
       }
     ],
     "supports": [],
@@ -55,12 +123,16 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:photogrammetry",
-        "label": "Photogrammetry"
+        "id": "urn:ngm:class:3d-object-detection",
+        "label": "3D Object Detection"
       },
       {
-        "id": "urn:ngm:class:lidar-scanning",
-        "label": "Lidar Scanning"
+        "id": "urn:ngm:class:building-information-modelling",
+        "label": "Building Information Modelling"
+      },
+      {
+        "id": "urn:ngm:class:geospatial-data",
+        "label": "Geospatial Data"
       }
     ]
   },

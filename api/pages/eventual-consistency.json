@@ -5,39 +5,124 @@
   "public": true,
   "classIri": "urn:ngm:class:eventual-consistency",
   "domain": "distributed-systems",
-  "definition": "A consistency model for distributed data stores in which, given no new updates, all replicas eventually converge to the same value. It favours availability and partition tolerance over immediate consistency.",
+  "definition": "Eventual consistency is a consistency model for distributed data stores that guarantees that, in the absence of new updates, all replicas of a given data item will eventually converge to the same value. The model deliberately relaxes the requirement for immediate, global agreement in favour of higher availability and tolerance of network partitions, as described by the CAP theorem. Reads may transiently return stale data, and divergent replicas are reconciled through background propagation, gossip protocols, or explicit conflict resolution strategies such as last-write-wins or multi-version concurrency control. It is foundational to the design of large-scale internet-facing systems including DNS, distributed caches, and wide-area NoSQL databases.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:distributed-computing",
-      "label": "Distributed Computing"
+      "id": "urn:ngm:class:consistency-model",
+      "label": "Consistency Model"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
-  "maturity": "established",
+  "qualityScore": 0.74,
+  "maturity": "mature",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
         "id": "urn:ngm:class:distributed-computing",
         "label": "Distributed Computing"
+      },
+      {
+        "id": "urn:ngm:class:data-replication",
+        "label": "Data Replication"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:distributed-storage",
         "label": "Distributed Storage"
+      },
+      {
+        "id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      },
+      {
+        "id": "urn:ngm:class:horizontal-scalability",
+        "label": "Horizontal Scalability"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:strong-consistency",
+        "label": "Strong Consistency"
+      },
+      {
+        "id": "urn:ngm:class:linearizability",
+        "label": "Linearizability"
+      },
+      {
+        "id": "urn:ngm:class:serializability",
+        "label": "Serializability"
+      },
+      {
+        "id": "urn:ngm:class:acid-properties",
+        "label": "ACID Properties"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain-consensus",
+        "label": "Blockchain Consensus"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:vector-clocks",
+        "label": "Vector Clocks"
+      },
+      {
+        "id": "urn:ngm:class:gossip-protocol",
+        "label": "Gossip Protocol"
+      },
+      {
+        "id": "urn:ngm:class:conflict-resolution",
+        "label": "Conflict Resolution"
+      },
+      {
+        "id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "id": "urn:ngm:class:multi-version-concurrency-control",
+        "label": "Multi-Version Concurrency Control"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:cap-theorem",
+        "label": "CAP Theorem"
+      },
+      {
+        "id": "urn:ngm:class:base-properties",
+        "label": "BASE Properties"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:nosql-database",
+        "label": "NoSQL Database"
+      },
+      {
+        "id": "urn:ngm:class:crdt",
+        "label": "CRDT"
+      },
+      {
+        "id": "urn:ngm:class:quorum-consensus",
+        "label": "Quorum Consensus"
+      },
+      {
+        "id": "urn:ngm:class:partition-tolerance",
+        "label": "Partition Tolerance"
+      }
+    ]
   },
   "wikilinks": [
     {

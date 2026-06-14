@@ -4,8 +4,8 @@
   "slug": "stability-ai",
   "public": true,
   "classIri": "urn:ngm:class:stability-ai",
-  "domain": "generative-ai",
-  "definition": "A company that develops and releases open generative models, best known for the Stable Diffusion family of text-to-image models.",
+  "domain": "ai",
+  "definition": "Stability AI is a British AI company founded in 2019 (publicly prominent from 2022) that develops and releases open-weight generative models across image, audio, language, and video modalities, most notably the Stable Diffusion family of latent diffusion models for text-to-image synthesis. The company's open-weight release strategy, in which model weights are made freely downloadable rather than accessed only via hosted APIs, catalysed a large ecosystem of fine-tuned variants, community tools, and downstream commercial products. Stability AI also supports research into multimodal generation, efficient inference, and safety mechanisms for open foundation models.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:generative-ai",
@@ -13,31 +13,124 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
-  "maturity": "growing",
+  "qualityScore": 0.72,
+  "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:stable-diffusion",
+        "label": "Stable Diffusion"
+      },
+      {
+        "id": "urn:ngm:class:stable-audio",
+        "label": "Stable Audio"
+      },
+      {
+        "id": "urn:ngm:class:stable-video-diffusion",
+        "label": "Stable Video Diffusion"
+      },
+      {
+        "id": "urn:ngm:class:stablelm",
+        "label": "StableLM"
+      }
+    ],
     "requires": [
       {
-        "id": "urn:ngm:class:stable-diffusion-image-model",
-        "label": "Stable Diffusion"
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "id": "urn:ngm:class:large-scale-training-data",
+        "label": "Large-Scale Training Data"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:text-to-image",
         "label": "Text-to-Image"
+      },
+      {
+        "id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      },
+      {
+        "id": "urn:ngm:class:open-weight-model",
+        "label": "Open-Weight Model"
+      },
+      {
+        "id": "urn:ngm:class:fine-tuning",
+        "label": "Fine-Tuning"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:openai",
+        "label": "OpenAI"
+      },
+      {
+        "id": "urn:ngm:class:midjourney",
+        "label": "Midjourney"
+      },
+      {
+        "id": "urn:ngm:class:adobe-firefly",
+        "label": "Adobe Firefly"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:creative-ai",
+        "label": "Creative AI"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:content-moderation",
+        "label": "Content Moderation"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:latent-diffusion-model",
+        "label": "Latent Diffusion Model"
+      },
+      {
+        "id": "urn:ngm:class:clip",
+        "label": "CLIP"
+      },
+      {
+        "id": "urn:ngm:class:variational-autoencoder",
+        "label": "Variational Autoencoder"
+      },
+      {
+        "id": "urn:ngm:class:u-net",
+        "label": "U-Net"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:training-data-provenance",
+        "label": "Training Data Provenance"
+      }
+    ]
   },
   "wikilinks": [
     {

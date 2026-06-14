@@ -21,7 +21,7 @@ public:: true
   "@type": "Class",
   "label": "Homeostasis",
   "definition": "Homeostasis is the property of a biological or engineered system by which it maintains internal state variables within a defined physiological or operational range despite external perturbations, achieved through negative feedback control loops that sense deviations from a setpoint and activate corrective effectors. It is a foundational principle of physiology, cybernetics, and adaptive control engineering.",
-  "domain": "science",
+  "domain": "ai",
   "maturity": "mature",
   "subClassOf": [
     {"@id": "urn:ngm:class:cybernetics", "label": "Cybernetics"}

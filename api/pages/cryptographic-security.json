@@ -4,21 +4,17 @@
   "slug": "cryptographic-security",
   "public": true,
   "classIri": "urn:ngm:class:cryptographic-security",
-  "domain": "infrastructure",
-  "definition": "Cryptographic Security is the application of cryptographic primitives and protocols\u2014including symmetric and asymmetric encryption, digital signatures, hash functions, and zero-knowledge proofs\u2014to protect data confidentiality, integrity, and authenticity. In blockchain and metaverse contexts it underpins transaction authorisation, identity verification, secure key management, and privacy-preserving computation, forming the bedrock upon which trustless systems and decentralised applications are built.",
+  "domain": "security",
+  "definition": "Cryptographic Security is the discipline of applying mathematical cryptographic primitives and protocols \u2014 including symmetric encryption, asymmetric public-key cryptography, cryptographic hash functions, digital signatures, message authentication codes, and zero-knowledge proofs \u2014 to enforce confidentiality, integrity, authenticity, and non-repudiation of information and communications. It provides the formal security guarantees upon which trustless distributed systems, secure channels, identity frameworks, and privacy-preserving computation are constructed. The field spans both theoretical hardness assumptions (discrete logarithm, integer factorisation, lattice problems) and practical protocol engineering, encompassing key management, certificate infrastructure, and post-quantum cryptographic migration. In applied contexts it underpins everything from TLS transport security and blockchain transaction authorisation to hardware security modules and secure multi-party computation.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-security-and-identity",
       "label": "Security and Identity"
-    },
-    {
-      "id": "urn:ngm:class:security-framework",
-      "label": "Security Framework"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "mature",
   "relationships": {
     "hasPart": [
       {
@@ -30,21 +26,76 @@
         "label": "Digital Signature"
       },
       {
-        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
+        "id": "urn:ngm:class:public-key-cryptography",
         "label": "Public-Key Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:key-management",
+        "label": "Key Management"
+      },
+      {
+        "id": "urn:ngm:class:message-authentication-code",
+        "label": "Message Authentication Code"
       }
     ],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:random-number-generation",
+        "label": "Random Number Generation"
+      },
+      {
+        "id": "urn:ngm:class:hardware-security-module",
+        "label": "Hardware Security Module"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:zero-knowledge-proof",
         "label": "Zero-Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:secure-multi-party-computation",
+        "label": "Secure Multi-Party Computation"
+      },
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "id": "urn:ngm:class:privacy-preserving-computation",
+        "label": "Privacy-Preserving Computation"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:post-quantum-cryptography",
+        "label": "Post-Quantum Cryptography"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      }
+    ],
     "uses": [],
     "supports": [
       {
@@ -54,11 +105,45 @@
       {
         "id": "urn:ngm:class:privacy-framework",
         "label": "Privacy Framework"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-application",
+        "label": "Decentralised Application"
+      },
+      {
+        "id": "urn:ngm:class:transport-layer-security",
+        "label": "Transport Layer Security"
       }
     ],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:nist",
+        "label": "NIST"
+      },
+      {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec",
+        "label": "ISO/IEC"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      },
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "id": "urn:ngm:class:threat-model",
+        "label": "Threat Model"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -63,7 +63,7 @@ public:: true
   "@type": "Class",
   "label": "Coordination Layer",
   "definition": "The Coordination Layer is the cross-cutting stratum that orchestrates the work of multiple agents or services toward a shared objective. It sits above control and integration concerns and below the application goals it serves. It contains schedulers, workflow engines, consensus on task assignment, and the protocols that keep distributed actors aligned.",
-  "domain": "coordination",
+  "domain": "distributed-systems",
   "maturity": "emerging",
   "qualityScore": 0.7,
   "subClassOf": [

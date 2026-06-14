@@ -4,35 +4,129 @@
   "slug": "sheffield",
   "public": true,
   "classIri": "urn:ngm:class:sheffield",
-  "domain": "general",
-  "definition": "A city in South Yorkshire, England, historically associated with steel and now with advanced manufacturing, materials research, and engineering.",
+  "domain": "infrastructure",
+  "definition": "Sheffield is a metropolitan city in South Yorkshire, England, historically renowned as the Steel City for its dominance in cutlery, tool-making, and crucible steel production from the 18th century onwards. Today it operates as a major centre for advanced manufacturing, materials science, robotics research, and digital innovation, anchored by the University of Sheffield and Sheffield Hallam University. The city hosts the Advanced Manufacturing Research Centre (AMRC) \u2014 a globally recognised aerospace and industrial manufacturing cluster \u2014 as well as the Nuclear AMRC and a growing technology and data economy. Sheffield participates in the Northern Powerhouse initiative and is developing smart city infrastructure and innovation-district strategies aligned with Catapult programmes and UK industrial strategy.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:entity",
-      "label": "Entity"
+      "id": "urn:ngm:class:urban-innovation-cluster",
+      "label": "Urban Innovation Cluster"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:advanced-manufacturing-research-centre",
+        "label": "Advanced Manufacturing Research Centre"
+      },
+      {
+        "id": "urn:ngm:class:nuclear-amrc",
+        "label": "Nuclear AMRC"
+      },
+      {
+        "id": "urn:ngm:class:university-of-sheffield",
+        "label": "University of Sheffield"
+      },
+      {
+        "id": "urn:ngm:class:sheffield-hallam-university",
+        "label": "Sheffield Hallam University"
+      }
+    ],
     "requires": [],
     "enables": [
       {
         "id": "urn:ngm:class:material-science",
         "label": "Material Science"
+      },
+      {
+        "id": "urn:ngm:class:advanced-manufacturing",
+        "label": "Advanced Manufacturing"
+      },
+      {
+        "id": "urn:ngm:class:aerospace-engineering",
+        "label": "Aerospace Engineering"
+      },
+      {
+        "id": "urn:ngm:class:nuclear-engineering",
+        "label": "Nuclear Engineering"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:digital-manufacturing",
+        "label": "Digital Manufacturing"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:smart-city-infrastructure",
+        "label": "Smart City Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:industrial-robotics",
+        "label": "Industrial Robotics"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:uk-industrial-strategy",
+        "label": "UK Industrial Strategy"
+      },
+      {
+        "id": "urn:ngm:class:catapult-network",
+        "label": "Catapult Network"
+      },
+      {
+        "id": "urn:ngm:class:regional-economic-development",
+        "label": "Regional Economic Development"
+      }
+    ],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:northern-powerhouse",
+        "label": "Northern Powerhouse"
+      },
+      {
+        "id": "urn:ngm:class:south-yorkshire",
+        "label": "South Yorkshire"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:manchester",
+        "label": "Manchester"
+      },
+      {
+        "id": "urn:ngm:class:leeds",
+        "label": "Leeds"
+      },
+      {
+        "id": "urn:ngm:class:innovation-district",
+        "label": "Innovation District"
+      },
+      {
+        "id": "urn:ngm:class:industry-4-0",
+        "label": "Industry 4.0"
+      }
+    ]
   },
   "wikilinks": [
     {

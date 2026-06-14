@@ -22,7 +22,7 @@ alias:: CollaborativeSimulation
   "@type": "Class",
   "label": "Collaborative Simulation",
   "definition": "A computational environment in which multiple participants — human or agent — share, manipulate, and observe a common simulation state in real time. It combines networked synchronisation with physics or behavioural modelling to support joint exploration, training, or design activities across distributed locations.",
-  "domain": "spatial",
+  "domain": "spatial-computing",
   "maturity": "emerging",
   "subClassOf": [{"@id": "urn:ngm:class:collaborative-systems-modality-technology", "label": "Collaborative Technology"}],
   "relations": {

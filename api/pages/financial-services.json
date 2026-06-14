@@ -4,51 +4,148 @@
   "slug": "financial-services",
   "public": true,
   "classIri": "urn:ngm:class:financial-services",
-  "domain": "infrastructure",
-  "definition": "Financial Services encompasses the suite of economic services provided by the finance industry, including banking, investment, insurance, and payment systems. In digital and decentralised contexts, financial services extend to blockchain-based instruments, smart contract-mediated lending, tokenised asset management, and cross-border payment rails operating without traditional intermediaries.",
+  "domain": "finance",
+  "definition": "Financial Services is the broad sector comprising economic services provided by the finance industry \u2014 including banking, credit, investment management, insurance, payment systems, and capital markets intermediation. These services facilitate the allocation of capital, management of risk, transfer of funds, and exchange of financial instruments across individuals, institutions, and governments. In digital and decentralised contexts, financial services extend to blockchain-based instruments, smart-contract-mediated lending, tokenised asset management, and programmable cross-border payment rails that operate without traditional intermediaries. The sector is governed by a dense regulatory framework spanning prudential oversight, consumer protection, anti-money-laundering requirements, and market integrity rules.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:infra-legal-and-regulatory",
-      "label": "Legal and Regulatory"
+      "id": "urn:ngm:class:economic-systems",
+      "label": "Economic Systems"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.3,
-  "maturity": "emerging",
+  "qualityScore": 0.72,
+  "maturity": "mature",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:financial-instruments",
-        "label": "Financial Instruments"
+        "id": "urn:ngm:class:banking",
+        "label": "Banking"
       },
       {
-        "id": "urn:ngm:class:financial-infrastructure",
-        "label": "Financial Infrastructure"
+        "id": "urn:ngm:class:insurance",
+        "label": "Insurance"
+      },
+      {
+        "id": "urn:ngm:class:investment-management",
+        "label": "Investment Management"
+      },
+      {
+        "id": "urn:ngm:class:payment-systems",
+        "label": "Payment Systems"
+      },
+      {
+        "id": "urn:ngm:class:capital-markets",
+        "label": "Capital Markets"
+      },
+      {
+        "id": "urn:ngm:class:financial-instruments",
+        "label": "Financial Instruments"
       }
     ],
     "requires": [
       {
         "id": "urn:ngm:class:financial-regulation",
         "label": "Financial Regulation"
+      },
+      {
+        "id": "urn:ngm:class:financial-infrastructure",
+        "label": "Financial Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:kyc-aml",
+        "label": "KYC / AML"
       }
     ],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:capital-allocation",
+        "label": "Capital Allocation"
+      },
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:economic-growth",
+        "label": "Economic Growth"
+      },
+      {
+        "id": "urn:ngm:class:financial-inclusion",
+        "label": "Financial Inclusion"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:shadow-banking",
+        "label": "Shadow Banking"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      },
       {
         "id": "urn:ngm:class:cryptocurrency",
         "label": "Cryptocurrency"
       },
       {
-        "id": "urn:ngm:class:smart-contracts",
-        "label": "Smart Contracts"
+        "id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      },
+      {
+        "id": "urn:ngm:class:tokenisation",
+        "label": "Tokenisation"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:api-economy",
+        "label": "API Economy"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:basel-iii",
+        "label": "Basel III"
+      },
+      {
+        "id": "urn:ngm:class:iso-20022",
+        "label": "ISO 20022"
+      },
+      {
+        "id": "urn:ngm:class:psd2",
+        "label": "PSD2"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:open-banking",
+        "label": "Open Banking"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-technology",
+        "label": "Regulatory Technology"
       }
     ]
   },

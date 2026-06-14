@@ -4,8 +4,8 @@
   "slug": "site-reliability-engineering",
   "public": true,
   "classIri": "urn:ngm:class:site-reliability-engineering",
-  "domain": "software-engineering",
-  "definition": "Site reliability engineering is a discipline that applies software engineering methods to operations work, aiming to build and run scalable and reliable systems.",
+  "domain": "infrastructure",
+  "definition": "Site Reliability Engineering (SRE) is a discipline that applies software engineering principles and practices to operations work, treating infrastructure management and service reliability as software problems to be solved through automation, measurement, and iterative improvement. Originating at Google in the early 2000s, SRE defines explicit reliability targets via Service Level Objectives, manages risk through error budgets, and uses observability tooling to maintain confidence in production systems. SRE practitioners reduce operational toil through systematic automation, implement incident management processes, and balance the competing demands of feature velocity and system stability. The discipline formalises the role of the operations engineer as a software engineer who designs for reliability, scalability, and maintainability from the outset.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:reliability-engineering",
@@ -13,26 +13,121 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.75,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:service-level-objective",
+        "label": "Service Level Objective"
+      },
+      {
+        "id": "urn:ngm:class:error-budget",
+        "label": "Error Budget"
+      },
+      {
+        "id": "urn:ngm:class:toil-reduction",
+        "label": "Toil Reduction"
+      },
+      {
+        "id": "urn:ngm:class:postmortem",
+        "label": "Postmortem"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:observability",
         "label": "Observability"
+      },
+      {
+        "id": "urn:ngm:class:monitoring",
+        "label": "Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:incident-management",
+        "label": "Incident Management"
       }
     ],
-    "enables": [],
-    "dependsOn": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      },
+      {
+        "id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:devops",
+        "label": "DevOps"
+      },
+      {
+        "id": "urn:ngm:class:itil",
+        "label": "ITIL"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:aiops",
+        "label": "AIOps"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-operations",
+        "label": "Machine Learning Operations"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:infrastructure-as-code",
+        "label": "Infrastructure as Code"
+      },
+      {
+        "id": "urn:ngm:class:continuous-deployment",
+        "label": "Continuous Deployment"
+      },
+      {
+        "id": "urn:ngm:class:chaos-engineering",
+        "label": "Chaos Engineering"
+      },
+      {
+        "id": "urn:ngm:class:distributed-tracing",
+        "label": "Distributed Tracing"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:platform-engineering",
+        "label": "Platform Engineering"
+      },
+      {
+        "id": "urn:ngm:class:service-mesh",
+        "label": "Service Mesh"
+      },
+      {
+        "id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
+      }
+    ]
   },
   "wikilinks": [
     {

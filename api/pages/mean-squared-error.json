@@ -4,7 +4,7 @@
   "slug": "mean-squared-error",
   "public": true,
   "classIri": "urn:ngm:class:mean-squared-error",
-  "domain": "mathematics",
+  "domain": "machine-learning",
   "definition": "A measure of the average squared difference between predicted values and observed values, widely used to quantify estimation and prediction error.",
   "subClassOf": [
     {

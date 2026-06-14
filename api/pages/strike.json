@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:strike",
   "domain": "blockchain",
-  "definition": "A financial payments company that uses the Bitcoin Lightning Network to offer instant, low-cost payments and remittances denominated in conventional currency.",
+  "definition": "Strike is a financial technology company founded by Jack Mallers that uses the Bitcoin Lightning Network as a settlement rail to deliver instant, low-cost global payments and remittances denominated in fiat currencies. It abstracts the technical complexity of Bitcoin and Lightning from end users, converting value at the edges so that senders and recipients may transact in their preferred local currencies without needing to hold cryptocurrency. Strike competes with legacy remittance operators and correspondent banking channels by exploiting Lightning's near-zero fee structure and sub-second finality to offer dramatically lower-cost international money movement.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:cross-border-payments",
@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
@@ -25,18 +25,116 @@
       {
         "id": "urn:ngm:class:bitcoin-proof-of-work-protocol",
         "label": "Bitcoin"
+      },
+      {
+        "id": "urn:ngm:class:payment-channel",
+        "label": "Payment Channel"
+      },
+      {
+        "id": "urn:ngm:class:liquidity-management",
+        "label": "Liquidity Management"
       }
     ],
-    "enables": [],
-    "dependsOn": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:remittance",
+        "label": "Remittance"
+      },
+      {
+        "id": "urn:ngm:class:instant-settlement",
+        "label": "Instant Settlement"
+      },
+      {
+        "id": "urn:ngm:class:micropayments",
+        "label": "Micropayments"
+      },
+      {
+        "id": "urn:ngm:class:merchant-payments",
+        "label": "Merchant Payments"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:bitcoin-blockchain",
+        "label": "Bitcoin Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:node-operation",
+        "label": "Node Operation"
+      },
+      {
+        "id": "urn:ngm:class:kyc-aml-compliance",
+        "label": "KYC/AML Compliance"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:western-union",
+        "label": "Western Union"
+      },
+      {
+        "id": "urn:ngm:class:swift-network",
+        "label": "SWIFT Network"
+      },
+      {
+        "id": "urn:ngm:class:correspondent-banking",
+        "label": "Correspondent Banking"
+      },
+      {
+        "id": "urn:ngm:class:paypal",
+        "label": "PayPal"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:open-banking",
+        "label": "Open Banking"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:hash-time-locked-contracts",
+        "label": "Hash Time-Locked Contracts"
+      },
+      {
+        "id": "urn:ngm:class:bolt-protocol",
+        "label": "BOLT Protocol"
+      },
+      {
+        "id": "urn:ngm:class:fiat-currency",
+        "label": "Fiat Currency"
+      },
+      {
+        "id": "urn:ngm:class:api-integration",
+        "label": "API Integration"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:open-payments-protocol",
+        "label": "Open Payments Protocol"
+      },
+      {
+        "id": "urn:ngm:class:financial-inclusion",
+        "label": "Financial Inclusion"
+      },
+      {
+        "id": "urn:ngm:class:digital-dollar",
+        "label": "Digital Dollar"
+      },
+      {
+        "id": "urn:ngm:class:cryptocurrency-exchange",
+        "label": "Cryptocurrency Exchange"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -63,7 +63,7 @@ public:: true
   "@type": "Class",
   "label": "Evaluation Layer",
   "definition": "The Evaluation Layer is the cross-cutting stratum that measures the quality, safety, and performance of system components against defined criteria. It sits alongside training and inference, drawing on their outputs to produce judgements that feed governance and research strata. It contains benchmarks, metrics, test harnesses, and the scoring procedures that quantify behaviour.",
-  "domain": "evaluation",
+  "domain": "ai",
   "maturity": "emerging",
   "qualityScore": 0.7,
   "subClassOf": [

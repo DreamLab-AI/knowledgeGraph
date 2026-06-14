@@ -4,7 +4,7 @@
   "slug": "intel-loihi",
   "public": true,
   "classIri": "urn:ngm:class:intel-loihi",
-  "domain": "general",
+  "domain": "machine-learning",
   "definition": "A research neuromorphic processor developed by Intel that implements spiking neural networks in hardware with on-chip learning.",
   "subClassOf": [
     {

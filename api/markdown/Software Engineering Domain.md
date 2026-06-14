@@ -87,7 +87,7 @@ public:: true
   "@type": "Class",
   "label": "Software Engineering Domain",
   "definition": "The Software Engineering Domain classifies concepts concerning the systematic development, maintenance and evolution of software systems. It covers requirements, design, construction, testing and the processes that coordinate these activities. As a top-level subject axis it provides the disciplined methods by which other domains are realised as reliable, maintainable software.",
-  "domain": "software-engineering",
+  "domain": "infrastructure",
   "maturity": "emerging",
   "qualityScore": 0.7,
   "subClassOf": [

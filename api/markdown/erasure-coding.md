@@ -1,25 +1,109 @@
 - ### Definition
-  - Erasure coding is a forward error-correction technique that encodes a data object into n fragments (shards), distributed across nodes or storage devices, such that any k of those n fragments are sufficient to reconstruct the original data without any centralised copy. The redundancy overhead (n − k) / k is typically much lower than full replication, making erasure coding the preferred durability mechanism in large-scale distributed storage systems and distributed ledgers where storage efficiency matters. Common schemes include Reed-Solomon codes, and more computationally efficient variants such as LDPC and Cauchy Reed-Solomon.
+  - Erasure coding is a [[Forward Error Correction]] technique that encodes a data object into n encoded fragments (shards or chunks), distributed across nodes or storage devices, such that any k of those n fragments are sufficient to reconstruct the original data — tolerating any n − k simultaneous failures without a centralised copy. It is foundational to [[Distributed Storage]], [[Fault Tolerance]], and [[Data Durability]], and differs from [[Data Replication]] by achieving comparable resilience at a fraction of the storage overhead. Modern deployments couple erasure codes with cryptographic structures such as [[Polynomial Commitment]] schemes to support [[Data Availability Sampling]] in blockchain systems.
+
+- ### Overview
+  - Erasure coding originated in classical information theory and coding theory, with applications in satellite communications, optical media (CD/DVD), and deep-space telemetry long before distributed computing.
+  - The core property: given a (k, n) erasure code, any k out of n encoded symbols recover the original k data symbols — the remaining n − k symbols are redundancy ("parity" or "check" symbols).
+  - The storage overhead is (n − k) / k. For example, a (6, 9) code stores 1.5× the original data volume whilst tolerating 3 simultaneous node failures; triple replication achieves the same failure tolerance at 3× overhead.
+  - Erasure coding is therefore the preferred durability mechanism in large-scale [[Storage Infrastructure]] where the cost of full replication is prohibitive.
+  - The trade-off: reconstruction requires reading k fragments and performing matrix inversion; [[Data Replication]] allows recovery from a single copy.
+
+- ### Key Mechanisms
+  - #### Reed-Solomon Codes
+    - Classical systematic erasure code based on polynomial evaluation over a [[Galois Field Arithmetic]] (finite field GF(2^m)).
+    - Any k of n encoded symbols uniquely determine the degree-(k−1) polynomial and thereby the original k data symbols.
+    - Widely used in RAID-6 (tolerates 2 simultaneous disk failures), optical disc error correction, and satellite links.
+    - Used in [[Ceph]], Azure Blob Storage, and [[IPFS]]-family systems.
+  - #### LDPC Codes
+    - Low-Density Parity-Check codes: sparse bipartite graph construction allowing near-linear-time encoding and decoding.
+    - Approach the Shannon limit; suited to high-throughput network and storage applications.
+    - Used in 5G NR air interface and some distributed storage tiers.
+  - #### Fountain Codes (LT and Raptor)
+    - Rateless erasure codes: generate a potentially unlimited stream of encoded symbols; any k (with small overhead) suffice to decode.
+    - LT codes use random degree distributions; Raptor codes add a pre-code for linear-time decoding.
+    - Suited to broadcast and lossy network channels where the erasure rate is unknown in advance.
+  - #### Cauchy Reed-Solomon
+    - A variant of Reed-Solomon using Cauchy matrices, enabling faster XOR-based computation by mapping to GF(2).
+    - Reduces computational cost of encoding/decoding versus standard Vandermonde-based RS.
+  - #### Systematic vs Non-Systematic Forms
+    - Systematic codes retain the original k data fragments unchanged among the n output fragments; the remaining n − k are parity fragments.
+    - Non-systematic codes transform all n output fragments; original data not directly readable without decoding.
+    - Most storage deployments use systematic forms to allow direct reads of un-damaged data without decode overhead.
+
+- ### Applications and Use Cases
+  - #### Distributed Object Storage
+    - [[Ceph]] RADOS uses erasure-coded pools as the primary cold-data durability mechanism, configuring (k, m) profiles (e.g. k=4, m=2) per pool.
+    - [[Filecoin]] storage deals use erasure coding to guarantee retrievability of stored data across sector failures.
+    - [[IPFS]] content-addressed blocks can be redundantly stored via erasure-coded overlays (e.g. via Helia or Kubo plugins).
+    - Facebook f4 (warm BLOB storage) demonstrated ~50% storage reduction versus replication by switching to erasure coding for cold tier.
+    - Azure Blob Storage and Amazon S3 use erasure coding internally for durability within and across availability zones.
+  - #### RAID Storage
+    - [[RAID]]-5 uses single parity (1 drive failure tolerance); RAID-6 uses double parity (2 drive failure tolerance), both based on simple Reed-Solomon variants.
+    - Enterprise storage arrays extend RAID principles to object-based erasure coding with wider stripe widths.
+  - #### Blockchain and Distributed Ledger
+    - [[Danksharding]] (Ethereum upgrade) uses erasure coding combined with [[KZG Commitments]] (polynomial commitments) to implement Data Availability Sampling (DAS).
+    - Light clients can sample random shards and, via the erasure code structure, probabilistically verify that full block data is available without downloading it.
+    - [[Data Availability Layer]] services (e.g. Celestia, EigenDA) rely on erasure coding as their core primitive.
+    - [[Distributed Ledger]] sharding designs use erasure coding to partition transaction data across validator shards while maintaining recoverability.
+  - #### Satellite and Wireless Communications
+    - DVB-S2 and 5G NR use LDPC codes as their error-correction layer.
+    - Fountain codes (Raptor) are used in broadcast file delivery (FLUTE/ALC protocol over multicast).
+  - #### Optical Media
+    - CD, DVD, and Blu-ray all use Reed-Solomon Product-like Code (RS-PC) for error correction, an early mass-market application of erasure coding principles.
+  - #### Network Coding
+    - Relates to [[Network Coding]] where intermediate network nodes mix (XOR or linearly combine) packets, enabling more efficient use of network capacity with erasure-correction properties.
+  - #### Secret Sharing
+    - Shamir's Secret Sharing is mathematically equivalent to a (k, n) Reed-Solomon erasure code over a finite field, connecting erasure coding to [[Secret Sharing]] and threshold cryptography.
+
+- ### Relationships
+  - hasPart:: [[Reed-Solomon Codes]]
+  - hasPart:: [[LDPC Codes]]
+  - hasPart:: [[Fountain Codes]]
+  - hasPart:: [[Galois Field Arithmetic]]
+  - partOf:: [[Forward Error Correction]]
+  - partOf:: [[Storage Infrastructure]]
+  - requires:: [[Galois Field Arithmetic]]
+  - requires:: [[Distributed Storage]]
+  - requires:: [[Shard Distribution]]
+  - enables:: [[Fault Tolerance]]
+  - enables:: [[Data Availability Sampling]]
+  - enables:: [[High Availability]]
+  - enables:: [[Storage Efficiency]]
+  - dependsOn:: [[Distributed Systems]]
+  - dependsOn:: [[Failure Domain]]
+  - implements:: [[Forward Error Correction]]
+  - implements:: [[Data Durability]]
+  - uses:: [[Polynomial Commitment]]
+  - uses:: [[KZG Commitments]]
+  - uses:: [[Linear Algebra]]
+  - supports:: [[IPFS]]
+  - supports:: [[Filecoin]]
+  - supports:: [[Ceph]]
+  - supports:: [[RAID]]
+  - contrastsWith:: [[Data Replication]]
+  - contrastsWith:: [[Full Replication]]
+  - bridgesTo:: [[Distributed Ledger]]
+  - bridgesTo:: [[Danksharding]]
+  - bridgesTo:: [[Data Availability Layer]]
+  - relatedTo:: [[Replication Factor]]
+  - relatedTo:: [[Network Coding]]
+  - relatedTo:: [[Secret Sharing]]
+
+- ### Standards and Context
+  - **IETF RFC 5053** — Raptor Forward Error Correction Scheme for Object Delivery.
+  - **IETF RFC 6330** — RaptorQ Forward Error Correction Scheme for Object and Flow Data Delivery.
+  - **IETF RFC 5510** — Reed-Solomon Forward Error Correction (FEC) Schemes for FECFRAME.
+  - **DVB-S2 (ETSI EN 302 307)** — specifies LDPC + BCH concatenated FEC for digital video broadcasting.
+  - **3GPP TS 38.212** — specifies LDPC as the data channel code for 5G NR.
+  - **Ethereum EIP-4844 / Danksharding** — specifies KZG commitments + erasure coding for blob data availability.
+  - **Ceph RADOS** — open-source reference implementation of production erasure-coded object storage with pluggable backends (Jerasure, ISA-L, shec).
+  - **Intel ISA-L (Intelligent Storage Acceleration Library)** — hardware-accelerated SIMD implementation of Reed-Solomon widely used in production storage stacks.
 
 - ### Semantic Classification
   - owl-class:: erasure-coding:Erasure Coding
   - owl-role:: Concept
 
-- ### Relationships
-  - enables [[Fault Tolerance]]
-  - enables [[Distributed Systems]]
-  - uses [[Data Replication]]
-  - relatedTo [[IPFS]]
-  - relatedTo [[Storage Infrastructure]]
-  - relatedTo [[Distributed Ledger]]
-
-- ### Content
-  Erasure coding is founded on the mathematics of Galois Field arithmetic, which allows linear algebraic operations on data symbols such that any k out of n encoded fragments can invert the encoding matrix and recover the original k data symbols. Reed-Solomon codes are the classical construction, widely used in RAID-6 storage systems (which tolerate two simultaneous disk failures), optical disc error correction, and satellite communications. Modern distributed object storage systems—including Ceph, Facebook Haystack/f4, and Azure Blob Storage—use erasure coding as the default durability mechanism for cold or warm data tiers because it achieves comparable durability to triple replication at roughly one-half the storage overhead.
-
-  In Distributed Systems, erasure coding is applied at the shard level: a storage object is split into k data chunks, n − k parity chunks are computed, and all n chunks are distributed across failure domains (racks, data centres, or geographic regions). The system tolerates any n − k simultaneous failures. Fault Tolerance properties are directly parameterised by the (k, n) choice, trading reconstruction cost (which requires reading k chunks and performing decoding) against storage overhead.
-
-  Distributed Ledger projects such as Ethereum's Danksharding roadmap incorporate erasure coding (specifically KZG polynomial commitments combined with erasure codes) to implement data availability sampling, allowing light nodes to probabilistically verify data availability without downloading full blocks. IPFS and Filecoin use erasure coding within storage deals to guarantee retrievability. The technique therefore underpins both traditional Storage Infrastructure and emerging decentralised storage paradigms.
-
 - ### Provenance
-  - sources::
+  - sources:: IETF RFCs 5053, 6330, 5510; Ceph documentation; Ethereum EIP-4844 specification; Plank & Blumenthal "A Tutorial on Reed-Solomon Coding for Fault-Tolerance in RAID-like Systems"
+  - updated:: 2026-06-13
   - migration-date:: 2026-05-19T00:00:00Z

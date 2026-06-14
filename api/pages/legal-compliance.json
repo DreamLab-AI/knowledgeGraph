@@ -4,8 +4,8 @@
   "slug": "legal-compliance",
   "public": true,
   "classIri": "urn:ngm:class:legal-compliance",
-  "domain": "artificial-intelligence",
-  "definition": "Legal compliance in the context of AI systems encompasses the organisational processes, controls, and evidence required to demonstrate adherence to applicable legislation, regulatory requirements, technical standards, and contractual obligations across the full lifecycle of AI development, deployment, and operation. Key legal instruments include the EU AI Act (risk-based product safety regulation), the GDPR (lawful processing and data subject rights for personal data used in training and inference), sector-specific financial regulations, and product liability laws. Compliance obligations are operationalised through risk assessments, technical documentation, conformity procedures, and ongoing monitoring.",
+  "domain": "governance",
+  "definition": "Legal compliance is the systematic set of organisational processes, technical controls, governance structures, and documented evidence through which an entity demonstrates adherence to applicable legislation, regulatory requirements, technical standards, and contractual obligations across the full lifecycle of its products, services, and operations. In AI and digital systems contexts, it spans intersecting regimes including data protection law, sector-specific financial and healthcare regulation, product liability, intellectual property, and dedicated AI legislation such as the EU AI Act. Compliance is operationalised through risk classification, conformity assessment procedures, mandatory documentation, appointed accountability roles, and continuous monitoring programmes. It functions as the bridge between abstract legal obligations and concrete engineering and operational practice.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-governance-and-ethics",
@@ -13,8 +13,8 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [
@@ -25,34 +25,136 @@
       {
         "id": "urn:ngm:class:risk-management",
         "label": "Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:audit-logging",
+        "label": "Audit Logging"
+      },
+      {
+        "id": "urn:ngm:class:technical-documentation",
+        "label": "Technical Documentation"
+      },
+      {
+        "id": "urn:ngm:class:conformity-assessment",
+        "label": "Conformity Assessment"
       }
     ],
-    "enables": [],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [
+    "enables": [
       {
         "id": "urn:ngm:class:responsible-ai",
         "label": "Responsible AI"
+      },
+      {
+        "id": "urn:ngm:class:trustworthy-ai",
+        "label": "Trustworthy AI"
+      },
+      {
+        "id": "urn:ngm:class:market-access",
+        "label": "Market Access"
       }
     ],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
+    "dependsOn": [],
+    "implements": [
       {
         "id": "urn:ngm:class:regulatory-compliance",
         "label": "Regulatory Compliance"
       },
       {
-        "id": "urn:ngm:class:ai-regulation",
-        "label": "AI Regulation"
-      },
-      {
         "id": "urn:ngm:class:data-protection",
         "label": "Data Protection"
+      },
+      {
+        "id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:voluntary-self-regulation",
+        "label": "Voluntary Self-Regulation"
+      },
+      {
+        "id": "urn:ngm:class:ethics-washing",
+        "label": "Ethics Washing"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:privacy-enhancing-technologies",
+        "label": "Privacy-Enhancing Technologies"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:regtech",
+        "label": "RegTech"
+      },
+      {
+        "id": "urn:ngm:class:model-card",
+        "label": "Model Card"
+      },
+      {
+        "id": "urn:ngm:class:data-protection-impact-assessment",
+        "label": "Data Protection Impact Assessment"
+      },
+      {
+        "id": "urn:ngm:class:explainability",
+        "label": "Explainability"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:corporate-governance",
+        "label": "Corporate Governance"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-accountability",
+        "label": "Algorithmic Accountability"
+      },
+      {
+        "id": "urn:ngm:class:consumer-protection",
+        "label": "Consumer Protection"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-iec-42001",
+        "label": "ISO/IEC 42001"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI RMF"
+      },
+      {
+        "id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:liability",
+        "label": "Liability"
+      },
+      {
+        "id": "urn:ngm:class:intellectual-property",
+        "label": "Intellectual Property"
+      },
+      {
+        "id": "urn:ngm:class:bias-and-fairness",
+        "label": "Bias and Fairness"
       }
     ]
   },

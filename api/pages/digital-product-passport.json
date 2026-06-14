@@ -4,20 +4,33 @@
   "slug": "digital-product-passport",
   "public": true,
   "classIri": "urn:ngm:class:digital-product-passport",
-  "domain": "infrastructure",
-  "definition": "A Digital Product Passport (DPP) is a standardised digital record that captures and communicates information about a product's material composition, origin, manufacturing process, environmental footprint, repair history, and end-of-life options throughout its lifecycle. Mandated by EU ecodesign and product sustainability legislation, DPPs are designed to be machine-readable and accessible to consumers, regulators, recyclers, and supply chain actors via data carriers such as QR codes or RFID. They are a foundational instrument of circular economy policy and are frequently implemented using blockchain or distributed ledger technology to ensure provenance integrity and tamper-evident audit trails.",
+  "domain": "supply-chain",
+  "definition": "A Digital Product Passport (DPP) is a standardised, machine-readable digital record that captures and communicates authoritative information about a product's material composition, manufacturing origin, environmental footprint, repair history, and end-of-life options throughout its full lifecycle. Mandated across product categories by the EU Ecodesign for Sustainable Products Regulation (ESPR) and related instruments such as the EU Battery Regulation, DPPs are accessible to consumers, regulators, recyclers, and supply chain actors via data carriers such as QR codes, NFC tags, or RFID. They serve as a foundational infrastructure of circular economy policy by enabling traceability, transparency, and interoperability across complex global supply chains. DPPs are frequently implemented atop distributed ledger or verifiable credential technologies to ensure provenance integrity and tamper-evident audit trails.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:infra-data-management",
-      "label": "Data Management"
+      "id": "urn:ngm:class:product-lifecycle-management",
+      "label": "Product Lifecycle Management"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
+  "qualityScore": 0.72,
   "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-interoperability",
+        "label": "Data Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:unique-product-identifier",
+        "label": "Unique Product Identifier"
+      },
+      {
+        "id": "urn:ngm:class:open-data-standard",
+        "label": "Open Data Standard"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:circular-economy",
@@ -26,33 +39,113 @@
       {
         "id": "urn:ngm:class:supply-chain-traceability",
         "label": "Supply Chain Traceability"
-      }
-    ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [
-      {
-        "id": "urn:ngm:class:provenance-tracking",
-        "label": "Provenance Tracking"
-      }
-    ],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
+      },
       {
         "id": "urn:ngm:class:esg-reporting",
         "label": "ESG Reporting"
       },
       {
+        "id": "urn:ngm:class:right-to-repair",
+        "label": "Right to Repair"
+      },
+      {
+        "id": "urn:ngm:class:extended-producer-responsibility",
+        "label": "Extended Producer Responsibility"
+      }
+    ],
+    "dependsOn": [
+      {
         "id": "urn:ngm:class:supply-chain",
         "label": "Supply Chain"
       },
       {
+        "id": "urn:ngm:class:iot-sensor",
+        "label": "IoT Sensor"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:paper-based-certification",
+        "label": "Paper-Based Certification"
+      },
+      {
+        "id": "urn:ngm:class:proprietary-product-data-silo",
+        "label": "Proprietary Product Data Silo"
+      }
+    ],
+    "bridgesTo": [
+      {
         "id": "urn:ngm:class:blockchain",
         "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:provenance-tracking",
+        "label": "Provenance Tracking"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-identifier",
+        "label": "Decentralised Identifier"
+      },
+      {
+        "id": "urn:ngm:class:qr-code",
+        "label": "QR Code"
+      },
+      {
+        "id": "urn:ngm:class:rfid",
+        "label": "RFID"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:gs1-standards",
+        "label": "GS1 Standards"
+      },
+      {
+        "id": "urn:ngm:class:eu-espr",
+        "label": "EU ESPR"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-standards",
+        "label": "ISO/IEC Standards"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:life-cycle-assessment",
+        "label": "Life Cycle Assessment"
+      },
+      {
+        "id": "urn:ngm:class:carbon-footprint",
+        "label": "Carbon Footprint"
+      },
+      {
+        "id": "urn:ngm:class:eu-battery-regulation",
+        "label": "EU Battery Regulation"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
       }
     ]
   },

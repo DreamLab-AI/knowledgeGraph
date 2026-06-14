@@ -4,8 +4,8 @@
   "slug": "communication-protocols",
   "public": true,
   "classIri": "urn:ngm:class:communication-protocols",
-  "domain": "general",
-  "definition": "Formal rules and conventions that govern how data is formatted, transmitted, received and acknowledged between communicating systems.",
+  "domain": "infrastructure",
+  "definition": "Communication protocols are formal sets of rules, conventions, and standards that specify how data is formatted, transmitted, received, and acknowledged between two or more communicating entities, including computers, devices, and software systems. They define the syntax and semantics of messages, error detection and correction mechanisms, flow control, session management, and the sequencing of exchanges required to achieve reliable information transfer. Protocols operate across layered architectural models such as the OSI Reference Model and the TCP/IP suite, where each layer provides well-defined services to the layer above it while abstracting the implementation details below. Together, these layered agreements enable heterogeneous systems from different vendors and organisations to interoperate reliably across diverse network topologies.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:network-protocol",
@@ -13,26 +13,147 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
-  "maturity": "established",
+  "qualityScore": 0.74,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:transport-layer",
+        "label": "Transport Layer"
+      },
+      {
+        "id": "urn:ngm:class:application-layer",
+        "label": "Application Layer"
+      },
+      {
+        "id": "urn:ngm:class:data-link-layer",
+        "label": "Data Link Layer"
+      },
+      {
+        "id": "urn:ngm:class:session-management",
+        "label": "Session Management"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:data-encoding",
+        "label": "Data Encoding"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:interoperability",
         "label": "Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "id": "urn:ngm:class:real-time-communication",
+        "label": "Real-Time Communication"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:osi-model",
+        "label": "OSI Model"
+      },
+      {
+        "id": "urn:ngm:class:tcp-ip",
+        "label": "TCP/IP"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:proprietary-interface",
+        "label": "Proprietary Interface"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:agent-communication-language",
+        "label": "Agent Communication Language"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:error-correction",
+        "label": "Error Correction"
+      },
+      {
+        "id": "urn:ngm:class:flow-control",
+        "label": "Flow Control"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-handshake",
+        "label": "Cryptographic Handshake"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      },
+      {
+        "id": "urn:ngm:class:ieee",
+        "label": "IEEE"
+      },
+      {
+        "id": "urn:ngm:class:iso",
+        "label": "ISO"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:http",
+        "label": "HTTP"
+      },
+      {
+        "id": "urn:ngm:class:mqtt",
+        "label": "MQTT"
+      },
+      {
+        "id": "urn:ngm:class:websocket",
+        "label": "WebSocket"
+      },
+      {
+        "id": "urn:ngm:class:grpc",
+        "label": "gRPC"
+      },
+      {
+        "id": "urn:ngm:class:message-queue",
+        "label": "Message Queue"
+      }
+    ]
   },
   "wikilinks": [
     {

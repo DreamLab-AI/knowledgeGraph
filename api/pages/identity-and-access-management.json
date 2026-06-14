@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:identity-and-access-management",
   "domain": "infrastructure",
-  "definition": "Identity and Access Management (IAM) is a security discipline comprising the frameworks, policies, technologies, and processes that govern how digital identities are created, authenticated, authorised, and governed throughout their lifecycle within an organisation. IAM systems enforce the principle of least privilege by ensuring that subjects\u2014users, applications, and service accounts\u2014can access only the resources required for their legitimate purpose. Modern IAM encompasses directory services, multi-factor authentication, role-based and attribute-based access control, privileged access management, and federated identity across organisational boundaries.",
+  "definition": "Identity and Access Management (IAM) is a security discipline comprising the frameworks, policies, technologies, and processes that govern how digital identities are created, authenticated, authorised, and managed throughout their lifecycle within and across organisational boundaries. IAM systems enforce the principle of least privilege by ensuring that subjects\u2014users, applications, devices, and service accounts\u2014can access only the resources required for their legitimate purpose at the appropriate time. The discipline spans directory services, multi-factor authentication, role-based and attribute-based access control, privileged access management, identity governance and administration, and federated identity protocols that extend trust across cloud and partner environments. IAM is a foundational control domain within information security frameworks such as ISO/IEC 27001, NIST SP 800-53, and Zero Trust architecture models.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-security-and-identity",
@@ -13,11 +13,41 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "id": "urn:ngm:class:authorisation",
+        "label": "Authorisation"
+      },
+      {
+        "id": "urn:ngm:class:privileged-access-management",
+        "label": "Privileged Access Management"
+      },
+      {
+        "id": "urn:ngm:class:identity-governance-and-administration",
+        "label": "Identity Governance and Administration"
+      },
+      {
+        "id": "urn:ngm:class:directory-services",
+        "label": "Directory Services"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:digital-certificates",
+        "label": "Digital Certificates"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:access-control",
@@ -26,24 +56,92 @@
       {
         "id": "urn:ngm:class:zero-trust-architecture",
         "label": "Zero Trust Architecture"
+      },
+      {
+        "id": "urn:ngm:class:single-sign-on",
+        "label": "Single Sign-On"
+      },
+      {
+        "id": "urn:ngm:class:least-privilege",
+        "label": "Least Privilege"
+      },
+      {
+        "id": "urn:ngm:class:audit-and-compliance",
+        "label": "Audit and Compliance"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:role-based-access-control",
+        "label": "Role-Based Access Control"
+      },
+      {
+        "id": "urn:ngm:class:attribute-based-access-control",
+        "label": "Attribute-Based Access Control"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:network-access-control",
+        "label": "Network Access Control"
+      },
+      {
+        "id": "urn:ngm:class:perimeter-security",
+        "label": "Perimeter Security"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self-Sovereign Identity"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:oauth-2-0",
         "label": "OAuth 2.0"
       },
       {
-        "id": "urn:ngm:class:authentication",
-        "label": "Authentication"
+        "id": "urn:ngm:class:openid-connect",
+        "label": "OpenID Connect"
+      },
+      {
+        "id": "urn:ngm:class:saml",
+        "label": "SAML"
+      },
+      {
+        "id": "urn:ngm:class:ldap",
+        "label": "LDAP"
+      },
+      {
+        "id": "urn:ngm:class:multi-factor-authentication",
+        "label": "Multi-Factor Authentication"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
       }
     ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-iec-27001",
+        "label": "ISO/IEC 27001"
+      },
+      {
+        "id": "urn:ngm:class:nist-sp-800-53",
+        "label": "NIST SP 800-53"
+      },
+      {
+        "id": "urn:ngm:class:scim",
+        "label": "SCIM"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -51,8 +149,12 @@
         "label": "Identity Management"
       },
       {
-        "id": "urn:ngm:class:single-sign-on",
-        "label": "Single Sign-On"
+        "id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
       }
     ]
   },

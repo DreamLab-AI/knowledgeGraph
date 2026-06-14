@@ -4,7 +4,7 @@
   "slug": "stochastic-differential-equation",
   "public": true,
   "classIri": "urn:ngm:class:stochastic-differential-equation",
-  "domain": "science",
+  "domain": "machine-learning",
   "definition": "A stochastic differential equation (SDE) is a differential equation in which one or more terms incorporate a stochastic process, typically Brownian motion or white noise, making the solution itself a stochastic process. SDEs generalise ordinary differential equations by including a diffusion term driven by a Wiener process, and their solutions are interpreted via Ito or Stratonovich calculus.",
   "subClassOf": [
     {

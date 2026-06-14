@@ -99,7 +99,7 @@ public:: true
   "@type": "Class",
   "label": "Computer Vision Domain",
   "definition": "The Computer Vision Domain covers the extraction of structured information from images, video and other visual signals. Its scope includes image formation, feature detection, recognition, segmentation and three-dimensional scene understanding. It is an application sub-area of the Artificial Intelligence Domain and relies heavily on the methods of the Machine Learning Domain. The boundary excludes the generation of imagery for display purposes, which belongs to the Computer Graphics Domain.",
-  "domain": "computer-vision",
+  "domain": "ai",
   "maturity": "emerging",
   "qualityScore": 0.7,
   "subClassOf": [

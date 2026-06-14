@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:asset-portability",
   "domain": "spatial-computing",
-  "definition": "Asset portability in spatial computing refers to the technical and standards-based capability to transfer, import, and faithfully render digital assets \u2014 including 3D models, textures, avatars, animations, and environments \u2014 across different rendering engines, platforms, and virtual world applications without loss of fidelity or functionality. Portability depends on common open file formats, agreed semantic conventions for material properties and skeletal rigs, and runtime interoperability layers. It is a prerequisite for the open metaverse vision of user-owned, platform-neutral digital property.",
+  "definition": "Asset portability is the technical and standards-based capability to transfer, import, and faithfully render digital assets \u2014 including 3D models, textures, avatars, animations, and environments \u2014 across different rendering engines, platforms, and virtual world applications without loss of fidelity or functionality. It depends on open file formats, agreed semantic conventions for material properties and skeletal rigs, and runtime interoperability layers. Asset portability is a prerequisite for platform-neutral digital property ownership in the open metaverse, enabling creators and users to carry value across application boundaries. It intersects with data portability principles in broader digital-rights discourse and with blockchain-based ownership for non-fungible digital items.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-content-and-assets",
@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
+  "qualityScore": 0.72,
   "maturity": "emerging",
   "relationships": {
     "hasPart": [],
@@ -25,6 +25,14 @@
       {
         "id": "urn:ngm:class:interoperability",
         "label": "Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
+      },
+      {
+        "id": "urn:ngm:class:physically-based-rendering",
+        "label": "Physically Based Rendering"
       }
     ],
     "enables": [
@@ -35,20 +43,110 @@
       {
         "id": "urn:ngm:class:cross-platform-interoperability",
         "label": "Cross-Platform Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:user-owned-digital-property",
+        "label": "User-Owned Digital Property"
+      },
+      {
+        "id": "urn:ngm:class:open-metaverse",
+        "label": "Open Metaverse"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:gltf",
+        "label": "glTF"
+      },
+      {
+        "id": "urn:ngm:class:universal-scene-description",
+        "label": "Universal Scene Description"
+      },
+      {
+        "id": "urn:ngm:class:runtime-api",
+        "label": "Runtime API"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:vendor-lock-in",
+        "label": "Vendor Lock-In"
+      },
+      {
+        "id": "urn:ngm:class:proprietary-format",
+        "label": "Proprietary Format"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:non-fungible-token",
+        "label": "Non-Fungible Token"
+      },
+      {
+        "id": "urn:ngm:class:data-portability",
+        "label": "Data Portability"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:webxr",
+        "label": "WebXR"
+      },
+      {
+        "id": "urn:ngm:class:openxr",
+        "label": "OpenXR"
+      },
+      {
+        "id": "urn:ngm:class:vrm-format",
+        "label": "VRM Format"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:khronos-group",
+        "label": "Khronos Group"
+      },
+      {
+        "id": "urn:ngm:class:alliance-for-openusd",
+        "label": "Alliance for OpenUSD"
+      },
+      {
+        "id": "urn:ngm:class:metaverse-standards-forum",
+        "label": "Metaverse Standards Forum"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
         "id": "urn:ngm:class:3-d-asset-standard",
         "label": "3D Asset Standard"
+      },
+      {
+        "id": "urn:ngm:class:content-pipeline",
+        "label": "Content Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:scene-graph",
+        "label": "Scene Graph"
       }
     ]
   },

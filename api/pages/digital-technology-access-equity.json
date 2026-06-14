@@ -4,52 +4,134 @@
   "slug": "digital-technology-access-equity",
   "public": true,
   "classIri": "urn:ngm:class:digital-technology-access-equity",
-  "domain": "infrastructure",
-  "definition": "The principle of fair and impartial access to AI, media technologies, and digital infrastructure across geographic, socioeconomic, and demographic groups. Equity in this context addresses disparities in technological access, educational opportunity, and participation in AI-driven economies, and informs legal frameworks and international cooperation mechanisms designed to close digital divide gaps.",
+  "domain": "governance",
+  "definition": "Digital Technology Access Equity is the principle that all individuals and communities, regardless of geographic location, socioeconomic status, disability, gender, age, or ethnicity, should have fair and meaningful access to digital technologies, connectivity infrastructure, and the skills required to participate fully in digital economies. The concept extends beyond physical access to broadband or devices to encompass affordability, digital literacy, relevant content, and the capacity to derive genuine benefit from AI, cloud computing, and platform ecosystems. It directly shapes policy frameworks, international development agendas, and corporate social responsibility obligations by treating technology access as a prerequisite for social and economic inclusion. Addressing equity gaps requires coordinated interventions across infrastructure deployment, education, regulatory mandates, and localised content production.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:infra-legal-and-regulatory",
-      "label": "Legal and Regulatory"
+      "id": "urn:ngm:class:digital-inclusion",
+      "label": "Digital Inclusion"
     }
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:broadband-connectivity",
+        "label": "Broadband Connectivity"
+      },
+      {
+        "id": "urn:ngm:class:digital-literacy",
+        "label": "Digital Literacy"
+      },
+      {
+        "id": "urn:ngm:class:affordable-access",
+        "label": "Affordable Access"
+      }
+    ],
     "requires": [
+      {
+        "id": "urn:ngm:class:telecommunications-infrastructure",
+        "label": "Telecommunications Infrastructure"
+      },
       {
         "id": "urn:ngm:class:ai-regulation",
         "label": "AI Regulation"
+      },
+      {
+        "id": "urn:ngm:class:public-policy",
+        "label": "Public Policy"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:education-technology",
         "label": "Education Technology"
-      }
-    ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:ai-ethics",
-        "label": "AI Ethics"
-      }
-    ],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
+      },
       {
         "id": "urn:ngm:class:education-and-ai",
         "label": "Education and AI"
       },
       {
+        "id": "urn:ngm:class:economic-participation",
+        "label": "Economic Participation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:open-data",
+        "label": "Open Data"
+      },
+      {
+        "id": "urn:ngm:class:universal-service-obligation",
+        "label": "Universal Service Obligation"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:digital-divide",
+        "label": "Digital Divide"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-bias",
+        "label": "AI Bias"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
+    ],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:algorithmic-fairness",
+        "label": "Algorithmic Fairness"
+      },
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:itu-standards",
+        "label": "ITU Standards"
+      },
+      {
+        "id": "urn:ngm:class:un-broadband-commission",
+        "label": "UN Broadband Commission"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:digital-inclusion",
+        "label": "Digital Inclusion"
+      },
+      {
+        "id": "urn:ngm:class:sustainable-development-goals",
+        "label": "Sustainable Development Goals"
+      }
+    ],
+    "relatedTo": [
+      {
         "id": "urn:ngm:class:fairness-oecd",
         "label": "Fairness (OECD)"
+      },
+      {
+        "id": "urn:ngm:class:data-sovereignty",
+        "label": "Data Sovereignty"
+      },
+      {
+        "id": "urn:ngm:class:human-rights-and-technology",
+        "label": "Human Rights and Technology"
       }
     ]
   },

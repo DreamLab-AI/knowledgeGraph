@@ -43,7 +43,7 @@ public:: true
   "@type": "Class",
   "label": "Singapore",
   "definition": "A sovereign island city-state in Southeast Asia and a major financial and technology hub. It is known for its role in global trade, finance, and as a centre for fintech and digital asset regulation.",
-  "domain": "geography",
+  "domain": "finance",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

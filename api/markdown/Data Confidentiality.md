@@ -47,7 +47,7 @@ public:: true
   "@type": "Class",
   "label": "Data Confidentiality",
   "definition": "The property that data is accessible only to those authorised to view it, protecting information from disclosure to unauthorised parties. It is one of the core objectives of information security.",
-  "domain": "information-security",
+  "domain": "security",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

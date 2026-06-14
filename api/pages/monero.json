@@ -4,39 +4,133 @@
   "slug": "monero",
   "public": true,
   "classIri": "urn:ngm:class:monero",
-  "domain": "monero",
-  "definition": "Monero is a privacy-focused cryptocurrency launched in 2014 that obscures the sender, recipient and amount of every transaction by default. It uses ring signatures to hide the true spender among decoys, stealth addresses to conceal the recipient, and a confidential transaction scheme called RingCT to hide amounts. The protocol uses a proof-of-work algorithm designed to favour general-purpose hardware over specialised mining equipment. Monero is among the most widely used privacy coins and is governed by an open community development process.",
+  "domain": "blockchain",
+  "definition": "Monero (XMR) is an open-source, privacy-preserving cryptocurrency launched in April 2014 as a fork of the Bytecoin codebase, distinguished by making confidentiality mandatory for every transaction rather than optional. It achieves unlinkability and untraceability through three complementary cryptographic primitives: ring signatures that blend the spender's output among decoys drawn from the blockchain history, one-time stealth addresses that prevent linking payments to a recipient's public key, and Ring Confidential Transactions (RingCT) that hide transferred amounts using Pedersen commitments. The protocol employs a proof-of-work algorithm \u2014 originally CryptoNight, later RandomX \u2014 engineered to maintain parity between CPUs and GPUs while resisting ASIC specialisation, thereby preserving decentralised mining participation.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:blockchain-domain",
-      "label": "Blockchain Domain"
+      "id": "urn:ngm:class:privacy-coin",
+      "label": "Privacy Coin"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.74,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:proof-of-work",
-        "label": "Proof of Work"
-      },
-      {
         "id": "urn:ngm:class:ring-signature",
         "label": "Ring Signature"
+      },
+      {
+        "id": "urn:ngm:class:stealth-address",
+        "label": "Stealth Address"
+      },
+      {
+        "id": "urn:ngm:class:pedersen-commitment",
+        "label": "Pedersen Commitment"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-work",
+        "label": "Proof of Work"
       }
     ],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:financial-privacy",
+        "label": "Financial Privacy"
+      },
+      {
+        "id": "urn:ngm:class:fungibility",
+        "label": "Fungibility"
+      },
+      {
+        "id": "urn:ngm:class:censorship-resistance",
+        "label": "Censorship Resistance"
+      }
+    ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:ring-confidential-transactions",
+        "label": "Ring Confidential Transactions"
+      },
+      {
+        "id": "urn:ngm:class:cryptonote-protocol",
+        "label": "CryptoNote Protocol"
+      },
+      {
+        "id": "urn:ngm:class:randomx",
+        "label": "RandomX"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      },
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "id": "urn:ngm:class:zcash",
+        "label": "Zcash"
+      },
+      {
+        "id": "urn:ngm:class:dash",
+        "label": "Dash"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:secure-multi-party-computation",
+        "label": "Secure Multi-Party Computation"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:bulletproofs",
+        "label": "Bulletproofs"
+      },
+      {
+        "id": "urn:ngm:class:dandelion-plus-plus",
+        "label": "Dandelion++"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -4,25 +4,86 @@
   "slug": "open-id-foundation",
   "public": true,
   "classIri": "urn:ngm:class:open-id-foundation",
-  "domain": "blockchain",
-  "definition": "The OpenID Foundation (OIDF) is an international, member-driven, non-profit standards organisation that stewards the OpenID family of identity specifications, including OpenID Connect, FAPI (Financial-grade API), and MODRNA. It coordinates working groups composed of industry participants\u2014identity providers, relying parties, and government bodies\u2014to develop, test interoperability of, and maintain open specifications for federated authentication and authorisation. The Foundation also operates certification programmes to verify conformance of implementations to published profiles, thereby reducing interoperability barriers across global digital identity ecosystems.",
+  "domain": "security",
+  "definition": "The OpenID Foundation (OIDF) is an international, member-driven, non-profit standards organisation that stewards the OpenID family of identity specifications, including OpenID Connect, FAPI (Financial-grade API), MODRNA, and Digital Credentials. It coordinates working groups composed of identity providers, relying parties, and government bodies to develop, test interoperability of, and maintain open specifications for federated authentication and authorisation. The Foundation operates certification programmes to verify implementation conformance to published profiles, reducing interoperability barriers across global digital identity ecosystems. Founded in 2007, the OIDF operates under a royalty-free intellectual property policy, ensuring open access to its specifications without patent encumbrance.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:bc-governance-and-regulation",
-      "label": "BC Governance and Regulation"
+      "id": "urn:ngm:class:standards-body",
+      "label": "Standards Body"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.72,
+  "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:openid-connect-working-group",
+        "label": "OpenID Connect Working Group"
+      },
+      {
+        "id": "urn:ngm:class:fapi-working-group",
+        "label": "FAPI Working Group"
+      },
+      {
+        "id": "urn:ngm:class:digital-credentials-working-group",
+        "label": "Digital Credentials Working Group"
+      },
+      {
+        "id": "urn:ngm:class:modrna-working-group",
+        "label": "MODRNA Working Group"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:federated-identity",
+        "label": "Federated Identity"
+      },
+      {
+        "id": "urn:ngm:class:single-sign-on",
+        "label": "Single Sign-On"
+      },
+      {
+        "id": "urn:ngm:class:open-banking",
+        "label": "Open Banking"
+      },
+      {
+        "id": "urn:ngm:class:conformance-certification",
+        "label": "Conformance Certification"
+      }
+    ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:oauth-2",
+        "label": "OAuth 2.0"
+      },
+      {
+        "id": "urn:ngm:class:json-web-token",
+        "label": "JSON Web Token"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:saml",
+        "label": "SAML"
+      },
+      {
+        "id": "urn:ngm:class:w3c-did",
+        "label": "W3C DID"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:digital-wallet",
+        "label": "Digital Wallet"
+      },
+      {
+        "id": "urn:ngm:class:eidas",
+        "label": "eIDAS"
+      }
+    ],
     "uses": [],
     "supports": [
       {
@@ -30,16 +91,19 @@
         "label": "OpenID Connect"
       },
       {
+        "id": "urn:ngm:class:financial-grade-api",
+        "label": "Financial-grade API"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      },
+      {
         "id": "urn:ngm:class:digital-identity-standards",
         "label": "Digital Identity Standards"
       }
     ],
-    "standardizedBy": [
-      {
-        "id": "urn:ngm:class:standards-body",
-        "label": "Standards Body"
-      }
-    ],
+    "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
       {
@@ -49,6 +113,14 @@
       {
         "id": "urn:ngm:class:authentication-standards",
         "label": "Authentication Standards"
+      },
+      {
+        "id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self-Sovereign Identity"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
       }
     ]
   },

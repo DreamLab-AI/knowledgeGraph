@@ -56,7 +56,7 @@ elevatedFrom:: [[Llama]]
   "@type": "Class",
   "label": "Meta Llama Model Family",
   "definition": "Llama is a family of large language models developed by Meta and released, in large part, with open weights for research and commercial use. First introduced in 2023 with LLaMA, followed by Llama 2, Llama 3 and later versions, the models are transformer-based and trained on large text corpora. By releasing model weights under permissive terms, Meta enabled a wide range of independent fine-tuning and deployment, making Llama a common base for open models. The family spans several parameter sizes to suit different compute and latency requirements.",
-  "domain": "llama",
+  "domain": "ai",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

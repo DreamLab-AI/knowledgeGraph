@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:agentic-workflow",
   "domain": "ai",
-  "definition": "An agentic workflow is a structured pattern of autonomous agent behaviour in which an AI model iteratively plans, executes tool calls, observes results, and revises its approach until a goal is achieved or a stopping condition is met. Unlike single-pass inference, agentic workflows employ loops, branching logic, memory, and multi-step reasoning that may span seconds to hours and involve multiple specialised sub-agents. The pattern emerged from large language model capabilities (tool use, function calling, long context) and underlies systems such as AutoGPT, LangGraph, Claude's computer use, and OpenAI's Agents SDK.",
+  "definition": "An agentic workflow is a structured, iterative execution pattern in which an AI agent autonomously plans actions, invokes external tools or APIs, observes results, and revises its approach through successive reasoning cycles until a goal condition is satisfied or a stopping criterion is met. Unlike single-pass inference, agentic workflows employ persistent memory, branching logic, and multi-step planning that may span many inference calls and involve specialised sub-agents coordinated by an orchestrator. The pattern relies on large language model capabilities \u2014 tool use, function calling, long-context reasoning \u2014 and is the architectural basis for systems such as AutoGPT, LangGraph, CrewAI, OpenAI Agents SDK, and Anthropic's Claude toolset. Agentic workflows introduce novel safety and reliability challenges including error compounding, prompt injection via tool outputs, and the need for human-in-the-loop checkpoints in high-stakes deployments.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:workflow-automation",
@@ -13,10 +13,23 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.74,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:plan-and-execute-pattern",
+        "label": "Plan-and-Execute Pattern"
+      },
+      {
+        "id": "urn:ngm:class:reflection-pattern",
+        "label": "Reflection Pattern"
+      },
+      {
+        "id": "urn:ngm:class:tool-call-loop",
+        "label": "Tool Call Loop"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:context-window",
@@ -25,6 +38,10 @@
       {
         "id": "urn:ngm:class:large-language-models",
         "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:agent-memory",
+        "label": "Agent Memory"
       }
     ],
     "enables": [
@@ -39,12 +56,51 @@
       {
         "id": "urn:ngm:class:retrieval-augmented-generation",
         "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-coding",
+        "label": "Autonomous Coding"
+      },
+      {
+        "id": "urn:ngm:class:ai-research-assistant",
+        "label": "AI Research Assistant"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:llm-inference",
+        "label": "LLM Inference"
+      },
+      {
+        "id": "urn:ngm:class:api-integration",
+        "label": "API Integration"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:single-turn-inference",
+        "label": "Single-Turn Inference"
+      },
+      {
+        "id": "urn:ngm:class:traditional-workflow-orchestration",
+        "label": "Traditional Workflow Orchestration"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:human-in-the-loop",
+        "label": "Human-in-the-Loop"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:prompt-injection",
+        "label": "Prompt Injection"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:tool-use",
@@ -65,6 +121,10 @@
       {
         "id": "urn:ngm:class:prompt-engineering",
         "label": "Prompt Engineering"
+      },
+      {
+        "id": "urn:ngm:class:react-pattern",
+        "label": "ReAct Pattern"
       }
     ],
     "supports": [],
@@ -90,6 +150,10 @@
       {
         "id": "urn:ngm:class:planning-and-scheduling",
         "label": "Planning and Scheduling"
+      },
+      {
+        "id": "urn:ngm:class:robotic-process-automation",
+        "label": "Robotic Process Automation"
       }
     ]
   },

@@ -55,7 +55,7 @@ public:: true
   "@type": "Class",
   "label": "Yoti",
   "definition": "A digital identity company that provides identity verification, age estimation and authentication services for individuals and organisations.",
-  "domain": "general",
+  "domain": "security",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

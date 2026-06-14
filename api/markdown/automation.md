@@ -1,19 +1,86 @@
 - ### Definition
-  - The use of technology to perform tasks with reduced human intervention. It spans physical processes in manufacturing and robotics as well as software workflows and business processes.
+  - Automation is the application of technology, [[Control Systems]], and software to execute processes, tasks, or workflows with minimal or no human intervention. It transfers decision-making and execution from people to machines or algorithms, ranging from fixed [[Industrial Automation]] driven by [[Programmable Logic Controllers]] and [[Robotics]], through software-driven [[Robotic Process Automation]] that replicates repetitive digital workflows, to fully adaptive [[Autonomous Systems]] guided by [[Artificial Intelligence]]. Its core objectives are increased throughput, reduced error rates, lower operational costs, and the redirection of human attention towards non-routine judgement tasks.
 
-- ### Semantic Classification
-  - owl-class:: automation:Automation
-  - owl-role:: Class
+- ### Overview
+  - Automation is one of the most foundational concepts in engineering, computing, and organisational design. Its history spans mechanical looms and steam-powered governors through relay logic and [[Programmable Logic Controllers]], to modern [[Machine Learning]]-driven intelligent pipelines. The concept unifies physical and digital domains: a factory conveyor obeying a PLC and a [[DevOps]] pipeline that compiles, tests, and deploys software are both expressions of the same underlying principle — a defined input-process-output cycle executing without per-instance human direction.
+  - Why it matters:
+    - Enables consistent, repeatable execution at machine speed and scale.
+    - Reduces variance and human error in high-volume, well-defined processes.
+    - Shifts workforce activity toward exception-handling, oversight, and creative work.
+    - Provides the technical substrate for [[Scalability]] — automated systems can handle orders-of-magnitude increases in load without proportional human resource increases.
+  - The spectrum of automation:
+    - **Fixed (hard) automation** — single-purpose machinery with no reprogrammability (e.g., transfer lines).
+    - **Programmable automation** — batch-reconfigurable machines controlled by [[Programmable Logic Controllers]] or numerical control (NC/CNC).
+    - **Flexible automation** — software-controlled systems reprogrammable in real time, enabling mixed-model production.
+    - **Intelligent automation** — systems incorporating [[Machine Learning]], [[Computer Vision]], or [[Natural Language Processing]] to handle variability and make context-sensitive decisions.
+
+- ### Key Components
+  - **[[Sensors]]** — gather real-world state data (temperature, position, image, text) that drive automated decision logic.
+  - **[[Actuators]]** — translate control outputs into physical action (motors, valves, relays, API calls).
+  - **[[Control Systems]]** — the logic layer (PLC ladder logic, PID controllers, rule engines, ML models) that transforms sensor input into actuator commands via [[Feedback Loops]].
+  - **[[Feedback Loops]]** — closed-loop control compares actual system state to desired state and corrects deviations; open-loop control executes predetermined sequences without correction.
+  - **[[Programmable Logic Controllers]]** — ruggedised industrial computers that execute ladder or structured-text logic for factory-floor control; the backbone of [[Industrial Automation]].
+  - **[[Robotic Process Automation]]** — software bots that mimic human interaction with GUIs and APIs to automate repetitive digital tasks (data entry, report generation, system integration).
+  - **[[Workflow Automation]]** — orchestration of multi-step business or technical processes through event triggers, conditional branching, and integration connectors (e.g., Zapier, n8n, Apache Airflow).
+  - **[[Test Automation]]** — automated execution of software test suites within [[Continuous Integration]] pipelines, enabling rapid feedback on code quality.
+  - **[[Orchestration]]** — higher-order coordination of multiple automated subsystems or microservices, scheduling tasks, managing dependencies, and handling failures.
+
+- ### Mechanisms
+  - **Event-driven execution** — automation is triggered by observable events (sensor threshold, message arrival, schedule tick, API webhook) rather than continuous human monitoring.
+  - **Rule-based logic** — if-then-else decision trees encode human expertise into deterministic control flows; the basis of traditional PLC programming and business rules engines.
+  - **Model-based control** — mathematical models of plant dynamics enable feedforward and model-predictive control, optimising trajectories before disturbances propagate.
+  - **Learning-based adaptation** — [[Machine Learning]] models trained on historical data allow automation to generalise to previously unseen inputs, enabling [[Autonomous Systems]] that improve with experience.
+  - **API integration** — modern software automation relies on standardised [[Application Programming Interfaces]] to connect disparate systems without brittle screen-scraping.
+  - **Declarative pipelines** — tools such as YAML-defined CI/CD pipelines (GitHub Actions, GitLab CI) describe desired outcomes; the engine resolves execution order and parallelism.
+
+- ### Applications
+  - **[[Industrial Automation]] and manufacturing** — CNC machining centres, robotic welding cells, automated packaging lines, and quality-inspection systems driven by [[Computer Vision]] all reduce defect rates and cycle times.
+  - **[[Supply Chain Management]]** — automated warehousing (ASRS), demand forecasting pipelines, purchase-order generation, and carrier-booking bots reduce lead times and inventory carrying costs.
+  - **[[Business Process Management]]** — [[Robotic Process Automation]] handles invoice processing, customer onboarding, regulatory reporting, and HR workflows at scale in financial, healthcare, and government sectors.
+  - **[[DevOps]] and software delivery** — [[Continuous Integration]] and continuous delivery (CI/CD) pipelines automate build, test, security scan, and deployment, compressing release cycles from months to hours.
+  - **[[Internet of Things]] infrastructure** — billions of connected devices rely on automated monitoring, firmware update, anomaly detection, and self-healing logic executed without operator intervention.
+  - **[[Edge Computing]]** — latency-critical automation (autonomous vehicles, robotics, industrial vision) executes inference and control locally rather than round-tripping to cloud.
+  - **[[Intelligent Agents]] and AI pipelines** — LLM-driven agentic systems automate research, code generation, data analysis, and multi-step decision tasks, representing the frontier of cognitive automation.
+  - **[[Digital Twins]]** — virtual replicas of physical assets run automated simulations to predict failures, optimise setpoints, and validate control changes before deployment.
 
 - ### Relationships
-  - is-subclass-of:: [[owl:Thing]]
-  - bridges-to:: [[Robotics]]
-  - enables:: [[Robotic Process Automation]]
+  - hasPart:: [[Robotic Process Automation]]
+  - hasPart:: [[Industrial Automation]]
+  - hasPart:: [[Workflow Automation]]
+  - hasPart:: [[Test Automation]]
+  - requires:: [[Control Systems]]
+  - requires:: [[Sensors]]
+  - requires:: [[Actuators]]
+  - dependsOn:: [[Feedback Loops]]
+  - dependsOn:: [[Programmable Logic Controllers]]
+  - enables:: [[Robotics]]
+  - enables:: [[Scalability]]
+  - enables:: [[Continuous Integration]]
+  - enables:: [[DevOps]]
+  - uses:: [[Machine Learning]]
+  - uses:: [[Computer Vision]]
+  - uses:: [[Natural Language Processing]]
+  - supports:: [[Supply Chain Management]]
+  - supports:: [[Business Process Management]]
+  - supports:: [[Edge Computing]]
+  - contrastsWith:: [[Human-in-the-Loop]]
+  - bridges-to:: [[Artificial Intelligence]]
+  - bridges-to:: [[Intelligent Agents]]
+  - bridges-to:: [[Digital Twins]]
+  - relatedTo:: [[Orchestration]]
+  - relatedTo:: [[Autonomous Systems]]
+  - relatedTo:: [[Internet of Things]]
 
-- ### Content
-  - Automation replaces or augments manual effort with machines, control systems, and software. It ranges from mechanical and industrial automation to software-based process automation that executes routine digital tasks.
-  - The aim is typically to improve consistency, speed, and cost, although automation also reshapes work by shifting human roles toward supervision, exception handling, and higher-level decisions.
+- ### Standards & Context
+  - **IEC 61131-3** — international standard for [[Programmable Logic Controllers]] programming languages (Ladder Diagram, Structured Text, Function Block Diagram, Instruction List, Sequential Function Chart); the lingua franca of industrial automation.
+  - **ISA-95 / IEC 62264** — standard for enterprise-control system integration, defining the interface between [[Business Process Management]] layers and manufacturing execution systems (MES).
+  - **ISA-88 / IEC 61512** — batch process control standard defining procedural control models widely used in pharmaceutical and food manufacturing automation.
+  - **OPC UA (IEC 62541)** — platform-independent, service-oriented communication protocol for industrial automation data exchange, increasingly underpinning [[Internet of Things]] integration.
+  - **IEEE 7010** — recommended practice for assessing the impact of autonomous and intelligent systems on human well-being, relevant to the societal dimensions of automation.
+  - **ISO 10218 / ISO/TS 15066** — safety standards for industrial [[Robotics]] and collaborative robots (cobots) operating alongside humans.
+  - **BPMN 2.0 (OMG)** — Business Process Model and Notation standard used to specify and document automated [[Business Process Management]] workflows.
+  - Governance bodies include the International Society of Automation (ISA), the IEC TC65 technical committee, and the IEEE Robotics and Automation Society.
 
 - ### Provenance
-  - sources::
-  - migration-date:: 2026-05-29T00:00:00Z
+  - sources:: IEC 61131-3; ISA-95; NIST SP 500-321; IEEE 7010; established engineering and computer science literature
+  - updated:: 2026-06-13

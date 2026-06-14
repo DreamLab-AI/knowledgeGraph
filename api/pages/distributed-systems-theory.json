@@ -4,7 +4,7 @@
   "slug": "distributed-systems-theory",
   "public": true,
   "classIri": "urn:ngm:class:distributed-systems-theory",
-  "domain": "mathematics",
+  "domain": "machine-learning",
   "definition": "The theoretical study of computational systems whose components run on separate networked machines and coordinate by passing messages.",
   "subClassOf": [
     {

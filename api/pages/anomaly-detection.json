@@ -5,19 +5,41 @@
   "public": true,
   "classIri": "urn:ngm:class:anomaly-detection",
   "domain": "artificial-intelligence",
-  "definition": "Anomaly detection is a machine learning and statistical discipline concerned with identifying observations, sequences, or structural patterns that deviate significantly from a learned or assumed norm, signalling potential faults, threats, or novel phenomena. It operates in three modes: point anomaly detection (a single observation is outlying), contextual anomaly detection (an observation is anomalous given its context, e.g. a transaction at an unusual time), and collective anomaly detection (a group of observations is anomalous relative to each other). Applications span fraud detection, network intrusion detection, industrial fault monitoring, and medical diagnostics.",
+  "definition": "Anomaly detection is a machine learning and statistical discipline concerned with identifying observations, sequences, or structural patterns that deviate significantly from a learned or assumed norm, signalling potential faults, threats, or novel phenomena. It operates across three principal modes: point anomaly detection (a single observation is outlying relative to the full dataset), contextual anomaly detection (an observation is anomalous given its local context, such as a transaction at an unusual time of day), and collective anomaly detection (a subsequence or group of observations is jointly anomalous relative to expected behaviour). The field draws on statistical modelling, machine learning, and signal processing to serve applications ranging from fraud detection and network intrusion detection to industrial fault monitoring, medical diagnostics, and log analysis.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique"
+      "id": "urn:ngm:class:machine-learning-discipline",
+      "label": "Machine Learning"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:point-anomaly-detection",
+        "label": "Point Anomaly Detection"
+      },
+      {
+        "id": "urn:ngm:class:contextual-anomaly-detection",
+        "label": "Contextual Anomaly Detection"
+      },
+      {
+        "id": "urn:ngm:class:collective-anomaly-detection",
+        "label": "Collective Anomaly Detection"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:statistical-modelling",
+        "label": "Statistical Modelling"
+      },
+      {
+        "id": "urn:ngm:class:threshold-calibration",
+        "label": "Threshold Calibration"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:fraud-detection",
@@ -26,12 +48,47 @@
       {
         "id": "urn:ngm:class:cybersecurity",
         "label": "Cybersecurity"
+      },
+      {
+        "id": "urn:ngm:class:predictive-maintenance",
+        "label": "Predictive Maintenance"
+      },
+      {
+        "id": "urn:ngm:class:intrusion-detection-system",
+        "label": "Intrusion Detection System"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
+      },
+      {
+        "id": "urn:ngm:class:data-preprocessing",
+        "label": "Data Preprocessing"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
+      },
+      {
+        "id": "urn:ngm:class:classification",
+        "label": "Classification"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      },
+      {
+        "id": "urn:ngm:class:iot-sensor-data",
+        "label": "IoT Sensor Data"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:machine-learning-discipline",
@@ -40,6 +97,18 @@
       {
         "id": "urn:ngm:class:pattern-recognition",
         "label": "Pattern Recognition"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:autoencoder",
+        "label": "Autoencoder"
+      },
+      {
+        "id": "urn:ngm:class:isolation-forest",
+        "label": "Isolation Forest"
       }
     ],
     "supports": [],
@@ -49,6 +118,22 @@
       {
         "id": "urn:ngm:class:time-series-forecasting",
         "label": "Time Series Forecasting"
+      },
+      {
+        "id": "urn:ngm:class:outlier-detection",
+        "label": "Outlier Detection"
+      },
+      {
+        "id": "urn:ngm:class:change-point-detection",
+        "label": "Change Point Detection"
+      },
+      {
+        "id": "urn:ngm:class:concept-drift",
+        "label": "Concept Drift"
+      },
+      {
+        "id": "urn:ngm:class:model-monitoring",
+        "label": "Model Monitoring"
       }
     ]
   },

@@ -4,8 +4,8 @@
   "slug": "institutional-economics",
   "public": true,
   "classIri": "urn:ngm:class:institutional-economics",
-  "domain": "general",
-  "definition": "A school of economic thought that studies how institutions, the formal and informal rules governing behaviour, shape economic activity and outcomes.",
+  "domain": "governance",
+  "definition": "A school of economic thought that analyses how formal institutions (laws, regulations, contracts) and informal institutions (norms, customs, culture) shape economic behaviour, incentive structures, and aggregate outcomes. It departs from neoclassical assumptions of frictionless exchange by foregrounding transaction costs, bounded rationality, and the evolutionary path-dependence of rules. The field spans the original institutionalism of Veblen and Commons and the New Institutional Economics (NIE) of Coase, North, and Williamson, which provided micro-foundations for why institutions exist and how they change. Institutional economics informs applied work in development economics, regulatory design, organisational theory, and governance of digital platforms.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:economics",
@@ -13,31 +13,130 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.74,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:new-institutional-economics",
+        "label": "New Institutional Economics"
+      },
+      {
+        "id": "urn:ngm:class:original-institutionalism",
+        "label": "Original Institutionalism"
+      },
+      {
+        "id": "urn:ngm:class:transaction-cost-economics",
+        "label": "Transaction Cost Economics"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:economics",
         "label": "Economics"
+      },
+      {
+        "id": "urn:ngm:class:bounded-rationality",
+        "label": "Bounded Rationality"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:property-rights",
         "label": "Property Rights"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-policy",
+        "label": "Regulatory Policy"
+      },
+      {
+        "id": "urn:ngm:class:development-economics",
+        "label": "Development Economics"
+      },
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:transaction-costs",
+        "label": "Transaction Costs"
+      },
+      {
+        "id": "urn:ngm:class:path-dependence",
+        "label": "Path Dependence"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:neoclassical-economics",
+        "label": "Neoclassical Economics"
+      },
+      {
+        "id": "urn:ngm:class:behavioural-economics",
+        "label": "Behavioural Economics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "id": "urn:ngm:class:digital-platform-governance",
+        "label": "Digital Platform Governance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      },
+      {
+        "id": "urn:ngm:class:contract-theory",
+        "label": "Contract Theory"
+      },
+      {
+        "id": "urn:ngm:class:principal-agent-theory",
+        "label": "Principal-Agent Theory"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:organisational-theory",
+        "label": "Organisational Theory"
+      },
+      {
+        "id": "urn:ngm:class:political-economy",
+        "label": "Political Economy"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:public-choice-theory",
+        "label": "Public Choice Theory"
+      },
+      {
+        "id": "urn:ngm:class:social-norms",
+        "label": "Social Norms"
+      },
+      {
+        "id": "urn:ngm:class:evolutionary-economics",
+        "label": "Evolutionary Economics"
+      },
+      {
+        "id": "urn:ngm:class:commons-governance",
+        "label": "Commons Governance"
+      }
+    ]
   },
   "wikilinks": [
     {

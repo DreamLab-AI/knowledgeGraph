@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:telecommunications-infrastructure",
   "domain": "infrastructure",
-  "definition": "Telecommunications Infrastructure comprises the physical and logical systems \u2014 including fibre-optic networks, cellular base stations, satellite links, exchange points, and backbone routers \u2014 that carry digital communications at scale. It underpins latency-sensitive applications such as real-time rendering, telecollaboration, and edge AI by providing the transport layer on which higher-level protocols operate.",
+  "definition": "Telecommunications Infrastructure encompasses the physical and logical systems \u2014 including fibre-optic cable networks, cellular radio access networks, satellite constellations, submarine cables, internet exchange points, and backbone routers \u2014 that transport digital signals across local, regional, and global scales. It forms the foundational transport layer upon which internet protocols, mobile broadband, and converged communications services operate. As a critical national and commercial resource, it is subject to regulatory oversight, spectrum management, and increasingly stringent security requirements. Modern deployments integrate software-defined networking and network-function virtualisation to increase flexibility and reduce capital expenditure.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-network-and-comms",
@@ -14,9 +14,25 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "emerging",
+  "maturity": "mature",
   "relationships": {
     "hasPart": [
+      {
+        "id": "urn:ngm:class:fibre-optic-network",
+        "label": "Fibre-Optic Network"
+      },
+      {
+        "id": "urn:ngm:class:cellular-network",
+        "label": "Cellular Network"
+      },
+      {
+        "id": "urn:ngm:class:satellite-communication",
+        "label": "Satellite Communication"
+      },
+      {
+        "id": "urn:ngm:class:internet-exchange-point",
+        "label": "Internet Exchange Point"
+      },
       {
         "id": "urn:ngm:class:network-protocol",
         "label": "Network Protocol"
@@ -26,7 +42,16 @@
         "label": "Bandwidth Adaptation"
       }
     ],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:spectrum-management",
+        "label": "Spectrum Management"
+      },
+      {
+        "id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:remote-communication",
@@ -39,12 +64,43 @@
       {
         "id": "urn:ngm:class:video-conferencing",
         "label": "Video Conferencing"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:power-grid-infrastructure",
+        "label": "Power Grid Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:software-defined-networking",
+        "label": "Software-Defined Networking"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:terrestrial-broadcast",
+        "label": "Terrestrial Broadcast"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:edge-ai",
+        "label": "Edge AI"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
     "uses": [],
     "supports": [
       {
@@ -54,11 +110,41 @@
       {
         "id": "urn:ngm:class:content-delivery-network",
         "label": "Content Delivery Network"
+      },
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
       }
     ],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:itu-r",
+        "label": "ITU-R"
+      },
+      {
+        "id": "urn:ngm:class:3gpp",
+        "label": "3GPP"
+      },
+      {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:network-function-virtualisation",
+        "label": "Network Function Virtualisation"
+      },
+      {
+        "id": "urn:ngm:class:open-ran",
+        "label": "Open RAN"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": []

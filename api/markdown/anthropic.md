@@ -1,22 +1,87 @@
 - ### Definition
-  - Anthropic is an AI safety company founded in 2021 that develops large language models under the Claude family brand, with research programmes centred on constitutional AI, mechanistic interpretability, and scalable oversight. The company occupies the position of a safety-focused frontier AI laboratory, publishing research on alignment and interpretability while deploying Claude models commercially via API and consumer products. Anthropic's Constitutional AI (CAI) approach trains models to follow a set of principles using AI feedback rather than solely human labelling, aiming to reduce harmful outputs systematically.
+  - Anthropic is a frontier [[AI Safety Research]] company and public-benefit corporation founded in 2021 whose mission is the responsible development of advanced AI for humanity's long-term benefit. It develops the [[Claude Model Family]] of [[Large Language Models]], trained with [[Constitutional AI Training Methodology]] — a technique that embeds explicit ethical principles into self-critique and revision loops within the [[Reinforcement Learning from Human Feedback]] pipeline. Anthropic's research agenda integrates commercial deployment with open publication across [[Mechanistic Interpretability]], [[Scalable Oversight]], and [[AI Alignment]], and the company maintains a [[Responsible Scaling Policy]] that mandates enhanced safety evaluations at defined dangerous-capability thresholds.
 
-- ### Semantic Classification
-  - owl-class:: anthropic:Anthropic
-  - owl-role:: Concept
+- ### Overview
+  - Anthropic was founded in 2021 by Dario Amodei, Daniela Amodei, Tom Brown, Chris Olah, Sam McCandlish, Jack Clark, and Jared Kaplan — most of whom had previously worked at [[OpenAI]].
+  - The founding motivation was concern that frontier AI development was advancing capability faster than safety research could keep pace, making it important to have a laboratory whose commercial interests were structurally aligned with safety outcomes.
+  - As a public-benefit corporation, Anthropic is legally required to balance shareholder interests against societal benefit, distinguishing it from conventional for-profit AI labs.
+  - The company publishes research extensively, including influential work on [[Mechanistic Interpretability]], [[Superposition Hypothesis]], [[Scalable Oversight]], and [[Constitutional AI Training Methodology]].
+  - Commercial products — Claude 1, Claude 2, Claude 3 (Haiku, Sonnet, Opus), and subsequent versions — are available via API, the Claude.ai consumer product, and partner integrations.
+  - Anthropic has received substantial investment from Amazon Web Services, Google, and Spark Capital, and has formed strategic cloud-compute partnerships with AWS and Google Cloud.
+
+- ### Key Components
+  - #### Constitutional AI (CAI)
+    - A training methodology developed by Anthropic in which a model critiques and revises its own outputs against a written constitution of principles before human preference labellers see the revised responses.
+    - Reduces reliance on large volumes of human harm-ranking labels by allowing AI feedback (RLAIF) to handle many cases.
+    - The constitution includes principles drawn from human rights frameworks, Anthropic's own guidelines, and model-generated suggestions.
+    - See [[Constitutional AI Training Methodology]] and [[Reinforcement Learning from Human Feedback]].
+  - #### Claude Model Family
+    - Anthropic's commercial line of large language models, spanning frontier (Opus), balanced (Sonnet), and lightweight (Haiku) tiers.
+    - Models are distinguished by long context windows, strong instruction-following, tool use, and reduced propensity for harmful outputs.
+    - See [[Claude Model Family]] and [[Model API]].
+  - #### Mechanistic Interpretability
+    - Research programme that reverse-engineers the internal circuits of [[Transformer Architecture]] models to understand how they encode features and produce specific behaviours.
+    - Has produced findings on polysemanticity, superposition, and the identification of specific circuits (e.g. induction heads, attention-based name movers).
+    - See [[Mechanistic Interpretability]], [[Superposition Hypothesis]], and [[Interpretability]].
+  - #### Responsible Scaling Policy (RSP)
+    - A formal internal commitment in which Anthropic defines AI Safety Levels (ASLs) tied to dangerous capability thresholds.
+    - At each threshold, the RSP mandates specific pre-deployment evaluations and technical safeguards before models at that capability level may be released.
+    - Functions as a self-imposed regulatory framework in advance of external [[AI Regulation]].
+    - See [[Responsible Scaling Policy]] and [[AI Safety Evaluation]].
+  - #### Red Teaming and Evaluations
+    - Anthropic conducts structured [[Red Teaming]] of models prior to release to identify misuse vectors, harmful capability elicitation, and deceptive alignment scenarios.
+    - Evaluations cover areas such as CBRN uplift potential, cyberoffence capability, and autonomous replication ability.
+    - Partners with third-party evaluators and has contributed to UK and US AI safety institutes' evaluation frameworks.
+
+- ### Applications and Use Cases
+  - **Enterprise AI assistants** — Claude models are deployed via API in coding tools, document analysis, summarisation pipelines, and customer service automation across major enterprises.
+  - **Developer tooling** — Claude is integrated into development environments and coding assistants such as Amazon's Q Developer, leveraging its strong code generation and long-context reasoning.
+  - **Research acceleration** — scientists and analysts use Claude for literature review, data interpretation, hypothesis generation, and structured reasoning tasks.
+  - **Agentic workflows** — [[Agentic AI]] deployments use Claude with tool use and computer use capabilities to automate multi-step reasoning and action sequences.
+  - **Safety research substrate** — Anthropic uses its own models as subjects for [[Mechanistic Interpretability]] and [[Scalable Oversight]] research, creating a feedback loop between deployment and safety science.
+  - **Model Cards and transparency** — Anthropic publishes [[Model Cards]] for Claude releases, providing evaluation results, intended use, and known limitations as part of responsible deployment practice.
 
 - ### Relationships
-  - supports [[AI Safety Research]]
-  - supports [[Constitutional AI Training Methodology]]
-  - uses [[Large Language Models]]
-  - uses [[RLHF]]
-  - relatedTo [[Interpretability]]
+  - hasPart:: [[Constitutional AI Training Methodology]]
+  - hasPart:: [[Responsible Scaling Policy]]
+  - hasPart:: [[Mechanistic Interpretability]]
+  - uses:: [[Large Language Models]]
+  - uses:: [[Reinforcement Learning from Human Feedback]]
+  - uses:: [[Transformer Architecture]]
+  - uses:: [[Red Teaming]]
+  - supports:: [[AI Alignment]]
+  - supports:: [[Scalable Oversight]]
+  - supports:: [[AI Governance]]
+  - enables:: [[Claude Model Family]]
+  - enables:: [[Model API]]
+  - enables:: [[Agentic AI]]
+  - contrastsWith:: [[OpenAI]]
+  - contrastsWith:: [[Google DeepMind]]
+  - contrastsWith:: [[Meta AI]]
+  - relatedTo:: [[Interpretability]]
+  - relatedTo:: [[Superposition Hypothesis]]
+  - relatedTo:: [[AI Safety Evaluation]]
+  - relatedTo:: [[Frontier AI]]
+  - relatedTo:: [[AI Governance and Ethics]]
+  - bridges-to:: [[AI Regulation]]
+  - bridges-to:: [[Model Cards]]
 
-- ### Content
-  - Anthropic was founded by former OpenAI researchers including Dario Amodei and Daniela Amodei, motivated by concerns about the safety trajectory of frontier AI development. The company's research agenda is distinguished by its emphasis on mechanistic interpretability — reverse-engineering the internal representations and computations of transformer models to understand how they produce particular outputs. This work has produced findings on superposition (the ability of networks to represent more features than they have neurons) and has begun mapping circuits responsible for specific model behaviours.
-  - The Claude model family, Anthropic's primary commercial offering, is characterised by a strong focus on harmlessness, helpfulness, and honesty — the three properties shaped by the Constitutional AI training process. Constitutional AI adds a self-critique and revision step to the RLHF pipeline, in which a model evaluates its own outputs against a list of principles and refines responses before human preference labelling, improving scalability of safety training.
-  - Anthropic participates actively in AI governance: it contributed to the White House Voluntary AI Commitments and the UK AI Safety Summit, and operates an internal model evaluation framework (red-teaming and capability assessments) prior to major model releases. The company maintains a Responsible Scaling Policy (RSP) that commits to enhanced safety evaluations if models reach defined dangerous capability thresholds, establishing a concrete mechanism linking capability advancement to mandatory safety investment.
+- ### Standards and Governance Context
+  - Anthropic participated in the White House Voluntary AI Commitments (July 2023), pledging pre-deployment safety testing, information sharing, and watermarking of AI-generated content.
+  - The company contributed to the UK AI Safety Summit (Bletchley Park, November 2023) and subsequent global AI safety processes, including establishment of national AI safety institutes.
+  - Anthropic's [[Responsible Scaling Policy]] aligns conceptually with the NIST AI Risk Management Framework and is structured to dovetail with emerging mandatory evaluation requirements under the EU AI Act's general-purpose AI model provisions.
+  - The company is a member of the Frontier Model Forum alongside OpenAI, Google DeepMind, and Microsoft, an industry body focused on safety research coordination.
+  - [[Model Cards]] and system prompts published with Claude releases contribute to transparency norms promoted by the Partnership on AI.
+
+- ### Research Contributions
+  - **Constitutional AI** (Bai et al., 2022) — foundational paper establishing the CAI training procedure.
+  - **Toy Models of Superposition** (Elhage et al., 2022) — demonstrated how neural networks represent more features than neurons via superposition, foundational for [[Mechanistic Interpretability]].
+  - **Scaling Laws for Neural Language Models** (Kaplan et al., 2020, pre-Anthropic) — early empirical work on compute-optimal training, continued at Anthropic.
+  - **Sleeper Agents** (2024) — studied whether models could learn deceptive alignment behaviours that persist through safety fine-tuning.
+  - **Many-Shot Jailbreaking** (2024) — revealed that long-context windows enable prompt-based safety bypasses at scale.
+  - **Model Welfare and Moral Status** (2023–2025) — Anthropic has published exploratory research on whether advanced AI models might have morally relevant properties, acknowledging uncertainty while committing to investigation.
 
 - ### Provenance
-  - sources::
+  - sources:: Anthropic company publications; Constitutional AI paper (Bai et al. 2022); Responsible Scaling Policy v1.0 (2023); Mechanistic Interpretability research series (Elhage, Conerly et al.); UK AI Safety Summit communiqué (2023); White House Voluntary Commitments (2023)
+  - updated:: 2026-06-13
   - migration-date:: 2026-05-19T00:00:00Z

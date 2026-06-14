@@ -4,20 +4,42 @@
   "slug": "quantisation",
   "public": true,
   "classIri": "urn:ngm:class:quantisation",
-  "domain": "artificial-intelligence",
-  "definition": "Quantisation is a model compression technique that reduces the numerical precision of a neural network's weights and, optionally, activations from the floating-point formats used during training (typically FP32 or BF16) to lower bit-widths such as INT8, INT4, or binary representations. This reduction decreases memory consumption and accelerates matrix operations on hardware with native low-precision arithmetic units, enabling deployment of large models on memory-constrained devices with minimal accuracy degradation. Techniques include post-training quantisation (PTQ) and quantisation-aware training (QAT), which differ in when the precision reduction is applied relative to the training process.",
+  "domain": "ai",
+  "definition": "Quantisation is a model compression technique that reduces the numerical precision of a neural network's weights and activations from high-precision floating-point formats used during training (typically FP32 or BF16) to lower bit-widths such as INT8, INT4, FP8, or binary representations. This precision reduction decreases memory footprint and accelerates matrix operations on hardware with native low-precision arithmetic units, enabling deployment of large models on memory-constrained or power-limited devices with minimal accuracy degradation. The two primary paradigms are post-training quantisation (PTQ), which applies precision reduction after training using a calibration dataset, and quantisation-aware training (QAT), which simulates low-precision arithmetic during the forward pass so the model adapts its weight distributions to minimise quantisation error. Advanced algorithms such as GPTQ, AWQ, and SmoothQuant extend these approaches to very large language models and diffusion models.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique"
+      "id": "urn:ngm:class:model-compression",
+      "label": "Model Compression"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:post-training-quantisation",
+        "label": "Post-Training Quantisation"
+      },
+      {
+        "id": "urn:ngm:class:quantisation-aware-training",
+        "label": "Quantisation-Aware Training"
+      },
+      {
+        "id": "urn:ngm:class:mixed-precision-quantisation",
+        "label": "Mixed-Precision Quantisation"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:calibration-dataset",
+        "label": "Calibration Dataset"
+      },
+      {
+        "id": "urn:ngm:class:scale-factor",
+        "label": "Scale Factor"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:inference",
@@ -26,33 +48,93 @@
       {
         "id": "urn:ngm:class:edge-ai-accelerator",
         "label": "Edge AI Accelerator"
+      },
+      {
+        "id": "urn:ngm:class:on-device-ai",
+        "label": "On-Device AI"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model-deployment",
+        "label": "Large Language Model Deployment"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [
+    "dependsOn": [
       {
         "id": "urn:ngm:class:hardware-acceleration",
         "label": "Hardware Acceleration"
+      },
+      {
+        "id": "urn:ngm:class:floating-point-arithmetic",
+        "label": "Floating-Point Arithmetic"
       }
     ],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
+    "implements": [],
+    "contrastsWith": [
       {
         "id": "urn:ngm:class:knowledge-distillation",
         "label": "Knowledge Distillation"
       },
       {
+        "id": "urn:ngm:class:pruning",
+        "label": "Pruning"
+      },
+      {
+        "id": "urn:ngm:class:low-rank-factorisation",
+        "label": "Low-Rank Factorisation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:digital-signal-processing",
+        "label": "Digital Signal Processing"
+      },
+      {
+        "id": "urn:ngm:class:fixed-point-arithmetic",
+        "label": "Fixed-Point Arithmetic"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:hardware-acceleration",
+        "label": "Hardware Acceleration"
+      },
+      {
+        "id": "urn:ngm:class:tensor-decomposition",
+        "label": "Tensor Decomposition"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:model-compression",
+        "label": "Model Compression"
+      },
+      {
+        "id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      }
+    ],
+    "relatedTo": [
+      {
         "id": "urn:ngm:class:model-compression-for-edge",
         "label": "Model Compression for Edge"
       },
       {
-        "id": "urn:ngm:class:neural-network-quantisation",
-        "label": "Neural Network Quantisation"
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:neural-architecture-search",
+        "label": "Neural Architecture Search"
+      },
+      {
+        "id": "urn:ngm:class:speculative-decoding",
+        "label": "Speculative Decoding"
       }
     ]
   },

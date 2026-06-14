@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:tezos",
   "domain": "blockchain",
-  "definition": "A proof-of-stake Layer 1 blockchain with on-chain governance that allows the protocol to amend itself through a formal voting process.",
+  "definition": "Tezos is a self-amending, proof-of-stake Layer 1 blockchain platform launched in 2018 that enables on-chain governance through a formal, stakeholder-driven amendment process, allowing protocol upgrades to be proposed, debated, and applied without hard forks. It uses a Liquid Proof of Stake consensus mechanism in which token holders (XTZ holders) may either bake blocks themselves or delegate their stake to bakers, earning proportional rewards. The platform supports Turing-complete smart contracts written in Michelson and higher-level languages such as Ligo and SmartPy, targeting decentralised finance, NFT issuance, and digital asset custody. Its on-chain governance model is considered a pioneering example of decentralised protocol evolution and formal verification-friendly contract design.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:layer-1",
@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
@@ -21,23 +21,117 @@
       {
         "id": "urn:ngm:class:liquid-proof-of-stake",
         "label": "Liquid Proof of Stake"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:non-fungible-token",
+        "label": "Non-Fungible Token"
+      },
+      {
+        "id": "urn:ngm:class:on-chain-governance",
+        "label": "On-Chain Governance"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset-custody",
+        "label": "Digital Asset Custody"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:on-chain-governance",
+        "label": "On-Chain Governance"
+      },
+      {
+        "id": "urn:ngm:class:bft-consensus",
+        "label": "BFT Consensus"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "id": "urn:ngm:class:cardano",
+        "label": "Cardano"
+      },
+      {
+        "id": "urn:ngm:class:polkadot",
+        "label": "Polkadot"
+      },
+      {
+        "id": "urn:ngm:class:solana",
+        "label": "Solana"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:formal-methods",
+        "label": "Formal Methods"
+      },
+      {
+        "id": "urn:ngm:class:institutional-finance",
+        "label": "Institutional Finance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:michelson",
+        "label": "Michelson"
+      },
+      {
+        "id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      },
+      {
+        "id": "urn:ngm:class:consensus-protocol",
+        "label": "Consensus Protocol"
+      }
+    ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:tezos-improvement-proposal",
+        "label": "Tezos Improvement Proposal"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-token",
+        "label": "Cryptographic Token"
+      },
+      {
+        "id": "urn:ngm:class:staking",
+        "label": "Staking"
+      },
+      {
+        "id": "urn:ngm:class:protocol-upgrade",
+        "label": "Protocol Upgrade"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-application",
+        "label": "Decentralised Application"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -59,7 +59,7 @@ public:: true
   "@type": "Class",
   "label": "Social Layer",
   "definition": "The Social Layer is the cross-cutting stratum that represents the human relationships, norms, and communities that surround and use a system. It sits above the institutional structures that formalise it and informs governance and application design. It contains community norms, reputation, communication channels, and the informal conventions that shape behaviour.",
-  "domain": "social",
+  "domain": "distributed-collaboration",
   "maturity": "emerging",
   "qualityScore": 0.7,
   "subClassOf": [

@@ -47,7 +47,7 @@ public:: true
   "@type": "Class",
   "label": "Task Execution",
   "definition": "The process of carrying out a defined unit of work, including scheduling, resource allocation, and tracking of completion. In computing and robotics it covers running operations in response to plans or requests.",
-  "domain": "automation",
+  "domain": "robotics",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

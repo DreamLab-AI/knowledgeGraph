@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:digital-forensics",
   "domain": "security",
-  "definition": "Digital forensics is the scientific discipline concerned with the identification, preservation, extraction, analysis, and presentation of digital evidence from computing systems, networks, storage media, and connected devices in a manner that is legally admissible and reproducible. It applies structured methodologies \u2014 including write-blocked acquisition, cryptographic hashing for evidence integrity, and chain-of-custody documentation \u2014 to support criminal investigations, civil litigation, incident response, and regulatory compliance inquiries. Sub-disciplines include network forensics, mobile forensics, memory forensics, and cloud forensics.",
+  "definition": "Digital forensics is the scientific discipline concerned with the identification, preservation, extraction, analysis, and presentation of digital evidence from computing systems, networks, storage media, and connected devices in a manner that is legally admissible and reproducible. It applies structured methodologies \u2014 including write-blocked acquisition, cryptographic hashing for evidence integrity, and chain-of-custody documentation \u2014 to support criminal investigations, civil litigation, incident response, and regulatory compliance inquiries. Sub-disciplines include network forensics, mobile forensics, memory forensics, and cloud forensics, each requiring specialist tools and legal frameworks adapted to the peculiarities of the evidence medium. Practitioner outputs must survive rigorous judicial scrutiny, compelling both technical rigour and defensible, auditable process documentation.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:cybersecurity",
@@ -13,16 +13,81 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:network-forensics",
+        "label": "Network Forensics"
+      },
+      {
+        "id": "urn:ngm:class:mobile-forensics",
+        "label": "Mobile Forensics"
+      },
+      {
+        "id": "urn:ngm:class:memory-forensics",
+        "label": "Memory Forensics"
+      },
+      {
+        "id": "urn:ngm:class:cloud-forensics",
+        "label": "Cloud Forensics"
+      },
+      {
+        "id": "urn:ngm:class:malware-forensics",
+        "label": "Malware Forensics"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:chain-of-custody",
+        "label": "Chain of Custody"
+      },
+      {
+        "id": "urn:ngm:class:evidence-integrity",
+        "label": "Evidence Integrity"
+      },
+      {
+        "id": "urn:ngm:class:forensic-readiness",
+        "label": "Forensic Readiness"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:attribution",
+        "label": "Attribution"
+      },
+      {
+        "id": "urn:ngm:class:e-discovery",
+        "label": "E-Discovery"
+      },
+      {
+        "id": "urn:ngm:class:threat-intelligence",
+        "label": "Threat Intelligence"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:penetration-testing",
+        "label": "Penetration Testing"
+      },
+      {
+        "id": "urn:ngm:class:vulnerability-assessment",
+        "label": "Vulnerability Assessment"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:data-analytics",
+        "label": "Data Analytics"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:cryptographic-hash",
@@ -35,6 +100,14 @@
       {
         "id": "urn:ngm:class:digital-forensics-framework",
         "label": "Digital Forensics Framework"
+      },
+      {
+        "id": "urn:ngm:class:write-blocker",
+        "label": "Write Blocker"
+      },
+      {
+        "id": "urn:ngm:class:disk-imaging",
+        "label": "Disk Imaging"
       }
     ],
     "supports": [
@@ -45,9 +118,22 @@
       {
         "id": "urn:ngm:class:cybersecurity-standard",
         "label": "Cybersecurity Standard"
+      },
+      {
+        "id": "urn:ngm:class:legal-proceedings",
+        "label": "Legal Proceedings"
       }
     ],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-iec-27037",
+        "label": "ISO/IEC 27037"
+      },
+      {
+        "id": "urn:ngm:class:nist-sp-800-86",
+        "label": "NIST SP 800-86"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -65,6 +151,14 @@
       {
         "id": "urn:ngm:class:threat-model",
         "label": "Threat Model"
+      },
+      {
+        "id": "urn:ngm:class:penetration-testing",
+        "label": "Penetration Testing"
+      },
+      {
+        "id": "urn:ngm:class:log-management",
+        "label": "Log Management"
       }
     ]
   },

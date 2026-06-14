@@ -5,16 +5,16 @@
   "public": true,
   "classIri": "urn:ngm:class:rlhf",
   "domain": "artificial-intelligence",
-  "definition": "Reinforcement Learning from Human Feedback (RLHF) is a training methodology that aligns large language models with human preferences by first training a reward model on human comparison judgements, then optimising the language model policy against that reward model using reinforcement learning \u2014 typically Proximal Policy Optimisation. RLHF enables models to be steered towards outputs that human annotators prefer for helpfulness, harmlessness, and honesty, going beyond what is achievable with supervised fine-tuning on static demonstration data alone. Variants including Direct Preference Optimisation (DPO) and Constitutional AI extend or simplify the original three-stage pipeline.",
+  "definition": "Reinforcement Learning from Human Feedback (RLHF) is a training methodology that aligns large language models and other AI systems with human preferences by first collecting human comparison judgements between model outputs, training a reward model on those judgements, and then optimising the language model policy against the reward model using reinforcement learning \u2014 typically Proximal Policy Optimisation with a KL-divergence penalty to prevent reward hacking. RLHF enables models to be steered towards outputs that human annotators prefer for helpfulness, harmlessness, and honesty, going beyond what is achievable with supervised fine-tuning on static demonstration data alone. The technique was popularised by OpenAI's InstructGPT work and underlies the alignment pipeline of models such as ChatGPT, Claude, and Gemini. Variants including Direct Preference Optimisation, Constitutional AI, and RLAIF (Reinforcement Learning from AI Feedback) extend or simplify the original three-stage pipeline.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique"
+      "id": "urn:ngm:class:ai-alignment",
+      "label": "AI Alignment"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [
@@ -29,30 +29,106 @@
       {
         "id": "urn:ngm:class:reinforcement-learning",
         "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:proximal-policy-optimisation",
+        "label": "Proximal Policy Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:supervised-fine-tuning",
+        "label": "Supervised Fine-Tuning"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:ai-alignment",
         "label": "AI Alignment"
+      },
+      {
+        "id": "urn:ngm:class:instruction-following",
+        "label": "Instruction Following"
+      },
+      {
+        "id": "urn:ngm:class:harmlessness",
+        "label": "Harmlessness"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
+    "contrastsWith": [
       {
         "id": "urn:ngm:class:direct-preference-optimisation",
         "label": "Direct Preference Optimisation"
       },
       {
+        "id": "urn:ngm:class:supervised-fine-tuning",
+        "label": "Supervised Fine-Tuning"
+      },
+      {
+        "id": "urn:ngm:class:rlaif",
+        "label": "RLAIF"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human-Computer Interaction"
+      },
+      {
+        "id": "urn:ngm:class:data-annotation",
+        "label": "Data Annotation"
+      },
+      {
+        "id": "urn:ngm:class:crowdsourcing",
+        "label": "Crowdsourcing"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:kl-divergence",
+        "label": "KL Divergence"
+      },
+      {
+        "id": "urn:ngm:class:preference-data",
+        "label": "Preference Data"
+      },
+      {
+        "id": "urn:ngm:class:human-annotation",
+        "label": "Human Annotation"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:model-alignment-pipeline",
+        "label": "Model Alignment Pipeline"
+      }
+    ],
+    "relatedTo": [
+      {
         "id": "urn:ngm:class:constitutional-ai-training-methodology",
         "label": "Constitutional AI"
+      },
+      {
+        "id": "urn:ngm:class:reward-hacking",
+        "label": "Reward Hacking"
+      },
+      {
+        "id": "urn:ngm:class:policy-gradient",
+        "label": "Policy Gradient"
+      },
+      {
+        "id": "urn:ngm:class:instruct-gpt",
+        "label": "InstructGPT"
       }
     ]
   },

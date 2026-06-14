@@ -99,7 +99,7 @@ public:: true
   "@type": "Class",
   "label": "AI Safety Domain",
   "definition": "The AI Safety Domain covers the technical study of how to make AI systems behave reliably and in line with intended goals. Its scope includes alignment, robustness, interpretability, evaluation and the control of capable systems. It is a sub-area of the Artificial Intelligence Domain focused on failure prevention through engineering. The boundary excludes organisational policy and oversight, which are treated under the AI Governance Domain.",
-  "domain": "ai-safety",
+  "domain": "ai",
   "maturity": "emerging",
   "qualityScore": 0.7,
   "subClassOf": [

@@ -4,56 +4,165 @@
   "slug": "public-key-infrastructure",
   "public": true,
   "classIri": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
-  "domain": "blockchain",
-  "definition": "Public Key Infrastructure (PKI) is the set of roles, policies, hardware, software, and procedures needed to create, manage, distribute, use, store, and revoke digital certificates and manage public-key encryption. PKI binds public keys to the identities of entities such as persons and organisations through a trust hierarchy of certificate authorities, enabling secure authentication, data integrity, and confidential communication across distributed systems. It underpins TLS/HTTPS, code signing, email encryption, and decentralised identity frameworks.",
+  "domain": "security",
+  "definition": "Public Key Infrastructure (PKI) is the integrated set of roles, policies, hardware, software, and procedures used to create, manage, distribute, use, store, and revoke digital certificates and manage public-key encryption. PKI binds public keys to verified entity identities through a hierarchical trust chain anchored by Certificate Authorities (CAs), enabling secure authentication, data integrity, and confidential communication across distributed and internet-scale systems. It forms the foundational security layer for TLS/HTTPS, code signing, S/MIME email encryption, VPN access, and emerging decentralised identity frameworks. PKI standards are governed principally by IETF RFCs (X.509, PKIX), NIST guidelines, CA/Browser Forum Baseline Requirements, and ISO/IEC 27001 family controls.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:bc-cryptographic-primitive",
-      "label": "Cryptographic Primitive"
+      "id": "urn:ngm:class:cryptographic-infrastructure",
+      "label": "Cryptographic Infrastructure"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "mature",
   "relationships": {
     "hasPart": [
       {
         "id": "urn:ngm:class:certificate-authority",
         "label": "Certificate Authority"
+      },
+      {
+        "id": "urn:ngm:class:registration-authority",
+        "label": "Registration Authority"
+      },
+      {
+        "id": "urn:ngm:class:certificate-revocation-list",
+        "label": "Certificate Revocation List"
+      },
+      {
+        "id": "urn:ngm:class:online-certificate-status-protocol",
+        "label": "Online Certificate Status Protocol"
+      },
+      {
+        "id": "urn:ngm:class:root-certificate",
+        "label": "Root Certificate"
+      },
+      {
+        "id": "urn:ngm:class:digital-certificate",
+        "label": "Digital Certificate"
       }
     ],
     "requires": [
+      {
+        "id": "urn:ngm:class:asymmetric-cryptography",
+        "label": "Asymmetric Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
       {
         "id": "urn:ngm:class:cryptographic-keys",
         "label": "Cryptographic Keys"
       },
       {
-        "id": "urn:ngm:class:digital-signature",
-        "label": "Digital Signature"
+        "id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
       }
     ],
     "enables": [
+      {
+        "id": "urn:ngm:class:transport-layer-security",
+        "label": "Transport Layer Security"
+      },
       {
         "id": "urn:ngm:class:digital-identity",
         "label": "Digital Identity"
       },
       {
-        "id": "urn:ngm:class:encryption",
-        "label": "Encryption"
+        "id": "urn:ngm:class:mutual-authentication",
+        "label": "Mutual Authentication"
+      },
+      {
+        "id": "urn:ngm:class:non-repudiation",
+        "label": "Non-Repudiation"
+      },
+      {
+        "id": "urn:ngm:class:code-signing",
+        "label": "Code Signing"
+      },
+      {
+        "id": "urn:ngm:class:encrypted-email",
+        "label": "Encrypted Email"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:x509-standard",
+        "label": "X.509 Standard"
+      },
+      {
+        "id": "urn:ngm:class:rfc-5280",
+        "label": "RFC 5280"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:web-of-trust",
+        "label": "Web of Trust"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-identifier",
+        "label": "Decentralised Identifier"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self-Sovereign Identity"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-identity",
+        "label": "Blockchain Identity"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-credential",
+        "label": "Verifiable Credential"
+      }
+    ],
     "uses": [],
-    "supports": [],
-    "standardizedBy": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      },
+      {
+        "id": "urn:ngm:class:identity-and-access-management",
+        "label": "Identity and Access Management"
+      },
+      {
+        "id": "urn:ngm:class:secure-communication",
+        "label": "Secure Communication"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:internet-engineering-task-force",
+        "label": "Internet Engineering Task Force"
+      },
+      {
+        "id": "urn:ngm:class:ca-browser-forum",
+        "label": "CA/Browser Forum"
+      },
+      {
+        "id": "urn:ngm:class:nist",
+        "label": "NIST"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
         "id": "urn:ngm:class:cybersecurity",
         "label": "Cybersecurity"
+      },
+      {
+        "id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      },
+      {
+        "id": "urn:ngm:class:post-quantum-cryptography",
+        "label": "Post-Quantum Cryptography"
       }
     ]
   },

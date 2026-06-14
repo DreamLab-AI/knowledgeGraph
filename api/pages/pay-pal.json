@@ -4,8 +4,8 @@
   "slug": "pay-pal",
   "public": true,
   "classIri": "urn:ngm:class:pay-pal",
-  "domain": "general",
-  "definition": "PayPal is a company that operates an online payments platform enabling money transfers and digital transactions between individuals and merchants.",
+  "domain": "finance",
+  "definition": "PayPal is a multinational financial technology company that operates one of the world's largest online payment platforms, enabling consumers and merchants to send, receive, and hold funds across more than 200 markets. Founded in 1998 and spun off from eBay in 2015, it provides digital wallets, payment processing infrastructure, buy-now-pay-later credit products, and cryptocurrency custody services. PayPal's two-sided network connects hundreds of millions of consumer accounts to tens of millions of merchant integrations, making it a foundational layer of global e-commerce payments. In 2023 the company launched PayPal USD (PYUSD), a regulated US dollar stablecoin issued on public blockchains, extending its reach into programmable money and digital asset settlement.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:payment-network",
@@ -13,31 +13,148 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
-  "maturity": "established",
+  "qualityScore": 0.72,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:digital-wallet",
+        "label": "Digital Wallet"
+      },
+      {
+        "id": "urn:ngm:class:payment-processing",
+        "label": "Payment Processing"
+      },
+      {
+        "id": "urn:ngm:class:venmo",
+        "label": "Venmo"
+      },
+      {
+        "id": "urn:ngm:class:buy-now-pay-later",
+        "label": "Buy Now Pay Later"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:payment-network",
         "label": "Payment Network"
+      },
+      {
+        "id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      },
+      {
+        "id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:digital-asset",
         "label": "Digital Asset"
+      },
+      {
+        "id": "urn:ngm:class:cross-border-payment",
+        "label": "Cross-Border Payment"
+      },
+      {
+        "id": "urn:ngm:class:merchant-services",
+        "label": "Merchant Services"
+      },
+      {
+        "id": "urn:ngm:class:micropayment",
+        "label": "Micropayment"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:banking-infrastructure",
+        "label": "Banking Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:card-network",
+        "label": "Card Network"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:stripe",
+        "label": "Stripe"
+      },
+      {
+        "id": "urn:ngm:class:square",
+        "label": "Square"
+      },
+      {
+        "id": "urn:ngm:class:apple-pay",
+        "label": "Apple Pay"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:tokenisation",
+        "label": "Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:fraud-detection",
+        "label": "Fraud Detection"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      },
+      {
+        "id": "urn:ngm:class:open-banking",
+        "label": "Open Banking"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:pci-dss",
+        "label": "PCI DSS"
+      },
+      {
+        "id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:fintech",
+        "label": "Fintech"
+      },
+      {
+        "id": "urn:ngm:class:e-commerce",
+        "label": "E-Commerce"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:remittance",
+        "label": "Remittance"
+      },
+      {
+        "id": "urn:ngm:class:digital-currency",
+        "label": "Digital Currency"
+      }
+    ]
   },
   "wikilinks": [
     {

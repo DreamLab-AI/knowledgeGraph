@@ -1,20 +1,91 @@
 - ### Definition
-  - The engineering process of making a trained machine learning model available for use in a production environment so that it can serve predictions to applications or users.
+  - Model Deployment is the engineering discipline of transitioning a trained [[Machine Learning]] model from a research or development environment into a live production system where it can serve predictions to real users, devices, or downstream applications at scale. It is a core stage within the [[MLOps]] lifecycle, treating models as first-class software artefacts that must be packaged, versioned, exposed via stable interfaces, monitored for performance degradation, and rolled back when necessary. Effective deployment bridges the gap between [[Model Training]] and operational value delivery, encompassing everything from [[Containerisation]] of the model runtime to latency budgeting, autoscaling policies, and [[Data Drift]] detection in serving traffic.
 
-- ### Semantic Classification
-  - owl-class:: machine-learning:ModelDeployment
-  - owl-role:: Class
+- ### Overview
+  - Model Deployment addresses one of the most practically challenging phases of the machine learning lifecycle: ensuring that a model which performs well on held-out test data also performs reliably and efficiently when serving real-world inputs at production scale.
+  - Unlike traditional software releases, model deployments contend with a dual source of risk: code-level failures (bugs in serving logic, API contract breaks) and model-level failures (distributional shift, concept drift, stale features). This dual risk makes deployment governance more complex than conventional continuous delivery.
+  - Deployment is typically preceded by [[Model Evaluation]] and [[Model Registry]] promotion, and is followed immediately by [[Model Monitoring]] and observability pipelines. The full round-trip — train, evaluate, deploy, monitor, retrain — constitutes the [[ML Pipeline]] or [[Continuous Training]] loop.
+  - Why it matters:
+    - A model that is never deployed produces no business or scientific value.
+    - Poor deployment practices are the primary cause of production ML incidents, including silent prediction failures, latency regressions, and cascading service errors.
+    - Standardised deployment patterns (blue-green, canary, shadow) reduce risk and enable rapid iteration without service downtime.
+
+- ### Key Components
+  - **[[Model Serialisation]]** — persisting trained weights and computation graphs in a portable format (e.g. ONNX, SavedModel, TorchScript, Pickle) that can be loaded by a separate serving process independently of the training framework.
+  - **[[Inference Engine]]** — the runtime that executes forward passes of the serialised model; may include hardware-specific optimisations (TensorRT, OpenVINO, ONNX Runtime) to maximise throughput and minimise latency.
+  - **[[Containerisation]]** — wrapping the model, its dependencies, and its serving logic in a reproducible container image (typically [[Docker]]) so that the deployment unit is environment-agnostic.
+  - **[[Model Registry]]** — a versioned catalogue of trained model artefacts from which a deployment pipeline fetches approved model versions, enabling traceability and auditability.
+  - **[[API Gateway]]** — the network boundary through which client applications send inference requests; may enforce authentication, rate limiting, and request routing across model versions.
+  - **[[Feature Store]]** — a shared repository of pre-computed feature values that the deployed model reads at inference time, ensuring feature consistency between training and serving.
+  - **[[Kubernetes]]** / Orchestration — container orchestration platforms that manage replica scaling, health checks, rolling updates, and resource allocation for model serving pods.
+  - **[[REST API]]** and [[gRPC]] — the dominant transport protocols for model serving endpoints; REST suits broad compatibility, gRPC suits high-throughput and streaming use cases.
+  - **[[Model Versioning]]** — systematic naming and tagging of deployed model versions, enabling simultaneous multi-version serving for [[A/B Testing]] and gradual rollouts.
+
+- ### Deployment Strategies
+  - **Online (real-time) serving** — the model is hosted as a persistent service that responds synchronously to individual inference requests with low latency (typically sub-100 ms); used for recommendation systems, fraud detection, and language model APIs.
+  - **[[Batch Inference]]** — the model processes large datasets asynchronously on a schedule or triggered by an event; optimises throughput over latency and is suited to nightly scoring pipelines, report generation, and large-scale content moderation.
+  - **[[Edge Inference]]** — the model is compiled and embedded directly on a device (mobile phone, IoT sensor, AR headset) using runtimes such as TensorFlow Lite, Core ML, or TensorRT, eliminating network round-trips and enabling offline operation.
+  - **[[Serverless Computing]] deployment** — the model is wrapped in a function-as-a-service handler (AWS Lambda, Google Cloud Functions, Azure Functions) that scales to zero when idle, reducing operational cost for infrequent inference workloads.
+  - **[[Canary Deployment]]** — a new model version is released to a small fraction of production traffic before full promotion, allowing comparison of live metrics against the incumbent before committing to a full rollout.
+  - **[[Shadow Mode Deployment]]** — a new model receives a copy of live traffic in parallel with the incumbent but its outputs are not served to users; enables risk-free comparison of model behaviour on real data before promotion.
+  - **Blue-Green Deployment** — two identical production environments (blue = current, green = new) are maintained; traffic is switched atomically from blue to green, enabling instant rollback by switching back.
+  - **Multi-Armed Bandit serving** — traffic is dynamically routed across model variants in proportion to their observed performance, combining exploration of new models with exploitation of the best-performing one, a form of online [[A/B Testing]].
+
+- ### Applications / Use Cases
+  - **Recommendation engines** — e-commerce and streaming platforms deploy ranking models in real-time serving clusters that score candidate items for each user request within strict latency budgets.
+  - **Natural language processing APIs** — large language models and embedding models are deployed as microservices (e.g. via [[vLLM]], TGI, or Triton Inference Server) to power chatbots, search, and document analysis.
+  - **Computer vision pipelines** — object detection and image classification models are deployed at the edge on surveillance cameras, autonomous vehicles, and quality-inspection robots, requiring [[Edge Computing]] infrastructure.
+  - **Financial risk scoring** — credit scoring and fraud detection models are deployed as low-latency REST services integrated into payment processing pipelines, subject to regulatory audit trails.
+  - **Healthcare AI** — diagnostic assistance models are deployed within hospital information systems under strict governance requiring version locking, explainability logs, and human oversight hooks.
+  - **Autonomous agents** — reinforcement learning policies and planning models are deployed as embedded runtimes within robotic control loops and [[Robotics]] stacks, demanding deterministic latency and fail-safe fallbacks.
+  - **Scientific computing** — surrogate models for physics simulation are deployed as callable services consumed by optimisation workflows in climate modelling, drug discovery, and materials science.
 
 - ### Relationships
-  - is-subclass-of:: [[MLOps]]
-  - bridges-to:: [[MLOps]]
+  - partOf:: [[MLOps]]
+  - dependsOn:: [[Model Training]]
+  - dependsOn:: [[Model Registry]]
+  - dependsOn:: [[Feature Store]]
   - requires:: [[Inference Engine]]
+  - requires:: [[Model Serialisation]]
+  - requires:: [[Containerisation]]
+  - requires:: [[API Gateway]]
   - enables:: [[Edge Inference]]
+  - enables:: [[Real-Time Prediction]]
+  - enables:: [[Batch Inference]]
+  - enables:: [[Model Monitoring]]
+  - uses:: [[Docker]]
+  - uses:: [[Kubernetes]]
+  - uses:: [[REST API]]
+  - uses:: [[gRPC]]
+  - supports:: [[A/B Testing]]
+  - supports:: [[Canary Deployment]]
+  - supports:: [[Shadow Mode Deployment]]
+  - contrastsWith:: [[Model Training]]
+  - contrastsWith:: [[Model Evaluation]]
+  - relatedTo:: [[Continuous Delivery]]
+  - relatedTo:: [[Data Drift]]
+  - relatedTo:: [[Model Versioning]]
+  - bridges-to:: [[Serverless Computing]]
+  - bridges-to:: [[Edge Computing]]
 
-- ### Content
-  - Model deployment covers packaging a model, exposing it through an interface such as a REST endpoint or embedded library, and integrating it with surrounding systems. Common patterns include online serving for low-latency requests, batch scoring for bulk processing and on-device inference for edge scenarios.
-  - Deployment also involves operational concerns such as versioning, scaling, monitoring for drift and the ability to roll back. These concerns connect deployment to the broader practice of MLOps, which treats models as software artefacts subject to continuous delivery and observation.
+- ### Operational Concerns
+  - **Latency and throughput budgeting** — serving SLAs must be defined before selecting deployment topology; online serving typically targets P99 latency under 200 ms, whilst edge deployments may target single-digit milliseconds.
+  - **Autoscaling** — horizontal pod autoscalers in [[Kubernetes]] or managed scaling in cloud ML platforms (SageMaker, Vertex AI, Azure ML) respond to request volume, preventing over-provisioning at idle and under-provisioning at peak.
+  - **[[Data Drift]] and concept drift detection** — production input distributions frequently diverge from training data over time; monitoring pipelines must track statistical properties of incoming features and model output distributions to trigger retraining alerts.
+  - **Model rollback** — deployment pipelines must support rapid rollback to a previously validated model version when quality regressions are detected; this relies on the [[Model Registry]] retaining versioned artefacts.
+  - **Logging and [[Explainability]]** — production inference logs (inputs, outputs, latencies, errors) are essential for debugging, compliance, and retraining data collection; explainability metadata (SHAP values, attention weights) supports regulated sectors.
+  - **Shadow traffic and load testing** — synthetic or replayed production traffic is used to validate serving infrastructure before go-live, stress-testing autoscaling, cold-start times, and error-handling paths.
+  - **Cost management** — GPU and accelerator costs dominate model serving budgets; quantisation, batching, caching of repeated inputs, and model distillation are the principal levers for cost reduction without sacrificing accuracy.
+
+- ### Standards & Context
+  - **ONNX (Open Neural Network Exchange)** — an open interchange format for ML model graphs that enables deployment of models trained in one framework (PyTorch, TensorFlow) onto inference runtimes targeting different hardware backends.
+  - **MLflow** — an open-source [[MLOps]] platform providing model packaging (MLflow Models), model registry, and deployment plugins for diverse serving targets.
+  - **KServe / Seldon Core** — Kubernetes-native model serving frameworks that implement the V2 Inference Protocol (KFServing), standardising request/response schemas across serving runtimes.
+  - **NVIDIA Triton Inference Server** — an open-source multi-framework inference server that supports concurrent model execution, dynamic batching, and ensemble pipelines.
+  - **BentoML** — a framework for packaging ML models with their serving logic into portable Bento artefacts deployable to cloud and on-premise targets.
+  - **ISO/IEC 42001** — the AI management system standard that includes governance requirements relevant to AI model deployment, covering risk assessment, transparency, and operational monitoring.
+  - **EU AI Act** — European regulation imposing conformity assessments and technical documentation requirements on high-risk AI systems, directly governing how models may be deployed in sensitive domains.
 
 - ### Provenance
-  - sources::
-  - migration-date:: 2026-05-29T00:00:00Z
+  - sources:: ONNX specification; MLflow documentation; KServe V2 Inference Protocol; Sculley et al. "Hidden Technical Debt in Machine Learning Systems" (NeurIPS 2015); Google ML Engineering best practices
+  - updated:: 2026-06-13

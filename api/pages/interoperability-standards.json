@@ -4,8 +4,8 @@
   "slug": "interoperability-standards",
   "public": true,
   "classIri": "urn:ngm:class:interoperability-standards",
-  "domain": "general",
-  "definition": "Agreed specifications that allow independently developed systems, protocols or networks to exchange data and operate together reliably.",
+  "domain": "standards",
+  "definition": "Interoperability standards are formally agreed specifications \u2014 including data formats, interface definitions, communication protocols, and semantic models \u2014 that enable independently developed systems, networks, and platforms to exchange information and cooperate without bespoke integration work. They are produced by recognised standards bodies, industry consortia, or open working groups, and cover layers from physical connectivity through data serialisation to application-level semantics. Adoption is typically enforced through regulatory mandate, market pressure, or certification programmes. Effective interoperability standards reduce vendor lock-in, lower integration costs, and are foundational to distributed architectures including the web, decentralised identity, and cross-chain blockchain communication.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:standards",
@@ -13,26 +13,147 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.74,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:data-format-specification",
+        "label": "Data Format Specification"
+      },
+      {
+        "id": "urn:ngm:class:api-specification",
+        "label": "API Specification"
+      },
+      {
+        "id": "urn:ngm:class:conformance-testing",
+        "label": "Conformance Testing"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:standards-body",
+        "label": "Standards Body"
+      },
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:interoperability",
         "label": "Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:data-exchange",
+        "label": "Data Exchange"
+      },
+      {
+        "id": "urn:ngm:class:federated-systems",
+        "label": "Federated Systems"
+      },
+      {
+        "id": "urn:ngm:class:open-ecosystem",
+        "label": "Open Ecosystem"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:communication-protocols",
+        "label": "Communication Protocols"
+      },
+      {
+        "id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
+      },
+      {
+        "id": "urn:ngm:class:open-standards",
+        "label": "Open Standards"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:proprietary-protocol",
+        "label": "Proprietary Protocol"
+      },
+      {
+        "id": "urn:ngm:class:vendor-lock-in",
+        "label": "Vendor Lock-in"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:cross-chain-communication",
+        "label": "Cross-Chain Communication"
+      },
+      {
+        "id": "urn:ngm:class:ai-model-interoperability",
+        "label": "AI Model Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:schema-definition",
+        "label": "Schema Definition"
+      },
+      {
+        "id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "id": "urn:ngm:class:network-protocols",
+        "label": "Network Protocols"
+      },
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso",
+        "label": "ISO"
+      },
+      {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      },
+      {
+        "id": "urn:ngm:class:w3c",
+        "label": "W3C"
+      },
+      {
+        "id": "urn:ngm:class:ieee",
+        "label": "IEEE"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:application-programming-interface",
+        "label": "Application Programming Interface"
+      },
+      {
+        "id": "urn:ngm:class:middleware",
+        "label": "Middleware"
+      },
+      {
+        "id": "urn:ngm:class:data-portability",
+        "label": "Data Portability"
+      }
+    ]
   },
   "wikilinks": [
     {

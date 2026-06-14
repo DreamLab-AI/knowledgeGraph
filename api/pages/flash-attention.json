@@ -5,29 +5,37 @@
   "public": true,
   "classIri": "urn:ngm:class:flash-attention",
   "domain": "artificial-intelligence",
-  "definition": "Flash Attention is an IO-aware, exact attention algorithm that exploits GPU memory hierarchy by tiling the query, key, and value matrices to keep intermediate activations in fast on-chip SRAM rather than the much slower high-bandwidth DRAM (HBM), eliminating the O(N\u00b2) memory materialisation of the standard scaled dot-product attention. Introduced by Dao et al. at Stanford in 2022 and extended in Flash Attention 2 and 3, it achieves the same numerical output as standard attention whilst reducing HBM reads and writes by a factor proportional to the SRAM tile size, yielding 2\u20134\u00d7 wall-clock speedups for long sequences with sub-linear memory growth. It is now a standard component of transformer training and inference frameworks including PyTorch, JAX, and vLLM.",
+  "definition": "Flash Attention is an IO-aware, exact attention algorithm that exploits the GPU memory hierarchy by tiling query, key, and value matrices to keep intermediate activations in fast on-chip SRAM rather than the much slower high-bandwidth DRAM (HBM), thereby eliminating the O(N\u00b2) memory materialisation of standard scaled dot-product attention. By applying an online softmax recomputation strategy, it achieves bitwise-identical output to vanilla attention while reducing HBM reads and writes proportionally to the SRAM tile size. Originally introduced by Dao et al. in 2022, it has been extended through FlashAttention-2 (improved thread-block partitioning) and FlashAttention-3 (Hopper-native asynchrony and FP8 support), and is now embedded in PyTorch, JAX, vLLM, and virtually every frontier model training pipeline.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ai-infrastructure",
-      "label": "AI Infrastructure"
+      "id": "urn:ngm:class:attention-mechanism",
+      "label": "Attention Mechanism"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:attention-mechanism",
-        "label": "Attention Mechanism"
-      },
-      {
         "id": "urn:ngm:class:gpu-compute",
         "label": "GPU Compute"
+      },
+      {
+        "id": "urn:ngm:class:cuda",
+        "label": "CUDA"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
       }
     ],
     "enables": [
+      {
+        "id": "urn:ngm:class:long-context-modelling",
+        "label": "Long Context Modelling"
+      },
       {
         "id": "urn:ngm:class:large-language-models",
         "label": "Large Language Models"
@@ -35,24 +43,102 @@
       {
         "id": "urn:ngm:class:inference",
         "label": "Inference"
+      },
+      {
+        "id": "urn:ngm:class:multi-head-attention",
+        "label": "Multi-Head Attention"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
+    "dependsOn": [
       {
-        "id": "urn:ngm:class:transformer-architecture",
-        "label": "Transformer Architecture"
+        "id": "urn:ngm:class:high-bandwidth-memory",
+        "label": "High-Bandwidth Memory"
       },
       {
         "id": "urn:ngm:class:model-training",
         "label": "Model Training"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:scaled-dot-product-attention",
+        "label": "Scaled Dot-Product Attention"
+      },
+      {
+        "id": "urn:ngm:class:online-softmax",
+        "label": "Online Softmax"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:linear-attention",
+        "label": "Linear Attention"
+      },
+      {
+        "id": "urn:ngm:class:sparse-attention",
+        "label": "Sparse Attention"
+      },
+      {
+        "id": "urn:ngm:class:gradient-checkpointing",
+        "label": "Gradient Checkpointing"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:hardware-accelerator-design",
+        "label": "Hardware Accelerator Design"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:tiling",
+        "label": "Tiling"
+      },
+      {
+        "id": "urn:ngm:class:sram",
+        "label": "SRAM"
+      },
+      {
+        "id": "urn:ngm:class:kernel-fusion",
+        "label": "Kernel Fusion"
+      },
+      {
+        "id": "urn:ngm:class:mixed-precision-training",
+        "label": "Mixed Precision Training"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:kv-cache",
+        "label": "KV Cache"
+      },
+      {
+        "id": "urn:ngm:class:continuous-batching",
+        "label": "Continuous Batching"
+      },
+      {
+        "id": "urn:ngm:class:speculative-decoding",
+        "label": "Speculative Decoding"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:memory-bandwidth-optimisation",
+        "label": "Memory Bandwidth Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:paged-attention",
+        "label": "Paged Attention"
+      },
+      {
+        "id": "urn:ngm:class:rotary-position-embedding",
+        "label": "Rotary Position Embedding"
+      },
+      {
+        "id": "urn:ngm:class:tensor-parallelism",
+        "label": "Tensor Parallelism"
       }
     ]
   },

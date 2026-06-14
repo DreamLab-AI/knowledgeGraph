@@ -59,7 +59,7 @@ public:: true
   "@type": "Class",
   "label": "Lightning Network Layer",
   "definition": "The Lightning Network Layer is a second-layer stratum that enables fast, low-cost payments off the base settlement ledger through bidirectional payment channels. It sits above the Settlement Layer, on which it anchors and finally settles, and below the application and content strata that use instant payments. It contains payment channels, routing, and channel-state management.",
-  "domain": "lightning-network",
+  "domain": "blockchain",
   "maturity": "emerging",
   "qualityScore": 0.7,
   "subClassOf": [

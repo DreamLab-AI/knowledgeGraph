@@ -79,7 +79,7 @@ public:: true
   "@type": "Class",
   "label": "Deep Learning Domain",
   "definition": "The Deep Learning Domain covers learning with multi-layer neural networks that build hierarchical representations from data. Its scope includes network architectures, training and optimisation at scale, and representation learning. It is a sub-area of the Machine Learning Domain that supplies the dominant methods for perception and language. The boundary excludes shallow models such as linear classifiers and decision trees, which remain in the broader Machine Learning Domain.",
-  "domain": "deep-learning",
+  "domain": "machine-learning",
   "maturity": "emerging",
   "qualityScore": 0.7,
   "subClassOf": [

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:open-sea",
   "domain": "blockchain",
-  "definition": "OpenSea is a marketplace for buying, selling, and trading non-fungible tokens across multiple blockchains.",
+  "definition": "OpenSea is a peer-to-peer decentralised marketplace for non-fungible tokens (NFTs), enabling users to mint, list, auction, and trade digital assets on multiple blockchain networks including Ethereum, Polygon, Solana, and others. Founded in 2017, it operates through integration with self-custodial crypto wallets and on-chain smart contracts that escrow assets and execute transfers atomically upon payment settlement. OpenSea pioneered the concept of a permissionless NFT trading platform, supporting diverse token standards such as ERC-721 and ERC-1155, and providing creator royalty enforcement mechanisms at the contract level.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:nft-marketplace",
@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
@@ -21,23 +21,116 @@
       {
         "id": "urn:ngm:class:nft",
         "label": "NFT"
+      },
+      {
+        "id": "urn:ngm:class:crypto-wallet",
+        "label": "Crypto Wallet"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:digital-asset",
         "label": "Digital Asset"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-trading",
+        "label": "Peer-to-Peer Trading"
+      },
+      {
+        "id": "urn:ngm:class:creator-royalties",
+        "label": "Creator Royalties"
+      },
+      {
+        "id": "urn:ngm:class:nft-minting",
+        "label": "NFT Minting"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:blur",
+        "label": "Blur"
+      },
+      {
+        "id": "urn:ngm:class:rarible",
+        "label": "Rarible"
+      },
+      {
+        "id": "urn:ngm:class:foundation",
+        "label": "Foundation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:digital-art",
+        "label": "Digital Art"
+      },
+      {
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "id": "urn:ngm:class:virtual-real-estate",
+        "label": "Virtual Real Estate"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "id": "urn:ngm:class:polygon",
+        "label": "Polygon"
+      },
+      {
+        "id": "urn:ngm:class:erc-721",
+        "label": "ERC-721"
+      },
+      {
+        "id": "urn:ngm:class:erc-1155",
+        "label": "ERC-1155"
+      },
+      {
+        "id": "urn:ngm:class:ipfs",
+        "label": "IPFS"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-ownership",
+        "label": "Digital Ownership"
+      },
+      {
+        "id": "urn:ngm:class:token-standard",
+        "label": "Token Standard"
+      },
+      {
+        "id": "urn:ngm:class:gas-fee",
+        "label": "Gas Fee"
+      },
+      {
+        "id": "urn:ngm:class:provenance-tracking",
+        "label": "Provenance Tracking"
+      }
+    ]
   },
   "wikilinks": [
     {

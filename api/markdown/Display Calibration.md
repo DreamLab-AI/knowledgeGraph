@@ -21,7 +21,7 @@ public:: true
   "@type": "Class",
   "label": "Display Calibration",
   "definition": "Display calibration is the process of measuring and adjusting a display device's photometric and colorimetric characteristics—luminance, white point, gamma or EOTF, and colour gamut—to conform to a defined target standard or ICC colour profile. It employs colorimetric measurement instruments (colorimeters, spectrophotometers) to sample the display output and generates correction data (LUTs or ICC profiles) applied by the operating system or display hardware to compensate for manufacturing variation and age-related drift. Calibration is mandatory in colour-critical workflows including digital cinema (DCI-P3), broadcast (Rec. 709, Rec. 2020), medical imaging, and visual effects production.",
-  "domain": "graphics",
+  "domain": "spatial-computing",
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:calibration", "label": "Calibration"}],
   "relations": {

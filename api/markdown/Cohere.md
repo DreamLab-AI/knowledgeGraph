@@ -63,7 +63,7 @@ public:: true
   "@type": "Class",
   "label": "Cohere",
   "definition": "Cohere is a company that develops large language models and text embedding models offered through an API, with a focus on enterprise applications. Its products include generation, embedding and reranking models.",
-  "domain": "natural-language-processing",
+  "domain": "ai",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

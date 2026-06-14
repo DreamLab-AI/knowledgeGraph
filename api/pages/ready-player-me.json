@@ -5,39 +5,142 @@
   "public": true,
   "classIri": "urn:ngm:class:ready-player-me",
   "domain": "metaverse",
-  "definition": "Ready Player Me is a platform for creating cross-application 3D avatars that can be used across games and virtual environments.",
+  "definition": "Ready Player Me (RPM) is a cross-application avatar platform that enables users to create a single personalised 3D humanoid avatar and deploy it across hundreds of games, social VR environments, and virtual worlds via an open SDK and REST API. Founded in 2021 by Wolf3D, it provides a browser-based avatar creator, glTF-compliant avatar meshes, morph-target facial animation, and an OAuth-based identity layer so that the same avatar persona persists across compatible applications. By decoupling avatar creation from any single platform, RPM acts as a shared identity infrastructure for the emerging spatial internet, addressing avatar fragmentation across [[Metaverse]] ecosystems.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:avatar",
-      "label": "Avatar"
+      "id": "urn:ngm:class:avatar-platform",
+      "label": "Avatar Platform"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [
+    "hasPart": [
       {
         "id": "urn:ngm:class:avatar",
         "label": "Avatar"
+      },
+      {
+        "id": "urn:ngm:class:avatar-creator",
+        "label": "Avatar Creator"
+      },
+      {
+        "id": "urn:ngm:class:morph-target",
+        "label": "Morph Target"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:gltf",
+        "label": "glTF"
+      },
+      {
+        "id": "urn:ngm:class:oauth",
+        "label": "OAuth"
+      },
+      {
+        "id": "urn:ngm:class:rest-api",
+        "label": "REST API"
       }
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:metaverse",
-        "label": "Metaverse"
+        "id": "urn:ngm:class:cross-platform-identity",
+        "label": "Cross-Platform Identity"
+      },
+      {
+        "id": "urn:ngm:class:social-vr",
+        "label": "Social VR"
+      },
+      {
+        "id": "urn:ngm:class:avatar-interoperability",
+        "label": "Avatar Interoperability"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "id": "urn:ngm:class:cloud-storage",
+        "label": "Cloud Storage"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:vroid-studio",
+        "label": "VRoid Studio"
+      },
+      {
+        "id": "urn:ngm:class:metahuman-creator",
+        "label": "MetaHuman Creator"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self-Sovereign Identity"
+      },
+      {
+        "id": "urn:ngm:class:nft",
+        "label": "NFT"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:3d-scanning",
+        "label": "3D Scanning"
+      },
+      {
+        "id": "urn:ngm:class:facial-recognition",
+        "label": "Facial Recognition"
+      },
+      {
+        "id": "urn:ngm:class:physically-based-rendering",
+        "label": "Physically Based Rendering"
+      },
+      {
+        "id": "urn:ngm:class:skeletal-animation",
+        "label": "Skeletal Animation"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:wolf3d",
+        "label": "Wolf3D"
+      },
+      {
+        "id": "urn:ngm:class:open-metaverse-interoperability",
+        "label": "Open Metaverse Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:avatar-sdk",
+        "label": "Avatar SDK"
+      }
+    ]
   },
   "wikilinks": [
     {

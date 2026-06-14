@@ -4,20 +4,50 @@
   "slug": "collaboration-platform",
   "public": true,
   "classIri": "urn:ngm:class:collaboration-platform",
-  "domain": "infrastructure",
-  "definition": "A Collaboration Platform is an integrated software infrastructure that unifies communication channels, content management, workflow automation, and coordination tools to support distributed teamwork. Contemporary platforms combine real-time messaging, video conferencing, shared workspaces, and third-party integration ecosystems within API-first architectures.",
+  "domain": "distributed-collaboration",
+  "definition": "A Collaboration Platform is an integrated software environment that unifies communication channels, shared workspaces, workflow automation, and content management tooling to enable coordinated work among distributed teams. Such platforms expose API-first architectures built atop real-time messaging protocols, WebRTC-based media pipelines, and cloud storage with conflict resolution, providing a composable substrate for synchronous and asynchronous teamwork. Enterprise-grade deployments layer in identity federation, data residency controls, compliance archiving, and extensible integration ecosystems, while modern platforms increasingly embed AI-driven capabilities such as meeting transcription, action-item extraction, and intelligent search. The category spans lightweight messaging tools through full unified-communications suites and extends into spatial and immersive collaboration modalities.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:infra-computing-and-cloud",
-      "label": "Computing and Cloud"
+      "id": "urn:ngm:class:distributed-systems",
+      "label": "Distributed Systems"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:real-time-messaging",
+        "label": "Real-Time Messaging"
+      },
+      {
+        "id": "urn:ngm:class:video-conferencing",
+        "label": "Video Conferencing"
+      },
+      {
+        "id": "urn:ngm:class:shared-document-editing",
+        "label": "Shared Document Editing"
+      },
+      {
+        "id": "urn:ngm:class:workflow-automation",
+        "label": "Workflow Automation"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:identity-and-access-management",
+        "label": "Identity and Access Management"
+      },
+      {
+        "id": "urn:ngm:class:cloud-storage",
+        "label": "Cloud Storage"
+      },
+      {
+        "id": "urn:ngm:class:webrtc",
+        "label": "WebRTC"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:augmented-reality-collaboration",
@@ -26,30 +56,88 @@
       {
         "id": "urn:ngm:class:digital-twin-collaboration",
         "label": "Digital Twin Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:remote-work",
+        "label": "Remote Work"
+      },
+      {
+        "id": "urn:ngm:class:distributed-team-coordination",
+        "label": "Distributed Team Coordination"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:point-to-point-communication",
+        "label": "Point-to-Point Communication"
+      },
+      {
+        "id": "urn:ngm:class:email-system",
+        "label": "Email System"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:metaverse-and-telecollaboration",
         "label": "Metaverse and Telecollaboration"
+      },
+      {
+        "id": "urn:ngm:class:ai-assistant",
+        "label": "AI Assistant"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
       }
     ],
     "uses": [
       {
         "id": "urn:ngm:class:edge-computing",
         "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      },
+      {
+        "id": "urn:ngm:class:microservices-architecture",
+        "label": "Microservices Architecture"
+      },
+      {
+        "id": "urn:ngm:class:end-to-end-encryption",
+        "label": "End-to-End Encryption"
       }
     ],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:enterprise-security",
+        "label": "Enterprise Security"
+      },
+      {
+        "id": "urn:ngm:class:compliance-and-governance",
+        "label": "Compliance and Governance"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
       {
         "id": "urn:ngm:class:xr-meeting-space",
         "label": "XR Meeting Space"
+      },
+      {
+        "id": "urn:ngm:class:social-network",
+        "label": "Social Network"
+      },
+      {
+        "id": "urn:ngm:class:enterprise-resource-planning",
+        "label": "Enterprise Resource Planning"
       }
     ]
   },

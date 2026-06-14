@@ -55,7 +55,7 @@ public:: true
   "@type": "Class",
   "label": "Network Theory",
   "definition": "Network theory is the study of graphs representing relations between objects, analysing structure, connectivity and dynamics across networks.",
-  "domain": "general",
+  "domain": "distributed-systems",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

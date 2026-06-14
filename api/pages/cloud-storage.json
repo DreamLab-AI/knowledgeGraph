@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:cloud-storage",
   "domain": "infrastructure",
-  "definition": "Cloud storage is a model of data storage in which digital data is persisted on remote servers managed by a cloud service provider and accessed over a network, typically the internet, rather than on local hardware. Providers maintain redundant, geographically distributed infrastructure to ensure durability, availability, and scalability, charging users based on capacity consumed and data transfer volume. Cloud storage underpins object storage services (such as Amazon S3, Google Cloud Storage, and Azure Blob Storage), file synchronisation services, and database backup systems. It is a foundational component of cloud computing infrastructure and modern application architectures.",
+  "definition": "Cloud storage is a model of data persistence in which digital data is held on remote servers operated by a cloud service provider, accessed over a network (typically the internet) via well-defined APIs rather than on locally attached hardware. Providers maintain geographically distributed, redundant infrastructure implementing erasure coding or multi-region replication to guarantee high durability and availability, typically billing clients on capacity consumed and egress data transfer. The paradigm encompasses object storage, cloud file systems, and block storage volumes, and underpins virtually every modern cloud-native application architecture by decoupling storage from compute. Major implementations include Amazon S3, Google Cloud Storage, Azure Blob Storage, and S3-compatible open-source systems such as MinIO.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:data-storage",
@@ -13,12 +13,51 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
-  "maturity": "established",
+  "qualityScore": 0.72,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:object-storage",
+        "label": "Object Storage"
+      },
+      {
+        "id": "urn:ngm:class:block-storage",
+        "label": "Block Storage"
+      },
+      {
+        "id": "urn:ngm:class:cloud-file-system",
+        "label": "Cloud File System"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:identity-and-access-management",
+        "label": "Identity and Access Management"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:cloud-native-application",
+        "label": "Cloud-Native Application"
+      },
+      {
+        "id": "urn:ngm:class:data-lake",
+        "label": "Data Lake"
+      },
+      {
+        "id": "urn:ngm:class:backup-and-recovery",
+        "label": "Backup and Recovery"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [
@@ -29,14 +68,23 @@
       {
         "id": "urn:ngm:class:content-addressed-storage",
         "label": "Content-Addressed Storage"
+      },
+      {
+        "id": "urn:ngm:class:on-premises-storage",
+        "label": "On-Premises Storage"
       }
     ],
-    "bridgesTo": [],
-    "uses": [
+    "bridgesTo": [
       {
-        "id": "urn:ngm:class:cloud-computing",
-        "label": "Cloud Computing"
+        "id": "urn:ngm:class:decentralized-storage",
+        "label": "Decentralized Storage"
       },
+      {
+        "id": "urn:ngm:class:hybrid-cloud",
+        "label": "Hybrid Cloud"
+      }
+    ],
+    "uses": [
       {
         "id": "urn:ngm:class:encryption",
         "label": "Encryption"
@@ -44,10 +92,36 @@
       {
         "id": "urn:ngm:class:content-delivery-network",
         "label": "Content Delivery Network"
+      },
+      {
+        "id": "urn:ngm:class:erasure-coding",
+        "label": "Erasure Coding"
       }
     ],
-    "supports": [],
-    "standardizedBy": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:vector-database",
+        "label": "Vector Database"
+      },
+      {
+        "id": "urn:ngm:class:data-management",
+        "label": "Data Management"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:s3-api",
+        "label": "S3 API"
+      },
+      {
+        "id": "urn:ngm:class:rest-api",
+        "label": "REST API"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -59,12 +133,8 @@
         "label": "Cloud Infrastructure"
       },
       {
-        "id": "urn:ngm:class:data-management",
-        "label": "Data Management"
-      },
-      {
-        "id": "urn:ngm:class:decentralized-storage",
-        "label": "Decentralized Storage"
+        "id": "urn:ngm:class:data-sovereignty",
+        "label": "Data Sovereignty"
       }
     ]
   },

@@ -21,7 +21,7 @@ public:: true
   "@type": "Class",
   "label": "Communication Tools",
   "definition": "Software applications and platforms that enable individuals and teams to exchange information, coordinate activities, and maintain shared context across synchronous and asynchronous channels. They span messaging, video conferencing, email, collaborative documents, and emerging immersive communication modalities, forming the operational backbone of distributed work.",
-  "domain": "web",
+  "domain": "infrastructure",
   "maturity": "mature",
   "subClassOf": [{"@id": "urn:ngm:class:collaborative-systems-modality-technology", "label": "Collaborative Technology"}],
   "relations": {

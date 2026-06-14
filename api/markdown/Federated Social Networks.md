@@ -21,7 +21,7 @@ public:: true
   "@type": "Class",
   "label": "Federated Social Networks",
   "definition": "Federated social networks are distributed communication platforms composed of independently operated servers that interoperate via shared open protocols, allowing users on different instances to follow, mention, and exchange content across administrative boundaries without centralised ownership. The model contrasts with siloed proprietary networks by enabling user data portability, operator sovereignty, and community-driven moderation policies.",
-  "domain": "web",
+  "domain": "infrastructure",
   "maturity": "emerging",
   "subClassOf": [{"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"}],
   "relations": {

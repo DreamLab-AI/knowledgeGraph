@@ -46,29 +46,169 @@ public:: true
   "@id": "urn:ngm:class:digital-governance",
   "@type": "Class",
   "label": "Digital Governance",
-  "definition": "Digital Governance is an artificial intelligence concept.",
-  "domain": "artificial-intelligence",
-  "maturity": "draft",
-  "relations": {
-    "hasPart": [
-      {
-        "@id": "urn:ngm:class:artificial-intelligence",
-        "label": "artificial-intelligence"
-      }
-    ]
-  },
-  "quality": 0.35,
-  "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
-  },
+  "definition": "Digital Governance is the set of policies, institutional frameworks, regulatory instruments, and accountability mechanisms through which societies, organisations, and governments manage the development, deployment, and societal impact of digital technologies and data systems. It encompasses rule-making for the internet, data protection, platform regulation, algorithmic accountability, and cybersecurity policy. Digital Governance operates at multiple levels — international, national, and organisational — and draws on both technical standards and legal norms to align technological capability with public values. As digital infrastructure becomes critical to economic and social life, effective digital governance balances innovation incentives with risk mitigation, rights protection, and equitable access.",
+  "domain": "governance",
+  "maturity": "established",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-governance-and-ethics",
       "label": "AI Governance and Ethics"
     }
-  ]
+  ],
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:digital-policy",
+      "label": "Digital Policy"
+    },
+    {
+      "@id": "urn:ngm:class:internet-governance",
+      "label": "Internet Governance"
+    }
+  ],
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      },
+      {
+        "@id": "urn:ngm:class:cybersecurity-policy",
+        "label": "Cybersecurity Policy"
+      },
+      {
+        "@id": "urn:ngm:class:platform-regulation",
+        "label": "Platform Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:algorithmic-accountability",
+        "label": "Algorithmic Accountability"
+      },
+      {
+        "@id": "urn:ngm:class:digital-rights",
+        "label": "Digital Rights"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:public-policy",
+        "label": "Public Policy"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:regulatory-framework",
+        "label": "Regulatory Framework"
+      },
+      {
+        "@id": "urn:ngm:class:multi-stakeholder-governance",
+        "label": "Multi-Stakeholder Governance"
+      },
+      {
+        "@id": "urn:ngm:class:digital-infrastructure",
+        "label": "Digital Infrastructure"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:digital-trust",
+        "label": "Digital Trust"
+      },
+      {
+        "@id": "urn:ngm:class:data-sovereignty",
+        "label": "Data Sovereignty"
+      },
+      {
+        "@id": "urn:ngm:class:open-government",
+        "label": "Open Government"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:rule-of-law",
+        "label": "Rule of Law"
+      },
+      {
+        "@id": "urn:ngm:class:institutional-capacity",
+        "label": "Institutional Capacity"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "@id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      },
+      {
+        "@id": "urn:ngm:class:digital-services-act",
+        "label": "Digital Services Act"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:itu",
+        "label": "ITU"
+      },
+      {
+        "@id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      },
+      {
+        "@id": "urn:ngm:class:iso-iec-jtc1",
+        "label": "ISO/IEC JTC 1"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:deregulation",
+        "label": "Deregulation"
+      },
+      {
+        "@id": "urn:ngm:class:techno-solutionism",
+        "label": "Techno-Solutionism"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "@id": "urn:ngm:class:ai-governance-and-ethics",
+        "label": "AI Governance and Ethics"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:e-government",
+        "label": "E-Government"
+      },
+      {
+        "@id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:net-neutrality",
+        "label": "Net Neutrality"
+      }
+    ]
+  },
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-13T00:00:00Z",
+    "inferenceRule": "ManualEnrichment"
+  }
 }
 ```
 
@@ -102,26 +242,100 @@ public:: true
 }
 ```
 
-
 - ### Definition
-  - Digital Governance is a concept within the metaverse domain. Further enrichment pending.
+  - Digital Governance is the ensemble of policies, institutional arrangements, regulatory instruments, and accountability mechanisms through which states, international bodies, and organisations steer the development and societal embedding of [[Digital Infrastructure]], digital platforms, and data systems. It integrates [[Public Policy]], [[Regulatory Framework]], and technical standards to shape how [[Artificial Intelligence]], [[Blockchain]], the internet, and related technologies are designed, deployed, and governed. Effective digital governance requires balancing innovation incentives against risk mitigation, [[Privacy]] protection, [[Digital Rights]], and equitable access — making it one of the central policy challenges of the early twenty-first century.
 
-- ### Semantic Classification
-  - owl-class:: artificial-intelligence:DigitalGovernance
-  - owl-role:: concept
+- ### Overview
+  - Digital Governance emerged as a formal discipline in the 1990s alongside the commercialisation of the internet, growing rapidly in scope as digital technologies became critical to economic, social, and political life.
+  - It operates across multiple levels:
+    - **International**: treaties, multi-stakeholder bodies ([[ITU]], [[IETF]], [[ICANN]]), and cross-border regulatory agreements.
+    - **National / Regional**: legislation such as [[GDPR]], the [[EU AI Act]], and the [[Digital Services Act]]; national cybersecurity strategies; data localisation laws.
+    - **Organisational**: internal policies, codes of conduct, algorithmic audit regimes, and data governance committees.
+  - The field addresses three broad challenge clusters:
+    - **Infrastructure governance**: who controls and manages the physical and logical layers of the internet, including [[Net Neutrality]], spectrum allocation, and [[Digital Infrastructure]] investment.
+    - **Data and privacy governance**: rules governing data collection, retention, transfer, and use — epitomised by [[GDPR]] and similar frameworks — connected closely to [[Data Protection]] and [[Data Sovereignty]].
+    - **Platform and content governance**: regulation of large online intermediaries, covering [[Platform Regulation]], [[Algorithmic Accountability]], content moderation, and competition policy.
+  - Digital Governance intersects with [[AI Governance and Ethics]] as automated decision-making and generative AI introduce novel accountability challenges requiring specialised frameworks.
+
+- ### Key Components
+  - **[[Regulatory Framework]]**
+    - Binding rules enacted by national legislatures or regional bodies (e.g. EU) or international agreements; set the legal floor for acceptable conduct by technology actors.
+  - **[[Data Protection]]**
+    - Legal and technical measures restricting unlawful collection, processing, or disclosure of personal data; key instruments include [[GDPR]], CCPA (California), and the APPI (Japan).
+  - **[[Cybersecurity Policy]]**
+    - National and organisational strategies to protect digital systems from intrusion, sabotage, and espionage; intersects with critical infrastructure protection and incident response obligations.
+  - **[[Platform Regulation]]**
+    - Rules applied to online intermediaries — social networks, search engines, app stores — governing liability, interoperability, content removal obligations, and algorithmic transparency.
+  - **[[Algorithmic Accountability]]**
+    - Requirements for explainability, auditability, and redress mechanisms for automated decision-making; closely tied to [[AI Governance and Ethics]] and [[Fairness in Machine Learning]].
+  - **[[Digital Rights]]**
+    - Articulation and enforcement of rights in digital contexts: freedom of expression online, the right to access the internet, the right to be forgotten, and data portability.
+  - **[[Multi-Stakeholder Governance]]**
+    - A governance model in which governments, civil society, technical community, and private sector participate in policy processes on an equal or structured basis; central to [[Internet Governance]] fora such as the IGF.
+  - **[[Data Sovereignty]]**
+    - Assertions by states or communities that data generated within a jurisdiction or by their citizens is subject to their laws and should remain under their control; drives data localisation policies.
+  - **[[Digital Trust]]**
+    - The aggregate confidence of individuals and institutions in digital systems and their governance; built through transparency, security, and effective redress mechanisms.
+  - **[[Open Government]]**
+    - Principles of transparency, participation, and accountability applied to government use of digital data; linked to open data initiatives and [[E-Government]] programmes.
+
+- ### Applications and Use Cases
+  - **National Digital Strategy**: governments use digital governance frameworks to set priorities for broadband rollout, public sector digitisation, and technology sovereignty — e.g. the EU Digital Decade programme.
+  - **AI Regulation**: the [[EU AI Act]] (2024) classifies AI systems by risk and imposes obligations on providers — a landmark application of digital governance to [[Artificial Intelligence]].
+  - **Data Protection Enforcement**: national data protection authorities apply [[GDPR]] to investigate breaches, impose fines, and issue guidance — translating governance norms into market behaviour change.
+  - **Content Moderation at Scale**: the [[Digital Services Act]] requires very large online platforms to conduct systemic risk assessments and provide algorithmic transparency reports — an operational use of [[Platform Regulation]].
+  - **Decentralised Governance Experiments**: [[Blockchain]]-based systems, including [[Decentralised Autonomous Organisation]] (DAOs) and [[Smart Contracts]], are studied as alternative or complementary governance substrates for enforcing rules without central intermediaries.
+  - **Cybersecurity Incident Response**: national cybersecurity agencies (e.g. ENISA, CISA) coordinate responses to large-scale attacks, illustrating [[Cybersecurity Policy]] in practice.
+  - **Cross-Border Data Flows**: adequacy decisions (EU-US Data Privacy Framework) and binding corporate rules operationalise [[Data Sovereignty]] and enable international commerce under digital governance constraints.
+  - **E-Government Services**: digital identity, e-voting pilots, and government API ecosystems are governed via digital governance frameworks that specify data handling, [[Privacy]], and access controls.
+  - **Internet Resource Allocation**: ICANN's multi-stakeholder management of the DNS root and [[IETF]]'s open standards process exemplify [[Multi-Stakeholder Governance]] in technical governance.
 
 - ### Relationships
-  - bridges-to:: [[Blockchain]] (domain: bc) for decentralised governance mechanisms
+  - hasPart:: [[Data Protection]]
+  - hasPart:: [[Cybersecurity Policy]]
+  - hasPart:: [[Platform Regulation]]
+  - hasPart:: [[Algorithmic Accountability]]
+  - hasPart:: [[Digital Rights]]
+  - partOf:: [[Public Policy]]
+  - requires:: [[Regulatory Framework]]
+  - requires:: [[Multi-Stakeholder Governance]]
+  - requires:: [[Digital Infrastructure]]
+  - enables:: [[Digital Trust]]
+  - enables:: [[Data Sovereignty]]
+  - enables:: [[Open Government]]
+  - dependsOn:: [[Rule of Law]]
+  - dependsOn:: [[Institutional Capacity]]
+  - implements:: [[GDPR]]
+  - implements:: [[EU AI Act]]
+  - implements:: [[Digital Services Act]]
+  - standardizedBy:: [[ITU]]
+  - standardizedBy:: [[IETF]]
+  - standardizedBy:: [[ISO/IEC JTC 1]]
+  - contrastsWith:: [[Deregulation]]
+  - contrastsWith:: [[Techno-Solutionism]]
+  - bridges-to:: [[Blockchain]] (domain: blockchain) — decentralised governance mechanisms
+  - bridges-to:: [[Decentralised Autonomous Organisation]] (domain: blockchain) — on-chain rule enforcement
+  - bridges-to:: [[AI Governance and Ethics]] (domain: ai) — algorithmic accountability overlap
+  - bridges-to:: [[Smart Contracts]] (domain: blockchain) — automated policy enforcement
+  - relatedTo:: [[E-Government]]
+  - relatedTo:: [[Privacy]]
+  - relatedTo:: [[Net Neutrality]]
+  - relatedTo:: [[Internet Governance]]
+  - relatedTo:: [[Digital Policy]]
 
-- ### Content
-
-  ## Overview
-
-  Digital Governance represents an abstract concept in the metaverse ontology hierarchy.
-
-  #### Related Concepts
-  - [[owl:Thing]]
+- ### Standards and Context
+  - **[[GDPR]]** (General Data Protection Regulation, EU 2016/679) — sets the global benchmark for personal data protection; widely emulated by other jurisdictions.
+  - **[[EU AI Act]]** (EU 2024/1689) — risk-based framework for AI systems; the world's first comprehensive AI regulation.
+  - **[[Digital Services Act]]** (EU 2022/2065) — horizontal regulation for online platforms; introduces systemic risk assessments, algorithmic transparency, and crisis response obligations.
+  - **[[Digital Markets Act]]** (EU 2022/1925) — ex-ante competition regulation for gatekeeper platforms; complements the DSA.
+  - **[[ITU]]** (International Telecommunication Union) — UN specialised agency coordinating global telecom and ICT standards including spectrum and satellite orbits.
+  - **[[IETF]]** (Internet Engineering Task Force) — develops and promotes voluntary internet standards (RFCs) through open, multi-stakeholder processes.
+  - **[[ISO/IEC JTC 1]]** — joint ISO/IEC committee producing international ICT standards, including [[ISO/IEC 27001]] for information security management.
+  - **[[ICANN]]** (Internet Corporation for Assigned Names and Numbers) — coordinates domain names, IP address allocation, and root zone management under a multi-stakeholder model.
+  - **IGF** (Internet Governance Forum) — UN-mandated multi-stakeholder forum for policy dialogue on internet governance; non-binding but influential in norm-setting.
+  - **Budapest Convention on Cybercrime** (Council of Europe, 2001) — landmark treaty harmonising national cybercrime laws; frequently cited as a digital governance instrument in the security domain.
+  - **OECD AI Principles** (2019) — intergovernmental soft-law framework influencing national AI strategies and feeding into [[EU AI Act]] design.
 
 - ### Provenance
-  - sources::
-  - migration-date:: 2026-04-26T00:00:00Z
+  - sources:: ITU, OECD, European Commission, Council of Europe, ICANN, IGF Secretariat, academic literature on internet governance and regulatory theory
+  - updated:: 2026-06-13

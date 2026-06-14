@@ -1,27 +1,129 @@
 - ### Definition
-  - Data Format defines the structural and encoding specification by which data is stored, transmitted, and interpreted between systems. Formats span binary serialisation (Protocol Buffers, Avro), text-based interchange (JSON, JSON-LD, XML), domain-specific schemas (DICOM, glTF), and columnar storage formats (Parquet). Format choice determines interoperability scope, parsing overhead, and compatibility with downstream processing pipelines.
+  - A **Data Format** is a formal structural and encoding specification that governs how raw bytes are organised, typed, and interpreted when data is stored, transmitted, or exchanged between computational systems. It encodes decisions about byte ordering, field delimitation, schema evolution, [[Compression]], and type systems. Formats range from binary serialisation protocols such as [[Protocol Buffers]] and [[Apache Avro]] to human-readable interchange languages such as [[JSON]] and [[XML]], and on to domain-specific schemas such as [[DICOM]] for medical imaging and [[glTF]] for 3D assets. The choice of data format shapes [[Data Interoperability]], parsing overhead, storage efficiency, and compatibility with [[Data Pipeline]] and analytics toolchains.
+
+- ### Overview
+  - Data formats sit at the foundation of every information-processing system. Whenever two components — a sensor and a database, a microservice and a message broker, a web browser and a REST API — must exchange information, they must share a common format contract.
+  - Format specifications define:
+    - **Structure**: how fields, records, and collections are arranged (flat, nested, tabular, graph).
+    - **Encoding**: how values are mapped to bytes (UTF-8 text, little-endian integers, base-64 blobs).
+    - **Schema**: the formal declaration of field names, types, and constraints, sometimes embedded in the payload, sometimes maintained separately in a [[Schema Registry]].
+    - **Versioning rules**: how a format evolves without breaking existing readers (backward/forward compatibility, field deprecation).
+  - The trade-off space is well understood: binary formats such as [[Protocol Buffers]] and [[Apache Avro]] minimise payload size and parsing cost but sacrifice human readability; text formats such as [[JSON]] and [[YAML]] maximise debuggability and ecosystem breadth but impose serialisation overhead; columnar formats such as [[Apache Parquet]] and [[Apache ORC]] optimise analytic query performance at the cost of row-level write amplification.
+  - Format standardisation through bodies such as the [[IETF]], [[ISO]], and [[W3C]] converts ad-hoc encoding conventions into durable, cite-able specifications that enable [[Data Exchange]] across organisations and decades.
+
+- ### Key Components
+  - **[[Encoding]]**
+    - Maps logical values (integers, strings, booleans, timestamps) to byte sequences.
+    - Examples: UTF-8, ASCII, IEEE 754 floating-point, base-64, varint (Protocol Buffers).
+    - [[Character Encoding]] determines how text is represented and is a prerequisite for any text-based format.
+  - **[[Schema]]**
+    - Declares the set of valid field names, their [[Type System]] bindings, optionality, and nested structure.
+    - Self-describing formats (JSON, XML) embed minimal schema in the payload; contract-first formats (Avro, Protocol Buffers, Thrift) keep schema external.
+    - A [[Schema Registry]] (e.g., Confluent Schema Registry for Avro/Protobuf) provides a centralised store for versioned schemas, enabling safe evolution in event-streaming architectures.
+  - **[[Serialisation]]**
+    - The process of converting an in-memory object graph into a format-compliant byte stream, and its inverse (deserialisation / parsing).
+    - Performance is determined by allocation patterns, zero-copy capabilities, and SIMD-accelerated parsers (e.g., simdjson for JSON).
+  - **[[Compression]]**
+    - Many formats support optional or mandatory compression layers (gzip, zstd, snappy, brotli) to reduce storage footprint and transmission latency.
+    - Columnar formats achieve superior compression by co-locating homogeneous values, enabling dictionary encoding and run-length encoding.
+  - **[[Codec]]**
+    - The software implementation responsible for encoding and decoding; codec quality determines practical performance even for the same format specification.
+  - **Versioning and Evolution**
+    - Formats specify rules for adding, removing, or renaming fields without breaking existing readers.
+    - Protobuf uses field numbers; Avro uses schema resolution rules; JSON Schema uses additive-only extension conventions.
+
+- ### Major Format Families
+  - #### Binary Serialisation
+    - [[Protocol Buffers]] (protobuf) — Google's [[Interface Definition Language]]-based format; strongly typed, compact, widely adopted in gRPC microservice stacks.
+    - [[Apache Avro]] — schema-embedded binary format designed for Hadoop ecosystem and Apache Kafka; excels at schema evolution in streaming pipelines.
+    - [[MessagePack]] — schema-less binary JSON alternative; used in Redis and high-frequency messaging.
+    - [[Apache Thrift]] — Facebook-originated IDL with binary and compact protocols; comparable scope to protobuf.
+    - [[FlatBuffers]] — zero-copy access without parsing; suitable for latency-critical game engines and embedded systems.
+    - [[CBOR]] (Concise Binary Object Representation) — IETF RFC 7049 binary analogue of JSON; used in IoT and COSE/JOSE security contexts.
+  - #### Text-Based Interchange
+    - [[JSON]] (RFC 8259) — de facto default for web APIs; human-readable, schema-optional, universally supported.
+    - [[JSON-LD]] — JSON with linked-data semantics via `@context` framing; bridges web APIs to the [[Semantic Web]] and [[Knowledge Graph]] ecosystems.
+    - [[XML]] — document-centric, namespace-aware; dominant in enterprise integration, SOAP, and regulatory filings.
+    - [[YAML]] — superset of JSON optimised for human authoring; used in configuration management (Kubernetes manifests, CI/CD pipelines) and [[Data Validation]] specifications (OpenAPI).
+    - [[TOML]] — minimal configuration format used in Rust (Cargo.toml) and Python (pyproject.toml).
+    - [[CSV]] — tabular text; lowest common denominator for data export/import; lacks a standardised type system.
+  - #### Columnar and Analytic
+    - [[Apache Parquet]] — open columnar format developed by Twitter and Cloudera; the standard persistence layer for cloud data lakes (AWS S3, Azure Data Lake, GCP).
+    - [[Apache ORC]] — columnar format optimised for Hive and Spark; competing with Parquet in Hadoop ecosystems.
+    - [[Apache Arrow]] — in-memory columnar format enabling zero-copy [[Data Exchange]] across language runtimes (Python, Rust, Java, C++) without serialisation overhead.
+  - #### Domain-Specific Formats
+    - [[DICOM]] — medical imaging standard embedding pixel arrays, patient metadata, and acquisition parameters in a single format.
+    - [[glTF]] (GL Transmission Format) — Khronos Group's JSON+binary format for 3D scene graphs; the "JPEG of 3D" in [[Spatial Computing]] and [[Metaverse]] pipelines.
+    - [[GeoJSON]] / [[GeoPackage]] — geospatial vector data; used in GIS and location services.
+    - [[HDF5]] — hierarchical data format for large scientific datasets (climate modelling, particle physics).
+    - [[FITS]] — Flexible Image Transport System for astronomical data.
+    - [[HL7 FHIR]] — healthcare data exchange standard built on JSON/XML/RDF.
+
+- ### Applications and Use Cases
+  - **Microservice Communication** — REST APIs rely on JSON; gRPC services use protobuf; event-driven systems use Avro or protobuf over Kafka topics with [[Schema Registry]] governance.
+  - **[[Data Pipeline]] Ingestion** — ETL pipelines consume CSV or JSON from source systems, convert to Parquet for lake storage, and expose Arrow buffers to analytic engines.
+  - **[[Machine Learning]] Datasets** — training datasets are commonly stored as Parquet, TFRecord (TensorFlow), or HDF5; the format affects data-loading throughput and therefore GPU utilisation.
+  - **Web and [[API Design]]** — REST APIs standardise on JSON (RFC 8259); GraphQL responses are JSON; OpenAPI 3.x describes JSON and YAML schema contracts.
+  - **[[Knowledge Graph]] Publishing** — JSON-LD and RDF/Turtle serialise ontology classes and property assertions for Linked Data publication and OWL2 reasoning.
+  - **[[Spatial Computing]] Assets** — glTF transmits 3D meshes, materials, and animations to WebXR runtimes and game engines; USD (Universal Scene Description) provides a superset for film and simulation.
+  - **Distributed Ledger Payloads** — [[Blockchain]] transactions encode payloads in RLP (Ethereum), CBOR (Cardano), or Borsh (Solana), each tuned for deterministic hash computation.
+  - **IoT and Edge Sensing** — constrained devices emit CBOR or MessagePack payloads over MQTT or CoAP to minimise bandwidth and battery consumption.
+  - **[[Computer Vision]] Annotations** — COCO JSON, Pascal VOC XML, and YOLO TXT formats carry bounding-box labels; TFRecord bundles raw pixels with annotations for training pipelines.
+
+- ### Relationships
+  - partOf:: [[Data Standards]]
+  - partOf:: [[Data Architecture]]
+  - hasPart:: [[Schema]]
+  - hasPart:: [[Encoding]]
+  - hasPart:: [[Serialisation]]
+  - requires:: [[Schema Registry]]
+  - requires:: [[Codec]]
+  - enables:: [[Data Interoperability]]
+  - enables:: [[Data Pipeline]]
+  - enables:: [[Data Exchange]]
+  - enables:: [[API Design]]
+  - dependsOn:: [[Character Encoding]]
+  - dependsOn:: [[Type System]]
+  - implements:: [[Open Standard]]
+  - implements:: [[Interface Definition Language]]
+  - uses:: [[Compression]]
+  - uses:: [[Data Validation]]
+  - standardizedBy:: [[IETF]]
+  - standardizedBy:: [[ISO]]
+  - standardizedBy:: [[W3C]]
+  - contrastsWith:: [[Binary Format]]
+  - contrastsWith:: [[Text Format]]
+  - bridges-to:: [[Linked Data]]
+  - bridges-to:: [[Knowledge Graph]]
+  - relatedTo:: [[JSON-LD]]
+  - relatedTo:: [[Protocol Buffers]]
+  - relatedTo:: [[Apache Parquet]]
+
+- ### Standards and Governance
+  - [[IETF]] publishes core text-format RFCs: RFC 8259 (JSON), RFC 7049 (CBOR), RFC 4180 (CSV informal guidance).
+  - [[W3C]] governs XML, JSON-LD, RDF serialisations (Turtle, N-Quads), and OWL2 syntax profiles.
+  - [[ISO]]/IEC standardises binary exchange formats in domains such as MPEG (ISO 14496), office documents (ISO 29500 OOXML), and archival (ISO 19005 PDF/A).
+  - [[Khronos Group]] stewards glTF and SPIR-V for 3D and GPU shader interchange.
+  - [[HL7 International]] maintains FHIR and V2/V3 messaging standards for healthcare [[Data Interoperability]].
+  - [[Apache Software Foundation]] governs Avro, Parquet, ORC, Arrow, and Thrift under open governance models.
+  - [[DICOM Standards Committee]] maintains the DICOM standard for medical imaging under joint NEMA/ACR oversight.
+  - Schema evolution governance is increasingly handled by runtime registries (Confluent Schema Registry, AWS Glue Schema Registry) enforcing compatibility policies (BACKWARD, FORWARD, FULL) at the platform level.
+
+- ### Format Selection Criteria
+  - **Human readability** — needed for configuration files and debugging (favour JSON, YAML, TOML); unnecessary for high-throughput machine-to-machine exchange (favour protobuf, Avro).
+  - **Schema rigidity** — contract-first IDL formats (protobuf, Thrift) enforce strong typing at compile time; schema-optional formats (JSON) allow rapid iteration at the cost of runtime type errors.
+  - **Payload size** — binary formats are typically 5–10× smaller than equivalent JSON for the same structured data; columnar formats achieve further compression through value homogeneity.
+  - **Ecosystem breadth** — JSON parsers exist in every language runtime; niche binary formats may have limited library support outside their primary language community.
+  - **Schema evolution** — Avro and protobuf provide well-specified evolution rules; JSON lacks standardised evolution semantics beyond additive conventions.
+  - **Query performance** — columnar formats (Parquet, ORC, Arrow) allow predicate pushdown and column pruning, reducing I/O for analytic workloads by orders of magnitude versus row-oriented formats.
+  - **Determinism** — formats used in cryptographic contexts (blockchain transaction encoding, Verifiable Credentials proofs) must produce canonical byte representations to ensure consistent hash values.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:DataFormat
   - owl-role:: concept
 
-- ### Relationships
-  - partOf [[Data Standards]]
-  - enables [[Data Interoperability]]
-  - enables [[Data Pipeline]]
-  - relatedTo [[JSON-LD]]
-  - relatedTo [[Linked Data]]
-
-- ### Content
-
-  ## Overview
-
-  Data Format represents an abstract concept in the metaverse ontology hierarchy.
-
-  #### Related Concepts
-  - [[owl:Thing]]
-
 - ### Provenance
+  - sources:: IETF RFC 8259, RFC 7049; W3C JSON-LD 1.1; Apache Avro specification; Google Protocol Buffers documentation; Apache Parquet specification; Khronos glTF 2.0 specification
+  - updated:: 2026-06-13
   - bridges-to:: [[Computer Vision]] (ai)
-  - sources::
   - migration-date:: 2026-04-26T00:00:00Z

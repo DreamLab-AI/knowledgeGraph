@@ -67,7 +67,7 @@ public:: true
   "@type": "Class",
   "label": "Optimism",
   "definition": "Optimism is an Ethereum layer-2 scaling network that uses optimistic rollup technology to process transactions off the main chain while inheriting Ethereum security. Launched on mainnet in late 2021 by OP Labs, it batches transactions and posts compressed data and state commitments to Ethereum, assuming validity unless challenged within a dispute window. It is closely associated with the OP Stack, a modular open-source framework for building rollup chains, and the broader Superchain concept that links such chains. The OP token governs the Optimism Collective and funds public-goods initiatives through retroactive funding rounds.",
-  "domain": "optimism",
+  "domain": "blockchain",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

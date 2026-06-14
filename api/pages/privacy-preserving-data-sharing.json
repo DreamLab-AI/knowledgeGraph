@@ -4,39 +4,145 @@
   "slug": "privacy-preserving-data-sharing",
   "public": true,
   "classIri": "urn:ngm:class:privacy-preserving-data-sharing",
-  "domain": "infrastructure",
-  "definition": "Technologies and protocols enabling secure exchange of data between parties while protecting sensitive information through techniques such as differential privacy, secure multi-party computation, federated learning, and synthetic data generation.",
+  "domain": "data",
+  "definition": "Privacy Preserving Data Sharing (PPDS) encompasses the set of cryptographic, statistical, and algorithmic techniques that allow multiple parties to exchange, query, or jointly analyse data without disclosing raw sensitive records. Core mechanisms include differential privacy, secure multi-party computation, homomorphic encryption, federated learning, and synthetic data generation, each providing formal or empirical guarantees that individual-level information cannot be inferred. PPDS enables collaborative analytics, AI model training, and regulatory reporting across organisational and jurisdictional boundaries while satisfying privacy regulations such as GDPR and HIPAA. It is a foundational discipline at the intersection of cryptography, distributed systems, and machine learning, increasingly deployed in healthcare, finance, and cross-industry data-sharing consortia.",
   "subClassOf": [
-    {
-      "id": "urn:ngm:class:infra-data-management",
-      "label": "Data Management"
-    },
     {
       "id": "urn:ngm:class:data-sharing",
       "label": "Data Sharing"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [
+    "hasPart": [
       {
-        "id": "urn:ngm:class:collaborative-systems-modality-analytics",
-        "label": "Collaborative Analytics"
+        "id": "urn:ngm:class:differential-privacy",
+        "label": "Differential Privacy"
+      },
+      {
+        "id": "urn:ngm:class:secure-multi-party-computation",
+        "label": "Secure Multi-Party Computation"
+      },
+      {
+        "id": "urn:ngm:class:homomorphic-encryption",
+        "label": "Homomorphic Encryption"
+      },
+      {
+        "id": "urn:ngm:class:synthetic-data-generation",
+        "label": "Synthetic Data Generation"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cryptographic-protocols",
+        "label": "Cryptographic Protocols"
+      },
+      {
+        "id": "urn:ngm:class:trust-models",
+        "label": "Trust Models"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:collaborative-analytics",
+        "label": "Collaborative Analytics"
+      },
+      {
+        "id": "urn:ngm:class:data-clean-rooms",
+        "label": "Data Clean Rooms"
+      },
+      {
+        "id": "urn:ngm:class:cross-organisational-ai-training",
+        "label": "Cross-Organisational AI Training"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:zero-knowledge-proofs",
+        "label": "Zero-Knowledge Proofs"
+      },
+      {
+        "id": "urn:ngm:class:trusted-execution-environments",
+        "label": "Trusted Execution Environments"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "id": "urn:ngm:class:hipaa",
+        "label": "HIPAA"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:data-anonymisation",
+        "label": "Data Anonymisation"
+      },
+      {
+        "id": "urn:ngm:class:data-masking",
+        "label": "Data Masking"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:federated-machine-learning",
+        "label": "Federated Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-data-sharing",
+        "label": "Blockchain Data Sharing"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:noise-mechanisms",
+        "label": "Noise Mechanisms"
+      },
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:data-monetisation",
+        "label": "Data Monetisation"
+      }
+    ],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:information-security",
+        "label": "Information Security"
+      },
+      {
+        "id": "urn:ngm:class:data-minimisation",
+        "label": "Data Minimisation"
+      },
+      {
+        "id": "urn:ngm:class:consent-management",
+        "label": "Consent Management"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -5,18 +5,35 @@
   "public": true,
   "classIri": "urn:ngm:class:hyperledger-foundation",
   "domain": "blockchain",
-  "definition": "The Hyperledger Foundation is an open-source collaborative initiative hosted by the Linux Foundation that develops and maintains enterprise-grade, permissioned distributed ledger frameworks and supporting toolkits. Its portfolio includes Hyperledger Fabric (a modular, pluggable DLT framework for enterprise supply-chain and financial applications), Hyperledger Besu (an Ethereum-compatible client for public and private networks), Hyperledger Aries (a toolkit for decentralised identity and verifiable credentials), and Hyperledger Cacti (an interoperability framework). The Foundation operates under an open-governance model with technical steering committees and a diverse membership spanning technology companies, financial institutions, and governments.",
+  "definition": "The Hyperledger Foundation is an open-source collaborative initiative hosted by the Linux Foundation, founded in December 2015, that stewards a portfolio of enterprise-grade distributed ledger frameworks, identity toolkits, and interoperability libraries. Its flagship projects include Hyperledger Fabric (a modular permissioned DLT with pluggable consensus and chaincode-based smart contracts), Hyperledger Besu (an Ethereum-compatible client for public and private enterprise networks), Hyperledger Aries (a decentralised identity and verifiable credentials stack), and Hyperledger Cacti (a cross-ledger interoperability framework). The Foundation operates under an open-governance model with a Technical Steering Committee, project lifecycle governance (Incubation, Graduated, Dormant), and membership tiers spanning major technology vendors, financial institutions, and government bodies worldwide.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:bc-governance-and-regulation",
-      "label": "Blockchain Governance and Regulation"
+      "id": "urn:ngm:class:open-source-foundation",
+      "label": "Open Source Foundation"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:hyperledger-fabric",
+        "label": "Hyperledger Fabric"
+      },
+      {
+        "id": "urn:ngm:class:hyperledger-besu",
+        "label": "Hyperledger Besu"
+      },
+      {
+        "id": "urn:ngm:class:hyperledger-aries",
+        "label": "Hyperledger Aries"
+      },
+      {
+        "id": "urn:ngm:class:hyperledger-cacti",
+        "label": "Hyperledger Cacti"
+      }
+    ],
     "requires": [],
     "enables": [
       {
@@ -33,26 +50,96 @@
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "id": "urn:ngm:class:r3-corda",
+        "label": "R3 Corda"
+      },
+      {
+        "id": "urn:ngm:class:quorum",
+        "label": "Quorum"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:decentralised-ai",
+        "label": "Decentralised AI"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      },
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:open-governance",
+        "label": "Open Governance"
+      }
+    ],
     "supports": [
       {
         "id": "urn:ngm:class:supply-chain-blockchain",
         "label": "Supply Chain Blockchain"
       },
       {
-        "id": "urn:ngm:class:hyperledger-fabric",
-        "label": "Hyperledger Fabric"
+        "id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
       }
     ],
-    "standardizedBy": [],
-    "partOf": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:linux-foundation",
+        "label": "Linux Foundation"
+      },
+      {
+        "id": "urn:ngm:class:w3c",
+        "label": "W3C"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:linux-foundation",
+        "label": "Linux Foundation"
+      }
+    ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:distributed-ledger-technology",
-        "label": "Distributed Ledger Technology"
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-governance",
+        "label": "Blockchain Governance"
+      },
+      {
+        "id": "urn:ngm:class:open-source-software",
+        "label": "Open Source Software"
       }
     ]
   },

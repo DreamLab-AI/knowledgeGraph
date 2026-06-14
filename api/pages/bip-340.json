@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:bip-340",
   "domain": "blockchain",
-  "definition": "BIP-340 is the Bitcoin Improvement Proposal that standardises Schnorr signatures for use on the Bitcoin network, using the secp256k1 elliptic curve. It defines a 64-byte signature scheme that is provably secure in the random oracle model and enables key and signature aggregation through protocols such as MuSig2. BIP-340 is a prerequisite for Taproot (BIP-341) and introduces substantial efficiency and privacy improvements over the legacy ECDSA scheme. The specification includes a deterministic signing algorithm and rigorous test vectors to facilitate cross-implementation compatibility.",
+  "definition": "BIP-340 is the Bitcoin Improvement Proposal that standardises Schnorr signatures for use on the Bitcoin network using the secp256k1 elliptic curve, defining a deterministic 64-byte signature scheme that is provably secure in the random oracle model. It introduces x-only 32-byte public key encoding, a tagged hash nonce-generation procedure, and rigorous test vectors to guarantee cross-implementation compatibility. BIP-340 is a strict prerequisite for Taproot (BIP-341) and Tapscript (BIP-342), enabling key aggregation via MuSig2 and linear signature composition that makes multisignature spends indistinguishable on-chain from single-key spends. The proposal represents the most significant cryptographic upgrade to Bitcoin since its inception, substantially improving privacy, efficiency, and the expressiveness of multi-party signing protocols.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:cryptographic-protocol",
@@ -13,38 +13,125 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.78,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:secp256k1",
+        "label": "secp256k1"
+      },
+      {
+        "id": "urn:ngm:class:tagged-hash",
+        "label": "Tagged Hash"
+      },
+      {
+        "id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:bip-341",
         "label": "BIP-341"
       },
       {
+        "id": "urn:ngm:class:bip-342",
+        "label": "BIP-342"
+      },
+      {
+        "id": "urn:ngm:class:taproot",
+        "label": "Taproot"
+      },
+      {
         "id": "urn:ngm:class:taproot-assets",
         "label": "Taproot Assets"
       },
       {
-        "id": "urn:ngm:class:bip-340-schnorr-keypair",
-        "label": "BIP-340 Schnorr Keypair"
+        "id": "urn:ngm:class:musig2",
+        "label": "MuSig2"
+      },
+      {
+        "id": "urn:ngm:class:point-time-locked-contract",
+        "label": "Point Time-Locked Contract"
+      },
+      {
+        "id": "urn:ngm:class:threshold-signature",
+        "label": "Threshold Signature"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [
+    "implements": [
       {
-        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-improvement-proposals",
-        "label": "Bitcoin Improvement Proposals"
+        "id": "urn:ngm:class:schnorr-signature",
+        "label": "Schnorr Signature"
+      },
+      {
+        "id": "urn:ngm:class:x-only-public-key",
+        "label": "X-Only Public Key"
       }
     ],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:ecdsa",
+        "label": "ECDSA"
+      },
+      {
+        "id": "urn:ngm:class:ed25519",
+        "label": "Ed25519"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:secure-multi-party-computation",
+        "label": "Secure Multi-Party Computation"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:bitcoin-improvement-proposals",
+        "label": "Bitcoin Improvement Proposals"
+      },
+      {
+        "id": "urn:ngm:class:sha256",
+        "label": "SHA-256"
+      },
+      {
+        "id": "urn:ngm:class:bip32-hierarchical-deterministic-wallets",
+        "label": "BIP-32 HD Wallets"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:bitcoin-privacy",
+        "label": "Bitcoin Privacy"
+      },
+      {
+        "id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      },
+      {
+        "id": "urn:ngm:class:multi-signature",
+        "label": "Multi-Signature"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:bitcoin-core",
+        "label": "Bitcoin Core"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:taproot-soft-fork",
+        "label": "Taproot Soft Fork"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:schnorr-signature",
@@ -61,6 +148,14 @@
       {
         "id": "urn:ngm:class:cryptographic-signature",
         "label": "Cryptographic Signature"
+      },
+      {
+        "id": "urn:ngm:class:secp256k1",
+        "label": "secp256k1"
+      },
+      {
+        "id": "urn:ngm:class:random-oracle-model",
+        "label": "Random Oracle Model"
       }
     ]
   },

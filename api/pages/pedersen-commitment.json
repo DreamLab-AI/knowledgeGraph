@@ -4,8 +4,8 @@
   "slug": "pedersen-commitment",
   "public": true,
   "classIri": "urn:ngm:class:pedersen-commitment",
-  "domain": "cryptography",
-  "definition": "A cryptographic commitment scheme that lets a party commit to a value while keeping it hidden, with the ability to reveal it later. It is both binding and information-theoretically hiding, and it is additively homomorphic.",
+  "domain": "security",
+  "definition": "A Pedersen commitment is a cryptographic commitment scheme in which a committer binds to a secret value v by computing C = g^v * h^r, where g and h are independent group generators and r is a random blinding factor. The scheme is computationally binding under the discrete logarithm assumption and unconditionally (information-theoretically) hiding, meaning an adversary with unlimited computation cannot determine the committed value from C alone. Crucially, Pedersen commitments are additively homomorphic: the product of two commitments C(v1, r1) * C(v2, r2) equals C(v1+v2, r1+r2), enabling arithmetic on committed values without revealing them. This property makes Pedersen commitments foundational to confidential transactions, range proofs, and zero-knowledge proof systems.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:cryptographic-commitment",
@@ -13,31 +13,121 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.75,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
+        "id": "urn:ngm:class:discrete-logarithm-problem",
+        "label": "Discrete Logarithm Problem"
+      },
+      {
         "id": "urn:ngm:class:elliptic-curve-cryptography",
         "label": "Elliptic Curve Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:random-oracle",
+        "label": "Random Oracle"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:zero-knowledge-proof",
         "label": "Zero-Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:confidential-transaction",
+        "label": "Confidential Transaction"
+      },
+      {
+        "id": "urn:ngm:class:range-proof",
+        "label": "Range Proof"
+      },
+      {
+        "id": "urn:ngm:class:bulletproofs",
+        "label": "Bulletproofs"
+      },
+      {
+        "id": "urn:ngm:class:secure-multiparty-computation",
+        "label": "Secure Multiparty Computation"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:homomorphic-encryption",
+        "label": "Homomorphic Encryption"
+      },
+      {
+        "id": "urn:ngm:class:commitment-scheme",
+        "label": "Commitment Scheme"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:hash-commitment",
+        "label": "Hash Commitment"
+      },
+      {
+        "id": "urn:ngm:class:elgamal-encryption",
+        "label": "ElGamal Encryption"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain-privacy",
+        "label": "Blockchain Privacy"
+      },
+      {
+        "id": "urn:ngm:class:monero",
+        "label": "Monero"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:elliptic-curve-group",
+        "label": "Elliptic Curve Group"
+      },
+      {
+        "id": "urn:ngm:class:blinding-factor",
+        "label": "Blinding Factor"
+      },
+      {
+        "id": "urn:ngm:class:group-generator",
+        "label": "Group Generator"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:privacy-preserving-protocol",
+        "label": "Privacy-Preserving Protocol"
+      },
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-secret-sharing",
+        "label": "Verifiable Secret Sharing"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:schnorr-protocol",
+        "label": "Schnorr Protocol"
+      },
+      {
+        "id": "urn:ngm:class:sigma-protocol",
+        "label": "Sigma Protocol"
+      },
+      {
+        "id": "urn:ngm:class:non-interactive-zero-knowledge",
+        "label": "Non-Interactive Zero-Knowledge"
+      }
+    ]
   },
   "wikilinks": [
     {

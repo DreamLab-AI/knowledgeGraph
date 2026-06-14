@@ -4,7 +4,7 @@
   "slug": "isa-95",
   "public": true,
   "classIri": "urn:ngm:class:isa-95",
-  "domain": "manufacturing",
+  "domain": "robotics",
   "definition": "ISA-95 is an international standard for integrating enterprise and control systems in manufacturing, defining models for the interface between business and production operations.",
   "subClassOf": [
     {

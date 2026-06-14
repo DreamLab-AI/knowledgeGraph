@@ -4,20 +4,42 @@
   "slug": "ipfs",
   "public": true,
   "classIri": "urn:ngm:class:ipfs",
-  "domain": "blockchain",
-  "definition": "The InterPlanetary File System (IPFS) is a peer-to-peer, content-addressed hypermedia protocol and distributed file system in which each piece of content is identified by a Content Identifier (CID) \u2014 a self-describing cryptographic hash \u2014 rather than by its network location. Nodes participating in the IPFS network store and serve blocks of data identified by their CIDs, enabling resilient, censorship-resistant content distribution without a single point of failure. IPFS underpins decentralised application storage for NFT metadata, Web3 front-ends, and distributed knowledge repositories.",
+  "domain": "distributed-systems",
+  "definition": "The InterPlanetary File System (IPFS) is a peer-to-peer, content-addressed hypermedia protocol and distributed file system in which each piece of content is identified by a Content Identifier (CID) \u2014 a self-describing cryptographic hash derived from the content itself \u2014 rather than by its network location. Nodes exchange data blocks via Bitswap and route lookups through a Kademlia-based Distributed Hash Table implemented in libp2p, while the underlying data model (IPLD) structures blocks as a Merkle DAG enabling deduplication and efficient versioning. IPFS operates as the primary off-chain storage layer for Web3 applications, decentralised websites, NFT metadata, and distributed knowledge repositories, complemented by Filecoin's incentive layer for long-term data persistence.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:bc-network-component",
-      "label": "BC Network Component"
+      "id": "urn:ngm:class:peer-to-peer-network",
+      "label": "Peer-to-Peer Network"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.72,
+  "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:bitswap",
+        "label": "Bitswap"
+      },
+      {
+        "id": "urn:ngm:class:ipld",
+        "label": "IPLD"
+      },
+      {
+        "id": "urn:ngm:class:multicodec",
+        "label": "Multicodec"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:content-identifier",
+        "label": "Content Identifier"
+      },
+      {
+        "id": "urn:ngm:class:pinning-service",
+        "label": "Pinning Service"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:decentralised-web",
@@ -26,15 +48,49 @@
       {
         "id": "urn:ngm:class:nft",
         "label": "NFT"
-      }
-    ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [
+      },
       {
         "id": "urn:ngm:class:decentralised-file-storage",
-        "label": "Decentralised file storage"
+        "label": "Decentralised File Storage"
+      },
+      {
+        "id": "urn:ngm:class:web3",
+        "label": "Web3"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:kademlia-dht",
+        "label": "Kademlia DHT"
+      },
+      {
+        "id": "urn:ngm:class:multihash",
+        "label": "Multihash"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:hypertext-transfer-protocol",
+        "label": "Hypertext Transfer Protocol"
+      },
+      {
+        "id": "urn:ngm:class:centralised-cloud-storage",
+        "label": "Centralised Cloud Storage"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
       }
     ],
     "uses": [
@@ -43,8 +99,24 @@
         "label": "Content Addressing"
       },
       {
+        "id": "urn:ngm:class:merkle-dag",
+        "label": "Merkle DAG"
+      },
+      {
         "id": "urn:ngm:class:merkle-tree",
         "label": "Merkle Tree"
+      },
+      {
+        "id": "urn:ngm:class:distributed-hash-table",
+        "label": "Distributed Hash Table"
+      },
+      {
+        "id": "urn:ngm:class:libp2p",
+        "label": "libp2p"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash",
+        "label": "Cryptographic Hash"
       }
     ],
     "supports": [],
@@ -52,8 +124,20 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:peer-to-peer-network",
-        "label": "Peer-to-Peer Network"
+        "id": "urn:ngm:class:filecoin",
+        "label": "Filecoin"
+      },
+      {
+        "id": "urn:ngm:class:bittorrent",
+        "label": "BitTorrent"
+      },
+      {
+        "id": "urn:ngm:class:git",
+        "label": "Git"
+      },
+      {
+        "id": "urn:ngm:class:ens",
+        "label": "ENS"
       }
     ]
   },

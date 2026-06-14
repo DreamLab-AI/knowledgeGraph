@@ -91,7 +91,7 @@ public:: true
   "@type": "Class",
   "label": "Financial Infrastructure Domain",
   "definition": "The Financial Infrastructure Domain classifies concepts concerning the systems that move, clear and settle value between parties. It covers payment rails, settlement, clearing and the messaging standards that connect institutions. As a top-level subject axis it provides the operational substrate on which financial services and markets depend.",
-  "domain": "financial-infrastructure",
+  "domain": "finance",
   "maturity": "emerging",
   "qualityScore": 0.7,
   "subClassOf": [

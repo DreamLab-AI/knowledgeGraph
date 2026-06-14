@@ -55,7 +55,7 @@ public:: true
   "@type": "Class",
   "label": "Securitize",
   "definition": "A financial technology company providing infrastructure for issuing, managing and trading tokenised securities on blockchain networks.",
-  "domain": "general",
+  "domain": "blockchain",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

@@ -71,7 +71,7 @@ public:: true
   "@type": "Class",
   "label": "Linear Algebra",
   "definition": "Linear Algebra is the branch of mathematics concerned with vector spaces, linear transformations and systems of linear equations. Its central objects include vectors, matrices, determinants, eigenvalues and eigenvectors, and operations such as matrix multiplication and inversion. The field provides the language for representing and solving problems in geometry, physics, computer graphics and data analysis. It is foundational to machine learning, where data, model parameters and transformations are expressed and manipulated as tensors.",
-  "domain": "linear-algebra",
+  "domain": "machine-learning",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

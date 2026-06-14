@@ -63,7 +63,7 @@ public:: true
   "@type": "Class",
   "label": "Lattice Cryptography",
   "definition": "A family of cryptographic constructions whose security rests on the hardness of computational problems over high-dimensional lattices, such as learning with errors. These problems are believed to resist attacks by quantum computers.",
-  "domain": "cryptographic",
+  "domain": "security",
   "maturity": "emerging",
   "qualityScore": 0.7,
   "subClassOf": [

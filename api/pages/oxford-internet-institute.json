@@ -4,7 +4,7 @@
   "slug": "oxford-internet-institute",
   "public": true,
   "classIri": "urn:ngm:class:oxford-internet-institute",
-  "domain": "research",
+  "domain": "governance",
   "definition": "The Oxford Internet Institute is a department of the University of Oxford that conducts multidisciplinary research on the social and economic effects of the internet and digital technologies.",
   "subClassOf": [
     {

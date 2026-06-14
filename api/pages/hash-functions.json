@@ -4,7 +4,7 @@
   "slug": "hash-functions",
   "public": true,
   "classIri": "urn:ngm:class:hash-functions",
-  "domain": "general",
+  "domain": "security",
   "definition": "Hash functions are algorithms that map data of arbitrary size to a fixed-size output, with cryptographic hash functions designed to be one-way and collision resistant. They are central to security and blockchains.",
   "subClassOf": [
     {

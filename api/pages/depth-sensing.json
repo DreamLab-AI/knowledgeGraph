@@ -5,19 +5,32 @@
   "public": true,
   "classIri": "urn:ngm:class:depth-sensing",
   "domain": "spatial-computing",
-  "definition": "Depth Sensing is the measurement and capture of per-pixel distance information from a sensor to surfaces in the environment, producing depth maps or point clouds. Technologies include structured light, time-of-flight (ToF), active stereoscopy, and LiDAR. Depth sensing is foundational to augmented reality occlusion, robotic navigation, 3D scene reconstruction, and gesture recognition in spatial computing systems.",
+  "definition": "Depth Sensing is the acquisition and processing of per-pixel or per-point distance information from a sensor to surfaces in a scene, yielding depth maps, range images, or 3D point clouds. Hardware modalities include structured light projection, time-of-flight (ToF) imaging, passive and active stereo vision, LiDAR scanning, and monocular depth estimation via machine learning. Depth sensing is a foundational enabling technology for spatial computing, robotic navigation, autonomous vehicles, augmented and mixed reality occlusion, gesture recognition, and 3D scene reconstruction, providing the geometric substrate upon which higher-level understanding is built.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:sc-interaction",
-      "label": "Interaction Technology"
+      "id": "urn:ngm:class:sensor-fusion",
+      "label": "Sensor Fusion"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "emerging",
+  "qualityScore": 0.72,
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:sensor-input",
+        "label": "Sensor Input"
+      },
+      {
+        "id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      },
+      {
+        "id": "urn:ngm:class:camera-calibration",
+        "label": "Camera Calibration"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:3-d-reconstruction",
@@ -30,12 +43,38 @@
       {
         "id": "urn:ngm:class:slam",
         "label": "SLAM"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:gesture-recognition",
+        "label": "Gesture Recognition"
+      },
+      {
+        "id": "urn:ngm:class:object-detection",
+        "label": "Object Detection"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:monocular-depth-estimation",
+        "label": "Monocular Depth Estimation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:neural-radiance-field",
+        "label": "Neural Radiance Field"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:lidar",
@@ -44,15 +83,52 @@
       {
         "id": "urn:ngm:class:stereo-camera",
         "label": "Stereo Camera"
+      },
+      {
+        "id": "urn:ngm:class:time-of-flight-sensor",
+        "label": "Time-of-Flight Sensor"
+      },
+      {
+        "id": "urn:ngm:class:structured-light",
+        "label": "Structured Light"
+      },
+      {
+        "id": "urn:ngm:class:infrared-sensor",
+        "label": "Infrared Sensor"
       }
     ],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "id": "urn:ngm:class:mixed-reality",
+        "label": "Mixed Reality"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
       {
         "id": "urn:ngm:class:depth-estimation",
         "label": "Depth Estimation"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:scene-understanding",
+        "label": "Scene Understanding"
+      },
+      {
+        "id": "urn:ngm:class:semantic-segmentation",
+        "label": "Semantic Segmentation"
       }
     ]
   },

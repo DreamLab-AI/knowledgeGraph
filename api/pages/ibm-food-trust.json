@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:ibm-food-trust",
   "domain": "blockchain",
-  "definition": "IBM Food Trust is a blockchain-based platform for sharing food supply chain data among participants to support traceability and provenance.",
+  "definition": "IBM Food Trust is a permissioned blockchain network, built on Hyperledger Fabric, that enables food industry participants \u2014 growers, processors, distributors, retailers, and regulators \u2014 to digitally record, share, and verify supply chain events from farm to shelf. By anchoring provenance records in an immutable distributed ledger, it supports rapid traceability during food safety incidents, reduces waste through better freshness visibility, and builds consumer confidence in product origin claims. The platform operates as a multi-party ecosystem in which each participant controls the data they contribute while selectively sharing access with downstream trading partners. Walmart, Carrefour, Nestl\u00e9, and other major retailers have deployed it to meet regulatory traceability mandates such as the US FDA Food Safety Modernization Act.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:supply-chain",
@@ -13,31 +13,131 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:hyperledger-fabric",
         "label": "Hyperledger Fabric"
+      },
+      {
+        "id": "urn:ngm:class:permissioned-blockchain",
+        "label": "Permissioned Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:food-safety",
         "label": "Food Safety"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-traceability",
+        "label": "Supply Chain Traceability"
+      },
+      {
+        "id": "urn:ngm:class:provenance-verification",
+        "label": "Provenance Verification"
+      },
+      {
+        "id": "urn:ngm:class:recall-management",
+        "label": "Recall Management"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:gs1-standards",
+        "label": "GS1 Standards"
+      },
+      {
+        "id": "urn:ngm:class:food-safety-modernization-act",
+        "label": "Food Safety Modernization Act"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:public-blockchain",
+        "label": "Public Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:centralized-database",
+        "label": "Centralised Database"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:iot-sensor",
+        "label": "IoT Sensor"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:erp-system",
+        "label": "ERP System"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cryptographic-hash",
+        "label": "Cryptographic Hash"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:sustainability-reporting",
+        "label": "Sustainability Reporting"
+      }
+    ],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:food-supply-chain",
+        "label": "Food Supply Chain"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "id": "urn:ngm:class:non-fungible-token",
+        "label": "Non-Fungible Token"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ]
   },
   "wikilinks": [
     {

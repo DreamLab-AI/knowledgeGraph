@@ -4,21 +4,43 @@
   "slug": "cost-function",
   "public": true,
   "classIri": "urn:ngm:class:cost-function",
-  "domain": "robotics",
-  "definition": "A cost function is a scalar-valued mathematical function that quantifies the discrepancy between the current and desired states of a robotic system, or the total resource expenditure of a planned trajectory, providing the objective that control and planning algorithms minimise. In motion planning, cost functions encode factors such as path length, joint torque, collision risk, and time; in reinforcement learning they appear inverted as reward functions whose maximisation drives policy learning. The choice and design of the cost function critically shapes the behaviour of the optimised system, and poorly specified costs can lead to reward hacking or physically unrealisable trajectories.",
+  "domain": "machine-learning",
+  "definition": "A cost function is a scalar-valued mathematical function that maps a model's parameters or a system's state to a real number representing the magnitude of error, resource expenditure, or divergence from a desired outcome. In supervised machine learning, the cost function (also called a loss function) measures the aggregate discrepancy between predicted and ground-truth outputs across a training set, providing the objective that optimisation algorithms such as gradient descent minimise. In control theory and robotics, cost functions encode trajectory quality criteria including path length, energy consumption, and collision risk, enabling optimal control policies via formulations such as LQR and model predictive control. The design of the cost function is one of the most consequential decisions in any learning or optimisation system, as misspecified objectives lead to reward hacking, degenerate solutions, or physically unrealisable behaviours.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:robo-navigation-and-planning",
-      "label": "Navigation and Planning"
+      "id": "urn:ngm:class:objective-function",
+      "label": "Objective Function"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.73,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:regularisation",
+        "label": "Regularisation"
+      },
+      {
+        "id": "urn:ngm:class:penalty-term",
+        "label": "Penalty Term"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "id": "urn:ngm:class:differentiability",
+        "label": "Differentiability"
+      }
+    ],
     "enables": [
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
       {
         "id": "urn:ngm:class:optimal-control",
         "label": "Optimal Control"
@@ -26,16 +48,64 @@
       {
         "id": "urn:ngm:class:motion-planning",
         "label": "Motion Planning"
+      },
+      {
+        "id": "urn:ngm:class:model-training",
+        "label": "Model Training"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:loss-landscape",
+        "label": "Loss Landscape"
+      },
+      {
+        "id": "urn:ngm:class:parametric-model",
+        "label": "Parametric Model"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:maximum-likelihood-estimation",
+        "label": "Maximum Likelihood Estimation"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:reward-function",
+        "label": "Reward Function"
+      },
+      {
+        "id": "urn:ngm:class:utility-function",
+        "label": "Utility Function"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:inverse-reinforcement-learning",
+        "label": "Inverse Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:mechanism-design",
+        "label": "Mechanism Design"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:reinforcement-learning",
         "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "id": "urn:ngm:class:automatic-differentiation",
+        "label": "Automatic Differentiation"
       }
     ],
     "supports": [],
@@ -43,12 +113,20 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:reward-function",
-        "label": "Reward Function"
+        "id": "urn:ngm:class:convex-optimisation",
+        "label": "Convex Optimisation"
       },
       {
-        "id": "urn:ngm:class:gradient-descent",
-        "label": "Gradient Descent"
+        "id": "urn:ngm:class:overfitting",
+        "label": "Overfitting"
+      },
+      {
+        "id": "urn:ngm:class:hyperparameter-tuning",
+        "label": "Hyperparameter Tuning"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
       }
     ]
   },

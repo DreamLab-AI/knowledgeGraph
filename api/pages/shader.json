@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:shader",
   "domain": "spatial-computing",
-  "definition": "A programmable GPU program that replaces fixed-function rendering stages, defining how vertices are transformed and how fragments are coloured by executing artist-authored algorithms in parallel across thousands of GPU threads. Shaders encompass vertex, fragment, geometry, and compute variants, collectively controlling every aspect of a rendered image's visual appearance.",
+  "definition": "A shader is a programmable GPU program that replaces fixed-function rendering pipeline stages, executing artist-authored or engine-generated algorithms in parallel across thousands of GPU threads to determine vertex positions, surface colour, lighting, and post-process effects. Shader types include vertex, tessellation control, tessellation evaluation, geometry, fragment (pixel), mesh, ray-generation, and compute shaders, each targeting a distinct stage of the GPU execution pipeline. Written in high-level shading languages such as GLSL, HLSL, Metal Shading Language, or WGSL, shaders are compiled to hardware-specific bytecode and scheduled by the GPU driver onto shader processor cores. In the context of spatial computing, shaders are the fundamental mechanism through which all real-time visual content is generated for head-mounted displays, AR overlays, and immersive 3D environments.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-display-and-rendering",
@@ -13,8 +13,8 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "emerging",
+  "qualityScore": 0.75,
+  "maturity": "mature",
   "relationships": {
     "hasPart": [
       {
@@ -26,20 +26,84 @@
         "label": "Pixel Shader"
       },
       {
+        "id": "urn:ngm:class:geometry-shader",
+        "label": "Geometry Shader"
+      },
+      {
         "id": "urn:ngm:class:compute-shader",
         "label": "Compute Shader"
+      },
+      {
+        "id": "urn:ngm:class:tessellation-shader",
+        "label": "Tessellation Shader"
+      },
+      {
+        "id": "urn:ngm:class:ray-generation-shader",
+        "label": "Ray Generation Shader"
       }
     ],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:graphics-processing-unit",
+        "label": "Graphics Processing Unit"
+      },
+      {
+        "id": "urn:ngm:class:shader-language",
+        "label": "Shader Language"
+      },
+      {
+        "id": "urn:ngm:class:gpu-driver",
+        "label": "GPU Driver"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:physically-based-rendering",
+        "label": "Physically Based Rendering"
+      },
+      {
+        "id": "urn:ngm:class:ray-tracing",
+        "label": "Ray Tracing"
+      },
+      {
+        "id": "urn:ngm:class:post-processing",
+        "label": "Post Processing"
+      },
+      {
+        "id": "urn:ngm:class:procedural-generation",
+        "label": "Procedural Generation"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:fixed-function-pipeline",
+        "label": "Fixed Function Pipeline"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:machine-learning-inference",
+        "label": "Machine Learning Inference"
+      },
+      {
+        "id": "urn:ngm:class:neural-rendering",
+        "label": "Neural Rendering"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:rasterization",
         "label": "Rasterization"
+      },
+      {
+        "id": "urn:ngm:class:texture-mapping",
+        "label": "Texture Mapping"
+      },
+      {
+        "id": "urn:ngm:class:interpolation",
+        "label": "Interpolation"
       }
     ],
     "supports": [
@@ -50,14 +114,52 @@
       {
         "id": "urn:ngm:class:visual-effects",
         "label": "Visual Effects"
+      },
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
       }
     ],
-    "standardizedBy": [],
-    "partOf": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:khronos-group",
+        "label": "Khronos Group"
+      },
+      {
+        "id": "urn:ngm:class:opengl-arb",
+        "label": "OpenGL ARB"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:graphics-pipeline",
+        "label": "Graphics Pipeline"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:shader-language",
         "label": "Shader Language"
+      },
+      {
+        "id": "urn:ngm:class:material-system",
+        "label": "Material System"
+      },
+      {
+        "id": "urn:ngm:class:vulkan",
+        "label": "Vulkan"
+      },
+      {
+        "id": "urn:ngm:class:opengl",
+        "label": "OpenGL"
+      },
+      {
+        "id": "urn:ngm:class:webgpu",
+        "label": "WebGPU"
       }
     ]
   },

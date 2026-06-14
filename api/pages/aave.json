@@ -5,29 +5,93 @@
   "public": true,
   "classIri": "urn:ngm:class:aave",
   "domain": "blockchain",
-  "definition": "Aave is a decentralised, non-custodial liquidity protocol deployed on Ethereum and several EVM-compatible networks that enables users to supply crypto assets to earn yield and borrow against collateral at algorithmically determined variable or stable interest rates. It is governed by holders of its AAVE token through an on-chain governance process, and pioneered the flash loan \u2014 an uncollateralised loan that must be borrowed and repaid within a single transaction block \u2014 as a primitive for arbitrage and self-liquidation.",
+  "definition": "Aave is a decentralised, non-custodial liquidity protocol deployed on Ethereum and multiple EVM-compatible networks that allows users to supply crypto assets into pooled reserves to earn algorithmically set interest, and to borrow against over-collateralised positions at variable or stable rates. Pioneered by Stani Kulechov and launched as ETHLend in 2017 before rebranding in 2020, it introduced the flash loan \u2014 an uncollateralised loan that must be atomically repaid within a single transaction block \u2014 as a foundational DeFi primitive. Governance is exercised by AAVE token holders who vote on Aave Improvement Proposals controlling risk parameters, supported asset listings, protocol upgrades, and treasury allocations.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:bc-defi-and-economics",
-      "label": "BC DeFi and Economics"
+      "id": "urn:ngm:class:decentralised-finance",
+      "label": "Decentralised Finance"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.72,
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:over-collateralisation",
+        "label": "Over-Collateralisation"
+      },
+      {
+        "id": "urn:ngm:class:oracle",
+        "label": "Oracle"
+      },
+      {
+        "id": "urn:ngm:class:ethereum-wallet",
+        "label": "Ethereum Wallet"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:yield-farming",
         "label": "Yield Farming"
+      },
+      {
+        "id": "urn:ngm:class:flash-loan",
+        "label": "Flash Loan"
+      },
+      {
+        "id": "urn:ngm:class:collateralised-borrowing",
+        "label": "Collateralised Borrowing"
+      },
+      {
+        "id": "urn:ngm:class:on-chain-arbitrage",
+        "label": "On-Chain Arbitrage"
+      },
+      {
+        "id": "urn:ngm:class:self-liquidation",
+        "label": "Self-Liquidation"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:on-chain-governance",
+        "label": "On-Chain Governance"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-interest-rate",
+        "label": "Algorithmic Interest Rate"
+      },
+      {
+        "id": "urn:ngm:class:atoken",
+        "label": "aToken"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:compound-protocol",
+        "label": "Compound Protocol"
+      },
+      {
+        "id": "urn:ngm:class:makerdao",
+        "label": "MakerDAO"
+      },
+      {
+        "id": "urn:ngm:class:traditional-finance",
+        "label": "Traditional Finance"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-driven-trading",
+        "label": "AI-Driven Trading"
+      },
+      {
+        "id": "urn:ngm:class:risk-modelling",
+        "label": "Risk Modelling"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:smart-contracts",
@@ -36,6 +100,18 @@
       {
         "id": "urn:ngm:class:liquidity-pool",
         "label": "Liquidity Pool"
+      },
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "id": "urn:ngm:class:evm",
+        "label": "EVM"
+      },
+      {
+        "id": "urn:ngm:class:chainlink",
+        "label": "Chainlink"
       }
     ],
     "supports": [],
@@ -43,12 +119,24 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:decentralised-finance",
-        "label": "Decentralised Finance"
-      },
-      {
         "id": "urn:ngm:class:stablecoin",
         "label": "Stablecoin"
+      },
+      {
+        "id": "urn:ngm:class:token-governance",
+        "label": "Token Governance"
+      },
+      {
+        "id": "urn:ngm:class:liquidation-mechanism",
+        "label": "Liquidation Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:cross-chain-bridge",
+        "label": "Cross-Chain Bridge"
+      },
+      {
+        "id": "urn:ngm:class:gho-stablecoin",
+        "label": "GHO Stablecoin"
       }
     ]
   },

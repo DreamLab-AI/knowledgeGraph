@@ -4,31 +4,96 @@
   "slug": "trust-over-ip-foundation",
   "public": true,
   "classIri": "urn:ngm:class:trust-over-ip-foundation",
-  "domain": "blockchain",
-  "definition": "The Trust over IP (ToIP) Foundation is a Linux Foundation project that defines a dual-stack architecture combining cryptographic trust at the technical layer with human and legal trust governance frameworks for decentralised identity. The lower technical stack encompasses decentralised identifiers, verifiable credentials, and cryptographic key management, whilst the upper governance stack provides legal frameworks, policy schemas, and trust registries enabling parties to establish authoritative trust relationships without a central intermediary. ToIP aims to provide the governance meta-model needed to make self-sovereign identity deployments interoperable at scale.",
+  "domain": "governance",
+  "definition": "The Trust over IP (ToIP) Foundation is a Linux Foundation project established in 2020 that defines a dual-stack architecture combining cryptographic machine trust at the technical layer with human, organisational, and legal trust governance frameworks for decentralised identity. The lower technical stack encompasses Decentralised Identifiers (DIDs), Verifiable Credentials, cryptographic key management, and peer-to-peer messaging protocols across four numbered layers, whilst the upper governance stack provides trust registries, policy schemas, legal agreements, and assurance level definitions enabling parties to establish authoritative trust relationships without a central intermediary. ToIP produces the governance meta-model and interoperability specifications needed to make self-sovereign identity deployments composable and trustworthy at ecosystem scale.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:bc-network-component",
-      "label": "BC Network Component"
+      "id": "urn:ngm:class:standards-body",
+      "label": "Standards Body"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
+  "qualityScore": 0.72,
   "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:decentralised-identifiers",
+        "label": "Decentralised Identifiers"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-key-management",
+        "label": "Cryptographic Key Management"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      }
+    ],
     "enables": [
       {
-        "id": "urn:ngm:class:decentralized-identity-foundation",
-        "label": "Decentralized Identity Foundation"
+        "id": "urn:ngm:class:credential-exchange",
+        "label": "Credential Exchange"
+      },
+      {
+        "id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      },
+      {
+        "id": "urn:ngm:class:cross-border-identity",
+        "label": "Cross-Border Identity"
+      },
+      {
+        "id": "urn:ngm:class:governance-framework",
+        "label": "Governance Framework"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:w3c-did-core",
+        "label": "W3C DID Core"
+      },
+      {
+        "id": "urn:ngm:class:w3c-verifiable-credentials",
+        "label": "W3C Verifiable Credentials"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:federated-identity",
+        "label": "Federated Identity"
+      },
+      {
+        "id": "urn:ngm:class:centralised-identity-provider",
+        "label": "Centralised Identity Provider"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:digital-wallet",
+        "label": "Digital Wallet"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:did-document",
+        "label": "DID Document"
+      },
+      {
+        "id": "urn:ngm:class:didcomm-messaging",
+        "label": "DIDComm Messaging"
+      },
+      {
+        "id": "urn:ngm:class:openid-for-verifiable-credentials",
+        "label": "OpenID for Verifiable Credentials"
+      }
+    ],
     "supports": [
       {
         "id": "urn:ngm:class:self-sovereign-identity",
@@ -37,18 +102,34 @@
       {
         "id": "urn:ngm:class:verifiable-credentials",
         "label": "Verifiable Credentials"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "id": "urn:ngm:class:trust-registry",
+        "label": "Trust Registry"
       }
     ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:decentralised-identity",
-        "label": "Decentralised Identity"
+        "id": "urn:ngm:class:decentralized-identity-foundation",
+        "label": "Decentralized Identity Foundation"
       },
       {
-        "id": "urn:ngm:class:did-document",
-        "label": "DID Document"
+        "id": "urn:ngm:class:w3c-credentials-community-group",
+        "label": "W3C Credentials Community Group"
+      },
+      {
+        "id": "urn:ngm:class:internet-identity-workshop",
+        "label": "Internet Identity Workshop"
+      },
+      {
+        "id": "urn:ngm:class:eidas-regulation",
+        "label": "eIDAS Regulation"
       }
     ]
   },

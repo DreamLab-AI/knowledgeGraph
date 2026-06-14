@@ -4,8 +4,8 @@
   "slug": "ieee-p-2048-3",
   "public": true,
   "classIri": "urn:ngm:class:ieee-p-2048-3",
-  "domain": "standards",
-  "definition": "IEEE P2048-3 is a draft standard within the IEEE 2048 series on virtual reality and augmented reality, addressing a specific part of that family.",
+  "domain": "spatial-computing",
+  "definition": "IEEE P2048-3 is a standard in the IEEE 2048 series for immersive reality (XR) environments, specifically addressing person identification within virtual, augmented, and mixed reality systems. It defines terminology, reference architectures, and interoperability requirements for identifying, representing, and authenticating users and their avatars across XR platforms. The standard underpins identity continuity, access control, and social trust in multi-user immersive environments, forming a foundational component of the broader IEEE 2048 XR standardisation ecosystem.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:technical-standard",
@@ -13,26 +13,129 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
-  "maturity": "established",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:person-identification",
+        "label": "Person Identification"
+      },
+      {
+        "id": "urn:ngm:class:avatar-identity",
+        "label": "Avatar Identity"
+      }
+    ],
     "requires": [
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "id": "urn:ngm:class:social-presence",
+        "label": "Social Presence"
+      },
+      {
+        "id": "urn:ngm:class:cross-platform-interoperability",
+        "label": "Cross-Platform Interoperability"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:mixed-reality",
+        "label": "Mixed Reality"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:xr-reference-architecture",
+        "label": "XR Reference Architecture"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:ieee-p2048-4",
+        "label": "IEEE P2048-4"
+      },
+      {
+        "id": "urn:ngm:class:w3c-webxr",
+        "label": "W3C WebXR"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self-Sovereign Identity"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-credential",
+        "label": "Verifiable Credential"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:biometric-identification",
+        "label": "Biometric Identification"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-identifier",
+        "label": "Decentralised Identifier"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:metaverse-interoperability",
+        "label": "Metaverse Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:user-privacy",
+        "label": "User Privacy"
+      }
+    ],
+    "standardizedBy": [
       {
         "id": "urn:ngm:class:ieee",
         "label": "IEEE"
       }
     ],
-    "enables": [],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:ieee-2048",
+        "label": "IEEE 2048"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ieee-p2048-1",
+        "label": "IEEE P2048-1"
+      },
+      {
+        "id": "urn:ngm:class:ieee-p2048-2",
+        "label": "IEEE P2048-2"
+      },
+      {
+        "id": "urn:ngm:class:openxr",
+        "label": "OpenXR"
+      }
+    ]
   },
   "wikilinks": [
     {

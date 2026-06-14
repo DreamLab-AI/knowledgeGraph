@@ -55,7 +55,7 @@ public:: true
   "@type": "Class",
   "label": "visionflow",
   "definition": "visionflow is a project for rendering and interacting with knowledge graphs in a 3D, GPU-accelerated environment, including extended reality interfaces. It combines graph layout computation with real-time visualisation.",
-  "domain": "computer-graphics",
+  "domain": "spatial-computing",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

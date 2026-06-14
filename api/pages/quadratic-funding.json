@@ -5,15 +5,15 @@
   "public": true,
   "classIri": "urn:ngm:class:quadratic-funding",
   "domain": "blockchain",
-  "definition": "Quadratic Funding (QF) is a mechanism-design approach to allocating public goods subsidies in which a matching pool is distributed proportionally to the square of the sum of square roots of individual contributions to each project, mathematically maximising the democratic signal of funding breadth over depth. Proposed by Vitalik Buterin, Zoe Hitzig, and E. Glen Weyl, QF operationalises the concept of liberal radicalism: a project with many small contributors receives more matching funds than one with a single large donor, even if the absolute sums are equal. QF has been deployed on-chain via platforms such as Gitcoin Grants, where smart contracts automate matching calculations against a community-funded subsidy pool.",
+  "definition": "Quadratic Funding (QF) is a mechanism-design method for subsidising public goods in which a matching pool is distributed proportionally to the square of the sum of square roots of individual contributions to each project, ensuring that projects with many small donors receive proportionally greater matching than projects with few large donors. Formalised by Vitalik Buterin, Zoe Hitzig, and E. Glen Weyl in the 2018 paper 'Liberal Radicalism', QF is derived from welfare-economics theory as an approximation to the socially optimal provision of public goods under privately observed preferences. It has been deployed on-chain via Gitcoin Grants, where smart contracts automate matching calculations against a community-funded subsidy pool, though it requires robust Sybil resistance mechanisms such as decentralised identity verification to prevent gaming.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:bc-defi-and-economics",
-      "label": "DeFi and Economics"
+      "id": "urn:ngm:class:mechanism-design",
+      "label": "Mechanism Design"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
+  "qualityScore": 0.74,
   "maturity": "emerging",
   "relationships": {
     "hasPart": [],
@@ -23,36 +23,124 @@
         "label": "Mechanism Design"
       },
       {
-        "id": "urn:ngm:class:knowledge-graph-publication-classifier-goods-funding",
+        "id": "urn:ngm:class:public-goods-funding",
         "label": "Public Goods Funding"
+      },
+      {
+        "id": "urn:ngm:class:sybil-resistance",
+        "label": "Sybil Resistance"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:dao",
         "label": "DAO"
-      }
-    ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
-      {
-        "id": "urn:ngm:class:quadratic-voting",
-        "label": "Quadratic Voting"
       },
       {
         "id": "urn:ngm:class:dao-governance",
         "label": "DAO Governance"
       },
       {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "id": "urn:ngm:class:open-source-sustainability",
+        "label": "Open Source Sustainability"
+      },
+      {
+        "id": "urn:ngm:class:democratic-resource-allocation",
+        "label": "Democratic Resource Allocation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:quadratic-voting",
+        "label": "Quadratic Voting"
+      },
+      {
+        "id": "urn:ngm:class:one-person-one-vote",
+        "label": "One Person One Vote"
+      },
+      {
+        "id": "urn:ngm:class:plutocratic-voting",
+        "label": "Plutocratic Voting"
+      },
+      {
+        "id": "urn:ngm:class:linear-matching",
+        "label": "Linear Matching"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:cooperative-game-theory",
+        "label": "Cooperative Game Theory"
+      },
+      {
+        "id": "urn:ngm:class:social-choice-theory",
+        "label": "Social Choice Theory"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:welfare-economics",
+        "label": "Welfare Economics"
+      },
+      {
+        "id": "urn:ngm:class:matching-funds",
+        "label": "Matching Funds"
+      },
+      {
+        "id": "urn:ngm:class:on-chain-governance",
+        "label": "On-Chain Governance"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:bc-defi-and-economics",
+        "label": "DeFi and Economics"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:quadratic-voting",
+        "label": "Quadratic Voting"
+      },
+      {
         "id": "urn:ngm:class:governance-token",
         "label": "Governance Token"
+      },
+      {
+        "id": "urn:ngm:class:gitcoin-grants",
+        "label": "Gitcoin Grants"
+      },
+      {
+        "id": "urn:ngm:class:collective-action-problem",
+        "label": "Collective Action Problem"
+      },
+      {
+        "id": "urn:ngm:class:public-goods",
+        "label": "Public Goods"
+      },
+      {
+        "id": "urn:ngm:class:liberal-radicalism",
+        "label": "Liberal Radicalism"
       }
     ]
   },

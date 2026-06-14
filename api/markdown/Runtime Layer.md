@@ -59,7 +59,7 @@ public:: true
   "@type": "Class",
   "label": "Runtime Layer",
   "definition": "The Runtime Layer is the stratum that provides the execution environment in which higher-level code and models actually run. It sits above the Compute Layer that allocates resources and below the application and inference strata it hosts. It contains process and memory management, schedulers, sandboxes, and the libraries that support running programmes.",
-  "domain": "runtime",
+  "domain": "infrastructure",
   "maturity": "emerging",
   "qualityScore": 0.7,
   "subClassOf": [

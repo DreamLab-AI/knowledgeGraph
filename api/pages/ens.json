@@ -5,23 +5,28 @@
   "public": true,
   "classIri": "urn:ngm:class:ens",
   "domain": "blockchain",
-  "definition": "The Ethereum Name Service (ENS) is a decentralised, on-chain naming system that maps human-readable names ending in .eth to Ethereum addresses, content hashes, and other on-chain or off-chain resources via ERC-137 compliant smart contracts. It functions as the Web3 analogue of DNS, replacing hexadecimal addresses with memorable labels that are owned and controlled by the holder of the corresponding NFT. ENS resolvers extend the system to support IPFS content hashes, text records, and multi-chain addresses, making it a foundational identity and discoverability layer for the decentralised web.",
+  "definition": "The Ethereum Name Service (ENS) is a decentralised, on-chain naming system built on Ethereum that maps human-readable names ending in .eth to Ethereum addresses, content hashes, multi-coin addresses, and arbitrary text records via ERC-137 compliant smart contracts and pluggable resolver contracts. It functions as the Web3 analogue of DNS, replacing opaque hexadecimal addresses with memorable, self-sovereign labels backed by ERC-721 NFTs and governed by the ENS DAO. Off-chain resolution via CCIP-Read (EIP-3668) extends the system to conventional databases with on-chain verification, reducing gas overhead for high-frequency updates whilst preserving trustless resolution semantics.",
   "subClassOf": [
-    {
-      "id": "urn:ngm:class:bc-protocol-and-consensus",
-      "label": "Blockchain Protocol and Consensus"
-    },
     {
       "id": "urn:ngm:class:decentralised-identity",
       "label": "Decentralised Identity"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:ethereum-virtual-machine",
+        "label": "Ethereum Virtual Machine"
+      },
+      {
+        "id": "urn:ngm:class:on-chain-governance",
+        "label": "On-chain Governance"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:decentralised-web",
@@ -30,12 +35,51 @@
       {
         "id": "urn:ngm:class:self-sovereign-identity",
         "label": "Self Sovereign Identity"
+      },
+      {
+        "id": "urn:ngm:class:web3",
+        "label": "Web3"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-application",
+        "label": "Decentralised Application"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:erc-137",
+        "label": "ERC-137"
+      },
+      {
+        "id": "urn:ngm:class:eip-3668",
+        "label": "EIP-3668 CCIP-Read"
+      },
+      {
+        "id": "urn:ngm:class:slip-0044",
+        "label": "SLIP-0044"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:dns",
+        "label": "DNS"
+      },
+      {
+        "id": "urn:ngm:class:unstoppable-domains",
+        "label": "Unstoppable Domains"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:decentralised-identifier",
+        "label": "Decentralised Identifier"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-credential",
+        "label": "Verifiable Credential"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:smart-contract",
@@ -44,15 +88,44 @@
       {
         "id": "urn:ngm:class:nft",
         "label": "NFT"
+      },
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "id": "urn:ngm:class:erc-721",
+        "label": "ERC-721"
+      },
+      {
+        "id": "urn:ngm:class:ipfs",
+        "label": "IPFS"
       }
     ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:ethereum-ecosystem",
+        "label": "Ethereum Ecosystem"
+      }
+    ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:ipfs",
-        "label": "IPFS"
+        "id": "urn:ngm:class:dao",
+        "label": "DAO"
+      },
+      {
+        "id": "urn:ngm:class:wallet-address",
+        "label": "Wallet Address"
+      },
+      {
+        "id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "id": "urn:ngm:class:name-registry",
+        "label": "Name Registry"
       }
     ]
   },

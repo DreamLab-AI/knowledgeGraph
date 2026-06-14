@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:controller",
   "domain": "robotics",
-  "definition": "A Controller is a computational module in a robotic or cyber-physical system that receives sensor feedback and reference setpoints, applies a control law or learned policy, and generates actuator commands that drive the system towards desired states. Controllers range from classical linear regulators (PID, LQR) to nonlinear model-based controllers (Model Predictive Control) and data-driven approaches (neural network policies, reinforcement learning). They operate within a closed-loop feedback architecture where the difference between desired and measured states \u2014 the error signal \u2014 drives corrective action.",
+  "definition": "A Controller is a computational or hardware module that receives a reference setpoint and measured feedback signals, applies a control law or learned policy, and generates command signals that drive a plant or process towards desired states. Controllers span a spectrum from classical linear regulators such as PID and LQR to nonlinear model-based controllers such as Model Predictive Control and computed-torque methods, as well as data-driven approaches including neural network policies trained via reinforcement learning. Operating within closed-loop feedback architectures, the controller continuously computes an error signal \u2014 the difference between desired and measured output \u2014 and produces corrective actuation to minimise that error subject to stability and performance constraints.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-actuation-and-control",
@@ -14,9 +14,22 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "emerging",
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:error-signal",
+        "label": "Error Signal"
+      },
+      {
+        "id": "urn:ngm:class:reference-setpoint",
+        "label": "Reference Setpoint"
+      },
+      {
+        "id": "urn:ngm:class:control-output",
+        "label": "Control Output"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:actuator",
@@ -25,6 +38,14 @@
       {
         "id": "urn:ngm:class:feedback-loop",
         "label": "Feedback Loop"
+      },
+      {
+        "id": "urn:ngm:class:sensor",
+        "label": "Sensor"
+      },
+      {
+        "id": "urn:ngm:class:plant-model",
+        "label": "Plant Model"
       }
     ],
     "enables": [
@@ -35,12 +56,64 @@
       {
         "id": "urn:ngm:class:robot-control",
         "label": "Robot Control"
+      },
+      {
+        "id": "urn:ngm:class:trajectory-tracking",
+        "label": "Trajectory Tracking"
+      },
+      {
+        "id": "urn:ngm:class:stability",
+        "label": "Stability"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:system-identification",
+        "label": "System Identification"
+      },
+      {
+        "id": "urn:ngm:class:real-time-computing",
+        "label": "Real-Time Computing"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:model-predictive-control",
+        "label": "Model Predictive Control"
+      },
+      {
+        "id": "urn:ngm:class:linear-quadratic-regulator",
+        "label": "Linear Quadratic Regulator"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning-policy",
+        "label": "Reinforcement Learning Policy"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:open-loop-control",
+        "label": "Open Loop Control"
+      },
+      {
+        "id": "urn:ngm:class:manual-control",
+        "label": "Manual Control"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:feedback-control",
@@ -48,13 +121,47 @@
       },
       {
         "id": "urn:ngm:class:pid-controller",
-        "label": "Pid Controller"
+        "label": "PID Controller"
+      },
+      {
+        "id": "urn:ngm:class:state-space-model",
+        "label": "State Space Model"
+      },
+      {
+        "id": "urn:ngm:class:control-law",
+        "label": "Control Law"
       }
     ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:closed-loop-system",
+        "label": "Closed Loop System"
+      },
+      {
+        "id": "urn:ngm:class:cyber-physical-system",
+        "label": "Cyber-Physical System"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:kinematics",
+        "label": "Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:dynamics",
+        "label": "Dynamics"
+      },
+      {
+        "id": "urn:ngm:class:observer",
+        "label": "Observer"
+      },
+      {
+        "id": "urn:ngm:class:kalman-filter",
+        "label": "Kalman Filter"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

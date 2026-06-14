@@ -4,7 +4,7 @@
   "slug": "image-to-image",
   "public": true,
   "classIri": "urn:ngm:class:image-to-image",
-  "domain": "generative-ai",
+  "domain": "ai",
   "definition": "Image-to-image is a class of generative tasks where a model transforms an input image into an output image, conditioned on the input and often a text prompt. Examples include style transfer, editing and translation between domains.",
   "subClassOf": [
     {

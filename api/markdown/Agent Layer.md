@@ -63,7 +63,7 @@ public:: true
   "@type": "Class",
   "label": "Agent Layer",
   "definition": "The Agent Layer is the stratum that hosts autonomous entities capable of perceiving, deciding, and acting toward goals. It sits above control and inference strata that supply its capabilities and below coordination and application strata that direct collectives of agents. It contains agent policies, goal representations, memory, and decision loops.",
-  "domain": "agent",
+  "domain": "ai",
   "maturity": "emerging",
   "qualityScore": 0.7,
   "subClassOf": [

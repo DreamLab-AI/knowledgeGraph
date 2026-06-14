@@ -5,51 +5,142 @@
   "public": true,
   "classIri": "urn:ngm:class:resource-management",
   "domain": "infrastructure",
-  "definition": "The systematic allocation, scheduling, and monitoring of computational resources \u2014 CPU, GPU, memory, storage, and network bandwidth \u2014 across applications and services within an infrastructure, ensuring efficient utilisation, quality-of-service guarantees, and graceful degradation under load. Encompasses asset lifecycle management, resource pooling, and dynamic scaling strategies.",
+  "definition": "Resource Management is the systematic discipline of allocating, scheduling, monitoring, and optimising computational and physical resources \u2014 including CPU, GPU, memory, storage, and network bandwidth \u2014 across applications, services, and infrastructure to ensure efficient utilisation, quality-of-service guarantees, and graceful degradation under load. It encompasses the full asset lifecycle from provisioning and pooling through dynamic scaling to decommissioning, balancing competing workload demands against capacity constraints. In distributed and cloud-native environments, resource management extends to orchestration of containerised workloads, quota enforcement, cost attribution, and autoscaling policies that respond to real-time demand signals. Effective resource management is a foundational prerequisite for reliable, cost-efficient, and performant infrastructure at scale.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:infra-computing-and-cloud",
-      "label": "Computing and Cloud"
+      "id": "urn:ngm:class:computing-infrastructure",
+      "label": "Computing Infrastructure"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "emerging",
+  "qualityScore": 0.72,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:scheduler",
+        "label": "Scheduler"
+      },
+      {
+        "id": "urn:ngm:class:resource-pool",
+        "label": "Resource Pool"
+      },
+      {
+        "id": "urn:ngm:class:autoscaling",
+        "label": "Autoscaling"
+      },
+      {
+        "id": "urn:ngm:class:quota-management",
+        "label": "Quota Management"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:monitoring",
+        "label": "Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:telemetry",
+        "label": "Telemetry"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:metaverse-infrastructure",
         "label": "Metaverse Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:virtualisation",
+        "label": "Virtualisation"
+      },
+      {
+        "id": "urn:ngm:class:containerisation",
+        "label": "Containerisation"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:quality-of-service",
+        "label": "Quality of Service"
+      },
+      {
+        "id": "urn:ngm:class:service-level-agreement",
+        "label": "Service Level Agreement"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:over-provisioning",
+        "label": "Over-Provisioning"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:edge-computing",
         "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
+      },
+      {
+        "id": "urn:ngm:class:load-balancing",
+        "label": "Load Balancing"
       }
     ],
     "supports": [
+      {
+        "id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
+      },
+      {
+        "id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
       {
         "id": "urn:ngm:class:computing-infrastructure",
         "label": "Computing Infrastructure"
       },
       {
-        "id": "urn:ngm:class:distributed-system",
-        "label": "Distributed System"
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
       }
     ],
-    "standardizedBy": [],
-    "partOf": [],
     "relatedTo": [
       {
         "id": "urn:ngm:class:content-delivery-network",
         "label": "Content Delivery Network"
+      },
+      {
+        "id": "urn:ngm:class:cost-optimisation",
+        "label": "Cost Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:devops",
+        "label": "DevOps"
       }
     ]
   },

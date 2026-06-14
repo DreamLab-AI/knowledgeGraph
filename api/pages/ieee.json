@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:ieee",
   "domain": "infrastructure",
-  "definition": "The Institute of Electrical and Electronics Engineers (IEEE) is the world's largest technical professional organisation, comprising over 400,000 members across 160 countries, and the primary body responsible for developing and maintaining technical standards in electrical engineering, electronics, telecommunications, computer science, and related disciplines. IEEE standards govern wireless networking (IEEE 802.11), Ethernet (IEEE 802.3), time-sensitive networking, and hundreds of other foundational technologies.",
+  "definition": "The Institute of Electrical and Electronics Engineers (IEEE) is the world's largest technical professional organisation, comprising over 400,000 members across 160 countries, whose Standards Association (IEEE SA) develops and maintains more than 1,300 active standards governing electrical engineering, electronics, telecommunications, computer science, and emerging disciplines including artificial intelligence and autonomous systems. IEEE standards define foundational networking protocols such as IEEE 802.11 (Wi-Fi), IEEE 802.3 (Ethernet), and IEEE 802.15.4 (low-power wireless), as well as critical infrastructure specifications including IEEE 754 (floating-point arithmetic) and IEEE 1588 (Precision Time Protocol). The organisation conducts standards development through consensus-based volunteer working groups spanning industry, academia, and government, and publishes its technical library via IEEE Xplore. IEEE has expanded into AI ethics (IEEE 7000 series), autonomous vehicles, quantum computing, and neural interfaces, making it a primary governance body across both traditional and emerging technology domains.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:standards-body",
@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.75,
   "maturity": "mature",
   "relationships": {
     "hasPart": [
@@ -28,9 +28,30 @@
       {
         "id": "urn:ngm:class:ieee-802-15-4",
         "label": "IEEE 802.15.4"
+      },
+      {
+        "id": "urn:ngm:class:ieee-754",
+        "label": "IEEE 754"
+      },
+      {
+        "id": "urn:ngm:class:ieee-1588",
+        "label": "IEEE 1588"
+      },
+      {
+        "id": "urn:ngm:class:ieee-standards-association",
+        "label": "IEEE Standards Association"
       }
     ],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:consensus-process",
+        "label": "Consensus Process"
+      },
+      {
+        "id": "urn:ngm:class:technical-committee",
+        "label": "Technical Committee"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:technical-standards",
@@ -39,6 +60,18 @@
       {
         "id": "urn:ngm:class:interoperability-standard",
         "label": "Interoperability Standard"
+      },
+      {
+        "id": "urn:ngm:class:wireless-networking",
+        "label": "Wireless Networking"
+      },
+      {
+        "id": "urn:ngm:class:time-sensitive-networking",
+        "label": "Time-Sensitive Networking"
+      },
+      {
+        "id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
       }
     ],
     "dependsOn": [],
@@ -46,12 +79,37 @@
     "contrastsWith": [],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:standardization-bodies",
-        "label": "Standardization Bodies"
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:post-quantum-cryptography",
+        "label": "Post-Quantum Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:neural-interface",
+        "label": "Neural Interface"
       }
     ],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-systems",
+        "label": "Autonomous Systems"
+      },
+      {
+        "id": "urn:ngm:class:quantum-computing",
+        "label": "Quantum Computing"
+      },
+      {
+        "id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
@@ -60,8 +118,20 @@
         "label": "IETF"
       },
       {
-        "id": "urn:ngm:class:open-standard",
-        "label": "Open Standard"
+        "id": "urn:ngm:class:iso",
+        "label": "ISO"
+      },
+      {
+        "id": "urn:ngm:class:itu",
+        "label": "ITU"
+      },
+      {
+        "id": "urn:ngm:class:ansi",
+        "label": "ANSI"
+      },
+      {
+        "id": "urn:ngm:class:3gpp",
+        "label": "3GPP"
       }
     ]
   },

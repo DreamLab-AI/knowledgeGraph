@@ -4,7 +4,7 @@
   "slug": "idnow",
   "public": true,
   "classIri": "urn:ngm:class:idnow",
-  "domain": "identity",
+  "domain": "security",
   "definition": "A German identity verification company that provides electronic identification, know-your-customer, and digital signing services. It offers automated and agent-assisted verification of identity documents and biometrics.",
   "subClassOf": [
     {

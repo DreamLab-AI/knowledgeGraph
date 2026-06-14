@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:uk-online-safety-act",
   "domain": "governance",
-  "definition": "The UK Online Safety Act 2023 is landmark legislation that places statutory duties of care on platforms hosting user-generated content and search services, requiring them to identify, assess, and mitigate risks of illegal content and content harmful to children. It establishes Ofcom as the UK's internet regulator with powers to issue codes of practice, conduct audits, and levy fines of up to ten per cent of global annual turnover for non-compliance. The Act introduces mandatory age verification obligations, transparency reporting requirements, and provisions \u2014 controversially \u2014 concerning encrypted communications and client-side scanning.",
+  "definition": "The UK Online Safety Act 2023 is landmark primary legislation that imposes statutory duties of care on providers of user-to-user services and search engines operating in or accessible from the United Kingdom, compelling them to assess and mitigate risks of illegal content and content harmful to children. It designates Ofcom as the UK's online safety regulator with powers to set binding codes of practice, conduct compliance audits, and impose fines of up to ten per cent of global annual turnover for non-compliance. The Act introduces mandatory age assurance obligations for services hosting pornographic or other age-restricted content, transparency reporting requirements, and a suite of user empowerment tools designed to give adults greater control over the content they encounter. A contested set of provisions concerning end-to-end encrypted messaging \u2014 deferring client-side scanning requirements until Ofcom deems them technically feasible \u2014 reflect the Act's tension between child protection goals and the integrity of secure communications.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:digital-regulation",
@@ -13,25 +13,77 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.74,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [
+    "hasPart": [
       {
         "id": "urn:ngm:class:age-verification",
         "label": "Age Verification"
       },
       {
+        "id": "urn:ngm:class:transparency-reporting",
+        "label": "Transparency Reporting"
+      },
+      {
+        "id": "urn:ngm:class:content-risk-assessment",
+        "label": "Content Risk Assessment"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:content-moderation",
+        "label": "Content Moderation"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:platform-accountability",
+        "label": "Platform Accountability"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:user-safety",
+        "label": "User Safety"
+      },
+      {
         "id": "urn:ngm:class:trust-and-safety",
         "label": "Trust and Safety"
+      },
+      {
+        "id": "urn:ngm:class:child-protection-online",
+        "label": "Child Protection Online"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:digital-services-act",
+        "label": "Digital Services Act"
+      },
+      {
+        "id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "id": "urn:ngm:class:us-section-230",
+        "label": "US Section 230"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      },
+      {
+        "id": "urn:ngm:class:client-side-scanning",
+        "label": "Client-Side Scanning"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:content-moderation-standards",
@@ -40,28 +92,45 @@
       {
         "id": "urn:ngm:class:regulatory-reporting",
         "label": "Regulatory Reporting"
+      },
+      {
+        "id": "urn:ngm:class:risk-assessment-framework",
+        "label": "Risk Assessment Framework"
       }
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:user-safety",
-        "label": "User Safety"
+        "id": "urn:ngm:class:freedom-of-expression",
+        "label": "Freedom of Expression"
+      },
+      {
+        "id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
       }
     ],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ofcom",
+        "label": "Ofcom"
+      },
+      {
+        "id": "urn:ngm:class:uk-parliament",
+        "label": "UK Parliament"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:online-safety-act-2023",
-        "label": "Online Safety Act 2023"
+        "id": "urn:ngm:class:end-to-end-encryption",
+        "label": "End-to-End Encryption"
       },
       {
-        "id": "urn:ngm:class:content-moderation",
-        "label": "Content Moderation"
+        "id": "urn:ngm:class:platform-governance",
+        "label": "Platform Governance"
       },
       {
-        "id": "urn:ngm:class:digital-services-act",
-        "label": "Digital Services Act"
+        "id": "urn:ngm:class:illegal-content-detection",
+        "label": "Illegal Content Detection"
       }
     ]
   },

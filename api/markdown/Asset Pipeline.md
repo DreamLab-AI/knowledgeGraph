@@ -20,43 +20,151 @@ public:: true
   "@id": "urn:ngm:class:asset-pipeline",
   "@type": "Class",
   "label": "Asset Pipeline",
-  "definition": "An asset pipeline is an automated, staged workflow that ingests raw digital content—such as meshes, textures, audio, and animations—and transforms it through processing, optimisation, and packaging steps into runtime-ready formats. It enforces consistency, enables version control, and reduces manual labour in content production. Asset pipelines are foundational to game development, visual effects, and metaverse platform engineering. They increasingly incorporate AI-assisted compression and level-of-detail generation to scale content delivery.",
-  "domain": "metaverse",
+  "definition": "An asset pipeline is an automated, staged workflow that ingests raw digital content—meshes, textures, audio, animations, and shaders—and transforms it through validation, processing, optimisation, and packaging steps into runtime-ready formats consumable by real-time engines, streaming platforms, or spatial computing environments. It enforces deterministic builds, enables version-controlled dependency graphs, and dramatically reduces manual content-preparation labour. Asset pipelines are foundational to game development, visual effects, and metaverse platform engineering, and increasingly incorporate AI-assisted level-of-detail generation, texture compression, and semantic tagging to scale content delivery across heterogeneous device targets.",
+  "domain": "spatial-computing",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:3-d-content-pipeline", "label": "3D Content Pipeline"}],
+  "subClassOf": [{"@id": "urn:ngm:class:content-pipeline", "label": "Content Pipeline"}],
   "relations": {
     "hasPart": [
       {"@id": "urn:ngm:class:asset-management", "label": "Asset Management"},
-      {"@id": "urn:ngm:class:render-pipeline", "label": "Render Pipeline"}
+      {"@id": "urn:ngm:class:render-pipeline", "label": "Render Pipeline"},
+      {"@id": "urn:ngm:class:build-system", "label": "Build System"},
+      {"@id": "urn:ngm:class:level-of-detail", "label": "Level of Detail"},
+      {"@id": "urn:ngm:class:texture-compression", "label": "Texture Compression"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:3-d-asset", "label": "3D Asset"},
       {"@id": "urn:ngm:class:3-d-file-format", "label": "3D File Format"},
       {"@id": "urn:ngm:class:shader", "label": "Shader"},
-      {"@id": "urn:ngm:class:data-compression", "label": "Data Compression"}
+      {"@id": "urn:ngm:class:data-compression", "label": "Data Compression"},
+      {"@id": "urn:ngm:class:universal-scene-description", "label": "Universal Scene Description"},
+      {"@id": "urn:ngm:class:gltf", "label": "glTF"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:digital-twin-creation", "label": "Digital Twin Creation"},
-      {"@id": "urn:ngm:class:game-engine", "label": "Game Engine"}
+      {"@id": "urn:ngm:class:game-engine", "label": "Game Engine"},
+      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"},
+      {"@id": "urn:ngm:class:extended-reality", "label": "Extended Reality"},
+      {"@id": "urn:ngm:class:streaming-content-delivery", "label": "Streaming Content Delivery"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:version-control", "label": "Version Control"},
+      {"@id": "urn:ngm:class:content-addressed-storage", "label": "Content-Addressed Storage"},
+      {"@id": "urn:ngm:class:dependency-graph", "label": "Dependency Graph"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:continuous-integration", "label": "Continuous Integration"},
+      {"@id": "urn:ngm:class:metadata-schema", "label": "Metadata Schema"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:creator-economy", "label": "Creator Economy"},
+      {"@id": "urn:ngm:class:digital-rights-management", "label": "Digital Rights Management"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:khronos-group", "label": "Khronos Group"},
+      {"@id": "urn:ngm:class:pixar-usd", "label": "Pixar USD"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:asset-format-standards", "label": "Asset Format Standards"},
-      {"@id": "urn:ngm:class:vfx-tools", "label": "VFX Tools"}
+      {"@id": "urn:ngm:class:vfx-tools", "label": "VFX Tools"},
+      {"@id": "urn:ngm:class:procedural-generation", "label": "Procedural Generation"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:ai-content-generation", "label": "AI Content Generation"},
+      {"@id": "urn:ngm:class:supply-chain-provenance", "label": "Supply Chain Provenance"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:content-build-pipeline", "label": "Content Build Pipeline"},
+    {"@id": "urn:ngm:class:digital-asset-pipeline", "label": "Digital Asset Pipeline"}
+  ],
+  "quality": 0.74,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-13T00:00:00Z",
+    "inferenceRule": "ManualEnrichment"
+  }
 }
 ```
 
 - ### Definition
-  - An [[Asset Pipeline]] is an automated, multi-stage workflow that converts raw [[3D Asset]] content through processing, optimisation, and packaging into formats consumable by a [[Render Pipeline]] or [[Game Engine]].
+  - An [[Asset Pipeline]] is an automated, multi-stage workflow that converts raw digital source content—artist-created meshes, hand-painted textures, motion-captured [[Animation]], recorded audio, and authored [[Shader]] programs—through sequential processing, validation, optimisation, and packaging steps into runtime-ready formats consumable by a [[Game Engine]], [[Render Pipeline]], or spatial-computing platform. It enforces deterministic, reproducible builds, maintains a [[Dependency Graph]] of content relationships, and integrates with [[Version Control]] to enable collaborative, iterative content production at scale.
+
+- ### Overview
+  - Asset pipelines address the fundamental engineering challenge of bridging human-authored creative content and the strict performance constraints of real-time interactive systems. Raw content produced by artists in tools such as Autodesk Maya, Blender, or Substance Painter is rarely suitable for direct runtime consumption: polygon counts are too high, texture resolutions exceed device memory budgets, and formats differ across target platforms.
+  - A well-designed pipeline automates the transformation chain, removing tedious manual export steps and ensuring that every build is traceable, repeatable, and auditable. This is analogous in principle to software [[Continuous Integration]]: commits trigger deterministic rebuilds, incremental caching accelerates iteration, and validation rules catch errors before they propagate downstream.
+  - The pipeline concept scales from small indie studios—where a simple Python script automates texture conversion—to large AAA productions that manage tens of terabytes of content across hundreds of artists, requiring distributed [[Build System]] infrastructure with [[Content-Addressed Storage]] for deduplication and fast cache retrieval.
+  - In [[Spatial Computing]] and [[Extended Reality]] contexts, pipelines must target heterogeneous device profiles simultaneously: high-fidelity PC or console builds coexist with mobile-friendly low-polygon variants and streamed progressive representations, all derived from the same source assets.
+
+- ### Key Components
+  - **Ingestion** — Accepts source files from digital content creation tools (DCCs) or version-controlled repositories; validates format compliance and authoring conventions against [[Metadata Schema]] rules.
+  - **Validation & Linting** — Checks topology (manifold meshes, correct winding), UV quality, naming conventions, and file-size budgets; fails builds early to prevent downstream waste.
+  - **Format Conversion** — Translates proprietary DCC formats (FBX, OBJ, Maya binary) into interchange formats such as [[glTF]], [[Universal Scene Description]] (USD/USDZ), or platform-specific runtime containers.
+  - **[[Level of Detail]] Generation** — Produces multiple geometric resolutions (LOD0–LOD4) automatically via mesh decimation algorithms; [[Streaming Content Delivery]] systems select the appropriate level based on screen-space size or bandwidth.
+  - **[[Texture Compression]]** — Encodes raw PNG/EXR textures into GPU-native block-compressed formats (BC7, ASTC, ETC2) targeting specific hardware families; reduces VRAM footprint and bandwidth.
+  - **[[Shader]] Compilation** — Cross-compiles shader source (HLSL, GLSL, MSL) into target bytecode (SPIR-V, DXIL, Metal IR), with permutation management for feature variants.
+  - **[[Dependency Graph]] Resolution** — Tracks which assets depend on which materials, which materials depend on which textures, and propagates rebuild signals when any node changes; enables incremental builds.
+  - **Packaging & Bundling** — Assembles processed assets into runtime container formats (PAK files, asset bundles, USDZ archives, Draco-compressed glTF) appropriate for each target platform or streaming delivery mechanism.
+  - **[[Asset Management]] Integration** — Writes build artefacts and metadata back to a DAM (Digital Asset Management) system for discoverability, rights tracking, and downstream consumer notification.
+
+- ### Mechanisms & Design Patterns
+  - **Determinism** — Every pipeline stage must produce identical outputs given identical inputs, enabling content-addressed caching and distributed build sharing across teams via systems like Bazel, Buck2, or bespoke CAS layers.
+  - **Incremental Rebuilds** — Dependency-aware scheduling ensures only changed assets and their transitive dependents are reprocessed; critical in large projects where full rebuilds may take hours.
+  - **Parallelism** — Independent asset conversions are dispatched to worker pools, often across cloud compute fleets, to compress wall-clock build times.
+  - **Platform Matrix Builds** — A single source asset fans out to multiple platform-specific variants (PC, console, mobile, XR headset) within a single pipeline invocation, governed by per-platform configuration profiles.
+  - **AI-Augmented Stages** — Modern pipelines embed [[AI Content Generation]] tools for automated upscaling (super-resolution texture enhancement), material inference (deriving PBR parameters from photographic references), and semantic tagging for search and rights management, bridging traditional DCC workflows with generative techniques.
+  - **Provenance & Watermarking** — Metadata embedding at pipeline time supports [[Digital Rights Management]], creator attribution, and [[Supply Chain Provenance]] verification for NFT-enabled or licensed asset markets.
+
+- ### Applications & Use Cases
+  - **AAA Game Development** — Studios such as Epic Games, Ubisoft, and Naughty Dog operate bespoke or engine-integrated pipelines processing millions of assets per title; Unreal Engine's Derived Data Cache and Unity's Accelerator are commercial examples of [[Build System]] infrastructure for this domain.
+  - **Visual Effects & Film** — VFX facilities use USD-centric pipelines to exchange assets between departments (modelling, rigging, FX, lighting) with full scene-composition provenance; ILM's OpenUSD adoption is a landmark instance.
+  - **[[Extended Reality]] Platforms** — Meta, Apple (visionOS), and HTC operate platform-specific asset pipelines that enforce polygon budgets, texture size caps, and streaming manifest generation before publishing to their headset ecosystems.
+  - **[[Digital Twin Creation]]** — Industrial metaverse platforms (NVIDIA Omniverse, Siemens Xcelerator) use USD-based pipelines to ingest CAD data, convert engineering formats, and stream live-updated representations to simulation environments.
+  - **[[Creator Economy]] Marketplaces** — Platforms such as Sketchfab, the Unity Asset Store, and emerging Web3 marketplaces run server-side pipelines to validate, optimise, and watermark user-submitted content before distribution, enforcing quality floors and licence embedding.
+  - **Mobile & Cloud Gaming** — Streaming-first game platforms use pipelines to generate progressive mesh and texture representations with per-chunk streaming manifests, enabling low-latency content delivery across variable network conditions.
+  - **Architectural Visualisation** — BIM-to-real-time pipelines convert Revit or ArchiCAD models into optimised real-time scenes for virtual walkthroughs, automating the triangulation, material assignment, and lighting bake steps that were historically manual.
+
 - ### Relationships
-  - The [[Asset Pipeline]] is a specialised form of [[3D Content Pipeline]] and relies on [[Asset Management]] tooling to track versions and dependencies. It consumes [[3D File Format]] specifications and applies [[Shader]] compilation alongside [[Data Compression]] to produce runtime artefacts, ultimately enabling [[Digital Twin Creation]] workflows and powering [[Game Engine]] asset loading. Standards such as [[Asset Format Standards]] and toolchains such as [[VFX Tools]] set the interoperability envelope.
-- ### Content
-  - An asset pipeline automates the journey from raw source content—artist-created meshes, hand-painted textures, motion-captured animations—to the optimised, platform-specific packages that real-time engines and streaming metaverse platforms consume. Without a pipeline, studios rely on bespoke scripts or manual exports, which introduce inconsistency and impede iterative development cycles.
+  - hasPart:: [[Asset Management]]
+  - hasPart:: [[Render Pipeline]]
+  - hasPart:: [[Build System]]
+  - hasPart:: [[Level of Detail]]
+  - hasPart:: [[Texture Compression]]
+  - uses:: [[3D Asset]]
+  - uses:: [[3D File Format]]
+  - uses:: [[Shader]]
+  - uses:: [[Data Compression]]
+  - uses:: [[Universal Scene Description]]
+  - uses:: [[glTF]]
+  - enables:: [[Digital Twin Creation]]
+  - enables:: [[Game Engine]]
+  - enables:: [[Real-Time Rendering]]
+  - enables:: [[Extended Reality]]
+  - enables:: [[Streaming Content Delivery]]
+  - requires:: [[Version Control]]
+  - requires:: [[Content-Addressed Storage]]
+  - requires:: [[Dependency Graph]]
+  - dependsOn:: [[Continuous Integration]]
+  - dependsOn:: [[Metadata Schema]]
+  - supports:: [[Creator Economy]]
+  - supports:: [[Digital Rights Management]]
+  - standardizedBy:: [[Khronos Group]]
+  - standardizedBy:: [[Pixar USD]]
+  - relatedTo:: [[Asset Format Standards]]
+  - relatedTo:: [[VFX Tools]]
+  - relatedTo:: [[Procedural Generation]]
+  - bridges-to:: [[AI Content Generation]]
+  - bridges-to:: [[Supply Chain Provenance]]
 
-  - Core pipeline stages typically include ingestion, validation, format conversion, optimisation (level-of-detail generation, texture atlasing, mesh decimation), dependency resolution, and packaging into target container formats such as glTF, USD, or proprietary runtime bundles. Build-system principles—deterministic outputs, incremental rebuilds, content-addressed caching—map directly onto modern asset pipeline design.
+- ### Standards & Context
+  - **[[glTF]] 2.0** — Khronos Group's JSON-based runtime interchange format for 3D scenes and models; widely adopted as the primary pipeline output for web, mobile, and XR contexts.
+  - **[[Universal Scene Description]] (USD/USDZ)** — Pixar's open framework for composable scene description; the de facto standard for USD interchange in VFX, industrial digital twins (NVIDIA Omniverse), and Apple's spatial computing platform (visionOS).
+  - **OpenColorIO (OCIO)** — Academy Software Foundation standard for colour management across pipeline stages, ensuring perceptual consistency from DCC authoring to final display.
+  - **OpenAssetIO** — A [[Khronos Group]]-incubated C++/Python API for connecting DCC tools, pipeline logic, and [[Asset Management]] systems without bespoke integration code per tool pair.
+  - **MaterialX** — Khronos / Academy Software Foundation standard for portable material and shader definitions, enabling cross-pipeline material exchange without format-specific re-authoring.
+  - **Basis Universal / KTX2** — Khronos GPU texture compression supercompression standard; a canonical pipeline output format for cross-platform texture delivery, supported in glTF 2.0 via the `KHR_texture_basisu` extension.
+  - **OpenUSD Alliance** — Industry consortium (Apple, Adobe, Autodesk, NVIDIA, Pixar) accelerating USD adoption and toolchain interoperability across entertainment and industrial pipelines.
 
-  - In metaverse and extended-reality platforms, asset pipelines must handle heterogeneous device targets ranging from high-end GPU workstations to mobile headsets. This drives per-platform LOD budgets, streaming manifests, and progressive-loading strategies. AI-assisted tools are increasingly embedded in these pipelines to automate content upscaling, material inference, and semantic tagging, reducing artist iteration time significantly.
-
-  - Asset pipelines also serve as the enforcement point for legal and compliance concerns: watermarking, rights-metadata embedding, and provenance tracking can all be applied at pipeline time, making the pipeline an important control surface in the emerging creator economy.
+- ### Provenance
+  - sources:: Khronos Group glTF specification; Pixar OpenUSD documentation; Unity Accelerator product documentation; Unreal Engine Derived Data Cache documentation; NVIDIA Omniverse technical overview; OpenAssetIO project (ASWF/Khronos); Academy Software Foundation OpenColorIO and MaterialX specifications.
+  - updated:: 2026-06-13

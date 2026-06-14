@@ -5,39 +5,154 @@
   "public": true,
   "classIri": "urn:ngm:class:foundry",
   "domain": "blockchain",
-  "definition": "Foundry is a development toolkit for Ethereum smart contracts, providing tools for compilation, testing, and deployment written in Rust.",
+  "definition": "Foundry is a fast, modular, and portable Ethereum application development toolkit written in Rust, comprising four core tools: Forge (test framework), Cast (EVM interaction CLI), Anvil (local testnet node), and Chisel (Solidity REPL). It enables developers to write, compile, fuzz-test, and deploy Solidity and Vyper smart contracts entirely from the command line, with tests written directly in Solidity rather than JavaScript. Foundry has become the dominant professional-grade smart-contract development environment on Ethereum-compatible chains, replacing earlier JavaScript-based toolchains such as Hardhat and Truffle for many teams. Its architecture emphasises speed through native compilation and parallelised test execution, deterministic reproducibility via pinned dependencies, and deep EVM-level inspection through cheatcodes and traces.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:solidity",
-      "label": "Solidity"
+      "id": "urn:ngm:class:smart-contract-development-framework",
+      "label": "Smart Contract Development Framework"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.74,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:forge",
+        "label": "Forge"
+      },
+      {
+        "id": "urn:ngm:class:cast",
+        "label": "Cast"
+      },
+      {
+        "id": "urn:ngm:class:anvil",
+        "label": "Anvil"
+      },
+      {
+        "id": "urn:ngm:class:chisel",
+        "label": "Chisel"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:solidity",
         "label": "Solidity"
+      },
+      {
+        "id": "urn:ngm:class:evm",
+        "label": "EVM"
+      },
+      {
+        "id": "urn:ngm:class:rust",
+        "label": "Rust"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:fuzz-testing",
+        "label": "Fuzz Testing"
+      },
+      {
+        "id": "urn:ngm:class:property-based-testing",
+        "label": "Property-Based Testing"
+      },
+      {
+        "id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      },
+      {
+        "id": "urn:ngm:class:deployment-scripting",
+        "label": "Deployment Scripting"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "id": "urn:ngm:class:evm-bytecode",
+        "label": "EVM Bytecode"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:hardhat",
+        "label": "Hardhat"
+      },
+      {
+        "id": "urn:ngm:class:truffle",
+        "label": "Truffle"
+      },
+      {
+        "id": "urn:ngm:class:brownie",
+        "label": "Brownie"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:continuous-integration",
+        "label": "Continuous Integration"
+      },
+      {
+        "id": "urn:ngm:class:static-analysis",
+        "label": "Static Analysis"
+      },
+      {
+        "id": "urn:ngm:class:devops",
+        "label": "DevOps"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cheatcodes",
+        "label": "Cheatcodes"
+      },
+      {
+        "id": "urn:ngm:class:abi-encoding",
+        "label": "ABI Encoding"
+      },
+      {
+        "id": "urn:ngm:class:json-rpc",
+        "label": "JSON-RPC"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:defi-protocol",
+        "label": "DeFi Protocol"
+      },
+      {
+        "id": "urn:ngm:class:nft",
+        "label": "NFT"
+      },
+      {
+        "id": "urn:ngm:class:evm-compatible-chain",
+        "label": "EVM-Compatible Chain"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:vyper",
+        "label": "Vyper"
+      },
+      {
+        "id": "urn:ngm:class:openzeppelin",
+        "label": "OpenZeppelin"
+      },
+      {
+        "id": "urn:ngm:class:remappings",
+        "label": "Remappings"
+      }
+    ]
   },
   "wikilinks": [
     {

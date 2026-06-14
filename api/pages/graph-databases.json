@@ -4,8 +4,8 @@
   "slug": "graph-databases",
   "public": true,
   "classIri": "urn:ngm:class:graph-databases",
-  "domain": "distributed-systems",
-  "definition": "Graph databases are database systems that store data as nodes and edges, modelling entities and their relationships directly for traversal-based queries.",
+  "domain": "data",
+  "definition": "Graph databases are database management systems that represent and store data as a network of nodes (entities) and edges (relationships), with both capable of carrying named property sets. Unlike relational models that encode relationships through foreign-key joins, graph databases make adjacency a first-class storage primitive, enabling traversal-based queries that navigate multi-hop paths in near-constant time per hop. They implement the property-graph or RDF triple-store data models, and are queried via languages such as Cypher, Gremlin, or SPARQL. Their native graph storage and index-free adjacency make them especially suited to domains where relationships are as semantically rich as the entities themselves.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:database-systems",
@@ -13,26 +13,120 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:property-graph-model",
+        "label": "Property Graph Model"
+      },
+      {
+        "id": "urn:ngm:class:rdf-triple-store",
+        "label": "RDF Triple Store"
+      },
+      {
+        "id": "urn:ngm:class:graph-query-language",
+        "label": "Graph Query Language"
+      },
+      {
+        "id": "urn:ngm:class:index-free-adjacency",
+        "label": "Index-Free Adjacency"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:graph-data-model",
+        "label": "Graph Data Model"
+      },
+      {
+        "id": "urn:ngm:class:graph-algorithms",
+        "label": "Graph Algorithms"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:knowledge-graphs",
         "label": "Knowledge Graphs"
+      },
+      {
+        "id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      },
+      {
+        "id": "urn:ngm:class:recommendation-systems",
+        "label": "Recommendation Systems"
+      },
+      {
+        "id": "urn:ngm:class:fraud-detection",
+        "label": "Fraud Detection"
+      },
+      {
+        "id": "urn:ngm:class:network-analysis",
+        "label": "Network Analysis"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:relational-databases",
+        "label": "Relational Databases"
+      },
+      {
+        "id": "urn:ngm:class:document-stores",
+        "label": "Document Stores"
+      },
+      {
+        "id": "urn:ngm:class:columnar-databases",
+        "label": "Columnar Databases"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      },
+      {
+        "id": "urn:ngm:class:graph-neural-networks",
+        "label": "Graph Neural Networks"
+      },
+      {
+        "id": "urn:ngm:class:ontology-engineering",
+        "label": "Ontology Engineering"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cypher-query-language",
+        "label": "Cypher Query Language"
+      },
+      {
+        "id": "urn:ngm:class:sparql",
+        "label": "SPARQL"
+      },
+      {
+        "id": "urn:ngm:class:gremlin-traversal-language",
+        "label": "Gremlin Traversal Language"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:nosql-databases",
+        "label": "NoSQL Databases"
+      },
+      {
+        "id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      },
+      {
+        "id": "urn:ngm:class:social-network-analysis",
+        "label": "Social Network Analysis"
+      }
+    ]
   },
   "wikilinks": [
     {

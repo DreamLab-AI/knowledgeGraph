@@ -59,7 +59,7 @@ public:: true
   "@type": "Class",
   "label": "Generative Models",
   "definition": "Generative models are machine learning models that learn the distribution of data so they can produce new samples resembling the training data. They underpin image, text, audio and video generation.",
-  "domain": "generative-ai",
+  "domain": "ai",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

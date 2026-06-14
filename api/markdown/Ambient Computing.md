@@ -21,7 +21,7 @@ public:: true
   "@type": "Class",
   "label": "Ambient Computing",
   "definition": "A paradigm in which computing capability is invisibly embedded throughout the physical environment, enabling technology to sense, infer, and respond to human needs without requiring deliberate interaction with discrete devices. Ambient computing dissolves the boundary between the digital and physical worlds by distributing processing, sensing, and actuation across interconnected objects, surfaces, and spaces that operate continuously in the background. It represents the convergence of pervasive connectivity, miniaturised hardware, and AI-driven contextual inference into an always-present computational substrate.",
-  "domain": "spatial",
+  "domain": "spatial-computing",
   "maturity": "emerging",
   "subClassOf": [{"@id": "urn:ngm:class:pervasive-computing", "label": "Pervasive Computing"}],
   "relations": {

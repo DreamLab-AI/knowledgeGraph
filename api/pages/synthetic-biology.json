@@ -4,7 +4,7 @@
   "slug": "synthetic-biology",
   "public": true,
   "classIri": "urn:ngm:class:synthetic-biology",
-  "domain": "general",
+  "domain": "data",
   "definition": "Synthetic biology is a field that applies engineering principles to design and construct biological systems and organisms. It combines biology, genetics, and engineering.",
   "subClassOf": [
     {

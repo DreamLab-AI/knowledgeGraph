@@ -55,7 +55,7 @@ public:: true
   "@type": "Class",
   "label": "API",
   "definition": "An Application Programming Interface, a defined set of operations, inputs and outputs through which software components or services communicate without exposing their internal implementation.",
-  "domain": "general",
+  "domain": "infrastructure",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

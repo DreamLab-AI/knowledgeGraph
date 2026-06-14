@@ -4,16 +4,16 @@
   "slug": "random-oracle-model",
   "public": true,
   "classIri": "urn:ngm:class:random-oracle-model",
-  "domain": "artificial-intelligence",
-  "definition": "A theoretical model in cryptography in which a hash function is idealised as a publicly accessible truly random function, used to analyse the security of cryptographic schemes.",
+  "domain": "security",
+  "definition": "The Random Oracle Model (ROM) is a theoretical framework in cryptography that idealises a cryptographic hash function as a publicly accessible, truly random function: for every distinct input the oracle returns an independent, uniformly random output, while repeated queries return the same value. Introduced formally by Bellare and Rogaway in 1993, the ROM enables security proofs for practical schemes such as RSA-OAEP, ECDSA, and Schnorr signatures that cannot currently be proved secure under standard computational assumptions alone. Because no concrete hash function perfectly instantiates a random oracle, ROM proofs are treated as strong heuristic evidence rather than unconditional guarantees, and pathological counterexamples exist that are ROM-secure but concretely insecure under any hash instantiation.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:cryptography",
-      "label": "Cryptography"
+      "id": "urn:ngm:class:cryptographic-proof-model",
+      "label": "Cryptographic Proof Model"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.75,
   "maturity": "mature",
   "relationships": {
     "hasPart": [],
@@ -25,23 +25,112 @@
       {
         "id": "urn:ngm:class:cryptographic-hash-function",
         "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:provable-security",
+        "label": "Provable Security"
       }
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:cryptography",
-        "label": "Cryptography"
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:public-key-encryption",
+        "label": "Public-Key Encryption"
+      },
+      {
+        "id": "urn:ngm:class:key-derivation-function",
+        "label": "Key Derivation Function"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:sha-256",
+        "label": "SHA-256"
+      },
+      {
+        "id": "urn:ngm:class:sha-3",
+        "label": "SHA-3"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:standard-model",
+        "label": "Standard Model"
+      },
+      {
+        "id": "urn:ngm:class:generic-group-model",
+        "label": "Generic Group Model"
+      },
+      {
+        "id": "urn:ngm:class:ideal-cipher-model",
+        "label": "Ideal Cipher Model"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-random-function",
+        "label": "Verifiable Random Function"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:reduction-proof",
+        "label": "Reduction Proof"
+      },
+      {
+        "id": "urn:ngm:class:adversarial-model",
+        "label": "Adversarial Model"
+      },
+      {
+        "id": "urn:ngm:class:computational-complexity",
+        "label": "Computational Complexity"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:rsa-oaep",
+        "label": "RSA-OAEP"
+      },
+      {
+        "id": "urn:ngm:class:schnorr-signature",
+        "label": "Schnorr Signature"
+      },
+      {
+        "id": "urn:ngm:class:fiat-shamir-transform",
+        "label": "Fiat-Shamir Transform"
+      },
+      {
+        "id": "urn:ngm:class:ecdsa",
+        "label": "ECDSA"
+      },
+      {
+        "id": "urn:ngm:class:post-quantum-cryptography",
+        "label": "Post-Quantum Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:indistinguishability-obfuscation",
+        "label": "Indistinguishability Obfuscation"
+      }
+    ]
   },
   "wikilinks": [
     {

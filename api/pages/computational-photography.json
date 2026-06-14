@@ -4,7 +4,7 @@
   "slug": "computational-photography",
   "public": true,
   "classIri": "urn:ngm:class:computational-photography",
-  "domain": "computer-vision",
+  "domain": "ai",
   "definition": "A set of techniques that use digital computation to extend or improve the capabilities of a camera beyond what its optics and sensor alone can capture. It combines multiple exposures, sensor data, and algorithms to form a final image.",
   "subClassOf": [
     {

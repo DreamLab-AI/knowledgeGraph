@@ -4,55 +4,154 @@
   "slug": "hardware-abstraction",
   "public": true,
   "classIri": "urn:ngm:class:hardware-abstraction",
-  "domain": "spatial-computing",
-  "definition": "Hardware Abstraction is the software engineering practice of creating an intermediate layer that exposes a uniform API to higher-level software while hiding the specifics of underlying hardware components. In spatial computing and metaverse platforms this is essential for achieving hardware-agnostic portability across diverse GPU architectures, XR headsets, and edge devices. A well-designed hardware abstraction layer allows rendering engines, physics simulators, and networking stacks to target a single interface rather than coding against vendor-specific hardware SDKs.",
+  "domain": "infrastructure",
+  "definition": "Hardware Abstraction is the software engineering principle and architectural practice of interposing a uniform programmatic interface layer between high-level software and the physical characteristics of underlying hardware components, enabling software to operate independently of specific hardware implementations. The abstraction layer translates generic API calls into vendor-specific or device-specific commands, shielding operating systems, runtimes, and applications from the diversity of processor architectures, memory subsystems, I/O controllers, graphics units, and peripheral devices. This principle underpins portability, vendor independence, and long-term maintainability of system software stacks across the full spectrum of computing platforms, from embedded microcontrollers to cloud server farms to spatial-computing headsets. Hardware Abstraction Layers (HALs) are the canonical realisation of this principle in operating systems, device driver frameworks, and graphics APIs.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:sc-platform-and-environment",
-      "label": "Platform and Environment"
-    },
-    {
-      "id": "urn:ngm:class:hardware-abstraction-layer-hal",
-      "label": "Hardware Abstraction Layer (HAL)"
+      "id": "urn:ngm:class:software-abstraction",
+      "label": "Software Abstraction"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:hardware-abstraction-layer-hal",
+        "label": "Hardware Abstraction Layer (HAL)"
+      },
+      {
+        "id": "urn:ngm:class:device-driver",
+        "label": "Device Driver"
+      },
+      {
+        "id": "urn:ngm:class:firmware-interface",
+        "label": "Firmware Interface"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:device-driver",
+        "label": "Device Driver"
+      },
+      {
+        "id": "urn:ngm:class:firmware",
+        "label": "Firmware"
+      },
+      {
+        "id": "urn:ngm:class:instruction-set-architecture",
+        "label": "Instruction Set Architecture"
+      }
+    ],
     "enables": [
       {
-        "id": "urn:ngm:class:hardware-platform-agnostic",
-        "label": "Hardware Platform Agnostic"
+        "id": "urn:ngm:class:software-portability",
+        "label": "Software Portability"
       },
       {
         "id": "urn:ngm:class:operating-system",
         "label": "Operating System"
+      },
+      {
+        "id": "urn:ngm:class:cross-platform-development",
+        "label": "Cross-Platform Development"
+      },
+      {
+        "id": "urn:ngm:class:virtualisation",
+        "label": "Virtualisation"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:application-programming-interface",
+        "label": "Application Programming Interface"
+      },
+      {
+        "id": "urn:ngm:class:posix",
+        "label": "POSIX"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:bare-metal-programming",
+        "label": "Bare-Metal Programming"
+      },
+      {
+        "id": "urn:ngm:class:hardware-specific-optimisation",
+        "label": "Hardware-Specific Optimisation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:ai-accelerator",
+        "label": "AI Accelerator"
+      },
+      {
+        "id": "urn:ngm:class:webgpu",
+        "label": "WebGPU"
+      }
+    ],
     "uses": [
+      {
+        "id": "urn:ngm:class:graphics-api",
+        "label": "Graphics API"
+      },
       {
         "id": "urn:ngm:class:driver-software",
         "label": "Driver Software"
       },
       {
-        "id": "urn:ngm:class:graphics-api",
-        "label": "Graphics API"
+        "id": "urn:ngm:class:system-call-interface",
+        "label": "System Call Interface"
+      },
+      {
+        "id": "urn:ngm:class:unified-extensible-firmware-interface",
+        "label": "Unified Extensible Firmware Interface"
       }
     ],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      },
+      {
+        "id": "urn:ngm:class:real-time-operating-system",
+        "label": "Real-Time Operating System"
+      },
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      }
+    ],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:operating-system-architecture",
+        "label": "Operating System Architecture"
+      },
+      {
+        "id": "urn:ngm:class:system-software-stack",
+        "label": "System Software Stack"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:hardware",
         "label": "Hardware"
+      },
+      {
+        "id": "urn:ngm:class:memory-management",
+        "label": "Memory Management"
+      },
+      {
+        "id": "urn:ngm:class:interrupt-handling",
+        "label": "Interrupt Handling"
       }
     ]
   },

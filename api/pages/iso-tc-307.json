@@ -5,18 +5,35 @@
   "public": true,
   "classIri": "urn:ngm:class:iso-tc-307",
   "domain": "blockchain",
-  "definition": "ISO/TC 307 is the ISO technical committee established in 2016 with a mandate to develop international standards for blockchain and distributed ledger technologies, covering terminology (ISO 22739), reference architecture, security and privacy, smart contract interactions, identity, and governance frameworks. The committee coordinates with other bodies including IEEE, ITU, and national standards organisations to ensure interoperability of DLT systems and provides normative vocabulary that underpins regulatory and procurement language in blockchain-related initiatives worldwide.",
+  "definition": "ISO/TC 307 is the ISO Technical Committee established in 2016 with Australia as secretariat, mandated to develop international standards for blockchain and distributed ledger technologies (DLT). Its normative outputs span terminology (ISO 22739), reference architecture, security and privacy frameworks, smart contract interaction models, digital identity standards, and governance structures for decentralised systems. The committee coordinates with ISO/TC 68 (Financial Services), ISO/IEC JTC 1/SC 27 (Cryptographic Security), W3C, ITU-T SG17, and IEEE to ensure interoperability standards and shared vocabulary underpin regulatory, procurement, and legislative language across jurisdictions. It operates through specialised working groups covering foundations, security, smart contracts, data governance, DLT governance, and interoperability.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:bc-governance-and-regulation",
-      "label": "Blockchain Governance and Regulation"
+      "id": "urn:ngm:class:standards-body",
+      "label": "Standards Body"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:blockchain-terminology",
+        "label": "Blockchain Terminology"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract-standards",
+        "label": "Smart Contract Standards"
+      },
+      {
+        "id": "urn:ngm:class:dlt-security-framework",
+        "label": "DLT Security Framework"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-governance-framework",
+        "label": "Blockchain Governance Framework"
+      }
+    ],
     "requires": [],
     "enables": [
       {
@@ -26,33 +43,88 @@
       {
         "id": "urn:ngm:class:blockchain-interoperability",
         "label": "Blockchain Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:cross-chain-communication",
+        "label": "Cross-Chain Communication"
+      },
+      {
+        "id": "urn:ngm:class:digital-identity-standards",
+        "label": "Digital Identity Standards"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [
+    "implements": [
       {
         "id": "urn:ngm:class:blockchain-governance",
         "label": "Blockchain Governance"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-governance",
+        "label": "Decentralised Governance"
       }
     ],
-    "partOf": [],
-    "relatedTo": [
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-traceability",
+        "label": "Supply Chain Traceability"
+      }
+    ],
+    "uses": [],
+    "supports": [
       {
         "id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
       },
       {
-        "id": "urn:ngm:class:digital-identity-standards",
-        "label": "Digital Identity Standards"
+        "id": "urn:ngm:class:permissioned-blockchain",
+        "label": "Permissioned Blockchain"
       },
+      {
+        "id": "urn:ngm:class:permissionless-blockchain",
+        "label": "Permissionless Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:international-organization-for-standardization",
+        "label": "International Organization for Standardization"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
       {
         "id": "urn:ngm:class:blockchain",
         "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:w3c-decentralised-identifier",
+        "label": "W3C Decentralised Identifier"
+      },
+      {
+        "id": "urn:ngm:class:hyperledger-fabric",
+        "label": "Hyperledger Fabric"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-security",
+        "label": "Cryptographic Security"
       }
     ]
   },

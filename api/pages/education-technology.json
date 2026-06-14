@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:education-technology",
   "domain": "artificial-intelligence",
-  "definition": "Education Technology (EdTech) is the application of digital tools, AI-driven systems, and immersive platforms to enhance teaching, personalise learning pathways, and streamline educational administration. Modern EdTech leverages adaptive learning algorithms that adjust content difficulty and pacing to individual learner performance, natural language processing for automated essay scoring and tutoring dialogue, and XR environments that create immersive simulations for fields such as medicine, engineering, and history. It spans formal K-12 and higher education, professional development, and informal self-directed learning.",
+  "definition": "Education Technology (EdTech) is the systematic application of digital tools, AI-driven systems, data analytics, and immersive platforms to enhance teaching efficacy, personalise learning pathways, and streamline educational administration across formal, informal, and professional learning contexts. Modern EdTech leverages adaptive learning algorithms that adjust content difficulty and pacing to individual learner performance, natural language processing for automated tutoring and essay scoring, and extended-reality environments that create immersive simulations for fields such as medicine, engineering, and the sciences. It bridges pedagogical theory with computational infrastructure, drawing on learning science research to design interventions at scale while grappling with data-privacy obligations and algorithmic-bias risks inherent in learner-profiling systems.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-application",
@@ -13,12 +13,72 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:learning-management-system",
+        "label": "Learning Management System"
+      },
+      {
+        "id": "urn:ngm:class:intelligent-tutoring-system",
+        "label": "Intelligent Tutoring System"
+      },
+      {
+        "id": "urn:ngm:class:adaptive-learning",
+        "label": "Adaptive Learning"
+      },
+      {
+        "id": "urn:ngm:class:learning-analytics",
+        "label": "Learning Analytics"
+      },
+      {
+        "id": "urn:ngm:class:automated-assessment",
+        "label": "Automated Assessment"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-privacy",
+        "label": "Data Privacy"
+      },
+      {
+        "id": "urn:ngm:class:digital-infrastructure",
+        "label": "Digital Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      }
+    ],
     "enables": [
+      {
+        "id": "urn:ngm:class:personalised-learning",
+        "label": "Personalised Learning"
+      },
+      {
+        "id": "urn:ngm:class:collaborative-learning",
+        "label": "Collaborative Learning"
+      },
+      {
+        "id": "urn:ngm:class:remote-education",
+        "label": "Remote Education"
+      },
+      {
+        "id": "urn:ngm:class:competency-based-education",
+        "label": "Competency-Based Education"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:traditional-classroom-instruction",
+        "label": "Traditional Classroom Instruction"
+      }
+    ],
+    "bridgesTo": [
       {
         "id": "urn:ngm:class:augmented-reality",
         "label": "Augmented Reality"
@@ -26,29 +86,70 @@
       {
         "id": "urn:ngm:class:virtual-reality",
         "label": "Virtual Reality"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
     "uses": [
       {
-        "id": "urn:ngm:class:learning-management-system",
-        "label": "Learning Management System"
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:immersive-learning",
         "label": "Immersive Learning"
+      },
+      {
+        "id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
+      },
+      {
+        "id": "urn:ngm:class:recommendation-systems",
+        "label": "Recommendation Systems"
       }
     ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ieee-learning-technology",
+        "label": "IEEE Learning Technology Standards Committee"
+      },
+      {
+        "id": "urn:ngm:class:scorm",
+        "label": "SCORM"
+      },
+      {
+        "id": "urn:ngm:class:xapi",
+        "label": "xAPI"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:natural-language-processing",
-        "label": "Natural Language Processing"
+        "id": "urn:ngm:class:cognitive-science",
+        "label": "Cognitive Science"
+      },
+      {
+        "id": "urn:ngm:class:gamification",
+        "label": "Gamification"
+      },
+      {
+        "id": "urn:ngm:class:open-educational-resources",
+        "label": "Open Educational Resources"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
       }
     ]
   },

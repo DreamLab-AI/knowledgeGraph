@@ -55,7 +55,7 @@ public:: true
   "@type": "Class",
   "label": "Visa",
   "definition": "Visa is a multinational payment technology company that operates one of the largest electronic payment networks, connecting cardholders, merchants, and banks. It is headquartered in the United States.",
-  "domain": "general",
+  "domain": "finance",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

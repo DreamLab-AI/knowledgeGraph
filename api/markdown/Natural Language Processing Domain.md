@@ -95,7 +95,7 @@ public:: true
   "@type": "Class",
   "label": "Natural Language Processing Domain",
   "definition": "The Natural Language Processing Domain covers the computational analysis and generation of human language in text and speech. Its scope spans tokenisation, syntactic and semantic analysis, machine translation, question answering and language generation. It is an application sub-area of the Artificial Intelligence Domain that draws principally on the Machine Learning Domain. The boundary excludes formal and programming languages, which are treated under the Formal Methods Domain.",
-  "domain": "natural-language-processing",
+  "domain": "ai",
   "maturity": "emerging",
   "qualityScore": 0.7,
   "subClassOf": [

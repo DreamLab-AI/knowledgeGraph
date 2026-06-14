@@ -4,8 +4,8 @@
   "slug": "compliance-framework",
   "public": true,
   "classIri": "urn:ngm:class:compliance-framework",
-  "domain": "artificial-intelligence",
-  "definition": "A Compliance Framework is a structured set of policies, controls, and procedures that organisations implement to satisfy regulatory requirements and industry standards governing the development and deployment of AI systems. It maps legal obligations (such as the EU AI Act or GDPR) onto operational processes, risk assessments, and audit trails, enabling organisations to demonstrate accountability and transparency.",
+  "domain": "governance",
+  "definition": "A Compliance Framework is a structured set of policies, controls, procedures, and audit mechanisms that organisations implement to satisfy regulatory obligations and industry standards governing the design, development, and deployment of systems \u2014 especially AI and data-intensive systems. It systematically maps external legal requirements (such as the EU AI Act, GDPR, ISO 42001, and NIST AI RMF) onto internal risk registers, technical documentation, accountability chains, and monitoring pipelines. A compliance framework defines the scope of applicability, assigns ownership of controls, establishes evidence-collection workflows, and mandates review cycles so that organisations can continuously demonstrate conformance to auditors, regulators, and stakeholders. It bridges governance intent with operational practice by providing a traceable path from regulatory obligation through implemented control to verified outcome.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-governance-and-ethics",
@@ -13,8 +13,8 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "emerging",
+  "qualityScore": 0.72,
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [
@@ -25,13 +25,69 @@
       {
         "id": "urn:ngm:class:data-governance",
         "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      },
+      {
+        "id": "urn:ngm:class:policy-management",
+        "label": "Policy Management"
       }
     ],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      },
+      {
+        "id": "urn:ngm:class:organisational-trust",
+        "label": "Organisational Trust"
+      }
+    ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI RMF"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:voluntary-guidelines",
+        "label": "Voluntary Guidelines"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      }
+    ],
     "uses": [],
     "supports": [
       {
@@ -41,9 +97,30 @@
       {
         "id": "urn:ngm:class:responsible-ai",
         "label": "Responsible AI"
+      },
+      {
+        "id": "urn:ngm:class:information-security",
+        "label": "Information Security"
+      },
+      {
+        "id": "urn:ngm:class:privacy-engineering",
+        "label": "Privacy Engineering"
       }
     ],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-42001",
+        "label": "ISO 42001"
+      },
+      {
+        "id": "urn:ngm:class:iso-27001",
+        "label": "ISO 27001"
+      },
+      {
+        "id": "urn:ngm:class:nist-cybersecurity-framework",
+        "label": "NIST Cybersecurity Framework"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -51,8 +128,16 @@
         "label": "AI Governance"
       },
       {
-        "id": "urn:ngm:class:blockchain",
-        "label": "Blockchain"
+        "id": "urn:ngm:class:corporate-governance",
+        "label": "Corporate Governance"
+      },
+      {
+        "id": "urn:ngm:class:model-card",
+        "label": "Model Card"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-impact-assessment",
+        "label": "Algorithmic Impact Assessment"
       }
     ]
   },

@@ -4,17 +4,17 @@
   "slug": "encryption",
   "public": true,
   "classIri": "urn:ngm:class:encryption",
-  "domain": "infrastructure",
-  "definition": "Encryption is the cryptographic process of transforming plaintext data into ciphertext using a defined algorithm and key, such that only parties possessing the correct decryption key can recover the original information, thereby ensuring confidentiality. Symmetric encryption schemes (such as AES-GCM) use a shared secret key for both encryption and decryption, while asymmetric schemes (such as RSA-OAEP) use mathematically linked key pairs. Encryption operates at multiple layers of modern infrastructure\u2014at rest in storage systems, in transit via TLS, and at the application layer in end-to-end encrypted messaging protocols.",
+  "domain": "security",
+  "definition": "Encryption is the cryptographic process of transforming plaintext data into ciphertext using a defined algorithm and secret key, rendering the data unintelligible to any party that does not possess the corresponding decryption key, thereby ensuring confidentiality. Symmetric schemes such as AES-GCM use a single shared secret for both encryption and decryption, providing authenticated encryption with associated data (AEAD) in a single pass; asymmetric schemes such as RSA-OAEP and ECDH use mathematically linked key pairs where the public key encrypts and the private key decrypts. Hybrid constructions combine both paradigms \u2014 using asymmetric key exchange to establish a shared session key and then symmetric ciphers for bulk data \u2014 as exemplified by TLS 1.3. Encryption is foundational to data-at-rest protection, data-in-transit security, end-to-end encrypted messaging, confidential computing, and post-quantum cryptography.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:infra-security-and-identity",
-      "label": "Security and Identity"
+      "id": "urn:ngm:class:cryptography",
+      "label": "Cryptography"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "mature",
   "relationships": {
     "hasPart": [],
     "requires": [
@@ -25,6 +25,14 @@
       {
         "id": "urn:ngm:class:cryptography",
         "label": "Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:random-number-generation",
+        "label": "Random Number Generation"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
       }
     ],
     "enables": [
@@ -35,15 +43,93 @@
       {
         "id": "urn:ngm:class:confidential-computing",
         "label": "Confidential Computing"
+      },
+      {
+        "id": "urn:ngm:class:end-to-end-encryption",
+        "label": "End-to-End Encryption"
+      },
+      {
+        "id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      },
+      {
+        "id": "urn:ngm:class:secure-communication",
+        "label": "Secure Communication"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:aes",
+        "label": "AES"
+      },
+      {
+        "id": "urn:ngm:class:rsa",
+        "label": "RSA"
+      },
+      {
+        "id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:post-quantum-cryptography",
+        "label": "Post-Quantum Cryptography"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:steganography",
+        "label": "Steganography"
+      },
+      {
+        "id": "urn:ngm:class:obfuscation",
+        "label": "Obfuscation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:key-exchange",
+        "label": "Key Exchange"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:transport-layer-security",
+        "label": "Transport Layer Security"
+      },
+      {
+        "id": "urn:ngm:class:secure-multiparty-computation",
+        "label": "Secure Multiparty Computation"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:nist",
+        "label": "NIST"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-18033",
+        "label": "ISO/IEC 18033"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -51,8 +137,12 @@
         "label": "Zero Knowledge"
       },
       {
-        "id": "urn:ngm:class:privacy",
-        "label": "Privacy"
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "id": "urn:ngm:class:homomorphic-encryption",
+        "label": "Homomorphic Encryption"
       }
     ]
   },

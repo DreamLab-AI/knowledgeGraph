@@ -5,19 +5,49 @@
   "public": true,
   "classIri": "urn:ngm:class:diffusion-model",
   "domain": "artificial-intelligence",
-  "definition": "A Diffusion Model is a class of generative model that learns to synthesise data by reversing a gradual noising process. During training the model observes how data is progressively corrupted by Gaussian noise; at inference time it iteratively denoises a random sample, guided by a learned score function, to produce high-fidelity outputs such as images, audio, or video. Diffusion models underpin systems like Stable Diffusion and DALL-E 3.",
+  "definition": "A Diffusion Model is a class of probabilistic generative model that learns to synthesise data by reversing a learned forward diffusion process in which training examples are progressively corrupted with Gaussian noise across a fixed Markov chain of timesteps. At inference time the model iteratively denoises a sample drawn from pure noise, guided by a parametrised score function or noise-prediction network, until a high-fidelity output is recovered. Architecturally, the denoising backbone is typically a U-Net or Vision Transformer conditioned on timestep embeddings and optional guidance signals such as text or class labels. Diffusion models achieve state-of-the-art quality on image, audio, video, and molecular generation tasks and underpin production systems including Stable Diffusion, DALL-E 3, Sora, and AudioLDM.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ai-model-architecture",
-      "label": "AI Model Architecture"
+      "id": "urn:ngm:class:generative-model",
+      "label": "Generative Model"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.3,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:forward-diffusion-process",
+        "label": "Forward Diffusion Process"
+      },
+      {
+        "id": "urn:ngm:class:reverse-diffusion-process",
+        "label": "Reverse Diffusion Process"
+      },
+      {
+        "id": "urn:ngm:class:noise-schedule",
+        "label": "Noise Schedule"
+      },
+      {
+        "id": "urn:ngm:class:score-function",
+        "label": "Score Function"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "id": "urn:ngm:class:latent-space",
+        "label": "Latent Space"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:image-generation",
@@ -26,6 +56,22 @@
       {
         "id": "urn:ngm:class:text-to-image",
         "label": "Text-to-Image"
+      },
+      {
+        "id": "urn:ngm:class:video-generation",
+        "label": "Video Generation"
+      },
+      {
+        "id": "urn:ngm:class:audio-synthesis",
+        "label": "Audio Synthesis"
+      },
+      {
+        "id": "urn:ngm:class:drug-discovery",
+        "label": "Drug Discovery"
+      },
+      {
+        "id": "urn:ngm:class:data-augmentation",
+        "label": "Data Augmentation"
       }
     ],
     "dependsOn": [],
@@ -34,23 +80,81 @@
       {
         "id": "urn:ngm:class:generative-adversarial-network",
         "label": "Generative Adversarial Network"
+      },
+      {
+        "id": "urn:ngm:class:variational-autoencoder",
+        "label": "Variational Autoencoder"
+      },
+      {
+        "id": "urn:ngm:class:normalising-flow",
+        "label": "Normalising Flow"
+      },
+      {
+        "id": "urn:ngm:class:autoregressive-model",
+        "label": "Autoregressive Model"
       }
     ],
-    "bridgesTo": [],
-    "uses": [
+    "bridgesTo": [
       {
-        "id": "urn:ngm:class:training-data",
-        "label": "Training Data"
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
       },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:synthetic-data",
+        "label": "Synthetic Data"
+      }
+    ],
+    "uses": [
       {
         "id": "urn:ngm:class:neural-network",
         "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:u-net",
+        "label": "U-Net"
+      },
+      {
+        "id": "urn:ngm:class:vision-transformer",
+        "label": "Vision Transformer"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:classifier-free-guidance",
+        "label": "Classifier-Free Guidance"
+      },
+      {
+        "id": "urn:ngm:class:variational-autoencoder",
+        "label": "Variational Autoencoder"
       }
     ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:stochastic-differential-equation",
+        "label": "Stochastic Differential Equation"
+      },
+      {
+        "id": "urn:ngm:class:markov-chain",
+        "label": "Markov Chain"
+      },
+      {
+        "id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-model",
+        "label": "Multimodal Model"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:tool-use",
   "domain": "artificial-intelligence",
-  "definition": "Tool Use is the capability of large language models and AI agent systems to invoke external functions, APIs, databases, or services at inference time, extending the model's effective knowledge and action repertoire beyond pure text generation. The model receives a structured description of available tools (a tool schema), reasons about which tool to call and with what arguments, and incorporates the returned result into its response. This capability is foundational to agentic AI systems that must take real-world actions such as code execution, web search, database queries, or actuator control.",
+  "definition": "Tool Use is the capability of large language models and AI agent systems to invoke external functions, APIs, databases, or services at inference time, extending the model's effective knowledge and action repertoire beyond pure text generation. The model receives a structured description of available tools \u2014 a tool schema encoding names, descriptions, and JSON Schema parameter specifications \u2014 reasons about which tool to call and with what arguments, executes that call via a surrounding orchestration layer, and incorporates the returned observation into its subsequent reasoning. This capability is foundational to agentic AI systems that must take real-world actions such as code execution, web search, database queries, file manipulation, or actuator control, bridging the boundary between language generation and executable computation.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-technique",
@@ -14,7 +14,7 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "emerging",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [
@@ -25,6 +25,14 @@
       {
         "id": "urn:ngm:class:function-calling",
         "label": "Function Calling"
+      },
+      {
+        "id": "urn:ngm:class:json-schema",
+        "label": "JSON Schema"
+      },
+      {
+        "id": "urn:ngm:class:orchestration-layer",
+        "label": "Orchestration Layer"
       }
     ],
     "enables": [
@@ -35,24 +43,106 @@
       {
         "id": "urn:ngm:class:retrieval-augmented-generation",
         "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      },
+      {
+        "id": "urn:ngm:class:multi-step-reasoning",
+        "label": "Multi-Step Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:code-execution",
+        "label": "Code Execution"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:inference-time-computation",
+        "label": "Inference-Time Computation"
+      },
+      {
+        "id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      }
+    ],
+    "implements": [
       {
         "id": "urn:ngm:class:model-context-protocol",
         "label": "Model Context Protocol"
       },
       {
+        "id": "urn:ngm:class:openai-function-calling-api",
+        "label": "OpenAI Function Calling API"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:fine-tuning",
+        "label": "Fine-Tuning"
+      },
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:robotic-process-automation",
+        "label": "Robotic Process Automation"
+      },
+      {
+        "id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      }
+    ],
+    "uses": [
+      {
         "id": "urn:ngm:class:large-language-models",
         "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:context-window",
+        "label": "Context Window"
+      },
+      {
+        "id": "urn:ngm:class:structured-output",
+        "label": "Structured Output"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:human-in-the-loop",
+        "label": "Human-in-the-Loop"
+      },
+      {
+        "id": "urn:ngm:class:audit-logging",
+        "label": "Audit Logging"
+      },
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:react-prompting",
+        "label": "ReAct Prompting"
+      },
+      {
+        "id": "urn:ngm:class:chain-of-thought",
+        "label": "Chain of Thought"
+      },
+      {
+        "id": "urn:ngm:class:multi-agent-system",
+        "label": "Multi-Agent System"
+      },
+      {
+        "id": "urn:ngm:class:planning",
+        "label": "Planning"
       }
     ]
   },

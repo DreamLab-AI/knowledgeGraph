@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:traditional-banking",
   "domain": "finance",
-  "definition": "Traditional banking is the conventional system of deposit-taking, lending, and payment services provided by licensed banks operating under regulatory supervision.",
+  "definition": "Traditional banking is the long-established system by which licensed deposit-taking institutions accept customer funds, extend credit through loans and mortgages, and operate payment and settlement services under prudential regulatory oversight. Banks act as financial intermediaries, transforming short-term deposits into longer-term loans and profiting from the interest-rate spread while managing liquidity and credit risk. The sector is governed by capital-adequacy frameworks such as Basel III/IV, deposit-insurance schemes, and central-bank lender-of-last-resort facilities. Traditional banking is distinguished from shadow banking and fintech alternatives by its formal licensing, balance-sheet-based intermediation, and full integration with national payment and clearing infrastructure.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:traditional-finance",
@@ -13,26 +13,124 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
-  "maturity": "established",
+  "qualityScore": 0.74,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:retail-banking",
+        "label": "Retail Banking"
+      },
+      {
+        "id": "urn:ngm:class:commercial-banking",
+        "label": "Commercial Banking"
+      },
+      {
+        "id": "urn:ngm:class:investment-banking",
+        "label": "Investment Banking"
+      },
+      {
+        "id": "urn:ngm:class:correspondent-banking",
+        "label": "Correspondent Banking"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:financial-regulation",
         "label": "Financial Regulation"
+      },
+      {
+        "id": "urn:ngm:class:capital-adequacy",
+        "label": "Capital Adequacy"
+      },
+      {
+        "id": "urn:ngm:class:deposit-insurance",
+        "label": "Deposit Insurance"
+      },
+      {
+        "id": "urn:ngm:class:central-bank",
+        "label": "Central Bank"
       }
     ],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:fractional-reserve-banking",
+        "label": "Fractional Reserve Banking"
+      },
+      {
+        "id": "urn:ngm:class:monetary-policy-transmission",
+        "label": "Monetary Policy Transmission"
+      },
+      {
+        "id": "urn:ngm:class:trade-finance",
+        "label": "Trade Finance"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:shadow-banking",
+        "label": "Shadow Banking"
+      },
+      {
+        "id": "urn:ngm:class:neobank",
+        "label": "Neobank"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      },
+      {
+        "id": "urn:ngm:class:open-banking",
+        "label": "Open Banking"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:payment-system",
+        "label": "Payment System"
+      },
+      {
+        "id": "urn:ngm:class:interbank-settlement",
+        "label": "Interbank Settlement"
+      },
+      {
+        "id": "urn:ngm:class:credit-scoring",
+        "label": "Credit Scoring"
+      },
+      {
+        "id": "urn:ngm:class:know-your-customer",
+        "label": "Know Your Customer"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:systemic-risk",
+        "label": "Systemic Risk"
+      },
+      {
+        "id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
+      },
+      {
+        "id": "urn:ngm:class:financial-inclusion",
+        "label": "Financial Inclusion"
+      }
+    ]
   },
   "wikilinks": [
     {

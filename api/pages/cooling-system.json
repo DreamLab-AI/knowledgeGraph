@@ -4,7 +4,7 @@
   "slug": "cooling-system",
   "public": true,
   "classIri": "urn:ngm:class:cooling-system",
-  "domain": "computing",
+  "domain": "infrastructure",
   "definition": "A system that removes heat from equipment to keep it within safe operating temperatures. In computing it covers air, liquid, and immersion methods used in servers and data centres.",
   "subClassOf": [
     {

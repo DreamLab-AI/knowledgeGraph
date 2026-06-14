@@ -55,7 +55,7 @@ public:: true
   "@type": "Class",
   "label": "Schnorr Signatures",
   "definition": "A digital signature scheme based on the discrete logarithm problem, producing compact signatures with linear key and signature aggregation properties.",
-  "domain": "cryptographic",
+  "domain": "security",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

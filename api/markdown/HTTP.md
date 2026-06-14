@@ -55,7 +55,7 @@ public:: true
   "@type": "Class",
   "label": "HTTP",
   "definition": "The Hypertext Transfer Protocol, a stateless application-layer protocol for transferring hypertext and other resources between clients and servers that underpins the World Wide Web.",
-  "domain": "general",
+  "domain": "infrastructure",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

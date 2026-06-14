@@ -103,7 +103,7 @@ public:: true
   "@type": "Class",
   "label": "Information Security Domain",
   "definition": "The Information Security Domain classifies concepts concerned with protecting the confidentiality, integrity, and availability of information and the systems that process it. It covers controls, threat models, governance, and the operational practices that defend assets against compromise. As a top-level subject classification, it scopes the practice of securing systems rather than the cryptographic mathematics that some controls rely upon.",
-  "domain": "information-security",
+  "domain": "security",
   "maturity": "emerging",
   "qualityScore": 0.7,
   "subClassOf": [

@@ -4,7 +4,7 @@
   "slug": "safe-snap",
   "public": true,
   "classIri": "urn:ngm:class:safe-snap",
-  "domain": "defi",
+  "domain": "blockchain",
   "definition": "SafeSnap is a tool that connects off-chain Snapshot governance votes to on-chain execution through a Gnosis Safe and the Reality.eth oracle. It lets DAOs enact decisions without paying gas to vote.",
   "subClassOf": [
     {

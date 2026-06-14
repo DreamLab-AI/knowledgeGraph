@@ -5,16 +5,16 @@
   "public": true,
   "classIri": "urn:ngm:class:re-act",
   "domain": "artificial-intelligence",
-  "definition": "ReAct (Reasoning and Acting) is a prompting framework for large language models that interleaves free-form reasoning traces (thought steps) with structured action calls (tool invocations) in a single output sequence, enabling the model to dynamically plan multi-step tasks, observe the results of tool actions, and revise its reasoning accordingly. Unlike pure chain-of-thought prompting which only produces reasoning without grounding, or pure action-only agents which cannot explain their decisions, ReAct unifies both in a synergistic loop that improves task completion rates and interpretability. ReAct has become foundational to agentic AI frameworks including LangChain, LlamaIndex, and OpenAI's Assistants API.",
+  "definition": "ReAct (Reasoning and Acting) is a prompting paradigm for large language models that interleaves free-form reasoning traces (Thought steps) with structured external action calls in a single output sequence, enabling models to dynamically plan multi-step tasks, observe the results of tool invocations, and revise their reasoning accordingly. The framework produces an alternating Thought\u2013Action\u2013Observation loop that grounds model inference in real-world feedback, contrasting with pure chain-of-thought prompting (reasoning without action) and pure action-only agents (action without transparent reasoning). Originally demonstrated by Yao et al. (2022) on knowledge-intensive QA and interactive decision benchmarks, ReAct has become the foundational interaction primitive underpinning modern agentic AI systems, tool-augmented LLMs, and multi-agent orchestration frameworks.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique"
+      "id": "urn:ngm:class:prompting-technique",
+      "label": "Prompting Technique"
     }
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "emerging",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [
@@ -25,6 +25,14 @@
       {
         "id": "urn:ngm:class:tool-use",
         "label": "Tool Use"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
       }
     ],
     "enables": [
@@ -35,13 +43,82 @@
       {
         "id": "urn:ngm:class:autonomous-agent",
         "label": "Autonomous Agent"
+      },
+      {
+        "id": "urn:ngm:class:tool-augmented-language-model",
+        "label": "Tool-Augmented Language Model"
+      },
+      {
+        "id": "urn:ngm:class:human-in-the-loop",
+        "label": "Human-in-the-Loop"
+      },
+      {
+        "id": "urn:ngm:class:interpretable-ai",
+        "label": "Interpretable AI"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:external-knowledge-retrieval",
+        "label": "External Knowledge Retrieval"
+      },
+      {
+        "id": "urn:ngm:class:function-calling",
+        "label": "Function Calling"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:agent-loop",
+        "label": "Agent Loop"
+      },
+      {
+        "id": "urn:ngm:class:grounded-reasoning",
+        "label": "Grounded Reasoning"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:chain-of-thought",
+        "label": "Chain of Thought"
+      },
+      {
+        "id": "urn:ngm:class:act-only-agent",
+        "label": "Act-Only Agent"
+      },
+      {
+        "id": "urn:ngm:class:reflexion",
+        "label": "Reflexion"
+      },
+      {
+        "id": "urn:ngm:class:tree-of-thoughts",
+        "label": "Tree of Thoughts"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:robotic-process-automation",
+        "label": "Robotic Process Automation"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval Augmented Generation"
+      },
+      {
+        "id": "urn:ngm:class:in-context-learning",
+        "label": "In-Context Learning"
+      },
+      {
+        "id": "urn:ngm:class:scratchpad-reasoning",
+        "label": "Scratchpad Reasoning"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
@@ -53,6 +130,14 @@
       {
         "id": "urn:ngm:class:planning-and-scheduling",
         "label": "Planning and Scheduling"
+      },
+      {
+        "id": "urn:ngm:class:multi-agent-system",
+        "label": "Multi-Agent System"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
       }
     ]
   },

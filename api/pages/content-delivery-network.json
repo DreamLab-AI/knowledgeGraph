@@ -5,41 +5,105 @@
   "public": true,
   "classIri": "urn:ngm:class:content-delivery-network",
   "domain": "infrastructure",
-  "definition": "A Content Delivery Network (CDN) is a geographically distributed system of edge servers and Points of Presence (PoPs) that cache, replicate, and serve web assets \u2014 static files, media streams, and increasingly dynamic API responses \u2014 from locations physically near end users, thereby reducing round-trip latency and offloading origin infrastructure. CDNs employ anycast routing and DNS-based request steering to direct clients to the nearest healthy PoP. Beyond caching, modern CDNs provide TLS termination, DDoS mitigation, Web Application Firewall (WAF) services, and edge compute runtimes.",
+  "definition": "A Content Delivery Network (CDN) is a geographically distributed system of edge servers and Points of Presence (PoPs) that cache, replicate, and serve web assets \u2014 static files, media streams, and increasingly dynamic API responses \u2014 from locations physically near end users, substantially reducing round-trip latency and offloading origin-server load. CDNs use anycast routing, DNS-based request steering, and intelligent load balancing to direct each client request to the nearest healthy PoP, with cache coherence governed by HTTP cache-control semantics (RFC 9111) and conditional request mechanisms. Modern CDNs have evolved into full edge-compute platforms, offering TLS termination, DDoS mitigation, Web Application Firewall (WAF) services, and serverless edge runtimes (e.g. Cloudflare Workers, Fastly Compute) that execute application logic at PoPs without origin round-trips, blurring the boundary between network infrastructure and distributed application hosting.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:infra-network-and-comms",
-      "label": "Infra Network and Comms"
+      "id": "urn:ngm:class:network-infrastructure",
+      "label": "Network Infrastructure"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.72,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:edge-server",
+        "label": "Edge Server"
+      },
+      {
+        "id": "urn:ngm:class:point-of-presence",
+        "label": "Point of Presence"
+      },
+      {
+        "id": "urn:ngm:class:web-application-firewall",
+        "label": "Web Application Firewall"
+      },
+      {
+        "id": "urn:ngm:class:load-balancer",
+        "label": "Load Balancer"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:anycast-routing",
+        "label": "Anycast Routing"
+      },
+      {
+        "id": "urn:ngm:class:dns",
+        "label": "DNS"
+      },
+      {
+        "id": "urn:ngm:class:tls",
+        "label": "TLS"
+      }
+    ],
     "enables": [
       {
-        "id": "urn:ngm:class:latency",
-        "label": "Latency"
+        "id": "urn:ngm:class:low-latency-delivery",
+        "label": "Low-Latency Delivery"
       },
       {
         "id": "urn:ngm:class:edge-computing",
         "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:ddos-mitigation",
+        "label": "DDoS Mitigation"
+      },
+      {
+        "id": "urn:ngm:class:origin-offload",
+        "label": "Origin Offload"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      },
+      {
+        "id": "urn:ngm:class:origin-server",
+        "label": "Origin Server"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:edge-ai-inference",
+        "label": "Edge AI Inference"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
     "uses": [
       {
-        "id": "urn:ngm:class:network-infrastructure",
-        "label": "Network Infrastructure"
+        "id": "urn:ngm:class:http-caching",
+        "label": "HTTP Caching"
       },
       {
         "id": "urn:ngm:class:encryption",
         "label": "Encryption"
+      },
+      {
+        "id": "urn:ngm:class:http3-quic",
+        "label": "HTTP/3 QUIC"
+      },
+      {
+        "id": "urn:ngm:class:anycast-routing",
+        "label": "Anycast Routing"
       }
     ],
     "supports": [
@@ -50,11 +114,41 @@
       {
         "id": "urn:ngm:class:cloud-infrastructure",
         "label": "Cloud Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:streaming-media",
+        "label": "Streaming Media"
+      },
+      {
+        "id": "urn:ngm:class:microservices-architecture",
+        "label": "Microservices Architecture"
       }
     ],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:internet-infrastructure",
+        "label": "Internet Infrastructure"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:network-latency",
+        "label": "Network Latency"
+      },
+      {
+        "id": "urn:ngm:class:web-performance",
+        "label": "Web Performance"
+      },
+      {
+        "id": "urn:ngm:class:reverse-proxy",
+        "label": "Reverse Proxy"
+      },
+      {
+        "id": "urn:ngm:class:caching",
+        "label": "Caching"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:layer-2-scaling",
   "domain": "blockchain",
-  "definition": "Layer 2 scaling refers to a category of protocols and systems built atop an existing blockchain (the Layer 1) that increase transaction throughput and reduce fees by processing the majority of transaction computation and data storage off the main chain while inheriting the security guarantees of the underlying Layer 1 through cryptographic proofs, fraud-proof mechanisms, or periodic state commitments. The Layer 2 anchors itself to the Layer 1 by periodically publishing compressed state roots or validity proofs, allowing the Layer 1 to serve as the ultimate settlement and security layer while the Layer 2 handles high-volume transaction processing.",
+  "definition": "Layer 2 scaling refers to a category of protocols and systems built atop an existing blockchain (Layer 1) that increase transaction throughput and reduce fees by processing computation and data storage off the main chain while inheriting the security guarantees of the underlying Layer 1 through cryptographic proofs, fraud-proof mechanisms, or periodic state commitments. The Layer 2 anchors itself to the Layer 1 by periodically publishing compressed state roots or validity proofs, enabling the Layer 1 to serve as the ultimate settlement and security layer while the Layer 2 handles high-volume transaction processing. Major architectural families include ZK-rollups, optimistic rollups, state channels, and sidechains, each offering distinct trade-offs between latency, security assumptions, and EVM compatibility.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:blockchain-scalability",
@@ -13,10 +13,18 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
-  "maturity": "emerging",
+  "qualityScore": 0.75,
+  "maturity": "established",
   "relationships": {
     "hasPart": [
+      {
+        "id": "urn:ngm:class:zk-rollup",
+        "label": "ZK-Rollup"
+      },
+      {
+        "id": "urn:ngm:class:optimistic-rollup",
+        "label": "Optimistic Rollup"
+      },
       {
         "id": "urn:ngm:class:state-channel",
         "label": "State Channel"
@@ -26,19 +34,28 @@
         "label": "Sidechain"
       },
       {
-        "id": "urn:ngm:class:zero-knowledge-proof",
-        "label": "Zero-Knowledge Proof"
-      },
-      {
         "id": "urn:ngm:class:lightning-network",
         "label": "Lightning Network"
       }
     ],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:data-availability",
+        "label": "Data Availability"
+      },
+      {
+        "id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      }
+    ],
     "enables": [
       {
-        "id": "urn:ngm:class:de-fi",
-        "label": "DeFi"
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
       },
       {
         "id": "urn:ngm:class:blockchain-interoperability",
@@ -46,29 +63,81 @@
       },
       {
         "id": "urn:ngm:class:cross-chain-asset-transfer",
-        "label": "Cross Chain Asset Transfer"
+        "label": "Cross-Chain Asset Transfer"
+      },
+      {
+        "id": "urn:ngm:class:micropayment",
+        "label": "Micropayment"
+      },
+      {
+        "id": "urn:ngm:class:gas-optimisation",
+        "label": "Gas Optimisation"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:layer-1-blockchain",
+        "label": "Layer 1 Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:sharding",
+        "label": "Sharding"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-commitment",
+        "label": "Cryptographic Commitment"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:fraud-proof",
+        "label": "Fraud Proof"
+      },
+      {
+        "id": "urn:ngm:class:sequencer",
+        "label": "Sequencer"
+      },
+      {
+        "id": "urn:ngm:class:hash-time-locked-contract",
+        "label": "Hash Time-Locked Contract"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:layer2-scaling",
-        "label": "Layer2Scaling"
+        "id": "urn:ngm:class:data-availability-sampling",
+        "label": "Data Availability Sampling"
       },
       {
-        "id": "urn:ngm:class:lightning-and-similar-l2",
-        "label": "Lightning and Similar L2"
+        "id": "urn:ngm:class:eip-4844",
+        "label": "EIP-4844"
       },
       {
-        "id": "urn:ngm:class:gas-optimization",
-        "label": "Gas Optimization"
+        "id": "urn:ngm:class:bridge-protocol",
+        "label": "Bridge Protocol"
       }
     ]
   },

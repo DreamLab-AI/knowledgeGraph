@@ -5,18 +5,39 @@
   "public": true,
   "classIri": "urn:ngm:class:user-experience",
   "domain": "spatial-computing",
-  "definition": "User Experience (UX) is the totality of perceptions, responses, and outcomes that a person encounters when interacting with a product or system, spanning functional usability, aesthetic appeal, emotional resonance, accessibility, and long-term satisfaction. In spatial and immersive computing contexts, UX additionally encompasses physical comfort, motion sickness mitigation, spatial audio fidelity, haptic feedback, and the cognitive load imposed by three-dimensional interaction paradigms. UX design is an iterative discipline informed by user research, prototyping, and empirical evaluation methods including heuristic analysis and usability testing.",
+  "definition": "User Experience (UX) is the totality of perceptions, responses, and outcomes that a person encounters before, during, and after interacting with a product, service, or system \u2014 encompassing functional usability, aesthetic appeal, emotional resonance, accessibility, and long-term satisfaction. In spatial and immersive computing contexts, UX additionally addresses physical comfort, motion sickness mitigation, spatial audio fidelity, haptic feedback, and the cognitive load imposed by three-dimensional interaction paradigms. UX design is an iterative, evidence-based discipline drawing on human-computer interaction research, cognitive psychology, and ergonomics, and is formalised in ISO 9241-210 as encompassing all perceptions and responses resulting from actual or anticipated use. Empirical evaluation methods \u2014 including heuristic analysis, usability testing, eye tracking, and physiological measurement \u2014 ground UX practice in observable user behaviour.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:sc-interaction",
-      "label": "Interaction Technology"
+      "id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.72,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:usability",
+        "label": "Usability"
+      },
+      {
+        "id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      },
+      {
+        "id": "urn:ngm:class:information-architecture",
+        "label": "Information Architecture"
+      },
+      {
+        "id": "urn:ngm:class:interaction-design",
+        "label": "Interaction Design"
+      },
+      {
+        "id": "urn:ngm:class:visual-design",
+        "label": "Visual Design"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:user-research",
@@ -25,30 +46,116 @@
       {
         "id": "urn:ngm:class:human-factors",
         "label": "Human Factors"
+      },
+      {
+        "id": "urn:ngm:class:usability-testing",
+        "label": "Usability Testing"
+      },
+      {
+        "id": "urn:ngm:class:prototyping",
+        "label": "Prototyping"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:immersive-experience",
         "label": "Immersive Experience"
+      },
+      {
+        "id": "urn:ngm:class:user-engagement",
+        "label": "User Engagement"
+      },
+      {
+        "id": "urn:ngm:class:digital-accessibility",
+        "label": "Digital Accessibility"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:cognitive-load",
+        "label": "Cognitive Load"
+      },
+      {
+        "id": "urn:ngm:class:affordance",
+        "label": "Affordance"
+      },
+      {
+        "id": "urn:ngm:class:feedback-loop",
+        "label": "Feedback Loop"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:usability",
+        "label": "Usability"
+      },
+      {
+        "id": "urn:ngm:class:customer-experience",
+        "label": "Customer Experience"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "id": "urn:ngm:class:affective-computing",
+        "label": "Affective Computing"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:heuristic-evaluation",
+        "label": "Heuristic Evaluation"
+      },
+      {
+        "id": "urn:ngm:class:personas",
+        "label": "Personas"
+      },
+      {
+        "id": "urn:ngm:class:journey-mapping",
+        "label": "Journey Mapping"
+      }
+    ],
     "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-9241-210",
+        "label": "ISO 9241-210"
+      },
+      {
+        "id": "urn:ngm:class:wcag",
+        "label": "WCAG"
+      }
+    ],
+    "partOf": [
       {
         "id": "urn:ngm:class:human-computer-interaction",
         "label": "Human Computer Interaction"
       },
       {
-        "id": "urn:ngm:class:accessibility",
-        "label": "Accessibility"
+        "id": "urn:ngm:class:product-design",
+        "label": "Product Design"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:service-design",
+        "label": "Service Design"
+      },
+      {
+        "id": "urn:ngm:class:ergonomics",
+        "label": "Ergonomics"
+      },
+      {
+        "id": "urn:ngm:class:design-thinking",
+        "label": "Design Thinking"
       }
     ]
   },

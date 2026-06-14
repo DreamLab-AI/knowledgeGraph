@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:voting-mechanism",
   "domain": "blockchain",
-  "definition": "A voting mechanism is a formalised procedure by which token holders or other stakeholders express preferences or binding decisions on protocol upgrades, parameter changes, treasury allocation, or dispute resolution in a decentralised network. The design of a voting mechanism determines the balance between participation breadth, sybil resistance, plutocracy risk, and voter apathy; common variants include token-weighted voting, quadratic voting, conviction voting, and delegated representation through liquid democracy. The mechanism's properties directly shape the security and legitimacy of on-chain governance outcomes.",
+  "definition": "A voting mechanism is a formalised procedure by which participants in a collective system \u2014 such as token holders in a decentralised protocol, members of a cooperative, or delegates in a representative body \u2014 express preferences or binding decisions on resource allocation, parameter changes, protocol upgrades, or dispute resolution. The design of a voting mechanism encodes trade-offs between participation breadth, sybil resistance, plutocracy risk, voter apathy, and decisional legitimacy; canonical variants include token-weighted voting, quadratic voting, conviction voting, ranked-choice voting, and delegated liquid democracy. The chosen mechanism directly shapes the security, fairness, and perceived legitimacy of governance outcomes in both on-chain and off-chain contexts.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-governance-and-regulation",
@@ -13,46 +13,134 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
         "id": "urn:ngm:class:on-chain-voting",
-        "label": "On Chain Voting"
+        "label": "On-Chain Voting"
+      },
+      {
+        "id": "urn:ngm:class:off-chain-voting",
+        "label": "Off-Chain Voting"
       },
       {
         "id": "urn:ngm:class:token-weighted-voting",
         "label": "Token-Weighted Voting"
-      }
-    ],
-    "requires": [],
-    "enables": [
-      {
-        "id": "urn:ngm:class:on-chain-governance",
-        "label": "On-chain Governance"
-      }
-    ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
-      {
-        "id": "urn:ngm:class:dao-governance",
-        "label": "DAO Governance"
       },
+      {
+        "id": "urn:ngm:class:quadratic-voting",
+        "label": "Quadratic Voting"
+      },
+      {
+        "id": "urn:ngm:class:conviction-voting",
+        "label": "Conviction Voting"
+      },
+      {
+        "id": "urn:ngm:class:liquid-democracy",
+        "label": "Liquid Democracy"
+      }
+    ],
+    "requires": [
       {
         "id": "urn:ngm:class:governance-token",
         "label": "Governance Token"
       },
       {
-        "id": "urn:ngm:class:quadratic-voting",
-        "label": "Quadratic Voting"
+        "id": "urn:ngm:class:sybil-resistance",
+        "label": "Sybil Resistance"
+      },
+      {
+        "id": "urn:ngm:class:quorum",
+        "label": "Quorum"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:on-chain-governance",
+        "label": "On-Chain Governance"
+      },
+      {
+        "id": "urn:ngm:class:dao-governance",
+        "label": "DAO Governance"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-decision-making",
+        "label": "Decentralised Decision-Making"
+      },
+      {
+        "id": "urn:ngm:class:protocol-upgrade",
+        "label": "Protocol Upgrade"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:plutocratic-governance",
+        "label": "Plutocratic Governance"
+      },
+      {
+        "id": "urn:ngm:class:delegated-proof-of-stake",
+        "label": "Delegated Proof-of-Stake"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-work",
+        "label": "Proof of Work"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:collective-intelligence",
+        "label": "Collective Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:multi-agent-systems",
+        "label": "Multi-Agent Systems"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:snapshot-voting",
+        "label": "Snapshot Voting"
+      },
+      {
+        "id": "urn:ngm:class:timelock",
+        "label": "Timelock"
+      },
+      {
+        "id": "urn:ngm:class:multisig",
+        "label": "Multisig"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:social-choice-theory",
+        "label": "Social Choice Theory"
+      },
+      {
+        "id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      },
+      {
+        "id": "urn:ngm:class:mechanism-design",
+        "label": "Mechanism Design"
+      },
+      {
+        "id": "urn:ngm:class:treasury-management",
+        "label": "Treasury Management"
+      },
+      {
+        "id": "urn:ngm:class:governance-attack",
+        "label": "Governance Attack"
       }
     ]
   },

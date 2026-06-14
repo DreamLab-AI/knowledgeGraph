@@ -4,8 +4,8 @@
   "slug": "skeletal-animation",
   "public": true,
   "classIri": "urn:ngm:class:skeletal-animation",
-  "domain": "graphics",
-  "definition": "Skeletal animation is a character animation technique in which a hierarchical rig of bones (joints) defines the articulated structure of a character or creature, and mesh vertices are deformed by the weighted influence of surrounding bones through a process known as skinning. Artists author motion by keyframing or procedurally driving bone transforms over time; the underlying mesh deforms accordingly in real time on the GPU. Skeletal animation is the dominant method for animating characters in games, virtual reality, film visual effects, and virtual avatar systems due to its runtime efficiency, data compactness, and amenability to motion capture retargeting.",
+  "domain": "spatial-computing",
+  "definition": "Skeletal animation is a character animation technique in which a hierarchical rig of joints defines the articulated structure of a character or creature, and mesh vertices are deformed by the weighted influence of surrounding joints through a process known as skinning. Artists author motion by keyframing or procedurally driving joint transforms over time; the underlying mesh deforms accordingly in real time on the GPU via linear blend skinning or dual-quaternion skinning. The approach is the dominant method for animating characters in games, virtual reality, film visual effects, and virtual avatar systems due to its runtime efficiency, compact data representation, and amenability to motion capture retargeting and machine-learning-driven synthesis.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:character-animation",
@@ -13,11 +13,37 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
-  "maturity": "established",
+  "qualityScore": 0.74,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:character-rigging",
+        "label": "Character Rigging"
+      },
+      {
+        "id": "urn:ngm:class:linear-blend-skinning",
+        "label": "Linear Blend Skinning"
+      },
+      {
+        "id": "urn:ngm:class:animation-state-machine",
+        "label": "Animation State Machine"
+      },
+      {
+        "id": "urn:ngm:class:blend-tree",
+        "label": "Blend Tree"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:scene-graph",
+        "label": "Scene Graph"
+      },
+      {
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:avatar-animation",
@@ -25,17 +51,38 @@
       },
       {
         "id": "urn:ngm:class:real-time-character-animation",
-        "label": "Real Time Character Animation"
+        "label": "Real-Time Character Animation"
       },
       {
         "id": "urn:ngm:class:pose-estimation",
         "label": "Pose Estimation"
+      },
+      {
+        "id": "urn:ngm:class:facial-animation",
+        "label": "Facial Animation"
+      },
+      {
+        "id": "urn:ngm:class:virtual-production",
+        "label": "Virtual Production"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:neural-motion-synthesis",
+        "label": "Neural Motion Synthesis"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:biomechanical-simulation",
+        "label": "Biomechanical Simulation"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:inverse-kinematics",
@@ -46,16 +93,25 @@
         "label": "Motion Capture"
       },
       {
-        "id": "urn:ngm:class:character-rigging",
-        "label": "Character Rigging"
-      },
-      {
         "id": "urn:ngm:class:animation-retargeting",
         "label": "Animation Retargeting"
+      },
+      {
+        "id": "urn:ngm:class:forward-kinematics",
+        "label": "Forward Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:vertex-shader",
+        "label": "Vertex Shader"
       }
     ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:gltf-specification",
+        "label": "glTF Specification"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -73,6 +129,14 @@
       {
         "id": "urn:ngm:class:animation-controller",
         "label": "Animation Controller"
+      },
+      {
+        "id": "urn:ngm:class:morph-target-animation",
+        "label": "Morph Target Animation"
+      },
+      {
+        "id": "urn:ngm:class:level-of-detail",
+        "label": "Level of Detail"
       }
     ]
   },

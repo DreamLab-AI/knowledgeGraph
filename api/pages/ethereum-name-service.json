@@ -5,39 +5,133 @@
   "public": true,
   "classIri": "urn:ngm:class:ethereum-smart-contract-platform-name-service",
   "domain": "blockchain",
-  "definition": "A decentralised naming system on Ethereum that maps human-readable names to addresses and other resources using smart contracts.",
+  "definition": "The Ethereum Name Service (ENS) is a decentralised, open-source naming protocol deployed on Ethereum that maps human-readable names (e.g. 'alice.eth') to machine-readable identifiers including wallet addresses, content hashes, and arbitrary metadata stored on-chain. It operates through a hierarchy of smart contracts \u2014 a central registry recording ownership and resolver assignments, and resolver contracts that translate names to resources according to standardised ERC specifications. ENS names are minted as ERC-721 non-fungible tokens, granting cryptographic ownership without reliance on a centralised registrar, and extending DNS-compatible reverse resolution so on-chain addresses can be presented as readable identities. The protocol has become the dominant blockchain naming infrastructure on Ethereum, with millions of registered names and integrations across wallets, browsers, and decentralised applications.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ethereum-smart-contract-platform",
-      "label": "Ethereum"
+      "id": "urn:ngm:class:decentralised-naming-system",
+      "label": "Decentralised Naming System"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.74,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:ethereum-smart-contract-platform-smart-contracts",
-        "label": "Ethereum Smart Contracts"
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:non-fungible-token",
+        "label": "Non-Fungible Token"
       }
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:identity",
-        "label": "Identity"
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "id": "urn:ngm:class:human-readable-address",
+        "label": "Human-Readable Address"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-application",
+        "label": "Decentralised Application"
+      },
+      {
+        "id": "urn:ngm:class:web3-wallet",
+        "label": "Web3 Wallet"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:erc-137",
+        "label": "ERC-137"
+      },
+      {
+        "id": "urn:ngm:class:erc-721",
+        "label": "ERC-721"
+      },
+      {
+        "id": "urn:ngm:class:erc-1185",
+        "label": "ERC-1185"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:domain-name-system",
+        "label": "Domain Name System"
+      },
+      {
+        "id": "urn:ngm:class:unstoppable-domains",
+        "label": "Unstoppable Domains"
+      },
+      {
+        "id": "urn:ngm:class:handshake-protocol",
+        "label": "Handshake Protocol"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self-Sovereign Identity"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-credential",
+        "label": "Verifiable Credential"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public Key Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:namehash-algorithm",
+        "label": "Namehash Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:ethereum-transaction",
+        "label": "Ethereum Transaction"
+      }
+    ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ethereum-foundation",
+        "label": "Ethereum Foundation"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "id": "urn:ngm:class:ipfs",
+        "label": "IPFS"
+      },
+      {
+        "id": "urn:ngm:class:did-decentralised-identifier",
+        "label": "Decentralised Identifier"
+      },
+      {
+        "id": "urn:ngm:class:ethereum-improvement-proposal",
+        "label": "Ethereum Improvement Proposal"
+      },
+      {
+        "id": "urn:ngm:class:reverse-resolution",
+        "label": "Reverse Resolution"
+      }
+    ]
   },
   "wikilinks": [
     {

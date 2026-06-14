@@ -51,7 +51,7 @@ public:: true
   "@type": "Class",
   "label": "GPU Cluster",
   "definition": "A GPU cluster is a group of interconnected computers each equipped with graphics processing units, used together for parallel computation. Such clusters are central to training large AI models and high-performance computing.",
-  "domain": "computing",
+  "domain": "infrastructure",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

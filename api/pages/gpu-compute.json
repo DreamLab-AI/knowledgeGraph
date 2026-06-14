@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:gpu-compute",
   "domain": "artificial-intelligence",
-  "definition": "GPU Compute refers to the use of Graphics Processing Units for general-purpose massively parallel numerical computation (GPGPU), exploiting the GPU's thousands of shader cores to execute data-parallel workloads \u2014 principally matrix multiplications and convolutions \u2014 at throughputs far exceeding those achievable on CPUs. GPU compute is the dominant hardware substrate for training and inference of deep neural networks, enabled by programming frameworks such as CUDA and ROCm that expose the GPU's parallel execution model to software developers. It underpins the large-scale computation required for training large language models, diffusion models, and other foundation models.",
+  "definition": "GPU Compute (General-Purpose GPU computing, GPGPU) is the practice of executing data-parallel numerical workloads on Graphics Processing Units originally designed for rasterising 3D geometry, exploiting their thousands of shader cores and high-bandwidth memory to perform tensor operations \u2014 principally matrix multiplications and convolutions \u2014 at throughputs far exceeding those achievable on CPUs. Programming models such as NVIDIA CUDA and AMD ROCm expose the GPU's Single Instruction Multiple Data (SIMD) execution model to software, enabling general-purpose scientific, engineering, and machine-learning workloads to run directly on the GPU die. GPU compute is the dominant hardware substrate for training and inference of deep neural networks, large language models, and diffusion models, with specialised Tensor Core and matrix-engine hardware units providing mixed-precision acceleration orders of magnitude beyond scalar compute. The field now extends to heterogeneous cluster computing, where thousands of GPUs are interconnected via NVLink and high-speed fabrics to train models at scales that would be infeasible on any single device.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-infrastructure",
@@ -13,11 +13,33 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:tensor-core",
+        "label": "Tensor Core"
+      },
+      {
+        "id": "urn:ngm:class:cuda-kernel",
+        "label": "CUDA Kernel"
+      },
+      {
+        "id": "urn:ngm:class:high-bandwidth-memory",
+        "label": "High Bandwidth Memory"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cuda",
+        "label": "CUDA"
+      },
+      {
+        "id": "urn:ngm:class:nvlink",
+        "label": "NVLink"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:distributed-training",
@@ -26,33 +48,93 @@
       {
         "id": "urn:ngm:class:model-training",
         "label": "Model Training"
+      },
+      {
+        "id": "urn:ngm:class:neural-network-inference",
+        "label": "Neural Network Inference"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:scientific-computing",
+        "label": "Scientific Computing"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [
-      {
-        "id": "urn:ngm:class:cuda",
-        "label": "CUDA"
-      }
-    ],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
+    "contrastsWith": [
       {
         "id": "urn:ngm:class:tpu",
         "label": "TPU"
       },
       {
+        "id": "urn:ngm:class:cpu-compute",
+        "label": "CPU Compute"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "id": "urn:ngm:class:ray-tracing",
+        "label": "Ray Tracing"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cuda",
+        "label": "CUDA"
+      },
+      {
+        "id": "urn:ngm:class:rocm",
+        "label": "ROCm"
+      },
+      {
+        "id": "urn:ngm:class:mixed-precision-training",
+        "label": "Mixed-Precision Training"
+      },
+      {
+        "id": "urn:ngm:class:parallel-computing",
+        "label": "Parallel Computing"
+      }
+    ],
+    "supports": [
+      {
         "id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning"
       },
       {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
+      },
+      {
         "id": "urn:ngm:class:machine-learning-discipline-infrastructure",
         "label": "Machine Learning Infrastructure"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:energy-consumption",
+        "label": "Energy Consumption"
+      },
+      {
+        "id": "urn:ngm:class:data-centre",
+        "label": "Data Centre"
+      },
+      {
+        "id": "urn:ngm:class:model-parallelism",
+        "label": "Model Parallelism"
       }
     ]
   },

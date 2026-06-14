@@ -4,7 +4,7 @@
   "slug": "foundation-model-layer",
   "public": true,
   "classIri": "urn:ngm:class:foundation-model-layer",
-  "domain": "foundation-model",
+  "domain": "ai",
   "definition": "The Foundation Model Layer is the stratum that holds large, broadly pretrained models intended for adaptation to many downstream tasks. It sits above the Training Layer that produced it and below the Model and Inference Layers that specialise and serve it. It contains base model weights, pretraining configurations, and adaptation interfaces.",
   "subClassOf": [
     {

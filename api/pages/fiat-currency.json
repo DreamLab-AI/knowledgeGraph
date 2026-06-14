@@ -4,8 +4,8 @@
   "slug": "fiat-currency",
   "public": true,
   "classIri": "urn:ngm:class:fiat-currency",
-  "domain": "blockchain",
-  "definition": "Money issued by a state and declared legal tender, whose value derives from government authority and public confidence rather than from a physical commodity.",
+  "domain": "finance",
+  "definition": "Fiat currency is money issued and declared legal tender by a sovereign government or central bank, whose value derives from state authority, institutional trust, and collective public acceptance rather than from any intrinsic commodity backing. Unlike commodity money, fiat currency is not convertible into a fixed quantity of gold, silver, or other physical assets at a legally guaranteed rate. Its purchasing power is maintained through monetary policy instruments \u2014 interest rates, reserve requirements, open-market operations \u2014 and is subject to inflation, deflation, and exchange-rate dynamics driven by macroeconomic conditions. Fiat currency forms the foundational settlement layer for modern banking systems, international trade, and the reserve benchmarks against which digital assets are priced.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:money",
@@ -13,26 +13,126 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
-  "maturity": "established",
+  "qualityScore": 0.72,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:banknote",
+        "label": "Banknote"
+      },
+      {
+        "id": "urn:ngm:class:reserve-currency",
+        "label": "Reserve Currency"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:central-bank",
+        "label": "Central Bank"
+      },
+      {
+        "id": "urn:ngm:class:legal-tender",
+        "label": "Legal Tender"
+      },
+      {
+        "id": "urn:ngm:class:monetary-policy",
+        "label": "Monetary Policy"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:stablecoin",
         "label": "Stablecoin"
+      },
+      {
+        "id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      },
+      {
+        "id": "urn:ngm:class:fractional-reserve-banking",
+        "label": "Fractional Reserve Banking"
+      },
+      {
+        "id": "urn:ngm:class:international-trade",
+        "label": "International Trade"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:government-authority",
+        "label": "Government Authority"
+      },
+      {
+        "id": "urn:ngm:class:institutional-trust",
+        "label": "Institutional Trust"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:commodity-money",
+        "label": "Commodity Money"
+      },
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:gold-standard",
+        "label": "Gold Standard"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:tokenisation",
+        "label": "Tokenisation"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:swift",
+        "label": "SWIFT"
+      },
+      {
+        "id": "urn:ngm:class:real-time-gross-settlement",
+        "label": "Real-Time Gross Settlement"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:monetary-system",
+        "label": "Monetary System"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:inflation",
+        "label": "Inflation"
+      },
+      {
+        "id": "urn:ngm:class:exchange-rate",
+        "label": "Exchange Rate"
+      },
+      {
+        "id": "urn:ngm:class:foreign-exchange-market",
+        "label": "Foreign Exchange Market"
+      },
+      {
+        "id": "urn:ngm:class:usd",
+        "label": "USD"
+      }
+    ]
   },
   "wikilinks": [
     {

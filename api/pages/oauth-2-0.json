@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:oauth-2-0",
   "domain": "infrastructure",
-  "definition": "OAuth 2.0 is an open authorisation framework (RFC 6749) that allows resource owners to grant third-party clients scoped, time-limited access to their resources hosted on a resource server, without sharing credentials. The framework defines four grant types\u2014authorisation code, implicit (deprecated), resource owner password credentials, and client credentials\u2014each suited to different client trust levels and deployment contexts. OAuth 2.0 is the foundation on which OpenID Connect (OIDC) builds to add federated identity and authentication capabilities.",
+  "definition": "OAuth 2.0 is an open authorisation framework standardised as RFC 6749 (2012) that enables a resource owner to delegate scoped, time-limited access to their protected resources on a resource server to a third-party client application, without exposing credentials. The framework separates four distinct roles\u2014resource owner, client, authorisation server, and resource server\u2014and defines multiple grant types (authorisation code, client credentials, device code, refresh token) suited to different trust levels and client profiles. Access tokens with explicit scopes enforce the principle of least privilege, while extensions such as PKCE (RFC 7636), JWT access tokens (RFC 9068), token introspection (RFC 7662), and token revocation (RFC 7009) complete the lifecycle. OAuth 2.0 serves as the foundation upon which OpenID Connect 1.0 adds federated authentication, together underpinning modern Identity and Access Management platforms and Zero Trust Architecture policies.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-security-and-identity",
@@ -13,14 +13,43 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:authorisation-code-flow",
+        "label": "Authorisation Code Flow"
+      },
+      {
+        "id": "urn:ngm:class:client-credentials-flow",
+        "label": "Client Credentials Flow"
+      },
+      {
+        "id": "urn:ngm:class:refresh-token",
+        "label": "Refresh Token"
+      },
+      {
+        "id": "urn:ngm:class:access-token",
+        "label": "Access Token"
+      },
+      {
+        "id": "urn:ngm:class:pkce",
+        "label": "PKCE"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:authentication",
         "label": "Authentication"
+      },
+      {
+        "id": "urn:ngm:class:https",
+        "label": "HTTPS"
+      },
+      {
+        "id": "urn:ngm:class:json-web-token",
+        "label": "JSON Web Token"
       }
     ],
     "enables": [
@@ -31,15 +60,81 @@
       {
         "id": "urn:ngm:class:identity-federation",
         "label": "Identity Federation"
+      },
+      {
+        "id": "urn:ngm:class:delegated-authorisation",
+        "label": "Delegated Authorisation"
+      },
+      {
+        "id": "urn:ngm:class:api-security",
+        "label": "API Security"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:rfc-6749",
+        "label": "RFC 6749"
+      },
+      {
+        "id": "urn:ngm:class:rfc-6750",
+        "label": "RFC 6750"
+      },
+      {
+        "id": "urn:ngm:class:rfc-7636",
+        "label": "RFC 7636"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:oauth-1-0",
+        "label": "OAuth 1.0"
+      },
+      {
+        "id": "urn:ngm:class:api-key-authentication",
+        "label": "API Key Authentication"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:bearer-token",
+        "label": "Bearer Token"
+      },
+      {
+        "id": "urn:ngm:class:authorisation-server",
+        "label": "Authorisation Server"
+      },
+      {
+        "id": "urn:ngm:class:scope",
+        "label": "Scope"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      },
+      {
+        "id": "urn:ngm:class:least-privilege",
+        "label": "Least Privilege"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -47,8 +142,16 @@
         "label": "Identity and Access Management"
       },
       {
-        "id": "urn:ngm:class:zero-trust-architecture",
-        "label": "Zero Trust Architecture"
+        "id": "urn:ngm:class:openid-connect",
+        "label": "OpenID Connect"
+      },
+      {
+        "id": "urn:ngm:class:saml",
+        "label": "SAML"
+      },
+      {
+        "id": "urn:ngm:class:federated-identity",
+        "label": "Federated Identity"
       }
     ]
   },

@@ -4,20 +4,50 @@
   "slug": "mechanism-design",
   "public": true,
   "classIri": "urn:ngm:class:mechanism-design",
-  "domain": "blockchain",
-  "definition": "Mechanism design, sometimes called reverse game theory, is a branch of economics and game theory concerned with constructing the rules and incentive structures of strategic interactions so that self-interested participants produce collectively desirable outcomes. Rather than analysing a given game, mechanism design starts from a desired social choice function and works backwards to identify what game structure (mechanisms) would implement it as an equilibrium strategy for rational agents. In blockchain and decentralised finance contexts, mechanism design governs tokenomics, automated market maker formulas, auction protocols, validator incentive structures, and governance voting systems.",
+  "domain": "governance",
+  "definition": "Mechanism design, sometimes called reverse game theory, is a field of economics and game theory concerned with constructing the rules, incentive structures, and institutional frameworks of strategic interactions so that self-interested participants collectively produce socially desirable outcomes. Starting from a target social choice function rather than from a given game, the designer works backwards to identify what game structure (the mechanism) would implement that function as an equilibrium for rational agents. Mechanism design underpins auction theory, voting systems, market design, and cryptoeconomic protocol engineering, and has been central to Nobel-Prize-recognised work by Hurwicz, Maskin, and Myerson. Its principles govern token incentive structures, automated market makers, governance protocols, and public-goods funding schemes across decentralised systems.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:bc-defi-and-economics",
-      "label": "DeFi and Economics"
+      "id": "urn:ngm:class:game-theory",
+      "label": "Game Theory"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:revelation-principle",
+        "label": "Revelation Principle"
+      },
+      {
+        "id": "urn:ngm:class:incentive-compatibility",
+        "label": "Incentive Compatibility"
+      },
+      {
+        "id": "urn:ngm:class:strategy-proofness",
+        "label": "Strategy-Proofness"
+      },
+      {
+        "id": "urn:ngm:class:social-choice-function",
+        "label": "Social Choice Function"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      },
+      {
+        "id": "urn:ngm:class:information-asymmetry",
+        "label": "Information Asymmetry"
+      },
+      {
+        "id": "urn:ngm:class:rational-agent",
+        "label": "Rational Agent"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:tokenomics",
@@ -26,13 +56,65 @@
       {
         "id": "urn:ngm:class:incentive-alignment",
         "label": "Incentive Alignment"
+      },
+      {
+        "id": "urn:ngm:class:on-chain-governance",
+        "label": "On-chain Governance"
+      },
+      {
+        "id": "urn:ngm:class:auction-theory",
+        "label": "Auction Theory"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:vickrey-clarke-groves-mechanism",
+        "label": "Vickrey-Clarke-Groves Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:dominant-strategy-equilibrium",
+        "label": "Dominant Strategy Equilibrium"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:algorithmic-game-theory",
+        "label": "Algorithmic Game Theory"
+      },
+      {
+        "id": "urn:ngm:class:behavioral-economics",
+        "label": "Behavioral Economics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:multi-agent-systems",
+        "label": "Multi-Agent Systems"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:cryptoeconomics",
+        "label": "Cryptoeconomics"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:nash-equilibrium",
+        "label": "Nash Equilibrium"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-game",
+        "label": "Bayesian Game"
+      },
+      {
+        "id": "urn:ngm:class:contract-theory",
+        "label": "Contract Theory"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
@@ -46,8 +128,12 @@
         "label": "Voting Mechanism"
       },
       {
-        "id": "urn:ngm:class:on-chain-governance",
-        "label": "On-chain Governance"
+        "id": "urn:ngm:class:public-goods",
+        "label": "Public Goods"
+      },
+      {
+        "id": "urn:ngm:class:market-design",
+        "label": "Market Design"
       }
     ]
   },

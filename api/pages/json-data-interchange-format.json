@@ -5,46 +5,139 @@
   "public": true,
   "classIri": "urn:ngm:class:json-data-interchange-format-data-interchange-format",
   "domain": "infrastructure",
-  "definition": "JSON (JavaScript Object Notation) is a lightweight, human-readable data-interchange format derived from JavaScript object syntax. It provides a universal text-based representation for structured data using key-value pairs and ordered lists, serving as the predominant wire format for REST APIs, configuration files, and data-exchange layers in modern distributed systems and AI pipelines.",
+  "definition": "JSON (JavaScript Object Notation) is a lightweight, human-readable, language-agnostic data-interchange format standardised as ECMA-404 and RFC 8259, built on two universal data structures: a collection of name/value pairs (objects) and an ordered list of values (arrays). Originally derived from JavaScript object-literal syntax by Douglas Crockford in the early 2000s, JSON has become the dominant wire format for REST APIs, configuration files, inter-service messaging, and AI pipeline payloads due to its minimal syntactic overhead, broad parser availability across every major programming language, and native mapping to in-memory data structures. Its strict subset relationship to JavaScript and its legibility to both humans and machines distinguishes it from predecessor formats such as XML while enabling seamless extension into semantic-web formats such as JSON-LD.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:infra-data-management",
-      "label": "Data Management"
+      "id": "urn:ngm:class:data-serialisation-format",
+      "label": "Data Serialisation Format"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:json-object",
+        "label": "JSON Object"
+      },
+      {
+        "id": "urn:ngm:class:json-array",
+        "label": "JSON Array"
+      },
+      {
+        "id": "urn:ngm:class:json-schema",
+        "label": "JSON Schema"
+      }
+    ],
     "requires": [],
     "enables": [
       {
-        "id": "urn:ngm:class:json-data-interchange-format-data-interchange-format-ld",
+        "id": "urn:ngm:class:json-ld",
         "label": "JSON-LD"
+      },
+      {
+        "id": "urn:ngm:class:rest-api",
+        "label": "REST API"
       },
       {
         "id": "urn:ngm:class:knowledge-graph",
         "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:web-api",
+        "label": "Web API"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:ecma-404",
+        "label": "ECMA-404"
+      },
+      {
+        "id": "urn:ngm:class:rfc-8259",
+        "label": "RFC 8259"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:xml",
+        "label": "XML"
+      },
+      {
+        "id": "urn:ngm:class:yaml",
+        "label": "YAML"
+      },
+      {
+        "id": "urn:ngm:class:protocol-buffers",
+        "label": "Protocol Buffers"
+      },
+      {
+        "id": "urn:ngm:class:messagepack",
+        "label": "MessagePack"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      },
+      {
+        "id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "id": "urn:ngm:class:rdf",
+        "label": "RDF"
+      },
+      {
+        "id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
+      }
+    ],
     "uses": [
+      {
+        "id": "urn:ngm:class:utf-8-encoding",
+        "label": "UTF-8 Encoding"
+      },
+      {
+        "id": "urn:ngm:class:unicode",
+        "label": "Unicode"
+      }
+    ],
+    "supports": [
       {
         "id": "urn:ngm:class:api-standard",
         "label": "API Standard"
+      },
+      {
+        "id": "urn:ngm:class:microservices-architecture",
+        "label": "Microservices Architecture"
+      },
+      {
+        "id": "urn:ngm:class:configuration-management",
+        "label": "Configuration Management"
       }
     ],
-    "supports": [],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:ontology",
-        "label": "Ontology"
+        "id": "urn:ngm:class:data-interchange",
+        "label": "Data Interchange"
+      },
+      {
+        "id": "urn:ngm:class:serialisation",
+        "label": "Serialisation"
+      },
+      {
+        "id": "urn:ngm:class:data-format",
+        "label": "Data Format"
+      },
+      {
+        "id": "urn:ngm:class:javascript",
+        "label": "JavaScript"
       }
     ]
   },

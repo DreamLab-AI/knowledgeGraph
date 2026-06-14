@@ -59,7 +59,7 @@ public:: true
   "@type": "Class",
   "label": "Statistical Learning Theory",
   "definition": "A framework that studies the conditions under which algorithms can generalise from finite training data to unseen data, providing theoretical bounds on prediction error.",
-  "domain": "mathematics",
+  "domain": "machine-learning",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

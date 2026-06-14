@@ -4,8 +4,8 @@
   "slug": "open-source",
   "public": true,
   "classIri": "urn:ngm:class:open-source",
-  "domain": "general",
-  "definition": "Open source refers to software whose source code is made available under a licence that permits use, study, modification, and redistribution. It supports collaborative development.",
+  "domain": "distributed-collaboration",
+  "definition": "Open source designates software whose source code is released under a licence conforming to the Open Source Definition, granting anyone the rights to use, study, modify, and redistribute the code and derivative works. It is a development paradigm rooted in decentralised, community-driven collaboration where peer review, transparent workflows, and shared governance replace proprietary, closed development. Open source underpins the majority of modern computing infrastructure \u2014 from operating systems and compilers to cloud platforms and AI frameworks \u2014 and has expanded beyond software into hardware designs, datasets, models, and scientific research artefacts. Licences range from permissive (MIT, Apache 2.0) to copyleft (GPL, AGPL), with the choice of licence shaping how downstream users may integrate the code.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:software-development",
@@ -13,26 +13,143 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
-  "maturity": "established",
+  "qualityScore": 0.75,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:open-source-licence",
+        "label": "Open Source Licence"
+      },
+      {
+        "id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      },
+      {
+        "id": "urn:ngm:class:code-review",
+        "label": "Code Review"
+      },
+      {
+        "id": "urn:ngm:class:package-management",
+        "label": "Package Management"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      },
+      {
+        "id": "urn:ngm:class:open-source-licence",
+        "label": "Open Source Licence"
+      }
+    ],
     "enables": [
       {
-        "id": "urn:ngm:class:software-development",
-        "label": "Software Development"
+        "id": "urn:ngm:class:collaborative-development",
+        "label": "Collaborative Development"
+      },
+      {
+        "id": "urn:ngm:class:continuous-integration",
+        "label": "Continuous Integration"
+      },
+      {
+        "id": "urn:ngm:class:reproducible-research",
+        "label": "Reproducible Research"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-transparency",
+        "label": "Supply Chain Transparency"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:proprietary-software",
+        "label": "Proprietary Software"
+      },
+      {
+        "id": "urn:ngm:class:closed-source",
+        "label": "Closed Source"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:open-source-ai",
+        "label": "Open Source AI"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:git",
+        "label": "Git"
+      },
+      {
+        "id": "urn:ngm:class:continuous-integration",
+        "label": "Continuous Integration"
+      },
+      {
+        "id": "urn:ngm:class:issue-tracking",
+        "label": "Issue Tracking"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:decentralised-governance",
+        "label": "Decentralised Governance"
+      },
+      {
+        "id": "urn:ngm:class:software-supply-chain",
+        "label": "Software Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:ai-model-transparency",
+        "label": "AI Model Transparency"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:open-source-initiative",
+        "label": "Open Source Initiative"
+      },
+      {
+        "id": "urn:ngm:class:free-software-foundation",
+        "label": "Free Software Foundation"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:software-development",
+        "label": "Software Development"
+      },
+      {
+        "id": "urn:ngm:class:commons-based-peer-production",
+        "label": "Commons-Based Peer Production"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:inner-source",
+        "label": "Inner Source"
+      },
+      {
+        "id": "urn:ngm:class:software-bill-of-materials",
+        "label": "Software Bill of Materials"
+      },
+      {
+        "id": "urn:ngm:class:open-hardware",
+        "label": "Open Hardware"
+      }
+    ]
   },
   "wikilinks": [
     {

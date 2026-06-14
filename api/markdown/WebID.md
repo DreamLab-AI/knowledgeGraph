@@ -21,7 +21,7 @@ public:: true
   "@type": "Class",
   "label": "WebID",
   "definition": "WebID is a decentralised identity mechanism in which a person or agent is identified by an HTTP(S) URI that dereferences to a machine-readable profile document describing them in RDF. Combined with authentication methods such as WebID-TLS or WebID-OIDC, it lets users prove control of their identifier without a central identity provider. WebID is a foundational building block of the Solid project and the broader linked-data web, enabling user-controlled identity, profiles, and access control across decentralised applications.",
-  "domain": "identity",
+  "domain": "security",
   "maturity": "emerging",
   "subClassOf": [{"@id": "urn:ngm:class:decentralized-identity", "label": "Decentralized Identity"}],
   "relations": {

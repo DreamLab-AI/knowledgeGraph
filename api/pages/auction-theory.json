@@ -4,8 +4,8 @@
   "slug": "auction-theory",
   "public": true,
   "classIri": "urn:ngm:class:auction-theory",
-  "domain": "economics",
-  "definition": "A branch of economics and game theory that studies how auctions allocate goods and set prices under different rules and information conditions. It analyses bidder behaviour and the properties of auction formats.",
+  "domain": "finance",
+  "definition": "Auction theory is a branch of applied mathematics, economics, and game theory that analyses competitive bidding mechanisms through which goods, services, or rights are allocated to participants. It characterises how auction format rules (e.g. English, Dutch, Vickrey), information structure (private vs. common values), and bidder strategy interact to determine allocative efficiency, revenue, and equilibrium outcomes. The field provides formal tools for designing mechanisms that incentivise truthful bidding, prevent collusion, and optimise social welfare or seller revenue. Foundational results include the Revenue Equivalence Theorem and optimal auction design frameworks due to Myerson.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:game-theory",
@@ -13,31 +13,138 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.75,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:english-auction",
+        "label": "English Auction"
+      },
+      {
+        "id": "urn:ngm:class:dutch-auction",
+        "label": "Dutch Auction"
+      },
+      {
+        "id": "urn:ngm:class:vickrey-auction",
+        "label": "Vickrey Auction"
+      },
+      {
+        "id": "urn:ngm:class:combinatorial-auction",
+        "label": "Combinatorial Auction"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:game-theory",
         "label": "Game Theory"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
+        "id": "urn:ngm:class:information-asymmetry",
+        "label": "Information Asymmetry"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:gas-mechanism",
         "label": "Gas Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:spectrum-auction",
+        "label": "Spectrum Auction"
+      },
+      {
+        "id": "urn:ngm:class:programmatic-advertising",
+        "label": "Programmatic Advertising"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:information-theory",
+        "label": "Information Theory"
+      },
+      {
+        "id": "urn:ngm:class:probability-theory",
+        "label": "Probability Theory"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:posted-price-mechanism",
+        "label": "Posted Price Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:negotiation",
+        "label": "Negotiation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:multi-agent-system",
+        "label": "Multi-Agent System"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:nash-equilibrium",
+        "label": "Nash Equilibrium"
+      },
+      {
+        "id": "urn:ngm:class:incentive-compatibility",
+        "label": "Incentive Compatibility"
+      },
+      {
+        "id": "urn:ngm:class:mechanism-design",
+        "label": "Mechanism Design"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:mechanism-design",
+        "label": "Mechanism Design"
+      },
+      {
+        "id": "urn:ngm:class:economics",
+        "label": "Economics"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:market-design",
+        "label": "Market Design"
+      },
+      {
+        "id": "urn:ngm:class:optimal-control",
+        "label": "Optimal Control"
+      },
+      {
+        "id": "urn:ngm:class:revenue-equivalence",
+        "label": "Revenue Equivalence"
+      }
+    ]
   },
   "wikilinks": [
     {

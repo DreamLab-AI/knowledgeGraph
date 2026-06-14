@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:gpu-computing",
   "domain": "ai",
-  "definition": "GPU Computing is the use of graphics processing units as massively parallel co-processors to accelerate general-purpose computational workloads beyond rendering. Modern GPUs contain thousands of shader cores organised into streaming multiprocessors capable of executing thousands of threads simultaneously, making them ideal for data-parallel algorithms in deep learning training, scientific simulation, and signal processing. Frameworks such as CUDA and OpenCL expose this parallelism to application developers. GPU computing has become the primary driver of progress in large-scale machine learning, enabling the training of models with hundreds of billions of parameters.",
+  "definition": "GPU Computing is the use of graphics processing units as massively parallel co-processors to accelerate general-purpose computational workloads beyond rendering. Modern GPUs contain thousands of shader cores organised into streaming multiprocessors capable of executing thousands of threads simultaneously, making them ideal for data-parallel algorithms in deep learning training, scientific simulation, and signal processing. Frameworks such as CUDA and OpenCL expose this parallelism to application developers through a hierarchical thread and memory model. GPU computing has become the primary accelerator substrate for large-scale machine learning, high-performance computing, and increasingly for inference serving at cloud scale.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:hardware-acceleration",
@@ -13,11 +13,24 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.75,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:high-bandwidth-memory",
+        "label": "High-Bandwidth Memory"
+      },
+      {
+        "id": "urn:ngm:class:gpu-driver",
+        "label": "GPU Driver"
+      },
+      {
+        "id": "urn:ngm:class:interconnect-fabric",
+        "label": "Interconnect Fabric"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:deep-learning",
@@ -30,16 +43,54 @@
       {
         "id": "urn:ngm:class:high-performance-computing",
         "label": "High-Performance Computing"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:neural-network-inference",
+        "label": "Neural Network Inference"
+      },
+      {
+        "id": "urn:ngm:class:scientific-computing",
+        "label": "Scientific Computing"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:tensor-processing-unit",
+        "label": "Tensor Processing Unit"
+      },
+      {
+        "id": "urn:ngm:class:cpu-computing",
+        "label": "CPU Computing"
+      },
+      {
+        "id": "urn:ngm:class:field-programmable-gate-array",
+        "label": "Field-Programmable Gate Array"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:cuda",
         "label": "CUDA"
+      },
+      {
+        "id": "urn:ngm:class:opencl",
+        "label": "OpenCL"
       },
       {
         "id": "urn:ngm:class:parallel-processing",
@@ -48,6 +99,14 @@
       {
         "id": "urn:ngm:class:compute-shader",
         "label": "Compute Shader"
+      },
+      {
+        "id": "urn:ngm:class:triton-compiler",
+        "label": "Triton Compiler"
+      },
+      {
+        "id": "urn:ngm:class:mixed-precision-training",
+        "label": "Mixed-Precision Training"
       }
     ],
     "supports": [],
@@ -59,16 +118,20 @@
         "label": "GPU Compute"
       },
       {
-        "id": "urn:ngm:class:tensor-processing-unit",
-        "label": "Tensor Processing Unit"
-      },
-      {
         "id": "urn:ngm:class:inference-hardware",
         "label": "Inference Hardware"
       },
       {
         "id": "urn:ngm:class:render-pipeline",
         "label": "Render Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:model-parallelism",
+        "label": "Model Parallelism"
+      },
+      {
+        "id": "urn:ngm:class:nvlink",
+        "label": "NVLink"
       }
     ]
   },

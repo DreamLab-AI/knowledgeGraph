@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:nist-cybersecurity-framework",
   "domain": "security",
-  "definition": "The NIST Cybersecurity Framework (CSF) is a voluntary risk-based framework published by the US National Institute of Standards and Technology that provides organisations with a common taxonomy and structured approach for managing cybersecurity risk. It organises security activities around six core functions\u2014Govern, Identify, Protect, Detect, Respond, and Recover\u2014each decomposed into categories and subcategories aligned to industry standards. Version 2.0, published in 2024, added the Govern function and broadened applicability beyond critical infrastructure to all sectors and organisation sizes globally. The framework is widely adopted as a baseline for cybersecurity programme assessment and communication with leadership.",
+  "definition": "The NIST Cybersecurity Framework (CSF) is a voluntary, outcomes-based risk management framework published by the US National Institute of Standards and Technology that provides organisations with a common taxonomy and structured approach for managing cybersecurity risk across sectors. It organises security activities around six core functions\u2014Govern, Identify, Protect, Detect, Respond, and Recover\u2014each decomposed into categories and subcategories cross-referenced to industry standards including ISO/IEC 27001, NIST SP 800-53, and COBIT. Version 2.0, released in February 2024, formalised the Govern function and broadened applicability beyond critical infrastructure to all organisation types and sizes globally. The framework is widely adopted as a baseline for cybersecurity programme assessment, board-level communication, supply-chain risk management, and regulatory compliance alignment.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:security-framework",
@@ -13,26 +13,105 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
-  "maturity": "established",
+  "qualityScore": 0.76,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:cybersecurity-framework-core",
+        "label": "Cybersecurity Framework Core"
+      },
+      {
+        "id": "urn:ngm:class:cybersecurity-framework-tiers",
+        "label": "Cybersecurity Framework Tiers"
+      },
+      {
+        "id": "urn:ngm:class:cybersecurity-framework-profile",
+        "label": "Cybersecurity Framework Profile"
+      },
+      {
+        "id": "urn:ngm:class:cybersecurity-framework-govern-function",
+        "label": "Cybersecurity Framework Govern Function"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "id": "urn:ngm:class:asset-inventory",
+        "label": "Asset Inventory"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:incident-response",
         "label": "Incident Response"
       },
       {
-        "id": "urn:ngm:class:risk-assessment",
-        "label": "Risk Assessment"
+        "id": "urn:ngm:class:supply-chain-risk-management",
+        "label": "Supply Chain Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:security-governance",
+        "label": "Security Governance"
+      },
+      {
+        "id": "urn:ngm:class:threat-detection",
+        "label": "Threat Detection"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:nist-sp-800-53",
+        "label": "NIST SP 800-53"
+      },
+      {
+        "id": "urn:ngm:class:vulnerability-management",
+        "label": "Vulnerability Management"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:cybersecurity-risk-management",
+        "label": "Cybersecurity Risk Management"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:iso-iec-27001",
+        "label": "ISO/IEC 27001"
+      },
+      {
+        "id": "urn:ngm:class:soc-2",
+        "label": "SOC 2"
+      },
+      {
+        "id": "urn:ngm:class:cis-controls",
+        "label": "CIS Controls"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI RMF"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:risk-register",
+        "label": "Risk Register"
+      },
+      {
+        "id": "urn:ngm:class:control-mapping",
+        "label": "Control Mapping"
+      }
+    ],
     "supports": [
       {
         "id": "urn:ngm:class:regulatory-compliance",
@@ -41,6 +120,10 @@
       {
         "id": "urn:ngm:class:compliance-monitoring",
         "label": "Compliance Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:cyber-insurance",
+        "label": "Cyber Insurance"
       }
     ],
     "standardizedBy": [
@@ -49,19 +132,28 @@
         "label": "NIST"
       }
     ],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:nist-special-publications",
+        "label": "NIST Special Publications"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:nist",
         "label": "NIST"
       },
       {
-        "id": "urn:ngm:class:nist-ai-rmf",
-        "label": "NIST AI RMF"
-      },
-      {
         "id": "urn:ngm:class:compliance-framework",
         "label": "Compliance Framework"
+      },
+      {
+        "id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      },
+      {
+        "id": "urn:ngm:class:critical-infrastructure-protection",
+        "label": "Critical Infrastructure Protection"
       }
     ]
   },

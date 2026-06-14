@@ -5,27 +5,51 @@
   "public": true,
   "classIri": "urn:ngm:class:smart-contract-platform",
   "domain": "blockchain",
-  "definition": "A Smart Contract Platform is a blockchain infrastructure that provides an execution environment for programmable self-executing agreements, enabling decentralised application development through virtual machine runtimes, developer toolchains, and gas metering. Platforms such as Ethereum (EVM), Solana (Sealevel), and Cardano (Plutus) each offer distinct performance, security, and programmability trade-offs.",
+  "definition": "A Smart Contract Platform is a blockchain-based infrastructure layer that provides a deterministic execution environment for self-executing programmable agreements, enabling decentralised application (dApp) development through virtual machine runtimes, developer toolchains, consensus-enforced state transitions, and economic incentive mechanisms such as gas metering. These platforms extend base-layer blockchains with Turing-complete or domain-specific scripting capabilities, allowing arbitrary business logic to be encoded and trustlessly enforced on a shared public ledger. Prominent examples include Ethereum and its EVM-compatible derivatives, Solana with its Sealevel parallel runtime, Cardano with its Plutus/eUTXO model, and Polkadot with its ink! WebAssembly runtime. Each platform makes distinct design trade-offs across the performance-security-decentralisation trilemma and imposes its own programming model, fee structure, and upgrade governance.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:bc-network-component",
-      "label": "Network Component"
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
         "id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:virtual-machine",
+        "label": "Virtual Machine"
+      },
+      {
+        "id": "urn:ngm:class:gas-metering",
+        "label": "Gas Metering"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:developer-toolchain",
+        "label": "Developer Toolchain"
       }
     ],
     "requires": [
       {
         "id": "urn:ngm:class:blockchain",
         "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
       }
     ],
     "enables": [
@@ -36,20 +60,92 @@
       {
         "id": "urn:ngm:class:decentralized-finance-de-fi",
         "label": "Decentralized Finance (DeFi)"
+      },
+      {
+        "id": "urn:ngm:class:non-fungible-token",
+        "label": "Non-Fungible Token"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-application",
+        "label": "Decentralised Application"
+      },
+      {
+        "id": "urn:ngm:class:token-standard",
+        "label": "Token Standard"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      },
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public Key Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:traditional-contract",
+        "label": "Traditional Contract"
+      },
+      {
+        "id": "urn:ngm:class:centralised-application-server",
+        "label": "Centralised Application Server"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:multi-party-computation",
+        "label": "Multi-Party Computation"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-traceability",
+        "label": "Supply Chain Traceability"
+      }
+    ],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:account-abstraction",
+        "label": "Account Abstraction"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:layer-2-scaling",
+        "label": "Layer 2 Scaling"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
       {
         "id": "urn:ngm:class:blockchain-interoperability",
         "label": "Blockchain Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      },
+      {
+        "id": "urn:ngm:class:oracle-network",
+        "label": "Oracle Network"
+      },
+      {
+        "id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
       }
     ]
   },

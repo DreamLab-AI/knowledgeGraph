@@ -92,7 +92,7 @@ alias:: AIGovernance, AIGovernanceDomain
   "@type": "Class",
   "label": "AI Governance Domain",
   "definition": "The AI Governance Domain covers the policies, processes and controls that direct the responsible development and deployment of artificial intelligence. Its scope includes risk management, accountability, transparency, fairness assessment and regulatory alignment. It is a sub-area of the Artificial Intelligence Domain concerned with oversight rather than technique. The boundary excludes the technical mitigation of failure modes, which is treated under the AI Safety Domain.",
-  "domain": "ai-governance",
+  "domain": "governance",
   "maturity": "emerging",
   "qualityScore": 0.7,
   "subClassOf": [

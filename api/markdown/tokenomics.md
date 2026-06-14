@@ -1,19 +1,93 @@
 - ### Definition
-  - Tokenomics describes the economic design and incentive structures of blockchain-based token systems, covering token supply mechanics, distribution schedules, utility functions, and governance rights. Within virtual economies and metaverse platforms, tokenomics governs how digital assets are minted, traded, staked, and burned to sustain ecosystem participation and align stakeholder incentives. Sound tokenomic design balances inflationary rewards for contributors against deflationary sinks, using mechanisms such as bonding curves, liquidity pools, and vesting schedules.
-- ### Semantic Classification
-  - owl-class:: spatial-computing:Tokenomics
-  - owl-role:: concept
+  - Tokenomics is the discipline of designing and analysing the economic systems that govern [[Digital Token]] ecosystems built on [[Blockchain]] infrastructure. It integrates [[Monetary Policy]], [[Mechanism Design]], and [[Game Theory]] to engineer token supply schedules, distribution models, utility functions, and incentive structures that sustain healthy ecosystems. A sound tokenomic model aligns the interests of diverse stakeholders — developers, users, liquidity providers, validators, and investors — so that individually rational behaviour produces collectively beneficial outcomes. The field sits at the intersection of [[Cryptoeconomics]], computer science, and institutional economics, and is fundamental to the viability of any protocol relying on token-based coordination.
+
+- ### Overview
+  - Tokenomics (a portmanteau of "token" and "economics") emerged as a formal discipline alongside the proliferation of programmable blockchains capable of issuing and governing digital assets through [[Smart Contract]] logic.
+  - Unlike traditional monetary systems managed by central banks, tokenomic systems encode policy rules directly into immutable or governance-upgradeable on-chain contracts, making their rules transparent, auditable, and — in the best designs — credibly committed.
+  - The central challenge of tokenomics is the **cold-start problem**: a new network must attract early adopters before it has enough users to be useful, so tokenomic design must engineer initial incentives (airdrops, liquidity mining, staking rewards) that bootstrap participation without causing runaway inflation.
+  - Tokenomics is increasingly studied through the lens of **mechanism design** — the reverse engineering of rules that produce desired equilibria — and empirically informed by on-chain data analytics.
+  - Poor tokenomic design (e.g. hyper-inflationary emission schedules, concentrated insider allocations, insufficient utility sinks) is widely recognised as a leading cause of protocol failure.
+
+- ### Key Components
+  - #### Token Supply
+    - **Fixed supply** — hard-capped at genesis (e.g. Bitcoin's 21 million BTC); scarcity is enforced by the [[Consensus Mechanism]].
+    - **Inflationary supply** — new tokens are continuously minted as block rewards or staking emissions; rate may be fixed or dynamically adjusted (see [[Monetary Policy]]).
+    - **Deflationary supply** — tokens are permanently removed via [[Token Burn]] mechanisms (e.g. EIP-1559 base fee burn on Ethereum), or via buy-back-and-burn treasury operations.
+    - **Elastic supply** — algorithmic rebasing adjusts wallet balances to target a price peg; used in algorithmic stablecoins (a high-risk variant).
+  - #### Token Distribution
+    - Initial allocations across team, investors, treasury, ecosystem, and community determine long-term governance balance and sell pressure.
+    - **[[Vesting Schedule]]** — time-locked release of founder and investor allocations prevents early dumping and aligns incentives with long-term protocol health.
+    - **Airdrops** — free token grants to target users (e.g. past protocol users) bootstrap community ownership and decentralise governance.
+    - **Liquidity Mining / Yield Farming** — rewards for supplying [[Liquidity Pool]] assets attract capital to nascent [[Decentralised Finance]] protocols.
+    - **[[Initial Coin Offering]]** / IDO / IEO — public token sale mechanisms that raise development capital and distribute ownership.
+  - #### Utility & Demand Drivers
+    - **Governance rights** — token holders vote on protocol upgrades, parameter changes, and treasury spending via [[DAO]] structures (see [[Governance Token]]).
+    - **Fee payment** — tokens are required to pay for network services (gas fees, protocol fees), creating baseline demand tied to actual usage.
+    - **Access and staking** — [[Staking]] tokens to unlock features, earn yield, or provide security (Proof-of-Stake validators must stake to participate).
+    - **Collateral** — tokens used as collateral in lending and derivatives protocols within [[Decentralised Finance]] ecosystems.
+    - **In-game assets** — tokens represent scarce game assets in [[Play-to-Earn]] and Web3 gaming contexts; see [[NFT]] for non-fungible variants.
+  - #### Incentive Mechanisms
+    - **[[Bonding Curve]]** — a mathematical function relating token price to circulating supply, used in continuous token models and automated market makers.
+    - **[[Liquidity Pool]]** — algorithmic reserves holding two or more assets, enabling permissionless token swaps and rewarding liquidity providers with fees.
+    - **[[Staking]]** — locking tokens as collateral to earn yield, secure networks (Proof-of-Stake), or participate in governance.
+    - **Slashing** — punitive destruction of staked tokens for protocol violations (e.g. double-signing), enforcing honest validator behaviour.
+    - **Revenue sharing / buybacks** — protocol revenue redirected to token holders or used to purchase and burn tokens, creating a value accrual loop.
+  - #### Sink Mechanisms
+    - Sinks remove tokens from circulation to counterbalance emissions: transaction fees, [[Token Burn]] events, time-locks, and NFT minting costs.
+    - Effective sink design prevents hyperinflation by ensuring demand growth keeps pace with supply expansion.
+
+- ### Applications / Use Cases
+  - **Layer 1 protocol tokens** — ETH, SOL, ADA, and similar assets fund validator security, pay transaction fees, and underpin stablecoin collateral — a comprehensive tokenomic system covering all three functions.
+  - **DeFi governance tokens** — protocols such as Uniswap (UNI) and Aave (AAVE) grant holders voting rights over protocol parameters via [[DAO]] governance, directly linking token value to protocol revenue and governance utility.
+  - **Web3 gaming / [[Play-to-Earn]]** — games issue dual-token systems (utility token + governance token) to separate in-game spending from ownership rights, attempting to sustain player incentives without hyperinflationary collapse.
+  - **Decentralised Autonomous Organisations** — treasury-funded [[DAO]] entities use tokenomic models to distribute grants, fund contributors, and coordinate collective action without a central authority.
+  - **Stablecoins** — algorithmic and collateral-backed stablecoins (e.g. DAI, FRAX) rely on complex tokenomic mechanisms — stability fees, liquidation incentives, and peg arbitrage rewards — to maintain their peg.
+  - **Data and compute marketplaces** — protocols such as Filecoin (storage) and Render (GPU compute) use tokens to price and incentivise decentralised resource provision, bridging blockchain coordination to real-world infrastructure; see [[Digital Economy]].
+  - **NFT ecosystems** — royalty structures, secondary sale fees, and burn-to-mint mechanics within [[NFT]] platforms are tokenomic design choices that affect creator revenue and market liquidity.
+  - **Cross-chain bridges** — bridge protocols issue tokens to incentivise liquidity provisioning and relay operators, with tokenomics governing security bonds and fee distribution.
+
 - ### Relationships
-  - requires [[Blockchain]]
-  - requires [[Smart Contract]]
-  - enables [[Payment System]]
-  - enables [[DAO]]
-  - relatedTo [[NFT]]
-- ### Content
-  ## Overview
-  Tokenomics represents an abstract concept in the metaverse ontology hierarchy.
-  #### Related Concepts
-  - [[owl:Thing]]
+  - requires:: [[Blockchain]]
+  - requires:: [[Smart Contract]]
+  - requires:: [[Consensus Mechanism]]
+  - requires:: [[Digital Token]]
+  - hasPart:: [[Token Supply]]
+  - hasPart:: [[Token Distribution]]
+  - hasPart:: [[Staking]]
+  - hasPart:: [[Token Burn]]
+  - hasPart:: [[Vesting Schedule]]
+  - hasPart:: [[Bonding Curve]]
+  - enables:: [[DAO]]
+  - enables:: [[Decentralised Finance]]
+  - enables:: [[Payment System]]
+  - enables:: [[Liquidity Pool]]
+  - enables:: [[Play-to-Earn]]
+  - uses:: [[Mechanism Design]]
+  - uses:: [[Game Theory]]
+  - relatedTo:: [[NFT]]
+  - relatedTo:: [[Monetary Policy]]
+  - relatedTo:: [[Decentralised Exchange]]
+  - relatedTo:: [[Initial Coin Offering]]
+  - contrastsWith:: [[Fiat Currency]]
+  - contrastsWith:: [[Centralised Finance]]
+  - bridgesTo:: [[Incentive Alignment]]
+  - bridgesTo:: [[Digital Economy]]
+  - bridgesTo:: [[Governance Token]]
+
+- ### Standards & Context
+  - Tokenomics lacks a formal standardisation body, but several frameworks have emerged as de facto references:
+    - **EIP (Ethereum Improvement Proposals)** — proposals such as EIP-1559 (fee burn mechanism) and EIP-4844 (proto-danksharding for fee reduction) directly shape tokenomic dynamics on Ethereum.
+    - **MiCA (Markets in Crypto-Assets Regulation, EU 2023)** — requires issuers of "asset-referenced tokens" and "e-money tokens" to publish white papers with detailed tokenomic disclosures, bringing regulatory structure to token design.
+    - **FATF guidance on virtual assets** — Financial Action Task Force recommendations influence how token transfers are treated for AML/KYC compliance, affecting exchange and custodian tokenomic integrations.
+    - **Token Taxonomy Framework (TTF)** — an industry-driven schema (Global Blockchain Business Council) for classifying token behaviours in a composable, technology-agnostic way.
+    - On-chain analytics platforms (Dune Analytics, Nansen, Token Terminal) have become essential empirical tools for auditing tokenomic health metrics: circulating supply, velocity, holder concentration (Gini coefficient), and protocol revenue.
+  - The field intersects with [[Decentralised Finance]] regulation and [[Governance Token]] design as jurisdictions debate whether tokens constitute securities under existing law (e.g. Howey test in the US).
+
+- ### Semantic Classification
+  - owl-class:: blockchain:Tokenomics
+  - owl-role:: concept
+
 - ### Provenance
-  - sources::
+  - sources:: Buterin et al. (Ethereum whitepaper); Voshmgir, "Token Economy" (2020); Liebkind, "Tokenomics 101"; on-chain analytics; MiCA Regulation (EU) 2023/1114
+  - updated:: 2026-06-13
   - migration-date:: 2026-04-26T00:00:00Z

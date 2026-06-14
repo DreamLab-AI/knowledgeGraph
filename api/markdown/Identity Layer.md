@@ -67,7 +67,7 @@ public:: true
   "@type": "Class",
   "label": "Identity Layer",
   "definition": "The Identity Layer is the cross-cutting stratum that establishes, represents, and verifies the identities of participants and resources. It sits above the Cryptographic Layer, on which its proofs rest, and below access, policy, and governance strata that reason about who is acting. It contains identifiers, credentials, authentication mechanisms, and the bindings between them.",
-  "domain": "identity",
+  "domain": "security",
   "maturity": "emerging",
   "qualityScore": 0.7,
   "subClassOf": [

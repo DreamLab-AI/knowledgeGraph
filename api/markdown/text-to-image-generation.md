@@ -1,14 +1,137 @@
 - ### Definition
-  - [[Text-to-Image Generation]] is a [[Generative AI]] paradigm that synthesises photorealistic or stylised images from natural-language prompts by conditioning [[Diffusion Model|diffusion models]] or autoregressive [[Transformer Architecture|transformers]] on text encodings, enabling [[Prompt Engineering]]-driven creative production at a scale and speed impossible with traditional image authoring tools.
+  - [[Text-to-Image Generation]] is a [[Generative AI]] paradigm that synthesises photorealistic or stylised images from natural-language prompts by conditioning [[Diffusion Model|diffusion models]] or autoregressive [[Transformer Architecture|transformers]] on text encodings. The process iteratively denoises random noise into structured visual content using [[Cross-Attention]] mechanisms that steer the generative trajectory toward prompt-consistent outputs. Closely related to [[Multimodal AI]], the field has transformed creative industries while raising fundamental questions about [[Intellectual Property]], data consent, and [[Synthetic Media]] provenance. [[Prompt Engineering]] has emerged as the primary user interface paradigm for these systems.
+
+- ### Overview
+  - Text-to-image generation represents one of the most visible breakthroughs in applied [[Generative AI]], enabling any user with a natural-language description to produce high-quality images within seconds. The field evolved from earlier generative approaches—GANs, VAEs, and autoregressive pixel models—but reached mainstream viability through the integration of [[Diffusion Model|diffusion-based]] architectures with large-scale [[Contrastive Learning]] text-image encoders such as [[CLIP]].
+  - Why it matters:
+    - Democratises image creation by removing barriers of artistic skill or software expertise
+    - Compresses creative iteration cycles from hours to seconds in professional workflows
+    - Generates training data for other machine-learning tasks ([[Synthetic Data Generation]])
+    - Drives downstream development of [[Text-to-Video Generation]], image-to-3D, and multimodal agents
+    - Creates legal, ethical, and epistemic challenges around media authenticity and creator rights
+  - How it works at a high level:
+    - A [[Text Encoder]] (commonly [[CLIP]] or T5) maps the input prompt to a dense token embedding sequence
+    - A denoising network (U-Net or [[Diffusion Transformer]]) iteratively refines Gaussian noise in latent or pixel space, attending to text tokens via [[Cross-Attention]] at each denoising step
+    - A [[Variational Autoencoder]] decoder maps the final latent vector back to full-resolution pixel space
+    - Guidance techniques (classifier-free guidance, CFG scale) amplify the influence of the text conditioning versus the unconditional prior
+
+- ### Key Components
+  - **Text Encoder**
+    - Converts the natural-language prompt into a fixed or variable-length vector representation
+    - [[CLIP]] text encoder (OpenAI) is widely used; T5-XXL is favoured in [[Imagen]] and Flux-family models for richer semantic grounding
+    - Token embeddings are passed into [[Cross-Attention]] layers of the denoising backbone
+  - **Denoising Network / Score Model**
+    - Originally U-Net architectures (convolutional with skip connections) used in [[Stable Diffusion]] and DALL-E 2
+    - [[Diffusion Transformer]] (DiT) architectures replaced U-Nets as the dominant backbone by 2024, benefiting from improved [[Transformer Architecture]] scaling laws
+    - Performs the iterative reverse diffusion process: $x_{t-1} = \mu_\theta(x_t, t, c) + \sigma_t \epsilon$
+  - **Latent Space Compression**
+    - [[Latent Diffusion]] operates on a compressed latent representation produced by a [[Variational Autoencoder]], reducing computational cost by a factor of ~64× versus pixel-space diffusion
+    - The VAE encodes images to latents during training and decodes them back to pixels during inference
+  - **Conditioning Mechanisms**
+    - Classifier-free guidance (CFG): the model is jointly trained with and without text conditioning; at inference, the conditional and unconditional predictions are interpolated to control adherence
+    - IP-Adapter, ControlNet, and image-reference conditioning extend text prompts with visual exemplars
+    - Negative prompts specify concepts to suppress during generation
+  - **Sampling Schedulers**
+    - DDPM (original), DDIM (deterministic), DPM-Solver, PNDM, and UniPC are common samplers that trade off speed versus quality across 10–50 denoising steps
+  - **Fine-Tuning Techniques**
+    - [[LoRA]] (Low-Rank Adaptation): lightweight parameter-efficient adapters for domain or style specialisation
+    - [[DreamBooth]]: subject-specific fine-tuning from 3–20 reference images; binds a custom token to a specific person, object, or style
+    - Textual inversion: embeds a new concept into the text encoder's token space without modifying model weights
+
+- ### Architectures and Systems
+  - **Stable Diffusion (Stability AI, CompVis)**
+    - Open-weight latent diffusion model family; SDXL, SD 3, and SD 3.5 extend resolution and quality
+    - Has spawned the largest ecosystem of community fine-tunes (CivitAI), ControlNets, and derivative tools
+  - **DALL-E 2 / DALL-E 3 (OpenAI)**
+    - DALL-E 2 used CLIP embeddings with diffusion; DALL-E 3 integrated instruction-following via GPT-4 prompt rewriting, achieving precise text rendering and compositional accuracy
+  - **Imagen / Imagen 2 (Google DeepMind)**
+    - Uses cascaded pixel-space diffusion conditioned on T5-XXL text embeddings; emphasised photorealism and text fidelity
+  - **Midjourney**
+    - Proprietary system accessible via Discord; known for aesthetic quality and stylistic coherence; architecture undisclosed
+  - **Flux (Black Forest Labs)**
+    - DiT-architecture open model released in 2024; notable for multi-aspect-ratio generation and strong prompt adherence
+  - **Adobe Firefly**
+    - Commercially safe model trained on licensed and public-domain data; integrated into Creative Cloud suite
+  - **Kandinsky, PixArt, DeepFloyd IF**
+    - Research-focused or community-maintained alternatives demonstrating architectural diversity
+
+- ### Applications and Use Cases
+  - **Creative Industries**
+    - Concept art and mood boarding for film, game, and product design
+    - Illustration and editorial imagery for publishing and digital media
+    - Fashion design visualisation and virtual sampling
+  - **Marketing and Advertising**
+    - Rapid prototyping of campaign visuals; A/B testing at scale with variant imagery
+    - Localised imagery generation without reshoots
+  - **Education and Research**
+    - Generating visualisations of abstract scientific concepts or historical reconstructions
+    - Augmenting datasets for downstream [[Computer Vision]] models
+  - **Healthcare and Accessibility**
+    - Generating medical illustrations; producing accessible visual aids from descriptive text
+  - **Game and Virtual World Development**
+    - Texture generation, asset prototyping, and environment concept exploration
+    - Feeding downstream [[Text-to-3D]] pipelines with reference imagery
+  - **Synthetic Data Generation**
+    - Producing labelled training corpora for object detection, segmentation, and classification models
+    - Domain randomisation for robotic perception systems
 
 - ### Relationships
-  - Text-to-image generation operationalises [[Diffusion Models]] and [[Latent Diffusion]] architectures that denoise random noise into structured visual content conditioned on text embeddings. It is a core application of [[Generative AI]] and extends into [[Multimodal AI]] systems that combine image generation with language understanding. [[Prompt Engineering]] has emerged as the primary user interface paradigm, with prompt syntax, style tokens, and negative prompts shaping output characteristics. The field is divided between [[Proprietary Image Generation]] services and open-weight alternatives such as the [[Stable Diffusion Image Model]] model family, each with different accessibility and content-policy trade-offs.
+  - uses:: [[Diffusion Model]]
+  - uses:: [[Latent Diffusion]]
+  - uses:: [[Transformer Architecture]]
+  - uses:: [[Cross-Attention]]
+  - uses:: [[Variational Autoencoder]]
+  - uses:: [[CLIP]]
+  - uses:: [[Contrastive Learning]]
+  - enables:: [[Prompt Engineering]]
+  - enables:: [[Multimodal AI]]
+  - enables:: [[Text-to-Video Generation]]
+  - enables:: [[Image Editing]]
+  - enables:: [[Synthetic Data Generation]]
+  - requires:: [[Large-Scale Pretraining]]
+  - requires:: [[Image-Caption Dataset]]
+  - requires:: [[GPU Compute]]
+  - hasPart:: [[Text Encoder]]
+  - hasPart:: [[Denoising Network]]
+  - hasPart:: [[Image Decoder]]
+  - relatedTo:: [[Generative AI]]
+  - relatedTo:: [[Stable Diffusion]]
+  - relatedTo:: [[Fine-Tuning]]
+  - relatedTo:: [[LoRA]]
+  - relatedTo:: [[DreamBooth]]
+  - relatedTo:: [[Content Moderation]]
+  - contrastsWith:: [[Image Recognition]]
+  - contrastsWith:: [[Generative Adversarial Network]]
+  - bridges-to:: [[C2PA]]
+  - bridges-to:: [[AI Governance]]
+  - bridges-to:: [[Intellectual Property]]
+  - bridges-to:: [[Synthetic Media]]
 
-- ### Content
-  - The technical lineage of text-to-image generation traces through generative adversarial networks (GANs), variational autoencoders, and autoregressive pixel models of the 2010s, but the paradigm shift came with the application of diffusion models to image synthesis. Jonathan Ho et al.'s 2020 paper on denoising diffusion probabilistic models (DDPMs) demonstrated that iterative noise removal, guided by a learned score function, could produce high-quality images. The subsequent integration of CLIP-based text conditioning by Ramesh et al. (DALL-E, 2021) and Saharia et al. (Imagen, 2022) unlocked language-guided synthesis. The release of Stable Diffusion as open weights in August 2022 catalysed an explosion of community tooling, fine-tuning, and derivative applications.
+- ### Standards and Context
+  - **C2PA (Coalition for Content Provenance and Authenticity)**
+    - Technical standard for attaching tamper-evident cryptographic manifests to generated images, enabling downstream verification of AI origin
+    - Adopted by Adobe, Microsoft, Sony, and major platforms; integrated into [[Stable Diffusion]] pipelines via Firefly and Adobe tools
+    - Directly relevant to combating non-consensual deepfakes and synthetic media misuse
+  - **EU AI Act (2024)**
+    - Classifies AI-generated synthetic media as a transparency obligation; platforms must label AI-generated images that could mislead the public
+    - Providers of general-purpose AI models (GPAI) with text-to-image capabilities must publish training data summaries
+  - **US Copyright Office Guidance**
+    - Ruled that purely AI-generated images without sufficient human creative authorship are not eligible for copyright protection (2023 guidance)
+    - Litigation (Andersen v. Stability AI; Getty Images v. Stability AI) is shaping training-data legality
+  - **LAION Datasets**
+    - LAION-400M and LAION-5B are web-scraped image-text datasets widely used to train foundational text-to-image models; subject to ongoing legal scrutiny
+  - **RLHF and Safety Filtering**
+    - Reinforcement Learning from Human Feedback and safety classifiers are deployed at inference time to suppress harmful or non-consensual content
+    - NSFW filtering, concept erasure, and watermarking (SynthID by Google) are standard enterprise controls
 
-  - At the architectural level, modern text-to-image systems comprise a text encoder (typically a transformer such as CLIP or T5), a latent diffusion model that operates in compressed image space to reduce computational cost, and a decoder (VAE) that maps the latent back to pixel space. The conditioning mechanism uses cross-attention layers that allow the denoising network to attend to text token representations at each denoising step, steering the generative trajectory toward prompt-consistent outputs. Training uses billions of image-caption pairs, often web-scraped, with filtering for quality and safety. Fine-tuning techniques including LoRA, DreamBooth, and textual inversion allow users to specialise models on small datasets of custom concepts in minutes on consumer hardware.
+- ### Technical Evolution
+  - **Pre-2020**: GAN-based text-to-image (StackGAN, AttnGAN) produced low-resolution outputs with limited compositional fidelity
+  - **2021**: DALL-E 1 (autoregressive dVAE), CLIP released by OpenAI; VQGAN+CLIP community workflows emerge
+  - **2022**: DALL-E 2 (diffusion + CLIP), Imagen, Stable Diffusion 1.x released publicly; open-weight ecosystem begins
+  - **2023**: SDXL, DALL-E 3 (GPT-4 rewriter), Midjourney v5/v6; photorealism and prompt adherence improve markedly; legal challenges escalate
+  - **2024**: Stable Diffusion 3, Flux (DiT), DALL-E 4/GPT-4o native image generation; video models (Sora, Runway, Kling) extend paradigm to motion; EU AI Act enters force
+  - **2025–2026**: Real-time generation on consumer hardware; character consistency and multi-reference conditioning mature; on-device deployment via distilled models
 
-  - The societal impact of text-to-image generation has been profound and contested. On the creative side, illustrators, game artists, concept designers, and filmmakers have integrated the tools into production pipelines, drastically reducing time-to-visualisation for early-stage creative work. Marketing, advertising, and publishing have adopted generated imagery at scale. On the contentious side, professional artists challenged training practices that use their work without consent or compensation in landmark litigation; the US Copyright Office ruled that purely AI-generated images lack copyright protection; and non-consensual synthetic intimate imagery emerged as a serious harm requiring legislative response. Provenance standards such as C2PA content credentials began providing technical infrastructure for image authenticity.
-
-  - In 2024 and 2025, text-to-image systems advanced to produce highly photorealistic outputs indistinguishable from photographs at a technical level, with leading commercial models adding consistent character identity, precise text rendering, and multi-image reference conditioning. Diffusion transformers (DiT architecture) replaced U-Net backbones as the dominant architecture, scaling more predictably with compute. Video generation models such as Sora, Runway Gen-3, and Kling applied related architectures to motion synthesis, effectively merging text-to-image with text-to-video generation. Regulatory pressure on synthetic media disclosure—including the EU AI Act's mandatory labelling requirements for AI-generated content—began shaping deployment practices at major platform providers.
+- ### Provenance
+  - sources:: Training data from authoritative ML publications (Ho et al. 2020, Ramesh et al. 2021, Saharia et al. 2022, Rombach et al. 2022), EU AI Act text, US Copyright Office guidance, C2PA specification
+  - updated:: 2026-06-13

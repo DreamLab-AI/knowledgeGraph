@@ -5,19 +5,32 @@
   "public": true,
   "classIri": "urn:ngm:class:benchmarks",
   "domain": "ai",
-  "definition": "Benchmarks are standardised tasks, datasets, or workloads used to measure and compare the capabilities or performance of systems, models, or components under controlled conditions. In AI they encompass curated evaluation suites that probe language understanding, reasoning, coding, and multimodal perception to produce comparable scores across model generations. In computing and robotics, benchmarks measure throughput, latency, accuracy, and energy efficiency. Benchmark results are published in leaderboards and model cards to support reproducible science and informed procurement decisions.",
+  "definition": "Benchmarks are standardised tasks, datasets, or workloads used to measure and compare the capabilities or performance of systems, models, or components under controlled, reproducible conditions. In artificial intelligence they encompass curated evaluation suites that probe language understanding, mathematical reasoning, coding, and multimodal perception to produce comparable scores across model generations and research groups. In computing, robotics, and hardware engineering, benchmarks quantify throughput, latency, accuracy, and energy efficiency against fixed reference workloads. Benchmark results are published via leaderboards and model cards to support reproducible science, informed procurement, and regulatory accountability.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:evaluation-benchmarks-and-leaderboards",
-      "label": "Evaluation benchmarks and leaderboards"
+      "label": "Evaluation Benchmarks and Leaderboards"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.74,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:evaluation-metric",
+        "label": "Evaluation Metric"
+      },
+      {
+        "id": "urn:ngm:class:ground-truth-labels",
+        "label": "Ground Truth Labels"
+      },
+      {
+        "id": "urn:ngm:class:held-out-test-sets",
+        "label": "Held-Out Test Sets"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:model-evaluation-results",
@@ -26,12 +39,47 @@
       {
         "id": "urn:ngm:class:model-performance",
         "label": "Model Performance"
+      },
+      {
+        "id": "urn:ngm:class:reproducibility",
+        "label": "Reproducibility"
+      },
+      {
+        "id": "urn:ngm:class:leaderboards",
+        "label": "Leaderboards"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:annotation-pipelines",
+        "label": "Annotation Pipelines"
+      },
+      {
+        "id": "urn:ngm:class:data-curation",
+        "label": "Data Curation"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:human-evaluation",
+        "label": "Human Evaluation"
+      },
+      {
+        "id": "urn:ngm:class:ablation-studies",
+        "label": "Ablation Studies"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:hardware-performance",
+        "label": "Hardware Performance"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:evaluation-metric",
@@ -40,9 +88,30 @@
       {
         "id": "urn:ngm:class:performance-metrics",
         "label": "Performance Metrics"
+      },
+      {
+        "id": "urn:ngm:class:datasets",
+        "label": "Datasets"
+      },
+      {
+        "id": "urn:ngm:class:statistical-testing",
+        "label": "Statistical Testing"
       }
     ],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:model-selection",
+        "label": "Model Selection"
+      },
+      {
+        "id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
@@ -61,6 +130,18 @@
       {
         "id": "urn:ngm:class:adversarial-testing",
         "label": "Adversarial Testing"
+      },
+      {
+        "id": "urn:ngm:class:model-cards",
+        "label": "Model Cards"
+      },
+      {
+        "id": "urn:ngm:class:bias-and-fairness",
+        "label": "Bias and Fairness"
+      },
+      {
+        "id": "urn:ngm:class:overfitting",
+        "label": "Overfitting"
       }
     ]
   },

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:ethereum-smart-contract-platform-virtual-machine",
   "domain": "blockchain",
-  "definition": "The deterministic stack-based virtual machine that executes Ethereum smart contract bytecode and updates the shared world state.",
+  "definition": "The Ethereum Virtual Machine (EVM) is a deterministic, quasi-Turing-complete, stack-based virtual machine that serves as the sandboxed runtime environment for executing compiled smart contract bytecode on the Ethereum blockchain. Every full node in the network independently executes the same sequence of EVM opcodes and must converge to an identical post-execution world state, enforcing global consensus over account balances, contract storage, and transaction receipts. Execution is metered by a resource-accounting unit called Gas, which prevents denial-of-service attacks and prices computational work proportionally to its cost. The EVM's instruction set and state transition function have become a de-facto industry standard, with dozens of EVM-compatible chains and Layer 2 networks implementing the same specification to enable cross-chain portability of smart contracts.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:virtual-machine",
@@ -13,31 +13,130 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
-  "maturity": "established",
+  "qualityScore": 0.76,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:evm-opcode",
+        "label": "EVM Opcode"
+      },
+      {
+        "id": "urn:ngm:class:evm-stack",
+        "label": "EVM Stack"
+      },
+      {
+        "id": "urn:ngm:class:evm-memory",
+        "label": "EVM Memory"
+      },
+      {
+        "id": "urn:ngm:class:world-state",
+        "label": "World State"
+      }
+    ],
     "requires": [
       {
-        "id": "urn:ngm:class:smart-contract-platform",
-        "label": "Smart Contract Platform"
+        "id": "urn:ngm:class:gas",
+        "label": "Gas"
+      },
+      {
+        "id": "urn:ngm:class:ethereum-account",
+        "label": "Ethereum Account"
+      },
+      {
+        "id": "urn:ngm:class:merkle-patricia-trie",
+        "label": "Merkle Patricia Trie"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:ethereum-smart-contract-platform-smart-contracts",
         "label": "Ethereum Smart Contracts"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:non-fungible-token",
+        "label": "Non-Fungible Token"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-application",
+        "label": "Decentralised Application"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:ethereum-consensus",
+        "label": "Ethereum Consensus"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:smart-contract-platform",
+        "label": "Smart Contract Platform"
+      },
+      {
+        "id": "urn:ngm:class:ethereum-yellow-paper",
+        "label": "Ethereum Yellow Paper"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:webassembly",
+        "label": "WebAssembly"
+      },
+      {
+        "id": "urn:ngm:class:move-virtual-machine",
+        "label": "Move Virtual Machine"
+      },
+      {
+        "id": "urn:ngm:class:solana-sealevel",
+        "label": "Solana Sealevel"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:solidity",
+        "label": "Solidity"
+      },
+      {
+        "id": "urn:ngm:class:ethereum-bytecode",
+        "label": "Ethereum Bytecode"
+      },
+      {
+        "id": "urn:ngm:class:keccak-256",
+        "label": "Keccak-256"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:layer-2-scaling",
+        "label": "Layer 2 Scaling"
+      },
+      {
+        "id": "urn:ngm:class:evm-compatible-chain",
+        "label": "EVM-Compatible Chain"
+      }
+    ]
   },
   "wikilinks": [
     {

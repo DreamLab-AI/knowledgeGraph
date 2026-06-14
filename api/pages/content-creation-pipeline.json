@@ -4,8 +4,8 @@
   "slug": "content-creation-pipeline",
   "public": true,
   "classIri": "urn:ngm:class:content-creation-pipeline",
-  "domain": "metaverse",
-  "definition": "A Content Creation Pipeline is an automated or semi-automated workflow that orchestrates the sequential and parallel stages of producing digital content\u2014including ideation, scripting, asset generation, editing, quality assurance, and distribution\u2014into a reproducible, scalable production system. In modern contexts, these pipelines integrate AI generation models, human editorial review, digital asset management, and multi-platform publishing endpoints, enabling high-throughput content production at reduced per-unit cost.",
+  "domain": "distributed-collaboration",
+  "definition": "A Content Creation Pipeline is a structured, orchestrated workflow that sequences and parallelises the stages of producing digital content\u2014spanning ideation, scripting, asset generation, editorial review, quality assurance, and multi-platform distribution\u2014into a reproducible and scalable production system. Modern pipelines integrate AI generation models, digital asset management systems, localisation engines, and publishing endpoints to deliver high-throughput content production with traceable asset provenance. They are the operational backbone of film VFX studios, game development, streaming platforms, and enterprise marketing operations, governing how raw creative intent is transformed into finished, distributed artefacts. Pipeline architecture choices directly determine release velocity, brand consistency, and the cost structure of large-scale content organisations.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:content-creation",
@@ -13,25 +13,111 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:asset-management",
+        "label": "Asset Management"
+      },
+      {
+        "id": "urn:ngm:class:workflow-orchestration",
+        "label": "Workflow Orchestration"
+      },
+      {
+        "id": "urn:ngm:class:quality-assurance",
+        "label": "Quality Assurance"
+      },
+      {
+        "id": "urn:ngm:class:distribution-platform",
+        "label": "Distribution Platform"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:digital-asset-management",
+        "label": "Digital Asset Management"
+      },
+      {
+        "id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      },
+      {
+        "id": "urn:ngm:class:content-management-system",
+        "label": "Content Management System"
+      }
+    ],
     "enables": [
+      {
+        "id": "urn:ngm:class:media-production",
+        "label": "Media Production"
+      },
+      {
+        "id": "urn:ngm:class:localisation",
+        "label": "Localisation"
+      },
       {
         "id": "urn:ngm:class:metaverse-content-creation",
         "label": "Metaverse Content Creation"
+      },
+      {
+        "id": "urn:ngm:class:automated-publishing",
+        "label": "Automated Publishing"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:directed-acyclic-graph",
+        "label": "Directed Acyclic Graph"
+      },
+      {
+        "id": "urn:ngm:class:provenance-tracking",
+        "label": "Provenance Tracking"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:manual-production-workflow",
+        "label": "Manual Production Workflow"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:machine-learning-pipeline",
+        "label": "Machine Learning Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:content-creation-tool",
         "label": "Content Creation Tool"
+      },
+      {
+        "id": "urn:ngm:class:workflow-engine",
+        "label": "Workflow Engine"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:render-farm",
+        "label": "Render Farm"
       }
     ],
     "supports": [],
@@ -43,12 +129,12 @@
         "label": "Digital Content Creation"
       },
       {
-        "id": "urn:ngm:class:media-production",
-        "label": "Media Production"
-      },
-      {
         "id": "urn:ngm:class:video-production-pipeline",
         "label": "Video Production Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:creative-automation",
+        "label": "Creative Automation"
       }
     ]
   },

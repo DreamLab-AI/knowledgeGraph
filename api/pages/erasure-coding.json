@@ -5,54 +5,166 @@
   "public": true,
   "classIri": "urn:ngm:class:erasure-coding",
   "domain": "infrastructure",
-  "definition": "Erasure coding is a forward error-correction technique that encodes a data object into n fragments (shards), distributed across nodes or storage devices, such that any k of those n fragments are sufficient to reconstruct the original data without any centralised copy. The redundancy overhead (n \u2212 k) / k is typically much lower than full replication, making erasure coding the preferred durability mechanism in large-scale distributed storage systems and distributed ledgers where storage efficiency matters. Common schemes include Reed-Solomon codes, and more computationally efficient variants such as LDPC and Cauchy Reed-Solomon.",
+  "definition": "Erasure coding is a forward error-correction (FEC) technique that encodes a data object into n encoded fragments (shards or chunks), distributed across nodes or storage devices, such that any k of those n fragments are sufficient to reconstruct the original data without any centralised copy. The redundancy overhead ratio (n \u2212 k) / k is typically far lower than full replication, making erasure coding the preferred durability mechanism in large-scale distributed storage, distributed ledger systems, and content-addressed networks where storage efficiency and fault tolerance are simultaneously required. Foundational schemes include Reed-Solomon codes (based on Galois Field arithmetic), as well as computationally efficient variants such as LDPC, Fountain codes (LT and Raptor), and Cauchy Reed-Solomon; newer constructions couple erasure codes with polynomial commitments (e.g. KZG) to provide data availability proofs in blockchain systems.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:infra-data-management",
-      "label": "Data Management"
+      "id": "urn:ngm:class:forward-error-correction",
+      "label": "Forward Error Correction"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:reed-solomon-codes",
+        "label": "Reed-Solomon Codes"
+      },
+      {
+        "id": "urn:ngm:class:ldpc-codes",
+        "label": "LDPC Codes"
+      },
+      {
+        "id": "urn:ngm:class:fountain-codes",
+        "label": "Fountain Codes"
+      },
+      {
+        "id": "urn:ngm:class:galois-field-arithmetic",
+        "label": "Galois Field Arithmetic"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:galois-field-arithmetic",
+        "label": "Galois Field Arithmetic"
+      },
+      {
+        "id": "urn:ngm:class:distributed-storage",
+        "label": "Distributed Storage"
+      },
+      {
+        "id": "urn:ngm:class:shard-distribution",
+        "label": "Shard Distribution"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:fault-tolerance",
         "label": "Fault Tolerance"
       },
       {
-        "id": "urn:ngm:class:distributed-systems",
-        "label": "Distributed Systems"
+        "id": "urn:ngm:class:data-availability-sampling",
+        "label": "Data Availability Sampling"
+      },
+      {
+        "id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      },
+      {
+        "id": "urn:ngm:class:storage-efficiency",
+        "label": "Storage Efficiency"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "id": "urn:ngm:class:failure-domain",
+        "label": "Failure Domain"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:forward-error-correction",
+        "label": "Forward Error Correction"
+      },
+      {
+        "id": "urn:ngm:class:data-durability",
+        "label": "Data Durability"
+      }
+    ],
+    "contrastsWith": [
       {
         "id": "urn:ngm:class:data-replication",
         "label": "Data Replication"
+      },
+      {
+        "id": "urn:ngm:class:full-replication",
+        "label": "Full Replication"
       }
     ],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      },
+      {
+        "id": "urn:ngm:class:danksharding",
+        "label": "Danksharding"
+      },
+      {
+        "id": "urn:ngm:class:data-availability-layer",
+        "label": "Data Availability Layer"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:polynomial-commitment",
+        "label": "Polynomial Commitment"
+      },
+      {
+        "id": "urn:ngm:class:kzg-commitments",
+        "label": "KZG Commitments"
+      },
+      {
+        "id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      }
+    ],
+    "supports": [
       {
         "id": "urn:ngm:class:ipfs",
         "label": "IPFS"
       },
       {
-        "id": "urn:ngm:class:storage-infrastructure",
-        "label": "Storage Infrastructure"
+        "id": "urn:ngm:class:filecoin",
+        "label": "Filecoin"
       },
       {
-        "id": "urn:ngm:class:distributed-ledger",
-        "label": "Distributed Ledger"
+        "id": "urn:ngm:class:ceph",
+        "label": "Ceph"
+      },
+      {
+        "id": "urn:ngm:class:raid",
+        "label": "RAID"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:forward-error-correction",
+        "label": "Forward Error Correction"
+      },
+      {
+        "id": "urn:ngm:class:storage-infrastructure",
+        "label": "Storage Infrastructure"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:replication-factor",
+        "label": "Replication Factor"
+      },
+      {
+        "id": "urn:ngm:class:network-coding",
+        "label": "Network Coding"
+      },
+      {
+        "id": "urn:ngm:class:secret-sharing",
+        "label": "Secret Sharing"
       }
     ]
   },

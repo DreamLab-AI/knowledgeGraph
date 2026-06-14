@@ -4,7 +4,7 @@
   "slug": "statistics",
   "public": true,
   "classIri": "urn:ngm:class:statistics",
-  "domain": "mathematics",
+  "domain": "machine-learning",
   "definition": "The discipline concerned with collecting, analysing, interpreting, and drawing conclusions from data under uncertainty.",
   "subClassOf": [
     {

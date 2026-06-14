@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:online-safety-act-2023",
   "domain": "governance",
-  "definition": "The Online Safety Act 2023 is a landmark piece of UK legislation that received Royal Assent in October 2023, establishing a comprehensive duty-of-care framework for online platforms and search services operating in the United Kingdom. The Act creates tiered obligations proportionate to service size and risk: all in-scope services must conduct risk assessments and remove illegal content; larger platforms with significant reach face additional requirements including transparency reporting, user empowerment tools, and protections for children. Ofcom is designated as the regulator with powers to audit compliance, issue fines of up to 10% of global annual turnover, and in extreme cases block services from UK users. The Act also introduces criminal liability for senior managers of companies that fail to protect children from serious online harms.",
+  "definition": "The Online Safety Act 2023 is a landmark piece of UK primary legislation that received Royal Assent on 26 October 2023, establishing a comprehensive duty-of-care framework for online platforms and search services operating in or targeting users in the United Kingdom. It imposes tiered obligations proportionate to service size and risk profile: all in-scope providers must conduct risk assessments and remove illegal content swiftly; larger or higher-risk services face additional requirements covering child safety, user empowerment tools, and transparency reporting. Ofcom is designated as the statutory regulator with powers to audit compliance, issue fines of up to 10% of global annual turnover, and ultimately block non-compliant services from reaching UK users. The Act also introduces personal criminal liability for senior managers of companies that wilfully fail to protect children from serious online harms.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:digital-regulation",
@@ -13,59 +13,133 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.74,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:duty-of-care",
+        "label": "Duty of Care"
+      },
+      {
+        "id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "id": "urn:ngm:class:age-verification",
+        "label": "Age Verification"
+      },
+      {
+        "id": "urn:ngm:class:transparency-reporting",
+        "label": "Transparency Reporting"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:content-moderation",
+        "label": "Content Moderation"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:age-assurance",
+        "label": "Age Assurance"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:trust-and-safety",
         "label": "Trust and Safety"
       },
       {
-        "id": "urn:ngm:class:content-moderation-standards",
-        "label": "Content Moderation Standards"
-      }
-    ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [
-      {
-        "id": "urn:ngm:class:digital-society-harms",
-        "label": "Digital Society Harms"
+        "id": "urn:ngm:class:child-online-protection",
+        "label": "Child Online Protection"
       },
       {
-        "id": "urn:ngm:class:regulatory-compliance",
-        "label": "Regulatory Compliance"
+        "id": "urn:ngm:class:platform-accountability",
+        "label": "Platform Accountability"
       }
     ],
-    "standardizedBy": [
+    "dependsOn": [
       {
-        "id": "urn:ngm:class:regulatory-framework",
-        "label": "Regulatory Framework"
+        "id": "urn:ngm:class:ofcom",
+        "label": "Ofcom"
+      },
+      {
+        "id": "urn:ngm:class:codes-of-practice",
+        "label": "Codes of Practice"
       }
     ],
-    "partOf": [],
-    "relatedTo": [
+    "implements": [
       {
-        "id": "urn:ngm:class:content-moderation",
-        "label": "Content Moderation"
+        "id": "urn:ngm:class:online-harm-reduction",
+        "label": "Online Harm Reduction"
       },
       {
-        "id": "urn:ngm:class:digital-safety",
-        "label": "Digital Safety"
-      },
+        "id": "urn:ngm:class:platform-governance",
+        "label": "Platform Governance"
+      }
+    ],
+    "contrastsWith": [
       {
         "id": "urn:ngm:class:digital-services-act",
         "label": "Digital Services Act"
       },
       {
-        "id": "urn:ngm:class:age-verification",
-        "label": "Age Verification"
+        "id": "urn:ngm:class:first-amendment-doctrine",
+        "label": "First Amendment Doctrine"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:client-side-scanning",
+        "label": "Client-Side Scanning"
+      },
+      {
+        "id": "urn:ngm:class:privacy-enhancing-technologies",
+        "label": "Privacy Enhancing Technologies"
+      }
+    ],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ofcom",
+        "label": "Ofcom"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-framework",
+        "label": "Regulatory Framework"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:uk-technology-policy",
+        "label": "UK Technology Policy"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-safety",
+        "label": "Digital Safety"
+      },
+      {
+        "id": "urn:ngm:class:end-to-end-encryption",
+        "label": "End-to-End Encryption"
+      },
+      {
+        "id": "urn:ngm:class:illegal-content",
+        "label": "Illegal Content"
+      },
+      {
+        "id": "urn:ngm:class:csam-detection",
+        "label": "CSAM Detection"
+      },
+      {
+        "id": "urn:ngm:class:age-appropriate-design-code",
+        "label": "Age Appropriate Design Code"
       }
     ]
   },

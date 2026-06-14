@@ -5,19 +5,49 @@
   "public": true,
   "classIri": "urn:ngm:class:w3-c-did-core",
   "domain": "blockchain",
-  "definition": "W3C DID Core is the World Wide Web Consortium recommendation defining Decentralised Identifiers (DIDs) \u2014 a type of globally unique identifier that is controller-owned, cryptographically verifiable, and resolvable without requiring a centralised registration authority. A DID is a URI of the form did:<method>:<method-specific-id> that resolves to a DID Document containing public keys, service endpoints, and authentication verification methods. The specification is method-agnostic, allowing DIDs to be anchored on various infrastructure including distributed ledgers, peer-to-peer networks, and web servers, enabling interoperable self-sovereign identity across systems.",
+  "definition": "W3C DID Core is the World Wide Web Consortium Recommendation (published July 2022) defining Decentralised Identifiers (DIDs) \u2014 globally unique, controller-owned URIs of the form did:<method>:<method-specific-id> that are cryptographically verifiable and resolvable without a centralised registration authority. Each DID resolves to a JSON-LD DID Document containing verification methods (public keys), authentication suites, and service endpoints. The specification is method-agnostic, accommodating distributed ledgers, peer-to-peer networks, and web servers as verifiable data registries, and forms the identity layer of the broader Self-Sovereign Identity and Verifiable Credentials ecosystem.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:bc-governance-and-regulation",
-      "label": "Governance and Regulation"
+      "id": "urn:ngm:class:decentralised-identity",
+      "label": "Decentralised Identity"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.76,
+  "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:did-document",
+        "label": "DID Document"
+      },
+      {
+        "id": "urn:ngm:class:did-method",
+        "label": "DID Method"
+      },
+      {
+        "id": "urn:ngm:class:verification-method",
+        "label": "Verification Method"
+      },
+      {
+        "id": "urn:ngm:class:service-endpoint",
+        "label": "Service Endpoint"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public Key Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-signature",
+        "label": "Cryptographic Signature"
+      },
+      {
+        "id": "urn:ngm:class:did-resolver",
+        "label": "DID Resolver"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:self-sovereign-identity",
@@ -28,27 +58,96 @@
         "label": "Verifiable Credentials"
       },
       {
-        "id": "urn:ngm:class:decentralised-identity",
-        "label": "Decentralised Identity"
+        "id": "urn:ngm:class:digital-identity-wallet",
+        "label": "Digital Identity Wallet"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero Knowledge Proof"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [
+    "implements": [
       {
-        "id": "urn:ngm:class:cryptographic-signature",
-        "label": "Cryptographic Signature"
+        "id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self Sovereign Identity"
+      },
+      {
+        "id": "urn:ngm:class:uri-scheme",
+        "label": "URI Scheme"
       }
     ],
-    "supports": [],
-    "standardizedBy": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:x-509-certificate",
+        "label": "X.509 Certificate"
+      },
+      {
+        "id": "urn:ngm:class:oauth2",
+        "label": "OAuth2"
+      },
+      {
+        "id": "urn:ngm:class:openid-connect",
+        "label": "OpenID Connect"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:ai-agent-identity",
+        "label": "AI Agent Identity"
+      },
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:json-ld",
+        "label": "JSON-LD"
+      },
+      {
+        "id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:credential-exchange",
+        "label": "Credential Exchange"
+      },
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:world-wide-web-consortium",
+        "label": "World Wide Web Consortium"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
-        "label": "Public-Key Cryptography"
+        "id": "urn:ngm:class:sidetree-protocol",
+        "label": "Sidetree Protocol"
+      },
+      {
+        "id": "urn:ngm:class:linked-data-proofs",
+        "label": "Linked Data Proofs"
       }
     ]
   },

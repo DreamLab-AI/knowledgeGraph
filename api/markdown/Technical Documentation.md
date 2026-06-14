@@ -21,7 +21,7 @@ public:: true
   "@type": "Class",
   "label": "Technical Documentation",
   "definition": "Technical documentation is the body of written material that explains how to use, operate, maintain, or build a product or system, spanning API references, user guides, architecture documents, runbooks, and specifications. Good technical documentation reduces onboarding time, encodes institutional knowledge, supports interoperability, and is increasingly treated as a versioned, tested artefact within the docs-as-code discipline. It is essential to the adoption and maintainability of software, hardware, and standards, and serves as a primary source for both human understanding and machine consumption.",
-  "domain": "knowledge",
+  "domain": "data",
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:technical-standard", "label": "Technical Standard"}],
   "relations": {

@@ -1,12 +1,88 @@
 - ### Definition
-  - [[Compound Governor Bravo]] is the configurable [[On-chain Governance]] smart contract of the [[Compound]] protocol, allowing [[Governance Token]] holders to submit and vote on [[Proposal System]] items that execute protocol changes through a Timelock, establishing a reference architecture for [[DAO Governance]] in [[Decentralised Finance]].
+  - [[Compound Governor Bravo]] is the second-generation [[On-chain Governance]] smart contract of the [[Compound]] protocol, superseding [[Compound Governor Alpha]] with configurable parameters and a clean separation between governance voting logic and the [[Timelock]] executor. It allows [[COMP Token]] holders to create, vote on, and enqueue proposals that modify [[DeFi Protocol]] parameters through [[Token-Weighted Voting]], establishing a canonical reference architecture for [[DAO Governance]] in [[Decentralised Finance]]. The contract's ability to update its own governance parameters without redeployment made it a significant improvement over predecessor designs.
+- ### Overview
+  - Compound Governor Bravo was deployed as an upgrade to the original [[Compound Governor Alpha]], which hardcoded governance parameters and lacked an upgrade path short of full contract migration. Governor Bravo introduced configurable voting delay, voting period, proposal threshold, and quorum — each adjustable through the same proposal-and-vote mechanism the contract governs.
+  - The architecture establishes a clear separation of concerns. Governor Bravo holds the voting logic and proposal state machine; a separate [[Timelock]] contract holds the execution authority over the protocol. This means governance decisions must pass through a mandatory delay (the Timelock queue period) before execution, giving token holders and observers time to react to approved proposals.
+  - The contract became an influential template across [[Decentralised Finance]], as protocols recognised that building bespoke governance machinery was costly and risky. Forking Governor Bravo — or adopting the modular [[OpenZeppelin Governor]] derivative — became a standard practice for new DeFi protocols launching [[DAO]] operations.
+  - Compound itself uses Governor Bravo to manage lending market parameters: interest rate models, collateral factors, reserve factors, price oracle configurations, and asset listings all pass through the governance process.
+- ### Key Mechanisms
+  - #### Proposal Lifecycle
+    - Proposals progress through a well-defined state machine:
+      - **Pending** — the proposal exists but the [[Voting Delay]] period has not elapsed (allowing token holders to acquire delegated votes before the vote begins).
+      - **Active** — voting is open for the configured voting period.
+      - **Succeeded** or **Defeated** — determined by the final vote tally against the quorum and majority thresholds.
+      - **Queued** — a succeeded proposal is enqueued in the [[Timelock]] for a mandatory delay.
+      - **Executed** — the [[Timelock]] executes the encoded calldata against the target contracts.
+      - **Cancelled** or **Expired** — proposals can be cancelled by the proposer (if they still meet threshold) or expire if not executed within the Timelock's grace period.
+  - #### Vote Delegation
+    - [[Vote Delegation]] is a core mechanism: [[COMP Token]] holders delegate their voting power to any address, including themselves. Most passive holders delegate to known governance participants.
+    - Delegations are recorded as ERC-20-style snapshots at proposal creation (or more precisely at the block before the voting period begins), preventing flash-loan vote manipulation — a key [[Smart Contract Security]] consideration.
+    - Representative governance structures emerge through delegation coalitions, concentrating voting power in a small number of highly active delegates.
+  - #### Configurable Parameters
+    - **Proposal Threshold** — the minimum number of COMP votes required to submit a proposal; prevents spam from low-stake actors.
+    - **Quorum Votes** — the minimum total votes (For) required for a proposal to succeed; prevents minority capture.
+    - **Voting Delay** — blocks between proposal submission and vote start; allows delegation adjustment.
+    - **Voting Period** — blocks during which votes are accepted; balances urgency against participation.
+    - All four parameters are themselves adjustable through governance proposals, creating a self-amending governance system within [[Blockchain Governance]] norms.
+  - #### Timelock Integration
+    - Governor Bravo does not execute proposals directly. Approved proposals are queued in a [[Timelock]] contract with an enforced delay (typically 48 hours for Compound).
+    - The Timelock owner is the Governor contract; only successfully queued proposals can trigger execution. This architecture means the governance process cannot be short-circuited by individual actors, even the original deployers.
+    - The Timelock grace period is a secondary parameter: proposals not executed within this window after the delay expires are automatically cancelled.
+  - #### Calldata Execution Model
+    - Proposals encode arbitrary [[Calldata Execution]] — any function call against any contract address the Timelock is authorised to interact with. This makes Governor Bravo a general-purpose governance execution engine, not merely a parameter-setter.
+    - Multi-step proposals can batch multiple calls (targets, values, signatures, calldatas arrays), enabling atomic protocol upgrades.
+- ### Applications and Use Cases
+  - #### Compound Protocol Governance
+    - Governor Bravo is the live governance contract for Compound v2, used to manage the full set of [[Protocol Parameter Management]] decisions: adding new cTokens (supported assets), setting collateral factors, adjusting interest rate model parameters, modifying reserve factors, and updating oracle configurations.
+    - Community governance proposals on Compound routinely address risk parameter adjustments in response to market conditions, new integrations, and bug fixes.
+  - #### DeFi Protocol Template
+    - [[Uniswap]] forked Governor Bravo for UNI governance, adapting it with Uniswap-specific quorum thresholds. This was one of the most significant adoptions, given Uniswap's scale.
+    - Indexed Finance, Fei Protocol, and dozens of other [[DeFi Protocol]] projects adopted Governor Bravo forks during the 2021–2022 DeFi governance wave.
+    - [[OpenZeppelin Governor]] provides a modular reimplementation inspired by Governor Bravo, abstracting the voting token, vote counting, timelock, and quorum into swappable modules. This substantially lowered adoption barriers.
+  - #### Governance Research and Analytics
+    - [[DAO Analytics]] platforms (Tally, Boardroom, Compound's own governance dashboard) index Governor Bravo events to surface proposal histories, vote distributions, and delegation networks.
+    - Academic and industry research into [[DAO Governance]] frequently cites Governor Bravo as the primary empirical case study given its long deployment history and transparent on-chain data.
+  - #### Security Auditing Baseline
+    - Given its wide adoption, Governor Bravo forks are a common target for [[Smart Contract Security]] audits. Known attack surfaces — including governance attacks via whale vote accumulation, flash loan delegation exploits, and proposal spam — have been extensively documented and referenced in audit reports.
+- ### Security Considerations
+  - **[[Governance Attack]]** — if a single actor or coordinated group acquires sufficient COMP voting power (through purchase or delegation), they can pass proposals that would be harmful to other stakeholders. The Timelock delay is the primary mitigation, giving the community time to organise a counter-response or exit.
+  - **Flash Loan Prevention** — the delegation snapshot mechanism (votes measured at proposal start block, not current block) prevents flash loan-based vote inflation, a known exploit vector in naive voting designs.
+  - **Proposal Spam** — the proposal threshold gate prevents actors without meaningful governance stake from flooding the proposal queue. Adjusting this threshold is itself a governance decision.
+  - **Timelock Adequacy** — if the Timelock delay is too short, the exit window for users opposed to a proposal is insufficient. Compound's 48-hour delay is considered a reasonable minimum for a high-value [[Decentralised Finance]] protocol.
+  - **Upgradeability** — Governor Bravo is itself a non-upgradeable contract; governance parameter changes are made by deploying a new Governor and transferring Timelock admin via a proposal. This immutability is a deliberate [[Smart Contract Security]] choice.
 - ### Relationships
-  - Governor Bravo is tightly coupled to the [[Compound]] lending protocol and uses [[Token-Weighted Voting]] via the COMP [[Governance Token]] to determine proposal outcomes. It implements a [[Voting Mechanism]] with configurable quorum, proposal threshold, and voting delay parameters, making it more flexible than its predecessor. The contract architecture has influenced [[DAO Governance]] design across [[Decentralised Finance]] and is a canonical example of [[Blockchain Governance]] applied to protocol parameter management. The [[Proposal System]] it embodies supports iterative [[DAO]] operations without requiring contract redeployment.
-- ### Content
-  - Governor Bravo introduces a separation between governance voting logic and the Timelock executor, an architectural improvement over Governor Alpha where both were tightly coupled. Governance proposals specify calldata to be executed by the Timelock after a delay period, ensuring token holders have time to exit positions before contentious changes take effect. The configurable voting delay, voting period, proposal threshold, and quorum allow the community to tune governance parameters through the same proposal mechanism they govern.
-
-  - The contract processes proposals through four states: Pending (voting delay not elapsed), Active (open for voting), Succeeded or Defeated (based on vote tally and quorum), and Queued or Executed via the Timelock. COMP holders can delegate their voting power to any address, enabling representative governance structures and voter coalitions. The delegation mechanism is critical in practice because most COMP holders are passive and delegate to active governance participants.
-
-  - Governor Bravo's influence extends well beyond Compound itself. Protocols including Uniswap, Aave (via AIP extensions), and dozens of other [[Decentralised Finance]] projects have forked or closely adapted its architecture. OpenZeppelin's Governor contract in their contracts library provides a modular version inspired by Governor Bravo, substantially lowering the barrier to deploying robust [[On-chain Governance]] for new protocols.
-
-  - Governance attack vectors are a known concern: whale accumulation of COMP can enable unilateral passage of malicious proposals if quorum thresholds are insufficiently high. [[DAO Analytics]] tools track delegation patterns and proposal histories to surface governance health metrics. The Timelock delay is a critical security parameter—too short and it offers insufficient exit time; too long and it impedes responsive protocol management in fast-moving [[Decentralised Finance]] markets.
+  - partOf:: [[Compound]]
+  - partOf:: [[DeFi Governance Framework]]
+  - requires:: [[COMP Token]]
+  - requires:: [[Timelock]]
+  - requires:: [[Ethereum Smart Contract]]
+  - requires:: [[Vote Delegation]]
+  - implements:: [[Token-Weighted Voting]]
+  - implements:: [[Proposal Lifecycle]]
+  - implements:: [[Quorum Mechanism]]
+  - uses:: [[Voting Mechanism]]
+  - uses:: [[Proposal System]]
+  - uses:: [[Calldata Execution]]
+  - enables:: [[Decentralised Finance]]
+  - enables:: [[DAO]]
+  - enables:: [[Protocol Parameter Management]]
+  - supports:: [[Blockchain Governance]]
+  - supports:: [[DAO Governance]]
+  - dependsOn:: [[Governance Token]]
+  - dependsOn:: [[Ethereum]]
+  - contrastsWith:: [[Compound Governor Alpha]]
+  - contrastsWith:: [[OpenZeppelin Governor]]
+  - contrastsWith:: [[Snapshot Governance]]
+  - relatedTo:: [[Governance Attack]]
+  - relatedTo:: [[DAO Analytics]]
+  - relatedTo:: [[DeFi Protocol]]
+  - bridges-to:: [[Decentralised Autonomous Organisation]]
+  - bridges-to:: [[Smart Contract Security]]
+- ### Standards and Context
+  - Governor Bravo operates on [[Ethereum]] and conforms to the ERC-20 token standard for voting power accounting. The broader governance design aligns with patterns discussed in EIP-1 and community governance standards emerging from the [[Decentralised Finance]] ecosystem.
+  - The [[OpenZeppelin Governor]] suite (released 2021) formalised Governor Bravo patterns into a modular library, becoming the de facto standard for new protocol governance deployments. OpenZeppelin's implementation references Governor Bravo's interface as the compatibility baseline.
+  - [[DAO Analytics]] tooling (Tally, Boardroom, Compound's governance portal) indexes Governor Bravo's event log schema (ProposalCreated, VoteCast, ProposalQueued, ProposalExecuted, ProposalCancelled) as a near-universal standard for DeFi governance dashboards.
+  - Regulatory context: on-chain governance contracts such as Governor Bravo have attracted attention from regulators exploring whether [[DAO Governance]] arrangements constitute securities, partnerships, or unincorporated associations. The Commodity Futures Trading Commission (CFTC) and SEC enforcement actions against DeFi protocols have referenced governance token voting as a factor in determining decentralisation.
+- ### Provenance
+  - sources:: Compound protocol documentation; Governor Bravo source code (compound-finance/compound-governance); OpenZeppelin Governor documentation; Tally governance analytics; Uniswap governance forum; academic literature on DAO governance.
+  - updated:: 2026-06-13

@@ -4,7 +4,7 @@
   "slug": "generative-ai-domain",
   "public": true,
   "classIri": "urn:ngm:class:generative-ai-domain",
-  "domain": "generative-ai",
+  "domain": "ai",
   "definition": "The Generative AI Domain covers the application of generative models to produce text, images, audio, code and other content for end users. Its scope includes prompting, fine-tuning, retrieval augmentation and the integration of generative models into products and workflows. It is an applied sub-area of the Artificial Intelligence Domain that builds on the Generative Modelling Domain. The boundary excludes the formal study of the underlying distributions, which belongs to generative modelling.",
   "subClassOf": [
     {

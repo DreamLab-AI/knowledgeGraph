@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:high-availability",
   "domain": "infrastructure",
-  "definition": "High availability (HA) is an infrastructure design property that specifies and implements the conditions under which a system continues to deliver its intended service in the presence of component failures, maintenance windows, or demand spikes. HA is quantified by availability targets expressed in nines (e.g., 99.9% equates to roughly 8.7 hours of permitted downtime per year), achieved through redundant components, active-passive or active-active failover, health monitoring, and automated recovery. It is a core non-functional requirement in cloud-native, telecommunications, and financial systems where service interruption carries regulatory or commercial penalties.",
+  "definition": "High Availability (HA) is an infrastructure design property that specifies and enforces the conditions under which a system continues delivering its intended service despite component failures, maintenance windows, or demand spikes. HA is quantified by availability targets expressed as 'nines' \u2014 for example 99.9% permits roughly 8.7 hours of downtime per year, while 99.999% ('five nines') permits only 5.26 minutes \u2014 achieved through redundant components, active-active or active-passive failover, continuous health monitoring, and automated recovery orchestration. It is operationalised through the complementary metrics of Mean Time Between Failures (MTBF) and Mean Time To Recovery (MTTR), with recovery time objectives (RTO) and recovery point objectives (RPO) anchoring HA targets to business continuity requirements. HA is a foundational non-functional requirement in cloud-native platforms, telecommunications networks, financial trading systems, and safety-critical infrastructure where service interruption carries regulatory, commercial, or life-safety consequences.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-computing-and-cloud",
@@ -13,10 +13,27 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:failover",
+        "label": "Failover"
+      },
+      {
+        "id": "urn:ngm:class:load-balancing",
+        "label": "Load Balancing"
+      },
+      {
+        "id": "urn:ngm:class:data-replication",
+        "label": "Data Replication"
+      },
+      {
+        "id": "urn:ngm:class:automatic-failover",
+        "label": "Automatic Failover"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:fault-tolerance",
@@ -25,13 +42,61 @@
       {
         "id": "urn:ngm:class:reliability",
         "label": "Reliability"
+      },
+      {
+        "id": "urn:ngm:class:redundancy",
+        "label": "Redundancy"
+      },
+      {
+        "id": "urn:ngm:class:health-monitoring",
+        "label": "Health Monitoring"
       }
     ],
-    "enables": [],
-    "dependsOn": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:business-continuity",
+        "label": "Business Continuity"
+      },
+      {
+        "id": "urn:ngm:class:disaster-recovery",
+        "label": "Disaster Recovery"
+      },
+      {
+        "id": "urn:ngm:class:service-level-agreement",
+        "label": "Service Level Agreement"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:storage-replication",
+        "label": "Storage Replication"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:eventual-consistency",
+        "label": "Eventual Consistency"
+      },
+      {
+        "id": "urn:ngm:class:single-point-of-failure",
+        "label": "Single Point of Failure"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:aiops",
+        "label": "AIOps"
+      },
+      {
+        "id": "urn:ngm:class:predictive-maintenance",
+        "label": "Predictive Maintenance"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:distributed-systems",
@@ -40,19 +105,48 @@
       {
         "id": "urn:ngm:class:cloud-infrastructure",
         "label": "Cloud Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:consensus-algorithms",
+        "label": "Consensus Algorithms"
+      },
+      {
+        "id": "urn:ngm:class:container-orchestration",
+        "label": "Container Orchestration"
       }
     ],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
+    "supports": [
       {
         "id": "urn:ngm:class:microservices-architecture",
         "label": "Microservices Architecture"
       },
       {
-        "id": "urn:ngm:class:data-replication",
-        "label": "Data Replication"
+        "id": "urn:ngm:class:cloud-native",
+        "label": "Cloud Native"
+      },
+      {
+        "id": "urn:ngm:class:site-reliability-engineering",
+        "label": "Site Reliability Engineering"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:chaos-engineering",
+        "label": "Chaos Engineering"
+      },
+      {
+        "id": "urn:ngm:class:service-mesh",
+        "label": "Service Mesh"
+      },
+      {
+        "id": "urn:ngm:class:circuit-breaker-pattern",
+        "label": "Circuit Breaker Pattern"
+      },
+      {
+        "id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
       }
     ]
   },

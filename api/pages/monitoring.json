@@ -4,8 +4,8 @@
   "slug": "monitoring",
   "public": true,
   "classIri": "urn:ngm:class:monitoring",
-  "domain": "software-engineering",
-  "definition": "The continuous observation of a system's state and behaviour through collection of metrics, logs, and events to detect problems and assess health. It supports operations, reliability, and performance management.",
+  "domain": "infrastructure",
+  "definition": "Monitoring is the systematic, continuous observation of computing systems, services, and infrastructure through the collection, aggregation, and analysis of metrics, logs, traces, and events to assess health, detect anomalies, and trigger remediation. It forms the primary feedback loop for operational awareness, enabling engineering teams to distinguish between normal variance and actionable degradation in real time. Monitoring encompasses both active probing (synthetic checks, health endpoints) and passive signal collection (agent-based telemetry, sidecar proxies), unified through time-series storage and alerting pipelines. As systems grow in complexity \u2014 particularly across distributed, containerised, and cloud-native environments \u2014 monitoring has evolved into a multi-signal discipline often grouped under the broader term Observability.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:reliability-engineering",
@@ -13,26 +13,136 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
-  "maturity": "established",
+  "qualityScore": 0.74,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:metrics-collection",
+        "label": "Metrics Collection"
+      },
+      {
+        "id": "urn:ngm:class:log-management",
+        "label": "Log Management"
+      },
+      {
+        "id": "urn:ngm:class:distributed-tracing",
+        "label": "Distributed Tracing"
+      },
+      {
+        "id": "urn:ngm:class:alerting",
+        "label": "Alerting"
+      },
+      {
+        "id": "urn:ngm:class:dashboarding",
+        "label": "Dashboarding"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:time-series-database",
+        "label": "Time-Series Database"
+      },
+      {
+        "id": "urn:ngm:class:instrumentation",
+        "label": "Instrumentation"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:reliability-engineering",
         "label": "Reliability Engineering"
+      },
+      {
+        "id": "urn:ngm:class:incident-management",
+        "label": "Incident Management"
+      },
+      {
+        "id": "urn:ngm:class:capacity-planning",
+        "label": "Capacity Planning"
+      },
+      {
+        "id": "urn:ngm:class:auto-scaling",
+        "label": "Auto-Scaling"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:service-level-objective",
+        "label": "Service Level Objective"
+      },
+      {
+        "id": "urn:ngm:class:real-time-computing",
+        "label": "Real-Time Computing"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:observability",
+        "label": "Observability"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      },
+      {
+        "id": "urn:ngm:class:aiops",
+        "label": "AIOps"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:opentelemetry",
+        "label": "OpenTelemetry"
+      },
+      {
+        "id": "urn:ngm:class:prometheus",
+        "label": "Prometheus"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:devops",
+        "label": "DevOps"
+      },
+      {
+        "id": "urn:ngm:class:site-reliability-engineering",
+        "label": "Site Reliability Engineering"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:opentelemetry",
+        "label": "OpenTelemetry"
+      },
+      {
+        "id": "urn:ngm:class:cloud-native-computing-foundation",
+        "label": "Cloud Native Computing Foundation"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:observability",
+        "label": "Observability"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:service-mesh",
+        "label": "Service Mesh"
+      },
+      {
+        "id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
+      },
+      {
+        "id": "urn:ngm:class:chaos-engineering",
+        "label": "Chaos Engineering"
+      }
+    ]
   },
   "wikilinks": [
     {

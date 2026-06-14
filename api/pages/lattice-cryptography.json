@@ -4,7 +4,7 @@
   "slug": "lattice-cryptography",
   "public": true,
   "classIri": "urn:ngm:class:lattice-cryptography",
-  "domain": "cryptographic",
+  "domain": "security",
   "definition": "A family of cryptographic constructions whose security rests on the hardness of computational problems over high-dimensional lattices, such as learning with errors. These problems are believed to resist attacks by quantum computers.",
   "subClassOf": [
     {

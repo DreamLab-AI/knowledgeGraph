@@ -103,7 +103,7 @@ public:: true
   "@type": "Class",
   "label": "Payment Systems Domain",
   "definition": "The Payment Systems Domain classifies concepts concerned with the transfer and settlement of monetary value between parties. It covers payment instruments, clearing and settlement arrangements, and the rails over which value moves, including both ledger-based and conventional channels. As a subject classification under the Blockchain Domain, it scopes the movement and finality of value rather than the assets themselves or the regulation that governs them.",
-  "domain": "payment-systems",
+  "domain": "finance",
   "maturity": "emerging",
   "qualityScore": 0.7,
   "subClassOf": [

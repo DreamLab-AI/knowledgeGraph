@@ -4,7 +4,7 @@
   "slug": "haptic-feedback-system",
   "public": true,
   "classIri": "urn:ngm:class:haptic-feedback-system",
-  "domain": "graphics",
+  "domain": "spatial-computing",
   "definition": "A Haptic Feedback System is a hardware-software assembly that generates controlled tactile and kinaesthetic sensations in response to digital events, using actuator arrays (vibrotactile motors, piezoelectric patches, pneumatic bladders, or shape-memory alloys), real-time rendering engines, and closed-loop sensorimotor control loops to simulate textures, resistances, impacts, and spatial forces for users of VR/AR headsets, surgical simulators, teleoperation systems, and mobile devices. The system comprises transducers that convert electrical signals into mechanical motion, driver electronics that modulate waveform parameters (frequency, amplitude, duration), rendering middleware that maps virtual-world physics to actuator commands, and perceptual models calibrated to human mechanoreceptor response characteristics.",
   "subClassOf": [
     {

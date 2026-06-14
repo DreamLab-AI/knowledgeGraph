@@ -4,7 +4,7 @@
   "slug": "education",
   "public": true,
   "classIri": "urn:ngm:class:education",
-  "domain": "education",
+  "domain": "governance",
   "definition": "Education is the structured process of facilitating learning, knowledge and skills through teaching, study and training. It occurs in formal institutions and through informal and online means.",
   "subClassOf": [
     {

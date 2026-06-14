@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:synthetic-data",
   "domain": "artificial-intelligence",
-  "definition": "Synthetic data is algorithmically generated content that preserves the statistical properties, distributional characteristics, and structural patterns of real-world datasets without containing actual personal or proprietary records. It is produced using techniques such as generative adversarial networks, diffusion models, and rule-based simulators, and serves to augment scarce training data, enable privacy-compliant data sharing, and stress-test machine-learning pipelines with rare or hazardous edge-case scenarios.",
+  "definition": "Synthetic data is algorithmically generated content that preserves the statistical properties, distributional characteristics, and structural patterns of real-world datasets without containing actual personal or proprietary records. It is produced using techniques such as generative adversarial networks, variational autoencoders, diffusion models, rule-based simulators, and statistical resampling methods. Synthetic data serves to augment scarce or imbalanced training corpora, enable privacy-compliant data sharing under regulations such as GDPR, and stress-test machine-learning pipelines with rare, hazardous, or counterfactual edge-case scenarios. Quality is typically benchmarked via fidelity metrics such as Fr\u00e9chet Inception Distance, train-on-synthetic-test-on-real accuracy, and statistical divergence measures.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-technique",
@@ -13,25 +13,73 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.73,
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:generative-model",
+        "label": "Generative Model"
+      },
+      {
+        "id": "urn:ngm:class:statistical-distribution",
+        "label": "Statistical Distribution"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:federated-learning",
         "label": "Federated Learning"
       },
       {
-        "id": "urn:ngm:class:data-augmentation-strategies",
-        "label": "Data Augmentation Strategies"
+        "id": "urn:ngm:class:data-augmentation",
+        "label": "Data Augmentation"
+      },
+      {
+        "id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      },
+      {
+        "id": "urn:ngm:class:privacy-preserving-machine-learning",
+        "label": "Privacy-Preserving Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:sim-to-real-transfer",
+        "label": "Sim-to-Real Transfer"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:fidelity-evaluation",
+        "label": "Fidelity Evaluation"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:real-world-data",
+        "label": "Real-World Data"
+      },
+      {
+        "id": "urn:ngm:class:data-anonymisation",
+        "label": "Data Anonymisation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:simulation-environment",
+        "label": "Simulation Environment"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:generative-adversarial-network",
@@ -40,9 +88,30 @@
       {
         "id": "urn:ngm:class:diffusion-model",
         "label": "Diffusion Model"
+      },
+      {
+        "id": "urn:ngm:class:variational-autoencoder",
+        "label": "Variational Autoencoder"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       }
     ],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:autonomous-systems",
+        "label": "Autonomous Systems"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:drug-discovery",
+        "label": "Drug Discovery"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
@@ -53,6 +122,14 @@
       {
         "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:bias-in-ai",
+        "label": "Bias in AI"
       }
     ]
   },

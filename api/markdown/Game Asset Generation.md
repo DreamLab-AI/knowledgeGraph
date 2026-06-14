@@ -21,7 +21,7 @@ public:: true
   "@type": "Class",
   "label": "Game Asset Generation",
   "definition": "Game asset generation is the automated or semi-automated production of digital resources — including 3D meshes, textures, animations, sound effects, and narrative content — used in interactive entertainment, employing procedural algorithms, machine learning models, or generative AI to reduce manual authoring costs, accelerate iteration cycles, and enable content scale impossible through purely human workflows.",
-  "domain": "media",
+  "domain": "metaverse",
   "maturity": "emerging",
   "subClassOf": [{"@id": "urn:ngm:class:procedural-content-generation", "label": "Procedural Content Generation"}],
   "relations": {

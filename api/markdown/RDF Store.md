@@ -63,7 +63,7 @@ public:: true
   "@type": "Class",
   "label": "RDF Store",
   "definition": "A database designed to store and query data expressed as Resource Description Framework triples, typically supporting the SPARQL query language. Also called a triplestore, it manages subject-predicate-object statements rather than rows and tables.",
-  "domain": "general",
+  "domain": "data",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

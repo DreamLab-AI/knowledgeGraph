@@ -4,8 +4,8 @@
   "slug": "observability",
   "public": true,
   "classIri": "urn:ngm:class:observability",
-  "domain": "software-engineering",
-  "definition": "Observability is the property of a software system that allows its internal state to be inferred from external outputs such as logs, metrics, and traces.",
+  "domain": "infrastructure",
+  "definition": "Observability is the capability of a system that allows engineers to infer its internal state and behaviour solely from externally observable outputs \u2014 primarily logs, metrics, and distributed traces. Derived from control-systems theory, it answers whether the complete internal state can be reconstructed from a sequence of outputs. In modern software engineering, observability enables debugging, performance tuning, incident response, and proactive reliability assurance across complex distributed architectures where direct inspection is impractical.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:reliability-engineering",
@@ -13,31 +13,144 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.75,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:logging",
+        "label": "Logging"
+      },
+      {
+        "id": "urn:ngm:class:metrics",
+        "label": "Metrics"
+      },
+      {
+        "id": "urn:ngm:class:distributed-tracing",
+        "label": "Distributed Tracing"
+      },
+      {
+        "id": "urn:ngm:class:alerting",
+        "label": "Alerting"
+      }
+    ],
     "requires": [
       {
-        "id": "urn:ngm:class:performance",
-        "label": "performance"
+        "id": "urn:ngm:class:telemetry",
+        "label": "Telemetry"
+      },
+      {
+        "id": "urn:ngm:class:instrumentation",
+        "label": "Instrumentation"
+      },
+      {
+        "id": "urn:ngm:class:data-collection",
+        "label": "Data Collection"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:site-reliability-engineering",
         "label": "Site Reliability Engineering"
+      },
+      {
+        "id": "urn:ngm:class:incident-response",
+        "label": "Incident Response"
+      },
+      {
+        "id": "urn:ngm:class:capacity-planning",
+        "label": "Capacity Planning"
+      },
+      {
+        "id": "urn:ngm:class:chaos-engineering",
+        "label": "Chaos Engineering"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:opentelemetry",
+        "label": "OpenTelemetry"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:monitoring",
+        "label": "Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:debugging",
+        "label": "Debugging"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-operations",
+        "label": "Machine Learning Operations"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:time-series-database",
+        "label": "Time-Series Database"
+      },
+      {
+        "id": "urn:ngm:class:log-aggregation",
+        "label": "Log Aggregation"
+      },
+      {
+        "id": "urn:ngm:class:service-mesh",
+        "label": "Service Mesh"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:devops",
+        "label": "DevOps"
+      },
+      {
+        "id": "urn:ngm:class:continuous-delivery",
+        "label": "Continuous Delivery"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:opentelemetry",
+        "label": "OpenTelemetry"
+      },
+      {
+        "id": "urn:ngm:class:cloud-native-computing-foundation",
+        "label": "Cloud Native Computing Foundation"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:performance",
+        "label": "Performance"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:service-level-objective",
+        "label": "Service Level Objective"
+      }
+    ]
   },
   "wikilinks": [
     {

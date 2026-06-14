@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:net-zero-targets",
   "domain": "governance",
-  "definition": "Net Zero Targets are formal commitments made by governments, corporations, or other entities to reduce greenhouse gas emissions to the point where residual emissions are balanced by equivalent carbon removals, achieving a net-zero contribution to atmospheric greenhouse gas concentrations by a specified date. These targets typically distinguish between near-term absolute reduction milestones and longer-term residual offset strategies, and are aligned with the IPCC's pathways to limiting global warming to 1.5 \u00b0C.",
+  "definition": "Net Zero Targets are formal, time-bound commitments made by governments, corporations, subnational jurisdictions, or other entities to reduce gross greenhouse gas emissions as deeply as feasible and to balance any residual emissions with equivalent, verified carbon removals, thereby reaching a net-zero contribution to atmospheric greenhouse gas concentrations by a specified date. They typically distinguish near-term absolute reduction milestones across Scope 1, 2, and 3 emissions from longer-term residual-offset strategies, and are calibrated against the IPCC's 1.5 \u00b0C-consistent pathways. Credible targets are characterised by transparent interim milestones, independent third-party verification, and a clear accounting boundary that separates genuine emission reductions from carbon offsetting.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:climate-commitments",
@@ -13,46 +13,128 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.74,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:carbon-accounting",
+        "label": "Carbon Accounting"
+      },
+      {
+        "id": "urn:ngm:class:greenhouse-gas-emissions",
+        "label": "Greenhouse Gas Emissions"
+      },
+      {
+        "id": "urn:ngm:class:third-party-verification",
+        "label": "Third-Party Verification"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:climate-change-mitigation",
+        "label": "Climate Change Mitigation"
+      },
+      {
+        "id": "urn:ngm:class:green-finance",
+        "label": "Green Finance"
+      },
+      {
+        "id": "urn:ngm:class:low-carbon-transition",
+        "label": "Low-Carbon Transition"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:renewable-energy",
+        "label": "Renewable Energy"
+      },
+      {
+        "id": "urn:ngm:class:energy-efficiency",
+        "label": "Energy Efficiency"
+      },
+      {
+        "id": "urn:ngm:class:voluntary-carbon-market",
+        "label": "Voluntary Carbon Market"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:carbon-neutrality",
+        "label": "Carbon Neutrality"
+      },
+      {
+        "id": "urn:ngm:class:climate-pledges",
+        "label": "Climate Pledges"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:esg-reporting",
+        "label": "ESG Reporting"
+      },
+      {
+        "id": "urn:ngm:class:climate-risk-disclosure",
+        "label": "Climate Risk Disclosure"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:carbon-offsetting",
         "label": "Carbon Offsetting"
       },
       {
-        "id": "urn:ngm:class:net-zero-target-setting",
-        "label": "Net Zero Target Setting"
-      }
-    ],
-    "supports": [
+        "id": "urn:ngm:class:science-based-targets",
+        "label": "Science Based Targets"
+      },
       {
-        "id": "urn:ngm:class:climate-change-mitigation",
-        "label": "Climate Change Mitigation"
+        "id": "urn:ngm:class:carbon-removal",
+        "label": "Carbon Removal"
       }
     ],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
+    "supports": [],
+    "standardizedBy": [
       {
         "id": "urn:ngm:class:paris-agreement",
         "label": "Paris Agreement"
       },
       {
-        "id": "urn:ngm:class:voluntary-carbon-market",
-        "label": "Voluntary Carbon Market"
+        "id": "urn:ngm:class:science-based-targets-initiative",
+        "label": "Science Based Targets Initiative"
       },
+      {
+        "id": "urn:ngm:class:ifrs-sustainability-standards",
+        "label": "IFRS Sustainability Standards"
+      }
+    ],
+    "partOf": [
       {
         "id": "urn:ngm:class:climate-policy",
         "label": "Climate Policy"
+      },
+      {
+        "id": "urn:ngm:class:sustainable-development",
+        "label": "Sustainable Development"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:nationally-determined-contributions",
+        "label": "Nationally Determined Contributions"
+      },
+      {
+        "id": "urn:ngm:class:scope-3-emissions",
+        "label": "Scope 3 Emissions"
+      },
+      {
+        "id": "urn:ngm:class:just-transition",
+        "label": "Just Transition"
+      },
+      {
+        "id": "urn:ngm:class:greenwashing",
+        "label": "Greenwashing"
       }
     ]
   },

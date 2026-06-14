@@ -4,7 +4,7 @@
   "slug": "deep-learning-framework",
   "public": true,
   "classIri": "urn:ngm:class:deep-learning-framework",
-  "domain": "deep-learning",
+  "domain": "machine-learning",
   "definition": "A software library that provides the building blocks for defining, training and deploying deep neural networks, including tensor operations, automatic differentiation and hardware acceleration.",
   "subClassOf": [
     {

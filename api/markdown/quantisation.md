@@ -1,25 +1,120 @@
 - ### Definition
-  - Quantisation is a model compression technique that reduces the numerical precision of a neural network's weights and, optionally, activations from the floating-point formats used during training (typically FP32 or BF16) to lower bit-widths such as INT8, INT4, or binary representations. This reduction decreases memory consumption and accelerates matrix operations on hardware with native low-precision arithmetic units, enabling deployment of large models on memory-constrained devices with minimal accuracy degradation. Techniques include post-training quantisation (PTQ) and quantisation-aware training (QAT), which differ in when the precision reduction is applied relative to the training process.
+  - Quantisation is a [[Model Compression]] technique that maps the continuous high-precision numerical representations of a [[Neural Network]]'s weights and activations — typically stored as [[FP32]] or [[BF16]] during [[Training]] — onto a discrete lower-bit grid (e.g. INT8, INT4, [[FP8]], or binary). The operation is governed by a learned or calibrated scale factor and zero-point pair per tensor or channel, bounding the quantisation error introduced. The result is a compressed model that requires less memory bandwidth, benefits from integer or low-precision SIMD/MAC units on [[Hardware Acceleration]] targets, and can run efficiently on [[Edge AI Accelerator]] platforms and mobile SoCs, often at the cost of only marginal accuracy loss when calibration is performed correctly.
 
-- ### Semantic Classification
-  - owl-class:: quantisation:Quantisation
-  - owl-role:: Concept
+- ### Overview
+  - Quantisation addresses one of the core deployment bottlenecks of modern deep learning: large [[Neural Network]] models demand gigabytes of memory and billions of floating-point operations, making real-time [[Inference]] on constrained hardware difficult.
+  - By replacing 32-bit or 16-bit float parameters with 8-bit integers or smaller representations, quantisation reduces:
+    - **Memory footprint** — an INT8 model occupies one quarter the storage of an FP32 equivalent.
+    - **Compute cost** — integer multiply-accumulate (MAC) units are cheaper in silicon area and power than floating-point units.
+    - **Memory bandwidth** — fetching narrower weights from DRAM consumes less energy and time, crucial for bandwidth-bound [[Transformer]] decode steps.
+  - The technique originates in [[Digital Signal Processing]] and [[Fixed-Point Arithmetic]] theory but has been re-developed extensively for [[Deep Learning]] from roughly 2017 onward, reaching mainstream deployment status across the entire [[Machine Learning]] industry.
+  - Major inference frameworks — [[TensorFlow Lite]], [[ONNX Runtime]], [[TensorRT]], [[llama.cpp]], and [[ExLlamaV2]] — include first-class quantisation support.
+  - Quantisation is now considered an **established** technique: INT8 is ubiquitous; INT4 and FP8 are mature for [[Large Language Model]] inference; sub-4-bit regimes remain an active research area.
+
+- ### Key Mechanisms
+  - #### Uniform Affine Quantisation
+    - The most common scheme: a real value `x` is mapped to an integer `q` via `q = round(x / S) + Z` where `S` is the scale and `Z` the zero-point.
+    - **Symmetric** quantisation sets `Z = 0`, simplifying hardware implementation; used widely for weights.
+    - **Asymmetric** quantisation allows a non-zero zero-point, better capturing skewed activation distributions.
+  - #### Granularity
+    - **Per-tensor**: a single scale for the whole weight matrix — fastest but least accurate.
+    - **Per-channel (per-output-neuron)**: one scale per output channel — standard for convolutional and linear layers.
+    - **Group quantisation**: a scale per small block of weights (e.g. groups of 128 values) — used by [[GPTQ]], [[AWQ]], and [[GGUF]] formats to reduce error in aggressive INT4 regimes.
+  - #### Post-Training Quantisation (PTQ)
+    - Applied to a pre-trained model without gradient updates.
+    - Relies on a small **calibration dataset** to profile activation ranges and set scale factors.
+    - Variants: [[GPTQ]] (layer-wise optimal brain compression), [[AWQ]] (activation-aware weight quantisation), [[SmoothQuant]] (migrates quantisation difficulty from activations to weights).
+    - Fast to apply but may suffer greater accuracy loss on very small models or heavily quantised activations.
+  - #### Quantisation-Aware Training (QAT)
+    - Inserts **fake quantisation** operators (straight-through estimator for gradients) into the forward pass during training or fine-tuning.
+    - The model learns to route information through the quantisation grid, yielding higher accuracy at deployment than PTQ for the same bit-width.
+    - Requires access to training data and additional compute; used by [[TensorFlow Lite]] QAT APIs and [[PyTorch]] `torch.ao.quantization`.
+  - #### Mixed-Precision Quantisation
+    - Different layers or tensors quantised to different bit-widths based on sensitivity analysis.
+    - Sensitive layers (e.g. first/last layers, attention keys) retain higher precision; bulk feed-forward layers use aggressive low precision.
+    - Enables a better accuracy-vs-speed trade-off than uniform schemes.
+  - #### Specialised Low-Bit Formats
+    - **FP8 (E4M3 / E5M2)**: supported natively on [[NVIDIA H100]] and later; used in training and inference pipelines, retaining wider dynamic range than INT8.
+    - **INT4 / NF4 (NormalFloat4)**: introduced by [[QLoRA]] for fine-tuning; captures near-Gaussian weight distributions efficiently.
+    - **Binary / Ternary**: extreme compression (1–2 bits) for research models; accuracy constraints limit mainstream adoption.
+    - **GGUF / GGML quantisation formats**: community formats used by [[llama.cpp]] covering Q4_K_M, Q5_K, Q8_0, etc., with group quantisation built in.
+
+- ### Applications and Use Cases
+  - #### Large Language Model (LLM) Inference
+    - [[Large Language Model]] deployment on consumer GPUs (e.g. 70B parameter models on a single RTX 4090) relies on INT4 quantisation via [[GPTQ]] or [[AWQ]].
+    - [[llama.cpp]] and [[Ollama]] use GGUF-quantised models to run [[Transformer]] models on CPU and Apple Silicon.
+    - Cloud providers apply INT8/FP8 server-side to maximise batch throughput on A100/H100 clusters.
+  - #### Edge and Mobile Deployment
+    - [[On-Device AI]] on smartphones (Qualcomm Hexagon DSP, Apple Neural Engine, MediaTek APU) requires INT8 or INT4 models.
+    - [[TensorFlow Lite]] and [[ONNX Runtime]] Mobile ship quantisation pipelines targeting ARM [[Edge AI Accelerator]] hardware.
+    - Wearable and IoT devices may use binary or 4-bit models for keyword detection or anomaly classification.
+  - #### Vision Models
+    - [[Convolutional Neural Network]] models for object detection, segmentation, and image classification quantise well to INT8, enabling real-time [[Computer Vision]] on embedded processors.
+    - [[Diffusion Model]] quantisation (INT8 UNet, FP8 text encoder) accelerates image generation without perceptible quality loss.
+  - #### Audio and Speech
+    - [[Automatic Speech Recognition]] models (e.g. [[Whisper]]) are quantised for deployment on embedded DSPs and smartphones.
+    - Text-to-speech synthesis pipelines benefit from INT8 quantisation of the vocoder.
+  - #### Recommendation Systems
+    - Embedding tables in large-scale recommendation models are quantised to reduce DRAM footprint on serving infrastructure.
 
 - ### Relationships
-  - enables [[Inference]]
-  - enables [[Edge AI Accelerator]]
-  - relatedTo [[Knowledge Distillation]]
-  - relatedTo [[Model Compression for Edge]]
-  - relatedTo [[Neural Network Quantisation]]
-  - uses [[Hardware Acceleration]]
+  - hasPart:: [[Post-Training Quantisation]]
+  - hasPart:: [[Quantisation-Aware Training]]
+  - hasPart:: [[Mixed-Precision Quantisation]]
+  - partOf:: [[Model Compression]]
+  - partOf:: [[MLOps]]
+  - requires:: [[Calibration Dataset]]
+  - requires:: [[Scale Factor]]
+  - enables:: [[Inference]]
+  - enables:: [[Edge AI Accelerator]]
+  - enables:: [[On-Device AI]]
+  - enables:: [[Large Language Model Deployment]]
+  - dependsOn:: [[Hardware Acceleration]]
+  - dependsOn:: [[Floating-Point Arithmetic]]
+  - uses:: [[Hardware Acceleration]]
+  - uses:: [[Tensor Decomposition]]
+  - contrastsWith:: [[Knowledge Distillation]]
+  - contrastsWith:: [[Pruning]]
+  - contrastsWith:: [[Low-Rank Factorisation]]
+  - relatedTo:: [[Model Compression for Edge]]
+  - relatedTo:: [[Transformer]]
+  - relatedTo:: [[Large Language Model]]
+  - relatedTo:: [[Neural Architecture Search]]
+  - relatedTo:: [[Speculative Decoding]]
+  - bridges-to:: [[Digital Signal Processing]]
+  - bridges-to:: [[Fixed-Point Arithmetic]]
 
-- ### Content
-  Quantisation is one of the most widely deployed techniques for reducing the compute and memory cost of large neural networks at inference time. The fundamental operation maps continuous floating-point values to a discrete grid defined by a scale factor and zero point, introducing bounded quantisation error that manifests as accuracy degradation. Symmetric INT8 quantisation of weights is near-lossless for many transformer architectures; aggressive INT4 or even 2-bit quantisation of large language models requires calibration techniques such as GPTQ or AWQ to redistribute error across weight matrices.
+- ### Key Algorithms and Tools
+  - **[[GPTQ]]** — layer-wise optimal quantisation using approximate second-order information; widely used for INT4 [[Large Language Model]] quantisation.
+  - **[[AWQ]] (Activation-Aware Weight Quantisation)** — protects salient weights identified via activation magnitudes; yields strong INT4 accuracy.
+  - **[[SmoothQuant]]** — mathematically migrates quantisation difficulty from activations to weights via per-channel smoothing, enabling INT8-only quantisation of both weights and activations.
+  - **[[QLoRA]]** — combines 4-bit NormalFloat quantisation (NF4) with [[Low-Rank Adaptation]] for memory-efficient fine-tuning of [[Large Language Model]]s.
+  - **[[llama.cpp]] / GGUF** — CPU-focussed inference runtime with a rich set of group quantisation formats (Q4_K_M, Q5_K_S, Q8_0 etc.).
+  - **[[ExLlamaV2]]** — GPU-optimised kernels for group quantised [[Transformer]] inference.
+  - **[[TensorRT]]** — NVIDIA's deployment framework with INT8/FP8 calibration pipelines for production inference.
+  - **[[PyTorch]] `torch.ao.quantization`** — canonical PyTorch API for both PTQ and QAT.
+  - **[[TensorFlow Lite]]** — provides post-training integer quantisation and QAT for mobile/edge deployment.
+  - **[[ONNX Runtime]]** — cross-framework INT8 quantisation with operator-level precision control.
+  - **[[Bitsandbytes]]** — library providing 8-bit and 4-bit optimisers and linear layers for [[Large Language Model]] fine-tuning.
 
-  Post-training quantisation applies precision reduction to a trained model without additional gradient updates, relying on calibration datasets to set per-tensor or per-channel scaling parameters. Quantisation-aware training simulates low-precision arithmetic during the forward pass using fake quantisation operators, allowing the model to adapt its weight distributions to minimise post-deployment error. Mixed-precision schemes — quantising less sensitive layers more aggressively — offer further flexibility.
+- ### Standards and Context
+  - **IEEE 754** defines the floating-point formats (FP32, FP16, BF16) from which quantisation departs.
+  - **ONNX INT8 operator specification** standardises quantised convolution, matmul, and LSTM operators across frameworks.
+  - **MLPerf Inference** benchmarks include INT8 quantised submissions as a distinct category, providing industry-wide performance comparison data.
+  - **ARM NN / CMSIS-NN** provide reference INT8 kernels for Cortex-M class microcontrollers.
+  - **NVIDIA cuDNN and cuBLAS** expose INT8 and FP8 tensor core paths used by [[TensorRT]] and [[PyTorch]] backends.
+  - The [[Open Neural Network Exchange]] (ONNX) format supports per-tensor and per-channel quantisation metadata.
+  - Industry adoption is so widespread that INT8 [[Inference]] is now a baseline expectation for production ML systems, reflected in hardware roadmaps from NVIDIA, Intel, Qualcomm, Apple, and ARM.
 
-  On modern AI accelerators (e.g. NVIDIA Hopper's FP8 support, ARM Ethos-U65), native low-precision hardware paths deliver significant throughput improvements. Quantisation interacts closely with knowledge distillation — smaller student models may be distilled and then quantised — and with model pruning, forming a complementary suite of compression techniques for edge and mobile deployment.
+- ### Limitations and Trade-offs
+  - **Accuracy degradation**: aggressive bit-width reduction (INT4 or lower) can cause measurable task accuracy loss, particularly on small models or tasks with narrow decision boundaries.
+  - **Calibration sensitivity**: PTQ quality depends heavily on the representativeness of the calibration dataset; distribution mismatch can cause significant accuracy drops.
+  - **Activation quantisation difficulty**: weights are typically static and easy to calibrate; activations vary at runtime, making accurate range estimation harder.
+  - **Kernel availability**: not all operators have optimised low-precision implementations on all hardware targets; some layers may fall back to floating-point, reducing net speedup.
+  - **Outlier handling**: [[Transformer]] models exhibit large activation outliers that break uniform quantisation grids; algorithms like [[SmoothQuant]] and [[LLM.int8()]] specifically address this.
+  - **Format fragmentation**: the proliferation of GGUF variants, GPTQ formats, AWQ formats, and framework-native formats creates interoperability friction.
 
 - ### Provenance
-  - sources::
+  - sources:: IEEE 754, ONNX operator spec, PyTorch documentation, NVIDIA TensorRT documentation, Hugging Face Optimum, llama.cpp project, MLPerf Inference benchmark suite
+  - updated:: 2026-06-13
   - migration-date:: 2026-05-19T00:00:00Z

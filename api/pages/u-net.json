@@ -4,7 +4,7 @@
   "slug": "u-net",
   "public": true,
   "classIri": "urn:ngm:class:u-net",
-  "domain": "computer-vision",
+  "domain": "ai",
   "definition": "A convolutional neural network architecture with a symmetric encoder-decoder structure and skip connections, originally designed for biomedical image segmentation.",
   "subClassOf": [
     {

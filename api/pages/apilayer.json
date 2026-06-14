@@ -4,7 +4,7 @@
   "slug": "apilayer",
   "public": true,
   "classIri": "urn:ngm:class:apilayer",
-  "domain": "apilayer",
+  "domain": "infrastructure",
   "definition": "The API Layer is the stratum that exposes a system's capabilities as callable, contractually defined endpoints. It sits above the application logic it fronts and below integration and interface strata that connect consumers. It contains endpoint definitions, request and response schemas, authentication hooks, and versioning.",
   "subClassOf": [
     {

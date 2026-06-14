@@ -59,7 +59,7 @@ public:: true
   "@type": "Class",
   "label": "Pathfinding",
   "definition": "Pathfinding is the computation of a route between two points in a graph or space, often the shortest or lowest-cost route. It is widely used in games, robotics, and navigation.",
-  "domain": "general",
+  "domain": "ai",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

@@ -4,40 +4,133 @@
   "slug": "sae-j-3016",
   "public": true,
   "classIri": "urn:ngm:class:sae-j-3016",
-  "domain": "general",
-  "definition": "A standard published by SAE International defining six levels of driving automation, from no automation to full automation, used as a common reference for vehicle autonomy.",
+  "domain": "standards",
+  "definition": "SAE J3016 is a foundational technical standard published by SAE International that defines a six-level taxonomy of driving automation, ranging from Level 0 (no automation) through Level 5 (full automation), by specifying the allocation of the dynamic driving task between the human driver and the automated driving system. First issued in 2014 and subsequently revised in 2016, 2018, and 2021, the standard establishes precise vocabulary \u2014 including terms such as dynamic driving task, operational design domain, and minimal risk condition \u2014 that underpins regulatory frameworks, vehicle development programmes, and public communication about autonomous and semi-autonomous vehicles worldwide. The taxonomy distinguishes Levels 1\u20132, where a human driver must supervise and remain ready to intervene, from Levels 3\u20135, where the automated system assumes full authority over the driving task within a defined operational design domain.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:standards-body",
-      "label": "Standards Body"
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.75,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:dynamic-driving-task",
+        "label": "Dynamic Driving Task"
+      },
+      {
+        "id": "urn:ngm:class:operational-design-domain",
+        "label": "Operational Design Domain"
+      },
+      {
+        "id": "urn:ngm:class:minimal-risk-condition",
+        "label": "Minimal Risk Condition"
+      }
+    ],
     "requires": [
       {
-        "id": "urn:ngm:class:standards-body",
-        "label": "Standards Body"
+        "id": "urn:ngm:class:advanced-driver-assistance-system",
+        "label": "Advanced Driver Assistance System"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:autonomous-vehicle",
         "label": "Autonomous Vehicle"
+      },
+      {
+        "id": "urn:ngm:class:self-driving-car",
+        "label": "Self-Driving Car"
+      },
+      {
+        "id": "urn:ngm:class:vehicle-certification",
+        "label": "Vehicle Certification"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "implements": [
+      {
+        "id": "urn:ngm:class:driving-automation-taxonomy",
+        "label": "Driving Automation Taxonomy"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:bast-automation-levels",
+        "label": "BASt Automation Levels"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:object-and-event-detection-and-response",
+        "label": "Object and Event Detection and Response"
+      },
+      {
+        "id": "urn:ngm:class:human-machine-interface",
+        "label": "Human-Machine Interface"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:automotive-safety-standard",
+        "label": "Automotive Safety Standard"
+      },
+      {
+        "id": "urn:ngm:class:iso-26262",
+        "label": "ISO 26262"
+      },
+      {
+        "id": "urn:ngm:class:unece-regulation",
+        "label": "UNECE Regulation"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:sae-international",
+        "label": "SAE International"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:autonomous-vehicle-regulation",
+        "label": "Autonomous Vehicle Regulation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:vehicle-safety",
+        "label": "Vehicle Safety"
+      },
+      {
+        "id": "urn:ngm:class:lidar",
+        "label": "LiDAR"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
+      }
+    ]
   },
   "wikilinks": [
     {

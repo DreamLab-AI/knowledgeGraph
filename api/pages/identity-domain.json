@@ -4,7 +4,7 @@
   "slug": "identity-domain",
   "public": true,
   "classIri": "urn:ngm:class:identity-domain",
-  "domain": "identity",
+  "domain": "security",
   "definition": "The Identity Domain classifies concepts concerning the representation, verification and management of the identities of people, organisations and devices. It covers credentials, authentication assurance and the lifecycle of identity records and their attributes. As a top-level subject axis it provides the foundation on which access control, accountability and personalisation depend.",
   "subClassOf": [
     {

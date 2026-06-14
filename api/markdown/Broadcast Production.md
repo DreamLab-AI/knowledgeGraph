@@ -21,7 +21,7 @@ public:: true
   "@type": "Class",
   "label": "Broadcast Production",
   "definition": "Broadcast Production is the end-to-end process of creating, processing, and distributing audio-visual content for transmission to audiences over television, radio, or internet broadcast channels, encompassing pre-production planning, live or recorded acquisition, signal processing, editing, graphics integration, encoding, and playout to distribution networks. It operates under stringent real-time constraints and technical quality standards defined by regulatory and industry bodies.",
-  "domain": "media",
+  "domain": "metaverse",
   "maturity": "mature",
   "subClassOf": [
     {"@id": "urn:ngm:class:production-pipeline", "label": "Production Pipeline"}

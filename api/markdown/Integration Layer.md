@@ -63,7 +63,7 @@ public:: true
   "@type": "Class",
   "label": "Integration Layer",
   "definition": "The Integration Layer is the cross-cutting stratum that connects otherwise independent systems so they can exchange data and invoke each other's functions. It sits above transport and protocol concerns and below the applications that orchestrate combined behaviour. It contains adapters, connectors, message translation, and the routing that mediates between heterogeneous endpoints.",
-  "domain": "integration",
+  "domain": "infrastructure",
   "maturity": "emerging",
   "qualityScore": 0.7,
   "subClassOf": [

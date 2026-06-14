@@ -4,32 +4,122 @@
   "slug": "software-testing",
   "public": true,
   "classIri": "urn:ngm:class:software-testing",
-  "domain": "spatial-computing",
-  "definition": "Software Testing is the systematic process of executing a software system or component under specified conditions, observing its behaviour, and evaluating whether it meets defined requirements. It encompasses unit, integration, system, and acceptance testing, as well as performance, security, and regression testing, forming a quality gate in the development lifecycle.",
+  "domain": "infrastructure",
+  "definition": "Software Testing is the systematic discipline of evaluating software systems and components by executing them under controlled conditions, observing emergent behaviour, and verifying conformance to specified requirements, design intent, and quality attributes. It encompasses a hierarchy of test granularity \u2014 from unit and integration tests that validate individual components to system, end-to-end, and acceptance tests that assess the complete product \u2014 as well as specialised dimensions such as performance, security, accessibility, regression, and exploratory testing. Testing is an integral quality assurance mechanism embedded throughout the software development lifecycle, supporting early defect detection, risk mitigation, and continuous delivery. Alongside static analysis and formal verification, it constitutes the primary empirical evidence base for software correctness and reliability.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:sc-content-and-assets",
-      "label": "Content and Assets"
+      "id": "urn:ngm:class:software-quality-assurance",
+      "label": "Software Quality Assurance"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:unit-testing",
+        "label": "Unit Testing"
+      },
+      {
+        "id": "urn:ngm:class:integration-testing",
+        "label": "Integration Testing"
+      },
+      {
+        "id": "urn:ngm:class:system-testing",
+        "label": "System Testing"
+      },
+      {
+        "id": "urn:ngm:class:acceptance-testing",
+        "label": "Acceptance Testing"
+      },
+      {
+        "id": "urn:ngm:class:regression-testing",
+        "label": "Regression Testing"
+      },
+      {
+        "id": "urn:ngm:class:performance-testing",
+        "label": "Performance Testing"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:test-automation",
+        "label": "Test Automation"
+      },
+      {
+        "id": "urn:ngm:class:test-data-management",
+        "label": "Test Data Management"
+      }
+    ],
     "enables": [
+      {
+        "id": "urn:ngm:class:continuous-delivery",
+        "label": "Continuous Delivery"
+      },
+      {
+        "id": "urn:ngm:class:defect-detection",
+        "label": "Defect Detection"
+      },
+      {
+        "id": "urn:ngm:class:software-reliability",
+        "label": "Software Reliability"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:requirements-engineering",
+        "label": "Requirements Engineering"
+      },
+      {
+        "id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:static-analysis",
+        "label": "Static Analysis"
+      },
+      {
+        "id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-testing",
+        "label": "AI Testing"
+      },
       {
         "id": "urn:ngm:class:digital-twin",
         "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:simulation",
+        "label": "Simulation"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:test-driven-development",
+        "label": "Test-Driven Development"
+      },
+      {
+        "id": "urn:ngm:class:mock-objects",
+        "label": "Mock Objects"
+      },
+      {
+        "id": "urn:ngm:class:code-coverage",
+        "label": "Code Coverage"
+      }
+    ],
     "supports": [
+      {
+        "id": "urn:ngm:class:software-security",
+        "label": "Software Security"
+      },
       {
         "id": "urn:ngm:class:robustness",
         "label": "Robustness"
@@ -39,16 +129,34 @@
         "label": "Safety"
       }
     ],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
+    "standardizedBy": [
       {
-        "id": "urn:ngm:class:simulation",
-        "label": "Simulation"
+        "id": "urn:ngm:class:iso-iec-29119",
+        "label": "ISO/IEC 29119"
       },
       {
-        "id": "urn:ngm:class:xr-testing-infrastructure",
-        "label": "XR Testing Infrastructure"
+        "id": "urn:ngm:class:ieee-829",
+        "label": "IEEE 829"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:software-development-lifecycle",
+        "label": "Software Development Lifecycle"
+      },
+      {
+        "id": "urn:ngm:class:continuous-integration",
+        "label": "Continuous Integration"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:devops",
+        "label": "DevOps"
+      },
+      {
+        "id": "urn:ngm:class:agile-development",
+        "label": "Agile Development"
       }
     ]
   },

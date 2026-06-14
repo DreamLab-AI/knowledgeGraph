@@ -59,7 +59,7 @@ public:: true
   "@type": "Class",
   "label": "X.509 Certificate",
   "definition": "A standardised digital certificate format that binds a public key to an identity and is signed by a certificate authority within a public key infrastructure.",
-  "domain": "cryptographic",
+  "domain": "security",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

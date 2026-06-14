@@ -4,20 +4,50 @@
   "slug": "ai-inference",
   "public": true,
   "classIri": "urn:ngm:class:ai-inference",
-  "domain": "ai",
-  "definition": "AI Inference is the operational phase of a machine learning system in which a trained model processes new input data to generate predictions, classifications, embeddings, or generative outputs \u2014 as distinct from the training phase in which model parameters are optimised. It is the production-time workload that determines the latency, throughput, cost, and scalability characteristics experienced by end users and downstream systems.",
+  "domain": "machine-learning",
+  "definition": "AI Inference is the operational phase of a machine learning system in which a trained model processes new input data to generate predictions, classifications, embeddings, or generative outputs \u2014 as distinct from the training phase in which model parameters are optimised. It is the production-time workload that determines the latency, throughput, cost, and scalability characteristics experienced by end users and downstream systems. Inference encompasses the full serving stack: model loading and memory management, request batching, hardware-specific kernel execution, and output post-processing. Modern inference optimisation techniques \u2014 including quantisation, speculative decoding, continuous batching, and KV-cache management \u2014 are essential for deploying large models at commercially viable cost.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ai-machine-learning",
-      "label": "Ai Machine Learning"
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.75,
   "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:kv-cache",
+        "label": "KV Cache"
+      },
+      {
+        "id": "urn:ngm:class:speculative-decoding",
+        "label": "Speculative Decoding"
+      },
+      {
+        "id": "urn:ngm:class:continuous-batching",
+        "label": "Continuous Batching"
+      },
+      {
+        "id": "urn:ngm:class:prefix-caching",
+        "label": "Prefix Caching"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:model-weights",
+        "label": "Model Weights"
+      },
+      {
+        "id": "urn:ngm:class:inference-runtime",
+        "label": "Inference Runtime"
+      },
+      {
+        "id": "urn:ngm:class:hardware-accelerator",
+        "label": "Hardware Accelerator"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:real-time-ai-inference",
@@ -26,12 +56,51 @@
       {
         "id": "urn:ngm:class:generative-ai",
         "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-agents",
+        "label": "Autonomous Agents"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      },
+      {
+        "id": "urn:ngm:class:fine-tuning",
+        "label": "Fine-Tuning"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:gpu-acceleration",
@@ -44,6 +113,14 @@
       {
         "id": "urn:ngm:class:ai-model-architecture",
         "label": "AI Model Architecture"
+      },
+      {
+        "id": "urn:ngm:class:tensor-parallelism",
+        "label": "Tensor Parallelism"
+      },
+      {
+        "id": "urn:ngm:class:quantisation",
+        "label": "Quantisation"
       }
     ],
     "supports": [],
@@ -53,6 +130,22 @@
       {
         "id": "urn:ngm:class:edge-computing",
         "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      },
+      {
+        "id": "urn:ngm:class:model-serving",
+        "label": "Model Serving"
+      },
+      {
+        "id": "urn:ngm:class:on-device-ai",
+        "label": "On-Device AI"
+      },
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
       }
     ]
   },

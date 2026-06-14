@@ -50,10 +50,10 @@ public:: true
   "@id": "urn:ngm:class:breez",
   "@type": "Class",
   "label": "Breez",
-  "definition": "Breez is a company that develops a non-custodial Lightning Network wallet and software development kit for Bitcoin payments.",
+  "definition": "Breez is a company and open-source platform providing a non-custodial [[Lightning Network]] wallet and a [[Software Development Kit]] (SDK) that enables developers to embed Bitcoin Lightning payments into applications without managing node infrastructure. Breez operates as a Lightning Service Provider (LSP), handling inbound liquidity and channel management on behalf of users while users retain sole custody of their private keys. The Breez SDK abstracts away the complexity of [[Payment Channel]] lifecycle management, splicing, and [[Liquidity]] provisioning, exposing a clean API for instant, low-fee Bitcoin payments. Its architecture is grounded in the [[LNURL]] protocol suite and [[Greenlight]] node-as-a-service infrastructure from Blockstream.",
   "domain": "blockchain",
   "maturity": "established",
-  "qualityScore": 0.7,
+  "qualityScore": 0.75,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:lightning-network",
@@ -63,22 +63,142 @@ public:: true
   "relations": {
     "requires": [
       {
-        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol",
+        "@id": "urn:ngm:class:bitcoin",
         "label": "Bitcoin"
+      },
+      {
+        "@id": "urn:ngm:class:payment-channel",
+        "label": "Payment Channel"
+      },
+      {
+        "@id": "urn:ngm:class:liquidity",
+        "label": "Liquidity"
       }
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:payment-channel",
-        "label": "Payment Channel"
+        "@id": "urn:ngm:class:self-custody",
+        "label": "Self-Custody"
+      },
+      {
+        "@id": "urn:ngm:class:instant-payment",
+        "label": "Instant Payment"
+      },
+      {
+        "@id": "urn:ngm:class:non-custodial-wallet",
+        "label": "Non-Custodial Wallet"
+      },
+      {
+        "@id": "urn:ngm:class:mobile-bitcoin-wallet",
+        "label": "Mobile Bitcoin Wallet"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:lnurl",
+        "label": "LNURL"
+      },
+      {
+        "@id": "urn:ngm:class:greenlight",
+        "label": "Greenlight"
+      },
+      {
+        "@id": "urn:ngm:class:bolt11",
+        "label": "BOLT11"
+      },
+      {
+        "@id": "urn:ngm:class:bolt12",
+        "label": "BOLT12"
+      },
+      {
+        "@id": "urn:ngm:class:submarine-swap",
+        "label": "Submarine Swap"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:lightning-service-provider",
+        "label": "Lightning Service Provider"
+      },
+      {
+        "@id": "urn:ngm:class:just-in-time-liquidity",
+        "label": "Just-In-Time Liquidity"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:breez-sdk",
+        "label": "Breez SDK"
+      },
+      {
+        "@id": "urn:ngm:class:breez-wallet",
+        "label": "Breez Wallet"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin-blockchain",
+        "label": "Bitcoin Blockchain"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:custodial-wallet",
+        "label": "Custodial Wallet"
+      },
+      {
+        "@id": "urn:ngm:class:strike",
+        "label": "Strike"
+      },
+      {
+        "@id": "urn:ngm:class:muun-wallet",
+        "label": "Muun Wallet"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:phoenix-wallet",
+        "label": "Phoenix Wallet"
+      },
+      {
+        "@id": "urn:ngm:class:lnd",
+        "label": "LND"
+      },
+      {
+        "@id": "urn:ngm:class:cln",
+        "label": "Core Lightning"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin-lightning-wallet",
+        "label": "Bitcoin Lightning Wallet"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "@id": "urn:ngm:class:open-banking",
+        "label": "Open Banking"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:breez-sdk",
+      "label": "Breez SDK"
+    }
+  ],
+  "quality": 0.75,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-13T00:00:00Z",
+    "inferenceRule": "ManualEnrichment"
   }
 }
 ```
@@ -123,24 +243,99 @@ public:: true
 }
 ```
 
-
 - ### Definition
-  - Breez is a company that develops a non-custodial Lightning Network wallet and software development kit for Bitcoin payments.
+  - Breez is an open-source company and platform providing a [[Non-Custodial Wallet]] and [[Software Development Kit]] (SDK) that allows end-users and developers to send and receive [[Bitcoin]] payments over the [[Lightning Network]] without operating their own node or surrendering key custody. Breez acts as a [[Lightning Service Provider]] (LSP), supplying [[Inbound Liquidity]] and managing [[Payment Channel]] lifecycle on behalf of users, whilst users retain sole control of their [[Private Key]] material. The [[Breez SDK]] exposes a high-level API abstracting away [[Channel Management]], [[Liquidity]] provisioning, and on-chain/off-chain bridging through [[Submarine Swap]] mechanisms, making it well-suited for integrating [[Instant Payment]] capability into mobile apps, point-of-sale systems, and web services.
 
-- ### Semantic Classification
-  - owl-class:: blockchain:Breez
-  - owl-role:: Individual
+- ### Overview
+  - Breez was founded to solve the principal usability barrier of non-custodial [[Lightning Network]] wallets: the requirement for users to open and manage their own [[Payment Channel]]s, source [[Inbound Liquidity]], and run an always-online node. By interposing as an LSP, Breez abstracts node operation into a managed cloud service ([[Greenlight]] via [[Blockstream]]) whilst preserving user sovereignty over funds.
+  - The platform has two main products:
+    - **Breez Wallet** — a consumer mobile wallet (iOS and Android) for everyday [[Bitcoin]] Lightning payments, supporting [[LNURL]], [[BOLT11]] invoices, and point-of-sale mode.
+    - **Breez SDK** — an open-source developer library (Rust, with bindings for Swift, Kotlin, React Native, and Flutter) enabling any application to embed Lightning payments without node infrastructure.
+  - Breez's LSP model provides [[Just-In-Time Liquidity]]: when a new user receives their first payment, Breez opens a channel on-the-fly, deducting a small fee rather than requiring the user to pre-fund a channel.
+  - The SDK integrates with [[Greenlight]] (Blockstream's cloud node-as-a-service) so that the user's Lightning node runs in the cloud but the user holds the keys via [[Self-Custody]] key management. This means Breez cannot spend user funds.
+  - As of its SDK v2 release, Breez supports [[BOLT12]] offers alongside [[BOLT11]], enabling reusable static payment codes and enhanced privacy.
+
+- ### Key Components
+  - **Breez SDK (v1 / Nodeless)** — the primary developer-facing library
+    - Wraps [[Greenlight]] for cloud-hosted, user-key-controlled Lightning nodes
+    - Handles [[Channel Management]], fee negotiation, and [[Inbound Liquidity]] provisioning automatically
+    - Supports [[LNURL-Pay]], [[LNURL-Withdraw]], and [[LNURL-Auth]] from the [[LNURL]] protocol family
+    - Provides [[Submarine Swap]] (off-chain to on-chain) and [[Reverse Submarine Swap]] (on-chain to off-chain) for chain interoperability
+    - Language bindings: Rust (native), Swift, Kotlin, React Native, Flutter via [[UniFFI]]
+  - **Breez SDK Nodeless (v2)** — a newer architecture using [[Liquid Network]] and [[Boltz Exchange]] swaps
+    - Removes the [[Greenlight]] dependency; instead routes through the [[Liquid Network]] sidechain for on/off ramp
+    - Reduces on-chain fees and removes the need for Lightning node management entirely
+    - Maintains [[Self-Custody]] via user-held keys on [[Liquid Network]] outputs
+  - **Breez Wallet App** — reference consumer implementation built atop the SDK
+    - [[Point-of-Sale]] mode for merchants
+    - [[Podcast 2.0]] / [[Value4Value]] streaming sats integration (compatible with [[Fountain]] and [[Breez Podcast Player]])
+    - [[NFC]] payment support on compatible devices
+    - Fiat on-ramp integration via [[MoonPay]] and other providers
+  - **LSP (Lightning Service Provider) layer**
+    - Manages peer connections and channel opens for SDK users
+    - Provides [[Just-In-Time Liquidity]] by opening channels when inbound payment arrives
+    - Charges a small channel-open fee deducted from the first received payment
+
+- ### Mechanisms
+  - **Non-Custodial Key Architecture**
+    - User's [[HD Wallet]] seed is generated on-device and never transmitted to Breez servers
+    - [[Greenlight]] executes signing operations only when instructed by the key-holding client
+    - Breez SDK holds no spend authority; it is architecturally incapable of unilaterally moving funds
+  - **Inbound Liquidity Provisioning**
+    - Classical Lightning requires recipients to have pre-existing [[Inbound Liquidity]] before receiving payments
+    - Breez's LSP solves this with [[Just-In-Time Liquidity]]: an incoming payment triggers the LSP to open a channel, routing the payment through it in a single atomic operation
+    - Fee for JIT channel open is taken from the received amount, not charged separately
+  - **Submarine Swaps**
+    - Allow users to move value between on-chain [[Bitcoin]] and off-chain [[Lightning Network]] without a centralised exchange
+    - [[Breez SDK]] automates swap construction using [[HTLC]] (Hash Time-Lock Contract) primitives
+    - Used for on-ramp (chain → Lightning) and off-ramp (Lightning → chain) flows
+  - **LNURL Protocol Integration**
+    - [[LNURL-Pay]] — enables human-readable payment addresses (e.g. user@breez.technology) compatible with [[Lightning Address]] standard
+    - [[LNURL-Withdraw]] — enables pull-payment for faucets and reward systems
+    - [[LNURL-Auth]] — passwordless authentication using [[Bitcoin]] key signatures
+
+- ### Applications and Use Cases
+  - **Consumer Payments** — daily spending of [[Bitcoin]] with near-zero fees and sub-second settlement, suitable for coffee, retail, and remittances
+  - **Developer Integration** — embedding Lightning into mobile apps, games, streaming platforms, and e-commerce via the [[Breez SDK]] without Lightning expertise
+  - **Podcast 2.0 / Value4Value** — streaming micropayments (sats-per-minute) from listeners to podcasters using the [[Value4Value]] protocol; Breez was an early implementer alongside [[Fountain]] and [[Podverse]]
+  - **Point-of-Sale** — merchants use Breez Wallet's PoS mode to accept [[Bitcoin]] Lightning payments without custodial exchange dependency
+  - **Remittances** — cross-border transfers using [[Bitcoin]] as a bearer asset, bypassing correspondent banking and foreign exchange fees
+  - **Gaming and In-App Micropayments** — game developers integrate [[Breez SDK]] to enable pay-per-action mechanics and in-app economies denominated in [[Satoshi]]
+  - **Decentralised Exchanges** — the Nodeless SDK variant supports swaps via [[Boltz Exchange]], enabling non-custodial on/off ramp without a central counterparty
 
 - ### Relationships
-  - is-subclass-of:: [[Lightning Network]]
-  - bridges-to:: [[Self-Custody]]
-  - requires:: [[Bitcoin Proof-of-Work Protocol]]
-  - enables:: [[Payment Channel]]
+  - subClassOf:: [[Lightning Network]]
+  - requires:: [[Bitcoin]]
+  - requires:: [[Payment Channel]]
+  - requires:: [[Liquidity]]
+  - enables:: [[Self-Custody]]
+  - enables:: [[Instant Payment]]
+  - enables:: [[Non-Custodial Wallet]]
+  - uses:: [[LNURL]]
+  - uses:: [[Greenlight]]
+  - uses:: [[BOLT11]]
+  - uses:: [[BOLT12]]
+  - uses:: [[Submarine Swap]]
+  - implements:: [[Lightning Service Provider]]
+  - implements:: [[Just-In-Time Liquidity]]
+  - dependsOn:: [[Lightning Network]]
+  - dependsOn:: [[Bitcoin Blockchain]]
+  - contrastsWith:: [[Custodial Wallet]]
+  - contrastsWith:: [[Strike]]
+  - relatedTo:: [[Phoenix Wallet]]
+  - relatedTo:: [[LND]]
+  - relatedTo:: [[Core Lightning]]
+  - bridges-to:: [[Decentralised Finance]]
+  - bridges-to:: [[Open Banking]]
 
-- ### Content
-  - Breez provides a non-custodial wallet and developer tooling for integrating Lightning Network payments into applications.
-  - Its software lets users send and receive Bitcoin over payment channels while retaining control of their own keys.
+- ### Standards and Context
+  - **BOLT Specifications** — Breez implements [[BOLT11]] (Lightning invoice format) and [[BOLT12]] (offers protocol) from the [[Lightning Network Specification]] (BOLTs — Basis of Lightning Technology)
+  - **LNURL** — an informal but widely-adopted standard defining [[LNURL-Pay]], [[LNURL-Withdraw]], [[LNURL-Auth]], and [[Lightning Address]]; Breez is a full implementer
+  - **LSP Specification** — the emerging [[LSP Specification]] (lsp-spec) initiative aims to standardise LSP APIs so that wallets can interoperate with any compliant LSP; Breez participates in this working group
+  - **Liquid Network** — Breez SDK Nodeless uses [[Liquid Network]], a [[Bitcoin]] [[Sidechain]] developed by [[Blockstream]], governed by its own [[Federation]] and [[Two-Way Peg]] mechanism
+  - **Open Source** — Breez SDK is released under [[Apache 2.0 Licence]]; the wallet app is also open source, enabling community audit and forking
+  - **Regulatory Posture** — as a non-custodial service, Breez does not hold user funds and therefore argues it falls outside [[Money Transmission]] licensing requirements in many jurisdictions; this interpretation remains subject to regulatory evolution under frameworks such as [[MiCA]] (EU) and [[FinCEN]] guidance (US)
 
 - ### Provenance
-  - sources::
-  - migration-date:: 2026-05-29T00:00:00Z
+  - sources:: https://breez.technology, https://sdk-doc.breez.technology, https://github.com/breez/breez-sdk
+  - updated:: 2026-06-13

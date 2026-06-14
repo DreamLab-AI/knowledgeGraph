@@ -4,7 +4,7 @@
   "slug": "training-layer",
   "public": true,
   "classIri": "urn:ngm:class:training-layer",
-  "domain": "training",
+  "domain": "machine-learning",
   "definition": "The Training Layer is the stratum that fits model parameters from data using optimisation procedures. It sits above the Compute and Data strata it consumes and below the Model and Foundation Model strata that hold its results. It contains training loops, optimisers, loss functions, and the orchestration of large-scale learning runs.",
   "subClassOf": [
     {

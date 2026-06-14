@@ -21,7 +21,7 @@ public:: true
   "@type": "Class",
   "label": "Multi-View Stereo",
   "definition": "Multi-View Stereo (MVS) is a computer vision technique that reconstructs dense 3D geometry from a set of overlapping 2D images captured from multiple camera positions. It extends traditional stereo matching by leveraging consistency across many viewpoints to estimate depth and surface detail at high resolution. MVS is a foundational component of photogrammetry pipelines, producing point clouds and textured meshes from photograph collections.",
-  "domain": "spatial",
+  "domain": "spatial-computing",
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:photogrammetry", "label": "Photogrammetry"}],
   "relations": {

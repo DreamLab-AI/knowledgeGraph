@@ -4,20 +4,46 @@
   "slug": "video-compression",
   "public": true,
   "classIri": "urn:ngm:class:video-compression",
-  "domain": "computing",
-  "definition": "Video compression is the encoding of video data to reduce its size for storage and transmission while preserving acceptable quality. It exploits spatial, temporal and perceptual redundancy through codecs.",
+  "domain": "infrastructure",
+  "definition": "Video compression is the process of encoding digital video data to reduce file size and bit rate for efficient storage and transmission, while maintaining perceptually acceptable quality. It exploits three principal forms of redundancy: spatial redundancy within individual frames, temporal redundancy across consecutive frames, and perceptual redundancy based on limitations of human visual perception. Modern video codecs such as H.264/AVC, H.265/HEVC, VP9, and AV1 implement intra-frame prediction, inter-frame motion compensation, discrete cosine or wavelet transforms, quantisation, and entropy coding to achieve compression ratios that make streaming, broadcast, and real-time communication practical over bandwidth-limited networks.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:owl-thing",
-      "label": "owl:Thing"
+      "id": "urn:ngm:class:data-compression",
+      "label": "Data Compression"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
-  "maturity": "established",
+  "qualityScore": 0.74,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:intra-frame-coding",
+        "label": "Intra-Frame Coding"
+      },
+      {
+        "id": "urn:ngm:class:inter-frame-coding",
+        "label": "Inter-Frame Coding"
+      },
+      {
+        "id": "urn:ngm:class:entropy-coding",
+        "label": "Entropy Coding"
+      },
+      {
+        "id": "urn:ngm:class:motion-estimation",
+        "label": "Motion Estimation"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:discrete-cosine-transform",
+        "label": "Discrete Cosine Transform"
+      },
+      {
+        "id": "urn:ngm:class:rate-control",
+        "label": "Rate Control"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:content-delivery",
@@ -26,17 +52,97 @@
       {
         "id": "urn:ngm:class:real-time-communication",
         "label": "Real-Time Communication"
+      },
+      {
+        "id": "urn:ngm:class:video-streaming",
+        "label": "Video Streaming"
+      },
+      {
+        "id": "urn:ngm:class:broadcast-television",
+        "label": "Broadcast Television"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      },
+      {
+        "id": "urn:ngm:class:perceptual-coding",
+        "label": "Perceptual Coding"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:h264-avc",
+        "label": "H.264/AVC"
+      },
+      {
+        "id": "urn:ngm:class:av1",
+        "label": "AV1"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:lossless-compression",
+        "label": "Lossless Compression"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:neural-video-compression",
+        "label": "Neural Video Compression"
+      },
+      {
+        "id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:psychovisual-model",
+        "label": "Psychovisual Model"
+      },
+      {
+        "id": "urn:ngm:class:colour-subsampling",
+        "label": "Colour Subsampling"
+      }
+    ],
     "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:itu-t",
+        "label": "ITU-T"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-mpeg",
+        "label": "ISO/IEC MPEG"
+      },
+      {
+        "id": "urn:ngm:class:alliance-for-open-media",
+        "label": "Alliance for Open Media"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:video-codec",
+        "label": "Video Codec"
+      },
+      {
+        "id": "urn:ngm:class:multimedia-processing",
+        "label": "Multimedia Processing"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:adaptive-bitrate-streaming",
+        "label": "Adaptive Bitrate Streaming"
+      },
+      {
+        "id": "urn:ngm:class:latency",
+        "label": "Latency"
+      }
+    ]
   },
   "wikilinks": [
     {

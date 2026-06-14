@@ -4,7 +4,7 @@
   "slug": "differential-equations",
   "public": true,
   "classIri": "urn:ngm:class:differential-equations",
-  "domain": "mathematics",
+  "domain": "machine-learning",
   "definition": "Equations relating a function to its derivatives, used to model how quantities change with respect to one or more independent variables.",
   "subClassOf": [
     {

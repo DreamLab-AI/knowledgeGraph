@@ -99,7 +99,7 @@ public:: true
   "@type": "Class",
   "label": "Environmental Domain",
   "definition": "The Environmental Domain covers the modelling, monitoring and management of natural and built environments and their resources. Its scope includes climate and ecological modelling, environmental sensing, sustainability assessment and resource management. It is a top-level subject classification applied across many technologies. The boundary excludes economic and market analysis of resources, which belongs to the Financial Markets Domain.",
-  "domain": "environmental",
+  "domain": "governance",
   "maturity": "emerging",
   "qualityScore": 0.7,
   "subClassOf": [

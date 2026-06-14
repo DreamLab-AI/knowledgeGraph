@@ -51,7 +51,7 @@ public:: true
   "@type": "Class",
   "label": "Aggelos Kiayias",
   "definition": "A computer scientist and cryptographer known for research in cryptography and blockchain protocols, including provably secure proof-of-stake consensus.",
-  "domain": "cryptographic",
+  "domain": "security",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

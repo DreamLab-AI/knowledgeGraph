@@ -5,35 +5,46 @@
   "public": true,
   "classIri": "urn:ngm:class:power-management",
   "domain": "robotics",
-  "definition": "Power management in robotics encompasses the hardware circuits, firmware algorithms, and system-level strategies responsible for regulating, distributing, monitoring, and optimising electrical energy flow across a robot's actuators, sensors, computation units, and communication modules. It includes battery management systems (BMS) that track state-of-charge and cell health, DC\u2013DC conversion topologies that match supply voltage to load requirements, dynamic power scaling that throttles compute or actuators under low-charge conditions, and energy recovery mechanisms such as regenerative braking in joint drives. Effective power management directly determines operational endurance, thermal safety margins, and the feasibility of untethered deployment in field and human-collaborative scenarios.",
+  "definition": "Power management is the discipline of regulating, distributing, monitoring, and optimising electrical energy flow within computing, robotic, and embedded systems to maximise operational endurance, thermal safety, and efficiency. It spans hardware circuits (DC\u2013DC converters, power distribution units, battery management systems), firmware-level control algorithms (voltage-frequency scaling, clock-gating, duty-cycle regulation), and system-level policies (workload scheduling, energy-aware task allocation) that together balance instantaneous demand against available supply. In robotic and mobile contexts it additionally encompasses energy harvesting, regenerative braking, and state-of-charge estimation to enable untethered autonomous operation. Effective power management is a prerequisite for deploying autonomous systems in resource-constrained field environments and for meeting safety standards governing collaborative human\u2013robot interaction.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:robo-actuation-and-control",
-      "label": "Actuation and Control"
+      "id": "urn:ngm:class:embedded-systems",
+      "label": "Embedded Systems"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.72,
+  "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:battery-management-system",
+        "label": "Battery Management System"
+      },
+      {
+        "id": "urn:ngm:class:dc-dc-converter",
+        "label": "DC-DC Converter"
+      },
+      {
+        "id": "urn:ngm:class:power-distribution-unit",
+        "label": "Power Distribution Unit"
+      }
+    ],
+    "requires": [
       {
         "id": "urn:ngm:class:embedded-systems",
         "label": "Embedded Systems"
       },
       {
-        "id": "urn:ngm:class:power-supply",
-        "label": "Power Supply"
+        "id": "urn:ngm:class:real-time-operating-system",
+        "label": "Real-Time Operating System"
+      },
+      {
+        "id": "urn:ngm:class:thermal-management",
+        "label": "Thermal Management"
       }
     ],
-    "supports": [
+    "enables": [
       {
         "id": "urn:ngm:class:mobile-robot",
         "label": "Mobile Robot"
@@ -41,18 +52,94 @@
       {
         "id": "urn:ngm:class:autonomous-robot",
         "label": "Autonomous Robot"
+      },
+      {
+        "id": "urn:ngm:class:wearable-computing",
+        "label": "Wearable Computing"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
       }
     ],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:energy-storage",
+        "label": "Energy Storage"
+      },
+      {
+        "id": "urn:ngm:class:hardware-accelerator",
+        "label": "Hardware Accelerator"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:high-performance-computing",
+        "label": "High-Performance Computing"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:neural-network-inference",
+        "label": "Neural Network Inference"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:power-supply",
+        "label": "Power Supply"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:pulse-width-modulation",
+        "label": "Pulse-Width Modulation"
+      }
+    ],
+    "supports": [
       {
         "id": "urn:ngm:class:robot-hardware",
         "label": "Robot Hardware"
       },
       {
+        "id": "urn:ngm:class:autonomous-systems",
+        "label": "Autonomous Systems"
+      },
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-ts-15066",
+        "label": "ISO TS 15066"
+      },
+      {
+        "id": "urn:ngm:class:ieee-1801",
+        "label": "IEEE 1801 (UPF)"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
         "id": "urn:ngm:class:real-time-processing",
-        "label": "Real-time Processing"
+        "label": "Real-Time Processing"
+      },
+      {
+        "id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
+      },
+      {
+        "id": "urn:ngm:class:system-on-chip",
+        "label": "System-on-Chip"
       }
     ]
   },

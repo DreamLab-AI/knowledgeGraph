@@ -4,35 +4,156 @@
   "slug": "3-d-asset-standard",
   "public": true,
   "classIri": "urn:ngm:class:3-d-asset-standard",
-  "domain": "infrastructure",
-  "definition": "3D Asset Standard is a technology infrastructure concept and a type of infrastructure.",
+  "domain": "spatial-computing",
+  "definition": "A 3D Asset Standard is a formal specification defining the file formats, metadata schemas, coordinate systems, material models, animation encodings, and interoperability protocols required for consistent creation, exchange, and real-time rendering of three-dimensional digital content across diverse software platforms and runtime environments. Such standards normalise vertex data structures, physically based rendering (PBR) material pipelines, level-of-detail hierarchies, skeletal animation rigs, and compression algorithms so that assets created in one authoring tool function correctly in another without manual conversion or data loss. Prominent examples include the Khronos Group glTF 2.0 specification for web and mobile 3D delivery, Pixar's Universal Scene Description (USD/USDZ) for complex scene composition, and the Metaverse Standards Forum interoperability profiles. These specifications underpin spatial computing, extended reality, game engines, digital-twin platforms, and emerging metaverse ecosystems by ensuring deterministic visual fidelity and semantic asset identity across the entire content pipeline.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:infra-legal-and-regulatory",
-      "label": "Legal and Regulatory"
+      "id": "urn:ngm:class:interoperability-standard",
+      "label": "Interoperability Standard"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.74,
+  "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:gltf",
+        "label": "glTF"
+      },
+      {
+        "id": "urn:ngm:class:universal-scene-description",
+        "label": "Universal Scene Description"
+      },
+      {
+        "id": "urn:ngm:class:physically-based-rendering",
+        "label": "Physically Based Rendering"
+      },
+      {
+        "id": "urn:ngm:class:level-of-detail",
+        "label": "Level of Detail"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:coordinate-system",
+        "label": "Coordinate System"
+      },
+      {
+        "id": "urn:ngm:class:mesh-compression",
+        "label": "Mesh Compression"
+      },
+      {
+        "id": "urn:ngm:class:texture-atlas",
+        "label": "Texture Atlas"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:asset-interoperability",
+        "label": "Asset Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      }
+    ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:ngm:class:technology-infrastructure-domain",
-        "label": "infrastructure"
+        "id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-14496-16",
+        "label": "ISO/IEC 14496-16"
       }
     ],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:proprietary-asset-format",
+        "label": "Proprietary Asset Format"
+      },
+      {
+        "id": "urn:ngm:class:fbx",
+        "label": "FBX"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:non-fungible-token",
+        "label": "Non-Fungible Token"
+      },
+      {
+        "id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:scene-graph",
+        "label": "Scene Graph"
+      },
+      {
+        "id": "urn:ngm:class:skeleton-animation",
+        "label": "Skeleton Animation"
+      },
+      {
+        "id": "urn:ngm:class:materialx",
+        "label": "MaterialX"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:metaverse-platform",
+        "label": "Metaverse Platform"
+      },
+      {
+        "id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:khronos-group",
+        "label": "Khronos Group"
+      },
+      {
+        "id": "urn:ngm:class:metaverse-standards-forum",
+        "label": "Metaverse Standards Forum"
+      },
+      {
+        "id": "urn:ngm:class:academy-software-foundation",
+        "label": "Academy Software Foundation"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-content-creation",
+        "label": "Digital Content Creation"
+      },
+      {
+        "id": "urn:ngm:class:spatial-web",
+        "label": "Spatial Web"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-14496-16",
+        "label": "ISO/IEC 14496-16"
+      }
+    ]
   },
   "wikilinks": [
     {

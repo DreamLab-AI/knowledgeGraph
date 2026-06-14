@@ -21,7 +21,7 @@ public:: true
   "@type": "Class",
   "label": "Content Pipeline",
   "definition": "A Content Pipeline is the end-to-end automated or semi-automated workflow that transforms raw creative assets—geometry, textures, audio, video, or data—from authoring tools into the optimised, platform-specific formats required by a runtime engine, distribution system, or media player. It encompasses ingestion, validation, processing, compression, and delivery stages with dependency tracking and incremental rebuild capabilities.",
-  "domain": "media",
+  "domain": "metaverse",
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:production-pipeline", "label": "Production Pipeline"}],
   "relations": {

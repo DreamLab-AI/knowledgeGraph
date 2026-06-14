@@ -4,35 +4,138 @@
   "slug": "el-salvador",
   "public": true,
   "classIri": "urn:ngm:class:el-salvador",
-  "domain": "governance",
-  "definition": "A country in Central America notable in the technology and finance context for adopting Bitcoin as legal tender in 2021.",
+  "domain": "blockchain",
+  "definition": "El Salvador is a Central American nation-state that in September 2021 became the first country in the world to adopt Bitcoin as legal tender alongside the United States dollar, enacting the Bitcoin Law (Ley Bitcoin). The policy required all businesses capable of providing the technology to accept Bitcoin for goods and services, deployed the government-issued Chivo Wallet to facilitate adoption, and established the Lightning Network as the primary payment rail for low-value retail transactions. El Salvador serves in this knowledge graph as a primary real-world case study for sovereign-level cryptocurrency adoption, digital-currency monetary policy, and the intersection of blockchain infrastructure with national governance.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:entity",
-      "label": "Entity"
+      "id": "urn:ngm:class:sovereign-entity",
+      "label": "Sovereign Entity"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:internet-connectivity",
+        "label": "Internet Connectivity"
+      },
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public Key Cryptography"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:cryptocurrency",
         "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-payment",
+        "label": "Peer-to-Peer Payment"
+      },
+      {
+        "id": "urn:ngm:class:financial-inclusion",
+        "label": "Financial Inclusion"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      },
+      {
+        "id": "urn:ngm:class:legal-tender-law",
+        "label": "Legal Tender Law"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      },
+      {
+        "id": "urn:ngm:class:fiat-currency",
+        "label": "Fiat Currency"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      },
+      {
+        "id": "urn:ngm:class:chivo-wallet",
+        "label": "Chivo Wallet"
+      },
+      {
+        "id": "urn:ngm:class:digital-wallet",
+        "label": "Digital Wallet"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-work",
+        "label": "Proof of Work"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:bitcoin-mining",
+        "label": "Bitcoin Mining"
+      },
+      {
+        "id": "urn:ngm:class:crypto-tourism",
+        "label": "Crypto Tourism"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:monetary-policy",
+        "label": "Monetary Policy"
+      },
+      {
+        "id": "urn:ngm:class:remittance",
+        "label": "Remittance"
+      },
+      {
+        "id": "urn:ngm:class:dollarisation",
+        "label": "Dollarisation"
+      },
+      {
+        "id": "urn:ngm:class:international-monetary-fund",
+        "label": "International Monetary Fund"
+      },
+      {
+        "id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      },
+      {
+        "id": "urn:ngm:class:crypto-regulation",
+        "label": "Crypto Regulation"
+      }
+    ]
   },
   "wikilinks": [
     {

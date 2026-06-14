@@ -21,7 +21,7 @@ public:: true
   "@type": "Class",
   "label": "Adaptive Music",
   "definition": "Adaptive music is a compositional and audio-engineering approach in which a musical soundtrack modifies its structure, instrumentation, tempo, or emotional register dynamically in response to real-time contextual signals such as player actions, narrative state, or environmental parameters within interactive media. It replaces the static looping of pre-composed tracks with a system that maintains musical coherence while reflecting the moment-to-moment state of an interactive experience. The technique is foundational to game audio design and is increasingly applied in extended reality, therapeutic, and generative AI contexts.",
-  "domain": "media",
+  "domain": "metaverse",
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:audio-system", "label": "Audio System"}],
   "relations": {

@@ -21,7 +21,7 @@ public:: true
   "@type": "Class",
   "label": "Feature Detection",
   "definition": "Feature detection is the programmatic technique of querying a runtime environment to determine whether a specific capability, API, or behaviour is available before invoking it, rather than inferring support from user-agent strings or version numbers. In computer vision, it also denotes the algorithmic identification of salient points, edges, or regions within images that carry discriminative information for downstream tasks.",
-  "domain": "web",
+  "domain": "infrastructure",
   "maturity": "mature",
   "subClassOf": [{"@id": "urn:ngm:class:runtime-inspection", "label": "Runtime Inspection"}],
   "relations": {

@@ -4,24 +4,37 @@
   "slug": "icml",
   "public": true,
   "classIri": "urn:ngm:class:icml",
-  "domain": "ai",
-  "definition": "The International Conference on Machine Learning (ICML) is the premier annual academic conference for machine learning research, organised by the International Machine Learning Society (IMLS) since 1980. ICML serves as the primary venue for disseminating foundational and applied advances across supervised learning, unsupervised learning, reinforcement learning, deep learning, optimisation, and the theory of machine learning. Acceptance rates have fallen to roughly 26% as submission volumes have grown into the thousands annually, making it one of the most selective and impactful venues in AI research.",
+  "domain": "machine-learning",
+  "definition": "The International Conference on Machine Learning (ICML) is the premier annual academic conference for machine learning research, organised by the International Machine Learning Society (IMLS) since 1980. ICML serves as the primary venue for disseminating foundational and applied advances across supervised learning, unsupervised learning, reinforcement learning, deep learning, optimisation, and the theory of machine learning. Proceedings are published through the open-access Proceedings of Machine Learning Research (PMLR), making ICML papers freely available and widely cited. Together with NeurIPS and ICLR, ICML forms the trifecta of elite machine learning publication venues that shape research directions and career trajectories across academia and industry globally.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:research-methods",
-      "label": "Research Methods"
+      "id": "urn:ngm:class:academic-conference",
+      "label": "Academic Conference"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.73,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:workshop",
+        "label": "Workshop"
+      },
+      {
+        "id": "urn:ngm:class:tutorial",
+        "label": "Tutorial"
+      },
+      {
+        "id": "urn:ngm:class:paper-submission",
+        "label": "Paper Submission"
+      }
+    ],
     "requires": [],
     "enables": [
       {
-        "id": "urn:ngm:class:machine-learning-discipline-technique",
-        "label": "Machine Learning Technique"
+        "id": "urn:ngm:class:machine-learning-research",
+        "label": "Machine Learning Research"
       },
       {
         "id": "urn:ngm:class:benchmark-standard",
@@ -34,28 +47,80 @@
       {
         "id": "urn:ngm:class:federated-learning",
         "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:peer-review",
+        "label": "Peer Review"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:neurips",
+        "label": "NeurIPS"
+      },
+      {
+        "id": "urn:ngm:class:iclr",
+        "label": "ICLR"
+      },
+      {
+        "id": "urn:ngm:class:aaai",
+        "label": "AAAI"
+      },
+      {
+        "id": "urn:ngm:class:cvpr",
+        "label": "CVPR"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:optimization-algorithm",
         "label": "Optimization Algorithm"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline-model",
+        "id": "urn:ngm:class:machine-learning-model",
         "label": "Machine Learning Model"
+      },
+      {
+        "id": "urn:ngm:class:double-blind-review",
+        "label": "Double-Blind Review"
       }
     ],
     "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:international-machine-learning-society",
+        "label": "International Machine Learning Society"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:machine-learning-community",
+        "label": "Machine Learning Community"
+      },
+      {
+        "id": "urn:ngm:class:proceedings-of-machine-learning-research",
+        "label": "Proceedings of Machine Learning Research"
+      }
+    ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -77,6 +142,14 @@
       {
         "id": "urn:ngm:class:generative-ai",
         "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:neurips",
+        "label": "NeurIPS"
+      },
+      {
+        "id": "urn:ngm:class:iclr",
+        "label": "ICLR"
       }
     ]
   },

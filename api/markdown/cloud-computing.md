@@ -1,16 +1,93 @@
 - ### Definition
-  - Cloud computing delivers on-demand computing resources over the internet through provider-managed data centres, enabling organisations to scale compute, storage, and AI workloads without owning physical hardware.
+  - Cloud computing is the on-demand delivery of computing resources — including [[Virtualisation|virtual]] servers, [[Object Storage]], databases, [[Network Infrastructure]], analytics, and AI accelerators — over the internet, via provider-managed [[Data Centre|data centres]]. It abstracts physical hardware into programmable APIs governed by pay-per-use economics, enabling [[Distributed Systems]] at global scale without capital investment in owned infrastructure. The paradigm underpins [[AI Infrastructure]], [[MLOps]], and modern [[DevOps]] by providing elastic capacity that scales from zero to hyperscale in seconds.
+
+- ### Overview
+  - Cloud computing emerged from the insight that large-scale data centre operators (initially Amazon, then Microsoft and Google) could expose spare capacity as rentable compute units via standardised web APIs. The NIST SP 800-145 definition codified five essential characteristics: on-demand self-service, broad network access, resource pooling, rapid elasticity, and measured service.
+  - **Why it matters**: it democratises access to supercomputing-class infrastructure, allowing a startup to train a large neural network or serve millions of API requests with the same infrastructure primitives available to the world's largest enterprises — billed only for active usage.
+  - **How it works**: physical resources in geographically distributed [[Data Centre|data centres]] are partitioned via [[Virtualisation]] and [[Containerisation]] into isolated tenant environments. A global control plane (the cloud provider's management layer) handles provisioning, billing, identity, and observability, exposing these through REST/gRPC APIs, CLIs, and infrastructure-as-code tooling.
+
+- ### Key Components
+  - #### Service Models
+    - **[[Infrastructure as a Service]] (IaaS)** — raw virtual machines, block and [[Object Storage]], and virtual networks (e.g. AWS EC2, Azure Virtual Machines, Google Compute Engine). Consumer manages OS and above.
+    - **[[Platform as a Service]] (PaaS)** — managed runtimes, databases, and middleware; consumer manages only application code (e.g. Google App Engine, AWS Elastic Beanstalk, Azure App Service).
+    - **[[Software as a Service]] (SaaS)** — fully managed applications delivered via browser or API; consumer configures, not operates (e.g. Salesforce, Google Workspace, Microsoft 365).
+    - **[[Serverless Computing]]** — event-driven functions billed per invocation with no persistent server management (AWS Lambda, Azure Functions, Google Cloud Functions).
+  - #### Deployment Models
+    - **Public Cloud** — infrastructure owned and operated by a third-party hyperscaler, shared among tenants with logical isolation.
+    - **Private Cloud** — dedicated infrastructure operated for a single organisation, on-premises or collocated.
+    - **[[Hybrid Cloud]]** — orchestrated integration of public and private cloud resources, connected via secure network fabric, enabling data-sovereignty compliance and burst capacity.
+    - **[[Multi-Cloud]]** — use of services from multiple providers simultaneously to avoid vendor lock-in and optimise cost or capability.
+  - #### Core Infrastructure Primitives
+    - [[Virtualisation]] — hypervisors (KVM, Hyper-V, Xen) partition physical servers into isolated VMs.
+    - [[Containerisation]] — lightweight process isolation via namespaces and cgroups (Docker, OCI images) run on shared OS kernels.
+    - [[Kubernetes]] — de-facto orchestration layer for scheduling, scaling, and managing containerised workloads across cloud and hybrid environments.
+    - [[Object Storage]] — massively scalable, durable blob storage (S3, Azure Blob, GCS) underpinning data lakes and ML training datasets.
+    - [[Content Delivery Network]] — geographically distributed cache layer that moves static and dynamic content close to users, reducing latency.
+    - [[Network Infrastructure]] — software-defined networking (SDN), virtual private clouds (VPCs), load balancers, and global backbone connectivity.
+    - [[Data Centre]] — physical facilities housing hyperscale server racks, cooling, power, and physical security.
+
+- ### Mechanisms
+  - **Elasticity and Auto-Scaling**: workloads can burst to thousands of compute nodes on demand and release them automatically based on CPU, memory, or custom metrics — critical for AI training and inference traffic spikes.
+  - **Measured Service**: metering at fine granularity (per-second, per-request, per-GB) enables pay-per-use billing and FinOps [[Cost Optimisation]] practices.
+  - **Resource Pooling (Multi-Tenancy)**: physical resources are shared among multiple customers with logical isolation enforced via [[Virtualisation]], network segmentation, and IAM policies.
+  - **High Availability and Fault Tolerance**: [[High Availability]] is achieved through geographically redundant availability zones and regions, automatic failover, and replication at the storage layer.
+  - **Managed Services Ecosystem**: providers offer hundreds of managed services (databases, message queues, ML pipelines, monitoring) reducing operational burden and enabling [[DevOps]] teams to focus on product logic.
+
+- ### Applications / Use Cases
+  - **AI and Machine Learning**: [[Distributed Training]] of large language models requires ephemeral access to thousands of GPUs/TPUs for days; cloud eliminates the need to own these accelerators. [[Inference]] serving scales elastically with traffic.
+  - **[[MLOps]] Pipelines**: managed experiment tracking, feature stores, model registries, and CI/CD for models are increasingly cloud-native services.
+  - **[[Big Data]] Analytics**: petabyte-scale data processing via cloud-managed Spark, BigQuery, Snowflake, and Databricks clusters.
+  - **[[DevOps]] and CI/CD**: cloud-hosted build pipelines, container registries, and deployment targets accelerate software delivery.
+  - **[[Digital Twin]] Simulation**: real-time simulation of physical systems (manufacturing lines, urban environments) leverages cloud burst compute for high-fidelity models.
+  - **[[Spatial Computing]] and XR**: cloud rendering and streaming reduces client-side hardware requirements for augmented and virtual reality applications.
+  - **[[Federated Learning]]**: cloud orchestrates distributed model training across decentralised data silos without raw data leaving each site, bridging privacy and AI capability.
+  - **Disaster Recovery and Business Continuity**: cloud-based replication and failover replace expensive secondary data centres.
+  - **Regulated Industries**: [[Hybrid Cloud]] and sovereign cloud configurations (e.g. AWS GovCloud, Azure Government) meet data-residency requirements in healthcare, finance, and defence.
 
 - ### Relationships
-  - Cloud computing is a subclass of [[Infrastructure]] and is the primary enabler of modern [[AI Infrastructure]] and [[MLOps]] pipelines. It relies on [[Network Infrastructure]] and is commonly orchestrated via [[Kubernetes]]. It supports [[Distributed Training]] of large models and scalable [[Inference]] serving. [[Cloud Platform]] offerings package cloud computing capabilities into managed service tiers. [[High Availability]] architectures and [[Distributed Computing]] principles are realised at scale through cloud deployments. [[Edge Computing]] extends the cloud boundary toward end devices.
+  - hasPart:: [[Infrastructure as a Service]]
+  - hasPart:: [[Platform as a Service]]
+  - hasPart:: [[Software as a Service]]
+  - hasPart:: [[Serverless Computing]]
+  - partOf:: [[Internet Infrastructure]]
+  - requires:: [[Network Infrastructure]]
+  - requires:: [[Data Centre]]
+  - requires:: [[Virtualisation]]
+  - enables:: [[MLOps]]
+  - enables:: [[AI Infrastructure]]
+  - enables:: [[Distributed Training]]
+  - enables:: [[Inference]]
+  - enables:: [[DevOps]]
+  - enables:: [[Big Data]]
+  - dependsOn:: [[Distributed Computing]]
+  - dependsOn:: [[High Availability]]
+  - uses:: [[Kubernetes]]
+  - uses:: [[Containerisation]]
+  - uses:: [[Object Storage]]
+  - uses:: [[Content Delivery Network]]
+  - supports:: [[Cloud Platform]]
+  - supports:: [[Edge Computing]]
+  - supports:: [[Hybrid Cloud]]
+  - standardizedBy:: [[NIST Cloud Computing Definition]]
+  - standardizedBy:: [[ISO/IEC 17788]]
+  - contrastsWith:: [[On-Premises Computing]]
+  - contrastsWith:: [[Mainframe Computing]]
+  - bridges-to:: [[Federated Learning]]
+  - bridges-to:: [[Digital Twin]]
+  - bridges-to:: [[Spatial Computing]]
+  - relatedTo:: [[Multi-Cloud]]
+  - relatedTo:: [[Cloud Security]]
+  - relatedTo:: [[Cost Optimisation]]
 
-- ### Content
-  - Cloud computing emerged from the consolidation of large-scale data centre operations by hyperscalers (Amazon Web Services, Microsoft Azure, Google Cloud Platform) who exposed spare capacity as rentable compute units. The three canonical service models — Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS) — abstract progressively more of the underlying hardware stack, allowing teams to focus on application logic rather than rack management.
+- ### Standards & Context
+  - **NIST SP 800-145** — the authoritative US government definition of cloud computing, establishing the five essential characteristics, three service models, and four deployment models. Published by the National Institute of Standards and Technology.
+  - **ISO/IEC 17788:2014** — international standard providing the overview and vocabulary for cloud computing, harmonising terminology across the industry.
+  - **ISO/IEC 17789:2014** — cloud computing reference architecture, defining the roles and activities of cloud service customers, providers, and partners.
+  - **CSA Cloud Controls Matrix (CCM)** — the Cloud Security Alliance's cybersecurity control framework for [[Cloud Security]] assessment and compliance, widely referenced alongside ISO 27001 and SOC 2.
+  - **GDPR and Data Residency Regulation** — European data protection law constrains where personal data may be processed; drives [[Hybrid Cloud]] and sovereign cloud architectures for EU-based workloads.
+  - **FinOps Foundation** — open practitioner community standardising [[Cost Optimisation]] practices for cloud spend; FinOps framework defines crawl/walk/run maturity for cloud financial management.
+  - **Green Software Foundation** — develops standards for measuring and reducing the carbon footprint of cloud workloads; relevant to sustainable AI training.
 
-  - For AI and machine learning workloads, cloud computing is particularly significant because training large neural networks requires ephemeral access to hundreds or thousands of GPUs or TPUs for hours to days. Purchasing this hardware outright is economically prohibitive for most organisations; renting it from a cloud provider and paying only for active usage dramatically lowers the barrier to experimentation and production deployment.
-
-  - Elasticity — the ability to provision resources in seconds and release them just as quickly — transforms how AI systems are engineered. Data pipelines can burst to large clusters during batch ingestion, training jobs can scale to thousands of accelerators, and inference endpoints auto-scale with traffic, then shrink to near-zero during quiet periods. This contrasts sharply with on-premises deployments where hardware must be provisioned to peak load even when idle.
-
-  - Cloud computing also provides a rich ecosystem of managed services: object stores for training data, managed databases, message queues, monitoring stacks, and identity management layers. MLOps tooling such as experiment tracking, feature stores, and model registries is increasingly delivered as cloud-native managed services, further simplifying the end-to-end lifecycle from raw data to a production inference endpoint.
-
-  - Security and data residency considerations constrain cloud adoption in regulated sectors (healthcare, finance, defence). Hybrid and multi-cloud architectures address these concerns by combining private data centres with public cloud burst capacity, requiring careful network segmentation, encryption in transit and at rest, and compliance attestation against frameworks such as ISO 27001 and SOC 2.
+- ### Provenance
+  - sources:: NIST SP 800-145; ISO/IEC 17788:2014; AWS/Azure/GCP public documentation; Cloud Security Alliance CCM; FinOps Foundation framework
+  - updated:: 2026-06-13

@@ -4,35 +4,133 @@
   "slug": "computer-science",
   "public": true,
   "classIri": "urn:ngm:class:computer-science",
-  "domain": "computer-science",
-  "definition": "Computer science is the study of computation, algorithms, data structures, and the design of computing systems and software.",
+  "domain": "infrastructure",
+  "definition": "Computer science is the systematic study of computation, algorithms, data structures, programming languages, and the principles underlying the design and analysis of computing systems. It encompasses both theoretical foundations \u2014 including computability theory, computational complexity, formal languages, and logic \u2014 and applied disciplines such as software engineering, artificial intelligence, databases, and computer networks. As a rigorous scientific and engineering discipline, it provides the intellectual and practical frameworks for building reliable, efficient, and scalable digital systems. Computer science intersects with mathematics, electrical engineering, cognitive science, and the natural sciences, and it underpins virtually every domain of modern technological infrastructure.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:owl-thing",
-      "label": "owl:Thing"
+      "id": "urn:ngm:class:information-technology",
+      "label": "Information Technology"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
-  "maturity": "established",
+  "qualityScore": 0.74,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:algorithms",
+        "label": "Algorithms"
+      },
+      {
+        "id": "urn:ngm:class:data-structures",
+        "label": "Data Structures"
+      },
+      {
+        "id": "urn:ngm:class:operating-systems",
+        "label": "Operating Systems"
+      },
+      {
+        "id": "urn:ngm:class:programming-languages",
+        "label": "Programming Languages"
+      },
+      {
+        "id": "urn:ngm:class:computer-networks",
+        "label": "Computer Networks"
+      },
+      {
+        "id": "urn:ngm:class:database-systems",
+        "label": "Database Systems"
+      },
+      {
+        "id": "urn:ngm:class:computability-theory",
+        "label": "Computability Theory"
+      },
+      {
+        "id": "urn:ngm:class:computational-complexity",
+        "label": "Computational Complexity"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:discrete-mathematics",
+        "label": "Discrete Mathematics"
+      },
+      {
+        "id": "urn:ngm:class:logic",
+        "label": "Logic"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:software-engineering",
         "label": "Software Engineering"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:formal-methods",
+        "label": "Formal Methods"
+      },
+      {
+        "id": "urn:ngm:class:type-theory",
+        "label": "Type Theory"
+      }
+    ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ieee",
+        "label": "IEEE"
+      },
+      {
+        "id": "urn:ngm:class:acm",
+        "label": "ACM"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human-Computer Interaction"
+      },
+      {
+        "id": "urn:ngm:class:information-theory",
+        "label": "Information Theory"
+      }
+    ]
   },
   "wikilinks": [
     {

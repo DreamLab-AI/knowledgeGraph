@@ -51,7 +51,7 @@ public:: true
   "@type": "Class",
   "label": "Customer Support Automation",
   "definition": "Customer support automation is the use of software, including chatbots and virtual agents, to handle customer enquiries with reduced human intervention. It aims to resolve common requests quickly and at scale.",
-  "domain": "nlp",
+  "domain": "ai",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

@@ -5,39 +5,156 @@
   "public": true,
   "classIri": "urn:ngm:class:sensor",
   "domain": "robotics",
-  "definition": "Sensors are devices and systems that enable robots to perceive and measure their environment through the detection of physical phenomena.",
+  "definition": "A sensor is a transducer or measurement device that detects, converts, and quantifies a physical, chemical, or environmental stimulus \u2014 such as light, pressure, temperature, motion, or electromagnetic fields \u2014 into an electrical signal suitable for processing, storage, or actuation. Sensors form the perceptual interface between computational systems and the physical world, enabling autonomous robots, IoT devices, spacecraft, and industrial machinery to react to real-world conditions. They are characterised by key metrology attributes including sensitivity, resolution, dynamic range, linearity, bandwidth, and noise floor. Modern sensor fusion architectures combine heterogeneous sensor streams \u2014 e.g. [[LiDAR]], [[Camera]], and [[IMU]] \u2014 using probabilistic filters to produce robust, high-fidelity world models.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:robo-perception",
-      "label": "Perception and Sensing"
+      "id": "urn:ngm:class:hardware-component",
+      "label": "Hardware Component"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.72,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:lidar",
+        "label": "LiDAR"
+      },
+      {
+        "id": "urn:ngm:class:camera",
+        "label": "Camera"
+      },
+      {
+        "id": "urn:ngm:class:imu",
+        "label": "IMU"
+      },
+      {
+        "id": "urn:ngm:class:force-torque-sensor",
+        "label": "Force-Torque Sensor"
+      },
+      {
+        "id": "urn:ngm:class:encoder",
+        "label": "Encoder"
+      },
+      {
+        "id": "urn:ngm:class:ultrasonic-sensor",
+        "label": "Ultrasonic Sensor"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      },
+      {
+        "id": "urn:ngm:class:analog-to-digital-converter",
+        "label": "Analog-to-Digital Converter"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:perception",
+        "label": "Perception"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:simultaneous-localisation-and-mapping",
+        "label": "Simultaneous Localisation and Mapping"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "id": "urn:ngm:class:condition-monitoring",
+        "label": "Condition Monitoring"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      },
+      {
+        "id": "urn:ngm:class:power-management",
+        "label": "Power Management"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      }
+    ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:hardware-component",
-        "label": "Hardware Component"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
       }
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:robotics-systems",
-        "label": "Robotics Systems"
+        "id": "urn:ngm:class:kalman-filter",
+        "label": "Kalman Filter"
+      },
+      {
+        "id": "urn:ngm:class:real-time-operating-system",
+        "label": "Real-Time Operating System"
       }
     ],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "supports": [
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicle"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ieee-1451",
+        "label": "IEEE 1451"
+      },
+      {
+        "id": "urn:ngm:class:ros",
+        "label": "ROS"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:robotics-systems",
+        "label": "Robotics Systems"
+      },
+      {
+        "id": "urn:ngm:class:iot-device",
+        "label": "IoT Device"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:telemetry",
+        "label": "Telemetry"
+      },
+      {
+        "id": "urn:ngm:class:data-acquisition",
+        "label": "Data Acquisition"
+      }
+    ]
   },
   "wikilinks": [
     {

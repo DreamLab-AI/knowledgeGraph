@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:evaluation-metric",
   "domain": "ai",
-  "definition": "An evaluation metric is a quantitative or qualitative measure used to assess the performance, quality, or behaviour of a machine learning model, algorithm, or system against a defined objective. Metrics are computed over held-out test data or through human judgment protocols and provide the empirical basis for model comparison, selection, and deployment decisions. The choice of metric directly shapes what properties a model optimises for during training and what trade-offs are made between competing objectives such as accuracy, fairness, and calibration.",
+  "definition": "An evaluation metric is a quantitative or qualitative measure used to assess the performance, quality, or behaviour of a machine learning model, algorithm, or system against a defined objective. Metrics are computed over held-out test data or through human judgement protocols and provide the empirical basis for model comparison, selection, and deployment decisions. The choice of metric directly shapes what properties a model optimises for during training and what trade-offs are made between competing objectives such as accuracy, fairness, and calibration. Metric selection is therefore a first-class design decision whose consequences cascade from training dynamics through to safety, governance, and societal impact.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:performance-metrics",
@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.75,
   "maturity": "established",
   "relationships": {
     "hasPart": [
@@ -36,14 +36,66 @@
       {
         "id": "urn:ngm:class:loss-function",
         "label": "Loss Function"
+      },
+      {
+        "id": "urn:ngm:class:auc-roc",
+        "label": "AUC-ROC"
+      },
+      {
+        "id": "urn:ngm:class:fairness-metrics",
+        "label": "Fairness Metrics"
       }
     ],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:ground-truth-label",
+        "label": "Ground Truth Label"
+      },
+      {
+        "id": "urn:ngm:class:test-dataset",
+        "label": "Test Dataset"
+      },
+      {
+        "id": "urn:ngm:class:evaluation-protocol",
+        "label": "Evaluation Protocol"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:model-comparison",
+        "label": "Model Comparison"
+      },
+      {
+        "id": "urn:ngm:class:hyperparameter-tuning",
+        "label": "Hyperparameter Tuning"
+      },
+      {
+        "id": "urn:ngm:class:model-selection",
+        "label": "Model Selection"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      },
+      {
+        "id": "urn:ngm:class:objective-function",
+        "label": "Objective Function"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ],
     "uses": [],
     "supports": [
       {
@@ -63,8 +115,8 @@
         "label": "Machine Learning"
       },
       {
-        "id": "urn:ngm:class:deep-learning",
-        "label": "Deep Learning"
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
       }
     ],
     "standardizedBy": [],
@@ -83,12 +135,16 @@
         "label": "Model Evaluation Results"
       },
       {
-        "id": "urn:ngm:class:performance-benchmarks",
-        "label": "Performance Benchmarks"
+        "id": "urn:ngm:class:goodharts-law",
+        "label": "Goodhart's Law"
       },
       {
-        "id": "urn:ngm:class:fairness-metrics",
-        "label": "Fairness Metrics"
+        "id": "urn:ngm:class:calibration",
+        "label": "Calibration"
+      },
+      {
+        "id": "urn:ngm:class:model-card",
+        "label": "Model Card"
       }
     ]
   },

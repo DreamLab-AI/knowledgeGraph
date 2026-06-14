@@ -47,7 +47,7 @@ public:: true
   "@type": "Class",
   "label": "FSA",
   "definition": "A financial regulatory authority, commonly the abbreviation for a national financial services agency that supervises banks, securities, and other financial institutions. The name refers to several distinct national regulators.",
-  "domain": "regulation",
+  "domain": "governance",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

@@ -4,7 +4,7 @@
   "slug": "3-d-perception",
   "public": true,
   "classIri": "urn:ngm:class:3-d-perception",
-  "domain": "spatial",
+  "domain": "spatial-computing",
   "definition": "3D Perception is the computational capability to interpret sensor data \u2014 from cameras, LiDAR, radar, and depth sensors \u2014 and derive accurate three-dimensional understanding of the surrounding environment, including object detection, pose estimation, scene structure, and semantic labelling. It forms a foundational layer for autonomous systems, robotic manipulation, augmented reality registration, and spatial computing. The discipline draws on computer vision, geometry, and deep learning to transform raw observations into actionable 3D representations.",
   "subClassOf": [
     {

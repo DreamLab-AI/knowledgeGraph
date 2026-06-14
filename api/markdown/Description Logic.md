@@ -55,7 +55,7 @@ public:: true
   "@type": "Class",
   "label": "Description Logic",
   "definition": "A family of formal knowledge representation languages used to describe concepts, roles, and individuals with well-defined model-theoretic semantics.",
-  "domain": "mathematics",
+  "domain": "machine-learning",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

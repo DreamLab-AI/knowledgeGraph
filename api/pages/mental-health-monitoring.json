@@ -4,7 +4,7 @@
   "slug": "mental-health-monitoring",
   "public": true,
   "classIri": "urn:ngm:class:mental-health-monitoring",
-  "domain": "healthcare",
+  "domain": "ai",
   "definition": "The use of sensors, applications, and data analysis to track indicators related to a person's psychological wellbeing over time. It may use self-reports, physiological signals, and behavioural data.",
   "subClassOf": [
     {

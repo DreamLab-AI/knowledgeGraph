@@ -4,8 +4,8 @@
   "slug": "optimisation",
   "public": true,
   "classIri": "urn:ngm:class:optimisation",
-  "domain": "science",
-  "definition": "Optimisation is the mathematical and computational discipline concerned with finding the best solution \u2014 maximum or minimum \u2014 of an objective function subject to given constraints, across a search space of possible decisions or parameter configurations. It encompasses deterministic methods (linear programming, convex optimisation, gradient-based methods), stochastic methods (simulated annealing, evolutionary algorithms, Monte Carlo), and learned methods (differentiable optimisation, meta-learning). Optimisation is the theoretical core of machine learning training, operations research, control engineering, and resource scheduling. The choice of optimisation algorithm fundamentally determines convergence speed, solution quality, and computational cost.",
+  "domain": "machine-learning",
+  "definition": "Optimisation is the mathematical and computational discipline concerned with finding the best solution \u2014 maximum or minimum \u2014 of an objective function subject to given constraints, across a search space of possible decisions or parameter configurations. It encompasses deterministic methods (linear programming, convex optimisation, gradient-based search), stochastic methods (simulated annealing, evolutionary algorithms, Monte Carlo sampling), and learned methods (differentiable optimisation, meta-learning, neural combinatorial solvers). Optimisation is the theoretical core of machine learning training, operations research, control engineering, signal processing, and resource scheduling. The choice of optimisation algorithm fundamentally determines convergence speed, solution quality, and computational cost across all application domains.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:mathematical-foundations",
@@ -13,54 +13,127 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:convex-optimisation",
+        "label": "Convex Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-optimisation",
+        "label": "Bayesian Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:evolutionary-algorithm",
+        "label": "Evolutionary Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:linear-programming",
+        "label": "Linear Programming"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      },
+      {
+        "id": "urn:ngm:class:objective-function",
+        "label": "Objective Function"
+      },
+      {
+        "id": "urn:ngm:class:constraint",
+        "label": "Constraint"
+      }
+    ],
     "enables": [
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
       },
       {
         "id": "urn:ngm:class:optimal-control",
         "label": "Optimal Control"
       },
       {
-        "id": "urn:ngm:class:logistics-optimization",
-        "label": "Logistics Optimization"
+        "id": "urn:ngm:class:operations-research",
+        "label": "Operations Research"
+      },
+      {
+        "id": "urn:ngm:class:hyperparameter-tuning",
+        "label": "Hyperparameter Tuning"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [
+    "contrastsWith": [
       {
-        "id": "urn:ngm:class:loss-function",
-        "label": "Loss Function"
-      },
-      {
-        "id": "urn:ngm:class:mathematical-reasoning",
-        "label": "Mathematical Reasoning"
+        "id": "urn:ngm:class:satisfiability",
+        "label": "Satisfiability"
       }
     ],
-    "supports": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:quantum-computing",
+        "label": "Quantum Computing"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:calculus",
+        "label": "Calculus"
+      },
+      {
+        "id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      },
+      {
+        "id": "urn:ngm:class:probability-theory",
+        "label": "Probability Theory"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:neural-network-training",
+        "label": "Neural Network Training"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:portfolio-optimisation",
+        "label": "Portfolio Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:optimization-algorithm",
-        "label": "Optimization Algorithm"
+        "id": "urn:ngm:class:numerical-methods",
+        "label": "Numerical Methods"
       },
       {
-        "id": "urn:ngm:class:gradient-descent",
-        "label": "Gradient Descent"
+        "id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
       },
       {
-        "id": "urn:ngm:class:bayesian-optimisation",
-        "label": "Bayesian Optimisation"
+        "id": "urn:ngm:class:information-theory",
+        "label": "Information Theory"
       }
     ]
   },

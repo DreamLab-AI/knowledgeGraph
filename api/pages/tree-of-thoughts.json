@@ -5,50 +5,135 @@
   "public": true,
   "classIri": "urn:ngm:class:tree-of-thoughts",
   "domain": "artificial-intelligence",
-  "definition": "Tree of Thoughts (ToT) is a deliberate reasoning framework for large language models that generalises linear chain-of-thought prompting into a tree-structured search over intermediate thought steps. At each node in the tree the model generates multiple candidate next-thoughts, evaluates their promise using an LLM-based heuristic, and selects branches to expand via breadth-first or depth-first search with backtracking. This framework enables systematic exploration of alternative reasoning paths and is particularly effective for tasks requiring combinatorial planning, mathematical proof construction, or multi-step problem-solving where greedy left-to-right decoding is insufficient.",
+  "definition": "Tree of Thoughts (ToT) is a deliberate reasoning framework for large language models that generalises linear chain-of-thought prompting into a tree-structured search over intermediate thought steps. At each node in the tree the model generates multiple candidate next-thoughts, evaluates their promise using an LLM-based heuristic, and selects branches to expand via breadth-first or depth-first search with backtracking. This enables systematic exploration of alternative reasoning paths and is particularly effective for combinatorial planning, mathematical proof construction, or multi-step problem-solving where greedy left-to-right decoding is insufficient. ToT was formalised by Yao et al. (2023) and represents the foundational instance of inference-time compute scaling through structured search.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique"
+      "id": "urn:ngm:class:inference-time-compute",
+      "label": "Inference-Time Compute"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
+  "qualityScore": 0.74,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:thought-generator",
+        "label": "Thought Generator"
+      },
+      {
+        "id": "urn:ngm:class:thought-evaluator",
+        "label": "Thought Evaluator"
+      },
+      {
+        "id": "urn:ngm:class:tree-search-algorithm",
+        "label": "Tree Search Algorithm"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:mathematical-reasoning",
         "label": "Mathematical Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:automated-planning",
+        "label": "Automated Planning"
+      },
+      {
+        "id": "urn:ngm:class:combinatorial-problem-solving",
+        "label": "Combinatorial Problem Solving"
+      },
+      {
+        "id": "urn:ngm:class:multi-step-reasoning",
+        "label": "Multi-Step Reasoning"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [
-      {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
-      }
-    ],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
+    "contrastsWith": [
       {
         "id": "urn:ngm:class:chain-of-thought",
         "label": "Chain of Thought"
       },
       {
-        "id": "urn:ngm:class:prompt-engineering",
-        "label": "Prompt Engineering"
+        "id": "urn:ngm:class:self-consistency",
+        "label": "Self-Consistency"
       },
+      {
+        "id": "urn:ngm:class:react-prompting",
+        "label": "ReAct Prompting"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:heuristic-search",
+        "label": "Heuristic Search"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:breadth-first-search",
+        "label": "Breadth-First Search"
+      },
+      {
+        "id": "urn:ngm:class:depth-first-search",
+        "label": "Depth-First Search"
+      },
+      {
+        "id": "urn:ngm:class:beam-search",
+        "label": "Beam Search"
+      },
+      {
+        "id": "urn:ngm:class:backtracking",
+        "label": "Backtracking"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:inference-time-compute",
+        "label": "Inference-Time Compute"
+      },
+      {
+        "id": "urn:ngm:class:deliberate-reasoning",
+        "label": "Deliberate Reasoning"
+      }
+    ],
+    "relatedTo": [
       {
         "id": "urn:ngm:class:monte-carlo-tree-search",
         "label": "Monte Carlo Tree Search"
+      },
+      {
+        "id": "urn:ngm:class:process-reward-model",
+        "label": "Process Reward Model"
+      },
+      {
+        "id": "urn:ngm:class:speculative-decoding",
+        "label": "Speculative Decoding"
+      },
+      {
+        "id": "urn:ngm:class:graph-of-thoughts",
+        "label": "Graph of Thoughts"
+      },
+      {
+        "id": "urn:ngm:class:skeleton-of-thought",
+        "label": "Skeleton of Thought"
       }
     ]
   },

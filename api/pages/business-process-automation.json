@@ -4,7 +4,7 @@
   "slug": "business-process-automation",
   "public": true,
   "classIri": "urn:ngm:class:business-process-automation",
-  "domain": "automation",
+  "domain": "robotics",
   "definition": "The use of technology to automate complex, multi-step business processes beyond individual tasks, integrating systems and people to streamline operations. It targets end-to-end workflows rather than isolated actions.",
   "subClassOf": [
     {

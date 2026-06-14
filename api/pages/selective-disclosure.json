@@ -4,16 +4,16 @@
   "slug": "selective-disclosure",
   "public": true,
   "classIri": "urn:ngm:class:selective-disclosure",
-  "domain": "blockchain",
-  "definition": "Selective disclosure is a cryptographic capability that allows the holder of a verifiable credential to present only a chosen subset of the credential's claims to a verifier, without the verifier being able to learn anything about the undisclosed fields and without requiring re-issuance of a new credential by the issuer. It is implemented through cryptographic mechanisms such as BBS+ signatures, SD-JWT, and zero-knowledge proofs, and is a core design goal of the W3C Verifiable Credentials standard and decentralised identity architectures that aim to minimise unnecessary personal data exposure.",
+  "domain": "security",
+  "definition": "Selective disclosure is a cryptographic capability that allows the holder of a verifiable credential to present only a chosen subset of the credential's claims to a verifier, without revealing the undisclosed fields or requiring re-issuance by the issuer. It is implemented through specialised signature schemes such as BBS+ signatures and SD-JWT, as well as zero-knowledge proof systems, enabling fine-grained data minimisation in decentralised identity architectures. As a core privacy-engineering primitive, selective disclosure satisfies regulatory requirements such as GDPR's data minimisation principle and supports the eIDAS 2.0 digital wallet framework. The concept bridges cryptographic credential security with practical privacy-preserving authentication across identity, finance, and access-control domains.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:bc-cryptographic-primitive",
-      "label": "BC Cryptographic Primitive"
+      "id": "urn:ngm:class:privacy-preserving-technology",
+      "label": "Privacy Preserving Technology"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
+  "qualityScore": 0.74,
   "maturity": "emerging",
   "relationships": {
     "hasPart": [],
@@ -25,30 +25,124 @@
       {
         "id": "urn:ngm:class:verifiable-credentials",
         "label": "Verifiable Credentials"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-commitment-scheme",
+        "label": "Cryptographic Commitment Scheme"
       }
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:privacy-preserving-technology",
-        "label": "Privacy Preserving Technology"
-      },
-      {
         "id": "urn:ngm:class:decentralised-identity",
         "label": "Decentralised Identity"
+      },
+      {
+        "id": "urn:ngm:class:data-minimisation",
+        "label": "Data Minimisation"
+      },
+      {
+        "id": "urn:ngm:class:attribute-based-access-control",
+        "label": "Attribute-Based Access Control"
+      },
+      {
+        "id": "urn:ngm:class:privacy-preserving-authentication",
+        "label": "Privacy-Preserving Authentication"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:bbs-plus-signatures",
+        "label": "BBS+ Signatures"
+      },
+      {
+        "id": "urn:ngm:class:sd-jwt",
+        "label": "SD-JWT"
+      },
+      {
+        "id": "urn:ngm:class:zk-snarks",
+        "label": "zk-SNARKs"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:full-credential-presentation",
+        "label": "Full Credential Presentation"
+      },
+      {
+        "id": "urn:ngm:class:bearer-token",
+        "label": "Bearer Token"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:differential-privacy",
+        "label": "Differential Privacy"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:eidas-2",
+        "label": "eIDAS 2.0"
+      },
+      {
+        "id": "urn:ngm:class:gdpr-compliance",
+        "label": "GDPR Compliance"
+      },
+      {
+        "id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self-Sovereign Identity"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:w3c-verifiable-credentials-data-model",
+        "label": "W3C Verifiable Credentials Data Model"
+      },
+      {
+        "id": "urn:ngm:class:ietf-sd-jwt",
+        "label": "IETF SD-JWT"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-identity-foundation",
+        "label": "Decentralised Identity Foundation"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
         "id": "urn:ngm:class:credential-format-standard",
         "label": "Credential Format Standard"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-identifier",
+        "label": "Decentralised Identifier"
+      },
+      {
+        "id": "urn:ngm:class:digital-identity-wallet",
+        "label": "Digital Identity Wallet"
       }
     ]
   },

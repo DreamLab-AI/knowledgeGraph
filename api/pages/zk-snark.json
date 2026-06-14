@@ -4,8 +4,8 @@
   "slug": "zk-snark",
   "public": true,
   "classIri": "urn:ngm:class:zk-snark",
-  "domain": "cryptographic",
-  "definition": "A Zero-Knowledge Succinct Non-Interactive Argument of Knowledge is a proof that a statement is true while revealing nothing else, producing a small proof that is fast to verify.",
+  "domain": "security",
+  "definition": "A ZK-SNARK (Zero-Knowledge Succinct Non-Interactive Argument of Knowledge) is a cryptographic proof system that allows a prover to convince a verifier that a computational statement is true without revealing any information beyond the validity of the statement itself. The proof is succinct \u2014 its size and verification time are sub-linear (often constant or logarithmic) relative to the underlying computation \u2014 and non-interactive, requiring no back-and-forth messages between prover and verifier. Most constructions rely on bilinear pairings over elliptic curves and require a one-time trusted setup ceremony to generate a structured reference string.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:zero-knowledge-proof",
@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.76,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
@@ -21,23 +21,121 @@
       {
         "id": "urn:ngm:class:elliptic-curve-cryptography",
         "label": "Elliptic Curve Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:trusted-setup",
+        "label": "Trusted Setup"
+      },
+      {
+        "id": "urn:ngm:class:arithmetic-circuit",
+        "label": "Arithmetic Circuit"
+      },
+      {
+        "id": "urn:ngm:class:bilinear-pairing",
+        "label": "Bilinear Pairing"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:groth-16",
         "label": "Groth16"
+      },
+      {
+        "id": "urn:ngm:class:rollup",
+        "label": "Rollup"
+      },
+      {
+        "id": "urn:ngm:class:private-transaction",
+        "label": "Private Transaction"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-computation",
+        "label": "Verifiable Computation"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:succinct-argument",
+        "label": "Succinct Argument"
+      },
+      {
+        "id": "urn:ngm:class:non-interactive-proof",
+        "label": "Non-Interactive Proof"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:zk-stark",
+        "label": "ZK-STARK"
+      },
+      {
+        "id": "urn:ngm:class:interactive-proof",
+        "label": "Interactive Proof"
+      },
+      {
+        "id": "urn:ngm:class:bulletproof",
+        "label": "Bulletproof"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-privacy",
+        "label": "Machine Learning Privacy"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:rank-1-constraint-system",
+        "label": "Rank-1 Constraint System"
+      },
+      {
+        "id": "urn:ngm:class:polynomial-commitment",
+        "label": "Polynomial Commitment"
+      },
+      {
+        "id": "urn:ngm:class:fiat-shamir-heuristic",
+        "label": "Fiat-Shamir Heuristic"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:privacy-preserving-computation",
+        "label": "Privacy-Preserving Computation"
+      },
+      {
+        "id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:plonk",
+        "label": "PLONK"
+      },
+      {
+        "id": "urn:ngm:class:groth-16",
+        "label": "Groth16"
+      },
+      {
+        "id": "urn:ngm:class:zcash",
+        "label": "Zcash"
+      }
+    ]
   },
   "wikilinks": [
     {

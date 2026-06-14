@@ -99,7 +99,7 @@ public:: true
   "@type": "Class",
   "label": "Capital Markets Domain",
   "definition": "The Capital Markets Domain classifies concepts concerned with the issuance, trading, and settlement of financial securities and the institutions that support them. It covers primary issuance, secondary trading venues, market microstructure, and post-trade clearing and settlement. As a top-level subject classification, it scopes the structure of organised markets rather than the individual assets traded or the regulation that governs them.",
-  "domain": "capital-markets",
+  "domain": "finance",
   "maturity": "emerging",
   "qualityScore": 0.7,
   "subClassOf": [

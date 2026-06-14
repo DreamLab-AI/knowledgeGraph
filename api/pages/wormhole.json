@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:wormhole",
   "domain": "blockchain",
-  "definition": "Wormhole is a decentralised cross-chain messaging and asset-transfer protocol that enables the movement of tokens, NFTs, and arbitrary messages between heterogeneous blockchain networks by relying on a network of off-chain guardian validators who attest to events on one chain, producing signed VAA (Verified Action Approval) messages that unlock corresponding assets or trigger logic on the destination chain. Originally launched as a wrapped-asset bridge between Solana and Ethereum in 2020, Wormhole has evolved into a generic interoperability layer supporting over 30 ecosystems. A significant exploit in February 2022 resulted in the theft of approximately 120,000 wETH, subsequently made whole by Jump Crypto.",
+  "definition": "Wormhole is a decentralised, generic cross-chain messaging and asset-transfer protocol that connects heterogeneous blockchain networks by relying on a permissioned guardian network whose supermajority attestations produce signed Verified Action Approval (VAA) messages. On-chain core contracts on each supported network verify VAAs to lock, mint, or burn assets and to route arbitrary data payloads, making Wormhole a general-purpose interoperability layer rather than a simple token bridge. Originally launched in 2020 as a Solana\u2013Ethereum wrapped-asset bridge by Certus One, it has expanded to support over 30 layer-1 and layer-2 ecosystems under stewardship of the independent Wormhole Foundation.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:cross-chain-bridge",
@@ -13,38 +13,98 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:validator-node",
+        "label": "Validator Node"
+      },
+      {
+        "id": "urn:ngm:class:quorum-consensus",
+        "label": "Quorum Consensus"
+      },
+      {
+        "id": "urn:ngm:class:event-log",
+        "label": "Event Log"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:cross-chain-asset-transfer",
-        "label": "Cross Chain Asset Transfer"
+        "label": "Cross-Chain Asset Transfer"
       },
       {
         "id": "urn:ngm:class:cross-chain-messaging",
-        "label": "Cross Chain Communication"
+        "label": "Cross-Chain Messaging"
+      },
+      {
+        "id": "urn:ngm:class:token-bridging",
+        "label": "Token Bridging"
+      },
+      {
+        "id": "urn:ngm:class:nft-bridging",
+        "label": "NFT Bridging"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:layerzero",
+        "label": "LayerZero"
+      },
+      {
+        "id": "urn:ngm:class:axelar",
+        "label": "Axelar"
+      },
+      {
+        "id": "urn:ngm:class:ibc-protocol",
+        "label": "IBC Protocol"
+      },
+      {
+        "id": "urn:ngm:class:light-client-bridge",
+        "label": "Light-Client Bridge"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:intent-based-bridging",
+        "label": "Intent-Based Bridging"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
       },
       {
-        "id": "urn:ngm:class:bridge-contract",
-        "label": "Bridge Contract"
+        "id": "urn:ngm:class:guardian-network",
+        "label": "Guardian Network"
+      },
+      {
+        "id": "urn:ngm:class:multisignature-scheme",
+        "label": "Multisignature Scheme"
+      },
+      {
+        "id": "urn:ngm:class:lock-and-mint-mechanism",
+        "label": "Lock-and-Mint Mechanism"
       }
     ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:multichain-ecosystem",
+        "label": "Multi-Chain Ecosystem"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:cross-chain-interoperability",
@@ -53,6 +113,18 @@
       {
         "id": "urn:ngm:class:blockchain-interoperability",
         "label": "Blockchain Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:oracle-network",
+        "label": "Oracle Network"
+      },
+      {
+        "id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
       }
     ]
   },

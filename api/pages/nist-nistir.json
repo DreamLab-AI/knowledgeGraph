@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:nist-nistir",
   "domain": "standards",
-  "definition": "A reference to the NIST Interagency or Internal Report (NISTIR) series, a publication series used by NIST for technical reports. The specific report is not identified by this label alone.",
+  "definition": "NIST Interagency or Internal Reports (NISTIRs) are a formal publication series issued by the National Institute of Standards and Technology covering technical research, guidelines, measurements, and collaborative investigations that do not rise to the level of a Federal Information Processing Standard (FIPS) or a Special Publication (SP). NISTIRs document foundational work \u2014 including laboratory studies, software evaluations, and preliminary standards research \u2014 produced by NIST staff or by NIST in collaboration with other U.S. government agencies. Because they are freely accessible and citable, NISTIRs frequently underpin subsequent Special Publications, ISO standards, and regulatory frameworks in cybersecurity, metrology, AI evaluation, and more.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:technical-standard",
@@ -13,26 +13,141 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:nist-nistir-8011",
+        "label": "NIST NISTIR 8011"
+      },
+      {
+        "id": "urn:ngm:class:nist-nistir-8286",
+        "label": "NIST NISTIR 8286"
+      },
+      {
+        "id": "urn:ngm:class:nist-nistir-8259",
+        "label": "NIST NISTIR 8259"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:nist",
         "label": "NIST"
       }
     ],
-    "enables": [],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "enables": [
+      {
+        "id": "urn:ngm:class:federal-information-security",
+        "label": "Federal Information Security"
+      },
+      {
+        "id": "urn:ngm:class:ai-risk-management",
+        "label": "AI Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:cybersecurity-policy",
+        "label": "Cybersecurity Policy"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:technical-research",
+        "label": "Technical Research"
+      },
+      {
+        "id": "urn:ngm:class:peer-review",
+        "label": "Peer Review"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:nist-research-program",
+        "label": "NIST Research Program"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:nist-special-publication",
+        "label": "NIST Special Publication"
+      },
+      {
+        "id": "urn:ngm:class:federal-information-processing-standards",
+        "label": "Federal Information Processing Standards"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-standard",
+        "label": "ISO IEC Standard"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-trustworthiness",
+        "label": "AI Trustworthiness"
+      },
+      {
+        "id": "urn:ngm:class:iot-security",
+        "label": "IoT Security"
+      },
+      {
+        "id": "urn:ngm:class:quantum-computing",
+        "label": "Quantum Computing"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:measurement-science",
+        "label": "Measurement Science"
+      },
+      {
+        "id": "urn:ngm:class:software-testing",
+        "label": "Software Testing"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:nist-special-publication",
+        "label": "NIST Special Publication"
+      },
+      {
+        "id": "urn:ngm:class:federal-information-processing-standards",
+        "label": "Federal Information Processing Standards"
+      },
+      {
+        "id": "urn:ngm:class:risk-management-framework",
+        "label": "Risk Management Framework"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:nist",
+        "label": "NIST"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:nist-publication-series",
+        "label": "NIST Publication Series"
+      },
+      {
+        "id": "urn:ngm:class:nist",
+        "label": "NIST"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:technical-report",
+        "label": "Technical Report"
+      },
+      {
+        "id": "urn:ngm:class:government-publication",
+        "label": "Government Publication"
+      },
+      {
+        "id": "urn:ngm:class:nist-cybersecurity-framework",
+        "label": "NIST Cybersecurity Framework"
+      }
+    ]
   },
   "wikilinks": [
     {

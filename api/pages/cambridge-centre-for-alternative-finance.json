@@ -4,8 +4,8 @@
   "slug": "cambridge-centre-for-alternative-finance",
   "public": true,
   "classIri": "urn:ngm:class:cambridge-centre-for-alternative-finance",
-  "domain": "blockchain",
-  "definition": "A research centre at the University of Cambridge Judge Business School that studies alternative finance, including digital assets, blockchain energy consumption, and regulatory developments.",
+  "domain": "finance",
+  "definition": "The Cambridge Centre for Alternative Finance (CCAF) is an interdisciplinary research centre at the University of Cambridge Judge Business School that conducts empirical studies on financial instruments and channels operating outside conventional banking systems. It is globally recognised for producing landmark indices and benchmark datasets on cryptoasset markets, distributed ledger technology adoption, digital payments, and the energy consumption of proof-of-work networks. CCAF research informs regulatory policy, industry strategy, and academic discourse through rigorous survey-based methodologies and open data publications. Its work bridges fintech innovation, environmental sustainability analysis, and international financial governance.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:financial-infrastructure-domain",
@@ -13,21 +13,131 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:cambridge-bitcoin-electricity-consumption-index",
+        "label": "Cambridge Bitcoin Electricity Consumption Index"
+      },
+      {
+        "id": "urn:ngm:class:global-cryptoasset-benchmarking-study",
+        "label": "Global Cryptoasset Benchmarking Study"
+      },
+      {
+        "id": "urn:ngm:class:global-alternative-finance-market-benchmarking-report",
+        "label": "Global Alternative Finance Market Benchmarking Report"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:empirical-research-methodology",
+        "label": "Empirical Research Methodology"
+      },
+      {
+        "id": "urn:ngm:class:survey-based-data-collection",
+        "label": "Survey-Based Data Collection"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:cryptocurrency-regulation",
+        "label": "Cryptocurrency Regulation"
+      },
+      {
+        "id": "urn:ngm:class:cryptoasset-policy",
+        "label": "Cryptoasset Policy"
+      },
+      {
+        "id": "urn:ngm:class:fintech-benchmarking",
+        "label": "Fintech Benchmarking"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:blockchain-network-data",
+        "label": "Blockchain Network Data"
+      },
+      {
+        "id": "urn:ngm:class:open-data-publishing",
+        "label": "Open Data Publishing"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:traditional-banking",
+        "label": "Traditional Banking"
+      },
+      {
+        "id": "urn:ngm:class:incumbent-financial-system",
+        "label": "Incumbent Financial System"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:bitcoin-environmental-issues",
+        "label": "Bitcoin Environmental Issues"
+      },
+      {
+        "id": "urn:ngm:class:energy-consumption-monitoring",
+        "label": "Energy Consumption Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:proof-of-work",
+        "label": "Proof of Work"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-lending",
+        "label": "Peer-to-Peer Lending"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      },
+      {
+        "id": "urn:ngm:class:sustainable-finance",
+        "label": "Sustainable Finance"
+      },
+      {
+        "id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      }
+    ],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:cambridge-judge-business-school",
+        "label": "Cambridge Judge Business School"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:crowdfunding",
+        "label": "Crowdfunding"
+      },
+      {
+        "id": "urn:ngm:class:alternative-finance",
+        "label": "Alternative Finance"
+      }
+    ]
   },
   "wikilinks": [
     {

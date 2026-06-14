@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:l-402-protocol",
   "domain": "blockchain",
-  "definition": "The specification defining how HTTP 402 responses, Lightning invoices, and macaroon tokens combine to authorise paid access to web resources.",
+  "definition": "L402 Protocol is a web-native payment authentication specification that combines HTTP 402 status responses, [[Lightning Network]] BOLT11 invoices, and cryptographic macaroon tokens to enable pay-per-request access control for APIs and web resources. A server responding with 402 embeds a Lightning invoice and a partially-constructed macaroon; the client pays the invoice, receives the payment preimage, and embeds that preimage as a macaroon caveat to form a valid bearer credential. The protocol enables metered, machine-to-machine micropayments without requiring user accounts, subscriptions, or traditional payment rails, making it well-suited to AI agent infrastructure, streaming data services, and censorship-resistant content monetisation.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:l-402",
@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "emerging",
   "relationships": {
     "hasPart": [],
@@ -21,23 +21,126 @@
       {
         "id": "urn:ngm:class:lightning-network",
         "label": "Lightning Network"
+      },
+      {
+        "id": "urn:ngm:class:macaroon-token",
+        "label": "Macaroon Token"
+      },
+      {
+        "id": "urn:ngm:class:payment-preimage",
+        "label": "Payment Preimage"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:micropayment",
         "label": "Micropayment"
+      },
+      {
+        "id": "urn:ngm:class:pay-per-request",
+        "label": "Pay-Per-Request"
+      },
+      {
+        "id": "urn:ngm:class:metered-api",
+        "label": "Metered API"
+      },
+      {
+        "id": "urn:ngm:class:machine-to-machine-payment",
+        "label": "Machine-to-Machine Payment"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:http-authentication-scheme",
+        "label": "HTTP Authentication Scheme"
+      },
+      {
+        "id": "urn:ngm:class:payment-channel-protocol",
+        "label": "Payment Channel Protocol"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:oauth",
+        "label": "OAuth"
+      },
+      {
+        "id": "urn:ngm:class:api-key-authentication",
+        "label": "API Key Authentication"
+      },
+      {
+        "id": "urn:ngm:class:subscription-model",
+        "label": "Subscription Model"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-agent",
+        "label": "AI Agent"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-agent-economy",
+        "label": "Autonomous Agent Economy"
+      },
+      {
+        "id": "urn:ngm:class:web-of-trust",
+        "label": "Web of Trust"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:http-402",
+        "label": "HTTP 402"
+      },
+      {
+        "id": "urn:ngm:class:bolt11-invoice",
+        "label": "BOLT11 Invoice"
+      },
+      {
+        "id": "urn:ngm:class:bearer-token",
+        "label": "Bearer Token"
+      },
+      {
+        "id": "urn:ngm:class:hash-time-locked-contract",
+        "label": "Hash Time-Locked Contract"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:api-monetisation",
+        "label": "API Monetisation"
+      },
+      {
+        "id": "urn:ngm:class:content-monetisation",
+        "label": "Content Monetisation"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-access-control",
+        "label": "Decentralised Access Control"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:web-monetisation",
+        "label": "Web Monetisation"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -5,30 +5,59 @@
   "public": true,
   "classIri": "urn:ngm:class:blockchain-transaction",
   "domain": "blockchain",
-  "definition": "A Blockchain Transaction is an atomic, cryptographically signed state-change operation recorded on a distributed ledger, representing value transfer, smart contract execution, or data mutation. Each transaction is validated by network nodes according to the active consensus algorithm, included in a block, and made immutable through chaining. Transaction structure, fee markets, and confirmation semantics vary across UTXO-based systems such as Bitcoin and account-based systems such as Ethereum.",
+  "definition": "A Blockchain Transaction is an atomic, cryptographically signed instruction that encodes a state-change on a distributed ledger \u2014 such as a transfer of digital assets, invocation of a smart contract function, or mutation of on-chain data. Transactions are broadcast to a peer-to-peer network, validated against protocol rules and the active consensus mechanism, and permanently recorded in an ordered block once accepted. The transaction model differs fundamentally between UTXO-based chains (e.g. Bitcoin) and account-based chains (e.g. Ethereum), affecting parallelism, privacy, and composability.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:bc-protocol-and-consensus",
-      "label": "Protocol and Consensus"
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [
+    "hasPart": [
       {
-        "id": "urn:ngm:class:consensus-algorithm",
-        "label": "Consensus Algorithm"
+        "id": "urn:ngm:class:utxo",
+        "label": "UTXO (Unspent Transaction Output)"
       },
+      {
+        "id": "urn:ngm:class:transaction-input",
+        "label": "Transaction Input"
+      },
+      {
+        "id": "urn:ngm:class:transaction-output",
+        "label": "Transaction Output"
+      },
+      {
+        "id": "urn:ngm:class:transaction-nonce",
+        "label": "Transaction Nonce"
+      },
+      {
+        "id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      }
+    ],
+    "requires": [
       {
         "id": "urn:ngm:class:digital-signature",
         "label": "Digital Signature"
       },
       {
-        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
+        "id": "urn:ngm:class:public-key-cryptography",
         "label": "Public-Key Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:consensus-algorithm",
+        "label": "Consensus Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:transaction-fee",
+        "label": "Transaction Fee"
       }
     ],
     "enables": [
@@ -39,22 +68,82 @@
       {
         "id": "urn:ngm:class:payment-system",
         "label": "Payment System"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:tokenisation",
+        "label": "Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:atomic-swap",
+        "label": "Atomic Swap"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:database-transaction",
+        "label": "Database Transaction"
+      },
+      {
+        "id": "urn:ngm:class:traditional-payment",
+        "label": "Traditional Payment"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:supply-chain-traceability",
+        "label": "Supply Chain Traceability"
+      },
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:mempool",
+        "label": "Mempool"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [
       {
         "id": "urn:ngm:class:blockchain",
         "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
       }
     ],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:block",
+        "label": "Block"
+      },
+      {
+        "id": "urn:ngm:class:layer-2-protocol",
+        "label": "Layer-2 Protocol"
+      },
+      {
+        "id": "urn:ngm:class:transaction-throughput",
+        "label": "Transaction Throughput"
+      }
+    ]
   },
   "wikilinks": [
     {

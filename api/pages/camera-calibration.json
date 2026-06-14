@@ -5,22 +5,30 @@
   "public": true,
   "classIri": "urn:ngm:class:camera-calibration",
   "domain": "spatial-computing",
-  "definition": "Camera Calibration is the process of estimating a camera's intrinsic parameters (focal length, principal point, skew, radial and tangential distortion coefficients) and, when multiple cameras or sensors are involved, extrinsic parameters (rotation and translation between coordinate frames). Accurate calibration is prerequisite to metrically correct 3D reconstruction, stereo depth estimation, augmented reality overlay registration, and robot visual servoing. The Zhang calibration method, using a planar chessboard target, is the dominant practical technique and is standardised in OpenCV and MATLAB's Computer Vision Toolbox.",
+  "definition": "Camera calibration is the process of estimating a camera's intrinsic parameters \u2014 focal length, principal point, pixel skew, and radial and tangential distortion coefficients \u2014 and, when multiple sensors are involved, extrinsic parameters describing the rigid-body transformation (rotation and translation) between coordinate frames. Accurate calibration is a prerequisite for metrically correct 3D reconstruction, stereo depth estimation, augmented-reality overlay registration, and robot visual servoing. The Zhang method, which solves for camera parameters from multiple images of a planar chessboard target via non-linear reprojection-error minimisation, is the dominant practical technique and is standardised in OpenCV and MATLAB's Computer Vision Toolbox. Calibration quality must be maintained over a device's operational lifetime, driving development of online self-calibration methods that exploit ego-motion and scene structure.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:sc-display-and-rendering",
-      "label": "SC Display and Rendering"
+      "id": "urn:ngm:class:computer-vision",
+      "label": "Computer Vision"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "mature",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
         "id": "urn:ngm:class:camera",
         "label": "Camera"
+      },
+      {
+        "id": "urn:ngm:class:image-processing",
+        "label": "Image Processing"
+      },
+      {
+        "id": "urn:ngm:class:optimisation",
+        "label": "Optimisation"
       }
     ],
     "enables": [
@@ -35,24 +43,97 @@
       {
         "id": "urn:ngm:class:pose-estimation",
         "label": "Pose Estimation"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:photogrammetry",
+        "label": "Photogrammetry"
+      },
+      {
+        "id": "urn:ngm:class:visual-odometry",
+        "label": "Visual Odometry"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:feature-detection",
+        "label": "Feature Detection"
+      },
+      {
+        "id": "urn:ngm:class:corner-detection",
+        "label": "Corner Detection"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:self-calibration",
+        "label": "Self-Calibration"
+      },
+      {
+        "id": "urn:ngm:class:radiometric-calibration",
+        "label": "Radiometric Calibration"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:robotics-perception",
+        "label": "Robotics Perception"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-vehicles",
+        "label": "Autonomous Vehicles"
+      },
+      {
+        "id": "urn:ngm:class:lidar-camera-fusion",
+        "label": "LiDAR-Camera Fusion"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:homography",
+        "label": "Homography"
+      },
+      {
+        "id": "urn:ngm:class:non-linear-least-squares",
+        "label": "Non-Linear Least Squares"
+      },
+      {
+        "id": "urn:ngm:class:chessboard-pattern",
+        "label": "Chessboard Pattern"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      },
       {
         "id": "urn:ngm:class:sensor-fusion",
         "label": "Sensor Fusion"
       },
       {
-        "id": "urn:ngm:class:slam",
-        "label": "SLAM"
+        "id": "urn:ngm:class:stereo-vision",
+        "label": "Stereo Vision"
+      },
+      {
+        "id": "urn:ngm:class:structure-from-motion",
+        "label": "Structure from Motion"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:projective-geometry",
+        "label": "Projective Geometry"
+      },
+      {
+        "id": "urn:ngm:class:epipolar-geometry",
+        "label": "Epipolar Geometry"
       }
     ]
   },

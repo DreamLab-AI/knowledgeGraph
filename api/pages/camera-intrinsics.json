@@ -4,7 +4,7 @@
   "slug": "camera-intrinsics",
   "public": true,
   "classIri": "urn:ngm:class:camera-intrinsics",
-  "domain": "spatial",
+  "domain": "spatial-computing",
   "definition": "Camera Intrinsics are the internal optical and geometric parameters of a camera that define the mathematical relationship between 3D points in the camera's coordinate frame and their 2D projections onto the image sensor. The intrinsic parameter matrix encodes focal length in pixel units along each image axis, the principal point (optical axis intersection with the sensor), and skew, whilst associated distortion coefficients correct for lens aberrations that cause deviations from the ideal pinhole projection model.",
   "subClassOf": [
     {

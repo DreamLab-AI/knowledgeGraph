@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:model-cards",
   "domain": "machine-learning",
-  "definition": "Short structured documents that report the intended use, performance, limitations and ethical considerations of a machine learning model to support transparency and responsible deployment.",
+  "definition": "Model Cards are short structured documents that accompany a trained machine learning model, reporting its intended uses, out-of-scope uses, training and evaluation data characteristics, disaggregated performance metrics across demographic groups, known limitations, and ethical considerations. Introduced by Mitchell et al. (2019) at Google, they standardise transparency disclosures so that developers, deployers, and affected communities can judge whether a model is appropriate for a given context. Model Cards serve as a communication artefact bridging technical model documentation to governance, fairness auditing, and regulatory compliance workflows.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:responsible-ai",
@@ -13,31 +13,112 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
-  "maturity": "growing",
+  "qualityScore": 0.74,
+  "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:intended-use-statement",
+        "label": "Intended Use Statement"
+      },
+      {
+        "id": "urn:ngm:class:performance-metrics",
+        "label": "Performance Metrics"
+      },
+      {
+        "id": "urn:ngm:class:bias-and-fairness-analysis",
+        "label": "Bias and Fairness Analysis"
+      },
+      {
+        "id": "urn:ngm:class:training-data-documentation",
+        "label": "Training Data Documentation"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:transparency",
         "label": "Transparency"
+      },
+      {
+        "id": "urn:ngm:class:disaggregated-evaluation",
+        "label": "Disaggregated Evaluation"
+      },
+      {
+        "id": "urn:ngm:class:model-metadata",
+        "label": "Model Metadata"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:accountability",
         "label": "Accountability"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-auditing",
+        "label": "Algorithmic Auditing"
+      },
+      {
+        "id": "urn:ngm:class:informed-consent",
+        "label": "Informed Consent"
+      },
+      {
+        "id": "urn:ngm:class:ai-risk-assessment",
+        "label": "AI Risk Assessment"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:datasheets-for-datasets",
+        "label": "Datasheets for Datasets"
+      },
+      {
+        "id": "urn:ngm:class:system-cards",
+        "label": "System Cards"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:ai-documentation",
+        "label": "AI Documentation"
+      },
+      {
+        "id": "urn:ngm:class:model-governance",
+        "label": "Model Governance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:fairness-in-machine-learning",
+        "label": "Fairness in Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:explainability",
+        "label": "Explainability"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:model-registry",
+        "label": "Model Registry"
+      }
+    ]
   },
   "wikilinks": [
     {

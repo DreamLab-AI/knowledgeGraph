@@ -59,7 +59,7 @@ public:: true
   "@type": "Class",
   "label": "Consensus Layer",
   "definition": "The Consensus Layer is the stratum responsible for agreement on a single canonical ordering of events across distributed participants. In the canonical stack it sits directly above the Protocol Layer and below the Data Layer, converting peer-to-peer message exchange into a shared, append-only history. It contains the agreement algorithms, fork-choice rules, and finality conditions that all participants follow.",
-  "domain": "consensus",
+  "domain": "blockchain",
   "maturity": "emerging",
   "qualityScore": 0.7,
   "subClassOf": [

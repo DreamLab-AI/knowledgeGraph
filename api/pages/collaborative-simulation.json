@@ -4,7 +4,7 @@
   "slug": "collaborative-simulation",
   "public": true,
   "classIri": "urn:ngm:class:collaborative-systems-modality-simulation",
-  "domain": "spatial",
+  "domain": "spatial-computing",
   "definition": "A computational environment in which multiple participants \u2014 human or agent \u2014 share, manipulate, and observe a common simulation state in real time. It combines networked synchronisation with physics or behavioural modelling to support joint exploration, training, or design activities across distributed locations.",
   "subClassOf": [
     {

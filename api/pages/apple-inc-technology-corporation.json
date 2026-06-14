@@ -4,8 +4,8 @@
   "slug": "apple-inc-technology-corporation",
   "public": true,
   "classIri": "urn:ngm:class:apple-inc-technology-corporation-inc-technology-corporation",
-  "domain": "spatial",
-  "definition": "Apple Inc. is an American multinational technology corporation headquartered in Cupertino, California, that designs, manufactures, and markets consumer electronics, computer software, and online services, with flagship product lines including the iPhone, iPad, Mac, Apple Watch, and the Apple Vision Pro spatial computing headset. Apple is distinguished by its vertically integrated hardware-software model, proprietary silicon (the Apple Silicon series based on ARM architecture), and the iOS and macOS operating system ecosystems. With a market capitalisation regularly exceeding two trillion US dollars, Apple is among the most valuable publicly traded companies in the world.",
+  "domain": "infrastructure",
+  "definition": "Apple Inc. is an American multinational technology corporation headquartered in Cupertino, California, that designs, manufactures, and markets consumer electronics, computer software, and online services spanning smartphones, personal computers, wearables, and spatial computing devices. Its strategic foundation rests on vertical integration of proprietary silicon (Apple Silicon, A-series, M-series SoCs), operating system platforms (iOS, macOS, visionOS, watchOS), and tightly controlled distribution through the App Store and developer ecosystem. Apple applies on-device machine learning inference, secure enclave hardware, and private cloud compute to deliver privacy-preserving AI features \u2014 branded Apple Intelligence \u2014 across its device portfolio. As one of the highest market-capitalisation companies globally, Apple's architectural decisions in silicon design, software APIs, and platform policy propagate directly into industry-wide infrastructure and standards.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:hardware",
@@ -13,37 +13,122 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.72,
   "maturity": "mature",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:apple-silicon",
+        "label": "Apple Silicon"
+      },
+      {
+        "id": "urn:ngm:class:ios",
+        "label": "iOS"
+      },
+      {
+        "id": "urn:ngm:class:macos",
+        "label": "macOS"
+      },
+      {
+        "id": "urn:ngm:class:visionos",
+        "label": "visionOS"
+      },
+      {
+        "id": "urn:ngm:class:app-store",
+        "label": "App Store"
+      }
+    ],
     "requires": [],
     "enables": [
       {
-        "id": "urn:ngm:class:apple-inc-technology-corporation-inc-technology-corporation-vision-pro",
-        "label": "Apple Vision Pro"
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
       },
       {
         "id": "urn:ngm:class:augmented-reality",
         "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:on-device-machine-learning",
+        "label": "On-Device Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:private-cloud-compute",
+        "label": "Private Cloud Compute"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
+    "implements": [
+      {
+        "id": "urn:ngm:class:arm-architecture",
+        "label": "ARM Architecture"
+      },
+      {
+        "id": "urn:ngm:class:secure-enclave",
+        "label": "Secure Enclave"
+      },
+      {
+        "id": "urn:ngm:class:neural-engine",
+        "label": "Neural Engine"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:microsoft-corporation",
+        "label": "Microsoft Corporation"
+      },
+      {
+        "id": "urn:ngm:class:google-llc",
+        "label": "Google LLC"
+      },
+      {
+        "id": "urn:ngm:class:android",
+        "label": "Android"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:spatial-ai",
+        "label": "Spatial AI"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
+    ],
+    "uses": [
       {
         "id": "urn:ngm:class:hardware-acceleration",
         "label": "Hardware Acceleration"
       },
       {
-        "id": "urn:ngm:class:spatial-ai",
-        "label": "Spatial AI"
+        "id": "urn:ngm:class:unified-memory-architecture",
+        "label": "Unified Memory Architecture"
+      },
+      {
+        "id": "urn:ngm:class:llvm-compiler-infrastructure",
+        "label": "LLVM Compiler Infrastructure"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:platform-economy",
+        "label": "Platform Economy"
+      },
+      {
+        "id": "urn:ngm:class:digital-markets-act",
+        "label": "Digital Markets Act"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
       }
     ]
   },

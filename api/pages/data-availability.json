@@ -5,19 +5,28 @@
   "public": true,
   "classIri": "urn:ngm:class:data-availability",
   "domain": "blockchain",
-  "definition": "Data availability in the context of blockchain and distributed systems refers to the guarantee that all data necessary to verify and reconstruct the state of a network\u2014particularly transaction data published by block producers\u2014is accessible to any participant who wishes to retrieve it. The data availability problem arises when validators or light clients cannot verify that a block producer has published the full data backing a block header without downloading and checking every byte. Modern solutions to data availability employ erasure coding and data availability sampling (DAS), allowing light nodes to probabilistically verify full data availability by checking only a small random subset of encoded chunks. Data availability is a foundational property in modular blockchain architectures and rollup scaling systems.",
+  "definition": "Data availability is the property of a distributed system\u2014most critically blockchain networks and rollup scaling architectures\u2014that guarantees all data necessary to verify and reconstruct network state is published and retrievable by any participant. The core data availability problem arises when a block producer publishes a block header without releasing the underlying transaction data, making it impossible for validators or light clients to verify the block's correctness without downloading all data. Modern solutions combine erasure coding (expanding data such that any sufficient subset allows full reconstruction) with data availability sampling (DAS), enabling light nodes to probabilistically confirm full publication by checking only a small random subset of encoded chunks. Data availability is a foundational primitive in modular blockchain architectures, separating the data publication concern from execution, consensus, and settlement layers.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:data-layer",
-      "label": "Data Layer"
+      "id": "urn:ngm:class:distributed-systems",
+      "label": "Distributed Systems"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.74,
   "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:layer-2-scaling",
@@ -26,20 +35,68 @@
       {
         "id": "urn:ngm:class:blockchain-scalability",
         "label": "Blockchain Scalability"
+      },
+      {
+        "id": "urn:ngm:class:rollup",
+        "label": "Rollup"
+      },
+      {
+        "id": "urn:ngm:class:light-client",
+        "label": "Light Client"
+      },
+      {
+        "id": "urn:ngm:class:modular-blockchain",
+        "label": "Modular Blockchain"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:block-propagation",
+        "label": "Block Propagation"
+      },
+      {
+        "id": "urn:ngm:class:distributed-hash-table",
+        "label": "Distributed Hash Table"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:danksharding",
+        "label": "Danksharding"
+      },
+      {
+        "id": "urn:ngm:class:proto-danksharding",
+        "label": "Proto-Danksharding"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:data-withholding-attack",
+        "label": "Data Withholding Attack"
+      },
+      {
+        "id": "urn:ngm:class:state-availability",
+        "label": "State Availability"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:distributed-storage",
+        "label": "Distributed Storage"
+      },
+      {
+        "id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:erasure-coding",
         "label": "Erasure Coding"
       },
       {
-        "id": "urn:ngm:class:sampling",
-        "label": "Sampling"
+        "id": "urn:ngm:class:data-availability-sampling",
+        "label": "Data Availability Sampling"
       },
       {
         "id": "urn:ngm:class:cryptographic-commitment",
@@ -48,6 +105,14 @@
       {
         "id": "urn:ngm:class:merkle-tree",
         "label": "Merkle Tree"
+      },
+      {
+        "id": "urn:ngm:class:kzg-polynomial-commitment",
+        "label": "KZG Polynomial Commitment"
+      },
+      {
+        "id": "urn:ngm:class:reed-solomon-code",
+        "label": "Reed-Solomon Code"
       }
     ],
     "supports": [],
@@ -65,6 +130,18 @@
       {
         "id": "urn:ngm:class:content-addressed-storage",
         "label": "Content-Addressed Storage"
+      },
+      {
+        "id": "urn:ngm:class:data-availability-committee",
+        "label": "Data Availability Committee"
+      },
+      {
+        "id": "urn:ngm:class:validity-proof",
+        "label": "Validity Proof"
+      },
+      {
+        "id": "urn:ngm:class:fraud-proof",
+        "label": "Fraud Proof"
       }
     ]
   },

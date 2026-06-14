@@ -21,7 +21,7 @@ public:: true
   "@type": "Class",
   "label": "Dynamic Lighting",
   "definition": "Dynamic lighting is a real-time rendering technique in which light sources, shadows, and indirect illumination are computed per-frame based on the current state of a scene, allowing lights to move, change intensity or colour, and interact with animated geometry without relying on pre-baked static lighting data. It is foundational to believable 3D environments in games, virtual production, and spatial computing applications.",
-  "domain": "spatial",
+  "domain": "spatial-computing",
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:rendering-technique", "label": "Rendering Technique"}],
   "relations": {

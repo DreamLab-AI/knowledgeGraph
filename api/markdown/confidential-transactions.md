@@ -1,14 +1,110 @@
 - ### Definition
-  - [[Confidential Transactions]] (CT) is a blockchain privacy protocol designed by Gregory Maxwell in 2015 that hides transferred amounts using Pedersen commitments—homomorphic [[Encryption]] constructs that allow validators to confirm that inputs equal outputs without knowing the actual values. Range proofs, now standardised as Bulletproofs, additionally constrain committed values to non-negative ranges to prevent inflation attacks. CT relies on [[Cryptographic Algorithm]] primitives from elliptic-curve cryptography and relates to the broader family of [[Zero-Knowledge Proof]] techniques used in [[Privacy Preserving Blockchain]] systems.
+  - [[Confidential Transactions]] (CT) is a [[Blockchain]] privacy protocol originally proposed by Gregory Maxwell in January 2015 that conceals the monetary amounts transferred in on-chain transactions whilst preserving the mathematical guarantee that no value is created or destroyed. The protocol relies on [[Pedersen Commitment]]s—homomorphic [[Elliptic Curve Cryptography]] constructs of the form C = rG + vH, where v is the hidden value and r is a secret blinding factor—combined with [[Range Proof]]s (now standardised as [[Bulletproofs]]) to prevent negative-value inflation attacks. By encoding amounts as cryptographic commitments rather than plaintext integers, CT achieves a strong privacy property absent from most [[Transparent Blockchain]] architectures: observers see that transactions balance without learning individual amounts, enabling genuinely private value transfer on a public ledger.
+
+- ### Overview
+  - **Why it matters** — The default transparency of public blockchains such as Bitcoin exposes transaction amounts to any observer with access to the chain, enabling financial surveillance, front-running in trading contexts, and competitive intelligence leakage between businesses. Confidential Transactions resolves this by replacing plaintext amounts with cryptographic commitments that are simultaneously hiding (observers learn nothing about v) and binding (the sender cannot equivocate after commitment). This makes CT foundational to enterprise and institutional adoption of blockchain infrastructure, where counterparty amount disclosure is commercially unacceptable.
+  - **How it works** — A sender commits to each output value using C = rG + vH on a chosen elliptic curve. Because Pedersen commitments are additively homomorphic, validators can confirm sum-of-inputs minus sum-of-outputs = 0 by checking that the corresponding commitment equations cancel—verifying conservation of value without decrypting individual amounts. Range proofs (originally Borromean ring signatures, later replaced by [[Bulletproofs]]) then prove each committed value v lies within a positive range [0, 2^n], blocking the trivial attack of committing to a negative amount to mint value from nothing.
+  - **Maturity** — CT itself is established; its core mathematics (Pedersen commitments, elliptic-curve discrete-log hardness) is well-understood and deployed at scale in [[Liquid Network]], [[Monero]] (via [[Ring Confidential Transactions]]), and [[MimbleWimble]]-based protocols. Research frontiers concern throughput optimisation, selective disclosure for regulatory compliance, and integration with [[Secure Multi-Party Computation]] frameworks.
+
+- ### Key Mechanisms
+  - **Pedersen Commitments**
+    - Mathematical structure: C = rG + vH where G, H are independent elliptic-curve generators (no known discrete-log relationship between them), v is the committed value, r is the blinding factor.
+    - Hiding property: perfectly hiding — given C, the distribution over v is uniform; the commitment reveals zero information without r.
+    - Binding property: computationally binding — finding (v′, r′) ≠ (v, r) with C = r′G + v′H requires solving the [[Discrete Logarithm Problem]], believed computationally infeasible on standard curves.
+    - Homomorphism: C(v1, r1) + C(v2, r2) = C(v1+v2, r1+r2), allowing validators to check Σ(inputs) − Σ(outputs) = 0 without decryption.
+    - See: [[Homomorphic Commitment]], [[Homomorphic Encryption]], [[Elliptic Curve Cryptography]]
+  - **Range Proofs**
+    - Purpose: prove committed value v ∈ [0, 2^n) without revealing v, preventing inflation attacks via negative commitments.
+    - Original CT design used Borromean ring signatures, producing proofs linear in the bit-length n — expensive for on-chain storage.
+    - [[Bulletproofs]] (Bünz, Bootle, Boneh, Poelstra, Wuille, Maxwell, 2018) reduced proof size from O(n) to O(log n) using inner-product arguments, making CT economically viable on-chain.
+    - Verification time scales as O(n) but batched verification across many proofs amortises cost substantially.
+  - **Transaction Structure**
+    - Each UTXO output carries a Pedersen commitment instead of a plaintext amount.
+    - A transaction includes: commitments for each output, Bulletproof range proofs for each output commitment, a balance proof (or excess value commitment proving Σin − Σout = fee), and optionally encrypted value metadata for the recipient.
+    - The recipient recovers v and r via a shared secret derived from [[Elliptic Curve Diffie-Hellman]] key exchange.
+  - **Blinding Factor Handover**
+    - The sender encrypts (v, r) for the recipient using the recipient's public key so the recipient can spend outputs.
+    - In [[MimbleWimble]], the blinding factor directly serves as the ownership proof, eliminating separate signatures.
+  - **Fee Handling**
+    - Transaction fees must be declared in plaintext so miners or validators can enforce fee rules without knowing hidden amounts; alternatively, fees can appear as a plaintext residual commitment.
+  - **Selective Disclosure (Audit Keys)**
+    - Senders can share r (or a derived audit key) with authorised parties—regulators, auditors—enabling amount verification without broadcasting to all observers.
+    - This is the mechanism proposed for [[Regulatory Compliance]] under frameworks such as the FATF Travel Rule.
+
+- ### Cryptographic Foundations
+  - **Elliptic Curve Cryptography** — All standard CT deployments use Secp256k1 (Bitcoin / Liquid) or Ed25519 / Ristretto255 variants. The security of commitments reduces to the hardness of the [[Discrete Logarithm Problem]] on these curves. See [[Elliptic Curve Cryptography]].
+  - **Discrete Logarithm Hardness** — The binding property relies on the inability to compute log_G(H); if G and H were related by a known scalar, commitments would be trivially forgeable. Independent generators are established via hash-to-curve algorithms or nothing-up-my-sleeve constructions. See [[Discrete Logarithm Problem]].
+  - **Zero-Knowledge Proofs** — Range proofs are a specialised form of [[Zero-Knowledge Proof]]: the prover demonstrates membership in [0, 2^n) without revealing the witness (v, r). Bulletproofs use an inner-product argument for logarithmic proof size. The broader ZKP family includes [[zk-SNARK]]s (used in Zcash) and [[zk-STARK]]s; CT's Bulletproof approach is distinguished by not requiring a trusted setup.
+  - **No Trusted Setup** — A key advantage over [[zk-SNARK]]-based systems: Bulletproof range proofs require no structured reference string or ceremony, reducing the trust assumptions in the system. See [[Trusted Setup Ceremony]].
+
+- ### Deployments and Protocols
+  - **Liquid Network** — Bitcoin sidechain operated by Blockstream; CT has been live since 2018 for institutional settlement. Participants transact in L-BTC and confidential assets with hidden amounts. Liquid uses the [[Elements Project]] codebase, the reference implementation of CT.
+  - **Monero / RingCT** — Since 2017, all Monero transactions use [[Ring Confidential Transactions]] (RingCT), which combines CT amount hiding with ring signatures to hide sender identity. RingCT is mandatory on Monero, making it the largest CT deployment by transaction volume.
+  - **MimbleWimble** — The [[MimbleWimble]] protocol (Grin, Beam) integrates CT at a structural level: transaction amounts are always confidential, and the protocol's cut-through mechanism relies on the homomorphic properties of Pedersen commitments to compress transaction history. See [[MimbleWimble]].
+  - **Zcash (related but distinct)** — Zcash shielded transactions use [[zk-SNARK]]s (Groth16) to hide amounts, sender, and receiver addresses. This provides stronger privacy but requires a trusted setup ceremony and has different performance characteristics. CT (Pedersen + Bulletproofs) and Zcash shielded are complementary, not identical, approaches to [[Privacy Preserving Blockchain]].
+  - **Elements Project** — Open-source framework (github.com/ElementsProject) providing CT and [[Confidential Asset]] primitives for sidechains; used by Liquid and several institutional blockchain deployments.
+  - **Grin** — A lightweight MimbleWimble chain where CT is mandatory and integral to the design; notable for no fixed block reward schedule and a focus on privacy and scalability through transaction aggregation.
+  - **Beam** — MimbleWimble chain with optional auditability features built on CT; targets enterprise compliance use cases.
+
+- ### Applications and Use Cases
+  - **Institutional Settlement** — Exchanges and custodians using Liquid Network settle large BTC amounts without broadcasting exact positions to competitors or surveillance infrastructure. CT enables genuine market confidentiality on a public blockchain.
+  - **Privacy-Preserving DeFi** — Research into [[Private DeFi]] combines CT with [[Secure Multi-Party Computation]] or [[Zero-Knowledge Proof]] protocols to enable confidential token swaps, lending collateral amounts, and automated market-maker pricing without leaking trade size.
+  - **Supply Chain Finance** — Parties transacting on shared ledger infrastructure can obscure invoice amounts and payment flows from competitors whilst retaining auditability for auditors via selective disclosure keys. See [[Supply Chain Finance]].
+  - **Central Bank Digital Currencies (CBDCs)** — Several CBDC research programmes cite CT as a mechanism for retail privacy in digital fiat; the Bank for International Settlements has explored CT-style commitments in its mBridge and Project Mariana prototypes. See [[Central Bank Digital Currency]].
+  - **Cross-Border Payments** — CT enables financial institutions to settle cross-border transactions on shared infrastructure without disclosing amounts to partner institutions or intermediaries. See [[Cross-Border Payment]].
+  - **Payroll and B2B Payments** — Enterprises paying suppliers or staff on blockchain networks can use CT to prevent amount disclosure to third-party observers, preserving commercial confidentiality.
+  - **Regulatory Audit Compliance** — Selective disclosure of blinding factors allows regulators, tax authorities, or auditors to verify specific transaction amounts on request, without the amounts being permanently public. This directly addresses FATF Travel Rule obligations.
 
 - ### Relationships
-  - Confidential Transactions extends the [[Blockchain Transaction]] model by adding cryptographic amount hiding, using [[Zero-Knowledge Proof]] range proofs to assert validity without revelation. It depends on [[Cryptographic Algorithm]] foundations (elliptic curve Pedersen commitments) and integrates [[Encryption]] principles to maintain data hiding properties. It directly enables [[Privacy Preserving Blockchain]] architectures and is related to but distinct from [[Confidential Computing]], which hides computation rather than ledger data.
+  - uses:: [[Pedersen Commitment]]
+  - uses:: [[Zero-Knowledge Proof]]
+  - uses:: [[Elliptic Curve Cryptography]]
+  - uses:: [[Bulletproofs]]
+  - uses:: [[Homomorphic Encryption]]
+  - enables:: [[Privacy Preserving Blockchain]]
+  - enables:: [[Private DeFi]]
+  - enables:: [[Selective Disclosure]]
+  - enables:: [[Confidential Asset]]
+  - requires:: [[Discrete Logarithm Problem]]
+  - requires:: [[Cryptographic Hash Function]]
+  - requires:: [[Range Proof]]
+  - dependsOn:: [[Cryptographic Algorithm]]
+  - dependsOn:: [[UTXO Model]]
+  - implements:: [[Amount Hiding]]
+  - implements:: [[Homomorphic Commitment]]
+  - contrastsWith:: [[zk-SNARK]]
+  - contrastsWith:: [[Transparent Blockchain]]
+  - relatedTo:: [[MimbleWimble]]
+  - relatedTo:: [[Ring Confidential Transactions]]
+  - relatedTo:: [[Liquid Network]]
+  - relatedTo:: [[Monero]]
+  - relatedTo:: [[Confidential Computing]]
+  - bridges-to:: [[Secure Multi-Party Computation]]
+  - bridges-to:: [[Regulatory Compliance]]
+  - bridges-to:: [[Financial Privacy]]
+  - standardizedBy:: [[Elements Project]]
+  - standardizedBy:: [[Bitcoin Improvement Proposal]]
 
-- ### Content
-  - Confidential Transactions was proposed by Gregory Maxwell in January 2015 as a mechanism to address the transparency problem in Bitcoin's UTXO model, where all transaction amounts are publicly visible on-chain. Maxwell's design adapted Pedersen commitments—previously used in cryptographic voting and escrow schemes—to encode transferred amounts as elliptic curve points whose underlying values are hidden but whose homomorphic addition allows validators to confirm balance preservation. The proposal was published as a Bitcoin improvement and later became the foundation for the Liquid sidechain and the Monero RingCT protocol.
+- ### Standards & Context
+  - **Bitcoin Improvement Proposal (BIP) — unpublished** — Maxwell's original CT proposal circulated as a technical post in 2015 and was never formalised as a numbered BIP for Bitcoin mainnet, as it would require a hard fork. It was instead implemented on sidechains and altcoins.
+  - **Elements Project** — The open-source reference implementation of CT and Confidential Assets; maintained by Blockstream and the Elements community. Provides audited C code used in Liquid Network production.
+  - **Bulletproofs specification** — Formalised in the 2018 IEEE S&P paper "Bulletproofs: Short Proofs for Confidential Transactions and More" by Bünz, Bootle, Boneh, Poelstra, Wuille, and Maxwell. Implementations exist in libsecp256k1-zkp (C), dalek-cryptography (Rust), and several Python libraries.
+  - **FATF Travel Rule** — The Financial Action Task Force's Recommendation 16 requires Virtual Asset Service Providers (VASPs) to share originator and beneficiary information for transfers above a threshold. CT's selective disclosure mechanism is being researched as a compliance-preserving path that avoids full public transparency. See [[Financial Action Task Force]].
+  - **EU MiCA Regulation** — The Markets in Crypto-Assets regulation (in force 2024) creates compliance obligations for crypto-asset service providers that intersect with CT's privacy objectives; the tension between privacy and regulatory traceability is an active policy and technical research area. See [[Markets in Crypto-Assets Regulation]].
+  - **ISO/TC 307** — The ISO technical committee on blockchain and distributed ledger technologies has standards efforts (ISO 22739, 23257) that touch on privacy primitives including commitments; CT is referenced in privacy taxonomy discussions.
+  - **NIST Post-Quantum Considerations** — Standard CT is based on elliptic-curve discrete-log hardness, which is vulnerable to a sufficiently powerful quantum computer running Shor's algorithm. Post-quantum variants using lattice-based or hash-based commitment schemes are an open research area. See [[Post-Quantum Cryptography]].
 
-  - The core technical mechanism is the Pedersen commitment C = rG + vH, where v is the hidden value, r is a blinding factor, G and H are independent generator points on an elliptic curve, and the commitment is computationally binding (finding another v′,r′ that matches is as hard as the discrete logarithm problem) and perfectly hiding (C reveals no information about v without r). Range proofs prove that v ∈ [0, 2^n] without revealing v; the original CT used Borromean ring signatures for this, but Bulletproofs (Bünz et al., 2018) reduced proof sizes from O(n) to O(log n), making on-chain storage practical.
+- ### Research Frontiers
+  - **Throughput and verification cost** — Bulletproof verification is the dominant cost in high-volume CT deployments; aggregated multi-proof verification and proof system optimisations (e.g. using Halo2 or PLONK-based arguments) are active research areas.
+  - **Integration with MPC** — Combining CT with [[Secure Multi-Party Computation]] enables multi-party signing over committed amounts, enabling confidential multi-sig and threshold wallets. See [[Threshold Signature Scheme]].
+  - **Confidential smart contracts** — Extending CT semantics to programmable contracts requires zero-knowledge circuits that reason over committed values; projects such as Aleo and Aztec Network explore this via custom ZKP languages. See [[Zero-Knowledge Virtual Machine]].
+  - **Interoperability** — Cross-chain CT interoperability (atomic swaps between chains with different commitment schemes) requires compatible curve parameters or hash functions; this is an open problem in [[Cross-Chain Interoperability]].
+  - **Selective disclosure standards** — Standardising audit-key formats and disclosure protocols for CT-based compliance is an active area in the [[W3C Verifiable Credentials]] and DIF (Decentralised Identity Foundation) communities.
 
-  - Confidential Transactions has been deployed in Liquid Network (a Bitcoin sidechain for institutional settlement), Monero's RingCT (combined with ring signatures since 2017), and Grin (a MimbleWimble-based chain where CT is integral to the protocol). The Zcash shielded transaction model uses a different zero-knowledge system (zk-SNARKs) for stronger privacy guarantees including address hiding. Commercial derivatives include Elements Project libraries used by exchanges to offer confidential settlement channels.
-
-  - In 2024–2025, Confidential Transactions research focuses on improving verification throughput for high-volume payment networks and on integrating CT with multi-party computation frameworks to enable private DeFi applications. The EU's Markets in Crypto-Assets (MiCA) regulation and FATF Travel Rule requirements create tension between CT's privacy goals and regulatory demands for transaction traceability, prompting research into selective disclosure mechanisms—range proofs that reveal amounts to authorised auditors only—as a compliance bridge.
+- ### Provenance
+  - sources:: Gregory Maxwell, "Confidential Transactions", bitcointalk.org, January 2015
+  - sources:: Bünz, Bootle, Boneh, Poelstra, Wuille, Maxwell — "Bulletproofs: Short Proofs for Confidential Transactions and More", IEEE S&P 2018
+  - sources:: Elements Project documentation, github.com/ElementsProject/elements
+  - sources:: Monero Research Lab — RingCT specification (Shen Noether et al., 2015/2016)
+  - sources:: MimbleWimble whitepaper (Tom Elvis Jedusor, 2016)
+  - updated:: 2026-06-13

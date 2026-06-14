@@ -71,7 +71,7 @@ public:: true
   "@type": "Class",
   "label": "Unreal Engine",
   "definition": "Unreal Engine is a real-time three-dimensional creation tool and game engine developed by Epic Games. It provides rendering, physics, animation, audio and scripting systems used to build games, virtual production environments, architectural visualisations and simulations. The engine is widely adopted for its high-fidelity rendering, its visual scripting system Blueprints, and its use in film and television virtual production with LED volume stages.",
-  "domain": "unreal-engine",
+  "domain": "spatial-computing",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

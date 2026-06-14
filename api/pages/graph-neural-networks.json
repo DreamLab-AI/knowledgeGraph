@@ -4,7 +4,7 @@
   "slug": "graph-neural-networks",
   "public": true,
   "classIri": "urn:ngm:class:graph-neural-networks",
-  "domain": "deep-learning",
+  "domain": "machine-learning",
   "definition": "A family of neural network architectures that operate directly on graph-structured data, computing node, edge or graph representations by exchanging information along edges.",
   "subClassOf": [
     {

@@ -4,7 +4,7 @@
   "slug": "walmart",
   "public": true,
   "classIri": "urn:ngm:class:walmart",
-  "domain": "general",
+  "domain": "supply-chain",
   "definition": "Walmart is a multinational retail company operating a chain of stores and e-commerce services, and an early adopter of blockchain-based supply chain traceability.",
   "subClassOf": [
     {

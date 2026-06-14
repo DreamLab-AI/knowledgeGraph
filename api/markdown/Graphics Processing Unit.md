@@ -59,7 +59,7 @@ public:: true
   "@type": "Class",
   "label": "Graphics Processing Unit",
   "definition": "A Graphics Processing Unit is a parallel processor designed to accelerate the rendering of images and other data-parallel workloads through many concurrent execution units.",
-  "domain": "general",
+  "domain": "infrastructure",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

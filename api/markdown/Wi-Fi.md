@@ -59,7 +59,7 @@ public:: true
   "@type": "Class",
   "label": "Wi-Fi",
   "definition": "Wi-Fi is a family of wireless networking technologies based on the IEEE 802.11 standards that allow devices to connect to a local area network and the internet. It is managed by the Wi-Fi Alliance.",
-  "domain": "general",
+  "domain": "infrastructure",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

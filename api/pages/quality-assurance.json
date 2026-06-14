@@ -5,50 +5,144 @@
   "public": true,
   "classIri": "urn:ngm:class:quality-assurance",
   "domain": "infrastructure",
-  "definition": "Quality Assurance (QA) is the systematic process of verifying that software systems and AI models meet defined requirements and quality standards through structured testing, validation, and review activities. In AI contexts, QA extends to evaluating model performance, fairness, robustness, and safety, encompassing techniques such as unit testing, integration testing, adversarial testing, and continuous monitoring in production.",
+  "definition": "Quality Assurance (QA) is the systematic discipline of establishing and maintaining defined standards of correctness, reliability, safety, and fitness-for-purpose across the full lifecycle of software systems, AI models, and digital infrastructure. It encompasses planned and systematic activities \u2014 including requirements analysis, process audits, test design, validation, verification, and continuous monitoring \u2014 that prevent defects from reaching production rather than merely detecting them after the fact. In AI contexts, QA extends beyond functional correctness to encompass model fairness, adversarial robustness, data quality, and distributional-shift monitoring, increasingly mandated by governance frameworks such as the EU AI Act and ISO/IEC 42001. Effective QA integrates with DevOps and MLOps pipelines through automated gates that enforce quality thresholds before any artefact is promoted to the next deployment stage.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:infra-software-engineering",
+      "id": "urn:ngm:class:software-engineering",
       "label": "Software Engineering"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "emerging",
+  "qualityScore": 0.72,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [
+    "hasPart": [
       {
         "id": "urn:ngm:class:software-testing",
         "label": "Software Testing"
+      },
+      {
+        "id": "urn:ngm:class:code-review",
+        "label": "Code Review"
+      },
+      {
+        "id": "urn:ngm:class:test-automation",
+        "label": "Test Automation"
+      },
+      {
+        "id": "urn:ngm:class:continuous-integration",
+        "label": "Continuous Integration"
       }
     ],
-    "supports": [
+    "requires": [
+      {
+        "id": "urn:ngm:class:requirements-engineering",
+        "label": "Requirements Engineering"
+      },
+      {
+        "id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      },
+      {
+        "id": "urn:ngm:class:data-validation",
+        "label": "Data Validation"
+      }
+    ],
+    "enables": [
       {
         "id": "urn:ngm:class:risk-management",
         "label": "Risk Management"
       },
       {
+        "id": "urn:ngm:class:continuous-delivery",
+        "label": "Continuous Delivery"
+      },
+      {
         "id": "urn:ngm:class:compliance-framework",
         "label": "Compliance Framework"
+      },
+      {
+        "id": "urn:ngm:class:model-governance",
+        "label": "Model Governance"
       }
     ],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:quality-control",
+        "label": "Quality Control"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      },
+      {
+        "id": "urn:ngm:class:explainability",
+        "label": "Explainability"
+      }
+    ],
+    "uses": [
       {
         "id": "urn:ngm:class:adversarial-testing",
         "label": "Adversarial Testing"
       },
       {
-        "id": "urn:ngm:class:software-engineering",
-        "label": "Software Engineering"
+        "id": "urn:ngm:class:regression-testing",
+        "label": "Regression Testing"
+      },
+      {
+        "id": "urn:ngm:class:static-analysis",
+        "label": "Static Analysis"
+      },
+      {
+        "id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      },
+      {
+        "id": "urn:ngm:class:devops",
+        "label": "DevOps"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:fairness-in-ai",
+        "label": "Fairness in AI"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-iec-25010",
+        "label": "ISO/IEC 25010"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-42001",
+        "label": "ISO/IEC 42001"
+      },
+      {
+        "id": "urn:ngm:class:ieee-829",
+        "label": "IEEE 829"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:technical-debt",
+        "label": "Technical Debt"
+      },
+      {
+        "id": "urn:ngm:class:observability",
+        "label": "Observability"
       }
     ]
   },

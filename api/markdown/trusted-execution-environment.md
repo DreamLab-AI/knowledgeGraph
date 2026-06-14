@@ -1,22 +1,138 @@
 - ### Definition
-  - A Trusted Execution Environment (TEE) is a hardware-enforced, isolated processing domain within a processor that guarantees confidentiality and integrity of code and data even if the host operating system or hypervisor is compromised. TEEs are instantiated via technologies such as Intel SGX, AMD SEV, and Arm TrustZone, each providing mechanisms for remote attestation so that a relying party can cryptographically verify the identity and integrity of the enclave before exchanging sensitive material. TEEs underpin confidential computing workloads including private AI inference, secure key management, and privacy-preserving data collaboration.
+  - A Trusted Execution Environment (TEE) is a hardware-enforced, isolated processing domain within a processor that provides confidentiality and integrity guarantees for code and data executing within it — even when the host [[Operating System]], [[Hypervisor]], or privileged firmware is malicious or compromised. TEEs rely on a [[Hardware Root of Trust]] embedded in silicon to establish cryptographically verifiable isolation, and expose [[Remote Attestation]] mechanisms that allow remote parties to confirm they are interacting with a genuine, unmodified enclave. Mainstream realisations include [[Intel SGX]], [[AMD SEV-SNP]], and [[Arm TrustZone]], each addressing different threat models ranging from application-level enclaves to full [[Confidential Virtual Machine]] protection.
 
-- ### Semantic Classification
-  - owl-class:: trusted-execution-environment:Trusted Execution Environment
-  - owl-role:: Concept
+- ### Overview
+  - TEEs address the fundamental challenge that software-only isolation — such as [[Hypervisor Isolation]] or [[Software Sandboxing]] — cannot protect code and data from a privileged attacker with ring-0 access or physical memory access to the host platform.
+  - By enforcing isolation at the silicon level, a TEE ensures that enclave memory is encrypted in DRAM using keys held only within the processor die. Even with physical access to the DRAM modules, an attacker cannot recover plaintext enclave data.
+  - TEEs are a foundational primitive for [[Confidential Computing]], an industry category formalised by the [[Confidential Computing Consortium]] (CCC) — a Linux Foundation project that includes major chip vendors and cloud providers.
+  - The security boundary of a TEE is formally defined by its Trusted Computing Base (TCB): typically the processor microcode and attestation firmware, but explicitly excluding the OS, hypervisor, and system software stack.
+  - Attestation is the mechanism by which a TEE proves its identity and configuration to a remote verifier. Attestation reports cryptographically bind:
+    - The measurement (hash) of the enclave binary and configuration
+    - A platform certificate chain rooted in the manufacturer's key hierarchy
+    - A freshness nonce to prevent replay
+  - TEEs provide three core security properties:
+    - **Confidentiality** — enclave memory is inaccessible to software outside the enclave
+    - **Integrity** — tampering with enclave code or data is detectable via attestation
+    - **Authenticity** — remote parties can verify the identity of the running enclave
+
+- ### Key Technologies and Implementations
+  - **Intel Software Guard Extensions (SGX)**
+    - Operates at user-space (ring 3) application level, protecting small isolated regions called enclaves
+    - Enclave memory pages (EPC — Enclave Page Cache) are hardware-encrypted; the OS manages paging but cannot read page contents
+    - Supports local and remote attestation via Intel's Attestation Service (IAS) or Data Centre Attestation Primitives (DCAP) for on-premises deployments
+    - Suited for protecting small, sensitive computations: cryptographic operations, secret key sealing, private ML inference on small models
+    - Limitation: relatively small EPC size (historically 128–256 MB on server parts) and a larger attack surface from side-channel vulnerabilities (e.g. speculative execution attacks)
+  - **AMD Secure Encrypted Virtualisation (SEV) / SEV-SNP**
+    - Protects entire [[Virtual Machine]] memory from the [[Hypervisor]] using per-VM memory encryption keys managed inside the AMD Secure Processor
+    - SEV-SNP (Secure Nested Paging) adds memory integrity protection, preventing hypervisor-controlled remapping attacks
+    - Enables [[Confidential Virtual Machine]] deployments in public clouds — used by Azure Confidential Computing, Google Confidential VMs, and AWS on Nitro
+    - Well-suited for lifting and shifting existing workloads into a confidential computing context without application-level refactoring
+  - **Arm TrustZone**
+    - Partitions the Arm processor into two execution worlds: Secure World and Normal World, enforced by the NS (Non-Secure) bit in hardware
+    - Widely deployed on mobile SoCs for Trusted Applications (TAs) including [[Biometric Authentication]], DRM key storage, mobile payments, and SIM emulation
+    - The Secure World hosts a Trusted OS (e.g. OP-TEE, Trustonic Kinibi) that arbitrates access to secure resources
+    - Extends to Arm Confidential Compute Architecture (CCA) with Realms for server-class confidential VMs
+  - **RISC-V Physical Memory Protection (PMP) / Keystone**
+    - Open-source TEE framework for RISC-V processors, enabling customisable enclave environments without vendor lock-in
+    - Used in research and emerging IoT/edge contexts
+  - **Apple Secure Enclave Processor (SEP)**
+    - A dedicated co-processor in Apple devices implementing TEE semantics for Face ID / Touch ID key material, Apple Pay, and device encryption keys
+    - Isolated from the application processor; communicates only via a restricted mailbox interface
+
+- ### Attestation in Detail
+  - Remote attestation is the distinguishing capability that elevates a TEE beyond simple memory encryption, enabling [[Zero Trust Architecture]] deployment patterns.
+  - The attestation flow involves four parties:
+    - **Enclave** — generates a signed Quote containing its measurement (MRENCLAVE/MRSIGNER in SGX, or SNP Report in AMD SEV-SNP)
+    - **Platform** — provides hardware-signed certificates linking the Quote to a manufacturer-endorsed key hierarchy
+    - **Attestation Service** — (e.g. Intel IAS, AMD KDS, or a DCAP/RATS-compliant service) verifies platform authenticity
+    - **Relying Party** — inspects the verified Quote and applies policy: is this enclave binary the one I trust? Is the TCB at an acceptable firmware version?
+  - IETF Remote ATtestation procedureS (RATS) architecture (RFC 9334) standardises the vocabulary: Attester, Verifier, Relying Party, Reference Values
+  - [[Provisioning]] of secrets into a verified enclave closes the loop: after attestation, a [[Cryptographic Key Management]] service releases keys only to attested enclaves
+
+- ### Applications and Use Cases
+  - **Confidential AI Inference**
+    - Protects proprietary [[Machine Learning]] model weights from the cloud provider's infrastructure — the model owner can verify via attestation that weights are only processed inside a verifiable enclave
+    - Protects sensitive input data (medical records, financial data) during inference without exposing it to the cloud operator
+    - Enables model-as-a-service where the service provider and the data owner mutually distrust each other
+    - Frameworks: NVIDIA Confidential Computing on H100 GPUs, OpenVINO in SGX, Gramine LibOS
+  - **Secure Key Management**
+    - HSM-as-software: TEE-backed key stores provide [[Hardware Security Module]]-equivalent guarantees at cloud scale without dedicated HSM hardware
+    - Used in [[Public Key Infrastructure]] issuance flows and certificate authority operations
+    - Microsoft Azure Key Vault Managed HSM uses SGX for key isolation
+  - **Blockchain and Smart Contract Execution**
+    - Off-chain TEE computation for [[Blockchain Oracle]] designs (e.g. Town Crier, DECO, Intel SGX-backed oracle networks) — the oracle result is attested rather than merely signed
+    - Confidential smart contracts (e.g. Secret Network, Oasis Network) use TEEs to keep contract state private while remaining verifiable on-chain
+    - Bridges cross-domain: TEE attestation provides trust anchor for [[Decentralised Finance]] protocols consuming private off-chain data
+  - **Privacy-Preserving Data Collaboration**
+    - [[Secure Multi-Party Computation]] augmented with TEEs — parties supply encrypted data to an enclave; results are released without revealing raw inputs
+    - Used in healthcare data consortia, financial fraud detection across institutions, and genomic research
+    - Complements [[Federated Learning]] by providing a verifiable execution environment for the aggregator
+  - **Mobile Security**
+    - [[Biometric Authentication]] (fingerprint, face) — the sensor data never leaves the Secure World; only a pass/fail signal is returned to the Normal World
+    - Mobile payments via NFC — [[Digital Rights Management]] and payment credentials stored in TrustZone TA
+    - SIM/eSIM provisioning
+  - **Supply Chain Integrity**
+    - Firmware measured and sealed to a platform state — tampering with boot components is detectable at next attestation
+    - Used alongside [[Secure Boot]] and [[Trusted Platform Module]] in firmware integrity pipelines
 
 - ### Relationships
-  - relatedTo [[Confidential Computing]]
-  - relatedTo [[Secure Enclave]]
-  - enables [[Cryptographic Key Management]]
-  - enables [[Privacy-Enhancing Computation (PEC)]]
-  - uses [[Hardware Security Module]]
+  - hasPart:: [[Secure Enclave]]
+  - hasPart:: [[Remote Attestation]]
+  - hasPart:: [[Memory Encryption]]
+  - requires:: [[Hardware Root of Trust]]
+  - requires:: [[Cryptographic Key Management]]
+  - requires:: [[Secure Boot]]
+  - enables:: [[Confidential Computing]]
+  - enables:: [[Privacy-Enhancing Computation (PEC)]]
+  - enables:: [[Secure Multi-Party Computation]]
+  - enables:: [[Private Inference]]
+  - uses:: [[Hardware Security Module]]
+  - uses:: [[Public Key Infrastructure]]
+  - uses:: [[Symmetric Encryption]]
+  - implements:: [[Confidential Virtual Machine]]
+  - implements:: [[Zero Trust Architecture]]
+  - supports:: [[Digital Rights Management]]
+  - supports:: [[Biometric Authentication]]
+  - standardizedBy:: [[Confidential Computing Consortium]]
+  - standardizedBy:: [[GlobalPlatform Specification]]
+  - contrastsWith:: [[Software Sandboxing]]
+  - contrastsWith:: [[Hypervisor Isolation]]
+  - relatedTo:: [[Secure Element]]
+  - relatedTo:: [[Trusted Platform Module]]
+  - bridges-to:: [[Federated Learning]]
+  - bridges-to:: [[Blockchain Oracle]]
 
-- ### Content
-  - A TEE partitions processor resources at the silicon level so that enclave memory pages are encrypted in DRAM and can only be decrypted by the processor itself. The host OS, VMM, and even privileged ring-0 code cannot read enclave memory in plaintext, providing a strong isolation guarantee beyond software sandboxing. Attestation reports bind a cryptographic measurement (hash of the enclave binary and configuration) to a platform certificate, enabling remote parties to confirm they are communicating with a known, unmodified enclave.
-  - Intel Software Guard Extensions (SGX) operates at the application level, protecting small user-space enclaves. AMD Secure Encrypted Virtualisation (SEV) and its variants (SEV-SNP) protect entire virtual machine memory from the hypervisor, making them well-suited for confidential cloud computing. Arm TrustZone partitions the processor into secure and non-secure worlds and is widely deployed on mobile SoCs for trusted applications such as biometric authentication and DRM.
-  - TEEs are increasingly used in AI inference pipelines to protect proprietary model weights and sensitive input data, and in blockchain systems for off-chain computation with verifiable correctness. The confidential computing consortium, which includes major cloud providers, is standardising attestation interfaces to make TEE-backed workloads portable across hardware vendors.
+- ### Standards and Governance
+  - **Confidential Computing Consortium (CCC)** — Linux Foundation project (founded 2019) defining confidential computing terminology, threat models, and open-source tooling (Enarx, Gramine, Occlum, Open Enclave SDK)
+  - **GlobalPlatform** — publishes the TEE System Architecture and TEE Internal Core API specifications widely implemented by TrustZone Trusted OS vendors
+  - **IETF RATS WG** — Remote ATtestation procedureS (RFC 9334) provides the architecture vocabulary and entity roles for interoperable attestation across TEE vendors
+  - **NIST SP 800-223** — NIST guidance on Hardware-Based Security covering TEE threat models within broader hardware security frameworks
+  - **TCG TPM / TPM 2.0** — while the [[Trusted Platform Module]] is distinct from a TEE, it is commonly co-deployed for measured boot and platform attestation chains that anchor TEE attestation
+  - **FIDO Alliance** — TrustZone-backed Authenticators (e.g. FIDO2 platform authenticators) leverage TEE to protect private key material for [[Biometric Authentication]] operations
+  - **Cloud Native Confidential Computing** — CNCF working group aligning Kubernetes workload identity with TEE attestation for cloud-native confidential deployments
+
+- ### Threat Model and Limitations
+  - TEEs do NOT protect against:
+    - **Side-channel attacks** — timing, cache-based (FLUSH+RELOAD, Prime+Probe), power analysis, and speculative execution attacks (Spectre-class) have been demonstrated against SGX enclaves specifically
+    - **Denial of Service** — a malicious host OS can starve the enclave of resources or halt execution
+    - **Logic errors within the enclave** — a buggy enclave is still buggy; TEEs do not verify semantic correctness of enclave logic
+    - **Physical attacks beyond the processor package** — bus probing, cold-boot attacks on DRAM before encryption takes effect, and certain debug-port attacks remain potential vectors
+  - Mitigation strategies include:
+    - Careful enclave programming practices (constant-time implementations, no secret-dependent branches)
+    - Microcode and firmware updates to mitigate speculative execution vulnerabilities (trading performance for security)
+    - Formal verification of critical enclave logic
+    - Combining TEEs with [[Secure Multi-Party Computation]] or [[Zero-Knowledge Proof]] for defense-in-depth
+
+- ### Ecosystem and Tooling
+  - **Gramine** (formerly Graphene-SGX) — library OS enabling unmodified Linux applications to run inside SGX enclaves
+  - **Occlum** — memory-safe library OS for SGX based on Rust, targeting data-intensive workloads
+  - **Open Enclave SDK** — Microsoft's cross-TEE SDK abstracting over SGX and TrustZone
+  - **Enarx** — CCC project for TEE-agnostic deployment using WebAssembly as the enclave runtime
+  - **OP-TEE** — Open Portable TEE, an open-source Trusted OS for TrustZone widely used in Linux-based embedded systems
+  - **Veracruz** — Arm Research project for privacy-preserving computation combining TEEs with [[Federated Learning]] and [[Secure Multi-Party Computation]]
+  - **SCONE** (Secure CONtainer Environment) — commercial framework for running Docker containers inside SGX enclaves
 
 - ### Provenance
-  - sources::
+  - sources:: Intel SGX Architecture Specification; AMD SEV-SNP ABI Specification; Arm TrustZone Architecture Reference Manual; CCC Confidential Computing Consortium White Paper; IETF RFC 9334 (RATS Architecture); GlobalPlatform TEE System Architecture v1.3
+  - updated:: 2026-06-13
   - migration-date:: 2026-05-19T00:00:00Z

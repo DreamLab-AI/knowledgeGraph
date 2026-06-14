@@ -21,7 +21,7 @@ public:: true
   "@type": "Class",
   "label": "Film VFX",
   "definition": "Film VFX (Visual Effects) encompasses the full suite of techniques used to create, augment, or manipulate imagery in cinematic productions that cannot be practically achieved through conventional photography, including computer-generated imagery (CGI), digital compositing, motion capture-driven character animation, photorealistic simulation of natural phenomena, and digital environment creation. Modern film VFX pipelines integrate real-time rendering engines, deep learning-based tools for rotoscoping, denoising, and face replacement, and virtual production stages using LED volume displays to blend physical and digital environments in-camera rather than in post-production. VFX is distinct from practical effects (pyrotechnics, prosthetics) and from colour grading, though all three coexist within the broader post-production discipline.",
-  "domain": "graphics",
+  "domain": "spatial-computing",
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:visual-effects", "label": "Visual Effects"}],
   "relations": {

@@ -47,7 +47,7 @@ public:: true
   "@type": "Class",
   "label": "Key Exchange",
   "definition": "Key exchange is a cryptographic procedure by which two parties establish a shared secret over an insecure channel for use in subsequent encrypted communication.",
-  "domain": "cryptography",
+  "domain": "security",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

@@ -4,7 +4,7 @@
   "slug": "cognitive-psychology",
   "public": true,
   "classIri": "urn:ngm:class:cognitive-psychology",
-  "domain": "psychology",
+  "domain": "ai",
   "definition": "Cognitive psychology is the branch of psychology that studies internal mental processes such as perception, attention, memory, language, and reasoning.",
   "subClassOf": [
     {

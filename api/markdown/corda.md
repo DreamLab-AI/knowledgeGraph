@@ -1,20 +1,76 @@
 - ### Definition
-  - A permissioned distributed ledger platform designed for regulated enterprises, where transactions are shared only between the parties involved rather than broadcast to all nodes.
+  - Corda is an open-source [[Permissioned Blockchain]] platform developed by R3, designed specifically for regulated enterprises that must share ledger data on a strict need-to-know basis. Rather than broadcasting every transaction to all nodes as public blockchains do, Corda propagates transaction data only to the counterparties involved and to any designated [[Notary Service]] responsible for preventing double-spend. The platform models shared facts as immutable [[UTXO Model]] states consumed and produced by atomic transactions, with validity enforced by both executable [[Smart Contract]] code and optional associated legal prose, making it a powerful tool for [[Financial Services]], [[Trade Finance]], and cross-institutional [[Data Privacy]] scenarios.
 
-- ### Semantic Classification
-  - owl-class:: blockchain:Corda
-  - owl-role:: Class
+- ### Overview
+  - Corda was initiated by R3 — a financial-technology consortium — and open-sourced in 2016, with its 4.x series becoming the dominant enterprise deployment baseline. Its fundamental design premise diverges from broadcast-based [[Distributed Ledger]] architectures: there is no single shared transaction pool visible to all participants. Instead, each node holds only the states (facts) directly relevant to its past and present obligations, yielding a network where [[Privacy]] is structural rather than bolted on.
+  - The platform targets industries subject to stringent regulation — [[Regulatory Compliance]] with GDPR, MiFID II, Basel III, and sector-specific rules — where leaking transaction details to competitors or third parties is commercially and legally unacceptable. Because Corda nodes identify themselves with [[X.509 Certificate]]s issued by a network-level Certificate Authority, the identities of counterparties are cryptographically verifiable, satisfying the know-your-customer requirements of financial regulation.
+  - Corda 5 (the current generation) introduced a modular, microservices-based architecture, replacing the monolithic node of earlier versions with independently deployable components, improving scalability and cloud-native deployment on [[Kubernetes]].
+
+- ### Key Components
+  - **States** — Immutable data objects representing a fact agreed upon by a set of parties. Each state references the contract code that governs it and names the parties whose consent is required to evolve it.
+  - **Contracts** — JVM code (written in [[Kotlin]] or Java) that defines the rules for valid state transitions. A contract receives the full proposed transaction and throws an exception if any constraint is violated. Contracts have no side-effects and are deterministic, enabling independent verification by all transaction parties.
+  - **Transactions** — Atomic bundles that consume input states and produce output states. They may also reference reference states (read-only) and carry commands that signal intent to the contract.
+  - **[[Notary Service]]** — The single component responsible for checking input-state uniqueness, preventing double-spend. Notaries do not see the content of transactions unless they are validating notaries; non-validating notaries see only state references, preserving [[Data Privacy]].
+  - **Flows** — Orchestration routines that drive multi-step, multi-party interactions. A flow suspends and resumes as messages are exchanged between nodes, abstracting over the peer-to-peer [[Messaging]] layer. Flows are the Corda analogue of business process logic.
+  - **CorDapps** — Corda Distributed Applications, the packaging unit for contracts, flows, and services deployed to a Corda network. CorDapps define the vocabulary of states and transactions for a given use case.
+  - **Network Map** — A service that advertises the addresses and certificates of all nodes on a given Corda network, enabling peer discovery without a central broker.
+  - **[[Identity Management]]** — Each node holds an X.509 identity issued by a Doorman (network CA). Confidential identities (one-time keys) can be generated per transaction to limit correlation across flows.
+  - **Vault** — The local store of a node's current and historic states. Queries against the vault drive business logic in CorDapps.
+  - **Oracle Services** — Trusted third-party nodes that attest to external facts (rates, prices, legal determinations) and sign transactions referencing those facts, enabling off-chain data to be incorporated into on-chain state transitions.
+
+- ### Mechanisms
+  - **UTXO Accounting Model** — Corda uses a [[UTXO Model]] where value or obligation is encoded in discrete state objects rather than accounts. This enables straightforward atomic settlement across multiple asset types in a single transaction and makes concurrency simpler because states do not share mutable state.
+  - **Two-Phase Notarisation** — A proposing party gathers signatures from all required counterparties, then submits the signed transaction to the notary for uniqueness checking. If the notary countersigns, the transaction is final; otherwise it is rolled back. This replaces the global [[Consensus Mechanism]] of public chains with a localised, purpose-specific check.
+  - **Peer-to-Peer Messaging** — Nodes communicate via an AMQP/TLS channel (Apache Artemis in Corda 4). Message ordering is guaranteed per-pair; the network is not a broadcast medium.
+  - **[[Zero-Knowledge Proof]] Integration** — Corda 5 and R3's Conclave platform support confidential computing and zero-knowledge proofs for scenarios where even counterparties should not see the full state details, bridging toward privacy-preserving [[DeFi]] settlement rails.
+  - **[[Byzantine Fault Tolerance]]** — Corda's BFT notary cluster (based on BFT-SMaRt) provides crash-fault and, in its BFT variant, Byzantine-fault tolerant uniqueness checking, ensuring liveness even if a minority of notary nodes are malicious or offline.
+
+- ### Applications / Use Cases
+  - **[[Capital Markets]] Settlement** — Several central securities depositories and custodians have explored or deployed Corda for DVP (Delivery versus Payment) settlement, reducing settlement cycles and counterparty risk. The Broadridge DLR and various repo platforms run on Corda.
+  - **[[Trade Finance]]** — Marco Polo Network and we.trade (now succeeded by successor initiatives) used Corda to connect banks and corporates for trade credit and invoice financing, replacing paper-based letter-of-credit workflows with digitally attested state transitions.
+  - **[[Central Bank Digital Currency]]** — Multiple central banks (including the Bank of England's Project Rosalind and various sandbox experiments) have evaluated Corda as an interoperability layer between wholesale CBDC systems and commercial bank money, exploiting its privacy-by-design properties.
+  - **[[Insurance]] Claims** — B3i (Blockchain Insurance Industry Initiative) built a reinsurance placement platform on Corda to automate premium and claims data exchange between insurers and reinsurers.
+  - **Healthcare Data Exchange** — Corda's need-to-know sharing model maps well onto patient record consent frameworks, enabling hospitals to share specific records with specific practitioners without exposing broader health histories.
+  - **[[Supply Chain]] Provenance** — Consortium networks track physical goods through shared state representations, with each custody transfer resulting in a new state signed by both transferor and transferee, providing an auditable chain of title.
+  - **Digital Bonds and Securities Tokenisation** — [[Digital Asset]] issuance and lifecycle management (coupon payments, maturity, corporate actions) can be encoded as CorDapp flows, with the bond state consumed and reissued at each lifecycle event.
 
 - ### Relationships
-  - is-subclass-of:: [[Permissioned Blockchain]]
-  - bridges-to:: [[Privacy]]
+  - subClassOf:: [[Permissioned Blockchain]]
+  - partOf:: [[Enterprise Blockchain]]
   - requires:: [[Distributed Ledger]]
+  - requires:: [[Public Key Infrastructure]]
+  - requires:: [[Notary Service]]
   - enables:: [[Smart Contract]]
+  - enables:: [[Atomic Swap]]
+  - enables:: [[Digital Asset]]
+  - enables:: [[Trade Finance]]
+  - uses:: [[UTXO Model]]
+  - uses:: [[JVM]]
+  - uses:: [[Kotlin]]
+  - uses:: [[X.509 Certificate]]
+  - implements:: [[Byzantine Fault Tolerance]]
+  - implements:: [[Zero-Knowledge Proof]]
+  - dependsOn:: [[Identity Management]]
+  - dependsOn:: [[Network Map]]
+  - supports:: [[Regulatory Compliance]]
+  - supports:: [[Data Privacy]]
+  - supports:: [[Interoperability]]
+  - contrastsWith:: [[Ethereum]]
+  - contrastsWith:: [[Hyperledger Fabric]]
+  - contrastsWith:: [[Public Blockchain]]
+  - bridges-to:: [[DeFi]]
+  - bridges-to:: [[Central Bank Digital Currency]]
+  - relatedTo:: [[Consensus Mechanism]]
+  - relatedTo:: [[Distributed Systems]]
 
-- ### Content
-  - Corda records agreements between identified participants and shares transaction data on a need-to-know basis, so there is no global broadcast of every transaction. A notary service provides ordering and prevents double-spending of states.
-  - Contracts in Corda are expressed as code that validates proposed state transitions, and the platform targets financial and inter-organisational use cases where confidentiality and known counterparties matter.
+- ### Standards & Context
+  - Corda operates within the **R3 consortium** governance model; the open-source edition is maintained under Apache 2.0 on GitHub. The commercial edition (Corda Enterprise) adds HA notary clustering, advanced vault queries, and SLA-backed support.
+  - **Corda Network** — A production permissioned network operated independently of R3, with a Foundation governing membership criteria and notary operation policies.
+  - **Corda 5 Architecture** — Introduced the CSDE (Cordapp Standard Development Environment), HTTP-based RPC replacing the legacy CordaRPC client, and a modular worker architecture (crypto, DB, flow, gateway, membership workers) enabling Kubernetes-native deployment.
+  - **Regulatory Alignment** — Corda's design was shaped in close consultation with central banks and financial regulators, particularly around GDPR Article 17 (right to erasure) compliance — because states are immutable, erasure is achieved by revoking access to the encryption keys protecting state data rather than deleting chain history.
+  - **[[Interoperability]] Standards** — R3 participates in the [[ISO 20022]] financial messaging standardisation effort and has contributed to the [[Baseline Protocol]] cross-chain interoperability standards. Corda nodes can participate in cross-network atomic transactions via hash-time-locked contracts ([[HTLC]]) and the Corda Settler module supports multiple settlement rails including XRP Ledger and SWIFT.
+  - **Comparison with [[Hyperledger Fabric]]** — Both are permissioned enterprise blockchains, but Fabric uses an order-execute model with channel-level privacy, whereas Corda uses a validate-then-notarise model with per-transaction privacy. Fabric's chaincode runs in Docker containers; Corda contracts run in the JVM. Fabric has broader language support (Go, JavaScript, Java); Corda is Kotlin/Java-native.
 
 - ### Provenance
-  - sources::
-  - migration-date:: 2026-05-29T00:00:00Z
+  - sources:: R3 Corda documentation (docs.r3.com); Hearn, M. & Brown, R. G. (2016) "Corda: A Distributed Ledger" (R3 technical whitepaper); open-source repository github.com/corda/corda
+  - updated:: 2026-06-13

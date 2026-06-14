@@ -21,7 +21,7 @@ public:: true
   "@type": "Class",
   "label": "Advertising and Marketing",
   "definition": "Advertising and marketing is the combined domain of commercial practices concerned with identifying customer needs, developing products and services to meet them, communicating value propositions to target audiences through paid and unpaid channels, and building lasting brand relationships. Marketing encompasses the strategic disciplines of market research, product development, pricing, distribution, and communications, while advertising is the paid communications subset of the marketing mix. Together they constitute the primary commercial mechanism by which organisations acquire customers and generate revenue in market economies.",
-  "domain": "media",
+  "domain": "finance",
   "maturity": "mature",
   "subClassOf": [{"@id": "urn:ngm:class:digital-marketing", "label": "Digital Marketing"}],
   "relations": {

@@ -4,7 +4,7 @@
   "slug": "schnorr-signatures",
   "public": true,
   "classIri": "urn:ngm:class:schnorr-signatures",
-  "domain": "cryptographic",
+  "domain": "security",
   "definition": "A digital signature scheme based on the discrete logarithm problem, producing compact signatures with linear key and signature aggregation properties.",
   "subClassOf": [
     {

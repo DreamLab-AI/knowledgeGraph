@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:real-world-asset-tokenisation",
   "domain": "blockchain",
-  "definition": "Real-world asset tokenisation (RWA) is the process of issuing blockchain-based digital tokens that represent legally enforceable claims over physical or financial assets such as real estate, government bonds, private credit, or commodities. By encoding ownership rights and transfer rules in smart contracts, RWA tokenisation enables fractional ownership, 24/7 secondary-market liquidity, and automated compliance enforcement. The practice bridges traditional capital markets and decentralised finance, requiring regulatory alignment with securities law and robust oracle infrastructure to reflect off-chain asset valuations on-chain.",
+  "definition": "Real-world asset tokenisation (RWA) is the process of issuing blockchain-based digital tokens that represent legally enforceable ownership or economic claims over physical or financial assets \u2014 including real estate, government bonds, private credit, commodities, and infrastructure. Ownership rights, transfer restrictions, and distribution logic are encoded in smart contracts, enabling fractional ownership and 24/7 secondary-market liquidity. The process requires a legal wrapper such as a special purpose vehicle or trust, oracle infrastructure to price off-chain assets on-chain, and compliance with applicable securities regulation in each issuing jurisdiction.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-token-and-asset",
@@ -13,10 +13,23 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
+  "qualityScore": 0.72,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:token-issuance",
+        "label": "Token Issuance"
+      },
+      {
+        "id": "urn:ngm:class:transfer-restriction-mechanism",
+        "label": "Transfer Restriction Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:redemption-mechanism",
+        "label": "Redemption Mechanism"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:smart-contract",
@@ -25,6 +38,18 @@
       {
         "id": "urn:ngm:class:oracle-network",
         "label": "Oracle Network"
+      },
+      {
+        "id": "urn:ngm:class:special-purpose-vehicle",
+        "label": "Special Purpose Vehicle"
+      },
+      {
+        "id": "urn:ngm:class:kyc-aml-compliance",
+        "label": "KYC/AML Compliance"
+      },
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
       }
     ],
     "enables": [
@@ -35,15 +60,79 @@
       {
         "id": "urn:ngm:class:decentralised-finance",
         "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:fractional-ownership",
+        "label": "Fractional Ownership"
+      },
+      {
+        "id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
+      },
+      {
+        "id": "urn:ngm:class:on-chain-collateral",
+        "label": "On-Chain Collateral"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:non-fungible-token",
+        "label": "Non-Fungible Token"
+      },
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:capital-markets",
+        "label": "Capital Markets"
+      },
+      {
+        "id": "urn:ngm:class:asset-management",
+        "label": "Asset Management"
+      },
+      {
+        "id": "urn:ngm:class:trade-finance",
+        "label": "Trade Finance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:erc-20",
+        "label": "ERC-20"
+      },
+      {
+        "id": "urn:ngm:class:erc-3643",
+        "label": "ERC-3643"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
+    ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:financial-stability-board",
+        "label": "Financial Stability Board"
+      },
+      {
+        "id": "urn:ngm:class:iosco",
+        "label": "IOSCO"
+      },
+      {
+        "id": "urn:ngm:class:bis-innovation-hub",
+        "label": "BIS Innovation Hub"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -53,6 +142,18 @@
       {
         "id": "urn:ngm:class:digital-asset",
         "label": "Digital Asset"
+      },
+      {
+        "id": "urn:ngm:class:security-token-offering",
+        "label": "Security Token Offering"
+      },
+      {
+        "id": "urn:ngm:class:tokenised-fund",
+        "label": "Tokenised Fund"
+      },
+      {
+        "id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
       }
     ]
   },

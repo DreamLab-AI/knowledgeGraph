@@ -4,8 +4,8 @@
   "slug": "coinbase",
   "public": true,
   "classIri": "urn:ngm:class:coinbase",
-  "domain": "coinbase",
-  "definition": "Coinbase is a United States cryptocurrency exchange and custody company founded in 2012 by Brian Armstrong and Fred Ehrsam. It provides retail and institutional trading, custody, staking and payment services, and operates one of the largest regulated crypto platforms in the country. The company listed on the Nasdaq through a direct listing in 2021, becoming the first major crypto exchange to go public in the United States. Coinbase also develops the Base layer-2 network and supports a self-custody wallet alongside its hosted services.",
+  "domain": "blockchain",
+  "definition": "Coinbase is a publicly traded United States cryptocurrency exchange, custody, and financial services company founded in 2012 by Brian Armstrong and Fred Ehrsam. It provides retail and institutional trading, custodial and self-custody wallet services, staking, lending, and payment infrastructure, operating as one of the most regulated crypto platforms in the United States. The company completed a direct listing on Nasdaq in April 2021, becoming the first major cryptocurrency exchange to go public in the US. Beyond exchange operations, Coinbase develops the Base layer-2 network (built on the OP Stack), offers a developer platform for on-chain applications, and provides institutional prime brokerage services.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:digital-asset-domain",
@@ -13,21 +13,134 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.73,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:base-network",
+        "label": "Base Network"
+      },
+      {
+        "id": "urn:ngm:class:coinbase-wallet",
+        "label": "Coinbase Wallet"
+      },
+      {
+        "id": "urn:ngm:class:coinbase-prime",
+        "label": "Coinbase Prime"
+      },
+      {
+        "id": "urn:ngm:class:coinbase-custody",
+        "label": "Coinbase Custody"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-key-management",
+        "label": "Cryptographic Key Management"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-wallet",
+        "label": "Blockchain Wallet"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:cryptocurrency-trading",
+        "label": "Cryptocurrency Trading"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset-custody",
+        "label": "Digital Asset Custody"
+      },
+      {
+        "id": "urn:ngm:class:staking",
+        "label": "Staking"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      },
+      {
+        "id": "urn:ngm:class:know-your-customer",
+        "label": "Know Your Customer"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:binance",
+        "label": "Binance"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-exchange",
+        "label": "Decentralised Exchange"
+      },
+      {
+        "id": "urn:ngm:class:kraken",
+        "label": "Kraken"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:traditional-finance",
+        "label": "Traditional Finance"
+      },
+      {
+        "id": "urn:ngm:class:securities-regulation",
+        "label": "Securities Regulation"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "id": "urn:ngm:class:op-stack",
+        "label": "OP Stack"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:optimism",
+        "label": "Optimism"
+      },
+      {
+        "id": "urn:ngm:class:layer-2-scaling",
+        "label": "Layer-2 Scaling"
+      },
+      {
+        "id": "urn:ngm:class:centralised-exchange",
+        "label": "Centralised Exchange"
+      }
+    ]
   },
   "wikilinks": [
     {

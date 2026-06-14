@@ -51,7 +51,7 @@ public:: true
   "@type": "Class",
   "label": "Markov Decision Process",
   "definition": "A mathematical framework for modelling sequential decision-making where outcomes are partly random and partly under the control of a decision maker.",
-  "domain": "mathematics",
+  "domain": "machine-learning",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

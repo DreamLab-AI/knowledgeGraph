@@ -4,8 +4,8 @@
   "slug": "metaverse-standards-forum",
   "public": true,
   "classIri": "urn:ngm:class:metaverse-standards-forum",
-  "domain": "governance",
-  "definition": "The Metaverse Standards Forum is an industry consortium, hosted by the Khronos Group, that fosters interoperability standards for the metaverse and spatial computing by coordinating the work of existing standards bodies rather than authoring competing specifications itself. Founded in 2022 with members including Meta, Microsoft, NVIDIA, Sony, and the W3C, it convenes working groups on topics such as 3D asset interoperability, digital identity, and interoperable scene description, aiming to prevent the fragmentation that would result from proprietary, siloed virtual worlds.",
+  "domain": "standards",
+  "definition": "The Metaverse Standards Forum (MSF) is an industry consortium hosted by the Khronos Group, founded in June 2022, that coordinates existing standards-development organisations to promote interoperability across metaverse and spatial-computing platforms rather than authoring competing specifications. With several hundred member organisations \u2014 including Meta, Microsoft, NVIDIA, Sony, Epic Games, the W3C, and ISO \u2014 it operates domain-specific working groups that identify interoperability gaps and produce exploratory prototypes whose outputs feed back into recognised bodies for normative ratification. Its model of pre-competitive alignment distinguishes it from traditional specification-writing bodies: it acts as a coordination layer, convening the standards ecosystem to prevent the fragmentation that would result from proprietary, siloed virtual worlds.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:standards-body",
@@ -13,11 +13,29 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.74,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:working-group",
+        "label": "Working Group"
+      },
+      {
+        "id": "urn:ngm:class:interoperability-prototype",
+        "label": "Interoperability Prototype"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:multi-stakeholder-governance",
+        "label": "Multi-Stakeholder Governance"
+      },
+      {
+        "id": "urn:ngm:class:technical-consensus",
+        "label": "Technical Consensus"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:interoperability",
@@ -26,16 +44,104 @@
       {
         "id": "urn:ngm:class:open-standard",
         "label": "Open Standard"
+      },
+      {
+        "id": "urn:ngm:class:cross-platform-avatar",
+        "label": "Cross-Platform Avatar"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:khronos-group",
+        "label": "Khronos Group"
+      },
+      {
+        "id": "urn:ngm:class:w3c",
+        "label": "W3C"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:coordination-layer",
+        "label": "Coordination Layer"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:closed-platform",
+        "label": "Closed Platform"
+      },
+      {
+        "id": "urn:ngm:class:proprietary-ecosystem",
+        "label": "Proprietary Ecosystem"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:web3",
+        "label": "Web3"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:gltf",
+        "label": "glTF"
+      },
+      {
+        "id": "urn:ngm:class:openxr",
+        "label": "OpenXR"
+      },
+      {
+        "id": "urn:ngm:class:usd",
+        "label": "USD"
+      },
+      {
+        "id": "urn:ngm:class:webxr",
+        "label": "WebXR"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "id": "urn:ngm:class:virtual-world",
+        "label": "Virtual World"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso",
+        "label": "ISO"
+      },
+      {
+        "id": "urn:ngm:class:ieee",
+        "label": "IEEE"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:open-standards-ecosystem",
+        "label": "Open Standards Ecosystem"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:technical-standard",
@@ -44,6 +150,14 @@
       {
         "id": "urn:ngm:class:web-standard",
         "label": "Web Standard"
+      },
+      {
+        "id": "urn:ngm:class:3d-asset-interchange",
+        "label": "3D Asset Interchange"
+      },
+      {
+        "id": "urn:ngm:class:digital-fashion",
+        "label": "Digital Fashion"
       }
     ]
   },

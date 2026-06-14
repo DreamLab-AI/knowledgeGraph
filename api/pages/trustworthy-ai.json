@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:trustworthy-ai",
   "domain": "artificial-intelligence",
-  "definition": "Trustworthy AI refers to artificial intelligence systems that are designed, developed, and deployed in accordance with a structured set of properties including lawfulness, ethical soundness, robustness, fairness, transparency, and accountability, ensuring they operate reliably and safely in their intended context. The concept is codified in frameworks such as the EU High-Level Expert Group's guidelines on Trustworthy AI and operationalised through the EU AI Act's risk-tiered obligations. Trustworthy AI requires meaningful human oversight mechanisms, explainable decision processes, bias monitoring, and documented accountability chains across the AI lifecycle.",
+  "definition": "Trustworthy AI denotes artificial intelligence systems designed, developed, and operated in accordance with a multi-criteria framework of lawfulness, ethical soundness, technical robustness, fairness, transparency, accountability, and societal wellbeing, ensuring they produce reliable and safe outcomes throughout their full lifecycle. The concept is most concretely codified in the EU High-Level Expert Group on AI's seven requirements for trustworthy AI and operationalised through the EU AI Act's risk-tiered conformity obligations and the NIST AI Risk Management Framework. Achieving trustworthy AI demands convergent technical measures\u2014such as explainability, robustness testing, and bias mitigation\u2014alongside governance instruments including impact assessments, model documentation, algorithmic audits, and meaningful human oversight mechanisms. It functions as an integrating standard that bridges AI safety, AI ethics, and AI regulation into a coherent assurance regime applicable across the full AI system lifecycle.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-governance-and-ethics",
@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
+  "qualityScore": 0.74,
   "maturity": "emerging",
   "relationships": {
     "hasPart": [],
@@ -25,14 +25,87 @@
       {
         "id": "urn:ngm:class:explainable-ai",
         "label": "Explainable AI"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-accountability",
+        "label": "Algorithmic Accountability"
+      },
+      {
+        "id": "urn:ngm:class:bias-mitigation",
+        "label": "Bias Mitigation"
+      },
+      {
+        "id": "urn:ngm:class:privacy-by-design",
+        "label": "Privacy by Design"
       }
     ],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:ai-adoption",
+        "label": "AI Adoption"
+      },
+      {
+        "id": "urn:ngm:class:public-trust-in-ai",
+        "label": "Public Trust in AI"
+      },
+      {
+        "id": "urn:ngm:class:ai-certification",
+        "label": "AI Certification"
+      }
+    ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI RMF"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-42001",
+        "label": "ISO/IEC 42001"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:black-box-ai",
+        "label": "Black-Box AI"
+      },
+      {
+        "id": "urn:ngm:class:unregulated-ai",
+        "label": "Unregulated AI"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:digital-sovereignty",
+        "label": "Digital Sovereignty"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:model-cards",
+        "label": "Model Cards"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-auditing",
+        "label": "Algorithmic Auditing"
+      },
+      {
+        "id": "urn:ngm:class:ai-impact-assessment",
+        "label": "AI Impact Assessment"
+      },
+      {
+        "id": "urn:ngm:class:robustness-testing",
+        "label": "Robustness Testing"
+      }
+    ],
     "supports": [
       {
         "id": "urn:ngm:class:fairness",
@@ -41,9 +114,30 @@
       {
         "id": "urn:ngm:class:transparency",
         "label": "Transparency"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:digital-rights",
+        "label": "Digital Rights"
       }
     ],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:eu-high-level-expert-group-on-ai",
+        "label": "EU High-Level Expert Group on AI"
+      },
+      {
+        "id": "urn:ngm:class:nist",
+        "label": "NIST"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-jtc1-sc42",
+        "label": "ISO/IEC JTC1 SC42"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -51,8 +145,16 @@
         "label": "Responsible AI"
       },
       {
-        "id": "urn:ngm:class:ai-safety",
-        "label": "AI Safety"
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "id": "urn:ngm:class:fairness-aware-machine-learning",
+        "label": "Fairness-Aware Machine Learning"
       }
     ]
   },

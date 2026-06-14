@@ -4,7 +4,7 @@
   "slug": "adr-012",
   "public": true,
   "classIri": "urn:ngm:class:adr-012",
-  "domain": "software-architecture",
+  "domain": "infrastructure",
   "definition": "An architecture decision record numbered 012, capturing a particular architectural decision within a project alongside its context and consequences. It is part of a numbered sequence of design records.",
   "subClassOf": [
     {

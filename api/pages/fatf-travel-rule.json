@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:fatf-travel-rule",
   "domain": "blockchain",
-  "definition": "The FATF Travel Rule (Recommendation 16 as applied to virtual assets) requires Virtual Asset Service Providers (VASPs) to collect, verify, and transmit originator and beneficiary identity information alongside cryptocurrency transactions that meet or exceed the applicable threshold. Issued by the Financial Action Task Force, it extends traditional wire-transfer obligations to crypto-asset transfers, obligating sending VASPs to share identifying data with receiving VASPs before or simultaneously with the transfer. Compliance demands interoperability protocols and data-sharing infrastructure between exchanges, wallets, and custodians operating in different jurisdictions.",
+  "definition": "The FATF Travel Rule (Recommendation 16 extended to virtual assets) requires Virtual Asset Service Providers (VASPs) to collect, verify, and transmit originator and beneficiary identity information alongside cryptocurrency transactions that meet or exceed a jurisdictional threshold, typically USD/EUR 1,000. Issued by the Financial Action Task Force, it extends the longstanding wire-transfer obligation \u2014 rooted in the FATF 40 Recommendations and aligned with SWIFT messaging norms \u2014 to crypto-asset transfers, obligating sending VASPs to share identifying data with receiving VASPs before or simultaneously with the transfer. Compliance demands interoperability protocols, counterparty discovery infrastructure, and shared data standards such as IVMS 101 between exchanges, custodians, and wallet providers across different jurisdictions. The rule has been progressively transposed into national and regional law, including the EU Transfer of Funds Regulation, UK Money Laundering Regulations, and Singapore Payment Services Act.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-governance-and-regulation",
@@ -13,8 +13,8 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [
@@ -25,19 +25,100 @@
       {
         "id": "urn:ngm:class:digital-identity",
         "label": "Digital Identity"
+      },
+      {
+        "id": "urn:ngm:class:know-your-customer",
+        "label": "Know Your Customer"
+      },
+      {
+        "id": "urn:ngm:class:ivms-101",
+        "label": "IVMS 101"
+      },
+      {
+        "id": "urn:ngm:class:vasp-counterparty-discovery",
+        "label": "VASP Counterparty Discovery"
       }
     ],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:crypto-asset-compliance",
+        "label": "Crypto-Asset Compliance"
+      },
+      {
+        "id": "urn:ngm:class:financial-intelligence",
+        "label": "Financial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:transaction-monitoring",
+        "label": "Transaction Monitoring"
+      }
+    ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:fatf-recommendation-16",
+        "label": "FATF Recommendation 16"
+      },
+      {
+        "id": "urn:ngm:class:wire-transfer-rule",
+        "label": "Wire Transfer Rule"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:privacy-coin",
+        "label": "Privacy Coin"
+      },
+      {
+        "id": "urn:ngm:class:self-hosted-wallet",
+        "label": "Self-Hosted Wallet"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-exchange",
+        "label": "Decentralised Exchange"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-credential",
+        "label": "Verifiable Credential"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:trisa",
+        "label": "TRISA"
+      },
+      {
+        "id": "urn:ngm:class:travel-rule-protocol",
+        "label": "Travel Rule Protocol"
+      },
+      {
+        "id": "urn:ngm:class:openvasp",
+        "label": "OpenVASP"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      }
+    ],
     "supports": [],
     "standardizedBy": [
       {
         "id": "urn:ngm:class:fatf",
         "label": "FATF"
+      },
+      {
+        "id": "urn:ngm:class:financial-action-task-force",
+        "label": "Financial Action Task Force"
       }
     ],
     "partOf": [],
@@ -49,6 +130,18 @@
       {
         "id": "urn:ngm:class:compliance-framework",
         "label": "Compliance Framework"
+      },
+      {
+        "id": "urn:ngm:class:virtual-asset-service-provider",
+        "label": "Virtual Asset Service Provider"
+      },
+      {
+        "id": "urn:ngm:class:transfer-of-funds-regulation",
+        "label": "Transfer of Funds Regulation"
+      },
+      {
+        "id": "urn:ngm:class:sanctions-screening",
+        "label": "Sanctions Screening"
       }
     ]
   },

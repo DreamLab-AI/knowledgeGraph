@@ -83,7 +83,7 @@ public:: true
   "@type": "Class",
   "label": "Data Management Domain",
   "definition": "The Data Management Domain classifies concepts concerning the storage, organisation, retrieval and lifecycle of data within systems. It covers data models, storage architectures, integration and the operations that maintain availability and integrity. As a top-level subject axis it provides the technical foundation on which analytics, governance and applications operate.",
-  "domain": "data-management",
+  "domain": "data",
   "maturity": "emerging",
   "qualityScore": 0.7,
   "subClassOf": [

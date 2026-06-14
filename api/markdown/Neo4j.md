@@ -47,7 +47,7 @@ public:: true
   "@type": "Class",
   "label": "Neo4j",
   "definition": "A graph database management system that stores data as nodes and relationships and queries it with the Cypher query language. It is one of the most widely used native graph databases.",
-  "domain": "data-management",
+  "domain": "data",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

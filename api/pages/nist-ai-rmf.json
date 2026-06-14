@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:nist-ai-rmf",
   "domain": "governance",
-  "definition": "The NIST AI Risk Management Framework (AI RMF) is a voluntary guidance document published by the National Institute of Standards and Technology in January 2023 that helps organisations manage risks associated with the design, development, deployment, and operation of AI systems. It provides a structured, flexible, and measurable approach to AI risk management through four core functions: Govern, Map, Measure, and Manage. The framework is technology- and sector-agnostic, designed to be adapted across diverse organisational contexts and AI use cases.",
+  "definition": "The NIST AI Risk Management Framework (AI RMF) is a voluntary, technology-agnostic guidance document published by the National Institute of Standards and Technology in January 2023 that helps organisations identify, assess, and manage risks arising from the design, development, deployment, and operation of AI systems. It structures AI risk management practice through four core functions \u2014 Govern, Map, Measure, and Manage \u2014 forming a continuous lifecycle cycle applicable across sectors and organisational sizes. The framework explicitly promotes seven trustworthy-AI characteristics (accountable, explainable, fair, privacy-enhanced, reliable, resilient, and secure) as unifying goals, and is supported by a companion Playbook and a growing library of sector-specific profiles, including one for generative AI.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-governance-framework",
@@ -13,29 +13,89 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.75,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [
+    "hasPart": [
       {
-        "id": "urn:ngm:class:ai-risk",
-        "label": "AI Risk"
+        "id": "urn:ngm:class:ai-rmf-govern-function",
+        "label": "AI RMF Govern Function"
       },
+      {
+        "id": "urn:ngm:class:ai-rmf-map-function",
+        "label": "AI RMF Map Function"
+      },
+      {
+        "id": "urn:ngm:class:ai-rmf-measure-function",
+        "label": "AI RMF Measure Function"
+      },
+      {
+        "id": "urn:ngm:class:ai-rmf-manage-function",
+        "label": "AI RMF Manage Function"
+      },
+      {
+        "id": "urn:ngm:class:ai-rmf-playbook",
+        "label": "AI RMF Playbook"
+      }
+    ],
+    "requires": [
       {
         "id": "urn:ngm:class:risk-assessment",
         "label": "Risk Assessment"
       },
       {
+        "id": "urn:ngm:class:stakeholder-engagement",
+        "label": "Stakeholder Engagement"
+      },
+      {
+        "id": "urn:ngm:class:organisational-governance",
+        "label": "Organisational Governance"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:ai-risk-management",
+        "label": "AI Risk Management"
+      },
+      {
         "id": "urn:ngm:class:accountability",
         "label": "Accountability"
+      },
+      {
+        "id": "urn:ngm:class:trustworthy-ai",
+        "label": "Trustworthy AI"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance-maturity-model",
+        "label": "AI Governance Maturity Model"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      },
+      {
+        "id": "urn:ngm:class:iso-42001",
+        "label": "ISO 42001"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-risk",
+        "label": "AI Risk"
+      },
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-operations",
+        "label": "Machine Learning Operations"
+      }
+    ],
     "uses": [],
     "supports": [
       {
@@ -53,31 +113,44 @@
       {
         "id": "urn:ngm:class:reliability",
         "label": "Reliability"
+      },
+      {
+        "id": "urn:ngm:class:ai-explainability",
+        "label": "AI Explainability"
+      },
+      {
+        "id": "urn:ngm:class:privacy",
+        "label": "Privacy"
       }
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:standards-organization",
-        "label": "Standards Organization"
+        "id": "urn:ngm:class:nist",
+        "label": "NIST"
       }
     ],
-    "partOf": [],
-    "relatedTo": [
+    "partOf": [
       {
-        "id": "urn:ngm:class:ai-risk-management",
-        "label": "AI Risk Management"
-      },
+        "id": "urn:ngm:class:us-ai-policy",
+        "label": "US AI Policy"
+      }
+    ],
+    "relatedTo": [
       {
         "id": "urn:ngm:class:ai-governance",
         "label": "AI Governance"
       },
       {
-        "id": "urn:ngm:class:trustworthy-ai",
-        "label": "Trustworthy AI"
+        "id": "urn:ngm:class:cybersecurity-framework",
+        "label": "Cybersecurity Framework"
       },
       {
-        "id": "urn:ngm:class:ai-governance-maturity-model",
-        "label": "AI Governance Maturity Model"
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-impact-assessment",
+        "label": "Algorithmic Impact Assessment"
       }
     ]
   },

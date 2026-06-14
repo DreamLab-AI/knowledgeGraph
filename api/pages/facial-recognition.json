@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:facial-recognition",
   "domain": "ai",
-  "definition": "Facial Recognition is a computer vision technology that identifies or verifies individuals by analysing facial features extracted from images or video frames, mapping them to a compact numerical embedding, and comparing that embedding against a gallery of known identities using similarity metrics. It operates across one-to-one verification and one-to-many identification modes, with applications spanning biometric access control, law enforcement, and digital identity verification.",
+  "definition": "Facial Recognition is a computer vision technology that automatically detects, aligns, and identifies or verifies individuals by analysing facial features extracted from images or video frames, producing compact numerical embeddings that encode discriminative facial geometry and appearance. These embeddings are compared against a gallery of known identities using similarity metrics (cosine similarity or L2 distance), operating in one-to-one verification mode (confirming claimed identity) or one-to-many identification mode (searching against a database of enrolled individuals). Modern systems rely on deep convolutional neural networks trained on large-scale labelled datasets and are subject to increasing regulatory oversight relating to accuracy disparities across demographic groups, privacy obligations, and prohibition in high-risk contexts under frameworks such as the EU AI Act.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:computer-vision",
@@ -13,11 +13,24 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.74,
   "maturity": "mature",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:face-detection",
+        "label": "Face Detection"
+      },
+      {
+        "id": "urn:ngm:class:image-preprocessing",
+        "label": "Image Preprocessing"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:digital-identity-verification",
@@ -26,6 +39,18 @@
       {
         "id": "urn:ngm:class:biometric-verification",
         "label": "Biometric Verification"
+      },
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "id": "urn:ngm:class:surveillance",
+        "label": "Surveillance"
+      },
+      {
+        "id": "urn:ngm:class:border-control",
+        "label": "Border Control"
       }
     ],
     "dependsOn": [],
@@ -34,9 +59,26 @@
       {
         "id": "urn:ngm:class:deepfake-detection",
         "label": "Deepfake Detection"
+      },
+      {
+        "id": "urn:ngm:class:fingerprint-recognition",
+        "label": "Fingerprint Recognition"
+      },
+      {
+        "id": "urn:ngm:class:iris-recognition",
+        "label": "Iris Recognition"
       }
     ],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "id": "urn:ngm:class:smart-city",
+        "label": "Smart City"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:biometric-authentication",
@@ -47,17 +89,50 @@
         "label": "Deep Learning"
       },
       {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
         "id": "urn:ngm:class:camera",
         "label": "Camera"
+      },
+      {
+        "id": "urn:ngm:class:face-embedding",
+        "label": "Face Embedding"
+      },
+      {
+        "id": "urn:ngm:class:approximate-nearest-neighbour-search",
+        "label": "Approximate Nearest Neighbour Search"
       }
     ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-iec-19794",
+        "label": "ISO/IEC 19794"
+      },
+      {
+        "id": "urn:ngm:class:nist-frvt",
+        "label": "NIST FRVT"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
         "id": "urn:ngm:class:data-protection",
         "label": "Data Protection"
+      },
+      {
+        "id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-bias",
+        "label": "Algorithmic Bias"
+      },
+      {
+        "id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
       }
     ]
   },

@@ -4,35 +4,146 @@
   "slug": "erc-1400",
   "public": true,
   "classIri": "urn:ngm:class:erc-1400",
-  "domain": "standards",
-  "definition": "An Ethereum standard defining an interface for security tokens, adding partitions, transfer restrictions and document handling on top of the fungible token model. It is intended to represent regulated financial instruments on Ethereum.",
+  "domain": "blockchain",
+  "definition": "ERC-1400 is a composite Ethereum token standard that defines a framework for security tokens representing regulated financial instruments such as equities, bonds, and real estate on-chain. It extends the ERC-20 fungible token model with partition-based token tranches, on-chain transfer restrictions enforced via controller logic, document attachment for prospectuses and legal agreements, and forced transfer capabilities required for regulatory compliance. The standard is designed to satisfy securities law requirements across multiple jurisdictions by embedding compliance logic directly into the smart contract layer.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:technical-standard",
-      "label": "Technical Standard"
+      "id": "urn:ngm:class:token-standard",
+      "label": "Token Standard"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.74,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:ethereum-smart-contract-platform",
+        "id": "urn:ngm:class:ethereum",
         "label": "Ethereum"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
       }
     ],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:security-token",
+        "label": "Security Token"
+      },
+      {
+        "id": "urn:ngm:class:asset-tokenisation",
+        "label": "Asset Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:compliant-transfer",
+        "label": "Compliant Transfer"
+      },
+      {
+        "id": "urn:ngm:class:token-partition",
+        "label": "Token Partition"
+      }
+    ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:erc-20",
+        "label": "ERC-20"
+      },
+      {
+        "id": "urn:ngm:class:erc-1410",
+        "label": "ERC-1410"
+      },
+      {
+        "id": "urn:ngm:class:erc-1594",
+        "label": "ERC-1594"
+      },
+      {
+        "id": "urn:ngm:class:erc-1643",
+        "label": "ERC-1643"
+      },
+      {
+        "id": "urn:ngm:class:erc-1644",
+        "label": "ERC-1644"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:erc-20",
+        "label": "ERC-20"
+      },
+      {
+        "id": "urn:ngm:class:erc-721",
+        "label": "ERC-721"
+      },
+      {
+        "id": "urn:ngm:class:st-20",
+        "label": "ST-20"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      },
+      {
+        "id": "urn:ngm:class:digital-securities",
+        "label": "Digital Securities"
+      },
+      {
+        "id": "urn:ngm:class:capital-markets",
+        "label": "Capital Markets"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:transfer-restriction",
+        "label": "Transfer Restriction"
+      },
+      {
+        "id": "urn:ngm:class:on-chain-document-management",
+        "label": "On-Chain Document Management"
+      },
+      {
+        "id": "urn:ngm:class:role-based-access-control",
+        "label": "Role-Based Access Control"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:securities-law",
+        "label": "Securities Law"
+      },
+      {
+        "id": "urn:ngm:class:kyc-aml",
+        "label": "KYC/AML"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:tokenised-securities",
+        "label": "Tokenised Securities"
+      },
+      {
+        "id": "urn:ngm:class:ethereum-improvement-proposal",
+        "label": "Ethereum Improvement Proposal"
+      },
+      {
+        "id": "urn:ngm:class:real-world-assets",
+        "label": "Real-World Assets"
+      }
+    ]
   },
   "wikilinks": [
     {

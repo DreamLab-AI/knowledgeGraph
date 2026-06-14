@@ -5,19 +5,32 @@
   "public": true,
   "classIri": "urn:ngm:class:mobile-robotics",
   "domain": "robotics",
-  "definition": "Mobile robotics is the field concerned with designing and programming robots that autonomously locomote through unstructured or semi-structured environments \u2014 using wheeled, legged, aerial, or aquatic platforms \u2014 by integrating perception, localisation, mapping, and motion planning to achieve task-oriented navigation goals without continuous human tele-operation.",
+  "definition": "Mobile robotics is the engineering and scientific discipline concerned with the design, construction, and programming of robots capable of autonomous locomotion through unstructured or semi-structured physical environments. It integrates mechanical locomotion systems (wheeled, tracked, legged, aerial, aquatic), onboard sensor suites, simultaneous localisation and mapping (SLAM) for spatial state estimation, motion planning for collision-free trajectory generation, and control systems for execution \u2014 all without continuous human tele-operation. The field is fundamentally interdisciplinary, drawing on computer science, control theory, mechanical engineering, and artificial intelligence, and underpins major commercial domains including warehouse automation, autonomous vehicles, agricultural robotics, and planetary exploration.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:robot",
-      "label": "Robot"
+      "id": "urn:ngm:class:robotics",
+      "label": "Robotics"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.74,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:localisation",
+        "label": "Localisation"
+      },
+      {
+        "id": "urn:ngm:class:occupancy-mapping",
+        "label": "Occupancy Mapping"
+      },
+      {
+        "id": "urn:ngm:class:real-time-computing",
+        "label": "Real-Time Computing"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:logistics-automation",
@@ -26,12 +39,42 @@
       {
         "id": "urn:ngm:class:autonomous-vehicle",
         "label": "Autonomous Vehicle"
+      },
+      {
+        "id": "urn:ngm:class:precision-agriculture",
+        "label": "Precision Agriculture"
+      },
+      {
+        "id": "urn:ngm:class:search-and-rescue-robotics",
+        "label": "Search and Rescue Robotics"
+      },
+      {
+        "id": "urn:ngm:class:planetary-exploration",
+        "label": "Planetary Exploration"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:robot-operating-system",
+        "label": "Robot Operating System"
+      },
+      {
+        "id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      }
+    ],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:sensor-fusion",
@@ -44,19 +87,52 @@
       {
         "id": "urn:ngm:class:computer-vision",
         "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:simultaneous-localisation-and-mapping",
+        "label": "Simultaneous Localisation and Mapping"
+      },
+      {
+        "id": "urn:ngm:class:motion-control",
+        "label": "Motion Control"
+      },
+      {
+        "id": "urn:ngm:class:lidar",
+        "label": "LiDAR"
+      },
+      {
+        "id": "urn:ngm:class:inertial-measurement-unit",
+        "label": "Inertial Measurement Unit"
       }
     ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-3691-4",
+        "label": "ISO 3691-4"
+      },
+      {
+        "id": "urn:ngm:class:iec-61508",
+        "label": "IEC 61508"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:navigation",
-        "label": "Navigation"
-      },
-      {
         "id": "urn:ngm:class:reinforcement-learning-for-robotics",
         "label": "Reinforcement Learning for Robotics"
+      },
+      {
+        "id": "urn:ngm:class:legged-locomotion",
+        "label": "Legged Locomotion"
+      },
+      {
+        "id": "urn:ngm:class:drone",
+        "label": "Drone"
+      },
+      {
+        "id": "urn:ngm:class:humanoid-robot",
+        "label": "Humanoid Robot"
       }
     ]
   },

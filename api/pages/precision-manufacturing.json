@@ -4,7 +4,7 @@
   "slug": "precision-manufacturing",
   "public": true,
   "classIri": "urn:ngm:class:precision-manufacturing",
-  "domain": "hardware",
+  "domain": "infrastructure",
   "definition": "Precision manufacturing is a set of industrial processes and quality systems that produce mechanical components and assemblies within extremely tight dimensional tolerances \u2014 typically sub-micrometre to nanometre scale \u2014 using advanced machining, metrology, and process control techniques. It encompasses CNC machining, ultra-precision grinding, electrical discharge machining (EDM), and micro-fabrication, combined with in-process measurement and statistical process control to ensure conformance to specification. Precision manufacturing is fundamental to the production of optical systems, semiconductor equipment, aerospace components, medical implants, and scientific instruments where dimensional accuracy directly determines system performance.",
   "subClassOf": [
     {

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:aptos",
   "domain": "blockchain",
-  "definition": "Aptos is a layer 1 proof-of-stake blockchain that uses the Move programming language and a parallel execution engine for smart contract processing.",
+  "definition": "Aptos is a Layer 1 proof-of-stake blockchain platform founded in 2022 by former Diem (Meta) engineers, designed for safety, scalability, and high throughput. It employs the Move programming language \u2014 a resource-oriented, formally verifiable language originally created for the Diem project \u2014 to express accounts, digital assets, and smart contracts. Its primary performance innovation is Block-STM (Software Transactional Memory), a parallel transaction execution engine that speculatively executes transactions and resolves conflicts at runtime, enabling high concurrent throughput without requiring developers to pre-declare access sets. The network uses a Byzantine Fault Tolerant consensus mechanism (AptosBFT, derived from HotStuff) to reach finality with low latency.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:blockchain-network",
@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.74,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
@@ -23,20 +23,110 @@
         "label": "Proof of Stake"
       },
       {
-        "id": "urn:ngm:class:smart-contract",
-        "label": "Smart Contract"
+        "id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:validator-node",
+        "label": "Validator Node"
       }
     ],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:non-fungible-token",
+        "label": "Non-Fungible Token"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      }
+    ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:layer-1",
+        "label": "Layer 1"
+      },
+      {
+        "id": "urn:ngm:class:parallel-execution",
+        "label": "Parallel Execution"
+      },
+      {
+        "id": "urn:ngm:class:resource-oriented-programming",
+        "label": "Resource-Oriented Programming"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "id": "urn:ngm:class:solana",
+        "label": "Solana"
+      },
+      {
+        "id": "urn:ngm:class:sui",
+        "label": "Sui"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      },
+      {
+        "id": "urn:ngm:class:software-transactional-memory",
+        "label": "Software Transactional Memory"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:move-programming-language",
+        "label": "Move Programming Language"
+      },
+      {
+        "id": "urn:ngm:class:block-stm",
+        "label": "Block-STM"
+      },
+      {
+        "id": "urn:ngm:class:aptosbft",
+        "label": "AptosBFT"
+      },
+      {
+        "id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:diem",
+        "label": "Diem"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-proof",
+        "label": "Cryptographic Proof"
+      }
+    ]
   },
   "wikilinks": [
     {

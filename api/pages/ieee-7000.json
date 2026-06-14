@@ -4,8 +4,8 @@
   "slug": "ieee-7000",
   "public": true,
   "classIri": "urn:ngm:class:ieee-7000",
-  "domain": "standards",
-  "definition": "IEEE 7000 specifies a process model for addressing ethical concerns during system design and engineering.",
+  "domain": "governance",
+  "definition": "IEEE 7000 (formally IEEE Std 7000-2021) is an international standard that defines a process model for embedding ethical considerations into the design and engineering of autonomous and software-intensive systems. It provides a structured methodology \u2014 spanning concept exploration, value elicitation, ethical risk analysis, and requirements specification \u2014 enabling engineers and organisations to systematically address value conflicts during the systems development life cycle. Grounded in value-sensitive design theory, the standard bridges engineering practice with stakeholder ethics, offering normative guidance on transparency, accountability, and harm avoidance in technology development.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:technical-standard",
@@ -13,26 +13,127 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.74,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
+        "id": "urn:ngm:class:value-sensitive-design",
+        "label": "Value-Sensitive Design"
+      },
+      {
+        "id": "urn:ngm:class:stakeholder-analysis",
+        "label": "Stakeholder Analysis"
+      },
+      {
+        "id": "urn:ngm:class:ethical-risk-assessment",
+        "label": "Ethical Risk Assessment"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-accountability",
+        "label": "Algorithmic Accountability"
+      },
+      {
+        "id": "urn:ngm:class:ethical-system-design",
+        "label": "Ethical System Design"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:systems-engineering",
+        "label": "Systems Engineering"
+      },
+      {
+        "id": "urn:ngm:class:requirements-engineering",
+        "label": "Requirements Engineering"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:iso-26000",
+        "label": "ISO 26000"
+      },
+      {
+        "id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:machine-learning-fairness",
+        "label": "Machine Learning Fairness"
+      },
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:value-elicitation",
+        "label": "Value Elicitation"
+      },
+      {
+        "id": "urn:ngm:class:concept-of-operations",
+        "label": "Concept of Operations"
+      },
+      {
+        "id": "urn:ngm:class:ethical-value-register",
+        "label": "Ethical Value Register"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:trustworthy-ai",
+        "label": "Trustworthy AI"
+      },
+      {
+        "id": "urn:ngm:class:digital-ethics",
+        "label": "Digital Ethics"
+      }
+    ],
+    "standardizedBy": [
+      {
         "id": "urn:ngm:class:ieee",
         "label": "IEEE"
       }
     ],
-    "enables": [],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:ieee-7000-series",
+        "label": "IEEE 7000 Series"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:iso-iec-42001",
+        "label": "ISO/IEC 42001"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI RMF"
+      },
+      {
+        "id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      },
+      {
+        "id": "urn:ngm:class:ieee-ethically-aligned-design",
+        "label": "IEEE Ethically Aligned Design"
+      }
+    ]
   },
   "wikilinks": [
     {

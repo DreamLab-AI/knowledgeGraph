@@ -4,35 +4,162 @@
   "slug": "data-standards",
   "public": true,
   "classIri": "urn:ngm:class:data-standards",
-  "domain": "spatial-computing",
-  "definition": "Data Standards is a spatial computing concept.",
+  "domain": "data",
+  "definition": "Data Standards are formally agreed specifications, schemas, formats, vocabularies, and protocols that define how data is structured, encoded, exchanged, and interpreted across systems, organisations, and domains. They enable interoperability between heterogeneous systems by establishing shared semantics and syntactic conventions, reducing integration costs and data quality errors. Governed by bodies such as ISO, W3C, IETF, and NIST, data standards span a spectrum from de facto industry conventions (e.g., JSON, CSV) to de jure normative specifications (e.g., SQL:2023, OWL2, FHIR). They are foundational to data governance, metadata management, and the reliable operation of distributed data ecosystems.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:sc-standards-and-interop",
-      "label": "Standards and Interoperability"
+      "id": "urn:ngm:class:data-governance",
+      "label": "Data Governance"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.72,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
-    "implements": [
+    "hasPart": [
       {
-        "id": "urn:ngm:class:spatial-computing-paradigm",
-        "label": "spatial-computing"
+        "id": "urn:ngm:class:data-schema",
+        "label": "Data Schema"
+      },
+      {
+        "id": "urn:ngm:class:metadata-standard",
+        "label": "Metadata Standard"
+      },
+      {
+        "id": "urn:ngm:class:data-exchange-format",
+        "label": "Data Exchange Format"
+      },
+      {
+        "id": "urn:ngm:class:controlled-vocabulary",
+        "label": "Controlled Vocabulary"
       }
     ],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "requires": [
+      {
+        "id": "urn:ngm:class:semantic-interoperability",
+        "label": "Semantic Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:data-quality",
+        "label": "Data Quality"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:data-interoperability",
+        "label": "Data Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:data-integration",
+        "label": "Data Integration"
+      },
+      {
+        "id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      },
+      {
+        "id": "urn:ngm:class:open-data",
+        "label": "Open Data"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:standards-body",
+        "label": "Standards Body"
+      },
+      {
+        "id": "urn:ngm:class:consensus-process",
+        "label": "Consensus Process"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:fair-principles",
+        "label": "FAIR Principles"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:data-silo",
+        "label": "Data Silo"
+      },
+      {
+        "id": "urn:ngm:class:proprietary-format",
+        "label": "Proprietary Format"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:xml",
+        "label": "XML"
+      },
+      {
+        "id": "urn:ngm:class:json",
+        "label": "JSON"
+      },
+      {
+        "id": "urn:ngm:class:rdf",
+        "label": "RDF"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:master-data-management",
+        "label": "Master Data Management"
+      },
+      {
+        "id": "urn:ngm:class:data-catalogue",
+        "label": "Data Catalogue"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso",
+        "label": "ISO"
+      },
+      {
+        "id": "urn:ngm:class:w3c",
+        "label": "W3C"
+      },
+      {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:data-architecture",
+        "label": "Data Architecture"
+      },
+      {
+        "id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      }
+    ]
   },
   "wikilinks": [
     {

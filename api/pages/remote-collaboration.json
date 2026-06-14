@@ -4,24 +4,85 @@
   "slug": "remote-collaboration",
   "public": true,
   "classIri": "urn:ngm:class:remote-collaboration",
-  "domain": "infrastructure",
-  "definition": "Work practices, tools, and methodologies enabling geographically distributed teams to coordinate effectively without physical co-location, combining synchronous channels (video conferencing, real-time co-editing, spatial audio) with asynchronous coordination (version control, project management, persistent chat) to maintain team cohesion and productivity across time zones.",
+  "domain": "distributed-collaboration",
+  "definition": "Remote Collaboration encompasses the work practices, platforms, and coordination methodologies that enable geographically distributed teams to plan, create, and deliver work without physical co-location. It integrates synchronous channels such as video conferencing, real-time co-editing, and spatial audio with asynchronous mechanisms such as version control, persistent messaging, and project management systems, binding these into coherent workflows that maintain team cohesion and productivity across time zones. The discipline draws on computer-supported cooperative work (CSCW) research, network infrastructure, human-computer interaction, and organisational science to address shared challenges of presence, trust, latency, and equitable participation. Increasingly, AI-powered features such as automatic transcription, meeting summarisation, and action-item extraction, together with immersive spatial interfaces from XR and the metaverse, are extending the fidelity and richness of distributed work.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:infra-network-and-comms",
-      "label": "Network and Communication"
+      "id": "urn:ngm:class:distributed-collaboration",
+      "label": "Distributed Collaboration"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "emerging",
+  "qualityScore": 0.72,
+  "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:video-conferencing",
+        "label": "Video Conferencing"
+      },
+      {
+        "id": "urn:ngm:class:asynchronous-communication",
+        "label": "Asynchronous Communication"
+      },
+      {
+        "id": "urn:ngm:class:collaborative-document-editing",
+        "label": "Collaborative Document Editing"
+      },
+      {
+        "id": "urn:ngm:class:virtual-workspace",
+        "label": "Virtual Workspace"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:network-connectivity",
+        "label": "Network Connectivity"
+      },
+      {
+        "id": "urn:ngm:class:identity-and-access-management",
+        "label": "Identity and Access Management"
+      },
+      {
+        "id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:distributed-teams",
+        "label": "Distributed Teams"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-sharing",
+        "label": "Knowledge Sharing"
+      },
+      {
+        "id": "urn:ngm:class:remote-work",
+        "label": "Remote Work"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:co-located-collaboration",
+        "label": "Co-located Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:synchronous-communication",
+        "label": "Synchronous Communication"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:virtual-collaboration",
@@ -30,6 +91,14 @@
       {
         "id": "urn:ngm:class:telecollaboration",
         "label": "Telecollaboration"
+      },
+      {
+        "id": "urn:ngm:class:metaverse-workspaces",
+        "label": "Metaverse Workspaces"
+      },
+      {
+        "id": "urn:ngm:class:immersive-communication",
+        "label": "Immersive Communication"
       }
     ],
     "uses": [
@@ -38,21 +107,46 @@
         "label": "Spatial Audio"
       },
       {
-        "id": "urn:ngm:class:encryption",
-        "label": "Encryption"
+        "id": "urn:ngm:class:operational-transformation",
+        "label": "Operational Transformation"
+      },
+      {
+        "id": "urn:ngm:class:conflict-free-replicated-data-types",
+        "label": "Conflict-Free Replicated Data Types"
+      },
+      {
+        "id": "urn:ngm:class:version-control",
+        "label": "Version Control"
       }
     ],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:agile-development",
+        "label": "Agile Development"
+      },
+      {
+        "id": "urn:ngm:class:open-source-development",
+        "label": "Open Source Development"
+      },
+      {
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human-Computer Interaction"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:immersive-communication",
-        "label": "Immersive Communication"
+        "id": "urn:ngm:class:computer-supported-cooperative-work",
+        "label": "Computer-Supported Cooperative Work"
       },
       {
-        "id": "urn:ngm:class:virtual-workspace",
-        "label": "Virtual Workspace"
+        "id": "urn:ngm:class:digital-workplace",
+        "label": "Digital Workplace"
+      },
+      {
+        "id": "urn:ngm:class:presence-awareness",
+        "label": "Presence Awareness"
       }
     ]
   },

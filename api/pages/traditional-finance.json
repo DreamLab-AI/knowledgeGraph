@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:traditional-finance",
   "domain": "finance",
-  "definition": "Traditional finance refers to the established financial system of banks, exchanges, brokers, and regulated intermediaries that predates decentralised and blockchain-based finance.",
+  "definition": "Traditional Finance (TradFi) denotes the incumbent financial system comprising central banks, commercial and investment banks, securities exchanges, clearing houses, custodians, and regulated intermediaries that operate under sovereign legal frameworks. It relies on trusted third parties to record ownership, settle transactions, and extend credit, in contrast to decentralised or blockchain-native alternatives. Its architecture encompasses fractional-reserve banking, fiat currency issuance, and multilateral settlement rails such as SWIFT and RTGS systems. TradFi institutions are subject to prudential regulation, capital adequacy requirements (Basel III/IV), and conduct oversight by bodies such as the SEC, FCA, and ECB.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:financial-infrastructure",
@@ -13,21 +13,124 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
-  "maturity": "established",
+  "qualityScore": 0.75,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:commercial-banking",
+        "label": "Commercial Banking"
+      },
+      {
+        "id": "urn:ngm:class:investment-banking",
+        "label": "Investment Banking"
+      },
+      {
+        "id": "urn:ngm:class:securities-exchange",
+        "label": "Securities Exchange"
+      },
+      {
+        "id": "urn:ngm:class:central-banking",
+        "label": "Central Banking"
+      },
+      {
+        "id": "urn:ngm:class:clearing-house",
+        "label": "Clearing House"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:fiat-currency",
+        "label": "Fiat Currency"
+      },
+      {
+        "id": "urn:ngm:class:kyc-aml",
+        "label": "KYC/AML"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:institutional-adoption",
+        "label": "Institutional Adoption"
+      },
+      {
+        "id": "urn:ngm:class:capital-markets",
+        "label": "Capital Markets"
+      },
+      {
+        "id": "urn:ngm:class:payment-systems",
+        "label": "Payment Systems"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:financial-infrastructure",
+        "label": "Financial Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:central-banking",
+        "label": "Central Banking"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:de-fi",
+        "label": "DeFi"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:tokenisation",
+        "label": "Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-interoperability",
+        "label": "Blockchain Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:real-world-assets",
+        "label": "Real World Assets"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:asset-management",
+        "label": "Asset Management"
+      },
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      },
+      {
+        "id": "urn:ngm:class:market-microstructure",
+        "label": "Market Microstructure"
+      }
+    ]
   },
   "wikilinks": [
     {

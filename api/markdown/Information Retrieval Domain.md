@@ -91,7 +91,7 @@ public:: true
   "@type": "Class",
   "label": "Information Retrieval Domain",
   "definition": "The Information Retrieval Domain covers the indexing, ranking and retrieval of relevant items from large collections in response to a query. Its scope includes inverted indexes, ranking models, dense vector search and relevance evaluation. It is a sub-area of the Artificial Intelligence Domain closely allied with the Natural Language Processing Domain. The boundary excludes the structured querying of relational databases, which belongs to general data management.",
-  "domain": "information-retrieval",
+  "domain": "ai",
   "maturity": "emerging",
   "qualityScore": 0.7,
   "subClassOf": [

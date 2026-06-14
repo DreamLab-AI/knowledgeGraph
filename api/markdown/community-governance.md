@@ -1,22 +1,125 @@
 - ### Definition
-  - Community Governance is a concept within the metaverse domain. Further enrichment pending.
+  - Community Governance is the set of structures, processes, and norms through which a community of stakeholders collectively makes decisions about shared systems, resources, or commons. It encompasses [[Voting Mechanism]], [[Proposal System]], [[Dispute Resolution]], and norm-setting procedures that together confer legitimacy on collective choices. Community governance is distinct from [[Corporate Governance]] in that authority is distributed among participants rather than concentrated in a board or executive; it contrasts with [[Centralised Control]] by making rule changes and resource allocation the outcome of community deliberation. The field draws on [[Ostrom Principles]] for commons management, political science theories of deliberative democracy, and modern [[Decentralised Governance]] frameworks to design systems that are simultaneously legitimate, efficient, and resistant to elite capture.
 
-- ### Semantic Classification
-  - owl-class:: artificial-intelligence:CommunityGovernance
-  - owl-role:: concept
+- ### Overview
+  - Community governance addresses the fundamental challenge of coordinating collective action among actors with heterogeneous interests without relying on a single authoritative centre.
+  - It is relevant wherever a shared resource, protocol, or platform must evolve over time: open-source software, internet standards bodies, blockchain networks, platform cooperatives, neighbourhood associations, and supranational internet governance forums.
+  - The core governance cycle involves: (1) identifying a problem or opportunity, (2) drafting a proposal, (3) deliberation and amendment, (4) decision by vote or consensus, (5) implementation, and (6) monitoring and accountability.
+  - Legitimacy — the belief among participants that decisions are binding and fair — is the foundational requirement. Without it, minority factions exit or defect, fragmenting the community.
+  - [[Accountability Mechanisms]] close the feedback loop: decision-makers must be answerable for outcomes, and processes must be auditable.
+
+- ### Key Components
+  - **[[Proposal System]]**
+    - Formal channels through which community members raise issues and draft changes (Ethereum Improvement Proposals, Bitcoin Improvement Proposals, IETF RFCs, GitHub pull requests).
+    - Typically staged: idea → draft → last-call → accepted/rejected.
+  - **[[Voting Mechanism]]**
+    - Methods for aggregating preferences: simple majority, supermajority, [[Quadratic Voting]], conviction voting, approval voting.
+    - On-chain implementations use [[Token Voting]] or [[Multisig Wallet]] signatories; off-chain implementations use forum polls or elected councils.
+  - **[[Consensus Mechanism]]** (in distributed systems context)
+    - Technical consensus (e.g. Nakamoto consensus, BFT variants) is a substrate layer on which governance decisions are enforced.
+    - Social consensus — the rough-consensus model of the IETF — precedes and legitimises technical changes.
+  - **[[Dispute Resolution]]**
+    - Arbitration panels, on-chain kleros-style courts, and escalation procedures for resolving conflicts between participants.
+  - **[[Treasury Management]]**
+    - Control of shared funds (protocol treasuries, grants programmes) is a central governance responsibility; misallocation is a major attack vector.
+  - **Elected Councils and Working Groups**
+    - Delegated bodies (e.g. Ethereum Foundation, Compound Governor Bravo delegates, ICANN councils) handle day-to-day decisions within community-set mandates.
+  - **Constitutional Rules and Meta-Governance**
+    - Higher-order rules specifying how the governance rules themselves may be changed; critical for preventing governance takeovers.
+    - [[Metagovernance]] — governance of governance frameworks — is an emerging sub-field.
+
+- ### Mechanisms
+  - **Token-Weighted Voting**
+    - Most common on-chain mechanism: voting power proportional to token holdings. Fast but susceptible to plutocracy and whale capture.
+    - Uses [[Token Voting]] contracts (e.g. Compound Governor, OpenZeppelin Governor).
+  - **[[Quadratic Voting]]**
+    - Voting power proportional to the square root of tokens committed, reducing plutocratic bias and surfacing intensity of preference.
+    - Requires Sybil resistance (identity verification) to prevent splitting wallets.
+  - **Delegation and Liquid Democracy**
+    - Token holders delegate votes to trusted representatives who can further sub-delegate, creating a fluid representative layer without fixed electoral cycles.
+  - **[[Rough Consensus]]**
+    - The IETF model: a chair judges whether objections are substantive; no formal vote count. Favours deliberation over procedural speed.
+  - **Conviction Voting**
+    - Proposals accumulate voting weight over time; older, sustained support outweighs last-minute surges, reducing coordination attacks.
+  - **Futarchy**
+    - Governance by prediction market: stakeholders bet on outcomes of proposed policies; the market price determines policy selection. Theoretical; rarely deployed at scale.
+
+- ### Applications / Use Cases
+  - **[[Blockchain]] Protocol Governance**
+    - Bitcoin's BIP process and informal miner/node operator signalling; Ethereum's EIP/AIP process and the role of the core developer community; Polkadot's on-chain referenda with OpenGov.
+  - **[[Decentralised Autonomous Organisation]] (DAO) Governance**
+    - MakerDAO Governance (MKR token votes on risk parameters and collateral types); Uniswap Governance (UNI token holders control protocol fees); Compound Governor framework.
+    - DAOs manage protocol treasuries worth billions, making governance security critical.
+  - **[[Open-Source Project]] Governance**
+    - Linux Foundation Technical Steering Committees; Apache Software Foundation's meritocratic governance model; Python Steering Council elected by contributors.
+  - **[[Platform Cooperative]] Governance**
+    - Worker-owned platforms (Stocksy United, Up&Go) apply one-member-one-vote principles; members elect boards and set platform rules collectively.
+  - **Internet Standards Bodies**
+    - IETF working group model (rough consensus, running code); W3C member ballots; ICANN multi-stakeholder model for DNS governance.
+  - **Local and Municipal Participatory Governance**
+    - Participatory budgeting (originated in Porto Alegre, now deployed in hundreds of cities) gives residents direct say over discretionary municipal spending.
+  - **[[Digital Commons]] Governance**
+    - Wikipedia's community-elected Arbitration Committee and administrator hierarchy; Creative Commons licence stewardship.
 
 - ### Relationships
+  - hasPart:: [[Voting Mechanism]]
+  - hasPart:: [[Proposal System]]
+  - hasPart:: [[Dispute Resolution]]
+  - hasPart:: [[Treasury Management]]
+  - partOf:: [[Decentralised Governance]]
+  - partOf:: [[Institutional Design]]
+  - requires:: [[Stakeholder Participation]]
+  - requires:: [[Accountability Mechanisms]]
+  - requires:: [[Consensus Mechanism]]
+  - enables:: [[Collective Decision-Making]]
+  - enables:: [[Commons Management]]
+  - enables:: [[Protocol Upgrade]]
+  - dependsOn:: [[Social Contract]]
+  - dependsOn:: [[Legitimacy]]
+  - uses:: [[Token Voting]]
+  - uses:: [[Quadratic Voting]]
+  - uses:: [[Multisig Wallet]]
+  - uses:: [[Smart Contract]]
+  - supports:: [[Decentralised Autonomous Organisation]]
+  - supports:: [[Open-Source Project]]
+  - supports:: [[Platform Cooperative]]
+  - contrastsWith:: [[Corporate Governance]]
+  - contrastsWith:: [[Centralised Control]]
   - bridges-to:: [[Blockchain]]
+  - bridges-to:: [[AI Alignment]]
+  - bridges-to:: [[Digital Commons]]
+  - relatedTo:: [[Ostrom Principles]]
+  - relatedTo:: [[Metagovernance]]
+  - relatedTo:: [[Rough Consensus]]
 
-- ### Content
+- ### Theoretical Foundations
+  - **Elinor Ostrom's Governing the Commons (1990)**
+    - Identified eight design principles for sustainable commons governance (clearly defined boundaries, proportional rules, collective choice, monitoring, graduated sanctions, conflict resolution, recognition by external authorities, nested layers).
+    - These principles directly inform modern DAO constitutions and community charters.
+  - **Deliberative Democracy**
+    - Habermas and others argue legitimate governance requires substantive public reasoning, not merely preference aggregation. Informs forum-based deliberation norms in open-source projects.
+  - **Social Choice Theory**
+    - Arrow's Impossibility Theorem, Condorcet's paradox, and mechanism design theory constrain what voting systems can achieve; inform the search for voting mechanisms that satisfy fairness criteria under real-world conditions.
+  - **Principal-Agent Theory**
+    - Token-holder principals delegate to developer-agent teams; governance systems must align incentives and constrain agent opportunism.
 
-  ## Overview
+- ### Standards & Context
+  - **IETF RFC 7282** — "On Consensus and Humming in the IETF" — formalises the rough consensus model.
+  - **OpenZeppelin Governor** — widely adopted smart-contract governance framework (Compound Governor fork) providing on-chain proposal, voting, and execution.
+  - **Tally, Snapshot, Boardroom** — off-chain and hybrid governance tooling platforms used by most major DAOs.
+  - **DAOstack and Aragon** — early DAO governance frameworks establishing modular, upgradeable governance architectures.
+  - **IEEE P2145** — draft standard on blockchain and distributed ledger governance frameworks.
+  - **ICANN Accountability and Transparency Frameworks** — multi-stakeholder model for internet naming and addressing governance.
+  - **UN SDG 16** — Sustainable Development Goal on peace, justice, and strong institutions; frames community governance as a development priority.
 
-  Community Governance represents an abstract concept in the metaverse ontology hierarchy.
-
-  #### Related Concepts
-  - [[owl:Thing]]
+- ### Risks and Failure Modes
+  - **Plutocracy** — token-weighted voting concentrates power in large holders; whales can capture governance.
+  - **Voter Apathy** — low participation rates mean small coordinated minorities can pass proposals unopposed.
+  - **Governance Attacks** — flash-loan attacks enable transient acquisition of voting power; Beanstalk Protocol lost funds via a governance exploit.
+  - **Sybil Attacks** — creation of many pseudonymous identities to amplify voting weight in systems without identity verification.
+  - **Ossification** — overly conservative governance processes prevent necessary protocol evolution; Bitcoin's governance has been criticised on this basis.
+  - **Legal Uncertainty** — DAO governance decisions may create legal liabilities for token holders; jurisdiction and liability remain unsettled in most legal systems.
 
 - ### Provenance
-  - sources::
-  - migration-date:: 2026-04-26T00:00:00Z
+  - sources:: Ostrom (1990) Governing the Commons; IETF RFC 7282; OpenZeppelin Governor documentation; Vitalik Buterin governance writings; Compound/Uniswap governance documentation; DAOstack whitepaper
+  - updated:: 2026-06-13

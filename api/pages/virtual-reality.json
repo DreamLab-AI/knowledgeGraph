@@ -5,37 +5,89 @@
   "public": true,
   "classIri": "urn:ngm:class:virtual-reality",
   "domain": "spatial-computing",
-  "definition": "Virtual Reality (VR) is a fully immersive simulation technology that replaces the user's physical environment with a computer-generated three-dimensional world, experienced through head-mounted displays with stereoscopic rendering, spatial audio, and motion tracking. VR applications span entertainment, education, remote collaboration, surgical training, and therapeutic interventions.",
+  "definition": "Virtual Reality (VR) is a fully immersive, computer-generated simulation technology that replaces the user's physical environment with an interactive three-dimensional world, experienced through head-mounted displays that deliver stereoscopic rendering, spatial audio, and six-degrees-of-freedom motion tracking. VR systems generate a sense of presence by maintaining sub-20 ms motion-to-photon latency, high-refresh-rate displays, and positional tracking of the user's head and hands. As a foundational modality within Extended Reality (XR), VR is architecturally distinguished from Augmented Reality by occluding the real world entirely rather than overlaying digital content upon it. Applications span entertainment, professional training, tele-presence collaboration, clinical therapy, and spatial computing platforms.",
   "subClassOf": [
-    {
-      "id": "urn:ngm:class:sc-platform-and-environment",
-      "label": "Platform and Environment"
-    },
     {
       "id": "urn:ngm:class:extended-reality-xr",
       "label": "Extended Reality (XR)"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:head-mounted-display",
+        "label": "Head-Mounted Display"
+      },
+      {
+        "id": "urn:ngm:class:motion-tracking",
+        "label": "Motion Tracking"
+      },
+      {
+        "id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
+      },
+      {
+        "id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      },
+      {
+        "id": "urn:ngm:class:foveated-rendering",
+        "label": "Foveated Rendering"
+      }
+    ],
     "requires": [
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
       {
         "id": "urn:ngm:class:physics-simulation",
         "label": "Physics Simulation"
       },
       {
-        "id": "urn:ngm:class:haptic-feedback",
-        "label": "Haptic Feedback"
+        "id": "urn:ngm:class:six-degrees-of-freedom",
+        "label": "Six Degrees of Freedom"
       }
     ],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:immersive-collaboration",
+        "label": "Immersive Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:virtual-training-simulation",
+        "label": "Virtual Training Simulation"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:mixed-reality",
+        "label": "Mixed Reality"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:neural-rendering",
+        "label": "Neural Rendering"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:game-engine",
@@ -44,19 +96,49 @@
       {
         "id": "urn:ngm:class:3-d-model",
         "label": "3D Model"
+      },
+      {
+        "id": "urn:ngm:class:openxr",
+        "label": "OpenXR"
+      },
+      {
+        "id": "urn:ngm:class:eye-tracking",
+        "label": "Eye Tracking"
       }
     ],
     "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
+    "standardizedBy": [
       {
-        "id": "urn:ngm:class:augmented-reality",
-        "label": "Augmented Reality"
+        "id": "urn:ngm:class:khronos-group",
+        "label": "Khronos Group"
+      },
+      {
+        "id": "urn:ngm:class:ieee-vr",
+        "label": "IEEE VR"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:extended-reality-xr",
+        "label": "Extended Reality (XR)"
       },
       {
         "id": "urn:ngm:class:metaverse",
         "label": "Metaverse"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human-Computer Interaction"
+      },
+      {
+        "id": "urn:ngm:class:computer-graphics",
+        "label": "Computer Graphics"
+      },
+      {
+        "id": "urn:ngm:class:presence-telepresence",
+        "label": "Presence and Telepresence"
       }
     ]
   },

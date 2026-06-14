@@ -4,40 +4,149 @@
   "slug": "performance-benchmarks",
   "public": true,
   "classIri": "urn:ngm:class:performance-benchmarks",
-  "domain": "artificial-intelligence",
-  "definition": "Standardized tests and metrics used to evaluate and compare software, hardware, or system performance under controlled conditions, measuring factors such as response time, throughput, resource utilization, and error rates.",
+  "domain": "infrastructure",
+  "definition": "Performance benchmarks are standardised, reproducible test suites and associated metric sets used to measure, compare, and rank the behavioural characteristics of software systems, hardware platforms, algorithms, or AI models under controlled or representative workload conditions. They quantify dimensions such as latency, throughput, resource utilisation, scalability, accuracy, and energy efficiency, enabling objective evaluation across vendors, versions, and deployment environments. Benchmark suites range from micro-benchmarks targeting isolated components to macro-benchmarks simulating realistic end-to-end workloads. Formal benchmark governance \u2014 through bodies such as SPEC, MLCommons, and TPC \u2014 establishes methodology rules, disclosure requirements, and result auditing to prevent benchmark gaming.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique"
+      "id": "urn:ngm:class:software-testing",
+      "label": "Software Testing"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.73,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:latency-measurement",
+        "label": "Latency Measurement"
+      },
+      {
+        "id": "urn:ngm:class:throughput-measurement",
+        "label": "Throughput Measurement"
+      },
+      {
+        "id": "urn:ngm:class:resource-utilisation",
+        "label": "Resource Utilisation"
+      },
+      {
+        "id": "urn:ngm:class:workload-profiling",
+        "label": "Workload Profiling"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:load-testing",
+        "label": "Load Testing"
+      },
+      {
+        "id": "urn:ngm:class:observability",
+        "label": "Observability"
+      },
+      {
+        "id": "urn:ngm:class:profiling",
+        "label": "Profiling"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:performance-optimization",
         "label": "Performance Optimization"
+      },
+      {
+        "id": "urn:ngm:class:capacity-planning",
+        "label": "Capacity Planning"
+      },
+      {
+        "id": "urn:ngm:class:vendor-evaluation",
+        "label": "Vendor Evaluation"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:metrics-collection",
+        "label": "Metrics Collection"
+      },
+      {
+        "id": "urn:ngm:class:statistical-analysis",
+        "label": "Statistical Analysis"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:spec-benchmarks",
+        "label": "SPEC Benchmarks"
+      },
+      {
+        "id": "urn:ngm:class:mlperf",
+        "label": "MLPerf"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:stress-testing",
+        "label": "Stress Testing"
+      },
+      {
+        "id": "urn:ngm:class:unit-testing",
+        "label": "Unit Testing"
+      }
+    ],
     "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-model-evaluation",
+        "label": "AI Model Evaluation"
+      },
+      {
+        "id": "urn:ngm:class:hardware-acceleration",
+        "label": "Hardware Acceleration"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:time-series-data",
+        "label": "Time-Series Data"
+      },
+      {
+        "id": "urn:ngm:class:reproducible-experiments",
+        "label": "Reproducible Experiments"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:spec",
+        "label": "SPEC"
+      },
+      {
+        "id": "urn:ngm:class:mlcommons",
+        "label": "MLCommons"
+      },
+      {
+        "id": "urn:ngm:class:tpc",
+        "label": "TPC"
+      }
+    ],
+    "partOf": [
       {
         "id": "urn:ngm:class:software-testing",
         "label": "Software Testing"
+      },
+      {
+        "id": "urn:ngm:class:quality-assurance",
+        "label": "Quality Assurance"
       }
     ],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:service-level-objectives",
+        "label": "Service Level Objectives"
+      },
+      {
+        "id": "urn:ngm:class:continuous-integration",
+        "label": "Continuous Integration"
+      }
+    ]
   },
   "wikilinks": [
     {

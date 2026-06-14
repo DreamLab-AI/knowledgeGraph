@@ -5,34 +5,132 @@
   "public": true,
   "classIri": "urn:ngm:class:vesting-schedule",
   "domain": "blockchain",
-  "definition": "A predefined timetable that releases allocated tokens to recipients gradually over time, often after an initial cliff period, rather than all at once.",
+  "definition": "A vesting schedule is a contractually or programmatically enforced timetable that releases allocated digital assets or equity to recipients incrementally over a defined period, typically beginning after an initial cliff during which no release occurs. In blockchain and token-based systems, schedules are commonly encoded in smart contracts that autonomously unlock portions of a token allocation at fixed intervals or milestones, aligning the long-term incentives of founders, contributors, and investors with project health. The schedule's parameters \u2014 cliff length, total duration, release cadence, and revocation conditions \u2014 are a principal instrument of tokenomics design and governance risk management.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:token",
-      "label": "Token"
+      "id": "urn:ngm:class:token-distribution",
+      "label": "Token Distribution"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.74,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:cliff-period",
+        "label": "Cliff Period"
+      },
+      {
+        "id": "urn:ngm:class:release-interval",
+        "label": "Release Interval"
+      },
+      {
+        "id": "urn:ngm:class:revocation-clause",
+        "label": "Revocation Clause"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:token-allocation",
+        "label": "Token Allocation"
       }
     ],
-    "enables": [],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:incentive-alignment",
+        "label": "Incentive Alignment"
+      },
+      {
+        "id": "urn:ngm:class:supply-schedule",
+        "label": "Supply Schedule"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:time-lock",
+        "label": "Time Lock"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:token",
+        "label": "Token"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:immediate-token-release",
+        "label": "Immediate Token Release"
+      },
+      {
+        "id": "urn:ngm:class:airdrop",
+        "label": "Airdrop"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:equity-vesting",
+        "label": "Equity Vesting"
+      },
+      {
+        "id": "urn:ngm:class:defi-protocol",
+        "label": "DeFi Protocol"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:escrow",
+        "label": "Escrow"
+      },
+      {
+        "id": "urn:ngm:class:multisig-wallet",
+        "label": "Multisig Wallet"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "id": "urn:ngm:class:dao",
+        "label": "DAO"
+      }
+    ],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:tokenomics-governance",
+        "label": "Tokenomics Governance"
+      },
+      {
+        "id": "urn:ngm:class:initial-coin-offering",
+        "label": "Initial Coin Offering"
+      },
+      {
+        "id": "urn:ngm:class:staking",
+        "label": "Staking"
+      },
+      {
+        "id": "urn:ngm:class:treasury-management",
+        "label": "Treasury Management"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -87,7 +87,7 @@ public:: true
   "@type": "Class",
   "label": "Semantic Web Domain",
   "definition": "The Semantic Web Domain classifies concepts concerning machine-interpretable representations of meaning that allow data to be linked and reasoned over across sources. It covers ontologies, linked data, and the languages and reasoners that operate on them. As a top-level subject axis it provides the formal vocabulary by which knowledge graphs and interoperable data are constructed.",
-  "domain": "semantic-web",
+  "domain": "standards",
   "maturity": "emerging",
   "qualityScore": 0.7,
   "subClassOf": [

@@ -4,55 +4,140 @@
   "slug": "financial-regulation",
   "public": true,
   "classIri": "urn:ngm:class:financial-regulation",
-  "domain": "blockchain",
-  "definition": "Financial Regulation comprises the rules, statutes, supervisory frameworks, and oversight bodies that govern financial markets, institutions, and digital asset ecosystems. In blockchain and DLT contexts, it encompasses anti-money laundering (AML) obligations, know-your-customer (KYC) requirements, securities classification of tokens, stablecoin frameworks, and central bank digital currency (CBDC) governance. Regulatory approaches differ substantially across jurisdictions, creating compliance complexity for cross-border decentralised finance.",
+  "domain": "finance",
+  "definition": "Financial Regulation comprises the body of statutory rules, supervisory frameworks, licencing regimes, and oversight institutions that govern the conduct of financial markets, intermediaries, and participants. It encompasses prudential regulation (capital adequacy, liquidity, systemic risk), conduct regulation (market integrity, consumer protection, disclosure), and increasingly the oversight of digital asset ecosystems including tokens, stablecoins, and decentralised protocols. Regulatory mandates are administered by national and supranational authorities that establish binding standards, enforce compliance, and coordinate across jurisdictions to address cross-border capital flows, financial crime, and systemic interconnectedness.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:bc-governance-and-regulation",
-      "label": "Governance and Regulation"
+      "id": "urn:ngm:class:governance",
+      "label": "Governance"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.3,
-  "maturity": "emerging",
+  "qualityScore": 0.72,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:prudential-regulation",
+        "label": "Prudential Regulation"
+      },
+      {
+        "id": "urn:ngm:class:conduct-regulation",
+        "label": "Conduct Regulation"
+      },
+      {
+        "id": "urn:ngm:class:securities-regulation",
+        "label": "Securities Regulation"
+      },
+      {
+        "id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
+      },
+      {
+        "id": "urn:ngm:class:stablecoin-regulation",
+        "label": "Stablecoin Regulation"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:regulatory-compliance",
         "label": "Regulatory Compliance"
       },
       {
-        "id": "urn:ngm:class:anti-money-laundering",
-        "label": "Anti-Money Laundering"
+        "id": "urn:ngm:class:know-your-customer",
+        "label": "Know Your Customer"
+      },
+      {
+        "id": "urn:ngm:class:capital-adequacy",
+        "label": "Capital Adequacy"
       }
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:stablecoin-regulation",
-        "label": "Stablecoin Regulation"
+        "id": "urn:ngm:class:financial-stability",
+        "label": "Financial Stability"
       },
       {
-        "id": "urn:ngm:class:securities-regulation",
-        "label": "Securities Regulation"
+        "id": "urn:ngm:class:consumer-protection",
+        "label": "Consumer Protection"
+      },
+      {
+        "id": "urn:ngm:class:market-integrity",
+        "label": "Market Integrity"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:legal-frameworks",
+        "label": "Legal Frameworks"
+      },
+      {
+        "id": "urn:ngm:class:supervisory-authority",
+        "label": "Supervisory Authority"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:self-regulation",
+        "label": "Self-Regulation"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-arbitrage",
+        "label": "Regulatory Arbitrage"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
       {
         "id": "urn:ngm:class:distributed-ledger-technology",
         "label": "Distributed Ledger Technology"
       },
       {
-        "id": "urn:ngm:class:decentralised-finance",
-        "label": "Decentralised Finance"
+        "id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      },
+      {
+        "id": "urn:ngm:class:regtech",
+        "label": "RegTech"
+      }
+    ],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:basel-committee",
+        "label": "Basel Committee on Banking Supervision"
+      },
+      {
+        "id": "urn:ngm:class:financial-stability-board",
+        "label": "Financial Stability Board"
+      },
+      {
+        "id": "urn:ngm:class:iosco",
+        "label": "IOSCO"
+      },
+      {
+        "id": "urn:ngm:class:fatf",
+        "label": "FATF"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:monetary-policy",
+        "label": "Monetary Policy"
+      },
+      {
+        "id": "urn:ngm:class:systemic-risk",
+        "label": "Systemic Risk"
+      },
+      {
+        "id": "urn:ngm:class:financial-crime",
+        "label": "Financial Crime"
       }
     ]
   },

@@ -4,52 +4,119 @@
   "slug": "json-ld-1-1",
   "public": true,
   "classIri": "urn:ngm:class:json-data-interchange-format-ld-1-1",
-  "domain": "artificial-intelligence",
-  "definition": "JSON-LD 1.1 is a W3C Recommendation that extends JSON-LD 1.0 with features including scoped contexts, type-scoped contexts, and propagation control, enabling richer mapping of JSON document terms to IRIs within RDF-based knowledge systems. It provides a framing algorithm for reshaping a flat graph into a tree, and supports compaction and expansion algorithms that allow any conformant document to be normalised to a canonical form. JSON-LD 1.1 underpins interoperable semantic data exchange on the Web and is the serialisation format used by the Verifiable Credentials and Activity Streams standards.",
+  "domain": "data",
+  "definition": "JSON-LD 1.1 is a W3C Recommendation (published July 2020) that extends JSON-LD 1.0 with scoped contexts, type-scoped and property-scoped contexts, propagation control, and the @protected keyword, enabling richer and safer mapping of JSON document terms to IRIs within RDF-based knowledge systems. It standardises compaction, expansion, flattening, and framing algorithms that allow any conformant document to be normalised to a canonical RDF graph without custom mapping code. JSON-LD 1.1 serves as the primary serialisation format for Verifiable Credentials, ActivityPub, the Solid ecosystem, and numerous Linked Data Platform implementations. The specification is maintained by the W3C JSON-LD Working Group and is defined across three companion documents covering syntax, processing algorithms, and the framing API.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique"
+      "id": "urn:ngm:class:linked-data",
+      "label": "Linked Data"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
         "id": "urn:ngm:class:rdf",
         "label": "RDF"
+      },
+      {
+        "id": "urn:ngm:class:iri",
+        "label": "IRI"
+      },
+      {
+        "id": "urn:ngm:class:json",
+        "label": "JSON"
       }
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:linked-data",
-        "label": "Linked Data"
-      },
-      {
         "id": "urn:ngm:class:knowledge-graph",
         "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:semantic-interoperability",
+        "label": "Semantic Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:linked-data-platform",
+        "label": "Linked Data Platform"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-identifiers",
+        "label": "Decentralised Identifiers"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:semantic-web-linked-data-standard",
+        "label": "Semantic Web"
+      },
+      {
+        "id": "urn:ngm:class:owl2",
+        "label": "OWL2"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:turtle-rdf-serialisation",
+        "label": "Turtle"
+      },
+      {
+        "id": "urn:ngm:class:rdf-xml",
+        "label": "RDF/XML"
+      },
+      {
+        "id": "urn:ngm:class:n-triples",
+        "label": "N-Triples"
+      },
+      {
+        "id": "urn:ngm:class:json-schema",
+        "label": "JSON Schema"
+      }
+    ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:semantic-web-linked-data-standard-standards",
-        "label": "Semantic Web Standards"
+        "id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-identifiers",
+        "label": "Decentralised Identifiers"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph-embedding",
+        "label": "Knowledge Graph Embedding"
       }
     ],
     "uses": [
       {
         "id": "urn:ngm:class:json-data-interchange-format-ld",
         "label": "JSON-LD"
+      },
+      {
+        "id": "urn:ngm:class:context-document",
+        "label": "Context Document"
+      },
+      {
+        "id": "urn:ngm:class:rdf-dataset",
+        "label": "RDF Dataset"
       }
     ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:world-wide-web-consortium",
+        "label": "World Wide Web Consortium"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -57,8 +124,16 @@
         "label": "SPARQL"
       },
       {
-        "id": "urn:ngm:class:semantic-web-linked-data-standard",
-        "label": "Semantic Web"
+        "id": "urn:ngm:class:activitypub",
+        "label": "ActivityPub"
+      },
+      {
+        "id": "urn:ngm:class:solid-protocol",
+        "label": "Solid Protocol"
+      },
+      {
+        "id": "urn:ngm:class:schema-org",
+        "label": "Schema.org"
       }
     ]
   },

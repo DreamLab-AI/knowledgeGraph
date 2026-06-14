@@ -4,8 +4,8 @@
   "slug": "did-resolution",
   "public": true,
   "classIri": "urn:ngm:class:did-resolution",
-  "domain": "identity",
-  "definition": "DID resolution is the process of taking a decentralised identifier and returning its associated DID document containing keys and service endpoints. It is defined by W3C specifications and implemented through method-specific resolvers.",
+  "domain": "security",
+  "definition": "DID Resolution is the process of dereferencing a Decentralised Identifier (DID) to retrieve its associated DID Document, which contains cryptographic public keys, authentication methods, and service endpoints. Defined by the W3C DID Core specification, resolution is performed by a DID Resolver that applies the read operation of the relevant DID Method \u2014 such as did:web, did:key, or did:ion \u2014 against its underlying verifiable data registry. The resolution process returns both a DID Document and Resolution Metadata describing the outcome, enabling verifiers to authenticate subjects, verify Verifiable Credentials, and establish secure communication channels in decentralised identity systems.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:decentralized-identifier",
@@ -13,31 +13,122 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.75,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:did-document",
+        "label": "DID Document"
+      },
+      {
+        "id": "urn:ngm:class:did-resolution-metadata",
+        "label": "DID Resolution Metadata"
+      },
+      {
+        "id": "urn:ngm:class:did-document-metadata",
+        "label": "DID Document Metadata"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:decentralized-identifier",
         "label": "Decentralized Identifier"
+      },
+      {
+        "id": "urn:ngm:class:did-method",
+        "label": "DID Method"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-data-registry",
+        "label": "Verifiable Data Registry"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:identity-verification-system",
         "label": "Identity Verification System"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-credential",
+        "label": "Verifiable Credential"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-authentication",
+        "label": "Decentralized Authentication"
+      },
+      {
+        "id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self-Sovereign Identity"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:w3c-did-core-specification",
+        "label": "W3C DID Core Specification"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:dns-resolution",
+        "label": "DNS Resolution"
+      },
+      {
+        "id": "urn:ngm:class:centralized-identity-provider",
+        "label": "Centralized Identity Provider"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:did-resolver",
+        "label": "DID Resolver"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-key-management",
+        "label": "Cryptographic Key Management"
+      }
+    ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:world-wide-web-consortium",
+        "label": "World Wide Web Consortium"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      },
+      {
+        "id": "urn:ngm:class:did-deref",
+        "label": "DID URL Dereferencing"
+      },
+      {
+        "id": "urn:ngm:class:service-endpoint",
+        "label": "Service Endpoint"
+      },
+      {
+        "id": "urn:ngm:class:did-comm",
+        "label": "DIDComm"
+      }
+    ]
   },
   "wikilinks": [
     {

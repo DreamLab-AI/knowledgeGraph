@@ -4,7 +4,7 @@
   "slug": "bluetooth",
   "public": true,
   "classIri": "urn:ngm:class:bluetooth",
-  "domain": "networking",
+  "domain": "infrastructure",
   "definition": "A short-range wireless communication standard for exchanging data between devices over radio frequencies in the 2.4 gigahertz band. It is widely used for peripherals, audio, and low-power sensors.",
   "subClassOf": [
     {

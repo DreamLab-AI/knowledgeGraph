@@ -63,7 +63,7 @@ public:: true
   "@type": "Class",
   "label": "Semantic Reasoning Engine",
   "definition": "Software that derives logically implied facts and checks consistency over a knowledge base expressed in a formal language such as OWL or RDF Schema. It applies inference rules of the underlying logic to make implicit information explicit.",
-  "domain": "general",
+  "domain": "artificial-intelligence",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

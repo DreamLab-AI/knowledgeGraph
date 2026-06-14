@@ -4,23 +4,52 @@
   "slug": "speaker-diarisation",
   "public": true,
   "classIri": "urn:ngm:class:speaker-diarisation",
-  "domain": "distributed-collaboration",
-  "definition": "Speaker diarisation is the automated process of segmenting a continuous audio stream into speaker-homogeneous regions and assigning a speaker label to each region, answering the question 'who spoke when?' without necessarily identifying the speakers by name. The pipeline typically comprises voice activity detection, acoustic feature extraction, speaker embedding (using models such as x-vectors or ECAPA-TDNN), agglomerative clustering or spectral clustering to group embeddings, and optional overlap detection. Speaker diarisation is a prerequisite component in meeting transcription, clinical consultation recording, and multiparty conversation analysis systems.",
+  "domain": "ai",
+  "definition": "Speaker diarisation is the automated process of partitioning a continuous multi-speaker audio stream into temporally contiguous, speaker-homogeneous segments and assigning a speaker label to each segment, answering the question 'who spoke when?' without necessarily mapping labels to real-world identities. A canonical pipeline comprises voice activity detection, acoustic feature extraction, speaker embedding (via models such as x-vectors or ECAPA-TDNN), agglomerative or spectral clustering to group embeddings into speaker clusters, optional overlap detection, and a resegmentation or ViterBI refinement step. End-to-end neural approaches such as EEND (End-to-End Neural Diarisation) unify segmentation and assignment into a single sequence-labelling model capable of handling overlapping speech. Speaker diarisation is a foundational component in meeting transcription systems, clinical consultation recording, broadcast media indexing, and any dialogue-analytic pipeline that requires utterance attribution.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:dc-communication",
-      "label": "DC Communication"
+      "id": "urn:ngm:class:speech-processing",
+      "label": "Speech Processing"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:voice-activity-detection",
+        "label": "Voice Activity Detection"
+      },
+      {
+        "id": "urn:ngm:class:speaker-embedding",
+        "label": "Speaker Embedding"
+      },
+      {
+        "id": "urn:ngm:class:acoustic-feature-extraction",
+        "label": "Acoustic Feature Extraction"
+      },
+      {
+        "id": "urn:ngm:class:spectral-clustering",
+        "label": "Spectral Clustering"
+      },
+      {
+        "id": "urn:ngm:class:overlap-detection",
+        "label": "Overlap Detection"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:audio-processing-system",
         "label": "Audio Processing System"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
       }
     ],
     "enables": [
@@ -31,24 +60,71 @@
       {
         "id": "urn:ngm:class:real-time-transcription",
         "label": "Real-time Transcription"
+      },
+      {
+        "id": "urn:ngm:class:speaker-identification",
+        "label": "Speaker Identification"
+      },
+      {
+        "id": "urn:ngm:class:dialogue-act-recognition",
+        "label": "Dialogue Act Recognition"
+      },
+      {
+        "id": "urn:ngm:class:clinical-note-generation",
+        "label": "Clinical Note Generation"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:automatic-speech-recognition",
+        "label": "Automatic Speech Recognition"
+      },
+      {
+        "id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:speaker-verification",
+        "label": "Speaker Verification"
+      },
+      {
+        "id": "urn:ngm:class:speaker-recognition",
+        "label": "Speaker Recognition"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:real-time-collaboration",
+        "label": "Real-time Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-learning",
+        "label": "Multimodal Learning"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:automatic-speech-recognition",
-        "label": "Automatic Speech Recognition"
-      },
-      {
         "id": "urn:ngm:class:natural-language-processing",
         "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:emotion-recognition",
+        "label": "Emotion Recognition"
+      },
+      {
+        "id": "urn:ngm:class:forced-alignment",
+        "label": "Forced Alignment"
+      },
+      {
+        "id": "urn:ngm:class:noise-reduction",
+        "label": "Noise Reduction"
       }
     ]
   },

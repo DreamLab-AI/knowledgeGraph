@@ -5,16 +5,16 @@
   "public": true,
   "classIri": "urn:ngm:class:distributed-ledger-technology",
   "domain": "blockchain",
-  "definition": "Distributed Ledger Technology (DLT) refers to a class of decentralised database protocols in which transaction records are replicated, shared, and synchronised across multiple networked nodes without a central administrator. Consensus mechanisms \u2014 such as proof-of-work, proof-of-stake, and Byzantine fault-tolerant protocols \u2014 ensure agreement on the canonical state of the ledger. DLT underpins blockchain networks, permissioned enterprise ledgers, and novel consensus architectures used in finance, supply chain, and identity management.",
+  "definition": "Distributed Ledger Technology (DLT) is a class of decentralised database protocols in which transaction records are replicated, shared, and synchronised across multiple networked nodes without a central administrator. Consensus mechanisms \u2014 including proof-of-work, proof-of-stake, and Byzantine fault-tolerant protocols \u2014 ensure agreement on the canonical ledger state across participants who may not mutually trust one another. DLT encompasses permissionless public networks such as Bitcoin and Ethereum as well as permissioned enterprise ledgers such as Hyperledger Fabric and R3 Corda, spanning use cases in finance, supply chain, identity management, and tokenised assets. The technology achieves tamper-evidence through cryptographic chaining of records, making retrospective alteration computationally infeasible.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:bc-network-component",
-      "label": "Network Component"
+      "id": "urn:ngm:class:distributed-systems",
+      "label": "Distributed Systems"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.3,
-  "maturity": "emerging",
+  "qualityScore": 0.72,
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
@@ -24,9 +24,34 @@
       {
         "id": "urn:ngm:class:blockchain",
         "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      },
+      {
+        "id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
       }
     ],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public Key Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:smart-contract",
@@ -35,15 +60,67 @@
       {
         "id": "urn:ngm:class:decentralised-finance",
         "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:tokenisation",
+        "label": "Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      },
+      {
+        "id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self-Sovereign Identity"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:immutability",
+        "label": "Immutability"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:centralised-database",
+        "label": "Centralised Database"
+      },
+      {
+        "id": "urn:ngm:class:traditional-payment-system",
+        "label": "Traditional Payment System"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      }
+    ],
     "uses": [],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-tc-307",
+        "label": "ISO TC 307"
+      },
+      {
+        "id": "urn:ngm:class:ieee-blockchain-initiative",
+        "label": "IEEE Blockchain Initiative"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -53,6 +130,18 @@
       {
         "id": "urn:ngm:class:blockchain-governance",
         "label": "Blockchain Governance"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "id": "urn:ngm:class:data-integrity",
+        "label": "Data Integrity"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-transparency",
+        "label": "Supply Chain Transparency"
       }
     ]
   },

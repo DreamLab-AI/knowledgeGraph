@@ -21,7 +21,7 @@ public:: true
   "@type": "Class",
   "label": "Animation Rig",
   "definition": "An animation rig is a hierarchical system of bones, controls, and constraints applied to a 3D character or object to enable articulated movement for animation. It abstracts underlying mesh deformation through a control interface that animators manipulate, translating high-level poses into low-level vertex transformations. Rigs range from simple skeletal setups to complex systems incorporating inverse kinematics, blend shapes, and procedural dynamics.",
-  "domain": "spatial",
+  "domain": "spatial-computing",
   "maturity": "mature",
   "subClassOf": [{"@id": "urn:ngm:class:skeletal-animation", "label": "Skeletal Animation"}],
   "relations": {

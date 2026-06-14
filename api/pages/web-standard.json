@@ -4,35 +4,142 @@
   "slug": "web-standard",
   "public": true,
   "classIri": "urn:ngm:class:web-standard",
-  "domain": "infrastructure",
-  "definition": "Web Standard is a technology infrastructure concept and a type of infrastructure.",
+  "domain": "standards",
+  "definition": "A Web Standard is a formally published technical specification developed by recognised standards bodies\u2014primarily the W3C, WHATWG, IETF, and ECMA International\u2014that defines interoperable behaviours, data formats, APIs, or protocols for the open web. These specifications undergird every browser-rendered application by guaranteeing that HTML, CSS, JavaScript, and associated platform APIs behave consistently across vendor implementations. Web Standards are normative documents that pass through community drafting, multi-stakeholder review, and vendor implementation before reaching Recommendation or Living Standard status, ensuring that the web remains an open, royalty-free platform.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:infra-legal-and-regulatory",
-      "label": "Legal and Regulatory"
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.72,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
-    "implements": [
+    "hasPart": [
       {
-        "id": "urn:ngm:class:technology-infrastructure-domain",
-        "label": "infrastructure"
+        "id": "urn:ngm:class:html",
+        "label": "HTML"
+      },
+      {
+        "id": "urn:ngm:class:css",
+        "label": "CSS"
+      },
+      {
+        "id": "urn:ngm:class:javascript",
+        "label": "JavaScript"
+      },
+      {
+        "id": "urn:ngm:class:web-api",
+        "label": "Web API"
+      },
+      {
+        "id": "urn:ngm:class:http",
+        "label": "HTTP"
       }
     ],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:browser-engine",
+        "label": "Browser Engine"
+      },
+      {
+        "id": "urn:ngm:class:vendor-implementation",
+        "label": "Vendor Implementation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:web-interoperability",
+        "label": "Web Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:open-web-platform",
+        "label": "Open Web Platform"
+      },
+      {
+        "id": "urn:ngm:class:progressive-web-app",
+        "label": "Progressive Web App"
+      },
+      {
+        "id": "urn:ngm:class:webxr",
+        "label": "WebXR"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:proprietary-technology",
+        "label": "Proprietary Technology"
+      },
+      {
+        "id": "urn:ngm:class:vendor-lock-in",
+        "label": "Vendor Lock-in"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:webgpu",
+        "label": "WebGPU"
+      },
+      {
+        "id": "urn:ngm:class:webgl",
+        "label": "WebGL"
+      },
+      {
+        "id": "urn:ngm:class:webassembly",
+        "label": "WebAssembly"
+      }
+    ],
     "uses": [],
-    "supports": [],
-    "standardizedBy": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      },
+      {
+        "id": "urn:ngm:class:web-security",
+        "label": "Web Security"
+      },
+      {
+        "id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:w3c",
+        "label": "W3C"
+      },
+      {
+        "id": "urn:ngm:class:whatwg",
+        "label": "WHATWG"
+      },
+      {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      },
+      {
+        "id": "urn:ngm:class:ecma-international",
+        "label": "ECMA International"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:open-source",
+        "label": "Open Source"
+      },
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:web-platform",
+        "label": "Web Platform"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

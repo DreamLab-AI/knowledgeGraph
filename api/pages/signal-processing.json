@@ -4,28 +4,62 @@
   "slug": "signal-processing",
   "public": true,
   "classIri": "urn:ngm:class:signal-processing",
-  "domain": "spatial-computing",
-  "definition": "Signal Processing is the mathematical discipline concerned with the analysis, synthesis, filtering, transformation, and compression of analogue and digital signals including audio, video, sensor telemetry, and communications data. In spatial computing and immersive systems, signal processing underpins spatial audio rendering, motion capture noise reduction, depth-sensor filtering, and the real-time fusion of multi-modal sensor streams required for robust AR/VR tracking and interaction.",
+  "domain": "ai",
+  "definition": "Signal processing is the mathematical and engineering discipline concerned with the representation, analysis, transformation, synthesis, filtering, and compression of signals \u2014 time-varying or spatially varying quantities such as audio, video, sensor telemetry, radio-frequency waveforms, biomedical readings, and seismic data. It encompasses both continuous (analogue) and discrete (digital) domains, applying techniques from Fourier analysis, linear algebra, probability theory, and optimisation to extract information, remove noise, encode data, and control systems. Digital signal processing (DSP) executes these operations on sampled data using algorithms implemented in hardware or software, making it foundational to telecommunications, audio engineering, image processing, radar, and AI feature extraction pipelines. Modern signal processing increasingly fuses classical deterministic methods with statistical and machine-learning approaches, enabling adaptive filters, compressed sensing, and deep neural network-based feature representations.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:sc-display-and-rendering",
-      "label": "Display and Rendering"
+      "id": "urn:ngm:class:data",
+      "label": "Data"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "emerging",
+  "qualityScore": 0.72,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:digital-signal-processing",
+        "label": "Digital Signal Processing"
+      },
+      {
+        "id": "urn:ngm:class:fourier-transform",
+        "label": "Fourier Transform"
+      },
+      {
+        "id": "urn:ngm:class:filter-design",
+        "label": "Filter Design"
+      },
+      {
+        "id": "urn:ngm:class:sampling-theory",
+        "label": "Sampling Theory"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      },
+      {
+        "id": "urn:ngm:class:probability-theory",
+        "label": "Probability Theory"
+      }
+    ],
     "enables": [
+      {
+        "id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
+      },
       {
         "id": "urn:ngm:class:spatial-audio",
         "label": "Spatial Audio"
       },
       {
-        "id": "urn:ngm:class:speech-recognition",
-        "label": "Speech Recognition"
+        "id": "urn:ngm:class:image-processing",
+        "label": "Image Processing"
+      },
+      {
+        "id": "urn:ngm:class:radar-sensing",
+        "label": "Radar Sensing"
       },
       {
         "id": "urn:ngm:class:depth-sensing",
@@ -34,20 +68,72 @@
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
+    "contrastsWith": [
       {
-        "id": "urn:ngm:class:render-pipeline",
-        "label": "Render Pipeline"
+        "id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:fast-fourier-transform",
+        "label": "Fast Fourier Transform"
+      },
+      {
+        "id": "urn:ngm:class:wavelet-transform",
+        "label": "Wavelet Transform"
+      },
+      {
+        "id": "urn:ngm:class:kalman-filter",
+        "label": "Kalman Filter"
+      },
+      {
+        "id": "urn:ngm:class:compressed-sensing",
+        "label": "Compressed Sensing"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:telecommunications",
+        "label": "Telecommunications"
       },
       {
         "id": "urn:ngm:class:motion-capture",
         "label": "Motion Capture"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:feature-extraction",
+        "label": "Feature Extraction"
+      },
+      {
+        "id": "urn:ngm:class:noise-reduction",
+        "label": "Noise Reduction"
+      },
+      {
+        "id": "urn:ngm:class:data-compression",
+        "label": "Data Compression"
+      },
+      {
+        "id": "urn:ngm:class:render-pipeline",
+        "label": "Render Pipeline"
       }
     ]
   },

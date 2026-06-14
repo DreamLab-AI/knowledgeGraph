@@ -4,42 +4,123 @@
   "slug": "digital-preservation",
   "public": true,
   "classIri": "urn:ngm:class:digital-preservation",
-  "domain": "spatial-computing",
-  "definition": "Digital Preservation encompasses the strategies, standards, and technical processes that ensure long-term accessibility and integrity of digital content, including 3D assets, metadata, and cultural heritage materials. It involves format migration, checksumming, redundant storage, and provenance tracking, increasingly leveraging blockchain for immutable audit trails and decentralised storage for resilience.",
+  "domain": "infrastructure",
+  "definition": "Digital Preservation is the managed set of processes, standards, and technologies applied to ensure that digital objects remain accessible, authentic, and usable over extended time periods, spanning decades or centuries. It encompasses format migration, bit-level integrity verification via checksumming, redundant and geographically distributed storage, and comprehensive provenance tracking through metadata standards such as OAIS and PREMIS. Effective digital preservation requires active management of hardware and software obsolescence, format dependency chains, and institutional policy frameworks that together prevent the loss or corruption of cultural, scientific, and organisational digital assets. It is distinguished from simple backup by its explicit concern with long-term interpretability and authenticity rather than mere bit-level recovery.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:sc-content-and-assets",
-      "label": "Content and Assets"
+      "id": "urn:ngm:class:data-management",
+      "label": "Data Management"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:format-migration",
+        "label": "Format Migration"
+      },
+      {
+        "id": "urn:ngm:class:checksum-verification",
+        "label": "Checksum Verification"
+      },
+      {
+        "id": "urn:ngm:class:metadata-management",
+        "label": "Metadata Management"
+      },
+      {
+        "id": "urn:ngm:class:provenance-tracking",
+        "label": "Provenance Tracking"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:storage-infrastructure",
+        "label": "Storage Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:metadata-standard",
+        "label": "Metadata Standard"
+      },
+      {
+        "id": "urn:ngm:class:data-integrity",
+        "label": "Data Integrity"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:digital-asset-management",
         "label": "Digital Asset Management"
+      },
+      {
+        "id": "urn:ngm:class:long-term-access",
+        "label": "Long-Term Access"
+      },
+      {
+        "id": "urn:ngm:class:cultural-heritage-management",
+        "label": "Cultural Heritage Management"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:data-backup",
+        "label": "Data Backup"
+      },
+      {
+        "id": "urn:ngm:class:data-archiving",
+        "label": "Data Archiving"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:decentralised-storage",
+        "label": "Decentralised Storage"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:blockchain",
         "label": "Blockchain"
       },
       {
-        "id": "urn:ngm:class:metadata-standard",
-        "label": "Metadata Standard"
+        "id": "urn:ngm:class:distributed-storage",
+        "label": "Distributed Storage"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash",
+        "label": "Cryptographic Hash"
+      },
+      {
+        "id": "urn:ngm:class:content-addressable-storage",
+        "label": "Content-Addressable Storage"
       }
     ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:oais-reference-model",
+        "label": "OAIS Reference Model"
+      },
+      {
+        "id": "urn:ngm:class:premis-metadata-standard",
+        "label": "PREMIS Metadata Standard"
+      },
+      {
+        "id": "urn:ngm:class:iso-14721",
+        "label": "ISO 14721"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -47,12 +128,12 @@
         "label": "Archival Standards"
       },
       {
-        "id": "urn:ngm:class:storage-infrastructure",
-        "label": "Storage Infrastructure"
+        "id": "urn:ngm:class:information-lifecycle-management",
+        "label": "Information Lifecycle Management"
       },
       {
-        "id": "urn:ngm:class:3-d-file-format",
-        "label": "3D File Format"
+        "id": "urn:ngm:class:digital-rights-management",
+        "label": "Digital Rights Management"
       }
     ]
   },

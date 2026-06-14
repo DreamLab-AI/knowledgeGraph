@@ -79,7 +79,7 @@ public:: true
   "@type": "Class",
   "label": "Information Theory",
   "definition": "Information Theory is the mathematical study of the quantification, storage and communication of information, founded by Claude Shannon in 1948. It introduces entropy as a measure of uncertainty in a random source and defines channel capacity, the maximum rate at which information can be transmitted reliably over a noisy channel. The theory underpins data compression, error-correcting codes and modern digital communication. It also connects to statistics, cryptography and machine learning through measures such as mutual information and Kullback-Leibler divergence.",
-  "domain": "information-theory",
+  "domain": "machine-learning",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

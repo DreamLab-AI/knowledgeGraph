@@ -91,7 +91,7 @@ public:: true
   "@type": "Class",
   "label": "Legal Tech Domain",
   "definition": "The Legal Tech Domain covers the application of computational methods to legal practice and the administration of law. Its scope includes contract analysis, legal research, e-discovery and document automation. It is a top-level subject classification at the intersection of law and technology. The boundary excludes the general regulatory rule-making that applies across sectors, which belongs to the Regulation Domain.",
-  "domain": "legal-tech",
+  "domain": "governance",
   "maturity": "emerging",
   "qualityScore": 0.7,
   "subClassOf": [

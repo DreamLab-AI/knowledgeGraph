@@ -43,7 +43,7 @@ public:: true
   "@type": "Class",
   "label": "Climate Change Mitigation",
   "definition": "Efforts to reduce or prevent the emission of greenhouse gases and to enhance their removal from the atmosphere, with the aim of limiting the extent of climate change. It includes shifting to low-carbon energy and improving efficiency.",
-  "domain": "sustainability",
+  "domain": "governance",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

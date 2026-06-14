@@ -4,7 +4,7 @@
   "slug": "knowledge-graphs",
   "public": true,
   "classIri": "urn:ngm:class:knowledge-graphs",
-  "domain": "general",
+  "domain": "data",
   "definition": "Structured representations of knowledge as entities and the relationships between them, typically expressed as a graph of nodes and labelled edges to support querying and inference.",
   "subClassOf": [
     {

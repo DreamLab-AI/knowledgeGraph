@@ -22,7 +22,7 @@ alias:: StabilityAnalysis
   "@type": "Class",
   "label": "Stability Analysis",
   "definition": "Stability analysis is the systematic mathematical investigation of whether a dynamical system — physical, computational, financial, or ecological — will remain bounded, return to equilibrium, or diverge when subjected to perturbations from an operating point. Classical techniques include Lyapunov stability theory, eigenvalue analysis of linearised systems, Bode and Nyquist frequency-domain methods, and Floquet theory for periodic systems. In AI, stability analysis extends to training dynamics, gradient flow, and the behaviour of neural networks under input distribution shifts.",
-  "domain": "science",
+  "domain": "machine-learning",
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:control-theory", "label": "Control Theory"}],
   "relations": {

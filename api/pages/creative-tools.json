@@ -4,8 +4,8 @@
   "slug": "creative-tools",
   "public": true,
   "classIri": "urn:ngm:class:creative-tools",
-  "domain": "artificial-intelligence",
-  "definition": "Creative Tools are AI-powered software applications that assist or augment human creative processes across modalities including image generation, music composition, video synthesis, 3D asset creation, and long-form text authoring. They typically rely on foundation models\u2014particularly diffusion models and large language models\u2014exposed through interactive interfaces or API endpoints. Their role is dual: serving as productivity accelerators for professional practitioners and as accessibility bridges that allow non-expert users to produce high-quality creative outputs.",
+  "domain": "ai",
+  "definition": "Creative Tools are AI-powered and digitally-augmented software applications that assist, augment, or automate human creative processes across modalities including image generation, music composition, video synthesis, 3D asset creation, and long-form text authoring. They typically expose foundation models\u2014particularly diffusion models and large language models\u2014through interactive interfaces or programmable API endpoints, enabling both professionals and non-expert users to produce high-quality creative outputs. Their role is dual: serving as productivity accelerators for practitioners and as accessibility bridges lowering barriers to creative expression. Provenance attribution, intellectual property frameworks, and content authentication standards such as C2PA are active governance concerns around AI-generated content produced by these tools.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-application",
@@ -13,11 +13,20 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
+  "qualityScore": 0.72,
   "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
+      },
+      {
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:image-generation",
@@ -26,12 +35,59 @@
       {
         "id": "urn:ngm:class:text-to-image",
         "label": "Text-to-Image"
+      },
+      {
+        "id": "urn:ngm:class:video-synthesis",
+        "label": "Video Synthesis"
+      },
+      {
+        "id": "urn:ngm:class:music-generation",
+        "label": "Music Generation"
+      },
+      {
+        "id": "urn:ngm:class:3d-asset-creation",
+        "label": "3D Asset Creation"
+      },
+      {
+        "id": "urn:ngm:class:content-creation",
+        "label": "Content Creation"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "id": "urn:ngm:class:api-endpoint",
+        "label": "API Endpoint"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:traditional-design-software",
+        "label": "Traditional Design Software"
+      },
+      {
+        "id": "urn:ngm:class:rule-based-procedural-generation",
+        "label": "Rule-Based Procedural Generation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:metaverse-content",
+        "label": "Metaverse Content"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:diffusion-model",
@@ -40,15 +96,48 @@
       {
         "id": "urn:ngm:class:generative-ai",
         "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-model",
+        "label": "Multimodal Model"
+      },
+      {
+        "id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
       }
     ],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human-Computer Interaction"
+      },
+      {
+        "id": "urn:ngm:class:creative-economy",
+        "label": "Creative Economy"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
       {
         "id": "urn:ngm:class:ai-application",
         "label": "AI Application"
+      },
+      {
+        "id": "urn:ngm:class:content-provenance",
+        "label": "Content Provenance"
+      },
+      {
+        "id": "urn:ngm:class:intellectual-property",
+        "label": "Intellectual Property"
+      },
+      {
+        "id": "urn:ngm:class:human-ai-collaboration",
+        "label": "Human-AI Collaboration"
       }
     ]
   },

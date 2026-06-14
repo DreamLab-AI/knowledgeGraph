@@ -1,14 +1,128 @@
 - ### Definition
-  - [[Decentralized Identity]] is a paradigm for [[Digital Identity]] management that eliminates dependence on central identity providers by giving subjects cryptographic self-sovereign control over their [[DID Document]] anchored on a verifiable registry, enabling [[Credential Verification]] through [[Cryptographic Keys]] and [[Zero-Knowledge Proof]] mechanisms that preserve [[Privacy By Design]] principles.
+  - [[Decentralized Identity]] is a paradigm within [[Digital Identity]] that transfers cryptographic control of identifiers and credentials from centralised services to the identity subject itself. Using the [[W3C DID Specification]] and the [[Verifiable Credentials Data Model]], subjects anchor a [[DID Document]] containing public-key material to a [[Verifiable Data Registry]] — which may be a [[Blockchain]], a distributed ledger, or DNS — and then prove identity to verifiers through [[Cryptographic Signature]] without any real-time query to the credential issuer. [[Zero-Knowledge Proof]] schemes such as BBS+ enable [[Selective Disclosure]] of individual credential attributes, realising [[Privacy By Design]] at the protocol level. The paradigm is also known as [[Self-Sovereign Identity]] when emphasising the user's sovereignty over their own data, though the two terms have subtly different genealogies.
+
+- ### Overview
+  - Decentralized Identity addresses a structural weakness in prior internet identity architectures: every act of authentication discloses information to, and creates a dependency on, a centralised identity provider (IdP). Social login (Sign in with Google, Sign in with Facebook) aggregates behavioural signals across services; enterprise [[Federated Identity]] (SAML, WS-Federation) concentrates risk in enterprise IdPs; even [[OAuth]] delegations require the authorisation server to be online and trusted by both parties.
+  - The decentralized model breaks this dependency through three mechanisms:
+    - **Cryptographic identifiers**: A DID is a URI (e.g., `did:ion:EiClkZMDxPKqC9c-umQfTkR4vUEjPAl4GiNk1bdM`) that resolves to a DID Document containing the subject's public keys and service endpoints. The subject holds the corresponding private key; no registration with an IdP is needed.
+    - **Verifiable Credentials**: Authoritative issuers (governments, universities, employers) cryptographically sign structured assertions about a holder. The holder stores these in a [[Digital Identity Wallet]] and presents them — or selective subsets of them — to verifiers without contacting the issuer.
+    - **Peer-to-peer verification**: A verifier checks the issuer's signature against the issuer's DID Document and the holder's proof of key control, completing the verification loop without a central database query.
+  - This architecture delivers three principal benefits: **privacy** (minimal disclosure, no tracking IdP), **resilience** (no single point of failure), and **interoperability** (cross-jurisdiction credentials when standards are shared).
+
+- ### Key Components
+  - **DID (Decentralized Identifier)**: A globally unique URI conforming to the W3C DID Syntax, consisting of a method (`did:method:identifier`). The method defines how the DID is created, resolved, updated, and deactivated on its specific [[Verifiable Data Registry]].
+    - Common DID methods: `did:web` (DNS-anchored), `did:ion` (Bitcoin/Sidetree), `did:ethr` (Ethereum), `did:key` (pure cryptographic, no registry), `did:peer` (peer-to-peer, ephemeral).
+  - **[[DID Document]]**: The JSON-LD document resolved from a DID URI; contains verification methods (public keys), authentication methods, key agreement methods, and optional service endpoints. Equivalent to a contact card under the subject's own control.
+  - **[[Verifiable Credential]]**: A W3C-standardised JSON-LD data structure expressing a signed claim made by an issuer about a subject. Contains credential metadata, claim attributes (credentialSubject), and a cryptographic proof. May be encoded as JWT (compact) or as a JSON-LD document (rich semantics).
+  - **[[Verifiable Presentation]]**: A package assembled by the holder presenting one or more Verifiable Credentials to a verifier, including proof of the holder's key control. May include zero-knowledge proofs for attribute-level selective disclosure.
+  - **[[Digital Identity Wallet]]**: A software application (mobile, cloud, or hardware-backed) that stores private keys, DID Documents, and Verifiable Credentials; manages consent; and generates Verifiable Presentations on behalf of the user. Examples include the EUDI Wallet (EU mandate), Microsoft Authenticator with Verified ID, and open-source wallets such as Sphereon and Walt.id.
+  - **[[DIDComm]]**: A secure, transport-independent messaging protocol specified by the [[Decentralized Identity Foundation]] that routes encrypted messages between DID-identified agents using the recipient's DID Document to discover key material. Enables agent-to-agent workflows (credential issuance, presentation requests, revocation notifications) independently of any centralised messaging platform.
+  - **[[Verifiable Data Registry]]**: The persistence layer that stores DID Documents and (optionally) credential status lists. Implementations include public blockchains ([[Blockchain]]), permissioned distributed ledgers ([[Distributed Ledger Technology]]), IPFS, or DNS.
+  - **[[Selective Disclosure]]**: The ability to reveal individual attributes from a credential without disclosing the full credential. Enabled by:
+    - **SD-JWT** (Selective Disclosure for JWTs) — IETF draft; widely adopted in the EUDI Wallet ecosystem.
+    - **BBS+ Signatures** — pairing-based cryptography enabling derived proofs; supports unlinkability across presentations.
+    - **zk-SNARKs / zk-STARKs** — full [[Zero-Knowledge Proof]] predicates ("I am over 18") without attribute disclosure.
+  - **[[Cryptographic Keys]]**: The root of trust for decentralized identity. Key types used include Ed25519 (signing), X25519 (key agreement), P-256 (NIST curve), and secp256k1 (Bitcoin/Ethereum compatibility). Key rotation and recovery are critical operational challenges.
+  - **Credential Status / Revocation**: Mechanisms to signal that an issued credential has been revoked before its expiry. Approaches include [[Blockchain]]-anchored status registries, Status List 2021 (bitstring published at a URL), and accumulator-based revocation preserving privacy.
+
+- ### DID Method Ecosystem
+  - The DID method registry (maintained by W3C) lists over 100 registered methods. Key examples:
+    - `did:web` — Resolves DID Documents from HTTPS URLs; simple to deploy, no blockchain; relies on DNS/TLS trust model.
+    - `did:ion` — Anchors DID operations in Bitcoin via the Sidetree protocol; permissionless and censorship-resistant; operated by Microsoft.
+    - `did:ethr` — Anchors DIDs in Ethereum smart contracts using the ERC-1056 registry; low-cost updates via off-chain resolution.
+    - `did:peer` — Local, ephemeral DIDs for peer-to-peer relationships; no global registry; used in [[DIDComm]] agent connections.
+    - `did:key` — Encodes a single public key as the DID itself; trivially self-contained; suitable for ephemeral or constrained environments.
+    - `did:jwk` — Similar to `did:key` but uses JWK encoding; favoured in OpenID4VC flows.
+  - Method selection involves trade-offs between decentralisation, cost, throughput, privacy (correlability of on-chain data), and operational simplicity.
+
+- ### Trust Triangle and Protocol Flow
+  - The canonical trust triangle has three actors:
+    - **Issuer**: An authoritative entity (government ministry, university, employer, notary) that signs a Verifiable Credential and delivers it to the holder via a DIDComm issuance protocol or OpenID for Verifiable Credential Issuance (OID4VCI).
+    - **Holder**: The identity subject — a person, organisation, or IoT device — who stores credentials in a [[Digital Identity Wallet]] and controls disclosure. The holder's DID anchors their public key material.
+    - **Verifier** (Relying Party): A service or institution that requests a Verifiable Presentation from the holder, verifies the issuer's cryptographic signature and the holder's proof of key control, and makes an access-control decision. The OpenID for Verifiable Presentations (OID4VP) protocol standardises this exchange.
+  - The verification step does NOT require contacting the issuer at verification time — only the issuer's DID Document (to retrieve the public key) and, optionally, a credential status endpoint (to check revocation) are needed.
+
+- ### Applications and Use Cases
+  - **Government Digital Identity**: The European Union Digital Identity (EUDI) Wallet, mandated by eIDAS 2.0 for all member states, targets citizens being able to use a single wallet for cross-border services — banking KYC, tax filing, prescription access, professional qualifications. The Architecture and Reference Framework (ARF) specifies SD-JWT and mdoc formats.
+  - **Mobile Driving Licences (mDL)**: ISO/IEC 18013-5 defines the mDL format (mdoc), enabling digital driving licences stored on smartphones and verified via NFC/QR. Several US states (Utah, Colorado, Arizona, Maryland) have issued mDLs. Shares design principles with Verifiable Credentials.
+  - **Academic Credentials**: Universities issuing tamper-proof digital diplomas and transcripts (MIT Digital Diplomas, Blockcerts format, European Diploma Supplement). Holders can share credentials with employers without transcript request delays.
+  - **Know Your Customer (KYC) Reuse**: A holder completes KYC once with a regulated identity provider; the resulting Verifiable Credential can be presented to multiple financial institutions, reducing duplication and improving [[Data Sovereignty]].
+  - **Healthcare**: Patient consent management, prescription credentials, professional medical licences. Decentralized identity enables patient-controlled health data sharing aligned with [[Privacy By Design]].
+  - **[[IoT Device Authentication]]**: Devices hold DIDs anchored to a registry; mutual authentication between devices and services uses DIDComm or verifiable presentations, eliminating shared secrets and centralised certificate authorities.
+  - **Supply Chain Provenance**: Organisations in a supply chain issue Verifiable Credentials about goods, certifications, and custody events; verifiers downstream check provenance without relying on a proprietary platform database.
+  - **Age Verification**: Online platforms use zero-knowledge selective disclosure to verify that a user is over 18 without receiving their date of birth — satisfying regulatory requirements while minimising data collection.
+  - **Enterprise Employee Credentials**: Organisations issue Verifiable Credentials for employment status, role, and permissions; employees present these to partner systems without directory synchronisation.
 
 - ### Relationships
-  - [[Decentralized Identity]] is a specialisation of [[Digital Identity]] that contrasts with federated identity systems (OAuth, SAML) by removing the trusted third-party identity provider from the verification flow. The [[DID Document]] is the core data structure, resolved from the DID URI and containing public key material and service endpoints. [[DIDComm]] provides the secure, privacy-respecting messaging protocol used between DID-identified agents. The system typically anchors DID documents to a [[Blockchain]] or distributed ledger to provide cryptographic integrity guarantees. [[Zero-Knowledge Proof]] schemes enable selective disclosure of credential attributes, allowing subjects to prove claims (e.g., "I am over 18") without revealing the underlying data. [[Digital Identity Wallet]] applications store and present credentials on the subject's behalf, realising the user-facing experience of self-sovereign identity.
+  - uses:: [[Cryptographic Keys]]
+  - uses:: [[Blockchain]]
+  - uses:: [[Zero-Knowledge Proof]]
+  - uses:: [[Public Key Infrastructure]]
+  - uses:: [[Distributed Ledger Technology]]
+  - hasPart:: [[DID Document]]
+  - hasPart:: [[Verifiable Credential]]
+  - hasPart:: [[Credential Verification]]
+  - hasPart:: [[DIDComm]]
+  - hasPart:: [[Digital Identity Wallet]]
+  - enables:: [[Privacy By Design]]
+  - enables:: [[Self-Sovereign Identity]]
+  - enables:: [[Selective Disclosure]]
+  - enables:: [[Cross-Border Authentication]]
+  - requires:: [[Verifiable Data Registry]]
+  - requires:: [[Cryptographic Signature]]
+  - implements:: [[W3C DID Specification]]
+  - implements:: [[Verifiable Credentials Data Model]]
+  - standardizedBy:: [[W3C]]
+  - standardizedBy:: [[OpenID Foundation]]
+  - standardizedBy:: [[Decentralized Identity Foundation]]
+  - contrastsWith:: [[Federated Identity]]
+  - contrastsWith:: [[Centralised Identity Provider]]
+  - contrastsWith:: [[OAuth]]
+  - bridges-to:: [[Smart Contract]]
+  - bridges-to:: [[Web3]]
+  - bridges-to:: [[IoT Device Authentication]]
+  - relatedTo:: [[Access Control]]
+  - relatedTo:: [[Data Sovereignty]]
+  - relatedTo:: [[Trust Framework]]
 
-- ### Content
-  - The conceptual foundations of decentralized identity were articulated in Christopher Allen's 2016 essay "The Path to Self-Sovereign Identity," which distilled ten principles including existence, control, access, transparency, persistence, portability, interoperability, consent, minimisation, and protection. These principles reacted against the siloed federated identity architectures of the 2000s (Microsoft Passport, OpenID) and the surveillance-enabling data aggregation of social login (Sign in with Google/Facebook). The World Wide Web Consortium (W3C) began standardising Decentralized Identifiers in 2017, reaching Recommendation status in July 2022. The Verifiable Credentials Data Model became a W3C Recommendation in November 2019, providing the credential format for expressing claims in a cryptographically verifiable, machine-readable form.
+- ### Standards and Governance
+  - **W3C Decentralized Identifiers (DID) v1.0** — became a W3C Recommendation in July 2022. Defines the DID syntax, DID Documents, DID resolution, and the DID method abstraction layer.
+  - **W3C Verifiable Credentials Data Model v1.1** — W3C Recommendation (2022); v2.0 in Candidate Recommendation (2024). Defines the Verifiable Credential and Verifiable Presentation formats in JSON-LD.
+  - **SD-JWT (Selective Disclosure for JWTs)** — IETF draft (draft-ietf-oauth-selective-disclosure-jwt); adopted as the primary selective disclosure mechanism in the EUDI Wallet ARF and OpenID4VC.
+  - **OpenID for Verifiable Credential Issuance (OID4VCI)** and **OpenID for Verifiable Presentations (OID4VP)** — [[OpenID Foundation]] specifications enabling OAuth/OIDC-compatible issuance and presentation of Verifiable Credentials. Widely implemented in enterprise wallets.
+  - **DIF (Decentralized Identity Foundation)** — multi-stakeholder industry consortium developing interoperability specifications: DIDComm, Presentation Exchange, Credential Manifest, SIOPv2, and the Universal DID Resolver.
+  - **ISO/IEC 18013-5** — Mobile Driving Licence (mDL) standard using the CBOR-encoded mdoc format; complementary to but distinct from W3C Verifiable Credentials.
+  - **eIDAS 2.0 (EU Regulation 2024/1183)** — Mandates European Digital Identity Wallets for all EU member states by 2026; references EUDI ARF which mandates ISO 18013-5 mdoc and SD-JWT VC formats.
+  - **NIST SP 800-63-4** — US National Institute of Standards and Technology identity assurance guidelines; increasingly references DID-compatible approaches for identity assurance levels.
+  - **ETSI TS 119 475** — European standards for electronic attestations of attributes in the context of the EUDI Wallet ecosystem.
 
-  - A decentralized identity system operates through a tripartite trust triangle. The issuer is an authority (government, university, employer) that cryptographically signs a verifiable credential and issues it to the holder. The holder is the DID subject who stores the credential in a digital identity wallet and controls its disclosure. The verifier is the relying party that receives a verifiable presentation — a selective subset of credential claims, optionally accompanied by a zero-knowledge proof — and verifies both the issuer's signature and the holder's proof of control without contacting the issuer. This architecture eliminates the centralised database query that characterises federated identity, preserving privacy and functioning offline or across network partitions.
+- ### Comparison with Federated Identity
+  - | Dimension | Decentralized Identity | [[Federated Identity]] |
+  - | Trust anchor | Cryptographic keys (subject-controlled) | Trusted Identity Provider |
+  - | Privacy | Minimal disclosure; no tracking IdP | IdP learns when and where subject authenticates |
+  - | Availability | Offline-capable once credential issued | Depends on IdP availability |
+  - | Revocation | Credential status lists; complex | IdP revokes token in real time |
+  - | Standards | W3C DID, W3C VC, SD-JWT, OID4VP | SAML, [[OAuth]], OpenID Connect |
+  - | Adoption | Emerging; government mandates accelerating | Widely deployed in enterprise and consumer |
 
-  - DID methods define how DID documents are created, resolved, updated, and deactivated on specific verifiable data registries. The DID method ecosystem includes did:web (DNS-anchored, no blockchain), did:ion (Bitcoin-anchored via the Sidetree protocol), did:ethr (Ethereum-anchored via ERC-1056), did:key (pure cryptographic key, no registry), and dozens of others. The European Union's eIDAS 2.0 regulation, effective from 2026, mandates that all EU member states provide citizens with a European Digital Identity Wallet based on decentralized identity standards, representing the largest government adoption of the paradigm. Microsoft Entra Verified ID, IBM Digital Credentials, and MATTR Global provide enterprise implementations.
+- ### Key Challenges
+  - **Issuer bootstrapping**: The value of a digital identity wallet depends entirely on the willingness of authoritative issuers (governments, financial regulators, universities) to issue Verifiable Credentials. Technical standards precede issuer adoption by years.
+  - **Key management and recovery**: If a subject loses their private key, they lose control of their DID. Hardware-backed key storage (TEE, Secure Enclave) and social or guardianship-based key recovery schemes are active research areas.
+  - **Revocation privacy**: Checking credential status can reveal to the issuer which verifier the holder is authenticating to, undermining unlinkability. Privacy-preserving revocation (accumulators, status list sampling) adds complexity.
+  - **Interoperability fragmentation**: The mdoc/ISO 18013-5 and W3C Verifiable Credentials ecosystems use different encodings (CBOR vs JSON-LD), creating potential bifurcation in the wallet ecosystem.
+  - **Governance and liability**: Who bears liability when a fraudulently issued Verifiable Credential causes harm? Trust framework agreements between issuers, holders, and verifiers must resolve governance gaps that specifications leave open.
+  - **Usability**: Self-sovereign identity requires users to understand and manage cryptographic keys — a significant usability barrier for general populations compared with password-based or biometric social login.
 
-  - In 2024-2025, decentralized identity is moving from pilot deployments to production infrastructure in several sectors. The EU Digital Identity Wallet specification (Architecture and Reference Framework v1.4) defines interoperability requirements for 450 million potential users. In the United States, several states have issued mobile driving licenses (mDL) under ISO 18013-5, sharing design principles with DID-based credentials. The mdoc format and W3C Verifiable Credentials face standardisation competition, and the question of selective disclosure mechanisms — SD-JWT, BBS+ signatures, and zk-SNARKs — remains an active area of cryptographic standardisation. The principal challenge is bootstrapping the issuer ecosystem: decentralized identity wallets are only as useful as the credentials that authoritative issuers choose to issue into them.
+- ### Ecosystem and Implementations
+  - **Microsoft Entra Verified ID** — Enterprise Verifiable Credential issuance and verification platform; uses `did:ion` and `did:web`; integrates with Azure Active Directory.
+  - **MATTR Global** — New Zealand-based specialist in enterprise decentralized identity; pioneered BBS+ credential implementations.
+  - **Sphereon** — European open-source digital identity wallet and credential platform aligned with EUDI ARF.
+  - **Walt.id** — Open-source identity infrastructure (SSI Kit, Web Wallet); supports W3C VC, SD-JWT VC, and OID4VC protocols.
+  - **IBM Digital Credentials** — Enterprise identity credential issuance and verification built on open standards.
+  - **Trinsic** — Developer-focused credential platform providing API abstractions over decentralized identity protocols.
+  - **Evernym / Avast** — Early pioneers of Hyperledger Indy-based self-sovereign identity; technology absorbed into Avast's identity products.
+  - **Hyperledger AnonCreds** — Specification for privacy-preserving verifiable credentials with ZK-proof selective disclosure; originated in Hyperledger Indy; now a standalone Hyperledger project.
+
+- ### Provenance
+  - sources:: W3C DID v1.0 Recommendation (2022); W3C Verifiable Credentials Data Model v1.1/v2.0; EUDI ARF v1.4; DIF specifications; Christopher Allen, "The Path to Self-Sovereign Identity" (2016); IETF SD-JWT draft; ISO/IEC 18013-5.
+  - updated:: 2026-06-13

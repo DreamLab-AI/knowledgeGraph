@@ -59,7 +59,7 @@ public:: true
   "@type": "Class",
   "label": "Hash Functions",
   "definition": "Hash functions are algorithms that map data of arbitrary size to a fixed-size output, with cryptographic hash functions designed to be one-way and collision resistant. They are central to security and blockchains.",
-  "domain": "general",
+  "domain": "security",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

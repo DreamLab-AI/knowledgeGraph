@@ -59,7 +59,7 @@ public:: true
   "@type": "Class",
   "label": "3D Engine",
   "definition": "A 3D engine is software that handles the representation, rendering, and often the physics and animation of three-dimensional scenes. It forms the core of many games and simulations.",
-  "domain": "general",
+  "domain": "spatial-computing",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

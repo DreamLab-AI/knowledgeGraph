@@ -4,7 +4,7 @@
   "slug": "persistent-memory",
   "public": true,
   "classIri": "urn:ngm:class:persistent-memory",
-  "domain": "hardware",
+  "domain": "infrastructure",
   "definition": "Persistent Memory (PMEM) is a class of byte-addressable, non-volatile storage technology that occupies the memory bus and exposes its capacity directly to processor load/store instructions, combining the persistence of storage media with latency approaching that of DRAM. It sits in a new tier of the memory hierarchy between volatile DRAM and block-accessed SSDs, enabling applications to retain state across power cycles without the overhead of traditional I/O system calls.",
   "subClassOf": [
     {

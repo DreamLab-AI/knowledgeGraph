@@ -4,20 +4,54 @@
   "slug": "digital-marketing",
   "public": true,
   "classIri": "urn:ngm:class:digital-marketing",
-  "domain": "spatial-computing",
-  "definition": "Digital Marketing encompasses the strategies and technologies used to promote products and services through digital channels, including search engines, social media, email, and immersive platforms. In spatial computing and metaverse contexts, digital marketing extends to in-world advertising, NFT-based brand activations, virtual experiential campaigns, and personalised AR overlays that contextualise commercial messages within physical environments.",
+  "domain": "data",
+  "definition": "Digital Marketing is the practice of promoting products, services, and brands through internet-connected and data-driven channels \u2014 including search engines, social media platforms, email, content networks, and programmatic advertising systems \u2014 to reach and convert target audiences. It encompasses both inbound strategies such as search engine optimisation and content marketing, and outbound strategies such as paid search, display advertising, and email campaigns. Modern digital marketing is distinguished by its measurability, real-time feedback loops, and ability to personalise messages at scale through machine learning, behavioural analytics, and customer data platforms. It intersects with artificial intelligence for predictive targeting, with data infrastructure for audience segmentation and attribution, and with emerging channels such as augmented reality and conversational interfaces.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:sc-content-and-assets",
-      "label": "Content and Assets"
+      "id": "urn:ngm:class:marketing",
+      "label": "Marketing"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "emerging",
+  "qualityScore": 0.72,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:search-engine-optimisation",
+        "label": "Search Engine Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:content-marketing",
+        "label": "Content Marketing"
+      },
+      {
+        "id": "urn:ngm:class:email-marketing",
+        "label": "Email Marketing"
+      },
+      {
+        "id": "urn:ngm:class:programmatic-advertising",
+        "label": "Programmatic Advertising"
+      },
+      {
+        "id": "urn:ngm:class:social-media-marketing",
+        "label": "Social Media Marketing"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-infrastructure",
+        "label": "Data Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:audience-segmentation",
+        "label": "Audience Segmentation"
+      },
+      {
+        "id": "urn:ngm:class:attribution-modelling",
+        "label": "Attribution Modelling"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:e-commerce",
@@ -26,6 +60,14 @@
       {
         "id": "urn:ngm:class:loyalty-programs",
         "label": "Loyalty Programs"
+      },
+      {
+        "id": "urn:ngm:class:personalisation",
+        "label": "Personalisation"
+      },
+      {
+        "id": "urn:ngm:class:conversion-rate-optimisation",
+        "label": "Conversion Rate Optimisation"
       }
     ],
     "dependsOn": [],
@@ -39,6 +81,14 @@
       {
         "id": "urn:ngm:class:augmented-reality",
         "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
       }
     ],
     "uses": [
@@ -49,12 +99,41 @@
       {
         "id": "urn:ngm:class:digital-content",
         "label": "Digital Content"
+      },
+      {
+        "id": "urn:ngm:class:customer-data-platform",
+        "label": "Customer Data Platform"
+      },
+      {
+        "id": "urn:ngm:class:data-analytics",
+        "label": "Data Analytics"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       }
     ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:brand-identity",
+        "label": "Brand Identity"
+      },
+      {
+        "id": "urn:ngm:class:user-experience",
+        "label": "User Experience"
+      },
+      {
+        "id": "urn:ngm:class:privacy-regulation",
+        "label": "Privacy Regulation"
+      },
+      {
+        "id": "urn:ngm:class:a-b-testing",
+        "label": "A/B Testing"
+      }
+    ]
   },
   "wikilinks": [
     {

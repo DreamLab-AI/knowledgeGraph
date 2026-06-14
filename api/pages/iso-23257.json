@@ -4,8 +4,8 @@
   "slug": "iso-23257",
   "public": true,
   "classIri": "urn:ngm:class:iso-23257",
-  "domain": "standards",
-  "definition": "ISO/IEC 23257 specifies a reference architecture for blockchain and distributed ledger technology systems, covering concepts, components and roles.",
+  "domain": "blockchain",
+  "definition": "ISO/IEC 23257 is an international standard published jointly by ISO and IEC that defines a reference architecture for blockchain and distributed ledger technology (DLT) systems, providing a common vocabulary, conceptual model, and set of architectural views covering nodes, networks, consensus mechanisms, and system roles. It establishes a vendor-neutral framework that enables interoperability assessments, system design, and procurement across heterogeneous DLT ecosystems. The standard complements the broader ISO/TC 307 series on blockchain and DLT, serving as the architectural foundation upon which specific technology standards, conformance frameworks, and security profiles are built.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:technical-standard",
@@ -13,21 +13,136 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:blockchain-reference-architecture",
+        "label": "Blockchain Reference Architecture"
+      },
+      {
+        "id": "urn:ngm:class:dlt-node",
+        "label": "DLT Node"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:blockchain-interoperability",
+        "label": "Blockchain Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:system-conformance",
+        "label": "System Conformance"
+      },
+      {
+        "id": "urn:ngm:class:vendor-neutral-procurement",
+        "label": "Vendor-Neutral Procurement"
+      }
+    ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "implements": [
+      {
+        "id": "urn:ngm:class:reference-architecture",
+        "label": "Reference Architecture"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:iso-22739",
+        "label": "ISO 22739"
+      },
+      {
+        "id": "urn:ngm:class:nist-blockchain-framework",
+        "label": "NIST Blockchain Framework"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash",
+        "label": "Cryptographic Hash"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:enterprise-blockchain",
+        "label": "Enterprise Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-traceability",
+        "label": "Supply Chain Traceability"
+      },
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso",
+        "label": "ISO"
+      },
+      {
+        "id": "urn:ngm:class:iec",
+        "label": "IEC"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:iso-tc-307",
+        "label": "ISO/TC 307"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-standards",
+        "label": "Blockchain Standards"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:iso-24643",
+        "label": "ISO 24643"
+      },
+      {
+        "id": "urn:ngm:class:w3c-did",
+        "label": "W3C DID"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
+    ]
   },
   "wikilinks": [
     {

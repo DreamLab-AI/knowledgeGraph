@@ -83,7 +83,7 @@ public:: true
   "@type": "Class",
   "label": "Regulatory Domain",
   "definition": "The Regulatory Domain classifies concepts concerning the rules issued by public authorities and the obligations they impose on regulated activities. It covers statutory requirements, supervisory regimes and the mechanisms through which compliance is demonstrated and enforced. As a top-level subject axis it constrains how systems in other domains may lawfully be designed and operated.",
-  "domain": "regulatory",
+  "domain": "governance",
   "maturity": "emerging",
   "qualityScore": 0.7,
   "subClassOf": [

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:embodied-ai",
   "domain": "artificial-intelligence",
-  "definition": "Embodied AI is a research paradigm holding that intelligence emerges from the continuous sensorimotor interaction of an agent with its physical or simulated environment, rather than from purely symbolic or language-based reasoning. Embodied agents perceive the world through sensors (cameras, proprioceptive IMUs, tactile arrays) and act upon it through actuators, learning to navigate, manipulate, and cooperate via reinforcement learning or imitation learning in physics simulators. The field bridges robotics, cognitive science, and deep learning, with applications in household manipulation, autonomous navigation, and grounded language understanding.",
+  "definition": "Embodied AI is a research paradigm holding that intelligence emerges from the continuous sensorimotor interaction of an agent with its physical or simulated environment, rather than from purely symbolic or disembodied language-based reasoning. Embodied agents perceive the world through sensors \u2014 cameras, proprioceptive IMUs, force-torque sensors, tactile arrays \u2014 and act upon it through actuators, learning to navigate, manipulate objects, and cooperate via reinforcement learning or imitation learning in physics simulators. The field unifies robotics, cognitive science, and deep learning, with applications spanning household manipulation, autonomous navigation, humanoid motor control, and grounded natural language understanding. A central hypothesis is that richer, more transferable representations arise from interactive physical engagement with an environment rather than from passive statistical learning over corpora.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-research-area",
@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
+  "qualityScore": 0.74,
   "maturity": "emerging",
   "relationships": {
     "hasPart": [],
@@ -25,6 +25,14 @@
       {
         "id": "urn:ngm:class:reinforcement-learning",
         "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:physics-engine",
+        "label": "Physics Engine"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
       }
     ],
     "enables": [
@@ -35,13 +43,77 @@
       {
         "id": "urn:ngm:class:sim-to-real-transfer",
         "label": "Sim-to-Real Transfer"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "id": "urn:ngm:class:robotic-manipulation",
+        "label": "Robotic Manipulation"
+      },
+      {
+        "id": "urn:ngm:class:grounded-language-understanding",
+        "label": "Grounded Language Understanding"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:imitation-learning",
+        "label": "Imitation Learning"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
+      },
+      {
+        "id": "urn:ngm:class:disembodied-language-model",
+        "label": "Disembodied Language Model"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:vision-language-model",
+        "label": "Vision-Language Model"
+      },
+      {
+        "id": "urn:ngm:class:domain-randomisation",
+        "label": "Domain Randomisation"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
@@ -53,6 +125,22 @@
       {
         "id": "urn:ngm:class:robotics",
         "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:situated-cognition",
+        "label": "Situated Cognition"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-science",
+        "label": "Cognitive Science"
+      },
+      {
+        "id": "urn:ngm:class:affordance-learning",
+        "label": "Affordance Learning"
+      },
+      {
+        "id": "urn:ngm:class:world-model",
+        "label": "World Model"
       }
     ]
   },

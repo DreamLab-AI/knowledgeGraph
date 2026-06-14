@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:cloud-platform",
   "domain": "infrastructure",
-  "definition": "A cloud platform is an integrated suite of managed infrastructure, runtime services, and developer tooling delivered over the internet that enables organisations to build, deploy, scale, and operate applications without owning physical hardware. The three dominant public cloud platforms \u2014 Amazon Web Services (AWS), Microsoft Azure, and Google Cloud Platform (GCP) \u2014 together represent over 65% of global cloud spend and provide hundreds of services spanning compute, storage, networking, databases, AI/ML, security, and observability. Cloud platforms abstract away operational complexity through pay-as-you-go pricing, elastic scaling, and managed service lifecycles.",
+  "definition": "A cloud platform is an integrated suite of managed infrastructure, runtime services, and developer tooling delivered over the internet that enables organisations to build, deploy, scale, and operate applications without owning physical hardware. Cloud platforms abstract away operational complexity through pay-as-you-go pricing, elastic scaling, and managed service lifecycles, spanning IaaS, PaaS, and SaaS delivery models. The dominant hyperscale providers \u2014 Amazon Web Services, Microsoft Azure, and Google Cloud Platform \u2014 offer hundreds of services covering compute, storage, networking, databases, AI/ML, security, and observability, forming the primary substrate for modern enterprise and AI workloads.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:cloud-infrastructure",
@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.75,
   "maturity": "established",
   "relationships": {
     "hasPart": [
@@ -36,9 +36,26 @@
       {
         "id": "urn:ngm:class:microservices-architecture",
         "label": "Microservices Architecture"
+      },
+      {
+        "id": "urn:ngm:class:container-orchestration",
+        "label": "Container Orchestration"
       }
     ],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:virtualisation",
+        "label": "Virtualisation"
+      },
+      {
+        "id": "urn:ngm:class:identity-and-access-management",
+        "label": "Identity and Access Management"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:cloud-native-applications",
@@ -55,12 +72,47 @@
       {
         "id": "urn:ngm:class:platform-engineering",
         "label": "Platform Engineering"
+      },
+      {
+        "id": "urn:ngm:class:devops",
+        "label": "DevOps"
+      },
+      {
+        "id": "urn:ngm:class:continuous-integration",
+        "label": "Continuous Integration"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:data-centre",
+        "label": "Data Centre"
+      },
+      {
+        "id": "urn:ngm:class:internet-protocol",
+        "label": "Internet Protocol"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:on-premise-infrastructure",
+        "label": "On-Premise Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
+      },
+      {
+        "id": "urn:ngm:class:ai-inference-infrastructure",
+        "label": "AI Inference Infrastructure"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:version-control",
@@ -69,10 +121,40 @@
       {
         "id": "urn:ngm:class:data-pipeline",
         "label": "Data Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
+      },
+      {
+        "id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
       }
     ],
-    "supports": [],
-    "standardizedBy": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      },
+      {
+        "id": "urn:ngm:class:finops",
+        "label": "FinOps"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:cloud-native-computing-foundation",
+        "label": "Cloud Native Computing Foundation"
+      },
+      {
+        "id": "urn:ngm:class:nist-cloud-computing",
+        "label": "NIST Cloud Computing"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -90,6 +172,10 @@
       {
         "id": "urn:ngm:class:platform-governance",
         "label": "Platform Governance"
+      },
+      {
+        "id": "urn:ngm:class:multi-cloud-strategy",
+        "label": "Multi-Cloud Strategy"
       }
     ]
   },

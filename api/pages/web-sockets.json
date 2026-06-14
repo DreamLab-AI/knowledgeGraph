@@ -4,7 +4,7 @@
   "slug": "web-sockets",
   "public": true,
   "classIri": "urn:ngm:class:web-sockets",
-  "domain": "general",
+  "domain": "infrastructure",
   "definition": "WebSockets is a protocol providing full-duplex communication channels over a single TCP connection between a client and a server. It is widely used for real-time web applications.",
   "subClassOf": [
     {

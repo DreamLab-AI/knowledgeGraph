@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:multi-signature",
   "domain": "blockchain",
-  "definition": "Multi-Signature (multisig) is a cryptographic access-control scheme requiring that a transaction or operation be authorised by a threshold number of independent private keys from a defined set before it is considered valid. Commonly expressed as m-of-n (e.g. 2-of-3), multisig eliminates single points of failure in key custody and enforces shared governance over digital assets or smart contracts. It is foundational to institutional cryptocurrency custody, DAO treasury management, and hardware-secure wallet architectures. Multisig schemes may be implemented at the protocol layer, at the script level (as in Bitcoin P2SH), or at the application layer via smart contracts.",
+  "definition": "Multi-Signature (multisig) is a cryptographic access-control scheme requiring that a transaction or operation be authorised by a threshold number m out of a defined set of n independent private keys before it is considered valid. Commonly expressed as m-of-n (e.g. 2-of-3), multisig eliminates single points of failure in key custody and enforces shared governance over digital assets, smart contracts, or any access-controlled resource. It is foundational to institutional cryptocurrency custody, DAO treasury management, bridge security, and hardware-secure wallet architectures. Multisig schemes may be implemented at the protocol layer, at the script level (as in Bitcoin P2SH/P2WSH), or at the application layer via smart contracts such as Gnosis Safe.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:signature-scheme",
@@ -13,11 +13,20 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.74,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:key-management",
+        "label": "Key Management"
+      },
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:multi-sig-governance",
@@ -30,12 +39,47 @@
       {
         "id": "urn:ngm:class:multi-signature-wallet",
         "label": "Multi-Signature Wallet"
+      },
+      {
+        "id": "urn:ngm:class:institutional-custody",
+        "label": "Institutional Custody"
+      },
+      {
+        "id": "urn:ngm:class:cross-chain-bridge",
+        "label": "Cross-Chain Bridge"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "id": "urn:ngm:class:threshold-cryptography",
+        "label": "Threshold Cryptography"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:single-signature",
+        "label": "Single Signature"
+      },
+      {
+        "id": "urn:ngm:class:mpc-wallet",
+        "label": "MPC Wallet"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:cryptographic-keys",
@@ -44,10 +88,27 @@
       {
         "id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public Key Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
       }
     ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:bitcoin-improvement-proposal",
+        "label": "Bitcoin Improvement Proposal"
+      },
+      {
+        "id": "urn:ngm:class:eip",
+        "label": "EIP"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -61,6 +122,18 @@
       {
         "id": "urn:ngm:class:ecdsa",
         "label": "ECDSA"
+      },
+      {
+        "id": "urn:ngm:class:pay-to-script-hash",
+        "label": "Pay-to-Script-Hash"
+      },
+      {
+        "id": "urn:ngm:class:hardware-security-module",
+        "label": "Hardware Security Module"
+      },
+      {
+        "id": "urn:ngm:class:key-ceremony",
+        "label": "Key Ceremony"
       }
     ]
   },

@@ -47,7 +47,7 @@ public:: true
   "@type": "Class",
   "label": "NGSI-LD",
   "definition": "NGSI-LD is an ETSI standard information model and API for representing context information as linked data using entities, properties and relationships. It is widely used in smart city and Internet of Things platforms.",
-  "domain": "iot",
+  "domain": "infrastructure",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

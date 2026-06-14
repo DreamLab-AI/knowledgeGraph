@@ -5,63 +5,128 @@
   "public": true,
   "classIri": "urn:ngm:class:onnx",
   "domain": "ai",
-  "definition": "ONNX (Open Neural Network Exchange) is an open, vendor-neutral file format and operator specification for representing machine learning models, enabling trained models to be exported from one deep learning framework (e.g. PyTorch, TensorFlow) and executed on any compatible runtime or hardware accelerator without retraining. The ONNX ecosystem comprises the ONNX format specification, operator set definitions, model zoo, and the ONNX Runtime inference engine.",
+  "definition": "ONNX (Open Neural Network Exchange) is an open, vendor-neutral interchange format and operator specification for representing machine learning models as directed acyclic computation graphs serialised via Protocol Buffers, enabling trained models to be exported from one deep learning framework (e.g. PyTorch, TensorFlow, MXNet) and executed on any compatible runtime or hardware accelerator without retraining. The ONNX ecosystem encompasses the format specification, versioned opset definitions, a model zoo of pretrained models, and the ONNX Runtime (ORT) inference engine with pluggable hardware execution providers. Originally co-created by Meta and Microsoft in 2017 and later adopted under Linux Foundation AI and Data governance, ONNX addresses framework fragmentation by providing a common intermediate representation (IR) that bridges the training-deployment gap in production ML systems. The specification supports standard neural network operations, control flow constructs, sparse tensors, dynamic shapes, and extended data types needed for large language model and on-device AI inference workloads.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:interoperability-standard",
       "label": "Interoperability Standard"
-    },
-    {
-      "id": "urn:ngm:class:open-standard",
-      "label": "Open Standard"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.74,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:onnx-operator-set",
+        "label": "ONNX Operator Set"
+      },
+      {
+        "id": "urn:ngm:class:onnx-runtime",
+        "label": "ONNX Runtime"
+      },
+      {
+        "id": "urn:ngm:class:onnx-model-zoo",
+        "label": "ONNX Model Zoo"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:protocol-buffers",
+        "label": "Protocol Buffers"
+      },
+      {
+        "id": "urn:ngm:class:computation-graph",
+        "label": "Computation Graph"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:model-deployment",
         "label": "Model Deployment"
       },
       {
-        "id": "urn:ngm:class:inference-engine",
-        "label": "Inference Engine"
-      }
-    ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [
-      {
-        "id": "urn:ngm:class:onnx-runtime",
-        "label": "ONNX Runtime"
+        "id": "urn:ngm:class:hardware-acceleration",
+        "label": "Hardware Acceleration"
       },
-      {
-        "id": "urn:ngm:class:onnx-operator-set",
-        "label": "ONNX Operator Set"
-      }
-    ],
-    "supports": [
       {
         "id": "urn:ngm:class:model-optimization",
         "label": "Model Optimization"
       },
       {
-        "id": "urn:ngm:class:hardware-acceleration",
-        "label": "Hardware Acceleration"
+        "id": "urn:ngm:class:edge-inference",
+        "label": "Edge Inference"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:tensorflow-savedmodel",
+        "label": "TensorFlow SavedModel"
+      },
+      {
+        "id": "urn:ngm:class:torchscript",
+        "label": "TorchScript"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:neural-processing-unit",
+        "label": "Neural Processing Unit"
+      },
+      {
+        "id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:deep-learning-framework",
+        "label": "Deep Learning Framework"
+      },
+      {
+        "id": "urn:ngm:class:quantisation",
+        "label": "Quantisation"
+      },
+      {
+        "id": "urn:ngm:class:graph-optimisation",
+        "label": "Graph Optimisation"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
       }
     ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:deep-learning-framework",
-        "label": "Deep Learning Framework"
+        "id": "urn:ngm:class:model-serialisation",
+        "label": "Model Serialisation"
+      },
+      {
+        "id": "urn:ngm:class:inference-engine",
+        "label": "Inference Engine"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-distillation",
+        "label": "Knowledge Distillation"
       }
     ]
   },

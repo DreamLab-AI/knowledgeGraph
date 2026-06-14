@@ -55,7 +55,7 @@ public:: true
   "@type": "Class",
   "label": "WaveNet",
   "definition": "A deep autoregressive neural network for generating raw audio waveforms one sample at a time, using stacks of dilated causal convolutions.",
-  "domain": "deep-learning",
+  "domain": "machine-learning",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

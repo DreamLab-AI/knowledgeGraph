@@ -59,7 +59,7 @@ public:: true
   "@type": "Class",
   "label": "Intelligent System",
   "definition": "An intelligent system is a computational system that perceives its environment, reasons over data and takes actions to achieve defined objectives.",
-  "domain": "general",
+  "domain": "artificial-intelligence",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

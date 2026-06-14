@@ -4,7 +4,7 @@
   "slug": "revolut",
   "public": true,
   "classIri": "urn:ngm:class:revolut",
-  "domain": "fintech",
+  "domain": "finance",
   "definition": "Revolut is a British financial technology company offering banking, payments, currency exchange and investment services through a mobile app. It holds banking licences in several jurisdictions.",
   "subClassOf": [
     {

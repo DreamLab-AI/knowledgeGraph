@@ -13,11 +13,33 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
-  "maturity": "established",
+  "qualityScore": 0.72,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:iso-iec-jtc-1",
+        "label": "ISO/IEC JTC 1"
+      },
+      {
+        "id": "urn:ngm:class:technical-committee",
+        "label": "Technical Committee"
+      },
+      {
+        "id": "urn:ngm:class:iso-high-level-structure",
+        "label": "ISO High Level Structure"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:consensus-process",
+        "label": "Consensus Process"
+      },
+      {
+        "id": "urn:ngm:class:national-standards-body",
+        "label": "National Standards Body"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:conformity-assessment",
@@ -30,12 +52,51 @@
       {
         "id": "urn:ngm:class:interoperability-standard",
         "label": "Interoperability Standard"
+      },
+      {
+        "id": "urn:ngm:class:mutual-recognition-agreement",
+        "label": "Mutual Recognition Agreement"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:voluntary-standard",
+        "label": "Voluntary Standard"
+      },
+      {
+        "id": "urn:ngm:class:management-system-standard",
+        "label": "Management System Standard"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:ieee",
+        "label": "IEEE"
+      },
+      {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      },
+      {
+        "id": "urn:ngm:class:w3c",
+        "label": "W3C"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      },
+      {
+        "id": "urn:ngm:class:cybersecurity-framework",
+        "label": "Cybersecurity Framework"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:iso-iec-27001",
@@ -43,21 +104,44 @@
       },
       {
         "id": "urn:ngm:class:iso-iec-42001",
-        "label": "ISO IEC 42001"
+        "label": "ISO/IEC 42001"
       },
       {
-        "id": "urn:ngm:class:technical-standards",
-        "label": "Technical Standards"
+        "id": "urn:ngm:class:iso-9001",
+        "label": "ISO 9001"
+      },
+      {
+        "id": "urn:ngm:class:iso-14001",
+        "label": "ISO 14001"
       }
     ],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
+    "supports": [
       {
-        "id": "urn:ngm:class:iso-standards",
-        "label": "Iso Standards"
+        "id": "urn:ngm:class:global-trade",
+        "label": "Global Trade"
       },
+      {
+        "id": "urn:ngm:class:regulatory-framework",
+        "label": "Regulatory Framework"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-iec",
+        "label": "ISO/IEC"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:international-standards-ecosystem",
+        "label": "International Standards Ecosystem"
+      }
+    ],
+    "relatedTo": [
       {
         "id": "urn:ngm:class:technical-standard",
         "label": "Technical Standard"
@@ -65,6 +149,14 @@
       {
         "id": "urn:ngm:class:iso-iec",
         "label": "ISO/IEC"
+      },
+      {
+        "id": "urn:ngm:class:iec",
+        "label": "IEC"
+      },
+      {
+        "id": "urn:ngm:class:accreditation-body",
+        "label": "Accreditation Body"
       }
     ]
   },

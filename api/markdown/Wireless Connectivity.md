@@ -51,7 +51,7 @@ public:: true
   "@type": "Class",
   "label": "Wireless Connectivity",
   "definition": "Wireless connectivity is the transmission of data between devices over radio frequencies without physical cabling. It spans short-range links such as Wi-Fi and Bluetooth and wide-area mobile networks such as 5G.",
-  "domain": "networking",
+  "domain": "infrastructure",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:control-net",
   "domain": "artificial-intelligence",
-  "definition": "ControlNet is a trainable adapter architecture that attaches conditional spatial control to pre-trained text-to-image diffusion models by encoding an input control map (e.g., Canny edge map, depth map, human pose skeleton, semantic segmentation mask, normal map) through a locked copy of the U-Net encoder layers and injecting the resulting features into the generative U-Net via zero-convolution layers initialised to zero weight and bias. Because the zero initialisations prevent gradient noise from corrupting the pre-trained backbone at the start of training, ControlNet can be fine-tuned on relatively small paired datasets whilst preserving the base model's generative quality. The result is spatially precise, prompt-steerable image generation.",
+  "definition": "ControlNet is a trainable adapter architecture that attaches conditional spatial control to pre-trained text-to-image diffusion models by duplicating the U-Net encoder into a locked copy and a trainable copy, connecting them through zero-convolution layers initialised to exactly zero weight and bias. The zero initialisation guarantees that at the start of training no gradient noise corrupts the pre-trained backbone, allowing fine-tuning on relatively small paired datasets of (control map, image) pairs. Input control maps include Canny edge maps, depth maps, human pose skeletons, semantic segmentation masks, surface normal maps, line-art, and scribbles, each producing spatially precise, prompt-steerable image generation. The result is a modular conditioning mechanism that can be composed \u2014 multiple ControlNets with weighted merging \u2014 and transplanted across base diffusion model checkpoints without retraining.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-technique",
@@ -13,11 +13,33 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.72,
+  "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:zero-convolution",
+        "label": "Zero Convolution"
+      },
+      {
+        "id": "urn:ngm:class:encoder-copy",
+        "label": "Encoder Copy"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:neural-network-architecture",
+        "label": "Neural Network Architecture"
+      },
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "id": "urn:ngm:class:fine-tuning",
+        "label": "Fine-Tuning"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:image-generation",
@@ -26,12 +48,51 @@
       {
         "id": "urn:ngm:class:text-to-image",
         "label": "Text-to-Image"
+      },
+      {
+        "id": "urn:ngm:class:conditional-image-synthesis",
+        "label": "Conditional Image Synthesis"
+      },
+      {
+        "id": "urn:ngm:class:spatially-guided-generation",
+        "label": "Spatially Guided Generation"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:denoising-diffusion",
+        "label": "Denoising Diffusion"
+      },
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:lora",
+        "label": "LoRA"
+      },
+      {
+        "id": "urn:ngm:class:ip-adapter",
+        "label": "IP-Adapter"
+      },
+      {
+        "id": "urn:ngm:class:textual-inversion",
+        "label": "Textual Inversion"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:diffusion-model",
@@ -42,8 +103,20 @@
         "label": "Latent Diffusion"
       },
       {
-        "id": "urn:ngm:class:neural-network-architecture",
-        "label": "Neural Network Architecture"
+        "id": "urn:ngm:class:u-net",
+        "label": "U-Net"
+      },
+      {
+        "id": "urn:ngm:class:zero-convolution",
+        "label": "Zero Convolution"
+      },
+      {
+        "id": "urn:ngm:class:classifier-free-guidance",
+        "label": "Classifier-Free Guidance"
+      },
+      {
+        "id": "urn:ngm:class:stable-diffusion",
+        "label": "Stable Diffusion"
       }
     ],
     "supports": [],
@@ -53,6 +126,26 @@
       {
         "id": "urn:ngm:class:pose-estimation",
         "label": "Pose Estimation"
+      },
+      {
+        "id": "urn:ngm:class:depth-estimation",
+        "label": "Depth Estimation"
+      },
+      {
+        "id": "urn:ngm:class:edge-detection",
+        "label": "Edge Detection"
+      },
+      {
+        "id": "urn:ngm:class:semantic-segmentation",
+        "label": "Semantic Segmentation"
+      },
+      {
+        "id": "urn:ngm:class:image-conditioning",
+        "label": "Image Conditioning"
+      },
+      {
+        "id": "urn:ngm:class:adapter-tuning",
+        "label": "Adapter Tuning"
       }
     ]
   },

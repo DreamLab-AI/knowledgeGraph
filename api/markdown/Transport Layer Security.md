@@ -59,7 +59,7 @@ public:: true
   "@type": "Class",
   "label": "Transport Layer Security",
   "definition": "A cryptographic protocol that provides authentication, confidentiality and integrity for communications over a computer network, succeeding the earlier Secure Sockets Layer.",
-  "domain": "cryptographic",
+  "domain": "security",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

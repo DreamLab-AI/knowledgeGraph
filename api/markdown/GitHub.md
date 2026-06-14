@@ -63,7 +63,7 @@ public:: true
   "@type": "Class",
   "label": "GitHub",
   "definition": "GitHub is a web platform for hosting Git repositories, providing version control, code review, issue tracking, and collaboration features. It is owned by Microsoft.",
-  "domain": "general",
+  "domain": "distributed-collaboration",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

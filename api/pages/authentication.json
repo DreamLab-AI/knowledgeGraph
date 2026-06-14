@@ -4,17 +4,17 @@
   "slug": "authentication",
   "public": true,
   "classIri": "urn:ngm:class:authentication",
-  "domain": "infrastructure",
-  "definition": "Authentication is the security process of verifying that a claimed identity \u2014 of a user, device, application, or service \u2014 is genuine before granting access to protected resources. It is distinct from authorisation, which determines what an authenticated principal is permitted to do. Authentication evidence takes the form of knowledge factors (passwords, PINs), possession factors (hardware tokens, mobile devices), inherence factors (biometrics), or cryptographic proofs (digital signatures, TLS client certificates). Modern secure systems require multiple independent factors (multi-factor authentication) to resist credential theft attacks.",
+  "domain": "security",
+  "definition": "Authentication is the security process of verifying that a claimed identity of a user, device, application, or service is genuine before granting access to protected resources. It is fundamentally distinct from authorisation, which determines what permissions an authenticated principal possesses. Authentication evidence is categorised into knowledge factors (passwords, PINs, security questions), possession factors (hardware security keys, TOTP devices, mobile authenticators), and inherence factors (biometrics such as fingerprint or facial recognition), with cryptographic proofs (digital signatures, TLS client certificates, FIDO2 passkeys) increasingly replacing shared-secret schemes. Modern secure systems combine multiple independent factors through multi-factor authentication to achieve strong resistance against credential theft, phishing, replay attacks, and session hijacking.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:infra-security-and-identity",
-      "label": "Infra Security and Identity"
+      "id": "urn:ngm:class:identity-and-access-management",
+      "label": "Identity and Access Management"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "mature",
   "relationships": {
     "hasPart": [],
     "requires": [
@@ -25,6 +25,10 @@
       {
         "id": "urn:ngm:class:identity-verification",
         "label": "Identity Verification"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
       }
     ],
     "enables": [
@@ -35,20 +39,105 @@
       {
         "id": "urn:ngm:class:single-sign-on",
         "label": "Single Sign-On"
+      },
+      {
+        "id": "urn:ngm:class:authorisation",
+        "label": "Authorisation"
+      },
+      {
+        "id": "urn:ngm:class:session-management",
+        "label": "Session Management"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:digital-signatures",
+        "label": "Digital Signatures"
+      },
+      {
+        "id": "urn:ngm:class:secure-communication",
+        "label": "Secure Communication"
+      },
+      {
+        "id": "urn:ngm:class:key-management",
+        "label": "Key Management"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:oauth-2",
+        "label": "OAuth 2.0"
+      },
+      {
+        "id": "urn:ngm:class:openid-connect",
+        "label": "OpenID Connect"
+      },
+      {
+        "id": "urn:ngm:class:saml",
+        "label": "SAML"
+      },
+      {
+        "id": "urn:ngm:class:fido2-webauthn",
+        "label": "FIDO2 WebAuthn"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:authorisation",
+        "label": "Authorisation"
+      },
+      {
+        "id": "urn:ngm:class:anonymity",
+        "label": "Anonymity"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self-Sovereign Identity"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      }
+    ],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      },
+      {
+        "id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      },
+      {
+        "id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:zero-trust-architecture",
-        "label": "Zero Trust Architecture"
+        "id": "urn:ngm:class:multi-factor-authentication",
+        "label": "Multi-Factor Authentication"
+      },
+      {
+        "id": "urn:ngm:class:biometrics",
+        "label": "Biometrics"
+      },
+      {
+        "id": "urn:ngm:class:federation",
+        "label": "Federation"
+      },
+      {
+        "id": "urn:ngm:class:threat-model",
+        "label": "Threat Model"
       }
     ]
   },

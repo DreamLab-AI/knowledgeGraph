@@ -5,38 +5,155 @@
   "public": true,
   "classIri": "urn:ngm:class:lidar",
   "domain": "robotics",
-  "definition": "Lidar is a type of Sensor in the robotics domain.",
+  "definition": "Lidar (Light Detection and Ranging) is an active remote-sensing technology that emits pulsed laser light and measures the time-of-flight of returning reflections to compute precise three-dimensional point-cloud representations of the surrounding environment. Operating across wavelengths from near-infrared to ultraviolet, it achieves centimetre-scale spatial accuracy and is robust to many lighting conditions where camera-based systems degrade. Lidar is a foundational sensor modality in autonomous vehicles, aerial surveying, robotics, and spatial-computing applications, commonly fused with IMU, camera, and GNSS data to enable localisation, mapping, and obstacle detection.",
   "subClassOf": [
-    {
-      "id": "urn:ngm:class:robo-perception",
-      "label": "Perception and Sensing"
-    },
     {
       "id": "urn:ngm:class:sensor",
       "label": "Sensor"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.74,
+  "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [
+    "hasPart": [
       {
-        "id": "urn:ngm:class:robotics",
-        "label": "robotics"
+        "id": "urn:ngm:class:laser-emitter",
+        "label": "Laser Emitter"
+      },
+      {
+        "id": "urn:ngm:class:photodetector",
+        "label": "Photodetector"
+      },
+      {
+        "id": "urn:ngm:class:time-of-flight-sensor",
+        "label": "Time-of-Flight Sensor"
+      },
+      {
+        "id": "urn:ngm:class:rotating-mirror",
+        "label": "Rotating Mirror"
       }
     ],
-    "supports": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:point-cloud-processing",
+        "label": "Point Cloud Processing"
+      },
+      {
+        "id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:simultaneous-localisation-and-mapping",
+        "label": "Simultaneous Localisation and Mapping"
+      },
+      {
+        "id": "urn:ngm:class:obstacle-detection",
+        "label": "Obstacle Detection"
+      },
+      {
+        "id": "urn:ngm:class:3d-scene-reconstruction",
+        "label": "3D Scene Reconstruction"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:laser-pulse-technology",
+        "label": "Laser Pulse Technology"
+      },
+      {
+        "id": "urn:ngm:class:time-of-flight-measurement",
+        "label": "Time-of-Flight Measurement"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:radar",
+        "label": "Radar"
+      },
+      {
+        "id": "urn:ngm:class:camera-sensor",
+        "label": "Camera Sensor"
+      },
+      {
+        "id": "urn:ngm:class:ultrasonic-sensor",
+        "label": "Ultrasonic Sensor"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:3d-mapping",
+        "label": "3D Mapping"
+      },
+      {
+        "id": "urn:ngm:class:geospatial-data",
+        "label": "Geospatial Data"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:infrared-laser",
+        "label": "Infrared Laser"
+      },
+      {
+        "id": "urn:ngm:class:avalanche-photodiode",
+        "label": "Avalanche Photodiode"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:environment-mapping",
+        "label": "Environment Mapping"
+      }
+    ],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:autonomous-vehicle-sensor-suite",
+        "label": "Autonomous Vehicle Sensor Suite"
+      },
+      {
+        "id": "urn:ngm:class:robotic-perception-system",
+        "label": "Robotic Perception System"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      },
+      {
+        "id": "urn:ngm:class:inertial-measurement-unit",
+        "label": "Inertial Measurement Unit"
+      },
+      {
+        "id": "urn:ngm:class:gnss",
+        "label": "GNSS"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-driving",
+        "label": "Autonomous Driving"
+      }
+    ]
   },
   "wikilinks": [
     {

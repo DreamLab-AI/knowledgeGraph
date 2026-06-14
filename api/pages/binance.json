@@ -4,8 +4,8 @@
   "slug": "binance",
   "public": true,
   "classIri": "urn:ngm:class:binance",
-  "domain": "binance",
-  "definition": "Binance is a cryptocurrency exchange founded in 2017 by Changpeng Zhao and Yi He, and by trading volume it has been among the largest in the world. It offers spot and derivatives trading, staking, lending and a range of related services across many supported assets. The company developed the BNB token and the BNB Chain, an EVM-compatible blockchain network used for decentralised applications. Binance has faced significant regulatory scrutiny across multiple jurisdictions, including a 2023 settlement with United States authorities.",
+  "domain": "blockchain",
+  "definition": "Binance is a centralised cryptocurrency exchange founded in 2017 by Changpeng Zhao (CZ) and Yi He, which rapidly grew to become one of the highest-volume digital-asset trading venues globally. It provides spot trading, perpetual and futures derivatives, margin lending, staking, savings products, and a token launchpad across hundreds of supported assets. Binance created the BNB token as a native utility and fee-discount instrument, and subsequently developed BNB Chain, an EVM-compatible Layer-1 blockchain that hosts a substantial decentralised-finance and Web3 application ecosystem. The exchange has faced extensive regulatory scrutiny across multiple jurisdictions, including a landmark 2023 settlement with the United States Department of Justice and FinCEN, resulting in substantial financial penalties and a change in executive leadership.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:digital-asset-domain",
@@ -13,21 +13,146 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:bnb-token",
+        "label": "BNB Token"
+      },
+      {
+        "id": "urn:ngm:class:bnb-chain",
+        "label": "BNB Chain"
+      },
+      {
+        "id": "urn:ngm:class:binance-smart-chain",
+        "label": "Binance Smart Chain"
+      },
+      {
+        "id": "urn:ngm:class:binance-launchpad",
+        "label": "Binance Launchpad"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:order-book",
+        "label": "Order Book"
+      },
+      {
+        "id": "urn:ngm:class:liquidity-provision",
+        "label": "Liquidity Provision"
+      },
+      {
+        "id": "urn:ngm:class:kyc-aml-compliance",
+        "label": "KYC/AML Compliance"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:spot-trading",
+        "label": "Spot Trading"
+      },
+      {
+        "id": "urn:ngm:class:derivatives-trading",
+        "label": "Derivatives Trading"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:token-staking",
+        "label": "Token Staking"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-staked-authority",
+        "label": "Proof of Staked Authority"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:coinbase",
+        "label": "Coinbase"
+      },
+      {
+        "id": "urn:ngm:class:kraken",
+        "label": "Kraken"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-exchange",
+        "label": "Decentralised Exchange"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:non-fungible-token",
+        "label": "Non-Fungible Token"
+      },
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:ethereum-virtual-machine",
+        "label": "Ethereum Virtual Machine"
+      },
+      {
+        "id": "urn:ngm:class:matching-engine",
+        "label": "Matching Engine"
+      },
+      {
+        "id": "urn:ngm:class:crypto-wallet",
+        "label": "Crypto Wallet"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:cryptocurrency-exchange-ecosystem",
+        "label": "Cryptocurrency Exchange Ecosystem"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
+      },
+      {
+        "id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      },
+      {
+        "id": "urn:ngm:class:web3",
+        "label": "Web3"
+      }
+    ]
   },
   "wikilinks": [
     {

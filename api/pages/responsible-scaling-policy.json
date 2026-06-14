@@ -5,15 +5,15 @@
   "public": true,
   "classIri": "urn:ngm:class:responsible-scaling-policy",
   "domain": "artificial-intelligence",
-  "definition": "A Responsible Scaling Policy (RSP) is a voluntary safety commitment by frontier AI developers that specifies: the capability thresholds at which enhanced safety evaluations must be conducted before further scaling or deployment; the specific risk criteria (particularly around biological, chemical, nuclear, and cyberweapon uplift) that would trigger deployment restrictions; and the technical and organisational safeguards required at each capability level. RSPs translate high-level safety intentions into concrete, falsifiable commitments, creating accountability mechanisms analogous to a self-imposed regulatory framework operating ahead of formal government regulation.",
+  "definition": "A Responsible Scaling Policy (RSP) is a voluntary self-regulatory commitment by a frontier AI developer that ties further capability scaling and deployment to measurable safety milestones. It specifies: the capability evaluation thresholds (often called AI Safety Levels) at which enhanced assessments must be completed before training or deploying a more capable model; the specific risk domains\u2014particularly uplift to chemical, biological, radiological, nuclear, and cyberweapon development\u2014that would trigger deployment restrictions or halts; and the technical and organisational safeguards required at each level. RSPs translate aspirational safety intentions into concrete, time-bound, falsifiable commitments, creating accountability mechanisms that operate ahead of formal government regulation.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ai-governance-and-ethics",
-      "label": "AI Governance and Ethics"
+      "id": "urn:ngm:class:ai-governance-framework",
+      "label": "AI Governance Framework"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
+  "qualityScore": 0.73,
   "maturity": "emerging",
   "relationships": {
     "hasPart": [],
@@ -25,34 +25,120 @@
       {
         "id": "urn:ngm:class:risk-assessment",
         "label": "Risk Assessment"
+      },
+      {
+        "id": "urn:ngm:class:capability-evaluation",
+        "label": "Capability Evaluation"
+      },
+      {
+        "id": "urn:ngm:class:third-party-audit",
+        "label": "Third-Party Audit"
       }
     ],
-    "enables": [],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:model-accountability",
+        "label": "Model Accountability"
+      },
+      {
+        "id": "urn:ngm:class:incremental-deployment",
+        "label": "Incremental Deployment"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:frontier-model",
+        "label": "Frontier Model"
+      },
+      {
+        "id": "urn:ngm:class:interpretability",
+        "label": "Interpretability"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:ai-governance-and-ethics",
+        "label": "AI Governance and Ethics"
+      },
+      {
+        "id": "urn:ngm:class:precautionary-principle",
+        "label": "Precautionary Principle"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:mandatory-ai-regulation",
+        "label": "Mandatory AI Regulation"
+      },
+      {
+        "id": "urn:ngm:class:compute-governance",
+        "label": "Compute Governance"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:biosecurity",
+        "label": "Biosecurity"
+      },
+      {
+        "id": "urn:ngm:class:nuclear-non-proliferation",
+        "label": "Nuclear Non-Proliferation"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:uplift-evaluation",
+        "label": "Uplift Evaluation"
+      },
+      {
+        "id": "urn:ngm:class:model-evals",
+        "label": "Model Evals"
+      },
+      {
+        "id": "urn:ngm:class:biosafety-level-framework",
+        "label": "Biosafety Level Framework"
+      }
+    ],
     "supports": [
       {
         "id": "urn:ngm:class:ai-alignment",
         "label": "AI Alignment"
+      },
+      {
+        "id": "urn:ngm:class:existential-risk-reduction",
+        "label": "Existential Risk Reduction"
+      },
+      {
+        "id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
       }
     ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:ai-safety",
-        "label": "AI Safety"
-      },
-      {
-        "id": "urn:ngm:class:ai-governance-framework",
-        "label": "AI Governance Framework"
-      },
-      {
         "id": "urn:ngm:class:frontier-model-forum",
         "label": "Frontier Model Forum"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety-institute",
+        "label": "AI Safety Institute"
+      },
+      {
+        "id": "urn:ngm:class:model-card",
+        "label": "Model Card"
+      },
+      {
+        "id": "urn:ngm:class:cbrn-risk",
+        "label": "CBRN Risk"
+      },
+      {
+        "id": "urn:ngm:class:deployment-policy",
+        "label": "Deployment Policy"
       }
     ]
   },

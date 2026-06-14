@@ -4,7 +4,7 @@
   "slug": "sustainability-domain",
   "public": true,
   "classIri": "urn:ngm:class:sustainability-domain",
-  "domain": "sustainability",
+  "domain": "governance",
   "definition": "The Sustainability Domain classifies concepts concerning the environmental, social and economic effects of systems over their full lifecycle. It covers resource consumption, emissions, circularity and the measurement of long-term viability. As a top-level subject axis it provides criteria by which designs in other domains are assessed against ecological and societal limits.",
   "subClassOf": [
     {

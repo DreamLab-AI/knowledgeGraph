@@ -4,40 +4,148 @@
   "slug": "google-ai-technology-corporation",
   "public": true,
   "classIri": "urn:ngm:class:google-ai-technology-corporation-ai-technology-corporation",
-  "domain": "artificial-intelligence",
-  "definition": "Google is a technology company that operates a search engine and a broad portfolio of internet, advertising, cloud, and artificial intelligence products and services.",
+  "domain": "ai",
+  "definition": "Google AI Technology Corporation (operating publicly as Google LLC, a subsidiary of Alphabet Inc.) is a multinational technology company whose research and product divisions constitute one of the world's leading forces in artificial intelligence, encompassing large language models, foundation models, and applied machine-learning infrastructure. The company develops and deploys AI across Search, Ads, Cloud, Android, and dedicated AI-native products such as Gemini, while its research arm \u2014 Google DeepMind \u2014 pursues frontier science in reinforcement learning, protein structure prediction, and multi-modal reasoning. Google's open and proprietary frameworks, including TensorFlow and JAX, underpin a significant portion of the global AI research ecosystem.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:artificial-intelligence",
-      "label": "Artificial Intelligence"
+      "id": "urn:ngm:class:artificial-intelligence-company",
+      "label": "Artificial Intelligence Company"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
-  "maturity": "established",
+  "qualityScore": 0.72,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:google-deepmind",
+        "label": "Google DeepMind"
+      },
+      {
+        "id": "urn:ngm:class:google-cloud",
+        "label": "Google Cloud"
+      },
+      {
+        "id": "urn:ngm:class:google-brain",
+        "label": "Google Brain"
+      },
+      {
+        "id": "urn:ngm:class:vertex-ai",
+        "label": "Vertex AI"
+      }
+    ],
     "requires": [
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning"
+        "id": "urn:ngm:class:tensor-processing-unit",
+        "label": "Tensor Processing Unit"
+      },
+      {
+        "id": "urn:ngm:class:large-scale-distributed-training",
+        "label": "Large-Scale Distributed Training"
       }
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:cloud-computing",
-        "label": "Cloud Computing"
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:ai-assisted-search",
+        "label": "AI-Assisted Search"
+      },
+      {
+        "id": "urn:ngm:class:enterprise-ai-platform",
+        "label": "Enterprise AI Platform"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:openai",
+        "label": "OpenAI"
+      },
+      {
+        "id": "urn:ngm:class:microsoft-ai",
+        "label": "Microsoft AI"
+      },
+      {
+        "id": "urn:ngm:class:meta-ai",
+        "label": "Meta AI"
+      },
+      {
+        "id": "urn:ngm:class:amazon-web-services-ai",
+        "label": "Amazon Web Services AI"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:quantum-computing",
+        "label": "Quantum Computing"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:tensorflow",
+        "label": "TensorFlow"
+      },
+      {
+        "id": "urn:ngm:class:jax",
+        "label": "JAX"
+      },
+      {
+        "id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:alphabet-inc",
+        "label": "Alphabet Inc"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ]
   },
   "wikilinks": [
     {

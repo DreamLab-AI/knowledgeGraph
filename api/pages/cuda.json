@@ -4,23 +4,44 @@
   "slug": "cuda",
   "public": true,
   "classIri": "urn:ngm:class:cuda",
-  "domain": "artificial-intelligence",
-  "definition": "CUDA (Compute Unified Device Architecture) is NVIDIA's proprietary parallel computing platform and programming model that exposes GPU hardware through a C/C++ extension, enabling thousands of threads to execute concurrently across GPU cores. It provides a hierarchical thread model of grids, blocks, and warps, alongside a managed memory model that spans host (CPU) and device (GPU) address spaces. CUDA underpins the majority of production deep learning training and inference workloads, acting as the primary execution substrate for frameworks such as PyTorch and TensorFlow.",
+  "domain": "infrastructure",
+  "definition": "CUDA (Compute Unified Device Architecture) is NVIDIA's proprietary parallel computing platform and programming model that exposes GPU hardware through a C/C++ extension, enabling thousands of threads to execute concurrently across thousands of GPU cores via a three-level hierarchy of grids, blocks, and warps. It provides a unified memory model spanning host (CPU) and device (GPU) address spaces, complemented by curated libraries such as cuBLAS, cuDNN, and NCCL that deliver optimised primitives for linear algebra, deep neural network operations, and multi-GPU communication. Originally released in 2006, CUDA has become the de facto execution substrate for production deep learning training and inference, underpinning frameworks such as PyTorch and TensorFlow, and is the primary determinant of GPU vendor lock-in in the AI infrastructure stack.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ai-infrastructure",
-      "label": "AI Infrastructure"
+      "id": "urn:ngm:class:parallel-computing",
+      "label": "Parallel Computing"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.72,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:cublas",
+        "label": "cuBLAS"
+      },
+      {
+        "id": "urn:ngm:class:cudnn",
+        "label": "cuDNN"
+      },
+      {
+        "id": "urn:ngm:class:nccl",
+        "label": "NCCL"
+      },
+      {
+        "id": "urn:ngm:class:tensor-core",
+        "label": "Tensor Core"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:gpu-compute",
         "label": "GPU Compute"
+      },
+      {
+        "id": "urn:ngm:class:nvidia-gpu",
+        "label": "NVIDIA GPU"
       }
     ],
     "enables": [
@@ -35,13 +56,56 @@
       {
         "id": "urn:ngm:class:inference",
         "label": "Inference"
+      },
+      {
+        "id": "urn:ngm:class:mixed-precision-training",
+        "label": "Mixed Precision Training"
+      },
+      {
+        "id": "urn:ngm:class:scientific-computing",
+        "label": "Scientific Computing"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:rocm",
+        "label": "ROCm"
+      },
+      {
+        "id": "urn:ngm:class:oneapi",
+        "label": "oneAPI"
+      },
+      {
+        "id": "urn:ngm:class:opencl",
+        "label": "OpenCL"
+      },
+      {
+        "id": "urn:ngm:class:metal-compute",
+        "label": "Metal Compute"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:gpu-accelerated-rendering",
+        "label": "GPU Accelerated Rendering"
+      },
+      {
+        "id": "urn:ngm:class:high-performance-computing",
+        "label": "High Performance Computing"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:simt-execution",
+        "label": "SIMT Execution"
+      },
+      {
+        "id": "urn:ngm:class:shared-memory",
+        "label": "Shared Memory"
+      }
+    ],
     "supports": [
       {
         "id": "urn:ngm:class:neural-network",
@@ -50,11 +114,37 @@
       {
         "id": "urn:ngm:class:machine-learning-discipline-framework",
         "label": "Machine Learning Framework"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
       }
     ],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:pytorch",
+        "label": "PyTorch"
+      },
+      {
+        "id": "urn:ngm:class:tensorflow",
+        "label": "TensorFlow"
+      },
+      {
+        "id": "urn:ngm:class:gpu-memory-bandwidth",
+        "label": "GPU Memory Bandwidth"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

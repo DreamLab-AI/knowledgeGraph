@@ -1,22 +1,81 @@
 - ### Definition
-  - The GHG Protocol is the internationally recognised greenhouse gas accounting and reporting framework developed by the World Resources Institute (WRI) and the World Business Council for Sustainable Development (WBCSD). It defines the methodologies by which organisations measure and categorise greenhouse gas emissions across three scopes: Scope 1 (direct emissions from owned or controlled sources), Scope 2 (indirect emissions from purchased energy), and Scope 3 (all other indirect emissions in the value chain). The GHG Protocol Corporate Standard and its sector-specific supplements underpin most corporate carbon reporting requirements globally, including those mandated by ESG disclosure frameworks and regulatory regimes.
+  - The **GHG Protocol** is the internationally recognised [[greenhouse gas]] accounting and reporting framework co-developed by the [[World Resources Institute]] (WRI) and the [[World Business Council for Sustainable Development]] (WBCSD). First published in 2001 as the Corporate Standard, it establishes the methodological foundations by which organisations measure, categorise, and disclose emissions across three scopes, making it the primary reference for [[Carbon Accounting]], [[ESG Reporting]], and [[Science Based Targets]] globally. Its three-scope structure — distinguishing direct organisational emissions from purchased-energy emissions and full value-chain emissions — has become embedded in virtually all major voluntary and mandatory corporate climate disclosure regimes, from [[CDP Reporting]] to the [[EU CSRD]].
 
-- ### Semantic Classification
-  - owl-class:: ghg-protocol:GHG Protocol
-  - owl-role:: Concept
+- ### Overview
+  - The GHG Protocol emerged from a multi-stakeholder collaboration begun in 1998, driven by the need for a common language for corporate greenhouse gas accounting. Prior to its publication, companies used inconsistent methodologies that made inter-firm and inter-sector comparisons impossible.
+  - Its core Corporate Accounting and Reporting Standard (the "Corporate Standard") defines accounting principles — relevance, completeness, consistency, transparency, and accuracy — and operationalises them through the three-scope framework.
+  - Since 2001, the Protocol has expanded into a family of standards addressing specific accounting challenges:
+    - The **Scope 2 Guidance** (2015) introduced the market-based and location-based methods for accounting electricity-related emissions, responding to the growth of renewable energy procurement.
+    - The **Corporate Value Chain (Scope 3) Standard** provides fifteen upstream and downstream categories for mapping indirect emissions.
+    - The **Product Standard** supports [[Life Cycle Assessment]]-style product-level [[Carbon Footprint Measurement]].
+    - The **Project Protocol** supports quantification of emission reductions from specific mitigation projects, relevant to [[Carbon Offsetting]].
+  - The GHG Protocol is not a regulation in itself; it is a voluntary standard that has been adopted by reference into mandatory regimes worldwide, making it the de facto backbone of global [[Corporate Sustainability Reporting]].
+
+- ### Key Components
+  - #### Scope Framework
+    - **[[Scope 1 Emissions]]** — Direct emissions from sources owned or controlled by the reporting organisation: stationary combustion, mobile combustion, process emissions, and fugitive releases (e.g., refrigerant leakage).
+    - **[[Scope 2 Emissions]]** — Indirect emissions from the generation of purchased electricity, steam, heat, or cooling consumed by the reporting organisation. Two methods apply:
+      - *Location-based*: uses average national or regional grid [[Emissions Factor|emission factors]].
+      - *Market-based*: uses contractual instruments such as renewable energy certificates or supplier-specific emission rates.
+    - **[[Scope 3 Emissions]]** — All other indirect emissions across the upstream and downstream value chain, divided into 15 categories including purchased goods and services, capital goods, business travel, employee commuting, use of sold products, and end-of-life treatment. Scope 3 typically constitutes the largest portion of a company's total [[greenhouse gas]] footprint.
+  - #### Accounting Principles
+    - Relevance, completeness, consistency, transparency, and accuracy — the five principles guide boundary-setting and data collection.
+  - #### Organisational Boundaries
+    - Companies choose between equity-share or control approaches (operational or financial control) to define which entities' emissions are included in their [[Greenhouse Gas Inventory]].
+  - #### Greenhouse Gases Covered
+    - CO₂, CH₄, N₂O, HFCs, PFCs, SF₆, and NF₃ — the basket of gases defined under the [[Kyoto Protocol]], each weighted by its global-warming potential (GWP) to produce CO₂-equivalent totals.
+  - #### Data Quality and Verification
+    - The Protocol distinguishes primary data (activity data gathered directly) from secondary data (industry averages, [[Emissions Factor|emission factor]] databases). Third-party assurance against standards such as [[ISO 14064]] is widely expected by reporting frameworks.
+
+- ### Applications and Use Cases
+  - **Corporate Carbon Reporting** — Organisations of all sizes use GHG Protocol methods to construct annual [[Greenhouse Gas Inventory|GHG inventories]] disclosed to stakeholders and rating agencies.
+  - **Science-Based Target Setting** — The [[Science Based Targets]] initiative (SBTi) mandates GHG Protocol-aligned inventories as the baseline for setting emission-reduction targets consistent with limiting global warming to 1.5 °C.
+  - **CDP Disclosure** — [[CDP Reporting]] questionnaires (covering climate, water, forests) are built entirely around GHG Protocol scope categories, making Protocol-aligned inventories a prerequisite for participation.
+  - **Regulatory Compliance**
+    - The [[EU CSRD]] and its European Sustainability Reporting Standards (ESRS) directly incorporate GHG Protocol methodology for scope delineation and disclosure.
+    - The US SEC climate disclosure rule (2024) requires Scope 1 and 2 disclosure and, for many registrants, Scope 3 disclosure in line with GHG Protocol definitions.
+    - UK Streamlined Energy and Carbon Reporting (SECR) references the Protocol for methodology.
+  - **Renewable Energy Procurement** — The market-based Scope 2 method shapes corporate demand for renewable energy certificates (RECs/GOs) and power purchase agreements (PPAs), directly linking [[ESG Reporting]] to energy procurement strategy.
+  - **Supply Chain Engagement** — Scope 3 Category 1 (purchased goods and services) drives supplier engagement programmes, requiring suppliers to share primary emissions data, advancing [[Supply Chain Transparency]].
+  - **Net Zero Strategy** — [[Net Zero Transition]] planning depends on GHG Protocol baselines to track absolute emission reductions against science-based trajectories.
+  - **Digital and Blockchain Applications** — [[Blockchain Carbon Credits]] platforms (e.g., Toucan, Gold Standard digital MRV) use GHG Protocol definitions to encode carbon credit issuance methodologies on-chain, bridging traditional accounting to distributed ledgers. [[Digital Product Passport]] schemes embed product-level GHG Protocol data to enable circular-economy traceability.
 
 - ### Relationships
-  - enables [[Carbon Accounting]]
-  - enables [[ESG Reporting]]
-  - relatedTo [[Environmental Standards]]
-  - relatedTo [[Carbon Footprint Measurement]]
-  - relatedTo [[ISO 14064]]
+  - hasPart:: [[Scope 1 Emissions]]
+  - hasPart:: [[Scope 2 Emissions]]
+  - hasPart:: [[Scope 3 Emissions]]
+  - partOf:: [[Carbon Accounting]]
+  - requires:: [[Greenhouse Gas Inventory]]
+  - requires:: [[Emissions Factor]]
+  - enables:: [[ESG Reporting]]
+  - enables:: [[Science Based Targets]]
+  - enables:: [[Carbon Offsetting]]
+  - enables:: [[Carbon Neutral Certification]]
+  - implements:: [[Corporate Sustainability Reporting]]
+  - uses:: [[Life Cycle Assessment]]
+  - uses:: [[Carbon Footprint Measurement]]
+  - standardizedBy:: [[ISO 14064]]
+  - standardizedBy:: [[World Resources Institute]]
+  - contrastsWith:: [[ISO 14067]]
+  - contrastsWith:: [[PAS 2060]]
+  - bridges-to:: [[Blockchain Carbon Credits]]
+  - bridges-to:: [[Supply Chain Transparency]]
+  - bridges-to:: [[Digital Product Passport]]
+  - relatedTo:: [[TCFD]]
+  - relatedTo:: [[EU CSRD]]
+  - relatedTo:: [[CDP Reporting]]
+  - relatedTo:: [[Net Zero Transition]]
 
-- ### Content
-  - The GHG Protocol is the world's most widely used greenhouse gas accounting standard, providing the methodological foundations for corporate-level carbon accounting and reporting. Developed collaboratively by the World Resources Institute and the WBCSD from the late 1990s, it was first published as the Corporate Standard in 2001. It has since been supplemented by the GHG Protocol Scope 2 Guidance (addressing market-based and location-based accounting of electricity emissions), the Corporate Value Chain (Scope 3) Standard, and sector-specific guidance for products and projects.
-  - The three-scope framework is the GHG Protocol's most influential contribution. Scope 1 covers direct emissions from combustion, process chemistry, or fugitive releases under organisational control. Scope 2 covers emissions from purchased electricity, heat, or steam, reflecting the carbon intensity of the grid. Scope 3 encompasses all other indirect emissions across the upstream and downstream value chain, including purchased goods, business travel, employee commuting, use of sold products, and end-of-life treatment — typically the largest and most complex category for most organisations.
-  - The GHG Protocol is foundational to ESG Reporting frameworks including CDP (formerly Carbon Disclosure Project), the Science Based Targets initiative (SBTi), the Task Force on Climate-related Financial Disclosures (TCFD), and mandatory reporting regimes such as the EU Corporate Sustainability Reporting Directive (CSRD) and the US SEC climate disclosure rules. It is harmonised with ISO 14064, which provides a complementary international standard for GHG inventories and verification. Blockchain-based solutions for Carbon Accounting increasingly reference GHG Protocol methodologies as the basis for on-chain carbon credit quantification and Carbon Footprint Measurement.
+- ### Standards and Context
+  - **[[ISO 14064]]** (parts 1–3) is the complementary international standard for GHG inventories, quantification, and verification. ISO 14064-1 is broadly harmonised with the GHG Protocol Corporate Standard, and assurance engagements typically cite both frameworks simultaneously.
+  - **[[ISO 14067]]** addresses carbon footprint of products (CFP), complementing the GHG Protocol Product Standard.
+  - **[[PAS 2060]]** (BSI) defines carbon neutrality claims, referencing GHG Protocol-compliant inventories as a prerequisite.
+  - The **[[TCFD]]** (Task Force on Climate-related Financial Disclosures) framework adopted by the G20 and embedded in national regulators' rules requires GHG Protocol-aligned Scope 1, 2, and 3 disclosures as part of the metrics-and-targets pillar.
+  - The **Science Based Targets initiative ([[Science Based Targets]])** specifies GHG Protocol-aligned baselines and requires Scope 3 engagement for companies in high-impact sectors.
+  - **[[EU CSRD]]** and the attendant ESRS E1 standard mandate the same scope delineation, with third-party limited assurance required, tying GHG Protocol compliance directly to EU financial-reporting obligations.
+  - **World Resources Institute** and **WBCSD** jointly govern Protocol updates through a multi-stakeholder review process, ensuring the standard evolves alongside accounting challenges such as market-based Scope 2 instruments and emerging supply-chain data infrastructure.
+  - The Protocol is technology-neutral but increasingly intersects with emerging data infrastructure — [[Supply Chain Transparency]] platforms, [[Digital Product Passport]] schemes, and [[Blockchain Carbon Credits]] — that seek to automate primary-data collection at scale.
 
 - ### Provenance
-  - sources::
-  - migration-date:: 2026-05-19T00:00:00Z
+  - sources:: World Resources Institute GHG Protocol Corporate Standard; WBCSD GHG Protocol documentation; ISO 14064 series; EU CSRD ESRS E1
+  - updated:: 2026-06-13

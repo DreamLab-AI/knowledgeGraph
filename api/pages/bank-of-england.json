@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:bank-of-england",
   "domain": "finance",
-  "definition": "The Bank of England (BoE) is the United Kingdom's central bank, responsible for monetary policy, financial stability, and prudential regulation of deposit-taking institutions and systemically important insurers. Founded in 1694, it issues banknotes, operates the RTGS payment infrastructure, and co-regulates financial markets alongside the Financial Conduct Authority under the framework established by the Financial Services and Markets Act 2000.",
+  "definition": "The Bank of England (BoE) is the United Kingdom's central bank, founded in 1694 by Royal Charter to finance the Crown, and nationalised in 1946. It is responsible for monetary policy via the Monetary Policy Committee (MPC), which sets Bank Rate to maintain a 2% CPI inflation target; macroprudential financial stability policy via the Financial Policy Committee (FPC); and microprudential supervision of deposit-taking institutions, insurers, and systemically important financial market infrastructures via the Prudential Regulation Authority (PRA). The Bank also operates the UK's Real-Time Gross Settlement (RTGS) payment infrastructure and issues sterling banknotes, acting as the operational backbone of the UK financial system.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:central-bank",
@@ -13,17 +13,79 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.74,
   "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:monetary-policy-committee",
+        "label": "Monetary Policy Committee"
+      },
+      {
+        "id": "urn:ngm:class:financial-policy-committee",
+        "label": "Financial Policy Committee"
+      },
+      {
+        "id": "urn:ngm:class:prudential-regulation-authority",
+        "label": "Prudential Regulation Authority"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:monetary-policy",
+        "label": "Monetary Policy"
+      },
+      {
+        "id": "urn:ngm:class:prudential-regulation",
+        "label": "Prudential Regulation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:financial-stability",
+        "label": "Financial Stability"
+      },
+      {
+        "id": "urn:ngm:class:payment-system",
+        "label": "Payment System"
+      },
+      {
+        "id": "urn:ngm:class:quantitative-easing",
+        "label": "Quantitative Easing"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:european-central-bank",
+        "label": "European Central Bank"
+      },
+      {
+        "id": "urn:ngm:class:federal-reserve",
+        "label": "Federal Reserve"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:real-time-gross-settlement",
+        "label": "Real-Time Gross Settlement"
+      },
+      {
+        "id": "urn:ngm:class:interest-rate-policy",
+        "label": "Interest Rate Policy"
+      }
+    ],
     "supports": [
       {
         "id": "urn:ngm:class:compliance-framework",
@@ -32,27 +94,48 @@
       {
         "id": "urn:ngm:class:risk-management-framework",
         "label": "Risk Management Framework"
+      },
+      {
+        "id": "urn:ngm:class:financial-market-infrastructure",
+        "label": "Financial Market Infrastructure"
       }
     ],
     "standardizedBy": [
       {
         "id": "urn:ngm:class:financial-stability-board",
         "label": "Financial Stability Board"
+      },
+      {
+        "id": "urn:ngm:class:basel-iii",
+        "label": "Basel III"
       }
     ],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:uk-financial-regulatory-framework",
+        "label": "UK Financial Regulatory Framework"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:central-bank-digital-currency",
         "label": "Central Bank Digital Currency"
       },
       {
-        "id": "urn:ngm:class:financial-stability",
-        "label": "Financial Stability"
-      },
-      {
         "id": "urn:ngm:class:financial-regulation",
         "label": "Financial Regulation"
+      },
+      {
+        "id": "urn:ngm:class:inflation-targeting",
+        "label": "Inflation Targeting"
+      },
+      {
+        "id": "urn:ngm:class:systemic-risk",
+        "label": "Systemic Risk"
+      },
+      {
+        "id": "urn:ngm:class:lender-of-last-resort",
+        "label": "Lender of Last Resort"
       }
     ]
   },

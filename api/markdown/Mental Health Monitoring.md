@@ -43,7 +43,7 @@ public:: true
   "@type": "Class",
   "label": "Mental Health Monitoring",
   "definition": "The use of sensors, applications, and data analysis to track indicators related to a person's psychological wellbeing over time. It may use self-reports, physiological signals, and behavioural data.",
-  "domain": "healthcare",
+  "domain": "ai",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

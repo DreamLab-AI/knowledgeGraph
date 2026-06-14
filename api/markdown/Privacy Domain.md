@@ -91,7 +91,7 @@ public:: true
   "@type": "Class",
   "label": "Privacy Domain",
   "definition": "The Privacy Domain classifies concepts concerning the appropriate handling of personal information and the rights of individuals over data about them. It covers data minimisation, consent, purpose limitation and the techniques that protect identity. As a top-level subject axis it constrains how systems collect, process and disclose personal data.",
-  "domain": "privacy",
+  "domain": "security",
   "maturity": "emerging",
   "qualityScore": 0.7,
   "subClassOf": [

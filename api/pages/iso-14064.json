@@ -4,20 +4,46 @@
   "slug": "iso-14064",
   "public": true,
   "classIri": "urn:ngm:class:iso-14064",
-  "domain": "blockchain",
-  "definition": "ISO 14064 is a three-part international standard series specifying principles and requirements for the quantification, monitoring, reporting, and independent verification of greenhouse gas (GHG) emissions and removals at organisational level (Part 1), at project level (Part 2), and for validation and verification bodies (Part 3). The standard provides a framework for organisations to account for their Scope 1, 2, and 3 emissions in a manner that is auditable by third-party verification bodies, and it underpins voluntary carbon markets, corporate sustainability reporting obligations, and blockchain-based carbon credit tokenisation schemes.",
+  "domain": "governance",
+  "definition": "ISO 14064 is a three-part international standard series published by the International Organisation for Standardisation that specifies principles and requirements for the quantification, monitoring, reporting, and independent verification of greenhouse gas (GHG) emissions and removals. Part 1 addresses organisational-level GHG inventories including Scope 1, 2, and 3 emissions; Part 2 covers project-level GHG mitigation quantification underpinning carbon credit issuance; and Part 3 prescribes competence and process requirements for validation and verification bodies. Together the three parts form an auditable, globally recognised framework that underpins corporate sustainability reporting, voluntary and compliance carbon markets, and emerging blockchain-based carbon credit tokenisation schemes.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:bc-governance-and-regulation",
-      "label": "Blockchain Governance and Regulation"
+      "id": "urn:ngm:class:environmental-standards",
+      "label": "Environmental Standards"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.72,
+  "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:ghg-inventory-management",
+        "label": "GHG Inventory Management"
+      },
+      {
+        "id": "urn:ngm:class:carbon-project-accounting",
+        "label": "Carbon Project Accounting"
+      },
+      {
+        "id": "urn:ngm:class:ghg-verification-bodies",
+        "label": "GHG Verification Bodies"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:third-party-auditor",
+        "label": "Third Party Auditor"
+      },
+      {
+        "id": "urn:ngm:class:conformity-assessment",
+        "label": "Conformity Assessment"
+      },
+      {
+        "id": "urn:ngm:class:emission-factors",
+        "label": "Emission Factors"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:carbon-accounting",
@@ -30,29 +56,76 @@
       {
         "id": "urn:ngm:class:esg-reporting",
         "label": "ESG Reporting"
+      },
+      {
+        "id": "urn:ngm:class:corporate-sustainability-reporting",
+        "label": "Corporate Sustainability Reporting"
+      },
+      {
+        "id": "urn:ngm:class:voluntary-carbon-markets",
+        "label": "Voluntary Carbon Markets"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:ghg-protocol",
+        "label": "GHG Protocol"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:carbon-tokenisation",
+        "label": "Carbon Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [
+      {
+        "id": "urn:ngm:class:international-organisation-for-standardisation",
+        "label": "International Organisation for Standardisation"
+      },
       {
         "id": "urn:ngm:class:environmental-standards",
         "label": "Environmental Standards"
       }
     ],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:iso-14000-series",
+        "label": "ISO 14000 Series"
+      },
+      {
+        "id": "urn:ngm:class:climate-governance-frameworks",
+        "label": "Climate Governance Frameworks"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:ghg-protocol",
         "label": "GHG Protocol"
       },
       {
-        "id": "urn:ngm:class:third-party-auditor",
-        "label": "Third Party Auditor"
+        "id": "urn:ngm:class:tcfd",
+        "label": "TCFD"
+      },
+      {
+        "id": "urn:ngm:class:iso-14001",
+        "label": "ISO 14001"
+      },
+      {
+        "id": "urn:ngm:class:scope-3-emissions",
+        "label": "Scope 3 Emissions"
+      },
+      {
+        "id": "urn:ngm:class:paris-agreement",
+        "label": "Paris Agreement"
       }
     ]
   },

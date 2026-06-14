@@ -4,35 +4,122 @@
   "slug": "eip-4844",
   "public": true,
   "classIri": "urn:ngm:class:eip-4844",
-  "domain": "standards",
-  "definition": "EIP-4844 is an Ethereum Improvement Proposal introducing blob-carrying transactions, often referred to as proto-danksharding, to reduce data costs for rollups.",
+  "domain": "blockchain",
+  "definition": "EIP-4844, known as Proto-Danksharding or 'Shard Blob Transactions', is an Ethereum Improvement Proposal activated on the Ethereum mainnet in March 2024 that introduces a new transaction type carrying temporary binary large objects (blobs) of data. Each blob is approximately 128 KB, persists for a short window (roughly two weeks) rather than being stored permanently in Ethereum state, and is made accessible to smart contracts only via a cryptographic commitment. The proposal dramatically reduces the data posting costs for Layer-2 rollups by creating a dedicated, cheap data-availability lane, providing a foundation for full Danksharding without requiring immediate shard implementation.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:technical-standard",
-      "label": "Technical Standard"
+      "id": "urn:ngm:class:ethereum-improvement-proposal",
+      "label": "Ethereum Improvement Proposal"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.74,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:ethereum-smart-contract-platform",
+        "id": "urn:ngm:class:ethereum",
         "label": "Ethereum"
+      },
+      {
+        "id": "urn:ngm:class:kzg-commitment",
+        "label": "KZG Commitment"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
       }
     ],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:danksharding",
+        "label": "Danksharding"
+      },
+      {
+        "id": "urn:ngm:class:layer-2-scaling",
+        "label": "Layer-2 Scaling"
+      },
+      {
+        "id": "urn:ngm:class:data-availability-sampling",
+        "label": "Data Availability Sampling"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:calldata",
+        "label": "Calldata"
+      },
+      {
+        "id": "urn:ngm:class:full-danksharding",
+        "label": "Full Danksharding"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:decentralised-storage",
+        "label": "Decentralised Storage"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:blob-transaction",
+        "label": "Blob Transaction"
+      },
+      {
+        "id": "urn:ngm:class:polynomial-commitment",
+        "label": "Polynomial Commitment"
+      },
+      {
+        "id": "urn:ngm:class:beacon-chain",
+        "label": "Beacon Chain"
+      },
+      {
+        "id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:optimistic-rollup",
+        "label": "Optimistic Rollup"
+      },
+      {
+        "id": "urn:ngm:class:zk-rollup",
+        "label": "ZK Rollup"
+      },
+      {
+        "id": "urn:ngm:class:ethereum-scalability",
+        "label": "Ethereum Scalability"
+      }
+    ],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:ethereum-cancun-upgrade",
+        "label": "Ethereum Cancun Upgrade"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ethereum-improvement-proposal",
+        "label": "Ethereum Improvement Proposal"
+      },
+      {
+        "id": "urn:ngm:class:data-availability",
+        "label": "Data Availability"
+      },
+      {
+        "id": "urn:ngm:class:gas-fee-mechanism",
+        "label": "Gas Fee Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:eip-1559",
+        "label": "EIP-1559"
+      }
+    ]
   },
   "wikilinks": [
     {

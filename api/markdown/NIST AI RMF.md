@@ -20,47 +20,126 @@ public:: true
   "@id": "urn:ngm:class:nist-ai-rmf",
   "@type": "Class",
   "label": "NIST AI RMF",
-  "definition": "The NIST AI Risk Management Framework (AI RMF) is a voluntary guidance document published by the National Institute of Standards and Technology in January 2023 that helps organisations manage risks associated with the design, development, deployment, and operation of AI systems. It provides a structured, flexible, and measurable approach to AI risk management through four core functions: Govern, Map, Measure, and Manage. The framework is technology- and sector-agnostic, designed to be adapted across diverse organisational contexts and AI use cases.",
+  "definition": "The NIST AI Risk Management Framework (AI RMF) is a voluntary, technology-agnostic guidance document published by the National Institute of Standards and Technology in January 2023 that helps organisations identify, assess, and manage risks arising from the design, development, deployment, and operation of AI systems. It structures AI risk management practice through four core functions — Govern, Map, Measure, and Manage — forming a continuous lifecycle cycle applicable across sectors and organisational sizes. The framework explicitly promotes seven trustworthy-AI characteristics (accountable, explainable, fair, privacy-enhanced, reliable, resilient, and secure) as unifying goals, and is supported by a companion Playbook and a growing library of sector-specific profiles, including one for generative AI.",
   "domain": "governance",
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:ai-governance-framework", "label": "AI Governance Framework"}],
   "relations": {
-    "relatedTo": [
-      {"@id": "urn:ngm:class:ai-risk-management", "label": "AI Risk Management"},
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
-      {"@id": "urn:ngm:class:trustworthy-ai", "label": "Trustworthy AI"},
-      {"@id": "urn:ngm:class:ai-governance-maturity-model", "label": "AI Governance Maturity Model"}
+    "hasPart": [
+      {"@id": "urn:ngm:class:ai-rmf-govern-function", "label": "AI RMF Govern Function"},
+      {"@id": "urn:ngm:class:ai-rmf-map-function", "label": "AI RMF Map Function"},
+      {"@id": "urn:ngm:class:ai-rmf-measure-function", "label": "AI RMF Measure Function"},
+      {"@id": "urn:ngm:class:ai-rmf-manage-function", "label": "AI RMF Manage Function"},
+      {"@id": "urn:ngm:class:ai-rmf-playbook", "label": "AI RMF Playbook"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:us-ai-policy", "label": "US AI Policy"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:risk-assessment", "label": "Risk Assessment"},
+      {"@id": "urn:ngm:class:stakeholder-engagement", "label": "Stakeholder Engagement"},
+      {"@id": "urn:ngm:class:organisational-governance", "label": "Organisational Governance"}
     ],
     "enables": [
-      {"@id": "urn:ngm:class:ai-risk", "label": "AI Risk"},
-      {"@id": "urn:ngm:class:risk-assessment", "label": "Risk Assessment"},
-      {"@id": "urn:ngm:class:accountability", "label": "Accountability"}
+      {"@id": "urn:ngm:class:ai-risk-management", "label": "AI Risk Management"},
+      {"@id": "urn:ngm:class:accountability", "label": "Accountability"},
+      {"@id": "urn:ngm:class:trustworthy-ai", "label": "Trustworthy AI"},
+      {"@id": "urn:ngm:class:ai-governance-maturity-model", "label": "AI Governance Maturity Model"}
     ],
     "supports": [
       {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},
       {"@id": "urn:ngm:class:fairness", "label": "Fairness"},
       {"@id": "urn:ngm:class:transparency", "label": "Transparency"},
-      {"@id": "urn:ngm:class:reliability", "label": "Reliability"}
+      {"@id": "urn:ngm:class:reliability", "label": "Reliability"},
+      {"@id": "urn:ngm:class:ai-explainability", "label": "AI Explainability"},
+      {"@id": "urn:ngm:class:privacy", "label": "Privacy"}
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:standards-organization", "label": "Standards Organization"}
+      {"@id": "urn:ngm:class:nist", "label": "NIST"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:eu-ai-act", "label": "EU AI Act"},
+      {"@id": "urn:ngm:class:iso-42001", "label": "ISO 42001"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:ai-risk", "label": "AI Risk"},
+      {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"},
+      {"@id": "urn:ngm:class:machine-learning-operations", "label": "Machine Learning Operations"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
+      {"@id": "urn:ngm:class:cybersecurity-framework", "label": "Cybersecurity Framework"},
+      {"@id": "urn:ngm:class:risk-management", "label": "Risk Management"},
+      {"@id": "urn:ngm:class:algorithmic-impact-assessment", "label": "Algorithmic Impact Assessment"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:ai-risk-management-framework", "label": "AI Risk Management Framework"},
+    {"@id": "urn:ngm:class:nist-ai-600-1", "label": "NIST AI 600-1"}
+  ],
+  "quality": 0.75,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-13T00:00:00Z",
+    "inferenceRule": "ManualEnrichment"
+  }
 }
 ```
 
 - ### Definition
-  - The NIST AI Risk Management Framework is a voluntary US federal guidance framework for managing AI-related risks throughout the AI lifecycle. It organises risk management activity into four functions—Govern, Map, Measure, and Manage—and is designed to be applied flexibly across industries and AI system types.
+  - The **NIST AI Risk Management Framework** (AI RMF) is a voluntary, sector-agnostic guidance document published by the [[National Institute of Standards and Technology]] in January 2023, mandated by the National AI Initiative Act of 2020. It provides a structured, flexible approach to managing risks across the full [[AI Lifecycle]] — from design and development through deployment and decommissioning — through four core functions: Govern, Map, Measure, and Manage. The framework aims to cultivate [[Trustworthy AI]] by embedding principles of [[Accountability]], [[Transparency]], [[Fairness]], and [[AI Safety]] into organisational risk culture, and is extended by a companion Playbook and growing library of sector-specific profiles.
+
+- ### Overview
+  - The AI RMF emerged from a multi-year, multi-stakeholder development process — spanning government agencies, private industry, academia, and civil society — producing a consensus-based resource rather than a top-down mandate.
+  - Its voluntary nature distinguishes it from regulatory instruments such as the [[EU AI Act]], enabling rapid adoption and iteration across a wide range of organisations and AI use cases.
+  - The framework is explicitly technology-neutral: it applies equally to traditional [[Machine Learning]] models, [[Large Language Models]], rule-based expert systems, and hybrid [[AI]] approaches.
+  - NIST positioned the AI RMF as a companion to its widely-adopted [[Cybersecurity Framework]] (CSF), sharing the same risk-based philosophy and tiered implementation approach.
+  - The framework has significant international reach, serving as a reference anchor for aligning US [[AI Governance]] with international counterparts such as [[ISO 42001]] and the [[OECD AI Principles]].
+
+- ### Key Components
+  - #### Four Core Functions
+    - **Govern** — establishes organisational policies, accountability structures, culture, and processes that enable [[AI Risk Management]] across the enterprise. It is the cross-cutting function that underpins the other three.
+    - **Map** — identifies and contextualises AI risks, including categorising the AI system, characterising affected stakeholders, and understanding the sociotechnical context in which the system operates. Feeds directly into [[Algorithmic Impact Assessment]] practice.
+    - **Measure** — analyses and evaluates identified risks using quantitative and qualitative methods, including testing, benchmarking, and ongoing monitoring. Connects to [[AI Explainability]] and [[Model Evaluation]] disciplines.
+    - **Manage** — prioritises and responds to AI risks through mitigation, transfer, acceptance, or avoidance, and establishes feedback loops for continuous improvement aligned with [[Responsible AI]] goals.
+  - #### Trustworthy AI Characteristics
+    - The framework anchors risk management to seven properties that society expects from AI: accountable and transparent; explainable and interpretable; fair with harmful [[Algorithmic Bias]] managed; [[Privacy]]-enhanced; reliable and safe; resilient; and secure. These serve as a shared vocabulary connecting [[AI Ethics]] to operational practice.
+  - #### AI RMF Playbook
+    - The companion Playbook maps each function into Categories and Subcategories, providing suggested actions, informative references, and measurable outcomes. It aligns with the [[NIST Cybersecurity Framework]] structure, easing adoption by organisations already using that standard.
+  - #### Profiles and Roadmap
+    - NIST has extended the core framework with application-specific profiles. The Generative AI Profile (NIST AI 600-1) addresses risks specific to [[Generative AI]] systems — including hallucination, data provenance, and misuse — and represents an important evolution of the framework for large-scale [[Foundation Models]].
+  - #### AI RMF Crosswalk
+    - NIST maintains crosswalks mapping AI RMF subcategories to related standards and frameworks, enabling organisations to integrate the framework with existing compliance postures (e.g., [[ISO 27001]], [[NIST SP 800-53]], and sector-specific regulations).
+
+- ### Applications / Use Cases
+  - **Federal Agency Compliance** — US federal departments and agencies increasingly reference the AI RMF in procurement and internal AI programme oversight, particularly following Executive Orders on AI safety and trustworthiness.
+  - **Enterprise AI Governance Programmes** — large corporations use the four-function structure to build internal AI governance committees, risk registers, and model auditing workflows aligned with [[Organisational Governance]] principles.
+  - **AI Procurement & Vendor Assessment** — procurement teams use the AI RMF as a checklist for evaluating AI vendors and third-party model providers on trustworthiness criteria, aligning with supply-chain [[AI Risk]] management.
+  - **Regulated Sector Adoption** — financial services, healthcare, and critical infrastructure operators adapt the framework alongside sector-specific guidance (e.g., FDA's AI/ML action plan and financial regulator guidance) to address domain-specific risk profiles.
+  - **Research & Academia** — universities and AI research institutes use the AI RMF as a teaching scaffold for [[AI Ethics]], [[Responsible AI]] curricula, and risk-focused [[AI Policy]] research programmes.
+  - **International Harmonisation** — policy bodies in allied nations reference the AI RMF when designing national frameworks, facilitating interoperability with US partners and alignment with [[ISO 42001]] certification pathways.
+  - **MLOps Integration** — [[Machine Learning Operations]] (MLOps) teams incorporate Measure and Manage function practices into model monitoring, drift detection, and retraining pipelines to operationalise risk management.
+
 - ### Relationships
-  - NIST AI RMF is a subtype of [[AI Governance Framework]] and provides structured guidance for [[AI Risk Management]]. It supports [[AI Safety]], [[Fairness]], [[Transparency]], and [[Reliability]] as trustworthy AI properties. The framework enables systematic [[Risk Assessment]] and drives [[Accountability]] mechanisms. It complements [[AI Governance]] frameworks internationally and aligns with the characteristics promoted by [[Trustworthy AI]] initiatives. Organisations using the framework can progress along the [[AI Governance Maturity Model]] scale.
-- ### Content
-  - Published by NIST in January 2023, the AI RMF emerged from a multi-year, multi-stakeholder development process involving government, industry, academia, and civil society. Its development was mandated by the National AI Initiative Act of 2020, and it reflects extensive public input across numerous workshops and comment periods. The result is a consensus-based framework that balances practical applicability with aspirational standards for responsible AI.
+  - hasPart:: [[AI RMF Govern Function]], [[AI RMF Map Function]], [[AI RMF Measure Function]], [[AI RMF Manage Function]], [[AI RMF Playbook]]
+  - partOf:: [[US AI Policy]]
+  - requires:: [[Risk Assessment]], [[Stakeholder Engagement]], [[Organisational Governance]]
+  - enables:: [[AI Risk Management]], [[Accountability]], [[Trustworthy AI]], [[AI Governance Maturity Model]]
+  - supports:: [[AI Safety]], [[Fairness]], [[Transparency]], [[Reliability]], [[AI Explainability]], [[Privacy]]
+  - standardizedBy:: [[NIST]]
+  - contrastsWith:: [[EU AI Act]], [[ISO 42001]]
+  - bridgesTo:: [[AI Risk]], [[Responsible AI]], [[Machine Learning Operations]]
+  - relatedTo:: [[AI Governance]], [[Cybersecurity Framework]], [[Risk Management]], [[Algorithmic Impact Assessment]]
+  - sameAs:: [[AI Risk Management Framework]], [[NIST AI 600-1]]
 
-  - The framework's four core functions structure AI risk management practice. **Govern** establishes organisational policies, accountability structures, and culture for AI risk management. **Map** identifies AI risks, contexts, and impacted stakeholders. **Measure** analyses and evaluates identified risks using quantitative and qualitative methods. **Manage** involves prioritising and addressing identified risks through mitigation, transfer, acceptance, or avoidance. Together these create a continuous risk management cycle rather than a one-time compliance exercise.
+- ### Standards & Context
+  - **Mandating Legislation** — the National AI Initiative Act of 2020 (Section 22A) directed NIST to develop a voluntary risk management framework for AI. The resulting 2023 document (NIST AI 100-1) is the primary artefact.
+  - **Companion Standards** — the AI RMF crosswalks to [[ISO 42001]] (AI Management Systems), [[ISO 31000]] (Risk Management), [[ISO/IEC 27001]] (Information Security), and the [[OECD AI Principles]].
+  - **NIST AI 600-1** — the Generative AI Profile extends the core framework with 12 unique risks specific to [[Large Language Models]] and related [[Foundation Models]], including content provenance, hallucination, and homogenisation risks.
+  - **Executive Order Alignment** — US Executive Order 14110 (October 2023) on Safe, Secure, and Trustworthy AI directed agencies to use the NIST AI RMF as a baseline, elevating it from voluntary guidance to a de facto standard within the federal ecosystem.
+  - **Global Alignment** — the AI RMF informs transatlantic dialogue on [[AI Regulation]], including the US-EU Trade and Technology Council's joint roadmap for trustworthy AI and interoperability discussions with the [[EU AI Act]] conformity framework.
+  - **Sector Profiles Under Development** — NIST is developing additional profiles for critical infrastructure, finance, healthcare, and generative AI extensions, reflecting the framework's living, iterative design philosophy.
 
-  - A companion document, the AI RMF Playbook, provides practical guidance, suggested actions, and references for implementing each function. NIST has also developed sector-specific profiles—starting with generative AI—that tailor the framework to particular AI application contexts. This extensibility makes the AI RMF a living framework that can evolve alongside the rapid development of AI technology.
-
-  - The framework explicitly addresses seven characteristics of trustworthy AI: accountable and transparent; explainable and interpretable; fair with harmful bias managed; privacy-enhanced; reliable and safe; resilient; and secure and resilient. These characteristics serve as a unifying vocabulary connecting risk management practices to the values and properties that organisations and society expect from AI systems.
-
-  - The AI RMF has significant international influence. It is referenced in AI governance discussions worldwide and serves as a reference point for aligning US AI policy with frameworks like the EU AI Act and ISO AI standards. Its voluntary nature distinguishes it from regulatory mandates but enables rapid adoption and iteration, positioning NIST as a key actor in the emerging global AI governance landscape.
+- ### Provenance
+  - sources:: NIST AI 100-1 (January 2023); NIST AI 600-1 (July 2024); National AI Initiative Act of 2020; NIST AI RMF Playbook
+  - updated:: 2026-06-13

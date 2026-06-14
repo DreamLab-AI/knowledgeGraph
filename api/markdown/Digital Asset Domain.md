@@ -99,7 +99,7 @@ public:: true
   "@type": "Class",
   "label": "Digital Asset Domain",
   "definition": "The Digital Asset Domain classifies concepts relating to value representations that are recorded, transferred, and settled on distributed ledgers. It covers tokens, their issuance and lifecycle, and the standards that define their behaviour. As a subject classification under the Blockchain Domain, it scopes the asset abstraction itself rather than the trading venues or regulatory regimes that surround it.",
-  "domain": "digital-asset",
+  "domain": "blockchain",
   "maturity": "emerging",
   "qualityScore": 0.7,
   "subClassOf": [

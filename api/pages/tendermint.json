@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:tendermint",
   "domain": "blockchain",
-  "definition": "Tendermint is a Byzantine fault-tolerant (BFT) consensus engine that implements a partially synchronous, round-based, leader-elected protocol providing deterministic finality on each block. It separates the consensus layer from the application layer via the Application BlockChain Interface (ABCI), allowing any deterministic state machine to be driven by its consensus guarantees. Tendermint is the consensus core of the Cosmos SDK and has influenced several subsequent BFT designs, offering safety guarantees as long as fewer than one-third of validator voting power is Byzantine.",
+  "definition": "Tendermint is a Byzantine fault-tolerant (BFT) consensus engine that implements a partially synchronous, round-based, leader-elected protocol providing deterministic finality on each block. It separates the consensus layer from the application layer via the Application BlockChain Interface (ABCI), allowing any deterministic state machine to be driven by its consensus guarantees. Tendermint is the consensus core of the Cosmos SDK and underpins a large family of interoperable application-specific blockchains, offering safety guarantees so long as fewer than one-third of validator voting power is Byzantine. Its design derives from Practical Byzantine Fault Tolerance (PBFT) but introduces pragmatic modifications \u2014 rotating proposers, weighted voting, and a three-phase commit protocol \u2014 optimised for open, permissionless validator sets.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-protocol-and-consensus",
@@ -13,13 +13,44 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:validator-set",
+        "label": "Validator Set"
+      },
+      {
+        "id": "urn:ngm:class:partial-synchrony",
+        "label": "Partial Synchrony"
+      },
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:cosmos-ibc",
+        "label": "Cosmos IBC"
+      },
+      {
+        "id": "urn:ngm:class:application-specific-blockchain",
+        "label": "Application-Specific Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:cross-chain-communication",
+        "label": "Cross-Chain Communication"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:practical-byzantine-fault-tolerance",
+        "label": "Practical Byzantine Fault Tolerance"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:byzantine-fault-tolerance",
@@ -28,27 +59,74 @@
       {
         "id": "urn:ngm:class:deterministic-finality",
         "label": "Deterministic Finality"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      },
+      {
+        "id": "urn:ngm:class:state-machine-replication",
+        "label": "State Machine Replication"
       }
     ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:proof-of-work",
         "label": "Proof Of Work"
-      }
-    ],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
-      {
-        "id": "urn:ngm:class:cosmos-ibc",
-        "label": "Cosmos IBC"
       },
       {
-        "id": "urn:ngm:class:practical-byzantine-fault-tolerance",
-        "label": "Practical Byzantine Fault Tolerance"
+        "id": "urn:ngm:class:nakamoto-consensus",
+        "label": "Nakamoto Consensus"
+      },
+      {
+        "id": "urn:ngm:class:hotstuff",
+        "label": "HotStuff"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-ai",
+        "label": "Decentralised AI"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:abci",
+        "label": "ABCI"
+      },
+      {
+        "id": "urn:ngm:class:cosmos-sdk",
+        "label": "Cosmos SDK"
+      },
+      {
+        "id": "urn:ngm:class:p2p-gossip-protocol",
+        "label": "P2P Gossip Protocol"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:cosmos-network",
+        "label": "Cosmos Network"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cap-theorem",
+        "label": "CAP Theorem"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract-platform",
+        "label": "Smart Contract Platform"
       }
     ]
   },

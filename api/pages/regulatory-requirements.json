@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:regulatory-requirements",
   "domain": "governance",
-  "definition": "Regulatory requirements are the obligations imposed on entities by laws, regulations and supervisory rules that they must meet to operate lawfully.",
+  "definition": "Regulatory requirements are the legally binding or supervisory obligations imposed on organisations and individuals by governmental bodies, statutory agencies, and international instruments, specifying the conditions under which they may lawfully operate, offer products, or provide services. They derive from primary legislation, secondary instruments, and supervisory rulebooks, and are operationalised through licensing, capital adequacy, conduct-of-business, reporting, record-keeping, and data-protection mandates. Entities must demonstrate adherence through formal compliance programmes, independent audits, and periodic regulatory filings, with failure exposing them to financial penalties, operational restrictions, or revocation of authorisation. Regulatory requirements are increasingly sector-specific and jurisdictionally layered, requiring cross-border harmonisation mechanisms to reconcile conflicting national regimes.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:regulation",
@@ -13,26 +13,130 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.74,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:licensing",
+        "label": "Licensing"
+      },
+      {
+        "id": "urn:ngm:class:capital-requirements",
+        "label": "Capital Requirements"
+      },
+      {
+        "id": "urn:ngm:class:conduct-of-business-rules",
+        "label": "Conduct of Business Rules"
+      },
+      {
+        "id": "urn:ngm:class:data-protection-obligations",
+        "label": "Data Protection Obligations"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:audit",
+        "label": "Audit"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:record-keeping",
+        "label": "Record Keeping"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:compliance",
         "label": "Compliance"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-reporting",
+        "label": "Regulatory Reporting"
+      },
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:legislation",
+        "label": "Legislation"
+      },
+      {
+        "id": "urn:ngm:class:standards",
+        "label": "Standards"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:voluntary-standards",
+        "label": "Voluntary Standards"
+      },
+      {
+        "id": "urn:ngm:class:self-regulation",
+        "label": "Self Regulation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:data-sovereignty",
+        "label": "Data Sovereignty"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-accountability",
+        "label": "Algorithmic Accountability"
+      }
+    ],
     "uses": [],
     "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:international-standards-organisation",
+        "label": "International Standards Organisation"
+      },
+      {
+        "id": "urn:ngm:class:financial-stability-board",
+        "label": "Financial Stability Board"
+      },
+      {
+        "id": "urn:ngm:class:basel-committee",
+        "label": "Basel Committee"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:regulatory-frameworks",
+        "label": "Regulatory Frameworks"
+      },
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:policy",
+        "label": "Policy"
+      },
+      {
+        "id": "urn:ngm:class:enforcement",
+        "label": "Enforcement"
+      },
+      {
+        "id": "urn:ngm:class:supervisory-authority",
+        "label": "Supervisory Authority"
+      }
+    ]
   },
   "wikilinks": [
     {

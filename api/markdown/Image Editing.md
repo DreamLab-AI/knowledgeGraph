@@ -21,7 +21,7 @@ public:: true
   "@type": "Class",
   "label": "Image Editing",
   "definition": "Image editing is the process of altering or enhancing digital images using software tools, encompassing operations such as colour correction, compositing, retouching, masking, and applying filters or effects. Modern image editing spans a spectrum from manual pixel-level manipulation to AI-driven automated transformations that interpret semantic content to intelligently modify or generate imagery.",
-  "domain": "media",
+  "domain": "metaverse",
   "maturity": "mature",
   "subClassOf": [{"@id": "urn:ngm:class:content-creation", "label": "Content Creation"}],
   "relations": {

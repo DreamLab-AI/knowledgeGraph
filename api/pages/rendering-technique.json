@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:rendering-technique",
   "domain": "spatial-computing",
-  "definition": "A specific algorithm or methodology for transforming a geometric scene description into a final pixel image, trading image quality against computational cost. Fundamental categories include rasterization for real-time performance, ray tracing for physically accurate light transport, and path tracing for unbiased global illumination, with hybrid and screen-space variants bridging these extremes.",
+  "definition": "A rendering technique is a specific algorithm or computational methodology for transforming a three-dimensional geometric scene description into a two-dimensional pixel image, inherently balancing image fidelity against computational cost and latency. The fundamental paradigms are rasterization (projecting geometry to screen space via edge-walking and interpolation), ray tracing (physically simulating light transport by casting rays from the virtual camera), and path tracing (extending ray tracing with Monte Carlo sampling for unbiased global illumination). Modern systems layer shading models (forward, deferred, clustered), global illumination approximations, and screen-space post-processing into hybrid pipelines that target real-time or offline quality budgets across hardware ranging from mobile GPUs to dedicated ray-tracing silicon.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-display-and-rendering",
@@ -13,8 +13,8 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "emerging",
+  "qualityScore": 0.72,
+  "maturity": "mature",
   "relationships": {
     "hasPart": [
       {
@@ -26,34 +26,127 @@
         "label": "Ray Tracing"
       },
       {
+        "id": "urn:ngm:class:path-tracing",
+        "label": "Path Tracing"
+      },
+      {
         "id": "urn:ngm:class:post-processing",
         "label": "Post Processing"
+      },
+      {
+        "id": "urn:ngm:class:global-illumination",
+        "label": "Global Illumination"
       }
     ],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [
+    "requires": [
       {
         "id": "urn:ngm:class:shader",
         "label": "Shader"
+      },
+      {
+        "id": "urn:ngm:class:graphics-processing-unit",
+        "label": "Graphics Processing Unit"
+      },
+      {
+        "id": "urn:ngm:class:scene-graph",
+        "label": "Scene Graph"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:visual-effects",
+        "label": "Visual Effects"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "id": "urn:ngm:class:real-time-3d-graphics",
+        "label": "Real-Time 3D Graphics"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:graphics-api",
+        "label": "Graphics API"
+      },
+      {
+        "id": "urn:ngm:class:level-of-detail",
+        "label": "Level of Detail"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:rasterization",
+        "label": "Rasterization"
+      },
+      {
+        "id": "urn:ngm:class:ray-tracing",
+        "label": "Ray Tracing"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:neural-rendering",
+        "label": "Neural Rendering"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:physically-based-rendering",
+        "label": "Physically Based Rendering"
+      },
+      {
+        "id": "urn:ngm:class:texture-mapping",
+        "label": "Texture Mapping"
+      },
+      {
+        "id": "urn:ngm:class:antialiasing",
+        "label": "Antialiasing"
       }
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:visual-effects",
-        "label": "Visual Effects"
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
       }
     ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:level-of-detail",
-        "label": "Level of Detail"
+        "id": "urn:ngm:class:deferred-rendering",
+        "label": "Deferred Rendering"
+      },
+      {
+        "id": "urn:ngm:class:ambient-occlusion",
+        "label": "Ambient Occlusion"
+      },
+      {
+        "id": "urn:ngm:class:screen-space-reflections",
+        "label": "Screen-Space Reflections"
+      },
+      {
+        "id": "urn:ngm:class:temporal-antialiasing",
+        "label": "Temporal Antialiasing"
       }
     ]
   },

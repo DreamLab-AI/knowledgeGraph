@@ -4,7 +4,7 @@
   "slug": "aisafety-domain",
   "public": true,
   "classIri": "urn:ngm:class:aisafety-domain",
-  "domain": "ai-safety",
+  "domain": "ai",
   "definition": "AISafetyDomain is an ontology grouping for concepts concerned with making artificial intelligence systems safe, aligned and free from unacceptable harm. It organises topics such as alignment, risk and governance.",
   "subClassOf": [
     {

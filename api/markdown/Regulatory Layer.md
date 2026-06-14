@@ -59,7 +59,7 @@ public:: true
   "@type": "Class",
   "label": "Regulatory Layer",
   "definition": "The Regulatory Layer is the cross-cutting stratum that represents jurisdiction-specific legal requirements and the authorities that impose them. It sits above the Compliance Layer, supplying the obligations that compliance verifies, and informs governance and institutional structures. It contains regulations, licensing regimes, reporting duties, and the mapping of activities to applicable rules.",
-  "domain": "regulatory",
+  "domain": "governance",
   "maturity": "emerging",
   "qualityScore": 0.7,
   "subClassOf": [

@@ -4,35 +4,126 @@
   "slug": "king-s-college-london",
   "public": true,
   "classIri": "urn:ngm:class:king-s-college-london",
-  "domain": "general",
-  "definition": "A research university in London and constituent of the University of London, with strengths in health, security studies, and digital research.",
+  "domain": "artificial-intelligence",
+  "definition": "King's College London (KCL) is a public research university in central London, founded in 1829 by King George IV and the Duke of Wellington, and one of the oldest and largest constituent colleges of the University of London. KCL is a Russell Group institution with world-leading research programmes spanning medicine, health sciences, law, humanities, natural sciences, and security studies. It is a major contributor to UK artificial intelligence and digital health research, hosting institutes including the King's Institute for Artificial Intelligence and maintaining close collaboration with NHS Foundation Trusts. KCL is a founding partner of the Alan Turing Institute and a participant in numerous UKRI and Wellcome Trust-funded data science and machine learning initiatives.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:entity",
-      "label": "Entity"
+      "id": "urn:ngm:class:research-university",
+      "label": "Research University"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:king-s-institute-for-artificial-intelligence",
+        "label": "King's Institute for Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:department-of-informatics",
+        "label": "Department of Informatics"
+      }
+    ],
     "requires": [],
     "enables": [
       {
         "id": "urn:ngm:class:artificial-intelligence",
         "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:digital-health",
+        "label": "Digital Health"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:biomedical-informatics",
+        "label": "Biomedical Informatics"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:open-science",
+        "label": "Open Science"
+      },
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:research-excellence-framework",
+        "label": "Research Excellence Framework"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:university-of-london",
+        "label": "University of London"
+      },
+      {
+        "id": "urn:ngm:class:russell-group",
+        "label": "Russell Group"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:alan-turing-institute",
+        "label": "Alan Turing Institute"
+      },
+      {
+        "id": "urn:ngm:class:university-college-london",
+        "label": "University College London"
+      },
+      {
+        "id": "urn:ngm:class:imperial-college-london",
+        "label": "Imperial College London"
+      },
+      {
+        "id": "urn:ngm:class:nhs",
+        "label": "NHS"
+      },
+      {
+        "id": "urn:ngm:class:ukri",
+        "label": "UKRI"
+      }
+    ]
   },
   "wikilinks": [
     {

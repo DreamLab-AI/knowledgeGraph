@@ -5,39 +5,103 @@
   "public": true,
   "classIri": "urn:ngm:class:system-prompt",
   "domain": "artificial-intelligence",
-  "definition": "A system prompt is a structured instruction block injected into the context window of a large language model at the start of an inference session to establish operational context, persona, tool descriptions, safety constraints, and behavioural guidelines before any user turn is processed. Unlike user messages, system prompts are typically authored by operators rather than end users and govern the model's allowed behaviours, response style, and tool-use policy throughout the session. In multi-agent and agentic AI systems, system prompts serve as the primary mechanism for role specialisation, safety guardrail enforcement, and task decomposition.",
+  "definition": "A system prompt is a structured instruction block injected into the context window of a large language model at the start of an inference session, establishing operational context, persona, tool descriptions, safety constraints, and behavioural guidelines before any user turn is processed. Unlike user messages, system prompts are authored by operators rather than end users and govern the model's allowed behaviours, response style, and tool-use policy throughout the session. In agentic and multi-agent architectures, system prompts serve as the primary mechanism for role specialisation, capability scoping, safety guardrail enforcement, and task decomposition. The security boundary between the system prompt and user-controlled input is a central concern in prompt injection defence.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique"
+      "id": "urn:ngm:class:prompt-engineering",
+      "label": "Prompt Engineering"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
         "id": "urn:ngm:class:large-language-models",
         "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:context-window",
+        "label": "Context Window"
+      },
+      {
+        "id": "urn:ngm:class:inference",
+        "label": "Inference"
       }
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:prompt-engineering",
-        "label": "Prompt Engineering"
+        "id": "urn:ngm:class:role-specialisation",
+        "label": "Role Specialisation"
       },
       {
         "id": "urn:ngm:class:reasoning",
         "label": "Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:tool-use",
+        "label": "Tool Use"
+      },
+      {
+        "id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      },
+      {
+        "id": "urn:ngm:class:function-calling",
+        "label": "Function Calling"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:tokenisation",
+        "label": "Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:user-message",
+        "label": "User Message"
+      },
+      {
+        "id": "urn:ngm:class:fine-tuning",
+        "label": "Fine-Tuning"
+      },
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "id": "urn:ngm:class:software-architecture",
+        "label": "Software Architecture"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:instruction-tuning",
+        "label": "Instruction Tuning"
+      },
+      {
+        "id": "urn:ngm:class:few-shot-learning",
+        "label": "Few-Shot Learning"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
@@ -53,6 +117,18 @@
       {
         "id": "urn:ngm:class:self-consistency",
         "label": "Self-Consistency"
+      },
+      {
+        "id": "urn:ngm:class:model-context-protocol",
+        "label": "Model Context Protocol"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:constitutional-ai",
+        "label": "Constitutional AI"
       }
     ]
   },

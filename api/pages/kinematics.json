@@ -5,16 +5,16 @@
   "public": true,
   "classIri": "urn:ngm:class:kinematics",
   "domain": "robotics",
-  "definition": "Kinematics in robotics describes the geometry of motion of a robot's links and joints without reference to the forces producing that motion. Forward kinematics maps joint parameters to end-effector pose; inverse kinematics solves the reverse problem. Kinematic analysis is foundational for motion planning, trajectory generation, workspace analysis, and robot programming, forming the mathematical basis on which dynamic and control models build.",
+  "definition": "Kinematics is the branch of mechanics that studies the geometry and mathematics of motion \u2014 positions, velocities, accelerations, and trajectories of bodies \u2014 without consideration of the forces or torques that cause that motion. In robotics and spatial computing, it encompasses forward kinematics (mapping joint-space parameters to Cartesian end-effector pose via homogeneous transformation matrices and Denavit-Hartenberg conventions) and inverse kinematics (solving the reverse mapping from desired pose to joint configurations). Kinematic analysis underpins motion planning, trajectory generation, workspace characterisation, collision avoidance, and animation systems across robotics, biomechanics, computer graphics, and autonomous vehicles.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:robo-actuation-and-control",
-      "label": "Actuation and Control"
+      "id": "urn:ngm:class:mechanics",
+      "label": "Mechanics"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "mature",
   "relationships": {
     "hasPart": [
       {
@@ -24,28 +24,88 @@
       {
         "id": "urn:ngm:class:inverse-kinematics",
         "label": "Inverse Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:differential-kinematics",
+        "label": "Differential Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:jacobian-matrix",
+        "label": "Jacobian Matrix"
       }
     ],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:homogeneous-transformation",
+        "label": "Homogeneous Transformation"
+      },
+      {
+        "id": "urn:ngm:class:denavit-hartenberg-parameters",
+        "label": "Denavit-Hartenberg Parameters"
+      },
+      {
+        "id": "urn:ngm:class:coordinate-frame",
+        "label": "Coordinate Frame"
+      }
+    ],
     "enables": [
+      {
+        "id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
       {
         "id": "urn:ngm:class:robot-dynamics",
         "label": "Robot Dynamics"
       },
       {
-        "id": "urn:ngm:class:motion-planning",
-        "label": "Motion Planning"
+        "id": "urn:ngm:class:trajectory-generation",
+        "label": "Trajectory Generation"
+      },
+      {
+        "id": "urn:ngm:class:workspace-analysis",
+        "label": "Workspace Analysis"
+      },
+      {
+        "id": "urn:ngm:class:collision-avoidance",
+        "label": "Collision Avoidance"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      },
+      {
+        "id": "urn:ngm:class:rigid-body-mechanics",
+        "label": "Rigid Body Mechanics"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:dynamics",
+        "label": "Dynamics"
+      },
+      {
+        "id": "urn:ngm:class:statics",
+        "label": "Statics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:computer-animation",
+        "label": "Computer Animation"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "uses": [
       {
         "id": "urn:ngm:class:robot-joint",
         "label": "Robot Joint"
@@ -53,6 +113,27 @@
       {
         "id": "urn:ngm:class:manipulator",
         "label": "Manipulator"
+      },
+      {
+        "id": "urn:ngm:class:end-effector",
+        "label": "End Effector"
+      },
+      {
+        "id": "urn:ngm:class:kinematic-chain",
+        "label": "Kinematic Chain"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:biomechanics",
+        "label": "Biomechanics"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-vehicles",
+        "label": "Autonomous Vehicles"
       }
     ]
   },

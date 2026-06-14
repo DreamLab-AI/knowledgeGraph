@@ -4,40 +4,125 @@
   "slug": "saml-2-0",
   "public": true,
   "classIri": "urn:ngm:class:saml-2-0",
-  "domain": "artificial-intelligence",
-  "definition": "Version 2.0 of the Security Assertion Markup Language, an OASIS standard for exchanging authentication and authorisation assertions between identity providers and service providers.",
+  "domain": "security",
+  "definition": "Security Assertion Markup Language 2.0 (SAML 2.0) is an OASIS open standard ratified in 2005 that defines an XML-based framework for exchanging authentication and authorisation data between an Identity Provider and a Service Provider. It enables web-based federated single sign-on by allowing an IdP to issue digitally signed XML assertions attesting a user's identity and attributes, which the SP accepts without requiring the user to re-authenticate. SAML 2.0 consolidates and supersedes SAML 1.0 and 1.1, Liberty Alliance ID-FF 1.2, and Shibboleth 1.3, incorporating bindings for HTTP Redirect, POST, Artifact, and SOAP transports. The standard is governed by OASIS and remains the dominant federation protocol in enterprise, higher-education, and government identity ecosystems.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:authentication",
-      "label": "Authentication"
+      "id": "urn:ngm:class:federated-identity",
+      "label": "Federated Identity"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.75,
   "maturity": "mature",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:authentication",
-        "label": "Authentication"
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:xml-digital-signature",
+        "label": "XML Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:xml-encryption",
+        "label": "XML Encryption"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:single-sign-on",
         "label": "Single Sign-On"
+      },
+      {
+        "id": "urn:ngm:class:federated-identity",
+        "label": "Federated Identity"
+      },
+      {
+        "id": "urn:ngm:class:cross-domain-authentication",
+        "label": "Cross-Domain Authentication"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:oauth-2-0",
+        "label": "OAuth 2.0"
+      },
+      {
+        "id": "urn:ngm:class:openid-connect",
+        "label": "OpenID Connect"
+      },
+      {
+        "id": "urn:ngm:class:ws-federation",
+        "label": "WS-Federation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:xml",
+        "label": "XML"
+      },
+      {
+        "id": "urn:ngm:class:http",
+        "label": "HTTP"
+      },
+      {
+        "id": "urn:ngm:class:soap",
+        "label": "SOAP"
+      },
+      {
+        "id": "urn:ngm:class:tls",
+        "label": "TLS"
+      }
+    ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:oasis",
+        "label": "OASIS"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:identity-provider",
+        "label": "Identity Provider"
+      },
+      {
+        "id": "urn:ngm:class:service-provider",
+        "label": "Service Provider"
+      },
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      },
+      {
+        "id": "urn:ngm:class:attribute-based-access-control",
+        "label": "Attribute-Based Access Control"
+      },
+      {
+        "id": "urn:ngm:class:directory-services",
+        "label": "Directory Services"
+      }
+    ]
   },
   "wikilinks": [
     {

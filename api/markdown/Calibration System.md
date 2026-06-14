@@ -21,7 +21,7 @@ public:: true
   "@type": "Class",
   "label": "Calibration System",
   "definition": "A Calibration System is an integrated assembly of hardware targets, measurement instruments, algorithms, and software workflows used to determine and correct systematic errors in sensors, cameras, and measurement devices, establishing a known and traceable relationship between a sensor's raw outputs and the physical quantities they represent. Calibration systems are essential preconditions for accurate spatial measurement, computer vision, robotics, and extended reality applications.",
-  "domain": "spatial",
+  "domain": "spatial-computing",
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:calibration-equipment", "label": "Calibration Equipment"}],
   "relations": {

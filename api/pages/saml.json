@@ -4,40 +4,143 @@
   "slug": "saml",
   "public": true,
   "classIri": "urn:ngm:class:saml",
-  "domain": "artificial-intelligence",
-  "definition": "Security Assertion Markup Language: an XML-based open standard for exchanging authentication and authorisation data between an identity provider and a service provider.",
+  "domain": "security",
+  "definition": "Security Assertion Markup Language (SAML) is an XML-based open standard developed by OASIS that defines formats and protocols for exchanging authentication and authorisation data between an identity provider (IdP) and a service provider (SP). SAML 2.0, published in 2005, is the dominant version in enterprise deployments and enables web-based single sign-on by allowing the IdP to issue digitally signed XML assertions that service providers trust without requiring the user to re-authenticate. It decouples the identity layer from application services, enabling cross-domain federated identity across organisational and cloud boundaries.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:authentication",
-      "label": "Authentication"
+      "id": "urn:ngm:class:federated-identity",
+      "label": "Federated Identity"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.76,
   "maturity": "mature",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:saml-assertion",
+        "label": "SAML Assertion"
+      },
+      {
+        "id": "urn:ngm:class:saml-protocol",
+        "label": "SAML Protocol"
+      },
+      {
+        "id": "urn:ngm:class:saml-binding",
+        "label": "SAML Binding"
+      },
+      {
+        "id": "urn:ngm:class:saml-metadata",
+        "label": "SAML Metadata"
+      }
+    ],
     "requires": [
       {
-        "id": "urn:ngm:class:authentication",
-        "label": "Authentication"
+        "id": "urn:ngm:class:xml",
+        "label": "XML"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:identity-provider",
+        "label": "Identity Provider"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:single-sign-on",
         "label": "Single Sign-On"
+      },
+      {
+        "id": "urn:ngm:class:federated-identity",
+        "label": "Federated Identity"
+      },
+      {
+        "id": "urn:ngm:class:cross-domain-authentication",
+        "label": "Cross-Domain Authentication"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "id": "urn:ngm:class:authorisation",
+        "label": "Authorisation"
+      },
+      {
+        "id": "urn:ngm:class:identity-federation",
+        "label": "Identity Federation"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:oauth2",
+        "label": "OAuth 2.0"
+      },
+      {
+        "id": "urn:ngm:class:openid-connect",
+        "label": "OpenID Connect"
+      },
+      {
+        "id": "urn:ngm:class:kerberos",
+        "label": "Kerberos"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:cloud-identity",
+        "label": "Cloud Identity"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:xml-signature",
+        "label": "XML Signature"
+      },
+      {
+        "id": "urn:ngm:class:xml-encryption",
+        "label": "XML Encryption"
+      },
+      {
+        "id": "urn:ngm:class:http-redirect-binding",
+        "label": "HTTP Redirect Binding"
+      },
+      {
+        "id": "urn:ngm:class:http-post-binding",
+        "label": "HTTP POST Binding"
+      }
+    ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:oasis",
+        "label": "OASIS"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:access-management",
+        "label": "Access Management"
+      },
+      {
+        "id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      },
+      {
+        "id": "urn:ngm:class:zero-trust",
+        "label": "Zero Trust"
+      }
+    ]
   },
   "wikilinks": [
     {

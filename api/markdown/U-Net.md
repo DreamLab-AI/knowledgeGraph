@@ -59,7 +59,7 @@ public:: true
   "@type": "Class",
   "label": "U-Net",
   "definition": "A convolutional neural network architecture with a symmetric encoder-decoder structure and skip connections, originally designed for biomedical image segmentation.",
-  "domain": "computer-vision",
+  "domain": "ai",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

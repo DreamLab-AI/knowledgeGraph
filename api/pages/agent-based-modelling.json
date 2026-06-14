@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:agent-based-modelling",
   "domain": "artificial-intelligence",
-  "definition": "Agent-based modelling is a simulation method in which many autonomous agents follow local rules and their interactions produce system-level behaviour. It is used to study emergent phenomena that are hard to capture with aggregate equations.",
+  "definition": "Agent-based modelling (ABM) is a computational simulation methodology in which a system is represented as a collection of autonomous, heterogeneous agents that each follow local behavioural rules and interact with one another and with their environment. The global dynamics of interest \u2014 such as market prices, epidemic spread, or traffic congestion \u2014 emerge from these micro-level interactions rather than being specified analytically. ABM bridges individual behaviour and system-level phenomena, making it particularly powerful for studying complex adaptive systems where aggregate equations cannot capture heterogeneity or non-linear feedback loops. The approach is distinct from equation-based modelling in that agents are discrete, can differ individually, and can adapt their strategies through reinforcement or learning mechanisms.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:simulation",
@@ -13,31 +13,136 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      },
+      {
+        "id": "urn:ngm:class:environment-model",
+        "label": "Environment Model"
+      },
+      {
+        "id": "urn:ngm:class:emergence",
+        "label": "Emergence"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:simulation",
         "label": "Simulation"
+      },
+      {
+        "id": "urn:ngm:class:discrete-event-simulation",
+        "label": "Discrete Event Simulation"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:innovation-diffusion",
         "label": "Innovation Diffusion"
+      },
+      {
+        "id": "urn:ngm:class:epidemiological-modelling",
+        "label": "Epidemiological Modelling"
+      },
+      {
+        "id": "urn:ngm:class:crowd-simulation",
+        "label": "Crowd Simulation"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-optimisation",
+        "label": "Supply Chain Optimisation"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:computational-modelling",
+        "label": "Computational Modelling"
+      },
+      {
+        "id": "urn:ngm:class:stochastic-process",
+        "label": "Stochastic Process"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:complex-adaptive-systems",
+        "label": "Complex Adaptive Systems"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:equation-based-modelling",
+        "label": "Equation-Based Modelling"
+      },
+      {
+        "id": "urn:ngm:class:system-dynamics",
+        "label": "System Dynamics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:multi-agent-systems",
+        "label": "Multi-Agent Systems"
+      },
+      {
+        "id": "urn:ngm:class:swarm-intelligence",
+        "label": "Swarm Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:cellular-automata",
+        "label": "Cellular Automata"
+      },
+      {
+        "id": "urn:ngm:class:monte-carlo-simulation",
+        "label": "Monte Carlo Simulation"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:economic-model",
+        "label": "Economic Model"
+      },
+      {
+        "id": "urn:ngm:class:policy-simulation",
+        "label": "Policy Simulation"
+      }
+    ],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:complex-systems-science",
+        "label": "Complex Systems Science"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      },
+      {
+        "id": "urn:ngm:class:network-science",
+        "label": "Network Science"
+      },
+      {
+        "id": "urn:ngm:class:social-simulation",
+        "label": "Social Simulation"
+      }
+    ]
   },
   "wikilinks": [
     {

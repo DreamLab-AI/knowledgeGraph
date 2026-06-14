@@ -4,20 +4,42 @@
   "slug": "automatic-speech-recognition",
   "public": true,
   "classIri": "urn:ngm:class:automatic-speech-recognition",
-  "domain": "distributed-collaboration",
-  "definition": "Automatic Speech Recognition (ASR) is the technology that transcribes spoken language into text by jointly modelling the acoustic signal \u2014 frame-level spectral features derived from the raw audio waveform \u2014 and linguistic context, using neural sequence-to-sequence models trained on large corpora of paired audio and transcripts. Modern ASR systems based on transformer and conformer architectures achieve near-human word error rates on clean speech, and have expanded to multilingual and low-resource settings through large-scale self-supervised pre-training on unlabelled audio. ASR is a foundational component of voice assistants, transcription services, accessibility tools, and spoken language understanding pipelines.",
+  "domain": "ai",
+  "definition": "Automatic Speech Recognition (ASR) is the technology that converts spoken language into written text by jointly modelling acoustic signals \u2014 frame-level spectral features derived from raw audio waveforms \u2014 and linguistic context, using neural sequence-to-sequence architectures trained on large corpora of paired audio and transcripts. Modern ASR systems built on transformer and conformer encoder-decoder designs achieve near-human word error rates on clean speech benchmarks and have been extended to multilingual and low-resource settings through large-scale self-supervised pre-training on unlabelled audio. ASR serves as a foundational component for voice assistants, real-time transcription services, accessibility tooling, and spoken language understanding pipelines, and underpins multimodal AI systems that must bridge the speech and text modalities.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:dc-communication",
-      "label": "DC Communication"
+      "id": "urn:ngm:class:speech-processing",
+      "label": "Speech Processing"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:acoustic-model",
+        "label": "Acoustic Model"
+      },
+      {
+        "id": "urn:ngm:class:language-model",
+        "label": "Language Model"
+      },
+      {
+        "id": "urn:ngm:class:feature-extraction",
+        "label": "Feature Extraction"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:audio-signal-processing",
+        "label": "Audio Signal Processing"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:natural-language-processing",
@@ -26,29 +48,96 @@
       {
         "id": "urn:ngm:class:voice-interaction",
         "label": "Voice Interaction"
+      },
+      {
+        "id": "urn:ngm:class:spoken-language-understanding",
+        "label": "Spoken Language Understanding"
+      },
+      {
+        "id": "urn:ngm:class:real-time-captioning",
+        "label": "Real-Time Captioning"
+      },
+      {
+        "id": "urn:ngm:class:machine-translation",
+        "label": "Machine Translation"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [
+    "contrastsWith": [
       {
-        "id": "urn:ngm:class:language-modeling",
-        "label": "Language Modeling"
+        "id": "urn:ngm:class:text-to-speech",
+        "label": "Text-to-Speech"
       },
+      {
+        "id": "urn:ngm:class:keyword-spotting",
+        "label": "Keyword Spotting"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
+      }
+    ],
+    "uses": [
       {
         "id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "id": "urn:ngm:class:connectionist-temporal-classification",
+        "label": "Connectionist Temporal Classification"
+      },
+      {
+        "id": "urn:ngm:class:self-supervised-learning",
+        "label": "Self-Supervised Learning"
+      },
+      {
+        "id": "urn:ngm:class:recurrent-neural-network",
+        "label": "Recurrent Neural Network"
       }
     ],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-ai",
+        "label": "Multimodal AI"
+      },
+      {
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human-Computer Interaction"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
       {
         "id": "urn:ngm:class:speaker-diarisation",
         "label": "Speaker Diarisation"
+      },
+      {
+        "id": "urn:ngm:class:speaker-recognition",
+        "label": "Speaker Recognition"
+      },
+      {
+        "id": "urn:ngm:class:language-modeling",
+        "label": "Language Modeling"
+      },
+      {
+        "id": "urn:ngm:class:word-error-rate",
+        "label": "Word Error Rate"
       }
     ]
   },

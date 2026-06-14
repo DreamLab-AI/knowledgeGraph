@@ -4,7 +4,7 @@
   "slug": "bandwidth",
   "public": true,
   "classIri": "urn:ngm:class:bandwidth",
-  "domain": "networking",
+  "domain": "infrastructure",
   "definition": "The maximum rate at which data can be transferred over a network path or communication channel, commonly measured in bits per second. In signal processing it also refers to the range of frequencies a channel can carry.",
   "subClassOf": [
     {

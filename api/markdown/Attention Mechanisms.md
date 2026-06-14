@@ -59,7 +59,7 @@ public:: true
   "@type": "Class",
   "label": "Attention Mechanisms",
   "definition": "Attention mechanisms let a neural network weight different parts of its input when computing a representation, focusing on the most relevant elements. They are the core component of transformer architectures.",
-  "domain": "deep-learning",
+  "domain": "machine-learning",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

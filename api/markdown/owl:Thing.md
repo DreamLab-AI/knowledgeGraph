@@ -34,7 +34,7 @@ public:: true
   "@type": "Class",
   "label": "owl:Thing",
   "definition": "owl:Thing is the universal superclass of the OWL 2 ontology: the class whose extension is the set of all individuals. Every named class in this knowledge graph is, directly or transitively, a subclass of owl:Thing, which therefore serves as the single root of the subclass hierarchy and the anchor for the two orthogonal classification axes used throughout the graph, the subject Domain axis and the architectural Layer axis.",
-  "domain": "ontology",
+  "domain": "standards",
   "maturity": "established",
   "qualityScore": 0.7,
   "quality": 0.6,

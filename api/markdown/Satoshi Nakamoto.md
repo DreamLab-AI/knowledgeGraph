@@ -63,7 +63,7 @@ public:: true
   "@type": "Class",
   "label": "Satoshi Nakamoto",
   "definition": "Satoshi Nakamoto is the pseudonym used by the unidentified person or group who designed Bitcoin, authored its 2008 white paper and released the first reference implementation in 2009. Nakamoto introduced a practical solution to double-spending in a peer-to-peer electronic cash system through proof-of-work and a public, append-only ledger. The true identity behind the name remains unknown, and Nakamoto withdrew from public involvement in the project around 2010 to 2011.",
-  "domain": "satoshi-nakamoto",
+  "domain": "blockchain",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

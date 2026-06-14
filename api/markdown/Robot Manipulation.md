@@ -20,43 +20,177 @@ public:: true
   "@id": "urn:ngm:class:robot-manipulation",
   "@type": "Class",
   "label": "Robot Manipulation",
-  "definition": "Robot manipulation is the sub-field of robotics concerned with the planning and execution of purposeful physical interactions between robotic systems and objects in the world, encompassing grasping, assembly, in-hand manipulation, and tool use. It integrates kinematics, dynamics, perception, and planning to move objects from one configuration to another, adapting to uncertainty in object shape, pose, surface properties, and environmental dynamics. Robust manipulation remains one of the hardest open problems in robotics due to the combinatorial complexity of contact mechanics.",
+  "definition": "Robot manipulation is the sub-field of robotics concerned with the planning and execution of purposeful physical interactions between robotic systems and objects in the world, encompassing grasping, assembly, in-hand manipulation, and tool use. It integrates kinematics, dynamics, perception, and motion planning to move objects from one configuration to another while adapting to uncertainty in object shape, pose, surface properties, and environmental dynamics. Robust manipulation requires coordinating end-effectors, force-torque sensing, and real-time control loops to achieve reliable contact-rich behaviour. The field bridges classical planning and modern machine learning, increasingly leveraging deep visuomotor policies and foundation models trained on large-scale demonstration data.",
   "domain": "robotics",
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:manipulation", "label": "Manipulation"}],
   "relations": {
-    "relatedTo": [
-      {"@id": "urn:ngm:class:object-manipulation", "label": "Object Manipulation"},
-      {"@id": "urn:ngm:class:industrial-manipulation", "label": "Industrial Manipulation"},
-      {"@id": "urn:ngm:class:teleoperation", "label": "Teleoperation"},
-      {"@id": "urn:ngm:class:end-effector", "label": "End Effector"}
+    "hasPart": [
+      {"@id": "urn:ngm:class:grasp-planning", "label": "Grasp Planning"},
+      {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"},
+      {"@id": "urn:ngm:class:end-effector", "label": "End Effector"},
+      {"@id": "urn:ngm:class:in-hand-manipulation", "label": "In-Hand Manipulation"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:inverse-kinematics", "label": "Inverse Kinematics"},
       {"@id": "urn:ngm:class:force-control", "label": "Force Control"},
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"}
+      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
+      {"@id": "urn:ngm:class:point-cloud-processing", "label": "Point Cloud Processing"},
+      {"@id": "urn:ngm:class:impedance-control", "label": "Impedance Control"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:robot-perception", "label": "Robot Perception"},
+      {"@id": "urn:ngm:class:robot-kinematics", "label": "Robot Kinematics"},
+      {"@id": "urn:ngm:class:contact-mechanics", "label": "Contact Mechanics"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human Robot Interaction"},
-      {"@id": "urn:ngm:class:robot-learning", "label": "Robot Learning"}
+      {"@id": "urn:ngm:class:robot-learning", "label": "Robot Learning"},
+      {"@id": "urn:ngm:class:surgical-robotics", "label": "Surgical Robotics"},
+      {"@id": "urn:ngm:class:warehouse-automation", "label": "Warehouse Automation"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:object-manipulation", "label": "Object Manipulation"},
+      {"@id": "urn:ngm:class:industrial-manipulation", "label": "Industrial Manipulation"},
+      {"@id": "urn:ngm:class:teleoperation", "label": "Teleoperation"},
+      {"@id": "urn:ngm:class:bimanual-manipulation", "label": "Bimanual Manipulation"},
+      {"@id": "urn:ngm:class:sim-to-real-transfer", "label": "Sim-to-Real Transfer"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:robotic-arm", "label": "Robotic Arm"},
+      {"@id": "urn:ngm:class:depth-sensing", "label": "Depth Sensing"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:imitation-learning", "label": "Imitation Learning"},
+      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:robot-locomotion", "label": "Robot Locomotion"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:robotic-manipulation", "label": "Robotic Manipulation"}
+  ],
+  "quality": 0.74,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-13T00:00:00Z",
+    "inferenceRule": "ManualEnrichment"
+  }
 }
 ```
 
 - ### Definition
-  - [[Robot Manipulation]] is the robotics discipline concerned with planning and executing purposeful physical contact between robot systems and objects, integrating [[Inverse Kinematics]], [[Force Control]], and [[Sensor Fusion]] to achieve reliable grasping, assembly, and tool use across variable environments.
+  - [[Robot Manipulation]] is the robotics discipline concerned with planning and executing purposeful physical contact between robotic systems and objects in the environment. It integrates [[Inverse Kinematics]], [[Force Control]], [[Grasp Planning]], and [[Sensor Fusion]] to achieve reliable grasping, assembly, in-hand dexterity, and tool use across variable real-world conditions. The field spans classical [[Motion Planning]] approaches and modern [[Robot Learning]] methods, culminating in visuomotor policies that generalise across object categories and task contexts.
+
+- ### Overview
+  - Robot manipulation addresses the fundamental problem of how a robotic agent physically interacts with its environment to rearrange, assemble, or transform objects. Unlike [[Robot Locomotion]], which moves the robot body through space, manipulation focuses on controlled contact between an [[End Effector]] (gripper, robotic hand, or specialised tool) and target objects.
+  - The challenge is multifaceted: a robot must perceive object pose and geometry via [[Robot Perception]], compute a stable [[Grasp Planning]] strategy, plan a collision-free trajectory using [[Motion Planning]], and execute contact while managing forces through [[Force Control]] or [[Impedance Control]]. Any mismatch in estimated versus actual object pose, friction coefficient, or stiffness can cause grasp failure.
+  - Manipulation is widely regarded as one of the hardest open problems in robotics due to the combinatorial complexity of [[Contact Mechanics]], the diversity of object shapes and materials, and the need for real-time replanning under sensing noise. Advances in [[Deep Learning]] and large-scale demonstration datasets have substantially improved generalisation since 2020.
+
+- ### Key Components
+  - #### End Effectors
+    - [[End Effector]] is the terminal device mounted to the robot wrist; types include parallel-jaw grippers, multi-finger dexterous hands, suction cups, magnetic grippers, and compliant soft grippers.
+    - Gripper selection is application-dependent: suction is suited to flat-surfaced objects in bin-picking; dexterous hands enable [[In-Hand Manipulation]] and tool use.
+    - [[Robotic Arm]] kinematics determine the workspace reachable by the end effector.
+  - #### Kinematics and Dynamics
+    - [[Robot Kinematics]] maps joint angles to end-effector pose via forward kinematics; [[Inverse Kinematics]] inverts this mapping to compute joint commands from a desired Cartesian target.
+    - Dynamics models account for inertia, gravity, and interaction forces, enabling model-based control strategies.
+  - #### Grasp Planning and Synthesis
+    - [[Grasp Planning]] algorithms compute contact point configurations that are force-closure (stable against external wrenches) or form-closure (geometrically locked).
+    - Analytical methods (e.g., Ferrari-Canny quality metric) evaluate grasp quality from object geometry; data-driven methods (Dex-Net, GraspNet) learn grasp quality from large synthetic or real datasets.
+    - [[Point Cloud Processing]] from [[Depth Sensing]] (RGB-D or LiDAR) provides 3D object models for grasp synthesis.
+  - #### Motion Planning
+    - [[Motion Planning]] generates collision-free joint trajectories from a start configuration to a grasp pre-contact or post-grasp pose.
+    - Sampling-based planners (RRT, RRT*, PRM) explore the configuration space; optimisation-based planners (CHOMP, TrajOpt) minimise cost functionals over smooth trajectories.
+    - Task and motion planning (TAMP) integrates symbolic task planning with geometric motion planning for multi-step manipulation sequences.
+  - #### Force and Compliance Control
+    - [[Force Control]] enables robots to regulate contact force rather than position, critical for assembly tasks such as peg-in-hole insertion, surface wiping, and delicate object handling.
+    - [[Impedance Control]] defines a desired mechanical impedance (stiffness, damping, inertia) for the end effector, allowing compliant interaction without explicit force setpoints.
+    - Force-torque sensors at the wrist provide real-time wrench measurements; tactile sensors on fingertips provide local contact distribution.
+  - #### Perception Pipeline
+    - [[Sensor Fusion]] combines data from RGB cameras, depth sensors, tactile arrays, and wrist force-torque sensors to maintain an estimate of object state.
+    - 6-DoF pose estimation algorithms (PoseCNN, FoundPose) determine object position and orientation from images or point clouds.
+    - Deformable object tracking and transparent/reflective object handling remain active research challenges.
+  - #### Learning-Based Approaches
+    - Behaviour cloning trains visuomotor policies from human demonstrations, mapping image observations directly to robot actions.
+    - [[Reinforcement Learning]] enables manipulation policies to be optimised through trial-and-error, typically in simulation (Isaac Gym, MuJoCo) before [[Sim-to-Real Transfer]].
+    - [[Imitation Learning]] frameworks such as ACT (Action Chunking with Transformers) and diffusion policy have achieved strong results on dexterous tasks from small demonstration sets.
+    - Foundation models for manipulation (RT-2, OpenVLA, pi0) pre-train on large-scale video and robot datasets, enabling zero-shot or few-shot transfer to novel tasks.
+
+- ### In-Hand Manipulation
+  - [[In-Hand Manipulation]] refers to reconfiguring an object within the grasp without re-grasping — rotating, translating, or re-orienting an object using finger motion alone.
+  - This requires dexterous multi-finger hands (e.g., Shadow Hand, Allegro Hand) and high-frequency tactile sensing.
+  - [[Reinforcement Learning]] has produced notable in-hand manipulation results (OpenAI Dactyl, solving Rubik's cube with a robotic hand), though brittleness under distribution shift remains a limitation.
+  - Sim-to-real transfer for in-hand manipulation relies on domain randomisation over object geometry, friction, and actuation noise.
+
+- ### Bimanual Manipulation
+  - [[Bimanual Manipulation]] coordinates two robot arms for tasks that cannot be accomplished unimanually — cloth folding, bottle opening, cable routing, and bimanual assembly.
+  - Requires tight kinematic and force coordination; each arm's trajectory must account for the shared object state.
+  - Learning from human demonstrations using motion capture or teleoperation is the dominant paradigm for bimanual policy acquisition.
+
+- ### Applications
+  - #### Industrial Automation
+    - Automotive assembly lines rely on manipulation for welding, painting, and part assembly, with articulated arms from FANUC, KUKA, ABB, and Yaskawa operating in structured environments.
+    - Bin-picking systems (Covariant, Mech-Mind, Photoneo) use 3D vision and grasp synthesis to pick randomly oriented parts from bins — a canonical unstructured manipulation benchmark.
+  - #### Warehouse and Logistics
+    - [[Warehouse Automation]] deployments (Amazon Sparrow, Berkshire Grey, Nimble Robotics) automate order fulfilment by picking and placing individual items from heterogeneous SKU catalogues.
+    - Depalletising and palletising robots handle box manipulation in distribution centres, reducing repetitive strain injuries.
+  - #### Surgical Robotics
+    - [[Surgical Robotics]] (da Vinci Surgical System, CMR Versius) extends surgeon dexterity with teleoperated manipulation at millimetre precision, with force feedback and motion scaling.
+    - Autonomous surgical sub-tasks (suturing, tissue retraction) are an active research area requiring force-controlled manipulation under vision.
+  - #### Service and Domestic Robotics
+    - Service robots (Boston Dynamics Spot Arm, Hello Robot Stretch, Kinova JACO) tackle open-ended manipulation in homes, hospitals, and offices.
+    - Domestic manipulation tasks (loading dishwashers, folding laundry, opening drawers) remain difficult due to deformable objects and unstructured environments.
+  - #### Space and Hazardous Environments
+    - [[Teleoperation]] enables human operators to control manipulation in space (Canadarm2 on the ISS), nuclear facilities, and disaster response scenarios (DARPA Robotics Challenge).
+    - Autonomous in-space assembly and servicing are emerging use cases for manipulation in microgravity.
+  - #### Medical and Laboratory Automation
+    - Laboratory automation robots perform liquid handling, sample processing, and plate manipulation in drug discovery and diagnostics workflows.
 
 - ### Relationships
-  - Robot Manipulation encompasses [[Object Manipulation]] at the task level and [[Industrial Manipulation]] in manufacturing contexts, extending to teleoperated scenarios via [[Teleoperation]]. The [[End Effector]] (gripper or hand) is the primary manipulation interface. [[Inverse Kinematics]] computes joint trajectories, [[Force Control]] ensures safe contact, and [[Sensor Fusion]] provides the perception pipeline. The field enables [[Human Robot Interaction]] in collaborative settings and drives [[Robot Learning]] research for generalisable manipulation policies.
+  - hasPart:: [[Grasp Planning]]
+  - hasPart:: [[Motion Planning]]
+  - hasPart:: [[End Effector]]
+  - hasPart:: [[In-Hand Manipulation]]
+  - uses:: [[Inverse Kinematics]]
+  - uses:: [[Force Control]]
+  - uses:: [[Sensor Fusion]]
+  - uses:: [[Point Cloud Processing]]
+  - uses:: [[Impedance Control]]
+  - requires:: [[Robot Perception]]
+  - requires:: [[Robot Kinematics]]
+  - requires:: [[Contact Mechanics]]
+  - enables:: [[Human Robot Interaction]]
+  - enables:: [[Robot Learning]]
+  - enables:: [[Surgical Robotics]]
+  - enables:: [[Warehouse Automation]]
+  - relatedTo:: [[Object Manipulation]]
+  - relatedTo:: [[Industrial Manipulation]]
+  - relatedTo:: [[Teleoperation]]
+  - relatedTo:: [[Bimanual Manipulation]]
+  - relatedTo:: [[Sim-to-Real Transfer]]
+  - dependsOn:: [[Robotic Arm]]
+  - dependsOn:: [[Depth Sensing]]
+  - bridgesTo:: [[Imitation Learning]]
+  - bridgesTo:: [[Reinforcement Learning]]
+  - contrastsWith:: [[Robot Locomotion]]
 
-- ### Content
-  - Early industrial robot manipulation, pioneered by George Devol and Joseph Engelberger's Unimate arm (installed at GM in 1961), relied on fixed, pre-programmed trajectories in structured environments with rigidly positioned parts. The introduction of force-torque sensors in the 1980s enabled compliant assembly tasks such as peg-in-hole insertion. Research milestones include Tomás Lozano-Pérez's configuration-space planning framework (1983), which formalised the motion planning problem, and Salisbury's work on dexterous multi-finger hands at MIT in the same decade.
+- ### Standards and Context
+  - ISO 9283 defines performance criteria and testing methods for industrial robot arms, relevant to manipulation accuracy benchmarking.
+  - ROS (Robot Operating System) provides the de facto middleware ecosystem for manipulation; the MoveIt! framework is the standard motion planning interface.
+  - The NIST Assembly Task Board benchmarks provide standardised tasks for comparing manipulation performance across research platforms.
+  - IEEE Robotics and Automation Society (RAS) technical committees on robot manipulation coordinate standardisation and benchmark development.
+  - The Open Motion Planning Library (OMPL) provides implementations of sampling-based planners used across manipulation research.
 
-  - Modern manipulation pipelines combine several technical layers. Grasp synthesis algorithms (GraspIt, Dex-Net) estimate stable grasp configurations from point cloud or RGB-D models, accounting for friction, object geometry, and gripper kinematics. Motion planners (RRT, CHOMP, TrajOpt) generate collision-free joint trajectories from current configuration to grasp pre-contact pose. Force-torque sensing at the wrist enables impedance or admittance control modes that provide compliant contact rather than rigid position tracking. Deep learning approaches directly map visual observations to motor commands (end-to-end visuomotor policies) via behaviour cloning or reinforcement learning.
+- ### Historical Context
+  - The first industrial manipulator, Unimate (George Devol and Joseph Engelberger), was installed at a General Motors factory in 1961, automating spot welding and die casting.
+  - Tomas Lozano-Pérez's configuration-space framework (1983) formalised collision-free motion planning, enabling systematic trajectory generation.
+  - Kenneth Salisbury's work on dexterous robotic hands at MIT in the 1980s established the theoretical foundations for multi-finger [[Grasp Planning]] and [[Impedance Control]].
+  - The 2003–2007 DARPA Urban Challenge and 2012 DARPA Robotics Challenge stimulated whole-body manipulation research in disaster response.
+  - Deep learning for manipulation (Levine et al., 2016; Mahler et al. Dex-Net, 2017) demonstrated that end-to-end visuomotor policies could be learned at scale.
+  - The 2023–2025 wave of manipulation foundation models (RT-2, OpenVLA, Octo, pi0) marks the current frontier, converging robotics with large-scale pre-training paradigms from language and vision.
 
-  - Applications span industrial bin-picking (e.g., Covariant, Mech-Mind), surgical robotics (Da Vinci system, laparoscopic tool manipulation), warehouse fulfilment (Amazon Sparrow, Berkshire Grey), and domestic service robots. The 2024 DARPA Robotic Autonomy in Complex Environments challenge and various domestic robot competitions (e.g., RoboCup@Home) have pushed manipulation capabilities in unstructured settings. Bimanual manipulation — coordinating two arms for tasks like cloth folding or tool handoff — has emerged as a key research frontier.
-
-  - By 2024-2025, large-scale robot learning using imitation from human demonstrations (RT-2, OpenVLA, pi0) has dramatically improved generalisation of manipulation policies to novel objects and environments. Foundation models for manipulation, trained on internet-scale video and robot data, produce policies transferable with minimal fine-tuning. Physical simulation (Isaac Gym, MuJoCo) enables sim-to-real transfer for contact-rich tasks. Despite these advances, manipulation in highly cluttered, deformable, or transparent-object environments remains an active research challenge.
-
+- ### Provenance
+  - sources:: IEEE Robotics and Automation Society technical literature; Lynch & Park "Modern Robotics" (2017); Murray, Li & Sastry "A Mathematical Introduction to Robotic Manipulation" (1994); Siciliano et al. "Robotics: Modelling, Planning and Control" (2009); Mahler et al. "Dex-Net" (2017–2019 series)
+  - updated:: 2026-06-13

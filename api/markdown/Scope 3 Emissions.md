@@ -21,7 +21,7 @@ public:: true
   "@type": "Class",
   "label": "Scope 3 Emissions",
   "definition": "Scope 3 emissions are the indirect greenhouse gas (GHG) emissions that occur across an organisation's value chain as a consequence of its activities but outside its operational boundary, encompassing both upstream sources such as purchased goods and services, capital goods, and business travel, and downstream sources such as the use and end-of-life treatment of sold products. Defined under Category 3 of the GHG Protocol Corporate Standard, Scope 3 emissions typically constitute the largest share of a company's total carbon footprint — often exceeding 70 percent — making their measurement, reporting, and reduction critical to credible corporate climate strategies. Accurate Scope 3 accounting requires collaboration across supply chains and the use of spend-based, activity-based, or supplier-specific emission factors.",
-  "domain": "science",
+  "domain": "governance",
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:carbon-accounting", "label": "Carbon Accounting"}],
   "relations": {

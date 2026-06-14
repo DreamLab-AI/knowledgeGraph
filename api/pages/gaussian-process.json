@@ -4,8 +4,8 @@
   "slug": "gaussian-process",
   "public": true,
   "classIri": "urn:ngm:class:gaussian-process",
-  "domain": "ai",
-  "definition": "A Gaussian Process (GP) is a non-parametric Bayesian model that places a probability distribution over functions, fully specified by a mean function and a covariance (kernel) function, such that any finite collection of function values follows a joint Gaussian distribution. GPs provide principled uncertainty quantification alongside predictions and serve as flexible surrogate models in scientific computing and optimisation.",
+  "domain": "machine-learning",
+  "definition": "A Gaussian Process (GP) is a non-parametric Bayesian model that defines a probability distribution over functions, fully characterised by a mean function and a covariance (kernel) function, such that any finite collection of function evaluations follows a joint Gaussian distribution. Conditioning the GP prior on observed data yields a closed-form posterior distribution over functions that simultaneously provides point predictions and principled uncertainty estimates. GPs are widely used for regression, classification, surrogate modelling, and as acquisition-function models in Bayesian optimisation, with exact inference scaling cubically in the number of observations and sparse inducing-point approximations enabling scalable variants.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bayesian-inference",
@@ -13,25 +13,98 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.74,
   "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:kernel-function",
+        "label": "Kernel Function"
+      },
+      {
+        "id": "urn:ngm:class:mean-function",
+        "label": "Mean Function"
+      },
+      {
+        "id": "urn:ngm:class:posterior-predictive-distribution",
+        "label": "Posterior Predictive Distribution"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:gaussian-distribution",
+        "label": "Gaussian Distribution"
+      },
+      {
+        "id": "urn:ngm:class:positive-definite-matrix",
+        "label": "Positive Definite Matrix"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:bayesian-optimisation",
         "label": "Bayesian Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:uncertainty-quantification",
+        "label": "Uncertainty Quantification"
+      },
+      {
+        "id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
+      },
+      {
+        "id": "urn:ngm:class:gaussian-process-regression",
+        "label": "Gaussian Process Regression"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:covariance-matrix",
+        "label": "Covariance Matrix"
+      },
+      {
+        "id": "urn:ngm:class:hyperparameter-optimisation",
+        "label": "Hyperparameter Optimisation"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:random-forest",
+        "label": "Random Forest"
+      },
+      {
+        "id": "urn:ngm:class:support-vector-machine",
+        "label": "Support Vector Machine"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:spatial-interpolation",
+        "label": "Spatial Interpolation"
+      },
+      {
+        "id": "urn:ngm:class:scientific-computing",
+        "label": "Scientific Computing"
+      }
+    ],
     "uses": [
       {
-        "id": "urn:ngm:class:gaussian-distribution",
-        "label": "Gaussian Distribution"
+        "id": "urn:ngm:class:kernel-methods",
+        "label": "Kernel Methods"
+      },
+      {
+        "id": "urn:ngm:class:marginal-likelihood",
+        "label": "Marginal Likelihood"
+      },
+      {
+        "id": "urn:ngm:class:cholesky-decomposition",
+        "label": "Cholesky Decomposition"
       }
     ],
     "supports": [],
@@ -39,16 +112,24 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:gaussian-process-regression",
-        "label": "Gaussian Process Regression"
-      },
-      {
-        "id": "urn:ngm:class:kernel-methods",
-        "label": "Kernel Methods"
+        "id": "urn:ngm:class:kriging",
+        "label": "Kriging"
       },
       {
         "id": "urn:ngm:class:hamiltonian-monte-carlo",
         "label": "Hamiltonian Monte Carlo"
+      },
+      {
+        "id": "urn:ngm:class:variational-inference",
+        "label": "Variational Inference"
+      },
+      {
+        "id": "urn:ngm:class:deep-kernel-learning",
+        "label": "Deep Kernel Learning"
+      },
+      {
+        "id": "urn:ngm:class:sparse-gaussian-process",
+        "label": "Sparse Gaussian Process"
       }
     ]
   },

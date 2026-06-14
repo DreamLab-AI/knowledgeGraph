@@ -5,19 +5,53 @@
   "public": true,
   "classIri": "urn:ngm:class:systems-engineering",
   "domain": "infrastructure",
-  "definition": "Systems Engineering is an interdisciplinary methodology for designing, integrating, and managing complex systems over their lifecycle. It applies structured processes \u2014 requirements analysis, architecture definition, verification, and validation \u2014 to ensure that subsystem interactions meet overall system objectives within cost, schedule, and quality constraints.",
+  "definition": "Systems Engineering is an interdisciplinary methodology for designing, integrating, and managing complex systems over their entire lifecycle, from concept definition through disposal. It applies structured processes \u2014 requirements analysis, functional decomposition, architecture definition, interface control, verification, and validation \u2014 to ensure that the emergent behaviour of integrated subsystems meets overall system objectives within defined cost, schedule, and performance constraints. Systems Engineering is distinguished from narrower disciplines by its holistic perspective: it treats the system as a whole rather than optimising individual components in isolation. Governing standards include ISO/IEC/IEEE 15288 (Systems and Software Life Cycle Processes) and the INCOSE Systems Engineering Handbook.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:infra-software-engineering",
-      "label": "Software Engineering"
+      "id": "urn:ngm:class:engineering-methodology",
+      "label": "Engineering Methodology"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:requirements-engineering",
+        "label": "Requirements Engineering"
+      },
+      {
+        "id": "urn:ngm:class:system-architecture",
+        "label": "System Architecture"
+      },
+      {
+        "id": "urn:ngm:class:verification-and-validation",
+        "label": "Verification and Validation"
+      },
+      {
+        "id": "urn:ngm:class:interface-management",
+        "label": "Interface Management"
+      },
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:model-based-systems-engineering",
+        "label": "Model-Based Systems Engineering"
+      },
+      {
+        "id": "urn:ngm:class:configuration-management",
+        "label": "Configuration Management"
+      },
+      {
+        "id": "urn:ngm:class:stakeholder-analysis",
+        "label": "Stakeholder Analysis"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:technology-infrastructure",
@@ -26,12 +60,42 @@
       {
         "id": "urn:ngm:class:technical-architecture-framework",
         "label": "Technical Architecture Framework"
+      },
+      {
+        "id": "urn:ngm:class:system-of-systems",
+        "label": "System of Systems"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      },
+      {
+        "id": "urn:ngm:class:project-management",
+        "label": "Project Management"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:cyber-physical-systems",
+        "label": "Cyber-Physical Systems"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:software-engineering",
@@ -40,6 +104,14 @@
       {
         "id": "urn:ngm:class:distributed-systems",
         "label": "Distributed Systems"
+      },
+      {
+        "id": "urn:ngm:class:formal-methods",
+        "label": "Formal Methods"
+      },
+      {
+        "id": "urn:ngm:class:simulation",
+        "label": "Simulation"
       }
     ],
     "supports": [
@@ -50,16 +122,37 @@
       {
         "id": "urn:ngm:class:regulatory-compliance",
         "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
       }
     ],
     "standardizedBy": [
       {
         "id": "urn:ngm:class:open-standard",
         "label": "Open Standard"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-ieee-15288",
+        "label": "ISO/IEC/IEEE 15288"
       }
     ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:systems-thinking",
+        "label": "Systems Thinking"
+      },
+      {
+        "id": "urn:ngm:class:complexity-theory",
+        "label": "Complexity Theory"
+      },
+      {
+        "id": "urn:ngm:class:lifecycle-management",
+        "label": "Lifecycle Management"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

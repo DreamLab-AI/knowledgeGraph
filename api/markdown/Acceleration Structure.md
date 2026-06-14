@@ -21,7 +21,7 @@ public:: true
   "@type": "Class",
   "label": "Acceleration Structure",
   "definition": "An acceleration structure is a spatial data structure that organises geometric primitives in a scene to allow rapid culling of irrelevant geometry during ray intersection or visibility queries, dramatically reducing the computational complexity of rendering algorithms from O(n) per-ray to approximately O(log n). Common forms include bounding volume hierarchies, k-d trees, and octrees, each making different trade-offs between construction time, memory footprint, and query efficiency.",
-  "domain": "spatial",
+  "domain": "spatial-computing",
   "maturity": "mature",
   "subClassOf": [
     {"@id": "urn:ngm:class:spatial-index", "label": "Spatial Index"}

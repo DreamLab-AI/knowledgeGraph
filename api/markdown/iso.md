@@ -1,14 +1,80 @@
 - ### Definition
-  - ISO, the International Organisation for Standardisation, is the principal global [[Standards Body]] that develops and publishes voluntary [[Technical Standard]] documents used to ensure quality, safety, and [[Interoperability Standard]] across industries and national boundaries.
+  - ISO (International Organisation for Standardisation) is the world's foremost independent, non-governmental [[Standards Body]], uniting 167 national member bodies to develop and publish voluntary [[Technical Standard]] documents that underpin quality, safety, and [[Interoperability Standard]] across virtually every domain of human activity. ISO operates through a [[Consensus Process]] conducted by hundreds of [[Technical Committee]] groupings, producing standards that carry normative weight in [[Regulatory Framework]] and [[Compliance Framework]] designs worldwide. Its partnership with the [[IEC]] via the [[ISO/IEC]] joint technical structure extends its reach deep into electrical engineering, information technology, and [[AI Governance]]. As a cornerstone of the [[International Standards Ecosystem]], ISO standards facilitate [[Global Trade]] by creating shared technical expectations that transcend national legislation.
+
+- ### Overview
+  - ISO was founded in 1947 in Geneva as successor to the interwar ISA (International Federation of the National Standardizing Associations), inheriting a mandate to create a universal technical language for post-war industrial reconstruction and international commerce.
+  - The organisation is formally independent of governments but maintains close liaison relationships with intergovernmental bodies including the WTO, UN agencies, and regional blocs. ISO standards are referenced within WTO Technical Barriers to Trade (TBT) agreements as the preferred basis for national regulation.
+  - Membership is structured at three levels: full member (one per country, with full voting rights), correspondent member (developing countries, observation rights), and subscriber member (very small economies, reduced fees). The 167 full members include ANSI (USA), BSI (UK), DIN (Germany), AFNOR (France), CEN (Europe), SAC (China), and BIS (India).
+  - ISO does not itself enforce compliance — standards are voluntary by design. Their normative authority arises when governments incorporate them into legislation, procurement mandates, or trade agreements, or when industry bodies require them for certification schemes.
+
+- ### Key Components
+  - **Technical Committees (TCs)** — ISO operates approximately 800 technical committees and subcommittees. Each TC is responsible for a defined domain (e.g. TC 37 for terminology, TC 176 for [[Quality Management]], TC 262 for [[Risk Management]]). TC members are national body delegations that include industry, academia, and government experts.
+  - **[[ISO/IEC JTC 1]]** — The Joint Technical Committee with the [[IEC]] handles all information technology standards, with subcommittees covering AI (SC 42), cloud computing (SC 38), cybersecurity (SC 27), and data management (SC 32).
+  - **[[ISO High Level Structure]] (HLS / Annex SL)** — Introduced with ISO/IEC Directives Part 1 Supplement, the HLS provides a common framework and identical core text for all [[Management System Standard]] documents, enabling integrated implementation of ISO 9001, ISO 14001, ISO 45001, and ISO/IEC 27001 within a single management system.
+  - **Standards Lifecycle** — A standard progresses through: New Work Item Proposal → Working Draft → Committee Draft → Draft International Standard → Final Draft International Standard → International Standard → Periodic Review (every five years).
+  - **[[National Standards Body]]** — Each ISO member body (e.g. BSI, ANSI, DIN) convenes mirror committees that translate ISO positions into national votes and adopt published ISO standards as national standards (e.g. BS EN ISO, DIN EN ISO).
+  - **[[Conformity Assessment]]** — ISO/IEC 17000-series standards define the framework for testing, inspection, and certification schemes that verify conformance to ISO standards. Certification bodies are accredited by national [[Accreditation Body]] members of IAF/ILAC.
+
+- ### Major Standards Families
+  - **[[Quality Management]] — ISO 9001** — The world's most widely deployed management system standard; provides a process-based framework for customer satisfaction and continual improvement. Used by over 1 million certified organisations globally.
+  - **Environmental Management — ISO 14001** — Specifies requirements for an [[Environmental Management System]], integrated with ISO 9001 via the HLS.
+  - **Information Security — [[ISO/IEC 27001]]** — Specifies requirements for an information security management system (ISMS); the globally dominant information security certification standard, referenced heavily in financial regulation and [[Cybersecurity Framework]] design.
+  - **AI Management — [[ISO/IEC 42001]]** — The first international management system standard for AI, published 2023; provides requirements and guidance for organisations developing, deploying, or using AI systems, with explicit linkage to [[AI Governance]] and the [[EU AI Act]].
+  - **AI Risk — ISO/IEC 23894** — Guidance on [[Risk Management]] for AI systems, complementing ISO/IEC 42001 and aligned with ISO 31000.
+  - **Robotics — ISO 10218 / ISO 13482** — ISO 10218 covers safety requirements for industrial robots; ISO 13482 addresses personal care robots. Both are key normative references for [[Robotics]] safety regulation.
+  - **Financial Messaging — ISO 20022** — The dominant global standard for financial messaging, underpinning real-time gross settlement (RTGS), payment infrastructure modernisation, and cross-border payment interoperability.
+  - **Supply Chain — ISO 28000** — Specifies requirements for a security management system for the [[Supply Chain Management]] context.
+  - **Occupational Health — ISO 45001** — Requirements for occupational health and safety management systems, replacing OHSAS 18001.
+  - **Energy Management — ISO 50001** — Framework for organisations to establish energy performance improvement processes.
+
+- ### Applications and Use Cases
+  - **Regulatory harmonisation** — Governments and regional bodies (EU, ASEAN, African Union) reference ISO standards in directives and regulations to avoid creating unique national technical requirements that would fragment global trade. The EU Machinery Regulation and Radio Equipment Directive both rely on harmonised EN ISO standards.
+  - **Procurement and supply chain qualification** — ISO 9001 certification is a default supply-chain entry requirement across aerospace, automotive, defence, and healthcare sectors. ISO/IEC 27001 is mandated or strongly preferred in financial services and public sector IT procurement.
+  - **AI regulation compliance** — ISO/IEC 42001 certification provides organisations with a structured pathway to demonstrating conformance with AI system governance requirements under the EU AI Act and comparable national AI regulations.
+  - **Cross-border financial infrastructure** — ISO 20022 adoption by SWIFT, TARGET2, and national RTGS systems enables structured, rich-data payment messaging; critical for anti-money-laundering screening and [[Supply Chain Management]] finance.
+  - **Cybersecurity assurance** — ISO/IEC 27001 underpins national cybersecurity strategies and sector-specific frameworks (NIS2 Directive, UK Cyber Essentials Plus, Singapore MAS TRM).
+  - **Interoperability in emerging technology** — ISO/IEC JTC 1 SC 42 is developing standards for AI terminology, bias, explainability, and trustworthiness that will shape interoperability between AI systems across jurisdictions.
+  - **Healthcare and medical devices** — ISO 13485 (quality management for medical devices) and ISO 14971 (risk management for medical devices) are referenced in FDA and EU MDR regulatory pathways.
+
 - ### Relationships
-  - ISO produces its most technologically significant standards in joint effort with the International Electrotechnical Commission under the [[ISO/IEC]] banner—including [[ISO/IEC 27001]] for information security management and [[ISO IEC 42001]] for AI management systems. Published standards underpin [[Conformity Assessment]] schemes worldwide and provide the normative basis for [[Compliance Framework]] design across regulated sectors, whilst [[Iso Standards]] collectively constitute the reference corpus for [[Technical Standards]] adoption.
-- ### Content
-  - ISO was founded in 1947 in Geneva as the successor to ISA (International Federation of the National Standardizing Associations) and has since grown to encompass 167 national member bodies. It operates through approximately 800 technical committees and subcommittees, each responsible for a defined domain. Standards proceed through a lifecycle of Preliminary Work Item, Working Draft, Committee Draft, Draft International Standard, and final publication, with each stage requiring supermajority ballot approval from participating national bodies.
+  - hasPart:: [[ISO/IEC JTC 1]]
+  - hasPart:: [[Technical Committee]]
+  - hasPart:: [[ISO High Level Structure]]
+  - partOf:: [[International Standards Ecosystem]]
+  - requires:: [[Consensus Process]]
+  - requires:: [[National Standards Body]]
+  - enables:: [[Conformity Assessment]]
+  - enables:: [[Compliance Framework]]
+  - enables:: [[Interoperability Standard]]
+  - enables:: [[Mutual Recognition Agreement]]
+  - implements:: [[Voluntary Standard]]
+  - implements:: [[Management System Standard]]
+  - uses:: [[ISO/IEC 27001]]
+  - uses:: [[ISO/IEC 42001]]
+  - uses:: [[ISO 9001]]
+  - uses:: [[ISO 14001]]
+  - supports:: [[Global Trade]]
+  - supports:: [[Regulatory Framework]]
+  - supports:: [[Supply Chain Management]]
+  - standardizedBy:: [[ISO/IEC]]
+  - contrastsWith:: [[IEEE]]
+  - contrastsWith:: [[IETF]]
+  - contrastsWith:: [[W3C]]
+  - bridgesTo:: [[AI Governance]]
+  - bridgesTo:: [[EU AI Act]]
+  - bridgesTo:: [[Cybersecurity Framework]]
+  - relatedTo:: [[Technical Standard]]
+  - relatedTo:: [[IEC]]
+  - relatedTo:: [[Accreditation Body]]
 
-  - The organisation's output spans foundational management system standards—ISO 9001 for quality management, ISO 14001 for environmental management, ISO 45001 for occupational health and safety—that have become de facto requirements in global supply chains. The ISO High Level Structure (HLS) introduced in 2012 aligns the common elements of all management system standards, enabling integrated management approaches.
+- ### Standards and Governance Context
+  - ISO standards are produced under the ISO/IEC Directives, which govern the structure, drafting, and balloting procedures. The Directives are revised periodically to incorporate new drafting conventions, and the HLS / Annex SL framework is embedded within them.
+  - ISO maintains formal liaison with ITU (International Telecommunication Union), OECD, UNCTAD, and WTO. This liaison network ensures ISO standards are coherent with intergovernmental policy frameworks, especially in areas such as AI, climate, and digital trade.
+  - ISO Publicly Available Specifications (PAS), Technical Specifications (TS), and Technical Reports (TR) provide pre-normative or informative outputs at earlier stages of technology maturity — relevant for rapidly evolving fields such as quantum computing, blockchain, and AI trustworthiness.
+  - The ISO TC 307 committee addresses [[Blockchain]] and distributed ledger technology standards, including ISO 22739 (blockchain terminology) and ISO 23257 (reference architecture), linking ISO governance to [[Distributed Systems]] and [[Distributed Collaboration]] domains.
+  - ISO SC 42 (AI) directly interfaces with the [[EU AI Act]] harmonisation process; EU Standardisation Request M/623 tasks CEN/CENELEC and ISO/IEC with producing harmonised standards that provide presumption-of-conformity pathways for high-risk AI systems.
+  - CASCO (ISO Committee on Conformity Assessment) develops [[Conformity Assessment]] standards (ISO/IEC 17000 series) and coordinates with IAF (International Accreditation Forum) and ILAC (International Laboratory Accreditation Cooperation) to maintain the global accreditation infrastructure.
 
-  - In information technology and AI, ISO's work is predominantly conducted through ISO/IEC JTC 1, the joint technical committee with the IEC. Subcommittee SC 42 focuses specifically on artificial intelligence, having produced ISO/IEC 42001 (AI management systems), ISO/IEC 23894 (AI risk management), and a growing library of AI vocabulary and assessment standards that are shaping regulatory frameworks including the EU AI Act.
-
-  - ISO standards in robotics—particularly the ISO 10218 series for industrial robot safety and ISO 13482 for personal care robots—provide normative references for machinery directives and national safety legislation globally. Similarly, ISO 20022 has become the dominant financial messaging standard underpinning interbank payment infrastructure modernisation.
-
-  - Participation in ISO is formally restricted to one national member body per country, though the actual standard-drafting work involves industrial consortia, academic institutions, and government agencies through their national body delegations. Observers including the WTO and UN agencies hold liaison status, embedding ISO standards within broader international trade and regulatory frameworks.
+- ### Provenance
+  - sources:: ISO official documentation; ISO/IEC Directives; WTO TBT Agreement text; EU AI Act recitals; established technical literature on international standardisation
+  - updated:: 2026-06-13

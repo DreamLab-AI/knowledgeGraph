@@ -4,7 +4,7 @@
   "slug": "did",
   "public": true,
   "classIri": "urn:ngm:class:did",
-  "domain": "cryptographic",
+  "domain": "security",
   "definition": "A decentralised identifier, a type of globally unique identifier that enables verifiable, self-sovereign digital identity without reliance on a central registry.",
   "subClassOf": [
     {

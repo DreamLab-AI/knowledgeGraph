@@ -4,7 +4,7 @@
   "slug": "spherical-harmonics",
   "public": true,
   "classIri": "urn:ngm:class:spherical-harmonics",
-  "domain": "graphics",
+  "domain": "spatial-computing",
   "definition": "Spherical harmonics are a complete set of orthogonal basis functions defined on the surface of a sphere, used to represent functions of direction compactly as a weighted sum of coefficients. Analogous to a Fourier series on the sphere, they allow smooth angular functions \u2014 such as incoming light or a directional colour \u2014 to be approximated with a small number of low-order coefficients. In computer graphics they underpin precomputed radiance transfer, irradiance environment lighting, and, more recently, view-dependent colour in Gaussian splatting and neural rendering.",
   "subClassOf": [
     {

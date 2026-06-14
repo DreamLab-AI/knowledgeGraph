@@ -59,7 +59,7 @@ public:: true
   "@type": "Class",
   "label": "gaming",
   "definition": "Gaming is the activity of playing electronic games and the industry that produces them. It spans hardware, software, online services, and competitive play.",
-  "domain": "general",
+  "domain": "metaverse",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

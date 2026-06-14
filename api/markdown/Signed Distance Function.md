@@ -21,7 +21,7 @@ public:: true
   "@type": "Class",
   "label": "Signed Distance Function",
   "definition": "A signed distance function (SDF) is a scalar field that returns, for any point in space, the distance to the nearest surface of a shape, with the sign indicating whether the point is inside (negative) or outside (positive). The surface itself is the zero level set where the function equals zero. SDFs provide a compact implicit representation of geometry that supports efficient ray marching, smooth shape blending, and analytic normals, and they underpin procedural rendering, collision queries, and learned 3D reconstruction in neural networks.",
-  "domain": "graphics",
+  "domain": "spatial-computing",
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:computer-graphics", "label": "Computer Graphics"}],
   "relations": {

@@ -1,14 +1,102 @@
 - ### Definition
-  - [[Monetary Policy]] is the authority's systemic control of money supply and credit conditions — conducted by a [[Central Bank]] in traditional finance, or embedded algorithmically in protocol rules in blockchain systems — to achieve price stability and growth through tools ranging from interest-rate setting to [[Tokenomics]]-defined emission schedules.
+  - [[Monetary Policy]] is the systematic control of [[Money Supply]], credit conditions, and [[Interest Rate Policy]] exercised by a [[Monetary Authority]] — typically a [[Central Bank]] — to pursue macroeconomic objectives such as [[Price Stability]], [[Full Employment]], and sustainable output growth. In traditional finance this authority is institutionally vested in bodies like the Federal Reserve, the European Central Bank, or the Bank of England, operating through instruments including [[Open Market Operations]], [[Reserve Requirements]], and [[Quantitative Easing]]. In decentralised blockchain systems, monetary policy is encoded algorithmically via [[Tokenomics]] rules — emission schedules, halving events, and burn mechanisms — governed through [[On-Chain Governance]] rather than human discretion.
+
+- ### Overview
+  - Monetary policy is one of the two principal levers of macroeconomic management, the other being [[Fiscal Policy]]. While fiscal policy operates through government spending and taxation, monetary policy works through the price and availability of money and credit in the economy.
+  - Modern monetary policy frameworks emerged alongside centralised banking in the late 19th and early 20th centuries. The shift from gold-standard constraints to managed fiat currency systems during the 20th century gave central banks broader discretionary authority to respond to economic cycles.
+  - A policy rate set by a monetary policy committee anchors short-term borrowing costs. Commercial banks borrow at this rate and transmit changes to retail lending and deposit rates, influencing consumption, investment, and ultimately employment and prices across the economy.
+  - The [[Monetary Policy Transmission]] mechanism operates through several channels: the interest rate channel, the asset price channel, the credit channel, the exchange rate channel, and expectations. Each exhibits different lag structures, making policy calibration complex.
+  - Inflation targeting — pioneered by New Zealand in 1990 — has become the predominant monetary policy framework among advanced economies, typically centred on a 2% annual inflation target.
+  - The 2008 global financial crisis compelled central banks to deploy unconventional tools: [[Quantitative Easing]], negative interest rates, and explicit [[Forward Guidance]] on the future path of policy rates.
+  - Blockchain networks introduced a radically distinct paradigm: algorithmic monetary rules encoded in smart contracts or consensus logic, operating without human discretion and aimed at replicating scarcity properties analogous to commodity money.
+
+- ### Key Mechanisms
+  - #### Conventional Tools
+    - **Policy Interest Rate** — the benchmark rate at which the central bank lends to commercial banks overnight, directly influencing all short-term rates across the economy. See [[Interest Rate Policy]].
+    - **[[Open Market Operations]]** — purchase or sale of government securities by the central bank to expand or contract the money supply; the primary day-to-day instrument of most central banks.
+    - **[[Reserve Requirements]]** — mandatory minimum reserves commercial banks must hold against deposits; adjusting the ratio changes the money multiplier and lending capacity.
+    - **Discount Window** — facility allowing banks to borrow directly from the central bank at a penalty rate, serving as a lender of last resort function. See [[Financial Stability]].
+  - #### Unconventional Tools
+    - **[[Quantitative Easing]]** — direct large-scale asset purchases (government bonds, mortgage-backed securities) that expand the central bank's balance sheet and inject liquidity beyond the zero lower bound of interest rates.
+    - **[[Forward Guidance]]** — explicit communication about future policy intentions to shape market expectations and influence long-term rates even when the policy rate is constrained.
+    - **Negative Interest Rates** — charging commercial banks for excess reserves to incentivise lending rather than hoarding; deployed by the European Central Bank, Swiss National Bank, and Bank of Japan.
+    - **Yield Curve Control** — targeting specific long-term bond yields rather than just short-term rates; used by the Bank of Japan and Reserve Bank of Australia.
+  - #### Algorithmic / On-Chain Tools
+    - **Emission Schedules** — protocol-defined rates at which new tokens are created and distributed; encoded in consensus rules rather than set by committee. See [[Tokenomics]].
+    - **Halving Events** — periodic reductions (by 50%) in block rewards in proof-of-work networks such as Bitcoin, creating pre-programmed supply shocks analogous to monetary tightening.
+    - **Fee Burn Mechanisms** — destruction of a portion of transaction fees to reduce circulating supply; introduced in Ethereum via EIP-1559 creating a partially deflationary supply dynamic.
+    - **[[On-Chain Governance]]** — token-holder voting to adjust monetary parameters such as interest rate models, collateralisation ratios, and emission rates in [[DeFi Protocol]] systems.
+
+- ### Applications and Use Cases
+  - #### Macroeconomic Stabilisation
+    - Central banks use monetary policy cyclically: tightening (raising rates, reducing balance sheet) to cool inflation and loosening (cutting rates, expanding balance sheet) to stimulate activity during recessions.
+    - The US Federal Reserve's dual mandate — [[Price Stability]] and [[Full Employment]] — exemplifies the canonical objectives of modern monetary policy frameworks.
+    - The European Central Bank's primary mandate is price stability across the eurozone, illustrating how monetary union transfers policy authority from national to supranational level.
+  - #### Financial System Stability
+    - [[Financial Stability]] is increasingly recognised as an implicit or explicit objective of monetary policy, given the systemic risks of banking crises. Macro-prudential tools (counter-cyclical capital buffers, LTV ratios) complement conventional monetary instruments.
+    - Emergency facilities deployed during the 2008 crisis and COVID-19 pandemic show monetary policy's role as a crisis backstop for the financial system.
+  - #### Central Bank Digital Currencies
+    - [[Central Bank Digital Currency]] programmes represent the extension of monetary policy into programmable money, potentially enabling more direct transmission by bypassing the commercial banking layer.
+    - Programmable CBDC could allow conditional monetary policy — stimulus payments that expire, interest rates applied directly to individual balances, or targeted sector support.
+  - #### Decentralised Finance
+    - [[DeFi Protocol]] platforms such as MakerDAO, Compound, and Aave implement on-chain monetary policies via governance-controlled parameters: stability fees, supply caps, collateralisation ratios, and liquidity incentive rates.
+    - [[Stablecoin]] mechanisms are monetary policy systems in miniature — maintaining a peg requires constant adjustment of incentives and supply, mirroring central bank operations.
+    - Vote-escrow and veToken governance models give long-term stakeholders greater influence over monetary parameter adjustments, attempting to align incentives between governance participants and protocol sustainability.
+  - #### Blockchain Protocol Design
+    - Bitcoin's fixed 21-million supply cap is an immutable algorithmic monetary policy encoding digital scarcity without a monetary authority.
+    - Ethereum's transition to proof-of-stake and EIP-1559 created a hybrid monetary policy where issuance can be net deflationary during periods of high network activity.
+    - Protocol designers treat monetary policy as a [[Economic Mechanism]] design problem, balancing security budget (miner/validator rewards), user experience (fee predictability), and long-term token value.
 
 - ### Relationships
-  - Monetary policy sits at the heart of [[Economic Governance]], determining the macro conditions within which financial markets, lending, and investment operate. In traditional settings, [[Central Bank]] institutions transmit policy decisions through the [[Monetary Policy Transmission]] mechanism — influencing market interest rates, exchange rates, and ultimately [[Inflation]] levels. The emergence of [[Central Bank Digital Currency]] infrastructures is extending traditional monetary policy into programmable money, while decentralised protocols encode autonomous monetary rules through [[Tokenomics]] and [[Economic Mechanism]] design. [[Stablecoin]] systems occupy a hybrid position, often pegging to fiat monetary policy outcomes whilst operating on-chain.
+  - partOf:: [[Economic Governance]]
+  - hasPart:: [[Open Market Operations]]
+  - hasPart:: [[Reserve Requirements]]
+  - hasPart:: [[Interest Rate Policy]]
+  - hasPart:: [[Quantitative Easing]]
+  - hasPart:: [[Forward Guidance]]
+  - requires:: [[Central Bank]]
+  - requires:: [[Monetary Authority]]
+  - enables:: [[Inflation Control]]
+  - enables:: [[Price Stability]]
+  - enables:: [[Stablecoin]]
+  - enables:: [[Central Bank Digital Currency]]
+  - uses:: [[Tokenomics]]
+  - uses:: [[Economic Mechanism]]
+  - uses:: [[Inflation Targeting]]
+  - supports:: [[Monetary Policy Transmission]]
+  - supports:: [[Financial Stability]]
+  - supports:: [[Full Employment]]
+  - dependsOn:: [[Economics]]
+  - dependsOn:: [[Macroeconomics]]
+  - contrastsWith:: [[Fiscal Policy]]
+  - contrastsWith:: [[Algorithmic Monetary Policy]]
+  - relatedTo:: [[Exchange Rate Policy]]
+  - relatedTo:: [[Banking Regulation]]
+  - relatedTo:: [[DeFi Protocol]]
+  - bridges-to:: [[Smart Contract]]
+  - bridges-to:: [[On-Chain Governance]]
+  - standardizedBy:: [[Bank for International Settlements]]
+  - standardizedBy:: [[International Monetary Fund]]
 
-- ### Content
-  - Monetary policy as a formal discipline evolved alongside the development of modern central banking in the late 19th and early 20th centuries. The Bank of England, the Federal Reserve (established 1913), and subsequent central banks progressively formalised the toolkit: discount rates, reserve ratios, open market operations, and, after the 2008 financial crisis, unconventional instruments such as quantitative easing and forward guidance. The conceptual foundation shifted from gold-standard constraints to managed fiat currency systems oriented around inflation targeting, with 2% annual inflation becoming a near-universal benchmark for advanced economies.
+- ### Standards and Institutional Context
+  - The [[Bank for International Settlements]] (BIS) provides research, standards coordination, and a settlement platform for central banks; its Basel Committee sets [[Banking Regulation]] standards that interact with monetary policy implementation.
+  - The [[International Monetary Fund]] provides macroeconomic surveillance, policy advice, and emergency financing, shaping the monetary policy frameworks of member countries through Article IV consultations and programme conditionality.
+  - The Federal Open Market Committee (FOMC) of the US Federal Reserve sets the federal funds rate target in eight scheduled meetings per year, with decisions transmitted globally given the US dollar's reserve currency status.
+  - The European Central Bank's Governing Council sets rates for the eurozone, with the ECB's asset purchase programmes governed by capital key rules determining proportional purchases across member-state bonds.
+  - G20 and G7 finance ministers and central bank governors coordinate internationally on monetary and exchange rate matters, though national / regional policy mandates remain primary.
+  - The Basel III and Basel IV frameworks set capital adequacy and liquidity requirements for commercial banks, influencing the transmission of monetary policy through the banking system's capacity to lend.
+  - In decentralised protocols, monetary policy parameters are typically defined in improvement proposals (e.g. BIPs for Bitcoin, EIPs for Ethereum) ratified by miner, validator, and user consensus rather than by any institution.
 
-  - In practice, a central bank's monetary policy committee sets a policy rate that anchors short-term borrowing costs. Commercial banks borrow at this rate and pass changes through to retail lending and deposit rates, influencing consumption and investment decisions across the economy. The transmission mechanism is complex and subject to lags of six to eighteen months. Quantitative easing bypasses the traditional channel by having the central bank directly purchase long-dated assets, compressing term premiums and pushing investors into riskier assets. Inflation targeting frameworks, pioneered by New Zealand in 1990, now govern the majority of advanced-economy central banks.
+- ### Historical Context
+  - The gold standard era (broadly 1870–1914 and 1919–1933) constrained monetary policy to maintaining convertibility, limiting discretionary adjustment.
+  - Bretton Woods (1944–1971) created a dollar-gold anchor system, fixing exchange rates and constraining national monetary autonomy within agreed bands.
+  - The Nixon shock (1971) ended dollar-gold convertibility, ushering in the era of free-floating fiat currencies and genuinely discretionary monetary policy.
+  - The stagflation of the 1970s discredited Keynesian fine-tuning and elevated monetarist prescriptions (Milton Friedman), leading central banks to target money supply growth.
+  - The Volcker disinflation (1979–1982) — sharp rate hikes by the US Fed — demonstrated the capacity of monetary policy to break embedded inflation expectations at severe short-term cost.
+  - Inflation targeting frameworks from the 1990s onwards established credibility through institutional independence, transparent mandates, and public accountability mechanisms.
+  - The zero lower bound problem — encountered broadly post-2008 — drove the development of unconventional tools and challenged prevailing New Keynesian policy models.
+  - Bitcoin (2009) introduced the first live experiment with fully algorithmic, trustless monetary policy, framing the blockchain monetary policy design space.
 
-  - Blockchain networks introduced a radically different monetary policy paradigm: rules encoded in immutable or governance-controlled smart contracts that operate without human discretion. Bitcoin's fixed 21 million supply cap and quadrennial halving events represent the purest example of algorithmic monetary policy designed to replicate gold's scarcity properties. Ethereum's shift to proof-of-stake introduced EIP-1559 fee burning, creating a partially deflationary supply dynamic. DeFi protocols use governance tokens and on-chain voting to adjust interest rate models, collateralisation ratios, and emission schedules, effectively making monetary policy a community-governed parameter.
-
-  - The 2024-2025 period is characterised by the normalisation of higher interest rates following the post-COVID inflation surge, and by intensifying central bank CBDC programmes that promise to make monetary policy transmission more direct and granular. Simultaneously, the crypto industry is grappling with how to design monetary policies that balance growth incentives against long-term token value stability, with vote-escrow and veToken mechanisms emerging as governance tools for on-chain monetary parameter adjustments.
+- ### Provenance
+  - sources:: Established macroeconomic theory, central bank documentation, BIS research, blockchain protocol specifications
+  - updated:: 2026-06-13

@@ -55,7 +55,7 @@ public:: true
   "@type": "Class",
   "label": "Distributed Systems Theory",
   "definition": "The theoretical study of computational systems whose components run on separate networked machines and coordinate by passing messages.",
-  "domain": "mathematics",
+  "domain": "machine-learning",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

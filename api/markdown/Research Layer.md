@@ -63,7 +63,7 @@ public:: true
   "@type": "Class",
   "label": "Research Layer",
   "definition": "The Research Layer is the cross-cutting stratum where new methods, models, and understanding are generated before adoption into production strata. It sits above evaluation and experimentation concerns and feeds the algorithm and model layers with validated advances. It contains experiments, hypotheses, prototypes, and the findings that justify changes elsewhere.",
-  "domain": "research",
+  "domain": "distributed-collaboration",
   "maturity": "emerging",
   "qualityScore": 0.7,
   "subClassOf": [

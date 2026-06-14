@@ -21,7 +21,7 @@ public:: true
   "@type": "Class",
   "label": "HTTP Protocol",
   "definition": "The Hypertext Transfer Protocol (HTTP) is a stateless, application-layer request-response protocol that forms the foundation of data communication on the World Wide Web, defining the format and semantics of messages exchanged between clients (browsers, API consumers) and servers (web servers, API gateways) over TCP/IP connections. Each HTTP transaction consists of a request message specifying a method (GET, POST, PUT, DELETE, PATCH, HEAD, OPTIONS), a target URI, headers conveying metadata, and an optional body, followed by a response message containing a status code, headers, and an optional body. HTTP has evolved through versions 1.0, 1.1, 2, and 3, with each version improving multiplexing, compression, and connection management.",
-  "domain": "web",
+  "domain": "infrastructure",
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:network-protocol", "label": "Network Protocol"}],
   "relations": {

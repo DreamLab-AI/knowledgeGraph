@@ -4,7 +4,7 @@
   "slug": "description-logic",
   "public": true,
   "classIri": "urn:ngm:class:description-logic",
-  "domain": "mathematics",
+  "domain": "machine-learning",
   "definition": "A family of formal knowledge representation languages used to describe concepts, roles, and individuals with well-defined model-theoretic semantics.",
   "subClassOf": [
     {

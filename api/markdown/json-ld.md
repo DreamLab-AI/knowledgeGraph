@@ -1,27 +1,97 @@
 - ### Definition
-  - JSON-LD (JSON for Linking Data) is a W3C Recommendation that defines a lightweight serialisation syntax for expressing Linked Data using the JSON data format. It adds a @context document that maps JSON keys to RDF IRIs, enabling any JSON document to be treated as an RDF graph whilst remaining valid JSON parseable by standard libraries. JSON-LD is a primary serialisation format for Verifiable Credentials, Schema.org structured data markup, and activity streams (ActivityPub), bridging the gap between pragmatic web development and formal semantic web standards.
+  - JSON-LD (JSON for Linking Data) is a [[W3C]] Recommendation that defines a lightweight serialisation syntax for expressing [[Linked Data]] using the [[JSON]] data format. A `@context` document maps compact JSON keys to full [[RDF]] IRIs, enabling any conformant JSON document to be interpreted as an [[RDF]] graph without abandoning standard JSON tooling. JSON-LD serves as the canonical syntax for [[Verifiable Credentials]], [[Schema.org]] structured data embedded in HTML pages, and the [[ActivityPub]] federated social protocol, making it the most widely deployed Linked Data technology on the open web.
 
-- ### Semantic Classification
-  - owl-class:: json-ld:JSON-LD
-  - owl-role:: Concept
+- ### Overview
+  - JSON-LD bridges the pragmatic world of web development (where JSON is the de-facto data exchange format) and the formal world of the [[Semantic Web]] (where data must carry unambiguous, machine-readable meaning).
+  - Before JSON-LD, developers faced an uncomfortable choice: use JSON and lose semantic precision, or adopt RDF syntaxes such as [[Turtle]] or [[RDF/XML]] that were unfamiliar to most web engineers.
+  - The core insight of JSON-LD is that the `@context` mechanism can be added to any existing JSON document, retrofitting Linked Data semantics without breaking compatibility with existing JSON parsers and libraries.
+  - The specification was first published as a W3C Recommendation in January 2014 (JSON-LD 1.0), then significantly revised in July 2020 (JSON-LD 1.1), with accompanying Processing Algorithms and API, and a Framing specification.
+  - The [[W3C]] JSON-LD Working Group produced these specifications in collaboration with the JSON-LD Community Group.
+  - Adoption is enormous: Schema.org JSON-LD appears in hundreds of millions of web pages; all major search engines (Google, Bing, Yahoo) parse it to generate rich search result snippets.
+
+- ### Key Components
+  - **@context**
+    - The context is the central mechanism: it maps abbreviated term names to full [[IRI]] references and configures how values are interpreted (as strings, typed literals, language-tagged strings, or nested nodes).
+    - Contexts can be embedded inline, referenced by URL, or composed by combining an array of context documents.
+    - JSON-LD 1.1 introduced *scoped contexts* (applied to specific types or properties) and *propagation control*, allowing finer-grained term scoping.
+  - **@id and @type**
+    - `@id` assigns an [[IRI]] identifier to a node, making it referenceable as an RDF subject or object.
+    - `@type` maps to `rdf:type`, connecting the node to an [[Ontology]] class such as `schema:Person` or `vc:VerifiableCredential`.
+  - **Node Objects and Value Objects**
+    - Node objects represent entities (RDF subjects); value objects represent literal RDF values (strings, numbers, dates) with optional datatype or language tags.
+    - Nested node objects serialise RDF blank nodes or named nodes within a single JSON document tree.
+  - **Processing Algorithms**
+    - *Expansion*: removes the context and produces a fully expanded form using absolute IRIs and explicit value objects — canonical for comparison.
+    - *Compaction*: applies a context to produce the most compact human-readable form, the inverse of expansion.
+    - *Flattening*: restructures a document into a single flat array of node objects, ensuring each node appears exactly once.
+    - *Framing*: matches a document against a frame template, reshaping the graph into a particular tree structure suited for an application.
+  - **Canonicalisation (URDNA2015 / RDF Dataset Normalisation)**
+    - Produces a deterministic [[N-Quads]] serialisation by labelling blank nodes in a canonical way, stable under node reordering.
+    - Essential for cryptographic signing: the canonical form is hashed before a signature is applied, as required by [[Data Integrity]] (formerly Linked Data Proofs) and [[Verifiable Credentials]].
+  - **@graph**
+    - Allows multiple top-level node objects in a single document, forming a named [[RDF]] graph.
+    - Used in Verifiable Credential proofs where the credential graph and the proof graph are kept separate.
+
+- ### Applications and Use Cases
+  - **Schema.org Structured Data**
+    - Web publishers embed JSON-LD `<script type="application/ld+json">` blocks in HTML `<head>` sections to expose structured metadata to search engines.
+    - [[Schema.org]] provides the vocabulary (Product, Article, Event, Recipe, JobPosting, etc.); JSON-LD provides the syntax.
+    - Google Search uses this data to generate rich snippets, knowledge panels, and job listings in search results, making it a commercially significant SEO technology.
+  - **Verifiable Credentials**
+    - The [[W3C]] Verifiable Credentials Data Model 1.1 (and 2.0) mandates JSON-LD as the primary serialisation format for interoperable credential exchange.
+    - Credential types (DriverLicenseCredential, UniversityDegreeCredential) are defined in JSON-LD context documents, ensuring that the same credential can be interpreted consistently across different issuers, holders, and verifiers.
+    - The `@context` field in a credential document is a normative requirement, not optional decoration.
+  - **Decentralised Identity**
+    - [[Decentralised Identifiers]] (DIDs) and DID Documents use JSON-LD to express verification methods, service endpoints, and capability delegations in a semantically precise, interoperable form.
+    - JSON-LD canonicalisation enables deterministic signing of DID Documents and Verifiable Presentations.
+  - **ActivityPub and Fediverse**
+    - The [[ActivityPub]] protocol (W3C Recommendation, 2018) defines its Activity Streams 2.0 vocabulary using JSON-LD, enabling federation between servers such as Mastodon, PeerTube, and Pixelfed.
+    - All actors, notes, likes, and follows on the Fediverse are represented as JSON-LD documents.
+  - **Knowledge Graphs**
+    - Enterprise [[Knowledge Graph]] systems (Google Knowledge Graph, Wikidata, DBpedia) publish and consume JSON-LD as an interchange format.
+    - Wikidata's JSON dumps include JSON-LD representations; schema.org's own vocabulary is published as JSON-LD.
+  - **APIs and Hypermedia**
+    - JSON-LD combined with Hydra (a vocabulary for hypermedia-driven APIs) enables self-describing REST APIs where clients can discover capabilities at runtime.
+    - The ActivityStreams 2.0 API and Solid (Tim Berners-Lee's personal data project) both use JSON-LD as the primary data format.
+  - **Ontology Publishing**
+    - OWL 2 ontologies can be serialised in JSON-LD using the OWL 2 JSON-LD mapping, enabling web-native ontology publication and consumption by standard JSON tools.
 
 - ### Relationships
-  - implements [[Linked Data]]
-  - implements [[RDF]]
-  - enables [[Ontology]]
-  - enables [[Semantic Web Linked Data Standard]]
-  - relatedTo [[JSON Schema]]
-  - relatedTo [[SPARQL]]
+  - implements:: [[Linked Data]]
+  - implements:: [[RDF]]
+  - implements:: [[Semantic Web]]
+  - enables:: [[Verifiable Credentials]]
+  - enables:: [[Ontology]]
+  - enables:: [[Knowledge Graph]]
+  - enables:: [[Structured Data]]
+  - enables:: [[Data Integrity]]
+  - requires:: [[IRI]]
+  - requires:: [[JSON]]
+  - uses:: [[Schema.org]]
+  - uses:: [[N-Quads]]
+  - standardizedBy:: [[W3C]]
+  - contrastsWith:: [[JSON Schema]]
+  - contrastsWith:: [[Turtle]]
+  - contrastsWith:: [[RDF/XML]]
+  - relatedTo:: [[SPARQL]]
+  - relatedTo:: [[ActivityPub]]
+  - relatedTo:: [[OWL]]
+  - relatedTo:: [[SHACL]]
+  - bridges-to:: [[Decentralised Identity]]
+  - bridges-to:: [[Search Engine Optimisation]]
 
-- ### Content
-  - JSON-LD 1.1 (W3C Recommendation, July 2020) introduces several enhancements over the initial 1.0 specification, including scoped contexts, type-scoped contexts, property-based value indexing, and improved support for nested nodes. The processing model is defined by a set of algorithms (expansion, compaction, flattening, framing) that transform between different JSON-LD forms, all of which are RDF-equivalent. The specification uses the notion of a context to bind compact term definitions to full IRIs: `"name": {"@id": "http://schema.org/name"}` tells a processor that the `name` key in JSON corresponds to the Schema.org name property.
-  - In the decentralised identity ecosystem, JSON-LD is used in two distinct roles: as the basis for Verifiable Credential (VC) contexts that define the semantic meaning of credential properties (ensuring that "issuer" in one system means the same as "issuer" in another), and within Linked Data Proofs (now Data Integrity) where a proof graph is appended to a JSON-LD document to provide a cryptographic signature. JSON-LD canonicalisation (URDNA2015) produces a deterministic N-Quads serialisation that is stable under reordering and suitable for hashing before signing.
-  - Google, Bing, and other search engines consume JSON-LD embedded in HTML `<script type="application/ld+json">` tags to understand page content and generate rich snippets. Schema.org provides the vocabulary; JSON-LD provides the syntax. This widespread adoption makes JSON-LD arguably the most practically significant Linked Data technology for the open web. Tools including the JSON-LD Playground (json-ld.org/playground) and the pyLD / jsonld.js libraries facilitate development and testing.
+- ### Standards and Context
+  - **JSON-LD 1.0** — W3C Recommendation, January 2014. Introduced the core @context mechanism, the expansion/compaction/flattening algorithms, and the RDF serialisation mapping.
+  - **JSON-LD 1.1** — W3C Recommendation, July 2020. Added scoped contexts, type-scoped contexts, property-based value indexing, nested nodes, and the `@protected` keyword to prevent term redefinition.
+  - **JSON-LD 1.1 Processing Algorithms and API** — companion spec defining the normative algorithms and the JavaScript-style API for implementations.
+  - **JSON-LD 1.1 Framing** — companion spec defining the framing algorithm for reshaping JSON-LD documents into application-specific tree forms.
+  - **RDF Dataset Normalisation (URDNA2015)** — [[W3C]] working draft specifying the canonical blank-node labelling algorithm used before cryptographic signing. Implemented as `rdf-dataset-normalization` (npm) and `pyld` (Python).
+  - **Governing body**: [[W3C]] JSON-LD Working Group (2018–2020), succeeded by the JSON-LD Community Group for ongoing maintenance.
+  - **Key vocabularies relying on JSON-LD**: [[Schema.org]], Activity Streams 2.0, [[Verifiable Credentials]] contexts (`https://www.w3.org/2018/credentials/v1`), DID Core contexts.
+  - **Reference implementations**: `jsonld.js` (JavaScript/Node.js, maintained by the Digital Bazaar team), `pyld` (Python), `titanium-json-ld` (Java), `json-ld-api` (Ruby), `JsonLdProcessor` in .NET.
+  - **Domain remap note**: the original file classified JSON-LD under "blockchain". JSON-LD is a general-purpose W3C data standard; remapped to "data" as the most accurate domain in the permitted set. Its use in [[Verifiable Credentials]] and [[Decentralised Identity]] provides a legitimate connection to blockchain/DID ecosystems, expressed via bridgesTo relations.
 
 - ### Provenance
-  - sources::
-  - migration-date:: 2026-05-19T00:00:00Z
-
-- ### Provenance
-  - sources::
+  - sources:: W3C JSON-LD 1.1 Recommendation (2020), W3C Verifiable Credentials Data Model, Schema.org documentation, ActivityPub W3C Recommendation
+  - updated:: 2026-06-13
   - migration-date:: 2026-05-19T00:00:00Z

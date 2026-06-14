@@ -5,38 +5,98 @@
   "public": true,
   "classIri": "urn:ngm:class:compound",
   "domain": "blockchain",
-  "definition": "Compound is an algorithmic, autonomous interest-rate protocol built on Ethereum that enables users to supply crypto assets to liquidity pools and earn continuously accruing interest, or borrow assets against collateral at algorithmically determined rates. Interest rates adjust dynamically based on the utilisation ratio of each asset pool, removing the need for bilateral loan negotiation. Supplied assets are represented as cTokens \u2014 ERC-20 tokens that accrue interest in real time and can themselves be used as collateral or traded. Governance of protocol parameters is conducted on-chain through the COMP token and the Compound Governor Bravo smart contract system, making it one of the earliest fully decentralised autonomous lending protocols in the DeFi ecosystem.",
+  "definition": "Compound is an algorithmic, autonomous interest-rate protocol built on Ethereum that enables users to supply crypto assets to liquidity pools and earn continuously accruing interest, or borrow assets against over-collateralised positions at algorithmically determined rates. Interest rates adjust dynamically based on the utilisation ratio of each asset pool, eliminating the need for bilateral loan negotiation or centralised intermediaries. Supplied assets are represented as cTokens \u2014 ERC-20 tokens whose exchange rate appreciates with every block as interest accrues \u2014 which can themselves be used as collateral or freely traded. Governance of protocol parameters is conducted on-chain through the COMP token and the Compound Governor Bravo smart-contract system, making it one of the earliest fully decentralised autonomous lending protocols in the DeFi ecosystem.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:de-fi-protocol",
-      "label": "De Fi Protocol"
+      "id": "urn:ngm:class:decentralised-finance-protocol",
+      "label": "Decentralised Finance Protocol"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:ctoken",
+        "label": "cToken"
+      },
+      {
+        "id": "urn:ngm:class:compound-governor-bravo",
+        "label": "Compound Governor Bravo"
+      },
+      {
+        "id": "urn:ngm:class:interest-rate-model",
+        "label": "Interest Rate Model"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:over-collateralisation",
+        "label": "Over-Collateralisation"
+      },
+      {
+        "id": "urn:ngm:class:liquidity-pool",
+        "label": "Liquidity Pool"
+      },
+      {
+        "id": "urn:ngm:class:oracle",
+        "label": "Oracle"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:digital-asset-lending",
         "label": "Digital Asset Lending"
       },
       {
-        "id": "urn:ngm:class:automated-market-maker",
-        "label": "Automated Market Maker"
+        "id": "urn:ngm:class:yield-farming",
+        "label": "Yield Farming"
+      },
+      {
+        "id": "urn:ngm:class:liquidity-mining",
+        "label": "Liquidity Mining"
+      },
+      {
+        "id": "urn:ngm:class:collateralised-borrowing",
+        "label": "Collateralised Borrowing"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:price-oracle",
+        "label": "Price Oracle"
+      },
+      {
+        "id": "urn:ngm:class:ethereum-virtual-machine",
+        "label": "Ethereum Virtual Machine"
+      }
+    ],
     "implements": [],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:maker-dao",
         "label": "MakerDAO"
+      },
+      {
+        "id": "urn:ngm:class:aave",
+        "label": "Aave"
+      },
+      {
+        "id": "urn:ngm:class:uniswap",
+        "label": "Uniswap"
       }
     ],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:algorithmic-market-design",
+        "label": "Algorithmic Market Design"
+      },
+      {
+        "id": "urn:ngm:class:mechanism-design",
+        "label": "Mechanism Design"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:smart-contracts",
@@ -45,27 +105,40 @@
       {
         "id": "urn:ngm:class:governance-token",
         "label": "Governance Token"
+      },
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "id": "urn:ngm:class:erc-20",
+        "label": "ERC-20"
       }
     ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
+    "partOf": [
       {
         "id": "urn:ngm:class:decentralised-finance",
         "label": "Decentralised Finance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:total-value-locked",
+        "label": "Total Value Locked"
       },
       {
-        "id": "urn:ngm:class:compound-governor-bravo",
-        "label": "Compound Governor Bravo"
+        "id": "urn:ngm:class:liquidation",
+        "label": "Liquidation"
       },
       {
-        "id": "urn:ngm:class:liquidity-pool",
-        "label": "Liquidity Pool"
+        "id": "urn:ngm:class:collateral-factor",
+        "label": "Collateral Factor"
       },
       {
-        "id": "urn:ngm:class:yield-farming",
-        "label": "Yield Farming"
+        "id": "urn:ngm:class:autonomous-market-operations",
+        "label": "Autonomous Market Operations"
       }
     ]
   },

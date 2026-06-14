@@ -22,7 +22,7 @@ alias:: MathematicalFoundations
   "@type": "Class",
   "label": "Mathematical Foundations",
   "definition": "Mathematical Foundations refers to the collection of core mathematical disciplines — including linear algebra, calculus, probability theory, discrete mathematics, and number theory — that underpin the formal reasoning required across computer science, cryptography, artificial intelligence, and engineering. These disciplines provide the rigorous axiomatic structures and analytical tools upon which algorithms, proofs, models, and systems are built. Mastery of mathematical foundations is considered prerequisite knowledge for deep work in machine learning, cryptographic protocol design, and distributed systems. They bridge pure abstract reasoning with applied computational practice.",
-  "domain": "science",
+  "domain": "machine-learning",
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:mathematical-science", "label": "Mathematical Science"}],
   "relations": {

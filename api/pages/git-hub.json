@@ -4,7 +4,7 @@
   "slug": "git-hub",
   "public": true,
   "classIri": "urn:ngm:class:git-hub",
-  "domain": "general",
+  "domain": "distributed-collaboration",
   "definition": "GitHub is a web platform for hosting Git repositories, providing version control, code review, issue tracking, and collaboration features. It is owned by Microsoft.",
   "subClassOf": [
     {

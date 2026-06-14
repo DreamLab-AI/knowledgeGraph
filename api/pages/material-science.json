@@ -4,39 +4,138 @@
   "slug": "material-science",
   "public": true,
   "classIri": "urn:ngm:class:material-science",
-  "domain": "general",
-  "definition": "The interdisciplinary study of the structure, properties, processing, and performance of materials, linking their atomic arrangement to observable behaviour.",
+  "domain": "infrastructure",
+  "definition": "Material Science is the interdisciplinary field that studies the structure, properties, processing, and performance of matter across all classes \u2014 metals, ceramics, polymers, semiconductors, and composites \u2014 connecting atomic-scale arrangement to macroscopic behaviour. It integrates principles from physics, chemistry, and engineering to enable the rational design of materials with tailored properties. Computational methods including density functional theory, molecular dynamics simulation, and machine-learning-driven property prediction increasingly complement experimental synthesis and characterisation. The field underpins virtually every technology sector, from microelectronics and energy storage to biomedical implants and advanced manufacturing.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:owl-thing",
-      "label": "owl:Thing"
+      "id": "urn:ngm:class:engineering-discipline",
+      "label": "Engineering Discipline"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
-  "maturity": "established",
+  "qualityScore": 0.72,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:crystallography",
+        "label": "Crystallography"
+      },
+      {
+        "id": "urn:ngm:class:thermodynamics",
+        "label": "Thermodynamics"
+      },
+      {
+        "id": "urn:ngm:class:materials-characterisation",
+        "label": "Materials Characterisation"
+      },
+      {
+        "id": "urn:ngm:class:materials-processing",
+        "label": "Materials Processing"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:quantum-mechanics",
+        "label": "Quantum Mechanics"
+      },
+      {
+        "id": "urn:ngm:class:thermodynamics",
+        "label": "Thermodynamics"
+      },
+      {
+        "id": "urn:ngm:class:computational-chemistry",
+        "label": "Computational Chemistry"
+      }
+    ],
     "enables": [
+      {
+        "id": "urn:ngm:class:semiconductor-manufacturing",
+        "label": "Semiconductor Manufacturing"
+      },
+      {
+        "id": "urn:ngm:class:battery-technology",
+        "label": "Battery Technology"
+      },
+      {
+        "id": "urn:ngm:class:additive-manufacturing",
+        "label": "Additive Manufacturing"
+      },
+      {
+        "id": "urn:ngm:class:nanotechnology",
+        "label": "Nanotechnology"
+      },
       {
         "id": "urn:ngm:class:material-system",
         "label": "Material System"
-      },
-      {
-        "id": "urn:ngm:class:quantum-computation-paradigm",
-        "label": "Quantum Computing"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:experimental-physics",
+        "label": "Experimental Physics"
+      },
+      {
+        "id": "urn:ngm:class:chemistry",
+        "label": "Chemistry"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:materials-engineering",
+        "label": "Materials Engineering"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:quantum-computing",
+        "label": "Quantum Computing"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:data-driven-discovery",
+        "label": "Data-Driven Discovery"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:nanoscience",
+        "label": "Nanoscience"
+      },
+      {
+        "id": "urn:ngm:class:condensed-matter-physics",
+        "label": "Condensed Matter Physics"
+      },
+      {
+        "id": "urn:ngm:class:surface-science",
+        "label": "Surface Science"
+      },
+      {
+        "id": "urn:ngm:class:materials-informatics",
+        "label": "Materials Informatics"
+      }
+    ]
   },
   "wikilinks": [
     {

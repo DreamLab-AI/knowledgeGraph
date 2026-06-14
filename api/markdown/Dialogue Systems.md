@@ -55,7 +55,7 @@ public:: true
   "@type": "Class",
   "label": "Dialogue Systems",
   "definition": "Dialogue systems are software systems that converse with users in natural language across one or more turns. They include task-oriented assistants and open-domain conversational agents.",
-  "domain": "nlp",
+  "domain": "ai",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

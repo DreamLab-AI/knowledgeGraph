@@ -4,8 +4,8 @@
   "slug": "probability-theory",
   "public": true,
   "classIri": "urn:ngm:class:probability-theory",
-  "domain": "science",
-  "definition": "Probability theory is the branch of mathematics concerned with the rigorous analysis of random phenomena, built on measure-theoretic foundations introduced by Andrei Kolmogorov in 1933. It provides a formal language for quantifying uncertainty, defining random variables, probability spaces, and expectation operators over sigma-algebras.",
+  "domain": "machine-learning",
+  "definition": "Probability theory is the branch of mathematics that provides a rigorous framework for quantifying and reasoning about uncertainty and random phenomena. Built on measure-theoretic foundations formalised by Andrei Kolmogorov in 1933, it defines probability spaces, random variables, and expectation operators over sigma-algebras to give a unified axiomatic treatment of chance. The theory encompasses both frequentist and Bayesian interpretations, and its core results \u2014 the law of large numbers, the central limit theorem, and the law of total probability \u2014 underpin virtually every quantitative discipline from statistical inference to machine learning and financial mathematics.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:measure-theory",
@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.76,
   "maturity": "mature",
   "relationships": {
     "hasPart": [
@@ -24,9 +24,38 @@
       {
         "id": "urn:ngm:class:markov-chain",
         "label": "Markov Chain"
+      },
+      {
+        "id": "urn:ngm:class:random-variable",
+        "label": "Random Variable"
+      },
+      {
+        "id": "urn:ngm:class:probability-distribution",
+        "label": "Probability Distribution"
+      },
+      {
+        "id": "urn:ngm:class:stochastic-process",
+        "label": "Stochastic Process"
+      },
+      {
+        "id": "urn:ngm:class:central-limit-theorem",
+        "label": "Central Limit Theorem"
       }
     ],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:measure-theory",
+        "label": "Measure Theory"
+      },
+      {
+        "id": "urn:ngm:class:set-theory",
+        "label": "Set Theory"
+      },
+      {
+        "id": "urn:ngm:class:real-analysis",
+        "label": "Real Analysis"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:stochastic-differential-equation",
@@ -35,14 +64,74 @@
       {
         "id": "urn:ngm:class:monte-carlo-methods",
         "label": "Monte Carlo Methods"
+      },
+      {
+        "id": "urn:ngm:class:statistical-inference",
+        "label": "Statistical Inference"
+      },
+      {
+        "id": "urn:ngm:class:uncertainty-quantification",
+        "label": "Uncertainty Quantification"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:information-theory",
+        "label": "Information Theory"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:sigma-algebra",
+        "label": "Sigma-Algebra"
+      },
+      {
+        "id": "urn:ngm:class:lebesgue-integration",
+        "label": "Lebesgue Integration"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:fuzzy-logic",
+        "label": "Fuzzy Logic"
+      },
+      {
+        "id": "urn:ngm:class:deterministic-computation",
+        "label": "Deterministic Computation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:diffusion-models",
+        "label": "Diffusion Models"
+      },
+      {
+        "id": "urn:ngm:class:conformal-prediction",
+        "label": "Conformal Prediction"
+      },
+      {
+        "id": "urn:ngm:class:financial-mathematics",
+        "label": "Financial Mathematics"
+      }
+    ],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-networks",
+        "label": "Bayesian Networks"
+      },
+      {
+        "id": "urn:ngm:class:probabilistic-graphical-models",
+        "label": "Probabilistic Graphical Models"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
@@ -51,8 +140,20 @@
         "label": "Bayesian Decision Theory"
       },
       {
-        "id": "urn:ngm:class:stochastic-process",
-        "label": "Stochastic Process"
+        "id": "urn:ngm:class:statistics",
+        "label": "Statistics"
+      },
+      {
+        "id": "urn:ngm:class:causal-inference",
+        "label": "Causal Inference"
+      },
+      {
+        "id": "urn:ngm:class:information-geometry",
+        "label": "Information Geometry"
+      },
+      {
+        "id": "urn:ngm:class:optimal-transport",
+        "label": "Optimal Transport"
       }
     ]
   },

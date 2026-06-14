@@ -5,34 +5,94 @@
   "public": true,
   "classIri": "urn:ngm:class:enterprise-search",
   "domain": "artificial-intelligence",
-  "definition": "Enterprise search is the organisational capability to retrieve relevant information from heterogeneous internal data sources\u2014documents, databases, emails, intranets, and code repositories\u2014within a single unified query interface. Modern enterprise search systems increasingly combine full-text indexing with semantic retrieval, vector embeddings, and retrieval-augmented generation (RAG) to surface contextually relevant results rather than mere keyword matches. The discipline sits at the intersection of information retrieval, knowledge management, and applied AI, requiring connectors, access-control enforcement, and relevance tuning at scale.",
+  "definition": "Enterprise Search is the organisational capability to retrieve relevant information from heterogeneous internal data sources\u2014documents, databases, emails, intranets, wikis, and code repositories\u2014through a single unified query interface with access-control enforcement. Modern systems combine full-text inverted-index retrieval with dense vector embeddings and semantic search to surface contextually relevant results beyond simple keyword matching. The discipline integrates information retrieval, knowledge management, and applied AI, requiring content connectors, identity-aware access control, relevance tuning, and low-latency indexing pipelines at organisational scale. Retrieval-Augmented Generation (RAG) architectures have become a dominant deployment pattern, passing retrieved document chunks to large language models to synthesise grounded, cited answers.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ai-application",
-      "label": "AI Application"
+      "id": "urn:ngm:class:information-retrieval",
+      "label": "Information Retrieval"
     }
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "emerging",
+  "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:inverted-index",
+        "label": "Inverted Index"
+      },
+      {
+        "id": "urn:ngm:class:content-connector",
+        "label": "Content Connector"
+      },
+      {
+        "id": "urn:ngm:class:relevance-ranking",
+        "label": "Relevance Ranking"
+      },
+      {
+        "id": "urn:ngm:class:query-understanding",
+        "label": "Query Understanding"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:information-retrieval",
         "label": "Information Retrieval"
+      },
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "id": "urn:ngm:class:identity-provider",
+        "label": "Identity Provider"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:retrieval-augmented-generation",
         "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-discovery",
+        "label": "Knowledge Discovery"
+      },
+      {
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:document-processing",
+        "label": "Document Processing"
+      },
+      {
+        "id": "urn:ngm:class:data-ingestion-pipeline",
+        "label": "Data Ingestion Pipeline"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:web-search",
+        "label": "Web Search"
+      },
+      {
+        "id": "urn:ngm:class:database-query",
+        "label": "Database Query"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:conversational-ai",
+        "label": "Conversational AI"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:semantic-search",
@@ -41,6 +101,18 @@
       {
         "id": "urn:ngm:class:vector-database",
         "label": "Vector Database"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:text-embeddings",
+        "label": "Text Embeddings"
+      },
+      {
+        "id": "urn:ngm:class:bm25",
+        "label": "BM25"
       }
     ],
     "supports": [],
@@ -52,8 +124,12 @@
         "label": "Knowledge Graph"
       },
       {
-        "id": "urn:ngm:class:natural-language-processing",
-        "label": "Natural Language Processing"
+        "id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      },
+      {
+        "id": "urn:ngm:class:document-management-system",
+        "label": "Document Management System"
       }
     ]
   },

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:normalising-flow",
   "domain": "machine-learning",
-  "definition": "A normalising flow is a generative model that transforms a simple base probability distribution into a complex one through a sequence of invertible mappings, allowing exact likelihood computation.",
+  "definition": "A normalising flow is a class of deep generative models that learns a bijective mapping between a simple tractable base distribution (typically a standard multivariate Gaussian) and a complex target data distribution through a composition of invertible, differentiable transformations. Because each transformation is invertible, the change-of-variables formula yields an exact closed-form expression for the data log-likelihood, enabling both efficient sampling and precise density estimation. This exact likelihood property distinguishes normalising flows from latent variable models such as variational autoencoders and implicit models such as generative adversarial networks. Architectures are distinguished by how they design transformations whose Jacobian determinants can be computed efficiently, either through triangular Jacobians (autoregressive flows, coupling layers) or via continuous-time dynamics (neural ODEs).",
   "subClassOf": [
     {
       "id": "urn:ngm:class:generative-model",
@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.75,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
@@ -21,18 +21,104 @@
       {
         "id": "urn:ngm:class:probabilistic-model",
         "label": "Probabilistic Model"
+      },
+      {
+        "id": "urn:ngm:class:invertible-neural-network",
+        "label": "Invertible Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:change-of-variables",
+        "label": "Change of Variables"
       }
     ],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:density-estimation",
+        "label": "Density Estimation"
+      },
+      {
+        "id": "urn:ngm:class:variational-inference",
+        "label": "Variational Inference"
+      },
+      {
+        "id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      },
+      {
+        "id": "urn:ngm:class:data-augmentation",
+        "label": "Data Augmentation"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:generative-adversarial-network",
+        "label": "Generative Adversarial Network"
+      },
+      {
+        "id": "urn:ngm:class:variational-autoencoder",
+        "label": "Variational Autoencoder"
+      },
+      {
+        "id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:scientific-computing",
+        "label": "Scientific Computing"
+      },
+      {
+        "id": "urn:ngm:class:computational-fluid-dynamics",
+        "label": "Computational Fluid Dynamics"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:autoregressive-model",
+        "label": "Autoregressive Model"
+      },
+      {
+        "id": "urn:ngm:class:coupling-layer",
+        "label": "Coupling Layer"
+      },
+      {
+        "id": "urn:ngm:class:jacobian-determinant",
+        "label": "Jacobian Determinant"
+      },
+      {
+        "id": "urn:ngm:class:neural-ode",
+        "label": "Neural ODE"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
+        "id": "urn:ngm:class:latent-variable-model",
+        "label": "Latent Variable Model"
+      },
+      {
+        "id": "urn:ngm:class:maximum-likelihood-estimation",
+        "label": "Maximum Likelihood Estimation"
+      },
+      {
+        "id": "urn:ngm:class:information-theory",
+        "label": "Information Theory"
+      }
+    ]
   },
   "wikilinks": [
     {

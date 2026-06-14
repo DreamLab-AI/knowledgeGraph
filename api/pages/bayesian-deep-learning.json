@@ -4,7 +4,7 @@
   "slug": "bayesian-deep-learning",
   "public": true,
   "classIri": "urn:ngm:class:bayesian-deep-learning",
-  "domain": "deep-learning",
+  "domain": "machine-learning",
   "definition": "Bayesian deep learning combines neural networks with Bayesian inference to represent uncertainty over model parameters and predictions. It treats network weights as random variables with distributions rather than fixed values.",
   "subClassOf": [
     {

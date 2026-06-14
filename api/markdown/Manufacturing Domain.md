@@ -87,7 +87,7 @@ public:: true
   "@type": "Class",
   "label": "Manufacturing Domain",
   "definition": "The Manufacturing Domain covers the design and operation of systems that produce physical goods at scale. Its scope includes process automation, industrial robotics, quality control and supply chain integration. It is a sub-area of the Robotics Domain concerned with production. The boundary excludes the financial analysis of production economics, which belongs to the Financial Markets Domain.",
-  "domain": "manufacturing",
+  "domain": "robotics",
   "maturity": "emerging",
   "qualityScore": 0.7,
   "subClassOf": [

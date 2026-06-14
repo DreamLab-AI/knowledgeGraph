@@ -21,7 +21,7 @@ public:: true
   "@type": "Class",
   "label": "Application Development",
   "definition": "Application development is the systematic process of designing, building, testing, and deploying software applications to meet specified user or organisational requirements, encompassing activities from requirements analysis through to release and maintenance. It involves selecting appropriate technology stacks, architectural patterns, and development methodologies to produce reliable, maintainable, and performant software. The discipline spans mobile, web, desktop, and embedded application domains, each with distinct toolchains and constraints.",
-  "domain": "web",
+  "domain": "infrastructure",
   "maturity": "mature",
   "subClassOf": [{"@id": "urn:ngm:class:software-development", "label": "Software Development"}],
   "relations": {

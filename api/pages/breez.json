@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:breez",
   "domain": "blockchain",
-  "definition": "Breez is a company that develops a non-custodial Lightning Network wallet and software development kit for Bitcoin payments.",
+  "definition": "Breez is a company and open-source platform providing a non-custodial [[Lightning Network]] wallet and a [[Software Development Kit]] (SDK) that enables developers to embed Bitcoin Lightning payments into applications without managing node infrastructure. Breez operates as a Lightning Service Provider (LSP), handling inbound liquidity and channel management on behalf of users while users retain sole custody of their private keys. The Breez SDK abstracts away the complexity of [[Payment Channel]] lifecycle management, splicing, and [[Liquidity]] provisioning, exposing a clean API for instant, low-fee Bitcoin payments. Its architecture is grounded in the [[LNURL]] protocol suite and [[Greenlight]] node-as-a-service infrastructure from Blockstream.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:lightning-network",
@@ -13,31 +13,138 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.75,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:breez-sdk",
+        "label": "Breez SDK"
+      },
+      {
+        "id": "urn:ngm:class:breez-wallet",
+        "label": "Breez Wallet"
+      }
+    ],
     "requires": [
       {
-        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol",
+        "id": "urn:ngm:class:bitcoin",
         "label": "Bitcoin"
+      },
+      {
+        "id": "urn:ngm:class:payment-channel",
+        "label": "Payment Channel"
+      },
+      {
+        "id": "urn:ngm:class:liquidity",
+        "label": "Liquidity"
       }
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:payment-channel",
-        "label": "Payment Channel"
+        "id": "urn:ngm:class:self-custody",
+        "label": "Self-Custody"
+      },
+      {
+        "id": "urn:ngm:class:instant-payment",
+        "label": "Instant Payment"
+      },
+      {
+        "id": "urn:ngm:class:non-custodial-wallet",
+        "label": "Non-Custodial Wallet"
+      },
+      {
+        "id": "urn:ngm:class:mobile-bitcoin-wallet",
+        "label": "Mobile Bitcoin Wallet"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-blockchain",
+        "label": "Bitcoin Blockchain"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:lightning-service-provider",
+        "label": "Lightning Service Provider"
+      },
+      {
+        "id": "urn:ngm:class:just-in-time-liquidity",
+        "label": "Just-In-Time Liquidity"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:custodial-wallet",
+        "label": "Custodial Wallet"
+      },
+      {
+        "id": "urn:ngm:class:strike",
+        "label": "Strike"
+      },
+      {
+        "id": "urn:ngm:class:muun-wallet",
+        "label": "Muun Wallet"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:open-banking",
+        "label": "Open Banking"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:lnurl",
+        "label": "LNURL"
+      },
+      {
+        "id": "urn:ngm:class:greenlight",
+        "label": "Greenlight"
+      },
+      {
+        "id": "urn:ngm:class:bolt11",
+        "label": "BOLT11"
+      },
+      {
+        "id": "urn:ngm:class:bolt12",
+        "label": "BOLT12"
+      },
+      {
+        "id": "urn:ngm:class:submarine-swap",
+        "label": "Submarine Swap"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:phoenix-wallet",
+        "label": "Phoenix Wallet"
+      },
+      {
+        "id": "urn:ngm:class:lnd",
+        "label": "LND"
+      },
+      {
+        "id": "urn:ngm:class:cln",
+        "label": "Core Lightning"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-lightning-wallet",
+        "label": "Bitcoin Lightning Wallet"
+      }
+    ]
   },
   "wikilinks": [
     {

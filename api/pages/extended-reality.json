@@ -5,15 +5,15 @@
   "public": true,
   "classIri": "urn:ngm:class:extended-reality",
   "domain": "spatial-computing",
-  "definition": "Extended Reality (XR) is an umbrella term encompassing Virtual Reality (VR), Augmented Reality (AR), and Mixed Reality (MR). XR technologies alter or extend the user's perception of the physical environment through head-mounted displays, spatial tracking, and real-time rendering. XR serves as the primary experiential layer of the spatial computing stack, bridging physical and digital environments across training, collaboration, entertainment, and industrial applications.",
+  "definition": "Extended Reality (XR) is an umbrella term encompassing Virtual Reality (VR), Augmented Reality (AR), and Mixed Reality (MR) \u2014 technologies that collectively span the full Reality-Virtuality Continuum first formalised by Milgram and Kishino (1994). XR systems alter or extend a user's perception of the physical environment through head-mounted displays, inside-out spatial tracking, real-time 3D rendering, and multi-modal input (gaze, gesture, voice, haptics). As the primary experiential layer of the spatial computing stack, XR bridges physical and digital environments across enterprise training, healthcare simulation, collaborative design, and consumer entertainment. Standardisation through Khronos OpenXR and W3C WebXR enables cross-vendor application portability and browser-based delivery.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:sc-platform-and-environment",
-      "label": "Platform and Environment"
+      "id": "urn:ngm:class:spatial-computing",
+      "label": "Spatial Computing"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.3,
+  "qualityScore": 0.72,
   "maturity": "emerging",
   "relationships": {
     "hasPart": [
@@ -28,37 +28,118 @@
       {
         "id": "urn:ngm:class:mixed-reality",
         "label": "Mixed Reality"
-      }
-    ],
-    "requires": [],
-    "enables": [
-      {
-        "id": "urn:ngm:class:virtual-environment",
-        "label": "Virtual Environment"
       },
       {
-        "id": "urn:ngm:class:immersive-experience",
-        "label": "Immersive Experience"
+        "id": "urn:ngm:class:webxr",
+        "label": "WebXR"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [
+    "requires": [
       {
         "id": "urn:ngm:class:xr-hardware",
         "label": "XR Hardware"
       },
       {
+        "id": "urn:ngm:class:spatial-tracking",
+        "label": "Spatial Tracking"
+      },
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:remote-collaboration",
+        "label": "Remote Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:two-dimensional-interface",
+        "label": "Two-Dimensional Interface"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "uses": [
+      {
         "id": "urn:ngm:class:haptics",
         "label": "Haptics"
+      },
+      {
+        "id": "urn:ngm:class:hand-tracking",
+        "label": "Hand Tracking"
+      },
+      {
+        "id": "urn:ngm:class:eye-tracking",
+        "label": "Eye Tracking"
+      },
+      {
+        "id": "urn:ngm:class:simultaneous-localisation-and-mapping",
+        "label": "Simultaneous Localisation and Mapping"
       }
     ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:openxr",
+        "label": "OpenXR"
+      },
+      {
+        "id": "urn:ngm:class:webxr-device-api",
+        "label": "WebXR Device API"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human-Computer Interaction"
+      },
+      {
+        "id": "urn:ngm:class:presence",
+        "label": "Presence"
+      },
+      {
+        "id": "urn:ngm:class:embodied-cognition",
+        "label": "Embodied Cognition"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

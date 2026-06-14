@@ -5,19 +5,49 @@
   "public": true,
   "classIri": "urn:ngm:class:scalability",
   "domain": "infrastructure",
-  "definition": "Scalability is the property of a system that describes its capacity to handle increasing workloads by adding resources, without proportionate degradation in performance, cost efficiency, or reliability. Horizontal scalability adds more nodes to a distributed cluster; vertical scalability increases the resources of existing nodes. In distributed systems, achieving linear or near-linear scalability requires careful attention to coordination overhead, data partitioning strategies, and consistency trade-offs as captured by the CAP theorem. Scalability is a first-order design concern in cloud-native architectures, blockchain networks, and AI inference platforms serving large user populations.",
+  "definition": "Scalability is the fundamental system property describing the capacity to handle increasing workloads\u2014in throughput, data volume, concurrency, or geographic reach\u2014by adding resources without proportionate degradation in performance, cost efficiency, or reliability. It encompasses both vertical scaling (augmenting the capacity of existing nodes) and horizontal scaling (adding more nodes to a distributed cluster), each with distinct architectural implications governed by coordination overhead, data partitioning strategies, and consistency trade-offs. In distributed systems, achieving linear or near-linear scalability requires careful attention to the CAP theorem and its practical refinement, PACELC, which explicitly models the latency\u2013consistency tension even in partition-free conditions. Scalability is a first-order design concern in cloud-native architectures, blockchain networks, edge computing platforms, and AI inference pipelines serving large or rapidly growing user populations.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:scalable-architecture",
-      "label": "Scalable Architecture"
+      "id": "urn:ngm:class:system-properties",
+      "label": "System Properties"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.74,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:horizontal-scaling",
+        "label": "Horizontal Scaling"
+      },
+      {
+        "id": "urn:ngm:class:vertical-scaling",
+        "label": "Vertical Scaling"
+      },
+      {
+        "id": "urn:ngm:class:data-partitioning",
+        "label": "Data Partitioning"
+      },
+      {
+        "id": "urn:ngm:class:load-balancing",
+        "label": "Load Balancing"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "id": "urn:ngm:class:data-partitioning",
+        "label": "Data Partitioning"
+      },
+      {
+        "id": "urn:ngm:class:stateless-architecture",
+        "label": "Stateless Architecture"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:high-performance-computing",
@@ -26,17 +56,48 @@
       {
         "id": "urn:ngm:class:fault-tolerance",
         "label": "Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:elastic-computing",
+        "label": "Elastic Computing"
+      },
+      {
+        "id": "urn:ngm:class:global-deployments",
+        "label": "Global Deployments"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [
+    "dependsOn": [
       {
-        "id": "urn:ngm:class:distributed-systems",
-        "label": "Distributed Systems"
+        "id": "urn:ngm:class:cap-theorem",
+        "label": "CAP Theorem"
       },
+      {
+        "id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:monolithic-architecture",
+        "label": "Monolithic Architecture"
+      },
+      {
+        "id": "urn:ngm:class:vertical-integration",
+        "label": "Vertical Integration"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain-scalability",
+        "label": "Blockchain Scalability"
+      },
+      {
+        "id": "urn:ngm:class:ai-model-scaling",
+        "label": "AI Model Scaling"
+      }
+    ],
+    "uses": [
       {
         "id": "urn:ngm:class:microservices-architecture",
         "label": "Microservices Architecture"
@@ -44,9 +105,34 @@
       {
         "id": "urn:ngm:class:kubernetes",
         "label": "Kubernetes"
+      },
+      {
+        "id": "urn:ngm:class:consistent-hashing",
+        "label": "Consistent Hashing"
+      },
+      {
+        "id": "urn:ngm:class:caching",
+        "label": "Caching"
+      },
+      {
+        "id": "urn:ngm:class:message-queuing",
+        "label": "Message Queuing"
       }
     ],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:cloud-native-architecture",
+        "label": "Cloud-Native Architecture"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:ai-inference",
+        "label": "AI Inference"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
@@ -59,16 +145,16 @@
         "label": "Performance Optimization"
       },
       {
-        "id": "urn:ngm:class:distributed-architecture",
-        "label": "Distributed Architecture"
-      },
-      {
-        "id": "urn:ngm:class:blockchain-scalability",
-        "label": "Blockchain Scalability"
-      },
-      {
         "id": "urn:ngm:class:resilience",
         "label": "Resilience"
+      },
+      {
+        "id": "urn:ngm:class:availability",
+        "label": "Availability"
+      },
+      {
+        "id": "urn:ngm:class:distributed-architecture",
+        "label": "Distributed Architecture"
       }
     ]
   },

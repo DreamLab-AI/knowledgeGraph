@@ -4,7 +4,7 @@
   "slug": "content-licensing",
   "public": true,
   "classIri": "urn:ngm:class:content-licensing",
-  "domain": "media",
+  "domain": "governance",
   "definition": "Content Licensing is the legal and commercial framework through which rights holders grant third parties permission to use, reproduce, distribute, or monetise creative or informational works under defined conditions, terms, and compensation structures. It governs the relationship between creators, intermediary platforms, and end consumers across media, software, data, and digital asset categories.",
   "subClassOf": [
     {

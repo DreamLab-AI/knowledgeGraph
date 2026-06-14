@@ -4,35 +4,86 @@
   "slug": "cross-border-payments",
   "public": true,
   "classIri": "urn:ngm:class:cross-border-payments",
-  "domain": "blockchain",
-  "definition": "Cross-Border Payments are financial transactions that originate in one country and are settled in another, requiring currency conversion and multi-jurisdiction clearing. Traditional correspondent banking routes incur multi-day settlement cycles and layered fees; blockchain-based rails\u2014including stablecoins, payment channels, and CBDCs\u2014reduce settlement to minutes and lower intermediary costs. They sit at the intersection of monetary policy, regulatory compliance, and distributed-ledger technology.",
+  "domain": "finance",
+  "definition": "Cross-Border Payments are financial transactions that originate in one country and are settled in another, requiring currency conversion, multi-jurisdiction regulatory compliance, and interoperability between disparate payment systems. Traditional correspondent banking networks rely on SWIFT messaging and chains of intermediary banks, incurring multi-day settlement cycles, layered fees, and significant opacity. Blockchain-based payment rails\u2014including stablecoins, payment channels, and Central Bank Digital Currencies\u2014compress settlement latency and reduce intermediary costs by enabling atomic finality and programmable escrow. The domain sits at the intersection of monetary policy, AML/KYC regulation, ISO 20022 standardisation, and distributed-ledger technology.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:bc-defi-and-economics",
-      "label": "BC DeFi and Economics"
+      "id": "urn:ngm:class:financial-services",
+      "label": "Financial Services"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:smart-contract",
-        "label": "Smart Contract"
+        "id": "urn:ngm:class:aml-kyc",
+        "label": "AML/KYC"
+      },
+      {
+        "id": "urn:ngm:class:currency-exchange",
+        "label": "Currency Exchange"
+      },
+      {
+        "id": "urn:ngm:class:correspondent-banking",
+        "label": "Correspondent Banking"
       }
     ],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:remittance",
+        "label": "Remittance"
+      },
+      {
+        "id": "urn:ngm:class:trade-finance",
+        "label": "Trade Finance"
+      },
+      {
+        "id": "urn:ngm:class:financial-inclusion",
+        "label": "Financial Inclusion"
+      }
+    ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:consensus-mechanism",
-        "label": "Consensus Mechanism"
+        "id": "urn:ngm:class:payment-infrastructure",
+        "label": "Payment Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
       }
     ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:domestic-payments",
+        "label": "Domestic Payments"
+      },
+      {
+        "id": "urn:ngm:class:correspondent-banking",
+        "label": "Correspondent Banking"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:tokenisation",
+        "label": "Tokenisation"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:stablecoin",
@@ -41,15 +92,48 @@
       {
         "id": "urn:ngm:class:lightning-network",
         "label": "Lightning Network"
+      },
+      {
+        "id": "urn:ngm:class:swift-messaging",
+        "label": "SWIFT Messaging"
+      },
+      {
+        "id": "urn:ngm:class:iso-20022",
+        "label": "ISO 20022"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
       }
     ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:bis-cpmi",
+        "label": "BIS CPMI"
+      },
+      {
+        "id": "urn:ngm:class:financial-stability-board",
+        "label": "Financial Stability Board"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
         "id": "urn:ngm:class:decentralised-finance",
         "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      },
+      {
+        "id": "urn:ngm:class:fatf-travel-rule",
+        "label": "FATF Travel Rule"
+      },
+      {
+        "id": "urn:ngm:class:forex",
+        "label": "Forex"
       }
     ]
   },

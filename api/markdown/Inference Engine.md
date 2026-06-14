@@ -20,44 +20,157 @@ public:: true
   "@id": "urn:ngm:class:inference-engine",
   "@type": "Class",
   "label": "Inference Engine",
-  "definition": "An Inference Engine is a specialised software runtime optimised for executing trained machine learning models in production — transforming input data into predictions, classifications, or generated content — with primary objectives of minimising latency, maximising throughput, and efficiently utilising hardware accelerators (GPUs, TPUs, NPUs). Inference engines apply techniques including operator fusion, kernel auto-tuning, mixed-precision quantisation, and memory layout optimisation to close the performance gap between a training-time model representation and optimal hardware utilisation, and they typically accept models in portable interchange formats such as ONNX or TensorRT engine plans to decouple model architecture from the serving runtime.",
+  "definition": "An Inference Engine is a specialised software runtime optimised for executing trained machine learning models in production environments, transforming input data into predictions, classifications, embeddings, or generated content with primary objectives of minimising latency, maximising throughput, and efficiently utilising hardware accelerators such as GPUs, TPUs, and NPUs. Inference engines apply techniques including operator fusion, kernel auto-tuning, mixed-precision quantisation, and memory layout optimisation to close the performance gap between a training-time model representation and optimal hardware utilisation. They typically accept models in portable interchange formats such as ONNX or TensorRT engine plans, decoupling model architecture from the serving runtime, and are deployed within MLOps pipelines to serve AI applications at production scale. Modern inference engines address both traditional deep learning models (CNNs, transformers for classification and detection) and large language model serving, where techniques such as continuous batching, paged KV-cache management, and speculative decoding are critical to economic viability.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:inference", "label": "Inference"}],
+  "subClassOf": [
+    {"@id": "urn:ngm:class:inference", "label": "Inference"}
+  ],
+  "sameAs": [
+    {"@id": "urn:ngm:class:model-serving-runtime", "label": "Model Serving Runtime"},
+    {"@id": "urn:ngm:class:inference-runtime", "label": "Inference Runtime"}
+  ],
   "relations": {
-    "relatedTo": [
-      {"@id": "urn:ngm:class:inference-hardware", "label": "Inference Hardware"},
-      {"@id": "urn:ngm:class:gpu-computing", "label": "GPU Computing"},
-      {"@id": "urn:ngm:class:tensor-processing-unit", "label": "Tensor Processing Unit"},
-      {"@id": "urn:ngm:class:hardware-acceleration", "label": "Hardware Acceleration"},
-      {"@id": "urn:ngm:class:latency", "label": "Latency"}
+    "hasPart": [
+      {"@id": "urn:ngm:class:operator-fusion", "label": "Operator Fusion"},
+      {"@id": "urn:ngm:class:kernel-auto-tuning", "label": "Kernel Auto-Tuning"},
+      {"@id": "urn:ngm:class:dynamic-batching", "label": "Dynamic Batching"},
+      {"@id": "urn:ngm:class:quantisation", "label": "Quantisation"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:mlops", "label": "MLOps"},
+      {"@id": "urn:ngm:class:ai-deployment", "label": "AI Deployment"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:machine-learning-discipline-model", "label": "Machine Learning Model"},
+      {"@id": "urn:ngm:class:hardware-acceleration", "label": "Hardware Acceleration"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:real-time-inference-at-edge", "label": "Real-Time Inference at Edge"},
+      {"@id": "urn:ngm:class:large-language-model-serving", "label": "Large Language Model Serving"},
       {"@id": "urn:ngm:class:ai-deployment", "label": "AI Deployment"}
     ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:gpu-computing", "label": "GPU Computing"},
+      {"@id": "urn:ngm:class:tensor-processing-unit", "label": "Tensor Processing Unit"},
+      {"@id": "urn:ngm:class:inference-hardware", "label": "Inference Hardware"}
+    ],
     "uses": [
-      {"@id": "urn:ngm:class:machine-learning-discipline-model", "label": "Machine Learning Model"}
+      {"@id": "urn:ngm:class:onnx", "label": "ONNX"},
+      {"@id": "urn:ngm:class:compute-unified-device-architecture", "label": "CUDA"},
+      {"@id": "urn:ngm:class:speculative-decoding", "label": "Speculative Decoding"}
     ],
     "supports": [
-      {"@id": "urn:ngm:class:mlops", "label": "MLOps"}
+      {"@id": "urn:ngm:class:mlops", "label": "MLOps"},
+      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:training-framework", "label": "Training Framework"},
+      {"@id": "urn:ngm:class:eager-execution", "label": "Eager Execution"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:latency", "label": "Latency"},
+      {"@id": "urn:ngm:class:throughput", "label": "Throughput"},
+      {"@id": "urn:ngm:class:model-compression", "label": "Model Compression"},
+      {"@id": "urn:ngm:class:neural-processing-unit", "label": "Neural Processing Unit"},
+      {"@id": "urn:ngm:class:kv-cache", "label": "KV Cache"}
     ]
   },
-  "quality": 0.8
+  "quality": 0.75,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-13T00:00:00Z",
+    "inferenceRule": "ManualEnrichment"
+  }
 }
 ```
 
 - ### Definition
-  - An [[Inference Engine]] is a production software runtime that executes trained [[Machine Learning Model]] graphs against input data with minimal latency and maximum hardware efficiency — applying operator fusion, quantisation, and kernel optimisation across [[GPU Computing]], [[Tensor Processing Unit]], and edge accelerators — enabling [[Real-Time Inference at Edge]] and reliable [[AI Deployment]] at scale within [[MLOps]] pipelines.
+  - An [[Inference Engine]] is a production software runtime that executes trained [[Machine Learning Model]] computation graphs against input data, applying [[Operator Fusion]], [[Quantisation]], and kernel-level optimisations to achieve minimal latency and maximal hardware efficiency across [[GPU Computing]], [[Tensor Processing Unit]], and edge accelerators. By decoupling model representation (typically via [[ONNX]] or compiler IRs) from hardware-specific execution, inference engines bridge the gap between research frameworks and production-grade [[AI Deployment]] — enabling [[Real-Time Inference at Edge]], scalable [[Large Language Model Serving]], and reliable operation within [[MLOps]] pipelines.
+
+- ### Overview
+  - The distinction between training frameworks and inference engines emerged as deep learning models grew too large for interpreted Python dispatch to meet production latency requirements. Early deep learning deployments (2013–2016) used the same Caffe, TensorFlow, or Theano graphs for both training and serving, accepting the overhead of Python interpreter dispatch and unoptimised memory layouts.
+  - NVIDIA TensorRT (2017) was among the first purpose-built inference optimisers: it ingested a trained TensorFlow or Caffe model, applied layer fusion, precision calibration (FP16, INT8), and kernel auto-selection, then compiled a hardware-specific engine plan that executed significantly faster than the original framework with a reduced memory footprint.
+  - The [[ONNX]] (Open Neural Network Exchange) format, introduced by Facebook and Microsoft in 2017, created a model interchange layer that decoupled model definition from inference runtime, enabling competition among engine vendors and hardware providers.
+  - Modern inference engines address two broad problem domains:
+    - **Discriminative and generative deep learning** (CNNs, vision transformers, diffusion models) where batch-compile-and-deploy patterns dominate.
+    - **[[Large Language Model Serving]]** where autoregressive token generation introduces unique challenges of variable sequence length, [[KV Cache]] memory management, and continuous batching.
+
+- ### Key Components and Mechanisms
+  - **Graph Optimisation**
+    - Constant folding: pre-computes fixed subgraphs at compile time to eliminate redundant runtime computation.
+    - Dead code elimination: removes unused operators and tensor paths from the execution graph.
+    - [[Operator Fusion]]: merges sequences of operations (e.g., convolution → batch norm → ReLU) into a single kernel, reducing memory round-trips and kernel launch overhead. This is arguably the single highest-impact optimisation technique in inference engines.
+  - **Precision Reduction and [[Quantisation]]**
+    - Post-training quantisation (PTQ): calibrates weight and activation ranges on a representative dataset, then maps FP32 tensors to FP16 or INT8, recovering accuracy while delivering 2–4× throughput improvement and equivalent memory footprint reduction.
+    - Quantisation-aware training (QAT): simulates quantisation noise during the training forward pass, producing models that tolerate lower-precision arithmetic with minimal accuracy degradation.
+    - INT4 and sub-byte quantisation (GPTQ, AWQ, GGUF formats) are actively used for [[Large Language Model Serving]] on constrained hardware, enabling multi-billion parameter models to run on consumer GPUs or [[Neural Processing Unit]] chips.
+  - **[[Kernel Auto-Tuning]]**
+    - Engines profile candidate [[CUDA]] kernels for each operator given specific input tensor shapes, selecting the fastest validated implementation at compile time. NVIDIA TensorRT, Apache TVM, and Triton Inference Server all employ variants of this approach.
+  - **[[Dynamic Batching]]**
+    - Middleware collects individual inference requests within a configurable time window and assembles them into a single batched tensor, improving [[GPU Computing]] occupancy without increasing per-request latency beyond the batching window threshold.
+  - **Continuous and Paged Batching (LLM-specific)**
+    - [[KV Cache]] management via paged attention (as in vLLM) allocates KV cache memory in fixed-size blocks rather than contiguous sequences, enabling fine-grained sharing, eviction, and reuse across concurrent requests — the critical mechanism enabling high-throughput [[Large Language Model Serving]].
+    - [[Speculative Decoding]] uses a smaller draft model to propose multiple tokens, which the larger target model verifies in parallel, increasing effective token throughput on autoregressive generation without changing output distribution.
+
+- ### Applications and Use Cases
+  - **Conversational AI and [[Large Language Model Serving]]**: Production serving of GPT-class, LLaMA-class, and Gemma-class models at scale using engines such as vLLM, TensorRT-LLM, and SGLang.
+  - **Computer Vision at the Edge**: Deploying object detection (YOLO variants, EfficientDet) and image classification models on mobile devices and IoT hardware via TensorFlow Lite, ONNX Runtime, ExecuTorch (Meta), and Core ML (Apple).
+  - **Autonomous Systems**: Real-time perception pipelines in autonomous vehicles where sub-20ms inference latency over fused camera, LiDAR, and radar inputs is a safety-critical requirement, enabled by engines running on dedicated [[Inference Hardware]] such as NVIDIA Drive Orin and Mobileye EyeQ.
+  - **Recommendation and Ranking**: High-throughput inference over embedding models and ranking networks in online advertising and search, where millions of queries per second drive demand for throughput-optimised deployment on [[GPU Computing]] clusters.
+  - **Medical Imaging and Diagnostics**: Deployment of segmentation and classification models in clinical settings where regulatory requirements demand deterministic, auditable inference pipelines with hardware-specific optimisations.
+  - **[[Real-Time Inference at Edge]]**: On-device voice recognition, face detection, and natural language understanding on [[Neural Processing Unit]] hardware in smartphones, wearables, and smart home devices.
+  - **Multimodal AI**: Emerging unified inference pipelines for vision-language models (LLaVA, Qwen-VL, Gemini-class architectures) that span heterogeneous compute graphs combining vision encoders and autoregressive text transformers.
+
+- ### Ecosystem and Major Implementations
+  - **TensorRT** (NVIDIA): Flagship commercial inference optimiser for NVIDIA GPU targets; outputs serialised engine plans with kernel fusion and INT8/FP16 precision.
+  - **TensorRT-LLM** (NVIDIA): TensorRT extension specialised for large language models with paged attention, inflight batching, and quantisation-aware kernels.
+  - **vLLM** (UC Berkeley / open-source): Introduced PagedAttention for [[KV Cache]] management; now a widely adopted production LLM serving framework.
+  - **SGLang**: Structured generation language runtime with RadixAttention for prefix-sharing KV cache, optimised for constrained generation workloads.
+  - **ONNX Runtime** (Microsoft): Cross-platform inference engine accepting [[ONNX]] models, with execution providers for CUDA, TensorRT, DirectML, Core ML, and NNAPI.
+  - **TensorFlow Lite / LiteRT**: Lightweight inference runtime for mobile and embedded targets, with hardware delegate interfaces for [[Neural Processing Unit]] acceleration.
+  - **ExecuTorch** (Meta): PyTorch Mobile successor with XNNPACK, CoreML, and Vulkan backends; designed for heterogeneous edge deployment.
+  - **MLC LLM**: Device-agnostic LLM inference via TVM compilation to WebGPU, CUDA, Metal, and Vulkan backends.
+  - **llama.cpp**: Portable C++ inference engine for quantised LLMs, widely used for local [[Real-Time Inference at Edge]] deployment on CPUs and consumer GPUs.
+  - **Ollama**: User-facing wrapper around llama.cpp providing model management and a REST API for local LLM inference.
+  - **Apache TVM**: Open-source deep learning compiler and inference framework with ML-guided kernel tuning via Ansor/MetaSchedule.
+  - **Triton Inference Server** (NVIDIA): Model-serving middleware layer providing batching, concurrency management, and multi-model ensemble orchestration across TensorRT, ONNX Runtime, and PyTorch backends.
 
 - ### Relationships
-  - The Inference Engine sits between the model definition layer (PyTorch, TensorFlow, JAX) and the hardware execution layer ([[GPU Computing]], [[Tensor Processing Unit]], [[Inference Hardware]]) within the AI deployment stack. It is the component responsible for translating a computation graph — which may be specified in PyTorch eager mode, ONNX interchange format, or a compiler IR — into hardware-optimal instruction sequences. [[Hardware Acceleration]] primitives (cuDNN, cuBLAS, Metal Performance Shaders) are wrapped by the engine's kernel library and selected automatically based on input tensor shapes. The engine's output in terms of optimised latency and throughput directly enables [[Real-Time Inference at Edge]] deployment scenarios and feeds back into [[MLOps]] monitoring through [[Latency]] and throughput metrics, supporting robust [[AI Deployment]] practices.
+  - hasPart:: [[Operator Fusion]]
+  - hasPart:: [[Kernel Auto-Tuning]]
+  - hasPart:: [[Dynamic Batching]]
+  - hasPart:: [[Quantisation]]
+  - partOf:: [[MLOps]]
+  - partOf:: [[AI Deployment]]
+  - requires:: [[Machine Learning Model]]
+  - requires:: [[Hardware Acceleration]]
+  - enables:: [[Real-Time Inference at Edge]]
+  - enables:: [[Large Language Model Serving]]
+  - enables:: [[AI Deployment]]
+  - dependsOn:: [[GPU Computing]]
+  - dependsOn:: [[Tensor Processing Unit]]
+  - dependsOn:: [[Inference Hardware]]
+  - uses:: [[ONNX]]
+  - uses:: [[CUDA]]
+  - uses:: [[Speculative Decoding]]
+  - supports:: [[MLOps]]
+  - supports:: [[Edge Computing]]
+  - contrastsWith:: [[Training Framework]]
+  - contrastsWith:: [[Eager Execution]]
+  - relatedTo:: [[Latency]]
+  - relatedTo:: [[Throughput]]
+  - relatedTo:: [[Model Compression]]
+  - relatedTo:: [[Neural Processing Unit]]
+  - relatedTo:: [[KV Cache]]
 
-- ### Content
-  - The distinction between training frameworks and inference engines emerged as deep learning models scaled beyond the capacity of interpreted Python execution to meet production latency requirements. Early deep learning deployment in 2013-2016 used the same Caffe, TensorFlow, or Theano graphs for both training and serving, accepting the overhead of Python interpreter dispatch and unoptimised memory layouts. NVIDIA's TensorRT (2017) was among the first purpose-built inference optimisers: it accepted a trained TensorFlow or Caffe model, applied layer fusion, precision calibration (FP16, INT8), and kernel auto-selection, and compiled a hardware-specific engine plan that executed 2-8x faster than the original framework with reduced memory footprint. The ONNX (Open Neural Network Exchange) format, introduced by Facebook and Microsoft in 2017, created a model interchange layer that decoupled model definition from inference runtime.
+- ### Standards and Context
+  - **[[ONNX]]** (Open Neural Network Exchange): The dominant model interchange format that allows inference engines to accept models trained in any major framework (PyTorch, TensorFlow, JAX, PaddlePaddle). ONNX opset versioning governs operator compatibility across engine implementations.
+  - **ONNX Runtime Execution Providers**: A standardised plug-in interface allowing hardware vendors (NVIDIA, Intel, Qualcomm, ARM) to register accelerated kernel implementations without modifying the core engine — an effective de facto standard for hardware abstraction in inference.
+  - **MLPerf Inference Benchmark** (MLCommons): The industry-standard benchmark suite measuring inference engine performance across datacenter (server, offline) and edge scenarios, with defined metrics for throughput, latency, and accuracy at multiple precision levels. Results drive procurement decisions across hyperscaler and enterprise deployments.
+  - **OpenAI-compatible REST API**: An informal but widely adopted API standard (originally from OpenAI) that vLLM, Ollama, LM Studio, and many other inference servers implement, enabling application portability across self-hosted and cloud-hosted inference backends.
+  - **GGUF format** (GPT-Generated Unified Format): A binary model serialisation format used by llama.cpp and compatible engines for storing quantised LLM weights with metadata, increasingly adopted as a distribution format for quantised open-weight models.
 
-  - Modern inference engines operate through a compilation pipeline. The first stage is graph optimisation: constant folding (pre-computing fixed subgraphs), dead code elimination, and layer fusion (merging sequential operations into a single kernel to reduce memory round-trips). The second stage is precision reduction: quantising weights and activations from FP32 to FP16 or INT8, either post-training (calibrated against a representative dataset) or via quantisation-aware training, recovering accuracy with 2-4x throughput improvement and equivalent reduction in memory footprint. The third stage is kernel selection: profiling candidate CUDA kernels for each operator given the specific input shape to select the fastest implementation. The compiled engine is then serialised and loaded at serving time, with dynamic batching middleware collecting individual requests into batched tensors to improve GPU utilisation.
-
-  - The significance of inference engines is that they determine the economic viability of AI products at scale. A model that requires 100ms on a framework's naive execution may require only 12ms on an optimised engine, enabling real-time applications (autonomous vehicle perception, conversational AI, live video processing) that are impossible with naive deployment. For large language model serving specifically, engines like vLLM (PagedAttention for KV cache management), TensorRT-LLM, and llama.cpp apply token-level batching, speculative decoding, and continuous batching to maximise GPU occupancy and reduce per-token generation cost by 3-10x compared to naive autoregressive inference.
-
-  - In 2024-2025, the inference engine landscape has proliferated in response to the large language model serving challenge. Key production engines include TensorRT-LLM (NVIDIA), vLLM (UC Berkeley), SGLang, MLC LLM (device-agnostic via TVM compilation), and Ollama (user-friendly local inference). Edge inference engines targeting mobile and embedded processors — ONNX Runtime (Microsoft), TensorFlow Lite, ExecuTorch (Meta's PyTorch Mobile successor), and Core ML (Apple) — are advancing rapidly with hardware-specific optimisations for neural processing units on smartphones and IoT devices. The frontier challenge is efficient inference for multimodal models (vision-language, audio-language) with heterogeneous compute graphs spanning vision encoders, text transformers, and speech decoders.
+- ### Provenance
+  - sources:: MLCommons MLPerf Inference benchmark documentation; NVIDIA TensorRT and TensorRT-LLM documentation; vLLM project documentation; ONNX specification; Apache TVM documentation; ExecuTorch documentation (Meta); general established knowledge of AI systems and compiler toolchains.
+  - updated:: 2026-06-13

@@ -5,54 +5,145 @@
   "public": true,
   "classIri": "urn:ngm:class:open-source-software",
   "domain": "infrastructure",
-  "definition": "Open Source Software is software whose source code is made publicly available under a licence that permits inspection, modification, and redistribution. In the AI and metaverse infrastructure ecosystem, open-source projects provide the foundational frameworks \u2014 including deep learning libraries, rendering engines, and interoperability toolkits \u2014 that accelerate innovation, reduce vendor lock-in, and enable community-driven governance. Licences such as MIT, Apache 2.0, and GPL govern the permissibility of commercial reuse and derivative works.",
+  "definition": "Open Source Software (OSS) is software distributed with source code made publicly available under a licence that grants users the rights to inspect, modify, and redistribute the software and its derivatives. OSS development follows collaborative models coordinated through version-controlled repositories, issue trackers, and community governance structures, enabling distributed contribution at global scale. Canonical licence categories range from permissive instruments (MIT, Apache 2.0, BSD) to copyleft instruments (GPL, LGPL, AGPL) that impose viral redistribution obligations. In the AI, spatial-computing, and broader technology infrastructure landscape, OSS underpins foundational frameworks \u2014 including deep learning toolkits, container runtimes, distributed databases, and interoperability specifications \u2014 reducing vendor lock-in and accelerating innovation through transparent, auditable codebases.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:infra-software-engineering",
+      "id": "urn:ngm:class:software-engineering",
       "label": "Software Engineering"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.3,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [
+    "hasPart": [
       {
-        "id": "urn:ngm:class:open-source-ai",
-        "label": "Open-Source AI"
+        "id": "urn:ngm:class:open-source-licence",
+        "label": "Open Source Licence"
       },
       {
-        "id": "urn:ngm:class:collaboration",
-        "label": "Collaboration"
+        "id": "urn:ngm:class:software-repository",
+        "label": "Software Repository"
+      },
+      {
+        "id": "urn:ngm:class:community-governance",
+        "label": "Community Governance"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [
+    "requires": [
       {
         "id": "urn:ngm:class:version-control",
         "label": "Version Control"
       },
       {
         "id": "urn:ngm:class:intellectual-property-licence-instrument",
-        "label": "license"
+        "label": "Intellectual Property Licence Instrument"
       }
     ],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
+    "enables": [
+      {
+        "id": "urn:ngm:class:open-source-ai",
+        "label": "Open-Source AI"
+      },
+      {
+        "id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:software-supply-chain",
+        "label": "Software Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:community-driven-innovation",
+        "label": "Community-Driven Innovation"
+      },
+      {
+        "id": "urn:ngm:class:reproducible-research",
+        "label": "Reproducible Research"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
+      },
+      {
+        "id": "urn:ngm:class:open-source-definition",
+        "label": "Open Source Definition"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:proprietary-software",
+        "label": "Proprietary Software"
+      },
+      {
+        "id": "urn:ngm:class:closed-source-software",
+        "label": "Closed-Source Software"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:software-library",
+        "label": "Software Library"
+      },
+      {
+        "id": "urn:ngm:class:continuous-integration",
+        "label": "Continuous Integration"
+      },
+      {
+        "id": "urn:ngm:class:package-manager",
+        "label": "Package Manager"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:decentralised-governance",
+        "label": "Decentralised Governance"
+      },
       {
         "id": "urn:ngm:class:open-source-framework",
         "label": "Open Source Framework"
       },
       {
-        "id": "urn:ngm:class:software-library",
-        "label": "Software Library"
+        "id": "urn:ngm:class:digital-public-goods",
+        "label": "Digital Public Goods"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:open-source-initiative",
+        "label": "Open Source Initiative"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:inner-source",
+        "label": "Inner Source"
+      },
+      {
+        "id": "urn:ngm:class:free-software-movement",
+        "label": "Free Software Movement"
+      },
+      {
+        "id": "urn:ngm:class:software-commons",
+        "label": "Software Commons"
       }
     ]
   },

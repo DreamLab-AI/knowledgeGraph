@@ -5,54 +5,134 @@
   "public": true,
   "classIri": "urn:ngm:class:programmable-money",
   "domain": "blockchain",
-  "definition": "Programmable Money is a form of digital currency in which the conditions governing the creation, transfer, and use of monetary units are encoded as executable logic\u2014typically within smart contracts on a public or permissioned blockchain\u2014and enforced autonomously without requiring trusted intermediaries. This enables payment instruments that can embed compliance rules, spending constraints, vesting schedules, or multi-party approval workflows directly into the currency itself. Central bank digital currencies (CBDCs), tokenised commercial bank deposits, and DeFi stablecoins are all instances of programmable money at different points on the decentralisation spectrum.",
+  "definition": "Programmable Money is a form of digital currency in which the conditions governing the creation, transfer, and use of monetary units are encoded as executable logic\u2014typically within smart contracts on a public or permissioned blockchain\u2014and enforced autonomously without requiring trusted intermediaries. This enables payment instruments that can embed compliance rules, spending constraints, vesting schedules, or multi-party approval workflows directly into the currency itself, transforming money from a passive bearer instrument into an active, self-enforcing contractual construct. Central bank digital currencies (CBDCs), tokenised commercial bank deposits, DeFi stablecoins, and protocol-native assets are all instances of programmable money at different points on the decentralisation and trust spectrum. The paradigm extends the concept of money from a static store of value and medium of exchange into a substrate for encoding and automating financial relationships.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:bc-defi-and-economics",
-      "label": "BC DeFi and Economics"
+      "id": "urn:ngm:class:digital-currency",
+      "label": "Digital Currency"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
+  "qualityScore": 0.73,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      },
+      {
+        "id": "urn:ngm:class:cbdcs",
+        "label": "CBDCs"
+      },
+      {
+        "id": "urn:ngm:class:token-standard",
+        "label": "Token Standard"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
       },
       {
-        "id": "urn:ngm:class:digital-currency",
-        "label": "Digital Currency"
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:tokenisation",
+        "label": "Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
       }
     ],
     "enables": [
+      {
+        "id": "urn:ngm:class:decentralized-finance-de-fi",
+        "label": "Decentralized Finance (DeFi)"
+      },
       {
         "id": "urn:ngm:class:payment-system",
         "label": "Payment System"
       },
       {
-        "id": "urn:ngm:class:decentralized-finance-de-fi",
-        "label": "Decentralized Finance (DeFi)"
+        "id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
+      },
+      {
+        "id": "urn:ngm:class:atomic-swap",
+        "label": "Atomic Swap"
+      },
+      {
+        "id": "urn:ngm:class:delivery-versus-payment",
+        "label": "Delivery Versus Payment"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:fiat-currency",
+        "label": "Fiat Currency"
+      },
+      {
+        "id": "urn:ngm:class:commodity-money",
+        "label": "Commodity Money"
+      },
+      {
+        "id": "urn:ngm:class:electronic-money",
+        "label": "Electronic Money"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:algorithmic-governance",
+        "label": "Algorithmic Governance"
+      },
+      {
+        "id": "urn:ngm:class:machine-economy",
+        "label": "Machine Economy"
+      },
+      {
+        "id": "urn:ngm:class:multi-agent-systems",
+        "label": "Multi-Agent Systems"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:cbdcs",
-        "label": "CBDCs"
+        "id": "urn:ngm:class:monetary-policy",
+        "label": "Monetary Policy"
       },
       {
-        "id": "urn:ngm:class:stablecoin",
-        "label": "Stablecoin"
+        "id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      },
+      {
+        "id": "urn:ngm:class:liquidity",
+        "label": "Liquidity"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-autonomous-organisation",
+        "label": "Decentralized Autonomous Organisation"
       }
     ]
   },

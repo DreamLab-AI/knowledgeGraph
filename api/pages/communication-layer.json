@@ -4,7 +4,7 @@
   "slug": "communication-layer",
   "public": true,
   "classIri": "urn:ngm:class:communication-layer",
-  "domain": "communication",
+  "domain": "infrastructure",
   "definition": "The Communication Layer is the stratum that governs the exchange of messages between components or participants. It sits above the Transport Layer that delivers bytes and below the coordination and application strata that rely on conversation. It contains messaging patterns, encoding, addressing, and delivery semantics.",
   "subClassOf": [
     {

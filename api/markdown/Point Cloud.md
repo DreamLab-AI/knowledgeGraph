@@ -37,9 +37,9 @@ public:: true
   "@id": "urn:ngm:class:point-cloud",
   "@type": "Class",
   "label": "Point Cloud",
-  "definition": "A Point Cloud is a set of data points in three-dimensional space, each defined by X, Y, Z coordinates and optionally colour or intensity values, produced by LiDAR scanners, depth cameras, or photogrammetry pipelines. Point clouds serve as the raw geometric representation of real-world objects and environments before downstream processing into meshes, 3D models, or spatial maps. They are fundamental to SLAM, 3D reconstruction, and digital twin workflows in spatial computing.",
+  "definition": "A point cloud is a discrete set of data points in three-dimensional coordinate space — each sample defined by (X, Y, Z) spatial coordinates and optionally augmented with attributes such as colour (RGB), intensity, return number, or surface normal vectors — acquired through active sensors like LiDAR and time-of-flight cameras or passive photogrammetric reconstruction from overlapping imagery. Point clouds constitute the primary raw geometric representation of physical objects and environments produced by scanning or depth-sensing systems, capturing surface geometry without presupposing mesh topology. They serve as the foundational data structure for downstream spatial-computing workflows including SLAM, 3D reconstruction, digital twin creation, and autonomous navigation, and are processed through operations such as voxelisation, segmentation, surface reconstruction, and registration to produce actionable spatial models.",
   "domain": "spatial-computing",
-  "maturity": "emerging",
+  "maturity": "established",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
@@ -47,24 +47,65 @@ public:: true
     }
   ],
   "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:surface-normal", "label": "Surface Normal"},
+      {"@id": "urn:ngm:class:voxel", "label": "Voxel"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:3-d-scene-representation", "label": "3D Scene Representation"}
+    ],
     "requires": [
-      {"@id": "urn:ngm:class:depth-sensing", "label": "Depth Sensing"}
+      {"@id": "urn:ngm:class:depth-sensing", "label": "Depth Sensing"},
+      {"@id": "urn:ngm:class:lidar", "label": "LiDAR"},
+      {"@id": "urn:ngm:class:coordinate-system", "label": "Coordinate System"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:3-d-reconstruction", "label": "3D Reconstruction"},
-      {"@id": "urn:ngm:class:spatial-mapping", "label": "Spatial Mapping"}
+      {"@id": "urn:ngm:class:spatial-mapping", "label": "Spatial Mapping"},
+      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
+      {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"},
+      {"@id": "urn:ngm:class:object-detection", "label": "Object Detection"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
+      {"@id": "urn:ngm:class:spatial-registration", "label": "Spatial Registration"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:photogrammetry", "label": "Photogrammetry"},
+      {"@id": "urn:ngm:class:structured-light", "label": "Structured Light"},
+      {"@id": "urn:ngm:class:time-of-flight", "label": "Time-of-Flight"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:slam", "label": "SLAM"},
+      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
+      {"@id": "urn:ngm:class:robotics-perception", "label": "Robotics Perception"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:las-format", "label": "LAS Format"},
+      {"@id": "urn:ngm:class:e57-format", "label": "E57 Format"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:polygon-mesh", "label": "Polygon Mesh"},
+      {"@id": "urn:ngm:class:voxel-grid", "label": "Voxel Grid"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:pointnet", "label": "PointNet"},
+      {"@id": "urn:ngm:class:3-d-object-segmentation", "label": "3D Object Segmentation"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:photogrammetry", "label": "Photogrammetry"},
-      {"@id": "urn:ngm:class:slam", "label": "SLAM"},
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"}
+      {"@id": "urn:ngm:class:structure-from-motion", "label": "Structure from Motion"},
+      {"@id": "urn:ngm:class:occupancy-mapping", "label": "Occupancy Mapping"},
+      {"@id": "urn:ngm:class:geospatial-data", "label": "Geospatial Data"}
     ]
   },
-  "quality": 0.35,
+  "sameAs": [
+    {"@id": "urn:ngm:class:3-d-point-set", "label": "3D Point Set"}
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-13T00:00:00Z",
+    "inferenceRule": "ManualEnrichment"
   }
 }
 ```
@@ -88,28 +129,106 @@ public:: true
 }
 ```
 
-
 - ### Definition
-  - A Point Cloud is a set of data points in three-dimensional space, each defined by X, Y, Z coordinates and optionally colour or intensity values, produced by LiDAR scanners, depth cameras, or photogrammetry pipelines. Point clouds serve as the raw geometric representation of real-world objects and environments before downstream processing into meshes, 3D models, or spatial maps. They are fundamental to SLAM, 3D reconstruction, and digital twin workflows in spatial computing.
+  - A point cloud is a discrete set of 3D coordinate samples representing the surface geometry of a real-world object or scene, where each point carries at minimum an (X, Y, Z) position and optionally attributes including RGB colour, intensity, return number, and [[Surface Normal]] vectors. Point clouds are produced by active sensors such as [[LiDAR]], [[Time-of-Flight]] cameras, and structured-light scanners, or by passive [[Photogrammetry]] pipelines that derive depth from overlapping photographs via [[Structure from Motion]]. They constitute the raw geometric substrate from which higher-level representations — [[Polygon Mesh]], [[Voxel Grid]], [[Digital Twin]] — are derived through downstream processing. As an unstructured, topology-free format they are highly flexible but require specialised algorithms for registration, segmentation, and surface reconstruction before integration into [[Spatial Mapping]] or [[Augmented Reality]] pipelines.
+
+- ### Overview
+  - Point clouds emerged as the primary output format for laser-based scanning systems in surveying and geomatics during the 1990s and have since become the canonical raw-geometry type across autonomous driving, robotics, architecture, and spatial computing.
+  - Unlike images, which project 3D scenes onto 2D grids, point clouds preserve actual metric distances from sensor to surface, making them essential wherever real-world scale and geometry must be captured faithfully.
+  - A single scan from a terrestrial [[LiDAR]] unit may produce tens of millions of points covering a building interior or outdoor scene with millimetre-level accuracy; airborne systems can capture entire cities in a single flight.
+  - Point clouds are unstructured: points have no inherent connectivity or ordering, which distinguishes them from [[Polygon Mesh]] representations and requires specialised data structures (k-d trees, octrees, voxel grids) for efficient spatial queries.
+  - The maturity of the technology is high: ISO/ASTM standards exist for file formats, major CAD and GIS platforms natively support point cloud import, and deep-learning architectures for direct point-cloud processing (e.g., [[PointNet]]) have been in production use for several years.
+
+- ### Key Components
+  - **Point geometry**: the (X, Y, Z) triple in a defined [[Coordinate System]] — typically a projected CRS for geospatial clouds or a sensor-local frame for robotics.
+  - **Intensity channel**: the strength of the return signal, used for material discrimination and road-marking detection in autonomous driving.
+  - **Colour attributes (RGB/RGBA)**: fused from co-registered cameras, enabling photorealistic point clouds and facilitating [[3D Object Segmentation]].
+  - **Return number and number-of-returns**: in multi-return [[LiDAR]], each pulse may generate several returns from vegetation canopy layers, enabling tree-canopy penetration analysis.
+  - **[[Surface Normal]] vectors**: per-point estimates of local surface orientation, computed as a post-processing step; required by surface-reconstruction algorithms such as Poisson reconstruction.
+  - **Timestamps**: especially in mobile mapping, each point carries an acquisition timestamp enabling trajectory-synchronised registration.
+  - **Classification labels**: points can be assigned semantic classes (ground, building, vegetation, water) following standards such as the LAS ASPRS classification scheme.
+  - **Data structures**: k-d tree (fast nearest-neighbour search), octree (hierarchical spatial partitioning), and [[Voxel Grid]] (uniform-resolution downsampling) are the standard internal representations used by processing libraries.
+
+- ### Acquisition Methods
+  - **[[LiDAR]] (Light Detection and Ranging)**: time-of-flight laser pulses measure range with high accuracy; deployed as terrestrial static scanners, mobile mapping units, airborne systems, and solid-state automotive sensors.
+  - **[[Time-of-Flight]] cameras**: compact depth sensors (e.g., Azure Kinect, Intel RealSense) emit modulated IR light and measure phase shift to infer depth; lower range and accuracy than survey-grade LiDAR but suitable for indoor robotics and [[Augmented Reality]].
+  - **Structured-light scanning**: projects known patterns (grids, fringes) onto a surface and calculates depth from deformation; high accuracy at short ranges, used in industrial metrology and cultural heritage digitisation.
+  - **[[Photogrammetry]] / [[Structure from Motion]]**: derives point clouds from overlapping photographs through feature matching and bundle adjustment; no specialised hardware required but computationally intensive and sensitive to textureless surfaces.
+  - **Stereo vision**: computes disparity between two calibrated cameras to infer depth; widely used in embedded automotive and aerial applications.
+  - **Radar point clouds**: emerging use of mmWave and FMCW radar sensors generates sparse point clouds robust to weather (fog, rain, dust), complementing LiDAR in automotive [[Sensor Fusion]].
+
+- ### Processing Pipeline
+  - **Registration / alignment**: aligns clouds from multiple scans or sensor poses into a common frame using algorithms such as ICP (Iterative Closest Point) or feature-based methods; foundational to [[Spatial Registration]].
+  - **Filtering and denoising**: statistical outlier removal, radius-outlier filtering, and voxel downsampling reduce noise and data volume prior to processing.
+  - **Segmentation**: partitions the cloud into meaningful regions — ground plane extraction (RANSAC), Euclidean cluster extraction, semantic [[3D Object Segmentation]] using deep learning.
+  - **[[Surface Normal]] estimation**: computes local surface orientation per point using PCA over a neighbourhood; required for surface reconstruction and shading.
+  - **Surface reconstruction**: Poisson surface reconstruction, ball-pivoting algorithm, and Delaunay-based methods convert unstructured clouds into watertight [[Polygon Mesh]] representations.
+  - **Voxelisation**: converts point clouds into [[Voxel Grid]] structures for efficient [[Occupancy Mapping]] and volumetric deep-learning inputs.
+  - **Deep-learning inference**: architectures such as [[PointNet]], PointNet++, and VoxelNet operate directly on raw point data or derived voxel grids for classification, detection, and semantic segmentation tasks.
+
+- ### Applications
+  - **Autonomous driving**: onboard LiDAR continuously generates point clouds used by perception stacks for [[Object Detection]], free-space estimation, and vehicle localisation against HD maps. Major platforms (Waymo, Cruise, Mobileye) deploy multi-beam spinning LiDAR and solid-state units in production fleets.
+  - **[[Robotics Perception]] and [[SLAM]]**: mobile robots and UAVs use real-time point cloud processing for simultaneous localisation and [[Spatial Mapping]], avoiding obstacles and building 3D maps of unknown environments.
+  - **[[Digital Twin]] construction**: terrestrial and airborne scanning captures as-built geometry of infrastructure, factories, and urban environments; clouds are registered, classified, and converted to BIM-ready models or [[Geospatial Data]] layers.
+  - **[[Augmented Reality]] and XR**: depth cameras in devices such as Apple Vision Pro and Microsoft HoloLens generate real-time point clouds used for scene understanding, plane detection, and occlusion computation.
+  - **Archaeological and cultural-heritage digitisation**: structured-light and photogrammetric point clouds record artefacts, sites, and artworks at sub-millimetre resolution, creating permanent geometric records.
+  - **Forestry and ecology**: airborne LiDAR penetrates vegetation canopy via multi-return capture, enabling estimation of tree height, canopy density, and biomass without ground access.
+  - **Construction and surveying**: mobile mapping units mounted on vehicles or backpacks capture road networks, tunnels, and building interiors rapidly for as-built verification and change detection.
+  - **Medical imaging**: intra-operative depth sensors and CT-derived point clouds support surgical navigation and prosthetic fitting.
+  - **[[Geospatial Data]] and smart cities**: national mapping agencies use airborne LiDAR to generate national terrain models; city-scale point clouds underpin urban planning, flood modelling, and solar-potential analysis.
+
+- ### Relationships
+  - hasPart:: [[Surface Normal]]
+  - hasPart:: [[Voxel]]
+  - partOf:: [[3D Scene Representation]]
+  - requires:: [[Depth Sensing]]
+  - requires:: [[LiDAR]]
+  - requires:: [[Coordinate System]]
+  - enables:: [[3D Reconstruction]]
+  - enables:: [[Spatial Mapping]]
+  - enables:: [[Digital Twin]]
+  - enables:: [[Autonomous Navigation]]
+  - enables:: [[Object Detection]]
+  - dependsOn:: [[Sensor Fusion]]
+  - dependsOn:: [[Spatial Registration]]
+  - uses:: [[Photogrammetry]]
+  - uses:: [[Structured Light]]
+  - uses:: [[Time-of-Flight]]
+  - supports:: [[SLAM]]
+  - supports:: [[Augmented Reality]]
+  - supports:: [[Robotics Perception]]
+  - standardizedBy:: [[LAS Format]]
+  - standardizedBy:: [[E57 Format]]
+  - contrastsWith:: [[Polygon Mesh]]
+  - contrastsWith:: [[Voxel Grid]]
+  - bridges-to:: [[PointNet]]
+  - bridges-to:: [[3D Object Segmentation]]
+  - relatedTo:: [[Structure from Motion]]
+  - relatedTo:: [[Occupancy Mapping]]
+  - relatedTo:: [[Geospatial Data]]
+
+- ### Standards and Ecosystem
+  - **LAS / LAZ format**: ASPRS LAS (LASer) is the de-facto binary interchange format for airborne and terrestrial LiDAR data; LAZ is its losslessly compressed variant. LAS 1.4 (2011) supports 64-bit point offsets, extra dimensions, and waveform data.
+  - **E57 format**: ASTM E2807 defines E57 as a vendor-neutral binary format for storing 3D imaging data from terrestrial scanners, supporting multiple scans, images, and metadata within one file.
+  - **Point Cloud Library (PCL)**: open-source C++ framework providing algorithms for filtering, segmentation, surface reconstruction, registration, and visualisation; the dominant processing toolkit in robotics and industrial applications.
+  - **Open3D**: Python/C++ library with a focus on deep-learning integration, offering GPU-accelerated pipelines and tight coupling to PyTorch and TensorFlow ecosystems.
+  - **PDAL (Point Data Abstraction Library)**: modular pipeline library for reading, filtering, and writing point-cloud data across dozens of formats; widely used in geospatial workflows.
+  - **ROS 2 sensor_msgs/PointCloud2**: the standard robot-operating-system message type for streaming point clouds between nodes in real-time robotic pipelines.
+  - **ISO 19157 / OGC standards**: geographic data quality and coverage standards applied to LiDAR-derived terrain products in national mapping contexts.
+  - **NVIDIA CUDA point-cloud primitives**: GPU-accelerated nearest-neighbour search and voxelisation kernels are standard in production autonomous-driving perception stacks.
+
+- ### Deep Learning on Point Clouds
+  - Direct point-cloud deep learning bypasses the lossy conversion to voxels or images, processing raw (X, Y, Z, …) arrays.
+  - **[[PointNet]]** (Qi et al., Stanford, 2017): the foundational architecture; applies shared MLPs per point then symmetric aggregation (max-pooling) to achieve permutation invariance; enables 3D classification and [[3D Object Segmentation]].
+  - **PointNet++**: hierarchical extension grouping points into local neighbourhoods, enabling multi-scale feature learning for finer-grained geometry.
+  - **VoxelNet / PointPillars**: voxelise the cloud into a structured grid, then apply 3D or pillar-based convolutional networks; widely deployed in automotive [[Object Detection]].
+  - **Sparse convolutional networks (e.g. MinkowskiEngine, SpConv)**: exploit the sparsity of 3D voxel grids for memory-efficient semantic segmentation of large scenes.
+  - These approaches bridge point clouds to mainstream [[Machine Learning]] infrastructure, enabling transfer learning, benchmarking on datasets such as ShapeNet, ModelNet40, and SemanticKITTI, and deployment in production perception systems.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:PointCloud
   - owl-role:: Concept
 
-- ### Relationships
-  - requires [[Depth Sensing]]
-  - enables [[3D Reconstruction]]
-  - enables [[Spatial Mapping]]
-  - relatedTo [[Photogrammetry]]
-  - relatedTo [[SLAM]]
-  - relatedTo [[Sensor Fusion]]
-
-- ### Content
-  # PointCloud
-  A Point Cloud is a discrete set of 3D coordinate samples representing the surface geometry of an object or scene. LiDAR scanners emit laser pulses and measure return times to generate dense, high-accuracy point sets; RGB-D cameras combine colour and depth to produce coloured clouds; photogrammetry derives point clouds from overlapping photographs via structure-from-motion algorithms. Point cloud data feeds spatial-mapping and SLAM pipelines that track device position in real time. Downstream processing — including voxelisation, surface reconstruction, and mesh generation — converts raw clouds into 3D models usable in spatial computing environments. Sensor fusion combines point clouds from multiple modalities to improve coverage and accuracy. The LAS and E57 formats are common interchange standards; the Open3D library and PCL (Point Cloud Library) are widely used processing toolkits.
-
-  ## Sources
-
 - ### Provenance
-  - sources::
-  - migration-date:: 2026-04-26T00:00:00Z
+  - sources:: ASPRS LAS Specification 1.4; ASTM E2807 (E57); PCL documentation; Open3D documentation; PointNet (Qi et al. 2017, CVPR); SemanticKITTI benchmark
+  - updated:: 2026-06-13

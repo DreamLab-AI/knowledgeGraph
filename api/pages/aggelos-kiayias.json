@@ -4,7 +4,7 @@
   "slug": "aggelos-kiayias",
   "public": true,
   "classIri": "urn:ngm:class:aggelos-kiayias",
-  "domain": "cryptographic",
+  "domain": "security",
   "definition": "A computer scientist and cryptographer known for research in cryptography and blockchain protocols, including provably secure proof-of-stake consensus.",
   "subClassOf": [
     {

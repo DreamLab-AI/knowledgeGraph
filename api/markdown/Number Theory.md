@@ -63,7 +63,7 @@ public:: true
   "@type": "Class",
   "label": "Number Theory",
   "definition": "Number Theory is the branch of pure mathematics concerned with the properties of integers and related structures, including divisibility, prime numbers, congruences and Diophantine equations. It ranges from elementary results, such as the fundamental theorem of arithmetic, to deep areas like analytic and algebraic number theory. Beyond its theoretical importance, it underpins much of modern cryptography, where the difficulty of certain number-theoretic problems provides security.",
-  "domain": "number-theory",
+  "domain": "machine-learning",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

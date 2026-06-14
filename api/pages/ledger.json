@@ -5,19 +5,40 @@
   "public": true,
   "classIri": "urn:ngm:class:ledger",
   "domain": "blockchain",
-  "definition": "Ledger is a company that produces hardware wallets for the offline storage of cryptocurrency private keys.",
+  "definition": "A ledger is a structured, authoritative record of financial transactions or state changes, historically maintained as a physical or centralised book of accounts and now realised as a distributed, cryptographically secured data structure in blockchain systems. In the distributed-ledger paradigm, every participating node holds a replica of the same append-only log, with consensus mechanisms ensuring that all copies remain consistent and tamper-evident. The concept spans traditional double-entry bookkeeping, centralised database ledgers (as in banking core systems), and fully decentralised [[Distributed Ledger Technology]] implementations such as [[Bitcoin]] and [[Ethereum]]. Ledger (the company, Ledger SAS) is a notable specific instantiation of hardware-wallet technology designed to protect the cryptographic keys that authorise writes to a blockchain ledger.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:cold-storage",
-      "label": "Cold Storage"
+      "id": "urn:ngm:class:distributed-ledger-technology",
+      "label": "Distributed Ledger Technology"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
-  "maturity": "established",
+  "qualityScore": 0.72,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:transaction-record",
+        "label": "Transaction Record"
+      },
+      {
+        "id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "id": "urn:ngm:class:block",
+        "label": "Block"
+      }
+    ],
     "requires": [
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash",
+        "label": "Cryptographic Hash"
+      },
       {
         "id": "urn:ngm:class:private-key",
         "label": "Private Key"
@@ -27,17 +48,101 @@
       {
         "id": "urn:ngm:class:self-custody",
         "label": "Self-Custody"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:tokenisation",
+        "label": "Tokenisation"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      },
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public-Key Cryptography"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:double-entry-bookkeeping",
+        "label": "Double-Entry Bookkeeping"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:centralised-database",
+        "label": "Centralised Database"
+      },
+      {
+        "id": "urn:ngm:class:custodial-wallet",
+        "label": "Custodial Wallet"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:supply-chain-traceability",
+        "label": "Supply Chain Traceability"
+      },
+      {
+        "id": "urn:ngm:class:data-provenance",
+        "label": "Data Provenance"
+      },
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cold-storage",
+        "label": "Cold Storage"
+      },
+      {
+        "id": "urn:ngm:class:key-management",
+        "label": "Key Management"
+      },
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      }
+    ],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:utxo",
+        "label": "UTXO"
+      },
+      {
+        "id": "urn:ngm:class:account-model",
+        "label": "Account Model"
+      }
+    ]
   },
   "wikilinks": [
     {

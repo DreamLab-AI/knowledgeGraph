@@ -47,7 +47,7 @@ public:: true
   "@type": "Class",
   "label": "Computational Photography",
   "definition": "A set of techniques that use digital computation to extend or improve the capabilities of a camera beyond what its optics and sensor alone can capture. It combines multiple exposures, sensor data, and algorithms to form a final image.",
-  "domain": "computer-vision",
+  "domain": "ai",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

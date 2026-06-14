@@ -43,7 +43,7 @@ public:: true
   "@type": "Class",
   "label": "Paolo Tasca",
   "definition": "Paolo Tasca is an economist specialising in digital economics and distributed ledger technology. He founded the Centre for Blockchain Technologies at University College London.",
-  "domain": "economics",
+  "domain": "finance",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

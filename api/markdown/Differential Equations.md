@@ -55,7 +55,7 @@ public:: true
   "@type": "Class",
   "label": "Differential Equations",
   "definition": "Equations relating a function to its derivatives, used to model how quantities change with respect to one or more independent variables.",
-  "domain": "mathematics",
+  "domain": "machine-learning",
   "maturity": "mature",
   "qualityScore": 0.7,
   "subClassOf": [

@@ -21,7 +21,7 @@ public:: true
   "@type": "Class",
   "label": "Epipolar Geometry",
   "definition": "Epipolar Geometry is the projective geometry of stereo vision, describing the geometric relationship between two camera views of the same 3D scene. It is encapsulated in the Fundamental Matrix (uncalibrated cameras) and Essential Matrix (calibrated cameras), which constrain the search for correspondences between images to one-dimensional epipolar lines rather than the full 2D image plane.",
-  "domain": "spatial",
+  "domain": "spatial-computing",
   "maturity": "mature",
   "subClassOf": [{"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}],
   "relations": {

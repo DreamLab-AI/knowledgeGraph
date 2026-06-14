@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:drug-discovery",
   "domain": "artificial-intelligence",
-  "definition": "AI-assisted drug discovery is the application of machine learning, deep learning, and generative modelling to accelerate and improve the identification, screening, and optimisation of candidate therapeutic compounds. Machine learning models predict molecular properties such as binding affinity, ADMET profiles (absorption, distribution, metabolism, excretion, toxicity), and off-target interactions from molecular structure representations. Generative models and graph neural networks are used to propose novel molecular scaffolds with desired properties. The field intersects cheminformatics, structural biology, and clinical informatics, and has seen significant acceleration from protein structure prediction tools such as AlphaFold.",
+  "definition": "Drug discovery is the multidisciplinary scientific process of identifying and validating novel therapeutic compounds that modulate disease-relevant biological targets, spanning target identification, hit discovery, lead optimisation, and preclinical candidate nomination. The modern discipline applies machine learning, deep learning, graph neural networks, and generative modelling to predict molecular properties such as binding affinity, selectivity, and ADMET profiles \u2014 dramatically accelerating virtual screening and de novo molecular design. Structural biology tools including protein structure prediction (e.g. AlphaFold) underpin structure-based drug design by supplying accurate 3D target models at proteome scale. The field sits at the intersection of cheminformatics, structural biology, computational chemistry, and clinical informatics, with AI methods increasingly embedded throughout the entire development pipeline from target discovery through biomarker identification and patient stratification.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-application",
@@ -13,16 +13,69 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
+  "qualityScore": 0.72,
   "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cheminformatics",
+        "label": "Cheminformatics"
+      },
+      {
+        "id": "urn:ngm:class:structural-biology",
+        "label": "Structural Biology"
+      },
+      {
+        "id": "urn:ngm:class:biomedical-data",
+        "label": "Biomedical Data"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:clinical-trials",
+        "label": "Clinical Trials"
+      },
+      {
+        "id": "urn:ngm:class:personalised-medicine",
+        "label": "Personalised Medicine"
+      },
+      {
+        "id": "urn:ngm:class:biomarker-discovery",
+        "label": "Biomarker Discovery"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
+      },
+      {
+        "id": "urn:ngm:class:protein-structure-prediction",
+        "label": "Protein Structure Prediction"
+      },
+      {
+        "id": "urn:ngm:class:high-throughput-screening",
+        "label": "High-Throughput Screening"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:traditional-high-throughput-screening",
+        "label": "Traditional High-Throughput Screening"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:graph-neural-network",
@@ -31,6 +84,22 @@
       {
         "id": "urn:ngm:class:generative-model",
         "label": "Generative Model"
+      },
+      {
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:variational-autoencoder",
+        "label": "Variational Autoencoder"
+      },
+      {
+        "id": "urn:ngm:class:molecular-dynamics-simulation",
+        "label": "Molecular Dynamics Simulation"
       }
     ],
     "supports": [],
@@ -42,12 +111,20 @@
         "label": "Simulation"
       },
       {
-        "id": "urn:ngm:class:active-learning",
-        "label": "Active Learning"
+        "id": "urn:ngm:class:genomics",
+        "label": "Genomics"
       },
       {
-        "id": "urn:ngm:class:clinical-trials",
-        "label": "Clinical Trials"
+        "id": "urn:ngm:class:proteomics",
+        "label": "Proteomics"
+      },
+      {
+        "id": "urn:ngm:class:multi-omics",
+        "label": "Multi-Omics"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
       }
     ]
   },

@@ -4,40 +4,143 @@
   "slug": "rule-based-systems",
   "public": true,
   "classIri": "urn:ngm:class:rule-based-systems",
-  "domain": "general",
-  "definition": "Systems that represent knowledge as a set of condition-action rules and use an inference engine to derive conclusions or trigger actions from facts.",
+  "domain": "artificial-intelligence",
+  "definition": "Rule-based systems are a class of knowledge-based AI systems that encode domain expertise as a collection of condition-action rules (IF <conditions> THEN <actions>) stored in a knowledge base, and employ an inference engine to match those rules against a working memory of current facts to derive new facts, trigger actions, or reach conclusions. The inference engine operates through either forward chaining (data-driven, propagating from known facts to goals) or backward chaining (goal-driven, working from desired conclusions back to supporting facts), enabling transparent, explainable reasoning where every inference can be traced to the specific rules that fired. Rule-based systems are the foundational architecture underlying classical expert systems, modern business rules engines, production systems, and many decision-automation pipelines across medicine, finance, manufacturing, and legal compliance. Their central tension lies between the interpretability of explicit symbolic rules and the scalability challenges that arise as rule sets grow large and rule interactions become complex.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:expert-systems",
-      "label": "Expert Systems"
+      "id": "urn:ngm:class:knowledge-based-systems",
+      "label": "Knowledge-Based Systems"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
-  "maturity": "established",
+  "qualityScore": 0.74,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [
+    "hasPart": [
       {
         "id": "urn:ngm:class:inference-engine",
         "label": "Inference Engine"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-base",
+        "label": "Knowledge Base"
+      },
+      {
+        "id": "urn:ngm:class:working-memory",
+        "label": "Working Memory"
+      },
+      {
+        "id": "urn:ngm:class:conflict-resolution-strategy",
+        "label": "Conflict Resolution Strategy"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      },
+      {
+        "id": "urn:ngm:class:forward-chaining",
+        "label": "Forward Chaining"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:expert-systems",
         "label": "Expert Systems"
+      },
+      {
+        "id": "urn:ngm:class:decision-automation",
+        "label": "Decision Automation"
+      },
+      {
+        "id": "urn:ngm:class:business-rules-engine",
+        "label": "Business Rules Engine"
+      },
+      {
+        "id": "urn:ngm:class:automated-reasoning",
+        "label": "Automated Reasoning"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:production-system-model",
+        "label": "Production System Model"
+      },
+      {
+        "id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:neural-networks",
+        "label": "Neural Networks"
+      },
+      {
+        "id": "urn:ngm:class:case-based-reasoning",
+        "label": "Case-Based Reasoning"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      },
+      {
+        "id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:backward-chaining",
+        "label": "Backward Chaining"
+      },
+      {
+        "id": "urn:ngm:class:pattern-matching",
+        "label": "Pattern Matching"
+      },
+      {
+        "id": "urn:ngm:class:rete-algorithm",
+        "label": "Rete Algorithm"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      },
+      {
+        "id": "urn:ngm:class:decision-support-systems",
+        "label": "Decision Support Systems"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:logic-programming",
+        "label": "Logic Programming"
+      },
+      {
+        "id": "urn:ngm:class:fuzzy-logic",
+        "label": "Fuzzy Logic"
+      },
+      {
+        "id": "urn:ngm:class:constraint-satisfaction",
+        "label": "Constraint Satisfaction"
+      }
+    ]
   },
   "wikilinks": [
     {

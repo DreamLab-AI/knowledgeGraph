@@ -5,19 +5,49 @@
   "public": true,
   "classIri": "urn:ngm:class:signal-conditioning",
   "domain": "robotics",
-  "definition": "Signal conditioning is the processing of raw electrical outputs from sensors \u2014 through amplification, filtering, analogue-to-digital conversion, isolation, and calibration \u2014 to produce clean, scaled, and calibrated digital representations suitable for downstream control, estimation, and machine-learning algorithms. It sits at the boundary between the physical world and digital processing pipelines, and its quality directly determines the accuracy of perception systems built on top of it. In robotic systems, signal conditioning circuits and firmware handle inputs from IMUs, force-torque sensors, encoders, pressure sensors, and cameras before data is consumed by SLAM, Kalman filters, or neural networks.",
+  "definition": "Signal conditioning is the ensemble of analogue and digital processing stages applied to raw electrical outputs from physical sensors \u2014 including amplification, filtering, analogue-to-digital conversion, isolation, linearisation, and calibration \u2014 to produce clean, scaled, noise-reduced representations in engineering units suitable for downstream control, estimation, and machine-learning pipelines. It occupies the critical interface between the physical world and digital computation, and its fidelity directly determines the accuracy of perception, control, and data-acquisition systems built upon it. Standard stages encompass instrumentation amplifiers, anti-aliasing filters, temperature compensation, galvanic isolation, sample-rate conversion, and offset or gain correction applied in hardware, firmware, or software. In robotics, industrial automation, medical devices, and IoT edge nodes, signal conditioning is a prerequisite for reliable sensor fusion, closed-loop control, and anomaly detection.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:robo-perception",
-      "label": "Robot Perception"
+      "id": "urn:ngm:class:signal-processing",
+      "label": "Signal Processing"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:analogue-to-digital-conversion",
+        "label": "Analogue-to-Digital Conversion"
+      },
+      {
+        "id": "urn:ngm:class:instrumentation-amplifier",
+        "label": "Instrumentation Amplifier"
+      },
+      {
+        "id": "urn:ngm:class:anti-aliasing-filter",
+        "label": "Anti-Aliasing Filter"
+      },
+      {
+        "id": "urn:ngm:class:galvanic-isolation",
+        "label": "Galvanic Isolation"
+      },
+      {
+        "id": "urn:ngm:class:calibration",
+        "label": "Calibration"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:sensor",
+        "label": "Sensor"
+      },
+      {
+        "id": "urn:ngm:class:analogue-circuit",
+        "label": "Analogue Circuit"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:sensor-fusion",
@@ -26,12 +56,34 @@
       {
         "id": "urn:ngm:class:kalman-filter",
         "label": "Kalman Filter"
+      },
+      {
+        "id": "urn:ngm:class:closed-loop-control",
+        "label": "Closed-Loop Control"
+      },
+      {
+        "id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:raw-sensor-data",
+        "label": "Raw Sensor Data"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:edge-inference",
+        "label": "Edge Inference"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:imu",
@@ -40,19 +92,57 @@
       {
         "id": "urn:ngm:class:digital-signal-processing",
         "label": "Digital Signal Processing"
+      },
+      {
+        "id": "urn:ngm:class:fir-filter",
+        "label": "FIR Filter"
+      },
+      {
+        "id": "urn:ngm:class:iir-filter",
+        "label": "IIR Filter"
       }
     ],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
+    "supports": [
       {
-        "id": "urn:ngm:class:signal-processing",
-        "label": "Signal Processing"
+        "id": "urn:ngm:class:slam",
+        "label": "SLAM"
       },
+      {
+        "id": "urn:ngm:class:robot-operating-system",
+        "label": "Robot Operating System"
+      },
+      {
+        "id": "urn:ngm:class:predictive-maintenance",
+        "label": "Predictive Maintenance"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:data-acquisition",
+        "label": "Data Acquisition"
+      },
+      {
+        "id": "urn:ngm:class:robo-perception",
+        "label": "Robot Perception"
+      }
+    ],
+    "relatedTo": [
       {
         "id": "urn:ngm:class:accelerometer",
         "label": "Accelerometer"
+      },
+      {
+        "id": "urn:ngm:class:force-torque-sensor",
+        "label": "Force-Torque Sensor"
+      },
+      {
+        "id": "urn:ngm:class:noise-reduction",
+        "label": "Noise Reduction"
+      },
+      {
+        "id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
       }
     ]
   },

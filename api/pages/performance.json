@@ -4,7 +4,7 @@
   "slug": "performance",
   "public": true,
   "classIri": "urn:ngm:class:performance",
-  "domain": "software-engineering",
+  "domain": "infrastructure",
   "definition": "Performance is a measure of how efficiently a system completes its work, commonly expressed through throughput, latency, and resource usage.",
   "subClassOf": [
     {

@@ -47,7 +47,7 @@ public:: true
   "@type": "Class",
   "label": "Political Economy",
   "definition": "The study of how political institutions, the political environment, and economic systems interact and influence one another. It examines how power and policy shape the production and distribution of wealth.",
-  "domain": "economics",
+  "domain": "finance",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

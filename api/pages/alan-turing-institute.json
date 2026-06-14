@@ -4,7 +4,7 @@
   "slug": "alan-turing-institute",
   "public": true,
   "classIri": "urn:ngm:class:alan-turing-institute",
-  "domain": "general",
+  "domain": "artificial-intelligence",
   "definition": "The United Kingdom's national institute for data science and artificial intelligence, founded in 2015 and headquartered in London.",
   "subClassOf": [
     {

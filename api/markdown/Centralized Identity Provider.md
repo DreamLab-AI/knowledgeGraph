@@ -51,7 +51,7 @@ public:: true
   "@type": "Class",
   "label": "Centralized Identity Provider",
   "definition": "An identity service in which a single organisation issues, stores and authenticates user credentials on behalf of relying parties. It contrasts with decentralised identity models where control rests with the user.",
-  "domain": "identity",
+  "domain": "security",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

@@ -5,47 +5,55 @@
   "public": true,
   "classIri": "urn:ngm:class:clip",
   "domain": "artificial-intelligence",
-  "definition": "CLIP (Contrastive Language-Image Pre-training) is a dual-encoder neural network architecture in which a vision encoder (ViT or CNN) and a text encoder (Transformer) are jointly trained on large-scale image-text pairs using a contrastive objective that maximises the cosine similarity of matching pairs and minimises it for non-matching pairs. This training procedure produces a shared multimodal embedding space in which semantically related images and text are proximate, enabling zero-shot image classification by comparing image embeddings to textual class descriptions without any task-specific fine-tuning. CLIP embeddings have become a foundational component in text-to-image generation pipelines, image-text retrieval systems, and vision-language models.",
+  "definition": "CLIP (Contrastive Language-Image Pre-training) is a dual-encoder neural network architecture developed by OpenAI in which a vision encoder (Vision Transformer or CNN) and a text encoder (Transformer) are jointly trained on large-scale internet-sourced image-text pairs using an InfoNCE contrastive objective. The training maximises cosine similarity between embeddings of matched image-text pairs and minimises it for unmatched pairs within a batch, yielding a shared multimodal embedding space where semantically related images and text are geometrically proximate. This shared space enables zero-shot image classification by comparing image embeddings to natural language class descriptions without task-specific fine-tuning, and has become a foundational component in text-to-image diffusion models, open-vocabulary object detection, and cross-modal retrieval systems.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ai-model-architecture",
-      "label": "AI Model Architecture"
+      "id": "urn:ngm:class:multimodal-model",
+      "label": "Multimodal Model"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:large-scale-dataset",
+        "label": "Large-Scale Dataset"
+      },
+      {
+        "id": "urn:ngm:class:self-supervised-learning",
+        "label": "Self-Supervised Learning"
+      },
+      {
+        "id": "urn:ngm:class:embedding-space",
+        "label": "Embedding Space"
+      }
+    ],
     "enables": [
+      {
+        "id": "urn:ngm:class:zero-shot-learning",
+        "label": "Zero-Shot Learning"
+      },
       {
         "id": "urn:ngm:class:image-classification",
         "label": "Image Classification"
       },
       {
-        "id": "urn:ngm:class:text-to-image",
-        "label": "Text-to-Image"
-      }
-    ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [
-      {
-        "id": "urn:ngm:class:contrastive-learning",
-        "label": "Contrastive Learning"
+        "id": "urn:ngm:class:cross-modal-retrieval",
+        "label": "Cross-Modal Retrieval"
       },
       {
-        "id": "urn:ngm:class:multimodal-ai-architecture-ai",
-        "label": "Multimodal AI"
+        "id": "urn:ngm:class:open-vocabulary-detection",
+        "label": "Open-Vocabulary Detection"
+      },
+      {
+        "id": "urn:ngm:class:image-text-retrieval",
+        "label": "Image-Text Retrieval"
       }
     ],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
+    "dependsOn": [
       {
         "id": "urn:ngm:class:embedding-model",
         "label": "Embedding Model"
@@ -53,6 +61,88 @@
       {
         "id": "urn:ngm:class:transfer-learning",
         "label": "Transfer Learning"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:align",
+        "label": "ALIGN"
+      },
+      {
+        "id": "urn:ngm:class:florence",
+        "label": "Florence"
+      },
+      {
+        "id": "urn:ngm:class:coca",
+        "label": "CoCa"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:spatial-anchor",
+        "label": "Spatial Anchor"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:contrastive-learning",
+        "label": "Contrastive Learning"
+      },
+      {
+        "id": "urn:ngm:class:vision-transformer",
+        "label": "Vision Transformer"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "id": "urn:ngm:class:infonce-loss",
+        "label": "InfoNCE Loss"
+      },
+      {
+        "id": "urn:ngm:class:cosine-similarity",
+        "label": "Cosine Similarity"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:text-to-image",
+        "label": "Text-to-Image Generation"
+      },
+      {
+        "id": "urn:ngm:class:stable-diffusion",
+        "label": "Stable Diffusion"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-search",
+        "label": "Multimodal Search"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:vision-language-model",
+        "label": "Vision-Language Model"
+      },
+      {
+        "id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-ai-architecture-ai",
+        "label": "Multimodal AI"
       }
     ]
   },

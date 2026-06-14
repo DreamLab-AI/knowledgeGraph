@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:bitcoin-proof-of-work-protocol-network",
   "domain": "blockchain",
-  "definition": "The Bitcoin Network is the global, permissionless peer-to-peer infrastructure underpinning the Bitcoin cryptocurrency, comprising nodes, miners, and the communication protocol that propagates transactions and blocks. It operates without a central authority, using the Nakamoto consensus mechanism\u2014proof-of-work\u2014to achieve agreement on a shared transaction ledger. The network enforces monetary policy through its protocol rules, capping total supply and adjusting mining difficulty automatically. It has operated continuously since January 2009, making it the longest-running blockchain network.",
+  "definition": "The Bitcoin Network is the global, permissionless peer-to-peer infrastructure underpinning the Bitcoin cryptocurrency, comprising full nodes, mining nodes, and the gossip protocol that propagates signed transactions and mined blocks across the internet without central coordination. It employs the Nakamoto consensus mechanism\u2014proof-of-work mining on the SHA-256 hash function\u2014to achieve Byzantine-fault-tolerant agreement on a single shared transaction ledger among mutually distrusting participants. The network enforces deterministic monetary policy through its protocol rules, automatically adjusting mining difficulty every 2,016 blocks to target a ten-minute inter-block interval and capping total issuance at 21 million BTC via a geometric halving schedule. Launched in January 2009, it is the longest-continuously-operated public blockchain and the foundational reference implementation for decentralised digital value transfer.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:peer-to-peer-network",
@@ -13,8 +13,8 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
-  "maturity": "established",
+  "qualityScore": 0.75,
+  "maturity": "mature",
   "relationships": {
     "hasPart": [
       {
@@ -28,9 +28,26 @@
       {
         "id": "urn:ngm:class:utxo-model",
         "label": "UTXO Model"
+      },
+      {
+        "id": "urn:ngm:class:full-node",
+        "label": "Full Node"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-script",
+        "label": "Bitcoin Script"
       }
     ],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:internet-protocol",
+        "label": "Internet Protocol"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:lightning-network",
@@ -39,12 +56,56 @@
       {
         "id": "urn:ngm:class:cryptocurrency",
         "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset-custody",
+        "label": "Digital Asset Custody"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public Key Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:bitcoin-improvement-proposal",
+        "label": "Bitcoin Improvement Proposal"
+      },
+      {
+        "id": "urn:ngm:class:segregated-witness",
+        "label": "Segregated Witness"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:ethereum-network",
+        "label": "Ethereum Network"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof Of Stake"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:financial-infrastructure",
+        "label": "Financial Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:proof-of-work",
@@ -57,9 +118,30 @@
       {
         "id": "urn:ngm:class:bc-cryptographic-primitive",
         "label": "Cryptographic Primitive"
+      },
+      {
+        "id": "urn:ngm:class:sha-256",
+        "label": "SHA-256"
+      },
+      {
+        "id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:gossip-protocol",
+        "label": "Gossip Protocol"
       }
     ],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:spv-verification",
+        "label": "SPV Verification"
+      },
+      {
+        "id": "urn:ngm:class:multisignature",
+        "label": "Multisignature"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
@@ -70,6 +152,10 @@
       {
         "id": "urn:ngm:class:blockchain",
         "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-currency",
+        "label": "Digital Currency"
       }
     ]
   },

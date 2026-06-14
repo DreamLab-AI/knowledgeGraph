@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:vector-database",
   "domain": "artificial-intelligence",
-  "definition": "A vector database is a specialised data storage and retrieval system optimised for indexing and querying high-dimensional dense vectors (embeddings) using approximate nearest-neighbour (ANN) search algorithms such as HNSW, IVF-PQ, and ScaNN. These systems support efficient similarity search over millions to billions of embedding vectors representing text, images, or multimodal content, enabling retrieval-augmented generation, semantic search, and recommendation at scale. Vector databases typically provide filtering on structured metadata in conjunction with vector similarity, persistence, and versioning capabilities beyond what generic ANN libraries offer.",
+  "definition": "A vector database is a specialised data storage and retrieval system optimised for indexing and querying high-dimensional dense vectors (embeddings) using approximate nearest-neighbour (ANN) search algorithms such as HNSW, IVF-PQ, and ScaNN. Unlike traditional relational databases, vector databases solve the problem of finding the k most similar vectors to a query in Euclidean or cosine space over millions to billions of embeddings representing text, images, audio, or multimodal content. They combine ANN indexing with structured metadata filtering, persistence, CRUD operations, and access control, enabling retrieval-augmented generation, semantic search, and large-scale recommendation at production quality. The category encompasses dedicated systems (Pinecone, Qdrant, Weaviate, Milvus, Chroma) and vector-search extensions added to existing databases (pgvector for PostgreSQL, Redis Stack).",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-infrastructure",
@@ -14,13 +14,38 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "emerging",
+  "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:hnsw-index",
+        "label": "HNSW Index"
+      },
+      {
+        "id": "urn:ngm:class:inverted-file-index",
+        "label": "Inverted File Index"
+      },
+      {
+        "id": "urn:ngm:class:product-quantisation",
+        "label": "Product Quantisation"
+      },
+      {
+        "id": "urn:ngm:class:metadata-filter",
+        "label": "Metadata Filter"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:embedding-model",
         "label": "Embedding Model"
+      },
+      {
+        "id": "urn:ngm:class:vector-embedding",
+        "label": "Vector Embedding"
+      },
+      {
+        "id": "urn:ngm:class:approximate-nearest-neighbour-search",
+        "label": "Approximate Nearest Neighbour Search"
       }
     ],
     "enables": [
@@ -31,13 +56,60 @@
       {
         "id": "urn:ngm:class:semantic-search",
         "label": "Semantic Search"
+      },
+      {
+        "id": "urn:ngm:class:recommendation-system",
+        "label": "Recommendation System"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-search",
+        "label": "Multimodal Search"
+      },
+      {
+        "id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:relational-database",
+        "label": "Relational Database"
+      },
+      {
+        "id": "urn:ngm:class:document-database",
+        "label": "Document Database"
+      },
+      {
+        "id": "urn:ngm:class:search-engine",
+        "label": "Search Engine"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cosine-similarity",
+        "label": "Cosine Similarity"
+      },
+      {
+        "id": "urn:ngm:class:bm25",
+        "label": "BM25"
+      },
+      {
+        "id": "urn:ngm:class:hybrid-search",
+        "label": "Hybrid Search"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
@@ -53,6 +125,14 @@
       {
         "id": "urn:ngm:class:search-index",
         "label": "Search Index"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
       }
     ]
   },

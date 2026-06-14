@@ -4,7 +4,7 @@
   "slug": "optimality",
   "public": true,
   "classIri": "urn:ngm:class:optimality",
-  "domain": "general",
+  "domain": "machine-learning",
   "definition": "The property of being the best achievable solution with respect to a defined objective and set of constraints, central to optimisation and decision problems.",
   "subClassOf": [
     {

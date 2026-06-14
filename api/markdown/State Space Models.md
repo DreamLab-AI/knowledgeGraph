@@ -55,7 +55,7 @@ public:: true
   "@type": "Class",
   "label": "State Space Models",
   "definition": "State space models are sequence models that maintain a hidden state evolving over time according to linear dynamics, used as an alternative to attention for long sequences. Recent deep learning variants make the dynamics input-dependent to capture context.",
-  "domain": "deep-learning",
+  "domain": "machine-learning",
   "maturity": "emerging",
   "qualityScore": 0.7,
   "subClassOf": [

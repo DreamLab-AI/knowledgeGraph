@@ -4,7 +4,7 @@
   "slug": "real-esrgan",
   "public": true,
   "classIri": "urn:ngm:class:real-esrgan",
-  "domain": "computer-vision",
+  "domain": "ai",
   "definition": "Real-ESRGAN is an image super-resolution model that upscales and restores low-quality images, with particular attention to real-world degradations. It extends the ESRGAN architecture using a generative adversarial network trained on synthetic degradation data.",
   "subClassOf": [
     {

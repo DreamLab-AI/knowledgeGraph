@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:knowledge-graph-publication-classifier-goods-funding",
   "domain": "blockchain",
-  "definition": "Public goods funding refers to mechanisms that finance resources which are non-excludable and non-rival \u2014 meaning consumption by one party does not diminish availability to others and exclusion is impractical. In decentralised ecosystems, on-chain coordination primitives such as quadratic funding, retroactive grants, and DAO-managed treasuries are used to allocate capital towards open-source software, protocol research, and shared infrastructure. These mechanisms attempt to correct the market failure of under-provision that arises when contributors cannot capture sufficient private value from their public-benefit work.",
+  "definition": "Public goods funding encompasses the mechanisms, institutions, and coordination protocols that allocate capital toward resources which are non-excludable and non-rival \u2014 goods whose consumption by one party does not diminish availability to others and from which no party can be practically excluded. In open digital ecosystems, this addresses a structural market failure: rational actors under-invest in shared infrastructure because they can free-ride on others' contributions. Blockchain-native primitives such as quadratic funding, retroactive grants, and DAO-managed treasuries have revived and extended classical public economics, enabling transparent, on-chain allocation of capital toward open-source software, protocol research, and collective knowledge commons. The field sits at the intersection of mechanism design, cryptoeconomics, and welfare economics, driving continuous innovation in sybil resistance, matching fund architecture, and governance legitimacy.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-defi-and-economics",
@@ -24,14 +24,75 @@
       {
         "id": "urn:ngm:class:retroactive-public-goods-funding",
         "label": "Retroactive Public Goods Funding"
+      },
+      {
+        "id": "urn:ngm:class:grants-programme",
+        "label": "Grants Programme"
+      },
+      {
+        "id": "urn:ngm:class:matching-pool",
+        "label": "Matching Pool"
       }
     ],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:mechanism-design",
+        "label": "Mechanism Design"
+      },
+      {
+        "id": "urn:ngm:class:on-chain-governance",
+        "label": "On-Chain Governance"
+      },
+      {
+        "id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:open-source-software",
+        "label": "Open-Source Software"
+      },
+      {
+        "id": "urn:ngm:class:protocol-development",
+        "label": "Protocol Development"
+      },
+      {
+        "id": "urn:ngm:class:commons-based-peer-production",
+        "label": "Commons-Based Peer Production"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:cryptoeconomics",
+        "label": "Cryptoeconomics"
+      },
+      {
+        "id": "urn:ngm:class:token-governance",
+        "label": "Token Governance"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:venture-capital",
+        "label": "Venture Capital"
+      },
+      {
+        "id": "urn:ngm:class:rent-seeking",
+        "label": "Rent Seeking"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "id": "urn:ngm:class:digital-commons",
+        "label": "Digital Commons"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:dao",
@@ -40,12 +101,7 @@
       {
         "id": "urn:ngm:class:treasury-management",
         "label": "Treasury Management"
-      }
-    ],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
+      },
       {
         "id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
@@ -53,6 +109,27 @@
       {
         "id": "urn:ngm:class:quadratic-voting",
         "label": "Quadratic Voting"
+      },
+      {
+        "id": "urn:ngm:class:sybil-resistance",
+        "label": "Sybil Resistance"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:welfare-economics",
+        "label": "Welfare Economics"
+      },
+      {
+        "id": "urn:ngm:class:collective-action-problem",
+        "label": "Collective Action Problem"
+      },
+      {
+        "id": "urn:ngm:class:impact-certificates",
+        "label": "Impact Certificates"
       }
     ]
   },

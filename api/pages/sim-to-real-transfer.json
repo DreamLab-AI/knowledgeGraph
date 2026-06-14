@@ -5,19 +5,28 @@
   "public": true,
   "classIri": "urn:ngm:class:sim-to-real-transfer",
   "domain": "robotics",
-  "definition": "Sim-to-real transfer encompasses the techniques and strategies for training robotic policies, perception models, and control algorithms in simulation environments and subsequently deploying them on physical hardware with acceptable performance degradation. The core challenge is the reality gap: discrepancies between simulated and real-world physics, sensor noise characteristics, contact dynamics, and visual appearance cause policies optimised in simulation to fail when deployed. Mitigation strategies include domain randomisation, domain adaptation, system identification, and the use of high-fidelity physics engines to narrow the gap before transfer.",
+  "definition": "Sim-to-real transfer is the set of techniques and methodologies for training robotic policies, perception models, and control algorithms inside physics simulators and then deploying the resulting models on physical hardware with acceptable performance degradation. The fundamental barrier is the reality gap: discrepancies in physics fidelity, contact dynamics, sensor noise characteristics, visual appearance, and actuator latency cause policies optimised entirely in simulation to fail on real systems. Mitigation strategies include domain randomisation, domain adaptation, system identification, adaptive dynamics models, and photorealistic rendering to progressively close this gap. The field sits at the intersection of reinforcement learning, robot learning, and transfer learning, and underpins practical large-scale autonomous system deployment.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:robo-navigation-and-planning",
-      "label": "Navigation and Planning"
+      "id": "urn:ngm:class:transfer-learning",
+      "label": "Transfer Learning"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
+  "qualityScore": 0.72,
   "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:physics-engine",
+        "label": "Physics Engine"
+      },
+      {
+        "id": "urn:ngm:class:robot-simulation-environment",
+        "label": "Robot Simulation Environment"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:robot-learning",
@@ -26,12 +35,47 @@
       {
         "id": "urn:ngm:class:legged-locomotion",
         "label": "Legged Locomotion"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-manipulation",
+        "label": "Autonomous Manipulation"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "id": "urn:ngm:class:domain-adaptation",
+        "label": "Domain Adaptation"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:real-world-robot-learning",
+        "label": "Real-World Robot Learning"
+      },
+      {
+        "id": "urn:ngm:class:imitation-learning",
+        "label": "Imitation Learning"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:embodied-ai",
+        "label": "Embodied AI"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:simulation",
@@ -44,6 +88,18 @@
       {
         "id": "urn:ngm:class:physics-simulation",
         "label": "Physics Simulation"
+      },
+      {
+        "id": "urn:ngm:class:domain-randomisation",
+        "label": "Domain Randomisation"
+      },
+      {
+        "id": "urn:ngm:class:synthetic-data",
+        "label": "Synthetic Data"
+      },
+      {
+        "id": "urn:ngm:class:system-identification",
+        "label": "System Identification"
       }
     ],
     "supports": [],
@@ -51,8 +107,24 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:synthetic-data",
-        "label": "Synthetic Data"
+        "id": "urn:ngm:class:reality-gap",
+        "label": "Reality Gap"
+      },
+      {
+        "id": "urn:ngm:class:policy-gradient",
+        "label": "Policy Gradient"
+      },
+      {
+        "id": "urn:ngm:class:model-based-reinforcement-learning",
+        "label": "Model-Based Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:generative-adversarial-network",
+        "label": "Generative Adversarial Network"
+      },
+      {
+        "id": "urn:ngm:class:photorealistic-rendering",
+        "label": "Photorealistic Rendering"
       }
     ]
   },

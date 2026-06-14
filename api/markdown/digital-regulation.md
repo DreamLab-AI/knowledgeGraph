@@ -1,29 +1,92 @@
 - ### Definition
-  - Digital Regulation encompasses the legal frameworks, policy instruments, and enforcement mechanisms that govern the development, deployment, and use of digital technologies, including AI systems, digital platforms, and data-driven services. It addresses algorithmic accountability, platform liability, data sovereignty, content moderation obligations, and cross-border regulatory harmonisation to balance innovation incentives with public interest protections.
+  - Digital Regulation is the body of law, policy instruments, technical standards, and enforcement mechanisms that govern the full lifecycle of digital technologies — from the design and training of [[AI Systems]] to the operation of [[Online Platforms]], [[Data Pipelines]], and [[Digital Infrastructure]]. It translates societal values such as [[Privacy]], fairness, safety, and [[Market Competition]] into enforceable obligations, drawing on [[Regulatory Framework]]s at supranational, national, and sector-specific levels. Key concerns include [[Algorithmic Accountability]], [[Platform Liability]], [[Data Sovereignty]], [[Content Moderation]], and cross-border harmonisation, all balanced against the imperative to preserve innovation. Its emergence has been driven by the scale effects of [[Cloud Computing]], social media, and [[Machine Learning]] deployment, making Digital Regulation a defining feature of 21st-century [[Governance]].
 
-bridges-to:: [[Blockchain]]
+- ### Overview
+  - Digital Regulation has evolved from early telecommunications and broadcasting law into a multidisciplinary field spanning competition law, fundamental rights, product safety, and sector-specific technical standards. Unlike analogue-era regulation, it must contend with cross-border data flows, algorithmic decision-making at scale, rapidly changing technology stacks, and asymmetric information between regulators and regulated entities.
+  - **Why it matters**: Digital technologies mediate access to employment, credit, healthcare, political speech, and public services. Without regulatory safeguards, algorithmic systems can entrench discrimination, erode [[Privacy]], concentrate market power, and undermine democratic institutions. Conversely, poorly designed regulation can suppress beneficial innovation, create compliance burdens that favour large incumbents, and fragment the global digital economy into incompatible jurisdictional blocs.
+  - **How it works**: Digital Regulation operates through a layered combination of:
+    - Ex ante obligations (design requirements, conformity assessments, mandatory impact assessments before deployment).
+    - Ex post enforcement (investigations, fines, injunctions, mandatory audits following harm or complaint).
+    - Co-regulatory and sandbox mechanisms (industry codes of practice reviewed by regulators; controlled pilots under relaxed rules).
+    - Interoperability and data-sharing mandates (requiring dominant platforms to open APIs or share data with competitors).
+  - **Jurisdictional landscape**: The EU has become the leading regulatory exporter via the [[General Data Protection Regulation]] (GDPR), the [[Digital Services Act]] (DSA), the [[Digital Markets Act]] (DMA), and the [[EU AI Act]]. The UK has adopted a sectoral, principles-based approach post-Brexit. The US operates a sectoral patchwork (FTC, CFPB, FCC, sector-specific agencies) with emerging federal AI legislation. China pursues a state-led model with algorithmic recommendation rules and generative AI regulations. India's Digital Personal Data Protection Act 2023 represents a significant emerging-economy framework.
 
-- ### Semantic Classification
-  - owl-class:: artificial-intelligence:DigitalRegulation
-  - owl-role:: concept
+- ### Key Components
+  - **[[Algorithmic Accountability]]** — requirements for transparency, explainability, and auditability of automated decision systems, particularly in high-stakes domains such as credit, employment, and law enforcement.
+  - **[[Platform Liability]]** — rules determining when intermediary platforms bear legal responsibility for third-party content or conduct facilitated on their services (e.g. DSA notice-and-action obligations, US Section 230 safe harbour).
+  - **[[Data Protection]]** and [[Data Sovereignty]] — rights of individuals over personal data collection, processing, and transfer; restrictions on cross-border data flows to jurisdictions lacking adequate protections.
+  - **[[Content Moderation]]** — obligations on platforms to detect, label, or remove illegal content (terrorist material, child sexual abuse material, disinformation) while protecting freedom of expression.
+  - **[[Cybersecurity]] requirements** — mandatory security-by-design, vulnerability disclosure, and incident reporting obligations (e.g. NIS2 Directive, DORA for financial services).
+  - **[[AI Governance and Ethics]]** — risk-tiered obligations for AI systems, including prohibited practices, high-risk system assessments, transparency requirements, and human oversight mandates (EU AI Act).
+  - **[[Market Competition]] and digital markets** — ex ante rules for "gatekeeper" platforms (DMA), merger reviews involving data-rich acquisitions, and interoperability mandates.
+  - **[[Intellectual Property]]** — copyright for AI-generated content, training data licensing, database rights, and the legal status of model weights.
+  - **[[Digital Rights]]** — enforceable entitlements of users including rights to access, rectification, portability, and explanation of automated decisions.
+  - **Regulatory sandboxes** — controlled testing environments where innovators can pilot products under relaxed rules with regulatory oversight, as established by the EU AI Act.
+
+- ### Mechanisms and Instruments
+  - **Legislation and Directives** — primary law setting binding obligations (GDPR, DSA, DMA, EU AI Act, UK Online Safety Act, DPIA Directive, NIS2).
+  - **Technical Standards** — referenced by regulation to give concrete, implementable form to abstract legal requirements (ISO/IEC 42001 for AI management systems, NIST AI Risk Management Framework, ETSI standards for network security).
+  - **Conformity Assessment** — third-party audits or self-declaration processes establishing that a product or system meets regulatory requirements before or after market placement.
+  - **Impact Assessments** — Data Protection Impact Assessments (DPIAs), Fundamental Rights Impact Assessments (FRIAs), and AI system impact assessments mandated before high-risk deployments.
+  - **Regulatory Authorities** — data protection authorities (DPAs), national competent authorities for AI, competition authorities, financial regulators, and communications regulators, each with investigatory and enforcement powers.
+  - **Co-regulatory codes of practice** — industry-drafted codes (e.g. DSA's codes on disinformation) that acquire regulatory force once approved by the European Commission.
+  - **International regulatory cooperation** — bilateral mutual recognition agreements, the Global Partnership on AI (GPAI), OECD AI Principles, and G7/G20 digital economy working groups.
+
+- ### Applications and Use Cases
+  - **AI system deployment** — organisations developing or deploying AI must classify systems by risk, conduct conformity assessments, maintain technical documentation, and implement human oversight mechanisms under the EU AI Act.
+  - **Online platform governance** — very large online platforms must conduct systemic risk assessments, commission independent audits, and share data with vetted researchers under the DSA.
+  - **Financial services digitalisation** — banks and fintechs must comply with DORA's ICT risk management and incident reporting requirements; algorithmic trading faces MiFID II transparency and circuit-breaker rules.
+  - **Healthcare AI** — diagnostic and clinical decision-support AI classified as medical devices faces dual regulation under the EU AI Act (high-risk) and the Medical Device Regulation.
+  - **Autonomous vehicles** — cross-sectoral regulation combining product liability, road traffic law, data protection, and sector-specific AI safety requirements across multiple jurisdictions.
+  - **[[Blockchain]] and [[Smart Contract]]s** — emerging regulatory frameworks for crypto-assets (EU MiCA regulation), stablecoins, and DeFi protocols address investor protection, anti-money laundering, and market integrity without yet resolving the governance of truly decentralised systems.
+  - **Generative AI and foundation models** — transparency, copyright, and systemic risk obligations for providers of general-purpose AI models under the EU AI Act's Title VIII.
 
 - ### Relationships
-  - requires [[Regulatory Framework]]
-  - requires [[Governance]]
-  - enables [[AI Safety]]
-  - enables [[Algorithmic Accountability]]
-  - relatedTo [[AI Ethics]]
-  - relatedTo [[Content Moderation]]
+  - hasPart:: [[Algorithmic Accountability]]
+  - hasPart:: [[Content Moderation]]
+  - hasPart:: [[Data Sovereignty]]
+  - hasPart:: [[Platform Liability]]
+  - requires:: [[Regulatory Framework]]
+  - requires:: [[Governance]]
+  - requires:: [[Compliance]]
+  - enables:: [[AI Safety]]
+  - enables:: [[Data Protection]]
+  - enables:: [[Digital Rights]]
+  - enables:: [[Consumer Protection]]
+  - dependsOn:: [[Policy Framework]]
+  - dependsOn:: [[Standards]]
+  - dependsOn:: [[Enforcement]]
+  - supports:: [[AI Governance and Ethics]]
+  - supports:: [[Digital Trust]]
+  - supports:: [[Market Competition]]
+  - contrastsWith:: [[Self-Regulation]]
+  - contrastsWith:: [[Deregulation]]
+  - relatedTo:: [[AI Ethics]]
+  - relatedTo:: [[Privacy]]
+  - relatedTo:: [[Cybersecurity]]
+  - relatedTo:: [[Intellectual Property]]
+  - bridges-to:: [[Blockchain]]
+  - bridges-to:: [[Decentralised Autonomous Organisation]]
+  - bridges-to:: [[Smart Contract]]
 
-- ### Content
+- ### Standards and Context
+  - **EU AI Act (Regulation 2024/1689)** — the world's first comprehensive horizontal AI regulation, establishing a risk-tiered framework with prohibited practices, high-risk system obligations, and transparency requirements for general-purpose AI models.
+  - **General Data Protection Regulation (GDPR, 2016/679)** — the foundational EU data protection law, establishing principles of lawfulness, data minimisation, purpose limitation, and rights of data subjects; widely influential globally.
+  - **Digital Services Act (DSA, 2022/2065)** — harmonises platform liability and imposes asymmetric obligations on very large online platforms and search engines.
+  - **Digital Markets Act (DMA, 2022/1925)** — designates "gatekeeper" platforms and imposes ex ante interoperability, fairness, and data-sharing obligations.
+  - **UK Online Safety Act 2023** — places duties of care on user-to-user and search services, with Ofcom as regulator; risk-based approach covering illegal content and children's safety.
+  - **NIS2 Directive (2022/2555)** — expands the scope and strengthens cybersecurity obligations for essential and important entities across sectors.
+  - **DORA (Digital Operational Resilience Act, 2022/2554)** — ICT risk management and resilience framework for EU financial sector entities.
+  - **NIST AI Risk Management Framework (AI RMF 1.0, 2023)** — voluntary US framework for managing AI risks across the AI lifecycle (Map, Measure, Manage, Govern).
+  - **ISO/IEC 42001:2023** — international standard for AI management systems, supporting organisations in establishing governance processes around AI development and use.
+  - **OECD AI Principles (2019, updated 2024)** — intergovernmental principles on transparency, accountability, robustness, and human-centred values, adopted by over 40 countries.
+  - **EU MiCA Regulation (2023/1114)** — Markets in Crypto-Assets regulation, providing a harmonised framework for crypto-asset issuers and service providers.
 
-  ## Overview
-
-  Digital Regulation represents an abstract concept in the metaverse ontology hierarchy.
-
-  #### Related Concepts
-  - [[owl:Thing]]
+- ### Semantic Classification
+  - owl-class:: governance:DigitalRegulation
+  - owl-role:: concept
 
 - ### Provenance
-  - sources::
+  - sources:: EU AI Act (2024/1689); GDPR (2016/679); DSA (2022/2065); DMA (2022/1925); UK Online Safety Act 2023; NIST AI RMF 1.0; ISO/IEC 42001:2023; OECD AI Principles
+  - updated:: 2026-06-13
   - migration-date:: 2026-04-26T00:00:00Z

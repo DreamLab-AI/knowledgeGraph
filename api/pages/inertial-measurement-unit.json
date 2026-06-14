@@ -5,23 +5,41 @@
   "public": true,
   "classIri": "urn:ngm:class:inertial-measurement-unit",
   "domain": "robotics",
-  "definition": "An Inertial Measurement Unit (IMU) is an electronic device incorporating tri-axial accelerometers and gyroscopes \u2014 and optionally tri-axial magnetometers \u2014 that measures a rigid body's specific force, angular velocity, and magnetic field strength to compute estimates of linear acceleration, angular rate, and orientation relative to an inertial reference frame. IMUs are classified by grade (consumer MEMS, tactical, navigation, strategic) according to drift, noise, and bias stability specifications. In robotics and spatial computing, IMUs provide the high-frequency proprioceptive backbone for state estimation, sensor-fusion pipelines, and attitude control loops.",
+  "definition": "An Inertial Measurement Unit (IMU) is an electronic device that integrates tri-axial accelerometers, tri-axial gyroscopes, and optionally tri-axial magnetometers to measure a rigid body's specific force, angular rate, and magnetic field, enabling computation of linear acceleration, orientation, and heading relative to an inertial reference frame. MEMS-based IMUs dominate consumer and robotics applications due to low cost, small form factor, and adequate noise performance, while tactical, navigation, and strategic grades using ring-laser or fibre-optic gyroscopes serve aerospace, defence, and surveying applications demanding higher accuracy and lower drift. The raw sensor data are fused through algorithms such as extended Kalman filters, complementary filters, or pre-integration on manifolds to produce robust pose and velocity estimates for autonomous systems. IMUs are foundational to visual-inertial odometry, SLAM pipelines, flight control, pedestrian dead reckoning, and augmented reality tracking.",
   "subClassOf": [
-    {
-      "id": "urn:ngm:class:robo-perception",
-      "label": "Robot Perception"
-    },
     {
       "id": "urn:ngm:class:robot-sensor",
       "label": "Robot Sensor"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:accelerometer",
+        "label": "Accelerometer"
+      },
+      {
+        "id": "urn:ngm:class:gyroscope",
+        "label": "Gyroscope"
+      },
+      {
+        "id": "urn:ngm:class:magnetometer",
+        "label": "Magnetometer"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:kalman-filter",
+        "label": "Kalman Filter"
+      },
+      {
+        "id": "urn:ngm:class:imu-calibration",
+        "label": "IMU Calibration"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:sensor-fusion",
@@ -30,19 +48,74 @@
       {
         "id": "urn:ngm:class:odometry",
         "label": "Odometry"
+      },
+      {
+        "id": "urn:ngm:class:dead-reckoning",
+        "label": "Dead Reckoning"
+      },
+      {
+        "id": "urn:ngm:class:attitude-estimation",
+        "label": "Attitude Estimation"
+      },
+      {
+        "id": "urn:ngm:class:visual-inertial-odometry",
+        "label": "Visual-Inertial Odometry"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:optical-flow-sensor",
+        "label": "Optical Flow Sensor"
+      },
+      {
+        "id": "urn:ngm:class:wheel-odometry",
+        "label": "Wheel Odometry"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality-tracking",
+        "label": "Augmented Reality Tracking"
+      },
+      {
+        "id": "urn:ngm:class:pedestrian-dead-reckoning",
+        "label": "Pedestrian Dead Reckoning"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:mems",
+        "label": "MEMS"
+      },
+      {
+        "id": "urn:ngm:class:extended-kalman-filter",
+        "label": "Extended Kalman Filter"
+      },
+      {
+        "id": "urn:ngm:class:complementary-filter",
+        "label": "Complementary Filter"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [
       {
         "id": "urn:ngm:class:robot-hardware",
         "label": "Robot Hardware"
+      },
+      {
+        "id": "urn:ngm:class:flight-control-system",
+        "label": "Flight Control System"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicle"
       }
     ],
     "relatedTo": [
@@ -53,6 +126,18 @@
       {
         "id": "urn:ngm:class:pose-estimation",
         "label": "Pose Estimation"
+      },
+      {
+        "id": "urn:ngm:class:gnss",
+        "label": "GNSS"
+      },
+      {
+        "id": "urn:ngm:class:lidar",
+        "label": "LiDAR"
+      },
+      {
+        "id": "urn:ngm:class:allan-variance",
+        "label": "Allan Variance"
       }
     ]
   },

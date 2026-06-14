@@ -99,7 +99,7 @@ public:: true
   "@type": "Class",
   "label": "Decentralised Finance Domain",
   "definition": "The Decentralised Finance Domain classifies concepts for financial services that operate through smart contracts on public ledgers without a central intermediary. It covers protocols for trading, lending, derivatives, and asset management, together with the composability that lets them interoperate. As a subject classification under the Blockchain Domain, it scopes the on-ledger financial primitives rather than the underlying tokens or the regulation that may apply.",
-  "domain": "decentralised-finance",
+  "domain": "blockchain",
   "maturity": "emerging",
   "qualityScore": 0.7,
   "subClassOf": [

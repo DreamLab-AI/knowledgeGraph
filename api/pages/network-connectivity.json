@@ -4,23 +4,48 @@
   "slug": "network-connectivity",
   "public": true,
   "classIri": "urn:ngm:class:network-connectivity",
-  "domain": "blockchain",
-  "definition": "Network Connectivity describes the ability of computing nodes, devices, or systems to establish, maintain, and exchange data across communication links, whether within a local area network, wide area network, or across heterogeneous internet topologies. It encompasses the physical layer (cables, wireless signals), logical addressing, routing protocols, and transport-layer reliability guarantees that together enable end-to-end data delivery. In distributed and blockchain contexts, network connectivity is a prerequisite for peer discovery, transaction propagation, and consensus participation.",
+  "domain": "infrastructure",
+  "definition": "Network Connectivity is the capability of computing nodes, devices, or systems to establish, maintain, and exchange data across communication links spanning local area networks, wide area networks, and heterogeneous internet topologies. It encompasses the physical transmission medium (copper, fibre, radio), link-layer and network-layer addressing, routing protocols that guide packets across autonomous systems, and transport-layer mechanisms that provide reliability, ordering, and flow control. Together these layers enable end-to-end data delivery on which all higher-order distributed services \u2014 from cloud orchestration and edge computing to consensus protocols and collaborative applications \u2014 ultimately depend.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:bc-network-component",
-      "label": "BC Network Component"
+      "id": "urn:ngm:class:network-infrastructure",
+      "label": "Network Infrastructure"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.72,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [
+    "hasPart": [
       {
         "id": "urn:ngm:class:network-protocol",
         "label": "Network Protocol"
+      },
+      {
+        "id": "urn:ngm:class:network-topology",
+        "label": "Network Topology"
+      },
+      {
+        "id": "urn:ngm:class:routing-protocol",
+        "label": "Routing Protocol"
+      },
+      {
+        "id": "urn:ngm:class:physical-layer",
+        "label": "Physical Layer"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:ip-addressing",
+        "label": "IP Addressing"
+      },
+      {
+        "id": "urn:ngm:class:dns",
+        "label": "DNS"
+      },
+      {
+        "id": "urn:ngm:class:network-interface",
+        "label": "Network Interface"
       }
     ],
     "enables": [
@@ -31,28 +56,93 @@
       {
         "id": "urn:ngm:class:edge-computing",
         "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "id": "urn:ngm:class:real-time-communication",
+        "label": "Real-Time Communication"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
+    "dependsOn": [
       {
-        "id": "urn:ngm:class:network-topology",
-        "label": "Network Topology"
+        "id": "urn:ngm:class:bandwidth",
+        "label": "Bandwidth"
       },
       {
         "id": "urn:ngm:class:latency",
         "label": "Latency"
       },
       {
-        "id": "urn:ngm:class:network-infrastructure",
-        "label": "Network Infrastructure"
+        "id": "urn:ngm:class:network-reliability",
+        "label": "Network Reliability"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:network-isolation",
+        "label": "Network Isolation"
+      },
+      {
+        "id": "urn:ngm:class:air-gap",
+        "label": "Air Gap"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:consensus-protocol",
+        "label": "Consensus Protocol"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
+        "id": "urn:ngm:class:software-defined-networking",
+        "label": "Software-Defined Networking"
+      },
+      {
+        "id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ieee-802",
+        "label": "IEEE 802"
+      },
+      {
+        "id": "urn:ngm:class:ietf-rfc",
+        "label": "IETF RFC"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      },
+      {
+        "id": "urn:ngm:class:quality-of-service",
+        "label": "Quality of Service"
       }
     ]
   },

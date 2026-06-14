@@ -59,7 +59,7 @@ public:: true
   "@type": "Class",
   "label": "Control Layer",
   "definition": "The Control Layer is the stratum that issues commands to actuators or subsystems to drive a system toward desired states. It sits above the Perception Layer, on whose estimates it acts, and below planning and agent strata that set goals. It contains controllers, feedback loops, set-point logic, and the actuation interfaces that effect change.",
-  "domain": "control",
+  "domain": "robotics",
   "maturity": "emerging",
   "qualityScore": 0.7,
   "subClassOf": [

@@ -51,7 +51,7 @@ public:: true
   "@type": "Class",
   "label": "Holography",
   "definition": "A technique for recording and reconstructing the full wavefront of light, including both amplitude and phase, to reproduce three-dimensional images. It records the interference pattern between a reference beam and light scattered from an object.",
-  "domain": "optics",
+  "domain": "spatial-computing",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

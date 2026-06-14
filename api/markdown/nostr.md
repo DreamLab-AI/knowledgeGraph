@@ -1,14 +1,69 @@
 - ### Definition
-  - Nostr is a minimalist open protocol for censorship-resistant social messaging in which user identity is a [[Public Key]] on the secp256k1 curve, messages are signed JSON events published to relay servers over [[WebSocket]] connections, and [[Self Sovereign Identity]] is achieved without any central account authority.
+  - Nostr (Notes and Other Stuff Transmitted by Relays) is an open, censorship-resistant messaging protocol in which every user is identified solely by a [[secp256k1]] cryptographic key pair, all activity is expressed as signed [[JSON]] event objects published to relay servers over [[WebSocket]] connections, and [[Self-Sovereign Identity]] is achieved without any central account authority. The protocol's radical simplicity — a single event schema, a filter-based subscription model, and interchangeable [[Relay Server]] infrastructure — distinguishes it from both federated alternatives such as [[ActivityPub]] and permissioned blockchain social layers.
+
+- ### Overview
+  - Nostr was conceived in 2020 by the pseudonymous developer fiatjaf as a response to the structural censorship vulnerabilities of both centralised platforms and federated networks. Its core insight is that censorship-resistance requires identity to be cryptographically owned by the user rather than delegated to any server, and that relay infrastructure should be commoditised and replaceable.
+  - Unlike [[Federated Social Network]] architectures (Mastodon, Diaspora), Nostr does not route through a home server that controls the account. A user's keypair is the identity; moving to a different relay is as simple as publishing an updated relay list (NIP-65), and all prior events already signed with the key remain valid wherever they are stored.
+  - Unlike [[Blockchain]] social layers, Nostr stores no data on-chain and incurs no transaction fees for publishing. The protocol intentionally keeps on-chain settlement out of scope, delegating value transfer to the [[Lightning Network]] via the zap mechanism (NIP-57).
+  - The result is an extremely low-barrier-to-entry protocol: a relay can be implemented in under 1,000 lines of code; a client in a few hundred. This has produced a rich ecosystem of implementations across Go, Rust, TypeScript, Swift, and Kotlin.
+
+- ### Key Components
+  - **Event Object** — the atomic unit. A fixed-schema [[JSON]] object with seven fields: `id` (SHA-256 hash of the canonical serialisation), `pubkey` (hex-encoded 32-byte author public key), `created_at` (Unix timestamp), `kind` (integer classifying event semantics), `tags` (array-of-arrays for references, mentions, replies), `content` (arbitrary UTF-8 string), and `sig` ([[Schnorr Signature]] over the event id). All relay and client logic is derived from this single data structure.
+  - **[[Nostr Relay]]** — a server accepting WebSocket connections from clients. Relays receive events (CLIENT→RELAY: `EVENT` message), store them, and answer subscription queries (CLIENT→RELAY: `REQ` message with filter JSON). Relay policies (spam filtering, paid access, whitelist, proof-of-work) are entirely out-of-protocol and set operator autonomy.
+  - **[[Nostr Event]] Kinds** — the integer `kind` field segments the event space. Kind 0: metadata (profile); Kind 1: short-form note; Kind 3: contact/follow list; Kind 4: encrypted DM (deprecated in favour of NIP-44 gift wrap); Kind 6: repost; Kind 7: reaction; Kind 9735: zap receipt; Kind 30023: long-form article; Kind 5300+: NIP-90 data-vending-machine jobs.
+  - **[[Nostr Improvement Proposal]] (NIP) Process** — the decentralised specification mechanism. NIPs are markdown documents in the `nostr-protocol/nostr` GitHub repository. They are numbered, status-tracked (draft/final), and opt-in: clients and relays signal support via `NIP-11` relay information documents. Key NIPs include: NIP-01 (core protocol), NIP-04 (legacy DM encryption), NIP-05 (DNS-based identity verification), NIP-19 (`bech32`-encoded entities: `npub`, `nsec`, `note`, `nprofile`, `nevent`), NIP-44 (versioned encryption), NIP-57 (Lightning zaps), NIP-65 (outbox relay model), NIP-90 (Data Vending Machines for AI task delegation).
+  - **[[secp256k1]] Key Pair** — the cryptographic root of identity. The 32-byte private key (nsec) generates a 32-byte public key (npub) using the same elliptic curve as [[Bitcoin]]. [[Schnorr Signature]]s (BIP-340) are used for event signing, enabling batch verification and key aggregation. The key pair is portable across all Nostr clients and relays with no registration step.
+  - **Relay Filter Subscriptions** — clients open subscriptions with `REQ <subscription-id> <filter>` messages. A filter is a JSON object selecting by `ids`, `authors`, `kinds`, `#e` (event tag), `#p` (pubkey tag), `since`, `until`, and `limit`. Relays respond with matching stored events followed by an `EOSE` (End Of Stored Events) marker, after which new matching events are streamed in real time.
+  - **Outbox / Inbox Model (NIP-65)** — a relay list event (Kind 10002) announces a user's preferred write relays and read relays. Clients use this to implement a gossip-style routing model: publishing to the author's write relays and fetching from the read relays of followed users, reducing full-mesh fan-out.
+
+- ### Applications and Use Cases
+  - **Decentralised Social Networking** — short-form notes, thread replies, reposts, and reactions constitute the core social layer. Clients such as Damus (iOS), Primal (web/mobile), Amethyst (Android), and Snort (web) provide Twitter/X-like interfaces over open relay data, with client-side algorithm transparency absent from closed platforms.
+  - **[[Lightning Network]] Payments and [[Value-for-Value]]** — NIP-57 zaps attach BOLT-11 Lightning invoices to events, allowing instant micro-tipping and subscription-free content monetisation. Zap splits (NIP-57 extensions) route fractions of a zap to multiple recipients (e.g., article co-authors or relay operators).
+  - **Long-Form Publishing** — Kind 30023 parameterised replaceable events support Markdown-formatted articles with title, summary, and published-at metadata, positioning Nostr as a censorship-resistant alternative to Medium or Substack.
+  - **Encrypted Direct Messaging** — NIP-44 versioned encryption (ChaCha20-Poly1305 with ECDH-derived key and HKDF) supersedes the deprecated NIP-04 ECDH+AES scheme. NIP-17 gift-wrap DMs seal the sender/recipient metadata by wrapping the ciphertext in a sealed rumour structure visible only to the private key holder.
+  - **[[Decentralised Identity]] and Verification** — NIP-05 maps an npub to a DNS-controlled JSON file at `/.well-known/nostr.json`, providing a human-readable handle (user@domain.tld). NIP-39 (External Identities) allows attaching and cryptographically claiming GitHub accounts, Telegram handles, or other service identifiers to a Nostr key. [[DID Nostr Identity]] (did:nostr) maps Nostr keys into the W3C [[Decentralised Identity]] framework.
+  - **AI and Agent Communication (NIP-90 Data Vending Machines)** — NIP-90 defines a marketplace protocol for computational tasks: a requester publishes a job-request event (Kind 5000–5999); AI service providers ("Data Vending Machines") pick up the request, process it, and return results (Kind 6000–6999) as signed events. This enables [[Agent-to-Agent Communication]] and [[Decentralised AI]] inference coordination without centralised APIs.
+  - **Community and Moderation** — NIP-72 (Moderated Communities), NIP-29 (Relay-based Groups), and NIP-28 (Public Chat Channels) extend Nostr into community discussion spaces with optional relay-enforced moderation, preserving opt-in censorship controls without protocol-level authority.
+  - **Marketplace and Commerce** — NIP-15 (Nostr Marketplace) and NIP-99 (Classified Listings) define product and listing events, enabling peer-to-peer commerce with Lightning payment settlement.
+  - **Session Mirroring and Notification** — the NIP-59 gift-wrap pattern is widely used for private notification channels where only the holder of a specific private key can decrypt the message stream, used in AI agent session-mirroring architectures.
 
 - ### Relationships
-  - Nostr is an instance of the [[Nostr Protocol]] specification and its principal motivation is [[Censorship Resistance]] — any relay can be replaced and a user's identity (keypair) persists independent of any server. [[Public-Key Cryptography]] underpins both identity and message integrity: each event carries a signature verifiable against the author's public key. The protocol supports [[Decentralised Identity]] and has been mapped to [[DID Nostr Identity]] (NIP-39), enabling integration with W3C DID infrastructure. It enables a distributed [[Social Network Graph]] discoverable through follow lists and enables the [[Decentralised Web]] vision by providing open social infrastructure beyond platform silos. [[WebSocket]] is the sole transport primitive.
+  - uses:: [[Public-Key Cryptography]]
+  - uses:: [[WebSocket]]
+  - uses:: [[Schnorr Signature]]
+  - uses:: [[secp256k1]]
+  - uses:: [[JSON]]
+  - enables:: [[Censorship Resistance]]
+  - enables:: [[Decentralised Identity]]
+  - enables:: [[Social Network Graph]]
+  - enables:: [[Decentralised Web]]
+  - enables:: [[Micropayment]]
+  - requires:: [[Relay Server]]
+  - requires:: [[Event Signing]]
+  - dependsOn:: [[Lightning Network]]
+  - dependsOn:: [[Bitcoin]]
+  - implements:: [[Self-Sovereign Identity]]
+  - implements:: [[Open Protocol]]
+  - hasPart:: [[Nostr Improvement Proposal]]
+  - hasPart:: [[Nostr Event]]
+  - hasPart:: [[Nostr Relay]]
+  - contrastsWith:: [[ActivityPub]]
+  - contrastsWith:: [[Matrix Protocol]]
+  - contrastsWith:: [[Federated Social Network]]
+  - relatedTo:: [[DID Nostr Identity]]
+  - relatedTo:: [[Value-for-Value]]
+  - relatedTo:: [[Peer-to-Peer Network]]
+  - bridges-to:: [[Agent-to-Agent Communication]]
+  - bridges-to:: [[Decentralised AI]]
 
-- ### Content
-  - The Nostr protocol's entire data model centres on the Event object, a JSON structure with a fixed schema: `id` (SHA-256 hash of the event contents), `pubkey` (author's hex-encoded 32-byte public key), `created_at` (Unix timestamp), `kind` (integer classifying the event type), `tags` (array of arrays for references, replies, mentions), `content` (arbitrary string), and `sig` (Schnorr signature over the event id). This simplicity means any conforming relay can store events without understanding their semantics, and any conforming client can verify event authenticity without trusting the relay.
+- ### Standards and Context
+  - The Nostr specification is maintained as a community repository at `github.com/nostr-protocol/nostr`. There is no formal standards body; governance is informal, driven by rough consensus among client and relay implementers. NIP authors propose changes as pull requests; a NIP reaching "final" status indicates widespread implementation support.
+  - The protocol deliberately avoids [[Blockchain]] data structures to remain fee-free and high-throughput. Event immutability is enforced by cryptographic signatures rather than consensus chains.
+  - [[ActivityPub]] (the W3C Recommendation underpinning Mastodon and the Fediverse) federates through server-controlled actor accounts, making it structurally censurable at the server level. Nostr's key-centric model is considered a more robust censorship-resistance guarantee by its proponents.
+  - [[Matrix Protocol]] (Element/Matrix.org) targets encrypted team messaging with room-based federation and complex state resolution. Nostr's event model is simpler but less suited to large multi-party encrypted rooms.
+  - BIP-340 (Schnorr Signatures for secp256k1) and BIP-341/342 (Taproot) are the Bitcoin Improvement Proposals that standardise the cryptographic primitives Nostr reuses, ensuring interoperability with Bitcoin tooling.
+  - NIP-90 Data Vending Machines intersect with emerging [[Decentralised AI]] inference markets and [[Agent-to-Agent Communication]] patterns, positioning Nostr as potential coordination infrastructure for autonomous AI agents operating without centralised API gatekeepers.
 
-  - Relay operators run simple servers (most implementations are under 1,000 lines of code) that accept signed events over WebSocket and answer REQ subscription filters from clients. Filters specify combinations of pubkeys, event kinds, time ranges, and tag values. Relays may impose spam-protection measures — proof-of-work requirements, paid access, whitelist policies — without protocol-level coordination. Clients manage their own relay lists (NIP-65 outbox model), publishing to write relays and reading from configured read relays.
-
-  - The NIP (Nostr Implementation Possibilities) process extends the protocol in a decentralised, opt-in manner. Key NIPs include NIP-01 (core protocol), NIP-04 and NIP-44 (encrypted direct messages using ECDH-derived shared secrets), NIP-57 (Lightning zaps — attaching value transfers to events using BOLT-11 invoices), NIP-05 (DNS-based identity verification mapping npubs to human-readable addresses), and NIP-90 (data vending machines for AI task requests). This extensibility allows Nostr to evolve rapidly without hard forks.
-
-  - The intersection of Nostr and the Lightning Network has created a programmable social-payment layer: users can attach zap receipts to notes, enabling micro-tipping and value-for-value content monetisation without platform intermediaries. Projects such as Primal and Damus demonstrate client-side algorithms built on open relay data, offering algorithm transparency absent from closed platforms. Nostr's key-centric model is also being explored for agent-to-agent communication in decentralised AI systems.
+- ### Provenance
+  - sources:: Nostr protocol specification (github.com/nostr-protocol/nostr), NIP repository, fiatjaf blog posts, Bitcoin Magazine Nostr coverage, Primal and Damus client documentation, NIP-90 DVM specification.
+  - updated:: 2026-06-13

@@ -4,8 +4,8 @@
   "slug": "material-system",
   "public": true,
   "classIri": "urn:ngm:class:material-system",
-  "domain": "general",
-  "definition": "A defined combination of materials and their interfaces engineered to deliver a specific function or set of properties.",
+  "domain": "infrastructure",
+  "definition": "A Material System is an engineered assembly of two or more distinct materials \u2014 together with their interfaces, interphases, and boundary conditions \u2014 designed and optimised as a coherent unit to deliver a specified combination of mechanical, thermal, electrical, optical, or biological properties. The system perspective shifts analysis from isolated constituent properties to emergent behaviour arising from interactions between phases, microstructures, and interfaces under operational loading conditions. Material systems are specified through hierarchical design parameters spanning macro-, meso-, micro-, and nano-scales, and their performance is evaluated via multi-scale modelling, physical testing, and lifecycle assessment. Representative examples include continuous-fibre polymer matrix composites, thermal barrier coating systems, multi-layer semiconductor packages, gradient functional materials, and bioresorbable scaffold-tissue constructs.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:material-science",
@@ -13,31 +13,152 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
-  "maturity": "established",
+  "qualityScore": 0.74,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:composite-material",
+        "label": "Composite Material"
+      },
+      {
+        "id": "urn:ngm:class:interface",
+        "label": "Interface"
+      },
+      {
+        "id": "urn:ngm:class:microstructure",
+        "label": "Microstructure"
+      },
+      {
+        "id": "urn:ngm:class:coating",
+        "label": "Coating"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:material-science",
         "label": "Material Science"
+      },
+      {
+        "id": "urn:ngm:class:manufacturing-process",
+        "label": "Manufacturing Process"
+      },
+      {
+        "id": "urn:ngm:class:characterisation",
+        "label": "Characterisation"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:simulation",
         "label": "Simulation"
+      },
+      {
+        "id": "urn:ngm:class:structural-optimisation",
+        "label": "Structural Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:lifecycle-assessment",
+        "label": "Lifecycle Assessment"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:thermodynamics",
+        "label": "Thermodynamics"
+      },
+      {
+        "id": "urn:ngm:class:mechanics-of-materials",
+        "label": "Mechanics of Materials"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:monolithic-material",
+        "label": "Monolithic Material"
+      },
+      {
+        "id": "urn:ngm:class:bulk-material",
+        "label": "Bulk Material"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:complex-systems",
+        "label": "Complex Systems"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:finite-element-analysis",
+        "label": "Finite Element Analysis"
+      },
+      {
+        "id": "urn:ngm:class:multi-scale-modelling",
+        "label": "Multi-Scale Modelling"
+      },
+      {
+        "id": "urn:ngm:class:phase-field-model",
+        "label": "Phase Field Model"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:aerospace-engineering",
+        "label": "Aerospace Engineering"
+      },
+      {
+        "id": "urn:ngm:class:biomedical-engineering",
+        "label": "Biomedical Engineering"
+      },
+      {
+        "id": "urn:ngm:class:energy-storage",
+        "label": "Energy Storage"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:astm-international",
+        "label": "ASTM International"
+      },
+      {
+        "id": "urn:ngm:class:iso-standards",
+        "label": "ISO Standards"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:engineering-design",
+        "label": "Engineering Design"
+      },
+      {
+        "id": "urn:ngm:class:systems-engineering",
+        "label": "Systems Engineering"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:functional-gradient-material",
+        "label": "Functional Gradient Material"
+      },
+      {
+        "id": "urn:ngm:class:smart-material",
+        "label": "Smart Material"
+      },
+      {
+        "id": "urn:ngm:class:metamaterial",
+        "label": "Metamaterial"
+      }
+    ]
   },
   "wikilinks": [
     {

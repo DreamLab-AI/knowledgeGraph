@@ -5,22 +5,35 @@
   "public": true,
   "classIri": "urn:ngm:class:state-estimation",
   "domain": "robotics",
-  "definition": "State Estimation encompasses the algorithms and techniques used to infer the internal state of a robotic system from noisy sensor measurements.",
+  "definition": "State Estimation is the computational discipline of inferring the latent, unobservable internal state of a dynamical system \u2014 such as position, velocity, orientation, and joint angles \u2014 from a sequence of noisy, incomplete sensor measurements, using probabilistic inference frameworks. Core algorithms include the Kalman Filter and its nonlinear extensions (EKF, UKF), particle filters, and factor-graph optimisation methods that maintain a belief distribution over state variables over time. The field underpins autonomous navigation, robotic manipulation, aerospace guidance systems, and any cyber-physical system that must act on estimated rather than directly observed quantities. Modern formulations unify Bayesian filtering, maximum-a-posteriori smoothing, and deep-learning-based perception to achieve robust estimation under sensor failure, model mismatch, and adversarial environments.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:robo-navigation-and-planning",
-      "label": "Navigation and Planning"
-    },
-    {
-      "id": "urn:ngm:class:robotics-systems",
-      "label": "Robotics Systems"
+      "id": "urn:ngm:class:probabilistic-inference",
+      "label": "Probabilistic Inference"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:kalman-filter",
+        "label": "Kalman Filter"
+      },
+      {
+        "id": "urn:ngm:class:particle-filter",
+        "label": "Particle Filter"
+      },
+      {
+        "id": "urn:ngm:class:extended-kalman-filter",
+        "label": "Extended Kalman Filter"
+      },
+      {
+        "id": "urn:ngm:class:factor-graph",
+        "label": "Factor Graph"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:sensor-fusion",
@@ -29,6 +42,14 @@
       {
         "id": "urn:ngm:class:imu",
         "label": "IMU"
+      },
+      {
+        "id": "urn:ngm:class:probabilistic-models",
+        "label": "Probabilistic Models"
+      },
+      {
+        "id": "urn:ngm:class:system-dynamics",
+        "label": "System Dynamics"
       }
     ],
     "enables": [
@@ -39,13 +60,69 @@
       {
         "id": "urn:ngm:class:navigation",
         "label": "Navigation"
+      },
+      {
+        "id": "urn:ngm:class:robot-control",
+        "label": "Robot Control"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-systems",
+        "label": "Autonomous Systems"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
+        "id": "urn:ngm:class:stochastic-processes",
+        "label": "Stochastic Processes"
+      },
+      {
+        "id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:deterministic-control",
+        "label": "Deterministic Control"
+      },
+      {
+        "id": "urn:ngm:class:open-loop-control",
+        "label": "Open-Loop Control"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:lidar",
+        "label": "LiDAR"
+      },
+      {
+        "id": "urn:ngm:class:visual-odometry",
+        "label": "Visual Odometry"
+      },
+      {
+        "id": "urn:ngm:class:wheel-odometry",
+        "label": "Wheel Odometry"
+      },
+      {
+        "id": "urn:ngm:class:gps",
+        "label": "GPS"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
@@ -57,6 +134,14 @@
       {
         "id": "urn:ngm:class:path-planning",
         "label": "Path Planning"
+      },
+      {
+        "id": "urn:ngm:class:control-theory",
+        "label": "Control Theory"
+      },
+      {
+        "id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
       }
     ]
   },

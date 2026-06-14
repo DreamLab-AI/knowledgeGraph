@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:operating-system",
   "domain": "infrastructure",
-  "definition": "An Operating System (OS) is the foundational software layer that manages hardware resources \u2014 CPU scheduling, memory allocation, file systems, device drivers, and process isolation \u2014 and provides a stable interface for application software. In spatial computing and XR contexts, OS-level capabilities such as real-time scheduling, GPU access, and sensor integration are critical; specialised spatial OSes must coordinate head-tracking, display refresh, and input fusion at sub-millisecond latencies.",
+  "definition": "An Operating System (OS) is system software that manages computer hardware, software resources, and provides common services for application programs \u2014 encompassing process scheduling, memory management, file-system abstraction, device-driver interfaces, networking stacks, and security enforcement. Acting as the intermediary between hardware and user-space applications, the OS exposes stable APIs that decouple software from underlying physical or virtualised hardware. Specialised variants range from real-time operating systems (RTOS) for deterministic control loops in embedded and robotic systems, to hypervisor-based OSes supporting full hardware virtualisation, to spatial-computing runtime stacks that coordinate sensor fusion, GPU pipelines, and display refresh at sub-millisecond latencies.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-computing-and-cloud",
@@ -13,21 +13,62 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "mature",
   "relationships": {
     "hasPart": [
+      {
+        "id": "urn:ngm:class:kernel",
+        "label": "Kernel"
+      },
+      {
+        "id": "urn:ngm:class:process-scheduler",
+        "label": "Process Scheduler"
+      },
+      {
+        "id": "urn:ngm:class:memory-management-unit",
+        "label": "Memory Management Unit"
+      },
+      {
+        "id": "urn:ngm:class:file-system",
+        "label": "File System"
+      },
+      {
+        "id": "urn:ngm:class:device-driver",
+        "label": "Device Driver"
+      },
+      {
+        "id": "urn:ngm:class:network-stack",
+        "label": "Network Stack"
+      },
+      {
+        "id": "urn:ngm:class:system-call-interface",
+        "label": "System Call Interface"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:hardware",
+        "label": "Hardware"
+      },
+      {
+        "id": "urn:ngm:class:cpu",
+        "label": "CPU"
+      },
+      {
+        "id": "urn:ngm:class:memory",
+        "label": "Memory"
+      }
+    ],
+    "enables": [
       {
         "id": "urn:ngm:class:virtual-machine",
         "label": "Virtual Machine"
       },
       {
-        "id": "urn:ngm:class:resource-management",
-        "label": "Resource Management"
-      }
-    ],
-    "requires": [],
-    "enables": [
+        "id": "urn:ngm:class:containerisation",
+        "label": "Containerisation"
+      },
       {
         "id": "urn:ngm:class:embedded-systems",
         "label": "Embedded Systems"
@@ -35,20 +76,81 @@
       {
         "id": "urn:ngm:class:edge-computing",
         "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:posix",
+        "label": "POSIX"
+      },
+      {
+        "id": "urn:ngm:class:openxr",
+        "label": "OpenXR"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:real-time-operating-system",
+        "label": "Real-Time Operating System"
+      },
+      {
+        "id": "urn:ngm:class:bare-metal",
+        "label": "Bare Metal"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:robot-operating-system",
+        "label": "Robot Operating System"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:virtualisation",
+        "label": "Virtualisation"
+      },
+      {
+        "id": "urn:ngm:class:hypervisor",
+        "label": "Hypervisor"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:multithreading",
+        "label": "Multithreading"
+      },
+      {
+        "id": "urn:ngm:class:inter-process-communication",
+        "label": "Inter-Process Communication"
+      },
+      {
+        "id": "urn:ngm:class:security-isolation",
+        "label": "Security Isolation"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:hardware",
-        "label": "Hardware"
+        "id": "urn:ngm:class:resource-management",
+        "label": "Resource Management"
+      },
+      {
+        "id": "urn:ngm:class:firmware",
+        "label": "Firmware"
+      },
+      {
+        "id": "urn:ngm:class:middleware",
+        "label": "Middleware"
       }
     ]
   },

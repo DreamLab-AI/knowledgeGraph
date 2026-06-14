@@ -59,7 +59,7 @@ public:: true
   "@type": "Class",
   "label": "Perception Layer",
   "definition": "The Perception Layer is the stratum that converts raw sensor signals into structured observations of the environment. It sits above the Sensor Fusion and Hardware sensing strata and below decision-making layers, providing the interpreted percepts that agents and controllers act on. It contains detection, recognition, segmentation, and state-estimation components.",
-  "domain": "perception",
+  "domain": "spatial-computing",
   "maturity": "emerging",
   "qualityScore": 0.7,
   "subClassOf": [

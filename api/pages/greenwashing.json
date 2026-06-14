@@ -4,8 +4,8 @@
   "slug": "greenwashing",
   "public": true,
   "classIri": "urn:ngm:class:greenwashing",
-  "domain": "sustainability",
-  "definition": "Greenwashing is the practice of making misleading or unsubstantiated claims about the environmental benefits of a product, service, or organisation.",
+  "domain": "governance",
+  "definition": "Greenwashing is the practice of making misleading, exaggerated, or unsubstantiated claims about the environmental or sustainability credentials of a product, service, organisation, or financial instrument in order to gain reputational, commercial, or regulatory advantage. It encompasses both deliberate deception and negligent miscommunication, ranging from vague marketing language ('eco-friendly', 'carbon neutral') to selective disclosure that conceals material environmental harms. Greenwashing undermines the integrity of sustainability frameworks, distorts capital allocation in ESG finance, and erodes public trust in genuine environmental initiatives. Regulatory bodies worldwide are introducing mandatory disclosure regimes, verification standards, and enforcement mechanisms to combat it.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sustainability",
@@ -13,21 +13,116 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.73,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:audit-and-verification",
+        "label": "Audit and Verification"
+      },
+      {
+        "id": "urn:ngm:class:third-party-certification",
+        "label": "Third-Party Certification"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:regulatory-enforcement",
+        "label": "Regulatory Enforcement"
+      },
+      {
+        "id": "urn:ngm:class:green-finance-standards",
+        "label": "Green Finance Standards"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:marketing-communications",
+        "label": "Marketing Communications"
+      },
+      {
+        "id": "urn:ngm:class:information-asymmetry",
+        "label": "Information Asymmetry"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:sustainable-development",
+        "label": "Sustainable Development"
+      },
+      {
+        "id": "urn:ngm:class:carbon-neutrality",
+        "label": "Carbon Neutrality"
+      },
+      {
+        "id": "urn:ngm:class:esg-reporting",
+        "label": "ESG Reporting"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:esg-data-analytics",
+        "label": "ESG Data Analytics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-transparency",
+        "label": "Supply Chain Transparency"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
     "uses": [],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:eu-green-claims-directive",
+        "label": "EU Green Claims Directive"
+      },
+      {
+        "id": "urn:ngm:class:iso-14021",
+        "label": "ISO 14021"
+      },
+      {
+        "id": "urn:ngm:class:ftc-green-guides",
+        "label": "FTC Green Guides"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:corporate-social-responsibility",
+        "label": "Corporate Social Responsibility"
+      },
+      {
+        "id": "urn:ngm:class:environmental-disclosure",
+        "label": "Environmental Disclosure"
+      },
+      {
+        "id": "urn:ngm:class:sustainability-reporting",
+        "label": "Sustainability Reporting"
+      },
+      {
+        "id": "urn:ngm:class:consumer-protection",
+        "label": "Consumer Protection"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:reputational-risk",
+        "label": "Reputational Risk"
+      },
+      {
+        "id": "urn:ngm:class:energy-consumption",
+        "label": "Energy Consumption"
+      }
+    ]
   },
   "wikilinks": [
     {

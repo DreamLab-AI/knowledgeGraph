@@ -4,7 +4,7 @@
   "slug": "semantic-reasoning-engine",
   "public": true,
   "classIri": "urn:ngm:class:semantic-reasoning-engine",
-  "domain": "general",
+  "domain": "artificial-intelligence",
   "definition": "Software that derives logically implied facts and checks consistency over a knowledge base expressed in a formal language such as OWL or RDF Schema. It applies inference rules of the underlying logic to make implicit information explicit.",
   "subClassOf": [
     {

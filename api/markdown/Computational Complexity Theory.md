@@ -55,7 +55,7 @@ public:: true
   "@type": "Class",
   "label": "Computational Complexity Theory",
   "definition": "The study of the resources, principally time and memory, required to solve computational problems, and the classification of problems into complexity classes.",
-  "domain": "mathematics",
+  "domain": "machine-learning",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

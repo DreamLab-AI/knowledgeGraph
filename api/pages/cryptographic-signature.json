@@ -4,51 +4,165 @@
   "slug": "cryptographic-signature",
   "public": true,
   "classIri": "urn:ngm:class:cryptographic-signature",
-  "domain": "blockchain",
-  "definition": "A cryptographic signature is a mathematical construction that allows a signing party to attach an unforgeable, verifiable proof of origin and integrity to a message or transaction, providing both authenticity and non-repudiation. Signatures are computed from the message content and the signer's private key using an asymmetric cryptographic algorithm; any party possessing the corresponding public key can independently verify the signature without learning the private key. Common schemes include ECDSA, Ed25519, and RSA-PSS, each with distinct performance and security profiles relevant to their deployment context.",
+  "domain": "security",
+  "definition": "A cryptographic signature is a mathematical scheme that allows a private-key holder to produce an unforgeable, publicly-verifiable proof that a specific message or data item was authorised by them, delivering both authenticity and non-repudiation. The signing algorithm combines a cryptographic hash of the message with the signer's private key to produce a compact signature value; any party holding the corresponding public key can verify the signature without accessing the private key. Dominant schemes include ECDSA (Bitcoin, Ethereum), Ed25519 (Solana, Cosmos, OpenSSH), RSA-PSS (TLS, S/MIME), and Schnorr (BIP-340). Cryptographic signatures are a foundational primitive underpinning transaction authorisation, code signing, verifiable credentials, and authenticated key exchange across virtually all secure digital infrastructure.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:bc-cryptographic-primitive",
-      "label": "BC Cryptographic Primitive"
+      "id": "urn:ngm:class:asymmetric-cryptography",
+      "label": "Asymmetric Cryptography"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "mature",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [
+    "requires": [
       {
-        "id": "urn:ngm:class:digital-signature",
-        "label": "Digital Signature"
+        "id": "urn:ngm:class:key-management",
+        "label": "Key Management"
       },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      }
+    ],
+    "enables": [
       {
         "id": "urn:ngm:class:blockchain",
         "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-credential",
+        "label": "Verifiable Credential"
+      },
+      {
+        "id": "urn:ngm:class:code-signing",
+        "label": "Code Signing"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "id": "urn:ngm:class:non-repudiation",
+        "label": "Non-Repudiation"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:ecdsa",
+        "label": "ECDSA"
+      },
+      {
+        "id": "urn:ngm:class:ed25519",
+        "label": "Ed25519"
+      },
+      {
+        "id": "urn:ngm:class:rsa-pss",
+        "label": "RSA-PSS"
+      },
+      {
+        "id": "urn:ngm:class:schnorr-signature",
+        "label": "Schnorr Signature"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:message-authentication-code",
+        "label": "Message Authentication Code"
+      },
+      {
+        "id": "urn:ngm:class:symmetric-encryption",
+        "label": "Symmetric Encryption"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self-Sovereign Identity"
+      },
+      {
+        "id": "urn:ngm:class:ai-model-provenance",
+        "label": "AI Model Provenance"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-attestation",
+        "label": "Supply Chain Attestation"
+      }
+    ],
     "uses": [
       {
-        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
+        "id": "urn:ngm:class:public-key-cryptography",
         "label": "Public-Key Cryptography"
       },
       {
         "id": "urn:ngm:class:hash-function",
         "label": "Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:private-key",
+        "label": "Private Key"
+      },
+      {
+        "id": "urn:ngm:class:public-key",
+        "label": "Public Key"
       }
     ],
-    "supports": [],
-    "standardizedBy": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:transport-layer-security",
+        "label": "Transport Layer Security"
+      },
+      {
+        "id": "urn:ngm:class:secure-email",
+        "label": "Secure Email"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:nist",
+        "label": "NIST"
+      },
+      {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      },
+      {
+        "id": "urn:ngm:class:fips-186",
+        "label": "FIPS 186"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:ed25519",
-        "label": "Ed25519"
+        "id": "urn:ngm:class:threshold-signature",
+        "label": "Threshold Signature"
+      },
+      {
+        "id": "urn:ngm:class:blind-signature",
+        "label": "Blind Signature"
+      },
+      {
+        "id": "urn:ngm:class:multi-signature",
+        "label": "Multi-Signature"
+      },
+      {
+        "id": "urn:ngm:class:post-quantum-cryptography",
+        "label": "Post-Quantum Cryptography"
       }
     ]
   },

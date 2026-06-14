@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:healthcare-ai",
   "domain": "artificial-intelligence",
-  "definition": "Healthcare AI is the systematic application of machine learning, natural language processing, computer vision, and large language models to clinical and operational problems in healthcare\u2014including diagnostic imaging analysis, clinical decision support, drug discovery, genomic interpretation, and patient outcome prediction. The field operates under stringent regulatory oversight (FDA, MHRA, MDR) requiring prospective clinical validation, post-market surveillance, and clear human-AI workflow integration to ensure patient safety. Fairness, explainability, and bias auditing are central concerns given the high-stakes nature of clinical decisions.",
+  "definition": "Healthcare AI is the systematic application of machine learning, natural language processing, computer vision, and large language models to clinical and operational problems in medicine\u2014encompassing diagnostic imaging analysis, clinical decision support, drug discovery, genomic interpretation, patient outcome prediction, and administrative automation. The field operates under stringent regulatory oversight (FDA, MHRA, EU MDR/IVDR) requiring prospective clinical validation, post-market surveillance, and clearly defined human-AI workflow integration to ensure patient safety. Fairness, explainability, and bias auditing are central technical and ethical concerns given the high-stakes nature of clinical decisions, where model underperformance across demographic subgroups can directly harm patients. Federated learning, differential privacy, and synthetic data generation are increasingly adopted to enable model training without centralising sensitive patient records.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-application",
@@ -13,11 +13,28 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:electronic-health-records",
+        "label": "Electronic Health Records"
+      },
+      {
+        "id": "urn:ngm:class:health-data-governance",
+        "label": "Health Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:data-privacy",
+        "label": "Data Privacy"
+      },
+      {
+        "id": "urn:ngm:class:model-explainability",
+        "label": "Model Explainability"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:clinical-decision-support",
@@ -26,12 +43,51 @@
       {
         "id": "urn:ngm:class:drug-discovery",
         "label": "Drug Discovery"
+      },
+      {
+        "id": "urn:ngm:class:precision-medicine",
+        "label": "Precision Medicine"
+      },
+      {
+        "id": "urn:ngm:class:genomic-analysis",
+        "label": "Genomic Analysis"
+      },
+      {
+        "id": "urn:ngm:class:patient-risk-stratification",
+        "label": "Patient Risk Stratification"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:health-data-interoperability",
+        "label": "Health Data Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:differential-privacy",
+        "label": "Differential Privacy"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:traditional-clinical-decision-support",
+        "label": "Traditional Clinical Decision Support"
+      },
+      {
+        "id": "urn:ngm:class:rule-based-expert-systems",
+        "label": "Rule-Based Expert Systems"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-health-data",
+        "label": "Blockchain Health Data"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:medical-imaging",
@@ -40,10 +96,43 @@
       {
         "id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
       }
     ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:fda-samd-regulation",
+        "label": "FDA SaMD Regulation"
+      },
+      {
+        "id": "urn:ngm:class:eu-mdr",
+        "label": "EU MDR"
+      },
+      {
+        "id": "urn:ngm:class:hl7-fhir",
+        "label": "HL7 FHIR"
+      },
+      {
+        "id": "urn:ngm:class:dicom",
+        "label": "DICOM"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -53,6 +142,14 @@
       {
         "id": "urn:ngm:class:pathology-ai",
         "label": "Pathology AI"
+      },
+      {
+        "id": "urn:ngm:class:bias-in-ai",
+        "label": "Bias in AI"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
       }
     ]
   },

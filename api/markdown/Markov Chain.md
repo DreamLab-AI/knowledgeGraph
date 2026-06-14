@@ -55,7 +55,7 @@ public:: true
   "@type": "Class",
   "label": "Markov Chain",
   "definition": "A stochastic process in which the probability of each future state depends only on the current state and not on the sequence of preceding states.",
-  "domain": "mathematics",
+  "domain": "machine-learning",
   "maturity": "mature",
   "qualityScore": 0.7,
   "subClassOf": [

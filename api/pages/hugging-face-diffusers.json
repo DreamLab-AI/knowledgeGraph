@@ -5,18 +5,31 @@
   "public": true,
   "classIri": "urn:ngm:class:hugging-face-diffusers",
   "domain": "artificial-intelligence",
-  "definition": "Hugging Face Diffusers is an open-source Python library that provides a modular, composable toolkit for training, fine-tuning, and running inference with state-of-the-art diffusion models for image, audio, and video generation. The library abstracts the scheduling, noise prediction, and decoder stages of diffusion pipelines behind a consistent API, enabling rapid experimentation with architectures such as Stable Diffusion, DALL-E-style flows, and audio diffusion models. It integrates natively with the Hugging Face Hub for model discovery and versioning, and with PyTorch and JAX as compute backends.",
+  "definition": "Hugging Face Diffusers is an open-source Python library that provides a modular, composable toolkit for training, fine-tuning, and running inference with state-of-the-art diffusion models for image, audio, and video generation. The library abstracts the scheduling, noise prediction, and decoder stages of diffusion pipelines behind a consistent API, exposing interchangeable components \u2014 noise schedulers (DDPM, DDIM, DPM-Solver), denoising U-Net or Diffusion Transformer (DiT) backbones, and variational autoencoders \u2014 that researchers can recombine freely. It integrates natively with the Hugging Face Hub for model discovery, versioning, and model-card governance, and supports PyTorch and JAX as compute backends with optional xFormers memory-efficient attention and Accelerate-based distributed training.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ai-infrastructure",
-      "label": "AI Infrastructure"
+      "id": "urn:ngm:class:machine-learning-framework",
+      "label": "Machine Learning Framework"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:noise-scheduler",
+        "label": "Noise Scheduler"
+      },
+      {
+        "id": "urn:ngm:class:variational-autoencoder",
+        "label": "Variational Autoencoder"
+      },
+      {
+        "id": "urn:ngm:class:u-net",
+        "label": "U-Net"
+      }
+    ],
     "requires": [],
     "enables": [
       {
@@ -29,30 +42,119 @@
       },
       {
         "id": "urn:ngm:class:fine-tuning",
-        "label": "Fine Tuning"
+        "label": "Fine-Tuning"
+      },
+      {
+        "id": "urn:ngm:class:audio-generation",
+        "label": "Audio Generation"
+      },
+      {
+        "id": "urn:ngm:class:video-generation",
+        "label": "Video Generation"
+      },
+      {
+        "id": "urn:ngm:class:inpainting",
+        "label": "Inpainting"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:hugging-face-hub",
+        "label": "Hugging Face Hub"
+      },
+      {
+        "id": "urn:ngm:class:transformers-library",
+        "label": "Transformers Library"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:latent-diffusion-model",
+        "label": "Latent Diffusion Model"
+      },
+      {
+        "id": "urn:ngm:class:score-based-generative-model",
+        "label": "Score-Based Generative Model"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:generative-adversarial-network",
+        "label": "Generative Adversarial Network"
+      },
+      {
+        "id": "urn:ngm:class:variational-autoencoder",
+        "label": "Variational Autoencoder"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality-content-creation",
+        "label": "Augmented Reality Content Creation"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:diffusion-model",
         "label": "Diffusion Model"
       },
       {
-        "id": "urn:ngm:class:generative-ai",
-        "label": "Generative AI"
+        "id": "urn:ngm:class:pytorch",
+        "label": "PyTorch"
+      },
+      {
+        "id": "urn:ngm:class:jax",
+        "label": "JAX"
+      },
+      {
+        "id": "urn:ngm:class:xformers",
+        "label": "xFormers"
+      },
+      {
+        "id": "urn:ngm:class:accelerate",
+        "label": "Accelerate"
       }
     ],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:dreambooth",
+        "label": "DreamBooth"
+      },
+      {
+        "id": "urn:ngm:class:lora",
+        "label": "LoRA"
+      },
+      {
+        "id": "urn:ngm:class:controlnet",
+        "label": "ControlNet"
+      },
+      {
+        "id": "urn:ngm:class:textual-inversion",
+        "label": "Textual Inversion"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:hugging-face-hub",
-        "label": "HuggingFace Hub"
+        "id": "urn:ngm:class:stable-diffusion",
+        "label": "Stable Diffusion"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:clip",
+        "label": "CLIP"
+      },
+      {
+        "id": "urn:ngm:class:model-hub",
+        "label": "Model Hub"
       }
     ]
   },

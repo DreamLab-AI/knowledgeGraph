@@ -4,27 +4,48 @@
   "slug": "rigid-body-dynamics",
   "public": true,
   "classIri": "urn:ngm:class:rigid-body-dynamics",
-  "domain": "infrastructure",
-  "definition": "Rigid Body Dynamics is a branch of classical mechanics that models objects as non-deformable solids, computing motion, collision response, and momentum conservation through numerical integration. It underpins real-time physics simulation in game engines, robotics, and spatial computing environments.",
+  "domain": "spatial-computing",
+  "definition": "Rigid Body Dynamics is the branch of classical mechanics that models solid objects as perfectly non-deformable, computing their translational and rotational motion under applied forces and torques using Newton-Euler equations or Lagrangian formulations. It addresses the full six-degree-of-freedom motion state \u2014 position, orientation, linear velocity, and angular velocity \u2014 and resolves contact constraints through collision detection, impulse resolution, and constraint solvers. The field underpins real-time simulation in game engines, robot motion planning, spacecraft attitude control, and extended-reality environments. Key numerical methods include symplectic Euler integration, Runge-Kutta schemes, and position-based dynamics for stable, interactive-rate simulation.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:infra-computing-and-cloud",
-      "label": "Computing and Cloud"
+      "id": "urn:ngm:class:physics-simulation",
+      "label": "Physics Simulation"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "emerging",
+  "qualityScore": 0.72,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [
-      {
-        "id": "urn:ngm:class:physics-simulation",
-        "label": "Physics Simulation"
-      },
+    "hasPart": [
       {
         "id": "urn:ngm:class:collision-detection",
         "label": "Collision Detection"
+      },
+      {
+        "id": "urn:ngm:class:collision-response",
+        "label": "Collision Response"
+      },
+      {
+        "id": "urn:ngm:class:constraint-solving",
+        "label": "Constraint Solving"
+      },
+      {
+        "id": "urn:ngm:class:numerical-integration",
+        "label": "Numerical Integration"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      },
+      {
+        "id": "urn:ngm:class:quaternion-mathematics",
+        "label": "Quaternion Mathematics"
+      },
+      {
+        "id": "urn:ngm:class:inertia-tensor",
+        "label": "Inertia Tensor"
       }
     ],
     "enables": [
@@ -35,25 +56,76 @@
       {
         "id": "urn:ngm:class:physics-based-animation",
         "label": "Physics-Based Animation"
+      },
+      {
+        "id": "urn:ngm:class:robot-motion-planning",
+        "label": "Robot Motion Planning"
+      },
+      {
+        "id": "urn:ngm:class:vehicle-simulation",
+        "label": "Vehicle Simulation"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:soft-body-dynamics",
+        "label": "Soft Body Dynamics"
+      },
+      {
+        "id": "urn:ngm:class:fluid-simulation",
+        "label": "Fluid Simulation"
+      },
+      {
+        "id": "urn:ngm:class:finite-element-method",
+        "label": "Finite Element Method"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:real-time-processing",
         "label": "Real-time Processing"
+      },
+      {
+        "id": "urn:ngm:class:3d-coordinate-systems",
+        "label": "3D Coordinate Systems"
       }
     ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:classical-mechanics",
+        "label": "Classical Mechanics"
+      },
+      {
+        "id": "urn:ngm:class:physics-simulation",
+        "label": "Physics Simulation"
+      }
+    ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:fluid-simulation",
-        "label": "Fluid Simulation"
+        "id": "urn:ngm:class:kinematics",
+        "label": "Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:inverse-kinematics",
+        "label": "Inverse Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
       }
     ]
   },

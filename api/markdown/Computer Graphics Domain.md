@@ -95,7 +95,7 @@ public:: true
   "@type": "Class",
   "label": "Computer Graphics Domain",
   "definition": "The Computer Graphics Domain covers the synthesis and manipulation of visual content through computation. Its scope includes rendering, geometric modelling, animation and real-time visualisation. It is a top-level subject classification concerned with the generation of imagery. The boundary is the inverse of computer vision, since it produces images from models rather than inferring models from images.",
-  "domain": "computer-graphics",
+  "domain": "spatial-computing",
   "maturity": "emerging",
   "qualityScore": 0.7,
   "subClassOf": [

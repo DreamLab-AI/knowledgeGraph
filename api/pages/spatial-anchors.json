@@ -5,38 +5,147 @@
   "public": true,
   "classIri": "urn:ngm:class:spatial-anchors",
   "domain": "spatial-computing",
-  "definition": "Virtual reference points that bind digital content to specific physical locations in augmented reality environments, using sensor fusion from cameras, GPS, and accelerometers to maintain persistent positioning and orientation of virtual objects relative to real-world spaces.",
+  "definition": "Spatial anchors are persistent, georeferenced coordinate frames that bind virtual content to specific physical locations, enabling augmented and mixed reality experiences to survive device handoffs, multi-user sessions, and temporal gaps between visits. They are constructed by fusing visual feature maps (point clouds or learned descriptors), inertial measurements, and optionally GPS or Ultra-Wideband signals to produce a stable six-degrees-of-freedom pose estimate within a real-world coordinate system. Platform-level implementations such as ARKit, ARCore, Azure Spatial Anchors, and OpenXR's XR_MSFT_spatial_anchor extension expose this capability through APIs that serialise anchor state for later relocalisation. The technology underpins cross-device shared AR, indoor navigation, and location-aware digital twins by ensuring that virtual overlays remain semantically and geometrically coupled to the objects and surfaces they annotate.",
   "subClassOf": [
-    {
-      "id": "urn:ngm:class:sc-platform-and-environment",
-      "label": "Platform and Environment"
-    },
     {
       "id": "urn:ngm:class:ar-technology",
       "label": "AR Technology"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.74,
+  "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:pose-estimation",
+        "label": "Pose Estimation"
+      },
+      {
+        "id": "urn:ngm:class:feature-map",
+        "label": "Feature Map"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      },
+      {
+        "id": "urn:ngm:class:visual-inertial-odometry",
+        "label": "Visual-Inertial Odometry"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:persistent-ar-placement",
         "label": "Persistent AR Placement"
+      },
+      {
+        "id": "urn:ngm:class:shared-ar-experience",
+        "label": "Shared AR Experience"
+      },
+      {
+        "id": "urn:ngm:class:indoor-navigation",
+        "label": "Indoor Navigation"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:world-space-coordinate-system",
+        "label": "World Space Coordinate System"
+      },
+      {
+        "id": "urn:ngm:class:relocalisation",
+        "label": "Relocalisation"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:image-target",
+        "label": "Image Target"
+      },
+      {
+        "id": "urn:ngm:class:gps-coordinate",
+        "label": "GPS Coordinate"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:geospatial-data",
+        "label": "Geospatial Data"
+      },
+      {
+        "id": "urn:ngm:class:spatial-web",
+        "label": "Spatial Web"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      },
+      {
+        "id": "urn:ngm:class:lidar",
+        "label": "LiDAR"
+      },
+      {
+        "id": "urn:ngm:class:ultra-wideband",
+        "label": "Ultra-Wideband"
+      },
+      {
+        "id": "urn:ngm:class:global-positioning-system",
+        "label": "Global Positioning System"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:mixed-reality",
+        "label": "Mixed Reality"
+      },
+      {
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "id": "urn:ngm:class:location-based-services",
+        "label": "Location-Based Services"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:openxr",
+        "label": "OpenXR"
+      },
+      {
+        "id": "urn:ngm:class:arcore",
+        "label": "ARCore"
+      },
+      {
+        "id": "urn:ngm:class:arkit",
+        "label": "ARKit"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:world-locking-tools",
+        "label": "World Locking Tools"
+      },
+      {
+        "id": "urn:ngm:class:azure-spatial-anchors",
+        "label": "Azure Spatial Anchors"
+      }
+    ]
   },
   "wikilinks": [
     {

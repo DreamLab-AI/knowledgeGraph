@@ -47,7 +47,7 @@ public:: true
   "@type": "Class",
   "label": "community",
   "definition": "A community is a group of people who interact around a shared interest, project, or platform, contributing to its development, governance, or use.",
-  "domain": "social",
+  "domain": "distributed-collaboration",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

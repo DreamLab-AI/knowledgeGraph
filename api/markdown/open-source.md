@@ -1,19 +1,80 @@
 - ### Definition
-  - Open source refers to software whose source code is made available under a licence that permits use, study, modification, and redistribution. It supports collaborative development.
+  - Open source is a development paradigm in which [[Software Development]] artefacts — primarily [[Source Code]] but increasingly [[Open Hardware]] designs, [[AI Model Transparency|AI model weights]], and datasets — are distributed under licences conforming to the [[Open Source Definition]], granting any recipient the rights to use, inspect, modify, and redistribute the work and its derivatives. Formalised in 1998 by the [[Open Source Initiative]], the concept grew from the earlier [[Free Software]] movement championed by the [[Free Software Foundation]], which framed the same freedoms in explicitly ethical terms. Together, the two traditions are commonly grouped as [[Free and Open Source Software]] (FOSS). Open source has become the default mode of infrastructure construction for cloud computing, AI, and distributed systems.
 
-- ### Semantic Classification
-  - owl-class:: general:OpenSource
-  - owl-role:: Class
+- ### Overview
+  - Open source inverts the secrecy assumptions of [[Proprietary Software]] by treating transparency as an engineering asset: public code is auditable, peer-reviewed, and improvable by a global contributor pool. The model rests on three mutually reinforcing pillars — licensing (defining the legal grant), [[Version Control]] (enabling asynchronous distributed contribution), and community governance (coordinating decision-making without central ownership).
+  - Adoption is now pervasive. [[Linux Kernel]], [[Apache HTTP Server]], [[Python]], [[Kubernetes]], and the [[LLVM]] compiler infrastructure are illustrative anchors of critical internet and computing infrastructure built entirely through open collaboration. The same model has propagated into machine learning through projects such as [[PyTorch]], [[TensorFlow]], and [[Hugging Face]] model repositories, and into hardware design through efforts such as [[RISC-V]].
+  - Economic incentives have not prevented commercial success: firms routinely build products on open source foundations, contribute upstream to reduce maintenance burden, and monetise support, hosting, or proprietary add-ons. This dynamic is the basis of the [[Inner Source]] pattern, where corporate teams apply open source practices internally.
+
+- ### Key Components
+  - #### Licensing
+    - [[Open Source Licence]] — the legal instrument granting the four freedoms. Two major families:
+      - Permissive licences (MIT, BSD, Apache 2.0): minimal restrictions; derivative works may be [[Closed Source]].
+      - Copyleft licences (GPL, LGPL, AGPL, MPL): require derivative works to carry the same licence terms, ensuring freedoms propagate.
+    - Licence compatibility is an important concern when combining code under different licences in the same [[Software Supply Chain]].
+  - #### Version Control & Collaboration Infrastructure
+    - [[Git]] — the dominant [[Version Control]] system, enabling branching, forking, and merging workflows that allow parallel contribution at scale.
+    - [[GitHub]], [[GitLab]], and [[Gitea]] — hosting platforms that layer [[Issue Tracking]], [[Code Review]], CI/CD pipelines, and [[Package Management]] registries on top of Git.
+    - [[Continuous Integration]] — automated build and test pipelines triggered on each commit, enforcing quality gates across distributed contributor bases.
+  - #### Community Governance Models
+    - Benevolent Dictator For Life (BDFL): single trusted maintainer with final authority (e.g. early [[Python]] under Guido van Rossum).
+    - Foundation-backed: neutral legal entities (Apache Software Foundation, Linux Foundation, CNCF) hold IP and set contribution norms.
+    - [[Decentralised Governance]]: multi-stakeholder steering committees with documented contribution policies (RFCs, ADRs, governance files).
+  - #### Package & Dependency Ecosystems
+    - [[Package Management]] registries (npm, PyPI, crates.io, Maven Central) distribute pre-built open source components as versioned packages.
+    - Dependency graphs underpin the modern [[Software Supply Chain]]; a vulnerability in a widely-used transitive dependency can cascade across millions of downstream projects (e.g. Log4Shell).
+    - [[Software Bill of Materials]] (SBOM) — machine-readable inventories of components and their licences, increasingly mandated by regulation.
+
+- ### Applications / Use Cases
+  - **Operating Systems & Virtualisation** — [[Linux Kernel]] powers Android, most cloud servers, and embedded devices. [[KVM]] and [[Xen]] are the hypervisor foundations of cloud infrastructure.
+  - **Cloud-Native Infrastructure** — [[Kubernetes]] for container orchestration, [[Prometheus]] for monitoring, [[Envoy]] for service mesh; the CNCF open source catalogue defines the de facto cloud-native stack.
+  - **AI & Machine Learning** — [[PyTorch]], [[TensorFlow]], [[JAX]], and [[Hugging Face]] Transformers accelerate research and production ML. Open model weights (Llama, Mistral, Falcon) extend the paradigm to [[Open Source AI]], enabling [[Reproducible Research]] and local deployment without vendor lock-in.
+  - **Security Tooling** — [[OpenSSL]], [[WireGuard]], [[Snort]], and [[Suricata]] illustrate open source domination of cryptographic libraries and network security. Community audit of public code improves assurance, though [[Supply Chain Transparency]] depends on active maintenance.
+  - **Scientific Research** — [[Reproducible Research]] workflows increasingly require open data, open code, and open methodology. Projects like [[Jupyter]], [[SciPy]], and [[R]] are standard scientific computing infrastructure.
+  - **Decentralised Systems** — protocols such as [[Bitcoin Core]] and [[Ethereum]] are open source by design; open implementations are essential to trust in [[Decentralised Autonomous Organisation|DAOs]] and [[Blockchain]] infrastructure.
+  - **Hardware** — [[RISC-V]] and [[OpenSPARC]] apply open source principles to instruction-set architecture; [[KiCad]] enables open PCB design.
+  - **Enterprise Inner Source** — corporations apply [[Inner Source]] patterns: internal repositories governed with open source norms, reducing silos while maintaining IP control.
 
 - ### Relationships
-  - is-subclass-of:: [[Software Development]]
-  - bridges-to:: [[GitHub]]
-  - enables:: [[Software Development]]
+  - partOf:: [[Software Development]]
+  - partOf:: [[Commons-Based Peer Production]]
+  - hasPart:: [[Open Source Licence]]
+  - hasPart:: [[Version Control]]
+  - hasPart:: [[Code Review]]
+  - hasPart:: [[Package Management]]
+  - requires:: [[Version Control]]
+  - requires:: [[Open Source Licence]]
+  - enables:: [[Collaborative Development]]
+  - enables:: [[Continuous Integration]]
+  - enables:: [[Reproducible Research]]
+  - enables:: [[Supply Chain Transparency]]
+  - uses:: [[Git]]
+  - uses:: [[Continuous Integration]]
+  - uses:: [[Issue Tracking]]
+  - supports:: [[Decentralised Governance]]
+  - supports:: [[Software Supply Chain]]
+  - supports:: [[AI Model Transparency]]
+  - standardizedBy:: [[Open Source Initiative]]
+  - standardizedBy:: [[Free Software Foundation]]
+  - contrastsWith:: [[Proprietary Software]]
+  - contrastsWith:: [[Closed Source]]
+  - bridges-to:: [[Open Source AI]]
+  - bridges-to:: [[Decentralised Autonomous Organisation]]
+  - bridges-to:: [[Federated Learning]]
+  - relatedTo:: [[Inner Source]]
+  - relatedTo:: [[Software Bill of Materials]]
+  - relatedTo:: [[Open Hardware]]
 
-- ### Content
-  - Open-source software is distributed with its source code under licences that grant rights to inspect and change it. This model allows contributors from many organisations to collaborate on shared projects.
-  - Open-source projects underpin much of modern computing, including operating systems, programming languages, and infrastructure tools. Their licences vary in the obligations they place on those who redistribute modified versions.
+- ### Standards & Context
+  - **Open Source Definition (OSD)** — the normative specification maintained by the [[Open Source Initiative]] (OSI) at opensource.org/osd. Defines 10 criteria a licence must satisfy to be OSI-approved, including free redistribution, source code availability, and no discrimination against persons, fields of endeavour, or technology stacks.
+  - **OSI Licence List** — a curated catalogue of OSI-approved licences at opensource.org/licenses. Procurement and compliance teams use this list as an authoritative reference.
+  - **GNU GPL / LGPL / AGPL** — copyleft licences produced by the [[Free Software Foundation]]. AGPL extends copyleft to network services, closing the "SaaS loophole".
+  - **Apache 2.0** — a widely adopted permissive licence with an explicit patent grant; the default for many Apache Software Foundation and Linux Foundation projects.
+  - **SPDX (Software Package Data Exchange)** — an open standard (ISO/IEC 5962:2021) for communicating software licensing and component information, the technical substrate of [[Software Bill of Materials]] documents.
+  - **Executive Order 14028 (US, 2021)** and subsequent CISA guidance mandated SBOM production for federal software suppliers, elevating open source licence compliance to a regulatory concern.
+  - **EU Cyber Resilience Act (CRA)** — imposes security requirements on products with digital elements, including open source components in commercial distributions; creates obligations for maintainers whose code is incorporated in commercial products.
+  - **OpenChain (ISO/IEC 5230)** — a compliance standard for open source licence management processes in supply chains, maintained by the Linux Foundation.
 
 - ### Provenance
   - sources:: [[https://opensource.org/osd]], [[https://opensource.org/licenses]]
-  - migration-date:: 2026-05-29T00:00:00Z
+  - updated:: 2026-06-13

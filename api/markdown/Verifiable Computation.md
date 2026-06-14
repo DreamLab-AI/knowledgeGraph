@@ -51,7 +51,7 @@ public:: true
   "@type": "Class",
   "label": "Verifiable Computation",
   "definition": "Techniques that let a party outsource a computation and receive a proof that the result is correct, allowing efficient verification without redoing the work.",
-  "domain": "cryptographic",
+  "domain": "security",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

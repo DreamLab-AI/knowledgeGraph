@@ -21,7 +21,7 @@ public:: true
   "@type": "Class",
   "label": "Ambient Occlusion",
   "definition": "A shading and rendering technique that approximates the degree to which each point on a surface is occluded from ambient environmental light by surrounding geometry, producing soft shadows in crevices, corners, and contact areas that significantly enhance the perception of three-dimensional form and material grounding. Unlike direct illumination algorithms, ambient occlusion is view-independent and operates on the assumption that ambient light arrives uniformly from all directions, making it computationally tractable as either a pre-baked texture or a real-time screen-space approximation. It is a foundational element of physically plausible rendering pipelines.",
-  "domain": "spatial",
+  "domain": "spatial-computing",
   "maturity": "mature",
   "subClassOf": [{"@id": "urn:ngm:class:rendering-technique", "label": "Rendering Technique"}],
   "relations": {

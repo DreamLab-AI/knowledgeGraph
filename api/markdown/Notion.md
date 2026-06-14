@@ -21,7 +21,7 @@ public:: true
   "@type": "Class",
   "label": "Notion",
   "definition": "Notion is a cloud-based productivity and knowledge-management platform that unifies note-taking, relational databases, wikis, project management boards, and document editing into a single composable workspace. Its block-based editor treats every content element — text, tables, embeds, code, and media — as a manipulable unit that can be nested, linked, and filtered, enabling teams to construct custom workflows without traditional software development. Notion serves as an all-in-one tool replacing multiple specialised SaaS products for many knowledge workers and organisations. Since 2023 Notion has integrated generative AI capabilities directly into its editing and querying workflows.",
-  "domain": "web",
+  "domain": "infrastructure",
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:knowledge-management-system", "label": "Knowledge Management System"}],
   "relations": {

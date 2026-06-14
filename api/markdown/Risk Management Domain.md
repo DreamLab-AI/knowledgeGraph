@@ -99,7 +99,7 @@ public:: true
   "@type": "Class",
   "label": "Risk Management Domain",
   "definition": "The Risk Management Domain classifies concepts concerned with identifying, assessing, and controlling exposure to adverse events across financial, operational, and technical systems. It covers risk taxonomies, measurement methods, controls, and governance frameworks. As a top-level subject classification, it scopes the systematic treatment of uncertainty and loss rather than the specific domains in which risks arise.",
-  "domain": "risk-management",
+  "domain": "finance",
   "maturity": "emerging",
   "qualityScore": 0.7,
   "subClassOf": [

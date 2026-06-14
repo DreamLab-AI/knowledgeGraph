@@ -1,26 +1,98 @@
 - ### Definition
-  - A specific algorithm or methodology for transforming a geometric scene description into a final pixel image, trading image quality against computational cost. Fundamental categories include rasterization for real-time performance, ray tracing for physically accurate light transport, and path tracing for unbiased global illumination, with hybrid and screen-space variants bridging these extremes.
+  - A **rendering technique** is a specific algorithm or computational methodology for transforming a three-dimensional scene description into a two-dimensional pixel image, always trading image fidelity against computational cost and latency. The landscape spans [[Rasterization]] (real-time triangle projection), [[Ray Tracing]] (physically accurate light transport), [[Path Tracing]] (Monte Carlo global illumination), and increasingly [[Neural Rendering]] (learned scene representations). Modern [[Real-Time 3D Graphics]] engines layer multiple techniques into hybrid pipelines that target explicit quality budgets across diverse hardware tiers, from mobile SoCs to dedicated ray-tracing silicon.
 
-- ### Semantic Classification
-  - owl-class:: spatial-computing:RenderingTechnique
-  - owl-role:: Concept
+- ### Overview
+  - Rendering is the final synthesis step in a 3D graphics pipeline: geometry, materials, lights, and a camera viewpoint are combined by an algorithm that determines the colour of each output pixel.
+  - The choice of rendering technique is the primary architectural decision in any real-time or offline graphics system because it determines latency, image quality, hardware requirements, and the types of visual effects that are achievable.
+  - **Why it matters for spatial computing**: [[Augmented Reality]] and [[Virtual Reality]] impose strict per-frame latency budgets (typically 11–20 ms) while demanding high perceptual fidelity; the rendering technique chosen directly constrains what is possible within those budgets.
+  - **Why it matters for offline synthesis**: Film VFX, product visualisation, and architectural rendering prioritise photorealism over latency, favouring computationally expensive techniques such as [[Path Tracing]] and bidirectional path tracing.
+  - The field has been transformed by two trends: programmable [[Shader]] pipelines (replacing fixed-function hardware), and the integration of [[Machine Learning]] into rendering (super-resolution, denoising, neural radiance fields).
+
+- ### Key Paradigms
+  - **[[Rasterization]]**
+    - Dominant real-time technique since the late 1990s.
+    - Projects 3D triangles onto the 2D screen via the rendering pipeline (vertex transform → rasterisation → fragment shading).
+    - Efficient on current GPU architectures; limitations include difficulty with secondary rays (reflections, shadows, global illumination).
+    - APIs: [[Vulkan]], [[DirectX 12]], [[OpenGL]], [[Metal]].
+  - **[[Ray Tracing]]**
+    - Casts one or more rays per pixel from the virtual camera into the scene and computes intersections with geometry.
+    - Enables physically accurate shadows, reflections, and refractions with far less per-effect engineering than rasterization hacks.
+    - Hardware-accelerated on NVIDIA RTX (RT Cores), AMD RDNA 2+, Intel Arc; standardised via [[DirectX Raytracing]] (DXR) and [[Vulkan Ray Tracing]] extensions.
+    - Real-time use typically blends rasterization and ray tracing in hybrid pipelines (e.g. ray-traced shadows and reflections composited over a rasterised G-buffer).
+  - **[[Path Tracing]]**
+    - Extends ray tracing with Monte Carlo integration over the hemisphere of directions at each surface hit.
+    - Produces unbiased [[Global Illumination]] including caustics, colour bleeding, and volumetric scattering.
+    - Requires many samples per pixel to converge; used in offline film rendering (Pixar RenderMan, Weta Manuka, DNEG Iray).
+    - Real-time path tracing is emerging via [[AI-Driven Denoising]] and hardware RT units (e.g. NVIDIA DLSS 3 + Path Tracing in Portal RTX).
+  - **Hybrid and Screen-Space Techniques**
+    - Most shipping real-time engines blend paradigms: rasterized primary visibility + ray-traced secondary effects + screen-space approximations.
+    - [[Deferred Rendering]]: separates a geometry pass (G-buffer) from a lighting pass, enabling many dynamic lights with bounded cost.
+    - Clustered / Tiled Deferred: subdivides screen space into tiles or 3D clusters for efficient light assignment.
+    - [[Screen-Space Reflections]] (SSR): approximates reflections using only visible pixel data.
+    - [[Ambient Occlusion]]: approximates contact shadows and occlusion (SSAO, HBAO, GTAO).
+    - [[Temporal Antialiasing]] (TAA): accumulates sub-pixel samples across frames to reduce aliasing.
+
+- ### Core Components & Mechanisms
+  - **[[Shader]] Programs**: GPU programs (vertex, geometry, fragment/pixel, compute, mesh, task) that perform per-vertex and per-pixel computation; the primary creative and algorithmic surface for rendering engineers.
+  - **[[Physically Based Rendering]] (PBR)**: A shading paradigm that models material-light interaction using physically motivated BRDFs (Cook-Torrance microfacet model); industry standard in games and VFX since c. 2013.
+  - **[[Texture Mapping]]**: Applying 2D image data (colour, normal, roughness, metallic maps) to 3D geometry to add surface detail without additional geometry.
+  - **[[Global Illumination]]**: Algorithms that simulate indirect light transport — voxel cone tracing, light probe grids, irradiance volumes, precomputed radiance transfer, screen-space GI.
+  - **[[Antialiasing]]**: Techniques to reduce jagged edges — MSAA (multi-sample), TXAA, [[Temporal Antialiasing]], DLSS, FSR — increasingly handled by AI upscalers.
+  - **[[Level of Detail]] (LOD)**: Substituting lower-complexity geometry or impostors for distant objects to reduce shading cost without perceptible quality loss.
+  - **[[Scene Graph]]**: Hierarchical spatial data structure organising renderable objects; traversed each frame to determine what is submitted to the rendering pipeline.
+  - **Acceleration Structures**: Bounding Volume Hierarchies (BVH) and k-d trees accelerate both ray-object intersection tests and frustum culling; BVH construction is now hardware-assisted on dedicated RT units.
+  - **[[Post Processing]]**: Screen-space effects applied after the main render pass — tone mapping, bloom, depth of field, motion blur, chromatic aberration, colour grading.
+
+- ### Applications and Use Cases
+  - **Real-Time Video Games**: Rasterization + hybrid RT effects in engines such as Unreal Engine 5 (Lumen GI, Nanite virtualised geometry), Unity HDRP, and id Tech 7.
+  - **[[Virtual Reality]] and [[Augmented Reality]]**: Stereo rendering with foveated rendering zones, reprojection / asynchronous spacewarp, and strict latency budgets; technique choice drives device comfort and presence.
+  - **[[Metaverse]] Platforms**: Persistent, multi-user 3D environments requiring efficient streaming, LOD management, and scalable lighting across heterogeneous client hardware.
+  - **Film and VFX**: Offline path tracing (RenderMan, Arnold, V-Ray, Redshift) for photorealistic imagery; render farms aggregate hundreds of CPU/GPU nodes.
+  - **Architectural and Product Visualisation**: Real-time ray tracing in D5 Render, Enscape, and Lumion, or offline path tracing in Chaos V-Ray; clients can explore designs before construction.
+  - **[[Digital Twin]] Simulation**: Real-time rendering of high-fidelity city or industrial models for situational awareness and planning, often via NVIDIA Omniverse (using USD and MDL materials).
+  - **[[Neural Rendering]]**: NeRF (Neural Radiance Fields) and 3D Gaussian Splatting learn implicit scene representations from photographs, synthesising novel views without explicit geometry; bridges classical rendering with [[Machine Learning]].
+  - **Medical and Scientific Visualisation**: Volume rendering (ray-casting through 3D scalar fields such as CT/MRI data) to display internal structures without surface meshes.
+  - **Automotive HMI and ADAS Simulation**: Physically accurate sensor-simulation rendering (cameras, LiDAR, radar) for training and validating autonomous vehicle perception models.
 
 - ### Relationships
-  - Has Part: [[Rasterization]], [[Ray Tracing]], [[Post Processing]]
-  - Uses: [[Shader]]
-  - Supports: [[Visual Effects]]
-  - Related To: [[Level of Detail]]
+  - hasPart:: [[Rasterization]]
+  - hasPart:: [[Ray Tracing]]
+  - hasPart:: [[Path Tracing]]
+  - hasPart:: [[Post Processing]]
+  - hasPart:: [[Global Illumination]]
+  - requires:: [[Shader]]
+  - requires:: [[Graphics Processing Unit]]
+  - requires:: [[Scene Graph]]
+  - enables:: [[Visual Effects]]
+  - enables:: [[Augmented Reality]]
+  - enables:: [[Virtual Reality]]
+  - enables:: [[Real-Time 3D Graphics]]
+  - uses:: [[Physically Based Rendering]]
+  - uses:: [[Texture Mapping]]
+  - uses:: [[Antialiasing]]
+  - dependsOn:: [[Graphics API]]
+  - dependsOn:: [[Level of Detail]]
+  - contrastsWith:: [[Rasterization]]
+  - contrastsWith:: [[Ray Tracing]]
+  - supports:: [[Spatial Computing]]
+  - supports:: [[Digital Twin]]
+  - supports:: [[Metaverse]]
+  - relatedTo:: [[Deferred Rendering]]
+  - relatedTo:: [[Ambient Occlusion]]
+  - relatedTo:: [[Screen-Space Reflections]]
+  - relatedTo:: [[Temporal Antialiasing]]
+  - bridges-to:: [[Neural Rendering]]
+  - bridges-to:: [[Machine Learning]]
 
-- ### Content
-  # RenderingTechnique
-  RenderingTechnique encompasses specific algorithms and methodologies transforming geometric scene descriptions into final images through various approaches trading quality against computational cost. Fundamental techniques include rasterization converting triangles into pixels through edge walking and interpolation—the dominant real-time method, ray tracing simulating light transport by casting rays from the camera and computing intersections—increasingly viable in real-time with hardware acceleration, path tracing extending ray tracing with unbiased global illumination through monte carlo sampling, and rasterization-hybrid approaches combining both for specific effects. Lighting models range from simple Lambertian diffuse and Phong specular to physically-based BRDF (Bidirectional Reflectance Distribution Function) models accurately representing material-light interaction. Shading strategies include forward rendering processing each object sequentially, deferred shading separating geometry and lighting into multiple passes enabling complex lighting scenarios, and clustered/tiled approaches subdividing screen space for efficient light assignment. Global illumination techniques simulate indirect lighting through voxel cone tracing, light propagation volumes, screen-space methods, or precomputed radiosity. Specialized techniques address specific challenges: screen-space reflections for water and mirrors, ambient occlusion enhancing depth perception, volumetric rendering for fog and atmospheric effects.
-  - https://www.scratchapixel.com/ - Computer graphics rendering techniques explained
-  - https://pbr-book.org/ - Physically Based Rendering: From Theory to Implementation
-  - https://developer.nvidia.com/blog/rendering-techniques/ - NVIDIA rendering techniques blog
-  - https://advances.realtimerendering.com/ - SIGGRAPH real-time rendering advances
-
-  ## Sources
+- ### Standards and Context
+  - **[[Graphics API]]s**: [[Vulkan]] 1.3 (Khronos Group), [[DirectX 12]] Ultimate (Microsoft), [[Metal]] (Apple), [[OpenGL]] (Khronos) — define the hardware abstraction layer through which rendering techniques are submitted to the GPU.
+  - **[[DirectX Raytracing]] (DXR)**: Microsoft's standardised ray tracing API extension to DirectX 12; widely adopted by IHVs and engine vendors.
+  - **[[Vulkan Ray Tracing]]**: Khronos cross-platform ray tracing extensions (VK_KHR_ray_tracing_pipeline) providing portable access to hardware RT units.
+  - **OpenUSD / MDL**: Universal Scene Description (Pixar/NVIDIA) and Material Definition Language (NVIDIA) standardise scene and material interchange between rendering tools and digital twin pipelines.
+  - **SIGGRAPH**: The ACM Special Interest Group on Computer Graphics is the primary venue for rendering technique research; the *Advances in Real-Time Rendering* course tracks industry practice.
+  - **Physically Based Shading**: The PBR metallic-roughness workflow is de-facto standardised via glTF 2.0 (Khronos) for web and game assets.
+  - **[[Khronos Group]]**: Maintains Vulkan, OpenGL, OpenCL, glTF — the primary open standards body for GPU rendering interfaces.
 
 - ### Provenance
-  - sources::
-  - migration-date:: 2026-04-26T00:00:00Z
+  - sources:: Scratchapixel.com; Physically Based Rendering: From Theory to Implementation (Pharr, Jakob, Humphreys); SIGGRAPH Advances in Real-Time Rendering course notes; NVIDIA Developer Blog; Khronos Vulkan / DXR specifications; Unreal Engine 5 documentation (Lumen, Nanite)
+  - updated:: 2026-06-13

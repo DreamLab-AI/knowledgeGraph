@@ -1,17 +1,81 @@
 - ### Definition
-  - A reference to the NIST Interagency or Internal Report (NISTIR) series, a publication series used by NIST for technical reports. The specific report is not identified by this label alone.
+  - NIST Interagency or Internal Reports (NISTIRs) form a long-running technical publication series maintained by the [[National Institute of Standards and Technology]] (NIST) to document preliminary research, collaborative interagency investigations, software tool evaluations, and measurement studies. They differ from [[NIST Special Publication]] (SP) documents in that NISTIRs typically present exploratory or supporting work rather than normative guidance. Results published as NISTIRs frequently graduate into more authoritative outlets — such as [[Federal Information Processing Standards]] (FIPS) or NIST SPs — once consensus and review thresholds are met. The series is freely available to the public, making it a foundational resource for practitioners in [[Cybersecurity Policy]], [[AI Risk Management]], metrology, and [[Software Testing]].
 
-- ### Semantic Classification
-  - owl-class:: standards:NISTNISTIR
-  - owl-role:: Standard
+- ### Overview
+  - The NISTIR series was established to give NIST researchers a citable, permanent channel for technical work that supports — but does not itself constitute — normative standardisation.
+  - NISTIRs cover an exceptionally wide scope:
+    - Laboratory measurement results and inter-laboratory comparisons
+    - Security and privacy baseline studies feeding the [[Risk Management Framework]]
+    - [[IoT Security]] device baseline evaluations (e.g. NISTIR 8259 series)
+    - [[AI Trustworthiness]] evaluation methodologies and bias assessments
+    - [[Quantum Computing]] readiness assessments and algorithm performance benchmarks
+    - Software assurance, testing frameworks, and [[Vulnerability Assessment]] approaches
+  - They occupy a middle tier in the NIST publishing hierarchy: below FIPS and SP in normative authority but above internal lab notes, and they are cited in law, regulation, and contract compliance frameworks worldwide.
+  - Unlike FIPS or SPs, NISTIRs do not require OMB review or formal comment periods, enabling faster publication cycles while still undergoing internal NIST peer review.
+
+- ### Key Components
+  - **Interagency scope** — many NISTIRs are produced jointly with other U.S. federal agencies (DoD, DHS, NSA, NASA), making them authoritative sources of cross-agency technical agreement
+  - **Numbering scheme** — each report receives a unique number (e.g. NISTIR 8011, NISTIR 8259, NISTIR 8286) under which all companion volumes and errata are grouped; linking to [[Technical Report]] archival conventions
+  - **Companion volumes** — complex topics are often addressed by a base NISTIR and subsequent lettered volumes (NISTIR 8286A, 8286B, etc.), each drilling into sub-topics such as enterprise [[Cybersecurity Risk]] integration
+  - **Open-access distribution** — all NISTIRs are hosted on nvlpubs.nist.gov as free PDFs, ensuring broad uptake in academia, industry, and government; supports [[Open Standards]] principles
+  - **Referencing lifecycle** — NISTIRs are superseded, withdrawn, or incorporated into SPs; practitioners must track the document lifecycle via the NIST PUBS portal; intersects with [[Document Lifecycle Management]]
+  - **Relationship to [[NIST Cybersecurity Framework]]** — numerous NISTIRs provide the technical underpinning for NCF implementation guidance, measurement methods, and outcome metrics
+  - **AI coverage** — the NISTIR series has grown significantly in AI-related content including evaluation of [[Machine Learning]] systems, [[Bias Detection]], and [[Explainable AI]] testbed results, feeding into the NIST AI RMF
+
+- ### Applications and Use Cases
+  - **[[Federal Information Security]] compliance** — agencies cite NISTIRs as authoritative technical reference material when implementing FISMA-mandated controls
+  - **[[IoT Security]] device baselining** — NISTIR 8259 and its companion volumes define core IoT cybersecurity baseline activities and manufacturer capabilities, widely adopted by device makers and procurers
+  - **[[AI Risk Management]]** — NISTIRs on AI testing and evaluation inform the measurement annex of the NIST AI Risk Management Framework (AI RMF), used by federal agencies and adopted voluntarily by industry
+  - **[[Cryptography]] migration** — NISTIRs document algorithm testing and transition guidance for post-quantum cryptographic schemes, complementing the FIPS 203/204/205 series from the PQC standardisation project
+  - **[[Software Assurance]]** — NIST software testing NISTIRs underpin NIST's role in SCAP (Security Content Automation Protocol) and vulnerability scoring, linking to [[Common Vulnerability Scoring System]] (CVSS) calibration
+  - **[[Metrology]] and calibration** — the original NISTIR use case; physical measurement inter-comparisons and uncertainty analyses remain a major share of the series' output
+  - **[[Supply Chain Risk Management]]** — NISTIRs document C-SCRM practices and evaluation methods that feed NIST SP 800-161 revisions
+  - **Academic and industry research** — freely citable NISTIRs serve as stable references in peer-reviewed literature across [[Cybersecurity]], physics, chemistry, and engineering
 
 - ### Relationships
-  - is-subclass-of:: [[Technical Standard]]
-  - requires:: [[NIST]]
+  - partOf:: [[NIST]]
+  - partOf:: [[NIST Publication Series]]
+  - supports:: [[NIST Special Publication]]
+  - supports:: [[Federal Information Processing Standards]]
+  - supports:: [[Risk Management Framework]]
+  - contrastsWith:: [[NIST Special Publication]]
+  - contrastsWith:: [[Federal Information Processing Standards]]
+  - contrastsWith:: [[ISO IEC Standard]]
+  - enables:: [[Federal Information Security]]
+  - enables:: [[AI Risk Management]]
+  - enables:: [[Cybersecurity Policy]]
+  - uses:: [[Measurement Science]]
+  - uses:: [[Software Testing]]
+  - dependsOn:: [[Technical Research]]
+  - dependsOn:: [[Peer Review]]
+  - bridges-to:: [[AI Trustworthiness]]
+  - bridges-to:: [[IoT Security]]
+  - bridges-to:: [[Quantum Computing]]
+  - relatedTo:: [[Technical Report]]
+  - relatedTo:: [[Government Publication]]
+  - relatedTo:: [[NIST Cybersecurity Framework]]
 
-- ### Content
-  - A reference to the NIST Interagency or Internal Report (NISTIR) series, a publication series used by NIST for technical reports. The specific report is not identified by this label alone.
+- ### Standards and Context
+  - **Publishing authority** — NISTIRs are issued under the authority of the Secretary of Commerce, delegated to NIST, under the National Technology Transfer and Advancement Act (NTTAA) and related statutes
+  - **NIST publication hierarchy**:
+    - [[Federal Information Processing Standards]] (FIPS) — highest normative authority; legally binding on federal agencies
+    - [[NIST Special Publication]] (SP) — widely adopted voluntary guidance; SP 800-series for IT security, SP 1800-series for practice guides
+    - **NISTIR** — supporting research, collaborative, and interagency technical reports (this class)
+    - [[NIST Technical Note]] (TN) — shorter communications; similar standing to NISTIR
+    - NIST Handbooks (HB) and Advanced Manufacturing Series (AMS) — domain-specific outreach
+  - **Interagency collaboration** — NISTIRs frequently co-authored with [[CISA]], [[NSA]], DoD CIO, and international partners under the [[Five Eyes]] or bilateral science agreements
+  - **Legal standing** — NISTIRs are not mandatory unless explicitly incorporated by reference in regulations, contracts, or OMB memoranda; however, multiple NISTIRs are referenced in FedRAMP, CMMC, and Executive Order 14028 guidance chains
+  - **Version control and errata** — NIST maintains a persistent URI scheme; readers should check the NIST PUBS portal for withdrawals, drafts, and final versions to ensure they cite the active document
+  - **International alignment** — several NISTIRs feed into ISO/IEC JTC 1 standardisation activities and ITU-T study groups, bridging U.S. federal research with [[International Standards Organisation]] outputs
+
+- ### Notable Examples
+  - **NISTIR 8011** — Automation Support for Security Control Assessments, underpinning continuous monitoring strategies within the [[Risk Management Framework]]
+  - **NISTIR 8259 / 8259A / 8259B** — IoT Device Cybersecurity Capability Core Baseline; widely cited by IoT manufacturers for [[Embedded Systems Security]]
+  - **NISTIR 8286 / 8286A / 8286B / 8286C** — Integrating Cybersecurity and Enterprise Risk Management (ERM); aligns [[Cybersecurity Risk]] with COSO ERM frameworks
+  - **NISTIR 8374** — Ransomware Risk Management; rapid-response reference tying ransomware controls to the NIST CSF subcategories
+  - **NISTIR 8276** — Key Practices in Cyber Supply Chain Risk Management; a precursor to [[Supply Chain Risk Management]] guidance in SP 800-161r1
+  - **NISTIR 8427** — Discussion of the Circuit Complexity of Quantum Circuits; illustrates the series' reach into fundamental [[Quantum Computing]] research
 
 - ### Provenance
-  - sources::
-  - migration-date:: 2026-05-29T00:00:00Z
+  - sources:: NIST PUBS portal (nvlpubs.nist.gov), NIST CSRC (csrc.nist.gov), Federal Register notices referencing NISTIRs, NIST AI RMF supporting documentation
+  - updated:: 2026-06-13

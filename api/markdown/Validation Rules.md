@@ -47,7 +47,7 @@ public:: true
   "@type": "Class",
   "label": "Validation Rules",
   "definition": "Defined constraints that data or input must satisfy to be accepted, used to enforce correctness, consistency and integrity before processing or storage.",
-  "domain": "general",
+  "domain": "data",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

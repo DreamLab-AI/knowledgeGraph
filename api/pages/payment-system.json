@@ -4,46 +4,111 @@
   "slug": "payment-system",
   "public": true,
   "classIri": "urn:ngm:class:payment-system",
-  "domain": "blockchain",
-  "definition": "A Payment System is an infrastructure layer enabling secure and auditable exchange of value between parties, encompassing fiat payment gateways, blockchain-native token transfers, and hybrid settlement mechanisms. Within virtual economies and metaverse platforms, payment systems must handle high-frequency microtransactions, cross-currency conversion, smart-contract-mediated escrow, and compliance with AML/KYC regulations while preserving user privacy and minimising settlement latency.",
+  "domain": "finance",
+  "definition": "A Payment System is an organised set of instruments, procedures, rules, and interbank funds-transfer networks that enables the exchange of monetary value between buyers and sellers, encompassing both traditional fiat rails (card networks, bank transfers, ACH) and digital-native mechanisms such as blockchain token transfers, smart-contract escrow, and central bank digital currencies. Payment systems define how obligations are cleared and settled \u2014 gross or net, in real time or deferred \u2014 while satisfying requirements for security, finality, liquidity efficiency, AML/KYC compliance, and cross-border interoperability. Modern payment infrastructure increasingly operates across layers: a base settlement layer (central bank reserves or a public blockchain), a clearing and messaging layer (SWIFT, ISO 20022, or a decentralised protocol), and an application layer (wallets, point-of-sale terminals, or embedded payment APIs) that exposes value exchange to end users and automated agents.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:bc-defi-and-economics",
-      "label": "DeFi and Economics"
+      "id": "urn:ngm:class:financial-infrastructure",
+      "label": "Financial Infrastructure"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [
+    "hasPart": [
       {
-        "id": "urn:ngm:class:blockchain-transaction",
-        "label": "Blockchain Transaction"
+        "id": "urn:ngm:class:payment-gateway",
+        "label": "Payment Gateway"
       },
       {
-        "id": "urn:ngm:class:smart-contract",
-        "label": "Smart Contract"
+        "id": "urn:ngm:class:clearing-and-settlement",
+        "label": "Clearing and Settlement"
+      },
+      {
+        "id": "urn:ngm:class:digital-wallet",
+        "label": "Digital Wallet"
       }
     ],
-    "enables": [],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [
+    "requires": [
       {
         "id": "urn:ngm:class:cryptographic-security",
         "label": "Cryptographic Security"
       },
       {
+        "id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      },
+      {
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:e-commerce",
+        "label": "E-Commerce"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:microtransaction",
+        "label": "Microtransaction"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:barter-system",
+        "label": "Barter System"
+      },
+      {
+        "id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      },
+      {
+        "id": "urn:ngm:class:ai-driven-finance",
+        "label": "AI-Driven Finance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
         "id": "urn:ngm:class:lightning-network",
         "label": "Lightning Network"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-transaction",
+        "label": "Blockchain Transaction"
       }
     ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-20022",
+        "label": "ISO 20022"
+      },
+      {
+        "id": "urn:ngm:class:pci-dss",
+        "label": "PCI DSS"
+      },
+      {
+        "id": "urn:ngm:class:swift-network",
+        "label": "SWIFT Network"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -51,8 +116,12 @@
         "label": "Tokenomics"
       },
       {
-        "id": "urn:ngm:class:nft",
-        "label": "NFT"
+        "id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      },
+      {
+        "id": "urn:ngm:class:fraud-detection",
+        "label": "Fraud Detection"
       }
     ]
   },

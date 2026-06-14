@@ -4,8 +4,8 @@
   "slug": "iso-26262",
   "public": true,
   "classIri": "urn:ngm:class:iso-26262",
-  "domain": "infrastructure",
-  "definition": "ISO 26262 is the international functional safety standard for electrical and electronic systems in road vehicles, published in 2011 and revised in 2018 to cover motorcycles and semi-conductors. It defines an Automotive Safety Integrity Level (ASIL) classification system (A through D, with D being most critical) that governs the rigour of safety lifecycle activities\u2014hazard analysis, safety requirements, design, implementation, testing, and validation\u2014required for each item. Compliance provides the framework for demonstrating that vehicle systems and software achieve an acceptable residual risk of hazardous failure.",
+  "domain": "standards",
+  "definition": "ISO 26262 is the international functional safety standard for electrical and electronic (E/E) systems in road vehicles, first published in 2011 by ISO Technical Committee 22 and revised in a second edition in 2018 to extend coverage to motorcycles (Part 12) and semiconductor components (Part 11). The standard introduces the Automotive Safety Integrity Level (ASIL) classification system, ranging from ASIL A (lowest rigour) to ASIL D (highest rigour), derived from a Hazard Analysis and Risk Assessment (HARA) process that combines Severity, Exposure, and Controllability parameters for each hazardous event. Compliance requires evidence of a structured safety lifecycle encompassing concept phase, system design, hardware, software, production, and operation, providing automotive OEMs, Tier 1 suppliers, and semiconductor manufacturers with a shared framework for demonstrating that residual risk of hazardous E/E failure is acceptably low. The standard is widely mandated for ADAS, powertrain control, braking, and steering systems globally, and is increasingly complemented by SOTIF (ISO 21448) and the cybersecurity standard ISO/SAE 21434 for AI-enabled autonomous driving systems.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:safety-standard",
@@ -13,10 +13,27 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.76,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:asil",
+        "label": "ASIL (Automotive Safety Integrity Level)"
+      },
+      {
+        "id": "urn:ngm:class:hara",
+        "label": "Hazard Analysis and Risk Assessment"
+      },
+      {
+        "id": "urn:ngm:class:safety-case",
+        "label": "Safety Case"
+      },
+      {
+        "id": "urn:ngm:class:functional-safety-management",
+        "label": "Functional Safety Management"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:formal-verification",
@@ -25,6 +42,14 @@
       {
         "id": "urn:ngm:class:software-testing",
         "label": "Software Testing"
+      },
+      {
+        "id": "urn:ngm:class:hazard-analysis",
+        "label": "Hazard Analysis"
+      },
+      {
+        "id": "urn:ngm:class:traceability",
+        "label": "Requirements Traceability"
       }
     ],
     "enables": [
@@ -38,16 +63,64 @@
       },
       {
         "id": "urn:ngm:class:self-driving-car",
-        "label": "Self Driving Car"
+        "label": "Self-Driving Car"
+      },
+      {
+        "id": "urn:ngm:class:automotive-embedded-system",
+        "label": "Automotive Embedded System"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:do-254",
+        "label": "DO-254"
+      },
+      {
+        "id": "urn:ngm:class:en-50128",
+        "label": "EN 50128"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:machine-learning-safety",
+        "label": "Machine Learning Safety"
+      },
+      {
+        "id": "urn:ngm:class:iso-pas-8800",
+        "label": "ISO/PAS 8800"
+      },
+      {
+        "id": "urn:ngm:class:automotive-cybersecurity",
+        "label": "Automotive Cybersecurity"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:misra-c",
+        "label": "MISRA C"
+      },
+      {
+        "id": "urn:ngm:class:fmea",
+        "label": "FMEA"
+      },
+      {
+        "id": "urn:ngm:class:fta",
+        "label": "Fault Tree Analysis"
+      },
+      {
+        "id": "urn:ngm:class:mc-dc-coverage",
+        "label": "MC/DC Coverage"
+      }
+    ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-technical-committee-22",
+        "label": "ISO Technical Committee 22"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -59,8 +132,16 @@
         "label": "IEC 61508"
       },
       {
-        "id": "urn:ngm:class:do-178-c",
+        "id": "urn:ngm:class:do-178c",
         "label": "DO-178C"
+      },
+      {
+        "id": "urn:ngm:class:iso-21448",
+        "label": "ISO 21448 (SOTIF)"
+      },
+      {
+        "id": "urn:ngm:class:iso-sae-21434",
+        "label": "ISO/SAE 21434"
       }
     ]
   },

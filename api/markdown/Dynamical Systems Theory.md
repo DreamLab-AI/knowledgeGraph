@@ -55,7 +55,7 @@ public:: true
   "@type": "Class",
   "label": "Dynamical Systems Theory",
   "definition": "The mathematical study of systems that evolve over time according to fixed rules, focusing on long-term behaviour, stability, and qualitative structure.",
-  "domain": "mathematics",
+  "domain": "machine-learning",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

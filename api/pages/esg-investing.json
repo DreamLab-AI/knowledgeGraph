@@ -4,51 +4,155 @@
   "slug": "esg-investing",
   "public": true,
   "classIri": "urn:ngm:class:esg-investing",
-  "domain": "blockchain",
-  "definition": "ESG Investing is an investment methodology that systematically integrates Environmental, Social, and Governance criteria into the analysis, selection, and management of investment portfolios, with the aim of assessing sustainability risks and ethical impact alongside conventional financial returns. Environmental factors include carbon emissions, resource usage, and climate exposure; social factors cover labour practices, supply-chain conditions, and community impact; governance factors assess board composition, executive remuneration, and shareholder rights. Blockchain-based tokenisation is increasingly used to provide transparent, immutable ESG data trails and enable fractional ownership of impact-linked assets.",
+  "domain": "finance",
+  "definition": "ESG Investing is an investment methodology that systematically integrates Environmental, Social, and Governance criteria into the analysis, selection, and management of portfolios, enabling investors to assess material sustainability risks and ethical impact alongside conventional financial returns. Environmental factors encompass carbon emissions, resource consumption, and climate transition exposure; social factors cover labour practices, supply-chain conditions, human rights, and community impact; governance factors evaluate board composition, executive remuneration, audit independence, and shareholder rights. ESG signals are incorporated through negative screening, positive best-in-class selection, engagement and proxy voting, or the construction of fully ESG-integrated thematic funds, each reflecting different theories of how non-financial data predicts long-run financial performance.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:bc-governance-and-regulation",
-      "label": "BC Governance and Regulation"
+      "id": "urn:ngm:class:sustainable-finance",
+      "label": "Sustainable Finance"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:environmental-criteria",
+        "label": "Environmental Criteria"
+      },
+      {
+        "id": "urn:ngm:class:social-criteria",
+        "label": "Social Criteria"
+      },
+      {
+        "id": "urn:ngm:class:corporate-governance",
+        "label": "Corporate Governance"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:esg-data-disclosure",
+        "label": "ESG Data Disclosure"
+      },
+      {
+        "id": "urn:ngm:class:materiality-assessment",
+        "label": "Materiality Assessment"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:green-bond",
+        "label": "Green Bond"
+      },
+      {
+        "id": "urn:ngm:class:impact-measurement",
+        "label": "Impact Measurement"
+      },
+      {
+        "id": "urn:ngm:class:stewardship",
+        "label": "Stewardship"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:esg-rating",
+        "label": "ESG Rating"
+      },
+      {
+        "id": "urn:ngm:class:non-financial-reporting",
+        "label": "Non-Financial Reporting"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:conventional-investing",
+        "label": "Conventional Investing"
+      },
+      {
+        "id": "urn:ngm:class:greenwashing",
+        "label": "Greenwashing"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:tokenization",
+        "label": "Tokenization"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "id": "urn:ngm:class:carbon-credit",
+        "label": "Carbon Credit"
+      }
+    ],
     "uses": [
       {
-        "id": "urn:ngm:class:token",
-        "label": "Token"
+        "id": "urn:ngm:class:portfolio-screening",
+        "label": "Portfolio Screening"
+      },
+      {
+        "id": "urn:ngm:class:proxy-voting",
+        "label": "Proxy Voting"
+      },
+      {
+        "id": "urn:ngm:class:stakeholder-engagement",
+        "label": "Stakeholder Engagement"
       }
     ],
     "supports": [
       {
         "id": "urn:ngm:class:governance",
         "label": "Governance"
+      },
+      {
+        "id": "urn:ngm:class:climate-risk-management",
+        "label": "Climate Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:sustainable-development-goals",
+        "label": "Sustainable Development Goals"
       }
     ],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
+    "standardizedBy": [
       {
-        "id": "urn:ngm:class:sustainability",
-        "label": "Sustainability"
+        "id": "urn:ngm:class:sfdr",
+        "label": "SFDR"
       },
+      {
+        "id": "urn:ngm:class:gri-standards",
+        "label": "GRI Standards"
+      },
+      {
+        "id": "urn:ngm:class:tcfd",
+        "label": "TCFD"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:sustainable-finance",
+        "label": "Sustainable Finance"
+      },
+      {
+        "id": "urn:ngm:class:impact-investing",
+        "label": "Impact Investing"
+      }
+    ],
+    "relatedTo": [
       {
         "id": "urn:ngm:class:green-finance",
         "label": "Green Finance"
       },
       {
-        "id": "urn:ngm:class:tokenization",
-        "label": "Tokenization"
+        "id": "urn:ngm:class:sustainability",
+        "label": "Sustainability"
+      },
+      {
+        "id": "urn:ngm:class:socially-responsible-investing",
+        "label": "Socially Responsible Investing"
       }
     ]
   },

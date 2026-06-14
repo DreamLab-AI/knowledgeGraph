@@ -1,14 +1,87 @@
 - ### Definition
-  - ComfyUI is an open-source, node-based graphical workflow environment for running Stable Diffusion and related diffusion models, enabling modular composition of complex image and video generation pipelines without writing code.
+  - A **Node-Based Diffusion Pipeline Interface** is a [[Visual Programming Environment]] that represents the full [[Diffusion Model]] inference graph as a directed acyclic graph of composable, reusable nodes. Each node encapsulates a single operation — loading model weights, encoding text prompts via a [[CLIP Text Encoder]], sampling in [[Latent Space]], or decoding through a [[VAE Image Encoding]] step — while typed edges carry tensor data between nodes. The paradigm exposes the computational structure of [[Generative AI]] workflows as an inspectable, shareable artefact, enabling precise reproducibility and modular experimentation without procedural scripting. [[ComfyUI]], the principal exemplar created in 2023, serialises workflows as JSON graphs and has become a de-facto community standard for advanced [[Image Generation]] and [[Video Generation]] use cases.
+- ### Overview
+  - Node-based interfaces for diffusion pipelines emerged as practitioners needed finer control over the multi-stage inference process than form-based tools such as [[Automatic1111 WebUI]] provide. Rather than treating the pipeline as a black box exposed through sliders and dropdowns, the node paradigm makes every tensor operation visible and reconnectable.
+  - The key insight is that a [[Latent Diffusion Model]] inference run is naturally a dataflow graph: text is encoded, noise is initialised, a sampler iterates denoising steps, the result is decoded, and the image may then pass through further conditioning or upscaling stages. A [[Node Graph Editor]] maps this structure one-to-one.
+  - Workflows serialised as JSON are portable: they can be stored in version control, shared across teams, embedded in API calls, or consumed by headless automation servers without modification. This makes the format attractive not just for individual artists but for studios integrating AI generation into production pipelines.
+  - Adoption accelerated when the node model proved capable of composing heterogeneous architectures — connecting [[Stable Diffusion Image Model]], [[ControlNet]], [[LoRA Adapter]], [[IP-Adapter]], and [[AnimateDiff]] in a single graph — that would have required bespoke scripting in any linear interface.
+- ### Key Components
+  - **Node Graph Editor** — the interactive canvas on which nodes are placed and wired; implements a [[Dataflow Programming]] execution model where upstream nodes must complete before downstream nodes begin.
+  - **Primitive node types**:
+    - *CheckpointLoader* — loads base model weights into GPU VRAM; interacts with [[GPU Compute]] scheduling.
+    - *CLIPTextEncode* — converts a natural-language prompt to a conditioning tensor via [[CLIP Text Encoder]].
+    - *KSampler* — runs the core denoising loop of the [[Diffusion Model]] using a chosen scheduler (Euler, DPM++, DDIM, etc.).
+    - *VAEDecode / VAEEncode* — converts between [[Latent Space]] representations and pixel space via [[VAE Image Encoding]].
+    - *ControlNetApply* — injects spatial conditioning from [[ControlNet]] models (depth, canny, pose, etc.).
+    - *LoRALoader* — merges [[LoRA Adapter]] weights into a base model at runtime without modifying files on disk.
+    - *SaveImage / PreviewImage* — writes decoded tensors to disk or surfaces previews in the UI.
+  - **Workflow Serialisation Format** — a JSON schema encoding nodes, edges, widget values, and metadata; functions as a [[Workflow Serialisation Format]] interchange standard between tools, APIs, and community sharing platforms.
+  - **Custom Node Extension System** — a plugin architecture allowing third-party packages (e.g., [[ComfyUI Manager]]) to register new node types, enabling integration of novel architectures without forking the core codebase. This extension model is central to the ecosystem's long tail of capabilities.
+  - **Execution Queue** — an asynchronous queue that batches workflows, handles VRAM management, and supports multi-GPU routing where available.
+  - **API Server** — a local HTTP endpoint (default `127.0.0.1:8188`) that accepts workflow JSON, enabling headless and programmatic execution; bridges to [[Generative AI API]] patterns.
+- ### Supported Model Architectures
+  - **Stable Diffusion 1.x / 2.x** — original latent diffusion checkpoints; the initial target architecture.
+  - **SDXL** — double-encoder, higher-resolution architecture; requires distinct node wiring for the base and refiner models.
+  - **Flux.1** — next-generation flow-matching architecture from Black Forest Labs; natively supported via dedicated sampler nodes.
+  - **[[AnimateDiff]]** — motion module injection for video frame generation; extends the KSampler with temporal attention.
+  - **[[IP-Adapter]]** — image-prompt conditioning allowing visual style transfer alongside text prompts.
+  - **[[ControlNet]]** variants — depth, canny edge, openpose, normal maps, line-art, and others for spatial conditioning.
+  - **[[LoRA Adapter]]** and DoRA fine-tuned style/character adaptors loaded at inference time.
+  - GGUF quantised models via community nodes, enabling CPU and low-VRAM inference paths.
+- ### Applications / Use Cases
+  - **Creative and artistic production** — digital artists construct elaborate multi-stage pipelines: generate a base image, run [[Inpainting]] to refine details, apply style LoRAs, and upscale via [[Image Upscaling]] nodes, all within a single shareable graph.
+  - **Fashion and brand content** — commercial studios use node workflows to batch-generate product imagery, model swap clothing onto pre-generated poses, and apply consistent brand colour grading.
+  - **Architectural visualisation** — [[ControlNet]] depth and lineart conditioning allows conversion of 3D render stubs into photorealistic imagery, integrating into VFX pipelines alongside [[Visual Effects Node Graph]] toolchains.
+  - **Game asset production** — texture synthesis, concept art iteration, and sprite generation are accelerated by parametric node graphs that accept seed variation sweeps.
+  - **Research prototyping** — machine-learning researchers build custom inference experiments by wiring novel sampler or conditioning nodes without modifying PyTorch code directly; interacts with [[Deep Learning Framework]] infrastructure.
+  - **Automated content pipelines** — the API server mode enables headless execution; studios chain multiple workflows through orchestration layers, triggering generation jobs from product catalogues or user inputs.
+  - **Model evaluation and comparison** — branching the pipeline at the sampler node and routing to multiple KSampler configurations allows side-by-side output comparison under identical conditioning, invaluable for [[Machine Learning Pipeline]] benchmarking.
+  - **Video and animation** — [[AnimateDiff]] and frame-interpolation nodes extend the paradigm from static images to short video clips and animated assets.
 - ### Relationships
-  - ComfyUI depends on [[Stable Diffusion Image Model]] and the broader [[Diffusion Model]] ecosystem for its generative capabilities. It leverages [[GPU Compute]] for accelerated inference and produces outputs in the domains of [[Image Generation]] and [[Video Generation]]. Its [[Node Based Editor]] paradigm connects it to visual programming traditions. The tool is maintained as [[Open Source Software]] and integrates tightly with [[Machine Learning Pipeline]] patterns.
-- ### Content
-  - ComfyUI was created in 2023 by developer comfyanonymous as a lightweight yet powerful alternative to Automatic1111 WebUI. Unlike form-based interfaces, ComfyUI represents the diffusion inference graph explicitly: each operation (model loading, conditioning, sampling, decoding) is a discrete node, and wires between nodes carry tensors. This makes the computational graph inspectable, shareable as a JSON file, and precisely reproducible.
-
-  - The node graph model unlocks capabilities that are difficult in linear interfaces. Users can connect multiple models in sequence, branch pipelines to compare outputs from different samplers, inject ControlNet signals at arbitrary points, or chain inpainting with upscaling in a single workflow. Advanced users publish community-built custom node packs through [[ComfyUI Manager]], dramatically extending the tool beyond its core set.
-
-  - ComfyUI supports a wide range of model architectures beyond the original Stable Diffusion 1.x line, including SDXL, Flux.1, AnimateDiff, IP-Adapter, and various LoRA and ControlNet variants. The JSON workflow format is increasingly adopted as a portable interchange, with generative art platforms and APIs beginning to accept ComfyUI workflow files as first-class inputs.
-
-  - In professional and industrial contexts, ComfyUI is used for fashion and brand content generation, architectural visualisation, game asset production, and research prototyping. Its modular design aligns well with [[Generative AI Engineering]] practices—workflows can be version-controlled, diffed, and deployed as part of automated content pipelines.
-
-  - The project's rapid community adoption has made it a reference implementation for understanding how diffusion inference pipelines are actually structured. As model capabilities advance through [[Diffusion Models]] and [[Text-to-Image]] research, ComfyUI often becomes the first interface through which new architectures are made accessible to practitioners outside the original research teams.
+  - uses:: [[Stable Diffusion Image Model]]
+  - uses:: [[Diffusion Model]]
+  - uses:: [[GPU Compute]]
+  - uses:: [[Latent Diffusion Model]]
+  - uses:: [[ControlNet]]
+  - uses:: [[LoRA Adapter]]
+  - enables:: [[Image Generation]]
+  - enables:: [[Video Generation]]
+  - enables:: [[Text-to-Image]]
+  - enables:: [[Generative AI]]
+  - enables:: [[Inpainting]]
+  - enables:: [[Image Upscaling]]
+  - requires:: [[Deep Learning Framework]]
+  - requires:: [[PyTorch]]
+  - requires:: [[VAE Image Encoding]]
+  - hasPart:: [[Node Graph Editor]]
+  - hasPart:: [[Workflow Serialisation Format]]
+  - hasPart:: [[Custom Node Extension System]]
+  - partOf:: [[Generative AI Toolchain]]
+  - relatedTo:: [[Node-Based Editor]]
+  - relatedTo:: [[Open Source Software]]
+  - relatedTo:: [[Machine Learning Pipeline]]
+  - relatedTo:: [[Dataflow Programming]]
+  - relatedTo:: [[IP-Adapter]]
+  - relatedTo:: [[AnimateDiff]]
+  - contrastsWith:: [[Automatic1111 WebUI]]
+  - contrastsWith:: [[Imperative Inference Script]]
+  - bridges-to:: [[Visual Effects Node Graph]]
+  - bridges-to:: [[Shader Graph]]
+  - bridges-to:: [[Generative AI API]]
+  - implements:: [[Dataflow Execution Model]]
+  - implements:: [[Directed Acyclic Graph]]
+- ### Ecosystem and Community
+  - The node-based paradigm has spawned a substantial extension ecosystem. [[ComfyUI Manager]] is the canonical package manager for community node packs, providing discovery, installation, and version management for hundreds of custom node libraries.
+  - Community workflows are shared on platforms such as OpenArt, Civitai, and GitHub repositories. The JSON format's readability and portability have enabled a workflow economy where practitioners publish and remix modular pipeline components.
+  - Commercial API services (Fal.ai, Replicate, RunComfy) have adopted the workflow JSON as a first-class execution format, meaning pipelines authored in a local node editor can be deployed to cloud GPU infrastructure without modification — a form of [[Infrastructure as Code]] applied to AI generation.
+  - The paradigm has influenced adjacent tools: Blender's built-in shader and geometry node editors share the spatial metaphor, and [[Visual Effects Node Graph]] tools in Nuke and Houdini have informed the UX conventions node-based diffusion interfaces adopt.
+  - As multimodal models mature and [[Generative AI]] extends to 3D, audio, and video, the node-based interface is expected to remain the dominant composition paradigm due to its ability to represent heterogeneous model types and arbitrary dataflow topologies without imposing a fixed pipeline structure.
+- ### Standards & Context
+  - No formal standards body governs node-based diffusion workflow formats; the ComfyUI JSON schema functions as a de-facto community standard through adoption breadth.
+  - The broader [[Dataflow Programming]] paradigm is well-theorised (e.g., Kahn process networks, Lustre) and underpins production visual programming environments including [[Shader Graph]] in Unity and Unreal Engine, Max/MSP, and Pure Data, providing a conceptual lineage.
+  - [[Open Source Software]] licensing (GPL-3.0 for ComfyUI core) ensures the reference implementation remains publicly auditable and forkable, which has been critical to community trust and rapid iteration.
+  - API conventions follow REST over HTTP/JSON; work is ongoing in the community to define a more formal workflow schema with versioning and backward-compatibility guarantees.
+  - Interaction with [[GPU Compute]] resource management intersects with CUDA and ROCm driver standards, and the tool supports both NVIDIA and AMD GPU backends via [[PyTorch]] backend abstraction.
+- ### Provenance
+  - sources:: Training knowledge (ComfyUI repository, community documentation, practitioner usage patterns); current to early 2026.
+  - updated:: 2026-06-13

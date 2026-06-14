@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:liquidity-mining",
   "domain": "blockchain",
-  "definition": "Liquidity mining is a decentralised finance incentive mechanism in which participants deposit token pairs into automated market maker pools or lending protocols and receive protocol-issued tokens as rewards proportional to their share of pooled liquidity. The reward tokens often confer governance rights and a share of trading fee revenue, creating compounding yield incentives. Liquidity mining bootstraps network liquidity for nascent protocols but introduces impermanent loss risk and token inflation dynamics that require careful mechanism design.",
+  "definition": "Liquidity mining is a decentralised finance incentive mechanism in which participants deposit assets into automated market maker pools or lending protocols and receive protocol-issued tokens as rewards proportional to their share of pooled liquidity. These reward tokens often confer governance rights and a share of trading-fee revenue, creating compounding yield incentives that attract capital to nascent protocols. The mechanism carries impermanent loss risk arising from divergence in the relative prices of deposited assets, and token inflation dynamics that must be governed through carefully designed emission schedules, vote-escrow models, or halving curves to sustain long-term protocol health.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-defi-and-economics",
@@ -13,8 +13,8 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.72,
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [
@@ -25,6 +25,14 @@
       {
         "id": "urn:ngm:class:automated-market-maker",
         "label": "Automated Market Maker"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
       }
     ],
     "enables": [
@@ -35,24 +43,92 @@
       {
         "id": "urn:ngm:class:decentralized-exchange",
         "label": "Decentralized Exchange"
+      },
+      {
+        "id": "urn:ngm:class:protocol-bootstrapping",
+        "label": "Protocol Bootstrapping"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-autonomous-organization",
+        "label": "Decentralized Autonomous Organization"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-finance",
+        "label": "Decentralized Finance"
+      },
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:proof-of-work",
+        "label": "Proof of Work"
+      },
+      {
+        "id": "urn:ngm:class:order-book-exchange",
+        "label": "Order Book Exchange"
+      },
+      {
+        "id": "urn:ngm:class:traditional-market-making",
+        "label": "Traditional Market Making"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:mechanism-design",
+        "label": "Mechanism Design"
+      },
+      {
+        "id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      }
+    ],
+    "uses": [
       {
         "id": "urn:ngm:class:governance-token",
         "label": "Governance Token"
       },
       {
-        "id": "urn:ngm:class:token-economics",
-        "label": "Token Economics"
+        "id": "urn:ngm:class:lp-token",
+        "label": "LP Token"
+      },
+      {
+        "id": "urn:ngm:class:bonding-curve",
+        "label": "Bonding Curve"
+      },
+      {
+        "id": "urn:ngm:class:vote-escrow",
+        "label": "Vote-Escrow"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:impermanent-loss",
+        "label": "Impermanent Loss"
+      },
+      {
+        "id": "urn:ngm:class:staking",
+        "label": "Staking"
+      },
+      {
+        "id": "urn:ngm:class:token-emission-schedule",
+        "label": "Token Emission Schedule"
+      },
+      {
+        "id": "urn:ngm:class:concentrated-liquidity",
+        "label": "Concentrated Liquidity"
       }
     ]
   },

@@ -59,7 +59,7 @@ public:: true
   "@type": "Class",
   "label": "Algorithm Layer",
   "definition": "The Algorithm Layer is the architectural stratum that defines the computational methods, procedures, and decision logic operating above the data and protocol layers. It encompasses the design, selection, and composition of algorithms \u2014 sorting, search, optimisation, consensus, cryptographic, and learning algorithms \u2014 that transform inputs into outputs under defined correctness and complexity guarantees.",
-  "domain": "computation",
+  "domain": "machine-learning",
   "maturity": "established",
   "qualityScore": 0.7,
   "relations": {

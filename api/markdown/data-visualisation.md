@@ -1,26 +1,134 @@
 - ### Definition
-  Data Visualisation encodes data attributes into perceptual channels to enable rapid human comprehension of patterns and relationships. In spatial computing and metaverse contexts it extends into immersive three-dimensional and AR-overlay modalities. Effective visualisation depends on computer vision pipelines and data access interfaces to retrieve and render live data streams.
+  Data Visualisation is the systematic practice of encoding data attributes into perceptual channels — position, colour, size, shape, and motion — to enable rapid human comprehension of complex patterns and relational structures. It bridges raw data in [[Data Pipeline]] systems with human cognition by leveraging principles from [[Information Design]], [[Cognitive Psychology]], and [[Computer Graphics]]. Visualisation spans static charts and interactive [[Dashboard]] environments through to immersive three-dimensional scenes in [[Augmented Reality]] and [[Virtual Reality]], making it a foundational tool for [[Exploratory Data Analysis]] and [[Decision Support System]] contexts.
 
-- ### Semantic Classification
-  - owl-class:: spatial-computing:DataVisualisation
-  - owl-role:: concept
+- ### Overview
+  - Data Visualisation converts abstract, often high-dimensional data into graphical representations the human perceptual system can interpret pre-attentively — before conscious deliberate reasoning kicks in.
+  - The discipline has roots in 18th-century statistical graphics (William Playfair's bar and pie charts) and 19th-century thematic cartography (John Snow's cholera map), but has evolved rapidly with interactive computing and real-time data streams.
+  - Modern data visualisation is a mature field with well-established design grammars (Grammar of Graphics, Wilkinson 1999), open-source rendering libraries ([[D3.js]], [[Vega-Lite]], [[Apache ECharts]]), and cloud-based [[Business Intelligence]] platforms.
+  - Why it matters: humans process visual information roughly 60,000 times faster than text. Encoding data graphically allows analysts to identify outliers, clusters, and temporal trends that would be invisible in tabular form.
+  - In [[Spatial Computing]] and [[Digital Twin]] environments, visualisation moves from 2D screens into volumetric, spatially anchored displays where analysts can "walk through" datasets.
+  - [[Machine Learning]] model outputs increasingly depend on visualisation for interpretability — a field known as [[Explainable AI]] or XAI.
+
+- ### Key Components
+  - #### Perceptual Channels
+    - Position (most accurate channel): x/y/z axes used in scatter plots, bar charts, line charts
+    - Colour hue and luminance: categorical vs. ordinal encodings; governed by [[Colour Theory]] and accessibility standards (WCAG contrast ratios)
+    - Size and area: bubble charts, treemaps, proportional symbols
+    - Shape: categorical glyphs in scatter plots or maps
+    - Motion and animation: temporal transitions, highlighting change over time
+  - #### Chart Types and Representations
+    - [[Chart]] forms: bar, line, scatter, histogram, heatmap, box-and-whisker, violin
+    - [[Network Graph]] and force-directed layouts for relational data (knowledge graphs, social networks)
+    - [[Geospatial Map]] and choropleth maps for spatial distributions
+    - Parallel coordinates and radar charts for high-dimensional data
+    - Sankey diagrams and alluvial plots for flow data
+    - Treemaps and sunburst charts for hierarchical data
+  - #### Interaction Paradigms
+    - Zoom and pan, linked brushing, cross-filtering across multiple coordinated views
+    - Drill-down navigation for hierarchical datasets
+    - Tooltips, annotation layers, and contextual overlays
+    - [[Human-Computer Interaction]] principles govern affordances and discoverability
+  - #### Rendering Infrastructure
+    - [[Rendering Engine]] (WebGL, WebGPU, D3.js SVG, Canvas 2D) chosen based on dataset scale and interactivity needs
+    - [[Graphics Processing Unit]] acceleration for large point clouds, volumetric data, and real-time streaming datasets
+    - For immersive XR contexts: [[Spatial Computing Paradigm]] runtimes (WebXR, OpenXR) rendering data geometries in 3D space
+  - #### Data Preparation
+    - [[Data Pipeline]] stages: ingestion, cleaning, aggregation, and transformation precede rendering
+    - [[Dimensionality Reduction]] techniques (PCA, t-SNE, UMAP) project high-dimensional data into 2D/3D representable spaces
+    - [[Data Model]] structure (tabular, graph, hierarchical, geospatial) constrains viable chart types
+
+- ### Mechanisms
+  - #### Grammar of Graphics (GoG)
+    - Formalises visualisation as a layered specification: data, mapping (aesthetics), geometric marks, scales, coordinates, facets
+    - Implemented in ggplot2 (R), Vega-Lite (web), and Altair (Python)
+  - #### Perceptual Effectiveness Hierarchy
+    - Cleveland and McGill (1984) ranking: position > length > slope > angle > area > volume > colour saturation > colour hue
+    - Guides encoding choices to maximise accuracy of quantitative judgements
+  - #### Visual Analytics Loop
+    - Iterative cycle: data → visualisation → human analysis → hypothesis → refined query → back to data
+    - Supported by [[Visual Analytics]] platforms (Tableau, Power BI, Grafana)
+  - #### Streaming and Real-Time Visualisation
+    - Time-series dashboards require [[Data Access Interface]] subscriptions or websocket feeds
+    - Windowed aggregation and incremental rendering to maintain interactivity at high data velocity
+    - Used in monitoring, financial trading, industrial IoT, and [[Digital Twin]] systems
+
+- ### Applications
+  - #### Business Intelligence and Analytics
+    - [[Business Intelligence]] dashboards (Tableau, Power BI, Looker) translate transactional data into KPI metrics
+    - Executive scorecards, sales funnels, supply-chain flow diagrams
+  - #### Scientific Research
+    - [[Scientific Visualisation]] of simulations: fluid dynamics, molecular dynamics, climate modelling
+    - Astronomical data (redshift maps, galaxy distribution), genomics (phylogenetic trees, expression heatmaps)
+  - #### Healthcare and Life Sciences
+    - Patient monitoring dashboards, epidemiological choropleth maps, medical imaging overlays
+    - Clinical trial result visualisation and adverse event timelines
+  - #### Geospatial and Urban Analytics
+    - [[Geospatial Map]] layers for urban planning, logistics routing, environmental monitoring
+    - Real-time traffic heatmaps, drone telemetry displays
+  - #### Artificial Intelligence and Machine Learning
+    - Visualising [[Machine Learning]] model training curves, confusion matrices, ROC curves
+    - [[Explainable AI]] techniques (SHAP values, attention heatmaps, saliency maps) rendered as overlays on original data
+    - [[Dimensionality Reduction]] projections (t-SNE/UMAP embeddings) for cluster inspection
+  - #### Spatial Computing and XR
+    - Volumetric data renders in [[Augmented Reality]] headsets (HoloLens, Apple Vision Pro)
+    - [[Digital Twin]] operational dashboards anchored to physical assets in 3D space
+    - Multi-user collaborative analytics in shared XR spaces via [[Telecollaboration]] platforms
+  - #### Network and Graph Analysis
+    - [[Network Graph]] visualisation of social networks, knowledge graphs, dependency trees, cybersecurity attack graphs
 
 - ### Relationships
-  - **uses**: Computer Vision, Spatial Computing (rendering pipelines and spatial substrate for immersive vis)
-  - **enables**: Digital Twin (real-time visualisation is a core output of digital twin systems)
-  - **dependsOn**: Data Access Interface (requires query interfaces to source live data)
-  - **supports**: Augmented Reality, Telecollaboration (in-headset and shared visualisation contexts)
+  - hasPart:: [[Chart]]
+  - hasPart:: [[Dashboard]]
+  - hasPart:: [[Geospatial Map]]
+  - hasPart:: [[Network Graph]]
+  - requires:: [[Data Pipeline]]
+  - requires:: [[Rendering Engine]]
+  - requires:: [[Data Access Interface]]
+  - uses:: [[Computer Vision]]
+  - uses:: [[Dimensionality Reduction]]
+  - uses:: [[Colour Theory]]
+  - uses:: [[Human-Computer Interaction]]
+  - enables:: [[Digital Twin]]
+  - enables:: [[Decision Support System]]
+  - enables:: [[Exploratory Data Analysis]]
+  - dependsOn:: [[Data Model]]
+  - dependsOn:: [[Graphics Processing Unit]]
+  - supports:: [[Augmented Reality]]
+  - supports:: [[Telecollaboration]]
+  - supports:: [[Business Intelligence]]
+  - contrastsWith:: [[Data Table]]
+  - contrastsWith:: [[Text Report]]
+  - bridges-to:: [[Spatial Computing]] (immersive 3D rendering domain)
+  - bridges-to:: [[Machine Learning]] (model interpretability and training monitoring)
+  - bridges-to:: [[Explainable AI]] (saliency and feature-importance displays)
+  - relatedTo:: [[Scientific Visualisation]]
+  - relatedTo:: [[Visual Analytics]]
+  - relatedTo:: [[Information Design]]
 
-- ### Content
-
-  ## Overview
-
-  Data Visualisation maps data attributes to perceptual channels to support rapid human insight. In XR and metaverse contexts, visualisation is rendered in three-dimensional or augmented reality space, making it integral to digital twin dashboards and collaborative spatial analytics.
-
-  #### Related Concepts
-  - [[owl:Thing]]
+- ### Standards & Context
+  - #### W3C and Web Standards
+    - SVG (Scalable Vector Graphics): W3C standard vector format widely used for interactive 2D charts
+    - WebGL / WebGPU: Khronos Group standards for GPU-accelerated rendering in browsers
+    - CSS Colour Level 4: extended colour gamut support improving accessibility for data colour scales
+    - WebXR Device API: W3C standard enabling 3D/VR data visualisation in browsers
+  - #### Accessibility Standards
+    - WCAG 2.1 / 2.2 (Web Content Accessibility Guidelines): colour contrast, alternative text for charts
+    - Section 508 (US federal): requires accessible data representations in public-sector dashboards
+  - #### Tooling Ecosystem
+    - D3.js: de-facto low-level JavaScript library for bespoke interactive visualisations
+    - Vega / Vega-Lite: declarative grammar-of-graphics specification language
+    - Apache ECharts: enterprise-grade open-source charting library
+    - Observable Plot: modern Grammar-of-Graphics successor from the D3 author
+    - Grafana: open-source time-series dashboard platform widely used in [[Infrastructure]] monitoring
+    - Tableau / Power BI / Looker: dominant commercial [[Business Intelligence]] platforms
+    - Three.js / Babylon.js: 3D scene graph libraries for WebGL-based spatial visualisation
+  - #### Design Frameworks
+    - Tufte's principles: data-ink ratio, chartjunk elimination, sparklines, small multiples
+    - Cleveland & McGill graphical perception hierarchy (1984)
+    - Ware (2004) Information Visualisation: Perception for Design — cognitive foundations
+    - Bertin's Semiology of Graphics (1967) — original formal treatment of visual variables
 
 - ### Provenance
-  - bridges-to:: [[Computer Vision]] (ai)
-  - sources::
+  - sources:: Cleveland & McGill (1984), Wilkinson (1999) Grammar of Graphics, Tufte (1983) The Visual Display of Quantitative Information, Ware (2004) Information Visualisation, W3C SVG/WebXR specifications
+  - updated:: 2026-06-13
   - migration-date:: 2026-04-26T00:00:00Z

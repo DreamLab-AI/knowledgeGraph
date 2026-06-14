@@ -5,39 +5,134 @@
   "public": true,
   "classIri": "urn:ngm:class:consen-sys",
   "domain": "blockchain",
-  "definition": "ConsenSys is a software company that builds Ethereum infrastructure and developer tools, including wallet and node services.",
+  "definition": "ConsenSys is a Brooklyn-founded blockchain software company, established in 2014 by Ethereum co-founder Joseph Lubin, that builds developer tooling, infrastructure, and end-user products for the Ethereum ecosystem. Its product portfolio spans the MetaMask browser wallet, the Infura node-as-a-service API network, the Truffle and Hardhat-adjacent development suite, and the Linea zkEVM Layer 2 network. ConsenSys acts as a principal driver of Ethereum protocol adoption by providing the production-grade infrastructure on which the majority of decentralised application front-ends depend. The company also engages in enterprise blockchain consulting and contributes to Ethereum standards through active participation in the Ethereum Foundation and EIP processes.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ethereum-smart-contract-platform",
-      "label": "Ethereum"
+      "id": "urn:ngm:class:blockchain-software-company",
+      "label": "Blockchain Software Company"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:metamask",
+        "label": "MetaMask"
+      },
+      {
+        "id": "urn:ngm:class:infura",
+        "label": "Infura"
+      },
+      {
+        "id": "urn:ngm:class:linea",
+        "label": "Linea"
+      },
+      {
+        "id": "urn:ngm:class:truffle-suite",
+        "label": "Truffle Suite"
+      }
+    ],
     "requires": [
       {
-        "id": "urn:ngm:class:ethereum-smart-contract-platform",
+        "id": "urn:ngm:class:ethereum",
         "label": "Ethereum"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:web3",
         "label": "Web3"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-application",
+        "label": "Decentralised Application"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:ethereum-improvement-proposal",
+        "label": "Ethereum Improvement Proposal"
+      },
+      {
+        "id": "urn:ngm:class:zk-rollup",
+        "label": "ZK Rollup"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:coinbase",
+        "label": "Coinbase"
+      },
+      {
+        "id": "urn:ngm:class:alchemy",
+        "label": "Alchemy"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:enterprise-blockchain",
+        "label": "Enterprise Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset-custody",
+        "label": "Digital Asset Custody"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:json-rpc",
+        "label": "JSON-RPC"
+      },
+      {
+        "id": "urn:ngm:class:solidity",
+        "label": "Solidity"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ethereum-virtual-machine",
+        "label": "Ethereum Virtual Machine"
+      },
+      {
+        "id": "urn:ngm:class:non-fungible-token",
+        "label": "Non-Fungible Token"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ethereum-foundation",
+        "label": "Ethereum Foundation"
+      },
+      {
+        "id": "urn:ngm:class:layer-2-scaling",
+        "label": "Layer 2 Scaling"
+      },
+      {
+        "id": "urn:ngm:class:token-standard",
+        "label": "Token Standard"
+      }
+    ]
   },
   "wikilinks": [
     {

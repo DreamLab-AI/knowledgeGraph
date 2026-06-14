@@ -4,28 +4,49 @@
   "slug": "scaling-laws",
   "public": true,
   "classIri": "urn:ngm:class:scaling-laws",
-  "domain": "artificial-intelligence",
-  "definition": "Scaling Laws are empirical power-law relationships that describe how the held-out cross-entropy loss of large neural language models varies predictably as a function of three primary axes: the number of model parameters, the volume of training tokens, and the total compute budget measured in floating-point operations. Foundational work established that optimal allocation of a fixed compute budget requires roughly equal scaling of model size and training data, a result later refined by Chinchilla-style analyses. These laws guide architectural decisions, determine when to train versus when to scale, and enable cost projections for future model generations, making them central to modern AI infrastructure planning.",
+  "domain": "machine-learning",
+  "definition": "Scaling Laws are empirical power-law relationships describing how the performance of neural networks \u2014 typically measured as held-out cross-entropy loss \u2014 varies predictably as a function of model parameters (N), training data volume (D), and total compute budget (C). Foundational Kaplan et al. (2020) work established smooth, predictable loss curves across many orders of magnitude, while Hoffmann et al. (2022) Chinchilla analyses refined optimal compute allocation to roughly equal scaling of model size and training tokens. These relationships guide architectural decisions, compute budgeting, and capability forecasting for large foundation models. Scaling laws have since been extended beyond language modelling to vision transformers, multimodal architectures, and reinforcement learning from human feedback.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ai-research-area",
-      "label": "AI Research Area"
+      "id": "urn:ngm:class:empirical-machine-learning",
+      "label": "Empirical Machine Learning"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.73,
+  "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:parameter-count",
+        "label": "Parameter Count"
+      },
+      {
+        "id": "urn:ngm:class:token-count",
+        "label": "Token Count"
+      },
+      {
+        "id": "urn:ngm:class:power-law-exponent",
+        "label": "Power Law Exponent"
+      }
+    ],
     "requires": [],
     "enables": [
       {
         "id": "urn:ngm:class:pre-training",
-        "label": "Pre Training"
+        "label": "Pre-Training"
       },
       {
         "id": "urn:ngm:class:large-language-models",
         "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:capability-forecasting",
+        "label": "Capability Forecasting"
+      },
+      {
+        "id": "urn:ngm:class:compute-optimal-training",
+        "label": "Compute-Optimal Training"
       }
     ],
     "dependsOn": [
@@ -36,19 +57,83 @@
       {
         "id": "urn:ngm:class:training-data",
         "label": "Training Data"
+      },
+      {
+        "id": "urn:ngm:class:compute-budget",
+        "label": "Compute Budget"
+      },
+      {
+        "id": "urn:ngm:class:cross-entropy-loss",
+        "label": "Cross-Entropy Loss"
       }
     ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:emergent-abilities",
+        "label": "Emergent Abilities"
+      },
+      {
+        "id": "urn:ngm:class:diminishing-returns",
+        "label": "Diminishing Returns"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:ai-hardware",
+        "label": "AI Hardware"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "id": "urn:ngm:class:floating-point-operations",
+        "label": "Floating-Point Operations"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:foundation-models",
+        "label": "Foundation Models"
+      },
+      {
+        "id": "urn:ngm:class:ai-infrastructure-planning",
+        "label": "AI Infrastructure Planning"
+      },
+      {
+        "id": "urn:ngm:class:neural-architecture-search",
+        "label": "Neural Architecture Search"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:parameter-count",
-        "label": "Parameter Count"
+        "id": "urn:ngm:class:power-law",
+        "label": "Power Law"
+      },
+      {
+        "id": "urn:ngm:class:irreducible-loss",
+        "label": "Irreducible Loss"
+      },
+      {
+        "id": "urn:ngm:class:data-efficiency",
+        "label": "Data Efficiency"
+      },
+      {
+        "id": "urn:ngm:class:model-compression",
+        "label": "Model Compression"
       }
     ]
   },

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:robotic-process-automation",
   "domain": "ai",
-  "definition": "Robotic Process Automation (RPA) is a software technology that uses configurable software robots to emulate human interactions with digital systems \u2014 clicking, typing, extracting data, navigating UIs \u2014 in order to execute repetitive, rule-based business processes without modifying the underlying applications. RPA robots operate at the presentation layer, interacting with applications through their graphical or web interfaces rather than through APIs, enabling automation of legacy systems that lack integration points.",
+  "definition": "Robotic Process Automation (RPA) is a software technology that deploys configurable software robots to emulate human interactions with digital systems \u2014 clicking, typing, copy-pasting data, and navigating graphical user interfaces \u2014 in order to execute repetitive, rule-based business processes without modifying underlying applications. RPA robots operate at the presentation layer, integrating with legacy systems through their UI rather than through APIs, and are managed by an orchestration platform that schedules work items, monitors execution, handles exceptions, and maintains audit trails. Modern RPA platforms increasingly incorporate AI capabilities such as optical character recognition, natural language processing, and machine learning to extend automation to semi-structured and unstructured data, giving rise to the broader discipline of intelligent automation.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:process-automation",
@@ -13,14 +13,35 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.72,
   "maturity": "mature",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:attended-automation",
+        "label": "Attended Automation"
+      },
+      {
+        "id": "urn:ngm:class:unattended-automation",
+        "label": "Unattended Automation"
+      },
+      {
+        "id": "urn:ngm:class:bot-orchestration",
+        "label": "Bot Orchestration"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:business-process-management",
         "label": "Business Process Management"
+      },
+      {
+        "id": "urn:ngm:class:workflow-automation",
+        "label": "Workflow Automation"
+      },
+      {
+        "id": "urn:ngm:class:optical-character-recognition",
+        "label": "Optical Character Recognition"
       }
     ],
     "enables": [
@@ -31,29 +52,84 @@
       {
         "id": "urn:ngm:class:intelligent-automation",
         "label": "Intelligent Automation"
+      },
+      {
+        "id": "urn:ngm:class:hyperautomation",
+        "label": "Hyperautomation"
+      },
+      {
+        "id": "urn:ngm:class:digital-transformation",
+        "label": "Digital Transformation"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:api-integration",
+        "label": "API Integration"
+      },
+      {
+        "id": "urn:ngm:class:ai-agents",
+        "label": "AI Agents"
+      },
+      {
+        "id": "urn:ngm:class:business-process-automation",
+        "label": "Business Process Automation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:workflow-automation",
         "label": "Workflow Automation"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:process-mining",
+        "label": "Process Mining"
+      },
+      {
+        "id": "urn:ngm:class:low-code-development",
+        "label": "Low-Code Development"
       }
     ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ieee-standards",
+        "label": "IEEE Standards"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:business-process-automation",
-        "label": "Business Process Automation"
-      },
-      {
         "id": "urn:ngm:class:task-automation",
         "label": "Task Automation"
+      },
+      {
+        "id": "urn:ngm:class:enterprise-resource-planning",
+        "label": "Enterprise Resource Planning"
+      },
+      {
+        "id": "urn:ngm:class:document-processing",
+        "label": "Document Processing"
       }
     ]
   },

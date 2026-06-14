@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:continuous-integration",
   "domain": "infrastructure",
-  "definition": "Continuous Integration (CI) is a software engineering practice in which developers frequently merge code changes into a shared repository\u2014typically multiple times per day\u2014triggering automated build and test pipelines that provide rapid feedback on integration correctness. CI reduces the cost and risk of integration by detecting conflicts, regressions, and build failures early, and serves as the foundation of broader continuous delivery and DevOps workflows.",
+  "definition": "Continuous Integration (CI) is a software engineering practice in which developers frequently merge code changes into a shared repository \u2014 typically multiple times per day \u2014 triggering automated build and test pipelines that provide rapid feedback on integration correctness. CI reduces the cost and risk of integration by detecting conflicts, regressions, and build failures early, and serves as the foundation of broader continuous delivery and DevOps workflows. Originating in Extreme Programming, the practice has become a cornerstone of modern software delivery, enabling teams to maintain a consistently releasable main branch through disciplined automation.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:software-engineering",
@@ -13,46 +13,154 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.74,
   "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [
+    "hasPart": [
       {
-        "id": "urn:ngm:class:code-review",
-        "label": "Code Review"
-      }
-    ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [
-      {
-        "id": "urn:ngm:class:version-control",
-        "label": "Version Control"
-      },
-      {
-        "id": "urn:ngm:class:git",
-        "label": "Git"
-      }
-    ],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
-      {
-        "id": "urn:ngm:class:ci-cd-automation",
-        "label": "CI/CD Automation"
+        "id": "urn:ngm:class:build-automation",
+        "label": "Build Automation"
       },
       {
         "id": "urn:ngm:class:automated-testing",
         "label": "Automated Testing"
       },
       {
+        "id": "urn:ngm:class:static-code-analysis",
+        "label": "Static Code Analysis"
+      },
+      {
+        "id": "urn:ngm:class:pipeline-as-code",
+        "label": "Pipeline as Code"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      },
+      {
+        "id": "urn:ngm:class:build-server",
+        "label": "Build Server"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:continuous-delivery",
+        "label": "Continuous Delivery"
+      },
+      {
+        "id": "urn:ngm:class:continuous-deployment",
+        "label": "Continuous Deployment"
+      },
+      {
+        "id": "urn:ngm:class:code-review",
+        "label": "Code Review"
+      },
+      {
+        "id": "urn:ngm:class:trunk-based-development",
+        "label": "Trunk-Based Development"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:git",
+        "label": "Git"
+      },
+      {
+        "id": "urn:ngm:class:containerisation",
+        "label": "Containerisation"
+      },
+      {
+        "id": "urn:ngm:class:test-driven-development",
+        "label": "Test-Driven Development"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:shift-left-testing",
+        "label": "Shift-Left Testing"
+      },
+      {
+        "id": "urn:ngm:class:infrastructure-as-code",
+        "label": "Infrastructure as Code"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:waterfall-development",
+        "label": "Waterfall Development"
+      },
+      {
+        "id": "urn:ngm:class:big-bang-integration",
+        "label": "Big-Bang Integration"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      },
+      {
+        "id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:github-actions",
+        "label": "GitHub Actions"
+      },
+      {
+        "id": "urn:ngm:class:jenkins",
+        "label": "Jenkins"
+      },
+      {
+        "id": "urn:ngm:class:docker",
+        "label": "Docker"
+      },
+      {
+        "id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
+      }
+    ],
+    "supports": [
+      {
         "id": "urn:ngm:class:agile-software-development",
         "label": "Agile Software Development"
+      },
+      {
+        "id": "urn:ngm:class:extreme-programming",
+        "label": "Extreme Programming"
+      },
+      {
+        "id": "urn:ngm:class:security-scanning",
+        "label": "Security Scanning"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:devops",
+        "label": "DevOps"
+      },
+      {
+        "id": "urn:ngm:class:software-delivery-lifecycle",
+        "label": "Software Delivery Lifecycle"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ci-cd-automation",
+        "label": "CI/CD Automation"
+      },
+      {
+        "id": "urn:ngm:class:feature-flags",
+        "label": "Feature Flags"
+      },
+      {
+        "id": "urn:ngm:class:observability",
+        "label": "Observability"
       }
     ]
   },

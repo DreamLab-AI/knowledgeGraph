@@ -21,7 +21,7 @@ public:: true
   "@type": "Class",
   "label": "AR Occlusion",
   "definition": "AR occlusion is the computational technique by which virtual objects rendered in an augmented reality scene are correctly hidden or partially hidden by real-world geometry that physically lies in front of them from the viewer's perspective. Achieving occlusion requires real-time estimation of the depth structure of the physical scene, typically via depth sensors or monocular depth estimation neural networks, so that the rendering pipeline can apply correct depth ordering between real and virtual content. Without occlusion, virtual objects appear to float unconvincingly in front of all physical surfaces regardless of their spatial relationship.",
-  "domain": "spatial",
+  "domain": "spatial-computing",
   "maturity": "emerging",
   "subClassOf": [{"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"}],
   "relations": {

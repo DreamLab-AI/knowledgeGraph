@@ -95,7 +95,7 @@ public:: true
   "@type": "Class",
   "label": "Web3 Domain",
   "definition": "The Web3 Domain classifies concepts for an internet architecture in which applications interact directly with public ledgers and user-controlled keys rather than centralised platforms. It covers decentralised applications, wallets, naming, and storage that together let users own assets and identity. As a subject classification under the Blockchain Domain, it scopes the application and interaction model rather than the consensus layer or the finance built upon it.",
-  "domain": "web",
+  "domain": "infrastructure",
   "maturity": "emerging",
   "qualityScore": 0.7,
   "subClassOf": [

@@ -5,23 +5,45 @@
   "public": true,
   "classIri": "urn:ngm:class:hugging-face",
   "domain": "artificial-intelligence",
-  "definition": "Hugging Face is an AI company and open-source platform that maintains the Transformers, Diffusers, and Datasets libraries as well as the Hugging Face Hub \u2014 a model and dataset repository hosting hundreds of thousands of community-contributed checkpoints spanning NLP, computer vision, audio, multimodal, and reinforcement learning tasks. The Hub provides model cards, dataset cards, and Spaces (interactive Gradio or Streamlit demos), and has become the de facto distribution platform for open-weight large language models and fine-tuned variants. Hugging Face also develops the Inference API, AutoTrain, and the PEFT library for parameter-efficient fine-tuning methods.",
+  "definition": "Hugging Face is an AI company and open-source platform that operates the Transformers, Diffusers, Datasets, PEFT, and TRL libraries alongside the Hugging Face Hub \u2014 a centralised model and dataset repository hosting hundreds of thousands of community-contributed checkpoints spanning natural language processing, computer vision, audio, multimodal, and reinforcement learning domains. The Hub standardises model cards, dataset cards, and Spaces (interactive Gradio or Streamlit demos), and has become the de facto distribution platform for open-weight large language models and their fine-tuned derivatives. Through its inference API, AutoTrain service, and parameter-efficient fine-tuning tooling, Hugging Face significantly lowers the barrier to deploying and adapting state-of-the-art machine learning models for research and production use.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-infrastructure",
       "label": "AI Infrastructure"
-    },
-    {
-      "id": "urn:ngm:class:open-source-ai",
-      "label": "Open-Source AI"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:transformers-library",
+        "label": "Transformers Library"
+      },
+      {
+        "id": "urn:ngm:class:diffusers-library",
+        "label": "Diffusers Library"
+      },
+      {
+        "id": "urn:ngm:class:hugging-face-hub",
+        "label": "Hugging Face Hub"
+      },
+      {
+        "id": "urn:ngm:class:parameter-efficient-fine-tuning",
+        "label": "Parameter-Efficient Fine-Tuning"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:gpu-computing",
+        "label": "GPU Computing"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:fine-tuning",
@@ -30,29 +52,88 @@
       {
         "id": "urn:ngm:class:natural-language-processing",
         "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:model-sharing",
+        "label": "Model Sharing"
+      },
+      {
+        "id": "urn:ngm:class:open-source-ai",
+        "label": "Open-Source AI"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:openai-api",
+        "label": "OpenAI API"
+      },
+      {
+        "id": "urn:ngm:class:google-vertex-ai",
+        "label": "Google Vertex AI"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:cloud-infrastructure",
+        "label": "Cloud Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:edge-ai",
+        "label": "Edge AI"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "id": "urn:ngm:class:pytorch",
+        "label": "PyTorch"
+      },
+      {
+        "id": "urn:ngm:class:model-card",
+        "label": "Model Card"
+      }
+    ],
     "supports": [
       {
         "id": "urn:ngm:class:large-language-models",
         "label": "Large Language Models"
       },
       {
-        "id": "urn:ngm:class:multimodal-ai-architecture-ai",
+        "id": "urn:ngm:class:multimodal-ai",
         "label": "Multimodal AI"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
+      },
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
       }
     ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:parameter-efficient-fine-tuning",
-        "label": "Parameter-Efficient Fine-Tuning"
+        "id": "urn:ngm:class:bert",
+        "label": "BERT"
+      },
+      {
+        "id": "urn:ngm:class:low-rank-adaptation",
+        "label": "Low-Rank Adaptation"
+      },
+      {
+        "id": "urn:ngm:class:model-hub",
+        "label": "Model Hub"
+      },
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
       }
     ]
   },

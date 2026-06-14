@@ -4,17 +4,17 @@
   "slug": "sparql",
   "public": true,
   "classIri": "urn:ngm:class:sparql",
-  "domain": "infrastructure",
-  "definition": "SPARQL (SPARQL Protocol and RDF Query Language) is a W3C Recommendation defining a query language, update language, and HTTP-based protocol for retrieving and modifying data stored in RDF graph databases and Linked Data endpoints. SPARQL 1.1 (2013) introduced federated queries across multiple SPARQL endpoints via the SERVICE keyword, property paths for navigating arbitrary-length chains of RDF triples, aggregation functions, and the SPARQL Update (SPARUL) sublanguage for graph mutation. It is the standard access layer for the Semantic Web and knowledge graph ecosystems, analogous to SQL for relational databases.",
+  "domain": "data",
+  "definition": "SPARQL (SPARQL Protocol and RDF Query Language) is a W3C Recommendation defining a query language, update language, and HTTP-based protocol for retrieving and modifying data stored in RDF graph databases and Linked Data endpoints. SPARQL 1.1 (2013) introduced federated queries across multiple remote endpoints via the SERVICE keyword, property paths for graph traversal, aggregation functions, and the SPARQL Update (SPARUL) sublanguage for graph mutation. It serves as the standard access layer for the Semantic Web and knowledge graph ecosystems, occupying a role analogous to SQL for relational databases. The four primary query forms \u2014 SELECT, CONSTRUCT, ASK, and DESCRIBE \u2014 provide flexible mechanisms for retrieving variable bindings, materialising derived graphs, testing graph patterns, and describing resources.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:infra-data-management",
-      "label": "Infra Data Management"
+      "id": "urn:ngm:class:query-language",
+      "label": "Query Language"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "mature",
   "relationships": {
     "hasPart": [],
     "requires": [
@@ -25,6 +25,10 @@
       {
         "id": "urn:ngm:class:graph-database",
         "label": "Graph Database"
+      },
+      {
+        "id": "urn:ngm:class:sparql-endpoint",
+        "label": "SPARQL Endpoint"
       }
     ],
     "enables": [
@@ -35,15 +39,89 @@
       {
         "id": "urn:ngm:class:linked-data",
         "label": "Linked Data"
+      },
+      {
+        "id": "urn:ngm:class:federated-query",
+        "label": "Federated Query"
+      },
+      {
+        "id": "urn:ngm:class:ontology-reasoning",
+        "label": "Ontology Reasoning"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
+      },
+      {
+        "id": "urn:ngm:class:open-world-assumption",
+        "label": "Open World Assumption"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:sql",
+        "label": "SQL"
+      },
+      {
+        "id": "urn:ngm:class:graphql",
+        "label": "GraphQL"
+      },
+      {
+        "id": "urn:ngm:class:cypher-query-language",
+        "label": "Cypher Query Language"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:knowledge-graph-embedding",
+        "label": "Knowledge Graph Embedding"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:triple-pattern",
+        "label": "Triple Pattern"
+      },
+      {
+        "id": "urn:ngm:class:graph-pattern-matching",
+        "label": "Graph Pattern Matching"
+      },
+      {
+        "id": "urn:ngm:class:property-path",
+        "label": "Property Path"
+      },
+      {
+        "id": "urn:ngm:class:http-protocol",
+        "label": "HTTP Protocol"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:owl-ontology",
+        "label": "OWL Ontology"
+      },
+      {
+        "id": "urn:ngm:class:shacl",
+        "label": "SHACL"
+      },
+      {
+        "id": "urn:ngm:class:wikidata",
+        "label": "Wikidata"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:w3c",
+        "label": "W3C"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -51,12 +129,16 @@
         "label": "Knowledge Graph"
       },
       {
-        "id": "urn:ngm:class:semantic-web-linked-data-standard-standards",
-        "label": "Semantic Web Standards"
+        "id": "urn:ngm:class:turtle-syntax",
+        "label": "Turtle Syntax"
       },
       {
-        "id": "urn:ngm:class:sparql-endpoint",
-        "label": "SPARQL Endpoint"
+        "id": "urn:ngm:class:json-ld",
+        "label": "JSON-LD"
+      },
+      {
+        "id": "urn:ngm:class:apache-jena",
+        "label": "Apache Jena"
       }
     ]
   },

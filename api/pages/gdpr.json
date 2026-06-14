@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:gdpr",
   "domain": "governance",
-  "definition": "The General Data Protection Regulation (GDPR) is a comprehensive EU legal framework governing the collection, processing, and storage of personal data of individuals within the European Union and European Economic Area. It establishes rights for data subjects and obligations for organisations handling personal data, enforced by national supervisory authorities with significant financial penalties for non-compliance. GDPR represents the most influential data protection law globally, shaping privacy practice and inspiring similar legislation worldwide.",
+  "definition": "The General Data Protection Regulation (GDPR) is a comprehensive EU legal framework (Regulation 2016/679) that governs the collection, processing, storage, and transfer of personal data belonging to individuals in the European Union and European Economic Area. It establishes six lawful bases for processing, grants data subjects extensive individual rights, and imposes organisational obligations including Data Protection Impact Assessments and appointment of Data Protection Officers. Enforced by national supervisory authorities coordinated by the European Data Protection Board, GDPR carries penalties of up to \u20ac20 million or 4% of global annual turnover, making it the most consequential data protection law globally and a template for privacy legislation worldwide.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:data-protection-regulation",
@@ -13,10 +13,27 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
-  "maturity": "established",
+  "qualityScore": 0.76,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:right-to-erasure",
+        "label": "Right to Erasure"
+      },
+      {
+        "id": "urn:ngm:class:data-portability",
+        "label": "Data Portability"
+      },
+      {
+        "id": "urn:ngm:class:data-protection-impact-assessment",
+        "label": "Data Protection Impact Assessment"
+      },
+      {
+        "id": "urn:ngm:class:lawful-basis-for-processing",
+        "label": "Lawful Basis for Processing"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:data-minimisation",
@@ -29,6 +46,14 @@
       {
         "id": "urn:ngm:class:audit-trail",
         "label": "Audit Trail"
+      },
+      {
+        "id": "urn:ngm:class:consent-management",
+        "label": "Consent Management"
+      },
+      {
+        "id": "urn:ngm:class:data-protection-officer",
+        "label": "Data Protection Officer"
       }
     ],
     "enables": [
@@ -43,30 +68,23 @@
       {
         "id": "urn:ngm:class:accountability",
         "label": "Accountability"
-      }
-    ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:ai-regulation",
-        "label": "AI Regulation"
-      }
-    ],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
-      {
-        "id": "urn:ngm:class:gdpr-compliance",
-        "label": "GDPR Compliance"
       },
       {
-        "id": "urn:ngm:class:data-governance",
-        "label": "Data Governance"
+        "id": "urn:ngm:class:data-subject-rights",
+        "label": "Data Subject Rights"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:supervisory-authority",
+        "label": "Supervisory Authority"
       },
+      {
+        "id": "urn:ngm:class:european-data-protection-board",
+        "label": "European Data Protection Board"
+      }
+    ],
+    "implements": [
       {
         "id": "urn:ngm:class:privacy",
         "label": "Privacy"
@@ -74,6 +92,83 @@
       {
         "id": "urn:ngm:class:data-protection",
         "label": "Data Protection"
+      },
+      {
+        "id": "urn:ngm:class:information-security",
+        "label": "Information Security"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:ccpa",
+        "label": "CCPA"
+      },
+      {
+        "id": "urn:ngm:class:hipaa",
+        "label": "HIPAA"
+      },
+      {
+        "id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-act",
+        "label": "AI Act"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:differential-privacy",
+        "label": "Differential Privacy"
+      }
+    ],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:trust",
+        "label": "Trust"
+      },
+      {
+        "id": "urn:ngm:class:digital-rights",
+        "label": "Digital Rights"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:european-parliament",
+        "label": "European Parliament"
+      },
+      {
+        "id": "urn:ngm:class:iso-27701",
+        "label": "ISO 27701"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:eu-digital-single-market",
+        "label": "EU Digital Single Market"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:gdpr-compliance",
+        "label": "GDPR Compliance"
+      },
+      {
+        "id": "urn:ngm:class:data-breach-notification",
+        "label": "Data Breach Notification"
+      },
+      {
+        "id": "urn:ngm:class:cross-border-data-transfer",
+        "label": "Cross-Border Data Transfer"
       }
     ]
   },

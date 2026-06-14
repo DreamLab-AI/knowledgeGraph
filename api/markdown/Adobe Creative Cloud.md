@@ -21,7 +21,7 @@ public:: true
   "@type": "Class",
   "label": "Adobe Creative Cloud",
   "definition": "Adobe Creative Cloud is a subscription-based software platform operated by Adobe Inc. that delivers a suite of professional creative applications—including Photoshop, Illustrator, Premiere Pro, After Effects, and InDesign—alongside cloud storage, collaboration services, and asset management infrastructure. Launched in 2013 as the successor to Adobe Creative Suite, it transitioned the industry from perpetual licence software to a continuous-update, cloud-connected model. The platform is the dominant industry standard for graphic design, photography, video production, motion graphics, and digital publishing workflows.",
-  "domain": "media",
+  "domain": "metaverse",
   "maturity": "mature",
   "subClassOf": [{"@id": "urn:ngm:class:creative-tools", "label": "Creative Tools"}],
   "relations": {

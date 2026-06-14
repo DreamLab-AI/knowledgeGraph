@@ -21,7 +21,7 @@ public:: true
   "@type": "Class",
   "label": "Video Encoding",
   "definition": "Video encoding is the process of compressing raw or lightly-compressed video frames into a deliverable bitstream using a video codec, encompassing decisions about encoding parameters (resolution, frame rate, bitrate mode, keyframe interval, codec profile and level), rate control algorithms, and hardware or software encoder selection to balance output quality, file size, and encoding speed for a given delivery target.",
-  "domain": "media",
+  "domain": "metaverse",
   "maturity": "mature",
   "subClassOf": [{"@id": "urn:ngm:class:video-codec", "label": "Video Codec"}],
   "relations": {

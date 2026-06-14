@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:bitcoin-proof-of-work-protocol-improvement-proposals",
   "domain": "blockchain",
-  "definition": "Bitcoin Improvement Proposals (BIPs) are the formal design documents through which changes, enhancements, and new features are proposed and ratified for the Bitcoin protocol and its ecosystem. First introduced by Amir Taaki in 2011, modelled on Python's PEP process, BIPs serve as the primary coordination mechanism for a decentralised developer community lacking any central authority. Each BIP progresses through a lifecycle of draft, proposed, final, and superseded states, and must achieve rough consensus among node operators and miners to be activated. BIPs cover protocol rules, informational standards, and process definitions for the broader Bitcoin network.",
+  "definition": "Bitcoin Improvement Proposals (BIPs) are the formal design documents through which changes, enhancements, and new features are proposed and ratified for the Bitcoin protocol and its broader ecosystem. First introduced by Amir Taaki in 2011, modelled on Python's PEP and Python Enhancement Proposal process, BIPs serve as the primary coordination mechanism for a decentralised developer community that lacks any central authority. Each BIP progresses through a defined lifecycle \u2014 draft, proposed, final, and optionally superseded \u2014 and must achieve rough consensus among economic nodes, miners, and users before activation. BIPs are organised into three tracks: Standards Track (protocol-level changes requiring network-wide adoption), Informational (guidelines and best practices), and Process (procedural rules governing the BIP process itself).",
   "subClassOf": [
     {
       "id": "urn:ngm:class:blockchain-governance",
@@ -13,39 +13,68 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.74,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:bip-32",
+        "label": "BIP-32 HD Wallets"
+      },
+      {
+        "id": "urn:ngm:class:bip-141",
+        "label": "BIP-141 SegWit"
+      },
+      {
+        "id": "urn:ngm:class:bip-340",
+        "label": "BIP-340 Schnorr Signatures"
+      },
+      {
+        "id": "urn:ngm:class:bip-341",
+        "label": "BIP-341 Taproot"
+      },
+      {
+        "id": "urn:ngm:class:bip-173",
+        "label": "BIP-173 Bech32"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:rough-consensus",
+        "label": "Rough Consensus"
+      },
+      {
+        "id": "urn:ngm:class:peer-review",
+        "label": "Peer Review"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-technical-overview",
         "label": "Bitcoin Technical Overview"
       },
       {
-        "id": "urn:ngm:class:bip-340",
-        "label": "BIP-340"
+        "id": "urn:ngm:class:soft-fork",
+        "label": "Soft Fork"
       },
       {
-        "id": "urn:ngm:class:bip-341",
-        "label": "BIP-341"
-      }
-    ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [
+        "id": "urn:ngm:class:hard-fork",
+        "label": "Hard Fork"
+      },
       {
-        "id": "urn:ngm:class:blockchain-protocol",
-        "label": "Blockchain Protocol"
+        "id": "urn:ngm:class:protocol-upgrade",
+        "label": "Protocol Upgrade"
+      },
+      {
+        "id": "urn:ngm:class:schnorr-signatures",
+        "label": "Schnorr Signatures"
+      },
+      {
+        "id": "urn:ngm:class:taproot",
+        "label": "Taproot"
       }
     ],
-    "partOf": [],
-    "relatedTo": [
+    "dependsOn": [
       {
         "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-core",
         "label": "Bitcoin Core"
@@ -57,6 +86,85 @@
       {
         "id": "urn:ngm:class:consensus-rule",
         "label": "Consensus Rule"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:decentralised-governance",
+        "label": "Decentralised Governance"
+      },
+      {
+        "id": "urn:ngm:class:standards-process",
+        "label": "Standards Process"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:ethereum-improvement-proposals",
+        "label": "Ethereum Improvement Proposals"
+      },
+      {
+        "id": "urn:ngm:class:ietf-rfc",
+        "label": "IETF RFC"
+      },
+      {
+        "id": "urn:ngm:class:w3c-recommendation",
+        "label": "W3C Recommendation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:distributed-systems-governance",
+        "label": "Distributed Systems Governance"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-protocol",
+        "label": "Cryptographic Protocol"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:github",
+        "label": "GitHub"
+      },
+      {
+        "id": "urn:ngm:class:miner-signalling",
+        "label": "Miner Signalling"
+      },
+      {
+        "id": "urn:ngm:class:user-activated-soft-fork",
+        "label": "User-Activated Soft Fork"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:blockchain-protocol",
+        "label": "Blockchain Protocol"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:open-source-governance",
+        "label": "Open Source Governance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      },
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:hd-wallet",
+        "label": "HD Wallet"
+      },
+      {
+        "id": "urn:ngm:class:segregated-witness",
+        "label": "Segregated Witness"
       }
     ]
   },

@@ -4,55 +4,131 @@
   "slug": "structure-from-motion",
   "public": true,
   "classIri": "urn:ngm:class:structure-from-motion",
-  "domain": "artificial-intelligence",
-  "definition": "Structure-from-Motion (SfM) is a photogrammetric pipeline that simultaneously estimates three-dimensional scene structure and camera motion parameters from an unordered set of overlapping two-dimensional images. Feature detection and matching across images (typically using descriptors such as SIFT or ORB) establishes correspondences, which are fed into bundle adjustment to jointly optimise point-cloud coordinates and camera extrinsics and intrinsics. SfM is foundational in photogrammetry, autonomous navigation, and AR/VR asset creation, producing dense or sparse 3D reconstructions from passive imagery alone.",
+  "domain": "spatial-computing",
+  "definition": "Structure-from-Motion (SfM) is a photogrammetric pipeline that simultaneously recovers three-dimensional scene geometry and camera motion parameters from an unordered collection of overlapping two-dimensional images. Sparse feature correspondences\u2014detected via descriptors such as SIFT, ORB, or learned alternatives\u2014seed an incremental or global pose-estimation stage that triangulates a sparse point cloud. Bundle adjustment then jointly refines all camera extrinsics, intrinsics, and 3D point coordinates by minimising reprojection error across the full image set. SfM is a foundational technique in computer vision, photogrammetry, autonomous navigation, and spatial computing, serving as the upstream stage for multi-view stereo densification and neural scene representations.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique"
+      "id": "urn:ngm:class:photogrammetry",
+      "label": "Photogrammetry"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.72,
+  "maturity": "mature",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:feature-matching",
+        "label": "Feature Matching"
+      },
+      {
+        "id": "urn:ngm:class:bundle-adjustment",
+        "label": "Bundle Adjustment"
+      },
+      {
+        "id": "urn:ngm:class:camera-calibration",
+        "label": "Camera Calibration"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:point-cloud",
         "label": "Point Cloud"
       },
       {
+        "id": "urn:ngm:class:multi-view-stereo",
+        "label": "Multi-View Stereo"
+      },
+      {
         "id": "urn:ngm:class:depth-estimation",
         "label": "Depth Estimation"
+      },
+      {
+        "id": "urn:ngm:class:3d-mapping",
+        "label": "3D Mapping"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [
+    "contrastsWith": [
       {
-        "id": "urn:ngm:class:computer-vision",
-        "label": "Computer Vision"
-      }
-    ],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
-      {
-        "id": "urn:ngm:class:photogrammetry",
-        "label": "Photogrammetry"
+        "id": "urn:ngm:class:slam",
+        "label": "SLAM"
       },
       {
         "id": "urn:ngm:class:visual-odometry",
         "label": "Visual Odometry"
       },
       {
-        "id": "urn:ngm:class:slam",
-        "label": "SLAM"
+        "id": "urn:ngm:class:lidar-scanning",
+        "label": "LiDAR Scanning"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-vehicles",
+        "label": "Autonomous Vehicles"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:feature-detection",
+        "label": "Feature Detection"
+      },
+      {
+        "id": "urn:ngm:class:epipolar-geometry",
+        "label": "Epipolar Geometry"
+      },
+      {
+        "id": "urn:ngm:class:ransac",
+        "label": "RANSAC"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:photogrammetry",
+        "label": "Photogrammetry"
+      },
+      {
+        "id": "urn:ngm:class:3d-reconstruction",
+        "label": "3D Reconstruction"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:neural-radiance-fields",
+        "label": "Neural Radiance Fields"
+      },
+      {
+        "id": "urn:ngm:class:gaussian-splatting",
+        "label": "Gaussian Splatting"
+      },
+      {
+        "id": "urn:ngm:class:scene-reconstruction",
+        "label": "Scene Reconstruction"
+      },
+      {
+        "id": "urn:ngm:class:stereo-vision",
+        "label": "Stereo Vision"
       }
     ]
   },

@@ -4,30 +4,128 @@
   "slug": "university-of-cambridge",
   "public": true,
   "classIri": "urn:ngm:class:university-of-cambridge",
-  "domain": "university-of-cambridge",
-  "definition": "The University of Cambridge is a collegiate public research university in Cambridge, England, founded in 1209 and one of the oldest universities in the world. Organised as a federation of constituent colleges and academic departments, it is a member of the Russell Group and consistently ranks among the leading universities globally. It has a distinguished record in mathematics, physics, computing and the life sciences, and its Computer Laboratory and mathematics tradition have shaped modern computer science. The university is associated with a very large number of Nobel laureates.",
+  "domain": "infrastructure",
+  "definition": "The University of Cambridge is a collegiate public research university in Cambridge, England, founded in 1209, making it one of the oldest continuously operating universities in the world and the second-oldest in the English-speaking world. Organised as a federation of 31 autonomous colleges and over 150 academic departments grouped into six schools, it is a founding member of the Russell Group and a member of the Coimbra Group and League of European Research Universities. Cambridge has produced foundational contributions to computing, mathematics, artificial intelligence, natural language processing, and computer vision through institutions such as the Computer Laboratory, the Machine Intelligence Laboratory, and the Cavendish Laboratory. Its Cambridge Cluster (Silicon Fen) represents one of Europe's most significant technology and deep-tech startup ecosystems.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:owl-thing",
-      "label": "owl:Thing"
+      "id": "urn:ngm:class:research-institution",
+      "label": "Research Institution"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
-  "maturity": "established",
+  "qualityScore": 0.75,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:computer-laboratory",
+        "label": "Computer Laboratory"
+      },
+      {
+        "id": "urn:ngm:class:cavendish-laboratory",
+        "label": "Cavendish Laboratory"
+      },
+      {
+        "id": "urn:ngm:class:machine-intelligence-laboratory",
+        "label": "Machine Intelligence Laboratory"
+      },
+      {
+        "id": "urn:ngm:class:cambridge-centre-for-ai-in-medicine",
+        "label": "Cambridge Centre for AI in Medicine"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:quantum-computing",
+        "label": "Quantum Computing"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
+    ],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:open-source-software",
+        "label": "Open Source Software"
+      },
+      {
+        "id": "urn:ngm:class:technology-transfer",
+        "label": "Technology Transfer"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      }
+    ],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:russell-group",
+        "label": "Russell Group"
+      },
+      {
+        "id": "urn:ngm:class:cambridge-cluster",
+        "label": "Cambridge Cluster"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:imperial-college-london",
+        "label": "Imperial College London"
+      },
+      {
+        "id": "urn:ngm:class:university-of-edinburgh",
+        "label": "University of Edinburgh"
+      },
+      {
+        "id": "urn:ngm:class:university-of-manchester",
+        "label": "University of Manchester"
+      },
+      {
+        "id": "urn:ngm:class:oxford-university",
+        "label": "University of Oxford"
+      },
+      {
+        "id": "urn:ngm:class:mit",
+        "label": "MIT"
+      },
+      {
+        "id": "urn:ngm:class:alan-turing-institute",
+        "label": "Alan Turing Institute"
+      }
+    ]
   },
   "wikilinks": [
     {

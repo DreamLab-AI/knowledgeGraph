@@ -50,7 +50,7 @@ public:: true
   "@id": "urn:ngm:class:privacy-preserving-ai",
   "@type": "Class",
   "label": "Privacy-Preserving AI",
-  "definition": "Privacy-preserving AI is the application of privacy-preserving techniques to machine learning so that models can be trained and used without exposing the underlying training or input data.",
+  "definition": "Privacy-Preserving AI is a family of machine-learning techniques and system architectures that enable models to be trained, validated, and deployed without exposing raw personal or sensitive data to any single party. Core mechanisms include federated learning, differential privacy, homomorphic encryption, and secure multi-party computation, each offering distinct trade-offs between privacy guarantees, computational cost, and model utility. The discipline addresses regulatory requirements (GDPR, HIPAA) as well as ethical imperatives around data minimisation and individual autonomy. By decoupling learning from data centralisation, Privacy-Preserving AI enables collaborative intelligence across organisational and jurisdictional boundaries that would otherwise be closed to data sharing.",
   "domain": "machine-learning",
   "maturity": "established",
   "qualityScore": 0.7,
@@ -61,22 +61,154 @@ public:: true
     }
   ],
   "relations": {
-    "requires": [
+    "hasPart": [
       {
-        "@id": "urn:ngm:class:privacy-preserving",
-        "label": "Privacy-Preserving"
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
       },
       {
-        "@id": "urn:ngm:class:machine-learning-discipline",
+        "@id": "urn:ngm:class:differential-privacy",
+        "label": "Differential Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:homomorphic-encryption",
+        "label": "Homomorphic Encryption"
+      },
+      {
+        "@id": "urn:ngm:class:secure-multi-party-computation",
+        "label": "Secure Multi-Party Computation"
+      },
+      {
+        "@id": "urn:ngm:class:trusted-execution-environment",
+        "label": "Trusted Execution Environment"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:collaborative-learning",
+        "label": "Collaborative Learning"
+      },
+      {
+        "@id": "urn:ngm:class:data-minimisation",
+        "label": "Data Minimisation"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      },
+      {
+        "@id": "urn:ngm:class:noise-mechanisms",
+        "label": "Noise Mechanisms"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:gradient-aggregation",
+        "label": "Gradient Aggregation"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "@id": "urn:ngm:class:trustworthy-ai",
+        "label": "Trustworthy AI"
+      },
+      {
+        "@id": "urn:ngm:class:ethical-ai",
+        "label": "Ethical AI"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:centralised-learning",
+        "label": "Centralised Learning"
+      },
+      {
+        "@id": "urn:ngm:class:data-pooling",
+        "label": "Data Pooling"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:nist-privacy-framework",
+        "label": "NIST Privacy Framework"
+      },
+      {
+        "@id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:healthcare-ai",
+        "label": "Healthcare AI"
+      },
+      {
+        "@id": "urn:ngm:class:financial-ai",
+        "label": "Financial AI"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:model-inversion-attack",
+        "label": "Model Inversion Attack"
+      },
+      {
+        "@id": "urn:ngm:class:membership-inference-attack",
+        "label": "Membership Inference Attack"
+      },
+      {
+        "@id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:privacy-aware-machine-learning",
+      "label": "Privacy-Aware Machine Learning"
+    },
+    {
+      "@id": "urn:ngm:class:private-ai",
+      "label": "Private AI"
+    }
+  ],
+  "quality": 0.74,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-13T00:00:00Z",
+    "inferenceRule": "ManualEnrichment"
   }
 }
 ```
@@ -121,23 +253,97 @@ public:: true
 }
 ```
 
-
 - ### Definition
-  - Privacy-preserving AI is the application of privacy-preserving techniques to machine learning so that models can be trained and used without exposing the underlying training or input data.
+  - Privacy-Preserving AI is a family of machine-learning techniques and system architectures that enable [[Machine Learning]] models to be trained, validated, and deployed without exposing raw personal or sensitive data to any single party. It draws on [[Federated Learning]], [[Differential Privacy]], [[Homomorphic Encryption]], and [[Secure Multi-Party Computation]] to enforce privacy guarantees at the mathematical and systems level, rather than relying solely on organisational policy. The discipline bridges [[Cryptography]] and statistical learning theory to satisfy both technical privacy definitions and regulatory mandates such as [[GDPR]] and [[HIPAA]], whilst maintaining model utility sufficient for production deployment.
 
-- ### Semantic Classification
-  - owl-class:: machine-learning:PrivacyPreservingAI
-  - owl-role:: Class
+- ### Overview
+  - Privacy-Preserving AI emerged from the recognition that centralising training data creates systemic risks: re-identification attacks, regulatory liability, and loss of participant trust. Traditional approaches require raw data to reside in one place; privacy-preserving methods relocate or obfuscate that requirement.
+  - The field draws on two complementary threads:
+    - **Cryptographic approaches** — [[Homomorphic Encryption]], [[Secure Multi-Party Computation]], [[Zero-Knowledge Proof]], and [[Trusted Execution Environment]] allow computation on encrypted or isolated data.
+    - **Statistical approaches** — [[Differential Privacy]] injects calibrated noise to bound the information leaked about any individual record; [[k-Anonymity]] and its descendants offer weaker but cheaper guarantees at the data layer.
+  - The synthesis of cryptographic and statistical approaches in a single system is an active research area, with [[Federated Learning]] serving as the dominant practical framework that combines both threads.
+  - Motivation spans three dimensions:
+    - **Regulatory** — GDPR Article 25 (data protection by design), HIPAA, China's PIPL, and sector-specific rules mandate data minimisation.
+    - **Commercial** — organisations can collaborate on model training without sharing proprietary datasets, enabling cross-silo learning.
+    - **Ethical** — reduces risk of surveillance, discriminatory profiling, and unauthorised secondary use of personal data.
+
+- ### Key Mechanisms
+  - **[[Federated Learning]]**
+    - Trains a global model by aggregating locally computed gradient updates from distributed participants (devices or institutions) without transmitting raw data to a central server.
+    - Variants: cross-device FL (millions of mobile phones), cross-silo FL (tens of hospitals or banks), and vertical FL (parties holding different feature sets for the same individuals).
+    - Aggregation protocols such as FedAvg, FedProx, and secure aggregation determine how local updates are combined.
+  - **[[Differential Privacy]]**
+    - Provides a formal mathematical guarantee (ε, δ)-DP: the output of any computation changes negligibly when any single individual's record is added or removed.
+    - Achieved by adding calibrated Gaussian or Laplacian noise to gradients ([[DP-SGD]]) or to query outputs.
+    - The privacy budget ε quantifies the privacy–utility trade-off; smaller ε means stronger privacy but lower model accuracy.
+  - **[[Homomorphic Encryption]]**
+    - Enables arithmetic operations on ciphertext such that decryption of the result matches the operation applied to the plaintext.
+    - Fully Homomorphic Encryption (FHE) is general but computationally expensive; Partially Homomorphic Encryption (PHE) and Levelled HE offer practical performance for specific operations.
+    - Used for encrypted inference (e.g. a cloud model predicts on encrypted patient data without seeing the plaintext).
+  - **[[Secure Multi-Party Computation]]**
+    - Allows multiple parties to jointly compute a function over their private inputs without revealing those inputs to each other.
+    - Secret sharing schemes (Shamir, additive) and garbled circuits are core primitives.
+    - Enables privacy-preserving aggregation of model gradients without a trusted aggregator.
+  - **[[Trusted Execution Environment]]**
+    - Hardware enclaves (Intel SGX, ARM TrustZone) isolate computation from the operating system and hypervisor.
+    - Provides confidential computing guarantees even against a compromised cloud provider.
+    - Often combined with FL to provide a trusted aggregation server.
+  - **[[Synthetic Data Generation]]**
+    - Generative models (GANs, VAEs, diffusion models) produce artificial datasets statistically similar to real data but without containing real records.
+    - Can satisfy differential privacy when the generative model itself is trained with DP-SGD.
+  - **[[Knowledge Distillation]]** (privacy angle)
+    - A teacher model trained on sensitive data transfers knowledge to a student model trained on public data, limiting the student's exposure to private information (PATE framework).
+
+- ### Applications and Use Cases
+  - **Healthcare**
+    - Hospitals in different jurisdictions jointly train diagnostic models on patient imaging or electronic health records without pooling data across borders — satisfying HIPAA and GDPR simultaneously.
+    - [[Healthcare AI]] applications: tumour detection, drug interaction prediction, rare disease phenotyping.
+  - **Financial Services**
+    - Banks and insurers collaborate on fraud detection and credit risk models across institution silos without sharing customer transaction histories.
+    - [[Financial AI]] use cases: anti-money-laundering networks, cross-bank credit scoring.
+  - **Mobile and [[Edge Computing]]**
+    - On-device FL for keyboard prediction, voice recognition, and health monitoring; Google Gboard and Apple's on-device intelligence use FL with DP at scale.
+  - **Public Sector and Research**
+    - National statistics offices release DP-protected census microdata; research consortia (e.g. medical imaging benchmarks) use FL to compare models without data movement.
+  - **Advertising and Recommendation**
+    - [[Federated Recommendation Systems]] train collaborative filters across user devices to avoid centralising browsing histories.
+
+- ### Threat Model and Attack Surface
+  - Privacy-Preserving AI must defend against:
+    - **[[Model Inversion Attack]]** — an adversary with white-box access reconstructs training samples from model weights or outputs.
+    - **[[Membership Inference Attack]]** — determines whether a specific record was in the training set.
+    - **[[Gradient Leakage]]** — in FL, raw gradients can leak input data (Deep Leakage from Gradients, DLG attack); secure aggregation and DP mitigate this.
+    - **[[Poisoning Attack]]** — malicious participants inject backdoors into the global model via corrupted local updates; robustness mechanisms (Byzantine-robust aggregation) are needed.
+  - Proper privacy analysis requires specifying the threat model: honest-but-curious vs. malicious aggregator, local vs. central DP, number of colluding parties.
 
 - ### Relationships
-  - is-subclass-of:: [[Privacy-Preserving]]
-  - bridges-to:: [[Federated Learning]], [[AI Governance]]
-  - requires:: [[Privacy-Preserving]], [[Machine Learning Discipline]]
+  - hasPart:: [[Federated Learning]], [[Differential Privacy]], [[Homomorphic Encryption]], [[Secure Multi-Party Computation]], [[Trusted Execution Environment]]
+  - requires:: [[Machine Learning]], [[Cryptography]], [[Data Governance]]
+  - enables:: [[Collaborative Learning]], [[Data Minimisation]], [[Regulatory Compliance]]
+  - dependsOn:: [[Distributed Computing]], [[Noise Mechanisms]]
+  - uses:: [[Gradient Aggregation]], [[Zero-Knowledge Proof]]
+  - supports:: [[AI Governance]], [[Trustworthy AI]], [[Ethical AI]]
+  - contrastsWith:: [[Centralised Learning]], [[Data Pooling]]
+  - standardizedBy:: [[NIST Privacy Framework]], [[GDPR]]
+  - bridgesTo:: [[Healthcare AI]], [[Financial AI]], [[Edge Computing]]
+  - relatedTo:: [[Model Inversion Attack]], [[Membership Inference Attack]], [[Responsible AI]]
 
-- ### Content
-  - Privacy-preserving AI combines methods such as federated learning, which trains models across distributed data without centralising it, differential privacy, which limits memorisation of individual records, and encrypted computation for inference.
-  - It is applied where data cannot be pooled freely, for example across hospitals or financial institutions, allowing collaborative model training while respecting confidentiality and data protection rules.
+- ### Standards and Regulatory Context
+  - **[[GDPR]]** (EU General Data Protection Regulation) — Articles 5, 25, and 89 mandate data minimisation, privacy by design, and special protections for research; Privacy-Preserving AI is a recognised technical means of compliance.
+  - **HIPAA** — US health data regulation; federated and encrypted learning enables cross-institutional medical AI without PHI transfer.
+  - **NIST Privacy Framework** — provides a voluntary governance structure; Privacy-Preserving AI maps to the Protect and Control functions.
+  - **ISO/IEC 27701** — privacy information management; intersects with [[Data Governance]] requirements for AI systems.
+  - **OpenMined PySyft** — open-source library implementing FL, DP, and SMPC; a de facto community standard for research implementations.
+  - **TensorFlow Federated / FATE / Flower** — prominent FL frameworks used in industry and research, establishing practical API conventions.
+  - **IEEE P3652.1 (FLSandbox)** — standards work on federated learning architecture and interfaces.
+
+- ### Key Research Milestones
+  - Dwork et al. (2006) — formal definition of Differential Privacy.
+  - McMahan et al. (2017) — Federated Averaging (FedAvg), the foundational FL algorithm from Google.
+  - Shokri & Shmatikoff (2015) — first demonstration of privacy-preserving deep learning via gradient perturbation.
+  - Papernot et al. (2017) — PATE (Private Aggregation of Teachers' Ensembles), enabling DP knowledge distillation.
+  - Bonawitz et al. (2019) — practical secure aggregation for FL at scale.
 
 - ### Provenance
-  - sources::
-  - migration-date:: 2026-05-29T00:00:00Z
+  - sources:: Dwork & Roth "The Algorithmic Foundations of Differential Privacy" (2014); McMahan et al. "Communication-Efficient Learning of Deep Networks from Decentralized Data" (2017); Yang et al. "Federated Machine Learning: Concept and Applications" (2019); Gentry "A Fully Homomorphic Encryption Scheme" (2009)
+  - updated:: 2026-06-13

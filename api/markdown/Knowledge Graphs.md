@@ -55,7 +55,7 @@ public:: true
   "@type": "Class",
   "label": "Knowledge Graphs",
   "definition": "Structured representations of knowledge as entities and the relationships between them, typically expressed as a graph of nodes and labelled edges to support querying and inference.",
-  "domain": "general",
+  "domain": "data",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

@@ -51,7 +51,7 @@ public:: true
   "@type": "Class",
   "label": "Gaussian Distribution",
   "definition": "A continuous probability distribution, also called the normal distribution, characterised by a symmetric bell-shaped density defined by its mean and variance.",
-  "domain": "mathematics",
+  "domain": "machine-learning",
   "maturity": "mature",
   "qualityScore": 0.7,
   "subClassOf": [

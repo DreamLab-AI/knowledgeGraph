@@ -4,51 +4,151 @@
   "slug": "ed25519",
   "public": true,
   "classIri": "urn:ngm:class:ed25519",
-  "domain": "blockchain",
-  "definition": "Ed25519 is a high-performance elliptic-curve digital signature scheme instantiated on the Twisted Edwards curve over the prime field GF(2^255-19), offering approximately 128 bits of security with deterministic signing and compact 64-byte signatures. Designed by Bernstein et al., it is engineered to resist side-channel attacks through constant-time implementation properties and avoids the weak-nonce vulnerabilities that affect ECDSA. Ed25519 is standardised in RFC 8032 and is widely deployed across blockchain networks, SSH authentication (OpenSSH), and decentralised identity systems.",
+  "domain": "security",
+  "definition": "Ed25519 is a high-performance elliptic-curve digital signature scheme instantiated on the Twisted Edwards curve over the prime field GF(2^255-19), offering approximately 128 bits of security with deterministic signing and compact 64-byte signatures. Designed by Bernstein, Duif, Lange, Schwabe, and Yang, it is engineered to resist side-channel attacks through constant-time implementation properties and eliminates the weak-nonce vulnerabilities that affect ECDSA. Ed25519 is standardised in RFC 8032 and FIPS 186-5, and is widely deployed across blockchain networks, SSH authentication, TLS handshakes, and decentralised identity systems.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:bc-cryptographic-primitive",
-      "label": "Cryptographic Primitive"
+      "id": "urn:ngm:class:digital-signature",
+      "label": "Digital Signature"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.73,
+  "maturity": "mature",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [
+    "requires": [
       {
-        "id": "urn:ngm:class:cryptographic-signature",
-        "label": "Cryptographic Signature"
-      }
-    ],
-    "dependsOn": [],
-    "implements": [
-      {
-        "id": "urn:ngm:class:digital-signature",
-        "label": "Digital Signature"
+        "id": "urn:ngm:class:private-key",
+        "label": "Private Key"
       },
       {
-        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
-        "label": "Public-Key Cryptography"
+        "id": "urn:ngm:class:public-key",
+        "label": "Public Key"
+      },
+      {
+        "id": "urn:ngm:class:sha-512",
+        "label": "SHA-512"
       }
     ],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
+    "enables": [
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "id": "urn:ngm:class:non-repudiation",
+        "label": "Non-Repudiation"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:random-number-generation",
+        "label": "Random Number Generation"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public-Key Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:schnorr-signature",
+        "label": "Schnorr Signature"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:ecdsa",
+        "label": "ECDSA"
+      },
+      {
+        "id": "urn:ngm:class:rsa",
+        "label": "RSA"
+      }
+    ],
+    "bridgesTo": [
       {
         "id": "urn:ngm:class:blockchain",
         "label": "Blockchain"
       },
       {
-        "id": "urn:ngm:class:private-key",
-        "label": "Private Key"
+        "id": "urn:ngm:class:nostr-protocol",
+        "label": "Nostr Protocol"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-credential",
+        "label": "Verifiable Credential"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:deterministic-signing",
+        "label": "Deterministic Signing"
+      },
+      {
+        "id": "urn:ngm:class:constant-time-algorithm",
+        "label": "Constant-Time Algorithm"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-credential",
+        "label": "Verifiable Credential"
+      },
+      {
+        "id": "urn:ngm:class:secure-shell",
+        "label": "Secure Shell"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:rfc-8032",
+        "label": "RFC 8032"
+      },
+      {
+        "id": "urn:ngm:class:fips-186-5",
+        "label": "FIPS 186-5"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:curve25519",
+        "label": "Curve25519"
+      },
+      {
+        "id": "urn:ngm:class:twisted-edwards-curve",
+        "label": "Twisted Edwards Curve"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:x25519",
+        "label": "X25519"
+      },
+      {
+        "id": "urn:ngm:class:ed448",
+        "label": "Ed448"
+      },
+      {
+        "id": "urn:ngm:class:post-quantum-cryptography",
+        "label": "Post-Quantum Cryptography"
       }
     ]
   },

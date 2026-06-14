@@ -5,18 +5,39 @@
   "public": true,
   "classIri": "urn:ngm:class:industrial-automation",
   "domain": "robotics",
-  "definition": "Industrial automation is the application of control systems\u2014including programmable logic controllers (PLCs), distributed control systems (DCS), and robotic manipulators\u2014along with information technologies to operate industrial processes and machinery with minimal or no human intervention. It spans discrete manufacturing (assembly lines, packaging, welding) and process industries (chemical plants, oil refineries, power generation), increasing throughput, consistency, and safety by removing humans from hazardous environments. Industrial automation integrates mechanical, electrical, and software engineering disciplines and is increasingly augmented by machine vision, collaborative robots, and AI-driven process optimisation.",
+  "definition": "Industrial automation is the systematic application of control technologies\u2014including programmable logic controllers (PLCs), distributed control systems (DCS), supervisory control and data acquisition (SCADA), and robotic manipulators\u2014together with information technologies to operate industrial processes and machinery with minimal or no human intervention. It encompasses both discrete manufacturing (assembly lines, packaging, welding) and continuous process industries (chemical plants, oil refineries, power generation), delivering gains in throughput, consistency, quality, and safety by removing workers from hazardous or repetitive environments. The discipline integrates mechanical, electrical, software, and network engineering and is increasingly augmented by machine vision, collaborative robots (cobots), edge computing, and AI-driven process optimisation. Modern industrial automation converges with the Industrial Internet of Things (IIoT), digital twin modelling, and cyber-physical systems to enable adaptive, closed-loop manufacturing at scale.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:robo-robot-type",
-      "label": "Robot Type"
+      "id": "urn:ngm:class:cyber-physical-systems",
+      "label": "Cyber-Physical Systems"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:programmable-logic-controller",
+        "label": "Programmable Logic Controller"
+      },
+      {
+        "id": "urn:ngm:class:distributed-control-system",
+        "label": "Distributed Control System"
+      },
+      {
+        "id": "urn:ngm:class:scada",
+        "label": "SCADA"
+      },
+      {
+        "id": "urn:ngm:class:industrial-robot",
+        "label": "Industrial Robot"
+      },
+      {
+        "id": "urn:ngm:class:machine-vision",
+        "label": "Machine Vision"
+      }
+    ],
     "requires": [],
     "enables": [
       {
@@ -26,12 +47,43 @@
       {
         "id": "urn:ngm:class:predictive-maintenance",
         "label": "Predictive Maintenance"
+      },
+      {
+        "id": "urn:ngm:class:mass-production",
+        "label": "Mass Production"
+      },
+      {
+        "id": "urn:ngm:class:lights-out-manufacturing",
+        "label": "Lights-Out Manufacturing"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:real-time-operating-system",
+        "label": "Real-Time Operating System"
+      },
+      {
+        "id": "urn:ngm:class:industrial-ethernet",
+        "label": "Industrial Ethernet"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:manual-manufacturing",
+        "label": "Manual Manufacturing"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:control-system",
@@ -40,10 +92,35 @@
       {
         "id": "urn:ngm:class:actuator",
         "label": "Actuator"
+      },
+      {
+        "id": "urn:ngm:class:sensor",
+        "label": "Sensor"
+      },
+      {
+        "id": "urn:ngm:class:fieldbus",
+        "label": "Fieldbus"
+      },
+      {
+        "id": "urn:ngm:class:human-machine-interface",
+        "label": "Human-Machine Interface"
       }
     ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iec-61131",
+        "label": "IEC 61131"
+      },
+      {
+        "id": "urn:ngm:class:iec-62443",
+        "label": "IEC 62443"
+      },
+      {
+        "id": "urn:ngm:class:iso-10218",
+        "label": "ISO 10218"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -52,7 +129,11 @@
       },
       {
         "id": "urn:ngm:class:real-time-processing",
-        "label": "Real-time Processing"
+        "label": "Real-Time Processing"
+      },
+      {
+        "id": "urn:ngm:class:collaborative-robot",
+        "label": "Collaborative Robot"
       }
     ]
   },

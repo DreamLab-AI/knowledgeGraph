@@ -47,7 +47,7 @@ public:: true
   "@type": "Class",
   "label": "IDnow",
   "definition": "A German identity verification company that provides electronic identification, know-your-customer, and digital signing services. It offers automated and agent-assisted verification of identity documents and biometrics.",
-  "domain": "identity",
+  "domain": "security",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:network-infrastructure",
   "domain": "infrastructure",
-  "definition": "Network Infrastructure comprises the physical and logical communication systems \u2014 fibre, wireless, routing, and switching equipment, alongside software-defined networking layers \u2014 that enable data transmission for real-time collaboration and distributed computing. Modern network infrastructure integrates 5G/6G wireless, SD-WAN, content delivery networks, and multi-access edge computing to support low-latency, high-bandwidth applications such as immersive XR experiences and autonomous systems.",
+  "definition": "Network Infrastructure is the integrated ensemble of physical hardware, logical software layers, and communication protocols that enable data transmission, interconnection, and service delivery across computing environments. It encompasses wired and wireless transmission media, routing and switching equipment, software-defined networking (SDN) control planes, and edge computing nodes that collectively form the backbone of digital communication. Modern network infrastructure is characterised by convergence across 5G/6G mobile networks, fibre optic backbones, satellite constellations, and multi-access edge computing (MEC) to deliver low-latency, high-throughput connectivity. It underpins virtually all digital services \u2014 from cloud computing and AI inference to immersive spatial experiences, autonomous systems, and distributed enterprise collaboration.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-network-and-comms",
@@ -13,25 +13,90 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "emerging",
+  "qualityScore": 0.72,
+  "maturity": "mature",
   "relationships": {
     "hasPart": [
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:software-defined-networking",
+        "label": "Software-Defined Networking"
+      },
+      {
+        "id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
+      },
       {
         "id": "urn:ngm:class:network-component",
         "label": "Network Component"
       },
       {
-        "id": "urn:ngm:class:edge-computing",
-        "label": "Edge Computing"
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
       }
     ],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:physical-layer",
+        "label": "Physical Layer"
+      },
+      {
+        "id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      },
+      {
+        "id": "urn:ngm:class:identity-and-access-management",
+        "label": "Identity and Access Management"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "id": "urn:ngm:class:real-time-communication",
+        "label": "Real-Time Communication"
+      },
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:telecommunications-infrastructure",
+        "label": "Telecommunications Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:power-infrastructure",
+        "label": "Power Infrastructure"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:overlay-network",
+        "label": "Overlay Network"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      }
+    ],
     "uses": [],
     "supports": [
       {
@@ -41,18 +106,44 @@
       {
         "id": "urn:ngm:class:ai-infrastructure",
         "label": "AI Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-systems",
+        "label": "Autonomous Systems"
       }
     ],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
+    "standardizedBy": [
       {
-        "id": "urn:ngm:class:telecommunications-infrastructure",
-        "label": "Telecommunications Infrastructure"
+        "id": "urn:ngm:class:ieee-802",
+        "label": "IEEE 802 Standards"
       },
+      {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      },
+      {
+        "id": "urn:ngm:class:3gpp",
+        "label": "3GPP"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:digital-infrastructure",
+        "label": "Digital Infrastructure"
+      }
+    ],
+    "relatedTo": [
       {
         "id": "urn:ngm:class:cybersecurity",
         "label": "Cybersecurity"
+      },
+      {
+        "id": "urn:ngm:class:network-topology",
+        "label": "Network Topology"
+      },
+      {
+        "id": "urn:ngm:class:quality-of-service",
+        "label": "Quality of Service"
       }
     ]
   },

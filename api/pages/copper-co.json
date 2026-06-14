@@ -4,7 +4,7 @@
   "slug": "copper-co",
   "public": true,
   "classIri": "urn:ngm:class:copper-co",
-  "domain": "fintech",
+  "domain": "finance",
   "definition": "Copper.co is a digital asset custody and infrastructure company serving institutional clients. It provides secure storage, settlement and prime services for cryptocurrencies.",
   "subClassOf": [
     {

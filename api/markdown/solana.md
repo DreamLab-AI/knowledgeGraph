@@ -1,12 +1,61 @@
 - ### Definition
-  - [[Solana]] is a high-performance layer-1 [[Smart Contract Platform]] that achieves sub-second finality and high transaction throughput through its [[Proof of History]] cryptographic clock mechanism, Sealevel parallel execution engine, and Gulf Stream mempool-less transaction forwarding protocol.
+  - [[Solana]] is a high-performance layer-1 [[Smart Contract Platform]] that achieves sub-second finality and sustained high [[Blockchain Scalability]] through a suite of interlocking innovations: [[Proof of History]] as a cryptographic clock, the [[Sealevel]] parallel execution runtime, [[Gulf Stream]] mempool-less forwarding, [[Tower BFT]] as its Byzantine-fault-tolerant [[Consensus Mechanism]], and the [[Turbine]] block-propagation protocol. Native programs are written in [[Rust Programming Language]] and compiled to Berkeley Packet Filter (BPF) bytecode, enabling near-metal execution speeds. The network's native token, SOL, is used for transaction fees, staking, and governance participation, situating Solana firmly within the broader [[Web3]] and [[Decentralised Finance]] landscape.
+- ### Overview
+  - Solana was conceived by Anatoly Yakovenko, whose background in distributed systems at Qualcomm led to the insight that imposing a shared, trustless notion of time onto a decentralised ledger could dramatically reduce validator coordination overhead. The [[Proof of History]] whitepaper (2017) articulated this as a pre-consensus ordering mechanism, with the project bootstrapped through the Solana Foundation and a series of fundraising rounds culminating in mainnet-beta launch in March 2020.
+  - The network targets a different design trade-off than sharded or rollup-centric blockchains: rather than spreading load across many chains, Solana pursues maximum single-chain throughput through hardware-scale vertical optimisation — exploiting modern CPUs with many cores, SSDs, and high-bandwidth networking. The result is a single global state machine capable of processing a large volume of transactions per second, preserving composability across the entire application layer without cross-shard or cross-rollup communication latency.
+  - SOL staking underpins network security via delegated [[Proof of Stake]]: token holders delegate stake to [[Validator Node]] operators, who must maintain sufficient uptime and hardware quality to earn rewards. The leader schedule (the sequence in which validators produce blocks) is determined deterministically from the stake distribution, giving large stakeholders predictable block-production opportunities.
+  - Solana's ecosystem hosts an expanding set of [[Decentralised Finance]] protocols, [[NFT Marketplace]] platforms, payments applications, and developer tooling. Firedancer, a second independent validator client developed by Jump Crypto, represents a significant maturity milestone: a client implementation diversity milestone analogous to the role Prysm/Lighthouse diversity plays in Ethereum's robustness.
+- ### Key Components and Architecture
+  - **[[Proof of History]]** — A verifiable delay function (VDF) based on iterative SHA-256 hashing. Each validator maintains a continuous hash chain; each hash output becomes the input to the next, creating an immutable, time-stamped sequence of events. Transactions are inserted into this stream with their hash-chain position as a timestamp, allowing global ordering to be determined without synchronous clock agreement between validators.
+  - **[[Sealevel]]** — Solana's parallel smart contract runtime. Transactions declare which accounts they will read and write before execution; the runtime uses this information to identify non-conflicting transaction sets and execute them concurrently across available CPU threads. This is a fundamental departure from Ethereum's serial EVM execution model and is the primary mechanism enabling high single-slot throughput.
+  - **[[Tower BFT]]** — A PBFT-derived Byzantine fault tolerant consensus algorithm adapted for Proof of History. Validators vote on the hash-chain state; votes are locked for exponentially increasing time periods, creating an economic commitment structure that makes re-organisation attacks increasingly expensive without requiring synchronous communication rounds.
+  - **[[Gulf Stream]]** — A mempool-less transaction forwarding protocol. Rather than broadcasting transactions to a global mempool, clients forward transactions directly to the expected next leader validators, enabling speculative transaction execution before the leader officially begins its slot and reducing confirmation latency.
+  - **[[Turbine]]** — A block propagation protocol inspired by BitTorrent. Blocks are sharded into small packets and distributed through a tree of validators, reducing the bandwidth each node must receive while ensuring rapid propagation to the full network. This is essential for sustaining high block sizes at the network's throughput levels.
+  - **Cloudbreak** — Solana's horizontally scalable accounts database, designed around concurrent reads and sequential writes to enable fast account state lookups during parallel transaction execution without becoming an I/O bottleneck.
+  - **Archivers (Replicators)** — A lightweight node type designed to store ledger history in a distributed fashion without requiring full validator hardware, inspired by Filecoin-style proof-of-replication concepts.
+  - **Solana Program Library (SPL)** — The canonical on-chain program suite providing [[Token Standard]] implementations (SPL Token, Token-2022 with extensions), associated token accounts, the stake program, and governance primitives that form the foundation for ecosystem applications.
+- ### Applications and Use Cases
+  - **[[Decentralised Finance]]** — Solana hosts order-book DEXs (Serum/OpenBook), automated market makers (Raydium, Orca), liquid staking protocols (Marinade, Jito), and lending markets (Solend/Kamino). The combination of high throughput and low fees makes on-chain order books — prohibitively expensive on Ethereum mainnet — economically viable.
+  - **[[NFT Marketplace]]** — Metaplex established the dominant NFT standard and creator tooling on Solana; Magic Eden emerged as the leading marketplace. Low minting costs enabled large PFP collections and gaming assets at price points accessible to retail users.
+  - **[[Blockchain Gaming]]** — Real-time settlement requirements align with Solana's low latency. Projects such as Star Atlas and several play-to-earn games chose Solana for the ability to settle in-game item trades at high frequency.
+  - **Payments and Consumer Apps** — Solana Pay enabled QR-code-based merchant payments settled on-chain, exploring retail point-of-sale crypto payments. Visa piloted USDC settlement over the Solana network in 2023, validating institutional interest in its payment throughput characteristics.
+  - **Decentralised Physical Infrastructure Networks (DePIN)** — Helium migrated its wireless network token to Solana; Render Network (GPU compute) and Hivemapper (mapping) operate on Solana, collectively representing a class of [[Decentralised Compute]] and physical-resource tokenisation use cases.
+  - **Memecoins and Retail Speculation** — The 2024 memecoin cycle concentrated heavily on Solana owing to low fees, rapid finality, and Pump.fun's permissionless token launch infrastructure, generating very high transaction volumes.
+  - **AI and On-Chain Compute** — Emerging experiments in [[On-Chain AI Inference]] and verifiable AI computation have begun targeting Solana's throughput, exploring whether on-chain program execution can serve as a trustless proving layer for AI model outputs.
 - ### Relationships
-  - Solana is an individual instance of the [[Smart Contract Platform]] class, and its defining architectural feature is [[Proof of History]], which underpins its [[Consensus Mechanism]] and enables the [[Blockchain Scalability]] that distinguishes it from earlier layer-1 networks. A network of [[Validator Node]] operators maintain the chain. High throughput and low fees make it a preferred environment for [[Decentralised Finance]] protocols and [[NFT Marketplace]] platforms, and it is increasingly adopted for [[Blockchain Gaming]] applications requiring real-time transaction settlement.
-- ### Content
-  - Solana's core architectural innovation — Proof of History — solves a fundamental coordination problem in distributed consensus. Conventional proof-of-stake networks require validators to communicate timestamps to agree on transaction ordering, creating both communication overhead and a window for timestamp manipulation. Proof of History instead uses a sequential hash function as a verifiable delay function, generating a cryptographic record of the passage of time that validators can independently verify without messaging each other. This dramatically reduces the communication overhead required to sequence transactions.
-
-  - The parallel execution engine, Sealevel, exploits the observation that transactions touching non-overlapping state can be processed simultaneously. Where Ethereum's EVM processes transactions serially, Sealevel uses runtime analysis of account access patterns to identify independent transactions and execute them concurrently across available CPU cores. This horizontal scaling within a single validator machine is a key contributor to Solana's throughput advantage and reduces the per-transaction compute cost, enabling the low fees that make micro-transactions economically viable.
-
-  - Solana's ecosystem has attracted significant DeFi and NFT activity, partly due to sub-cent transaction fees that make high-frequency trading strategies and NFT minting accessible to retail participants priced out of Ethereum. Major DeFi protocols including automated market makers and order-book DEXs have deployed on Solana, as have multiple NFT standards and marketplaces. The ecosystem's growth was interrupted by a series of network outages during 2021-2022 caused by transaction floods overwhelming validator memory pools, prompting architectural improvements in subsequent protocol versions.
-
-  - The FTX collapse in November 2022 had a disproportionate impact on Solana because the FTX exchange and its affiliated Alameda Research were major SOL token holders and ecosystem funders. The subsequent market dislocation tested the network's resilience as SOL price fell sharply and several FTX-adjacent projects failed. The ecosystem's recovery — sustained developer activity, rising transaction volumes, and institutional interest by 2024 — demonstrated both the robustness of the underlying technology and the risks of over-concentration of ecosystem support in a single entity.
+  - hasPart:: [[Proof of History]]
+  - hasPart:: [[Sealevel]]
+  - hasPart:: [[Tower BFT]]
+  - hasPart:: [[Gulf Stream]]
+  - hasPart:: [[Turbine]]
+  - requires:: [[Validator Node]]
+  - uses:: [[Consensus Mechanism]]
+  - uses:: [[Verifiable Delay Function]]
+  - uses:: [[Proof of Stake]]
+  - uses:: [[Rust Programming Language]]
+  - enables:: [[Decentralised Finance]]
+  - enables:: [[NFT Marketplace]]
+  - enables:: [[Blockchain Gaming]]
+  - enables:: [[Decentralised Exchange]]
+  - enables:: [[Web3]]
+  - implements:: [[Blockchain Scalability]]
+  - implements:: [[Parallel Transaction Processing]]
+  - contrastsWith:: [[Ethereum]]
+  - contrastsWith:: [[Bitcoin]]
+  - contrastsWith:: [[Avalanche]]
+  - contrastsWith:: [[NEAR Protocol]]
+  - relatedTo:: [[Solana Program Library]]
+  - relatedTo:: [[Token Standard]]
+  - relatedTo:: [[Decentralised Autonomous Organisation]]
+  - bridgesTo:: [[On-Chain AI Inference]]
+  - bridgesTo:: [[Decentralised Compute]]
+- ### Standards and Ecosystem Context
+  - **Token Standards** — SPL Token (analogous to ERC-20) and Token-2022 (with confidential transfers, interest-bearing tokens, transfer hooks) constitute the dominant fungible token standards. Metaplex Token Metadata standard governs NFT metadata; Programmable NFTs (pNFTs) add rule-based transfer restrictions for royalty enforcement.
+  - **Developer Tooling** — The Anchor framework (Solana's analogue to Hardhat/Foundry) provides a Rust macro system for writing safer on-chain programs with automatic account validation. Solana CLI, Solana Web3.js, and @solana/kit provide client-side development primitives. The Solana Playground enables browser-based contract development and deployment.
+  - **Governance** — The Solana Foundation administers ecosystem grants and protocol research; major protocol parameter changes are coordinated via Solana Improvement Documents (SIMDs), analogous to Ethereum's EIPs. Tower BFT validator voting serves as the operative ratification mechanism for software upgrades.
+  - **Regulatory Context** — SOL was designated a commodity by the CFTC in certain enforcement actions, while parallel SEC proceedings created uncertainty about its security classification. The network's centralisation characteristics — hardware requirements limiting validator participation, geographic concentration of stake — attract regulatory and academic scrutiny as factors affecting decentralisation credibility.
+  - **Firedancer** — Jump Crypto's independent validator client implementation (C/C++, targeting ultra-high throughput) is the most significant ecosystem infrastructure project outside Solana Labs, analogous in importance to Ethereum's multi-client strategy.
+  - **Wormhole** — The primary cross-chain bridge connecting Solana to EVM chains, enabling asset transfers and message passing that position Solana within the broader multi-chain [[Web3]] interoperability landscape.
+- ### Provenance
+  - sources:: Solana whitepaper (Yakovenko 2017); Solana documentation (docs.solana.com); Messari research; Solana Foundation ecosystem reports; Anchor framework documentation; Firedancer project announcements
+  - updated:: 2026-06-13

@@ -4,8 +4,8 @@
   "slug": "acm",
   "public": true,
   "classIri": "urn:ngm:class:acm",
-  "domain": "general",
-  "definition": "The Association for Computing Machinery, an international learned society for computing that publishes research, sets professional standards and organises conferences across computer science.",
+  "domain": "standards",
+  "definition": "The Association for Computing Machinery (ACM) is the world's largest and oldest scientific and educational computing society, founded in 1947, that advances the computing profession through peer-reviewed publication, professional development, and conference organisation. ACM maintains the ACM Digital Library, one of the most comprehensive archives of computing literature, and publishes flagship journals including Communications of the ACM and ACM Transactions series. It confers the ACM Turing Award \u2014 widely regarded as computing's highest honour \u2014 and promulgates ethical codes of professional conduct. ACM also co-sponsors and organises foundational conferences such as SIGGRAPH, STOC, CCS, and CHI through its network of Special Interest Groups.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:standards-body",
@@ -13,21 +13,127 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
-  "maturity": "established",
+  "qualityScore": 0.75,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:acm-digital-library",
+        "label": "ACM Digital Library"
+      },
+      {
+        "id": "urn:ngm:class:acm-special-interest-group",
+        "label": "ACM Special Interest Group"
+      },
+      {
+        "id": "urn:ngm:class:acm-turing-award",
+        "label": "ACM Turing Award"
+      },
+      {
+        "id": "urn:ngm:class:acm-code-of-ethics",
+        "label": "ACM Code of Ethics"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:peer-review",
+        "label": "Peer Review"
+      },
+      {
+        "id": "urn:ngm:class:open-access-publishing",
+        "label": "Open Access Publishing"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:computing-education",
+        "label": "Computing Education"
+      },
+      {
+        "id": "urn:ngm:class:professional-certification",
+        "label": "Professional Certification"
+      },
+      {
+        "id": "urn:ngm:class:research-dissemination",
+        "label": "Research Dissemination"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:ieee-computer-society",
+        "label": "IEEE Computer Society"
+      },
+      {
+        "id": "urn:ngm:class:british-computer-society",
+        "label": "British Computer Society"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence-research",
+        "label": "Artificial Intelligence Research"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-conferences",
+        "label": "Machine Learning Conferences"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:doi-system",
+        "label": "DOI System"
+      },
+      {
+        "id": "urn:ngm:class:creative-commons-licensing",
+        "label": "Creative Commons Licensing"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      },
+      {
+        "id": "urn:ngm:class:computer-science-curriculum",
+        "label": "Computer Science Curriculum"
+      },
+      {
+        "id": "urn:ngm:class:diversity-in-computing",
+        "label": "Diversity in Computing"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:acm-curriculum-guidelines",
+        "label": "ACM Curriculum Guidelines"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:computing-research-community",
+        "label": "Computing Research Community"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:computer-science",
+        "label": "Computer Science"
+      },
+      {
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human-Computer Interaction"
+      },
+      {
+        "id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      },
+      {
+        "id": "urn:ngm:class:programming-languages",
+        "label": "Programming Languages"
+      }
+    ]
   },
   "wikilinks": [
     {

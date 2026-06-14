@@ -5,30 +5,51 @@
   "public": true,
   "classIri": "urn:ngm:class:robot-dynamics",
   "domain": "robotics",
-  "definition": "Robot Dynamics is the study of the forces, torques, and inertial properties that govern the motion of robotic systems. It encompasses forward dynamics (computing accelerations from applied forces) and inverse dynamics (computing required torques for a desired motion), underpinning trajectory planning, model-based control, and simulation. Accurate dynamic models are essential for high-speed manipulation, legged locomotion, and compliant human-robot interaction.",
+  "definition": "Robot Dynamics is the branch of classical and computational mechanics that characterises the forces, torques, inertias, and energy flows governing the motion of robotic mechanisms. It distinguishes between forward dynamics\u2014determining joint accelerations and Cartesian trajectories from applied actuator forces and torques\u2014and inverse dynamics\u2014computing the actuator effort required to produce a prescribed motion trajectory. The discipline provides the theoretical foundation for model-based control laws (such as computed-torque and feedback-linearisation controllers), physics-based simulation, and the design of energy-efficient manipulators and legged robots. Accurate dynamic models are indispensable for high-speed manipulation, safe human-robot collaboration, compliant actuation, and whole-body control of mobile robots.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-actuation-and-control",
       "label": "Actuation and Control"
-    },
-    {
-      "id": "urn:ngm:class:robo-actuation-and-control",
-      "label": "Robo Actuation And Control"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "emerging",
+  "qualityScore": 0.72,
+  "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:forward-dynamics",
+        "label": "Forward Dynamics"
+      },
+      {
+        "id": "urn:ngm:class:inverse-dynamics",
+        "label": "Inverse Dynamics"
+      },
+      {
+        "id": "urn:ngm:class:lagrangian-mechanics",
+        "label": "Lagrangian Mechanics"
+      },
+      {
+        "id": "urn:ngm:class:newton-euler-algorithm",
+        "label": "Newton-Euler Algorithm"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:kinematics",
         "label": "Kinematics"
       },
       {
-        "id": "urn:ngm:class:torque",
-        "label": "Torque"
+        "id": "urn:ngm:class:rigid-body-mechanics",
+        "label": "Rigid Body Mechanics"
+      },
+      {
+        "id": "urn:ngm:class:inertia-tensor",
+        "label": "Inertia Tensor"
+      },
+      {
+        "id": "urn:ngm:class:differential-equations",
+        "label": "Differential Equations"
       }
     ],
     "enables": [
@@ -39,14 +60,61 @@
       {
         "id": "urn:ngm:class:robot-control",
         "label": "Robot Control"
+      },
+      {
+        "id": "urn:ngm:class:trajectory-optimisation",
+        "label": "Trajectory Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:robot-simulation",
+        "label": "Robot Simulation"
+      },
+      {
+        "id": "urn:ngm:class:whole-body-control",
+        "label": "Whole-Body Control"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:denavit-hartenberg-parameters",
+        "label": "Denavit-Hartenberg Parameters"
+      },
+      {
+        "id": "urn:ngm:class:spatial-algebra",
+        "label": "Spatial Algebra"
+      },
+      {
+        "id": "urn:ngm:class:jacobian-matrix",
+        "label": "Jacobian Matrix"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:legged-locomotion",
+        "label": "Legged Locomotion"
+      },
+      {
+        "id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human-Robot Interaction"
+      },
+      {
+        "id": "urn:ngm:class:compliant-actuation",
+        "label": "Compliant Actuation"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
@@ -57,6 +125,14 @@
       {
         "id": "urn:ngm:class:state-estimation",
         "label": "State Estimation"
+      },
+      {
+        "id": "urn:ngm:class:optimal-control",
+        "label": "Optimal Control"
+      },
+      {
+        "id": "urn:ngm:class:contact-mechanics",
+        "label": "Contact Mechanics"
       }
     ]
   },

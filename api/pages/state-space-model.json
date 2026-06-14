@@ -4,40 +4,130 @@
   "slug": "state-space-model",
   "public": true,
   "classIri": "urn:ngm:class:state-space-model",
-  "domain": "deep-learning",
-  "definition": "A class of sequence model that represents a system through a latent state evolving over time according to linear dynamics, recently adapted as an efficient alternative to attention for long sequences.",
+  "domain": "machine-learning",
+  "definition": "A State Space Model (SSM) is a mathematical framework that represents a dynamical system through a hidden (latent) state vector whose evolution over discrete or continuous time is governed by linear or learnable recurrence equations, paired with an output equation mapping states to observations. Originally formalised in control theory and signal processing \u2014 with the Kalman filter as a canonical inference algorithm \u2014 SSMs have been re-parameterised as structured sequence layers in deep learning, enabling sub-quadratic scaling in sequence length as an alternative to self-attention. Modern deep SSM variants such as S4, Mamba, and RWKV exploit diagonal or low-rank structure in the state transition matrix to achieve hardware-efficient training and inference on long sequences.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:neural-network",
-      "label": "Neural Network"
+      "id": "urn:ngm:class:sequence-model",
+      "label": "Sequence Model"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.75,
   "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:probabilistic-model",
-        "label": "Probabilistic Model"
+        "id": "urn:ngm:class:recurrent-neural-network",
+        "label": "Recurrent Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      },
+      {
+        "id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:language-model",
         "label": "Language Model"
+      },
+      {
+        "id": "urn:ngm:class:long-range-dependency-modelling",
+        "label": "Long-Range Dependency Modelling"
+      },
+      {
+        "id": "urn:ngm:class:time-series-forecasting",
+        "label": "Time Series Forecasting"
+      },
+      {
+        "id": "urn:ngm:class:audio-generation",
+        "label": "Audio Generation"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:probabilistic-model",
+        "label": "Probabilistic Model"
+      },
+      {
+        "id": "urn:ngm:class:hidden-markov-model",
+        "label": "Hidden Markov Model"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:kalman-filter",
+        "label": "Kalman Filter"
+      },
+      {
+        "id": "urn:ngm:class:linear-time-invariant-system",
+        "label": "Linear Time-Invariant System"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "id": "urn:ngm:class:self-attention",
+        "label": "Self-Attention"
+      },
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:robotics-control",
+        "label": "Robotics Control"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-systems",
+        "label": "Autonomous Systems"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:convolution",
+        "label": "Convolution"
+      },
+      {
+        "id": "urn:ngm:class:selective-attention",
+        "label": "Selective Attention"
+      },
+      {
+        "id": "urn:ngm:class:hippo-initialisation",
+        "label": "HiPPO Initialisation"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:control-theory",
+        "label": "Control Theory"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:sequence-to-sequence-model",
+        "label": "Sequence-to-Sequence Model"
+      }
+    ]
   },
   "wikilinks": [
     {

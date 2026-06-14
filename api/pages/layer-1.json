@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:layer-1",
   "domain": "blockchain",
-  "definition": "The base settlement layer of a blockchain network where consensus and final transaction ordering occur, as distinct from protocols built on top of it.",
+  "definition": "Layer 1 is the foundational base protocol of a blockchain network that maintains its own independently verified state, executes a native consensus mechanism, and provides cryptographically final transaction ordering without relying on any external chain. It defines the canonical ledger, enforces network rules (including token issuance schedules and validity criteria), and serves as the trust anchor from which all higher-order protocols derive their security guarantees. Notable examples include Bitcoin, Ethereum, Solana, Cardano, and Avalanche, each differing in their consensus approach, throughput characteristics, and programmability.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:blockchain-domain",
@@ -13,31 +13,128 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.74,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      },
+      {
+        "id": "urn:ngm:class:mempool",
+        "label": "Mempool"
+      },
+      {
+        "id": "urn:ngm:class:block",
+        "label": "Block"
+      },
+      {
+        "id": "urn:ngm:class:native-token",
+        "label": "Native Token"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:consensus-protocol",
         "label": "Consensus Protocol"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      },
+      {
+        "id": "urn:ngm:class:validator-node",
+        "label": "Validator Node"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:layer-2-networks",
         "label": "Layer 2 Networks"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-application",
+        "label": "Decentralised Application"
+      },
+      {
+        "id": "urn:ngm:class:tokenisation",
+        "label": "Tokenisation"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:layer-2-networks",
+        "label": "Layer 2 Networks"
+      },
+      {
+        "id": "urn:ngm:class:sidechain",
+        "label": "Sidechain"
+      },
+      {
+        "id": "urn:ngm:class:centralised-database",
+        "label": "Centralised Database"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "id": "urn:ngm:class:data-provenance",
+        "label": "Data Provenance"
+      }
+    ],
     "uses": [],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ethereum-improvement-proposal",
+        "label": "Ethereum Improvement Proposal"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-improvement-proposal",
+        "label": "Bitcoin Improvement Proposal"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:proof-of-work",
+        "label": "Proof of Work"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-scalability-trilemma",
+        "label": "Blockchain Scalability Trilemma"
+      },
+      {
+        "id": "urn:ngm:class:finality",
+        "label": "Finality"
+      },
+      {
+        "id": "urn:ngm:class:sharding",
+        "label": "Sharding"
+      }
+    ]
   },
   "wikilinks": [
     {

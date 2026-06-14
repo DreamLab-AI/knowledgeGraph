@@ -47,7 +47,7 @@ public:: true
   "@type": "Class",
   "label": "Quantum Key Distribution",
   "definition": "A method of securely sharing cryptographic keys using the principles of quantum mechanics, such that any eavesdropping disturbs the transmission and can be detected. It provides key exchange whose security rests on physics rather than computational hardness.",
-  "domain": "cryptography",
+  "domain": "security",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

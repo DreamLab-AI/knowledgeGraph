@@ -5,18 +5,35 @@
   "public": true,
   "classIri": "urn:ngm:class:video-generation",
   "domain": "artificial-intelligence",
-  "definition": "Video generation is the AI-driven synthesis of temporally coherent video sequences from text prompts, images, or other conditioning inputs using generative models such as latent diffusion or transformer architectures. Beyond static spatial coherence, video generation must maintain temporal consistency across frames, respect physical motion dynamics, and handle variable-length sequences, making it substantially more constrained than image generation. Modern approaches typically encode video into a compressed latent space, apply a diffusion or autoregressive process in that space, and decode back to pixel space, with text conditioning provided via a cross-attention mechanism fed by a text encoder.",
+  "definition": "Video generation is the AI-driven synthesis of temporally coherent video sequences from text prompts, reference images, or other conditioning signals using generative models such as latent diffusion, autoregressive transformers, or flow-matching networks. Unlike image generation, video synthesis must maintain temporal consistency across frames, model object trajectories and camera motion, and produce physically plausible dynamics across variable-length sequences. Contemporary approaches encode video into a compressed spatiotemporal latent space via a 3D variational autoencoder, apply a diffusion or flow-matching process in that space conditioned on text or visual embeddings, then decode to pixel space. Scaling laws, large curated training datasets, and architectural advances such as full spatiotemporal attention have driven rapid capability growth, enabling cinematic-quality outputs at multiple seconds of duration.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ai-application",
-      "label": "AI Application"
+      "id": "urn:ngm:class:generative-ai",
+      "label": "Generative AI"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
+  "qualityScore": 0.72,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:temporal-attention",
+        "label": "Temporal Attention"
+      },
+      {
+        "id": "urn:ngm:class:video-vae",
+        "label": "Video VAE"
+      },
+      {
+        "id": "urn:ngm:class:motion-estimation",
+        "label": "Motion Estimation"
+      },
+      {
+        "id": "urn:ngm:class:classifier-free-guidance",
+        "label": "Classifier-Free Guidance"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:diffusion-model",
@@ -25,34 +42,115 @@
       {
         "id": "urn:ngm:class:text-encoder",
         "label": "Text Encoder"
-      }
-    ],
-    "enables": [],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [
-      {
-        "id": "urn:ngm:class:transformer-architecture",
-        "label": "Transformer Architecture"
-      }
-    ],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
-      {
-        "id": "urn:ngm:class:image-generation",
-        "label": "Image Generation"
       },
+      {
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "id": "urn:ngm:class:large-scale-training-data",
+        "label": "Large-Scale Training Data"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:synthetic-media",
+        "label": "Synthetic Media"
+      },
+      {
+        "id": "urn:ngm:class:film-previzualisation",
+        "label": "Film Previsualization"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-driving-simulation",
+        "label": "Autonomous Driving Simulation"
+      },
+      {
+        "id": "urn:ngm:class:content-creation",
+        "label": "Content Creation"
+      }
+    ],
+    "dependsOn": [
       {
         "id": "urn:ngm:class:latent-diffusion",
         "label": "Latent Diffusion"
       },
       {
-        "id": "urn:ngm:class:multimodal-ai-architecture-ai",
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "id": "urn:ngm:class:flow-matching",
+        "label": "Flow Matching"
+      },
+      {
+        "id": "urn:ngm:class:clip",
+        "label": "CLIP"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      },
+      {
+        "id": "urn:ngm:class:deepfake-detection",
+        "label": "Deepfake Detection"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:virtual-production",
+        "label": "Virtual Production"
+      },
+      {
+        "id": "urn:ngm:class:metaverse-content",
+        "label": "Metaverse Content"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:3d-convolution",
+        "label": "3D Convolution"
+      },
+      {
+        "id": "urn:ngm:class:cross-attention",
+        "label": "Cross-Attention"
+      },
+      {
+        "id": "urn:ngm:class:optical-flow",
+        "label": "Optical Flow"
+      },
+      {
+        "id": "urn:ngm:class:variational-autoencoder",
+        "label": "Variational Autoencoder"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-ai",
         "label": "Multimodal AI"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:video-understanding",
+        "label": "Video Understanding"
+      },
+      {
+        "id": "urn:ngm:class:neural-rendering",
+        "label": "Neural Rendering"
+      },
+      {
+        "id": "urn:ngm:class:world-model",
+        "label": "World Model"
       }
     ]
   },

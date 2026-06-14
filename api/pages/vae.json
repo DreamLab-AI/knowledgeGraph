@@ -5,18 +5,31 @@
   "public": true,
   "classIri": "urn:ngm:class:vae",
   "domain": "artificial-intelligence",
-  "definition": "A Variational Autoencoder (VAE) is a generative model that learns a probabilistic latent-space representation of data by jointly optimising a reconstruction loss and a KL-divergence regularisation term, using variational inference to make the latent posterior tractable. The encoder network maps input data to a distribution over latent codes, whilst the decoder network reconstructs data from samples drawn from that distribution, enabling the model to generate novel, coherent samples at inference time. VAEs are foundational to latent diffusion models, image synthesis pipelines, and representation learning tasks where structured, disentangled latent spaces are desirable.",
+  "definition": "A Variational Autoencoder (VAE) is a deep generative model that learns a probabilistic, continuous latent-space representation of data by jointly optimising a reconstruction loss and a Kullback-Leibler divergence regularisation term, using amortised variational inference to make the intractable posterior distribution tractable. The encoder network (recognition model) maps input data to the parameters of a Gaussian posterior over latent codes, while the decoder network maps samples drawn from that posterior back to the data space; the reparameterisation trick renders the sampling step differentiable, enabling end-to-end gradient-based learning. VAEs underpin latent diffusion models, representation learning, disentanglement research, and multimodal generative systems, and have been extended by hierarchical, vector-quantised, and conditional variants that dramatically improve fidelity and controllability.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ai-model-architecture",
-      "label": "AI Model Architecture"
+      "id": "urn:ngm:class:deep-generative-model",
+      "label": "Deep Generative Model"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:encoder-network",
+        "label": "Encoder Network"
+      },
+      {
+        "id": "urn:ngm:class:decoder-network",
+        "label": "Decoder Network"
+      },
+      {
+        "id": "urn:ngm:class:latent-space",
+        "label": "Latent Space"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:variational-inference",
@@ -25,6 +38,18 @@
       {
         "id": "urn:ngm:class:autoencoder",
         "label": "Autoencoder"
+      },
+      {
+        "id": "urn:ngm:class:reparameterisation-trick",
+        "label": "Reparameterisation Trick"
+      },
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "id": "urn:ngm:class:kl-divergence",
+        "label": "KL Divergence"
       }
     ],
     "enables": [
@@ -35,24 +60,75 @@
       {
         "id": "urn:ngm:class:image-generation",
         "label": "Image Generation"
+      },
+      {
+        "id": "urn:ngm:class:representation-learning",
+        "label": "Representation Learning"
+      },
+      {
+        "id": "urn:ngm:class:disentangled-representation",
+        "label": "Disentangled Representation"
+      },
+      {
+        "id": "urn:ngm:class:data-augmentation",
+        "label": "Data Augmentation"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:generative-adversarial-network",
+        "label": "Generative Adversarial Network"
+      },
+      {
+        "id": "urn:ngm:class:flow-based-model",
+        "label": "Flow-Based Model"
+      },
+      {
+        "id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:stable-diffusion",
+        "label": "Stable Diffusion"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-learning",
+        "label": "Multimodal Learning"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:evidence-lower-bound",
+        "label": "Evidence Lower Bound"
+      },
+      {
+        "id": "urn:ngm:class:gaussian-distribution",
+        "label": "Gaussian Distribution"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:neural-network-latent-space",
-        "label": "latent space"
+        "id": "urn:ngm:class:vq-vae",
+        "label": "VQ-VAE"
       },
       {
-        "id": "urn:ngm:class:deep-generative-model",
-        "label": "Deep Generative Model"
+        "id": "urn:ngm:class:beta-vae",
+        "label": "Beta-VAE"
+      },
+      {
+        "id": "urn:ngm:class:hierarchical-vae",
+        "label": "Hierarchical VAE"
       }
     ]
   },

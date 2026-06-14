@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:actuator",
   "domain": "robotics",
-  "definition": "An actuator is a device that converts energy \u2014 electrical, hydraulic, or pneumatic \u2014 into mechanical motion or force, serving as the output element of a robot's control chain. Actuators translate commands from a robot controller into joint rotations, linear displacements, or gripping forces, and their dynamic characteristics (torque density, bandwidth, backdrivability) fundamentally constrain a robot's speed, precision, and physical safety in human-robot interaction. Common types include servo motors, hydraulic cylinders, pneumatic actuators, and emerging soft actuator materials.",
+  "definition": "An actuator is a transducer that converts a stored or supplied energy form \u2014 electrical, hydraulic, pneumatic, or thermochemical \u2014 into controlled mechanical motion or force, functioning as the output effector in any closed-loop control chain. Actuators execute commands issued by a controller by producing joint rotations, linear displacements, gripping forces, or compliant deformations, and their dynamic properties (torque density, bandwidth, backdrivability, stiffness) fundamentally bound a system's achievable speed, precision, payload capacity, and intrinsic safety during physical interaction. The choice of actuation technology cascades through every level of system design, from mechanical linkage geometry and energy storage requirements to real-time control law selection and safety-rated force limitation.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-actuation-and-control",
@@ -13,8 +13,8 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "mature",
   "relationships": {
     "hasPart": [
       {
@@ -24,6 +24,18 @@
       {
         "id": "urn:ngm:class:hydraulic-actuator",
         "label": "Hydraulic Actuator"
+      },
+      {
+        "id": "urn:ngm:class:pneumatic-actuator",
+        "label": "Pneumatic Actuator"
+      },
+      {
+        "id": "urn:ngm:class:series-elastic-actuator",
+        "label": "Series Elastic Actuator"
+      },
+      {
+        "id": "urn:ngm:class:linear-actuator",
+        "label": "Linear Actuator"
       }
     ],
     "requires": [
@@ -34,13 +46,69 @@
       {
         "id": "urn:ngm:class:feedback-control",
         "label": "Feedback Control"
+      },
+      {
+        "id": "urn:ngm:class:power-electronics",
+        "label": "Power Electronics"
+      },
+      {
+        "id": "urn:ngm:class:sensor",
+        "label": "Sensor"
       }
     ],
-    "enables": [],
-    "dependsOn": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:robot-kinematics",
+        "label": "Robot Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human-Robot Interaction"
+      },
+      {
+        "id": "urn:ngm:class:teleoperation",
+        "label": "Teleoperation"
+      },
+      {
+        "id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:encoder",
+        "label": "Encoder"
+      },
+      {
+        "id": "urn:ngm:class:pid-controller",
+        "label": "PID Controller"
+      },
+      {
+        "id": "urn:ngm:class:embedded-system",
+        "label": "Embedded System"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:passive-mechanism",
+        "label": "Passive Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:transducer",
+        "label": "Transducer"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
@@ -48,9 +116,34 @@
       {
         "id": "urn:ngm:class:robot",
         "label": "Robot"
+      },
+      {
+        "id": "urn:ngm:class:mechatronic-system",
+        "label": "Mechatronic System"
+      },
+      {
+        "id": "urn:ngm:class:cyber-physical-system",
+        "label": "Cyber-Physical System"
       }
     ],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:torque-control",
+        "label": "Torque Control"
+      },
+      {
+        "id": "urn:ngm:class:impedance-control",
+        "label": "Impedance Control"
+      },
+      {
+        "id": "urn:ngm:class:soft-robotics",
+        "label": "Soft Robotics"
+      },
+      {
+        "id": "urn:ngm:class:industrial-automation",
+        "label": "Industrial Automation"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

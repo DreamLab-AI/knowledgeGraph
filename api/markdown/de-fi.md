@@ -1,23 +1,97 @@
 - ### Definition
-  - DeFi (Decentralised Finance) is the ecosystem of open, permissionless financial protocols and applications deployed as Smart Contracts on public blockchains — primarily Ethereum — that replicate and extend traditional financial services (lending, borrowing, trading, yield generation, derivatives) without centralised intermediaries such as banks, brokers, or clearinghouses. Core DeFi primitives include Automated Market Makers (AMMs), over-collateralised lending protocols, algorithmic stablecoins, and yield aggregators, all coordinated through token-based incentive mechanisms and governed by Decentralised Autonomous Organisations (DAOs). DeFi protocols are composable: outputs of one protocol can be inputs to another, enabling complex financial strategies assembled from protocol lego blocks.
+  - DeFi (Decentralised Finance) is the ecosystem of open, permissionless financial protocols deployed as [[Smart Contract]]s on public [[Blockchain]]s — primarily [[Ethereum]] — that replicate and extend traditional financial services (lending, borrowing, trading, yield generation, derivatives) without centralised intermediaries. Built on composable protocol primitives such as [[Automated Market Maker]]s, [[Liquidity Pool]]s, and [[Stablecoin]]s, DeFi enables any participant with a [[Cryptographic Wallet]] to access financial services governed by transparent on-chain logic rather than institutional discretion. Protocol-level composability — the ability for one protocol's outputs to become another's inputs — distinguishes DeFi from both [[Traditional Finance]] and [[Centralised Exchange]]-based cryptocurrency markets.
 
-- ### Semantic Classification
-  - owl-class:: de-fi:DeFi
-  - owl-role:: Concept
+- ### Overview
+  - DeFi emerged from the Ethereum ecosystem from 2018 onwards, capitalising on the [[Ethereum Virtual Machine]]'s Turing-complete [[Smart Contract]] execution environment to encode financial logic on-chain without requiring trust in any single operator.
+  - The core insight is that financial primitives — exchange, credit, savings, risk transfer — can be expressed as deterministic code deployed to a permissionless public ledger, accessible to any address globally, subject only to [[Gas Fee]]s and [[Consensus Mechanism]] finality.
+  - DeFi protocols are non-custodial: users retain key ownership of assets throughout; protocol logic executes trustlessly and is auditable on-chain, removing the need for intermediary custody.
+  - Composability (the "money lego" property) allows developers to chain protocol calls atomically. A single [[Smart Contract]] transaction can borrow on one protocol, swap on another, deposit on a third, and repay the original loan — all within one block.
+  - Governance is typically transferred to [[DAO Governance]] structures where [[Governance Token]] holders vote on parameter changes (fee tiers, collateral ratios, new market listings) whose outcomes execute via on-chain governance contracts.
+  - DeFi's total value locked (TVL) — the aggregate collateral deposited across protocols — became a key ecosystem health metric during the 2020–2021 "DeFi Summer" growth surge and has remained a benchmark for protocol adoption.
+
+- ### Key Components and Mechanisms
+  - **[[Automated Market Maker]] (AMM)**
+    - Replaces the centralised order book with algorithmically managed [[Liquidity Pool]]s.
+    - Uniswap popularised the constant product formula (x·y = k), enabling permissionless token swapping against pooled reserves.
+    - Later AMM variants (Curve, Balancer, Uniswap v3) introduced concentrated liquidity, stableswap invariants, and weighted multi-asset pools.
+  - **[[Liquidity Pool]]**
+    - Token pairs (or multi-asset baskets) deposited by liquidity providers who earn a share of trading fees proportional to their pool share.
+    - Impermanent loss is a key risk: divergence in pool asset prices reduces LP value relative to simply holding the assets.
+  - **Over-Collateralised Lending**
+    - Borrowers lock collateral worth more than the loan value; liquidation is triggered algorithmically if the collateral-to-debt ratio falls below a protocol-defined threshold.
+    - Protocols such as Aave and Compound implement interest rate curves driven by pool utilisation, encoded in the [[Smart Contract]] rather than set by human credit analysts.
+    - [[Flash Loan]]s — borrowed and repaid atomically within a single transaction — are a uniquely DeFi instrument exploiting blockchain atomicity, enabling arbitrage, collateral swaps, and self-liquidations without upfront capital.
+  - **[[Stablecoin]]s**
+    - Fiat-backed (USDC, USDT), crypto-collateralised (DAI via MakerDAO), and algorithmic designs attempt to maintain price stability essential for lending, payments, and treasury management.
+    - Algorithmic stablecoin failures (Terra/Luna 2022) underscored systemic risk in under-collateralised designs.
+  - **[[Yield Farming]] and [[Liquidity Mining]]**
+    - Protocols distribute [[Governance Token]]s to liquidity providers as additional incentives beyond base trading fees, aligning early adoption with protocol ownership.
+    - Yield aggregators (Yearn Finance pattern) automatically route capital to highest-yielding strategies across multiple protocols.
+  - **Decentralised Derivatives**
+    - Perpetual futures (dYdX, GMX), options protocols (Lyra, Dopex), and synthetic asset protocols (Synthetix) bring [[On-Chain Derivatives]] markets with transparent open interest and settlement.
+  - **[[Oracle]]s**
+    - External price feeds (Chainlink, Pyth) are essential infrastructure — DeFi protocols require reliable on-chain price data for liquidation, settlement, and AMM rebalancing. Oracle manipulation is a primary attack vector.
+
+- ### Applications and Use Cases
+  - **Permissionless lending and borrowing**: global access to credit and yield without KYC, enabled by [[Smart Contract]] collateral management.
+  - **Decentralised trading**: token swaps via AMMs (Uniswap, Curve, Balancer) have become primary liquidity venues for long-tail tokens.
+  - **Stablecoin issuance**: on-chain collateral vaults (MakerDAO) mint decentralised stablecoins used across the DeFi ecosystem.
+  - **Yield optimisation**: automated strategies compound returns across lending, staking, and liquidity provision positions.
+  - **Cross-chain liquidity**: [[Cross-Chain Bridge]]s extend DeFi to non-Ethereum ecosystems (Solana, Avalanche, Arbitrum, Optimism), routing liquidity to layer-2 environments with lower [[Gas Fee]]s.
+  - **On-chain derivatives and structured products**: decentralised options vaults (DOVs), interest rate swaps, and structured yield products mirror sophisticated financial instruments.
+  - **[[Algorithmic Trading]]**: on-chain liquidity surfaces enable automated arbitrage, market-making bots, and [[Maximal Extractable Value]] (MEV) extraction strategies that bridge DeFi to quantitative finance.
+  - **Programmable treasury management**: DAOs use DeFi protocols to manage protocol-owned liquidity (POL), diversify treasuries, and earn yield on idle assets.
+  - **[[Digital Identity]] integration**: emerging KYC-optional or privacy-preserving identity layers (Sismo, Worldcoin) seek to bring selective compliance to DeFi without reintroducing full centralisation.
+
+- ### Risks and Challenges
+  - **Smart contract vulnerabilities**: bugs or logic errors in [[Smart Contract]] code have led to large-scale protocol exploits, with hundreds of millions lost across multiple incidents.
+  - **[[Oracle]] manipulation**: attacks that distort price feeds used by lending protocols can trigger unjust liquidations or enable undercollateralised borrowing.
+  - **[[Maximal Extractable Value]] (MEV)**: block producers (validators/miners) can reorder, insert, or censor transactions within a block to extract value, creating front-running and sandwich-attack dynamics.
+  - **[[Liquidity Pool]] impermanent loss**: liquidity providers bear price divergence risk that can erode returns relative to passive holding.
+  - **Algorithmic stablecoin fragility**: reflexive collapse dynamics in undercollateralised stablecoin designs introduce systemic risk.
+  - **Regulatory uncertainty**: global regulators are actively assessing whether DeFi protocols constitute regulated securities offerings, exchanges, or lending facilities, creating compliance and enforcement risk.
+  - **Layer-1 scalability**: high [[Gas Fee]]s on Ethereum mainnet during peak demand periods have driven migration to layer-2 rollups and alternative layer-1 chains.
+  - **Key management risk**: non-custodial architecture places full responsibility for private key security on users — loss of key means loss of assets.
 
 - ### Relationships
-  - requires [[Smart Contract]]
-  - requires [[Blockchain]]
-  - uses [[Liquidity Pool]]
-  - uses [[Governance Token]]
-  - relatedTo [[DAO Governance]]
-  - relatedTo [[Token Economics]]
+  - requires:: [[Smart Contract]]
+  - requires:: [[Blockchain]]
+  - requires:: [[Oracle]]
+  - requires:: [[Cryptographic Wallet]]
+  - hasPart:: [[Automated Market Maker]]
+  - hasPart:: [[Liquidity Pool]]
+  - hasPart:: [[Flash Loan]]
+  - hasPart:: [[Yield Aggregator]]
+  - uses:: [[Governance Token]]
+  - uses:: [[Stablecoin]]
+  - uses:: [[Ethereum Virtual Machine]]
+  - uses:: [[Token Standard]]
+  - enables:: [[Yield Farming]]
+  - enables:: [[Liquidity Mining]]
+  - enables:: [[Permissionless Lending]]
+  - enables:: [[On-Chain Derivatives]]
+  - dependsOn:: [[Consensus Mechanism]]
+  - dependsOn:: [[Gas Fee]]
+  - relatedTo:: [[DAO Governance]]
+  - relatedTo:: [[Token Economics]]
+  - relatedTo:: [[Maximal Extractable Value]]
+  - relatedTo:: [[Cross-Chain Bridge]]
+  - contrastsWith:: [[Centralised Exchange]]
+  - contrastsWith:: [[Traditional Finance]]
+  - bridges-to:: [[Algorithmic Trading]]
+  - bridges-to:: [[Digital Identity]]
 
-- ### Content
-  - DeFi emerged principally on the Ethereum blockchain from 2018 onwards, enabled by the EVM's Turing-complete Smart Contract execution environment. The Automated Market Maker (AMM) model — pioneered by Uniswap using the constant product formula x*y=k for Liquidity Pools — replaced centralised order books with algorithmically managed token reserves, allowing permissionless token swapping without a matching engine or a counterparty. Liquidity Provision to AMMs became a yield-generating activity, attracting capital and giving rise to liquidity mining programmes that distribute Governance Tokens to incentivise early adoption.
-  - Lending protocols such as Compound and Aave implement over-collateralised lending: borrowers lock collateral (e.g., ETH) worth more than their loan (e.g., stablecoins), with automated liquidation triggered if collateral value falls below a safety threshold. Interest rates are determined by utilisation curves encoded in the Smart Contract rather than by human loan officers. Flash loans — atomically borrowed and repaid within a single transaction — are a distinctly DeFi instrument exploiting blockchain atomicity, used for arbitrage, self-liquidation, and collateral swaps without upfront capital.
-  - DeFi governance is typically on-chain via DAO structures: Governance Token holders submit and vote on protocol parameter changes (fee tiers, collateral ratios, new market listings), with successful proposals executed by time-locked governance contracts. Cross-Chain Governance extensions allow DeFi protocols deployed across multiple chains to coordinate protocol parameters. Key risks in DeFi include smart contract vulnerabilities (which have resulted in large-scale protocol exploits), oracle manipulation attacks, MEV (Maximal Extractable Value) by block producers, and regulatory uncertainty as regulators globally assess the application of financial services regulations to permissionless protocols.
+- ### Standards and Context
+  - **ERC-20 [[Token Standard]]**: the foundational fungible token interface on Ethereum that all DeFi assets comply with, enabling composability across protocols.
+  - **ERC-4626**: the tokenised vault standard that normalises yield-bearing vault interfaces, making DeFi yield aggregators interoperable.
+  - **[[Ethereum Virtual Machine]] (EVM) compatibility**: shared execution environment across Ethereum, Arbitrum, Optimism, Polygon, Avalanche EVM chains enabling portability of DeFi code.
+  - **Chainlink and Pyth [[Oracle]] networks**: de-facto standards for price feed provision used across the majority of major DeFi protocols.
+  - **Uniswap v3 concentrated liquidity**: a protocol innovation adopted broadly as a reference AMM design for capital efficiency.
+  - **MakerDAO Multi-Collateral DAI**: one of the earliest and most studied decentralised stablecoin systems, influencing regulatory frameworks globally.
+  - **Financial Action Task Force (FATF)**: the FATF has issued guidance classifying DeFi protocols as virtual asset service providers (VASPs) in certain jurisdictions when sufficiently decentralised controls are absent, a contested regulatory classification.
+  - **Markets in Crypto-Assets (MiCA)**: the EU MiCA framework (effective 2024–2025) addresses stablecoin issuers and CASPs, with ongoing regulatory analysis of decentralised protocol coverage.
 
 - ### Provenance
-  - sources::
+  - sources:: Ethereum documentation; Uniswap whitepaper; Aave protocol documentation; MakerDAO whitepaper; FATF DeFi guidance; established academic and industry literature on decentralised finance
+  - updated:: 2026-06-13
   - migration-date:: 2026-05-19T00:00:00Z

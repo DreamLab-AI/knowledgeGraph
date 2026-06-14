@@ -55,7 +55,7 @@ public:: true
   "@type": "Class",
   "label": "Alan Turing Institute",
   "definition": "The United Kingdom's national institute for data science and artificial intelligence, founded in 2015 and headquartered in London.",
-  "domain": "general",
+  "domain": "artificial-intelligence",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

@@ -51,7 +51,7 @@ public:: true
   "@type": "Class",
   "label": "SD-JWT VC",
   "definition": "A verifiable credential format that uses Selective Disclosure JSON Web Tokens, allowing a holder to reveal only chosen claims to a verifier. It combines the JWT structure with salted hashes that support selective disclosure.",
-  "domain": "identity",
+  "domain": "security",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

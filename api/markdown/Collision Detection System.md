@@ -21,7 +21,7 @@ public:: true
   "@type": "Class",
   "label": "Collision Detection System",
   "definition": "A computational subsystem that continuously tests whether geometric objects in a simulation or physical environment intersect or are about to intersect, enabling physics engines, robotics planners, and interactive applications to respond to contact events. It combines spatial partitioning structures with narrow-phase geometry tests to balance accuracy against performance.",
-  "domain": "spatial",
+  "domain": "spatial-computing",
   "maturity": "mature",
   "subClassOf": [{"@id": "urn:ngm:class:collision-detection", "label": "Collision Detection"}],
   "relations": {

@@ -4,8 +4,8 @@
   "slug": "community-detection",
   "public": true,
   "classIri": "urn:ngm:class:community-detection",
-  "domain": "graph-theory",
-  "definition": "Community detection is the task of partitioning a network into groups of nodes that are more densely connected internally than with the rest of the graph. It is a core method in network analysis.",
+  "domain": "machine-learning",
+  "definition": "Community detection is the computational task of identifying cohesive subgroups, or communities, within a network graph, where nodes within each group are more densely interconnected than they are with nodes in other groups. Algorithms such as the Louvain and Leiden methods optimise a modularity objective to partition the graph, whilst spectral clustering, label propagation, and stochastic block models offer alternative formulations. The problem is formally NP-hard in its general form, making approximation and heuristic approaches the practical norm. Applications span social-network analysis, bioinformatics, knowledge-graph organisation, recommendation systems, and cybersecurity anomaly detection.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:network-analysis",
@@ -13,31 +13,116 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.74,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:louvain-algorithm",
+        "label": "Louvain Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:leiden-algorithm",
+        "label": "Leiden Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:spectral-clustering",
+        "label": "Spectral Clustering"
+      },
+      {
+        "id": "urn:ngm:class:label-propagation",
+        "label": "Label Propagation"
+      },
+      {
+        "id": "urn:ngm:class:stochastic-block-model",
+        "label": "Stochastic Block Model"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:graph-theory",
         "label": "Graph Theory"
+      },
+      {
+        "id": "urn:ngm:class:modularity-optimisation",
+        "label": "Modularity Optimisation"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:data-aggregation",
         "label": "Data Aggregation"
+      },
+      {
+        "id": "urn:ngm:class:recommendation-systems",
+        "label": "Recommendation Systems"
+      },
+      {
+        "id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph-embedding",
+        "label": "Knowledge Graph Embedding"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:graph-partitioning",
+        "label": "Graph Partitioning"
+      },
+      {
+        "id": "urn:ngm:class:hierarchical-clustering",
+        "label": "Hierarchical Clustering"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-governance",
+        "label": "Blockchain Governance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:graph-neural-networks",
+        "label": "Graph Neural Networks"
+      },
+      {
+        "id": "urn:ngm:class:matrix-factorisation",
+        "label": "Matrix Factorisation"
+      },
+      {
+        "id": "urn:ngm:class:random-walks",
+        "label": "Random Walks"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:social-network-analysis",
+        "label": "Social Network Analysis"
+      },
+      {
+        "id": "urn:ngm:class:link-prediction",
+        "label": "Link Prediction"
+      },
+      {
+        "id": "urn:ngm:class:clustering",
+        "label": "Clustering"
+      },
+      {
+        "id": "urn:ngm:class:network-topology",
+        "label": "Network Topology"
+      }
+    ]
   },
   "wikilinks": [
     {

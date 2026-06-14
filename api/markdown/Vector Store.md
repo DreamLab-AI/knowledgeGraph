@@ -47,7 +47,7 @@ public:: true
   "@type": "Class",
   "label": "Vector Store",
   "definition": "A storage system optimised for holding high-dimensional vector embeddings and retrieving them by similarity. It supports nearest-neighbour search used in semantic retrieval and machine learning applications.",
-  "domain": "data-management",
+  "domain": "data",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

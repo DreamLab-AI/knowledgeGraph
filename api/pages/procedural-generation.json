@@ -5,19 +5,45 @@
   "public": true,
   "classIri": "urn:ngm:class:procedural-generation",
   "domain": "spatial-computing",
-  "definition": "Procedural Generation is the algorithmic creation of content \u2014 including terrain, textures, vegetation, buildings, and narrative elements \u2014 using mathematical functions, noise algorithms, and rule-based systems rather than manual authoring. It is foundational to scalable world-building in games and metaverse platforms, enabling vast, varied environments from compact seed parameters.",
+  "definition": "Procedural Generation is the algorithmic creation of digital content \u2014 including terrain, geometry, textures, vegetation, buildings, soundscapes, quests, and narrative elements \u2014 using mathematical functions, noise algorithms, grammars, and rule-based systems rather than entirely manual authoring. It enables scalable world-building by deriving arbitrarily large, varied outputs from compact parametric seeds, making it foundational to games, simulation, virtual environments, and generative design workflows. Modern procedural generation incorporates machine-learning-guided heuristics alongside classical stochastic sampling, bridging traditional algorithmic design with contemporary AI-driven content synthesis. The technique trades artist-authoring effort for computational cost while preserving statistical variety and stylistic coherence.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:sc-content-and-assets",
-      "label": "Content and Assets"
+      "id": "urn:ngm:class:algorithmic-content-creation",
+      "label": "Algorithmic Content Creation"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:noise-function",
+        "label": "Noise Function"
+      },
+      {
+        "id": "urn:ngm:class:l-system",
+        "label": "L-System"
+      },
+      {
+        "id": "urn:ngm:class:wave-function-collapse",
+        "label": "Wave Function Collapse"
+      },
+      {
+        "id": "urn:ngm:class:voronoi-diagram",
+        "label": "Voronoi Diagram"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:world-building",
@@ -26,12 +52,51 @@
       {
         "id": "urn:ngm:class:procedural-terrain",
         "label": "Procedural Terrain"
+      },
+      {
+        "id": "urn:ngm:class:infinite-world",
+        "label": "Infinite World"
+      },
+      {
+        "id": "urn:ngm:class:level-design",
+        "label": "Level Design"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:stochastic-modelling",
+        "label": "Stochastic Modelling"
+      },
+      {
+        "id": "urn:ngm:class:parametric-design",
+        "label": "Parametric Design"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:manual-content-authoring",
+        "label": "Manual Content Authoring"
+      },
+      {
+        "id": "urn:ngm:class:hand-crafted-level-design",
+        "label": "Hand-Crafted Level Design"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:neural-style-transfer",
+        "label": "Neural Style Transfer"
+      },
+      {
+        "id": "urn:ngm:class:latent-diffusion-model",
+        "label": "Latent Diffusion Model"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:noise-function-library",
@@ -40,19 +105,44 @@
       {
         "id": "urn:ngm:class:3-d-content-generation",
         "label": "3D Content Generation"
+      },
+      {
+        "id": "urn:ngm:class:random-seed",
+        "label": "Random Seed"
+      },
+      {
+        "id": "urn:ngm:class:spatial-indexing",
+        "label": "Spatial Indexing"
       }
     ],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:virtual-world",
+        "label": "Virtual World"
+      },
+      {
+        "id": "urn:ngm:class:open-world-game",
+        "label": "Open-World Game"
+      },
+      {
+        "id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:generative-ai",
-        "label": "Generative AI"
+        "id": "urn:ngm:class:computational-creativity",
+        "label": "Computational Creativity"
       },
       {
-        "id": "urn:ngm:class:game-engine",
-        "label": "Game Engine"
+        "id": "urn:ngm:class:generative-design",
+        "label": "Generative Design"
+      },
+      {
+        "id": "urn:ngm:class:metaverse-content-pipeline",
+        "label": "Metaverse Content Pipeline"
       }
     ]
   },

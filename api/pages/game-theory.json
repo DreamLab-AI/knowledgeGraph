@@ -5,19 +5,45 @@
   "public": true,
   "classIri": "urn:ngm:class:game-theory",
   "domain": "artificial-intelligence",
-  "definition": "Game theory is the mathematical study of strategic interaction among rational agents, providing formal models for analysing decisions when outcomes depend on the choices of multiple actors with potentially conflicting interests. Its core concepts\u2014Nash equilibrium, dominant strategies, cooperative and non-cooperative games, mechanism design, and information economics\u2014are applied across economics, computer science, evolutionary biology, and AI system design.",
+  "definition": "Game theory is the mathematical study of strategic interaction among rational agents, providing formal models for analysing decisions when outcomes depend on the choices of multiple actors with potentially conflicting interests. Founded by von Neumann and Morgenstern (1944) and extended by Nash's equilibrium concept (1950), it encompasses non-cooperative and cooperative game theory, mechanism design, and evolutionary dynamics. Its core solution concepts \u2014 Nash equilibrium, dominant strategy equilibrium, subgame-perfect equilibrium, and correlated equilibrium \u2014 are applied across economics, computer science, evolutionary biology, AI alignment research, and blockchain protocol design.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:economics",
-      "label": "Economics"
+      "id": "urn:ngm:class:decision-theory",
+      "label": "Decision Theory"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.72,
   "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:nash-equilibrium",
+        "label": "Nash Equilibrium"
+      },
+      {
+        "id": "urn:ngm:class:mechanism-design",
+        "label": "Mechanism Design"
+      },
+      {
+        "id": "urn:ngm:class:cooperative-game-theory",
+        "label": "Cooperative Game Theory"
+      },
+      {
+        "id": "urn:ngm:class:evolutionary-game-theory",
+        "label": "Evolutionary Game Theory"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:rational-agency",
+        "label": "Rational Agency"
+      },
+      {
+        "id": "urn:ngm:class:utility-theory",
+        "label": "Utility Theory"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:mechanism-design",
@@ -30,15 +56,36 @@
       {
         "id": "urn:ngm:class:auction-theory",
         "label": "Auction Theory"
+      },
+      {
+        "id": "urn:ngm:class:prediction-markets",
+        "label": "Prediction Market"
+      },
+      {
+        "id": "urn:ngm:class:multi-agent-reinforcement-learning",
+        "label": "Multi-Agent Reinforcement Learning"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:decision-theory",
+        "label": "Decision Theory"
+      }
+    ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:mechanism-design",
-        "label": "Mechanism Design"
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-governance",
+        "label": "Blockchain Governance"
+      },
+      {
+        "id": "urn:ngm:class:swarm-intelligence",
+        "label": "Swarm Intelligence"
       }
     ],
     "uses": [],
@@ -48,8 +95,12 @@
         "label": "Incentive Structures"
       },
       {
-        "id": "urn:ngm:class:prediction-markets",
-        "label": "Prediction Market"
+        "id": "urn:ngm:class:protocol-design",
+        "label": "Protocol Design"
+      },
+      {
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
       }
     ],
     "standardizedBy": [],
@@ -62,6 +113,14 @@
       {
         "id": "urn:ngm:class:agent-based-modelling",
         "label": "Agent-Based Modelling"
+      },
+      {
+        "id": "urn:ngm:class:information-economics",
+        "label": "Information Economics"
+      },
+      {
+        "id": "urn:ngm:class:social-choice-theory",
+        "label": "Social Choice Theory"
       }
     ]
   },

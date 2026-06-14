@@ -5,39 +5,138 @@
   "public": true,
   "classIri": "urn:ngm:class:paris-agreement",
   "domain": "governance",
-  "definition": "An international treaty on climate change adopted in 2015 under which parties commit to limiting global temperature rise and to reporting on their emissions reduction efforts.",
+  "definition": "The Paris Agreement is a legally binding international treaty on climate change, adopted under the United Nations Framework Convention on Climate Change (UNFCCC) at COP21 in December 2015 and entering into force in November 2016. It establishes a long-term global temperature goal, requiring parties to limit the increase in global average temperature to well below 2 degrees Celsius above pre-industrial levels while pursuing efforts to limit warming to 1.5 degrees Celsius. Each signatory submits Nationally Determined Contributions (NDCs) \u2014 self-defined emissions-reduction pledges \u2014 subject to a five-year review and ratchet mechanism designed to progressively strengthen ambition. The treaty also creates a transparency framework for monitoring, reporting, and verification, and provisions for climate finance, technology transfer, and capacity building to support developing nations.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:sustainability",
-      "label": "Sustainability"
+      "id": "urn:ngm:class:international-treaty",
+      "label": "International Treaty"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.75,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:nationally-determined-contribution",
+        "label": "Nationally Determined Contribution"
+      },
+      {
+        "id": "urn:ngm:class:transparency-framework",
+        "label": "Transparency Framework"
+      },
+      {
+        "id": "urn:ngm:class:global-stocktake",
+        "label": "Global Stocktake"
+      }
+    ],
     "requires": [
       {
-        "id": "urn:ngm:class:sustainability",
-        "label": "Sustainability"
+        "id": "urn:ngm:class:carbon-accounting",
+        "label": "Carbon Accounting"
+      },
+      {
+        "id": "urn:ngm:class:emissions-monitoring",
+        "label": "Emissions Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:climate-finance",
+        "label": "Climate Finance"
       }
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:carbon-accounting",
-        "label": "Carbon Accounting"
+        "id": "urn:ngm:class:voluntary-carbon-market",
+        "label": "Voluntary Carbon Market"
+      },
+      {
+        "id": "urn:ngm:class:carbon-credits",
+        "label": "Carbon Credits"
+      },
+      {
+        "id": "urn:ngm:class:net-zero-target",
+        "label": "Net-Zero Target"
+      },
+      {
+        "id": "urn:ngm:class:carbon-offsetting",
+        "label": "Carbon Offsetting"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:sustainability",
+        "label": "Sustainability"
+      },
+      {
+        "id": "urn:ngm:class:climate-governance",
+        "label": "Climate Governance"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:kyoto-protocol",
+        "label": "Kyoto Protocol"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:esg-reporting",
+        "label": "ESG Reporting"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-decarbonisation",
+        "label": "Supply Chain Decarbonisation"
+      },
+      {
+        "id": "urn:ngm:class:digital-mrv",
+        "label": "Digital MRV"
+      }
+    ],
     "uses": [],
     "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:unfccc",
+        "label": "UNFCCC"
+      },
+      {
+        "id": "urn:ngm:class:conference-of-parties",
+        "label": "Conference of Parties"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:unfccc",
+        "label": "UNFCCC"
+      },
+      {
+        "id": "urn:ngm:class:multilateral-environmental-agreement",
+        "label": "Multilateral Environmental Agreement"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cop26",
+        "label": "COP26"
+      },
+      {
+        "id": "urn:ngm:class:ipcc",
+        "label": "IPCC"
+      },
+      {
+        "id": "urn:ngm:class:sustainable-development-goals",
+        "label": "Sustainable Development Goals"
+      },
+      {
+        "id": "urn:ngm:class:just-transition",
+        "label": "Just Transition"
+      },
+      {
+        "id": "urn:ngm:class:loss-and-damage",
+        "label": "Loss and Damage"
+      }
+    ]
   },
   "wikilinks": [
     {

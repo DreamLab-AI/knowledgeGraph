@@ -4,7 +4,7 @@
   "slug": "3-d-modeling-software",
   "public": true,
   "classIri": "urn:ngm:class:3-d-modeling-software",
-  "domain": "spatial",
+  "domain": "spatial-computing",
   "definition": "3D Modeling Software is a category of applications that provide tools for constructing, editing, and organising three-dimensional geometric representations of objects and scenes, typically via polygon mesh editing, subdivision surfaces, NURBS curves, sculpting, or parametric operations. These applications underpin virtually all digital content creation workflows for games, film, architecture, product design, and XR environments. They commonly integrate texturing, rigging, animation, and basic rendering capabilities alongside the core modelling toolkit.",
   "subClassOf": [
     {

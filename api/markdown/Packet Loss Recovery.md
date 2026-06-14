@@ -47,7 +47,7 @@ public:: true
   "@type": "Class",
   "label": "Packet Loss Recovery",
   "definition": "Techniques used to recover from or mitigate the loss of data packets during transmission over a network. They include retransmission, forward error correction, and concealment of missing data.",
-  "domain": "networking",
+  "domain": "infrastructure",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

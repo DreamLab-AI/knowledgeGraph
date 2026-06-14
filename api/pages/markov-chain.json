@@ -4,7 +4,7 @@
   "slug": "markov-chain",
   "public": true,
   "classIri": "urn:ngm:class:markov-chain",
-  "domain": "mathematics",
+  "domain": "machine-learning",
   "definition": "A stochastic process in which the probability of each future state depends only on the current state and not on the sequence of preceding states.",
   "subClassOf": [
     {

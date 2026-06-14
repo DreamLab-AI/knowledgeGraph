@@ -4,24 +4,19 @@
   "slug": "immersive-communication",
   "public": true,
   "classIri": "urn:ngm:class:immersive-communication",
-  "domain": "distributed-collaboration",
-  "definition": "Communication systems and experiences that leverage extended reality (XR) technologies \u2014 including VR meetings, AR collaboration tools, spatial audio conferencing, and mixed reality platforms \u2014 to create spatially-aware interaction environments that transcend conventional 2D video interfaces and convey presence, embodiment, and spatial context.",
+  "domain": "spatial-computing",
+  "definition": "Immersive Communication encompasses communication systems and experiences that leverage extended reality (XR) technologies \u2014 including virtual reality (VR) meetings, augmented reality (AR) collaboration tools, spatial audio conferencing, and mixed reality platforms \u2014 to create spatially-aware, embodied interaction environments that transcend conventional 2D video interfaces. These systems convey presence, embodiment, and spatial context by rendering participants as avatars or volumetric representations within shared virtual or hybrid spaces, enabling natural non-verbal cues, gaze, gesture, and proxemics that flat-screen media cannot replicate. The field draws on human-computer interaction research, telepresence theory, and spatial computing infrastructure to reduce cognitive load and social distance in remote work, education, and social engagement.",
   "subClassOf": [
-    {
-      "id": "urn:ngm:class:dc-telepresence",
-      "label": "Telepresence"
-    },
     {
       "id": "urn:ngm:class:telecollaboration",
       "label": "Telecollaboration"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.72,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [
+    "hasPart": [
       {
         "id": "urn:ngm:class:spatial-audio",
         "label": "Spatial Audio"
@@ -29,32 +24,118 @@
       {
         "id": "urn:ngm:class:avatar",
         "label": "Avatar"
+      },
+      {
+        "id": "urn:ngm:class:volumetric-video",
+        "label": "Volumetric Video"
+      },
+      {
+        "id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
       }
     ],
-    "enables": [],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [
+    "requires": [
+      {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "id": "urn:ngm:class:head-mounted-display",
+        "label": "Head-Mounted Display"
+      },
+      {
+        "id": "urn:ngm:class:low-latency-networking",
+        "label": "Low-Latency Networking"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:remote-collaboration",
+        "label": "Remote Collaboration"
+      },
       {
         "id": "urn:ngm:class:virtual-collaboration",
         "label": "Virtual Collaboration"
       },
       {
-        "id": "urn:ngm:class:remote-collaboration",
-        "label": "Remote Collaboration"
+        "id": "urn:ngm:class:social-vr",
+        "label": "Social VR"
+      },
+      {
+        "id": "urn:ngm:class:presence",
+        "label": "Presence"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:videoconferencing",
+        "label": "Videoconferencing"
+      },
+      {
+        "id": "urn:ngm:class:text-based-communication",
+        "label": "Text-Based Communication"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human-Computer Interaction"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:computer-supported-cooperative-work",
+        "label": "Computer-Supported Cooperative Work"
       }
     ],
     "uses": [
       {
         "id": "urn:ngm:class:metaverse",
         "label": "Metaverse"
+      },
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:mixed-reality",
+        "label": "Mixed Reality"
       }
     ],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:distributed-teamwork",
+        "label": "Distributed Teamwork"
+      },
+      {
+        "id": "urn:ngm:class:virtual-education",
+        "label": "Virtual Education"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:telepresence",
+        "label": "Telepresence"
+      },
+      {
+        "id": "urn:ngm:class:embodied-interaction",
+        "label": "Embodied Interaction"
+      },
+      {
+        "id": "urn:ngm:class:non-verbal-communication",
+        "label": "Non-Verbal Communication"
+      }
+    ]
   },
   "wikilinks": [
     {

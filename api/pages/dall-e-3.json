@@ -4,7 +4,7 @@
   "slug": "dall-e-3",
   "public": true,
   "classIri": "urn:ngm:class:dall-e-3",
-  "domain": "generative-ai",
+  "domain": "ai",
   "definition": "DALL-E 3 is a text-to-image generation model developed by OpenAI that produces images from natural language descriptions. It improves prompt adherence over earlier versions by reformulating user prompts with a language model.",
   "subClassOf": [
     {

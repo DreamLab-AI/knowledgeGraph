@@ -99,7 +99,7 @@ public:: true
   "@type": "Class",
   "label": "Accessibility Domain",
   "definition": "The Accessibility Domain classifies concepts concerned with making products, content, and services usable by people with the widest range of abilities, including those with disabilities. It covers perceivable, operable, and understandable design, assistive technology compatibility, and the standards that define conformance. As a top-level subject classification, it scopes inclusive access rather than general usability or interface aesthetics.",
-  "domain": "accessibility",
+  "domain": "standards",
   "maturity": "emerging",
   "qualityScore": 0.7,
   "subClassOf": [

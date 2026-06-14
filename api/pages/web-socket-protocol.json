@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:web-socket-protocol",
   "domain": "infrastructure",
-  "definition": "The WebSocket Protocol is a standardised full-duplex communication protocol defined in RFC 6455 (2011) that provides a persistent, low-latency bidirectional channel between a client and a server over a single TCP connection. It was designed to overcome the limitations of HTTP polling and long-polling by upgrading an initial HTTP handshake to a persistent framed message channel, enabling servers to push data to clients without client-initiated requests. WebSocket frames have minimal overhead \u2014 a 2-byte header for small messages \u2014 making it suitable for high-frequency data streams such as financial tickers, collaborative editing, gaming, and real-time AI agent communications. It is supported natively in all major browsers and server-side runtimes, and forms the transport layer for many real-time application protocols including STOMP, MQTT-over-WebSocket, and the OpenAI Realtime API.",
+  "definition": "The WebSocket Protocol is a standardised full-duplex communication protocol defined in RFC 6455 (2011) that provides a persistent, low-latency bidirectional channel between a client and a server over a single TCP connection. It was designed to overcome the limitations of HTTP polling and long-polling by upgrading an initial HTTP handshake to a persistent framed message channel, enabling servers to push data to clients without client-initiated requests. WebSocket frames carry minimal overhead \u2014 a 2-byte header for small messages \u2014 making the protocol suitable for high-frequency data streams such as financial tickers, collaborative editing, gaming, and real-time AI agent communications. It is supported natively in all major browsers and server-side runtimes, and forms the transport layer for many higher-level protocols including STOMP, MQTT-over-WebSocket, and the OpenAI Realtime API.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:network-protocol",
@@ -13,11 +13,24 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:transmission-control-protocol",
+        "label": "Transmission Control Protocol"
+      },
+      {
+        "id": "urn:ngm:class:hypertext-transfer-protocol",
+        "label": "Hypertext Transfer Protocol"
+      },
+      {
+        "id": "urn:ngm:class:transport-layer-security",
+        "label": "Transport Layer Security"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:realtime-collaboration",
@@ -26,27 +39,77 @@
       {
         "id": "urn:ngm:class:agent-event-stream",
         "label": "Agent Event Stream"
+      },
+      {
+        "id": "urn:ngm:class:server-push",
+        "label": "Server Push"
+      },
+      {
+        "id": "urn:ngm:class:live-data-streaming",
+        "label": "Live Data Streaming"
       }
     ],
     "dependsOn": [],
-    "implements": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:rfc-6455",
+        "label": "RFC 6455"
+      },
+      {
+        "id": "urn:ngm:class:full-duplex-communication",
+        "label": "Full Duplex Communication"
+      }
+    ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:g-rpc",
         "label": "gRPC"
+      },
+      {
+        "id": "urn:ngm:class:server-sent-events",
+        "label": "Server-Sent Events"
+      },
+      {
+        "id": "urn:ngm:class:http-long-polling",
+        "label": "HTTP Long Polling"
+      },
+      {
+        "id": "urn:ngm:class:webrtc",
+        "label": "WebRTC"
       }
     ],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:multi-agent-system",
+        "label": "Multi-Agent System"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:networking-infrastructure",
         "label": "Networking Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:tcp-connection",
+        "label": "TCP Connection"
       }
     ],
     "supports": [
       {
         "id": "urn:ngm:class:asynchronous-communication",
         "label": "Asynchronous Communication"
+      },
+      {
+        "id": "urn:ngm:class:event-driven-architecture",
+        "label": "Event Driven Architecture"
+      },
+      {
+        "id": "urn:ngm:class:publish-subscribe-pattern",
+        "label": "Publish Subscribe Pattern"
       }
     ],
     "standardizedBy": [],
@@ -61,12 +124,12 @@
         "label": "Realtime Communication"
       },
       {
-        "id": "urn:ngm:class:server-sent-events",
-        "label": "Server-Sent Events"
+        "id": "urn:ngm:class:http-2",
+        "label": "HTTP/2"
       },
       {
-        "id": "urn:ngm:class:event-driven-architecture",
-        "label": "Event Driven Architecture"
+        "id": "urn:ngm:class:mqtt",
+        "label": "MQTT"
       }
     ]
   },

@@ -4,7 +4,7 @@
   "slug": "face-recognition",
   "public": true,
   "classIri": "urn:ngm:class:face-recognition",
-  "domain": "computer-vision",
+  "domain": "ai",
   "definition": "A biometric technique that identifies or verifies a person from an image or video of their face by comparing facial features against stored templates. It is a subfield of computer vision and biometrics.",
   "subClassOf": [
     {

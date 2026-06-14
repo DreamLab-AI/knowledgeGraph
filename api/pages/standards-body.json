@@ -4,35 +4,136 @@
   "slug": "standards-body",
   "public": true,
   "classIri": "urn:ngm:class:standards-body",
-  "domain": "infrastructure",
-  "definition": "Standards Body is a technology infrastructure concept and a type of infrastructure.",
+  "domain": "governance",
+  "definition": "A standards body is a formal organisation that develops, publishes, and maintains technical specifications, protocols, and reference implementations through structured, consensus-based processes involving multiple stakeholders. Such bodies define interoperability requirements that enable products and services from different vendors to work together reliably, and they may operate at national, regional, or international scope. Governance structures typically include member organisations, technical working groups, public review periods, and intellectual-property licensing frameworks (e.g. royalty-free or FRAND). Well-known examples include ISO, IEC, IEEE, W3C, IETF, NIST, Khronos Group, and the Open Geospatial Consortium.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:infra-legal-and-regulatory",
-      "label": "Legal and Regulatory"
+      "id": "urn:ngm:class:governance-institution",
+      "label": "Governance Institution"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.73,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
-    "implements": [
+    "hasPart": [
       {
-        "id": "urn:ngm:class:technology-infrastructure-domain",
-        "label": "infrastructure"
+        "id": "urn:ngm:class:technical-working-group",
+        "label": "Technical Working Group"
+      },
+      {
+        "id": "urn:ngm:class:conformance-test-suite",
+        "label": "Conformance Test Suite"
+      },
+      {
+        "id": "urn:ngm:class:specification-document",
+        "label": "Specification Document"
       }
     ],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:consensus-process",
+        "label": "Consensus Process"
+      },
+      {
+        "id": "urn:ngm:class:intellectual-property-licensing",
+        "label": "Intellectual Property Licensing"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
+      },
+      {
+        "id": "urn:ngm:class:vendor-neutrality",
+        "label": "Vendor Neutrality"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:stakeholder-participation",
+        "label": "Stakeholder Participation"
+      },
+      {
+        "id": "urn:ngm:class:technical-expertise",
+        "label": "Technical Expertise"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:open-governance",
+        "label": "Open Governance"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:de-facto-standard",
+        "label": "De Facto Standard"
+      },
+      {
+        "id": "urn:ngm:class:proprietary-specification",
+        "label": "Proprietary Specification"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-safety-framework",
+        "label": "AI Safety Framework"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing-standard",
+        "label": "Spatial Computing Standard"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-protocol",
+        "label": "Blockchain Protocol"
+      }
+    ],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:protocol-specification",
+        "label": "Protocol Specification"
+      },
+      {
+        "id": "urn:ngm:class:data-format",
+        "label": "Data Format"
+      },
+      {
+        "id": "urn:ngm:class:api-specification",
+        "label": "API Specification"
+      }
+    ],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:governance-ecosystem",
+        "label": "Governance Ecosystem"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-framework",
+        "label": "Regulatory Framework"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:policy-framework",
+        "label": "Policy Framework"
+      },
+      {
+        "id": "urn:ngm:class:certification-scheme",
+        "label": "Certification Scheme"
+      },
+      {
+        "id": "urn:ngm:class:industry-consortium",
+        "label": "Industry Consortium"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

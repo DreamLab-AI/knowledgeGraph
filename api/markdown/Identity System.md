@@ -59,7 +59,7 @@ public:: true
   "@type": "Class",
   "label": "Identity System",
   "definition": "An organised set of processes and technologies used to establish, manage and verify the identities of subjects within a defined context.",
-  "domain": "general",
+  "domain": "security",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

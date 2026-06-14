@@ -4,35 +4,156 @@
   "slug": "community-governance",
   "public": true,
   "classIri": "urn:ngm:class:community-governance",
-  "domain": "artificial-intelligence",
-  "definition": "Community Governance is an artificial intelligence concept.",
+  "domain": "governance",
+  "definition": "Community Governance refers to the structures, processes, and norms through which a community of stakeholders collectively makes decisions, allocates resources, resolves disputes, and sets rules for shared systems or commons. It encompasses formal mechanisms such as voting protocols, proposal systems, and constitutional rules, as well as informal norms of participation, legitimacy, and accountability. Community governance may be implemented on-chain through smart contracts and token-weighted voting in decentralised autonomous organisations, or off-chain through forum deliberation, elected councils, and working groups in open-source projects, platform cooperatives, and public institutions. The field draws on political science, institutional economics, commons theory, and distributed systems to design governance models that are simultaneously legitimate, efficient, and resistant to capture.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ai-governance-and-ethics",
-      "label": "AI Governance and Ethics"
+      "id": "urn:ngm:class:decentralised-governance",
+      "label": "Decentralised Governance"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.74,
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:artificial-intelligence",
-        "label": "artificial-intelligence"
+        "id": "urn:ngm:class:voting-mechanism",
+        "label": "Voting Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:proposal-system",
+        "label": "Proposal System"
+      },
+      {
+        "id": "urn:ngm:class:dispute-resolution",
+        "label": "Dispute Resolution"
+      },
+      {
+        "id": "urn:ngm:class:treasury-management",
+        "label": "Treasury Management"
       }
     ],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:stakeholder-participation",
+        "label": "Stakeholder Participation"
+      },
+      {
+        "id": "urn:ngm:class:accountability-mechanisms",
+        "label": "Accountability Mechanisms"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:collective-decision-making",
+        "label": "Collective Decision-Making"
+      },
+      {
+        "id": "urn:ngm:class:commons-management",
+        "label": "Commons Management"
+      },
+      {
+        "id": "urn:ngm:class:protocol-upgrade",
+        "label": "Protocol Upgrade"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:social-contract",
+        "label": "Social Contract"
+      },
+      {
+        "id": "urn:ngm:class:legitimacy",
+        "label": "Legitimacy"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:corporate-governance",
+        "label": "Corporate Governance"
+      },
+      {
+        "id": "urn:ngm:class:centralised-control",
+        "label": "Centralised Control"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "id": "urn:ngm:class:digital-commons",
+        "label": "Digital Commons"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:token-voting",
+        "label": "Token Voting"
+      },
+      {
+        "id": "urn:ngm:class:quadratic-voting",
+        "label": "Quadratic Voting"
+      },
+      {
+        "id": "urn:ngm:class:multisig-wallet",
+        "label": "Multisig Wallet"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "id": "urn:ngm:class:open-source-project",
+        "label": "Open-Source Project"
+      },
+      {
+        "id": "urn:ngm:class:platform-cooperative",
+        "label": "Platform Cooperative"
+      }
+    ],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:decentralised-governance",
+        "label": "Decentralised Governance"
+      },
+      {
+        "id": "urn:ngm:class:institutional-design",
+        "label": "Institutional Design"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ostrom-principles",
+        "label": "Ostrom Principles"
+      },
+      {
+        "id": "urn:ngm:class:metagovernance",
+        "label": "Metagovernance"
+      },
+      {
+        "id": "urn:ngm:class:rough-consensus",
+        "label": "Rough Consensus"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -5,22 +5,55 @@
   "public": true,
   "classIri": "urn:ngm:class:texture-mapping",
   "domain": "spatial-computing",
-  "definition": "Texture Mapping is the technique of projecting a 2D image (texture) onto a 3D surface to add surface detail, colour, and material appearance without increasing geometric complexity. Common forms include UV mapping, normal mapping, and physically-based rendering (PBR) texture sets.",
+  "definition": "Texture mapping is the computer graphics technique of applying a 2D image (texture) to the surface of a 3D geometric model so as to simulate surface colour, roughness, reflectance, and fine structural detail without subdividing the underlying mesh. The process involves establishing a correspondence between 3D surface points and 2D texture coordinates (UV space), then sampling the texture through a pipeline that handles filtering, mipmapping, and perspective-correct interpolation. Modern pipelines extend the concept to multi-channel PBR texture sets (albedo, metalness, roughness, normal, ambient-occlusion, emissive) that together drive physically-based shading models, enabling photorealistic rendering in both real-time and offline contexts.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:sc-display-and-rendering",
-      "label": "Display and Rendering"
+      "id": "urn:ngm:class:computer-graphics",
+      "label": "Computer Graphics"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "emerging",
+  "qualityScore": 0.72,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:uv-mapping",
+        "label": "UV Mapping"
+      },
+      {
+        "id": "urn:ngm:class:normal-mapping",
+        "label": "Normal Mapping"
+      },
+      {
+        "id": "urn:ngm:class:mipmap",
+        "label": "Mipmap"
+      },
+      {
+        "id": "urn:ngm:class:texture-atlas",
+        "label": "Texture Atlas"
+      },
+      {
+        "id": "urn:ngm:class:bump-mapping",
+        "label": "Bump Mapping"
+      }
+    ],
     "requires": [
       {
-        "id": "urn:ngm:class:computer-graphics",
-        "label": "Computer Graphics"
+        "id": "urn:ngm:class:uv-unwrapping",
+        "label": "UV Unwrapping"
+      },
+      {
+        "id": "urn:ngm:class:rasterisation",
+        "label": "Rasterisation"
+      },
+      {
+        "id": "urn:ngm:class:pixel-shader",
+        "label": "Pixel Shader"
+      },
+      {
+        "id": "urn:ngm:class:gpu",
+        "label": "GPU"
       }
     ],
     "enables": [
@@ -29,37 +62,98 @@
         "label": "Real-Time Rendering"
       },
       {
+        "id": "urn:ngm:class:physically-based-rendering",
+        "label": "Physically Based Rendering"
+      },
+      {
+        "id": "urn:ngm:class:photorealism",
+        "label": "Photorealism"
+      },
+      {
         "id": "urn:ngm:class:differentiable-rendering",
         "label": "Differentiable Rendering"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:displacement-mapping",
+        "label": "Displacement Mapping"
+      },
+      {
+        "id": "urn:ngm:class:procedural-material",
+        "label": "Procedural Material"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:neural-radiance-field",
+        "label": "Neural Radiance Field"
+      },
+      {
+        "id": "urn:ngm:class:generative-adversarial-network",
+        "label": "Generative Adversarial Network"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:procedural-texture",
         "label": "Procedural Texture"
       },
       {
-        "id": "urn:ngm:class:pixel-shader",
-        "label": "Pixel Shader"
-      },
-      {
         "id": "urn:ngm:class:compute-shader",
         "label": "Compute Shader"
+      },
+      {
+        "id": "urn:ngm:class:texture-compression",
+        "label": "Texture Compression"
       }
     ],
-    "supports": [],
-    "standardizedBy": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:khronos-group",
+        "label": "Khronos Group"
+      },
+      {
+        "id": "urn:ngm:class:opengl",
+        "label": "OpenGL"
+      }
+    ],
     "partOf": [
       {
         "id": "urn:ngm:class:3-d-rendering-engine",
         "label": "3D Rendering Engine"
+      },
+      {
+        "id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
       }
     ],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:material-definition-language",
+        "label": "Material Definition Language"
+      },
+      {
+        "id": "urn:ngm:class:shader",
+        "label": "Shader"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

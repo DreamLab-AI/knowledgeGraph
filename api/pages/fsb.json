@@ -4,8 +4,8 @@
   "slug": "fsb",
   "public": true,
   "classIri": "urn:ngm:class:fsb",
-  "domain": "governance",
-  "definition": "The Financial Stability Board, an international body that monitors the global financial system and makes recommendations to promote financial stability.",
+  "domain": "finance",
+  "definition": "The Financial Stability Board (FSB) is an international body established in 2009 by the G20 that monitors and makes recommendations about the global financial system. It coordinates the work of national financial authorities and international standard-setting bodies to develop and promote effective regulatory, supervisory, and other financial sector policies. The FSB addresses vulnerabilities in financial markets, oversees the implementation of agreed reforms, and assesses systemic risks arising from entities, activities, and instruments across the global financial system, including emerging risks from crypto-assets, non-bank financial intermediation, and climate-related financial exposures.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:financial-regulation",
@@ -13,31 +13,138 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.74,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:plenary",
+        "label": "Plenary"
+      },
+      {
+        "id": "urn:ngm:class:standing-committee",
+        "label": "Standing Committee"
+      },
+      {
+        "id": "urn:ngm:class:regional-consultative-group",
+        "label": "Regional Consultative Group"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:financial-regulation",
         "label": "Financial Regulation"
+      },
+      {
+        "id": "urn:ngm:class:international-coordination",
+        "label": "International Coordination"
+      },
+      {
+        "id": "urn:ngm:class:g20",
+        "label": "G20"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:financial-stability",
         "label": "Financial Stability"
+      },
+      {
+        "id": "urn:ngm:class:systemic-risk-management",
+        "label": "Systemic Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:cross-border-regulatory-cooperation",
+        "label": "Cross-Border Regulatory Cooperation"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:imf",
+        "label": "IMF"
+      },
+      {
+        "id": "urn:ngm:class:bis",
+        "label": "BIS"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:ai-in-finance",
+        "label": "AI in Finance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:peer-review",
+        "label": "Peer Review"
+      },
+      {
+        "id": "urn:ngm:class:stress-testing",
+        "label": "Stress Testing"
+      },
+      {
+        "id": "urn:ngm:class:data-reporting",
+        "label": "Data Reporting"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:macroprudential-policy",
+        "label": "Macroprudential Policy"
+      },
+      {
+        "id": "urn:ngm:class:resolution-framework",
+        "label": "Resolution Framework"
+      },
+      {
+        "id": "urn:ngm:class:too-big-to-fail",
+        "label": "Too Big To Fail"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:basel-committee",
+        "label": "Basel Committee"
+      },
+      {
+        "id": "urn:ngm:class:iosco",
+        "label": "IOSCO"
+      },
+      {
+        "id": "urn:ngm:class:iais",
+        "label": "IAIS"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:systemic-risk",
+        "label": "Systemic Risk"
+      },
+      {
+        "id": "urn:ngm:class:financial-system",
+        "label": "Financial System"
+      },
+      {
+        "id": "urn:ngm:class:non-bank-financial-intermediation",
+        "label": "Non-Bank Financial Intermediation"
+      },
+      {
+        "id": "urn:ngm:class:crypto-asset-regulation",
+        "label": "Crypto-Asset Regulation"
+      },
+      {
+        "id": "urn:ngm:class:climate-related-financial-risk",
+        "label": "Climate-Related Financial Risk"
+      }
+    ]
   },
   "wikilinks": [
     {

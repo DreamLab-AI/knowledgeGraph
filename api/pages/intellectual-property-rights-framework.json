@@ -4,56 +4,145 @@
   "slug": "intellectual-property-rights-framework",
   "public": true,
   "classIri": "urn:ngm:class:intellectual-property-rights-framework",
-  "domain": "infrastructure",
-  "definition": "A legal right granting creators exclusive control over reproduction, distribution, adaptation, and public performance of original works for a defined term. In AI and metaverse contexts, copyright raises contested questions about ownership of AI-generated content, the legality of training data ingestion, and rights management for user-created assets within virtual platforms.",
+  "domain": "governance",
+  "definition": "An Intellectual Property Rights Framework is the structured system of legal doctrines, statutes, treaties, and enforcement mechanisms that grant creators and innovators exclusive, time-limited rights over their intangible works \u2014 encompassing copyright, patent, trade mark, and trade secret regimes. The framework defines conditions of ownership, permissible use, licensing, and transfer of rights, balancing the incentive to create against the public interest in open knowledge. In the context of AI, spatial computing, and distributed digital environments, the framework is under active re-negotiation as autonomous generation, data-intensive training, and cross-jurisdictional virtual economies challenge foundational assumptions about authorship and originality.",
   "subClassOf": [
-    {
-      "id": "urn:ngm:class:infra-legal-and-regulatory",
-      "label": "Legal and Regulatory"
-    },
     {
       "id": "urn:ngm:class:legal-framework",
       "label": "Legal Framework"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "emerging",
+  "qualityScore": 0.72,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:copyright",
+        "label": "Copyright"
+      },
+      {
+        "id": "urn:ngm:class:patent-law",
+        "label": "Patent Law"
+      },
+      {
+        "id": "urn:ngm:class:trade-mark",
+        "label": "Trade Mark"
+      },
+      {
+        "id": "urn:ngm:class:trade-secret",
+        "label": "Trade Secret"
+      },
+      {
+        "id": "urn:ngm:class:licensing",
+        "label": "Licensing"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:legal-compliance",
+        "label": "Legal Compliance"
+      },
+      {
+        "id": "urn:ngm:class:digital-rights-management",
+        "label": "Digital Rights Management"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:open-source-licensing",
+        "label": "Open-Source Licensing"
+      },
+      {
+        "id": "urn:ngm:class:technology-transfer",
+        "label": "Technology Transfer"
+      },
+      {
+        "id": "urn:ngm:class:creative-commons",
+        "label": "Creative Commons"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:generative-ai",
         "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:open-data",
+        "label": "Open Data"
+      },
+      {
+        "id": "urn:ngm:class:public-domain",
+        "label": "Public Domain"
       }
     ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:ai-governance",
         "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "id": "urn:ngm:class:non-fungible-token",
+        "label": "Non-Fungible Token"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
       }
     ],
     "uses": [],
     "supports": [
       {
-        "id": "urn:ngm:class:legal-compliance",
-        "label": "Legal Compliance"
+        "id": "urn:ngm:class:digital-rights",
+        "label": "Digital Rights"
+      },
+      {
+        "id": "urn:ngm:class:content-monetisation",
+        "label": "Content Monetisation"
+      },
+      {
+        "id": "urn:ngm:class:innovation-ecosystem",
+        "label": "Innovation Ecosystem"
       }
     ],
-    "standardizedBy": [],
-    "partOf": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:world-intellectual-property-organization",
+        "label": "World Intellectual Property Organization"
+      },
+      {
+        "id": "urn:ngm:class:trips-agreement",
+        "label": "TRIPS Agreement"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:legal-framework",
+        "label": "Legal Framework"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:digital-rights",
         "label": "Digital Rights"
       },
       {
-        "id": "urn:ngm:class:digital-rights-management",
-        "label": "Digital Rights Management"
+        "id": "urn:ngm:class:content-moderation",
+        "label": "Content Moderation"
+      },
+      {
+        "id": "urn:ngm:class:fair-use",
+        "label": "Fair Use"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
       }
     ]
   },

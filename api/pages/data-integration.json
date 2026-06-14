@@ -4,20 +4,46 @@
   "slug": "data-integration",
   "public": true,
   "classIri": "urn:ngm:class:data-integration",
-  "domain": "infrastructure",
-  "definition": "Data Integration is the process of combining data from heterogeneous sources into a unified, consistent view suitable for analysis, model training, or operational use. It involves ETL/ELT pipelines, schema harmonisation, semantic mapping, and API-based federation. In metaverse and AI contexts, data integration connects sensor streams, user telemetry, digital-twin feeds, and blockchain records into coherent data products.",
+  "domain": "data",
+  "definition": "Data Integration is the set of processes, architectures, and tools that combine data from multiple heterogeneous sources \u2014 including relational databases, APIs, event streams, file systems, and third-party services \u2014 into a unified, consistent, and queryable representation suitable for analytics, machine learning, or operational workloads. It encompasses extract-transform-load (ETL) and extract-load-transform (ELT) pipelines, schema harmonisation, semantic mapping, identity resolution, and real-time federation patterns. Modern data integration extends beyond batch movement to include change-data capture (CDC), streaming integration via message brokers, and virtual federation through query engines, enabling organisations to maintain a single source of truth across distributed data estates. In AI and spatial-computing contexts, data integration connects sensor telemetry, digital-twin feeds, user-behaviour streams, and knowledge-graph stores into coherent data products that power downstream inference and immersive experiences.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:infra-data-management",
+      "id": "urn:ngm:class:data-management",
       "label": "Data Management"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "emerging",
+  "qualityScore": 0.72,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:etl-pipeline",
+        "label": "ETL Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:change-data-capture",
+        "label": "Change Data Capture"
+      },
+      {
+        "id": "urn:ngm:class:schema-harmonisation",
+        "label": "Schema Harmonisation"
+      },
+      {
+        "id": "urn:ngm:class:identity-resolution",
+        "label": "Identity Resolution"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:metadata-management",
+        "label": "Metadata Management"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:data-interoperability",
@@ -26,35 +52,86 @@
       {
         "id": "urn:ngm:class:semantic-interoperability",
         "label": "Semantic Interoperability"
-      }
-    ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [
-      {
-        "id": "urn:ngm:class:etl-pipeline",
-        "label": "ETL Pipeline"
       },
       {
-        "id": "urn:ngm:class:api-gateway",
-        "label": "API Gateway"
+        "id": "urn:ngm:class:data-warehouse",
+        "label": "Data Warehouse"
+      },
+      {
+        "id": "urn:ngm:class:data-lakehouse",
+        "label": "Data Lakehouse"
+      },
+      {
+        "id": "urn:ngm:class:real-time-analytics",
+        "label": "Real-Time Analytics"
       }
     ],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:data-quality",
+        "label": "Data Quality"
+      },
       {
         "id": "urn:ngm:class:interoperability",
         "label": "Interoperability"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:data-federation",
+        "label": "Data Federation"
+      },
+      {
+        "id": "urn:ngm:class:data-replication",
+        "label": "Data Replication"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      },
+      {
+        "id": "urn:ngm:class:message-broker",
+        "label": "Message Broker"
       },
       {
         "id": "urn:ngm:class:data-pipeline",
         "label": "Data Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:data-catalog",
+        "label": "Data Catalogue"
       }
-    ]
+    ],
+    "supports": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:sql",
+        "label": "SQL"
+      },
+      {
+        "id": "urn:ngm:class:open-lineage",
+        "label": "OpenLineage"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

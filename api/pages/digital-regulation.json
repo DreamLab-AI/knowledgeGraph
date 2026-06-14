@@ -4,19 +4,36 @@
   "slug": "digital-regulation",
   "public": true,
   "classIri": "urn:ngm:class:digital-regulation",
-  "domain": "artificial-intelligence",
-  "definition": "Digital Regulation encompasses the legal frameworks, policy instruments, and enforcement mechanisms that govern the development, deployment, and use of digital technologies, including AI systems, digital platforms, and data-driven services. It addresses algorithmic accountability, platform liability, data sovereignty, content moderation obligations, and cross-border regulatory harmonisation to balance innovation incentives with public interest protections.",
+  "domain": "governance",
+  "definition": "Digital Regulation is the body of law, policy instruments, technical standards, and enforcement mechanisms that govern the development, deployment, operation, and use of digital technologies \u2014 including artificial intelligence systems, online platforms, data-driven services, and digital communications infrastructure. It addresses algorithmic accountability, platform liability, data sovereignty, content moderation obligations, cybersecurity requirements, and cross-border regulatory harmonisation, aiming to balance innovation incentives with fundamental rights protections, market competition, and public safety objectives. Digital Regulation operates across multiple jurisdictional layers \u2014 supranational, national, and sector-specific \u2014 and increasingly relies on regulatory sandboxes, conformity assessments, and co-regulatory models that involve both government bodies and industry stakeholders. Its scope has expanded rapidly with the proliferation of AI, cloud computing, and large-scale data ecosystems, making it a central mechanism for translating societal values into enforceable technical and operational constraints.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ai-governance-and-ethics",
-      "label": "AI Governance and Ethics"
+      "id": "urn:ngm:class:governance",
+      "label": "Governance"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.72,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:algorithmic-accountability",
+        "label": "Algorithmic Accountability"
+      },
+      {
+        "id": "urn:ngm:class:content-moderation",
+        "label": "Content Moderation"
+      },
+      {
+        "id": "urn:ngm:class:data-sovereignty",
+        "label": "Data Sovereignty"
+      },
+      {
+        "id": "urn:ngm:class:platform-liability",
+        "label": "Platform Liability"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:regulatory-framework",
@@ -25,6 +42,10 @@
       {
         "id": "urn:ngm:class:governance",
         "label": "Governance"
+      },
+      {
+        "id": "urn:ngm:class:compliance",
+        "label": "Compliance"
       }
     ],
     "enables": [
@@ -33,16 +54,72 @@
         "label": "AI Safety"
       },
       {
-        "id": "urn:ngm:class:algorithmic-accountability",
-        "label": "Algorithmic Accountability"
+        "id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      },
+      {
+        "id": "urn:ngm:class:digital-rights",
+        "label": "Digital Rights"
+      },
+      {
+        "id": "urn:ngm:class:consumer-protection",
+        "label": "Consumer Protection"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:policy-framework",
+        "label": "Policy Framework"
+      },
+      {
+        "id": "urn:ngm:class:standards",
+        "label": "Standards"
+      },
+      {
+        "id": "urn:ngm:class:enforcement",
+        "label": "Enforcement"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:self-regulation",
+        "label": "Self-Regulation"
+      },
+      {
+        "id": "urn:ngm:class:deregulation",
+        "label": "Deregulation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-governance-and-ethics",
+        "label": "AI Governance and Ethics"
+      },
+      {
+        "id": "urn:ngm:class:digital-trust",
+        "label": "Digital Trust"
+      },
+      {
+        "id": "urn:ngm:class:market-competition",
+        "label": "Market Competition"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
@@ -51,8 +128,16 @@
         "label": "AI Ethics"
       },
       {
-        "id": "urn:ngm:class:content-moderation",
-        "label": "Content Moderation"
+        "id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      },
+      {
+        "id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      },
+      {
+        "id": "urn:ngm:class:intellectual-property",
+        "label": "Intellectual Property"
       }
     ]
   },

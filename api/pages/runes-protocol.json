@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:runes-protocol",
   "domain": "blockchain",
-  "definition": "A protocol for issuing fungible tokens on Bitcoin that records token data within transaction outputs using the unspent transaction output model.",
+  "definition": "Runes Protocol is a fungible token standard for the Bitcoin blockchain, introduced by Casey Rodarmor in 2024, that encodes token creation and transfer instructions directly into transaction outputs using the UTXO model. Unlike account-based token systems, Runes attaches a OP_RETURN-stored protocol message (a Runestone) to each transaction, assigning token balances to specific outputs so that ownership is tracked through spendable transaction outputs rather than a separate ledger. The protocol is designed to be more on-chain efficient than earlier Bitcoin-native token conventions such as BRC-20 and Ordinals-based token schemes, minimising UTXO proliferation while remaining fully compatible with the base-layer Bitcoin settlement mechanism. It reached significant ecosystem traction following its mainnet launch at the Bitcoin halving block in April 2024.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:token-standard",
@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "emerging",
   "relationships": {
     "hasPart": [],
@@ -21,23 +21,100 @@
       {
         "id": "urn:ngm:class:utxo",
         "label": "UTXO"
+      },
+      {
+        "id": "urn:ngm:class:op-return",
+        "label": "OP_RETURN"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-transaction",
+        "label": "Bitcoin Transaction"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:fungible-token",
         "label": "Fungible Token"
+      },
+      {
+        "id": "urn:ngm:class:token-minting",
+        "label": "Token Minting"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-exchange",
+        "label": "Decentralised Exchange"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:token-standard",
+        "label": "Token Standard"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:brc-20",
+        "label": "BRC-20"
+      },
+      {
+        "id": "urn:ngm:class:ordinals-protocol",
+        "label": "Ordinals Protocol"
+      },
+      {
+        "id": "urn:ngm:class:erc-20",
+        "label": "ERC-20"
+      },
+      {
+        "id": "urn:ngm:class:colored-coins",
+        "label": "Colored Coins"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol",
+        "label": "Bitcoin Proof-of-Work Protocol"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-transaction",
+        "label": "Blockchain Transaction"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:bitcoin-script",
+        "label": "Bitcoin Script"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "id": "urn:ngm:class:non-fungible-token",
+        "label": "Non-Fungible Token"
+      },
+      {
+        "id": "urn:ngm:class:tokenisation",
+        "label": "Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-work",
+        "label": "Proof of Work"
+      }
+    ]
   },
   "wikilinks": [
     {

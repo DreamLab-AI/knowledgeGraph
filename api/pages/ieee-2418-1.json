@@ -4,8 +4,8 @@
   "slug": "ieee-2418-1",
   "public": true,
   "classIri": "urn:ngm:class:ieee-2418-1",
-  "domain": "standards",
-  "definition": "IEEE 2418.1 defines a framework for the use of blockchain in Internet of Things applications, including a common reference, terminology and architectural building blocks.",
+  "domain": "blockchain",
+  "definition": "IEEE 2418.1 is the IEEE Standard for the Framework of Blockchain Use in Internet of Things (IoT), establishing a common vocabulary, reference architecture, and conceptual building blocks for integrating distributed ledger technology with IoT systems. It specifies the relationship between blockchain components and IoT devices, defines trust and security requirements for IoT data provenance, and provides a foundation for interoperability across heterogeneous IoT deployments. The standard addresses data integrity, device identity, and transactional automation through smart contracts within constrained IoT environments.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:technical-standard",
@@ -13,26 +13,126 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:reference-architecture",
+        "label": "Reference Architecture"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-iot-terminology",
+        "label": "Blockchain IoT Terminology"
+      }
+    ],
     "requires": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:iot-data-provenance",
+        "label": "IoT Data Provenance"
+      },
+      {
+        "id": "urn:ngm:class:device-identity-management",
+        "label": "Device Identity Management"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:iot-interoperability",
+        "label": "IoT Interoperability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:iso-iec-30141",
+        "label": "ISO/IEC 30141"
+      },
+      {
+        "id": "urn:ngm:class:w3c-web-of-things",
+        "label": "W3C Web of Things"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash",
+        "label": "Cryptographic Hash"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:supply-chain-traceability",
+        "label": "Supply Chain Traceability"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:data-integrity",
+        "label": "Data Integrity"
+      }
+    ],
+    "standardizedBy": [
       {
         "id": "urn:ngm:class:ieee",
         "label": "IEEE"
       }
     ],
-    "enables": [],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ieee-2418-2",
+        "label": "IEEE 2418.2"
+      },
+      {
+        "id": "urn:ngm:class:ieee-2418-3",
+        "label": "IEEE 2418.3"
+      },
+      {
+        "id": "urn:ngm:class:oneM2M",
+        "label": "oneM2M"
+      },
+      {
+        "id": "urn:ngm:class:hyperledger-fabric",
+        "label": "Hyperledger Fabric"
+      }
+    ]
   },
   "wikilinks": [
     {

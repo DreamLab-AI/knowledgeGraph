@@ -21,7 +21,7 @@ public:: true
   "@type": "Class",
   "label": "Stereo Vision",
   "definition": "Stereo vision is a computational technique that recovers metric depth information from a scene by analysing the horizontal displacement (disparity) between corresponding points in two or more rectified images captured from laterally separated viewpoints, mimicking the binocular parallax used by human and animal visual systems. The resulting dense disparity maps are converted into 3D point clouds or depth maps for downstream perception tasks.",
-  "domain": "spatial",
+  "domain": "spatial-computing",
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}],
   "relations": {

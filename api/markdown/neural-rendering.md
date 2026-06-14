@@ -1,26 +1,99 @@
 - ### Definition
-  - Neural Rendering combines deep neural networks with classical rendering pipelines to synthesise photorealistic images of 3D scenes from novel viewpoints. Techniques such as Neural Radiance Fields (NeRF) represent scenes as continuous volumetric functions enabling high-fidelity view synthesis from sparse image collections. Neural rendering underpins photorealistic telepresence, 3D asset generation, and immersive environment reconstruction for spatial computing applications.
+  - Neural Rendering is a family of techniques that use [[Deep Learning]] models to represent and synthesise the visual appearance of 3D scenes, bridging [[Computer Graphics]] and [[Computer Vision]]. By training neural networks to encode scene geometry, surface materials, and lighting as learnable parameters, these methods enable high-fidelity [[Novel View Synthesis]] from sparse captured images. Core approaches such as [[Neural Radiance Field]] (NeRF) and [[Gaussian Splatting]] have redefined the boundary between classical rendering pipelines and data-driven image generation, enabling applications in [[Augmented Reality]], photorealistic simulation, and [[Digital Twin]] construction.
 
-- ### Semantic Classification
-  - owl-class:: distributed-collaboration:NeuralRendering
-  - owl-role:: concept
+- ### Overview
+  - Neural Rendering emerged as a discipline in the early 2020s when implicit neural representations proved capable of encoding scene radiance with sufficient fidelity for photorealistic synthesis.
+  - Unlike classical pipelines that rely on explicit geometric primitives (polygons, voxels), neural rendering stores scene information in network weights and queries it via differentiable forward passes during synthesis.
+  - The field is distinct from pure generative image models (GANs, diffusion) in that it explicitly models 3D scene structure and view-dependent appearance, enabling geometric consistency across viewpoints.
+  - It is designated as an **emerging** maturity field: research prototypes have moved rapidly into production (Apple Vision Pro, Google Immersive View, NVIDIA Instant NeRF), but standardised pipelines and hardware acceleration are still maturing.
+  - Neural Rendering occupies the intersection of [[Computer Vision]], [[Computer Graphics]], and [[Machine Learning]], and is a foundational technology for the next generation of spatial computing platforms.
+
+- ### Key Components and Mechanisms
+  - **Implicit Neural Representations**
+    - [[Implicit Neural Representation]] encodes a scene as a continuous function f(x,y,z) → (colour, density) parameterised by a [[Multilayer Perceptron]] or similar network.
+    - The network is queried at arbitrary 3D coordinates, providing infinite spatial resolution in principle.
+  - **Neural Radiance Fields (NeRF)**
+    - [[Neural Radiance Field]] is the canonical neural rendering technique: a small MLP trained per-scene to predict volume density and view-dependent radiance at each 3D point.
+    - Rendering proceeds via [[Ray Marching]]: for each pixel, sample points along a ray through the scene, accumulate colour/density with [[Volume Rendering]] equations.
+    - Extensions include Instant NeRF (hash-grid encoding for 100× speedup), Mip-NeRF 360 (unbounded scenes), and Deformable NeRF (dynamic scenes).
+  - **Gaussian Splatting**
+    - [[Gaussian Splatting]] (3DGS) replaces the MLP with an explicit set of anisotropic 3D Gaussians fitted to a scene, achieving real-time rendering via GPU rasterisation of sorted splats.
+    - Dramatically faster than NeRF at inference while maintaining competitive visual quality; increasingly the preferred production path.
+  - **Neural Textures and Materials**
+    - [[Neural Texture]] methods learn per-object latent maps that decode into appearance properties conditioned on view direction, enabling material editing and relighting.
+    - [[Differentiable Rendering]] underpins training by making the rendering operator differentiable so that image-space losses propagate gradients back to scene parameters.
+  - **Scene Representation Networks**
+    - [[Neural Scene Representation]] generalises beyond single-scene overfitting: encoder–decoder architectures learn priors across many scenes, enabling fast reconstruction from a handful of views.
+  - **Conditioning and Control**
+    - Text-to-3D and image-to-3D approaches couple [[Generative AI]] (e.g. diffusion models) with neural rendering optimisation to synthesise novel 3D content from natural language or image prompts.
+
+- ### Applications and Use Cases
+  - **Immersive Telepresence**
+    - [[Photorealistic Avatar]] capture from multi-camera rigs for video conferencing and spatial collaboration; enables presence that surpasses flat video.
+    - Products: Meta Codec Avatars, Microsoft Mesh holographic capture.
+  - **Spatial Computing and XR**
+    - Scene reconstruction for [[Augmented Reality]] overlays (room-scale NeRF maps that allow precise object occlusion and lighting matching).
+    - Used in [[Immersive Environment]] authoring pipelines for VR game engines.
+  - **Digital Twin Construction**
+    - [[Digital Twin]] applications use neural rendering to capture high-fidelity replicas of physical sites (factories, heritage buildings) from drone or handheld footage.
+    - Enables remote inspection, training simulation, and change detection over time.
+  - **3D Asset Generation**
+    - [[3D Reconstruction]] from images replaces expensive manual modelling; artists use NeRF or Gaussian splat captures as a starting point then refine in DCC tools.
+    - NVIDIA Instant NeRF and Luma AI demonstrate commercial-grade capture pipelines.
+  - **Film and Visual Effects**
+    - Free-viewpoint video and virtual production; neural rendering enables virtual camera paths through a captured performance without reshooting.
+  - **Autonomous Driving Simulation**
+    - [[Scene Understanding]] datasets are augmented with neural-rendered novel views to cover rare scenarios; NeRF-based scene editing (weather, lighting) expands simulator diversity.
+  - **Medical Imaging**
+    - Neural rendering of surgical fields and volumetric scans (CT/MRI) for photorealistic surgical simulation and training.
+  - **Maps and Geospatial**
+    - Google Immersive View uses aerial NeRF reconstruction to render photorealistic 3D city environments within Google Maps.
 
 - ### Relationships
-  - uses [[Neural Radiance Field]]
-  - uses [[Deep Learning]]
-  - enables [[Real-Time Rendering]]
-  - enables [[3D Reconstruction]]
-  - relatedTo [[Computer Graphics]]
+  - uses:: [[Neural Radiance Field]]
+  - uses:: [[Deep Learning]]
+  - uses:: [[Convolutional Neural Network]]
+  - uses:: [[Volume Rendering]]
+  - uses:: [[Differentiable Rendering]]
+  - enables:: [[Real-Time Rendering]]
+  - enables:: [[3D Reconstruction]]
+  - enables:: [[Novel View Synthesis]]
+  - enables:: [[Photorealistic Avatar]]
+  - enables:: [[Immersive Environment]]
+  - requires:: [[Multi-View Imaging]]
+  - requires:: [[Graphics Processing Unit]]
+  - requires:: [[Implicit Neural Representation]]
+  - dependsOn:: [[Gradient Descent]]
+  - dependsOn:: [[Ray Marching]]
+  - hasPart:: [[Gaussian Splatting]]
+  - hasPart:: [[Neural Texture]]
+  - hasPart:: [[Neural Scene Representation]]
+  - contrastsWith:: [[Rasterisation]]
+  - contrastsWith:: [[Ray Tracing]]
+  - bridges-to:: [[Computer Vision]]
+  - bridges-to:: [[Augmented Reality]]
+  - bridges-to:: [[Digital Twin]]
+  - bridges-to:: [[Generative AI]]
+  - relatedTo:: [[Scene Understanding]]
+  - relatedTo:: [[Light Field Imaging]]
+  - relatedTo:: [[Point Cloud]]
 
-- ### Content
+- ### Standards and Context
+  - No dedicated ISO/IEEE/Khronos standard yet governs neural rendering; closest adjacent standards are:
+    - **OpenXR** (Khronos) — defines the runtime API into which neural-rendered content is displayed.
+    - **glTF 2.0** (Khronos) — 3D asset interchange format; work underway on extensions for radiance-field payloads.
+    - **MPEG Immersive Video (MIV)** and **Video-based Point Cloud Compression (V-PCC)** address compressed volumetric streaming but predate neural methods.
+    - **USD (Universal Scene Description)** — increasingly used as a carrier for neural scene assets in VFX and simulation pipelines.
+  - Industry groups such as **NVIDIA Research**, **Meta Reality Labs**, **Google DeepMind**, and **Apple ML Research** drive the field; academic venues are CVPR, ICCV, SIGGRAPH, and NeurIPS.
+  - Hardware acceleration for neural rendering (dedicated tensor cores, sparse convolution accelerators) is an active area in GPU and NPU design.
 
-  ## Overview
-
-  Neural Rendering represents an abstract concept in the telecollaboration ontology hierarchy.
-
-  #### Related Concepts
-  - [[owl:Thing]]
+- ### Technical Challenges
+  - **Training time**: per-scene NeRF optimisation historically required hours; Instant NeRF and 3DGS reduce this to seconds to minutes.
+  - **Generalisation**: most methods overfit to a single scene; generalised models require large multi-scene training sets.
+  - **Dynamic scenes**: handling moving objects and changing lighting remains an open research challenge.
+  - **Streaming and compression**: neural scene representations have no standard compressed format for network delivery.
+  - **Integration with rasterisation**: hybrid pipelines that combine neural components with traditional [[Rasterisation]] engines (e.g. using neural denoising or super-resolution on top of rasterised frames) are the practical near-term path.
 
 - ### Provenance
-  - sources::
-  - migration-date:: 2026-04-26T00:00:00Z
+  - sources:: Mildenhall et al. (2020) NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis. ECCV 2020. | Kerbl et al. (2023) 3D Gaussian Splatting for Real-Time Radiance Field Rendering. SIGGRAPH 2023. | Tewari et al. (2022) Advances in Neural Rendering. EUROGRAPHICS 2022 State of the Art Report.
+  - updated:: 2026-06-13

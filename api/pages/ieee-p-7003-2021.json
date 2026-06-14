@@ -4,8 +4,8 @@
   "slug": "ieee-p-7003-2021",
   "public": true,
   "classIri": "urn:ngm:class:ieee-p-7003-2021",
-  "domain": "standards",
-  "definition": "IEEE P7003 addresses algorithmic bias considerations, providing methodologies to help developers identify and mitigate unintended bias in algorithmic systems.",
+  "domain": "governance",
+  "definition": "IEEE P7003-2021 is a technical standard developed under the IEEE P7000 series on ethically aligned AI, specifically addressing algorithmic bias considerations in autonomous and intelligent systems. It provides a structured methodology for identifying, characterising, and mitigating unintended bias in algorithmic decision-making systems, covering the full development lifecycle from requirements elicitation through deployment and monitoring. The standard establishes processes for bias impact assessment, stakeholder engagement, and documentation requirements so that developers and organisations can systematically evaluate whether their AI systems produce discriminatory or inequitable outcomes across protected characteristics. It is complementary to IEEE P7001 (Transparency), IEEE P7002 (Data Privacy), and other standards in the IEEE 7000 series that collectively operationalise responsible AI development.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:technical-standard",
@@ -13,26 +13,131 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.74,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
+        "id": "urn:ngm:class:bias-impact-assessment",
+        "label": "Bias Impact Assessment"
+      },
+      {
+        "id": "urn:ngm:class:stakeholder-engagement",
+        "label": "Stakeholder Engagement"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-fairness-metrics",
+        "label": "Algorithmic Fairness Metrics"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:algorithmic-fairness",
+        "label": "Algorithmic Fairness"
+      },
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "id": "urn:ngm:class:ai-risk-management",
+        "label": "AI Risk Management"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:bias-mitigation",
+        "label": "Bias Mitigation"
+      },
+      {
+        "id": "urn:ngm:class:fairness-by-design",
+        "label": "Fairness by Design"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:iso-iec-42001",
+        "label": "ISO/IEC 42001"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI RMF"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:human-rights-law",
+        "label": "Human Rights Law"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:protected-characteristics",
+        "label": "Protected Characteristics"
+      },
+      {
+        "id": "urn:ngm:class:statistical-fairness-criteria",
+        "label": "Statistical Fairness Criteria"
+      },
+      {
+        "id": "urn:ngm:class:model-documentation",
+        "label": "Model Documentation"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-accountability",
+        "label": "Algorithmic Accountability"
+      }
+    ],
+    "standardizedBy": [
+      {
         "id": "urn:ngm:class:ieee",
         "label": "IEEE"
       }
     ],
-    "enables": [],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:ieee-7000-series",
+        "label": "IEEE 7000 Series"
+      },
+      {
+        "id": "urn:ngm:class:responsible-ai-standards",
+        "label": "Responsible AI Standards"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ieee-p7001-2021",
+        "label": "IEEE P7001-2021"
+      },
+      {
+        "id": "urn:ngm:class:ieee-p7002-2022",
+        "label": "IEEE P7002-2022"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-bias",
+        "label": "Algorithmic Bias"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-fairness",
+        "label": "Machine Learning Fairness"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -22,7 +22,7 @@ alias:: UsabilityTesting
   "@type": "Class",
   "label": "Usability Testing",
   "definition": "Usability testing is an empirical user research method in which representative users are observed attempting to complete realistic tasks with a product, system, or prototype, while the evaluator records errors, task completion times, help-seeking behaviour, and verbal commentary to identify usability problems and inform design improvements. Unlike expert-based heuristic evaluation, usability testing generates direct evidence of how real people interact with an interface under ecologically valid conditions. It is a core practice in human-computer interaction, product design, and user experience research, conducted through moderated in-person sessions, remote think-aloud protocols, or automated unmoderated testing platforms.",
-  "domain": "web",
+  "domain": "infrastructure",
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:user-research", "label": "User Research"}],
   "relations": {

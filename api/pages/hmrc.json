@@ -5,34 +5,138 @@
   "public": true,
   "classIri": "urn:ngm:class:hmrc",
   "domain": "governance",
-  "definition": "His Majesty's Revenue and Customs, the United Kingdom government department responsible for tax collection and the administration of certain payments.",
+  "definition": "His Majesty's Revenue and Customs (HMRC) is the non-ministerial department of the UK government responsible for the administration and collection of taxes, payment of certain state benefits, and enforcement of customs regulations. Formed in 2005 by the merger of the Inland Revenue and HM Customs and Excise, HMRC operates the UK's tax self-assessment regime, Pay As You Earn (PAYE) system, and Making Tax Digital (MTD) programme. It also issues authoritative guidance on the taxation of cryptoassets, financial instruments, and cross-border transactions, making it a central regulatory reference for UK digital finance and compliance obligations.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:entity",
-      "label": "Entity"
+      "id": "urn:ngm:class:regulatory-body",
+      "label": "Regulatory Body"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
-  "maturity": "established",
+  "qualityScore": 0.74,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:pay-as-you-earn",
+        "label": "Pay As You Earn"
+      },
+      {
+        "id": "urn:ngm:class:making-tax-digital",
+        "label": "Making Tax Digital"
+      },
+      {
+        "id": "urn:ngm:class:self-assessment",
+        "label": "Self Assessment"
+      },
+      {
+        "id": "urn:ngm:class:customs-and-excise",
+        "label": "Customs and Excise"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:financial-reporting",
+        "label": "Financial Reporting"
+      },
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:corporate-tax-compliance-framework",
-        "label": "Tax"
+        "label": "Corporate Tax Compliance Framework"
+      },
+      {
+        "id": "urn:ngm:class:tax-collection",
+        "label": "Tax Collection"
+      },
+      {
+        "id": "urn:ngm:class:vat-administration",
+        "label": "VAT Administration"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:uk-tax-law",
+        "label": "UK Tax Law"
+      },
+      {
+        "id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:irs",
+        "label": "IRS"
+      },
+      {
+        "id": "urn:ngm:class:european-tax-authority",
+        "label": "European Tax Authority"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:cryptoasset-taxation",
+        "label": "Cryptoasset Taxation"
+      },
+      {
+        "id": "urn:ngm:class:open-banking",
+        "label": "Open Banking"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      },
+      {
+        "id": "urn:ngm:class:aml-compliance",
+        "label": "AML Compliance"
+      }
+    ],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:uk-government",
+        "label": "UK Government"
+      },
+      {
+        "id": "urn:ngm:class:public-sector",
+        "label": "Public Sector"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:fca",
+        "label": "FCA"
+      },
+      {
+        "id": "urn:ngm:class:treasury",
+        "label": "HM Treasury"
+      },
+      {
+        "id": "urn:ngm:class:companies-house",
+        "label": "Companies House"
+      },
+      {
+        "id": "urn:ngm:class:oecd-tax-framework",
+        "label": "OECD Tax Framework"
+      }
+    ]
   },
   "wikilinks": [
     {

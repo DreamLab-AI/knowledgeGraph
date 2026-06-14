@@ -4,40 +4,125 @@
   "slug": "gold-standard",
   "public": true,
   "classIri": "urn:ngm:class:gold-standard",
-  "domain": "general",
-  "definition": "A monetary system in which a currency's value is fixed to and convertible into a defined quantity of gold, constraining money supply to gold reserves.",
+  "domain": "finance",
+  "definition": "A monetary system in which a currency's value is legally fixed to and redeemable in a defined quantity of gold, constraining the total money supply to the size of gold reserves held by the issuing authority. Under this regime, exchange rates between participating countries are effectively fixed because each currency is independently pegged to gold at a known rate, enabling automatic balance-of-payments adjustment through the price-specie-flow mechanism. The classical gold standard operated broadly from the 1870s until the outbreak of World War I in 1914, was briefly restored in modified forms during the interwar period, and gave way to the Bretton Woods system of dollar-gold convertibility in 1944, which itself ended in 1971 when the United States suspended gold convertibility.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:monetary-policy",
-      "label": "Monetary Policy"
+      "id": "urn:ngm:class:monetary-system",
+      "label": "Monetary System"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
-  "maturity": "established",
+  "qualityScore": 0.74,
+  "maturity": "mature",
   "relationships": {
     "hasPart": [],
     "requires": [
+      {
+        "id": "urn:ngm:class:gold-reserve",
+        "label": "Gold Reserve"
+      },
+      {
+        "id": "urn:ngm:class:currency-convertibility",
+        "label": "Currency Convertibility"
+      },
+      {
+        "id": "urn:ngm:class:fixed-exchange-rate",
+        "label": "Fixed Exchange Rate"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:price-stability",
+        "label": "Price Stability"
+      },
+      {
+        "id": "urn:ngm:class:international-trade",
+        "label": "International Trade"
+      },
+      {
+        "id": "urn:ngm:class:balance-of-payments",
+        "label": "Balance of Payments"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:central-bank",
+        "label": "Central Bank"
+      },
       {
         "id": "urn:ngm:class:monetary-policy",
         "label": "Monetary Policy"
       }
     ],
-    "enables": [
+    "implements": [],
+    "contrastsWith": [
       {
-        "id": "urn:ngm:class:money",
-        "label": "Money"
+        "id": "urn:ngm:class:fiat-currency",
+        "label": "Fiat Currency"
+      },
+      {
+        "id": "urn:ngm:class:floating-exchange-rate",
+        "label": "Floating Exchange Rate"
+      },
+      {
+        "id": "urn:ngm:class:quantitative-easing",
+        "label": "Quantitative Easing"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:monetary-system",
+        "label": "Monetary System"
+      },
+      {
+        "id": "urn:ngm:class:international-monetary-system",
+        "label": "International Monetary System"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:bretton-woods-system",
+        "label": "Bretton Woods System"
+      },
+      {
+        "id": "urn:ngm:class:inflation",
+        "label": "Inflation"
+      },
+      {
+        "id": "urn:ngm:class:deflation",
+        "label": "Deflation"
+      },
+      {
+        "id": "urn:ngm:class:currency-peg",
+        "label": "Currency Peg"
+      },
+      {
+        "id": "urn:ngm:class:specie-flow-mechanism",
+        "label": "Specie Flow Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:commodity-money",
+        "label": "Commodity Money"
+      },
+      {
+        "id": "urn:ngm:class:reserve-currency",
+        "label": "Reserve Currency"
+      }
+    ]
   },
   "wikilinks": [
     {

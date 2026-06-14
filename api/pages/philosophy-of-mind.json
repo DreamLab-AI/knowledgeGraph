@@ -4,8 +4,8 @@
   "slug": "philosophy-of-mind",
   "public": true,
   "classIri": "urn:ngm:class:philosophy-of-mind",
-  "domain": "general",
-  "definition": "The branch of philosophy concerned with the nature of mind, consciousness, mental states and their relation to the physical body and brain.",
+  "domain": "artificial-intelligence",
+  "definition": "Philosophy of Mind is the branch of philosophy that investigates the nature of mental phenomena \u2014 including consciousness, intentionality, perception, belief, desire, and emotion \u2014 and their relationship to physical processes in the brain and body. It encompasses foundational debates over the mind-body problem, such as Cartesian dualism, physicalism, functionalism, and eliminative materialism, seeking to determine whether mental states are reducible to or identical with neurological states. The field directly informs artificial intelligence and cognitive science by establishing conceptual frameworks for what it means to think, represent, and experience, and by posing challenges such as the hard problem of consciousness and the Chinese Room argument against strong AI. It bridges empirical sciences of the mind with normative and metaphysical questions that formal methods alone cannot resolve.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:cognitive-science",
@@ -13,31 +13,135 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.75,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:consciousness",
+        "label": "Consciousness"
+      },
+      {
+        "id": "urn:ngm:class:intentionality",
+        "label": "Intentionality"
+      },
+      {
+        "id": "urn:ngm:class:qualia",
+        "label": "Qualia"
+      },
+      {
+        "id": "urn:ngm:class:phenomenology",
+        "label": "Phenomenology"
+      }
+    ],
     "requires": [
       {
-        "id": "urn:ngm:class:cognitive-science",
-        "label": "Cognitive Science"
+        "id": "urn:ngm:class:metaphysics",
+        "label": "Metaphysics"
+      },
+      {
+        "id": "urn:ngm:class:epistemology",
+        "label": "Epistemology"
+      },
+      {
+        "id": "urn:ngm:class:logic",
+        "label": "Logic"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:artificial-intelligence",
         "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:machine-consciousness",
+        "label": "Machine Consciousness"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:neuroscience",
+        "label": "Neuroscience"
+      },
+      {
+        "id": "urn:ngm:class:psychology",
+        "label": "Psychology"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:behaviourism",
+        "label": "Behaviourism"
+      },
+      {
+        "id": "urn:ngm:class:eliminative-materialism",
+        "label": "Eliminative Materialism"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human-Computer Interaction"
+      },
+      {
+        "id": "urn:ngm:class:affective-computing",
+        "label": "Affective Computing"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:reasoning",
+        "label": "Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:thought-experiment",
+        "label": "Thought Experiment"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      }
+    ],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:cognitive-science",
+        "label": "Cognitive Science"
+      },
+      {
+        "id": "urn:ngm:class:philosophy",
+        "label": "Philosophy"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:functionalism",
+        "label": "Functionalism"
+      },
+      {
+        "id": "urn:ngm:class:computational-theory-of-mind",
+        "label": "Computational Theory of Mind"
+      },
+      {
+        "id": "urn:ngm:class:embodied-cognition",
+        "label": "Embodied Cognition"
+      }
+    ]
   },
   "wikilinks": [
     {

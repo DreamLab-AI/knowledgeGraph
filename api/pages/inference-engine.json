@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:inference-engine",
   "domain": "ai",
-  "definition": "An Inference Engine is a specialised software runtime optimised for executing trained machine learning models in production \u2014 transforming input data into predictions, classifications, or generated content \u2014 with primary objectives of minimising latency, maximising throughput, and efficiently utilising hardware accelerators (GPUs, TPUs, NPUs). Inference engines apply techniques including operator fusion, kernel auto-tuning, mixed-precision quantisation, and memory layout optimisation to close the performance gap between a training-time model representation and optimal hardware utilisation, and they typically accept models in portable interchange formats such as ONNX or TensorRT engine plans to decouple model architecture from the serving runtime.",
+  "definition": "An Inference Engine is a specialised software runtime optimised for executing trained machine learning models in production environments, transforming input data into predictions, classifications, embeddings, or generated content with primary objectives of minimising latency, maximising throughput, and efficiently utilising hardware accelerators such as GPUs, TPUs, and NPUs. Inference engines apply techniques including operator fusion, kernel auto-tuning, mixed-precision quantisation, and memory layout optimisation to close the performance gap between a training-time model representation and optimal hardware utilisation. They typically accept models in portable interchange formats such as ONNX or TensorRT engine plans, decoupling model architecture from the serving runtime, and are deployed within MLOps pipelines to serve AI applications at production scale. Modern inference engines address both traditional deep learning models (CNNs, transformers for classification and detection) and large language model serving, where techniques such as continuous batching, paged KV-cache management, and speculative decoding are critical to economic viability.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:inference",
@@ -13,44 +13,52 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.75,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:operator-fusion",
+        "label": "Operator Fusion"
+      },
+      {
+        "id": "urn:ngm:class:kernel-auto-tuning",
+        "label": "Kernel Auto-Tuning"
+      },
+      {
+        "id": "urn:ngm:class:dynamic-batching",
+        "label": "Dynamic Batching"
+      },
+      {
+        "id": "urn:ngm:class:quantisation",
+        "label": "Quantisation"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:machine-learning-discipline-model",
+        "label": "Machine Learning Model"
+      },
+      {
+        "id": "urn:ngm:class:hardware-acceleration",
+        "label": "Hardware Acceleration"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:real-time-inference-at-edge",
         "label": "Real-Time Inference at Edge"
       },
       {
+        "id": "urn:ngm:class:large-language-model-serving",
+        "label": "Large Language Model Serving"
+      },
+      {
         "id": "urn:ngm:class:ai-deployment",
         "label": "AI Deployment"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [
-      {
-        "id": "urn:ngm:class:machine-learning-discipline-model",
-        "label": "Machine Learning Model"
-      }
-    ],
-    "supports": [
-      {
-        "id": "urn:ngm:class:mlops",
-        "label": "MLOps"
-      }
-    ],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
-      {
-        "id": "urn:ngm:class:inference-hardware",
-        "label": "Inference Hardware"
-      },
+    "dependsOn": [
       {
         "id": "urn:ngm:class:gpu-computing",
         "label": "GPU Computing"
@@ -60,12 +68,77 @@
         "label": "Tensor Processing Unit"
       },
       {
-        "id": "urn:ngm:class:hardware-acceleration",
-        "label": "Hardware Acceleration"
+        "id": "urn:ngm:class:inference-hardware",
+        "label": "Inference Hardware"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:training-framework",
+        "label": "Training Framework"
       },
+      {
+        "id": "urn:ngm:class:eager-execution",
+        "label": "Eager Execution"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:onnx",
+        "label": "ONNX"
+      },
+      {
+        "id": "urn:ngm:class:compute-unified-device-architecture",
+        "label": "CUDA"
+      },
+      {
+        "id": "urn:ngm:class:speculative-decoding",
+        "label": "Speculative Decoding"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      },
+      {
+        "id": "urn:ngm:class:ai-deployment",
+        "label": "AI Deployment"
+      }
+    ],
+    "relatedTo": [
       {
         "id": "urn:ngm:class:latency",
         "label": "Latency"
+      },
+      {
+        "id": "urn:ngm:class:throughput",
+        "label": "Throughput"
+      },
+      {
+        "id": "urn:ngm:class:model-compression",
+        "label": "Model Compression"
+      },
+      {
+        "id": "urn:ngm:class:neural-processing-unit",
+        "label": "Neural Processing Unit"
+      },
+      {
+        "id": "urn:ngm:class:kv-cache",
+        "label": "KV Cache"
       }
     ]
   },

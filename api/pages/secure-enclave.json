@@ -4,50 +4,140 @@
   "slug": "secure-enclave",
   "public": true,
   "classIri": "urn:ngm:class:secure-enclave",
-  "domain": "infrastructure",
-  "definition": "A secure enclave is a hardware-isolated execution environment embedded within a processor that maintains confidentiality and integrity guarantees for code and data even when the host operating system, hypervisor, or other privileged software is compromised. Implemented through technologies such as Intel SGX, ARM TrustZone, and AMD SEV, secure enclaves generate remote attestation proofs allowing verifiers to confirm that specific code is executing within a genuine enclave without trusting the surrounding software stack. They are foundational to confidential computing, trusted execution environments, and privacy-preserving distributed computation.",
+  "domain": "security",
+  "definition": "A secure enclave is a hardware-isolated execution environment embedded within a processor that maintains confidentiality and integrity guarantees for code and data even when the host operating system, hypervisor, or other privileged software is compromised. Implemented through technologies such as Intel SGX, ARM TrustZone, Apple Secure Enclave Processor, and AMD SEV-SNP, these environments use hardware memory encryption and access-control mechanisms enforced within the CPU package itself. Remote attestation allows a verifier to cryptographically confirm that specific code runs inside a genuine, unmodified enclave before transmitting sensitive data to it, without trusting the surrounding software stack. Secure enclaves are foundational to confidential computing, privacy-preserving machine learning, decentralised identity, and secure multi-party computation.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:infra-security-and-identity",
-      "label": "Security and Identity"
+      "id": "urn:ngm:class:trusted-execution-environment",
+      "label": "Trusted Execution Environment"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:remote-attestation",
+        "label": "Remote Attestation"
+      },
+      {
+        "id": "urn:ngm:class:memory-encryption",
+        "label": "Memory Encryption"
+      },
+      {
+        "id": "urn:ngm:class:sealed-storage",
+        "label": "Sealed Storage"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:hardware-root-of-trust",
+        "label": "Hardware Root of Trust"
+      },
       {
         "id": "urn:ngm:class:cryptographic-key-management",
         "label": "Cryptographic Key Management"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:privacy-preserving-machine-learning",
+        "label": "Privacy-Preserving Machine Learning"
       },
       {
-        "id": "urn:ngm:class:privacy-preserving-technology",
-        "label": "Privacy Preserving Technology"
+        "id": "urn:ngm:class:secure-multi-party-computation",
+        "label": "Secure Multi-Party Computation"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "id": "urn:ngm:class:confidential-smart-contract",
+        "label": "Confidential Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:digital-rights-management",
+        "label": "Digital Rights Management"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:hardware-security-module",
+        "label": "Hardware Security Module"
+      },
+      {
+        "id": "urn:ngm:class:virtual-machine",
+        "label": "Virtual Machine"
+      },
+      {
+        "id": "urn:ngm:class:hypervisor",
+        "label": "Hypervisor"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public Key Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:symmetric-encryption",
+        "label": "Symmetric Encryption"
+      },
+      {
+        "id": "urn:ngm:class:side-channel-attack",
+        "label": "Side-Channel Attack"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
-      {
-        "id": "urn:ngm:class:trusted-execution-environment",
-        "label": "Trusted Execution Environment"
-      },
+    "partOf": [
       {
         "id": "urn:ngm:class:confidential-computing",
         "label": "Confidential Computing"
       },
       {
-        "id": "urn:ngm:class:hardware-security-module",
-        "label": "Hardware Security Module"
+        "id": "urn:ngm:class:hardware-root-of-trust",
+        "label": "Hardware Root of Trust"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:intel-sgx",
+        "label": "Intel SGX"
+      },
+      {
+        "id": "urn:ngm:class:arm-trustzone",
+        "label": "ARM TrustZone"
+      },
+      {
+        "id": "urn:ngm:class:amd-sev",
+        "label": "AMD SEV"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-security",
+        "label": "Supply Chain Security"
       }
     ]
   },

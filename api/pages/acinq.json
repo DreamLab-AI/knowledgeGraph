@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:acinq",
   "domain": "blockchain",
-  "definition": "ACINQ is a company that develops Lightning Network software, including an implementation of the protocol and a mobile Bitcoin wallet.",
+  "definition": "ACINQ is a Paris-based Bitcoin technology company specialising in the development and operation of Lightning Network infrastructure, most notably the Eclair Lightning Network node implementation written in Scala and the Phoenix self-custodial mobile Bitcoin wallet. The company operates one of the largest publicly reachable Lightning Network routing nodes, providing significant liquidity and routing capacity to the network. ACINQ contributes to the BOLT (Basis of Lightning Technology) protocol specification process and has pioneered features such as trampoline routing to reduce the on-device computation required by mobile Lightning clients.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:lightning-network",
@@ -13,31 +13,123 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.74,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [
+    "hasPart": [
       {
-        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol",
-        "label": "Bitcoin"
+        "id": "urn:ngm:class:eclair",
+        "label": "Eclair"
+      },
+      {
+        "id": "urn:ngm:class:phoenix-wallet",
+        "label": "Phoenix Wallet"
       }
     ],
-    "enables": [
+    "requires": [
+      {
+        "id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      },
       {
         "id": "urn:ngm:class:payment-channel",
         "label": "Payment Channel"
       }
     ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:micropayment",
+        "label": "Micropayment"
+      },
+      {
+        "id": "urn:ngm:class:trampoline-routing",
+        "label": "Trampoline Routing"
+      },
+      {
+        "id": "urn:ngm:class:non-custodial-wallet",
+        "label": "Non-Custodial Wallet"
+      }
+    ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:basis-of-lightning-technology",
+        "label": "Basis of Lightning Technology"
+      },
+      {
+        "id": "urn:ngm:class:sphinx-routing",
+        "label": "Sphinx Routing"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:lnd",
+        "label": "LND"
+      },
+      {
+        "id": "urn:ngm:class:core-lightning",
+        "label": "Core Lightning"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:htlc",
+        "label": "HTLC"
+      },
+      {
+        "id": "urn:ngm:class:onion-routing",
+        "label": "Onion Routing"
+      },
+      {
+        "id": "urn:ngm:class:scala-programming-language",
+        "label": "Scala Programming Language"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:bitcoin-payment",
+        "label": "Bitcoin Payment"
+      },
+      {
+        "id": "urn:ngm:class:splicing",
+        "label": "Splicing"
+      }
+    ],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:lightning-network-ecosystem",
+        "label": "Lightning Network Ecosystem"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:bitcoin-layer-2",
+        "label": "Bitcoin Layer 2"
+      },
+      {
+        "id": "urn:ngm:class:routing-node",
+        "label": "Routing Node"
+      },
+      {
+        "id": "urn:ngm:class:channel-liquidity",
+        "label": "Channel Liquidity"
+      },
+      {
+        "id": "urn:ngm:class:bolt-12",
+        "label": "BOLT 12"
+      }
+    ]
   },
   "wikilinks": [
     {

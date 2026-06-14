@@ -55,7 +55,7 @@ public:: true
   "@type": "Class",
   "label": "Provenance",
   "definition": "The documented record of the origin, history and chain of custody of data or assets, used to establish authenticity, trust and accountability.",
-  "domain": "general",
+  "domain": "data",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

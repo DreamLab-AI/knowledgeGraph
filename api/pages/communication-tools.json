@@ -4,7 +4,7 @@
   "slug": "communication-tools",
   "public": true,
   "classIri": "urn:ngm:class:communication-tools",
-  "domain": "web",
+  "domain": "infrastructure",
   "definition": "Software applications and platforms that enable individuals and teams to exchange information, coordinate activities, and maintain shared context across synchronous and asynchronous channels. They span messaging, video conferencing, email, collaborative documents, and emerging immersive communication modalities, forming the operational backbone of distributed work.",
   "subClassOf": [
     {

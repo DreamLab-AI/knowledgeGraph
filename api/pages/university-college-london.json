@@ -4,39 +4,138 @@
   "slug": "university-college-london",
   "public": true,
   "classIri": "urn:ngm:class:university-college-london",
-  "domain": "general",
-  "definition": "A research university in London and constituent of the University of London, with strong programmes in computer science, machine learning, and engineering.",
+  "domain": "artificial-intelligence",
+  "definition": "University College London (UCL) is a public research university in Bloomsbury, London, England, and the founding college of the federal University of London. It is one of the world's leading multidisciplinary universities, ranked consistently among the global top ten, with particular strength in computer science, artificial intelligence, machine learning, neuroscience, and biomedical engineering. UCL is a founding partner of the Alan Turing Institute \u2014 the UK national institute for data science and AI \u2014 and hosts major research groups in deep learning, natural language processing, reinforcement learning, and computational statistics. Its Computer Science and Engineering faculties supply significant research output and graduate talent to the UK and global AI ecosystem.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:entity",
-      "label": "Entity"
+      "id": "urn:ngm:class:research-university",
+      "label": "Research University"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:ucl-computer-science",
+        "label": "UCL Computer Science"
+      },
+      {
+        "id": "urn:ngm:class:ucl-centre-for-artificial-intelligence",
+        "label": "UCL Centre for Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:ucl-gatsby-computational-neuroscience-unit",
+        "label": "Gatsby Computational Neuroscience Unit"
+      }
+    ],
     "requires": [],
     "enables": [
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
-        "id": "urn:ngm:class:artificial-intelligence",
-        "label": "Artificial Intelligence"
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:computational-neuroscience",
+        "label": "Computational Neuroscience"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:imperial-college-london",
+        "label": "Imperial College London"
+      },
+      {
+        "id": "urn:ngm:class:kings-college-london",
+        "label": "King's College London"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:digital-health",
+        "label": "Digital Health"
+      },
+      {
+        "id": "urn:ngm:class:quantum-computing",
+        "label": "Quantum Computing"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:high-performance-computing",
+        "label": "High Performance Computing"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-research",
+        "label": "AI Research"
+      },
+      {
+        "id": "urn:ngm:class:open-science",
+        "label": "Open Science"
+      },
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      }
+    ],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:university-of-london",
+        "label": "University of London"
+      },
+      {
+        "id": "urn:ngm:class:alan-turing-institute",
+        "label": "Alan Turing Institute"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:deepmind",
+        "label": "DeepMind"
+      },
+      {
+        "id": "urn:ngm:class:imperial-college-london",
+        "label": "Imperial College London"
+      },
+      {
+        "id": "urn:ngm:class:oxford-university",
+        "label": "University of Oxford"
+      },
+      {
+        "id": "urn:ngm:class:cambridge-university",
+        "label": "University of Cambridge"
+      },
+      {
+        "id": "urn:ngm:class:uk-research-and-innovation",
+        "label": "UK Research and Innovation"
+      }
+    ]
   },
   "wikilinks": [
     {

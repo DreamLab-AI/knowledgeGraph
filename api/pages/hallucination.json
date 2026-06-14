@@ -4,8 +4,8 @@
   "slug": "hallucination",
   "public": true,
   "classIri": "urn:ngm:class:hallucination",
-  "domain": "ai-safety",
-  "definition": "In artificial intelligence, hallucination is the generation of plausible but factually incorrect or unsupported content by a model. It is a recognised failure mode of large language models and other generative systems.",
+  "domain": "ai",
+  "definition": "Hallucination in artificial intelligence refers to the phenomenon whereby a generative model produces fluent, confident, and syntactically plausible output that is factually incorrect, unsupported by provided context, or entirely fabricated. It is a fundamental failure mode of large language models, vision-language models, and other neural generative systems that optimise for next-token probability rather than verifiable truth. Hallucinations range from subtle factual distortions to wholesale invention of citations, persons, dates, or events, and represent a critical safety and reliability concern for deployed AI systems. Mitigation strategies include retrieval-augmented generation, grounding with tool use, chain-of-thought prompting, and output verification pipelines.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-risk",
@@ -13,21 +13,116 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.74,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:output-verification",
+        "label": "Output Verification"
+      },
+      {
+        "id": "urn:ngm:class:human-oversight",
+        "label": "Human Oversight"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:misinformation",
+        "label": "Misinformation"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety-research",
+        "label": "AI Safety Research"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:autoregressive-generation",
+        "label": "Autoregressive Generation"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:factual-grounding",
+        "label": "Factual Grounding"
+      },
+      {
+        "id": "urn:ngm:class:calibration",
+        "label": "Calibration"
+      },
+      {
+        "id": "urn:ngm:class:truthfulness",
+        "label": "Truthfulness"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:information-integrity",
+        "label": "Information Integrity"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:trust-and-safety",
+        "label": "Trust and Safety"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "id": "urn:ngm:class:tool-augmented-reasoning",
+        "label": "Tool-Augmented Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:chain-of-thought-prompting",
+        "label": "Chain-of-Thought Prompting"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-risk",
+        "label": "AI Risk"
+      },
+      {
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      },
+      {
+        "id": "urn:ngm:class:conversational-ai",
+        "label": "Conversational AI"
+      },
+      {
+        "id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      },
+      {
+        "id": "urn:ngm:class:uncertainty-quantification",
+        "label": "Uncertainty Quantification"
+      }
+    ]
   },
   "wikilinks": [
     {

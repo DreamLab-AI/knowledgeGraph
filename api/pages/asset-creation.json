@@ -4,7 +4,7 @@
   "slug": "asset-creation",
   "public": true,
   "classIri": "urn:ngm:class:asset-creation",
-  "domain": "media",
+  "domain": "metaverse",
   "definition": "Asset Creation is the structured practice of producing digital or physical resources \u2014 including geometry, textures, audio, code, and data \u2014 intended for use within interactive experiences, virtual environments, or production pipelines. It encompasses the full authoring lifecycle from concept through final deliverable, applying artistic, technical, and automated methods to yield artefacts that meet quality, format, and performance requirements.",
   "subClassOf": [
     {

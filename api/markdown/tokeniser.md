@@ -1,25 +1,72 @@
 - ### Definition
-  - A tokeniser is a preprocessing component that segments raw text into a sequence of discrete tokens — sub-words, words, or characters — and maps each token to an integer index in a fixed vocabulary, forming the input representation consumed by language model architectures. Modern tokenisers such as Byte Pair Encoding (BPE), WordPiece, and SentencePiece operate at the sub-word level to balance vocabulary coverage with sequence length, enabling models to handle arbitrary text including rare words and multiple languages without out-of-vocabulary failures.
+  - A tokeniser is a preprocessing component that sits at the boundary between raw text and the numerical representations consumed by [[Neural Networks]] and [[Language Modeling]] architectures. It segments an input string into a sequence of discrete units called tokens — which may be characters, whole words, or sub-word fragments — and maps each token to a unique integer index within a fixed [[Vocabulary]]. The resulting integer sequence (plus optional special boundary markers such as `[CLS]` and `[SEP]`) is then passed to a [[Token Embedding]] lookup table that converts each index into a dense vector for further processing by the model. The choice of tokenisation strategy fundamentally shapes model capacity, [[Context Window]] utilisation, multilingual coverage, and inference cost.
 
-- ### Semantic Classification
-  - owl-class:: tokeniser:Tokeniser
-  - owl-role:: Concept
+- ### Overview
+  - Tokenisation is not merely a mundane preprocessing step; it is a core design decision that determines the granularity at which a model perceives language. Early neural NLP systems operated on whole words, producing large, open vocabularies with severe out-of-vocabulary problems for morphologically rich languages. Character-level approaches avoided OOV failures but produced very long sequences that were difficult for early recurrent models to learn from. The sub-word paradigm, now dominant, achieves a practical balance: common words remain as single tokens, while rare or novel words are decomposed into learned sub-word pieces that often carry morphological or semantic meaning.
+  - Modern tokenisation is tightly coupled to the [[Transformer Architecture]], where sequence length directly determines quadratic attention cost. Shorter average token lengths (higher fertility) inflate sequence lengths and increase computational burden; longer average token lengths improve throughput but reduce the model's ability to generalise across morphological variants.
+  - Tokenisers are typically trained once on a large corpus and then frozen alongside the model; re-tokenising for a new domain requires retraining or extending the model's embedding matrix.
+
+- ### Key Mechanisms
+  - **[[Byte Pair Encoding]] (BPE)** — a bottom-up merge algorithm that starts with a character (or byte) vocabulary and iteratively merges the most frequent adjacent pair, building a sub-word vocabulary of a target size. Used by the [[GPT]] series, [[RoBERTa]], and many open-source models.
+  - **[[WordPiece]]** — a variant of BPE used in [[BERT]] that chooses merges to maximise the likelihood of the training corpus under a unigram language model, producing slightly different segmentations that tend to align better with linguistic morphemes.
+  - **[[SentencePiece]]** — a language-agnostic tokeniser that treats the input as a raw byte stream without language-specific whitespace pre-tokenisation, making it well-suited to scripts that do not use spaces (Chinese, Japanese, Thai). Used by [[T5]], [[mBART]], and [[LLaMA]].
+  - **Unigram Language Model Tokeniser** — trains a probabilistic unigram language model over candidate sub-words and prunes the vocabulary to a target size while maximising corpus likelihood; produces probabilistic segmentations useful for data augmentation.
+  - **Tiktoken (BPE variant)** — a fast BPE implementation used by OpenAI's [[GPT-4]] and related models, operating on UTF-8 bytes to guarantee lossless round-trip encoding of any Unicode input.
+  - **Special tokens** — `[CLS]`, `[SEP]`, `[PAD]`, `[MASK]`, `<|endoftext|>` are reserved identifiers injected by the tokeniser to convey structural information (sentence boundaries, padding positions, masked positions) to the model.
+  - **Vocabulary size** — typically 32,000–200,000 entries for modern models; larger vocabularies reduce average sequence length but increase embedding matrix memory and training data requirements per token.
+
+- ### Tokeniser Fertility and Multilingual Fairness
+  - Tokeniser fertility is the average number of tokens per word for a given language or script; models trained predominantly on English typically show high fertility for non-Latin scripts, meaning those languages consume more context window per unit of meaning.
+  - High fertility disproportionately disadvantages speakers of morphologically rich languages (Finnish, Turkish, Arabic) and logographic scripts (Chinese, Japanese) in tasks where context window length is a binding constraint.
+  - Multilingual tokenisers such as those used in [[Multilingual Models]] attempt to allocate vocabulary capacity proportionally to training data composition, but biases persist in practice.
+  - [[Tokeniser Fertility]] is now recognised as a fairness metric alongside model benchmark performance.
+
+- ### Applications and Use Cases
+  - **[[Large Language Models]]** — every modern LLM (GPT-4, Claude, Gemini, LLaMA, Mistral) requires a tokeniser to convert user prompts into integer sequences before inference.
+  - **[[Machine Translation]]** — sub-word tokenisation was first popularised for neural machine translation to handle open vocabularies across language pairs with different morphological typologies.
+  - **[[Code Generation]]** — specialised tokenisers for programming languages preserve indentation semantics, string literals, and operator sequences that differ structurally from natural language.
+  - **[[Speech Recognition]]** — models such as Whisper apply tokenisation to output text, while audio tokenisers (e.g. EnCodec, SoundStream) discretise audio waveforms into token sequences enabling language-model-style generation of speech.
+  - **[[Multimodal Learning]]** — vision tokenisers (VQ-VAE, VQGAN patches, ViT patch embeddings) discretise image regions into token sequences, enabling unified [[Transformer Architecture]] models over text and images.
+  - **[[Retrieval-Augmented Generation]]** — accurate token counts are required for chunking documents to fit within context windows and for billing token-priced API calls.
+  - **[[Embedding Model]]** training — sentence and document embedding models share tokenisers with their backbone LLMs, ensuring consistent vocabulary alignment.
+  - **Toxicity and safety filtering** — tokeniser representations interact with safety classifiers; adversarial prompt injections often exploit tokenisation artefacts.
 
 - ### Relationships
-  - requires [[Byte Pair Encoding]]
-  - enables [[Large Language Models]]
-  - enables [[Language Modeling]]
-  - relatedTo [[Subword Tokenisation]]
-  - relatedTo [[Token Embedding]]
-  - relatedTo [[Embedding Model]]
+  - hasPart:: [[Byte Pair Encoding]]
+  - hasPart:: [[WordPiece]]
+  - hasPart:: [[SentencePiece]]
+  - partOf:: [[Natural Language Processing Pipeline]]
+  - partOf:: [[Language Model Pre-Training]]
+  - requires:: [[Vocabulary]]
+  - requires:: [[Unicode Normalisation]]
+  - requires:: [[Text Preprocessing]]
+  - enables:: [[Large Language Models]]
+  - enables:: [[Language Modeling]]
+  - enables:: [[Machine Translation]]
+  - enables:: [[Multimodal Learning]]
+  - uses:: [[Subword Tokenisation]]
+  - uses:: [[Token Embedding]]
+  - supports:: [[Transformer Architecture]]
+  - supports:: [[Multilingual Models]]
+  - supports:: [[Code Generation]]
+  - contrastsWith:: [[Character-Level Model]]
+  - contrastsWith:: [[Word-Level Tokenisation]]
+  - relatedTo:: [[Embedding Model]]
+  - relatedTo:: [[Attention Mechanism]]
+  - relatedTo:: [[Tokeniser Fertility]]
+  - relatedTo:: [[Context Window]]
+  - bridges-to:: [[Speech Recognition]]
+  - bridges-to:: [[Computer Vision]]
 
-- ### Content
-  Tokenisation is the critical boundary between raw text and the numerical representations consumed by neural language models. The choice of tokenisation algorithm determines the vocabulary size, average token length, cross-lingual coverage, and downstream model performance. Byte Pair Encoding (BPE), introduced for neural machine translation and adopted by GPT-series models, greedily merges the most frequent byte or character pairs to build a fixed-size sub-word vocabulary. WordPiece, used in BERT, applies a similar strategy with a likelihood-maximisation objective. SentencePiece operates directly on raw Unicode without language-specific pre-tokenisation, making it language-agnostic and well-suited to multilingual models.
-
-  Tokeniser vocabulary size is a key hyperparameter: small vocabularies produce long sequences that strain transformer attention windows, while large vocabularies increase embedding matrix size and reduce the frequency of sub-word training examples. Tying the tokeniser vocabulary to the model embedding layer is standard practice. Tokeniser fertility — the average number of tokens per word for a given language — varies substantially across scripts and directly affects multilingual model fairness.
-
-  Specialised tokenisers have been developed for code (e.g. preserving indentation semantics) and mathematics (preserving operator precedence). Multimodal tokenisation — discretising images, audio, or video into token sequences analogous to text tokens — is an active research direction enabling unified cross-modal language model architectures.
+- ### Standards and Context
+  - Tokenisation algorithms are not formally standardised by ISO or IEEE; de facto standards have emerged through open-source library adoption.
+  - The **HuggingFace Tokenizers** library (Rust-backed, Python API) implements BPE, WordPiece, SentencePiece, and Unigram in a unified interface and is the dominant production implementation across open-source [[Large Language Models]].
+  - **SentencePiece** (Google) is the reference implementation for the Unigram and SentencePiece BPE algorithms, used in T5, ALBERT, and XLM-R.
+  - **Tiktoken** (OpenAI, open-sourced 2023) provides fast BPE for the GPT-3.5/GPT-4 family and is the reference for OpenAI API token counting.
+  - Vocabulary files are typically distributed as `vocab.json` + `merges.txt` (BPE) or `sentencepiece.model` (SentencePiece) and are a mandatory component of any reproducible model release.
+  - [[Retrieval-Augmented Generation]] systems must use the same tokeniser as the target model to produce accurate context-window chunk sizes.
+  - The [[Model Card]] and [[AI Transparency]] literature increasingly require disclosure of tokeniser type, vocabulary size, and fertility statistics for major language groups.
 
 - ### Provenance
-  - sources::
-  - migration-date:: 2026-05-19T00:00:00Z
+  - sources:: HuggingFace Tokenizers documentation; Sennrich et al. (2016) BPE for NMT; Schuster & Nakamura (2012) WordPiece; Kudo & Richardson (2018) SentencePiece; Kudo (2018) Unigram LM tokenisation
+  - updated:: 2026-06-13

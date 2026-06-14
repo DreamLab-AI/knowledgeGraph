@@ -4,43 +4,115 @@
   "slug": "data-visualisation",
   "public": true,
   "classIri": "urn:ngm:class:data-visualisation",
-  "domain": "spatial-computing",
-  "definition": "Data Visualisation is the practice of encoding data attributes into perceptual channels\u2014position, colour, size, shape\u2014to enable rapid human comprehension of patterns, anomalies, and relationships. In spatial computing and metaverse contexts, visualisation extends into three-dimensional and immersive modalities including volumetric renders, augmented reality overlays, and real-time analytics dashboards embedded in XR environments. Effective visualisation depends on computer vision pipelines and rendering infrastructure.",
+  "domain": "data",
+  "definition": "Data Visualisation is the systematic practice of encoding data attributes into perceptual channels \u2014 position, colour, size, shape, and motion \u2014 to enable rapid human comprehension of patterns, trends, anomalies, and relational structures within datasets. It encompasses both static and interactive representations, spanning two-dimensional charts, network graphs, geospatial maps, and immersive three-dimensional scenes rendered in augmented or virtual reality environments. Effective data visualisation integrates principles from information design, cognitive psychology, and computer graphics, requiring rendering infrastructure, data pipelines, and interaction paradigms suited to the display medium. In the context of real-time analytics and spatial computing, visualisation systems must handle streaming data, high-dimensionality reduction, and multi-user collaborative viewing at interactive frame rates.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:sc-display-and-rendering",
-      "label": "Display and Rendering"
+      "id": "urn:ngm:class:information-design",
+      "label": "Information Design"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [
+    "hasPart": [
       {
-        "id": "urn:ngm:class:digital-twin",
-        "label": "Digital Twin"
+        "id": "urn:ngm:class:chart",
+        "label": "Chart"
+      },
+      {
+        "id": "urn:ngm:class:dashboard",
+        "label": "Dashboard"
+      },
+      {
+        "id": "urn:ngm:class:geospatial-map",
+        "label": "Geospatial Map"
+      },
+      {
+        "id": "urn:ngm:class:network-graph",
+        "label": "Network Graph"
       }
     ],
-    "dependsOn": [
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:rendering-engine",
+        "label": "Rendering Engine"
+      },
       {
         "id": "urn:ngm:class:data-access-interface",
         "label": "Data Access Interface"
       }
     ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:decision-support-system",
+        "label": "Decision Support System"
+      },
+      {
+        "id": "urn:ngm:class:exploratory-data-analysis",
+        "label": "Exploratory Data Analysis"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:data-model",
+        "label": "Data Model"
+      },
+      {
+        "id": "urn:ngm:class:graphics-processing-unit",
+        "label": "Graphics Processing Unit"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:data-table",
+        "label": "Data Table"
+      },
+      {
+        "id": "urn:ngm:class:text-report",
+        "label": "Text Report"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:spatial-computing-paradigm",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:computer-vision",
         "label": "Computer Vision"
       },
       {
-        "id": "urn:ngm:class:spatial-computing-paradigm",
-        "label": "Spatial Computing"
+        "id": "urn:ngm:class:dimensionality-reduction",
+        "label": "Dimensionality Reduction"
+      },
+      {
+        "id": "urn:ngm:class:colour-theory",
+        "label": "Colour Theory"
+      },
+      {
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human-Computer Interaction"
       }
     ],
     "supports": [
@@ -51,11 +123,24 @@
       {
         "id": "urn:ngm:class:telecollaboration",
         "label": "Telecollaboration"
+      },
+      {
+        "id": "urn:ngm:class:business-intelligence",
+        "label": "Business Intelligence"
       }
     ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:scientific-visualisation",
+        "label": "Scientific Visualisation"
+      },
+      {
+        "id": "urn:ngm:class:visual-analytics",
+        "label": "Visual Analytics"
+      }
+    ]
   },
   "wikilinks": [
     {

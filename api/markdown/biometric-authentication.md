@@ -1,14 +1,83 @@
 - ### Definition
-  - Biometric authentication verifies the identity of a user by matching a live biometric sample against a stored biometric template enrolled during registration. Modalities include fingerprint recognition, facial recognition, iris and retinal scanning, voice recognition, and behavioural biometrics such as keystroke dynamics and gait analysis. Because biometric characteristics are strongly bound to individuals, the method offers high inherence-factor assurance in identity claims, underpinning [[Digital Identity Verification]] and serving as a component of [[Multi-Factor Authentication]]. It [[uses]] [[Biometric Verification]] to perform the match and [[uses]] [[Biometric Binding Mechanism]] to cryptographically link a biometric template to a credential or key.
+  - Biometric authentication verifies the identity of a subject by measuring one or more intrinsic physiological or behavioural traits and comparing the result against a pre-enrolled template. It is a subclass of [[Authentication]] that realises the "something you are" inherence factor, which alongside "something you know" and "something you have" forms the classical triad of [[Multi-Factor Authentication]]. Because credentials are bodily rather than memorised or possessed, the method eliminates whole categories of phishing and credential-theft attack, while introducing distinct challenges around template irrevocability, demographic bias in matching accuracy, and the classification of biometric data as sensitive personal data under [[GDPR]] and equivalent legislation. Modern deployments anchor biometric templates inside hardware [[Secure Enclave]] components, binding them to device-resident [[FIDO2]] credentials via [[WebAuthn]], so that raw biometric data never leaves the user's device and [[Digital Identity Verification]] is performed through a cryptographic proof rather than a template transfer.
+
+- ### Overview
+  - Biometric authentication emerged from forensic science — fingerprint identification was systematised in law enforcement before 1900 — and expanded into automated systems during the 1970s with Automated Fingerprint Identification Systems (AFIS). Consumer mainstream adoption arrived with on-device fingerprint sensors around 2013–2014 and face unlock systems shortly thereafter.
+  - The appeal of biometrics is threefold: high usability (nothing to remember or carry), strong binding to the genuine user, and resistance to phishing because the credential cannot be typed or replayed. The principal risks are: biometric data is permanently sensitive once compromised; matching accuracy varies across demographic groups, creating equity concerns; and large centralised biometric databases represent high-value attack targets.
+  - Modern best practice places biometric matching exclusively on-device inside a [[Secure Enclave]] or [[Trusted Execution Environment]], with only a cryptographic attestation signal leaving the device. This architecture, formalised in [[FIDO2]] and [[WebAuthn]], decouples biometric verification from server-side authentication logic and eliminates centralised template stores.
+
+- ### Key Components and Mechanisms
+  - **Enrolment subsystem** — captures one or more raw biometric samples, extracts a compact feature template, and stores it in protected memory. Quality checks reject poor captures at enrolment time to reduce future false rejections.
+  - **Secure template storage** — templates reside in a [[Hardware Security Module]] or on-device [[Secure Enclave]] (e.g. Apple Secure Enclave, ARM TrustZone, Qualcomm SPU). Storage is isolated from the main OS so malware cannot exfiltrate the template.
+  - **[[Feature Extraction]]** — converts raw sensor data (image, audio waveform, keystroke timing) into a normalised mathematical representation. Deep learning feature extractors (CNNs for face and iris, RNNs for voice) have largely superseded hand-crafted descriptors.
+  - **Matching engine** — computes a similarity score between the live sample feature vector and the enrolled template; accepts or rejects based on a configurable threshold. Performance is characterised by false acceptance rate (FAR), false rejection rate (FRR), and the equal error rate (EER) where FAR = FRR.
+  - **[[Presentation Attack Detection]]** (liveness detection) — determines whether a biometric sample originates from a live person rather than a spoof artefact (printed photograph, silicone fingerprint, 3D face mask, replay recording). PAD is standardised in ISO/IEC 30107.
+  - **Biometric modalities**:
+    - *Fingerprint* — oldest automated modality; minutiae-based matching; used in smartphones, border control, physical access control.
+    - *Facial recognition* — 2D and 3D analysis; mass-market via smartphones; also used in border eGates and surveillance (subject to high-risk AI Act classification in the EU).
+    - *Iris recognition* — extremely high FAR/FRR performance; used in border control, high-security environments.
+    - *Voice / speaker recognition* — behavioural-physiological hybrid; used in telephone banking and voice assistants.
+    - *Behavioural biometrics* — keystroke dynamics, gait, mouse movement; used for [[Continuous Authentication]] in fraud detection without explicit user action.
+
+- ### Applications and Use Cases
+  - **Consumer device unlock** — fingerprint and facial unlock on smartphones and laptops; Touch ID (2013), Face ID (2017), Windows Hello (2015) drove mass adoption.
+  - **[[Passwordless Authentication]] for web services** — [[FIDO2]]/[[WebAuthn]] passkeys use on-device biometric unlock to release a private signing key, replacing passwords for web and app logins; deployed by Apple, Google, Microsoft, and major enterprises.
+  - **[[Digital Identity Verification]] and KYC** — biometric selfie matching against passport chip data for remote identity proofing in financial services onboarding; mandated for high-assurance levels under [[eIDAS 2.0]].
+  - **Border control and travel** — automated biometric border control (eGates) at international airports match live face or iris against passport chip; major airports in UK, EU, USA, UAE, Australia.
+  - **Physical access control** — fingerprint and facial readers on data centre doors, high-security facilities, and time-and-attendance systems.
+  - **Financial services** — biometric payment confirmation; voice banking; continuous behavioural biometric scoring for transaction fraud detection.
+  - **Healthcare** — patient identification to reduce medication errors and ensure correct record access; biometric time-and-attendance for clinical staff.
+  - **Law enforcement and forensics** — AFIS for criminal fingerprint identification; facial recognition watchlists (subject to significant regulation in democratic jurisdictions).
+  - **Extended reality / spatial computing** — iris and facial biometrics for user identification in head-mounted displays; eye tracking as implicit authentication signal in [[Spatial Computing]] headsets; bridging biometric identity into immersive environments.
 
 - ### Relationships
-  - Biometric authentication [[uses]] [[Biometric Verification]] for the core matching process and [[uses]] [[Biometric Binding Mechanism]] to anchor credentials to verified biometric templates in privacy-preserving ways. It [[enables]] [[Digital Identity Verification]] workflows for onboarding and continuous authentication, and [[enables]] [[Multi-Factor Authentication]] by providing an inherence factor. It [[requires]] [[Data Protection]] safeguards because biometric data is classified as sensitive personal data under GDPR and equivalent laws. It is [[relatedTo]] [[Self Sovereign Identity]] architectures that seek to return biometric template control to the user and to [[Identity Management]] systems broadly.
+  - uses:: [[Biometric Verification]]
+  - uses:: [[Biometric Binding Mechanism]]
+  - uses:: [[Secure Enclave]]
+  - uses:: [[Presentation Attack Detection]]
+  - uses:: [[Feature Extraction]]
+  - enables:: [[Digital Identity Verification]]
+  - enables:: [[Multi-Factor Authentication]]
+  - enables:: [[Passwordless Authentication]]
+  - enables:: [[Continuous Authentication]]
+  - enables:: [[Zero Trust Security]]
+  - requires:: [[Data Protection]]
+  - requires:: [[Privacy by Design]]
+  - requires:: [[Hardware Security Module]]
+  - implements:: [[FIDO2]]
+  - implements:: [[WebAuthn]]
+  - contrastsWith:: [[Password Authentication]]
+  - contrastsWith:: [[Token-Based Authentication]]
+  - relatedTo:: [[Self Sovereign Identity]]
+  - relatedTo:: [[Identity Management]]
+  - relatedTo:: [[Facial Recognition]]
+  - relatedTo:: [[GDPR]]
+  - bridges-to:: [[Machine Learning]]
+  - bridges-to:: [[On-Device Inference]]
 
-- ### Content
-  - The scientific study of fingerprints for identification dates to the late nineteenth century (Galton, Henry), and early automated fingerprint identification systems (AFIS) were deployed in law enforcement from the 1970s. Facial recognition algorithms based on eigenfaces emerged in the early 1990s. Consumer biometric authentication entered the mainstream with Apple's Touch ID fingerprint sensor in 2013 and Face ID in 2017, triggering mass adoption across smartphone platforms. The FIDO Alliance's FIDO2 standard (2018) formalised biometric authenticators as a phishing-resistant authentication mechanism for web services.
+- ### Standards and Governance Context
+  - **ISO/IEC 19794** — international family of biometric data interchange formats (fingerprint minutiae, facial image, iris image, etc.).
+  - **ISO/IEC 30107** — biometric presentation attack detection (liveness detection); three-part standard covering framework, technical testing, and conformance testing.
+  - **NIST SP 800-76** — biometric specifications for US Personal Identity Verification (PIV) credentials.
+  - **NIST FRVT** — Face Recognition Vendor Testing; the authoritative ongoing benchmark for facial recognition accuracy and demographic differential performance.
+  - **[[FIDO2]] / [[WebAuthn]]** — W3C WebAuthn Level 2 and FIDO2 CTAP 2.2; the dominant open standard for integrating on-device biometrics into phishing-resistant web authentication.
+  - **[[eIDAS 2.0]] (EU 910/2014 as amended)** — mandates biometric-based identity proofing for high-assurance levels in EU Digital Identity Wallets, expected to affect hundreds of millions of EU citizens.
+  - **GDPR (EU) and UK GDPR** — classifies biometric data processed for the purpose of uniquely identifying natural persons as a special category of personal data; processing requires an explicit legal basis. Relevant to [[Data Protection]] obligations.
+  - **EU AI Act (2024)** — classifies real-time remote biometric identification in publicly accessible spaces as prohibited AI (with narrow exceptions); post-hoc remote biometric identification as high-risk AI requiring conformity assessment.
+  - **CCPA / US state privacy laws** — several US states (Illinois BIPA, Texas, Washington) impose specific consent and retention obligations on biometric data collection by private entities.
 
-  - Technically, a biometric authentication system comprises an enrolment subsystem that captures and extracts a feature template from raw biometric data, a secure storage mechanism for the template (typically on-device secure enclave to avoid centralised biometric databases), and a matching engine that computes similarity between the live sample and the enrolled template using a configured threshold. Performance is characterised by false acceptance rate (FAR) and false rejection rate (FRR), with the equal error rate (EER) used as a single-figure benchmark. Presentation attack detection (PAD, or liveness detection) is essential to resist spoofing by photographs or silicone fingerprint replicas.
+- ### Privacy and Equity Considerations
+  - Biometric data is uniquely sensitive because it is permanently linked to an individual's physical identity and cannot be rotated if compromised, unlike a password or cryptographic key. This irreversibility necessitates strict [[Privacy by Design]] principles — specifically on-device matching, template protection schemes (e.g. cancelable biometrics, biometric cryptosystems), and minimal data retention.
+  - Published evaluations including NIST FRVT have documented statistically significant differences in false rejection and false acceptance rates across demographic groups (age, sex, skin tone) for facial recognition algorithms. This differential accuracy creates disparate impact in access control contexts and has led to regulatory restrictions on facial recognition in public spaces in several EU member states and major US cities.
+  - The combination of biometric identification with large-scale population tracking constitutes a qualitatively different privacy risk than individual authentication, motivating the EU AI Act's near-prohibition on real-time remote biometric identification in public spaces.
+  - [[Self Sovereign Identity]] architectures attempt to address control and consent issues by allowing individuals to hold their own biometric templates in a personal data store and selectively present derived credentials, rather than sharing raw biometric data with relying parties.
 
-  - The biometric authentication ecosystem spans device manufacturers (Apple, Qualcomm, Samsung), biometric middleware vendors (Aware, NEC, Thales), and cloud identity platforms (Microsoft Azure AD, Okta, Ping Identity) that integrate biometric signals via device attestation rather than transmitting raw biometric data. Regulatory frameworks including EU eIDAS 2.0 mandate biometric verification for high-assurance digital identity wallets. The travel industry uses automated biometric border control (eGates) at major airports worldwide.
+- ### Technical Integration Patterns
+  - **On-device matching with cryptographic attestation** — the dominant modern pattern: biometric match triggers a hardware-backed private key signature; the server verifies the signature without receiving any biometric data. Implemented via [[FIDO2]] platform authenticators.
+  - **Biometric template protection** — cancelable biometrics apply a one-way transform to the raw template; biometric cryptosystems (fuzzy extractors, fuzzy vaults) derive a cryptographic key from a biometric sample such that the key is reproducible within match threshold tolerance but the template cannot be recovered from the key.
+  - **Continuous and implicit authentication** — behavioural biometrics (keystroke, mouse, touch, gait) collected passively during a session are scored against a user model to detect anomalous session take-over, bridging to [[Machine Learning]] inference and [[On-Device Inference]] for low-latency fraud signals.
+  - **Federated biometric identity** — biometric verification at one relying party can assert an identity claim to other relying parties via a verifiable credential, linking to [[Self Sovereign Identity]] and [[Digital Identity Verification]] federation patterns.
 
-  - By 2024–2025 large-scale deployments are raising privacy and equity concerns: facial recognition false rejection rates vary significantly across demographic groups, leading to regulatory restrictions in several EU member states and US cities. The GDPR and EU AI Act classify remote biometric identification in public spaces as high-risk or prohibited. On the constructive side, on-device biometric binding via secure hardware enclaves and standards such as WebAuthn are reducing reliance on centralised biometric databases, improving both privacy and security posture.
+- ### Provenance
+  - sources:: ISO/IEC 19794 series; ISO/IEC 30107; NIST SP 800-76; NIST FRVT; FIDO Alliance FIDO2 specification; W3C WebAuthn Level 2; EU AI Act (2024); eIDAS 2.0 regulation; EU GDPR Article 9; Illinois BIPA
+  - updated:: 2026-06-13

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:realtime-communication",
   "domain": "infrastructure",
-  "definition": "Infrastructure and protocols enabling low-latency, synchronous exchange of audio, video, text, and data between participants. Realtime communication encompasses voice-over-IP, video conferencing, instant messaging, and presence systems that require end-to-end latency below perceptual thresholds (typically under 150 ms) to support coherent social interaction in both physical and virtual environments.",
+  "definition": "Realtime communication denotes the class of systems, protocols, and architectures that deliver synchronous, low-latency exchange of audio, video, text, and arbitrary data between two or more participants such that end-to-end delay remains below perceptual thresholds \u2014 typically under 150 ms one-way for voice and under 50 ms for interactive haptics or gaming. It encompasses technologies such as WebRTC, VoIP, SIP, XMPP, and WebSocket-based signalling, unified under the common requirement that transport, codec, and signalling planes cooperate to minimise jitter and packet loss. Realtime communication differs from asynchronous messaging in that session state must be continuously negotiated and media flows must be sustained for the interaction to remain coherent. It constitutes foundational infrastructure for distributed collaboration, virtual presence, telemedicine, and immersive social environments.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-network-and-comms",
@@ -14,9 +14,26 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "emerging",
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:signalling-protocol",
+        "label": "Signalling Protocol"
+      },
+      {
+        "id": "urn:ngm:class:media-codec",
+        "label": "Media Codec"
+      },
+      {
+        "id": "urn:ngm:class:transport-layer",
+        "label": "Transport Layer"
+      },
+      {
+        "id": "urn:ngm:class:presence-system",
+        "label": "Presence System"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:network-protocol",
@@ -25,6 +42,14 @@
       {
         "id": "urn:ngm:class:latency",
         "label": "Latency"
+      },
+      {
+        "id": "urn:ngm:class:network-synchronization",
+        "label": "Network Synchronization"
+      },
+      {
+        "id": "urn:ngm:class:nat-traversal",
+        "label": "NAT Traversal"
       }
     ],
     "enables": [
@@ -35,27 +60,103 @@
       {
         "id": "urn:ngm:class:immersive-communication",
         "label": "Immersive Communication"
+      },
+      {
+        "id": "urn:ngm:class:telepresence",
+        "label": "Telepresence"
+      },
+      {
+        "id": "urn:ngm:class:telemedicine",
+        "label": "Telemedicine"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:asynchronous-messaging",
+        "label": "Asynchronous Messaging"
+      },
+      {
+        "id": "urn:ngm:class:store-and-forward",
+        "label": "Store and Forward"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
+      },
+      {
+        "id": "urn:ngm:class:ai-voice-synthesis",
+        "label": "AI Voice Synthesis"
+      },
+      {
+        "id": "urn:ngm:class:avatar-streaming",
+        "label": "Avatar Streaming"
+      }
+    ],
     "uses": [
       {
-        "id": "urn:ngm:class:network-synchronization",
-        "label": "Network Synchronization"
+        "id": "urn:ngm:class:webrtc",
+        "label": "WebRTC"
+      },
+      {
+        "id": "urn:ngm:class:session-initiation-protocol",
+        "label": "Session Initiation Protocol"
+      },
+      {
+        "id": "urn:ngm:class:websocket",
+        "label": "WebSocket"
+      },
+      {
+        "id": "urn:ngm:class:opus-codec",
+        "label": "Opus Codec"
       }
     ],
     "supports": [
       {
         "id": "urn:ngm:class:metaverse-and-telecollaboration",
         "label": "Metaverse and Telecollaboration"
+      },
+      {
+        "id": "urn:ngm:class:virtual-worlds",
+        "label": "Virtual Worlds"
+      },
+      {
+        "id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
       }
     ],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      },
+      {
+        "id": "urn:ngm:class:w3c",
+        "label": "W3C"
+      },
+      {
+        "id": "urn:ngm:class:3gpp",
+        "label": "3GPP"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:quality-of-service",
+        "label": "Quality of Service"
+      },
+      {
+        "id": "urn:ngm:class:end-to-end-encryption",
+        "label": "End-to-End Encryption"
+      },
+      {
+        "id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": []

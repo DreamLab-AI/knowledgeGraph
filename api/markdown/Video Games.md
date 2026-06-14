@@ -21,7 +21,7 @@ public:: true
   "@type": "Class",
   "label": "Video Games",
   "definition": "Video games are interactive electronic entertainment software in which players engage with a virtual environment through input devices, receiving real-time audiovisual feedback rendered by a game engine. They span genres from narrative role-playing games to competitive multiplayer shooters, sports simulations, and puzzle games, delivered across platforms including dedicated consoles, personal computers, mobile devices, and cloud streaming services. Video games are the largest entertainment sector by revenue globally, intersecting with AI, virtual reality, blockchain-based asset ownership, and esports as a spectator sport.",
-  "domain": "graphics",
+  "domain": "spatial-computing",
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:digital-entertainment", "label": "Digital Entertainment"}],
   "relations": {

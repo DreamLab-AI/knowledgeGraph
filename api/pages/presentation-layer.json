@@ -4,7 +4,7 @@
   "slug": "presentation-layer",
   "public": true,
   "classIri": "urn:ngm:class:presentation-layer",
-  "domain": "presentation",
+  "domain": "infrastructure",
   "definition": "The Presentation Layer is the topmost stratum of the canonical stack, responsible for rendering application state into a form humans can perceive and act on. It sits directly above the Application Layer and has nothing above it in the stack. It contains user interface components, rendering pipelines, formatting, and interaction handling.",
   "subClassOf": [
     {

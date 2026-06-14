@@ -4,8 +4,8 @@
   "slug": "digital-divide",
   "public": true,
   "classIri": "urn:ngm:class:digital-divide",
-  "domain": "general",
-  "definition": "The gap between groups in their access to, use of and benefit from information and communication technologies, including internet connectivity and digital skills.",
+  "domain": "governance",
+  "definition": "The digital divide describes the structured inequality between individuals, communities, and nations in their ability to access, afford, use, and benefit from information and communication technologies, including broadband connectivity, computing devices, and the digital literacy skills required for effective participation. The divide operates across multiple axes \u2014 geographic (urban versus rural), socioeconomic (income and education), demographic (age, gender, disability), and geopolitical (Global North versus Global South) \u2014 and is self-reinforcing because limited digital access restricts access to the economic and educational resources needed to close the gap. Policy interventions target three layers: physical infrastructure deployment, affordability of devices and data, and cultivation of digital skills and trust through digital literacy programmes. As digital systems mediate healthcare, education, employment, public services, and civic participation, the digital divide functions as a meta-inequality that amplifies pre-existing social disparities.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:digital-economy",
@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
@@ -21,23 +21,108 @@
       {
         "id": "urn:ngm:class:telecommunications",
         "label": "Telecommunications"
+      },
+      {
+        "id": "urn:ngm:class:broadband-infrastructure",
+        "label": "Broadband Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:digital-literacy",
+        "label": "Digital Literacy"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:digital-transformation",
         "label": "Digital Transformation"
+      },
+      {
+        "id": "urn:ngm:class:e-government",
+        "label": "E-Government"
+      },
+      {
+        "id": "urn:ngm:class:e-learning",
+        "label": "E-Learning"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:digital-inclusion",
+        "label": "Digital Inclusion"
+      },
+      {
+        "id": "urn:ngm:class:connected-society",
+        "label": "Connected Society"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-fairness",
+        "label": "AI Fairness"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-bias",
+        "label": "Algorithmic Bias"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ],
     "uses": [],
     "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:itu",
+        "label": "ITU"
+      },
+      {
+        "id": "urn:ngm:class:un-sustainable-development-goals",
+        "label": "UN Sustainable Development Goals"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:social-inequality",
+        "label": "Social Inequality"
+      },
+      {
+        "id": "urn:ngm:class:digital-economy",
+        "label": "Digital Economy"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:internet-governance",
+        "label": "Internet Governance"
+      },
+      {
+        "id": "urn:ngm:class:universal-service-obligation",
+        "label": "Universal Service Obligation"
+      },
+      {
+        "id": "urn:ngm:class:data-sovereignty",
+        "label": "Data Sovereignty"
+      },
+      {
+        "id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      },
+      {
+        "id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      },
+      {
+        "id": "urn:ngm:class:human-rights",
+        "label": "Human Rights"
+      }
+    ]
   },
   "wikilinks": [
     {

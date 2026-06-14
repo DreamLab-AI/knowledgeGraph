@@ -67,7 +67,7 @@ public:: true
   "@type": "Class",
   "label": "Graph Theory",
   "definition": "Graph Theory is the branch of mathematics that studies graphs, structures consisting of vertices connected by edges, used to model pairwise relationships between objects. It examines properties such as connectivity, paths, cycles, colourings, matchings and flows, and classifies graphs by structure (for example trees, bipartite and planar graphs). Originating with Euler's 1736 solution of the Seven Bridges of Konigsberg problem, it now underpins network analysis, optimisation and computer science. Graph algorithms are fundamental to routing, scheduling, social network analysis and the representation of knowledge.",
-  "domain": "graph-theory",
+  "domain": "machine-learning",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

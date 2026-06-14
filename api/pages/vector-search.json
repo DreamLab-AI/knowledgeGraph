@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:vector-search",
   "domain": "artificial-intelligence",
-  "definition": "The retrieval of items whose vector embeddings are most similar to a query vector, typically using distance metrics and approximate nearest neighbour indexing for efficiency.",
+  "definition": "Vector search is a retrieval paradigm that identifies the items in a corpus whose high-dimensional vector representations are most similar to a query vector, using distance or similarity metrics such as cosine similarity, dot product, or Euclidean distance. Because exhaustive pairwise comparison scales as O(n\u00b7d) and becomes intractable for large corpora, practical systems use approximate nearest neighbour (ANN) algorithms \u2014 including HNSW, IVF-PQ, and LSH \u2014 that trade a small, configurable recall loss for orders-of-magnitude latency improvement. Vectors are typically produced by embedding models that encode semantic, visual, or multimodal meaning into dense float arrays, making vector search inherently meaning-sensitive rather than lexical. The paradigm underpins semantic search, recommendation systems, retrieval-augmented generation, duplicate detection, and cross-modal retrieval across text, image, audio, and structured data.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:information-retrieval",
@@ -13,31 +13,122 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:hnsw",
+        "label": "HNSW"
+      },
+      {
+        "id": "urn:ngm:class:inverted-file-index",
+        "label": "Inverted File Index"
+      },
+      {
+        "id": "urn:ngm:class:product-quantisation",
+        "label": "Product Quantisation"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:embeddings",
         "label": "Embeddings"
+      },
+      {
+        "id": "urn:ngm:class:embedding-model",
+        "label": "Embedding Model"
+      },
+      {
+        "id": "urn:ngm:class:similarity-metric",
+        "label": "Similarity Metric"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:semantic-search",
         "label": "Semantic Search"
+      },
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "id": "urn:ngm:class:recommendation-system",
+        "label": "Recommendation System"
+      },
+      {
+        "id": "urn:ngm:class:cross-modal-retrieval",
+        "label": "Cross-Modal Retrieval"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:approximate-nearest-neighbour",
+        "label": "Approximate Nearest Neighbour"
+      },
+      {
+        "id": "urn:ngm:class:vector-index",
+        "label": "Vector Index"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:keyword-search",
+        "label": "Keyword Search"
+      },
+      {
+        "id": "urn:ngm:class:exact-nearest-neighbour",
+        "label": "Exact Nearest Neighbour"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:spatial-indexing",
+        "label": "Spatial Indexing"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cosine-similarity",
+        "label": "Cosine Similarity"
+      },
+      {
+        "id": "urn:ngm:class:dot-product",
+        "label": "Dot Product"
+      },
+      {
+        "id": "urn:ngm:class:locality-sensitive-hashing",
+        "label": "Locality-Sensitive Hashing"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:vector-database",
+        "label": "Vector Database"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:dense-retrieval",
+        "label": "Dense Retrieval"
+      },
+      {
+        "id": "urn:ngm:class:hybrid-search",
+        "label": "Hybrid Search"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -4,8 +4,8 @@
   "slug": "agile-software-development",
   "public": true,
   "classIri": "urn:ngm:class:agile-software-development",
-  "domain": "metaverse",
-  "definition": "Agile software development is a set of iterative, incremental methods that prioritise working software, close collaboration and adaptation to change over fixed up-front planning.",
+  "domain": "distributed-collaboration",
+  "definition": "Agile Software Development is a family of iterative, incremental approaches to building software that prioritise working product increments, continuous stakeholder collaboration, and rapid adaptation to changing requirements over rigid up-front planning. Rooted in the 2001 Agile Manifesto, it encompasses frameworks such as Scrum, Kanban, Extreme Programming, and SAFe, each operationalising core values through time-boxed iterations, cross-functional teams, and frequent feedback loops. Agile practices shorten the feedback cycle between developers and end users, reduce the cost of change, and improve delivery predictability by surfacing risk early. It has become the dominant paradigm for professional software delivery and is increasingly applied to hardware, policy, and organisational transformation.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:software-engineering-domain",
@@ -13,31 +13,129 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
-  "maturity": "established",
+  "qualityScore": 0.74,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:scrum",
+        "label": "Scrum"
+      },
+      {
+        "id": "urn:ngm:class:kanban",
+        "label": "Kanban"
+      },
+      {
+        "id": "urn:ngm:class:extreme-programming",
+        "label": "Extreme Programming"
+      },
+      {
+        "id": "urn:ngm:class:sprint",
+        "label": "Sprint"
+      },
+      {
+        "id": "urn:ngm:class:retrospective",
+        "label": "Retrospective"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:software-development",
         "label": "Software Development"
+      },
+      {
+        "id": "urn:ngm:class:continuous-integration",
+        "label": "Continuous Integration"
+      },
+      {
+        "id": "urn:ngm:class:version-control",
+        "label": "Version Control"
       }
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:software-engineering-domain",
-        "label": "Software Engineering Domain"
+        "id": "urn:ngm:class:devops",
+        "label": "DevOps"
+      },
+      {
+        "id": "urn:ngm:class:continuous-delivery",
+        "label": "Continuous Delivery"
+      },
+      {
+        "id": "urn:ngm:class:test-driven-development",
+        "label": "Test-Driven Development"
+      },
+      {
+        "id": "urn:ngm:class:lean-software-development",
+        "label": "Lean Software Development"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:waterfall-model",
+        "label": "Waterfall Model"
+      },
+      {
+        "id": "urn:ngm:class:big-design-up-front",
+        "label": "Big Design Up Front"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      },
+      {
+        "id": "urn:ngm:class:organisational-learning",
+        "label": "Organisational Learning"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:user-story",
+        "label": "User Story"
+      },
+      {
+        "id": "urn:ngm:class:product-backlog",
+        "label": "Product Backlog"
+      },
+      {
+        "id": "urn:ngm:class:pair-programming",
+        "label": "Pair Programming"
+      }
+    ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:agile-manifesto",
+        "label": "Agile Manifesto"
+      },
+      {
+        "id": "urn:ngm:class:scaled-agile-framework",
+        "label": "Scaled Agile Framework"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:project-management",
+        "label": "Project Management"
+      },
+      {
+        "id": "urn:ngm:class:software-architecture",
+        "label": "Software Architecture"
+      },
+      {
+        "id": "urn:ngm:class:distributed-teams",
+        "label": "Distributed Teams"
+      }
+    ]
   },
   "wikilinks": [
     {

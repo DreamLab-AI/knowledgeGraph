@@ -5,55 +5,153 @@
   "public": true,
   "classIri": "urn:ngm:class:post-processing",
   "domain": "spatial-computing",
-  "definition": "A set of screen-space image processing effects applied after the primary rendering pass to enhance visual fidelity. Common effects include bloom, motion blur, depth of field, tone mapping, colour grading, ambient occlusion, and anti-aliasing, all executed as full-screen shader passes over the rendered framebuffer before presentation.",
+  "definition": "Post processing is the stage in a real-time or offline rendering pipeline where image-space operations are applied to the fully rasterised or ray-traced framebuffer before it is displayed or composited. Effects\u2014such as bloom, depth of field, motion blur, tone mapping, colour grading, screen-space ambient occlusion (SSAO), temporal anti-aliasing (TAA), and chromatic aberration\u2014are executed as one or more full-screen shader passes that read from and write back to render targets. By operating in screen space rather than on scene geometry, post processing achieves high visual fidelity at comparatively low computational cost, and has become an indispensable component of game engines, virtual production pipelines, and XR head-mounted display rendering stacks.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-display-and-rendering",
       "label": "Display and Rendering"
-    },
-    {
-      "id": "urn:ngm:class:visual-effects",
-      "label": "Visual Effects"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:bloom",
+        "label": "Bloom"
+      },
+      {
+        "id": "urn:ngm:class:depth-of-field",
+        "label": "Depth of Field"
+      },
+      {
+        "id": "urn:ngm:class:motion-blur",
+        "label": "Motion Blur"
+      },
+      {
+        "id": "urn:ngm:class:tone-mapping",
+        "label": "Tone Mapping"
+      },
+      {
+        "id": "urn:ngm:class:colour-grading",
+        "label": "Colour Grading"
+      },
+      {
+        "id": "urn:ngm:class:anti-aliasing",
+        "label": "Anti-Aliasing"
+      },
+      {
+        "id": "urn:ngm:class:screen-space-ambient-occlusion",
+        "label": "Screen Space Ambient Occlusion"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:shader",
         "label": "Shader"
       },
       {
-        "id": "urn:ngm:class:rendering-technique",
-        "label": "Rendering Technique"
+        "id": "urn:ngm:class:render-target",
+        "label": "Render Target"
+      },
+      {
+        "id": "urn:ngm:class:framebuffer",
+        "label": "Framebuffer"
+      },
+      {
+        "id": "urn:ngm:class:gpu",
+        "label": "GPU"
       }
     ],
-    "enables": [],
-    "dependsOn": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:visual-fidelity",
+        "label": "Visual Fidelity"
+      },
+      {
+        "id": "urn:ngm:class:cinematic-rendering",
+        "label": "Cinematic Rendering"
+      },
+      {
+        "id": "urn:ngm:class:photorealism",
+        "label": "Photorealism"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:rendering-technique",
+        "label": "Rendering Technique"
+      },
+      {
+        "id": "urn:ngm:class:g-buffer",
+        "label": "G-Buffer"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:ray-tracing",
+        "label": "Ray Tracing"
+      },
+      {
+        "id": "urn:ngm:class:forward-rendering",
+        "label": "Forward Rendering"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:neural-rendering",
+        "label": "Neural Rendering"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-supersampling",
+        "label": "Machine Learning Supersampling"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:rasterization",
         "label": "Rasterization"
+      },
+      {
+        "id": "urn:ngm:class:texture-sampling",
+        "label": "Texture Sampling"
+      },
+      {
+        "id": "urn:ngm:class:compute-shader",
+        "label": "Compute Shader"
       }
     ],
     "supports": [
       {
         "id": "urn:ngm:class:visual-effects",
         "label": "Visual Effects"
+      },
+      {
+        "id": "urn:ngm:class:xr-rendering",
+        "label": "XR Rendering"
+      },
+      {
+        "id": "urn:ngm:class:virtual-production",
+        "label": "Virtual Production"
       }
     ],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      }
+    ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:ray-tracing",
-        "label": "Ray Tracing"
+        "id": "urn:ngm:class:deferred-rendering",
+        "label": "Deferred Rendering"
+      },
+      {
+        "id": "urn:ngm:class:high-dynamic-range",
+        "label": "High Dynamic Range"
       }
     ]
   },

@@ -21,7 +21,7 @@ public:: true
   "@type": "Class",
   "label": "Wikidata",
   "definition": "Wikidata is a free, collaboratively edited knowledge base operated by the Wikimedia Foundation that stores structured data as machine-readable items and statements, serving as a central data repository for Wikipedia and the broader web. Each item has a stable identifier and is described by property-value statements with references and qualifiers, exported as linked data and queryable via SPARQL. Multilingual by design and released under a public-domain licence, Wikidata is one of the largest open knowledge graphs and a key hub in the linked-data web.",
-  "domain": "knowledge",
+  "domain": "data",
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"}],
   "relations": {

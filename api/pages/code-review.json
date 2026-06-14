@@ -4,8 +4,8 @@
   "slug": "code-review",
   "public": true,
   "classIri": "urn:ngm:class:code-review",
-  "domain": "software-engineering",
-  "definition": "Code review is the systematic examination of source code by people other than the author to find defects, improve quality and share knowledge. It is commonly conducted through pull requests in modern development workflows.",
+  "domain": "infrastructure",
+  "definition": "Code review is the systematic, human-led examination of proposed source code changes by one or more reviewers other than the original author, intended to detect defects, enforce coding standards, and disseminate architectural knowledge across a development team. It is most commonly performed asynchronously via pull requests or merge requests in version-controlled repositories, augmented by automated static analysis, linting, and continuous integration checks. Effective code review functions as both a quality gate and a collaborative learning mechanism, reducing the cost of defects by catching them before integration into the main codebase. It is a foundational practice in professional software engineering, distributed-collaboration workflows, and secure development lifecycles.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:software-engineering",
@@ -13,31 +13,126 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
-  "maturity": "established",
+  "qualityScore": 0.74,
+  "maturity": "mature",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
         "id": "urn:ngm:class:version-control",
         "label": "Version Control"
+      },
+      {
+        "id": "urn:ngm:class:pull-request",
+        "label": "Pull Request"
+      },
+      {
+        "id": "urn:ngm:class:coding-standards",
+        "label": "Coding Standards"
       }
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:software-development",
-        "label": "Software Development"
+        "id": "urn:ngm:class:software-quality-assurance",
+        "label": "Software Quality Assurance"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-sharing",
+        "label": "Knowledge Sharing"
+      },
+      {
+        "id": "urn:ngm:class:continuous-integration",
+        "label": "Continuous Integration"
+      },
+      {
+        "id": "urn:ngm:class:secure-development-lifecycle",
+        "label": "Secure Development Lifecycle"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:collaborative-workflow",
+        "label": "Collaborative Workflow"
+      },
+      {
+        "id": "urn:ngm:class:source-code-management",
+        "label": "Source Code Management"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:pair-programming",
+        "label": "Pair Programming"
+      },
+      {
+        "id": "urn:ngm:class:formal-inspection",
+        "label": "Formal Inspection"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:automated-code-review",
+        "label": "Automated Code Review"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:static-analysis",
+        "label": "Static Analysis"
+      },
+      {
+        "id": "urn:ngm:class:diff-algorithm",
+        "label": "Diff Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:inline-commenting",
+        "label": "Inline Commenting"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:software-testing",
+        "label": "Software Testing"
+      },
+      {
+        "id": "urn:ngm:class:technical-debt-management",
+        "label": "Technical Debt Management"
+      },
+      {
+        "id": "urn:ngm:class:code-maintainability",
+        "label": "Code Maintainability"
+      }
+    ],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:software-development",
+        "label": "Software Development"
+      },
+      {
+        "id": "urn:ngm:class:devops",
+        "label": "DevOps"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:agile-development",
+        "label": "Agile Development"
+      },
+      {
+        "id": "urn:ngm:class:open-source-development",
+        "label": "Open Source Development"
+      },
+      {
+        "id": "urn:ngm:class:refactoring",
+        "label": "Refactoring"
+      }
+    ]
   },
   "wikilinks": [
     {

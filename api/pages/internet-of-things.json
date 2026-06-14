@@ -5,19 +5,45 @@
   "public": true,
   "classIri": "urn:ngm:class:internet-of-things",
   "domain": "infrastructure",
-  "definition": "The Internet of Things (IoT) is a distributed computing paradigm comprising physical objects embedded with sensors, actuators, microcontrollers, and wireless communication modules that collect, exchange, and act upon data autonomously over IP networks. IoT systems span a hierarchy from constrained end-devices through edge gateways to cloud analytics platforms, and rely on lightweight protocols such as MQTT, CoAP, and AMQP designed for low-bandwidth, high-latency, or lossy network conditions. IoT architectures underpin smart manufacturing, precision agriculture, smart-city infrastructure, and industrial automation applications.",
+  "definition": "The Internet of Things (IoT) is a distributed computing paradigm in which physical objects embedded with sensors, actuators, microcontrollers, and wireless communication modules collect, exchange, and act upon data autonomously over IP networks. IoT deployments span a layered architecture from resource-constrained end-devices through edge gateways to cloud analytics platforms, relying on lightweight protocols such as MQTT, CoAP, AMQP, and LwM2M designed for low-bandwidth, high-latency, or lossy network environments. The paradigm encompasses consumer IoT (smart home devices, wearables), Industrial IoT (IIoT) for manufacturing and critical infrastructure, and urban-scale deployments in smart cities and precision agriculture. Security, interoperability, and device lifecycle management are defining engineering challenges across all IoT segments.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:infra-network-and-comms",
-      "label": "Infra Network and Comms"
+      "id": "urn:ngm:class:distributed-systems",
+      "label": "Distributed Systems"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.72,
+  "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:iot-gateway",
+        "label": "IoT Gateway"
+      },
+      {
+        "id": "urn:ngm:class:sensor-data",
+        "label": "Sensor Data"
+      },
+      {
+        "id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      },
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:edge-computing",
@@ -25,34 +51,101 @@
       },
       {
         "id": "urn:ngm:class:telemetry-and-analytics",
-        "label": "Telemetry & Analytics"
+        "label": "Telemetry and Analytics"
+      },
+      {
+        "id": "urn:ngm:class:smart-city",
+        "label": "Smart City"
+      },
+      {
+        "id": "urn:ngm:class:industrial-automation",
+        "label": "Industrial Automation"
+      },
+      {
+        "id": "urn:ngm:class:predictive-maintenance",
+        "label": "Predictive Maintenance"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:traditional-scada",
+        "label": "Traditional SCADA"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:mqtt",
         "label": "MQTT"
       },
       {
+        "id": "urn:ngm:class:coap",
+        "label": "CoAP"
+      },
+      {
         "id": "urn:ngm:class:sensor",
         "label": "Sensor"
+      },
+      {
+        "id": "urn:ngm:class:wireless-communication",
+        "label": "Wireless Communication"
+      },
+      {
+        "id": "urn:ngm:class:microcontroller",
+        "label": "Microcontroller"
+      },
+      {
+        "id": "urn:ngm:class:tls",
+        "label": "TLS"
       }
     ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:etsi",
+        "label": "ETSI"
+      },
+      {
+        "id": "urn:ngm:class:ieee",
+        "label": "IEEE"
+      },
+      {
+        "id": "urn:ngm:class:itu",
+        "label": "ITU"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:embedded-systems",
-        "label": "Embedded Systems"
+        "id": "urn:ngm:class:cyber-physical-systems",
+        "label": "Cyber-Physical Systems"
       },
       {
-        "id": "urn:ngm:class:sensor-data",
-        "label": "Sensor Data"
+        "id": "urn:ngm:class:5g",
+        "label": "5G"
+      },
+      {
+        "id": "urn:ngm:class:fog-computing",
+        "label": "Fog Computing"
+      },
+      {
+        "id": "urn:ngm:class:device-management",
+        "label": "Device Management"
       }
     ]
   },

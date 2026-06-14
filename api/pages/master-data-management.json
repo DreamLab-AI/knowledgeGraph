@@ -4,7 +4,7 @@
   "slug": "master-data-management",
   "public": true,
   "classIri": "urn:ngm:class:master-data-management",
-  "domain": "data-management",
+  "domain": "data",
   "definition": "A discipline and set of processes for creating and maintaining a single, consistent view of an organisation's core business entities such as customers, products, and suppliers. It governs how master data is defined, stored, and shared.",
   "subClassOf": [
     {

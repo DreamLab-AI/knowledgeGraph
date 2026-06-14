@@ -5,30 +5,51 @@
   "public": true,
   "classIri": "urn:ngm:class:3-d-asset",
   "domain": "spatial-computing",
-  "definition": "A 3D Asset is a discrete digital artefact representing geometry, materials, animations, or environments used in spatial computing and metaverse applications. These assets follow standardised interchange formats such as glTF, FBX, USD, and OBJ to ensure cross-platform interoperability, and typically include multiple levels of detail (LOD), physically-based rendering (PBR) material maps, skeletal rigs, and collision meshes. Effective 3D asset pipelines integrate version control, DRM provenance tracking, and automated quality assurance workflows to support diverse hardware configurations.",
+  "definition": "A 3D Asset is a discrete, self-contained digital artefact encoding three-dimensional geometry, surface materials, skeletal animation rigs, and associated metadata in a machine-readable interchange format such as glTF 2.0, USD, FBX, or OBJ. Such assets are produced by digital content creation tools, stored in asset management systems with versioning and provenance records, and consumed at runtime by rendering engines, game engines, and spatial computing platforms. Production-quality 3D assets typically incorporate multiple levels of detail (LOD), physically-based rendering (PBR) material maps (albedo, metallic-roughness, normal, occlusion, emissive), collision meshes for physics simulation, and compressed texture atlases optimised for a target hardware envelope. Cross-platform delivery relies on open standards maintained by the Khronos Group and Pixar/Academy Software Foundation, enabling asset reuse across metaverse environments, digital twins, extended reality (XR) applications, and game titles.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:sc-content-and-assets",
-      "label": "Content and Assets"
-    },
-    {
-      "id": "urn:ngm:class:digital-asset-management",
-      "label": "Digital Asset Management"
+      "id": "urn:ngm:class:digital-asset",
+      "label": "Digital Asset"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "emerging",
+  "qualityScore": 0.72,
+  "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [
+    "hasPart": [
       {
-        "id": "urn:ngm:class:3-d-asset-standard",
-        "label": "3D Asset Standard"
+        "id": "urn:ngm:class:polygon-mesh",
+        "label": "Polygon Mesh"
       },
+      {
+        "id": "urn:ngm:class:texture-map",
+        "label": "Texture Map"
+      },
+      {
+        "id": "urn:ngm:class:skeletal-rig",
+        "label": "Skeletal Rig"
+      },
+      {
+        "id": "urn:ngm:class:level-of-detail",
+        "label": "Level of Detail"
+      },
+      {
+        "id": "urn:ngm:class:collision-mesh",
+        "label": "Collision Mesh"
+      }
+    ],
+    "requires": [
       {
         "id": "urn:ngm:class:physically-based-rendering",
         "label": "Physically Based Rendering"
+      },
+      {
+        "id": "urn:ngm:class:digital-content-creation",
+        "label": "Digital Content Creation"
+      },
+      {
+        "id": "urn:ngm:class:asset-pipeline",
+        "label": "Asset Pipeline"
       }
     ],
     "enables": [
@@ -39,26 +60,90 @@
       {
         "id": "urn:ngm:class:digital-twin",
         "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [
+    "contrastsWith": [
       {
-        "id": "urn:ngm:class:level-of-detail",
-        "label": "Level of Detail"
+        "id": "urn:ngm:class:2-d-sprite",
+        "label": "2D Sprite"
       },
       {
+        "id": "urn:ngm:class:voxel",
+        "label": "Voxel"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:neural-radiance-field",
+        "label": "Neural Radiance Field"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:non-fungible-token",
+        "label": "Non-Fungible Token"
+      }
+    ],
+    "uses": [
+      {
         "id": "urn:ngm:class:gltf-standard",
-        "label": "Gltf Standard"
+        "label": "glTF Standard"
+      },
+      {
+        "id": "urn:ngm:class:universal-scene-description",
+        "label": "Universal Scene Description"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset-management",
+        "label": "Digital Asset Management"
+      },
+      {
+        "id": "urn:ngm:class:texture-compression",
+        "label": "Texture Compression"
       }
     ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:khronos-group",
+        "label": "Khronos Group"
+      },
+      {
+        "id": "urn:ngm:class:w3-c",
+        "label": "W3C"
+      },
+      {
+        "id": "urn:ngm:class:academy-software-foundation",
+        "label": "Academy Software Foundation"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:scene-graph",
+        "label": "Scene Graph"
+      },
+      {
+        "id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ]
   },
   "wikilinks": [
     {

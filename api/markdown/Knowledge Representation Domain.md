@@ -95,7 +95,7 @@ public:: true
   "@type": "Class",
   "label": "Knowledge Representation Domain",
   "definition": "The Knowledge Representation Domain covers the formal encoding of facts, concepts and relationships so that machines can reason over them. Its scope includes ontologies, knowledge graphs, description logics and rule systems. It is a sub-area of the Artificial Intelligence Domain that provides the symbolic counterpart to statistical learning. The boundary excludes the learning of representations from raw data, which belongs to the Machine Learning Domain.",
-  "domain": "knowledge-representation",
+  "domain": "ai",
   "maturity": "emerging",
   "qualityScore": 0.7,
   "subClassOf": [

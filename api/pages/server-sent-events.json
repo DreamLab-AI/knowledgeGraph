@@ -4,51 +4,133 @@
   "slug": "server-sent-events",
   "public": true,
   "classIri": "urn:ngm:class:server-sent-events",
-  "domain": "artificial-intelligence",
-  "definition": "Server-Sent Events (SSE) is a W3C-standardised unidirectional server-to-client streaming protocol layered on HTTP/1.1 and HTTP/2, enabling servers to push a continuous stream of text-based events to browser or API clients without the bidirectional overhead of WebSockets. Each event is delimited by the text/event-stream MIME type and carries optional id, event, data, and retry fields, supporting automatic reconnection. SSE is widely adopted in AI inference APIs\u2014including the Anthropic and OpenAI streaming endpoints\u2014and in the Model Context Protocol (MCP) transport layer for streaming tool responses.",
+  "domain": "infrastructure",
+  "definition": "Server-Sent Events (SSE) is a W3C and WHATWG-standardised unidirectional server-to-client push protocol layered atop HTTP/1.1 and HTTP/2, enabling servers to emit a continuous stream of newline-delimited text events to browser or API clients over a single persistent connection. Each event record may carry optional 'id', 'event', 'data', and 'retry' fields; clients reconnect automatically using the last-received event id as a cursor. SSE is consumed via the browser's EventSource API and is the dominant transport for streaming large-language-model inference outputs in APIs such as OpenAI and Anthropic, as well as in the Model Context Protocol (MCP) transport layer.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ai-infrastructure",
-      "label": "AI Infrastructure"
+      "id": "urn:ngm:class:streaming-protocol",
+      "label": "Streaming Protocol"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [
+    "requires": [
       {
-        "id": "urn:ngm:class:real-time-processing",
-        "label": "Real-time Processing"
+        "id": "urn:ngm:class:http",
+        "label": "HTTP"
       },
       {
-        "id": "urn:ngm:class:model-control-protocols-like-mcp",
-        "label": "Model Control Protocols like MCP"
+        "id": "urn:ngm:class:persistent-connection",
+        "label": "Persistent Connection"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:real-time-data-streaming",
+        "label": "Real-Time Data Streaming"
+      },
+      {
+        "id": "urn:ngm:class:server-push",
+        "label": "Server Push"
+      },
+      {
+        "id": "urn:ngm:class:token-streaming",
+        "label": "Token Streaming"
+      },
+      {
+        "id": "urn:ngm:class:live-notifications",
+        "label": "Live Notifications"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [
+    "implements": [
       {
-        "id": "urn:ngm:class:communication-protocol",
-        "label": "Communication Protocol"
+        "id": "urn:ngm:class:event-driven-architecture",
+        "label": "Event-Driven Architecture"
+      },
+      {
+        "id": "urn:ngm:class:publish-subscribe-pattern",
+        "label": "Publish-Subscribe Pattern"
       }
     ],
-    "supports": [],
-    "standardizedBy": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:websocket",
+        "label": "WebSocket"
+      },
+      {
+        "id": "urn:ngm:class:grpc-streaming",
+        "label": "gRPC Streaming"
+      },
+      {
+        "id": "urn:ngm:class:long-polling",
+        "label": "Long Polling"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      },
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:eventsource-api",
+        "label": "EventSource API"
+      },
+      {
+        "id": "urn:ngm:class:text-event-stream",
+        "label": "text/event-stream MIME Type"
+      },
+      {
+        "id": "urn:ngm:class:http2",
+        "label": "HTTP/2"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:model-context-protocol",
+        "label": "Model Context Protocol"
+      },
+      {
+        "id": "urn:ngm:class:llm-inference-api",
+        "label": "LLM Inference API"
+      },
+      {
+        "id": "urn:ngm:class:real-time-dashboard",
+        "label": "Real-Time Dashboard"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:whatwg",
+        "label": "WHATWG"
+      },
+      {
+        "id": "urn:ngm:class:w3c",
+        "label": "W3C"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:event-driven-architecture",
-        "label": "Event Driven Architecture"
-      },
-      {
         "id": "urn:ngm:class:api-gateway",
         "label": "API Gateway"
+      },
+      {
+        "id": "urn:ngm:class:reverse-proxy",
+        "label": "Reverse Proxy"
+      },
+      {
+        "id": "urn:ngm:class:chunked-transfer-encoding",
+        "label": "Chunked Transfer Encoding"
       }
     ]
   },

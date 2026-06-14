@@ -4,7 +4,7 @@
   "slug": "audio-signal-processing",
   "public": true,
   "classIri": "urn:ngm:class:audio-signal-processing",
-  "domain": "media",
+  "domain": "metaverse",
   "definition": "Audio Signal Processing is the application of signal processing theory and algorithms to the analysis, transformation, synthesis, and encoding of audio-frequency signals, operating in either the time domain or frequency domain. It encompasses filtering, equalisation, dynamic range control, time-frequency analysis, psychoacoustic coding, and spatial rendering as applied to sound reproduction, communication, and computational audition systems.",
   "subClassOf": [
     {

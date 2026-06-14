@@ -1,24 +1,84 @@
 - ### Definition
-  - Telecommunications Infrastructure comprises the physical and logical systems — including fibre-optic networks, cellular base stations, satellite links, exchange points, and backbone routers — that carry digital communications at scale. It underpins latency-sensitive applications such as real-time rendering, telecollaboration, and edge AI by providing the transport layer on which higher-level protocols operate.
+  - Telecommunications Infrastructure encompasses the physical and logical systems — [[Fibre-Optic Network]], [[Cellular Network]], [[Satellite Communication]], submarine cables, [[Internet Exchange Point]]s, and backbone routers — that carry digital signals across local, regional, and global scales. It constitutes the transport layer underpinning the internet, mobile broadband, and converged communications, enabling services from [[Video Conferencing]] and [[Telecollaboration]] to [[Edge Computing]] and real-time control of [[Internet of Things]] devices.
+
+- ### Overview
+  - Telecommunications infrastructure is the bedrock of modern digital society, providing the physical pathways and logical control systems over which all networked communication flows.
+  - It spans multiple technology generations — from copper wire and coaxial cable through to DWDM [[Fibre-Optic Network]]s, 4G/5G [[Cellular Network]]s, and low-earth-orbit [[Satellite Communication]] constellations.
+  - The infrastructure operates across a layered model: passive physical plant (trenching, conduit, tower structures), active transmission equipment (radio units, optical amplifiers), and software control planes ([[Software-Defined Networking]], [[Network Function Virtualisation]]).
+  - As a critical national resource, telecom infrastructure attracts regulatory oversight for spectrum allocation, universal service obligations, and resilience requirements.
+  - Increasing convergence with cloud platforms has produced the "telco cloud" paradigm, where carrier-grade functions run as virtualised workloads atop commodity hardware managed by [[Software-Defined Networking]] controllers.
+
+- ### Key Components
+  - **Fibre-Optic Networks** — Dense-wavelength-division-multiplexing (DWDM) [[Fibre-Optic Network]]s form the backbone of intercity and transoceanic links, offering terabit-per-second capacity with low signal attenuation.
+  - **Cellular Radio Access Networks** — [[Cellular Network]] deployments (2G through 5G NR and forthcoming 6G) provide wireless last-mile connectivity; [[Open RAN]] disaggregates hardware and software from multiple vendors.
+  - **Satellite Communication** — Geostationary, medium-earth-orbit, and low-earth-orbit [[Satellite Communication]] systems extend coverage to maritime, aviation, and remote-area users; LEO constellations reduce latency substantially.
+  - **Internet Exchange Points** — [[Internet Exchange Point]]s (IXPs) are neutral co-location facilities where [[Autonomous System]]s peer and exchange traffic, reducing transit costs and improving resilience.
+  - **Core and Edge Routers** — High-throughput routers implement [[Network Protocol]]s (BGP, MPLS, IS-IS) to route packets across carrier networks and enforce traffic-engineering policies.
+  - **Spectrum Management** — [[Spectrum Management]] authorities (national regulators, [[ITU-R]]) license radio frequencies to prevent harmful interference between services and operators.
+  - **Software-Defined Networking** — [[Software-Defined Networking]] (SDN) decouples the control plane from forwarding hardware, enabling programmable, policy-driven network management.
+  - **Network Function Virtualisation** — [[Network Function Virtualisation]] (NFV) replaces purpose-built appliances (firewalls, load balancers, evolved packet cores) with software running on commodity servers.
+  - **Content Delivery Networks** — [[Content Delivery Network]]s cache content at distributed PoPs to reduce round-trip latency and offload origin servers.
+  - **Bandwidth Adaptation** — [[Bandwidth Adaptation]] mechanisms (adaptive bitrate streaming, TCP congestion control, QUIC) dynamically match application data rates to available capacity.
+
+- ### Applications and Use Cases
+  - **Mobile Broadband** — [[Cellular Network]] infrastructure provides consumers and enterprises with gigabit-class wireless internet access, supporting streaming, remote work, and mobile commerce.
+  - **Telecollaboration** — [[Telecollaboration]] platforms — video calls, shared virtual workspaces, holographic telepresence — depend critically on low-latency, high-bandwidth paths delivered by optimised [[Content Delivery Network]]s and [[Latency Management Protocol]]s.
+  - **Edge AI Inference** — Distributing [[Edge AI]] workloads to network edge nodes (within carrier PoPs or enterprise CPE) reduces round-trip to milliseconds, enabling real-time inference for autonomous vehicles, industrial robotics, and AR/VR.
+  - **Spatial Computing Connectivity** — [[Spatial Computing]] headsets and mixed-reality systems require sub-20 ms round-trip times and consistent throughput; 5G mmWave and Wi-Fi 7 backhaul are primary enablers.
+  - **Internet of Things** — [[Internet of Things]] sensor grids, from smart-city cameras to agricultural monitors, rely on licensed (LTE-M, NB-IoT) and unlicensed (LoRaWAN, Zigbee) segments of the radio spectrum.
+  - **Disaster-Resilient Communications** — Redundant fibre rings, satellite fallback, and mesh cellular maintain connectivity during infrastructure failures and natural disasters.
+  - **Financial Services** — Low-latency dark-fibre connections between exchanges underpin high-frequency trading; regulatory mandates require co-location facilities with deterministic [[Latency Management Protocol]]s.
+  - **Cloud Service Delivery** — [[Cloud Computing]] providers interconnect data centres via private optical backbones and peer extensively at [[Internet Exchange Point]]s to ensure global service availability.
+
+- ### Relationships
+  - hasPart:: [[Fibre-Optic Network]]
+  - hasPart:: [[Cellular Network]]
+  - hasPart:: [[Satellite Communication]]
+  - hasPart:: [[Internet Exchange Point]]
+  - hasPart:: [[Network Protocol]]
+  - hasPart:: [[Bandwidth Adaptation]]
+  - enables:: [[Remote Communication]]
+  - enables:: [[Telecollaboration]]
+  - enables:: [[Video Conferencing]]
+  - enables:: [[Edge Computing]]
+  - enables:: [[Internet of Things]]
+  - supports:: [[Latency Management Protocol]]
+  - supports:: [[Content Delivery Network]]
+  - supports:: [[Cloud Computing]]
+  - supports:: [[Distributed Systems]]
+  - requires:: [[Spectrum Management]]
+  - requires:: [[Network Security]]
+  - standardizedBy:: [[ITU-R]]
+  - standardizedBy:: [[3GPP]]
+  - standardizedBy:: [[IETF]]
+  - dependsOn:: [[Power Grid Infrastructure]]
+  - dependsOn:: [[Software-Defined Networking]]
+  - bridges-to:: [[Edge AI]]
+  - bridges-to:: [[Spatial Computing]]
+  - contrastsWith:: [[Terrestrial Broadcast]]
+  - relatedTo:: [[Network Function Virtualisation]]
+  - relatedTo:: [[Open RAN]]
+
+- ### Standards and Governance
+  - **[[ITU-R]]** — International Telecommunication Union Radiocommunication Sector coordinates global radio spectrum allocation and satellite orbital slots.
+  - **[[3GPP]]** — 3rd Generation Partnership Project defines cellular standards from 3G through 5G NR and is actively developing 6G specifications under Release 19+.
+  - **[[IETF]]** — Internet Engineering Task Force produces the RFCs defining core internet protocols (TCP/IP, BGP, QUIC, HTTP/3) that run over telecom infrastructure.
+  - **[[Open RAN]] Alliance (O-RAN Alliance)** — Industry body specifying open interfaces for disaggregated radio access networks, reducing vendor lock-in.
+  - **ETSI NFV ISG** — European Telecommunications Standards Institute working group that produced the foundational [[Network Function Virtualisation]] architecture specifications.
+  - **National Regulators** — Bodies such as Ofcom (UK), FCC (US), and BEREC (EU) license spectrum, enforce net-neutrality rules, and mandate resilience and security standards.
+  - **Critical Infrastructure Designations** — In most jurisdictions telecom infrastructure is classified as critical national infrastructure, triggering supply-chain security reviews (e.g. restrictions on high-risk vendors in 5G core and RAN).
+
+- ### Security Considerations
+  - [[Network Security]] for telecom infrastructure must address both physical threats (fibre cuts, equipment tampering) and cyber threats (BGP hijacking, SS7 protocol abuse, DDoS amplification).
+  - The transition to cloud-native telco functions increases the attack surface by exposing carrier-grade workloads to vulnerabilities common in virtualised environments.
+  - Zero-trust architectures and mutual-TLS authentication are being adopted for east-west traffic within operator networks.
+  - Supply-chain integrity — particularly for active equipment from overseas vendors — has become a geopolitical concern, prompting legislative mandates in the US, UK, and EU.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:TelecommunicationsInfrastructure
   - owl-role:: Concept
 
-- ### Relationships
-  - **enables** → [[Remote Communication]], [[Telecollaboration]], [[Video Conferencing]]
-  - **supports** → [[Latency Management Protocol]], [[Content Delivery Network]]
-  - **hasPart** → [[Network Protocol]], [[Bandwidth Adaptation]]
-
-- ### Content
-  # TelecommunicationsInfrastructure
-  TelecommunicationsInfrastructure represents a key component in Metaverse infrastructure and technology. Research: TelecommunicationsInfrastructure - 5G networks, fiber optics, network backbone, connectivity
-  - https://www.khronos.org/ - Industry standards
-  - https://www.w3.org/TR/ - Web standards
-  - https://developer.mozilla.org/ - Technical documentation
-
-  ## Sources
-
 - ### Provenance
-  - sources::
+  - sources:: ITU-R, 3GPP, IETF RFCs, O-RAN Alliance specifications, ETSI NFV ISG documents, Ofcom and FCC regulatory publications
+  - updated:: 2026-06-13
   - migration-date:: 2026-04-26T00:00:00Z

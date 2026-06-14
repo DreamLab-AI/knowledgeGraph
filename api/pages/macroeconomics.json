@@ -4,8 +4,8 @@
   "slug": "macroeconomics",
   "public": true,
   "classIri": "urn:ngm:class:macroeconomics",
-  "domain": "economics",
-  "definition": "Macroeconomics is the branch of economics that studies the behaviour and performance of an economy as a whole, including output, inflation, unemployment and growth. It examines aggregate variables and the effect of monetary and fiscal policy.",
+  "domain": "finance",
+  "definition": "Macroeconomics is the branch of economics that studies the behaviour and performance of an economy as a whole, examining aggregate phenomena such as gross domestic product, price levels, unemployment, business cycles, and long-run growth. It analyses how monetary and fiscal policy shape inflation, output, and employment, and how international trade and capital flows interconnect national economies. The discipline develops formal models \u2014 from Keynesian demand frameworks to DSGE models \u2014 that link household, firm, and government behaviour to economy-wide outcomes. It contrasts with microeconomics by focusing on aggregate rather than individual-agent variables.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:economics",
@@ -13,26 +13,130 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
-  "maturity": "established",
+  "qualityScore": 0.74,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:monetary-policy",
+        "label": "Monetary Policy"
+      },
+      {
+        "id": "urn:ngm:class:fiscal-policy",
+        "label": "Fiscal Policy"
+      },
+      {
+        "id": "urn:ngm:class:business-cycle",
+        "label": "Business Cycle"
+      },
+      {
+        "id": "urn:ngm:class:national-income-accounting",
+        "label": "National Income Accounting"
+      },
+      {
+        "id": "urn:ngm:class:international-trade",
+        "label": "International Trade"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:national-income-accounting",
+        "label": "National Income Accounting"
+      },
+      {
+        "id": "urn:ngm:class:econometrics",
+        "label": "Econometrics"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:inflation-hedge",
         "label": "Inflation Hedge"
+      },
+      {
+        "id": "urn:ngm:class:economic-forecasting",
+        "label": "Economic Forecasting"
+      },
+      {
+        "id": "urn:ngm:class:central-banking",
+        "label": "Central Banking"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:aggregate-demand",
+        "label": "Aggregate Demand"
+      },
+      {
+        "id": "urn:ngm:class:aggregate-supply",
+        "label": "Aggregate Supply"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:microeconomics",
+        "label": "Microeconomics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:financial-market",
+        "label": "Financial Market"
+      },
+      {
+        "id": "urn:ngm:class:data-analytics",
+        "label": "Data Analytics"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:gross-domestic-product",
+        "label": "Gross Domestic Product"
+      },
+      {
+        "id": "urn:ngm:class:consumer-price-index",
+        "label": "Consumer Price Index"
+      },
+      {
+        "id": "urn:ngm:class:interest-rate",
+        "label": "Interest Rate"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:economics",
+        "label": "Economics"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:inflation",
+        "label": "Inflation"
+      },
+      {
+        "id": "urn:ngm:class:unemployment",
+        "label": "Unemployment"
+      },
+      {
+        "id": "urn:ngm:class:economic-growth",
+        "label": "Economic Growth"
+      },
+      {
+        "id": "urn:ngm:class:exchange-rate",
+        "label": "Exchange Rate"
+      },
+      {
+        "id": "urn:ngm:class:public-debt",
+        "label": "Public Debt"
+      },
+      {
+        "id": "urn:ngm:class:balance-of-payments",
+        "label": "Balance of Payments"
+      }
+    ]
   },
   "wikilinks": [
     {

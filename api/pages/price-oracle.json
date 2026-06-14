@@ -5,50 +5,136 @@
   "public": true,
   "classIri": "urn:ngm:class:price-oracle",
   "domain": "blockchain",
-  "definition": "A price oracle is an on-chain or hybrid data feed that supplies decentralised protocols with reliable, manipulation-resistant market prices for tokens, synthetic assets, and other financial instruments. On-chain price oracles\u2014such as time-weighted average price (TWAP) feeds derived from automated market maker pool reserves\u2014are fully decentralised but lag real-time prices. Off-chain oracle networks aggregate prices from multiple centralised and decentralised exchanges before committing them on-chain, offering fresher data at the cost of additional trust assumptions on node operators. Price oracles are foundational to DeFi lending protocols (collateral valuation), synthetic asset minting, perpetual futures settlement, and insurance claim adjudication.",
+  "definition": "A price oracle is an on-chain or hybrid data feed that supplies decentralised protocols with reliable, manipulation-resistant market prices for tokens, synthetic assets, and other financial instruments. On-chain price oracles \u2014 such as time-weighted average price (TWAP) feeds derived from automated market maker pool reserves \u2014 are fully decentralised but lag real-time prices. Off-chain oracle networks aggregate prices from multiple centralised and decentralised exchanges before committing them on-chain, offering fresher data at the cost of additional trust assumptions on node operators. Price oracles are foundational to DeFi lending protocols, synthetic asset minting, perpetual futures settlement, and insurance claim adjudication.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:bc-defi-and-economics",
-      "label": "DeFi and Economics"
+      "id": "urn:ngm:class:blockchain-oracle",
+      "label": "Blockchain Oracle"
     }
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "emerging",
+  "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:twap-oracle",
+        "label": "TWAP Oracle"
+      },
+      {
+        "id": "urn:ngm:class:aggregator-feed",
+        "label": "Aggregator Feed"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-aggregation",
+        "label": "Data Aggregation"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-signature",
+        "label": "Cryptographic Signature"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:collateralised-lending",
+        "label": "Collateralised Lending"
+      },
+      {
+        "id": "urn:ngm:class:synthetic-asset",
+        "label": "Synthetic Asset"
+      },
+      {
+        "id": "urn:ngm:class:perpetual-futures",
+        "label": "Perpetual Futures"
+      },
+      {
+        "id": "urn:ngm:class:liquidation-mechanism",
+        "label": "Liquidation Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:real-world-asset-tokenisation",
+        "label": "Real World Asset Tokenisation"
+      }
+    ],
     "dependsOn": [
       {
         "id": "urn:ngm:class:oracle-network",
         "label": "Oracle Network"
+      },
+      {
+        "id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-exchange",
+        "label": "Decentralised Exchange"
+      },
+      {
+        "id": "urn:ngm:class:cryptoeconomic-staking",
+        "label": "Cryptoeconomic Staking"
       }
     ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:centralised-exchange-feed",
+        "label": "Centralised Exchange Feed"
+      },
+      {
+        "id": "urn:ngm:class:spot-price",
+        "label": "Spot Price"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:financial-data-api",
+        "label": "Financial Data API"
+      },
+      {
+        "id": "urn:ngm:class:trusted-execution-environment",
+        "label": "Trusted Execution Environment"
+      }
+    ],
     "uses": [],
     "supports": [
+      {
+        "id": "urn:ngm:class:liquidity-pool",
+        "label": "Liquidity Pool"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:defi-protocol",
+        "label": "DeFi Protocol"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
       {
         "id": "urn:ngm:class:decentralised-finance",
         "label": "Decentralised Finance"
       },
       {
-        "id": "urn:ngm:class:liquidity-pool",
-        "label": "Liquidity Pool"
+        "id": "urn:ngm:class:defi-infrastructure",
+        "label": "DeFi Infrastructure"
       }
     ],
-    "standardizedBy": [],
-    "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:blockchain-oracle",
-        "label": "Blockchain Oracle"
+        "id": "urn:ngm:class:flash-loan",
+        "label": "Flash Loan"
       },
       {
-        "id": "urn:ngm:class:automated-market-maker",
-        "label": "Automated Market Maker"
+        "id": "urn:ngm:class:mev-manipulation",
+        "label": "MEV Manipulation"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-reserve",
+        "label": "Proof of Reserve"
       }
     ]
   },

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:voluntary-carbon-market",
   "domain": "governance",
-  "definition": "The Voluntary Carbon Market (VCM) is a decentralised marketplace in which private actors voluntarily buy and sell carbon credits representing certified reductions or removals of greenhouse gas emissions. Unlike compliance markets mandated by regulation, participation is driven by corporate net-zero commitments, reputational incentives, and ESG obligations. Each credit typically represents one metric tonne of CO\u2082-equivalent avoided or sequestered, verified against standards such as Verra VCS or Gold Standard.",
+  "definition": "The Voluntary Carbon Market (VCM) is a decentralised, private-sector marketplace in which corporations, governments, and individuals voluntarily purchase and retire carbon credits representing certified reductions or removals of greenhouse gas emissions, without being compelled by regulatory compliance frameworks. Participation is driven by corporate net-zero commitments, reputational and ESG pressures, and a desire to mobilise private finance for climate projects ahead of, or beyond, mandatory obligations. Each credit typically represents one metric tonne of CO\u2082-equivalent avoided or sequestered, verified by independent auditors against published standards such as the Verra Verified Carbon Standard (VCS) or the Gold Standard. The market operates through project developers, registries, brokers, and exchanges, with integrity increasingly governed by the Core Carbon Principles issued by the Integrity Council for the Voluntary Carbon Market (ICVCM).",
   "subClassOf": [
     {
       "id": "urn:ngm:class:carbon-markets",
@@ -13,18 +13,38 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.74,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:carbon-credits",
+        "label": "Carbon Credits"
+      },
+      {
+        "id": "urn:ngm:class:carbon-registries",
+        "label": "Carbon Registries"
+      },
+      {
+        "id": "urn:ngm:class:carbon-project-developers",
+        "label": "Carbon Project Developers"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:carbon-verification",
+        "label": "Carbon Verification"
+      },
+      {
+        "id": "urn:ngm:class:third-party-auditing",
+        "label": "Third-Party Auditing"
+      },
+      {
+        "id": "urn:ngm:class:additionality",
+        "label": "Additionality"
+      }
+    ],
+    "enables": [
       {
         "id": "urn:ngm:class:net-zero-targets",
         "label": "Net Zero Targets"
@@ -32,27 +52,106 @@
       {
         "id": "urn:ngm:class:climate-change-mitigation",
         "label": "Climate Change Mitigation"
+      },
+      {
+        "id": "urn:ngm:class:biodiversity-co-benefits",
+        "label": "Biodiversity Co-Benefits"
+      },
+      {
+        "id": "urn:ngm:class:nature-based-solutions",
+        "label": "Nature-Based Solutions"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:compliance-carbon-market",
+        "label": "Compliance Carbon Market"
+      },
+      {
+        "id": "urn:ngm:class:emissions-trading-scheme",
+        "label": "Emissions Trading Scheme"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain-carbon-tokens",
+        "label": "Blockchain Carbon Tokens"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:digital-mrvs",
+        "label": "Digital MRVs"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:carbon-offsetting",
+        "label": "Carbon Offsetting"
+      },
+      {
+        "id": "urn:ngm:class:esg-reporting",
+        "label": "ESG Reporting"
+      },
+      {
+        "id": "urn:ngm:class:price-discovery",
+        "label": "Price Discovery"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:paris-agreement",
+        "label": "Paris Agreement"
+      },
+      {
+        "id": "urn:ngm:class:sustainable-development-goals",
+        "label": "Sustainable Development Goals"
+      },
+      {
+        "id": "urn:ngm:class:redd-plus",
+        "label": "REDD+"
       }
     ],
     "standardizedBy": [
       {
         "id": "urn:ngm:class:integrity-council-for-the-voluntary-carbon-market",
         "label": "Integrity Council for the Voluntary Carbon Market"
+      },
+      {
+        "id": "urn:ngm:class:verra-verified-carbon-standard",
+        "label": "Verra Verified Carbon Standard"
+      },
+      {
+        "id": "urn:ngm:class:gold-standard",
+        "label": "Gold Standard"
       }
     ],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:carbon-markets",
+        "label": "Carbon Markets"
+      },
+      {
+        "id": "urn:ngm:class:climate-finance",
+        "label": "Climate Finance"
+      }
+    ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:carbon-credits",
-        "label": "Carbon Credits"
+        "id": "urn:ngm:class:article-6-paris-agreement",
+        "label": "Article 6 Paris Agreement"
       },
       {
-        "id": "urn:ngm:class:carbon-offsetting",
-        "label": "Carbon Offsetting"
+        "id": "urn:ngm:class:direct-air-capture",
+        "label": "Direct Air Capture"
       },
       {
-        "id": "urn:ngm:class:paris-agreement",
-        "label": "Paris Agreement"
+        "id": "urn:ngm:class:corporate-sustainability-reporting",
+        "label": "Corporate Sustainability Reporting"
       }
     ]
   },

@@ -21,7 +21,7 @@ public:: true
   "@type": "Class",
   "label": "Advertising",
   "definition": "Advertising is the practice of communicating persuasive messages about products, services, ideas, or brands to targeted audiences through paid media channels with the intent to influence awareness, attitudes, or purchasing behaviour. It encompasses the creative development of messages and the strategic planning and buying of media placements across channels including broadcast, print, digital, out-of-home, and emerging immersive formats. Modern advertising increasingly relies on data-driven audience targeting, algorithmic media buying, and AI-generated creative to maximise return on investment at scale.",
-  "domain": "media",
+  "domain": "finance",
   "maturity": "mature",
   "subClassOf": [{"@id": "urn:ngm:class:advertising-and-marketing", "label": "Advertising and Marketing"}],
   "relations": {

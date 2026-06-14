@@ -5,26 +5,47 @@
   "public": true,
   "classIri": "urn:ngm:class:virtual-event",
   "domain": "spatial-computing",
-  "definition": "A Virtual Event is a digitally mediated gathering where participants interact in real time within a shared virtual environment, replicating or augmenting the social, educational, or commercial functions of physical events. Virtual events leverage spatial audio, avatar-based presence, interactive objects, and live streaming to create shared experiences for conferences, concerts, exhibitions, and collaborative workshops across geographically distributed participants.",
+  "definition": "A Virtual Event is a digitally mediated gathering in which geographically distributed participants convene within a shared virtual environment \u2014 rendered through web browsers, desktop clients, or immersive XR headsets \u2014 to engage in social, educational, commercial, or cultural activities in real or near-real time. The class encompasses a spectrum from simple webinar-style presentations and live-streamed concerts, through avatar-populated social spaces, to fully embodied multi-user XR experiences featuring spatial audio, persistent virtual objects, and interactive exhibits. Virtual Events differ from asynchronous digital content by requiring simultaneous presence and bidirectional communication channels, and they differ from purely textual virtual spaces by incorporating rich media and, optionally, three-dimensional spatial representation. Their design draws on principles from event management, human-computer interaction, streaming media infrastructure, and spatial computing.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:sc-platform-and-environment",
-      "label": "Platform and Environment"
+      "id": "urn:ngm:class:distributed-collaboration",
+      "label": "Distributed Collaboration"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "emerging",
+  "qualityScore": 0.72,
+  "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:virtual-venue",
+        "label": "Virtual Venue"
+      },
+      {
+        "id": "urn:ngm:class:live-streaming",
+        "label": "Live Streaming"
+      },
+      {
+        "id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
+      },
+      {
+        "id": "urn:ngm:class:breakout-room",
+        "label": "Breakout Room"
+      }
+    ],
     "requires": [
       {
-        "id": "urn:ngm:class:virtual-reality",
-        "label": "Virtual Reality"
+        "id": "urn:ngm:class:real-time-communication",
+        "label": "Real-Time Communication"
       },
       {
         "id": "urn:ngm:class:avatar",
         "label": "Avatar"
+      },
+      {
+        "id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
       }
     ],
     "enables": [
@@ -35,14 +56,79 @@
       {
         "id": "urn:ngm:class:telecollaboration",
         "label": "Telecollaboration"
+      },
+      {
+        "id": "urn:ngm:class:virtual-networking",
+        "label": "Virtual Networking"
+      },
+      {
+        "id": "urn:ngm:class:digital-exhibition",
+        "label": "Digital Exhibition"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:cloud-infrastructure",
+        "label": "Cloud Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:webrtc",
+        "label": "WebRTC"
+      },
+      {
+        "id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:physical-event",
+        "label": "Physical Event"
+      },
+      {
+        "id": "urn:ngm:class:hybrid-event",
+        "label": "Hybrid Event"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "id": "urn:ngm:class:digital-economy",
+        "label": "Digital Economy"
+      },
+      {
+        "id": "urn:ngm:class:non-fungible-token",
+        "label": "Non-Fungible Token"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:video-conferencing",
+        "label": "Video Conferencing"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
@@ -51,8 +137,12 @@
         "label": "Immersive Experience"
       },
       {
-        "id": "urn:ngm:class:metaverse",
-        "label": "Metaverse"
+        "id": "urn:ngm:class:event-platform",
+        "label": "Event Platform"
+      },
+      {
+        "id": "urn:ngm:class:presence",
+        "label": "Presence"
       }
     ]
   },

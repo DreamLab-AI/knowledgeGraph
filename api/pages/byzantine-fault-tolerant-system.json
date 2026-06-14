@@ -4,23 +4,44 @@
   "slug": "byzantine-fault-tolerant-system",
   "public": true,
   "classIri": "urn:ngm:class:byzantine-fault-tolerant-system",
-  "domain": "infrastructure",
-  "definition": "A Byzantine Fault Tolerant System is a distributed computing system designed to continue operating correctly even when a subset of its nodes exhibit arbitrary failures, including malicious or contradictory behaviour. It implements protocols guaranteeing safety and liveness as long as fewer than one-third of participants are faulty, underpinning consensus in blockchain and distributed ledger networks.",
+  "domain": "distributed-systems",
+  "definition": "A Byzantine Fault Tolerant System is a distributed computing system designed to continue operating correctly even when a fraction of its nodes exhibit arbitrary, potentially malicious failures \u2014 including sending conflicting, incorrect, or no messages to different peers. Such systems implement consensus protocols that guarantee safety (agreement) and liveness (progress) provided strictly fewer than one-third of participating nodes are faulty, a bound established by the foundational Byzantine Generals Problem. BFT systems underpin the security of permissioned and permissionless blockchain networks, replicated state machines, and safety-critical distributed infrastructure where adversarial behaviour must be tolerated without compromising overall correctness.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:infra-computing-and-cloud",
-      "label": "Computing and Cloud"
+      "id": "urn:ngm:class:fault-tolerant-system",
+      "label": "Fault Tolerant System"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:leader-election",
+        "label": "Leader Election"
+      },
+      {
+        "id": "urn:ngm:class:view-change-protocol",
+        "label": "View Change Protocol"
+      },
+      {
+        "id": "urn:ngm:class:prepare-commit-phase",
+        "label": "Prepare-Commit Phase"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:consensus-algorithm",
         "label": "Consensus Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:message-authentication",
+        "label": "Message Authentication"
+      },
+      {
+        "id": "urn:ngm:class:quorum-system",
+        "label": "Quorum System"
       }
     ],
     "enables": [
@@ -31,27 +52,99 @@
       {
         "id": "urn:ngm:class:consensus-protocol",
         "label": "Consensus Protocol"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      },
+      {
+        "id": "urn:ngm:class:atomic-broadcast",
+        "label": "Atomic Broadcast"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:cryptographic-signature",
+        "label": "Cryptographic Signature"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      },
+      {
+        "id": "urn:ngm:class:network-communication-model",
+        "label": "Network Communication Model"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:byzantine-fault-tolerance",
         "label": "Byzantine Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:state-machine-replication",
+        "label": "State Machine Replication"
       }
     ],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:crash-fault-tolerant-system",
+        "label": "Crash Fault Tolerant System"
+      },
+      {
+        "id": "urn:ngm:class:paxos-consensus",
+        "label": "Paxos Consensus"
+      },
+      {
+        "id": "urn:ngm:class:raft-consensus",
+        "label": "Raft Consensus"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:smart-contract-platform",
+        "label": "Smart Contract Platform"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
+    ],
     "uses": [],
     "supports": [
       {
         "id": "urn:ngm:class:blockchain-network",
         "label": "Blockchain Network"
+      },
+      {
+        "id": "urn:ngm:class:permissioned-blockchain",
+        "label": "Permissioned Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:replicated-state-machine",
+        "label": "Replicated State Machine"
       }
     ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:byzantine-generals-problem",
+        "label": "Byzantine Generals Problem"
+      },
+      {
+        "id": "urn:ngm:class:pbft",
+        "label": "Practical Byzantine Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:tendermint",
+        "label": "Tendermint"
+      },
+      {
+        "id": "urn:ngm:class:hotstuff-protocol",
+        "label": "HotStuff Protocol"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

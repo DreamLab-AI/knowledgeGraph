@@ -4,8 +4,8 @@
   "slug": "order-book",
   "public": true,
   "classIri": "urn:ngm:class:order-book",
-  "domain": "blockchain",
-  "definition": "A continuously updated record of outstanding buy and sell orders for an asset, organised by price level, against which incoming orders are matched.",
+  "domain": "finance",
+  "definition": "An order book is a real-time, continuously updated electronic ledger that aggregates all outstanding limit buy orders (bids) and limit sell orders (asks) for a tradeable asset, organised by price level and, within each level, by time of arrival. A matching engine processes incoming market and limit orders against the resting book using price-time priority, generating trades whenever a bid price meets or exceeds an ask price. The visible depth of resting orders at each price level constitutes the liquidity profile of the market, and the gap between the best bid and best ask defines the bid-ask spread. Order books underpin both centralised exchanges and, increasingly, on-chain decentralised venues constrained by ledger throughput and gas costs.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:exchange-mechanism",
@@ -13,11 +13,37 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
-  "maturity": "established",
+  "qualityScore": 0.75,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:bid-side",
+        "label": "Bid Side"
+      },
+      {
+        "id": "urn:ngm:class:ask-side",
+        "label": "Ask Side"
+      },
+      {
+        "id": "urn:ngm:class:matching-engine",
+        "label": "Matching Engine"
+      },
+      {
+        "id": "urn:ngm:class:bid-ask-spread",
+        "label": "Bid-Ask Spread"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:limit-order",
+        "label": "Limit Order"
+      },
+      {
+        "id": "urn:ngm:class:price-time-priority",
+        "label": "Price-Time Priority"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:price-discovery",
@@ -26,17 +52,79 @@
       {
         "id": "urn:ngm:class:market-making",
         "label": "Market Making"
+      },
+      {
+        "id": "urn:ngm:class:liquidity-provision",
+        "label": "Liquidity Provision"
+      },
+      {
+        "id": "urn:ngm:class:trade-execution",
+        "label": "Trade Execution"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:clearing-and-settlement",
+        "label": "Clearing and Settlement"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
+      },
+      {
+        "id": "urn:ngm:class:request-for-quote",
+        "label": "Request for Quote"
+      },
+      {
+        "id": "urn:ngm:class:dark-pool",
+        "label": "Dark Pool"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:decentralised-exchange",
+        "label": "Decentralised Exchange"
+      },
+      {
+        "id": "urn:ngm:class:on-chain-order-book",
+        "label": "On-Chain Order Book"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:market-order",
+        "label": "Market Order"
+      },
+      {
+        "id": "urn:ngm:class:depth-of-market",
+        "label": "Depth of Market"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:trading-venue",
+        "label": "Trading Venue"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:market-microstructure",
+        "label": "Market Microstructure"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-trading",
+        "label": "Algorithmic Trading"
+      },
+      {
+        "id": "urn:ngm:class:high-frequency-trading",
+        "label": "High-Frequency Trading"
+      }
+    ]
   },
   "wikilinks": [
     {

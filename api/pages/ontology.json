@@ -4,20 +4,42 @@
   "slug": "ontology",
   "public": true,
   "classIri": "urn:ngm:class:ontology",
-  "domain": "infrastructure",
-  "definition": "In computer science and knowledge engineering, an ontology is a formal, machine-readable specification of a shared conceptualisation within a domain: it explicitly defines the classes of entities that exist, the properties and attributes of those entities, the relationships (object properties) that may hold between them, and the logical axioms that constrain valid world states. Ontologies are expressed using languages such as OWL 2 (Web Ontology Language) built atop RDF, enabling automated reasoning engines to infer implicit knowledge and detect logical inconsistencies. They serve as the schema and semantic backbone of knowledge graphs, linked data systems, and interoperability frameworks across domains.",
+  "domain": "artificial-intelligence",
+  "definition": "In computer science and knowledge engineering, an ontology is a formal, machine-readable specification of a shared conceptualisation within a domain: it explicitly defines the classes of entities that exist, the properties and attributes of those entities, the relationships (object properties) that may hold between them, and the logical axioms that constrain valid world states. Ontologies are expressed using languages such as OWL 2 (Web Ontology Language) built atop RDF, enabling automated reasoning engines to infer implicit knowledge and detect logical inconsistencies. They underpin knowledge graphs, linked data systems, semantic interoperability frameworks, and AI knowledge representation across scientific, industrial, and Web domains. Rooted in philosophical ontology (the study of being and categories of existence), the computational form translates that tradition into machine-processable schemas governed by Description Logics with decidable inference.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:infra-data-management",
-      "label": "Infra Data Management"
+      "id": "urn:ngm:class:knowledge-representation",
+      "label": "Knowledge Representation"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:class-hierarchy",
+        "label": "Class Hierarchy"
+      },
+      {
+        "id": "urn:ngm:class:object-property",
+        "label": "Object Property"
+      },
+      {
+        "id": "urn:ngm:class:data-property",
+        "label": "Data Property"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:formal-language",
+        "label": "Formal Language"
+      },
+      {
+        "id": "urn:ngm:class:axiom",
+        "label": "Axiom"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:knowledge-graph",
@@ -26,12 +48,42 @@
       {
         "id": "urn:ngm:class:semantic-search",
         "label": "Semantic Search"
+      },
+      {
+        "id": "urn:ngm:class:automated-reasoning",
+        "label": "Automated Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:linked-open-data",
+        "label": "Linked Open Data"
+      },
+      {
+        "id": "urn:ngm:class:semantic-interoperability",
+        "label": "Semantic Interoperability"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:database-schema",
+        "label": "Database Schema"
+      },
+      {
+        "id": "urn:ngm:class:taxonomy",
+        "label": "Taxonomy"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:rdf",
@@ -40,11 +92,24 @@
       {
         "id": "urn:ngm:class:owl-class-hierarchy",
         "label": "OWL Class Hierarchy"
+      },
+      {
+        "id": "urn:ngm:class:description-logics",
+        "label": "Description Logics"
+      },
+      {
+        "id": "urn:ngm:class:sparql",
+        "label": "SPARQL"
       }
     ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:linked-data",
@@ -55,8 +120,8 @@
         "label": "Knowledge Representation"
       },
       {
-        "id": "urn:ngm:class:sparql",
-        "label": "SPARQL"
+        "id": "urn:ngm:class:upper-ontology",
+        "label": "Upper Ontology"
       }
     ]
   },

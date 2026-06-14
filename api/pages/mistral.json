@@ -4,7 +4,7 @@
   "slug": "mistral",
   "public": true,
   "classIri": "urn:ngm:class:mistral",
-  "domain": "natural-language-processing",
+  "domain": "ai",
   "definition": "Mistral is a family of language models from Mistral AI, several released as open weights. The line includes dense models and mixture-of-experts models for text generation and reasoning.",
   "subClassOf": [
     {

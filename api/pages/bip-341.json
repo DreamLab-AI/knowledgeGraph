@@ -5,33 +5,94 @@
   "public": true,
   "classIri": "urn:ngm:class:bip-341",
   "domain": "blockchain",
-  "definition": "BIP-341 is the Bitcoin Improvement Proposal that defines the Taproot upgrade, introducing Pay-to-Taproot (P2TR) as a new output type that merges script and key-path spending under a unified commitment scheme. It combines Schnorr signatures with Merklised Abstract Syntax Trees (MAST) to allow complex spending conditions to be committed on-chain while only revealing the executed branch at spend time. The proposal activated on the Bitcoin mainnet in November 2021 at block height 709,632. BIP-341 is accompanied by BIP-340 (Schnorr signatures) and BIP-342 (Tapscript), forming the complete Taproot bundle. The upgrade significantly improves privacy, fungibility, and script expressiveness for Bitcoin.",
+  "definition": "BIP-341 is the Bitcoin Improvement Proposal that specifies the Taproot upgrade, introducing Pay-to-Taproot (P2TR) as a native SegWit version 1 output type that unifies key-path and script-path spending under a single Schnorr-based commitment. It integrates Merklised Alternative Script Trees (MAST) so that only the executed spending branch is revealed on-chain, preserving the privacy of unexplored script conditions. BIP-341 activated on the Bitcoin mainnet at block 709,632 in November 2021 via the Speedy Trial soft-fork mechanism, requiring 90% miner signalling. It forms part of the Taproot bundle alongside BIP-340 (Schnorr signatures for Bitcoin) and BIP-342 (Tapscript), collectively the largest upgrade to Bitcoin's scripting system since SegWit.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-improvement-proposals",
+      "id": "urn:ngm:class:bitcoin-improvement-proposals",
       "label": "Bitcoin Improvement Proposals"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.75,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [
+    "hasPart": [
       {
-        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-network",
-        "label": "Bitcoin Network"
+        "id": "urn:ngm:class:pay-to-taproot",
+        "label": "Pay-to-Taproot"
       },
       {
-        "id": "urn:ngm:class:script",
-        "label": "Script"
+        "id": "urn:ngm:class:merklised-alternative-script-tree",
+        "label": "Merklised Alternative Script Tree"
       }
     ],
-    "dependsOn": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:bip-340",
+        "label": "BIP-340"
+      },
+      {
+        "id": "urn:ngm:class:bip-342",
+        "label": "BIP-342"
+      },
+      {
+        "id": "urn:ngm:class:segwit",
+        "label": "SegWit"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:taproot-assets",
+        "label": "Taproot Assets"
+      },
+      {
+        "id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-script",
+        "label": "Bitcoin Script"
+      },
+      {
+        "id": "urn:ngm:class:multisignature",
+        "label": "Multisignature"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-smart-contracts",
+        "label": "Bitcoin Smart Contracts"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:utxo-model",
+        "label": "UTXO Model"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-consensus",
+        "label": "Bitcoin Consensus"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:pay-to-script-hash",
+        "label": "Pay-to-Script-Hash"
+      },
+      {
+        "id": "urn:ngm:class:ecdsa-signature",
+        "label": "ECDSA Signature"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:schnorr-signature",
@@ -44,23 +105,49 @@
       {
         "id": "urn:ngm:class:cryptographic-commitment",
         "label": "Cryptographic Commitment"
+      },
+      {
+        "id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:tagged-hash",
+        "label": "Tagged Hash"
       }
     ],
     "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:bitcoin-improvement-proposals",
+        "label": "Bitcoin Improvement Proposals"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:taproot-upgrade",
+        "label": "Taproot Upgrade"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-soft-fork",
+        "label": "Bitcoin Soft Fork"
+      }
+    ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:bip-340",
-        "label": "BIP-340"
+        "id": "urn:ngm:class:bitcoin-core",
+        "label": "Bitcoin Core"
       },
       {
-        "id": "urn:ngm:class:taproot-assets",
-        "label": "Taproot Assets"
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-network",
+        "label": "Bitcoin Network"
       },
       {
-        "id": "urn:ngm:class:utxo-model",
-        "label": "UTXO Model"
+        "id": "urn:ngm:class:coinjoin",
+        "label": "CoinJoin"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-fungibility",
+        "label": "Bitcoin Fungibility"
       }
     ]
   },

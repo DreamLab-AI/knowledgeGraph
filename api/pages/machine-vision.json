@@ -4,8 +4,8 @@
   "slug": "machine-vision",
   "public": true,
   "classIri": "urn:ngm:class:machine-vision",
-  "domain": "computer-vision",
-  "definition": "The application of imaging and image analysis to automate inspection, measurement and guidance tasks, particularly in industrial and manufacturing settings.",
+  "domain": "ai",
+  "definition": "Machine vision is the engineering discipline that applies digital imaging, optics, and automated image analysis to perform inspection, measurement, guidance, and identification tasks in industrial and manufacturing environments. It integrates hardware components \u2014 cameras, illumination, optics, and frame grabbers \u2014 with software pipelines that extract actionable decisions from image data, typically operating in real time under strict cycle-time constraints. Distinguished from the broader research field of computer vision by its emphasis on reliability, determinism, and seamless integration with programmable logic controllers and industrial automation systems. Modern machine vision systems increasingly incorporate deep learning inference alongside classical morphological and blob-analysis algorithms to handle appearance variability that rule-based methods alone cannot address.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:computer-vision",
@@ -13,31 +13,138 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
-  "maturity": "established",
+  "qualityScore": 0.72,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:image-acquisition",
+        "label": "Image Acquisition"
+      },
+      {
+        "id": "urn:ngm:class:image-preprocessing",
+        "label": "Image Preprocessing"
+      },
+      {
+        "id": "urn:ngm:class:feature-extraction",
+        "label": "Feature Extraction"
+      },
+      {
+        "id": "urn:ngm:class:pattern-recognition",
+        "label": "Pattern Recognition"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:sensor",
         "label": "Sensor"
+      },
+      {
+        "id": "urn:ngm:class:camera",
+        "label": "Camera"
+      },
+      {
+        "id": "urn:ngm:class:illumination",
+        "label": "Illumination"
+      },
+      {
+        "id": "urn:ngm:class:optics",
+        "label": "Optics"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:object-detection",
         "label": "Object Detection"
+      },
+      {
+        "id": "urn:ngm:class:defect-detection",
+        "label": "Defect Detection"
+      },
+      {
+        "id": "urn:ngm:class:dimensional-measurement",
+        "label": "Dimensional Measurement"
+      },
+      {
+        "id": "urn:ngm:class:robot-guidance",
+        "label": "Robot Guidance"
+      },
+      {
+        "id": "urn:ngm:class:optical-character-recognition",
+        "label": "Optical Character Recognition"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:image-segmentation",
+        "label": "Image Segmentation"
+      },
+      {
+        "id": "urn:ngm:class:edge-detection",
+        "label": "Edge Detection"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:industrial-automation",
+        "label": "Industrial Automation"
+      },
+      {
+        "id": "urn:ngm:class:quality-control",
+        "label": "Quality Control"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:aia-standards",
+        "label": "AIA Standards"
+      },
+      {
+        "id": "urn:ngm:class:genisys-standard",
+        "label": "GenICam Standard"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:barcode-scanning",
+        "label": "Barcode Scanning"
+      },
+      {
+        "id": "urn:ngm:class:3d-imaging",
+        "label": "3D Imaging"
+      }
+    ]
   },
   "wikilinks": [
     {

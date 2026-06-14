@@ -4,7 +4,7 @@
   "slug": "dialogue-state-tracking",
   "public": true,
   "classIri": "urn:ngm:class:dialogue-state-tracking",
-  "domain": "natural-language-processing",
+  "domain": "ai",
   "definition": "A component of conversational systems that maintains a structured representation of the user's goals and the context of a conversation across turns. It updates the dialogue state as new utterances are processed.",
   "subClassOf": [
     {

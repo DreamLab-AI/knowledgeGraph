@@ -4,7 +4,7 @@
   "slug": "china",
   "public": true,
   "classIri": "urn:ngm:class:china",
-  "domain": "geography",
+  "domain": "governance",
   "definition": "A country in East Asia and the world's most populous nation for much of recent history, with a large economy and significant influence in technology, manufacturing, and digital currency policy.",
   "subClassOf": [
     {

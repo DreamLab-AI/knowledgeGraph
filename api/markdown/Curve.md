@@ -55,7 +55,7 @@ public:: true
   "@type": "Class",
   "label": "Curve",
   "definition": "Curve is a decentralised exchange on Ethereum and other chains optimised for low-slippage swaps between similarly priced assets such as stablecoins. Its CRV token and gauge system govern liquidity incentives.",
-  "domain": "defi",
+  "domain": "blockchain",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

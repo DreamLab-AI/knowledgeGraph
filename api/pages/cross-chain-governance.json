@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:cross-chain-governance",
   "domain": "blockchain",
-  "definition": "Cross-Chain Governance is a coordination framework and set of protocols that enable governance proposals, voting outcomes, and policy updates to propagate and be enforced across multiple heterogeneous blockchain networks without requiring a single trusted intermediary. It extends on-chain governance mechanisms \u2014 token-weighted voting, quadratic voting, time-locked execution \u2014 to multi-chain environments using interoperability layers such as IBC (Inter-Blockchain Communication), cross-chain message passing bridges, or relay networks. Achieving consistent governance state across chains requires solving distributed consensus problems whilst preserving each chain's sovereignty.",
+  "definition": "Cross-Chain Governance is a coordination framework and set of protocols that enable governance proposals, voting outcomes, and policy updates to propagate and be enforced across multiple heterogeneous blockchain networks without requiring a single trusted intermediary. It extends on-chain governance mechanisms \u2014 token-weighted voting, quadratic voting, time-locked execution \u2014 to multi-chain environments using interoperability layers such as IBC (Inter-Blockchain Communication), cross-chain message-passing bridges, or relay networks. Achieving consistent governance state across chains requires solving distributed consensus problems while preserving each chain's sovereignty. The field sits at the intersection of blockchain interoperability, distributed systems coordination, and decentralised decision-making.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-governance-and-regulation",
@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
+  "qualityScore": 0.72,
   "maturity": "emerging",
   "relationships": {
     "hasPart": [],
@@ -25,21 +25,85 @@
       {
         "id": "urn:ngm:class:cross-chain-messaging",
         "label": "Cross-Chain Messaging"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:distributed-consensus",
+        "label": "Distributed Consensus"
       }
     ],
-    "enables": [],
-    "dependsOn": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:protocol-upgrade",
+        "label": "Protocol Upgrade"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "id": "urn:ngm:class:treasury-management",
+        "label": "Treasury Management"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:cross-chain-bridge",
+        "label": "Cross-Chain Bridge"
+      },
+      {
+        "id": "urn:ngm:class:relay-network",
+        "label": "Relay Network"
+      },
+      {
+        "id": "urn:ngm:class:fraud-proof",
+        "label": "Fraud Proof"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:on-chain-governance",
+        "label": "On-Chain Governance"
+      },
+      {
+        "id": "urn:ngm:class:off-chain-governance",
+        "label": "Off-Chain Governance"
+      },
+      {
+        "id": "urn:ngm:class:centralised-governance",
+        "label": "Centralised Governance"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "id": "urn:ngm:class:multi-stakeholder-governance",
+        "label": "Multi-Stakeholder Governance"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:dao-governance",
         "label": "DAO Governance"
       },
       {
-        "id": "urn:ngm:class:smart-contract",
-        "label": "Smart Contract"
+        "id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "id": "urn:ngm:class:on-chain-voting",
+        "label": "On-Chain Voting"
+      },
+      {
+        "id": "urn:ngm:class:time-lock",
+        "label": "Time-Lock"
       }
     ],
     "supports": [],
@@ -47,12 +111,20 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:on-chain-governance",
-        "label": "On-chain Governance"
+        "id": "urn:ngm:class:polkadot-parachain",
+        "label": "Polkadot Parachain"
       },
       {
-        "id": "urn:ngm:class:cross-chain-bridge",
-        "label": "Cross-Chain Bridge"
+        "id": "urn:ngm:class:cosmos-ibc",
+        "label": "Cosmos IBC"
+      },
+      {
+        "id": "urn:ngm:class:optimistic-rollup",
+        "label": "Optimistic Rollup"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
       }
     ]
   },

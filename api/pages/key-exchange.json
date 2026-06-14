@@ -4,7 +4,7 @@
   "slug": "key-exchange",
   "public": true,
   "classIri": "urn:ngm:class:key-exchange",
-  "domain": "cryptography",
+  "domain": "security",
   "definition": "Key exchange is a cryptographic procedure by which two parties establish a shared secret over an insecure channel for use in subsequent encrypted communication.",
   "subClassOf": [
     {

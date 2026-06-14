@@ -4,7 +4,7 @@
   "slug": "computational-complexity-theory",
   "public": true,
   "classIri": "urn:ngm:class:computational-complexity-theory",
-  "domain": "mathematics",
+  "domain": "machine-learning",
   "definition": "The study of the resources, principally time and memory, required to solve computational problems, and the classification of problems into complexity classes.",
   "subClassOf": [
     {

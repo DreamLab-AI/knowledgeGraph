@@ -4,16 +4,16 @@
   "slug": "sensitivity",
   "public": true,
   "classIri": "urn:ngm:class:sensitivity",
-  "domain": "general",
-  "definition": "The degree to which the output of a model or system changes in response to variation in its inputs, parameters or assumptions.",
+  "domain": "machine-learning",
+  "definition": "Sensitivity quantifies the degree to which the output of a model, classifier, or system changes in response to variation in its inputs, parameters, or underlying assumptions. In binary classification, sensitivity (also called recall or true positive rate) measures the proportion of actual positive instances correctly identified by a model. In sensitivity analysis, the concept is generalised to any computational or physical system to identify which input factors most strongly drive output variance, thereby guiding uncertainty quantification and model validation.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:robustness",
-      "label": "Robustness"
+      "id": "urn:ngm:class:model-evaluation",
+      "label": "Model Evaluation"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
@@ -21,23 +21,109 @@
       {
         "id": "urn:ngm:class:parameter",
         "label": "Parameter"
+      },
+      {
+        "id": "urn:ngm:class:ground-truth",
+        "label": "Ground Truth"
+      },
+      {
+        "id": "urn:ngm:class:classification",
+        "label": "Classification"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:robustness",
         "label": "Robustness"
+      },
+      {
+        "id": "urn:ngm:class:uncertainty-quantification",
+        "label": "Uncertainty Quantification"
+      },
+      {
+        "id": "urn:ngm:class:model-validation",
+        "label": "Model Validation"
+      },
+      {
+        "id": "urn:ngm:class:feature-importance",
+        "label": "Feature Importance"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:confusion-matrix",
+        "label": "Confusion Matrix"
+      },
+      {
+        "id": "urn:ngm:class:threshold",
+        "label": "Threshold"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:specificity",
+        "label": "Specificity"
+      },
+      {
+        "id": "urn:ngm:class:precision",
+        "label": "Precision"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:sensitivity-analysis",
+        "label": "Sensitivity Analysis"
+      },
+      {
+        "id": "urn:ngm:class:monte-carlo-simulation",
+        "label": "Monte Carlo Simulation"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:explainability",
+        "label": "Explainability"
+      },
+      {
+        "id": "urn:ngm:class:fairness",
+        "label": "Fairness"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:f1-score",
+        "label": "F1 Score"
+      },
+      {
+        "id": "urn:ngm:class:roc-curve",
+        "label": "ROC Curve"
+      },
+      {
+        "id": "urn:ngm:class:bias-variance-tradeoff",
+        "label": "Bias-Variance Tradeoff"
+      },
+      {
+        "id": "urn:ngm:class:reproducibility",
+        "label": "Reproducibility"
+      },
+      {
+        "id": "urn:ngm:class:hyperparameter",
+        "label": "Hyperparameter"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -4,7 +4,7 @@
   "slug": "edge-computing-layer",
   "public": true,
   "classIri": "urn:ngm:class:edge-computing-layer",
-  "domain": "edge-computing",
+  "domain": "infrastructure",
   "definition": "The Edge Computing Layer is the stratum that places computation and storage near the source of data, away from centralised facilities. It sits above the Hardware and Network strata at the periphery and below the application and inference workloads it hosts locally. It contains edge nodes, local schedulers, and the synchronisation logic that links edge to core.",
   "subClassOf": [
     {

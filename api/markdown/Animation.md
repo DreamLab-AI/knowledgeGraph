@@ -21,7 +21,7 @@ public:: true
   "@type": "Class",
   "label": "Animation",
   "definition": "Animation is the technique of creating the illusion of movement by rapidly displaying a sequence of static images or by computationally interpolating between keyframe states of a scene or character over time. In digital contexts, animation encompasses skeletal rigging, keyframe interpolation, physics simulation, and procedural generation to produce lifelike motion in real-time or pre-rendered environments. Modern animation pipelines integrate motion capture data, inverse kinematics, and blend trees to deliver nuanced character performances. Animation is foundational to game engines, virtual reality, film, and interactive simulations.",
-  "domain": "graphics",
+  "domain": "spatial-computing",
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:animation-technique", "label": "Animation Technique"}],
   "relations": {

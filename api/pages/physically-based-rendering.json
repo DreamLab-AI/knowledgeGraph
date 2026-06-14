@@ -4,19 +4,40 @@
   "slug": "physically-based-rendering",
   "public": true,
   "classIri": "urn:ngm:class:physically-based-rendering",
-  "domain": "infrastructure",
-  "definition": "Physically Based Rendering (PBR) is a rendering methodology that simulates the physical behaviour of light interacting with materials by adhering to real-world optical principles such as energy conservation, microfacet theory, and the reflectance equation. PBR uses parameterised material models \u2014 typically albedo, metallic, roughness, and normal maps \u2014 to produce consistent, predictable visual results across varied lighting conditions. It is the standard material workflow for real-time 3D engines used in games, metaverse platforms, and digital twin visualisation.",
+  "domain": "spatial-computing",
+  "definition": "Physically Based Rendering (PBR) is a rendering methodology that simulates the interaction of light with materials using first-principles optics \u2014 energy conservation, the microfacet BRDF model, Fresnel reflectance equations, and radiometric correctness \u2014 to produce consistent, predictable visual output across arbitrary lighting environments. Surface materials are parameterised through a compact, artist-friendly set of maps (albedo, metalness, roughness, normal, ambient occlusion) that together drive evaluation of the Cook-Torrance or similar BRDF at each pixel. PBR has become the dominant material workflow in real-time engines (Unreal Engine, Unity) and offline path tracers alike, and is codified in the glTF 2.0 metallic-roughness material model, ensuring cross-renderer portability. Its physical correctness makes it the foundation for photorealistic digital twins, metaverse environments, and cinematic VFX pipelines.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:infra-computing-and-cloud",
-      "label": "Computing and Cloud"
+      "id": "urn:ngm:class:rendering-technique",
+      "label": "Rendering Technique"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:brdf",
+        "label": "BRDF"
+      },
+      {
+        "id": "urn:ngm:class:microfacet-model",
+        "label": "Microfacet Model"
+      },
+      {
+        "id": "urn:ngm:class:image-based-lighting",
+        "label": "Image-Based Lighting"
+      },
+      {
+        "id": "urn:ngm:class:normal-map",
+        "label": "Normal Map"
+      },
+      {
+        "id": "urn:ngm:class:environment-map",
+        "label": "Environment Map"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:shader",
@@ -25,6 +46,14 @@
       {
         "id": "urn:ngm:class:rendering-pipeline",
         "label": "Rendering Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      },
+      {
+        "id": "urn:ngm:class:texture-mapping",
+        "label": "Texture Mapping"
       }
     ],
     "enables": [
@@ -33,17 +62,83 @@
         "label": "Real-Time Rendering"
       },
       {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:photorealism",
+        "label": "Photorealism"
+      },
+      {
         "id": "urn:ngm:class:3-d-asset",
         "label": "3D Asset"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:energy-conservation",
+        "label": "Energy Conservation"
+      },
+      {
+        "id": "urn:ngm:class:radiometry",
+        "label": "Radiometry"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:cook-torrance-model",
+        "label": "Cook-Torrance Model"
+      },
+      {
+        "id": "urn:ngm:class:fresnel-equation",
+        "label": "Fresnel Equation"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:phong-shading",
+        "label": "Phong Shading"
+      },
+      {
+        "id": "urn:ngm:class:rasterisation",
+        "label": "Rasterisation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:neural-radiance-field",
+        "label": "Neural Radiance Field"
+      },
+      {
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:gltf",
+        "label": "glTF"
+      },
+      {
+        "id": "urn:ngm:class:hdri",
+        "label": "HDRI"
+      },
+      {
+        "id": "urn:ngm:class:monte-carlo-integration",
+        "label": "Monte Carlo Integration"
+      }
+    ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:khronos-group",
+        "label": "Khronos Group"
+      },
+      {
+        "id": "urn:ngm:class:gltf",
+        "label": "glTF"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -51,8 +146,16 @@
         "label": "Ray Tracing"
       },
       {
-        "id": "urn:ngm:class:rendering-technique",
-        "label": "Rendering Technique"
+        "id": "urn:ngm:class:path-tracing",
+        "label": "Path Tracing"
+      },
+      {
+        "id": "urn:ngm:class:global-illumination",
+        "label": "Global Illumination"
+      },
+      {
+        "id": "urn:ngm:class:subsurface-scattering",
+        "label": "Subsurface Scattering"
       }
     ]
   },

@@ -55,7 +55,7 @@ public:: true
   "@type": "Class",
   "label": "Microsoft",
   "definition": "Microsoft is a multinational technology company that produces operating systems, productivity software, cloud services and mixed reality hardware and platforms.",
-  "domain": "general",
+  "domain": "infrastructure",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

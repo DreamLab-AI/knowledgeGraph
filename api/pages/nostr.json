@@ -5,40 +5,110 @@
   "public": true,
   "classIri": "urn:ngm:class:nostr",
   "domain": "infrastructure",
-  "definition": "Nostr (Notes and Other Stuff Transmitted by Relays) is an open, censorship-resistant social-messaging protocol built around a minimal event model in which users identify themselves by a secp256k1 cryptographic key pair and publish signed JSON events to one or more relay servers over WebSocket connections. The protocol has no central server: identity is purely the public key, and relays are interchangeable infrastructure that store and forward events without requiring accounts or trust; clients subscribe to relays using filter objects and receive matching events. Nostr Improvement Proposals (NIPs) extend the core event kind system to cover short-form notes, long-form articles, direct messages (encrypted with NIP-04/NIP-44), zap payments (Lightning Network), community moderation, and identity verification. Its radical simplicity and cryptographic self-sovereignty have made Nostr the primary decentralised social-layer for the Bitcoin and Lightning ecosystem.",
+  "definition": "Nostr (Notes and Other Stuff Transmitted by Relays) is an open, censorship-resistant social-messaging protocol in which user identity is a secp256k1 cryptographic key pair and all user activity consists of signed JSON events published to one or more relay servers over WebSocket connections. The protocol has no central authority: identity is purely the public key, relays are interchangeable infrastructure that store and forward events without requiring account registration, and clients subscribe using filter objects to receive matching events. Nostr Improvement Proposals (NIPs) extend the core event-kind system to cover short-form notes, long-form articles, encrypted direct messages, Lightning Network zap payments, community moderation, and decentralised identity verification. Its radical simplicity, cryptographic self-sovereignty, and tight integration with the Bitcoin and Lightning ecosystem have made Nostr the dominant open social layer for value-aligned decentralised communication.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:nostr-protocol",
-      "label": "Nostr Protocol"
+      "id": "urn:ngm:class:decentralised-protocol",
+      "label": "Decentralised Protocol"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:nostr-improvement-proposal",
+        "label": "Nostr Improvement Proposal"
+      },
+      {
+        "id": "urn:ngm:class:nostr-event",
+        "label": "Nostr Event"
+      },
+      {
+        "id": "urn:ngm:class:nostr-relay",
+        "label": "Nostr Relay"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:relay-server",
+        "label": "Relay Server"
+      },
+      {
+        "id": "urn:ngm:class:event-signing",
+        "label": "Event Signing"
+      }
+    ],
     "enables": [
       {
-        "id": "urn:ngm:class:decentralised-web",
-        "label": "Decentralised Web"
+        "id": "urn:ngm:class:censorship-resistance",
+        "label": "Censorship Resistance"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
       },
       {
         "id": "urn:ngm:class:social-network-graph",
         "label": "Social Network Graph"
       },
       {
-        "id": "urn:ngm:class:decentralised-identity",
-        "label": "Decentralised Identity"
+        "id": "urn:ngm:class:decentralised-web",
+        "label": "Decentralised Web"
+      },
+      {
+        "id": "urn:ngm:class:micropayment",
+        "label": "Micropayment"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self-Sovereign Identity"
+      },
+      {
+        "id": "urn:ngm:class:open-protocol",
+        "label": "Open Protocol"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:activitypub",
+        "label": "ActivityPub"
+      },
+      {
+        "id": "urn:ngm:class:matrix-protocol",
+        "label": "Matrix Protocol"
+      },
+      {
+        "id": "urn:ngm:class:federated-social-network",
+        "label": "Federated Social Network"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:agent-to-agent-communication",
+        "label": "Agent-to-Agent Communication"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-ai",
+        "label": "Decentralised AI"
+      }
+    ],
     "uses": [
       {
-        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
+        "id": "urn:ngm:class:public-key-cryptography",
         "label": "Public-Key Cryptography"
       },
       {
@@ -46,8 +116,16 @@
         "label": "WebSocket"
       },
       {
-        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key",
-        "label": "Public Key"
+        "id": "urn:ngm:class:schnorr-signature",
+        "label": "Schnorr Signature"
+      },
+      {
+        "id": "urn:ngm:class:secp256k1",
+        "label": "secp256k1"
+      },
+      {
+        "id": "urn:ngm:class:json",
+        "label": "JSON"
       }
     ],
     "supports": [],
@@ -55,16 +133,16 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:censorship-resistance",
-        "label": "Censorship Resistance"
-      },
-      {
-        "id": "urn:ngm:class:self-sovereign-identity",
-        "label": "Self Sovereign Identity"
-      },
-      {
         "id": "urn:ngm:class:did-nostr-identity",
         "label": "DID Nostr Identity"
+      },
+      {
+        "id": "urn:ngm:class:value-for-value",
+        "label": "Value-for-Value"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
       }
     ]
   },

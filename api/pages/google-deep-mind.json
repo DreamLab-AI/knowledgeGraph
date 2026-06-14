@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:google-ai-technology-corporation-deep-mind",
   "domain": "ai",
-  "definition": "Google DeepMind is an AI research laboratory formed in 2023 by the merger of Google Brain and the original DeepMind (acquired by Google in 2014), operating as a division of Alphabet Inc. It is responsible for foundational advances including AlphaGo, AlphaFold, Gemini, and numerous contributions to reinforcement learning and deep learning theory. The organisation pursues both long-term fundamental AI research and the development of AI products deployed across Google's services. With thousands of researchers across London, Mountain View, and other global locations, it is one of the largest and most influential AI research institutions in the world.",
+  "definition": "Google DeepMind is an AI research and development division of Alphabet Inc., formed in April 2023 by the merger of Google Brain (founded 2011) and DeepMind (founded 2010, acquired by Google in 2014). It is responsible for foundational breakthroughs in reinforcement learning, protein structure prediction (AlphaFold), and large-scale multimodal AI (Gemini), and pursues both long-term fundamental research and product integration across Google's services. Operating from London, Mountain View, and additional global sites, it is one of the largest and most influential AI research institutions in the world, with a stated mission of advancing artificial intelligence for the benefit of humanity whilst maintaining safety-centred development practices.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-companies",
@@ -13,22 +13,65 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.74,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:alphafold",
+        "label": "AlphaFold"
+      },
       {
         "id": "urn:ngm:class:gemini-multimodal-language-model",
         "label": "Gemini"
       },
       {
-        "id": "urn:ngm:class:reinforcement-learning",
-        "label": "Reinforcement Learning"
+        "id": "urn:ngm:class:alphacode",
+        "label": "AlphaCode"
       }
     ],
-    "dependsOn": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:high-performance-computing",
+        "label": "High-Performance Computing"
+      },
+      {
+        "id": "urn:ngm:class:tensor-processing-unit",
+        "label": "Tensor Processing Unit"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:protein-structure-prediction",
+        "label": "Protein Structure Prediction"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety-research",
+        "label": "AI Safety Research"
+      },
+      {
+        "id": "urn:ngm:class:scientific-ai",
+        "label": "Scientific AI"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:tensorflow",
+        "label": "TensorFlow"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ],
     "implements": [],
     "contrastsWith": [
       {
@@ -38,9 +81,22 @@
       {
         "id": "urn:ngm:class:anthropic",
         "label": "Anthropic"
+      },
+      {
+        "id": "urn:ngm:class:meta-ai",
+        "label": "Meta AI"
       }
     ],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:computational-biology",
+        "label": "Computational Biology"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:deep-learning",
@@ -49,16 +105,34 @@
       {
         "id": "urn:ngm:class:large-language-models",
         "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:multi-agent-systems",
+        "label": "Multi-Agent Systems"
       }
     ],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
+    "supports": [
       {
-        "id": "urn:ngm:class:ai-safety-research",
-        "label": "AI Safety Research"
+        "id": "urn:ngm:class:drug-discovery",
+        "label": "Drug Discovery"
       },
+      {
+        "id": "urn:ngm:class:climate-modelling",
+        "label": "Climate Modelling"
+      },
+      {
+        "id": "urn:ngm:class:genomics",
+        "label": "Genomics"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:alphabet-inc",
+        "label": "Alphabet Inc"
+      }
+    ],
+    "relatedTo": [
       {
         "id": "urn:ngm:class:artificial-general-intelligence",
         "label": "Artificial General Intelligence"
@@ -66,6 +140,10 @@
       {
         "id": "urn:ngm:class:ai-alignment",
         "label": "AI Alignment"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
       }
     ]
   },

@@ -5,19 +5,41 @@
   "public": true,
   "classIri": "urn:ngm:class:data-format",
   "domain": "infrastructure",
-  "definition": "Data Format defines the structural and encoding specification by which data is stored, transmitted, and interpreted between systems. Formats span binary serialisation (Protocol Buffers, Avro), text-based interchange (JSON, JSON-LD, XML), domain-specific schemas (DICOM, glTF), and columnar storage formats (Parquet). Format choice determines interoperability scope, parsing overhead, and compatibility with downstream processing pipelines.",
+  "definition": "A Data Format is a formal structural and encoding specification that governs how raw bytes are organised, typed, and interpreted when data is stored, transmitted, or exchanged between computational systems. Formats encode decisions about byte ordering, field delimitation, schema evolution, compression, and type systems, ranging from binary serialisation protocols (Protocol Buffers, Apache Avro, MessagePack) to human-readable interchange formats (JSON, XML, YAML, TOML) and domain-specific schemas (DICOM for medical imaging, glTF for 3D assets, FITS for astronomical data). The choice of data format critically determines interoperability scope, parsing overhead, storage efficiency, schema evolution capability, and compatibility with downstream processing pipelines and analytics engines.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:infra-data-management",
+      "id": "urn:ngm:class:data-management",
       "label": "Data Management"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "emerging",
+  "qualityScore": 0.72,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:schema",
+        "label": "Schema"
+      },
+      {
+        "id": "urn:ngm:class:encoding",
+        "label": "Encoding"
+      },
+      {
+        "id": "urn:ngm:class:serialisation",
+        "label": "Serialisation"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:schema-registry",
+        "label": "Schema Registry"
+      },
+      {
+        "id": "urn:ngm:class:codec",
+        "label": "Codec"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:data-interoperability",
@@ -26,29 +48,103 @@
       {
         "id": "urn:ngm:class:data-pipeline",
         "label": "Data Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:data-exchange",
+        "label": "Data Exchange"
+      },
+      {
+        "id": "urn:ngm:class:api-design",
+        "label": "API Design"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:character-encoding",
+        "label": "Character Encoding"
+      },
+      {
+        "id": "urn:ngm:class:type-system",
+        "label": "Type System"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
+      },
+      {
+        "id": "urn:ngm:class:interface-definition-language",
+        "label": "Interface Definition Language"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:binary-format",
+        "label": "Binary Format"
+      },
+      {
+        "id": "urn:ngm:class:text-format",
+        "label": "Text Format"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:compression",
+        "label": "Compression"
+      },
+      {
+        "id": "urn:ngm:class:data-validation",
+        "label": "Data Validation"
+      }
+    ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      },
+      {
+        "id": "urn:ngm:class:iso",
+        "label": "ISO"
+      },
+      {
+        "id": "urn:ngm:class:w3c",
+        "label": "W3C"
+      }
+    ],
     "partOf": [
       {
         "id": "urn:ngm:class:data-standards",
         "label": "Data Standards"
+      },
+      {
+        "id": "urn:ngm:class:data-architecture",
+        "label": "Data Architecture"
       }
     ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:json-data-interchange-format-ld",
+        "id": "urn:ngm:class:json-ld",
         "label": "JSON-LD"
       },
       {
-        "id": "urn:ngm:class:linked-data",
-        "label": "Linked Data"
+        "id": "urn:ngm:class:protocol-buffers",
+        "label": "Protocol Buffers"
+      },
+      {
+        "id": "urn:ngm:class:apache-parquet",
+        "label": "Apache Parquet"
       }
     ]
   },

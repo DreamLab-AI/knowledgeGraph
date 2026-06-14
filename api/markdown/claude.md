@@ -1,12 +1,105 @@
 - ### Definition
-  - Claude is [[Anthropic]]'s family of [[Large Language Models]] built with [[Constitutional AI Training Methodology]] and [[RLHF]] training to achieve alignment between capability and human values, widely deployed via API for [[Conversational AI]], [[Agentic Workflow]], and [[Tool Use]] applications.
+  - Claude is [[Anthropic]]'s family of [[Large Language Models]] built with [[Constitutional AI]] and [[RLHF]] training to achieve alignment between capability and human values, widely deployed via API for [[Conversational AI]], [[Agentic Workflow]], [[Tool Use]], and [[Code Generation]] applications. As a [[Foundation Model]], Claude represents Anthropic's primary commercial vehicle for advancing [[AI Safety]] research, demonstrating that safety-conscious training methods such as [[Constitutional AI Training Methodology]] can produce models that are both highly capable and reliably aligned with human intent.
+
+- ### Overview
+  - Claude is a large language model family produced by [[Anthropic]], a safety-focused AI company founded in 2021 by former [[OpenAI]] researchers including Dario Amodei and Daniela Amodei.
+  - The name "Claude" humanises the assistant, departing from acronym-based technical naming conventions common in the industry.
+  - Anthropic positioned Claude explicitly as a safety-focused alternative to competing frontier models, with the claim that [[Constitutional AI Training Methodology]] produces a model less likely to assist with harmful requests whilst remaining substantively helpful.
+  - Claude is accessed primarily through the Anthropic API, [[Amazon Bedrock]], and [[Google Cloud Vertex AI]], as well as directly through claude.ai consumer products.
+  - The model family has matured through several public generations, each advancing benchmark performance on reasoning, coding, instruction-following, and multimodal understanding whilst undergoing rigorous [[AI Safety]] evaluation and [[Red Teaming]] prior to release.
+  - Claude's commercial success underpins Anthropic's research mission: revenue from Claude API deployments funds frontier [[Alignment Research]], closing the loop between commercial viability and safety-focused science.
+
+- ### Model Tiers and Generations
+  - The Claude model family is organised into a three-tier hierarchy reflecting cost-performance trade-offs:
+    - **Haiku**: Optimised for low-latency, high-throughput, cost-sensitive applications where speed is prioritised over maximum capability. Suitable for classification, summarisation, and lightweight [[Conversational AI]] tasks.
+    - **Sonnet**: The balanced mid-tier, offering strong reasoning, coding, and instruction-following performance at moderate cost. The most widely deployed tier for [[Enterprise Software Integration]] use cases.
+    - **Opus**: The highest-capability tier, designed for complex multi-step reasoning, advanced [[Code Generation]], and tasks requiring the deepest contextual understanding.
+  - This tiered architecture mirrors market segmentation strategies adopted by competing labs and signals the commercial maturation of the [[Large Language Models]] market.
+  - Key generational milestones include:
+    - **Claude 1** (March 2023): First public release, establishing the Constitutional AI baseline.
+    - **Claude 2** (July 2023): Introduced a 100,000-token context window, enabling long-document processing and extended [[Multi-Step Reasoning]] tasks.
+    - **Claude 3** (March 2024): Launched the Haiku/Sonnet/Opus naming convention alongside multimodal image understanding, representing a step-change in capability across all tiers.
+    - **Claude 3.5 and beyond**: Continued refinements to instruction-following, coding ability, and agentic task completion, with the Sonnet tier achieving particularly notable benchmark results.
+
+- ### Training Methodology
+  - Claude's training pipeline combines several techniques that distinguish it from models trained purely on supervised learning:
+    - **[[Pre-Training]]**: Claude begins as a next-token prediction model trained on large-scale text corpora, building broad world knowledge and language capability.
+    - **[[Instruction Tuning]]**: Supervised fine-tuning on curated instruction-response pairs shapes the model towards helpful, structured output formats.
+    - **[[Constitutional AI Training Methodology]]** (CAI): A distinctive Anthropic method in which the model critiques and revises its own outputs against a written set of principles, reducing reliance on human annotators for harmlessness labelling and improving behavioural consistency.
+    - **[[RLHF]]** (Reinforcement Learning from Human Feedback): Human preference labels train a reward model used to fine-tune Claude towards outputs rated as more helpful and appropriate.
+    - **[[Red Teaming]]**: Systematic adversarial probing by safety researchers and automated tools surfaces failure modes before public release.
+  - The combination of CAI and RLHF is Anthropic's primary public contribution to [[Alignment Research]] methodology, published in peer-reviewed papers and cited widely in the AI safety literature.
+
+- ### Agentic Capabilities
+  - Claude's agentic capabilities represent a shift from chat assistant to autonomous agent:
+    - **[[Tool Use]]**: Claude can call external tools (web search, code execution, database queries) in response to user instructions.
+    - **[[Function Calling]]**: Structured JSON-schema-based function invocation allows Claude to interact with APIs and software systems programmatically.
+    - **[[Model Context Protocol]]** (MCP): An open standard developed by Anthropic that defines a universal interface between Claude and external tools, enabling third-party developers to build integrations discoverable at inference time.
+    - **[[Agentic Workflow]]**: Multi-step task orchestration, including planning, sub-task delegation, and iterative refinement, positioning Claude as a backbone for autonomous [[Workflow Automation]].
+    - **[[Retrieval-Augmented Generation]]**: Integration with vector databases and document retrieval systems extends Claude's effective knowledge beyond its training cut-off.
+  - [[Model Context Protocol]] has been adopted beyond Anthropic's own tooling, with third-party MCP server implementations enabling Claude to interact with code editors, file systems, enterprise APIs, and web browsers.
+
+- ### Safety and Alignment
+  - Safety is a first-order design objective for Claude, not a post-hoc constraint:
+    - Claude is trained with an explicit [[AI Safety]] focus, aiming to embody the principles of being helpful, harmless, and honest simultaneously.
+    - [[Constitutional AI Training Methodology]] encodes a set of written ethical principles into the training process, enabling the model to self-evaluate and self-correct without requiring human labels for every unsafe output type.
+    - Anthropic publishes [[AI Model Card]] documentation for each Claude release, disclosing training methods, evaluation results, known limitations, and intended use cases.
+    - Claude undergoes systematic [[Red Teaming]] evaluating resistance to jailbreaks, prompt injection, and misuse across categories including chemical, biological, radiological, and nuclear risk domains.
+    - [[Alignment Research]] findings from Claude's deployment feed back into Anthropic's published scientific programme, including work on interpretability, scalable oversight, and reward model reliability.
+    - Claude's safety posture has been assessed under the UK AI Safety Institute's frontier model evaluation framework and equivalent programmes in the US and EU.
+
+- ### Applications and Use Cases
+  - Claude is deployed across a broad spectrum of real-world applications:
+    - **Software Development**: [[Code Generation]], code review, debugging, documentation, and test writing via IDE integrations and the Anthropic API.
+    - **Enterprise Productivity**: Document summarisation, knowledge extraction, and drafting across legal, financial, and healthcare verticals.
+    - **Customer Support**: Powering conversational agents and helpdesk automation at scale via [[Conversational AI]] pipelines.
+    - **Research and Analysis**: Long-context document analysis, literature synthesis, and structured data extraction using extended context windows.
+    - **Agent Orchestration**: Acting as the reasoning engine in multi-agent systems using [[Agentic Workflow]] patterns and [[Model Context Protocol]] integrations.
+    - **[[Retrieval-Augmented Generation]]**: Serving as the generative component in enterprise RAG stacks, combining proprietary document corpora with Claude's reasoning capability.
+    - **Education**: Tutoring, explanation, and personalised learning content generation.
+    - **Creative and Content Work**: Long-form writing assistance, ideation, and structured content generation for media and marketing workflows.
+
 - ### Relationships
-  - Claude is the primary commercial product through which [[Anthropic]] advances its mission of responsible AI development. Its [[Constitutional AI Training Methodology]] training methodology distinguishes it from models trained purely on human preference labels, building a set of principles into the fine-tuning process to improve harmlessness without sacrificing helpfulness. [[RLHF]] shapes the conversational style and refusal behaviour. The [[Agentic Workflow]] capabilities—including [[Tool Use]] and [[Function Calling]]—have made Claude a widely used backbone for autonomous AI agent systems. Claude models are evaluated against [[AI Safety]] benchmarks and published with [[AI Model Card]] documentation.
-- ### Content
-  - Claude was first publicly released by Anthropic in March 2023, following the company's 2021 founding by former OpenAI researchers including Dario Amodei and Daniela Amodei. The name 'Claude' is a deliberate humanisation of the assistant, in contrast to more acronym-based or technical naming conventions. Anthropic positioned Claude explicitly as a safety-focused alternative to GPT-4, with the claim that Constitutional AI—a training technique that uses a set of written principles and AI self-critique to shape model behaviour—produced a model less likely to assist with harmful requests whilst remaining substantively helpful.
+  - relatedTo:: [[Anthropic]]
+  - relatedTo:: [[Large Language Models]]
+  - relatedTo:: [[AI Safety]]
+  - relatedTo:: [[Alignment Research]]
+  - relatedTo:: [[Foundation Model]]
+  - uses:: [[Constitutional AI Training Methodology]]
+  - uses:: [[RLHF]]
+  - uses:: [[Agentic Workflow]]
+  - uses:: [[Transformer Architecture]]
+  - uses:: [[Instruction Tuning]]
+  - enables:: [[Tool Use]]
+  - enables:: [[Conversational AI]]
+  - enables:: [[Function Calling]]
+  - enables:: [[Code Generation]]
+  - enables:: [[Retrieval-Augmented Generation]]
+  - enables:: [[Multi-Step Reasoning]]
+  - implements:: [[Model Context Protocol]]
+  - implements:: [[AI Model Card]]
+  - contrastsWith:: [[GPT-4]]
+  - contrastsWith:: [[Gemini]]
+  - contrastsWith:: [[Llama]]
+  - dependsOn:: [[Pre-Training]]
+  - dependsOn:: [[Human Feedback]]
+  - bridges-to:: [[Enterprise Software Integration]]
+  - bridges-to:: [[Workflow Automation]]
 
-  - The Claude model family has evolved through multiple generations: Claude 1, Claude 2 (with 100K token context), Claude 3 (Haiku/Sonnet/Opus with multimodal capability), and subsequent versions with extended context and enhanced tool use. The tiered naming convention reflects a deliberate positioning strategy: Haiku for low-latency, cost-sensitive applications; Sonnet for balanced performance; and Opus for maximum capability on complex reasoning tasks. This architecture mirrors the market segmentation strategy adopted by competing labs, signalling the maturation of the commercial LLM market.
+- ### Standards and Context
+  - [[Model Context Protocol]] (MCP): An open protocol published by Anthropic in 2024 that standardises tool-use interfaces for Claude and has been adopted by third-party developers as an interoperability layer for AI-native software integration.
+  - [[AI Model Card]]: Anthropic publishes model cards for each Claude release in line with emerging norms for responsible AI disclosure, covering training data, evaluation methodology, and known limitations.
+  - Regulatory context: Claude's development and deployment are increasingly subject to frameworks including the EU AI Act (high-risk system classification considerations), the UK AI Safety Institute's frontier model evaluation programme, and US executive orders on AI safety.
+  - Claude's API conforms to standard REST/JSON patterns and increasingly supports streaming and structured output schemas aligned with emerging [[Function Calling]] and tool-use conventions established across the frontier model ecosystem.
+  - Anthropic participates in voluntary safety commitments established through the White House AI commitments (2023) and subsequent multilateral frameworks, with Claude as the primary model under evaluation.
 
-  - Constitutional AI, the training approach developed by Anthropic and applied to Claude, represents a significant departure from pure human feedback-based alignment. Rather than relying entirely on human raters to label good versus bad responses, Constitutional AI has the model itself critique and revise its outputs against a set of written principles, reducing reliance on human annotation for harmlessness whilst improving consistency. This approach has been published in academic papers and represents Anthropic's most significant public contribution to alignment methodology.
+- ### Competitive Landscape
+  - Claude competes directly with [[GPT-4]] and its successors from [[OpenAI]], [[Gemini]] from [[Google DeepMind]], and open-weight models including [[Llama]] from Meta AI.
+  - The primary differentiator Anthropic asserts is the rigour and transparency of Claude's safety methodology, particularly [[Constitutional AI Training Methodology]], which produces a documented, principle-grounded training process.
+  - Enterprise buyers evaluate Claude against competitors on dimensions including: context window length, latency-cost trade-offs, instruction-following reliability, code generation quality, and API feature parity.
+  - Claude's availability through [[Amazon Bedrock]] and [[Google Cloud Vertex AI]] reflects Anthropic's strategy of distributing through hyperscaler channels rather than relying solely on direct API sales.
+  - The model card and safety evaluation transparency of Claude is frequently cited as differentiating in regulated industries (healthcare, finance, legal) where auditability of AI behaviour is commercially significant.
 
-  - Claude's agentic capabilities—the ability to use tools, execute code, browse the web, and orchestrate multi-step tasks—place it at the frontier of the transition from chat assistant to autonomous agent. Anthropic's Model Context Protocol (MCP) standardises the interface between Claude and external tools, enabling third-party developers to build integrations that Claude can discover and use at inference time. This positions Claude as a programmable AI layer in enterprise software stacks, with significant implications for workflow automation, software development, and knowledge work across industries.
+- ### Provenance
+  - sources:: Anthropic technical reports; Constitutional AI paper (Bai et al., 2022); Claude model cards (Anthropic, 2023–2024); Model Context Protocol specification (Anthropic, 2024); public benchmark results (MMLU, HumanEval, BIG-Bench); AI Safety Institute frontier model evaluation reports
+  - updated:: 2026-06-13

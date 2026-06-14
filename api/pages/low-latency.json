@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:low-latency",
   "domain": "infrastructure",
-  "definition": "Low latency is an engineering design property characterising systems in which the time delay between an input event and the corresponding system response is minimised to a degree that satisfies real-time interaction requirements. Depending on context, low latency spans a range from sub-millisecond (high-frequency trading, industrial control) to tens of milliseconds (interactive video, XR presence), and is achieved through architectural choices including edge computing, hardware acceleration, optimised network protocols, and co-location.",
+  "definition": "Low latency is an engineering design property characterising systems in which the elapsed time between an input event and the corresponding system response is minimised to meet real-time interaction requirements. It is a cross-cutting concern spanning network topology, compute placement, operating-system scheduling, memory hierarchy, and hardware design. Achievable thresholds are domain-dependent \u2014 sub-100 \u00b5s in high-frequency trading, under 20 ms for vestibulo-ocular reflex alignment in extended-reality headsets, and under 150 ms for interactive video \u2014 and are reached through a combination of edge computing, kernel-bypass networking, hardware acceleration, and optimised serialisation. As a foundational property of distributed infrastructure, low latency is a prerequisite for real-time AI inference, immersive spatial computing, autonomous robotics, and ultra-reliable industrial control.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:latency",
@@ -13,11 +13,24 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.74,
   "maturity": "mature",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:network-topology-optimisation",
+        "label": "Network Topology Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:co-location",
+        "label": "Co-Location"
+      },
+      {
+        "id": "urn:ngm:class:real-time-operating-system",
+        "label": "Real-Time Operating System"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:real-time",
@@ -30,12 +43,59 @@
       {
         "id": "urn:ngm:class:extended-reality-xr",
         "label": "Extended Reality (XR)"
+      },
+      {
+        "id": "urn:ngm:class:high-frequency-trading",
+        "label": "High-Frequency Trading"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-robotics",
+        "label": "Autonomous Robotics"
+      },
+      {
+        "id": "urn:ngm:class:industrial-automation",
+        "label": "Industrial Automation"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:network-latency",
+        "label": "Network Latency"
+      },
+      {
+        "id": "urn:ngm:class:propagation-delay",
+        "label": "Propagation Delay"
+      },
+      {
+        "id": "urn:ngm:class:queuing-delay",
+        "label": "Queuing Delay"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:throughput",
+        "label": "Throughput"
+      },
+      {
+        "id": "urn:ngm:class:high-throughput-computing",
+        "label": "High-Throughput Computing"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:edge-ai",
+        "label": "Edge AI"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:tactile-internet",
+        "label": "Tactile Internet"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:edge-computing",
@@ -44,23 +104,52 @@
       {
         "id": "urn:ngm:class:hardware-acceleration",
         "label": "Hardware Acceleration"
+      },
+      {
+        "id": "urn:ngm:class:kernel-bypass-networking",
+        "label": "Kernel-Bypass Networking"
+      },
+      {
+        "id": "urn:ngm:class:fpga",
+        "label": "FPGA"
+      },
+      {
+        "id": "urn:ngm:class:rdma",
+        "label": "RDMA"
       }
     ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      },
+      {
+        "id": "urn:ngm:class:3gpp",
+        "label": "3GPP"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
-      {
-        "id": "urn:ngm:class:network-latency",
-        "label": "Network Latency"
-      },
       {
         "id": "urn:ngm:class:quality-of-service",
         "label": "Quality Of Service"
       },
       {
-        "id": "urn:ngm:class:low-latency-computing",
-        "label": "Low-Latency Computing"
+        "id": "urn:ngm:class:5g",
+        "label": "5G"
+      },
+      {
+        "id": "urn:ngm:class:webrtc",
+        "label": "WebRTC"
+      },
+      {
+        "id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
+      },
+      {
+        "id": "urn:ngm:class:network-slicing",
+        "label": "Network Slicing"
       }
     ]
   },

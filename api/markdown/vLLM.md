@@ -59,7 +59,7 @@ public:: true
   "@type": "Class",
   "label": "vLLM",
   "definition": "vLLM is an open-source library for high-throughput serving of large language models. It introduced paged attention, a memory management technique that reduces waste in the key-value cache during generation.",
-  "domain": "natural-language-processing",
+  "domain": "ai",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

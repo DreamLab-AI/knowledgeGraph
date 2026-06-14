@@ -46,10 +46,9 @@ public:: true
   "@id": "urn:ngm:class:traditional-banking",
   "@type": "Class",
   "label": "Traditional Banking",
-  "definition": "Traditional banking is the conventional system of deposit-taking, lending, and payment services provided by licensed banks operating under regulatory supervision.",
+  "definition": "Traditional banking is the long-established system by which licensed deposit-taking institutions accept customer funds, extend credit through loans and mortgages, and operate payment and settlement services under prudential regulatory oversight. Banks act as financial intermediaries, transforming short-term deposits into longer-term loans and profiting from the interest-rate spread while managing liquidity and credit risk. The sector is governed by capital-adequacy frameworks such as Basel III/IV, deposit-insurance schemes, and central-bank lender-of-last-resort facilities. Traditional banking is distinguished from shadow banking and fintech alternatives by its formal licensing, balance-sheet-based intermediation, and full integration with national payment and clearing infrastructure.",
   "domain": "finance",
-  "maturity": "established",
-  "qualityScore": 0.7,
+  "maturity": "mature",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:traditional-finance",
@@ -61,14 +60,128 @@ public:: true
       {
         "@id": "urn:ngm:class:financial-regulation",
         "label": "Financial Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:capital-adequacy",
+        "label": "Capital Adequacy"
+      },
+      {
+        "@id": "urn:ngm:class:deposit-insurance",
+        "label": "Deposit Insurance"
+      },
+      {
+        "@id": "urn:ngm:class:central-bank",
+        "label": "Central Bank"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:retail-banking",
+        "label": "Retail Banking"
+      },
+      {
+        "@id": "urn:ngm:class:commercial-banking",
+        "label": "Commercial Banking"
+      },
+      {
+        "@id": "urn:ngm:class:investment-banking",
+        "label": "Investment Banking"
+      },
+      {
+        "@id": "urn:ngm:class:correspondent-banking",
+        "label": "Correspondent Banking"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:payment-system",
+        "label": "Payment System"
+      },
+      {
+        "@id": "urn:ngm:class:interbank-settlement",
+        "label": "Interbank Settlement"
+      },
+      {
+        "@id": "urn:ngm:class:credit-scoring",
+        "label": "Credit Scoring"
+      },
+      {
+        "@id": "urn:ngm:class:know-your-customer",
+        "label": "Know Your Customer"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:fractional-reserve-banking",
+        "label": "Fractional Reserve Banking"
+      },
+      {
+        "@id": "urn:ngm:class:monetary-policy-transmission",
+        "label": "Monetary Policy Transmission"
+      },
+      {
+        "@id": "urn:ngm:class:trade-finance",
+        "label": "Trade Finance"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "@id": "urn:ngm:class:shadow-banking",
+        "label": "Shadow Banking"
+      },
+      {
+        "@id": "urn:ngm:class:neobank",
+        "label": "Neobank"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      },
+      {
+        "@id": "urn:ngm:class:open-banking",
+        "label": "Open Banking"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:systemic-risk",
+        "label": "Systemic Risk"
+      },
+      {
+        "@id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
+      },
+      {
+        "@id": "urn:ngm:class:financial-inclusion",
+        "label": "Financial Inclusion"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:conventional-banking",
+      "label": "Conventional Banking"
+    },
+    {
+      "@id": "urn:ngm:class:chartered-banking",
+      "label": "Chartered Banking"
+    }
+  ],
+  "quality": 0.74,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-13T00:00:00Z",
+    "inferenceRule": "ManualEnrichment"
   }
 }
 ```
@@ -108,23 +221,140 @@ public:: true
 }
 ```
 
-
 - ### Definition
-  - Traditional banking is the conventional system of deposit-taking, lending, and payment services provided by licensed banks operating under regulatory supervision.
+  - Traditional banking is the long-established system by which licensed [[Deposit-Taking Institution]]s accept customer funds, extend credit through loans and mortgages, and operate payment and settlement services under prudential regulatory oversight. As financial intermediaries, banks transform short-term deposits into longer-term loans, profiting from the interest-rate spread while managing [[Liquidity Risk]] and [[Credit Risk]]. The sector is subject to capital-adequacy frameworks including [[Basel III]], deposit-insurance schemes, and [[Central Bank]] lender-of-last-resort facilities, distinguishing it from [[Shadow Banking]], [[Decentralised Finance]], and [[Neobank]] alternatives that operate outside or at the margin of the regulated balance-sheet model.
 
-- ### Semantic Classification
-  - owl-class:: finance:TraditionalBanking
-  - owl-role:: Class
+- ### Overview
+  - Traditional banking traces its modern institutional form to medieval Italian merchant banks and the later emergence of chartered joint-stock banks in the 17th and 18th centuries. Today it encompasses the full spectrum of regulated deposit-taking and lending intermediaries that form the backbone of national and international [[Financial System]]s.
+  - **Why it matters**
+    - Provides safe custody of household and corporate savings through government-backed [[Deposit Insurance]]
+    - Creates credit through [[Fractional Reserve Banking]], expanding the money supply and funding investment
+    - Anchors national [[Payment System]]s, enabling real-time gross settlement (RTGS) between institutions
+    - Acts as the primary transmission channel for [[Monetary Policy]] set by [[Central Bank]]s
+    - Underpins [[Trade Finance]] by issuing letters of credit and guarantees for cross-border commerce
+  - **How it works**
+    - Banks collect deposits from households and firms, recording liabilities on the right-hand side of their balance sheets
+    - Those funds are on-lent at higher interest rates, creating loan assets on the left-hand side
+    - The spread between deposit and lending rates (net interest margin) is the core profit driver
+    - Interbank markets allow banks to borrow and lend reserves overnight, managed via [[Interbank Settlement]] systems such as TARGET2 (Europe) and Fedwire (USA)
+    - Prudential regulators enforce minimum capital ratios under [[Capital Adequacy]] rules to absorb unexpected losses
+
+- ### Key Components
+  - **Retail Banking**
+    - Serves individual consumers and small businesses with current accounts, savings accounts, personal loans, and residential mortgages
+    - Front-end delivery via branch networks, telephone banking, and increasingly [[Open Banking]] APIs and mobile apps
+    - Links directly to [[Payment System]]s such as SWIFT, SEPA, BACS, and Faster Payments
+  - **Commercial Banking**
+    - Provides corporate current accounts, revolving credit facilities, term loans, cash-management services, and trade finance products
+    - Relationship managers serve mid-market and large corporate clients with bespoke credit structuring
+    - Feeds into [[Supply Chain Finance]] and international [[Trade Finance]] ecosystems
+  - **Investment Banking** (within universal banks)
+    - Underwrites securities, advises on mergers and acquisitions, and facilitates capital-markets transactions
+    - Co-exists within universal bank structures alongside retail and commercial divisions
+    - Subject to additional ring-fencing regulation in jurisdictions such as the UK (Financial Services (Banking Reform) Act 2013)
+  - **Correspondent Banking**
+    - Enables cross-border payment flows by maintaining nostro/vostro account relationships between domestic and foreign banks
+    - Critical to [[International Finance]] and remittance corridors
+    - Under increasing pressure from [[Anti-Money Laundering]] compliance costs leading to de-risking
+  - **Treasury and Asset-Liability Management**
+    - Manages duration mismatch between short-term liabilities (deposits) and long-term assets (loans)
+    - Employs interest-rate derivatives and bond portfolios to hedge [[Interest Rate Risk]]
+    - Reports to regulators via Liquidity Coverage Ratio (LCR) and Net Stable Funding Ratio (NSFR) under [[Basel III]]
+
+- ### Mechanisms
+  - **[[Fractional Reserve Banking]]**
+    - Banks hold only a fraction of deposits as liquid reserves, lending out the remainder
+    - Reserve requirements (where applied) or [[Capital Adequacy]] rules determine the practical lending multiplier
+    - Creates deposit-money endogenously: when a bank makes a loan it simultaneously creates a new deposit
+  - **[[Credit Scoring]] and Underwriting**
+    - Statistical models (scorecards, logistic regression, and increasingly [[Machine Learning]]) assess borrower default probability
+    - Collateral valuation and covenant structures manage loss-given-default for secured lending
+    - Large banks use Internal Ratings-Based (IRB) approaches approved by prudential regulators
+  - **[[Know Your Customer]] (KYC) and [[Anti-Money Laundering]] (AML)**
+    - Mandatory onboarding checks verify customer identity and assess risk of financial crime
+    - Ongoing transaction monitoring flags suspicious patterns for regulatory reporting
+    - Governed by the FATF Recommendations and national AML legislation (e.g. EU AMLD series, USA Bank Secrecy Act)
+  - **[[Interbank Settlement]]**
+    - Central-bank RTGS systems settle large-value payments with finality in central-bank money
+    - Multilateral netting through clearing houses (e.g. CLS for FX) reduces gross settlement flows
+    - Retail payment systems batch and net lower-value transactions before RTGS settlement
+  - **[[Monetary Policy Transmission]]**
+    - Central banks set policy rates that influence the cost of reserves, percolating into retail deposit and lending rates
+    - Quantitative easing alters the quantity of central-bank reserves banks hold, affecting credit conditions
+    - Banks' willingness to lend (the credit channel) amplifies or dampens policy impulses
+
+- ### Applications and Use Cases
+  - **Household Finance** — current accounts, savings products, residential mortgages, personal loans, credit cards; core interface between households and the [[Payment System]]
+  - **SME and Corporate Lending** — working-capital facilities, equipment finance, and project loans that fund business investment; key channel for [[Monetary Policy]] stimulus to reach the real economy
+  - **Trade and Commodity Finance** — documentary letters of credit, guarantees, and supply-chain financing that underpin international commodity flows and support [[Trade Finance]] ecosystems
+  - **Wealth Management and Private Banking** — high-net-worth deposit accounts, discretionary portfolio management, and structured products offered by universal banks' private-banking arms
+  - **Infrastructure and Project Finance** — long-tenor syndicated loans for energy, transport, and social infrastructure projects, often alongside capital-markets co-financing
+  - **Central Bank Operations** — banks serve as the primary counterparties through which central banks inject or withdraw liquidity, operationalising [[Monetary Policy]]
+  - **Custodial Services** — safekeeping and settlement of securities on behalf of institutional investors, linking into global [[Financial Market Infrastructure]]
 
 - ### Relationships
-  - is-subclass-of:: [[Traditional Finance]]
-  - bridges-to:: [[Payment System]]
+  - subClassOf:: [[Traditional Finance]]
   - requires:: [[Financial Regulation]]
+  - requires:: [[Capital Adequacy]]
+  - requires:: [[Deposit Insurance]]
+  - requires:: [[Central Bank]]
+  - hasPart:: [[Retail Banking]]
+  - hasPart:: [[Commercial Banking]]
+  - hasPart:: [[Investment Banking]]
+  - hasPart:: [[Correspondent Banking]]
+  - uses:: [[Payment System]]
+  - uses:: [[Interbank Settlement]]
+  - uses:: [[Credit Scoring]]
+  - uses:: [[Know Your Customer]]
+  - enables:: [[Fractional Reserve Banking]]
+  - enables:: [[Monetary Policy Transmission]]
+  - enables:: [[Trade Finance]]
+  - contrastsWith:: [[Decentralised Finance]]
+  - contrastsWith:: [[Shadow Banking]]
+  - contrastsWith:: [[Neobank]]
+  - bridges-to:: [[Central Bank Digital Currency]]
+  - bridges-to:: [[Open Banking]]
+  - bridges-to:: [[Blockchain]]
+  - relatedTo:: [[Systemic Risk]]
+  - relatedTo:: [[Anti-Money Laundering]]
+  - relatedTo:: [[Financial Inclusion]]
 
-- ### Content
-  - Traditional banking centres on accepting deposits, extending credit, and operating payment infrastructure. Banks act as intermediaries that hold customer funds, maintain ledgers of balances, and settle transfers between accounts.
-  - Banks operate under capital and liquidity rules and supervision by regulators, and they connect to clearing and settlement systems that move funds between institutions.
+- ### Standards and Regulatory Context
+  - **[[Basel III]] / Basel IV (BCBS)**
+    - International capital and liquidity standards issued by the Basel Committee on Banking Supervision
+    - Core ratios: Common Equity Tier 1 (CET1), Liquidity Coverage Ratio (LCR), Net Stable Funding Ratio (NSFR), and leverage ratio
+    - Final Basel III output floor (sometimes called Basel IV) being phased in across jurisdictions from 2025 onward
+  - **Deposit Guarantee Schemes**
+    - EU Deposit Guarantee Schemes Directive (DGSD) mandates protection up to €100,000 per depositor per institution
+    - UK Financial Services Compensation Scheme (FSCS) covers up to £85,000
+    - US Federal Deposit Insurance Corporation (FDIC) covers up to $250,000
+  - **[[Anti-Money Laundering]] Frameworks**
+    - FATF 40 Recommendations form the global AML/CFT standard adopted by 200+ jurisdictions
+    - EU Anti-Money Laundering Directives (AMLD4, AMLD5, AMLD6 and the forthcoming AMLA authority) progressively tighten requirements
+    - USA Bank Secrecy Act (BSA) and the Anti-Money Laundering Act 2020 govern US institutions
+  - **Consumer and Conduct Regulation**
+    - EU Consumer Credit Directive, UK Consumer Duty (FCA, 2023), and equivalent rules mandate fair treatment, transparency, and affordability assessments
+    - Mortgage Market Review (MMR, UK) and similar frameworks regulate responsible mortgage lending
+  - **[[Open Banking]] and PSD2**
+    - EU Payment Services Directive 2 (PSD2) and UK Open Banking mandates require banks to share customer data (with consent) via APIs
+    - Creates interoperability between traditional banks and licensed third-party providers, blurring the boundary with fintech
+  - **Resolution and Recovery**
+    - G-SIB (Global Systemically Important Bank) surcharges and Total Loss-Absorbing Capacity (TLAC) requirements ensure orderly resolution
+    - EU Bank Recovery and Resolution Directive (BRRD) and US Dodd-Frank Title II govern bail-in and resolution planning
+
+- ### Systemic Importance and Risks
+  - Traditional banking is tightly coupled to sovereign and economic stability; bank failures can propagate as [[Systemic Risk]] through interbank exposures, payment-system disruption, and confidence crises
+  - The 2007–2009 Global Financial Crisis demonstrated how concentrated credit risk (subprime mortgages), excessive leverage, and opaque securitisation could cascade into a global banking crisis requiring unprecedented public intervention
+  - Stress testing (e.g. EBA stress tests in Europe, Fed DFAST/CCAR in the USA) has become a standard supervisory tool since the crisis
+  - The rise of [[Decentralised Finance]] and stablecoins poses novel risks to traditional banks' deposit franchises and [[Payment System]] revenues, prompting regulatory attention to [[Central Bank Digital Currency]] as a public infrastructure response
+
+- ### Relationship to Emerging Technologies
+  - **[[Open Banking]]** — API mandates force traditional banks to act as data platforms, enabling third-party innovation while preserving the regulated deposit base
+  - **[[Blockchain]] and [[Distributed Ledger Technology]]** — explored by banks for trade-finance digitisation (e.g. Marco Polo, Contour), interbank settlement (Project Jura, Project Dunbar), and tokenised bonds
+  - **[[Central Bank Digital Currency]]** — proposed digital forms of central-bank money that could bypass commercial-bank intermediation or co-exist through a two-tier model with traditional banks as distributors
+  - **[[Machine Learning]]** in credit and fraud — banks increasingly deploy ML models for credit underwriting, fraud detection, and AML transaction monitoring, raising model-risk governance challenges
+  - **Cloud and [[Digital Infrastructure]]** — core banking modernisation via cloud migration is underway across global banks, with regulatory expectations on operational resilience and third-party risk management
 
 - ### Provenance
-  - sources::
-  - migration-date:: 2026-05-29T00:00:00Z
+  - sources:: Basel Committee on Banking Supervision (BCBS); Financial Stability Board (FSB); Bank for International Settlements (BIS); Financial Conduct Authority (FCA); European Banking Authority (EBA)
+  - updated:: 2026-06-13

@@ -1,20 +1,86 @@
 - ### Definition
-  - A model that generates a sequence by predicting each element conditioned on the previously generated elements, factorising the joint distribution into a product of conditional distributions.
+  - An autoregressive model is a [[Generative Model]] that produces sequences by predicting each element conditioned on all previously generated elements, factorising the joint probability over a sequence into an ordered product of conditionals via the [[Chain Rule of Probability]]. This is the foundational principle behind [[Language Model]] architectures such as GPT-style [[Transformer]] networks, as well as autoregressive systems for audio and image generation. The approach provides exact log-likelihoods and a tractable [[Maximum Likelihood Estimation]] objective, in contrast to latent-variable generative frameworks such as [[Variational Autoencoder]] or [[Diffusion Model]] which approximate posteriors or reverse stochastic processes.
 
-- ### Semantic Classification
-  - owl-class:: machine-learning:AutoregressiveModel
-  - owl-role:: Class
+- ### Overview
+  - Autoregressive models define a probability distribution over sequences x = (x₁, x₂, …, xₙ) as:
+    - P(x) = ∏ᵢ P(xᵢ | x₁, …, xᵢ₋₁)
+  - This factorisation is always valid by the chain rule and places no independence assumptions on the data.
+  - **Why it matters**
+    - Provides exact likelihood evaluation, unlike [[Variational Autoencoder]] (evidence lower bound) or [[Generative Adversarial Network]] (no explicit density).
+    - Simple training objective: minimise [[Cross-Entropy Loss]] between predicted and actual next tokens, equivalent to maximising log-likelihood.
+    - Scales extremely well — larger models trained on more data consistently improve, as evidenced by GPT-style [[Large Language Model]] scaling laws.
+  - **Core trade-off**
+    - Training is fully parallelisable via [[Masked Self-Attention]] (each position attends only to past positions).
+    - Inference is strictly sequential: token tᵢ cannot be sampled until tᵢ₋₁ is known, limiting throughput for long sequences.
+    - Techniques such as [[Speculative Decoding]] and [[Key-Value Cache]] partially mitigate inference latency.
+
+- ### Key Mechanisms
+  - **Chain-rule factorisation** — the joint probability is expressed as an ordered product of conditionals; no approximation is introduced.
+  - **[[Teacher Forcing]]** — during training, ground-truth tokens are fed as context rather than model-generated predictions, stabilising gradient flow.
+  - **[[Masked Self-Attention]]** — in [[Transformer]] decoders, a causal mask prevents each position from attending to future positions, enforcing the autoregressive constraint while preserving full parallelism across the training batch.
+  - **[[Tokenisation]]** — raw text (or audio frames, image patches) is first mapped to a discrete vocabulary; the autoregressive model operates over token indices. Choice of [[Byte-Pair Encoding]] or similar tokeniser directly affects model capacity requirements.
+  - **[[Softmax]] output head** — the model produces a probability distribution over vocabulary entries at each step; sampling strategies (greedy, top-k, nucleus / top-p) determine which token is selected.
+  - **[[Cross-Entropy Loss]]** — the standard training objective; equivalent to minimising the KL divergence between the empirical data distribution and the model distribution.
+  - **[[Key-Value Cache]]** — at inference time, previously computed key and value projections are cached so each new token incurs only O(n) rather than O(n²) computation.
+
+- ### Architectures
+  - **[[Transformer]] (decoder-only)** — dominant architecture for text (GPT series, LLaMA, Mistral, Falcon). Uses [[Masked Self-Attention]] and [[Feed-Forward Network]] layers. Pre-trained with next-token prediction then fine-tuned with [[Reinforcement Learning from Human Feedback]].
+  - **[[Recurrent Neural Network]] (RNN/LSTM)** — historical precursor; processes sequences step-by-step with a hidden state. Superseded by Transformers for most tasks but still used in resource-constrained or streaming settings.
+  - **[[WaveNet]]** — convolutional autoregressive model for raw audio waveforms; generates audio sample-by-sample at high fidelity using dilated causal convolutions.
+  - **PixelCNN / PixelRNN** — autoregressive models for images, generating pixels in raster-scan order; foundational work demonstrating the viability of autoregressive generation for 2D data.
+  - **[[Flow Matching]] with autoregressive priors** — hybrid approaches combining continuous normalising flows with discrete autoregressive token priors.
+
+- ### Applications and Use Cases
+  - **[[Large Language Model]] pre-training** — GPT-style models are trained autoregressively on internet-scale text corpora; the resulting representations transfer to downstream tasks via [[Prompt Engineering]] or fine-tuning.
+  - **[[Text Generation]]** — story generation, code completion (GitHub Copilot, Claude Code), summarisation, translation; all use autoregressive decoding at inference.
+  - **[[Neural Audio Synthesis]]** — WaveNet and its successors (WaveGlow, SoundStream) use autoregressive or semi-autoregressive decoding to produce high-fidelity speech and music.
+  - **[[Image Generation]]** — PixelCNN-based models, and more recently autoregressive transformers operating on discrete image tokens (DALL-E v1, VQ-VAE + transformer), produce images by predicting tokens in sequence.
+  - **[[Protein Structure Prediction]]** — autoregressive models generate amino-acid sequences with specific structural properties; used in directed protein evolution.
+  - **[[Code Generation]]** — decoder-only transformer models (Codex, StarCoder, CodeLlama) autoregressively generate syntactically valid code by conditioning on a prompt.
+  - **[[Time Series Forecasting]]** — classical ARIMA models are linear autoregressive; deep autoregressive networks (DeepAR, Temporal Fusion Transformer) extend this to non-linear high-dimensional forecasting.
+  - **[[Multimodal AI]]** — autoregressive transformers that jointly model text and image tokens (GPT-4V, Gemini, LLaVA) unify vision and language understanding under a single next-token prediction objective.
+
+- ### Decoding Strategies
+  - **Greedy decoding** — select the highest-probability token at each step; fast but prone to repetition and suboptimal global sequences.
+  - **[[Beam Search]]** — maintain k candidate sequences simultaneously, pruning at each step; improves quality for structured outputs such as translation.
+  - **Top-k sampling** — sample from the k most probable tokens; controls diversity vs coherence.
+  - **Nucleus (top-p) sampling** — sample from the smallest set of tokens whose cumulative probability exceeds p; adaptive equivalent of top-k.
+  - **Temperature scaling** — divide logits by temperature T before softmax; T<1 sharpens the distribution, T>1 flattens it.
+  - **[[Speculative Decoding]]** — a small draft model proposes multiple tokens, which a larger verifier model accepts or rejects in parallel; achieves near-lossless speedup of 2–4× on long-context generation.
 
 - ### Relationships
-  - is-subclass-of:: [[Generative Model]]
-  - bridges-to:: [[Transformer]]
+  - subClassOf:: [[Generative Model]]
   - requires:: [[Probabilistic Model]]
+  - requires:: [[Chain Rule of Probability]]
+  - requires:: [[Tokenisation]]
   - enables:: [[Language Model]]
+  - enables:: [[Text Generation]]
+  - enables:: [[Neural Audio Synthesis]]
+  - enables:: [[Image Generation]]
+  - uses:: [[Transformer]]
+  - uses:: [[Masked Self-Attention]]
+  - uses:: [[Cross-Entropy Loss]]
+  - uses:: [[Softmax]]
+  - implements:: [[Maximum Likelihood Estimation]]
+  - implements:: [[Teacher Forcing]]
+  - contrastsWith:: [[Diffusion Model]]
+  - contrastsWith:: [[Variational Autoencoder]]
+  - contrastsWith:: [[Masked Language Model]]
+  - contrastsWith:: [[Flow-Based Model]]
+  - relatedTo:: [[Recurrent Neural Network]]
+  - relatedTo:: [[Next-Token Prediction]]
+  - relatedTo:: [[Beam Search]]
+  - relatedTo:: [[Speculative Decoding]]
+  - bridges-to:: [[Reinforcement Learning from Human Feedback]]
+  - bridges-to:: [[Multimodal AI]]
 
-- ### Content
-  - Autoregressive models decompose the probability of a sequence using the chain rule, modelling each token given its predecessors. This formulation underlies most large language models, which generate text one token at a time, as well as autoregressive models for audio and images.
-  - Generation is inherently sequential, which limits parallelism at inference time, but the approach gives exact likelihoods and a simple training objective. Transformers are the dominant architecture for autoregressive sequence modelling because they handle long-range dependencies efficiently during training.
+- ### Standards and Context
+  - No formal standards body governs autoregressive model design; practice is established through reproducible research published at NeurIPS, ICML, ICLR, and ACL.
+  - Key foundational papers include the original [[Transformer]] paper (Vaswani et al., 2017) and the GPT series from OpenAI, which established the paradigm of large-scale autoregressive pre-training followed by task-specific adaptation.
+  - [[Responsible AI]] considerations are significant: autoregressive models can reproduce training-data memorisation, generate harmful content, and exhibit [[Hallucination]] — motivating alignment work via [[Reinforcement Learning from Human Feedback]] and [[Constitutional AI]].
+  - Evaluation benchmarks include perplexity on held-out text (intrinsic), and downstream benchmarks (MMLU, HellaSwag, HumanEval for code, MT-Bench for instruction-following).
+  - Efficiency research addresses the sequential inference bottleneck: [[Flash Attention]], [[Key-Value Cache]], grouped-query attention, and [[Speculative Decoding]] are now standard components in production deployments.
 
 - ### Provenance
-  - sources::
-  - migration-date:: 2026-05-29T00:00:00Z
+  - sources:: Vaswani et al. (2017) "Attention Is All You Need"; Brown et al. (2020) "Language Models are Few-Shot Learners"; van den Oord et al. (2016) "WaveNet"; van den Oord et al. (2016) "Pixel Recurrent Neural Networks"
+  - updated:: 2026-06-13

@@ -96,7 +96,7 @@ alias:: GenerativeAIDomain
   "@type": "Class",
   "label": "Generative AI Domain",
   "definition": "The Generative AI Domain covers the application of generative models to produce text, images, audio, code and other content for end users. Its scope includes prompting, fine-tuning, retrieval augmentation and the integration of generative models into products and workflows. It is an applied sub-area of the Artificial Intelligence Domain that builds on the Generative Modelling Domain. The boundary excludes the formal study of the underlying distributions, which belongs to generative modelling.",
-  "domain": "generative-ai",
+  "domain": "ai",
   "maturity": "emerging",
   "qualityScore": 0.7,
   "subClassOf": [

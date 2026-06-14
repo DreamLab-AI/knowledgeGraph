@@ -51,7 +51,7 @@ public:: true
   "@type": "Class",
   "label": "Tor",
   "definition": "A free overlay network and software that provides anonymous communication by routing traffic through a series of volunteer-operated relays using layered encryption.",
-  "domain": "cryptographic",
+  "domain": "security",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

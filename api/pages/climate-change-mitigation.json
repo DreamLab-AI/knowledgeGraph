@@ -4,7 +4,7 @@
   "slug": "climate-change-mitigation",
   "public": true,
   "classIri": "urn:ngm:class:climate-change-mitigation",
-  "domain": "sustainability",
+  "domain": "governance",
   "definition": "Efforts to reduce or prevent the emission of greenhouse gases and to enhance their removal from the atmosphere, with the aim of limiting the extent of climate change. It includes shifting to low-carbon energy and improving efficiency.",
   "subClassOf": [
     {

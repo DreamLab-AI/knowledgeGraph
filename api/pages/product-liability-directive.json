@@ -4,7 +4,7 @@
   "slug": "product-liability-directive",
   "public": true,
   "classIri": "urn:ngm:class:product-liability-directive",
-  "domain": "law",
+  "domain": "governance",
   "definition": "The Product Liability Directive is European Union legislation establishing rules on liability for damage caused by defective products. A revised directive adopted in 2024 extends its scope to software and AI systems.",
   "subClassOf": [
     {

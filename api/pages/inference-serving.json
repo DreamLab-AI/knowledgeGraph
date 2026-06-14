@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:inference-serving",
   "domain": "machine-learning",
-  "definition": "Inference serving is the operation of running trained models in production to answer prediction requests at scale. It combines an inference engine with infrastructure for batching, scaling and monitoring.",
+  "definition": "Inference serving is the end-to-end runtime discipline of deploying trained machine learning models as production services that respond to prediction requests at scale, with controlled latency and high throughput. It encompasses the inference engine, request routing, dynamic batching, accelerator scheduling, autoscaling, and observability infrastructure needed to meet service-level objectives. Unlike model training, inference serving must optimise for request-level latency, cost-per-query, and concurrent user load simultaneously. Modern inference serving platforms add specialised techniques such as continuous batching, quantisation, and KV-cache management to sustain high GPU utilisation across large language models and other deep neural network workloads.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:model-serving",
@@ -13,30 +13,142 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.75,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:dynamic-batching",
+        "label": "Dynamic Batching"
+      },
+      {
+        "id": "urn:ngm:class:autoscaling",
+        "label": "Autoscaling"
+      },
+      {
+        "id": "urn:ngm:class:model-runtime",
+        "label": "Model Runtime"
+      },
+      {
+        "id": "urn:ngm:class:request-queue",
+        "label": "Request Queue"
+      },
+      {
+        "id": "urn:ngm:class:observability",
+        "label": "Observability"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:ai-model-inference-engine",
         "label": "AI Model Inference Engine"
       },
       {
-        "id": "urn:ngm:class:model-serving",
-        "label": "Model Serving"
+        "id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      },
+      {
+        "id": "urn:ngm:class:container-orchestration",
+        "label": "Container Orchestration"
+      },
+      {
+        "id": "urn:ngm:class:load-balancer",
+        "label": "Load Balancer"
       }
     ],
-    "enables": [],
-    "dependsOn": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:real-time-inference",
+        "label": "Real-Time Inference"
+      },
+      {
+        "id": "urn:ngm:class:batch-inference",
+        "label": "Batch Inference"
+      },
+      {
+        "id": "urn:ngm:class:llm-deployment",
+        "label": "LLM Deployment"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:model-registry",
+        "label": "Model Registry"
+      },
+      {
+        "id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      },
+      {
+        "id": "urn:ngm:class:offline-batch-processing",
+        "label": "Offline Batch Processing"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:model-quantisation",
+        "label": "Model Quantisation"
+      },
+      {
+        "id": "urn:ngm:class:tensor-parallelism",
+        "label": "Tensor Parallelism"
+      },
+      {
+        "id": "urn:ngm:class:kv-cache",
+        "label": "KV Cache"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      },
+      {
+        "id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:latency",
+        "label": "Latency"
+      },
+      {
+        "id": "urn:ngm:class:throughput",
+        "label": "Throughput"
+      },
+      {
+        "id": "urn:ngm:class:service-level-objective",
+        "label": "Service Level Objective"
+      },
+      {
+        "id": "urn:ngm:class:triton-inference-server",
+        "label": "Triton Inference Server"
+      },
+      {
+        "id": "urn:ngm:class:ray-serve",
+        "label": "Ray Serve"
+      }
+    ]
   },
   "wikilinks": [
     {

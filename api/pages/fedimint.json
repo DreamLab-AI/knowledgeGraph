@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:fedimint",
   "domain": "blockchain",
-  "definition": "Fedimint is an open-source protocol for federated, community-custodied Bitcoin Chaumian e-cash mints, in which a threshold of guardians collectively hold Bitcoin reserves and issue blinded bearer tokens redeemable for satoshis, providing privacy-preserving custody without requiring any single trusted party. The federation model distributes trust across a small, known set of guardians while the blind-signature scheme prevents guardians from linking redemptions to issuances.",
+  "definition": "Fedimint is an open-source federated protocol for community-custodied Bitcoin Chaumian e-cash mints, in which a threshold of guardians collectively hold Bitcoin reserves and issue blinded bearer tokens redeemable for satoshis, providing privacy-preserving custody without requiring any single trusted party. The federation model distributes trust across a small, known set of guardians using Byzantine-fault-tolerant consensus, while the blind-signature scheme cryptographically prevents guardians from linking redemptions to issuances. Fedimint acts as a Bitcoin Layer 2 through embedded Lightning Network gateway integration, enabling community mints to interoperate with the broader Bitcoin payment ecosystem. It targets the gap between self-custody complexity and centralised custodial risk by enabling accountable, trust-minimised community banking at scale.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ecash",
@@ -13,30 +13,90 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.85,
+  "qualityScore": 0.72,
   "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      },
+      {
+        "id": "urn:ngm:class:multisignature-cryptography",
+        "label": "Multisignature Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:federated-consensus",
+        "label": "Federated Consensus"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:privacy-preserving-payments",
+        "label": "Privacy-Preserving Payments"
+      },
+      {
+        "id": "urn:ngm:class:community-custody",
+        "label": "Community Custody"
+      },
+      {
+        "id": "urn:ngm:class:financial-inclusion",
+        "label": "Financial Inclusion"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:self-custody",
+        "label": "Self-Custody"
+      },
+      {
+        "id": "urn:ngm:class:centralised-exchange",
+        "label": "Centralised Exchange"
+      },
+      {
+        "id": "urn:ngm:class:ark-protocol",
+        "label": "Ark Protocol"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "id": "urn:ngm:class:distributed-trust",
+        "label": "Distributed Trust"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:chaumian-ecash",
         "label": "Chaumian Ecash"
       },
       {
-        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-lightning-network",
-        "label": "Bitcoin Lightning Network"
+        "id": "urn:ngm:class:blind-signatures",
+        "label": "Blind Signatures"
+      },
+      {
+        "id": "urn:ngm:class:threshold-cryptography",
+        "label": "Threshold Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
       }
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-custody",
+        "id": "urn:ngm:class:bitcoin-custody",
         "label": "Bitcoin Custody"
+      },
+      {
+        "id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
       }
     ],
     "standardizedBy": [],
@@ -47,8 +107,16 @@
         "label": "Federated System"
       },
       {
-        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-layer-2",
+        "id": "urn:ngm:class:bitcoin-layer-2",
         "label": "Bitcoin Layer 2"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:digital-cash",
+        "label": "Digital Cash"
       }
     ]
   },

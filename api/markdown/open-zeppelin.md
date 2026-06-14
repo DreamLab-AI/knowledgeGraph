@@ -1,20 +1,102 @@
 - ### Definition
-  - OpenZeppelin is a company that provides open-source smart contract libraries and security tooling for Ethereum and compatible blockchains.
+  - OpenZeppelin is an open-source [[Smart Contract Framework]] and security company that provides audited, composable [[Smart Contract]] libraries for [[Ethereum]] and EVM-compatible blockchains. Its flagship product — the OpenZeppelin Contracts library — implements [[Token Standard]] interfaces ([[ERC-20]], [[ERC-721]], [[ERC-1155]]), [[Access Control]] patterns, [[Proxy Pattern]] upgrade mechanisms, and on-chain [[Governance]] primitives, forming a reusable security layer that underpins a significant portion of deployed [[Decentralised Finance]] and [[Non-Fungible Token]] infrastructure. The company also provides professional [[Security Audit]] services and the Defender platform for operational monitoring, relayer management, and automated response to on-chain events.
+
+- ### Overview
+  - OpenZeppelin was founded in 2015 (originally as Zeppelin Solutions) and released its open-source contracts library to address the acute problem of insecure, hand-rolled [[Smart Contract]] code on [[Ethereum]].
+  - The core insight is that common on-chain patterns — token minting, [[Role-Based Access Control]], [[Upgradeable Contract]] proxies, vote delegation — are difficult to implement correctly and benefit enormously from peer review and formal auditing at the library layer rather than at each individual project.
+  - The library is written in [[Solidity]] and targets the [[Ethereum Virtual Machine]], making it compatible with Ethereum mainnet, [[Polygon]], [[Arbitrum]], [[Optimism]], [[BNB Chain]], and any other EVM-compatible network.
+  - OpenZeppelin Contracts are imported via npm (`@openzeppelin/contracts`) and inherited in user contracts using Solidity's inheritance model, enabling composition without copy-pasting.
+  - The project uses semantic versioning with locked pragma ranges, ensuring library updates do not silently break downstream contracts.
+  - OpenZeppelin also maintains an **Upgrades** plugin ecosystem for [[Hardhat]] and [[Foundry]], automating storage-layout compatibility checks during proxy upgrades.
+
+- ### Key Components
+  - #### Token Contracts
+    - **ERC-20**: the canonical [[ERC-20]] fungible token base, including extensions for capped supply, permit (EIP-2612 gasless approvals), snapshots, and votes.
+    - **ERC-721**: the [[ERC-721]] non-fungible token base with enumerable and URI-storage extensions, plus ERC-721Votes for on-chain delegation.
+    - **ERC-1155**: [[ERC-1155]] multi-token standard for batch-efficient mixed fungible/non-fungible collections.
+    - **ERC-4626**: tokenised vault standard enabling yield-bearing wrappers compatible with [[Decentralised Finance]] money markets.
+  - #### Access Control
+    - **Ownable**: single-owner pattern, the simplest [[Access Control]] primitive — transfers and renounces ownership.
+    - **AccessControl**: hierarchical [[Role-Based Access Control]] with `DEFAULT_ADMIN_ROLE`, custom roles, and `grantRole`/`revokeRole` functions.
+    - **AccessControlEnumerable**: extends AccessControl with on-chain role member enumeration.
+    - **AccessManager** (v5+): unified authority contract managing function-level permissions across multiple target contracts — enables protocol-wide governance of access without per-contract role configuration.
+  - #### Proxy and Upgrade Patterns
+    - **TransparentUpgradeableProxy**: separates admin and implementation, preventing function-selector clashes between proxy and logic contracts; the classic [[Proxy Pattern]] for upgradeable systems.
+    - **UUPS (ERC-1967)**: Universal Upgradeable Proxy Standard — the upgrade logic lives in the implementation contract itself, reducing deployment gas; now the recommended default.
+    - **Beacon Proxy**: a single beacon contract holds the implementation address; all proxy instances point at the beacon, enabling mass upgrades in one transaction.
+    - Storage layout checking is enforced by the OpenZeppelin Upgrades Hardhat/Foundry plugin to prevent [[Storage Collision]] bugs.
+  - #### Security Utilities
+    - **ReentrancyGuard**: mutex pattern preventing [[Reentrancy Attack]] vulnerabilities — the most common high-severity smart contract bug class.
+    - **Pausable**: emergency pause mechanism allowing a privileged role to halt all state-mutating functions.
+    - **SafeERC20**: wraps ERC-20 calls with revert-on-failure, guarding against non-standard token implementations that return `false` instead of reverting.
+    - **Address** and **SafeCast**: utilities for safe low-level calls and integer downcasting without silent overflow.
+  - #### Governance
+    - **Governor**: modular on-chain [[Governance]] framework implementing proposal lifecycle (propose, vote, queue, execute), compatible with [[Compound Finance]] GovernorBravo interface.
+    - **TimelockController**: enforces a delay between a governance decision and its execution, giving stakeholders time to exit before contentious upgrades take effect — a key [[Decentralised Autonomous Organisation]] safety mechanism.
+    - **Votes** and **ERC20Votes**: checkpoint-based vote delegation and historical balance snapshots, preventing flash-loan attacks on governance snapshots.
+  - #### Cryptography and Utilities
+    - **ECDSA**: on-chain [[Elliptic Curve Digital Signature Algorithm]] recovery, used in permit flows and meta-transactions.
+    - **MerkleProof**: efficient on-chain Merkle tree verification for allowlists and airdrop claims — common in [[NFT Drops]] and token distribution.
+    - **EIP712**: typed structured data hashing for signature-based off-chain approvals.
+    - **Strings**, **Arrays**, **EnumerableSet**, **EnumerableMap**: general-purpose utility libraries for gas-efficient on-chain data structures.
+  - #### OpenZeppelin Defender
+    - A SaaS operations platform for smart contract teams, providing: Relayer (meta-transaction submission), Autotask (serverless on-chain automation), Sentinel (on-chain event monitoring and alerting), Advisor (security best-practice guidance), and Admin (multi-sig upgrade workflows).
+    - Defender integrates with [[Multisig Wallet]] providers such as [[Safe (formerly Gnosis Safe)]] to gate privileged operations behind multi-party approval.
+
+- ### Applications and Use Cases
+  - **Token Launches**: virtually every ERC-20 token and ERC-721 NFT collection that launched on Ethereum post-2018 inherits from OpenZeppelin base contracts, reducing bespoke audit scope.
+  - **DeFi Protocols**: [[Compound Finance]], [[Aave]], [[Uniswap]] governance, and hundreds of lending, AMM, and yield protocols use OpenZeppelin for token and governance contracts.
+  - **NFT Platforms**: platforms such as [[OpenSea]], Foundation, and Zora issue collections built on OZ ERC-721 and ERC-1155 bases.
+  - **DAO Governance**: [[Compound Finance]] Governor Bravo, Nouns DAO, and ENS DAO use the OpenZeppelin Governor module as their on-chain voting engine.
+  - **Upgradeable Systems**: protocols requiring post-launch bug fixes or feature additions use OZ Transparent or UUPS proxies, with the Upgrades plugin ensuring safe storage migrations.
+  - **Enterprise Blockchain**: permissioned [[Enterprise Blockchain]] deployments on [[Hyperledger Besu]] or [[Quorum]] use OZ contracts for access control and token issuance where EVM compatibility is desired.
+  - **Security Audits**: OpenZeppelin's audit division has reviewed code for most major DeFi protocols; audit reports are publicly disclosed and serve as industry security benchmarks.
+  - **Education and Onboarding**: OpenZeppelin Contracts Wizard (web-based UI) generates custom Solidity contracts interactively, serving as an onboarding tool for new [[Solidity]] developers.
+
+- ### Relationships
+  - hasPart:: [[ERC-20]]
+  - hasPart:: [[ERC-721]]
+  - hasPart:: [[ERC-1155]]
+  - hasPart:: [[Access Control]]
+  - hasPart:: [[Proxy Pattern]]
+  - hasPart:: [[Governor Contract]]
+  - requires:: [[Solidity]]
+  - requires:: [[Ethereum Virtual Machine]]
+  - enables:: [[Decentralised Finance]]
+  - enables:: [[Non-Fungible Token]]
+  - enables:: [[Decentralised Autonomous Organisation]]
+  - enables:: [[Token Contract]]
+  - implements:: [[Token Standard]]
+  - implements:: [[Ethereum Improvement Proposal]]
+  - uses:: [[Hardhat]]
+  - uses:: [[Foundry]]
+  - supports:: [[Upgradeable Contract]]
+  - supports:: [[Role-Based Access Control]]
+  - supports:: [[Multisig Wallet]]
+  - dependsOn:: [[Ethereum]]
+  - dependsOn:: [[Smart Contract]]
+  - contrastsWith:: [[Solmate]]
+  - contrastsWith:: [[DappTools]]
+  - relatedTo:: [[Security Audit]]
+  - relatedTo:: [[Reentrancy Attack]]
+  - relatedTo:: [[Formal Verification]]
+  - bridges-to:: [[Software Supply Chain Security]]
+  - bridges-to:: [[Digital Asset Governance]]
+
+- ### Standards and Context
+  - OpenZeppelin tracks and implements [[Ethereum Improvement Proposal]] (EIP) standards as they progress through the ERC process, acting as a de facto reference implementation for accepted token and utility standards.
+  - The contracts are licensed under the MIT licence, enabling unrestricted commercial use.
+  - The library undergoes periodic independent [[Security Audit]] cycles; audit reports are published openly and referenced by downstream projects as part of their own security disclosure.
+  - OpenZeppelin participates in the [[Ethereum Foundation]] ecosystem and maintains coordination with core protocol developers during hard forks that affect the EVM execution environment.
+  - The Defender platform is SOC 2-oriented and targets institutional DeFi teams requiring operational controls that align with emerging [[Digital Asset Regulation]] requirements.
+  - The OpenZeppelin Contracts Wizard and documentation site serve as a community reference for [[Solidity]] best practices, influencing how the broader EVM developer community approaches [[Smart Contract]] security.
+  - Version 5 of the library (released 2023–2024) introduced major refactors: AccessManager, ERC-2771Context for meta-transactions, updated ERC-4626 vault primitives, and removal of legacy ABIEncoderV1 patterns.
 
 - ### Semantic Classification
   - owl-class:: blockchain:OpenZeppelin
-  - owl-role:: Individual
-
-- ### Relationships
-  - is-subclass-of:: [[Smart Contract]]
-  - bridges-to:: [[Token Standard]]
-  - requires:: [[Solidity]]
-  - enables:: [[Smart Contract]]
-
-- ### Content
-  - OpenZeppelin maintains widely used open-source smart contract libraries that implement common standards such as token interfaces and access control.
-  - The company also offers security auditing services and tools for developing and operating smart contract systems.
+  - owl-role:: Class
+  - subClassOf:: [[Smart Contract Framework]]
 
 - ### Provenance
-  - sources::
-  - migration-date:: 2026-05-29T00:00:00Z
+  - sources:: OpenZeppelin official documentation (docs.openzeppelin.com); GitHub repository (OpenZeppelin/openzeppelin-contracts); public audit reports
+  - updated:: 2026-06-13

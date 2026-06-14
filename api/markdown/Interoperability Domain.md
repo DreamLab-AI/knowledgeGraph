@@ -99,7 +99,7 @@ public:: true
   "@type": "Class",
   "label": "Interoperability Domain",
   "definition": "The Interoperability Domain classifies concepts that allow distinct systems, ledgers, or networks to exchange data and value and to act on it consistently. It covers bridges, messaging protocols, common data formats, and the standards that define shared semantics. As a top-level subject classification, it scopes the connective mechanisms between systems rather than the systems themselves.",
-  "domain": "interoperability",
+  "domain": "infrastructure",
   "maturity": "emerging",
   "qualityScore": 0.7,
   "subClassOf": [

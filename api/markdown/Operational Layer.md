@@ -63,7 +63,7 @@ public:: true
   "@type": "Class",
   "label": "Operational Layer",
   "definition": "The Operational Layer is the cross-cutting stratum concerned with running, maintaining, and recovering a system in production. It sits above the runtime and tooling strata it relies on and supports the institutional commitments made above. It contains deployment pipelines, monitoring, incident response, and capacity management.",
-  "domain": "operational",
+  "domain": "infrastructure",
   "maturity": "emerging",
   "qualityScore": 0.7,
   "subClassOf": [

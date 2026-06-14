@@ -4,7 +4,7 @@
   "slug": "groth-16",
   "public": true,
   "classIri": "urn:ngm:class:groth-16",
-  "domain": "cryptographic",
+  "domain": "security",
   "definition": "A pairing-based zk-SNARK proving system that produces constant-size proofs verifiable with a few elliptic curve pairing operations, at the cost of a per-circuit trusted setup.",
   "subClassOf": [
     {

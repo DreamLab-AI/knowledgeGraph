@@ -55,7 +55,7 @@ public:: true
   "@type": "Class",
   "label": "Linked Data Platform",
   "definition": "A W3C specification defining rules and HTTP conventions for reading and writing linked data resources, enabling RESTful management of RDF data on the web.",
-  "domain": "general",
+  "domain": "standards",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

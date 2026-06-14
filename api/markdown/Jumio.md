@@ -47,7 +47,7 @@ public:: true
   "@type": "Class",
   "label": "Jumio",
   "definition": "An identity verification company that provides automated document and biometric checks for online onboarding and fraud prevention. Its services support know-your-customer and anti-money-laundering compliance.",
-  "domain": "identity",
+  "domain": "security",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

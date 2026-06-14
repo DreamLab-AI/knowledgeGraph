@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:blockchain-technology",
   "domain": "blockchain",
-  "definition": "Blockchain Technology is a class of distributed ledger systems in which transactions are grouped into cryptographically linked blocks, forming an append-only chain maintained by a peer-to-peer network through a consensus mechanism. The design ensures that altering any historical record would require re-doing proof-of-work or obtaining supermajority stake, making fraudulent revision computationally or economically prohibitive.",
+  "definition": "Blockchain Technology is a class of distributed ledger systems in which validated transactions are grouped into blocks that are cryptographically linked in an append-only sequence, maintained by a peer-to-peer network through a consensus mechanism. Each block header includes the cryptographic hash of its predecessor, a timestamp, and a Merkle root of its transaction set, ensuring that altering any historical record requires re-computing all subsequent proofs, which is computationally or economically prohibitive. The design eliminates the need for a trusted central authority by replacing it with algorithmic agreement, enabling trustless settlement, programmable value transfer via smart contracts, and tamper-evident audit trails across diverse application domains.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:distributed-ledger-technology",
@@ -13,11 +13,37 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.76,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:genesis-block",
+        "label": "Genesis Block"
+      },
+      {
+        "id": "urn:ngm:class:transaction-mempool",
+        "label": "Transaction Mempool"
+      },
+      {
+        "id": "urn:ngm:class:block-header",
+        "label": "Block Header"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:immutability",
+        "label": "Immutability"
+      },
+      {
+        "id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:network-node",
+        "label": "Network Node"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:smart-contract",
@@ -30,12 +56,46 @@
       {
         "id": "urn:ngm:class:blockchain-provenance",
         "label": "Blockchain Provenance"
+      },
+      {
+        "id": "urn:ngm:class:non-fungible-token",
+        "label": "Non-Fungible Token"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "id": "urn:ngm:class:tokenisation",
+        "label": "Tokenisation"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:centralised-database",
+        "label": "Centralised Database"
+      },
+      {
+        "id": "urn:ngm:class:traditional-financial-system",
+        "label": "Traditional Financial System"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      },
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:cryptographic-hash",
@@ -48,6 +108,18 @@
       {
         "id": "urn:ngm:class:merkle-tree",
         "label": "Merkle Tree"
+      },
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public Key Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
       }
     ],
     "supports": [],
@@ -55,12 +127,24 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:immutability",
-        "label": "Immutability"
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
       },
       {
-        "id": "urn:ngm:class:digital-signature",
-        "label": "Digital Signature"
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:cross-chain-interoperability",
+        "label": "Cross-Chain Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:sidechain",
+        "label": "Sidechain"
+      },
+      {
+        "id": "urn:ngm:class:layer-2-scaling",
+        "label": "Layer-2 Scaling"
       }
     ]
   },

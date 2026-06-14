@@ -4,51 +4,147 @@
   "slug": "data-processing",
   "public": true,
   "classIri": "urn:ngm:class:data-processing",
-  "domain": "infrastructure",
-  "definition": "Data Processing encompasses the collection, transformation, validation, and storage of raw data into structured, queryable forms suitable for downstream analysis and machine learning. In spatial computing and metaverse contexts it spans real-time sensor fusion, streaming ETL pipelines, and batch workloads that convert high-throughput telemetry\u2014such as motion capture, point clouds, and user interaction events\u2014into persistent knowledge stores. Effective data processing architectures balance latency, throughput, and fault-tolerance to underpin interactive 3D applications and AI inference pipelines.",
+  "domain": "data",
+  "definition": "Data Processing is the systematic application of operations \u2014 collection, validation, transformation, aggregation, enrichment, and storage \u2014 that convert raw, unstructured, or heterogeneous input data into organised, queryable, and semantically coherent representations suitable for analysis, machine learning, or real-time decision-making. It encompasses both batch and streaming paradigms, spanning ETL/ELT pipelines, in-memory computation frameworks, and edge preprocessing workflows that must balance throughput, latency, fault-tolerance, and data quality. Architecturally, data processing sits between raw data ingestion and higher-order analytical or AI workloads, acting as the foundational substrate for knowledge extraction, model training, and operational intelligence. Mature implementations employ declarative query languages, distributed execution engines, schema registries, and lineage tracking to ensure reproducibility and governance across the full data lifecycle.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:infra-data-management",
+      "id": "urn:ngm:class:data-management",
       "label": "Data Management"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "emerging",
+  "qualityScore": 0.72,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [
-      {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning"
-      },
-      {
-        "id": "urn:ngm:class:computer-vision",
-        "label": "Computer Vision"
-      }
-    ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [
+    "hasPart": [
       {
         "id": "urn:ngm:class:data-pipeline",
         "label": "Data Pipeline"
       },
       {
-        "id": "urn:ngm:class:edge-computing",
-        "label": "Edge Computing"
+        "id": "urn:ngm:class:etl",
+        "label": "ETL"
+      },
+      {
+        "id": "urn:ngm:class:stream-processing",
+        "label": "Stream Processing"
+      },
+      {
+        "id": "urn:ngm:class:batch-processing",
+        "label": "Batch Processing"
       }
     ],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-ingestion",
+        "label": "Data Ingestion"
+      },
+      {
+        "id": "urn:ngm:class:data-storage",
+        "label": "Data Storage"
+      },
+      {
+        "id": "urn:ngm:class:schema-management",
+        "label": "Schema Management"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:data-analytics",
+        "label": "Data Analytics"
+      },
+      {
+        "id": "urn:ngm:class:business-intelligence",
+        "label": "Business Intelligence"
+      }
+    ],
+    "dependsOn": [
       {
         "id": "urn:ngm:class:distributed-computing",
         "label": "Distributed Computing"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:raw-data",
+        "label": "Raw Data"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:apache-spark",
+        "label": "Apache Spark"
+      },
+      {
+        "id": "urn:ngm:class:apache-kafka",
+        "label": "Apache Kafka"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:sql",
+        "label": "SQL"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:real-time-analytics",
+        "label": "Real-Time Analytics"
+      },
+      {
+        "id": "urn:ngm:class:data-lineage",
+        "label": "Data Lineage"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:sql-standard",
+        "label": "SQL Standard"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:data-management",
+        "label": "Data Management"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:data-quality",
+        "label": "Data Quality"
+      },
+      {
+        "id": "urn:ngm:class:data-lake",
+        "label": "Data Lake"
+      },
+      {
+        "id": "urn:ngm:class:data-warehouse",
+        "label": "Data Warehouse"
       }
     ]
   },

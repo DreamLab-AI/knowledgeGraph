@@ -4,8 +4,8 @@
   "slug": "eu-hleg-ai",
   "public": true,
   "classIri": "urn:ngm:class:eu-hleg-ai",
-  "domain": "artificial-intelligence",
-  "definition": "The European Commission High-Level Expert Group on Artificial Intelligence, an advisory body convened in 2018 that produced the Ethics Guidelines for Trustworthy AI and related policy recommendations.",
+  "domain": "governance",
+  "definition": "The European Commission High-Level Expert Group on Artificial Intelligence (EU HLEG AI) is a multidisciplinary advisory body convened by the European Commission in 2018, comprising 52 experts from academia, industry, and civil society. It produced the foundational Ethics Guidelines for Trustworthy AI (April 2019), establishing seven key requirements \u2014 human agency and oversight, technical robustness and safety, privacy and data governance, transparency, diversity and fairness, societal and environmental wellbeing, and accountability \u2014 that shaped subsequent EU AI policy. The group also delivered a self-assessment tool (ALTAI) and sector-specific policy recommendations that directly informed the European AI Strategy and the EU AI Act legislative process.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-governance",
@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.74,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
@@ -21,23 +21,96 @@
       {
         "id": "urn:ngm:class:ai-ethics",
         "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:human-oversight",
+        "label": "Human Oversight"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:ai-regulation",
         "label": "AI Regulation"
+      },
+      {
+        "id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      },
+      {
+        "id": "urn:ngm:class:ai-policy",
+        "label": "AI Policy"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:european-ai-strategy",
+        "label": "European AI Strategy"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:oecd-ai-principles",
+        "label": "OECD AI Principles"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI Risk Management Framework"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:digital-ethics",
+        "label": "Digital Ethics"
+      },
+      {
+        "id": "urn:ngm:class:fundamental-rights",
+        "label": "Fundamental Rights"
+      }
+    ],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:human-centric-ai",
+        "label": "Human-Centric AI"
+      },
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "id": "urn:ngm:class:ai-transparency",
+        "label": "AI Transparency"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:european-commission",
+        "label": "European Commission"
+      },
+      {
+        "id": "urn:ngm:class:ai-accountability",
+        "label": "AI Accountability"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-fairness",
+        "label": "Algorithmic Fairness"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:privacy-by-design",
+        "label": "Privacy by Design"
+      },
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      }
+    ]
   },
   "wikilinks": [
     {

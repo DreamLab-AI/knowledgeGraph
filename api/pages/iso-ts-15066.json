@@ -5,54 +5,145 @@
   "public": true,
   "classIri": "urn:ngm:class:iso-ts-15066",
   "domain": "robotics",
-  "definition": "ISO/TS 15066:2016 is an ISO Technical Specification that supplements ISO 10218-1 and ISO 10218-2 by providing detailed guidance and biomechanical data for the safety of collaborative robot applications in which industrial robots and human workers share a common workspace without a physical separating guard. It defines four collaboration modes \u2014 safety-rated monitored stop, hand guiding, speed and separation monitoring, and power and force limiting \u2014 along with body-part-specific pain thresholds that govern permissible contact forces and pressures. The specification is a foundational reference for cobot risk assessment and CE marking under the EU Machinery Directive.",
+  "definition": "ISO/TS 15066:2016 is an ISO Technical Specification that supplements ISO 10218-1 and ISO 10218-2 by providing detailed guidance and biomechanical data for the safety of collaborative robot applications in which industrial robots and human workers share a common workspace without a physical separating guard. It defines four collaboration modes \u2014 safety-rated monitored stop, hand guiding, speed and separation monitoring, and power and force limiting \u2014 along with body-part-specific pain thresholds that govern permissible contact forces and pressures for 29 anatomical regions. The specification is a foundational reference for cobot risk assessment, CE marking under the EU Machinery Directive, and the basis for evolving ISO 10218-3 work within ISO TC 299.",
   "subClassOf": [
-    {
-      "id": "urn:ngm:class:robo-safety-and-standards",
-      "label": "Robotics Safety and Standards"
-    },
     {
       "id": "urn:ngm:class:robot-standard",
       "label": "Robot Standard"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.73,
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "id": "urn:ngm:class:biomechanical-data",
+        "label": "Biomechanical Data"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:human-robot-collaboration",
+        "label": "Human Robot Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:ce-marking",
+        "label": "CE Marking"
+      },
+      {
+        "id": "urn:ngm:class:cobot-deployment",
+        "label": "Cobot Deployment"
+      }
+    ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:power-and-force-limiting",
+        "label": "Power and Force Limiting"
+      },
+      {
+        "id": "urn:ngm:class:speed-and-separation-monitoring",
+        "label": "Speed and Separation Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:safety-rated-monitored-stop",
+        "label": "Safety-Rated Monitored Stop"
+      },
+      {
+        "id": "urn:ngm:class:hand-guiding",
+        "label": "Hand Guiding"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:iso-10218",
+        "label": "ISO 10218"
+      },
+      {
+        "id": "urn:ngm:class:iec-62061",
+        "label": "IEC 62061"
+      },
+      {
+        "id": "urn:ngm:class:iso-13849",
+        "label": "ISO 13849"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:force-control",
+        "label": "Force Control"
+      },
+      {
+        "id": "urn:ngm:class:proximity-sensing",
+        "label": "Proximity Sensing"
+      },
+      {
+        "id": "urn:ngm:class:torque-sensing",
+        "label": "Torque Sensing"
+      }
+    ],
     "supports": [
       {
         "id": "urn:ngm:class:human-robot-interaction",
         "label": "Human Robot Interaction"
       },
       {
-        "id": "urn:ngm:class:force-control",
-        "label": "Force Control"
+        "id": "urn:ngm:class:occupational-safety",
+        "label": "Occupational Safety"
+      },
+      {
+        "id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
       }
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:collaborative-systems-modality-robot",
+        "id": "urn:ngm:class:iso-tc-299",
+        "label": "ISO TC 299"
+      },
+      {
+        "id": "urn:ngm:class:collaborative-robot",
         "label": "Collaborative Robot"
       }
     ],
-    "partOf": [],
-    "relatedTo": [
+    "partOf": [
       {
         "id": "urn:ngm:class:iso-10218",
         "label": "ISO 10218"
-      },
+      }
+    ],
+    "relatedTo": [
       {
         "id": "urn:ngm:class:robot-safety",
         "label": "Robot Safety"
+      },
+      {
+        "id": "urn:ngm:class:eu-machinery-directive",
+        "label": "EU Machinery Directive"
+      },
+      {
+        "id": "urn:ngm:class:industrial-automation",
+        "label": "Industrial Automation"
+      },
+      {
+        "id": "urn:ngm:class:ergonomics",
+        "label": "Ergonomics"
       }
     ]
   },

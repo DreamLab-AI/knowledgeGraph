@@ -1,32 +1,127 @@
 - ### Definition
-  - Digital Marketing encompasses the strategies and technologies used to promote products and services through digital channels, including search engines, social media, email, and immersive platforms. In spatial computing and metaverse contexts, digital marketing extends to in-world advertising, NFT-based brand activations, virtual experiential campaigns, and personalised AR overlays that contextualise commercial messages within physical environments.
+  - Digital Marketing is the practice of promoting products, services, and brands through internet-connected, data-driven channels — encompassing [[Search Engine Optimisation]], [[Content Marketing]], [[Social Media Marketing]], [[Email Marketing]], [[Programmatic Advertising]], and emerging channels such as [[Augmented Reality]] and conversational interfaces. It is distinguished from traditional marketing by its measurability, real-time optimisation, and capacity for personalisation at scale, enabled by [[Data Analytics]], [[Machine Learning]], and [[Customer Data Platform]] technologies.
 
-- ### Semantic Classification
-  - owl-class:: spatial-computing:DigitalMarketing
-  - owl-role:: concept
+- ### Overview
+  - Digital Marketing emerged as an established discipline in the 1990s alongside the commercialisation of the internet, evolving from simple banner advertisements and email newsletters into a sophisticated ecosystem of channels, tools, and disciplines.
+  - Its central proposition is precision: messages can be targeted to specific audience segments based on demographics, behaviour, intent signals, and contextual factors, and outcomes can be measured end-to-end via [[Attribution Modelling]].
+  - Why it matters:
+    - Enables businesses of all sizes to reach global or hyper-local audiences at controlled cost.
+    - Provides closed-loop feedback — every impression, click, and conversion generates data that informs the next campaign iteration.
+    - Underpins the commercial model of the modern web, funding free-at-point-of-use services through advertising revenue.
+    - Increasingly intersects with [[Artificial Intelligence]] for predictive audience modelling, creative generation, and bid optimisation.
+  - The discipline is subject to significant regulatory pressure from [[Privacy Regulation]] (GDPR, CCPA, ePrivacy) as well as platform-level changes such as cookie deprecation, which are reshaping the data foundations upon which targeting depends.
+
+- ### Key Components
+  - **Search Engine Optimisation ([[Search Engine Optimisation]])**
+    - Optimising web content and technical structure to improve organic visibility in search engine results pages (SERPs).
+    - Encompasses on-page optimisation, link acquisition, technical crawlability, and content relevance.
+  - **Paid Search / Search Engine Marketing**
+    - Purchasing keyword-triggered advertisements in search engine results via auction-based platforms (Google Ads, Microsoft Advertising).
+    - Closely coupled to [[Attribution Modelling]] and [[Conversion Rate Optimisation]].
+  - **Content Marketing ([[Content Marketing]])**
+    - Creating and distributing valuable, relevant content — articles, video, podcasts, infographics — to attract and retain audiences.
+    - Relies on [[Data Analytics]] to identify topics with high audience demand and low competitive supply.
+  - **Social Media Marketing ([[Social Media Marketing]])**
+    - Building brand presence and audience relationships through organic posts and paid campaigns on social platforms.
+    - Increasingly incorporates creator/influencer partnerships and short-form video.
+  - **Email Marketing ([[Email Marketing]])**
+    - Direct communication to opted-in subscriber lists; one of the highest-ROI digital channels.
+    - Modern email marketing uses [[Personalisation]] and behavioural triggers managed through marketing automation platforms.
+  - **Programmatic Advertising ([[Programmatic Advertising]])**
+    - Automated, real-time auction-based buying of digital display, video, and audio ad inventory across publisher networks.
+    - Relies on demand-side platforms (DSPs), supply-side platforms (SSPs), and data management layers.
+    - Intersects with [[Data Infrastructure]] for audience data onboarding and with [[Machine Learning]] for bid prediction.
+  - **Customer Data Platform ([[Customer Data Platform]])**
+    - Unified database that ingests, resolves, and activates first-party customer data across marketing channels.
+    - Central to a privacy-first, cookieless strategy.
+  - **Recommendation Engine ([[Recommendation Engine]])**
+    - Algorithms that surface personalised product or content suggestions based on user behaviour and collaborative filtering.
+    - Core to [[E-Commerce]] and content-discovery experiences.
+  - **A/B Testing ([[A/B Testing]])**
+    - Controlled experiments comparing variants of creative, copy, or page design to identify the statistically superior option.
+    - Underpins [[Conversion Rate Optimisation]] and continuous improvement loops.
+
+- ### Mechanisms & Technology
+  - **Audience Segmentation ([[Audience Segmentation]])**
+    - Dividing a target audience into groups sharing common attributes or behaviours to enable tailored messaging.
+    - Segments may be rules-based or derived via [[Machine Learning]] clustering.
+  - **Attribution Modelling ([[Attribution Modelling]])**
+    - Methods for assigning credit for a conversion across the sequence of touchpoints a user encountered before converting.
+    - Ranges from last-click heuristics to data-driven multi-touch models and incrementality testing.
+  - **Personalisation ([[Personalisation]])**
+    - Dynamically adapting content, offers, and experiences to the inferred preferences or context of an individual user.
+    - Enabled by [[Customer Data Platform]] data, [[Recommendation Engine]] outputs, and real-time decisioning engines.
+  - **Marketing Automation**
+    - Software systems that trigger, sequence, and manage marketing communications across channels based on user actions or time-based rules.
+    - Reduces manual effort while increasing consistency and speed of response.
+  - **Conversion Rate Optimisation ([[Conversion Rate Optimisation]])**
+    - Systematic process of improving the proportion of website or landing page visitors who complete a desired action.
+    - Combines [[A/B Testing]], user research, UX analysis, and [[Data Analytics]].
+
+- ### Applications & Use Cases
+  - **E-Commerce ([[E-Commerce]])**
+    - Digital marketing is the primary customer acquisition and retention mechanism for online retail.
+    - Product listing ads, dynamic remarketing, and cart-abandonment email flows are foundational tactics.
+  - **B2B Lead Generation**
+    - Content marketing and paid search drive prospects into sales funnels; marketing automation nurtures leads toward conversion.
+    - Account-based marketing (ABM) uses precise targeting to focus resources on high-value accounts.
+  - **Brand Building**
+    - Social media, video advertising, and content distribution build awareness and affinity over time.
+    - [[Brand Identity]] consistency across channels is managed through design systems and digital asset management.
+  - **Loyalty Programmes ([[Loyalty Programs]])**
+    - Email and mobile push notifications deliver personalised rewards, offers, and updates to existing customers.
+    - [[Blockchain]]-enabled tokenised loyalty programmes allow interoperable point systems and verifiable ownership of rewards.
+  - **Local and Geo-targeted Marketing**
+    - Search and social platforms enable hyper-local targeting by geography, enabling proximity-based promotions.
+    - [[Augmented Reality]] activations anchor brand experiences to physical locations visible through mobile devices.
+  - **AI-Driven Campaign Optimisation**
+    - [[Machine Learning]] models predict click-through rates, conversion probabilities, and optimal bid prices in real time.
+    - [[Natural Language Processing]] powers conversational advertising (chatbots, voice search) and automated ad copy generation.
+  - **Privacy-First & Cookieless Marketing**
+    - As third-party cookies are deprecated, marketers are shifting to first-party data strategies via [[Customer Data Platform]] investments.
+    - Contextual targeting — matching ads to page content rather than user profiles — is regaining prominence.
 
 - ### Relationships
-  - uses [[Recommendation Engine]]
-  - uses [[Digital Content]]
-  - enables [[E-Commerce]]
-  - enables [[Loyalty Programs]]
-  - bridgesTo [[Blockchain]]
-  - bridgesTo [[Augmented Reality]]
+  - hasPart:: [[Search Engine Optimisation]]
+  - hasPart:: [[Content Marketing]]
+  - hasPart:: [[Email Marketing]]
+  - hasPart:: [[Programmatic Advertising]]
+  - hasPart:: [[Social Media Marketing]]
+  - uses:: [[Recommendation Engine]]
+  - uses:: [[Digital Content]]
+  - uses:: [[Customer Data Platform]]
+  - uses:: [[Data Analytics]]
+  - uses:: [[Machine Learning]]
+  - enables:: [[E-Commerce]]
+  - enables:: [[Loyalty Programs]]
+  - enables:: [[Personalisation]]
+  - enables:: [[Conversion Rate Optimisation]]
+  - requires:: [[Data Infrastructure]]
+  - requires:: [[Audience Segmentation]]
+  - requires:: [[Attribution Modelling]]
+  - relatedTo:: [[Brand Identity]]
+  - relatedTo:: [[User Experience]]
+  - relatedTo:: [[Privacy Regulation]]
+  - relatedTo:: [[A/B Testing]]
+  - bridges-to:: [[Blockchain]]
+  - bridges-to:: [[Augmented Reality]]
+  - bridges-to:: [[Artificial Intelligence]]
+  - bridges-to:: [[Natural Language Processing]]
 
-- ### Content
-
-  ## Overview
-
-  Digital Marketing in spatial and metaverse contexts combines traditional digital channels with immersive and decentralised mechanisms. Personalisation relies on recommendation engines and user-behaviour data to deliver contextually relevant content. Blockchain integration enables verifiable ownership of branded digital assets such as NFTs, unlocking new loyalty and reward models. Augmented reality overlays allow brands to deliver geospatially anchored advertising experiences visible through mobile or head-mounted devices. E-commerce is directly enabled as immersive environments allow customers to visualise products in situ before purchase. Loyalty programmes are increasingly tokenised, with on-chain point systems that allow cross-brand redemption and secondary-market trading.
-
-  #### Related Concepts
-  - [[Recommendation Engine]]
-  - [[Digital Content]]
-  - [[E-Commerce]]
-  - [[Loyalty Programs]]
-  - [[Blockchain]]
-  - [[Augmented Reality]]
+- ### Standards & Context
+  - **Privacy Regulation**
+    - [[Privacy Regulation]] frameworks including GDPR (EU, 2018), CCPA (California, 2020), and ePrivacy Directive govern data collection, consent, and cross-border data transfer in digital marketing contexts.
+    - Consent management platforms (CMPs) implement the technical mechanisms for user consent capture and storage.
+  - **Ad Tech Standards**
+    - Interactive Advertising Bureau (IAB) publishes the OpenRTB protocol for programmatic auction bidding and the Transparency and Consent Framework (TCF) for consent propagation across the ad-tech supply chain.
+    - VAST and VPAID standards govern video ad serving; IAB Tech Lab maintains most ad-tech specifications.
+  - **Measurement Standards**
+    - Media Rating Council (MRC) defines viewability standards (e.g., 50% of pixels in view for 1 second for display).
+    - Privacy Sandbox (Google) initiatives including Topics API and Protected Audience API aim to replace third-party cookies with privacy-preserving alternatives.
+  - **Data Interoperability**
+    - The emergence of data clean rooms (e.g., Google Ads Data Hub, Amazon Marketing Cloud) enables privacy-safe data collaboration between advertisers and platforms without raw data sharing.
 
 - ### Provenance
-  - sources::
-  - migration-date:: 2026-04-26T00:00:00Z
+  - sources:: IAB Tech Lab (iab.com/techlab), Interactive Advertising Bureau, Media Rating Council, Google Privacy Sandbox documentation, GDPR (Regulation (EU) 2016/679)
+  - updated:: 2026-06-13
+  - domain-remap-note:: Original domain was "spatial-computing" (fallback assignment); remapped to "data" as digital marketing is fundamentally a data-driven discipline; the spatial/AR dimensions are cross-domain links captured in bridgesTo relations.

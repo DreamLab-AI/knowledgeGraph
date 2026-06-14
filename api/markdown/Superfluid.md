@@ -47,7 +47,7 @@ public:: true
   "@type": "Class",
   "label": "Superfluid",
   "definition": "A phase of matter that flows without viscosity, exhibiting effects such as frictionless flow and the ability to climb container walls. It arises in certain quantum systems at very low temperatures.",
-  "domain": "physics",
+  "domain": "machine-learning",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

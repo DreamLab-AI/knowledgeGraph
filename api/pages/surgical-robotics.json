@@ -4,21 +4,67 @@
   "slug": "surgical-robotics",
   "public": true,
   "classIri": "urn:ngm:class:surgical-robotics",
-  "domain": "artificial-intelligence",
-  "definition": "Surgical robotics is the application of robotic systems, real-time computer vision, and AI-driven control to assist surgeons or perform procedures autonomously with enhanced precision, dexterity, tremor cancellation, and minimally invasive access. Systems range from teleoperated master-slave platforms\u2014where a surgeon's hand movements are scaled and filtered\u2014to semi-autonomous robots capable of suturing or tissue manipulation under human supervision. Key technical challenges include sub-millimetre motion tracking, intraoperative tissue deformation modelling, real-time haptic feedback, and regulatory compliance under medical device frameworks such as ISO 13485 and IEC 62304.",
+  "domain": "robotics",
+  "definition": "Surgical robotics is the application of robotic systems, real-time computer vision, and AI-driven control to assist surgeons or perform procedures with enhanced precision, dexterity, tremor cancellation, and minimally invasive access. Systems range from teleoperated master-slave platforms\u2014where a surgeon's hand movements are scaled, filtered, and transmitted to slave arms\u2014to semi-autonomous robots capable of tissue manipulation and suturing under human supervision. Key technical challenges include sub-millimetre motion tracking, intraoperative tissue deformation modelling, real-time haptic feedback, safe human-robot interaction, and regulatory compliance under medical device frameworks such as ISO 13485, IEC 62304, and EU MDR. The field sits at the intersection of mechatronics, control theory, computer vision, AI inference, and clinical medicine.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ai-application",
-      "label": "AI Application"
+      "id": "urn:ngm:class:medical-robotics",
+      "label": "Medical Robotics"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:robotic-arm",
+        "label": "Robotic Arm"
+      },
+      {
+        "id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      },
+      {
+        "id": "urn:ngm:class:endoscope",
+        "label": "Endoscope"
+      },
+      {
+        "id": "urn:ngm:class:master-slave-control",
+        "label": "Master-Slave Control"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:real-time-control",
+        "label": "Real-Time Control"
+      },
+      {
+        "id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:medical-imaging",
+        "label": "Medical Imaging"
+      }
+    ],
     "enables": [
+      {
+        "id": "urn:ngm:class:teleoperation",
+        "label": "Teleoperation"
+      },
+      {
+        "id": "urn:ngm:class:remote-surgery",
+        "label": "Remote Surgery"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-suturing",
+        "label": "Autonomous Suturing"
+      },
       {
         "id": "urn:ngm:class:medical-ai",
         "label": "Medical AI"
@@ -26,33 +72,93 @@
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:open-surgery",
+        "label": "Open Surgery"
+      },
+      {
+        "id": "urn:ngm:class:laparoscopic-surgery",
+        "label": "Laparoscopic Surgery"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:5g-networks",
+        "label": "5G Networks"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:computer-vision",
         "label": "Computer Vision"
       },
       {
-        "id": "urn:ngm:class:haptic-feedback",
-        "label": "Haptic Feedback"
+        "id": "urn:ngm:class:image-segmentation",
+        "label": "Image Segmentation"
       },
       {
-        "id": "urn:ngm:class:teleoperation",
-        "label": "Teleoperation"
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:simultaneous-localisation-and-mapping",
+        "label": "Simultaneous Localisation and Mapping"
+      },
+      {
+        "id": "urn:ngm:class:force-torque-sensing",
+        "label": "Force-Torque Sensing"
       }
     ],
     "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
+    "standardizedBy": [
       {
-        "id": "urn:ngm:class:medical-robot",
-        "label": "Medical Robot"
+        "id": "urn:ngm:class:iso-13485",
+        "label": "ISO 13485"
       },
+      {
+        "id": "urn:ngm:class:iec-62304",
+        "label": "IEC 62304"
+      },
+      {
+        "id": "urn:ngm:class:iec-60601",
+        "label": "IEC 60601"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:medical-robotics",
+        "label": "Medical Robotics"
+      },
+      {
+        "id": "urn:ngm:class:minimally-invasive-surgery",
+        "label": "Minimally Invasive Surgery"
+      }
+    ],
+    "relatedTo": [
       {
         "id": "urn:ngm:class:surgical-robot",
         "label": "Surgical Robot"
+      },
+      {
+        "id": "urn:ngm:class:orthopaedic-robotics",
+        "label": "Orthopaedic Robotics"
+      },
+      {
+        "id": "urn:ngm:class:neurosurgical-robotics",
+        "label": "Neurosurgical Robotics"
+      },
+      {
+        "id": "urn:ngm:class:patient-safety",
+        "label": "Patient Safety"
       }
     ]
   },

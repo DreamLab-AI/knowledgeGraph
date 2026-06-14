@@ -55,7 +55,7 @@ public:: true
   "@type": "Class",
   "label": "GPT 4",
   "definition": "A large multimodal language model released by OpenAI in 2023, capable of accepting text and image inputs and producing text outputs, and a successor to the GPT-3.5 series.",
-  "domain": "natural-language-processing",
+  "domain": "ai",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

@@ -5,34 +5,18 @@
   "public": true,
   "classIri": "urn:ngm:class:microservices",
   "domain": "infrastructure",
-  "definition": "Microservices is an architectural style in which a large application is decomposed into a collection of small, independently deployable services, each responsible for a specific business capability and communicating via well-defined APIs. Each service runs in its own process, can be developed and scaled independently, and may use its own data storage technology. This approach contrasts with monolithic architectures and enables continuous delivery, polyglot development, and fine-grained fault isolation.",
+  "definition": "Microservices is an architectural style in which a large application is decomposed into a suite of small, independently deployable services, each responsible for a distinct bounded business capability and communicating through well-defined lightweight APIs or message channels. Each service runs in its own process, manages its own data store, and can be developed, deployed, scaled, and retired independently of other services. The pattern contrasts with monolithic architectures by enabling polyglot development, fine-grained fault isolation, and organisational alignment of teams with service ownership, at the cost of increased operational and distributed-systems complexity.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:microservices-architecture",
-      "label": "Microservices Architecture"
+      "id": "urn:ngm:class:software-architecture",
+      "label": "Software Architecture"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.75,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [
-      {
-        "id": "urn:ngm:class:cloud-computing",
-        "label": "Cloud Computing"
-      },
-      {
-        "id": "urn:ngm:class:open-telemetry",
-        "label": "OpenTelemetry"
-      }
-    ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [
+    "hasPart": [
       {
         "id": "urn:ngm:class:api-gateway",
         "label": "API Gateway"
@@ -42,29 +26,114 @@
         "label": "Service Discovery"
       },
       {
+        "id": "urn:ngm:class:service-mesh",
+        "label": "Service Mesh"
+      },
+      {
+        "id": "urn:ngm:class:circuit-breaker",
+        "label": "Circuit Breaker"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:container-orchestration",
+        "label": "Container Orchestration"
+      },
+      {
+        "id": "urn:ngm:class:continuous-delivery",
+        "label": "Continuous Delivery"
+      },
+      {
+        "id": "urn:ngm:class:observability",
+        "label": "Observability"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:devops",
+        "label": "DevOps"
+      },
+      {
+        "id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:polyglot-persistence",
+        "label": "Polyglot Persistence"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:monolithic-architecture",
+        "label": "Monolithic Architecture"
+      },
+      {
+        "id": "urn:ngm:class:service-oriented-architecture",
+        "label": "Service-Oriented Architecture"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:serverless-computing",
+        "label": "Serverless Computing"
+      }
+    ],
+    "uses": [
+      {
         "id": "urn:ngm:class:kubernetes",
         "label": "Kubernetes"
       },
       {
         "id": "urn:ngm:class:rest-api",
         "label": "REST API"
+      },
+      {
+        "id": "urn:ngm:class:grpc",
+        "label": "gRPC"
+      },
+      {
+        "id": "urn:ngm:class:message-broker",
+        "label": "Message Broker"
+      },
+      {
+        "id": "urn:ngm:class:open-telemetry",
+        "label": "OpenTelemetry"
+      },
+      {
+        "id": "urn:ngm:class:docker",
+        "label": "Docker"
       }
     ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
-      {
-        "id": "urn:ngm:class:distributed-system",
-        "label": "Distributed System"
-      },
+    "partOf": [
       {
         "id": "urn:ngm:class:cloud-native-applications",
         "label": "Cloud-Native Applications"
       },
       {
-        "id": "urn:ngm:class:software-architecture",
-        "label": "Software Architecture"
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:domain-driven-design",
+        "label": "Domain-Driven Design"
+      },
+      {
+        "id": "urn:ngm:class:event-driven-architecture",
+        "label": "Event-Driven Architecture"
+      },
+      {
+        "id": "urn:ngm:class:twelve-factor-app",
+        "label": "Twelve-Factor App"
       }
     ]
   },

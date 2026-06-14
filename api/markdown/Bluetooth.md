@@ -47,7 +47,7 @@ public:: true
   "@type": "Class",
   "label": "Bluetooth",
   "definition": "A short-range wireless communication standard for exchanging data between devices over radio frequencies in the 2.4 gigahertz band. It is widely used for peripherals, audio, and low-power sensors.",
-  "domain": "networking",
+  "domain": "infrastructure",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

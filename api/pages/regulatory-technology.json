@@ -4,33 +4,119 @@
   "slug": "regulatory-technology",
   "public": true,
   "classIri": "urn:ngm:class:regulatory-technology",
-  "domain": "spatial-computing",
-  "definition": "Regulatory Technology (RegTech) applies digital tools\u2014including AI, machine learning, and distributed ledger systems\u2014to automate and streamline regulatory compliance processes such as KYC/AML checks, audit trail generation, risk reporting, and consent management. In spatial-computing and metaverse contexts, RegTech addresses jurisdiction-sensitive data flows, real-time content moderation, and smart-contract-based enforcement of platform governance rules.",
+  "domain": "governance",
+  "definition": "Regulatory Technology (RegTech) is the application of digital tools\u2014encompassing artificial intelligence, machine learning, natural language processing, distributed ledger technology, and cloud computing\u2014to automate, streamline, and improve the accuracy of regulatory compliance processes across financial services and adjacent sectors. Core functions include know-your-customer (KYC) and anti-money-laundering (AML) screening, real-time transaction monitoring, regulatory reporting, risk management, and consent lifecycle management. RegTech reduces the cost and latency of compliance obligations while providing regulators with higher-quality, machine-readable data through standardised reporting formats such as XBRL and ISO 20022. It operates at the intersection of legal obligation, data governance, and algorithmic automation, and is increasingly deployed in decentralised finance, open banking, and AI governance contexts.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:sc-governance-and-safety",
-      "label": "Governance and Safety"
+      "id": "urn:ngm:class:compliance-framework",
+      "label": "Compliance Framework"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "emerging",
+  "qualityScore": 0.73,
+  "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:know-your-customer",
+        "label": "Know Your Customer"
+      },
+      {
+        "id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-reporting",
+        "label": "Regulatory Reporting"
+      },
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      },
+      {
+        "id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:automated-compliance",
+        "label": "Automated Compliance"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-sandbox",
+        "label": "Regulatory Sandbox"
+      },
+      {
+        "id": "urn:ngm:class:suptech",
+        "label": "Supervisory Technology"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:data-standardisation",
+        "label": "Data Standardisation"
+      },
+      {
+        "id": "urn:ngm:class:application-programming-interface",
+        "label": "Application Programming Interface"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:manual-compliance",
+        "label": "Manual Compliance"
+      },
+      {
+        "id": "urn:ngm:class:legal-technology",
+        "label": "Legal Technology"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      }
+    ],
     "uses": [
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
       {
         "id": "urn:ngm:class:smart-contracts",
         "label": "Smart Contracts"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning"
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:application-programming-interface",
+        "label": "Application Programming Interface"
       }
     ],
     "supports": [
@@ -41,6 +127,14 @@
       {
         "id": "urn:ngm:class:data-protection-regulation",
         "label": "Data Protection Regulation"
+      },
+      {
+        "id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      },
+      {
+        "id": "urn:ngm:class:open-banking",
+        "label": "Open Banking"
       }
     ],
     "standardizedBy": [],
@@ -49,6 +143,14 @@
       {
         "id": "urn:ngm:class:governance-framework",
         "label": "Governance Framework"
+      },
+      {
+        "id": "urn:ngm:class:fintech",
+        "label": "FinTech"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-auditing",
+        "label": "Algorithmic Auditing"
       }
     ]
   },

@@ -21,7 +21,7 @@ public:: true
   "@type": "Class",
   "label": "Audio Engine",
   "definition": "An Audio Engine is a software subsystem that manages the real-time synthesis, processing, mixing, and spatialisation of sound within an interactive or generative application. It abstracts hardware audio interfaces, schedules audio computation on dedicated threads or hardware DSP units, and exposes higher-level APIs for triggering, routing, and modulating sound objects in response to application events.",
-  "domain": "media",
+  "domain": "metaverse",
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:audio-system", "label": "Audio System"}],
   "relations": {

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:mqtt",
   "domain": "infrastructure",
-  "definition": "MQTT (Message Queuing Telemetry Transport) is a lightweight publish-subscribe messaging protocol standardised as ISO/IEC 20922 and OASIS MQTT 5.0, designed for constrained devices and unreliable networks with minimal protocol overhead. Clients connect to a central broker that routes messages by topic; publishers post payloads to topic strings and subscribers receive all messages matching their subscribed topic filters. MQTT defines three quality-of-service levels\u2014at most once, at least once, and exactly once\u2014allowing integrators to balance message delivery guarantees against network and compute cost.",
+  "definition": "MQTT (Message Queuing Telemetry Transport) is a lightweight publish-subscribe messaging protocol standardised as ISO/IEC 20922 and OASIS MQTT 5.0, designed for constrained devices and low-bandwidth or unreliable networks with minimal protocol overhead. Clients connect to a central broker that routes messages hierarchically by topic string; publishers post payloads to topic endpoints and subscribers receive all messages matching wildcard-capable topic filters. MQTT defines three quality-of-service levels\u2014at most once (QoS 0), at least once (QoS 1), and exactly once (QoS 2)\u2014enabling integrators to balance delivery guarantees against network and compute cost across heterogeneous deployments spanning embedded microcontrollers to cloud-scale brokers.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-network-and-comms",
@@ -13,11 +13,20 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.75,
+  "maturity": "mature",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:message-broker",
+        "label": "Message Broker"
+      },
+      {
+        "id": "urn:ngm:class:publish-subscribe-pattern",
+        "label": "Publish-Subscribe Pattern"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:internet-of-things",
@@ -26,33 +35,127 @@
       {
         "id": "urn:ngm:class:sensor-data",
         "label": "Sensor Data"
+      },
+      {
+        "id": "urn:ngm:class:real-time-data-streaming",
+        "label": "Real-Time Data Streaming"
+      },
+      {
+        "id": "urn:ngm:class:telemetry-and-analytics",
+        "label": "Telemetry and Analytics"
+      },
+      {
+        "id": "urn:ngm:class:event-driven-architecture",
+        "label": "Event-Driven Architecture"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:publish-subscribe-pattern",
+        "label": "Publish-Subscribe Pattern"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:amqp",
+        "label": "AMQP"
+      },
+      {
+        "id": "urn:ngm:class:coap",
+        "label": "CoAP"
+      },
+      {
+        "id": "urn:ngm:class:http",
+        "label": "HTTP"
+      },
+      {
+        "id": "urn:ngm:class:stomp",
+        "label": "STOMP"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ros2",
+        "label": "ROS 2"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-inference",
+        "label": "Machine Learning Inference"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:communication-protocol",
         "label": "Communication Protocol"
+      },
+      {
+        "id": "urn:ngm:class:tcp-ip",
+        "label": "TCP/IP"
+      },
+      {
+        "id": "urn:ngm:class:websockets",
+        "label": "WebSockets"
+      },
+      {
+        "id": "urn:ngm:class:tls-ssl",
+        "label": "TLS/SSL"
       }
     ],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
+    "supports": [
       {
         "id": "urn:ngm:class:edge-computing",
         "label": "Edge Computing"
       },
       {
-        "id": "urn:ngm:class:embedded-systems",
-        "label": "Embedded Systems"
+        "id": "urn:ngm:class:industrial-iot",
+        "label": "Industrial IoT"
       },
       {
-        "id": "urn:ngm:class:telemetry-and-analytics",
-        "label": "Telemetry & Analytics"
+        "id": "urn:ngm:class:smart-home-automation",
+        "label": "Smart Home Automation"
+      },
+      {
+        "id": "urn:ngm:class:vehicle-telematics",
+        "label": "Vehicle Telematics"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:oasis-open",
+        "label": "OASIS Open"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-20922",
+        "label": "ISO/IEC 20922"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:sparkplug-b",
+        "label": "Sparkplug B"
+      },
+      {
+        "id": "urn:ngm:class:data-serialisation",
+        "label": "Data Serialisation"
+      },
+      {
+        "id": "urn:ngm:class:scada",
+        "label": "SCADA"
       }
     ]
   },

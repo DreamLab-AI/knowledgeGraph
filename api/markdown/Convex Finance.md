@@ -20,45 +20,113 @@ public:: true
   "@id": "urn:ngm:class:convex-finance",
   "@type": "Class",
   "label": "Convex Finance",
-  "definition": "Convex Finance is a decentralised finance (DeFi) protocol built on Ethereum that enables Curve Finance liquidity providers to earn enhanced CRV token rewards without locking their own CRV tokens. By aggregating veCRV voting power from CVX token holders, Convex boosts yield for depositors while distributing governance influence across its community, creating a meta-governance layer above Curve's vote-escrowed tokenomics model. Convex became one of the largest holders of veCRV by 2022, making CVX effectively a proxy for Curve governance influence.",
+  "definition": "Convex Finance is a decentralised finance (DeFi) meta-protocol built on Ethereum that enables Curve Finance liquidity providers and CRV holders to earn enhanced rewards without individually locking their own CRV tokens as veCRV. By aggregating vote-escrowed CRV (veCRV) from users who deposit CRV in exchange for cvxCRV, Convex accumulates collective governance and boost power which it redistributes pro-rata to depositors, eliminating the individual capital lockup barrier inherent in Curve's vote-escrow tokenomics. The protocol's native CVX token governs allocation of this aggregated veCRV voting power via vlCVX staking, creating a secondary governance layer — the so-called Curve Wars — in which DeFi protocols competitively bribe CVX holders to direct CRV emissions toward their own liquidity pools.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:de-fi-protocol", "label": "De Fi Protocol"}],
+  "subClassOf": [{"@id": "urn:ngm:class:de-fi-protocol", "label": "DeFi Protocol"}],
   "relations": {
-    "uses": [
+    "partOf": [
+      {"@id": "urn:ngm:class:decentralized-finance-de-fi", "label": "Decentralized Finance (DeFi)"},
+      {"@id": "urn:ngm:class:curve-wars", "label": "Curve Wars"}
+    ],
+    "requires": [
       {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
+      {"@id": "urn:ngm:class:ethereum", "label": "Ethereum"},
+      {"@id": "urn:ngm:class:vote-escrow-tokenomics", "label": "Vote-Escrow Tokenomics"}
+    ],
+    "uses": [
       {"@id": "urn:ngm:class:automated-market-maker", "label": "Automated Market Maker"},
       {"@id": "urn:ngm:class:liquidity-pool", "label": "Liquidity Pool"},
-      {"@id": "urn:ngm:class:token-economics", "label": "Token Economics"}
+      {"@id": "urn:ngm:class:token-economics", "label": "Token Economics"},
+      {"@id": "urn:ngm:class:curve-finance", "label": "Curve Finance"},
+      {"@id": "urn:ngm:class:governance-token", "label": "Governance Token"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:yield-farming", "label": "Yield Farming"},
       {"@id": "urn:ngm:class:liquidity-provision", "label": "Liquidity Provision"},
-      {"@id": "urn:ngm:class:yield-generation", "label": "Yield Generation"}
+      {"@id": "urn:ngm:class:yield-generation", "label": "Yield Generation"},
+      {"@id": "urn:ngm:class:meta-governance", "label": "Meta-Governance"},
+      {"@id": "urn:ngm:class:bribe-economy", "label": "Bribe Economy"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:liquidity-mining", "label": "Liquidity Mining"},
+      {"@id": "urn:ngm:class:stablecoin", "label": "Stablecoin"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:concentrated-liquidity", "label": "Concentrated Liquidity"},
+      {"@id": "urn:ngm:class:aura-finance", "label": "Aura Finance"},
+      {"@id": "urn:ngm:class:yearn-finance", "label": "Yearn Finance"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:decentralized-finance-de-fi", "label": "Decentralized Finance (DeFi)"},
-      {"@id": "urn:ngm:class:liquidity-mining", "label": "Liquidity Mining"},
-      {"@id": "urn:ngm:class:concentrated-liquidity", "label": "Concentrated Liquidity"}
+      {"@id": "urn:ngm:class:decentralized-autonomous-organisation", "label": "Decentralized Autonomous Organisation"},
+      {"@id": "urn:ngm:class:total-value-locked", "label": "Total Value Locked"},
+      {"@id": "urn:ngm:class:frax-finance", "label": "Frax Finance"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:on-chain-governance", "label": "On-Chain Governance"},
+      {"@id": "urn:ngm:class:mechanism-design", "label": "Mechanism Design"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:cvx-protocol", "label": "CVX Protocol"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-13T00:00:00Z",
+    "inferenceRule": "ManualEnrichment"
+  }
 }
 ```
 
 - ### Definition
-  - [[Convex Finance]] is a [[De Fi Protocol]] on Ethereum that amplifies yields for [[Liquidity Pool]] participants by aggregating veCRV voting power, enabling [[Yield Farming]] without the capital lockup normally required by Curve Finance's vote-escrow tokenomics.
+  - [[Convex Finance]] is a [[DeFi Protocol]] on [[Ethereum]] that acts as a cooperative aggregator above [[Curve Finance]]'s [[Vote-Escrow Tokenomics]] model. By accepting CRV deposits and minting the synthetic cvxCRV token, Convex accumulates a large pool of vote-escrowed CRV (veCRV), then redistributes the resulting yield boosts and [[Governance Token]] influence to depositors and [[Liquidity Pool]] participants without requiring individual lockup. The protocol's CVX token and its vlCVX staking derivative place Convex at the centre of the [[Curve Wars]] — a competitive [[Meta-Governance]] market in which protocols bribe CVX voters to direct [[Liquidity Mining]] emissions toward their preferred pools.
+
+- ### Overview
+  - Convex Finance launched in May 2021 to solve a structural inequality in [[Curve Finance]]'s CRV reward system. Curve gives liquidity providers a yield boost of up to 2.5× if they lock CRV as veCRV for up to four years, but this lock-up is prohibitive for smaller participants, concentrating governance and yield advantages among large CRV holders.
+  - Convex addresses this by acting as a communal veCRV pool: users deposit CRV to receive cvxCRV (a liquid synthetic), while Convex stakes the underlying CRV as veCRV and distributes aggregate boosts pro-rata to all depositors. This design separated "yield benefit" from "governance lockup" — a major [[Token Economics]] innovation.
+  - The protocol is fully non-custodial: all logic runs through immutable or DAO-governed [[Smart Contract]] code on [[Ethereum]], with no trusted admin key controlling depositor funds after initial deployment.
+  - Convex quickly became one of the largest single holders of veCRV, making it a kingmaker in Curve's [[On-Chain Governance]]. Its CVX token accrued significant value as a proxy for that governance influence, illustrating how [[Mechanism Design]] can create secondary value layers in [[Decentralized Finance (DeFi)]].
+
+- ### Key Components
+  - **CRV → cvxCRV conversion** — Users deposit CRV; Convex locks it as veCRV and mints cvxCRV at 1:1. cvxCRV is liquid and tradeable on secondary markets, offering an exit that raw veCRV does not provide. See [[Stablecoin]] and [[Liquidity Pool]] dynamics for secondary market pricing.
+  - **CVX token** — Convex's native governance and value-accrual token. CVX is emitted as an additional reward to Curve [[Liquidity Pool]] depositors on Convex, proportional to CRV earned. CVX supply is capped, creating scarcity as adoption grows.
+  - **vlCVX (vote-locked CVX)** — CVX holders stake as vlCVX with a 16-week lock to participate in biweekly gauge weight votes. vlCVX holders direct Convex's collective veCRV voting power across [[Curve Finance]] gauge weight elections, determining the flow of CRV [[Yield Generation]] incentives.
+  - **Gauge weight elections** — Biweekly votes that allocate CRV emissions across Curve pools. Because Convex controls a large share of veCRV, winning the vlCVX vote effectively wins the Curve gauge. This is the mechanism underlying the [[Curve Wars]].
+  - **Bribe platforms (e.g. Votium)** — Third-party platforms allow DeFi protocols to pay CVX holders in exchange for voting power. This [[Bribe Economy]] introduced transparent price discovery for governance influence. See [[Decentralized Autonomous Organisation]] for broader DAO context.
+  - **cvxCRV staking** — cvxCRV holders earn 3CRV (Curve trading fees), CRV rewards, and CVX rewards by staking within Convex, creating layered [[Yield Farming]] opportunities.
+  - **Frax and other integrations** — Convex later extended its model to support [[Frax Finance]] pools and other vote-escrow ecosystems, generalising beyond Curve.
+
+- ### Mechanisms
+  - **Vote-escrow aggregation** — The core mechanism: aggregate many small CRV stakes into a single large veCRV position, then distribute benefits of that position to contributors. Depends on [[Vote-Escrow Tokenomics]] and the [[Automated Market Maker]] framework underlying [[Curve Finance]].
+  - **Boost redistribution** — Convex calculates each depositor's share of aggregate veCRV boost and credits enhanced CRV rewards accordingly. This bypasses the 2.5× individual boost requirement without each user holding veCRV directly.
+  - **Incentive alignment** — CVX emission to [[Liquidity Provision]] depositors creates a feedback loop: more liquidity → more CRV earned → more CVX minted → higher total CVX supply. The cap on CVX supply moderates this over time.
+  - **Meta-governance capture** — By accumulating veCRV beyond any individual protocol, Convex achieved [[Meta-Governance]] over Curve — governance over the governance layer. This concept is central to understanding systemic risk and power concentration in [[Decentralized Finance (DeFi)]].
+
+- ### Applications and Use Cases
+  - **Enhanced yield for Curve LPs** — The primary use: liquidity providers deposit Curve LP tokens into Convex to earn boosted CRV and additional CVX rewards without locking CRV themselves. This is core [[Yield Farming]] and [[Yield Generation]] infrastructure.
+  - **Governance proxy purchasing** — Protocols that issue [[Stablecoin]]s or other assets on Curve (e.g. [[Frax Finance]], MIM, LUSD) use the bribe system to cheaply subsidise CRV emissions to their pools, acquiring cheap [[Liquidity Mining]] incentives.
+  - **CVX as a governance derivative** — Investors and DAOs hold CVX as a proxy for Curve governance influence, treating it as a structured claim on CRV gauge-weight voting power. See [[Decentralized Autonomous Organisation]] and [[On-Chain Governance]].
+  - **Protocol-owned liquidity strategies** — DAO treasuries use Convex to deploy [[Total Value Locked]] productively while retaining governance optionality through vlCVX voting.
+  - **Analogous meta-protocols** — [[Aura Finance]] (for Balancer's veBAL) and Wombex Finance (for Wombat Exchange's veWOM) replicate Convex's architecture on other vote-escrow systems, validating its design pattern across [[Decentralized Finance (DeFi)]].
 
 - ### Relationships
-  - Convex Finance operates as a [[De Fi Protocol]] that wraps Curve Finance's [[Automated Market Maker]] infrastructure. Depositors supply assets to [[Liquidity Pool]] positions and earn boosted CRV rewards mediated by the protocol's aggregated veCRV stake, enabling [[Liquidity Provision]] and [[Yield Generation]] at rates unavailable to individual depositors. The [[Token Economics]] of CVX—staking for vlCVX to direct Convex's voting power in Curve gauge weight elections—makes Convex central to the broader [[Decentralized Finance (DeFi)]] meta-governance landscape, closely linked to [[Liquidity Mining]] incentive structures and [[Concentrated Liquidity]] management strategies.
+  - partOf:: [[Decentralized Finance (DeFi)]], [[Curve Wars]]
+  - requires:: [[Smart Contract]], [[Ethereum]], [[Vote-Escrow Tokenomics]]
+  - uses:: [[Automated Market Maker]], [[Liquidity Pool]], [[Token Economics]], [[Curve Finance]], [[Governance Token]]
+  - enables:: [[Yield Farming]], [[Liquidity Provision]], [[Yield Generation]], [[Meta-Governance]], [[Bribe Economy]]
+  - dependsOn:: [[Liquidity Mining]], [[Stablecoin]]
+  - contrastsWith:: [[Concentrated Liquidity]], [[Aura Finance]], [[Yearn Finance]]
+  - relatedTo:: [[Decentralized Autonomous Organisation]], [[Total Value Locked]], [[Frax Finance]]
+  - bridges-to:: [[On-Chain Governance]], [[Mechanism Design]]
 
-  - All protocol logic is enforced by [[Smart Contract]] code on Ethereum, with no trusted intermediaries controlling depositor funds.
+- ### Standards and Context
+  - Convex operates on [[Ethereum]] under Ethereum's ERC-20 token standard for CVX and cvxCRV and interacts with Curve's audited gauge and minter contracts.
+  - Protocol [[Smart Contract]] code was audited at launch; the immutable core contracts reduce upgrade risk at the cost of adaptability.
+  - Regulatory context: DeFi yield platforms including Convex face scrutiny in multiple jurisdictions over whether boosted yield instruments constitute securities or collective investment schemes. The EU's Markets in Crypto-Assets (MiCA) regulation and US SEC enforcement actions against yield protocols represent the primary evolving compliance landscape.
+  - The [[Decentralized Autonomous Organisation]] governing Convex (via vlCVX) must balance community governance with legal entity ambiguity — a challenge common across [[On-Chain Governance]] frameworks.
+  - Convex's bribe economy informed academic discussion of [[Mechanism Design]] for token governance, contributing to literature on vote-market equilibria in [[Decentralized Finance (DeFi)]].
 
-- ### Content
-  - Convex Finance launched in May 2021, designed to solve a specific problem in the Curve Finance tokenomics model. Curve's CRV reward system gives boosted yields (up to 2.5×) to liquidity providers who lock CRV as veCRV (vote-escrowed CRV) for up to four years. This creates a barrier: small liquidity providers cannot afford to lock large amounts of CRV, and large holders accumulate disproportionate boosts. Convex solved this by acting as a cooperative: it accepts CRV from users (minting cvxCRV in return), accumulates veCRV on behalf of all depositors, and distributes the resulting boosted CRV rewards pro-rata without imposing individual lock-up requirements.
-
-  - The protocol's native token CVX governs allocation of Convex's collective veCRV voting power. CVX holders who stake as vlCVX (vote-locked CVX, 16-week lock) can vote in biweekly "gauge weight" elections that determine how Curve emissions are distributed across its liquidity pools. This created a secondary market—the "Curve Wars"—in which DeFi protocols bribe vlCVX holders to direct CRV emissions toward their own pools, using bribe platforms such as Votium. By early 2022, Convex controlled approximately 47% of all veCRV, making it arguably the most influential actor in Curve's governance despite not being Curve itself.
-
-  - Convex's architecture demonstrated a general pattern in DeFi: meta-protocols that aggregate governance tokens and redistribute influence more efficiently than individual participation allows. The model inspired similar designs for other vote-escrow protocols, including Aura Finance (for Balancer's veBAL) and Wombex Finance (for Wombat Exchange). The bribe economy created transparent markets for governance influence that, while controversial from a decentralisation perspective, provided price discovery for protocol subsidies that previously took place informally.
-
-  - By 2024–2025 Convex remains a significant DeFi primitive, though the "Curve Wars" have matured into a more stable equilibrium. Total value locked (TVL) peaked at approximately $20 billion in late 2021 and settled at several billion dollars as DeFi markets normalised. The protocol has expanded beyond Curve to support Frax Finance pools and similar vote-escrow systems. Regulatory scrutiny of DeFi yield protocols—particularly around whether boosted yield instruments constitute securities—represents the primary risk vector for Convex and similar protocols in jurisdictions actively developing crypto asset regulatory frameworks.
+- ### Provenance
+  - sources:: Convex Finance protocol documentation; Curve Finance whitepaper; public on-chain analytics (Dune Analytics); DeFi Llama TVL data; Votium bribe platform data.
+  - updated:: 2026-06-13

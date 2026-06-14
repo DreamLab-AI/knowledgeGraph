@@ -4,8 +4,8 @@
   "slug": "aml",
   "public": true,
   "classIri": "urn:ngm:class:aml",
-  "domain": "artificial-intelligence",
-  "definition": "Anti-money laundering: the set of regulations, controls and analytical methods used by financial institutions to detect and prevent the disguising of illicit funds as legitimate income.",
+  "domain": "finance",
+  "definition": "Anti-Money Laundering (AML) is the body of laws, regulations, policies, and operational controls that obligate financial institutions to detect, prevent, and report the process by which criminals disguise proceeds of illegal activity as legitimate income. AML frameworks encompass Know Your Customer (KYC) identity verification, ongoing transaction monitoring, suspicious activity reporting (SAR), and risk-based compliance programmes overseen by regulators such as the Financial Action Task Force (FATF), FinCEN, and national supervisory authorities. Machine learning and network analytics have become central to modern AML systems, enabling real-time anomaly detection and entity-resolution across large transaction graphs. Regulated entities that fail to meet AML obligations face substantial financial penalties, licence revocations, and criminal liability.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:financial-services",
@@ -13,31 +13,117 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.75,
   "maturity": "mature",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:kyc",
+        "label": "KYC"
+      },
+      {
+        "id": "urn:ngm:class:transaction-monitoring",
+        "label": "Transaction Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:suspicious-activity-reporting",
+        "label": "Suspicious Activity Reporting"
+      },
+      {
+        "id": "urn:ngm:class:customer-due-diligence",
+        "label": "Customer Due Diligence"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:classification",
         "label": "Classification"
+      },
+      {
+        "id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      },
+      {
+        "id": "urn:ngm:class:risk-scoring",
+        "label": "Risk Scoring"
       }
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:anti-money-laundering",
-        "label": "Anti-Money Laundering"
+        "id": "urn:ngm:class:financial-crime-prevention",
+        "label": "Financial Crime Prevention"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:fraud-detection",
+        "label": "Fraud Detection"
+      },
+      {
+        "id": "urn:ngm:class:sanctions-screening",
+        "label": "Sanctions Screening"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:graph-analytics",
+        "label": "Graph Analytics"
+      },
+      {
+        "id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:fatf",
+        "label": "FATF"
+      },
+      {
+        "id": "urn:ngm:class:basel-iii",
+        "label": "Basel III"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      },
+      {
+        "id": "urn:ngm:class:explainability",
+        "label": "Explainability"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ]
   },
   "wikilinks": [
     {

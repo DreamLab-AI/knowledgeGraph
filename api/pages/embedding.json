@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:embedding",
   "domain": "ai",
-  "definition": "An embedding is a learned mapping from discrete or high-dimensional objects\u2014such as words, sentences, images, graphs, or code\u2014into a continuous, low-dimensional vector space, such that semantically or functionally similar inputs are mapped to geometrically proximate vectors. Embeddings are fundamental to modern machine learning, enabling downstream tasks including similarity search, classification, clustering, and retrieval through compact, transferable representations.",
+  "definition": "An embedding is a learned mapping from discrete or high-dimensional objects\u2014such as words, sentences, images, graphs, or code\u2014into a continuous, low-dimensional vector space, such that semantically or functionally similar inputs are mapped to geometrically proximate vectors. Embeddings are fundamental to modern machine learning, enabling downstream tasks including similarity search, classification, clustering, and retrieval through compact, transferable representations. The quality of an embedding space is typically measured by how well geometric proximity in the vector space reflects semantic or functional similarity in the original domain.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:representation-learning",
@@ -13,11 +13,20 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.74,
   "maturity": "mature",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:semantic-search",
@@ -30,12 +39,46 @@
       {
         "id": "urn:ngm:class:vector-database",
         "label": "Vector Database"
+      },
+      {
+        "id": "urn:ngm:class:text-classification",
+        "label": "Text Classification"
+      },
+      {
+        "id": "urn:ngm:class:recommendation-system",
+        "label": "Recommendation System"
+      },
+      {
+        "id": "urn:ngm:class:clustering",
+        "label": "Clustering"
+      },
+      {
+        "id": "urn:ngm:class:cross-modal-retrieval",
+        "label": "Cross-Modal Retrieval"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:one-hot-encoding",
+        "label": "One-Hot Encoding"
+      },
+      {
+        "id": "urn:ngm:class:sparse-representation",
+        "label": "Sparse Representation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:spatial-index",
+        "label": "Spatial Index"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:neural-network",
@@ -48,6 +91,14 @@
       {
         "id": "urn:ngm:class:encoder",
         "label": "Encoder"
+      },
+      {
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "id": "urn:ngm:class:contrastive-learning",
+        "label": "Contrastive Learning"
       }
     ],
     "supports": [],
@@ -55,12 +106,28 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:neural-network-latent-space",
-        "label": "latent space"
+        "id": "urn:ngm:class:latent-space",
+        "label": "Latent Space"
       },
       {
         "id": "urn:ngm:class:feature-extraction",
         "label": "Feature Extraction"
+      },
+      {
+        "id": "urn:ngm:class:word2vec",
+        "label": "Word2Vec"
+      },
+      {
+        "id": "urn:ngm:class:bert",
+        "label": "BERT"
+      },
+      {
+        "id": "urn:ngm:class:approximate-nearest-neighbour",
+        "label": "Approximate Nearest Neighbour"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph-embedding",
+        "label": "Knowledge Graph Embedding"
       }
     ]
   },

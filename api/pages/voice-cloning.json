@@ -5,29 +5,76 @@
   "public": true,
   "classIri": "urn:ngm:class:voice-cloning",
   "domain": "artificial-intelligence",
-  "definition": "Voice cloning is a speech synthesis technique that uses a short reference audio recording of a target speaker to condition or fine-tune a neural text-to-speech (TTS) model such that it reproduces that speaker's vocal characteristics \u2014 including timbre, prosody, accent, and speaking rhythm \u2014 when given arbitrary text. Modern voice cloning systems rely on speaker encoder networks that extract a fixed-dimensional speaker embedding from the reference audio, which is then provided as conditioning input to a sequence-to-sequence acoustic model and vocoder. Zero-shot voice cloning extends this capability to entirely unseen speakers without any fine-tuning, using large pre-trained generative models.",
+  "definition": "Voice cloning is a speech synthesis technique that uses a short reference audio recording of a target speaker to condition or fine-tune a neural text-to-speech model so that it reproduces that speaker's vocal characteristics \u2014 including timbre, prosody, accent, and speaking rhythm \u2014 when given arbitrary text input. Modern systems employ a speaker encoder network that extracts a fixed-dimensional speaker embedding from reference audio, which conditions a sequence-to-sequence acoustic model and vocoder to produce personalised synthetic speech. Zero-shot voice cloning generalises this capability to entirely unseen speakers without fine-tuning by leveraging large pre-trained generative models. The technology underpins both beneficial applications such as accessibility aids and audiobook narration, and adversarial uses including audio deepfakes and voice fraud.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ai-application",
-      "label": "AI Application"
+      "id": "urn:ngm:class:speech-synthesis",
+      "label": "Speech Synthesis"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:speech-corpus",
+        "label": "Speech Corpus"
+      },
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "id": "urn:ngm:class:mel-spectrogram",
+        "label": "Mel-Spectrogram"
+      }
+    ],
     "enables": [
       {
-        "id": "urn:ngm:class:generative-ai",
-        "label": "Generative AI"
+        "id": "urn:ngm:class:personalised-voice-assistant",
+        "label": "Personalised Voice Assistant"
+      },
+      {
+        "id": "urn:ngm:class:audiobook-narration",
+        "label": "Audiobook Narration"
+      },
+      {
+        "id": "urn:ngm:class:accessibility-technology",
+        "label": "Accessibility Technology"
+      },
+      {
+        "id": "urn:ngm:class:audio-deepfake",
+        "label": "Audio Deepfake"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:voice-conversion",
+        "label": "Voice Conversion"
+      },
+      {
+        "id": "urn:ngm:class:concatenative-synthesis",
+        "label": "Concatenative Synthesis"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:digital-watermarking",
+        "label": "Digital Watermarking"
+      },
+      {
+        "id": "urn:ngm:class:content-provenance",
+        "label": "Content Provenance"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:text-to-speech",
@@ -36,6 +83,22 @@
       {
         "id": "urn:ngm:class:neural-network",
         "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:speaker-embedding",
+        "label": "Speaker Embedding"
+      },
+      {
+        "id": "urn:ngm:class:vocoder",
+        "label": "Vocoder"
+      },
+      {
+        "id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
       }
     ],
     "supports": [],
@@ -49,6 +112,22 @@
       {
         "id": "urn:ngm:class:speech-recognition",
         "label": "Speech Recognition"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:biometric-authentication",
+        "label": "Biometric Authentication"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:synthetic-media",
+        "label": "Synthetic Media"
       }
     ]
   },

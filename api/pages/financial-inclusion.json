@@ -4,38 +4,128 @@
   "slug": "financial-inclusion",
   "public": true,
   "classIri": "urn:ngm:class:financial-inclusion",
-  "domain": "blockchain",
-  "definition": "Financial Inclusion is the policy objective and market outcome of ensuring that individuals and businesses, particularly those in underserved or economically marginalised populations, have access to affordable, useful, and safe financial products and services \u2014 including payments, credit, savings, and insurance. Blockchain and mobile technologies are increasingly deployed as enabling mechanisms, offering the ability to serve populations lacking access to traditional bank accounts, physical branch infrastructure, or formal identity documentation. Decentralised Finance protocols and Central Bank Digital Currencies are among the mechanisms being evaluated for their potential to advance financial inclusion goals.",
+  "domain": "finance",
+  "definition": "Financial inclusion is the policy objective and market condition in which individuals and businesses \u2014 particularly those in underserved, low-income, or geographically remote populations \u2014 have affordable, reliable access to a full range of financial services encompassing payments, credit, savings, insurance, and investment. It is pursued through regulatory reform, technology-led delivery (mobile money, digital wallets, open banking APIs), and identity infrastructure, aiming to integrate marginalised groups into the formal economy. Key enablers include tiered Know Your Customer frameworks, agent banking networks, interoperable payment rails, and programmable money mechanisms such as Central Bank Digital Currencies and regulated stablecoins. Progress is measured through account ownership rates, transaction volume among previously unbanked populations, and composite indices such as the World Bank Global Findex.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:bc-defi-and-economics",
-      "label": "BC DeFi and Economics"
+      "id": "urn:ngm:class:financial-services",
+      "label": "Financial Services"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "id": "urn:ngm:class:kyc-aml",
+        "label": "KYC/AML"
+      },
+      {
+        "id": "urn:ngm:class:mobile-internet",
+        "label": "Mobile Internet"
+      },
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ],
     "enables": [
       {
-        "id": "urn:ngm:class:decentralised-finance",
-        "label": "Decentralised Finance"
+        "id": "urn:ngm:class:mobile-money",
+        "label": "Mobile Money"
+      },
+      {
+        "id": "urn:ngm:class:digital-payments",
+        "label": "Digital Payments"
+      },
+      {
+        "id": "urn:ngm:class:microfinance",
+        "label": "Microfinance"
+      },
+      {
+        "id": "urn:ngm:class:economic-development",
+        "label": "Economic Development"
       }
     ],
     "dependsOn": [
+      {
+        "id": "urn:ngm:class:payment-infrastructure",
+        "label": "Payment Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-framework",
+        "label": "Regulatory Framework"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:financial-exclusion",
+        "label": "Financial Exclusion"
+      },
+      {
+        "id": "urn:ngm:class:predatory-lending",
+        "label": "Predatory Lending"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self-Sovereign Identity"
+      },
       {
         "id": "urn:ngm:class:blockchain",
         "label": "Blockchain"
       }
     ],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:open-banking",
+        "label": "Open Banking"
+      },
+      {
+        "id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      },
+      {
+        "id": "urn:ngm:class:agent-banking",
+        "label": "Agent Banking"
+      },
+      {
+        "id": "urn:ngm:class:biometric-authentication",
+        "label": "Biometric Authentication"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:sustainable-development-goals",
+        "label": "Sustainable Development Goals"
+      },
+      {
+        "id": "urn:ngm:class:poverty-reduction",
+        "label": "Poverty Reduction"
+      },
+      {
+        "id": "urn:ngm:class:gender-equality",
+        "label": "Gender Equality"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:financial-action-task-force",
+        "label": "Financial Action Task Force"
+      },
+      {
+        "id": "urn:ngm:class:g20-global-partnership-for-financial-inclusion",
+        "label": "G20 Global Partnership for Financial Inclusion"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -43,12 +133,16 @@
         "label": "Central Bank Digital Currency"
       },
       {
-        "id": "urn:ngm:class:stablecoin",
-        "label": "Stablecoin"
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
       },
       {
-        "id": "urn:ngm:class:digital-identity",
-        "label": "Digital Identity"
+        "id": "urn:ngm:class:remittance",
+        "label": "Remittance"
+      },
+      {
+        "id": "urn:ngm:class:fintech",
+        "label": "Fintech"
       }
     ]
   },

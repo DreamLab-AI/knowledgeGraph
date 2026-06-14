@@ -21,7 +21,7 @@ public:: true
   "@type": "Class",
   "label": "Novel View Synthesis",
   "definition": "Novel view synthesis (NVS) is a computer vision and computer graphics task that involves generating photorealistic images of a scene from camera viewpoints not present in the original set of captured images, given a collection of reference photographs and their corresponding camera poses. The task requires learning an implicit or explicit representation of the scene's geometry and appearance that supports free-viewpoint rendering with high fidelity. It is a foundational capability for immersive media, telepresence, and spatial computing applications, and has been dramatically advanced by neural scene representations such as Neural Radiance Fields and 3D Gaussian Splatting.",
-  "domain": "graphics",
+  "domain": "spatial-computing",
   "maturity": "emerging",
   "subClassOf": [{"@id": "urn:ngm:class:computer-vision-task", "label": "Computer Vision Task"}],
   "relations": {

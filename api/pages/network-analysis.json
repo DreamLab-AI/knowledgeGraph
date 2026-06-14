@@ -5,33 +5,89 @@
   "public": true,
   "classIri": "urn:ngm:class:network-analysis",
   "domain": "ai",
-  "definition": "Network Analysis is the study of complex systems represented as graphs of nodes and edges, using mathematical and computational techniques to characterise structure, detect communities, identify influential nodes, and model dynamic processes such as information diffusion. Rooted in graph theory, sociology, and statistical physics, it encompasses metrics including degree distribution, betweenness centrality, clustering coefficients, and path lengths. Applications span social network mapping, cybersecurity threat detection, supply chain vulnerability assessment, and knowledge graph quality evaluation. Machine learning on graphs, through graph neural networks, has substantially extended analytical capabilities.",
+  "definition": "Network Analysis is the systematic study of complex systems modelled as graphs of nodes and edges, applying mathematical, statistical, and computational techniques to characterise topology, detect communities, identify influential vertices, and model dynamic processes such as information diffusion, contagion, and resilience. Rooted in graph theory, sociology, and statistical physics, it encompasses structural metrics including degree distribution, betweenness centrality, clustering coefficients, and average path length. Machine learning on graphs \u2014 principally through graph neural networks \u2014 has substantially extended the field beyond classical descriptive statistics toward predictive and generative capabilities. Applications span social network mapping, cybersecurity threat detection, supply chain vulnerability assessment, biological pathway modelling, and knowledge graph quality evaluation.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:knowledge-graph",
-      "label": "Knowledge Graph"
+      "id": "urn:ngm:class:graph-theory",
+      "label": "Graph Theory"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:centrality-measure",
+        "label": "Centrality Measure"
+      },
+      {
+        "id": "urn:ngm:class:community-detection",
+        "label": "Community Detection"
+      },
+      {
+        "id": "urn:ngm:class:link-prediction",
+        "label": "Link Prediction"
+      },
+      {
+        "id": "urn:ngm:class:graph-embedding",
+        "label": "Graph Embedding"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:graph-database",
+        "label": "Graph Database"
+      },
+      {
+        "id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:knowledge-graph-construction",
         "label": "Knowledge Graph Construction"
       },
       {
-        "id": "urn:ngm:class:knowledge-graphing",
-        "label": "Knowledge Graphing"
+        "id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      },
+      {
+        "id": "urn:ngm:class:influence-maximisation",
+        "label": "Influence Maximisation"
+      },
+      {
+        "id": "urn:ngm:class:recommendation-system",
+        "label": "Recommendation System"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:graph-theory",
+        "label": "Graph Theory"
+      },
+      {
+        "id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      }
+    ],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-resilience",
+        "label": "Supply Chain Resilience"
+      },
+      {
+        "id": "urn:ngm:class:epidemiological-modelling",
+        "label": "Epidemiological Modelling"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:graph-neural-network",
@@ -44,6 +100,14 @@
       {
         "id": "urn:ngm:class:knowledge-representation",
         "label": "Knowledge Representation"
+      },
+      {
+        "id": "urn:ngm:class:matrix-factorisation",
+        "label": "Matrix Factorisation"
+      },
+      {
+        "id": "urn:ngm:class:pagerank",
+        "label": "PageRank"
       }
     ],
     "supports": [],
@@ -63,8 +127,12 @@
         "label": "Distributed System"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:complex-systems",
+        "label": "Complex Systems"
       }
     ]
   },

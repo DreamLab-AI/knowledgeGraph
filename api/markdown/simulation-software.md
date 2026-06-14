@@ -1,26 +1,107 @@
 - ### Definition
-  - Application software that constructs and executes computational models of physical, biological, or social systems, allowing experimental manipulation of parameters to study behaviour over time. Simulation software spans physics engines, agent-based frameworks, and digital twin environments, and is used across engineering, scientific research, training, and metaverse development.
+  - Simulation software is application software that constructs, parameterises, and executes [[Computational Model]]s of physical, biological, social, or engineered systems, enabling controlled experimentation without manipulating the real-world system. It encompasses [[Physics Engine]]s, [[Agent-Based Modelling]] frameworks, [[Discrete Event Simulation]] tools, and real-time [[Digital Twin]] environments, and forms a foundational layer of the [[Digital Engineering Toolchain]] used across aerospace, defence, healthcare, urban planning, and immersive computing.
 
-- ### Semantic Classification
-  - owl-class:: spatial-computing:SimulationSoftware
-  - owl-role:: concept
+- ### Overview
+  - Simulation software abstracts the complexity of real systems into mathematical and logical representations that can be executed on computing hardware, producing observable, measurable outputs under user-controlled conditions.
+  - It matters because physical experimentation is often impossible, dangerous, prohibitively expensive, or too slow — simulating a crash test, a drug interaction, a climate scenario, or a supply chain disruption costs a fraction of the real equivalent.
+  - At its core, a simulation loop consists of:
+    - A **model** — the formal representation of entities, rules, and state transitions
+    - A **solver** or **engine** — the numerical or logical machinery that advances the model through time steps or event queues
+    - A **scenario manager** — tools to specify initial conditions, inject perturbations, and parameterise sweeps
+    - A **visualisation pipeline** — rendering of state data into interpretable 2D/3D output
+    - A **data logger** — capturing trajectories and outputs for post-hoc analysis
+  - As [[High-Performance Computing]] and [[GPU Compute]] have become widely accessible, simulations have scaled from desktop experiments to planet-scale models running on supercomputer clusters or cloud infrastructure.
+
+- ### Key Components
+  - #### Simulation Engines
+    - [[Simulation Engine]] — the runtime that advances model state; may be time-stepped (continuous) or event-driven (discrete)
+    - [[Physics Engine]] — rigid-body dynamics, soft-body, fluid simulation (e.g. PhysX, Bullet, Havok); critical for physically accurate virtual worlds
+    - [[Numerical Solver]] — integrators (Euler, Runge-Kutta, Verlet) and linear-algebra backends that compute state transitions
+  - #### Modelling Paradigms
+    - [[Agent-Based Modelling]] — populations of autonomous agents following local rules; emergent macro behaviour arises from micro interactions (e.g. NetLogo, Mesa, AnyLogic)
+    - [[Discrete Event Simulation]] — state changes triggered by discrete events on a calendar queue; standard for logistics, manufacturing, and network modelling (e.g. SimPy, Arena, AnyLogic)
+    - [[Finite Element Analysis]] — mesh-based approximation of PDEs for structural, thermal, and electromagnetic domains (e.g. ANSYS, Abaqus, OpenFOAM)
+    - [[Monte Carlo Method]] — stochastic sampling to approximate distributions and quantify uncertainty (used across finance, nuclear physics, epidemiology)
+    - [[System Dynamics]] — stock-and-flow models of feedback-rich systems at aggregate level (e.g. Vensim, Stella)
+  - #### Infrastructure
+    - [[GPU Compute]] — massively parallel hardware essential for real-time physics, ray tracing, and ML-accelerated simulation
+    - [[Rendering Engine]] — converts geometry and material data into visualisable frames; real-time (Unreal, Unity) or offline (Blender Cycles, NVIDIA Omniverse)
+    - [[High-Performance Computing]] — cluster or cloud execution for large-scale sweeps and Monte Carlo ensembles
+    - [[Data Logger]] — time-series and event capture feeding post-processing, ML training, and audit trails
+  - #### Outputs and Artefacts
+    - [[Synthetic Data Generation]] — simulation as a source of labelled training data for [[Machine Learning Pipeline]]s
+    - [[Scenario Manager]] — parameterised experiment definition, sensitivity analysis, and factorial sweeps
+    - [[Visualisation Pipeline]] — 2D plots, 3D real-time rendering, and immersive [[XR Training]] environments
+
+- ### Applications and Use Cases
+  - #### Engineering and Science
+    - **Aerospace and Defence** — aerodynamic CFD, flight simulators, mission rehearsal; simulation reduces physical prototyping costs by orders of magnitude
+    - **Automotive** — crash simulation via FEA, virtual homologation, [[Autonomous Vehicle Testing]] in simulation before road trials (NVIDIA DRIVE Sim, CARLA, Waymo Simulation)
+    - **Civil and Structural** — building information modelling linked to FEA for seismic, wind, and thermal performance
+    - **[[Climate Modelling]]** — coupled atmosphere-ocean models (e.g. CESM, OpenIFS) running on HPC grids to project climate trajectories
+    - **Drug Discovery** — molecular dynamics (GROMACS, AMBER) simulating protein folding and ligand binding
+  - #### Industry and Operations
+    - **Manufacturing** — factory layout optimisation via discrete-event simulation; robot path planning; digital-twin-driven predictive maintenance
+    - **Supply Chain** — disruption modelling, demand variability, inventory optimisation through agent-based and DES tools
+    - **Energy** — grid stability, renewable integration, and nuclear reactor neutronics
+  - #### AI and Robotics
+    - **Reinforcement Learning** — sim-to-real pipelines (Isaac Gym, MuJoCo, PyBullet, Brax) training agents in simulation before physical deployment
+    - **[[Synthetic Data Generation]]** — photorealistic rendered datasets for computer vision (NVIDIA Omniverse Replicator, BlenderProc)
+    - **Robotics** — kinematic and dynamic simulation for robot design and motion planning
+  - #### Immersive and Spatial Computing
+    - **[[XR Training]]** — medical, military, and industrial training in photorealistic simulated environments
+    - **[[Digital Twin]]** — operational mirrors of physical infrastructure; live data feeds update simulation state in near-real-time
+    - **Metaverse** — persistent shared virtual worlds underpin their physics and social dynamics with simulation runtimes
 
 - ### Relationships
-  - Has Part [[Simulation Engine]]
-  - Uses [[GPU Compute]]
-  - Uses [[Rendering Engine]]
-  - Enables [[Digital Twin]]
-  - Related To [[Spatial Computing Paradigm]]
+  - hasPart:: [[Simulation Engine]]
+  - hasPart:: [[Physics Engine]]
+  - hasPart:: [[Scenario Manager]]
+  - hasPart:: [[Visualisation Pipeline]]
+  - hasPart:: [[Data Logger]]
+  - partOf:: [[Digital Engineering Toolchain]]
+  - requires:: [[Computational Model]]
+  - requires:: [[Numerical Solver]]
+  - requires:: [[High-Performance Computing]]
+  - enables:: [[Digital Twin]]
+  - enables:: [[Virtual Prototyping]]
+  - enables:: [[Synthetic Data Generation]]
+  - enables:: [[Reinforcement Learning]]
+  - dependsOn:: [[GPU Compute]]
+  - dependsOn:: [[Rendering Engine]]
+  - uses:: [[Agent-Based Modelling]]
+  - uses:: [[Finite Element Analysis]]
+  - uses:: [[Monte Carlo Method]]
+  - uses:: [[Discrete Event Simulation]]
+  - supports:: [[XR Training]]
+  - supports:: [[Autonomous Vehicle Testing]]
+  - supports:: [[Climate Modelling]]
+  - contrastsWith:: [[Emulation Software]]
+  - contrastsWith:: [[Physical Prototyping]]
+  - bridges-to:: [[Machine Learning Pipeline]]
+  - bridges-to:: [[Edge Computing]]
+  - relatedTo:: [[Spatial Computing]]
+  - relatedTo:: [[Model-Based Systems Engineering]]
 
-- ### Content
+- ### Standards and Context
+  - **IEEE 1516 (HLA — High Level Architecture)** — federation standard for distributed simulation interoperability, enabling multiple simulators to exchange state data in real time
+  - **SISO (Simulation Interoperability Standards Organisation)** — body maintaining HLA, DIS (Distributed Interactive Simulation), and TENA standards
+  - **Modelica** — open equation-based modelling language for multi-domain physical systems; underpins tools such as Dymola and OpenModelica
+  - **FMI/FMU (Functional Mock-up Interface)** — industry standard (Modelica Association) for simulator co-simulation and model exchange across toolchains
+  - **SysML / MBSE** — [[Model-Based Systems Engineering]] practice that treats simulation models as first-class system-specification artefacts
+  - **OpenUSD** — NVIDIA/Pixar scene-description standard adopted by NVIDIA Omniverse and increasingly by simulation platforms as an interchange format for 3D simulation environments
+  - Regulatory contexts in aerospace (DO-178C for software qualification), automotive (ISO 26262, SOTIF), and nuclear (NQA-1) mandate verified simulation as part of the safety case
 
-  ## Overview
-
-  Simulation Software represents an abstract concept in the metaverse ontology hierarchy.
-
-  #### Related Concepts
-  - [[owl:Thing]]
+- ### Prominent Platforms
+  - **NVIDIA Omniverse / Isaac Sim** — USD-based platform for robotics simulation, synthetic data, and digital twins
+  - **MathWorks Simulink / MATLAB** — industry-standard continuous and discrete simulation with code generation
+  - **Siemens Simcenter** — multi-physics simulation suite for FEA, CFD, and 1D systems
+  - **AnyLogic** — multi-method platform supporting DES, ABM, and system dynamics in a single model
+  - **Unreal Engine / Unity** — real-time 3D engines repurposed for high-fidelity simulation, training, and synthetic data
+  - **OpenFOAM** — open-source CFD simulation widely used in academia and industry
+  - **CARLA / NVIDIA DRIVE Sim** — autonomous vehicle simulation environments with sensor modelling and scenario scripting
+  - **MuJoCo / PyBullet / IsaacGym / Brax** — physics simulators optimised for [[Reinforcement Learning]] training pipelines
 
 - ### Provenance
-  - sources::
-  - migration-date:: 2026-04-26T00:00:00Z
+  - sources:: IEEE 1516 HLA standard; Modelica Association FMI specification; SISO standards catalogue; NVIDIA Omniverse documentation; established domain knowledge
+  - updated:: 2026-06-13

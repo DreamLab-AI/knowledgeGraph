@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:language-model",
   "domain": "ai",
-  "definition": "A language model is a probabilistic model of natural language that assigns probability distributions over sequences of tokens \u2014 words, subwords, or characters \u2014 and can be used to compute the likelihood of observed text, generate new text, or predict the next token given a preceding context. Modern large language models are deep neural networks, typically based on the transformer architecture, trained on vast corpora of text through a self-supervised next-token prediction objective. They acquire implicit representations of syntax, semantics, factual knowledge, and reasoning patterns from this training signal, and can be adapted to specific tasks through fine-tuning, prompt engineering, or instruction tuning.",
+  "definition": "A language model is a probabilistic model of natural language that assigns a probability distribution over sequences of tokens \u2014 words, subwords, or characters \u2014 enabling both likelihood estimation of observed text and generation of new text via sampling from learned conditional distributions. Modern large language models are deep neural networks based on the transformer architecture, trained on vast corpora through a self-supervised next-token prediction objective. They acquire implicit representations of syntax, semantics, world knowledge, and reasoning patterns entirely from this training signal, and can be adapted to downstream tasks through fine-tuning, instruction tuning, or prompt engineering. The paradigm has displaced earlier n-gram and recurrent neural network approaches, becoming the dominant framework for natural language processing across virtually all applied domains.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:generative-model",
@@ -13,11 +13,37 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.74,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:feed-forward-network",
+        "label": "Feed-Forward Network"
+      },
+      {
+        "id": "urn:ngm:class:positional-encoding",
+        "label": "Positional Encoding"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:pretraining",
+        "label": "Pretraining"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "id": "urn:ngm:class:compute-infrastructure",
+        "label": "Compute Infrastructure"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:text-generation",
@@ -30,12 +56,46 @@
       {
         "id": "urn:ngm:class:natural-language-understanding",
         "label": "Natural Language Understanding"
+      },
+      {
+        "id": "urn:ngm:class:code-generation",
+        "label": "Code Generation"
+      },
+      {
+        "id": "urn:ngm:class:machine-translation",
+        "label": "Machine Translation"
+      },
+      {
+        "id": "urn:ngm:class:question-answering",
+        "label": "Question Answering"
+      },
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval Augmented Generation"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:n-gram-model",
+        "label": "N-Gram Model"
+      },
+      {
+        "id": "urn:ngm:class:recurrent-neural-network",
+        "label": "Recurrent Neural Network"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-agent",
+        "label": "AI Agent"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:transformer-architecture",
@@ -52,6 +112,14 @@
       {
         "id": "urn:ngm:class:context-window",
         "label": "Context Window"
+      },
+      {
+        "id": "urn:ngm:class:tokenisation",
+        "label": "Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:byte-pair-encoding",
+        "label": "Byte Pair Encoding"
       }
     ],
     "supports": [],
@@ -73,6 +141,22 @@
       {
         "id": "urn:ngm:class:language-modeling",
         "label": "Language Modeling"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
+      },
+      {
+        "id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      },
+      {
+        "id": "urn:ngm:class:mixture-of-experts",
+        "label": "Mixture of Experts"
+      },
+      {
+        "id": "urn:ngm:class:quantisation",
+        "label": "Quantisation"
       }
     ]
   },

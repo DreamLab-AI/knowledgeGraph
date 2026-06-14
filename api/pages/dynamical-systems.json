@@ -4,7 +4,7 @@
   "slug": "dynamical-systems",
   "public": true,
   "classIri": "urn:ngm:class:dynamical-systems",
-  "domain": "general",
+  "domain": "machine-learning",
   "definition": "Dynamical systems is the mathematical study of how the state of a system evolves over time according to fixed rules. It applies to physics, biology, engineering, and control.",
   "subClassOf": [
     {

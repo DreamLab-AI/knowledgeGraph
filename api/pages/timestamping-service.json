@@ -4,7 +4,7 @@
   "slug": "timestamping-service",
   "public": true,
   "classIri": "urn:ngm:class:timestamping-service",
-  "domain": "cryptography",
+  "domain": "security",
   "definition": "A timestamping service is a system that issues verifiable proof that a piece of data existed at or before a particular time, often using cryptographic methods.",
   "subClassOf": [
     {

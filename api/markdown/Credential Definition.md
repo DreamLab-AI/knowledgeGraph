@@ -21,7 +21,7 @@ public:: true
   "@type": "Class",
   "label": "Credential Definition",
   "definition": "A credential definition is an on-ledger or registry artefact, published by a credential issuer, that binds a credential schema to the issuer's cryptographic public keys and signing parameters. It specifies the attributes a credential will contain and the cryptographic material verifiers use to validate signatures and zero-knowledge proofs derived from issued credentials. Central to decentralised-identity ecosystems such as those built on AnonCreds, a credential definition lets a holder prove possession of an issuer-signed credential, selectively disclosing only chosen attributes.",
-  "domain": "identity",
+  "domain": "security",
   "maturity": "emerging",
   "subClassOf": [{"@id": "urn:ngm:class:verifiable-credential-standard", "label": "Verifiable Credential Standard"}],
   "relations": {

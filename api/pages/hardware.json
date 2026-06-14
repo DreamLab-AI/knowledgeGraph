@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:hardware",
   "domain": "spatial-computing",
-  "definition": "Hardware in the spatial computing domain encompasses the physical devices and electronic components that execute metaverse workloads: head-mounted displays, spatial audio systems, GPU rendering accelerators, depth cameras, haptic controllers, and edge compute nodes. Hardware capability is a primary constraint on the fidelity and interactivity of immersive experiences, driving the need for hardware abstraction layers and adaptive rendering pipelines that scale content quality to available compute resources.",
+  "definition": "Hardware denotes the physical, tangible components of a computing system \u2014 processors, memory modules, storage devices, input/output peripherals, power subsystems, and interconnects \u2014 that collectively provide the substrate on which software executes. In the spatial-computing and infrastructure context it encompasses both general-purpose devices (CPUs, GPUs, FPGAs, ASICs) and specialised sensors and actuators (depth cameras, inertial measurement units, haptic controllers, head-mounted displays) that enable immersive and intelligent workloads. Hardware capability sets the fundamental performance, latency, power, and thermal envelope that software stacks must respect, making hardware design decisions inseparable from system architecture, operating-system abstractions, and application-level trade-offs. The discipline spans semiconductor fabrication, PCB design, embedded firmware, hardware security primitives, and the standards that allow heterogeneous devices to interoperate.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-platform-and-environment",
@@ -13,8 +13,8 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "mature",
   "relationships": {
     "hasPart": [
       {
@@ -24,9 +24,38 @@
       {
         "id": "urn:ngm:class:gpu-compute",
         "label": "GPU Compute"
+      },
+      {
+        "id": "urn:ngm:class:central-processing-unit",
+        "label": "Central Processing Unit"
+      },
+      {
+        "id": "urn:ngm:class:memory-subsystem",
+        "label": "Memory Subsystem"
+      },
+      {
+        "id": "urn:ngm:class:storage-device",
+        "label": "Storage Device"
+      },
+      {
+        "id": "urn:ngm:class:sensor",
+        "label": "Sensor"
       }
     ],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:operating-system",
+        "label": "Operating System"
+      },
+      {
+        "id": "urn:ngm:class:device-driver",
+        "label": "Device Driver"
+      },
+      {
+        "id": "urn:ngm:class:power-management",
+        "label": "Power Management"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:hardware-acceleration",
@@ -35,15 +64,80 @@
       {
         "id": "urn:ngm:class:embedded-systems",
         "label": "Embedded Systems"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "id": "urn:ngm:class:on-device-inference",
+        "label": "On-Device Inference"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:semiconductor-fabrication",
+        "label": "Semiconductor Fabrication"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:software",
+        "label": "Software"
+      },
+      {
+        "id": "urn:ngm:class:virtual-machine",
+        "label": "Virtual Machine"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:neural-processing-unit",
+        "label": "Neural Processing Unit"
+      },
+      {
+        "id": "urn:ngm:class:trusted-execution-environment",
+        "label": "Trusted Execution Environment"
+      }
+    ],
     "uses": [],
-    "supports": [],
-    "standardizedBy": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ieee",
+        "label": "IEEE"
+      },
+      {
+        "id": "urn:ngm:class:jedec",
+        "label": "JEDEC"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -53,6 +147,14 @@
       {
         "id": "urn:ngm:class:hardware-and-edge",
         "label": "Hardware and Edge"
+      },
+      {
+        "id": "urn:ngm:class:firmware",
+        "label": "Firmware"
+      },
+      {
+        "id": "urn:ngm:class:hardware-security-module",
+        "label": "Hardware Security Module"
       }
     ]
   },

@@ -5,15 +5,15 @@
   "public": true,
   "classIri": "urn:ngm:class:multi-agent-system",
   "domain": "ai",
-  "definition": "A multi-agent system (MAS) is a computational architecture in which multiple autonomous agents\u2014each with local perception, state, and decision-making capability\u2014interact within a shared environment to accomplish individual or collective objectives. Agents may be cooperative, competitive, or mixed-motive, and coordination emerges from direct communication, environmental signalling, or market-like mechanisms. MAS formalises distributed problem-solving where no single agent possesses global knowledge or centralised control. The paradigm spans robotics, AI orchestration, financial modelling, and decentralised protocol design.",
+  "definition": "A Multi-Agent System (MAS) is a computational architecture in which multiple autonomous agents \u2014 each equipped with local perception, internal state, and independent decision-making capability \u2014 interact within a shared environment to accomplish individual or collective objectives. Coordination emerges from direct communication, environmental signalling, stigmergy, or market-like auction mechanisms, without requiring any single agent to hold global knowledge or exert centralised control. MAS formalises distributed problem-solving by composing heterogeneous or homogeneous agent populations whose aggregate behaviour frequently exhibits emergence \u2014 properties absent in any individual agent. The paradigm spans robotics swarms, AI orchestration pipelines, financial market simulation, smart-grid balancing, and autonomous software engineering.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ai-agent-system",
-      "label": "AI Agent System"
+      "id": "urn:ngm:class:distributed-artificial-intelligence",
+      "label": "Distributed Artificial Intelligence"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.76,
   "maturity": "established",
   "relationships": {
     "hasPart": [
@@ -24,9 +24,30 @@
       {
         "id": "urn:ngm:class:inter-agent-communication",
         "label": "Inter-Agent Communication"
+      },
+      {
+        "id": "urn:ngm:class:coordination-protocol",
+        "label": "Coordination Protocol"
+      },
+      {
+        "id": "urn:ngm:class:agent-environment",
+        "label": "Agent Environment"
       }
     ],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:agent-communication-language",
+        "label": "Agent Communication Language"
+      },
+      {
+        "id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "id": "urn:ngm:class:message-passing",
+        "label": "Message Passing"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:swarm-robotics",
@@ -35,33 +56,107 @@
       {
         "id": "urn:ngm:class:collective-decision-making",
         "label": "Collective Decision Making"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-software-engineering",
+        "label": "Autonomous Software Engineering"
+      },
+      {
+        "id": "urn:ngm:class:emergent-behaviour",
+        "label": "Emergent Behaviour"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "id": "urn:ngm:class:concurrency",
+        "label": "Concurrency"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:contract-net-protocol",
+        "label": "Contract Net Protocol"
+      },
+      {
+        "id": "urn:ngm:class:fipa-acl",
+        "label": "FIPA-ACL"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:centralised-ai",
+        "label": "Centralised AI"
+      },
+      {
+        "id": "urn:ngm:class:monolithic-agent",
+        "label": "Monolithic Agent"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:reinforcement-learning",
         "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:multi-agent-reinforcement-learning",
+        "label": "Multi-Agent Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
       }
     ],
-    "supports": [],
-    "standardizedBy": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:warehouse-automation",
+        "label": "Warehouse Automation"
+      },
+      {
+        "id": "urn:ngm:class:smart-grid",
+        "label": "Smart Grid"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-trading",
+        "label": "Algorithmic Trading"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:fipa",
+        "label": "FIPA"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
-      {
-        "id": "urn:ngm:class:multi-agent-systems",
-        "label": "Multi-Agent Systems"
-      },
       {
         "id": "urn:ngm:class:emergence",
         "label": "Emergence"
       },
       {
-        "id": "urn:ngm:class:distributed-systems",
-        "label": "Distributed Systems"
+        "id": "urn:ngm:class:swarm-intelligence",
+        "label": "Swarm Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:agent-based-modelling",
+        "label": "Agent-Based Modelling"
       }
     ]
   },

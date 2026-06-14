@@ -59,7 +59,7 @@ public:: true
   "@type": "Class",
   "label": "Luma AI",
   "definition": "Luma AI is a company developing generative tools for 3D capture and video generation. Its products include neural reconstruction of scenes from photographs and a text-to-video model.",
-  "domain": "generative-ai",
+  "domain": "ai",
   "maturity": "emerging",
   "qualityScore": 0.7,
   "subClassOf": [

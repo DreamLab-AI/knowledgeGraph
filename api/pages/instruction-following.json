@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:instruction-following",
   "domain": "artificial-intelligence",
-  "definition": "Instruction following is a language model capability enabling accurate parsing and faithful execution of explicit user or system directives specified in natural language, including multi-step tasks, output format constraints, persona assignments, and conditional branching. It is principally acquired through supervised instruction tuning on curated (instruction, response) datasets and further refined via reinforcement learning from human feedback (RLHF) or direct preference optimisation (DPO). Strong instruction following is a prerequisite for reliable agentic behaviour, where a model must decompose and execute multi-step plans expressed as natural language specifications.",
+  "definition": "Instruction following is a language model capability enabling accurate parsing and faithful execution of explicit user or system directives specified in natural language, encompassing multi-step tasks, output format constraints, persona assignments, conditional branching, and constraint satisfaction. It is principally acquired through supervised instruction tuning on curated (instruction, response) datasets and further refined via reinforcement learning from human feedback (RLHF) or direct preference optimisation (DPO). Instruction following is evaluated by the degree to which a model correctly fulfils all stated requirements simultaneously without omitting or violating any constraint, and is a prerequisite for reliable agentic behaviour where a model must decompose and execute multi-step plans expressed as natural language specifications. Failure modes include instruction forgetting in long contexts, sycophantic overriding, and specification gaming.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-technique",
@@ -13,8 +13,8 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [
@@ -25,6 +25,14 @@
       {
         "id": "urn:ngm:class:rlhf",
         "label": "RLHF"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:supervised-fine-tuning",
+        "label": "Supervised Fine-Tuning"
       }
     ],
     "enables": [
@@ -35,13 +43,73 @@
       {
         "id": "urn:ngm:class:agentic-ai",
         "label": "Agentic AI"
+      },
+      {
+        "id": "urn:ngm:class:function-calling",
+        "label": "Function Calling"
+      },
+      {
+        "id": "urn:ngm:class:multi-agent-systems",
+        "label": "Multi-Agent Systems"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-planning",
+        "label": "Autonomous Planning"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:natural-language-understanding",
+        "label": "Natural Language Understanding"
+      },
+      {
+        "id": "urn:ngm:class:context-window",
+        "label": "Context Window"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:sycophancy",
+        "label": "Sycophancy"
+      },
+      {
+        "id": "urn:ngm:class:specification-gaming",
+        "label": "Specification Gaming"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human-Computer Interaction"
+      },
+      {
+        "id": "urn:ngm:class:robotic-task-planning",
+        "label": "Robotic Task Planning"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:chain-of-thought-reasoning",
+        "label": "Chain-of-Thought Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:structured-output",
+        "label": "Structured Output"
+      },
+      {
+        "id": "urn:ngm:class:system-prompt",
+        "label": "System Prompt"
+      },
+      {
+        "id": "urn:ngm:class:direct-preference-optimisation",
+        "label": "Direct Preference Optimisation"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
@@ -49,6 +117,22 @@
       {
         "id": "urn:ngm:class:prompt-engineering",
         "label": "Prompt Engineering"
+      },
+      {
+        "id": "urn:ngm:class:alignment",
+        "label": "Alignment"
+      },
+      {
+        "id": "urn:ngm:class:ifeval",
+        "label": "IFEval"
+      },
+      {
+        "id": "urn:ngm:class:constitutional-ai",
+        "label": "Constitutional AI"
+      },
+      {
+        "id": "urn:ngm:class:helpfulness",
+        "label": "Helpfulness"
       }
     ]
   },

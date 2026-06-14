@@ -1,23 +1,118 @@
 - ### Definition
-  - CLIP (Contrastive Language-Image Pre-training) is a dual-encoder neural network architecture in which a vision encoder (ViT or CNN) and a text encoder (Transformer) are jointly trained on large-scale image-text pairs using a contrastive objective that maximises the cosine similarity of matching pairs and minimises it for non-matching pairs. This training procedure produces a shared multimodal embedding space in which semantically related images and text are proximate, enabling zero-shot image classification by comparing image embeddings to textual class descriptions without any task-specific fine-tuning. CLIP embeddings have become a foundational component in text-to-image generation pipelines, image-text retrieval systems, and vision-language models.
+  - CLIP (Contrastive Language-Image Pre-training) is a dual-encoder [[Foundation Model]] architecture from OpenAI that jointly trains a [[Vision Transformer]] image encoder and a [[Transformer Architecture]] text encoder on hundreds of millions of internet-sourced image-text pairs. The training objective — InfoNCE [[Contrastive Learning]] — maximises the cosine similarity of correctly paired image and text embeddings while repelling unmatched pairs within each batch. The result is a shared [[Embedding Space]] in which semantically related images and descriptions are geometrically proximate, enabling [[Zero-Shot Learning]] image classification: at inference the model compares an image embedding to natural-language class descriptions without ever seeing those classes during training. CLIP has become a cornerstone of modern [[Multimodal AI]] pipelines, acting as the text-conditioning encoder in [[Stable Diffusion]] and powering [[Cross-Modal Retrieval]] engines.
 
-- ### Semantic Classification
-  - owl-class:: clip:CLIP
-  - owl-role:: Concept
+- ### Overview
+  - CLIP was introduced by Radford et al. at OpenAI (2021) and demonstrated that scaling self-supervised contrastive training on noisy web data could surpass ImageNet-supervised models on a broad suite of zero-shot benchmarks.
+  - The key insight is that natural language supervision is richer and more scalable than manually curated labels: billions of image-caption pairs exist on the web, providing broad semantic coverage without costly annotation.
+  - By sharing a single embedding space for both modalities, CLIP enables any downstream task that can be framed as a similarity comparison between images and text.
+  - Its [[Zero-Shot Learning]] capability means it generalises to novel categories without retraining — a critical property for open-world applications.
+  - CLIP's architecture is modality-agnostic: the vision encoder can be a [[Vision Transformer]] (ViT-B/32, ViT-L/14) or a ResNet variant; the text encoder is a masked GPT-style transformer.
+  - The model was trained on WIT (WebImageText), a 400-million-sample proprietary dataset curated from the public internet.
+  - CLIP is considered an [[Established]] [[Foundation Model]], with widespread adoption across academia and industry since 2021.
+
+- ### Key Components
+  - **Vision Encoder**
+    - Accepts raw image pixels; outputs a fixed-dimensional embedding vector.
+    - Architectures: [[Vision Transformer]] (ViT-B/32, ViT-L/14, ViT-H) or ResNet (RN50, RN101, RN50x4/16/64).
+    - Larger encoders yield richer representations at higher compute cost.
+    - The encoder projects to a shared latent dimension (typically 512 or 768) via a linear projection head.
+  - **Text Encoder**
+    - A GPT-2-style [[Transformer Architecture]] operating on BPE token sequences up to 77 tokens.
+    - The [EOS] token representation is used as the final text embedding.
+    - Projected to the same latent dimension as the image encoder.
+  - **Shared Embedding Space**
+    - Both encoders project into a common [[Embedding Space]] where dot-product (cosine) similarity is meaningful across modalities.
+    - The temperature parameter (a learned scalar) scales the logits before softmax in the [[InfoNCE Loss]].
+  - **InfoNCE Contrastive Loss**
+    - For a mini-batch of N image-text pairs, forms an N×N similarity matrix.
+    - Diagonal entries are positive (matched) pairs; off-diagonal are negatives.
+    - Cross-entropy loss is applied symmetrically — image-to-text and text-to-image directions — then averaged.
+    - Large batch sizes are critical: more negatives per step improves representation quality.
+  - **Prompt Engineering**
+    - Zero-shot classification accuracy is sensitive to the phrasing of textual class descriptions.
+    - Templates like "A photo of a {label}" substantially outperform bare class names.
+    - [[Prompt Engineering]] is therefore a first-class concern when using CLIP for classification.
+
+- ### Training and Data
+  - CLIP was pre-trained on WIT, approximately 400 million image-text pairs sourced from the internet — far larger than curated datasets like ImageNet or COCO.
+  - [[Self-Supervised Learning]] via the contrastive objective removes the need for explicit per-image labels.
+  - Training used large batch sizes (32,768) on thousands of GPUs; the contrastive loss is parallelised across devices to effectively expose each image to tens of thousands of in-batch negatives.
+  - Subsequent work (OpenCLIP, LAION-5B training runs) demonstrated that further scaling of both dataset size and model capacity yields monotonically improving representations.
+
+- ### Applications and Use Cases
+  - **Text-to-Image Generation**
+    - [[Stable Diffusion]], DALL-E 2, and Imagen use CLIP or CLIP-like encoders to condition the image generation process on text prompts, aligning generated content with textual intent.
+  - **Zero-Shot Image Classification**
+    - Encode candidate class names as text; compute similarity to image embedding; argmax gives the predicted class. No labelled examples needed for new categories.
+  - **Cross-Modal Retrieval**
+    - [[Image-Text Retrieval]] and [[Cross-Modal Retrieval]] applications: given a text query, retrieve the most similar images from a large corpus (or vice versa). Powers multimodal search engines.
+  - **Open-Vocabulary Object Detection**
+    - [[Open-Vocabulary Detection]] systems (e.g., OWL-ViT, GLIP) use CLIP features to localise and classify objects described in free-form text, not a fixed closed vocabulary.
+  - **Image Captioning and VQA**
+    - [[Vision-Language Model]] systems such as BLIP, LLaVA, and Flamingo use CLIP visual encoders as the visual backbone, feeding embeddings into a language decoder.
+  - **Multimodal Search Interfaces**
+    - [[Multimodal Search]] platforms (Photoroom, Unsplash, Google Lens-style APIs) use CLIP embeddings as the core similarity index.
+  - **Spatial and AR Grounding**
+    - Emerging spatial computing applications use CLIP-style text-image alignment for [[Augmented Reality]] scene understanding and [[Spatial Anchor]] labelling, bridging AI semantics with physical environments.
+  - **Dataset Curation**
+    - CLIP scoring is used to filter large web datasets: image-text pairs with low CLIP similarity are discarded, improving dataset quality for downstream [[Foundation Model]] training.
+  - **Reward Modelling**
+    - CLIP similarity serves as a differentiable reward signal in reinforcement-learning-from-human-feedback (RLHF) analogues for image generation, steering generation toward text-aligned outputs.
+
+- ### Limitations and Biases
+  - **Social Biases**: Training on unfiltered internet data embeds demographic, geographic, and cultural biases in the embedding space.
+  - **Fine-Grained Tasks**: CLIP underperforms on tasks requiring precise counting, spatial reasoning, or attribute binding (e.g., "three red balls to the left of a blue cube").
+  - **Prompt Sensitivity**: Small changes in wording can dramatically alter zero-shot accuracy; robust deployment requires systematic [[Prompt Engineering]].
+  - **Domain Shift**: Medical imaging, satellite imagery, and other specialised domains are underrepresented in WIT; domain-specific fine-tuning or domain-adapted CLIP variants are needed.
+  - **Text Length**: The 77-token text limit can truncate long descriptions.
+  - **Closed-Source WIT**: The original training data is not publicly released; OpenCLIP on LAION-5B is the open-source alternative.
+
+- ### Variants and Successors
+  - **OpenCLIP**: Open-source reproduction trained on LAION-400M and LAION-5B; matches or surpasses original CLIP at equivalent scale.
+  - **ALIGN** (Google): Concurrent contrastive vision-language model trained on 1.8 billion noisy image-text pairs; [[ALIGN]] demonstrates similar zero-shot capabilities.
+  - **Florence** (Microsoft): Extends CLIP with multi-task heads for detection, captioning, and retrieval; [[Florence]] targets production vision APIs.
+  - **SigLIP**: Sigmoid loss variant of CLIP that removes batch-size dependence; more training-efficient for smaller batches.
+  - **CoCa** (Contrastive Captioners): [[CoCa]] combines CLIP contrastive loss with a generative captioning loss for richer visual representations.
+  - **MetaCLIP**: Curated training data using metadata from CommonCrawl; improves data quality over raw web scraping.
+  - **EVA-CLIP**: Billion-parameter CLIP variants demonstrating scaling law improvements for vision representations.
 
 - ### Relationships
-  - uses [[Contrastive Learning]]
-  - uses [[Multimodal AI]]
-  - enables [[Image Classification]]
-  - enables [[Text-to-Image]]
-  - relatedTo [[Embedding Model]]
-  - relatedTo [[Transfer Learning]]
+  - uses:: [[Contrastive Learning]]
+  - uses:: [[Vision Transformer]]
+  - uses:: [[Transformer Architecture]]
+  - uses:: [[InfoNCE Loss]]
+  - uses:: [[Cosine Similarity]]
+  - enables:: [[Zero-Shot Learning]]
+  - enables:: [[Image Classification]]
+  - enables:: [[Cross-Modal Retrieval]]
+  - enables:: [[Open-Vocabulary Detection]]
+  - enables:: [[Image-Text Retrieval]]
+  - requires:: [[Large-Scale Dataset]]
+  - requires:: [[Self-Supervised Learning]]
+  - requires:: [[Embedding Space]]
+  - partOf:: [[Foundation Model]]
+  - dependsOn:: [[Embedding Model]]
+  - dependsOn:: [[Transfer Learning]]
+  - supports:: [[Text-to-Image Generation]]
+  - supports:: [[Stable Diffusion]]
+  - supports:: [[Multimodal Search]]
+  - contrastsWith:: [[ALIGN]]
+  - contrastsWith:: [[Florence]]
+  - contrastsWith:: [[CoCa]]
+  - relatedTo:: [[Vision-Language Model]]
+  - relatedTo:: [[Prompt Engineering]]
+  - relatedTo:: [[Multimodal AI]]
+  - bridges-to:: [[Augmented Reality]]
+  - bridges-to:: [[Spatial Anchor]]
 
-- ### Content
-  - CLIP's training paradigm is a form of self-supervised Contrastive Learning applied at the dataset scale of hundreds of millions of image-text pairs harvested from the internet. The dual-encoder architecture processes images through a Vision Transformer (ViT) or ResNet and text through a GPT-like Transformer, projecting each modality into a shared 512 or 768-dimensional embedding space. The InfoNCE contrastive loss maximises the similarity of the N correct (image, text) pairs within a training batch of N² possible pairings, pushing embeddings of matched pairs together and unmatched pairs apart.
-  - Zero-shot classification capability emerges because, at inference, the model can compare an image embedding to text embeddings of arbitrary natural language descriptions — not just a fixed, pre-specified label set. This makes CLIP highly flexible: it can classify images into categories it was never explicitly trained on, provided a descriptive text prompt. This property has been exploited in downstream applications including open-vocabulary object detection, image-text retrieval, multimodal search engines, and as the conditioning encoder in Stable Diffusion and other latent diffusion Text-to-Image models.
-  - CLIP's Embedding Model output has been widely adopted as a general visual feature representation, demonstrating strong Transfer Learning properties: CLIP features fine-tuned on small domain-specific datasets achieve competitive performance with fully supervised models trained on large datasets. Limitations include known biases inherited from web-scraped training data, sensitivity to prompt phrasing in zero-shot classification (prompt engineering is required for optimal performance), and difficulty with fine-grained counting or spatial reasoning tasks where the contrastive objective provides weak supervision signal.
+- ### Standards and Context
+  - CLIP does not correspond to a formal standards-body specification; it is an industry-established research paradigm.
+  - The original model weights and inference code are released under the MIT licence by OpenAI.
+  - OpenCLIP (LAION / BAAI) provides open weights and reproducible training runs, establishing de facto community standards for open CLIP.
+  - Evaluation benchmarks: ImageNet zero-shot top-1 accuracy is the primary headline metric; additional evaluations use MSCOCO retrieval (R@1 image-to-text and text-to-image), Flickr30K, and EvalBench suites.
+  - LAION's CLIP-score filtering threshold (cosine similarity ≥ 0.28) has become a widely adopted standard for web dataset curation.
 
 - ### Provenance
-  - sources::
+  - sources:: Radford et al. "Learning Transferable Visual Models From Natural Language Supervision" (OpenAI 2021); OpenCLIP (LAION 2022-2024); HuggingFace CLIP documentation
+  - updated:: 2026-06-13
   - migration-date:: 2026-05-19T00:00:00Z

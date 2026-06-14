@@ -92,7 +92,7 @@ alias:: AIGroundedDomain
   "@type": "Class",
   "label": "AI Grounded Domain",
   "definition": "The AI Grounded Domain covers the connection of model representations and outputs to verifiable external referents such as sensor data, documents and physical context. Its scope includes grounding language in perception, citation and provenance, and the alignment of generated claims with sources of truth. It is a sub-area of the Artificial Intelligence Domain concerned with factual and perceptual grounding. The boundary excludes ungrounded generative behaviour, which is treated under the Generative AI Domain.",
-  "domain": "ai-grounded",
+  "domain": "ai",
   "maturity": "emerging",
   "qualityScore": 0.7,
   "subClassOf": [

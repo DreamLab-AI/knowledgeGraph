@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:onnx-runtime",
   "domain": "ai",
-  "definition": "ONNX Runtime is an open-source, cross-platform inference and training acceleration engine developed by Microsoft that executes models represented in the Open Neural Network Exchange (ONNX) format. It applies a suite of graph optimisations\u2014operator fusion, constant folding, and memory planning\u2014and routes computation through hardware-specific execution providers (CUDA, TensorRT, DirectML, OpenVINO, CoreML) to maximise throughput and minimise latency across diverse deployment targets.",
+  "definition": "ONNX Runtime is an open-source, cross-platform inference and training acceleration engine developed by Microsoft that executes models represented in the Open Neural Network Exchange (ONNX) format. It applies a multi-pass graph optimisation pipeline\u2014including operator fusion, constant folding, and common subexpression elimination\u2014before routing computation through hardware-specific execution providers such as CUDA, TensorRT, DirectML, OpenVINO, CoreML, and QNN to maximise throughput and minimise latency. The runtime decouples training-time framework choice from deployment-time execution environment, allowing models trained in PyTorch, TensorFlow, or scikit-learn to be deployed with a single, vendor-neutral API. In 2024\u20132025 it extended into large language model inference via the onnxruntime-genai extensions, adding KV-cache management and autoregressive decoding primitives.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:inference-engine",
@@ -13,22 +13,52 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.74,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [
+    "requires": [
       {
-        "id": "urn:ngm:class:real-time-inference-engine",
-        "label": "Real-Time Inference Engine"
+        "id": "urn:ngm:class:onnx",
+        "label": "ONNX"
       },
       {
-        "id": "urn:ngm:class:ai-model-inference-engine",
-        "label": "AI Model Inference Engine"
+        "id": "urn:ngm:class:onnx-model-format",
+        "label": "ONNX Model Format"
       }
     ],
-    "dependsOn": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:model-deployment",
+        "label": "Model Deployment"
+      },
+      {
+        "id": "urn:ngm:class:edge-inference",
+        "label": "Edge Inference"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model-inference",
+        "label": "Large Language Model Inference"
+      },
+      {
+        "id": "urn:ngm:class:real-time-inference",
+        "label": "Real-Time Inference"
+      },
+      {
+        "id": "urn:ngm:class:mixed-precision-inference",
+        "label": "Mixed-Precision Inference"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:cuda",
+        "label": "CUDA"
+      },
+      {
+        "id": "urn:ngm:class:directml",
+        "label": "DirectML"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:onnx-standard",
@@ -39,20 +69,97 @@
         "label": "ONNX Operator Set"
       }
     ],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:tensorrt",
+        "label": "TensorRT"
+      },
+      {
+        "id": "urn:ngm:class:tensorrt-llm",
+        "label": "TensorRT-LLM"
+      },
+      {
+        "id": "urn:ngm:class:vllm",
+        "label": "vLLM"
+      },
+      {
+        "id": "urn:ngm:class:llama-cpp",
+        "label": "llama.cpp"
+      },
+      {
+        "id": "urn:ngm:class:openvino",
+        "label": "OpenVINO"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:windows-copilot-plus",
+        "label": "Windows Copilot+"
+      },
+      {
+        "id": "urn:ngm:class:mobile-machine-learning",
+        "label": "Mobile Machine Learning"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:graph-optimisation",
+        "label": "Graph Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:operator-fusion",
+        "label": "Operator Fusion"
+      },
+      {
+        "id": "urn:ngm:class:model-quantisation",
+        "label": "Model Quantisation"
+      },
+      {
+        "id": "urn:ngm:class:execution-provider",
+        "label": "Execution Provider"
+      },
+      {
+        "id": "urn:ngm:class:kv-cache",
+        "label": "KV Cache"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:pytorch",
+        "label": "PyTorch"
+      },
+      {
+        "id": "urn:ngm:class:tensorflow",
+        "label": "TensorFlow"
+      },
+      {
+        "id": "urn:ngm:class:hugging-face-transformers",
+        "label": "Hugging Face Transformers"
+      },
+      {
+        "id": "urn:ngm:class:scikit-learn",
+        "label": "scikit-learn"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:onnx-community",
+        "label": "ONNX Community"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:onnx",
-        "label": "ONNX"
+        "id": "urn:ngm:class:model-optimisation",
+        "label": "Model Optimisation"
       },
       {
-        "id": "urn:ngm:class:model-deployment",
-        "label": "Model Deployment"
+        "id": "urn:ngm:class:neural-network-compilation",
+        "label": "Neural Network Compilation"
+      },
+      {
+        "id": "urn:ngm:class:mlops",
+        "label": "MLOps"
       }
     ]
   },

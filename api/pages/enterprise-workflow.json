@@ -4,7 +4,7 @@
   "slug": "enterprise-workflow",
   "public": true,
   "classIri": "urn:ngm:class:enterprise-workflow",
-  "domain": "general",
+  "domain": "distributed-collaboration",
   "definition": "An enterprise workflow is a defined sequence of tasks and approvals that an organisation uses to carry out a business process. Software systems coordinate and automate these workflows.",
   "subClassOf": [
     {

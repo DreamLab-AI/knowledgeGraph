@@ -4,7 +4,7 @@
   "slug": "political-economy",
   "public": true,
   "classIri": "urn:ngm:class:political-economy",
-  "domain": "economics",
+  "domain": "finance",
   "definition": "The study of how political institutions, the political environment, and economic systems interact and influence one another. It examines how power and policy shape the production and distribution of wealth.",
   "subClassOf": [
     {

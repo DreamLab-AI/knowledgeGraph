@@ -21,7 +21,7 @@ public:: true
   "@type": "Class",
   "label": "Bullet Physics",
   "definition": "Bullet Physics is an open-source, real-time physics simulation library that provides collision detection, rigid body dynamics, and soft body simulation for use in games, robotics, visual effects, and scientific computing. Originally developed by Erwin Coumans, it implements discrete and continuous collision detection alongside a constraint solver, enabling physically plausible interactions between complex 3D geometries at interactive frame rates.",
-  "domain": "spatial",
+  "domain": "spatial-computing",
   "maturity": "mature",
   "subClassOf": [{"@id": "urn:ngm:class:physics-engine", "label": "Physics Engine"}],
   "relations": {

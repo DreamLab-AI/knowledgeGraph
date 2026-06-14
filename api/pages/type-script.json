@@ -4,8 +4,8 @@
   "slug": "type-script",
   "public": true,
   "classIri": "urn:ngm:class:type-script",
-  "domain": "general",
-  "definition": "A statically typed superset of JavaScript developed by Microsoft that compiles to plain JavaScript and adds optional type annotations and compile-time checking.",
+  "domain": "infrastructure",
+  "definition": "TypeScript is a statically typed superset of JavaScript developed and maintained by Microsoft that adds optional type annotations, interfaces, generics, and compile-time type checking to the JavaScript language. Source code is transpiled by the TypeScript compiler (tsc) to plain JavaScript, making it compatible with any JavaScript runtime or browser without requiring runtime changes. The type system enables large-scale application development by surfacing errors at development time, improving editor tooling such as intelligent autocompletion, safe refactoring, and inline documentation. TypeScript has become the dominant choice for enterprise front-end and Node.js back-end development, underpinning major frameworks such as Angular, NestJS, and Deno.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:programming-language",
@@ -13,31 +13,153 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
-  "maturity": "established",
+  "qualityScore": 0.75,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:type-system",
+        "label": "Type System"
+      },
+      {
+        "id": "urn:ngm:class:generics",
+        "label": "Generics"
+      },
+      {
+        "id": "urn:ngm:class:interface",
+        "label": "Interface"
+      },
+      {
+        "id": "urn:ngm:class:typescript-compiler",
+        "label": "TypeScript Compiler"
+      }
+    ],
     "requires": [
       {
-        "id": "urn:ngm:class:programming-language",
-        "label": "Programming Language"
+        "id": "urn:ngm:class:javascript",
+        "label": "JavaScript"
+      },
+      {
+        "id": "urn:ngm:class:node-js",
+        "label": "Node.js"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:software-engineering",
         "label": "Software Engineering"
+      },
+      {
+        "id": "urn:ngm:class:static-analysis",
+        "label": "Static Analysis"
+      },
+      {
+        "id": "urn:ngm:class:refactoring",
+        "label": "Refactoring"
+      },
+      {
+        "id": "urn:ngm:class:web-application",
+        "label": "Web Application"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:ecmascript",
+        "label": "ECMAScript"
+      },
+      {
+        "id": "urn:ngm:class:npm",
+        "label": "npm"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:structural-typing",
+        "label": "Structural Typing"
+      },
+      {
+        "id": "urn:ngm:class:type-inference",
+        "label": "Type Inference"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:javascript",
+        "label": "JavaScript"
+      },
+      {
+        "id": "urn:ngm:class:flow-type-checker",
+        "label": "Flow Type Checker"
+      },
+      {
+        "id": "urn:ngm:class:dart",
+        "label": "Dart"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:api-design",
+        "label": "API Design"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:abstract-syntax-tree",
+        "label": "Abstract Syntax Tree"
+      },
+      {
+        "id": "urn:ngm:class:language-server-protocol",
+        "label": "Language Server Protocol"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:react",
+        "label": "React"
+      },
+      {
+        "id": "urn:ngm:class:angular",
+        "label": "Angular"
+      },
+      {
+        "id": "urn:ngm:class:deno",
+        "label": "Deno"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:microsoft",
+        "label": "Microsoft"
+      },
+      {
+        "id": "urn:ngm:class:ecma-international",
+        "label": "ECMA International"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:javascript-ecosystem",
+        "label": "JavaScript Ecosystem"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:transpilation",
+        "label": "Transpilation"
+      },
+      {
+        "id": "urn:ngm:class:webpack",
+        "label": "Webpack"
+      },
+      {
+        "id": "urn:ngm:class:eslint",
+        "label": "ESLint"
+      }
+    ]
   },
   "wikilinks": [
     {

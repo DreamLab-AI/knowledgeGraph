@@ -4,23 +4,49 @@
   "slug": "rdf",
   "public": true,
   "classIri": "urn:ngm:class:rdf",
-  "domain": "infrastructure",
-  "definition": "The Resource Description Framework (RDF) is a W3C-standardised graph data model in which all statements are expressed as subject\u2013predicate\u2013object triples, where each component is identified by an IRI or, for literal values, a typed or language-tagged string. RDF triples compose into directed, labelled graphs that can be serialised in multiple syntaxes including Turtle, N-Triples, JSON-LD, and RDF/XML, and queried via the SPARQL query language. As the foundational layer of the Semantic Web and Linked Data ecosystems, RDF enables machine-readable knowledge representation that supports federated querying, ontological reasoning with OWL, and interoperability across heterogeneous data sources through shared vocabularies and namespace URIs.",
+  "domain": "data",
+  "definition": "The Resource Description Framework (RDF) is a W3C-standardised graph data model in which all statements are expressed as subject\u2013predicate\u2013object triples, where each component is identified by an IRI (Internationalised Resource Identifier) or, for literal values, a typed or language-tagged string. RDF triples compose into directed, labelled graphs that can be serialised in multiple syntaxes including Turtle, N-Triples, JSON-LD, N-Quads, and RDF/XML, and queried via the SPARQL protocol and query language. As the foundational layer of the Semantic Web and Linked Data ecosystems, RDF enables machine-readable knowledge representation that supports federated querying, ontological reasoning with OWL2, and cross-source interoperability through shared vocabulary IRIs. The open-world assumption distinguishes RDF from closed-world relational models, allowing independent datasets to be merged without schema negotiation.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:infra-data-management",
-      "label": "Data Management"
+      "id": "urn:ngm:class:knowledge-representation",
+      "label": "Knowledge Representation"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.76,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:rdf-triple",
+        "label": "RDF Triple"
+      },
+      {
+        "id": "urn:ngm:class:rdf-graph",
+        "label": "RDF Graph"
+      },
+      {
+        "id": "urn:ngm:class:iri",
+        "label": "IRI"
+      },
+      {
+        "id": "urn:ngm:class:rdf-literal",
+        "label": "RDF Literal"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:iri",
+        "label": "IRI"
+      },
+      {
+        "id": "urn:ngm:class:namespace",
+        "label": "Namespace"
+      }
+    ],
     "enables": [
       {
-        "id": "urn:ngm:class:semantic-web-linked-data-standard",
+        "id": "urn:ngm:class:semantic-web",
         "label": "Semantic Web"
       },
       {
@@ -30,6 +56,14 @@
       {
         "id": "urn:ngm:class:knowledge-graph",
         "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:ontological-reasoning",
+        "label": "Ontological Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:federated-query",
+        "label": "Federated Query"
       }
     ],
     "dependsOn": [],
@@ -37,22 +71,87 @@
       {
         "id": "urn:ngm:class:web-standard",
         "label": "Web Standard"
+      },
+      {
+        "id": "urn:ngm:class:w3c-specification",
+        "label": "W3C Specification"
+      },
+      {
+        "id": "urn:ngm:class:graph-data-model",
+        "label": "Graph Data Model"
       }
     ],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:relational-database",
+        "label": "Relational Database"
+      },
+      {
+        "id": "urn:ngm:class:property-graph",
+        "label": "Property Graph"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-identifier",
+        "label": "Decentralised Identifier"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:turtle",
+        "label": "Turtle"
+      },
+      {
+        "id": "urn:ngm:class:json-ld",
+        "label": "JSON-LD"
+      },
       {
         "id": "urn:ngm:class:sparql",
         "label": "SPARQL"
       },
       {
+        "id": "urn:ngm:class:rdfs",
+        "label": "RDFS"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:owl",
+        "label": "OWL"
+      },
+      {
+        "id": "urn:ngm:class:shacl",
+        "label": "SHACL"
+      },
+      {
+        "id": "urn:ngm:class:triple-store",
+        "label": "Triple Store"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:w3c",
+        "label": "W3C"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
         "id": "urn:ngm:class:ontology",
         "label": "Ontology"
+      },
+      {
+        "id": "urn:ngm:class:schema-org",
+        "label": "Schema.org"
+      },
+      {
+        "id": "urn:ngm:class:provenance",
+        "label": "Provenance"
       }
     ]
   },

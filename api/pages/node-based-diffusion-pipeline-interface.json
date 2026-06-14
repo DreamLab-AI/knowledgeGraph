@@ -5,19 +5,45 @@
   "public": true,
   "classIri": "urn:ngm:class:node-based-diffusion-pipeline-interface",
   "domain": "ai",
-  "definition": "ComfyUI is an open-source, node-based graphical interface for constructing and executing Stable Diffusion image-generation pipelines. It exposes the underlying diffusion inference graph as a visual workflow of interconnected nodes, enabling non-destructive, reproducible experimentation. The tool has become a de-facto community standard for advanced image and video synthesis workflows.",
+  "definition": "A node-based diffusion pipeline interface is a visual programming environment that models a generative diffusion inference graph as a directed acyclic graph of interconnected functional nodes, where each node encapsulates a discrete operation such as model loading, text conditioning, latent sampling, or image decoding, and edges carry tensor data between nodes. This paradigm exposes the full computational structure of a diffusion pipeline as an inspectable, composable, and reproducible artefact rather than a hidden implementation detail. Tools such as ComfyUI exemplify this pattern: workflows are serialised as JSON graphs that can be version-controlled, shared, and deployed as production automation. The approach bridges visual dataflow programming traditions with modern deep-learning inference, enabling practitioners to compose multi-model, multi-stage generation pipelines without writing procedural code.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ai-framework",
-      "label": "AI Framework"
+      "id": "urn:ngm:class:visual-programming-environment",
+      "label": "Visual Programming Environment"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.74,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:node-graph-editor",
+        "label": "Node Graph Editor"
+      },
+      {
+        "id": "urn:ngm:class:workflow-serialisation-format",
+        "label": "Workflow Serialisation Format"
+      },
+      {
+        "id": "urn:ngm:class:custom-node-extension-system",
+        "label": "Custom Node Extension System"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:deep-learning-framework",
+        "label": "Deep Learning Framework"
+      },
+      {
+        "id": "urn:ngm:class:pytorch",
+        "label": "PyTorch"
+      },
+      {
+        "id": "urn:ngm:class:vae-image-encoding",
+        "label": "VAE Image Encoding"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:image-generation",
@@ -28,14 +54,57 @@
         "label": "Video Generation"
       },
       {
+        "id": "urn:ngm:class:text-to-image",
+        "label": "Text-to-Image"
+      },
+      {
         "id": "urn:ngm:class:generative-ai",
         "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:inpainting",
+        "label": "Inpainting"
+      },
+      {
+        "id": "urn:ngm:class:image-upscaling",
+        "label": "Image Upscaling"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:dataflow-execution-model",
+        "label": "Dataflow Execution Model"
+      },
+      {
+        "id": "urn:ngm:class:directed-acyclic-graph",
+        "label": "Directed Acyclic Graph"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:webui-form-based-interface",
+        "label": "WebUI Form-Based Interface"
+      },
+      {
+        "id": "urn:ngm:class:imperative-inference-script",
+        "label": "Imperative Inference Script"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:visual-effects-node-graph",
+        "label": "Visual Effects Node Graph"
+      },
+      {
+        "id": "urn:ngm:class:shader-graph",
+        "label": "Shader Graph"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai-api",
+        "label": "Generative AI API"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:stable-diffusion-image-model",
@@ -48,15 +117,32 @@
       {
         "id": "urn:ngm:class:gpu-compute",
         "label": "GPU Compute"
+      },
+      {
+        "id": "urn:ngm:class:latent-diffusion-model",
+        "label": "Latent Diffusion Model"
+      },
+      {
+        "id": "urn:ngm:class:controlnet",
+        "label": "ControlNet"
+      },
+      {
+        "id": "urn:ngm:class:lora-adapter",
+        "label": "LoRA Adapter"
       }
     ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:generative-ai-toolchain",
+        "label": "Generative AI Toolchain"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:node-based-editor",
-        "label": "Node Based Editor"
+        "label": "Node-Based Editor"
       },
       {
         "id": "urn:ngm:class:open-source-software",
@@ -67,8 +153,16 @@
         "label": "Machine Learning Pipeline"
       },
       {
-        "id": "urn:ngm:class:text-to-image",
-        "label": "Text-to-Image"
+        "id": "urn:ngm:class:dataflow-programming",
+        "label": "Dataflow Programming"
+      },
+      {
+        "id": "urn:ngm:class:ip-adapter",
+        "label": "IP-Adapter"
+      },
+      {
+        "id": "urn:ngm:class:animatediff",
+        "label": "AnimateDiff"
       }
     ]
   },

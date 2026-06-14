@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:quic",
   "domain": "distributed-systems",
-  "definition": "A transport layer network protocol built on UDP that provides multiplexed, encrypted, low-latency connections and forms the basis of HTTP/3.",
+  "definition": "QUIC is a general-purpose transport layer protocol standardised as RFC 9000 by the IETF, running atop UDP rather than TCP in order to eliminate head-of-line blocking inherent in byte-stream semantics. It integrates TLS 1.3 cryptographic handshaking into the connection establishment phase, reducing round-trip latency to as little as zero additional RTT for resumed sessions, and multiplexes independent byte-streams so that packet loss on one stream does not stall others. Developed initially at Google and later standardised as the foundation for HTTP/3 (RFC 9114), QUIC also supports seamless connection migration across changing IP addresses, making it particularly suited to mobile and lossy network environments.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:communication-protocol",
@@ -13,31 +13,145 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.75,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:stream-multiplexing",
+        "label": "Stream Multiplexing"
+      },
+      {
+        "id": "urn:ngm:class:connection-migration",
+        "label": "Connection Migration"
+      },
+      {
+        "id": "urn:ngm:class:flow-control",
+        "label": "Flow Control"
+      }
+    ],
     "requires": [
       {
-        "id": "urn:ngm:class:communication-protocol",
-        "label": "Communication Protocol"
+        "id": "urn:ngm:class:udp",
+        "label": "UDP"
+      },
+      {
+        "id": "urn:ngm:class:tls",
+        "label": "TLS"
       }
     ],
     "enables": [
       {
+        "id": "urn:ngm:class:http3",
+        "label": "HTTP/3"
+      },
+      {
         "id": "urn:ngm:class:scalability",
         "label": "Scalability"
+      },
+      {
+        "id": "urn:ngm:class:low-latency-networking",
+        "label": "Low-Latency Networking"
+      },
+      {
+        "id": "urn:ngm:class:connection-migration",
+        "label": "Connection Migration"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:network-architecture",
+        "label": "Network Architecture"
+      },
+      {
+        "id": "urn:ngm:class:congestion-control",
+        "label": "Congestion Control"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:transport-layer",
+        "label": "Transport Layer"
+      },
+      {
+        "id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:tcp",
+        "label": "TCP"
+      },
+      {
+        "id": "urn:ngm:class:http2",
+        "label": "HTTP/2"
+      },
+      {
+        "id": "urn:ngm:class:sctp",
+        "label": "SCTP"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "id": "urn:ngm:class:real-time-communication",
+        "label": "Real-Time Communication"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:tls",
+        "label": "TLS"
+      },
+      {
+        "id": "urn:ngm:class:udp",
+        "label": "UDP"
+      },
+      {
+        "id": "urn:ngm:class:packet-acknowledgement",
+        "label": "Packet Acknowledgement"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:zero-rtt-resumption",
+        "label": "Zero-RTT Resumption"
+      },
+      {
+        "id": "urn:ngm:class:mobile-networking",
+        "label": "Mobile Networking"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:internet-protocol-suite",
+        "label": "Internet Protocol Suite"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:webrtc",
+        "label": "WebRTC"
+      },
+      {
+        "id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ]
   },
   "wikilinks": [
     {

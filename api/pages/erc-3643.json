@@ -4,35 +4,138 @@
   "slug": "erc-3643",
   "public": true,
   "classIri": "urn:ngm:class:erc-3643",
-  "domain": "standards",
-  "definition": "ERC-3643 is an Ethereum token standard for permissioned tokens that embeds identity and compliance checks for the transfer of regulated assets.",
+  "domain": "blockchain",
+  "definition": "ERC-3643 is an Ethereum token standard, also known as T-REX (Token for Regulated EXchanges), that enables the issuance and management of permissioned security tokens on public blockchain infrastructure. It embeds on-chain identity verification and compliance rule enforcement into the token transfer logic, ensuring that only verified, eligible investors can hold and transfer regulated digital assets. The standard extends ERC-20 with an identity registry, modular compliance modules, and claim-based permissioning, making it suitable for tokenised securities, real-world assets, and other regulated financial instruments. ERC-3643 was standardised through the Ethereum Improvement Proposal process and has been adopted by multiple institutional asset tokenisation platforms.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:technical-standard",
-      "label": "Technical Standard"
+      "id": "urn:ngm:class:token-standard",
+      "label": "Token Standard"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.75,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:ethereum-smart-contract-platform",
+        "id": "urn:ngm:class:ethereum",
         "label": "Ethereum"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "id": "urn:ngm:class:kyc",
+        "label": "Know Your Customer"
       }
     ],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:security-token",
+        "label": "Security Token"
+      },
+      {
+        "id": "urn:ngm:class:asset-tokenisation",
+        "label": "Asset Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:permissioned-transfer",
+        "label": "Permissioned Transfer"
+      }
+    ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:erc-20",
+        "label": "ERC-20"
+      },
+      {
+        "id": "urn:ngm:class:erc-734",
+        "label": "ERC-734"
+      },
+      {
+        "id": "urn:ngm:class:erc-735",
+        "label": "ERC-735"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:erc-20",
+        "label": "ERC-20"
+      },
+      {
+        "id": "urn:ngm:class:erc-1400",
+        "label": "ERC-1400"
+      },
+      {
+        "id": "urn:ngm:class:erc-1404",
+        "label": "ERC-1404"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      },
+      {
+        "id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self-Sovereign Identity"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:identity-registry",
+        "label": "Identity Registry"
+      },
+      {
+        "id": "urn:ngm:class:claim-issuer",
+        "label": "Claim Issuer"
+      },
+      {
+        "id": "urn:ngm:class:compliance-module",
+        "label": "Compliance Module"
+      },
+      {
+        "id": "urn:ngm:class:on-chain-identity",
+        "label": "On-Chain Identity"
+      }
+    ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ethereum-improvement-proposal",
+        "label": "Ethereum Improvement Proposal"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:real-world-asset-tokenisation",
+        "label": "Real-World Asset Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:digital-securities",
+        "label": "Digital Securities"
+      },
+      {
+        "id": "urn:ngm:class:aml-compliance",
+        "label": "AML Compliance"
+      }
+    ]
   },
   "wikilinks": [
     {

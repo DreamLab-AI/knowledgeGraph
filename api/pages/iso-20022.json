@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:iso-20022",
   "domain": "finance",
-  "definition": "ISO 20022 is the international standard for financial messaging that provides a common platform for the development of messages in the financial services industry, using a methodology that decouples business concepts from syntax through a central repository of business components, message definitions, and XML/ASN.1/JSON encoding rules. Published by the International Organisation for Standardisation, the standard covers payments (credit transfers, direct debits), securities (settlement, clearing), trade finance, and foreign exchange, replacing legacy formats such as SWIFT MT and CHIPS. Its rich data model carries structured remittance information, legal entity identifiers, and purpose codes that older formats cannot accommodate, enabling straight-through processing, improved fraud detection, and regulatory reporting automation. Major financial market infrastructures worldwide \u2014 TARGET2, CHAPS, the US Fedwire and CHIPS \u2014 are migrating to ISO 20022 between 2023 and 2025.",
+  "definition": "ISO 20022 is the international standard for financial services messaging, providing a universal methodology that decouples business concepts from syntax through a central repository of business components, message definitions, and multi-syntax encoding rules covering XML, ASN.1, and JSON. Published by the International Organisation for Standardisation and maintained by ISO Technical Committee 68, the standard spans payments (credit transfers, direct debits), securities settlement and clearing, trade finance, and foreign exchange, replacing legacy formats such as SWIFT MT and CHIPS. Its rich, structured data model carries full remittance information, Legal Entity Identifiers, purpose codes, and beneficiary details that legacy formats cannot accommodate, enabling straight-through processing, automated reconciliation, and enhanced regulatory reporting. Major financial market infrastructures worldwide \u2014 including TARGET2, CHAPS, Fedwire, and the SWIFT network \u2014 have migrated or are actively migrating to ISO 20022, making it the convergence standard for the global payments landscape.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:interoperability-standard",
@@ -13,11 +13,20 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.75,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:message-schema-validation",
+        "label": "Message Schema Validation"
+      },
+      {
+        "id": "urn:ngm:class:data-mapping",
+        "label": "Data Mapping"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:cross-border-payments",
@@ -28,14 +37,53 @@
         "label": "Regulatory Reporting"
       },
       {
+        "id": "urn:ngm:class:straight-through-processing",
+        "label": "Straight-Through Processing"
+      },
+      {
+        "id": "urn:ngm:class:automated-reconciliation",
+        "label": "Automated Reconciliation"
+      },
+      {
         "id": "urn:ngm:class:central-bank-digital-currency",
         "label": "Central Bank Digital Currency"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:business-process-model",
+        "label": "Business Process Model"
+      },
+      {
+        "id": "urn:ngm:class:data-model",
+        "label": "Data Model"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:swift-mt",
+        "label": "SWIFT MT"
+      },
+      {
+        "id": "urn:ngm:class:fixed-length-financial-message",
+        "label": "Fixed-Length Financial Message"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "id": "urn:ngm:class:open-banking",
+        "label": "Open Banking"
+      },
+      {
+        "id": "urn:ngm:class:api-economy",
+        "label": "API Economy"
+      }
+    ],
     "uses": [],
     "supports": [
       {
@@ -45,12 +93,24 @@
       {
         "id": "urn:ngm:class:financial-infrastructure",
         "label": "Financial Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:instant-payments",
+        "label": "Instant Payments"
+      },
+      {
+        "id": "urn:ngm:class:securities-settlement",
+        "label": "Securities Settlement"
       }
     ],
     "standardizedBy": [
       {
         "id": "urn:ngm:class:iso",
         "label": "ISO"
+      },
+      {
+        "id": "urn:ngm:class:swift",
+        "label": "SWIFT"
       }
     ],
     "partOf": [],
@@ -66,6 +126,18 @@
       {
         "id": "urn:ngm:class:data-standards",
         "label": "Data Standards"
+      },
+      {
+        "id": "urn:ngm:class:xml",
+        "label": "XML"
+      },
+      {
+        "id": "urn:ngm:class:financial-messaging",
+        "label": "Financial Messaging"
+      },
+      {
+        "id": "urn:ngm:class:legal-entity-identifier",
+        "label": "Legal Entity Identifier"
       }
     ]
   },

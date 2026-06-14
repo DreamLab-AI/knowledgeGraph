@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:photorealistic-rendering",
   "domain": "spatial-computing",
-  "definition": "Photorealistic Rendering is the process of generating images from 3D scene descriptions that are visually indistinguishable from photographs, achieved through physically accurate simulation of light transport, material properties, and camera optics. Techniques include ray tracing, path tracing, and physically-based rendering (PBR) pipelines that compute global illumination, reflections, shadows, and subsurface scattering. Photorealistic output is increasingly demanded in spatial computing environments for digital-twin fidelity and immersive XR experiences.",
+  "definition": "Photorealistic Rendering is the computational process of generating images from 3D scene descriptions that are visually indistinguishable from photographs, achieved through physically accurate simulation of light transport, material properties, camera optics, and atmospheric phenomena. Core algorithms include path tracing and bidirectional path tracing, which apply Monte Carlo integration over the rendering equation to compute global illumination, caustics, subsurface scattering, and volumetric effects. Modern implementations leverage GPU hardware ray-tracing acceleration, physically based rendering (PBR) material models such as the Cook-Torrance BRDF, and AI-driven denoising to make high-fidelity output feasible in interactive and real-time contexts. Photorealistic rendering underpins digital twin visualisation, cinematic virtual production, immersive XR experiences, and AI-generated synthetic training data.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-display-and-rendering",
@@ -13,11 +13,41 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "emerging",
+  "qualityScore": 0.72,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:global-illumination",
+        "label": "Global Illumination"
+      },
+      {
+        "id": "urn:ngm:class:ambient-occlusion",
+        "label": "Ambient Occlusion"
+      },
+      {
+        "id": "urn:ngm:class:subsurface-scattering",
+        "label": "Subsurface Scattering"
+      },
+      {
+        "id": "urn:ngm:class:volumetric-rendering",
+        "label": "Volumetric Rendering"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:gpu-computing",
+        "label": "GPU Computing"
+      },
+      {
+        "id": "urn:ngm:class:scene-graph",
+        "label": "Scene Graph"
+      },
+      {
+        "id": "urn:ngm:class:3-d-geometry",
+        "label": "3D Geometry"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:real-time-rendering",
@@ -26,16 +56,50 @@
       {
         "id": "urn:ngm:class:3-d-gaussian-splatting",
         "label": "3D Gaussian Splatting"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:virtual-production",
+        "label": "Virtual Production"
+      },
+      {
+        "id": "urn:ngm:class:synthetic-data-generation",
+        "label": "Synthetic Data Generation"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:rendering-equation",
+        "label": "Rendering Equation"
+      },
+      {
+        "id": "urn:ngm:class:3-d-rendering-engine",
+        "label": "3D Rendering Engine"
+      }
+    ],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:ray-tracing",
         "label": "Ray Tracing"
+      },
+      {
+        "id": "urn:ngm:class:path-tracing",
+        "label": "Path Tracing"
       },
       {
         "id": "urn:ngm:class:physically-based-rendering",
@@ -44,19 +108,44 @@
       {
         "id": "urn:ngm:class:shader",
         "label": "Shader"
+      },
+      {
+        "id": "urn:ngm:class:monte-carlo-integration",
+        "label": "Monte Carlo Integration"
+      },
+      {
+        "id": "urn:ngm:class:bidirectional-reflectance-distribution-function",
+        "label": "Bidirectional Reflectance Distribution Function"
       }
     ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:khronos-group",
+        "label": "Khronos Group"
+      },
+      {
+        "id": "urn:ngm:class:opengl",
+        "label": "OpenGL"
+      },
+      {
+        "id": "urn:ngm:class:vulkan",
+        "label": "Vulkan"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:global-illumination",
-        "label": "Global Illumination"
+        "id": "urn:ngm:class:neural-radiance-field",
+        "label": "Neural Radiance Field"
       },
       {
-        "id": "urn:ngm:class:3-d-rendering-engine",
-        "label": "3D Rendering Engine"
+        "id": "urn:ngm:class:rasterisation",
+        "label": "Rasterisation"
+      },
+      {
+        "id": "urn:ngm:class:denoising",
+        "label": "Denoising"
       }
     ]
   },

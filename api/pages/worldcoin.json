@@ -4,7 +4,7 @@
   "slug": "worldcoin",
   "public": true,
   "classIri": "urn:ngm:class:worldcoin",
-  "domain": "general",
+  "domain": "blockchain",
   "definition": "A digital identity and cryptocurrency project that uses iris biometrics to issue a unique identifier intended to distinguish individual humans online.",
   "subClassOf": [
     {

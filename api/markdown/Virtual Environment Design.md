@@ -21,7 +21,7 @@ public:: true
   "@type": "Class",
   "label": "Virtual Environment Design",
   "definition": "Virtual Environment Design is the multidisciplinary practice of creating the spatial, visual, auditory, and interactive properties of computer-generated environments intended for exploration or habitation through virtual reality, augmented reality, or mixed reality systems. It integrates principles from architecture, industrial design, game design, cognitive psychology, and human-computer interaction to produce environments that are usable, compelling, and safe, balancing perceptual fidelity, performance constraints, and the unique ergonomics of immersive display hardware.",
-  "domain": "graphics",
+  "domain": "spatial-computing",
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:virtual-environment-creation", "label": "Virtual Environment Creation"}],
   "relations": {

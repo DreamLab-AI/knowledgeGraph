@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:autonomous-driving",
   "domain": "artificial-intelligence",
-  "definition": "Autonomous driving is the technical capability enabling a vehicle to perceive its environment, predict the behaviour of other agents, plan a safe trajectory, and execute actuator commands \u2014 all without direct human intervention. The system architecture typically decomposes into perception (camera, Lidar, radar fusion), localisation (HD map matching, SLAM), prediction (motion modelling of surrounding agents), planning (route, behaviour, and motion planning), and control (longitudinal and lateral actuation). SAE International's J3016 taxonomy defines six automation levels from Level 0 (no automation) to Level 5 (full automation), providing the dominant industry reference framework.",
+  "definition": "Autonomous driving is the technical capability enabling a vehicle to perceive its environment, predict the behaviour of surrounding agents, plan a safe trajectory, and execute actuator commands without direct human intervention. The system architecture decomposes into perception (camera, Lidar, radar fusion), localisation (HD map matching, SLAM), prediction (probabilistic motion modelling), planning (route, behaviour, and motion planning layers), and control (longitudinal and lateral actuation). Safety assurance draws on formal verification, simulation, and real-world validation mileage, with regulatory oversight governed by frameworks such as SAE J3016, ISO 26262, and UN ECE WP.29. The field bridges robotics, machine learning, embedded systems, and transport infrastructure.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-application",
@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
+  "qualityScore": 0.73,
   "maturity": "emerging",
   "relationships": {
     "hasPart": [],
@@ -29,30 +29,131 @@
       {
         "id": "urn:ngm:class:lidar",
         "label": "Lidar"
+      },
+      {
+        "id": "urn:ngm:class:simultaneous-localisation-and-mapping",
+        "label": "Simultaneous Localisation and Mapping"
+      },
+      {
+        "id": "urn:ngm:class:object-detection",
+        "label": "Object Detection"
+      },
+      {
+        "id": "urn:ngm:class:hd-maps",
+        "label": "HD Maps"
       }
     ],
-    "enables": [],
-    "dependsOn": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicle"
+      },
+      {
+        "id": "urn:ngm:class:robotaxi",
+        "label": "Robotaxi"
+      },
+      {
+        "id": "urn:ngm:class:last-mile-delivery",
+        "label": "Last-Mile Delivery"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:v2x-communication",
+        "label": "V2X Communication"
+      },
+      {
+        "id": "urn:ngm:class:gnss",
+        "label": "GNSS"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:advanced-driver-assistance-systems",
+        "label": "Advanced Driver Assistance Systems"
+      },
+      {
+        "id": "urn:ngm:class:teleoperation",
+        "label": "Teleoperation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:smart-city-infrastructure",
+        "label": "Smart City Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:5g-networks",
+        "label": "5G Networks"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:path-planning",
         "label": "Path Planning"
       },
       {
-        "id": "urn:ngm:class:object-detection",
-        "label": "Object Detection"
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:model-predictive-control",
+        "label": "Model Predictive Control"
+      },
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
       }
     ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:sae-j3016",
+        "label": "SAE J3016"
+      },
+      {
+        "id": "urn:ngm:class:iso-26262",
+        "label": "ISO 26262"
+      },
+      {
+        "id": "urn:ngm:class:un-ece-wp29",
+        "label": "UN ECE WP.29"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:autonomous-vehicle",
-        "label": "Autonomous Vehicle"
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "id": "urn:ngm:class:safety-critical-systems",
+        "label": "Safety-Critical Systems"
+      },
+      {
+        "id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
       }
     ]
   },

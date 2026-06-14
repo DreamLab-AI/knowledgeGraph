@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:erc-721",
   "domain": "blockchain",
-  "definition": "ERC-721 is the Ethereum token standard that defines the interface for non-fungible tokens (NFTs), where each token is uniquely identified by a uint256 token ID and an associated owner address recorded on-chain. Unlike ERC-20 fungible tokens, which are interchangeable, each ERC-721 token is distinct and cannot be exchanged equivalently for another. The standard defines a minimal interface including ownership transfer, approval delegation, and balance queries, plus an optional metadata extension that associates each token with a URI resolving to off-chain JSON metadata including name, description, and image. ERC-721 is the foundational standard for digital art, collectibles, gaming items, and tokenised real-world assets on Ethereum.",
+  "definition": "ERC-721 is the Ethereum Request for Comments standard that defines the interface for non-fungible tokens (NFTs), where each token is uniquely identified by a uint256 token ID paired with an owner address stored immutably on-chain. Unlike ERC-20 fungible tokens, every ERC-721 token is distinct and non-interchangeable, making the standard suitable for representing provably unique digital or tokenised physical assets. The mandatory interface specifies ownership queries, safe and unsafe transfer methods, and operator approval delegation, while an optional metadata extension enables each token to reference off-chain JSON describing name, description, and media. Proposed by William Entriken, Dieter Shirley, Jacob Evans, and Nastassia Sachs and finalised as an Ethereum standard in January 2018, ERC-721 underpins digital art, collectibles, gaming items, domain names, and real-world asset tokenisation.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-token-and-asset",
@@ -13,11 +13,24 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.72,
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "id": "urn:ngm:class:solidity",
+        "label": "Solidity"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:nft-marketplace",
@@ -26,20 +39,76 @@
       {
         "id": "urn:ngm:class:nft-minting",
         "label": "NFT Minting"
+      },
+      {
+        "id": "urn:ngm:class:digital-ownership",
+        "label": "Digital Ownership"
+      },
+      {
+        "id": "urn:ngm:class:tokenisation",
+        "label": "Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:play-to-earn",
+        "label": "Play-to-Earn"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:token-standard",
+        "label": "Token Standard"
+      },
+      {
+        "id": "urn:ngm:class:eip",
+        "label": "EIP"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:erc-20",
+        "label": "ERC-20"
+      },
+      {
+        "id": "urn:ngm:class:erc-1155",
+        "label": "ERC-1155"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "id": "urn:ngm:class:real-world-asset-tokenisation",
+        "label": "Real-World Asset Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      }
+    ],
     "uses": [
       {
-        "id": "urn:ngm:class:smart-contract",
-        "label": "Smart Contract"
+        "id": "urn:ngm:class:ipfs",
+        "label": "IPFS"
+      },
+      {
+        "id": "urn:ngm:class:arweave",
+        "label": "Arweave"
+      },
+      {
+        "id": "urn:ngm:class:evm",
+        "label": "EVM"
       }
     ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ethereum-foundation",
+        "label": "Ethereum Foundation"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -47,12 +116,20 @@
         "label": "NFT"
       },
       {
-        "id": "urn:ngm:class:erc-20",
-        "label": "ERC-20"
+        "id": "urn:ngm:class:cryptopunks",
+        "label": "CryptoPunks"
       },
       {
-        "id": "urn:ngm:class:token-standard",
-        "label": "Token Standard"
+        "id": "urn:ngm:class:decentralised-storage",
+        "label": "Decentralised Storage"
+      },
+      {
+        "id": "urn:ngm:class:royalty-enforcement",
+        "label": "Royalty Enforcement"
+      },
+      {
+        "id": "urn:ngm:class:eip-2981",
+        "label": "EIP-2981"
       }
     ]
   },

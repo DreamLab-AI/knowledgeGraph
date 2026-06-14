@@ -47,7 +47,7 @@ public:: true
   "@type": "Class",
   "label": "Copper.co",
   "definition": "Copper.co is a digital asset custody and infrastructure company serving institutional clients. It provides secure storage, settlement and prime services for cryptocurrencies.",
-  "domain": "fintech",
+  "domain": "finance",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

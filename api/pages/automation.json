@@ -4,35 +4,147 @@
   "slug": "automation",
   "public": true,
   "classIri": "urn:ngm:class:automation",
-  "domain": "automation",
-  "definition": "The use of technology to perform tasks with reduced human intervention. It spans physical processes in manufacturing and robotics as well as software workflows and business processes.",
+  "domain": "infrastructure",
+  "definition": "Automation is the application of technology, control systems, and software to execute processes, tasks, or workflows with minimal or no human intervention, transferring decision-making and execution from people to machines or algorithms. It encompasses industrial and manufacturing automation driven by programmable logic controllers and robotics, as well as software-driven process automation that replicates repetitive digital workflows. The primary goals are to increase throughput, reduce error rates, lower operational costs, and free human attention for non-routine judgement tasks. Automation exists on a spectrum from fixed mechanisation through programmable control, flexible automation, and fully autonomous adaptive systems.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:owl-thing",
-      "label": "owl:Thing"
+      "id": "urn:ngm:class:control-systems",
+      "label": "Control Systems"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
-  "maturity": "established",
+  "qualityScore": 0.75,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [
+    "hasPart": [
       {
         "id": "urn:ngm:class:robotic-process-automation",
         "label": "Robotic Process Automation"
+      },
+      {
+        "id": "urn:ngm:class:industrial-automation",
+        "label": "Industrial Automation"
+      },
+      {
+        "id": "urn:ngm:class:workflow-automation",
+        "label": "Workflow Automation"
+      },
+      {
+        "id": "urn:ngm:class:test-automation",
+        "label": "Test Automation"
       }
     ],
-    "dependsOn": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:control-systems",
+        "label": "Control Systems"
+      },
+      {
+        "id": "urn:ngm:class:sensors",
+        "label": "Sensors"
+      },
+      {
+        "id": "urn:ngm:class:actuators",
+        "label": "Actuators"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      },
+      {
+        "id": "urn:ngm:class:continuous-integration",
+        "label": "Continuous Integration"
+      },
+      {
+        "id": "urn:ngm:class:devops",
+        "label": "DevOps"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:feedback-loops",
+        "label": "Feedback Loops"
+      },
+      {
+        "id": "urn:ngm:class:programmable-logic-controllers",
+        "label": "Programmable Logic Controllers"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:manual-processes",
+        "label": "Manual Processes"
+      },
+      {
+        "id": "urn:ngm:class:human-in-the-loop",
+        "label": "Human-in-the-Loop"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:intelligent-agents",
+        "label": "Intelligent Agents"
+      },
+      {
+        "id": "urn:ngm:class:digital-twins",
+        "label": "Digital Twins"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      },
+      {
+        "id": "urn:ngm:class:business-process-management",
+        "label": "Business Process Management"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:orchestration",
+        "label": "Orchestration"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-systems",
+        "label": "Autonomous Systems"
+      },
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      }
+    ]
   },
   "wikilinks": [
     {

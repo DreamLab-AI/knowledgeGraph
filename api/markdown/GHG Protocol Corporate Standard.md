@@ -21,7 +21,7 @@ public:: true
   "@type": "Class",
   "label": "GHG Protocol Corporate Standard",
   "definition": "The GHG Protocol Corporate Accounting and Reporting Standard is the most widely used international framework for measuring and reporting an organisation's greenhouse-gas emissions. Developed by the World Resources Institute and the World Business Council for Sustainable Development, it organises emissions into Scope 1 (direct), Scope 2 (purchased energy), and Scope 3 (value-chain) categories, establishing consistent boundaries, accounting principles, and disclosure rules. It underpins corporate climate reporting, science-based targets, and most national and regional emissions-disclosure regulations.",
-  "domain": "sustainability",
+  "domain": "governance",
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:technical-standard", "label": "Technical Standard"}],
   "relations": {

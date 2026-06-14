@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:robot-actuator",
   "domain": "robotics",
-  "definition": "Robot Actuator is a type of Hardware Component in the robotics domain.",
+  "definition": "A robot actuator is an electromechanical, pneumatic, hydraulic, or shape-memory device that converts stored or supplied energy into controlled mechanical motion, forming the effector substrate through which a robotic system exerts forces and displacements on its environment. Actuators are the physical implementation layer between a robot's control system and its mechanical structure, determining the speed, force, precision, and compliance characteristics achievable by the overall system. Modern robot actuators range from high-torque servo motors and linear voice-coil drives to soft pneumatic bellows and piezoelectric micro-actuators, each presenting distinct trade-offs in power density, bandwidth, back-drivability, and safety. The selection and design of actuators is a primary determinant of robot morphology, task capability, and energy efficiency across manipulation, locomotion, and human-collaborative applications.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-actuation-and-control",
@@ -13,31 +13,161 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.74,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:electric-motor",
+        "label": "Electric Motor"
+      },
+      {
+        "id": "urn:ngm:class:gear-transmission",
+        "label": "Gear Transmission"
+      },
+      {
+        "id": "urn:ngm:class:hydraulic-cylinder",
+        "label": "Hydraulic Cylinder"
+      },
+      {
+        "id": "urn:ngm:class:pneumatic-actuator",
+        "label": "Pneumatic Actuator"
+      },
+      {
+        "id": "urn:ngm:class:piezoelectric-actuator",
+        "label": "Piezoelectric Actuator"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:robot-controller",
+        "label": "Robot Controller"
+      },
+      {
+        "id": "urn:ngm:class:power-electronics",
+        "label": "Power Electronics"
+      },
+      {
+        "id": "urn:ngm:class:position-sensor",
+        "label": "Position Sensor"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:robot-motion-planning",
+        "label": "Robot Motion Planning"
+      },
+      {
+        "id": "urn:ngm:class:force-torque-control",
+        "label": "Force-Torque Control"
+      },
+      {
+        "id": "urn:ngm:class:compliant-motion",
+        "label": "Compliant Motion"
+      },
+      {
+        "id": "urn:ngm:class:robot-locomotion",
+        "label": "Robot Locomotion"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:feedback-control",
+        "label": "Feedback Control"
+      },
+      {
+        "id": "urn:ngm:class:motor-driver",
+        "label": "Motor Driver"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:series-elastic-actuation",
+        "label": "Series Elastic Actuation"
+      },
+      {
+        "id": "urn:ngm:class:direct-drive-actuation",
+        "label": "Direct Drive Actuation"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:robot-sensor",
+        "label": "Robot Sensor"
+      },
+      {
+        "id": "urn:ngm:class:passive-mechanism",
+        "label": "Passive Mechanism"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:hardware-component",
         "label": "Hardware Component"
+      },
+      {
+        "id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       }
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:robotics",
-        "label": "robotics"
+        "id": "urn:ngm:class:pid-control",
+        "label": "PID Control"
+      },
+      {
+        "id": "urn:ngm:class:encoder",
+        "label": "Encoder"
       }
     ],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "supports": [
+      {
+        "id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human-Robot Interaction"
+      },
+      {
+        "id": "urn:ngm:class:robot-end-effector",
+        "label": "Robot End-Effector"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-9283",
+        "label": "ISO 9283 Manipulating Industrial Robots"
+      },
+      {
+        "id": "urn:ngm:class:iec-61800",
+        "label": "IEC 61800 Adjustable Speed Electrical Power Drive Systems"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:robot-joint",
+        "label": "Robot Joint"
+      },
+      {
+        "id": "urn:ngm:class:robotic-manipulator",
+        "label": "Robotic Manipulator"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:soft-robotics",
+        "label": "Soft Robotics"
+      },
+      {
+        "id": "urn:ngm:class:exoskeleton",
+        "label": "Exoskeleton"
+      },
+      {
+        "id": "urn:ngm:class:collaborative-robot",
+        "label": "Collaborative Robot"
+      }
+    ]
   },
   "wikilinks": [
     {

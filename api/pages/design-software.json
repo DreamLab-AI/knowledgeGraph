@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:design-software",
   "domain": "spatial-computing",
-  "definition": "Software tools used to create, edit, and manage visual, spatial, or interactive design assets, including 2D vector and raster editors, 3D modelling and sculpting applications, CAD tools, motion graphics platforms, and UI/UX prototyping environments. In the spatial computing context, design software increasingly supports real-time 3D asset pipelines, procedural generation, and direct export to game engines and XR runtimes.",
+  "definition": "Design software comprises applications used to create, edit, visualise, and publish visual, spatial, or interactive artefacts across disciplines including graphic design, user interface and user experience design, 3D modelling, architectural drafting, motion graphics, and industrial product design. These tools span 2D vector and raster editors, parametric and direct-modelling CAD environments, sculpting and procedural-generation suites, prototyping platforms, and real-time 3D authoring environments that feed directly into game engines and extended reality runtimes. Modern design software increasingly integrates generative AI assistance for layout suggestion, texture synthesis, mesh generation, and design-variant exploration. The category sits at the intersection of creative practice, software engineering, and spatial computing infrastructure, making it a foundational enabler of digital content pipelines across entertainment, architecture, manufacturing, and immersive media.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-platform-and-environment",
@@ -14,10 +14,36 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "emerging",
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:vector-graphics-editor",
+        "label": "Vector Graphics Editor"
+      },
+      {
+        "id": "urn:ngm:class:3-d-modeling",
+        "label": "3D Modeling"
+      },
+      {
+        "id": "urn:ngm:class:animation-software",
+        "label": "Animation Software"
+      },
+      {
+        "id": "urn:ngm:class:cad-tool",
+        "label": "CAD Tool"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:graphics-processing-unit",
+        "label": "Graphics Processing Unit"
+      },
+      {
+        "id": "urn:ngm:class:file-format-standard",
+        "label": "File Format Standard"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:3-d-content-generation",
@@ -30,12 +56,34 @@
       {
         "id": "urn:ngm:class:virtual-production-workflow",
         "label": "Virtual Production Workflow"
+      },
+      {
+        "id": "urn:ngm:class:user-interface-design",
+        "label": "User Interface Design"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:building-information-modelling",
+        "label": "Building Information Modelling"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:computer-vision",
@@ -44,19 +92,57 @@
       {
         "id": "urn:ngm:class:3-d-rendering-engine",
         "label": "3D Rendering Engine"
-      }
-    ],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
-      {
-        "id": "urn:ngm:class:animation-software",
-        "label": "Animation Software"
       },
       {
-        "id": "urn:ngm:class:3-d-modeling",
-        "label": "3D Modeling"
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:procedural-generation",
+        "label": "Procedural Generation"
+      },
+      {
+        "id": "urn:ngm:class:rasterisation",
+        "label": "Rasterisation"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:creative-technology-stack",
+        "label": "Creative Technology Stack"
+      },
+      {
+        "id": "urn:ngm:class:content-pipeline",
+        "label": "Content Pipeline"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-asset-management",
+        "label": "Digital Asset Management"
+      },
+      {
+        "id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:colour-management",
+        "label": "Colour Management"
       }
     ]
   },

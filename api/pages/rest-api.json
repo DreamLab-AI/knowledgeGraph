@@ -4,53 +4,146 @@
   "slug": "rest-api",
   "public": true,
   "classIri": "urn:ngm:class:rest-api",
-  "domain": "artificial-intelligence",
-  "definition": "A REST API (Representational State Transfer Application Programming Interface) is a web service interface architected around the six REST constraints\u2014client\u2013server separation, statelessness, cacheability, uniform interface, layered system, and optional code-on-demand\u2014that collectively enable scalable, evolvable distributed systems. Resources are addressed by IRIs, manipulated via standard HTTP verbs (GET, POST, PUT, PATCH, DELETE), and represented in negotiated formats such as JSON or XML. In AI infrastructure, REST APIs serve as the primary integration surface between model inference servers, orchestration platforms, and downstream applications, exposing endpoints for prediction, model management, dataset ingestion, and telemetry collection in a language-agnostic, horizontally scalable manner.",
+  "domain": "infrastructure",
+  "definition": "A REST API (Representational State Transfer Application Programming Interface) is a web service interface conforming to Roy Fielding's six architectural constraints \u2014 client\u2013server separation, statelessness, cacheability, uniform interface, layered system, and optional code-on-demand \u2014 originally formalised in his 2000 doctoral dissertation. Resources are uniquely addressed by URIs, manipulated through standard HTTP verbs (GET, POST, PUT, PATCH, DELETE), and represented in negotiated formats such as JSON or XML. The uniform interface constraint \u2014 encompassing resource identification, manipulation through representations, self-descriptive messages, and hypermedia as the engine of application state (HATEOAS) \u2014 is the defining characteristic that separates REST from earlier RPC and SOAP-based architectures. REST APIs have become the dominant integration surface across cloud platforms, AI model serving, microservices ecosystems, and public developer APIs precisely because they align with existing HTTP infrastructure including caches, proxies, load balancers, and API gateways.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ai-infrastructure",
-      "label": "AI Infrastructure"
+      "id": "urn:ngm:class:web-api",
+      "label": "Web API"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "mature",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:http-server",
+        "label": "HTTP Server"
+      },
+      {
+        "id": "urn:ngm:class:uri",
+        "label": "URI"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:microservices-architecture",
         "label": "Microservices Architecture"
+      },
+      {
+        "id": "urn:ngm:class:service-oriented-architecture",
+        "label": "Service-Oriented Architecture"
+      },
+      {
+        "id": "urn:ngm:class:cloud-native-computing",
+        "label": "Cloud Native Computing"
+      },
+      {
+        "id": "urn:ngm:class:api-economy",
+        "label": "API Economy"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:ngm:class:web-standard",
-        "label": "Web Standard"
+        "id": "urn:ngm:class:http",
+        "label": "HTTP"
       },
       {
-        "id": "urn:ngm:class:api-standard",
-        "label": "API Standard"
+        "id": "urn:ngm:class:representational-state-transfer",
+        "label": "Representational State Transfer"
+      },
+      {
+        "id": "urn:ngm:class:openapi-specification",
+        "label": "OpenAPI Specification"
+      },
+      {
+        "id": "urn:ngm:class:hateoas",
+        "label": "HATEOAS"
       }
     ],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:graphql",
+        "label": "GraphQL"
+      },
+      {
+        "id": "urn:ngm:class:grpc",
+        "label": "gRPC"
+      },
+      {
+        "id": "urn:ngm:class:simple-object-access-protocol",
+        "label": "SOAP"
+      },
+      {
+        "id": "urn:ngm:class:websocket",
+        "label": "WebSocket"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:llm-inference-api",
+        "label": "LLM Inference API"
+      },
+      {
+        "id": "urn:ngm:class:model-serving",
+        "label": "Model Serving"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:json-data-interchange-format",
-        "label": "json"
+        "label": "JSON"
       },
       {
-        "id": "urn:ngm:class:software-architecture",
-        "label": "Software Architecture"
+        "id": "urn:ngm:class:xml",
+        "label": "XML"
+      },
+      {
+        "id": "urn:ngm:class:oauth2",
+        "label": "OAuth 2.0"
+      },
+      {
+        "id": "urn:ngm:class:tls",
+        "label": "TLS"
       }
     ],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      },
+      {
+        "id": "urn:ngm:class:rate-limiting",
+        "label": "Rate Limiting"
+      },
+      {
+        "id": "urn:ngm:class:content-negotiation",
+        "label": "Content Negotiation"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:api-design",
+        "label": "API Design"
+      },
+      {
+        "id": "urn:ngm:class:hypermedia",
+        "label": "Hypermedia"
+      },
+      {
+        "id": "urn:ngm:class:stateless-protocol",
+        "label": "Stateless Protocol"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

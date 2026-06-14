@@ -5,16 +5,16 @@
   "public": true,
   "classIri": "urn:ngm:class:self-custody",
   "domain": "blockchain",
-  "definition": "Self-custody is the security model and operational practice whereby an individual or entity retains exclusive control of the private cryptographic keys that authorise transactions over their digital assets, without delegating that custody to a centralised exchange or financial institution. Assets governed by self-custodied keys are accessible directly on the blockchain; loss of the private key or seed phrase results in permanent, irrecoverable loss of those assets. Self-custody is realised through software wallets (hot wallets), hardware security devices (cold wallets), or multi-signature threshold schemes that distribute key material across several signatories to reduce single-point-of-failure risk.",
+  "definition": "Self-custody is the security model and operational practice whereby an individual or entity retains exclusive, unmediated control of the private cryptographic keys that authorise transactions over their digital assets, entirely without delegating that custody to a centralised exchange, broker, or financial institution. The axiom underpinning self-custody \u2014 'not your keys, not your coins' \u2014 reflects the fact that whoever controls the private key controls the asset on-chain; counterparty risk from exchange insolvency, fraud, or regulatory asset freezes is therefore eliminated, but operational responsibility for key generation, backup, and signing security is transferred fully to the key holder. Self-custody is realised through software wallets (hot wallets), dedicated hardware security devices (cold wallets), multi-signature threshold schemes that distribute key material across several signatories, and advanced constructions such as threshold signature schemes (TSS) and social recovery wallets. Loss or compromise of the controlling private key or seed phrase results in permanent, irrecoverable loss of the associated assets with no recourse.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:bc-cryptographic-primitive",
-      "label": "Cryptographic Primitive"
+      "id": "urn:ngm:class:key-management",
+      "label": "Key Management"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [
@@ -23,23 +23,78 @@
         "label": "Private Key"
       },
       {
-        "id": "urn:ngm:class:key-management",
-        "label": "Key Management"
+        "id": "urn:ngm:class:seed-phrase",
+        "label": "Seed Phrase"
+      },
+      {
+        "id": "urn:ngm:class:secure-random-number-generation",
+        "label": "Secure Random Number Generation"
       }
     ],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:financial-sovereignty",
+        "label": "Financial Sovereignty"
+      },
+      {
+        "id": "urn:ngm:class:censorship-resistance",
+        "label": "Censorship Resistance"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:custodial-exchange",
+        "label": "Custodial Exchange"
+      },
+      {
+        "id": "urn:ngm:class:third-party-custody",
+        "label": "Third-Party Custody"
+      },
+      {
+        "id": "urn:ngm:class:qualified-custodian",
+        "label": "Qualified Custodian"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self-Sovereign Identity"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-credential",
+        "label": "Verifiable Credential"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:wallet",
         "label": "Wallet"
       },
       {
+        "id": "urn:ngm:class:hardware-wallet",
+        "label": "Hardware Wallet"
+      },
+      {
+        "id": "urn:ngm:class:multi-signature",
+        "label": "Multi-Signature"
+      },
+      {
+        "id": "urn:ngm:class:threshold-signature-scheme",
+        "label": "Threshold Signature Scheme"
+      },
+      {
         "id": "urn:ngm:class:cryptography",
         "label": "Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:hierarchical-deterministic-wallet",
+        "label": "Hierarchical Deterministic Wallet"
       }
     ],
     "supports": [],
@@ -49,6 +104,22 @@
       {
         "id": "urn:ngm:class:digital-asset",
         "label": "Digital Asset"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "id": "urn:ngm:class:social-recovery-wallet",
+        "label": "Social Recovery Wallet"
+      },
+      {
+        "id": "urn:ngm:class:air-gap",
+        "label": "Air Gap"
       }
     ]
   },

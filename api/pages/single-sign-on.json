@@ -4,27 +4,35 @@
   "slug": "single-sign-on",
   "public": true,
   "classIri": "urn:ngm:class:single-sign-on",
-  "domain": "infrastructure",
-  "definition": "Single Sign-On (SSO) is an authentication scheme that allows a user to authenticate once to a central identity provider and obtain delegated access tokens that grant entry to multiple related but independent service providers without re-entering credentials. Common protocol implementations include SAML 2.0, OAuth 2.0 with OpenID Connect, and Kerberos, each varying in how assertions are encoded and transported. SSO reduces credential exposure, simplifies user lifecycle management, and is a foundational component of enterprise identity and access management (IAM) platforms.",
+  "domain": "security",
+  "definition": "Single Sign-On (SSO) is an authentication architecture in which a user authenticates once to a central Identity Provider (IdP) and receives a cryptographically signed assertion or token that grants access to multiple independent service providers without re-entering credentials. Dominant protocol implementations include SAML 2.0 (XML-based assertions), OpenID Connect layered over OAuth 2.0 (JSON Web Token\u2013based), and Kerberos (ticket-granting ticket mechanism in Windows/Active Directory environments). SSO reduces credential exposure and attack surface by centralising authentication at a hardened IdP, simplifies user lifecycle management across enterprise systems, and is the cornerstone of modern Identity and Access Management platforms encompassing provisioning, deprovisioning, and audit.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:infra-security-and-identity",
-      "label": "Infra Security and Identity"
+      "id": "urn:ngm:class:authentication",
+      "label": "Authentication"
     }
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "emerging",
+  "maturity": "mature",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:authentication",
-        "label": "Authentication"
+        "id": "urn:ngm:class:identity-provider",
+        "label": "Identity Provider"
       },
       {
-        "id": "urn:ngm:class:authentication-standards",
-        "label": "Authentication Standards"
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:digital-certificate",
+        "label": "Digital Certificate"
+      },
+      {
+        "id": "urn:ngm:class:trust-framework",
+        "label": "Trust Framework"
       }
     ],
     "enables": [
@@ -35,20 +43,101 @@
       {
         "id": "urn:ngm:class:digital-identity-management",
         "label": "Digital Identity Management"
+      },
+      {
+        "id": "urn:ngm:class:federated-identity",
+        "label": "Federated Identity"
+      },
+      {
+        "id": "urn:ngm:class:zero-trust-security",
+        "label": "Zero Trust Security"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:oauth2",
+        "label": "OAuth 2.0"
+      },
+      {
+        "id": "urn:ngm:class:openid-connect",
+        "label": "OpenID Connect"
+      },
+      {
+        "id": "urn:ngm:class:saml",
+        "label": "SAML"
+      },
+      {
+        "id": "urn:ngm:class:kerberos",
+        "label": "Kerberos"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "id": "urn:ngm:class:password-manager",
+        "label": "Password Manager"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self-Sovereign Identity"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:json-web-token",
+        "label": "JSON Web Token"
+      },
+      {
+        "id": "urn:ngm:class:session-management",
+        "label": "Session Management"
+      },
+      {
+        "id": "urn:ngm:class:multi-factor-authentication",
+        "label": "Multi-Factor Authentication"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:role-based-access-control",
+        "label": "Role-Based Access Control"
+      },
+      {
+        "id": "urn:ngm:class:audit-logging",
+        "label": "Audit Logging"
+      },
+      {
+        "id": "urn:ngm:class:user-provisioning",
+        "label": "User Provisioning"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
       {
         "id": "urn:ngm:class:federated-credential-exchange",
         "label": "Federated Credential Exchange"
+      },
+      {
+        "id": "urn:ngm:class:identity-and-access-management",
+        "label": "Identity and Access Management"
+      },
+      {
+        "id": "urn:ngm:class:directory-services",
+        "label": "Directory Services"
+      },
+      {
+        "id": "urn:ngm:class:authentication-standards",
+        "label": "Authentication Standards"
       }
     ]
   },

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:conflict-resolution",
   "domain": "governance",
-  "definition": "Conflict Resolution encompasses the structured methods, protocols, and mechanisms used to identify, address, and settle disputes between parties, whether human individuals, organisations, autonomous agents, or distributed systems. In technical contexts, it includes algorithmic approaches for resolving inconsistencies in distributed data systems, consensus protocols that reconcile divergent states, and governance frameworks for mediating disagreements in decentralised organisations. In social and legal contexts it spans negotiation, mediation, arbitration, and adjudication, with increasing automation and AI-assisted facilitation. Across both domains, effective conflict resolution preserves relationships, maintains system integrity, and enables continued collaboration.",
+  "definition": "Conflict Resolution encompasses the structured methods, protocols, and mechanisms used to identify, address, and settle disputes between parties \u2014 whether human individuals, organisations, autonomous agents, or distributed systems. In technical contexts it includes algorithmic approaches for reconciling inconsistencies in distributed data systems, consensus protocols that converge divergent states, and governance frameworks for mediating disagreements in decentralised organisations. In social and legal contexts it spans negotiation, mediation, arbitration, and adjudication, with increasing automation and AI-assisted facilitation. Across all domains, effective conflict resolution preserves relationships, maintains system integrity, and enables continued collaboration.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:dispute-resolution-mechanism",
@@ -13,11 +13,20 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.74,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:governance-framework",
+        "label": "Governance Framework"
+      },
+      {
+        "id": "urn:ngm:class:trust-model",
+        "label": "Trust Model"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:community-governance-model",
@@ -26,12 +35,34 @@
       {
         "id": "urn:ngm:class:decentralized-governance",
         "label": "Decentralized Governance"
+      },
+      {
+        "id": "urn:ngm:class:trustless-coordination",
+        "label": "Trustless Coordination"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:adversarial-coordination",
+        "label": "Adversarial Coordination"
+      },
+      {
+        "id": "urn:ngm:class:deadlock",
+        "label": "Deadlock"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:value-alignment",
+        "label": "Value Alignment"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:smart-contract-coordination",
@@ -40,12 +71,28 @@
       {
         "id": "urn:ngm:class:dao-governance",
         "label": "DAO Governance"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
       }
     ],
     "supports": [
       {
         "id": "urn:ngm:class:multi-agent-systems",
         "label": "Multi-Agent Systems"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "id": "urn:ngm:class:organisational-resilience",
+        "label": "Organisational Resilience"
       }
     ],
     "standardizedBy": [],
@@ -62,6 +109,14 @@
       {
         "id": "urn:ngm:class:consensus-mechanism",
         "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:negotiation-protocol",
+        "label": "Negotiation Protocol"
+      },
+      {
+        "id": "urn:ngm:class:mediation",
+        "label": "Mediation"
       }
     ]
   },

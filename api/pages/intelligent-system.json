@@ -4,7 +4,7 @@
   "slug": "intelligent-system",
   "public": true,
   "classIri": "urn:ngm:class:intelligent-system",
-  "domain": "general",
+  "domain": "artificial-intelligence",
   "definition": "An intelligent system is a computational system that perceives its environment, reasons over data and takes actions to achieve defined objectives.",
   "subClassOf": [
     {

@@ -1,14 +1,113 @@
 - ### Definition
-  - Collaborative Robotics is the discipline of engineering [[Collaborative Robot]] systems that operate alongside humans in shared spaces, using [[Impedance Control]], [[Force Torque Sensor]] arrays, and certified [[Cobot Safety Levels]] to enable physical cooperation without hard physical barriers.
+  - Collaborative Robotics is the discipline of engineering [[Collaborative Robot]] systems (cobots) that operate alongside humans in shared workspaces, using [[Impedance Control]], [[Force Torque Sensor]] arrays, [[Computer Vision]], and certified [[Cobot Safety Levels]] to enable physical cooperation without hard physical barriers. It integrates [[Robot Safety]] standards, [[Human Robot Interaction]] research, and [[Real-Time Control]] architectures to achieve safe, flexible automation that augments rather than replaces human capability.
+
+- ### Overview
+  - Collaborative Robotics emerged as a distinct engineering discipline in the mid-1990s, formalised by J. Edward Colgate and Michael Peshkin at Northwestern University who coined the term "cobot" in 1996. The concept was a direct response to the rigidity of classical [[Industrial Robot]] deployments, which required expensive safety guarding, extensive integration, and high volumes to justify investment.
+  - The core insight was that a robot designed to be inherently safe through mechanical compliance and sensing — rather than through physical isolation — could operate alongside human workers, combining robotic repeatability and strength with human dexterity and judgement.
+  - Cobots have become a mainstream category within [[Manufacturing Automation]], occupying deployments in small and medium enterprises, research laboratories, healthcare facilities, and logistics centres.
+
+- ### Key Components
+  - **Force-Torque Sensing**
+    - [[Force Torque Sensor]] units measure contact forces and torques at joints or the wrist, enabling the controller to detect unexpected collisions and yield compliantly.
+    - Joint-level torque sensing provides whole-arm collision detection without additional external hardware.
+  - **Compliant Control Architectures**
+    - [[Impedance Control]] and admittance control regulate the dynamic relationship between force and motion, allowing the robot to feel soft in response to external disturbances.
+    - Position-based impedance control is widely used for assembly tasks requiring gentle insertion.
+  - **Safety-Rated Monitoring Systems**
+    - [[Cobot Safety Levels]] define four ISO-specified collaboration modes: safety-rated monitored stop, hand-guiding, speed-and-separation monitoring, and power-and-force limiting.
+    - Safety-rated monitored stop halts the robot when a human enters the collaboration zone; hand-guiding allows direct physical teaching.
+    - Speed-and-separation monitoring dynamically reduces robot velocity as a human approaches, using [[Computer Vision]] or time-of-flight sensors to estimate proximity.
+    - Power-and-force limiting ensures contact forces and pressures remain below biomechanical injury thresholds at all times.
+  - **End-Effector Tooling**
+    - [[End Effector]] design is critical: cobot-compatible grippers, suction cups, and tool changers must themselves be compliant or collision-safe.
+    - Quick-change tooling systems allow a single cobot arm to serve multiple tasks within a shift.
+  - **Perception Systems**
+    - [[Computer Vision]] — RGB-D cameras, structured light, and stereo vision — provides workspace awareness, part localisation, and human proximity detection.
+    - [[Tactile Sensing]] at the fingertips or palm enables fine manipulation and grasp quality assessment.
+  - **Motion Planning**
+    - [[Motion Planning]] algorithms generate collision-free trajectories that respect both workspace geometry and human presence zones.
+    - Online replanning capability is essential for reactive collaboration where human position changes continuously.
+
+- ### Collaboration Modes (ISO/TS 15066)
+  - **Safety-Rated Monitored Stop (SRMS)**: Robot is stationary while human works in the shared zone; resumes automatically when zone is clear.
+  - **Hand Guiding**: Human physically guides the robot through a desired trajectory; often used for programming by demonstration.
+  - **Speed and Separation Monitoring (SSM)**: Robot velocity scales inversely with estimated human-robot distance; requires reliable proximity sensing.
+  - **Power and Force Limiting (PFL)**: Robot moves freely but contact forces are always limited; enables true simultaneous co-working.
+  - Risk assessment under [[ISO 10218]]-2 and [[ISO/TS 15066]] determines which mode is appropriate for each task.
+
+- ### Applications and Use Cases
+  - **Assembly and Screwdriving**
+    - Cobots excel at screw insertion, torque tightening, and snap-fit assembly — tasks requiring moderate force with fine positional accuracy.
+    - Human operators handle part feeding, orientation, and exception handling; the cobot handles the repetitive, ergonomically stressful insertion.
+  - **Quality Inspection**
+    - Cobot-mounted cameras and structured-light sensors conduct dimensional inspection, surface-defect detection, and barcode scanning alongside human visual checks.
+  - **Machine Tending**
+    - Cobots load and unload CNC machines, injection moulders, and presses, eliminating the most ergonomically harmful task in machining cells.
+  - **Polishing and Surface Finishing**
+    - Impedance-controlled cobots maintain constant contact force during polishing, producing consistent surface finish on complex geometries.
+  - **Pick-and-Place and Kitting**
+    - In warehouse and fulfilment contexts, cobots handle items with [[Computer Vision]]-guided grasping; humans handle novel or fragile items.
+  - **Healthcare and Rehabilitation**
+    - [[Assistive Robotics]] for physical rehabilitation employs cobot-class arms to support and guide limb movement in stroke rehabilitation.
+    - Surgical assistance cobots (e.g., Intuitive Surgical's systems) operate at the boundary of collaborative and autonomous operation.
+  - **Agriculture**
+    - Cobot arms mounted on autonomous ground vehicles perform selective harvesting, pruning, and inspection in horticultural settings.
+  - **Construction**
+    - Lightweight cobot arms assist with drilling, fastening, and material handling in environments too constrained or variable for traditional automation.
+
+- ### AI Integration and Learning
+  - [[Imitation Learning]] (programming by demonstration) allows operators to teach tasks by physically guiding the robot, recording joint trajectories, and generalising from demonstrations.
+  - Foundation models for robotics (e.g., RT-2, OpenVLA, ACT) trained on large datasets of human manipulation trajectories are enabling zero-shot and few-shot task generalisation, substantially reducing deployment effort.
+  - [[Machine Learning]]-driven perception enables cobots to handle part variability that would defeat rule-based grasping: deformable objects, reflective surfaces, and cluttered bins.
+  - Reinforcement learning from human feedback (RLHF) applied to manipulation tasks allows cobots to refine grasping policies from operator corrections.
+  - [[Digital Twin]] simulations of cobot cells allow task validation, collision checking, and control tuning before physical deployment, reducing commissioning time.
 
 - ### Relationships
-  - The field is defined by its tight coupling with [[Human Robot Interaction]] research, which establishes ergonomic, psychological, and safety requirements, and with [[Cobot Safety Levels]] (speed-and-separation monitoring, hand-guiding, power-and-force limiting, safety-rated monitored stop) that translate ISO/TS 15066 into operational modes. Cobots depend on [[Force Torque Sensor]] feedback and [[Impedance Control]] algorithms to detect unexpected contact and yield compliantly. They connect via [[End Effector]] tooling to production tasks, enabling [[Manufacturing Automation]] in small-batch and mixed-model lines previously inaccessible to rigid industrial automation. The discipline also extends into [[Assistive Robotics]] for healthcare and rehabilitation contexts.
+  - hasPart:: [[Force Torque Sensor]]
+  - hasPart:: [[End Effector]]
+  - hasPart:: [[Impedance Control]]
+  - hasPart:: [[Cobot Safety Levels]]
+  - requires:: [[Robot Safety]]
+  - requires:: [[Risk Assessment]]
+  - requires:: [[Real-Time Control]]
+  - enables:: [[Manufacturing Automation]]
+  - enables:: [[Assistive Robotics]]
+  - enables:: [[Flexible Manufacturing]]
+  - enables:: [[Human-Robot Teaming]]
+  - uses:: [[Computer Vision]]
+  - uses:: [[Machine Learning]]
+  - uses:: [[Motion Planning]]
+  - uses:: [[Tactile Sensing]]
+  - standardizedBy:: [[ISO 10218]]
+  - standardizedBy:: [[ISO/TS 15066]]
+  - contrastsWith:: [[Industrial Robot]]
+  - contrastsWith:: [[Autonomous Mobile Robot]]
+  - relatedTo:: [[Human Robot Interaction]]
+  - relatedTo:: [[Robot Programming]]
+  - relatedTo:: [[Imitation Learning]]
+  - bridges-to:: [[Digital Twin]]
+  - bridges-to:: [[Artificial Intelligence]]
 
-- ### Content
-  - The cobot concept was formalised by J. Edward Colgate and Michael Peshkin at Northwestern University in 1996, patented as collaborative robots that are inherently safe through mechanical design rather than enclosures. The first commercial cobots — Universal Robots' UR5 (2008) and Rethink Robotics' Baxter (2012) — demonstrated viable force-limited arms at price points accessible to small and medium enterprises, disrupting the high-capital model of traditional industrial automation.
+- ### Standards and Governance
+  - **ISO 10218-1 and -2** — core standard defining requirements for industrial robot safety; Part 1 covers the robot itself, Part 2 covers integration and installation. Mandatory for CE marking in the EU and widely referenced globally.
+  - **ISO/TS 15066:2016** — Technical Specification extending ISO 10218 to collaborative robot applications; defines the four collaboration modes and provides biomechanical injury threshold data for power-and-force limiting calculations.
+  - **RIA TR R15.806** — US technical report providing guidance on collaborative robot safety, closely aligned with ISO/TS 15066.
+  - **IEC 62061 and ISO 13849** — functional safety standards governing the design of safety-rated control systems (performance levels and safety integrity levels) that underpin cobot monitoring functions.
+  - The revision of ISO 10218 (ongoing as of 2025) is incorporating mobile collaborative robots and AI-driven adaptive robots into its scope, reflecting the convergence of cobots with [[Autonomous Mobile Robot]] platforms.
 
-  - A collaborative robot application proceeds through a risk assessment under ISO 10218-2 and, where humans share workspace, ISO/TS 15066. The assessment determines which of four collaboration modes applies: safety-rated monitored stop (robot halts when human enters), hand-guiding (direct physical teaching), speed-and-separation monitoring (robot slows as humans approach using proximity sensing), or power-and-force limiting (contact forces remain below injury thresholds at all times). Control architectures implement admittance or impedance control loops that respond to external torques by yielding, allowing natural hand-guiding for programming. Vision systems and time-of-flight sensors increasingly supplement joint-torque sensing to provide predictive collision avoidance.
+- ### Key Vendors and Ecosystem
+  - Universal Robots (UR3e, UR5e, UR10e, UR20) — dominant market share, first to commercialise the cobot concept at accessible price points.
+  - FANUC CRX series, KUKA LBR iisy, ABB YuMi and GoFa — incumbent industrial robot makers with collaborative product lines.
+  - Techman Robot, Doosan Robotics, Kassow Robots — specialist cobot manufacturers.
+  - Rethink Robotics (Sawyer) pioneered the integrated vision and compliant arm paradigm, though the company was acquired and restructured.
+  - An ecosystem of [[End Effector]] suppliers (Robotiq, Schunk, OnRobot), vision systems, and integration software has formed around the UR+ and similar partner programmes.
 
-  - Cobots address a fundamental limitation of classical automation: the inability to handle part variability, irregular workpieces, and tasks requiring dexterous judgement. SME manufacturers use cobots for screwdriving, pick-and-place, quality inspection, polishing, and machine tending — tasks combining physical repetition with situational variation that is uneconomical to fully automate. Labour productivity gains are significant: a cobot working alongside one operator can increase throughput by 30-85% on cycle-limited assembly tasks while the operator handles exceptions. The cobot market exceeded $1.5 billion globally in 2023 and is forecast to grow at 40% CAGR through 2028.
+- ### Limitations and Open Problems
+  - Payload and speed trade-offs: cobots operate at lower speeds and payloads than industrial robots to stay within power-and-force limits; tasks requiring high force or high speed still require traditional guarded automation.
+  - Dexterous manipulation remains unsolved for unstructured environments; current cobots struggle with deformable objects, fine assembly with micron tolerances, and bimanual coordination.
+  - Certification burden for AI-driven adaptations: when [[Machine Learning]] changes robot behaviour at runtime, re-validation under ISO 10218 / ISO/TS 15066 is required, creating a compliance bottleneck for adaptive systems.
+  - Human factors: worker acceptance depends on trust, transparency of robot intent, and adequate training — poorly designed deployments generate stress rather than relief.
 
-  - Current frontiers in 2024-2025 include AI-driven task learning — where cobots learn from demonstration via imitation learning — and dexterous manipulation using multi-fingered hands with tactile sensing. Foundation models trained on robot trajectories (e.g., RT-2, OpenVLA) are enabling zero-shot task transfer, reducing deployment time from weeks to hours. Multi-cobot coordination in unstructured environments, integration with mobile manipulators for logistics, and cobot deployment in construction and agriculture represent the next wave of application domains.
+- ### Provenance
+  - sources:: ISO 10218:2011, ISO/TS 15066:2016, Colgate & Peshkin (1996) cobot patent US5952796, Universal Robots technical documentation, IFR World Robotics reports
+  - updated:: 2026-06-13

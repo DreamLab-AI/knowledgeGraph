@@ -91,7 +91,7 @@ public:: true
   "@type": "Class",
   "label": "Agentic Systems Domain",
   "definition": "The Agentic Systems Domain covers software agents that pursue goals over multiple steps by planning, invoking tools and acting on an environment. Its scope includes single-agent control loops, tool use, memory and the coordination of multiple agents. It is a sub-area of the Artificial Intelligence Domain that composes models from other domains into goal-directed behaviour. The boundary excludes the underlying model training, which belongs to the Machine Learning Domain.",
-  "domain": "agentic-systems",
+  "domain": "ai",
   "maturity": "emerging",
   "qualityScore": 0.7,
   "subClassOf": [

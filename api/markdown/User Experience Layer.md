@@ -59,7 +59,7 @@ public:: true
   "@type": "Class",
   "label": "User Experience Layer",
   "definition": "The User Experience Layer is the topmost human-facing stratum concerned with how effective, accessible, and satisfying interaction with a system is. It sits above the Presentation Layer that renders the interface and has no technical layer above it. It contains interaction design, usability criteria, accessibility requirements, and user research findings.",
-  "domain": "user-experience",
+  "domain": "infrastructure",
   "maturity": "emerging",
   "qualityScore": 0.7,
   "subClassOf": [

@@ -5,38 +5,133 @@
   "public": true,
   "classIri": "urn:ngm:class:personalized-virtual-experiences",
   "domain": "spatial-computing",
-  "definition": "AI-driven customization of virtual environments, content, and interactions based on individual user preferences, behaviors, and interests, enabling tailored journeys through metaverse spaces with adaptive storytelling, avatars, and content recommendations.",
+  "definition": "Personalized Virtual Experiences are AI-driven, dynamically adaptive virtual environments, narratives, and interactions that are tailored to the preferences, behaviour history, physiological signals, and declared identity of individual users. They integrate recommendation systems, adaptive content generation, avatar customisation, and contextual sensing to construct unique, user-specific pathways through spatial computing environments such as virtual reality, augmented reality, and metaverse platforms. The personalisation layer continuously models user intent and affect, adjusting scene composition, difficulty, pacing, social matchmaking, and content curation in real time. As a convergence point of machine learning, spatial computing, and human-computer interaction, these systems raise significant concerns around data sovereignty, consent, and algorithmic bias.",
   "subClassOf": [
-    {
-      "id": "urn:ngm:class:sc-platform-and-environment",
-      "label": "Platform and Environment"
-    },
     {
       "id": "urn:ngm:class:virtual-experience",
       "label": "Virtual Experience"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:dynamic-content-generation",
+        "label": "Dynamic Content Generation"
+      },
+      {
+        "id": "urn:ngm:class:behavioural-analytics",
+        "label": "Behavioural Analytics"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:user-profiling",
+        "label": "User Profiling"
+      },
+      {
+        "id": "urn:ngm:class:recommendation-systems",
+        "label": "Recommendation Systems"
+      },
+      {
+        "id": "urn:ngm:class:real-time-data-processing",
+        "label": "Real-Time Data Processing"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:user-engagement",
         "label": "User Engagement"
+      },
+      {
+        "id": "urn:ngm:class:adaptive-learning",
+        "label": "Adaptive Learning"
+      },
+      {
+        "id": "urn:ngm:class:immersive-storytelling",
+        "label": "Immersive Storytelling"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:user-data-collection",
+        "label": "User Data Collection"
+      },
+      {
+        "id": "urn:ngm:class:cloud-rendering",
+        "label": "Cloud Rendering"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:shared-virtual-environment",
+        "label": "Shared Virtual Environment"
+      },
+      {
+        "id": "urn:ngm:class:static-virtual-experience",
+        "label": "Static Virtual Experience"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:federated-identity",
+        "label": "Federated Identity"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:avatar-systems",
+        "label": "Avatar Systems"
+      },
+      {
+        "id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "id": "urn:ngm:class:data-privacy",
+        "label": "Data Privacy"
+      },
+      {
+        "id": "urn:ngm:class:affective-computing",
+        "label": "Affective Computing"
+      }
+    ]
   },
   "wikilinks": [
     {

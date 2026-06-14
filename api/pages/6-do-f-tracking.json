@@ -4,7 +4,7 @@
   "slug": "6-do-f-tracking",
   "public": true,
   "classIri": "urn:ngm:class:6-do-f-tracking",
-  "domain": "spatial",
+  "domain": "spatial-computing",
   "definition": "6DoF (Six Degrees of Freedom) Tracking is the measurement and continuous estimation of an object's complete rigid-body pose in three-dimensional space, encompassing three translational components (x, y, z position) and three rotational components (pitch, yaw, roll orientation). It is the foundational capability for XR headsets, controllers, and spatial computing devices to understand and respond to the user's physical motion with sub-millimetre accuracy and minimal latency. 6DoF tracking is achieved through sensor fusion of inertial measurement units, camera-based visual odometry, and optionally external beacons or reference markers.",
   "subClassOf": [
     {

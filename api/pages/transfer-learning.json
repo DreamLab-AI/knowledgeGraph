@@ -4,42 +4,115 @@
   "slug": "transfer-learning",
   "public": true,
   "classIri": "urn:ngm:class:transfer-learning",
-  "domain": "artificial-intelligence",
-  "definition": "Transfer Learning is a machine learning methodology whereby a model pre-trained on a large source task or dataset is adapted to a different but related target task, leveraging previously acquired representations to improve sample efficiency and performance. It is the dominant paradigm for deploying large language models and vision models, enabling fine-tuning with modest task-specific data.",
+  "domain": "machine-learning",
+  "definition": "Transfer learning is a machine learning paradigm in which knowledge encoded in a model trained on a source task or domain is systematically reused to improve learning efficiency and performance on a different but related target task or domain. By exploiting shared representations \u2014 such as low-level feature detectors, syntactic structures, or visual hierarchies \u2014 the technique drastically reduces the labelled data, compute, and training time required for downstream tasks. It is foundational to modern deep learning practice, underpinning pre-trained large language models, vision transformers, and multi-modal systems that are subsequently adapted via fine-tuning, prompt tuning, or adapter layers. The paradigm bridges the gap between data-rich source domains and data-scarce target settings, enabling deployment in low-resource clinical, scientific, and industrial contexts.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique"
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.3,
-  "maturity": "emerging",
+  "qualityScore": 0.76,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [
+    "hasPart": [
       {
         "id": "urn:ngm:class:fine-tuning",
         "label": "Fine Tuning"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:domain-adaptation",
+        "label": "Domain Adaptation"
+      },
+      {
+        "id": "urn:ngm:class:adapter-layers",
+        "label": "Adapter Layers"
+      },
+      {
+        "id": "urn:ngm:class:prompt-tuning",
+        "label": "Prompt Tuning"
       }
     ],
-    "dependsOn": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:pre-trained-model",
+        "label": "Pre-trained Model"
+      },
+      {
+        "id": "urn:ngm:class:feature-representation",
+        "label": "Feature Representation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:few-shot-learning",
+        "label": "Few-Shot Learning"
+      },
+      {
+        "id": "urn:ngm:class:zero-shot-learning",
+        "label": "Zero-Shot Learning"
+      },
+      {
+        "id": "urn:ngm:class:foundation-models",
+        "label": "Foundation Models"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
+      },
+      {
+        "id": "urn:ngm:class:representation-learning",
+        "label": "Representation Learning"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:training-from-scratch",
+        "label": "Training From Scratch"
+      },
+      {
+        "id": "urn:ngm:class:multitask-learning",
+        "label": "Multitask Learning"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:neural-network",
         "label": "Neural Network"
       },
       {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
         "id": "urn:ngm:class:model-training",
         "label": "Model Training"
+      },
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
       }
     ],
     "supports": [],
@@ -47,8 +120,16 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:deep-learning",
-        "label": "Deep Learning"
+        "id": "urn:ngm:class:meta-learning",
+        "label": "Meta-Learning"
+      },
+      {
+        "id": "urn:ngm:class:continual-learning",
+        "label": "Continual Learning"
+      },
+      {
+        "id": "urn:ngm:class:model-compression",
+        "label": "Model Compression"
       }
     ]
   },

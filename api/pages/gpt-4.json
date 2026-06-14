@@ -4,7 +4,7 @@
   "slug": "gpt-4",
   "public": true,
   "classIri": "urn:ngm:class:gpt-4",
-  "domain": "natural-language-processing",
+  "domain": "ai",
   "definition": "A large multimodal language model released by OpenAI in 2023, capable of accepting text and image inputs and producing text outputs, and a successor to the GPT-3.5 series.",
   "subClassOf": [
     {

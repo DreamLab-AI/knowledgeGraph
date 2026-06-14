@@ -21,7 +21,7 @@ public:: true
   "@type": "Class",
   "label": "Immersive Audio",
   "definition": "Immersive audio refers to audio reproduction and processing technologies that create a convincing three-dimensional sound field, enveloping the listener in a spatially accurate sonic environment. It encompasses object-based audio formats, binaural rendering, ambisonics, and head-related transfer function (HRTF) personalisation, enabling the perception of sounds positioned above, below, and around the listener rather than confined to a flat stereo plane.",
-  "domain": "spatial",
+  "domain": "spatial-computing",
   "maturity": "emerging",
   "subClassOf": [{"@id": "urn:ngm:class:audio-technology", "label": "Audio Technology"}],
   "relations": {

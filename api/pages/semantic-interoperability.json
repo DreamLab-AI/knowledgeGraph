@@ -4,17 +4,17 @@
   "slug": "semantic-interoperability",
   "public": true,
   "classIri": "urn:ngm:class:semantic-interoperability",
-  "domain": "spatial-computing",
-  "definition": "Semantic interoperability is the capability of disparate systems to exchange data with shared, unambiguous meaning by aligning data models, ontologies, and controlled vocabularies. Unlike syntactic interoperability, which concerns data format agreement, semantic interoperability requires that the interpretation of data values is consistent across system boundaries, typically enforced through shared ontologies, RDF triplestores, or standardised schema mappings. It underpins federated knowledge graphs, cross-platform data sharing, and machine-readable regulatory compliance.",
+  "domain": "data",
+  "definition": "Semantic interoperability is the capability of disparate information systems to exchange data with shared, unambiguous meaning by aligning their data models, ontologies, and controlled vocabularies at the level of semantics rather than syntax. Unlike syntactic interoperability, which concerns format agreement alone, semantic interoperability requires that the interpretation of exchanged values is consistent across system boundaries \u2014 typically enforced through shared formal ontologies expressed in OWL2, RDF-based linked data representations, and standardised schema mappings. It is a foundational property of federated knowledge graphs, cross-enterprise data sharing, healthcare information exchange, and machine-readable regulatory compliance. Achieving it demands governance as much as technology: communities must agree on canonical concept identifiers, term definitions, and relationship axioms before any technical implementation can succeed.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:sc-standards-and-interop",
-      "label": "Spatial Standards and Interoperability"
+      "id": "urn:ngm:class:interoperability",
+      "label": "Interoperability"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [
@@ -25,6 +25,14 @@
       {
         "id": "urn:ngm:class:data-standards",
         "label": "Data Standards"
+      },
+      {
+        "id": "urn:ngm:class:controlled-vocabulary",
+        "label": "Controlled Vocabulary"
+      },
+      {
+        "id": "urn:ngm:class:schema-mapping",
+        "label": "Schema Mapping"
       }
     ],
     "enables": [
@@ -35,15 +43,71 @@
       {
         "id": "urn:ngm:class:knowledge-graph",
         "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:federated-data-sharing",
+        "label": "Federated Data Sharing"
+      },
+      {
+        "id": "urn:ngm:class:machine-readable-compliance",
+        "label": "Machine-Readable Compliance"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:syntactic-interoperability",
+        "label": "Syntactic Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:structural-interoperability",
+        "label": "Structural Interoperability"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-knowledge-base",
+        "label": "AI Knowledge Base"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:owl",
+        "label": "OWL"
+      },
+      {
+        "id": "urn:ngm:class:rdf",
+        "label": "RDF"
+      },
+      {
+        "id": "urn:ngm:class:sparql",
+        "label": "SPARQL"
+      },
+      {
+        "id": "urn:ngm:class:json-ld",
+        "label": "JSON-LD"
+      }
+    ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:w3c",
+        "label": "W3C"
+      },
+      {
+        "id": "urn:ngm:class:hl7-fhir",
+        "label": "HL7 FHIR"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-11179",
+        "label": "ISO/IEC 11179"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -53,6 +117,14 @@
       {
         "id": "urn:ngm:class:interoperability-standard",
         "label": "Interoperability Standard"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
       }
     ]
   },

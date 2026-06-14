@@ -1,27 +1,72 @@
 - ### Definition
-  - A Knowledge Management System (KMS) captures, organises, retrieves, and shares structured and unstructured knowledge across an organisation, integrating knowledge graphs, ontologies, semantic search, and metadata management to make information discoverable and actionable across spatial computing workflows.
+  - A Knowledge Management System (KMS) is an integrated software platform that captures, organises, stores, retrieves, and distributes explicit and tacit knowledge across an organisation or community of practice. By combining [[Knowledge Base]] repositories, [[Knowledge Graph]] structures, [[Semantic Search]], [[Ontology]] models, and collaborative authoring tools, a KMS makes institutional knowledge discoverable and actionable throughout its full lifecycle. Modern KMS platforms bridge traditional [[Information Retrieval]] pipelines with [[Natural Language Processing]] and [[Retrieval-Augmented Generation]] to surface contextually relevant information at the point of need.
 
-- ### Semantic Classification
-  - owl-class:: spatial-computing:KnowledgeManagementSystem
-  - owl-role:: concept
+- ### Overview
+  - Knowledge Management Systems emerged in the 1990s as organisations recognised that intellectual capital — procedures, expertise, lessons learned, and domain models — was as strategically important as financial capital. The field formalises the distinction between **explicit knowledge** (documentable, codifiable) and **tacit knowledge** (embodied in practice and experience), with a KMS providing mechanisms to externalise, structure, and share both forms.
+  - A KMS is distinguished from a generic [[Content Management System]] by its emphasis on semantic structure: knowledge items are tagged, typed, and linked through [[Taxonomy]] hierarchies and [[Ontology]] schemas rather than stored as flat documents. This semantic layer enables inferencing, faceted navigation, and graph-based recommendations.
+  - The strategic value of a KMS lies in organisational resilience: reducing dependence on individual experts, accelerating onboarding, supporting [[Organisational Learning]], and enabling [[Decision Support System]] capabilities by providing structured, contextual information to decision-makers.
+
+- ### Key Components
+  - **Knowledge Repository** — the persistent store housing articles, procedures, case histories, and multimedia assets; may be backed by a [[Document Repository]] or graph database.
+  - **[[Knowledge Graph]]** — a graph-structured representation of entities, relationships, and facts that supports inference and multi-hop queries beyond simple full-text search.
+  - **[[Ontology]] / [[Taxonomy]]** — formal schemas defining the types, properties, and relations of knowledge items; enables semantic consistency, controlled vocabularies, and cross-system interoperability.
+  - **[[Semantic Search]]** — query mechanisms that interpret intent rather than keyword match, typically combining vector embeddings with symbolic metadata filters.
+  - **[[Metadata Management]]** — systematic tagging of creation date, author, domain, version, expiry, and access rights to support governance and discovery.
+  - **Contribution & Curation Workflow** — authoring, review, approval, and retirement pipelines ensuring knowledge quality; often integrated with [[Collaborative Authoring]] tools.
+  - **[[Access Control]]** — role-based permissions that restrict sensitive knowledge items while maximising openness for appropriate audiences.
+  - **Analytics & Usage Metrics** — dashboards surfacing knowledge gaps, popular content, stale articles, and expert identification.
+
+- ### Mechanisms
+  - **Knowledge Capture** — ingestion pipelines that extract structured knowledge from emails, meeting transcripts, project documentation, support tickets, and expert interviews; increasingly automated via [[Natural Language Processing]].
+  - **Knowledge Codification** — conversion of tacit expertise into explicit artefacts through templates, structured wikis, and ontology-driven forms.
+  - **Knowledge Retrieval** — combination of keyword search, faceted filtering, semantic nearest-neighbour lookup (vector search), and graph traversal.
+  - **[[Retrieval-Augmented Generation]] (RAG)** — emerging integration pattern where a [[Large Language Model]] generates responses grounded in KMS content, dramatically improving answer quality and traceability.
+  - **Knowledge Maintenance** — expiry policies, subject-matter-expert review cycles, and automated staleness detection prevent knowledge rot.
+  - **Recommendation & Discovery** — graph-based collaborative filtering surfaces related items based on usage patterns, role profiles, and ontological proximity.
+
+- ### Applications & Use Cases
+  - **Enterprise IT Operations** — documenting runbooks, incident postmortems, and system architectures so on-call engineers can resolve issues independently of individual colleagues.
+  - **Customer Support** — centralising product FAQs, troubleshooting trees, and resolution histories so agents resolve tickets faster with consistent answers.
+  - **Research & Development** — capturing experimental protocols, negative results, and literature syntheses to prevent duplication and accelerate discovery.
+  - **Legal & Compliance** — maintaining current regulatory guidance, policy interpretations, and precedent documents with version control and audit trails.
+  - **Healthcare** — clinical knowledge bases embedding [[Clinical Decision Support]] logic, drug interaction databases, and evidence-based treatment pathways.
+  - **Software Engineering** — architectural decision records (ADRs), API documentation wikis, and internal developer portals — exemplified by platforms such as Confluence, Notion, and Backstage.
+  - **AI-Augmented Knowledge Work** — feeding curated KMS content as retrieval context to [[Large Language Model]] assistants, creating grounded, verifiable AI responses aligned with organisational policy.
 
 - ### Relationships
-  - uses [[Knowledge Graph]]
-  - uses [[Ontology]]
-  - enables [[Information Retrieval]]
-  - enables [[Knowledge Representation]]
-  - relatedTo [[Metadata Management]]
-  - relatedTo [[Knowledge Base]]
+  - hasPart:: [[Knowledge Base]]
+  - hasPart:: [[Document Repository]]
+  - hasPart:: [[Semantic Search]]
+  - hasPart:: [[Ontology]]
+  - uses:: [[Knowledge Graph]]
+  - uses:: [[Metadata Management]]
+  - uses:: [[Natural Language Processing]]
+  - uses:: [[Information Retrieval]]
+  - enables:: [[Knowledge Sharing]]
+  - enables:: [[Knowledge Representation]]
+  - enables:: [[Organisational Learning]]
+  - enables:: [[Decision Support System]]
+  - requires:: [[Data Governance]]
+  - requires:: [[Access Control]]
+  - requires:: [[Taxonomy]]
+  - supports:: [[Collaborative Authoring]]
+  - supports:: [[Content Management System]]
+  - contrastsWith:: [[Database Management System]]
+  - contrastsWith:: [[Document Management System]]
+  - relatedTo:: [[Enterprise Architecture]]
+  - relatedTo:: [[Learning Management System]]
+  - bridges-to:: [[Large Language Model]]
+  - bridges-to:: [[Retrieval-Augmented Generation]]
 
-- ### Content
-
-  ## Overview
-
-  Knowledge Management System represents an abstract concept in the metaverse ontology hierarchy.
-
-  #### Related Concepts
-  - [[owl:Thing]]
+- ### Standards & Context
+  - **ISO 30401:2018** — the international standard for Knowledge Management Systems, specifying requirements for a KMS within an organisation and providing a framework aligned with ISO 9001.
+  - **TOGAF** — The Open Group Architecture Framework addresses knowledge management as part of enterprise architecture governance, defining information asset catalogues and architecture repositories.
+  - **Dublin Core & Schema.org** — widely used metadata vocabularies for describing knowledge assets; underpin interoperability between KMS platforms and the broader web of data.
+  - **SPARQL & OWL2** — W3C standards enabling semantic querying and reasoning over ontology-backed knowledge repositories; used in enterprise-grade graph KMS deployments.
+  - **SKOS (Simple Knowledge Organisation System)** — W3C standard for encoding thesauri, taxonomies, and controlled vocabularies in RDF, directly applicable to KMS taxonomic layers.
+  - **OpenAPI / AsyncAPI** — used to expose KMS content programmatically so that downstream applications, [[Decision Support System]] tools, and RAG pipelines can consume structured knowledge.
+  - Key vendors include Confluence (Atlassian), SharePoint (Microsoft), Guru, Notion, Bloomfire, and open-source platforms such as Obsidian, Logseq, and DokuWiki.
 
 - ### Provenance
-  - sources::
-  - migration-date:: 2026-04-26T00:00:00Z
+  - sources:: ISO 30401:2018; Davenport & Prusak "Working Knowledge" (1998); Nonaka & Takeuchi "The Knowledge-Creating Company" (1995); TOGAF 10th Edition; W3C SKOS Primer
+  - updated:: 2026-06-13

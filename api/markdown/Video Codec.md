@@ -21,7 +21,7 @@ public:: true
   "@type": "Class",
   "label": "Video Codec",
   "definition": "A video codec (coder-decoder) is an algorithm or hardware implementation that compresses and decompresses digital video by exploiting spatial redundancy within frames (intra-prediction), temporal redundancy across frames (inter-prediction with motion compensation), and transform coding of residuals, enabling practical storage and transmission of video at bitrates orders of magnitude lower than uncompressed formats whilst maintaining perceptual quality.",
-  "domain": "media",
+  "domain": "infrastructure",
   "maturity": "mature",
   "subClassOf": [{"@id": "urn:ngm:class:encoder-decoder-architecture", "label": "Encoder Decoder Architecture"}],
   "relations": {

@@ -59,7 +59,7 @@ public:: true
   "@type": "Class",
   "label": "Encryption Service",
   "definition": "An encryption service is a system or component that provides cryptographic protection of data, typically offering key management and encryption operations through an interface. It supports confidentiality of stored and transmitted data.",
-  "domain": "general",
+  "domain": "security",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

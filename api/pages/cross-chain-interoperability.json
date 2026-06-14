@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:cross-chain-interoperability",
   "domain": "blockchain",
-  "definition": "Cross-Chain Interoperability refers to the technical capacity for distinct blockchain networks to communicate, transfer assets, and share state without relying on a centralised intermediary. It encompasses atomic swaps, cross-chain messaging protocols, relay chains, bridge smart contracts, and inter-blockchain communication standards such as Cosmos IBC and Polkadot's XCMP. Achieving trustless interoperability requires solving the heterogeneous consensus problem\u2014two chains with different finality guarantees must reach agreement on the validity of a cross-chain event\u2014which is a non-trivial distributed systems challenge. The field is critical to the vision of a composable multi-chain ecosystem in which assets and logic can flow freely across sovereign networks.",
+  "definition": "Cross-Chain Interoperability is the technical capacity for distinct blockchain networks to communicate, transfer assets, and share arbitrary state without relying on a centralised intermediary, achieved through mechanisms such as light-client bridges, relay chains, atomic swaps, and standardised inter-blockchain communication protocols. It addresses the heterogeneous consensus problem\u2014the challenge of enabling two networks with different finality guarantees and trust models to agree on the validity of cross-chain events\u2014through cryptographic proofs, validator sets, or shared security frameworks. Prominent implementations include the Cosmos IBC protocol, Polkadot's Cross-Consensus Message Format (XCM), LayerZero's oracle-relayer model, and zero-knowledge proof bridges that verify source-chain state transitions with minimal on-chain trust. The field is foundational to the composable multi-chain ecosystem in which digital assets, governance rights, and smart contract logic can flow freely across sovereign networks.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:blockchain-interoperability",
@@ -13,11 +13,41 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.75,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:cross-chain-bridge",
+        "label": "Cross-Chain Bridge"
+      },
+      {
+        "id": "urn:ngm:class:atomic-swap",
+        "label": "Atomic Swap"
+      },
+      {
+        "id": "urn:ngm:class:cross-chain-messaging",
+        "label": "Cross-Chain Messaging"
+      },
+      {
+        "id": "urn:ngm:class:light-client-verification",
+        "label": "Light Client Verification"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:merkle-proof",
+        "label": "Merkle Proof"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:cross-chain-governance",
@@ -26,41 +56,101 @@
       {
         "id": "urn:ngm:class:decentralised-finance",
         "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:cross-chain-liquidity",
+        "label": "Cross-Chain Liquidity"
+      },
+      {
+        "id": "urn:ngm:class:multi-chain-application",
+        "label": "Multi-Chain Application"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-proof",
+        "label": "Cryptographic Proof"
+      },
+      {
+        "id": "urn:ngm:class:hash-time-locked-contract",
+        "label": "Hash Time-Locked Contract"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [
+    "contrastsWith": [
       {
-        "id": "urn:ngm:class:cross-chain-messaging",
-        "label": "Cross-Chain Messaging"
+        "id": "urn:ngm:class:centralised-exchange",
+        "label": "Centralised Exchange"
       },
       {
-        "id": "urn:ngm:class:interoperability-protocol",
-        "label": "Interoperability Protocol"
+        "id": "urn:ngm:class:wrapped-token",
+        "label": "Wrapped Token"
       }
     ],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
+    "bridgesTo": [
       {
-        "id": "urn:ngm:class:cross-chain-bridge",
-        "label": "Cross-Chain Bridge"
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
       },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      }
+    ],
+    "uses": [
       {
         "id": "urn:ngm:class:cosmos-ibc",
         "label": "Cosmos IBC"
       },
       {
+        "id": "urn:ngm:class:polkadot-xcm",
+        "label": "Polkadot XCM"
+      },
+      {
+        "id": "urn:ngm:class:interoperability-protocol",
+        "label": "Interoperability Protocol"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:cosmos-ibc",
+        "label": "Cosmos IBC"
+      },
+      {
+        "id": "urn:ngm:class:ieee-standards",
+        "label": "IEEE Standards"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
         "id": "urn:ngm:class:polkadot",
         "label": "Polkadot"
       },
       {
-        "id": "urn:ngm:class:atomic-swap",
-        "label": "Atomic Swap"
+        "id": "urn:ngm:class:blockchain-scalability",
+        "label": "Blockchain Scalability"
+      },
+      {
+        "id": "urn:ngm:class:layer-2-scaling",
+        "label": "Layer 2 Scaling"
+      },
+      {
+        "id": "urn:ngm:class:oracle-network",
+        "label": "Oracle Network"
       }
     ]
   },

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:uk-ai-safety-institute",
   "domain": "artificial-intelligence",
-  "definition": "The UK AI Safety Institute (AISI) is a UK government body established to evaluate the safety properties of frontier AI models before and after deployment, conduct research into emergent AI risks including deceptive alignment and capability elicitation, and coordinate with international counterparts\u2014notably the US AI Safety Institute\u2014on shared evaluation methodologies. It operates Inspect, an open-source AI evaluation framework, and publishes model evaluation results to inform regulatory and procurement decisions. The AISI sits within the Department for Science, Innovation and Technology and maintains close links with the Frontier Model Forum.",
+  "definition": "The UK AI Safety Institute (AISI) is a UK government body established in November 2023 within the Department for Science, Innovation and Technology to evaluate the safety properties of frontier AI models both before and after deployment. It conducts empirical research into emergent AI risks\u2014including dangerous capability elicitation, deceptive alignment, and autonomous replication\u2014and coordinates internationally with counterpart bodies such as the US AI Safety Institute on shared evaluation methodologies and protocols. AISI operates Inspect, an open-source AI evaluation framework, publishes model evaluation reports to inform UK regulatory and procurement decisions, and serves as the primary technical interface between the UK government and leading AI developers for pre-deployment safety assessments. Its work is grounded in the Bletchley Declaration and feeds into broader multilateral AI governance processes including OECD and UN-level deliberations.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-governance-and-ethics",
@@ -13,22 +13,71 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
+  "qualityScore": 0.74,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:inspect-evaluation-framework",
+        "label": "Inspect Evaluation Framework"
+      }
+    ],
     "requires": [],
     "enables": [
       {
         "id": "urn:ngm:class:model-evaluation-results",
         "label": "Model Evaluation Results"
+      },
+      {
+        "id": "urn:ngm:class:pre-deployment-safety-testing",
+        "label": "Pre-Deployment Safety Testing"
+      },
+      {
+        "id": "urn:ngm:class:international-ai-cooperation",
+        "label": "International AI Cooperation"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:bletchley-declaration",
+        "label": "Bletchley Declaration"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety-evaluation-framework",
+        "label": "AI Safety Evaluation Framework"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:ai-self-regulation",
+        "label": "AI Self-Regulation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:biosecurity",
+        "label": "Biosecurity"
+      },
+      {
+        "id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:red-teaming",
+        "label": "Red Teaming"
+      },
+      {
+        "id": "urn:ngm:class:capability-elicitation",
+        "label": "Capability Elicitation"
+      },
+      {
+        "id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      }
+    ],
     "supports": [
       {
         "id": "urn:ngm:class:ai-safety",
@@ -37,22 +86,47 @@
       {
         "id": "urn:ngm:class:ai-safety-research",
         "label": "AI Safety Research"
+      },
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance-and-ethics",
+        "label": "AI Governance and Ethics"
       }
     ],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
+    "partOf": [
       {
-        "id": "urn:ngm:class:red-teaming",
-        "label": "Red Teaming"
-      },
+        "id": "urn:ngm:class:department-for-science-innovation-and-technology",
+        "label": "Department for Science, Innovation and Technology"
+      }
+    ],
+    "relatedTo": [
       {
         "id": "urn:ngm:class:frontier-model-forum",
         "label": "Frontier Model Forum"
       },
       {
-        "id": "urn:ngm:class:responsible-ai",
-        "label": "Responsible AI"
+        "id": "urn:ngm:class:us-ai-safety-institute",
+        "label": "US AI Safety Institute"
+      },
+      {
+        "id": "urn:ngm:class:eu-ai-office",
+        "label": "EU AI Office"
+      },
+      {
+        "id": "urn:ngm:class:oecd-ai-policy-observatory",
+        "label": "OECD AI Policy Observatory"
+      },
+      {
+        "id": "urn:ngm:class:deceptive-alignment",
+        "label": "Deceptive Alignment"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-replication",
+        "label": "Autonomous Replication"
       }
     ]
   },

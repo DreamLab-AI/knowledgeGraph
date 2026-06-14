@@ -4,7 +4,7 @@
   "slug": "united-states",
   "public": true,
   "classIri": "urn:ngm:class:united-states",
-  "domain": "geography",
+  "domain": "governance",
   "definition": "A federal republic in North America and one of the world's largest economies, with a leading role in technology, finance, and research. It comprises fifty states and a federal district.",
   "subClassOf": [
     {

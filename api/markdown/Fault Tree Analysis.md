@@ -21,7 +21,7 @@ public:: true
   "@type": "Class",
   "label": "Fault Tree Analysis",
   "definition": "Fault Tree Analysis (FTA) is a top-down, deductive reliability and safety method that models how combinations of component failures and events can lead to a defined undesired top-level event. Using Boolean logic gates to connect basic events, it identifies minimal cut sets — the smallest combinations of failures sufficient to cause the top event — and can be evaluated qualitatively or quantitatively with probabilities. Originating in aerospace and nuclear engineering, FTA is a cornerstone of system safety, risk assessment, and certification across safety-critical industries.",
-  "domain": "engineering",
+  "domain": "infrastructure",
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:risk-assessment", "label": "Risk Assessment"}],
   "relations": {

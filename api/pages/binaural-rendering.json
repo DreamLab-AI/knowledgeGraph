@@ -4,7 +4,7 @@
   "slug": "binaural-rendering",
   "public": true,
   "classIri": "urn:ngm:class:binaural-rendering",
-  "domain": "spatial",
+  "domain": "spatial-computing",
   "definition": "Binaural rendering is the audio signal processing technique that synthesises a three-dimensional sound field deliverable over standard headphones by convolving audio sources with head-related transfer functions (HRTFs) that model the acoustic filtering imposed by the human head, pinnae, and torso. The result is the perceptual illusion of sounds emanating from specific spatial locations outside the headphones, enabling immersive audio experiences in virtual and augmented reality environments.",
   "subClassOf": [
     {

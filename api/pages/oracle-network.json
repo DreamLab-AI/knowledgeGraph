@@ -5,29 +5,102 @@
   "public": true,
   "classIri": "urn:ngm:class:oracle-network",
   "domain": "blockchain",
-  "definition": "An oracle network is a decentralised infrastructure layer composed of independent node operators that collectively fetch, validate, aggregate, and deliver off-chain data\u2014such as asset prices, weather readings, or event outcomes\u2014to smart contracts executing on a blockchain. Because blockchains cannot natively access external information, oracle networks serve as the trusted bridge between on-chain logic and real-world state. Cryptoeconomic incentives and slashing conditions align node operators to report accurately, while aggregation mechanisms (median, TWAP) mitigate manipulation by individual nodes. Oracle networks underpin critical DeFi primitives including lending protocols, synthetic assets, insurance products, and real-world asset settlement.",
+  "definition": "An oracle network is a decentralised infrastructure layer composed of independent node operators that collectively fetch, validate, aggregate, and deliver off-chain data \u2014 such as asset prices, weather readings, sports outcomes, or IoT sensor readings \u2014 to smart contracts executing on a blockchain. Because deterministic blockchain ledgers cannot natively make external HTTP requests or access off-chain databases, oracle networks serve as the cryptoeconomically-secured bridge between on-chain logic and real-world state. Node operators are aligned to honest reporting through staking, slashing, and reputation mechanisms, while aggregation techniques such as median computation and time-weighted average pricing reduce susceptibility to individual node manipulation. Oracle networks underpin critical decentralised finance primitives including lending protocols, synthetic assets, prediction markets, insurance products, cross-chain bridges, and real-world asset settlement.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:bc-network-component",
-      "label": "Network Component"
+      "id": "urn:ngm:class:decentralised-infrastructure",
+      "label": "Decentralised Infrastructure"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:aggregation-contract",
+        "label": "Aggregation Contract"
+      },
+      {
+        "id": "urn:ngm:class:off-chain-reporting",
+        "label": "Off-Chain Reporting"
+      },
+      {
+        "id": "urn:ngm:class:slashing-mechanism",
+        "label": "Slashing Mechanism"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cryptoeconomic-incentive",
+        "label": "Cryptoeconomic Incentive"
+      },
+      {
+        "id": "urn:ngm:class:node-operator",
+        "label": "Node Operator"
+      },
+      {
+        "id": "urn:ngm:class:staking",
+        "label": "Staking"
+      },
+      {
+        "id": "urn:ngm:class:data-aggregation",
+        "label": "Data Aggregation"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:price-oracle",
         "label": "Price Oracle"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-random-function",
+        "label": "Verifiable Random Function"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-reserve",
+        "label": "Proof of Reserve"
+      },
+      {
+        "id": "urn:ngm:class:cross-chain-interoperability",
+        "label": "Cross-Chain Interoperability"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:blockchain-consensus",
+        "label": "Blockchain Consensus"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:centralised-oracle",
+        "label": "Centralised Oracle"
+      },
+      {
+        "id": "urn:ngm:class:trusted-execution-environment",
+        "label": "Trusted Execution Environment"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:iot-sensor-network",
+        "label": "IoT Sensor Network"
+      },
+      {
+        "id": "urn:ngm:class:data-marketplace",
+        "label": "Data Marketplace"
+      },
+      {
+        "id": "urn:ngm:class:ai-agent",
+        "label": "AI Agent"
+      }
+    ],
     "uses": [],
     "supports": [
       {
@@ -37,6 +110,14 @@
       {
         "id": "urn:ngm:class:decentralised-finance",
         "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:prediction-market",
+        "label": "Prediction Market"
+      },
+      {
+        "id": "urn:ngm:class:real-world-asset-tokenisation",
+        "label": "Real-World Asset Tokenisation"
       }
     ],
     "standardizedBy": [],
@@ -47,8 +128,12 @@
         "label": "Blockchain Oracle"
       },
       {
-        "id": "urn:ngm:class:real-world-asset-tokenisation",
-        "label": "Real-World Asset Tokenisation"
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
       }
     ]
   },

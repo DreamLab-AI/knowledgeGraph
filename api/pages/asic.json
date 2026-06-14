@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:asic",
   "domain": "infrastructure",
-  "definition": "An Application-Specific Integrated Circuit (ASIC) is a custom integrated circuit designed and fabricated to perform a specific function or narrow set of functions with maximum efficiency, in contrast to general-purpose processors such as CPUs and GPUs that are optimised for programmable flexibility. ASICs achieve superior performance-per-watt and cost efficiency at volume compared to programmable alternatives by eliminating logic that would support unused instruction sets or configurations. They are central to cryptocurrency mining, AI inference acceleration, networking hardware, and consumer electronics where power, cost, and performance constraints demand purpose-built silicon.",
+  "definition": "An Application-Specific Integrated Circuit (ASIC) is a custom integrated circuit designed and fabricated at the transistor and mask level to perform a specific function or narrow set of functions with maximum efficiency, in contrast to general-purpose processors such as CPUs and GPUs that are optimised for programmable flexibility. ASICs achieve superior performance-per-watt and cost efficiency at production volume by eliminating logic not required for the target workload, at the expense of reconfigurability. Design is conducted using hardware description languages (VHDL, SystemVerilog), electronic design automation suites, and a foundry-specific tape-out flow; non-recurring engineering costs at advanced nodes (5nm, 3nm) can exceed tens of millions of pounds, making economic viability contingent on volume or uniquely demanding performance requirements. ASICs are central to cryptocurrency mining, AI inference and training acceleration, high-speed networking switch fabric, signal processing, and consumer electronics where power, cost, and performance constraints demand purpose-built silicon.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:hardware",
@@ -13,11 +13,37 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.74,
   "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:register-transfer-level",
+        "label": "Register-Transfer Level"
+      },
+      {
+        "id": "urn:ngm:class:standard-cell-library",
+        "label": "Standard Cell Library"
+      },
+      {
+        "id": "urn:ngm:class:physical-layout",
+        "label": "Physical Layout"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:electronic-design-automation",
+        "label": "Electronic Design Automation"
+      },
+      {
+        "id": "urn:ngm:class:semiconductor-foundry",
+        "label": "Semiconductor Foundry"
+      },
+      {
+        "id": "urn:ngm:class:hardware-description-language",
+        "label": "Hardware Description Language"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:hardware-acceleration",
@@ -30,10 +56,36 @@
       {
         "id": "urn:ngm:class:inference-hardware",
         "label": "Inference Hardware"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-mining",
+        "label": "Bitcoin Mining"
+      },
+      {
+        "id": "urn:ngm:class:high-speed-networking",
+        "label": "High-Speed Networking"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:cmos-process",
+        "label": "CMOS Process"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:matrix-multiplication",
+        "label": "Matrix Multiplication"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hashing",
+        "label": "Cryptographic Hashing"
+      }
+    ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:fpga",
@@ -42,13 +94,44 @@
       {
         "id": "urn:ngm:class:gpu-compute",
         "label": "GPU Compute"
+      },
+      {
+        "id": "urn:ngm:class:central-processing-unit",
+        "label": "Central Processing Unit"
       }
     ],
-    "bridgesTo": [],
-    "uses": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-accelerator",
+        "label": "AI Accelerator"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-work",
+        "label": "Proof of Work"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:chiplet-architecture",
+        "label": "Chiplet Architecture"
+      },
+      {
+        "id": "urn:ngm:class:advanced-packaging",
+        "label": "Advanced Packaging"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:semiconductor-industry",
+        "label": "Semiconductor Industry"
+      },
+      {
+        "id": "urn:ngm:class:system-on-chip",
+        "label": "System-on-Chip"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:embedded-systems",
@@ -57,6 +140,14 @@
       {
         "id": "urn:ngm:class:hardware-component",
         "label": "Hardware Component"
+      },
+      {
+        "id": "urn:ngm:class:tape-out",
+        "label": "Tape-Out"
+      },
+      {
+        "id": "urn:ngm:class:node-shrink",
+        "label": "Node Shrink"
       }
     ]
   },

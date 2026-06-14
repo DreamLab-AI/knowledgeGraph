@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:eclair",
   "domain": "blockchain",
-  "definition": "Eclair is an implementation of the Bitcoin Lightning Network protocol written in Scala and maintained by ACINQ.",
+  "definition": "Eclair is an open-source, production-grade implementation of the Bitcoin Lightning Network protocol, written in Scala and developed by ACINQ. It implements the full BOLT specification suite, enabling trustless off-chain payment channels, multi-hop routing, and peer-to-peer gossip between Lightning nodes. Eclair serves as the backend engine for ACINQ's Phoenix mobile wallet and is widely deployed as a routing node by businesses and individuals seeking high-throughput, low-latency Bitcoin micropayments. It is interoperable with other conformant Lightning implementations such as LND and Core Lightning through shared adherence to the BOLT standards.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:lightning-network",
@@ -13,30 +13,119 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:lightning-network",
-        "label": "Lightning Network"
-      },
-      {
         "id": "urn:ngm:class:payment-channel",
         "label": "Payment Channel"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-node",
+        "label": "Bitcoin Node"
+      },
+      {
+        "id": "urn:ngm:class:htlc",
+        "label": "HTLC"
       }
     ],
-    "enables": [],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:micropayment",
+        "label": "Micropayment"
+      },
+      {
+        "id": "urn:ngm:class:instant-bitcoin-payment",
+        "label": "Instant Bitcoin Payment"
+      },
+      {
+        "id": "urn:ngm:class:payment-routing",
+        "label": "Payment Routing"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      },
+      {
+        "id": "urn:ngm:class:segwit",
+        "label": "SegWit"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:bolt-specification",
+        "label": "BOLT Specification"
+      },
+      {
+        "id": "urn:ngm:class:lightning-network-protocol",
+        "label": "Lightning Network Protocol"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:lnd",
+        "label": "LND"
+      },
+      {
+        "id": "urn:ngm:class:core-lightning",
+        "label": "Core Lightning"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:onion-routing",
+        "label": "Onion Routing"
+      },
+      {
+        "id": "urn:ngm:class:gossip-protocol",
+        "label": "Gossip Protocol"
+      },
+      {
+        "id": "urn:ngm:class:scala-programming-language",
+        "label": "Scala Programming Language"
+      },
+      {
+        "id": "urn:ngm:class:akka-framework",
+        "label": "Akka Framework"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:phoenix-wallet",
+        "label": "Phoenix Wallet"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-payment-network",
+        "label": "Bitcoin Payment Network"
+      }
+    ],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:acinq",
+        "label": "ACINQ"
+      },
+      {
+        "id": "urn:ngm:class:payment-channel-network",
+        "label": "Payment Channel Network"
+      }
+    ]
   },
   "wikilinks": [
     {

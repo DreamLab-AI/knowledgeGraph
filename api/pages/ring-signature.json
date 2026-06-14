@@ -4,7 +4,7 @@
   "slug": "ring-signature",
   "public": true,
   "classIri": "urn:ngm:class:ring-signature",
-  "domain": "cryptography",
+  "domain": "security",
   "definition": "A ring signature is a digital signature produced by one member of a group such that verifiers learn the signature came from the group but cannot identify which member signed. It provides signer anonymity within an ad hoc set.",
   "subClassOf": [
     {

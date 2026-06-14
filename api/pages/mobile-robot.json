@@ -5,39 +5,163 @@
   "public": true,
   "classIri": "urn:ngm:class:mobile-robot",
   "domain": "robotics",
-  "definition": "A mobile robot is a robot with locomotion capabilities that enable it to move within its working environment.",
+  "definition": "A mobile robot is an autonomous or semi-autonomous electromechanical system equipped with a locomotion mechanism \u2014 wheels, tracks, legs, rotors, or thrusters \u2014 that enables it to navigate within or across physical environments without being fixed to a stationary base. Mobile robots integrate sensing, actuation, and computation to perceive their surroundings, plan feasible paths, and execute goal-directed motion, distinguishing them from fixed industrial manipulators. They span a wide spectrum of embodiments including ground vehicles (UGVs), aerial vehicles (UAVs/drones), underwater vehicles (AUVs), and legged walkers, unified by the capability to self-relocate in service of a task. Defined formally by ISO 8373:2021 as a robot able to travel under its own control.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:robo-robot-type",
-      "label": "Robot Type"
+      "id": "urn:ngm:class:robot",
+      "label": "Robot"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.74,
   "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:robotics",
-        "label": "robotics"
+        "id": "urn:ngm:class:locomotion-system",
+        "label": "Locomotion System"
+      },
+      {
+        "id": "urn:ngm:class:robot-sensor-suite",
+        "label": "Robot Sensor Suite"
+      },
+      {
+        "id": "urn:ngm:class:onboard-computer",
+        "label": "Onboard Computer"
+      },
+      {
+        "id": "urn:ngm:class:power-supply",
+        "label": "Power Supply"
+      },
+      {
+        "id": "urn:ngm:class:actuator",
+        "label": "Actuator"
       }
     ],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:simultaneous-localisation-and-mapping",
+        "label": "Simultaneous Localisation and Mapping"
+      },
+      {
+        "id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "id": "urn:ngm:class:obstacle-avoidance",
+        "label": "Obstacle Avoidance"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "id": "urn:ngm:class:last-mile-delivery",
+        "label": "Last-Mile Delivery"
+      },
+      {
+        "id": "urn:ngm:class:search-and-rescue-robotics",
+        "label": "Search and Rescue Robotics"
+      },
+      {
+        "id": "urn:ngm:class:warehouse-automation",
+        "label": "Warehouse Automation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:localisation",
+        "label": "Localisation"
+      },
+      {
+        "id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:industrial-manipulator",
+        "label": "Industrial Manipulator"
+      },
+      {
+        "id": "urn:ngm:class:fixed-base-robot",
+        "label": "Fixed-Base Robot"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:lidar",
+        "label": "LiDAR"
+      },
+      {
+        "id": "urn:ngm:class:inertial-measurement-unit",
+        "label": "Inertial Measurement Unit"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:robot-operating-system",
+        "label": "Robot Operating System"
+      }
+    ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-8373-2021",
+        "label": "ISO 8373:2021"
+      },
+      {
+        "id": "urn:ngm:class:ansi-ria-r15-08",
+        "label": "ANSI/RIA R15.08"
+      }
+    ],
     "partOf": [
       {
-        "id": "urn:ngm:class:robot-rb-0001",
-        "label": "Robot (RB-0001)"
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:multi-robot-system",
+        "label": "Multi-Robot System"
       }
     ],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:unmanned-aerial-vehicle",
+        "label": "Unmanned Aerial Vehicle"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-underwater-vehicle",
+        "label": "Autonomous Underwater Vehicle"
+      },
+      {
+        "id": "urn:ngm:class:legged-robot",
+        "label": "Legged Robot"
+      },
+      {
+        "id": "urn:ngm:class:swarm-robotics",
+        "label": "Swarm Robotics"
+      }
+    ]
   },
   "wikilinks": [
     {

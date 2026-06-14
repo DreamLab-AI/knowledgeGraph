@@ -4,7 +4,7 @@
   "slug": "climate-policy",
   "public": true,
   "classIri": "urn:ngm:class:climate-policy",
-  "domain": "public-policy",
+  "domain": "governance",
   "definition": "Climate policy is the set of government measures, regulations, and commitments intended to reduce greenhouse gas emissions and address the effects of climate change.",
   "subClassOf": [
     {

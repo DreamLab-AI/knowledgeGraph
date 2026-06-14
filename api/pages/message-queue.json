@@ -5,19 +5,41 @@
   "public": true,
   "classIri": "urn:ngm:class:message-queue",
   "domain": "infrastructure",
-  "definition": "A Message Queue is a form of asynchronous inter-process communication that allows software components to exchange messages by placing them in a durable, ordered buffer, decoupling producers from consumers in time and space. Messages are persisted in the queue until a consumer retrieves and acknowledges them, providing at-least-once delivery guarantees and enabling load levelling across heterogeneous processing rates. Message queues are foundational to event-driven architectures, microservices integration, and distributed data pipelines, where they absorb traffic spikes and improve system resilience. Implementations range from lightweight in-process queues to enterprise-grade distributed brokers such as Apache Kafka and RabbitMQ.",
+  "definition": "A Message Queue is a durable, ordered buffer that mediates asynchronous inter-process communication, allowing producers to enqueue messages independently of consumers reading them, thereby decoupling components in both time and topology. Messages are persisted by a broker until a consumer retrieves and acknowledges them, with delivery semantics ranging from at-most-once through at-least-once to exactly-once, each trading throughput for reliability. Message queues are foundational to event-driven architectures, microservices integration, and distributed data pipelines, absorbing traffic spikes, enabling backpressure management, and improving system resilience against partial failures. Implementations range from lightweight in-process task queues to enterprise-grade distributed log brokers such as Apache Kafka, RabbitMQ, and Amazon SQS.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:distributed-system",
-      "label": "Distributed System"
+      "id": "urn:ngm:class:distributed-systems",
+      "label": "Distributed Systems"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
-  "maturity": "established",
+  "qualityScore": 0.74,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:message-broker",
+        "label": "Message Broker"
+      },
+      {
+        "id": "urn:ngm:class:dead-letter-queue",
+        "label": "Dead Letter Queue"
+      },
+      {
+        "id": "urn:ngm:class:consumer-group",
+        "label": "Consumer Group"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:message-broker",
+        "label": "Message Broker"
+      },
+      {
+        "id": "urn:ngm:class:persistence-layer",
+        "label": "Persistence Layer"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:event-driven-architecture",
@@ -30,45 +52,106 @@
       {
         "id": "urn:ngm:class:data-pipeline",
         "label": "Data Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:backpressure-management",
+        "label": "Backpressure Management"
+      },
+      {
+        "id": "urn:ngm:class:load-levelling",
+        "label": "Load Levelling"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [
+    "dependsOn": [
       {
-        "id": "urn:ngm:class:apache-kafka",
-        "label": "Apache Kafka"
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
       },
+      {
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:producer-consumer-pattern",
+        "label": "Producer Consumer Pattern"
+      },
+      {
+        "id": "urn:ngm:class:competing-consumers-pattern",
+        "label": "Competing Consumers Pattern"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:remote-procedure-call",
+        "label": "Remote Procedure Call"
+      },
+      {
+        "id": "urn:ngm:class:synchronous-communication",
+        "label": "Synchronous Communication"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:agent-event-stream",
+        "label": "Agent Event Stream"
+      },
+      {
+        "id": "urn:ngm:class:stream-processing",
+        "label": "Stream Processing"
+      }
+    ],
+    "uses": [
       {
         "id": "urn:ngm:class:asynchronous-communication",
         "label": "Asynchronous Communication"
       },
       {
-        "id": "urn:ngm:class:asynchronous-execution",
-        "label": "Asynchronous Execution"
+        "id": "urn:ngm:class:publish-subscribe-pattern",
+        "label": "Publish Subscribe Pattern"
+      },
+      {
+        "id": "urn:ngm:class:serialisation",
+        "label": "Serialisation"
       }
     ],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:horizontal-scalability",
+        "label": "Horizontal Scalability"
+      },
+      {
+        "id": "urn:ngm:class:service-decoupling",
+        "label": "Service Decoupling"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:agent-event-stream",
-        "label": "Agent Event Stream"
+        "id": "urn:ngm:class:apache-kafka",
+        "label": "Apache Kafka"
+      },
+      {
+        "id": "urn:ngm:class:rabbitmq",
+        "label": "RabbitMQ"
       },
       {
         "id": "urn:ngm:class:cloud-computing",
         "label": "Cloud Computing"
       },
       {
-        "id": "urn:ngm:class:data-integration",
-        "label": "Data Integration"
+        "id": "urn:ngm:class:event-sourcing",
+        "label": "Event Sourcing"
       },
       {
-        "id": "urn:ngm:class:event-management",
-        "label": "Event Management"
+        "id": "urn:ngm:class:data-integration",
+        "label": "Data Integration"
       }
     ]
   },

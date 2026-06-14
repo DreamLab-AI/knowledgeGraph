@@ -4,8 +4,8 @@
   "slug": "gs1",
   "public": true,
   "classIri": "urn:ngm:class:gs1",
-  "domain": "infrastructure",
-  "definition": "GS1 is a global not-for-profit standards organisation that develops and administers an open supply chain standards system used by over two million companies in more than 150 countries. Its standards define globally unique identification schemes for products (GTIN\u2014Global Trade Item Number), locations (GLN), shipments (SSCC), and assets (GIAI), encoded in barcodes (EAN-13, ITF-14), QR codes, and GS1 DataMatrix symbols, and exchanged electronically via EDI and the GS1 Electronic Product Code Information Services (EPCIS) event standard. GS1 standards form the common language of global retail, logistics, healthcare, and food safety traceability systems.",
+  "domain": "standards",
+  "definition": "GS1 is the global not-for-profit standards organisation responsible for designing, administering, and maintaining the world's most widely deployed open supply chain identification system, used by over two million companies in more than 150 countries. Its core standards define globally unique identification schemes for trade items (GTIN), locations (GLN), logistic units (SSCC), and assets (GIAI), encoding them in barcodes (EAN-13, ITF-14, GS1-128), two-dimensional symbols (GS1 DataMatrix, GS1 QR), and digital web URIs via GS1 Digital Link. GS1 also governs EPCIS (Electronic Product Code Information Services), the event-data exchange standard that captures What, Where, When, Why, and How across the supply chain, and underpins regulatory traceability mandates in pharmaceuticals, food safety, and sustainable products across the EU, US, and beyond.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:supply-chain-management",
@@ -13,11 +13,41 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
-  "maturity": "established",
+  "qualityScore": 0.72,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:global-trade-item-number",
+        "label": "Global Trade Item Number"
+      },
+      {
+        "id": "urn:ngm:class:global-location-number",
+        "label": "Global Location Number"
+      },
+      {
+        "id": "urn:ngm:class:serial-shipping-container-code",
+        "label": "Serial Shipping Container Code"
+      },
+      {
+        "id": "urn:ngm:class:epcis",
+        "label": "EPCIS"
+      },
+      {
+        "id": "urn:ngm:class:gs1-digital-link",
+        "label": "GS1 Digital Link"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:barcode",
+        "label": "Barcode"
+      },
+      {
+        "id": "urn:ngm:class:electronic-data-interchange",
+        "label": "Electronic Data Interchange"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:supply-chain-traceability",
@@ -37,22 +67,54 @@
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [
+    "implements": [
       {
-        "id": "urn:ngm:class:provenance-standard",
-        "label": "Provenance Standard"
+        "id": "urn:ngm:class:open-standards",
+        "label": "Open Standards"
       },
       {
-        "id": "urn:ngm:class:calibration-standards",
-        "label": "Calibration Standards"
+        "id": "urn:ngm:class:data-interoperability",
+        "label": "Data Interoperability"
       }
     ],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:decentralised-identifier",
+        "label": "Decentralised Identifier"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-credential",
+        "label": "Verifiable Credential"
+      }
+    ],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:digital-product-passport",
+        "label": "Digital Product Passport"
+      },
+      {
+        "id": "urn:ngm:class:automated-identification",
+        "label": "Automated Identification"
+      },
+      {
+        "id": "urn:ngm:class:rfid",
+        "label": "RFID"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-standard",
+        "label": "ISO Standard"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:global-standards-infrastructure",
+        "label": "Global Standards Infrastructure"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:supply-chain",
@@ -69,6 +131,14 @@
       {
         "id": "urn:ngm:class:logistics-optimization",
         "label": "Logistics Optimization"
+      },
+      {
+        "id": "urn:ngm:class:retail-technology",
+        "label": "Retail Technology"
+      },
+      {
+        "id": "urn:ngm:class:healthcare-supply-chain",
+        "label": "Healthcare Supply Chain"
       }
     ]
   },

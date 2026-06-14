@@ -5,50 +5,141 @@
   "public": true,
   "classIri": "urn:ngm:class:open-source-ai",
   "domain": "artificial-intelligence",
-  "definition": "Open-Source AI refers to artificial intelligence models, training datasets, evaluation benchmarks, and software tooling whose weights, source code, data pipelines, and training procedures are publicly released under licences that permit inspection, reproduction, modification, and redistribution. The degree of openness varies considerably: some releases provide weights only (open-weights), others include full training code and data (fully open), while a further subset additionally discloses evaluation methodology and safety assessments. Open-source AI accelerates scientific reproducibility, enables community fine-tuning and red-teaming, and reduces barriers to deployment\u2014but also raises governance questions about dual-use risk and safety assurance that closed-release pipelines handle through access controls.",
+  "definition": "Open-Source AI denotes artificial intelligence systems\u2014including model weights, training code, datasets, evaluation benchmarks, and inference tooling\u2014released under licences that permit public inspection, reproduction, modification, and redistribution. The degree of openness varies widely: fully open releases expose weights, training data, and procedures; open-weights releases share weights and inference code while withholding training data; and open-API systems expose neither. This transparency gradient determines reproducibility, auditability, and dual-use risk, and is formalised by frameworks such as the OSI Open Source AI Definition. Open-source AI accelerates community safety research, enables fine-tuning on proprietary data, and reduces vendor lock-in, while simultaneously raising governance questions about capability proliferation and misuse.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ai-research-area",
-      "label": "AI Research Area"
+      "id": "urn:ngm:class:open-source-software",
+      "label": "Open Source Software"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:model-weights",
+        "label": "Model Weights"
+      },
+      {
+        "id": "urn:ngm:class:training-dataset",
+        "label": "Training Dataset"
+      },
+      {
+        "id": "urn:ngm:class:inference-engine",
+        "label": "Inference Engine"
+      },
+      {
+        "id": "urn:ngm:class:evaluation-benchmark",
+        "label": "Evaluation Benchmark"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:open-source-licence",
+        "label": "Open Source Licence"
+      },
+      {
+        "id": "urn:ngm:class:compute-infrastructure",
+        "label": "Compute Infrastructure"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:fine-tuning",
         "label": "Fine Tuning"
       },
       {
-        "id": "urn:ngm:class:benchmark-standard",
-        "label": "Benchmark Standard"
+        "id": "urn:ngm:class:red-teaming",
+        "label": "Red Teaming"
+      },
+      {
+        "id": "urn:ngm:class:model-quantisation",
+        "label": "Model Quantisation"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:edge-ai",
+        "label": "Edge AI"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:neural-network-architecture",
+        "label": "Neural Network Architecture"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:proprietary-ai",
+        "label": "Proprietary AI"
+      },
+      {
+        "id": "urn:ngm:class:closed-source-model",
+        "label": "Closed-Source Model"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
     "uses": [],
     "supports": [
       {
         "id": "urn:ngm:class:ai-governance",
         "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:scientific-reproducibility",
+        "label": "Scientific Reproducibility"
       }
     ],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
+    "standardizedBy": [
       {
-        "id": "urn:ngm:class:model-weights",
-        "label": "Model Weights"
+        "id": "urn:ngm:class:osi-open-source-ai-definition",
+        "label": "OSI Open Source AI Definition"
       },
+      {
+        "id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      }
+    ],
+    "partOf": [
       {
         "id": "urn:ngm:class:open-source-software",
         "label": "Open Source Software"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:model-hub",
+        "label": "Model Hub"
+      },
+      {
+        "id": "urn:ngm:class:community-fine-tuning",
+        "label": "Community Fine-Tuning"
+      },
+      {
+        "id": "urn:ngm:class:dual-use-risk",
+        "label": "Dual-Use Risk"
       }
     ]
   },

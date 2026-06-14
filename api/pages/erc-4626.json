@@ -4,35 +4,127 @@
   "slug": "erc-4626",
   "public": true,
   "classIri": "urn:ngm:class:erc-4626",
-  "domain": "standards",
-  "definition": "ERC-4626 is an Ethereum standard defining a common interface for tokenised yield-bearing vaults built on the ERC-20 token standard.",
+  "domain": "blockchain",
+  "definition": "ERC-4626 is a finalised Ethereum Improvement Proposal that specifies a standardised application-programming interface for tokenised yield-bearing vaults, extending the ERC-20 fungible token standard with deposit, withdrawal, and share-accounting functions. It allows any vault \u2014 whether backed by lending protocols, automated market makers, or staking contracts \u2014 to expose a uniform interface so that aggregators, routers, and analytics tools can interact with all vaults without bespoke adapters. The standard mandates methods such as deposit, mint, withdraw, redeem, and convertToAssets alongside preview variants that return expected amounts without state changes, enabling safe, read-only price discovery. Adoption of ERC-4626 reduces integration friction across decentralised finance, enabling composable yield strategies and dramatically lowering the cost of building multi-vault products.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:technical-standard",
-      "label": "Technical Standard"
+      "id": "urn:ngm:class:token-standard",
+      "label": "Token Standard"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.73,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:ethereum-smart-contract-platform",
-        "label": "Ethereum"
+        "id": "urn:ngm:class:erc-20",
+        "label": "ERC-20"
+      },
+      {
+        "id": "urn:ngm:class:ethereum-smart-contract",
+        "label": "Ethereum Smart Contract"
       }
     ],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:yield-aggregator",
+        "label": "Yield Aggregator"
+      },
+      {
+        "id": "urn:ngm:class:composability",
+        "label": "Composability"
+      },
+      {
+        "id": "urn:ngm:class:liquidity-mining",
+        "label": "Liquidity Mining"
+      }
+    ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:yield-bearing-vault",
+        "label": "Yield-Bearing Vault"
+      },
+      {
+        "id": "urn:ngm:class:ethereum-improvement-proposal",
+        "label": "Ethereum Improvement Proposal"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:erc-4337",
+        "label": "ERC-4337"
+      },
+      {
+        "id": "urn:ngm:class:eip-1155",
+        "label": "EIP-1155"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:real-world-asset-tokenisation",
+        "label": "Real-World Asset Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:portfolio-management",
+        "label": "Portfolio Management"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:solidity",
+        "label": "Solidity"
+      },
+      {
+        "id": "urn:ngm:class:fungible-token",
+        "label": "Fungible Token"
+      },
+      {
+        "id": "urn:ngm:class:share-accounting",
+        "label": "Share Accounting"
+      }
+    ],
     "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ethereum-foundation",
+        "label": "Ethereum Foundation"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:ethereum-ecosystem",
+        "label": "Ethereum Ecosystem"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
+      },
+      {
+        "id": "urn:ngm:class:lending-protocol",
+        "label": "Lending Protocol"
+      },
+      {
+        "id": "urn:ngm:class:liquid-staking",
+        "label": "Liquid Staking"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract-security",
+        "label": "Smart Contract Security"
+      },
+      {
+        "id": "urn:ngm:class:on-chain-accounting",
+        "label": "On-Chain Accounting"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -5,38 +5,80 @@
   "public": true,
   "classIri": "urn:ngm:class:predictive-analytics",
   "domain": "artificial-intelligence",
-  "definition": "Predictive Analytics is the practice of extracting information from existing data sets and applying statistical algorithms and machine learning techniques to forecast future outcomes. It combines feature engineering, model training, and evaluation pipelines to generate actionable predictions in domains such as user behaviour, demand forecasting, anomaly detection, and risk assessment. Predictive models are trained on historical data and deployed as AI applications embedded in business intelligence systems and decision-support workflows.",
+  "definition": "Predictive Analytics is the discipline of extracting patterns from historical data using statistical algorithms and machine learning models to generate probabilistic forecasts of future events, behaviours, or conditions. It encompasses the full workflow from data ingestion and feature engineering through model selection, training, validation, and operationalised deployment within business intelligence and decision-support systems. The field draws on regression, classification, ensemble methods, and time-series modelling to produce actionable outputs in domains ranging from demand forecasting and risk assessment to anomaly detection and personalised recommendation. It is distinguished from descriptive analytics by its forward-looking orientation and from prescriptive analytics by its focus on prediction rather than optimised action.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ai-application",
-      "label": "AI Application"
+      "id": "urn:ngm:class:data-science",
+      "label": "Data Science"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "mature",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:feature-engineering",
         "label": "Feature Engineering"
+      },
+      {
+        "id": "urn:ngm:class:historical-data",
+        "label": "Historical Data"
+      },
+      {
+        "id": "urn:ngm:class:statistical-modelling",
+        "label": "Statistical Modelling"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:anomaly-detection",
         "label": "Anomaly Detection"
+      },
+      {
+        "id": "urn:ngm:class:demand-forecasting",
+        "label": "Demand Forecasting"
+      },
+      {
+        "id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "id": "urn:ngm:class:recommendation-system",
+        "label": "Recommendation System"
+      },
+      {
+        "id": "urn:ngm:class:decision-support-system",
+        "label": "Decision Support System"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:descriptive-analytics",
+        "label": "Descriptive Analytics"
+      },
+      {
+        "id": "urn:ngm:class:prescriptive-analytics",
+        "label": "Prescriptive Analytics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:spatial-analytics",
+        "label": "Spatial Analytics"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:data-pipeline",
@@ -45,12 +87,50 @@
       {
         "id": "urn:ngm:class:model-training",
         "label": "Model Training"
+      },
+      {
+        "id": "urn:ngm:class:cross-validation",
+        "label": "Cross Validation"
+      },
+      {
+        "id": "urn:ngm:class:regression-analysis",
+        "label": "Regression Analysis"
+      },
+      {
+        "id": "urn:ngm:class:classification",
+        "label": "Classification"
+      },
+      {
+        "id": "urn:ngm:class:ensemble-methods",
+        "label": "Ensemble Methods"
+      },
+      {
+        "id": "urn:ngm:class:time-series-analysis",
+        "label": "Time Series Analysis"
       }
     ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:business-intelligence",
+        "label": "Business Intelligence"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:exploratory-data-analysis",
+        "label": "Exploratory Data Analysis"
+      },
+      {
+        "id": "urn:ngm:class:model-inference",
+        "label": "Model Inference"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

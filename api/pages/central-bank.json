@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:central-bank",
   "domain": "finance",
-  "definition": "A central bank is a public financial institution responsible for managing a nation's or currency union's money supply, setting benchmark interest rates, and acting as a lender of last resort to commercial banks. Central banks implement monetary policy to pursue macroeconomic objectives such as price stability, full employment, and financial stability. They typically hold foreign exchange reserves, supervise the broader banking system, and increasingly oversee or issue digital payment infrastructures including Central Bank Digital Currencies.",
+  "definition": "A central bank is a public financial institution vested with exclusive authority over a nation's or currency union's monetary base, responsible for setting benchmark interest rates, controlling the money supply, and acting as lender of last resort to the commercial banking sector. Central banks implement monetary policy to pursue macroeconomic objectives including price stability, sustainable economic growth, and full employment, typically operating with a degree of independence from short-term political influence. They hold official foreign exchange reserves, supervise the broader banking system, operate or oversee critical payment infrastructure, and increasingly research or issue Central Bank Digital Currencies as sovereign digital money. Major examples include the Federal Reserve, the European Central Bank, the Bank of England, the Bank of Japan, and the People's Bank of China.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:monetary-system",
@@ -13,11 +13,37 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
-  "maturity": "established",
+  "qualityScore": 0.75,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:monetary-policy-implementation",
+        "label": "Monetary Policy Implementation"
+      },
+      {
+        "id": "urn:ngm:class:open-market-operations",
+        "label": "Open Market Operations"
+      },
+      {
+        "id": "urn:ngm:class:reserve-requirements",
+        "label": "Reserve Requirements"
+      },
+      {
+        "id": "urn:ngm:class:discount-window",
+        "label": "Discount Window"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:central-bank-independence",
+        "label": "Central Bank Independence"
+      },
+      {
+        "id": "urn:ngm:class:foreign-exchange-reserves",
+        "label": "Foreign Exchange Reserves"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:central-bank-digital-currency",
@@ -26,12 +52,47 @@
       {
         "id": "urn:ngm:class:payment-system",
         "label": "Payment System"
+      },
+      {
+        "id": "urn:ngm:class:inflation-control",
+        "label": "Inflation Control"
+      },
+      {
+        "id": "urn:ngm:class:lender-of-last-resort",
+        "label": "Lender of Last Resort"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:interbank-market",
+        "label": "Interbank Market"
+      },
+      {
+        "id": "urn:ngm:class:government-bond-market",
+        "label": "Government Bond Market"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:commercial-bank",
+        "label": "Commercial Bank"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "id": "urn:ngm:class:tokenisation",
+        "label": "Tokenisation"
+      }
+    ],
     "uses": [],
     "supports": [
       {
@@ -39,16 +100,40 @@
         "label": "Monetary Sovereignty"
       },
       {
-        "id": "urn:ngm:class:inflation-control",
-        "label": "Inflation Control"
+        "id": "urn:ngm:class:financial-stability",
+        "label": "Financial Stability"
+      },
+      {
+        "id": "urn:ngm:class:banking-supervision",
+        "label": "Banking Supervision"
       }
     ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
       {
+        "id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      },
+      {
         "id": "urn:ngm:class:digital-currency",
         "label": "Digital Currency"
+      },
+      {
+        "id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      },
+      {
+        "id": "urn:ngm:class:bank-for-international-settlements",
+        "label": "Bank for International Settlements"
+      },
+      {
+        "id": "urn:ngm:class:quantitative-easing",
+        "label": "Quantitative Easing"
+      },
+      {
+        "id": "urn:ngm:class:inflation-targeting",
+        "label": "Inflation Targeting"
       }
     ]
   },

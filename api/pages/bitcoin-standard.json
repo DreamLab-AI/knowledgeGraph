@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:bitcoin-proof-of-work-protocol-standard",
   "domain": "blockchain",
-  "definition": "The Bitcoin Standard is an economic and monetary thesis proposing that Bitcoin's fixed supply cap of 21 million units, its decentralised consensus via Proof of Work, and its censorship-resistant issuance schedule make it a superior store of value and a viable basis for a new international monetary order, analogous to the historical gold standard. Proponents argue that Bitcoin's predictable, algorithmically enforced monetary policy immunises it against political inflation, contrasting with fiat currencies subject to central bank intervention. The thesis draws on Austrian economics, particularly the concept of sound money.",
+  "definition": "The Bitcoin Standard is an economic and monetary thesis proposing that Bitcoin's algorithmically enforced fixed supply of 21 million units, its decentralised Proof of Work consensus mechanism, and its censorship-resistant disinflationary issuance schedule collectively make it a superior store of value and the basis for a new international monetary order analogous to the historical gold standard. Drawing heavily on Austrian economics \u2014 particularly Ludwig von Mises's concept of sound money and Saifedean Ammous's eponymous 2018 treatise \u2014 the thesis holds that Bitcoin's predictable, politically immutable monetary policy immunises it against the purchasing-power erosion endemic to fiat currencies managed by central banks. In practice the standard informs corporate treasury reserve strategies, nation-state legal-tender experiments, and the design of Bitcoin ETF and custody infrastructure.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-token-and-asset",
@@ -17,17 +17,69 @@
   "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:decentralisation",
+        "label": "Decentralisation"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-security",
+        "label": "Cryptographic Security"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:bitcoin-treasury-reserve",
+        "label": "Bitcoin Treasury Reserve"
+      },
+      {
+        "id": "urn:ngm:class:sovereign-bitcoin-adoption",
+        "label": "Sovereign Bitcoin Adoption"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-etf",
+        "label": "Bitcoin ETF"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:network-effect",
+        "label": "Network Effect"
+      },
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public Key Cryptography"
+      }
+    ],
     "implements": [],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:inflation",
         "label": "Inflation"
+      },
+      {
+        "id": "urn:ngm:class:fiat-currency",
+        "label": "Fiat Currency"
+      },
+      {
+        "id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
       }
     ],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:digital-asset-governance",
+        "label": "Digital Asset Governance"
+      },
+      {
+        "id": "urn:ngm:class:macroeconomics",
+        "label": "Macroeconomics"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:proof-of-work",
@@ -36,6 +88,14 @@
       {
         "id": "urn:ngm:class:cryptocurrency",
         "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-mining",
+        "label": "Bitcoin Mining"
+      },
+      {
+        "id": "urn:ngm:class:halving",
+        "label": "Halving"
       }
     ],
     "supports": [],
@@ -53,6 +113,18 @@
       {
         "id": "urn:ngm:class:monetary-system",
         "label": "Monetary System"
+      },
+      {
+        "id": "urn:ngm:class:austrian-economics",
+        "label": "Austrian Economics"
+      },
+      {
+        "id": "urn:ngm:class:sound-money",
+        "label": "Sound Money"
+      },
+      {
+        "id": "urn:ngm:class:monetary-sovereignty",
+        "label": "Monetary Sovereignty"
       }
     ]
   },

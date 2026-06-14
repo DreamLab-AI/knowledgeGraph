@@ -21,7 +21,7 @@ public:: true
   "@type": "Class",
   "label": "Asset Optimization",
   "definition": "Asset Optimization is the systematic process of reducing the computational cost, memory footprint, and bandwidth consumption of digital assets while preserving their perceptual quality and functional correctness for target deployment environments. It applies techniques including polygon reduction, texture compression, audio resampling, and level-of-detail generation to ensure assets perform acceptably on constrained hardware.",
-  "domain": "spatial",
+  "domain": "spatial-computing",
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:optimisation", "label": "Optimisation"}],
   "relations": {

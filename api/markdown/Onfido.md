@@ -55,7 +55,7 @@ public:: true
   "@type": "Class",
   "label": "Onfido",
   "definition": "Onfido is an identity verification company that combines document checks with facial biometrics to confirm users during remote onboarding. It was acquired by Entrust in 2024.",
-  "domain": "identity",
+  "domain": "security",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

@@ -47,7 +47,7 @@ public:: true
   "@type": "Class",
   "label": "Content Delivery",
   "definition": "Content delivery is the distribution of digital media such as web pages, video and software to end users, typically optimised for speed and reliability. It is commonly accelerated by content delivery networks.",
-  "domain": "networking",
+  "domain": "infrastructure",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

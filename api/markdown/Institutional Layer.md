@@ -63,7 +63,7 @@ public:: true
   "@type": "Class",
   "label": "Institutional Layer",
   "definition": "The Institutional Layer is the cross-cutting stratum that represents the organisations, roles, and durable arrangements through which a system operates in the wider world. It sits above the Governance Layer, embodying its decisions in standing bodies, and depends on regulatory and compliance structures. It contains organisational entities, mandates, and the relationships between them.",
-  "domain": "institutional",
+  "domain": "finance",
   "maturity": "emerging",
   "qualityScore": 0.7,
   "subClassOf": [

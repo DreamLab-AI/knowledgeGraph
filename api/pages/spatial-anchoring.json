@@ -5,34 +5,130 @@
   "public": true,
   "classIri": "urn:ngm:class:spatial-anchoring",
   "domain": "spatial-computing",
-  "definition": "A technique for locking virtual objects to specific physical locations using environmental mapping, enabling persistent placement of digital content that maintains consistent position and orientation relative to real-world surfaces across sessions and devices through SLAM-based tracking and cloud...",
+  "definition": "Spatial anchoring is the process of binding virtual or digital content to a precise, persistent location in physical space so that the content maintains a consistent position and orientation relative to the real world across multiple sessions, devices, and users. It relies on environmental mapping techniques such as Simultaneous Localisation and Mapping (SLAM), feature descriptor extraction, and cloud-synchronised anchor databases to re-localise digital objects reliably when the same physical environment is revisited. Anchors encode both geometric and semantic information about a surface or landmark, enabling persistent mixed-reality experiences, shared multi-user overlays, and location-aware services. The technology underpins applications ranging from indoor navigation and industrial training overlays to collaborative augmented reality workspaces and location-based gaming.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:sc-platform-and-environment",
-      "label": "Platform and Environment"
+      "id": "urn:ngm:class:augmented-reality",
+      "label": "Augmented Reality"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:anchor-persistence",
+        "label": "Anchor Persistence"
+      },
+      {
+        "id": "urn:ngm:class:re-localisation",
+        "label": "Re-localisation"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      },
+      {
+        "id": "urn:ngm:class:environment-mapping",
+        "label": "Environment Mapping"
+      },
+      {
+        "id": "urn:ngm:class:pose-estimation",
+        "label": "Pose Estimation"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:location-based-ar",
         "label": "Location Based AR"
+      },
+      {
+        "id": "urn:ngm:class:persistent-ar",
+        "label": "Persistent AR"
+      },
+      {
+        "id": "urn:ngm:class:shared-ar-experiences",
+        "label": "Shared AR Experiences"
+      },
+      {
+        "id": "urn:ngm:class:indoor-navigation",
+        "label": "Indoor Navigation"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:inertial-measurement-unit",
+        "label": "Inertial Measurement Unit"
+      },
+      {
+        "id": "urn:ngm:class:depth-sensing",
+        "label": "Depth Sensing"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:world-locking",
+        "label": "World Locking"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:feature-descriptor-extraction",
+        "label": "Feature Descriptor Extraction"
+      },
+      {
+        "id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      },
+      {
+        "id": "urn:ngm:class:coordinate-frame",
+        "label": "Coordinate Frame"
+      },
+      {
+        "id": "urn:ngm:class:cloud-storage",
+        "label": "Cloud Storage"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:mixed-reality",
+        "label": "Mixed Reality"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:geospatial-coordinate-system",
+        "label": "Geospatial Coordinate System"
+      }
+    ]
   },
   "wikilinks": [
     {

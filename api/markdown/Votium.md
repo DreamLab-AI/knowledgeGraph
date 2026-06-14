@@ -55,7 +55,7 @@ public:: true
   "@type": "Class",
   "label": "Votium",
   "definition": "Votium is a marketplace on Ethereum where protocols pay holders of vote-escrowed CRV to direct Curve gauge emissions. It operates as a bribery market for governance influence.",
-  "domain": "defi",
+  "domain": "blockchain",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

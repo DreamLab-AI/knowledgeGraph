@@ -1,14 +1,98 @@
 - ### Definition
-  - A cloud platform is a managed, internet-delivered environment providing compute, storage, networking, and higher-order services — including AI/ML — that enables organisations to build and operate applications elastically without owning physical infrastructure.
+  - A **cloud platform** is an internet-delivered ecosystem of managed infrastructure, runtime services, and developer tooling enabling organisations to build, deploy, scale, and operate applications without owning physical hardware. Cloud platforms span [[Infrastructure as a Service]], [[Platform as a Service]], and [[Software as a Service]] delivery models, abstracting away hardware provisioning, OS patching, and capacity planning. They depend on hyperscale [[Data Centre]] networks, advanced [[Virtualisation]] techniques, and software-defined [[Network Infrastructure]] to provide elasticity, global reach, and the [[Distributed Computing]] fabric that underpins modern digital services.
+
+- ### Overview
+  - Cloud platforms emerged from the observation — pioneered commercially by [[Amazon Web Services]] in 2006 — that commodity hardware pooled at hyperscale could be offered as utility services with superior economics to per-enterprise data centre builds.
+  - The dominant public cloud platforms (AWS, [[Microsoft Azure]], [[Google Cloud Platform]]) offer hundreds of discrete services across compute, storage, networking, databases, analytics, AI/ML, security, and developer tooling.
+  - The fundamental value proposition is elastic, on-demand resource consumption: organisations pay only for what they use, scale instantaneously in response to demand, and benefit from continuous infrastructure investment by the provider.
+  - Cloud platforms have become the primary substrate for AI and [[Machine Learning Infrastructure]], driven by managed access to GPU and TPU accelerators (H100, A100, TPU v5) that would be prohibitively expensive to procure and operate independently.
+  - The market is characterised by continuous service expansion and a layered competitive dynamic: hyperscalers compete on breadth, specialised providers (e.g. CoreWeave, Lambda Labs) compete on GPU density for AI workloads, and [[Edge Computing]] providers extend the model toward the network edge.
+
+- ### Key Components
+  - **Compute Services**
+    - Virtual machine instances (IaaS layer): configurable CPU, memory, and storage profiles
+    - Managed container platforms based on [[Kubernetes]] (e.g. EKS, AKS, GKE)
+    - [[Serverless Architecture]] functions (AWS Lambda, Azure Functions, Google Cloud Run) abstracting all server management
+    - High-performance computing clusters providing GPU/TPU capacity for [[Machine Learning Platform]] workloads
+  - **Storage Services**
+    - Object storage (S3, Azure Blob, GCS): durable, globally distributed, effectively unlimited
+    - Block storage: high-performance volumes attached to compute instances
+    - Managed relational databases (RDS, Cloud SQL, Azure SQL)
+    - Managed NoSQL and vector databases supporting [[Data Pipeline]] and [[MLOps]] workflows
+  - **Networking**
+    - Software-defined virtual private clouds (VPCs) with configurable subnets, routing, and firewalling
+    - Global content delivery networks (CDNs) for low-latency asset distribution
+    - [[API Gateway]] services for managed, throttled, and authenticated API exposure
+    - Dedicated interconnects and peering arrangements for hybrid cloud connectivity
+  - **Developer & Operations Tooling**
+    - Managed CI/CD pipelines integrating [[Version Control]] with build, test, and deploy stages — enabling [[Continuous Integration]] and [[DevOps]] practices
+    - Infrastructure-as-Code tooling (Terraform, CloudFormation, Bicep) for declarative resource provisioning
+    - Observability stacks: managed log aggregation, distributed tracing, and metrics dashboards
+    - [[Platform Engineering]] internal developer platforms built on top of cloud primitives
+  - **AI/ML Services**
+    - Managed ML platforms ([[Machine Learning Platform]]: SageMaker, Vertex AI, Azure ML) providing experiment tracking, distributed training, model registry, and [[MLOps]] pipelines
+    - Foundation model APIs (Azure OpenAI Service, Amazon Bedrock, Google Vertex AI Model Garden) providing access to large language models and multimodal models — bridging to [[Foundation Model]] infrastructure
+    - Managed [[AI Inference Infrastructure]]: autoscaling, batching, and hardware-optimised serving endpoints
+  - **Security & Identity**
+    - [[Identity and Access Management]] (IAM): fine-grained, policy-based access control to all platform resources
+    - Key management services (KMS) for encryption key lifecycle management
+    - Audit logging, threat detection, and compliance dashboards supporting [[Data Governance]]
+
+- ### Applications and Use Cases
+  - **Enterprise Application Hosting**: migration of legacy on-premise workloads to managed cloud infrastructure, reducing capital expenditure and operational overhead. Contrasts with [[On-Premise Infrastructure]] in terms of capex vs opex trade-offs.
+  - **AI and Machine Learning at Scale**: training and serving large-scale models using managed GPU clusters; the cloud is the dominant environment for foundation model training and [[AI Inference Infrastructure]] deployment.
+  - **Data Analytics and [[Data Pipeline]]**: managed data warehouses (Snowflake, BigQuery, Redshift), streaming data platforms (Kinesis, Pub/Sub, Event Hubs), and lakehouse architectures serving business intelligence and real-time analytics.
+  - **SaaS Product Delivery**: independent software vendors building and operating SaaS products on cloud platforms, leveraging managed databases, auth services, and global CDN distribution.
+  - **DevOps and [[Continuous Integration]]**: automated build, test, and deployment pipelines triggered on [[Version Control]] commits, enabling rapid release cycles with low operational overhead.
+  - **Hybrid and Multi-Cloud Architectures**: enterprises operating workloads across multiple cloud providers (a [[Multi-Cloud Strategy]]) or maintaining a hybrid footprint spanning cloud and private data centres, often orchestrated through [[Kubernetes]]-based control planes.
+  - **Edge and IoT Workloads**: extending cloud management planes to [[Edge Computing]] endpoints via services like AWS Greengrass, Azure IoT Edge, and Google Distributed Cloud.
+
 - ### Relationships
-  - Cloud Platform is a subclass of [[Cloud Infrastructure]], encompassing [[Platform Service]], [[Platform Layer]], [[Infrastructure Component]], [[Serverless Architecture]], and [[Microservices Architecture]] as constituent elements. It enables [[Cloud-Native Applications]], [[Machine Learning Platform]], [[Machine Learning Infrastructure]], and [[Platform Engineering]] practices. It relates to [[Infrastructure Architecture]], [[Service Oriented Architecture]], [[Distributed Computing]], and [[Platform Governance]]. Cloud platforms commonly integrate [[Version Control]] and [[Data Pipeline]] services to form end-to-end development environments.
-- ### Content
-  - Cloud platforms emerged from Amazon's 2006 launch of AWS Simple Storage Service (S3) and Elastic Compute Cloud (EC2), which demonstrated that commodity hardware pooled at hyperscale could be profitably rented as utility services. Microsoft Azure launched in 2010 and Google Cloud Platform opened broadly in 2011. By 2024, the combined annual revenue of the top three cloud providers exceeded $250 billion, reflecting cloud's displacement of on-premise data centre investment across enterprises of all sizes. The market is characterised by continuous service expansion: AWS alone offers over 240 distinct services as of 2025.
+  - partOf:: [[Cloud Infrastructure]]
+  - hasPart:: [[Platform Service]]
+  - hasPart:: [[Platform Layer]]
+  - hasPart:: [[Serverless Architecture]]
+  - hasPart:: [[Microservices Architecture]]
+  - hasPart:: [[Container Orchestration]]
+  - enables:: [[Cloud-Native Applications]]
+  - enables:: [[Machine Learning Platform]]
+  - enables:: [[Machine Learning Infrastructure]]
+  - enables:: [[Platform Engineering]]
+  - enables:: [[DevOps]]
+  - enables:: [[Continuous Integration]]
+  - requires:: [[Network Infrastructure]]
+  - requires:: [[Virtualisation]]
+  - requires:: [[Identity and Access Management]]
+  - dependsOn:: [[Data Centre]]
+  - uses:: [[Kubernetes]]
+  - uses:: [[Version Control]]
+  - uses:: [[Data Pipeline]]
+  - uses:: [[API Gateway]]
+  - supports:: [[MLOps]]
+  - supports:: [[FinOps]]
+  - supports:: [[Data Governance]]
+  - relatedTo:: [[Infrastructure Architecture]]
+  - relatedTo:: [[Service Oriented Architecture]]
+  - relatedTo:: [[Distributed Computing]]
+  - relatedTo:: [[Platform Governance]]
+  - relatedTo:: [[Multi-Cloud Strategy]]
+  - contrastsWith:: [[On-Premise Infrastructure]]
+  - contrastsWith:: [[Edge Computing]]
+  - standardizedBy:: [[Cloud Native Computing Foundation]]
+  - standardizedBy:: [[NIST Cloud Computing]]
+  - bridges-to:: [[Foundation Model]]
+  - bridges-to:: [[AI Inference Infrastructure]]
 
-  - The service taxonomy of a cloud platform typically spans three layers: Infrastructure-as-a-Service (IaaS) — raw virtual machines, block storage, and virtual networking — giving users maximum control; Platform-as-a-Service (PaaS) — managed runtimes, databases, and application hosting — abstracting OS and middleware management; and Software-as-a-Service (SaaS) — fully managed applications. Above these, modern cloud platforms have added a fourth tier: AI/ML services, including managed model training infrastructure (GPUs/TPUs), AutoML, vector databases, and API access to hosted foundation models (Azure OpenAI Service, Google Vertex AI, AWS Bedrock).
+- ### Standards and Governance Context
+  - **NIST SP 800-145** (NIST Cloud Computing): the canonical definition of cloud computing adopted internationally, establishing the five essential characteristics (on-demand self-service, broad network access, resource pooling, rapid elasticity, measured service), three service models (IaaS/PaaS/SaaS), and four deployment models (public/private/community/hybrid).
+  - **Cloud Native Computing Foundation (CNCF)**: the Linux Foundation project governing [[Kubernetes]], Prometheus, Envoy, and related open-source projects that provide portable abstractions for container orchestration, service mesh, and observability — reducing [[On-Premise Infrastructure]] lock-in and enabling [[Multi-Cloud Strategy]].
+  - **Shared Responsibility Model**: cloud providers secure the underlying infrastructure; customers are responsible for data classification, [[Identity and Access Management]], application-layer controls, and compliance configuration. Codified in provider security whitepapers and incorporated into audit frameworks.
+  - **ISO/IEC 27001 and SOC 2 Type II**: third-party audit standards routinely certified by major cloud providers, serving as baseline assurance for enterprise procurement and regulated-industry adoption.
+  - **FedRAMP (US)**: mandatory authorisation framework for US federal agency use of cloud services, specifying continuous monitoring and security controls.
+  - **GDPR and EU Data Sovereignty**: the General Data Protection Regulation and the 2023 EU-US Data Privacy Framework have driven cloud providers to establish in-region data residency options and dedicated sovereign cloud offerings (Azure Sovereign, Google Sovereign Cloud) for European regulated industries, intersecting with [[Data Governance]] requirements.
+  - **FinOps Foundation**: the industry body defining [[FinOps]] — cloud financial operations — as a practice discipline for cost accountability, forecasting, and optimisation on cloud platforms.
+  - **OpenTelemetry (CNCF)**: emerging standard for vendor-neutral telemetry (traces, metrics, logs) across cloud-native workloads, reducing observability lock-in.
 
-  - For machine learning and AI workloads, cloud platforms are the dominant compute substrate. GPU and accelerator availability — H100, A100 clusters via AWS, Azure, and GCP — has become a primary driver of cloud vendor selection for AI organisations. Managed services such as Amazon SageMaker, Google Vertex AI, and Azure Machine Learning provide end-to-end MLOps pipelines: dataset versioning, experiment tracking, distributed training, model registry, and inference serving with autoscaling. The 2024–2025 period has seen intense capacity competition, with all three hyperscalers committing multi-hundred-billion-dollar capital expenditure plans to build AI data centre infrastructure.
-
-  - Cloud platform governance and multi-cloud strategy are active concerns for enterprise architects. Vendor lock-in risks arise from proprietary managed services that have no standards-based equivalents. The Cloud Native Computing Foundation (CNCF) ecosystem — centred on Kubernetes — attempts to provide portable abstractions for container orchestration, service mesh, and observability, reducing dependency on any single provider. FinOps (cloud financial operations) has emerged as a discipline addressing the challenge that elastic cloud scaling, while operationally convenient, can produce unpredictable and rapidly escalating costs without active governance.
-
-  - Security and compliance on cloud platforms involve a shared responsibility model: the provider secures the underlying infrastructure, while the customer is responsible for data, identity management, and application-layer controls. Certifications such as ISO/IEC 27001, SOC 2 Type II, and FedRAMP provide assurance frameworks. The EU's data sovereignty requirements, codified in GDPR and reinforced by the 2023 EU-US Data Privacy Framework, have driven cloud providers to establish in-region data residency options and sovereign cloud offerings (e.g. Azure Sovereign, Google Sovereign Cloud) specifically for European regulated industries.
+- ### Provenance
+  - sources:: NIST SP 800-145 (NIST Definition of Cloud Computing); CNCF Annual Survey; AWS/Azure/GCP public documentation; FinOps Foundation; established industry knowledge
+  - updated:: 2026-06-13

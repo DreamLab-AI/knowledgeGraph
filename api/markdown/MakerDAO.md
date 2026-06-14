@@ -27,8 +27,9 @@ public:: true
   "@id": "urn:ngm:class:maker-dao",
   "@type": "Class",
   "label": "MakerDAO",
-  "definition": "MakerDAO is a decentralised autonomous organisation on the Ethereum blockchain that governs the Maker Protocol, a smart-contract system enabling users to generate the DAI stablecoin by locking over-collateralised assets in collateralised debt positions (CDPs, also called Vaults). Governance decisions—including collateral onboarding, risk parameters, and stability fees—are made by MKR token holders through on-chain voting. MakerDAO is a foundational component of the decentralised finance (DeFi) ecosystem and one of the earliest large-scale deployments of DAO governance coordinating billions of dollars of collateral.",
+  "definition": "MakerDAO is a decentralised autonomous organisation (DAO) on the Ethereum blockchain that governs the Maker Protocol — a system of smart contracts enabling users to generate the DAI stablecoin by locking over-collateralised assets in Vaults (formerly Collateralised Debt Positions). Governance decisions covering collateral onboarding, stability fees, liquidation ratios, and debt ceilings are enacted by MKR token holders through on-chain Executive Votes. As one of the earliest large-scale deployments of DAO governance and algorithmic stablecoin issuance, MakerDAO is a foundational pillar of decentralised finance (DeFi) and continues to evolve through its Endgame restructuring into a constellation of SubDAOs.",
   "domain": "blockchain",
+  "maturity": "established",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:bc-defi-and-economics",
@@ -38,45 +39,131 @@ public:: true
   "relations": {
     "uses": [
       {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:governance-token", "label": "Governance Token"}
+      {"@id": "urn:ngm:class:governance-token", "label": "Governance Token"},
+      {"@id": "urn:ngm:class:ethereum", "label": "Ethereum"},
+      {"@id": "urn:ngm:class:dutch-auction", "label": "Dutch Auction"},
+      {"@id": "urn:ngm:class:collateralised-debt-position", "label": "Collateralised Debt Position"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:stablecoin", "label": "Stablecoin"},
-      {"@id": "urn:ngm:class:decentralized-finance-de-fi", "label": "Decentralized Finance (DeFi)"}
+      {"@id": "urn:ngm:class:decentralized-finance-de-fi", "label": "Decentralized Finance (DeFi)"},
+      {"@id": "urn:ngm:class:real-world-asset-tokenisation", "label": "Real-World Asset Tokenisation"},
+      {"@id": "urn:ngm:class:algorithmic-stablecoin", "label": "Algorithmic Stablecoin"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:peg-stability-module", "label": "Peg Stability Module"},
+      {"@id": "urn:ngm:class:mkr-token", "label": "MKR Token"},
+      {"@id": "urn:ngm:class:dai-stablecoin", "label": "DAI Stablecoin"},
+      {"@id": "urn:ngm:class:sub-dao", "label": "SubDAO"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:over-collateralisation", "label": "Over-Collateralisation"},
+      {"@id": "urn:ngm:class:oracle-network", "label": "Oracle Network"},
+      {"@id": "urn:ngm:class:on-chain-governance", "label": "On-Chain Governance"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:dao", "label": "DAO"},
-      {"@id": "urn:ngm:class:liquidity-pool", "label": "Liquidity Pool"}
+      {"@id": "urn:ngm:class:liquidity-pool", "label": "Liquidity Pool"},
+      {"@id": "urn:ngm:class:automated-market-maker", "label": "Automated Market Maker"},
+      {"@id": "urn:ngm:class:tokenomics", "label": "Tokenomics"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:fiat-backed-stablecoin", "label": "Fiat-Backed Stablecoin"},
+      {"@id": "urn:ngm:class:centralised-exchange", "label": "Centralised Exchange"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:traditional-finance", "label": "Traditional Finance"},
+      {"@id": "urn:ngm:class:asset-tokenisation", "label": "Asset Tokenisation"}
     ]
   },
-  "qualityScore": 0.75,
-  "maturity": "emerging"
+  "sameAs": [
+    {"@id": "urn:ngm:class:maker-protocol", "label": "Maker Protocol"}
+  ],
+  "quality": 0.74,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-13T00:00:00Z",
+    "inferenceRule": "ManualEnrichment"
+  }
 }
 ```
 
-
 - ### Definition
-  - MakerDAO is a decentralised autonomous organisation on the Ethereum blockchain that governs the Maker Protocol, a smart-contract system enabling users to generate the DAI stablecoin by locking over-collateralised assets in collateralised debt positions (CDPs, also called Vaults). Governance decisions—including collateral onboarding, risk parameters, and stability fees—are made by MKR token holders through on-chain voting. MakerDAO is a foundational component of the decentralised finance (DeFi) ecosystem and one of the earliest large-scale deployments of DAO governance coordinating billions of dollars of collateral.
+  - MakerDAO is a [[Decentralized Finance (DeFi)]] protocol and [[DAO|decentralised autonomous organisation]] deployed on the [[Ethereum]] blockchain that governs the Maker Protocol — a system of [[Smart Contract|smart contracts]] enabling permissionless issuance of the [[DAI Stablecoin]], a decentralised, crypto-collateralised [[Stablecoin]] soft-pegged to the US dollar. Unlike [[Fiat-Backed Stablecoin|fiat-backed stablecoins]], DAI is minted by users who lock over-collateralised digital assets into Vaults (formerly Collateralised Debt Positions), with all risk parameters governed by [[MKR Token]] holders through [[On-Chain Governance]].
 
-- ### Semantic Classification
-  - owl-class:: maker-dao:MakerDAO
-  - owl-role:: Concept
+- ### Overview
+  - MakerDAO was conceived by Rune Christensen and launched on Ethereum mainnet in December 2017, making it one of the earliest and most enduring DeFi protocols.
+  - The system creates credit without a central issuer: a borrower locks collateral, receives DAI, and repays DAI plus a stability fee (accrued interest) to reclaim collateral.
+  - The [[MKR Token]] serves a dual role: governance rights and a recapitalisation backstop — if the protocol accumulates bad debt, new MKR is minted and auctioned to cover the deficit, diluting holders and aligning their incentives with sound risk management.
+  - In 2019 the system upgraded from single-collateral DAI (backed only by ETH) to Multi-Collateral DAI (MCD), accepting WBTC, LP tokens, and eventually real-world assets as collateral.
+  - MakerDAO has engaged substantially with [[Real-World Asset Tokenisation]], onboarding US Treasury Bill exposure and mortgage-backed instruments as collateral, marking a structural bridge between [[Traditional Finance]] and DeFi.
+  - The "Endgame" governance restructuring (announced 2022–2023) proposes splitting MakerDAO into a network of specialised [[SubDAO|SubDAOs]], each managing distinct collateral verticals and issuing their own governance tokens, with MKR as the apex governance asset.
+  - DAI has consistently ranked among the largest decentralised stablecoins by market capitalisation, demonstrating the practical scalability of [[Over-Collateralisation|over-collateralised]] stablecoin models.
+
+- ### Key Components
+  - **Maker Protocol** — the set of Ethereum [[Smart Contract|smart contracts]] managing Vault creation, collateral accounting, DAI minting and burning, and protocol fees.
+  - **Vaults (CDPs)** — user-controlled positions where [[Collateralised Debt Position|collateral is deposited]] and DAI is minted up to the debt ceiling set by each collateral type's risk parameters.
+  - **[[DAI Stablecoin]]** — the decentralised stablecoin produced by the protocol, redeemable by repaying outstanding debt plus stability fees, and freely tradeable across DeFi.
+  - **[[MKR Token]]** — the governance and recapitalisation token; MKR holders vote on all protocol parameters and bear residual risk in deficit scenarios.
+  - **Stability Fee** — an annualised interest rate charged on DAI minted from each collateral type, denominated in DAI, used to influence DAI supply and protocol revenue.
+  - **Liquidation Engine (Clip)** — a [[Dutch Auction]] mechanism that liquidates under-collateralised Vaults, ensuring DAI remains fully backed at all times.
+  - **[[Peg Stability Module]] (PSM)** — allows direct 1:1 swaps between approved stablecoins (e.g. USDC) and DAI, providing a hard arbitrage floor to maintain the peg.
+  - **[[Oracle Network]]** — a decentralised price-feed system (Maker Oracles) supplying real-time collateral valuations required for Vault solvency checks.
+  - **Surplus Buffer (System Surplus)** — DAI accumulated from stability fees; excess above a threshold is used to buy and burn MKR, creating deflationary tokenomics.
+  - **[[On-Chain Governance]]** — a two-stage process: a Governance Poll to signal community preference, followed by an Executive Vote that directly modifies protocol parameters once a quorum of MKR is locked in the Governance Contract.
+  - **[[SubDAO|SubDAOs]]** — the Endgame architecture's semi-autonomous sub-organisations, each governing a collateral vertical (e.g. RWA, liquid staking tokens) with their own governance tokens while remaining linked to MakerDAO via MKR.
+
+- ### Mechanisms
+  - **Collateral Ratio & Liquidation Ratio** — each collateral type has a minimum collateralisation ratio (e.g. 150% for ETH-A). If the ratio falls below the liquidation ratio due to price decline, the Vault is flagged for liquidation.
+  - **Dutch Auction Liquidations** — collateral is auctioned at a starting price above market and decreases over time, incentivising keepers (arbitrageurs running automated bots) to bid promptly, ensuring fair price discovery without requiring an order book.
+  - **DAI Savings Rate (DSR)** — a protocol-funded savings rate allowing DAI holders to earn yield by depositing into the DSR contract, used as a demand-side tool to support the peg when DAI trades below $1.
+  - **Emergency Shutdown** — a last-resort mechanism triggered by MKR governance to unwind all Vaults at current oracle prices, guaranteeing holders can redeem DAI for proportional collateral if the system is critically compromised.
+  - **Risk Parameters per Collateral Type** — each accepted collateral (ETH-A, ETH-B, WBTC-A, stETH-A, etc.) has independently set stability fees, liquidation ratios, debt ceilings, and liquidation penalties, allowing granular risk calibration.
+
+- ### Applications & Use Cases
+  - **Decentralised Borrowing** — users obtain liquidity against crypto holdings without selling, maintaining exposure while accessing stable capital for expenses or investment.
+  - **[[Leveraged Trading]]** — by minting DAI and using it to purchase more collateral, users create leveraged long positions on accepted assets; the risk of liquidation acts as the natural limit.
+  - **Yield Generation** — the DAI Savings Rate lets DAI holders earn yield trustlessly; DeFi protocols such as [[Compound Protocol|Compound]] and [[Aave]] integrate DAI as a lending asset, extending yield opportunities.
+  - **DeFi Liquidity Infrastructure** — DAI is one of the most widely integrated stablecoins in [[Automated Market Maker|AMM]] [[Liquidity Pool|liquidity pools]], lending markets, and derivatives protocols, anchoring much of DeFi's liquidity layer.
+  - **[[Real-World Asset Tokenisation]]** — MakerDAO pioneered RWA collateral by onboarding short-duration US Treasury instruments and trade-finance receivables, generating stable yield for the protocol and extending DeFi capital markets into traditional asset classes.
+  - **Cross-Border Payments & Remittances** — DAI's decentralised issuance and permissionless transferability make it usable for international remittances without bank intermediaries.
+  - **Treasury Management for DAOs** — many decentralised organisations hold DAI in their treasuries to hedge crypto volatility while staying within the on-chain ecosystem.
 
 - ### Relationships
-  - uses [[Smart Contract]]
-  - uses [[Governance Token]]
-  - enables [[Stablecoin]]
-  - enables [[Decentralized Finance (DeFi)]]
-  - relatedTo [[DAO]]
-  - relatedTo [[Liquidity Pool]]
+  - uses:: [[Smart Contract]]
+  - uses:: [[Governance Token]]
+  - uses:: [[Ethereum]]
+  - uses:: [[Dutch Auction]]
+  - uses:: [[Collateralised Debt Position]]
+  - enables:: [[Stablecoin]]
+  - enables:: [[Decentralized Finance (DeFi)]]
+  - enables:: [[Real-World Asset Tokenisation]]
+  - enables:: [[Algorithmic Stablecoin]]
+  - hasPart:: [[Peg Stability Module]]
+  - hasPart:: [[MKR Token]]
+  - hasPart:: [[DAI Stablecoin]]
+  - hasPart:: [[SubDAO]]
+  - requires:: [[Over-Collateralisation]]
+  - requires:: [[Oracle Network]]
+  - requires:: [[On-Chain Governance]]
+  - relatedTo:: [[DAO]]
+  - relatedTo:: [[Liquidity Pool]]
+  - relatedTo:: [[Automated Market Maker]]
+  - relatedTo:: [[Tokenomics]]
+  - contrastsWith:: [[Fiat-Backed Stablecoin]]
+  - contrastsWith:: [[Centralised Exchange]]
+  - bridges-to:: [[Traditional Finance]]
+  - bridges-to:: [[Asset Tokenisation]]
 
-- ### Content
-  The Maker Protocol operates as a system of Ethereum Smart Contracts that manage collateral, debt accounting, and the soft peg stability mechanisms for DAI. Users deposit accepted collateral types (ETH, WBTC, and various stablecoins) into Vaults and mint DAI up to the maximum debt ceiling determined by the collateralisation ratio for that asset class. If a Vault's collateral value falls below the liquidation ratio, the protocol automatically liquidates the position via a Dutch-auction mechanism, using proceeds to repay outstanding DAI and cover protocol fees.
-
-  Governance is exercised via the MKR token, a Governance Token granting voting rights proportional to holdings. MKR holders ratify proposals covering new collateral types, risk parameters (stability fees, liquidation penalties, debt ceilings), and protocol upgrades through an on-chain Executive Vote system. This DAO governance model predates and influenced subsequent DeFi governance frameworks.
-
-  The Peg Stability Module (PSM) allows direct swapping of approved stablecoins for DAI at a fixed rate, providing an additional price-peg mechanism. MakerDAO has engaged with real-world asset (RWA) tokenisation, onboarding US Treasury exposure and real-estate loans as collateral, extending DeFi infrastructure into traditional finance. Liquidity Pools across Automated Market Makers further distribute DAI across the DeFi ecosystem. The organisation subsequently underwent a governance restructuring towards a "Endgame" plan, creating SubDAOs with more specialised mandates, illustrating the evolving complexity of DAO Governance at scale.
+- ### Standards & Context
+  - MakerDAO operates under the ERC-20 token standard for both MKR and DAI, and interacts with ERC-4626 vault standards in the broader DeFi ecosystem.
+  - The Maker Protocol's core contracts have undergone multiple independent security audits (Trail of Bits, PeckShield, Quantstamp) and formal verification of critical modules (the MCD core is among the most audited DeFi codebases).
+  - MakerDAO's RWA strategy intersects with evolving regulatory frameworks for [[Digital Asset Regulation|digital asset regulation]] and [[Stablecoin Regulation]], particularly the EU's MiCA regulation and US stablecoin legislation proposals.
+  - Governance transparency is maintained through the MakerDAO Governance Forum (forum.makerdao.com) and on-chain voting records, establishing a template for DAO legitimacy and accountability.
+  - The Endgame restructuring introduces the concept of "Alignment Artifacts" — a meta-governance layer ensuring SubDAOs remain aligned with MakerDAO's risk standards and surplus-sharing obligations.
+  - DAI's design has influenced subsequent overcollateralised stablecoin protocols including [[Liquity]], [[Reflexer Finance]], and cross-chain stablecoin systems on networks such as [[Optimism]] and [[Arbitrum]].
+  - MakerDAO's experience with on-chain governance has informed academic and industry literature on [[DAO Governance]] design, including research on voter apathy, delegation, and governance attack vectors.
 
 - ### Provenance
-  - sources::
-  - migration-date:: 2026-05-19T00:00:00Z
+  - sources:: maker.com whitepapers; MakerDAO Governance Forum; DeFi Pulse; Rune Christensen's Endgame documentation
+  - updated:: 2026-06-13

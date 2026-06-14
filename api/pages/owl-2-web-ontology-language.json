@@ -4,7 +4,7 @@
   "slug": "owl-2-web-ontology-language",
   "public": true,
   "classIri": "urn:ngm:class:owl-2-web-ontology-language",
-  "domain": "general",
+  "domain": "standards",
   "definition": "A World Wide Web Consortium standard for representing ontologies on the web, providing formal semantics based on description logic for classes, properties and individuals. It extends earlier web ontology work with richer modelling features and defined reasoning profiles.",
   "subClassOf": [
     {

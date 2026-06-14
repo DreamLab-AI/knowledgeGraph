@@ -4,7 +4,7 @@
   "slug": "khronos-group-gl-tf-2-0-specification",
   "public": true,
   "classIri": "urn:ngm:class:khronos-group-gl-tf-2-0-specification",
-  "domain": "computer-graphics",
+  "domain": "spatial-computing",
   "definition": "The glTF 2.0 specification is the Khronos Group standard defining the GL Transmission Format for efficient transmission and loading of 3D scenes and models. It uses JSON for structure with binary buffers for geometry and a physically based material model.",
   "subClassOf": [
     {

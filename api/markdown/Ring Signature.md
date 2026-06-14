@@ -47,7 +47,7 @@ public:: true
   "@type": "Class",
   "label": "Ring Signature",
   "definition": "A ring signature is a digital signature produced by one member of a group such that verifiers learn the signature came from the group but cannot identify which member signed. It provides signer anonymity within an ad hoc set.",
-  "domain": "cryptography",
+  "domain": "security",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

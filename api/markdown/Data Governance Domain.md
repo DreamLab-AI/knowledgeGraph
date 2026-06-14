@@ -87,7 +87,7 @@ public:: true
   "@type": "Class",
   "label": "Data Governance Domain",
   "definition": "The Data Governance Domain classifies concepts concerning the policies, roles and controls that govern data as an organisational asset. It covers ownership, quality, lineage and the rules for access, retention and use. As a top-level subject axis it establishes how data is managed responsibly across systems and throughout its lifecycle.",
-  "domain": "data-governance",
+  "domain": "governance",
   "maturity": "emerging",
   "qualityScore": 0.7,
   "subClassOf": [

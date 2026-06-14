@@ -5,15 +5,15 @@
   "public": true,
   "classIri": "urn:ngm:class:iclr",
   "domain": "ai",
-  "definition": "The International Conference on Learning Representations (ICLR) is a premier academic venue focused on deep learning and representation learning research, established in 2013 by Yoshua Bengio and Yann LeCun. It is distinctive for its fully open, internet-based peer-review process on the OpenReview platform, where submitted papers, reviews, and author rebuttals are visible to the public. ICLR has become one of the most competitive and influential conferences in the AI research community, publishing foundational work on neural network architectures, training methods, and generalisation theory.",
+  "definition": "The International Conference on Learning Representations (ICLR) is a premier academic venue dedicated to research in deep learning and representation learning, co-founded in 2013 by Yoshua Bengio and Yann LeCun to provide a focused home for the emerging field. ICLR is distinguished by its fully open, internet-based double-open peer review conducted on the OpenReview platform, making submitted manuscripts, reviewer critiques, and author rebuttals publicly visible throughout the review cycle. The conference covers neural network architectures, optimisation methods, generalisation theory, self-supervised learning, reinforcement learning, and the intersection of deep learning with natural language processing, computer vision, and scientific domains. ICLR ranks among the three most competitive machine-learning venues globally and has been the publication forum for many landmark advances including attention-based sequence models, large-language-model scaling investigations, and representation-learning theory.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:machine-learning-discipline",
-      "label": "Machine Learning"
+      "id": "urn:ngm:class:machine-learning-conference",
+      "label": "Machine Learning Conference"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.75,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
@@ -30,12 +30,38 @@
       {
         "id": "urn:ngm:class:generative-model",
         "label": "Generative Model"
+      },
+      {
+        "id": "urn:ngm:class:self-supervised-learning",
+        "label": "Self-Supervised Learning"
+      },
+      {
+        "id": "urn:ngm:class:open-peer-review",
+        "label": "Open Peer Review"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:closed-peer-review",
+        "label": "Closed Peer Review"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:neuroscience",
+        "label": "Neuroscience"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:transformer",
@@ -48,24 +74,53 @@
       {
         "id": "urn:ngm:class:reinforcement-learning",
         "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:representation-learning",
+        "label": "Representation Learning"
       }
     ],
     "supports": [
       {
         "id": "urn:ngm:class:neural-network",
         "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:scientific-machine-learning",
+        "label": "Scientific Machine Learning"
       }
     ],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:academic-conference-series",
+        "label": "Academic Conference Series"
+      },
+      {
+        "id": "urn:ngm:class:ai-research-community",
+        "label": "AI Research Community"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:icml",
         "label": "ICML"
       },
       {
+        "id": "urn:ngm:class:neurips",
+        "label": "NeurIPS"
+      },
+      {
         "id": "urn:ngm:class:cvpr",
         "label": "CVPR"
+      },
+      {
+        "id": "urn:ngm:class:aaai",
+        "label": "AAAI"
       },
       {
         "id": "urn:ngm:class:ai-safety-research",
@@ -74,6 +129,10 @@
       {
         "id": "urn:ngm:class:open-source-ai",
         "label": "Open-Source AI"
+      },
+      {
+        "id": "urn:ngm:class:openreview",
+        "label": "OpenReview"
       }
     ]
   },

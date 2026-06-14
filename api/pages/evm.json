@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:evm",
   "domain": "blockchain",
-  "definition": "The Ethereum Virtual Machine (EVM) is a stack-based, sandboxed, quasi-Turing-complete virtual machine that executes smart contract bytecode on the Ethereum network and EVM-compatible blockchains. It defines a deterministic computation environment in which all nodes independently execute the same transactions to reach identical state transitions, using a gas metering system to bound computation and prevent denial-of-service attacks. The EVM specification encompasses opcodes, memory model, call semantics, and the gas cost schedule that governs the economic cost of each computational step.",
+  "definition": "The Ethereum Virtual Machine (EVM) is a stack-based, sandboxed, quasi-Turing-complete virtual machine that executes smart contract bytecode on the Ethereum network and EVM-compatible blockchains. It defines a deterministic computation environment in which all nodes independently execute the same transactions to reach identical state transitions, using a gas metering system to bound computation and prevent denial-of-service attacks. The EVM specification encompasses opcodes, memory model, call semantics, and the gas cost schedule governing the economic cost of each computational step. As an open industry standard maintained by the Enterprise Ethereum Alliance, the EVM has been adopted by hundreds of alternative blockchain networks, establishing it as the dominant cross-chain execution environment.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:virtual-machine",
@@ -13,11 +13,37 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.75,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:evm-stack",
+        "label": "EVM Stack"
+      },
+      {
+        "id": "urn:ngm:class:evm-memory",
+        "label": "EVM Memory"
+      },
+      {
+        "id": "urn:ngm:class:evm-storage",
+        "label": "EVM Storage"
+      },
+      {
+        "id": "urn:ngm:class:gas-metering",
+        "label": "Gas Metering"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:ethereum-node",
+        "label": "Ethereum Node"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:smart-contract-execution",
@@ -30,12 +56,51 @@
       {
         "id": "urn:ngm:class:smart-contract-platform",
         "label": "Smart Contract Platform"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:nft",
+        "label": "NFT"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:ethereum-yellow-paper",
+        "label": "Ethereum Yellow Paper"
+      },
+      {
+        "id": "urn:ngm:class:eip",
+        "label": "EIP"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:wasm",
+        "label": "WASM"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-script",
+        "label": "Bitcoin Script"
+      },
+      {
+        "id": "urn:ngm:class:move-vm",
+        "label": "Move VM"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:opcodes",
@@ -44,10 +109,40 @@
       {
         "id": "urn:ngm:class:solidity",
         "label": "Solidity"
+      },
+      {
+        "id": "urn:ngm:class:bytecode",
+        "label": "Bytecode"
+      },
+      {
+        "id": "urn:ngm:class:gas",
+        "label": "Gas"
+      },
+      {
+        "id": "urn:ngm:class:merkle-patricia-trie",
+        "label": "Merkle Patricia Trie"
       }
     ],
-    "supports": [],
-    "standardizedBy": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:layer-2-rollup",
+        "label": "Layer 2 Rollup"
+      },
+      {
+        "id": "urn:ngm:class:zk-rollup",
+        "label": "ZK-Rollup"
+      },
+      {
+        "id": "urn:ngm:class:optimistic-rollup",
+        "label": "Optimistic Rollup"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:enterprise-ethereum-alliance",
+        "label": "Enterprise Ethereum Alliance"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -55,8 +150,16 @@
         "label": "Gas Optimization"
       },
       {
-        "id": "urn:ngm:class:enterprise-ethereum-alliance",
-        "label": "Enterprise Ethereum Alliance"
+        "id": "urn:ngm:class:solidity-abi",
+        "label": "Solidity ABI"
+      },
+      {
+        "id": "urn:ngm:class:eof",
+        "label": "EVM Object Format"
+      },
+      {
+        "id": "urn:ngm:class:vyper",
+        "label": "Vyper"
       }
     ]
   },

@@ -21,7 +21,7 @@ public:: true
   "@type": "Class",
   "label": "Mesh Data",
   "definition": "Mesh data is a structured representation of a three-dimensional surface or volume as a collection of vertices, edges, and polygonal faces — most commonly triangles or quads — that together define the geometry of a shape. It encodes both topological connectivity (which vertices form which faces) and geometric attributes (positions, normals, UV coordinates, vertex colours) required for rendering, simulation, and analysis. Mesh data serves as the primary interchange format between 3D modelling software, real-time engines, and spatial computing pipelines. It is produced by processes such as photogrammetry, structured-light scanning, LiDAR capture, and procedural generation.",
-  "domain": "graphics",
+  "domain": "spatial-computing",
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:spatial-mesh", "label": "Spatial Mesh"}],
   "relations": {

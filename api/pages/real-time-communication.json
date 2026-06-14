@@ -4,8 +4,8 @@
   "slug": "real-time-communication",
   "public": true,
   "classIri": "urn:ngm:class:real-time-communication",
-  "domain": "networking",
-  "definition": "Real-time communication is the exchange of audio, video or data between parties with minimal delay, supporting interactive use such as calls and conferencing. Web-based real-time communication is commonly built on WebRTC.",
+  "domain": "infrastructure",
+  "definition": "Real-time communication (RTC) is the exchange of audio, video, and arbitrary data between two or more endpoints with latency low enough to support interactive, synchronous engagement \u2014 typically under 150 ms end-to-end for voice and video. It encompasses the protocols, codecs, signalling mechanisms, and network transport layers that jointly minimise delay, jitter, and packet loss while adapting to dynamic network conditions. Modern RTC systems span peer-to-peer browser sessions via WebRTC, carrier-grade VoIP infrastructure built on SIP and RTP, and real-time data channels used in collaborative applications, gaming, and distributed control systems. Quality of experience is governed by congestion control algorithms, forward error correction, jitter buffering, and adaptive bitrate strategies.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:communication-protocol",
@@ -13,30 +13,138 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
-  "maturity": "established",
+  "qualityScore": 0.74,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [
+    "hasPart": [
       {
         "id": "urn:ngm:class:web-rtc",
         "label": "WebRTC"
       },
       {
-        "id": "urn:ngm:class:video-compression",
-        "label": "Video Compression"
+        "id": "urn:ngm:class:session-initiation-protocol",
+        "label": "Session Initiation Protocol"
+      },
+      {
+        "id": "urn:ngm:class:real-time-transport-protocol",
+        "label": "Real-Time Transport Protocol"
+      },
+      {
+        "id": "urn:ngm:class:signalling",
+        "label": "Signalling"
       }
     ],
-    "enables": [],
-    "dependsOn": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:video-compression",
+        "label": "Video Compression"
+      },
+      {
+        "id": "urn:ngm:class:audio-codec",
+        "label": "Audio Codec"
+      },
+      {
+        "id": "urn:ngm:class:network-latency",
+        "label": "Network Latency"
+      },
+      {
+        "id": "urn:ngm:class:nat-traversal",
+        "label": "NAT Traversal"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:video-conferencing",
+        "label": "Video Conferencing"
+      },
+      {
+        "id": "urn:ngm:class:voice-over-ip",
+        "label": "Voice over IP"
+      },
+      {
+        "id": "urn:ngm:class:live-streaming",
+        "label": "Live Streaming"
+      },
+      {
+        "id": "urn:ngm:class:collaborative-editing",
+        "label": "Collaborative Editing"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:wireless-connectivity",
+        "label": "Wireless Connectivity"
+      },
+      {
+        "id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
+      },
+      {
+        "id": "urn:ngm:class:ice-framework",
+        "label": "ICE Framework"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:asynchronous-messaging",
+        "label": "Asynchronous Messaging"
+      },
+      {
+        "id": "urn:ngm:class:batch-processing",
+        "label": "Batch Processing"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
+      },
+      {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:secure-real-time-transport-protocol",
+        "label": "Secure Real-Time Transport Protocol"
+      },
+      {
+        "id": "urn:ngm:class:data-channel",
+        "label": "Data Channel"
+      },
+      {
+        "id": "urn:ngm:class:congestion-control",
+        "label": "Congestion Control"
+      }
+    ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      },
+      {
+        "id": "urn:ngm:class:w3c",
+        "label": "W3C"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:websocket",
+        "label": "WebSocket"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:media-server",
+        "label": "Media Server"
+      }
+    ]
   },
   "wikilinks": [
     {

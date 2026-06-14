@@ -75,7 +75,7 @@ public:: true
   "@type": "Class",
   "label": "Cognitive Science Domain",
   "definition": "The Cognitive Science Domain classifies concepts concerning the study of mind and intelligent behaviour across biological and artificial systems. It covers perception, memory, reasoning, language and learning and the models that explain them. As a top-level subject axis it supplies the theory of human cognition that informs interface design and intelligent systems.",
-  "domain": "cognitive-science",
+  "domain": "ai",
   "maturity": "emerging",
   "qualityScore": 0.7,
   "subClassOf": [

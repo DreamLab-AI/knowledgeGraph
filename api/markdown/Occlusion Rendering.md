@@ -21,7 +21,7 @@ public:: true
   "@type": "Class",
   "label": "Occlusion Rendering",
   "definition": "Occlusion rendering is the set of techniques used in real-time and offline graphics pipelines to correctly determine and display which surfaces are hidden behind other geometry from a given camera viewpoint, as well as to compute the darkening of surfaces due to local geometric obstruction of ambient light. It encompasses hardware depth-buffer culling, ambient occlusion shading, screen-space occlusion methods, and — in augmented reality — the masking of virtual objects by real-world foreground geometry. Correct occlusion is essential for perceptual plausibility in both games and AR/VR applications.",
-  "domain": "spatial",
+  "domain": "spatial-computing",
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:rendering-technique", "label": "Rendering Technique"}],
   "relations": {

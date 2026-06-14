@@ -4,23 +4,52 @@
   "slug": "user-interface",
   "public": true,
   "classIri": "urn:ngm:class:user-interface",
-  "domain": "infrastructure",
-  "definition": "A User Interface (UI) is the set of visual, auditory, and interactive components through which a human operates a software system. In spatial and metaverse contexts, UIs extend beyond flat screens to encompass 3D menus, gesture controls, voice interfaces, and haptic feedback, mediated by head-mounted displays, handheld controllers, or bare-hand tracking. Effective UI design balances accessibility, cognitive load, and rendering performance, drawing on human-computer interaction principles and user experience research.",
+  "domain": "spatial-computing",
+  "definition": "A User Interface (UI) is the aggregate of visual, auditory, tactile, and interactive components through which a human perceives and controls a software system, forming the boundary between human cognition and computational logic. UIs span a spectrum from two-dimensional graphical desktop and web environments to three-dimensional spatial interfaces rendered in augmented and virtual reality, encompassing gesture, voice, gaze, and haptic modalities. Effective UI design integrates human-computer interaction principles \u2014 affordance, feedback, constraints, and error prevention \u2014 with visual design, accessibility requirements, and rendering performance budgets. In complex sociotechnical systems, the UI layer mediates trust, cognitive load, and task efficiency, making it a critical determinant of system adoption and usability.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:infra-computing-and-cloud",
-      "label": "Computing and Cloud"
+      "id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:graphical-user-interface",
+        "label": "Graphical User Interface"
+      },
+      {
+        "id": "urn:ngm:class:3-d-user-interface",
+        "label": "3D User Interface"
+      },
+      {
+        "id": "urn:ngm:class:voice-user-interface",
+        "label": "Voice User Interface"
+      },
+      {
+        "id": "urn:ngm:class:gesture-recognition",
+        "label": "Gesture Recognition"
+      },
+      {
+        "id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      }
+    ],
     "requires": [
       {
-        "id": "urn:ngm:class:human-computer-interaction",
-        "label": "Human Computer Interaction"
+        "id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:interaction-design",
+        "label": "Interaction Design"
+      },
+      {
+        "id": "urn:ngm:class:event-driven-architecture",
+        "label": "Event Driven Architecture"
       }
     ],
     "enables": [
@@ -29,26 +58,101 @@
         "label": "Accessibility"
       },
       {
-        "id": "urn:ngm:class:3-d-user-interface",
-        "label": "3D User Interface"
-      }
-    ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
-      {
         "id": "urn:ngm:class:user-experience",
         "label": "User Experience"
       },
       {
-        "id": "urn:ngm:class:haptic-feedback",
-        "label": "Haptic Feedback"
+        "id": "urn:ngm:class:natural-language-interface",
+        "label": "Natural Language Interface"
+      },
+      {
+        "id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:display-technology",
+        "label": "Display Technology"
+      },
+      {
+        "id": "urn:ngm:class:input-device",
+        "label": "Input Device"
+      },
+      {
+        "id": "urn:ngm:class:operating-system",
+        "label": "Operating System"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:application-programming-interface",
+        "label": "Application Programming Interface"
+      },
+      {
+        "id": "urn:ngm:class:command-line-interface",
+        "label": "Command Line Interface"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "id": "urn:ngm:class:conversational-ai",
+        "label": "Conversational AI"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:design-system",
+        "label": "Design System"
+      },
+      {
+        "id": "urn:ngm:class:widget-toolkit",
+        "label": "Widget Toolkit"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:multimodal-interaction",
+        "label": "Multimodal Interaction"
+      },
+      {
+        "id": "urn:ngm:class:localisation",
+        "label": "Localisation"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:w3c-standards",
+        "label": "W3C Standards"
+      },
+      {
+        "id": "urn:ngm:class:wcag",
+        "label": "WCAG"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human Computer Interaction"
+      },
+      {
+        "id": "urn:ngm:class:software-architecture",
+        "label": "Software Architecture"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cognitive-load",
+        "label": "Cognitive Load"
+      },
+      {
+        "id": "urn:ngm:class:mental-model",
+        "label": "Mental Model"
       }
     ]
   },

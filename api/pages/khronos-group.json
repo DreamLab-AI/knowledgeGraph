@@ -4,8 +4,8 @@
   "slug": "khronos-group",
   "public": true,
   "classIri": "urn:ngm:class:khronos-group",
-  "domain": "governance",
-  "definition": "The Khronos Group is an open, member-driven industry consortium that creates and maintains royalty-free standards for graphics, compute, and media APIs across a wide range of platforms and devices. Founded in 2000, its portfolio includes OpenGL, Vulkan, OpenCL, OpenXR, glTF, and NNEF, among others. Khronos standards form the foundational layer for GPU-accelerated rendering, XR runtimes, and portable neural network deployment across the technology industry.",
+  "domain": "standards",
+  "definition": "The Khronos Group is an open, member-driven industry consortium founded in January 2000 that creates and maintains royalty-free open standards for graphics, parallel compute, media, and extended reality APIs across heterogeneous hardware platforms. Its portfolio spans OpenGL, Vulkan, OpenCL, OpenXR, glTF, NNEF, WebGL, and SPIR-V, forming the portable API foundation that underpins GPU-accelerated rendering, XR runtimes, and cross-vendor compute across the technology industry. Khronos operates through working groups composed of member companies \u2014 including NVIDIA, AMD, Intel, ARM, Apple, Google, and Meta \u2014 that collaboratively draft, ratify, and publish specifications under open licences with conformance test suites.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:standardization-bodies",
@@ -13,10 +13,43 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.74,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:vulkan",
+        "label": "Vulkan"
+      },
+      {
+        "id": "urn:ngm:class:opengl",
+        "label": "OpenGL"
+      },
+      {
+        "id": "urn:ngm:class:opencl",
+        "label": "OpenCL"
+      },
+      {
+        "id": "urn:ngm:class:openxr",
+        "label": "OpenXR"
+      },
+      {
+        "id": "urn:ngm:class:gltf",
+        "label": "glTF"
+      },
+      {
+        "id": "urn:ngm:class:spir-v",
+        "label": "SPIR-V"
+      },
+      {
+        "id": "urn:ngm:class:webgl",
+        "label": "WebGL"
+      },
+      {
+        "id": "urn:ngm:class:nnef",
+        "label": "NNEF"
+      }
+    ],
     "requires": [],
     "enables": [
       {
@@ -24,22 +57,52 @@
         "label": "Graphics API"
       },
       {
-        "id": "urn:ngm:class:3-d-graphics-standard",
-        "label": "3D Graphics Standard"
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
       },
       {
-        "id": "urn:ngm:class:spatial-computing-paradigm",
+        "id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing"
       },
       {
-        "id": "urn:ngm:class:gpu-compute",
-        "label": "GPU Compute"
+        "id": "urn:ngm:class:cross-platform-rendering",
+        "label": "Cross-Platform Rendering"
+      },
+      {
+        "id": "urn:ngm:class:hardware-abstraction-layer",
+        "label": "Hardware Abstraction Layer"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:directx",
+        "label": "DirectX"
+      },
+      {
+        "id": "urn:ngm:class:metal-api",
+        "label": "Metal API"
+      },
+      {
+        "id": "urn:ngm:class:proprietary-graphics-api",
+        "label": "Proprietary Graphics API"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:machine-learning-accelerator",
+        "label": "Machine Learning Accelerator"
+      },
+      {
+        "id": "urn:ngm:class:edge-inference",
+        "label": "Edge Inference"
+      },
+      {
+        "id": "urn:ngm:class:metaverse-infrastructure",
+        "label": "Metaverse Infrastructure"
+      }
+    ],
     "uses": [],
     "supports": [
       {
@@ -55,11 +118,24 @@
         "label": "Augmented Reality"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline-framework",
-        "label": "Machine Learning Framework"
+        "id": "urn:ngm:class:neural-network-portability",
+        "label": "Neural Network Portability"
+      },
+      {
+        "id": "urn:ngm:class:3d-asset-interchange",
+        "label": "3D Asset Interchange"
       }
     ],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso",
+        "label": "ISO"
+      },
+      {
+        "id": "urn:ngm:class:ieee",
+        "label": "IEEE"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -67,20 +143,20 @@
         "label": "Open Standard"
       },
       {
-        "id": "urn:ngm:class:technical-standard",
-        "label": "Technical Standard"
-      },
-      {
         "id": "urn:ngm:class:interoperability-standard",
         "label": "Interoperability Standard"
       },
       {
-        "id": "urn:ngm:class:rendering-technology",
-        "label": "Rendering Technology"
+        "id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
       },
       {
-        "id": "urn:ngm:class:3-d-file-format",
+        "id": "urn:ngm:class:3d-file-format",
         "label": "3D File Format"
+      },
+      {
+        "id": "urn:ngm:class:shader-language",
+        "label": "Shader Language"
       }
     ]
   },

@@ -4,11 +4,11 @@
   "slug": "personal-data-store",
   "public": true,
   "classIri": "urn:ngm:class:personal-data-store",
-  "domain": "infrastructure",
-  "definition": "A user-controlled repository that aggregates, manages, and selectively shares an individual's personal data, enabling the data owner to grant and revoke third-party access under consent-based mechanisms, thereby supporting data sovereignty and privacy-by-design principles in digital and metaverse contexts.",
+  "domain": "data",
+  "definition": "A Personal Data Store (PDS) is a user-controlled software system or vault that aggregates, stores, and selectively discloses an individual's personal data \u2014 including identity attributes, health records, behavioural logs, and transaction histories \u2014 under the direct control of the data subject. It enforces consent-based access through verifiable credentials and cryptographic authorisation mechanisms, enabling fine-grained, revocable sharing with third-party services. PDSs embody the principles of data sovereignty and privacy-by-design, decoupling data custody from service providers and restoring ownership to individuals. They serve as a foundational layer for interoperable digital identity ecosystems, federated personal AI assistants, and regulatory compliance with frameworks such as GDPR and CCPA.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:infra-data-management",
+      "id": "urn:ngm:class:data-management",
       "label": "Data Management"
     }
   ],
@@ -17,12 +17,60 @@
   "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "id": "urn:ngm:class:authorisation",
+        "label": "Authorisation"
+      },
+      {
+        "id": "urn:ngm:class:data-portability",
+        "label": "Data Portability"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:personal-ai-assistant",
+        "label": "Personal AI Assistant"
+      },
+      {
+        "id": "urn:ngm:class:federated-identity",
+        "label": "Federated Identity"
+      },
+      {
+        "id": "urn:ngm:class:data-marketplace",
+        "label": "Data Marketplace"
+      },
+      {
+        "id": "urn:ngm:class:selective-disclosure",
+        "label": "Selective Disclosure"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:centralised-data-silo",
+        "label": "Centralised Data Silo"
+      },
+      {
+        "id": "urn:ngm:class:data-broker",
+        "label": "Data Broker"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:federated-machine-learning",
+        "label": "Federated Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:decentralized-identifiers",
@@ -31,6 +79,18 @@
       {
         "id": "urn:ngm:class:access-control",
         "label": "Access Control"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      },
+      {
+        "id": "urn:ngm:class:end-to-end-encryption",
+        "label": "End-to-End Encryption"
+      },
+      {
+        "id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
       }
     ],
     "supports": [
@@ -41,9 +101,30 @@
       {
         "id": "urn:ngm:class:privacy-by-design",
         "label": "Privacy By Design"
+      },
+      {
+        "id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self-Sovereign Identity"
+      },
+      {
+        "id": "urn:ngm:class:consent-management",
+        "label": "Consent Management"
       }
     ],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:w3c-solid",
+        "label": "W3C Solid"
+      },
+      {
+        "id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "id": "urn:ngm:class:w3c-did-core",
+        "label": "W3C DID Core"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -53,6 +134,14 @@
       {
         "id": "urn:ngm:class:data-governance",
         "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:personal-data",
+        "label": "Personal Data"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
       }
     ]
   },

@@ -4,7 +4,7 @@
   "slug": "edge-layer",
   "public": true,
   "classIri": "urn:ngm:class:edge-layer",
-  "domain": "edge",
+  "domain": "infrastructure",
   "definition": "The Edge Layer is the cross-cutting stratum at the periphery of a system, where it meets external devices, users, and data sources. It sits above local hardware and network resources and below the application workloads it serves close to origin. It contains edge gateways, local caches, and the boundary logic that mediates between core and periphery.",
   "subClassOf": [
     {

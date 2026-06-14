@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:simultaneous-localisation-and-mapping",
   "domain": "robotics",
-  "definition": "Simultaneous Localisation and Mapping (SLAM) is a computational technique by which a mobile robot or autonomous agent concurrently estimates its own pose and builds a consistent map of a previously unknown environment from sequential sensor observations, solving the circular dependency between localisation (which requires a map) and mapping (which requires a known pose). SLAM algorithms process observations from sensors including LiDAR, stereo cameras, IMUs, and depth cameras using probabilistic frameworks such as particle filters, extended Kalman filters, or pose-graph optimisation to maintain joint estimates of the robot state and environment map.",
+  "definition": "Simultaneous Localisation and Mapping (SLAM) is a computational technique by which a mobile robot or autonomous agent concurrently estimates its own pose and constructs a consistent map of a previously unknown environment from sequential sensor observations, resolving the fundamental circular dependency between localisation (which requires a map) and mapping (which requires a known pose). SLAM algorithms process data from sensors such as LiDAR, stereo cameras, RGB-D cameras, and inertial measurement units using probabilistic and optimisation-based frameworks \u2014 including extended Kalman filters, particle filters, and pose-graph optimisation \u2014 to maintain joint estimates of agent state and environmental structure. The problem is formulated as Bayesian inference over a high-dimensional joint distribution of robot trajectory and landmark positions, typically approximated through factor graphs. SLAM is foundational to autonomous vehicles, mobile robotics, augmented reality, and any system that must navigate without prior maps or GPS.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-navigation-and-planning",
@@ -13,11 +13,24 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:loop-closure",
+        "label": "Loop Closure"
+      },
+      {
+        "id": "urn:ngm:class:pose-estimation",
+        "label": "Pose Estimation"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:autonomous-navigation",
@@ -26,12 +39,55 @@
       {
         "id": "urn:ngm:class:visual-odometry",
         "label": "Visual Odometry"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-vehicles",
+        "label": "Autonomous Vehicles"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:semantic-mapping",
+        "label": "Semantic Mapping"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:non-linear-optimisation",
+        "label": "Non-Linear Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:dead-reckoning",
+        "label": "Dead Reckoning"
+      },
+      {
+        "id": "urn:ngm:class:gps-navigation",
+        "label": "GPS Navigation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:neural-radiance-field",
+        "label": "Neural Radiance Field"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:kalman-filter",
@@ -43,7 +99,23 @@
       },
       {
         "id": "urn:ngm:class:lidar",
-        "label": "Lidar"
+        "label": "LiDAR"
+      },
+      {
+        "id": "urn:ngm:class:factor-graph",
+        "label": "Factor Graph"
+      },
+      {
+        "id": "urn:ngm:class:inertial-measurement-unit",
+        "label": "Inertial Measurement Unit"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
+        "id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
       }
     ],
     "supports": [],
@@ -57,6 +129,18 @@
       {
         "id": "urn:ngm:class:odometry",
         "label": "Odometry"
+      },
+      {
+        "id": "urn:ngm:class:occupancy-grid",
+        "label": "Occupancy Grid"
+      },
+      {
+        "id": "urn:ngm:class:structure-from-motion",
+        "label": "Structure from Motion"
+      },
+      {
+        "id": "urn:ngm:class:place-recognition",
+        "label": "Place Recognition"
       }
     ]
   },

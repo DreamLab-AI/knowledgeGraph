@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:gradient-checkpointing",
   "domain": "machine-learning",
-  "definition": "A memory-saving technique for training neural networks that stores only a subset of intermediate activations during the forward pass and recomputes the rest during the backward pass. It trades extra computation for reduced memory use.",
+  "definition": "Gradient checkpointing is a memory-efficient training technique for deep neural networks that reduces peak activation memory by storing only a strategically chosen subset of intermediate activations (checkpoints) during the forward pass, then recomputing the discarded activations on demand during backpropagation. The technique was formalised by Chen et al. (2016) under the name 'Training Deep Networks with Sublinear Memory Cost', achieving O(sqrt(N)) memory in the number of layers N at the cost of one additional forward pass per training step. It is now a foundational primitive in large-model training, implemented natively in PyTorch, JAX, TensorFlow, and most major deep-learning frameworks.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:backpropagation",
@@ -13,31 +13,135 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.74,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:checkpoint-segment",
+        "label": "Checkpoint Segment"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:backpropagation",
         "label": "Backpropagation"
+      },
+      {
+        "id": "urn:ngm:class:automatic-differentiation",
+        "label": "Automatic Differentiation"
+      },
+      {
+        "id": "urn:ngm:class:computational-graph",
+        "label": "Computational Graph"
       }
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:deep-learning",
-        "label": "Deep Learning"
+        "id": "urn:ngm:class:large-language-model-training",
+        "label": "Large Language Model Training"
+      },
+      {
+        "id": "urn:ngm:class:long-context-training",
+        "label": "Long Context Training"
+      },
+      {
+        "id": "urn:ngm:class:model-scaling",
+        "label": "Model Scaling"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:gpu-memory",
+        "label": "GPU Memory"
+      },
+      {
+        "id": "urn:ngm:class:neural-network-architecture",
+        "label": "Neural Network Architecture"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:full-activation-storage",
+        "label": "Full Activation Storage"
+      },
+      {
+        "id": "urn:ngm:class:gradient-accumulation",
+        "label": "Gradient Accumulation"
+      },
+      {
+        "id": "urn:ngm:class:mixed-precision-training",
+        "label": "Mixed Precision Training"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:distributed-training",
+        "label": "Distributed Training"
+      },
+      {
+        "id": "urn:ngm:class:edge-ai",
+        "label": "Edge AI"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:forward-pass",
+        "label": "Forward Pass"
+      },
+      {
+        "id": "urn:ngm:class:recomputation",
+        "label": "Recomputation"
+      },
+      {
+        "id": "urn:ngm:class:memory-management",
+        "label": "Memory Management"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "id": "urn:ngm:class:recurrent-neural-network",
+        "label": "Recurrent Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      }
+    ],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:memory-efficient-training",
+        "label": "Memory-Efficient Training"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:pipeline-parallelism",
+        "label": "Pipeline Parallelism"
+      },
+      {
+        "id": "urn:ngm:class:model-parallelism",
+        "label": "Model Parallelism"
+      },
+      {
+        "id": "urn:ngm:class:offloading",
+        "label": "Offloading"
+      }
+    ]
   },
   "wikilinks": [
     {

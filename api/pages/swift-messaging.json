@@ -5,39 +5,165 @@
   "public": true,
   "classIri": "urn:ngm:class:swift-messaging",
   "domain": "finance",
-  "definition": "SWIFT messaging is the standardised financial message exchange operated over the SWIFT network, used by banks to communicate payment and securities instructions. Messages follow formats such as the MT and ISO 20022 MX standards.",
+  "definition": "SWIFT Messaging is the standardised, structured financial message exchange system operated over the Society for Worldwide Interbank Financial Telecommunication (SWIFT) network, enabling banks, brokers, custodians, and other financial institutions to communicate payment instructions, securities transactions, treasury operations, and trade finance data. Messages are governed by two principal format families: the legacy MT (Message Type) standards encoded in SWIFT's own syntax, and the modern ISO 20022 MX messages encoded in XML, which carry richer, more granular data and support global harmonisation. SWIFT itself functions as a secure messaging infrastructure rather than a settlement system; actual fund movement occurs via correspondent banking relationships, real-time gross settlement (RTGS) systems, and central bank facilities. The network is subject to multi-jurisdictional regulatory oversight and is a critical node in the global financial stability architecture.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:swift",
-      "label": "SWIFT"
+      "id": "urn:ngm:class:financial-messaging",
+      "label": "Financial Messaging"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
-  "maturity": "established",
+  "qualityScore": 0.74,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:mt-message-types",
+        "label": "MT Message Types"
+      },
+      {
+        "id": "urn:ngm:class:iso-20022",
+        "label": "ISO 20022"
+      },
+      {
+        "id": "urn:ngm:class:swiftnet",
+        "label": "SWIFTNet"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:swift",
         "label": "SWIFT"
+      },
+      {
+        "id": "urn:ngm:class:business-identifier-code",
+        "label": "Business Identifier Code"
+      },
+      {
+        "id": "urn:ngm:class:correspondent-banking",
+        "label": "Correspondent Banking"
       }
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:payment-system",
-        "label": "Payment System"
+        "id": "urn:ngm:class:cross-border-payment",
+        "label": "Cross-Border Payment"
+      },
+      {
+        "id": "urn:ngm:class:securities-settlement",
+        "label": "Securities Settlement"
+      },
+      {
+        "id": "urn:ngm:class:trade-finance",
+        "label": "Trade Finance"
+      },
+      {
+        "id": "urn:ngm:class:treasury-management",
+        "label": "Treasury Management"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:real-time-gross-settlement",
+        "label": "Real-Time Gross Settlement"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:iso-20022",
+        "label": "ISO 20022"
+      },
+      {
+        "id": "urn:ngm:class:cpmi-iosco-pfmi",
+        "label": "CPMI-IOSCO PFMI"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:ripple-network",
+        "label": "Ripple Network"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-payment",
+        "label": "Blockchain Payment"
+      },
+      {
+        "id": "urn:ngm:class:fedwire",
+        "label": "Fedwire"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:financial-cryptography",
+        "label": "Financial Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:message-authentication-code",
+        "label": "Message Authentication Code"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
+      },
+      {
+        "id": "urn:ngm:class:sanctions-screening",
+        "label": "Sanctions Screening"
+      },
+      {
+        "id": "urn:ngm:class:know-your-customer",
+        "label": "Know Your Customer"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:swift",
+        "label": "SWIFT"
+      },
+      {
+        "id": "urn:ngm:class:iso-tc68",
+        "label": "ISO TC68"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:swift",
+        "label": "SWIFT"
+      },
+      {
+        "id": "urn:ngm:class:global-financial-infrastructure",
+        "label": "Global Financial Infrastructure"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:payment-system",
+        "label": "Payment System"
+      },
+      {
+        "id": "urn:ngm:class:financial-market-infrastructure",
+        "label": "Financial Market Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:nostro-vostro-account",
+        "label": "Nostro/Vostro Account"
+      }
+    ]
   },
   "wikilinks": [
     {

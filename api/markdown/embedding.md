@@ -1,14 +1,91 @@
 - ### Definition
-  - An [[Embedding]] is a mathematical function mapping discrete or structured inputs into a continuous vector space—typically of 128 to 4096 dimensions—learned by a [[Neural Network]] during training so that semantic or functional similarity in the input domain corresponds to geometric proximity in the vector space. The resulting dense vectors lie within a [[Neural Network Latent Space]] that compresses high-level structure into a compact, arithmetically manipulable form. Embeddings underpin [[Semantic Search]], [[Retrieval-Augmented Generation]], and recommendation systems, and are stored and searched efficiently in [[Vector Database]] infrastructure using approximate nearest-neighbour algorithms.
+  - An [[Embedding]] is a learned mathematical mapping that transforms discrete or structured inputs—such as words, sentences, images, code snippets, or graph nodes—into dense, continuous vectors in a low-dimensional [[Latent Space]], such that semantic or functional similarity in the input domain corresponds to geometric proximity in the output space. The mapping is typically learned by a [[Neural Network]] (most commonly a [[Transformer]] encoder) by optimising a [[Loss Function]] that encourages similar inputs to cluster together and dissimilar inputs to separate. The resulting vectors compress rich structure into an arithmetically manipulable form that supports [[Semantic Search]], [[Clustering]], [[Text Classification]], and [[Retrieval-Augmented Generation]] without explicit symbolic rules.
+
+- ### Overview
+  - Embeddings solve the fundamental problem of representing symbolic, discrete, or otherwise non-numeric data in a form that statistical models can process efficiently. Raw text, for instance, cannot be directly fed into a gradient-based optimiser; mapping it to a fixed-length dense vector provides a continuous, differentiable representation.
+  - The core intuition is the distributional hypothesis: entities that appear in similar contexts tend to have similar meanings, and this similarity should be reflected geometrically. Models trained with this objective produce spaces with remarkable algebraic structure—vector arithmetic can encode analogical relationships and compositional semantics.
+  - Embeddings are now foundational infrastructure in AI: virtually every large-scale natural language processing, computer vision, and multimodal system relies on embedding layers internally, and embedding APIs are offered as standalone services for enterprise search, personalisation, and knowledge management.
+  - The quality of an embedding space is empirically assessed via benchmarks measuring semantic textual similarity, retrieval recall at various ranks, and performance on downstream tasks after linear probing or fine-tuning.
+
+- ### Key Mechanisms
+  - **Training objectives** shape the geometry of the resulting space:
+    - Predictive objectives (word2vec skip-gram, CBOW) train a shallow network to predict a word from its context window or vice versa, producing static word vectors.
+    - Masked language modelling ([[BERT]], RoBERTa) trains a deep bidirectional [[Transformer]] to reconstruct masked tokens, yielding rich contextual token representations.
+    - [[Contrastive Learning]] objectives (SimCSE, CLIP) push representations of matched pairs (e.g. image and its caption) together and unmatched pairs apart, producing aligned multimodal spaces.
+    - Matryoshka Representation Learning trains a single model to produce truncatable embeddings at multiple nested dimensionalities, enabling storage–accuracy trade-offs without recomputation.
+  - **Architectures** used to produce embeddings:
+    - [[Encoder]]-only transformers (BERT, RoBERTa, E5, BGE, Nomic-Embed) for text.
+    - Dual-encoder or bi-encoder networks (Sentence-BERT) for efficient sentence-level retrieval.
+    - Convolutional and vision transformer encoders (CLIP ViT, DINOv2) for image embeddings.
+    - Graph Neural Networks (TransE, RotatE, GraphSAGE) for [[Knowledge Graph Embedding]] and molecular representations.
+    - Recurrent networks (wav2vec, EnCodec) for audio sequences.
+  - **[[Dimensionality Reduction]]** techniques complement embeddings:
+    - Principal Component Analysis (PCA) and UMAP reduce embedding dimensions for visualisation or storage cost.
+    - Product quantisation compresses vectors for efficient indexing in [[Vector Database]] systems.
+  - **Similarity metrics** used to compare embeddings:
+    - Cosine similarity is the canonical metric for normalised text embeddings.
+    - Dot product (inner product) is preferred for maximum inner product search (MIPS) in recommendation contexts.
+    - Euclidean distance is used in some metric-learning settings.
+    - [[Approximate Nearest Neighbour]] algorithms (HNSW, IVF-PQ, Annoy) enable sub-linear retrieval at scale.
+
+- ### Applications and Use Cases
+  - **[[Semantic Search]]** — queries and documents are embedded into the same space; retrieval ranks by cosine similarity rather than keyword overlap, capturing paraphrase and conceptual equivalence.
+  - **[[Retrieval-Augmented Generation]]** — at inference time, a query embedding retrieves relevant context chunks from a [[Vector Database]] (Pinecone, Weaviate, Qdrant, pgvector, Milvus); these chunks are prepended to the language model prompt, grounding generation in retrieved facts.
+  - **[[Recommendation System]]** — user and item embeddings are learned jointly so that a user's preference vector is geometrically close to the vectors of items they would like, enabling efficient candidate retrieval.
+  - **[[Text Classification]] and clustering** — embeddings serve as feature inputs to lightweight classifiers or [[Clustering]] algorithms (k-means, HDBSCAN), enabling few-shot and zero-shot classification.
+  - **[[Cross-Modal Retrieval]]** — multimodal models like CLIP align image and text embeddings in a shared space, enabling text-to-image and image-to-text search (used in DALL-E, Google Lens, Bing Visual Search).
+  - **[[Knowledge Graph Embedding]]** — entities and relations in knowledge graphs are embedded such that plausible triples score higher than implausible ones, enabling link prediction and completion.
+  - **Drug discovery and cheminformatics** — molecular graph embeddings encode chemical structure, enabling similarity search over compound libraries and property prediction.
+  - **Code search and completion** — code embeddings (CodeBERT, StarCoder) enable semantic code search, clone detection, and code-to-documentation retrieval.
+  - **Anomaly detection** — embeddings of normal behaviour cluster tightly; outliers appear as distant points, enabling unsupervised detection without labelled examples.
+  - **Personalisation** — long-term user interaction histories are compressed into a single embedding representing user preferences, enabling real-time retrieval of personalised content.
+
+- ### Notable Embedding Models and Systems
+  - **Word2Vec** — the seminal shallow neural network model by Mikolov et al. (2013) that demonstrated distributional word vectors with additive analogy structure.
+  - **GloVe** — global vectors trained on co-occurrence statistics, capturing global corpus statistics alongside local context windows.
+  - **FastText** — extends word2vec with subword (character n-gram) representations for out-of-vocabulary generalisation.
+  - **[[BERT]]** — bidirectional encoder from Google (2018) producing contextual token embeddings; foundation for most subsequent text embedding research.
+  - **Sentence-BERT (SBERT)** — bi-encoder fine-tuned on natural language inference data to produce semantically meaningful sentence-level embeddings for efficient similarity search.
+  - **CLIP** — OpenAI contrastive model aligning image and text encoders; the canonical multimodal embedding model.
+  - **E5, BGE, Nomic-Embed, Voyage AI** — modern instruction-tuned text embedding models that accept task descriptions at query time to condition the representation.
+  - **Matryoshka Embedding Models** — produce nested representations allowing dimension truncation without quality collapse.
 
 - ### Relationships
-  - Embeddings are produced by [[Encoder]] architectures (transformer encoders, CNN feature extractors, graph neural networks) that perform [[Dimensionality Reduction]] from high-dimensional input spaces to compact vector representations. They enable [[Semantic Search]] by converting textual or multimodal queries into the same vector space as indexed documents, support [[Retrieval-Augmented Generation]] pipelines by providing retrievable context representations, and are persisted in [[Vector Database]] systems. They are fundamentally related to the [[Neural Network Latent Space]] concept and to [[Feature Extraction]] as a broader ML paradigm.
+  - uses:: [[Neural Network]]
+  - uses:: [[Transformer]]
+  - uses:: [[Encoder]]
+  - uses:: [[Dimensionality Reduction]]
+  - uses:: [[Contrastive Learning]]
+  - enables:: [[Semantic Search]]
+  - enables:: [[Retrieval-Augmented Generation]]
+  - enables:: [[Vector Database]]
+  - enables:: [[Text Classification]]
+  - enables:: [[Recommendation System]]
+  - enables:: [[Clustering]]
+  - enables:: [[Cross-Modal Retrieval]]
+  - requires:: [[Training Data]]
+  - requires:: [[Loss Function]]
+  - relatedTo:: [[Latent Space]]
+  - relatedTo:: [[Feature Extraction]]
+  - relatedTo:: [[Word2Vec]]
+  - relatedTo:: [[BERT]]
+  - relatedTo:: [[Approximate Nearest Neighbour]]
+  - relatedTo:: [[Knowledge Graph Embedding]]
+  - contrastsWith:: [[One-Hot Encoding]]
+  - contrastsWith:: [[Sparse Representation]]
+  - bridges-to:: [[Spatial Index]]
+  - bridges-to:: [[Knowledge Graph]]
+  - subClassOf:: [[Representation Learning]]
 
-- ### Content
-  - The modern concept of learned embeddings traces to word2vec (Mikolov et al., 2013), which demonstrated that training a shallow neural network to predict word contexts from a large corpus produced vector representations with remarkable geometric properties—including additive analogical reasoning (king - man + woman ≈ queen). GloVe (2014) extended this via global co-occurrence statistics, and FastText (2016) added subword representations to handle morphologically rich languages and out-of-vocabulary words. These static word embeddings were quickly adopted across virtually all NLP applications.
+- ### Standards and Context
+  - There is no single formal standard governing embeddings, but several community conventions have emerged:
+    - The Massive Text Embedding Benchmark (MTEB) by Hugging Face is the de facto evaluation standard, covering retrieval, classification, clustering, semantic textual similarity, and reranking across dozens of datasets and languages.
+    - The BEIR benchmark standardises zero-shot information retrieval evaluation across heterogeneous corpora.
+    - ONNX Runtime and GGUF formats are increasingly used to export embedding models for cross-platform inference.
+    - The OpenAI Embeddings API and Cohere Embed API have established de facto conventions for embedding request/response schemas used by many downstream tools.
+  - Embedding dimensions of 768 (BERT-base), 1024 (BERT-large), and 1536 (OpenAI Ada-002) have become reference sizes; recent models explore 256–4096 dimensions with matryoshka truncation.
+  - Privacy considerations: embeddings can leak sensitive information from training data and may be partially inverted; regulatory guidance (GDPR, EU AI Act) increasingly requires disclosure when embeddings encode personal data.
 
-  - Contextual embeddings—where a word's vector depends on its surrounding context—emerged with ELMo (2018) and were perfected by BERT (2018) and its successors. BERT's bidirectional transformer encoder produces contextual token embeddings that capture polysemy and long-range dependencies, enabling state-of-the-art performance on classification, named entity recognition, and question answering by fine-tuning or probing the representations. Sentence-level embeddings for semantic similarity and retrieval are produced by Sentence-BERT (SBERT) and its successors through contrastive fine-tuning on natural language inference and semantic textual similarity datasets.
-
-  - Beyond text, embeddings have been extended to images (CLIP visual encoders), audio (wav2vec, EnCodec), molecules (graph neural network embeddings for drug discovery), code (CodeBERT, StarCoder embeddings), and heterogeneous knowledge graphs (TransE, RotatE). Multimodal embedding models align representations across modalities in a shared space, enabling cross-modal retrieval such as image search from text queries. Commercial embedding APIs (OpenAI Ada-002/3, Cohere Embed, Voyage AI) provide scalable embedding services for RAG and enterprise search applications.
-
-  - In 2024-2025, embedding models are advancing on multiple fronts: long-context embeddings handling documents of 32k-128k tokens, instruction-tuned embeddings following task-specific instructions at query time (E5-instruct, BGE-M3), and matryoshka representation learning producing truncatable embeddings adaptable to storage and compute budgets without recomputation. The market for vector databases and embedding infrastructure (Pinecone, Weaviate, Qdrant, pgvector) has grown substantially, reflecting the embedding layer's status as critical infrastructure for modern AI applications.
+- ### Provenance
+  - sources:: Mikolov et al. (2013) word2vec; Devlin et al. (2018) BERT; Reimers & Gurevych (2019) Sentence-BERT; Radford et al. (2021) CLIP; Muennighoff et al. (2022) MTEB; Kusupati et al. (2022) Matryoshka Representation Learning
+  - updated:: 2026-06-13

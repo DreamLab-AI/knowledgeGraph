@@ -55,7 +55,7 @@ public:: true
   "@type": "Class",
   "label": "Gauge Voting",
   "definition": "Gauge voting is a mechanism in protocols such as Curve where token holders allocate weights to liquidity pools, determining how reward emissions are distributed. Voting power is usually tied to time-locked governance tokens.",
-  "domain": "defi",
+  "domain": "blockchain",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

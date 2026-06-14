@@ -1,23 +1,91 @@
 - ### Definition
-  - Simulation creates computational models that replicate the behaviour of real-world systems, processes, or phenomena for training, experimentation, prediction, or entertainment. In metaverse and spatial computing contexts, simulations leverage physics engines, rendering pipelines, and AI-driven procedural content generation to produce interactive virtual environments that improve learning transfer, enable safe rehearsal of dangerous scenarios, and support distributed collaboration across geographies.
-- ### Semantic Classification
-  - owl-class:: infrastructure:Simulation
-  - owl-role:: Concept
+  - Simulation is the computational reproduction of real-world systems, physical phenomena, or abstract processes through [[Mathematical Modelling]] that evolves over time, enabling experimentation, training, and prediction without risk to personnel or infrastructure. Spanning from simplified [[Agent-Based Modelling]] of population dynamics to high-fidelity multi-body [[Physics Engine]] environments, simulation supports a vast spectrum of disciplines including aerospace, medicine, urban planning, logistics, robotics, and AI training. Its value lies in the ability to explore hypothetical scenarios, stress-test designs, and generate [[Synthetic Data]] at a cost and safety level that physical experimentation cannot match. Crucially, effective simulation practice requires rigorous validation against empirical data and explicit uncertainty quantification to ensure that insights transfer reliably to the real world.
+
+- ### Overview
+  - Simulation is one of the oldest and most productive tools in computational science, predating modern digital computers (early analogue simulations used differential analysers) and now realised across every scale from molecular dynamics to galactic N-body models.
+  - At its core, a simulation instantiates a [[Computational Model]] — a set of equations, rules, or statistical processes — and advances it through time steps or event queues, recording the trajectory of system states.
+  - Modern simulation practice distinguishes three dominant paradigms:
+    - **Continuous simulation** — governed by differential equations (e.g. fluid dynamics, orbital mechanics)
+    - **Discrete-event simulation** — state changes triggered by discrete events (e.g. queuing networks, supply-chain logistics)
+    - **Agent-based simulation** — emergent macro-behaviour arising from individual agent rules (e.g. crowd dynamics, financial markets)
+  - Spatial computing and the [[Metaverse]] have elevated simulation into an interactive medium: users inhabit and act within the model rather than merely observing outputs, requiring [[Real-Time Computing]] performance and immersive [[Render Pipeline]] integration.
+  - [[Digital Twin]] technology represents the convergence of simulation with live sensor streams, creating a continuously updated computational mirror of a physical asset.
+  - The distinction between simulation and [[Emulation]] is important: emulation replicates the exact input/output behaviour of a system (typically hardware), whereas simulation models the underlying processes that produce that behaviour.
+
+- ### Key Components
+  - **[[Physics Engine]]** — solves rigid-body dynamics, collision detection, fluid and soft-body mechanics in real time; examples include PhysX, Bullet, Havok, and MuJoCo.
+  - **[[Render Pipeline]]** — converts scene geometry, material properties, and lighting models into pixel images; ranges from rasterisation for real-time use to path-tracing for photorealistic offline render.
+  - **[[State Machine]]** — governs discrete transitions of agents, scenarios, or system modes; fundamental to game AI and scenario branching.
+  - **[[Sensor Model]]** — approximates how virtual sensors (cameras, LiDAR, IMUs) perceive the synthetic environment, critical for autonomous-driving and robotics simulation.
+  - **[[Monte Carlo Methods]]** — drive stochastic sampling to quantify uncertainty in model outputs and explore probability distributions over outcomes.
+  - **[[Procedural Content Generation]]** — algorithmically creates terrain, buildings, traffic patterns, and biological variation to populate large-scale environments without manual authoring.
+  - **[[Agent-Based Modelling]]** — populates the simulation with autonomous entities following local rules, enabling emergent social, ecological, or economic phenomena.
+  - **Numerical Solvers** — integrate differential equations (Euler, Runge-Kutta, implicit methods) with controlled error; see [[Numerical Methods]].
+  - **Validation & Verification (V&V)** — systematic comparison of simulation outputs against empirical measurements (validation) and confirmation that the model is implemented correctly (verification); see [[Data Validation]].
+
+- ### Applications and Use Cases
+  - **Military and Defence Training** — pilot training in flight simulators, naval combat management systems, combined-arms manoeuvre rehearsal; programmes such as JTLS and OneSAF demonstrate mature deployment.
+  - **Medical and Surgical Training** — laparoscopic surgery simulators with haptic feedback, anaesthesia crisis scenarios, nursing procedural trainers; reduces patient risk and increases procedural competence before live cases.
+  - **Aerospace Engineering** — structural finite-element analysis, computational fluid dynamics (CFD) for aerodynamics, orbital mechanics planning; used by NASA, ESA, and every major airframer.
+  - **Autonomous Systems Development** — [[Robotics]] pipelines use simulation (e.g. Isaac Sim, Gazebo) to train perception and control stacks via [[Reinforcement Learning]] before hardware deployment, dramatically compressing development cycles.
+  - **Urban Planning and Smart Cities** — traffic flow models, pedestrian crowd simulations, energy demand forecasting; inform infrastructure investment and emergency response planning.
+  - **Climate and Environmental Science** — [[Agent-Based Modelling]] and coupled ocean-atmosphere models forecast climate trajectories, inform policy, and train climate scientists.
+  - **Financial Markets** — Monte Carlo options pricing, agent-based market microstructure models, and stress-testing under hypothetical macroeconomic shocks.
+  - **Logistics and Supply Chain** — discrete-event simulation of warehouse operations, port throughput, and last-mile delivery networks; supports capacity planning and risk analysis.
+  - **Metaverse and Spatial Computing** — interactive social simulations, virtual product launches, architectural walkthroughs, and gamified [[Immersive Experience]] platforms that blend simulation with real-time collaboration.
+  - **AI Training Data Generation** — [[Synthetic Data]] produced by high-fidelity simulators augments scarce real-world datasets for computer vision, NLP grounding, and [[Reinforcement Learning]] reward shaping; see also [[AI Safety]] (simulated red-teaming).
+
+- ### Mechanisms and Fidelity Tradeoffs
+  - Simulation fidelity is typically stratified into three levels:
+    - **High fidelity** — physics-accurate, validated models; computationally expensive; used where transfer to real world is paramount (surgery, test flight).
+    - **Medium fidelity** — simplified physics with key dynamics preserved; supports real-time interaction and large-scale training.
+    - **Low fidelity** — abstract rule-based or statistical models; fast, scalable, suitable for strategic planning and population-level analysis.
+  - Scaling compute (GPUs, TPUs, distributed HPC) with [[High-Performance Computing]] enables previously infeasible fidelity levels; cloud-based simulation platforms (SimScale, AWS SimSpace Weaver) democratise access.
+  - [[Machine Learning]] increasingly replaces expensive first-principles solvers: neural surrogate models (neural operators, physics-informed neural networks) learn to approximate PDE solutions at orders-of-magnitude lower inference cost.
+  - Real-time constraint is the primary engineering tension in spatial computing simulation: 90+ fps rendering plus physics at interactive latency requires aggressive approximation and level-of-detail (LOD) management.
+
 - ### Relationships
-  - uses [[Physics Engine]]
-  - uses [[Render Pipeline]]
-  - uses [[Digital Twin]]
-  - enables [[Immersive Experience]]
-  - enables [[Reinforcement Learning]]
-  - relatedTo [[Virtual Reality]]
-- ### Content
-  # Simulation
-  Simulation creates interactive models approximating real-world systems, processes, or phenomena for training, experimentation, entertainment, or prediction within virtual environments. Applications span diverse domains including flight simulators replicating aircraft dynamics and control systems for pilot training, medical simulations providing risk-free surgical practice with haptic feedback and realistic anatomy, industrial training simulations teaching complex machinery operation and maintenance procedures, urban planning simulations visualizing infrastructure changes and traffic patterns, and climate/ecosystem simulations modeling environmental dynamics. Simulation fidelity balances realism against computational tractability: high-fidelity simulations incorporate detailed physics, material properties, and stochastic variation matching reality closely, while lower-fidelity simulations simplify for real-time interaction or accessibility. Effective simulations validate against empirical data, quantify uncertainty, and document assumptions and limitations. Metaverse simulations leverage immersion enhancing learning transfer to real-world contexts, enable impossible or dangerous scenarios safely, support remote collaboration across distances, and generate analytics quantifying performance and identifying improvement opportunities. Emerging techniques integrate machine learning for procedural content generation, adaptive difficulty, and intelligent scenario branching.
-  - https://www.simscale.com/ - Cloud-based engineering simulation platform
-  - https://www.anylogic.com/ - AnyLogic multi-method simulation software
-  - https://www.mathworks.com/products/simulink.html - MATLAB Simulink modeling and simulation
-  - https://unity.com/solutions/automotive-transportation-manufacturing/simulation - Unity simulation solutions
-  ## Sources
+  - uses:: [[Physics Engine]]
+  - uses:: [[Render Pipeline]]
+  - uses:: [[Procedural Content Generation]]
+  - uses:: [[Monte Carlo Methods]]
+  - uses:: [[Agent-Based Modelling]]
+  - enables:: [[Reinforcement Learning]]
+  - enables:: [[Immersive Experience]]
+  - enables:: [[Synthetic Data]]
+  - enables:: [[Training and Simulation]]
+  - enables:: [[Scenario Planning]]
+  - requires:: [[Computational Model]]
+  - requires:: [[Real-Time Computing]]
+  - requires:: [[High-Performance Computing]]
+  - hasPart:: [[Physics Engine]]
+  - hasPart:: [[State Machine]]
+  - hasPart:: [[Sensor Model]]
+  - dependsOn:: [[Mathematical Modelling]]
+  - dependsOn:: [[Numerical Methods]]
+  - dependsOn:: [[Data Validation]]
+  - contrastsWith:: [[Emulation]]
+  - contrastsWith:: [[Physical Prototype]]
+  - relatedTo:: [[Virtual Reality]]
+  - relatedTo:: [[Mixed Reality]]
+  - relatedTo:: [[Digital Twin]]
+  - relatedTo:: [[Augmented Reality]]
+  - bridges-to:: [[AI Safety]]
+  - bridges-to:: [[Robotics]]
+
+- ### Standards and Context
+  - **IEEE 1516 (HLA — High Level Architecture)** — the canonical standard for composing distributed federations of simulations; widely adopted by defence simulation communities.
+  - **Distributed Interactive Simulation (DIS) / IEEE 1278** — packet-level protocol for real-time exchange of simulation state between heterogeneous nodes, foundational to military training networks.
+  - **ARINC 610 / DO-178C** — safety-standard frameworks governing simulation use in aviation certification, specifying required fidelity and V&V rigour.
+  - **OpenUSD (Universal Scene Description)** — Pixar/NVIDIA's scene interchange format increasingly used as a common substrate for simulation environments in [[Spatial Computing]] and the [[Metaverse]]; adopted by NVIDIA Omniverse and Apple Vision Pro toolchains.
+  - **NVIDIA Isaac Sim / Open 3D Engine** — open simulation platforms targeting [[Robotics]] and autonomous systems, built atop OpenUSD.
+  - **Simulation Interoperability Standards Organisation (SISO)** — produces product development groups (PDGs) standardising simulation data exchange formats.
+  - **ISO/IEC 25010** — software quality standard applied to simulation software quality assurance, covering reliability, maintainability, and portability.
+
+- ### Semantic Classification
+  - owl-class:: spatial-computing:Simulation
+  - owl-role:: Concept
+
 - ### Provenance
-  - sources::
-  - migration-date:: 2026-04-26T00:00:00Z
+  - sources:: IEEE 1516 standard documentation; SISO standards body publications; NVIDIA Isaac Sim documentation; established simulation science literature
+  - updated:: 2026-06-13

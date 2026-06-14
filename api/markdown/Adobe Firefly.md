@@ -21,7 +21,7 @@ public:: true
   "@type": "Class",
   "label": "Adobe Firefly",
   "definition": "Adobe Firefly is Adobe's family of proprietary generative AI models designed for commercial creative applications, offering text-to-image generation, generative fill, vector recolouring, and text-effect capabilities trained exclusively on licensed Adobe Stock imagery, openly licensed content, and public domain material. Launched in March 2023, Firefly is embedded across Adobe Creative Cloud applications and is positioned as an enterprise-safe generative AI tool that provides intellectual property indemnification for commercial outputs. It represents Adobe's strategy to integrate generative AI natively into professional creative workflows.",
-  "domain": "media",
+  "domain": "ai",
   "maturity": "emerging",
   "subClassOf": [{"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"}],
   "relations": {

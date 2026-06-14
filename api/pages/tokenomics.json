@@ -4,19 +4,44 @@
   "slug": "tokenomics",
   "public": true,
   "classIri": "urn:ngm:class:tokenomics",
-  "domain": "spatial-computing",
-  "definition": "Tokenomics describes the economic design and incentive structures of blockchain-based token systems, covering token supply mechanics, distribution schedules, utility functions, and governance rights. Within virtual economies and metaverse platforms, tokenomics governs how digital assets are minted, traded, staked, and burned to sustain ecosystem participation and align stakeholder incentives. Sound tokenomic design balances inflationary rewards for contributors against deflationary sinks, using mechanisms such as bonding curves, liquidity pools, and vesting schedules.",
+  "domain": "blockchain",
+  "definition": "Tokenomics is the study and design of the economic systems underpinning blockchain-based tokens, encompassing token supply mechanics (fixed supply, inflationary, or deflationary schedules), distribution models (initial coin offerings, airdrops, liquidity mining), utility functions (governance rights, access control, fee payment), and incentive alignment mechanisms. A well-designed tokenomic model balances value creation and capture across stakeholders \u2014 developers, users, liquidity providers, and governance participants \u2014 through mechanisms such as staking, burning, bonding curves, and vesting schedules. Tokenomics draws from monetary theory, game theory, and mechanism design to engineer sustainable digital economies where token holders are incentivised to act in ways that grow the ecosystem's long-term value.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:sc-platform-and-environment",
-      "label": "Platform and Environment"
+      "id": "urn:ngm:class:cryptoeconomics",
+      "label": "Cryptoeconomics"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.72,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:token-supply",
+        "label": "Token Supply"
+      },
+      {
+        "id": "urn:ngm:class:token-distribution",
+        "label": "Token Distribution"
+      },
+      {
+        "id": "urn:ngm:class:staking",
+        "label": "Staking"
+      },
+      {
+        "id": "urn:ngm:class:token-burn",
+        "label": "Token Burn"
+      },
+      {
+        "id": "urn:ngm:class:vesting-schedule",
+        "label": "Vesting Schedule"
+      },
+      {
+        "id": "urn:ngm:class:bonding-curve",
+        "label": "Bonding Curve"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:blockchain",
@@ -25,23 +50,74 @@
       {
         "id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:digital-token",
+        "label": "Digital Token"
       }
     ],
     "enables": [
+      {
+        "id": "urn:ngm:class:dao",
+        "label": "DAO"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
       {
         "id": "urn:ngm:class:payment-system",
         "label": "Payment System"
       },
       {
-        "id": "urn:ngm:class:dao",
-        "label": "DAO"
+        "id": "urn:ngm:class:liquidity-pool",
+        "label": "Liquidity Pool"
+      },
+      {
+        "id": "urn:ngm:class:play-to-earn",
+        "label": "Play-to-Earn"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:fiat-currency",
+        "label": "Fiat Currency"
+      },
+      {
+        "id": "urn:ngm:class:centralised-finance",
+        "label": "Centralised Finance"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:incentive-alignment",
+        "label": "Incentive Alignment"
+      },
+      {
+        "id": "urn:ngm:class:digital-economy",
+        "label": "Digital Economy"
+      },
+      {
+        "id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:mechanism-design",
+        "label": "Mechanism Design"
+      },
+      {
+        "id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
@@ -49,6 +125,18 @@
       {
         "id": "urn:ngm:class:nft",
         "label": "NFT"
+      },
+      {
+        "id": "urn:ngm:class:monetary-policy",
+        "label": "Monetary Policy"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-exchange",
+        "label": "Decentralised Exchange"
+      },
+      {
+        "id": "urn:ngm:class:initial-coin-offering",
+        "label": "Initial Coin Offering"
       }
     ]
   },

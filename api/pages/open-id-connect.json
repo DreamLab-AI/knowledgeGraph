@@ -5,29 +5,89 @@
   "public": true,
   "classIri": "urn:ngm:class:open-id-connect",
   "domain": "infrastructure",
-  "definition": "OpenID Connect (OIDC) is a federated identity protocol standardised by the OpenID Foundation that adds an authentication layer on top of the OAuth 2.0 authorisation framework. Upon successful authentication, an OIDC-compliant identity provider issues a signed JSON Web Token (ID Token) containing identity claims\u2014such as subject identifier, email, and session expiry\u2014which the relying party verifies cryptographically without querying the provider again. OIDC defines standard flows (authorisation code, implicit, hybrid) and a UserInfo endpoint, enabling single sign-on across web and mobile applications and serving as the identity spine for enterprise federation, consumer logins, and decentralised identity wallets.",
+  "definition": "OpenID Connect (OIDC) is a federated identity and authentication protocol standardised by the OpenID Foundation that adds an authentication layer on top of the OAuth 2.0 authorisation framework. Upon successful authentication, an OIDC-compliant identity provider issues a signed JSON Web Token (ID Token) containing identity claims \u2014 such as subject identifier, email, and session expiry \u2014 which the relying party verifies cryptographically using the provider's published JSON Web Key Set without querying the provider again. OIDC defines standard flows (authorisation code, implicit, hybrid, and device code), a discovery endpoint, and a UserInfo endpoint, enabling single sign-on across web and mobile applications and serving as the identity spine for enterprise federation, consumer social logins, open banking APIs, and decentralised identity wallets.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:infra-security-and-identity",
-      "label": "Infra Security and Identity"
+      "id": "urn:ngm:class:identity-federation",
+      "label": "Identity Federation"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "id": "urn:ngm:class:api-security",
+        "label": "API Security"
+      }
+    ],
     "dependsOn": [
       {
         "id": "urn:ngm:class:oauth-2-0",
         "label": "OAuth 2.0"
+      },
+      {
+        "id": "urn:ngm:class:json-web-token",
+        "label": "JSON Web Token"
+      },
+      {
+        "id": "urn:ngm:class:json-web-key-set",
+        "label": "JSON Web Key Set"
+      },
+      {
+        "id": "urn:ngm:class:transport-layer-security",
+        "label": "Transport Layer Security"
       }
     ],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:identity-provider",
+        "label": "Identity Provider"
+      },
+      {
+        "id": "urn:ngm:class:relying-party",
+        "label": "Relying Party"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:saml",
+        "label": "SAML"
+      },
+      {
+        "id": "urn:ngm:class:kerberos",
+        "label": "Kerberos"
+      },
+      {
+        "id": "urn:ngm:class:ldap",
+        "label": "LDAP"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self-Sovereign Identity"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      },
+      {
+        "id": "urn:ngm:class:eu-digital-identity-wallet",
+        "label": "EU Digital Identity Wallet"
+      }
+    ],
     "uses": [],
     "supports": [
       {
@@ -35,14 +95,26 @@
         "label": "Authentication"
       },
       {
-        "id": "urn:ngm:class:identity-federation",
-        "label": "Identity Federation"
+        "id": "urn:ngm:class:single-sign-on",
+        "label": "Single Sign-On"
+      },
+      {
+        "id": "urn:ngm:class:multi-factor-authentication",
+        "label": "Multi-Factor Authentication"
+      },
+      {
+        "id": "urn:ngm:class:federated-identity",
+        "label": "Federated Identity"
       }
     ],
     "standardizedBy": [
       {
         "id": "urn:ngm:class:open-id-foundation",
         "label": "OpenID Foundation"
+      },
+      {
+        "id": "urn:ngm:class:internet-engineering-task-force",
+        "label": "Internet Engineering Task Force"
       }
     ],
     "partOf": [],
@@ -50,6 +122,18 @@
       {
         "id": "urn:ngm:class:digital-identity",
         "label": "Digital Identity"
+      },
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:financial-grade-api",
+        "label": "Financial Grade API"
       }
     ]
   },

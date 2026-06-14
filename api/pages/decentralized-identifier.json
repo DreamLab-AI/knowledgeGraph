@@ -4,8 +4,8 @@
   "slug": "decentralized-identifier",
   "public": true,
   "classIri": "urn:ngm:class:decentralized-identifier",
-  "domain": "identity",
-  "definition": "A decentralised identifier is a globally unique identifier that a subject can create and control without a central registry, defined by a W3C standard. It resolves to a document describing keys and service endpoints for verification.",
+  "domain": "security",
+  "definition": "A Decentralised Identifier (DID) is a globally unique, persistent, cryptographically verifiable identifier that a subject creates and controls without reliance on any centralised registry, authority, or intermediary. Defined by the W3C DID Core specification, a DID is a URI of the form did:method:identifier that resolves to a DID Document containing public keys, authentication mechanisms, and service endpoints. DIDs enable self-sovereign identity by decoupling identifier ownership from third-party identity providers, allowing verifiable credential exchange and privacy-preserving authentication across heterogeneous systems.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:digital-identity",
@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.74,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
@@ -21,23 +21,114 @@
       {
         "id": "urn:ngm:class:did-resolution",
         "label": "DID Resolution"
+      },
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public Key Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:did-document",
+        "label": "DID Document"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:identity-management",
         "label": "Identity Management"
+      },
+      {
+        "id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self-Sovereign Identity"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-credential",
+        "label": "Verifiable Credential"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-authentication",
+        "label": "Decentralized Authentication"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:w3c-did-core",
+        "label": "W3C DID Core"
+      },
+      {
+        "id": "urn:ngm:class:uri",
+        "label": "URI"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:centralized-identity-provider",
+        "label": "Centralized Identity Provider"
+      },
+      {
+        "id": "urn:ngm:class:oauth",
+        "label": "OAuth"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cryptographic-key-pair",
+        "label": "Cryptographic Key Pair"
+      },
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:did-method",
+        "label": "DID Method"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:privacy-preserving-authentication",
+        "label": "Privacy-Preserving Authentication"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:w3c",
+        "label": "W3C"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:verifiable-data-registry",
+        "label": "Verifiable Data Registry"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      }
+    ]
   },
   "wikilinks": [
     {

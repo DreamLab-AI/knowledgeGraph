@@ -63,7 +63,7 @@ public:: true
   "@type": "Class",
   "label": "Mistral",
   "definition": "Mistral is a family of language models from Mistral AI, several released as open weights. The line includes dense models and mixture-of-experts models for text generation and reasoning.",
-  "domain": "natural-language-processing",
+  "domain": "ai",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

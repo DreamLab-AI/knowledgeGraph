@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:series-elastic-actuation",
   "domain": "robotics",
-  "definition": "Series Elastic Actuation (SEA) is a robotic actuation paradigm in which a calibrated compliant element\u2014typically a torsional or linear spring\u2014is interposed between the gearbox output and the robot link. Deflection of the spring under load provides an indirect force measurement, enabling closed-loop torque control without strain-gauge complexity. The compliance also attenuates shock loads, reduces reflected inertia at the joint, and passively limits peak interaction forces, which is critical for safe operation in human-robot collaborative environments. SEA is widely employed in legged robots, prosthetic limbs, and rehabilitation exoskeletons where stable force regulation and back-driveability are essential.",
+  "definition": "Series Elastic Actuation (SEA) is a robotic actuation paradigm in which a calibrated compliant element \u2014 typically a torsional or linear spring \u2014 is interposed in series between a motor-gearbox drive train and the output link of a robot joint. The spring deflection under load provides an indirect torque measurement via Hooke's Law, enabling high-fidelity closed-loop torque control without the complexity of strain-gauge transducers. This intrinsic mechanical compliance attenuates shock loads, lowers the reflected inertia experienced during unintended contact, and passively limits peak interaction forces \u2014 properties that are essential for safe physical human\u2013robot interaction. SEA is a foundational technology in legged locomotion systems, rehabilitation exoskeletons, prosthetic limbs, and compliant collaborative robots, and stands as the seminal example of intentional mechanical compliance in actuation design.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-actuation-and-control",
@@ -13,11 +13,37 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:compliant-spring-element",
+        "label": "Compliant Spring Element"
+      },
+      {
+        "id": "urn:ngm:class:torque-sensor",
+        "label": "Torque Sensor"
+      },
+      {
+        "id": "urn:ngm:class:motor-gearbox",
+        "label": "Motor-Gearbox"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:spring-stiffness-selection",
+        "label": "Spring Stiffness Selection"
+      },
+      {
+        "id": "urn:ngm:class:position-encoder",
+        "label": "Position Encoder"
+      },
+      {
+        "id": "urn:ngm:class:torque-control-loop",
+        "label": "Torque Control Loop"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:force-control",
@@ -26,31 +52,117 @@
       {
         "id": "urn:ngm:class:impedance-control",
         "label": "Impedance Control"
+      },
+      {
+        "id": "urn:ngm:class:admittance-control",
+        "label": "Admittance Control"
+      },
+      {
+        "id": "urn:ngm:class:safe-physical-human-robot-interaction",
+        "label": "Safe Physical Human-Robot Interaction"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [
+    "dependsOn": [
       {
         "id": "urn:ngm:class:actuator",
         "label": "Actuator"
       },
       {
-        "id": "urn:ngm:class:robot-joint",
-        "label": "Robot Joint"
+        "id": "urn:ngm:class:pid-controller",
+        "label": "PID Controller"
+      },
+      {
+        "id": "urn:ngm:class:mechanical-compliance",
+        "label": "Mechanical Compliance"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:variable-stiffness-actuator",
+        "label": "Variable Stiffness Actuator"
+      },
+      {
+        "id": "urn:ngm:class:rigid-actuator",
+        "label": "Rigid Actuator"
+      },
+      {
+        "id": "urn:ngm:class:hydraulic-actuator",
+        "label": "Hydraulic Actuator"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:wearable-robotics",
+        "label": "Wearable Robotics"
+      },
+      {
+        "id": "urn:ngm:class:prosthetics",
+        "label": "Prosthetics"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:hookes-law",
+        "label": "Hooke's Law"
+      },
+      {
+        "id": "urn:ngm:class:deflection-measurement",
+        "label": "Deflection Measurement"
+      },
+      {
+        "id": "urn:ngm:class:rotary-encoder",
+        "label": "Rotary Encoder"
       }
     ],
     "supports": [
       {
         "id": "urn:ngm:class:robo-human-robot-interaction",
         "label": "Human-Robot Interaction"
+      },
+      {
+        "id": "urn:ngm:class:legged-locomotion",
+        "label": "Legged Locomotion"
+      },
+      {
+        "id": "urn:ngm:class:rehabilitation-robotics",
+        "label": "Rehabilitation Robotics"
       }
     ],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-ts-15066",
+        "label": "ISO TS 15066"
+      },
+      {
+        "id": "urn:ngm:class:iso-10218",
+        "label": "ISO 10218"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:robot-joint",
+        "label": "Robot Joint"
+      },
+      {
+        "id": "urn:ngm:class:compliant-robot",
+        "label": "Compliant Robot"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:backdrivability",
+        "label": "Backdrivability"
+      },
+      {
+        "id": "urn:ngm:class:torque-bandwidth-tradeoff",
+        "label": "Torque-Bandwidth Tradeoff"
+      },
+      {
+        "id": "urn:ngm:class:collaborative-robot",
+        "label": "Collaborative Robot"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

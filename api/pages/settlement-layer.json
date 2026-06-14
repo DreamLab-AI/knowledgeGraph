@@ -4,7 +4,7 @@
   "slug": "settlement-layer",
   "public": true,
   "classIri": "urn:ngm:class:settlement-layer",
-  "domain": "settlement",
+  "domain": "blockchain",
   "definition": "The Settlement Layer is the stratum that achieves final, irreversible transfer of value or state between parties. In layered ledger systems it sits beneath faster execution and netting strata and above the Consensus Layer that secures finality. It contains the records, accounts, and finality conditions under which obligations are discharged.",
   "subClassOf": [
     {

@@ -4,16 +4,16 @@
   "slug": "microsoft-copilot",
   "public": true,
   "classIri": "urn:ngm:class:microsoft-copilot",
-  "domain": "microsoft-copilot",
-  "definition": "Microsoft Copilot is a family of generative AI assistants developed by Microsoft and integrated across its products, including Windows, Microsoft 365 and the Edge browser. Launched from 2023 onwards, it builds on large language models from OpenAI together with Microsoft's own models and data grounding. In Microsoft 365 it can draft documents, summarise meetings, analyse spreadsheets and generate email based on a user's content and context. GitHub Copilot, a related product, provides code completion and chat assistance within software development environments.",
+  "domain": "ai",
+  "definition": "Microsoft Copilot is a family of AI-powered assistant products developed by Microsoft and embedded across its software ecosystem, including Windows, Microsoft 365, the Edge browser, GitHub, and Azure. The system builds on large language models from OpenAI (GPT-4 series) combined with Microsoft's own retrieval augmentation over Microsoft Graph, enabling context-aware responses grounded in a user's documents, emails, meetings, and calendar data. Enterprise deployments offer tenancy-scoped data access with existing permission boundaries, distinguishing Copilot from general-purpose chatbots. GitHub Copilot, a precursor product launched in 2021, provides AI-assisted code completion, chat, and pull-request summarisation inside developer environments.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:artificial-intelligence-domain",
-      "label": "Artificial Intelligence Domain"
+      "id": "urn:ngm:class:generative-ai",
+      "label": "Generative AI"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
@@ -21,18 +21,117 @@
       {
         "id": "urn:ngm:class:large-language-models",
         "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "id": "urn:ngm:class:microsoft-graph",
+        "label": "Microsoft Graph"
       }
     ],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:code-generation",
+        "label": "Code Generation"
+      },
+      {
+        "id": "urn:ngm:class:document-summarisation",
+        "label": "Document Summarisation"
+      },
+      {
+        "id": "urn:ngm:class:conversational-ai",
+        "label": "Conversational AI"
+      },
+      {
+        "id": "urn:ngm:class:automated-meeting-notes",
+        "label": "Automated Meeting Notes"
+      }
+    ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:chatgpt",
+        "label": "ChatGPT"
+      },
+      {
+        "id": "urn:ngm:class:google-gemini",
+        "label": "Google Gemini"
+      },
+      {
+        "id": "urn:ngm:class:amazon-q",
+        "label": "Amazon Q"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:microsoft-azure",
+        "label": "Microsoft Azure"
+      },
+      {
+        "id": "urn:ngm:class:role-based-access-control",
+        "label": "Role-Based Access Control"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:gpt-4",
+        "label": "GPT-4"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:microsoft-365",
+        "label": "Microsoft 365"
+      },
+      {
+        "id": "urn:ngm:class:azure-ai",
+        "label": "Azure AI"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:github-copilot",
+        "label": "GitHub Copilot"
+      },
+      {
+        "id": "urn:ngm:class:openai",
+        "label": "OpenAI"
+      },
+      {
+        "id": "urn:ngm:class:bing-chat",
+        "label": "Bing Chat"
+      },
+      {
+        "id": "urn:ngm:class:enterprise-ai",
+        "label": "Enterprise AI"
+      }
+    ]
   },
   "wikilinks": [
     {

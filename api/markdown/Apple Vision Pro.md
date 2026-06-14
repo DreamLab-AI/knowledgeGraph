@@ -21,7 +21,7 @@ public:: true
   "@type": "Class",
   "label": "Apple Vision Pro",
   "definition": "Apple Vision Pro is a spatial computing head-mounted display developed by Apple, announced in June 2023 and released in the United States in February 2024, running the visionOS operating system. It combines ultra-high-resolution micro-OLED displays, a custom R1 chip for sensor processing, and an M2 chip for compute, enabling a fully immersive or passthrough-composited mixed reality experience. The device employs eye-tracking, hand-tracking, and voice input as its primary interaction modalities, replacing the traditional touchscreen paradigm with gaze-and-pinch gesture control.",
-  "domain": "spatial",
+  "domain": "spatial-computing",
   "maturity": "emerging",
   "subClassOf": [{"@id": "urn:ngm:class:head-mounted-display", "label": "Head-Mounted Display"}],
   "relations": {

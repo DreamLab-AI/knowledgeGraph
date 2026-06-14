@@ -5,16 +5,16 @@
   "public": true,
   "classIri": "urn:ngm:class:quality-of-service",
   "domain": "infrastructure",
-  "definition": "A set of network management techniques and policies that prioritise, control, and guarantee specified performance characteristics\u2014including latency, jitter, bandwidth, and packet loss\u2014for different traffic classes. In metaverse and real-time XR applications, QoS mechanisms are critical for maintaining acceptable user experience under variable network load.",
+  "definition": "Quality of Service (QoS) is a set of network management techniques, policies, and protocols that prioritise, shape, and guarantee specified performance characteristics\u2014including latency, jitter, throughput, and packet loss\u2014for distinct traffic classes traversing shared network infrastructure. QoS mechanisms operate at multiple OSI layers, using traffic classification, queuing disciplines, scheduling algorithms, and admission control to meet differentiated service-level objectives. In real-time systems such as XR, telepresence, and cloud-native distributed applications, QoS is essential for maintaining acceptable user experience under variable load. Standardised frameworks including IntServ, DiffServ, and IEEE 802.1p provide interoperable models for end-to-end QoS across heterogeneous networks.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:infra-network-and-comms",
-      "label": "Network and Communication"
+      "id": "urn:ngm:class:network-infrastructure",
+      "label": "Network Infrastructure"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "emerging",
+  "qualityScore": 0.72,
+  "maturity": "mature",
   "relationships": {
     "hasPart": [],
     "requires": [
@@ -25,6 +25,10 @@
       {
         "id": "urn:ngm:class:network-protocol",
         "label": "Network Protocol"
+      },
+      {
+        "id": "urn:ngm:class:traffic-classification",
+        "label": "Traffic Classification"
       }
     ],
     "enables": [
@@ -35,15 +39,90 @@
       {
         "id": "urn:ngm:class:telecollaboration",
         "label": "Telecollaboration"
+      },
+      {
+        "id": "urn:ngm:class:low-latency-networking",
+        "label": "Low-Latency Networking"
+      },
+      {
+        "id": "urn:ngm:class:service-level-agreement",
+        "label": "Service Level Agreement"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:packet-switching",
+        "label": "Packet Switching"
+      },
+      {
+        "id": "urn:ngm:class:routing",
+        "label": "Routing"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:differentiated-services",
+        "label": "Differentiated Services"
+      },
+      {
+        "id": "urn:ngm:class:integrated-services",
+        "label": "Integrated Services"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:best-effort-delivery",
+        "label": "Best-Effort Delivery"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:traffic-shaping",
+        "label": "Traffic Shaping"
+      },
+      {
+        "id": "urn:ngm:class:queuing-discipline",
+        "label": "Queuing Discipline"
+      },
+      {
+        "id": "urn:ngm:class:admission-control",
+        "label": "Admission Control"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:voice-over-ip",
+        "label": "Voice over IP"
+      },
+      {
+        "id": "urn:ngm:class:video-streaming",
+        "label": "Video Streaming"
+      },
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      },
+      {
+        "id": "urn:ngm:class:ieee-802-1",
+        "label": "IEEE 802.1"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -53,6 +132,14 @@
       {
         "id": "urn:ngm:class:bandwidth-adaptation",
         "label": "Bandwidth Adaptation"
+      },
+      {
+        "id": "urn:ngm:class:network-congestion",
+        "label": "Network Congestion"
+      },
+      {
+        "id": "urn:ngm:class:jitter",
+        "label": "Jitter"
       }
     ]
   },

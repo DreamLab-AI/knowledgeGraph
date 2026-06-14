@@ -4,7 +4,7 @@
   "slug": "model-layer",
   "public": true,
   "classIri": "urn:ngm:class:model-layer",
-  "domain": "model",
+  "domain": "ai",
   "definition": "The Model Layer is the stratum that holds trained machine learning models as deployable artefacts with fixed parameters. In the canonical stack it sits above the Algorithm Layer and below the Inference Layer, packaging learned functions for use. It contains weight sets, model metadata, and the serialised representations that inference engines load.",
   "subClassOf": [
     {

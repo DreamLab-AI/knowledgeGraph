@@ -4,7 +4,7 @@
   "slug": "vercel",
   "public": true,
   "classIri": "urn:ngm:class:vercel",
-  "domain": "general",
+  "domain": "infrastructure",
   "definition": "Vercel is a company that provides a cloud platform for deploying and hosting web applications, with an emphasis on frontend frameworks.",
   "subClassOf": [
     {

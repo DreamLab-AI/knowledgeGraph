@@ -47,7 +47,7 @@ public:: true
   "@type": "Class",
   "label": "Functional Analysis",
   "definition": "Functional analysis is the branch of mathematics studying vector spaces with a notion of limit, such as Banach and Hilbert spaces, and the linear operators acting on them. It underlies much of modern analysis and its applications.",
-  "domain": "mathematics",
+  "domain": "machine-learning",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

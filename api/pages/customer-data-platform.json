@@ -4,8 +4,8 @@
   "slug": "customer-data-platform",
   "public": true,
   "classIri": "urn:ngm:class:customer-data-platform",
-  "domain": "general",
-  "definition": "A software system that consolidates customer data from multiple sources into a unified, persistent profile that other marketing and analytics systems can access.",
+  "domain": "data",
+  "definition": "A Customer Data Platform (CDP) is a packaged software system that ingests first-party customer data from disparate online and offline sources, resolves fragmented identifiers into persistent, unified customer profiles, and exposes those profiles via APIs to downstream marketing, analytics, and personalisation systems. Unlike data warehouses or CRM systems, a CDP is marketer-managed, real-time capable, and purpose-built for identity resolution and audience activation. CDPs enforce consent and privacy preferences at the profile level, making them a key architectural component for compliant, data-driven customer engagement.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:data-management",
@@ -13,31 +13,121 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.75,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:unified-customer-profile",
+        "label": "Unified Customer Profile"
+      },
+      {
+        "id": "urn:ngm:class:data-ingestion-pipeline",
+        "label": "Data Ingestion Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:audience-builder",
+        "label": "Audience Builder"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:data-integration",
         "label": "Data Integration"
+      },
+      {
+        "id": "urn:ngm:class:identity-resolution",
+        "label": "Identity Resolution"
+      },
+      {
+        "id": "urn:ngm:class:consent-management",
+        "label": "Consent Management"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
       }
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:data-management",
-        "label": "Data Management"
+        "id": "urn:ngm:class:audience-segmentation",
+        "label": "Audience Segmentation"
+      },
+      {
+        "id": "urn:ngm:class:personalisation",
+        "label": "Personalisation"
+      },
+      {
+        "id": "urn:ngm:class:customer-journey-analytics",
+        "label": "Customer Journey Analytics"
+      },
+      {
+        "id": "urn:ngm:class:real-time-marketing",
+        "label": "Real-Time Marketing"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:customer-relationship-management",
+        "label": "Customer Relationship Management"
+      },
+      {
+        "id": "urn:ngm:class:data-warehouse",
+        "label": "Data Warehouse"
+      },
+      {
+        "id": "urn:ngm:class:data-management-platform",
+        "label": "Data Management Platform"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:predictive-analytics",
+        "label": "Predictive Analytics"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:extract-transform-load",
+        "label": "Extract Transform Load"
+      },
+      {
+        "id": "urn:ngm:class:event-streaming",
+        "label": "Event Streaming"
+      },
+      {
+        "id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      }
+    ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:customer-data-platform-institute",
+        "label": "Customer Data Platform Institute"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      },
+      {
+        "id": "urn:ngm:class:general-data-protection-regulation",
+        "label": "General Data Protection Regulation"
+      },
+      {
+        "id": "urn:ngm:class:master-data-management",
+        "label": "Master Data Management"
+      }
+    ]
   },
   "wikilinks": [
     {

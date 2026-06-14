@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:instruction-following-conversational-ai-system",
   "domain": "ai",
-  "definition": "ChatGPT is a large language model-based conversational AI assistant developed by OpenAI, publicly released in November 2022 and built on successive GPT model families. It demonstrated that general-purpose instruction-following dialogue could be deployed at consumer scale, triggering rapid adoption across education, coding, and knowledge-work domains. Its interface popularised prompt-based interaction as the dominant paradigm for human\u2013AI collaboration.",
+  "definition": "An instruction-following conversational AI system is a natural language processing architecture trained to interpret, decompose, and execute open-ended user directives within a multi-turn dialogue context, producing contextually coherent and task-appropriate responses. Such systems combine large-scale pre-training on diverse corpora with alignment techniques \u2014 notably reinforcement learning from human feedback (RLHF) and instruction fine-tuning \u2014 to bridge the gap between raw language modelling capability and safe, helpful behaviour. They are distinguished from earlier rule-based chatbots by their generalisation across task types (summarisation, coding, question-answering, reasoning) without requiring task-specific engineering. Representative instances include OpenAI's ChatGPT, Google's Gemini, and Anthropic's Claude.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:conversational-ai",
@@ -13,11 +13,24 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:human-feedback",
+        "label": "Human Feedback"
+      },
+      {
+        "id": "urn:ngm:class:compute-infrastructure",
+        "label": "Compute Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:alignment-techniques",
+        "label": "Alignment Techniques"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:agentic-workflow",
@@ -26,51 +39,94 @@
       {
         "id": "urn:ngm:class:ai-agents",
         "label": "AI Agents"
-      }
-    ],
-    "dependsOn": [
-      {
-        "id": "urn:ngm:class:gpt",
-        "label": "GPT"
       },
       {
-        "id": "urn:ngm:class:openai-research-organisation-research-organisation",
-        "label": "OpenAI"
+        "id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      },
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
       }
     ],
-    "implements": [],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:natural-language-understanding",
+        "label": "Natural Language Understanding"
+      },
+      {
+        "id": "urn:ngm:class:dialogue-management",
+        "label": "Dialogue Management"
+      }
+    ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:gemini-multimodal-language-model",
-        "label": "Gemini"
+        "id": "urn:ngm:class:rule-based-chatbot",
+        "label": "Rule-Based Chatbot"
       },
       {
-        "id": "urn:ngm:class:constitutional-ai-training-methodology-language-model-family",
-        "label": "Anthropic Claude"
+        "id": "urn:ngm:class:retrieval-based-dialogue-system",
+        "label": "Retrieval-Based Dialogue System"
       }
     ],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act"
+      },
+      {
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human-Computer Interaction"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:transformer",
         "label": "Transformer"
       },
       {
-        "id": "urn:ngm:class:fine-tuning",
-        "label": "Fine Tuning"
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
+      },
+      {
+        "id": "urn:ngm:class:instruction-tuning",
+        "label": "Instruction Tuning"
       },
       {
         "id": "urn:ngm:class:pre-training",
         "label": "Pre Training"
+      },
+      {
+        "id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
       }
     ],
-    "supports": [],
-    "standardizedBy": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:code-generation",
+        "label": "Code Generation"
+      },
+      {
+        "id": "urn:ngm:class:document-summarisation",
+        "label": "Document Summarisation"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:openai-research-organisation-research-organisation",
+        "label": "OpenAI"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:gpt",
+        "label": "GPT"
       },
       {
         "id": "urn:ngm:class:gemini-multimodal-language-model",
@@ -79,6 +135,14 @@
       {
         "id": "urn:ngm:class:constitutional-ai-training-methodology-language-model-family",
         "label": "Anthropic Claude"
+      },
+      {
+        "id": "urn:ngm:class:hallucination-in-language-models",
+        "label": "Hallucination in Language Models"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
       }
     ]
   },

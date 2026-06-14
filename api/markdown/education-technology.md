@@ -1,22 +1,85 @@
 - ### Definition
-  - Education Technology (EdTech) is the application of digital tools, AI-driven systems, and immersive platforms to enhance teaching, personalise learning pathways, and streamline educational administration. Modern EdTech leverages adaptive learning algorithms that adjust content difficulty and pacing to individual learner performance, natural language processing for automated essay scoring and tutoring dialogue, and XR environments that create immersive simulations for fields such as medicine, engineering, and history. It spans formal K-12 and higher education, professional development, and informal self-directed learning.
+  - Education Technology (EdTech) is the systematic application of digital tools, [[Artificial Intelligence]], data analytics, and immersive platforms to enhance teaching efficacy, personalise learning pathways, and streamline educational administration. It draws on [[Learning Science]] and [[Cognitive Science]] to design interventions at scale, combining [[Adaptive Learning]] algorithms that adjust pacing and difficulty to individual performance with [[Natural Language Processing]] systems that conduct tutoring dialogue and score written responses. EdTech spans formal K-12 and higher education, vocational training, professional development, and informal self-directed learning, and increasingly intersects with [[Extended Reality]] for simulation-based instruction and with [[Learning Analytics]] for evidence-based course design.
 
-- ### Semantic Classification
-  - owl-class:: education-technology:Education Technology
-  - owl-role:: Concept
+- ### Overview
+  - EdTech emerged from early programmed instruction and computer-assisted learning in the 1960s and has evolved through successive waves: CD-ROM courseware, web-based distance education, mobile learning, MOOC platforms, and now AI-native tutoring agents and XR classrooms.
+  - Its core value proposition is the ability to provide scalable, personalised, and measurable learning experiences that are difficult to achieve in resource-constrained physical settings.
+  - The field is characterised by interdisciplinary tension between pedagogical theory (constructivism, behaviourism, connectivism) and engineering pragmatism, making rigorous evaluation of learning outcomes an ongoing challenge.
+  - Regulatory and ethical dimensions are prominent: because learners are often children or employees, data-collection practices are subject to FERPA (USA), GDPR (EU), and sector-specific frameworks, while algorithmic bias in automated grading and admissions tools receives growing scrutiny.
+  - Investment and adoption surged during the COVID-19 pandemic, accelerating institutional acceptance of remote and hybrid delivery models and establishing [[Learning Management System]] platforms as core enterprise infrastructure.
+
+- ### Key Components
+  - **[[Learning Management System]] (LMS)** — centralised platforms (Moodle, Canvas, Blackboard) that deliver content, host assessments, manage enrolment, and record grades; form the administrative backbone of most institutional EdTech deployments.
+  - **[[Intelligent Tutoring System]] (ITS)** — software that models the learner's knowledge state and provides adaptive hints and explanations without human intervention; classical examples include Carnegie Learning's MATHia and AutoTutor.
+  - **[[Adaptive Learning]]** — systems (e.g. Knewton, Smart Sparrow) that use [[Machine Learning]] to sequence learning objects and adjust difficulty in real time based on learner-response patterns.
+  - **[[Learning Analytics]]** — collection and analysis of learner-generated data (clickstreams, assessment scores, forum participation) to produce actionable insights for instructors, institutions, and learners themselves.
+  - **[[Automated Assessment]]** — [[Natural Language Processing]]-driven marking of essays, short answers, and spoken responses, reducing grader workload and providing immediate feedback at scale.
+  - **[[Immersive Learning]]** — use of [[Virtual Reality]] and [[Augmented Reality]] to create situated, embodied learning experiences: surgical simulations, virtual labs, historical reconstructions, and soft-skills role-play.
+  - **[[Gamification]]** — integration of game mechanics (points, badges, leaderboards, narrative arcs) to increase learner motivation and persistence.
+  - **[[Open Educational Resources]] (OER)** — freely licensed teaching materials (MIT OpenCourseWare, Khan Academy) that lower access barriers and enable remix and localisation.
+  - **[[Speech Recognition]] and NLP tools** — oral language practice, pronunciation feedback, and conversational tutoring agents powered by automatic speech recognition and dialogue management.
+  - **[[Recommendation Systems]]** — personalised content surfacing that draws on collaborative filtering and knowledge-graph traversal to suggest next-best learning resources.
+
+- ### Applications and Use Cases
+  - **K-12 personalised maths and reading** — adaptive platforms such as DreamBox and IXL adjust problem sets to each pupil's current level, surfacing gaps and providing targeted practice.
+  - **Higher education MOOCs** — Coursera, edX, and FutureLearn deliver university-level courses to millions of learners globally, pairing video lectures with automated peer-reviewed assessments.
+  - **Corporate learning and development** — LMS-based onboarding, compliance training, and upskilling programmes; AI coaching tools that simulate difficult conversations for sales or management training.
+  - **Medical and surgical simulation** — VR platforms (Osso VR, Fundamental Surgery) allow trainees to rehearse procedures with haptic feedback in zero-risk environments.
+  - **Language learning** — Duolingo, Babbel, and Rosetta Stone use spaced-repetition, gamification, and NLP-based pronunciation feedback to support vocabulary acquisition and conversational fluency.
+  - **Special educational needs** — text-to-speech, symbol-based communication boards, eye-tracking interfaces, and AI reading assistants that support learners with dyslexia, autism spectrum conditions, and physical disabilities.
+  - **Remote and hybrid schooling** — synchronous video platforms (Zoom, Microsoft Teams for Education) combined with asynchronous LMS delivery for blended or fully remote cohorts.
+  - **Credentialing and digital badges** — blockchain-anchored or platform-issued micro-credentials that attest to specific competencies and are shareable on professional networks.
+  - **Simulation-based [[STEM]] training** — virtual chemistry labs (Labster), physics simulators, and coding environments (Repl.it, GitHub Codespaces) that replace or augment physical lab access.
+  - **AI tutoring agents** — [[Large Language Model]]-powered systems (Khanmigo, GPT-based tutors) that engage in open-ended dialogue, answer subject-matter questions, and scaffold problem-solving.
 
 - ### Relationships
-  - uses [[Learning Management System]]
-  - uses [[Immersive Learning]]
-  - enables [[Augmented Reality]]
-  - enables [[Virtual Reality]]
-  - relatedTo [[Natural Language Processing]]
+  - hasPart:: [[Learning Management System]]
+  - hasPart:: [[Intelligent Tutoring System]]
+  - hasPart:: [[Adaptive Learning]]
+  - hasPart:: [[Learning Analytics]]
+  - hasPart:: [[Automated Assessment]]
+  - uses:: [[Natural Language Processing]]
+  - uses:: [[Machine Learning]]
+  - uses:: [[Immersive Learning]]
+  - uses:: [[Speech Recognition]]
+  - uses:: [[Recommendation Systems]]
+  - enables:: [[Personalised Learning]]
+  - enables:: [[Collaborative Learning]]
+  - enables:: [[Remote Education]]
+  - enables:: [[Competency-Based Education]]
+  - requires:: [[Data Privacy]]
+  - requires:: [[Digital Infrastructure]]
+  - requires:: [[Accessibility]]
+  - bridges-to:: [[Augmented Reality]]
+  - bridges-to:: [[Virtual Reality]]
+  - bridges-to:: [[Large Language Model]]
+  - bridges-to:: [[Digital Twin]]
+  - relatedTo:: [[Cognitive Science]]
+  - relatedTo:: [[Gamification]]
+  - relatedTo:: [[Open Educational Resources]]
+  - relatedTo:: [[Knowledge Graph]]
+  - standardizedBy:: [[SCORM]]
+  - standardizedBy:: [[xAPI]]
+  - contrastsWith:: [[Traditional Classroom Instruction]]
 
-- ### Content
-  - Education technology encompasses a broad spectrum of tools and paradigms. Learning management systems (LMS) such as Moodle and Canvas form the institutional backbone for content delivery, assessment, and grade management. Adaptive learning platforms layer intelligent algorithms above the LMS to analyse learner interaction patterns and dynamically adjust content sequencing, worked examples, and formative assessment frequency to close identified knowledge gaps.
-  - AI-powered tutoring systems use natural language processing to engage learners in Socratic dialogue, providing explanations, checking understanding, and offering targeted feedback without requiring a human teacher to be present. Automatic speech recognition enables oral language practice tools, while automated writing evaluation systems provide detailed feedback on grammar, coherence, and argumentation.
-  - Immersive EdTech applications exploit augmented and virtual reality to create situated learning experiences that are impractical or impossible in physical classrooms: virtual dissection of anatomical structures, interactive historical environments, and high-fidelity engineering simulations. These environments also support collaborative learning between geographically distributed learners. Data privacy considerations are particularly acute in EdTech because the primary users are often children, requiring FERPA (in the US) or equivalent compliance, and because learning analytics raise concerns about surveillance, profiling, and bias in automated assessment.
+- ### Standards and Governance
+  - **SCORM (Sharable Content Object Reference Model)** — the long-established ADL standard for packaging and sequencing e-learning content, ensuring interoperability between authoring tools and LMS platforms.
+  - **[[xAPI]] (Experience API / Tin Can)** — successor to SCORM that captures a far broader range of learning experiences (simulations, mobile apps, social learning) as activity streams in a Learning Record Store (LRS).
+  - **IMS Global / 1EdTech Consortium** — publishes LTI (Learning Tools Interoperability), Common Cartridge, and Caliper Analytics standards that govern how EdTech tools integrate with institutional LMS infrastructure.
+  - **[[IEEE Learning Technology Standards Committee]] (LTSC)** — produces foundational specifications including IEEE 1484.12.1 (LOM — Learning Object Metadata) for cataloguing educational resources.
+  - **FERPA (Family Educational Rights and Privacy Act)** — US federal law governing the privacy of student education records; imposes obligations on LMS vendors and third-party analytics providers operating in K-12 and higher education.
+  - **GDPR Article 8 and UK GDPR** — require parental consent for data processing of children under 16 (or 13 in the UK), directly constraining data-collection practices in consumer EdTech products.
+  - **WCAG 2.1 / EN 301 549** — accessibility standards that EdTech platforms must meet to serve learners with disabilities and to comply with procurement requirements in many jurisdictions.
+  - **QM (Quality Matters)** — a rubric-based peer-review programme for online course design quality widely adopted in US higher education.
+
+- ### Ethical and Social Dimensions
+  - **Algorithmic bias** — automated essay scoring and predictive analytics systems trained on historical data may disadvantage learners from under-represented groups or penalise non-standard dialects.
+  - **Surveillance and learner profiling** — granular clickstream data and proctoring technologies raise concerns about chilling effects on learner behaviour and normalisation of surveillance in educational contexts.
+  - **Digital divide** — unequal access to devices, broadband connectivity, and support infrastructure means that EdTech benefits are unevenly distributed, potentially exacerbating existing educational inequalities.
+  - **Teacher displacement** — automation of routine instructional and assessment tasks shifts teacher roles toward facilitation and mentoring, requiring professional development and institutional re-design.
+  - **Content accuracy and hallucination** — [[Large Language Model]]-powered tutors may generate plausible but incorrect explanations, requiring robust human oversight and content verification mechanisms.
+  - **Vendor lock-in** — proprietary LMS and adaptive-platform ecosystems create switching costs and data-portability challenges for institutions, motivating adoption of open standards and [[Open Educational Resources]].
 
 - ### Provenance
-  - sources::
-  - migration-date:: 2026-05-19T00:00:00Z
+  - sources:: IEEE LTSC; IMS Global / 1EdTech; ADL SCORM documentation; xAPI specification; established EdTech literature (Bloom's 2 Sigma, Vygotsky ZPD, Siemens connectivism)
+  - updated:: 2026-06-13

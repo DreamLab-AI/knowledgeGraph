@@ -5,12 +5,8 @@
   "public": true,
   "classIri": "urn:ngm:class:video-streaming",
   "domain": "infrastructure",
-  "definition": "Video Streaming is the continuous, real-time transmission of encoded video data over a network to a client that decodes and renders the content progressively, without requiring the full file to be downloaded first. In metaverse and virtual production contexts it encompasses live streaming, adaptive bitrate (ABR) delivery, 360-degree video, and volumetric video streaming, each with distinct latency, bandwidth, and codec requirements.",
+  "definition": "Video Streaming is the continuous, real-time transmission of encoded video data over a network to a client device that decodes and renders the content progressively, without requiring the complete file to be downloaded before playback begins. It relies on transport protocols such as RTMP, HLS, DASH, and WebRTC, combined with adaptive bitrate (ABR) algorithms that dynamically adjust resolution and compression to match available network conditions. Modern deployments encompass live streaming, video-on-demand (VoD), 360-degree video, volumetric video, and cloud-rendered remote-display streaming, each with distinct latency, bandwidth, and codec trade-offs. Content delivery networks (CDNs), edge computing nodes, and specialised video codecs such as H.264, H.265/HEVC, AV1, and VP9 are the principal technical pillars enabling scalable, low-latency distribution at global scale.",
   "subClassOf": [
-    {
-      "id": "urn:ngm:class:infra-network-and-comms",
-      "label": "Network and Communication"
-    },
     {
       "id": "urn:ngm:class:network-infrastructure",
       "label": "Network Infrastructure"
@@ -18,9 +14,26 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "emerging",
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:adaptive-bitrate-streaming",
+        "label": "Adaptive Bitrate Streaming"
+      },
+      {
+        "id": "urn:ngm:class:live-streaming",
+        "label": "Live Streaming"
+      },
+      {
+        "id": "urn:ngm:class:video-on-demand",
+        "label": "Video On Demand"
+      },
+      {
+        "id": "urn:ngm:class:volumetric-video",
+        "label": "Volumetric Video"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:network-infrastructure",
@@ -29,6 +42,14 @@
       {
         "id": "urn:ngm:class:edge-computing",
         "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
+      },
+      {
+        "id": "urn:ngm:class:video-codec",
+        "label": "Video Codec"
       }
     ],
     "enables": [
@@ -39,25 +60,102 @@
       {
         "id": "urn:ngm:class:metaverse-platform",
         "label": "Metaverse Platform"
+      },
+      {
+        "id": "urn:ngm:class:remote-rendering",
+        "label": "Remote Rendering"
+      },
+      {
+        "id": "urn:ngm:class:cloud-gaming",
+        "label": "Cloud Gaming"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:bandwidth-management",
+        "label": "Bandwidth Management"
+      },
+      {
+        "id": "urn:ngm:class:latency-optimisation",
+        "label": "Latency Optimisation"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:file-download",
+        "label": "File Download"
+      },
+      {
+        "id": "urn:ngm:class:broadcast-television",
+        "label": "Broadcast Television"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-inference",
+        "label": "Machine Learning Inference"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:real-time-rendering",
         "label": "Real-Time Rendering"
+      },
+      {
+        "id": "urn:ngm:class:webrtc",
+        "label": "WebRTC"
+      },
+      {
+        "id": "urn:ngm:class:http-live-streaming",
+        "label": "HTTP Live Streaming"
+      },
+      {
+        "id": "urn:ngm:class:data-compression",
+        "label": "Data Compression"
       }
     ],
-    "supports": [],
-    "standardizedBy": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:360-degree-video",
+        "label": "360-Degree Video"
+      },
+      {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "id": "urn:ngm:class:social-vr",
+        "label": "Social VR"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:mpeg-dash",
+        "label": "MPEG-DASH"
+      },
+      {
+        "id": "urn:ngm:class:webrtc",
+        "label": "WebRTC"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
         "id": "urn:ngm:class:bandwidth-adaptation",
         "label": "Bandwidth Adaptation"
+      },
+      {
+        "id": "urn:ngm:class:quality-of-service",
+        "label": "Quality of Service"
+      },
+      {
+        "id": "urn:ngm:class:digital-rights-management",
+        "label": "Digital Rights Management"
       }
     ]
   },

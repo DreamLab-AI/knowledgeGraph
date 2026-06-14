@@ -4,17 +4,17 @@
   "slug": "gdpr-compliance",
   "public": true,
   "classIri": "urn:ngm:class:gdpr-compliance",
-  "domain": "infrastructure",
-  "definition": "GDPR Compliance refers to the totality of organisational, technical, and procedural measures an entity must implement to satisfy obligations under the EU General Data Protection Regulation (Regulation 2016/679), including lawful bases for processing, data subject rights fulfilment, data-breach notification, and appointment of a Data Protection Officer where required. The regulation applies extraterritorially to any organisation processing personal data of EU data subjects, regardless of where processing occurs. Compliance programmes span privacy-by-design principles, data minimisation, consent management, audit trails, and demonstrable accountability to supervisory authorities.",
+  "domain": "governance",
+  "definition": "GDPR Compliance is the totality of organisational, technical, and procedural measures an entity must implement to satisfy obligations under the EU General Data Protection Regulation (Regulation 2016/679), including identifying a lawful basis for each processing activity, fulfilling data subject rights, performing Data Protection Impact Assessments for high-risk processing, notifying supervisory authorities of breaches within 72 hours, and appointing a Data Protection Officer where required. The regulation applies extraterritorially to any organisation processing personal data of EU data subjects regardless of where processing occurs. Compliance programmes encompass privacy-by-design architecture, data minimisation, consent lifecycle management, Records of Processing Activities, demonstrable accountability mechanisms, and contractual safeguards for cross-border data transfers.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:infra-legal-and-regulatory",
-      "label": "Infra Legal and Regulatory"
+      "id": "urn:ngm:class:data-governance",
+      "label": "Data Governance"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.72,
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [
@@ -29,29 +29,111 @@
       {
         "id": "urn:ngm:class:privacy-by-design",
         "label": "Privacy By Design"
-      }
-    ],
-    "enables": [],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
+      },
       {
         "id": "urn:ngm:class:data-minimisation",
         "label": "Data Minimisation"
       },
       {
+        "id": "urn:ngm:class:data-protection-impact-assessment",
+        "label": "Data Protection Impact Assessment"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:data-subject-rights",
+        "label": "Data Subject Rights"
+      },
+      {
+        "id": "urn:ngm:class:cross-border-data-transfer",
+        "label": "Cross-Border Data Transfer"
+      },
+      {
+        "id": "urn:ngm:class:accountability-framework",
+        "label": "Accountability Framework"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:supervisory-authority",
+        "label": "Supervisory Authority"
+      },
+      {
+        "id": "urn:ngm:class:record-of-processing-activities",
+        "label": "Record of Processing Activities"
+      },
+      {
+        "id": "urn:ngm:class:data-protection-officer",
+        "label": "Data Protection Officer"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:privacy-law",
+        "label": "Privacy Law"
+      },
+      {
+        "id": "urn:ngm:class:data-protection-regulation",
+        "label": "Data Protection Regulation"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:ccpa-compliance",
+        "label": "CCPA Compliance"
+      },
+      {
+        "id": "urn:ngm:class:hipaa-compliance",
+        "label": "HIPAA Compliance"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-act-compliance",
+        "label": "AI Act Compliance"
+      },
+      {
+        "id": "urn:ngm:class:privacy-enhancing-technology",
+        "label": "Privacy Enhancing Technology"
+      }
+    ],
+    "uses": [],
+    "supports": [
+      {
         "id": "urn:ngm:class:data-governance",
         "label": "Data Governance"
       },
       {
+        "id": "urn:ngm:class:information-security",
+        "label": "Information Security"
+      },
+      {
+        "id": "urn:ngm:class:trust-and-safety",
+        "label": "Trust and Safety"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
         "id": "urn:ngm:class:ai-governance",
         "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:differential-privacy",
+        "label": "Differential Privacy"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:data-breach-notification",
+        "label": "Data Breach Notification"
+      },
+      {
+        "id": "urn:ngm:class:legitimate-interests",
+        "label": "Legitimate Interests"
       }
     ]
   },

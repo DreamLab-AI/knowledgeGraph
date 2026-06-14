@@ -55,7 +55,7 @@ public:: true
   "@type": "Class",
   "label": "Bayesian Deep Learning",
   "definition": "Bayesian deep learning combines neural networks with Bayesian inference to represent uncertainty over model parameters and predictions. It treats network weights as random variables with distributions rather than fixed values.",
-  "domain": "deep-learning",
+  "domain": "machine-learning",
   "maturity": "emerging",
   "qualityScore": 0.7,
   "subClassOf": [

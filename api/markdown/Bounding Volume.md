@@ -21,7 +21,7 @@ public:: true
   "@type": "Class",
   "label": "Bounding Volume",
   "definition": "A Bounding Volume is a simple geometric shape—typically a sphere, axis-aligned bounding box (AABB), oriented bounding box (OBB), or convex hull—that encloses a more complex geometric object or set of objects. By testing intersections or containment against the bounding volume rather than the full geometry, real-time rendering engines, physics simulators, and spatial query systems achieve orders-of-magnitude speedups during broad-phase culling and collision detection.",
-  "domain": "spatial",
+  "domain": "spatial-computing",
   "maturity": "mature",
   "subClassOf": [
     {"@id": "urn:ngm:class:spatial-data-structure", "label": "Spatial Data Structure"}

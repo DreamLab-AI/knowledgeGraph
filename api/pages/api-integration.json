@@ -5,19 +5,49 @@
   "public": true,
   "classIri": "urn:ngm:class:api-integration",
   "domain": "infrastructure",
-  "definition": "API Integration is the practice of connecting disparate software systems, services, and data sources through Application Programming Interfaces to enable seamless interoperability and automated data exchange. It encompasses the design, implementation, and maintenance of integration layers that allow applications to communicate via standardised contracts, abstracting the complexity of underlying system differences. Effective API integration reduces manual data transfer, accelerates workflows, and forms the backbone of modern microservices and cloud-native architectures. Integration patterns include synchronous REST and GraphQL calls, asynchronous event-driven messaging, and webhook-based push notifications.",
+  "definition": "API Integration is the discipline of connecting disparate software systems, services, and data sources through Application Programming Interfaces to achieve seamless interoperability and automated data exchange. It encompasses the design, implementation, orchestration, and maintenance of integration layers \u2014 including synchronous REST and GraphQL calls, asynchronous message queues, webhook-based push notifications, and event-driven streams \u2014 that allow applications to communicate via standardised contracts while abstracting the complexity of underlying system differences. Effective API integration reduces manual data transfer, accelerates business workflows, and forms the structural backbone of modern microservices, cloud-native, and composable enterprise architectures. Integration governance concerns \u2014 versioning, rate limiting, authentication, observability, and schema evolution \u2014 are integral to sustaining reliable integrations at scale.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:infra-software-engineering",
+      "id": "urn:ngm:class:software-engineering",
       "label": "Software Engineering"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.73,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      },
+      {
+        "id": "urn:ngm:class:webhook",
+        "label": "Webhook"
+      },
+      {
+        "id": "urn:ngm:class:api-versioning",
+        "label": "API Versioning"
+      },
+      {
+        "id": "urn:ngm:class:rate-limiting",
+        "label": "Rate Limiting"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:authentication-service",
+        "label": "Authentication Service"
+      },
+      {
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      },
+      {
+        "id": "urn:ngm:class:data-serialisation",
+        "label": "Data Serialisation"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:microservices-architecture",
@@ -30,41 +60,76 @@
       {
         "id": "urn:ngm:class:data-pipeline",
         "label": "Data Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:composable-architecture",
+        "label": "Composable Architecture"
+      },
+      {
+        "id": "urn:ngm:class:digital-transformation",
+        "label": "Digital Transformation"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:point-to-point-integration",
+        "label": "Point-to-Point Integration"
+      },
+      {
+        "id": "urn:ngm:class:enterprise-service-bus",
+        "label": "Enterprise Service Bus"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-agent",
+        "label": "AI Agent"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-oracle",
+        "label": "Blockchain Oracle"
+      }
+    ],
     "uses": [
-      {
-        "id": "urn:ngm:class:api-gateway",
-        "label": "API Gateway"
-      },
-      {
-        "id": "urn:ngm:class:api-standard",
-        "label": "API Standard"
-      },
       {
         "id": "urn:ngm:class:middleware",
         "label": "Middleware"
       },
       {
-        "id": "urn:ngm:class:authentication-service",
-        "label": "Authentication Service"
+        "id": "urn:ngm:class:rest-api",
+        "label": "REST API"
+      },
+      {
+        "id": "urn:ngm:class:graphql",
+        "label": "GraphQL"
+      },
+      {
+        "id": "urn:ngm:class:message-queue",
+        "label": "Message Queue"
+      },
+      {
+        "id": "urn:ngm:class:oauth",
+        "label": "OAuth"
       }
     ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:openapi-specification",
+        "label": "OpenAPI Specification"
+      },
+      {
+        "id": "urn:ngm:class:asyncapi",
+        "label": "AsyncAPI"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
         "id": "urn:ngm:class:data-integration",
         "label": "Data Integration"
-      },
-      {
-        "id": "urn:ngm:class:web-socket-protocol",
-        "label": "WebSocket Protocol"
       },
       {
         "id": "urn:ngm:class:distributed-system",
@@ -73,6 +138,14 @@
       {
         "id": "urn:ngm:class:cloud-computing",
         "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:service-mesh",
+        "label": "Service Mesh"
+      },
+      {
+        "id": "urn:ngm:class:integration-platform-as-a-service",
+        "label": "Integration Platform as a Service"
       }
     ]
   },

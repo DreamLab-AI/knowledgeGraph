@@ -59,7 +59,7 @@ public:: true
   "@type": "Class",
   "label": "Algorithmic Layer",
   "definition": "The Algorithmic Layer is the stratum that holds the step-by-step procedures a system uses to transform inputs into outputs. In the canonical stack it corresponds to the Algorithm Layer, sitting above the Compute Layer and below the Model strata that compose its primitives. It contains algorithms, data structures, and their complexity characteristics.",
-  "domain": "algorithmic",
+  "domain": "machine-learning",
   "maturity": "emerging",
   "qualityScore": 0.7,
   "subClassOf": [

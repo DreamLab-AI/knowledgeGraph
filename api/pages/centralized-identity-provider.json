@@ -4,7 +4,7 @@
   "slug": "centralized-identity-provider",
   "public": true,
   "classIri": "urn:ngm:class:centralized-identity-provider",
-  "domain": "identity",
+  "domain": "security",
   "definition": "An identity service in which a single organisation issues, stores and authenticates user credentials on behalf of relying parties. It contrasts with decentralised identity models where control rests with the user.",
   "subClassOf": [
     {

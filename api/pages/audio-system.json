@@ -5,16 +5,16 @@
   "public": true,
   "classIri": "urn:ngm:class:audio-system",
   "domain": "spatial-computing",
-  "definition": "An Audio System in spatial computing manages the capture, processing, and playback of sound within immersive environments, encompassing spatial audio rendering, voice communication, and environmental sound simulation. It coordinates audio hardware and software to deliver positional audio that reinforces presence and enables natural verbal interaction in virtual and mixed-reality contexts.",
+  "definition": "An Audio System is an integrated hardware and software architecture responsible for the capture, processing, transmission, and reproduction of sound signals within computing environments, including spatial audio rendering, acoustic signal processing, voice input/output, and environmental sound simulation. In spatial computing and extended reality contexts it delivers positional audio cues that reinforce presence and depth perception, coordinating microphone arrays, digital signal processors, codecs, and loudspeaker or headphone transducers. Audio systems implement psychoacoustic models \u2014 including head-related transfer functions (HRTFs) and room acoustics simulation \u2014 to produce convincing three-dimensional soundscapes. They underpin voice communication, speech interaction, accessibility features, and immersive media across consumer electronics, professional audio, telecommunication, and mixed-reality platforms.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:sc-display-and-rendering",
-      "label": "Display and Rendering"
+      "id": "urn:ngm:class:signal-processing",
+      "label": "Signal Processing"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "mature",
   "relationships": {
     "hasPart": [
       {
@@ -24,9 +24,34 @@
       {
         "id": "urn:ngm:class:audio-spatialization",
         "label": "Audio Spatialization"
+      },
+      {
+        "id": "urn:ngm:class:digital-signal-processor",
+        "label": "Digital Signal Processor"
+      },
+      {
+        "id": "urn:ngm:class:audio-codec",
+        "label": "Audio Codec"
+      },
+      {
+        "id": "urn:ngm:class:microphone-array",
+        "label": "Microphone Array"
       }
     ],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:digital-signal-processing",
+        "label": "Digital Signal Processing"
+      },
+      {
+        "id": "urn:ngm:class:acoustic-model",
+        "label": "Acoustic Model"
+      },
+      {
+        "id": "urn:ngm:class:audio-driver",
+        "label": "Audio Driver"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:speech-recognition",
@@ -35,20 +60,98 @@
       {
         "id": "urn:ngm:class:telecollaboration",
         "label": "Telecollaboration"
+      },
+      {
+        "id": "urn:ngm:class:voice-user-interface",
+        "label": "Voice User Interface"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:real-time-computing",
+        "label": "Real-Time Computing"
+      },
+      {
+        "id": "urn:ngm:class:operating-system",
+        "label": "Operating System"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:visual-rendering-system",
+        "label": "Visual Rendering System"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:head-related-transfer-function",
+        "label": "Head-Related Transfer Function"
+      },
+      {
+        "id": "urn:ngm:class:pulse-code-modulation",
+        "label": "Pulse-Code Modulation"
+      },
+      {
+        "id": "urn:ngm:class:audio-compression",
+        "label": "Audio Compression"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "id": "urn:ngm:class:mixed-reality",
+        "label": "Mixed Reality"
+      },
+      {
+        "id": "urn:ngm:class:telepresence",
+        "label": "Telepresence"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:web-audio-api",
+        "label": "Web Audio API"
+      },
+      {
+        "id": "urn:ngm:class:openal",
+        "label": "OpenAL"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
         "id": "urn:ngm:class:audio-processing-system",
         "label": "Audio Processing System"
+      },
+      {
+        "id": "urn:ngm:class:ambisonics",
+        "label": "Ambisonics"
+      },
+      {
+        "id": "urn:ngm:class:binaural-audio",
+        "label": "Binaural Audio"
       }
     ]
   },

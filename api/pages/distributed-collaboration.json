@@ -5,16 +5,16 @@
   "public": true,
   "classIri": "urn:ngm:class:distributed-collaboration",
   "domain": "distributed-collaboration",
-  "definition": "Distributed Collaboration is the set of technologies, protocols, and practices that enable geographically dispersed individuals or teams to work together on shared tasks in real time or asynchronously. It encompasses communication protocols, version control systems, shared workspaces, and presence mechanisms, and serves as the umbrella concept for synchronous, asynchronous, and spatial collaboration modalities in the ontology.",
+  "definition": "Distributed Collaboration is the set of technologies, protocols, and organisational practices that enable geographically or temporally dispersed individuals and teams to work together on shared tasks, artefacts, and decisions. It encompasses both synchronous modalities\u2014real-time video conferencing, shared virtual workspaces, co-presence mechanisms\u2014and asynchronous modalities such as version-controlled repositories, threaded discussion, and document co-authoring. The field draws on distributed systems theory, human-computer interaction, and organisational science to address challenges of latency, consistency, access control, and remote team coordination. In emerging spatial and AI-augmented contexts, distributed collaboration extends to avatar-based co-presence, AI-assisted meeting facilitation, and decentralised consensus workflows.",
   "subClassOf": [
     {
-      "id": "owl:Thing",
-      "label": "Thing"
+      "id": "urn:ngm:class:distributed-systems",
+      "label": "Distributed Systems"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.3,
-  "maturity": "emerging",
+  "qualityScore": 0.72,
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
@@ -24,33 +24,131 @@
       {
         "id": "urn:ngm:class:asynchronous-collaboration",
         "label": "Asynchronous Collaboration"
-      }
-    ],
-    "requires": [],
-    "enables": [
+      },
       {
-        "id": "urn:ngm:class:telecollaboration",
-        "label": "Telecollaboration"
+        "id": "urn:ngm:class:shared-workspace",
+        "label": "Shared Workspace"
+      },
+      {
+        "id": "urn:ngm:class:presence-mechanism",
+        "label": "Presence Mechanism"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [
+    "requires": [
       {
         "id": "urn:ngm:class:communication-protocol",
         "label": "Communication Protocol"
       },
       {
-        "id": "urn:ngm:class:version-control",
-        "label": "Version Control"
+        "id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:identity-and-access-management",
+        "label": "Identity and Access Management"
       }
     ],
-    "supports": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      },
+      {
+        "id": "urn:ngm:class:remote-work",
+        "label": "Remote Work"
+      },
+      {
+        "id": "urn:ngm:class:open-source-development",
+        "label": "Open Source Development"
+      },
+      {
+        "id": "urn:ngm:class:virtual-team",
+        "label": "Virtual Team"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:consensus-algorithm",
+        "label": "Consensus Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:latency-management",
+        "label": "Latency Management"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:co-located-collaboration",
+        "label": "Co-Located Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:centralised-workflow",
+        "label": "Centralised Workflow"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:ai-assisted-collaboration",
+        "label": "AI-Assisted Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      },
+      {
+        "id": "urn:ngm:class:conflict-free-replicated-data-type",
+        "label": "Conflict-Free Replicated Data Type"
+      },
+      {
+        "id": "urn:ngm:class:operational-transformation",
+        "label": "Operational Transformation"
+      },
+      {
+        "id": "urn:ngm:class:real-time-messaging",
+        "label": "Real-Time Messaging"
+      },
+      {
+        "id": "urn:ngm:class:end-to-end-encryption",
+        "label": "End-to-End Encryption"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      },
+      {
+        "id": "urn:ngm:class:project-management",
+        "label": "Project Management"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:computer-supported-cooperative-work",
+        "label": "Computer-Supported Cooperative Work"
+      },
+      {
+        "id": "urn:ngm:class:groupware",
+        "label": "Groupware"
+      },
+      {
+        "id": "urn:ngm:class:social-software",
+        "label": "Social Software"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

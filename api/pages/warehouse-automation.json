@@ -5,22 +5,55 @@
   "public": true,
   "classIri": "urn:ngm:class:warehouse-automation",
   "domain": "robotics",
-  "definition": "Warehouse automation is the deployment of robotic systems, autonomous mobile robots (AMRs), automated storage and retrieval systems (AS/RS), and AI-driven software orchestration to perform goods induction, storage, picking, sorting, packing, and despatch with minimal direct human intervention. It integrates perception systems for item identification and navigation, motion planning for collision-free path execution, and warehouse management system (WMS) integration for order orchestration. Modern warehouse automation architectures layer machine learning for demand forecasting and adaptive task scheduling on top of physical robotic fleets.",
+  "definition": "Warehouse automation is the systematic deployment of robotic systems, autonomous mobile robots (AMRs), automated storage and retrieval systems (AS/RS), conveyor networks, and AI-driven software orchestration to execute goods induction, storage, picking, sorting, packing, and despatch with minimal direct human intervention. It integrates perception subsystems for item identification and collision-free navigation, motion-planning algorithms for physical task execution, and warehouse management system (WMS) integration for real-time order orchestration. Modern architectures layer machine learning for demand forecasting, adaptive task scheduling, and anomaly detection on top of heterogeneous robotic fleets, forming closed-loop feedback systems between physical material flow and digital supply-chain signals.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:robo-robot-type",
-      "label": "Robot Type"
+      "id": "urn:ngm:class:industrial-automation",
+      "label": "Industrial Automation"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.76,
+  "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:autonomous-mobile-robot",
+        "label": "Autonomous Mobile Robot"
+      },
+      {
+        "id": "urn:ngm:class:automated-storage-and-retrieval-system",
+        "label": "Automated Storage and Retrieval System"
+      },
+      {
+        "id": "urn:ngm:class:warehouse-management-system",
+        "label": "Warehouse Management System"
+      },
+      {
+        "id": "urn:ngm:class:robotic-picking",
+        "label": "Robotic Picking"
+      },
+      {
+        "id": "urn:ngm:class:conveyor-system",
+        "label": "Conveyor System"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:sensor-fusion",
         "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:simultaneous-localisation-and-mapping",
+        "label": "Simultaneous Localisation and Mapping"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:robot-fleet-management",
+        "label": "Robot Fleet Management"
       }
     ],
     "enables": [
@@ -29,14 +62,53 @@
         "label": "Logistics Optimization"
       },
       {
-        "id": "urn:ngm:class:supply-chain-management",
-        "label": "Supply Chain Management"
+        "id": "urn:ngm:class:order-fulfilment",
+        "label": "Order Fulfilment"
+      },
+      {
+        "id": "urn:ngm:class:inventory-management",
+        "label": "Inventory Management"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:enterprise-resource-planning",
+        "label": "Enterprise Resource Planning"
+      },
+      {
+        "id": "urn:ngm:class:iot-sensors",
+        "label": "IoT Sensors"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:manual-warehousing",
+        "label": "Manual Warehousing"
+      },
+      {
+        "id": "urn:ngm:class:human-robot-collaboration",
+        "label": "Human-Robot Collaboration"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:last-mile-delivery",
+        "label": "Last-Mile Delivery"
+      },
+      {
+        "id": "urn:ngm:class:smart-manufacturing",
+        "label": "Smart Manufacturing"
+      },
+      {
+        "id": "urn:ngm:class:demand-forecasting",
+        "label": "Demand Forecasting"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:mobile-robot",
@@ -45,12 +117,38 @@
       {
         "id": "urn:ngm:class:autonomous-navigation",
         "label": "Autonomous Navigation"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
       }
     ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:multi-agent-systems",
+        "label": "Multi-Agent Systems"
+      },
+      {
+        "id": "urn:ngm:class:grasp-planning",
+        "label": "Grasp Planning"
+      },
+      {
+        "id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

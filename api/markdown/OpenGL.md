@@ -59,7 +59,7 @@ public:: true
   "@type": "Class",
   "label": "OpenGL",
   "definition": "OpenGL is a cross-platform graphics API for rendering 2D and 3D vector graphics, providing a standardised interface to the rendering capabilities of graphics hardware.",
-  "domain": "general",
+  "domain": "spatial-computing",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

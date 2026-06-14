@@ -5,39 +5,121 @@
   "public": true,
   "classIri": "urn:ngm:class:operational-transformation",
   "domain": "distributed-systems",
-  "definition": "A concurrency control technique for collaborative editing that transforms concurrent operations against each other so that all replicas converge to the same consistent state.",
+  "definition": "Operational Transformation (OT) is a concurrency control technique for real-time collaborative editing systems that enables multiple users to concurrently modify a shared document by representing edits as discrete operations and automatically transforming each incoming operation against previously applied operations to preserve user intent. The core insight is that when two concurrent operations are applied in different orders across distributed replicas, at least one must be adjusted \u2014 transformed \u2014 so that the final document state converges to a consistent result. OT requires a pair of transformation functions (IT and ET for inclusion and exclusion transformation) and must satisfy formal consistency properties (TP1 and TP2) to guarantee convergence under all interleavings. It underpins real-time collaborative editors including Google Docs, Apache Wave, and Etherpad, and remains a foundational technique in distributed collaboration research despite the later emergence of CRDTs.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:distributed-systems",
-      "label": "Distributed Systems"
+      "id": "urn:ngm:class:concurrency-control",
+      "label": "Concurrency Control"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.74,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:distributed-systems",
-        "label": "Distributed Systems"
+        "id": "urn:ngm:class:concurrency-control",
+        "label": "Concurrency Control"
+      },
+      {
+        "id": "urn:ngm:class:state-synchronisation",
+        "label": "State Synchronisation"
+      },
+      {
+        "id": "urn:ngm:class:causality-tracking",
+        "label": "Causality Tracking"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:collaboration-tools",
         "label": "Collaboration Tools"
+      },
+      {
+        "id": "urn:ngm:class:collaborative-editing",
+        "label": "Collaborative Editing"
+      },
+      {
+        "id": "urn:ngm:class:eventual-consistency",
+        "label": "Eventual Consistency"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:optimistic-replication",
+        "label": "Optimistic Replication"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:crdt",
+        "label": "CRDT"
+      },
+      {
+        "id": "urn:ngm:class:pessimistic-locking",
+        "label": "Pessimistic Locking"
+      },
+      {
+        "id": "urn:ngm:class:differential-synchronisation",
+        "label": "Differential Synchronisation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:multi-user-virtual-environment",
+        "label": "Multi-User Virtual Environment"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:vector-clock",
+        "label": "Vector Clock"
+      },
+      {
+        "id": "urn:ngm:class:operation-log",
+        "label": "Operation Log"
+      },
+      {
+        "id": "urn:ngm:class:transformation-function",
+        "label": "Transformation Function"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "id": "urn:ngm:class:real-time-collaboration",
+        "label": "Real-Time Collaboration"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:conflict-resolution",
+        "label": "Conflict Resolution"
+      },
+      {
+        "id": "urn:ngm:class:distributed-consistency",
+        "label": "Distributed Consistency"
+      },
+      {
+        "id": "urn:ngm:class:consensus-protocol",
+        "label": "Consensus Protocol"
+      },
+      {
+        "id": "urn:ngm:class:merge-algorithm",
+        "label": "Merge Algorithm"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -87,7 +87,7 @@ public:: true
   "@type": "Class",
   "label": "Embedded Systems Domain",
   "definition": "The Embedded Systems Domain covers computing systems built into devices to perform dedicated functions under constraints on power, memory and timing. Its scope includes microcontrollers, real-time operating systems, firmware and hardware-software co-design. It is a sub-area of the Robotics Domain that provides the computational substrate for physical machines. The boundary excludes general-purpose server and cloud computing, which belongs to the Infrastructure Domain.",
-  "domain": "embedded-systems",
+  "domain": "robotics",
   "maturity": "emerging",
   "qualityScore": 0.7,
   "subClassOf": [

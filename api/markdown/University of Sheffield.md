@@ -47,7 +47,7 @@ public:: true
   "@type": "Class",
   "label": "University of Sheffield",
   "definition": "A public research university in Sheffield, England, and a member of the Russell Group of research-intensive universities. It is known for engineering, materials science, and natural language processing research.",
-  "domain": "education",
+  "domain": "infrastructure",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

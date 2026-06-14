@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:quorum",
   "domain": "blockchain",
-  "definition": "Quorum refers to the minimum number or proportion of participants\u2014nodes, voters, or validators\u2014that must agree or be present for a decision, transaction, or consensus round to be considered valid in a distributed system or governance process. In blockchain contexts, quorum thresholds determine the minimum fraction of stake, tokens, or nodes required to reach consensus or pass a governance proposal. In distributed database and consensus algorithm contexts, quorum overlap guarantees are what ensure linearisability in systems like Paxos and Raft. In DAO governance, quorum requirements prevent low-participation attacks where a small minority can pass proposals without broader community engagement. Setting appropriate quorum thresholds balances liveness (ability to make decisions) against safety (resistance to minority capture).",
+  "definition": "A quorum is the minimum number or proportion of participants\u2014nodes, validators, voters, or signers\u2014that must concur or be present for a decision, transaction, or consensus round to be considered valid in a distributed system or governance process. In distributed computing, quorum systems are collections of node subsets with the intersection property: any two quorums share at least one member, preventing contradictory decisions across network partitions. In blockchain and DAO governance, quorum thresholds set the participation floor required before a vote or proposal carries binding weight, balancing decision liveness against resistance to minority capture. Threshold signature schemes and multi-signature wallets operationalise quorum as an m-of-n approval requirement that eliminates single points of failure in key custody.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:consensus-mechanism",
@@ -13,11 +13,20 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.75,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:validator-set",
+        "label": "Validator Set"
+      },
+      {
+        "id": "urn:ngm:class:membership-protocol",
+        "label": "Membership Protocol"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:on-chain-governance",
@@ -26,12 +35,51 @@
       {
         "id": "urn:ngm:class:fault-tolerance",
         "label": "Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:linearisability",
+        "label": "Linearisability"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-decision-making",
+        "label": "Decentralised Decision-making"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:paxos",
+        "label": "Paxos"
+      },
+      {
+        "id": "urn:ngm:class:raft",
+        "label": "Raft"
+      },
+      {
+        "id": "urn:ngm:class:tendermint",
+        "label": "Tendermint"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:proof-of-work",
+        "label": "Proof of Work"
+      },
+      {
+        "id": "urn:ngm:class:longest-chain-rule",
+        "label": "Longest-chain Rule"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ai-training",
+        "label": "Distributed AI Training"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:voting-mechanism",
@@ -40,6 +88,14 @@
       {
         "id": "urn:ngm:class:consensus-protocol",
         "label": "Consensus Protocol"
+      },
+      {
+        "id": "urn:ngm:class:threshold-signature",
+        "label": "Threshold Signature"
+      },
+      {
+        "id": "urn:ngm:class:stake-weighted-voting",
+        "label": "Stake-weighted Voting"
       }
     ],
     "supports": [
@@ -50,6 +106,14 @@
       {
         "id": "urn:ngm:class:blockchain-governance",
         "label": "Blockchain Governance"
+      },
+      {
+        "id": "urn:ngm:class:multi-signature-wallet",
+        "label": "Multi-signature Wallet"
+      },
+      {
+        "id": "urn:ngm:class:treasury-management",
+        "label": "Treasury Management"
       }
     ],
     "standardizedBy": [],
@@ -66,6 +130,18 @@
       {
         "id": "urn:ngm:class:distributed-system",
         "label": "Distributed System"
+      },
+      {
+        "id": "urn:ngm:class:network-partition",
+        "label": "Network Partition"
+      },
+      {
+        "id": "urn:ngm:class:liveness",
+        "label": "Liveness"
+      },
+      {
+        "id": "urn:ngm:class:safety",
+        "label": "Safety"
       }
     ]
   },

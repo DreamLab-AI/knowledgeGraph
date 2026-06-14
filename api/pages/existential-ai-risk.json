@@ -4,8 +4,8 @@
   "slug": "existential-ai-risk",
   "public": true,
   "classIri": "urn:ngm:class:existential-ai-risk",
-  "domain": "ai-safety",
-  "definition": "Existential AI risk is the possibility that advanced artificial intelligence could cause human extinction or a permanent, drastic curtailment of humanity's potential. It is a focus of long-term AI safety research and policy debate.",
+  "domain": "ai",
+  "definition": "Existential AI risk is the class of scenarios in which advanced artificial intelligence systems could cause human extinction or permanently and drastically curtail humanity's long-term potential, in ways that are irreversible at civilisational scale. These risks arise from misalignment between AI objectives and human values, from insufficient human oversight of increasingly capable systems, or from deliberate misuse enabling catastrophic outcomes. The concept motivates foundational research in AI alignment, corrigibility, and interpretability, as well as international governance frameworks aimed at preventing unrecoverable failure modes. It is distinguished from near-term harms by its emphasis on trajectories toward transformative, hard-to-reverse states rather than localised or recoverable damage.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:existential-risk",
@@ -13,21 +13,124 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.74,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:interpretability",
+        "label": "Interpretability"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:ai-safety-research",
+        "label": "AI Safety Research"
+      },
+      {
+        "id": "urn:ngm:class:frontier-model-regulation",
+        "label": "Frontier Model Regulation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:transformative-ai",
+        "label": "Transformative AI"
+      },
+      {
+        "id": "urn:ngm:class:instrumental-convergence",
+        "label": "Instrumental Convergence"
+      },
+      {
+        "id": "urn:ngm:class:capability-overhang",
+        "label": "Capability Overhang"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:ai-misuse-risk",
+        "label": "AI Misuse Risk"
+      },
+      {
+        "id": "urn:ngm:class:near-term-ai-harm",
+        "label": "Near-Term AI Harm"
+      },
+      {
+        "id": "urn:ngm:class:ai-bias",
+        "label": "AI Bias"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:biosecurity",
+        "label": "Biosecurity"
+      },
+      {
+        "id": "urn:ngm:class:nuclear-risk",
+        "label": "Nuclear Risk"
+      },
+      {
+        "id": "urn:ngm:class:international-treaty",
+        "label": "International Treaty"
+      },
+      {
+        "id": "urn:ngm:class:compute-governance",
+        "label": "Compute Governance"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:global-catastrophic-risk",
+        "label": "Global Catastrophic Risk"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:value-alignment-problem",
+        "label": "Value Alignment Problem"
+      },
+      {
+        "id": "urn:ngm:class:corrigibility",
+        "label": "Corrigibility"
+      },
+      {
+        "id": "urn:ngm:class:superintelligence",
+        "label": "Superintelligence"
+      },
+      {
+        "id": "urn:ngm:class:power-seeking-behaviour",
+        "label": "Power-Seeking Behaviour"
+      },
+      {
+        "id": "urn:ngm:class:reward-hacking",
+        "label": "Reward Hacking"
+      },
+      {
+        "id": "urn:ngm:class:mesa-optimisation",
+        "label": "Mesa-Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:ai-control-problem",
+        "label": "AI Control Problem"
+      }
+    ]
   },
   "wikilinks": [
     {

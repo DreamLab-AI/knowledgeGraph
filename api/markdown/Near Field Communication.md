@@ -22,7 +22,7 @@ alias:: Near-Field Communication
   "@type": "Class",
   "label": "Near Field Communication",
   "definition": "Near Field Communication (NFC) is a short-range wireless communication technology operating at 13.56 MHz that enables contactless data exchange between devices within approximately 4 centimetres. Based on inductive coupling and derived from RFID standards, NFC supports three operating modes: card emulation (device acts as a smart card), reader/writer (device reads or writes NFC tags), and peer-to-peer (two active devices exchange data). It underpins contactless payments, identity verification, and rapid device pairing.",
-  "domain": "hardware",
+  "domain": "infrastructure",
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:communication-protocol", "label": "Communication Protocol"}],
   "relations": {

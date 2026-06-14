@@ -4,19 +4,27 @@
   "slug": "hardware-component",
   "public": true,
   "classIri": "urn:ngm:class:hardware-component",
-  "domain": "spatial-computing",
-  "definition": "A Hardware Component is a discrete physical element\u2014such as a processor, display panel, sensor, or communication module\u2014that forms part of a spatial-computing or XR system. These components collectively determine the perceptual fidelity, latency, power budget, and interaction modalities of devices ranging from head-mounted displays to robotic end-effectors and IoT edge nodes.",
+  "domain": "infrastructure",
+  "definition": "A Hardware Component is a discrete physical element \u2014 such as a processor, memory module, sensor, display panel, network interface, or power management unit \u2014 that constitutes a functional building block within a computing or electronic system. Hardware components are characterised by their electrical specifications, mechanical form factor, thermal envelope, and interface standards, and their selection and integration collectively determine the throughput, latency, energy efficiency, and reliability of the host system. They are manufactured to industry or bespoke specifications and may be field-replaceable or permanently integrated at the board or package level. In the context of embedded, edge, and spatial-computing systems, the choice of hardware components directly constrains the achievable computational workloads, sensor modalities, and communication bandwidths.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:sc-content-and-assets",
-      "label": "Content and Assets"
+      "id": "urn:ngm:class:physical-system",
+      "label": "Physical System"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "emerging",
+  "qualityScore": 0.72,
+  "maturity": "mature",
   "relationships": {
     "hasPart": [
+      {
+        "id": "urn:ngm:class:processor",
+        "label": "Processor"
+      },
+      {
+        "id": "urn:ngm:class:memory-module",
+        "label": "Memory Module"
+      },
       {
         "id": "urn:ngm:class:sensor",
         "label": "Sensor"
@@ -26,30 +34,135 @@
         "label": "Display Hardware"
       },
       {
-        "id": "urn:ngm:class:gpu-compute",
-        "label": "GPU Compute"
+        "id": "urn:ngm:class:network-interface",
+        "label": "Network Interface"
+      },
+      {
+        "id": "urn:ngm:class:power-management-unit",
+        "label": "Power Management Unit"
       }
     ],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:firmware",
+        "label": "Firmware"
+      },
+      {
+        "id": "urn:ngm:class:hardware-abstraction-layer",
+        "label": "Hardware Abstraction Layer"
+      },
+      {
+        "id": "urn:ngm:class:power-supply",
+        "label": "Power Supply"
+      }
+    ],
     "enables": [
       {
-        "id": "urn:ngm:class:spatial-computing-paradigm",
+        "id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing"
       },
       {
         "id": "urn:ngm:class:haptic-feedback",
         "label": "Haptic Feedback"
+      },
+      {
+        "id": "urn:ngm:class:real-time-processing",
+        "label": "Real-Time Processing"
+      },
+      {
+        "id": "urn:ngm:class:edge-inference",
+        "label": "Edge Inference"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:semiconductor-fabrication",
+        "label": "Semiconductor Fabrication"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:software-component",
+        "label": "Software Component"
+      },
+      {
+        "id": "urn:ngm:class:virtual-machine",
+        "label": "Virtual Machine"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "id": "urn:ngm:class:neuromorphic-chip",
+        "label": "Neuromorphic Chip"
+      },
+      {
+        "id": "urn:ngm:class:ai-accelerator",
+        "label": "AI Accelerator"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:bus-interface",
+        "label": "Bus Interface"
+      },
+      {
+        "id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:device-driver",
+        "label": "Device Driver"
+      },
+      {
+        "id": "urn:ngm:class:operating-system",
+        "label": "Operating System"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ieee-standards",
+        "label": "IEEE Standards"
+      },
+      {
+        "id": "urn:ngm:class:jedec",
+        "label": "JEDEC"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:embedded-system",
+        "label": "Embedded System"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing-node",
+        "label": "Edge Computing Node"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:printed-circuit-board",
+        "label": "Printed Circuit Board"
+      },
+      {
+        "id": "urn:ngm:class:system-on-chip",
+        "label": "System-on-Chip"
+      },
+      {
+        "id": "urn:ngm:class:field-programmable-gate-array",
+        "label": "Field-Programmable Gate Array"
+      }
+    ]
   },
   "wikilinks": [
     {

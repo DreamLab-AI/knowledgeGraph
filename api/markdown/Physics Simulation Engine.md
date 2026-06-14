@@ -59,7 +59,7 @@ public:: true
   "@type": "Class",
   "label": "Physics Simulation Engine",
   "definition": "A physics simulation engine is software that computes the motion and interaction of objects according to physical laws, such as rigid body dynamics and collisions. It is used in games, robotics, and engineering.",
-  "domain": "general",
+  "domain": "spatial-computing",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

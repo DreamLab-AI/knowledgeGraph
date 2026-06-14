@@ -5,37 +5,115 @@
   "public": true,
   "classIri": "urn:ngm:class:speculative-decoding",
   "domain": "artificial-intelligence",
-  "definition": "Speculative decoding is an LLM inference acceleration technique that exploits the observation that a smaller, faster draft model can propose plausible multi-token continuations which a larger, higher-quality target model verifies in a single parallel forward pass. Accepted tokens are committed; rejected tokens are discarded, and generation resumes from the rejection point. Because the target model evaluates multiple candidate tokens simultaneously rather than autoregressively one at a time, the effective throughput in tokens per second increases substantially\u2014often two to four times\u2014while the output distribution remains statistically identical to that of the target model running alone. Speculative decoding is particularly effective when the draft and target models share a vocabulary and the task distribution is predictable.",
+  "definition": "Speculative decoding is an inference acceleration technique for autoregressive language models in which a smaller, faster draft model proposes multiple candidate tokens that a larger target model verifies in a single parallel forward pass. Accepted tokens are committed to the output sequence; rejected tokens trigger a corrected sample from the residual distribution, ensuring the final output is statistically identical to sampling from the target model alone. Because modern GPU accelerators are memory-bandwidth-bound during autoregressive generation, batching verification of several candidate tokens substantially increases arithmetic utilisation and can raise effective throughput two to four times without altering the model's output distribution. The technique is now integrated into mainstream inference frameworks and sits at the intersection of model efficiency, hardware utilisation, and production LLM serving.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique"
+      "id": "urn:ngm:class:inference-optimisation",
+      "label": "Inference Optimisation"
     }
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "emerging",
+  "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:token-verification",
+        "label": "Token Verification"
+      },
+      {
+        "id": "urn:ngm:class:rejection-sampling",
+        "label": "Rejection Sampling"
+      },
+      {
+        "id": "urn:ngm:class:acceptance-criterion",
+        "label": "Acceptance Criterion"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:draft-model",
+        "label": "Draft Model"
+      },
       {
         "id": "urn:ngm:class:inference-hardware",
         "label": "Inference Hardware"
+      },
+      {
+        "id": "urn:ngm:class:shared-vocabulary",
+        "label": "Shared Vocabulary"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:low-latency-inference",
+        "label": "Low-Latency Inference"
+      },
+      {
+        "id": "urn:ngm:class:real-time-text-generation",
+        "label": "Real-Time Text Generation"
+      },
+      {
+        "id": "urn:ngm:class:llm-serving",
+        "label": "LLM Serving"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:parallel-computation",
+        "label": "Parallel Computation"
+      },
+      {
+        "id": "urn:ngm:class:gpu-accelerated-inference",
+        "label": "GPU Accelerated Inference"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:rejection-sampling",
+        "label": "Rejection Sampling"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:autoregressive-decoding",
+        "label": "Autoregressive Decoding"
+      },
+      {
+        "id": "urn:ngm:class:beam-search",
+        "label": "Beam Search"
+      },
+      {
+        "id": "urn:ngm:class:greedy-decoding",
+        "label": "Greedy Decoding"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:edge-ai",
+        "label": "Edge AI"
+      },
+      {
+        "id": "urn:ngm:class:real-time-systems",
+        "label": "Real-Time Systems"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:large-language-models",
         "label": "Large Language Models"
       },
       {
-        "id": "urn:ngm:class:inference",
-        "label": "Inference"
+        "id": "urn:ngm:class:autoregressive-generation",
+        "label": "Autoregressive Generation"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "id": "urn:ngm:class:kv-cache",
+        "label": "KV Cache"
       }
     ],
     "supports": [],
@@ -43,12 +121,28 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:model-compression-for-edge",
-        "label": "Model Compression for Edge"
+        "id": "urn:ngm:class:model-quantisation",
+        "label": "Model Quantisation"
+      },
+      {
+        "id": "urn:ngm:class:model-distillation",
+        "label": "Model Distillation"
+      },
+      {
+        "id": "urn:ngm:class:continuous-batching",
+        "label": "Continuous Batching"
       },
       {
         "id": "urn:ngm:class:context-window",
         "label": "Context Window"
+      },
+      {
+        "id": "urn:ngm:class:sampling-strategies",
+        "label": "Sampling Strategies"
+      },
+      {
+        "id": "urn:ngm:class:model-compression-for-edge",
+        "label": "Model Compression for Edge"
       }
     ]
   },

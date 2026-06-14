@@ -21,7 +21,7 @@ public:: true
   "@type": "Class",
   "label": "Material Definition",
   "definition": "A material definition is a structured data specification that describes how a surface or volume should appear under lighting, encoding properties such as base colour, roughness, metalness, emissivity, and transparency in a renderer-agnostic format. It underpins physically based rendering (PBR) pipelines by separating the description of physical surface behaviour from the rendering algorithm that evaluates it. Material definitions may be authored in formats such as MaterialX, glTF materials, or OpenUSD surface shading networks, enabling interchange across tools and engines. They are fundamental to achieving photorealistic and stylised visuals in real-time and offline 3D workflows.",
-  "domain": "graphics",
+  "domain": "spatial-computing",
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:rendering-technique", "label": "Rendering Technique"}],
   "relations": {

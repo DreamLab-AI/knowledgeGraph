@@ -47,7 +47,7 @@ public:: true
   "@type": "Class",
   "label": "Institutional Investment",
   "definition": "The investment of pooled funds by organisations such as pension funds, insurers, endowments and asset managers on behalf of their beneficiaries or clients.",
-  "domain": "general",
+  "domain": "finance",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

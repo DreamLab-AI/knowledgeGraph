@@ -21,7 +21,7 @@ public:: true
   "@type": "Class",
   "label": "Accessibility Captioning",
   "definition": "Accessibility captioning is the practice of producing synchronised textual representations of spoken dialogue, sound effects, and other audio information within video or live media so that deaf, hard-of-hearing, or audio-impaired audiences can fully engage with the content. It encompasses both closed captions (user-selectable, stored separately from the video stream) and open captions (burned into the image), and spans pre-produced transcription and real-time automatic speech recognition pipelines.",
-  "domain": "media",
+  "domain": "standards",
   "maturity": "established",
   "subClassOf": [
     {"@id": "urn:ngm:class:inclusive-design", "label": "Inclusive Design"}

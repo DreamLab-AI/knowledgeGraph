@@ -5,38 +5,160 @@
   "public": true,
   "classIri": "urn:ngm:class:optical-calibration-target",
   "domain": "spatial-computing",
-  "definition": "A precision test pattern used for camera and imaging system calibration, including color charts, resolution targets, and geometric patterns that enable accurate measurement of color reproduction, distortion, magnification, and spatial frequency response in optical systems.",
+  "definition": "An optical calibration target is a precision artefact bearing known geometric, radiometric, or colourimetric reference patterns used to characterise, correct, and validate the response of imaging and optical systems. Such targets enable the measurement of lens distortion, modulation transfer function (MTF), chromatic aberration, colour reproduction accuracy, and spatial linearity across a wide range of imaging modalities from visible-light cameras to multispectral and depth sensors. They are fundamental to the metrological traceability chain that links deployed camera systems to national and international measurement standards. In spatial computing and extended-reality applications, calibration targets additionally serve as fiducial references for camera-to-camera alignment, display-sensor registration, and world-space coordinate grounding.",
   "subClassOf": [
-    {
-      "id": "urn:ngm:class:sc-display-and-rendering",
-      "label": "Display and Rendering"
-    },
     {
       "id": "urn:ngm:class:calibration-equipment",
       "label": "Calibration Equipment"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.74,
+  "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:color-reference-chart",
+        "label": "Colour Reference Chart"
+      },
+      {
+        "id": "urn:ngm:class:resolution-target",
+        "label": "Resolution Target"
+      },
+      {
+        "id": "urn:ngm:class:fiducial-marker",
+        "label": "Fiducial Marker"
+      },
+      {
+        "id": "urn:ngm:class:gray-scale-step-wedge",
+        "label": "Grey-Scale Step Wedge"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:controlled-illumination",
+        "label": "Controlled Illumination"
+      },
+      {
+        "id": "urn:ngm:class:metrological-traceability",
+        "label": "Metrological Traceability"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:optical-system-accuracy",
         "label": "Optical System Accuracy"
+      },
+      {
+        "id": "urn:ngm:class:lens-distortion-correction",
+        "label": "Lens Distortion Correction"
+      },
+      {
+        "id": "urn:ngm:class:colour-management",
+        "label": "Colour Management"
+      },
+      {
+        "id": "urn:ngm:class:camera-intrinsic-calibration",
+        "label": "Camera Intrinsic Calibration"
+      },
+      {
+        "id": "urn:ngm:class:stereo-camera-calibration",
+        "label": "Stereo Camera Calibration"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:photometric-standards",
+        "label": "Photometric Standards"
+      },
+      {
+        "id": "urn:ngm:class:substrate-material-stability",
+        "label": "Substrate Material Stability"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:radiometric-calibration-panel",
+        "label": "Radiometric Calibration Panel"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:simultaneous-localisation-and-mapping",
+        "label": "Simultaneous Localisation and Mapping"
+      },
+      {
+        "id": "urn:ngm:class:neural-radiance-field",
+        "label": "Neural Radiance Field"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:checkerboard-pattern",
+        "label": "Checkerboard Pattern"
+      },
+      {
+        "id": "urn:ngm:class:aruco-marker",
+        "label": "ArUco Marker"
+      },
+      {
+        "id": "urn:ngm:class:sinusoidal-grating",
+        "label": "Sinusoidal Grating"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:computer-vision-pipeline",
+        "label": "Computer Vision Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality-tracking",
+        "label": "Augmented Reality Tracking"
+      },
+      {
+        "id": "urn:ngm:class:photogrammetry",
+        "label": "Photogrammetry"
+      },
+      {
+        "id": "urn:ngm:class:machine-vision-inspection",
+        "label": "Machine Vision Inspection"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-12233",
+        "label": "ISO 12233 (Photography \u2014 Resolution)"
+      },
+      {
+        "id": "urn:ngm:class:iso-17321",
+        "label": "ISO 17321 (Colour Characterisation)"
+      },
+      {
+        "id": "urn:ngm:class:nist-measurement-standards",
+        "label": "NIST Measurement Standards"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:camera-calibration-workflow",
+        "label": "Camera Calibration Workflow"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:modulation-transfer-function",
+        "label": "Modulation Transfer Function"
+      },
+      {
+        "id": "urn:ngm:class:depth-sensor-calibration",
+        "label": "Depth Sensor Calibration"
+      },
+      {
+        "id": "urn:ngm:class:icc-colour-profile",
+        "label": "ICC Colour Profile"
+      }
+    ]
   },
   "wikilinks": [
     {

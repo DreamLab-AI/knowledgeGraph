@@ -4,7 +4,7 @@
   "slug": "api",
   "public": true,
   "classIri": "urn:ngm:class:api",
-  "domain": "general",
+  "domain": "infrastructure",
   "definition": "An Application Programming Interface, a defined set of operations, inputs and outputs through which software components or services communicate without exposing their internal implementation.",
   "subClassOf": [
     {

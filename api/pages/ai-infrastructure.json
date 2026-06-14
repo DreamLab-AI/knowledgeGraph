@@ -4,17 +4,17 @@
   "slug": "ai-infrastructure",
   "public": true,
   "classIri": "urn:ngm:class:ai-infrastructure",
-  "domain": "artificial-intelligence",
-  "definition": "AI Infrastructure refers to the hardware, software, and systems required to develop, train, deploy, and operate artificial intelligence applications. It encompasses GPU compute clusters, cloud platforms, model serving frameworks, data pipelines, and the surrounding toolchains for experiment tracking, versioning, and monitoring. Effective AI Infrastructure is a prerequisite for scaling machine learning workloads from research prototypes to production systems.",
+  "domain": "infrastructure",
+  "definition": "AI Infrastructure is the integrated ensemble of hardware, software, data systems, and operational tooling required to develop, train, deploy, monitor, and govern artificial intelligence and machine learning workloads at scale. It spans physical compute resources such as GPU and TPU clusters, networking fabrics, and storage systems through to cloud-managed AI platforms, model-serving runtimes, data pipelines, and MLOps toolchains. Unlike general-purpose computing infrastructure, AI Infrastructure is specifically optimised for tensor operations, distributed parallel training, high-throughput vector data ingestion, and low-latency inference serving. It constitutes the production backbone that determines the cost, velocity, reliability, and scalability of AI system development cycles.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:artificial-intelligence",
-      "label": "Artificial Intelligence"
+      "id": "urn:ngm:class:digital-infrastructure",
+      "label": "Digital Infrastructure"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "emerging",
+  "qualityScore": 0.72,
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
@@ -24,20 +24,93 @@
       {
         "id": "urn:ngm:class:edge-computing",
         "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:model-serving",
+        "label": "Model Serving"
+      },
+      {
+        "id": "urn:ngm:class:vector-database",
+        "label": "Vector Database"
+      },
+      {
+        "id": "urn:ngm:class:mlops",
+        "label": "MLOps"
       }
     ],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:high-performance-computing",
+        "label": "High-Performance Computing"
+      },
+      {
+        "id": "urn:ngm:class:distributed-storage",
+        "label": "Distributed Storage"
+      },
+      {
+        "id": "urn:ngm:class:networking-fabric",
+        "label": "Networking Fabric"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:federated-learning",
         "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:real-time-inference",
+        "label": "Real-Time Inference"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:data-centre",
+        "label": "Data Centre"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:general-purpose-computing",
+        "label": "General-Purpose Computing"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:decentralised-ai",
+        "label": "Decentralised AI"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:containerisation",
+        "label": "Containerisation"
+      },
+      {
+        "id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
+      },
+      {
+        "id": "urn:ngm:class:accelerated-computing",
+        "label": "Accelerated Computing"
+      }
+    ],
     "supports": [
       {
         "id": "urn:ngm:class:machine-learning-discipline",
@@ -46,6 +119,10 @@
       {
         "id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
       }
     ],
     "standardizedBy": [],
@@ -54,6 +131,14 @@
       {
         "id": "urn:ngm:class:cloud-infrastructure",
         "label": "Cloud Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:model-registry",
+        "label": "Model Registry"
+      },
+      {
+        "id": "urn:ngm:class:experiment-tracking",
+        "label": "Experiment Tracking"
       }
     ]
   },

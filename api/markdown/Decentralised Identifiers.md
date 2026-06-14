@@ -55,7 +55,7 @@ public:: true
   "@type": "Class",
   "label": "Decentralised Identifiers",
   "definition": "A W3C standard for globally unique identifiers that are created, owned and controlled by their subject without reliance on a central registration authority, enabling verifiable, self-sovereign digital identity.",
-  "domain": "cryptographic",
+  "domain": "security",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

@@ -42,21 +42,91 @@ public:: true
   "@id": "urn:ngm:class:centralised-database",
   "@type": "Class",
   "label": "Centralised Database",
-  "definition": "A database in which data is stored and managed at a single location or under a single controlling authority, in contrast to distributed or decentralised storage.",
-  "domain": "general",
-  "maturity": "established",
-  "qualityScore": 0.7,
+  "definition": "A centralised database is a data management system in which all data is stored, administered, and accessed through a single physical or logical location under a single controlling authority. It provides a unified, authoritative view of data with strong consistency guarantees, simplified access control, and a single point of administration. All read and write operations are routed to this central node or cluster, making it the canonical source of truth for the entire system. The centralised model contrasts with distributed and decentralised architectures by sacrificing geographic fault-tolerance and autonomy in exchange for consistency, reduced coordination overhead, and operational simplicity.",
+  "domain": "data",
+  "maturity": "mature",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:distributed-systems",
-      "label": "Distributed Systems"
+      "@id": "urn:ngm:class:database-management-system",
+      "label": "Database Management System"
     }
   ],
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:central-database",
+      "label": "Central Database"
+    },
+    {
+      "@id": "urn:ngm:class:monolithic-database",
+      "label": "Monolithic Database"
+    }
+  ],
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:relational-database", "label": "Relational Database"},
+      {"@id": "urn:ngm:class:query-engine", "label": "Query Engine"},
+      {"@id": "urn:ngm:class:access-control", "label": "Access Control"},
+      {"@id": "urn:ngm:class:transaction-management", "label": "Transaction Management"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:information-system", "label": "Information System"},
+      {"@id": "urn:ngm:class:data-management", "label": "Data Management"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:network-infrastructure", "label": "Network Infrastructure"},
+      {"@id": "urn:ngm:class:data-storage", "label": "Data Storage"},
+      {"@id": "urn:ngm:class:backup-and-recovery", "label": "Backup and Recovery"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:acid-compliance", "label": "ACID Compliance"},
+      {"@id": "urn:ngm:class:data-consistency", "label": "Data Consistency"},
+      {"@id": "urn:ngm:class:centralised-access-control", "label": "Centralised Access Control"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:server-infrastructure", "label": "Server Infrastructure"},
+      {"@id": "urn:ngm:class:operating-system", "label": "Operating System"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:sql", "label": "SQL"},
+      {"@id": "urn:ngm:class:acid-transactions", "label": "ACID Transactions"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:indexing", "label": "Indexing"},
+      {"@id": "urn:ngm:class:query-optimisation", "label": "Query Optimisation"},
+      {"@id": "urn:ngm:class:replication", "label": "Replication"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"},
+      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"},
+      {"@id": "urn:ngm:class:audit-logging", "label": "Audit Logging"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:iso-iec-9075", "label": "ISO/IEC 9075 (SQL Standard)"},
+      {"@id": "urn:ngm:class:ansi-sql", "label": "ANSI SQL"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:distributed-database", "label": "Distributed Database"},
+      {"@id": "urn:ngm:class:decentralised-storage", "label": "Decentralised Storage"},
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
+      {"@id": "urn:ngm:class:peer-to-peer-network", "label": "Peer-to-Peer Network"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"},
+      {"@id": "urn:ngm:class:data-lake", "label": "Data Lake"},
+      {"@id": "urn:ngm:class:cloud-storage", "label": "Cloud Storage"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:data-warehouse", "label": "Data Warehouse"},
+      {"@id": "urn:ngm:class:nosql-database", "label": "NoSQL Database"},
+      {"@id": "urn:ngm:class:single-point-of-failure", "label": "Single Point of Failure"},
+      {"@id": "urn:ngm:class:cap-theorem", "label": "CAP Theorem"}
+    ]
+  },
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-13T00:00:00Z",
+    "inferenceRule": "ManualEnrichment"
   }
 }
 ```
@@ -91,22 +161,87 @@ public:: true
 }
 ```
 
-
 - ### Definition
-  - A database in which data is stored and managed at a single location or under a single controlling authority, in contrast to distributed or decentralised storage.
+  - A centralised database is a [[Database Management System]] in which all data resides at — and all operations are routed through — a single authoritative location or logical node. It provides strong [[Data Consistency]] guarantees and a unified administrative domain, simplifying [[Access Control]], [[Audit Logging]], and enforcement of [[Regulatory Compliance]]. This architecture stands in direct contrast to [[Distributed Database]] and [[Decentralised Storage]] models, which partition both data and control across multiple independent nodes. The centralised approach has been the dominant paradigm for enterprise data management since the emergence of [[Relational Database]] systems in the 1970s and remains mature and widely deployed today.
 
-- ### Semantic Classification
-  - owl-class:: general:CentralisedDatabase
-  - owl-role:: Class
+- ### Overview
+  - A centralised database concentrates data storage, retrieval, and administration within a single server or tightly-coupled cluster operated by a single controlling authority.
+  - All client applications connect to this central point; there is one canonical representation of every record, eliminating the synchronisation complexity inherent to [[Distributed Systems]].
+  - **Why it matters**
+    - Provides the simplest operational model for achieving [[ACID Compliance]]: Atomicity, Consistency, Isolation, and Durability are enforced locally without the need for distributed coordination protocols.
+    - Enables deterministic [[Query Optimisation]] because the query planner has full visibility of all data in one place.
+    - Supports mature tooling for [[Data Governance]], schema management, and reporting that has been refined over decades.
+    - Regulatory regimes (GDPR, HIPAA, SOX) often assume a single data custodian, making centralised control easier to audit and certify.
+  - **How it works**
+    - Clients issue queries — typically in [[SQL]] — to a single endpoint.
+    - The [[Query Engine]] parses, optimises, and executes the query against a unified storage layer.
+    - [[Transaction Management]] ensures that concurrent operations respect isolation levels and atomicity boundaries.
+    - [[Indexing]] structures (B-trees, hash indexes, covering indexes) accelerate read performance.
+    - [[Replication]] to standby replicas may be used for read-scalability and warm failover, but the primary node remains the single write authority.
+    - [[Backup and Recovery]] processes snapshot the central store on a schedule and ship write-ahead logs to secondary locations.
+
+- ### Key Components
+  - **Storage Engine** — manages the physical layout of data on disk or SSD; examples include InnoDB (MySQL), nbtree (PostgreSQL), and WiredTiger (MongoDB). Related to [[Data Storage]].
+  - **Query Engine** — parses [[SQL]] or equivalent query language, constructs execution plans, and returns result sets. See [[Query Optimisation]].
+  - **Transaction Manager** — enforces [[ACID Transactions]] using locking, multi-version concurrency control (MVCC), or optimistic concurrency strategies. See [[Transaction Management]].
+  - **Buffer Pool / Cache** — holds frequently accessed pages in memory to reduce disk I/O latency. Central to [[Query Optimisation]].
+  - **Access Control Module** — enforces [[Centralised Access Control]] via role-based or attribute-based permissions. Feeds into [[Data Governance]].
+  - **Replication Subsystem** — streams write-ahead log (WAL) or binlog events to standby replicas; supports [[Replication]] for high availability and read scaling.
+  - **Backup and Recovery Engine** — produces full and incremental backups; enables point-in-time recovery. Related to [[Backup and Recovery]].
+  - **Audit Logger** — records all data access and modification events for compliance. Underpins [[Audit Logging]] and [[Regulatory Compliance]].
+  - **Schema Catalogue / Data Dictionary** — stores metadata about tables, columns, constraints, indexes, and relationships. Part of [[Data Management]].
+  - **Network Interface / Connection Pool** — manages client connections over TCP/IP, reducing connection overhead for high-concurrency workloads. Requires [[Network Infrastructure]].
+
+- ### Mechanisms
+  - **ACID Compliance** — all transactions satisfy Atomicity (all-or-nothing), Consistency (valid state transitions), Isolation (concurrent transactions do not corrupt each other), and Durability (committed data survives crashes). See [[ACID Compliance]] and [[ACID Transactions]].
+  - **MVCC (Multi-Version Concurrency Control)** — maintains multiple row versions so readers do not block writers; used in PostgreSQL, Oracle, and MySQL InnoDB. Supports high read concurrency without locking.
+  - **Write-Ahead Logging (WAL)** — changes are first written to a sequential log before being applied to data pages, enabling crash recovery and streaming [[Replication]].
+  - **Index Structures** — B-tree, hash, GIN, and GiST indexes stored centrally allow the [[Query Engine]] to satisfy predicates without full-table scans. See [[Indexing]].
+  - **Lock Management** — row-level, page-level, or table-level locks coordinate concurrent writes; deadlock detection resolves cycles automatically.
+  - **Query Planning** — the optimiser uses centralised statistics (row counts, selectivity estimates) to choose join orders and access paths. See [[Query Optimisation]].
+  - **Partitioning** — large tables may be horizontally or vertically partitioned within the central server to improve manageability without distributing authority.
+
+- ### Applications and Use Cases
+  - **Enterprise Resource Planning (ERP)** — systems such as SAP and Oracle EBS rely on a centralised database as the single source of truth for financial, HR, and supply-chain records.
+  - **Banking and Financial Services** — core banking platforms require strict [[ACID Compliance]] and a single authoritative ledger; centralised RDBMS (Oracle DB, IBM Db2) dominate. See [[Finance]].
+  - **Healthcare Record Systems** — electronic health record (EHR) platforms centralise patient data to enforce [[Regulatory Compliance]] with HIPAA and equivalent standards.
+  - **Government and Public Sector** — tax authorities, land registries, and identity systems store records in tightly controlled centralised stores. Connects to [[Data Governance]].
+  - **E-commerce Platforms** — product catalogues, inventory, and order management typically run on centralised RDBMS before sharding becomes necessary at extreme scale.
+  - **Content Management Systems (CMS)** — WordPress, Drupal, and similar platforms persist all content in a single [[Relational Database]] (commonly MySQL or PostgreSQL).
+  - **Operational Data Stores (ODS)** — real-time integration layers that aggregate transactional data from multiple source systems into one queryable store. Related to [[Data Warehouse]].
+  - **Machine Learning Feature Stores** — centralised databases (often [[NoSQL Database]] or in-memory RDBMS) serve pre-computed features to ML inference pipelines. Bridges to [[Federated Learning]] when privacy requirements demand data partitioning.
+  - **IoT Data Ingestion (edge-to-cloud)** — sensor streams are consolidated into a central time-series database for analytics and dashboarding. Related to [[Cloud Storage]] and [[Data Lake]].
 
 - ### Relationships
-  - is-subclass-of:: [[Distributed Systems]]
-  - bridges-to:: [[Decentralised Storage]], [[Distributed Systems]]
+  - hasPart:: [[Relational Database]], [[Query Engine]], [[Access Control]], [[Transaction Management]]
+  - partOf:: [[Information System]], [[Data Management]]
+  - requires:: [[Network Infrastructure]], [[Data Storage]], [[Backup and Recovery]]
+  - enables:: [[ACID Compliance]], [[Data Consistency]], [[Centralised Access Control]]
+  - dependsOn:: [[Server Infrastructure]], [[Operating System]]
+  - implements:: [[SQL]], [[ACID Transactions]]
+  - uses:: [[Indexing]], [[Query Optimisation]], [[Replication]]
+  - supports:: [[Data Governance]], [[Regulatory Compliance]], [[Audit Logging]]
+  - standardizedBy:: [[ISO/IEC 9075 (SQL Standard)]], [[ANSI SQL]]
+  - contrastsWith:: [[Distributed Database]], [[Decentralised Storage]], [[Blockchain]], [[Peer-to-Peer Network]]
+  - bridges-to:: [[Federated Learning]], [[Data Lake]], [[Cloud Storage]]
+  - relatedTo:: [[Data Warehouse]], [[NoSQL Database]], [[Single Point of Failure]], [[CAP Theorem]]
 
-- ### Content
-  - A centralised database concentrates data storage and administration in one system or under one organisation. This simplifies consistency, access control and querying, since a single authority maintains the canonical state, and it remains the dominant model for many applications.
-  - The trade-off is a single point of control and failure: the operator can alter or restrict access, and an outage or compromise affects all users. This contrasts with decentralised storage approaches that distribute data and control across many independent nodes.
+- ### Contrasts and Trade-offs
+  - **vs [[Distributed Database]]** — a distributed database partitions data and query processing across multiple nodes, sacrificing some consistency (or requiring expensive coordination) to achieve horizontal scalability and geographic redundancy. The centralised model foregoes this at the cost of a [[Single Point of Failure]].
+  - **vs [[Decentralised Storage]]** — decentralised storage (e.g. IPFS, Filecoin) distributes both data and administrative control, removing the need for a trusted central authority. This aligns with [[Blockchain]] philosophy where no single party controls the canonical state.
+  - **[[CAP Theorem]] framing** — under network partition, a centralised database typically prioritises Consistency and Availability (CP or CA) because the partition is usually within a data-centre boundary rather than across independent operators.
+  - **vs [[Federated Learning]]** — when data cannot be centralised for privacy or regulatory reasons, [[Federated Learning]] trains models locally and shares only gradients, bridging the gap without centralising raw data.
+
+- ### Standards and Governance Context
+  - **[[ISO/IEC 9075]] (SQL Standard)** — defines the SQL query language implemented by virtually all centralised relational database engines; current edition is SQL:2023.
+  - **[[ANSI SQL]]** — the American National Standards Institute version of the SQL standard, historically the baseline for portability.
+  - **GDPR (General Data Protection Regulation)** — mandates that personal data controllers identify a single point of accountability, a requirement that centralised databases satisfy naturally. Relates to [[Regulatory Compliance]] and [[Data Governance]].
+  - **SOC 2 / ISO 27001** — information security standards that require demonstrable access control and audit trails; centralised databases simplify [[Audit Logging]] evidence collection.
+  - **HIPAA (Health Insurance Portability and Accountability Act)** — US healthcare data regulation requiring strict data custodianship; centralised databases are the conventional compliance vehicle.
+  - **Common implementations** — PostgreSQL, MySQL, Oracle Database, Microsoft SQL Server, IBM Db2, SQLite; these are the dominant centralised RDBMS products in use worldwide.
+  - **[[NoSQL Database]] variants** — MongoDB, Redis, Cassandra can also operate in a centralised single-primary mode, extending the centralised model beyond relational schemas.
 
 - ### Provenance
-  - sources::
+  - sources:: ISO/IEC 9075 SQL Standard; Date, C.J. (2003) _An Introduction to Database Systems_; Codd, E.F. (1970) foundational relational model paper; PostgreSQL and MySQL documentation
+  - updated:: 2026-06-13
   - migration-date:: 2026-05-29T00:00:00Z

@@ -4,7 +4,7 @@
   "slug": "yoti",
   "public": true,
   "classIri": "urn:ngm:class:yoti",
-  "domain": "general",
+  "domain": "security",
   "definition": "A digital identity company that provides identity verification, age estimation and authentication services for individuals and organisations.",
   "subClassOf": [
     {

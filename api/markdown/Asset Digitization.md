@@ -21,7 +21,7 @@ public:: true
   "@type": "Class",
   "label": "Asset Digitization",
   "definition": "Asset Digitization is the process of converting physical objects, spaces, documents, or analogue media into discrete digital representations suitable for storage, transmission, and computational use. It encompasses acquisition technologies such as scanning, photogrammetry, and LiDAR, as well as the post-processing steps that clean, structure, and format the resulting data for target applications.",
-  "domain": "spatial",
+  "domain": "spatial-computing",
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:reality-capture", "label": "Reality Capture"}],
   "relations": {

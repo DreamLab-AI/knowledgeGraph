@@ -4,35 +4,126 @@
   "slug": "correspondent-banking",
   "public": true,
   "classIri": "urn:ngm:class:correspondent-banking",
-  "domain": "general",
-  "definition": "An arrangement in which one bank provides services, particularly cross-border payments and settlement, on behalf of another bank that lacks a direct presence in a given market or currency.",
+  "domain": "finance",
+  "definition": "Correspondent banking is an arrangement in which one bank (the correspondent) holds accounts and provides payment, settlement, trade finance, and liquidity services on behalf of another bank (the respondent) that lacks a direct presence or licence in a given jurisdiction or currency. The respondent bank maintains a nostro account at the correspondent and an equivalent vostro account on its own books, enabling cross-border value transfer without requiring every institution to maintain a full global branch network. This intermediated model underpins a substantial share of international wire transfers and documentary trade, but introduces multi-hop settlement chains, foreign-exchange conversion costs, and heightened anti-money-laundering compliance obligations, motivating ongoing efforts to reform or replace the model through ISO 20022, CBDC corridors, and distributed ledger payment rails.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:cross-border-payments",
-      "label": "Cross-Border Payments"
+      "id": "urn:ngm:class:interbank-settlement",
+      "label": "Interbank Settlement"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
-  "maturity": "established",
+  "qualityScore": 0.74,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:nostro-account",
+        "label": "Nostro Account"
+      },
+      {
+        "id": "urn:ngm:class:vostro-account",
+        "label": "Vostro Account"
+      },
+      {
+        "id": "urn:ngm:class:loro-account",
+        "label": "Loro Account"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:know-your-customer",
+        "label": "Know Your Customer"
+      },
+      {
+        "id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
+      },
+      {
+        "id": "urn:ngm:class:liquidity-management",
+        "label": "Liquidity Management"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:cross-border-payments",
         "label": "Cross-Border Payments"
+      },
+      {
+        "id": "urn:ngm:class:trade-finance",
+        "label": "Trade Finance"
+      },
+      {
+        "id": "urn:ngm:class:foreign-exchange",
+        "label": "Foreign Exchange"
+      },
+      {
+        "id": "urn:ngm:class:documentary-credit",
+        "label": "Documentary Credit"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      },
+      {
+        "id": "urn:ngm:class:payment-hub",
+        "label": "Payment Hub"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:swift",
+        "label": "SWIFT"
+      },
+      {
+        "id": "urn:ngm:class:iso-20022",
+        "label": "ISO 20022"
+      },
+      {
+        "id": "urn:ngm:class:real-time-gross-settlement",
+        "label": "Real-Time Gross Settlement"
+      }
+    ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:financial-action-task-force",
+        "label": "Financial Action Task Force"
+      },
+      {
+        "id": "urn:ngm:class:basel-committee",
+        "label": "Basel Committee"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:de-risking",
+        "label": "De-Risking"
+      },
+      {
+        "id": "urn:ngm:class:financial-inclusion",
+        "label": "Financial Inclusion"
+      },
+      {
+        "id": "urn:ngm:class:payment-messaging",
+        "label": "Payment Messaging"
+      }
+    ]
   },
   "wikilinks": [
     {

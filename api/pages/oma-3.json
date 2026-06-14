@@ -4,8 +4,8 @@
   "slug": "oma-3",
   "public": true,
   "classIri": "urn:ngm:class:oma-3",
-  "domain": "governance",
-  "definition": "The Open Metaverse Alliance for Web3, an industry consortium of companies working to develop open standards and interoperability for metaverse platforms and digital assets.",
+  "domain": "metaverse",
+  "definition": "OMA3 (Open Metaverse Alliance for Web3) is an industry consortium founded in 2022 by major metaverse and blockchain companies to establish open, interoperable standards for virtual worlds, digital assets, and cross-platform identity. It operates as a member-governed non-profit organisation whose working groups produce shared specifications, reference implementations, and governance frameworks ensuring that digital objects and user identities remain portable across disparate metaverse platforms. OMA3 sits at the intersection of Web3 ownership principles and spatial-computing infrastructure, seeking to prevent proprietary lock-in by codifying standards for asset transfer protocols, decentralised land registries, and avatar portability. Its outputs are designed to be adopted by blockchain networks, game engines, and virtual world platforms alike, making it a foundational governance body for an open metaverse ecosystem.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:standards-body",
@@ -13,26 +13,122 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
-  "maturity": "established",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:working-group",
+        "label": "Working Group"
+      },
+      {
+        "id": "urn:ngm:class:governance-framework",
+        "label": "Governance Framework"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:interoperability-standards",
         "label": "Interoperability Standards"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset-portability",
+        "label": "Digital Asset Portability"
+      },
+      {
+        "id": "urn:ngm:class:cross-platform-identity",
+        "label": "Cross-Platform Identity"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:web3",
+        "label": "Web3"
+      },
+      {
+        "id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:proprietary-platform",
+        "label": "Proprietary Platform"
+      },
+      {
+        "id": "urn:ngm:class:walled-garden",
+        "label": "Walled Garden"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:non-fungible-token",
+        "label": "Non-Fungible Token"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "id": "urn:ngm:class:virtual-world",
+        "label": "Virtual World"
+      },
+      {
+        "id": "urn:ngm:class:avatar",
+        "label": "Avatar"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:open-metaverse-interoperability-group",
+        "label": "Open Metaverse Interoperability Group"
+      },
+      {
+        "id": "urn:ngm:class:metaverse-standards-forum",
+        "label": "Metaverse Standards Forum"
+      },
+      {
+        "id": "urn:ngm:class:decentraland",
+        "label": "Decentraland"
+      }
+    ]
   },
   "wikilinks": [
     {

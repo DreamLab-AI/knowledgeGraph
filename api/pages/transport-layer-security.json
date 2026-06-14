@@ -4,7 +4,7 @@
   "slug": "transport-layer-security",
   "public": true,
   "classIri": "urn:ngm:class:transport-layer-security",
-  "domain": "cryptographic",
+  "domain": "security",
   "definition": "A cryptographic protocol that provides authentication, confidentiality and integrity for communications over a computer network, succeeding the earlier Secure Sockets Layer.",
   "subClassOf": [
     {

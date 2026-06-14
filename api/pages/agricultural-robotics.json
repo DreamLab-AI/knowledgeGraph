@@ -5,18 +5,31 @@
   "public": true,
   "classIri": "urn:ngm:class:agricultural-robotics",
   "domain": "robotics",
-  "definition": "Agricultural robotics is the application of autonomous and semi-autonomous robotic systems to farming operations including soil preparation, precision planting, selective harvesting, crop health monitoring, and livestock management. Agricultural robots leverage computer vision, GPS positioning, and machine learning to operate in unstructured outdoor environments, adapting to variable terrain, crop geometry, and weather conditions. The field addresses labour shortages, resource efficiency, and the precision-agriculture imperative to reduce agrochemical inputs while maintaining or improving yields.",
+  "definition": "Agricultural robotics is the engineering discipline concerned with the design, deployment, and operation of autonomous and semi-autonomous robotic systems applied to crop and livestock farming tasks, including soil preparation, precision planting, selective harvesting, agrochemical application, irrigation management, and herd monitoring. These systems integrate computer vision, machine learning, GNSS positioning, and mechatronic manipulation to function reliably in unstructured outdoor environments subject to variable terrain, lighting, weather, and biological variability. The field is a primary enabler of precision agriculture, supporting reductions in agrochemical inputs, labour dependency, and resource waste while maintaining or increasing yields. Commercial deployment spans ground-based field robots, unmanned aerial vehicles, and autonomous underwater and amphibious systems for aquaculture.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:robo-robot-type",
-      "label": "Robo Robot Type"
+      "id": "urn:ngm:class:autonomous-robot",
+      "label": "Autonomous Robot"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
+  "qualityScore": 0.74,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:end-effector",
+        "label": "End Effector"
+      },
+      {
+        "id": "urn:ngm:class:vision-system",
+        "label": "Vision System"
+      },
+      {
+        "id": "urn:ngm:class:mobile-robot-platform",
+        "label": "Mobile Robot Platform"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:autonomous-navigation",
@@ -25,21 +38,81 @@
       {
         "id": "urn:ngm:class:object-detection",
         "label": "Object Detection"
+      },
+      {
+        "id": "urn:ngm:class:path-planning",
+        "label": "Path Planning"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
       }
     ],
-    "enables": [],
-    "dependsOn": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:precision-agriculture",
+        "label": "Precision Agriculture"
+      },
+      {
+        "id": "urn:ngm:class:variable-rate-application",
+        "label": "Variable Rate Application"
+      },
+      {
+        "id": "urn:ngm:class:crop-monitoring",
+        "label": "Crop Monitoring"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:industrial-robotics",
+        "label": "Industrial Robotics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      },
+      {
+        "id": "urn:ngm:class:data-analytics",
+        "label": "Data Analytics"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:computer-vision",
         "label": "Computer Vision"
       },
       {
-        "id": "urn:ngm:class:gps",
-        "label": "Gps"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:lidar",
+        "label": "Lidar"
+      },
+      {
+        "id": "urn:ngm:class:rtk-gps",
+        "label": "RTK-GPS"
+      },
+      {
+        "id": "urn:ngm:class:unmanned-aerial-vehicle",
+        "label": "Unmanned Aerial Vehicle"
+      },
+      {
+        "id": "urn:ngm:class:robotic-arm",
+        "label": "Robotic Arm"
       }
     ],
     "supports": [],
@@ -47,8 +120,20 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:autonomous-robot",
-        "label": "Autonomous Robot"
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
+        "id": "urn:ngm:class:remote-sensing",
+        "label": "Remote Sensing"
+      },
+      {
+        "id": "urn:ngm:class:swarm-robotics",
+        "label": "Swarm Robotics"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
       }
     ]
   },

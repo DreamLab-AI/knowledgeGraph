@@ -75,7 +75,7 @@ public:: true
   "@type": "Class",
   "label": "Mechanical Engineering Domain",
   "definition": "The Mechanical Engineering Domain classifies concepts concerning the design, analysis and manufacture of physical mechanisms and structures. It covers kinematics, dynamics, materials and the actuation that produces motion and force. As a sub-domain of the Robotics Domain it provides the physical embodiment on which robotic and autonomous systems depend.",
-  "domain": "mechanical-engineering",
+  "domain": "robotics",
   "maturity": "emerging",
   "qualityScore": 0.7,
   "subClassOf": [

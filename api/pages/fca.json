@@ -4,25 +4,86 @@
   "slug": "fca",
   "public": true,
   "classIri": "urn:ngm:class:fca",
-  "domain": "blockchain",
-  "definition": "The Financial Conduct Authority (FCA) is the statutory regulator of financial services and markets in the United Kingdom, operating independently of government under the Financial Services and Markets Act 2000. It supervises conduct in retail and wholesale markets, authorises financial firms, and enforces anti-money-laundering obligations. In the blockchain and digital asset domain, the FCA registers crypto-asset businesses under the Money Laundering Regulations, oversees financial promotions for crypto assets, and implements policy derived from international standards bodies such as the Financial Action Task Force.",
+  "domain": "finance",
+  "definition": "The Financial Conduct Authority (FCA) is the UK's statutory conduct regulator for financial services and markets, established under the Financial Services and Markets Act 2000 and reconstituted by the Financial Services Act 2012. Operating independently of government and funded by industry fees, it authorises firms, supervises conduct across retail and wholesale markets, and enforces anti-money-laundering obligations. In the digital asset sphere the FCA registers crypto-asset businesses under the Money Laundering Regulations, regulates crypto financial promotions, and coordinates with the Bank of England and HM Treasury on emerging regulatory frameworks for stablecoins, custody, and tokenised finance.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:bc-governance-and-regulation",
-      "label": "BC Governance and Regulation"
+      "id": "urn:ngm:class:financial-regulator",
+      "label": "Financial Regulator"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.73,
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      },
+      {
+        "id": "urn:ngm:class:kyc",
+        "label": "KYC"
+      },
+      {
+        "id": "urn:ngm:class:aml-cft",
+        "label": "AML/CFT"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:regulatory-sandbox",
+        "label": "Regulatory Sandbox"
+      },
+      {
+        "id": "urn:ngm:class:fintech-innovation",
+        "label": "FinTech Innovation"
+      },
+      {
+        "id": "urn:ngm:class:financial-promotion",
+        "label": "Financial Promotion"
+      }
+    ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:financial-services-and-markets-act",
+        "label": "Financial Services and Markets Act"
+      },
+      {
+        "id": "urn:ngm:class:money-laundering-regulations",
+        "label": "Money Laundering Regulations"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:sec",
+        "label": "SEC"
+      },
+      {
+        "id": "urn:ngm:class:esma",
+        "label": "ESMA"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:crypto-asset-regulation",
+        "label": "Crypto-Asset Regulation"
+      },
+      {
+        "id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset-custody",
+        "label": "Digital Asset Custody"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
+    ],
     "uses": [],
     "supports": [
       {
@@ -30,11 +91,32 @@
         "label": "Anti-Money Laundering"
       },
       {
+        "id": "urn:ngm:class:consumer-protection",
+        "label": "Consumer Protection"
+      },
+      {
         "id": "urn:ngm:class:financial-stability",
         "label": "Financial Stability"
+      },
+      {
+        "id": "urn:ngm:class:market-integrity",
+        "label": "Market Integrity"
       }
     ],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:fatf",
+        "label": "FATF"
+      },
+      {
+        "id": "urn:ngm:class:iosco",
+        "label": "IOSCO"
+      },
+      {
+        "id": "urn:ngm:class:financial-stability-board",
+        "label": "Financial Stability Board"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -42,12 +124,16 @@
         "label": "Financial Regulation"
       },
       {
-        "id": "urn:ngm:class:compliance-framework",
-        "label": "Compliance Framework"
+        "id": "urn:ngm:class:prudential-regulation-authority",
+        "label": "Prudential Regulation Authority"
       },
       {
-        "id": "urn:ngm:class:fatf",
-        "label": "FATF"
+        "id": "urn:ngm:class:hm-treasury",
+        "label": "HM Treasury"
+      },
+      {
+        "id": "urn:ngm:class:bank-of-england",
+        "label": "Bank of England"
       }
     ]
   },

@@ -4,7 +4,7 @@
   "slug": "systems-theory",
   "public": true,
   "classIri": "urn:ngm:class:systems-theory",
-  "domain": "systems",
+  "domain": "infrastructure",
   "definition": "Systems theory is an interdisciplinary study of systems as sets of interrelated components, focusing on the relationships, feedback, and emergent behaviour that arise from interaction.",
   "subClassOf": [
     {

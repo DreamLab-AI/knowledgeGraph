@@ -55,7 +55,7 @@ public:: true
   "@type": "Class",
   "label": "Master Data Management",
   "definition": "A discipline and set of processes for creating and maintaining a single, consistent view of an organisation's core business entities such as customers, products, and suppliers. It governs how master data is defined, stored, and shared.",
-  "domain": "data-management",
+  "domain": "data",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

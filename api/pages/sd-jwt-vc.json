@@ -4,7 +4,7 @@
   "slug": "sd-jwt-vc",
   "public": true,
   "classIri": "urn:ngm:class:sd-jwt-vc",
-  "domain": "identity",
+  "domain": "security",
   "definition": "A verifiable credential format that uses Selective Disclosure JSON Web Tokens, allowing a holder to reveal only chosen claims to a verifier. It combines the JWT structure with salted hashes that support selective disclosure.",
   "subClassOf": [
     {

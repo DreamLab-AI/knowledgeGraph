@@ -20,44 +20,170 @@ public:: true
   "@id": "urn:ngm:class:nist-cybersecurity-framework",
   "@type": "Class",
   "label": "NIST Cybersecurity Framework",
-  "definition": "The NIST Cybersecurity Framework (CSF) is a voluntary risk-based framework published by the US National Institute of Standards and Technology that provides organisations with a common taxonomy and structured approach for managing cybersecurity risk. It organises security activities around six core functions—Govern, Identify, Protect, Detect, Respond, and Recover—each decomposed into categories and subcategories aligned to industry standards. Version 2.0, published in 2024, added the Govern function and broadened applicability beyond critical infrastructure to all sectors and organisation sizes globally. The framework is widely adopted as a baseline for cybersecurity programme assessment and communication with leadership.",
+  "definition": "The NIST Cybersecurity Framework (CSF) is a voluntary, outcomes-based risk management framework published by the US National Institute of Standards and Technology that provides organisations with a common taxonomy and structured approach for managing cybersecurity risk across sectors. It organises security activities around six core functions—Govern, Identify, Protect, Detect, Respond, and Recover—each decomposed into categories and subcategories cross-referenced to industry standards including ISO/IEC 27001, NIST SP 800-53, and COBIT. Version 2.0, released in February 2024, formalised the Govern function and broadened applicability beyond critical infrastructure to all organisation types and sizes globally. The framework is widely adopted as a baseline for cybersecurity programme assessment, board-level communication, supply-chain risk management, and regulatory compliance alignment.",
   "domain": "security",
-  "maturity": "established",
+  "maturity": "mature",
   "subClassOf": [{"@id": "urn:ngm:class:security-framework", "label": "Security Framework"}],
   "relations": {
-    "relatedTo": [
-      {"@id": "urn:ngm:class:nist", "label": "NIST"},
-      {"@id": "urn:ngm:class:nist-ai-rmf", "label": "NIST AI RMF"},
-      {"@id": "urn:ngm:class:compliance-framework", "label": "Compliance Framework"}
+    "hasPart": [
+      {"@id": "urn:ngm:class:cybersecurity-framework-core", "label": "Cybersecurity Framework Core"},
+      {"@id": "urn:ngm:class:cybersecurity-framework-tiers", "label": "Cybersecurity Framework Tiers"},
+      {"@id": "urn:ngm:class:cybersecurity-framework-profile", "label": "Cybersecurity Framework Profile"},
+      {"@id": "urn:ngm:class:cybersecurity-framework-govern-function", "label": "Cybersecurity Framework Govern Function"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:nist-special-publications", "label": "NIST Special Publications"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:risk-assessment", "label": "Risk Assessment"},
+      {"@id": "urn:ngm:class:asset-inventory", "label": "Asset Inventory"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:incident-response", "label": "Incident Response"},
-      {"@id": "urn:ngm:class:risk-assessment", "label": "Risk Assessment"}
+      {"@id": "urn:ngm:class:supply-chain-risk-management", "label": "Supply Chain Risk Management"},
+      {"@id": "urn:ngm:class:security-governance", "label": "Security Governance"},
+      {"@id": "urn:ngm:class:threat-detection", "label": "Threat Detection"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:nist-sp-800-53", "label": "NIST SP 800-53"},
+      {"@id": "urn:ngm:class:vulnerability-management", "label": "Vulnerability Management"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:cybersecurity-risk-management", "label": "Cybersecurity Risk Management"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:risk-register", "label": "Risk Register"},
+      {"@id": "urn:ngm:class:control-mapping", "label": "Control Mapping"}
     ],
     "supports": [
       {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"},
-      {"@id": "urn:ngm:class:compliance-monitoring", "label": "Compliance Monitoring"}
+      {"@id": "urn:ngm:class:compliance-monitoring", "label": "Compliance Monitoring"},
+      {"@id": "urn:ngm:class:cyber-insurance", "label": "Cyber Insurance"}
     ],
     "standardizedBy": [
       {"@id": "urn:ngm:class:nist", "label": "NIST"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:iso-iec-27001", "label": "ISO/IEC 27001"},
+      {"@id": "urn:ngm:class:soc-2", "label": "SOC 2"},
+      {"@id": "urn:ngm:class:cis-controls", "label": "CIS Controls"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:nist-ai-rmf", "label": "NIST AI RMF"},
+      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:nist", "label": "NIST"},
+      {"@id": "urn:ngm:class:compliance-framework", "label": "Compliance Framework"},
+      {"@id": "urn:ngm:class:zero-trust-architecture", "label": "Zero Trust Architecture"},
+      {"@id": "urn:ngm:class:critical-infrastructure-protection", "label": "Critical Infrastructure Protection"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:csf", "label": "CSF"},
+    {"@id": "urn:ngm:class:nist-csf", "label": "NIST CSF"}
+  ],
+  "quality": 0.76,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-13T00:00:00Z",
+    "inferenceRule": "ManualEnrichment"
+  }
 }
 ```
 
 - ### Definition
-  - The [[NIST Cybersecurity Framework]] is a voluntary, outcomes-based [[Security Framework]] published by [[NIST]] that organises cybersecurity risk management across six core functions—Govern, Identify, Protect, Detect, Respond, and Recover—providing a common language for [[Risk Assessment]] and programme communication across organisations of all sizes.
+  - The [[NIST Cybersecurity Framework]] (CSF) is a voluntary, outcomes-based [[Security Framework]] published by [[NIST]] that organises cybersecurity risk management across six core functions—Govern, Identify, Protect, Detect, Respond, and Recover. It provides a shared language for practitioners, executives, and regulators to assess security posture, prioritise investments, and communicate [[Cybersecurity Risk Management]] strategies. The framework cross-references its subcategories to established controls in [[NIST SP 800-53]], [[ISO/IEC 27001]], and COBIT, enabling organisations to translate CSF outcomes into actionable technical requirements without prescribing specific technology choices. CSF 2.0, released in February 2024, introduced the Govern function to address enterprise-level accountability and expanded [[Supply Chain Risk Management]] guidance.
+
+- ### Overview
+  - **Purpose and origin**: The framework originated from Executive Order 13636 (2013), which directed NIST to collaborate with private industry on protecting critical infrastructure. Version 1.0 published in February 2014 distilled existing standards into an accessible, technology-neutral structure widely adopted beyond its original critical-infrastructure scope.
+  - **Why it matters**: CSF reframed cybersecurity as [[Risk Assessment]] and risk management rather than purely technical compliance, enabling board-level conversations about security posture and investment prioritisation. Federal agencies, insurers, and international regulators use it as a programme baseline.
+  - **Scope**: CSF 2.0 (2024) expanded applicability to all organisation types—government, commercial, non-profit, and small business—and all sector verticals globally, not only US critical infrastructure.
+  - **Structure overview**: The framework is organised into three layers: the Core (functions, categories, subcategories), Tiers (1–4 characterising programme maturity), and Profiles (current versus target security state). Gap analysis between profiles produces a prioritised [[Security Governance]] roadmap.
+  - **Complementary resources**: NIST publishes companion [[Quick Start Guides]], implementation examples, and sector-specific Community Profiles. The CSF is designed to coexist with, not replace, more prescriptive frameworks such as [[NIST SP 800-53]] for federal systems.
+
+- ### Key Components
+  - **Core Functions**
+    - **Govern (GV)** — Added in CSF 2.0; addresses organisational context, risk management strategy, supply-chain risk governance, roles and responsibilities, and oversight. Underpins all other functions.
+    - **Identify (ID)** — Establishes organisational understanding of assets, business environment, governance, risk assessment, and risk management strategy. Requires a mature [[Asset Inventory]] and [[Risk Register]].
+    - **Protect (PR)** — Implements safeguards to deliver critical infrastructure services: identity management, awareness training, data security, protective technology, and [[Vulnerability Management]].
+    - **Detect (DE)** — Defines activities to identify cybersecurity events through continuous monitoring and [[Threat Detection]] processes. Includes anomaly detection and event logging.
+    - **Respond (RS)** — Supports the ability to contain the impact of a cybersecurity event. Maps to [[Incident Response]] planning, communications, mitigation, and improvements.
+    - **Recover (RC)** — Supports timely restoration of capabilities impaired by a cybersecurity incident. Addresses recovery planning, improvements, and communications.
+  - **Tiers**
+    - Tier 1 (Partial) — Cybersecurity risk practices are ad hoc and reactive.
+    - Tier 2 (Risk Informed) — Risk management is approved but not organisation-wide.
+    - Tier 3 (Repeatable) — Formal risk management practices are adopted across the organisation.
+    - Tier 4 (Adaptive) — Practices continuously adapt based on lessons learned and threat intelligence. Not every organisation needs Tier 4; tiers describe posture, not compliance grades.
+  - **Profiles**
+    - A **Current Profile** describes security outcomes the organisation currently achieves.
+    - A **Target Profile** describes desired outcomes aligned to business objectives and risk tolerance.
+    - The gap between current and target drives prioritised investment decisions.
+  - **Informative References**
+    - CSF subcategories cross-reference [[Control Mapping]] to [[NIST SP 800-53]], ISO/IEC 27001, [[CIS Controls]], COBIT, and sector-specific standards. The NIST Online Informative References (OLIR) programme maintains living mappings.
+
+- ### Applications and Use Cases
+  - **Enterprise security programme baselines**: Organisations construct a CSF profile against their current security posture and use gap analysis to prioritise remediation and investment. Healthcare, finance, energy, and manufacturing verticals each have community profiles tailored to sector risks.
+  - **Board and executive communication**: CSF functions provide a non-technical vocabulary for presenting security risk to boards and C-suite. The Govern function in CSF 2.0 explicitly supports accountability structures and escalation paths.
+  - **Supply-chain risk management**: CSF 2.0 expanded guidance on [[Supply Chain Risk Management]], enabling organisations to assess and communicate cybersecurity expectations to suppliers and third-party service providers.
+  - **Regulatory alignment**: Many US regulations (HIPAA, NERC CIP, CMMC) and international frameworks (EU NIS2 Directive, Singapore's CSA Cybersecurity Code of Practice) reference or map to CSF, enabling organisations to demonstrate [[Regulatory Compliance]] through a single assessment.
+  - **Cyber insurance underwriting**: Insurers use CSF tier attainment and profile completeness as inputs to cyber liability pricing and coverage decisions. [[Cyber Insurance]] policies increasingly require documented CSF assessments.
+  - **Mergers and acquisitions due diligence**: Acquirers use CSF assessments to rapidly characterise the cybersecurity risk exposure of acquisition targets.
+  - **AI system security**: NIST developed guidance mapping CSF 2.0 to the [[NIST AI RMF]] to address AI-specific attack surfaces such as adversarial inputs, model extraction, and data poisoning—bridging [[AI Governance]] with traditional cybersecurity risk management.
+  - **Small and medium enterprises**: NIST's CSF 2.0 Small Business Quick-Start Guide and associated community profiles lower the barrier for organisations without dedicated security teams.
+  - **Federal government**: US federal agencies use CSF in conjunction with [[NIST SP 800-53]] and FISMA to structure agency security programmes and supply-chain vetting under NIST's National Cybersecurity Strategy implementation.
+  - **Critical infrastructure protection**: The framework originated for [[Critical Infrastructure Protection]] (energy grids, water systems, transport networks) and remains the baseline for sector-specific risk management in those environments.
 
 - ### Relationships
-  - The NIST Cybersecurity Framework sits within a family of [[NIST]] standards alongside the [[NIST AI RMF]], and maps to other [[Compliance Framework]] instruments such as ISO/IEC 27001 and SOC 2. It enables structured [[Incident Response]] planning and systematic [[Risk Assessment]], and organisations use it to demonstrate [[Regulatory Compliance]] to auditors and regulators. [[Compliance Monitoring]] tools frequently reference CSF tiers and profiles to measure programme maturity.
+  - hasPart:: [[Cybersecurity Framework Core]]
+  - hasPart:: [[Cybersecurity Framework Tiers]]
+  - hasPart:: [[Cybersecurity Framework Profile]]
+  - hasPart:: [[Cybersecurity Framework Govern Function]]
+  - partOf:: [[NIST Special Publications]]
+  - requires:: [[Risk Assessment]]
+  - requires:: [[Asset Inventory]]
+  - enables:: [[Incident Response]]
+  - enables:: [[Supply Chain Risk Management]]
+  - enables:: [[Security Governance]]
+  - enables:: [[Threat Detection]]
+  - dependsOn:: [[NIST SP 800-53]]
+  - dependsOn:: [[Vulnerability Management]]
+  - implements:: [[Cybersecurity Risk Management]]
+  - uses:: [[Risk Register]]
+  - uses:: [[Control Mapping]]
+  - supports:: [[Regulatory Compliance]]
+  - supports:: [[Compliance Monitoring]]
+  - supports:: [[Cyber Insurance]]
+  - standardizedBy:: [[NIST]]
+  - contrastsWith:: [[ISO/IEC 27001]]
+  - contrastsWith:: [[SOC 2]]
+  - contrastsWith:: [[CIS Controls]]
+  - bridgesTo:: [[NIST AI RMF]]
+  - bridgesTo:: [[AI Governance]]
+  - relatedTo:: [[Compliance Framework]]
+  - relatedTo:: [[Zero Trust Architecture]]
+  - relatedTo:: [[Critical Infrastructure Protection]]
 
-- ### Content
-  - The NIST Cybersecurity Framework was first released in February 2014 pursuant to Executive Order 13636, which directed NIST to work with the private sector on protecting critical infrastructure. The initial version drew heavily on existing standards—including ISO 27001, COBIT, and NIST SP 800-53—synthesising them into an accessible, technology-neutral structure. Adoption spread far beyond the critical infrastructure sectors originally targeted, with hospitals, universities, small businesses, and multinational corporations using the framework as a programme assessment and board-level communication tool.
+- ### Standards and Context
+  - **Standards body**: [[NIST]] (National Institute of Standards and Technology), a non-regulatory agency of the US Department of Commerce. NIST does not mandate CSF adoption but publishes it as a voluntary consensus framework developed through industry workshops and public comment processes.
+  - **Key companion standards**:
+    - [[NIST SP 800-53]] — Security and Privacy Controls for Information Systems and Organisations (prescriptive control catalogue; CSF subcategories map to SP 800-53 controls)
+    - [[ISO/IEC 27001]] — International standard for Information Security Management Systems; CSF aligns to but does not duplicate 27001's certification structure
+    - [[CIS Controls]] — Center for Internet Security's prioritised control set; frequently mapped alongside CSF subcategories
+    - COBIT — IT governance framework; CSF Govern function draws on COBIT governance structures
+    - NIST AI RMF (2023) — Risk management framework for AI systems; NIST published crosswalk guidance linking CSF 2.0 and AI RMF functions
+  - **Legislative and regulatory anchors**:
+    - Executive Order 13636 (2013) — initiated framework development
+    - Cybersecurity Enhancement Act of 2014 — codified NIST's role in voluntary framework maintenance
+    - Executive Order 14028 (2021, Improving the Nation's Cybersecurity) — accelerated CSF adoption in federal supply chains
+    - US National Cybersecurity Strategy (2023) — references CSF as cornerstone of voluntary sector alignment
+    - EU NIS2 Directive (2022) — European critical infrastructure regulation that cross-references CSF-compatible risk management obligations
+  - **Versioning**:
+    - CSF 1.0 — February 2014
+    - CSF 1.1 — April 2018 (added supply chain risk, authentication guidance, self-assessment metrics)
+    - CSF 2.0 — February 2024 (added Govern function, expanded scope, new implementation examples)
+  - **Adoption indicators**: The framework is referenced in procurement requirements, insurance questionnaires, and board-level risk reporting globally. Its voluntary nature and technology-neutrality have driven adoption in jurisdictions and sectors far beyond the original US critical infrastructure scope.
 
-  - The framework operates on three levels: the Core (what to do), Tiers (how mature the organisation is), and Profiles (current versus target state). Organisations construct a Current Profile representing existing security activities and a Target Profile reflecting desired outcomes, then use the gap as a prioritised improvement roadmap. The Core functions decompose into 23 categories and over 100 subcategories, each cross-referenced to specific controls in companion standards. This mapping structure enables organisations to translate CSF language into actionable technical requirements without prescribing specific technology choices.
-
-  - The CSF's significance derives from its role as a lingua franca between security practitioners, executives, and regulators. By framing cybersecurity as risk management rather than technical compliance, it shifted board-level conversations from check-box audits to continuous risk posture assessment. Federal agencies use it as a baseline for supply-chain risk management requirements, and insurance underwriters reference CSF tier attainment in cyber policy pricing. Its international influence is evident in derivative frameworks adopted by the EU Agency for Cybersecurity (ENISA) and regulators across Asia-Pacific.
-
-  - CSF 2.0, released in February 2024, introduced the Govern function to address the gap in accountability and enterprise risk oversight identified in post-mortems of major incidents. The update also expanded supply-chain cybersecurity guidance and published profiles tailored to specific sectors. In 2025, NIST began work on AI-specific implementation guidance mapping CSF 2.0 to the NIST AI RMF, recognising that AI systems introduce novel attack surfaces—adversarial inputs, model extraction, and data poisoning—not captured by conventional security controls.
-
+- ### Provenance
+  - sources:: NIST Special Publication NIST Cybersecurity Framework 2.0 (2024); NIST CSF 1.1 (2018); Executive Order 13636 (2013); NIST AI RMF 1.0 (2023)
+  - updated:: 2026-06-13

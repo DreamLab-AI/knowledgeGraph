@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:hash-time-locked-contract",
   "domain": "blockchain",
-  "definition": "A Hash Time-Locked Contract (HTLC) is a type of smart contract that conditionally transfers funds to a recipient only if they can present a cryptographic preimage satisfying a specified hash condition within a defined time window; if the condition is unmet before the timeout, the funds revert to the sender. HTLCs are foundational to trustless cross-chain atomic swaps and payment channel networks such as the Lightning Network, enabling conditional payment routing without requiring both parties to trust each other or a custodial intermediary. The hashlock ensures atomicity\u2014either both legs of a swap complete or neither does\u2014whilst the timelock enforces a bounded settlement window. HTLCs are a primitive from which more complex decentralised finance protocols are constructed.",
+  "definition": "A Hash Time-Locked Contract (HTLC) is a type of smart contract that conditionally releases funds to a recipient only if they present a valid cryptographic preimage satisfying a specified hash condition within a defined time window; if the condition remains unmet before the timeout expires, the funds automatically revert to the sender. HTLCs combine two complementary mechanisms\u2014a hashlock, which binds settlement to knowledge of a secret, and a timelock, which enforces a bounded settlement window\u2014to achieve trustless atomicity across one or more blockchain ledgers. They are foundational to payment channel networks such as the Lightning Network and to cross-chain atomic swap protocols, enabling conditional payment routing without custodial intermediaries or mutual trust. As a composable on-chain primitive, HTLCs underpin a wide range of decentralised finance and interoperability constructs.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:smart-contract",
@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.74,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
@@ -23,8 +23,16 @@
         "label": "Cryptographic Hash Function"
       },
       {
-        "id": "urn:ngm:class:atomic-swap",
-        "label": "Atomic Swap"
+        "id": "urn:ngm:class:timelock",
+        "label": "Timelock"
+      },
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
       }
     ],
     "enables": [
@@ -33,19 +41,84 @@
         "label": "Lightning Network"
       },
       {
+        "id": "urn:ngm:class:atomic-swap",
+        "label": "Atomic Swap"
+      },
+      {
         "id": "urn:ngm:class:cross-chain-interoperability",
         "label": "Cross-Chain Interoperability"
       },
       {
         "id": "urn:ngm:class:micropayments",
         "label": "Micropayments"
+      },
+      {
+        "id": "urn:ngm:class:payment-channel",
+        "label": "Payment Channel"
+      },
+      {
+        "id": "urn:ngm:class:trustless-transaction",
+        "label": "Trustless Transaction"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-transaction",
+        "label": "Blockchain Transaction"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:atomic-swap",
+        "label": "Atomic Swap"
+      },
+      {
+        "id": "urn:ngm:class:conditional-payment",
+        "label": "Conditional Payment"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:point-time-locked-contract",
+        "label": "Point Time-Locked Contract"
+      },
+      {
+        "id": "urn:ngm:class:custodial-exchange",
+        "label": "Custodial Exchange"
+      },
+      {
+        "id": "urn:ngm:class:trusted-third-party",
+        "label": "Trusted Third Party"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:sha-256",
+        "label": "SHA-256"
+      },
+      {
+        "id": "urn:ngm:class:script",
+        "label": "Script"
+      },
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public-Key Cryptography"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
@@ -61,6 +134,14 @@
       {
         "id": "urn:ngm:class:de-fi",
         "label": "DeFi"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:adaptor-signature",
+        "label": "Adaptor Signature"
       }
     ]
   },

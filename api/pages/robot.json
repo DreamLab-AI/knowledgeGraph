@@ -5,38 +5,151 @@
   "public": true,
   "classIri": "urn:ngm:class:robot",
   "domain": "robotics",
-  "definition": "A robot is an actuated mechanism programmable in two or more axes with a degree of autonomy, moving within its environment, to perform intended tasks.",
+  "definition": "A robot is an actuated mechanism, programmable in two or more axes with a degree of autonomy, that moves within its environment to perform intended tasks without direct human intervention at the moment of task execution. Robots integrate mechanical structure, actuation, sensing, and control software to perceive their environment, reason about goals, and execute physical or digital actions. The concept spans a wide spectrum from fixed industrial manipulators to mobile autonomous agents, collaborative cobots, and software robots (robotic process automation). Standardised by ISO 8373:2021, the definition distinguishes robots from simple automated machines by requiring reprogrammability and environmental interaction.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:robo-robot-type",
-      "label": "Robot Type"
+      "id": "urn:ngm:class:mechatronic-system",
+      "label": "Mechatronic System"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "established",
+  "qualityScore": 0.72,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [
+    "hasPart": [
       {
-        "id": "urn:ngm:class:mechatronic-system",
-        "label": "MechatronicSystem"
+        "id": "urn:ngm:class:actuator",
+        "label": "Actuator"
       },
       {
-        "id": "urn:ngm:class:autonomous-agent",
-        "label": "AutonomousAgent"
+        "id": "urn:ngm:class:sensor",
+        "label": "Sensor"
+      },
+      {
+        "id": "urn:ngm:class:robot-controller",
+        "label": "Robot Controller"
+      },
+      {
+        "id": "urn:ngm:class:end-effector",
+        "label": "End Effector"
+      },
+      {
+        "id": "urn:ngm:class:robot-operating-system",
+        "label": "Robot Operating System"
       }
     ],
-    "relatedTo": []
+    "requires": [
+      {
+        "id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "id": "urn:ngm:class:kinematics",
+        "label": "Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:real-time-control",
+        "label": "Real-Time Control"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:industrial-automation",
+        "label": "Industrial Automation"
+      },
+      {
+        "id": "urn:ngm:class:robot-process-automation",
+        "label": "Robotic Process Automation"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:embedded-system",
+        "label": "Embedded System"
+      },
+      {
+        "id": "urn:ngm:class:power-system",
+        "label": "Power System"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      },
+      {
+        "id": "urn:ngm:class:automated-machine",
+        "label": "Automated Machine"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:simultaneous-localisation-and-mapping",
+        "label": "Simultaneous Localisation and Mapping"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-8373",
+        "label": "ISO 8373"
+      },
+      {
+        "id": "urn:ngm:class:iec-62061",
+        "label": "IEC 62061"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:robotic-system",
+        "label": "Robotic System"
+      },
+      {
+        "id": "urn:ngm:class:cyber-physical-system",
+        "label": "Cyber-Physical System"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cobotic-system",
+        "label": "Cobotic System"
+      },
+      {
+        "id": "urn:ngm:class:drone",
+        "label": "Drone"
+      },
+      {
+        "id": "urn:ngm:class:humanoid-robot",
+        "label": "Humanoid Robot"
+      }
+    ]
   },
   "wikilinks": [
     {

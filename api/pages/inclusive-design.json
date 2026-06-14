@@ -4,8 +4,8 @@
   "slug": "inclusive-design",
   "public": true,
   "classIri": "urn:ngm:class:inclusive-design",
-  "domain": "web",
-  "definition": "Inclusive design is a design methodology and philosophy that creates products, services, environments, and digital experiences to be usable by the widest possible range of people across diverse abilities, ages, languages, cultures, and contexts, without requiring specialised adaptations or separate versions for different user groups. It treats human diversity as a design resource rather than a problem to be accommodated, recognising that designing for people with disabilities, situational impairments, or non-standard use contexts typically produces solutions that benefit all users. The approach is distinct from universal design in emphasising process \u2014 including people with diverse characteristics as active co-designers throughout \u2014 rather than solely optimising for a single configuration serving all.",
+  "domain": "governance",
+  "definition": "Inclusive design is a design methodology and philosophy that creates products, services, environments, and digital experiences to be usable by the widest possible range of people across diverse abilities, ages, languages, cultures, and contexts, without requiring specialised adaptations or separate versions for different user groups. It treats human diversity as a design resource rather than a problem to be accommodated, recognising that designing for people with disabilities, situational impairments, or non-standard use contexts typically produces solutions that benefit all users. The approach is distinct from universal design in emphasising process \u2014 including people with diverse characteristics as active co-designers throughout \u2014 rather than solely optimising for a single configuration serving all. Across digital, spatial, and AI-mediated systems, inclusive design establishes both participatory methods and measurable technical criteria that reduce systematic exclusion.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:universal-design",
@@ -13,11 +13,20 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.75,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:user-centred-design",
+        "label": "User Centred Design"
+      },
+      {
+        "id": "urn:ngm:class:co-design",
+        "label": "Co-Design"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:inclusive-xr-design",
@@ -30,12 +39,42 @@
       {
         "id": "urn:ngm:class:inclusive-participation",
         "label": "Inclusive Participation"
+      },
+      {
+        "id": "urn:ngm:class:digital-equity",
+        "label": "Digital Equity"
+      },
+      {
+        "id": "urn:ngm:class:assistive-technology",
+        "label": "Assistive Technology"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:universal-design",
+        "label": "Universal Design"
+      },
+      {
+        "id": "urn:ngm:class:retrofitting",
+        "label": "Retrofitting"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-fairness",
+        "label": "AI Fairness"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-bias",
+        "label": "Algorithmic Bias"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:accessibility",
@@ -48,10 +87,31 @@
       {
         "id": "urn:ngm:class:interaction-design",
         "label": "Interaction Design"
+      },
+      {
+        "id": "urn:ngm:class:participatory-design",
+        "label": "Participatory Design"
+      },
+      {
+        "id": "urn:ngm:class:user-research",
+        "label": "User Research"
       }
     ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:wcag",
+        "label": "WCAG"
+      },
+      {
+        "id": "urn:ngm:class:wai-aria",
+        "label": "WAI-ARIA"
+      },
+      {
+        "id": "urn:ngm:class:european-accessibility-act",
+        "label": "European Accessibility Act"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -61,6 +121,18 @@
       {
         "id": "urn:ngm:class:digital-technology-access-equity",
         "label": "Equity"
+      },
+      {
+        "id": "urn:ngm:class:usability",
+        "label": "Usability"
+      },
+      {
+        "id": "urn:ngm:class:disability-rights",
+        "label": "Disability Rights"
+      },
+      {
+        "id": "urn:ngm:class:design-thinking",
+        "label": "Design Thinking"
       }
     ]
   },

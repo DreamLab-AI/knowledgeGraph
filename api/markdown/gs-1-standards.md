@@ -1,20 +1,85 @@
 - ### Definition
-  - GS1 standards are a global system of identification keys, barcodes and data formats that uniquely identify products, locations and assets across supply chains.
+  - GS1 Standards are a globally adopted, open framework of identification keys, data carriers, and messaging formats governing how [[Supply Chain]] participants uniquely identify and share information about products, logistic units, locations, and assets. Maintained by the [[GS1 Organisation]] — a neutral, non-profit body with member organisations in over 115 countries — the system underpins everyday commerce from retail scanning to pharmaceutical serialisation, providing the shared language that enables [[Interoperability]] across organisations, sectors, and countries. GS1 Standards increasingly bridge into the digital domain through [[GS1 Digital Link]], [[Linked Data]] approaches, and [[Digital Product Passport]] mandates driven by regulation.
 
-- ### Semantic Classification
-  - owl-class:: metaverse:GS1Standards
-  - owl-role:: Class
+- ### Overview
+  - GS1 Standards emerged from the early 1970s when the US grocery industry needed a common product-numbering scheme; the 12-digit UPC (Universal Product Code) was adopted for retail scanning in 1974. The international extension became EAN (European Article Number), and the governing body eventually unified under the GS1 brand in 2005.
+  - The system rests on three pillars:
+    - **Identify**: unique, unambiguous identifiers (GS1 identification keys) for any entity in a supply chain — products, locations, shipments, assets, coupons, service relations.
+    - **Capture**: data carriers — printed [[Barcode]] symbols (1D and 2D) and [[RFID]] tags — that encode those identifiers so they can be read automatically by scanners and readers at any point in the chain.
+    - **Share**: messaging standards ([[Electronic Data Interchange]], [[EPCIS]], web services, GS1 Cloud) that let trading partners exchange master data and transactional event data in a consistent format.
+  - GS1 Standards are used in retail, grocery, fashion, healthcare, foodservice, transport and logistics, aerospace, and government/defence sectors worldwide, making them one of the most pervasively deployed business standards in existence.
+
+- ### Key Components
+  - #### Identification Keys
+    - **[[Global Trade Item Number]] (GTIN)** — the primary identifier for any trade item (product or service); encoded in EAN-8, EAN-13, UPC-A, UPC-E, or GS1 DataBar barcodes and used globally by retailers and e-commerce platforms.
+    - **[[Global Location Number]] (GLN)** — uniquely identifies legal entities, functional entities, or physical locations (warehouses, stores, dock doors) enabling unambiguous addressing in [[Electronic Data Interchange]] messages.
+    - **[[Serial Shipping Container Code]] (SSCC)** — 18-digit identifier applied to a logistics unit (pallet, case, tote) encoding the shipper's GS1 Company Prefix plus a serial reference; the basis of pallet tracking.
+    - **[[Electronic Product Code]] (EPC)** — extends GS1 keys to instance-level serialisation for [[RFID]] environments; underpins the EPC/RFID standard suite and links into [[EPCIS]] event capture.
+    - **Global Returnable Asset Identifier (GRAI)** and **Global Individual Asset Identifier (GIAI)** — for returnable packaging and fixed assets respectively.
+    - **Global Service Relation Number (GSRN)** — identifies service recipients and providers (e.g. patients in healthcare settings).
+  - #### Data Carriers
+    - **[[Barcode]]s (1D)**: EAN-13/UPC-A (retail point-of-sale), GS1-128 (logistics), GS1 DataBar (small items, variable-weight produce).
+    - **[[QR Code]] / GS1 QR**: the GS1-conformant 2D matrix code increasingly used on consumer packaging to link to [[GS1 Digital Link]] URIs; replaces legacy 1D barcodes at point-of-sale by 2027 per GS1's "Sunrise 2027" initiative.
+    - **DataMatrix**: ISO 15415/15416 compliant 2D code used extensively in healthcare (unit-of-use dose tracking) and electronics.
+    - **[[RFID]]**: EPC Gen2 / ISO 18000-63 UHF RFID tags; widely deployed in fashion retail, aerospace, and warehousing for high-speed bulk scanning without line-of-sight.
+  - #### Data Exchange Standards
+    - **[[Electronic Data Interchange]] (EDI)**: GS1 EANCOM and GS1 XML message sets for purchase orders, advance ship notices (ASNs), invoices, and inventory advice between [[Supply Chain]] partners.
+    - **[[EPCIS]] (EPC Information Services)**: ISO/IEC 19987 standard for capturing and sharing supply chain events (ObjectEvent, AggregationEvent, TransactionEvent, TransformationEvent) in near-real-time; core technology for [[Product Traceability]] in food, pharma, and retail.
+    - **GS1 Cloud**: hosted repository for GTIN master data (product descriptions, images, classifications) enabling cross-industry [[Data Synchronisation]].
+    - **GS1 Web Vocabulary**: [[Linked Data]] / [[Semantic Web]] vocabulary for describing GS1-identified entities in JSON-LD and RDF, enabling integration with schema.org and W3C knowledge graph ecosystems.
+    - **[[GS1 Digital Link]]**: W3C-aligned URI syntax (ISO/IEC 18975) that embeds GS1 keys directly into a web URL, allowing [[QR Code]] scans to resolve to structured, linkable digital information — product pages, recall notices, [[Digital Product Passport]] documents.
+
+- ### Applications
+  - #### Retail and E-Commerce
+    - Point-of-sale scanning: EAN/UPC barcodes on virtually every consumer product worldwide.
+    - Online product catalogues: GTINs are the mandatory product identifier on platforms such as Google Shopping, Amazon, and eBay.
+    - [[Inventory Management]]: SSCC-labelled pallets tracked through distribution centres using EDI ASNs.
+  - #### Healthcare and Pharmaceutical
+    - Unit-of-use serialisation: GTIN + lot + expiry + serial number encoded in DataMatrix for individual drug packs; mandated by regulations such as the EU Falsified Medicines Directive and US Drug Supply Chain Security Act (DSCSA).
+    - Medical device identification: GTINs in US FDA Unique Device Identification (UDI) system and EU MDR/IVDR.
+    - Patient and caregiver identification via GSRN in hospital wristband scanning.
+  - #### Food Safety and Traceability
+    - [[Product Traceability]]: EPCIS event logs enable one-up/one-down traceability for fresh produce, meat, and seafood, satisfying FSMA 204 (US) and EU General Food Law obligations.
+    - Outbreak response: rapid identification of affected lots and distribution trail using GLN-linked location data.
+  - #### Logistics and Transport
+    - Pallet tracking across 3PL networks using SSCC and EDI 856 (ASN).
+    - Container and asset management (GIAI) in port logistics.
+    - Cross-border customs data harmonisation.
+  - #### [[Digital Product Passport]]
+    - GS1 Digital Link URIs embedded in [[QR Code]]s or [[RFID]] tags enable scanning to retrieve EU Digital Product Passport data (recycled content, repairability, carbon footprint) mandated under the Ecodesign for Sustainable Products Regulation (ESPR).
+    - Bridges physical product identity into web-accessible [[Linked Data]] and [[Verifiable Credentials]] trust frameworks.
+  - #### [[Internet of Things]]
+    - EPC/RFID and GS1 Digital Link provide machine-readable identities for IoT device-connected physical assets.
+    - Integration with MQTT and REST APIs enables real-time visibility of goods in transit.
 
 - ### Relationships
-  - is-subclass-of:: [[Standards]]
-  - bridges-to:: [[Open Standards]], [[Internet of Things]]
-  - requires:: [[Standards]]
-  - enables:: [[Supply Chain]]
+  - hasPart:: [[Global Trade Item Number]], [[Global Location Number]], [[Serial Shipping Container Code]], [[Electronic Product Code]], [[GS1 Digital Link]], [[EAN Barcode]]
+  - enables:: [[Supply Chain]], [[Digital Product Passport]], [[Product Traceability]], [[Inventory Management]]
+  - requires:: [[Open Standards]], [[Data Governance]]
+  - supports:: [[Internet of Things]], [[Interoperability]], [[Regulatory Compliance]]
+  - implements:: [[Electronic Data Interchange]], [[EPCIS]]
+  - uses:: [[Barcode]], [[RFID]], [[QR Code]]
+  - standardizedBy:: [[GS1 Organisation]]
+  - contrastsWith:: [[Proprietary Identification]]
+  - bridges-to:: [[Verifiable Credentials]], [[Semantic Web]], [[Linked Data]]
+  - relatedTo:: [[ISO Standards]], [[Product Master Data]], [[Data Synchronisation]]
 
-- ### Content
-  - GS1 defines identification keys such as the global trade item number and encodings including linear and two-dimensional barcodes, alongside data exchange formats. These let trading partners refer to the same physical item consistently across organisations.
-  - The standards underpin retail scanning, logistics tracking and increasingly digital product passports that link physical goods to online records. They connect physical supply chains to internet-of-things and data interchange systems.
+- ### Standards & Context
+  - **GS1 General Specifications** — the master technical specification (updated annually) covering all GS1 identification keys, data carriers, and application standards; effectively the constitutional document of the GS1 system.
+  - **ISO/IEC 15961-15963** — encoding rules for [[RFID]] data, cross-referencing EPC standards.
+  - **ISO/IEC 19987 (EPCIS 2.0)** — international standard for supply chain event visibility based on the GS1 EPCIS specification.
+  - **ISO/IEC 18975 (GS1 Digital Link)** — URI syntax for linking GS1 identifiers to web resources.
+  - **ISO/IEC 15415, 15416** — print quality and verification standards for 2D symbols (DataMatrix, QR).
+  - **GS1 Sunrise 2027** — industry initiative to update retail point-of-sale systems globally to accept 2D [[QR Code]]s (GS1 Digital Link) alongside legacy EAN/UPC linear barcodes, enabling richer [[Product Traceability]] and consumer information access.
+  - **Regulatory alignment**: EU Falsified Medicines Directive, US DSCSA, FDA UDI, EU MDR/IVDR, EU ESPR/Digital Product Passport mandate GS1 Standards as preferred or mandated identification mechanisms.
+  - GS1 works alongside [[ISO Standards]], the W3C ([[Linked Data]], [[Semantic Web]]), and the UN/EDIFACT bodies. GS1 EANCOM is a profile of UN/EDIFACT; GS1 XML aligns with UN/CEFACT.
+
+- ### Governance and Organisation
+  - GS1 is a global, neutral, non-profit standards organisation — not a commercial entity selling licences.
+  - The GS1 Company Prefix (allocated through national GS1 member organisations) is the founding block for constructing all GS1 identification keys; companies purchase the prefix, giving them a namespace of unique identifiers.
+  - Global standards governance occurs through GS1 Global Office (Brussels, Belgium) with input from national member organisations (GS1 UK, GS1 US, GS1 Germany, etc.) and industry user groups.
+  - The [[Open Standards]] nature of GS1 ensures any trading partner can implement without patent royalties, though the Company Prefix carries an annual licence fee.
 
 - ### Provenance
-  - sources::
-  - migration-date:: 2026-05-29T00:00:00Z
+  - sources:: GS1 General Specifications (annual release); ISO/IEC 19987:2024 (EPCIS 2.0); ISO/IEC 18975 (GS1 Digital Link); GS1 Sunrise 2027 programme documentation
+  - updated:: 2026-06-13

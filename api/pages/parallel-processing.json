@@ -5,22 +5,47 @@
   "public": true,
   "classIri": "urn:ngm:class:parallel-processing",
   "domain": "infrastructure",
-  "definition": "Parallel Processing is a computational paradigm in which multiple calculations or processes are executed simultaneously by dividing a problem into sub-tasks that run concurrently across multiple processor cores, GPUs, or distributed nodes. It underpins modern machine learning training, real-time rendering, and large-scale data pipelines.",
+  "definition": "Parallel Processing is a computational paradigm in which multiple calculations or processes are carried out simultaneously by decomposing a problem into sub-tasks that execute concurrently across multiple processor cores, GPUs, or distributed compute nodes. It exploits data parallelism, task parallelism, and pipeline parallelism to reduce wall-clock execution time and increase throughput. Parallel processing is foundational to modern high-performance computing, enabling workloads such as large-scale neural network training, real-time physics simulation, and petabyte-scale data analytics that would be infeasible on sequential hardware.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:infra-computing-and-cloud",
-      "label": "Computing and Cloud"
+      "id": "urn:ngm:class:computing-infrastructure",
+      "label": "Computing Infrastructure"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "emerging",
+  "qualityScore": 0.72,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:data-parallelism",
+        "label": "Data Parallelism"
+      },
+      {
+        "id": "urn:ngm:class:task-parallelism",
+        "label": "Task Parallelism"
+      },
+      {
+        "id": "urn:ngm:class:pipeline-parallelism",
+        "label": "Pipeline Parallelism"
+      },
+      {
+        "id": "urn:ngm:class:simd",
+        "label": "SIMD"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:computing-infrastructure",
         "label": "Computing Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:memory-bandwidth",
+        "label": "Memory Bandwidth"
+      },
+      {
+        "id": "urn:ngm:class:interconnect",
+        "label": "Interconnect"
       }
     ],
     "enables": [
@@ -31,25 +56,94 @@
       {
         "id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:scientific-simulation",
+        "label": "Scientific Simulation"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:synchronisation",
+        "label": "Synchronisation"
+      },
+      {
+        "id": "urn:ngm:class:load-balancing",
+        "label": "Load Balancing"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:sequential-computing",
+        "label": "Sequential Computing"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:gpu-compute",
         "label": "GPU Compute"
+      },
+      {
+        "id": "urn:ngm:class:multi-core-processor",
+        "label": "Multi-Core Processor"
+      },
+      {
+        "id": "urn:ngm:class:thread",
+        "label": "Thread"
       }
     ],
     "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:openmp",
+        "label": "OpenMP"
+      },
+      {
+        "id": "urn:ngm:class:mpi",
+        "label": "MPI"
+      },
+      {
+        "id": "urn:ngm:class:cuda",
+        "label": "CUDA"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:high-performance-computing",
+        "label": "High Performance Computing"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:distributed-computing",
         "label": "Distributed Computing"
+      },
+      {
+        "id": "urn:ngm:class:concurrency",
+        "label": "Concurrency"
+      },
+      {
+        "id": "urn:ngm:class:asynchronous-programming",
+        "label": "Asynchronous Programming"
       }
     ]
   },

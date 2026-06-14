@@ -4,20 +4,42 @@
   "slug": "nvidia-omniverse-platform",
   "public": true,
   "classIri": "urn:ngm:class:nvidia-corporation-omniverse-platform-platform",
-  "domain": "metaverse",
-  "definition": "NVIDIA Omniverse is a real-time 3D simulation and collaboration platform developed by NVIDIA, built on the OpenUSD (Universal Scene Description) standard and designed for creating physically accurate digital twins, collaborative design workflows, and large-scale simulation environments for AI training. It provides a unified compute and rendering fabric that allows multiple applications and users to work simultaneously on shared 3D scenes with physically based rendering, physics simulation, and ray-traced visualisation. Omniverse is deployed across automotive design, industrial digital twins, film and game production pipelines, and as a synthetic data generation platform for training computer vision and robotics AI systems.",
+  "domain": "spatial-computing",
+  "definition": "NVIDIA Omniverse Platform is a real-time 3D simulation, rendering, and collaborative development platform built by NVIDIA on the OpenUSD (Universal Scene Description) open standard, designed to enable physically accurate digital twins, multi-user design workflows, and large-scale synthetic data generation for AI and robotics training. It provides a unified GPU-accelerated compute and rendering fabric \u2014 comprising the Nucleus collaboration server, the Kit application framework, and Connector plugins \u2014 that allows multiple applications and users to simultaneously edit shared 3D scenes with physically based rendering, ray tracing, and physics simulation. Omniverse bridges creative content-creation pipelines, industrial engineering workflows, and AI training infrastructure, with deployments spanning automotive design, factory digital twins, autonomous vehicle simulation, and robot learning environments.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:metaverse-platform",
-      "label": "Metaverse Platform"
+      "id": "urn:ngm:class:3d-collaboration-platform",
+      "label": "3D Collaboration Platform"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.75,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:nucleus-server",
+        "label": "Nucleus Server"
+      },
+      {
+        "id": "urn:ngm:class:omniverse-kit",
+        "label": "Omniverse Kit"
+      },
+      {
+        "id": "urn:ngm:class:isaac-sim",
+        "label": "Isaac Sim"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:nvidia-rtx-gpu",
+        "label": "NVIDIA RTX GPU"
+      },
+      {
+        "id": "urn:ngm:class:universal-scene-description",
+        "label": "Universal Scene Description"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:digital-twin",
@@ -30,12 +52,42 @@
       {
         "id": "urn:ngm:class:photorealistic-rendering",
         "label": "Photorealistic Rendering"
+      },
+      {
+        "id": "urn:ngm:class:synthetic-data-generation",
+        "label": "Synthetic Data Generation"
+      },
+      {
+        "id": "urn:ngm:class:robot-learning",
+        "label": "Robot Learning"
+      },
+      {
+        "id": "urn:ngm:class:collaborative-design",
+        "label": "Collaborative Design"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:unreal-engine",
+        "label": "Unreal Engine"
+      },
+      {
+        "id": "urn:ngm:class:unity-platform",
+        "label": "Unity Platform"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:sim-to-real-transfer",
+        "label": "Sim-to-Real Transfer"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:open-usd",
@@ -48,23 +100,40 @@
       {
         "id": "urn:ngm:class:gpu-computing",
         "label": "GPU Computing"
+      },
+      {
+        "id": "urn:ngm:class:ray-tracing",
+        "label": "Ray Tracing"
+      },
+      {
+        "id": "urn:ngm:class:materialx",
+        "label": "MaterialX"
+      },
+      {
+        "id": "urn:ngm:class:physx-engine",
+        "label": "PhysX Engine"
       }
     ],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:autonomous-vehicle-simulation",
+        "label": "Autonomous Vehicle Simulation"
+      },
+      {
+        "id": "urn:ngm:class:industrial-digital-twin",
+        "label": "Industrial Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision-training",
+        "label": "Computer Vision Training"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:digital-twin-framework",
-        "label": "Digital Twin Framework"
-      },
-      {
         "id": "urn:ngm:class:real-time-rendering",
         "label": "Real-Time Rendering"
-      },
-      {
-        "id": "urn:ngm:class:cross-platform-digital-twins",
-        "label": "Cross Platform Digital Twins"
       }
     ]
   },

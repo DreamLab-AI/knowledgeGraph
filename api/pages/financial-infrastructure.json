@@ -4,34 +4,103 @@
   "slug": "financial-infrastructure",
   "public": true,
   "classIri": "urn:ngm:class:financial-infrastructure",
-  "domain": "infrastructure",
-  "definition": "Financial Infrastructure comprises the foundational systems, networks, and institutions that enable the creation, exchange, and settlement of financial value. It includes payment clearing networks, custody systems, blockchain settlement layers, lightning-speed payment channels, and the regulatory reporting frameworks that underpin both traditional and decentralised financial ecosystems.",
+  "domain": "finance",
+  "definition": "Financial Infrastructure comprises the foundational systems, networks, institutions, and regulatory frameworks that enable the creation, transfer, settlement, and custody of financial value at scale. It encompasses payment clearing and settlement networks, central securities depositories, central counterparty clearinghouses, correspondent banking rails, central bank digital currency platforms, and blockchain-based settlement layers. These components collectively underpin both legacy financial systems and emerging decentralised finance ecosystems, ensuring liquidity, finality, and systemic resilience. The integrity of financial infrastructure is a prerequisite for efficient capital allocation, monetary policy transmission, and macroeconomic stability.",
   "subClassOf": [
-    {
-      "id": "urn:ngm:class:infra-computing-and-cloud",
-      "label": "Computing and Cloud"
-    },
     {
       "id": "urn:ngm:class:economic-layer",
       "label": "Economic Layer"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "emerging",
+  "qualityScore": 0.72,
+  "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:payment-network",
+        "label": "Payment Network"
+      },
+      {
+        "id": "urn:ngm:class:clearing-and-settlement",
+        "label": "Clearing and Settlement"
+      },
+      {
+        "id": "urn:ngm:class:central-securities-depository",
+        "label": "Central Securities Depository"
+      },
+      {
+        "id": "urn:ngm:class:correspondent-banking",
+        "label": "Correspondent Banking"
+      },
+      {
+        "id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      }
+    ],
     "requires": [
+      {
+        "id": "urn:ngm:class:cryptographic-protocol",
+        "label": "Cryptographic Protocol"
+      },
+      {
+        "id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:monetary-policy",
+        "label": "Monetary Policy"
+      },
+      {
+        "id": "urn:ngm:class:cross-border-payment",
+        "label": "Cross-Border Payment"
+      },
+      {
+        "id": "urn:ngm:class:tokenisation",
+        "label": "Tokenisation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:regulatory-framework",
+        "label": "Regulatory Framework"
+      },
+      {
+        "id": "urn:ngm:class:identity-and-access-management",
+        "label": "Identity and Access Management"
+      },
       {
         "id": "urn:ngm:class:blockchain-infrastructure",
         "label": "Blockchain Infrastructure"
       }
     ],
-    "enables": [],
-    "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:shadow-banking",
+        "label": "Shadow Banking"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-interoperability",
+        "label": "Blockchain Interoperability"
+      }
+    ],
     "uses": [],
     "supports": [
       {
@@ -41,18 +110,39 @@
       {
         "id": "urn:ngm:class:financial-instruments",
         "label": "Financial Instruments"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:capital-markets",
+        "label": "Capital Markets"
       }
     ],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-20022",
+        "label": "ISO 20022"
+      },
+      {
+        "id": "urn:ngm:class:swift-network",
+        "label": "SWIFT Network"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:lightning-network",
-        "label": "Lightning Network"
-      },
-      {
         "id": "urn:ngm:class:economic-layer",
         "label": "Economic Layer"
+      },
+      {
+        "id": "urn:ngm:class:systemic-risk",
+        "label": "Systemic Risk"
+      },
+      {
+        "id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
       }
     ]
   },

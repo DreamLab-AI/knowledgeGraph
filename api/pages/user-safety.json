@@ -5,19 +5,15 @@
   "public": true,
   "classIri": "urn:ngm:class:user-safety",
   "domain": "spatial-computing",
-  "definition": "User Safety in spatial computing and metaverse environments encompasses the technical, policy, and design measures that protect participants from harm including harassment, predatory behaviour, physical discomfort from extended immersive use, and unwanted exposure to harmful content. Because interactions in the metaverse occur in real-time and within spatially embodied contexts, abusive behaviour resembles physical-world harm more closely than conventional social media, demanding proactive moderation, privacy-preserving reporting mechanisms, and platform-level governance frameworks.",
+  "definition": "User Safety encompasses the technical, design, policy, and governance measures deployed by platforms and application developers to protect users from harm across digital and immersive environments, including harassment, predatory behaviour, unwanted exposure to harmful content, physical discomfort from extended use, and violations of privacy or consent. In spatially embodied contexts such as extended reality and the metaverse, abusive interactions carry heightened psychological impact because spatial audio, avatar proximity, and embodied presence amplify the subjective experience of harm beyond that typical of text-based social media. Effective user safety frameworks integrate proactive content moderation, privacy-preserving reporting, age-appropriate design, graduated enforcement mechanisms, and platform governance structures accountable to regulators and communities alike. The discipline draws on human factors research, risk management, digital rights law, and AI-driven trust-and-safety tooling to balance protection against harm with preservation of free expression and user autonomy.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:sc-governance-and-safety",
-      "label": "Governance and Safety"
-    },
-    {
-      "id": "urn:ngm:class:spatial-embodiment-harm-taxonomy",
-      "label": "Metaverse and Spatial Risks"
+      "id": "urn:ngm:class:governance-framework",
+      "label": "Governance Framework"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.72,
   "maturity": "emerging",
   "relationships": {
     "hasPart": [],
@@ -29,14 +25,79 @@
       {
         "id": "urn:ngm:class:privacy",
         "label": "Privacy"
+      },
+      {
+        "id": "urn:ngm:class:age-verification",
+        "label": "Age Verification"
+      },
+      {
+        "id": "urn:ngm:class:consent-management",
+        "label": "Consent Management"
       }
     ],
-    "enables": [],
-    "dependsOn": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:digital-wellbeing",
+        "label": "Digital Wellbeing"
+      },
+      {
+        "id": "urn:ngm:class:inclusive-design",
+        "label": "Inclusive Design"
+      },
+      {
+        "id": "urn:ngm:class:trust-and-safety",
+        "label": "Trust and Safety"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      },
+      {
+        "id": "urn:ngm:class:reputation-system",
+        "label": "Reputation System"
+      },
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:surveillance-capitalism",
+        "label": "Surveillance Capitalism"
+      },
+      {
+        "id": "urn:ngm:class:censorship",
+        "label": "Censorship"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:ai-moderation",
+        "label": "AI Moderation"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:privacy-preserving-computation",
+        "label": "Privacy-Preserving Computation"
+      }
+    ],
     "supports": [
       {
         "id": "urn:ngm:class:governance-framework",
@@ -45,6 +106,10 @@
       {
         "id": "urn:ngm:class:metaverse-safety-protocol",
         "label": "Metaverse Safety Protocol"
+      },
+      {
+        "id": "urn:ngm:class:platform-accountability",
+        "label": "Platform Accountability"
       }
     ],
     "standardizedBy": [],
@@ -57,6 +122,18 @@
       {
         "id": "urn:ngm:class:risk-management",
         "label": "Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:online-harassment",
+        "label": "Online Harassment"
+      },
+      {
+        "id": "urn:ngm:class:human-factors",
+        "label": "Human Factors"
+      },
+      {
+        "id": "urn:ngm:class:child-online-protection",
+        "label": "Child Online Protection"
       }
     ]
   },

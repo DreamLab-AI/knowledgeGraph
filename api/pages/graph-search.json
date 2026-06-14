@@ -4,20 +4,46 @@
   "slug": "graph-search",
   "public": true,
   "classIri": "urn:ngm:class:graph-search",
-  "domain": "infrastructure",
-  "definition": "Algorithms that systematically explore graph-structured state spaces to find optimal or feasible paths between configurations, forming the computational foundation for robot motion planning, task planning, and navigation. Classical methods (BFS, Dijkstra, A*) guarantee completeness or optimality on discrete graphs; sampling-based variants (RRT, PRM) address high-dimensional continuous configuration spaces.",
+  "domain": "artificial-intelligence",
+  "definition": "Graph search encompasses algorithms that systematically traverse graph-structured state spaces \u2014 sets of nodes (states) connected by edges (transitions) \u2014 to discover paths, optimal solutions, or reachable configurations satisfying given criteria. Classical uninformed methods (Breadth-First Search, Depth-First Search, Dijkstra) provide completeness and optimality guarantees on finite discrete graphs; informed heuristic methods (A*, IDA*, weighted A*) accelerate search using problem-specific cost estimates; sampling-based planners (RRT, PRM, RRT*) extend graph search to high-dimensional continuous configuration spaces by building implicit graphs from random samples. Graph search is the algorithmic backbone of robot motion planning, AI planning, knowledge graph querying, route navigation, and game-tree evaluation.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:infra-data-management",
-      "label": "Data Management"
+      "id": "urn:ngm:class:graph-algorithms",
+      "label": "Graph Algorithms"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "emerging",
+  "qualityScore": 0.72,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:breadth-first-search",
+        "label": "Breadth-First Search"
+      },
+      {
+        "id": "urn:ngm:class:depth-first-search",
+        "label": "Depth-First Search"
+      },
+      {
+        "id": "urn:ngm:class:a-star-search",
+        "label": "A* Search"
+      },
+      {
+        "id": "urn:ngm:class:dijkstra-algorithm",
+        "label": "Dijkstra Algorithm"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:graph-data-structure",
+        "label": "Graph Data Structure"
+      },
+      {
+        "id": "urn:ngm:class:heuristic-function",
+        "label": "Heuristic Function"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:motion-planning",
@@ -26,33 +52,94 @@
       {
         "id": "urn:ngm:class:navigation",
         "label": "Navigation"
+      },
+      {
+        "id": "urn:ngm:class:route-planning",
+        "label": "Route Planning"
+      },
+      {
+        "id": "urn:ngm:class:game-tree-search",
+        "label": "Game Tree Search"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [
-      {
-        "id": "urn:ngm:class:graph-algorithms",
-        "label": "Graph Algorithms"
-      },
+    "dependsOn": [
       {
         "id": "urn:ngm:class:knowledge-representation",
         "label": "Knowledge Representation"
+      },
+      {
+        "id": "urn:ngm:class:data-structures",
+        "label": "Data Structures"
       }
     ],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:evolutionary-algorithm",
+        "label": "Evolutionary Algorithm"
+      }
+    ],
+    "bridgesTo": [
       {
         "id": "urn:ngm:class:graph-neural-network",
         "label": "Graph Neural Network"
       },
       {
+        "id": "urn:ngm:class:spatial-indexing",
+        "label": "Spatial Indexing"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:heuristic-function",
+        "label": "Heuristic Function"
+      },
+      {
+        "id": "urn:ngm:class:priority-queue",
+        "label": "Priority Queue"
+      },
+      {
+        "id": "urn:ngm:class:dynamic-programming",
+        "label": "Dynamic Programming"
+      }
+    ],
+    "supports": [
+      {
         "id": "urn:ngm:class:knowledge-graph",
         "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:constraint-satisfaction",
+        "label": "Constraint Satisfaction"
+      },
+      {
+        "id": "urn:ngm:class:automated-planning",
+        "label": "Automated Planning"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:graph-algorithms",
+        "label": "Graph Algorithms"
+      },
+      {
+        "id": "urn:ngm:class:combinatorial-optimisation",
+        "label": "Combinatorial Optimisation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:monte-carlo-tree-search",
+        "label": "Monte Carlo Tree Search"
+      },
+      {
+        "id": "urn:ngm:class:satisfiability",
+        "label": "Satisfiability"
       }
     ]
   },

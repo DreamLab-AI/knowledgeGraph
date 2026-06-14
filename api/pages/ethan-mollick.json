@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:ethan-mollick",
   "domain": "artificial-intelligence",
-  "definition": "An American academic and professor at the Wharton School of the University of Pennsylvania known for research and writing on entrepreneurship, innovation and the practical use of generative artificial intelligence in work and education.",
+  "definition": "Ethan Mollick is an American academic, professor at the Wharton School of the University of Pennsylvania, and widely cited public intellectual on the practical deployment of generative artificial intelligence in work, education, and entrepreneurship. His research bridges management science and AI-adoption theory, investigating how large language models augment human productivity, reshape organisational workflows, and alter pedagogical practice. He is the author of the book 'Co-Intelligence: Living and Working with AI' and is known for his hands-on experimental approach to understanding AI capabilities and their societal implications.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:artificial-intelligence-domain",
@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
@@ -22,17 +22,102 @@
       {
         "id": "urn:ngm:class:ai-adoption",
         "label": "AI Adoption"
+      },
+      {
+        "id": "urn:ngm:class:ai-literacy",
+        "label": "AI Literacy"
+      },
+      {
+        "id": "urn:ngm:class:human-ai-collaboration",
+        "label": "Human-AI Collaboration"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:ai-doomerism",
+        "label": "AI Doomerism"
+      },
+      {
+        "id": "urn:ngm:class:ai-scepticism",
+        "label": "AI Scepticism"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:management-science",
+        "label": "Management Science"
+      },
+      {
+        "id": "urn:ngm:class:educational-technology",
+        "label": "Educational Technology"
+      },
+      {
+        "id": "urn:ngm:class:behavioural-economics",
+        "label": "Behavioural Economics"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:entrepreneurship",
+        "label": "Entrepreneurship"
+      },
+      {
+        "id": "urn:ngm:class:innovation-management",
+        "label": "Innovation Management"
+      },
+      {
+        "id": "urn:ngm:class:ai-in-education",
+        "label": "AI in Education"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-work-augmentation",
+        "label": "Knowledge Work Augmentation"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:wharton-school",
+        "label": "Wharton School"
+      },
+      {
+        "id": "urn:ngm:class:organisational-learning",
+        "label": "Organisational Learning"
+      },
+      {
+        "id": "urn:ngm:class:future-of-work",
+        "label": "Future of Work"
+      },
+      {
+        "id": "urn:ngm:class:chatgpt",
+        "label": "ChatGPT"
+      },
+      {
+        "id": "urn:ngm:class:co-intelligence",
+        "label": "Co-Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:ai-policy",
+        "label": "AI Policy"
+      }
+    ]
   },
   "wikilinks": [
     {

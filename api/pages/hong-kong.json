@@ -4,35 +4,128 @@
   "slug": "hong-kong",
   "public": true,
   "classIri": "urn:ngm:class:hong-kong",
-  "domain": "governance",
-  "definition": "A special administrative region of China and a major international financial centre active in fintech and digital currency experimentation.",
+  "domain": "finance",
+  "definition": "Hong Kong is a Special Administrative Region (SAR) of the People's Republic of China, operating under the 'one country, two systems' framework that preserves a distinct legal, financial, and regulatory order. It functions as one of the world's leading international financial centres, hosting a deep capital market, extensive banking sector, and a highly active financial technology ecosystem. The Hong Kong Monetary Authority (HKMA) has conducted prominent pilots in central bank digital currency, cross-border wholesale settlement, and tokenised asset infrastructure, including through the BIS Innovation Hub centre established in the territory. Hong Kong's regulatory regime, common-law courts, and open capital account make it a critical interface between global finance and the broader Chinese economy.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:entity",
-      "label": "Entity"
+      "id": "urn:ngm:class:financial-centre",
+      "label": "Financial Centre"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:hong-kong-monetary-authority",
+        "label": "Hong Kong Monetary Authority"
+      },
+      {
+        "id": "urn:ngm:class:bis-innovation-hub",
+        "label": "BIS Innovation Hub"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:regulatory-framework",
+        "label": "Regulatory Framework"
+      },
+      {
+        "id": "urn:ngm:class:common-law",
+        "label": "Common Law"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:financial-technology",
         "label": "Financial Technology"
+      },
+      {
+        "id": "urn:ngm:class:cross-border-payment",
+        "label": "Cross-Border Payment"
+      },
+      {
+        "id": "urn:ngm:class:tokenised-asset",
+        "label": "Tokenised Asset"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      },
+      {
+        "id": "urn:ngm:class:one-country-two-systems",
+        "label": "One Country Two Systems"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:singapore",
+        "label": "Singapore"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:renminbi-internationalisation",
+        "label": "Renminbi Internationalisation"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "id": "urn:ngm:class:real-time-gross-settlement",
+        "label": "Real-Time Gross Settlement"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "id": "urn:ngm:class:open-banking",
+        "label": "Open Banking"
+      },
+      {
+        "id": "urn:ngm:class:virtual-asset-trading",
+        "label": "Virtual Asset Trading"
+      }
+    ],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:greater-bay-area",
+        "label": "Greater Bay Area"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:securities-and-futures-commission",
+        "label": "Securities and Futures Commission"
+      },
+      {
+        "id": "urn:ngm:class:swift",
+        "label": "SWIFT"
+      },
+      {
+        "id": "urn:ngm:class:correspondent-banking",
+        "label": "Correspondent Banking"
+      }
+    ]
   },
   "wikilinks": [
     {

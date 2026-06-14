@@ -4,7 +4,7 @@
   "slug": "tensor-flow",
   "public": true,
   "classIri": "urn:ngm:class:tensor-flow",
-  "domain": "deep-learning",
+  "domain": "machine-learning",
   "definition": "An open-source machine learning framework developed by Google for building and deploying numerical computation and deep learning models across CPUs, GPUs and specialised accelerators.",
   "subClassOf": [
     {

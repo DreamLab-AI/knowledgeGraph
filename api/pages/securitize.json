@@ -4,7 +4,7 @@
   "slug": "securitize",
   "public": true,
   "classIri": "urn:ngm:class:securitize",
-  "domain": "general",
+  "domain": "blockchain",
   "definition": "A financial technology company providing infrastructure for issuing, managing and trading tokenised securities on blockchain networks.",
   "subClassOf": [
     {

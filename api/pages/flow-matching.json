@@ -4,51 +4,136 @@
   "slug": "flow-matching",
   "public": true,
   "classIri": "urn:ngm:class:flow-matching",
-  "domain": "artificial-intelligence",
-  "definition": "Flow Matching is a generative modelling framework that trains a neural network to parameterise the vector field of a continuous normalising flow by directly regressing on analytically tractable target vector fields defined along flow paths between a source distribution (typically Gaussian noise) and a data distribution. Unlike score-based diffusion models, which require simulating a stochastic differential equation during training, flow matching uses deterministic conditional flow paths that can be computed in closed form, yielding stable and efficient training. At inference, the learned vector field is integrated with an ODE solver to transport samples from noise to data.",
+  "domain": "machine-learning",
+  "definition": "Flow Matching is a generative modelling framework that trains a neural network to parameterise the vector field of a continuous normalising flow by directly regressing on analytically tractable target vector fields defined along conditional flow paths between a source distribution (typically Gaussian noise) and a data distribution. Unlike score-based diffusion models, which require simulating a stochastic differential equation during training, flow matching uses deterministic conditional flow paths that can be computed in closed form via Conditional Flow Matching (CFM), yielding stable and efficient training without ODE simulation at training time. At inference the learned vector field is integrated with an ODE solver to transport samples from noise to data, enabling high-quality generation with fewer neural function evaluations than diffusion alternatives. The framework unifies and generalises prior work on continuous normalising flows, score matching, and diffusion probabilistic models under a single regression objective.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique"
+      "id": "urn:ngm:class:generative-model",
+      "label": "Generative Model"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
+  "qualityScore": 0.74,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [
+    "hasPart": [
       {
-        "id": "urn:ngm:class:generative-adversarial-network",
-        "label": "Generative Adversarial Network"
+        "id": "urn:ngm:class:conditional-flow-matching",
+        "label": "Conditional Flow Matching"
+      },
+      {
+        "id": "urn:ngm:class:vector-field",
+        "label": "Vector Field"
+      },
+      {
+        "id": "urn:ngm:class:ode-solver",
+        "label": "ODE Solver"
       }
     ],
-    "bridgesTo": [],
-    "uses": [
+    "requires": [
       {
         "id": "urn:ngm:class:neural-network",
         "label": "Neural Network"
       },
       {
-        "id": "urn:ngm:class:deep-learning",
-        "label": "Deep Learning"
+        "id": "urn:ngm:class:probability-distribution",
+        "label": "Probability Distribution"
+      },
+      {
+        "id": "urn:ngm:class:ordinary-differential-equation",
+        "label": "Ordinary Differential Equation"
       }
     ],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
+    "enables": [
+      {
+        "id": "urn:ngm:class:image-synthesis",
+        "label": "Image Synthesis"
+      },
+      {
+        "id": "urn:ngm:class:audio-generation",
+        "label": "Audio Generation"
+      },
+      {
+        "id": "urn:ngm:class:protein-structure-prediction",
+        "label": "Protein Structure Prediction"
+      },
+      {
+        "id": "urn:ngm:class:molecular-generation",
+        "label": "Molecular Generation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
       {
         "id": "urn:ngm:class:diffusion-model",
         "label": "Diffusion Model"
       },
       {
-        "id": "urn:ngm:class:generative-model",
-        "label": "Generative Model"
+        "id": "urn:ngm:class:generative-adversarial-network",
+        "label": "Generative Adversarial Network"
+      },
+      {
+        "id": "urn:ngm:class:variational-autoencoder",
+        "label": "Variational Autoencoder"
+      },
+      {
+        "id": "urn:ngm:class:normalising-flow",
+        "label": "Normalising Flow"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:computational-biology",
+        "label": "Computational Biology"
+      },
+      {
+        "id": "urn:ngm:class:drug-discovery",
+        "label": "Drug Discovery"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:score-matching",
+        "label": "Score Matching"
+      },
+      {
+        "id": "urn:ngm:class:optimal-transport",
+        "label": "Optimal Transport"
+      },
+      {
+        "id": "urn:ngm:class:stochastic-interpolant",
+        "label": "Stochastic Interpolant"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:continuous-normalising-flow",
+        "label": "Continuous Normalising Flow"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:denoising-diffusion-probabilistic-model",
+        "label": "Denoising Diffusion Probabilistic Model"
+      },
+      {
+        "id": "urn:ngm:class:score-based-generative-model",
+        "label": "Score-based Generative Model"
+      },
+      {
+        "id": "urn:ngm:class:latent-diffusion-model",
+        "label": "Latent Diffusion Model"
+      },
+      {
+        "id": "urn:ngm:class:rectified-flow",
+        "label": "Rectified Flow"
       }
     ]
   },

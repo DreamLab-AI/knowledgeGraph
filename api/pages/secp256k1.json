@@ -5,33 +5,89 @@
   "public": true,
   "classIri": "urn:ngm:class:secp256k1",
   "domain": "blockchain",
-  "definition": "secp256k1 is a Koblitz elliptic curve defined by the equation y\u00b2 = x\u00b3 + 7 over the 256-bit prime field Fp (where p = 2\u00b2\u2075\u2076 \u2212 2\u00b3\u00b2 \u2212 977), standardised in SEC 2 by the Standards for Efficient Cryptography Group (SECG). It is the cryptographic foundation of Bitcoin and Ethereum, where it underpins the Elliptic Curve Digital Signature Algorithm (ECDSA) used to authenticate transactions and derive public keys from private keys. secp256k1's specific choice of parameters enables unusually efficient computation via the Frobenius endomorphism, making scalar multiplication faster than on comparably secure non-Koblitz curves such as NIST P-256.",
+  "definition": "secp256k1 is a Koblitz elliptic curve defined by the short Weierstrass equation y\u00b2 = x\u00b3 + 7 over the 256-bit prime field \u1d3d\u209a (where p = 2\u00b2\u2075\u2076 \u2212 2\u00b3\u00b2 \u2212 977), standardised in SEC 2 by the Standards for Efficient Cryptography Group (SECG) and widely adopted as the asymmetric cryptographic backbone of Bitcoin, Ethereum, and dozens of subsequent blockchain protocols. Its specific Koblitz-form parameters permit the Frobenius endomorphism optimisation (GLV decomposition), yielding scalar multiplication roughly 30% faster than equivalent-security NIST curves without requiring a random-looking but opaque seed. The curve underpins both the Elliptic Curve Digital Signature Algorithm (ECDSA) used for transaction authorisation and, via BIP 340, the Schnorr signature scheme that enables key and signature aggregation in Taproot-based Bitcoin smart contracts.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:bc-cryptographic-primitive",
-      "label": "Cryptographic Primitive"
+      "id": "urn:ngm:class:elliptic-curve-cryptography",
+      "label": "Elliptic Curve Cryptography"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "mature",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:private-key",
+        "label": "Private Key"
+      },
+      {
+        "id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:random-number-generation",
+        "label": "Random Number Generation"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:digital-signature",
         "label": "Digital Signature"
       },
       {
-        "id": "urn:ngm:class:cryptographic-keys",
-        "label": "Cryptographic Keys"
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public-Key Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-transaction",
+        "label": "Bitcoin Transaction"
+      },
+      {
+        "id": "urn:ngm:class:wallet-address-derivation",
+        "label": "Wallet Address Derivation"
+      },
+      {
+        "id": "urn:ngm:class:taproot",
+        "label": "Taproot"
+      },
+      {
+        "id": "urn:ngm:class:threshold-signature",
+        "label": "Threshold Signature"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:sec-2-standard",
+        "label": "SEC 2 Standard"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:nist-p-256",
+        "label": "NIST P-256"
+      },
+      {
+        "id": "urn:ngm:class:ed25519",
+        "label": "Ed25519"
+      },
+      {
+        "id": "urn:ngm:class:curve25519",
+        "label": "Curve25519"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:multi-party-computation",
+        "label": "Multi-Party Computation"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:elliptic-curve-cryptography",
@@ -40,15 +96,53 @@
       {
         "id": "urn:ngm:class:ecdsa",
         "label": "ECDSA"
+      },
+      {
+        "id": "urn:ngm:class:schnorr-signature",
+        "label": "Schnorr Signature"
+      },
+      {
+        "id": "urn:ngm:class:finite-field-arithmetic",
+        "label": "Finite Field Arithmetic"
       }
     ],
-    "supports": [],
-    "standardizedBy": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      },
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "id": "urn:ngm:class:nostr-protocol",
+        "label": "Nostr Protocol"
+      },
+      {
+        "id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:standards-for-efficient-cryptography-group",
+        "label": "Standards for Efficient Cryptography Group"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
-        "label": "Public-Key Cryptography"
+        "id": "urn:ngm:class:key-derivation-function",
+        "label": "Key Derivation Function"
+      },
+      {
+        "id": "urn:ngm:class:hierarchical-deterministic-wallet",
+        "label": "Hierarchical Deterministic Wallet"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-security",
+        "label": "Blockchain Security"
       }
     ]
   },

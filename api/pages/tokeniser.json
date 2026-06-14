@@ -5,22 +5,47 @@
   "public": true,
   "classIri": "urn:ngm:class:tokeniser",
   "domain": "artificial-intelligence",
-  "definition": "A tokeniser is a preprocessing component that segments raw text into a sequence of discrete tokens \u2014 sub-words, words, or characters \u2014 and maps each token to an integer index in a fixed vocabulary, forming the input representation consumed by language model architectures. Modern tokenisers such as Byte Pair Encoding (BPE), WordPiece, and SentencePiece operate at the sub-word level to balance vocabulary coverage with sequence length, enabling models to handle arbitrary text including rare words and multiple languages without out-of-vocabulary failures.",
+  "definition": "A tokeniser is a preprocessing component that segments raw text into a sequence of discrete tokens \u2014 sub-words, words, or characters \u2014 and maps each token to an integer identifier in a fixed vocabulary, forming the numerical input representation consumed by language model architectures. Modern sub-word tokenisers such as Byte Pair Encoding (BPE), WordPiece, and SentencePiece balance vocabulary coverage with sequence length efficiency, enabling models to handle arbitrary Unicode text including rare words, multilingual content, and specialised domains without out-of-vocabulary failures. The tokeniser vocabulary and its associated embedding matrix are co-trained with the model and constitute a foundational design decision that governs sequence length, memory footprint, and cross-lingual fairness. Multimodal extensions of tokenisation discretise images, audio, and video frames into token sequences analogous to text tokens, enabling unified cross-modal architectures.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique"
+      "id": "urn:ngm:class:natural-language-processing",
+      "label": "Natural Language Processing"
     }
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "emerging",
+  "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [
+    "hasPart": [
       {
         "id": "urn:ngm:class:byte-pair-encoding",
         "label": "Byte Pair Encoding"
+      },
+      {
+        "id": "urn:ngm:class:wordpiece",
+        "label": "WordPiece"
+      },
+      {
+        "id": "urn:ngm:class:sentencepiece",
+        "label": "SentencePiece"
+      },
+      {
+        "id": "urn:ngm:class:unigram-language-model-tokeniser",
+        "label": "Unigram Language Model Tokeniser"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:vocabulary",
+        "label": "Vocabulary"
+      },
+      {
+        "id": "urn:ngm:class:unicode-normalisation",
+        "label": "Unicode Normalisation"
+      },
+      {
+        "id": "urn:ngm:class:text-preprocessing",
+        "label": "Text Preprocessing"
       }
     ],
     "enables": [
@@ -31,17 +56,39 @@
       {
         "id": "urn:ngm:class:language-modeling",
         "label": "Language Modeling"
+      },
+      {
+        "id": "urn:ngm:class:machine-translation",
+        "label": "Machine Translation"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-learning",
+        "label": "Multimodal Learning"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:character-level-model",
+        "label": "Character-Level Model"
+      },
+      {
+        "id": "urn:ngm:class:word-level-tokenisation",
+        "label": "Word-Level Tokenisation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
+    ],
+    "uses": [
       {
         "id": "urn:ngm:class:subword-tokenisation",
         "label": "Subword Tokenisation"
@@ -49,10 +96,49 @@
       {
         "id": "urn:ngm:class:token-embedding",
         "label": "Token Embedding"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
       },
+      {
+        "id": "urn:ngm:class:multilingual-models",
+        "label": "Multilingual Models"
+      },
+      {
+        "id": "urn:ngm:class:code-generation",
+        "label": "Code Generation"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:natural-language-processing-pipeline",
+        "label": "Natural Language Processing Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:language-model-pre-training",
+        "label": "Language Model Pre-Training"
+      }
+    ],
+    "relatedTo": [
       {
         "id": "urn:ngm:class:embedding-model",
         "label": "Embedding Model"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:tokeniser-fertility",
+        "label": "Tokeniser Fertility"
+      },
+      {
+        "id": "urn:ngm:class:context-window",
+        "label": "Context Window"
       }
     ]
   },

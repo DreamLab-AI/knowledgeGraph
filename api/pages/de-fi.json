@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:de-fi",
   "domain": "blockchain",
-  "definition": "DeFi (Decentralised Finance) is the ecosystem of open, permissionless financial protocols and applications deployed as Smart Contracts on public blockchains \u2014 primarily Ethereum \u2014 that replicate and extend traditional financial services (lending, borrowing, trading, yield generation, derivatives) without centralised intermediaries such as banks, brokers, or clearinghouses. Core DeFi primitives include Automated Market Makers (AMMs), over-collateralised lending protocols, algorithmic stablecoins, and yield aggregators, all coordinated through token-based incentive mechanisms and governed by Decentralised Autonomous Organisations (DAOs). DeFi protocols are composable: outputs of one protocol can be inputs to another, enabling complex financial strategies assembled from protocol lego blocks.",
+  "definition": "DeFi (Decentralised Finance) is the ecosystem of open, permissionless financial protocols and applications deployed as Smart Contracts on public blockchains \u2014 primarily Ethereum \u2014 that replicate and extend traditional financial services such as lending, borrowing, trading, yield generation, and derivatives without centralised intermediaries such as banks, brokers, or clearinghouses. Core DeFi primitives include Automated Market Makers (AMMs), over-collateralised lending protocols, stablecoins, flash loans, and yield aggregators, all coordinated through token-based incentive mechanisms and governed by Decentralised Autonomous Organisations (DAOs). DeFi protocols are composable \u2014 outputs of one protocol become inputs to another, enabling complex financial strategies assembled from protocol primitives. The open, programmable architecture distinguishes DeFi from traditional finance and from centralised cryptocurrency exchanges, making it a distinct paradigm within the broader blockchain economy.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-defi-and-economics",
@@ -13,10 +13,27 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
+      },
+      {
+        "id": "urn:ngm:class:liquidity-pool",
+        "label": "Liquidity Pool"
+      },
+      {
+        "id": "urn:ngm:class:flash-loan",
+        "label": "Flash Loan"
+      },
+      {
+        "id": "urn:ngm:class:yield-aggregator",
+        "label": "Yield Aggregator"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:smart-contract",
@@ -25,21 +42,81 @@
       {
         "id": "urn:ngm:class:blockchain",
         "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:oracle",
+        "label": "Oracle"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-wallet",
+        "label": "Cryptographic Wallet"
       }
     ],
-    "enables": [],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [
+    "enables": [
       {
-        "id": "urn:ngm:class:liquidity-pool",
-        "label": "Liquidity Pool"
+        "id": "urn:ngm:class:yield-farming",
+        "label": "Yield Farming"
       },
+      {
+        "id": "urn:ngm:class:liquidity-mining",
+        "label": "Liquidity Mining"
+      },
+      {
+        "id": "urn:ngm:class:permissionless-lending",
+        "label": "Permissionless Lending"
+      },
+      {
+        "id": "urn:ngm:class:on-chain-derivatives",
+        "label": "On-Chain Derivatives"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:gas-fee",
+        "label": "Gas Fee"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:centralised-exchange",
+        "label": "Centralised Exchange"
+      },
+      {
+        "id": "urn:ngm:class:traditional-finance",
+        "label": "Traditional Finance"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:algorithmic-trading",
+        "label": "Algorithmic Trading"
+      },
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      }
+    ],
+    "uses": [
       {
         "id": "urn:ngm:class:governance-token",
         "label": "Governance Token"
+      },
+      {
+        "id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      },
+      {
+        "id": "urn:ngm:class:ethereum-virtual-machine",
+        "label": "Ethereum Virtual Machine"
+      },
+      {
+        "id": "urn:ngm:class:token-standard",
+        "label": "Token Standard"
       }
     ],
     "supports": [],
@@ -53,6 +130,14 @@
       {
         "id": "urn:ngm:class:token-economics",
         "label": "Token Economics"
+      },
+      {
+        "id": "urn:ngm:class:maximal-extractable-value",
+        "label": "Maximal Extractable Value"
+      },
+      {
+        "id": "urn:ngm:class:cross-chain-bridge",
+        "label": "Cross-Chain Bridge"
       }
     ]
   },

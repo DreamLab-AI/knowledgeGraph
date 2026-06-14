@@ -95,7 +95,7 @@ public:: true
   "@type": "Class",
   "label": "Formal Methods Domain",
   "definition": "The Formal Methods Domain covers mathematically rigorous techniques for specifying, developing and verifying software and hardware systems. Its scope includes formal specification, model checking, theorem proving and program verification. It is a top-level subject classification rooted in logic and computer science. The boundary excludes empirical testing without formal guarantees, which is treated as conventional quality assurance.",
-  "domain": "formal-methods",
+  "domain": "machine-learning",
   "maturity": "emerging",
   "qualityScore": 0.7,
   "subClassOf": [

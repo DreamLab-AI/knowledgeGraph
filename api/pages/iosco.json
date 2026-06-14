@@ -4,26 +4,88 @@
   "slug": "iosco",
   "public": true,
   "classIri": "urn:ngm:class:iosco",
-  "domain": "infrastructure",
-  "definition": "The International Organisation of Securities Commissions (IOSCO) is the global standard-setting body for securities regulation, whose members include national securities regulators from over 130 jurisdictions. It develops and publishes Principles, Recommendations, and regulatory standards that member jurisdictions adopt to promote fair, efficient, and transparent capital markets, combat systemic risk, and protect investors. IOSCO has extended its remit to encompass digital asset markets and crypto-asset intermediaries, issuing policy recommendations that inform national regulatory frameworks including the EU MiCA regulation.",
+  "domain": "governance",
+  "definition": "The International Organisation of Securities Commissions (IOSCO) is the principal global standard-setting body for securities and capital markets regulation, founded in 1983 and headquartered in Madrid, with membership spanning national securities regulators and self-regulatory organisations from over 130 jurisdictions. IOSCO develops and publishes Objectives and Principles of Securities Regulation, Recommendations, and targeted policy reports adopted by member regulators to promote fair, efficient, and transparent capital markets, protect investors, and reduce systemic risk. Its remit has expanded to cover digital asset markets, crypto-asset intermediaries, decentralised finance, and AI-driven algorithmic trading, making it a central node in the global financial regulatory architecture alongside the Financial Stability Board and Basel Committee.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:infra-legal-and-regulatory",
-      "label": "Legal and Regulatory"
+      "id": "urn:ngm:class:financial-regulation",
+      "label": "Financial Regulation"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "mature",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:regulatory-enforcement",
+        "label": "Regulatory Enforcement"
+      },
+      {
+        "id": "urn:ngm:class:information-sharing",
+        "label": "Information Sharing"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:cross-border-regulatory-cooperation",
+        "label": "Cross-Border Regulatory Cooperation"
+      },
+      {
+        "id": "urn:ngm:class:market-surveillance",
+        "label": "Market Surveillance"
+      },
+      {
+        "id": "urn:ngm:class:capital-markets",
+        "label": "Capital Markets"
+      }
+    ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:principles-of-securities-regulation",
+        "label": "Principles of Securities Regulation"
+      },
+      {
+        "id": "urn:ngm:class:iosco-objectives-and-principles",
+        "label": "IOSCO Objectives and Principles"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:fatf",
+        "label": "FATF"
+      },
+      {
+        "id": "urn:ngm:class:bis",
+        "label": "BIS"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-trading",
+        "label": "Algorithmic Trading"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:multilateral-memorandum-of-understanding",
+        "label": "Multilateral Memorandum of Understanding"
+      },
+      {
+        "id": "urn:ngm:class:fsap",
+        "label": "FSAP"
+      }
+    ],
     "supports": [
       {
         "id": "urn:ngm:class:securities-regulation",
@@ -32,6 +94,14 @@
       {
         "id": "urn:ngm:class:financial-stability",
         "label": "Financial Stability"
+      },
+      {
+        "id": "urn:ngm:class:investor-protection",
+        "label": "Investor Protection"
+      },
+      {
+        "id": "urn:ngm:class:market-integrity",
+        "label": "Market Integrity"
       }
     ],
     "standardizedBy": [
@@ -49,6 +119,26 @@
       {
         "id": "urn:ngm:class:systemic-risk",
         "label": "Systemic Risk"
+      },
+      {
+        "id": "urn:ngm:class:financial-stability-board",
+        "label": "Financial Stability Board"
+      },
+      {
+        "id": "urn:ngm:class:g20",
+        "label": "G20"
+      },
+      {
+        "id": "urn:ngm:class:basel-committee",
+        "label": "Basel Committee"
+      },
+      {
+        "id": "urn:ngm:class:imf",
+        "label": "IMF"
+      },
+      {
+        "id": "urn:ngm:class:world-bank",
+        "label": "World Bank"
       }
     ]
   },

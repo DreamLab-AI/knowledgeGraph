@@ -1,14 +1,93 @@
 - ### Definition
-  - [[Affective Computing]] is the discipline that equips computational systems with the capacity to detect, interpret, and respond to human [[Emotional Intelligence]], bridging [[Human Computer Interaction]] with [[Cognitive Science]] through techniques such as [[Sentiment Analysis]], [[Computer Vision]], and [[Deep Learning]].
+  - [[Affective Computing]] is the discipline that equips computational systems with the capacity to detect, interpret, process, and simulate human [[Emotional Intelligence]], bridging [[Human-Computer Interaction]] with [[Cognitive Science]] through techniques such as [[Sentiment Analysis]], [[Computer Vision]], [[Speech Recognition]], and [[Deep Learning]]. The goal is to create machines that perceive and respond to the full affective dimension of human communication, moving beyond purely rational task completion toward emotionally congruent, adaptive interaction.
+
+- ### Overview
+  - Affective computing was formally established by Rosalind Picard at the MIT Media Lab, articulated in her 1997 monograph of the same name. Picard argued that human emotions are central to rational decision-making, learning, memory, and social communication — and that machines incapable of recognising or simulating affect would remain fundamentally limited as interactive partners.
+  - The field addresses two complementary directions:
+    - **Affect recognition** — inferring an agent's emotional state from observable signals (facial action units, vocal prosody, galvanic skin response, heart rate, text tone).
+    - **Affect generation** — producing emotionally appropriate outputs in speech synthesis, agent behaviour, dialogue, or interface adaptation.
+  - Practical relevance spans [[Digital Health]], educational technology, automotive safety, entertainment, and customer experience analytics. As [[Machine Learning]] capabilities have grown, so too has commercial deployment: Emotion AI platforms now operate at scale in call centres, hiring tools, and content moderation — prompting substantial ethical and regulatory debate.
+
+- ### Key Components
+  - #### Emotion Representation Models
+    - **Discrete categorical model** — six to eight basic emotions (happiness, sadness, anger, fear, surprise, disgust, contempt) derived from Paul Ekman's cross-cultural studies.
+    - **Dimensional model** — continuous valence (positive/negative) and arousal (calm/excited) axes drawn from the circumplex model of affect, enabling finer-grained representation than discrete labels.
+    - **Appraisal theory models** — emotion as the result of cognitive evaluation of events relative to goals (Scherer's Component Process Model), offering richer causal structure.
+  - #### Sensing Modalities
+    - **Facial expression analysis** — [[Convolutional Neural Network]] architectures trained on datasets such as AffectNet, RAF-DB, and FER-2013 to detect facial action units (FACS coding).
+    - **Speech emotion recognition** — extraction of prosodic features (pitch, energy, tempo) plus deep acoustic embeddings from raw waveforms using models such as wav2vec 2.0.
+    - **Physiological signal processing** — galvanic skin response (GSR), electroencephalography ([[EEG]]), heart rate variability (HRV), blood volume pulse, and respiration; commonly acquired via [[Wearable Computing]] devices.
+    - **Text and linguistic cues** — [[Natural Language Processing]] and [[Sentiment Analysis]] over typed or transcribed language to infer affective polarity and intensity.
+    - **Gesture and body language** — skeletal pose estimation and movement analysis supplementing facial data.
+  - #### [[Multimodal Fusion]]
+    - Early, late, and hybrid fusion architectures combine signals from multiple modalities to improve robustness. Transformer-based cross-modal attention layers learn inter-modal dependencies. Multimodal foundation models pre-trained at scale (e.g., on audio-visual-text corpora) enable few-shot affect recognition across domains.
+  - #### [[Emotion Recognition]] Pipelines
+    - Real-time inference chains: sensor data → preprocessing → feature extraction → classification/regression → post-processing for temporal smoothing → output to application layer.
+  - #### Affect Generation and Response
+    - [[Adaptive Learning System]] frameworks adjust content difficulty, pacing, or tone in response to inferred learner affect.
+    - Emotionally responsive dialogue systems modulate synthetic voice prosody, lexical choice, and conversational strategy based on detected user state.
+    - [[Cognitive Feedback Interface]] designs present visualisations of inferred affective state to support metacognitive self-regulation.
+
+- ### Applications and Use Cases
+  - #### Education and Intelligent Tutoring
+    - Affect-aware [[Adaptive Learning System]]s detect learner frustration, boredom, or confusion in real time and dynamically adjust task difficulty, hint provision, and pacing. Demonstrated improvements in engagement and learning retention have been reported in controlled studies with tutoring systems such as AutoTutor and Affective AutoTutor.
+  - #### Healthcare and [[Mental Health Monitoring]]
+    - Longitudinal passive sensing of vocal affect, mobility, and physiological signals can surface early-warning indicators of depression and anxiety episodes, supporting clinicians with objective biomarker data. Wearable affect sensors are integrated into remote patient monitoring platforms.
+  - #### Automotive and Driver Safety
+    - Driver monitoring systems infer drowsiness, distraction, and emotional agitation from facial analysis and steering behaviour, triggering safety alerts. Integrated with [[Autonomous Vehicle]] perception stacks, affect sensing contributes to occupant-state-aware driving decisions.
+  - #### Extended Reality and Gaming
+    - In [[Extended Reality]] environments, emotionally responsive non-player characters and adaptive narrative engines tailor story difficulty and emotional tone to detected player affect, heightening immersion. Social [[Virtual Reality]] platforms use facial retargeting and affect cues to improve avatar expressiveness.
+  - #### Customer Experience and Contact Centres
+    - Real-time speech emotion analysis during customer calls flags distress or frustration, routing conversations to specialist agents or providing live coaching prompts. Post-call affect analytics feed workforce management and quality assurance workflows.
+  - #### Market Research and Media
+    - Frame-by-frame analysis of viewer facial responses to advertising content provides continuous engagement and emotional response metrics as an alternative to self-report surveys.
 
 - ### Relationships
-  - Affective computing builds directly on [[Human Computer Interaction]] as its parent discipline while employing [[Sentiment Analysis]] and [[Computer Vision]] to decode emotional signals from text, face, and gesture. [[Deep Learning]] models underpin real-time affect recognition pipelines, and [[Natural Language Processing]] parses affective meaning from speech and text. These capabilities collectively enable [[Emotion Aware Interaction]] systems and [[Emotional Analytics Engine]] platforms that feed data into [[Cognitive Feedback Interface]] designs, while the field remains philosophically grounded in [[Cognitive Science]] and the broader study of [[Emotional Intelligence]].
+  - uses:: [[Sentiment Analysis]]
+  - uses:: [[Computer Vision]]
+  - uses:: [[Deep Learning]]
+  - uses:: [[Natural Language Processing]]
+  - uses:: [[Speech Recognition]]
+  - uses:: [[Physiological Signal Processing]]
+  - uses:: [[Convolutional Neural Network]]
+  - enables:: [[Emotion Aware Interaction]]
+  - enables:: [[Emotional Analytics Engine]]
+  - enables:: [[Cognitive Feedback Interface]]
+  - enables:: [[Adaptive Learning System]]
+  - enables:: [[Mental Health Monitoring]]
+  - requires:: [[Multimodal Fusion]]
+  - requires:: [[Emotion Recognition]]
+  - requires:: [[Annotated Dataset]]
+  - relatedTo:: [[Emotional Intelligence]]
+  - relatedTo:: [[Cognitive Science]]
+  - relatedTo:: [[User Experience Design]]
+  - relatedTo:: [[Wearable Computing]]
+  - relatedTo:: [[Biometric Sensing]]
+  - contrastsWith:: [[Rational Agent]]
+  - contrastsWith:: [[Symbolic AI]]
+  - bridges-to:: [[Extended Reality]]
+  - bridges-to:: [[Digital Health]]
+  - bridges-to:: [[Autonomous Vehicle]]
+  - dependsOn:: [[Machine Learning]]
+  - dependsOn:: [[Data Labelling]]
 
-- ### Content
-  - Affective computing was formally established as a research field by Rosalind Picard at the MIT Media Lab in her 1997 book of the same name. Picard argued that human emotions play a central role in rational decision-making, learning, and communication, and that machines incapable of recognising or expressing affect would remain fundamentally limited in natural interaction. Early work focused on physiological signal processing — galvanic skin response, heart rate variability, and facial action coding — to infer discrete emotional categories such as happiness, sadness, anger, fear, surprise, and disgust.
+- ### Ethical and Regulatory Context
+  - Affective computing applications have attracted significant ethical scrutiny as commercial deployment has expanded. Key concerns include:
+    - **Consent and transparency** — users may be unaware that their emotional state is being inferred and acted upon, undermining autonomous decision-making.
+    - **Cultural bias** — emotion labels derived predominantly from WEIRD (Western, Educated, Industrialised, Rich, Democratic) populations may not generalise; facial action units have documented cross-cultural variation beyond Ekman's universality claims.
+    - **Surveillance and manipulation** — emotion-recognition systems deployed in hiring assessments, border control, and law enforcement raise concerns about discriminatory outcomes and coercive influence.
+    - **Scientific validity** — some psychologists argue that discrete categorical emotion models oversimplify the complexity and contextuality of human affective experience.
+  - The **EU AI Act** (adopted 2024) classifies real-time emotion recognition in workplace and educational settings as high-risk AI, imposing conformity assessment, transparency, and human oversight requirements. Certain biometric categorisation systems based on emotion inference are prohibited.
+  - **Privacy-preserving affective computing** — on-device inference, federated learning approaches, and differential privacy techniques are being developed to reduce data egress risks associated with sensitive physiological and facial data.
+  - Relevant standards work is ongoing at **IEEE** (P7014 — Standard for Ethical Considerations in Emulated Empathy in Autonomous and Intelligent Systems) and **ISO/IEC JTC 1/SC 42** on AI standards.
 
-  - Modern affective computing systems operate across multiple modalities. Computer vision pipelines analyse facial action units using convolutional neural networks trained on large-scale annotated datasets such as AffectNet and RAF-DB. Speech emotion recognition extracts prosodic features — pitch, tempo, energy — alongside deep acoustic embeddings. Multimodal fusion combines these streams with physiological sensor data from wearables and contextual cues from language to produce more robust affective state estimates. Valence-arousal dimensional models increasingly supplement discrete categorical emotion labels, offering finer-grained continuous representations of affective space.
+- ### Standards and Benchmarks
+  - **AffectNet** — large-scale facial affect dataset (approx. 440,000 annotated images) widely used for training and benchmarking facial expression recognition models.
+  - **IEMOCAP** — multimodal dyadic conversational corpus for speech emotion recognition.
+  - **DEAP** — dataset for emotion analysis using EEG and peripheral physiological signals.
+  - **RAF-DB** — Real-world Affective Faces Database for facial expression recognition in unconstrained settings.
+  - **MSP-Podcast** — naturalistic speech emotion benchmark drawn from podcast recordings.
 
-  - The significance of affective computing spans education, healthcare, automotive safety, and entertainment. Intelligent tutoring systems that detect learner frustration and adjust difficulty in real time have demonstrated measurable gains in engagement and learning outcomes. Mental health applications monitor longitudinal affect trajectories, offering early-warning signals for depression and anxiety. Driver monitoring systems infer drowsiness and emotional distraction to trigger safety interventions. In entertainment and XR, emotionally responsive characters and adaptive narrative engines create personalised immersive experiences grounded in the user's detected affective state.
-
-  - Through 2024-2025, large multimodal foundation models have dramatically expanded affective computing capabilities by pre-training on vast corpora of audio-visual-text data, enabling few-shot emotion recognition with minimal domain-specific labelling. Simultaneously, ethical scrutiny has intensified: concerns about consent, cultural bias in affect labels, and the potential for surveillance and manipulation have led to regulatory proposals in the EU AI Act classifying certain emotion-recognition applications as high-risk. The field is converging toward privacy-preserving on-device inference, standardised benchmarking, and participatory design frameworks that place affective data ownership with users.
+- ### Provenance
+  - sources:: Picard, R. W. (1997). *Affective Computing*. MIT Press. | EU AI Act (2024) | IEEE P7014 | AffectNet, IEMOCAP, DEAP benchmark documentation
+  - updated:: 2026-06-13

@@ -4,34 +4,107 @@
   "slug": "simulation",
   "public": true,
   "classIri": "urn:ngm:class:simulation",
-  "domain": "infrastructure",
-  "definition": "Simulation creates computational models that replicate the behaviour of real-world systems, processes, or phenomena for training, experimentation, prediction, or entertainment. In metaverse and spatial computing contexts, simulations leverage physics engines, rendering pipelines, and AI-driven procedural content generation to produce interactive virtual environments that improve learning transfer, enable safe rehearsal of dangerous scenarios, and support distributed collaboration across geographies.",
+  "domain": "spatial-computing",
+  "definition": "Simulation is the computational reproduction of real-world systems, physical phenomena, or abstract processes through mathematical models that evolve over time, enabling experimentation, training, and prediction without risk to personnel or infrastructure. Simulations span a fidelity spectrum from simplified discrete-event models to high-fidelity continuous-physics environments powered by physics engines, rendering pipelines, and stochastic solvers. In spatial computing and metaverse contexts, real-time simulation underpins immersive training, digital twin synchronisation, and AI agent incubation. Simulation outputs are validated against empirical data and uncertainty quantified to ensure transferability of findings to the real world.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:infra-computing-and-cloud",
-      "label": "Computing and Cloud"
+      "id": "urn:ngm:class:digital-twin",
+      "label": "Digital Twin"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "emerging",
+  "qualityScore": 0.72,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:physics-engine",
+        "label": "Physics Engine"
+      },
+      {
+        "id": "urn:ngm:class:state-machine",
+        "label": "State Machine"
+      },
+      {
+        "id": "urn:ngm:class:sensor-model",
+        "label": "Sensor Model"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:computational-model",
+        "label": "Computational Model"
+      },
+      {
+        "id": "urn:ngm:class:real-time-computing",
+        "label": "Real-Time Computing"
+      },
+      {
+        "id": "urn:ngm:class:high-performance-computing",
+        "label": "High-Performance Computing"
+      }
+    ],
     "enables": [
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
       {
         "id": "urn:ngm:class:immersive-experience",
         "label": "Immersive Experience"
       },
       {
-        "id": "urn:ngm:class:reinforcement-learning",
-        "label": "Reinforcement Learning"
+        "id": "urn:ngm:class:synthetic-data",
+        "label": "Synthetic Data"
+      },
+      {
+        "id": "urn:ngm:class:training-and-simulation",
+        "label": "Training and Simulation"
+      },
+      {
+        "id": "urn:ngm:class:scenario-planning",
+        "label": "Scenario Planning"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:mathematical-modelling",
+        "label": "Mathematical Modelling"
+      },
+      {
+        "id": "urn:ngm:class:numerical-methods",
+        "label": "Numerical Methods"
+      },
+      {
+        "id": "urn:ngm:class:data-validation",
+        "label": "Data Validation"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:emulation",
+        "label": "Emulation"
+      },
+      {
+        "id": "urn:ngm:class:physical-prototype",
+        "label": "Physical Prototype"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:synthetic-data",
+        "label": "Synthetic Data"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:physics-engine",
@@ -42,8 +115,16 @@
         "label": "Render Pipeline"
       },
       {
-        "id": "urn:ngm:class:digital-twin",
-        "label": "Digital Twin"
+        "id": "urn:ngm:class:procedural-content-generation",
+        "label": "Procedural Content Generation"
+      },
+      {
+        "id": "urn:ngm:class:monte-carlo-methods",
+        "label": "Monte Carlo Methods"
+      },
+      {
+        "id": "urn:ngm:class:agent-based-modelling",
+        "label": "Agent-Based Modelling"
       }
     ],
     "supports": [],
@@ -53,6 +134,18 @@
       {
         "id": "urn:ngm:class:virtual-reality",
         "label": "Virtual Reality"
+      },
+      {
+        "id": "urn:ngm:class:mixed-reality",
+        "label": "Mixed Reality"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
       }
     ]
   },

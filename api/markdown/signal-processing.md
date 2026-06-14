@@ -1,26 +1,70 @@
 - ### Definition
-  - Signal Processing is the mathematical discipline concerned with the analysis, synthesis, filtering, transformation, and compression of analogue and digital signals including audio, video, sensor telemetry, and communications data. In spatial computing and immersive systems, signal processing underpins spatial audio rendering, motion capture noise reduction, depth-sensor filtering, and the real-time fusion of multi-modal sensor streams required for robust AR/VR tracking and interaction.
+  - Signal processing is the mathematical and engineering discipline concerned with representing, analysing, transforming, filtering, synthesising, and compressing signals — the continuous or discrete quantities (audio, video, sensor telemetry, radio waveforms, biomedical readings) that carry information through physical and digital systems. It draws on [[Fourier Transform]], [[Linear Algebra]], [[Probability Theory]], and [[Optimisation]] to extract information, suppress noise, encode data efficiently, and drive control systems. Both analogue and [[Digital Signal Processing]] branches exist; the latter operates on sampled, quantised data and is implemented in [[Embedded Systems]], [[Field-Programmable Gate Arrays]], and [[Graphics Processing Units]]. Signal processing is foundational to [[Machine Learning]] feature pipelines, [[Telecommunications]], [[Spatial Audio]], [[Image Processing]], and [[Radar Sensing]].
 
-- ### Semantic Classification
-  - owl-class:: spatial-computing:SignalProcessing
-  - owl-role:: concept
+- ### Overview
+  - Signal processing converts raw measurements into actionable representations. A signal may be a function of time (audio waveform), space (image pixels), frequency (RF spectrum), or multiple dimensions simultaneously (video, hyperspectral imagery).
+  - The central challenge is extracting useful information from noisy, limited, or aliased observations. Classical approaches apply deterministic mathematical operations (convolution, spectral decomposition); modern approaches layer in [[Statistical Inference]] and [[Machine Learning]] to learn signal models from data.
+  - Its maturity as a discipline is reflected in decades of IEEE standards, textbook curricula, and ubiquitous deployment — from mobile handsets to medical scanners to satellite systems.
+  - Key duality: analogue signals are continuous in both time and amplitude; digital signals are discrete in both. The [[Nyquist-Shannon Sampling Theorem]] bridges the two, dictating that a bandlimited signal can be perfectly reconstructed if sampled at twice its highest frequency.
+
+- ### Key Concepts and Mechanisms
+  - **[[Fourier Transform]] and [[Fast Fourier Transform]]** — decompose signals into frequency components; FFT reduces O(N²) DFT to O(N log N), enabling real-time spectral analysis.
+  - **[[Wavelet Transform]]** — multiresolution analysis that captures both time and frequency localisation, superior to Fourier methods for transient or non-stationary signals.
+  - **[[Filter Design]]** — constructing low-pass, high-pass, band-pass, and notch filters to select or reject frequency bands; implemented as finite impulse response (FIR) or infinite impulse response (IIR) digital filters.
+  - **[[Sampling Theory]]** and quantisation — converting continuous-time analogue signals to discrete-time digital representations; governed by the Nyquist criterion and anti-aliasing filters.
+  - **[[Kalman Filter]]** — recursive Bayesian estimator for linear dynamic systems, widely used in navigation, tracking, and sensor fusion; extensions (EKF, UKF, particle filters) handle nonlinearity.
+  - **[[Compressed Sensing]]** (compressive sensing) — exploits signal sparsity to reconstruct signals from far fewer samples than Nyquist requires, via L1-minimisation; underpins MRI acceleration and CS-based radar.
+  - **[[Noise Reduction]]** techniques — Wiener filtering, spectral subtraction, non-local means, and deep neural denoising (e.g., DnCNN for images, RNNoise for audio).
+  - **[[Adaptive Filtering]]** — filters whose coefficients update online to track non-stationary environments; used in echo cancellation, equalisers, and beamforming arrays.
+  - **[[Modulation and Demodulation]]** — encoding information onto carrier signals (AM, FM, QAM, OFDM) and recovering it at the receiver; core to [[Telecommunications]].
+  - **[[Beamforming]]** — spatial filtering across microphone or antenna arrays to directionally amplify signals; used in [[Spatial Audio]], phased-array radar, and 5G base stations.
+
+- ### Applications and Use Cases
+  - **Audio and speech** — [[Speech Recognition]] (acoustic feature extraction with MFCC, filterbank energies fed to neural networks), noise-cancelling headphones (active noise control via adaptive filters), audio compression (MP3, AAC use perceptual coding), [[Spatial Audio]] rendering (HRTFs, ambisonics).
+  - **[[Image Processing]] and video** — JPEG/HEVC compression (DCT, wavelet coding), medical imaging reconstruction (CT/MRI back-projection, compressed sensing), [[Computer Vision]] preprocessing (edge detection, Gaussian pyramids), [[Depth Sensing]] (ToF and structured light de-noising).
+  - **[[Telecommunications]]** — channel equalisation, OFDM modulation in LTE/5G, channel coding, synchronisation; every smartphone is a real-time DSP node.
+  - **Radar and sonar** — matched filtering for range compression, Doppler processing for velocity estimation, [[Synthetic Aperture Radar]] image formation.
+  - **Biomedical** — ECG/EEG artefact removal, [[Brain-Computer Interface]] feature extraction, ultrasound image formation, hearing aids (compression and directional microphones).
+  - **[[Spatial Computing]] and XR** — motion capture noise reduction, IMU sensor fusion (Madgwick/Mahony filters), inside-out tracking, depth camera point-cloud filtering for AR/VR headsets.
+  - **[[Machine Learning]] pipelines** — [[Feature Extraction]] from audio/images (spectrograms, mel-frequency cepstral coefficients), pre- and post-processing layers in deep learning inference, signal conditioning for time-series forecasting models.
+  - **Finance and infrastructure** — anomaly detection in sensor streams, predictive maintenance via vibration spectral analysis, HFT order-flow filtering.
 
 - ### Relationships
-  - enables [[Spatial Audio]]
-  - enables [[Speech Recognition]]
-  - enables [[Depth Sensing]]
-  - relatedTo [[Render Pipeline]]
-  - relatedTo [[Motion Capture]]
+  - hasPart:: [[Digital Signal Processing]]
+  - hasPart:: [[Fourier Transform]]
+  - hasPart:: [[Filter Design]]
+  - hasPart:: [[Sampling Theory]]
+  - enables:: [[Speech Recognition]]
+  - enables:: [[Spatial Audio]]
+  - enables:: [[Image Processing]]
+  - enables:: [[Radar Sensing]]
+  - enables:: [[Depth Sensing]]
+  - requires:: [[Linear Algebra]]
+  - requires:: [[Probability Theory]]
+  - uses:: [[Fast Fourier Transform]]
+  - uses:: [[Wavelet Transform]]
+  - uses:: [[Kalman Filter]]
+  - uses:: [[Compressed Sensing]]
+  - supports:: [[Machine Learning]]
+  - supports:: [[Telecommunications]]
+  - supports:: [[Motion Capture]]
+  - contrastsWith:: [[Symbolic AI]]
+  - bridges-to:: [[Spatial Computing]]
+  - bridges-to:: [[Neural Network]]
+  - relatedTo:: [[Feature Extraction]]
+  - relatedTo:: [[Noise Reduction]]
+  - relatedTo:: [[Data Compression]]
+  - relatedTo:: [[Render Pipeline]]
 
-- ### Content
-
-  ## Overview
-
-  Signal Processing represents an abstract concept in the metaverse ontology hierarchy.
-
-  #### Related Concepts
-  - [[owl:Thing]]
+- ### Standards and Context
+  - **IEEE Signal Processing Society** — the primary professional body; publishes IEEE Transactions on Signal Processing, IEEE Signal Processing Letters, and the IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP).
+  - **ISO/IEC standards** — MPEG audio/video coding standards (ISO/IEC 13818, 14496, 23008) codify signal processing algorithms into interoperable codecs.
+  - **ITU-T** — standardises speech codecs (G.711, G.722, G.729, EVS) and video codecs (H.264, H.265, H.266/VVC) used in telecommunications.
+  - **ETSI and 3GPP** — define signal processing requirements for cellular standards (LTE, NR/5G), including channel estimation, beamforming, and HARQ retransmission schemes.
+  - **IEEE 1451** — smart transducer interface standard governing sensor signal conditioning and interoperability in IoT contexts.
+  - The discipline's theoretical foundations were laid by Claude Shannon (information theory, 1948), Harry Nyquist (sampling theorem, 1928), and Norbert Wiener (optimal filtering, 1949). The Cooley-Tukey FFT algorithm (1965) made real-time digital processing practically tractable.
 
 - ### Provenance
-  - sources::
-  - migration-date:: 2026-04-26T00:00:00Z
+  - sources:: IEEE Signal Processing Society; Proakis & Manolakis "Digital Signal Processing" (4th ed.); Oppenheim & Schafer "Discrete-Time Signal Processing" (3rd ed.); Mallat "A Wavelet Tour of Signal Processing" (3rd ed.)
+  - updated:: 2026-06-13
+  - domain-remap-note:: Original domain was "spatial-computing" — remapped to "ai" as signal processing is a foundational cross-domain discipline whose primary modern role is enabling AI/ML feature extraction pipelines and data conditioning; bridgesTo relation added to preserve the spatial-computing connection.

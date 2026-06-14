@@ -55,7 +55,7 @@ public:: true
   "@type": "Class",
   "label": "TensorFlow",
   "definition": "An open-source machine learning framework developed by Google for building and deploying numerical computation and deep learning models across CPUs, GPUs and specialised accelerators.",
-  "domain": "deep-learning",
+  "domain": "machine-learning",
   "maturity": "mature",
   "qualityScore": 0.7,
   "subClassOf": [

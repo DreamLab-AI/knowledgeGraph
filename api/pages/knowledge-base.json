@@ -5,19 +5,45 @@
   "public": true,
   "classIri": "urn:ngm:class:knowledge-base",
   "domain": "artificial-intelligence",
-  "definition": "A knowledge base is a structured, machine-readable repository of domain-specific information, factual assertions, and inference rules that software systems\u2014including expert systems, question answering engines, and AI agents\u2014can query, reason over, and update. Knowledge bases range from relational tables and document stores to formal ontologies expressed in OWL/RDF and property graphs, each offering different trade-offs between expressiveness, scalability, and reasoning complexity. In contemporary AI architectures, knowledge bases frequently serve as the external long-term memory component in retrieval-augmented generation pipelines.",
+  "definition": "A knowledge base is a structured, machine-readable repository of domain-specific information, factual assertions, and inference rules that software systems\u2014including expert systems, question-answering engines, and AI agents\u2014can query, reason over, and update. Knowledge bases range from relational tables and document stores to formal ontologies expressed in OWL/RDF and property graphs, each offering different trade-offs between expressiveness, scalability, and reasoning complexity. They function as the long-term declarative memory layer in AI architectures, enabling systems to retrieve, validate, and integrate facts without embedding all knowledge in model parameters. In contemporary retrieval-augmented generation pipelines a knowledge base serves as the authoritative external store from which a retriever selects grounding context for a large language model.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ai-application",
-      "label": "AI Application"
+      "id": "urn:ngm:class:knowledge-representation",
+      "label": "Knowledge Representation"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "id": "urn:ngm:class:inference-engine",
+        "label": "Inference Engine"
+      },
+      {
+        "id": "urn:ngm:class:triple-store",
+        "label": "Triple Store"
+      },
+      {
+        "id": "urn:ngm:class:production-rules",
+        "label": "Production Rules"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:knowledge-acquisition",
+        "label": "Knowledge Acquisition"
+      },
+      {
+        "id": "urn:ngm:class:data-schema",
+        "label": "Data Schema"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:retrieval-augmented-generation",
@@ -26,20 +52,71 @@
       {
         "id": "urn:ngm:class:question-answering",
         "label": "Question Answering"
+      },
+      {
+        "id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      },
+      {
+        "id": "urn:ngm:class:automated-reasoning",
+        "label": "Automated Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:expert-systems",
+        "label": "Expert Systems"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [
+    "dependsOn": [
       {
         "id": "urn:ngm:class:ontology",
         "label": "Ontology"
       },
       {
+        "id": "urn:ngm:class:data-model",
+        "label": "Data Model"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:database",
+        "label": "Database"
+      },
+      {
+        "id": "urn:ngm:class:vector-database",
+        "label": "Vector Database"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:decentralised-knowledge-graph",
+        "label": "Decentralised Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "uses": [
+      {
         "id": "urn:ngm:class:knowledge-representation",
         "label": "Knowledge Representation"
+      },
+      {
+        "id": "urn:ngm:class:description-logic",
+        "label": "Description Logic"
+      },
+      {
+        "id": "urn:ngm:class:sparql",
+        "label": "SPARQL"
+      },
+      {
+        "id": "urn:ngm:class:rdf",
+        "label": "RDF"
       }
     ],
     "supports": [],
@@ -51,8 +128,12 @@
         "label": "Knowledge Graph"
       },
       {
-        "id": "urn:ngm:class:expert-systems",
-        "label": "Expert Systems"
+        "id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
       }
     ]
   },

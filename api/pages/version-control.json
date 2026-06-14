@@ -4,39 +4,104 @@
   "slug": "version-control",
   "public": true,
   "classIri": "urn:ngm:class:version-control",
-  "domain": "spatial-computing",
-  "definition": "Version control is a system for tracking, managing, and auditing changes to files\u2014principally source code\u2014over time, enabling multiple contributors to work in parallel branches and merge changes systematically. Distributed version control systems such as Git maintain a full change history locally on each node, enabling offline operation, branching, rebasing, and cryptographically signed commits. Version control is a prerequisite for reproducible AI training pipelines, dataset lineage tracking, collaborative 3D asset workflows, and Infrastructure-as-Code practices.",
+  "domain": "infrastructure",
+  "definition": "Version control is a methodology and toolset for systematically tracking, managing, and auditing changes to files and artefacts over time, enabling multiple contributors to develop concurrently on isolated branches and integrate their work through well-defined merge strategies. Distributed version control systems such as Git maintain a full directed-acyclic-graph (DAG) history locally on every node, supporting offline operation, cryptographically signed commits, and fine-grained blame and bisect operations. Version control underpins modern software delivery practices including continuous integration, infrastructure-as-code, dataset lineage, and MLOps pipelines by providing immutable, content-addressed snapshots of any evolving asset.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:sc-platform-and-environment",
-      "label": "Spatial Platform and Environment"
+      "id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:git",
+        "label": "Git"
+      },
+      {
+        "id": "urn:ngm:class:branching-strategy",
+        "label": "Branching Strategy"
+      },
+      {
+        "id": "urn:ngm:class:merge-conflict-resolution",
+        "label": "Merge Conflict Resolution"
+      },
+      {
+        "id": "urn:ngm:class:commit",
+        "label": "Commit"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cryptographic-hashing",
+        "label": "Cryptographic Hashing"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:collaboration",
         "label": "Collaboration"
       },
       {
-        "id": "urn:ngm:class:code-generation",
-        "label": "Code Generation"
+        "id": "urn:ngm:class:continuous-integration",
+        "label": "Continuous Integration"
+      },
+      {
+        "id": "urn:ngm:class:code-review",
+        "label": "Code Review"
+      },
+      {
+        "id": "urn:ngm:class:infrastructure-as-code",
+        "label": "Infrastructure as Code"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:file-system",
+        "label": "File System"
+      },
+      {
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:centralised-version-control",
+        "label": "Centralised Version Control"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:data-lineage",
+        "label": "Data Lineage"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
     "uses": [],
     "supports": [
       {
         "id": "urn:ngm:class:ai-augmented-software-engineering",
         "label": "AI-Augmented Software Engineering"
+      },
+      {
+        "id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      },
+      {
+        "id": "urn:ngm:class:devops",
+        "label": "DevOps"
       }
     ],
     "standardizedBy": [],
@@ -49,6 +114,18 @@
       {
         "id": "urn:ngm:class:knowledge-management",
         "label": "Knowledge Management"
+      },
+      {
+        "id": "urn:ngm:class:code-generation",
+        "label": "Code Generation"
+      },
+      {
+        "id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      },
+      {
+        "id": "urn:ngm:class:dataset-versioning",
+        "label": "Dataset Versioning"
       }
     ]
   },

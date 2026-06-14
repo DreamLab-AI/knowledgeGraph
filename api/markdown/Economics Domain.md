@@ -91,7 +91,7 @@ public:: true
   "@type": "Class",
   "label": "Economics Domain",
   "definition": "The Economics Domain classifies concepts concerned with how agents allocate scarce resources and how incentives shape behaviour and outcomes. It covers micro and macro analysis, market structure, monetary phenomena, and the token economics that arise in ledger-based systems. As a top-level subject classification, it scopes the analytical study of allocation and incentives rather than the design of specific mechanisms.",
-  "domain": "economics",
+  "domain": "finance",
   "maturity": "emerging",
   "qualityScore": 0.7,
   "subClassOf": [

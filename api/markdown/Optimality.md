@@ -47,7 +47,7 @@ public:: true
   "@type": "Class",
   "label": "Optimality",
   "definition": "The property of being the best achievable solution with respect to a defined objective and set of constraints, central to optimisation and decision problems.",
-  "domain": "general",
+  "domain": "machine-learning",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

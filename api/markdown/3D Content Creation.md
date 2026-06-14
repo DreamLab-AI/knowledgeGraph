@@ -21,7 +21,7 @@ public:: true
   "@type": "Class",
   "label": "3D Content Creation",
   "definition": "3D Content Creation encompasses the end-to-end process of designing, modelling, texturing, rigging, and rendering three-dimensional digital assets and environments for use in games, film, XR experiences, and digital twins. It spans artistic and technical disciplines ranging from polygon modelling and UV unwrapping to physically based material authoring and real-time rendering optimisation. The discipline bridges human creative intent and the technical pipelines that deliver interactive or cinematic experiences.",
-  "domain": "spatial",
+  "domain": "spatial-computing",
   "maturity": "mature",
   "subClassOf": [
     {"@id": "urn:ngm:class:content-creation", "label": "Content Creation"}

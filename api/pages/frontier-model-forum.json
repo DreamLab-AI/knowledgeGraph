@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:frontier-model-forum",
   "domain": "artificial-intelligence",
-  "definition": "The Frontier Model Forum is an industry body founded in 2023 by leading AI development organisations to advance AI safety research, share knowledge on safety best practices, and promote responsible development and deployment of frontier AI models. It provides a venue for cross-company collaboration on technical safety, evaluation methodologies, and engagement with governments and civil society. The Forum focuses specifically on the most capable general-purpose AI models and the risks that may arise from their development and deployment.",
+  "definition": "The Frontier Model Forum (FMF) is an industry consortium founded in July 2023 by Anthropic, Google, Microsoft, and OpenAI to advance the safe and responsible development of frontier AI models \u2014 the most capable general-purpose AI systems at the frontier of performance. It operates as a collaborative, pre-competitive body focused on technical AI safety research, shared safety evaluations, red-teaming methodologies, and engagement with policymakers and civil society. The Forum functions as a bridge between frontier AI developers and regulatory bodies, aiming to establish shared technical standards and best practices without constituting a formal standards organisation or regulatory authority.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-governance-and-ethics",
@@ -13,17 +13,78 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
+  "qualityScore": 0.74,
   "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:safety-evaluation",
+        "label": "Safety Evaluation"
+      },
+      {
+        "id": "urn:ngm:class:capability-evaluation",
+        "label": "Capability Evaluation"
+      },
+      {
+        "id": "urn:ngm:class:information-sharing",
+        "label": "Information Sharing"
+      }
+    ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:ai-safety-research",
+        "label": "AI Safety Research"
+      },
+      {
+        "id": "urn:ngm:class:responsible-scaling-policy",
+        "label": "Responsible Scaling Policy"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:ai-safety-institute",
+        "label": "AI Safety Institute"
+      },
+      {
+        "id": "urn:ngm:class:partnership-on-ai",
+        "label": "Partnership on AI"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-policy",
+        "label": "AI Policy"
+      },
+      {
+        "id": "urn:ngm:class:international-ai-governance",
+        "label": "International AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:biosecurity",
+        "label": "Biosecurity"
+      },
+      {
+        "id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:red-teaming",
+        "label": "Red Teaming"
+      },
+      {
+        "id": "urn:ngm:class:interpretability",
+        "label": "Interpretability"
+      },
+      {
+        "id": "urn:ngm:class:benchmarking",
+        "label": "Benchmarking"
+      }
+    ],
     "supports": [
       {
         "id": "urn:ngm:class:ai-safety",
@@ -32,10 +93,19 @@
       {
         "id": "urn:ngm:class:responsible-ai",
         "label": "Responsible AI"
+      },
+      {
+        "id": "urn:ngm:class:ai-policy",
+        "label": "AI Policy"
       }
     ],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:ai-governance-ecosystem",
+        "label": "AI Governance Ecosystem"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:ai-alignment",
@@ -48,6 +118,18 @@
       {
         "id": "urn:ngm:class:red-teaming",
         "label": "Red Teaming"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety-institute",
+        "label": "AI Safety Institute"
+      },
+      {
+        "id": "urn:ngm:class:global-partnership-on-ai",
+        "label": "Global Partnership on AI"
+      },
+      {
+        "id": "urn:ngm:class:oecd-ai-policy-observatory",
+        "label": "OECD AI Policy Observatory"
       }
     ]
   },

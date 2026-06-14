@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:iec-62061",
   "domain": "standards",
-  "definition": "IEC 62061 addresses the functional safety of safety-related control systems for machinery, covering the design and integration of such systems.",
+  "definition": "IEC 62061 is an international standard published by the International Electrotechnical Commission that specifies requirements for the design, integration, and validation of safety-related electrical, electronic, and programmable electronic control systems (SRECS) for machinery. It defines a risk-based framework for achieving Safety Integrity Levels (SIL 1\u20133) in machinery safety applications, covering the entire safety lifecycle from hazard identification through to decommissioning. The standard is sector-specific machinery application of the generic IEC 61508 functional safety framework, harmonised under the EU Machinery Directive and its successor the EU Machinery Regulation. It provides quantitative methods for calculating Probability of Dangerous Failure per Hour (PFH) and Diagnostic Coverage (DC) for hardware and software subsystems.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:technical-standard",
@@ -13,21 +13,122 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.73,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:hazard-and-risk-assessment",
+        "label": "Hazard and Risk Assessment"
+      },
+      {
+        "id": "urn:ngm:class:safety-integrity-level",
+        "label": "Safety Integrity Level"
+      },
+      {
+        "id": "urn:ngm:class:safety-lifecycle",
+        "label": "Safety Lifecycle"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:ce-marking",
+        "label": "CE Marking"
+      },
+      {
+        "id": "urn:ngm:class:machinery-directive",
+        "label": "Machinery Directive"
+      },
+      {
+        "id": "urn:ngm:class:safety-validation",
+        "label": "Safety Validation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:failure-mode-and-effects-analysis",
+        "label": "Failure Mode and Effects Analysis"
+      },
+      {
+        "id": "urn:ngm:class:diagnostic-coverage",
+        "label": "Diagnostic Coverage"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:iec-61508",
+        "label": "IEC 61508"
+      },
+      {
+        "id": "urn:ngm:class:risk-reduction",
+        "label": "Risk Reduction"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:iso-13849",
+        "label": "ISO 13849"
+      },
+      {
+        "id": "urn:ngm:class:iec-61511",
+        "label": "IEC 61511"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:industrial-automation",
+        "label": "Industrial Automation"
+      },
+      {
+        "id": "urn:ngm:class:collaborative-robot",
+        "label": "Collaborative Robot"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:programmable-electronic-system",
+        "label": "Programmable Electronic System"
+      },
+      {
+        "id": "urn:ngm:class:safety-related-control-system",
+        "label": "Safety-Related Control System"
+      },
+      {
+        "id": "urn:ngm:class:probability-of-failure-on-demand",
+        "label": "Probability of Failure on Demand"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
+      },
+      {
+        "id": "urn:ngm:class:machinery-safety",
+        "label": "Machinery Safety"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:iec-62443",
+        "label": "IEC 62443"
+      },
+      {
+        "id": "urn:ngm:class:iso-12100",
+        "label": "ISO 12100"
+      },
+      {
+        "id": "urn:ngm:class:hardware-fault-tolerance",
+        "label": "Hardware Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:safety-instrumented-system",
+        "label": "Safety Instrumented System"
+      }
+    ]
   },
   "wikilinks": [
     {

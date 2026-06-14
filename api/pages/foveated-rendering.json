@@ -5,34 +5,94 @@
   "public": true,
   "classIri": "urn:ngm:class:foveated-rendering",
   "domain": "spatial-computing",
-  "definition": "Foveated rendering is a real-time rendering technique that exploits the human visual system's non-uniform acuity by rendering the region at or near the viewer's gaze point at full resolution whilst progressively reducing geometric detail, texture resolution, and shading complexity in the peripheral visual field. Combined with high-speed eye tracking to continuously locate the gaze point, foveated rendering achieves substantial reductions in GPU workload \u2014 typically enabling higher frame rates or higher central-region quality for a given compute budget. It is a critical technique for practical high-fidelity XR head-mounted displays where GPU thermal and power constraints are severe.",
+  "definition": "Foveated rendering is a real-time graphics technique that exploits the non-uniform spatial acuity of the human visual system by rendering the region around the viewer's gaze point at full resolution whilst progressively reducing shading quality, texture resolution, and geometric detail in the peripheral visual field. Eye-tracking hardware continuously locates the foveal fixation point so that the high-quality region follows the gaze with sub-frame latency, making quality degradation imperceptible. The technique produces substantial GPU workload reductions that are critical for achieving high frame rates and thermal sustainability on power-constrained XR head-mounted displays, and is increasingly extended by neural super-resolution to reconstruct peripheral detail at low cost.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:sc-display-and-rendering",
-      "label": "Display and Rendering"
+      "id": "urn:ngm:class:real-time-rendering",
+      "label": "Real-Time Rendering"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
+  "qualityScore": 0.73,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:foveal-region",
+        "label": "Foveal Region"
+      },
+      {
+        "id": "urn:ngm:class:peripheral-region",
+        "label": "Peripheral Region"
+      },
+      {
+        "id": "urn:ngm:class:quality-transition-zone",
+        "label": "Quality Transition Zone"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:eye-tracking",
         "label": "Eye Tracking"
+      },
+      {
+        "id": "urn:ngm:class:gaze-estimation",
+        "label": "Gaze Estimation"
+      },
+      {
+        "id": "urn:ngm:class:variable-rate-shading",
+        "label": "Variable Rate Shading"
       }
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:real-time-rendering",
-        "label": "Real-Time Rendering"
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "id": "urn:ngm:class:high-fidelity-vr",
+        "label": "High-Fidelity VR"
+      },
+      {
+        "id": "urn:ngm:class:power-efficient-rendering",
+        "label": "Power-Efficient Rendering"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "id": "urn:ngm:class:display-hardware",
+        "label": "Display Hardware"
+      },
+      {
+        "id": "urn:ngm:class:human-visual-system",
+        "label": "Human Visual System"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:uniform-shading",
+        "label": "Uniform Shading"
+      },
+      {
+        "id": "urn:ngm:class:temporal-anti-aliasing",
+        "label": "Temporal Anti-Aliasing"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:neural-network-inference",
+        "label": "Neural Network Inference"
+      },
+      {
+        "id": "urn:ngm:class:perceptual-quality-metric",
+        "label": "Perceptual Quality Metric"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:level-of-detail",
@@ -41,6 +101,18 @@
       {
         "id": "urn:ngm:class:rendering-pipeline",
         "label": "Rendering Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:reprojection",
+        "label": "Reprojection"
+      },
+      {
+        "id": "urn:ngm:class:super-resolution",
+        "label": "Super-Resolution"
+      },
+      {
+        "id": "urn:ngm:class:mipmap",
+        "label": "Mipmap"
       }
     ],
     "supports": [],
@@ -48,12 +120,16 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:gpu-compute",
-        "label": "GPU Compute"
+        "id": "urn:ngm:class:perceptual-rendering",
+        "label": "Perceptual Rendering"
       },
       {
-        "id": "urn:ngm:class:display-hardware",
-        "label": "Display Hardware"
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:neural-rendering",
+        "label": "Neural Rendering"
       }
     ]
   },

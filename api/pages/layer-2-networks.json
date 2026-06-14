@@ -5,39 +5,137 @@
   "public": true,
   "classIri": "urn:ngm:class:layer-2-networks",
   "domain": "blockchain",
-  "definition": "Protocols built on top of a base blockchain that process transactions off the main chain while inheriting its settlement and security guarantees.",
+  "definition": "Layer 2 Networks are secondary protocols constructed atop a base blockchain (Layer 1) that execute transactions off the main chain, batching or compressing them before posting commitments back to Layer 1 for final settlement and security. They address the fundamental scalability trilemma by separating execution from consensus, enabling higher throughput and lower fees without compromising the decentralisation or security guarantees of the underlying chain. Primary architectural families include optimistic rollups, zero-knowledge rollups, state channels, and sidechains, each making different trade-offs between latency, data availability, and trust assumptions. Settlement finality and fraud or validity proof mechanisms determine the trust model and the withdrawal period users must endure before funds are considered unconditionally settled.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:layer-1",
-      "label": "Layer 1"
+      "id": "urn:ngm:class:blockchain-scaling",
+      "label": "Blockchain Scaling"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.74,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:rollup",
+        "label": "Rollup"
+      },
+      {
+        "id": "urn:ngm:class:state-channels",
+        "label": "State Channels"
+      },
+      {
+        "id": "urn:ngm:class:sidechains",
+        "label": "Sidechains"
+      },
+      {
+        "id": "urn:ngm:class:validium",
+        "label": "Validium"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:layer-1",
         "label": "Layer 1"
+      },
+      {
+        "id": "urn:ngm:class:data-availability",
+        "label": "Data Availability"
+      },
+      {
+        "id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:scalability",
         "label": "Scalability"
+      },
+      {
+        "id": "urn:ngm:class:micropayments",
+        "label": "Micropayments"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:optimistic-rollup",
+        "label": "Optimistic Rollup"
+      },
+      {
+        "id": "urn:ngm:class:zk-rollup",
+        "label": "ZK Rollup"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:layer-1",
+        "label": "Layer 1"
+      },
+      {
+        "id": "urn:ngm:class:sharding",
+        "label": "Sharding"
+      },
+      {
+        "id": "urn:ngm:class:plasma",
+        "label": "Plasma"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "id": "urn:ngm:class:payment-infrastructure",
+        "label": "Payment Infrastructure"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cryptographic-proofs",
+        "label": "Cryptographic Proofs"
+      },
+      {
+        "id": "urn:ngm:class:fraud-proofs",
+        "label": "Fraud Proofs"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proofs",
+        "label": "Zero-Knowledge Proofs"
+      },
+      {
+        "id": "urn:ngm:class:merkle-trees",
+        "label": "Merkle Trees"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-lightning-network",
+        "label": "Bitcoin Lightning Network"
+      },
+      {
+        "id": "urn:ngm:class:sequencer",
+        "label": "Sequencer"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-interoperability",
+        "label": "Blockchain Interoperability"
+      }
+    ]
   },
   "wikilinks": [
     {

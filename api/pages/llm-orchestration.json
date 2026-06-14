@@ -4,7 +4,7 @@
   "slug": "llm-orchestration",
   "public": true,
   "classIri": "urn:ngm:class:llm-orchestration",
-  "domain": "natural-language-processing",
+  "domain": "ai",
   "definition": "The coordination of multiple calls to one or more large language models, together with tools, retrieval and control logic, to accomplish a task that a single prompt cannot reliably handle.",
   "subClassOf": [
     {

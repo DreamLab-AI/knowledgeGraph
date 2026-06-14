@@ -5,19 +5,49 @@
   "public": true,
   "classIri": "urn:ngm:class:industrial-io-t",
   "domain": "infrastructure",
-  "definition": "Industrial IoT (IIoT) is the extension of Internet of Things technologies into industrial operational environments, connecting sensors, actuators, controllers, and edge gateways to cloud analytics and control systems in order to enable real-time operational visibility, process optimisation, predictive maintenance, and remote asset management. IIoT integrates historically isolated operational technology (OT) networks\u2014such as SCADA systems and programmable logic controllers (PLCs)\u2014with IT infrastructure, requiring careful management of the resulting cyber-physical attack surface. Key communication standards include OPC UA, MQTT, and AMQP.",
+  "definition": "Industrial IoT (IIoT) is the application of Internet of Things technologies to industrial operational environments, connecting sensors, actuators, programmable logic controllers, and edge gateways to analytics platforms and supervisory control systems to enable real-time operational visibility, process optimisation, predictive maintenance, and remote asset management. IIoT bridges historically isolated operational technology (OT) networks\u2014including SCADA systems, distributed control systems (DCS), and fieldbus networks\u2014with IT infrastructure, creating a converged cyber-physical stack requiring rigorous security governance under frameworks such as IEC 62443. Key application-layer standards include OPC UA (IEC 62541), MQTT (ISO/IEC 20922), AMQP, and time-sensitive networking extensions (IEEE 802.1 TSN) for deterministic Ethernet.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:infra-network-and-comms",
-      "label": "Network and Communications"
+      "id": "urn:ngm:class:internet-of-things",
+      "label": "Internet of Things"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.72,
+  "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:sensor",
+        "label": "Sensor"
+      },
+      {
+        "id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      },
+      {
+        "id": "urn:ngm:class:programmable-logic-controller",
+        "label": "Programmable Logic Controller"
+      },
+      {
+        "id": "urn:ngm:class:edge-gateway",
+        "label": "Edge Gateway"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:operational-technology",
+        "label": "Operational Technology"
+      },
+      {
+        "id": "urn:ngm:class:scada",
+        "label": "SCADA"
+      },
+      {
+        "id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:predictive-maintenance",
@@ -26,33 +56,81 @@
       {
         "id": "urn:ngm:class:digital-twin",
         "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:industrial-automation",
+        "label": "Industrial Automation"
+      },
+      {
+        "id": "urn:ngm:class:condition-monitoring",
+        "label": "Condition Monitoring"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [
+    "dependsOn": [
       {
-        "id": "urn:ngm:class:sensor",
-        "label": "Sensor"
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
       },
+      {
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:consumer-iot",
+        "label": "Consumer IoT"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "uses": [
       {
         "id": "urn:ngm:class:edge-computing",
         "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:opc-ua",
+        "label": "OPC UA"
+      },
+      {
+        "id": "urn:ngm:class:mqtt",
+        "label": "MQTT"
+      },
+      {
+        "id": "urn:ngm:class:time-sensitive-networking",
+        "label": "Time-Sensitive Networking"
       }
     ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iec-62443",
+        "label": "IEC 62443"
+      },
+      {
+        "id": "urn:ngm:class:iec-62541",
+        "label": "IEC 62541"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:industrial-automation",
-        "label": "IndustrialAutomation"
+        "id": "urn:ngm:class:cyber-physical-systems",
+        "label": "Cyber-Physical Systems"
       },
       {
-        "id": "urn:ngm:class:cyber-physical-systems",
-        "label": "Cyber Physical Systems"
+        "id": "urn:ngm:class:industry-4-0",
+        "label": "Industry 4.0"
       }
     ]
   },

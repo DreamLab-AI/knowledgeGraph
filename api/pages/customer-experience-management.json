@@ -4,7 +4,7 @@
   "slug": "customer-experience-management",
   "public": true,
   "classIri": "urn:ngm:class:customer-experience-management",
-  "domain": "business",
+  "domain": "ai",
   "definition": "Customer experience management is the practice of designing and coordinating customer interactions across channels to improve satisfaction and retention.",
   "subClassOf": [
     {

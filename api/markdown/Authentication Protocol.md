@@ -59,7 +59,7 @@ public:: true
   "@type": "Class",
   "label": "Authentication Protocol",
   "definition": "A defined sequence of exchanges through which one party proves its identity to another over a communication channel.",
-  "domain": "cryptographic",
+  "domain": "security",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

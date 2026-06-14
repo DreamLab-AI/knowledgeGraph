@@ -1,22 +1,83 @@
 - ### Definition
-  - A cost function is a scalar-valued mathematical function that quantifies the discrepancy between the current and desired states of a robotic system, or the total resource expenditure of a planned trajectory, providing the objective that control and planning algorithms minimise. In motion planning, cost functions encode factors such as path length, joint torque, collision risk, and time; in reinforcement learning they appear inverted as reward functions whose maximisation drives policy learning. The choice and design of the cost function critically shapes the behaviour of the optimised system, and poorly specified costs can lead to reward hacking or physically unrealisable trajectories.
+  - A **cost function** (also called a [[Loss Function]] or [[Objective Function]]) is a scalar-valued mathematical mapping from model parameters or system states to a real number that quantifies how far the system is from a desired outcome. In [[Machine Learning]], it measures the aggregate prediction error across a training dataset; in [[Optimal Control]] and [[Robotics]], it encodes trajectory quality criteria such as energy expenditure and collision risk. The entire process of [[Model Training]] is the iterative minimisation of this function, making its design one of the most consequential modelling decisions in any learned or optimised system. Misspecified cost functions lead to [[Reward Hacking]], degenerate local minima, or physically unrealisable solutions.
 
-- ### Semantic Classification
-  - owl-class:: cost-function:Cost Function
-  - owl-role:: Concept
+- ### Overview
+  - Cost functions occupy the conceptual centre of both [[Supervised Learning]] and [[Optimal Control]] theory. They convert the informal notion of "the model should be good" into a precise mathematical target that algorithms can pursue through iterative parameter updates.
+  - In [[Supervised Learning]] the cost function aggregates a per-sample [[Loss Function]] (e.g., squared error, cross-entropy) over the training set. Minimising this aggregate via [[Gradient Descent]] or its stochastic variants drives parameter updates that improve generalisation.
+  - In [[Reinforcement Learning]] the cost function appears as the negation of the cumulative reward signal. An agent that maximises discounted return is equivalently minimising a discounted cumulative cost, connecting both frameworks under a unified optimisation view.
+  - In [[Control Theory]], the cost function (or performance index) is integrated over time: for a [[Linear-Quadratic Regulator]] (LQR) it is a quadratic form in state deviations and control effort, yielding a closed-form optimal policy via the algebraic Riccati equation.
+  - The geometry of the cost function — its [[Loss Landscape]] — determines the tractability of optimisation. Convex cost functions (e.g., mean squared error for linear regression) have a unique global minimum; non-convex surfaces (e.g., those induced by deep [[Neural Network]] architectures) contain saddle points, plateaus, and multiple local minima that motivate adaptive optimisers and [[Regularisation]].
+
+- ### Key Components
+  - **Data-fidelity term** — measures fit to observations (e.g., [[Mean Squared Error]], [[Cross-Entropy Loss]], [[Huber Loss]]). The dominant driver of parameter updates.
+  - **[[Regularisation]] term** — penalises model complexity (L1 / L2 norms on weights) to prevent [[Overfitting]]. Acts as a prior in [[Bayesian Inference]] interpretations.
+  - **[[Penalty Term]]** — encodes hard or soft constraints (collision avoidance, actuator limits, fairness budgets) as additive terms that increase cost when constraints are violated.
+  - **Weighting / scalarisation** — when multiple objectives exist (e.g., accuracy vs. latency), a weighted sum or Pareto scalarisation converts them into a single scalar cost suitable for [[Convex Optimisation]] methods.
+  - **Surrogate losses** — [[Hinge Loss]] (SVM), [[Kullback-Leibler Divergence]], and [[Wasserstein Distance]] are differentiable proxies for non-differentiable metrics like accuracy or perceptual quality, enabling [[Backpropagation]].
+
+- ### Common Cost Function Families
+  - **Regression losses**
+    - [[Mean Squared Error]] (MSE) — quadratic, sensitive to outliers, used in linear regression and LQR.
+    - [[Mean Absolute Error]] (MAE) — robust to outliers; non-differentiable at zero, requires subgradient methods.
+    - [[Huber Loss]] — smooth quadratic near zero, linear in tails; balances robustness and differentiability.
+  - **Classification losses**
+    - [[Cross-Entropy Loss]] — derived from [[Maximum Likelihood Estimation]] under categorical distributions; standard for [[Softmax]] outputs.
+    - [[Hinge Loss]] — margin-based; underpins support vector machines; not differentiable everywhere.
+    - [[Focal Loss]] — variant of cross-entropy that down-weights easy examples; used in dense object detection.
+  - **Generative / probabilistic losses**
+    - [[Kullback-Leibler Divergence]] — measures distributional discrepancy; core to [[Variational Autoencoders]] and [[RLHF]].
+    - [[Wasserstein Distance]] — geometrically meaningful probability metric; central to [[Wasserstein GAN]] stability.
+    - [[Evidence Lower Bound]] (ELBO) — maximised (negated as cost) in [[Variational Inference]].
+  - **Control / planning losses**
+    - Quadratic performance index — state-cost matrix Q, control-cost matrix R; standard in [[Linear-Quadratic Regulator]].
+    - Time-optimal cost — minimises task completion time subject to dynamics constraints; used in [[Model Predictive Control]].
+    - Trajectory smoothness cost — penalises jerk or curvature; used in [[CHOMP]] and [[TrajOpt]] for [[Motion Planning]].
+
+- ### Applications
+  - **[[Deep Learning]] model training** — [[Backpropagation]] computes the gradient of the cost with respect to all parameters via the chain rule; [[Stochastic Gradient Descent]] and variants (Adam, RMSProp) use these gradients to update weights across billions of parameters.
+  - **[[Reinforcement Learning]] agent training** — Policy gradient methods (PPO, TRPO) and value-based methods (DQN) optimise a cost defined on accumulated reward signals; the cost function design determines convergence speed and policy quality.
+  - **[[Inverse Reinforcement Learning]]** — infers the cost function from expert demonstrations, enabling robots and agents to learn task objectives without hand-coded reward engineering.
+  - **[[Model Predictive Control]]** — a receding-horizon optimiser solves a finite-horizon cost minimisation at each timestep, replanning as the system evolves; widely used in autonomous vehicles and process control.
+  - **[[Neural Architecture Search]]** — validation loss serves as the cost function driving architecture optimisation via evolutionary algorithms or differentiable NAS.
+  - **[[Large Language Models]] fine-tuning** — [[RLHF]] uses a KL-regularised reward-model score as the cost, balancing human preference alignment against divergence from the pre-trained distribution.
+  - **[[Supply Chain]] optimisation** — total logistics cost (transport, inventory holding, penalty for stockouts) is minimised over decision variables such as order quantities and routing.
+  - **[[Finance]] — portfolio optimisation** — mean-variance and CVaR objectives define cost functions over portfolio weights; solved via quadratic or convex programmes.
+  - **[[Computer Vision]] — image segmentation** — [[Dice Loss]] and combined cross-entropy/Dice costs are minimised to train pixel-level classifiers in medical imaging.
 
 - ### Relationships
-  - enables [[Optimal Control]]
-  - enables [[Motion Planning]]
-  - relatedTo [[Reward Function]]
-  - relatedTo [[Gradient Descent]]
-  - uses [[Reinforcement Learning]]
+  - partOf:: [[Objective Function]]
+  - enables:: [[Gradient Descent]]
+  - enables:: [[Optimal Control]]
+  - enables:: [[Motion Planning]]
+  - enables:: [[Model Training]]
+  - requires:: [[Training Data]]
+  - requires:: [[Differentiability]]
+  - hasPart:: [[Regularisation]]
+  - hasPart:: [[Penalty Term]]
+  - implements:: [[Maximum Likelihood Estimation]]
+  - implements:: [[Bayesian Inference]]
+  - uses:: [[Reinforcement Learning]]
+  - uses:: [[Backpropagation]]
+  - uses:: [[Automatic Differentiation]]
+  - dependsOn:: [[Loss Landscape]]
+  - dependsOn:: [[Parametric Model]]
+  - contrastsWith:: [[Reward Function]]
+  - contrastsWith:: [[Utility Function]]
+  - relatedTo:: [[Convex Optimisation]]
+  - relatedTo:: [[Overfitting]]
+  - relatedTo:: [[Hyperparameter Tuning]]
+  - relatedTo:: [[Neural Network]]
+  - bridges-to:: [[Inverse Reinforcement Learning]]
+  - bridges-to:: [[Mechanism Design]]
 
-- ### Content
-  - Cost functions appear throughout robotics at multiple levels of abstraction. At the trajectory level, they encode geometric and dynamic criteria: a Cartesian path planner might minimise total arc length subject to joint-limit and obstacle-avoidance constraints, while a torque-minimising objective for a manipulator reduces actuator wear and energy consumption. Quadratic cost functions are popular in linear-quadratic regulator (LQR) formulations because they yield closed-form optimal solutions via the Riccati equation.
-  - In sampling-based planners such as RRT* and PRM*, cost functions guide the rewiring and pruning of the search tree, ensuring convergence to asymptotically optimal paths as sample count grows. For trajectory optimisation methods such as CHOMP and TrajOpt, the cost function is expressed as a sum of smooth penalty terms that can be differentiated and minimised with gradient-based solvers.
-  - In reinforcement learning, the cost function appears as the negation of the reward signal. Deep RL algorithms such as PPO and SAC learn policies that maximise cumulative discounted reward, which is equivalent to minimising a cumulative cost over the episode. Inverse reinforcement learning inverts this relationship, inferring the cost function that explains observed expert behaviour, enabling robots to learn task objectives from demonstration rather than hand-coded cost terms. Careful cost function design or learning is therefore one of the most consequential decisions in robot system development.
+- ### Standards & Context
+  - Cost function design is covered extensively in foundational texts (Bishop's *Pattern Recognition and Machine Learning*; Goodfellow, Bengio & Courville's *Deep Learning*) and is a core component of every major ML framework: [[PyTorch]] (`torch.nn.functional`), [[TensorFlow]] (`tf.keras.losses`), and [[JAX]] (`optax`).
+  - The [[OpenAI Gym]] and [[DeepMind Control Suite]] standardise reward (negative cost) signals for [[Reinforcement Learning]] benchmarking.
+  - For control applications, the LQR cost formulation is specified in IEEE and IEC control standards and implemented in MATLAB's Control System Toolbox.
+  - [[ISO/IEC 22989:2022]] (AI concepts and terminology) references objective functions and loss functions as core AI vocabulary.
+  - Responsible AI guidelines (e.g., EU AI Act, NIST AI RMF) increasingly require documentation of cost function choices in high-risk AI systems, as cost function specification directly determines system behaviour and potential for discriminatory outcomes.
 
 - ### Provenance
-  - sources::
+  - sources:: Bishop (2006) *PRML*; Goodfellow et al. (2016) *Deep Learning*; Sutton & Barto (2018) *Reinforcement Learning*; Bertsekas (2012) *Dynamic Programming and Optimal Control*
+  - updated:: 2026-06-13
   - migration-date:: 2026-05-19T00:00:00Z

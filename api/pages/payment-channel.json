@@ -5,33 +5,95 @@
   "public": true,
   "classIri": "urn:ngm:class:payment-channel",
   "domain": "blockchain",
-  "definition": "A payment channel is a cryptographic construct that allows two or more parties to conduct multiple off-chain transactions by exchanging signed commitment messages, with only the opening and closing states recorded on a base-layer blockchain, thereby enabling high-throughput, low-fee payments without sacrificing on-chain settlement guarantees. Channels are typically secured by time-locked contracts and mutual revocation mechanisms.",
+  "definition": "A payment channel is a cryptographic construct that allows two or more parties to conduct multiple off-chain transactions by exchanging signed commitment messages, with only the channel-opening and channel-closing states recorded on a base-layer blockchain. Channels are secured by multisignature scripts, time-locked contracts, and mutual revocation mechanisms that ensure neither party can unilaterally broadcast a superseded state without penalty. By batching an unbounded number of value transfers into two on-chain transactions, payment channels achieve high throughput and negligible per-payment fees while inheriting the settlement finality and trustlessness of the underlying blockchain. They form the foundational primitive of routed payment networks such as the Lightning Network and of generalised state-channel protocols.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:off-chain-scaling",
       "label": "Off-Chain Scaling"
-    },
-    {
-      "id": "urn:ngm:class:layer-2-solutions",
-      "label": "Layer-2 Solutions"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.74,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [
+    "hasPart": [
       {
-        "id": "urn:ngm:class:lightning-network",
-        "label": "Lightning Network"
+        "id": "urn:ngm:class:commitment-transaction",
+        "label": "Commitment Transaction"
+      },
+      {
+        "id": "urn:ngm:class:revocation-mechanism",
+        "label": "Revocation Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:funding-transaction",
+        "label": "Funding Transaction"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:multisignature",
+        "label": "Multisignature"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:micropayment",
+        "label": "Micropayment"
+      },
+      {
+        "id": "urn:ngm:class:streaming-payment",
+        "label": "Streaming Payment"
+      },
+      {
+        "id": "urn:ngm:class:payment-routing",
+        "label": "Payment Routing"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:on-chain-settlement",
+        "label": "On-Chain Settlement"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:off-chain-scaling",
+        "label": "Off-Chain Scaling"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:on-chain-transaction",
+        "label": "On-Chain Transaction"
+      },
+      {
+        "id": "urn:ngm:class:rollup",
+        "label": "Rollup"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:machine-economy",
+        "label": "Machine Economy"
+      },
+      {
+        "id": "urn:ngm:class:iot-payments",
+        "label": "IoT Payments"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:hash-time-locked-contract",
@@ -40,19 +102,49 @@
       {
         "id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:timelock",
+        "label": "Timelock"
       }
     ],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
+    ],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:layer-2-solutions",
+        "label": "Layer-2 Solutions"
+      },
+      {
+        "id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:settlement",
         "label": "Settlement"
       },
       {
-        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-protocol",
-        "label": "Bitcoin Protocol"
+        "id": "urn:ngm:class:state-channel",
+        "label": "State Channel"
+      },
+      {
+        "id": "urn:ngm:class:channel-factory",
+        "label": "Channel Factory"
+      },
+      {
+        "id": "urn:ngm:class:atomic-swap",
+        "label": "Atomic Swap"
       }
     ]
   },

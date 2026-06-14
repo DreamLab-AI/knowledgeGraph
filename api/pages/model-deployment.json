@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:model-deployment",
   "domain": "machine-learning",
-  "definition": "The engineering process of making a trained machine learning model available for use in a production environment so that it can serve predictions to applications or users.",
+  "definition": "Model Deployment is the engineering discipline of transitioning a trained machine learning model from a development or research environment into a production system where it can serve real-time or batch predictions to users and downstream applications. It encompasses model packaging, serving infrastructure, API exposure, versioning, scaling, and monitoring, ensuring that the model behaves reliably and efficiently under operational conditions. Deployment strategies range from synchronous online endpoints for low-latency inference to batch scoring pipelines, edge device embedding, and serverless function invocations. The discipline is tightly coupled with MLOps practices that treat models as first-class software artefacts subject to continuous integration, delivery, observation, and rollback.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:mlops",
@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.75,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
@@ -21,23 +21,121 @@
       {
         "id": "urn:ngm:class:inference-engine",
         "label": "Inference Engine"
+      },
+      {
+        "id": "urn:ngm:class:model-serialisation",
+        "label": "Model Serialisation"
+      },
+      {
+        "id": "urn:ngm:class:containerisation",
+        "label": "Containerisation"
+      },
+      {
+        "id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:edge-inference",
         "label": "Edge Inference"
+      },
+      {
+        "id": "urn:ngm:class:real-time-prediction",
+        "label": "Real-Time Prediction"
+      },
+      {
+        "id": "urn:ngm:class:batch-inference",
+        "label": "Batch Inference"
+      },
+      {
+        "id": "urn:ngm:class:model-monitoring",
+        "label": "Model Monitoring"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      },
+      {
+        "id": "urn:ngm:class:model-registry",
+        "label": "Model Registry"
+      },
+      {
+        "id": "urn:ngm:class:feature-store",
+        "label": "Feature Store"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      },
+      {
+        "id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:serverless-computing",
+        "label": "Serverless Computing"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:docker",
+        "label": "Docker"
+      },
+      {
+        "id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
+      },
+      {
+        "id": "urn:ngm:class:rest-api",
+        "label": "REST API"
+      },
+      {
+        "id": "urn:ngm:class:grpc",
+        "label": "gRPC"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ab-testing",
+        "label": "A/B Testing"
+      },
+      {
+        "id": "urn:ngm:class:canary-deployment",
+        "label": "Canary Deployment"
+      },
+      {
+        "id": "urn:ngm:class:shadow-mode-deployment",
+        "label": "Shadow Mode Deployment"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:continuous-delivery",
+        "label": "Continuous Delivery"
+      },
+      {
+        "id": "urn:ngm:class:data-drift",
+        "label": "Data Drift"
+      },
+      {
+        "id": "urn:ngm:class:model-versioning",
+        "label": "Model Versioning"
+      }
+    ]
   },
   "wikilinks": [
     {

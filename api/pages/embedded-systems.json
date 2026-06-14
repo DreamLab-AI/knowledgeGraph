@@ -4,20 +4,46 @@
   "slug": "embedded-systems",
   "public": true,
   "classIri": "urn:ngm:class:embedded-systems",
-  "domain": "robotics",
-  "definition": "Embedded Systems are dedicated computing systems integrated into larger mechanical or electronic devices, designed to perform specific control or sensing functions with constrained resources, real-time requirements, and tight hardware-software coupling. They encompass microcontrollers, FPGAs, sensors, actuators, and the firmware that manages them, forming the computational substrate for robotics, industrial automation, IoT devices, and edge AI deployments.",
+  "domain": "infrastructure",
+  "definition": "Embedded Systems are specialised computing systems designed and deployed to perform dedicated functions within larger mechanical, electronic, or cyber-physical host devices, operating under strict resource constraints, real-time deadlines, and tight hardware-software coupling. They comprise microcontrollers, microprocessors, FPGAs, ASICs, sensors, actuators, and the firmware or RTOS environments that orchestrate them. Unlike general-purpose computers, embedded systems are optimised for a specific task domain \u2014 motor control, signal processing, network communication, or safety-critical actuation \u2014 and must satisfy reliability, power-budget, thermal, and often functional-safety requirements simultaneously. They form the foundational computational layer beneath robotics, industrial automation, consumer electronics, automotive ECUs, medical devices, and the Internet of Things.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:robo-actuation-and-control",
-      "label": "Actuation and Control"
+      "id": "urn:ngm:class:computing-systems",
+      "label": "Computing Systems"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.3,
-  "maturity": "emerging",
+  "qualityScore": 0.72,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:microcontroller",
+        "label": "Microcontroller"
+      },
+      {
+        "id": "urn:ngm:class:fpga",
+        "label": "FPGA"
+      },
+      {
+        "id": "urn:ngm:class:real-time-operating-system",
+        "label": "Real-Time Operating System"
+      },
+      {
+        "id": "urn:ngm:class:firmware",
+        "label": "Firmware"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:real-time-scheduling",
+        "label": "Real-Time Scheduling"
+      },
+      {
+        "id": "urn:ngm:class:hardware-abstraction-layer",
+        "label": "Hardware Abstraction Layer"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:robotics",
@@ -26,12 +52,60 @@
       {
         "id": "urn:ngm:class:internet-of-things",
         "label": "Internet of Things"
+      },
+      {
+        "id": "urn:ngm:class:industrial-automation",
+        "label": "Industrial Automation"
+      },
+      {
+        "id": "urn:ngm:class:edge-ai",
+        "label": "Edge AI"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:power-management",
+        "label": "Power Management"
+      },
+      {
+        "id": "urn:ngm:class:memory-management",
+        "label": "Memory Management"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:control-loop",
+        "label": "Control Loop"
+      },
+      {
+        "id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:general-purpose-computing",
+        "label": "General-Purpose Computing"
+      },
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:cyber-physical-systems",
+        "label": "Cyber-Physical Systems"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:sensor",
@@ -42,21 +116,47 @@
         "label": "Actuator"
       },
       {
-        "id": "urn:ngm:class:fpga",
-        "label": "FPGA"
+        "id": "urn:ngm:class:interrupt-controller",
+        "label": "Interrupt Controller"
+      },
+      {
+        "id": "urn:ngm:class:digital-signal-processor",
+        "label": "Digital Signal Processor"
       }
     ],
-    "supports": [],
-    "standardizedBy": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
+      },
+      {
+        "id": "urn:ngm:class:over-the-air-update",
+        "label": "Over-the-Air Update"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iec-61508",
+        "label": "IEC 61508"
+      },
+      {
+        "id": "urn:ngm:class:iso-26262",
+        "label": "ISO 26262"
+      },
+      {
+        "id": "urn:ngm:class:misra-c",
+        "label": "MISRA C"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:edge-computing",
-        "label": "Edge Computing"
-      },
-      {
         "id": "urn:ngm:class:control-system",
         "label": "Control System"
+      },
+      {
+        "id": "urn:ngm:class:hardware-security",
+        "label": "Hardware Security"
       }
     ]
   },

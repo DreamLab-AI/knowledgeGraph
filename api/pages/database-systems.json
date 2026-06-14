@@ -4,35 +4,157 @@
   "slug": "database-systems",
   "public": true,
   "classIri": "urn:ngm:class:database-systems",
-  "domain": "distributed-systems",
-  "definition": "Database systems are software platforms that store, organise and retrieve structured data while enforcing consistency, concurrency and durability.",
+  "domain": "data",
+  "definition": "Database systems are organised software stacks \u2014 comprising a storage engine, query processor, transaction manager, and access-control layer \u2014 that persistently store, retrieve, and manipulate structured or semi-structured data. They enforce ACID or BASE consistency guarantees, coordinate concurrent access via locking or multi-version concurrency control (MVCC), and expose declarative query languages such as SQL or graph-query dialects. Modern database systems span relational, document, key-value, columnar, time-series, and graph data models, each optimised for distinct access patterns and workload characteristics.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:distributed-systems",
-      "label": "Distributed Systems"
+      "id": "urn:ngm:class:data-management",
+      "label": "Data Management"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
-  "maturity": "established",
+  "qualityScore": 0.74,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:relational-databases",
+        "label": "Relational Databases"
+      },
       {
         "id": "urn:ngm:class:graph-databases",
         "label": "Graph Databases"
+      },
+      {
+        "id": "urn:ngm:class:nosql-databases",
+        "label": "NoSQL Databases"
+      },
+      {
+        "id": "urn:ngm:class:time-series-databases",
+        "label": "Time-Series Databases"
+      },
+      {
+        "id": "urn:ngm:class:columnar-storage",
+        "label": "Columnar Storage"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:storage-systems",
+        "label": "Storage Systems"
+      },
+      {
+        "id": "urn:ngm:class:concurrency-control",
+        "label": "Concurrency Control"
+      },
+      {
+        "id": "urn:ngm:class:query-processing",
+        "label": "Query Processing"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:data-analytics",
+        "label": "Data Analytics"
+      },
+      {
+        "id": "urn:ngm:class:data-warehousing",
+        "label": "Data Warehousing"
+      },
+      {
+        "id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      },
+      {
+        "id": "urn:ngm:class:real-time-processing",
+        "label": "Real-Time Processing"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "id": "urn:ngm:class:operating-systems",
+        "label": "Operating Systems"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:acid-transactions",
+        "label": "ACID Transactions"
+      },
+      {
+        "id": "urn:ngm:class:structured-query-language",
+        "label": "Structured Query Language"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:file-systems",
+        "label": "File Systems"
+      },
+      {
+        "id": "urn:ngm:class:in-memory-data-stores",
+        "label": "In-Memory Data Stores"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graphs",
+        "label": "Knowledge Graphs"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:indexing",
+        "label": "Indexing"
+      },
+      {
+        "id": "urn:ngm:class:caching",
+        "label": "Caching"
+      },
+      {
+        "id": "urn:ngm:class:replication",
+        "label": "Replication"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-iec-9075",
+        "label": "ISO/IEC 9075 SQL Standard"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:data-lakes",
+        "label": "Data Lakes"
+      },
+      {
+        "id": "urn:ngm:class:event-streaming",
+        "label": "Event Streaming"
+      },
+      {
+        "id": "urn:ngm:class:data-modelling",
+        "label": "Data Modelling"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -4,7 +4,7 @@
   "slug": "neo-4-j",
   "public": true,
   "classIri": "urn:ngm:class:neo-4-j",
-  "domain": "data-management",
+  "domain": "data",
   "definition": "A graph database management system that stores data as nodes and relationships and queries it with the Cypher query language. It is one of the most widely used native graph databases.",
   "subClassOf": [
     {

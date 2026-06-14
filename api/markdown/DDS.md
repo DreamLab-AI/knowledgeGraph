@@ -51,7 +51,7 @@ public:: true
   "@type": "Class",
   "label": "DDS",
   "definition": "DDS, the Data Distribution Service, is an Object Management Group standard for a publish-subscribe middleware that distributes real-time data between distributed system components.",
-  "domain": "software-engineering",
+  "domain": "infrastructure",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

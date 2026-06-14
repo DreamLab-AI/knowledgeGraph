@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:system-identification",
   "domain": "robotics",
-  "definition": "System identification is the discipline of constructing or refining a parametric or non-parametric mathematical model of a physical or robotic system from observed input-output experimental data, enabling accurate simulation and model-based control design. Methods range from classical least-squares regression for linear systems to Gaussian process regression and neural network surrogate models for nonlinear, high-dimensional systems. In robotics, system identification is used to calibrate rigid-body dynamics parameters\u2014such as link inertia tensors and joint friction coefficients\u2014that are required by whole body controllers and model predictive controllers to generate physically realistic torque commands.",
+  "definition": "System identification is the discipline of constructing or refining a mathematical model of a dynamical system\u2014parametric or non-parametric\u2014from observed input-output experimental data, enabling accurate simulation and model-based control design. It spans classical methods such as prediction error minimisation, subspace identification, and autoregressive modelling for linear time-invariant systems, through to Gaussian process regression, neural ordinary differential equations, and physics-informed learning for nonlinear and hybrid systems. In robotics and mechatronics, system identification calibrates rigid-body dynamics parameters\u2014link inertia tensors, joint friction coefficients, and actuator gains\u2014required by whole-body controllers and model predictive controllers to generate physically consistent torque commands. The field occupies an intersection of statistical estimation theory, control engineering, and machine learning, and is foundational to closing the sim-to-real gap in data-driven robot learning.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-actuation-and-control",
@@ -13,11 +13,24 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.73,
+  "maturity": "mature",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:excitation-trajectory",
+        "label": "Excitation Trajectory"
+      },
+      {
+        "id": "urn:ngm:class:state-estimation",
+        "label": "State Estimation"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:whole-body-control",
@@ -26,28 +39,92 @@
       {
         "id": "urn:ngm:class:model-predictive-control",
         "label": "Model Predictive Control"
+      },
+      {
+        "id": "urn:ngm:class:adaptive-control",
+        "label": "Adaptive Control"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
+    "dependsOn": [
       {
         "id": "urn:ngm:class:physics-simulation",
         "label": "Physics Simulation"
+      },
+      {
+        "id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      },
+      {
+        "id": "urn:ngm:class:experimental-design",
+        "label": "Experimental Design"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:domain-randomisation",
+        "label": "Domain Randomisation"
+      },
+      {
+        "id": "urn:ngm:class:model-free-control",
+        "label": "Model-Free Control"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:physics-informed-neural-network",
+        "label": "Physics-Informed Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:sim-to-real-transfer",
+        "label": "Sim-to-Real Transfer"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:least-squares-regression",
+        "label": "Least-Squares Regression"
+      },
+      {
+        "id": "urn:ngm:class:gaussian-process-regression",
+        "label": "Gaussian Process Regression"
       },
       {
         "id": "urn:ngm:class:kalman-filter",
         "label": "Kalman Filter"
       },
       {
+        "id": "urn:ngm:class:neural-ode",
+        "label": "Neural ODE"
+      },
+      {
+        "id": "urn:ngm:class:maximum-likelihood-estimation",
+        "label": "Maximum Likelihood Estimation"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
         "id": "urn:ngm:class:reinforcement-learning",
         "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:observer-design",
+        "label": "Observer Design"
+      },
+      {
+        "id": "urn:ngm:class:parameter-estimation",
+        "label": "Parameter Estimation"
+      },
+      {
+        "id": "urn:ngm:class:structural-dynamics",
+        "label": "Structural Dynamics"
       }
     ]
   },

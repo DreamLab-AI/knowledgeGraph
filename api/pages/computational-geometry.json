@@ -4,7 +4,7 @@
   "slug": "computational-geometry",
   "public": true,
   "classIri": "urn:ngm:class:computational-geometry",
-  "domain": "general",
+  "domain": "spatial-computing",
   "definition": "Computational geometry is the study of algorithms for solving geometric problems, such as finding convex hulls, intersections, and nearest points. It supports graphics, robotics, and geographic systems.",
   "subClassOf": [
     {

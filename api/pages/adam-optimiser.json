@@ -5,26 +5,47 @@
   "public": true,
   "classIri": "urn:ngm:class:adam-optimiser",
   "domain": "artificial-intelligence",
-  "definition": "The Adam optimiser (Adaptive Moment Estimation) is a first-order gradient-based optimisation algorithm that maintains exponentially decaying moving averages of both past gradients (first moment) and past squared gradients (second moment) to compute per-parameter adaptive learning rates. It combines the advantages of momentum-based optimisation and the RMSProp algorithm, making it robust to sparse gradients and non-stationary objectives. Adam is the de-facto default optimiser for training transformer-based large language models and deep neural networks across most domains.",
+  "definition": "The Adam optimiser (Adaptive Moment Estimation) is a first-order gradient-based optimisation algorithm that computes per-parameter adaptive learning rates by maintaining exponentially decaying moving averages of past gradients (first moment) and past squared gradients (second moment), with bias correction applied in early iterations. It synthesises the momentum-tracking behaviour of gradient descent with momentum and the per-parameter scaling of RMSProp, making it robust to sparse gradients, non-stationary objectives, and high-dimensional parameter spaces. Introduced by Kingma and Ba (2014), Adam has become the de-facto default optimiser for training transformer-based large language models, diffusion models, and deep neural networks across most domains. Key variants including AdamW, Adan, and AdaFactor extend it with decoupled weight decay, Nesterov momentum, and memory-efficient factorisation respectively.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique"
+      "id": "urn:ngm:class:gradient-descent",
+      "label": "Gradient Descent"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [
+    "hasPart": [
       {
-        "id": "urn:ngm:class:gradient-descent",
-        "label": "Gradient Descent"
+        "id": "urn:ngm:class:first-moment-estimate",
+        "label": "First Moment Estimate"
       },
+      {
+        "id": "urn:ngm:class:second-moment-estimate",
+        "label": "Second Moment Estimate"
+      },
+      {
+        "id": "urn:ngm:class:bias-correction",
+        "label": "Bias Correction"
+      },
+      {
+        "id": "urn:ngm:class:learning-rate-schedule",
+        "label": "Learning Rate Schedule"
+      }
+    ],
+    "requires": [
       {
         "id": "urn:ngm:class:backpropagation",
         "label": "Backpropagation"
+      },
+      {
+        "id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      },
+      {
+        "id": "urn:ngm:class:stochastic-gradient-descent",
+        "label": "Stochastic Gradient Descent"
       }
     ],
     "enables": [
@@ -35,20 +56,96 @@
       {
         "id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "id": "urn:ngm:class:fine-tuning",
+        "label": "Fine-Tuning"
+      },
+      {
+        "id": "urn:ngm:class:hyperparameter-optimisation",
+        "label": "Hyperparameter Optimisation"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:adaptive-learning-rate",
+        "label": "Adaptive Learning Rate"
+      },
+      {
+        "id": "urn:ngm:class:momentum-optimisation",
+        "label": "Momentum Optimisation"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:rmsprop",
+        "label": "RMSProp"
+      },
+      {
+        "id": "urn:ngm:class:adagrad",
+        "label": "Adagrad"
+      },
+      {
+        "id": "urn:ngm:class:sgd-with-momentum",
+        "label": "SGD with Momentum"
+      },
+      {
+        "id": "urn:ngm:class:lion-optimiser",
+        "label": "Lion Optimiser"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:mini-batch-gradient",
+        "label": "Mini-Batch Gradient"
+      },
+      {
+        "id": "urn:ngm:class:exponential-moving-average",
+        "label": "Exponential Moving Average"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:loss-function",
-        "label": "Loss Function"
+        "id": "urn:ngm:class:adamw",
+        "label": "AdamW"
+      },
+      {
+        "id": "urn:ngm:class:adafactor",
+        "label": "AdaFactor"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "id": "urn:ngm:class:weight-decay",
+        "label": "Weight Decay"
+      },
+      {
+        "id": "urn:ngm:class:gradient-clipping",
+        "label": "Gradient Clipping"
       }
     ]
   },

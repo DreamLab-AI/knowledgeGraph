@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:iso-27001",
   "domain": "security",
-  "definition": "ISO/IEC 27001 is the internationally recognised standard specifying requirements for establishing, implementing, maintaining, and continually improving an Information Security Management System (ISMS). Published jointly by the International Organisation for Standardisation (ISO) and the International Electrotechnical Commission (IEC), the standard takes a risk-based approach to information security governance, requiring organisations to systematically identify information assets, assess threats and vulnerabilities, select appropriate controls from the accompanying Annex A catalogue, and demonstrate conformance through a formal audit and certification process.",
+  "definition": "ISO/IEC 27001 is the internationally recognised standard specifying requirements for establishing, implementing, maintaining, and continually improving an Information Security Management System (ISMS). Published jointly by the International Organisation for Standardisation (ISO) and the International Electrotechnical Commission (IEC), the standard takes a risk-based approach to information security governance, requiring organisations to systematically identify information assets, assess threats and vulnerabilities, select appropriate controls from the accompanying Annex A catalogue, and demonstrate conformance through a formal audit and certification process. The 2022 edition restructured the Annex A catalogue to 93 controls across four themes \u2014 Organisational, People, Physical, and Technological \u2014 and introduced eleven new controls addressing cloud security, threat intelligence, and secure coding. Certification is granted by accredited third-party certification bodies and has become a de facto procurement prerequisite in technology supply chains, financial services, healthcare, and government contracting worldwide.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:cybersecurity-standard",
@@ -13,11 +13,37 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
-  "maturity": "established",
+  "qualityScore": 0.76,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:information-security-management-system",
+        "label": "Information Security Management System"
+      },
+      {
+        "id": "urn:ngm:class:statement-of-applicability",
+        "label": "Statement of Applicability"
+      },
+      {
+        "id": "urn:ngm:class:risk-treatment-plan",
+        "label": "Risk Treatment Plan"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "id": "urn:ngm:class:internal-audit",
+        "label": "Internal Audit"
+      },
+      {
+        "id": "urn:ngm:class:management-review",
+        "label": "Management Review"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:data-security",
@@ -30,12 +56,34 @@
       {
         "id": "urn:ngm:class:privacy-by-design",
         "label": "Privacy By Design"
+      },
+      {
+        "id": "urn:ngm:class:third-party-risk-management",
+        "label": "Third-Party Risk Management"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:soc-2",
+        "label": "SOC 2"
+      },
+      {
+        "id": "urn:ngm:class:nist-cybersecurity-framework",
+        "label": "NIST Cybersecurity Framework"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:cloud-security",
+        "label": "Cloud Security"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:information-security",
@@ -48,15 +96,37 @@
       {
         "id": "urn:ngm:class:compliance-framework",
         "label": "Compliance Framework"
+      },
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
       }
     ],
     "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso",
+        "label": "ISO"
+      },
+      {
+        "id": "urn:ngm:class:iec",
+        "label": "IEC"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:iso-iec-27000-family",
+        "label": "ISO/IEC 27000 Family"
+      }
+    ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:iso-iec-27001",
-        "label": "ISO/IEC 27001"
+        "id": "urn:ngm:class:iso-iec-27002",
+        "label": "ISO/IEC 27002"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-27005",
+        "label": "ISO/IEC 27005"
       },
       {
         "id": "urn:ngm:class:iso-iec-42001",

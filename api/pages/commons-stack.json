@@ -4,7 +4,7 @@
   "slug": "commons-stack",
   "public": true,
   "classIri": "urn:ngm:class:commons-stack",
-  "domain": "defi",
+  "domain": "blockchain",
   "definition": "Commons Stack is an initiative providing tools and economic models for funding and governing public goods through token-based communities. It draws on mechanisms such as bonding curves and continuous funding.",
   "subClassOf": [
     {

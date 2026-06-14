@@ -99,7 +99,7 @@ public:: true
   "@type": "Class",
   "label": "Cyber Physical Systems Domain",
   "definition": "The Cyber Physical Systems Domain classifies concepts for engineered systems in which computation and networking are tightly coupled with physical processes through sensing and actuation. It covers control loops, embedded computing, and the integration of digital models with physical behaviour. As a subject classification under the Robotics Domain, it scopes the joint design of the computational and physical elements rather than the mechanical platform alone.",
-  "domain": "cyber-physical-systems",
+  "domain": "robotics",
   "maturity": "emerging",
   "qualityScore": 0.7,
   "subClassOf": [

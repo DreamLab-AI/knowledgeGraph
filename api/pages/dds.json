@@ -4,7 +4,7 @@
   "slug": "dds",
   "public": true,
   "classIri": "urn:ngm:class:dds",
-  "domain": "software-engineering",
+  "domain": "infrastructure",
   "definition": "DDS, the Data Distribution Service, is an Object Management Group standard for a publish-subscribe middleware that distributes real-time data between distributed system components.",
   "subClassOf": [
     {

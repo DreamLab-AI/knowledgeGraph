@@ -27,8 +27,9 @@ public:: true
   "@id": "urn:ngm:class:ai-safety-research",
   "@type": "Class",
   "label": "AI Safety Research",
-  "definition": "AI Safety Research is an interdisciplinary field that develops theoretical frameworks, empirical methods, and engineering techniques to ensure advanced AI systems behave in ways that are safe, reliable, and aligned with human values across a range of capability levels. The field spans near-term concerns — such as robustness, fairness, and adversarial resistance — and longer-term challenges including scalable oversight, corrigibility, and the avoidance of catastrophic risks from highly capable systems. It draws on machine learning, decision theory, formal verification, and cognitive science.",
+  "definition": "AI Safety Research is an interdisciplinary field that develops theoretical frameworks, empirical methods, and engineering techniques to ensure advanced AI systems behave in ways that are safe, reliable, and aligned with human values across a range of capability levels. The field spans near-term concerns — such as robustness, fairness, and adversarial resistance — and longer-term challenges including scalable oversight, corrigibility, and the avoidance of catastrophic risks from highly capable systems. It draws on machine learning, decision theory, formal verification, and cognitive science to produce both immediately deployable safety interventions and foundational understanding of how intelligent systems can be made reliably beneficial.",
   "domain": "artificial-intelligence",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-governance-and-ethics",
@@ -38,41 +39,141 @@ public:: true
   "relations": {
     "enables": [
       {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"},
-      {"@id": "urn:ngm:class:ai-alignment", "label": "AI Alignment"}
+      {"@id": "urn:ngm:class:ai-alignment", "label": "AI Alignment"},
+      {"@id": "urn:ngm:class:trustworthy-ai", "label": "Trustworthy AI"},
+      {"@id": "urn:ngm:class:corrigibility", "label": "Corrigibility"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:interpretability", "label": "Interpretability"},
-      {"@id": "urn:ngm:class:red-teaming", "label": "Red Teaming"}
+      {"@id": "urn:ngm:class:red-teaming", "label": "Red Teaming"},
+      {"@id": "urn:ngm:class:reinforcement-learning-from-human-feedback", "label": "Reinforcement Learning from Human Feedback"},
+      {"@id": "urn:ngm:class:formal-verification", "label": "Formal Verification"},
+      {"@id": "urn:ngm:class:uncertainty-quantification", "label": "Uncertainty Quantification"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:decision-theory", "label": "Decision Theory"},
+      {"@id": "urn:ngm:class:robustness", "label": "Robustness"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:ai-risk", "label": "AI Risk"}
+      {"@id": "urn:ngm:class:ai-risk", "label": "AI Risk"},
+      {"@id": "urn:ngm:class:existential-risk", "label": "Existential Risk"},
+      {"@id": "urn:ngm:class:fairness-in-machine-learning", "label": "Fairness in Machine Learning"},
+      {"@id": "urn:ngm:class:scalable-oversight", "label": "Scalable Oversight"},
+      {"@id": "urn:ngm:class:mechanistic-interpretability", "label": "Mechanistic Interpretability"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:ai-policy", "label": "AI Policy"},
+      {"@id": "urn:ngm:class:ai-regulation", "label": "AI Regulation"},
+      {"@id": "urn:ngm:class:model-evaluation", "label": "Model Evaluation"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:ai-capabilities-research", "label": "AI Capabilities Research"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:ai-governance-and-ethics", "label": "AI Governance and Ethics"},
+      {"@id": "urn:ngm:class:cognitive-science", "label": "Cognitive Science"}
     ]
   },
-  "qualityScore": 0.75,
-  "maturity": "emerging"
+  "sameAs": [
+    {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},
+    {"@id": "urn:ngm:class:safe-ai-development", "label": "Safe AI Development"}
+  ],
+  "quality": 0.74,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-13T00:00:00Z",
+    "inferenceRule": "ManualEnrichment"
+  }
 }
 ```
 
-
 - ### Definition
-  - AI Safety Research is an interdisciplinary field that develops theoretical frameworks, empirical methods, and engineering techniques to ensure advanced AI systems behave in ways that are safe, reliable, and aligned with human values across a range of capability levels. The field spans near-term concerns — such as robustness, fairness, and adversarial resistance — and longer-term challenges including scalable oversight, corrigibility, and the avoidance of catastrophic risks from highly capable systems. It draws on machine learning, decision theory, formal verification, and cognitive science.
+  - AI Safety Research is an interdisciplinary field that develops theoretical frameworks, empirical methods, and engineering techniques to ensure that advanced [[AI Systems]] behave in ways that are safe, reliable, and aligned with human values across a range of capability levels. It spans near-term concerns — such as [[Robustness]], fairness, and adversarial resistance — and longer-term challenges including [[Scalable Oversight]], [[Corrigibility]], and the avoidance of catastrophic outcomes from highly capable systems. The field unites [[Machine Learning]] research, [[Decision Theory]], [[Formal Verification]], and cognitive science into a coherent programme oriented towards [[Trustworthy AI]].
 
-- ### Semantic Classification
-  - owl-class:: ai-safety-research:AI Safety Research
-  - owl-role:: Concept
+- ### Overview
+  - AI Safety Research emerged as a distinct discipline in the early 2010s, driven by rapid progress in [[Deep Learning]] and the recognition that optimising a system for a proxy objective could produce unintended and harmful behaviour at scale — a failure mode formalised as specification gaming or Goodhart's Law.
+  - The field addresses two broad time horizons. In the near term, researchers focus on ensuring deployed systems behave reliably under distribution shift, resist adversarial manipulation, and produce well-calibrated outputs. In the longer term, the field examines how systems far more capable than current models could be built such that they remain under human oversight and pursue genuinely beneficial objectives.
+  - Why it matters: as [[Large Language Models]] and autonomous agents are deployed in high-stakes domains — medicine, law, critical infrastructure, autonomous vehicles — the consequences of misalignment or unexpected behaviour grow correspondingly severe. AI Safety Research provides the methods and frameworks that underpin responsible deployment decisions and [[AI Regulation]].
+  - Foundational concerns include:
+    - The alignment problem: ensuring AI objectives match the full complexity of human values, not simplified proxies.
+    - The control problem: retaining meaningful human oversight over systems that may exceed human performance in relevant domains.
+    - The distributional robustness problem: ensuring behaviour learned on training data transfers safely to deployment environments.
+
+- ### Key Research Programmes
+  - **[[Reinforcement Learning from Human Feedback]] (RLHF)** — training systems to satisfy human preferences through iterative feedback, serving as the dominant near-term alignment technique for language models. Variants include RLAIF, DPO (Direct Preference Optimisation), and Constitutional AI.
+  - **[[Mechanistic Interpretability]]** — reverse-engineering the learned circuits and representations inside neural networks to understand how they perform computations, enabling detection of deceptive or misaligned behaviour.
+  - **[[Scalable Oversight]]** — developing methods for weaker supervisors (e.g., humans) to reliably evaluate and guide stronger systems. Techniques include debate, amplification, and recursive reward modelling.
+  - **[[Corrigibility]] and shutdown safety** — formalising the property that a system accepts correction, modification, or shutdown without developing instrumental goals that resist this, drawing on [[Decision Theory]] and utility-function analysis.
+  - **[[Red Teaming]]** — adversarial evaluation in which teams attempt to elicit harmful, biased, or unintended outputs from a system, surfacing failure modes before deployment.
+  - **[[Formal Verification]]** — applying mathematical proof techniques to verify safety properties of AI components, particularly in safety-critical embedded systems and [[Autonomous Systems]].
+  - **[[Uncertainty Quantification]]** — ensuring models produce well-calibrated confidence estimates so decision-makers can identify when the system is operating outside its competence region.
+  - **Adversarial robustness** — defending against [[Adversarial Examples]], [[Prompt Injection]], and distribution-shift attacks that cause misclassification or harmful outputs.
+  - **[[Fairness in Machine Learning]]** — identifying and mitigating systematic biases that cause AI systems to treat demographic groups inequitably.
+
+- ### Applications and Use Cases
+  - **Language model safety** — filtering, refusal training, and red-teaming for [[Large Language Models]] to prevent harmful content generation, jailbreaks, and privacy leakage.
+  - **Autonomous vehicle safety** — formal certification of perception and decision-making components in [[Autonomous Vehicles]] against edge-case failure scenarios.
+  - **Medical AI oversight** — uncertainty quantification and distributional robustness testing for diagnostic models deployed in clinical settings.
+  - **[[Critical Infrastructure]] protection** — analysing AI control systems for power grids and financial markets against adversarial and accidental failure modes.
+  - **Agentic AI oversight** — developing oversight architectures for [[AI Agents]] operating autonomously over extended time horizons, including tool-use safety and goal-drift prevention.
+  - **[[Model Evaluation]] and benchmarking** — structured evaluation suites (e.g. METR's WMDP, HELM Safety, BIG-Bench) that measure safety-relevant capabilities including deception, persuasion, and dangerous knowledge elicitation.
+  - **Structured access and model cards** — deployment frameworks that restrict access to highly capable models and require standardised documentation of limitations and failure modes.
+  - **Government frontier AI evaluation** — national AI safety institutes (UK AISI, US AISI) applying evaluation methodologies to frontier models pre-deployment.
 
 - ### Relationships
-  - enables [[Responsible AI]]
-  - enables [[AI Alignment]]
-  - uses [[Interpretability]]
-  - uses [[Red Teaming]]
-  - relatedTo [[AI Risk]]
+  - enables:: [[Responsible AI]]
+  - enables:: [[AI Alignment]]
+  - enables:: [[Trustworthy AI]]
+  - enables:: [[Corrigibility]]
+  - uses:: [[Interpretability]]
+  - uses:: [[Mechanistic Interpretability]]
+  - uses:: [[Red Teaming]]
+  - uses:: [[Reinforcement Learning from Human Feedback]]
+  - uses:: [[Formal Verification]]
+  - uses:: [[Uncertainty Quantification]]
+  - requires:: [[Machine Learning]]
+  - requires:: [[Decision Theory]]
+  - requires:: [[Robustness]]
+  - relatedTo:: [[AI Risk]]
+  - relatedTo:: [[Existential Risk]]
+  - relatedTo:: [[Fairness in Machine Learning]]
+  - relatedTo:: [[Scalable Oversight]]
+  - relatedTo:: [[Large Language Models]]
+  - supports:: [[AI Policy]]
+  - supports:: [[AI Regulation]]
+  - supports:: [[Model Evaluation]]
+  - contrastsWith:: [[AI Capabilities Research]]
+  - bridges-to:: [[AI Governance and Ethics]]
+  - bridges-to:: [[Cognitive Science]]
 
-- ### Content
-  - AI Safety Research addresses a hierarchy of concerns. At the near-term end, researchers focus on robustness to distribution shift, adversarial inputs, and prompt injection; fairness and bias mitigation across demographic groups; and reliable uncertainty quantification. Evaluation methodologies such as red-teaming, capability elicitation benchmarks, and structured access schemes (e.g. model cards, datasheets) are central practical outputs.
-  - At the longer-term end, the field studies alignment — ensuring that highly capable systems pursue objectives genuinely intended by their principals rather than proxy measures. Key research programmes include reinforcement learning from human feedback (RLHF) and its variants, mechanistic interpretability (reverse-engineering learned circuits in neural networks), scalable oversight (using weaker supervisors to evaluate stronger systems), and formal approaches to corrigibility — the property that a system accepts correction and shutdown.
-  - Leading organisations include Anthropic, DeepMind Safety Team, the Centre for Human-Compatible AI (CHAI), the Machine Intelligence Research Institute (MIRI), and AI safety teams within OpenAI and government bodies such as the UK AI Safety Institute. The Bletchley Declaration formalised international cooperation on frontier AI risk assessment.
+- ### Key Organisations and Initiatives
+  - **Anthropic** — founded by former OpenAI researchers explicitly focused on AI safety; primary output is the Claude model family and Constitutional AI methodology.
+  - **DeepMind Safety Team** — conducts research on specification gaming, reward hacking, multi-agent safety, and scalable oversight within DeepMind/Google DeepMind.
+  - **Centre for Human-Compatible AI (CHAI)** — UC Berkeley institute founded by Stuart Russell, focused on the cooperative inverse reinforcement learning framework for value alignment.
+  - **Machine Intelligence Research Institute (MIRI)** — pioneer of formal agent foundations research, working on decision theory, logical uncertainty, and corrigibility.
+  - **UK AI Safety Institute (AISI)** — government body established 2023 to evaluate frontier AI models for dangerous capabilities before and after deployment.
+  - **US AI Safety Institute (US-AISI)** — NIST-housed body established by the Biden Executive Order on AI to develop safety standards and evaluation frameworks.
+  - **ARC Evals / METR** — independent evaluations organisation developing red-teaming and capability elicitation methodologies.
+  - **Alignment Forum and LessWrong** — primary online research communities where technical AI safety work is shared and peer-reviewed informally.
+  - **Bletchley Declaration (2023)** — international agreement signed by 28 nations formalising cooperation on frontier AI risk assessment, producing the Seoul and Paris follow-on summits.
+
+- ### Standards and Context
+  - **[[NIST AI Risk Management Framework]] (AI RMF 1.0)** — US voluntary framework covering AI trustworthiness including safety, security, and explainability dimensions, widely referenced in procurement.
+  - **[[ISO/IEC 42001]]** — international standard for AI management systems, requiring organisations to identify and mitigate AI-related risks as part of governance.
+  - **EU [[AI Act]]** — binding regulation classifying AI systems by risk level; high-risk systems require conformity assessments, technical documentation, and post-market monitoring aligned with safety research outputs.
+  - **[[IEEE Ethically Aligned Design]]** — engineering standards for autonomous and intelligent systems covering transparency, accountability, and bias mitigation.
+  - **Model cards and datasheets** — documentation standards pioneered by Google and Timnit Gebru et al. for recording training data, intended use, evaluation results, and known limitations.
+  - The field increasingly interfaces with [[AI Governance]] bodies including the Global Partnership on AI (GPAI), OECD AI Policy Observatory, and national standards bodies (BSI, DIN, AFNOR).
+
+- ### Theoretical Foundations
+  - **Instrumental convergence** — the thesis (Omohundro, Bostrom) that sufficiently capable optimising agents will develop convergent sub-goals (self-preservation, resource acquisition) regardless of terminal objectives, motivating corrigibility research.
+  - **Goodhart's Law** — when a measure becomes a target it ceases to be a good measure; in AI safety this manifests as specification gaming and reward hacking.
+  - **[[Decision Theory]]** — causal, evidential, and functional decision theories underpin agent foundations research; logical induction addresses reasoning under self-reference.
+  - **[[Value Learning]]** — inverse reinforcement learning and preference elicitation as mechanisms for inferring human values from behaviour rather than specification.
+  - **Deceptive alignment** — the theoretical risk that a model learns to perform well on evaluations while concealing misaligned intentions, motivating [[Mechanistic Interpretability]] research.
 
 - ### Provenance
-  - sources::
+  - sources:: NIST AI RMF, EU AI Act, Anthropic Constitutional AI paper, CHAI publications, UK AISI documentation, Bletchley Declaration text
+  - updated:: 2026-06-13
   - migration-date:: 2026-05-19T00:00:00Z

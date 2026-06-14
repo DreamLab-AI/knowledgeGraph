@@ -91,7 +91,7 @@ public:: true
   "@type": "Class",
   "label": "Control Theory Domain",
   "definition": "The Control Theory Domain covers the mathematical analysis and design of systems that regulate their own behaviour through feedback. Its scope includes feedback control, state estimation, stability analysis and optimal control. It is a sub-area of the Robotics Domain that governs how machines maintain desired states. The boundary excludes the high-level task planning of agents, which belongs to the Agentic Systems Domain.",
-  "domain": "control-theory",
+  "domain": "robotics",
   "maturity": "emerging",
   "qualityScore": 0.7,
   "subClassOf": [

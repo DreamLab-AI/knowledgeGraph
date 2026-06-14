@@ -4,7 +4,7 @@
   "slug": "cohere",
   "public": true,
   "classIri": "urn:ngm:class:cohere",
-  "domain": "natural-language-processing",
+  "domain": "ai",
   "definition": "Cohere is a company that develops large language models and text embedding models offered through an API, with a focus on enterprise applications. Its products include generation, embedding and reranking models.",
   "subClassOf": [
     {

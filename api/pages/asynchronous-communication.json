@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:asynchronous-communication",
   "domain": "infrastructure",
-  "definition": "A communication paradigm in which message senders and receivers do not interact in real-time; messages are queued, buffered, or stored so that the sender continues processing without blocking until the recipient acknowledges or responds, enabling decoupled, resilient distributed systems.",
+  "definition": "Asynchronous communication is a messaging paradigm in which senders and receivers operate independently in time: the sender dispatches a message and immediately resumes processing without blocking, while the message is buffered, queued, or stored until the recipient is ready to consume it. This temporal decoupling eliminates tight runtime coupling between system components, enabling fault isolation, backpressure management, and geographic distribution across heterogeneous networks. The pattern underpins modern distributed architectures including event-driven systems, message-oriented middleware, and stream-processing platforms, and contrasts sharply with synchronous request-response protocols where the caller blocks awaiting a reply. By permitting independent scaling, retry semantics, and durable delivery guarantees, asynchronous communication is foundational to resilient, cloud-native, and edge-deployed systems.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-network-and-comms",
@@ -13,11 +13,20 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.3,
-  "maturity": "emerging",
+  "qualityScore": 0.72,
+  "maturity": "mature",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:message-durability",
+        "label": "Message Durability"
+      },
+      {
+        "id": "urn:ngm:class:delivery-guarantees",
+        "label": "Delivery Guarantees"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:asynchronous-execution",
@@ -26,16 +35,58 @@
       {
         "id": "urn:ngm:class:microservices-architecture",
         "label": "Microservices Architecture"
+      },
+      {
+        "id": "urn:ngm:class:event-driven-architecture",
+        "label": "Event Driven Architecture"
+      },
+      {
+        "id": "urn:ngm:class:stream-processing",
+        "label": "Stream Processing"
+      },
+      {
+        "id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:synchronous-communication",
+        "label": "Synchronous Communication"
+      },
+      {
+        "id": "urn:ngm:class:remote-procedure-call",
+        "label": "Remote Procedure Call"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:multi-agent-systems",
+        "label": "Multi-Agent Systems"
+      }
+    ],
     "uses": [
       {
-        "id": "urn:ngm:class:event-driven-architecture",
-        "label": "Event Driven Architecture"
+        "id": "urn:ngm:class:message-queue",
+        "label": "Message Queue"
+      },
+      {
+        "id": "urn:ngm:class:message-broker",
+        "label": "Message Broker"
+      },
+      {
+        "id": "urn:ngm:class:publish-subscribe-pattern",
+        "label": "Publish Subscribe Pattern"
+      },
+      {
+        "id": "urn:ngm:class:protocol-buffers",
+        "label": "Protocol Buffers"
       }
     ],
     "supports": [
@@ -46,14 +97,43 @@
       {
         "id": "urn:ngm:class:edge-computing",
         "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:backpressure",
+        "label": "Backpressure"
       }
     ],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:amqp",
+        "label": "AMQP"
+      },
+      {
+        "id": "urn:ngm:class:mqtt",
+        "label": "MQTT"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
         "id": "urn:ngm:class:ai-infrastructure",
         "label": "AI Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:cloud-native-architecture",
+        "label": "Cloud Native Architecture"
+      },
+      {
+        "id": "urn:ngm:class:eventual-consistency",
+        "label": "Eventual Consistency"
+      },
+      {
+        "id": "urn:ngm:class:reactive-programming",
+        "label": "Reactive Programming"
       }
     ]
   },

@@ -51,7 +51,7 @@ public:: true
   "@type": "Class",
   "label": "AUTOMATIC1111 WebUI",
   "definition": "AUTOMATIC1111 WebUI is an open-source browser interface for running Stable Diffusion image models locally. It exposes generation, image-to-image, inpainting and extension features through a web front end.",
-  "domain": "generative-ai",
+  "domain": "ai",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

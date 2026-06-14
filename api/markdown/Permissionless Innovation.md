@@ -47,7 +47,7 @@ public:: true
   "@type": "Class",
   "label": "Permissionless Innovation",
   "definition": "A policy stance holding that new technologies and business models should generally be allowed to develop without prior approval, with regulation applied only to address demonstrated harms. It is often discussed in the context of the internet and digital finance.",
-  "domain": "technology-policy",
+  "domain": "governance",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

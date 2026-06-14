@@ -1,12 +1,89 @@
 - ### Definition
-  - [[Google DeepMind]] is an [[AI Companies]] research division of Alphabet that merged Google Brain and DeepMind in 2023, producing landmark systems including AlphaGo, AlphaFold, and [[Gemini Multimodal Language Model]], with wide-ranging contributions to [[Reinforcement Learning]], [[Deep Learning]], and [[AI Safety Research]].
+  - [[Google DeepMind]] is an [[AI Companies|AI research and development division]] of [[Alphabet Inc]], formed in April 2023 through the merger of [[Google Brain]] and the original [[DeepMind Technologies]] (itself founded in London in 2010 and acquired by Google in 2014). The organisation pursues fundamental research in [[Deep Learning]], [[Reinforcement Learning]], and [[Large Language Models]], alongside applied work that has produced landmark systems including [[AlphaFold]], [[AlphaGo]], and the [[Gemini Multimodal Language Model]] family. Its stated mission is to advance [[Artificial General Intelligence]] responsibly, integrating [[AI Safety Research]] and [[AI Alignment]] as central pillars of its scientific programme.
+
+- ### Overview
+  - Google DeepMind sits at the apex of modern AI research, combining the complementary strengths of two historically significant laboratories into a single unified entity.
+  - **Historical roots** — DeepMind was founded in London in 2010 by Demis Hassabis, Shane Legg, and Mustafa Suleyman. Google Brain emerged from a 2011 internal project at Google led by Jeff Dean and Andrew Ng, becoming the company's core deep learning research unit. Google acquired DeepMind in 2014 for approximately £400 million.
+  - **The 2023 merger** — In April 2023, Alphabet merged the two labs under the Google DeepMind banner, with Demis Hassabis as CEO. The rationale was to eliminate duplication, pool compute resources, and accelerate delivery of [[Foundation Models]] and AI-powered products.
+  - **Scale** — The organisation employs several thousand researchers and engineers across London (HQ), Mountain View, New York, Paris, Tel Aviv, and other cities.
+  - **Mission** — Formally expressed as "solving intelligence, and then using that to solve everything else," with an explicit commitment to [[AI Safety Research]] as a co-equal research pillar alongside capability development.
+  - **Relationship to Google** — Products and capabilities are integrated into Google Search, Google Cloud Vertex AI, Gmail, Google Workspace, YouTube, and Waymo, giving research direct commercial expression.
+
+- ### Key Milestones & Systems
+  - **AlphaGo (2016)** — First AI to defeat a world champion Go player, demonstrating the power of combining [[Deep Learning]] with [[Monte Carlo Tree Search]] and [[Reinforcement Learning]].
+  - **DQN (2013–2015)** — Deep Q-Network that learned Atari games from raw pixels, launching the modern era of deep [[Reinforcement Learning]].
+  - **AlphaZero (2017)** — Achieved superhuman performance in chess, shogi, and Go through pure [[Self-Play Reinforcement Learning]] without human game data.
+  - **AlphaStar (2019)** — Reached Grandmaster level in StarCraft II, advancing [[Multi-Agent Systems]] and long-horizon planning research.
+  - **MuZero (2020)** — Extended AlphaZero to environments without known rules using [[Model-Based Reinforcement Learning]].
+  - **[[AlphaFold]] 2 (2020)** — Predicted protein three-dimensional structure from amino acid sequence with near-experimental accuracy, achieving a breakthrough in [[Computational Biology]] and [[Drug Discovery]] that earned Demis Hassabis the 2024 Nobel Prize in Chemistry.
+  - **AlphaFold 3 (2024)** — Extended predictions to DNA, RNA, and small molecules, further expanding the scope of [[Protein Structure Prediction]].
+  - **[[Gemini Multimodal Language Model]] (2023–2025)** — A family of natively multimodal [[Large Language Models]] (Gemini Ultra, Pro, Flash, Nano) integrated into Google products, competing with GPT-4 and [[Anthropic]] Claude models.
+  - **AlphaCode (2022) / AlphaCode 2 (2023)** — Code generation systems demonstrating competitive-programming-level performance, contributing to [[AI-Assisted Software Engineering]].
+  - **Lyria (2023)** — A generative music model, extending DeepMind's reach into creative [[Generative AI]].
+  - **Veo (2024)** — A video generation model integrating [[Diffusion Models]] and temporal reasoning.
+  - **GraphCast (2023)** — A [[Graph Neural Network]]-based weather forecasting system outperforming traditional numerical models, advancing [[Climate Modelling]].
+
+- ### Research Themes
+  - **Reinforcement Learning** — Foundational contributions to [[Policy Gradient Methods]], [[Actor-Critic Methods]], [[Distributional RL]], and [[Offline Reinforcement Learning]] including R2D2, IMPALA, and Agent57.
+  - **Foundation Models** — Large-scale pretraining research spanning language, vision, and multimodal modalities, including PaLM (with Google Research), Chinchilla scaling laws, and [[Gemini Multimodal Language Model]].
+  - **AI Safety & Alignment** — Research into [[Reward Modelling]], [[Scalable Oversight]], specification gaming avoidance, and [[Interpretability]] of neural networks, pursued in a dedicated safety team.
+  - **Scientific AI** — Applying machine learning to [[Genomics]], structural biology, climate science, and [[Drug Discovery]], positioning AI as an accelerant for the natural sciences.
+  - **Robotics** — Research into [[Robotic Manipulation]] and embodied agents, including RT-2 and contributions to the broader [[Robotics]] research community.
+  - **Neuroscience-inspired AI** — Ongoing investigation of [[Neuroscience]]-inspired learning rules, memory systems, and cognitive architectures as guides for next-generation AI development.
+
+- ### Applications
+  - **Healthcare** — Partnerships with NHS trusts for medical imaging (retinal disease detection, mammography), [[Genomics]] variant calling, and clinical note summarisation.
+  - **Drug Discovery** — [[AlphaFold]] databases used by millions of researchers; direct collaboration with pharmaceutical companies to identify drug targets.
+  - **Scientific Research** — AlphaFold Protein Structure Database (200 million+ structures) freely available; GraphCast weather forecasts publicly accessible.
+  - **Google Products** — Gemini models power Google Assistant, Google Search AI Overviews, Google Workspace "Help me write," and Google Cloud Vertex AI endpoints.
+  - **Climate & Energy** — DeepMind's work on data-centre cooling optimisation reduced Google's cooling energy usage; climate modelling research via GraphCast and related systems.
+  - **Code Generation** — AlphaCode and successors support software engineers; integrated via Google's internal coding assistants and Gemini Code Assist.
+  - **Creative Tools** — Lyria underpins YouTube Dream Track and MusicFX, and Veo feeds into Google's video creation offerings.
+
 - ### Relationships
-  - [[Google DeepMind]] instantiates the [[AI Companies]] class and enables the [[Gemini Multimodal Language Model]] large multimodal model family as well as advancing [[Reinforcement Learning]] research. It employs [[Deep Learning]] and [[Large Language Models]] as primary technical methods. The organisation conducts [[AI Safety Research]] and contributes to discourse around [[Artificial General Intelligence]] and [[AI Alignment]]. It operates in a competitive landscape alongside [[OpenAI Research Organisation]] and [[Anthropic]], with whom it shares research publication norms whilst competing for talent and commercial AI deployment.
-- ### Content
-  - DeepMind was founded in London in 2010 by Demis Hassabis, Shane Legg, and Mustafa Suleyman, and acquired by Google in 2014. It rapidly became famous for its game-playing AI milestones: the DQN agent that mastered Atari games from pixels in 2013, and AlphaGo's defeat of Go world champion Lee Sedol in 2016. These results demonstrated that deep reinforcement learning could achieve superhuman performance on tasks previously considered beyond machine capability.
+  - hasPart:: [[AlphaFold]]
+  - hasPart:: [[Gemini Multimodal Language Model]]
+  - hasPart:: [[AlphaCode]]
+  - partOf:: [[Alphabet Inc]]
+  - requires:: [[High-Performance Computing]]
+  - requires:: [[Tensor Processing Unit]]
+  - enables:: [[Reinforcement Learning]]
+  - enables:: [[Protein Structure Prediction]]
+  - enables:: [[AI Safety Research]]
+  - enables:: [[Scientific AI]]
+  - dependsOn:: [[TensorFlow]]
+  - dependsOn:: [[Transformer Architecture]]
+  - dependsOn:: [[Neural Network]]
+  - uses:: [[Deep Learning]]
+  - uses:: [[Large Language Models]]
+  - uses:: [[Multi-Agent Systems]]
+  - supports:: [[Drug Discovery]]
+  - supports:: [[Climate Modelling]]
+  - supports:: [[Genomics]]
+  - relatedTo:: [[Artificial General Intelligence]]
+  - relatedTo:: [[AI Alignment]]
+  - relatedTo:: [[AI Governance]]
+  - contrastsWith:: [[OpenAI Research Organisation]]
+  - contrastsWith:: [[Anthropic]]
+  - contrastsWith:: [[Meta AI]]
+  - bridges-to:: [[Computational Biology]]
+  - bridges-to:: [[Robotics]]
 
-  - Subsequent systems—AlphaZero (self-play mastery of chess, shogi, and Go), AlphaStar (StarCraft II), and MuZero (model-based self-play without prior knowledge of game rules)—extended the reinforcement learning paradigm. AlphaFold 2 (2020) represented a paradigm shift in biology: its near-experimental-accuracy prediction of protein three-dimensional structure from sequence alone earned Hassabis and Baker the 2024 Nobel Prize in Chemistry and accelerated drug discovery globally.
+- ### Governance & Ethics
+  - Google DeepMind operates under Alphabet's corporate governance and is subject to [[AI Governance]] frameworks including the EU AI Act and applicable national regulations.
+  - The organisation published a set of AI Principles (inherited from Google's 2018 AI Principles) committing to responsible development and refusing to pursue certain applications (autonomous weapons, mass surveillance).
+  - Internally, a dedicated [[AI Safety Research]] team publishes on [[Reward Hacking]], [[Specification Gaming]], [[Interpretability]], and long-term risk from advanced AI systems.
+  - Demis Hassabis has publicly stated that [[Artificial General Intelligence]] may be achievable within a decade, which drives the organisation's concurrent investment in safety infrastructure.
+  - DeepMind was a signatory of the 2023 Frontier AI Safety Commitments made at Bletchley Park, pledging to share safety information with governments prior to deploying frontier models.
+  - The organisation participates in [[AI Governance]] initiatives including the AI Safety Institute (UK) and contributes to standards discussions at ISO and IEEE.
 
-  - Google Brain, formed at Google in 2011, contributed complementary research in scalable deep learning infrastructure (TensorFlow), transformer architectures, and large language models. The 2023 merger created Google DeepMind with a unified research agenda spanning fundamental science, safety, and product integration. The Gemini model family—launched in late 2023—represented the merged organisation's first major joint large language model, competing directly with GPT-4 and Claude.
+- ### Standards & Context
+  - **Chinchilla Scaling Laws** — DeepMind's 2022 paper established compute-optimal training recipes that influenced [[Large Language Models]] training across the industry.
+  - **Model Cards & Safety Evaluations** — Gemini model releases include detailed model cards, red-team evaluations, and responsible deployment documentation.
+  - **Open Science** — AlphaFold model weights and the Protein Structure Database are publicly released under open licences; some RL codebases (e.g., Acme, TRFL) are open-sourced.
+  - **Regulatory Engagement** — Actively engaged with the UK Information Commissioner's Office, the EU AI Office, and equivalent bodies for compliance with [[AI Governance]] obligations.
+  - **Publication Norms** — Publishes in Nature, Science, NeurIPS, ICML, ICLR, and other top venues, maintaining academic research norms despite commercial pressures.
 
-  - Google DeepMind's safety and alignment research addresses risks from increasingly capable AI systems through interpretability work, red-teaming, and formal specification of reward functions. The organisation publishes extensively, contributing to the academic AI community whilst deploying capabilities in Google Search, Gmail, Google Cloud, and healthcare partnerships including NHS collaborations on medical imaging and genomics.
+- ### Provenance
+  - sources:: Established knowledge from training data current to early 2026; Nobel Prize confirmation (Hassabis, 2024 Nobel Chemistry); DeepMind/Google Brain merger (April 2023); AlphaFold 3 (May 2024); Gemini launch (December 2023); Bletchley Park commitments (November 2023).
+  - updated:: 2026-06-13

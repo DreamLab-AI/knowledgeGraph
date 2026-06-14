@@ -4,16 +4,16 @@
   "slug": "asset-pipeline",
   "public": true,
   "classIri": "urn:ngm:class:asset-pipeline",
-  "domain": "metaverse",
-  "definition": "An asset pipeline is an automated, staged workflow that ingests raw digital content\u2014such as meshes, textures, audio, and animations\u2014and transforms it through processing, optimisation, and packaging steps into runtime-ready formats. It enforces consistency, enables version control, and reduces manual labour in content production. Asset pipelines are foundational to game development, visual effects, and metaverse platform engineering. They increasingly incorporate AI-assisted compression and level-of-detail generation to scale content delivery.",
+  "domain": "spatial-computing",
+  "definition": "An asset pipeline is an automated, staged workflow that ingests raw digital content\u2014meshes, textures, audio, animations, and shaders\u2014and transforms it through validation, processing, optimisation, and packaging steps into runtime-ready formats consumable by real-time engines, streaming platforms, or spatial computing environments. It enforces deterministic builds, enables version-controlled dependency graphs, and dramatically reduces manual content-preparation labour. Asset pipelines are foundational to game development, visual effects, and metaverse platform engineering, and increasingly incorporate AI-assisted level-of-detail generation, texture compression, and semantic tagging to scale content delivery across heterogeneous device targets.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:3-d-content-pipeline",
-      "label": "3D Content Pipeline"
+      "id": "urn:ngm:class:content-pipeline",
+      "label": "Content Pipeline"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.74,
   "maturity": "established",
   "relationships": {
     "hasPart": [
@@ -24,9 +24,34 @@
       {
         "id": "urn:ngm:class:render-pipeline",
         "label": "Render Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:build-system",
+        "label": "Build System"
+      },
+      {
+        "id": "urn:ngm:class:level-of-detail",
+        "label": "Level of Detail"
+      },
+      {
+        "id": "urn:ngm:class:texture-compression",
+        "label": "Texture Compression"
       }
     ],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      },
+      {
+        "id": "urn:ngm:class:content-addressed-storage",
+        "label": "Content-Addressed Storage"
+      },
+      {
+        "id": "urn:ngm:class:dependency-graph",
+        "label": "Dependency Graph"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:digital-twin-creation",
@@ -35,12 +60,42 @@
       {
         "id": "urn:ngm:class:game-engine",
         "label": "Game Engine"
+      },
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "id": "urn:ngm:class:streaming-content-delivery",
+        "label": "Streaming Content Delivery"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:continuous-integration",
+        "label": "Continuous Integration"
+      },
+      {
+        "id": "urn:ngm:class:metadata-schema",
+        "label": "Metadata Schema"
+      }
+    ],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-content-generation",
+        "label": "AI Content Generation"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-provenance",
+        "label": "Supply Chain Provenance"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:3-d-asset",
@@ -57,10 +112,36 @@
       {
         "id": "urn:ngm:class:data-compression",
         "label": "Data Compression"
+      },
+      {
+        "id": "urn:ngm:class:universal-scene-description",
+        "label": "Universal Scene Description"
+      },
+      {
+        "id": "urn:ngm:class:gltf",
+        "label": "glTF"
       }
     ],
-    "supports": [],
-    "standardizedBy": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:creator-economy",
+        "label": "Creator Economy"
+      },
+      {
+        "id": "urn:ngm:class:digital-rights-management",
+        "label": "Digital Rights Management"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:khronos-group",
+        "label": "Khronos Group"
+      },
+      {
+        "id": "urn:ngm:class:pixar-usd",
+        "label": "Pixar USD"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -70,6 +151,10 @@
       {
         "id": "urn:ngm:class:vfx-tools",
         "label": "VFX Tools"
+      },
+      {
+        "id": "urn:ngm:class:procedural-generation",
+        "label": "Procedural Generation"
       }
     ]
   },

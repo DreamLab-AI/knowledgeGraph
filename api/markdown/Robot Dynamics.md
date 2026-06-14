@@ -38,38 +38,64 @@ public:: true
   "@id": "urn:ngm:class:robot-dynamics",
   "@type": "Class",
   "label": "Robot Dynamics",
-  "definition": "Robot Dynamics is the study of the forces, torques, and inertial properties that govern the motion of robotic systems. It encompasses forward dynamics (computing accelerations from applied forces) and inverse dynamics (computing required torques for a desired motion), underpinning trajectory planning, model-based control, and simulation. Accurate dynamic models are essential for high-speed manipulation, legged locomotion, and compliant human-robot interaction.",
+  "definition": "Robot Dynamics is the branch of classical and computational mechanics that characterises the forces, torques, inertias, and energy flows governing the motion of robotic mechanisms. It distinguishes between forward dynamics—determining joint accelerations and Cartesian trajectories from applied actuator forces and torques—and inverse dynamics—computing the actuator effort required to produce a prescribed motion trajectory. The discipline provides the theoretical foundation for model-based control laws (such as computed-torque and feedback-linearisation controllers), physics-based simulation, and the design of energy-efficient manipulators and legged robots. Accurate dynamic models are indispensable for high-speed manipulation, safe human-robot collaboration, compliant actuation, and whole-body control of mobile robots.",
   "domain": "robotics",
-  "maturity": "emerging",
+  "maturity": "established",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:robo-actuation-and-control",
       "label": "Actuation and Control"
-    },
-    {
-      "@id": "urn:ngm:class:robo-actuation-and-control",
-      "label": "Robo Actuation And Control"
     }
   ],
   "relations": {
     "requires": [
       {"@id": "urn:ngm:class:kinematics", "label": "Kinematics"},
-      {"@id": "urn:ngm:class:torque", "label": "Torque"}
+      {"@id": "urn:ngm:class:rigid-body-mechanics", "label": "Rigid Body Mechanics"},
+      {"@id": "urn:ngm:class:inertia-tensor", "label": "Inertia Tensor"},
+      {"@id": "urn:ngm:class:differential-equations", "label": "Differential Equations"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"},
-      {"@id": "urn:ngm:class:robot-control", "label": "Robot Control"}
+      {"@id": "urn:ngm:class:robot-control", "label": "Robot Control"},
+      {"@id": "urn:ngm:class:trajectory-optimisation", "label": "Trajectory Optimisation"},
+      {"@id": "urn:ngm:class:robot-simulation", "label": "Robot Simulation"},
+      {"@id": "urn:ngm:class:whole-body-control", "label": "Whole-Body Control"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:forward-dynamics", "label": "Forward Dynamics"},
+      {"@id": "urn:ngm:class:inverse-dynamics", "label": "Inverse Dynamics"},
+      {"@id": "urn:ngm:class:lagrangian-mechanics", "label": "Lagrangian Mechanics"},
+      {"@id": "urn:ngm:class:newton-euler-algorithm", "label": "Newton-Euler Algorithm"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:denavit-hartenberg-parameters", "label": "Denavit-Hartenberg Parameters"},
+      {"@id": "urn:ngm:class:spatial-algebra", "label": "Spatial Algebra"},
+      {"@id": "urn:ngm:class:jacobian-matrix", "label": "Jacobian Matrix"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:legged-locomotion", "label": "Legged Locomotion"},
+      {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human-Robot Interaction"},
+      {"@id": "urn:ngm:class:compliant-actuation", "label": "Compliant Actuation"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:robot-safety", "label": "Robot Safety"},
-      {"@id": "urn:ngm:class:state-estimation", "label": "State Estimation"}
+      {"@id": "urn:ngm:class:state-estimation", "label": "State Estimation"},
+      {"@id": "urn:ngm:class:optimal-control", "label": "Optimal Control"},
+      {"@id": "urn:ngm:class:contact-mechanics", "label": "Contact Mechanics"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
+      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
     ]
   },
-  "quality": 0.35,
+  "sameAs": [
+    {"@id": "urn:ngm:class:multibody-dynamics", "label": "Multibody Dynamics"}
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-13T00:00:00Z",
+    "inferenceRule": "ManualEnrichment"
   }
 }
 ```
@@ -99,50 +125,112 @@ public:: true
 }
 ```
 
-
 - ### Definition
-  - Robot Dynamics is the study of the forces, torques, and inertial properties that govern the motion of robotic systems. It encompasses forward dynamics (computing accelerations from applied forces) and inverse dynamics (computing required torques for a desired motion), underpinning trajectory planning, model-based control, and simulation.
+  - Robot Dynamics is the branch of classical and computational mechanics that characterises the forces, torques, inertias, and energy flows governing the motion of robotic mechanisms. It is built upon [[Rigid Body Mechanics]], [[Kinematics]], and [[Lagrangian Mechanics]], and provides two complementary computational pathways: [[Forward Dynamics]] (given joint torques, determine resulting accelerations and trajectories) and [[Inverse Dynamics]] (given a desired motion trajectory, determine the required joint torques). The field underpins virtually every aspect of advanced [[Robot Control]], from high-speed pick-and-place to [[Legged Locomotion]] and [[Human-Robot Interaction]].
 
-- ### Semantic Classification
-  - owl-class:: robotics:RobotDynamics
-  - owl-role:: Concept
+- ### Overview
+  - Robot Dynamics extends classical mechanics to articulated, multi-link mechanical systems that may interact with their environment through contact, external loads, and constrained motion. Unlike purely kinematic analysis, which addresses position and velocity without regard to forces, dynamics captures the inertial coupling between links, gravitational effects, Coriolis and centrifugal terms, and joint-level friction.
+  - The equations of motion for an n-degree-of-freedom robot are typically expressed in the form:
+    - **M(q)q̈ + C(q,q̇)q̇ + g(q) = τ + J^T f_ext**
+    - where **M(q)** is the joint-space inertia matrix, **C(q,q̇)** captures Coriolis and centrifugal effects, **g(q)** is the gravitational torque vector, **τ** is the vector of actuator torques, **J^T f_ext** accounts for external contact forces.
+  - Why it matters:
+    - Model-based controllers that exploit dynamic models outperform pure kinematic or PID control in speed, energy efficiency, and payload capacity.
+    - Physics-based simulation of robots requires accurate dynamic parameters to predict behaviour before hardware deployment.
+    - Safe [[Human-Robot Interaction]] depends on predicting impact forces and implementing compliant control laws grounded in the dynamic model.
+
+- ### Key Components
+  - #### Forward Dynamics
+    - Given known joint torques τ and the current state (q, q̇), compute joint accelerations q̈.
+    - Implemented efficiently via the Articulated Body Algorithm (ABA) in O(n) time.
+    - Central to [[Robot Simulation]] and learning-based control in [[Reinforcement Learning]] environments.
+  - #### Inverse Dynamics
+    - Given a desired trajectory (q, q̇, q̈), compute required actuator torques τ.
+    - Implemented efficiently via the [[Newton-Euler Algorithm]] (RNEA) in O(n) time, recursively propagating velocities and forces through the kinematic tree.
+    - Foundational for computed-torque control, feedforward compensation, and energy-optimal [[Trajectory Optimisation]].
+  - #### Lagrangian Mechanics
+    - Derives equations of motion from the system's kinetic and potential energy (Lagrangian L = T − V).
+    - Particularly convenient for deriving symbolic models and understanding coupling terms.
+    - Yields the same equations of motion as Newton-Euler formulations but from an energy perspective.
+  - #### Newton-Euler Algorithm
+    - An outward-inward recursive algorithm: outward pass propagates joint velocities and accelerations; inward pass accumulates forces and torques to compute joint efforts.
+    - O(n) complexity makes it suitable for real-time control of high-DOF systems.
+  - #### Inertia Tensor and Mass Properties
+    - Each link is characterised by its mass, centre of mass location, and [[Inertia Tensor]].
+    - Accurate mass properties are identified via CAD models, system identification experiments, or a combination.
+  - #### Jacobian Matrix and Velocity Kinematics
+    - The [[Jacobian Matrix]] maps joint velocities to Cartesian end-effector velocities and is central to relating joint-space and task-space dynamics.
+    - The operational-space formulation uses the Jacobian to express dynamics directly in Cartesian coordinates.
+  - #### Denavit-Hartenberg Parameters
+    - [[Denavit-Hartenberg Parameters]] provide a standardised convention for assigning coordinate frames to robot links, enabling systematic derivation of kinematic and dynamic models.
+  - #### Spatial Algebra
+    - [[Spatial Algebra]] (Featherstone's notation) unifies linear and angular quantities into six-dimensional spatial vectors, simplifying algorithm derivations for tree-structured robots and enabling efficient software implementations such as RBDL and Pinocchio.
+
+- ### Applications and Use Cases
+  - #### Industrial Manipulation
+    - High-speed assembly and welding robots exploit inverse dynamics feedforward to achieve precise, high-acceleration trajectories without sacrificing positional accuracy.
+    - Payload estimation and adaptive control compensate for varying loads on assembly lines.
+  - #### Legged Robotics
+    - [[Legged Locomotion]] (bipedal and quadrupedal robots such as Boston Dynamics' Atlas and Spot) requires whole-body dynamic models to plan footsteps, balance, and recover from disturbances.
+    - [[Whole-Body Control]] frameworks solve optimisation problems grounded in the full-body dynamic model at kilohertz rates.
+  - #### Compliant and Collaborative Robots
+    - [[Compliant Actuation]] (series elastic actuators, variable-impedance drives) requires knowledge of link dynamics to implement impedance and admittance control for safe [[Human-Robot Interaction]].
+    - Collaborative robots (cobots) use dynamic models to detect unexpected external forces indicative of collisions with human operators.
+  - #### Trajectory Optimisation
+    - [[Trajectory Optimisation]] methods (DDP, iLQR, TOPP) incorporate the robot's dynamic equations as constraints or cost-function terms to generate energy-efficient or time-optimal paths.
+  - #### Robot Simulation and Digital Twins
+    - Simulation engines (MuJoCo, Gazebo, Isaac Sim, PyBullet) integrate robot dynamic models to generate physically plausible training environments for [[Reinforcement Learning]] and hardware-in-the-loop testing.
+    - [[Digital Twin]] platforms replicate factory-floor robot behaviour using calibrated dynamic models for predictive maintenance and process optimisation.
+  - #### Model-Based Reinforcement Learning
+    - [[Reinforcement Learning]] agents trained with access to differentiable dynamic models (model-based RL) achieve greater sample efficiency and generalisation than model-free counterparts.
+    - Differentiable simulators (e.g. Brax, Warp) expose the robot's dynamic equations as differentiable computational graphs enabling gradient-based policy optimisation.
+  - #### Space and Underwater Robotics
+    - Free-floating space manipulators require coupled spacecraft-arm dynamic models because there is no fixed base to absorb reaction forces.
+    - Underwater vehicles account for hydrodynamic drag and added-mass effects within the dynamic model.
 
 - ### Relationships
-  - is-subclass-of:: [[RobotMechanics]]
-  - requires [[Kinematics]]
-  - requires [[Torque]]
-  - enables [[Motion Planning]]
-  - enables [[Robot Control]]
-  - relatedTo [[Robot Safety]]
-  - relatedTo [[State Estimation]]
+  - requires:: [[Kinematics]]
+  - requires:: [[Rigid Body Mechanics]]
+  - requires:: [[Inertia Tensor]]
+  - requires:: [[Differential Equations]]
+  - hasPart:: [[Forward Dynamics]]
+  - hasPart:: [[Inverse Dynamics]]
+  - hasPart:: [[Lagrangian Mechanics]]
+  - hasPart:: [[Newton-Euler Algorithm]]
+  - uses:: [[Denavit-Hartenberg Parameters]]
+  - uses:: [[Spatial Algebra]]
+  - uses:: [[Jacobian Matrix]]
+  - enables:: [[Motion Planning]]
+  - enables:: [[Robot Control]]
+  - enables:: [[Trajectory Optimisation]]
+  - enables:: [[Robot Simulation]]
+  - enables:: [[Whole-Body Control]]
+  - supports:: [[Legged Locomotion]]
+  - supports:: [[Human-Robot Interaction]]
+  - supports:: [[Compliant Actuation]]
+  - relatedTo:: [[Robot Safety]]
+  - relatedTo:: [[State Estimation]]
+  - relatedTo:: [[Optimal Control]]
+  - relatedTo:: [[Contact Mechanics]]
+  - bridges-to:: [[Reinforcement Learning]]
+  - bridges-to:: [[Digital Twin]]
 
-- ### Content
-
-  #### Current Landscape
-  - Industry adoption and implementations
-  - Metaverse platforms continue to evolve with focus on interoperability and open standards
-  - Web3 integration accelerating with decentralised identity and asset ownership
-  - Enterprise adoption growing in virtual collaboration, training, and digital twins
-  - UK companies increasingly active in metaverse development and immersive technologies
-
-  - Technical capabilities
-  - Real-time rendering at photorealistic quality levels
-  - Low-latency networking enabling seamless multi-user experiences
-  - AI-driven content generation and procedural world building
-  - Spatial audio and haptics enhancing immersion
-
-  - UK and North England context
-  - Manchester: Digital Innovation Factory supports metaverse startups and research
-  - Leeds: Holovis leads in immersive experiences for entertainment and training
-  - Newcastle: University research in spatial computing and interactive systems
-  - Sheffield: Advanced manufacturing using digital twin technology
-
-  - Standards and frameworks
-  - Metaverse Standards Forum driving interoperability protocols
-  - WebXR enabling browser-based immersive experiences
-  - glTF and USD for 3D asset interchange
-  - Open Metaverse Interoperability Group defining cross-platform standards
+- ### Standards and Software Context
+  - #### Key Libraries and Frameworks
+    - **Pinocchio** (INRIA/LAAS-CNRS): efficient C++ implementation of rigid-body dynamics algorithms including RNEA, ABA, CRBA; supports Python bindings and is the backend for many MPC frameworks.
+    - **RBDL** (Rigid Body Dynamics Library): widely used C++ library implementing Featherstone's algorithms.
+    - **MuJoCo**: physics engine acquired by Google DeepMind; provides fast, differentiable contact dynamics for RL research and trajectory optimisation.
+    - **Drake** (MIT/TRI): comprehensive C++ toolbox for robot dynamics, simulation, and control; supports symbolic computation and optimisation.
+    - **Robot Operating System (ROS/ROS2)**: `ros_control` and `ros2_control` frameworks integrate dynamic model interfaces for real-time control pipelines.
+  - #### Relevant Standards
+    - **ISO 10218** (Industrial Robot Safety) implicitly relies on dynamic force and torque limits derived from robot dynamic models.
+    - **ISO/TS 15066** (Collaborative Robots): power and force limiting modes require dynamic model knowledge to bound contact forces.
+    - **URDF / SDF**: standard XML formats encoding the mass, inertia, and kinematic properties needed for dynamic simulation within ROS and Gazebo.
+  - #### Foundational Texts
+    - Featherstone (2008) "Rigid Body Dynamics Algorithms" — canonical reference for O(n) algorithms.
+    - Siciliano et al. (2009) "Robotics: Modelling, Planning and Control" — graduate textbook covering Lagrangian and Newton-Euler formulations.
+    - Murray, Li, Sastry (1994) "A Mathematical Introduction to Robotic Manipulation" — geometric mechanics approach using Lie groups.
 
 - ### Provenance
-  - sources::
+  - sources:: Featherstone (2008) Rigid Body Dynamics Algorithms; Siciliano et al. (2009) Robotics: Modelling, Planning and Control; Murray, Li, Sastry (1994) A Mathematical Introduction to Robotic Manipulation
+  - updated:: 2026-06-13
   - migration-date:: 2026-04-26T00:00:00Z

@@ -43,7 +43,7 @@ public:: true
   "@type": "Class",
   "label": "Systems Theory",
   "definition": "Systems theory is an interdisciplinary study of systems as sets of interrelated components, focusing on the relationships, feedback, and emergent behaviour that arise from interaction.",
-  "domain": "systems",
+  "domain": "infrastructure",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

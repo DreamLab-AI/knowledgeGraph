@@ -5,19 +5,53 @@
   "public": true,
   "classIri": "urn:ngm:class:spatial-data-structure",
   "domain": "spatial-computing",
-  "definition": "A Spatial Data Structure is a data organisation scheme that indexes geometric or geographic information to enable efficient queries over position, proximity, and containment. Examples include octrees, k-d trees, BVH hierarchies, R-trees, and spatial hash grids, each offering different trade-offs between build cost, query performance, and dynamic update capability for real-time 3D applications.",
+  "definition": "A Spatial Data Structure is a data organisation scheme that partitions, indexes, or hierarchically organises geometric, geographic, or positional information to enable efficient queries over proximity, containment, intersection, and visibility. Classical families include space-partitioning trees (k-d trees, octrees, BSP trees, quadtrees), bounding-volume hierarchies (BVH), and spatial hash grids, each offering distinct trade-offs between construction cost, query throughput, memory footprint, and support for dynamic updates. These structures underpin performance-critical systems including real-time 3-D rendering, physics simulation, geographic information systems (GIS), robotics path planning, and spatial databases. The choice of structure is governed by data dimensionality, scene dynamism, query distribution, and hardware parallelism constraints.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:sc-display-and-rendering",
-      "label": "Display and Rendering"
+      "id": "urn:ngm:class:data-structure",
+      "label": "Data Structure"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:octree",
+        "label": "Octree"
+      },
+      {
+        "id": "urn:ngm:class:k-d-tree",
+        "label": "k-d Tree"
+      },
+      {
+        "id": "urn:ngm:class:bounding-volume-hierarchy",
+        "label": "Bounding Volume Hierarchy"
+      },
+      {
+        "id": "urn:ngm:class:bsp-tree",
+        "label": "BSP Tree"
+      },
+      {
+        "id": "urn:ngm:class:r-tree",
+        "label": "R-Tree"
+      },
+      {
+        "id": "urn:ngm:class:quadtree",
+        "label": "Quadtree"
+      },
+      {
+        "id": "urn:ngm:class:spatial-hash-grid",
+        "label": "Spatial Hash Grid"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:spatial-indexing",
+        "label": "Spatial Indexing"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:collision-detection",
@@ -30,29 +64,88 @@
       {
         "id": "urn:ngm:class:real-time-rendering",
         "label": "Real-Time Rendering"
+      },
+      {
+        "id": "urn:ngm:class:frustum-culling",
+        "label": "Frustum Culling"
+      },
+      {
+        "id": "urn:ngm:class:nearest-neighbour-search",
+        "label": "Nearest Neighbour Search"
+      },
+      {
+        "id": "urn:ngm:class:path-planning",
+        "label": "Path Planning"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:brute-force-collision",
+        "label": "Brute-Force Collision"
+      },
+      {
+        "id": "urn:ngm:class:uniform-grid",
+        "label": "Uniform Grid"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:spatial-ai",
+        "label": "Spatial AI"
+      },
+      {
+        "id": "urn:ngm:class:lidar-mapping",
+        "label": "LiDAR Mapping"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:scene-graph",
         "label": "Scene Graph"
+      },
+      {
+        "id": "urn:ngm:class:bounding-volume",
+        "label": "Bounding Volume"
+      },
+      {
+        "id": "urn:ngm:class:morton-code",
+        "label": "Morton Code"
       }
     ],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
+    "supports": [
       {
         "id": "urn:ngm:class:physics-simulation",
         "label": "Physics Simulation"
       },
       {
+        "id": "urn:ngm:class:geographic-information-system",
+        "label": "Geographic Information System"
+      },
+      {
+        "id": "urn:ngm:class:spatial-database",
+        "label": "Spatial Database"
+      },
+      {
+        "id": "urn:ngm:class:point-cloud-processing",
+        "label": "Point Cloud Processing"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
         "id": "urn:ngm:class:spatial-mapping",
         "label": "Spatial Mapping"
+      },
+      {
+        "id": "urn:ngm:class:level-of-detail",
+        "label": "Level of Detail"
+      },
+      {
+        "id": "urn:ngm:class:computational-geometry",
+        "label": "Computational Geometry"
       }
     ]
   },

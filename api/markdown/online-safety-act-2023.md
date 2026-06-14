@@ -1,16 +1,75 @@
 - ### Definition
-  - The Online Safety Act 2023 is UK primary legislation imposing duty-of-care obligations on online platforms and search services to proactively tackle illegal and harmful [[Content Moderation]] failures, with [[Age Verification]] mandates for adult content sites and Ofcom as the statutory regulator empowered to levy global-turnover fines.
+  - The Online Safety Act 2023 is a statute of the Parliament of the United Kingdom that imposes a legally enforceable [[Duty of Care]] on operators of user-to-user services and search engines that are accessible to UK users. By designating [[Ofcom]] as the statutory regulator, the Act moves the United Kingdom away from decades of [[Platform Self-Regulation]] towards a model of mandatory [[Risk Assessment]], proactive harm mitigation, and tiered compliance obligations calibrated to service size and risk. The Act is part of a wider global movement — alongside the EU [[Digital Services Act]] and proposals in Australia and Canada — to hold [[Platform Governance]] structures formally accountable under public law, rather than relying solely on terms-of-service enforcement.
+
+- ### Overview
+  - The Online Safety Act had an unusually protracted legislative journey: introduced as a White Paper on Online Harms in April 2019, it was published as a draft bill in December 2020, revised substantially through pre-legislative scrutiny, and passed through both Houses of Parliament before receiving Royal Assent on 26 October 2023. Key controversies during its passage included the scope of [[End-to-End Encryption]] obligations, the breadth of "legal but harmful" content categories, and the appropriate balance between [[Freedom of Expression]] and [[Child Online Protection]].
+  - The Act establishes a phased implementation timeline. [[Ofcom]] published its first set of Codes of Practice covering illegal harms duties, and platforms were required to complete their illegal content risk assessments before the duties came into force. Children's safety duties followed a separate track, with Ofcom's Children's Safety Codes subject to public consultation before enforcement commenced.
+  - The territorial scope is explicitly extraterritorial: any service with UK users or that targets UK users falls in-scope regardless of where the provider is headquartered, bringing major US and global platforms squarely within Ofcom's jurisdiction. This creates significant potential conflicts with US [[First Amendment Doctrine]] and has driven substantial compliance investment by technology companies.
+
+- ### Key Components
+  - #### Tiered Service Categories
+    - **Category 1** — large [[Social Media Platform]]s and search engines with the highest user reach. Face the most stringent obligations: annual [[Transparency Reporting]], user empowerment features (tools to customise content filtering), duties regarding [[News Publisher Content]], and enhanced children's protections.
+    - **Category 2A** — large platforms below the Category 1 threshold. Duties focused on [[Illegal Content]] removal, risk assessments, and basic transparency.
+    - **Category 2B** — all other in-scope services with lower compliance burdens, primarily centred on swift removal of illegal content.
+    - Categorisation thresholds are determined by secondary legislation following [[Ofcom]] advice, allowing the regime to adapt to market changes without primary legislation.
+  - #### Illegal Content Duties
+    - All regulated services must conduct [[Risk Assessment]] for illegal content and take proportionate steps to minimise that risk. Priority illegal content — including [[CSAM Detection]], terrorism content, fraud, hate speech, and cyberflashing — must be removed expeditiously once identified. Providers must have clear and accessible [[Content Moderation]] and complaints mechanisms.
+  - #### Children's Safety Duties
+    - Services likely to be accessed by children must complete a Children's Risk Assessment and implement [[Age Assurance]] measures proportionate to the content they host. The [[Age Appropriate Design Code]] (Children's Code) published by the ICO informs design-level obligations. Platforms hosting primary priority content — material promoting self-harm, eating disorders, or suicidal ideation — face the most demanding access restrictions regarding children.
+  - #### Encryption and Scanning
+    - The Act's most contested technical provision allows [[Ofcom]] to require platforms to use accredited technology to identify child sexual abuse material in private communications. Crucially, such notices are subject to a "last resort" clause and a feasibility test: Ofcom must be satisfied that adequate [[Privacy Enhancing Technologies]] or [[Client-Side Scanning]] solutions exist that do not compromise [[End-to-End Encryption]]. This clause was inserted following sustained criticism from cryptography researchers, civil society groups, and messaging providers.
+  - #### Regulatory Powers
+    - [[Ofcom]] may conduct audits, require information from providers, and appoint inspectors. Financial penalties can reach 10% of global annual qualifying turnover, or £18 million for smaller services, whichever is higher. Business disruption measures — including payment and advertising restrictions — can be sought from the courts as a last resort. The Act also enables Ofcom to pursue ISP-level blocking of non-compliant services.
+  - #### Senior Manager Liability
+    - The Act introduces personal criminal liability for named senior managers who fail to ensure compliance with Ofcom information requests or who act to obstruct investigations. This provision was designed to create board-level accountability, mirroring similar personal liability regimes in financial services regulation such as the [[Senior Managers and Certification Regime]].
+  - #### User Empowerment Tools
+    - Category 1 services must offer users tools to filter out lawful content they do not wish to see, to verify their own identity, and to understand how [[Algorithmic Recommendation]] systems affect what content they are shown. These tools must be accessible and easy to use, not buried in settings.
+
+- ### Applications and Use Cases
+  - **Platform Compliance Programmes** — Major social media companies including Meta, TikTok, Snapchat, X (formerly Twitter), and YouTube have established UK-specific [[Trust and Safety]] compliance functions to produce [[Transparency Reporting]], maintain designated points of contact with Ofcom, and restructure [[Content Moderation]] processes.
+  - **Child Safety Infrastructure** — The Act is driving adoption of [[Age Verification]] and [[Age Assurance]] systems across consumer internet services. Providers of pornographic content were among the first required to implement age verification, following years of failed attempts under the [[Digital Economy Act 2017]].
+  - **Encrypted Messaging** — WhatsApp, Signal, and Apple highlighted the encryption provisions as a potential existential risk to private communications in the UK. The "last resort" clause and feasibility test partially addressed these concerns but the tension between [[End-to-End Encryption]] and lawful interception remains unresolved at a technical level.
+  - **Search Engine Obligations** — Search engines face specific duties to prevent UK users from easily accessing priority illegal content through search results, including requirements around [[Safe Search]] defaults and [[CSAM Detection]] signals.
+  - **Online Fraud** — The Act designates fraud as a priority illegal harm, compelling platforms to take proactive measures against fraudulent advertising and scam content, complementing the [[Online Fraud Charter]] voluntary commitments.
+  - **Academic and Civil Society Scrutiny** — The Act grants qualifying researchers data access rights, allowing academic institutions to request data from platforms for safety research under conditions set by Ofcom, advancing the broader [[Platform Accountability]] agenda.
 
 - ### Relationships
-  - The Online Safety Act is the UK's parallel to the EU's [[Digital Services Act]], differing in its risk-based rather than size-based categorisation and in its explicit focus on [[Digital Safety]] for children. [[Content Moderation]] obligations under the Act extend beyond reactive takedowns to proactive risk assessment and mitigation duties. [[Age Verification]] requirements for pornographic content were among the most debated provisions, given prior failures to implement the Digital Economy Act 2017's age verification clauses. [[Trust and Safety]] teams at major platforms restructured their compliance programmes to satisfy the Act's transparency and accountability requirements. [[Digital Society Harms]] — including cyberflashing, online fraud, intimate image abuse, and child sexual abuse material — are specifically enumerated categories requiring expedited removal procedures.
+  - requires:: [[Content Moderation]]
+  - requires:: [[Regulatory Compliance]]
+  - requires:: [[Age Assurance]]
+  - enables:: [[Trust and Safety]]
+  - enables:: [[Child Online Protection]]
+  - enables:: [[Platform Accountability]]
+  - hasPart:: [[Duty of Care]]
+  - hasPart:: [[Risk Assessment]]
+  - hasPart:: [[Age Verification]]
+  - hasPart:: [[Transparency Reporting]]
+  - partOf:: [[UK Technology Policy]]
+  - dependsOn:: [[Ofcom]]
+  - dependsOn:: [[Codes of Practice]]
+  - implements:: [[Online Harm Reduction]]
+  - implements:: [[Platform Governance]]
+  - contrastsWith:: [[Digital Services Act]]
+  - contrastsWith:: [[First Amendment Doctrine]]
+  - relatedTo:: [[Digital Safety]]
+  - relatedTo:: [[End-to-End Encryption]]
+  - relatedTo:: [[Illegal Content]]
+  - relatedTo:: [[CSAM Detection]]
+  - relatedTo:: [[Age Appropriate Design Code]]
+  - bridges-to:: [[Client-Side Scanning]]
+  - bridges-to:: [[Privacy Enhancing Technologies]]
+  - standardizedBy:: [[Ofcom]]
+  - standardizedBy:: [[Regulatory Framework]]
 
-- ### Content
-  - The Online Safety Act had an unusually protracted legislative journey, introduced as a draft bill in December 2020 and passing through multiple revisions before receiving Royal Assent in October 2023. The passage was complicated by politically contentious debates about encryption: early drafts contained provisions requiring platforms to use "accredited technology" to scan encrypted messages for child abuse material, drawing criticism from privacy advocates and technologists who argued this was technically incompatible with end-to-end encryption. The final Act includes a "last resort" clause that makes scanning obligations contingent on Ofcom determining that adequate privacy-preserving technology exists.
+- ### Standards and Context
+  - **Ofcom Codes of Practice** — The primary regulatory instruments under the Act. Ofcom publishes technology-specific and risk-specific codes that providers must follow or demonstrate equivalent measures. Codes covering illegal content, child safety, and user empowerment are published sequentially as Ofcom completes its consultation processes.
+  - **ICO Age Appropriate Design Code** — The Children's Code published by the Information Commissioner's Office directly informs the design obligations under the Act's child safety duties, creating a linked regulatory regime across data protection and online safety.
+  - **GDPR and UK Data Protection Act 2018** — The Act operates alongside the UK [[GDPR]] and [[Data Protection Act 2018]]. Age assurance measures must be implemented in a privacy-preserving manner. [[Privacy Enhancing Technologies]] are explicitly contemplated.
+  - **EU Digital Services Act** — The closest European analogue. The DSA focuses on size-based categorisation (Very Large Online Platforms) and systemic risk, whereas the OSA emphasises risk-based categorisation regardless of size, and includes a stronger emphasis on child protection. Both regimes require cooperation frameworks for companies that fall within scope of both.
+  - **UN Convention on the Rights of the Child** — The Act's child safety provisions are informed by UNCRC principles, particularly General Comment 25 on children's rights in relation to the digital environment.
+  - **Scope of Application** — The Act applies to: user-to-user services (where users can interact with each other's content); search services; and services that publish pornographic content. It does not apply to internal business communications tools, email services, or services with only one-to-one communication functionality not algorithmically amplified.
+  - **Commencement and Enforcement** — Regulatory provisions are commenced by statutory instrument in phases. The illegal harms framework commenced in early 2024. Children's safety duties are expected to be enforced following finalisation of Ofcom's Children's Safety Codes. Senior manager liability provisions require separate commencement orders.
 
-  - The tiered duty-of-care structure creates three categories of regulated service. Category 1 services — large search engines and platforms with the highest reach and risk — face the most demanding obligations, including annual transparency reports, user empowerment features (tools to filter out legal-but-harmful content), and duties around news publisher content. Category 2A services are large platforms below the Category 1 threshold; Category 2B covers all other in-scope services with lower compliance burdens focused primarily on illegal content removal.
-
-  - Child protection provisions are the most extensive part of the Act. Services likely to be accessed by children must conduct Children's Risk Assessments, implement age assurance measures proportionate to the content they host, and apply the Children's Code (the ICO's Age Appropriate Design Code) to their design decisions. Platforms hosting primary priority content — material promoting self-harm, eating disorders, or suicidal ideation — face the strictest obligations regarding children's access.
-
-  - The territorial scope of the Act is extraterritorial in practice. Any service that has UK users or specifically targets UK users falls within scope regardless of where the provider is incorporated. This brings major US and global platforms squarely within Ofcom's jurisdiction, creating potential conflicts with US First Amendment norms and triggering extensive compliance programmes from the world's largest technology companies.
-
-  - Enforcement timelines are phased, with Ofcom publishing Codes of Practice and regulatory guidance before enforcement begins. The illegal harms duties came into force in early 2024, with the child protection duties following once Ofcom's Children's Safety Codes were finalised. The criminal liability provisions for senior managers represent a significant escalation of regulatory risk that has driven board-level attention to online safety compliance in a way that previous self-regulatory frameworks never achieved.
+- ### Provenance
+  - sources:: UK Parliament — Online Safety Act 2023 (c. 50); Ofcom — Online Safety Act Implementation Programme; ICO — Age Appropriate Design Code; House of Lords Communications and Digital Committee Reports 2021-2023; Carnegie UK — Online Harms White Paper responses
+  - updated:: 2026-06-13

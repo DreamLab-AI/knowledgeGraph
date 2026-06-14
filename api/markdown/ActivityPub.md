@@ -21,7 +21,7 @@ public:: true
   "@type": "Class",
   "label": "ActivityPub",
   "definition": "ActivityPub is a W3C-standardised decentralised social networking protocol that defines two layers: a server-to-server federation protocol enabling independent server instances to share content with one another, and a client-to-server protocol allowing applications to interact with a user's social data. Based on the ActivityStreams 2.0 vocabulary and JSON-LD serialisation, it enables interoperable federated social networks where users on different server instances can follow, reply to, and interact with each other across instance boundaries.",
-  "domain": "web",
+  "domain": "infrastructure",
   "maturity": "established",
   "subClassOf": [
     {"@id": "urn:ngm:class:distributed-protocol", "label": "Distributed Protocol"}

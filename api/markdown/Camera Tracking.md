@@ -21,7 +21,7 @@ public:: true
   "@type": "Class",
   "label": "Camera Tracking",
   "definition": "Camera Tracking is the process of continuously estimating the position and orientation (pose) of a camera in 3D space relative to a fixed reference frame or scene, typically using image feature analysis, optical flow, or fiducial marker detection. It underpins augmented reality, visual effects compositing, robotic navigation, and autonomous vehicle perception by enabling virtual or computed elements to be correctly registered to the physical world as the camera moves.",
-  "domain": "spatial",
+  "domain": "spatial-computing",
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:motion-tracking", "label": "Motion Tracking"}],
   "relations": {

@@ -4,17 +4,17 @@
   "slug": "property-rights",
   "public": true,
   "classIri": "urn:ngm:class:property-rights",
-  "domain": "spatial-computing",
-  "definition": "The legal and technical frameworks that establish, verify, and enforce ownership of digital assets, virtual land, and intellectual creations within metaverse environments. Property rights in spatial computing contexts rely on blockchain-based ownership records, NFT standards, and smart contracts to grant creators and users enforceable claims over their digital goods.",
+  "domain": "governance",
+  "definition": "Property rights are the legally and institutionally recognised entitlements that determine who may use, transfer, exclude others from, or derive value from a resource \u2014 whether physical, digital, or intellectual. They form the foundational incentive structure of market economies, specifying the bundle of rights (usus, fructus, abusus) attached to an asset. In digital and blockchain contexts, property rights extend to on-chain ownership records, smart-contract-enforced exclusivity, NFT-based title deeds, and virtual land parcels, requiring mechanisms for interoperability, provenance tracking, and dispute resolution that operate across jurisdictions.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:sc-governance-and-safety",
-      "label": "Governance and Safety"
+      "id": "urn:ngm:class:governance",
+      "label": "Governance"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "emerging",
+  "qualityScore": 0.72,
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [
@@ -25,13 +25,65 @@
       {
         "id": "urn:ngm:class:digital-ownership",
         "label": "Digital Ownership"
+      },
+      {
+        "id": "urn:ngm:class:legal-framework",
+        "label": "Legal Framework"
+      },
+      {
+        "id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
       }
     ],
-    "enables": [],
-    "dependsOn": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:digital-economy",
+        "label": "Digital Economy"
+      },
+      {
+        "id": "urn:ngm:class:creator-economy",
+        "label": "Creator Economy"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:dispute-resolution",
+        "label": "Dispute Resolution"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:open-access",
+        "label": "Open Access"
+      },
+      {
+        "id": "urn:ngm:class:commons",
+        "label": "Commons"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "id": "urn:ngm:class:virtual-land",
+        "label": "Virtual Land"
+      },
+      {
+        "id": "urn:ngm:class:ai-generated-content",
+        "label": "AI-Generated Content"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:nft",
@@ -40,6 +92,14 @@
       {
         "id": "urn:ngm:class:blockchain",
         "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:tokenization",
+        "label": "Tokenization"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-proof",
+        "label": "Cryptographic Proof"
       }
     ],
     "supports": [],
@@ -48,11 +108,19 @@
     "relatedTo": [
       {
         "id": "urn:ngm:class:intellectual-property-rights-framework",
-        "label": "copyright"
+        "label": "Intellectual Property Rights Framework"
       },
       {
-        "id": "urn:ngm:class:tokenization",
-        "label": "Tokenization"
+        "id": "urn:ngm:class:data-sovereignty",
+        "label": "Data Sovereignty"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:land-registry",
+        "label": "Land Registry"
       }
     ]
   },

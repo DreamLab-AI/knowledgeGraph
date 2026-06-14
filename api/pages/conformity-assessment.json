@@ -4,8 +4,8 @@
   "slug": "conformity-assessment",
   "public": true,
   "classIri": "urn:ngm:class:conformity-assessment",
-  "domain": "artificial-intelligence",
-  "definition": "Conformity Assessment is a structured set of procedures used to evaluate whether an AI system or product satisfies specified regulatory, technical, or ethical requirements prior to deployment or market entry. Under frameworks such as the EU AI Act, high-risk AI systems must undergo either a third-party audit by a notified body or a documented self-assessment process; the resulting conformity declaration is a legal precondition for placing the system on the EU market. The process typically includes technical documentation review, testing, risk analysis, and ongoing post-market surveillance.",
+  "domain": "governance",
+  "definition": "Conformity Assessment is a structured set of procedures used to determine whether a product, system, service, or process meets specified requirements defined in regulations, standards, or contractual obligations. In the context of AI and digital systems, it encompasses technical documentation review, testing, auditing, risk analysis, and post-market surveillance carried out either by the developer as a self-assessment or by an accredited third-party notified body. Under frameworks such as the EU AI Act, ISO/IEC 17000-series standards, and NIST guidelines, the conformity declaration produced is a legal and operational precondition for market entry and continued deployment. It inherits procedural principles from product safety certification while adapting them to the probabilistic, data-dependent, and emergent behaviour of machine learning systems.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-governance-and-ethics",
@@ -13,8 +13,8 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [
@@ -25,14 +25,92 @@
       {
         "id": "urn:ngm:class:transparency",
         "label": "Transparency"
+      },
+      {
+        "id": "urn:ngm:class:technical-documentation",
+        "label": "Technical Documentation"
+      },
+      {
+        "id": "urn:ngm:class:auditability",
+        "label": "Auditability"
       }
     ],
-    "enables": [],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:market-access",
+        "label": "Market Access"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:trustworthy-ai",
+        "label": "Trustworthy AI"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:post-market-surveillance",
+        "label": "Post-Market Surveillance"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-17000",
+        "label": "ISO/IEC 17000"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI RMF"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:self-certification",
+        "label": "Self-Certification"
+      },
+      {
+        "id": "urn:ngm:class:voluntary-disclosure",
+        "label": "Voluntary Disclosure"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:model-cards",
+        "label": "Model Cards"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:explainability",
+        "label": "Explainability"
+      },
+      {
+        "id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      },
+      {
+        "id": "urn:ngm:class:bias-testing",
+        "label": "Bias Testing"
+      },
+      {
+        "id": "urn:ngm:class:robustness-testing",
+        "label": "Robustness Testing"
+      }
+    ],
     "supports": [
       {
         "id": "urn:ngm:class:ai-regulation",
@@ -41,14 +119,35 @@
       {
         "id": "urn:ngm:class:ai-safety",
         "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:consumer-protection",
+        "label": "Consumer Protection"
       }
     ],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-iec-jtc1-sc42",
+        "label": "ISO/IEC JTC1/SC42"
+      },
+      {
+        "id": "urn:ngm:class:etsi",
+        "label": "ETSI"
+      },
+      {
+        "id": "urn:ngm:class:nist",
+        "label": "NIST"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:explainability",
-        "label": "Explainability"
+        "id": "urn:ngm:class:certification",
+        "label": "Certification"
+      },
+      {
+        "id": "urn:ngm:class:accreditation",
+        "label": "Accreditation"
       }
     ]
   },

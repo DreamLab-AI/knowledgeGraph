@@ -55,7 +55,7 @@ public:: true
   "@type": "Class",
   "label": "Deep Learning Framework",
   "definition": "A software library that provides the building blocks for defining, training and deploying deep neural networks, including tensor operations, automatic differentiation and hardware acceleration.",
-  "domain": "deep-learning",
+  "domain": "machine-learning",
   "maturity": "mature",
   "qualityScore": 0.7,
   "subClassOf": [

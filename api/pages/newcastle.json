@@ -4,8 +4,8 @@
   "slug": "newcastle",
   "public": true,
   "classIri": "urn:ngm:class:newcastle",
-  "domain": "general",
-  "definition": "A city in North East England with growing digital, data science, and life sciences sectors anchored by its universities.",
+  "domain": "infrastructure",
+  "definition": "Newcastle upon Tyne is a major city and metropolitan centre in North East England, positioned at the mouth of the River Tyne, historically significant as an industrial and maritime hub and now a regional capital for technology, data science, life sciences, and higher education. Home to Newcastle University and Northumbria University, the city anchors a cluster of digital and creative industries within the Northern Powerhouse economic policy framework. Newcastle's urban infrastructure, connectivity via rail and the A1 corridor, and significant public-sector investment underpin its role as a node in the UK's distributed knowledge economy. The city hosts institutions such as the Alan Turing Institute partner programmes and the National Innovation Centre for Data, reinforcing its positioning in data-driven research and applied artificial intelligence.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:entity",
@@ -13,26 +13,112 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:newcastle-university",
+        "label": "Newcastle University"
+      },
+      {
+        "id": "urn:ngm:class:national-innovation-centre-for-data",
+        "label": "National Innovation Centre for Data"
+      },
+      {
+        "id": "urn:ngm:class:science-central",
+        "label": "Science Central"
+      }
+    ],
     "requires": [],
     "enables": [
       {
         "id": "urn:ngm:class:digital-economy",
         "label": "Digital Economy"
+      },
+      {
+        "id": "urn:ngm:class:open-data",
+        "label": "Open Data"
+      },
+      {
+        "id": "urn:ngm:class:smart-city",
+        "label": "Smart City"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:transport-infrastructure",
+        "label": "Transport Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:broadband-connectivity",
+        "label": "Broadband Connectivity"
+      }
+    ],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:ai-cluster",
+        "label": "AI Cluster"
+      }
+    ],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:regional-innovation",
+        "label": "Regional Innovation"
+      },
+      {
+        "id": "urn:ngm:class:public-sector-technology",
+        "label": "Public Sector Technology"
+      }
+    ],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:northern-powerhouse",
+        "label": "Northern Powerhouse"
+      },
+      {
+        "id": "urn:ngm:class:united-kingdom",
+        "label": "United Kingdom"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:manchester",
+        "label": "Manchester"
+      },
+      {
+        "id": "urn:ngm:class:leeds",
+        "label": "Leeds"
+      },
+      {
+        "id": "urn:ngm:class:sheffield",
+        "label": "Sheffield"
+      },
+      {
+        "id": "urn:ngm:class:data-science",
+        "label": "Data Science"
+      },
+      {
+        "id": "urn:ngm:class:life-sciences",
+        "label": "Life Sciences"
+      },
+      {
+        "id": "urn:ngm:class:urban-computing",
+        "label": "Urban Computing"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -4,8 +4,8 @@
   "slug": "pseudonymity",
   "public": true,
   "classIri": "urn:ngm:class:pseudonymity",
-  "domain": "identity",
-  "definition": "Pseudonymity is the state of acting under a persistent identifier that is not linked to one's real-world identity. It allows consistent reputation while concealing who a participant is.",
+  "domain": "security",
+  "definition": "Pseudonymity is the property of operating under a persistent, stable identifier that is not directly linked to a participant's real-world legal identity, enabling consistent reputation and accountability without exposing personal information. Unlike full anonymity \u2014 where individual actions cannot be attributed to any consistent actor \u2014 pseudonymity preserves linkability across interactions under the chosen identifier while severing the mapping to biological or legal selfhood. The pseudonymous identifier may be a username, cryptographic public key, or blockchain address; its strength depends on the isolation of contextual signals that could enable de-anonymisation. Pseudonymity is foundational to privacy-preserving communication, decentralised identity systems, and selective-disclosure credential architectures.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:privacy",
@@ -13,21 +13,129 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.73,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:identifier",
+        "label": "Identifier"
+      },
+      {
+        "id": "urn:ngm:class:key-pair",
+        "label": "Key Pair"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:reputation-system",
+        "label": "Reputation System"
+      },
+      {
+        "id": "urn:ngm:class:selective-disclosure",
+        "label": "Selective Disclosure"
+      },
+      {
+        "id": "urn:ngm:class:whistleblowing",
+        "label": "Whistleblowing"
+      },
+      {
+        "id": "urn:ngm:class:censorship-resistance",
+        "label": "Censorship Resistance"
+      }
+    ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:decentralized-identifier",
+        "label": "Decentralized Identifier"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-credential",
+        "label": "Verifiable Credential"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:anonymity",
+        "label": "Anonymity"
+      },
+      {
+        "id": "urn:ngm:class:identity-disclosure",
+        "label": "Identity Disclosure"
+      },
+      {
+        "id": "urn:ngm:class:real-name-policy",
+        "label": "Real-Name Policy"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self-Sovereign Identity"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:tor-network",
+        "label": "Tor Network"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public Key Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:ring-signature",
+        "label": "Ring Signature"
+      },
+      {
+        "id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      }
+    ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:w3c-did-core",
+        "label": "W3C DID Core"
+      },
+      {
+        "id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:data-minimisation",
+        "label": "Data Minimisation"
+      },
+      {
+        "id": "urn:ngm:class:unlinkability",
+        "label": "Unlinkability"
+      },
+      {
+        "id": "urn:ngm:class:contextual-integrity",
+        "label": "Contextual Integrity"
+      },
+      {
+        "id": "urn:ngm:class:deanonymisation",
+        "label": "Deanonymisation"
+      },
+      {
+        "id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      }
+    ]
   },
   "wikilinks": [
     {

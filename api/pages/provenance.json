@@ -4,7 +4,7 @@
   "slug": "provenance",
   "public": true,
   "classIri": "urn:ngm:class:provenance",
-  "domain": "general",
+  "domain": "data",
   "definition": "The documented record of the origin, history and chain of custody of data or assets, used to establish authenticity, trust and accountability.",
   "subClassOf": [
     {

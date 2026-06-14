@@ -51,7 +51,7 @@ public:: true
   "@type": "Class",
   "label": "Business Process Automation",
   "definition": "The use of technology to automate complex, multi-step business processes beyond individual tasks, integrating systems and people to streamline operations. It targets end-to-end workflows rather than isolated actions.",
-  "domain": "automation",
+  "domain": "robotics",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:bletchley-declaration",
   "domain": "artificial-intelligence",
-  "definition": "The Bletchley Declaration is a joint statement signed in November 2023 by 28 nations and the European Union at the inaugural AI Safety Summit held at Bletchley Park, UK, in which signatories acknowledged the serious risks posed by frontier AI models and committed to international cooperation on safety evaluation, information sharing, and the development of national and international governance frameworks. It represents the first multilateral political commitment specifically addressing the risks of highly capable foundation models and established the precedent for government-led AI safety institutes conducting pre-deployment evaluations.",
+  "definition": "The Bletchley Declaration is a multilateral political agreement signed in November 2023 by 28 nations and the European Union at the inaugural AI Safety Summit at Bletchley Park, UK, establishing the first intergovernmental consensus on the risks of frontier AI models. Signatories committed to international cooperation on safety evaluation, information sharing among national AI safety institutes, and the development of governance frameworks to address potentially catastrophic risks from highly capable foundation models. The declaration catalysed the formation of AI safety institutes in the UK, United States, and other signatory nations, and set the precedent for government-coordinated pre-deployment evaluations of frontier AI systems. It was followed by the Seoul AI Safety Summit in 2024, which extended commitments toward operational safety testing requirements for frontier model developers.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-governance-and-ethics",
@@ -13,21 +13,73 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
+  "qualityScore": 0.74,
   "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:frontier-ai",
+        "label": "Frontier AI"
+      },
+      {
+        "id": "urn:ngm:class:foundation-models",
+        "label": "Foundation Models"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:risk-assessment",
         "label": "Risk Assessment"
+      },
+      {
+        "id": "urn:ngm:class:pre-deployment-evaluation",
+        "label": "Pre-Deployment Evaluation"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety-institute",
+        "label": "AI Safety Institute"
+      },
+      {
+        "id": "urn:ngm:class:red-teaming",
+        "label": "Red Teaming"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:multilateral-governance",
+        "label": "Multilateral Governance"
+      },
+      {
+        "id": "urn:ngm:class:soft-law",
+        "label": "Soft Law"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      },
+      {
+        "id": "urn:ngm:class:binding-regulation",
+        "label": "Binding Regulation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:capability-evaluation",
+        "label": "Capability Evaluation"
+      },
+      {
+        "id": "urn:ngm:class:interpretability",
+        "label": "Interpretability"
+      },
+      {
+        "id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      }
+    ],
     "uses": [],
     "supports": [
       {
@@ -37,6 +89,14 @@
       {
         "id": "urn:ngm:class:ai-governance",
         "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:international-cooperation",
+        "label": "International Cooperation"
+      },
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
       }
     ],
     "standardizedBy": [],
@@ -47,8 +107,24 @@
         "label": "AI Regulation"
       },
       {
-        "id": "urn:ngm:class:responsible-ai",
-        "label": "Responsible AI"
+        "id": "urn:ngm:class:ai-risk-management",
+        "label": "AI Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:existential-risk",
+        "label": "Existential Risk"
+      },
+      {
+        "id": "urn:ngm:class:dual-use-technology",
+        "label": "Dual-Use Technology"
+      },
+      {
+        "id": "urn:ngm:class:biosecurity",
+        "label": "Biosecurity"
+      },
+      {
+        "id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
       }
     ]
   },

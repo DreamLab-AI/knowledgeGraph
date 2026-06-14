@@ -4,20 +4,46 @@
   "slug": "carbon-credits",
   "public": true,
   "classIri": "urn:ngm:class:carbon-credits",
-  "domain": "infrastructure",
-  "definition": "Carbon credits are tradeable instruments, each representing the verified reduction or removal of one tonne of carbon dioxide equivalent (tCO\u2082e) from the atmosphere, used in both compliance and voluntary markets to incentivise greenhouse gas mitigation. In compliance cap-and-trade systems, regulators issue a capped total of allowances and require regulated emitters to surrender one allowance per tonne emitted, creating a price signal for abatement. Voluntary carbon markets allow organisations to purchase credits from validated offset projects \u2014 such as reforestation, renewable energy deployment, or methane capture \u2014 to offset residual emissions.",
+  "domain": "finance",
+  "definition": "Carbon credits are tradeable instruments, each representing the verified reduction or removal of one tonne of carbon dioxide equivalent (tCO\u2082e) from the atmosphere, used in both compliance and voluntary markets to incentivise greenhouse gas mitigation. In compliance cap-and-trade systems, regulators issue a capped total of allowances and require regulated emitters to surrender one allowance per tonne emitted, creating a price signal for abatement. Voluntary carbon markets allow organisations to purchase credits from validated offset projects \u2014 such as reforestation, renewable energy deployment, or methane capture \u2014 to offset residual emissions. Market integrity depends on independently certified additionality, permanence, and measurability, overseen by standards bodies such as Verra, Gold Standard, and the American Carbon Registry.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:infra-legal-and-regulatory",
-      "label": "Infra Legal and Regulatory"
+      "id": "urn:ngm:class:environmental-finance",
+      "label": "Environmental Finance"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:carbon-allowance",
+        "label": "Carbon Allowance"
+      },
+      {
+        "id": "urn:ngm:class:carbon-offset",
+        "label": "Carbon Offset"
+      },
+      {
+        "id": "urn:ngm:class:verified-emission-reduction",
+        "label": "Verified Emission Reduction"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:measurement-reporting-verification",
+        "label": "Measurement Reporting and Verification"
+      },
+      {
+        "id": "urn:ngm:class:carbon-registry",
+        "label": "Carbon Registry"
+      },
+      {
+        "id": "urn:ngm:class:additionality",
+        "label": "Additionality"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:carbon-credit-token",
@@ -26,29 +52,111 @@
       {
         "id": "urn:ngm:class:carbon-accounting",
         "label": "Carbon Accounting"
+      },
+      {
+        "id": "urn:ngm:class:net-zero-strategy",
+        "label": "Net Zero Strategy"
+      },
+      {
+        "id": "urn:ngm:class:scope-3-emissions-reporting",
+        "label": "Scope 3 Emissions Reporting"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:greenhouse-gas-protocol",
+        "label": "Greenhouse Gas Protocol"
+      },
+      {
+        "id": "urn:ngm:class:third-party-verification",
+        "label": "Third Party Verification"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:carbon-tax",
+        "label": "Carbon Tax"
+      },
+      {
+        "id": "urn:ngm:class:direct-air-capture",
+        "label": "Direct Air Capture"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain-tokenisation",
+        "label": "Blockchain Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:satellite-monitoring",
+        "label": "Satellite Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:iot-sensors",
+        "label": "IoT Sensors"
+      },
+      {
+        "id": "urn:ngm:class:remote-sensing",
+        "label": "Remote Sensing"
+      }
+    ],
     "supports": [
       {
         "id": "urn:ngm:class:environmental-accounting",
         "label": "Environmental Accounting"
+      },
+      {
+        "id": "urn:ngm:class:paris-agreement",
+        "label": "Paris Agreement"
+      },
+      {
+        "id": "urn:ngm:class:corporate-sustainability-reporting",
+        "label": "Corporate Sustainability Reporting"
       }
     ],
-    "standardizedBy": [],
-    "partOf": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:verified-carbon-standard",
+        "label": "Verified Carbon Standard"
+      },
+      {
+        "id": "urn:ngm:class:gold-standard",
+        "label": "Gold Standard"
+      },
+      {
+        "id": "urn:ngm:class:article-6-paris-agreement",
+        "label": "Article 6 Paris Agreement"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:carbon-market",
+        "label": "Carbon Market"
+      },
+      {
+        "id": "urn:ngm:class:emissions-trading-scheme",
+        "label": "Emissions Trading Scheme"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:carbon-offset-trading",
         "label": "Carbon Offset Trading"
       },
       {
-        "id": "urn:ngm:class:carbon-registry",
-        "label": "Carbon Registry"
+        "id": "urn:ngm:class:esg-investing",
+        "label": "ESG Investing"
       }
     ]
   },

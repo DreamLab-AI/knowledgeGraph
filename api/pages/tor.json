@@ -4,7 +4,7 @@
   "slug": "tor",
   "public": true,
   "classIri": "urn:ngm:class:tor",
-  "domain": "cryptographic",
+  "domain": "security",
   "definition": "A free overlay network and software that provides anonymous communication by routing traffic through a series of volunteer-operated relays using layered encryption.",
   "subClassOf": [
     {

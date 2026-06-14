@@ -43,7 +43,7 @@ public:: true
   "@type": "Class",
   "label": "performance",
   "definition": "Performance is a measure of how efficiently a system completes its work, commonly expressed through throughput, latency, and resource usage.",
-  "domain": "software-engineering",
+  "domain": "infrastructure",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

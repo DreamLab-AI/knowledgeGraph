@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:mobile-manipulation",
   "domain": "robotics",
-  "definition": "Mobile manipulation is the field of robotics that combines a mobile base with one or more manipulator arms so a robot can move through an environment and physically interact with objects.",
+  "definition": "Mobile manipulation is the subfield of robotics that integrates a locomoting mobile base with one or more robotic manipulator arms, enabling a robot to traverse unstructured environments and physically interact with objects beyond the reach of a fixed-base system. It requires the coordinated control of both navigation and dexterous manipulation, necessitating joint motion planning, whole-body control, and perception pipelines that resolve the relative pose of targets in the robot's frame. The discipline addresses challenges absent in purely fixed-arm or purely mobile systems, including base-arm kinematic coupling, dynamic stability during manipulation, and long-horizon task planning across navigation and contact phases.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:manipulation",
@@ -13,10 +13,23 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:mobile-base",
+        "label": "Mobile Base"
+      },
+      {
+        "id": "urn:ngm:class:robotic-arm",
+        "label": "Robotic Arm"
+      },
+      {
+        "id": "urn:ngm:class:end-effector",
+        "label": "End Effector"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:manipulator",
@@ -25,18 +38,108 @@
       {
         "id": "urn:ngm:class:mobile-robot",
         "label": "Mobile Robot"
+      },
+      {
+        "id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "id": "urn:ngm:class:perception",
+        "label": "Perception"
       }
     ],
-    "enables": [],
-    "dependsOn": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:warehouse-automation",
+        "label": "Warehouse Automation"
+      },
+      {
+        "id": "urn:ngm:class:service-robotics",
+        "label": "Service Robotics"
+      },
+      {
+        "id": "urn:ngm:class:domestic-robot",
+        "label": "Domestic Robot"
+      },
+      {
+        "id": "urn:ngm:class:surgical-robot",
+        "label": "Surgical Robot"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:robot-perception",
+        "label": "Robot Perception"
+      },
+      {
+        "id": "urn:ngm:class:task-and-motion-planning",
+        "label": "Task and Motion Planning"
+      },
+      {
+        "id": "urn:ngm:class:force-control",
+        "label": "Force Control"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:fixed-base-manipulation",
+        "label": "Fixed-Base Manipulation"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human-Robot Interaction"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:inverse-kinematics",
+        "label": "Inverse Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:simultaneous-localisation-and-mapping",
+        "label": "Simultaneous Localisation and Mapping"
+      },
+      {
+        "id": "urn:ngm:class:whole-body-control",
+        "label": "Whole-Body Control"
+      },
+      {
+        "id": "urn:ngm:class:joint-configuration",
+        "label": "Joint Configuration"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:humanoid-robot",
+        "label": "Humanoid Robot"
+      },
+      {
+        "id": "urn:ngm:class:legged-robot",
+        "label": "Legged Robot"
+      },
+      {
+        "id": "urn:ngm:class:robot-learning",
+        "label": "Robot Learning"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
+    ]
   },
   "wikilinks": [
     {

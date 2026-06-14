@@ -4,7 +4,7 @@
   "slug": "x-509-certificate",
   "public": true,
   "classIri": "urn:ngm:class:x-509-certificate",
-  "domain": "cryptographic",
+  "domain": "security",
   "definition": "A standardised digital certificate format that binds a public key to an identity and is signed by a certificate authority within a public key infrastructure.",
   "subClassOf": [
     {

@@ -47,7 +47,7 @@ public:: true
   "@type": "Class",
   "label": "Otter.ai",
   "definition": "An American company that provides automatic speech recognition and transcription software for meetings and conversations. It generates real-time transcripts, summaries, and notes from audio.",
-  "domain": "natural-language-processing",
+  "domain": "ai",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

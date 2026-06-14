@@ -27,54 +27,219 @@ public:: true
   "@id": "urn:ngm:class:certificate-authority",
   "@type": "Class",
   "label": "Certificate Authority",
-  "definition": "A Certificate Authority (CA) is a trusted third-party organisation that issues, signs, and manages the lifecycle of X.509 digital certificates, cryptographically binding a public key to an entity's verified identity. CAs operate within a hierarchical Public Key Infrastructure (PKI) where root CAs sign intermediate CAs, which in turn issue end-entity certificates for servers, users, or devices. The CA's signing operations underpin the TLS handshake, code-signing pipelines, S/MIME email encryption, and document signing workflows across the internet.",
-  "domain": "infrastructure",
+  "definition": "A Certificate Authority (CA) is a trusted third-party organisation that issues, signs, and manages the lifecycle of X.509 digital certificates, cryptographically binding a public key to an entity's verified identity within a Public Key Infrastructure (PKI). CAs operate within a hierarchical trust model where offline root CAs delegate signing authority to online intermediate CAs, which in turn issue end-entity certificates for servers, users, clients, and devices. The CA's signing operations — governed by RFC 5280, the CA/Browser Forum Baseline Requirements, and WebTrust auditing standards — underpin the TLS handshake, code-signing pipelines, S/MIME email encryption, mutual TLS (mTLS) in service meshes, and document-signing workflows across the internet. Trust propagates via chain-of-trust verification: a relying party validates each certificate against its issuer's signature, tracing back to an implicitly trusted root embedded in OS or browser trust stores.",
+  "domain": "security",
+  "maturity": "mature",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:infra-security-and-identity",
-      "label": "Infra Security and Identity"
+      "@id": "urn:ngm:class:public-key-infrastructure",
+      "label": "Public Key Infrastructure"
     }
   ],
   "relations": {
-    "enables": [
-      {"@id": "urn:ngm:class:digital-certificate", "label": "Digital Certificate"},
-      {"@id": "urn:ngm:class:encryption", "label": "Encryption"}
+    "hasPart": [
+      {"@id": "urn:ngm:class:root-certificate", "label": "Root Certificate"},
+      {"@id": "urn:ngm:class:intermediate-certificate-authority", "label": "Intermediate Certificate Authority"},
+      {"@id": "urn:ngm:class:certificate-revocation-list", "label": "Certificate Revocation List"},
+      {"@id": "urn:ngm:class:online-certificate-status-protocol", "label": "Online Certificate Status Protocol"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:public-key-infrastructure", "label": "Public Key Infrastructure"},
+      {"@id": "urn:ngm:class:trust-hierarchy", "label": "Trust Hierarchy"}
     ],
     "requires": [
       {"@id": "urn:ngm:class:cryptography", "label": "Cryptography"},
-      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"}
+      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"},
+      {"@id": "urn:ngm:class:asymmetric-key-cryptography", "label": "Asymmetric Key Cryptography"},
+      {"@id": "urn:ngm:class:hardware-security-module", "label": "Hardware Security Module"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:digital-certificate", "label": "Digital Certificate"},
+      {"@id": "urn:ngm:class:transport-layer-security", "label": "Transport Layer Security"},
+      {"@id": "urn:ngm:class:code-signing", "label": "Code Signing"},
+      {"@id": "urn:ngm:class:encryption", "label": "Encryption"}
     ],
     "supports": [
       {"@id": "urn:ngm:class:authentication", "label": "Authentication"},
-      {"@id": "urn:ngm:class:identity-management", "label": "Identity Management"}
+      {"@id": "urn:ngm:class:identity-management", "label": "Identity Management"},
+      {"@id": "urn:ngm:class:zero-trust-security", "label": "Zero Trust Security"},
+      {"@id": "urn:ngm:class:mutual-tls", "label": "Mutual TLS"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:ca-browser-forum", "label": "CA/Browser Forum"},
+      {"@id": "urn:ngm:class:rfc-5280", "label": "RFC 5280"},
+      {"@id": "urn:ngm:class:webtrust", "label": "WebTrust"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:decentralised-identity", "label": "Decentralised Identity"},
+      {"@id": "urn:ngm:class:web-of-trust", "label": "Web of Trust"},
+      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self-Sovereign Identity"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
+      {"@id": "urn:ngm:class:verifiable-credential", "label": "Verifiable Credential"},
+      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:acme-protocol", "label": "ACME Protocol"},
+      {"@id": "urn:ngm:class:domain-validation", "label": "Domain Validation"},
+      {"@id": "urn:ngm:class:certificate-transparency", "label": "Certificate Transparency"},
+      {"@id": "urn:ngm:class:key-management", "label": "Key Management"}
     ]
   },
-  "qualityScore": 0.75,
-  "maturity": "emerging"
+  "sameAs": [
+    {"@id": "urn:ngm:class:certification-authority", "label": "Certification Authority"},
+    {"@id": "urn:ngm:class:trusted-third-party", "label": "Trusted Third Party"}
+  ],
+  "quality": 0.74,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-13T00:00:00Z",
+    "inferenceRule": "ManualEnrichment"
+  }
 }
 ```
 
-
 - ### Definition
-  - A Certificate Authority (CA) is a trusted third-party organisation that issues, signs, and manages the lifecycle of X.509 digital certificates, cryptographically binding a public key to an entity's verified identity. CAs operate within a hierarchical Public Key Infrastructure (PKI) where root CAs sign intermediate CAs, which in turn issue end-entity certificates for servers, users, or devices. The CA's signing operations underpin the TLS handshake, code-signing pipelines, S/MIME email encryption, and document signing workflows across the internet.
+  - A **Certificate Authority** (CA) is a trusted third-party organisation that issues, signs, and manages the lifecycle of [[Digital Certificate]]s, cryptographically binding a [[Public Key]] to an entity's verified identity within a [[Public Key Infrastructure]] (PKI). CAs form the root of [[Trust Hierarchy]] chains — root CAs sign intermediate CAs, which issue end-entity certificates to servers, users, or devices. This chain-of-trust model underpins all [[Transport Layer Security]] (TLS) connections, [[Code Signing]], [[S/MIME]] email encryption, and enterprise [[Identity Management]] systems, making the CA one of the most pervasive security primitives on the internet.
 
-- ### Semantic Classification
-  - owl-class:: certificate-authority:Certificate Authority
-  - owl-role:: Concept
+- ### Overview
+  - CAs exist to solve the key-distribution problem: how does a relying party know that a given [[Public Key]] genuinely belongs to a named entity? By having a widely trusted party sign the binding assertion in a [[Digital Certificate]], any system that trusts the CA can transitively trust the assertion without a direct relationship with the certificate holder.
+  - **Historical context**: The X.509 certificate format originated in the ITU-T directory standards of the late 1980s. RFC 5280 profiles X.509 v3 for internet use, defining extensions such as Subject Alternative Names, Key Usage, and Extended Key Usage. Commercial CAs such as VeriSign, DigiCert, and Comodo (now Sectigo) dominated the market through the 2000s and 2010s. Let's Encrypt, launched in 2016 by the Internet Security Research Group, transformed the landscape by providing free, automated certificates via the [[ACME Protocol]], driving near-universal HTTPS adoption.
+  - **Trust propagation**: Browsers and operating systems ship with a curated set of trusted root CA certificates. Any certificate signed by a chain leading to one of these roots is automatically trusted by the browser — this is the "Web PKI" or "public CA" system.
+  - **Private CAs**: Organisations also operate private CAs (e.g., using Microsoft Active Directory Certificate Services or HashiCorp Vault PKI) for internal infrastructure, mutual TLS in [[Service Mesh]] deployments, and employee smart-card authentication.
+
+- ### Key Components
+  - **Root Certificate Authority**
+    - The trust anchor at the top of a PKI hierarchy; its certificate is self-signed.
+    - Private key kept offline (air-gapped [[Hardware Security Module]]) to limit exposure.
+    - Distributes trust by signing intermediate CA certificates.
+    - Referenced in OS and browser root stores (e.g., Mozilla NSS, Microsoft Root Program, Apple Root Certificate Program).
+  - **Intermediate Certificate Authority**
+    - Signed by a root (or another intermediate), allowing the root to remain offline.
+    - Issues end-entity certificates to subscribers.
+    - Multiple intermediates enable policy segmentation (e.g., separate intermediates for DV, OV, EV).
+    - Cross-certifications allow trust between separate PKI hierarchies.
+  - **End-Entity Certificate (Leaf Certificate)**
+    - Binds a [[Public Key]] to a subject (domain name, email address, code-signing identity).
+    - Contains validity period (typically 90 days for public web certs; up to 397 days per CA/B Forum rules).
+    - Carries Subject Alternative Names (SANs) for multi-domain coverage.
+    - Extended Validation (EV) certificates additionally verify organisational legal identity.
+  - **Certificate Revocation List (CRL)**
+    - A signed list of serial numbers of certificates revoked before their expiry.
+    - Published at a CRL Distribution Point URL encoded in the certificate.
+    - Disadvantage: can grow large; relies on relying parties polling the URL.
+  - **Online Certificate Status Protocol (OCSP)**
+    - Lightweight alternative to CRLs; relying party queries CA's OCSP responder in real time.
+    - OCSP Stapling: the server pre-fetches and caches the OCSP response, reducing latency and privacy leakage.
+    - Must-Staple extension (TLS Feature Extension) signals that the server will always staple.
+  - **Certificate Transparency (CT)**
+    - An RFC 6962 ecosystem of public, append-only logs recording all issued certificates.
+    - Chrome and Safari require Signed Certificate Timestamps (SCTs) from at least two CT logs.
+    - Enables rapid detection of misissued or fraudulent certificates.
+    - Operated by Google (Xenon, Argon), Cloudflare (Nimbus), and others.
+  - **Registration Authority (RA)**
+    - A delegated entity that performs identity vetting on behalf of a CA without holding signing keys.
+    - Common in enterprise PKI where HR or IT performs in-person ID checks.
+  - **Validation Levels**
+    - **Domain Validation (DV)**: Proves control of the domain name only (DNS challenge or file challenge via [[ACME Protocol]]). Fast, cheap, automated.
+    - **Organisation Validation (OV)**: CA verifies legal existence of the organisation. Moderate vetting.
+    - **Extended Validation (EV)**: Strict vetting; historically triggered green-bar UI in browsers (now deprecated in most browsers). Mainly used for legal assurance.
+
+- ### Mechanisms
+  - **Certificate Issuance Workflow**
+    - Subscriber generates a key pair; private key stays on subscriber's system.
+    - Subscriber creates a Certificate Signing Request (CSR) containing the public key and subject information, signed by the private key to prove possession.
+    - CA verifies identity per the applicable validation level, then signs the CSR to produce the certificate.
+    - Signed certificate delivered to subscriber and optionally logged to [[Certificate Transparency]] logs.
+  - **Chain-of-Trust Verification**
+    - Relying party receives the leaf certificate plus any intermediate certificates.
+    - Software builds a path from leaf to a trusted root, verifying each signature and checking validity period, revocation status, and policy constraints (Basic Constraints, Name Constraints extensions).
+    - Implemented in TLS libraries such as BoringSSL (Chrome), OpenSSL, NSS (Firefox), and SChannel (Windows).
+  - **Key Ceremony**
+    - Formal, audited event at which a new CA key pair is generated.
+    - Requires multiple witnesses, video recording, tamper-evident hardware.
+    - Private key generated inside an HSM; key shares may be split under Shamir Secret Sharing.
+  - **ACME Protocol Automation**
+    - RFC 8555 standardises the Automatic Certificate Management Environment protocol.
+    - Clients (Certbot, acme.sh, Caddy) automatically prove domain control and obtain/renew certificates without human intervention.
+    - Enables 90-day cert lifetimes at scale; industry pressure towards 47-day lifetimes from 2026 CA/B Forum ballots.
+  - **mTLS and Service Identity**
+    - In [[Zero Trust Security]] and [[Service Mesh]] architectures, client certificates issued by a private CA authenticate microservices to each other.
+    - [[SPIFFE]] (Secure Production Identity Framework for Everyone) and [[SPIRE]] provide short-lived SVID certificates for workloads, integrating with service meshes such as Istio and Linkerd.
+
+- ### Applications and Use Cases
+  - **HTTPS / Web TLS**: Every browser padlock relies on a CA-issued certificate. Public CAs in the Web PKI issue hundreds of millions of certificates.
+  - **Code Signing**: Software publishers sign executables and packages (Microsoft Authenticode, Apple Notarisation, macOS Gatekeeper) using CA-issued certificates; OS validates before execution.
+  - **Email Security**: S/MIME certificates issued by CAs enable encrypted and digitally signed email, supported natively in Outlook, Apple Mail, and Thunderbird.
+  - **VPN and Network Access Control**: EAP-TLS authentication for 802.1X Wi-Fi and corporate VPN uses certificates issued by enterprise CAs.
+  - **Smart Card / PIV Authentication**: US government PIV cards and Common Access Cards embed certificates issued by DoD or GSA CAs for logical and physical access.
+  - **Document Signing**: Adobe Acrobat Trust List (AATL) lists CAs whose certificates are trusted for legally binding PDF signatures; EU qualified trust service providers (QTSPs) operate under eIDAS regulation.
+  - **IoT Device Identity**: Manufacturer-issued device certificates bootstrap device authentication to cloud platforms (AWS IoT, Azure IoT Hub); roots of trust embedded at manufacturing time.
+  - **Kubernetes and Container Security**: Internal Kubernetes CAs sign kubelet and API-server certificates; tools such as cert-manager automate certificate lifecycle within clusters.
+  - **SSH Certificate Authority**: OpenSSH supports CA-signed host and user certificates as an alternative to authorised_keys files, simplifying management at scale.
 
 - ### Relationships
-  - enables [[Digital Certificate]]
-  - enables [[Encryption]]
-  - requires [[Cryptography]]
-  - requires [[Digital Signature]]
-  - supports [[Authentication]]
-  - supports [[Identity Management]]
+  - partOf:: [[Public Key Infrastructure]]
+  - partOf:: [[Trust Hierarchy]]
+  - hasPart:: [[Root Certificate]]
+  - hasPart:: [[Intermediate Certificate Authority]]
+  - hasPart:: [[Certificate Revocation List]]
+  - hasPart:: [[Online Certificate Status Protocol]]
+  - requires:: [[Cryptography]]
+  - requires:: [[Digital Signature]]
+  - requires:: [[Asymmetric Key Cryptography]]
+  - requires:: [[Hardware Security Module]]
+  - enables:: [[Digital Certificate]]
+  - enables:: [[Transport Layer Security]]
+  - enables:: [[Code Signing]]
+  - enables:: [[Encryption]]
+  - supports:: [[Authentication]]
+  - supports:: [[Identity Management]]
+  - supports:: [[Zero Trust Security]]
+  - supports:: [[Mutual TLS]]
+  - standardizedBy:: [[CA/Browser Forum]]
+  - standardizedBy:: [[RFC 5280]]
+  - standardizedBy:: [[WebTrust]]
+  - contrastsWith:: [[Decentralised Identity]]
+  - contrastsWith:: [[Web of Trust]]
+  - contrastsWith:: [[Self-Sovereign Identity]]
+  - bridges-to:: [[Blockchain]]
+  - bridges-to:: [[Verifiable Credential]]
+  - bridges-to:: [[Zero-Knowledge Proof]]
+  - relatedTo:: [[ACME Protocol]]
+  - relatedTo:: [[Domain Validation]]
+  - relatedTo:: [[Certificate Transparency]]
+  - relatedTo:: [[Key Management]]
 
-- ### Content
-  - A Certificate Authority operates as the foundational trust anchor within a PKI hierarchy. Root CA certificates are distributed out-of-band, embedded in operating systems and browser trust stores, giving them implicit trust. Intermediate CAs are signed by the root and can in turn sign end-entity certificates, limiting exposure of the root private key. The X.509 standard, defined in ITU-T recommendation X.509 and profiled for the internet by RFC 5280, specifies the certificate structure including subject, issuer, validity period, public key, and extensions such as Subject Alternative Names and Key Usage constraints.
-  - Certificate revocation is handled via Certificate Revocation Lists (CRLs) or the Online Certificate Status Protocol (OCSP), allowing a CA to invalidate a certificate before its stated expiry. The CA/Browser Forum Baseline Requirements govern public trust CAs and impose policies on domain validation (DV), organisation validation (OV), and extended validation (EV) issuance procedures. Let's Encrypt, operated by the Internet Security Research Group, popularised automated certificate issuance and renewal via the ACME protocol, dramatically lowering the barrier to HTTPS deployment.
-  - Beyond web TLS, CAs are integral to Decentralised Identity systems, code signing for software supply chains, smart card authentication (e.g., PIV), and mutual TLS (mTLS) in service meshes. The concept of Cryptography underpinning CA operations includes asymmetric key pairs (RSA, ECDSA, EdDSA) and hash algorithms (SHA-256, SHA-384) for the signing operations.
+- ### Standards and Governance
+  - **RFC 5280** — Internet X.509 PKI Certificate and CRL Profile; defines certificate structure and path validation algorithm.
+  - **RFC 8555** — Automatic Certificate Management Environment (ACME) protocol for automated issuance.
+  - **RFC 6962 / RFC 9162** — Certificate Transparency v1 and v2; append-only log requirements.
+  - **CA/Browser Forum Baseline Requirements** — Policy rules for public TLS CAs: maximum validity periods, validation procedures, key algorithm requirements.
+  - **ETSI EN 319 401 / 411** — European standards for trust service providers under [[eIDAS]] regulation.
+  - **FIPS 140-2 / 140-3** — US federal standards governing [[Hardware Security Module]] approval for key protection.
+  - **WebTrust for CAs** — Annual audit programme conducted by licensed CPA firms verifying CA compliance; required for inclusion in major root stores.
+  - **Mozilla Root Store Policy** — Mozilla publishes explicit inclusion criteria; non-compliance has led to distrust events (e.g., Symantec 2018, TrustCor 2022).
+  - **NIST SP 800-57** — Key management recommendations covering CA key lifecycle.
+  - **SPIFFE (CNCF)** — Standard for workload identity in cloud-native environments, extending CA concepts to short-lived programmatic identities.
+
+- ### Security Considerations and Risks
+  - **CA Compromise**: If a CA's signing key is stolen, attackers can mint fraudulent certificates trusted by all relying parties. Notable incidents include DigiNotar (2011), Comodo (2011), and the Turkish TURKTRUST incident (2013).
+  - **Misissuance**: CAs occasionally issue certificates violating policy (wrong SANs, weak keys). [[Certificate Transparency]] enables rapid detection and accountability.
+  - **Sunset of SHA-1**: The industry migrated from SHA-1 to SHA-256 signatures by 2017 following Shattered and other attacks on the underlying hash function.
+  - **Post-Quantum Migration**: Current CA signing algorithms (RSA, ECDSA) are vulnerable to Shor's algorithm on sufficiently powerful quantum computers. NIST's post-quantum cryptography standards (ML-KEM, ML-DSA — fka Kyber, Dilithium) are being integrated into PKI. Hybrid certificates combining classical and PQ algorithms are under active standardisation.
+  - **Short-lived Certificates**: Moving to 47-day (and eventually shorter) lifetimes reduces the window of exposure from compromised or misissued certificates, at the cost of requiring robust automation.
+  - **Single Point of Trust**: The hierarchical model concentrates trust in a small number of root CAs. [[Decentralised Identity]] and [[Blockchain]]-anchored certificate alternatives aim to distribute this trust.
+
+- ### Contrast with Alternative Trust Models
+  - **[[Web of Trust]]** (PGP/OpenPGP): Peer-to-peer signing network; no single root authority. Each user decides whom to trust. Does not scale to anonymous internet commerce.
+  - **[[Decentralised Identity]] / [[Self-Sovereign Identity]]**: Leverages [[Blockchain]] or distributed ledgers to anchor identity assertions without a central CA. Standards include W3C DID Core and Verifiable Credentials Data Model.
+  - **[[Verifiable Credential]]s (W3C)**: CAs can act as issuers in the VC ecosystem, bridging traditional PKI trust into decentralised identity flows.
+  - **[[Zero-Knowledge Proof]]s**: Emerging approaches allow proving possession of a valid certificate attribute without revealing the underlying certificate, enhancing privacy beyond classical CA disclosure.
+  - **Blockchain Certificate Transparency variants**: Namecoin, EthDNS, and Ethereum Name Service (ENS) have explored blockchain-anchored naming to reduce reliance on CAs for domain-to-key binding.
 
 - ### Provenance
-  - sources::
+  - sources:: RFC 5280; RFC 8555; CA/Browser Forum Baseline Requirements; Mozilla Root Store Policy; NIST SP 800-57; ETSI EN 319 401; CNCF SPIFFE specification
+  - updated:: 2026-06-13
   - migration-date:: 2026-05-19T00:00:00Z

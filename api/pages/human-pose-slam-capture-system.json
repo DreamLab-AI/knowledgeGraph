@@ -4,27 +4,44 @@
   "slug": "human-pose-slam-capture-system",
   "public": true,
   "classIri": "urn:ngm:class:human-pose-slam-capture-system",
-  "domain": "robotics",
-  "definition": "Human tracking and SLAM (Simultaneous Localisation and Mapping) capture is the combined process of localising and mapping an environment while concurrently tracking human body pose, motion, and spatial position. Applied in XR headsets, autonomous robots, and motion capture rigs, it fuses depth sensing, inertial data, and computer vision to produce real-time skeletal and spatial models used for avatar animation, scene reconstruction, and safety-aware robot navigation.",
+  "domain": "spatial-computing",
+  "definition": "A Human Pose SLAM Capture System is an integrated sensing and computation pipeline that simultaneously localises a device within an unknown environment (SLAM) while continuously tracking the full-body skeletal pose of one or more human occupants in real time. It fuses data from depth cameras, inertial measurement units, and RGB imagery through probabilistic state estimation \u2014 typically particle filters or factor-graph optimisers \u2014 to produce a joint world model of both the static scene geometry and dynamic human kinematics. The output drives applications including markerless motion capture, avatar animation in extended reality, safety-aware robot navigation around people, and persistent spatial AI anchoring. The discipline sits at the intersection of computer vision, human-computer interaction, and spatial computing, with maturing industrial deployments in XR headsets, telepresence rigs, and autonomous vehicle pedestrian tracking.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:robo-perception",
-      "label": "Perception and Sensing"
-    },
-    {
-      "id": "urn:ngm:class:sensor-technology",
-      "label": "Sensor Technology"
+      "id": "urn:ngm:class:simultaneous-localisation-and-mapping",
+      "label": "Simultaneous Localisation and Mapping"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.72,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:skeletal-tracking",
+        "label": "Skeletal Tracking"
+      },
+      {
+        "id": "urn:ngm:class:scene-reconstruction",
+        "label": "Scene Reconstruction"
+      },
+      {
+        "id": "urn:ngm:class:loop-closure-detection",
+        "label": "Loop Closure Detection"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:computer-vision",
         "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:real-time-processing",
+        "label": "Real-Time Processing"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
       }
     ],
     "enables": [
@@ -35,12 +52,51 @@
       {
         "id": "urn:ngm:class:motion-capture",
         "label": "Motion Capture"
+      },
+      {
+        "id": "urn:ngm:class:avatar-animation",
+        "label": "Avatar Animation"
+      },
+      {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human-Robot Interaction"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:neural-network-inference",
+        "label": "Neural Network Inference"
+      },
+      {
+        "id": "urn:ngm:class:point-cloud-processing",
+        "label": "Point Cloud Processing"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:marker-based-motion-capture",
+        "label": "Marker-Based Motion Capture"
+      },
+      {
+        "id": "urn:ngm:class:lidar-slam",
+        "label": "LiDAR SLAM"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:metaverse-presence",
+        "label": "Metaverse Presence"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:slam",
@@ -53,12 +109,37 @@
       {
         "id": "urn:ngm:class:pose-estimation",
         "label": "Pose Estimation"
+      },
+      {
+        "id": "urn:ngm:class:inertial-measurement-unit",
+        "label": "Inertial Measurement Unit"
+      },
+      {
+        "id": "urn:ngm:class:rgb-d-camera",
+        "label": "RGB-D Camera"
+      },
+      {
+        "id": "urn:ngm:class:factor-graph-optimisation",
+        "label": "Factor Graph Optimisation"
       }
     ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:body-area-network",
+        "label": "Body Area Network"
+      },
+      {
+        "id": "urn:ngm:class:spatial-anchoring",
+        "label": "Spatial Anchoring"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": []

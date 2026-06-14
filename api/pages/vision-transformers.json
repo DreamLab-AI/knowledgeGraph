@@ -4,7 +4,7 @@
   "slug": "vision-transformers",
   "public": true,
   "classIri": "urn:ngm:class:vision-transformers",
-  "domain": "computer-vision",
+  "domain": "ai",
   "definition": "Transformer-based neural network architectures applied to images by splitting an image into patches and treating the patches as a sequence of tokens for self-attention.",
   "subClassOf": [
     {

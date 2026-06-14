@@ -4,13 +4,9 @@
   "slug": "domain-adaptation",
   "public": true,
   "classIri": "urn:ngm:class:domain-adaptation",
-  "domain": "artificial-intelligence",
-  "definition": "Domain adaptation is a sub-field of transfer learning concerned with reducing the performance degradation that occurs when a model trained on a labelled source domain is applied to a target domain whose data distribution differs. Adaptation methods range from feature alignment (learning domain-invariant representations via adversarial training or maximum mean discrepancy minimisation) to instance re-weighting and self-training on unlabelled target data. It is applied extensively in NLP, computer vision, and speech recognition when labelled target data is scarce or costly to acquire.",
+  "domain": "machine-learning",
+  "definition": "Domain adaptation is a sub-field of transfer learning that addresses the domain shift problem: a model trained on a labelled source distribution degrades when applied to a target distribution whose marginal or conditional statistics differ. Methods fall into feature-alignment approaches (learning domain-invariant representations via adversarial training, maximum mean discrepancy minimisation, or optimal transport), instance re-weighting schemes that correct for covariate shift, and self-training or pseudo-labelling strategies that exploit unlabelled target data. It spans unsupervised, semi-supervised, and multi-source settings and underpins practical deployment of models in NLP, computer vision, speech recognition, and scientific computing wherever labelled target data is scarce or costly.",
   "subClassOf": [
-    {
-      "id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique"
-    },
     {
       "id": "urn:ngm:class:transfer-learning",
       "label": "Transfer Learning"
@@ -18,41 +14,126 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "emerging",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:pre-training",
-        "label": "Pre Training"
-      },
-      {
         "id": "urn:ngm:class:training-data",
         "label": "Training Data"
+      },
+      {
+        "id": "urn:ngm:class:source-domain",
+        "label": "Source Domain"
+      },
+      {
+        "id": "urn:ngm:class:target-domain",
+        "label": "Target Domain"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:fine-tuning",
         "label": "Fine Tuning"
+      },
+      {
+        "id": "urn:ngm:class:zero-shot-learning",
+        "label": "Zero Shot Learning"
+      },
+      {
+        "id": "urn:ngm:class:low-resource-nlp",
+        "label": "Low Resource NLP"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:pre-training",
+        "label": "Pre Training"
+      },
+      {
+        "id": "urn:ngm:class:representation-learning",
+        "label": "Representation Learning"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:domain-generalisation",
+        "label": "Domain Generalisation"
+      },
+      {
+        "id": "urn:ngm:class:multi-task-learning",
+        "label": "Multi Task Learning"
+      },
+      {
+        "id": "urn:ngm:class:meta-learning",
+        "label": "Meta Learning"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:continual-learning",
+        "label": "Continual Learning"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:adversarial-training",
+        "label": "Adversarial Training"
+      },
+      {
+        "id": "urn:ngm:class:optimal-transport",
+        "label": "Optimal Transport"
+      },
+      {
+        "id": "urn:ngm:class:self-training",
+        "label": "Self Training"
+      },
+      {
+        "id": "urn:ngm:class:pseudo-labelling",
+        "label": "Pseudo Labelling"
+      },
+      {
+        "id": "urn:ngm:class:maximum-mean-discrepancy",
+        "label": "Maximum Mean Discrepancy"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:knowledge-distillation",
         "label": "Knowledge Distillation"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning"
+        "id": "urn:ngm:class:covariate-shift",
+        "label": "Covariate Shift"
+      },
+      {
+        "id": "urn:ngm:class:concept-drift",
+        "label": "Concept Drift"
+      },
+      {
+        "id": "urn:ngm:class:distribution-shift",
+        "label": "Distribution Shift"
+      },
+      {
+        "id": "urn:ngm:class:parameter-efficient-fine-tuning",
+        "label": "Parameter Efficient Fine Tuning"
       }
     ]
   },

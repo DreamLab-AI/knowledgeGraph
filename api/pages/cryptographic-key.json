@@ -4,7 +4,7 @@
   "slug": "cryptographic-key",
   "public": true,
   "classIri": "urn:ngm:class:cryptographic-key",
-  "domain": "cryptographic",
+  "domain": "security",
   "definition": "A piece of secret or public information that parameterises a cryptographic algorithm, determining how data is encrypted, decrypted or signed. Keys are the inputs that make cryptographic operations specific and reversible only to authorised parties.",
   "subClassOf": [
     {

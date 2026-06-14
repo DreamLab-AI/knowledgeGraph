@@ -5,54 +5,149 @@
   "public": true,
   "classIri": "urn:ngm:class:neural-network-latent-space",
   "domain": "artificial-intelligence",
-  "definition": "A latent space is a compressed, high-dimensional mathematical representation learned by a neural network that encodes the underlying structure of training data. Generative models such as variational autoencoders and diffusion models use latent spaces to interpolate between data points and sample novel outputs. The geometry of the latent space reflects semantic relationships: nearby points correspond to perceptually or semantically similar entities, enabling controlled generation through vector arithmetic.",
+  "definition": "A neural network latent space is a continuous, lower-dimensional manifold that a neural network learns to construct from high-dimensional input data, representing the data's underlying generative factors as geometric relationships between points. Encoder networks compress inputs into latent vectors that capture semantically meaningful structure, while decoder networks reconstruct outputs from those vectors; the resulting geometry encodes similarity such that interpolation along geodesics yields semantically coherent transitions. Architectures including variational autoencoders, generative adversarial networks, and diffusion models exploit structured latent spaces to enable sampling, conditional generation, and disentangled attribute control through vector arithmetic operations.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-technique",
       "label": "AI Technique"
-    },
-    {
-      "id": "urn:ngm:class:generative-model",
-      "label": "Generative Model"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:latent-vector",
+        "label": "Latent Vector"
+      },
+      {
+        "id": "urn:ngm:class:encoder-network",
+        "label": "Encoder Network"
+      },
+      {
+        "id": "urn:ngm:class:decoder-network",
+        "label": "Decoder Network"
+      },
+      {
+        "id": "urn:ngm:class:latent-code",
+        "label": "Latent Code"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:encoder-decoder-architecture",
+        "label": "Encoder Decoder Architecture"
+      },
+      {
+        "id": "urn:ngm:class:dimensionality-reduction",
+        "label": "Dimensionality Reduction"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:generative-ai",
         "label": "Generative AI"
       },
       {
-        "id": "urn:ngm:class:variational-autoencoders",
-        "label": "Variational Autoencoders"
+        "id": "urn:ngm:class:image-synthesis",
+        "label": "Image Synthesis"
+      },
+      {
+        "id": "urn:ngm:class:text-to-image-generation",
+        "label": "Text-to-Image Generation"
+      },
+      {
+        "id": "urn:ngm:class:disentangled-representation",
+        "label": "Disentangled Representation"
+      },
+      {
+        "id": "urn:ngm:class:style-transfer",
+        "label": "Style Transfer"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [
+    "dependsOn": [
       {
-        "id": "urn:ngm:class:encoder-decoder-architecture",
-        "label": "Encoder Decoder Architecture"
+        "id": "urn:ngm:class:deep-neural-network",
+        "label": "Deep Neural Network"
       },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:variational-autoencoders",
+        "label": "Variational Autoencoders"
+      },
+      {
+        "id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "id": "urn:ngm:class:generative-adversarial-network",
+        "label": "Generative Adversarial Network"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
+      },
+      {
+        "id": "urn:ngm:class:explicit-knowledge-representation",
+        "label": "Explicit Knowledge Representation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:spatial-data-representation",
+        "label": "Spatial Data Representation"
+      },
+      {
+        "id": "urn:ngm:class:3d-scene-understanding",
+        "label": "3D Scene Understanding"
+      }
+    ],
+    "uses": [
       {
         "id": "urn:ngm:class:embedding-model",
         "label": "Embedding Model"
+      },
+      {
+        "id": "urn:ngm:class:variational-inference",
+        "label": "Variational Inference"
+      },
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
       }
     ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:generative-model",
+        "label": "Generative Model"
+      },
+      {
+        "id": "urn:ngm:class:representation-learning",
+        "label": "Representation Learning"
+      }
+    ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:diffusion-model",
-        "label": "Diffusion Model"
+        "id": "urn:ngm:class:semantic-embedding",
+        "label": "Semantic Embedding"
+      },
+      {
+        "id": "urn:ngm:class:principal-component-analysis",
+        "label": "Principal Component Analysis"
+      },
+      {
+        "id": "urn:ngm:class:manifold-hypothesis",
+        "label": "Manifold Hypothesis"
       }
     ]
   },

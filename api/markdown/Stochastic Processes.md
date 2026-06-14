@@ -67,7 +67,7 @@ public:: true
   "@type": "Class",
   "label": "Stochastic Processes",
   "definition": "A stochastic process is a collection of random variables indexed by time or another parameter, used to model systems that evolve with randomness. Examples include random walks, Markov chains, Poisson processes and Brownian motion, each characterised by how its future behaviour depends on its present and past states. Stochastic processes are foundational in probability theory and are applied across physics, biology, queueing theory and quantitative finance.",
-  "domain": "stochastic-processes",
+  "domain": "machine-learning",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

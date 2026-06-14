@@ -55,7 +55,7 @@ public:: true
   "@type": "Class",
   "label": "Graph Neural Networks",
   "definition": "A family of neural network architectures that operate directly on graph-structured data, computing node, edge or graph representations by exchanging information along edges.",
-  "domain": "deep-learning",
+  "domain": "machine-learning",
   "maturity": "growing",
   "qualityScore": 0.7,
   "subClassOf": [

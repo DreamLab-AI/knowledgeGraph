@@ -4,7 +4,7 @@
   "slug": "validation-rules",
   "public": true,
   "classIri": "urn:ngm:class:validation-rules",
-  "domain": "general",
+  "domain": "data",
   "definition": "Defined constraints that data or input must satisfy to be accepted, used to enforce correctness, consistency and integrity before processing or storage.",
   "subClassOf": [
     {

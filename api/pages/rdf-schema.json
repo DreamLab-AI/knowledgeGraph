@@ -4,7 +4,7 @@
   "slug": "rdf-schema",
   "public": true,
   "classIri": "urn:ngm:class:rdf-schema",
-  "domain": "general",
+  "domain": "standards",
   "definition": "A World Wide Web Consortium vocabulary that extends the Resource Description Framework with the means to describe classes, properties and their hierarchies. It provides a lightweight modelling layer for typing resources and defining property domains and ranges.",
   "subClassOf": [
     {

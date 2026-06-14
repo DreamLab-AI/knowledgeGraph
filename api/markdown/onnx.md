@@ -1,11 +1,103 @@
 - ### Definition
-  - [[ONNX]] is an [[Interoperability Standard]] and [[Open Standard]] format for serialising neural network computation graphs, allowing models trained in any major [[Deep Learning Framework]] to be served by an [[Inference Engine]] on heterogeneous hardware without framework-specific runtime dependencies.
+  - [[ONNX]] (Open Neural Network Exchange) is a vendor-neutral [[Interoperability Standard]] and file format for serialising [[Neural Network]] computation graphs, enabling models trained in any major [[Deep Learning Framework]] — such as [[PyTorch]], [[TensorFlow]], or [[MXNet]] — to be executed by any compatible [[Inference Engine]] on heterogeneous hardware without framework-specific runtime dependencies. The format uses [[Protocol Buffers]] for binary serialisation of directed acyclic graphs composed of typed operators, tensor weights, and metadata, providing a common [[Model Serialisation]] substrate that decouples training environments from deployment targets.
+
+- ### Overview
+  - ONNX was co-created by Meta (then Facebook) and Microsoft in September 2017 as a direct response to deep learning framework fragmentation, where models trained in Caffe2 or [[PyTorch]] could not easily cross into [[TensorFlow]] Serving or hardware-vendor runtimes.
+  - [[Linux Foundation AI and Data]] adopted ONNX governance in 2019, transforming it from a bilateral collaboration into a community-stewarded [[Open Standard]] with broad industry participation.
+  - The central design principle is a portable [[Computation Graph]] IR: nodes are named typed operators (defined in the [[ONNX Operator Set]]), edges are typed tensors, and graph inputs/outputs have declared shapes and data types.
+  - The versioned opset scheme (opset 1 through 21+ as of 2025) allows backward-compatible evolution of supported operations, so older models remain valid as new operators are added.
+  - ONNX solves the "train anywhere, deploy anywhere" problem: research teams train in flexible Python-based frameworks while production infrastructure uses optimised, hardware-specific runtimes without any retraining penalty.
+  - The ecosystem is among the most widely adopted ML interchange formats, supported by virtually every major hardware vendor (NVIDIA, Intel, Qualcomm, AMD, ARM, Apple) and cloud ML platform.
+
+- ### Key Components
+  - **ONNX Format Specification**
+    - Binary representation using [[Protocol Buffers]] (`.onnx` files); the schema is defined in `onnx.proto`.
+    - A graph is composed of nodes (operators), value infos (typed tensor edges), initialisers (weights/constants), inputs, outputs, and metadata properties.
+    - Supports scalar, tensor, sequence, map, optional, and sparse tensor types.
+    - Dynamic shapes are expressed via symbolic dimension parameters, essential for variable-length inputs in [[Transformer Architecture]] models.
+  - **ONNX Operator Set (Opset)**
+    - Each opset release adds or updates operators; models declare which opset version they target.
+    - Standard domains: `ai.onnx` (core ops), `ai.onnx.ml` (classical ML ops such as SVMs, tree ensembles), `com.microsoft` (extended ops used by ONNX Runtime).
+    - Operators include standard [[Neural Network]] primitives (Conv, Gemm, MatMul, Relu, Softmax), control flow (If, Loop, Scan), data manipulation (Reshape, Gather, Concat), and normalisation ops.
+  - **ONNX Runtime (ORT)**
+    - Production-grade [[Inference Engine]] released by Microsoft in 2019; cross-platform (Linux, Windows, macOS, Android, iOS, WASM).
+    - Pluggable Execution Providers (EPs) dispatch operators to hardware backends: CUDA, TensorRT, DirectML, CoreML, OpenVINO, ROCm, QNN (Qualcomm), NNAPI, and CPU.
+    - Graph optimisation pipeline applies constant folding, operator fusion, layout transformation, and memory planning before execution.
+    - ORT GenAI extends the runtime to support generative [[Large Language Model]] inference with KV-cache management, beam search, and token sampling.
+  - **ONNX Model Zoo**
+    - Curated repository of pretrained ONNX models (image classification, object detection, NLP, speech) for benchmarking and drop-in deployment.
+    - Models include ResNet, EfficientNet, BERT, GPT-2, Whisper, and Stable Diffusion variants exported to ONNX.
+
+- ### Mechanisms
+  - **Export Pipeline**
+    - Framework-specific exporters (`torch.onnx.export`, `tf2onnx`, `sklearn-onnx`) trace or script models to capture the computation graph and operator calls, then serialise them as ONNX graphs.
+    - Shape inference and validation utilities (`onnx.checker`, `onnx.shape_inference`) verify model correctness post-export.
+  - **[[Graph Optimisation]]**
+    - Level 1: constant folding, redundant node elimination.
+    - Level 2: node fusions (e.g. Conv+BN+Relu → fused op), attention pattern fusion for [[Transformer Architecture]] models.
+    - Level 3: layout optimisation (NCHW ↔ NHWC transposes absorbed), memory-aware reuse.
+  - **[[Quantisation]]**
+    - Post-training quantisation (PTQ) to INT8 or INT4 reduces model size and latency on CPU and [[Neural Processing Unit]] targets.
+    - Quantisation-aware training (QAT) export preserves calibration metadata in the ONNX graph for higher accuracy at lower precision.
+    - Enables deployment on edge devices (Qualcomm Snapdragon NPU, Intel Arc, Apple ANE) via [[Edge Inference]] runtimes.
+  - **Hardware Dispatch via Execution Providers**
+    - At runtime, ORT's EP selection algorithm assigns each node to the highest-priority EP that can handle it; unassigned nodes fall back to CPU.
+    - Allows heterogeneous execution: attention heads on GPU (TensorRT), embedding lookup on CPU, decode step on NPU — within a single inference call.
+
+- ### Applications
+  - **Enterprise ML Inference**
+    - Models trained in [[PyTorch]] on research clusters are exported to ONNX and served via [[ONNX Runtime]] in Azure ML, SageMaker, or on-premise inference servers, achieving framework-independent deployment pipelines.
+    - Embedded in Windows AI Platform, Xbox inference stack, and Microsoft Office AI features.
+  - **Optimum & Hugging Face**
+    - The Hugging Face `optimum` library wraps ORT for high-performance [[Transformer Architecture]] inference; users export BERT, T5, Whisper, and LLM variants with one-line API calls.
+    - ONNX export is a standard step in [[MLOps]] pipelines for reproducible model delivery.
+  - **On-Device and Edge AI**
+    - [[Edge Inference]] on smartphones, laptops, and embedded systems uses quantised ONNX models served by ORT with QNN or CoreML EPs targeting [[Neural Processing Unit]] silicon.
+    - Windows Copilot+ PC initiative mandates ONNX/ORT as the standardised runtime for NPU workloads across AMD, Intel, and Qualcomm Snapdragon X platforms.
+  - **Generative AI**
+    - ORT GenAI enables efficient [[Large Language Model]] inference for models such as Phi-3, Llama 2/3, Mistral, and Gemma exported to ONNX quantised format.
+    - [[Knowledge Distillation]] pipelines output distilled student models in ONNX for deployment without requiring the original training framework.
+  - **Classical ML Interoperability**
+    - `ai.onnx.ml` opset supports decision trees, random forests, gradient boosted machines, and linear models, enabling scikit-learn or XGBoost models to be deployed via ORT without Python runtime dependencies.
 
 - ### Relationships
-  - ONNX enables portable [[Model Deployment]] via the [[ONNX Runtime]] and standardised [[ONNX Operator Set]], supports [[Model Optimization]] pipelines (quantisation, graph fusion) and [[Hardware Acceleration]] targeting CPUs, GPUs, and specialised accelerators, and sits alongside other [[Deep Learning Framework]] ecosystems.
+  - hasPart:: [[ONNX Operator Set]]
+  - hasPart:: [[ONNX Runtime]]
+  - hasPart:: [[ONNX Model Zoo]]
+  - requires:: [[Protocol Buffers]]
+  - requires:: [[Computation Graph]]
+  - enables:: [[Model Deployment]]
+  - enables:: [[Hardware Acceleration]]
+  - enables:: [[Model Optimization]]
+  - enables:: [[Edge Inference]]
+  - implements:: [[Open Standard]]
+  - uses:: [[Deep Learning Framework]]
+  - uses:: [[Quantisation]]
+  - uses:: [[Graph Optimisation]]
+  - supports:: [[Neural Network]]
+  - supports:: [[Large Language Model]]
+  - supports:: [[Transformer Architecture]]
+  - contrastsWith:: [[TensorFlow SavedModel]]
+  - contrastsWith:: [[TorchScript]]
+  - bridges-to:: [[Neural Processing Unit]]
+  - bridges-to:: [[MLOps]]
+  - relatedTo:: [[Model Serialisation]]
+  - relatedTo:: [[Inference Engine]]
+  - relatedTo:: [[Knowledge Distillation]]
 
-- ### Content
-  - ONNX was created jointly by Facebook (Meta) and Microsoft in September 2017 as a response to the fragmentation of the deep learning framework ecosystem, where models trained in Caffe2 or PyTorch could not easily be deployed on TensorFlow Serving or hardware-vendor-optimised runtimes. The Linux Foundation AI and Data project adopted ONNX governance in 2019. The ONNX operator set specification (opset) versioned scheme was introduced to allow backward-compatible evolution of supported operations, with opset 20+ as of 2024.
-  - An ONNX model is a Protocol Buffer-serialised computation graph consisting of nodes (operators), tensors (edges), initialisers (weights), and metadata. Operator definitions cover mathematical operations (convolution, matrix multiply, activation functions), control flow (if/loop), and data manipulation. The ONNX Runtime (ORT), released by Microsoft in 2019, executes ONNX graphs with hardware-specific execution providers: CUDA, TensorRT, DirectML, CoreML, OpenVINO, ROCm, and others. Graph optimisation passes (constant folding, operator fusion, layout transformation) are applied before execution to maximise throughput.
-  - ONNX solves the "train anywhere, deploy anywhere" problem critical for production ML systems. In enterprise settings, models are frequently trained in research frameworks (PyTorch) then exported to ONNX for deployment in latency-sensitive production environments with hardware-vendor-optimised runtimes. ONNX Runtime is embedded in Windows (AI Platform), Xbox, Azure ML, and Hugging Face's Optimum library. It enables model quantisation to INT8/INT4 for edge deployment and is a standard export target for model compression pipelines using pruning and knowledge distillation.
-  - As of 2024–2025, ONNX opset 21 supports dynamic shapes, sparse tensors, and sequence types needed for large language model deployment. ONNX Runtime GenAI extends ORT to support generative model inference (KV-cache, beam search, token sampling) for LLMs such as Phi-3 and Llama. The ecosystem has also expanded to support quantised models (ONNX quantised format) that target neural processing units (NPUs) in client devices (Qualcomm Snapdragon, Intel Arc, Apple ANE), positioning ONNX as the interchange format for the emerging on-device AI inference market.
+- ### Standards & Context
+  - ONNX is governed by the [[Linux Foundation AI and Data]] (LF AI & Data) foundation, with technical steering provided by representatives from Microsoft, Meta, NVIDIA, Intel, AMD, Qualcomm, Hugging Face, and others.
+  - The specification is versioned via opset numbers (current: opset 21+); models declare `opset_import` to pin operator semantics, ensuring reproducible inference across runtime versions.
+  - ONNX does not define a training standard — it is purely an inference IR; training graphs (autograd, optimiser state) are out of scope by design.
+  - Complementary standards and tools:
+    - [[Flatbuffers]]-based `.ort` format: ORT-specific compact serialisation for embedded deployments.
+    - [[TensorFlow Lite]] (TFLite): Google's comparable edge inference format, convertible to/from ONNX via `onnx-tf`.
+    - [[CoreML]] format (Apple): macOS/iOS native format; ORT CoreML EP bridges ONNX graphs to CoreML execution.
+    - [[OpenVINO]] (Intel): accepts ONNX models directly via its model conversion API.
+    - [[TensorRT]] (NVIDIA): ORT TensorRT EP converts ONNX subgraphs to TRT engines for GPU acceleration.
+  - The [[ONNX Operator Set]] specification is publicly available at `github.com/onnx/onnx` under the Apache 2.0 licence; operator tests form part of the compliance suite for runtime implementers.
+  - ONNX interoperates with [[MLOps]] platforms: model registries (MLflow, Azure ML Model Registry) store models in ONNX format and track opset versions as model metadata.
+
+- ### Provenance
+  - sources:: ONNX specification repository (github.com/onnx/onnx), Microsoft ONNX Runtime documentation, Linux Foundation AI & Data ONNX project page, Hugging Face Optimum documentation, established training knowledge through January 2026.
+  - updated:: 2026-06-13

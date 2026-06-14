@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:blockchain-security",
   "domain": "blockchain",
-  "definition": "Blockchain security is the multidisciplinary field concerned with protecting distributed ledger systems against attacks on their consensus mechanisms, smart contract logic, cryptographic primitives, and network topology, while preserving the properties of immutability, censorship resistance, and trustless operation. It encompasses threat modelling, formal verification of on-chain code, cryptographic auditing, economic game-theory analysis to prevent incentive manipulation, and incident response for decentralised protocols. The discipline is complicated by the public, permissionless nature of most blockchains, where adversaries can observe and interact with the system before attacking.",
+  "definition": "Blockchain security is the multidisciplinary field concerned with protecting distributed ledger systems against attacks on their consensus mechanisms, smart contract logic, cryptographic primitives, and network topology, while preserving the properties of immutability, censorship resistance, and trustless operation. It encompasses threat modelling, formal verification of on-chain code, cryptographic auditing, and economic game-theory analysis to prevent incentive manipulation. The discipline extends across permissionless and permissioned blockchain architectures, addressing layer-specific attack surfaces from peer-to-peer networking through execution environments to cross-chain interoperability bridges.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:cybersecurity",
@@ -13,12 +13,51 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.76,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:smart-contract-audit",
+        "label": "Smart Contract Audit"
+      },
+      {
+        "id": "urn:ngm:class:consensus-security",
+        "label": "Consensus Security"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-key-management",
+        "label": "Cryptographic Key Management"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cryptographic-protocol",
+        "label": "Cryptographic Protocol"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:trustless-system",
+        "label": "Trustless System"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:immutability",
+        "label": "Immutability"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [
@@ -33,38 +72,69 @@
       {
         "id": "urn:ngm:class:double-spending",
         "label": "Double Spending"
+      },
+      {
+        "id": "urn:ngm:class:reentrancy-attack",
+        "label": "Reentrancy Attack"
       }
     ],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-security",
+        "label": "AI Security"
+      },
+      {
+        "id": "urn:ngm:class:post-quantum-cryptography",
+        "label": "Post-Quantum Cryptography"
+      }
+    ],
     "uses": [
       {
-        "id": "urn:ngm:class:cryptographic-protocol",
-        "label": "Cryptographic Protocol"
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
       },
       {
-        "id": "urn:ngm:class:consensus-mechanism",
-        "label": "Consensus Mechanism"
+        "id": "urn:ngm:class:multi-signature-scheme",
+        "label": "Multi-Signature Scheme"
       },
       {
-        "id": "urn:ngm:class:immutability",
-        "label": "Immutability"
+        "id": "urn:ngm:class:oracle-network",
+        "label": "Oracle Network"
       }
     ],
     "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:nist-cybersecurity-framework",
+        "label": "NIST Cybersecurity Framework"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems-security",
+        "label": "Distributed Systems Security"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:blockchain",
         "label": "Blockchain"
       },
       {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
         "id": "urn:ngm:class:cryptographic-security",
         "label": "Cryptographic Security"
       },
       {
-        "id": "urn:ngm:class:smart-contract",
-        "label": "Smart Contract"
+        "id": "urn:ngm:class:miner-extractable-value",
+        "label": "Miner Extractable Value"
       }
     ]
   },

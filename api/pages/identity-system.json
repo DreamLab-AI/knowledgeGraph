@@ -4,7 +4,7 @@
   "slug": "identity-system",
   "public": true,
   "classIri": "urn:ngm:class:identity-system",
-  "domain": "general",
+  "domain": "security",
   "definition": "An organised set of processes and technologies used to establish, manage and verify the identities of subjects within a defined context.",
   "subClassOf": [
     {

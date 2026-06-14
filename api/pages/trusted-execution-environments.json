@@ -4,8 +4,8 @@
   "slug": "trusted-execution-environments",
   "public": true,
   "classIri": "urn:ngm:class:trusted-execution-environments",
-  "domain": "cryptographic",
-  "definition": "Hardware-isolated execution environments that protect the confidentiality and integrity of code and data running inside them, even from a compromised operating system or host.",
+  "domain": "security",
+  "definition": "Trusted Execution Environments (TEEs) are hardware-enforced isolated regions of memory and compute within a processor where code and data are protected against inspection or tampering by any software outside the enclave, including privileged system software such as the operating system, hypervisor, or firmware. They use processor-level memory encryption, access-control registers, and cryptographic attestation to establish a root of trust anchored in silicon, allowing remote parties to verify the identity and integrity of the code running inside before sharing sensitive data with it. TEEs are the foundational enabling technology for confidential computing, enabling privacy-preserving computation on sensitive workloads in untrusted cloud or edge environments. Prominent implementations include Intel SGX, Intel TDX, AMD SEV-SNP, and ARM TrustZone.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:confidential-computing",
@@ -13,31 +13,138 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.74,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:secure-enclave",
+        "label": "Secure Enclave"
+      },
+      {
+        "id": "urn:ngm:class:remote-attestation",
+        "label": "Remote Attestation"
+      },
+      {
+        "id": "urn:ngm:class:memory-encryption",
+        "label": "Memory Encryption"
+      },
+      {
+        "id": "urn:ngm:class:trusted-measurement",
+        "label": "Trusted Measurement"
+      }
+    ],
     "requires": [
       {
-        "id": "urn:ngm:class:confidential-computing",
-        "label": "Confidential Computing"
+        "id": "urn:ngm:class:hardware-root-of-trust",
+        "label": "Hardware Root of Trust"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-attestation",
+        "label": "Cryptographic Attestation"
+      },
+      {
+        "id": "urn:ngm:class:secure-boot",
+        "label": "Secure Boot"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:verifiable-computation",
         "label": "Verifiable Computation"
+      },
+      {
+        "id": "urn:ngm:class:privacy-preserving-computation",
+        "label": "Privacy-Preserving Computation"
+      },
+      {
+        "id": "urn:ngm:class:secure-multi-party-computation",
+        "label": "Secure Multi-Party Computation"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:homomorphic-encryption",
+        "label": "Homomorphic Encryption"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proofs",
+        "label": "Zero-Knowledge Proofs"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-oracle",
+        "label": "Decentralised Oracle"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:arm-trust-zone",
+        "label": "ARM TrustZone"
+      },
+      {
+        "id": "urn:ngm:class:intel-sgx",
+        "label": "Intel SGX"
+      },
+      {
+        "id": "urn:ngm:class:amd-sev",
+        "label": "AMD SEV"
+      },
+      {
+        "id": "urn:ngm:class:tpm",
+        "label": "Trusted Platform Module"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:cloud-security",
+        "label": "Cloud Security"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-security",
+        "label": "Supply Chain Security"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:confidential-computing-consortium",
+        "label": "Confidential Computing Consortium"
+      },
+      {
+        "id": "urn:ngm:class:global-platform-standard",
+        "label": "GlobalPlatform Standard"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:side-channel-attacks",
+        "label": "Side-Channel Attacks"
+      },
+      {
+        "id": "urn:ngm:class:key-management",
+        "label": "Key Management"
+      }
+    ]
   },
   "wikilinks": [
     {

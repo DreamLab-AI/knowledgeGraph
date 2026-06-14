@@ -1,20 +1,92 @@
 - ### Definition
-  - Observability is the property of a software system that allows its internal state to be inferred from external outputs such as logs, metrics, and traces.
+  - Observability is the capability of a system that allows engineers to infer its complete internal state solely from external outputs — principally [[Logging]], [[Metrics]], and [[Distributed Tracing]]. Rooted in control-systems theory (Kalman, 1960), it asks whether internal states are fully reconstructable from a sequence of observations. Applied to software, observability governs how well [[Distributed Systems]] can be understood, diagnosed, and improved without halting them, underpinning the discipline of [[Site Reliability Engineering]] and modern [[DevOps]] practice.
 
-- ### Semantic Classification
-  - owl-class:: software-engineering:Observability
-  - owl-role:: Class
+- ### Overview
+  - Observability emerged as a first-class engineering concern with the rise of [[Microservices]] and cloud-native [[Distributed Systems]], where thousands of networked components interact in ways that are impossible to replicate in isolation.
+  - Traditional [[Monitoring]] — checking whether a known metric crosses a threshold — proved insufficient for diagnosing novel failure modes; observability extends this by allowing engineers to ask arbitrary questions about system behaviour.
+  - The core insight is that well-instrumented systems should allow any question about past state to be answered from collected data, not merely the questions anticipated at build time.
+  - This property dramatically reduces mean time to detection (MTTD) and mean time to resolution (MTTR) during incidents, making it a central concern for organisations operating at scale.
+
+- ### Key Components
+  - **[[Logging]]**
+    - Structured, timestamped records of discrete events produced by application components.
+    - Modern log formats (JSON, key-value pairs) allow machine parsing, correlation, and search at scale via platforms such as [[Log Aggregation]] pipelines (Elasticsearch, Loki, Splunk).
+    - Log levels (DEBUG, INFO, WARN, ERROR, FATAL) allow filtering noise; correlation IDs link logs across service boundaries.
+  - **[[Metrics]]**
+    - Numeric measurements aggregated over time: counters, gauges, histograms, and summaries.
+    - Stored in a [[Time-Series Database]] (Prometheus, InfluxDB, Thanos) and visualised via dashboards (Grafana).
+    - Metrics are highly compressible, making them efficient for long-term retention and [[Alerting]] rules.
+    - The RED method (Rate, Errors, Duration) and USE method (Utilisation, Saturation, Errors) provide systematic metric frameworks for services and resources respectively.
+  - **[[Distributed Tracing]]**
+    - A trace follows a single request as it propagates across multiple services, recording latency and errors at each hop (span).
+    - Enables identification of performance bottlenecks and failure points invisible to single-service metrics.
+    - Implementations: Jaeger, Zipkin, Tempo; propagation standards: W3C TraceContext, B3.
+  - **[[Alerting]]**
+    - Rule-based or anomaly-driven notifications triggered when signal thresholds or learned baselines are breached.
+    - Effective alerting is grounded in [[Service Level Objective]] (SLO) violations rather than raw metric thresholds, reducing alert fatigue.
+  - **[[Instrumentation]]**
+    - Code-level or infrastructure-level decoration that emits the telemetry signals above.
+    - Auto-instrumentation (agents, eBPF) and manual instrumentation via SDKs; [[OpenTelemetry]] provides a unified API/SDK.
+  - **[[Telemetry]]**
+    - The broader category of all data collected from a running system: logs, metrics, traces, events, and profiles.
+    - [[OpenTelemetry]] (OTEL) is the CNCF-hosted standard that unifies telemetry collection across languages and backends.
+
+- ### Mechanisms
+  - **Correlation** — Linking signals across pillars (log entries, spans, metric spikes) via shared trace IDs, request IDs, or timestamps allows root-cause identification across [[Microservices]].
+  - **Cardinality** — High-cardinality labels (user IDs, request paths) enable fine-grained analysis but increase storage costs; observability platforms must balance cardinality against resource constraints.
+  - **Sampling** — Head-based and tail-based sampling strategies reduce trace volume while preserving coverage of errors and slow requests.
+  - **Context Propagation** — Trace context headers (W3C TraceContext, B3) are injected into inter-service calls to link spans across network boundaries, including through [[Service Mesh]] sidecars.
+  - **SLO-Driven Alerting** — Alerts tied to [[Service Level Objective]] burn rates express reliability in user-facing terms, improving incident prioritisation.
+  - **AIOps Integration** — [[Anomaly Detection]] and ML-driven correlations applied to telemetry streams allow proactive detection of degradation before thresholds are breached, bridging to [[Machine Learning Operations]].
+
+- ### Applications and Use Cases
+  - **Incident Response** — During an outage, engineers query traces to isolate the failing service, examine correlated logs for error context, and check metrics for resource saturation. Reduced MTTD and MTTR are primary operational KPIs.
+  - **[[Performance]] Tuning** — Latency histograms and distributed traces reveal hotspots in request paths; profiling data identifies CPU/memory bottlenecks at code level.
+  - **[[Capacity Planning]]** — Long-term metric trends inform infrastructure scaling decisions, preventing saturation before it causes user-visible failures.
+  - **[[Chaos Engineering]]** — Fault injection experiments are validated against observability data; without adequate telemetry, the blast radius of chaos experiments cannot be measured.
+  - **[[Continuous Delivery]] Safety** — Canary deployments and feature flags are evaluated by comparing observability signals (error rates, latency) between old and new versions.
+  - **Security and Compliance** — Audit logs and anomalous access patterns detected via log analysis support security monitoring, bridging observability to [[Fault Tolerance]] and compliance requirements.
+  - **[[Machine Learning Operations]]** — Model serving infrastructure requires the same pillars (prediction latency metrics, feature pipeline traces, error logs) as any distributed service; ML-specific metrics (drift, accuracy) extend the pattern.
 
 - ### Relationships
-  - is-subclass-of:: [[Reliability Engineering]]
-  - bridges-to:: [[Distributed Systems]]
-  - requires:: [[performance]]
+  - partOf:: [[Reliability Engineering]]
+  - hasPart:: [[Logging]]
+  - hasPart:: [[Metrics]]
+  - hasPart:: [[Distributed Tracing]]
+  - hasPart:: [[Alerting]]
+  - requires:: [[Telemetry]]
+  - requires:: [[Instrumentation]]
+  - requires:: [[Data Collection]]
   - enables:: [[Site Reliability Engineering]]
+  - enables:: [[Incident Response]]
+  - enables:: [[Capacity Planning]]
+  - enables:: [[Chaos Engineering]]
+  - dependsOn:: [[Distributed Systems]]
+  - dependsOn:: [[Microservices]]
+  - implements:: [[OpenTelemetry]]
+  - uses:: [[Time-Series Database]]
+  - uses:: [[Log Aggregation]]
+  - uses:: [[Service Mesh]]
+  - supports:: [[DevOps]]
+  - supports:: [[Continuous Delivery]]
+  - standardizedBy:: [[OpenTelemetry]]
+  - standardizedBy:: [[Cloud Native Computing Foundation]]
+  - contrastsWith:: [[Monitoring]]
+  - contrastsWith:: [[Debugging]]
+  - bridges-to:: [[Anomaly Detection]]
+  - bridges-to:: [[Machine Learning Operations]]
+  - relatedTo:: [[Performance]]
+  - relatedTo:: [[Fault Tolerance]]
+  - relatedTo:: [[Service Level Objective]]
 
-- ### Content
-  - Observability draws on three primary signal types: logs that record discrete events, metrics that aggregate numeric measurements over time, and distributed traces that follow a request across services.
-  - The concept is associated with operating distributed systems where failures are difficult to reproduce, so engineers rely on collected telemetry to diagnose behaviour rather than reproducing problems directly.
+- ### Standards and Context
+  - **[[OpenTelemetry]] (OTEL)** — The primary unification standard, hosted by the [[Cloud Native Computing Foundation]] (CNCF). Defines APIs, SDKs, and the OTEL Collector for languages including Go, Java, Python, JavaScript, and .NET. Merges OpenCensus and OpenTracing lineages.
+  - **W3C TraceContext** (Recommendation) — Standardises the `traceparent` and `tracestate` HTTP headers for distributed trace propagation, ensuring interoperability across vendor implementations.
+  - **OpenMetrics** — An extension of the Prometheus exposition format, standardising metric exposition for scraping by a wider range of collectors.
+  - **CNCF Landscape** — Observability is a formal category in the CNCF Cloud Native Landscape, which catalogues tools across logging, monitoring, tracing, and chaos engineering.
+  - **SRE Book (Google)** — Google's Site Reliability Engineering book formalised the four golden signals (Latency, Traffic, Errors, Saturation) as a practical observability framework, now widely adopted across the industry.
+  - **eBPF** — Extended Berkeley Packet Filter enables kernel-level auto-instrumentation without code changes, allowing observability agents to collect system-call, network, and file-I/O telemetry with minimal overhead.
 
 - ### Provenance
-  - sources::
-  - migration-date:: 2026-05-29T00:00:00Z
+  - sources:: OpenTelemetry specification (opentelemetry.io); CNCF Cloud Native Landscape; Google SRE Book; W3C TraceContext Recommendation; Honeycomb.io observability documentation
+  - updated:: 2026-06-13

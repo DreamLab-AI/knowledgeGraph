@@ -47,7 +47,7 @@ public:: true
   "@type": "Class",
   "label": "Intel Loihi",
   "definition": "A research neuromorphic processor developed by Intel that implements spiking neural networks in hardware with on-chip learning.",
-  "domain": "general",
+  "domain": "machine-learning",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

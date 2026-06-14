@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:lnd",
   "domain": "blockchain",
-  "definition": "The Lightning Network Daemon, a widely used implementation of a Bitcoin Lightning Network node that manages payment channels and routes off-chain payments.",
+  "definition": "LND (Lightning Network Daemon) is a production-grade, open-source implementation of a Bitcoin Lightning Network node developed by Lightning Labs. It manages the full lifecycle of payment channels \u2014 from on-chain funding and cooperative or force-close settlement to off-chain routing of multi-hop payments \u2014 exposing a gRPC and REST API that downstream wallets, exchanges, and applications consume. LND implements the BOLT (Basis of Lightning Technology) protocol specifications and employs Hash Time-Locked Contracts (HTLCs) to ensure atomic, trust-minimised payment routing across a peer-to-peer mesh of channels anchored to the Bitcoin base layer.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:lightning-network",
@@ -13,10 +13,23 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.75,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:watchtower",
+        "label": "Watchtower"
+      },
+      {
+        "id": "urn:ngm:class:channel-graph",
+        "label": "Channel Graph"
+      },
+      {
+        "id": "urn:ngm:class:lncli",
+        "label": "lncli"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:lightning-network",
@@ -25,18 +38,100 @@
       {
         "id": "urn:ngm:class:payment-channel",
         "label": "Payment Channel"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      },
+      {
+        "id": "urn:ngm:class:bitcoind",
+        "label": "Bitcoin Core"
       }
     ],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:micropayment",
+        "label": "Micropayment"
+      },
+      {
+        "id": "urn:ngm:class:atomic-swap",
+        "label": "Atomic Swap"
+      },
+      {
+        "id": "urn:ngm:class:streaming-payments",
+        "label": "Streaming Payments"
+      },
+      {
+        "id": "urn:ngm:class:keysend",
+        "label": "Keysend"
+      }
+    ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:bolt-protocol",
+        "label": "BOLT Protocol"
+      },
+      {
+        "id": "urn:ngm:class:hash-time-locked-contract",
+        "label": "Hash Time-Locked Contract"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:c-lightning",
+        "label": "Core Lightning"
+      },
+      {
+        "id": "urn:ngm:class:eclair",
+        "label": "Eclair"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:layer-2-protocol",
+        "label": "Layer 2 Protocol"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:grpc",
+        "label": "gRPC"
+      },
+      {
+        "id": "urn:ngm:class:macaroon-authentication",
+        "label": "Macaroon Authentication"
+      },
+      {
+        "id": "urn:ngm:class:onion-routing",
+        "label": "Onion Routing"
+      },
+      {
+        "id": "urn:ngm:class:gossip-protocol",
+        "label": "Gossip Protocol"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:taproot-assets",
+        "label": "Taproot Assets"
+      },
+      {
+        "id": "urn:ngm:class:loop",
+        "label": "Lightning Loop"
+      },
+      {
+        "id": "urn:ngm:class:pool",
+        "label": "Lightning Pool"
+      }
+    ]
   },
   "wikilinks": [
     {

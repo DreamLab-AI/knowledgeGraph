@@ -4,7 +4,7 @@
   "slug": "bayesian-decision-theory",
   "public": true,
   "classIri": "urn:ngm:class:bayesian-decision-theory",
-  "domain": "statistics",
+  "domain": "machine-learning",
   "definition": "Bayesian decision theory is a framework for making decisions under uncertainty by combining probabilities of outcomes with a loss or utility function to choose actions that minimise expected loss. It uses Bayesian updating to incorporate evidence.",
   "subClassOf": [
     {

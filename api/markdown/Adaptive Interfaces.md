@@ -22,7 +22,7 @@ alias:: AdaptiveInterfaces
   "@type": "Class",
   "label": "Adaptive Interfaces",
   "definition": "Adaptive interfaces are user interface systems that dynamically reconfigure their layout, content, modality, or interaction style in response to the current user's context, behaviour, preferences, or inferred cognitive state. They employ user modelling, machine learning, and context-aware computing to personalise the interaction layer without requiring manual configuration. The goal is to optimise usability, accessibility, and task performance across diverse user populations and situational conditions.",
-  "domain": "web",
+  "domain": "infrastructure",
   "maturity": "emerging",
   "subClassOf": [{"@id": "urn:ngm:class:human-computer-interaction", "label": "Human Computer Interaction"}],
   "relations": {

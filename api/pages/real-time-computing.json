@@ -4,40 +4,144 @@
   "slug": "real-time-computing",
   "public": true,
   "classIri": "urn:ngm:class:real-time-computing",
-  "domain": "computing",
-  "definition": "Computing in which correctness depends not only on the logical result but also on meeting timing deadlines. Systems are classified as hard, firm, or soft real-time according to the consequences of missing a deadline.",
+  "domain": "infrastructure",
+  "definition": "Real-time computing is a computational paradigm in which the correctness of a system depends not only on producing logically correct results but also on producing them within specified timing constraints. Systems are classified as hard real-time (where a missed deadline constitutes a system failure, e.g. aircraft fly-by-wire), firm real-time (where late results are useless but non-catastrophic), or soft real-time (where occasional deadline misses degrade quality rather than cause failure, e.g. multimedia streaming). Achieving real-time guarantees requires deterministic scheduling, bounded interrupt latency, and careful resource management throughout the entire software stack.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:owl-thing",
-      "label": "owl:Thing"
+      "id": "urn:ngm:class:distributed-systems",
+      "label": "Distributed Systems"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
-  "maturity": "established",
+  "qualityScore": 0.74,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:hard-real-time",
+        "label": "Hard Real-Time"
+      },
+      {
+        "id": "urn:ngm:class:soft-real-time",
+        "label": "Soft Real-Time"
+      },
+      {
+        "id": "urn:ngm:class:deadline-scheduling",
+        "label": "Deadline Scheduling"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:real-time-operating-system",
         "label": "Real-Time Operating System"
+      },
+      {
+        "id": "urn:ngm:class:deterministic-scheduling",
+        "label": "Deterministic Scheduling"
+      },
+      {
+        "id": "urn:ngm:class:interrupt-handling",
+        "label": "Interrupt Handling"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:embedded-systems",
         "label": "Embedded Systems"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-vehicles",
+        "label": "Autonomous Vehicles"
+      },
+      {
+        "id": "urn:ngm:class:industrial-automation",
+        "label": "Industrial Automation"
+      },
+      {
+        "id": "urn:ngm:class:flight-control-systems",
+        "label": "Flight Control Systems"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:latency",
+        "label": "Latency"
+      },
+      {
+        "id": "urn:ngm:class:clock-synchronisation",
+        "label": "Clock Synchronisation"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:batch-processing",
+        "label": "Batch Processing"
+      },
+      {
+        "id": "urn:ngm:class:time-sharing",
+        "label": "Time-Sharing"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:machine-learning-inference",
+        "label": "Machine Learning Inference"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:priority-scheduling",
+        "label": "Priority Scheduling"
+      },
+      {
+        "id": "urn:ngm:class:memory-management",
+        "label": "Memory Management"
+      },
+      {
+        "id": "urn:ngm:class:watchdog-timer",
+        "label": "Watchdog Timer"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:cyber-physical-systems",
+        "label": "Cyber-Physical Systems"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:posix",
+        "label": "POSIX"
+      },
+      {
+        "id": "urn:ngm:class:iso-26262",
+        "label": "ISO 26262"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:concurrency",
+        "label": "Concurrency"
+      }
+    ]
   },
   "wikilinks": [
     {

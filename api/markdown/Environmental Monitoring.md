@@ -21,7 +21,7 @@ public:: true
   "@type": "Class",
   "label": "Environmental Monitoring",
   "definition": "Environmental monitoring is the systematic collection, measurement, and analysis of physical, chemical, and biological parameters of natural and built environments over time, enabling the detection of change, assessment of regulatory compliance, and support of scientific understanding of ecological and climate systems. It encompasses sensor networks, satellite remote sensing, in-situ measurement stations, and the data pipelines that transform raw measurements into actionable environmental intelligence.",
-  "domain": "science",
+  "domain": "data",
   "maturity": "mature",
   "subClassOf": [
     {"@id": "urn:ngm:class:monitoring", "label": "Monitoring"}

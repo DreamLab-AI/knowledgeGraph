@@ -4,7 +4,7 @@
   "slug": "singapore",
   "public": true,
   "classIri": "urn:ngm:class:singapore",
-  "domain": "geography",
+  "domain": "finance",
   "definition": "A sovereign island city-state in Southeast Asia and a major financial and technology hub. It is known for its role in global trade, finance, and as a centre for fintech and digital asset regulation.",
   "subClassOf": [
     {

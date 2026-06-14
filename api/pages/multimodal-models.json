@@ -4,8 +4,8 @@
   "slug": "multimodal-models",
   "public": true,
   "classIri": "urn:ngm:class:multimodal-ai-architecture-models",
-  "domain": "machine-learning",
-  "definition": "Machine learning models that process and relate information from more than one modality, such as text, images, audio or video, within a single model.",
+  "domain": "ai",
+  "definition": "Multimodal models are machine learning architectures that jointly process, align, and reason over information from two or more distinct data modalities \u2014 such as text, images, audio, video, or depth \u2014 within a unified model. They learn shared or bridged representations that enable cross-modal tasks including visual question answering, image captioning, speech recognition conditioned on vision, and text-to-image synthesis. These models extend unimodal foundations (typically large language models or vision encoders) by integrating modality-specific encoders or tokenisers with cross-attention or projection layers that align heterogeneous feature spaces. Multimodal models represent the convergence of natural language processing, computer vision, and speech processing into a single, generalist AI paradigm.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:multimodal-ai-architecture-ai",
@@ -13,31 +13,125 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
-  "maturity": "growing",
+  "qualityScore": 0.74,
+  "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:modality-specific-encoder",
+        "label": "Modality-Specific Encoder"
+      },
+      {
+        "id": "urn:ngm:class:projection-layer",
+        "label": "Projection Layer"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-decoder",
+        "label": "Multimodal Decoder"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:transformer",
         "label": "Transformer"
+      },
+      {
+        "id": "urn:ngm:class:cross-attention",
+        "label": "Cross-Attention"
+      },
+      {
+        "id": "urn:ngm:class:paired-training-data",
+        "label": "Paired Training Data"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:text-to-image",
         "label": "Text-to-Image"
+      },
+      {
+        "id": "urn:ngm:class:visual-question-answering",
+        "label": "Visual Question Answering"
+      },
+      {
+        "id": "urn:ngm:class:image-captioning",
+        "label": "Image Captioning"
+      },
+      {
+        "id": "urn:ngm:class:audio-visual-speech-recognition",
+        "label": "Audio-Visual Speech Recognition"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-retrieval",
+        "label": "Multimodal Retrieval"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:foundation-models",
+        "label": "Foundation Models"
+      },
+      {
+        "id": "urn:ngm:class:self-supervised-learning",
+        "label": "Self-Supervised Learning"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:unimodal-models",
+        "label": "Unimodal Models"
+      },
+      {
+        "id": "urn:ngm:class:modality-specific-pipeline",
+        "label": "Modality-Specific Pipeline"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human-Computer Interaction"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:vision-encoder",
+        "label": "Vision Encoder"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:contrastive-learning",
+        "label": "Contrastive Learning"
+      },
+      {
+        "id": "urn:ngm:class:embedding-space",
+        "label": "Embedding Space"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:clip",
+        "label": "CLIP"
+      },
+      {
+        "id": "urn:ngm:class:diffusion-models",
+        "label": "Diffusion Models"
+      },
+      {
+        "id": "urn:ngm:class:instruction-tuning",
+        "label": "Instruction Tuning"
+      }
+    ]
   },
   "wikilinks": [
     {

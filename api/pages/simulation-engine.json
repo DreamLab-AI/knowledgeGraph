@@ -5,34 +5,36 @@
   "public": true,
   "classIri": "urn:ngm:class:simulation-engine",
   "domain": "infrastructure",
-  "definition": "The computational core that manages state updates, inter-object interactions, deterministic execution, and data instrumentation within a simulation. Specialised engines include physics engines (PhysX, Bullet), behaviour-simulation engines, and AI training frameworks that expose parametric control, checkpointing, and massive parallelisation for large-scale experimental runs.",
+  "definition": "A simulation engine is the computational core responsible for advancing synthetic world state over discrete or continuous time steps, resolving inter-object interactions, enforcing physical or logical constraints, and exposing deterministic replay and instrumentation interfaces. It abstracts heterogeneous hardware (CPU thread pools, GPU compute shaders, distributed clusters) behind a unified loop that separates physics integration, collision detection, agent behaviour evaluation, and sensor data generation into composable subsystems. Specialised variants include rigid-body and soft-body physics engines (PhysX, Bullet, Havok), behaviour-simulation engines, robotics simulators (Isaac Sim, Gazebo), and synthetic-data factories used to train and evaluate machine-learning models at scale.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:infra-computing-and-cloud",
-      "label": "Computing and Cloud"
+      "id": "urn:ngm:class:simulation-software",
+      "label": "Simulation Software"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "emerging",
+  "qualityScore": 0.73,
+  "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [
+    "hasPart": [
       {
-        "id": "urn:ngm:class:digital-twin",
-        "label": "Digital Twin"
+        "id": "urn:ngm:class:physics-engine",
+        "label": "Physics Engine"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning"
+        "id": "urn:ngm:class:collision-detection",
+        "label": "Collision Detection"
+      },
+      {
+        "id": "urn:ngm:class:scene-graph",
+        "label": "Scene Graph"
+      },
+      {
+        "id": "urn:ngm:class:event-loop",
+        "label": "Event Loop"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [
+    "requires": [
       {
         "id": "urn:ngm:class:gpu-compute",
         "label": "GPU Compute"
@@ -40,20 +42,103 @@
       {
         "id": "urn:ngm:class:real-time-processing",
         "label": "Real-time Processing"
+      },
+      {
+        "id": "urn:ngm:class:deterministic-execution",
+        "label": "Deterministic Execution"
       }
     ],
-    "supports": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:synthetic-data-generation",
+        "label": "Synthetic Data Generation"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-vehicle-testing",
+        "label": "Autonomous Vehicle Testing"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:rendering-engine",
+        "label": "Rendering Engine"
+      },
+      {
+        "id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "id": "urn:ngm:class:metaverse-platform",
+        "label": "Metaverse Platform"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:spatial-partitioning",
+        "label": "Spatial Partitioning"
+      },
+      {
+        "id": "urn:ngm:class:multithreading",
+        "label": "Multithreading"
+      },
+      {
+        "id": "urn:ngm:class:numerical-integration",
+        "label": "Numerical Integration"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:agent-based-modelling",
+        "label": "Agent-Based Modelling"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [
       {
         "id": "urn:ngm:class:simulation-software",
         "label": "Simulation Software"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin-platform",
+        "label": "Digital Twin Platform"
       }
     ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:rendering-engine",
-        "label": "Rendering Engine"
+        "id": "urn:ngm:class:finite-element-analysis",
+        "label": "Finite Element Analysis"
+      },
+      {
+        "id": "urn:ngm:class:monte-carlo-methods",
+        "label": "Monte Carlo Methods"
+      },
+      {
+        "id": "urn:ngm:class:behaviour-tree",
+        "label": "Behaviour Tree"
       }
     ]
   },

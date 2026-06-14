@@ -21,7 +21,7 @@ public:: true
   "@type": "Class",
   "label": "Character Animation",
   "definition": "Character animation is the discipline of creating the illusion of life and intentional movement in digital or physical characters through the coordinated manipulation of skeletal rigs, blend shapes, and motion data across time, driven by principles derived from traditional film animation. It encompasses the full pipeline from rigging and skinning a character mesh to authoring, retargeting, and blending motion clips in real time, and extends to AI-driven procedural and physics-based approaches that generate plausible movement without manual keyframing. The field spans offline cinematic animation for film and games and real-time systems for interactive avatars, XR experiences, and virtual humans.",
-  "domain": "graphics",
+  "domain": "spatial-computing",
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:animation", "label": "Animation"}],
   "relations": {

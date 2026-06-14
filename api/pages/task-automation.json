@@ -4,7 +4,7 @@
   "slug": "task-automation",
   "public": true,
   "classIri": "urn:ngm:class:task-automation",
-  "domain": "automation",
+  "domain": "robotics",
   "definition": "The automation of individual, often repetitive tasks so that they run without manual effort. It addresses discrete actions rather than coordinating entire business processes.",
   "subClassOf": [
     {

@@ -27,8 +27,9 @@ public:: true
   "@id": "urn:ngm:class:vector-database",
   "@type": "Class",
   "label": "Vector Database",
-  "definition": "A vector database is a specialised data storage and retrieval system optimised for indexing and querying high-dimensional dense vectors (embeddings) using approximate nearest-neighbour (ANN) search algorithms such as HNSW, IVF-PQ, and ScaNN. These systems support efficient similarity search over millions to billions of embedding vectors representing text, images, or multimodal content, enabling retrieval-augmented generation, semantic search, and recommendation at scale. Vector databases typically provide filtering on structured metadata in conjunction with vector similarity, persistence, and versioning capabilities beyond what generic ANN libraries offer.",
+  "definition": "A vector database is a specialised data storage and retrieval system optimised for indexing and querying high-dimensional dense vectors (embeddings) using approximate nearest-neighbour (ANN) search algorithms such as HNSW, IVF-PQ, and ScaNN. Unlike traditional relational databases, vector databases solve the problem of finding the k most similar vectors to a query in Euclidean or cosine space over millions to billions of embeddings representing text, images, audio, or multimodal content. They combine ANN indexing with structured metadata filtering, persistence, CRUD operations, and access control, enabling retrieval-augmented generation, semantic search, and large-scale recommendation at production quality. The category encompasses dedicated systems (Pinecone, Qdrant, Weaviate, Milvus, Chroma) and vector-search extensions added to existing databases (pgvector for PostgreSQL, Redis Stack).",
   "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-infrastructure",
@@ -38,45 +39,171 @@ public:: true
   "relations": {
     "enables": [
       {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"},
-      {"@id": "urn:ngm:class:semantic-search", "label": "Semantic Search"}
+      {"@id": "urn:ngm:class:semantic-search", "label": "Semantic Search"},
+      {"@id": "urn:ngm:class:recommendation-system", "label": "Recommendation System"},
+      {"@id": "urn:ngm:class:multimodal-search", "label": "Multimodal Search"},
+      {"@id": "urn:ngm:class:anomaly-detection", "label": "Anomaly Detection"}
     ],
     "requires": [
-      {"@id": "urn:ngm:class:embedding-model", "label": "Embedding Model"}
+      {"@id": "urn:ngm:class:embedding-model", "label": "Embedding Model"},
+      {"@id": "urn:ngm:class:vector-embedding", "label": "Vector Embedding"},
+      {"@id": "urn:ngm:class:approximate-nearest-neighbour-search", "label": "Approximate Nearest Neighbour Search"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:hnsw-index", "label": "HNSW Index"},
+      {"@id": "urn:ngm:class:inverted-file-index", "label": "Inverted File Index"},
+      {"@id": "urn:ngm:class:product-quantisation", "label": "Product Quantisation"},
+      {"@id": "urn:ngm:class:metadata-filter", "label": "Metadata Filter"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:cosine-similarity", "label": "Cosine Similarity"},
+      {"@id": "urn:ngm:class:bm25", "label": "BM25"},
+      {"@id": "urn:ngm:class:hybrid-search", "label": "Hybrid Search"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:relational-database", "label": "Relational Database"},
+      {"@id": "urn:ngm:class:document-database", "label": "Document Database"},
+      {"@id": "urn:ngm:class:search-engine", "label": "Search Engine"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:nearest-neighbor-search", "label": "Nearest Neighbor Search"},
       {"@id": "urn:ngm:class:information-retrieval", "label": "Information Retrieval"},
-      {"@id": "urn:ngm:class:search-index", "label": "Search Index"}
+      {"@id": "urn:ngm:class:search-index", "label": "Search Index"},
+      {"@id": "urn:ngm:class:large-language-model", "label": "Large Language Model"},
+      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"},
+      {"@id": "urn:ngm:class:data-pipeline", "label": "Data Pipeline"}
     ]
   },
-  "qualityScore": 0.75,
-  "maturity": "emerging"
+  "sameAs": [
+    {"@id": "urn:ngm:class:vector-store", "label": "Vector Store"}
+  ],
+  "qualityScore": 0.74,
+  "maturity": "established",
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-13T00:00:00Z",
+    "inferenceRule": "ManualEnrichment"
+  }
 }
 ```
 
-
 - ### Definition
-  - A vector database is a specialised data storage and retrieval system optimised for indexing and querying high-dimensional dense vectors (embeddings) using approximate nearest-neighbour (ANN) search algorithms such as HNSW, IVF-PQ, and ScaNN. These systems support efficient similarity search over millions to billions of embedding vectors representing text, images, or multimodal content, enabling retrieval-augmented generation, semantic search, and recommendation at scale. Vector databases typically provide filtering on structured metadata in conjunction with vector similarity, persistence, and versioning capabilities beyond what generic ANN libraries offer.
+  - A **vector database** is a specialised data storage and retrieval system optimised for indexing and querying high-dimensional dense [[Vector Embedding]] vectors (embeddings) using [[Approximate Nearest Neighbour Search]] algorithms. These systems solve the core problem of finding the *k* most similar vectors to a query vector in Euclidean or cosine space across millions to billions of embeddings representing text, images, audio, or multimodal content. Unlike a generic ANN library, a vector database adds persistence, CRUD semantics, structured [[Metadata Filter]] filtering alongside similarity scoring, access control, and horizontal scalability — making it the backbone of production [[Retrieval-Augmented Generation]] and [[Semantic Search]] pipelines.
 
-- ### Semantic Classification
-  - owl-class:: vector-database:Vector Database
-  - owl-role:: Concept
+- ### Overview
+  - Vector databases emerged as a distinct infrastructure category in the early 2020s, driven by the explosion of [[Large Language Model]] applications that require grounding model outputs in external knowledge.
+  - Traditional [[Relational Database]] and [[Document Database]] systems are designed for exact-match and range queries over structured fields; they cannot efficiently answer "find the 10 documents most semantically similar to this query" without an ANN index.
+  - The fundamental operation is **approximate k-nearest-neighbour (ANN) search**: given a query vector q and a corpus of n stored vectors, return the k vectors with the smallest distance (cosine, dot-product, or Euclidean) to q, without scanning all n vectors.
+  - Why it matters:
+    - Powers [[Retrieval-Augmented Generation]] (RAG), the dominant architecture for grounding LLM responses in private or up-to-date knowledge.
+    - Enables large-scale [[Semantic Search]] over document corpora, code repositories, and media libraries.
+    - Drives [[Recommendation System]] engines that represent users and items as learned embeddings.
+    - Supports [[Anomaly Detection]] by flagging vectors that are far from all cluster centres.
+
+- ### Key Components
+  - **Vector Embedding Store**
+    - Holds dense floating-point vectors, typically 128–4096 dimensions, produced by [[Embedding Model]] systems such as text-embedding models or vision encoders.
+    - Each vector is associated with a unique ID and optional structured payload (metadata).
+  - **ANN Index**
+    - **[[HNSW Index]]** (Hierarchical Navigable Small World): a graph-based structure offering sub-millisecond query latency and high recall; memory-intensive but fastest in practice.
+    - **[[Inverted File Index]] + [[Product Quantisation]] (IVF-PQ)**: clusters vectors with k-means, then compresses residuals with PQ; reduces RAM footprint at some recall cost.
+    - **ScaNN** (Google): asymmetric quantisation optimised for throughput on Google-scale corpora.
+    - **DiskANN**: disk-resident graph index enabling billion-scale search on commodity hardware.
+  - **Metadata Filtering**
+    - Structured payload fields (date, category, author, tenant ID) stored alongside each vector.
+    - Pre- or post-filtering applied to ANN results to enforce access control, recency constraints, or domain restrictions.
+    - Combined filtering + ANN is non-trivial: pre-filtering reduces the search space (may hurt recall); post-filtering wastes ANN budget; segment-level filtering (Weaviate, Qdrant) is a common middle ground.
+  - **Hybrid Search**
+    - Combines dense [[Vector Embedding]] similarity with sparse [[BM25]] keyword scoring.
+    - Reciprocal Rank Fusion (RRF) or learned re-rankers merge dense and sparse result lists.
+    - Addresses the known weakness of pure semantic search on proper nouns, codes, and precise identifiers.
+  - **Replication and Sharding**
+    - Horizontal partitioning across shards for billion-scale corpora.
+    - Read replicas for query throughput; leader-follower or consensus-based writes.
+  - **API Layer**
+    - REST / gRPC interfaces; Python, TypeScript, Go SDKs.
+    - Collections / namespaces isolate tenants or data domains.
+    - Batch upsert, delete-by-filter, scroll/cursor pagination.
+
+- ### Major Implementations
+  - **Dedicated vector databases**
+    - *Pinecone* — fully managed, serverless; pioneered the hosted vector DB category.
+    - *Qdrant* — open-source (Rust), HNSW-based; strong payload filtering and on-disk indexing.
+    - *Weaviate* — open-source (Go); built-in hybrid search, module ecosystem for embeddings.
+    - *Milvus / Zilliz Cloud* — open-source (C++/Go), designed for billion-scale; GPU acceleration.
+    - *Chroma* — lightweight Python-native; popular for rapid prototyping and small corpora.
+    - *LanceDB* — columnar format on object storage; designed for multi-modal and versioned embeddings.
+  - **Vector search extensions to existing databases**
+    - *pgvector* — PostgreSQL extension; IVFFLAT and HNSW indexes; operational simplicity over raw speed.
+    - *Redis Stack* — adds RediSearch vector index to Redis; ultra-low latency for hot data.
+    - *Elasticsearch / OpenSearch* — HNSW-based dense vector field; integrates with existing BM25 search.
+    - *MongoDB Atlas Vector Search* — managed ANN within MongoDB's document model.
+
+- ### Applications and Use Cases
+  - **Retrieval-Augmented Generation (RAG)**
+    - Document chunks are embedded and stored; at inference time the top-k chunks retrieved become the LLM's context window, enabling [[Large Language Model]] grounding without retraining.
+    - Critical for enterprise knowledge bases, legal document analysis, code search, and customer support.
+  - **Semantic Search**
+    - Search over unstructured text using meaning rather than keyword overlap; enables cross-lingual retrieval when multilingual [[Embedding Model]] is used.
+  - **Recommendation Systems**
+    - User and item embeddings learned by collaborative filtering or two-tower models are stored in a vector database; ANN retrieval finds candidate items for re-ranking.
+  - **Image and Multimodal Search**
+    - [[Multimodal Search]]: CLIP or similar vision-language models produce embeddings for images and text in a shared space; queries can be text-to-image or image-to-image.
+  - **Anomaly and Fraud Detection**
+    - Transactions or events embedded and compared against known-good clusters; outliers flagged for review.
+  - **Drug Discovery and Bioinformatics**
+    - Molecular embeddings (protein sequences, chemical fingerprints) stored for similarity-based compound screening.
+  - **Code Search**
+    - Source code embedded at function level; semantic search retrieves relevant implementations across a codebase.
+  - **Long-term LLM Memory**
+    - Agentic AI systems use a vector database as an external episodic memory store, retrieving relevant past context before each turn.
 
 - ### Relationships
-  - enables [[Retrieval-Augmented Generation]]
-  - enables [[Semantic Search]]
-  - requires [[Embedding Model]]
-  - relatedTo [[Nearest Neighbor Search]]
-  - relatedTo [[Information Retrieval]]
-  - relatedTo [[Search Index]]
+  - enables:: [[Retrieval-Augmented Generation]]
+  - enables:: [[Semantic Search]]
+  - enables:: [[Recommendation System]]
+  - enables:: [[Multimodal Search]]
+  - enables:: [[Anomaly Detection]]
+  - requires:: [[Embedding Model]]
+  - requires:: [[Vector Embedding]]
+  - requires:: [[Approximate Nearest Neighbour Search]]
+  - hasPart:: [[HNSW Index]]
+  - hasPart:: [[Inverted File Index]]
+  - hasPart:: [[Product Quantisation]]
+  - hasPart:: [[Metadata Filter]]
+  - uses:: [[Cosine Similarity]]
+  - uses:: [[BM25]]
+  - uses:: [[Hybrid Search]]
+  - contrastsWith:: [[Relational Database]]
+  - contrastsWith:: [[Document Database]]
+  - contrastsWith:: [[Search Engine]]
+  - relatedTo:: [[Nearest Neighbor Search]]
+  - relatedTo:: [[Information Retrieval]]
+  - relatedTo:: [[Search Index]]
+  - relatedTo:: [[Large Language Model]]
+  - relatedTo:: [[Knowledge Graph]]
+  - bridges-to:: [[Distributed Systems]]
+  - bridges-to:: [[Data Pipeline]]
 
-- ### Content
-  Vector databases emerged as a distinct infrastructure category to address the limitations of traditional relational and document databases for embedding-based workloads. Where SQL databases excel at exact-match and range queries over structured fields, vector databases optimise the fundamentally different problem of finding the k nearest vectors to a query vector in high-dimensional Euclidean or cosine space — a problem where exhaustive linear scan becomes prohibitively slow at scale.
+- ### Standards and Context
+  - No formal ISO or ANSI standard governs vector database APIs; the field is driven by de-facto conventions and open-source interfaces.
+  - **OpenAI embeddings API** established a de-facto standard for 1536-dimensional text embeddings widely adopted by downstream vector database tooling.
+  - The **Faiss library** (Meta AI) provided the foundational open-source ANN primitives (IVF, PQ, HNSW) that most vector databases build upon or reference.
+  - **LangChain** and **LlamaIndex** define integration interfaces consumed by multiple vector databases, creating informal API convergence.
+  - ANNS (Approximate Nearest Neighbour Search) benchmarking is tracked at **ann-benchmarks.com**, providing standardised recall-vs-latency comparisons across algorithms and datasets.
+  - The **BEIR benchmark** measures retrieval quality for semantic search systems, influencing how vector databases are evaluated in RAG pipelines.
+  - Governance of multi-tenant deployments intersects with data residency regulation (GDPR, HIPAA), driving tenant-isolation and on-premise deployment features in enterprise offerings.
 
-  The dominant indexing algorithms are Hierarchical Navigable Small World (HNSW) graphs, which offer excellent query latency at the cost of high memory usage; and Inverted File index with Product Quantisation (IVF-PQ), which compresses vectors to reduce memory footprint at some recall cost. Leading open-source vector databases include Qdrant, Weaviate, Milvus, and Chroma; hosted services include Pinecone and managed deployments of the open-source options. PostgreSQL extensions such as pgvector bring vector search to relational databases, trading off some performance for operational simplicity.
-
-  In retrieval-augmented generation (RAG) pipelines, the vector database stores chunked document embeddings and returns the top-k most similar chunks to a query embedding, which are then inserted into the language model's context window. Metadata filtering (date range, source, category) is typically applied alongside vector similarity to improve precision. Hybrid search combining dense vector retrieval with sparse BM25 keyword retrieval has become common practice for production RAG systems, compensating for the known weaknesses of pure semantic search on proper nouns and precise identifiers.
+- ### Distinctions and Nuances
+  - **Vector database vs ANN library**: Libraries like Faiss or HNSWlib are in-process, in-memory, and lack persistence, metadata, or network access; vector databases add operational and data-management concerns.
+  - **Vector database vs full-text search engine**: [[Search Engine]] systems like Elasticsearch use inverted indexes for keyword overlap (BM25); vector databases use ANN for semantic similarity. Modern systems increasingly offer both.
+  - **Dense vs sparse vectors**: Vector databases are primarily designed for dense floating-point embeddings; sparse vectors (bag-of-words, SPLADE) are handled by [[Inverted File Index]] structures within the same system in hybrid configurations.
+  - **Recall vs latency trade-off**: HNSW parameters (ef_construction, M, ef_search) directly govern this trade-off; tuning requires understanding the target workload's latency budget and minimum acceptable recall.
 
 - ### Provenance
-  - sources::
+  - sources:: Faiss library documentation (Meta AI Research); Qdrant, Weaviate, Milvus official documentation; ann-benchmarks.com; LangChain vector store integration guides.
+  - updated:: 2026-06-13
   - migration-date:: 2026-05-19T00:00:00Z

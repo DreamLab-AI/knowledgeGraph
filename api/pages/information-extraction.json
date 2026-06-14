@@ -4,8 +4,8 @@
   "slug": "information-extraction",
   "public": true,
   "classIri": "urn:ngm:class:information-extraction",
-  "domain": "machine-learning",
-  "definition": "Information extraction is the task of automatically deriving structured information, such as entities and relations, from unstructured or semi-structured text.",
+  "domain": "ai",
+  "definition": "Information Extraction (IE) is the automated process of identifying and structuring specific pieces of information from unstructured or semi-structured natural language text, producing machine-readable records such as typed entities, relational tuples, and event frames. Core subtasks include Named Entity Recognition, relation extraction, event extraction, coreference resolution, and slot filling. IE pipelines underpin knowledge graph population, question answering, and downstream analytics by converting free-form prose into structured representations consumable by databases and reasoning systems. Modern IE systems leverage pretrained transformer language models fine-tuned with supervised or few-shot learning, substantially improving generalisation across domains compared to earlier rule-based and feature-engineered approaches.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:natural-language-processing",
@@ -13,26 +13,121 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.74,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:named-entity-recognition",
+        "label": "Named Entity Recognition"
+      },
+      {
+        "id": "urn:ngm:class:relation-extraction",
+        "label": "Relation Extraction"
+      },
+      {
+        "id": "urn:ngm:class:event-extraction",
+        "label": "Event Extraction"
+      },
+      {
+        "id": "urn:ngm:class:coreference-resolution",
+        "label": "Coreference Resolution"
+      },
+      {
+        "id": "urn:ngm:class:slot-filling",
+        "label": "Slot Filling"
+      }
+    ],
     "requires": [
+      {
+        "id": "urn:ngm:class:tokenisation",
+        "label": "Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:part-of-speech-tagging",
+        "label": "Part-of-Speech Tagging"
+      },
+      {
+        "id": "urn:ngm:class:dependency-parsing",
+        "label": "Dependency Parsing"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:knowledge-graph-construction",
+        "label": "Knowledge Graph Construction"
+      },
+      {
+        "id": "urn:ngm:class:question-answering",
+        "label": "Question Answering"
+      },
+      {
+        "id": "urn:ngm:class:document-summarisation",
+        "label": "Document Summarisation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:information-retrieval",
+        "label": "Information Retrieval"
+      },
+      {
+        "id": "urn:ngm:class:text-classification",
+        "label": "Text Classification"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
+      },
+      {
+        "id": "urn:ngm:class:data-integration",
+        "label": "Data Integration"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:transformer-model",
+        "label": "Transformer Model"
+      },
+      {
+        "id": "urn:ngm:class:sequence-labelling",
+        "label": "Sequence Labelling"
+      },
+      {
+        "id": "urn:ngm:class:conditional-random-field",
+        "label": "Conditional Random Field"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
       {
         "id": "urn:ngm:class:natural-language-processing",
         "label": "Natural Language Processing"
       }
     ],
-    "enables": [],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:text-mining",
+        "label": "Text Mining"
+      },
+      {
+        "id": "urn:ngm:class:open-information-extraction",
+        "label": "Open Information Extraction"
+      },
+      {
+        "id": "urn:ngm:class:entity-linking",
+        "label": "Entity Linking"
+      }
+    ]
   },
   "wikilinks": [
     {

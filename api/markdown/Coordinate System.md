@@ -46,34 +46,69 @@ public:: true
   "@id": "urn:ngm:class:coordinate-system",
   "@type": "Class",
   "label": "Coordinate System",
-  "definition": "A Coordinate System is a mathematical framework that assigns unique numerical tuples to every point in a space, enabling the precise specification of position, orientation, and scale. In spatial computing and extended reality, coordinate systems define local object frames, world frames, and camera frames that must be carefully transformed and composed to align virtual content with the physical environment.",
+  "definition": "A coordinate system is a mathematical framework that assigns a unique ordered tuple of numbers to every point in a geometric space, enabling unambiguous specification of position, orientation, and scale. Coordinate systems establish reference frames — world, camera, object, and sensor frames — that must be composed via rigid-body or affine transforms to map quantities from one frame into another. In spatial computing, robotics, and computer vision, multiple overlapping coordinate frames coexist and their consistent management is essential for rendering, navigation, and perception tasks. The choice of convention (handedness, axis orientation, unit) and the algebraic formalism used (homogeneous matrices, quaternions, dual quaternions, Lie group elements) profoundly affects numerical stability and interoperability across software stacks.",
   "domain": "spatial-computing",
-  "maturity": "emerging",
+  "maturity": "mature",
   "subClassOf": [
-    {
-      "@id": "urn:ngm:class:sc-standards-and-interop",
-      "label": "Standards and Interoperability"
-    }
+    {"@id": "urn:ngm:class:mathematical-framework", "label": "Mathematical Framework"}
   ],
   "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:reference-frame", "label": "Reference Frame"},
+      {"@id": "urn:ngm:class:basis-vector", "label": "Basis Vector"},
+      {"@id": "urn:ngm:class:origin", "label": "Origin"}
+    ],
     "requires": [
-      {"@id": "urn:ngm:class:spatial-mapping", "label": "Spatial Mapping"}
+      {"@id": "urn:ngm:class:spatial-mapping", "label": "Spatial Mapping"},
+      {"@id": "urn:ngm:class:homogeneous-transformation", "label": "Homogeneous Transformation"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:pose-estimation", "label": "Pose Estimation"},
       {"@id": "urn:ngm:class:slam", "label": "SLAM"},
-      {"@id": "urn:ngm:class:spatial-anchor", "label": "Spatial Anchor"}
+      {"@id": "urn:ngm:class:spatial-anchor", "label": "Spatial Anchor"},
+      {"@id": "urn:ngm:class:3d-rendering", "label": "3D Rendering"},
+      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:linear-algebra", "label": "Linear Algebra"},
+      {"@id": "urn:ngm:class:rotation-representation", "label": "Rotation Representation"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:quaternion", "label": "Quaternion"},
+      {"@id": "urn:ngm:class:transformation-matrix", "label": "Transformation Matrix"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
+      {"@id": "urn:ngm:class:scene-graph", "label": "Scene Graph"},
+      {"@id": "urn:ngm:class:robot-kinematics", "label": "Robot Kinematics"},
+      {"@id": "urn:ngm:class:geographic-information-system", "label": "Geographic Information System"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:openxr", "label": "OpenXR"},
+      {"@id": "urn:ngm:class:iso-19111", "label": "ISO 19111"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:polar-coordinate-system", "label": "Polar Coordinate System"},
+      {"@id": "urn:ngm:class:curvilinear-coordinate-system", "label": "Curvilinear Coordinate System"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
+      {"@id": "urn:ngm:class:world-model", "label": "World Model"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:scene-graph", "label": "Scene Graph"}
+      {"@id": "urn:ngm:class:projection-model", "label": "Projection Model"},
+      {"@id": "urn:ngm:class:euclidean-geometry", "label": "Euclidean Geometry"}
     ]
   },
-  "quality": 0.35,
+  "sameAs": [
+    {"@id": "urn:ngm:class:reference-frame", "label": "Reference Frame"},
+    {"@id": "urn:ngm:class:frame-of-reference", "label": "Frame of Reference"}
+  ],
+  "quality": 0.74,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-13T00:00:00Z",
+    "inferenceRule": "ManualEnrichment"
   }
 }
 ```
@@ -108,36 +143,81 @@ public:: true
 }
 ```
 
-
 - ### Definition
-  - A Coordinate System is a mathematical framework that assigns unique numerical tuples to every point in a space, enabling the precise specification of position, orientation, and scale. In spatial computing and extended reality, coordinate systems define local object frames, world frames, and camera frames that must be carefully transformed and composed to align virtual content with the physical environment.
+  - A coordinate system is a mathematical framework that assigns a unique ordered tuple of numbers to every point in a geometric space, establishing a shared language for position, orientation, and scale. It underpins all spatial operations in [[Spatial Computing]], [[Computer Vision]], [[Robotics]], and [[Geographic Information System]] workflows, where multiple overlapping [[Reference Frame]]s must be consistently composed via [[Homogeneous Transformation]]s to align sensor data, virtual content, and physical geometry. The choice of convention — Cartesian versus [[Polar Coordinate System]], right-handed versus left-handed, Y-up versus Z-up — and the algebraic formalisms used (matrices, [[Quaternion]]s, Lie group elements) directly affect numerical stability and cross-platform interoperability.
 
-- ### Semantic Classification
-  - owl-class:: spatial-computing:CoordinateSystem
-  - owl-role:: concept
+- ### Overview
+  - A coordinate system provides the scaffolding that makes it possible to talk about "where something is" in a mathematically precise, computable way. Without an agreed coordinate system, sensor readings, 3D models, and navigational commands cannot be combined or compared.
+  - At the most abstract level, a coordinate system consists of an [[Origin]], a set of [[Basis Vector]]s that span the space, and a unit of measure. Together these uniquely parameterise every point in the space by its coordinates.
+  - In engineering practice the concept expands to include a full [[Reference Frame]] — a coordinate system attached to a physical or virtual object, moving with it through time. Systems such as [[SLAM]], [[Pose Estimation]], and [[Augmented Reality]] runtimes maintain hierarchies of frames (world, body, sensor, camera, display) and must continuously compute the transforms between them.
+  - Coordinate systems are foundational mathematics, not emerging technology; their formalism is centuries old. However their application in real-time [[Mixed Reality]], [[Autonomous Vehicles]], and [[Robot Kinematics]] is an active engineering frontier.
+  - Maturity is assessed as **mature**: Cartesian coordinate systems have been standardised and used industrially for well over a century; the challenge today is convention alignment and runtime interoperability, not the mathematical foundations.
+
+- ### Key Components
+  - **Origin** — the distinguished reference point (coordinates all zero) from which all positions are measured; see [[Origin]].
+  - **Basis Vectors** — a linearly independent set of unit vectors that span the space; in 3D Cartesian systems these are conventionally labelled X, Y, Z; see [[Basis Vector]].
+  - **Handedness** — right-handed systems (most physics and OpenXR) vs. left-handed (Direct3D, Unity default); a mismatch silently mirrors geometry.
+  - **Axis Convention** — Y-up (OpenGL, [[OpenXR]], most XR runtimes) vs. Z-up ([[ROS]], [[Geographic Information System]]); see [[Rotation Representation]].
+  - **Unit of Measure** — metres are the SI standard; mixing units without explicit scale factors is a common error source.
+  - **Transformation Matrix** — a 4×4 [[Transformation Matrix]] in homogeneous coordinates encodes rotation and translation as a single linear map, enabling efficient composition by matrix multiplication.
+  - **Quaternion Representation** — [[Quaternion]]s represent rotations compactly (4 floats vs. 9), avoid gimbal lock, and interpolate smoothly via SLERP; see [[Rotation Representation]].
+  - **Dual Quaternions** — extend quaternions to encode rigid-body transforms (rotation + translation) as a single algebraic object, preferred in some robotics stacks for screw-motion interpolation.
+  - **Lie Group / SE(3)** — the special Euclidean group SE(3) is the mathematical structure of all 3D rigid-body poses; [[Linear Algebra]] on its Lie algebra (se(3)) underpins modern SLAM backends.
+
+- ### Mechanisms
+  - **Frame Composition** — given transform T_AB (A relative to B) and T_BC (B relative to C), the combined transform T_AC = T_AB · T_BC is computed by matrix or quaternion multiplication.
+  - **Coordinate Transform** — a point p expressed in frame A becomes T_AB · p in frame B; this is how [[Sensor Fusion]] pipelines align IMU, camera, and LiDAR data into a common world frame.
+  - **Projection** — the camera [[Projection Model]] maps 3D world-frame coordinates through the camera extrinsic (pose) and intrinsic (focal length, principal point) matrices into 2D image coordinates, the backbone of [[Computer Vision]].
+  - **Loop Closure** — [[SLAM]] systems accumulate drift in the world frame; loop closure detects when a revisited location is encountered and applies a graph-optimisation correction that globally adjusts all past poses.
+  - **Spatial Anchors** — a [[Spatial Anchor]] stores a pose in the world frame that survives session restarts, enabling persistent, shared [[Augmented Reality]] overlays.
+  - **Geodetic Projection** — for outdoor and planetary-scale applications, world coordinates are expressed in geodetic systems (WGS-84 latitude/longitude/altitude) and projected into local Euclidean frames via [[Geographic Information System]] tools such as ECEF or UTM projections; standardised by [[ISO 19111]].
+
+- ### Applications / Use Cases
+  - **Extended Reality (XR)** — [[Augmented Reality]] and [[Virtual Reality]] headsets maintain a world frame anchored to the physical room plus per-eye camera frames; [[OpenXR]] standardises the API through which applications query these frames.
+  - **Autonomous Vehicles** — the vehicle body frame, LiDAR frame, and camera frames must all be calibrated to a common vehicle-origin frame before [[Sensor Fusion]] can produce a unified occupancy map.
+  - **Robot Kinematics** — [[Robot Kinematics]] chains transform frames at each joint link from the base frame to the end-effector, computed via forward kinematics and inverted via inverse kinematics.
+  - **3D Game Engines** — [[Scene Graph]] hierarchies in engines such as Unity, Unreal, and Godot represent object transforms as parent-relative coordinate systems; the engine resolves the chain to compute world-space positions at render time.
+  - **Medical Imaging** — CT and MRI images use patient-coordinate systems (RAS or LPS convention); surgical navigation systems register these to intra-operative tracker frames for real-time guidance.
+  - **Geographic Information Systems** — [[Geographic Information System]] tools project geodetic coordinates into planar projections (UTM, Web Mercator) for mapping, and back-project pixel coordinates to geographic coordinates for analysis.
+  - **Computer-Aided Design (CAD)** — parts are modelled in local object frames; assembly relations define the transforms between part frames, forming a constraint network resolved by the CAD solver.
+  - **Scientific Simulation** — molecular dynamics, fluid simulations, and astrophysics codes each define domain-specific coordinate systems (fractional crystal coordinates, geocentric inertial frames) aligned to the physics of the domain.
 
 - ### Relationships
-  - requires [[Spatial Mapping]]
-  - enables [[Pose Estimation]]
-  - enables [[SLAM]]
-  - enables [[Spatial Anchor]]
-  - relatedTo [[Computer Vision]]
-  - relatedTo [[Scene Graph]]
+  - hasPart:: [[Reference Frame]]
+  - hasPart:: [[Basis Vector]]
+  - hasPart:: [[Origin]]
+  - requires:: [[Spatial Mapping]]
+  - requires:: [[Homogeneous Transformation]]
+  - enables:: [[Pose Estimation]]
+  - enables:: [[SLAM]]
+  - enables:: [[Spatial Anchor]]
+  - enables:: [[3D Rendering]]
+  - enables:: [[Augmented Reality]]
+  - dependsOn:: [[Linear Algebra]]
+  - dependsOn:: [[Rotation Representation]]
+  - uses:: [[Quaternion]]
+  - uses:: [[Transformation Matrix]]
+  - supports:: [[Computer Vision]]
+  - supports:: [[Scene Graph]]
+  - supports:: [[Robot Kinematics]]
+  - supports:: [[Geographic Information System]]
+  - standardizedBy:: [[OpenXR]]
+  - standardizedBy:: [[ISO 19111]]
+  - contrastsWith:: [[Polar Coordinate System]]
+  - contrastsWith:: [[Curvilinear Coordinate System]]
+  - bridges-to:: [[Sensor Fusion]]
+  - bridges-to:: [[World Model]]
+  - relatedTo:: [[Projection Model]]
+  - relatedTo:: [[Euclidean Geometry]]
 
-- ### Content
-
-  ## Overview
-
-  A Coordinate System provides the mathematical scaffolding that makes spatial computing possible. XR runtimes maintain multiple coordinate frames simultaneously: a world coordinate frame anchored to the physical environment, a head/camera frame tracking the viewer's pose, hand or controller frames, and local object frames for placed content. Transformations between frames are represented as rigid-body transforms (rotation plus translation), typically stored as 4x4 homogeneous matrices or dual quaternions for efficient composition. Standards such as OpenXR define a right-handed coordinate convention with Y-up for the runtime-facing API, while game engines may internally use different conventions, requiring careful conversion. SLAM systems continuously refine the world frame by loop-closing against previously mapped landmarks. Spatial anchors persist specific world-frame positions across sessions, enabling shared AR experiences where multiple users see the same virtual content in the same real-world location.
-
-  #### Related Concepts
-  - [[Spatial Mapping]]
-  - [[Pose Estimation]]
-  - [[SLAM]]
-  - [[Spatial Anchor]]
-  - [[Computer Vision]]
-  - [[Scene Graph]]
+- ### Standards & Context
+  - **OpenXR** — Khronos Group standard defining a unified API for XR runtimes; specifies a right-handed, Y-up, metre-scale [[Reference Frame]] for all spatial queries; see [[OpenXR]].
+  - **ISO 19111:2019** — ISO/TC 211 standard "Geographic information — Referencing by coordinates"; defines the conceptual model for geodetic coordinate reference systems, used by [[Geographic Information System]] tools worldwide.
+  - **ROS REP 103** — ROS Enhancement Proposal defining standard units and coordinate conventions for [[Robotics]]: right-handed, X-forward, Y-left, Z-up for body frames.
+  - **IEEE 1278 (DIS/HLA)** — defence simulation standards define geocentric Earth-Centred Earth-Fixed (ECEF) frames for interoperability across federated simulations.
+  - **W3C WebXR** — web standard building on [[OpenXR]] concepts to expose device coordinate frames to browser-based XR applications.
+  - **IETF RFC 5165 / OGC CRS** — Open Geospatial Consortium coordinate reference system registry, assigning EPSG codes to thousands of named coordinate systems for unambiguous identification in data interchange.
 
 - ### Provenance
-  - sources::
-  - migration-date:: 2026-04-26T00:00:00Z
+  - sources:: ISO 19111:2019; Khronos OpenXR Specification 1.1; ROS REP 103; Ma et al. "An Invitation to 3D Vision" (Springer); Hartley & Zisserman "Multiple View Geometry in Computer Vision" (Cambridge UP)
+  - updated:: 2026-06-13

@@ -4,7 +4,7 @@
   "slug": "rdf-store",
   "public": true,
   "classIri": "urn:ngm:class:rdf-store",
-  "domain": "general",
+  "domain": "data",
   "definition": "A database designed to store and query data expressed as Resource Description Framework triples, typically supporting the SPARQL query language. Also called a triplestore, it manages subject-predicate-object statements rather than rows and tables.",
   "subClassOf": [
     {

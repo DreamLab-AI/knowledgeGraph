@@ -55,7 +55,7 @@ public:: true
   "@type": "Class",
   "label": "Complex Systems",
   "definition": "Systems composed of many interacting components whose collective behaviour cannot be simply inferred from the behaviour of the individual parts.",
-  "domain": "mathematics",
+  "domain": "machine-learning",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

@@ -5,15 +5,15 @@
   "public": true,
   "classIri": "urn:ngm:class:specificity",
   "domain": "artificial-intelligence",
-  "definition": "In classification and diagnostic testing, the proportion of actual negatives that are correctly identified as negative, also known as the true negative rate.",
+  "definition": "Specificity (also called the True Negative Rate or TNR) is the proportion of actual negative instances that a binary classifier or diagnostic test correctly identifies as negative, computed as TN / (TN + FP). It quantifies a model's ability to avoid false positives, complementing sensitivity (recall) in characterising the full operating behaviour of a classifier. Together with sensitivity, specificity defines the two axes of the Receiver Operating Characteristic (ROC) curve, enabling principled threshold selection across tasks ranging from medical diagnostics to spam filtering and anomaly detection.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:confusion-matrix",
-      "label": "Confusion Matrix"
+      "id": "urn:ngm:class:classification-metric",
+      "label": "Classification Metric"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.74,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
@@ -21,18 +21,104 @@
       {
         "id": "urn:ngm:class:confusion-matrix",
         "label": "Confusion Matrix"
+      },
+      {
+        "id": "urn:ngm:class:binary-classification",
+        "label": "Binary Classification"
       }
     ],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:threshold-selection",
+        "label": "Threshold Selection"
+      },
+      {
+        "id": "urn:ngm:class:roc-curve",
+        "label": "ROC Curve"
+      },
+      {
+        "id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:sensitivity",
+        "label": "Sensitivity"
+      },
+      {
+        "id": "urn:ngm:class:precision",
+        "label": "Precision"
+      },
+      {
+        "id": "urn:ngm:class:false-positive-rate",
+        "label": "False Positive Rate"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:medical-diagnostics",
+        "label": "Medical Diagnostics"
+      },
+      {
+        "id": "urn:ngm:class:fraud-detection",
+        "label": "Fraud Detection"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:true-negative",
+        "label": "True Negative"
+      },
+      {
+        "id": "urn:ngm:class:false-positive",
+        "label": "False Positive"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:classifier-evaluation",
+        "label": "Classifier Evaluation"
+      },
+      {
+        "id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:recall",
+        "label": "Recall"
+      },
+      {
+        "id": "urn:ngm:class:roc-curve",
+        "label": "ROC Curve"
+      },
+      {
+        "id": "urn:ngm:class:auc-roc",
+        "label": "AUC-ROC"
+      },
+      {
+        "id": "urn:ngm:class:f1-score",
+        "label": "F1 Score"
+      },
+      {
+        "id": "urn:ngm:class:youden-index",
+        "label": "Youden Index"
+      },
+      {
+        "id": "urn:ngm:class:negative-predictive-value",
+        "label": "Negative Predictive Value"
+      },
+      {
+        "id": "urn:ngm:class:likelihood-ratio",
+        "label": "Likelihood Ratio"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -4,7 +4,7 @@
   "slug": "network-theory",
   "public": true,
   "classIri": "urn:ngm:class:network-theory",
-  "domain": "general",
+  "domain": "distributed-systems",
   "definition": "Network theory is the study of graphs representing relations between objects, analysing structure, connectivity and dynamics across networks.",
   "subClassOf": [
     {

@@ -5,15 +5,15 @@
   "public": true,
   "classIri": "urn:ngm:class:employment-social-contract-under-automation",
   "domain": "governance",
-  "definition": "The set of expectations and obligations between workers, employers and the state concerning employment, income security and welfare, considered in the context of automation and artificial intelligence reshaping the labour market.",
+  "definition": "The evolving set of expectations, obligations and entitlements linking workers, employers and the state around employment, income security and social protection, examined specifically under conditions of technological displacement driven by automation, robotics and artificial intelligence. The concept encompasses both descriptive analysis of how existing labour-market settlements are stressed by AI-driven task substitution and normative debates about how governments, firms and civil society should renegotiate the terms of work, welfare and the distribution of productivity gains. It spans labour economics, political philosophy and public policy, treating technological change as a structural challenge to long-standing institutions such as collective bargaining, unemployment insurance and occupational licensing.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:governance-domain",
-      "label": "Governance Domain"
+      "id": "urn:ngm:class:labour-market-policy",
+      "label": "Labour Market Policy"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.74,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
@@ -21,18 +21,112 @@
       {
         "id": "urn:ngm:class:governance",
         "label": "Governance"
+      },
+      {
+        "id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      },
+      {
+        "id": "urn:ngm:class:welfare-state",
+        "label": "Welfare State"
       }
     ],
-    "enables": [],
-    "dependsOn": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:workforce-transition",
+        "label": "Workforce Transition"
+      },
+      {
+        "id": "urn:ngm:class:social-cohesion",
+        "label": "Social Cohesion"
+      },
+      {
+        "id": "urn:ngm:class:economic-redistribution",
+        "label": "Economic Redistribution"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:collective-bargaining",
+        "label": "Collective Bargaining"
+      },
+      {
+        "id": "urn:ngm:class:labour-law",
+        "label": "Labour Law"
+      },
+      {
+        "id": "urn:ngm:class:social-insurance",
+        "label": "Social Insurance"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:technological-unemployment",
+        "label": "Technological Unemployment"
+      },
+      {
+        "id": "urn:ngm:class:gig-economy",
+        "label": "Gig Economy"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:ai-adoption",
+        "label": "AI Adoption"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-management",
+        "label": "Algorithmic Management"
+      }
+    ],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:democratic-legitimacy",
+        "label": "Democratic Legitimacy"
+      },
+      {
+        "id": "urn:ngm:class:human-dignity",
+        "label": "Human Dignity"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:universal-basic-income",
+        "label": "Universal Basic Income"
+      },
+      {
+        "id": "urn:ngm:class:future-of-work",
+        "label": "Future of Work"
+      },
+      {
+        "id": "urn:ngm:class:job-displacement",
+        "label": "Job Displacement"
+      },
+      {
+        "id": "urn:ngm:class:reskilling",
+        "label": "Reskilling"
+      },
+      {
+        "id": "urn:ngm:class:income-inequality",
+        "label": "Income Inequality"
+      },
+      {
+        "id": "urn:ngm:class:platform-economy",
+        "label": "Platform Economy"
+      }
+    ]
   },
   "wikilinks": [
     {

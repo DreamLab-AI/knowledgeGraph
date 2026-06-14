@@ -1,0 +1,173 @@
+{
+  "id": "urn:visionflow:page:devops",
+  "title": "DevOps",
+  "slug": "devops",
+  "public": true,
+  "classIri": "urn:ngm:class:devops",
+  "domain": "infrastructure",
+  "definition": "DevOps is a sociotechnical discipline that unifies software development (Dev) and IT operations (Ops) through cultural practices, shared toolchains, and automation pipelines to shorten the system development lifecycle and deliver high-quality software continuously. It operationalises collaboration between development and operations teams by eliminating organisational silos, embracing infrastructure as code, and instrumenting every stage of delivery with feedback loops spanning continuous integration, continuous delivery, monitoring, and incident response. The discipline extends Agile principles beyond code authorship to encompass deployment, reliability engineering, and production observability as first-class engineering concerns.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:continuous-integration",
+        "label": "Continuous Integration"
+      },
+      {
+        "id": "urn:ngm:class:continuous-delivery",
+        "label": "Continuous Delivery"
+      },
+      {
+        "id": "urn:ngm:class:continuous-deployment",
+        "label": "Continuous Deployment"
+      },
+      {
+        "id": "urn:ngm:class:infrastructure-as-code",
+        "label": "Infrastructure as Code"
+      },
+      {
+        "id": "urn:ngm:class:monitoring-system",
+        "label": "Monitoring System"
+      },
+      {
+        "id": "urn:ngm:class:incident-response",
+        "label": "Incident Response"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      },
+      {
+        "id": "urn:ngm:class:build-automation",
+        "label": "Build Automation"
+      },
+      {
+        "id": "urn:ngm:class:automated-testing",
+        "label": "Automated Testing"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:site-reliability-engineering",
+        "label": "Site Reliability Engineering"
+      },
+      {
+        "id": "urn:ngm:class:platform-engineering",
+        "label": "Platform Engineering"
+      },
+      {
+        "id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:containerisation",
+        "label": "Containerisation"
+      },
+      {
+        "id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:agile-software-development",
+        "label": "Agile Software Development"
+      },
+      {
+        "id": "urn:ngm:class:lean-software-development",
+        "label": "Lean Software Development"
+      },
+      {
+        "id": "urn:ngm:class:shift-left-testing",
+        "label": "Shift-Left Testing"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:waterfall-development",
+        "label": "Waterfall Development"
+      },
+      {
+        "id": "urn:ngm:class:siloed-operations",
+        "label": "Siloed Operations"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      },
+      {
+        "id": "urn:ngm:class:devsecops",
+        "label": "DevSecOps"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:docker",
+        "label": "Docker"
+      },
+      {
+        "id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
+      },
+      {
+        "id": "urn:ngm:class:github-actions",
+        "label": "GitHub Actions"
+      },
+      {
+        "id": "urn:ngm:class:terraform",
+        "label": "Terraform"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:software-development",
+        "label": "Software Development"
+      },
+      {
+        "id": "urn:ngm:class:cloud-platform",
+        "label": "Cloud Platform"
+      },
+      {
+        "id": "urn:ngm:class:security-scanning",
+        "label": "Security Scanning"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:software-delivery-lifecycle",
+        "label": "Software Delivery Lifecycle"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:feature-flags",
+        "label": "Feature Flags"
+      },
+      {
+        "id": "urn:ngm:class:observability-platform",
+        "label": "Observability Platform"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

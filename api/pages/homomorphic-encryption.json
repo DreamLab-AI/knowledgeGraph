@@ -4,55 +4,155 @@
   "slug": "homomorphic-encryption",
   "public": true,
   "classIri": "urn:ngm:class:homomorphic-encryption",
-  "domain": "infrastructure",
-  "definition": "Homomorphic encryption is a cryptographic scheme that allows arithmetic and logical operations to be performed directly on ciphertext, producing an encrypted result that decrypts to the same value as if the operations had been applied to the plaintext. Fully homomorphic encryption (FHE) supports arbitrary computation over encrypted data, enabling cloud services to process sensitive inputs without ever decrypting them. It sits at the intersection of cryptography and privacy-preserving technology, with practical schemes including BGV, BFV, CKKS, and TFHE.",
+  "domain": "security",
+  "definition": "Homomorphic Encryption (HE) is a cryptographic paradigm that permits arbitrary arithmetic and logical operations to be performed directly on ciphertext, yielding an encrypted result that, upon decryption, matches the outcome of the same operations applied to the original plaintext. Fully Homomorphic Encryption (FHE), first constructed by Craig Gentry in 2009 using ideal-lattice hard problems, supports an unbounded depth of operations and enables third parties \u2014 such as cloud compute providers \u2014 to process sensitive data without ever gaining access to it in plaintext form. Practical FHE schemes include BGV and BFV for exact integer arithmetic, CKKS for approximate real-number arithmetic (widely used in machine-learning inference), and TFHE for fast gate-by-gate bootstrapping over Boolean circuits.",
   "subClassOf": [
-    {
-      "id": "urn:ngm:class:infra-security-and-identity",
-      "label": "Infra Security and Identity"
-    },
     {
       "id": "urn:ngm:class:cryptography",
       "label": "Cryptography"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
+  "qualityScore": 0.74,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:bgv-scheme",
+        "label": "BGV Scheme"
+      },
+      {
+        "id": "urn:ngm:class:ckks-scheme",
+        "label": "CKKS Scheme"
+      },
+      {
+        "id": "urn:ngm:class:tfhe-scheme",
+        "label": "TFHE Scheme"
+      },
+      {
+        "id": "urn:ngm:class:bootstrapping",
+        "label": "Bootstrapping"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:lattice-based-cryptography",
+        "label": "Lattice-Based Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:learning-with-errors",
+        "label": "Learning With Errors"
+      }
+    ],
     "enables": [
       {
-        "id": "urn:ngm:class:privacy-preserving-technology",
-        "label": "Privacy Preserving Technology"
+        "id": "urn:ngm:class:secure-multi-party-computation",
+        "label": "Secure Multi-Party Computation"
       },
       {
         "id": "urn:ngm:class:federated-learning",
         "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:private-information-retrieval",
+        "label": "Private Information Retrieval"
+      },
+      {
+        "id": "urn:ngm:class:encrypted-machine-learning",
+        "label": "Encrypted Machine Learning"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:post-quantum-cryptography",
+        "label": "Post-Quantum Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:noise-management",
+        "label": "Noise Management"
+      }
+    ],
     "implements": [],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:differential-privacy",
         "label": "Differential Privacy"
+      },
+      {
+        "id": "urn:ngm:class:secure-enclaves",
+        "label": "Secure Enclaves"
+      },
+      {
+        "id": "urn:ngm:class:garbled-circuits",
+        "label": "Garbled Circuits"
       }
     ],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:confidential-computing",
+        "label": "Confidential Computing"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:ring-learning-with-errors",
+        "label": "Ring Learning With Errors"
+      },
+      {
+        "id": "urn:ngm:class:number-theoretic-transform",
+        "label": "Number Theoretic Transform"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:healthcare-data-privacy",
+        "label": "Healthcare Data Privacy"
+      },
+      {
+        "id": "urn:ngm:class:genomic-data-analysis",
+        "label": "Genomic Data Analysis"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:homomorphicencryption-org",
+        "label": "HomomorphicEncryption.org"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-jtc1-sc27",
+        "label": "ISO/IEC JTC1 SC27"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:privacy-preserving-technology",
+        "label": "Privacy Preserving Technology"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:zero-knowledge-proof",
         "label": "Zero-Knowledge Proof"
       },
       {
-        "id": "urn:ngm:class:homomorphic-encryption-for-machine-learning",
-        "label": "Homomorphic Encryption for Machine Learning"
+        "id": "urn:ngm:class:oblivious-ram",
+        "label": "Oblivious RAM"
+      },
+      {
+        "id": "urn:ngm:class:functional-encryption",
+        "label": "Functional Encryption"
       }
     ]
   },

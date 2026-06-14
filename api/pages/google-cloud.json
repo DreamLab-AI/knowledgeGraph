@@ -4,8 +4,8 @@
   "slug": "google-cloud",
   "public": true,
   "classIri": "urn:ngm:class:google-ai-technology-corporation-cloud",
-  "domain": "artificial-intelligence",
-  "definition": "Google Cloud is a cloud computing platform offering infrastructure, data, and machine learning services operated by Google.",
+  "domain": "infrastructure",
+  "definition": "Google Cloud (formally Google Cloud Platform, GCP) is a suite of public cloud computing services operated by Google LLC, providing infrastructure-as-a-service (IaaS), platform-as-a-service (PaaS), and software-as-a-service (SaaS) offerings spanning compute, storage, networking, data analytics, and artificial intelligence. It is built on the same global infrastructure that powers Google Search, YouTube, and Google Workspace, spanning a worldwide network of data centres connected by Google's private fibre backbone. Google Cloud competes directly with Amazon Web Services and Microsoft Azure as one of the three dominant hyperscale cloud providers, and differentiates through deep integration of AI/ML capabilities via Vertex AI, TPU accelerator hardware, and pre-trained foundation models such as Gemini.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:cloud-platform",
@@ -13,31 +13,146 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
-  "maturity": "established",
+  "qualityScore": 0.72,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:vertex-ai",
+        "label": "Vertex AI"
+      },
+      {
+        "id": "urn:ngm:class:google-kubernetes-engine",
+        "label": "Google Kubernetes Engine"
+      },
+      {
+        "id": "urn:ngm:class:bigquery",
+        "label": "BigQuery"
+      },
+      {
+        "id": "urn:ngm:class:cloud-storage",
+        "label": "Cloud Storage"
+      },
+      {
+        "id": "urn:ngm:class:cloud-run",
+        "label": "Cloud Run"
+      },
+      {
+        "id": "urn:ngm:class:tensor-processing-unit",
+        "label": "Tensor Processing Unit"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:cloud-computing",
         "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:data-centre",
+        "label": "Data Centre"
+      },
+      {
+        "id": "urn:ngm:class:internet-connectivity",
+        "label": "Internet Connectivity"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:serverless-computing",
+        "label": "Serverless Computing"
+      },
+      {
+        "id": "urn:ngm:class:data-analytics",
+        "label": "Data Analytics"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:virtualisation",
+        "label": "Virtualisation"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:amazon-web-services",
+        "label": "Amazon Web Services"
+      },
+      {
+        "id": "urn:ngm:class:microsoft-azure",
+        "label": "Microsoft Azure"
+      },
+      {
+        "id": "urn:ngm:class:on-premises-infrastructure",
+        "label": "On-Premises Infrastructure"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
+      },
+      {
+        "id": "urn:ngm:class:tensorflow",
+        "label": "TensorFlow"
+      },
+      {
+        "id": "urn:ngm:class:software-defined-networking",
+        "label": "Software-Defined Networking"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:devops",
+        "label": "DevOps"
+      },
+      {
+        "id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      },
+      {
+        "id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:google-workspace",
+        "label": "Google Workspace"
+      },
+      {
+        "id": "urn:ngm:class:cloud-native-computing",
+        "label": "Cloud Native Computing"
+      },
+      {
+        "id": "urn:ngm:class:identity-and-access-management",
+        "label": "Identity and Access Management"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:carbon-offsetting",
   "domain": "governance",
-  "definition": "The practice of compensating for emissions of carbon dioxide or other greenhouse gases by funding an equivalent reduction or removal of emissions elsewhere.",
+  "definition": "Carbon offsetting is the practice whereby an entity compensates for its greenhouse gas emissions by financing or undertaking activities that achieve an equivalent reduction or removal of carbon dioxide equivalent (CO2e) elsewhere in the global economy. Offsets are quantified in standardised units \u2014 typically one tonne of CO2e per credit \u2014 and must satisfy criteria of additionality, permanence, measurability, and independent verification to be considered credible. The mechanism operates across compliance markets (e.g. the EU Emissions Trading System) and voluntary markets (e.g. Gold Standard, Verra VCS), and spans project types including afforestation, improved cookstoves, methane capture, and direct air capture. Controversy around offset quality, permanence risks, and potential for greenwashing has driven increasing scrutiny from regulators, standards bodies, and civil society.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sustainability",
@@ -13,31 +13,121 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.74,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:carbon-credits",
+        "label": "Carbon Credits"
+      },
+      {
+        "id": "urn:ngm:class:carbon-registry",
+        "label": "Carbon Registry"
+      },
+      {
+        "id": "urn:ngm:class:offset-project",
+        "label": "Offset Project"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:carbon-accounting",
         "label": "Carbon Accounting"
+      },
+      {
+        "id": "urn:ngm:class:additionality",
+        "label": "Additionality"
+      },
+      {
+        "id": "urn:ngm:class:measurement-reporting-and-verification",
+        "label": "Measurement Reporting and Verification"
       }
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:sustainability",
-        "label": "Sustainability"
+        "id": "urn:ngm:class:net-zero",
+        "label": "Net Zero"
+      },
+      {
+        "id": "urn:ngm:class:carbon-neutrality",
+        "label": "Carbon Neutrality"
+      },
+      {
+        "id": "urn:ngm:class:climate-finance",
+        "label": "Climate Finance"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:carbon-reduction",
+        "label": "Carbon Reduction"
+      },
+      {
+        "id": "urn:ngm:class:greenwashing",
+        "label": "Greenwashing"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:voluntary-carbon-market",
+        "label": "Voluntary Carbon Market"
+      },
+      {
+        "id": "urn:ngm:class:emissions-trading-scheme",
+        "label": "Emissions Trading Scheme"
+      },
+      {
+        "id": "urn:ngm:class:life-cycle-assessment",
+        "label": "Life Cycle Assessment"
+      }
+    ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:gold-standard",
+        "label": "Gold Standard"
+      },
+      {
+        "id": "urn:ngm:class:verified-carbon-standard",
+        "label": "Verified Carbon Standard"
+      },
+      {
+        "id": "urn:ngm:class:iso-14064",
+        "label": "ISO 14064"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:climate-change",
+        "label": "Climate Change"
+      },
+      {
+        "id": "urn:ngm:class:paris-agreement",
+        "label": "Paris Agreement"
+      },
+      {
+        "id": "urn:ngm:class:esg",
+        "label": "ESG"
+      },
+      {
+        "id": "urn:ngm:class:scope-3-emissions",
+        "label": "Scope 3 Emissions"
+      }
+    ]
   },
   "wikilinks": [
     {

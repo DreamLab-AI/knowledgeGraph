@@ -5,18 +5,35 @@
   "public": true,
   "classIri": "urn:ngm:class:neur-ips",
   "domain": "ai",
-  "definition": "NeurIPS (Neural Information Processing Systems) is the premier annual machine learning and computational neuroscience research conference, held each December and publishing its proceedings through the NeurIPS Foundation. Founded in 1987, it is consistently ranked among the most selective and impactful venues in artificial intelligence, attracting tens of thousands of attendees and shaping research agendas across deep learning, reinforcement learning, probabilistic modelling, and AI ethics. Acceptance of a NeurIPS paper signals high-quality, peer-reviewed contributions that frequently define the state of the art.",
+  "definition": "NeurIPS (Neural Information Processing Systems) is the premier annual international conference on machine learning, computational neuroscience, and artificial intelligence, held each December and governed by the NeurIPS Foundation. Founded in 1987 at the intersection of neuroscience and statistical learning theory, it has evolved into the most selective and impactful peer-reviewed publication venue in AI, shaping research agendas across deep learning, reinforcement learning, probabilistic modelling, generative AI, and AI ethics. Accepted papers undergo rigorous double-blind peer review and are freely available via the NeurIPS Proceedings archive, with acceptance rates typically below 26 percent in recent years. The conference serves as a primary mechanism for the global dissemination, validation, and agenda-setting of foundational machine learning research.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ai-research-area",
-      "label": "AI Research Area"
+      "id": "urn:ngm:class:academic-conference",
+      "label": "Academic Conference"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.76,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:workshop",
+        "label": "Workshop"
+      },
+      {
+        "id": "urn:ngm:class:tutorial",
+        "label": "Tutorial"
+      },
+      {
+        "id": "urn:ngm:class:poster-session",
+        "label": "Poster Session"
+      },
+      {
+        "id": "urn:ngm:class:competition",
+        "label": "Competition"
+      }
+    ],
     "requires": [],
     "enables": [
       {
@@ -24,14 +41,34 @@
         "label": "AI Safety Research"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline-framework",
-        "label": "Machine Learning Framework"
+        "id": "urn:ngm:class:peer-review",
+        "label": "Peer Review"
+      },
+      {
+        "id": "urn:ngm:class:open-access-research",
+        "label": "Open Access Research"
+      },
+      {
+        "id": "urn:ngm:class:reproducibility",
+        "label": "Reproducibility"
+      },
+      {
+        "id": "urn:ngm:class:research-dissemination",
+        "label": "Research Dissemination"
       }
     ],
     "dependsOn": [
       {
         "id": "urn:ngm:class:high-performance-computing",
         "label": "High-Performance Computing"
+      },
+      {
+        "id": "urn:ngm:class:double-blind-review",
+        "label": "Double-Blind Review"
+      },
+      {
+        "id": "urn:ngm:class:programme-committee",
+        "label": "Programme Committee"
       }
     ],
     "implements": [],
@@ -51,16 +88,50 @@
       {
         "id": "urn:ngm:class:iccv",
         "label": "ICCV"
+      },
+      {
+        "id": "urn:ngm:class:aaai",
+        "label": "AAAI"
+      },
+      {
+        "id": "urn:ngm:class:ijcai",
+        "label": "IJCAI"
       }
     ],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:neuroscience",
+        "label": "Neuroscience"
+      },
+      {
+        "id": "urn:ngm:class:statistics",
+        "label": "Statistics"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-science",
+        "label": "Cognitive Science"
+      }
+    ],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:fairness-in-machine-learning",
+        "label": "Fairness in Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:open-science",
+        "label": "Open Science"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -77,7 +148,15 @@
       },
       {
         "id": "urn:ngm:class:evaluation-benchmarks-and-leaderboards",
-        "label": "Evaluation benchmarks and leaderboards"
+        "label": "Evaluation Benchmarks and Leaderboards"
+      },
+      {
+        "id": "urn:ngm:class:computational-neuroscience",
+        "label": "Computational Neuroscience"
+      },
+      {
+        "id": "urn:ngm:class:ai-research",
+        "label": "AI Research"
       }
     ]
   },

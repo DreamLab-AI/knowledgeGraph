@@ -4,7 +4,7 @@
   "slug": "jax",
   "public": true,
   "classIri": "urn:ngm:class:jax",
-  "domain": "deep-learning",
+  "domain": "machine-learning",
   "definition": "A Python library from Google for high-performance numerical computing and machine learning research, combining NumPy-style array operations with automatic differentiation and just-in-time compilation.",
   "subClassOf": [
     {

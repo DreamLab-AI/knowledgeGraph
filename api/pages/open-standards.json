@@ -4,8 +4,8 @@
   "slug": "open-standards",
   "public": true,
   "classIri": "urn:ngm:class:open-standards",
-  "domain": "metaverse",
-  "definition": "Open standards are publicly available, openly developed specifications that any party may implement, promoting interoperability and reducing dependence on a single vendor.",
+  "domain": "standards",
+  "definition": "Open standards are publicly available, transparently developed technical specifications whose adoption is not contingent on royalties or proprietary licences, enabling any party to implement them independently. They are produced through open, consensus-driven processes\u2014typically stewarded by recognised standards bodies such as W3C, IEEE, ISO, or IETF\u2014and their normative texts are accessible to the public. By decoupling specification from implementation, open standards promote interoperability, vendor diversity, and long-term ecosystem resilience. They are foundational to the internet, the web, spatial computing, AI model exchange, and distributed collaboration infrastructures.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:standards",
@@ -13,31 +13,157 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
-  "maturity": "established",
+  "qualityScore": 0.75,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:specification",
+        "label": "Specification"
+      },
+      {
+        "id": "urn:ngm:class:conformance-testing",
+        "label": "Conformance Testing"
+      },
+      {
+        "id": "urn:ngm:class:reference-implementation",
+        "label": "Reference Implementation"
+      }
+    ],
     "requires": [
       {
-        "id": "urn:ngm:class:standards",
-        "label": "Standards"
+        "id": "urn:ngm:class:consensus-process",
+        "label": "Consensus Process"
+      },
+      {
+        "id": "urn:ngm:class:open-governance",
+        "label": "Open Governance"
       }
     ],
     "enables": [
       {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:vendor-neutrality",
+        "label": "Vendor Neutrality"
+      },
+      {
         "id": "urn:ngm:class:khronos-open-xr",
         "label": "Khronos OpenXR"
+      },
+      {
+        "id": "urn:ngm:class:gl-tf",
+        "label": "glTF"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:open-source",
+        "label": "Open Source"
+      },
+      {
+        "id": "urn:ngm:class:intellectual-property-rights",
+        "label": "Intellectual Property Rights"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:frand-licensing",
+        "label": "FRAND Licensing"
+      },
+      {
+        "id": "urn:ngm:class:royalty-free-licensing",
+        "label": "Royalty-Free Licensing"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:proprietary-standard",
+        "label": "Proprietary Standard"
+      },
+      {
+        "id": "urn:ngm:class:closed-specification",
+        "label": "Closed Specification"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:onnx-standard",
+        "label": "ONNX Standard"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:request-for-comments",
+        "label": "Request for Comments"
+      },
+      {
+        "id": "urn:ngm:class:technical-committee",
+        "label": "Technical Committee"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:digital-sovereignty",
+        "label": "Digital Sovereignty"
+      },
+      {
+        "id": "urn:ngm:class:technology-transfer",
+        "label": "Technology Transfer"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:w3c",
+        "label": "W3C"
+      },
+      {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      },
+      {
+        "id": "urn:ngm:class:ieee",
+        "label": "IEEE"
+      },
+      {
+        "id": "urn:ngm:class:iso",
+        "label": "ISO"
+      },
+      {
+        "id": "urn:ngm:class:khronos-group",
+        "label": "Khronos Group"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:standards-ecosystem",
+        "label": "Standards Ecosystem"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:open-data",
+        "label": "Open Data"
+      },
+      {
+        "id": "urn:ngm:class:api-design",
+        "label": "API Design"
+      },
+      {
+        "id": "urn:ngm:class:protocol",
+        "label": "Protocol"
+      }
+    ]
   },
   "wikilinks": [
     {

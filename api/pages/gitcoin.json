@@ -5,63 +5,140 @@
   "public": true,
   "classIri": "urn:ngm:class:gitcoin",
   "domain": "blockchain",
-  "definition": "Gitcoin is a blockchain-based platform founded in 2017 that funds open-source software development and public goods through decentralised grant programmes, bounties, and quadratic funding rounds. It popularised the application of quadratic funding mechanisms to allocate matching pools democratically, amplifying contributions from a broad base of small donors relative to large single donors. Gitcoin has distributed tens of millions of dollars to Ethereum ecosystem developers and has expanded into identity and Sybil resistance through the Gitcoin Passport credential system.",
+  "definition": "Gitcoin is a blockchain-based public goods funding platform founded in 2017 that finances open-source software development through decentralised grant programmes, bounties, and hackathons, most notably employing quadratic funding to allocate matching pools democratically. The platform uses the Ethereum ecosystem as its primary coordination layer, with GTC governance tokens enabling decentralised community control via its DAO. Gitcoin Passport, a credential aggregation system layering Verifiable Credentials from multiple identity providers, addresses Sybil resistance within open grant rounds and serves as broader Web3 identity infrastructure. Together these mechanisms position Gitcoin as a reference implementation of public goods coordination, bridging open-source software sustainability with decentralised finance and digital identity.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:knowledge-graph-publication-classifier-goods-funding",
+      "id": "urn:ngm:class:public-goods-funding",
       "label": "Public Goods Funding"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [
-      {
-        "id": "urn:ngm:class:grant-programs",
-        "label": "Grant Programs"
-      },
-      {
-        "id": "urn:ngm:class:retroactive-public-goods-funding",
-        "label": "Retroactive Public Goods Funding"
-      }
-    ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [
+    "hasPart": [
       {
         "id": "urn:ngm:class:gitcoin-passport",
         "label": "Gitcoin Passport"
       },
       {
+        "id": "urn:ngm:class:gitcoin-grants",
+        "label": "Gitcoin Grants"
+      },
+      {
+        "id": "urn:ngm:class:gtc-token",
+        "label": "GTC Token"
+      }
+    ],
+    "requires": [
+      {
         "id": "urn:ngm:class:sybil-resistance",
         "label": "Sybil Resistance"
-      }
-    ],
-    "supports": [
+      },
       {
-        "id": "urn:ngm:class:decentralised-autonomous-organisation",
-        "label": "Decentralised Autonomous Organisation"
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
       }
     ],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
+    "enables": [
       {
         "id": "urn:ngm:class:quadratic-funding",
         "label": "Quadratic Funding"
+      },
+      {
+        "id": "urn:ngm:class:retroactive-public-goods-funding",
+        "label": "Retroactive Public Goods Funding"
+      },
+      {
+        "id": "urn:ngm:class:open-source-sustainability",
+        "label": "Open Source Sustainability"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-grant-programme",
+        "label": "Decentralised Grant Programme"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:open-source-software",
+        "label": "Open Source Software"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:traditional-grant-making",
+        "label": "Traditional Grant-Making"
+      },
+      {
+        "id": "urn:ngm:class:venture-capital",
+        "label": "Venture Capital"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self-Sovereign Identity"
+      },
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "id": "urn:ngm:class:coordination-mechanism",
+        "label": "Coordination Mechanism"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
       },
       {
         "id": "urn:ngm:class:dao",
         "label": "DAO"
       },
       {
-        "id": "urn:ngm:class:open-source-software",
-        "label": "Open Source Software"
+        "id": "urn:ngm:class:on-chain-governance",
+        "label": "On-Chain Governance"
+      },
+      {
+        "id": "urn:ngm:class:identity-attestation",
+        "label": "Identity Attestation"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:web3-ecosystem",
+        "label": "Web3 Ecosystem"
+      },
+      {
+        "id": "urn:ngm:class:ethereum-developer-community",
+        "label": "Ethereum Developer Community"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:quadratic-voting",
+        "label": "Quadratic Voting"
+      },
+      {
+        "id": "urn:ngm:class:protocol-labs",
+        "label": "Protocol Labs"
+      },
+      {
+        "id": "urn:ngm:class:optimism-retroactive-public-goods-funding",
+        "label": "Optimism Retroactive Public Goods Funding"
       }
     ]
   },

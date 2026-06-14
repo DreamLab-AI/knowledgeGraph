@@ -4,48 +4,103 @@
   "slug": "green-finance",
   "public": true,
   "classIri": "urn:ngm:class:green-finance",
-  "domain": "blockchain",
-  "definition": "Green finance is the set of financial instruments, investment strategies, market mechanisms, and regulatory frameworks that channel capital towards environmentally sustainable projects and activities, with the explicit goal of mitigating climate change, protecting biodiversity, and supporting the transition to a low-carbon economy. It encompasses green bonds, sustainability-linked loans, green funds, carbon markets, and blended finance structures, underpinned by taxonomies such as the EU Taxonomy for Sustainable Activities that define what qualifies as environmentally sustainable. Blockchain technology is being applied in green finance to provide transparent, immutable registries for carbon credits and ESG data, reducing double-counting and greenwashing risks.",
+  "domain": "finance",
+  "definition": "Green finance is the broad domain of financial instruments, investment strategies, market mechanisms, and regulatory frameworks that direct capital towards environmentally sustainable economic activities with the explicit objectives of mitigating climate change, halting biodiversity loss, and accelerating the transition to a low-carbon circular economy. It encompasses green bonds, sustainability-linked loans and bonds, green funds, voluntary and compliance carbon markets, blended finance structures, and impact investment vehicles, all underpinned by taxonomic classification systems such as the EU Taxonomy for Sustainable Activities and the ICMA Green Bond Principles that define and verify environmental eligibility criteria. Green finance sits at the intersection of macroeconomic policy, capital markets, and environmental science, requiring robust ESG disclosure, lifecycle assessment methodologies, and increasingly blockchain-backed registries to prevent greenwashing and ensure traceability of environmental claims.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:bc-governance-and-regulation",
-      "label": "Blockchain Governance and Regulation"
+      "id": "urn:ngm:class:sustainable-finance",
+      "label": "Sustainable Finance"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:green-bonds",
+        "label": "Green Bonds"
+      },
+      {
+        "id": "urn:ngm:class:sustainability-linked-loans",
+        "label": "Sustainability-Linked Loans"
+      },
+      {
+        "id": "urn:ngm:class:carbon-markets",
+        "label": "Carbon Markets"
+      },
+      {
+        "id": "urn:ngm:class:impact-investing",
+        "label": "Impact Investing"
+      },
+      {
+        "id": "urn:ngm:class:blended-finance",
+        "label": "Blended Finance"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:esg-reporting",
+        "label": "ESG Reporting"
+      },
+      {
+        "id": "urn:ngm:class:green-taxonomy",
+        "label": "Green Taxonomy"
+      },
+      {
+        "id": "urn:ngm:class:life-cycle-assessment",
+        "label": "Life Cycle Assessment"
+      }
+    ],
     "enables": [
+      {
+        "id": "urn:ngm:class:environmental-sustainability",
+        "label": "Environmental Sustainability"
+      },
       {
         "id": "urn:ngm:class:carbon-credit-tracking",
         "label": "Carbon Credit Tracking"
       },
       {
-        "id": "urn:ngm:class:environmental-sustainability",
-        "label": "Environmental Sustainability"
+        "id": "urn:ngm:class:net-zero-transition",
+        "label": "Net Zero Transition"
+      },
+      {
+        "id": "urn:ngm:class:renewable-energy-investment",
+        "label": "Renewable Energy Investment"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:conventional-finance",
+        "label": "Conventional Finance"
+      },
+      {
+        "id": "urn:ngm:class:greenwashing",
+        "label": "Greenwashing"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-tokenisation",
+        "label": "Blockchain Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:regenerative-finance",
+        "label": "Regenerative Finance"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:carbon-credits",
         "label": "Carbon Credits"
       },
-      {
-        "id": "urn:ngm:class:esg-reporting",
-        "label": "ESG Reporting"
-      }
-    ],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
       {
         "id": "urn:ngm:class:esg-investing",
         "label": "ESG Investing"
@@ -53,6 +108,49 @@
       {
         "id": "urn:ngm:class:financial-instruments",
         "label": "Financial Instruments"
+      },
+      {
+        "id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:icma-green-bond-principles",
+        "label": "ICMA Green Bond Principles"
+      },
+      {
+        "id": "urn:ngm:class:eu-taxonomy",
+        "label": "EU Taxonomy"
+      },
+      {
+        "id": "urn:ngm:class:tcfd",
+        "label": "TCFD"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:sustainable-finance",
+        "label": "Sustainable Finance"
+      },
+      {
+        "id": "urn:ngm:class:capital-markets",
+        "label": "Capital Markets"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:corporate-social-responsibility",
+        "label": "Corporate Social Responsibility"
+      },
+      {
+        "id": "urn:ngm:class:climate-risk",
+        "label": "Climate Risk"
+      },
+      {
+        "id": "urn:ngm:class:sustainable-development-goals",
+        "label": "Sustainable Development Goals"
       }
     ]
   },

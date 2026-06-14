@@ -4,7 +4,7 @@
   "slug": "institutional-investment",
   "public": true,
   "classIri": "urn:ngm:class:institutional-investment",
-  "domain": "general",
+  "domain": "finance",
   "definition": "The investment of pooled funds by organisations such as pension funds, insurers, endowments and asset managers on behalf of their beneficiaries or clients.",
   "subClassOf": [
     {

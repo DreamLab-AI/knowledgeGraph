@@ -21,7 +21,7 @@ public:: true
   "@type": "Class",
   "label": "Civitai",
   "definition": "Civitai is a community-driven online platform for sharing, discovering, and downloading fine-tuned generative AI image models, primarily Stable Diffusion checkpoints, LoRA adaptors, embeddings, and VAEs, enabling practitioners and artists to distribute specialised model weights trained on specific styles, characters, or concepts without requiring the infrastructure overhead of operating their own model registry. It functions as both a social network for AI artists and a technical marketplace for model artefacts.",
-  "domain": "media",
+  "domain": "ai",
   "maturity": "emerging",
   "subClassOf": [{"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"}],
   "relations": {

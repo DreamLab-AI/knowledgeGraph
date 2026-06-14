@@ -1,22 +1,107 @@
 - ### Definition
-  - Domain adaptation is a sub-field of transfer learning concerned with reducing the performance degradation that occurs when a model trained on a labelled source domain is applied to a target domain whose data distribution differs. Adaptation methods range from feature alignment (learning domain-invariant representations via adversarial training or maximum mean discrepancy minimisation) to instance re-weighting and self-training on unlabelled target data. It is applied extensively in NLP, computer vision, and speech recognition when labelled target data is scarce or costly to acquire.
+  - Domain adaptation is a sub-field of [[Transfer Learning]] that addresses the **domain shift problem**: a model optimised on labelled data from a source distribution suffers degraded performance when deployed against a target distribution whose marginal or conditional statistics differ. Core methods span feature-alignment strategies (adversarial training a la [[Domain-Adversarial Neural Network]], [[Maximum Mean Discrepancy]] minimisation, and [[Optimal Transport]]-based alignment), instance re-weighting to correct for [[Covariate Shift]], and self-training / pseudo-labelling pipelines that exploit unlabelled target data. Domain adaptation is foundational to practical [[Machine Learning]] deployment wherever annotated target data is scarce, expensive, or legally restricted.
+
+- ### Overview
+  - **Why it matters** — Real-world data is rarely stationary. A model trained on newswire English will degrade on social-media text; a medical image classifier trained on one scanner vendor will fail on another. Domain adaptation provides principled methods to bridge these gaps without retraining from scratch.
+  - **Problem taxonomy**
+    - *Covariate shift* — P(X) differs between source and target but P(Y|X) is shared.
+    - *Label shift* (prior probability shift) — P(Y) differs.
+    - *Concept drift* — P(Y|X) itself changes, the hardest case.
+    - *Dataset bias* — systematic collection artefacts cause apparent shift.
+  - **Supervision spectrum**
+    - *Unsupervised domain adaptation (UDA)* — no labelled target data. The most studied setting.
+    - *Semi-supervised domain adaptation* — a small labelled target set supplements a large unlabelled pool.
+    - *Supervised domain adaptation* — a modest labelled target set; often reduces to [[Fine Tuning]].
+    - *Multi-source domain adaptation* — multiple labelled source domains; requires weighting or mixing strategies.
+  - **Scale** — With the rise of [[Large Language Models]] and [[Foundation Models]], domain adaptation has partially merged with continued pre-training and [[Parameter Efficient Fine Tuning]] (LoRA, prefix tuning, adapters), making it one of the most economically significant machine-learning techniques in production.
+
+- ### Key Mechanisms
+  - **Feature alignment**
+    - [[Domain-Adversarial Neural Network]] (DANN) — trains a shared encoder to produce representations that fool a domain discriminator; the gradient reversal layer propagates adversarial signal through the encoder.
+    - [[Maximum Mean Discrepancy]] (MMD) — kernel-based statistic measuring the distance between source and target embedding distributions; minimising MMD closes the distributional gap.
+    - [[Optimal Transport]] — treats alignment as an earth-mover's problem; DeepJDOT and WDGRL variants are geometrically principled.
+  - **Instance re-weighting**
+    - Importance-weighted empirical risk minimisation: up-weight source samples whose density ratio P_target(x)/P_source(x) is high.
+    - Kernel Mean Matching (KMM) estimates weights without density estimation.
+  - **Self-training and pseudo-labelling**
+    - [[Self Training]] — iteratively assign pseudo-labels to high-confidence target examples and re-train; works well when teacher confidence is calibrated.
+    - [[Pseudo Labelling]] — a special case of self-training using hard label assignments.
+    - Mean Teacher and consistency-regularisation variants use temporal ensembling to stabilise pseudo labels.
+  - **Generative alignment**
+    - [[Generative Adversarial Network]] (CycleGAN, UNIT) translates source images into the target visual style; the adapted images then train a task model without distribution shift.
+    - Useful in computer vision when pixel-level alignment is tractable.
+  - **Parameter-efficient adaptation for large models**
+    - Continued pre-training on target-domain corpora, followed by [[Parameter Efficient Fine Tuning]] via LoRA, (IA)³, or adapter modules.
+    - [[Instruction Tuning]] and RLHF steer behavioural alignment after distributional alignment.
+
+- ### Applications and Use Cases
+  - **Natural language processing**
+    - Sentiment analysis on product reviews when labelled data exists only for a different product category.
+    - Named entity recognition across domains (biomedical, legal, financial) starting from a general English model.
+    - [[Machine Translation]] quality improvement from high-resource to low-resource language pairs via pivot adaptation.
+    - Clinical NLP: adapting general LLMs to medical note understanding under privacy constraints.
+  - **Computer vision**
+    - Synthetic-to-real adaptation — training on rendered [[Synthetic Data]] (e.g., GTA5 driving scenes) and adapting to real-world dashcam footage for [[Autonomous Driving]] perception.
+    - Cross-modality medical imaging: adapting a CT-trained segmentation model to MRI without retraining from scratch.
+    - Satellite and aerial image analysis across sensor types and geographic regions.
+  - **Speech and audio**
+    - Speaker adaptation in [[Automatic Speech Recognition]] — fine-tuning acoustic models to individual voice characteristics.
+    - Cross-language and cross-accent adaptation for ASR and speech synthesis.
+  - **Scientific computing and simulation**
+    - [[Physics-Informed Neural Networks]] adapting to new physical regimes or boundary conditions.
+    - Molecular property prediction across chemical spaces.
+  - **Federated and privacy-preserving settings**
+    - [[Federated Learning]] inherently involves domain adaptation when local distributions across clients differ (non-IID data).
+
+- ### Relationships
+  - partOf:: [[Transfer Learning]]
+  - partOf:: [[Machine Learning]]
+  - requires:: [[Training Data]]
+  - requires:: [[Source Domain]]
+  - requires:: [[Target Domain]]
+  - dependsOn:: [[Pre Training]]
+  - dependsOn:: [[Representation Learning]]
+  - enables:: [[Fine Tuning]]
+  - enables:: [[Zero Shot Learning]]
+  - enables:: [[Low Resource NLP]]
+  - uses:: [[Adversarial Training]]
+  - uses:: [[Optimal Transport]]
+  - uses:: [[Self Training]]
+  - uses:: [[Pseudo Labelling]]
+  - uses:: [[Maximum Mean Discrepancy]]
+  - contrastsWith:: [[Domain Generalisation]]
+  - contrastsWith:: [[Multi Task Learning]]
+  - contrastsWith:: [[Meta Learning]]
+  - relatedTo:: [[Knowledge Distillation]]
+  - relatedTo:: [[Covariate Shift]]
+  - relatedTo:: [[Concept Drift]]
+  - relatedTo:: [[Distribution Shift]]
+  - relatedTo:: [[Parameter Efficient Fine Tuning]]
+  - bridges-to:: [[Federated Learning]]
+  - bridges-to:: [[Continual Learning]]
+
+- ### Contrasts and Boundaries
+  - **vs [[Domain Generalisation]]** — domain generalisation aims to train a model that works on any unseen target domain without any target data at test time (no adaptation step). Domain adaptation assumes access to (unlabelled) target data at adaptation time.
+  - **vs [[Multi Task Learning]]** — MTL trains jointly on multiple related tasks; domain adaptation focuses on bridging a source–target distributional gap for a single task.
+  - **vs [[Continual Learning]]** — continual learning addresses sequential task shifts over time whilst avoiding catastrophic forgetting; domain adaptation typically treats source and target as a single two-stage process.
+  - **vs [[Meta Learning]]** — meta-learning (few-shot) learns to adapt quickly from very few labelled examples; domain adaptation focuses on alignment between distributions rather than learning-to-learn across many tasks.
+
+- ### Standards and Context
+  - **Benchmarks**
+    - Office-31, Office-Home, and VisDA are canonical UDA computer-vision benchmarks.
+    - GLUE and SuperGLUE include domain-shifted evaluation sets relevant to NLP adaptation.
+    - DomainNet (six domains, 0.6 M images) is a large-scale multi-source UDA benchmark.
+  - **Community and venues**
+    - Adaptation research appears prominently at NeurIPS, ICML, ICLR, CVPR, EMNLP, and ACL.
+    - The [[WILDS]] benchmark package (Stanford) provides standardised distribution-shift evaluation across ecology, medical imaging, and text.
+  - **Relationship to regulatory context**
+    - In regulated sectors (healthcare, finance), domain adaptation must be paired with [[Model Evaluation]] on held-out target samples to satisfy validation requirements; unadapted models are frequently the root cause of deployment failures flagged in algorithmic audits.
 
 - ### Semantic Classification
   - owl-class:: domain-adaptation:Domain Adaptation
   - owl-role:: Concept
 
-- ### Relationships
-  - requires [[Pre Training]]
-  - requires [[Training Data]]
-  - enables [[Fine Tuning]]
-  - relatedTo [[Knowledge Distillation]]
-  - relatedTo [[Machine Learning Discipline]]
-
-- ### Content
-  - Domain adaptation addresses the domain shift problem: a model trained on abundant, labelled data from a source distribution (e.g., newswire text) degrades when evaluated on a target distribution (e.g., social media text) because the statistical properties of the input space differ. The severity of shift may be in feature marginals (covariate shift), label conditionals (concept drift), or both.
-  - The field broadly divides into unsupervised domain adaptation (UDA), where no labelled target data is available, and semi-supervised domain adaptation, where a small labelled target set exists alongside a larger unlabelled one. UDA methods include domain-adversarial neural networks (DANN), which learn a feature extractor that fools a domain discriminator into treating source and target representations as indistinguishable. Optimal transport-based methods such as DeepJDOT align source and target feature distributions in a geometrically principled manner.
-  - In large language models, domain adaptation is commonly achieved through continued pre-training on domain-specific corpora (e.g., biomedical or legal text), followed by supervised fine-tuning or LoRA-based parameter-efficient adaptation. Techniques such as instruction tuning and RLHF further steer model behaviour toward target-domain requirements. Domain adaptation is closely related to knowledge distillation when a large source-domain teacher is used to transfer representations to a smaller target-domain student model.
-
 - ### Provenance
-  - sources::
+  - sources:: Ganin & Lempitsky (DANN, 2015); Ben-David et al. (theoretical bounds on domain adaptation, 2010); Gretton et al. (MMD, 2012); Flammarion & Bach (optimal transport alignment); standard ML survey literature
+  - updated:: 2026-06-13
   - migration-date:: 2026-05-19T00:00:00Z

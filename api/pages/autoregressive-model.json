@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:autoregressive-model",
   "domain": "machine-learning",
-  "definition": "A model that generates a sequence by predicting each element conditioned on the previously generated elements, factorising the joint distribution into a product of conditional distributions.",
+  "definition": "An autoregressive model generates sequences by predicting each element conditioned on all previously generated elements, thereby factorising the joint probability distribution of a sequence into an ordered product of conditional distributions via the chain rule of probability. This approach yields exact log-likelihoods and a straightforward maximum-likelihood training objective, making it the dominant paradigm for large language models, neural audio synthesis, and image generation. Inference is inherently sequential \u2014 each token must be sampled before the next can be computed \u2014 creating a fundamental latency trade-off relative to parallel decoding strategies. Modern architectures such as the Transformer exploit masked self-attention to parallelise training while preserving the strictly left-to-right conditional structure at inference time.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:generative-model",
@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.75,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
@@ -21,23 +21,112 @@
       {
         "id": "urn:ngm:class:probabilistic-model",
         "label": "Probabilistic Model"
+      },
+      {
+        "id": "urn:ngm:class:chain-rule-of-probability",
+        "label": "Chain Rule of Probability"
+      },
+      {
+        "id": "urn:ngm:class:tokenisation",
+        "label": "Tokenisation"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:language-model",
         "label": "Language Model"
+      },
+      {
+        "id": "urn:ngm:class:text-generation",
+        "label": "Text Generation"
+      },
+      {
+        "id": "urn:ngm:class:neural-audio-synthesis",
+        "label": "Neural Audio Synthesis"
+      },
+      {
+        "id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:maximum-likelihood-estimation",
+        "label": "Maximum Likelihood Estimation"
+      },
+      {
+        "id": "urn:ngm:class:teacher-forcing",
+        "label": "Teacher Forcing"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "id": "urn:ngm:class:variational-autoencoder",
+        "label": "Variational Autoencoder"
+      },
+      {
+        "id": "urn:ngm:class:masked-language-model",
+        "label": "Masked Language Model"
+      },
+      {
+        "id": "urn:ngm:class:flow-based-model",
+        "label": "Flow-Based Model"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-ai",
+        "label": "Multimodal AI"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "id": "urn:ngm:class:masked-self-attention",
+        "label": "Masked Self-Attention"
+      },
+      {
+        "id": "urn:ngm:class:cross-entropy-loss",
+        "label": "Cross-Entropy Loss"
+      },
+      {
+        "id": "urn:ngm:class:softmax",
+        "label": "Softmax"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:recurrent-neural-network",
+        "label": "Recurrent Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:next-token-prediction",
+        "label": "Next-Token Prediction"
+      },
+      {
+        "id": "urn:ngm:class:beam-search",
+        "label": "Beam Search"
+      },
+      {
+        "id": "urn:ngm:class:speculative-decoding",
+        "label": "Speculative Decoding"
+      }
+    ]
   },
   "wikilinks": [
     {

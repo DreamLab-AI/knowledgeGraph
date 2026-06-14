@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:generative-content",
   "domain": "artificial-intelligence",
-  "definition": "Generative Content is digital media \u2014 text, imagery, audio, 3D assets, or code \u2014 produced by generative AI models rather than human authors. It encompasses outputs of large language models, diffusion models, GANs, and neural synthesis systems, and raises distinct questions of provenance, copyright, and quality assurance in metaverse and spatial computing pipelines.",
+  "definition": "Generative Content is digital media \u2014 text, imagery, audio, video, 3D assets, or code \u2014 produced algorithmically by generative AI models rather than created directly by human authors. It encompasses outputs of large language models, diffusion models, generative adversarial networks, variational autoencoders, and multimodal neural synthesis systems. The concept carries significant implications for provenance tracking, copyright attribution, content authenticity, and quality assurance, particularly in high-throughput pipelines for spatial computing, metaverse environments, and educational platforms.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-application",
@@ -13,43 +13,132 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.72,
+  "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:synthetic-text",
+        "label": "Synthetic Text"
+      },
+      {
+        "id": "urn:ngm:class:synthetic-image",
+        "label": "Synthetic Image"
+      },
+      {
+        "id": "urn:ngm:class:3-d-asset",
+        "label": "3D Asset"
+      },
+      {
+        "id": "urn:ngm:class:synthetic-audio",
+        "label": "Synthetic Audio"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:generative-ai",
         "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:metaverse-content-pipeline",
         "label": "Metaverse Content Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:procedural-generation",
+        "label": "Procedural Generation"
+      },
+      {
+        "id": "urn:ngm:class:personalised-learning",
+        "label": "Personalised Learning"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      },
+      {
+        "id": "urn:ngm:class:inference-infrastructure",
+        "label": "Inference Infrastructure"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:human-authored-content",
+        "label": "Human-Authored Content"
+      },
+      {
+        "id": "urn:ngm:class:procedural-content",
+        "label": "Procedural Content"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:c2pa-standard",
+        "label": "C2PA Standard"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:large-language-models",
         "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "id": "urn:ngm:class:generative-adversarial-network",
+        "label": "Generative Adversarial Network"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-ai",
+        "label": "Multimodal AI"
       }
     ],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
+    "supports": [
       {
-        "id": "urn:ngm:class:3-d-asset",
-        "label": "3D Asset"
+        "id": "urn:ngm:class:content-moderation",
+        "label": "Content Moderation"
       },
       {
         "id": "urn:ngm:class:educational-methodology",
         "label": "Educational Methodology"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:content-provenance",
+        "label": "Content Provenance"
+      },
+      {
+        "id": "urn:ngm:class:intellectual-property",
+        "label": "Intellectual Property"
+      },
+      {
+        "id": "urn:ngm:class:deepfake",
+        "label": "Deepfake"
       }
     ]
   },

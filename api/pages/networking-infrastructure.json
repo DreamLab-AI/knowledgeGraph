@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:networking-infrastructure",
   "domain": "infrastructure",
-  "definition": "The physical and logical systems\u2014including routers, CDNs, edge nodes, and communication protocols\u2014that underpin connectivity for distributed applications. For spatial computing and metaverse contexts, networking infrastructure must deliver sub-20ms latency, support massive concurrent connections, and enable geographically distributed state synchronisation.",
+  "definition": "Networking infrastructure comprises the integrated ensemble of physical hardware, logical protocols, and software-defined systems\u2014including routers, switches, fibre optic links, wireless access points, content delivery networks (CDNs), edge nodes, load balancers, and DNS services\u2014that collectively enable communication between computing systems across local, metropolitan, and wide-area scales. It forms the foundational substrate upon which distributed applications, cloud services, and real-time collaborative platforms depend, governing end-to-end latency, throughput, reliability, and security. Modern networking infrastructure increasingly incorporates software-defined networking (SDN), network function virtualisation (NFV), and programmable data planes that decouple control logic from physical forwarding hardware. For latency-sensitive domains such as spatial computing, extended reality, and distributed AI inference, infrastructure design must additionally satisfy stringent quality-of-service guarantees through traffic engineering, edge offloading, and geographically distributed state synchronisation.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-network-and-comms",
@@ -14,7 +14,7 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "emerging",
+  "maturity": "mature",
   "relationships": {
     "hasPart": [
       {
@@ -24,9 +24,38 @@
       {
         "id": "urn:ngm:class:edge-computing",
         "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:software-defined-networking",
+        "label": "Software-Defined Networking"
+      },
+      {
+        "id": "urn:ngm:class:network-function-virtualisation",
+        "label": "Network Function Virtualisation"
+      },
+      {
+        "id": "urn:ngm:class:load-balancer",
+        "label": "Load Balancer"
+      },
+      {
+        "id": "urn:ngm:class:domain-name-system",
+        "label": "Domain Name System"
       }
     ],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      },
+      {
+        "id": "urn:ngm:class:quality-of-service",
+        "label": "Quality of Service"
+      },
+      {
+        "id": "urn:ngm:class:traffic-engineering",
+        "label": "Traffic Engineering"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:realtime-communication",
@@ -35,6 +64,18 @@
       {
         "id": "urn:ngm:class:metaverse-infrastructure",
         "label": "Metaverse Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
       }
     ],
     "dependsOn": [
@@ -45,16 +86,77 @@
       {
         "id": "urn:ngm:class:bandwidth-adaptation",
         "label": "Bandwidth Adaptation"
+      },
+      {
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      },
+      {
+        "id": "urn:ngm:class:optical-fibre",
+        "label": "Optical Fibre"
       }
     ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:compute-infrastructure",
+        "label": "Compute Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:storage-infrastructure",
+        "label": "Storage Infrastructure"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:decentralised-network",
+        "label": "Decentralised Network"
+      },
+      {
+        "id": "urn:ngm:class:ai-inference-infrastructure",
+        "label": "AI Inference Infrastructure"
+      }
+    ],
     "uses": [],
-    "supports": [],
-    "standardizedBy": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-systems",
+        "label": "Autonomous Systems"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      },
+      {
+        "id": "urn:ngm:class:ieee-802",
+        "label": "IEEE 802"
+      },
+      {
+        "id": "urn:ngm:class:3gpp",
+        "label": "3GPP"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:5g-networks",
+        "label": "5G Networks"
+      },
+      {
+        "id": "urn:ngm:class:network-topology",
+        "label": "Network Topology"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": []

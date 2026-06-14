@@ -4,8 +4,8 @@
   "slug": "content-provenance",
   "public": true,
   "classIri": "urn:ngm:class:content-provenance",
-  "domain": "digital-media",
-  "definition": "Content provenance is the recorded history of the origin, authorship, and edits of a piece of digital media, used to establish whether content is authentic or has been altered.",
+  "domain": "governance",
+  "definition": "Content provenance is the verifiable, machine-readable record of the origin, authorship, creation context, and transformation history of a piece of digital media, enabling downstream consumers and automated systems to establish authenticity and detect unauthorised alteration. It relies on cryptographic signing, structured metadata schemas, and tamper-evident manifests attached to or bound with the asset at point of creation. As generative AI proliferates synthetic media, content provenance serves as the principal technical mechanism for distinguishing camera-captured or human-authored material from algorithmically generated content. Governance frameworks and regulatory instruments increasingly mandate provenance disclosure as a baseline trust control for media distributed at scale.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:provenance",
@@ -13,26 +13,117 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
-  "maturity": "established",
+  "qualityScore": 0.74,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
         "id": "urn:ngm:class:cryptography",
         "label": "Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:digital-signatures",
+        "label": "Digital Signatures"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
       }
     ],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:media-authentication",
+        "label": "Media Authentication"
+      },
+      {
+        "id": "urn:ngm:class:disinformation-detection",
+        "label": "Disinformation Detection"
+      },
+      {
+        "id": "urn:ngm:class:trust-signals",
+        "label": "Trust Signals"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:deepfake",
+        "label": "Deepfake"
+      },
+      {
+        "id": "urn:ngm:class:synthetic-media",
+        "label": "Synthetic Media"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:metadata-standards",
+        "label": "Metadata Standards"
+      },
+      {
+        "id": "urn:ngm:class:hashing",
+        "label": "Hashing"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:content-moderation",
+        "label": "Content Moderation"
+      },
+      {
+        "id": "urn:ngm:class:digital-rights-management",
+        "label": "Digital Rights Management"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:c2pa",
+        "label": "C2PA"
+      },
+      {
+        "id": "urn:ngm:class:iptc-photo-metadata",
+        "label": "IPTC Photo Metadata"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:information-integrity",
+        "label": "Information Integrity"
+      },
+      {
+        "id": "urn:ngm:class:watermarking",
+        "label": "Watermarking"
+      },
+      {
+        "id": "urn:ngm:class:data-lineage",
+        "label": "Data Lineage"
+      }
+    ]
   },
   "wikilinks": [
     {

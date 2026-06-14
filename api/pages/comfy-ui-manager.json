@@ -5,50 +5,140 @@
   "public": true,
   "classIri": "urn:ngm:class:node-based-diffusion-pipeline-interface-manager",
   "domain": "artificial-intelligence",
-  "definition": "ComfyUI Manager is a community-developed extension for the ComfyUI node-based image and video generation interface that provides an integrated package management system for discovering, installing, updating, and disabling custom nodes and their dependencies. It maintains a curated registry of available custom node repositories and model assets, resolving dependency conflicts and enabling reproducible workflow sharing by exporting workflow snapshots that include all required node specifications. It is a critical infrastructure component in the ComfyUI ecosystem, significantly lowering the barrier to extending ComfyUI with community-developed ControlNet preprocessors, upscalers, and specialised samplers.",
+  "definition": "ComfyUI Manager is a community-developed extension for the ComfyUI node-based image and video generation interface that provides an integrated package management system for discovering, installing, updating, and disabling custom nodes and their Python dependencies. It maintains a curated registry of available custom node repositories and model assets, resolves dependency conflicts, and enables reproducible workflow sharing by exporting workflow snapshots that encode all required node specifications. The extension also integrates model management features for downloading checkpoint, LoRA, VAE, and ControlNet files from external repositories, and performs missing-node detection when importing workflows created on other machines. As the de facto package manager for the ComfyUI ecosystem, it substantially lowers the barrier to extending the platform with community-developed preprocessing, sampling, and post-processing nodes.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ai-application",
-      "label": "AI Application"
+      "id": "urn:ngm:class:package-manager",
+      "label": "Package Manager"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.72,
+  "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [
+    "hasPart": [
       {
-        "id": "urn:ngm:class:control-net",
-        "label": "ControlNet"
+        "id": "urn:ngm:class:custom-node-registry",
+        "label": "Custom Node Registry"
       },
       {
-        "id": "urn:ngm:class:workflow-automation",
-        "label": "Workflow Automation"
+        "id": "urn:ngm:class:missing-node-detection",
+        "label": "Missing Node Detection"
+      },
+      {
+        "id": "urn:ngm:class:model-downloader",
+        "label": "Model Downloader"
       }
     ],
-    "supports": [
+    "requires": [
+      {
+        "id": "urn:ngm:class:comfy-ui",
+        "label": "ComfyUI"
+      },
+      {
+        "id": "urn:ngm:class:python-package-management",
+        "label": "Python Package Management"
+      },
+      {
+        "id": "urn:ngm:class:git",
+        "label": "Git"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:workflow-portability",
+        "label": "Workflow Portability"
+      },
+      {
+        "id": "urn:ngm:class:reproducible-ml-pipelines",
+        "label": "Reproducible ML Pipelines"
+      },
+      {
+        "id": "urn:ngm:class:community-extension-ecosystem",
+        "label": "Community Extension Ecosystem"
+      }
+    ],
+    "dependsOn": [
       {
         "id": "urn:ngm:class:diffusion-models",
         "label": "Diffusion Models"
       },
       {
+        "id": "urn:ngm:class:python",
+        "label": "Python"
+      },
+      {
+        "id": "urn:ngm:class:hugging-face",
+        "label": "Hugging Face"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:automatic1111-stable-diffusion-webui",
+        "label": "AUTOMATIC1111 Stable Diffusion WebUI"
+      },
+      {
+        "id": "urn:ngm:class:pip",
+        "label": "pip"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:node-based-programming",
+        "label": "Node-Based Programming"
+      },
+      {
+        "id": "urn:ngm:class:workflow-automation",
+        "label": "Workflow Automation"
+      },
+      {
+        "id": "urn:ngm:class:civit-ai",
+        "label": "CivitAI"
+      }
+    ],
+    "supports": [
+      {
         "id": "urn:ngm:class:image-generation",
         "label": "Image Generation"
+      },
+      {
+        "id": "urn:ngm:class:video-generation",
+        "label": "Video Generation"
+      },
+      {
+        "id": "urn:ngm:class:control-net",
+        "label": "ControlNet"
+      },
+      {
+        "id": "urn:ngm:class:lora",
+        "label": "LoRA"
       }
     ],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:comfy-ui",
+        "label": "ComfyUI"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai-tooling",
+        "label": "Generative AI Tooling"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:generative-ai",
         "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:stable-diffusion",
+        "label": "Stable Diffusion"
+      },
+      {
+        "id": "urn:ngm:class:ip-adapter",
+        "label": "IP-Adapter"
       }
     ]
   },

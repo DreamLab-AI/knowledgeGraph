@@ -4,20 +4,46 @@
   "slug": "information-retrieval",
   "public": true,
   "classIri": "urn:ngm:class:information-retrieval",
-  "domain": "spatial-computing",
-  "definition": "Information Retrieval (IR) is the discipline and set of techniques for finding relevant documents, passages, or facts from a corpus in response to a query. Modern IR systems employ inverted indices, vector embeddings, and semantic search to match queries against large-scale knowledge bases and document collections. In spatial computing, IR underpins context-aware search, knowledge graph querying, and retrieval-augmented generation pipelines that ground AI responses in factual content.",
+  "domain": "ai",
+  "definition": "Information Retrieval (IR) is the science and engineering discipline concerned with representing, storing, organising, and providing access to items of information \u2014 typically documents, passages, or structured records \u2014 so that a user's information need, expressed as a query, can be satisfied efficiently and accurately. Classical IR models such as the Boolean model, the vector space model (TF-IDF), and probabilistic models (BM25) underpin search engines and document ranking systems; neural IR extends these with dense vector representations derived from transformer language models, enabling semantic matching that generalises beyond exact term overlap. Modern IR encompasses sparse retrieval, dense retrieval, re-ranking, and hybrid architectures, and is the core subsystem enabling Retrieval-Augmented Generation (RAG), question answering, and knowledge-graph-grounded AI systems.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:sc-standards-and-interop",
-      "label": "Standards and Interoperability"
+      "id": "urn:ngm:class:natural-language-processing",
+      "label": "Natural Language Processing"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:inverted-index",
+        "label": "Inverted Index"
+      },
+      {
+        "id": "urn:ngm:class:query-processing",
+        "label": "Query Processing"
+      },
+      {
+        "id": "urn:ngm:class:relevance-ranking",
+        "label": "Relevance Ranking"
+      },
+      {
+        "id": "urn:ngm:class:document-indexing",
+        "label": "Document Indexing"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:text-representation",
+        "label": "Text Representation"
+      },
+      {
+        "id": "urn:ngm:class:tokenisation",
+        "label": "Tokenisation"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:retrieval-augmented-generation",
@@ -26,24 +52,67 @@
       {
         "id": "urn:ngm:class:search-engine",
         "label": "Search Engine"
+      },
+      {
+        "id": "urn:ngm:class:question-answering",
+        "label": "Question Answering"
+      },
+      {
+        "id": "urn:ngm:class:recommendation-system",
+        "label": "Recommendation System"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [
+    "dependsOn": [
       {
-        "id": "urn:ngm:class:semantic-search",
-        "label": "Semantic Search"
+        "id": "urn:ngm:class:corpus",
+        "label": "Corpus"
       },
+      {
+        "id": "urn:ngm:class:evaluation-metrics",
+        "label": "Evaluation Metrics"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:database-query",
+        "label": "Database Query"
+      },
+      {
+        "id": "urn:ngm:class:data-mining",
+        "label": "Data Mining"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      },
+      {
+        "id": "urn:ngm:class:spatial-search",
+        "label": "Spatial Search"
+      }
+    ],
+    "uses": [
       {
         "id": "urn:ngm:class:vector-database",
         "label": "Vector Database"
       },
       {
+        "id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      },
+      {
         "id": "urn:ngm:class:knowledge-graph",
         "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "id": "urn:ngm:class:word-embeddings",
+        "label": "Word Embeddings"
       }
     ],
     "supports": [],
@@ -51,8 +120,16 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:natural-language-processing",
-        "label": "Natural Language Processing"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:approximate-nearest-neighbour",
+        "label": "Approximate Nearest Neighbour"
       }
     ]
   },

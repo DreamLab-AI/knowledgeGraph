@@ -4,7 +4,7 @@
   "slug": "packet-loss-recovery",
   "public": true,
   "classIri": "urn:ngm:class:packet-loss-recovery",
-  "domain": "networking",
+  "domain": "infrastructure",
   "definition": "Techniques used to recover from or mitigate the loss of data packets during transmission over a network. They include retransmission, forward error correction, and concealment of missing data.",
   "subClassOf": [
     {

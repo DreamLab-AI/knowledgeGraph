@@ -4,7 +4,7 @@
   "slug": "microsoft",
   "public": true,
   "classIri": "urn:ngm:class:microsoft",
-  "domain": "general",
+  "domain": "infrastructure",
   "definition": "Microsoft is a multinational technology company that produces operating systems, productivity software, cloud services and mixed reality hardware and platforms.",
   "subClassOf": [
     {

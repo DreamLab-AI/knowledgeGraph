@@ -4,51 +4,145 @@
   "slug": "performance-metrics",
   "public": true,
   "classIri": "urn:ngm:class:performance-metrics",
-  "domain": "infrastructure",
-  "definition": "Performance Metrics are quantitative measurements used to evaluate the efficiency, quality, and behaviour of AI models, software systems, or hardware platforms. In AI and metaverse contexts these include inference latency, frames per second, model accuracy, throughput, memory utilisation, and error rates. Metrics provide the empirical basis for benchmarking, monitoring dashboards, and continuous improvement pipelines.",
+  "domain": "machine-learning",
+  "definition": "Performance Metrics are quantitative and qualitative measurements used to assess the efficiency, correctness, and resource utilisation of AI models, software systems, distributed platforms, and hardware pipelines. They encompass latency, throughput, accuracy, recall, precision, error rate, memory footprint, and energy consumption, forming the empirical basis for benchmarking, capacity planning, and continuous improvement. In machine learning contexts, performance metrics bridge offline evaluation (held-out test sets) and online monitoring (production dashboards), enabling data-driven decisions about model retraining, architecture changes, and deployment rollback. Standardised metric suites underpin regulatory compliance, SLA enforcement, and comparative research across the field.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:infra-software-engineering",
-      "label": "Software Engineering"
+      "id": "urn:ngm:class:model-evaluation",
+      "label": "Model Evaluation"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "emerging",
+  "qualityScore": 0.72,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:latency",
+        "label": "Latency"
+      },
+      {
+        "id": "urn:ngm:class:throughput",
+        "label": "Throughput"
+      },
+      {
+        "id": "urn:ngm:class:accuracy",
+        "label": "Accuracy"
+      },
+      {
+        "id": "urn:ngm:class:precision-recall",
+        "label": "Precision-Recall"
+      },
+      {
+        "id": "urn:ngm:class:f1-score",
+        "label": "F1 Score"
+      },
+      {
+        "id": "urn:ngm:class:mean-average-precision",
+        "label": "Mean Average Precision"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:benchmarking",
+        "label": "Benchmarking"
+      },
+      {
+        "id": "urn:ngm:class:ground-truth-labels",
+        "label": "Ground Truth Labels"
+      },
+      {
+        "id": "urn:ngm:class:data-collection",
+        "label": "Data Collection"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:model-optimisation",
+        "label": "Model Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:continuous-integration",
+        "label": "Continuous Integration"
+      },
+      {
+        "id": "urn:ngm:class:capacity-planning",
+        "label": "Capacity Planning"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:observability",
+        "label": "Observability"
+      },
+      {
+        "id": "urn:ngm:class:logging",
+        "label": "Logging"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:model-evaluation-results",
+        "label": "Model Evaluation Results"
+      },
+      {
+        "id": "urn:ngm:class:qualitative-assessment",
+        "label": "Qualitative Assessment"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:service-level-agreement",
+        "label": "Service Level Agreement"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:energy-efficiency",
+        "label": "Energy Efficiency"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:performance-benchmarks",
         "label": "Performance Benchmarks"
+      },
+      {
+        "id": "urn:ngm:class:statistical-testing",
+        "label": "Statistical Testing"
       }
     ],
     "supports": [
+      {
+        "id": "urn:ngm:class:monitoring-dashboard",
+        "label": "Monitoring Dashboard"
+      },
       {
         "id": "urn:ngm:class:machine-learning-discipline-pipeline",
         "label": "Machine Learning Pipeline"
       },
       {
-        "id": "urn:ngm:class:monitoring-dashboard",
-        "label": "Monitoring Dashboard"
+        "id": "urn:ngm:class:mlops",
+        "label": "MLOps"
       }
     ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:latency",
-        "label": "Latency"
+        "id": "urn:ngm:class:confusion-matrix",
+        "label": "Confusion Matrix"
       },
       {
-        "id": "urn:ngm:class:model-evaluation-results",
-        "label": "Model Evaluation Results"
+        "id": "urn:ngm:class:roc-curve",
+        "label": "ROC Curve"
+      },
+      {
+        "id": "urn:ngm:class:auc",
+        "label": "Area Under the Curve"
       }
     ]
   },

@@ -4,8 +4,8 @@
   "slug": "key-management",
   "public": true,
   "classIri": "urn:ngm:class:key-management",
-  "domain": "infrastructure",
-  "definition": "Key management is the discipline encompassing the full lifecycle governance of cryptographic keys: generation (using cryptographically secure random number generators and appropriate key derivation functions), distribution (secure out-of-band or in-band delivery), storage (in hardware security modules, key management services, or encrypted keystores), rotation (periodic replacement to limit exposure windows), and revocation (timely invalidation of compromised or expired keys). Effective key management is a prerequisite for all cryptographic security guarantees, since even strong algorithms are undermined by weak key custody practices. It is a mandatory control domain in standards including ISO/IEC 27001 (Annex A, A.10) and NIST SP 800-57.",
+  "domain": "security",
+  "definition": "Key management is the discipline governing the complete lifecycle of cryptographic keys, encompassing their generation using cryptographically secure random number generators and key derivation functions, secure distribution, protected storage in hardware security modules or key management services, scheduled rotation to limit exposure windows, and timely revocation upon compromise or expiry. It is a foundational control domain for all systems relying on confidentiality, integrity, and authentication guarantees, since even mathematically strong algorithms are rendered ineffective by weak key custody practices. Key management is mandated by security standards including NIST SP 800-57 and ISO/IEC 27001 Annex A.10, and underpins PKI, envelope encryption architectures, blockchain self-custody, and zero-trust identity frameworks.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-security-and-identity",
@@ -13,11 +13,41 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:key-generation",
+        "label": "Key Generation"
+      },
+      {
+        "id": "urn:ngm:class:key-rotation",
+        "label": "Key Rotation"
+      },
+      {
+        "id": "urn:ngm:class:key-revocation",
+        "label": "Key Revocation"
+      },
+      {
+        "id": "urn:ngm:class:certificate-lifecycle-management",
+        "label": "Certificate Lifecycle Management"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:random-number-generation",
+        "label": "Random Number Generation"
+      },
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:encryption",
@@ -26,12 +56,47 @@
       {
         "id": "urn:ngm:class:digital-signature",
         "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      },
+      {
+        "id": "urn:ngm:class:secure-communication",
+        "label": "Secure Communication"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:envelope-encryption",
+        "label": "Envelope Encryption"
+      },
+      {
+        "id": "urn:ngm:class:key-hierarchy",
+        "label": "Key Hierarchy"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:password-management",
+        "label": "Password Management"
+      },
+      {
+        "id": "urn:ngm:class:secrets-management",
+        "label": "Secrets Management"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:cryptography",
@@ -40,19 +105,40 @@
       {
         "id": "urn:ngm:class:hardware-security-module",
         "label": "Hardware Security Module"
+      },
+      {
+        "id": "urn:ngm:class:key-derivation-function",
+        "label": "Key Derivation Function"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
       }
     ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:nist-sp-800-57",
+        "label": "NIST SP 800-57"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-27001",
+        "label": "ISO/IEC 27001"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
-        "label": "Public Key Infrastructure"
+        "id": "urn:ngm:class:tls",
+        "label": "TLS"
       },
       {
-        "id": "urn:ngm:class:cryptographic-key-management",
-        "label": "Cryptographic Key Management"
+        "id": "urn:ngm:class:multi-party-computation",
+        "label": "Multi-Party Computation"
+      },
+      {
+        "id": "urn:ngm:class:threshold-cryptography",
+        "label": "Threshold Cryptography"
       }
     ]
   },

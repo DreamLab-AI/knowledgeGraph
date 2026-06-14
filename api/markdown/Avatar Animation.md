@@ -21,7 +21,7 @@ public:: true
   "@type": "Class",
   "label": "Avatar Animation",
   "definition": "Avatar animation is the specialised subset of digital animation concerned with driving the motion and expression of user-controlled or AI-controlled avatar representations in real-time interactive environments. It encompasses full-body locomotion, facial expression synthesis, hand and gaze tracking, and upper-body gesture systems, all coordinated to produce social believability within virtual and extended reality spaces. Avatar animation systems must balance visual fidelity with low-latency responsiveness to maintain user embodiment and presence. Standards such as VRM and glTF define interchange formats that allow avatar animations to transfer across platforms.",
-  "domain": "graphics",
+  "domain": "spatial-computing",
   "maturity": "emerging",
   "subClassOf": [{"@id": "urn:ngm:class:animation", "label": "Animation"}],
   "relations": {

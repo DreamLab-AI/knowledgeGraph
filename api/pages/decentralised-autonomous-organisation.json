@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:decentralised-autonomous-organisation",
   "domain": "blockchain",
-  "definition": "A Decentralised Autonomous Organisation (DAO) is a blockchain-native organisational structure in which governance rules and treasury management are encoded as smart contracts executing on a public distributed ledger, enabling token-holder communities to propose, deliberate, and vote on decisions without recourse to centralised management. DAOs operate transparently with on-chain execution, typically combining governance tokens that confer voting rights with treasury contracts that hold and disburse funds. They are employed across DeFi protocols, investment clubs, grant programmes, and decentralised media organisations.",
+  "definition": "A Decentralised Autonomous Organisation (DAO) is a blockchain-native organisational structure in which governance rules, treasury management, and operational logic are encoded as smart contracts executing on a public distributed ledger, enabling token-holder communities to propose, deliberate, and vote on decisions without recourse to centralised management or traditional corporate hierarchy. DAOs achieve censorship-resistant, transparent coordination by replacing trusted intermediaries with deterministic on-chain execution, typically combining governance tokens that confer weighted voting rights with treasury contracts that custodise and disburse collective assets. As an emergent governance primitive, DAOs span DeFi protocols, grant programmes, investment collectives, open-source software foundations, and decentralised media organisations, presenting novel challenges around legal personality, voter apathy, and Sybil resistance.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-governance-and-regulation",
@@ -13,11 +13,37 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
+  "qualityScore": 0.72,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:governance-module",
+        "label": "Governance Module"
+      },
+      {
+        "id": "urn:ngm:class:treasury-contract",
+        "label": "Treasury Contract"
+      },
+      {
+        "id": "urn:ngm:class:voting-mechanism",
+        "label": "Voting Mechanism"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:public-blockchain",
+        "label": "Public Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-key-management",
+        "label": "Cryptographic Key Management"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:on-chain-governance",
@@ -26,12 +52,47 @@
       {
         "id": "urn:ngm:class:treasury-management",
         "label": "Treasury Management"
+      },
+      {
+        "id": "urn:ngm:class:permissionless-participation",
+        "label": "Permissionless Participation"
+      },
+      {
+        "id": "urn:ngm:class:protocol-governance",
+        "label": "Protocol Governance"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:traditional-corporation",
+        "label": "Traditional Corporation"
+      },
+      {
+        "id": "urn:ngm:class:centralised-autonomous-organisation",
+        "label": "Centralised Autonomous Organisation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:collective-intelligence",
+        "label": "Collective Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:smart-contract",
@@ -40,6 +101,14 @@
       {
         "id": "urn:ngm:class:governance-token",
         "label": "Governance Token"
+      },
+      {
+        "id": "urn:ngm:class:multisig-wallet",
+        "label": "Multisig Wallet"
+      },
+      {
+        "id": "urn:ngm:class:quadratic-voting",
+        "label": "Quadratic Voting"
       }
     ],
     "supports": [],
@@ -47,12 +116,20 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:dao",
-        "label": "DAO"
+        "id": "urn:ngm:class:liquid-democracy",
+        "label": "Liquid Democracy"
       },
       {
-        "id": "urn:ngm:class:tokenomics",
-        "label": "Tokenomics"
+        "id": "urn:ngm:class:sybil-resistance",
+        "label": "Sybil Resistance"
+      },
+      {
+        "id": "urn:ngm:class:token-weighted-voting",
+        "label": "Token-Weighted Voting"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-governance",
+        "label": "Decentralised Governance"
       }
     ]
   },

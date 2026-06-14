@@ -5,39 +5,142 @@
   "public": true,
   "classIri": "urn:ngm:class:hardhat",
   "domain": "blockchain",
-  "definition": "Hardhat is a development environment for Ethereum software, providing tools for compiling, testing, and debugging smart contracts.",
+  "definition": "Hardhat is a professional Ethereum development environment that provides a comprehensive toolchain for compiling, deploying, testing, and debugging Solidity smart contracts. It ships with Hardhat Network, an in-process Ethereum node implementation designed for local development that supports forking mainnet state and emitting Solidity stack traces on failure. Hardhat's plugin architecture integrates tightly with ethers.js and Waffle, and its tasks system allows developers to automate bespoke deployment and verification workflows. It has become the dominant development framework in the Ethereum ecosystem, displacing earlier tools such as Truffle.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:solidity",
-      "label": "Solidity"
+      "id": "urn:ngm:class:blockchain-development-toolchain",
+      "label": "Blockchain Development Toolchain"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:hardhat-network",
+        "label": "Hardhat Network"
+      },
+      {
+        "id": "urn:ngm:class:hardhat-runner",
+        "label": "Hardhat Runner"
+      },
+      {
+        "id": "urn:ngm:class:hardhat-plugin",
+        "label": "Hardhat Plugin"
+      }
+    ],
     "requires": [
       {
-        "id": "urn:ngm:class:solidity",
-        "label": "Solidity"
+        "id": "urn:ngm:class:node-js",
+        "label": "Node.js"
+      },
+      {
+        "id": "urn:ngm:class:solidity-compiler",
+        "label": "Solidity Compiler"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract-testing",
+        "label": "Smart Contract Testing"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract-deployment",
+        "label": "Smart Contract Deployment"
+      },
+      {
+        "id": "urn:ngm:class:contract-verification",
+        "label": "Contract Verification"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "id": "urn:ngm:class:evm",
+        "label": "Ethereum Virtual Machine"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:truffle",
+        "label": "Truffle"
+      },
+      {
+        "id": "urn:ngm:class:foundry",
+        "label": "Foundry"
+      },
+      {
+        "id": "urn:ngm:class:brownie",
+        "label": "Brownie"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:continuous-integration",
+        "label": "Continuous Integration"
+      },
+      {
+        "id": "urn:ngm:class:devops",
+        "label": "DevOps"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:ethers-js",
+        "label": "ethers.js"
+      },
+      {
+        "id": "urn:ngm:class:solidity",
+        "label": "Solidity"
+      },
+      {
+        "id": "urn:ngm:class:typescript",
+        "label": "TypeScript"
+      },
+      {
+        "id": "urn:ngm:class:mocha",
+        "label": "Mocha"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:defi-protocol",
+        "label": "DeFi Protocol"
+      },
+      {
+        "id": "urn:ngm:class:nft",
+        "label": "NFT"
+      },
+      {
+        "id": "urn:ngm:class:dao",
+        "label": "DAO"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:remix-ide",
+        "label": "Remix IDE"
+      },
+      {
+        "id": "urn:ngm:class:openzeppelin",
+        "label": "OpenZeppelin"
+      },
+      {
+        "id": "urn:ngm:class:etherscan",
+        "label": "Etherscan"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -5,34 +5,125 @@
   "public": true,
   "classIri": "urn:ngm:class:curve-wars",
   "domain": "blockchain",
-  "definition": "The competition among protocols to accumulate vote-escrowed governance power in the Curve exchange in order to direct token emissions toward their own liquidity pools.",
+  "definition": "The Curve Wars refers to the competitive dynamic among decentralised finance protocols to accumulate vote-escrowed CRV (veCRV) governance power over Curve Finance, thereby gaining the ability to direct CRV token emissions (gauges) toward liquidity pools in which the protocol has a stake. By controlling gauge weights, protocols attract liquidity providers to their pools by offering higher yields, creating a recursive incentive structure. The conflict intensified with the emergence of vote-aggregation intermediaries such as Convex Finance, which pooled user CRV into a dominant veCRV position and issued its own liquid derivative tokens (cvxCRV, vlCVX) to further abstract the underlying governance asset.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:liquidity-provision",
-      "label": "Liquidity Provision"
+      "id": "urn:ngm:class:decentralised-finance",
+      "label": "Decentralised Finance"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.74,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:gauge-weight-voting",
+        "label": "Gauge Weight Voting"
+      },
+      {
+        "id": "urn:ngm:class:bribery-market",
+        "label": "Bribery Market"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:vote-escrow-model",
         "label": "Vote-Escrow Model"
+      },
+      {
+        "id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
       }
     ],
-    "enables": [],
-    "dependsOn": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:liquidity-provision",
+        "label": "Liquidity Provision"
+      },
+      {
+        "id": "urn:ngm:class:yield-optimisation",
+        "label": "Yield Optimisation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:curve-finance",
+        "label": "Curve Finance"
+      },
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:proof-of-work",
+        "label": "Proof of Work"
+      },
+      {
+        "id": "urn:ngm:class:traditional-market-making",
+        "label": "Traditional Market Making"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:mechanism-design",
+        "label": "Mechanism Design"
+      },
+      {
+        "id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:liquidity-pool",
+        "label": "Liquidity Pool"
+      },
+      {
+        "id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:token-emission",
+        "label": "Token Emission"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:convex-finance",
+        "label": "Convex Finance"
+      },
+      {
+        "id": "urn:ngm:class:liquid-staking",
+        "label": "Liquid Staking"
+      },
+      {
+        "id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      },
+      {
+        "id": "urn:ngm:class:miner-extractable-value",
+        "label": "Miner Extractable Value"
+      },
+      {
+        "id": "urn:ngm:class:protocol-owned-liquidity",
+        "label": "Protocol-Owned Liquidity"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -1,20 +1,63 @@
 - ### Definition
-  - ConsenSys is a software company that builds Ethereum infrastructure and developer tools, including wallet and node services.
+  - ConsenSys is a blockchain software company founded in 2014 by [[Ethereum]] co-founder Joseph Lubin, focused on building production-grade developer tools, node infrastructure, and consumer-facing products for the Ethereum ecosystem. It is most widely known for [[MetaMask]] (the dominant browser-extension and mobile cryptocurrency wallet) and [[Infura]] (a JSON-RPC node-access service that proxies Ethereum and IPFS for millions of decentralised applications). Through these products ConsenSys forms a critical layer of [[Web3]] infrastructure that underpins access to [[Decentralised Finance]], [[Non-Fungible Token]] markets, and [[Decentralised Application]] front-ends globally.
 
-- ### Semantic Classification
-  - owl-class:: blockchain:ConsenSys
-  - owl-role:: Individual
+- ### Overview
+  - ConsenSys was incorporated in Brooklyn, New York, and has grown into one of the largest private companies in the Ethereum ecosystem.
+  - The company's strategic position is dual-sided: it sells developer infrastructure subscriptions (Infura, Diligence audit tooling) to enterprises and startups, while simultaneously operating consumer products (MetaMask) used by tens of millions of end-users.
+  - ConsenSys has both contributed to and benefited from the growth of the [[Ethereum]] base layer, holding a commercially incentivised stake in Ethereum's adoption that distinguishes it from the non-profit [[Ethereum Foundation]].
+  - The company has undergone significant corporate restructuring, including spinning off its enterprise division (formerly ConsenSys Enterprise / Quorum) into a separate entity (Consensys Software Inc. vs ConsenSys AG), and has faced strategic tension between consumer product growth and enterprise consulting.
+  - Funding rounds from major banks and sovereign entities have reinforced ConsenSys's role as a bridge between traditional finance and [[Decentralised Finance]].
+
+- ### Key Components
+  - **[[MetaMask]]** — The flagship browser extension and mobile wallet; the primary interface through which users interact with [[Ethereum Virtual Machine]] compatible chains and sign [[Smart Contract]] transactions.
+  - **[[Infura]]** — A node-as-a-service platform providing [[JSON-RPC]] API access to Ethereum mainnet, testnets, and [[IPFS]], relied upon by the majority of production DApp backends.
+  - **[[Linea]]** — A zkEVM [[Layer 2 Scaling]] network developed by ConsenSys using [[ZK Rollup]] technology, offering lower transaction fees while inheriting Ethereum security.
+  - **[[Truffle Suite]]** — A development framework and testing suite for [[Solidity]] smart contract compilation, migration, and testing (now largely superseded in community usage by Hardhat, though still maintained).
+  - **ConsenSys Diligence** — A smart contract security audit service, producing audit reports that have become a de-facto standard for high-value protocol launches.
+  - **Quorum (enterprise)** — A permissioned [[Enterprise Blockchain]] fork of the Ethereum client, originally built for J.P. Morgan; later divested and transferred to the Hyperledger Foundation.
+
+- ### Applications / Use Cases
+  - **DApp access layer** — MetaMask and Infura together act as the predominant gateway allowing end-users and developers to read/write to [[Decentralised Application]] state without running their own [[Ethereum]] node.
+  - **DeFi interaction** — MetaMask wallet signatures enable users to interact with [[Decentralised Finance]] protocols (Uniswap, Aave, Compound) without custodial intermediaries.
+  - **NFT minting and trading** — MetaMask wallet integration is embedded in all major [[Non-Fungible Token]] marketplaces (OpenSea, Blur), making it the default signing environment for NFT transactions.
+  - **Enterprise private networks** — Quorum enabled financial institutions to run permissioned consortium chains using familiar [[Ethereum Virtual Machine]] tooling before the product was divested.
+  - **Layer 2 deployment** — Linea allows projects to deploy existing [[Solidity]] contracts to a cheaper execution environment with ZK proof-based finality bridging back to Ethereum mainnet.
+  - **Developer onboarding** — The Truffle framework and ConsenSys Academy courses lowered the entry barrier to [[Smart Contract]] development, seeding the broader Ethereum developer ecosystem.
+  - **[[Decentralised Identity]]** — ConsenSys has contributed to identity standards via uPort (now Veramo), a self-sovereign identity framework built on Ethereum [[Decentralised Identity]] primitives.
 
 - ### Relationships
-  - is-subclass-of:: [[Ethereum Smart Contract Platform]]
-  - bridges-to:: [[Smart Contract]]
-  - requires:: [[Ethereum Smart Contract Platform]]
+  - hasPart:: [[MetaMask]]
+  - hasPart:: [[Infura]]
+  - hasPart:: [[Linea]]
+  - hasPart:: [[Truffle Suite]]
+  - requires:: [[Ethereum]]
+  - requires:: [[Proof of Stake]]
   - enables:: [[Web3]]
+  - enables:: [[Decentralised Application]]
+  - enables:: [[Decentralised Finance]]
+  - implements:: [[Ethereum Improvement Proposal]]
+  - implements:: [[ZK Rollup]]
+  - uses:: [[Smart Contract]]
+  - uses:: [[JSON-RPC]]
+  - uses:: [[Solidity]]
+  - supports:: [[Ethereum Virtual Machine]]
+  - supports:: [[Non-Fungible Token]]
+  - supports:: [[Decentralised Identity]]
+  - contrastsWith:: [[Coinbase]]
+  - contrastsWith:: [[Alchemy]]
+  - bridges-to:: [[Enterprise Blockchain]]
+  - bridges-to:: [[Digital Asset Custody]]
+  - relatedTo:: [[Ethereum Foundation]]
+  - relatedTo:: [[Layer 2 Scaling]]
+  - relatedTo:: [[Token Standard]]
 
-- ### Content
-  - ConsenSys develops products for the Ethereum ecosystem, including a widely used browser-based wallet and infrastructure for accessing the network.
-  - Its tools support developers building decentralised applications and interacting with smart contracts.
+- ### Standards & Context
+  - ConsenSys participates actively in the [[Ethereum Improvement Proposal]] process, having authored and implemented EIPs that affect wallet standards (notably EIP-1193, the Ethereum Provider JavaScript API, and EIP-712, typed structured data signing used by MetaMask).
+  - The company contributes to [[Token Standard]] discussions including ERC-20, ERC-721, and ERC-4337 (account abstraction), which reshape how wallets like MetaMask handle transactions.
+  - ConsenSys Diligence publishes audit methodologies that have influenced informal security standards across the [[Decentralised Finance]] space.
+  - Linea participates in the ZK-EVM specification discussions coordinated through the [[Ethereum Foundation]] and Polygon Labs, advancing [[ZK Rollup]] interoperability.
+  - The company is subject to regulatory scrutiny from the SEC (regarding MetaMask Swaps and staking features) and has been an active litigant defending against regulatory overreach, positioning it at the intersection of technology and [[Governance]] for digital assets.
 
 - ### Provenance
-  - sources::
-  - migration-date:: 2026-05-29T00:00:00Z
+  - sources:: ConsenSys official product documentation; Ethereum EIP repository; public funding announcements; SEC litigation filings (public domain)
+  - updated:: 2026-06-13

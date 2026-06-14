@@ -47,7 +47,7 @@ public:: true
   "@type": "Class",
   "label": "Aave Companies",
   "definition": "Aave Companies is the development company, founded by Stani Kulechov, behind the Aave decentralised lending protocol and related products. It was formerly known as ETHLend.",
-  "domain": "defi",
+  "domain": "blockchain",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

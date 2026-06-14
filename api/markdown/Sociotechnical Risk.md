@@ -47,7 +47,7 @@ public:: true
   "@type": "Class",
   "label": "Sociotechnical Risk",
   "definition": "Sociotechnical risk is the potential for harm arising from the interaction between a technical system and the social context in which it is built and used. In AI it covers harms that emerge from people, institutions and technology together rather than from code alone.",
-  "domain": "ai-safety",
+  "domain": "ai",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

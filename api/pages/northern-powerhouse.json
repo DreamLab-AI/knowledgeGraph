@@ -5,34 +5,130 @@
   "public": true,
   "classIri": "urn:ngm:class:northern-powerhouse",
   "domain": "governance",
-  "definition": "A United Kingdom government policy initiative aimed at boosting economic growth across the cities and regions of northern England.",
+  "definition": "The Northern Powerhouse is a United Kingdom government economic policy framework, formally launched in 2014, designed to rebalance national prosperity by co-ordinating investment, infrastructure, and devolved governance across the cities and regions of northern England. It operates through a combination of city-region devolution deals, major transport programmes such as Northern Powerhouse Rail, targeted innovation investment in science and technology clusters, and streamlined inward investment promotion. The initiative links major urban centres including Manchester, Leeds, Sheffield, Newcastle, and Liverpool under a shared economic development narrative, seeking to raise productivity and close the long-standing North-South divide in the United Kingdom economy.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:entity",
-      "label": "Entity"
+      "id": "urn:ngm:class:regional-economic-policy",
+      "label": "Regional Economic Policy"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:northern-powerhouse-rail",
+        "label": "Northern Powerhouse Rail"
+      },
+      {
+        "id": "urn:ngm:class:mayoral-combined-authority",
+        "label": "Mayoral Combined Authority"
+      },
+      {
+        "id": "urn:ngm:class:science-and-innovation-audit",
+        "label": "Science and Innovation Audit"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:fiscal-devolution",
+        "label": "Fiscal Devolution"
+      },
+      {
+        "id": "urn:ngm:class:transport-infrastructure",
+        "label": "Transport Infrastructure"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:digital-economy",
         "label": "Digital Economy"
+      },
+      {
+        "id": "urn:ngm:class:advanced-manufacturing",
+        "label": "Advanced Manufacturing"
+      },
+      {
+        "id": "urn:ngm:class:inward-investment",
+        "label": "Inward Investment"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:golden-triangle",
+        "label": "Golden Triangle"
+      },
+      {
+        "id": "urn:ngm:class:north-south-divide",
+        "label": "North-South Divide"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:smart-city",
+        "label": "Smart City"
+      },
+      {
+        "id": "urn:ngm:class:data-infrastructure",
+        "label": "Data Infrastructure"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:city-deal",
+        "label": "City Deal"
+      },
+      {
+        "id": "urn:ngm:class:freeport",
+        "label": "Freeport"
+      },
+      {
+        "id": "urn:ngm:class:enterprise-zone",
+        "label": "Enterprise Zone"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:research-and-development",
+        "label": "Research and Development"
+      },
+      {
+        "id": "urn:ngm:class:skills-development",
+        "label": "Skills Development"
+      },
+      {
+        "id": "urn:ngm:class:clean-energy-transition",
+        "label": "Clean Energy Transition"
+      }
+    ],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:uk-industrial-strategy",
+        "label": "UK Industrial Strategy"
+      },
+      {
+        "id": "urn:ngm:class:levelling-up",
+        "label": "Levelling Up"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:devolution",
+        "label": "Devolution"
+      },
+      {
+        "id": "urn:ngm:class:regional-development-agency",
+        "label": "Regional Development Agency"
+      },
+      {
+        "id": "urn:ngm:class:productivity-gap",
+        "label": "Productivity Gap"
+      }
+    ]
   },
   "wikilinks": [
     {

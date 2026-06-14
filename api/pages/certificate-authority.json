@@ -4,19 +4,36 @@
   "slug": "certificate-authority",
   "public": true,
   "classIri": "urn:ngm:class:certificate-authority",
-  "domain": "infrastructure",
-  "definition": "A Certificate Authority (CA) is a trusted third-party organisation that issues, signs, and manages the lifecycle of X.509 digital certificates, cryptographically binding a public key to an entity's verified identity. CAs operate within a hierarchical Public Key Infrastructure (PKI) where root CAs sign intermediate CAs, which in turn issue end-entity certificates for servers, users, or devices. The CA's signing operations underpin the TLS handshake, code-signing pipelines, S/MIME email encryption, and document signing workflows across the internet.",
+  "domain": "security",
+  "definition": "A Certificate Authority (CA) is a trusted third-party organisation that issues, signs, and manages the lifecycle of X.509 digital certificates, cryptographically binding a public key to an entity's verified identity within a Public Key Infrastructure (PKI). CAs operate within a hierarchical trust model where offline root CAs delegate signing authority to online intermediate CAs, which in turn issue end-entity certificates for servers, users, clients, and devices. The CA's signing operations \u2014 governed by RFC 5280, the CA/Browser Forum Baseline Requirements, and WebTrust auditing standards \u2014 underpin the TLS handshake, code-signing pipelines, S/MIME email encryption, mutual TLS (mTLS) in service meshes, and document-signing workflows across the internet. Trust propagates via chain-of-trust verification: a relying party validates each certificate against its issuer's signature, tracing back to an implicitly trusted root embedded in OS or browser trust stores.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:infra-security-and-identity",
-      "label": "Infra Security and Identity"
+      "id": "urn:ngm:class:public-key-infrastructure",
+      "label": "Public Key Infrastructure"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:root-certificate",
+        "label": "Root Certificate"
+      },
+      {
+        "id": "urn:ngm:class:intermediate-certificate-authority",
+        "label": "Intermediate Certificate Authority"
+      },
+      {
+        "id": "urn:ngm:class:certificate-revocation-list",
+        "label": "Certificate Revocation List"
+      },
+      {
+        "id": "urn:ngm:class:online-certificate-status-protocol",
+        "label": "Online Certificate Status Protocol"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:cryptography",
@@ -25,6 +42,14 @@
       {
         "id": "urn:ngm:class:digital-signature",
         "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:asymmetric-key-cryptography",
+        "label": "Asymmetric Key Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:hardware-security-module",
+        "label": "Hardware Security Module"
       }
     ],
     "enables": [
@@ -33,14 +58,48 @@
         "label": "Digital Certificate"
       },
       {
+        "id": "urn:ngm:class:transport-layer-security",
+        "label": "Transport Layer Security"
+      },
+      {
+        "id": "urn:ngm:class:code-signing",
+        "label": "Code Signing"
+      },
+      {
         "id": "urn:ngm:class:encryption",
         "label": "Encryption"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "id": "urn:ngm:class:web-of-trust",
+        "label": "Web of Trust"
+      },
+      {
+        "id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self-Sovereign Identity"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-credential",
+        "label": "Verifiable Credential"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
+    ],
     "uses": [],
     "supports": [
       {
@@ -50,11 +109,58 @@
       {
         "id": "urn:ngm:class:identity-management",
         "label": "Identity Management"
+      },
+      {
+        "id": "urn:ngm:class:zero-trust-security",
+        "label": "Zero Trust Security"
+      },
+      {
+        "id": "urn:ngm:class:mutual-tls",
+        "label": "Mutual TLS"
       }
     ],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ca-browser-forum",
+        "label": "CA/Browser Forum"
+      },
+      {
+        "id": "urn:ngm:class:rfc-5280",
+        "label": "RFC 5280"
+      },
+      {
+        "id": "urn:ngm:class:webtrust",
+        "label": "WebTrust"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:trust-hierarchy",
+        "label": "Trust Hierarchy"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:acme-protocol",
+        "label": "ACME Protocol"
+      },
+      {
+        "id": "urn:ngm:class:domain-validation",
+        "label": "Domain Validation"
+      },
+      {
+        "id": "urn:ngm:class:certificate-transparency",
+        "label": "Certificate Transparency"
+      },
+      {
+        "id": "urn:ngm:class:key-management",
+        "label": "Key Management"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

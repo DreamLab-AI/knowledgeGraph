@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:payment-network",
   "domain": "finance",
-  "definition": "A payment network is an infrastructure system composed of interconnected nodes, protocols, and settlement mechanisms that enables the transfer of value between participants \u2014 individuals, merchants, institutions, or autonomous agents \u2014 with guarantees on finality, atomicity, and fraud prevention. Payment networks range from traditional card networks (Visa, Mastercard) and interbank clearing systems (SWIFT, ACH, SEPA) to cryptographic peer-to-peer blockchain networks and second-layer channel networks such as the Lightning Network. They underpin commerce, financial inclusion, and increasingly machine-to-machine value exchange in automated economies.",
+  "definition": "A payment network is an infrastructure system of interconnected nodes, protocols, messaging standards, and settlement mechanisms that enables the authenticated transfer of value between participants \u2014 individuals, merchants, financial institutions, or autonomous software agents \u2014 with guarantees on finality, atomicity, and fraud prevention. Payment networks operate at multiple layers: a messaging layer (e.g. SWIFT MT/MX, ISO 20022) carries authenticated payment instructions; a clearing layer nets obligations across participants; and a settlement layer achieves irrevocable finality through central bank reserves or distributed ledger consensus. The architecture spans traditional four-party card networks (Visa, Mastercard), interbank clearing systems (SWIFT, ACH, SEPA, Fedwire), cryptographic peer-to-peer blockchain networks, and second-layer off-chain channel networks such as the Lightning Network, collectively underpinning commerce, financial inclusion, and machine-to-machine value exchange.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:financial-infrastructure",
@@ -13,8 +13,8 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
-  "maturity": "established",
+  "qualityScore": 0.74,
+  "maturity": "mature",
   "relationships": {
     "hasPart": [
       {
@@ -28,9 +28,30 @@
       {
         "id": "urn:ngm:class:state-channel",
         "label": "State Channel"
+      },
+      {
+        "id": "urn:ngm:class:clearing-house",
+        "label": "Clearing House"
+      },
+      {
+        "id": "urn:ngm:class:settlement-layer",
+        "label": "Settlement Layer"
       }
     ],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      },
+      {
+        "id": "urn:ngm:class:trust-model",
+        "label": "Trust Model"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:micropayments",
@@ -43,12 +64,47 @@
       {
         "id": "urn:ngm:class:machine-to-machine-payments",
         "label": "Machine to Machine Payments"
+      },
+      {
+        "id": "urn:ngm:class:real-time-payments",
+        "label": "Real-Time Payments"
+      },
+      {
+        "id": "urn:ngm:class:programmable-money",
+        "label": "Programmable Money"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:internet-infrastructure",
+        "label": "Internet Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      },
+      {
+        "id": "urn:ngm:class:barter-system",
+        "label": "Barter System"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      },
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:cryptographic-protocol",
@@ -59,12 +115,29 @@
         "label": "Blockchain"
       },
       {
-        "id": "urn:ngm:class:digital-payment-system",
-        "label": "Digital Payment System"
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
       }
     ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-20022",
+        "label": "ISO 20022"
+      },
+      {
+        "id": "urn:ngm:class:payment-card-industry-standard",
+        "label": "Payment Card Industry Standard"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -74,6 +147,14 @@
       {
         "id": "urn:ngm:class:layer-2-scaling",
         "label": "Layer 2 Scaling"
+      },
+      {
+        "id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
       }
     ]
   },

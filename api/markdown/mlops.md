@@ -1,16 +1,72 @@
 - ### Definition
-  - MLOps applies DevOps principles to the machine learning lifecycle, providing the tooling, automation, and organisational practices needed to reliably build, deploy, monitor, and retrain ML models in production at scale.
+  - MLOps (Machine Learning Operations) is the discipline that applies [[DevOps]], [[CI/CD]], and [[Site Reliability Engineering]] principles to the full [[AI Lifecycle]] — from data collection and [[Feature Engineering]] through model training, evaluation, deployment, and continuous retraining in production. It addresses the fundamental challenge that [[Machine Learning]] systems have three independently evolving axes (code, data, and model weights), all of which must be versioned, tested, and governed together to deliver reliable, auditable, and scalable ML products. By introducing specialised tooling such as [[Model Registry]], [[Feature Store]], and [[Experiment Tracking]], MLOps closes the gap between experimental research and production-grade software delivery.
+
+- ### Overview
+  - MLOps emerged as a named discipline around 2017–2018 in response to the "last mile" problem of machine learning: teams found it straightforward to train promising models in notebooks but extremely difficult to deploy, maintain, and improve them in production. The term borrowed directly from [[DevOps]] and [[Site Reliability Engineering]], recognising that ML systems require not just continuous integration and delivery (CI/CD) but also continuous training (CT) — a third loop that has no equivalent in traditional software.
+  - A central insight is that ML systems are uniquely fragile because accuracy degrades silently without any code change. If the statistical distribution of incoming data shifts — a phenomenon called [[Data Drift]] or concept drift — a model that performed well at deployment time may degrade arbitrarily. MLOps practice therefore mandates monitoring pipelines that evaluate model performance on fresh production data, detect degradation, trigger retraining, validate the new model, and promote it automatically.
+  - Organisational maturity in MLOps is characterised on a capability ladder. At level 0, data scientists manually train and deploy models. At level 1, the training pipeline is automated but deployment remains manual. At level 2, the full CI/CD/CT loop is automated, with changes to data or code triggering automated testing, validation, and deployment without human intervention. Reaching level 2 requires sustained investment in [[Platform Engineering]], cultural alignment between data scientists and production engineers, and governance frameworks that satisfy regulatory requirements around [[Model Explainability]] and audit trails.
+
+- ### Key Components
+  - **[[Experiment Tracking]]** — records hyperparameters, metrics, and artefacts for every training run (tools: MLflow, Weights & Biases, Neptune), enabling reproducibility and systematic comparison of model candidates.
+  - **[[Model Registry]]** — a versioned repository of model artefacts with promotion gates (development → staging → production); provides audit trail of which model version is live at any time and who approved it.
+  - **[[Feature Store]]** — a shared repository (e.g. Feast, Tecton, Hopsworks) that ensures the feature transformations applied at training time exactly match those computed at inference time, eliminating training-serving skew — one of the most common sources of silent model degradation.
+  - **[[Machine Learning Pipeline]]** — an orchestrated, reproducible sequence of steps (data validation, preprocessing, training, evaluation) executed by workflow orchestrators such as [[Kubeflow]], Apache Airflow, or Prefect.
+  - **[[Model Monitoring]]** — continuous evaluation of live model outputs, including data distribution checks ([[Data Drift]]), prediction distribution monitoring, and business metric tracking; triggers retraining when degradation exceeds thresholds.
+  - **[[CI/CD]] for ML** — automated pipelines that build, test, and validate ML components; extends classical [[CI/CD]] with ML-specific steps such as data validation, model evaluation gates, and shadow deployment.
+  - **[[Continuous Training]]** — the CT loop: automated retraining triggered by data drift alerts, scheduled data freshness windows, or upstream data pipeline updates; replaces the manual "train-once-deploy" anti-pattern.
+  - **[[Model Serving]] and inference infrastructure** — REST/gRPC endpoints backed by model servers (TorchServe, TensorFlow Serving, Triton Inference Server) deployed on [[Kubernetes]]; supports both real-time online serving and batch inference.
+  - **[[Data Versioning]]** — tracking of dataset snapshots alongside model versions so any historical experiment is fully reproducible; tools include DVC and LakeFS.
+  - **[[Version Control]]** — standard SCM (Git) applied not just to training code but to pipeline definitions, configuration, and environment specifications.
+
+- ### Applications / Use Cases
+  - **Online fraud detection** — models retrained daily on fresh transaction patterns and served at sub-millisecond latency via online endpoints; [[Model Monitoring]] detects shifts in fraud patterns that indicate concept drift and triggers retraining.
+  - **Recommender systems** — large-scale feature pipelines updated in near-real time; [[Feature Store]]s decouple feature computation from model serving, enabling multiple model variants to share the same feature infrastructure.
+  - **Natural language processing pipelines** — fine-tuned [[Large Language Model]]s managed through the model registry with version gating; [[Model Explainability]] tools audit safety before promotion to production.
+  - **Medical imaging diagnostics** — strict audit trail requirements satisfied through experiment tracking and model registry; [[Data Governance]] and [[AI Governance]] frameworks enforce PHI handling and regulatory compliance (e.g. MDR in the EU).
+  - **Industrial predictive maintenance** — sensor-stream data pipelines feed time-series models; [[Data Drift]] monitors detect sensor degradation or process changes before they affect model accuracy.
+  - **Search ranking** — shadow deployment and [[A/B Testing]] frameworks compare candidate ranking models against the incumbent on live traffic before full rollout.
+  - **Autonomous vehicle perception** — [[Data Versioning]] tracks which annotated driving scenarios each model was trained on; the model registry records each deployed firmware version per vehicle fleet.
 
 - ### Relationships
-  - MLOps is a subclass of [[Machine Learning Discipline]] and the operational discipline that governs the [[AI Lifecycle]] from experiment to production. It depends on [[Cloud Computing]] and [[Kubernetes]] for scalable infrastructure, uses [[Data Pipeline]]s for data ingestion and transformation, [[Feature Engineering]] and [[Feature Store]]s for consistent feature access, and [[Data Versioning]] and [[Version Control]] for reproducibility. It enables [[AI Deployment]] and live [[Inference]] serving while relying on [[AI Monitoring]] to detect drift. [[Machine Learning Pipeline]]s encode the end-to-end workflow, and [[Data Governance]] frameworks ensure compliance and data quality throughout.
+  - partOf:: [[AI Lifecycle]]
+  - hasPart:: [[Model Registry]]
+  - hasPart:: [[Feature Store]]
+  - hasPart:: [[Experiment Tracking]]
+  - hasPart:: [[Machine Learning Pipeline]]
+  - requires:: [[Version Control]]
+  - requires:: [[Data Versioning]]
+  - requires:: [[Data Pipeline]]
+  - requires:: [[Feature Engineering]]
+  - enables:: [[AI Deployment]]
+  - enables:: [[Inference]]
+  - enables:: [[Model Training]]
+  - enables:: [[Continuous Training]]
+  - enables:: [[Model Monitoring]]
+  - uses:: [[Cloud Computing]]
+  - uses:: [[Kubernetes]]
+  - uses:: [[Container]]
+  - uses:: [[Workflow Orchestration]]
+  - uses:: [[CI/CD]]
+  - supports:: [[Model Explainability]]
+  - supports:: [[AI Governance]]
+  - supports:: [[Reproducibility]]
+  - dependsOn:: [[Data Governance]]
+  - dependsOn:: [[AI Monitoring]]
+  - contrastsWith:: [[DevOps]]
+  - bridges-to:: [[Data Engineering]]
+  - bridges-to:: [[Platform Engineering]]
+  - relatedTo:: [[Data Drift]]
+  - relatedTo:: [[A/B Testing]]
+  - relatedTo:: [[Model Serving]]
 
-- ### Content
-  - MLOps emerged as a discipline around 2017–2018 in response to the "last mile" problem of machine learning: organisations found it straightforward to train promising models in notebooks but extremely difficult to deploy, maintain, and improve them reliably in production. The term borrowed from DevOps and Site Reliability Engineering, recognising that ML systems require continuous integration, continuous delivery, and continuous training (CI/CD/CT) rather than the one-shot release cycle typical of traditional software.
+- ### Standards & Context
+  - **Google's MLOps whitepaper (2020)** established the three-level maturity model (levels 0, 1, 2) that became the de facto reference for organisational capability assessment.
+  - **CD Foundation MLOps SIG** — a working group under the Continuous Delivery Foundation developing vendor-neutral MLOps interoperability standards.
+  - **EU AI Act** (2024) introduces risk-tier requirements for ML systems in production, making MLOps governance practices (audit trails, [[Model Explainability]], version management) a legal necessity for high-risk AI systems.
+  - **ISO/IEC 42001** (AI Management Systems) and **ISO/IEC 5338** (AI lifecycle processes) define process requirements that align closely with MLOps practices around traceability, testing, and monitoring.
+  - **NIST AI RMF** (Risk Management Framework, 2023) provides a governance overlay that MLOps tooling must support, particularly around documentation, testing, and deployment safeguards.
+  - Platform ecosystems: AWS SageMaker, Google Vertex AI, Azure ML, and Databricks MLflow all provide integrated MLOps stacks implementing the full CI/CD/CT lifecycle; open-source alternatives include Kubeflow (CNCF), MLflow, and ZenML.
 
-  - A central insight of MLOps is that ML systems are uniquely complex because they have three axes of change: the training code, the data, and the model weights. A model that performs well today may degrade without any code change if the statistical distribution of incoming data shifts — a phenomenon called data drift or concept drift. MLOps practice therefore mandates monitoring pipelines that continuously evaluate model performance on fresh production data, trigger retraining when degradation is detected, and validate the new model before promoting it to replace the incumbent.
-
-  - The MLOps tooling ecosystem has grown rapidly. Experiment tracking tools (MLflow, Weights and Biases) record hyperparameters, metrics, and artefacts for every training run, enabling reproducibility and comparison. Model registries store versioned model artefacts with promotion gates (staging → production). Feature stores (Feast, Tecton, Hopsworks) ensure that the features used at training time exactly match those computed at inference time, eliminating training-serving skew. Workflow orchestrators (Apache Airflow, Kubeflow Pipelines, Prefect) schedule and execute multi-step pipelines across heterogeneous compute.
-
-  - Deployment patterns in MLOps range from batch inference (running predictions on stored data overnight) to real-time online serving via REST or gRPC endpoints backed by model servers such as TorchServe, TensorFlow Serving, or Triton Inference Server. Canary and shadow deployments allow new model versions to handle a fraction of traffic alongside the incumbent, enabling statistical comparison before full rollout. A/B testing frameworks measure business-level outcomes (conversion rates, user engagement) beyond pure ML metrics.
-
-  - Organisational maturity in MLOps is often characterised on a capability ladder. At level 0, data scientists manually train and deploy models. At level 1, training pipelines are automated but deployment remains manual. At level 2, the full CI/CD/CT loop is automated, with model changes triggering automated testing, validation, and deployment without human intervention. Reaching level 2 requires sustained investment in platform engineering, cultural alignment between data scientists and platform engineers, and governance frameworks that satisfy regulatory requirements around model explainability and audit trails.
+- ### Provenance
+  - sources:: Google MLOps whitepaper (practitioners.google/guides/mlops); CD Foundation MLOps SIG; Sculley et al. "Hidden Technical Debt in Machine Learning Systems" (NIPS 2015); Kreuzberger et al. "Machine Learning Operations: A Survey" (2023); NIST AI RMF 1.0 (2023)
+  - updated:: 2026-06-13

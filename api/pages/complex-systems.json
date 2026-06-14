@@ -4,7 +4,7 @@
   "slug": "complex-systems",
   "public": true,
   "classIri": "urn:ngm:class:complex-systems",
-  "domain": "mathematics",
+  "domain": "machine-learning",
   "definition": "Systems composed of many interacting components whose collective behaviour cannot be simply inferred from the behaviour of the individual parts.",
   "subClassOf": [
     {

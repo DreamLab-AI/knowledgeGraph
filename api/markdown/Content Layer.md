@@ -59,7 +59,7 @@ public:: true
   "@type": "Class",
   "label": "Content Layer",
   "definition": "The Content Layer is the stratum that holds the substantive information and media that a system manages and presents. It sits above the Data Layer that stores it and below the Presentation Layer that renders it. It contains documents, media assets, metadata, and the structures that organise meaning.",
-  "domain": "content",
+  "domain": "metaverse",
   "maturity": "emerging",
   "qualityScore": 0.7,
   "subClassOf": [

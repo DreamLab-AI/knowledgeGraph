@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:agentic-ai",
   "domain": "artificial-intelligence",
-  "definition": "Agentic AI refers to AI systems characterised by autonomy, goal-directedness, and the capacity to take sustained sequences of actions \u2014 including calling tools, spawning sub-agents, and modifying their own environment \u2014 in pursuit of high-level objectives specified by a user or orchestrator. Agentic systems differ from conversational AI in that they operate over extended time horizons, maintain state across steps, and may take consequential irreversible actions. The term is used both to describe individual agents and multi-agent architectures in which agentic components collaborate.",
+  "definition": "Agentic AI refers to AI systems characterised by autonomy, goal-directedness, and the capacity to take sustained sequences of actions \u2014 including calling external tools, spawning sub-agents, and modifying their own environment \u2014 in pursuit of high-level objectives specified by a user or orchestrator. Agentic systems differ from reactive or conversational AI in that they operate over extended time horizons, maintain persistent state across steps, and may take consequential or irreversible actions without per-step human approval. The architectural backbone is typically a large language model serving as a cognitive core inside a closed sense-plan-act loop, augmented by memory stores, tool registries, and inter-agent communication protocols. The term encompasses both single-agent pipelines and heterogeneous multi-agent architectures in which agentic components collaborate, compete, or are hierarchically orchestrated.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-application",
@@ -13,10 +13,23 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
+  "qualityScore": 0.74,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:agent-loop",
+        "label": "Agent Loop"
+      },
+      {
+        "id": "urn:ngm:class:tool-registry",
+        "label": "Tool Registry"
+      },
+      {
+        "id": "urn:ngm:class:working-memory",
+        "label": "Working Memory"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:large-language-models",
@@ -25,20 +38,97 @@
       {
         "id": "urn:ngm:class:tool-use",
         "label": "Tool Use"
+      },
+      {
+        "id": "urn:ngm:class:memory-management",
+        "label": "Memory Management"
+      },
+      {
+        "id": "urn:ngm:class:task-planning",
+        "label": "Task Planning"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:autonomous-agent",
         "label": "Autonomous Agent"
+      },
+      {
+        "id": "urn:ngm:class:multi-agent-system",
+        "label": "Multi-Agent System"
+      },
+      {
+        "id": "urn:ngm:class:workflow-automation",
+        "label": "Workflow Automation"
+      },
+      {
+        "id": "urn:ngm:class:software-engineering-automation",
+        "label": "Software Engineering Automation"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:foundation-models",
+        "label": "Foundation Models"
+      },
+      {
+        "id": "urn:ngm:class:vector-database",
+        "label": "Vector Database"
+      },
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:conversational-ai",
+        "label": "Conversational AI"
+      },
+      {
+        "id": "urn:ngm:class:reactive-system",
+        "label": "Reactive System"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:robotic-process-automation",
+        "label": "Robotic Process Automation"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:function-calling",
+        "label": "Function Calling"
+      },
+      {
+        "id": "urn:ngm:class:chain-of-thought",
+        "label": "Chain of Thought"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:model-context-protocol",
+        "label": "Model Context Protocol"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:human-in-the-loop",
+        "label": "Human-in-the-Loop"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
@@ -49,6 +139,14 @@
       {
         "id": "urn:ngm:class:orchestration",
         "label": "Orchestration"
+      },
+      {
+        "id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      },
+      {
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
       }
     ]
   },

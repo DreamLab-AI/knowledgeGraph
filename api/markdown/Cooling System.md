@@ -43,7 +43,7 @@ public:: true
   "@type": "Class",
   "label": "Cooling System",
   "definition": "A system that removes heat from equipment to keep it within safe operating temperatures. In computing it covers air, liquid, and immersion methods used in servers and data centres.",
-  "domain": "computing",
+  "domain": "infrastructure",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

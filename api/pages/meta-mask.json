@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:meta-mask",
   "domain": "blockchain",
-  "definition": "MetaMask is a software cryptocurrency wallet, available as a browser extension and mobile application, for interacting with Ethereum and compatible networks.",
+  "definition": "MetaMask is a self-custodial software cryptocurrency wallet, distributed as a browser extension (Chrome, Firefox, Brave, Edge) and mobile application (iOS and Android), that enables users to manage Ethereum and EVM-compatible blockchain assets directly in the browser without handing custody of private keys to a third party. It implements the EIP-1193 provider standard to expose a JavaScript API that decentralised applications (dApps) use to request signatures and transactions, making it the de facto gateway through which most users access Web3 services. MetaMask stores an encrypted HD wallet (BIP-32/BIP-39) locally in the browser's secure storage and signs all transactions client-side before broadcasting them to the chosen network via JSON-RPC. Developed by ConsenSys and first released in 2016, it is the most widely adopted non-custodial wallet by active monthly users.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:digital-wallet",
@@ -13,31 +13,129 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.75,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:ethereum-smart-contract-platform",
+        "id": "urn:ngm:class:ethereum",
         "label": "Ethereum"
+      },
+      {
+        "id": "urn:ngm:class:evm-compatible-blockchain",
+        "label": "EVM-Compatible Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:json-rpc",
+        "label": "JSON-RPC"
+      },
+      {
+        "id": "urn:ngm:class:bip-39",
+        "label": "BIP-39"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:web3",
         "label": "Web3"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-application",
+        "label": "Decentralised Application"
+      },
+      {
+        "id": "urn:ngm:class:nft-trading",
+        "label": "NFT Trading"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:eip-1193",
+        "label": "EIP-1193"
+      },
+      {
+        "id": "urn:ngm:class:bip-32",
+        "label": "BIP-32"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:custodial-wallet",
+        "label": "Custodial Wallet"
+      },
+      {
+        "id": "urn:ngm:class:coinbase-wallet",
+        "label": "Coinbase Wallet"
+      },
+      {
+        "id": "urn:ngm:class:trust-wallet",
+        "label": "Trust Wallet"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:hierarchical-deterministic-wallet",
+        "label": "Hierarchical Deterministic Wallet"
+      },
+      {
+        "id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:seed-phrase",
+        "label": "Seed Phrase"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:self-custody",
+        "label": "Self-Custody"
+      },
+      {
+        "id": "urn:ngm:class:token-standard-erc-20",
+        "label": "ERC-20"
+      },
+      {
+        "id": "urn:ngm:class:token-standard-erc-721",
+        "label": "ERC-721"
+      },
+      {
+        "id": "urn:ngm:class:hardware-wallet",
+        "label": "Hardware Wallet"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:gas-fee",
+        "label": "Gas Fee"
+      },
+      {
+        "id": "urn:ngm:class:network-rpc-endpoint",
+        "label": "Network RPC Endpoint"
+      }
+    ]
   },
   "wikilinks": [
     {

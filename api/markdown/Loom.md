@@ -43,7 +43,7 @@ public:: true
   "@type": "Class",
   "label": "Loom",
   "definition": "A video messaging application that lets users record their screen, camera, and microphone to create and share short videos. It is used for asynchronous communication at work.",
-  "domain": "software",
+  "domain": "infrastructure",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

@@ -20,38 +20,175 @@ public:: true
   "@id": "urn:ngm:class:gaussian-process",
   "@type": "Class",
   "label": "Gaussian Process",
-  "definition": "A Gaussian Process (GP) is a non-parametric Bayesian model that places a probability distribution over functions, fully specified by a mean function and a covariance (kernel) function, such that any finite collection of function values follows a joint Gaussian distribution. GPs provide principled uncertainty quantification alongside predictions and serve as flexible surrogate models in scientific computing and optimisation.",
-  "domain": "ai",
+  "definition": "A Gaussian Process (GP) is a non-parametric Bayesian model that defines a probability distribution over functions, fully characterised by a mean function and a covariance (kernel) function, such that any finite collection of function evaluations follows a joint Gaussian distribution. Conditioning the GP prior on observed data yields a closed-form posterior distribution over functions that simultaneously provides point predictions and principled uncertainty estimates. GPs are widely used for regression, classification, surrogate modelling, and as acquisition-function models in Bayesian optimisation, with exact inference scaling cubically in the number of observations and sparse inducing-point approximations enabling scalable variants.",
+  "domain": "machine-learning",
   "maturity": "mature",
   "subClassOf": [
     {"@id": "urn:ngm:class:bayesian-inference", "label": "Bayesian Inference"}
   ],
   "relations": {
-    "relatedTo": [
-      {"@id": "urn:ngm:class:gaussian-process-regression", "label": "Gaussian Process Regression"},
-      {"@id": "urn:ngm:class:kernel-methods", "label": "Kernel Methods"},
-      {"@id": "urn:ngm:class:hamiltonian-monte-carlo", "label": "Hamiltonian Monte Carlo"}
+    "hasPart": [
+      {"@id": "urn:ngm:class:kernel-function", "label": "Kernel Function"},
+      {"@id": "urn:ngm:class:mean-function", "label": "Mean Function"},
+      {"@id": "urn:ngm:class:posterior-predictive-distribution", "label": "Posterior Predictive Distribution"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:gaussian-distribution", "label": "Gaussian Distribution"},
+      {"@id": "urn:ngm:class:positive-definite-matrix", "label": "Positive Definite Matrix"}
     ],
     "enables": [
-      {"@id": "urn:ngm:class:bayesian-optimisation", "label": "Bayesian Optimisation"}
+      {"@id": "urn:ngm:class:bayesian-optimisation", "label": "Bayesian Optimisation"},
+      {"@id": "urn:ngm:class:uncertainty-quantification", "label": "Uncertainty Quantification"},
+      {"@id": "urn:ngm:class:active-learning", "label": "Active Learning"},
+      {"@id": "urn:ngm:class:gaussian-process-regression", "label": "Gaussian Process Regression"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:gaussian-distribution", "label": "Gaussian Distribution"}
+      {"@id": "urn:ngm:class:kernel-methods", "label": "Kernel Methods"},
+      {"@id": "urn:ngm:class:marginal-likelihood", "label": "Marginal Likelihood"},
+      {"@id": "urn:ngm:class:cholesky-decomposition", "label": "Cholesky Decomposition"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:covariance-matrix", "label": "Covariance Matrix"},
+      {"@id": "urn:ngm:class:hyperparameter-optimisation", "label": "Hyperparameter Optimisation"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
+      {"@id": "urn:ngm:class:random-forest", "label": "Random Forest"},
+      {"@id": "urn:ngm:class:support-vector-machine", "label": "Support Vector Machine"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:kriging", "label": "Kriging"},
+      {"@id": "urn:ngm:class:hamiltonian-monte-carlo", "label": "Hamiltonian Monte Carlo"},
+      {"@id": "urn:ngm:class:variational-inference", "label": "Variational Inference"},
+      {"@id": "urn:ngm:class:deep-kernel-learning", "label": "Deep Kernel Learning"},
+      {"@id": "urn:ngm:class:sparse-gaussian-process", "label": "Sparse Gaussian Process"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:spatial-interpolation", "label": "Spatial Interpolation"},
+      {"@id": "urn:ngm:class:scientific-computing", "label": "Scientific Computing"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:kriging", "label": "Kriging"}
+  ],
+  "quality": 0.74,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-13T00:00:00Z",
+    "inferenceRule": "ManualEnrichment"
+  }
 }
 ```
 
 - ### Definition
-  - A [[Gaussian Process]] is a collection of random variables, any finite subset of which has a joint Gaussian distribution, defined by a mean function m(x) and a kernel (covariance) function k(x, x') that encodes assumptions about function smoothness and structure; inference proceeds by conditioning the GP prior on observed data to obtain a posterior distribution over functions.
+  - A [[Gaussian Process]] is a stochastic process — a collection of random variables indexed over an input space — with the property that every finite subset follows a joint [[Gaussian Distribution]]. Fully specified by a mean function m(x) and a covariance (kernel) function k(x, x'), it places a prior distribution directly over functions rather than over finite parameter vectors, making it non-parametric in the sense that model capacity grows with data. Conditioning on observed training pairs (X, y) yields a posterior via Bayes' theorem in closed form, providing both a predictive mean and a predictive variance that encodes calibrated uncertainty. GPs are the probabilistic foundation of [[Gaussian Process Regression]], [[Bayesian Optimisation]], and spatial statistics (where they are known as [[Kriging]]).
+
+- ### Overview
+  - **Historical Roots**
+    - The GP framework emerged from geostatistics in the 1960s, where Danie Krige and Georges Matheron developed [[Kriging]] for spatial interpolation of ore grades. The machine learning community formalised GPs through David MacKay's 1990s neural network GP connections and the landmark textbook by Rasmussen and Williams (2006), which unified notation and established GPs as a canonical tool in probabilistic modelling.
+    - The core insight is that specifying a kernel function implicitly defines an infinite-dimensional feature space, giving GPs the expressive power of non-parametric models while retaining full probabilistic semantics — a connection later made explicit through the kernel trick in [[Kernel Methods]] and [[Support Vector Machine]] theory.
+  - **Why GPs Matter**
+    - Unlike point-estimate regressors such as [[Neural Network]]s or [[Random Forest]]s, GPs carry a full posterior distribution over predictions. This calibrated uncertainty is critical in settings where acting on a wrong prediction is costly: drug discovery, materials screening, autonomous systems, clinical decision support, and scientific experiment design.
+    - The marginal likelihood (evidence) provides an automatic complexity penalty — models with unnecessarily many degrees of freedom are disfavoured without explicit regularisation, an expression of [[Occam's Razor]] within Bayesian model selection.
+  - **Limitations**
+    - Exact GP inference requires computing and inverting the N×N kernel matrix, giving O(N³) time and O(N²) memory. This becomes prohibitive beyond roughly 10,000 training points with naive implementation, motivating extensive research into approximate inference methods.
+
+- ### Key Components
+  - **Mean Function m(x)**
+    - Encodes prior beliefs about the function's central tendency. Typically set to zero (centred GP) or a polynomial trend. The posterior mean adjusts the prior mean by the data.
+  - **Kernel (Covariance) Function k(x, x')**
+    - The kernel fully determines the sample-path properties (smoothness, periodicity, stationarity) of the GP. Must be [[Positive Definite Matrix]] to guarantee valid covariance matrices.
+    - Common kernels:
+      - **Squared-Exponential (RBF)**: infinitely differentiable, over-smooth for many physical processes
+      - **Matérn**: controls differentiability via half-integer parameter ν (ν=5/2 and ν=3/2 are most popular in practice)
+      - **Periodic**: captures cyclic patterns — natural for time series with known period
+      - **Rational Quadratic**: scale-mixture of RBF kernels, handles multi-scale variation
+      - **Spectral Mixture**: learned as mixture of cosines, very flexible for time series
+    - Kernels can be combined by addition (modelling a sum of independent processes) or multiplication (modelling interactions), enabling compositional model building via [[Kernel Methods]].
+  - **Posterior Inference**
+    - Given training inputs X and noisy observations y = f(X) + ε (ε ∼ N(0, σ²I)):
+      - Posterior mean: μ* = K*ᵀ (K + σ²I)⁻¹ y
+      - Posterior covariance: Σ* = K** − K*ᵀ (K + σ²I)⁻¹ K*
+    - The key computation is solving the linear system via [[Cholesky Decomposition]], which is numerically stable and reveals the log-marginal likelihood as a by-product.
+  - **Hyperparameter Learning**
+    - Kernel hyperparameters (lengthscale ℓ, signal variance σ_f², noise variance σ_n²) are learned by maximising the log [[Marginal Likelihood]] log p(y|X, θ) with respect to θ, typically via L-BFGS or Adam. This balances data fit against model complexity without a separate validation set.
+  - **Acquisition Functions in [[Bayesian Optimisation]]**
+    - The GP posterior feeds acquisition functions that determine where to evaluate the objective next:
+      - **Expected Improvement (EI)**: maximises expected gain over the current best observation
+      - **Upper Confidence Bound (UCB)**: explicit exploration–exploitation trade-off via a tunable β
+      - **Thompson Sampling**: samples a function from the posterior and maximises it
+      - **Knowledge Gradient**: one-step lookahead for the best expected posterior mean
+
+- ### Mechanisms and Variants
+  - **Sparse / Inducing-Point GPs**
+    - [[Sparse Gaussian Process]] methods introduce M ≪ N inducing inputs Z to reduce cost to O(NM²). The Sparse GP with Variational Free Energy (SVGP) by Titsias (2009) and Hensman et al. (2013) enables stochastic mini-batch training and GPU parallelism, implemented in [[GPflow]] and [[GPyTorch]]. This is the dominant practical approach for large datasets.
+  - **Deep Kernel Learning**
+    - [[Deep Kernel Learning]] (DKL) passes inputs through a [[Neural Network]] encoder before the kernel, giving the GP the representation power of deep learning with GP uncertainty calibration. Implemented in GPyTorch's `DeepKernelLearning` module.
+  - **Multi-Output GPs**
+    - Intrinsic co-regionalisation models (ICM) and linear model of co-regionalisation (LMC) extend GPs to vector-valued outputs, capturing correlations between output dimensions. Used in multi-fidelity surrogate modelling and multi-task learning.
+  - **Heteroscedastic GPs**
+    - Standard GPs assume homoscedastic (constant) noise. Heteroscedastic variants model input-dependent noise σ²(x) using a second latent GP, critical for spatiotemporal data such as wind speed or financial volatility where noise varies systematically.
+  - **GP Classification**
+    - For binary or multi-class labels, the latent GP is passed through a likelihood (e.g. Bernoulli-probit or softmax). Exact inference is no longer available; Laplace approximation, [[Variational Inference]], or Expectation Propagation (EP) are used instead.
+  - **Connections to Neural Networks**
+    - Neal (1996) showed that a single-hidden-layer neural network with random weights converges to a GP as width → ∞. The Neural Tangent Kernel (NTK) identifies the GP kernel of infinitely wide networks trained by gradient descent, linking deep learning theory to GP theory.
+
+- ### Applications and Use Cases
+  - **Hyperparameter Tuning**
+    - GP-based [[Bayesian Optimisation]] (e.g. Spearmint, BoTorch, Optuna) dramatically reduces the number of expensive model evaluations needed to tune machine learning models, replacing grid search with intelligent sequential experiments.
+  - **Drug Discovery and Materials Science**
+    - GPs model structure–activity relationships and material property surfaces with uncertainty, guiding experimental campaigns in [[Active Learning]] loops. Sparse GP surrogates replace expensive quantum chemistry simulations.
+  - **Robotics and Control**
+    - GP models of system dynamics inform [[Model Predictive Control]] and [[Reinforcement Learning]] planners, allowing safe exploration with statistical guarantees on constraint satisfaction. PILCO (Deisenroth and Rasmussen, 2011) demonstrated data-efficient robot learning with GP dynamics models.
+  - **Spatiotemporal Modelling**
+    - [[Kriging]] (GP regression over geographic space) underpins geostatistics, environmental monitoring, and climatology. GP-based methods interpolate temperature, precipitation, and pollution fields with principled uncertainty, feeding downstream [[Uncertainty Quantification]] pipelines.
+  - **Time Series Forecasting**
+    - GPs with structured kernels (Matérn + periodic + rational quadratic) provide interpretable decompositions of time series into trend, seasonality, and noise components, used in weather forecasting, epidemiology, and energy demand prediction.
+  - **Computer Experiments and Simulation Surrogates**
+    - In [[Scientific Computing]] and engineering design, GPs act as cheap-to-evaluate proxies (emulators) for expensive simulators (CFD, FEA). The GP posterior guides adaptive sampling strategies, concentrating evaluations in regions of high uncertainty or sensitivity.
+  - **Autonomous Systems**
+    - GP occupancy maps encode free/occupied space in robotics navigation. GP-based risk models support collision avoidance in autonomous vehicles with calibrated confidence bounds rather than point estimates.
 
 - ### Relationships
-  - [[Gaussian Process]] is the generative model underlying [[Gaussian Process Regression]] and leverages [[Kernel Methods]] to encode inductive biases; it is used in [[Bayesian Optimisation]] as a surrogate for expensive black-box functions, naturally paired with [[Hamiltonian Monte Carlo]] for posterior hyperparameter inference, and draws on [[Gaussian Distribution]] for its closed-form predictive equations.
+  - uses:: [[Kernel Methods]]
+  - uses:: [[Gaussian Distribution]]
+  - uses:: [[Marginal Likelihood]]
+  - uses:: [[Cholesky Decomposition]]
+  - enables:: [[Bayesian Optimisation]]
+  - enables:: [[Uncertainty Quantification]]
+  - enables:: [[Active Learning]]
+  - enables:: [[Gaussian Process Regression]]
+  - requires:: [[Positive Definite Matrix]]
+  - requires:: [[Hyperparameter Optimisation]]
+  - dependsOn:: [[Covariance Matrix]]
+  - hasPart:: [[Kernel Function]]
+  - hasPart:: [[Mean Function]]
+  - hasPart:: [[Posterior Predictive Distribution]]
+  - contrastsWith:: [[Neural Network]]
+  - contrastsWith:: [[Random Forest]]
+  - contrastsWith:: [[Support Vector Machine]]
+  - relatedTo:: [[Kriging]]
+  - relatedTo:: [[Hamiltonian Monte Carlo]]
+  - relatedTo:: [[Variational Inference]]
+  - relatedTo:: [[Sparse Gaussian Process]]
+  - relatedTo:: [[Deep Kernel Learning]]
+  - bridges-to:: [[Spatial Interpolation]]
+  - bridges-to:: [[Scientific Computing]]
 
-- ### Content
-  - Gaussian Processes have roots in geostatistics, where they were known as Kriging, developed by Danie Krige and formalised by Georges Matheron in the 1960s for spatial interpolation of ore grades. The machine learning community adopted GPs through David MacKay's work in the 1990s and the landmark textbook "Gaussian Processes for Machine Learning" by Rasmussen and Williams (2006), which established the standard notation and derivations. The appeal is a fully probabilistic treatment of regression and classification without specifying a parametric function form.
-  - A GP model is specified by selecting a mean function (often zero) and a covariance kernel such as the squared-exponential (RBF), Matern, or periodic kernel. Given training data (X, y), the posterior predictive distribution at new inputs X* is obtained analytically by solving a linear system involving the kernel matrix K(X, X). Hyperparameters (lengthscale, noise variance, signal variance) are typically learned by maximising the marginal likelihood, which balances data fit and model complexity automatically — an elegant expression of Occam's razor.
-  - GPs matter because they provide calibrated uncertainty estimates: the predictive variance tells a practitioner not just the expected output but how confident the model is. This is critical in safety-sensitive domains such as drug discovery, materials science, and autonomous vehicle path planning. In Bayesian optimisation, the GP posterior guides acquisition functions (Expected Improvement, UCB) to efficiently explore–exploit the objective surface, enabling hyperparameter tuning and experiment design with far fewer evaluations than grid or random search.
-  - In 2024–2025, the main research directions are scaling GPs to large datasets through sparse inducing-point approximations (sparse GPs, SVGP), deep kernel learning that uses neural networks as feature extractors fed into a GP final layer, and multi-output/multi-fidelity GPs for scientific simulation surrogates. Libraries such as GPflow, GPyTorch, and BoTorch have made GPU-accelerated GP inference accessible to practitioners. Heteroscedastic and non-stationary GP variants are gaining traction in spatiotemporal modelling for climate and epidemiology.
+- ### Software Ecosystem
+  - **GPflow** — TensorFlow-based GP library with variational inference and automatic differentiation, supporting sparse GPs and custom kernels
+  - **GPyTorch** — PyTorch-based library enabling GPU-accelerated exact and approximate GP inference, with [[Deep Kernel Learning]] and KeOps integration for large-scale structured matrices
+  - **BoTorch** — PyTorch library for Bayesian optimisation built on GPyTorch, providing acquisition functions and multi-objective optimisation utilities
+  - **Scikit-learn** — provides `GaussianProcessRegressor` and `GaussianProcessClassifier` for small-to-medium scale use with standard kernels
+  - **Stan / PyMC** — probabilistic programming frameworks that support GP components for complex hierarchical models integrating [[Hamiltonian Monte Carlo]] sampling
+  - **Emukit** — modular framework for Bayesian optimisation, experimental design, and sensitivity analysis using GP surrogates
 
+- ### Standards and Context
+  - GPs are extensively covered in standard probabilistic machine learning textbooks (Bishop 2006, Murphy 2012 and 2023) and form part of the curriculum in university ML courses worldwide. The Rasmussen–Williams (2006) text remains the canonical reference and is freely available online.
+  - In [[Bayesian Inference]] literature, GPs are a central example of nonparametric Bayes, sitting alongside Dirichlet processes and Indian buffet processes.
+  - The Gaussian Process Summer School (GPSS) at Sheffield and NeurIPS workshops have driven dissemination and standardisation of practice, particularly around inducing-point methods and software tooling.
+  - Connections to [[Reproducing Kernel Hilbert Space]] (RKHS) theory provide a functional-analytic foundation, linking GP posterior means to regularised least-squares solutions in function spaces — a bridge between the Bayesian and frequentist perspectives on kernel machines.
+
+- ### Provenance
+  - sources:: Rasmussen & Williams, "Gaussian Processes for Machine Learning", MIT Press, 2006; Titsias (2009) sparse GP; Hensman et al. (2013) SVGP; Neal (1996) Bayesian learning for neural networks; Deisenroth & Rasmussen (2011) PILCO
+  - updated:: 2026-06-13

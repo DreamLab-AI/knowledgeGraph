@@ -5,18 +5,31 @@
   "public": true,
   "classIri": "urn:ngm:class:retrieval-augmented-generation",
   "domain": "artificial-intelligence",
-  "definition": "Retrieval-Augmented Generation (RAG) is an AI inference architecture that grounds large language model responses by dynamically fetching semantically relevant passages from an external knowledge store at query time. A retriever\u2014typically backed by a vector database using dense embeddings\u2014identifies the most relevant document chunks, which are concatenated into the model's context window before generation. RAG reduces hallucination, enables up-to-date knowledge without costly retraining, and allows fine-grained attribution of generated claims to source documents, making it the dominant pattern for enterprise knowledge-intensive question answering.",
+  "definition": "Retrieval-Augmented Generation (RAG) is an AI inference architecture that augments large language model generation by dynamically retrieving semantically relevant passages from an external knowledge store at query time, concatenating them into the model context window before the response is produced. A retriever component\u2014typically a dense bi-encoder backed by a vector database\u2014embeds both the query and document corpus into a shared latent space and selects the top-k most similar chunks via approximate nearest-neighbour search. This non-parametric memory mechanism decouples factual knowledge from frozen model weights, dramatically reducing hallucination rates, enabling post-deployment knowledge updates without retraining, and providing fine-grained source attribution for generated claims. RAG has become the dominant architectural pattern for enterprise knowledge-intensive natural language processing applications, including question answering, customer support, legal research, and medical information retrieval.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique"
+      "id": "urn:ngm:class:ai-inference-architecture",
+      "label": "AI Inference Architecture"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.76,
+  "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:retriever-component",
+        "label": "Retriever Component"
+      },
+      {
+        "id": "urn:ngm:class:reader-component",
+        "label": "Reader Component"
+      },
+      {
+        "id": "urn:ngm:class:context-window-management",
+        "label": "Context Window Management"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:vector-database",
@@ -25,6 +38,14 @@
       {
         "id": "urn:ngm:class:embedding-model",
         "label": "Embedding Model"
+      },
+      {
+        "id": "urn:ngm:class:document-chunking",
+        "label": "Document Chunking"
+      },
+      {
+        "id": "urn:ngm:class:approximate-nearest-neighbour-search",
+        "label": "Approximate Nearest Neighbour Search"
       }
     ],
     "enables": [
@@ -35,26 +56,89 @@
       {
         "id": "urn:ngm:class:semantic-search",
         "label": "Semantic Search"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-grounding",
+        "label": "Knowledge Grounding"
+      },
+      {
+        "id": "urn:ngm:class:source-attribution",
+        "label": "Source Attribution"
+      },
+      {
+        "id": "urn:ngm:class:hallucination-mitigation",
+        "label": "Hallucination Mitigation"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:fine-tuning",
+        "label": "Fine-Tuning"
+      },
+      {
+        "id": "urn:ngm:class:parametric-knowledge",
+        "label": "Parametric Knowledge"
+      },
+      {
+        "id": "urn:ngm:class:model-pretraining",
+        "label": "Model Pre-training"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:enterprise-search",
+        "label": "Enterprise Search"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      }
+    ],
     "uses": [
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
       {
         "id": "urn:ngm:class:knowledge-base",
         "label": "Knowledge Base"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:dense-retrieval",
+        "label": "Dense Retrieval"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
       }
     ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:information-retrieval",
+        "label": "Information Retrieval"
+      },
+      {
+        "id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

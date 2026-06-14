@@ -4,8 +4,8 @@
   "slug": "etsi-arf-010",
   "public": true,
   "classIri": "urn:ngm:class:etsi-arf-010",
-  "domain": "standards",
-  "definition": "ETSI ARF 010 is a deliverable of the ETSI Augmented Reality Framework activity concerning interoperability and architecture for augmented reality systems.",
+  "domain": "spatial-computing",
+  "definition": "ETSI ARF 010 is a technical deliverable produced by the ETSI Industry Specification Group on Augmented Reality Framework (ISG ARF), defining architectural principles, terminology, and interoperability requirements for augmented reality systems and services. It establishes a common reference architecture that allows AR components\u2014such as tracking engines, scene anchors, and rendering pipelines\u2014to interoperate across heterogeneous platforms and devices. The specification addresses how spatial anchors, coordinate systems, and world models are managed and shared, enabling consistent AR experiences in multi-vendor and multi-device deployments. ETSI ARF 010 serves as a foundational normative document within the ARF series, complemented by companion deliverables covering use cases, protocols, and conformance.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:technical-standard",
@@ -13,26 +13,127 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:ar-reference-architecture",
+        "label": "AR Reference Architecture"
+      },
+      {
+        "id": "urn:ngm:class:spatial-anchor",
+        "label": "Spatial Anchor"
+      },
+      {
+        "id": "urn:ngm:class:world-model",
+        "label": "World Model"
+      }
+    ],
     "requires": [
+      {
+        "id": "urn:ngm:class:coordinate-system",
+        "label": "Coordinate System"
+      },
+      {
+        "id": "urn:ngm:class:scene-description",
+        "label": "Scene Description"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:ar-interoperability",
+        "label": "AR Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:multi-device-ar",
+        "label": "Multi-Device AR"
+      },
+      {
+        "id": "urn:ngm:class:shared-ar-experience",
+        "label": "Shared AR Experience"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:openxr",
+        "label": "OpenXR"
+      },
+      {
+        "id": "urn:ngm:class:arcore",
+        "label": "ARCore"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:web-of-things",
+        "label": "Web of Things"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:tracking",
+        "label": "Tracking"
+      },
+      {
+        "id": "urn:ngm:class:pose-estimation",
+        "label": "Pose Estimation"
+      },
+      {
+        "id": "urn:ngm:class:3d-registration",
+        "label": "3D Registration"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:etsi-isg-arf",
+        "label": "ETSI ISG ARF"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:etsi-arf",
+        "label": "ETSI ARF"
+      },
       {
         "id": "urn:ngm:class:etsi",
         "label": "ETSI"
       }
     ],
-    "enables": [],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:etsi-arf-011",
+        "label": "ETSI ARF 011"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-18092",
+        "label": "ISO/IEC 18092"
+      },
+      {
+        "id": "urn:ngm:class:mixed-reality",
+        "label": "Mixed Reality"
+      },
+      {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      }
+    ]
   },
   "wikilinks": [
     {

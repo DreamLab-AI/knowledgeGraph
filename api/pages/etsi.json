@@ -4,47 +4,135 @@
   "slug": "etsi",
   "public": true,
   "classIri": "urn:ngm:class:etsi",
-  "domain": "infrastructure",
-  "definition": "ETSI (European Telecommunications Standards Institute) is a not-for-profit, independent standardisation organisation that produces globally applicable standards for information and communications technology, including telecommunications, broadcasting, and electronic signatures. Headquartered in Sophia Antipolis, France, it operates under a unique membership model that grants access to industry, research organisations, and governments worldwide. ETSI standards underpin technologies such as 5G NR, NFV, MEC, and the eIDAS-compliant electronic signature formats (CAdES, XAdES, PAdES).",
+  "domain": "standards",
+  "definition": "ETSI (European Telecommunications Standards Institute) is a not-for-profit, independent standardisation organisation headquartered in Sophia Antipolis, France, that produces globally applicable ICT standards covering telecommunications, broadcasting, electronic signatures, cybersecurity, and emerging technologies such as 5G, network functions virtualisation (NFV), and multi-access edge computing (MEC). Founded in 1988 under the auspices of the European Commission, ETSI operates a membership model open to industry, governments, and research bodies worldwide, producing European Norms (ENs), ETSI Standards (ES), and Technical Specifications (TS) that feed into EU regulatory frameworks including eIDAS, the EU AI Act, and the European Cybersecurity Act. Its Industry Specification Groups (ISGs) provide an accelerated track for industry-led work on rapidly evolving topics such as quantum-safe cryptography, AI-assisted network management, and zero-trust architecture.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:infra-network-and-comms",
-      "label": "Infra Network and Comms"
+      "id": "urn:ngm:class:standards-body",
+      "label": "Standards Body"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:etsi-nfv",
+        "label": "ETSI NFV"
+      },
+      {
+        "id": "urn:ngm:class:etsi-mec",
+        "label": "ETSI MEC"
+      },
+      {
+        "id": "urn:ngm:class:etsi-eni",
+        "label": "ETSI ENI"
+      },
+      {
+        "id": "urn:ngm:class:etsi-isg",
+        "label": "ETSI ISG"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:technical-committee",
+        "label": "Technical Committee"
+      },
+      {
+        "id": "urn:ngm:class:conformance-testing",
+        "label": "Conformance Testing"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:open-standard",
         "label": "Open Standard"
-      }
-    ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [
+      },
       {
         "id": "urn:ngm:class:interoperability",
         "label": "Interoperability"
       },
       {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:network-slicing",
+        "label": "Network Slicing"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:eidas",
+        "label": "eIDAS"
+      },
+      {
+        "id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      },
+      {
+        "id": "urn:ngm:class:european-cybersecurity-act",
+        "label": "European Cybersecurity Act"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:network-functions-virtualisation",
+        "label": "Network Functions Virtualisation"
+      },
+      {
+        "id": "urn:ngm:class:ai-trustworthiness",
+        "label": "AI Trustworthiness"
+      },
+      {
+        "id": "urn:ngm:class:post-quantum-cryptography",
+        "label": "Post-Quantum Cryptography"
+      }
+    ],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:5g",
+        "label": "5G"
+      },
+      {
         "id": "urn:ngm:class:edge-computing",
         "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:quantum-safe-cryptography",
+        "label": "Quantum-Safe Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
       }
     ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:etsi-domain-taxonomy",
-        "label": "ETSI Domain Taxonomy"
+        "id": "urn:ngm:class:3gpp",
+        "label": "3GPP"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec",
+        "label": "ISO/IEC"
+      },
+      {
+        "id": "urn:ngm:class:itu-t",
+        "label": "ITU-T"
+      },
+      {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      },
+      {
+        "id": "urn:ngm:class:cen-cenelec",
+        "label": "CEN-CENELEC"
       },
       {
         "id": "urn:ngm:class:ai-regulation",

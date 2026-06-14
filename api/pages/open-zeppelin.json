@@ -5,39 +5,151 @@
   "public": true,
   "classIri": "urn:ngm:class:open-zeppelin",
   "domain": "blockchain",
-  "definition": "OpenZeppelin is a company that provides open-source smart contract libraries and security tooling for Ethereum and compatible blockchains.",
+  "definition": "OpenZeppelin is an open-source framework and security company that provides battle-tested, audited smart contract libraries for Ethereum and EVM-compatible blockchains, most notably the OpenZeppelin Contracts library. It implements widely adopted token standards (ERC-20, ERC-721, ERC-1155), access control patterns, proxy upgrade mechanisms, and governance primitives used as foundational building blocks across decentralised finance, NFT platforms, and DAO infrastructure. Beyond libraries, OpenZeppelin offers professional security auditing services, the Defender operations platform for smart contract monitoring and automation, and open tooling that lowers the barrier to secure on-chain development.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:smart-contract",
-      "label": "Smart Contract"
+      "id": "urn:ngm:class:smart-contract-framework",
+      "label": "Smart Contract Framework"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.74,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:erc-20",
+        "label": "ERC-20"
+      },
+      {
+        "id": "urn:ngm:class:erc-721",
+        "label": "ERC-721"
+      },
+      {
+        "id": "urn:ngm:class:erc-1155",
+        "label": "ERC-1155"
+      },
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "id": "urn:ngm:class:proxy-pattern",
+        "label": "Proxy Pattern"
+      },
+      {
+        "id": "urn:ngm:class:governor-contract",
+        "label": "Governor Contract"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:solidity",
         "label": "Solidity"
+      },
+      {
+        "id": "urn:ngm:class:ethereum-virtual-machine",
+        "label": "Ethereum Virtual Machine"
       }
     ],
     "enables": [
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:non-fungible-token",
+        "label": "Non-Fungible Token"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "id": "urn:ngm:class:token-contract",
+        "label": "Token Contract"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
       {
         "id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:token-standard",
+        "label": "Token Standard"
+      },
+      {
+        "id": "urn:ngm:class:ethereum-improvement-proposal",
+        "label": "Ethereum Improvement Proposal"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:solmate",
+        "label": "Solmate"
+      },
+      {
+        "id": "urn:ngm:class:dapptools",
+        "label": "DappTools"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:software-supply-chain-security",
+        "label": "Software Supply Chain Security"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset-governance",
+        "label": "Digital Asset Governance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:hardhat",
+        "label": "Hardhat"
+      },
+      {
+        "id": "urn:ngm:class:foundry",
+        "label": "Foundry"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:upgradeable-contract",
+        "label": "Upgradeable Contract"
+      },
+      {
+        "id": "urn:ngm:class:role-based-access-control",
+        "label": "Role-Based Access Control"
+      },
+      {
+        "id": "urn:ngm:class:multisig-wallet",
+        "label": "Multisig Wallet"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:security-audit",
+        "label": "Security Audit"
+      },
+      {
+        "id": "urn:ngm:class:reentrancy-attack",
+        "label": "Reentrancy Attack"
+      },
+      {
+        "id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:core-lightning",
   "domain": "blockchain",
-  "definition": "Core Lightning is an implementation of the Bitcoin Lightning Network protocol written in C and maintained by Blockstream.",
+  "definition": "Core Lightning (formerly c-lightning) is a specification-compliant, production-grade implementation of the Bitcoin Lightning Network protocol written in C and maintained by Blockstream. It provides a lightweight, modular node daemon that enables off-chain Bitcoin micropayments through bidirectional payment channels anchored on the Bitcoin blockchain. The implementation adheres to the BOLT (Basis of Lightning Technology) specification suite, ensuring interoperability with other Lightning implementations such as LND and Eclair. A distinguishing feature is its plugin architecture, which allows operators to extend node behaviour in arbitrary programming languages via a JSON-RPC interface.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:lightning-network",
@@ -13,30 +13,130 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.74,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:lightning-plugin-architecture",
+        "label": "Lightning Plugin Architecture"
+      },
+      {
+        "id": "urn:ngm:class:lightning-network-daemon",
+        "label": "Lightning Network Daemon"
+      }
+    ],
     "requires": [
       {
-        "id": "urn:ngm:class:lightning-network",
-        "label": "Lightning Network"
+        "id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
       },
       {
         "id": "urn:ngm:class:payment-channel",
         "label": "Payment Channel"
+      },
+      {
+        "id": "urn:ngm:class:hashed-timelock-contract",
+        "label": "Hashed Timelock Contract"
+      },
+      {
+        "id": "urn:ngm:class:bolt-specification",
+        "label": "BOLT Specification"
       }
     ],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:micropayment",
+        "label": "Micropayment"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-payment-routing",
+        "label": "Bitcoin Payment Routing"
+      },
+      {
+        "id": "urn:ngm:class:streaming-payments",
+        "label": "Streaming Payments"
+      }
+    ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:lightning-network-protocol",
+        "label": "Lightning Network Protocol"
+      },
+      {
+        "id": "urn:ngm:class:bolt-specification",
+        "label": "BOLT Specification"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:lnd",
+        "label": "LND"
+      },
+      {
+        "id": "urn:ngm:class:eclair",
+        "label": "Eclair"
+      },
+      {
+        "id": "urn:ngm:class:ldk",
+        "label": "LDK"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:machine-payments",
+        "label": "Machine Payments"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:onion-routing",
+        "label": "Onion Routing"
+      },
+      {
+        "id": "urn:ngm:class:gossip-protocol",
+        "label": "Gossip Protocol"
+      },
+      {
+        "id": "urn:ngm:class:schnorr-signature",
+        "label": "Schnorr Signature"
+      },
+      {
+        "id": "urn:ngm:class:taproot",
+        "label": "Taproot"
+      }
+    ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:bolt-specification",
+        "label": "BOLT Specification"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:blockstream",
+        "label": "Blockstream"
+      },
+      {
+        "id": "urn:ngm:class:channel-factory",
+        "label": "Channel Factory"
+      },
+      {
+        "id": "urn:ngm:class:splicing",
+        "label": "Splicing"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
+    ]
   },
   "wikilinks": [
     {

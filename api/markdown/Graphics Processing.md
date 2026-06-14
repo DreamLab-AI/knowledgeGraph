@@ -59,7 +59,7 @@ public:: true
   "@type": "Class",
   "label": "Graphics Processing",
   "definition": "Graphics processing is the computation that transforms scene descriptions into rendered images, covering geometry transformation, shading, rasterisation and output to a display.",
-  "domain": "general",
+  "domain": "infrastructure",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

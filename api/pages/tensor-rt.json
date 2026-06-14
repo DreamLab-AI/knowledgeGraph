@@ -4,8 +4,8 @@
   "slug": "tensor-rt",
   "public": true,
   "classIri": "urn:ngm:class:tensor-rt",
-  "domain": "deep-learning",
-  "definition": "A software development kit from NVIDIA for optimising and running deep learning inference on NVIDIA GPUs, performing graph optimisations, precision calibration and kernel selection.",
+  "domain": "machine-learning",
+  "definition": "TensorRT is NVIDIA's high-performance deep learning inference optimisation SDK that takes trained neural network models and compiles them into highly efficient inference engines tuned for specific NVIDIA GPU architectures. It performs a suite of graph-level and kernel-level optimisations including layer fusion, tensor fusion, kernel auto-tuning, precision calibration (FP32, FP16, INT8, FP8), and dynamic shape support to maximise throughput and minimise latency. Models from training frameworks are ingested primarily via the ONNX interchange format, then compiled offline into serialised engine files that are loaded at runtime. TensorRT underpins production AI inference across data-centre GPU clusters, autonomous vehicle compute stacks, and NVIDIA Jetson edge platforms.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:inference-engine",
@@ -13,31 +13,130 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
-  "maturity": "established",
+  "qualityScore": 0.74,
+  "maturity": "mature",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
         "id": "urn:ngm:class:hardware-acceleration",
         "label": "Hardware Acceleration"
+      },
+      {
+        "id": "urn:ngm:class:nvidia-gpu",
+        "label": "NVIDIA GPU"
+      },
+      {
+        "id": "urn:ngm:class:cuda",
+        "label": "CUDA"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:edge-inference",
         "label": "Edge Inference"
+      },
+      {
+        "id": "urn:ngm:class:real-time-inference",
+        "label": "Real-Time Inference"
+      },
+      {
+        "id": "urn:ngm:class:low-latency-serving",
+        "label": "Low-Latency Serving"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:deep-learning-framework",
+        "label": "Deep Learning Framework"
+      },
+      {
+        "id": "urn:ngm:class:cuda-toolkit",
+        "label": "CUDA Toolkit"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:graph-optimisation",
+        "label": "Graph Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:post-training-quantisation",
+        "label": "Post-Training Quantisation"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:onnx-runtime",
+        "label": "ONNX Runtime"
+      },
+      {
+        "id": "urn:ngm:class:openvino",
+        "label": "OpenVINO"
+      },
+      {
+        "id": "urn:ngm:class:tensorflow-lite",
+        "label": "TensorFlow Lite"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:robotics-inference",
+        "label": "Robotics Inference"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicle"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:onnx",
+        "label": "ONNX"
+      },
+      {
+        "id": "urn:ngm:class:quantisation",
+        "label": "Quantisation"
+      },
+      {
+        "id": "urn:ngm:class:mixed-precision-training",
+        "label": "Mixed Precision Training"
+      },
+      {
+        "id": "urn:ngm:class:kernel-fusion",
+        "label": "Kernel Fusion"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:model-deployment",
+        "label": "Model Deployment"
+      },
+      {
+        "id": "urn:ngm:class:triton-inference-server",
+        "label": "Triton Inference Server"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-driving",
+        "label": "Autonomous Driving"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:pytorch",
+        "label": "PyTorch"
+      },
+      {
+        "id": "urn:ngm:class:tensorflow",
+        "label": "TensorFlow"
+      },
+      {
+        "id": "urn:ngm:class:jetson",
+        "label": "Jetson"
+      }
+    ]
   },
   "wikilinks": [
     {

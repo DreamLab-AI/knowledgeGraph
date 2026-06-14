@@ -5,39 +5,147 @@
   "public": true,
   "classIri": "urn:ngm:class:blockstream",
   "domain": "blockchain",
-  "definition": "Blockstream is a company that develops Bitcoin infrastructure, including sidechain technology, data products, and software for the Lightning Network.",
+  "definition": "Blockstream is a Bitcoin-focused technology company founded in 2014 that develops open-source infrastructure and commercial products for the Bitcoin ecosystem, including the Liquid Network federated sidechain, c-lightning (now Core Lightning), and satellite-based blockchain distribution via Blockstream Satellite. The company is led by co-founders including Adam Back (inventor of Hashcash) and is a major contributor to Bitcoin Core protocol development. Blockstream's work spans cryptographic research, Layer 2 payment channels, hardware security modules, and institutional-grade Bitcoin financial products such as Blockstream AMP (Asset Management Platform).",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:bitcoin-proof-of-work-protocol",
-      "label": "Bitcoin"
+      "id": "urn:ngm:class:blockchain-infrastructure",
+      "label": "Blockchain Infrastructure"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.75,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:liquid-network",
+        "label": "Liquid Network"
+      },
+      {
+        "id": "urn:ngm:class:core-lightning",
+        "label": "Core Lightning"
+      },
+      {
+        "id": "urn:ngm:class:blockstream-satellite",
+        "label": "Blockstream Satellite"
+      },
+      {
+        "id": "urn:ngm:class:blockstream-amp",
+        "label": "Blockstream AMP"
+      }
+    ],
     "requires": [
       {
-        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol",
+        "id": "urn:ngm:class:bitcoin",
         "label": "Bitcoin"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-work",
+        "label": "Proof of Work"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:lightning-network",
         "label": "Lightning Network"
+      },
+      {
+        "id": "urn:ngm:class:sidechain",
+        "label": "Sidechain"
+      },
+      {
+        "id": "urn:ngm:class:confidential-transactions",
+        "label": "Confidential Transactions"
+      },
+      {
+        "id": "urn:ngm:class:federated-peg",
+        "label": "Federated Peg"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:bitcoin-core",
+        "label": "Bitcoin Core"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:elements-project",
+        "label": "Elements Project"
+      },
+      {
+        "id": "urn:ngm:class:schnorr-signature",
+        "label": "Schnorr Signature"
+      },
+      {
+        "id": "urn:ngm:class:taproot",
+        "label": "Taproot"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "id": "urn:ngm:class:ethereum-virtual-machine",
+        "label": "Ethereum Virtual Machine"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:digital-asset-custody",
+        "label": "Digital Asset Custody"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:hashcash",
+        "label": "Hashcash"
+      },
+      {
+        "id": "urn:ngm:class:hardware-security-module",
+        "label": "Hardware Security Module"
+      },
+      {
+        "id": "urn:ngm:class:satellite-communication",
+        "label": "Satellite Communication"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:bitcoin-core",
+        "label": "Bitcoin Core"
+      },
+      {
+        "id": "urn:ngm:class:open-source-development",
+        "label": "Open Source Development"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:layer-2-scaling",
+        "label": "Layer 2 Scaling"
+      },
+      {
+        "id": "urn:ngm:class:payment-channel-network",
+        "label": "Payment Channel Network"
+      },
+      {
+        "id": "urn:ngm:class:multisig",
+        "label": "Multisig"
+      }
+    ]
   },
   "wikilinks": [
     {

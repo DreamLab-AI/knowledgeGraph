@@ -20,46 +20,152 @@ public:: true
   "@id": "urn:ngm:class:data-privacy",
   "@type": "Class",
   "label": "Data Privacy",
-  "definition": "Data Privacy is the field governing the appropriate collection, processing, storage, and sharing of personal information, ensuring that individuals retain meaningful control over their own data through technical safeguards, legal frameworks, and organisational policies. It encompasses both the regulatory compliance dimension—expressed in instruments such as GDPR, CCPA, and sector-specific regulations—and the engineering discipline of implementing privacy-by-design principles that minimise data exposure through techniques such as anonymisation, pseudonymisation, differential privacy, and consent management. Data privacy is now a core organisational risk management domain as data breaches, surveillance capitalism, and AI training practices raise the stakes of personal information handling.",
+  "definition": "Data Privacy is the governance and engineering discipline that ensures individuals retain meaningful control over their personal information through legal frameworks, technical safeguards, and organisational policies governing the appropriate collection, processing, storage, and sharing of personal data. It spans both the regulatory compliance dimension—expressed in instruments such as GDPR, CCPA, PIPEDA, and sector-specific regulations—and the engineering discipline of privacy-by-design that minimises data exposure through techniques such as anonymisation, pseudonymisation, differential privacy, federated learning, and consent management. As AI training practices, surveillance capitalism, and cross-border data flows intensify the stakes of personal information handling, data privacy functions as a core organisational risk management and trust-building domain. The field requires integration across legal, technical, and organisational layers to be effective, and is increasingly operationalised through dedicated Privacy-Enhancing Technologies (PETs).",
   "domain": "governance",
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:compliance-framework", "label": "Compliance Framework"}],
+  "sameAs": [
+    {"@id": "urn:ngm:class:information-privacy", "label": "Information Privacy"},
+    {"@id": "urn:ngm:class:data-protection", "label": "Data Protection"}
+  ],
   "relations": {
-    "relatedTo": [
-      {"@id": "urn:ngm:class:gdpr", "label": "GDPR"},
-      {"@id": "urn:ngm:class:gdpr-compliance", "label": "GDPR Compliance"},
-      {"@id": "urn:ngm:class:personal-data-store", "label": "Personal Data Store"}
-    ],
     "hasPart": [
       {"@id": "urn:ngm:class:consent-management", "label": "Consent Management"},
-      {"@id": "urn:ngm:class:data-anonymization-pipeline", "label": "Data Anonymization Pipeline"}
+      {"@id": "urn:ngm:class:data-anonymization-pipeline", "label": "Data Anonymization Pipeline"},
+      {"@id": "urn:ngm:class:data-minimisation", "label": "Data Minimisation"},
+      {"@id": "urn:ngm:class:privacy-by-design", "label": "Privacy by Design"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"},
+      {"@id": "urn:ngm:class:access-control", "label": "Access Control"},
+      {"@id": "urn:ngm:class:audit-logging", "label": "Audit Logging"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:informed-consent", "label": "Informed Consent"},
-      {"@id": "urn:ngm:class:granular-consent-control", "label": "Granular Consent Control"}
+      {"@id": "urn:ngm:class:granular-consent-control", "label": "Granular Consent Control"},
+      {"@id": "urn:ngm:class:data-subject-rights", "label": "Data Subject Rights"},
+      {"@id": "urn:ngm:class:digital-trust", "label": "Digital Trust"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:cryptographic-security", "label": "Cryptographic Security"}
+      {"@id": "urn:ngm:class:cryptographic-security", "label": "Cryptographic Security"},
+      {"@id": "urn:ngm:class:differential-privacy", "label": "Differential Privacy"},
+      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"},
+      {"@id": "urn:ngm:class:homomorphic-encryption", "label": "Homomorphic Encryption"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:gdpr", "label": "GDPR"},
+      {"@id": "urn:ngm:class:ccpa", "label": "CCPA"},
+      {"@id": "urn:ngm:class:iso-27701", "label": "ISO 27701"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:surveillance", "label": "Surveillance"},
+      {"@id": "urn:ngm:class:data-monetisation", "label": "Data Monetisation"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:gdpr-compliance", "label": "GDPR Compliance"},
+      {"@id": "urn:ngm:class:personal-data-store", "label": "Personal Data Store"},
+      {"@id": "urn:ngm:class:cybersecurity", "label": "Cybersecurity"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"},
+      {"@id": "urn:ngm:class:synthetic-data", "label": "Synthetic Data"},
+      {"@id": "urn:ngm:class:on-device-ai", "label": "On-Device AI"}
     ]
   },
-  "quality": 0.8
+  "quality": 0.74,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-13T00:00:00Z",
+    "inferenceRule": "ManualEnrichment"
+  }
 }
 ```
 
 - ### Definition
-  - [[Data Privacy]] is the governance discipline that ensures individuals retain meaningful control over their personal information through a combination of [[GDPR]]-aligned regulatory compliance, [[Consent Management]] systems, [[Data Anonymization Pipeline]] techniques, and [[Cryptographic Security]] safeguards embedded in organisational data processing practices.
+  - [[Data Privacy]] is the governance and engineering discipline ensuring individuals retain meaningful control over their personal information. It integrates [[GDPR]]-aligned regulatory compliance, [[Consent Management]] platforms, [[Privacy by Design]] principles embedded in system architecture, and [[Cryptographic Security]] safeguards. Unlike narrower concepts of [[Cybersecurity]] (which focuses on protecting systems from attack), data privacy is specifically concerned with the rights of individuals over their own information and the obligations of organisations that process it. It is operationalised through legal instruments, technical [[Privacy-Enhancing Technologies]], and organisational [[Data Governance]] programmes.
+
+- ### Overview
+  - Data privacy addresses the fundamental tension between the social and commercial value of personal information flows and the autonomy of individuals over their own data. The field emerged from 1970s computer-records legislation and crystallised into a global governance regime with the EU's [[GDPR]] (2018), which set extraterritorial precedent and severe penalties.
+  - Why it matters:
+    - Erosion of [[Digital Trust]] has measurable commercial consequences — consumers abandon services perceived as privacy-invasive.
+    - [[Data Breach]] incidents expose individuals to identity theft, financial fraud, and reputational harm.
+    - AI and big-data analytics make it technically feasible to re-identify supposedly anonymous individuals at scale, raising the stakes for adequate de-identification.
+    - Surveillance capitalism business models create structural incentives to collect maximal data, requiring legal and technical countermeasures.
+  - How it works:
+    - Legal layer: statutes define lawful bases for processing, data subject rights, and enforcement mechanisms.
+    - Technical layer: [[Privacy by Design]], [[Data Minimisation]], [[Data Anonymization Pipeline]], [[Differential Privacy]], and [[Federated Learning]] reduce data exposure in engineered systems.
+    - Organisational layer: [[Data Governance]] frameworks, Data Protection Officers (DPOs), privacy impact assessments (PIAs/DPIAs), and vendor management programmes embed privacy accountability.
+
+- ### Key Components
+  - **[[Privacy by Design]]** — Ann Cavoukian's seven foundational principles (proactive, not reactive; privacy as default; embedded into design; full functionality; end-to-end security; visibility and transparency; respect for user privacy) now mandated under GDPR Article 25.
+  - **[[Consent Management]]** — Technical platforms that capture, record, and honour individual consent choices for specific data uses; must satisfy GDPR's requirements for freely given, specific, informed, and unambiguous consent.
+  - **[[Data Minimisation]]** — The principle that only data strictly necessary for a specified purpose should be collected, reducing exposure in the event of breach or misuse.
+  - **[[Data Anonymization Pipeline]]** — Processing workflows applying k-anonymity, l-diversity, t-closeness, or suppression techniques to remove or generalise personal identifiers in datasets intended for analytics or sharing.
+  - **[[Differential Privacy]]** — A mathematically rigorous framework that adds calibrated statistical noise to query results or model outputs, providing provable privacy guarantees even against adversaries with auxiliary information. Deployed by Apple, Google, and the US Census Bureau.
+  - **[[Federated Learning]]** — A distributed machine learning paradigm in which model weights rather than raw personal data are aggregated across client devices, enabling AI training without centralising personal records. A key bridge between privacy and [[Machine Learning]].
+  - **[[Homomorphic Encryption]]** — Cryptographic technique enabling computation on encrypted data without decryption, allowing third parties to process sensitive information without ever seeing it in plaintext.
+  - **[[Pseudonymisation]]** — Replacing direct identifiers with artificial references; data remains personal under GDPR but is lower-risk; reversible with access to the key.
+  - **[[Data Subject Rights]]** — Legally mandated rights including access, rectification, erasure (right to be forgotten), restriction of processing, portability, and objection, enabled by [[Consent Management]] and [[Personal Data Store]] architectures.
+  - **[[Access Control]]** — Role-based and attribute-based policies restricting who within an organisation may view or process personal data; a prerequisite for demonstrating compliance.
+  - **[[Audit Logging]]** — Tamper-evident records of who accessed what personal data and when; essential for breach investigation and regulatory accountability.
+  - **Privacy Impact Assessment (PIA / DPIA)** — Structured processes for identifying and mitigating privacy risks before deploying new systems or data processing activities; mandatory under GDPR for high-risk processing.
+
+- ### Applications and Use Cases
+  - **Healthcare** — Clinical records, genomic data, and wearable sensor streams require strong privacy protections; [[Federated Learning]] enables multi-hospital model training without sharing patient records; [[Homomorphic Encryption]] enables encrypted genomic analysis.
+  - **Financial Services** — Anti-money laundering analytics must balance fraud detection with customer data rights; [[Differential Privacy]] enables aggregate reporting without exposing individual transaction patterns.
+  - **Advertising Technology** — Post-GDPR ad-tech has migrated from third-party cookie tracking toward privacy-preserving measurement (Google's Privacy Sandbox, Apple's SKAdNetwork), demonstrating the commercial impact of regulatory enforcement.
+  - **AI and Large Language Models** — Regulators have scrutinised LLM training on web-scraped data for lawful basis issues; [[Synthetic Data]] generation is emerging as a privacy-preserving alternative training corpus; on-device inference via [[On-Device AI]] keeps sensitive prompts off cloud servers.
+  - **Government and Public Sector** — Census data, social benefits records, and tax data require rigorous privacy protections; the US Census Bureau deployed [[Differential Privacy]] for the 2020 Census.
+  - **Human Resources** — Employee monitoring, recruitment analytics, and workplace surveillance tools are subject to data privacy regulations and must comply with [[Informed Consent]] requirements in many jurisdictions.
+  - **Cross-border Data Transfers** — Mechanisms including EU Standard Contractual Clauses (SCCs), APEC Cross-Border Privacy Rules (CBPR), and adequacy decisions govern lawful personal data flows between jurisdictions with differing legal standards.
 
 - ### Relationships
-  - [[Data Privacy]] operates as a [[Compliance Framework]] encompassing regulatory instruments such as [[GDPR]] and its national transpositions, with [[GDPR Compliance]] auditing validating adherence. The technical implementation relies on [[Consent Management]] platforms that capture [[Informed Consent]] and support [[Granular Consent Control]], while [[Data Anonymization Pipeline]] infrastructure strips or generalises personal identifiers before data is used analytically. Individuals may exert rights—access, erasure, portability—through [[Personal Data Store]] architectures. Underlying all these mechanisms is [[Cryptographic Security]] for data at rest and in transit, ensuring that even a breach does not expose intelligible personal information.
+  - hasPart:: [[Consent Management]]
+  - hasPart:: [[Data Anonymization Pipeline]]
+  - hasPart:: [[Data Minimisation]]
+  - hasPart:: [[Privacy by Design]]
+  - requires:: [[Data Governance]]
+  - requires:: [[Access Control]]
+  - requires:: [[Audit Logging]]
+  - enables:: [[Informed Consent]]
+  - enables:: [[Granular Consent Control]]
+  - enables:: [[Data Subject Rights]]
+  - enables:: [[Digital Trust]]
+  - uses:: [[Cryptographic Security]]
+  - uses:: [[Differential Privacy]]
+  - uses:: [[Federated Learning]]
+  - uses:: [[Homomorphic Encryption]]
+  - standardizedBy:: [[GDPR]]
+  - standardizedBy:: [[CCPA]]
+  - standardizedBy:: [[ISO 27701]]
+  - contrastsWith:: [[Surveillance]]
+  - contrastsWith:: [[Data Monetisation]]
+  - relatedTo:: [[GDPR Compliance]]
+  - relatedTo:: [[Personal Data Store]]
+  - relatedTo:: [[Cybersecurity]]
+  - bridges-to:: [[Federated Learning]]
+  - bridges-to:: [[Synthetic Data]]
+  - bridges-to:: [[On-Device AI]]
 
-- ### Content
-  - The concept of privacy as a legally enforceable right attached to personal information crystallised in Warren and Brandeis's 1890 law review article, but modern data privacy law traces its roots to the 1970s when computerised record-keeping prompted early legislation such as the US Privacy Act of 1974 and Germany's Bundesdatenschutzgesetz. The EU's 1995 Data Protection Directive established the first comprehensive European framework, superseded in 2018 by the General Data Protection Regulation (GDPR), which became the global reference point for data privacy law through its extraterritorial scope and severe penalties reaching 4% of global annual turnover.
+- ### Standards and Regulatory Context
+  - **[[GDPR]]** (General Data Protection Regulation, EU 2016/679, effective 2018) — The world's most influential data privacy statute; establishes six lawful bases for processing, eight data subject rights, mandatory DPIAs, DPO appointments, and fines up to €20 million or 4% of global annual turnover.
+  - **[[CCPA]]** (California Consumer Privacy Act, 2018, amended by CPRA 2020) — Grants California residents rights to know, delete, correct, and opt out of sale of their personal information; enforced by the California Privacy Protection Agency (CPPA).
+  - **PIPEDA** (Personal Information Protection and Electronic Documents Act, Canada) — Canada's federal private-sector privacy law; currently undergoing reform via Bill C-27 (CPPA).
+  - **LGPD** (Lei Geral de Proteção de Dados, Brazil, 2020) — Brazil's GDPR-inspired statute establishing ANPD as the national supervisory authority.
+  - **[[ISO 27701]]** — Extension to ISO 27001/27002 providing a Privacy Information Management System (PIMS) framework; certifiable against a standard aligned to GDPR concepts.
+  - **NIST Privacy Framework** — Voluntary US framework providing a structure for managing privacy risk through five functions: Identify-P, Govern-P, Control-P, Communicate-P, Protect-P.
+  - **ePrivacy Directive** (EU 2002/58/EC, pending ePrivacy Regulation reform) — Governs electronic communications privacy, cookie consent, and direct marketing in the EU; currently the subject of long-delayed reform.
+  - **APEC CBPR** — Asia-Pacific Economic Cooperation Cross-Border Privacy Rules system enabling certified cross-border data flows across participating economies.
+  - **Article 29 Working Party / EDPB** — European Data Protection Board issues binding decisions and guidelines interpreting GDPR obligations, including on topics such as consent, legitimate interests, and AI.
 
-  - Data privacy engineering has evolved from reactive compliance checking to proactive privacy-by-design, a principle codified by Ann Cavoukian in the 1990s and now mandated under GDPR Article 25. Privacy-by-design requires that data minimisation, purpose limitation, and storage limitation be embedded into system architecture from inception rather than bolted on afterwards. Technically, this manifests as differential privacy mechanisms that add calibrated mathematical noise to aggregate query results so individual records cannot be reconstructed, k-anonymity transformations that suppress distinguishing combinations of quasi-identifiers, federated learning that trains models on distributed data without centralising raw records, and homomorphic encryption that enables computation on encrypted data.
+- ### Emerging Challenges
+  - **Generative AI and training data** — LLM training on internet-scraped corpora raises unresolved questions about lawful basis, data subject rights to erasure, and model memorisation of personal data.
+  - **Re-identification risks** — Advances in linkage attacks and auxiliary data availability mean that k-anonymised or aggregated datasets can be de-anonymised; privacy guarantees must be revisited.
+  - **[[On-Device AI]]** — Moving inference to the edge reduces cloud data exposure but shifts privacy risk to device security and local data stores.
+  - **[[Synthetic Data]]** — Statistically representative generated datasets that contain no real personal information are gaining traction for model training and analytics, though fidelity-privacy trade-offs remain active research.
+  - **Children's privacy** — COPPA (US), GDPR recital 38, and national age-appropriate design codes impose enhanced obligations for processing children's data, intersecting with social media and educational technology governance.
+  - **Biometric data** — Facial recognition, voice prints, and gait data are classified as special-category data under GDPR Article 9, requiring explicit consent or narrow statutory bases; enforcement against commercial biometric databases is intensifying.
 
-  - Data privacy has become commercially strategic because consumer trust is demonstrably correlated with conversion and retention. Apple's App Tracking Transparency framework (2021) demonstrated that privacy-forward positioning generates competitive advantage: consumer opt-in to cross-app tracking fell to around 30% globally following implementation, restructuring the mobile advertising ecosystem. The emergence of privacy-enhancing technologies (PETs) as a product category—sold by companies such as OpenMined, Duality, and Privitar—signals that privacy engineering is now a professional specialisation rather than a compliance adjunct.
-
-  - In 2024-2025, data privacy is under acute pressure from generative AI training practices. Regulators in Italy, Spain, and Canada have opened investigations into whether LLM training on internet-scraped data violates GDPR lawful basis requirements. The EU AI Act layers obligations on top of GDPR for high-risk AI systems that process personal data. Federated and on-device AI approaches are gaining traction as privacy-preserving alternatives to centralised model training, and synthetic data generation is emerging as a tool to produce statistically representative datasets that contain no real personal information, allowing model training to proceed without privacy risk.
-
-- ### See Also
-  - [[GDPR]] | [[Consent Management]] | [[Data Anonymization Pipeline]] | [[Cryptographic Security]] | [[Personal Data Store]]
+- ### Provenance
+  - sources:: GDPR (EU 2016/679); CCPA/CPRA; ISO/IEC 27701:2019; NIST Privacy Framework v1.0; Ann Cavoukian "Privacy by Design" (2009); academic literature on differential privacy (Dwork et al.), federated learning (McMahan et al.), and k-anonymity (Sweeney).
+  - updated:: 2026-06-13

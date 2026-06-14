@@ -4,7 +4,7 @@
   "slug": "http",
   "public": true,
   "classIri": "urn:ngm:class:http",
-  "domain": "general",
+  "domain": "infrastructure",
   "definition": "The Hypertext Transfer Protocol, a stateless application-layer protocol for transferring hypertext and other resources between clients and servers that underpins the World Wide Web.",
   "subClassOf": [
     {

@@ -4,7 +4,7 @@
   "slug": "fido-alliance",
   "public": true,
   "classIri": "urn:ngm:class:fido-alliance",
-  "domain": "cryptographic",
+  "domain": "security",
   "definition": "An industry association that develops open authentication standards intended to reduce reliance on passwords through public key cryptography.",
   "subClassOf": [
     {

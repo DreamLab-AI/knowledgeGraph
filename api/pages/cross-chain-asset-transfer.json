@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:cross-chain-asset-transfer",
   "domain": "blockchain",
-  "definition": "Cross-chain asset transfer is the process of moving a digital asset \u2014 whether a cryptocurrency, token, or non-fungible token \u2014 from one blockchain network to a distinct blockchain network while preserving the asset's economic properties and maintaining integrity guarantees across the transfer. The core challenge is that independent blockchains have no shared state; consequently, protocols must ensure that an asset locked or burned on the source chain is atomically minted or released on the destination chain, preventing double-spend. Implementations include hash time-locked contracts (HTLCs), trust-minimised bridge contracts with validator committees, and native inter-blockchain communication protocols.",
+  "definition": "Cross-chain asset transfer is the cryptographic and protocol-level process of moving digital assets \u2014 cryptocurrencies, fungible tokens, or non-fungible tokens \u2014 from one blockchain network to a distinct, independent blockchain network while preserving the asset's economic properties and enforcing integrity guarantees across the transfer. Because independent blockchains maintain no shared global state, protocols must ensure that an asset locked or burned on the source chain is atomically minted or released on the destination chain, preventing double-spend and maintaining supply conservation. Implementations range from hash time-locked contracts (HTLCs) and lock-and-mint bridge contracts overseen by validator committees to native inter-blockchain communication protocols (IBC) and zero-knowledge proof-based verification bridges that eliminate trusted attestors entirely.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:cross-chain-interoperability",
@@ -13,11 +13,24 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.74,
   "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-proof",
+        "label": "Cryptographic Proof"
+      },
+      {
+        "id": "urn:ngm:class:validator-network",
+        "label": "Validator Network"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:blockchain-interoperability",
@@ -26,12 +39,42 @@
       {
         "id": "urn:ngm:class:de-fi",
         "label": "DeFi"
+      },
+      {
+        "id": "urn:ngm:class:cross-chain-liquidity",
+        "label": "Cross-Chain Liquidity"
+      },
+      {
+        "id": "urn:ngm:class:multi-chain-ecosystem",
+        "label": "Multi-Chain Ecosystem"
+      },
+      {
+        "id": "urn:ngm:class:wrapped-token",
+        "label": "Wrapped Token"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:centralised-exchange",
+        "label": "Centralised Exchange"
+      },
+      {
+        "id": "urn:ngm:class:wrapped-token",
+        "label": "Wrapped Token"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset-regulation",
+        "label": "Digital Asset Regulation"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:atomic-swap",
@@ -44,10 +87,35 @@
       {
         "id": "urn:ngm:class:blockchain-protocol",
         "label": "Blockchain Protocol"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:hash-time-locked-contract",
+        "label": "Hash Time-Locked Contract"
+      },
+      {
+        "id": "urn:ngm:class:light-client",
+        "label": "Light Client"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
       }
     ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:cosmos-ibc",
+        "label": "Cosmos IBC"
+      },
+      {
+        "id": "urn:ngm:class:polkadot-xcm",
+        "label": "Polkadot XCM"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -61,6 +129,18 @@
       {
         "id": "urn:ngm:class:sidechain",
         "label": "Sidechain"
+      },
+      {
+        "id": "urn:ngm:class:layer-2-scaling",
+        "label": "Layer 2 Scaling"
+      },
+      {
+        "id": "urn:ngm:class:rollup",
+        "label": "Rollup"
+      },
+      {
+        "id": "urn:ngm:class:token-standard",
+        "label": "Token Standard"
       }
     ]
   },

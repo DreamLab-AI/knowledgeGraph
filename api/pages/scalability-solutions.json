@@ -5,34 +5,132 @@
   "public": true,
   "classIri": "urn:ngm:class:scalability-solutions",
   "domain": "blockchain",
-  "definition": "Techniques and architectures, particularly in blockchain systems, that increase transaction throughput and reduce cost while preserving security, such as Layer 2 networks and sharding.",
+  "definition": "Scalability solutions are a family of techniques, architectures, and protocols designed to increase the throughput, reduce latency, and lower transaction costs of distributed systems\u2014especially blockchain networks\u2014without sacrificing security or decentralisation. They span both on-chain approaches (sharding, improved consensus algorithms, data availability sampling) and off-chain or layer-2 approaches (payment channels, rollups, sidechains) that defer computation or data storage away from the base layer. The discipline also extends beyond blockchains into general distributed-systems engineering, encompassing horizontal scaling, caching strategies, and peer-to-peer load distribution. Together these mechanisms address the fundamental tension between throughput, security, and decentralisation commonly formalised as the Blockchain Trilemma.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:layer-2-scaling",
-      "label": "Layer 2 Scaling"
+      "id": "urn:ngm:class:distributed-systems",
+      "label": "Distributed Systems"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:layer-2-scaling",
+        "label": "Layer 2 Scaling"
+      },
+      {
+        "id": "urn:ngm:class:sharding",
+        "label": "Sharding"
+      },
+      {
+        "id": "urn:ngm:class:rollups",
+        "label": "Rollups"
+      },
+      {
+        "id": "urn:ngm:class:state-channels",
+        "label": "State Channels"
+      },
+      {
+        "id": "urn:ngm:class:sidechains",
+        "label": "Sidechains"
+      },
+      {
+        "id": "urn:ngm:class:data-availability-sampling",
+        "label": "Data Availability Sampling"
+      }
+    ],
     "requires": [
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-networking",
+        "label": "Peer-to-Peer Networking"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      },
+      {
+        "id": "urn:ngm:class:micropayments",
+        "label": "Micropayments"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-interoperability",
+        "label": "Blockchain Interoperability"
+      }
+    ],
+    "dependsOn": [
       {
         "id": "urn:ngm:class:blockchain",
         "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-proofs",
+        "label": "Cryptographic Proofs"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proofs",
+        "label": "Zero-Knowledge Proofs"
       }
     ],
-    "enables": [],
-    "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:blockchain-trilemma",
+        "label": "Blockchain Trilemma"
+      },
+      {
+        "id": "urn:ngm:class:monolithic-blockchain",
+        "label": "Monolithic Blockchain"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      },
+      {
+        "id": "urn:ngm:class:cloud-infrastructure",
+        "label": "Cloud Infrastructure"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      },
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "id": "urn:ngm:class:modular-blockchain",
+        "label": "Modular Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:optimistic-rollups",
+        "label": "Optimistic Rollups"
+      },
+      {
+        "id": "urn:ngm:class:zk-rollups",
+        "label": "ZK-Rollups"
+      }
+    ]
   },
   "wikilinks": [
     {

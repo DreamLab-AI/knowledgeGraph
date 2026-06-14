@@ -91,7 +91,7 @@ public:: true
   "@type": "Class",
   "label": "Financial Regulation Domain",
   "definition": "The Financial Regulation Domain classifies concepts concerning the rules governing financial institutions, markets and instruments. It covers prudential requirements, conduct rules, market abuse controls and the supervisory bodies that enforce them. As a top-level subject axis it constrains how financial systems and products may be designed and operated.",
-  "domain": "financial-regulation",
+  "domain": "finance",
   "maturity": "emerging",
   "qualityScore": 0.7,
   "subClassOf": [

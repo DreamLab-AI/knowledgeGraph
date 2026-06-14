@@ -4,7 +4,7 @@
   "slug": "llm-application-framework",
   "public": true,
   "classIri": "urn:ngm:class:llm-application-framework",
-  "domain": "natural-language-processing",
+  "domain": "ai",
   "definition": "A software library that provides abstractions for building applications on top of large language models, including prompt management, tool integration, retrieval and chaining of model calls.",
   "subClassOf": [
     {

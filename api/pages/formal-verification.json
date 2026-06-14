@@ -5,38 +5,125 @@
   "public": true,
   "classIri": "urn:ngm:class:formal-verification",
   "domain": "artificial-intelligence",
-  "definition": "Formal verification is the use of mathematical proof techniques \u2014 including model checking, theorem proving, and abstract interpretation \u2014 to rigorously establish that a system, algorithm, or smart contract satisfies a specified set of correctness or safety properties under all possible inputs and executions. In software and hardware, formal verification provides guarantees beyond testing by exhaustively exploring the state space or constructing machine-checkable proofs. In the context of AI governance and smart contracts, formal verification is increasingly applied to verify safety invariants, access controls, and protocol correctness in blockchain systems and, experimentally, in neural network components.",
+  "definition": "Formal verification is the application of mathematical proof techniques \u2014 including model checking, theorem proving, abstract interpretation, and satisfiability-modulo-theories (SMT) solving \u2014 to rigorously establish that a hardware or software system satisfies a specified set of correctness, safety, or security properties under all possible inputs and execution paths. Unlike testing, which can only expose defects in sampled executions, formal verification provides exhaustive, machine-checkable guarantees by reasoning over the entire state space or by constructing logical proofs relative to a formal specification. The discipline encompasses hardware circuit verification, operating-system kernel correctness proofs, smart-contract auditing, neural-network robustness certification, and protocol security analysis, and is increasingly mandated in safety-critical and regulated industries where defects carry life-critical or large financial consequences.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ai-governance-and-ethics",
-      "label": "AI Governance and Ethics"
+      "id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [
+    "hasPart": [
       {
-        "id": "urn:ngm:class:transparency",
-        "label": "Transparency"
+        "id": "urn:ngm:class:model-checking",
+        "label": "Model Checking"
+      },
+      {
+        "id": "urn:ngm:class:theorem-proving",
+        "label": "Theorem Proving"
+      },
+      {
+        "id": "urn:ngm:class:abstract-interpretation",
+        "label": "Abstract Interpretation"
+      },
+      {
+        "id": "urn:ngm:class:smt-solving",
+        "label": "SMT Solving"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [
+    "requires": [
+      {
+        "id": "urn:ngm:class:formal-specification",
+        "label": "Formal Specification"
+      },
+      {
+        "id": "urn:ngm:class:temporal-logic",
+        "label": "Temporal Logic"
+      }
+    ],
+    "enables": [
       {
         "id": "urn:ngm:class:ai-safety",
         "label": "AI Safety"
       },
       {
+        "id": "urn:ngm:class:certified-robustness",
+        "label": "Certified Robustness"
+      },
+      {
+        "id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:formal-methods",
+        "label": "Formal Methods"
+      },
+      {
+        "id": "urn:ngm:class:mathematical-logic",
+        "label": "Mathematical Logic"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:hoare-logic",
+        "label": "Hoare Logic"
+      },
+      {
+        "id": "urn:ngm:class:type-theory",
+        "label": "Type Theory"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:software-testing",
+        "label": "Software Testing"
+      },
+      {
+        "id": "urn:ngm:class:runtime-monitoring",
+        "label": "Runtime Monitoring"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:neural-network-verification",
+        "label": "Neural Network Verification"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:satisfiability-solver",
+        "label": "Satisfiability Solver"
+      },
+      {
+        "id": "urn:ngm:class:proof-assistant",
+        "label": "Proof Assistant"
+      }
+    ],
+    "supports": [
+      {
         "id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:ai-risk-management",
+        "label": "AI Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:hardware-design",
+        "label": "Hardware Design"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-protocol",
+        "label": "Cryptographic Protocol"
       }
     ],
     "standardizedBy": [],
@@ -47,12 +134,12 @@
         "label": "Audit Trail"
       },
       {
-        "id": "urn:ngm:class:ai-risk-management",
-        "label": "AI Risk Management"
-      },
-      {
         "id": "urn:ngm:class:interpretability",
         "label": "Interpretability"
+      },
+      {
+        "id": "urn:ngm:class:static-analysis",
+        "label": "Static Analysis"
       }
     ]
   },

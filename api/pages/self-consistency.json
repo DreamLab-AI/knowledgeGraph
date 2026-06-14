@@ -5,16 +5,16 @@
   "public": true,
   "classIri": "urn:ngm:class:self-consistency",
   "domain": "artificial-intelligence",
-  "definition": "Self-consistency is a prompting strategy for large language models in which multiple independent reasoning chains are sampled stochastically for a given problem and the final answer is determined by majority vote across those chains. The technique exploits the observation that correct reasoning paths, although varied in surface form, tend to converge on the same answer, whilst incorrect paths are more diverse. Self-consistency substantially improves performance on mathematical reasoning and multi-step logic tasks compared to greedy decoding, and it is commonly combined with chain-of-thought prompting.",
+  "definition": "Self-consistency is a decoding and prompting strategy for large language models in which multiple independent reasoning chains are sampled stochastically for a given problem and the final answer is selected by majority vote across those chains. The technique exploits the observation that correct reasoning paths, although varied in surface form, converge on the same answer whilst incorrect paths remain scattered across the answer space. Originally introduced alongside chain-of-thought prompting, self-consistency substantially improves accuracy on arithmetic, commonsense, and multi-step logical reasoning tasks without requiring additional model training or fine-tuning.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique"
+      "id": "urn:ngm:class:prompt-engineering",
+      "label": "Prompt Engineering"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [
@@ -25,6 +25,10 @@
       {
         "id": "urn:ngm:class:chain-of-thought",
         "label": "Chain of Thought"
+      },
+      {
+        "id": "urn:ngm:class:stochastic-sampling",
+        "label": "Stochastic Sampling"
       }
     ],
     "enables": [
@@ -35,20 +39,102 @@
       {
         "id": "urn:ngm:class:reliability",
         "label": "Reliability"
+      },
+      {
+        "id": "urn:ngm:class:robustness",
+        "label": "Robustness"
+      },
+      {
+        "id": "urn:ngm:class:error-correction",
+        "label": "Error Correction"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:inference-compute",
+        "label": "Inference Compute"
+      },
+      {
+        "id": "urn:ngm:class:token-generation",
+        "label": "Token Generation"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:ensemble-decoding",
+        "label": "Ensemble Decoding"
+      },
+      {
+        "id": "urn:ngm:class:test-time-compute",
+        "label": "Test-Time Compute"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:greedy-decoding",
+        "label": "Greedy Decoding"
+      },
+      {
+        "id": "urn:ngm:class:beam-search",
+        "label": "Beam Search"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
+        "id": "urn:ngm:class:collective-intelligence",
+        "label": "Collective Intelligence"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:majority-voting",
+        "label": "Majority Voting"
+      },
+      {
+        "id": "urn:ngm:class:temperature-sampling",
+        "label": "Temperature Sampling"
+      },
+      {
+        "id": "urn:ngm:class:ensemble-methods",
+        "label": "Ensemble Methods"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:mathematical-reasoning",
+        "label": "Mathematical Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:commonsense-reasoning",
+        "label": "Commonsense Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:code-generation",
+        "label": "Code Generation"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
       {
         "id": "urn:ngm:class:prompt-engineering",
         "label": "Prompt Engineering"
+      },
+      {
+        "id": "urn:ngm:class:process-reward-models",
+        "label": "Process Reward Models"
+      },
+      {
+        "id": "urn:ngm:class:tree-of-thoughts",
+        "label": "Tree of Thoughts"
+      },
+      {
+        "id": "urn:ngm:class:mixture-of-agents",
+        "label": "Mixture of Agents"
       }
     ]
   },

@@ -4,7 +4,7 @@
   "slug": "image-synthesis",
   "public": true,
   "classIri": "urn:ngm:class:image-synthesis",
-  "domain": "general",
+  "domain": "ai",
   "definition": "The generation of images from models or descriptions rather than direct capture, including rendering from scene data and machine learning models that produce images from learned distributions.",
   "subClassOf": [
     {

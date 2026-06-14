@@ -4,35 +4,142 @@
   "slug": "semiconductor-fabrication",
   "public": true,
   "classIri": "urn:ngm:class:semiconductor-fabrication",
-  "domain": "manufacturing",
-  "definition": "Semiconductor fabrication is the manufacturing process that builds integrated circuits on semiconductor wafers through repeated steps of deposition, patterning, and etching.",
+  "domain": "infrastructure",
+  "definition": "Semiconductor fabrication is the industrial process by which integrated circuits and discrete semiconductor devices are constructed on crystalline silicon or compound semiconductor wafers through iterative cycles of deposition, photolithography, etching, doping, and planarisation. Each process generation, characterised by a technology node (e.g. 7 nm, 3 nm, 2 nm), defines achievable feature sizes and transistor densities, directly determining the computational density and power efficiency of the resulting chips. Fabrication occurs in ISO Class 1\u20135 cleanrooms to suppress particle contamination, with yield management and statistical process control being critical disciplines. The field bridges materials science, quantum mechanics, chemical engineering, and precision metrology to produce the foundational hardware layer for all digital computing, AI accelerators, communications infrastructure, and embedded systems.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:owl-thing",
-      "label": "owl:Thing"
+      "id": "urn:ngm:class:advanced-manufacturing",
+      "label": "Advanced Manufacturing"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
-  "maturity": "established",
+  "qualityScore": 0.75,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [
+    "hasPart": [
       {
-        "id": "urn:ngm:class:computer-science",
-        "label": "Computer Science"
+        "id": "urn:ngm:class:photolithography",
+        "label": "Photolithography"
+      },
+      {
+        "id": "urn:ngm:class:chemical-vapour-deposition",
+        "label": "Chemical Vapour Deposition"
+      },
+      {
+        "id": "urn:ngm:class:ion-implantation",
+        "label": "Ion Implantation"
+      },
+      {
+        "id": "urn:ngm:class:chemical-mechanical-planarisation",
+        "label": "Chemical Mechanical Planarisation"
+      },
+      {
+        "id": "urn:ngm:class:atomic-layer-deposition",
+        "label": "Atomic Layer Deposition"
       }
     ],
-    "dependsOn": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cleanroom",
+        "label": "Cleanroom"
+      },
+      {
+        "id": "urn:ngm:class:silicon-wafer",
+        "label": "Silicon Wafer"
+      },
+      {
+        "id": "urn:ngm:class:extreme-ultraviolet-lithography",
+        "label": "Extreme Ultraviolet Lithography"
+      },
+      {
+        "id": "urn:ngm:class:process-control",
+        "label": "Process Control"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:integrated-circuit",
+        "label": "Integrated Circuit"
+      },
+      {
+        "id": "urn:ngm:class:microprocessor",
+        "label": "Microprocessor"
+      },
+      {
+        "id": "urn:ngm:class:memory-chip",
+        "label": "Memory Chip"
+      },
+      {
+        "id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:rare-earth-materials",
+        "label": "Rare Earth Materials"
+      },
+      {
+        "id": "urn:ngm:class:energy-consumption",
+        "label": "Energy Consumption"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:printed-circuit-board-assembly",
+        "label": "Printed Circuit Board Assembly"
+      },
+      {
+        "id": "urn:ngm:class:additive-manufacturing",
+        "label": "Additive Manufacturing"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence-hardware",
+        "label": "Artificial Intelligence Hardware"
+      },
+      {
+        "id": "urn:ngm:class:quantum-computing",
+        "label": "Quantum Computing"
+      },
+      {
+        "id": "urn:ngm:class:neuromorphic-computing",
+        "label": "Neuromorphic Computing"
+      }
+    ],
     "uses": [],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:jedec",
+        "label": "JEDEC"
+      },
+      {
+        "id": "urn:ngm:class:semi-standards",
+        "label": "SEMI Standards"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:moores-law",
+        "label": "Moore's Law"
+      },
+      {
+        "id": "urn:ngm:class:technology-node",
+        "label": "Technology Node"
+      },
+      {
+        "id": "urn:ngm:class:yield-management",
+        "label": "Yield Management"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -43,7 +43,7 @@ public:: true
   "@type": "Class",
   "label": "United States",
   "definition": "A federal republic in North America and one of the world's largest economies, with a leading role in technology, finance, and research. It comprises fifty states and a federal district.",
-  "domain": "geography",
+  "domain": "governance",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

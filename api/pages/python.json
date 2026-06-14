@@ -5,26 +5,44 @@
   "public": true,
   "classIri": "urn:ngm:class:python",
   "domain": "artificial-intelligence",
-  "definition": "Python is a high-level, dynamically typed, interpreted programming language with a design philosophy emphasising code readability and the minimisation of syntactic ceremony. Its extensive standard library and the PyPI ecosystem of third-party packages\u2014including NumPy, SciPy, Pandas, PyTorch, TensorFlow, and Scikit-learn\u2014make it the dominant language for machine learning research, data science, and scientific computing. Python's combination of interactive development via Jupyter notebooks, a permissive licence, and first-class support in cloud ML platforms has made it the lingua franca of artificial intelligence development.",
+  "definition": "Python is a high-level, dynamically typed, interpreted programming language designed by Guido van Rossum with an explicit emphasis on code readability, expressive syntax, and developer productivity. Its reference implementation, CPython, executes code via a bytecode interpreter protected by the Global Interpreter Lock (GIL), whilst third-party runtimes such as PyPy provide JIT compilation for CPU-bound workloads. Python's extensive standard library and the PyPI ecosystem\u2014encompassing NumPy, Pandas, PyTorch, TensorFlow, Scikit-learn, and the Hugging Face stack\u2014have established it as the dominant language for machine learning research, data science, scientific computing, and AI infrastructure automation. Its clean syntax, interactive tooling via Jupyter notebooks, and first-class cloud-platform support have made it the lingua franca of artificial intelligence development globally.",
   "subClassOf": [
-    {
-      "id": "urn:ngm:class:ai-infrastructure",
-      "label": "AI Infrastructure"
-    },
     {
       "id": "urn:ngm:class:programming-language",
       "label": "Programming Language"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.76,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:cpython",
+        "label": "CPython"
+      },
+      {
+        "id": "urn:ngm:class:python-standard-library",
+        "label": "Python Standard Library"
+      },
+      {
+        "id": "urn:ngm:class:python-package-index",
+        "label": "Python Package Index"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:virtual-environment",
+        "label": "Virtual Environment"
+      },
+      {
+        "id": "urn:ngm:class:package-manager",
+        "label": "Package Manager"
+      }
+    ],
     "enables": [
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -32,27 +50,106 @@
         "label": "Deep Learning"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline-pipeline",
-        "label": "Machine Learning Pipeline"
+        "id": "urn:ngm:class:data-science",
+        "label": "Data Science"
+      },
+      {
+        "id": "urn:ngm:class:scientific-computing",
+        "label": "Scientific Computing"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [
+    "contrastsWith": [
       {
-        "id": "urn:ngm:class:machine-learning-discipline-framework",
-        "label": "Machine Learning Framework"
+        "id": "urn:ngm:class:r-language",
+        "label": "R Language"
+      },
+      {
+        "id": "urn:ngm:class:julia-language",
+        "label": "Julia Language"
       }
     ],
-    "supports": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:numpy",
+        "label": "NumPy"
+      },
+      {
+        "id": "urn:ngm:class:pandas",
+        "label": "Pandas"
+      },
+      {
+        "id": "urn:ngm:class:pytorch",
+        "label": "PyTorch"
+      },
+      {
+        "id": "urn:ngm:class:tensorflow",
+        "label": "TensorFlow"
+      },
+      {
+        "id": "urn:ngm:class:scikit-learn",
+        "label": "Scikit-learn"
+      },
+      {
+        "id": "urn:ngm:class:jupyter-notebook",
+        "label": "Jupyter Notebook"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:rest-api",
+        "label": "REST API"
+      },
+      {
+        "id": "urn:ngm:class:web-framework",
+        "label": "Web Framework"
+      },
+      {
+        "id": "urn:ngm:class:infrastructure-as-code",
+        "label": "Infrastructure as Code"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
       {
         "id": "urn:ngm:class:python-pytorch-deep-learning-stack",
         "label": "Python and PyTorch"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-pipeline",
+        "label": "Machine Learning Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-framework",
+        "label": "Machine Learning Framework"
+      },
+      {
+        "id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
       }
     ]
   },

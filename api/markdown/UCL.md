@@ -47,7 +47,7 @@ public:: true
   "@type": "Class",
   "label": "UCL",
   "definition": "The common abbreviation for University College London, a major research university in London active in computing and artificial intelligence research.",
-  "domain": "general",
+  "domain": "artificial-intelligence",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

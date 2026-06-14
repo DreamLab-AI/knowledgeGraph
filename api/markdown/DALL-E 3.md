@@ -59,7 +59,7 @@ public:: true
   "@type": "Class",
   "label": "DALL-E 3",
   "definition": "DALL-E 3 is a text-to-image generation model developed by OpenAI that produces images from natural language descriptions. It improves prompt adherence over earlier versions by reformulating user prompts with a language model.",
-  "domain": "generative-ai",
+  "domain": "ai",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

@@ -4,19 +4,32 @@
   "slug": "university-of-oxford",
   "public": true,
   "classIri": "urn:ngm:class:university-of-oxford",
-  "domain": "general",
-  "definition": "A collegiate research university in Oxford, England, and one of the world's leading universities, with major activity in computing and artificial intelligence.",
+  "domain": "artificial-intelligence",
+  "definition": "The University of Oxford is a collegiate research university located in Oxford, England, widely regarded as one of the world's foremost institutions of higher education and research. Founded in the twelfth century, it comprises forty-four autonomous colleges and a network of academic departments spanning the humanities, sciences, social sciences, and engineering. Oxford is a leading site of research in artificial intelligence, machine learning, computer vision, natural language processing, and computational biology, and plays a central role in UK and global AI policy, ethics, and governance discourse. Its Future of Humanity Institute and Oxford Internet Institute are internationally recognised centres for the study of transformative technologies and their societal implications.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:entity",
-      "label": "Entity"
+      "id": "urn:ngm:class:research-institution",
+      "label": "Research Institution"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
-  "maturity": "established",
+  "qualityScore": 0.74,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:future-of-humanity-institute",
+        "label": "Future of Humanity Institute"
+      },
+      {
+        "id": "urn:ngm:class:oxford-internet-institute",
+        "label": "Oxford Internet Institute"
+      },
+      {
+        "id": "urn:ngm:class:oxford-robotics-institute",
+        "label": "Oxford Robotics Institute"
+      }
+    ],
     "requires": [],
     "enables": [
       {
@@ -24,19 +37,91 @@
         "label": "Artificial Intelligence"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety-research",
+        "label": "AI Safety Research"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain-governance",
+        "label": "Blockchain Governance"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:quantum-computing",
+        "label": "Quantum Computing"
+      }
+    ],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:open-source-software",
+        "label": "Open Source Software"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:data-science",
+        "label": "Data Science"
+      }
+    ],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:russell-group",
+        "label": "Russell Group"
+      },
+      {
+        "id": "urn:ngm:class:uk-higher-education-sector",
+        "label": "UK Higher Education Sector"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:alan-turing-institute",
+        "label": "Alan Turing Institute"
+      },
+      {
+        "id": "urn:ngm:class:deepmind",
+        "label": "DeepMind"
+      },
+      {
+        "id": "urn:ngm:class:uk-research-and-innovation",
+        "label": "UK Research and Innovation"
+      },
+      {
+        "id": "urn:ngm:class:cambridge-university",
+        "label": "University of Cambridge"
+      },
+      {
+        "id": "urn:ngm:class:imperial-college-london",
+        "label": "Imperial College London"
+      },
+      {
+        "id": "urn:ngm:class:european-laboratory-for-molecular-biology",
+        "label": "European Laboratory for Molecular Biology"
+      }
+    ]
   },
   "wikilinks": [
     {

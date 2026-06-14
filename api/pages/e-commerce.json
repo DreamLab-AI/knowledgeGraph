@@ -4,19 +4,32 @@
   "slug": "e-commerce",
   "public": true,
   "classIri": "urn:ngm:class:e-commerce",
-  "domain": "spatial-computing",
-  "definition": "E-Commerce encompasses the buying and selling of goods and services over digital networks, including web storefronts, mobile commerce, and emerging spatial-computing contexts such as in-metaverse marketplaces. It integrates payment systems, digital identity, transaction processing, and virtual product catalogues, increasingly blurring with blockchain-based asset trading and immersive retail experiences.",
+  "domain": "finance",
+  "definition": "E-Commerce (electronic commerce) is the commercial exchange of goods, services, and information conducted over digital networks, encompassing business-to-consumer (B2C), business-to-business (B2B), consumer-to-consumer (C2C), and direct-to-consumer (D2C) transaction models. It relies on integrated layers of digital payment infrastructure, identity and authentication, logistics coordination, and data-driven personalisation to operate at scale. Modern e-commerce platforms leverage cloud infrastructure, recommendation engines, and APIs to connect buyers, sellers, and fulfilment networks globally. It is a mature commercial domain that continues to evolve through mobile-first experiences, conversational commerce, and blockchain-based payment rails.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:sc-platform-and-environment",
-      "label": "Platform and Environment"
+      "id": "urn:ngm:class:digital-marketplace",
+      "label": "Digital Marketplace"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "emerging",
+  "qualityScore": 0.72,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:shopping-cart",
+        "label": "Shopping Cart"
+      },
+      {
+        "id": "urn:ngm:class:product-catalogue",
+        "label": "Product Catalogue"
+      },
+      {
+        "id": "urn:ngm:class:order-management",
+        "label": "Order Management"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:payment-system",
@@ -25,13 +38,57 @@
       {
         "id": "urn:ngm:class:authentication",
         "label": "Authentication"
+      },
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
       }
     ],
-    "enables": [],
-    "dependsOn": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:digital-payments",
+        "label": "Digital Payments"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-visibility",
+        "label": "Supply Chain Visibility"
+      },
+      {
+        "id": "urn:ngm:class:personalisation",
+        "label": "Personalisation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:cloud-infrastructure",
+        "label": "Cloud Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:traditional-retail",
+        "label": "Traditional Retail"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:metaverse-commerce",
+        "label": "Metaverse Commerce"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:marketplace",
@@ -40,12 +97,32 @@
       {
         "id": "urn:ngm:class:blockchain",
         "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:recommendation-system",
+        "label": "Recommendation System"
+      },
+      {
+        "id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
+      },
+      {
+        "id": "urn:ngm:class:api",
+        "label": "API"
       }
     ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
+      {
+        "id": "urn:ngm:class:conversion-rate-optimisation",
+        "label": "Conversion Rate Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:customer-data-platform",
+        "label": "Customer Data Platform"
+      },
       {
         "id": "urn:ngm:class:virtual-tourism",
         "label": "Virtual Tourism"

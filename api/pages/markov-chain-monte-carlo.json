@@ -5,37 +5,89 @@
   "public": true,
   "classIri": "urn:ngm:class:markov-chain-monte-carlo",
   "domain": "ai",
-  "definition": "Markov Chain Monte Carlo (MCMC) is a class of algorithms that generate samples from a target probability distribution by constructing a Markov chain whose stationary distribution equals the target, enabling approximate Bayesian inference and integration over high-dimensional spaces that are intractable by exact methods. Core algorithms include Metropolis-Hastings, Gibbs sampling, Hamiltonian Monte Carlo, and No-U-Turn Sampler.",
+  "definition": "Markov Chain Monte Carlo (MCMC) is a family of computational algorithms that generate samples from an arbitrary target probability distribution by constructing a Markov chain whose stationary distribution equals the target, enabling tractable approximate Bayesian inference and numerical integration over high-dimensional parameter spaces that are intractable by exact analytical methods. Foundational algorithms include Metropolis-Hastings, Gibbs sampling, Hamiltonian Monte Carlo (HMC), and the No-U-Turn Sampler (NUTS). MCMC is the standard tool for posterior inference in probabilistic programming and Bayesian statistical modelling across science, engineering, and machine learning.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:monte-carlo-methods",
       "label": "Monte Carlo Methods"
-    },
-    {
-      "id": "urn:ngm:class:probabilistic-inference",
-      "label": "Probabilistic Inference"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.74,
   "maturity": "mature",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:probability-theory",
+        "label": "Probability Theory"
+      },
+      {
+        "id": "urn:ngm:class:ergodicity",
+        "label": "Ergodicity"
+      },
+      {
+        "id": "urn:ngm:class:detailed-balance",
+        "label": "Detailed Balance"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:bayesian-inference",
         "label": "Bayesian Inference"
       },
       {
-        "id": "urn:ngm:class:probabilistic-model",
-        "label": "Probabilistic Model"
+        "id": "urn:ngm:class:probabilistic-programming",
+        "label": "Probabilistic Programming"
+      },
+      {
+        "id": "urn:ngm:class:uncertainty-quantification",
+        "label": "Uncertainty Quantification"
+      },
+      {
+        "id": "urn:ngm:class:posterior-inference",
+        "label": "Posterior Inference"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:metropolis-hastings",
+        "label": "Metropolis-Hastings"
+      },
+      {
+        "id": "urn:ngm:class:gibbs-sampling",
+        "label": "Gibbs Sampling"
+      },
+      {
+        "id": "urn:ngm:class:no-u-turn-sampler",
+        "label": "No-U-Turn Sampler"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:variational-inference",
+        "label": "Variational Inference"
+      },
+      {
+        "id": "urn:ngm:class:normalising-flows",
+        "label": "Normalising Flows"
+      },
+      {
+        "id": "urn:ngm:class:sequential-monte-carlo",
+        "label": "Sequential Monte Carlo"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:statistical-physics",
+        "label": "Statistical Physics"
+      },
+      {
+        "id": "urn:ngm:class:computational-biology",
+        "label": "Computational Biology"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:markov-chain",
@@ -44,6 +96,14 @@
       {
         "id": "urn:ngm:class:sampling",
         "label": "Sampling"
+      },
+      {
+        "id": "urn:ngm:class:hamiltonian-dynamics",
+        "label": "Hamiltonian Dynamics"
+      },
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
       }
     ],
     "supports": [],
@@ -51,8 +111,20 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:probability-theory",
-        "label": "Probability Theory"
+        "id": "urn:ngm:class:probabilistic-model",
+        "label": "Probabilistic Model"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-neural-network",
+        "label": "Bayesian Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:gaussian-process",
+        "label": "Gaussian Process"
+      },
+      {
+        "id": "urn:ngm:class:convergence-diagnostics",
+        "label": "Convergence Diagnostics"
       }
     ]
   },

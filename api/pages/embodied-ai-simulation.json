@@ -5,29 +5,54 @@
   "public": true,
   "classIri": "urn:ngm:class:embodied-ai-simulation",
   "domain": "spatial-computing",
-  "definition": "Use of physically accurate virtual environments as training grounds for embodied AI agents and robotic systems. Sim-to-real transfer leverages spatial computing platforms (NVIDIA Omniverse, Isaac Gym, Habitat) to generate synthetic training data, test robot behaviours, and validate control policies before physical deployment.",
+  "definition": "Embodied AI Simulation is the practice of training, evaluating, and validating autonomous agents and robotic systems within physically accurate, interactive virtual environments before deployment on real hardware. These simulation platforms render high-fidelity physics (rigid and soft-body dynamics, fluid simulation, contact forces), sensor models (cameras, LiDAR, IMU, depth sensors), and procedurally generated scenes to expose agents to diverse scenarios at scale. Sim-to-real transfer methods \u2014 including domain randomisation, domain adaptation, and curriculum learning \u2014 are applied to close the fidelity gap between simulated and real-world conditions. The discipline spans household robot manipulation tasks, autonomous vehicle testing, humanoid locomotion, and multi-agent coordination, bridging artificial intelligence research with physical robotic deployment.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:sc-platform-and-environment",
-      "label": "Platform and Environment"
+      "id": "urn:ngm:class:virtual-environment",
+      "label": "Virtual Environment"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
+  "qualityScore": 0.72,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:physics-engine",
+        "label": "Physics Engine"
+      },
+      {
+        "id": "urn:ngm:class:sensor-simulation",
+        "label": "Sensor Simulation"
+      },
+      {
+        "id": "urn:ngm:class:synthetic-data",
+        "label": "Synthetic Data"
+      },
+      {
+        "id": "urn:ngm:class:scene-generation",
+        "label": "Scene Generation"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:domain-randomisation",
+        "label": "Domain Randomisation"
+      },
+      {
+        "id": "urn:ngm:class:robot-kinematics",
+        "label": "Robot Kinematics"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:robo-actuation-and-control",
         "label": "Actuation and Control"
-      }
-    ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [
+      },
       {
         "id": "urn:ngm:class:robot-learning",
         "label": "Robot Learning"
@@ -35,24 +60,80 @@
       {
         "id": "urn:ngm:class:robo-navigation-and-planning",
         "label": "Navigation and Planning"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicle"
       }
     ],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:gpu-computing",
+        "label": "GPU Computing"
+      },
+      {
+        "id": "urn:ngm:class:parallel-computing",
+        "label": "Parallel Computing"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:physical-robot-testing",
+        "label": "Physical Robot Testing"
+      },
+      {
+        "id": "urn:ngm:class:hardware-in-the-loop",
+        "label": "Hardware-in-the-Loop"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      }
+    ],
+    "uses": [
       {
         "id": "urn:ngm:class:nvidia-corporation-omniverse-platform",
         "label": "NVIDIA Omniverse"
       },
       {
-        "id": "urn:ngm:class:virtual-environment",
-        "label": "Virtual Environment"
+        "id": "urn:ngm:class:generative-adversarial-network",
+        "label": "Generative Adversarial Network"
       },
       {
-        "id": "urn:ngm:class:synthetic-data",
-        "label": "Synthetic Data"
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:curriculum-learning",
+        "label": "Curriculum Learning"
+      },
+      {
+        "id": "urn:ngm:class:multi-agent-systems",
+        "label": "Multi-Agent Systems"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
       }
     ]
   },

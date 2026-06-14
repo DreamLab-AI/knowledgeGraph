@@ -4,7 +4,7 @@
   "slug": "semantic-web-domain",
   "public": true,
   "classIri": "urn:ngm:class:semantic-web-linked-data-standard-domain",
-  "domain": "semantic-web",
+  "domain": "standards",
   "definition": "The Semantic Web Domain classifies concepts concerning machine-interpretable representations of meaning that allow data to be linked and reasoned over across sources. It covers ontologies, linked data, and the languages and reasoners that operate on them. As a top-level subject axis it provides the formal vocabulary by which knowledge graphs and interoperable data are constructed.",
   "subClassOf": [
     {

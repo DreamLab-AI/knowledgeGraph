@@ -1,28 +1,79 @@
 - ### Definition
-  - ShaderLanguage is a concept within the ngm domain.
+  - A **Shader Language** is a [[Domain-Specific Language]] designed to express programs executed directly on a [[GPU]], controlling one or more programmable stages of a [[Rendering Pipeline]]. Shader languages couple a C-family syntax with specialised type systems — vectors, matrices, samplers, atomic counters — while deliberately excluding features incompatible with massively parallel execution such as dynamic memory allocation and unbounded recursion. They form the programmatic bridge between high-level artist or developer intent and the low-level [[Graphics API]] that drives the hardware, and their compilation output is increasingly expressed as the portable intermediate representation [[SPIR-V]] for deployment across heterogeneous hardware.
 
-- ### Semantic Classification
-  - owl-class:: spatial-computing:ShaderLanguage
-  - owl-role:: Concept
+- ### Overview
+  - Shader languages emerged in the early 2000s as graphics hardware evolved from fixed-function pipelines to fully programmable ones. [[OpenGL]] introduced the [[GLSL]] (OpenGL Shading Language) specification with version 2.0 (2004), giving developers explicit control over vertex transformation and fragment colouring. Microsoft simultaneously developed [[HLSL]] (High-Level Shading Language) as the shader lingua franca for [[DirectX]]. Both languages remain the dominant choices for desktop and console [[Real-Time Rendering]] today.
+  - The significance of shader languages extends well beyond aesthetics. They are the primary mechanism by which rendering quality features — [[Physically Based Rendering]], global illumination, shadow algorithms, post-processing effects — are specified and iterated upon in production. More recently, [[Compute Shader]] stages have extended shader languages into general [[GPU Compute]] territory, overlapping significantly with [[GPGPU]] workloads once reserved for [[OpenCL C]] or [[CUDA]].
+  - Web graphics added a further tier: [[WebGL]] adopted a restricted GLSL ES subset, and the successor [[WebGPU]] API defines [[WGSL]] (WebGPU Shading Language) as its native shader language — a more formally specified, safer language designed with the memory-safety requirements of browser sandboxing in mind.
+  - The rise of [[SPIR-V]] as a vendor-neutral IR has decoupled shader authoring from the target runtime: tools like glslang, DXC, and Naga can translate GLSL, HLSL, or WGSL into SPIR-V, which [[Vulkan]], [[OpenCL]], and WebGPU drivers then consume.
+
+- ### Key Components
+  - **Programmable Pipeline Stages** — each stage corresponds to a distinct shader type:
+    - [[Vertex Shader]] — transforms per-vertex attributes (position, normal, UV) from object space into clip space; executes once per input vertex.
+    - [[Fragment Shader]] (also called Pixel Shader in HLSL nomenclature) — computes the final colour of a rasterised fragment; primary home of lighting and texturing logic.
+    - [[Geometry Shader]] — optional stage that receives assembled primitives and can emit new geometry; used for effects like particle expansion, shadow-volume extrusion.
+    - [[Tessellation Shader]] — subdivides coarse surface patches into finer geometry at runtime; enables level-of-detail and smooth curved surfaces.
+    - [[Compute Shader]] — executes arbitrary parallel workloads without fixed pipeline wiring; key to [[GPU Compute]], simulation, and machine-learning inference on the GPU.
+    - [[Mesh Shader]] — newer NVIDIA/DirectX 12 Ultimate stage that replaces vertex + geometry with a flexible meshlet-based model for efficient culling of large scenes.
+    - [[Ray Generation Shader]], closest-hit, any-hit, and miss shaders — introduced by [[DirectX Raytracing]] (DXR) and [[Vulkan Ray Tracing]] to support [[Ray Tracing]] pipelines.
+  - **Type System** — built-in scalar (float, int, bool), vector (vec2/vec3/vec4 in GLSL; float2/float3/float4 in HLSL), matrix (mat4/float4x4), and sampler types (sampler2D, TextureCube). Structured buffer and storage image types appear in compute contexts.
+  - **Built-in Functions** — trigonometric (sin, cos, atan), linear-algebraic (dot, cross, normalize, reflect, refract), texture-sampling (texture, textureLod, textureGather), and derivative (dFdx, dFdy) intrinsics expose GPU-native operations unavailable in software at comparable performance.
+  - **Qualifier / Attribute System** — in/out/uniform/varying qualifiers control data flow between CPU, pipeline stages, and framebuffer; layout qualifiers specify binding points, descriptor sets, and memory layout (std140, std430).
+  - **Preprocessor and Conditionals** — C-style `#define`, `#ifdef`, `#pragma` preprocessors enable [[Shader Permutation]] management (material variants, platform switching).
+  - **Intermediate Representation** — [[SPIR-V]] (Standard Portable Intermediate Representation — Vulkan) is the binary IR to which GLSL and HLSL are commonly compiled, enabling offline validation, reflection, and hardware-agnostic distribution.
+
+- ### Applications and Use Cases
+  - **Game Engines** — [[Unity]] uses HLSL-like ShaderLab and HLSL via its Scriptable Render Pipeline; [[Unreal Engine]] uses HLSL throughout its material graph. Shader languages are the backbone of every visual effect from ambient occlusion to hair simulation.
+  - **Augmented Reality and Virtual Reality** — [[Augmented Reality]] and [[Virtual Reality]] headsets demand low-latency, reprojection-aware rendering. Shader languages implement foveated rendering, time-warp, and lens distortion correction directly on the GPU.
+  - **Web and Browser Graphics** — [[WebGL]] shaders (GLSL ES 1.0/3.0) and [[WGSL]] for [[WebGPU]] bring GPU-accelerated visualisations, 3D scenes, and data dashboards to web browsers without plugins.
+  - **Scientific Visualisation** — volumetric rendering of medical CT/MRI data, fluid simulation visualisation, and astronomical data rendering all rely on compute and fragment shaders.
+  - **Machine Learning Inference** — compute shaders increasingly implement neural network layers (convolutions, attention) for on-device inference, especially on mobile where dedicated ML hardware may be absent. This is a key bridge to [[Neural Rendering]] and [[Machine Learning Accelerator]] workloads.
+  - **Post-Processing Effects** — screen-space ambient occlusion (SSAO), depth of field, bloom, tone-mapping, and anti-aliasing (TAA, DLSS-like upsampling) are implemented entirely as fragment or compute shaders operating on framebuffer textures.
+  - **Procedural Content** — [[Procedural Generation]] of terrain heightmaps, noise textures, and animated materials (lava, water, clouds) is authored in shader languages, executing at frame-rate on the GPU.
+  - **General GPU Compute** — through [[Compute Shader]], shader languages overlap with [[GPGPU]] for physics simulation, cloth, fluid dynamics, and collision detection — tasks that benefit from the GPU's massive parallelism without requiring a specialised CUDA/OpenCL setup.
 
 - ### Relationships
-  - uses [[Compute Shader]]
-  - uses [[Vertex Shader]]
-  - enables [[Rendering Pipeline]]
-  - enables [[Physically Based Rendering]]
-  - relatedTo [[GPU Compute]]
-  - relatedTo [[Real-Time Rendering]]
+  - hasPart:: [[Vertex Shader]]
+  - hasPart:: [[Fragment Shader]]
+  - hasPart:: [[Compute Shader]]
+  - hasPart:: [[Geometry Shader]]
+  - hasPart:: [[Tessellation Shader]]
+  - partOf:: [[Rendering Pipeline]]
+  - requires:: [[GPU]]
+  - requires:: [[Graphics API]]
+  - requires:: [[Shader Compiler]]
+  - enables:: [[Physically Based Rendering]]
+  - enables:: [[Real-Time Rendering]]
+  - enables:: [[Ray Tracing]]
+  - enables:: [[GPU Compute]]
+  - enables:: [[Procedural Generation]]
+  - dependsOn:: [[SPIR-V]]
+  - dependsOn:: [[Parallel Computing]]
+  - implements:: [[GLSL]]
+  - implements:: [[HLSL]]
+  - implements:: [[WGSL]]
+  - implements:: [[Metal Shading Language]]
+  - supports:: [[WebGPU]]
+  - supports:: [[Augmented Reality]]
+  - supports:: [[Virtual Reality]]
+  - standardizedBy:: [[Khronos Group]]
+  - standardizedBy:: [[W3C]]
+  - contrastsWith:: [[General-Purpose Programming Language]]
+  - contrastsWith:: [[OpenCL C]]
+  - bridgesTo:: [[Machine Learning Accelerator]]
+  - bridgesTo:: [[Neural Rendering]]
+  - relatedTo:: [[Graphics Processing Unit]]
+  - relatedTo:: [[Texture Mapping]]
 
-- ### Content
-  # ShaderLanguage
-  ShaderLanguage provides the syntax and semantics for expressing GPU-executable algorithms controlling rendering pipelines. Dominant languages include GLSL (OpenGL Shading Language) for OpenGL and WebGL with C-like syntax and built-in vector/matrix types, HLSL (High-Level Shading Language) for DirectX featuring similar syntax with subtle semantic differences, Cg (C for Graphics) historically used for cross-platform development before standardization, Metal Shading Language for Apple platforms optimizing iOS and macOS performance, and emerging languages like WGSL (WebGPU Shading Language) for next-generation web graphics. Shader languages support common programming constructs (conditionals, loops, functions) while restricting features incompatible with parallel execution like dynamic memory allocation or recursion. Specialized data types include vectors (vec2/vec3/vec4), matrices (mat3/mat4), samplers for texture access, and interpolated varyings passing data between shader stages. Modern shader compilation involves cross-compilation to intermediate representations like SPIR-V enabling tool-chain flexibility, runtime compilation optimizing for specific hardware, and shader variant generation handling material permutations. Domain-specific extensions include compute shader intrinsics, ray tracing shaders (ray generation, closest-hit, miss), and mesh shaders for programmable primitive processing.
-  - https://www.khronos.org/files/opengles_shading_language.pdf - GLSL specification
-  - https://learn.microsoft.com/en-us/windows/win32/direct3dhlsl/dx-graphics-hlsl-reference - HLSL reference
-  - https://developer.apple.com/metal/Metal-Shading-Language-Specification.pdf - Metal Shading Language specification
-  - https://gpuweb.github.io/gpuweb/wgsl/ - WGSL specification for WebGPU
-
-  ## Sources
+- ### Standards and Context
+  - **[[Khronos Group]]** — maintains the GLSL specification (currently GLSL 4.60 for OpenGL 4.6, GLSL ES 3.20 for OpenGL ES/WebGL2) and co-developed SPIR-V as part of the Vulkan ecosystem.
+  - **Microsoft** — owns and evolves [[HLSL]] through successive DirectX Shader Model versions (SM 5.1 for DirectX 11/12, SM 6.x adding wave intrinsics, ray tracing, mesh shaders). The DXC (DirectX Shader Compiler, built on LLVM/Clang) is open-source.
+  - **Apple** — defines [[Metal Shading Language]] as a superset of C++14 with GPU extensions; it is the exclusive shading interface for Metal on iOS, iPadOS, macOS, and visionOS, meaning all spatial computing on Apple hardware depends on it.
+  - **[[W3C]] GPU for the Web CG** — standardises [[WGSL]] as the required shading language for the [[WebGPU]] API. WGSL has stricter memory-safety guarantees than GLSL or HLSL, making it suitable for untrusted web content.
+  - **[[SPIR-V]]** (Khronos) — binary intermediate representation serving as the common compilation target for Vulkan, OpenCL 2.1+, and (via translation) WebGPU. Enables offline compilation, shader reflection (automatic pipeline layout inference), and portable distribution of shader libraries.
+  - **Shader Model Versioning** — DirectX Shader Models define capability tiers; SM 6.6 (DirectX 12 Ultimate) introduced resource binding, sampler feedback, and mesh/amplification shader tiers aligned with hardware capability.
+  - **Cross-compilation Ecosystem** — SPIRV-Cross translates SPIR-V back to GLSL/HLSL/MSL; GLSLANG and DXC compile GLSL and HLSL to SPIR-V; Naga (Rust-native) handles WGSL, GLSL, HLSL, and SPIR-V interoperably for the [[WebGPU]] ecosystem.
 
 - ### Provenance
-  - sources::
-  - migration-date:: 2026-04-26T00:00:00Z
+  - sources:: Khronos GLSL specification; HLSL documentation (Microsoft Learn); W3C WGSL specification; Metal Shading Language Specification (Apple); Real-Time Rendering 4th ed. (Akenine-Möller et al.)
+  - updated:: 2026-06-13

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:tensor-flow-lite",
   "domain": "machine-learning",
-  "definition": "TensorFlow Lite is a framework from Google for running machine learning models on mobile, embedded, and edge devices with reduced memory and computational requirements.",
+  "definition": "TensorFlow Lite (now rebranded as LiteRT) is Google's open-source deep learning inference framework designed for on-device execution of machine learning models on mobile, embedded, and IoT edge hardware. It converts full TensorFlow or ONNX models into a FlatBuffers-based .tflite format and provides a lightweight interpreter that minimises memory footprint and latency without requiring network connectivity. The framework supports post-training optimisation techniques including quantisation, pruning, and weight clustering, and exposes hardware-acceleration delegates for GPUs, DSPs, NPUs, and the Coral Edge TPU. Its sister project TensorFlow Lite Micro (TFLite Micro) extends the same programming model to bare-metal microcontrollers with as little as 256 KB of RAM.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:machine-learning-discipline-framework",
@@ -13,26 +13,156 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
-  "maturity": "established",
+  "qualityScore": 0.74,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:tensorflow-lite-micro",
+        "label": "TensorFlow Lite Micro"
+      },
+      {
+        "id": "urn:ngm:class:tflite-converter",
+        "label": "TFLite Converter"
+      },
+      {
+        "id": "urn:ngm:class:tflite-interpreter",
+        "label": "TFLite Interpreter"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
       }
     ],
-    "enables": [],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:edge-inference",
+        "label": "Edge Inference"
+      },
+      {
+        "id": "urn:ngm:class:on-device-machine-learning",
+        "label": "On-Device Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:real-time-inference",
+        "label": "Real-Time Inference"
+      },
+      {
+        "id": "urn:ngm:class:privacy-preserving-inference",
+        "label": "Privacy-Preserving Inference"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:mobile-computing",
+        "label": "Mobile Computing"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:onnx",
+        "label": "ONNX"
+      },
+      {
+        "id": "urn:ngm:class:neural-network-inference",
+        "label": "Neural Network Inference"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:pytorch-mobile",
+        "label": "PyTorch Mobile"
+      },
+      {
+        "id": "urn:ngm:class:onnx-runtime",
+        "label": "ONNX Runtime"
+      },
+      {
+        "id": "urn:ngm:class:core-ml",
+        "label": "Core ML"
+      },
+      {
+        "id": "urn:ngm:class:ncnn",
+        "label": "NCNN"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:flatbuffers",
+        "label": "FlatBuffers"
+      },
+      {
+        "id": "urn:ngm:class:model-quantisation",
+        "label": "Model Quantisation"
+      },
+      {
+        "id": "urn:ngm:class:hardware-acceleration",
+        "label": "Hardware Acceleration"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:android",
+        "label": "Android"
+      },
+      {
+        "id": "urn:ngm:class:ios",
+        "label": "iOS"
+      },
+      {
+        "id": "urn:ngm:class:microcontroller",
+        "label": "Microcontroller"
+      },
+      {
+        "id": "urn:ngm:class:coral-edge-tpu",
+        "label": "Coral Edge TPU"
+      }
+    ],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:tensorflow",
+        "label": "TensorFlow"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:model-compression",
+        "label": "Model Compression"
+      },
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
+    ]
   },
   "wikilinks": [
     {

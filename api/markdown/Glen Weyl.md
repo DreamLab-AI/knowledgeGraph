@@ -47,7 +47,7 @@ public:: true
   "@type": "Class",
   "label": "Glen Weyl",
   "definition": "Glen Weyl is an economist known for work on mechanism design, quadratic voting and quadratic funding, and the ideas in the book Radical Markets. He founded the RadicalxChange movement.",
-  "domain": "economics",
+  "domain": "finance",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

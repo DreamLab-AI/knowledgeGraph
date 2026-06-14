@@ -34,37 +34,139 @@ elevatedFrom:: [[copyright]]
   "@id": "urn:ngm:class:intellectual-property-rights-framework",
   "@type": "Class",
   "label": "Intellectual Property Rights Framework",
-  "definition": "A legal right granting creators exclusive control over reproduction, distribution, adaptation, and public performance of original works for a defined term. In AI and metaverse contexts, copyright raises contested questions about ownership of AI-generated content, the legality of training data ingestion, and rights management for user-created assets within virtual platforms.",
-  "domain": "infrastructure",
-  "maturity": "emerging",
+  "definition": "An Intellectual Property Rights Framework is the structured system of legal doctrines, statutes, treaties, and enforcement mechanisms that grant creators and innovators exclusive, time-limited rights over their intangible works — encompassing copyright, patent, trade mark, and trade secret regimes. The framework defines conditions of ownership, permissible use, licensing, and transfer of rights, balancing the incentive to create against the public interest in open knowledge. In the context of AI, spatial computing, and distributed digital environments, the framework is under active re-negotiation as autonomous generation, data-intensive training, and cross-jurisdictional virtual economies challenge foundational assumptions about authorship and originality.",
+  "domain": "governance",
+  "maturity": "mature",
   "qualityScore": 0.7,
   "subClassOf": [
-    {
-      "@id": "urn:ngm:class:infra-legal-and-regulatory",
-      "label": "Legal and Regulatory"
-    },
     {
       "@id": "urn:ngm:class:legal-framework",
       "label": "Legal Framework"
     }
   ],
-  "quality": 0.35,
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R2SemanticLabelMatch"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-13T00:00:00Z",
+    "inferenceRule": "ManualEnrichment"
   },
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:ip-rights-regime",
+      "label": "IP Rights Regime"
+    },
+    {
+      "@id": "urn:ngm:class:intellectual-property-law",
+      "label": "Intellectual Property Law"
+    }
+  ],
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:copyright",
+        "label": "Copyright"
+      },
+      {
+        "@id": "urn:ngm:class:patent-law",
+        "label": "Patent Law"
+      },
+      {
+        "@id": "urn:ngm:class:trade-mark",
+        "label": "Trade Mark"
+      },
+      {
+        "@id": "urn:ngm:class:trade-secret",
+        "label": "Trade Secret"
+      },
+      {
+        "@id": "urn:ngm:class:licensing",
+        "label": "Licensing"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:legal-framework",
+        "label": "Legal Framework"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:legal-compliance",
+        "label": "Legal Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:digital-rights-management",
+        "label": "Digital Rights Management"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:open-source-licensing",
+        "label": "Open-Source Licensing"
+      },
+      {
+        "@id": "urn:ngm:class:technology-transfer",
+        "label": "Technology Transfer"
+      },
+      {
+        "@id": "urn:ngm:class:creative-commons",
+        "label": "Creative Commons"
+      }
+    ],
     "contrastsWith": [
       {
         "@id": "urn:ngm:class:generative-ai",
         "label": "Generative AI"
+      },
+      {
+        "@id": "urn:ngm:class:open-data",
+        "label": "Open Data"
+      },
+      {
+        "@id": "urn:ngm:class:public-domain",
+        "label": "Public Domain"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:digital-rights",
+        "label": "Digital Rights"
+      },
+      {
+        "@id": "urn:ngm:class:content-monetisation",
+        "label": "Content Monetisation"
+      },
+      {
+        "@id": "urn:ngm:class:innovation-ecosystem",
+        "label": "Innovation Ecosystem"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:world-intellectual-property-organization",
+        "label": "World Intellectual Property Organization"
+      },
+      {
+        "@id": "urn:ngm:class:trips-agreement",
+        "label": "TRIPS Agreement"
       }
     ],
     "bridgesTo": [
       {
         "@id": "urn:ngm:class:ai-governance",
         "label": "AI Governance"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "@id": "urn:ngm:class:non-fungible-token",
+        "label": "Non-Fungible Token"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
       }
     ],
     "relatedTo": [
@@ -73,14 +175,16 @@ elevatedFrom:: [[copyright]]
         "label": "Digital Rights"
       },
       {
-        "@id": "urn:ngm:class:digital-rights-management",
-        "label": "Digital Rights Management"
-      }
-    ],
-    "supports": [
+        "@id": "urn:ngm:class:content-moderation",
+        "label": "Content Moderation"
+      },
       {
-        "@id": "urn:ngm:class:legal-compliance",
-        "label": "Legal Compliance"
+        "@id": "urn:ngm:class:fair-use",
+        "label": "Fair Use"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
       }
     ]
   }
@@ -106,25 +210,118 @@ elevatedFrom:: [[copyright]]
 }
 ```
 
-
 - ### Definition
-  - A legal right granting creators exclusive control over reproduction, distribution, adaptation, and public performance of original works for a defined term. In AI and metaverse contexts, copyright raises contested questions about ownership of AI-generated content, the legality of training data ingestion, and rights management for user-created assets within virtual platforms.
+  - An Intellectual Property Rights Framework is the structured system of [[Legal Framework]] doctrines, statutes, treaties, and enforcement mechanisms granting creators exclusive, time-limited control over intangible works. It encompasses [[Copyright]], [[Patent Law]], [[Trade Mark]], and [[Trade Secret]] regimes, establishing rules for ownership, licensing, and transfer of rights. The framework mediates the tension between creator incentive and public access to knowledge, and is currently under pressure from [[Generative AI]], [[Decentralised Autonomous Organisation]] models, and cross-jurisdictional [[Digital Rights]] challenges in virtual environments.
 
-- ### Semantic Classification
-  - owl-class:: infrastructure:Copyright
-  - owl-role:: Concept
+- ### Overview
+  - The Intellectual Property Rights Framework is one of the foundational pillars of the modern knowledge economy, providing the legal architecture through which innovation and creativity are protected, commercialised, and diffused.
+  - Historically rooted in the English Statute of Anne (1710) for copyright and 19th-century patent conventions, the framework has progressively internationalised through treaties such as the Berne Convention and the [[TRIPS Agreement]], administered by the [[World Intellectual Property Organization]].
+  - The framework operates across four principal regimes:
+    - **[[Copyright]]** — automatic protection of original expression (literary, artistic, musical, software works) for the life of the author plus a defined term (70 years in most jurisdictions).
+    - **[[Patent Law]]** — limited monopoly rights (typically 20 years) granted in exchange for public disclosure of a novel, non-obvious, and industrially applicable invention.
+    - **[[Trade Mark]]** — protection of distinctive signs identifying the commercial origin of goods or services, renewable indefinitely as long as in use.
+    - **[[Trade Secret]]** — protection of confidential business information through contractual and equitable mechanisms rather than registration.
+  - Licensing and assignment are the primary instruments through which IP rights are commercialised, enabling [[Technology Transfer]], [[Open-Source Licensing]], and [[Creative Commons]] schemes.
+
+- ### Key Components
+  - **Copyright**
+    - Protects original expression fixed in a tangible medium; subsists automatically on creation.
+    - Covers literary works, software, audio-visual content, databases, and architectural works.
+    - Subject to exceptions: [[Fair Use]] (US), fair dealing (UK/Commonwealth), and mandatory licences.
+    - Central to ongoing disputes over [[AI Training Data]] ingestion and [[Generative AI]] output ownership.
+  - **[[Patent Law]]**
+    - Requires registration and examination; subject matter exclusions vary by jurisdiction (e.g., software patents restricted in the EU).
+    - Patent thickets and standards-essential patents (SEPs) create complex dependencies in hardware and telecom sectors.
+    - AI-assisted invention raises questions about inventorship that national patent offices are actively resolving.
+  - **[[Trade Mark]]**
+    - Protects brand identity and consumer trust signals.
+    - Domain name and metaverse branding disputes extend trade mark law into virtual spaces and [[Spatial Computing]] environments.
+  - **[[Trade Secret]]**
+    - Covers algorithms, training datasets, and model weights kept confidential by AI developers.
+    - Protected by the EU Trade Secrets Directive and similar instruments worldwide.
+  - **[[Licensing]]**
+    - The contractual vehicle through which rights are commercialised: exclusive, non-exclusive, compulsory.
+    - [[Creative Commons]] licences adapt copyright for open sharing; [[Open-Source Licensing]] (MIT, Apache, GPL) governs software.
+  - **[[Digital Rights Management]]**
+    - Technical mechanisms (encryption, access control, watermarking) that enforce IP rights in digital distribution channels.
+    - Anti-circumvention provisions (DMCA §1201, EU Article 6) make circumventing DRM independently unlawful.
+
+- ### Applications and Use Cases
+  - **AI and Machine Learning**
+    - Training large language models on web-scraped data triggers copyright questions across jurisdictions; litigation by publishers, artists, and code authors is ongoing.
+    - Ownership of AI-generated outputs contested: US Copyright Office has declined to register purely AI-authored works.
+    - Model weights may qualify as trade secrets, influencing [[AI Governance]] and open-source release decisions.
+    - [[Data Governance]] frameworks intersect with IP when training datasets contain third-party content.
+  - **[[Spatial Computing]] and Metaverse**
+    - User-generated assets in virtual worlds raise ownership, licensing, and platform termination questions.
+    - NFT-based rights assertion (see [[Non-Fungible Token]]) has been proposed as a mechanism for provable digital ownership but lacks clear IP-law integration.
+    - Brand protection in virtual environments requires trade mark registration covering virtual goods (e.g., Nice Classification class 9/35 updates).
+  - **[[Blockchain]] and Decentralised Systems**
+    - Smart contracts encode licence terms autonomously; [[Decentralised Autonomous Organisation]] governance models challenge traditional assignment and enforcement pathways.
+    - On-chain provenance records provide timestamped evidence of creation, aiding copyright disputes.
+  - **Open Source and Standards**
+    - Copyleft licences (GPL family) use copyright as an enforcement mechanism to enforce downstream openness.
+    - Standards-essential patents interact with FRAND licensing commitments in interoperability contexts — relevant to [[Standards]] bodies and [[Distributed Systems]].
+  - **Content Distribution**
+    - [[Content Monetisation]] platforms (streaming, app stores) operate under complex licensing stacks.
+    - [[Content Moderation]] systems must identify and handle infringing user-uploaded material under safe-harbour regimes (DMCA, DSA).
 
 - ### Relationships
-  - Related To [[Digital Rights]]
-  - Related To [[Digital Rights Management]]
-  - Contrasts With [[Generative AI]]
-  - Supports [[Legal Compliance]]
-  - Bridges To [[AI Governance]]
+  - hasPart:: [[Copyright]]
+  - hasPart:: [[Patent Law]]
+  - hasPart:: [[Trade Mark]]
+  - hasPart:: [[Trade Secret]]
+  - hasPart:: [[Licensing]]
+  - partOf:: [[Legal Framework]]
+  - requires:: [[Legal Compliance]]
+  - requires:: [[Digital Rights Management]]
+  - enables:: [[Open-Source Licensing]]
+  - enables:: [[Technology Transfer]]
+  - enables:: [[Creative Commons]]
+  - contrastsWith:: [[Generative AI]]
+  - contrastsWith:: [[Open Data]]
+  - contrastsWith:: [[Public Domain]]
+  - supports:: [[Digital Rights]]
+  - supports:: [[Content Monetisation]]
+  - supports:: [[Innovation Ecosystem]]
+  - standardizedBy:: [[World Intellectual Property Organization]]
+  - standardizedBy:: [[TRIPS Agreement]]
+  - bridges-to:: [[AI Governance]]
+  - bridges-to:: [[Decentralised Autonomous Organisation]]
+  - bridges-to:: [[Non-Fungible Token]]
+  - bridges-to:: [[Data Governance]]
+  - relatedTo:: [[Fair Use]]
+  - relatedTo:: [[Content Moderation]]
+  - relatedTo:: [[Regulatory Compliance]]
 
-- ### Content
-  - Side note, [Japan Goes All In: Copyright Doesn’t Apply To AI Training | BIIA.com | Business Information Industry Association](https://www.biia.com/japan-goes-all-in-copyright-doesnt-apply-to-ai-training/)
-  - https://www.theregister.com/2024/07/08/github_copilot_dmca/
+- ### Standards and Governance Context
+  - **International Treaties**
+    - Berne Convention (1886, revised): establishes automatic copyright protection and national treatment across 181 member states.
+    - Paris Convention (1883): foundational patent and trade mark treaty.
+    - [[TRIPS Agreement]] (1994, WTO): minimum IP standards binding on all WTO members; includes enforcement obligations.
+    - WIPO Copyright Treaty (1996) and WIPO Performances and Phonograms Treaty: extend copyright to the digital environment.
+    - Marrakesh Treaty (2013): mandates copyright exceptions for accessible formats for persons with print disabilities.
+  - **National Legislative Landmarks**
+    - US: Copyright Act 1976, Digital Millennium Copyright Act 1998 (DMCA).
+    - EU: Copyright in the Digital Single Market Directive 2019 (DSM Directive), Trade Secrets Directive 2016.
+    - UK: Copyright, Designs and Patents Act 1988 (CDPA); current reform discussions on AI and copyright.
+    - Japan: landmark permissive copyright exception for AI training data (2018 Copyright Act revision).
+  - **Regulatory Bodies and Standard-Setting**
+    - [[World Intellectual Property Organization]] (WIPO): UN agency administering international IP treaties and developing AI/IP policy guidance.
+    - National patent offices: USPTO, EPO, UKIPO — developing examination guidelines for AI-assisted inventions.
+    - Creative Commons International: maintains open licensing standards.
+  - **Emerging Policy Areas**
+    - AI authorship and inventorship: WIPO convened a series of expert consultations (2019–2024).
+    - Sui generis database rights (EU): protect investment in data compilations independently of copyright.
+    - Text and data mining (TDM) exceptions: EU DSM Directive Articles 3–4 distinguish research TDM from commercial TDM; UK consulted on a broad TDM exception.
+
+- ### Tensions and Challenges
+  - **AI Training Data**: Large-scale scraping of copyrighted material for model training is the defining IP dispute of the current era. Outcomes will shape [[AI Governance]] norms globally.
+  - **Authorship Gap**: Existing frameworks require human authorship; AI-generated outputs sit in legal limbo in most jurisdictions.
+  - **Cross-Jurisdictional Fragmentation**: Divergence between US (fair use), EU (narrower exceptions), and Japan (broad AI exception) creates compliance complexity for global [[Distributed Systems]] and platforms.
+  - **Enforcement in Decentralised Networks**: Immutable on-chain content and pseudonymous actors complicate traditional IP enforcement, challenging [[Regulatory Compliance]] mechanisms.
+  - **Duration and Balance**: Critics argue current copyright terms (life + 70 years) impede [[Public Domain]] growth and knowledge commons development.
 
 - ### Provenance
-  - sources::
-  - migration-date:: 2026-04-26T00:00:00Z
+  - sources:: Berne Convention text; TRIPS Agreement (WTO); WIPO AI and IP policy documents; EU DSM Directive 2019; US Copyright Act 1976; CDPA 1988; Japan Copyright Act (AI TDM exception); DMCA 1998
+  - updated:: 2026-06-13

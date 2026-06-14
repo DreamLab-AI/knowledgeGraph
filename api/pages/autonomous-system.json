@@ -5,26 +5,55 @@
   "public": true,
   "classIri": "urn:ngm:class:autonomous-system",
   "domain": "robotics",
-  "definition": "An Autonomous System is a robotic or computational entity capable of perceiving its environment through sensors, making decisions based on that perception, and executing actions to achieve goals without continuous human intervention. Autonomous systems span platforms from autonomous vehicles and industrial robots to unmanned aerial vehicles and intelligent software agents, unified by their capacity for closed-loop perception-action cycles.",
+  "definition": "An Autonomous System is a computational or physical entity capable of perceiving its environment through sensors, reasoning over that perception, and executing goal-directed actions without continuous human intervention, forming closed-loop sense-plan-act cycles. Architecturally, autonomous systems combine perception pipelines, world-model maintenance, deliberative or reactive planning, and actuator control, often augmented by machine learning to handle environmental uncertainty. They operate across a spectrum from fully automated (no human input required) to conditionally autonomous (human on the loop), and encompass platforms as diverse as self-driving vehicles, unmanned aerial systems, autonomous underwater vehicles, industrial robotic cells, and intelligent software agents.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:robo-robot-type",
-      "label": "Robot Type"
+      "id": "urn:ngm:class:intelligent-agent",
+      "label": "Intelligent Agent"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.3,
-  "maturity": "emerging",
+  "qualityScore": 0.72,
+  "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:perception-module",
+        "label": "Perception Module"
+      },
+      {
+        "id": "urn:ngm:class:world-model",
+        "label": "World Model"
+      },
+      {
+        "id": "urn:ngm:class:planning-module",
+        "label": "Planning Module"
+      },
+      {
+        "id": "urn:ngm:class:actuation-system",
+        "label": "Actuation System"
+      },
       {
         "id": "urn:ngm:class:sensor",
         "label": "Sensor"
-      },
+      }
+    ],
+    "requires": [
       {
         "id": "urn:ngm:class:motion-planning",
         "label": "Motion Planning"
+      },
+      {
+        "id": "urn:ngm:class:state-estimation",
+        "label": "State Estimation"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:real-time-computing",
+        "label": "Real-Time Computing"
       }
     ],
     "enables": [
@@ -35,25 +64,102 @@
       {
         "id": "urn:ngm:class:autonomous-robot",
         "label": "Autonomous Robot"
+      },
+      {
+        "id": "urn:ngm:class:unmanned-aerial-vehicle",
+        "label": "Unmanned Aerial Vehicle"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-warehouse-robot",
+        "label": "Autonomous Warehouse Robot"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      },
+      {
+        "id": "urn:ngm:class:control-theory",
+        "label": "Control Theory"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:teleoperated-system",
+        "label": "Teleoperated System"
+      },
+      {
+        "id": "urn:ngm:class:semi-autonomous-system",
+        "label": "Semi-Autonomous System"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:reinforcement-learning",
         "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:simultaneous-localisation-and-mapping",
+        "label": "Simultaneous Localisation and Mapping"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
       }
     ],
-    "supports": [],
-    "standardizedBy": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human-Robot Interaction"
+      },
+      {
+        "id": "urn:ngm:class:multi-robot-systems",
+        "label": "Multi-Robot Systems"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-iec-42010",
+        "label": "ISO/IEC 42010"
+      },
+      {
+        "id": "urn:ngm:class:sae-levels-of-driving-automation",
+        "label": "SAE Levels of Driving Automation"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
         "id": "urn:ngm:class:robot-safety",
         "label": "Robot Safety"
+      },
+      {
+        "id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
+      },
+      {
+        "id": "urn:ngm:class:cyber-physical-system",
+        "label": "Cyber-Physical System"
       }
     ]
   },

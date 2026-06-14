@@ -21,7 +21,7 @@ public:: true
   "@type": "Class",
   "label": "Remote Sensing",
   "definition": "Remote sensing is the acquisition of information about physical objects or phenomena from a distance, typically using sensors mounted on satellites, aircraft, drones, or ground-based platforms, without direct physical contact with the subject. It encompasses passive sensing (measuring reflected or emitted electromagnetic radiation across optical, infrared, and microwave bands) and active sensing (radar and LiDAR, which emit and measure return signals). Remote sensing data underpins earth observation, environmental monitoring, precision agriculture, disaster response, urban planning, and military reconnaissance.",
-  "domain": "science",
+  "domain": "data",
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"}],
   "relations": {

@@ -4,8 +4,8 @@
   "slug": "reproducibility",
   "public": true,
   "classIri": "urn:ngm:class:reproducibility",
-  "domain": "general",
-  "definition": "The ability to obtain consistent results using the same data and methods, a central criterion for the reliability and credibility of scientific findings.",
+  "domain": "data",
+  "definition": "Reproducibility is the property of a scientific or computational study whereby independent researchers can obtain the same or statistically equivalent results by applying the same methods and analysis procedures to the same dataset. It is a foundational criterion for the credibility and cumulative progress of empirical disciplines, distinguishing it from replicability, which extends the criterion to new data or new samples. Reproducibility failures arise from incomplete method documentation, software environment drift, undisclosed analytical flexibility, or data inaccessibility. Achieving it systematically requires version-controlled code, containerised execution environments, open datasets, and pre-registered analysis plans.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:quality-assurance",
@@ -13,31 +13,116 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.74,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:replication",
-        "label": "Replication"
+        "id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      },
+      {
+        "id": "urn:ngm:class:open-data",
+        "label": "Open Data"
+      },
+      {
+        "id": "urn:ngm:class:containerisation",
+        "label": "Containerisation"
+      },
+      {
+        "id": "urn:ngm:class:pre-registration",
+        "label": "Pre-registration"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:robustness",
         "label": "Robustness"
+      },
+      {
+        "id": "urn:ngm:class:scientific-trust",
+        "label": "Scientific Trust"
+      },
+      {
+        "id": "urn:ngm:class:peer-review",
+        "label": "Peer Review"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:data-provenance",
+        "label": "Data Provenance"
+      },
+      {
+        "id": "urn:ngm:class:metadata-management",
+        "label": "Metadata Management"
+      },
+      {
+        "id": "urn:ngm:class:documentation",
+        "label": "Documentation"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:replication",
+        "label": "Replication"
+      },
+      {
+        "id": "urn:ngm:class:generalisability",
+        "label": "Generalisability"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      },
+      {
+        "id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:continuous-integration",
+        "label": "Continuous Integration"
+      },
+      {
+        "id": "urn:ngm:class:workflow-management",
+        "label": "Workflow Management"
+      },
+      {
+        "id": "urn:ngm:class:statistical-analysis",
+        "label": "Statistical Analysis"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:sensitivity",
+        "label": "Sensitivity"
+      },
+      {
+        "id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      },
+      {
+        "id": "urn:ngm:class:open-science",
+        "label": "Open Science"
+      },
+      {
+        "id": "urn:ngm:class:data-quality",
+        "label": "Data Quality"
+      },
+      {
+        "id": "urn:ngm:class:benchmarking",
+        "label": "Benchmarking"
+      }
+    ]
   },
   "wikilinks": [
     {

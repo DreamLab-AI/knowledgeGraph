@@ -4,7 +4,7 @@
   "slug": "set-theory",
   "public": true,
   "classIri": "urn:ngm:class:set-theory",
-  "domain": "mathematics",
+  "domain": "machine-learning",
   "definition": "The branch of mathematical logic that studies collections of objects called sets, providing a foundational language for most of modern mathematics.",
   "subClassOf": [
     {

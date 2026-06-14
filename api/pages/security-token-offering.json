@@ -4,16 +4,16 @@
   "slug": "security-token-offering",
   "public": true,
   "classIri": "urn:ngm:class:security-token-offering",
-  "domain": "spatial-computing",
-  "definition": "A Security Token Offering (STO) is a regulated fundraising mechanism in which blockchain-based tokens representing ownership rights, revenue shares, or other financial entitlements are offered to investors under applicable securities law. Unlike utility token sales, STOs require issuer compliance with financial regulation, investor accreditation, and prospectus or exemption filings, bringing traditional capital market discipline to tokenised asset issuance.",
+  "domain": "finance",
+  "definition": "A Security Token Offering (STO) is a regulated capital-raising mechanism in which blockchain-based digital tokens representing ownership rights, equity interests, debt obligations, revenue participation, or other financial entitlements are issued and sold to investors in compliance with applicable securities law. STOs require issuers to satisfy jurisdictional regulatory frameworks \u2014 such as the SEC's Regulation D or Regulation S exemptions in the United States, or MiFID II and EU prospectus rules in Europe \u2014 including investor accreditation verification, Know Your Customer and Anti-Money Laundering checks, and mandatory disclosure obligations. Unlike Initial Coin Offerings, which frequently issued utility tokens, STOs embed compliance logic directly into programmable smart contracts on distributed ledger platforms, automating transfer restrictions, cap-table management, and dividend or interest distributions. The STO model bridges traditional capital markets infrastructure with blockchain-based asset tokenisation, enabling fractional ownership of previously illiquid assets such as real estate, private equity, and infrastructure funds.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:sc-content-and-assets",
-      "label": "Content and Assets"
+      "id": "urn:ngm:class:token-offering",
+      "label": "Token Offering"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.72,
   "maturity": "emerging",
   "relationships": {
     "hasPart": [],
@@ -29,13 +29,64 @@
       {
         "id": "urn:ngm:class:identity-verification",
         "label": "Identity Verification"
+      },
+      {
+        "id": "urn:ngm:class:know-your-customer",
+        "label": "Know Your Customer"
+      },
+      {
+        "id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
+      },
+      {
+        "id": "urn:ngm:class:investor-accreditation",
+        "label": "Investor Accreditation"
       }
     ],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:asset-tokenization",
+        "label": "Asset Tokenization"
+      },
+      {
+        "id": "urn:ngm:class:fractional-ownership",
+        "label": "Fractional Ownership"
+      },
+      {
+        "id": "urn:ngm:class:secondary-market-trading",
+        "label": "Secondary Market Trading"
+      },
+      {
+        "id": "urn:ngm:class:programmable-compliance",
+        "label": "Programmable Compliance"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:initial-coin-offering",
+        "label": "Initial Coin Offering"
+      },
+      {
+        "id": "urn:ngm:class:initial-public-offering",
+        "label": "Initial Public Offering"
+      },
+      {
+        "id": "urn:ngm:class:initial-dex-offering",
+        "label": "Initial DEX Offering"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-autonomous-organization",
+        "label": "Decentralised Autonomous Organisation"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:security-token",
@@ -44,19 +95,44 @@
       {
         "id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "id": "urn:ngm:class:digital-wallet",
+        "label": "Digital Wallet"
       }
     ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:erc-1400",
+        "label": "ERC-1400"
+      },
+      {
+        "id": "urn:ngm:class:erc-3643",
+        "label": "ERC-3643"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:asset-tokenization",
-        "label": "Asset Tokenization"
-      },
-      {
         "id": "urn:ngm:class:digital-asset",
         "label": "Digital Asset"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:capital-markets",
+        "label": "Capital Markets"
+      },
+      {
+        "id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
       }
     ]
   },

@@ -21,7 +21,7 @@ public:: true
   "@type": "Class",
   "label": "GraphQL",
   "definition": "GraphQL is a query language and runtime for APIs, developed by Facebook and open-sourced in 2015, that allows clients to specify precisely the data they need in a single request rather than consuming fixed-shape REST endpoints. It is defined by a strongly typed schema that describes the graph of types and fields the API exposes, and a runtime that resolves client queries against that schema by executing resolver functions. GraphQL eliminates the over-fetching and under-fetching problems inherent in REST by shifting data shape control to the client, and its introspection capability enables rich developer tooling and automatic documentation generation.",
-  "domain": "web",
+  "domain": "infrastructure",
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:api-standard", "label": "API Standard"}],
   "relations": {

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:platform-service",
   "domain": "infrastructure",
-  "definition": "A managed cloud or middleware service exposed via APIs that provides reusable capabilities\u2014such as authentication, storage, rendering, or notification\u2014to applications built on top of a platform. Platform services abstract infrastructure complexity, enabling developers to compose higher-order virtual world and spatial computing features without managing underlying infrastructure.",
+  "definition": "A managed, API-exposed capability unit delivered by a cloud or middleware platform that provides reusable building blocks\u2014such as authentication, storage, messaging, compute, or rendering\u2014to applications built atop that platform. Platform services abstract the operational complexity of underlying infrastructure by encapsulating it behind stable, versioned contracts, enabling developers to compose higher-order application features without provisioning or administering raw resources. They are the foundational unit of Platform-as-a-Service (PaaS) and are central to cloud-native, microservices, and distributed systems architectures. At scale, platform services enforce tenancy boundaries, SLA guarantees, and metered billing, transforming infrastructure capabilities into economically composable software products.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-computing-and-cloud",
@@ -14,13 +14,9 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "emerging",
+  "maturity": "mature",
   "relationships": {
     "hasPart": [
-      {
-        "id": "urn:ngm:class:notification-system",
-        "label": "Notification System"
-      },
       {
         "id": "urn:ngm:class:authentication-service",
         "label": "Authentication Service"
@@ -28,33 +24,150 @@
       {
         "id": "urn:ngm:class:api-gateway",
         "label": "API Gateway"
+      },
+      {
+        "id": "urn:ngm:class:notification-system",
+        "label": "Notification System"
+      },
+      {
+        "id": "urn:ngm:class:object-storage",
+        "label": "Object Storage"
+      },
+      {
+        "id": "urn:ngm:class:message-queue",
+        "label": "Message Queue"
+      },
+      {
+        "id": "urn:ngm:class:service-mesh",
+        "label": "Service Mesh"
       }
     ],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:api-design",
+        "label": "API Design"
+      },
+      {
+        "id": "urn:ngm:class:identity-and-access-management",
+        "label": "Identity and Access Management"
+      },
+      {
+        "id": "urn:ngm:class:service-level-agreement",
+        "label": "Service Level Agreement"
+      }
+    ],
     "enables": [
+      {
+        "id": "urn:ngm:class:cloud-native-applications",
+        "label": "Cloud-Native Applications"
+      },
       {
         "id": "urn:ngm:class:metaverse-platform",
         "label": "Metaverse Platform"
       },
       {
-        "id": "urn:ngm:class:cloud-native-applications",
-        "label": "Cloud-Native Applications"
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:multi-tenant-architecture",
+        "label": "Multi-Tenant Architecture"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:container-orchestration",
+        "label": "Container Orchestration"
+      },
+      {
+        "id": "urn:ngm:class:infrastructure-as-code",
+        "label": "Infrastructure-as-Code"
+      }
+    ],
+    "implements": [
       {
         "id": "urn:ngm:class:microservices-architecture",
         "label": "Microservices Architecture"
+      },
+      {
+        "id": "urn:ngm:class:event-driven-architecture",
+        "label": "Event-Driven Architecture"
       }
     ],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:infrastructure-as-a-service",
+        "label": "Infrastructure-as-a-Service"
+      },
+      {
+        "id": "urn:ngm:class:software-as-a-service",
+        "label": "Software-as-a-Service"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-inference-service",
+        "label": "AI Inference Service"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:restful-api",
+        "label": "RESTful API"
+      },
+      {
+        "id": "urn:ngm:class:grpc",
+        "label": "gRPC"
+      },
+      {
+        "id": "urn:ngm:class:oauth2",
+        "label": "OAuth2"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:observability",
+        "label": "Observability"
+      },
+      {
+        "id": "urn:ngm:class:horizontal-scaling",
+        "label": "Horizontal Scaling"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:openapi-specification",
+        "label": "OpenAPI Specification"
+      },
+      {
+        "id": "urn:ngm:class:cloud-native-computing-foundation",
+        "label": "Cloud Native Computing Foundation"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:platform-as-a-service",
+        "label": "Platform-as-a-Service"
+      },
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:serverless-computing",
+        "label": "Serverless Computing"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": []

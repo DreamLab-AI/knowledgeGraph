@@ -5,15 +5,15 @@
   "public": true,
   "classIri": "urn:ngm:class:claude",
   "domain": "ai",
-  "definition": "Claude is a family of large language model AI assistants developed by Anthropic, designed with safety and harmlessness as first-order design objectives alongside capability. Claude models are trained using Constitutional AI and reinforcement learning from human feedback to be helpful, harmless, and honest, embodying Anthropic's research programme on aligning advanced AI systems with human values. The Claude model family spans Haiku, Sonnet, and Opus tiers offering cost-performance trade-offs, and supports extended context windows, tool use, agentic workflows, and multimodal inputs. Claude has been widely adopted in enterprise API integrations, developer tooling, and consumer applications.",
+  "definition": "Claude is a family of large language model AI assistants developed by Anthropic, trained using Constitutional AI and reinforcement learning from human feedback to be helpful, harmless, and honest. The Claude model family encompasses tiered variants (Haiku, Sonnet, and Opus) spanning cost-performance trade-offs, with support for extended context windows, multimodal inputs, tool use, and agentic workflows via the Model Context Protocol. Claude embodies Anthropic's research programme on aligning advanced AI systems with human values, serving as both a commercial API product and a living demonstration that safety and capability are complementary rather than opposed. The model family has evolved through multiple generations, with each iteration advancing state-of-the-art performance on reasoning, coding, and instruction-following benchmarks whilst maintaining rigorous safety evaluation.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:proprietary-large-language-models",
-      "label": "Proprietary Large Language Models"
+      "id": "urn:ngm:class:large-language-model",
+      "label": "Large Language Model"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.74,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
@@ -30,12 +30,64 @@
       {
         "id": "urn:ngm:class:function-calling",
         "label": "Function Calling"
+      },
+      {
+        "id": "urn:ngm:class:code-generation",
+        "label": "Code Generation"
+      },
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "id": "urn:ngm:class:multi-step-reasoning",
+        "label": "Multi-Step Reasoning"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:pre-training",
+        "label": "Pre-Training"
+      },
+      {
+        "id": "urn:ngm:class:human-feedback",
+        "label": "Human Feedback"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:model-context-protocol",
+        "label": "Model Context Protocol"
+      },
+      {
+        "id": "urn:ngm:class:ai-model-card",
+        "label": "AI Model Card"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:gpt-4",
+        "label": "GPT-4"
+      },
+      {
+        "id": "urn:ngm:class:gemini",
+        "label": "Gemini"
+      },
+      {
+        "id": "urn:ngm:class:llama",
+        "label": "Llama"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:enterprise-software-integration",
+        "label": "Enterprise Software Integration"
+      },
+      {
+        "id": "urn:ngm:class:workflow-automation",
+        "label": "Workflow Automation"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:constitutional-ai-training-methodology",
@@ -48,6 +100,14 @@
       {
         "id": "urn:ngm:class:agentic-workflow",
         "label": "Agentic Workflow"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "id": "urn:ngm:class:instruction-tuning",
+        "label": "Instruction Tuning"
       }
     ],
     "supports": [],
@@ -59,12 +119,20 @@
         "label": "Anthropic"
       },
       {
-        "id": "urn:ngm:class:constitutional-ai-training-methodology-language-model-family",
-        "label": "Anthropic Claude"
-      },
-      {
         "id": "urn:ngm:class:large-language-models",
         "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:alignment-research",
+        "label": "Alignment Research"
+      },
+      {
+        "id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
       }
     ]
   },

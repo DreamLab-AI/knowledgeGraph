@@ -4,7 +4,7 @@
   "slug": "compliance-domain",
   "public": true,
   "classIri": "urn:ngm:class:compliance-domain",
-  "domain": "compliance",
+  "domain": "governance",
   "definition": "The Compliance Domain covers the processes by which organisations demonstrate adherence to laws, regulations, standards and internal policies. Its scope includes control frameworks, monitoring, audit and reporting of conformance. It is a top-level subject classification applied across regulated activities. The boundary excludes the creation of the rules themselves, which belongs to the Regulation Domain.",
   "subClassOf": [
     {

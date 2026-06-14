@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:data-aggregation",
   "domain": "data",
-  "definition": "Data aggregation is the process of gathering data from multiple sources and combining or summarising it into a consolidated form. It supports analysis, reporting and downstream processing.",
+  "definition": "Data aggregation is the systematic process of collecting, combining, and summarising records from multiple heterogeneous sources into a unified, reduced representation suitable for analysis, reporting, or further processing. It encompasses both batch and streaming paradigms, applying operations such as grouping, counting, summing, averaging, and deduplication to transform raw, high-volume data into structured, lower-dimensionality outputs. Aggregation underpins analytical workflows from simple dashboards to complex federated query engines, acting as a bridge between raw data capture and actionable intelligence. It is distinct from raw data replication in that it deliberately reduces detail while preserving statistically significant structure.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:data-integration",
@@ -13,31 +13,138 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
-  "maturity": "established",
+  "qualityScore": 0.74,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:etl",
+        "label": "ETL"
+      },
+      {
+        "id": "urn:ngm:class:stream-processing",
+        "label": "Stream Processing"
+      },
+      {
+        "id": "urn:ngm:class:batch-processing",
+        "label": "Batch Processing"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:data-integration",
         "label": "Data Integration"
+      },
+      {
+        "id": "urn:ngm:class:schema-mapping",
+        "label": "Schema Mapping"
+      },
+      {
+        "id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:community-detection",
         "label": "Community Detection"
+      },
+      {
+        "id": "urn:ngm:class:business-intelligence",
+        "label": "Business Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      },
+      {
+        "id": "urn:ngm:class:data-warehouse",
+        "label": "Data Warehouse"
+      },
+      {
+        "id": "urn:ngm:class:olap",
+        "label": "OLAP"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:data-quality",
+        "label": "Data Quality"
+      },
+      {
+        "id": "urn:ngm:class:metadata-management",
+        "label": "Metadata Management"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:data-replication",
+        "label": "Data Replication"
+      },
+      {
+        "id": "urn:ngm:class:data-disaggregation",
+        "label": "Data Disaggregation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:differential-privacy",
+        "label": "Differential Privacy"
+      },
+      {
+        "id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:sql",
+        "label": "SQL"
+      },
+      {
+        "id": "urn:ngm:class:map-reduce",
+        "label": "MapReduce"
+      },
+      {
+        "id": "urn:ngm:class:apache-spark",
+        "label": "Apache Spark"
+      },
+      {
+        "id": "urn:ngm:class:message-queue",
+        "label": "Message Queue"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:data-lake",
+        "label": "Data Lake"
+      },
+      {
+        "id": "urn:ngm:class:event-sourcing",
+        "label": "Event Sourcing"
+      }
+    ]
   },
   "wikilinks": [
     {

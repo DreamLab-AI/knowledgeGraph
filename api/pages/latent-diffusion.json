@@ -5,43 +5,116 @@
   "public": true,
   "classIri": "urn:ngm:class:latent-diffusion",
   "domain": "artificial-intelligence",
-  "definition": "Latent Diffusion Models (LDMs) are a class of generative models that perform the iterative denoising diffusion process in the compressed latent space of a pre-trained variational autoencoder (VAE), rather than directly in pixel space. This design reduces the computational cost of training and inference by an order of magnitude whilst retaining perceptual quality, because the VAE encodes high-dimensional image data into a compact, semantically rich latent representation. LDMs are conditioned on text, image, or other modalities via cross-attention mechanisms inside a U-Net backbone, enabling text-to-image synthesis and image-to-image translation at practical compute budgets.",
+  "definition": "Latent Diffusion Models (LDMs) are a class of generative models that perform the iterative denoising diffusion process within the compressed latent space of a pre-trained variational autoencoder (VAE), rather than directly in high-dimensional pixel space. By encoding images into a compact, semantically rich latent representation, LDMs dramatically reduce training and inference compute whilst preserving perceptual quality, because the VAE absorbs the high-frequency, imperceptual detail that would otherwise burden the diffusion process. Conditioning on text, image, or other modalities is achieved via cross-attention layers inside a U-Net denoising backbone, enabling high-fidelity text-to-image synthesis, image editing, and multimodal generation at practical hardware budgets. Stable Diffusion, the most widely deployed open-source implementation, demonstrated that consumer GPUs could run production-quality image synthesis, catalysing a broad ecosystem of fine-tuning methods and downstream applications.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique"
+      "id": "urn:ngm:class:diffusion-model",
+      "label": "Diffusion Model"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.73,
+  "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [
+    "hasPart": [
       {
-        "id": "urn:ngm:class:variational-autoencoders",
-        "label": "Variational Autoencoders"
+        "id": "urn:ngm:class:encoder-decoder",
+        "label": "Encoder-Decoder"
       },
       {
-        "id": "urn:ngm:class:diffusion-model",
-        "label": "Diffusion Model"
+        "id": "urn:ngm:class:denoising-score-matching",
+        "label": "Denoising Score Matching"
+      },
+      {
+        "id": "urn:ngm:class:noise-schedule",
+        "label": "Noise Schedule"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:variational-autoencoder",
+        "label": "Variational Autoencoder"
+      },
+      {
+        "id": "urn:ngm:class:u-net",
+        "label": "U-Net"
+      },
+      {
+        "id": "urn:ngm:class:cross-attention",
+        "label": "Cross-Attention"
       }
     ],
     "enables": [
+      {
+        "id": "urn:ngm:class:text-to-image",
+        "label": "Text-to-Image"
+      },
       {
         "id": "urn:ngm:class:image-generation",
         "label": "Image Generation"
       },
       {
-        "id": "urn:ngm:class:text-to-image",
-        "label": "Text-to-Image"
+        "id": "urn:ngm:class:image-inpainting",
+        "label": "Image Inpainting"
+      },
+      {
+        "id": "urn:ngm:class:image-to-image-translation",
+        "label": "Image-to-Image Translation"
+      },
+      {
+        "id": "urn:ngm:class:video-generation",
+        "label": "Video Generation"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:score-based-generative-model",
+        "label": "Score-Based Generative Model"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:generative-adversarial-network",
+        "label": "Generative Adversarial Network"
+      },
+      {
+        "id": "urn:ngm:class:pixel-diffusion",
+        "label": "Pixel Diffusion"
+      },
+      {
+        "id": "urn:ngm:class:normalising-flow",
+        "label": "Normalising Flow"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:augmented-reality-content-creation",
+        "label": "AR Content Creation"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:clip",
+        "label": "CLIP"
+      },
+      {
+        "id": "urn:ngm:class:ddim-sampling",
+        "label": "DDIM Sampling"
+      },
+      {
+        "id": "urn:ngm:class:classifier-free-guidance",
+        "label": "Classifier-Free Guidance"
+      },
+      {
+        "id": "urn:ngm:class:low-rank-adaptation",
+        "label": "Low-Rank Adaptation"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
@@ -52,7 +125,15 @@
       },
       {
         "id": "urn:ngm:class:neural-network-latent-space",
-        "label": "latent space"
+        "label": "Latent Space"
+      },
+      {
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
       }
     ]
   },

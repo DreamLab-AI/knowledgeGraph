@@ -5,37 +5,97 @@
   "public": true,
   "classIri": "urn:ngm:class:physics-simulation",
   "domain": "spatial-computing",
-  "definition": "Physics Simulation is the computational modelling of physical phenomena \u2014 including rigid-body dynamics, soft-body deformation, fluid behaviour, and collision detection \u2014 to produce physically plausible behaviour in virtual environments. It underpins interactive experiences in virtual reality, robotics training, and digital-twin applications by enabling real-time or near-real-time approximations of classical mechanics.",
+  "definition": "Physics Simulation is the computational modelling of physical phenomena \u2014 encompassing rigid-body dynamics, soft-body deformation, fluid behaviour, cloth simulation, collision detection, and constraint solving \u2014 to produce physically plausible behaviour in real-time or offline virtual environments. It applies classical mechanics, continuum mechanics, and numerical integration methods to generate deterministic or probabilistic trajectories of simulated objects and agents. Physics simulation is foundational to interactive 3D applications, robotics training, digital-twin fidelity, and scientific computation, enabling rapid exploration of scenarios that would be costly or dangerous in the physical world. Modern implementations exploit GPU parallelism, hierarchical spatial data structures, and position-based dynamics to meet real-time performance budgets across heterogeneous hardware.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:sc-platform-and-environment",
-      "label": "Platform and Environment"
+      "id": "urn:ngm:class:computational-modelling",
+      "label": "Computational Modelling"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:rigid-body-dynamics",
+        "label": "Rigid Body Dynamics"
+      },
+      {
+        "id": "urn:ngm:class:soft-body-physics",
+        "label": "Soft Body Physics"
+      },
+      {
+        "id": "urn:ngm:class:fluid-simulation",
+        "label": "Fluid Simulation"
+      },
+      {
+        "id": "urn:ngm:class:collision-detection",
+        "label": "Collision Detection"
+      },
+      {
+        "id": "urn:ngm:class:constraint-solver",
+        "label": "Constraint Solver"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:numerical-integration",
+        "label": "Numerical Integration"
+      },
+      {
+        "id": "urn:ngm:class:spatial-data-structure",
+        "label": "Spatial Data Structure"
+      },
+      {
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:virtual-reality",
         "label": "Virtual Reality"
       },
       {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
         "id": "urn:ngm:class:robotics",
         "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicle"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:kinematic-animation",
+        "label": "Kinematic Animation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:sim-to-real-transfer",
+        "label": "Sim-to-Real Transfer"
+      },
+      {
+        "id": "urn:ngm:class:neural-physics",
+        "label": "Neural Physics"
+      }
+    ],
     "uses": [
       {
-        "id": "urn:ngm:class:game-engine",
-        "label": "Game Engine"
+        "id": "urn:ngm:class:finite-element-method",
+        "label": "Finite Element Method"
+      },
+      {
+        "id": "urn:ngm:class:smoothed-particle-hydrodynamics",
+        "label": "Smoothed Particle Hydrodynamics"
       }
     ],
     "supports": [
@@ -44,13 +104,39 @@
         "label": "Robot Learning"
       },
       {
-        "id": "urn:ngm:class:autonomous-vehicle",
-        "label": "Autonomous Vehicle"
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
       }
     ],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:3d-rendering",
+        "label": "3D Rendering"
+      },
+      {
+        "id": "urn:ngm:class:animation",
+        "label": "Animation"
+      },
+      {
+        "id": "urn:ngm:class:scientific-computing",
+        "label": "Scientific Computing"
+      },
+      {
+        "id": "urn:ngm:class:real-time-systems",
+        "label": "Real-Time Systems"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

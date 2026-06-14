@@ -55,7 +55,7 @@ public:: true
   "@type": "Class",
   "label": "Decentralised Identifier",
   "definition": "A type of globally unique identifier, defined by a W3C standard, that is controlled by its subject and resolves to a document without depending on a central registry.",
-  "domain": "cryptographic",
+  "domain": "security",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

@@ -4,7 +4,7 @@
   "slug": "animation-controller",
   "public": true,
   "classIri": "urn:ngm:class:animation-controller",
-  "domain": "graphics",
+  "domain": "spatial-computing",
   "definition": "An animation controller is a software component that manages the selection, blending, and sequencing of animation clips for a character or object in real-time interactive environments. It typically implements a state machine model in which transitions between animation states are governed by parametric conditions such as velocity, input events, or AI signals. Animation controllers sit between high-level game logic and the low-level skeletal animation runtime, abstracting away the complexity of blend trees, IK passes, and additive layers.",
   "subClassOf": [
     {

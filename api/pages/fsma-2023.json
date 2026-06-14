@@ -4,7 +4,7 @@
   "slug": "fsma-2023",
   "public": true,
   "classIri": "urn:ngm:class:fsma-2023",
-  "domain": "regulation",
+  "domain": "governance",
   "definition": "The Financial Services and Markets Act 2023, a United Kingdom statute that updates the framework for financial services regulation after departure from the European Union. It grants regulators new powers, including over digital assets.",
   "subClassOf": [
     {

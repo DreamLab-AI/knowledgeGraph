@@ -4,8 +4,8 @@
   "slug": "web-gl",
   "public": true,
   "classIri": "urn:ngm:class:web-gl",
-  "domain": "computer-graphics",
-  "definition": "WebGL is a JavaScript API for rendering interactive 2D and 3D graphics in web browsers without plug-ins, based on OpenGL ES. It executes on the GPU through the HTML canvas element.",
+  "domain": "spatial-computing",
+  "definition": "WebGL (Web Graphics Library) is a royalty-free JavaScript API that exposes a subset of OpenGL ES 2.0 and 3.0 to web browsers, enabling hardware-accelerated 2D and 3D rendering directly inside an HTML canvas element without requiring browser plug-ins. It communicates directly with the GPU through the browser's graphics pipeline, exposing programmable vertex and fragment shaders written in GLSL ES. Standardised by the Khronos Group and supported natively in all major browsers, WebGL underpins interactive visualisations, browser-based games, scientific data rendering, and WebXR spatial computing experiences. Its successor API, WebGPU, offers a more modern GPU abstraction while WebGL remains the dominant, battle-tested standard for cross-platform GPU-accelerated web graphics.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:graphics-api",
@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.74,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
@@ -21,23 +21,134 @@
       {
         "id": "urn:ngm:class:gpu",
         "label": "GPU"
+      },
+      {
+        "id": "urn:ngm:class:html-canvas",
+        "label": "HTML Canvas"
+      },
+      {
+        "id": "urn:ngm:class:glsl-es",
+        "label": "GLSL ES"
+      },
+      {
+        "id": "urn:ngm:class:javascript",
+        "label": "JavaScript"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:real-time-rendering",
         "label": "Real-Time Rendering"
+      },
+      {
+        "id": "urn:ngm:class:browser-based-games",
+        "label": "Browser-Based Games"
+      },
+      {
+        "id": "urn:ngm:class:web-xr",
+        "label": "WebXR"
+      },
+      {
+        "id": "urn:ngm:class:data-visualisation",
+        "label": "Data Visualisation"
+      },
+      {
+        "id": "urn:ngm:class:scientific-visualisation",
+        "label": "Scientific Visualisation"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:opengl-es",
+        "label": "OpenGL ES"
+      },
+      {
+        "id": "urn:ngm:class:browser-graphics-pipeline",
+        "label": "Browser Graphics Pipeline"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:opengl-es",
+        "label": "OpenGL ES"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:web-gpu",
+        "label": "WebGPU"
+      },
+      {
+        "id": "urn:ngm:class:canvas-2d",
+        "label": "Canvas 2D"
+      },
+      {
+        "id": "urn:ngm:class:direct3d",
+        "label": "Direct3D"
+      },
+      {
+        "id": "urn:ngm:class:vulkan",
+        "label": "Vulkan"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:machine-learning-in-browser",
+        "label": "Machine Learning in Browser"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:shader-programming",
+        "label": "Shader Programming"
+      },
+      {
+        "id": "urn:ngm:class:vertex-buffer-object",
+        "label": "Vertex Buffer Object"
+      },
+      {
+        "id": "urn:ngm:class:texture-mapping",
+        "label": "Texture Mapping"
+      },
+      {
+        "id": "urn:ngm:class:rasterisation",
+        "label": "Rasterisation"
+      }
+    ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:khronos-group",
+        "label": "Khronos Group"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:three-js",
+        "label": "Three.js"
+      },
+      {
+        "id": "urn:ngm:class:babylon-js",
+        "label": "Babylon.js"
+      },
+      {
+        "id": "urn:ngm:class:computer-graphics",
+        "label": "Computer Graphics"
+      },
+      {
+        "id": "urn:ngm:class:webassembly",
+        "label": "WebAssembly"
+      }
+    ]
   },
   "wikilinks": [
     {

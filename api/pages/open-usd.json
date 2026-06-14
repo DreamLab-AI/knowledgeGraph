@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:open-usd",
   "domain": "spatial-computing",
-  "definition": "OpenUSD (Universal Scene Description) is an open-source framework and file format developed by Pixar Animation Studios for composing, simulating, collaborating on, and exchanging richly structured 3D scenes across digital content creation tools and real-time rendering pipelines. USD encodes a hierarchical scene graph with support for layered composition, non-destructive overrides, and time-sampled animation, enabling multiple departments or tools to contribute to a shared scene without overwriting each other's work. OpenUSD has been adopted as the foundation for Apple's RealityKit (.usdz), NVIDIA's Omniverse platform, and the emerging ISO/IEC 22886 standard for 3D scene exchange.",
+  "definition": "OpenUSD (Universal Scene Description) is an open-source framework, scene-graph data model, and file format developed by Pixar Animation Studios for composing, simulating, collaborating on, and exchanging richly structured 3D scenes across digital content creation tools and real-time rendering pipelines. Its layered composition engine allows multiple teams or tools to contribute non-destructive overrides to a shared hierarchical scene graph with full time-sampled animation support, making it the de facto interchange format for large-scale visual effects, game engine, and industrial simulation pipelines. Governed since 2023 by the Alliance for OpenUSD (AOUSD) and progressing toward ISO/IEC 22886 standardisation, OpenUSD underpins NVIDIA Omniverse, Apple visionOS/RealityKit, and major digital twin platforms.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-content-and-assets",
@@ -13,11 +13,37 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:usd-composition-arcs",
+        "label": "USD Composition Arcs"
+      },
+      {
+        "id": "urn:ngm:class:usd-schema-plugin",
+        "label": "USD Schema Plugin"
+      },
+      {
+        "id": "urn:ngm:class:usdz-package-format",
+        "label": "USDZ Package Format"
+      },
+      {
+        "id": "urn:ngm:class:usd-hydra-renderer",
+        "label": "USD Hydra Renderer"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:scene-graph",
+        "label": "Scene Graph"
+      },
+      {
+        "id": "urn:ngm:class:hierarchical-data-model",
+        "label": "Hierarchical Data Model"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:3-d-content-pipeline",
@@ -26,6 +52,18 @@
       {
         "id": "urn:ngm:class:digital-twin",
         "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:collaborative-3-d-editing",
+        "label": "Collaborative 3D Editing"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality-content",
+        "label": "Augmented Reality Content"
+      },
+      {
+        "id": "urn:ngm:class:physics-simulation",
+        "label": "Physics Simulation"
       }
     ],
     "dependsOn": [],
@@ -33,13 +71,65 @@
     "contrastsWith": [
       {
         "id": "urn:ngm:class:gltf-standard",
-        "label": "Gltf Standard"
+        "label": "glTF Standard"
+      },
+      {
+        "id": "urn:ngm:class:fbx-format",
+        "label": "FBX Format"
+      },
+      {
+        "id": "urn:ngm:class:collada-format",
+        "label": "COLLADA Format"
       }
     ],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:autonomous-vehicle-simulation",
+        "label": "Autonomous Vehicle Simulation"
+      },
+      {
+        "id": "urn:ngm:class:industrial-metaverse",
+        "label": "Industrial Metaverse"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:materialx",
+        "label": "MaterialX"
+      },
+      {
+        "id": "urn:ngm:class:mdl-material-definition-language",
+        "label": "MDL Material Definition Language"
+      },
+      {
+        "id": "urn:ngm:class:skeletal-animation",
+        "label": "Skeletal Animation"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:non-destructive-workflow",
+        "label": "Non-Destructive Workflow"
+      },
+      {
+        "id": "urn:ngm:class:level-of-detail",
+        "label": "Level of Detail"
+      },
+      {
+        "id": "urn:ngm:class:procedural-geometry",
+        "label": "Procedural Geometry"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:alliance-for-openusd",
+        "label": "Alliance for OpenUSD"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-22886",
+        "label": "ISO/IEC 22886"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -47,12 +137,16 @@
         "label": "3D Asset"
       },
       {
-        "id": "urn:ngm:class:3-d-asset-standard",
-        "label": "3D Asset Standard"
-      },
-      {
         "id": "urn:ngm:class:rendering-pipeline",
         "label": "Rendering Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:nvidia-omniverse",
+        "label": "NVIDIA Omniverse"
+      },
+      {
+        "id": "urn:ngm:class:realitykit",
+        "label": "RealityKit"
       }
     ]
   },

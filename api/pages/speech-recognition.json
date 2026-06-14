@@ -5,23 +5,36 @@
   "public": true,
   "classIri": "urn:ngm:class:speech-recognition",
   "domain": "artificial-intelligence",
-  "definition": "Speech Recognition is the AI task of transcribing spoken audio into text, enabling voice-driven interfaces, accessibility tools, and multimodal systems. Modern systems rely on deep neural architectures, including transformers with attention mechanisms, trained on large corpora of labelled audio data to achieve near-human accuracy across diverse speakers and acoustic conditions.",
+  "definition": "Speech Recognition (also called Automatic Speech Recognition, ASR) is the computational task of converting spoken acoustic signals into a textual representation, enabling machines to interpret and act on human voice input. Modern systems use end-to-end deep learning architectures \u2014 principally transformer-based encoder-decoder models such as Wav2Vec 2.0 and Whisper \u2014 trained on thousands of hours of labelled audio to achieve near-human word-error rates across diverse speakers, languages, and acoustic environments. Key technical challenges include robustness to background noise, speaker variability, dialectal and accent diversity, and code-switching; deployment challenges include latency constraints for real-time streaming, on-device inference under power and memory limits, and domain adaptation for specialised vocabularies such as clinical or legal terminology.",
   "subClassOf": [
-    {
-      "id": "urn:ngm:class:ai-application",
-      "label": "AI Application"
-    },
     {
       "id": "urn:ngm:class:natural-language-processing",
       "label": "Natural Language Processing"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "mature",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:acoustic-model",
+        "label": "Acoustic Model"
+      },
+      {
+        "id": "urn:ngm:class:language-model",
+        "label": "Language Model"
+      },
+      {
+        "id": "urn:ngm:class:audio-signal-processing",
+        "label": "Audio Signal Processing"
+      },
+      {
+        "id": "urn:ngm:class:feature-extraction",
+        "label": "Feature Extraction"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:language-translation",
@@ -30,12 +43,59 @@
       {
         "id": "urn:ngm:class:question-answering",
         "label": "Question Answering"
+      },
+      {
+        "id": "urn:ngm:class:voice-user-interface",
+        "label": "Voice User Interface"
+      },
+      {
+        "id": "urn:ngm:class:virtual-assistant",
+        "label": "Virtual Assistant"
+      },
+      {
+        "id": "urn:ngm:class:real-time-captioning",
+        "label": "Real-Time Captioning"
+      },
+      {
+        "id": "urn:ngm:class:clinical-documentation",
+        "label": "Clinical Documentation"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:labelled-training-data",
+        "label": "Labelled Training Data"
+      },
+      {
+        "id": "urn:ngm:class:model-compression",
+        "label": "Model Compression"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:speaker-recognition",
+        "label": "Speaker Recognition"
+      },
+      {
+        "id": "urn:ngm:class:voice-activity-detection",
+        "label": "Voice Activity Detection"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:voice-user-interface",
+        "label": "Voice User Interface"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-interaction",
+        "label": "Multimodal Interaction"
+      },
+      {
+        "id": "urn:ngm:class:accessibility-technology",
+        "label": "Accessibility Technology"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:transformer",
@@ -44,15 +104,52 @@
       {
         "id": "urn:ngm:class:neural-network",
         "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:connectionist-temporal-classification",
+        "label": "Connectionist Temporal Classification"
       }
     ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:nist",
+        "label": "NIST"
+      },
+      {
+        "id": "urn:ngm:class:w3c-web-speech-api",
+        "label": "W3C Web Speech API"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
         "id": "urn:ngm:class:sentiment-analysis",
         "label": "Sentiment Analysis"
+      },
+      {
+        "id": "urn:ngm:class:speaker-diarisation",
+        "label": "Speaker Diarisation"
+      },
+      {
+        "id": "urn:ngm:class:text-to-speech",
+        "label": "Text-to-Speech"
+      },
+      {
+        "id": "urn:ngm:class:speech-synthesis",
+        "label": "Speech Synthesis"
+      },
+      {
+        "id": "urn:ngm:class:named-entity-recognition",
+        "label": "Named Entity Recognition"
       }
     ]
   },

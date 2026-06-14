@@ -5,33 +5,102 @@
   "public": true,
   "classIri": "urn:ngm:class:ether-cat",
   "domain": "robotics",
-  "definition": "EtherCAT (Ethernet for Control Automation Technology) is an open, IEC 61158-standardised real-time Ethernet fieldbus protocol developed by Beckhoff Automation, designed for deterministic, high-bandwidth communication between industrial master controllers and distributed slave devices such as servo drives, I/O modules, and encoders. Its distinctive on-the-fly processing architecture allows each slave node to read addressed data and insert its response while the Ethernet frame propagates through the network, achieving sub-microsecond synchronisation across distributed axes with minimal wiring complexity. EtherCAT is governed by the EtherCAT Technology Group (ETG) and is widely deployed in robotics, CNC machining, and semiconductor manufacturing.",
+  "definition": "EtherCAT (Ethernet for Control Automation Technology) is an open, IEC 61158-standardised real-time Ethernet fieldbus protocol developed by Beckhoff Automation, enabling deterministic, high-bandwidth communication between industrial master controllers and distributed slave devices such as servo drives, I/O modules, and encoders. Its on-the-fly processing architecture allows each slave node to extract addressed data from and insert its response into a propagating Ethernet frame, achieving sub-microsecond synchronisation across large distributed networks. Governed by the EtherCAT Technology Group (ETG), the standard is widely deployed in industrial robotics, CNC machining, semiconductor manufacturing, and laboratory automation, with the Safety over EtherCAT (FSoE) extension providing IEC 61784-3-compliant functional safety over the same physical layer.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:robo-actuation-and-control",
-      "label": "Robo Actuation and Control"
+      "id": "urn:ngm:class:fieldbus",
+      "label": "Fieldbus"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.73,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:distributed-clocks",
+        "label": "Distributed Clocks"
+      },
+      {
+        "id": "urn:ngm:class:safety-over-ethercat",
+        "label": "Safety over EtherCAT"
+      },
+      {
+        "id": "urn:ngm:class:ethercat-automation-protocol",
+        "label": "EtherCAT Automation Protocol"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:ethernet",
+        "label": "Ethernet"
+      },
+      {
+        "id": "urn:ngm:class:ethercat-master",
+        "label": "EtherCAT Master"
+      },
+      {
+        "id": "urn:ngm:class:ethercat-slave-controller",
+        "label": "EtherCAT Slave Controller"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:motion-control",
         "label": "Motion Control"
       },
       {
-        "id": "urn:ngm:class:real-time",
-        "label": "Real Time"
+        "id": "urn:ngm:class:real-time-communication",
+        "label": "Real-Time Communication"
+      },
+      {
+        "id": "urn:ngm:class:distributed-clock-synchronisation",
+        "label": "Distributed Clock Synchronisation"
+      },
+      {
+        "id": "urn:ngm:class:multi-axis-control",
+        "label": "Multi-Axis Control"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:iec-61158",
+        "label": "IEC 61158"
+      },
+      {
+        "id": "urn:ngm:class:iec-61784",
+        "label": "IEC 61784"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:profinet",
+        "label": "PROFINET"
+      },
+      {
+        "id": "urn:ngm:class:ethernetip",
+        "label": "EtherNet/IP"
+      },
+      {
+        "id": "urn:ngm:class:powerlink",
+        "label": "POWERLINK"
+      },
+      {
+        "id": "urn:ngm:class:sercos-iii",
+        "label": "SERCOS III"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:time-sensitive-networking",
+        "label": "Time-Sensitive Networking"
+      },
+      {
+        "id": "urn:ngm:class:industrial-internet-of-things",
+        "label": "Industrial Internet of Things"
+      }
+    ],
     "uses": [],
     "supports": [
       {
@@ -41,14 +110,43 @@
       {
         "id": "urn:ngm:class:servo-motor",
         "label": "Servo Motor"
+      },
+      {
+        "id": "urn:ngm:class:programmable-logic-controller",
+        "label": "Programmable Logic Controller"
+      },
+      {
+        "id": "urn:ngm:class:cnc-machining",
+        "label": "CNC Machining"
       }
     ],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ethercat-technology-group",
+        "label": "EtherCAT Technology Group"
+      },
+      {
+        "id": "urn:ngm:class:iec",
+        "label": "IEC"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
         "id": "urn:ngm:class:industrial-automation",
-        "label": "IndustrialAutomation"
+        "label": "Industrial Automation"
+      },
+      {
+        "id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
+      },
+      {
+        "id": "urn:ngm:class:opc-ua",
+        "label": "OPC-UA"
+      },
+      {
+        "id": "urn:ngm:class:robot-operating-system",
+        "label": "Robot Operating System"
       }
     ]
   },

@@ -1,23 +1,107 @@
 - ### Definition
-  - Predictive Analytics is the practice of extracting information from existing data sets and applying statistical algorithms and machine learning techniques to forecast future outcomes. It combines feature engineering, model training, and evaluation pipelines to generate actionable predictions in domains such as user behaviour, demand forecasting, anomaly detection, and risk assessment. Predictive models are trained on historical data and deployed as AI applications embedded in business intelligence systems and decision-support workflows.
+  - Predictive Analytics is the discipline of extracting patterns from [[Historical Data]] using [[Statistical Modelling]] and [[Machine Learning]] techniques to generate probabilistic forecasts of future events, behaviours, or conditions. It occupies the forward-looking tier of the analytics hierarchy, positioned between [[Descriptive Analytics]] — which characterises what has happened — and [[Prescriptive Analytics]] — which recommends optimised actions. Practitioners build and deploy predictive models through a structured workflow encompassing data ingestion via a [[Data Pipeline]], [[Feature Engineering]], model selection, training, [[Cross Validation]], and operationalised inference, ultimately embedding outputs into [[Business Intelligence]] platforms and [[Decision Support System]] tooling.
+
+- ### Overview
+  - Predictive analytics has moved from a specialist statistical practice to a core organisational capability, driven by the availability of large labelled datasets, commodity [[Cloud Computing]] infrastructure, and mature [[Machine Learning]] frameworks.
+  - The central objective is a calibrated estimate of a future quantity or category: a probability that a transaction is fraudulent, an expected unit demand for next quarter, or a predicted failure time for industrial equipment.
+  - Predictions are inherently probabilistic; well-engineered systems quantify uncertainty (confidence intervals, prediction intervals, Bayesian posteriors) rather than presenting point estimates alone.
+  - The value proposition rests on acting on predictions before an event occurs — intervening to prevent churn, pre-positioning inventory, or scheduling preventive maintenance.
+  - Regulatory and governance pressures (see [[AI Governance]] and [[Explainable AI]]) increasingly require that production predictive models be auditable, fair, and interpretable.
+
+- ### Key Components
+  - #### Data Preparation
+    - [[Data Pipeline]] — ingestion, cleaning, normalisation, and partitioning of raw data into train/validation/test splits.
+    - [[Feature Engineering]] — domain-driven creation of informative input variables; includes encoding, scaling, lag construction, and interaction terms.
+    - [[Exploratory Data Analysis]] — univariate and bivariate profiling, correlation analysis, and distribution inspection prior to modelling.
+    - [[Data Quality]] management — handling missing values, outlier detection, and schema drift in streaming contexts.
+  - #### Modelling Techniques
+    - [[Regression Analysis]] — predicts continuous numerical outcomes; variants include linear, ridge, lasso, polynomial, and Gaussian process regression.
+    - [[Classification]] — predicts discrete class labels; common algorithms include logistic regression, decision trees, [[Support Vector Machine]], and gradient-boosted trees.
+    - [[Ensemble Methods]] — aggregate multiple base learners (random forests, gradient boosting, stacking) to reduce variance and bias.
+    - [[Time Series Analysis]] — models temporal dependencies using ARIMA, exponential smoothing, Prophet, or [[Deep Learning]] sequence models (LSTM, Transformer).
+    - [[Neural Network]] architectures — deep feedforward, convolutional, or recurrent networks for high-dimensional or unstructured inputs.
+  - #### Validation and Evaluation
+    - [[Cross Validation]] — k-fold and time-series-aware walk-forward validation to estimate generalisation error.
+    - Evaluation metrics — precision, recall, F1, AUC-ROC, mean absolute error, root mean squared error, calibration curves.
+    - Baseline comparison — against naive forecasters (persistence, seasonal naïve) and rule-based heuristics.
+  - #### Deployment and Monitoring
+    - [[Model Inference]] — serving predictions at low latency via REST API or embedded batch scoring.
+    - [[Model Monitoring]] — detecting data drift, concept drift, and performance degradation in production via statistical process control.
+    - [[MLOps]] — continuous integration and delivery pipelines for model retraining, versioning, and rollback.
+    - [[Model Explainability]] — SHAP values, LIME, and partial dependence plots to make predictions interpretable to stakeholders.
+
+- ### Applications and Use Cases
+  - #### Finance and Risk
+    - [[Credit Scoring]] — probability of default estimation from applicant features and repayment history.
+    - [[Fraud Detection]] — real-time classification of transactions to identify likely fraud before settlement.
+    - [[Algorithmic Trading]] — price movement forecasting and portfolio risk modelling.
+    - [[Risk Assessment]] — value-at-risk, stress testing, and insurance loss prediction.
+  - #### Healthcare
+    - Clinical outcome prediction — risk stratification for hospital readmission, disease progression, and mortality.
+    - [[Drug Discovery]] — predicting molecular binding affinity and clinical trial success probability.
+    - Epidemiological forecasting — predicting disease incidence for resource allocation.
+  - #### Retail and Supply Chain
+    - [[Demand Forecasting]] — SKU-level sales predictions to optimise procurement and reduce stockouts.
+    - [[Recommendation System]] — collaborative filtering and content-based models driving product and content recommendations.
+    - [[Customer Churn]] prediction — early identification of at-risk customers for targeted retention interventions.
+    - Dynamic pricing — real-time price optimisation based on predicted demand elasticity.
+  - #### Operations and Infrastructure
+    - Predictive maintenance — forecasting equipment failure to schedule maintenance before breakdown.
+    - [[Anomaly Detection]] — identifying outlier readings in sensor streams, network traffic, or log data.
+    - Energy load forecasting — predicting grid demand for capacity planning and renewable integration.
+  - #### Spatial and Metaverse Contexts
+    - Spatial behaviour prediction — forecasting user movement paths, gaze targets, and interaction hotspots in XR environments.
+    - [[Digital Twin]] synchronisation — updating twin state by predicting physical asset behaviour between measurement cycles.
+    - [[Spatial Analytics]] — geospatial models predicting traffic congestion, property values, or disaster propagation.
+
+- ### Relationships
+  - requires:: [[Machine Learning]]
+  - requires:: [[Feature Engineering]]
+  - requires:: [[Historical Data]]
+  - requires:: [[Statistical Modelling]]
+  - uses:: [[Data Pipeline]]
+  - uses:: [[Model Training]]
+  - uses:: [[Cross Validation]]
+  - uses:: [[Regression Analysis]]
+  - uses:: [[Classification]]
+  - uses:: [[Ensemble Methods]]
+  - uses:: [[Time Series Analysis]]
+  - enables:: [[Anomaly Detection]]
+  - enables:: [[Demand Forecasting]]
+  - enables:: [[Risk Assessment]]
+  - enables:: [[Recommendation System]]
+  - enables:: [[Decision Support System]]
+  - partOf:: [[Business Intelligence]]
+  - contrastsWith:: [[Descriptive Analytics]]
+  - contrastsWith:: [[Prescriptive Analytics]]
+  - relatedTo:: [[Exploratory Data Analysis]]
+  - relatedTo:: [[Model Inference]]
+  - relatedTo:: [[Natural Language Processing]]
+  - bridges-to:: [[Spatial Analytics]]
+  - bridges-to:: [[Digital Twin]]
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence/PredictiveAnalytics
   - owl-role:: Concept
 
-- ### Relationships
-  - requires [[Machine Learning Discipline]]
-  - requires [[Feature Engineering]]
-  - uses [[Data Pipeline]]
-  - uses [[Model Training]]
-  - enables [[Anomaly Detection]]
+- ### Standards and Governance Context
+  - [[CRISP-DM]] (Cross-Industry Standard Process for Data Mining) provides a widely adopted lifecycle framework covering business understanding, data understanding, data preparation, modelling, evaluation, and deployment.
+  - [[PMML]] (Predictive Model Markup Language) is an XML-based standard for representing trained predictive models for interchange between tools.
+  - [[ONNX]] (Open Neural Network Exchange) enables model portability across [[Deep Learning]] frameworks.
+  - [[ISO/IEC 22989]] and [[ISO/IEC 23053]] address AI concepts and trustworthy ML, respectively, providing vocabulary and framework for governed predictive model deployment.
+  - The EU [[AI Act]] classifies certain high-risk predictive applications (credit scoring, healthcare risk stratification, employment screening) under mandatory conformity assessment requirements.
+  - [[Fairness in Machine Learning]] frameworks (IBM AI Fairness 360, Aequitas) address bias measurement and mitigation in predictive models used in consequential decisions.
+  - [[Explainable AI]] (XAI) requirements are increasingly mandated for regulated domains; SHAP, LIME, and counterfactual explanation methods are standard tooling.
+  - [[Model Cards]] and [[Datasheets for Datasets]] provide documentation standards supporting transparency and reproducibility.
 
-- ### Content
-  # PredictiveAnalytics
-  Predictive Analytics applies statistical models and machine learning to historical data to forecast future events or trends. Core techniques include regression, classification, ensemble methods, and time-series modelling. The workflow proceeds through data ingestion via a data pipeline, feature engineering to derive informative representations, model training with cross-validation, and deployment as a live inference service. In spatial and metaverse contexts, predictive analytics powers user behaviour prediction, content recommendation, and performance anomaly detection. The discipline bridges exploratory data analysis and operational AI applications, providing the quantitative backbone for decision support systems across healthcare, finance, manufacturing, and entertainment domains.
-
-  ## Sources
+- ### Distinguishing Concepts
+  - [[Descriptive Analytics]] — summarises historical data to answer "what happened?"; no predictive component.
+  - [[Diagnostic Analytics]] — investigates root causes of past events; complementary to predictive analytics but retrospective.
+  - [[Prescriptive Analytics]] — combines predictions with optimisation to recommend actions; builds on predictive analytics output.
+  - [[Causal Inference]] — identifies true cause-effect relationships rather than predictive correlations; important for understanding why predictions hold.
+  - [[Bayesian Inference]] — probabilistic modelling approach that updates beliefs in light of evidence; provides theoretical foundation for uncertainty-aware predictive models.
 
 - ### Provenance
-  - sources::
+  - sources:: CRISP-DM specification; Bishop (2006) Pattern Recognition and Machine Learning; Kuhn & Johnson (2013) Applied Predictive Modeling; ISO/IEC 22989:2022; EU AI Act (2024)
+  - updated:: 2026-06-13
   - migration-date:: 2026-04-26T00:00:00Z

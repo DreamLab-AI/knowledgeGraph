@@ -1,23 +1,87 @@
 - ### Definition
-  - StandardsBody is a concept within the ngm domain.
+  - A **Standards Body** (also called a [[Standards Development Organisation]]) is a formal institution that produces, publishes, and maintains [[Technical Specification]] documents and [[Protocol Specification]] artefacts through structured, multi-stakeholder [[Consensus Process]] procedures. Standards bodies define [[Interoperability]] requirements so that independent implementations can exchange data and behaviour reliably; they also manage [[Intellectual Property Licensing]] regimes (e.g. royalty-free or FRAND) to balance openness with economic sustainability. They contrast sharply with [[De Facto Standard]] setters (e.g. dominant platform vendors) in that their authority derives from documented procedure and broad membership rather than market share. Prominent examples include [[ISO]], [[IEC]], [[IEEE]], [[W3C]], [[IETF]], [[NIST]], [[Khronos Group]], [[Open Geospatial Consortium]], [[3GPP]], and [[ETSI]].
 
-- ### Semantic Classification
-  - owl-class:: infrastructure:StandardsBody
-  - owl-role:: Concept
+- ### Overview
+  - Standards bodies exist because multi-vendor [[Interoperability]] does not emerge naturally from competitive markets — without a neutral coordinating authority, each vendor optimises for its own [[Proprietary Specification]], fragmenting ecosystems and raising switching costs.
+  - By convening industry, academia, and government participants under a shared governance charter, a standards body crystallises accumulated knowledge into a stable, citable [[Open Standard]] that any party may implement.
+  - The output is typically a combination of:
+    - A normative [[Specification Document]] (requirements, semantics, syntax)
+    - An informative rationale or explanatory annex
+    - A [[Conformance Test Suite]] allowing implementors to verify compliance
+    - Reference implementations that demonstrate feasibility
+  - Standards bodies sit within a broader [[Governance Ecosystem]] that also includes [[Regulatory Framework]] instruments (law/regulation) and informal community norms; they sit upstream of [[Certification Scheme]] programmes that verify product conformance.
+
+- ### Key Components
+  - **Membership model** — most bodies admit organisations (corporations, universities, governments) rather than individuals, and tier membership by contribution level (e.g. Sponsor, Contributor, Associate). Fees fund secretariat operations.
+  - **[[Technical Working Group]]** — the engine of standards development; domain-specific sub-groups where engineers draft and debate normative text.
+  - **[[Consensus Process]]** — formal voting or rough-consensus procedures (e.g. IETF's "humming", ISO ballot rounds, W3C Candidate Recommendation transitions) that prevent capture by a single vendor.
+  - **[[Intellectual Property Licensing]] policy** — determines whether patents that are essential to implementing the standard must be licensed royalty-free (RF) or on FRAND terms; this single policy choice determines whether the standard can achieve broad adoption.
+  - **[[Specification Document]] lifecycle** — drafts pass through states (Working Draft → Last Call → Candidate Standard → Published Standard) with mandatory public review at key transitions.
+  - **[[Conformance Test Suite]]** — normative tests that distinguish compliant from non-compliant implementations; without these, wording ambiguity leads to incompatible products even when vendors claim compliance.
+  - **[[Errata]] and revision process** — mechanism for tracking and resolving defects in published standards without invalidating existing implementations.
+
+- ### Mechanisms
+  - **Horizontal vs vertical scope** — horizontal bodies (ISO, IEEE) span many industries; vertical bodies (Khronos, 3GPP, MPEG) focus on a specific technology domain, enabling deeper technical depth and faster iteration.
+  - **Fast-track procedures** — allow a mature specification originating outside the body (e.g. an industry consortium draft) to be adopted with lighter-weight review, compressing the timeline from prototype to ratified standard.
+  - **Liaison relationships** — bodies formally link to one another (e.g. ISO/IEC JTC 1 liaisons with W3C) to prevent conflicting standards and enable cross-referencing, supporting [[Open Governance]] at the ecosystem level.
+  - **Appeal and antitrust safeguards** — procedural appeals and antitrust guidelines (especially in US and EU contexts) protect against anti-competitive information sharing during standards meetings.
+
+- ### Applications and Use Cases
+  - **[[Spatial Computing]]** — [[Khronos Group]] publishes [[OpenXR]], [[Vulkan]], [[glTF]], and [[OpenCL]], enabling cross-device [[Mixed Reality]] and GPU-compute [[Interoperability]] without proprietary lock-in.
+  - **[[Web Platform]]** — [[W3C]] specifies [[WebXR Device API]], [[WebGPU]], [[Web Audio API]], and semantic web standards ([[RDF]], [[OWL]], [[SPARQL]]) that underpin the open web stack.
+  - **Networking and protocols** — [[IETF]] produces RFCs governing [[TCP/IP]], [[HTTP]], [[TLS]], and [[QUIC]]; these form the substrate of every internet application.
+  - **[[AI Safety Framework|AI Safety and Ethics]]** — bodies such as [[NIST]] (AI Risk Management Framework), ISO/IEC JTC 1/SC 42, and [[IEEE]] are developing frameworks for trustworthy [[Artificial Intelligence]], bridging governance and [[Machine Learning]].
+  - **[[Blockchain Protocol|Blockchain and distributed ledgers]]** — ISO TC 307 standardises terminology, smart contracts, and identity schemes; [[W3C]] published [[Decentralised Identifiers]] (DID) and [[Verifiable Credentials]] specifications.
+  - **[[Geospatial Data]]** — [[Open Geospatial Consortium]] defines [[GeoJSON]], OGC API standards, and [[3D Tiles]], enabling interoperable [[Digital Twin]] and [[GIS]] systems.
+  - **Telecommunications** — [[3GPP]] specifies 4G/5G/6G radio and core network standards adopted globally by operators and device manufacturers.
+  - **Manufacturing and safety** — IEC 61508 (functional safety), ISO 26262 (automotive), and ISO/IEC 27001 ([[Information Security]]) provide sector-specific assurance frameworks.
+  - **[[Supply Chain]] and trade** — GS1 (barcodes, RFID, EDI) and ISO 28000 standardise logistics identifiers and security management, underpinning global [[Supply Chain]] visibility.
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - hasPart:: [[Technical Working Group]]
+  - hasPart:: [[Conformance Test Suite]]
+  - hasPart:: [[Specification Document]]
+  - partOf:: [[Governance Ecosystem]]
+  - partOf:: [[Regulatory Framework]]
+  - requires:: [[Consensus Process]]
+  - requires:: [[Intellectual Property Licensing]]
+  - enables:: [[Interoperability]]
+  - enables:: [[Open Standard]]
+  - enables:: [[Vendor Neutrality]]
+  - dependsOn:: [[Stakeholder Participation]]
+  - dependsOn:: [[Technical Expertise]]
+  - implements:: [[Open Governance]]
+  - supports:: [[Protocol Specification]]
+  - supports:: [[Data Format]]
+  - supports:: [[API Specification]]
+  - contrastsWith:: [[De Facto Standard]]
+  - contrastsWith:: [[Proprietary Specification]]
+  - bridgesTo:: [[AI Safety Framework]]
+  - bridgesTo:: [[Spatial Computing Standard]]
+  - bridgesTo:: [[Blockchain Protocol]]
+  - relatedTo:: [[Policy Framework]]
+  - relatedTo:: [[Certification Scheme]]
+  - relatedTo:: [[Industry Consortium]]
 
-- ### Content
-  # StandardsBody
-  Standards Bodies are formal organizations developing, maintaining, and promulgating technical specifications ensuring interoperability, consistency, and quality across Metaverse technologies through consensus-based processes. Major organizations include Khronos Group managing graphics and compute standards (OpenGL, Vulkan, glTF, OpenXR) with open membership and royalty-free licensing, W3C (World Wide Web Consortium) developing web standards (WebXR, Web Audio) through working groups, ISO (International Organization for Standardization) creating international standards across industries including ISO/IEC standards for 3D graphics, IEEE (Institute of Electrical and Electronics Engineers) publishing standards for networking, virtual environments, and haptics, and MPEG (Moving Picture Experts Group) defining media codecs and streaming protocols. Standards development involves requirement gathering from stakeholders, draft specification authoring by technical experts, public review periods for comment, conformance test suite development verifying implementations, and ongoing maintenance addressing errata and extensions. Benefits include reduced vendor lock-in enabling multi-vendor ecosystems, accelerated innovation through shared foundations, long-term content preservation through documented formats, and consumer protection through tested interoperability. Challenges involve balancing innovation speed against standardization process duration, managing intellectual property rights, accommodating diverse stakeholder interests, and ensuring implementation compatibility across platforms.
-  - https://www.khronos.org/ - Khronos Group open standards development
-  - https://www.w3.org/ - World Wide Web Consortium web standards
-  - https://www.iso.org/ - International Organization for Standardization
-  - https://www.ieee.org/ - IEEE Standards Association
-
-  ## Sources
+- ### Standards and Context
+  - **Key international standards bodies**
+    - [[ISO]] (International Organisation for Standardisation) — 167 member countries; publishes ~25,000 active standards across all industries
+    - [[IEC]] (International Electrotechnical Commission) — electrical, electronic, and related technologies; joint ISO/IEC JTC 1 covers [[Information Technology]]
+    - [[IEEE]] (Institute of Electrical and Electronics Engineers) — 802.x networking, 754 floating-point arithmetic, 2030 smart-grid, P2048 [[Extended Reality]]
+    - [[W3C]] (World Wide Web Consortium) — web architecture, [[HTML]], [[CSS]], [[WebXR]], [[Linked Data]], [[Verifiable Credentials]]
+    - [[IETF]] (Internet Engineering Task Force) — open, volunteer-driven; produces RFCs governing all internet protocols
+    - [[NIST]] (National Institute of Standards and Technology) — US federal standards including [[FIPS]], [[SP 800-series]] security standards, [[AI Risk Management Framework]]
+  - **Domain-specific bodies**
+    - [[Khronos Group]] — 3D graphics, GPU compute, [[Mixed Reality]] (OpenXR, Vulkan, glTF, OpenCL, SYCL)
+    - [[MPEG]] — Moving Picture Experts Group (joint ISO/IEC); video codecs (H.264/AVC, H.265/HEVC, H.266/VVC), immersive media
+    - [[Open Geospatial Consortium]] — geospatial [[API Specification]], [[3D Tiles]], OGC API standards
+    - [[3GPP]] — cellular radio access and core network (4G LTE, 5G NR, 6G research)
+    - [[ETSI]] (European Telecommunications Standards Institute) — European telecommunications and NFV/SDN standards
+    - [[OASIS]] — structured information standards including SAML, MQTT, OData, [[STIX/TAXII]] cybersecurity
+    - [[GS1]] — global supply-chain identifiers (GTIN barcodes, RFID EPC, EDI messages)
+  - **Process standards** — ISO/IEC Directives govern how ISO and IEC committees develop standards; the W3C Process Document governs W3C Working Groups; IETF processes are documented in BCP 9 (RFC 2026) and BCP 10.
+  - **Intellectual property regimes** — W3C operates an RF Patent Policy; IETF requires FRAND or RF disclosure; Khronos issues royalty-free licences tied to Adopter membership; IEEE-SA maintains the IEEE-SA Patent Policy covering both RF and FRAND options.
 
 - ### Provenance
-  - sources::
-  - migration-date:: 2026-04-26T00:00:00Z
+  - sources:: ISO, IEC, IEEE, W3C, IETF, NIST, Khronos Group public documentation; established knowledge of standards governance processes
+  - updated:: 2026-06-13

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:monetary-policy",
   "domain": "finance",
-  "definition": "Monetary policy is the set of decisions made by a monetary authority \u2014 traditionally a central bank \u2014 to manage the supply of money, credit conditions, and interest rates in order to achieve macroeconomic objectives such as price stability, full employment, and sustainable growth. In traditional finance it encompasses tools such as open market operations, reserve requirements, and benchmark interest-rate setting. In decentralised systems and blockchain protocols, monetary policy is often encoded algorithmically into protocol rules that govern token emission schedules, inflation rates, halving events, and burn mechanisms, removing discretionary human intervention.",
+  "definition": "Monetary policy is the set of decisions made by a monetary authority \u2014 traditionally a central bank \u2014 to manage the supply of money, credit conditions, and interest rates in order to achieve macroeconomic objectives such as price stability, full employment, and sustainable economic growth. In traditional finance it encompasses tools such as open market operations, reserve requirements, discount-rate setting, and unconventional measures including quantitative easing and forward guidance. In decentralised systems and blockchain protocols, monetary policy is encoded algorithmically into protocol rules that govern token emission schedules, inflation rates, halving events, and burn mechanisms, removing discretionary human intervention and replacing it with transparent, auditable on-chain governance.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:economic-governance",
@@ -13,12 +13,46 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
-  "maturity": "established",
+  "qualityScore": 0.74,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:open-market-operations",
+        "label": "Open Market Operations"
+      },
+      {
+        "id": "urn:ngm:class:reserve-requirements",
+        "label": "Reserve Requirements"
+      },
+      {
+        "id": "urn:ngm:class:interest-rate-policy",
+        "label": "Interest Rate Policy"
+      },
+      {
+        "id": "urn:ngm:class:quantitative-easing",
+        "label": "Quantitative Easing"
+      },
+      {
+        "id": "urn:ngm:class:forward-guidance",
+        "label": "Forward Guidance"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:central-bank",
+        "label": "Central Bank"
+      },
+      {
+        "id": "urn:ngm:class:monetary-authority",
+        "label": "Monetary Authority"
+      }
+    ],
     "enables": [
+      {
+        "id": "urn:ngm:class:inflation-control",
+        "label": "Inflation Control"
+      },
       {
         "id": "urn:ngm:class:stablecoin",
         "label": "Stablecoin"
@@ -26,12 +60,43 @@
       {
         "id": "urn:ngm:class:central-bank-digital-currency",
         "label": "Central Bank Digital Currency"
+      },
+      {
+        "id": "urn:ngm:class:price-stability",
+        "label": "Price Stability"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:economics",
+        "label": "Economics"
+      },
+      {
+        "id": "urn:ngm:class:macroeconomics",
+        "label": "Macroeconomics"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:fiscal-policy",
+        "label": "Fiscal Policy"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-monetary-policy",
+        "label": "Algorithmic Monetary Policy"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:on-chain-governance",
+        "label": "On-Chain Governance"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:tokenomics",
@@ -40,28 +105,49 @@
       {
         "id": "urn:ngm:class:economic-mechanism",
         "label": "Economic Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:inflation-targeting",
+        "label": "Inflation Targeting"
       }
     ],
     "supports": [
       {
         "id": "urn:ngm:class:monetary-policy-transmission",
         "label": "Monetary Policy Transmission"
+      },
+      {
+        "id": "urn:ngm:class:financial-stability",
+        "label": "Financial Stability"
+      },
+      {
+        "id": "urn:ngm:class:full-employment",
+        "label": "Full Employment"
       }
     ],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:bank-for-international-settlements",
+        "label": "Bank for International Settlements"
+      },
+      {
+        "id": "urn:ngm:class:international-monetary-fund",
+        "label": "International Monetary Fund"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:central-bank",
-        "label": "Central Bank"
+        "id": "urn:ngm:class:exchange-rate-policy",
+        "label": "Exchange Rate Policy"
       },
       {
-        "id": "urn:ngm:class:inflation-control",
-        "label": "Inflation Control"
+        "id": "urn:ngm:class:banking-regulation",
+        "label": "Banking Regulation"
       },
       {
-        "id": "urn:ngm:class:economics",
-        "label": "Economics"
+        "id": "urn:ngm:class:defi-protocol",
+        "label": "DeFi Protocol"
       }
     ]
   },

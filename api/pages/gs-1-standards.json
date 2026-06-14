@@ -4,8 +4,8 @@
   "slug": "gs-1-standards",
   "public": true,
   "classIri": "urn:ngm:class:gs-1-standards",
-  "domain": "metaverse",
-  "definition": "GS1 standards are a global system of identification keys, barcodes and data formats that uniquely identify products, locations and assets across supply chains.",
+  "domain": "standards",
+  "definition": "GS1 Standards constitute a globally adopted, open framework of identification keys, data carriers (barcodes and RFID tags), and messaging formats that uniquely and unambiguously identify physical and digital entities \u2014 products, logistics units, locations, assets, and services \u2014 across entire supply chain ecosystems. Governed by GS1, a neutral non-profit organisation with national member organisations in over 115 countries, the standards define how identifiers are structured (e.g. GTIN, GLN, SSCC), how they are encoded for machine reading (EAN/UPC, GS1-128, QR, DataMatrix, EPC/RFID), and how master and transactional data are shared between trading partners via EDI and web services. GS1 Standards form the interoperability backbone of global retail, healthcare, logistics, foodservice, and increasingly digital product passport and IoT applications.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:standards",
@@ -13,31 +13,143 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
-  "maturity": "established",
+  "qualityScore": 0.76,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:global-trade-item-number",
+        "label": "Global Trade Item Number"
+      },
+      {
+        "id": "urn:ngm:class:global-location-number",
+        "label": "Global Location Number"
+      },
+      {
+        "id": "urn:ngm:class:serial-shipping-container-code",
+        "label": "Serial Shipping Container Code"
+      },
+      {
+        "id": "urn:ngm:class:electronic-product-code",
+        "label": "Electronic Product Code"
+      },
+      {
+        "id": "urn:ngm:class:gs1-digital-link",
+        "label": "GS1 Digital Link"
+      },
+      {
+        "id": "urn:ngm:class:ean-barcode",
+        "label": "EAN Barcode"
+      }
+    ],
     "requires": [
       {
-        "id": "urn:ngm:class:standards",
-        "label": "Standards"
+        "id": "urn:ngm:class:open-standards",
+        "label": "Open Standards"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:supply-chain",
         "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:digital-product-passport",
+        "label": "Digital Product Passport"
+      },
+      {
+        "id": "urn:ngm:class:product-traceability",
+        "label": "Product Traceability"
+      },
+      {
+        "id": "urn:ngm:class:inventory-management",
+        "label": "Inventory Management"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:electronic-data-interchange",
+        "label": "Electronic Data Interchange"
+      },
+      {
+        "id": "urn:ngm:class:epcis",
+        "label": "EPCIS"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:proprietary-identification",
+        "label": "Proprietary Identification"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      },
+      {
+        "id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
+      },
+      {
+        "id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:barcode",
+        "label": "Barcode"
+      },
+      {
+        "id": "urn:ngm:class:rfid",
+        "label": "RFID"
+      },
+      {
+        "id": "urn:ngm:class:qr-code",
+        "label": "QR Code"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:gs1-organisation",
+        "label": "GS1 Organisation"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:iso-standards",
+        "label": "ISO Standards"
+      },
+      {
+        "id": "urn:ngm:class:product-master-data",
+        "label": "Product Master Data"
+      },
+      {
+        "id": "urn:ngm:class:data-synchronisation",
+        "label": "Data Synchronisation"
+      }
+    ]
   },
   "wikilinks": [
     {

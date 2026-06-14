@@ -1,14 +1,72 @@
 - ### Definition
-  - A [[Head-Mounted Display]] (HMD) is a wearable device that positions display panels in front of the user's eyes to deliver [[Virtual Reality]], [[Augmented Reality]], or [[Mixed Reality]] experiences, incorporating head-orientation tracking, optical systems, and increasingly [[Eye Tracking]] for [[Foveated Rendering]] to optimise the compute budget by rendering only the gaze region at full resolution.
+  - A [[Head-Mounted Display]] (HMD) is a wearable optoelectronic device that positions display panels or projectors directly in front of the user's eyes to deliver immersive visual environments spanning [[Virtual Reality]], [[Augmented Reality]], and [[Mixed Reality]]. The device couples a near-focal-plane display with a dedicated [[Optical System]] — Fresnel lenses, pancake optics, or diffractive [[Waveguide]] elements — and integrates [[Inertial Measurement Unit]] sensors with visual inside-out tracking cameras to compute head pose in real time, enabling the rendered scene to remain perceptually stable relative to the physical world. HMDs constitute the primary perceptual interface for [[Spatial Computing]] and are the foundational hardware form factor for the [[Extended Reality (XR)]] ecosystem.
+
+- ### Overview
+  - Head-mounted displays occupy a unique position in the human–computer interaction landscape: they replace or augment the user's entire visual field, creating a sense of presence unavailable on conventional flat screens. Where a monitor presents a window into a 3D scene, an HMD wraps the scene around the observer, aligning rendered perspective with tracked head movement at low enough latency — typically below 20 ms motion-to-photon — that the visual system accepts the synthetic image as spatially coherent.
+  - The device category encompasses a broad spectrum of form factors. At one extreme, fully sealed [[Virtual Reality]] headsets (e.g., Meta Quest series) occlude all ambient light and deliver binocular stereoscopic rendering to create wholly synthetic environments for gaming, training, and socialisation. At the other, optical see-through [[Augmented Reality]] glasses (e.g., Microsoft HoloLens, Magic Leap) superimpose holographic imagery onto the direct view of the real world via photonic waveguides, keeping the user grounded in physical space. Between these poles, video-passthrough [[Mixed Reality]] devices (e.g., Apple Vision Pro) use high-resolution outward-facing cameras to reconstruct the environment digitally, then composite virtual content with the camera feed at frame rate — achieving AR quality with a sealed enclosure compatible with high-quality optics.
+  - Why HMDs matter: they collapse the distance between the user and information by placing it in the same perceptual space as the physical world, enabling embodied interaction patterns (gaze, gesture, spatial reach) that are fundamentally more expressive than mouse-and-keyboard interfaces. This has catalysed adoption across industrial training, remote expert assistance, medical simulation, architectural review, and consumer entertainment.
+
+- ### Key Components
+  - **Display subsystem** — micro-OLED, LCD, or micro-LED panels delivering high pixel density (>30 pixels-per-degree), high refresh rate (90–120 Hz+), and low persistence to reduce motion artefacts. [[Display Technology]] choices directly affect weight, power draw, and image quality.
+  - **Optical train** — lenses or [[Waveguide]] elements that project the display into the user's eye with minimal geometric distortion, chromatic aberration, and god-ray artefacts. Pancake lens stacks have enabled significantly thinner and lighter headsets compared with older Fresnel designs. Diffractive [[Waveguide]] optics are preferred in optical see-through AR for their ability to redirect light while remaining transparent.
+  - **Tracking subsystem** — [[Inside-Out Tracking]] uses outward-facing cameras and an [[Inertial Measurement Unit]] to run [[Simultaneous Localisation and Mapping]] algorithms, building a persistent spatial map of the environment and localising the headset within it. Six-degrees-of-freedom (6DoF) pose estimation enables positional tracking as well as rotational, allowing room-scale movement.
+  - **[[Eye Tracking]]** — infrared emitter and camera arrays inside the optical enclosure capture corneal reflection patterns to infer gaze direction at sub-degree accuracy. Gaze data feeds [[Foveated Rendering]] pipelines that concentrate GPU resources at the fixation point, and supports social presence via avatar eye animation and implicit intent detection.
+  - **[[Passthrough Camera]]** — outward-facing stereo cameras supporting environment reconstruction for [[Mixed Reality]], plane and mesh detection, QR/marker recognition, and real-time occupancy mapping. In video-passthrough headsets these cameras must deliver sufficient resolution and colour fidelity to substitute for direct vision without inducing discomfort.
+  - **Compute and connectivity** — standalone HMDs integrate a system-on-chip (e.g., Qualcomm Snapdragon XR series) handling tracking, rendering, and OS workloads. Tethered headsets offload rendering to a desktop [[GPU]]. [[Wireless Connectivity]] (Wi-Fi 6E, 5G mmWave) enables PC-class rendering via air-link streaming at low latency.
+  - **Audio** — integrated speakers and microphones, often delivering [[Spatial Audio]] via head-related transfer function (HRTF) processing to simulate directional sound that reinforces the sense of presence.
+  - **Input modalities** — 6DoF tracked controllers for hand-held interaction, [[Hand Tracking]] via cameras for gesture-based input, voice commands, and emerging neural interface research for sub-muscular intent detection.
+
+- ### Applications and Use Cases
+  - **Consumer gaming and entertainment** — the dominant revenue segment. Games built natively for 6DoF HMDs provide embodied gameplay unavailable on flat displays: physical dodging, precise physical reach, and full-body locomotion metaphors.
+  - **Professional training and simulation** — HMDs replicate high-risk or costly real-world scenarios for military, aviation, firefighting, surgical, and emergency-response training. Repetitions in VR are cheap and safe; trainees can practice edge-case scenarios that rarely occur in the field. [[Digital Twin]] environments synchronised with real facilities further close the sim-to-real gap.
+  - **Remote expert assistance** — AR headsets (e.g., RealWear, HoloLens) allow a remote specialist to see through a field worker's eyes and annotate the physical environment with digital overlays, reducing travel costs and error rates in maintenance and inspection workflows.
+  - **Medical imaging and surgical planning** — volumetric DICOM data viewed in 3D on an HMD allows surgeons to navigate patient anatomy in full scale before entering the operating theatre. Intraoperative AR overlays patient imaging onto the surgical field.
+  - **Architectural and design review** — 1:1 scale walkthroughs of unbuilt structures enable stakeholder feedback earlier in the design lifecycle, identifying spatial and ergonomic issues that are invisible in 2D drawings.
+  - **Education and science** — immersive simulations of molecular structures, historical sites, and dangerous chemical reactions deliver experiential learning not replicable in a classroom.
+  - **[[Immersive Collaboration]] and the [[Metaverse]]** — social VR platforms (VRChat, Horizon Worlds, Meta Horizon) instantiate persistent shared virtual spaces accessible via HMD, forming the experiential layer of the emerging [[Metaverse]].
+  - **Industrial AR and [[Digital Twin]]** — factory-floor AR headsets overlay CAD models, work instructions, and live sensor data from [[Digital Twin]] platforms onto physical machinery, supporting assembly, quality inspection, and predictive maintenance.
+  - **[[AI Inference]] at the edge** — HMDs increasingly run on-device [[AI Inference]] for scene understanding, object recognition, hand and body pose estimation, and natural language interaction, enabling context-aware experiences without cloud round-trips.
 
 - ### Relationships
-  - [[Head-Mounted Display]] is a specialisation of [[Display Hardware]] worn on the body. It is the primary hardware platform for [[Extended Reality (XR)]] and the physical instantiation referred to by the broader [[XR Headset]] category. HMDs enable [[Virtual Reality]] by occluding the real world, [[Augmented Reality]] via optical see-through waveguides, and [[Mixed Reality]] through high-quality video passthrough with scene understanding. [[Eye Tracking]] sensors feed into [[Foveated Rendering]] pipelines that concentrate GPU resources where the user is actually looking. [[Haptic Feedback]] peripherals (controllers, gloves) complement the visual output.
+  - partOf:: [[Extended Reality (XR)]]
+  - partOf:: [[Spatial Computing]]
+  - enables:: [[Virtual Reality]]
+  - enables:: [[Augmented Reality]]
+  - enables:: [[Mixed Reality]]
+  - enables:: [[Immersive Collaboration]]
+  - enables:: [[Spatial Audio]]
+  - uses:: [[Foveated Rendering]]
+  - uses:: [[Eye Tracking]]
+  - uses:: [[Haptic Feedback]]
+  - uses:: [[Hand Tracking]]
+  - uses:: [[Inside-Out Tracking]]
+  - hasPart:: [[Optical System]]
+  - hasPart:: [[Inertial Measurement Unit]]
+  - hasPart:: [[Passthrough Camera]]
+  - requires:: [[Display Technology]]
+  - requires:: [[Simultaneous Localisation and Mapping]]
+  - requires:: [[Rendering Pipeline]]
+  - dependsOn:: [[GPU]]
+  - dependsOn:: [[Wireless Connectivity]]
+  - standardizedBy:: [[OpenXR]]
+  - standardizedBy:: [[WebXR]]
+  - contrastsWith:: [[Cave Automatic Virtual Environment]]
+  - contrastsWith:: [[Flat Panel Display]]
+  - bridges-to:: [[Digital Twin]]
+  - bridges-to:: [[AI Inference]]
+  - bridges-to:: [[Metaverse]]
 
-- ### Content
-  - The head-mounted display concept was first realised by Ivan Sutherland's "Sword of Damocles" in 1968 — a room-sized computer suspension system that rendered simple wireframe graphics — and was refined through military flight simulators and research laboratories during the 1970s–80s. Consumer interest peaked briefly in the early 1990s with products like the Nintendo Virtual Boy and Virtuality arcade systems, but poor resolution, high latency, and prohibitive cost suppressed the market for two decades. The modern HMD era began with the Oculus Rift DK1 crowdfunding campaign in 2012, which demonstrated that consumer-grade HMDs were achievable with mobile display and MEMS gyroscope components.
+- ### Standards and Context
+  - **[[OpenXR]]** — Khronos Group open standard (ratified 1.0 in 2019) providing a portable API for HMD runtimes and rendering engines. Abstracts hardware differences across Meta, Valve, Microsoft, Varjo, and other vendors so applications target a single API surface. Widely adopted in Unreal Engine, Unity, and native applications.
+  - **[[WebXR]]** — W3C specification enabling browser-based XR experiences via JavaScript, allowing HMD access through the web platform without native application installation. Implemented in Chrome and Firefox with varying device support tiers.
+  - **ITU-T SG16** and **IEEE XR standards** cover HMD ergonomics, latency requirements, and field-of-view definitions for interoperability assessments.
+  - **Display Measurement** — the Video Electronics Standards Association (VESA) DisplayHDR and related specs are being adapted to characterise micro-OLED HMD displays; peak luminance, contrast ratio, and colour gamut metrics matter differently in a near-eye context than in desktop displays.
+  - **Safety and ergonomics** — CE and FCC certification requirements govern electromagnetic emissions; ergonomic guidance from ISO and ANSI covers recommended session durations, inter-pupillary distance (IPD) adjustment ranges, and discomfort thresholds.
+  - **Platform ecosystems** — Meta (Quest / Horizon OS), Apple (visionOS), Microsoft (Windows Mixed Reality / HoloLens), Valve (SteamVR), ByteDance (PICO), and Sony (PlayStation VR2) each maintain proprietary SDKs layered atop [[OpenXR]], creating a competitive but interoperable landscape.
 
-  - HMD design requires careful engineering across optical, mechanical, and computational domains simultaneously. The optical system must create a wide field of view — typically 90-120 degrees horizontal — from a near-focal-plane display, requiring pancake lenses or diffractive waveguides that introduce geometric distortion and chromatic aberration that must be corrected in software. Inside-out tracking systems use cameras to build a map of the environment and track the headset's position and orientation within it (SLAM), eliminating the need for external base stations. Displays demand high pixel density (>30 PPD), high refresh rates (>90 Hz), and low persistence (the fraction of time each pixel is illuminated) to minimise motion sickness.
+- ### Historical Context
+  - The concept originates with Ivan Sutherland's "Sword of Damocles" (1968), the first HMD connected to a computer-generated graphics system. Military flight simulators at Evans & Sutherland and NASA's VIEW system refined tracking and optics through the 1970s–80s. Consumer attempts in the 1990s — Nintendo Virtual Boy, VPL Research, Virtuality Group arcades — were undermined by inadequate display resolution, high latency, and prohibitive cost. The modern era began with the Oculus Rift DK1 (2012), which leveraged commodity mobile OLED panels and MEMS gyroscopes to achieve viable latency at consumer price points. Subsequent generations introduced positional 6DoF tracking (Rift CV1, 2016), standalone compute (Oculus Go, 2018; Quest, 2019), eye tracking for [[Foveated Rendering]] (Varjo, PlayStation VR2), and fully integrated spatial computing platforms (Apple Vision Pro, 2024).
 
-  - The significance of HMDs extends across gaming, professional training simulation, remote collaboration, medical imaging, architectural visualisation, and manufacturing assistance. Industrial AR applications where workers overlay digital information on physical equipment have demonstrated productivity gains of 25-40% in assembly and maintenance tasks. Medical training in VR provides safe, repeatable practice for surgical and emergency procedures without risk to patients.
-
-  - Between 2024 and 2025 the market has been defined by the Meta Quest 3 and Apple Vision Pro, which represent the mass-market standalone and premium spatial computing form factors respectively. Micro-OLED displays enable thinner optical stacks for waveguide-based AR glasses; passthrough video quality has improved sufficiently that dedicated VR displays are becoming optional. Neuromorphic event cameras for ultra-low-latency tracking, and AI-generated foveated content that adapts to gaze in real time, represent the active research frontiers for the next generation of devices.
+- ### Provenance
+  - sources:: Established knowledge of HMD hardware, optics, tracking systems, and XR ecosystem as of training cutoff; Khronos OpenXR 1.0 specification; W3C WebXR Device API specification; IEEE and ITU-T XR standards literature.
+  - updated:: 2026-06-13

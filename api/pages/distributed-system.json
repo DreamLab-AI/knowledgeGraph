@@ -4,17 +4,17 @@
   "slug": "distributed-system",
   "public": true,
   "classIri": "urn:ngm:class:distributed-system",
-  "domain": "infrastructure",
-  "definition": "A Distributed System is a collection of autonomous computing nodes that communicate over a network and coordinate their actions to appear as a single coherent system to end users. Key properties include decentralisation (no single point of failure), fault tolerance via consensus protocols, and eventual consistency governed by CAP theorem trade-offs. Blockchain networks, microservices architectures, and distributed databases are canonical instantiations.",
+  "domain": "distributed-systems",
+  "definition": "A distributed system is a collection of autonomous computing nodes interconnected by a network, coordinating their actions through message passing to appear as a single coherent system to end users or applications. The architecture is governed by fundamental trade-offs formalised in the CAP theorem \u2014 a system can guarantee at most two of consistency, availability, and partition tolerance simultaneously. Correctness in the presence of node failures and malicious actors is addressed by Byzantine Fault Tolerance protocols and consensus mechanisms such as Paxos, Raft, and Practical Byzantine Fault Tolerance. Canonical instantiations span peer-to-peer networks, blockchain ledgers, microservices architectures, distributed databases, and large-scale cloud infrastructure.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:infra-computing-and-cloud",
-      "label": "Computing and Cloud"
+      "id": "urn:ngm:class:computing-system",
+      "label": "Computing System"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "emerging",
+  "qualityScore": 0.72,
+  "maturity": "mature",
   "relationships": {
     "hasPart": [
       {
@@ -22,18 +22,38 @@
         "label": "Consensus Mechanism"
       },
       {
-        "id": "urn:ngm:class:blockchain-network",
-        "label": "Blockchain Network"
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      },
+      {
+        "id": "urn:ngm:class:message-passing",
+        "label": "Message Passing"
+      },
+      {
+        "id": "urn:ngm:class:replication",
+        "label": "Replication"
       }
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:cryptographic-hash",
-        "label": "Cryptographic Hash"
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
       },
       {
         "id": "urn:ngm:class:data-replication",
         "label": "Data Replication"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash",
+        "label": "Cryptographic Hash"
       }
     ],
     "enables": [
@@ -42,19 +62,88 @@
         "label": "Blockchain"
       },
       {
-        "id": "urn:ngm:class:distributed-ledger",
-        "label": "Distributed Ledger"
+        "id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      },
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:distributed-database",
+        "label": "Distributed Database"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:cap-theorem",
+        "label": "CAP Theorem"
+      },
+      {
+        "id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:eventual-consistency",
+        "label": "Eventual Consistency"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:centralised-system",
+        "label": "Centralised System"
+      },
+      {
+        "id": "urn:ngm:class:monolithic-architecture",
+        "label": "Monolithic Architecture"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:gossip-protocol",
+        "label": "Gossip Protocol"
+      },
+      {
+        "id": "urn:ngm:class:distributed-hash-table",
+        "label": "Distributed Hash Table"
+      },
+      {
+        "id": "urn:ngm:class:load-balancing",
+        "label": "Load Balancing"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:sharding",
+        "label": "Sharding"
+      },
+      {
+        "id": "urn:ngm:class:service-mesh",
+        "label": "Service Mesh"
+      }
+    ]
   },
   "wikilinks": [
     {

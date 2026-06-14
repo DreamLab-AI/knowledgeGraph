@@ -4,7 +4,7 @@
   "slug": "whisper",
   "public": true,
   "classIri": "urn:ngm:class:whisper",
-  "domain": "natural-language-processing",
+  "domain": "ai",
   "definition": "Whisper is an automatic speech recognition model from OpenAI trained on a large multilingual dataset. It transcribes and translates speech across many languages and is released as open source.",
   "subClassOf": [
     {

@@ -4,7 +4,7 @@
   "slug": "graphics-processing",
   "public": true,
   "classIri": "urn:ngm:class:graphics-processing",
-  "domain": "general",
+  "domain": "infrastructure",
   "definition": "Graphics processing is the computation that transforms scene descriptions into rendered images, covering geometry transformation, shading, rasterisation and output to a display.",
   "subClassOf": [
     {

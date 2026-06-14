@@ -4,35 +4,122 @@
   "slug": "manchester",
   "public": true,
   "classIri": "urn:ngm:class:manchester",
-  "domain": "general",
-  "definition": "A major city in North West England and a centre of the Northern Powerhouse, with growing technology, digital, and research sectors.",
+  "domain": "infrastructure",
+  "definition": "Manchester is a major metropolitan city in North West England and the economic centre of the Greater Manchester Combined Authority, encompassing one of the United Kingdom's largest urban technology and digital economy clusters. The city hosts a dense concentration of universities, research institutes, data centres, fintech firms, and AI startups, anchored by institutions such as the University of Manchester and Manchester Metropolitan University. As a founding pillar of the Northern Powerhouse initiative, Manchester serves as a model for post-industrial urban regeneration built on knowledge industries, advanced manufacturing, and distributed digital infrastructure. It is a primary node in the UK's regional connectivity fabric, with major fibre, rail, and aviation links enabling distributed collaboration across the northern city-regions.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:entity",
-      "label": "Entity"
+      "id": "urn:ngm:class:urban-region",
+      "label": "Urban Region"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:greater-manchester-combined-authority",
+        "label": "Greater Manchester Combined Authority"
+      },
+      {
+        "id": "urn:ngm:class:manchester-science-park",
+        "label": "Manchester Science Park"
+      },
+      {
+        "id": "urn:ngm:class:university-of-manchester",
+        "label": "University of Manchester"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:digital-infrastructure",
+        "label": "Digital Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:transport-network",
+        "label": "Transport Network"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:digital-economy",
         "label": "Digital Economy"
+      },
+      {
+        "id": "urn:ngm:class:urban-data-platform",
+        "label": "Urban Data Platform"
+      },
+      {
+        "id": "urn:ngm:class:smart-city",
+        "label": "Smart City"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:london",
+        "label": "London"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-research-cluster",
+        "label": "AI Research Cluster"
+      },
+      {
+        "id": "urn:ngm:class:fintech",
+        "label": "FinTech"
+      },
+      {
+        "id": "urn:ngm:class:data-centre",
+        "label": "Data Centre"
+      }
+    ],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:open-data",
+        "label": "Open Data"
+      },
+      {
+        "id": "urn:ngm:class:regional-connectivity",
+        "label": "Regional Connectivity"
+      }
+    ],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:northern-powerhouse",
+        "label": "Northern Powerhouse"
+      },
+      {
+        "id": "urn:ngm:class:united-kingdom",
+        "label": "United Kingdom"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:leeds",
+        "label": "Leeds"
+      },
+      {
+        "id": "urn:ngm:class:liverpool",
+        "label": "Liverpool"
+      },
+      {
+        "id": "urn:ngm:class:salford",
+        "label": "Salford"
+      },
+      {
+        "id": "urn:ngm:class:graphene",
+        "label": "Graphene"
+      }
+    ]
   },
   "wikilinks": [
     {

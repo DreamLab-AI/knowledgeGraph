@@ -50,8 +50,8 @@ public:: true
   "@id": "urn:ngm:class:entity-resolution",
   "@type": "Class",
   "label": "Entity Resolution",
-  "definition": "The process of determining whether multiple records refer to the same real-world entity and linking or merging them accordingly. It is central to data integration and master data management.",
-  "domain": "data-management",
+  "definition": "Entity resolution is the computational process of determining whether two or more records — potentially from disparate sources, formats, or schemas — refer to the same real-world entity, and then linking, merging, or deduplicating them into a single canonical representation. It encompasses blocking strategies that reduce the candidate comparison space, similarity scoring across attributes, and decision logic (deterministic, probabilistic, or ML-based) that determines match, non-match, or possible-match outcomes. Widely applied in master data management, knowledge graph construction, fraud detection, and census processing, it forms a foundational layer of data integration pipelines that require a consistent, unified view of entities such as persons, organisations, products, or locations.",
+  "domain": "data",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [
@@ -60,25 +60,129 @@ public:: true
       "label": "Data Integration"
     }
   ],
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:record-linkage",
+      "label": "Record Linkage"
+    },
+    {
+      "@id": "urn:ngm:class:deduplication",
+      "label": "Deduplication"
+    },
+    {
+      "@id": "urn:ngm:class:entity-matching",
+      "label": "Entity Matching"
+    }
+  ],
   "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:data-integration",
+        "label": "Data Integration"
+      },
+      {
+        "@id": "urn:ngm:class:master-data-management",
+        "label": "Master Data Management"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:data-quality",
         "label": "Data Quality"
+      },
+      {
+        "@id": "urn:ngm:class:blocking",
+        "label": "Blocking"
+      },
+      {
+        "@id": "urn:ngm:class:string-similarity",
+        "label": "String Similarity"
+      },
+      {
+        "@id": "urn:ngm:class:schema-mapping",
+        "label": "Schema Mapping"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:master-data-management",
         "label": "Master Data Management"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "@id": "urn:ngm:class:fraud-detection",
+        "label": "Fraud Detection"
+      },
+      {
+        "@id": "urn:ngm:class:data-lineage",
+        "label": "Data Lineage"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:probabilistic-matching",
+        "label": "Probabilistic Matching"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:embedding",
+        "label": "Embedding"
+      },
+      {
+        "@id": "urn:ngm:class:graph-neural-network",
+        "label": "Graph Neural Network"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:data-deduplication",
+        "label": "Data Deduplication"
+      },
+      {
+        "@id": "urn:ngm:class:ontology-alignment",
+        "label": "Ontology Alignment"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:named-entity-recognition",
+        "label": "Named Entity Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph-embedding",
+        "label": "Knowledge Graph Embedding"
+      },
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "@id": "urn:ngm:class:identity-resolution",
+        "label": "Identity Resolution"
+      },
+      {
+        "@id": "urn:ngm:class:data-catalog",
+        "label": "Data Catalog"
       }
     ]
   },
-  "quality": 0.6,
+  "quality": 0.74,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-13T00:00:00Z",
+    "inferenceRule": "ManualEnrichment"
   }
 }
 ```
@@ -123,24 +227,108 @@ public:: true
 }
 ```
 
-
 - ### Definition
-  - The process of determining whether multiple records refer to the same real-world entity and linking or merging them accordingly. It is central to data integration and master data management.
+  - Entity resolution is the computational process of identifying, matching, and consolidating records from one or more data sources that describe the same real-world entity — such as a person, organisation, product, or location. It combines [[Blocking]] to reduce the candidate pair space, attribute-level [[String Similarity]] scoring, and decision logic ranging from deterministic rules to [[Probabilistic Matching]] models and [[Machine Learning]] classifiers. The output is a unified, deduplicated representation that is essential for [[Data Integration]], [[Master Data Management]], [[Knowledge Graph]] construction, and analytical accuracy.
 
-- ### Semantic Classification
-  - owl-class:: data-management:EntityResolution
-  - owl-role:: Class
+- ### Overview
+  - Entity resolution (ER) solves the fundamental data problem that the same real-world object is frequently described by multiple, inconsistent records across systems, databases, or datasets. Variations arise from spelling differences, abbreviations, missing fields, transliterations, legacy encoding, and independent data-entry conventions.
+  - The challenge is not simply finding exact duplicates — deterministic deduplication handles that — but resolving *fuzzy* matches where records partially agree and disagreements stem from error or incompleteness rather than genuine distinctness.
+  - ER is distinguished from [[Ontology Alignment]] (which reconciles schemas or vocabularies rather than records) and from [[Data Deduplication]] in storage systems (which removes bit-identical byte sequences). ER operates at the semantic, entity level.
+  - Practical deployments range from small single-table deduplication tasks to billion-record cross-database linkage in national health registers, financial customer databases, and web-scale [[Knowledge Graph]] pipelines.
+
+- ### Key Mechanisms
+  - #### Blocking and Candidate Generation
+    - Naïve pairwise comparison of N records is O(N²), infeasible at scale. Blocking partitions records into buckets where only intra-bucket pairs are compared, dramatically reducing work.
+    - Common blocking keys: first token of name, phonetic code (Soundex, Metaphone), n-gram index, [[MinHash]] / [[Locality-Sensitive Hashing]] (LSH), sorted neighbourhood.
+    - Advanced approaches use [[Embedding]] similarity via approximate nearest-neighbour indices (FAISS, HNSW) to generate semantically similar candidate pairs without rigid key agreement.
+  - #### Similarity Scoring
+    - Each candidate pair is scored across multiple attributes using measures such as:
+      - Edit distance (Levenshtein, Jaro-Winkler) for names and addresses — see [[String Similarity]].
+      - Token-set ratio and cosine similarity for free-text fields.
+      - Exact match for structured identifiers (tax IDs, ISBNs).
+      - Date proximity and range checks for temporal fields.
+    - Attribute scores are combined via weighted sums, learned linear models, or gradient-boosted trees.
+  - #### Decision Logic
+    - **Deterministic / rule-based**: match if a specified set of high-confidence fields agree. Fast and auditable; brittle to data errors.
+    - **Probabilistic (Fellegi-Sunter model)**: records are assigned a log-odds match score based on conditional probabilities of agreement given true match vs. non-match. Produces match / possible-match / non-match tiers.
+    - **[[Machine Learning]]-based**: supervised classifiers (logistic regression, gradient boosting, deep neural networks) trained on labelled pairs. Active learning reduces labelling burden by selecting maximally informative pairs for human review.
+    - **[[Graph Neural Network]] approaches**: represent records and their connections as a graph; propagate similarity signals through the graph structure to resolve connected clusters jointly.
+  - #### Clustering and Merging
+    - Matched pairs are grouped into connected components using union-find or correlation clustering algorithms.
+    - Merge rules specify which attribute value to retain (e.g. most recent, most complete, highest-confidence source).
+    - The canonical merged record — the "golden record" — is written to [[Master Data Management]] systems or [[Knowledge Graph]] stores.
+
+- ### Applications and Use Cases
+  - **[[Master Data Management]]**: consolidating customer, product, or supplier records across enterprise systems (CRM, ERP, e-commerce) into a single authoritative view.
+  - **[[Knowledge Graph]] construction**: linking entities across heterogeneous corpora (e.g. Wikidata, DBpedia, domain databases) to build a unified semantic graph. Used heavily in Google's Knowledge Graph and enterprise AI platforms.
+  - **[[Fraud Detection]]**: connecting seemingly unrelated accounts, transactions, and identities to expose synthetic identity fraud, account takeover patterns, and money-laundering networks.
+  - **Healthcare and clinical research**: linking patient records across hospitals, insurers, and registries without common identifiers, enabling longitudinal care and population health studies.
+  - **Census and official statistics**: national statistical offices use ER to link administrative records and avoid double-counting population members across source datasets.
+  - **[[Named Entity Recognition]] pipelines**: downstream disambiguation step after NER tags surface entity mentions in text; ER links those mentions to entries in a reference [[Knowledge Base]].
+  - **E-commerce catalogues**: matching product listings from multiple sellers or suppliers to the same catalogue item, enabling price comparison and inventory aggregation.
+  - **Law enforcement and intelligence**: deconfliction of person records across agencies; linking aliases and identifying networks of associated individuals.
+  - **Supply chain transparency**: linking supplier, shipment, and product records across trading partners to achieve a unified view for compliance and risk management.
+  - **Financial regulatory reporting**: resolving counterparty identities across trades and institutions, often mandated by regulation (e.g. LEI — Legal Entity Identifier — requirements under MiFID II).
 
 - ### Relationships
-  - is-subclass-of:: [[Data Integration]]
-  - bridges-to:: [[Named Entity Recognition]]
+  - partOf:: [[Data Integration]]
+  - partOf:: [[Master Data Management]]
   - requires:: [[Data Quality]]
+  - requires:: [[Blocking]]
+  - requires:: [[String Similarity]]
+  - requires:: [[Schema Mapping]]
   - enables:: [[Master Data Management]]
+  - enables:: [[Knowledge Graph]]
+  - enables:: [[Fraud Detection]]
+  - enables:: [[Data Lineage]]
+  - uses:: [[Probabilistic Matching]]
+  - uses:: [[Machine Learning]]
+  - uses:: [[Embedding]]
+  - uses:: [[Graph Neural Network]]
+  - contrastsWith:: [[Data Deduplication]]
+  - contrastsWith:: [[Ontology Alignment]]
+  - bridges-to:: [[Named Entity Recognition]]
+  - bridges-to:: [[Knowledge Graph Embedding]]
+  - bridges-to:: [[Federated Learning]]
+  - relatedTo:: [[Data Governance]]
+  - relatedTo:: [[Identity Resolution]]
+  - relatedTo:: [[Data Catalog]]
 
-- ### Content
-  - Entity resolution, also called record linkage or deduplication, identifies records across one or more datasets that describe the same person, organisation, or object despite differences in spelling, format, or completeness.
-  - Techniques range from deterministic rules and probabilistic matching to machine learning models that score candidate pairs. It underpins master data management, fraud detection, and the construction of knowledge graphs.
+- ### Algorithms and Techniques
+  - **Fellegi-Sunter (1969)**: the canonical probabilistic framework; defines m-probability (agreement given match) and u-probability (agreement given non-match) per field; log-odds score determines classification. Still used in official statistics worldwide.
+  - **Expectation-Maximisation (EM) for unsupervised ER**: estimates m and u probabilities without labelled data by iterating between assigning match labels and re-estimating parameters.
+  - **Dedupe (Python library)**: widely used open-source implementation combining active learning with the Fellegi-Sunter model.
+  - **Splink**: scalable probabilistic ER framework (UK Ministry of Justice) using Spark/DuckDB backends; widely adopted in government data linking.
+  - **[[Deep Learning]] matchers**: Ditto (SIGMOD 2021) fine-tunes BERT-based models on serialised record pairs for state-of-the-art accuracy on structured ER benchmarks.
+  - **Graph-based clustering**: correlation clustering, connected components, and Markov clustering applied to the match-graph to produce entity clusters.
+  - **[[Locality-Sensitive Hashing]]**: dimensionality-reduction technique for efficiently finding approximate nearest neighbours in high-dimensional attribute spaces, enabling scalable blocking.
+
+- ### Evaluation Metrics
+  - **Precision**: fraction of declared matches that are true matches. High precision minimises false merges.
+  - **Recall**: fraction of true matches that are declared. High recall minimises missed links.
+  - **F1 / F-measure**: harmonic mean of precision and recall; the standard ER benchmark metric.
+  - **Reduction ratio**: fraction of pairs eliminated by blocking (measures efficiency, not accuracy).
+  - **Pairs Completeness**: fraction of true matches retained as candidates after blocking (blocking recall).
+  - Benchmark datasets: DBLP-ACM, Amazon-Google Products, Fodors-Zagats (restaurant), Febrl (synthetic person records).
+
+- ### Standards and Context
+  - **ISO/IEC 11179** (Metadata Registries): provides a framework for describing data elements consistently, supporting ER across registries.
+  - **Global Legal Entity Identifier (GLEI / LEI — ISO 17442)**: mandatory entity resolution standard in financial services; each legal entity is assigned a unique 20-character LEI by endorsed Local Operating Units (LOUs).
+  - **W3C PROV-O**: provenance ontology used to record which sources contributed to a merged golden record.
+  - **W3C OWL sameAs**: semantic web mechanism for asserting that two URIs describe the same real-world entity — effectively a formal ER assertion in [[Linked Data]] graphs.
+  - **OASIS EDXL** and **HL7 FHIR MPI** (Master Patient Index): healthcare standards that prescribe entity resolution behaviour for patient identity management.
+  - **GDPR / Data Protection**: ER that links personal data across systems must comply with data minimisation and purpose-limitation principles; privacy-preserving ER (e.g. [[Secure Multi-Party Computation]], Bloom filter encoding) is an active research area.
+  - **[[Federated Learning]]** enables ER across organisations without sharing raw records, addressing regulatory constraints in healthcare and finance.
+
+- ### Challenges and Open Problems
+  - **Scalability**: maintaining high accuracy while operating at billions-of-records scale with sub-second latency.
+  - **Schema heterogeneity**: records with radically different schemas require [[Schema Mapping]] before attribute-level comparison is meaningful.
+  - **Non-monotonic updates**: incrementally maintaining entity clusters as new records arrive without full reprocessing.
+  - **Ground truth scarcity**: labelling true matches is expensive; active learning and distant supervision reduce but do not eliminate this burden.
+  - **Privacy-preserving ER**: linking records across organisations without exposing individual-level data; Bloom filter encoding and [[Secure Multi-Party Computation]] are leading approaches.
+  - **Multilingual and cross-script ER**: matching names across languages, scripts, and transliteration schemes (e.g. Arabic → Latin) requires specialised transliteration models and multilingual [[Embedding]] spaces.
+  - **Temporal drift**: entity attributes change over time (name changes, address moves); ER systems must handle versioned records and temporal validity windows.
 
 - ### Provenance
-  - sources::
-  - migration-date:: 2026-05-29T00:00:00Z
+  - sources:: Fellegi & Sunter (1969) JASA; Christen (2012) "Data Matching"; Mudgal et al. (2018) Deep Learning for ER survey; Splink documentation (UK MoJ); Ditto (Li et al., SIGMOD 2021); W3C OWL sameAs specification; ISO 17442 LEI standard
+  - updated:: 2026-06-13

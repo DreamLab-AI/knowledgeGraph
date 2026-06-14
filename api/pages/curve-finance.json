@@ -4,8 +4,8 @@
   "slug": "curve-finance",
   "public": true,
   "classIri": "urn:ngm:class:curve-finance",
-  "domain": "curve-finance",
-  "definition": "Curve Finance is a decentralised exchange protocol on Ethereum and other chains, launched in 2020, specialising in efficient trading between assets expected to hold similar values, such as stablecoins and wrapped tokens. It uses an automated market maker with a bonding curve designed to minimise slippage and impermanent loss for like-valued assets. Liquidity providers earn trading fees and additional rewards, and the protocol's CRV token is used in a vote-escrow governance model that directs liquidity incentives. Curve has been a significant venue for stablecoin liquidity within decentralised finance.",
+  "domain": "blockchain",
+  "definition": "Curve Finance is a decentralised exchange protocol operating across Ethereum and multiple EVM-compatible chains, specialising in low-slippage swaps between assets expected to maintain near-parity in value, such as stablecoins and liquid staking tokens. It employs a hybrid invariant automated market maker that blends constant-sum and constant-product behaviour, concentrating liquidity near the peg to dramatically reduce trading costs for correlated assets. The protocol's CRV governance token is distributed to liquidity providers and can be locked in a vote-escrow mechanism (veCRV) that grants voting power over pool incentive allocation, creating a flywheel dynamic known as the Curve Wars. Curve v2 extended the model to volatile asset pairs using a price-repegging invariant, broadening the protocol's scope from stablecoin-only pools to general concentrated-liquidity trading.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:decentralised-finance-domain",
@@ -13,34 +13,130 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:curve-dao-token",
+        "label": "Curve DAO Token"
+      },
+      {
+        "id": "urn:ngm:class:vote-escrow-mechanism",
+        "label": "Vote-Escrow Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:liquidity-pool",
+        "label": "Liquidity Pool"
+      }
+    ],
     "requires": [
       {
-        "id": "urn:ngm:class:ethereum-smart-contract-platform",
+        "id": "urn:ngm:class:ethereum",
         "label": "Ethereum"
       },
       {
-        "id": "urn:ngm:class:automated-market-maker",
-        "label": "Automated Market Maker"
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
       },
       {
         "id": "urn:ngm:class:stablecoin",
         "label": "Stablecoin"
       }
     ],
-    "enables": [],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:stablecoin-swap",
+        "label": "Stablecoin Swap"
+      },
+      {
+        "id": "urn:ngm:class:yield-farming",
+        "label": "Yield Farming"
+      },
+      {
+        "id": "urn:ngm:class:flash-loan",
+        "label": "Flash Loan"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:evm-compatible-blockchain",
+        "label": "EVM Compatible Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:oracle",
+        "label": "Oracle"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
+      },
+      {
+        "id": "urn:ngm:class:concentrated-liquidity",
+        "label": "Concentrated Liquidity"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:uniswap",
+        "label": "Uniswap"
+      },
+      {
+        "id": "urn:ngm:class:balancer",
+        "label": "Balancer"
+      },
+      {
+        "id": "urn:ngm:class:centralised-exchange",
+        "label": "Centralised Exchange"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:mechanism-design",
+        "label": "Mechanism Design"
+      },
+      {
+        "id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "id": "urn:ngm:class:liquidity-mining",
+        "label": "Liquidity Mining"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:impermanent-loss",
+        "label": "Impermanent Loss"
+      },
+      {
+        "id": "urn:ngm:class:convex-finance",
+        "label": "Convex Finance"
+      },
+      {
+        "id": "urn:ngm:class:defi-composability",
+        "label": "DeFi Composability"
+      },
+      {
+        "id": "urn:ngm:class:token-incentive-design",
+        "label": "Token Incentive Design"
+      }
+    ]
   },
   "wikilinks": [
     {

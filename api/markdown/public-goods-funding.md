@@ -1,25 +1,93 @@
 - ### Definition
-  - Public goods funding refers to mechanisms that finance resources which are non-excludable and non-rival — meaning consumption by one party does not diminish availability to others and exclusion is impractical. In decentralised ecosystems, on-chain coordination primitives such as quadratic funding, retroactive grants, and DAO-managed treasuries are used to allocate capital towards open-source software, protocol research, and shared infrastructure. These mechanisms attempt to correct the market failure of under-provision that arises when contributors cannot capture sufficient private value from their public-benefit work.
+  - Public goods funding addresses a fundamental problem in welfare economics: resources that are **non-excludable** (no one can be prevented from using them) and **non-rival** (use by one person does not diminish use by another) are systematically under-produced by private markets because contributors cannot capture the full value they create. The result is a [[Collective Action Problem]] — rational actors free-ride on others' efforts. In decentralised digital ecosystems, blockchain-native coordination tools such as [[Quadratic Funding]], [[Retroactive Public Goods Funding]], and [[DAO]]-managed treasuries have emerged as novel on-chain mechanisms to correct this market failure, channelling capital toward [[Open-Source Software]], shared protocol infrastructure, and collective knowledge commons. The field builds on classical [[Welfare Economics]] and extends it with [[Mechanism Design]] and [[Cryptoeconomics]] to create systems that are transparent, permissionless, and resistant to plutocratic capture.
 
-- ### Semantic Classification
-  - owl-class:: public-goods-funding:Public Goods Funding
-  - owl-role:: Concept
+- ### Overview
+  - Public goods funding is the study and practice of designing institutions and protocols that sustainably finance shared resources in contexts where market incentives are insufficient or absent.
+  - **The market failure**: Because public goods are non-excludable, private actors cannot monetise them efficiently; because they are non-rival, exclusion through pricing is welfare-destructive. This leads to chronic under-investment in foundational research, open-source infrastructure, and community knowledge.
+  - **Classical approaches**: Taxation and state provision (e.g. public broadcasting, scientific research funding), philanthropic endowments, and academic publishing have traditionally addressed this gap outside of digital ecosystems.
+  - **Blockchain innovation**: Decentralised networks generate large pools of value — protocol fees, token issuance, ecosystem treasury reserves — and face a parallel problem: the open-source software and research underpinning those networks is a public good. This has catalysed an entire sub-field of on-chain funding mechanisms that operate without central administrators.
+  - **Why it matters**: Sustainable ecosystems require sustainable infrastructure. Without structured funding for the unglamorous but essential work of protocol maintenance, security auditing, documentation, and education, networks face long-term resilience risks regardless of short-term token price or user growth.
+
+- ### Key Mechanisms
+  - **[[Quadratic Funding]]**
+    - Developed by Vitalik Buterin, Zoë Hitzig, and Glen Weyl as part of the Liberal Radicalism framework.
+    - Matching pool contributions are allocated proportionally to the *square* of the sum of the *square roots* of individual donations, amplifying community signal over raw capital.
+    - Implemented at scale by [[Gitcoin Grants]], which has allocated tens of millions of dollars to Ethereum ecosystem projects.
+    - Critical dependency: [[Sybil Resistance]] — without verified unique identities, matching pools can be gamed by fake accounts.
+  - **[[Retroactive Public Goods Funding]]**
+    - Championed by [[Optimism]] (Optimism Collective / RetroPGF).
+    - Inverts the conventional grant model: instead of speculating on future impact, a badgeholder committee distributes funds to projects with *proven* past contributions.
+    - Reduces allocation error and speculative gaming; rewards demonstrated value over promises.
+    - Closely related to [[Impact Certificates]] — tradeable tokens representing verified past impact that create secondary markets for public goods investment.
+  - **[[DAO]] Treasury Grants**
+    - Protocol DAOs such as Uniswap, Compound, Aave, and MakerDAO hold substantial on-chain treasuries funded by protocol fees or token reserves.
+    - [[On-Chain Governance]] mechanisms — token voting, conviction voting, delegated governance — determine grant allocations.
+    - Risk: plutocratic capture when large token holders dominate allocation decisions.
+  - **[[Conviction Voting]]**
+    - A time-weighted signalling mechanism in which voting power accumulates the longer tokens remain committed to a proposal.
+    - Reduces snapshot voting manipulation; enables continuous funding without discrete voting rounds.
+    - Implemented by Gardens (1Hive) and Giveth.
+  - **Milestone-Based Streaming**
+    - [[Smart Contract]] logic encodes disbursement conditions — funds stream continuously or unlock on milestone attestation.
+    - Reduces counterparty risk for both funders and grantees.
+    - Tools include Superfluid (streaming payments) and Allo Protocol (grant programme infrastructure).
+  - **Matching Donations**
+    - Platforms like Gitcoin combine individual donations with externally funded matching pools.
+    - Donors contribute small amounts that are amplified by matching funds according to the chosen mechanism (quadratic, linear, etc.).
+
+- ### Applications and Use Cases
+  - **Ethereum Ecosystem Infrastructure**: Gitcoin Grants has historically funded core Ethereum client development, security tooling (Slither, Echidna), developer education, and localisation. Protocol Guild distributes streaming vested ETH allocations to active Ethereum core protocol contributors.
+  - **Optimism RetroPGF**: Multiple RetroPGF rounds have distributed OP tokens to open-source projects building on and supporting the Optimism stack, ranging from tooling to public education.
+  - **Open-Source Software Sustainability**: Public goods funding frameworks offer a generalisable model for funding any open-source commons — not just blockchain software. Experimental programmes apply quadratic funding to climate research, academic publishing, and journalism.
+  - **Protocol R&D**: Ethereum Foundation, Protocol Labs (IPFS/Filecoin ecosystem), and Polkadot Treasury fund fundamental research into cryptography, distributed systems, and zero-knowledge proofs as public goods.
+  - **Knowledge Commons**: Decentralised encyclopaedias, open datasets for [[Machine Learning]], and shared ontologies (such as this [[Knowledge Graph]]) are candidate public goods requiring sustainable funding models.
+  - **Digital Infrastructure Grants**: Broader application to internet infrastructure — DNS alternatives, decentralised storage, identity layers — where traditional monetisation is structurally difficult.
 
 - ### Relationships
-  - hasPart [[Quadratic Funding]]
-  - hasPart [[Retroactive Public Goods Funding]]
-  - uses [[DAO]]
-  - uses [[Treasury Management]]
-  - relatedTo [[Smart Contract]]
-  - relatedTo [[Quadratic Voting]]
+  - hasPart:: [[Quadratic Funding]]
+  - hasPart:: [[Retroactive Public Goods Funding]]
+  - hasPart:: [[Grants Programme]]
+  - hasPart:: [[Matching Pool]]
+  - uses:: [[DAO]]
+  - uses:: [[Treasury Management]]
+  - uses:: [[Smart Contract]]
+  - uses:: [[Quadratic Voting]]
+  - uses:: [[Sybil Resistance]]
+  - requires:: [[Mechanism Design]]
+  - requires:: [[On-Chain Governance]]
+  - requires:: [[Identity Verification]]
+  - enables:: [[Open-Source Software]]
+  - enables:: [[Protocol Development]]
+  - enables:: [[Commons-Based Peer Production]]
+  - dependsOn:: [[Cryptoeconomics]]
+  - dependsOn:: [[Token Governance]]
+  - contrastsWith:: [[Venture Capital]]
+  - contrastsWith:: [[Rent Seeking]]
+  - relatedTo:: [[Welfare Economics]]
+  - relatedTo:: [[Collective Action Problem]]
+  - relatedTo:: [[Impact Certificates]]
+  - bridges-to:: [[Decentralised Autonomous Organisation]]
+  - bridges-to:: [[Digital Commons]]
 
-- ### Content
-  Public goods funding draws on classical welfare economics to address a structural problem in open ecosystems: free-rider dynamics discourage investment in shared infrastructure because individuals benefit regardless of whether they contribute. Blockchain-native coordination tools have revived interest in novel funding mechanisms that operate transparently on-chain.
+- ### Challenges and Open Problems
+  - **Sybil Attacks**: Quadratic mechanisms are only as reliable as their identity layer. [[Sybil Resistance]] tools — Gitcoin Passport, Proof of Humanity, World ID — must balance privacy against anti-gaming robustness.
+  - **Plutocratic Capture**: Token-weighted governance concentrates power in large holders. Hybrid mechanisms combining token weight with identity-based or reputation-based voting are active research areas.
+  - **Retroactive vs. Prospective Tradeoffs**: Retroactive funding rewards proven impact but may not fund genuinely speculative, high-variance research. Prospective grants carry higher allocation error. Optimal designs may combine both.
+  - **Voter Fatigue and Participation**: [[On-Chain Governance]] suffers chronically low participation. Delegation, AI-assisted curation, and metagovernance frameworks attempt to address this.
+  - **Capital Efficiency**: Large matching pools sitting idle generate opportunity costs. Integrating yield-bearing [[DeFi]] strategies with grant pools is an active design space.
+  - **Scope Creep and Legitimacy**: As DAO treasuries grow, determining what counts as a public good versus a private benefit becomes contested. Legitimacy depends on transparent, inclusive deliberation processes.
+  - **Cross-Chain Coordination**: Public goods often benefit multiple ecosystems simultaneously. Cross-chain grant coordination protocols and shared funding pools are nascent but growing.
 
-  Quadratic funding, pioneered by Gitcoin Grants, allocates matching funds proportional to the square root of aggregate individual contributions, amplifying community signal rather than raw capital. Retroactive public goods funding, as implemented by Optimism's RetroPGF programme, inverts the timing by rewarding proven past impact, reducing speculative allocation risk. DAO treasuries governed by on-chain voting or conviction voting can sustain long-running grants programmes that operate without central intermediaries.
-
-  Smart contracts enforce disbursement rules automatically, enabling milestone-based streaming payments and transparent audit trails. Sybil resistance mechanisms — including quadratic voting safeguards — are critical to preventing gaming of matching pools by coordinated fake identities. The broader challenge is designing mechanisms that are both capital-efficient and resistant to plutocratic capture, motivating ongoing research into mechanisms combining token-weighted and identity-based governance.
+- ### Standards and Context
+  - **Liberal Radicalism / RadicalxChange**: The theoretical foundation for quadratic mechanisms, developed by E. Glen Weyl, Vitalik Buterin, and Zoë Hitzig. Published in the Journal of Political Economy.
+  - **Gitcoin Grants / Allo Protocol**: The primary production implementation of quadratic funding. Allo Protocol abstracts the underlying allocation logic into a composable on-chain primitive.
+  - **Optimism Collective and RetroPGF**: The reference implementation of retroactive public goods funding, with multiple rounds of data publicly available for research.
+  - **Protocol Guild**: A pioneering model for contributor compensation in Ethereum core development, using vested token streaming to reward long-term contributors.
+  - **EIP Process**: Ethereum Improvement Proposals represent an informal standard for the kind of collective, open governance process that public goods funding must support.
+  - **Ostrom's Principles**: Elinor Ostrom's Nobel-winning work on governing the commons provides foundational principles — clear boundaries, proportional rules, collective choice arrangements, monitoring, graduated sanctions — that inform on-chain commons design.
+  - **Token Engineering**: The emerging discipline of [[Token Engineering]] applies systems engineering and mechanism design rigour to the design of token-incentivised public goods funding systems.
 
 - ### Provenance
-  - sources::
+  - sources:: Buterin, Hitzig & Weyl (2019) — Liberal Radicalism; Ostrom (1990) — Governing the Commons; Gitcoin Grants public data; Optimism RetroPGF documentation; Protocol Guild documentation
+  - updated:: 2026-06-13
   - migration-date:: 2026-05-19T00:00:00Z

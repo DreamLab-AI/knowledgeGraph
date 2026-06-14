@@ -4,7 +4,7 @@
   "slug": "oauth",
   "public": true,
   "classIri": "urn:ngm:class:oauth",
-  "domain": "cryptographic",
+  "domain": "security",
   "definition": "An open standard for delegated authorisation that allows a user to grant a third-party application limited access to resources without sharing their credentials.",
   "subClassOf": [
     {

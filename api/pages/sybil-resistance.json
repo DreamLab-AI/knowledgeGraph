@@ -5,16 +5,16 @@
   "public": true,
   "classIri": "urn:ngm:class:sybil-resistance",
   "domain": "blockchain",
-  "definition": "Sybil resistance is the property of a distributed network that limits the influence any single adversary can exert by creating multiple pseudonymous or fake identities. It is a foundational security requirement for decentralised systems where participation rights, voting power, or reputation depend on identity uniqueness. Mechanisms achieving sybil resistance include proof-of-work, proof-of-stake, and humanity attestation schemes such as biometric or social vouching protocols.",
+  "definition": "Sybil resistance is a security property of distributed and decentralised networks that constrains the ability of a single adversary to gain disproportionate influence by fabricating multiple pseudonymous or fake identities. The property is foundational to any permissionless system where voting power, reputation, resource allocation, or participation rights are tied to the concept of a unique participant. Mechanisms achieving sybil resistance range from resource-binding consensus protocols \u2014 proof-of-work and proof-of-stake \u2014 to cryptographic proof-of-personhood schemes and social trust-graph analysis, each balancing security guarantees against privacy requirements.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:bc-protocol-and-consensus",
-      "label": "BC Protocol and Consensus"
+      "id": "urn:ngm:class:distributed-systems-security",
+      "label": "Distributed Systems Security"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [
@@ -25,27 +25,95 @@
       {
         "id": "urn:ngm:class:consensus-mechanism",
         "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-proof",
+        "label": "Cryptographic Proof"
       }
     ],
-    "enables": [],
-    "dependsOn": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:decentralised-governance",
+        "label": "Decentralised Governance"
+      },
+      {
+        "id": "urn:ngm:class:quadratic-voting",
+        "label": "Quadratic Voting"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "id": "urn:ngm:class:fair-airdrop",
+        "label": "Fair Airdrop"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public Key Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      }
+    ],
     "implements": [],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:sybil-attack",
         "label": "Sybil Attack"
+      },
+      {
+        "id": "urn:ngm:class:eclipse-attack",
+        "label": "Eclipse Attack"
+      },
+      {
+        "id": "urn:ngm:class:51-percent-attack",
+        "label": "51% Attack"
       }
     ],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:federated-learning-poisoning-defence",
+        "label": "Federated Learning Poisoning Defence"
+      },
+      {
+        "id": "urn:ngm:class:bot-detection",
+        "label": "Bot Detection"
+      },
+      {
+        "id": "urn:ngm:class:ai-alignment-mechanism-design",
+        "label": "AI Alignment Mechanism Design"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:proof-of-work",
+        "label": "Proof of Work"
+      },
       {
         "id": "urn:ngm:class:proof-of-stake",
         "label": "Proof of Stake"
       },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:trust-graph",
+        "label": "Trust Graph"
+      },
+      {
+        "id": "urn:ngm:class:biometric-authentication",
+        "label": "Biometric Authentication"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
       {
         "id": "urn:ngm:class:humanity-attestation",
         "label": "Humanity Attestation"
@@ -53,6 +121,22 @@
       {
         "id": "urn:ngm:class:reputation-system",
         "label": "Reputation System"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-personhood",
+        "label": "Proof of Personhood"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-credential",
+        "label": "Verifiable Credential"
+      },
+      {
+        "id": "urn:ngm:class:web-of-trust",
+        "label": "Web of Trust"
       }
     ]
   },

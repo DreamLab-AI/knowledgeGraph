@@ -55,7 +55,7 @@ public:: true
   "@type": "Class",
   "label": "FIDO Alliance",
   "definition": "An industry association that develops open authentication standards intended to reduce reliance on passwords through public key cryptography.",
-  "domain": "cryptographic",
+  "domain": "security",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

@@ -47,7 +47,7 @@ public:: true
   "@type": "Class",
   "label": "Dialogue State Tracking",
   "definition": "A component of conversational systems that maintains a structured representation of the user's goals and the context of a conversation across turns. It updates the dialogue state as new utterances are processed.",
-  "domain": "natural-language-processing",
+  "domain": "ai",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

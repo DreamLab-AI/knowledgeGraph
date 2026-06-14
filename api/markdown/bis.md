@@ -1,16 +1,86 @@
 - ### Definition
-  - The BIS (Bank for International Settlements) is the central institution for [[Financial Stability]] cooperation between [[Central Bank]] members, acting as banker to central banks and producing the prudential standards that underpin global [[Financial Infrastructure]].
+  - The **Bank for International Settlements** (BIS) is an [[International Financial Institution]] owned by and serving the world's [[Central Bank]] community, founded in 1930 under the Young Plan and headquartered in Basel, Switzerland. It functions as a banker to central banks — holding reserves, executing foreign-exchange transactions, and providing collateralised credit — while also acting as a neutral forum for international [[Monetary Policy]] coordination and as host to key standard-setting committees including the [[Basel Committee on Banking Supervision]] and the [[Committee on Payments and Market Infrastructures]]. Its research arm, the BIS Innovation Hub, investigates frontier technologies such as [[Central Bank Digital Currency]], [[Tokenisation]], and [[Distributed Ledger Technology]] to inform global central-banking policy.
+
+- ### Overview
+  - The BIS occupies a unique position at the apex of the global [[Financial System]]: it is simultaneously a bank, a research institution, a standard-setter, and a policy forum.
+  - Unlike the [[International Monetary Fund]] or [[World Bank]], the BIS does not lend to governments or intervene in currency markets. Its shareholders and clients are exclusively central banks.
+  - With 63 member central banks representing roughly 95 per cent of world GDP, the BIS provides an authoritative multilateral channel for harmonising approaches to [[Financial Regulation]], [[Prudential Regulation]], and [[Financial Stability]].
+  - Its annual and quarterly publications — the BIS Annual Economic Report, the BIS Quarterly Review, and Working Paper series — are among the most cited in international finance and macroeconomics.
+  - The institution operates from Basel but maintains Innovation Hub centres in Hong Kong, Singapore, London, Stockholm, Toronto, Eurosystem, and other jurisdictions, enabling geographically distributed research into digital finance.
+
+- ### Key Components
+  - **Basel Committee on Banking Supervision (BCBS)**
+    - Produces the [[Basel Accords]] (Basel I, II, III, and ongoing reforms), which define minimum [[Capital Adequacy Framework]] requirements, liquidity standards (LCR, NSFR), and leverage ratios for internationally active banks.
+    - Sets the global floor for [[Prudential Regulation]], shaping domestic banking laws in over 100 jurisdictions.
+    - Post-2008 reforms under Basel III substantially reshaped [[Systemic Risk Management]] in the banking sector.
+  - **Financial Stability Board (FSB)**
+    - Secretariat hosted by the BIS; coordinates [[Financial Stability]] policy across G20 economies.
+    - Monitors and makes recommendations to mitigate [[Systemic Risk Management]] vulnerabilities, including shadow banking, crypto assets, and climate-related financial risk.
+  - **Committee on Payments and Market Infrastructures (CPMI)**
+    - Develops principles and standards for [[Payment System]] infrastructure and financial market infrastructure (FMI) oversight.
+    - Works closely with IOSCO on Principles for Financial Market Infrastructures (PFMIs), foundational to [[Financial Infrastructure]] resilience.
+  - **BIS Innovation Hub**
+    - Established in 2019; delivers proof-of-concept projects in [[Central Bank Digital Currency]], [[Tokenisation]] of financial assets, [[RegTech]], and [[Cyber Resilience]].
+    - Key project clusters: Project Nexus ([[Cross-Border Payments]]), Project Mariana (FX settlement with CBDC), Project mBridge (multi-CBDC platform), Project Icebreaker (retail CBDC interoperability).
+    - Collaborates openly with central banks, [[International Monetary Fund]], and academic institutions.
+  - **Monetary and Economic Department (MED)**
+    - Produces macroeconomic research on [[Monetary Policy Implementation]], inflation dynamics, financial cycles, and the intersection of [[Financial Technology]] with monetary transmission.
+    - Maintains the BIS Statistics portal, the world's largest public repository of international banking and securities data.
+  - **Banking Department**
+    - Manages central bank reserve assets and executes foreign-exchange transactions.
+    - Provides emergency short-term liquidity to member central banks, acting as a lender-of-last-resort backstop at the supra-national level.
+
+- ### Mechanisms
+  - **Reserve Management** — BIS holds and invests foreign currency reserves on behalf of member central banks, requiring the highest credit quality and liquidity standards, effectively setting a benchmark for sovereign reserve management.
+  - **BIS Papers & Consultations** — policy guidance is disseminated through consultative documents, final standards, and working papers that drive regulatory change via the standard-setter–member-regulator pipeline.
+  - **Basel Process** — a formal cycle of consultation, quantitative impact study, finalisation, and national transposition that translates BCBS standards into domestic law, governing [[Capital Adequacy Framework]] globally.
+  - **Innovation Hub Sprints** — time-boxed prototype experiments test feasibility of novel financial infrastructure concepts using [[Distributed Ledger Technology]], [[Tokenisation]], or AI-assisted [[Prudential Regulation]] tools.
+  - **Committee Plenary Governance** — BCBS, CPMI, and Markets Committee decisions are made by consensus among member representatives, ensuring legitimacy and broad adoption without formal treaty obligations.
+
+- ### Applications and Use Cases
+  - **Global Banking Regulation** — Basel III capital and liquidity standards, transposed into EU (CRR/CRD), US (Basel Endgame rules), and other jurisdictions, directly govern how trillions in bank capital are structured.
+  - **Cross-Border Payment Reform** — BIS-led G20 roadmap for enhancing [[Cross-Border Payments]] targets to reduce cost, increase speed and transparency; Project Nexus and mBridge are live multi-jurisdictional experiments.
+  - **CBDC Design** — BIS research and Innovation Hub projects provide central banks with architectural blueprints for retail and wholesale [[Central Bank Digital Currency]], influencing national CBDC design in the EU, UK, India, Brazil, and beyond.
+  - **Systemic Risk Monitoring** — FSB secretariat functions enable early warning identification of vulnerabilities in shadow banking, crypto markets, and interconnected global financial networks.
+  - **Reserve Asset Stewardship** — central banks collectively entrust hundreds of billions in reserves to the BIS banking department for safe, liquid investment, avoiding commercial counterparty risk.
+  - **RegTech & SupTech Research** — Innovation Hub explores machine-readable regulation and automated supervisory reporting, bridging [[RegTech]] innovation with central bank oversight mandates.
 
 - ### Relationships
-  - The BIS occupies a pivotal position in the global [[Financial System]], providing settlement services and liquidity to its member [[Central Bank]] institutions. Its Basel Committee drives [[Financial Regulation]] through capital adequacy frameworks that every major banking jurisdiction adopts. The BIS Innovation Hub directly researches [[Central Bank Digital Currency]] and [[CBDCs]], publishing influential reports that shape national CBDC roadmaps. Through Project Nexus and similar multilateral experiments, the BIS advances [[Cross-Border Payments]] interoperability, while its Monetary and Economic Department produces research that informs [[Monetary Policy Implementation]] worldwide. The institution also engages with [[Financial Technology]] through sandbox programmes testing digital ledgers, tokenisation, and programmable money.
+  - hasPart:: [[Basel Committee on Banking Supervision]]
+  - hasPart:: [[Financial Stability Board]]
+  - hasPart:: [[Committee on Payments and Market Infrastructures]]
+  - hasPart:: [[BIS Innovation Hub]]
+  - enables:: [[Cross-Border Payments]]
+  - enables:: [[Monetary Policy Implementation]]
+  - enables:: [[Prudential Regulation]]
+  - enables:: [[Financial Stability]]
+  - implements:: [[Basel Accords]]
+  - implements:: [[Capital Adequacy Framework]]
+  - supports:: [[Central Bank]]
+  - supports:: [[Financial Infrastructure]]
+  - supports:: [[Financial System]]
+  - supports:: [[Systemic Risk Management]]
+  - uses:: [[Distributed Ledger Technology]]
+  - uses:: [[Tokenisation]]
+  - relatedTo:: [[Central Bank Digital Currency]]
+  - relatedTo:: [[Financial Regulation]]
+  - relatedTo:: [[International Monetary Fund]]
+  - relatedTo:: [[Financial Technology]]
+  - relatedTo:: [[Payment System]]
+  - bridges-to:: [[RegTech]]
+  - bridges-to:: [[Blockchain]]
+  - bridges-to:: [[Cyber Resilience]]
+  - contrastsWith:: [[Commercial Bank]]
+  - relatedTo:: [[World Bank]]
 
-- ### Content
-  - The BIS was established in 1930, initially to manage reparations payments arising from the First World War under the Young Plan. Its mandate quickly broadened into general central bank cooperation, and it survived the Second World War as a neutral institution. Today it counts 63 central banks among its shareholders, representing economies responsible for approximately 95 per cent of world GDP.
+- ### Standards and Context
+  - **Basel Accords** — Basel I (1988), Basel II (2004), Basel III (2010–2017), and subsequent finalisation packages are the cornerstone outputs of the BIS-hosted BCBS, governing global bank [[Capital Adequacy Framework]] and liquidity risk.
+  - **Principles for Financial Market Infrastructures (PFMIs)** — joint CPMI–IOSCO standard defining resilience requirements for payment systems, central securities depositories, and central counterparties, foundational to [[Financial Infrastructure]] oversight.
+  - **FSB Key Attributes of Effective Resolution Regimes** — guides national implementation of bank resolution frameworks to prevent taxpayer bail-outs, a direct output of FSB work hosted at the BIS.
+  - **BIS Cyber Resilience Guidelines** — used by central banks and financial market infrastructures to benchmark operational resilience programmes, linking to [[Cyber Resilience]] best practice.
+  - **CPMI Fast Payments Toolkit** — supports jurisdictions in designing instant retail [[Payment System]] infrastructure in alignment with international standards.
+  - **Regulatory relationship** — the BIS has no formal treaty enforcement powers; its influence operates through consensus norms, reputational pressure, and the expectation that G20 members transpose BCBS/FSB standards into domestic law.
 
-  - The Basel Committee on Banking Supervision, secretariat hosted by the BIS, produced the Basel I, II, and III accords that define how banks worldwide must calculate and hold regulatory capital. Basel III, substantially finalised after the 2008 financial crisis, introduced liquidity coverage ratios, net stable funding ratios, and leverage ratio requirements that fundamentally reshaped global banking risk management. Implementation deadlines from Basel III reforms continue to affect bank balance sheets well into the 2020s.
-
-  - The BIS Innovation Hub, established in 2019, operates centres in Basel, Hong Kong, Singapore, London, Stockholm, and other cities. Its research agenda covers tokenisation of financial assets, wholesale and retail CBDC design, cyber security for financial market infrastructure, and RegTech applications. The Hub collaborates with the IMF, World Bank, and national central banks on prototype systems, publishing findings openly to inform policy without being constrained by commercial interests.
-
-  - In the domain of digital currencies, the BIS has published extensive research analysing the monetary policy implications of [[CBDCs]], including concerns about bank disintermediation and financial stability risks from rapid adoption. The institution generally advocates for two-tier CBDC architectures where commercial banks maintain customer relationships, preserving existing financial intermediation while enabling the benefits of digital sovereign currency.
-
-  - The BIS's quarterly reviews and annual reports are amongst the most widely cited publications in international macroeconomics, covering topics from shadow banking and asset price cycles to the implications of AI and distributed ledger technologies for [[Financial Infrastructure]] resilience.
+- ### Provenance
+  - sources:: BIS Annual Report; BIS Innovation Hub publications; Basel Committee on Banking Supervision standards documents; FSB Key Attributes; CPMI Principles for Financial Market Infrastructures
+  - updated:: 2026-06-13

@@ -75,7 +75,7 @@ public:: true
   "@type": "Class",
   "label": "Control Systems Domain",
   "definition": "The Control Systems Domain classifies concepts concerning the regulation of dynamic systems towards desired behaviour using feedback and actuation. It covers modelling, stability, controller design and the sensing that closes the loop. As a sub-domain of the Robotics Domain it provides the theory by which physical and computational processes are kept on target despite disturbance.",
-  "domain": "control-systems",
+  "domain": "robotics",
   "maturity": "emerging",
   "qualityScore": 0.7,
   "subClassOf": [

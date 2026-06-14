@@ -4,8 +4,8 @@
   "slug": "trusted-execution-environment",
   "public": true,
   "classIri": "urn:ngm:class:trusted-execution-environment",
-  "domain": "infrastructure",
-  "definition": "A Trusted Execution Environment (TEE) is a hardware-enforced, isolated processing domain within a processor that guarantees confidentiality and integrity of code and data even if the host operating system or hypervisor is compromised. TEEs are instantiated via technologies such as Intel SGX, AMD SEV, and Arm TrustZone, each providing mechanisms for remote attestation so that a relying party can cryptographically verify the identity and integrity of the enclave before exchanging sensitive material. TEEs underpin confidential computing workloads including private AI inference, secure key management, and privacy-preserving data collaboration.",
+  "domain": "security",
+  "definition": "A Trusted Execution Environment (TEE) is a hardware-enforced, isolated processing domain within a processor that guarantees confidentiality and integrity of code and data even when the host operating system, hypervisor, or privileged firmware is compromised or untrusted. TEEs are instantiated via technologies such as Intel SGX, AMD SEV-SNP, and Arm TrustZone, each providing hardware-rooted attestation mechanisms that allow a relying party to cryptographically verify the identity, configuration, and integrity of an enclave before exchanging sensitive material. By encrypting enclave memory pages in DRAM and enforcing access control at the silicon level, TEEs form the hardware foundation for confidential computing \u2014 enabling private AI inference, secure key management, privacy-preserving multi-party collaboration, and verifiable off-chain computation in blockchain systems.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-security-and-identity",
@@ -13,42 +13,129 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:secure-enclave",
+        "label": "Secure Enclave"
+      },
+      {
+        "id": "urn:ngm:class:remote-attestation",
+        "label": "Remote Attestation"
+      },
+      {
+        "id": "urn:ngm:class:memory-encryption",
+        "label": "Memory Encryption"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:hardware-root-of-trust",
+        "label": "Hardware Root of Trust"
+      },
       {
         "id": "urn:ngm:class:cryptographic-key-management",
         "label": "Cryptographic Key Management"
       },
       {
-        "id": "urn:ngm:class:privacy-enhancing-computation-pec",
-        "label": "Privacy-Enhancing Computation (PEC)"
+        "id": "urn:ngm:class:secure-boot",
+        "label": "Secure Boot"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [
-      {
-        "id": "urn:ngm:class:hardware-security-module",
-        "label": "Hardware Security Module"
-      }
-    ],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
+    "enables": [
       {
         "id": "urn:ngm:class:confidential-computing",
         "label": "Confidential Computing"
       },
       {
-        "id": "urn:ngm:class:secure-enclave",
-        "label": "Secure Enclave"
+        "id": "urn:ngm:class:privacy-enhancing-computation-pec",
+        "label": "Privacy-Enhancing Computation"
+      },
+      {
+        "id": "urn:ngm:class:secure-multi-party-computation",
+        "label": "Secure Multi-Party Computation"
+      },
+      {
+        "id": "urn:ngm:class:private-inference",
+        "label": "Private Inference"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:confidential-virtual-machine",
+        "label": "Confidential Virtual Machine"
+      },
+      {
+        "id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:software-sandboxing",
+        "label": "Software Sandboxing"
+      },
+      {
+        "id": "urn:ngm:class:hypervisor-isolation",
+        "label": "Hypervisor Isolation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-oracle",
+        "label": "Blockchain Oracle"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:hardware-security-module",
+        "label": "Hardware Security Module"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:symmetric-encryption",
+        "label": "Symmetric Encryption"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:digital-rights-management",
+        "label": "Digital Rights Management"
+      },
+      {
+        "id": "urn:ngm:class:biometric-authentication",
+        "label": "Biometric Authentication"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:confidential-computing-consortium",
+        "label": "Confidential Computing Consortium"
+      },
+      {
+        "id": "urn:ngm:class:global-platform-specification",
+        "label": "GlobalPlatform Specification"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:secure-element",
+        "label": "Secure Element"
+      },
+      {
+        "id": "urn:ngm:class:trusted-platform-module",
+        "label": "Trusted Platform Module"
       }
     ]
   },

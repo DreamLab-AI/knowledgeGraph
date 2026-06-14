@@ -5,39 +5,146 @@
   "public": true,
   "classIri": "urn:ngm:class:farcaster",
   "domain": "blockchain",
-  "definition": "Farcaster is a decentralised social networking protocol that stores user identity on a blockchain while distributing message data across nodes.",
+  "definition": "Farcaster is a sufficiently decentralised social networking protocol built on Ethereum and Optimism that anchors user identity and account data on-chain while storing social graph content and messages off-chain across a peer-to-peer network of Hubs. It separates identity (Farcaster ID, FID) from the client application layer, enabling permissionless third-party clients such as Warpcast to build on shared social data without platform lock-in. The protocol specifies message encoding via a data availability layer called Hubs and enforces message ordering through a CRDT-based conflict resolution mechanism, making it a credibly neutral substrate for decentralised social applications.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:decentralised-identity",
-      "label": "Decentralised Identity"
+      "id": "urn:ngm:class:decentralised-social-protocol",
+      "label": "Decentralised Social Protocol"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.74,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:farcaster-hub",
+        "label": "Farcaster Hub"
+      },
+      {
+        "id": "urn:ngm:class:farcaster-id",
+        "label": "Farcaster ID"
+      },
+      {
+        "id": "urn:ngm:class:warpcast",
+        "label": "Warpcast"
+      },
+      {
+        "id": "urn:ngm:class:farcaster-frames",
+        "label": "Farcaster Frames"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:decentralised-identity",
         "label": "Decentralised Identity"
+      },
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "id": "urn:ngm:class:optimism",
+        "label": "Optimism"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:web3",
         "label": "Web3"
+      },
+      {
+        "id": "urn:ngm:class:open-social-graph",
+        "label": "Open Social Graph"
+      },
+      {
+        "id": "urn:ngm:class:portable-identity",
+        "label": "Portable Identity"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      },
+      {
+        "id": "urn:ngm:class:crdt",
+        "label": "CRDT"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:decentralised-social-protocol",
+        "label": "Decentralised Social Protocol"
+      },
+      {
+        "id": "urn:ngm:class:open-protocol",
+        "label": "Open Protocol"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:activitypub",
+        "label": "ActivityPub"
+      },
+      {
+        "id": "urn:ngm:class:nostr",
+        "label": "Nostr"
+      },
+      {
+        "id": "urn:ngm:class:bluesky-at-protocol",
+        "label": "Bluesky AT Protocol"
+      },
+      {
+        "id": "urn:ngm:class:centralised-social-media",
+        "label": "Centralised Social Media"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "id": "urn:ngm:class:ai-agent",
+        "label": "AI Agent"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:ethereum-name-service",
+        "label": "Ethereum Name Service"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-work",
+        "label": "Proof of Work"
+      },
+      {
+        "id": "urn:ngm:class:content-addressing",
+        "label": "Content Addressing"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:lens-protocol",
+        "label": "Lens Protocol"
+      },
+      {
+        "id": "urn:ngm:class:did-decentralised-identifier",
+        "label": "DID Decentralised Identifier"
+      },
+      {
+        "id": "urn:ngm:class:data-availability",
+        "label": "Data Availability"
+      }
+    ]
   },
   "wikilinks": [
     {

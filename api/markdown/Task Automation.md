@@ -47,7 +47,7 @@ public:: true
   "@type": "Class",
   "label": "Task Automation",
   "definition": "The automation of individual, often repetitive tasks so that they run without manual effort. It addresses discrete actions rather than coordinating entire business processes.",
-  "domain": "automation",
+  "domain": "robotics",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

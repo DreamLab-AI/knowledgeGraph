@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:maker-dao",
   "domain": "blockchain",
-  "definition": "MakerDAO is a decentralised autonomous organisation on the Ethereum blockchain that governs the Maker Protocol, a smart-contract system enabling users to generate the DAI stablecoin by locking over-collateralised assets in collateralised debt positions (CDPs, also called Vaults). Governance decisions\u2014including collateral onboarding, risk parameters, and stability fees\u2014are made by MKR token holders through on-chain voting. MakerDAO is a foundational component of the decentralised finance (DeFi) ecosystem and one of the earliest large-scale deployments of DAO governance coordinating billions of dollars of collateral.",
+  "definition": "MakerDAO is a decentralised autonomous organisation (DAO) on the Ethereum blockchain that governs the Maker Protocol \u2014 a system of smart contracts enabling users to generate the DAI stablecoin by locking over-collateralised assets in Vaults (formerly Collateralised Debt Positions). Governance decisions covering collateral onboarding, stability fees, liquidation ratios, and debt ceilings are enacted by MKR token holders through on-chain Executive Votes. As one of the earliest large-scale deployments of DAO governance and algorithmic stablecoin issuance, MakerDAO is a foundational pillar of decentralised finance (DeFi) and continues to evolve through its Endgame restructuring into a constellation of SubDAOs.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-defi-and-economics",
@@ -13,11 +13,41 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:peg-stability-module",
+        "label": "Peg Stability Module"
+      },
+      {
+        "id": "urn:ngm:class:mkr-token",
+        "label": "MKR Token"
+      },
+      {
+        "id": "urn:ngm:class:dai-stablecoin",
+        "label": "DAI Stablecoin"
+      },
+      {
+        "id": "urn:ngm:class:sub-dao",
+        "label": "SubDAO"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:over-collateralisation",
+        "label": "Over-Collateralisation"
+      },
+      {
+        "id": "urn:ngm:class:oracle-network",
+        "label": "Oracle Network"
+      },
+      {
+        "id": "urn:ngm:class:on-chain-governance",
+        "label": "On-Chain Governance"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:stablecoin",
@@ -26,12 +56,38 @@
       {
         "id": "urn:ngm:class:decentralized-finance-de-fi",
         "label": "Decentralized Finance (DeFi)"
+      },
+      {
+        "id": "urn:ngm:class:real-world-asset-tokenisation",
+        "label": "Real-World Asset Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-stablecoin",
+        "label": "Algorithmic Stablecoin"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:fiat-backed-stablecoin",
+        "label": "Fiat-Backed Stablecoin"
+      },
+      {
+        "id": "urn:ngm:class:centralised-exchange",
+        "label": "Centralised Exchange"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:traditional-finance",
+        "label": "Traditional Finance"
+      },
+      {
+        "id": "urn:ngm:class:asset-tokenisation",
+        "label": "Asset Tokenisation"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:smart-contract",
@@ -40,6 +96,18 @@
       {
         "id": "urn:ngm:class:governance-token",
         "label": "Governance Token"
+      },
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "id": "urn:ngm:class:dutch-auction",
+        "label": "Dutch Auction"
+      },
+      {
+        "id": "urn:ngm:class:collateralised-debt-position",
+        "label": "Collateralised Debt Position"
       }
     ],
     "supports": [],
@@ -53,6 +121,14 @@
       {
         "id": "urn:ngm:class:liquidity-pool",
         "label": "Liquidity Pool"
+      },
+      {
+        "id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
+      },
+      {
+        "id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
       }
     ]
   },

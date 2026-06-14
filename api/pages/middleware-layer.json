@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:middleware-layer",
   "domain": "infrastructure",
-  "definition": "The MiddlewareLayer represents the abstraction level of integration components, orchestration systems, abstraction layers, API implementations, and coordination services that bridge between different system layers, domains, or components in blockchain and distributed systems.",
+  "definition": "The Middleware Layer is the stratum of software infrastructure that sits between low-level platform services or network protocols and the application-facing interfaces that consume them, providing integration, abstraction, orchestration, and interoperability services. It decouples system components by standardising communication contracts through APIs, messaging buses, and RPC frameworks, and bridges heterogeneous subsystems \u2014 including on-chain protocols, off-chain data sources, and cross-network boundaries \u2014 without requiring changes to the underlying protocol or the consuming application. In distributed and blockchain architectures the layer encompasses API gateways, oracle networks, cross-chain bridges, indexing services, wallet connectors, and transaction orchestration utilities that collectively raise the abstraction level available to developers. Its maturity is well-established in enterprise computing and rapidly maturing in decentralised ecosystems.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-computing-and-cloud",
@@ -13,13 +13,17 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
         "id": "urn:ngm:class:api-gateway",
         "label": "API Gateway"
+      },
+      {
+        "id": "urn:ngm:class:message-broker",
+        "label": "Message Broker"
       },
       {
         "id": "urn:ngm:class:json-data-interchange-format-rpc",
@@ -28,37 +32,137 @@
       {
         "id": "urn:ngm:class:price-oracle",
         "label": "Price Oracle"
+      },
+      {
+        "id": "urn:ngm:class:service-mesh",
+        "label": "Service Mesh"
+      },
+      {
+        "id": "urn:ngm:class:event-bus",
+        "label": "Event Bus"
       }
     ],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      },
+      {
+        "id": "urn:ngm:class:application-programming-interface",
+        "label": "Application Programming Interface"
+      }
+    ],
     "enables": [
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
       {
         "id": "urn:ngm:class:cross-chain-bridge",
         "label": "Cross-Chain Bridge"
       },
       {
-        "id": "urn:ngm:class:interoperability",
-        "label": "Interoperability"
+        "id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      },
+      {
+        "id": "urn:ngm:class:scalability",
+        "label": "Scalability"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:protocol-layer",
+        "label": "Protocol Layer"
+      },
+      {
+        "id": "urn:ngm:class:transport-layer",
+        "label": "Transport Layer"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:service-oriented-architecture",
+        "label": "Service-Oriented Architecture"
+      },
+      {
+        "id": "urn:ngm:class:event-driven-architecture",
+        "label": "Event-Driven Architecture"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:protocol-layer",
+        "label": "Protocol Layer"
+      },
+      {
+        "id": "urn:ngm:class:application-layer",
+        "label": "Application Layer"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
       },
       {
-        "id": "urn:ngm:class:distributed-system",
-        "label": "Distributed System"
+        "id": "urn:ngm:class:oracle-network",
+        "label": "Oracle Network"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-inference",
+        "label": "Machine Learning Inference"
       }
     ],
-    "uses": [],
-    "supports": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:remote-procedure-call",
+        "label": "Remote Procedure Call"
+      },
+      {
+        "id": "urn:ngm:class:publish-subscribe-pattern",
+        "label": "Publish-Subscribe Pattern"
+      },
+      {
+        "id": "urn:ngm:class:load-balancing",
+        "label": "Load Balancing"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:application-layer",
+        "label": "Application Layer"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-application",
+        "label": "Decentralised Application"
+      }
+    ],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
+      },
+      {
+        "id": "urn:ngm:class:software-architecture",
+        "label": "Software Architecture"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:abstraction-layer",
+        "label": "Abstraction Layer"
+      },
+      {
+        "id": "urn:ngm:class:integration-platform",
+        "label": "Integration Platform"
+      },
+      {
+        "id": "urn:ngm:class:enterprise-service-bus",
+        "label": "Enterprise Service Bus"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

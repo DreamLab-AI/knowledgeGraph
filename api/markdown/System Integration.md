@@ -37,33 +37,77 @@ public:: true
   "@id": "urn:ngm:class:system-integration",
   "@type": "Class",
   "label": "System Integration",
-  "definition": "System Integration is the engineering practice of combining disparate software components, services, and data sources into a coherent, functioning whole. It encompasses API design and management, middleware orchestration, event-driven messaging, ETL pipelines, and identity federation to ensure that independently developed subsystems exchange information reliably and consistently across organisational and technical boundaries.",
+  "definition": "System Integration is the engineering discipline of connecting and orchestrating disparate software components, services, databases, and external platforms so that they behave as a unified, interoperable system. It spans interface design via APIs and messaging protocols, middleware orchestration, data transformation pipelines, identity federation, and governance of information flows across organisational and technical boundaries. Unlike simple point-to-point coupling, mature system integration imposes coherent contracts, observability, and error-recovery strategies so that independently developed or procured subsystems can exchange information reliably. The discipline underpins enterprise IT, cloud-native architectures, IoT deployments, and the composable software stacks that drive spatial computing and AI platforms.",
   "domain": "infrastructure",
-  "maturity": "emerging",
+  "maturity": "mature",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:infra-software-engineering",
-      "label": "Software Engineering"
+      "@id": "urn:ngm:class:software-architecture",
+      "label": "Software Architecture"
     }
   ],
   "relations": {
-    "requires": [
+    "hasPart": [
+      {"@id": "urn:ngm:class:api-gateway", "label": "API Gateway"},
       {"@id": "urn:ngm:class:middleware", "label": "Middleware"},
-      {"@id": "urn:ngm:class:api-gateway", "label": "API Gateway"}
+      {"@id": "urn:ngm:class:message-broker", "label": "Message Broker"},
+      {"@id": "urn:ngm:class:data-pipeline", "label": "Data Pipeline"},
+      {"@id": "urn:ngm:class:service-mesh", "label": "Service Mesh"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:api-design", "label": "API Design"},
+      {"@id": "urn:ngm:class:identity-federation", "label": "Identity Federation"},
+      {"@id": "urn:ngm:class:data-serialisation", "label": "Data Serialisation"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"},
-      {"@id": "urn:ngm:class:data-pipeline", "label": "Data Pipeline"}
+      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"},
+      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
+      {"@id": "urn:ngm:class:composable-architecture", "label": "Composable Architecture"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:network-protocol", "label": "Network Protocol"},
+      {"@id": "urn:ngm:class:security-policy", "label": "Security Policy"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:event-driven-architecture", "label": "Event Driven Architecture"},
+      {"@id": "urn:ngm:class:service-oriented-architecture", "label": "Service Oriented Architecture"},
+      {"@id": "urn:ngm:class:microservices", "label": "Microservices"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:rest-api", "label": "REST API"},
+      {"@id": "urn:ngm:class:graphql", "label": "GraphQL"},
+      {"@id": "urn:ngm:class:grpc", "label": "gRPC"},
+      {"@id": "urn:ngm:class:apache-kafka", "label": "Apache Kafka"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:open-api-specification", "label": "OpenAPI Specification"},
+      {"@id": "urn:ngm:class:asyncapi", "label": "AsyncAPI"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:monolithic-architecture", "label": "Monolithic Architecture"},
+      {"@id": "urn:ngm:class:point-to-point-integration", "label": "Point To Point Integration"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:ai-orchestration", "label": "AI Orchestration"},
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
+      {"@id": "urn:ngm:class:supply-chain-visibility", "label": "Supply Chain Visibility"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:event-driven-architecture", "label": "Event Driven Architecture"}
+      {"@id": "urn:ngm:class:enterprise-architecture", "label": "Enterprise Architecture"},
+      {"@id": "urn:ngm:class:devops", "label": "DevOps"},
+      {"@id": "urn:ngm:class:observability", "label": "Observability"}
     ]
   },
-  "quality": 0.35,
+  "sameAs": [
+    {"@id": "urn:ngm:class:application-integration", "label": "Application Integration"},
+    {"@id": "urn:ngm:class:enterprise-application-integration", "label": "Enterprise Application Integration"}
+  ],
+  "quality": 0.74,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-13T00:00:00Z",
+    "inferenceRule": "ManualEnrichment"
   }
 }
 ```
@@ -87,30 +131,97 @@ public:: true
 }
 ```
 
-
 - ### Definition
-  - System Integration is the engineering practice of combining disparate software components, services, and data sources into a coherent, functioning whole. It encompasses API design and management, middleware orchestration, event-driven messaging, ETL pipelines, and identity federation to ensure that independently developed subsystems exchange information reliably and consistently across organisational and technical boundaries.
+  - System Integration is the engineering discipline of connecting and orchestrating disparate software components, services, databases, and external platforms so that they behave as a unified, interoperable system. It encompasses [[API Design]], [[Middleware]] orchestration, [[Message Broker]] patterns, [[Data Pipeline]] construction, and [[Identity Federation]] to ensure that independently developed subsystems exchange information reliably across organisational and technical boundaries. The field is closely related to [[Software Architecture]], [[Distributed Systems]], and [[Enterprise Architecture]], and it underpins everything from cloud-native platform engineering to the composable infrastructure demanded by [[Spatial Computing]] and [[AI Orchestration]] workloads.
+
+- ### Overview
+  - System Integration addresses the fundamental challenge that modern organisations operate many independently built or procured software systems — ERP, CRM, analytics platforms, IoT gateways, third-party SaaS — none of which were designed to talk to each other natively.
+  - Integration work transforms these silos into a coherent information fabric by establishing shared contracts (APIs, schemas, event formats), reliable transport (queues, streams, HTTP), and governance (versioning, SLAs, access control).
+  - Three broad integration eras inform current practice:
+    - **Point-to-point coupling** — direct, bespoke connectors between each pair of systems. Simple to start but produces brittle mesh topologies that scale quadratically in complexity.
+    - **[[Enterprise Service Bus]] (ESB)** — centralised broker that routes, transforms, and mediates messages. Reduces coupling but introduces a single logical hub that can become a bottleneck and organisational chokepoint.
+    - **API-led and event-driven architectures** — decentralised integration via self-describing [[REST API]] / [[GraphQL]] / [[gRPC]] contracts and asynchronous [[Event Driven Architecture]] using brokers such as [[Apache Kafka]] or [[RabbitMQ]]. This is the dominant paradigm as of 2025.
+  - The maturity of system integration as a discipline is reflected in well-established patterns, tooling ecosystems, and standards bodies, making it "mature" on the technology-readiness spectrum.
+
+- ### Key Components
+  - **[[API Gateway]]** — the primary ingress point for synchronous service calls. Handles authentication, rate limiting, routing, protocol translation, and observability across consumer-facing and internal APIs.
+  - **[[Middleware]]** — software that sits between applications to mediate communication, transform data, and enforce policies. Includes ESBs, integration platforms as a service (iPaaS), and modern API management layers.
+  - **[[Message Broker]]** — asynchronous messaging infrastructure (e.g. [[Apache Kafka]], RabbitMQ, AWS SQS) that decouples producers from consumers, enabling durable delivery and event replay.
+  - **[[Data Pipeline]]** — batch or streaming workflows that extract, transform, and load (ETL/ELT) data between systems, often using tools such as Apache Spark, dbt, or Airbyte.
+  - **[[Service Mesh]]** — a dedicated infrastructure layer (e.g. Istio, Linkerd) that manages service-to-service communication inside a [[Microservices]] deployment, providing mutual TLS, observability, and traffic policies without application code changes.
+  - **[[Identity Federation]]** — the mechanisms (OAuth 2.0, SAML, OpenID Connect) that allow identity assertions from one system to be trusted by another, enabling single sign-on and cross-system authorisation.
+  - **[[Data Serialisation]]** — shared encoding formats (JSON, Protocol Buffers, Avro, Parquet) that allow systems written in different languages to exchange structured data unambiguously.
+  - **[[Orchestration Engine]]** — workflow tools (Apache Airflow, Temporal, AWS Step Functions) that coordinate multi-step integration sequences, handle retries, and maintain process state.
+
+- ### Integration Patterns
+  - **Request–reply** — synchronous call from a consumer to a provider; maps naturally to HTTP [[REST API]] and [[gRPC]].
+  - **Publish–subscribe** — producers emit events to topics; multiple consumers receive them independently. Core to [[Event Driven Architecture]].
+  - **Aggregator / scatter-gather** — an integration layer fans out requests to multiple backends and merges responses for the caller.
+  - **Saga pattern** — manages distributed transactions across services without two-phase commit by coordinating a sequence of local transactions with compensating actions on failure.
+  - **Anti-corruption layer (ACL)** — a translation boundary that prevents upstream domain models from polluting downstream bounded contexts; critical when integrating legacy systems.
+  - **Strangler Fig** — incrementally replaces a [[Monolithic Architecture]] by routing traffic to new services while keeping legacy paths alive, enabling zero-downtime migration.
+  - **CQRS (Command Query Responsibility Segregation)** — separates read and write models so that query paths can be optimised independently of command paths.
+
+- ### Applications and Use Cases
+  - **Enterprise IT modernisation** — connecting on-premises ERP (SAP, Oracle) to cloud-native SaaS via iPaaS platforms (MuleSoft, Boomi, Azure Integration Services).
+  - **IoT and edge integration** — aggregating telemetry from sensors, cameras, and actuators into centralised data stores and real-time analytics pipelines; foundational for [[Digital Twin]] platforms.
+  - **[[Spatial Computing]] platforms** — integrating 3D content pipelines, physics engines, user presence services, and identity systems to produce cohesive XR experiences.
+  - **[[AI Orchestration]]** — wiring LLM inference endpoints, vector databases, tool-calling services, and retrieval-augmented generation pipelines into coherent AI applications.
+  - **[[Supply Chain Visibility]]** — connecting EDI feeds, logistics APIs, warehouse management systems, and blockchain traceability layers so that goods can be tracked end-to-end.
+  - **Financial services** — integrating core banking systems with payment networks, fraud detection engines, regulatory reporting pipelines, and open-banking APIs.
+  - **Healthcare interoperability** — connecting EHR systems, diagnostic imaging, laboratory systems, and patient portals using HL7 FHIR as the common exchange standard.
+  - **DevSecOps pipelines** — integrating CI/CD toolchains, security scanning, artefact registries, and deployment orchestrators into end-to-end software delivery pipelines.
+
+- ### Relationships
+  - hasPart:: [[API Gateway]]
+  - hasPart:: [[Middleware]]
+  - hasPart:: [[Message Broker]]
+  - hasPart:: [[Data Pipeline]]
+  - hasPart:: [[Service Mesh]]
+  - requires:: [[API Design]]
+  - requires:: [[Identity Federation]]
+  - requires:: [[Data Serialisation]]
+  - enables:: [[Interoperability]]
+  - enables:: [[Distributed Systems]]
+  - enables:: [[Digital Twin]]
+  - enables:: [[Composable Architecture]]
+  - dependsOn:: [[Network Protocol]]
+  - dependsOn:: [[Security Policy]]
+  - implements:: [[Event Driven Architecture]]
+  - implements:: [[Service Oriented Architecture]]
+  - implements:: [[Microservices]]
+  - uses:: [[REST API]]
+  - uses:: [[GraphQL]]
+  - uses:: [[gRPC]]
+  - uses:: [[Apache Kafka]]
+  - standardizedBy:: [[OpenAPI Specification]]
+  - standardizedBy:: [[AsyncAPI]]
+  - contrastsWith:: [[Monolithic Architecture]]
+  - contrastsWith:: [[Point To Point Integration]]
+  - bridgesTo:: [[AI Orchestration]]
+  - bridgesTo:: [[Spatial Computing]]
+  - bridgesTo:: [[Supply Chain Visibility]]
+  - relatedTo:: [[Enterprise Architecture]]
+  - relatedTo:: [[DevOps]]
+  - relatedTo:: [[Observability]]
+
+- ### Standards and Context
+  - **[[OpenAPI Specification]]** (OAS 3.x) — the de facto standard for describing synchronous HTTP APIs; enables code generation, documentation, and contract testing.
+  - **[[AsyncAPI]]** 2.x / 3.x — extends API-description concepts to asynchronous and event-driven channels (Kafka topics, AMQP queues, WebSockets).
+  - **HL7 FHIR** — the dominant interoperability standard for healthcare data exchange, built on RESTful APIs and structured JSON/XML resources.
+  - **OASIS AMQP** — open wire protocol for message-oriented middleware, implemented by RabbitMQ and Azure Service Bus.
+  - **W3C Web of Things (WoT)** — standardises IoT device description so that heterogeneous devices can be integrated without bespoke adapters.
+  - **IEEE 12207** — systems and software lifecycle processes standard that frames integration as a formal lifecycle activity alongside design, implementation, and verification.
+  - **TOGAF ADM** — The Open Group Architecture Framework's Architecture Development Method designates integration architecture as a core concern of Solutions Architecture phases.
+  - Governance bodies: **The Open Group**, **OASIS**, **W3C**, **IEEE**, **Cloud Native Computing Foundation (CNCF)** (service mesh, messaging).
 
 - ### Semantic Classification
   - owl-class:: infrastructure:SystemIntegration
   - owl-role:: Concept
-
-- ### Relationships
-  - requires [[Middleware]]
-  - requires [[API Gateway]]
-  - enables [[Interoperability]]
-  - enables [[Data Pipeline]]
-  - relatedTo [[Event Driven Architecture]]
-
-- ### Content
-  # SystemIntegration
-  SystemIntegration represents a key component in Metaverse infrastructure and technology. Research: SystemIntegration in Metaverse - API integration, data pipelines, legacy system integration
-  - https://www.khronos.org/ - Industry standards
-  - https://www.w3.org/TR/ - Web standards
-  - https://developer.mozilla.org/ - Technical documentation
-
-  ## Sources
+  - sameAs:: [[Application Integration]]
+  - sameAs:: [[Enterprise Application Integration]]
 
 - ### Provenance
-  - sources::
+  - sources:: IEEE 12207, TOGAF ADM, OpenAPI Initiative, AsyncAPI Specification, CNCF landscape, OASIS AMQP, W3C WoT
+  - updated:: 2026-06-13
   - migration-date:: 2026-04-26T00:00:00Z

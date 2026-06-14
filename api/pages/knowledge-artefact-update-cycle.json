@@ -5,25 +5,104 @@
   "public": true,
   "classIri": "urn:ngm:class:knowledge-artefact-update-cycle",
   "domain": "infrastructure",
-  "definition": "An Update Cycle is the recurring interval at which knowledge artefacts, links, or system components are reviewed and refreshed to maintain accuracy and relevance. In knowledge graph and documentation contexts, update cycles are defined per content type based on the rate of underlying change, balancing maintenance effort against information staleness.",
+  "definition": "A Knowledge Artefact Update Cycle is a structured, recurring process through which knowledge assets \u2014 including ontology classes, documentation nodes, linked data graphs, and curated references \u2014 are reviewed, validated, corrected, and re-published to maintain epistemic accuracy and semantic coherence. The cycle defines per-artefact cadences calibrated to the rate of change of underlying domains, balancing maintenance cost against information decay. It sits at the intersection of knowledge lifecycle management, data stewardship, and continuous integration practices applied to semantic knowledge bases. Effective update cycles incorporate provenance tracking, diff-based change detection, and staleness thresholds to trigger targeted refresh actions without wholesale reconstruction of the knowledge graph.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:infra-software-engineering",
-      "label": "Software Engineering"
+      "id": "urn:ngm:class:knowledge-lifecycle-management",
+      "label": "Knowledge Lifecycle Management"
     }
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:staleness-detection",
+        "label": "Staleness Detection"
+      },
+      {
+        "id": "urn:ngm:class:provenance-tracking",
+        "label": "Provenance Tracking"
+      },
+      {
+        "id": "urn:ngm:class:change-propagation",
+        "label": "Change Propagation"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      },
+      {
+        "id": "urn:ngm:class:ontology-versioning",
+        "label": "Ontology Versioning"
+      },
+      {
+        "id": "urn:ngm:class:data-quality-management",
+        "label": "Data Quality Management"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:knowledge-graph-maintenance",
+        "label": "Knowledge Graph Maintenance"
+      },
+      {
+        "id": "urn:ngm:class:information-freshness",
+        "label": "Information Freshness"
+      },
+      {
+        "id": "urn:ngm:class:semantic-consistency",
+        "label": "Semantic Consistency"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:change-detection",
+        "label": "Change Detection"
+      },
+      {
+        "id": "urn:ngm:class:metadata-management",
+        "label": "Metadata Management"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:batch-data-migration",
+        "label": "Batch Data Migration"
+      },
+      {
+        "id": "urn:ngm:class:static-documentation",
+        "label": "Static Documentation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:machine-learning-pipeline",
+        "label": "Machine Learning Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:continuous-integration",
+        "label": "Continuous Integration"
+      },
+      {
+        "id": "urn:ngm:class:automated-pipeline",
+        "label": "Automated Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:data-lineage",
+        "label": "Data Lineage"
+      }
+    ],
     "supports": [
       {
         "id": "urn:ngm:class:knowledge-management-system",
@@ -32,18 +111,31 @@
       {
         "id": "urn:ngm:class:documentation-standards",
         "label": "Documentation Standards"
+      },
+      {
+        "id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
       }
     ],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:knowledge-lifecycle-management",
+        "label": "Knowledge Lifecycle Management"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:knowledge-management",
         "label": "Knowledge Management"
       },
       {
-        "id": "urn:ngm:class:version-control",
-        "label": "Version Control"
+        "id": "urn:ngm:class:ontology-engineering",
+        "label": "Ontology Engineering"
       }
     ]
   },

@@ -5,19 +5,49 @@
   "public": true,
   "classIri": "urn:ngm:class:imu",
   "domain": "spatial-computing",
-  "definition": "An Inertial Measurement Unit (IMU) is a self-contained electronic sensor module that combines tri-axial accelerometers, gyroscopes, and optionally magnetometers to measure a body's specific force, angular rate, and orientation relative to an inertial reference frame. In spatial-computing headsets and controllers, the IMU provides low-latency, high-frequency pose estimates that are fused with visual odometry or SLAM to achieve stable, drift-corrected tracking. The same component is integral to robot proprioception, UAV stabilisation, and motion-capture systems.",
+  "definition": "An Inertial Measurement Unit (IMU) is a self-contained electronic sensor module that integrates tri-axial accelerometers, gyroscopes, and optionally magnetometers to measure a rigid body's specific force, angular rate, and magnetic heading relative to an inertial reference frame without dependence on external infrastructure. MEMS-fabricated IMUs fuse their outputs through Kalman or complementary filter algorithms to yield real-time pose and orientation estimates at high sample rates, feeding inertial navigation, SLAM pipelines, and 6-DoF tracking systems. IMUs span performance grades from low-cost consumer MEMS units (bias instability >1\u00b0/hr) to navigation-grade fibre-optic and ring-laser gyro systems used in aerospace and submarine applications. They are integral to XR headsets, autonomous vehicles, UAVs, legged robots, wearables, and surgical instruments wherever low-latency, infrastructure-independent motion awareness is required.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:sc-interaction",
-      "label": "Spatial Interaction"
+      "id": "urn:ngm:class:sensor",
+      "label": "Sensor"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.76,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:accelerometer",
+        "label": "Accelerometer"
+      },
+      {
+        "id": "urn:ngm:class:gyroscope",
+        "label": "Gyroscope"
+      },
+      {
+        "id": "urn:ngm:class:magnetometer",
+        "label": "Magnetometer"
+      },
+      {
+        "id": "urn:ngm:class:digital-motion-processor",
+        "label": "Digital Motion Processor"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:mems",
+        "label": "MEMS"
+      },
+      {
+        "id": "urn:ngm:class:kalman-filter",
+        "label": "Kalman Filter"
+      },
+      {
+        "id": "urn:ngm:class:analogue-to-digital-converter",
+        "label": "Analogue-to-Digital Converter"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:sensor-fusion",
@@ -26,22 +56,79 @@
       {
         "id": "urn:ngm:class:motion-tracking",
         "label": "Motion Tracking"
-      }
-    ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [
+      },
       {
-        "id": "urn:ngm:class:inertial-measurement-unit",
-        "label": "Inertial Measurement Unit"
+        "id": "urn:ngm:class:dead-reckoning",
+        "label": "Dead Reckoning"
+      },
+      {
+        "id": "urn:ngm:class:6dof-tracking",
+        "label": "6-DoF Tracking"
+      },
+      {
+        "id": "urn:ngm:class:attitude-estimation",
+        "label": "Attitude Estimation"
       }
     ],
-    "relatedTo": [
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:real-time-operating-system",
+        "label": "Real-Time Operating System"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:strapdown-navigation",
+        "label": "Strapdown Navigation"
+      },
+      {
+        "id": "urn:ngm:class:newton-euler-dynamics",
+        "label": "Newton-Euler Dynamics"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:gps",
+        "label": "GPS"
+      },
+      {
+        "id": "urn:ngm:class:optical-tracking",
+        "label": "Optical Tracking"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:robot-proprioception",
+        "label": "Robot Proprioception"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicle"
+      },
+      {
+        "id": "urn:ngm:class:human-motion-capture",
+        "label": "Human Motion Capture"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:quaternion",
+        "label": "Quaternion"
+      },
+      {
+        "id": "urn:ngm:class:euler-angles",
+        "label": "Euler Angles"
+      },
+      {
+        "id": "urn:ngm:class:complementary-filter",
+        "label": "Complementary Filter"
+      },
+      {
+        "id": "urn:ngm:class:rotation-matrix",
+        "label": "Rotation Matrix"
+      }
+    ],
+    "supports": [
       {
         "id": "urn:ngm:class:slam",
         "label": "SLAM"
@@ -49,6 +136,60 @@
       {
         "id": "urn:ngm:class:pose-estimation",
         "label": "Pose Estimation"
+      },
+      {
+        "id": "urn:ngm:class:visual-inertial-odometry",
+        "label": "Visual-Inertial Odometry"
+      },
+      {
+        "id": "urn:ngm:class:hand-tracking",
+        "label": "Hand Tracking"
+      },
+      {
+        "id": "urn:ngm:class:gait-analysis",
+        "label": "Gait Analysis"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ieee-1559",
+        "label": "IEEE 1559"
+      },
+      {
+        "id": "urn:ngm:class:ieee-952",
+        "label": "IEEE 952"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:inertial-navigation-system",
+        "label": "Inertial Navigation System"
+      },
+      {
+        "id": "urn:ngm:class:xr-headset",
+        "label": "XR Headset"
+      },
+      {
+        "id": "urn:ngm:class:flight-controller",
+        "label": "Flight Controller"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:lidar",
+        "label": "LiDAR"
+      },
+      {
+        "id": "urn:ngm:class:motion-sickness",
+        "label": "Motion Sickness"
+      },
+      {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "id": "urn:ngm:class:gnss",
+        "label": "GNSS"
       }
     ]
   },

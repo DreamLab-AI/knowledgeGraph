@@ -55,7 +55,7 @@ public:: true
   "@type": "Class",
   "label": "JAX",
   "definition": "A Python library from Google for high-performance numerical computing and machine learning research, combining NumPy-style array operations with automatic differentiation and just-in-time compilation.",
-  "domain": "deep-learning",
+  "domain": "machine-learning",
   "maturity": "growing",
   "qualityScore": 0.7,
   "subClassOf": [

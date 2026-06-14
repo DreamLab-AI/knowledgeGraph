@@ -4,8 +4,8 @@
   "slug": "mi-ca",
   "public": true,
   "classIri": "urn:ngm:class:mi-ca",
-  "domain": "mica",
-  "definition": "MiCA (Markets in Crypto-Assets Regulation) is a European Union regulation establishing a harmonised legal framework for crypto-assets not already covered by existing financial services law. Adopted in 2023 and applying in phases through 2024, it sets rules for issuers of asset-referenced tokens and e-money tokens, and for crypto-asset service providers such as exchanges and custodians. The regulation covers authorisation, capital and governance requirements, market-abuse provisions and consumer protection, including reserve and redemption rules for stablecoins. It is one of the first comprehensive crypto regulatory regimes among major jurisdictions.",
+  "domain": "governance",
+  "definition": "MiCA (Markets in Crypto-Assets Regulation, EU 2023/1114) is the European Union's comprehensive legal framework governing crypto-assets not already covered by existing financial services legislation such as MiFID II. It classifies crypto-assets into three categories \u2014 utility tokens, asset-referenced tokens (ARTs), and e-money tokens (EMTs) \u2014 imposing tiered obligations on issuers including mandatory white-paper disclosures, capital adequacy requirements, and reserve safeguards for stablecoins. Crypto-asset service providers (CASPs) \u2014 encompassing exchanges, custodians, portfolio managers, and advisers \u2014 must obtain authorisation from a national competent authority with passporting rights across the EU single market. MiCA entered into force in June 2023 with stablecoin provisions applying from June 2024 and the full CASP regime from December 2024, making it one of the world's first end-to-end crypto regulatory regimes.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:regulatory-domain",
@@ -13,21 +13,144 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.74,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "requires": [
+      {
+        "id": "urn:ngm:class:crypto-asset-white-paper",
+        "label": "Crypto-Asset White Paper"
+      },
+      {
+        "id": "urn:ngm:class:national-competent-authority",
+        "label": "National Competent Authority"
+      },
+      {
+        "id": "urn:ngm:class:capital-adequacy",
+        "label": "Capital Adequacy"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:eu-passporting",
+        "label": "EU Passporting"
+      },
+      {
+        "id": "urn:ngm:class:consumer-protection",
+        "label": "Consumer Protection"
+      },
+      {
+        "id": "urn:ngm:class:market-integrity",
+        "label": "Market Integrity"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:european-banking-authority",
+        "label": "European Banking Authority"
+      },
+      {
+        "id": "urn:ngm:class:european-securities-and-markets-authority",
+        "label": "European Securities and Markets Authority"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:crypto-asset-regulation",
+        "label": "Crypto-Asset Regulation"
+      },
+      {
+        "id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:mifid-ii",
+        "label": "MiFID II"
+      },
+      {
+        "id": "urn:ngm:class:sec-crypto-regulation",
+        "label": "SEC Crypto Regulation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:asset-referenced-token",
+        "label": "Asset-Referenced Token"
+      },
+      {
+        "id": "urn:ngm:class:e-money-token",
+        "label": "E-Money Token"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:european-union",
+        "label": "European Union"
+      },
+      {
+        "id": "urn:ngm:class:eba",
+        "label": "EBA"
+      },
+      {
+        "id": "urn:ngm:class:esma",
+        "label": "ESMA"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:eu-digital-finance-strategy",
+        "label": "EU Digital Finance Strategy"
+      },
+      {
+        "id": "urn:ngm:class:eu-single-market",
+        "label": "EU Single Market"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:dora",
+        "label": "DORA"
+      },
+      {
+        "id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "id": "urn:ngm:class:fatf-travel-rule",
+        "label": "FATF Travel Rule"
+      },
+      {
+        "id": "urn:ngm:class:transfer-of-funds-regulation",
+        "label": "Transfer of Funds Regulation"
+      }
+    ]
   },
   "wikilinks": [
     {

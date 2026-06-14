@@ -22,7 +22,7 @@ alias:: RealityCapture
   "@type": "Class",
   "label": "Reality Capture",
   "definition": "Reality capture is the process of digitising the physical world into accurate, measurable 3D representations using sensors such as LiDAR scanners, photogrammetric camera arrays, and depth cameras, producing point clouds, textured meshes, or digital twin models. It encompasses the full workflow from on-site data acquisition to processing, georeferencing, and delivery of survey-grade or visualisation-grade 3D assets. Reality capture is foundational to construction, heritage preservation, urban digital twins, and spatial computing content pipelines.",
-  "domain": "spatial",
+  "domain": "spatial-computing",
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:etsi-domain-reality-capture", "label": "ETSI_Domain_Reality_Capture"}],
   "relations": {

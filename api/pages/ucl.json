@@ -4,7 +4,7 @@
   "slug": "ucl",
   "public": true,
   "classIri": "urn:ngm:class:ucl",
-  "domain": "general",
+  "domain": "artificial-intelligence",
   "definition": "The common abbreviation for University College London, a major research university in London active in computing and artificial intelligence research.",
   "subClassOf": [
     {

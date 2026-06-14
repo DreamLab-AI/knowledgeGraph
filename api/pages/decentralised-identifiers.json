@@ -4,7 +4,7 @@
   "slug": "decentralised-identifiers",
   "public": true,
   "classIri": "urn:ngm:class:decentralised-identifiers",
-  "domain": "cryptographic",
+  "domain": "security",
   "definition": "A W3C standard for globally unique identifiers that are created, owned and controlled by their subject without reliance on a central registration authority, enabling verifiable, self-sovereign digital identity.",
   "subClassOf": [
     {

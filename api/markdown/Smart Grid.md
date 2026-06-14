@@ -20,42 +20,158 @@ public:: true
   "@id": "urn:ngm:class:smart-grid",
   "@type": "Class",
   "label": "Smart Grid",
-  "definition": "A smart grid is a modernised electricity distribution network that integrates digital communication, real-time sensing, and automated control to improve efficiency, reliability, and sustainability relative to the traditional centralised grid. It enables bidirectional power and information flows, accommodating distributed generation from renewable sources, battery storage, and vehicle-to-grid interactions. Smart grids use advanced metering infrastructure, demand-response programmes, and grid-edge intelligence to balance supply and demand dynamically. They are a foundational component of low-carbon energy infrastructure and increasingly incorporate AI-driven forecasting and optimisation.",
+  "definition": "A smart grid is a modernised electricity distribution and transmission network that integrates digital communication, real-time sensing, automated control, and distributed intelligence to improve efficiency, reliability, resilience, and sustainability relative to the traditional centralised grid. It enables bidirectional power and information flows, accommodating distributed generation from renewable sources, battery energy storage systems, demand-side flexibility, and vehicle-to-grid interactions. Advanced metering infrastructure, distribution automation, phasor measurement units, and AI-driven optimisation allow operators to balance supply and demand dynamically across thousands of grid-edge resources. Smart grids are a foundational component of low-carbon energy infrastructure and are governed by a set of interoperability standards spanning communications, cybersecurity, and market protocols.",
   "domain": "infrastructure",
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:cyber-physical-systems", "label": "Cyber Physical Systems"}],
+  "sameAs": [
+    {"@id": "urn:ngm:class:intelligent-grid", "label": "Intelligent Grid"},
+    {"@id": "urn:ngm:class:advanced-metering-infrastructure", "label": "Advanced Metering Infrastructure"}
+  ],
   "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:advanced-metering-infrastructure", "label": "Advanced Metering Infrastructure"},
+      {"@id": "urn:ngm:class:distribution-automation", "label": "Distribution Automation"},
+      {"@id": "urn:ngm:class:phasor-measurement-unit", "label": "Phasor Measurement Unit"},
+      {"@id": "urn:ngm:class:energy-management-system", "label": "Energy Management System"}
+    ],
     "uses": [
       {"@id": "urn:ngm:class:io-t-sensor-network", "label": "IoT Sensor Network"},
       {"@id": "urn:ngm:class:real-time-monitoring", "label": "Real-Time Monitoring"},
-      {"@id": "urn:ngm:class:demand-response", "label": "Demand Response"}
+      {"@id": "urn:ngm:class:demand-response", "label": "Demand Response"},
+      {"@id": "urn:ngm:class:scada", "label": "SCADA"},
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:renewable-energy-certificates", "label": "Renewable Energy Certificates"},
-      {"@id": "urn:ngm:class:energy-and-power", "label": "Energy and Power"}
+      {"@id": "urn:ngm:class:energy-and-power", "label": "Energy and Power"},
+      {"@id": "urn:ngm:class:vehicle-to-grid", "label": "Vehicle-to-Grid"},
+      {"@id": "urn:ngm:class:peer-to-peer-energy-trading", "label": "Peer-to-Peer Energy Trading"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:cybersecurity", "label": "Cybersecurity"},
+      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
+      {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:telecommunications-infrastructure", "label": "Telecommunications Infrastructure"},
+      {"@id": "urn:ngm:class:power-management", "label": "Power Management"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:ai-energy-scarcity", "label": "AI Energy Scarcity"},
+      {"@id": "urn:ngm:class:carbon-markets", "label": "Carbon Markets"},
+      {"@id": "urn:ngm:class:distributed-energy-resources", "label": "Distributed Energy Resources"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:iec-61968", "label": "IEC 61968"},
+      {"@id": "urn:ngm:class:ieee-2030", "label": "IEEE 2030"},
+      {"@id": "urn:ngm:class:nist-smart-grid-framework", "label": "NIST Smart Grid Framework"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:industrial-io-t", "label": "Industrial IoT"},
       {"@id": "urn:ngm:class:anomaly-detection", "label": "Anomaly Detection"},
-      {"@id": "urn:ngm:class:power-management", "label": "Power Management"}
+      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
     ],
-    "supports": [
-      {"@id": "urn:ngm:class:ai-energy-scarcity", "label": "AI Energy Scarcity"}
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
+      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"}
     ]
   },
-  "quality": 0.8
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-13T00:00:00Z",
+    "inferenceRule": "ManualEnrichment"
+  }
 }
 ```
 
 - ### Definition
-  - A [[Smart Grid]] is a [[Cyber Physical Systems]] infrastructure that overlays digital communication, [[Real-Time Monitoring]], and [[Demand Response]] automation onto electricity distribution networks to integrate renewable generation, distributed storage, and dynamic load balancing.
+  - A [[Smart Grid]] is a [[Cyber Physical Systems]] infrastructure that overlays digital communication, [[Real-Time Monitoring]], [[SCADA]], and [[Demand Response]] automation onto electricity distribution and transmission networks to integrate [[Renewable Energy]] generation, [[Distributed Energy Resources]], and dynamic load balancing. By enabling bidirectional power and data flows, the smart grid supports [[Vehicle-to-Grid]] exchanges, grid-edge [[Battery Energy Storage]], and [[Peer-to-Peer Energy Trading]] marketplaces while remaining dependent on robust [[Cybersecurity]] and [[Interoperability]] standards.
+
+- ### Overview
+  - Traditional electricity grids were engineered around centralised generation and strictly unidirectional power flows — large thermal or hydro stations feeding passive consumers through high-voltage transmission and local distribution networks. This architecture struggles to absorb the growth of variable [[Distributed Energy Resources]] (rooftop solar, community wind farms) and the flexible loads of [[Electric Vehicles]], heat pumps, and data centres that characterise the contemporary energy transition.
+  - Smart grid technology resolves these tensions by embedding two-way digital communication and decision-making intelligence throughout the network:
+    - **Advanced Metering Infrastructure (AMI)** gives utilities real-time consumption visibility at every connection point, replacing monthly manual reads with sub-hourly interval data.
+    - **Distribution Automation** uses remotely controlled switches and self-healing algorithms to re-route power around faults without manual crew dispatch, dramatically reducing outage duration.
+    - **Phasor Measurement Units (PMUs)** monitor grid frequency and voltage at millisecond resolution, enabling wide-area situational awareness and early detection of oscillatory instability.
+    - **Energy Management Systems (EMS)** and Distribution Management Systems (DMS) coordinate generation dispatch, reactive power support, and voltage regulation across the whole network.
+  - The result is a network that responds dynamically to imbalance, integrates diverse and decentralised energy sources, and exposes market signals to flexible consumers and prosumers.
+
+- ### Key Components
+  - **[[Advanced Metering Infrastructure]]** — two-way smart meters, home area networks, data concentrators, and meter data management systems that collect fine-grained consumption and generation data.
+  - **[[Distribution Automation]]** — intelligent electronic devices (IEDs), fault indicators, reclosers, and volt/VAR optimisation systems that automate grid switching and power quality correction.
+  - **[[Phasor Measurement Unit]]** — GPS-synchronised sensors that sample voltage and current phasors at high frequency, feeding wide-area monitoring systems.
+  - **[[Energy Management System]]** — software platforms for generation scheduling, unit commitment, economic dispatch, and contingency analysis at transmission level.
+  - **[[SCADA]]** — Supervisory Control and Data Acquisition systems that provide operator visibility and remote control of substations and field devices.
+  - **[[Demand Response]]** — programmes and automated controls that shift or curtail consumer load in response to price signals, grid stress events, or direct utility commands.
+  - **[[Battery Energy Storage]]** — utility-scale and behind-the-meter storage systems that buffer renewable intermittency and provide frequency regulation services.
+  - **[[IoT Sensor Network]]** — grid-edge sensors monitoring transformer temperatures, cable fault signatures, and environmental conditions feeding predictive maintenance models.
+  - **[[Edge Computing]]** — local processing at substations and smart meters reduces latency for protection applications and reduces backhaul bandwidth requirements.
+  - **[[Cybersecurity]]** infrastructure — firewalls, intrusion detection, encrypted communications, and identity management protecting the expanded attack surface of the digitised grid.
+
+- ### Applications and Use Cases
+  - **Renewable Integration** — forecasting and real-time re-dispatch of solar and wind resources, grid-scale storage dispatch, and curtailment minimisation using [[Machine Learning]] load and generation forecasts.
+  - **Demand-Side Flexibility** — residential smart thermostats, commercial HVAC controllers, and industrial process schedulers participating in [[Demand Response]] markets to flatten peak demand and avoid expensive peaker plant dispatch.
+  - **[[Vehicle-to-Grid]] (V2G)** — bi-directional electric vehicle charging that absorbs excess renewable generation and injects stored energy back to support evening peaks, treating EV fleets as a distributed storage asset.
+  - **Fault Location, Isolation and Service Restoration (FLISR)** — automated [[Distribution Automation]] sequences that detect faults, isolate the affected section, and restore supply to unaffected customers within seconds.
+  - **Predictive Maintenance** — [[Anomaly Detection]] algorithms applied to transformer thermal signatures, partial discharge monitoring, and cable insulation degradation to schedule maintenance before failure.
+  - **[[Peer-to-Peer Energy Trading]]** — smart grid data and settlement infrastructure enabling prosumers to trade excess solar generation with neighbours through local energy markets, potentially using [[Blockchain]] for settlement.
+  - **Grid [[Digital Twin]]** — real-time simulation models fed by smart grid sensor streams used for operator training, planning studies, and model predictive control of voltage and frequency.
+  - **[[Carbon Markets]] integration** — granular smart meter and generation data underpinning 24/7 clean energy matching, carbon intensity APIs, and [[Renewable Energy Certificates]] registry automation.
+  - **Data Centre Flexibility** — large computing loads coordinating consumption with grid frequency signals, contributing to [[AI Energy Scarcity]] mitigation as AI infrastructure scales.
+
 - ### Relationships
-  - [[Smart Grid]] is a [[Cyber Physical Systems]] specialisation that employs [[IoT Sensor Network]] deployments for grid-edge sensing and relies on [[Real-Time Monitoring]] to detect faults and imbalances, triggering [[Demand Response]] events to manage load. It enables issuance and settlement of [[Renewable Energy Certificates]] and underpins the broader [[Energy and Power]] domain. It interfaces with [[Industrial IoT]] platforms, applies [[Anomaly Detection]] for predictive maintenance, and requires [[Power Management]] strategies to balance the intermittency challenge. It also contextualises discourse around [[AI Energy Scarcity]] as data centres become significant flexible loads.
-- ### Content
-  - Traditional electricity grids were designed around centralised generation and unidirectional power flows from large power stations through transmission and distribution networks to passive consumers. This architecture struggles to accommodate the growth of distributed renewable generation—rooftop solar, community wind—and the flexible loads of electric vehicles and heat pumps that characterise the contemporary energy transition.
+  - partOf:: [[Cyber Physical Systems]]
+  - hasPart:: [[Advanced Metering Infrastructure]]
+  - hasPart:: [[Distribution Automation]]
+  - hasPart:: [[Phasor Measurement Unit]]
+  - hasPart:: [[Energy Management System]]
+  - uses:: [[IoT Sensor Network]]
+  - uses:: [[Real-Time Monitoring]]
+  - uses:: [[Demand Response]]
+  - uses:: [[SCADA]]
+  - uses:: [[Machine Learning]]
+  - enables:: [[Renewable Energy Certificates]]
+  - enables:: [[Energy and Power]]
+  - enables:: [[Vehicle-to-Grid]]
+  - enables:: [[Peer-to-Peer Energy Trading]]
+  - requires:: [[Cybersecurity]]
+  - requires:: [[Edge Computing]]
+  - requires:: [[Interoperability]]
+  - dependsOn:: [[Telecommunications Infrastructure]]
+  - dependsOn:: [[Power Management]]
+  - supports:: [[AI Energy Scarcity]]
+  - supports:: [[Carbon Markets]]
+  - supports:: [[Distributed Energy Resources]]
+  - relatedTo:: [[Industrial IoT]]
+  - relatedTo:: [[Anomaly Detection]]
+  - relatedTo:: [[Digital Twin]]
+  - relatedTo:: [[Blockchain]]
+  - bridges-to:: [[Reinforcement Learning]]
+  - bridges-to:: [[Federated Learning]]
 
-  - Smart grid technology addresses these limitations by embedding two-way digital communication throughout the grid: advanced metering infrastructure (AMI) gives utilities real-time visibility of consumption at every connection point; phasor measurement units (PMUs) monitor grid frequency and voltage at millisecond resolution; distribution automation systems re-route power around faults automatically without manual crew dispatch.
+- ### Standards and Governance
+  - **IEC 61968 / IEC 61970** — Common Information Model (CIM) for utility enterprise integration, defining a shared data model for grid assets, topology, and metering that enables interoperability between energy management systems from different vendors.
+  - **IEC 62351** — security standards for power systems communications protocols including DNP3, IEC 61850, and ICCP.
+  - **IEC 61850** — substation automation and protection communication standard, enabling vendor-neutral IED configuration and peer-to-peer GOOSE messaging for protection tripping.
+  - **IEEE 2030** — guide for smart grid interoperability across the energy technology, information technology, and communications technology domains.
+  - **NIST Smart Grid Interoperability Framework** — a conceptual model and roadmap defining priority action plans for smart grid standards in the US context, maintained by the NIST Smart Grid Advisory Committee.
+  - **NERC CIP** — North American Electric Reliability Corporation Critical Infrastructure Protection standards mandating cybersecurity controls for bulk electric system assets, applicable to smart grid control systems.
+  - **OpenADR** — Open Automated Demand Response communications specification, enabling utilities to send price and reliability signals to customer systems for [[Demand Response]] automation.
+  - **IEC 62056 (DLMS/COSEM)** — data exchange protocol used by smart meters for remote reading and configuration.
+  - **IEEE 1547** — standard for interconnection and interoperability of [[Distributed Energy Resources]] with associated electric power systems, governing smart inverter grid support functions.
 
-  - Demand response programmes leverage smart grid communication to signal consumers and automated building systems to shift or curtail consumption during peak periods, reducing the need for peaking generation capacity. Residential smart thermostats, commercial HVAC controllers, and industrial process schedulers all participate in demand response when given appropriate price signals or direct control commands through grid management software.
+- ### AI and Computational Dimensions
+  - Smart grids generate continuous high-volume telemetry that creates ideal conditions for applying [[Machine Learning]] and [[Reinforcement Learning]]:
+    - **Short-term load forecasting** using recurrent neural networks or gradient boosting on weather, calendar, and historical meter data achieves sub-2% MAPE in well-instrumented networks.
+    - **Renewable generation forecasting** combines numerical weather prediction with statistical post-processing or deep learning to improve solar and wind dispatch schedules.
+    - **Reinforcement learning for Volt/VAR control** — agents trained in simulation environments (often powered by [[Digital Twin]] models) learn adaptive voltage regulation policies that outperform fixed rule-based controllers under high solar penetration.
+    - **[[Federated Learning]]** allows distribution utilities to train shared anomaly detection models across substations without exposing sensitive meter data to a central server, preserving customer privacy while benefiting from collective intelligence.
+    - **[[Anomaly Detection]]** applied to SCADA telemetry and smart meter data identifies both equipment degradation signatures and potential cyberattack indicators (e.g., false data injection attacks on state estimators).
+  - The interaction between smart grids and AI infrastructure runs in both directions: AI data centres are emerging as significant flexible loads that participate in [[Demand Response]], and their growth is central to discourse around [[AI Energy Scarcity]].
 
-  - AI is increasingly embedded in smart grid operations for load forecasting, renewable output prediction, fault prognosis, and reinforcement-learning-based distribution network management. These capabilities are essential as grid complexity grows: managing thousands of distributed energy resources requires optimisation methods beyond the reach of traditional rule-based SCADA systems. Cybersecurity becomes a critical concern as the attack surface expands with digitisation.
+- ### Provenance
+  - sources:: IEC TC57, IEEE Power and Energy Society, NIST Smart Grid Programme, US DOE Office of Electricity, ENTSO-E, IEA Electricity Security reports
+  - updated:: 2026-06-13

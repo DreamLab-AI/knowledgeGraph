@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:gas-fee",
   "domain": "blockchain",
-  "definition": "A gas fee is the payment a user makes to a blockchain network to have a transaction or smart contract operation executed and included in a block.",
+  "definition": "A gas fee is the payment a user must make to compensate the network validators or miners for the computational resources consumed when processing a transaction or executing a smart contract on a blockchain. On Ethereum-compatible networks, 'gas' is an abstract unit measuring the computational effort required by an operation; the fee is calculated as gas units consumed multiplied by a price per unit (the gas price), denominated in the network's native currency. Following EIP-1559 on Ethereum, gas fees split into a protocol-set base fee \u2014 which is burned, permanently removing supply \u2014 and an optional priority tip paid directly to the block proposer. Gas fees serve the dual purpose of economically compensating validators and acting as a spam-prevention mechanism by making resource-intensive computation costly.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:transaction-fee",
@@ -13,26 +13,127 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.75,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:smart-contract",
-        "label": "Smart Contract"
+        "id": "urn:ngm:class:native-token",
+        "label": "Native Token"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
       }
     ],
-    "enables": [],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:transaction-validation",
+        "label": "Transaction Validation"
+      },
+      {
+        "id": "urn:ngm:class:spam-prevention",
+        "label": "Spam Prevention"
+      },
+      {
+        "id": "urn:ngm:class:block-production",
+        "label": "Block Production"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:gas-limit",
+        "label": "Gas Limit"
+      },
+      {
+        "id": "urn:ngm:class:gas-price",
+        "label": "Gas Price"
+      },
+      {
+        "id": "urn:ngm:class:network-congestion",
+        "label": "Network Congestion"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:eip-1559",
+        "label": "EIP-1559"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:feeless-blockchain",
+        "label": "Feeless Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:mechanism-design",
+        "label": "Mechanism Design"
+      },
+      {
+        "id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      },
+      {
+        "id": "urn:ngm:class:microeconomics",
+        "label": "Microeconomics"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:mempool",
+        "label": "Mempool"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:non-fungible-token",
+        "label": "Non-Fungible Token"
+      },
+      {
+        "id": "urn:ngm:class:layer-2-scaling",
+        "label": "Layer-2 Scaling"
+      }
+    ],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:base-fee",
+        "label": "Base Fee"
+      },
+      {
+        "id": "urn:ngm:class:priority-fee",
+        "label": "Priority Fee"
+      },
+      {
+        "id": "urn:ngm:class:miner-extractable-value",
+        "label": "Miner Extractable Value"
+      }
+    ]
   },
   "wikilinks": [
     {

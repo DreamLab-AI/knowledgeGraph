@@ -5,39 +5,138 @@
   "public": true,
   "classIri": "urn:ngm:class:continual-learning",
   "domain": "machine-learning",
-  "definition": "A learning paradigm in which a model learns from a stream of tasks or data over time while retaining performance on previously learned tasks.",
+  "definition": "Continual Learning is a machine learning paradigm in which a model sequentially learns from a non-stationary stream of tasks or data distributions while retaining competence on previously acquired knowledge. It directly confronts catastrophic forgetting \u2014 the tendency of neural networks to overwrite earlier representations when updated on new training distributions. Core strategies span regularisation-based protection of critical parameters, rehearsal-based replay of past exemplars or synthetic surrogates, and architectural methods that expand or isolate network capacity per task. The field spans both supervised and reinforcement learning settings and is fundamental wherever data arrives incrementally and retraining from scratch is computationally or commercially infeasible.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:machine-learning-discipline",
+      "id": "urn:ngm:class:machine-learning",
       "label": "Machine Learning"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
-  "maturity": "growing",
+  "qualityScore": 0.74,
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:elastic-weight-consolidation",
+        "label": "Elastic Weight Consolidation"
+      },
+      {
+        "id": "urn:ngm:class:experience-replay",
+        "label": "Experience Replay"
+      },
+      {
+        "id": "urn:ngm:class:progressive-neural-networks",
+        "label": "Progressive Neural Networks"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-distillation",
+        "label": "Knowledge Distillation"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:online-learning",
         "label": "Online Learning"
+      },
+      {
+        "id": "urn:ngm:class:task-incremental-learning",
+        "label": "Task-Incremental Learning"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:transfer-learning",
         "label": "Transfer Learning"
+      },
+      {
+        "id": "urn:ngm:class:few-shot-learning",
+        "label": "Few-Shot Learning"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-agents",
+        "label": "Autonomous Agents"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:neural-networks",
+        "label": "Neural Networks"
+      },
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:regularisation",
+        "label": "Regularisation"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:catastrophic-forgetting",
+        "label": "Catastrophic Forgetting"
+      },
+      {
+        "id": "urn:ngm:class:batch-learning",
+        "label": "Batch Learning"
+      },
+      {
+        "id": "urn:ngm:class:multi-task-learning",
+        "label": "Multi-Task Learning"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:memory-replay",
+        "label": "Memory Replay"
+      },
+      {
+        "id": "urn:ngm:class:generative-adversarial-networks",
+        "label": "Generative Adversarial Networks"
+      },
+      {
+        "id": "urn:ngm:class:meta-learning",
+        "label": "Meta-Learning"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:domain-adaptation",
+        "label": "Domain Adaptation"
+      },
+      {
+        "id": "urn:ngm:class:curriculum-learning",
+        "label": "Curriculum Learning"
+      },
+      {
+        "id": "urn:ngm:class:neural-plasticity",
+        "label": "Neural Plasticity"
+      }
+    ]
   },
   "wikilinks": [
     {

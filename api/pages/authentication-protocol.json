@@ -4,7 +4,7 @@
   "slug": "authentication-protocol",
   "public": true,
   "classIri": "urn:ngm:class:authentication-protocol",
-  "domain": "cryptographic",
+  "domain": "security",
   "definition": "A defined sequence of exchanges through which one party proves its identity to another over a communication channel.",
   "subClassOf": [
     {

@@ -4,35 +4,136 @@
   "slug": "hm-treasury",
   "public": true,
   "classIri": "urn:ngm:class:hm-treasury",
-  "domain": "government",
-  "definition": "HM Treasury is the United Kingdom government department responsible for economic and financial policy, including taxation, public spending, and financial services regulation.",
+  "domain": "finance",
+  "definition": "HM Treasury (His Majesty's Treasury) is the United Kingdom government's principal economics and finance ministry, responsible for setting and implementing fiscal policy, managing public expenditure, and overseeing the financial services regulatory framework. Led by the Chancellor of the Exchequer, it coordinates macroeconomic strategy, tax policy, and sovereign debt management through the Debt Management Office. HM Treasury acts as the primary interface between the UK government and major financial regulators \u2014 including the Bank of England, the Financial Conduct Authority, and the Prudential Regulation Authority \u2014 establishing the legislative framework within which those bodies operate. It also leads the UK government's policy position on emerging financial technologies including cryptoassets, stablecoins, and central bank digital currencies.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:owl-thing",
-      "label": "owl:Thing"
+      "id": "urn:ngm:class:government-institution",
+      "label": "Government Institution"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
-  "maturity": "established",
+  "qualityScore": 0.74,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:debt-management-office",
+        "label": "Debt Management Office"
+      },
+      {
+        "id": "urn:ngm:class:office-for-budget-responsibility",
+        "label": "Office for Budget Responsibility"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:fiscal-policy",
+        "label": "Fiscal Policy"
+      },
+      {
+        "id": "urn:ngm:class:public-finance",
+        "label": "Public Finance"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:financial-regulation",
         "label": "Financial Regulation"
+      },
+      {
+        "id": "urn:ngm:class:monetary-policy",
+        "label": "Monetary Policy"
+      },
+      {
+        "id": "urn:ngm:class:sovereign-debt-management",
+        "label": "Sovereign Debt Management"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:bank-of-england",
+        "label": "Bank of England"
+      },
+      {
+        "id": "urn:ngm:class:financial-conduct-authority",
+        "label": "Financial Conduct Authority"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:european-central-bank",
+        "label": "European Central Bank"
+      },
+      {
+        "id": "urn:ngm:class:us-treasury",
+        "label": "US Treasury"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:cryptoasset-regulation",
+        "label": "Cryptoasset Regulation"
+      },
+      {
+        "id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      },
+      {
+        "id": "urn:ngm:class:open-banking",
+        "label": "Open Banking"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:taxation",
+        "label": "Taxation"
+      },
+      {
+        "id": "urn:ngm:class:public-spending",
+        "label": "Public Spending"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:economic-growth",
+        "label": "Economic Growth"
+      },
+      {
+        "id": "urn:ngm:class:financial-stability",
+        "label": "Financial Stability"
+      },
+      {
+        "id": "urn:ngm:class:consumer-protection",
+        "label": "Consumer Protection"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:financial-services-and-markets-act",
+        "label": "Financial Services and Markets Act"
+      },
+      {
+        "id": "urn:ngm:class:uk-parliament",
+        "label": "UK Parliament"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:prudential-regulation-authority",
+        "label": "Prudential Regulation Authority"
+      },
+      {
+        "id": "urn:ngm:class:chancellor-of-the-exchequer",
+        "label": "Chancellor of the Exchequer"
+      },
+      {
+        "id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
+      }
+    ]
   },
   "wikilinks": [
     {

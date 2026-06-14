@@ -5,50 +5,139 @@
   "public": true,
   "classIri": "urn:ngm:class:chain-of-thought-reasoning",
   "domain": "artificial-intelligence",
-  "definition": "Chain-of-Thought (CoT) Reasoning refers to the capacity of large language models to generate and utilise coherent sequences of intermediate logical or mathematical steps as part of producing a final answer, treating reasoning as an emergent computational process instantiated in the token generation sequence rather than purely as an elicitation artefact. This framing emphasises the model's internal mechanism \u2014 how intermediate tokens shape attention and residual stream computations in subsequent layers \u2014 rather than the prompting technique that triggers the behaviour. CoT Reasoning underpins a family of advanced inference-time compute strategies including self-consistency, step-level verifiers, and process reward models.",
+  "definition": "Chain-of-Thought Reasoning is the capacity of large language models to generate coherent sequences of intermediate logical, mathematical, or factual steps as part of producing a final answer, treating each intermediate token as an active computational resource that reshapes residual stream activations for subsequent Transformer layers. Unlike the surface prompting technique that elicits it, CoT Reasoning denotes an emergent model capability \u2014 present above certain parameter-scale thresholds \u2014 whereby the model decomposes complex problems into verifiable sub-steps rather than collapsing directly to a final token. This capability underpins inference-time compute scaling strategies including self-consistency sampling, process reward models, step-level verifiers, and tree-of-thought search, and connects neural language modelling to classical AI paradigms of deductive planning and symbolic reasoning.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique"
+      "id": "urn:ngm:class:ai-reasoning",
+      "label": "AI Reasoning"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:scratchpad-reasoning",
+        "label": "Scratchpad Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:tree-of-thought",
+        "label": "Tree of Thought"
+      },
+      {
+        "id": "urn:ngm:class:self-refinement",
+        "label": "Self-Refinement"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:large-language-models",
         "label": "Large Language Models"
       },
       {
-        "id": "urn:ngm:class:reasoning",
-        "label": "Reasoning"
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "id": "urn:ngm:class:in-context-learning",
+        "label": "In-Context Learning"
       }
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:transformer",
-        "label": "Transformer"
+        "id": "urn:ngm:class:mathematical-reasoning",
+        "label": "Mathematical Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:multi-step-reasoning",
+        "label": "Multi-Step Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-agents",
+        "label": "Autonomous Agents"
+      },
+      {
+        "id": "urn:ngm:class:self-consistency",
+        "label": "Self-Consistency"
+      },
+      {
+        "id": "urn:ngm:class:process-reward-models",
+        "label": "Process Reward Models"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:model-scaling",
+        "label": "Model Scaling"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:direct-answer-prompting",
+        "label": "Direct Answer Prompting"
+      },
+      {
+        "id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
+      },
+      {
+        "id": "urn:ngm:class:standard-prompting",
+        "label": "Standard Prompting"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:automated-theorem-proving",
+        "label": "Automated Theorem Proving"
+      },
+      {
+        "id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      },
+      {
+        "id": "urn:ngm:class:few-shot-learning",
+        "label": "Few-Shot Learning"
+      },
+      {
+        "id": "urn:ngm:class:zero-shot-prompting",
+        "label": "Zero-Shot Prompting"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:chain-of-thought",
-        "label": "Chain of Thought"
+        "id": "urn:ngm:class:mechanistic-interpretability",
+        "label": "Mechanistic Interpretability"
       },
       {
-        "id": "urn:ngm:class:prompt-engineering",
-        "label": "Prompt Engineering"
+        "id": "urn:ngm:class:reasoning",
+        "label": "Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:inference-time-compute",
+        "label": "Inference-Time Compute"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
       }
     ]
   },

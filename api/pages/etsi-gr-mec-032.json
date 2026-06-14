@@ -4,35 +4,158 @@
   "slug": "etsi-gr-mec-032",
   "public": true,
   "classIri": "urn:ngm:class:etsi-gr-mec-032",
-  "domain": "standards",
-  "definition": "ETSI GR MEC 032 is a group report produced by the ETSI Multi-access Edge Computing committee, addressing aspects of the MEC framework and its application scenarios.",
+  "domain": "infrastructure",
+  "definition": "ETSI GR MEC 032 is a Group Report published by the ETSI Industry Specification Group for Multi-access Edge Computing (ISG MEC) that addresses network slicing support and integration with MEC systems, defining how MEC platform capabilities can be exposed and leveraged across sliced 5G network infrastructure. The report analyses the relationship between Multi-access Edge Computing and Network Slicing, identifying reference architectures, use cases, and the interplay between MEC management entities and network slice management functions. It provides normative guidance for operators and vendors integrating edge computing workloads with 5G core network slicing mechanisms, covering aspects such as slice selection for MEC application placement, resource isolation guarantees, and inter-slice MEC service continuity.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:technical-standard",
-      "label": "Technical Standard"
+      "id": "urn:ngm:class:multi-access-edge-computing",
+      "label": "Multi-access Edge Computing"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:mec-network-slicing-reference-architecture",
+        "label": "MEC Network Slicing Reference Architecture"
+      },
+      {
+        "id": "urn:ngm:class:mec-application-placement",
+        "label": "MEC Application Placement"
+      }
+    ],
     "requires": [
+      {
+        "id": "urn:ngm:class:5g-network-slicing",
+        "label": "5G Network Slicing"
+      },
+      {
+        "id": "urn:ngm:class:mec-platform",
+        "label": "MEC Platform"
+      },
+      {
+        "id": "urn:ngm:class:network-function-virtualisation",
+        "label": "Network Function Virtualisation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:low-latency-communication",
+        "label": "Low Latency Communication"
+      },
+      {
+        "id": "urn:ngm:class:mec-service-continuity",
+        "label": "MEC Service Continuity"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:etsi-gr-mec-002",
+        "label": "ETSI GR MEC 002"
+      },
+      {
+        "id": "urn:ngm:class:3gpp-5g-core",
+        "label": "3GPP 5G Core"
+      },
+      {
+        "id": "urn:ngm:class:network-slice-management",
+        "label": "Network Slice Management"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:mec-reference-architecture",
+        "label": "MEC Reference Architecture"
+      },
+      {
+        "id": "urn:ngm:class:technical-standard",
+        "label": "Technical Standard"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:etsi-gs-mec-003",
+        "label": "ETSI GS MEC 003"
+      },
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-at-the-edge",
+        "label": "AI at the Edge"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:nsmf",
+        "label": "Network Slice Management Function"
+      },
+      {
+        "id": "urn:ngm:class:mepm",
+        "label": "MEC Platform Manager"
+      },
+      {
+        "id": "urn:ngm:class:meo",
+        "label": "MEC Orchestrator"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:v2x-communication",
+        "label": "V2X Communication"
+      },
+      {
+        "id": "urn:ngm:class:industrial-iot",
+        "label": "Industrial IoT"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:etsi-isg-mec",
+        "label": "ETSI ISG MEC"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:etsi-mec-specification-series",
+        "label": "ETSI MEC Specification Series"
+      },
       {
         "id": "urn:ngm:class:etsi",
         "label": "ETSI"
       }
     ],
-    "enables": [],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:etsi-gs-mec-010",
+        "label": "ETSI GS MEC 010"
+      },
+      {
+        "id": "urn:ngm:class:mobile-edge-computing",
+        "label": "Mobile Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:network-slicing",
+        "label": "Network Slicing"
+      }
+    ]
   },
   "wikilinks": [
     {

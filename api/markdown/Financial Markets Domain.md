@@ -95,7 +95,7 @@ public:: true
   "@type": "Class",
   "label": "Financial Markets Domain",
   "definition": "The Financial Markets Domain covers the structure, instruments and behaviour of markets in which financial assets are traded. Its scope includes asset pricing, trading mechanisms, risk and portfolio management, and market microstructure. It is a top-level subject classification applied to financial technology and analysis. The boundary excludes corporate financial reporting and internal control, which belong to the Corporate Governance Domain.",
-  "domain": "financial-markets",
+  "domain": "finance",
   "maturity": "emerging",
   "qualityScore": 0.7,
   "subClassOf": [

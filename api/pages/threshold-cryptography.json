@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:threshold-cryptography",
   "domain": "security",
-  "definition": "Threshold cryptography is a branch of cryptography in which a secret \u2014 such as a private key, decryption key, or signing capability \u2014 is distributed among a set of n parties such that any subset of at least t parties can jointly perform the cryptographic operation, but no subset of fewer than t parties can do so alone. The threshold t-of-n structure realises a cryptographic form of redundancy and access control: no single party holds sufficient key material to act unilaterally, protecting against both internal compromise and external theft. Threshold signatures, threshold decryption, and threshold key generation are the three primary primitives, with applications spanning cryptocurrency custody, distributed certificate authorities, multi-party computation, and confidential smart contract execution.",
+  "definition": "Threshold cryptography is a branch of cryptography in which a secret \u2014 such as a private key, decryption key, or signing capability \u2014 is distributed among a set of n parties such that any qualifying subset of at least t parties can jointly perform the cryptographic operation, while no coalition of fewer than t parties can do so alone. The t-of-n structure provides both redundancy and distributed access control: no single party holds complete key material, eliminating single points of compromise from theft, coercion, or insider malfeasance. The three primary primitives are threshold signatures, threshold decryption, and distributed key generation (DKG), with applications spanning cryptocurrency custody, distributed certificate authorities, multi-party computation protocols, and confidential smart contract execution. Modern protocols such as CGGMP21, GG20, and FROST have brought threshold operations to practical round counts suitable for production deployment.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:cryptographic-primitive",
@@ -13,30 +13,91 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.75,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:distributed-key-generation",
+        "label": "Distributed Key Generation"
+      },
+      {
+        "id": "urn:ngm:class:threshold-signature-scheme",
+        "label": "Threshold Signature Scheme"
+      },
+      {
+        "id": "urn:ngm:class:secret-sharing",
+        "label": "Secret Sharing"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:secure-multi-party-computation",
+        "label": "Secure Multi-Party Computation"
+      },
+      {
+        "id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:cryptocurrency-storage",
         "label": "Cryptocurrency Storage"
       },
       {
+        "id": "urn:ngm:class:distributed-validator-technology",
+        "label": "Distributed Validator Technology"
+      },
+      {
         "id": "urn:ngm:class:privacy-preserving-technology",
         "label": "Privacy Preserving Technology"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [
+    "dependsOn": [
       {
         "id": "urn:ngm:class:cryptographic-key-management",
         "label": "Cryptographic Key Management"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
       }
     ],
-    "bridgesTo": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:multi-sig-governance",
+        "label": "Multi Sig Governance"
+      },
+      {
+        "id": "urn:ngm:class:hardware-security-module",
+        "label": "Hardware Security Module"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:differential-privacy",
+        "label": "Differential Privacy"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:elliptic-curve-cryptography",
@@ -45,27 +106,36 @@
       {
         "id": "urn:ngm:class:homomorphic-encryption",
         "label": "Homomorphic Encryption"
-      }
-    ],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
-      {
-        "id": "urn:ngm:class:secure-multi-party-computation",
-        "label": "Secure Multi-Party Computation"
-      },
-      {
-        "id": "urn:ngm:class:cryptographic-key-management",
-        "label": "Cryptographic Key Management"
       },
       {
         "id": "urn:ngm:class:zero-knowledge-proof",
         "label": "Zero-Knowledge Proof"
       },
       {
-        "id": "urn:ngm:class:multi-sig-governance",
-        "label": "Multi Sig Governance"
+        "id": "urn:ngm:class:shamir-secret-sharing",
+        "label": "Shamir Secret Sharing"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:blockchain-consensus",
+        "label": "Blockchain Consensus"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:homomorphic-encryption",
+        "label": "Homomorphic Encryption"
       }
     ]
   },

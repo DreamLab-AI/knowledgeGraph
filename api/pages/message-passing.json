@@ -4,8 +4,8 @@
   "slug": "message-passing",
   "public": true,
   "classIri": "urn:ngm:class:message-passing",
-  "domain": "infrastructure",
-  "definition": "Message passing is a paradigm for inter-process and inter-component communication in which discrete, self-contained messages are sent between processes, objects, or distributed nodes rather than using shared memory. It underlies actor-model concurrency, microservice architectures, and distributed systems, providing loose coupling, location transparency, and inherent support for asynchronous execution. Messages can be delivered synchronously (blocking) or asynchronously (non-blocking), and may traverse in-process channels, message queues, or network transports.",
+  "domain": "distributed-systems",
+  "definition": "Message passing is a foundational communication paradigm in which processes, objects, or distributed agents interact exclusively by sending and receiving discrete, self-contained messages rather than accessing shared memory. It underlies actor-model concurrency, microservice architectures, and distributed AI agent frameworks, providing loose coupling, location transparency, and inherent support for asynchronous execution. Messages may traverse in-process channels, persistent message queues, or wide-area network transports, and may be delivered synchronously (blocking until acknowledgement) or asynchronously (fire-and-forget). Formal semantics are studied through process calculi such as the pi-calculus and CSP, and the paradigm has grown from Hewitt's 1973 Actor Model into the backbone of modern cloud-native and multi-agent AI systems.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:communication-protocol",
@@ -13,55 +13,123 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
-  "maturity": "established",
+  "qualityScore": 0.73,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [
-      {
-        "id": "urn:ngm:class:distributed-system",
-        "label": "Distributed System"
-      },
-      {
-        "id": "urn:ngm:class:distributed-computing",
-        "label": "Distributed Computing"
-      }
-    ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [
+    "hasPart": [
       {
         "id": "urn:ngm:class:message-queue",
         "label": "Message Queue"
       },
       {
-        "id": "urn:ngm:class:middleware",
-        "label": "Middleware"
+        "id": "urn:ngm:class:message-broker",
+        "label": "Message Broker"
+      },
+      {
+        "id": "urn:ngm:class:message-channel",
+        "label": "Message Channel"
       }
     ],
-    "supports": [
+    "requires": [
       {
-        "id": "urn:ngm:class:distributed-architecture",
-        "label": "Distributed Architecture"
+        "id": "urn:ngm:class:serialisation",
+        "label": "Serialisation"
+      },
+      {
+        "id": "urn:ngm:class:network-transport",
+        "label": "Network Transport"
       }
     ],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
+    "enables": [
       {
-        "id": "urn:ngm:class:asynchronous-communication",
-        "label": "Asynchronous Communication"
+        "id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      },
+      {
+        "id": "urn:ngm:class:actor-model",
+        "label": "Actor Model"
+      },
+      {
+        "id": "urn:ngm:class:microservices",
+        "label": "Microservices"
       },
       {
         "id": "urn:ngm:class:event-driven-architecture",
         "label": "Event Driven Architecture"
       },
       {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:shared-memory",
+        "label": "Shared Memory"
+      },
+      {
+        "id": "urn:ngm:class:remote-procedure-call",
+        "label": "Remote Procedure Call"
+      }
+    ],
+    "bridgesTo": [
+      {
         "id": "urn:ngm:class:inter-agent-communication",
         "label": "Inter-Agent Communication"
+      },
+      {
+        "id": "urn:ngm:class:multi-agent-system",
+        "label": "Multi-Agent System"
+      },
+      {
+        "id": "urn:ngm:class:model-context-protocol",
+        "label": "Model Context Protocol"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:middleware",
+        "label": "Middleware"
+      },
+      {
+        "id": "urn:ngm:class:publish-subscribe",
+        "label": "Publish Subscribe"
+      },
+      {
+        "id": "urn:ngm:class:remote-procedure-call",
+        "label": "Remote Procedure Call"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:distributed-architecture",
+        "label": "Distributed Architecture"
+      },
+      {
+        "id": "urn:ngm:class:asynchronous-communication",
+        "label": "Asynchronous Communication"
+      },
+      {
+        "id": "urn:ngm:class:concurrency",
+        "label": "Concurrency"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:process-calculus",
+        "label": "Process Calculus"
+      },
+      {
+        "id": "urn:ngm:class:protocol-buffer",
+        "label": "Protocol Buffer"
+      },
+      {
+        "id": "urn:ngm:class:apache-kafka",
+        "label": "Apache Kafka"
       }
     ]
   },

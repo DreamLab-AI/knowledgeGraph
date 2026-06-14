@@ -4,7 +4,7 @@
   "slug": "git",
   "public": true,
   "classIri": "urn:ngm:class:git",
-  "domain": "general",
+  "domain": "distributed-collaboration",
   "definition": "Git is a distributed version control system that tracks changes to files and coordinates work across multiple contributors. It was created by Linus Torvalds for Linux kernel development.",
   "subClassOf": [
     {

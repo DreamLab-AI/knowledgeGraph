@@ -63,7 +63,7 @@ public:: true
   "@type": "Class",
   "label": "Interface Layer",
   "definition": "The Interface Layer is the cross-cutting stratum that defines the boundaries and contracts through which components communicate. It sits above the integration and transport mechanisms that carry calls and below the applications that consume the contracts. It contains interface definitions, schemas, and the conventions that govern interaction.",
-  "domain": "interface",
+  "domain": "infrastructure",
   "maturity": "emerging",
   "qualityScore": 0.7,
   "subClassOf": [

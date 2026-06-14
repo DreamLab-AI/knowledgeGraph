@@ -4,7 +4,7 @@
   "slug": "epistemic-modality-marker",
   "public": true,
   "classIri": "urn:ngm:class:epistemic-modality-marker",
-  "domain": "linguistics",
+  "domain": "ai",
   "definition": "Could is a modal verb in English expressing past ability, possibility, permission or polite requests. It functions as the past form of the modal can and as a marker of tentative or hypothetical meaning.",
   "subClassOf": [
     {

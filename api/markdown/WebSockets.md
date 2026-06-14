@@ -59,7 +59,7 @@ public:: true
   "@type": "Class",
   "label": "WebSockets",
   "definition": "WebSockets is a protocol providing full-duplex communication channels over a single TCP connection between a client and a server. It is widely used for real-time web applications.",
-  "domain": "general",
+  "domain": "infrastructure",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

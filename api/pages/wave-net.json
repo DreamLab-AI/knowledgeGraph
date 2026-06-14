@@ -4,7 +4,7 @@
   "slug": "wave-net",
   "public": true,
   "classIri": "urn:ngm:class:wave-net",
-  "domain": "deep-learning",
+  "domain": "machine-learning",
   "definition": "A deep autoregressive neural network for generating raw audio waveforms one sample at a time, using stacks of dilated causal convolutions.",
   "subClassOf": [
     {

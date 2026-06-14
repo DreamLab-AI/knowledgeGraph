@@ -4,7 +4,7 @@
   "slug": "markov-decision-process",
   "public": true,
   "classIri": "urn:ngm:class:markov-decision-process",
-  "domain": "mathematics",
+  "domain": "machine-learning",
   "definition": "A mathematical framework for modelling sequential decision-making where outcomes are partly random and partly under the control of a decision maker.",
   "subClassOf": [
     {

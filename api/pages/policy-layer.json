@@ -4,7 +4,7 @@
   "slug": "policy-layer",
   "public": true,
   "classIri": "urn:ngm:class:policy-layer",
-  "domain": "policy",
+  "domain": "governance",
   "definition": "The Policy Layer is the cross-cutting stratum that encodes machine-readable rules, constraints, and authorisations governing system behaviour. It sits above operational concerns and below the human-facing Governance Layer, translating governance intent into enforceable statements that other layers consult before acting. It contains policy definitions, decision points, and enforcement hooks rather than the data or compute those policies regulate.",
   "subClassOf": [
     {

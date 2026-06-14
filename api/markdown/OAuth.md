@@ -55,7 +55,7 @@ public:: true
   "@type": "Class",
   "label": "OAuth",
   "definition": "An open standard for delegated authorisation that allows a user to grant a third-party application limited access to resources without sharing their credentials.",
-  "domain": "cryptographic",
+  "domain": "security",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

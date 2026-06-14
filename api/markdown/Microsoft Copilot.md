@@ -46,14 +46,13 @@ public:: true
   "@id": "urn:ngm:class:microsoft-copilot",
   "@type": "Class",
   "label": "Microsoft Copilot",
-  "definition": "Microsoft Copilot is a family of generative AI assistants developed by Microsoft and integrated across its products, including Windows, Microsoft 365 and the Edge browser. Launched from 2023 onwards, it builds on large language models from OpenAI together with Microsoft's own models and data grounding. In Microsoft 365 it can draft documents, summarise meetings, analyse spreadsheets and generate email based on a user's content and context. GitHub Copilot, a related product, provides code completion and chat assistance within software development environments.",
-  "domain": "microsoft-copilot",
+  "definition": "Microsoft Copilot is a family of AI-powered assistant products developed by Microsoft and embedded across its software ecosystem, including Windows, Microsoft 365, the Edge browser, GitHub, and Azure. The system builds on large language models from OpenAI (GPT-4 series) combined with Microsoft's own retrieval augmentation over Microsoft Graph, enabling context-aware responses grounded in a user's documents, emails, meetings, and calendar data. Enterprise deployments offer tenancy-scoped data access with existing permission boundaries, distinguishing Copilot from general-purpose chatbots. GitHub Copilot, a precursor product launched in 2021, provides AI-assisted code completion, chat, and pull-request summarisation inside developer environments.",
+  "domain": "ai",
   "maturity": "established",
-  "qualityScore": 0.7,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:artificial-intelligence-domain",
-      "label": "Artificial Intelligence Domain"
+      "@id": "urn:ngm:class:generative-ai",
+      "label": "Generative AI"
     }
   ],
   "relations": {
@@ -61,14 +60,131 @@ public:: true
       {
         "@id": "urn:ngm:class:large-language-models",
         "label": "Large Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "@id": "urn:ngm:class:microsoft-graph",
+        "label": "Microsoft Graph"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:gpt-4",
+        "label": "GPT-4"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:code-generation",
+        "label": "Code Generation"
+      },
+      {
+        "@id": "urn:ngm:class:document-summarisation",
+        "label": "Document Summarisation"
+      },
+      {
+        "@id": "urn:ngm:class:conversational-ai",
+        "label": "Conversational AI"
+      },
+      {
+        "@id": "urn:ngm:class:automated-meeting-notes",
+        "label": "Automated Meeting Notes"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "@id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:microsoft-365",
+        "label": "Microsoft 365"
+      },
+      {
+        "@id": "urn:ngm:class:azure-ai",
+        "label": "Azure AI"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:chatgpt",
+        "label": "ChatGPT"
+      },
+      {
+        "@id": "urn:ngm:class:google-gemini",
+        "label": "Google Gemini"
+      },
+      {
+        "@id": "urn:ngm:class:amazon-q",
+        "label": "Amazon Q"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:github-copilot",
+        "label": "GitHub Copilot"
+      },
+      {
+        "@id": "urn:ngm:class:openai",
+        "label": "OpenAI"
+      },
+      {
+        "@id": "urn:ngm:class:bing-chat",
+        "label": "Bing Chat"
+      },
+      {
+        "@id": "urn:ngm:class:enterprise-ai",
+        "label": "Enterprise AI"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:microsoft-azure",
+        "label": "Microsoft Azure"
+      },
+      {
+        "@id": "urn:ngm:class:role-based-access-control",
+        "label": "Role-Based Access Control"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:microsoft-365-copilot",
+      "label": "Microsoft 365 Copilot"
+    },
+    {
+      "@id": "urn:ngm:class:bing-chat",
+      "label": "Bing Chat"
+    }
+  ],
+  "quality": 0.72,
+  "qualityScore": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-13T00:00:00Z",
+    "inferenceRule": "ManualEnrichment"
   }
 }
 ```
@@ -108,24 +224,90 @@ public:: true
 }
 ```
 
-
 - ### Definition
-  - Microsoft Copilot is a family of generative AI assistants developed by Microsoft and integrated across its products, including Windows, Microsoft 365 and the Edge browser. Launched from 2023 onwards, it builds on large language models from OpenAI together with Microsoft's own models and data grounding. In Microsoft 365 it can draft documents, summarise meetings, analyse spreadsheets and generate email based on a user's content and context. GitHub Copilot, a related product, provides code completion and chat assistance within software development environments.
+  - Microsoft Copilot is a family of AI-powered assistant products from [[Microsoft]] embedded across [[Microsoft 365]], [[Windows]], the Edge browser, [[GitHub]], and [[Azure AI]]. The system integrates [[Large Language Model]] technology — principally the [[GPT-4]] family from [[OpenAI]] — with [[Retrieval-Augmented Generation]] over [[Microsoft Graph]] to provide context-grounded responses scoped to a user's own documents, emails, meetings, and enterprise data. Unlike a standalone [[Conversational AI]] service, Copilot inherits the permission model of the host environment, so tenant data boundaries and [[Role-Based Access Control]] policies are respected. [[GitHub Copilot]], a precursor launched in 2021, set the template for AI-assisted productivity by offering [[Code Generation]] and code-chat inside developer editors.
 
-- ### Semantic Classification
-  - owl-class:: ai:MicrosoftCopilot
-  - owl-role:: Concept
+- ### Overview
+  - Microsoft Copilot is an umbrella brand under which Microsoft ships AI assistant capabilities across its entire software portfolio rather than as a discrete product.
+  - The consumer offering — previously branded as Bing Chat — is accessible via Microsoft Edge, Windows 11 sidebar, the Copilot mobile app, and Bing, providing general-purpose question answering, image generation, and web-grounded search.
+  - The enterprise offering, Copilot for [[Microsoft 365]], operates inside Word, Excel, PowerPoint, Outlook, and Teams. It grounds responses in the calling user's email, files, calendar, and meetings through a semantic retrieval layer over [[Microsoft Graph]], allowing it to summarise threads, draft content, and answer questions about organisational data.
+  - [[GitHub Copilot]] was launched in 2021 as an AI pair programmer providing in-editor code completion using Codex (a GPT derivative fine-tuned on public code). It has since expanded to include multi-file chat, pull-request summarisation, and security vulnerability detection.
+  - Azure AI Studio and the Azure OpenAI Service allow organisations to build their own Copilot-style experiences, grounding custom [[Large Language Model]] deployments in proprietary data using the same [[Retrieval-Augmented Generation]] patterns.
+  - The strategic logic is that Microsoft can distribute [[Generative AI]] value through its existing installed base of over a billion Windows devices and hundreds of millions of Microsoft 365 subscribers, rather than relying on users migrating to a new application.
+
+- ### Key Components
+  - **Consumer Copilot** — web, Edge, Windows 11 sidebar, and mobile; accesses live Bing search for web grounding; supports [[Natural Language Processing]], image analysis, and DALL-E image generation via [[OpenAI]] integration.
+  - **Copilot for Microsoft 365** — enterprise SKU layered on top of Microsoft 365 subscriptions; requires [[Microsoft Graph]] permissions; processes emails, documents, meetings, and calendar data.
+    - Word: drafts, rewrites, and summarises documents.
+    - Excel: analyses data, generates [[Data Visualisation]] charts, and explains formulae.
+    - PowerPoint: generates slide decks from prompts or existing documents.
+    - Outlook: summarises long email threads, drafts replies, and extracts action items.
+    - Teams: provides real-time meeting transcription and post-meeting summaries via [[Automated Meeting Notes]].
+  - **[[GitHub Copilot]]** — developer-focused; integrates with VS Code, JetBrains IDEs, and Neovim; offers line-by-line completion, multi-file chat, and [[Code Review]] assistance.
+  - **Copilot Studio** — low-code platform for building custom Copilot agents and plugins on top of the Microsoft platform; supports [[Workflow Automation]] and [[Enterprise AI]] integration patterns.
+  - **Azure OpenAI Service** — API layer enabling enterprise deployments with private endpoints, fine-tuning, and [[Responsible AI]] content filtering.
+  - **Microsoft Graph Connector** — retrieval backbone for the enterprise scenario; indexes files in SharePoint, OneDrive, Exchange, and third-party sources, exposing them to [[Semantic Search]] at inference time.
+  - **[[Retrieval-Augmented Generation]] pipeline** — at query time, Copilot retrieves relevant document snippets from the user's Graph index, injects them into the [[Prompt Engineering]] context window, and passes the enriched prompt to the underlying [[GPT-4]] model.
+  - **Safety and content filtering layer** — [[Responsible AI]] classifiers run both on the prompt and the response to detect and block harmful outputs, hallucinations, or policy violations, per Microsoft's AI Principles framework.
+
+- ### Applications and Use Cases
+  - **Knowledge worker productivity** — drafting reports, summarising regulatory documents, generating meeting minutes; reduces time spent on routine written communication tasks.
+  - **Software development** — [[GitHub Copilot]] handles boilerplate, unit test generation, and pull-request documentation, supporting practices aligned with [[Test-Driven Development]] and code review efficiency.
+  - **Customer service** — Copilot for Service (built on Copilot Studio) grounds a support agent's responses in CRM data and knowledge-base articles, reducing handle time and improving accuracy.
+  - **Sales enablement** — Copilot for Sales surfaces CRM signals (pipeline stage, contact history) inside Outlook and Teams calls, enabling data-informed conversations without context switching.
+  - **Financial analysis** — Excel integration allows finance teams to run natural-language queries over large spreadsheets, perform scenario modelling, and generate [[Document Summarisation]] of quarterly reports.
+  - **Secure enterprise search** — [[Semantic Search]] over the Microsoft Graph index answers factual questions about internal policies, project status, or personnel, with answers cited back to source documents.
+  - **Developer experience** — beyond completion, [[GitHub Copilot]] Chat in IDEs lets developers ask architectural questions, explain unfamiliar codebases, and debug errors in a conversational loop.
+  - **Education** — Microsoft's partnership with educational institutions deploys Copilot with academic-grade safety guardrails for research assistance and writing feedback.
+  - **Accessibility** — real-time transcription and summarisation in Teams makes content accessible to users with hearing impairments; Copilot can also rewrite text for plain-language accessibility.
 
 - ### Relationships
-  - is-subclass-of:: [[Artificial Intelligence Domain]]
-  - bridges-to:: [[Meta Llama Model Family]]
   - requires:: [[Large Language Model]]
+  - requires:: [[Retrieval-Augmented Generation]]
+  - requires:: [[Microsoft Graph]]
+  - uses:: [[GPT-4]]
+  - uses:: [[Natural Language Processing]]
+  - uses:: [[Transformer Architecture]]
+  - uses:: [[Semantic Search]]
+  - enables:: [[Code Generation]]
+  - enables:: [[Document Summarisation]]
+  - enables:: [[Conversational AI]]
+  - enables:: [[Automated Meeting Notes]]
+  - implements:: [[Responsible AI]]
+  - implements:: [[Prompt Engineering]]
+  - partOf:: [[Microsoft 365]]
+  - partOf:: [[Azure AI]]
+  - relatedTo:: [[GitHub Copilot]]
+  - relatedTo:: [[OpenAI]]
+  - relatedTo:: [[Enterprise AI]]
+  - contrastsWith:: [[ChatGPT]]
+  - contrastsWith:: [[Google Gemini]]
+  - contrastsWith:: [[Amazon Q]]
+  - bridges-to:: [[Microsoft Azure]]
+  - bridges-to:: [[Role-Based Access Control]]
 
-- ### Content
-  - Microsoft Copilot is an umbrella brand for AI assistants embedded throughout Microsoft's software. Rather than a single product, it spans the consumer Copilot chat experience, Copilot in Windows and Edge, and Copilot for Microsoft 365 that operates within Word, Excel, PowerPoint, Outlook and Teams.
-  - In the productivity suite, Copilot grounds its responses in a user's documents, emails and calendar through a retrieval layer over Microsoft Graph, so it can summarise threads, draft content and answer questions about an organisation's data subject to existing permissions. This grounding distinguishes enterprise Copilot from a general chatbot.
-  - GitHub Copilot, an earlier and closely related offering, focuses on software development by suggesting code and answering questions inside editors. Together these products represent Microsoft's strategy of distributing generative AI across its existing platforms rather than as a standalone application.
+- ### Technical Architecture
+  - The core inference backend for most Copilot products is the [[Azure OpenAI Service]], which hosts private instances of [[GPT-4]] and its variants on Microsoft's infrastructure, keeping enterprise customer data within the tenant's regional boundary.
+  - [[Retrieval-Augmented Generation]] is the central pattern: at inference time, the orchestration layer queries the user's [[Microsoft Graph]] index for semantically relevant document chunks, appending them to the model's context window before calling the LLM endpoint.
+  - [[Prompt Engineering]] templates (called "system prompts" or "metaprompts") define the persona, scope, and safety constraints for each Copilot surface; these are maintained by Microsoft product teams and are not directly exposed to end users.
+  - Copilot Studio allows enterprise customers to extend Copilot with custom plugins and connectors, integrating third-party APIs (Salesforce, ServiceNow, SAP) and building autonomous agent workflows using Power Automate for [[Workflow Automation]].
+  - The [[Transformer Architecture]] underlying all GPT-family models uses self-attention mechanisms to model long-range dependencies in text, enabling Copilot to reason over extended document contexts.
+  - Data residency and sovereignty are enforced through [[Microsoft Azure]]'s regional deployment model; Microsoft commits that Copilot for Microsoft 365 does not train on customer data.
+
+- ### Standards and Governance Context
+  - Microsoft's Responsible AI Standard governs the design, deployment, and post-deployment monitoring of all Copilot products, drawing on six principles: fairness, reliability and safety, privacy and security, inclusivity, transparency, and accountability.
+  - The [[Responsible AI]] layer includes Azure AI Content Safety classifiers, prompt-shield defences against indirect prompt injection, and Groundedness Detection to flag model responses not supported by retrieved context.
+  - EU AI Act compliance work — classifying high-risk vs. general-purpose AI use cases across Copilot deployments — is underway, with Microsoft publishing transparency notes per product surface.
+  - [[Role-Based Access Control]] integration means Copilot only retrieves and exposes data that the authenticated user already has permission to access in Microsoft 365, maintaining existing information governance boundaries.
+  - GitHub Advanced Security, available alongside [[GitHub Copilot]], includes an AI-powered secret-scanning and [[Code Review]] mode that flags CWE-class vulnerabilities and sensitive credential leaks before pull-request merge.
+  - Microsoft participates in the NIST AI Risk Management Framework (AI RMF) and publishes model cards and transparency notes for each Copilot surface.
+
+- ### Competitive Landscape
+  - [[ChatGPT]] (OpenAI) is both a technology supplier and a competing consumer product; Microsoft's integration strategy bets on embedding AI value in productivity workflows rather than winning on a standalone chat interface.
+  - [[Google Gemini]] (formerly Duet AI) is the nearest enterprise competitor, also integrating a large language model into a productivity suite (Google Workspace), with comparable document drafting, meeting summarisation, and code assistance features.
+  - [[Amazon Q]] targets developer and enterprise search use cases on AWS, competing particularly with Copilot's code-assistance and knowledge-retrieval scenarios.
+  - The "AI pair programmer" market pioneered by [[GitHub Copilot]] is contested by Cursor, Tabnine, JetBrains AI Assistant, and others — all using smaller, code-specialist models fine-tuned from open-source foundations including the [[Meta Llama Model Family]].
 
 - ### Provenance
-  - sources::
-  - migration-date:: 2026-05-29T00:00:00Z
+  - sources:: Microsoft Copilot product documentation; GitHub Copilot research papers; Azure OpenAI Service documentation; Microsoft Responsible AI Standard
+  - updated:: 2026-06-13

@@ -4,7 +4,7 @@
   "slug": "linked-data-platform",
   "public": true,
   "classIri": "urn:ngm:class:linked-data-platform",
-  "domain": "general",
+  "domain": "standards",
   "definition": "A W3C specification defining rules and HTTP conventions for reading and writing linked data resources, enabling RESTful management of RDF data on the web.",
   "subClassOf": [
     {

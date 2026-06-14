@@ -1,20 +1,92 @@
 - ### Definition
-  - Lightning Labs is a company that develops software and infrastructure for the Lightning Network, a payment channel protocol built on Bitcoin.
+  - Lightning Labs is a San Francisco-based technology company and the primary developer of [[lnd]] (Lightning Network Daemon), the dominant open-source implementation of the [[Lightning Network]] protocol. Founded in 2016 by Elizabeth Stark and Olaoluwa Osuntokun, the company builds [[Blockchain Infrastructure]] tooling that enables fast, low-cost [[Bitcoin]] payments at scale using a network of bidirectional [[Payment Channel]]s settled on-chain, advancing the [[Layer 2 Scaling]] agenda for Bitcoin.
 
-- ### Semantic Classification
-  - owl-class:: blockchain:LightningLabs
-  - owl-role:: Individual
+- ### Overview
+  - Lightning Labs occupies a central role in the Bitcoin developer ecosystem by maintaining the software stack that the majority of Lightning Network nodes run worldwide.
+  - The company operates at the intersection of open-source protocol development and commercial infrastructure products, releasing tools under the MIT licence while offering managed services for businesses.
+  - Its founding team brought both academic cryptographic expertise and systems engineering depth: Elizabeth Stark drives strategy and ecosystem growth while Olaoluwa Osuntokun (known as roasbeef) leads core protocol engineering.
+  - Lightning Labs has received backing from notable investors in the Bitcoin and technology venture capital space, including Andreessen Horowitz, Craft Ventures, and others, enabling sustained investment in both protocol R&D and product commercialisation.
+  - The company collaborates on the [[BOLT Specification]] (Basis of Lightning Technology) — the interoperability standards that ensure lnd, [[Core Lightning]], [[Eclair]], and other implementations can communicate across a single unified network.
+
+- ### Key Components
+  - #### lnd (Lightning Network Daemon)
+    - The flagship product: a full [[Lightning Network]] node implementation written in Go.
+    - Handles channel opening and closing, [[Hashed Timelock Contract]] (HTLC) negotiation, routing, and invoice management.
+    - Exposes gRPC and REST APIs enabling developers to build wallets, exchanges, and applications on top of Lightning.
+    - Supports [[Watchtower]] services for offline channel monitoring, protecting against counterparty breach attempts.
+    - Implements [[Taproot]] channel types and [[MuSig2]] signatures, reducing on-chain footprint and improving privacy.
+  - #### Loop
+    - A submarine swap service enabling users to move [[Bitcoin]] liquidity on and off the [[Lightning Network]] without closing channels.
+    - Loop Out sends funds from a Lightning channel to an on-chain address; Loop In rebalances inbound capacity from on-chain funds.
+    - Addresses the [[Liquidity Management]] challenge that is central to running a reliable Lightning node.
+  - #### Pool
+    - A non-custodial marketplace for buying and selling [[Payment Channel]] liquidity.
+    - Allows node operators to lease inbound capacity from liquidity providers, improving routing reliability.
+    - Uses a batch auction mechanism to match supply and demand for channel leases.
+  - #### Taproot Assets (formerly Taro)
+    - A protocol built on [[Taproot]] that enables the issuance of assets — including stablecoins and tokens — on the Bitcoin blockchain, transferable over the [[Lightning Network]].
+    - Extends Lightning's utility beyond native BTC, enabling Lightning-native [[Stablecoin]] payments and tokenised assets.
+    - Relies on [[Sparse Merkle Tree]] structures and [[Merkle Sum Sparse Merkle Tree]] commitments to prove asset ownership without revealing the full asset graph on-chain.
+  - #### Faraday
+    - A node accounting and analytics tool for lnd operators.
+    - Provides revenue analysis, channel performance metrics, and recommendations for closing underperforming channels.
+    - Targets professional node operators and Lightning Service Providers (LSPs).
+  - #### Lightning Node Connect (LNC)
+    - A remote control protocol allowing users to connect mobile wallets to their own lnd node over the internet securely, without exposing node ports directly.
+    - Uses a [[Noise Protocol Framework]] encrypted tunnel brokered through a mailbox relay.
+
+- ### Applications and Use Cases
+  - **Retail micropayments**: enabling sub-satoshi and satoshi-denominated payments for digital content, APIs, and streaming media without traditional payment processor fees.
+  - **[[Streaming Payments]]**: continuous value transfer per unit of time (e.g. podcasting 2.0, pay-per-second content) built on lnd's keysend and AMP (Atomic Multipath Payments) primitives.
+  - **Exchange and wallet infrastructure**: major Bitcoin exchanges integrate lnd to offer Lightning deposits and withdrawals, reducing on-chain congestion and settlement latency.
+  - **Lightning Service Providers (LSPs)**: businesses use Pool and Loop to offer managed liquidity services to end users, abstracting channel management complexity.
+  - **Cross-border remittance**: instant final settlement in BTC or via Taproot Assets stablecoins enables low-cost international transfers.
+  - **[[Machine Payments]]**: autonomous device-to-device payments for [[Internet of Things]] data, bandwidth, and compute resources, leveraging Lightning's programmable HTLC layer.
+  - **Developer tooling and SDKs**: the lnd API ecosystem supports a large third-party developer community building wallets, point-of-sale terminals, and Lightning-native applications.
+
+- ### Protocol and Standards Contributions
+  - Lightning Labs is a co-author and active contributor to the [[BOLT Specification]] suite (BOLTs 1–12), which defines the Wire Protocol, [[Onion Routing]], channel mechanics, and gossip protocol for the [[Lightning Network]].
+  - The company contributed to the development and deployment of [[Taproot]] on Bitcoin (BIP 341/342), and pioneered Taproot channel types in lnd ahead of broader adoption.
+  - Contributions to [[MuSig2]] (BIP 327) integration reduce the multi-party signing round-trips needed for cooperative channel closes.
+  - Lightning Labs participates in the Lightning specification meetings (spec-meetings) attended by developers from [[Core Lightning]] (Blockstream/Spiral), [[Eclair]] (ACINQ), and LDK (Spiral/LDK contributors).
 
 - ### Relationships
-  - is-subclass-of:: [[Lightning Network]]
-  - bridges-to:: [[Layer 2 Scaling]]
+  - implements:: [[Lightning Network]]
+  - implements:: [[BOLT Specification]]
+  - hasPart:: [[lnd]]
+  - hasPart:: [[Loop]]
+  - hasPart:: [[Taproot Assets]]
+  - hasPart:: [[Lightning Node Connect]]
+  - requires:: [[Bitcoin]]
   - requires:: [[Bitcoin Proof-of-Work Protocol]]
   - enables:: [[Payment Channel]]
+  - enables:: [[Micropayment]]
+  - enables:: [[Streaming Payments]]
+  - uses:: [[Hashed Timelock Contract]]
+  - uses:: [[Taproot]]
+  - uses:: [[MuSig2]]
+  - supports:: [[Layer 2 Scaling]]
+  - supports:: [[Decentralised Finance]]
+  - contrastsWith:: [[Blockstream]]
+  - contrastsWith:: [[Spiral]]
+  - relatedTo:: [[Core Lightning]]
+  - relatedTo:: [[Eclair]]
+  - relatedTo:: [[Bitcoin Script]]
+  - bridges-to:: [[Machine Payments]]
+  - bridges-to:: [[Internet of Things]]
 
-- ### Content
-  - Lightning Labs builds implementations and developer tools for the Lightning Network, enabling off-chain Bitcoin payments through bidirectional payment channels.
-  - Its software supports routing, channel management, and application development for Lightning-based payment services.
+- ### Competitive Landscape
+  - The three major [[Lightning Network]] implementations are lnd (Lightning Labs), [[Core Lightning]] (maintained by [[Blockstream]] and [[Spiral]]), and [[Eclair]] (maintained by [[ACINQ]]).
+  - [[Spiral]] (formerly Square Crypto) develops LDK (Lightning Development Kit), a library-first implementation targeting mobile and embedded wallets, and also maintains the Bitcoin Development Kit (BDK).
+  - [[ACINQ]] operates the Phoenix and Breez-adjacent infrastructure alongside the Eclair node, competing directly with Lightning Labs' managed service offerings.
+  - Despite competitive dynamics, all implementors collaborate on BOLT standards to maintain network-wide interoperability, a prerequisite for [[Lightning Network]] utility.
+
+- ### Standards & Governance Context
+  - [[BOLT Specification]] — defines all inter-node communication; Lightning Labs holds significant influence as the largest single contributor.
+  - [[Bitcoin Improvement Proposals]] (BIPs) — Lightning Labs engineers have authored and co-authored multiple BIPs, including those related to [[Taproot]] and [[MuSig2]].
+  - The [[Lightning Network]] itself has no formal governance body; specification changes proceed by rough consensus among implementation teams.
+  - Taproot Assets introduces a new layer of asset-issuance governance considerations, interfacing with [[RGB Protocol]] and other Bitcoin asset layers in a contested design space.
 
 - ### Provenance
-  - sources::
-  - migration-date:: 2026-05-29T00:00:00Z
+  - sources:: Lightning Labs official documentation (docs.lightning.engineering), BOLT specification repository (github.com/lightning/bolts), public engineering blog posts
+  - updated:: 2026-06-13

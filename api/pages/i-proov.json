@@ -4,8 +4,8 @@
   "slug": "i-proov",
   "public": true,
   "classIri": "urn:ngm:class:i-proov",
-  "domain": "identity",
-  "definition": "iProov is a British company providing biometric face verification used for remote identity assurance. Its technology checks that a genuine, live person is present during authentication.",
+  "domain": "security",
+  "definition": "iProov is a British biometric technology company founded in 2011 that specialises in remote face verification and liveness detection for digital identity assurance. Its core technology, Genuine Presence Assurance, uses controlled illumination sequences to verify that a real, live person is present during an online authentication event, distinguishing genuine users from spoofing attacks using photographs, videos, or synthetic deepfakes. iProov is deployed by governments, financial institutions, and healthcare providers to underpin Know Your Customer (KYC) onboarding, border control systems, and high-assurance remote authentication. The platform integrates with broader identity document verification and identity orchestration frameworks, providing a biometric binding layer within electronic identity (eID) and digital wallet schemes.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:biometric-authentication",
@@ -13,31 +13,126 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.75,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:genuine-presence-assurance",
+        "label": "Genuine Presence Assurance"
+      },
+      {
+        "id": "urn:ngm:class:flashmark",
+        "label": "Flashmark"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:facial-recognition",
         "label": "Facial Recognition"
+      },
+      {
+        "id": "urn:ngm:class:liveness-detection",
+        "label": "Liveness Detection"
+      },
+      {
+        "id": "urn:ngm:class:camera-hardware",
+        "label": "Camera Hardware"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:identity-verification-system",
         "label": "Identity Verification System"
+      },
+      {
+        "id": "urn:ngm:class:know-your-customer",
+        "label": "Know Your Customer"
+      },
+      {
+        "id": "urn:ngm:class:digital-onboarding",
+        "label": "Digital Onboarding"
+      },
+      {
+        "id": "urn:ngm:class:remote-authentication",
+        "label": "Remote Authentication"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:onfido",
+        "label": "Onfido"
+      },
+      {
+        "id": "urn:ngm:class:jumio",
+        "label": "Jumio"
+      },
+      {
+        "id": "urn:ngm:class:face-id",
+        "label": "Face ID"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:deepfake-detection",
+        "label": "Deepfake Detection"
+      },
+      {
+        "id": "urn:ngm:class:presentation-attack-detection",
+        "label": "Presentation Attack Detection"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:electronic-identity",
+        "label": "Electronic Identity"
+      },
+      {
+        "id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
+      },
+      {
+        "id": "urn:ngm:class:digital-wallet",
+        "label": "Digital Wallet"
+      }
+    ],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:identity-orchestration",
+        "label": "Identity Orchestration"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "id": "urn:ngm:class:eidas",
+        "label": "eIDAS"
+      },
+      {
+        "id": "urn:ngm:class:iso-30107",
+        "label": "ISO 30107"
+      }
+    ]
   },
   "wikilinks": [
     {

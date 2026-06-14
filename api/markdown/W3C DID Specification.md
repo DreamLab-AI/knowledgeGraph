@@ -21,7 +21,7 @@ public:: true
   "@type": "Class",
   "label": "W3C DID Specification",
   "definition": "The W3C Decentralized Identifiers (DIDs) specification is a World Wide Web Consortium recommendation that defines a new type of globally unique, persistent, cryptographically verifiable identifier that does not require a centralised registration authority. A DID resolves to a DID Document containing cryptographic material, service endpoints, and verification methods, enabling the subject to authenticate and authorise interactions without reliance on any single identity provider. The specification defines a generic DID syntax and data model that is method-agnostic, with specific DID methods implementing the create/read/update/deactivate operations on different verifiable data registries including blockchains, distributed ledgers, and peer-to-peer networks. It became a W3C Recommendation in July 2022.",
-  "domain": "web",
+  "domain": "infrastructure",
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:w3-c-did", "label": "W3C DID"}],
   "relations": {

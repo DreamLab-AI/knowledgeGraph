@@ -4,8 +4,8 @@
   "slug": "holographic-display",
   "public": true,
   "classIri": "urn:ngm:class:holographic-display",
-  "domain": "display-technology",
-  "definition": "A display technology that reconstructs the wavefront of light to present three-dimensional images viewable without special eyewear. It relies on diffraction and interference to recreate depth cues such as parallax and accommodation.",
+  "domain": "spatial-computing",
+  "definition": "A holographic display is a display system that reconstructs the full optical wavefront of a three-dimensional scene, enabling viewers to perceive genuine depth cues \u2014 including motion parallax, focus accommodation, and binocular disparity \u2014 without wearing specialised eyewear. It achieves this by encoding scenes as holograms (interference fringe patterns) and illuminating them with coherent or structured light to recreate the original light field. Unlike stereoscopic or autostereoscopic displays, holographic displays avoid the vergence-accommodation conflict because the eye can naturally refocus at different depths within the reconstructed scene. Practical implementations typically use spatial light modulators, diffractive optical elements, or photopolymer recording media to shape wavefronts, placing extreme demands on computational throughput and optical bandwidth.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:display-technology",
@@ -13,31 +13,133 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
-  "maturity": "established",
+  "qualityScore": 0.74,
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:diffractive-optical-element",
+        "label": "Diffractive Optical Element"
+      },
+      {
+        "id": "urn:ngm:class:wavefront-reconstruction",
+        "label": "Wavefront Reconstruction"
+      },
+      {
+        "id": "urn:ngm:class:hologram-rendering-pipeline",
+        "label": "Hologram Rendering Pipeline"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:holography",
         "label": "Holography"
+      },
+      {
+        "id": "urn:ngm:class:spatial-light-modulator",
+        "label": "Spatial Light Modulator"
+      },
+      {
+        "id": "urn:ngm:class:coherent-light-source",
+        "label": "Coherent Light Source"
+      },
+      {
+        "id": "urn:ngm:class:computer-generated-holography",
+        "label": "Computer-Generated Holography"
       }
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:spatial-computing-paradigm",
+        "id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:volumetric-display",
+        "label": "Volumetric Display"
+      },
+      {
+        "id": "urn:ngm:class:telepresence",
+        "label": "Telepresence"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "id": "urn:ngm:class:photonics",
+        "label": "Photonics"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:stereoscopic-display",
+        "label": "Stereoscopic Display"
+      },
+      {
+        "id": "urn:ngm:class:autostereoscopic-display",
+        "label": "Autostereoscopic Display"
+      },
+      {
+        "id": "urn:ngm:class:flat-panel-display",
+        "label": "Flat Panel Display"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:light-field",
+        "label": "Light Field"
+      },
+      {
+        "id": "urn:ngm:class:diffraction",
+        "label": "Diffraction"
+      },
+      {
+        "id": "urn:ngm:class:interference",
+        "label": "Interference"
+      },
+      {
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:head-mounted-display",
+        "label": "Head-Mounted Display"
+      },
+      {
+        "id": "urn:ngm:class:mixed-reality",
+        "label": "Mixed Reality"
+      },
+      {
+        "id": "urn:ngm:class:optical-see-through",
+        "label": "Optical See-Through"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:runtime-environment",
   "domain": "infrastructure",
-  "definition": "A Runtime Environment provides the execution context in which application code runs, managing memory allocation, code interpretation or compilation, system resource access, and cross-platform compatibility. In spatial computing, runtime environments span browser-based JavaScript engines with WebXR and WebGPU APIs, native frameworks such as Unity's IL2CPP and Unreal's C++ runtime, and standards such as WebAssembly that enable near-native performance across diverse hardware.",
+  "definition": "A Runtime Environment is the integrated set of software components, libraries, and managed services that provide the execution context in which application code operates at run time, encompassing memory management, instruction dispatch, system-call mediation, and API surface exposure. It abstracts the underlying hardware and operating system to deliver a consistent, portable execution substrate \u2014 whether a bytecode interpreter, a just-in-time compiler, a managed virtual machine, or a native process sandbox. Runtime environments coordinate lifecycle events (initialisation, garbage collection, signal handling, graceful shutdown) and expose introspection facilities such as profilers, debuggers, and telemetry hooks. They are foundational to cloud-native, edge, and immersive computing stacks, underpinning containerised microservices, WebAssembly workloads, game engine scripting layers, and on-device AI inference pipelines.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-computing-and-cloud",
@@ -13,11 +13,37 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:memory-management",
+        "label": "Memory Management"
+      },
+      {
+        "id": "urn:ngm:class:garbage-collector",
+        "label": "Garbage Collector"
+      },
+      {
+        "id": "urn:ngm:class:just-in-time-compiler",
+        "label": "Just-In-Time Compiler"
+      },
+      {
+        "id": "urn:ngm:class:standard-library",
+        "label": "Standard Library"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:operating-system",
+        "label": "Operating System"
+      },
+      {
+        "id": "urn:ngm:class:hardware-abstraction-layer",
+        "label": "Hardware Abstraction Layer"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:game-engine",
@@ -26,12 +52,51 @@
       {
         "id": "urn:ngm:class:scripting-language",
         "label": "Scripting Language"
+      },
+      {
+        "id": "urn:ngm:class:containerisation",
+        "label": "Containerisation"
+      },
+      {
+        "id": "urn:ngm:class:serverless-computing",
+        "label": "Serverless Computing"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:instruction-set-architecture",
+        "label": "Instruction Set Architecture"
+      },
+      {
+        "id": "urn:ngm:class:process-scheduler",
+        "label": "Process Scheduler"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:compile-time-environment",
+        "label": "Compile-Time Environment"
+      },
+      {
+        "id": "urn:ngm:class:bare-metal-execution",
+        "label": "Bare-Metal Execution"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:machine-learning-inference",
+        "label": "Machine Learning Inference"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:web-assembly",
@@ -40,6 +105,10 @@
       {
         "id": "urn:ngm:class:virtual-machine",
         "label": "Virtual Machine"
+      },
+      {
+        "id": "urn:ngm:class:application-programming-interface",
+        "label": "Application Programming Interface"
       }
     ],
     "supports": [
@@ -50,11 +119,28 @@
       {
         "id": "urn:ngm:class:3-d-rendering-engine",
         "label": "3D Rendering Engine"
+      },
+      {
+        "id": "urn:ngm:class:on-device-inference",
+        "label": "On-Device Inference"
+      },
+      {
+        "id": "urn:ngm:class:debugging",
+        "label": "Debugging"
       }
     ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:software-development-kit",
+        "label": "Software Development Kit"
+      },
+      {
+        "id": "urn:ngm:class:execution-model",
+        "label": "Execution Model"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

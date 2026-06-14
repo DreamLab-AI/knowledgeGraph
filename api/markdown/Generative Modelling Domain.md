@@ -91,7 +91,7 @@ public:: true
   "@type": "Class",
   "label": "Generative Modelling Domain",
   "definition": "The Generative Modelling Domain covers statistical models that learn a data distribution and can sample new instances from it. Its scope includes latent variable models, autoregressive models, diffusion processes and adversarial training. It is a methodological sub-area of the Artificial Intelligence Domain situated within the Machine Learning Domain. The boundary is the modelling of distributions, distinguishing it from the applied Generative AI Domain that deploys such models in products.",
-  "domain": "generative-modelling",
+  "domain": "machine-learning",
   "maturity": "emerging",
   "qualityScore": 0.7,
   "subClassOf": [

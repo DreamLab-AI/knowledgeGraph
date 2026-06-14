@@ -21,7 +21,7 @@ public:: true
   "@type": "Class",
   "label": "CAD Software",
   "definition": "Computer-Aided Design (CAD) software is a category of application that enables engineers, architects, and designers to create, modify, analyse, and optimise two-dimensional drawings and three-dimensional geometric models of physical artefacts and structures. CAD tools encode geometry using boundary representation (B-rep) or constructive solid geometry (CSG) methods, support parametric constraint-based modelling, and produce outputs usable in manufacturing, simulation, and visualisation pipelines.",
-  "domain": "spatial",
+  "domain": "spatial-computing",
   "maturity": "mature",
   "subClassOf": [{"@id": "urn:ngm:class:design-software", "label": "Design Software"}],
   "relations": {

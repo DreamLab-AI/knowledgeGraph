@@ -5,46 +5,120 @@
   "public": true,
   "classIri": "urn:ngm:class:did-document",
   "domain": "blockchain",
-  "definition": "A DID Document is a JSON-LD resource associated with a Decentralised Identifier (DID) that expresses the DID subject's cryptographic public keys, authentication methods, assertion methods, key agreement protocols, and service endpoints. Resolved from a DID via a DID method-specific read operation, a DID Document enables verifiers to discover how to authenticate with, or communicate securely to, the DID subject without relying on a centralised registry. DID Documents are specified by the W3C DID Core standard and are a foundational component of self-sovereign identity and verifiable credential ecosystems.",
+  "definition": "A DID Document is a JSON-LD resource resolved from a Decentralised Identifier (DID) that expresses the DID subject's cryptographic public keys, authentication methods, assertion methods, key agreement protocols, capability delegation mechanisms, and service endpoints. Defined by the W3C DID Core specification, a DID Document is the machine-readable artefact that enables any verifier to discover how to authenticate with or communicate securely to a DID subject without relying on a centralised identity authority. DID Documents are anchored to a Verifiable Data Registry \u2014 such as a distributed ledger, blockchain, or peer-to-peer network \u2014 via a DID method-specific read operation, making them a foundational component of self-sovereign identity and verifiable credential ecosystems.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:bc-cryptographic-primitive",
-      "label": "Cryptographic Primitive"
+      "id": "urn:ngm:class:decentralised-identifier",
+      "label": "Decentralised Identifier"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.72,
+  "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:verification-method",
+        "label": "Verification Method"
+      },
+      {
+        "id": "urn:ngm:class:service-endpoint",
+        "label": "Service Endpoint"
+      },
+      {
+        "id": "urn:ngm:class:verification-relationship",
+        "label": "Verification Relationship"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:verifiable-data-registry",
+        "label": "Verifiable Data Registry"
+      },
+      {
+        "id": "urn:ngm:class:did-method",
+        "label": "DID Method"
+      },
+      {
+        "id": "urn:ngm:class:did-resolver",
+        "label": "DID Resolver"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:verifiable-credentials",
         "label": "Verifiable Credentials"
       },
       {
-        "id": "urn:ngm:class:self-sovereign-identity",
-        "label": "Self Sovereign Identity"
+        "id": "urn:ngm:class:decentralised-authentication",
+        "label": "Decentralised Authentication"
+      },
+      {
+        "id": "urn:ngm:class:key-agreement-protocol",
+        "label": "Key Agreement Protocol"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:x-509-certificate",
+        "label": "X.509 Certificate"
+      },
+      {
+        "id": "urn:ngm:class:centralised-identity-provider",
+        "label": "Centralised Identity Provider"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:agent-identity",
+        "label": "Agent Identity"
+      }
+    ],
     "uses": [
       {
-        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
+        "id": "urn:ngm:class:public-key-cryptography",
         "label": "Public-Key Cryptography"
       },
       {
-        "id": "urn:ngm:class:json-data-interchange-format-ld",
+        "id": "urn:ngm:class:json-ld",
         "label": "JSON-LD"
+      },
+      {
+        "id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      },
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
       }
     ],
     "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:w3c-did-core",
+        "label": "W3C DID Core"
+      },
+      {
+        "id": "urn:ngm:class:w3c",
+        "label": "W3C"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:decentralised-identifier",
+        "label": "Decentralised Identifier"
+      },
+      {
+        "id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self-Sovereign Identity"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:digital-identity",
@@ -53,6 +127,14 @@
       {
         "id": "urn:ngm:class:identity-verification",
         "label": "Identity Verification"
+      },
+      {
+        "id": "urn:ngm:class:did-resolution",
+        "label": "DID Resolution"
+      },
+      {
+        "id": "urn:ngm:class:did-url",
+        "label": "DID URL"
       }
     ]
   },

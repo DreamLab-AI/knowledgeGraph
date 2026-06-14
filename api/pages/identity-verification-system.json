@@ -4,8 +4,8 @@
   "slug": "identity-verification-system",
   "public": true,
   "classIri": "urn:ngm:class:identity-verification-system",
-  "domain": "identity",
-  "definition": "An identity verification system is a set of processes and technologies that confirm a person is who they claim to be, often during onboarding. It typically combines document checks, biometrics and data validation.",
+  "domain": "security",
+  "definition": "An Identity Verification System (IVS) is an integrated set of processes, technologies, and controls that establish with high assurance that a person presenting a claimed identity is genuinely that individual. It typically orchestrates document authentication, biometric matching with liveness detection, and cross-referential data validation against authoritative databases to produce a risk-scored trust signal. IVSs operate across regulated sectors \u2014 financial services, healthcare, government, and telecommunications \u2014 where Know Your Customer (KYC) and Anti-Money Laundering (AML) obligations mandate identity proofing at onboarding and at trust-elevation events. Modern IVSs increasingly integrate machine-learning fraud-detection models, cryptographic document signatures, and decentralised identity standards to resist synthetic-identity fraud and deepfake attacks.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:identity-management",
@@ -13,26 +13,140 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.74,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:document-authentication",
+        "label": "Document Authentication"
+      },
+      {
+        "id": "urn:ngm:class:liveness-detection",
+        "label": "Liveness Detection"
+      },
+      {
+        "id": "urn:ngm:class:risk-scoring",
+        "label": "Risk Scoring"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:biometric-authentication",
         "label": "Biometric Authentication"
+      },
+      {
+        "id": "urn:ngm:class:optical-character-recognition",
+        "label": "Optical Character Recognition"
+      },
+      {
+        "id": "urn:ngm:class:database-lookup",
+        "label": "Database Lookup"
       }
     ],
-    "enables": [],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:know-your-customer",
+        "label": "Know Your Customer"
+      },
+      {
+        "id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
+      },
+      {
+        "id": "urn:ngm:class:digital-onboarding",
+        "label": "Digital Onboarding"
+      },
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:identity-proofing",
+        "label": "Identity Proofing"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "id": "urn:ngm:class:authorisation",
+        "label": "Authorisation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-credential",
+        "label": "Verifiable Credential"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:facial-recognition",
+        "label": "Facial Recognition"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-signature",
+        "label": "Cryptographic Signature"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:fraud-detection",
+        "label": "Fraud Detection"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:nist-sp-800-63",
+        "label": "NIST SP 800-63"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-30107",
+        "label": "ISO/IEC 30107"
+      },
+      {
+        "id": "urn:ngm:class:eidas-regulation",
+        "label": "eIDAS Regulation"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:synthetic-identity-fraud",
+        "label": "Synthetic Identity Fraud"
+      },
+      {
+        "id": "urn:ngm:class:privacy-preserving-computation",
+        "label": "Privacy-Preserving Computation"
+      }
+    ]
   },
   "wikilinks": [
     {

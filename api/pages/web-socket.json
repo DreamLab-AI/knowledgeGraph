@@ -4,20 +4,29 @@
   "slug": "web-socket",
   "public": true,
   "classIri": "urn:ngm:class:web-socket",
-  "domain": "artificial-intelligence",
-  "definition": "WebSocket is an application-layer protocol (RFC 6455) that establishes a persistent, full-duplex communication channel over a single TCP connection, initiated via an HTTP/1.1 upgrade handshake. Unlike HTTP's request-response model, WebSocket allows both client and server to send data frames independently and at any time after the connection is established, making it the standard mechanism for low-latency bidirectional communication in web applications such as real-time dashboards, collaborative editing, chat systems, and live AI inference streaming. The protocol defines a framing mechanism with opcodes for text, binary, ping/pong keepalives, and connection close.",
+  "domain": "infrastructure",
+  "definition": "WebSocket is an application-layer communication protocol defined in RFC 6455 that establishes a persistent, full-duplex channel over a single TCP connection, initiated via an HTTP/1.1 upgrade handshake. Unlike the request-response model of HTTP, WebSocket permits the server and client to send data frames independently at any time after connection establishment, enabling low-latency bidirectional communication. The protocol specifies a lightweight framing mechanism with opcodes for text, binary, ping/pong keepalives, and graceful connection close, and is extended by RFC 7692 for per-message DEFLATE compression. It is the de facto standard transport for real-time web applications including collaborative editing, live dashboards, chat systems, and streaming LLM token output.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ai-infrastructure",
-      "label": "AI Infrastructure"
+      "id": "urn:ngm:class:network-protocol",
+      "label": "Network Protocol"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.72,
+  "maturity": "mature",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:transmission-control-protocol",
+        "label": "Transmission Control Protocol"
+      },
+      {
+        "id": "urn:ngm:class:hypertext-transfer-protocol",
+        "label": "Hypertext Transfer Protocol"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:real-time-processing",
@@ -26,29 +35,107 @@
       {
         "id": "urn:ngm:class:event-driven-architecture",
         "label": "Event Driven Architecture"
-      }
-    ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [
+      },
       {
-        "id": "urn:ngm:class:latency",
-        "label": "Latency"
+        "id": "urn:ngm:class:server-sent-push",
+        "label": "Server-Sent Push"
+      },
+      {
+        "id": "urn:ngm:class:collaborative-editing",
+        "label": "Collaborative Editing"
       }
     ],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:load-balancer",
+        "label": "Load Balancer"
+      },
+      {
+        "id": "urn:ngm:class:publish-subscribe-pattern",
+        "label": "Publish-Subscribe Pattern"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:full-duplex-communication",
+        "label": "Full-Duplex Communication"
+      },
+      {
+        "id": "urn:ngm:class:rfc-6455",
+        "label": "RFC 6455"
+      }
+    ],
+    "contrastsWith": [
       {
         "id": "urn:ngm:class:rest-api",
         "label": "REST API"
       },
       {
-        "id": "urn:ngm:class:network-protocol",
-        "label": "Network Protocol"
+        "id": "urn:ngm:class:server-sent-events",
+        "label": "Server-Sent Events"
+      },
+      {
+        "id": "urn:ngm:class:long-polling",
+        "label": "Long Polling"
+      },
+      {
+        "id": "urn:ngm:class:webrtc",
+        "label": "WebRTC"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:ai-inference-serving",
+        "label": "AI Inference Serving"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:transport-layer-security",
+        "label": "Transport Layer Security"
+      },
+      {
+        "id": "urn:ngm:class:protocol-buffers",
+        "label": "Protocol Buffers"
+      },
+      {
+        "id": "urn:ngm:class:message-framing",
+        "label": "Message Framing"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:message-queue",
+        "label": "Message Queue"
+      },
+      {
+        "id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:internet-engineering-task-force",
+        "label": "Internet Engineering Task Force"
+      },
+      {
+        "id": "urn:ngm:class:world-wide-web-consortium",
+        "label": "World Wide Web Consortium"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:latency",
+        "label": "Latency"
+      },
+      {
+        "id": "urn:ngm:class:grpc",
+        "label": "gRPC"
       }
     ]
   },

@@ -4,17 +4,17 @@
   "slug": "cryptographic-hash-function",
   "public": true,
   "classIri": "urn:ngm:class:cryptographic-hash-function",
-  "domain": "blockchain",
-  "definition": "A Cryptographic Hash Function is a deterministic algorithm that maps arbitrary-length input data to a fixed-length output digest of fixed size, such that it is computationally infeasible to reverse the mapping, find two inputs producing the same digest (collision resistance), or derive the input from the digest alone (preimage resistance). Hash functions such as SHA-256 and Keccak-256 underpin blockchain data integrity, Merkle tree construction, and digital signature schemes. They are a foundational primitive for proof-of-work consensus, address derivation, and commitment schemes across distributed ledger systems.",
+  "domain": "security",
+  "definition": "A cryptographic hash function is a deterministic, one-way algorithm that maps an input of arbitrary length to a fixed-size digest (typically 160\u2013512 bits), satisfying three core security properties: preimage resistance (infeasibility of recovering input from digest), second-preimage resistance (infeasibility of finding a distinct input that maps to the same digest as a known input), and collision resistance (infeasibility of finding any two distinct inputs that share a digest). These properties make hash functions foundational primitives for data integrity verification, digital signatures, message authentication codes, and proof-of-work consensus. Widely deployed algorithms include SHA-256 (Bitcoin), Keccak-256 (Ethereum), BLAKE2, and SHA-3 (NIST FIPS 202); Grover's algorithm on quantum hardware reduces effective security by half, motivating ongoing standardisation of quantum-resistant alternatives by NIST.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:bc-cryptographic-primitive",
-      "label": "BC Cryptographic Primitive"
+      "id": "urn:ngm:class:cryptographic-primitive",
+      "label": "Cryptographic Primitive"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.75,
+  "maturity": "mature",
   "relationships": {
     "hasPart": [],
     "requires": [
@@ -25,6 +25,14 @@
       {
         "id": "urn:ngm:class:preimage-resistance",
         "label": "Preimage Resistance"
+      },
+      {
+        "id": "urn:ngm:class:second-preimage-resistance",
+        "label": "Second-Preimage Resistance"
+      },
+      {
+        "id": "urn:ngm:class:avalanche-effect",
+        "label": "Avalanche Effect"
       }
     ],
     "enables": [
@@ -35,17 +43,60 @@
       {
         "id": "urn:ngm:class:digital-signature",
         "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:message-authentication-code",
+        "label": "Message Authentication Code"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-work",
+        "label": "Proof of Work"
+      },
+      {
+        "id": "urn:ngm:class:commitment-scheme",
+        "label": "Commitment Scheme"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
+    "implements": [
+      {
+        "id": "urn:ngm:class:one-way-function",
+        "label": "One-Way Function"
+      },
+      {
+        "id": "urn:ngm:class:pseudorandom-function",
+        "label": "Pseudorandom Function"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:symmetric-encryption",
+        "label": "Symmetric Encryption"
+      },
+      {
+        "id": "urn:ngm:class:checksums",
+        "label": "Checksums"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:post-quantum-cryptography",
+        "label": "Post-Quantum Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-credential",
+        "label": "Verifiable Credential"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-identifier",
+        "label": "Decentralised Identifier"
+      }
+    ],
+    "uses": [
       {
         "id": "urn:ngm:class:sha-256",
         "label": "SHA-256"
@@ -53,6 +104,53 @@
       {
         "id": "urn:ngm:class:keccak-256",
         "label": "Keccak-256"
+      },
+      {
+        "id": "urn:ngm:class:blake2",
+        "label": "BLAKE2"
+      },
+      {
+        "id": "urn:ngm:class:sha-3",
+        "label": "SHA-3"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:password-hashing",
+        "label": "Password Hashing"
+      },
+      {
+        "id": "urn:ngm:class:content-addressed-storage",
+        "label": "Content-Addressed Storage"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:nist",
+        "label": "NIST"
+      },
+      {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:hmac",
+        "label": "HMAC"
+      },
+      {
+        "id": "urn:ngm:class:key-derivation-function",
+        "label": "Key Derivation Function"
       }
     ]
   },

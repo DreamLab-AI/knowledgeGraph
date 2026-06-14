@@ -4,7 +4,7 @@
   "slug": "encryption-service",
   "public": true,
   "classIri": "urn:ngm:class:encryption-service",
-  "domain": "general",
+  "domain": "security",
   "definition": "An encryption service is a system or component that provides cryptographic protection of data, typically offering key management and encryption operations through an interface. It supports confidentiality of stored and transmitted data.",
   "subClassOf": [
     {

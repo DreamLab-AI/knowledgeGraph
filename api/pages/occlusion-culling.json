@@ -5,34 +5,116 @@
   "public": true,
   "classIri": "urn:ngm:class:occlusion-culling",
   "domain": "spatial-computing",
-  "definition": "A real-time rendering optimisation technique that identifies and discards geometry hidden from the viewer's perspective before the GPU processes it. By eliminating draw calls for fully occluded objects, occlusion culling reduces GPU load and enables higher frame rates in complex virtual environments such as virtual worlds and XR applications.",
+  "definition": "Occlusion culling is a real-time rendering optimisation technique that determines which scene objects are hidden (occluded) by other geometry from the viewer's current viewpoint and discards them before issuing GPU draw calls. By preventing invisible geometry from traversing the vertex, rasterisation, and fragment shader stages, occlusion culling reduces overdraw and GPU workload, enabling complex scenes with high polygon counts to maintain interactive frame rates. It is a complementary technique to frustum culling, level-of-detail selection, and back-face culling within the broader visibility determination subsystem of a render pipeline. Implementations range from CPU-driven portal and cell systems, to hardware occlusion queries, to GPU-driven indirect rendering with hierarchical Z-buffer occlusion.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:sc-display-and-rendering",
-      "label": "Display and Rendering"
+      "id": "urn:ngm:class:real-time-rendering",
+      "label": "Real-Time Rendering"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:hierarchical-z-buffer",
+        "label": "Hierarchical Z-Buffer"
+      },
+      {
+        "id": "urn:ngm:class:occlusion-query",
+        "label": "Occlusion Query"
+      },
+      {
+        "id": "urn:ngm:class:portal-culling",
+        "label": "Portal Culling"
+      },
+      {
+        "id": "urn:ngm:class:bounding-volume-hierarchy",
+        "label": "Bounding Volume Hierarchy"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:depth-buffer",
+        "label": "Depth Buffer"
+      },
+      {
+        "id": "urn:ngm:class:spatial-data-structure",
+        "label": "Spatial Data Structure"
+      },
+      {
+        "id": "urn:ngm:class:scene-graph",
+        "label": "Scene Graph"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:virtual-environment",
         "label": "Virtual Environment"
       },
       {
-        "id": "urn:ngm:class:gpu-compute",
-        "label": "GPU Compute"
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "id": "urn:ngm:class:open-world-game",
+        "label": "Open World Game"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "id": "urn:ngm:class:rasterisation",
+        "label": "Rasterisation"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:frustum-culling",
+        "label": "Frustum Culling"
+      },
+      {
+        "id": "urn:ngm:class:back-face-culling",
+        "label": "Back-Face Culling"
+      },
+      {
+        "id": "urn:ngm:class:level-of-detail",
+        "label": "Level of Detail"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:metaverse-infrastructure",
+        "label": "Metaverse Infrastructure"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:bounding-volume",
+        "label": "Bounding Volume"
+      },
+      {
+        "id": "urn:ngm:class:frustum-culling",
+        "label": "Frustum Culling"
+      },
+      {
+        "id": "urn:ngm:class:potential-visibility-set",
+        "label": "Potential Visibility Set"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [
@@ -41,18 +123,26 @@
         "label": "Render Pipeline"
       },
       {
-        "id": "urn:ngm:class:real-time-rendering",
-        "label": "Real-Time Rendering"
+        "id": "urn:ngm:class:visibility-determination",
+        "label": "Visibility Determination"
       }
     ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:level-of-detail",
-        "label": "Level of Detail"
-      },
-      {
         "id": "urn:ngm:class:collision-detection",
         "label": "Collision Detection"
+      },
+      {
+        "id": "urn:ngm:class:draw-call-batching",
+        "label": "Draw Call Batching"
+      },
+      {
+        "id": "urn:ngm:class:indirect-rendering",
+        "label": "Indirect Rendering"
+      },
+      {
+        "id": "urn:ngm:class:spatial-partitioning",
+        "label": "Spatial Partitioning"
       }
     ]
   },

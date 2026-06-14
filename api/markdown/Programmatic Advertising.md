@@ -21,7 +21,7 @@ public:: true
   "@type": "Class",
   "label": "Programmatic Advertising",
   "definition": "Programmatic advertising is the automated buying and selling of digital advertising inventory through software platforms and real-time auctions, replacing manual insertion orders with algorithmic matching of advertiser bids to publisher ad slots. It encompasses demand-side platforms, supply-side platforms, ad exchanges, and data management systems that collectively orchestrate the delivery of targeted advertisements at scale.",
-  "domain": "media",
+  "domain": "finance",
   "maturity": "mature",
   "subClassOf": [{"@id": "urn:ngm:class:advertising", "label": "Advertising"}],
   "relations": {

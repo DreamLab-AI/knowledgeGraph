@@ -5,19 +5,41 @@
   "public": true,
   "classIri": "urn:ngm:class:multi-agent-systems",
   "domain": "artificial-intelligence",
-  "definition": "Multi-agent systems (MAS) are computational architectures in which multiple autonomous agents\u2014each with their own perception, memory, and action capabilities\u2014interact within a shared environment to accomplish tasks that benefit from parallelisation, specialisation, or distributed coordination. In contemporary AI, MAS are realised through networks of LLM-backed agents orchestrated by frameworks that manage inter-agent communication, tool invocation, and task decomposition. Emergent collective behaviours, coordination protocols, and mechanism-design principles from classical MAS theory inform how modern agentic systems handle conflict, deception, and incentive alignment.",
+  "definition": "Multi-agent systems (MAS) are computational architectures in which multiple autonomous agents\u2014each with their own perception, memory, reasoning, and action capabilities\u2014interact within a shared environment to accomplish tasks that benefit from parallelisation, specialisation, or distributed coordination. Each agent operates according to local decision logic (reactive, deliberative, or hybrid) while collectively producing emergent global behaviour through communication, negotiation, and coordination protocols. In contemporary AI, MAS are realised through networks of LLM-backed agents orchestrated by frameworks that manage inter-agent messaging, tool invocation, and task decomposition. Mechanism-design principles, game theory, and classical distributed-AI theory inform how modern agentic systems handle conflict, incentive alignment, and safety in open-ended agent populations.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ai-application",
-      "label": "AI Application"
+      "id": "urn:ngm:class:distributed-systems",
+      "label": "Distributed Systems"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      },
+      {
+        "id": "urn:ngm:class:agent-communication-language",
+        "label": "Agent Communication Language"
+      },
+      {
+        "id": "urn:ngm:class:coordination-protocol",
+        "label": "Coordination Protocol"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      },
+      {
+        "id": "urn:ngm:class:concurrency",
+        "label": "Concurrency"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:agentic-ai",
@@ -26,17 +48,61 @@
       {
         "id": "urn:ngm:class:task-planning",
         "label": "Task Planning"
+      },
+      {
+        "id": "urn:ngm:class:emergent-behaviour",
+        "label": "Emergent Behaviour"
+      },
+      {
+        "id": "urn:ngm:class:collective-intelligence",
+        "label": "Collective Intelligence"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [
+    "dependsOn": [
       {
-        "id": "urn:ngm:class:autonomous-agent",
-        "label": "Autonomous Agent"
+        "id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
       },
+      {
+        "id": "urn:ngm:class:mechanism-design",
+        "label": "Mechanism Design"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:belief-desire-intention",
+        "label": "Belief-Desire-Intention"
+      },
+      {
+        "id": "urn:ngm:class:reactive-agents",
+        "label": "Reactive Agents"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:single-agent-systems",
+        "label": "Single-Agent Systems"
+      },
+      {
+        "id": "urn:ngm:class:monolithic-ai",
+        "label": "Monolithic AI"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisations",
+        "label": "Decentralised Autonomous Organisations"
+      },
+      {
+        "id": "urn:ngm:class:digital-twins",
+        "label": "Digital Twins"
+      },
+      {
+        "id": "urn:ngm:class:iot-networks",
+        "label": "IoT Networks"
+      }
+    ],
+    "uses": [
       {
         "id": "urn:ngm:class:agent-frameworks",
         "label": "Agent Frameworks"
@@ -44,15 +110,45 @@
       {
         "id": "urn:ngm:class:orchestration",
         "label": "Orchestration"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:message-passing",
+        "label": "Message Passing"
       }
     ],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
+    "supports": [
       {
         "id": "urn:ngm:class:reinforcement-learning",
         "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:swarm-intelligence",
+        "label": "Swarm Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:fipa",
+        "label": "FIPA"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:explainability",
+        "label": "Explainability"
       }
     ]
   },

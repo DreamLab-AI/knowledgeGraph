@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:vyper",
   "domain": "blockchain",
-  "definition": "A contract-oriented programming language for the Ethereum Virtual Machine that emphasises simplicity, auditability, and security. It uses Python-like syntax and deliberately omits features that can make contracts hard to reason about.",
+  "definition": "Vyper is a contract-oriented, statically typed programming language for the Ethereum Virtual Machine (EVM) that prioritises security, simplicity, and auditability over expressive power. Inspired by Python syntax, it deliberately omits class inheritance, function overloading, recursive calling, and inline assembly to eliminate entire categories of smart-contract vulnerabilities. The language enforces bounds checking, explicit integer overflow handling, and strong typing so that the compiled EVM bytecode is tractable for formal verification and manual code review. Vyper was initially specified by Vitalik Buterin and the Ethereum Foundation team as a safer companion language to Solidity.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:programming-language",
@@ -13,31 +13,109 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.75,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:ethereum-smart-contract-platform-virtual-machine",
+        "id": "urn:ngm:class:ethereum-virtual-machine",
         "label": "Ethereum Virtual Machine"
+      },
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:erc-20",
+        "label": "ERC-20"
+      },
+      {
+        "id": "urn:ngm:class:erc-721",
+        "label": "ERC-721"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:solidity",
+        "label": "Solidity"
+      },
+      {
+        "id": "urn:ngm:class:fe-language",
+        "label": "Fe Language"
+      },
+      {
+        "id": "urn:ngm:class:yul",
+        "label": "Yul"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:formal-methods",
+        "label": "Formal Methods"
+      },
+      {
+        "id": "urn:ngm:class:program-analysis",
+        "label": "Program Analysis"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:evm-bytecode",
+        "label": "EVM Bytecode"
+      },
+      {
+        "id": "urn:ngm:class:static-typing",
+        "label": "Static Typing"
+      },
+      {
+        "id": "urn:ngm:class:abi-encoding",
+        "label": "ABI Encoding"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:security-audit",
+        "label": "Security Audit"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:curve-finance",
+        "label": "Curve Finance"
+      },
+      {
+        "id": "urn:ngm:class:compound-protocol",
+        "label": "Compound Protocol"
+      },
+      {
+        "id": "urn:ngm:class:open-source-software",
+        "label": "Open Source Software"
+      }
+    ]
   },
   "wikilinks": [
     {

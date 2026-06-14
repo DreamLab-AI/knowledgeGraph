@@ -4,55 +4,138 @@
   "slug": "social-network-graph",
   "public": true,
   "classIri": "urn:ngm:class:social-network-graph",
-  "domain": "spatial-computing",
-  "definition": "A graph-theoretic representation of social relationships in which nodes denote individuals or entities and edges encode interactions, follows, or trust links. Social network graphs underpin recommendation systems, community detection, influence analysis, and decentralised identity federation protocols such as Nostr and ActivityPub.",
+  "domain": "data",
+  "definition": "A graph-theoretic data structure in which nodes represent social actors (individuals, organisations, or automated agents) and edges encode directed or undirected social relations such as friendship, following, trust, or co-authorship. Social network graphs are analysed using network-science metrics including degree centrality, clustering coefficient, betweenness, and PageRank to reveal community structure, information diffusion pathways, and influential actors. They underpin decentralised identity federation protocols (ActivityPub, Nostr), recommendation engines, and adversarial analysis tasks such as Sybil detection. The formalism extends naturally to heterogeneous property graphs and hypergraphs when multi-typed relations or group memberships must be represented.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:sc-platform-and-environment",
-      "label": "Platform and Environment"
+      "id": "urn:ngm:class:knowledge-graph",
+      "label": "Knowledge Graph"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:graph-node",
+        "label": "Graph Node"
+      },
+      {
+        "id": "urn:ngm:class:graph-edge",
+        "label": "Graph Edge"
+      },
+      {
+        "id": "urn:ngm:class:community-structure",
+        "label": "Community Structure"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "id": "urn:ngm:class:graph-traversal-algorithm",
+        "label": "Graph Traversal Algorithm"
+      }
+    ],
     "enables": [
+      {
+        "id": "urn:ngm:class:community-detection",
+        "label": "Community Detection"
+      },
+      {
+        "id": "urn:ngm:class:influence-analysis",
+        "label": "Influence Analysis"
+      },
+      {
+        "id": "urn:ngm:class:recommendation-system",
+        "label": "Recommendation System"
+      },
       {
         "id": "urn:ngm:class:identity-federation",
         "label": "Identity Federation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:graph-theory",
+        "label": "Graph Theory"
+      },
+      {
+        "id": "urn:ngm:class:network-topology",
+        "label": "Network Topology"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:citation-network",
+        "label": "Citation Network"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:graph-neural-network",
+        "label": "Graph Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
       },
       {
         "id": "urn:ngm:class:virtual-community-platform",
         "label": "Virtual Community Platform"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
     "uses": [
-      {
-        "id": "urn:ngm:class:digital-identity",
-        "label": "Digital Identity"
-      },
       {
         "id": "urn:ngm:class:nostr-protocol",
         "label": "Nostr Protocol"
+      },
+      {
+        "id": "urn:ngm:class:activitypub",
+        "label": "ActivityPub"
+      },
+      {
+        "id": "urn:ngm:class:pagerank",
+        "label": "PageRank"
       }
     ],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
+    "supports": [
       {
-        "id": "urn:ngm:class:knowledge-graph",
-        "label": "Knowledge Graph"
+        "id": "urn:ngm:class:sybil-resistance",
+        "label": "Sybil Resistance"
       },
+      {
+        "id": "urn:ngm:class:social-media-analytics",
+        "label": "Social Media Analytics"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:graph-database",
+        "label": "Graph Database"
+      }
+    ],
+    "relatedTo": [
       {
         "id": "urn:ngm:class:federation-surface",
         "label": "Federation Surface"
+      },
+      {
+        "id": "urn:ngm:class:web-of-trust",
+        "label": "Web of Trust"
+      },
+      {
+        "id": "urn:ngm:class:small-world-network",
+        "label": "Small-World Network"
       }
     ]
   },

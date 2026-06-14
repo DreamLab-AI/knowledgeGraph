@@ -4,7 +4,7 @@
   "slug": "camera-tracking-system",
   "public": true,
   "classIri": "urn:ngm:class:camera-tracking-system",
-  "domain": "spatial",
+  "domain": "spatial-computing",
   "definition": "A camera tracking system is a hardware and software assembly that continuously records the position, orientation, and lens parameters of a physical camera in three-dimensional space, transmitting this data in real time to rendering or compositing engines so that computer-generated imagery can be seamlessly integrated with live-action footage. Such systems underpin virtual production stages, augmented reality overlays, broadcast graphics, and visual effects pipelines. Tracking technologies include optical encoder arrays, inertial measurement units, infrared LED constellations, machine vision fiducial markers, and LiDAR-based spatial mapping.",
   "subClassOf": [
     {

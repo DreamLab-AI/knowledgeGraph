@@ -4,7 +4,7 @@
   "slug": "community",
   "public": true,
   "classIri": "urn:ngm:class:community",
-  "domain": "social",
+  "domain": "distributed-collaboration",
   "definition": "A community is a group of people who interact around a shared interest, project, or platform, contributing to its development, governance, or use.",
   "subClassOf": [
     {

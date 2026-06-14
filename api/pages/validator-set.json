@@ -5,21 +5,29 @@
   "public": true,
   "classIri": "urn:ngm:class:validator-set",
   "domain": "blockchain",
-  "definition": "A validator set is the collection of nodes in a proof-of-stake or delegated consensus blockchain that are authorised to propose, attest, and finalise new blocks in each epoch. Validators are typically selected through staking\u2014locking collateral that is subject to slashing penalties for misbehaviour\u2014ensuring economic alignment with protocol security. The composition of the validator set changes at epoch boundaries based on delegation, unbonding, and slashing events, and its size determines the trade-off between decentralisation and consensus latency.",
+  "definition": "A validator set is the finite, dynamically managed collection of nodes in a proof-of-stake or delegated consensus blockchain that are authorised to propose blocks, attest to their validity, and participate in the finality process during each epoch. Membership is gated by a minimum stake bond whose collateral is subject to slashing penalties for protocol violations such as equivocation or surround voting, aligning validator incentives with network security. The set is recomposed at epoch boundaries according to delegation weights, unbonding queues, and slashing events, and its cardinality governs the fundamental trade-off between decentralisation, Byzantine fault tolerance, and consensus latency. In sharded or layered architectures, validator sets may be further partitioned into sub-committees to scale throughput while preserving cryptographic security guarantees.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:bc-network-component",
-      "label": "Blockchain Network Component"
+      "id": "urn:ngm:class:consensus-mechanism",
+      "label": "Consensus Mechanism"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
         "id": "urn:ngm:class:validator-node",
         "label": "Validator Node"
+      },
+      {
+        "id": "urn:ngm:class:slashing-condition",
+        "label": "Slashing Condition"
+      },
+      {
+        "id": "urn:ngm:class:staking-bond",
+        "label": "Staking Bond"
       }
     ],
     "requires": [
@@ -28,16 +36,78 @@
         "label": "Proof of Stake"
       },
       {
-        "id": "urn:ngm:class:consensus-mechanism",
-        "label": "Consensus Mechanism"
+        "id": "urn:ngm:class:staking",
+        "label": "Staking"
+      },
+      {
+        "id": "urn:ngm:class:epoch",
+        "label": "Epoch"
       }
     ],
-    "enables": [],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:block-finality",
+        "label": "Block Finality"
+      },
+      {
+        "id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:block-proposal",
+        "label": "Block Proposal"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:delegation",
+        "label": "Delegation"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-signature",
+        "label": "Cryptographic Signature"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:tendermint-bft",
+        "label": "Tendermint BFT"
+      },
+      {
+        "id": "urn:ngm:class:casper-ffg",
+        "label": "Casper FFG"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:proof-of-work",
+        "label": "Proof of Work"
+      },
+      {
+        "id": "urn:ngm:class:mining-pool",
+        "label": "Mining Pool"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-ai-inference",
+        "label": "Decentralised AI Inference"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:threshold-signature",
+        "label": "Threshold Signature"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-random-function",
+        "label": "Verifiable Random Function"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
@@ -47,12 +117,16 @@
         "label": "Delegated Proof of Stake"
       },
       {
-        "id": "urn:ngm:class:epoch",
-        "label": "Epoch"
-      },
-      {
         "id": "urn:ngm:class:blockchain-network",
         "label": "Blockchain Network"
+      },
+      {
+        "id": "urn:ngm:class:committee-rotation",
+        "label": "Committee Rotation"
+      },
+      {
+        "id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
       }
     ]
   },

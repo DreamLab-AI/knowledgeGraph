@@ -55,7 +55,7 @@ public:: true
   "@type": "Class",
   "label": "Mean Squared Error",
   "definition": "A measure of the average squared difference between predicted values and observed values, widely used to quantify estimation and prediction error.",
-  "domain": "mathematics",
+  "domain": "machine-learning",
   "maturity": "mature",
   "qualityScore": 0.7,
   "subClassOf": [

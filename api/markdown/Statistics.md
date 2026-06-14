@@ -51,7 +51,7 @@ public:: true
   "@type": "Class",
   "label": "Statistics",
   "definition": "The discipline concerned with collecting, analysing, interpreting, and drawing conclusions from data under uncertainty.",
-  "domain": "mathematics",
+  "domain": "machine-learning",
   "maturity": "mature",
   "qualityScore": 0.7,
   "subClassOf": [

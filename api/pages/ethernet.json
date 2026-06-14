@@ -4,7 +4,7 @@
   "slug": "ethernet",
   "public": true,
   "classIri": "urn:ngm:class:ethernet",
-  "domain": "networking",
+  "domain": "infrastructure",
   "definition": "Ethernet is a family of wired networking technologies, standardised as IEEE 802.3, used to connect devices in local area networks.",
   "subClassOf": [
     {

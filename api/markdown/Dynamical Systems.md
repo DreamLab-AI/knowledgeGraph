@@ -55,7 +55,7 @@ public:: true
   "@type": "Class",
   "label": "Dynamical Systems",
   "definition": "Dynamical systems is the mathematical study of how the state of a system evolves over time according to fixed rules. It applies to physics, biology, engineering, and control.",
-  "domain": "general",
+  "domain": "machine-learning",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

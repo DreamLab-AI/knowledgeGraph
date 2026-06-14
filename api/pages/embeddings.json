@@ -4,16 +4,16 @@
   "slug": "embeddings",
   "public": true,
   "classIri": "urn:ngm:class:embeddings",
-  "domain": "ai",
-  "definition": "Embeddings are dense, low-dimensional vector representations of discrete objects\u2014words, sentences, images, code, graphs, or arbitrary entities\u2014learned by neural networks such that geometric relationships in the vector space correspond to semantic or functional relationships between the original objects. The core property is that semantically similar inputs map to nearby vectors, enabling tasks like similarity search, clustering, and retrieval to be performed as efficient geometric operations. Embeddings are the foundational representation layer of modern deep learning, underpinning language models, recommendation systems, search engines, and retrieval-augmented generation pipelines.",
+  "domain": "machine-learning",
+  "definition": "Embeddings are dense, low-dimensional vector representations of discrete objects\u2014words, sentences, images, code, graphs, or arbitrary entities\u2014learned by neural networks such that geometric relationships in the vector space correspond to semantic or functional relationships between the original objects. The core property is that semantically similar inputs map to nearby vectors, enabling tasks like similarity search, clustering, and retrieval to be performed as efficient geometric operations. Embeddings are the foundational representation layer of modern deep learning, underpinning language models, recommendation systems, search engines, and retrieval-augmented generation pipelines. They transform high-dimensional sparse inputs into compact continuous representations that downstream neural architectures\u2014particularly attention-based transformers\u2014can process and reason over.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:machine-learning-discipline-technique",
-      "label": "Machine Learning Technique"
+      "id": "urn:ngm:class:representation-learning",
+      "label": "Representation Learning"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.76,
   "maturity": "established",
   "relationships": {
     "hasPart": [
@@ -28,9 +28,22 @@
       {
         "id": "urn:ngm:class:embedding-model",
         "label": "Embedding Model"
+      },
+      {
+        "id": "urn:ngm:class:positional-encoding",
+        "label": "Positional Encoding"
       }
     ],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:semantic-search",
@@ -43,12 +56,47 @@
       {
         "id": "urn:ngm:class:vector-database",
         "label": "Vector Database"
+      },
+      {
+        "id": "urn:ngm:class:recommendation-system",
+        "label": "Recommendation System"
+      },
+      {
+        "id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:one-hot-encoding",
+        "label": "One-Hot Encoding"
+      },
+      {
+        "id": "urn:ngm:class:bag-of-words",
+        "label": "Bag of Words"
+      },
+      {
+        "id": "urn:ngm:class:symbolic-representation",
+        "label": "Symbolic Representation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:knowledge-graph-embedding",
+        "label": "Knowledge Graph Embedding"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:transformer",
@@ -57,12 +105,37 @@
       {
         "id": "urn:ngm:class:natural-language-processing",
         "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:contrastive-learning",
+        "label": "Contrastive Learning"
+      },
+      {
+        "id": "urn:ngm:class:dimensionality-reduction",
+        "label": "Dimensionality Reduction"
       }
     ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cosine-similarity",
+        "label": "Cosine Similarity"
+      },
+      {
+        "id": "urn:ngm:class:approximate-nearest-neighbour",
+        "label": "Approximate Nearest Neighbour"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-learning",
+        "label": "Multimodal Learning"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

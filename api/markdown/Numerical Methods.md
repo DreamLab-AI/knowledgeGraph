@@ -55,7 +55,7 @@ public:: true
   "@type": "Class",
   "label": "Numerical Methods",
   "definition": "Techniques for obtaining approximate solutions to mathematical problems that cannot be solved exactly, using finite sequences of arithmetic operations.",
-  "domain": "mathematics",
+  "domain": "machine-learning",
   "maturity": "mature",
   "qualityScore": 0.7,
   "subClassOf": [

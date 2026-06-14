@@ -4,8 +4,8 @@
   "slug": "convex-optimisation",
   "public": true,
   "classIri": "urn:ngm:class:convex-optimisation",
-  "domain": "mathematics",
-  "definition": "Convex optimisation is the study of minimising convex functions over convex sets, a class of problems for which any local minimum is global and efficient algorithms exist. It is widely applied in machine learning, control and finance.",
+  "domain": "machine-learning",
+  "definition": "Convex optimisation is the mathematical discipline concerned with minimising convex objective functions over convex feasible sets, exploiting the fundamental property that every local minimum is also a global minimum. This structural guarantee enables the design of polynomial-time algorithms \u2014 such as interior-point methods, subgradient descent, and proximal methods \u2014 that reliably find exact or near-exact solutions. The field is grounded in convex analysis and duality theory (Lagrangian and Fenchel duality), and underpins a vast range of applications spanning machine learning, signal processing, control systems, finance, and operations research. Canonical problem classes include linear programming, quadratic programming, second-order cone programming, and semidefinite programming.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:optimisation",
@@ -13,31 +13,143 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
-  "maturity": "established",
+  "qualityScore": 0.75,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:linear-programming",
+        "label": "Linear Programming"
+      },
+      {
+        "id": "urn:ngm:class:quadratic-programming",
+        "label": "Quadratic Programming"
+      },
+      {
+        "id": "urn:ngm:class:semidefinite-programming",
+        "label": "Semidefinite Programming"
+      },
+      {
+        "id": "urn:ngm:class:second-order-cone-programming",
+        "label": "Second-Order Cone Programming"
+      }
+    ],
     "requires": [
       {
-        "id": "urn:ngm:class:optimisation",
-        "label": "Optimisation"
+        "id": "urn:ngm:class:convex-analysis",
+        "label": "Convex Analysis"
+      },
+      {
+        "id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      },
+      {
+        "id": "urn:ngm:class:calculus",
+        "label": "Calculus"
       }
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning"
+        "id": "urn:ngm:class:support-vector-machine",
+        "label": "Support Vector Machine"
+      },
+      {
+        "id": "urn:ngm:class:lasso-regression",
+        "label": "LASSO Regression"
+      },
+      {
+        "id": "urn:ngm:class:optimal-control",
+        "label": "Optimal Control"
+      },
+      {
+        "id": "urn:ngm:class:portfolio-optimisation",
+        "label": "Portfolio Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:compressed-sensing",
+        "label": "Compressed Sensing"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:duality-theory",
+        "label": "Duality Theory"
+      },
+      {
+        "id": "urn:ngm:class:numerical-methods",
+        "label": "Numerical Methods"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:interior-point-method",
+        "label": "Interior-Point Method"
+      },
+      {
+        "id": "urn:ngm:class:proximal-gradient-method",
+        "label": "Proximal Gradient Method"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:non-convex-optimisation",
+        "label": "Non-Convex Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:combinatorial-optimisation",
+        "label": "Combinatorial Optimisation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:lagrange-multipliers",
+        "label": "Lagrange Multipliers"
+      },
+      {
+        "id": "urn:ngm:class:kkt-conditions",
+        "label": "KKT Conditions"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:mathematical-optimisation",
+        "label": "Mathematical Optimisation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:functional-analysis",
+        "label": "Functional Analysis"
+      },
+      {
+        "id": "urn:ngm:class:stochastic-optimisation",
+        "label": "Stochastic Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:operations-research",
+        "label": "Operations Research"
+      }
+    ]
   },
   "wikilinks": [
     {

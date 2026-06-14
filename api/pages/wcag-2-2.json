@@ -4,7 +4,7 @@
   "slug": "wcag-2-2",
   "public": true,
   "classIri": "urn:ngm:class:wcag-2-2",
-  "domain": "web",
+  "domain": "infrastructure",
   "definition": "WCAG 2.2 is the October 2023 release of the Web Content Accessibility Guidelines published by the W3C Web Accessibility Initiative, introducing nine new success criteria that extend the 2.1 standard with stronger provisions for keyboard navigation, focus appearance, and accessible authentication. It remains structured around four principles \u2014 Perceivable, Operable, Understandable, and Robust \u2014 with conformance levels A, AA, and AAA. The release removes the Parsing criterion (4.1.1) while tightening requirements for pointer gestures, dragging movements, and redundant input.",
   "subClassOf": [
     {

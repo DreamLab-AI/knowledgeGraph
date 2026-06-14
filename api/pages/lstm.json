@@ -4,8 +4,8 @@
   "slug": "lstm",
   "public": true,
   "classIri": "urn:ngm:class:lstm",
-  "domain": "deep-learning",
-  "definition": "Long short-term memory: a recurrent neural network architecture that uses gating mechanisms and a memory cell to learn long-range dependencies and mitigate the vanishing gradient problem.",
+  "domain": "machine-learning",
+  "definition": "Long Short-Term Memory (LSTM) is a specialised recurrent neural network architecture introduced by Hochreiter and Schmidhuber in 1997, designed to learn long-range temporal dependencies in sequential data. It employs a gated cell state mechanism\u2014comprising input, forget, and output gates\u2014that allows gradients to flow across many time steps without vanishing or exploding, overcoming the principal failure mode of vanilla recurrent neural networks. LSTMs encode contextual information in a learnable cell state that persists across sequence steps, making them highly effective for variable-length sequence modelling tasks such as language modelling, machine translation, and time-series forecasting. Although largely superseded by Transformer-based architectures for many NLP tasks, LSTMs remain widely deployed in low-latency, resource-constrained, and streaming scenarios.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:recurrent-neural-network",
@@ -13,31 +13,133 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
-  "maturity": "established",
+  "qualityScore": 0.75,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:forget-gate",
+        "label": "Forget Gate"
+      },
+      {
+        "id": "urn:ngm:class:input-gate",
+        "label": "Input Gate"
+      },
+      {
+        "id": "urn:ngm:class:output-gate",
+        "label": "Output Gate"
+      },
+      {
+        "id": "urn:ngm:class:cell-state",
+        "label": "Cell State"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:backpropagation",
         "label": "Backpropagation"
+      },
+      {
+        "id": "urn:ngm:class:backpropagation-through-time",
+        "label": "Backpropagation Through Time"
+      },
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:speech-recognition",
         "label": "Speech Recognition"
+      },
+      {
+        "id": "urn:ngm:class:machine-translation",
+        "label": "Machine Translation"
+      },
+      {
+        "id": "urn:ngm:class:language-modelling",
+        "label": "Language Modelling"
+      },
+      {
+        "id": "urn:ngm:class:time-series-forecasting",
+        "label": "Time-Series Forecasting"
+      },
+      {
+        "id": "urn:ngm:class:handwriting-recognition",
+        "label": "Handwriting Recognition"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "id": "urn:ngm:class:gated-recurrent-unit",
+        "label": "Gated Recurrent Unit"
+      },
+      {
+        "id": "urn:ngm:class:vanilla-rnn",
+        "label": "Vanilla RNN"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      },
+      {
+        "id": "urn:ngm:class:edge-inference",
+        "label": "Edge Inference"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:sigmoid-activation",
+        "label": "Sigmoid Activation"
+      },
+      {
+        "id": "urn:ngm:class:tanh-activation",
+        "label": "Tanh Activation"
+      },
+      {
+        "id": "urn:ngm:class:dropout-regularisation",
+        "label": "Dropout Regularisation"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:sequence-modelling",
+        "label": "Sequence Modelling"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:encoder-decoder",
+        "label": "Encoder-Decoder"
+      },
+      {
+        "id": "urn:ngm:class:vanishing-gradient-problem",
+        "label": "Vanishing Gradient Problem"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ]
   },
   "wikilinks": [
     {

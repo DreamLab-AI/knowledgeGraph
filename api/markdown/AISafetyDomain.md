@@ -51,7 +51,7 @@ public:: true
   "@type": "Class",
   "label": "AISafetyDomain",
   "definition": "AISafetyDomain is an ontology grouping for concepts concerned with making artificial intelligence systems safe, aligned and free from unacceptable harm. It organises topics such as alignment, risk and governance.",
-  "domain": "ai-safety",
+  "domain": "ai",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

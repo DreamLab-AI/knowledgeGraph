@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:global-digital-finance",
   "domain": "blockchain",
-  "definition": "An industry membership association that develops voluntary standards and codes of conduct for digital assets and engages with policymakers on their regulation.",
+  "definition": "Global Digital Finance (GDF) is an industry membership association and self-regulatory organisation founded to develop voluntary codes of conduct, taxonomies, and governance frameworks for the digital asset and cryptocurrency sector. It convenes cross-sector working groups that produce best-practice guidance on topics such as crypto asset taxonomy, market conduct, custody, and consumer protection, while engaging with regulators, standards bodies, and central banks to inform policy. GDF acts as a liaison body between industry participants and public authorities including the Financial Stability Board, IOSCO, and national financial regulators, promoting responsible adoption of blockchain-based financial instruments. Its outputs serve as voluntary soft-law standards intended to accelerate convergence toward enforceable regulatory frameworks.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:standards-body",
@@ -13,31 +13,127 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.74,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:code-of-conduct",
+        "label": "Code of Conduct"
+      },
+      {
+        "id": "urn:ngm:class:crypto-asset-taxonomy",
+        "label": "Crypto Asset Taxonomy"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:digital-asset",
         "label": "Digital Asset"
+      },
+      {
+        "id": "urn:ngm:class:membership-organisation",
+        "label": "Membership Organisation"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:cryptocurrency",
         "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:self-regulation",
+        "label": "Self-Regulation"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:mandatory-regulation",
+        "label": "Mandatory Regulation"
+      },
+      {
+        "id": "urn:ngm:class:centralised-finance",
+        "label": "Centralised Finance"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      },
+      {
+        "id": "urn:ngm:class:open-finance",
+        "label": "Open Finance"
+      }
+    ],
     "uses": [],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "supports": [
+      {
+        "id": "urn:ngm:class:digital-asset-regulation",
+        "label": "Digital Asset Regulation"
+      },
+      {
+        "id": "urn:ngm:class:consumer-protection",
+        "label": "Consumer Protection"
+      },
+      {
+        "id": "urn:ngm:class:market-integrity",
+        "label": "Market Integrity"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:financial-stability-board",
+        "label": "Financial Stability Board"
+      },
+      {
+        "id": "urn:ngm:class:iosco",
+        "label": "IOSCO"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:digital-asset-governance",
+        "label": "Digital Asset Governance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
+      },
+      {
+        "id": "urn:ngm:class:know-your-customer",
+        "label": "Know Your Customer"
+      },
+      {
+        "id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      },
+      {
+        "id": "urn:ngm:class:token-economy",
+        "label": "Token Economy"
+      }
+    ]
   },
   "wikilinks": [
     {

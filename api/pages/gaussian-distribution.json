@@ -4,7 +4,7 @@
   "slug": "gaussian-distribution",
   "public": true,
   "classIri": "urn:ngm:class:gaussian-distribution",
-  "domain": "mathematics",
+  "domain": "machine-learning",
   "definition": "A continuous probability distribution, also called the normal distribution, characterised by a symmetric bell-shaped density defined by its mean and variance.",
   "subClassOf": [
     {

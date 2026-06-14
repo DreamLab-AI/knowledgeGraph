@@ -51,7 +51,7 @@ public:: true
   "@type": "Class",
   "label": "Hidden Hand",
   "definition": "Hidden Hand is a governance incentive marketplace operated by Redacted Cartel that lets protocols offer rewards to direct gauge votes across multiple DeFi systems. It generalises the bribery market model beyond a single protocol.",
-  "domain": "defi",
+  "domain": "blockchain",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

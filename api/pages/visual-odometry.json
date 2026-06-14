@@ -5,19 +5,32 @@
   "public": true,
   "classIri": "urn:ngm:class:visual-odometry",
   "domain": "artificial-intelligence",
-  "definition": "Visual odometry (VO) is a technique for incrementally estimating the pose (position and orientation) of a camera-equipped agent by detecting and tracking salient features across consecutive image frames and computing the relative camera motion between them. It provides ego-motion estimation without relying on GPS, wheel encoders, or external beacons, making it applicable in GPS-denied environments such as indoor spaces, underground tunnels, and planetary surfaces. Visual odometry is typically combined with inertial measurement data (visual-inertial odometry, VIO) or loop-closure detection to bound drift and form complete SLAM systems.",
+  "definition": "Visual odometry (VO) is a technique for incrementally estimating the six-degree-of-freedom pose (position and orientation) of a camera-equipped agent by detecting and tracking salient features across consecutive image frames and computing the relative camera motion between them via geometric constraints such as the essential or fundamental matrix. It provides ego-motion estimation without relying on GPS, wheel encoders, or external beacons, making it applicable in GPS-denied environments such as indoor spaces, underground tunnels, and planetary surfaces. Scale ambiguity in monocular configurations is resolved by stereo baselines or depth cameras; drift is bounded by fusing inertial measurements (visual-inertial odometry) or by applying loop-closure detection within a full SLAM pipeline.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique"
+      "id": "urn:ngm:class:ego-motion-estimation",
+      "label": "Ego-Motion Estimation"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:camera-calibration",
+        "label": "Camera Calibration"
+      },
+      {
+        "id": "urn:ngm:class:image-processing",
+        "label": "Image Processing"
+      },
+      {
+        "id": "urn:ngm:class:epipolar-geometry",
+        "label": "Epipolar Geometry"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:autonomous-navigation",
@@ -26,12 +39,59 @@
       {
         "id": "urn:ngm:class:pose-estimation",
         "label": "Pose Estimation"
+      },
+      {
+        "id": "urn:ngm:class:3d-reconstruction",
+        "label": "3D Reconstruction"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:robot-localisation",
+        "label": "Robot Localisation"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:inertial-measurement-unit",
+        "label": "Inertial Measurement Unit"
+      },
+      {
+        "id": "urn:ngm:class:depth-sensing",
+        "label": "Depth Sensing"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:wheel-odometry",
+        "label": "Wheel Odometry"
+      },
+      {
+        "id": "urn:ngm:class:lidar-odometry",
+        "label": "Lidar Odometry"
+      },
+      {
+        "id": "urn:ngm:class:gps-localisation",
+        "label": "GPS Localisation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:mixed-reality",
+        "label": "Mixed Reality"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-vehicles",
+        "label": "Autonomous Vehicles"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:computer-vision",
@@ -40,19 +100,52 @@
       {
         "id": "urn:ngm:class:feature-extraction",
         "label": "Feature Extraction"
+      },
+      {
+        "id": "urn:ngm:class:feature-matching",
+        "label": "Feature Matching"
+      },
+      {
+        "id": "urn:ngm:class:ransac",
+        "label": "RANSAC"
+      },
+      {
+        "id": "urn:ngm:class:kalman-filter",
+        "label": "Kalman Filter"
+      },
+      {
+        "id": "urn:ngm:class:bundle-adjustment",
+        "label": "Bundle Adjustment"
       }
     ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
+    "partOf": [
       {
         "id": "urn:ngm:class:simultaneous-localisation-and-mapping",
         "label": "Simultaneous Localisation and Mapping"
       },
       {
-        "id": "urn:ngm:class:inertial-measurement-unit",
-        "label": "Inertial Measurement Unit"
+        "id": "urn:ngm:class:visual-slam",
+        "label": "Visual SLAM"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:loop-closure-detection",
+        "label": "Loop Closure Detection"
+      },
+      {
+        "id": "urn:ngm:class:place-recognition",
+        "label": "Place Recognition"
+      },
+      {
+        "id": "urn:ngm:class:point-cloud-processing",
+        "label": "Point Cloud Processing"
+      },
+      {
+        "id": "urn:ngm:class:factor-graph-optimisation",
+        "label": "Factor Graph Optimisation"
       }
     ]
   },

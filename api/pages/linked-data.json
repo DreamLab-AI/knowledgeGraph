@@ -4,23 +4,31 @@
   "slug": "linked-data",
   "public": true,
   "classIri": "urn:ngm:class:linked-data",
-  "domain": "infrastructure",
-  "definition": "Linked Data is a collection of design principles articulated by Tim Berners-Lee for publishing machine-readable structured data on the Web, requiring that entities be identified by HTTP URIs, that those URIs resolve to useful descriptions in RDF, and that descriptions include links to other URIs so that data from different sources can be traversed and aggregated into a global information graph. It constitutes the application layer of the Semantic Web stack and provides the architectural foundation for open knowledge graphs such as Wikidata and DBpedia. Linked Data sits above the RDF data model and is typically queried using SPARQL endpoints.",
+  "domain": "data",
+  "definition": "Linked Data is a set of design principles articulated by Tim Berners-Lee for publishing machine-readable structured data on the Web, requiring that entities be identified by HTTP URIs, that those URIs dereference to useful RDF descriptions, and that descriptions include typed links to further URIs enabling traversal across a global Web of Data. It constitutes the application layer of the Semantic Web stack and provides the architectural foundation for open knowledge graphs such as Wikidata, DBpedia, and the Linked Open Data cloud. The four canonical principles \u2014 use URIs as names, use HTTP URIs, return structured data on lookup, and include outbound links \u2014 create a decentralised, self-describing information mesh that transcends the boundaries of individual databases and siloed repositories.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:infra-data-management",
-      "label": "Data Management"
+      "id": "urn:ngm:class:semantic-web",
+      "label": "Semantic Web"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
         "id": "urn:ngm:class:rdf",
         "label": "RDF"
+      },
+      {
+        "id": "urn:ngm:class:http",
+        "label": "HTTP"
+      },
+      {
+        "id": "urn:ngm:class:uri",
+        "label": "URI"
       }
     ],
     "enables": [
@@ -31,31 +39,103 @@
       {
         "id": "urn:ngm:class:knowledge-graph-construction",
         "label": "Knowledge Graph Construction"
+      },
+      {
+        "id": "urn:ngm:class:federated-query",
+        "label": "Federated Query"
+      },
+      {
+        "id": "urn:ngm:class:open-data",
+        "label": "Open Data"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:linked-data-platform",
+        "label": "Linked Data Platform"
+      },
+      {
+        "id": "urn:ngm:class:five-star-data",
+        "label": "Five-Star Data"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:relational-database",
+        "label": "Relational Database"
+      },
+      {
+        "id": "urn:ngm:class:data-silo",
+        "label": "Data Silo"
+      }
+    ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:semantic-web-linked-data-standard",
-        "label": "Semantic Web"
+        "id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      },
+      {
+        "id": "urn:ngm:class:entity-linking",
+        "label": "Entity Linking"
+      },
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
       }
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:json-data-interchange-format-ld-1-1",
-        "label": "JSON-LD 1.1"
+        "id": "urn:ngm:class:json-ld",
+        "label": "JSON-LD"
       },
       {
         "id": "urn:ngm:class:sparql",
         "label": "SPARQL"
+      },
+      {
+        "id": "urn:ngm:class:turtle",
+        "label": "Turtle"
+      },
+      {
+        "id": "urn:ngm:class:owl",
+        "label": "OWL"
+      },
+      {
+        "id": "urn:ngm:class:schema-org",
+        "label": "Schema.org"
       }
     ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:w3c",
+        "label": "W3C"
+      },
+      {
+        "id": "urn:ngm:class:rdf-schema",
+        "label": "RDF Schema"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "id": "urn:ngm:class:wikidata",
+        "label": "Wikidata"
+      },
+      {
+        "id": "urn:ngm:class:dbpedia",
+        "label": "DBpedia"
+      },
+      {
+        "id": "urn:ngm:class:dublin-core",
+        "label": "Dublin Core"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

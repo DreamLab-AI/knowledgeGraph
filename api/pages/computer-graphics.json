@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:computer-graphics",
   "domain": "spatial-computing",
-  "definition": "Computer Graphics is the discipline concerned with the computational synthesis, manipulation, and display of visual imagery, encompassing geometry processing, rendering algorithms, shading models, and real-time display pipelines. It forms the technical foundation for spatial computing, game engines, and all visual output in metaverse environments.",
+  "definition": "Computer Graphics is the computational discipline concerned with synthesising, manipulating, and displaying visual imagery using mathematical models and algorithms running on specialised hardware. It encompasses the full pipeline from scene representation\u2014geometry, materials, lighting\u2014through rasterisation or ray-tracing renderers, shading languages, and GPU-accelerated display systems. As the enabling layer for all visual digital experiences, it underpins spatial computing, interactive media, simulation, scientific visualisation, and metaverse infrastructure. The field spans real-time and offline rendering paradigms, blending applied mathematics, physics-based light transport, and hardware architecture.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-display-and-rendering",
@@ -13,8 +13,8 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "mature",
   "relationships": {
     "hasPart": [
       {
@@ -28,9 +28,34 @@
       {
         "id": "urn:ngm:class:rendering-pipeline",
         "label": "Rendering Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:ray-tracing",
+        "label": "Ray Tracing"
+      },
+      {
+        "id": "urn:ngm:class:texture-mapping",
+        "label": "Texture Mapping"
+      },
+      {
+        "id": "urn:ngm:class:global-illumination",
+        "label": "Global Illumination"
       }
     ],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      },
+      {
+        "id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      },
+      {
+        "id": "urn:ngm:class:3-d-geometry",
+        "label": "3D Geometry"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:3-d-animation",
@@ -39,22 +64,82 @@
       {
         "id": "urn:ngm:class:level-of-detail",
         "label": "Level of Detail"
+      },
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:scientific-visualisation",
+        "label": "Scientific Visualisation"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:image-processing",
+        "label": "Image Processing"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:neural-rendering",
+        "label": "Neural Rendering"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:game-engine",
         "label": "Game Engine"
+      },
+      {
+        "id": "urn:ngm:class:opengl",
+        "label": "OpenGL"
+      },
+      {
+        "id": "urn:ngm:class:vulkan",
+        "label": "Vulkan"
+      },
+      {
+        "id": "urn:ngm:class:webgpu",
+        "label": "WebGPU"
       }
     ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:khronos-group",
+        "label": "Khronos Group"
+      },
+      {
+        "id": "urn:ngm:class:siggraph",
+        "label": "SIGGRAPH"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:physically-based-rendering",
+        "label": "Physically Based Rendering"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

@@ -4,7 +4,7 @@
   "slug": "xr-applications",
   "public": true,
   "classIri": "urn:ngm:class:xr-applications",
-  "domain": "spatial",
+  "domain": "spatial-computing",
   "definition": "XR Applications are software systems designed to run on extended reality platforms \u2014 encompassing augmented reality (AR), virtual reality (VR), and mixed reality (MR) \u2014 that blend real and virtual environments to deliver spatially aware, immersive user experiences. They span consumer entertainment, enterprise training, industrial maintenance, medical simulation, and remote collaboration domains.",
   "subClassOf": [
     {

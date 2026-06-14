@@ -4,55 +4,141 @@
   "slug": "information-architecture",
   "public": true,
   "classIri": "urn:ngm:class:information-architecture",
-  "domain": "spatial-computing",
-  "definition": "Information Architecture is the structural design of shared information environments \u2014 organising, labelling, and navigating content so that users and systems can find and understand data efficiently. In spatial computing and metaverse contexts it governs how virtual worlds expose content hierarchies, semantic namespaces, and navigation schemas that enable interoperability across heterogeneous platforms. Effective information architecture draws on ontologies, controlled vocabularies, and metadata standards to ensure content remains discoverable, reusable, and machine-interpretable.",
+  "domain": "data",
+  "definition": "Information Architecture (IA) is the discipline of structuring, organising, labelling, and navigating shared information environments so that users and automated systems can find, understand, and act on content efficiently. It encompasses the design of taxonomies, controlled vocabularies, navigation schemas, metadata frameworks, and search systems that govern how information is classified and retrieved across digital products, knowledge bases, and interconnected platforms. IA bridges human cognitive models and machine-interpretable representations, drawing on ontologies, thesauri, and faceted classification to ensure content remains discoverable, reusable, and interoperable. In distributed and spatial contexts it extends to the semantic namespacing of assets, entities, and services that underpin cross-platform data exchange.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:sc-standards-and-interop",
-      "label": "Standards and Interoperability"
+      "id": "urn:ngm:class:knowledge-organization-system",
+      "label": "Knowledge Organization System"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "emerging",
+  "qualityScore": 0.73,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [
+    "hasPart": [
       {
-        "id": "urn:ngm:class:semantic-interoperability",
-        "label": "Semantic Interoperability"
-      },
-      {
-        "id": "urn:ngm:class:information-retrieval",
-        "label": "Information Retrieval"
-      }
-    ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [
-      {
-        "id": "urn:ngm:class:ontology",
-        "label": "Ontology"
+        "id": "urn:ngm:class:taxonomy",
+        "label": "Taxonomy"
       },
       {
         "id": "urn:ngm:class:controlled-vocabulary",
         "label": "Controlled Vocabulary"
       },
       {
+        "id": "urn:ngm:class:navigation-schema",
+        "label": "Navigation Schema"
+      },
+      {
         "id": "urn:ngm:class:metadata-standard",
         "label": "Metadata Standard"
+      },
+      {
+        "id": "urn:ngm:class:search-system",
+        "label": "Search System"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:content-strategy",
+        "label": "Content Strategy"
+      },
+      {
+        "id": "urn:ngm:class:user-research",
+        "label": "User Research"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:information-retrieval",
+        "label": "Information Retrieval"
+      },
+      {
+        "id": "urn:ngm:class:semantic-interoperability",
+        "label": "Semantic Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:user-experience-design",
+        "label": "User Experience Design"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-discovery",
+        "label": "Knowledge Discovery"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:data-modelling",
+        "label": "Data Modelling"
+      },
+      {
+        "id": "urn:ngm:class:metadata-management",
+        "label": "Metadata Management"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:software-architecture",
+        "label": "Software Architecture"
+      },
+      {
+        "id": "urn:ngm:class:data-architecture",
+        "label": "Data Architecture"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "id": "urn:ngm:class:thesaurus",
+        "label": "Thesaurus"
+      },
+      {
+        "id": "urn:ngm:class:faceted-classification",
+        "label": "Faceted Classification"
+      },
+      {
+        "id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
       }
     ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-25964",
+        "label": "ISO 25964"
+      },
+      {
+        "id": "urn:ngm:class:dublin-core",
+        "label": "Dublin Core"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:knowledge-organization-system",
-        "label": "Knowledge Organization System"
+        "id": "urn:ngm:class:library-science",
+        "label": "Library Science"
+      },
+      {
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human-Computer Interaction"
+      },
+      {
+        "id": "urn:ngm:class:content-management-system",
+        "label": "Content Management System"
       }
     ]
   },

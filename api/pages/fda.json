@@ -5,34 +5,151 @@
   "public": true,
   "classIri": "urn:ngm:class:fda",
   "domain": "governance",
-  "definition": "The Food and Drug Administration is a United States federal agency that regulates food, drugs, medical devices, and related products. It oversees their safety and approval.",
+  "definition": "The Food and Drug Administration (FDA) is a United States federal regulatory agency within the Department of Health and Human Services responsible for protecting public health by ensuring the safety, efficacy, and security of human and veterinary drugs, biological products, medical devices, the nation's food supply, cosmetics, and products that emit radiation. The agency enforces the Federal Food, Drug, and Cosmetic Act alongside a portfolio of additional statutes, conducting pre-market review and post-market surveillance across its regulated domains. Its approval pathways \u2014 including New Drug Applications, Biologics License Applications, and Premarket Approval \u2014 establish globally influential benchmarks that shape international pharmaceutical regulation, medical-device standards, and increasingly the governance of AI-enabled diagnostics and digital health software.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:owl-thing",
-      "label": "owl:Thing"
+      "id": "urn:ngm:class:regulatory-agency",
+      "label": "Regulatory Agency"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
-  "maturity": "established",
+  "qualityScore": 0.72,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:center-for-drug-evaluation-and-research",
+        "label": "Center for Drug Evaluation and Research"
+      },
+      {
+        "id": "urn:ngm:class:center-for-devices-and-radiological-health",
+        "label": "Center for Devices and Radiological Health"
+      },
+      {
+        "id": "urn:ngm:class:center-for-biologics-evaluation-and-research",
+        "label": "Center for Biologics Evaluation and Research"
+      },
+      {
+        "id": "urn:ngm:class:center-for-food-safety-and-applied-nutrition",
+        "label": "Center for Food Safety and Applied Nutrition"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:clinical-trial",
+        "label": "Clinical Trial"
+      },
+      {
+        "id": "urn:ngm:class:good-manufacturing-practice",
+        "label": "Good Manufacturing Practice"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-submission",
+        "label": "Regulatory Submission"
+      }
+    ],
     "enables": [
       {
-        "id": "urn:ngm:class:governance",
-        "label": "Governance"
+        "id": "urn:ngm:class:drug-approval",
+        "label": "Drug Approval"
+      },
+      {
+        "id": "urn:ngm:class:medical-device-clearance",
+        "label": "Medical Device Clearance"
+      },
+      {
+        "id": "urn:ngm:class:public-health-protection",
+        "label": "Public Health Protection"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:ema",
+        "label": "EMA"
+      },
+      {
+        "id": "urn:ngm:class:mhra",
+        "label": "MHRA"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-medical-devices",
+        "label": "AI Medical Devices"
+      },
+      {
+        "id": "urn:ngm:class:software-as-a-medical-device",
+        "label": "Software as a Medical Device"
+      },
+      {
+        "id": "urn:ngm:class:bioinformatics",
+        "label": "Bioinformatics"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:randomised-controlled-trial",
+        "label": "Randomised Controlled Trial"
+      },
+      {
+        "id": "urn:ngm:class:post-market-surveillance",
+        "label": "Post-Market Surveillance"
+      },
+      {
+        "id": "urn:ngm:class:pharmacovigilance",
+        "label": "Pharmacovigilance"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:synthetic-biology",
+        "label": "Synthetic Biology"
+      },
+      {
+        "id": "urn:ngm:class:digital-health",
+        "label": "Digital Health"
+      },
+      {
+        "id": "urn:ngm:class:personalised-medicine",
+        "label": "Personalised Medicine"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:federal-food-drug-and-cosmetic-act",
+        "label": "Federal Food Drug and Cosmetic Act"
+      },
+      {
+        "id": "urn:ngm:class:21-cfr",
+        "label": "21 CFR"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:department-of-health-and-human-services",
+        "label": "Department of Health and Human Services"
+      },
+      {
+        "id": "urn:ngm:class:federal-government",
+        "label": "Federal Government"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:drug-regulation",
+        "label": "Drug Regulation"
+      },
+      {
+        "id": "urn:ngm:class:bioethics",
+        "label": "Bioethics"
+      },
+      {
+        "id": "urn:ngm:class:risk-benefit-analysis",
+        "label": "Risk-Benefit Analysis"
+      }
+    ]
   },
   "wikilinks": [
     {

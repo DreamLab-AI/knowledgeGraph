@@ -5,47 +5,99 @@
   "public": true,
   "classIri": "urn:ngm:class:yield-farming",
   "domain": "blockchain",
-  "definition": "Yield farming is the practice of actively deploying digital assets into decentralised finance protocols\u2014including liquidity pools, lending markets, and staking contracts\u2014to earn token rewards, trading fees, or interest income, and optimising risk-adjusted returns by dynamically reallocating across multiple protocols. Participants typically receive liquidity provider tokens representing their pool share, which can themselves be deposited into other protocols to compound rewards, creating layered risk exposure. Yield farming strategies are sensitive to smart contract risk, impermanent loss, reward token price volatility, and regulatory classification of token distributions.",
+  "definition": "Yield farming is the practice of actively deploying digital assets into decentralised finance protocols\u2014including liquidity pools, lending markets, and staking contracts\u2014to earn token rewards, trading fees, or interest income, and optimising risk-adjusted returns by dynamically reallocating capital across multiple protocols. Participants typically receive liquidity provider (LP) tokens representing their proportional pool share, which can themselves be staked or deposited into yield aggregator contracts to compound rewards, creating layered risk and return exposure. The practice emerged prominently during the 2020 DeFi Summer as protocols adopted token-emission incentive models to bootstrap liquidity and governance participation. Yield farming strategies are sensitive to smart contract risk, impermanent loss, reward token price volatility, oracle manipulation, and evolving regulatory classification of token distributions.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:bc-defi-and-economics",
-      "label": "DeFi and Economics"
+      "id": "urn:ngm:class:decentralised-finance",
+      "label": "Decentralised Finance"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:liquidity-provision",
+        "label": "Liquidity Provision"
+      },
+      {
+        "id": "urn:ngm:class:liquidity-mining",
+        "label": "Liquidity Mining"
+      },
+      {
+        "id": "urn:ngm:class:staking",
+        "label": "Staking"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:liquidity-pool",
         "label": "Liquidity Pool"
       },
       {
-        "id": "urn:ngm:class:decentralised-finance",
-        "label": "Decentralised Finance"
-      }
-    ],
-    "enables": [],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [
-      {
-        "id": "urn:ngm:class:liquidity-provision",
-        "label": "Liquidity Provision"
-      }
-    ],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
-      {
-        "id": "urn:ngm:class:liquidity-mining",
-        "label": "Liquidity Mining"
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
       },
+      {
+        "id": "urn:ngm:class:cryptocurrency-wallet",
+        "label": "Cryptocurrency Wallet"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:passive-income",
+        "label": "Passive Income"
+      },
+      {
+        "id": "urn:ngm:class:liquidity-bootstrapping",
+        "label": "Liquidity Bootstrapping"
+      },
+      {
+        "id": "urn:ngm:class:protocol-governance",
+        "label": "Protocol Governance"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:oracle",
+        "label": "Oracle"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-exchange",
+        "label": "Decentralised Exchange"
+      },
+      {
+        "id": "urn:ngm:class:lending-protocol",
+        "label": "Lending Protocol"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:centralised-finance",
+        "label": "Centralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:hodling",
+        "label": "HODLing"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-work-mining",
+        "label": "Proof-of-Work Mining"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:algorithmic-trading",
+        "label": "Algorithmic Trading"
+      },
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
+    "uses": [
       {
         "id": "urn:ngm:class:automated-market-maker",
         "label": "Automated Market Maker"
@@ -53,6 +105,35 @@
       {
         "id": "urn:ngm:class:governance-token",
         "label": "Governance Token"
+      },
+      {
+        "id": "urn:ngm:class:token-emission",
+        "label": "Token Emission"
+      },
+      {
+        "id": "urn:ngm:class:yield-aggregator",
+        "label": "Yield Aggregator"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:impermanent-loss",
+        "label": "Impermanent Loss"
+      },
+      {
+        "id": "urn:ngm:class:annual-percentage-yield",
+        "label": "Annual Percentage Yield"
+      },
+      {
+        "id": "urn:ngm:class:total-value-locked",
+        "label": "Total Value Locked"
+      },
+      {
+        "id": "urn:ngm:class:flash-loan",
+        "label": "Flash Loan"
       }
     ]
   },

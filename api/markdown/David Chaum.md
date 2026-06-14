@@ -55,7 +55,7 @@ public:: true
   "@type": "Class",
   "label": "David Chaum",
   "definition": "American computer scientist and cryptographer who pioneered digital cash, blind signatures and anonymous communication, and is widely regarded as a founder of the cypherpunk and privacy technology fields.",
-  "domain": "cryptographic",
+  "domain": "security",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

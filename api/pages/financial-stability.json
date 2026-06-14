@@ -4,44 +4,121 @@
   "slug": "financial-stability",
   "public": true,
   "classIri": "urn:ngm:class:financial-stability",
-  "domain": "blockchain",
-  "definition": "Financial stability refers to the condition in which the financial system \u2014 comprising banks, markets, payment infrastructure, and intermediaries \u2014 can absorb shocks and continue to perform its core functions of credit intermediation, risk transfer, and payment settlement. In the context of blockchain and crypto-assets, financial stability analysis examines how the growth of crypto markets, the interconnections between crypto and traditional finance, and the failure of large participants can propagate systemic risk. Regulatory bodies such as the Financial Stability Board, BIS, and IMF monitor these dynamics and advise on macroprudential policy responses.",
+  "domain": "finance",
+  "definition": "Financial stability is the condition in which the financial system \u2014 encompassing banks, capital markets, payment infrastructure, insurers, and non-bank intermediaries \u2014 can absorb shocks, maintain the orderly allocation of capital, and continue to perform its core functions of credit intermediation, risk transfer, and payment settlement without requiring extraordinary public support. It is a macroprudential objective distinct from the microprudential health of individual institutions, focusing instead on the resilience and interconnectedness of the system as a whole. Threats to financial stability include excessive leverage, maturity mismatches, procyclical asset valuations, contagion through counterparty networks, and confidence crises that trigger self-fulfilling runs. International bodies such as the Financial Stability Board (FSB), the Bank for International Settlements (BIS), the International Monetary Fund (IMF), and national central banks monitor systemic risk indicators and coordinate macroprudential policy responses.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:bc-governance-and-regulation",
-      "label": "Blockchain Governance and Regulation"
+      "id": "urn:ngm:class:financial-regulation",
+      "label": "Financial Regulation"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:macroprudential-policy",
+        "label": "Macroprudential Policy"
+      },
+      {
+        "id": "urn:ngm:class:systemic-risk-monitoring",
+        "label": "Systemic Risk Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:stress-testing",
+        "label": "Stress Testing"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:capital-adequacy",
+        "label": "Capital Adequacy"
+      },
+      {
+        "id": "urn:ngm:class:liquidity-management",
+        "label": "Liquidity Management"
+      },
       {
         "id": "urn:ngm:class:compliance-framework",
         "label": "Compliance Framework"
       }
     ],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [
+    "enables": [
       {
-        "id": "urn:ngm:class:anti-money-laundering",
-        "label": "Anti-Money Laundering"
+        "id": "urn:ngm:class:economic-growth",
+        "label": "Economic Growth"
+      },
+      {
+        "id": "urn:ngm:class:credit-intermediation",
+        "label": "Credit Intermediation"
+      },
+      {
+        "id": "urn:ngm:class:payment-settlement",
+        "label": "Payment Settlement"
       }
     ],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:central-banking",
+        "label": "Central Banking"
+      },
+      {
+        "id": "urn:ngm:class:lender-of-last-resort",
+        "label": "Lender of Last Resort"
+      },
+      {
+        "id": "urn:ngm:class:deposit-insurance",
+        "label": "Deposit Insurance"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
       {
         "id": "urn:ngm:class:systemic-risk",
         "label": "Systemic Risk"
       },
+      {
+        "id": "urn:ngm:class:financial-contagion",
+        "label": "Financial Contagion"
+      },
+      {
+        "id": "urn:ngm:class:bank-run",
+        "label": "Bank Run"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:crypto-asset-regulation",
+        "label": "Crypto-Asset Regulation"
+      },
+      {
+        "id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      }
+    ],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:financial-stability-board",
+        "label": "Financial Stability Board"
+      },
+      {
+        "id": "urn:ngm:class:basel-committee",
+        "label": "Basel Committee on Banking Supervision"
+      },
+      {
+        "id": "urn:ngm:class:imf-fsap",
+        "label": "IMF Financial Sector Assessment Programme"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
       {
         "id": "urn:ngm:class:financial-regulation",
         "label": "Financial Regulation"
@@ -49,6 +126,14 @@
       {
         "id": "urn:ngm:class:stablecoin",
         "label": "Stablecoin"
+      },
+      {
+        "id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
+      },
+      {
+        "id": "urn:ngm:class:prudential-supervision",
+        "label": "Prudential Supervision"
       }
     ]
   },

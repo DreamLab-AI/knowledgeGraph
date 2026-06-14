@@ -4,20 +4,33 @@
   "slug": "distributed-consensus",
   "public": true,
   "classIri": "urn:ngm:class:distributed-consensus",
-  "domain": "blockchain",
-  "definition": "Distributed consensus is the computational problem and family of protocol solutions by which a set of processes in a distributed system agree on a single value or sequence of values despite the possibility of node failures, network delays, and Byzantine (arbitrarily malicious) behaviour. Achieving consensus requires that all non-faulty nodes agree on the same decision, that the decision is made by some non-faulty node, and that the agreed value was proposed by some participant \u2014 properties formalised as agreement, termination, and validity. In blockchain systems, distributed consensus is the mechanism by which decentralised networks agree on the canonical order of transactions without relying on a central coordinator.",
+  "domain": "distributed-systems",
+  "definition": "Distributed consensus is the fundamental computer science problem of achieving reliable agreement on a shared value or sequence of values across a set of independent processes in a distributed system, despite the possibility of node crashes, network partitions, message delays, and Byzantine (arbitrarily malicious) behaviour. The problem is formalised through three core properties: agreement (all non-faulty nodes decide the same value), validity (the decided value was proposed by some participant), and termination (every non-faulty node eventually decides). The Fischer-Lynch-Paterson (FLP) impossibility theorem establishes that deterministic consensus in a fully asynchronous system is impossible even with one crash-faulty process, forcing all practical protocols to make synchrony assumptions or adopt probabilistic termination.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:consensus-mechanism",
-      "label": "Consensus Mechanism"
+      "id": "urn:ngm:class:distributed-computing",
+      "label": "Distributed Computing"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
-  "maturity": "established",
+  "qualityScore": 0.74,
+  "maturity": "mature",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:network-communication",
+        "label": "Network Communication"
+      },
+      {
+        "id": "urn:ngm:class:message-passing",
+        "label": "Message Passing"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-signature",
+        "label": "Cryptographic Signature"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:blockchain",
@@ -30,12 +43,59 @@
       {
         "id": "urn:ngm:class:decentralised-trust",
         "label": "Decentralised Trust"
+      },
+      {
+        "id": "urn:ngm:class:replicated-state-machine",
+        "label": "Replicated State Machine"
+      },
+      {
+        "id": "urn:ngm:class:distributed-database",
+        "label": "Distributed Database"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:paxos",
+        "label": "Paxos"
+      },
+      {
+        "id": "urn:ngm:class:raft",
+        "label": "Raft"
+      },
+      {
+        "id": "urn:ngm:class:pbft",
+        "label": "PBFT"
+      },
+      {
+        "id": "urn:ngm:class:hotstuff",
+        "label": "HotStuff"
+      },
+      {
+        "id": "urn:ngm:class:tendermint",
+        "label": "Tendermint"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:centralised-coordination",
+        "label": "Centralised Coordination"
+      },
+      {
+        "id": "urn:ngm:class:eventual-consistency",
+        "label": "Eventual Consistency"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:multi-agent-coordination",
+        "label": "Multi-Agent Coordination"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:consensus-algorithm",
@@ -52,10 +112,27 @@
       {
         "id": "urn:ngm:class:fault-tolerance",
         "label": "Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:leader-election",
+        "label": "Leader Election"
+      },
+      {
+        "id": "urn:ngm:class:quorum-system",
+        "label": "Quorum System"
       }
     ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ieee",
+        "label": "IEEE"
+      },
+      {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -69,6 +146,14 @@
       {
         "id": "urn:ngm:class:distributed-system",
         "label": "Distributed System"
+      },
+      {
+        "id": "urn:ngm:class:cap-theorem",
+        "label": "CAP Theorem"
+      },
+      {
+        "id": "urn:ngm:class:atomic-broadcast",
+        "label": "Atomic Broadcast"
       }
     ]
   },

@@ -1,20 +1,90 @@
 - ### Definition
-  - Computing in which correctness depends not only on the logical result but also on meeting timing deadlines. Systems are classified as hard, firm, or soft real-time according to the consequences of missing a deadline.
+  - Real-time computing is a computational paradigm where system correctness depends on both producing logically correct results and delivering those results within defined [[Latency]] bounds. Unlike conventional computing — which prioritises average-case throughput — real-time systems guarantee worst-case execution times, enabling safety-critical and time-sensitive applications such as [[Embedded Systems]], [[Autonomous Vehicles]], and [[Industrial Automation]]. The field encompasses three principal categories: hard, firm, and soft real-time, differentiated by the consequences of missing a [[Deadline Scheduling]] deadline.
 
-- ### Semantic Classification
-  - owl-class:: computing:RealTimeComputing
-  - owl-role:: Class
+- ### Overview
+  - Real-time computing emerged from the demands of process control, avionics, and telecommunications where a correct result delivered too late is operationally indistinguishable from a wrong result. The defining characteristic is temporal determinism: the system must be able to prove, through analysis or measurement, that every task will meet its deadline under all expected operating conditions.
+  - The discipline spans hardware design (interrupt latency, DMA controllers), operating system kernel architecture ([[Real-Time Operating System]]), scheduling algorithms, and application programming models. It intersects with [[Cyber-Physical Systems]] research, where computational processes are tightly coupled to physical processes unfolding in continuous time.
+  - Real-time computing is distinct from high-performance computing: a fast average case with unpredictable worst case is usually unacceptable; a slower but deterministic response is preferred. This trade-off shapes every layer of the stack, from memory allocation policies to network protocol design.
+
+- ### Key Components
+  - #### Hard vs Firm vs Soft Real-Time
+    - **Hard real-time** — missing any deadline constitutes a system failure. Examples: [[Flight Control Systems]], [[Antilock Braking System]], pacemakers. Verified via Worst-Case Execution Time (WCET) analysis.
+    - **Firm real-time** — late results are discarded as worthless but do not cause catastrophic failure. Example: video frame capture buffers.
+    - **Soft real-time** — occasional deadline misses reduce quality but the system continues acceptably. Examples: [[Multimedia Streaming]], [[Augmented Reality]] rendering pipelines.
+  - #### Scheduling
+    - [[Priority Scheduling]] assigns fixed or dynamic priorities to tasks; higher-priority tasks preempt lower ones.
+    - Rate-Monotonic Scheduling (RMS) — a fixed-priority policy proven optimal for periodic, independent tasks.
+    - Earliest Deadline First (EDF) — a dynamic policy that is provably optimal for a single processor under certain conditions.
+    - [[Deadline Scheduling]] — Linux SCHED_DEADLINE implements Constant Bandwidth Server (CBS) for EDF-compliant scheduling.
+  - #### Real-Time Operating Systems
+    - A [[Real-Time Operating System]] (RTOS) provides deterministic context switching, bounded [[Interrupt Handling]] latency, priority-ceiling or priority-inheritance mutex protocols, and real-time memory allocation. Common RTOSes include FreeRTOS, VxWorks, QNX, Zephyr, and RTEMS.
+    - Linux with PREEMPT_RT patches reduces non-preemptible kernel sections to provide soft/firm real-time behaviour on commodity hardware.
+  - #### Timing Analysis
+    - WCET analysis uses static code analysis, hardware models, and measurement to establish provable upper bounds on task execution time.
+    - [[Clock Synchronisation]] (via IEEE 1588 Precision Time Protocol or GPS) is essential in distributed real-time systems.
+    - [[Watchdog Timer]] circuits detect and recover from software hangs independently of the processor.
+  - #### Memory Management
+    - [[Memory Management]] in real-time contexts avoids dynamic heap allocation (to prevent non-deterministic garbage collection pauses), uses memory pools, and locks pages into RAM to prevent page-fault latency.
+
+- ### Applications and Use Cases
+  - #### Safety-Critical Systems
+    - [[Flight Control Systems]] — fly-by-wire aircraft rely on hard real-time guarantees; ARINC 653 partitioned operating environments enforce temporal and spatial isolation between applications.
+    - Medical devices — infusion pumps, ventilators, and defibrillators depend on microsecond-accurate actuation loops.
+    - Nuclear control systems — reactor rod control requires deterministic response to sensor events.
+  - #### Automotive and Transportation
+    - [[Autonomous Vehicles]] fuse sensor data from [[LiDAR]], camera, and radar with hard timing constraints on perception-to-actuation loops.
+    - AUTOSAR (Automotive Open System Architecture) defines a real-time software framework for automotive [[Embedded Systems]].
+    - [[Antilock Braking System]] and electronic stability control implement hard real-time feedback loops operating at kHz rates.
+  - #### Industrial and Robotics
+    - [[Industrial Automation]] uses programmable logic controllers (PLCs) and industrial Ethernet protocols (EtherCAT, PROFINET IRT) that provide sub-millisecond cycle times.
+    - [[Robotics]] motion controllers require real-time joint-torque and position control loops, often implemented on [[Embedded Systems]] with dedicated real-time cores.
+    - SCADA systems and [[Cyber-Physical Systems]] integrate real-time sensors with supervisory control over distributed networks.
+  - #### Telecommunications and Networking
+    - 5G base-station processing employs real-time Linux or FPGA pipelines for radio signal processing within strict frame timing windows.
+    - Time-Sensitive Networking (TSN, IEEE 802.1Q extensions) brings deterministic [[Latency]] guarantees to standard Ethernet for industrial and automotive use.
+  - #### Edge Computing and AI
+    - [[Edge Computing]] deployments increasingly combine real-time constraints with [[Machine Learning Inference]], requiring co-design of inference engines with RTOS schedulers.
+    - [[Digital Twin]] platforms that simulate physical processes in lock-step with real hardware must maintain temporal synchronisation with real-world events.
+    - Robotics operating system (ROS 2) incorporates real-time DDS middleware (Fast DDS, Cyclone DDS) to support [[Robotics]] applications with quality-of-service deadline constraints.
 
 - ### Relationships
-  - is-subclass-of:: [[owl:Thing]]
-  - bridges-to:: [[Latency]]
   - requires:: [[Real-Time Operating System]]
+  - requires:: [[Deterministic Scheduling]]
+  - requires:: [[Interrupt Handling]]
   - enables:: [[Embedded Systems]]
+  - enables:: [[Autonomous Vehicles]]
+  - enables:: [[Industrial Automation]]
+  - enables:: [[Flight Control Systems]]
+  - hasPart:: [[Hard Real-Time]]
+  - hasPart:: [[Soft Real-Time]]
+  - hasPart:: [[Deadline Scheduling]]
+  - uses:: [[Priority Scheduling]]
+  - uses:: [[Memory Management]]
+  - uses:: [[Watchdog Timer]]
+  - dependsOn:: [[Latency]]
+  - dependsOn:: [[Clock Synchronisation]]
+  - supports:: [[Cyber-Physical Systems]]
+  - supports:: [[Edge Computing]]
+  - supports:: [[Robotics]]
+  - contrastsWith:: [[Batch Processing]]
+  - contrastsWith:: [[Time-Sharing]]
+  - standardizedBy:: [[POSIX]]
+  - standardizedBy:: [[ISO 26262]]
+  - bridges-to:: [[Machine Learning Inference]]
+  - bridges-to:: [[Digital Twin]]
+  - relatedTo:: [[Fault Tolerance]]
+  - relatedTo:: [[Concurrency]]
 
-- ### Content
-  - Real-time computing requires operations to complete within defined time bounds. In hard real-time systems a missed deadline is a failure, as in flight control, whereas soft real-time systems tolerate occasional lateness with degraded quality.
-  - Such systems rely on predictable scheduling, bounded latency, and often real-time operating systems. They are common in embedded control, robotics, telecommunications, and multimedia.
+- ### Standards and Context
+  - **POSIX.1b (IEEE 1003.1b)** — defines real-time extensions to POSIX including priority scheduling, asynchronous I/O, timers, and shared memory.
+  - **ISO 26262** — functional safety standard for road vehicles that mandates ASIL (Automotive Safety Integrity Level) compliance, closely tied to real-time guarantees.
+  - **DO-178C** — software considerations in airborne systems certification; requires WCET analysis and deterministic scheduling for DAL-A software.
+  - **IEC 61508** — safety integrity level framework for industrial functional safety with direct implications for real-time control system design.
+  - **ARINC 653** — avionics application standard defining time and space partitioning on real-time operating systems.
+  - **IEEE 802.1Q TSN** — Time-Sensitive Networking standards (Credit-Based Shaper, Time-Aware Shaper, Frame Preemption) extending Ethernet with bounded [[Latency]] for industrial and automotive networks.
+  - **IEEE 1588 PTP** — Precision Time Protocol enabling sub-microsecond [[Clock Synchronisation]] across distributed real-time systems.
+  - AUTOSAR and ROS 2 are major industry frameworks that standardise real-time software architectures for automotive and [[Robotics]] domains respectively.
 
 - ### Provenance
-  - sources::
-  - migration-date:: 2026-05-29T00:00:00Z
+  - sources:: POSIX.1b standard; ISO 26262 automotive safety standard; DO-178C avionics software guidelines; Liu & Layland (1973) RMS foundational paper; AUTOSAR specification; ROS 2 design documentation
+  - updated:: 2026-06-13

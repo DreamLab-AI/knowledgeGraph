@@ -47,7 +47,7 @@ public:: true
   "@type": "Class",
   "label": "LLM Application Framework",
   "definition": "A software library that provides abstractions for building applications on top of large language models, including prompt management, tool integration, retrieval and chaining of model calls.",
-  "domain": "natural-language-processing",
+  "domain": "ai",
   "maturity": "growing",
   "qualityScore": 0.7,
   "subClassOf": [

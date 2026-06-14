@@ -1,23 +1,112 @@
 - ### Definition
-  - Visual odometry (VO) is a technique for incrementally estimating the pose (position and orientation) of a camera-equipped agent by detecting and tracking salient features across consecutive image frames and computing the relative camera motion between them. It provides ego-motion estimation without relying on GPS, wheel encoders, or external beacons, making it applicable in GPS-denied environments such as indoor spaces, underground tunnels, and planetary surfaces. Visual odometry is typically combined with inertial measurement data (visual-inertial odometry, VIO) or loop-closure detection to bound drift and form complete SLAM systems.
+  - Visual odometry (VO) is a technique for incrementally estimating the six-degree-of-freedom pose (position and orientation) of a camera-equipped agent by detecting and tracking salient features across consecutive [[Image Processing]] frames and computing the relative [[Camera Calibration]] motion between them via geometric constraints. Unlike [[Wheel Odometry]], which relies on mechanical encoders and is susceptible to wheel-slip, VO operates purely from pixel data, making it applicable in GPS-denied environments such as indoor buildings, underground tunnels, underwater environments, and planetary surfaces. In practice, VO is tightly coupled with [[Inertial Measurement Unit]] data in [[Visual-Inertial Odometry]] systems, and forms the perception backbone of [[Simultaneous Localisation and Mapping]] pipelines through the addition of [[Loop Closure Detection]].
 
-- ### Semantic Classification
-  - owl-class:: visual-odometry:Visual Odometry
-  - owl-role:: Concept
+- ### Overview
+  - Visual odometry answers the fundamental question: "where has this camera been?" by composing a sequence of small, locally accurate relative pose estimates into a global trajectory estimate. Each estimate is computed from the geometric relationship between feature correspondences in two or more camera views.
+  - The technique was popularised in planetary robotics — NASA's Mars Exploration Rovers (Spirit and Opportunity, 2004) used VO to traverse safely over terrain where wheel-slip would otherwise accumulate dangerous errors. Since then it has migrated into consumer AR headsets, autonomous vehicles, surgical robots, and unmanned aerial vehicles.
+  - VO differs from full [[Visual SLAM]] in that it does not maintain a global map or perform loop closure. SLAM incorporates VO as its front-end odometry source but adds back-end graph optimisation and place recognition to correct drift over long trajectories.
+  - The core challenge of VO is **drift**: small per-frame errors accumulate over long paths. Mitigation strategies include:
+    - Sliding-window [[Bundle Adjustment]] to jointly refine recent poses and landmark positions
+    - Tight coupling with [[Inertial Measurement Unit]] (IMU) measurements via [[Kalman Filter]] or [[Factor Graph Optimisation]]
+    - [[Loop Closure Detection]] to re-anchor the trajectory when previously visited places are recognised
+
+- ### Key Components
+  - **Feature Detection and Description**
+    - Classical detectors: SIFT (scale-invariant), SURF (fast approximation), ORB (binary descriptor, real-time), AKAZE (non-linear scale space). See [[Feature Extraction]].
+    - Learned descriptors: SuperPoint (self-supervised homographic adaptation), D2-Net (detect-and-describe), DISK — trained end-to-end on image pairs.
+    - Good features are **repeatable** (detected in multiple views), **distinctive** (low false-match rate), and **invariant** to illumination and viewpoint change.
+  - **Feature Matching and Outlier Rejection**
+    - Nearest-neighbour matching in descriptor space, filtered by Lowe's ratio test (SIFT ratio < 0.8). See [[Feature Matching]].
+    - [[RANSAC]] (Random Sample Consensus) robustly estimates the essential/fundamental matrix from minimal sets (5-point or 8-point algorithm) while classifying outlier correspondences as mismatches.
+    - The essential matrix encodes the relative rotation **R** and (unit-scale) translation **t** under the [[Epipolar Geometry]] constraint **x'^T E x = 0**.
+  - **Motion Recovery**
+    - From the essential matrix, four candidate (**R**, **t**) decompositions exist; the physically valid solution is selected by triangulating points and verifying positive depth (cheirality check).
+    - Monocular VO recovers motion up to an **unknown scale factor** — distances are relative, not metric. Scale is fixed using known scene structure (e.g., ground plane height), a calibrated stereo baseline, or IMU integration.
+    - Stereo VO computes disparity between left and right images to obtain metric depth directly, eliminating scale ambiguity. [[Depth Sensing]] (RGB-D cameras using structured light or time-of-flight) provides an alternative metric depth source.
+  - **Windowed Optimisation (Local BA)**
+    - A sliding window of recent keyframes is jointly optimised by minimising reprojection error over observed landmarks — this is [[Bundle Adjustment]].
+    - Marginalisation (Schur complement) efficiently removes old variables while retaining their information as a prior on the remaining window.
+  - **Keyframe Selection**
+    - Processing every frame is computationally wasteful. Keyframes are selected when parallax exceeds a threshold, the number of tracked features drops below a limit, or scene content changes sufficiently.
+
+- ### Visual-Inertial Odometry (VIO)
+  - [[Visual-Inertial Odometry]] (VIO) fuses camera measurements with high-rate IMU measurements (accelerometer + gyroscope) from an [[Inertial Measurement Unit]].
+  - **Tightly coupled** integration jointly estimates camera poses, IMU biases, and landmark positions in a single nonlinear optimisation — yielding the highest accuracy (e.g., VINS-Mono, Kimera, OpenVINS).
+  - **Loosely coupled** integration feeds camera-estimated pose increments and IMU-integrated poses to a separate [[Kalman Filter]] fusion step — simpler but less accurate.
+  - The IMU bridges frames at 200–1000 Hz, providing attitude (roll, pitch from gravity) and eliminating monocular scale ambiguity through known gravitational acceleration.
+  - VIO has enabled accurate 6-DoF tracking on constrained embedded processors in commercial AR/VR headsets (Apple Vision Pro, Meta Quest) and autonomous drones.
+
+- ### Deep Learning Approaches
+  - **Supervised pose regression**: CNNs trained on labelled pose sequences (PoseNet, MapNet) directly regress camera poses from single images or image pairs — compact but accuracy lags geometric methods.
+  - **End-to-end VO**: Recurrent networks (LSTM) over stacked optical flow maps (DeepVO, UnDeepVO) learn the full VO pipeline from data. Self-supervised variants use photometric consistency loss without pose labels.
+  - **Hybrid approaches**: Learned feature descriptors (SuperPoint) combined with classical geometric solvers (SuperGlue for matching, RANSAC for robust estimation) achieve state-of-the-art accuracy while retaining interpretability. See [[Deep Learning]] and [[Convolutional Neural Networks]].
+  - **Learned depth estimation**: monocular depth networks (Depth Anything, DPT) can replace stereo to restore metric scale, at the cost of generalisation to out-of-distribution scenes.
+
+- ### Applications
+  - **Planetary Rovers**: NASA Mars rovers (Spirit, Opportunity, Curiosity, Perseverance) use VO to detect wheel-slip on loose regolith and traverse safely. Terrain-relative navigation combines VO with orbital map matching.
+  - **Autonomous Vehicles**: VO supplements [[GPS Localisation]] and [[Lidar Odometry]] in urban driving stacks (Apollo, Autoware). It provides localisation in tunnels and car parks where GPS signals are blocked.
+  - **Augmented and Mixed Reality**: Headset tracking in devices such as Microsoft HoloLens, Apple Vision Pro, and Meta Quest relies on VIO running at real-time rates on embedded SoCs to anchor holographic content. See [[Augmented Reality]] and [[Mixed Reality]].
+  - **Unmanned Aerial Vehicles**: Micro-UAVs without GPS (indoor drones, racing drones) use VIO (e.g., VINS-Mono on a Jetson Nano) for state estimation.
+  - **Surgical Robotics**: Endoscopic VO tracks the 3D pose of camera-tipped instruments inside body cavities to provide navigation overlays during minimally invasive procedures.
+  - **Underwater Vehicles**: Submersibles use VO (often with downward-looking cameras on seafloor) where GPS is unavailable and acoustic positioning is coarse.
+  - **3D Scene Reconstruction**: Sequential VO poses seed structure-from-motion or multi-view stereo pipelines for dense [[3D Reconstruction]] of environments.
 
 - ### Relationships
-  - uses [[Computer Vision]]
-  - uses [[Feature Extraction]]
-  - relatedTo [[Simultaneous Localisation and Mapping]]
-  - relatedTo [[Inertial Measurement Unit]]
-  - enables [[Autonomous Navigation]]
-  - enables [[Pose Estimation]]
+  - uses:: [[Computer Vision]]
+  - uses:: [[Feature Extraction]]
+  - uses:: [[Feature Matching]]
+  - uses:: [[RANSAC]]
+  - uses:: [[Kalman Filter]]
+  - uses:: [[Bundle Adjustment]]
+  - requires:: [[Camera Calibration]]
+  - requires:: [[Image Processing]]
+  - requires:: [[Epipolar Geometry]]
+  - enables:: [[Autonomous Navigation]]
+  - enables:: [[Pose Estimation]]
+  - enables:: [[3D Reconstruction]]
+  - enables:: [[Augmented Reality]]
+  - enables:: [[Robot Localisation]]
+  - partOf:: [[Simultaneous Localisation and Mapping]]
+  - partOf:: [[Visual SLAM]]
+  - dependsOn:: [[Inertial Measurement Unit]]
+  - dependsOn:: [[Depth Sensing]]
+  - contrastsWith:: [[Wheel Odometry]]
+  - contrastsWith:: [[Lidar Odometry]]
+  - contrastsWith:: [[GPS Localisation]]
+  - relatedTo:: [[Loop Closure Detection]]
+  - relatedTo:: [[Place Recognition]]
+  - relatedTo:: [[Point Cloud Processing]]
+  - relatedTo:: [[Factor Graph Optimisation]]
+  - bridges-to:: [[Spatial Computing]]
+  - bridges-to:: [[Mixed Reality]]
+  - bridges-to:: [[Autonomous Vehicles]]
 
-- ### Content
-  - Visual odometry pipelines operate by first detecting robust keypoints in each image frame — classical descriptors such as ORB, SIFT, and SURF are common choices, alongside learned descriptors from convolutional networks. Matched keypoints between successive frames are used to estimate the essential or fundamental matrix via RANSAC-based algorithms, from which the relative rotation and translation of the camera are recovered. Scale ambiguity is a fundamental limitation of monocular VO; stereo and depth camera configurations resolve this by providing metric depth from disparity or structured light.
-  - Visual-inertial odometry (VIO) fuses camera-derived motion estimates with IMU measurements using a tightly coupled or loosely coupled Kalman filter or factor graph optimisation (as in GTSAM or g2o). IMU data provides high-frequency, low-latency motion estimates that bridge frames and constrain the drift that accumulates in pure VO; the camera corrects IMU bias over time. VIO systems such as VINS-Mono and Kimera operate on embedded processors and have enabled localisation on autonomous drones and AR headsets.
-  - Loop closure — recognising previously visited locations and adding constraints to the pose graph — is necessary to prevent unbounded drift over long trajectories. Bag-of-words visual place recognition (e.g., DBoW2) and more recent deep embedding methods are used to detect revisited places and trigger graph optimisation. Visual odometry is a key subsystem in AR/VR headset tracking, autonomous vehicles, surgical robots, and planetary rovers.
+- ### Algorithms and Systems
+  - **libviso2**: efficient stereo and monocular VO library; widely used as a baseline.
+  - **ORB-SLAM3**: full monocular/stereo/RGB-D/VIO SLAM system built on ORB features; supports multi-session mapping and fisheye cameras.
+  - **VINS-Mono / VINS-Fusion**: tightly coupled monocular/stereo VIO from HKUST; deployed on commercial drones.
+  - **Kimera**: metric-semantic VIO from MIT SPARK lab; outputs both trajectory and 3D semantic mesh.
+  - **OpenVINS**: open-source VIO framework from University of Delaware; modular, highly configurable.
+  - **COLMAP**: offline structure-from-motion and MVS pipeline using VO-style sequential reconstruction.
+  - **GTSAM / g2o**: factor graph optimisation back-ends used by many VO/SLAM front-ends for [[Bundle Adjustment]] and loop closure correction.
+
+- ### Standards & Context
+  - There is no single formal ISO standard for VO, but several benchmarks define de-facto performance metrics:
+    - **KITTI Odometry Benchmark** (KIT / TU Darmstadt, 2012) — 22 outdoor driving sequences; reports average translational and rotational drift over sub-sequences of 100–800 m. The leaderboard tracks progress across geometric and learned methods.
+    - **EuRoC MAV Dataset** (ETH Zurich, 2016) — 11 sequences from a micro-aerial vehicle with a calibrated stereo-IMU rig; used to benchmark VIO accuracy.
+    - **TUM RGB-D Benchmark** (TU Munich) — indoor handheld RGB-D sequences with ground-truth from a motion-capture system.
+    - **IEEERAS / ICRA** conferences publish the predominant peer-reviewed VO/SLAM research.
+  - Camera calibration follows pinhole + distortion models standardised in OpenCV and Kalibr toolboxes. Intrinsic parameters (focal length, principal point, distortion coefficients) must be measured before deployment.
+  - Sensor fusion communication relies on ROS (Robot Operating System) message conventions (sensor_msgs/Imu, sensor_msgs/Image, nav_msgs/Odometry) — de-facto robotics middleware standard. See [[Robot Operating System]].
+
+- ### Limitations and Open Challenges
+  - **Drift accumulation**: unbounded without loop closure or external correction.
+  - **Texture-less environments**: feature detectors fail in featureless corridors, white-wall interiors, or fog; recent approaches use direct methods (LSD-SLAM, DSO) that exploit photometric gradients rather than sparse keypoints.
+  - **Dynamic objects**: moving people or vehicles violate the static-world assumption; outlier rejection via semantic segmentation or motion segmentation is an active area.
+  - **Lighting variation**: sudden illumination changes (entering/leaving a tunnel) cause feature loss; adaptive exposure and HDR imaging partially mitigate this.
+  - **Computational cost**: real-time VO on embedded processors (ARM Cortex-A or RISC-V) with battery constraints requires careful algorithm selection and hardware-accelerated feature detection.
+  - **Scale ambiguity** (monocular only): metric scale requires auxiliary sensors or learned depth priors.
 
 - ### Provenance
-  - sources::
-  - migration-date:: 2026-05-19T00:00:00Z
+  - sources:: KITTI Odometry Benchmark; EuRoC MAV Dataset; ORB-SLAM3 (Campos et al., TRO 2021); VINS-Mono (Qin et al., TRO 2018); Kimera (Rosinol et al., ICRA 2020)
+  - updated:: 2026-06-13

@@ -63,7 +63,7 @@ public:: true
   "@type": "Class",
   "label": "Kraken",
   "definition": "Kraken is a centralised cryptocurrency exchange founded in 2011 and headquartered in the United States. It provides spot trading, margin and futures trading, staking and custody services across a wide range of digital assets and fiat currencies. It is among the longer-established exchanges and is noted for its emphasis on regulatory compliance, security and the provision of fiat on-ramps in multiple jurisdictions.",
-  "domain": "kraken",
+  "domain": "blockchain",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

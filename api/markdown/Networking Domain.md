@@ -91,7 +91,7 @@ public:: true
   "@type": "Class",
   "label": "Networking Domain",
   "definition": "The Networking Domain classifies concepts concerned with the transport of data between computing endpoints across links and networks. It covers protocols, addressing, routing, and the layered models that organise communication. As a top-level subject classification, it scopes the movement of data rather than the applications that consume it or the security controls applied to it.",
-  "domain": "networking",
+  "domain": "infrastructure",
   "maturity": "emerging",
   "qualityScore": 0.7,
   "subClassOf": [

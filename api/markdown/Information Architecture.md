@@ -42,34 +42,69 @@ public:: true
   "@id": "urn:ngm:class:information-architecture",
   "@type": "Class",
   "label": "Information Architecture",
-  "definition": "Information Architecture is the structural design of shared information environments — organising, labelling, and navigating content so that users and systems can find and understand data efficiently. In spatial computing and metaverse contexts it governs how virtual worlds expose content hierarchies, semantic namespaces, and navigation schemas that enable interoperability across heterogeneous platforms. Effective information architecture draws on ontologies, controlled vocabularies, and metadata standards to ensure content remains discoverable, reusable, and machine-interpretable.",
-  "domain": "spatial-computing",
-  "maturity": "emerging",
+  "definition": "Information Architecture (IA) is the discipline of structuring, organising, labelling, and navigating shared information environments so that users and automated systems can find, understand, and act on content efficiently. It encompasses the design of taxonomies, controlled vocabularies, navigation schemas, metadata frameworks, and search systems that govern how information is classified and retrieved across digital products, knowledge bases, and interconnected platforms. IA bridges human cognitive models and machine-interpretable representations, drawing on ontologies, thesauri, and faceted classification to ensure content remains discoverable, reusable, and interoperable. In distributed and spatial contexts it extends to the semantic namespacing of assets, entities, and services that underpin cross-platform data exchange.",
+  "domain": "data",
+  "maturity": "mature",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:sc-standards-and-interop",
-      "label": "Standards and Interoperability"
+      "@id": "urn:ngm:class:knowledge-organization-system",
+      "label": "Knowledge Organization System"
     }
   ],
   "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:taxonomy", "label": "Taxonomy"},
+      {"@id": "urn:ngm:class:controlled-vocabulary", "label": "Controlled Vocabulary"},
+      {"@id": "urn:ngm:class:navigation-schema", "label": "Navigation Schema"},
+      {"@id": "urn:ngm:class:metadata-standard", "label": "Metadata Standard"},
+      {"@id": "urn:ngm:class:search-system", "label": "Search System"}
+    ],
     "uses": [
       {"@id": "urn:ngm:class:ontology", "label": "Ontology"},
-      {"@id": "urn:ngm:class:controlled-vocabulary", "label": "Controlled Vocabulary"},
-      {"@id": "urn:ngm:class:metadata-standard", "label": "Metadata Standard"}
+      {"@id": "urn:ngm:class:thesaurus", "label": "Thesaurus"},
+      {"@id": "urn:ngm:class:faceted-classification", "label": "Faceted Classification"},
+      {"@id": "urn:ngm:class:semantic-web", "label": "Semantic Web"}
     ],
     "enables": [
+      {"@id": "urn:ngm:class:information-retrieval", "label": "Information Retrieval"},
       {"@id": "urn:ngm:class:semantic-interoperability", "label": "Semantic Interoperability"},
-      {"@id": "urn:ngm:class:information-retrieval", "label": "Information Retrieval"}
+      {"@id": "urn:ngm:class:user-experience-design", "label": "User Experience Design"},
+      {"@id": "urn:ngm:class:knowledge-discovery", "label": "Knowledge Discovery"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:content-strategy", "label": "Content Strategy"},
+      {"@id": "urn:ngm:class:user-research", "label": "User Research"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:data-modelling", "label": "Data Modelling"},
+      {"@id": "urn:ngm:class:metadata-management", "label": "Metadata Management"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:iso-25964", "label": "ISO 25964"},
+      {"@id": "urn:ngm:class:dublin-core", "label": "Dublin Core"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:software-architecture", "label": "Software Architecture"},
+      {"@id": "urn:ngm:class:data-architecture", "label": "Data Architecture"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:knowledge-organization-system", "label": "Knowledge Organization System"}
+      {"@id": "urn:ngm:class:library-science", "label": "Library Science"},
+      {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human-Computer Interaction"},
+      {"@id": "urn:ngm:class:content-management-system", "label": "Content Management System"}
     ]
   },
-  "quality": 0.35,
+  "sameAs": [
+    {"@id": "urn:ngm:class:ia", "label": "IA"}
+  ],
+  "quality": 0.73,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-13T00:00:00Z",
+    "inferenceRule": "ManualEnrichment"
   }
 }
 ```
@@ -99,28 +134,102 @@ public:: true
 }
 ```
 
-
 - ### Definition
-  - Information Architecture is the structural design of shared information environments — organising, labelling, and navigating content so that users and systems can find and understand data efficiently. In spatial computing and metaverse contexts it governs how virtual worlds expose content hierarchies, semantic namespaces, and navigation schemas that enable interoperability across heterogeneous platforms. Effective information architecture draws on ontologies, controlled vocabularies, and metadata standards to ensure content remains discoverable, reusable, and machine-interpretable.
+  - Information Architecture (IA) is the discipline of structuring, organising, labelling, and navigating shared information environments so that users and systems can find, understand, and act on content efficiently. It draws on [[Ontology]], [[Controlled Vocabulary]], [[Taxonomy]], [[Metadata Standard]], and [[Faceted Classification]] to produce coherent navigation schemas and retrieval systems. IA bridges human cognitive models with machine-interpretable structures, enabling [[Semantic Interoperability]] across heterogeneous platforms and serving as a foundational layer for [[Knowledge Graph]] construction and [[User Experience Design]].
 
-- ### Semantic Classification
-  - owl-class:: spatial-computing:InformationArchitecture
-  - owl-role:: concept
+- ### Overview
+  - Information Architecture emerged from library science and cognitive psychology in the 1970s–1990s, popularised by Wurman (1976) and systematised for the web era by Rosenfeld, Morville, and Arango in *Information Architecture for the Web and Beyond*. The discipline addresses four core problems:
+    - **Organisation** — how content is grouped and categorised (hierarchical, faceted, sequential, matrix-based schemes)
+    - **Labelling** — what language is used to name categories, links, and navigation elements consistently
+    - **Navigation** — how users move through an information space (global, local, contextual, supplemental navigation systems)
+    - **Search** — how users query the information space and how results are ranked, filtered, and presented
+  - IA is domain-agnostic but critically underpins [[Content Management System]], enterprise intranets, [[E-Commerce]] catalogues, [[Knowledge Base]] systems, [[Spatial Computing]] environments, and AI-powered [[Information Retrieval]] pipelines.
+  - The discipline is considered **mature**: ISO standards, professional associations (Information Architecture Institute), and decades of practitioner literature establish a stable body of knowledge.
+
+- ### Key Components
+  - **Organisation Systems**
+    - Hierarchical classification — parent/child topic trees aligned to [[Taxonomy]] principles
+    - [[Faceted Classification]] — multiple orthogonal attribute dimensions allowing flexible slicing (used heavily in e-commerce and library catalogues)
+    - Associative structures — thesaural relationships (broader term, narrower term, related term) formalised in [[Thesaurus]] standards (ISO 25964)
+    - Sequential and matrix schemes for task-oriented and comparison contexts
+  - **Labelling Systems**
+    - [[Controlled Vocabulary]] — authoritative term lists preventing synonym scatter and homonym ambiguity
+    - Synonym rings and equivalency mappings connecting user language to preferred index terms
+    - Consistent application of terminology across navigation, headings, metadata, and search index
+  - **Navigation Systems**
+    - Global navigation — persistent site-wide structural entry points
+    - Local navigation — context-sensitive subsystem navigation
+    - Contextual navigation — inline links and related-content recommendations (implemented via [[Knowledge Graph]] edges in modern systems)
+    - Supplemental navigation — sitemaps, indexes, guides, wizards
+  - **Search Systems**
+    - Query parsing, stemming, and tokenisation pipeline
+    - Relevance ranking (BM25, vector similarity via [[Semantic Search]])
+    - Faceted filtering and refinement
+    - Autocomplete and query suggestion (leveraging [[Natural Language Processing]])
+  - **Metadata Frameworks**
+    - [[Metadata Standard]] application: [[Dublin Core]], Schema.org, DCAT, domain-specific standards
+    - Metadata schema design — element sets, cardinality, encoding schemes, value vocabularies
+    - Relationship to [[Data Modelling]] and [[Ontology]] engineering
+
+- ### Mechanisms & Design Process
+  - **User Research** — card sorting, tree testing, and usability studies map mental models and navigation expectations; feeds directly into taxonomy structure
+  - **Content Audit** — inventory and analysis of existing information assets prior to redesign; identifies gaps, redundancies, and inconsistencies in labelling
+  - **Wireframing & Blueprints** — IA deliverables include site maps, wireframes, content models, and metadata schemas rather than visual designs
+  - **Iterative Refinement** — IA is tested against real users through tree-jack tests, A/B navigation tests, and search-log analysis
+  - **Governance** — sustaining IA requires [[Content Strategy]] ownership, editorial policies, and periodic audits to prevent [[Taxonomy]] drift
+
+- ### Applications & Use Cases
+  - **Enterprise Knowledge Bases** — structuring internal documentation, policies, and procedures so employees locate information without reliance on directory search alone; underpins [[Knowledge Management]] systems
+  - **Digital Libraries & Archives** — applying [[Thesaurus]] and [[Controlled Vocabulary]] to describe artefacts; enables cross-collection discovery via shared metadata schemas
+  - **E-Commerce Catalogues** — faceted navigation of product catalogues (size, colour, brand, price) drawing on [[Faceted Classification]]; critical UX differentiator for large assortments
+  - **Healthcare Information Systems** — clinical terminology systems (SNOMED CT, LOINC) are specialised IAs for medical [[Controlled Vocabulary]]; patient portal navigation draws on IA principles
+  - **Spatial Computing & Metaverse** — governing semantic namespacing of virtual assets, scenes, and avatar entities; ensures cross-platform [[Semantic Interoperability]] in [[XR]] environments
+  - **AI Knowledge Pipelines** — IA structures the ingestion, chunking, and tagging layer before [[Retrieval-Augmented Generation]] or [[Knowledge Graph]] population; shapes what an LLM can discover
+  - **Government Open Data Portals** — conformance to DCAT and [[Dublin Core]] metadata standards requires IA design to make datasets filterable and cross-referenceable
+  - **Content Management Systems** — [[Content Management System]] taxonomies, custom fields, and URL slug schemas are concrete IA artefacts maintained by editorial teams
 
 - ### Relationships
-  - uses [[Ontology]]
-  - uses [[Controlled Vocabulary]]
-  - uses [[Metadata Standard]]
-  - enables [[Semantic Interoperability]]
-  - enables [[Information Retrieval]]
-  - relatedTo [[Knowledge Organization System]]
+  - hasPart:: [[Taxonomy]]
+  - hasPart:: [[Controlled Vocabulary]]
+  - hasPart:: [[Navigation Schema]]
+  - hasPart:: [[Metadata Standard]]
+  - hasPart:: [[Search System]]
+  - uses:: [[Ontology]]
+  - uses:: [[Thesaurus]]
+  - uses:: [[Faceted Classification]]
+  - uses:: [[Semantic Web]]
+  - enables:: [[Information Retrieval]]
+  - enables:: [[Semantic Interoperability]]
+  - enables:: [[User Experience Design]]
+  - enables:: [[Knowledge Discovery]]
+  - requires:: [[Content Strategy]]
+  - requires:: [[User Research]]
+  - dependsOn:: [[Data Modelling]]
+  - dependsOn:: [[Metadata Management]]
+  - standardizedBy:: [[ISO 25964]]
+  - standardizedBy:: [[Dublin Core]]
+  - contrastsWith:: [[Software Architecture]]
+  - contrastsWith:: [[Data Architecture]]
+  - bridges-to:: [[Knowledge Graph]]
+  - bridges-to:: [[Spatial Computing]]
+  - relatedTo:: [[Library Science]]
+  - relatedTo:: [[Human-Computer Interaction]]
+  - relatedTo:: [[Content Management System]]
 
-- ### Content
+- ### Standards & Context
+  - **ISO 25964** — international standard for thesauri and interoperability with other vocabularies; the primary normative reference for multilingual [[Thesaurus]] design in IA
+  - **Dublin Core Metadata Initiative (DCMI)** — fifteen-element [[Metadata Standard]] widely used for resource description; foundational in library and open-data IA
+  - **Schema.org** — collaborative vocabulary for structured data on the web; enables search-engine indexing of IA-tagged content via JSON-LD, Microdata, and RDFa
+  - **DCAT (Data Catalogue Vocabulary)** — W3C recommendation for describing data catalogues and datasets; applied in government and scientific IA contexts
+  - **WCAG / Accessibility** — Web Content Accessibility Guidelines impose navigational IA requirements (skip navigation, logical heading order, consistent labelling) that overlap with IA design
+  - **Information Architecture Institute** — professional organisation maintaining the body-of-knowledge and certifications for IA practitioners
+  - **Ontology Engineering** — OWL2, SKOS, and SPARQL extend IA into machine-reasoning territory; [[Semantic Web]] stack formalises controlled vocabularies into queryable [[Ontology]] artefacts
+  - **SKOS (Simple Knowledge Organisation System)** — W3C standard for expressing [[Controlled Vocabulary]] and [[Thesaurus]] structures in RDF, bridging traditional IA and [[Linked Data]]
 
-  ## Overview
-
-  Information Architecture is the structural design discipline concerned with organising and labelling information environments so that content is findable, understandable, and actionable. In metaverse and spatial computing contexts, robust information architecture is a prerequisite for cross-platform interoperability: it governs the hierarchy of virtual spaces, the naming conventions for assets and avatars, and the semantic schemas that allow disparate platforms to exchange data coherently. Practical information architecture in the metaverse draws on established tools including ontologies (formal representations of domain concepts), controlled vocabularies (standardised term lists), and metadata standards (schema.org, Dublin Core, and domain-specific extensions) to tag and classify content consistently. Well-designed information architecture reduces the cognitive load on users navigating complex 3D environments and reduces the integration cost for developers building cross-platform applications.
+- ### Semantic Classification
+  - owl-class:: data:InformationArchitecture
+  - owl-role:: concept
 
 - ### Provenance
-  - sources::
-  - migration-date:: 2026-04-26T00:00:00Z
+  - sources:: Rosenfeld, Morville & Arango — *Information Architecture for the Web and Beyond* (4th ed.); ISO 25964; DCMI; W3C SKOS; Information Architecture Institute
+  - updated:: 2026-06-13

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:ai-agents",
   "domain": "artificial-intelligence",
-  "definition": "AI Agents are software entities that combine large language models with tool-use capabilities and memory to autonomously perceive environmental state, plan sequences of actions, and execute those actions in pursuit of user-specified goals. Unlike single-shot inference, agents operate in iterative loops, calling external APIs, browsing the web, running code, or invoking other agents as sub-tasks. They sit at the intersection of language modeling, planning, and classical software agents in cognitive architectures.",
+  "definition": "AI Agents are software entities that combine a reasoning core (typically a large language model) with tool-use capabilities, memory, and a perception-action loop to autonomously pursue user-specified goals across multiple steps. They differ from single-shot inference systems by operating in iterative observe-think-act cycles, invoking external APIs, executing code, browsing the web, or delegating sub-tasks to specialised agents. The architecture integrates classical notions of rational agency with modern deep learning, spanning planning, grounding, and self-correction mechanisms. Safety, controllability, and alignment are first-class concerns because agents can initiate irreversible real-world side-effects.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-application",
@@ -13,10 +13,23 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
+  "qualityScore": 0.74,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:planning-and-scheduling",
+        "label": "Planning and Scheduling"
+      },
+      {
+        "id": "urn:ngm:class:perception",
+        "label": "Perception"
+      },
+      {
+        "id": "urn:ngm:class:action-execution",
+        "label": "Action Execution"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:large-language-models",
@@ -25,32 +38,109 @@
       {
         "id": "urn:ngm:class:tool-use",
         "label": "Tool Use"
+      },
+      {
+        "id": "urn:ngm:class:memory",
+        "label": "Memory"
+      },
+      {
+        "id": "urn:ngm:class:reasoning",
+        "label": "Reasoning"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:multi-agent-systems",
         "label": "Multi-Agent Systems"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-decision-making",
+        "label": "Autonomous Decision Making"
+      },
+      {
+        "id": "urn:ngm:class:workflow-automation",
+        "label": "Workflow Automation"
       }
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:reasoning",
-        "label": "Reasoning"
+        "id": "urn:ngm:class:cognitive-architecture",
+        "label": "Cognitive Architecture"
       },
       {
-        "id": "urn:ngm:class:planning-and-scheduling",
-        "label": "Planning and Scheduling"
+        "id": "urn:ngm:class:vector-databases",
+        "label": "Vector Databases"
+      },
+      {
+        "id": "urn:ngm:class:function-calling",
+        "label": "Function Calling"
       }
     ],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:react-framework",
+        "label": "ReAct Framework"
+      },
+      {
+        "id": "urn:ngm:class:plan-and-execute",
+        "label": "Plan and Execute"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:chatbots",
+        "label": "Chatbots"
+      },
+      {
+        "id": "urn:ngm:class:robotic-process-automation",
+        "label": "Robotic Process Automation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:robotic-systems",
+        "label": "Robotic Systems"
+      },
+      {
+        "id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      },
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "id": "urn:ngm:class:sandboxing",
+        "label": "Sandboxing"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:prompt-injection",
+        "label": "Prompt Injection"
+      },
+      {
+        "id": "urn:ngm:class:human-in-the-loop",
+        "label": "Human-in-the-Loop"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

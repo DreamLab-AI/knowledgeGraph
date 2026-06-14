@@ -47,7 +47,7 @@ public:: true
   "@type": "Class",
   "label": "Entropy",
   "definition": "A measure of disorder or uncertainty. In thermodynamics it quantifies the unavailable energy in a system, and in information theory it quantifies the average uncertainty or information content of a source.",
-  "domain": "information-theory",
+  "domain": "machine-learning",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

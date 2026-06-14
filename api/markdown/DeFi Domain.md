@@ -67,7 +67,7 @@ public:: true
   "@type": "Class",
   "label": "DeFi Domain",
   "definition": "The DeFi Domain is a short-form alias for decentralised finance as a subject classification. It denotes the same scope of on-ledger financial services delivered through smart contracts without a central intermediary. As a subject classification under the Blockchain Domain, it exists chiefly as a familiar label and defers its substantive treatment to the Decentralised Finance Domain.",
-  "domain": "defi",
+  "domain": "blockchain",
   "maturity": "emerging",
   "qualityScore": 0.7,
   "subClassOf": [

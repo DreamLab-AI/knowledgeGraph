@@ -4,20 +4,46 @@
   "slug": "medical-imaging",
   "public": true,
   "classIri": "urn:ngm:class:medical-imaging",
-  "domain": "spatial-computing",
-  "definition": "Medical imaging encompasses the acquisition, processing, and AI-assisted analysis of visual representations of the human body\u2014including X-ray, CT, MRI, ultrasound, PET, and histopathology slides\u2014for clinical diagnosis, treatment planning, and disease monitoring. Deep learning models, particularly convolutional neural networks and vision transformers, have achieved clinician-level performance on specific image classification and segmentation tasks. The field is governed by standards such as DICOM for data interchange and requires regulatory clearance (e.g., FDA 510(k) or CE marking) for clinical-decision software.",
+  "domain": "ai",
+  "definition": "Medical imaging is the acquisition, reconstruction, processing, and computational analysis of visual representations of human anatomy and physiology \u2014 including X-ray, computed tomography (CT), magnetic resonance imaging (MRI), ultrasound, positron emission tomography (PET), single-photon emission computed tomography (SPECT), and digital pathology \u2014 for the purposes of clinical diagnosis, treatment planning, surgical guidance, and longitudinal disease monitoring. The field has undergone a fundamental shift with the integration of deep learning methods, particularly convolutional neural networks, vision transformers, and diffusion-based models, which now perform organ segmentation, lesion detection, and disease classification at or near radiologist-level accuracy on constrained benchmarks. Data interoperability is standardised by DICOM (Digital Imaging and Communications in Medicine) for image storage and transfer, and by HL7 FHIR for clinical report integration; AI-based clinical decision software requires regulatory clearance such as FDA 510(k) premarket notification, EU MDR/IVDR conformity assessment, or UKCA marking.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:sc-content-and-assets",
-      "label": "SC Content and Assets"
+      "id": "urn:ngm:class:healthcare-ai",
+      "label": "Healthcare AI"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:image-reconstruction",
+        "label": "Image Reconstruction"
+      },
+      {
+        "id": "urn:ngm:class:image-segmentation",
+        "label": "Image Segmentation"
+      },
+      {
+        "id": "urn:ngm:class:object-detection",
+        "label": "Object Detection"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:dicom",
+        "label": "DICOM"
+      },
+      {
+        "id": "urn:ngm:class:data-annotation",
+        "label": "Data Annotation"
+      },
+      {
+        "id": "urn:ngm:class:gpu-computing",
+        "label": "GPU Computing"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:clinical-decision-support",
@@ -26,12 +52,34 @@
       {
         "id": "urn:ngm:class:radiology-ai",
         "label": "Radiology AI"
+      },
+      {
+        "id": "urn:ngm:class:surgical-robotics",
+        "label": "Surgical Robotics"
+      },
+      {
+        "id": "urn:ngm:class:precision-medicine",
+        "label": "Precision Medicine"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:computer-vision",
@@ -42,17 +90,50 @@
         "label": "Deep Learning"
       },
       {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
         "id": "urn:ngm:class:image-segmentation",
         "label": "Image Segmentation"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
       }
     ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:dicom",
+        "label": "DICOM"
+      },
+      {
+        "id": "urn:ngm:class:hl7-fhir",
+        "label": "HL7 FHIR"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
         "id": "urn:ngm:class:healthcare-ai",
         "label": "Healthcare AI"
+      },
+      {
+        "id": "urn:ngm:class:digital-pathology",
+        "label": "Digital Pathology"
+      },
+      {
+        "id": "urn:ngm:class:radiomics",
+        "label": "Radiomics"
+      },
+      {
+        "id": "urn:ngm:class:electronic-health-record",
+        "label": "Electronic Health Record"
       }
     ]
   },

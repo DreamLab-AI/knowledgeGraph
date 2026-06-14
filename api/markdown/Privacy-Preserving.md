@@ -47,7 +47,7 @@ public:: true
   "@type": "Class",
   "label": "Privacy-Preserving",
   "definition": "Privacy-preserving describes methods and systems designed to perform useful computation or data analysis while limiting exposure of the underlying personal or sensitive data.",
-  "domain": "cryptography",
+  "domain": "security",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

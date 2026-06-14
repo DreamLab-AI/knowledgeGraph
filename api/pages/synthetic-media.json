@@ -4,50 +4,119 @@
   "slug": "synthetic-media",
   "public": true,
   "classIri": "urn:ngm:class:synthetic-media",
-  "domain": "infrastructure",
-  "definition": "Synthetic Media encompasses digitally generated or algorithmically manipulated audio, video, image, and text content produced by AI systems including generative adversarial networks, diffusion models, and large language models. It includes deepfakes, AI-generated video, voice cloning, and text-to-image outputs. Synthetic media raises significant concerns around misinformation, identity fraud, and content authenticity, driving the development of detection techniques and disclosure standards.",
+  "domain": "ai",
+  "definition": "Synthetic Media refers to audio, video, image, and text content that is wholly generated or substantially manipulated by computational systems \u2014 primarily AI models \u2014 rather than captured directly from reality. It encompasses outputs from generative adversarial networks, diffusion models, large language models, neural text-to-speech systems, and neural rendering pipelines, including deepfakes, AI-generated images, cloned voices, and fully synthetic video sequences. The concept spans both creative and malicious applications, from cinematic visual effects and interactive media to disinformation campaigns and identity fraud, making detection, provenance tracking, and regulatory disclosure central concerns. Synthetic media sits at the convergence of generative AI capability, content authenticity infrastructure, and digital governance.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:infra-computing-and-cloud",
-      "label": "Computing and Cloud"
+      "id": "urn:ngm:class:generative-ai",
+      "label": "Generative AI"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.3,
+  "qualityScore": 0.72,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:synthetic-speech",
+        "label": "Synthetic Speech"
+      },
+      {
+        "id": "urn:ngm:class:synthetic-video",
+        "label": "Synthetic Video"
+      },
+      {
+        "id": "urn:ngm:class:ai-generated-text",
+        "label": "AI-Generated Text"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:deepfakes",
         "label": "Deepfakes"
       },
       {
-        "id": "urn:ngm:class:image-generation",
-        "label": "Image Generation"
+        "id": "urn:ngm:class:voice-cloning",
+        "label": "Voice Cloning"
+      },
+      {
+        "id": "urn:ngm:class:text-to-image",
+        "label": "Text-to-Image"
+      },
+      {
+        "id": "urn:ngm:class:avatar-synthesis",
+        "label": "Avatar Synthesis"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [
+    "contrastsWith": [
       {
-        "id": "urn:ngm:class:generative-ai",
-        "label": "Generative AI"
+        "id": "urn:ngm:class:deepfake-detection",
+        "label": "Deepfake Detection"
       },
+      {
+        "id": "urn:ngm:class:media-authenticity",
+        "label": "Media Authenticity"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      }
+    ],
+    "uses": [
       {
         "id": "urn:ngm:class:diffusion-model",
         "label": "Diffusion Model"
       },
       {
+        "id": "urn:ngm:class:generative-adversarial-network",
+        "label": "Generative Adversarial Network"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:neural-text-to-speech",
+        "label": "Neural Text-to-Speech"
+      },
+      {
         "id": "urn:ngm:class:video-generation",
         "label": "Video Generation"
+      },
+      {
+        "id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
       }
     ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:c2pa",
+        "label": "C2PA"
+      },
+      {
+        "id": "urn:ngm:class:ai-generated-content-disclosure",
+        "label": "AI-Generated Content Disclosure"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -55,8 +124,16 @@
         "label": "Content Moderation"
       },
       {
-        "id": "urn:ngm:class:ai-generated-content-disclosure",
-        "label": "AI-Generated Content Disclosure"
+        "id": "urn:ngm:class:disinformation",
+        "label": "Disinformation"
+      },
+      {
+        "id": "urn:ngm:class:digital-watermarking",
+        "label": "Digital Watermarking"
+      },
+      {
+        "id": "urn:ngm:class:content-provenance",
+        "label": "Content Provenance"
       }
     ]
   },

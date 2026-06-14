@@ -55,7 +55,7 @@ public:: true
   "@type": "Class",
   "label": "Vision Transformers",
   "definition": "Transformer-based neural network architectures applied to images by splitting an image into patches and treating the patches as a sequence of tokens for self-attention.",
-  "domain": "computer-vision",
+  "domain": "ai",
   "maturity": "growing",
   "qualityScore": 0.7,
   "subClassOf": [

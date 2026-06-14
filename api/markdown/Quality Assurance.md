@@ -38,33 +38,71 @@ alias:: QualityAssurance
   "@id": "urn:ngm:class:quality-assurance",
   "@type": "Class",
   "label": "Quality Assurance",
-  "definition": "Quality Assurance (QA) is the systematic process of verifying that software systems and AI models meet defined requirements and quality standards through structured testing, validation, and review activities. In AI contexts, QA extends to evaluating model performance, fairness, robustness, and safety, encompassing techniques such as unit testing, integration testing, adversarial testing, and continuous monitoring in production.",
+  "definition": "Quality Assurance (QA) is the systematic discipline of establishing and maintaining defined standards of correctness, reliability, safety, and fitness-for-purpose across the full lifecycle of software systems, AI models, and digital infrastructure. It encompasses planned and systematic activities — including requirements analysis, process audits, test design, validation, verification, and continuous monitoring — that prevent defects from reaching production rather than merely detecting them after the fact. In AI contexts, QA extends beyond functional correctness to encompass model fairness, adversarial robustness, data quality, and distributional-shift monitoring, increasingly mandated by governance frameworks such as the EU AI Act and ISO/IEC 42001. Effective QA integrates with DevOps and MLOps pipelines through automated gates that enforce quality thresholds before any artefact is promoted to the next deployment stage.",
   "domain": "infrastructure",
-  "maturity": "emerging",
+  "maturity": "mature",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:infra-software-engineering",
+      "@id": "urn:ngm:class:software-engineering",
       "label": "Software Engineering"
     }
   ],
   "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:software-testing", "label": "Software Testing"},
+      {"@id": "urn:ngm:class:code-review", "label": "Code Review"},
+      {"@id": "urn:ngm:class:test-automation", "label": "Test Automation"},
+      {"@id": "urn:ngm:class:continuous-integration", "label": "Continuous Integration"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:requirements-engineering", "label": "Requirements Engineering"},
+      {"@id": "urn:ngm:class:version-control", "label": "Version Control"},
+      {"@id": "urn:ngm:class:data-validation", "label": "Data Validation"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:risk-management", "label": "Risk Management"},
+      {"@id": "urn:ngm:class:continuous-delivery", "label": "Continuous Delivery"},
+      {"@id": "urn:ngm:class:compliance-framework", "label": "Compliance Framework"},
+      {"@id": "urn:ngm:class:model-governance", "label": "Model Governance"}
+    ],
     "uses": [
-      {"@id": "urn:ngm:class:software-testing", "label": "Software Testing"}
+      {"@id": "urn:ngm:class:adversarial-testing", "label": "Adversarial Testing"},
+      {"@id": "urn:ngm:class:regression-testing", "label": "Regression Testing"},
+      {"@id": "urn:ngm:class:static-analysis", "label": "Static Analysis"},
+      {"@id": "urn:ngm:class:formal-verification", "label": "Formal Verification"}
     ],
     "supports": [
-      {"@id": "urn:ngm:class:risk-management", "label": "Risk Management"},
-      {"@id": "urn:ngm:class:compliance-framework", "label": "Compliance Framework"}
+      {"@id": "urn:ngm:class:mlops", "label": "MLOps"},
+      {"@id": "urn:ngm:class:devops", "label": "DevOps"},
+      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},
+      {"@id": "urn:ngm:class:fairness-in-ai", "label": "Fairness in AI"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:iso-iec-25010", "label": "ISO/IEC 25010"},
+      {"@id": "urn:ngm:class:iso-iec-42001", "label": "ISO/IEC 42001"},
+      {"@id": "urn:ngm:class:ieee-829", "label": "IEEE 829"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:quality-control", "label": "Quality Control"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:model-evaluation", "label": "Model Evaluation"},
+      {"@id": "urn:ngm:class:explainability", "label": "Explainability"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:adversarial-testing", "label": "Adversarial Testing"},
-      {"@id": "urn:ngm:class:software-engineering", "label": "Software Engineering"}
+      {"@id": "urn:ngm:class:technical-debt", "label": "Technical Debt"},
+      {"@id": "urn:ngm:class:observability", "label": "Observability"}
     ]
   },
-  "quality": 0.35,
+  "sameAs": [
+    {"@id": "urn:ngm:class:qa", "label": "QA"},
+    {"@id": "urn:ngm:class:software-quality-assurance", "label": "Software Quality Assurance"}
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-13T00:00:00Z",
+    "inferenceRule": "ManualEnrichment"
   }
 }
 ```
@@ -88,34 +126,96 @@ alias:: QualityAssurance
 }
 ```
 
-
 - ### Definition
-  - Quality Assurance (QA) is the systematic process of verifying that software systems and AI models meet defined requirements and quality standards through structured testing, validation, and review activities. In AI contexts, QA extends to evaluating model performance, fairness, robustness, and safety.
+  - Quality Assurance (QA) is the systematic discipline of establishing and maintaining defined standards of correctness, reliability, safety, and fitness-for-purpose across the full lifecycle of software systems, AI models, and digital infrastructure. Rather than inspecting for defects after the fact — the domain of [[Quality Control]] — QA instils quality through planned activities including process design, [[Requirements Engineering]], [[Code Review]], structured [[Software Testing]], and continuous feedback loops integrated into [[DevOps]] and [[MLOps]] pipelines.
+
+- ### Overview
+  - QA originated in manufacturing (W. Edwards Deming, Walter Shewhart) and was formalised in software engineering through standards such as IEEE 829 and CMM. Its defining characteristic is proactive defect prevention rather than reactive detection, achieved by embedding quality criteria into every phase of the development lifecycle — from specification through design, implementation, integration, and deployment.
+  - In modern software delivery, QA is operationalised through automated [[Continuous Integration]] gates that execute test suites, [[Static Analysis]], and security scanners on every commit. Any artefact failing a defined threshold is blocked from progressing to staging or production.
+  - For AI/ML systems, QA has expanded substantially. [[Model Evaluation]] on held-out benchmarks, fairness audits across demographic subgroups, [[Adversarial Testing]] against distributional shifts and prompt injections, and data-pipeline quality checks via [[Data Validation]] are all QA responsibilities. [[MLOps]] platforms such as MLflow and Kubeflow operationalise these checks as reproducible pipeline stages.
+  - Regulatory drivers — particularly the EU AI Act (2024) and ISO/IEC 42001 — now mandate documented QA evidence for high-risk AI deployments, creating a direct link between QA practice and [[Compliance Framework]] obligations.
+
+- ### Key Components
+  - **Test Planning and Design**
+    - Defining test scope, coverage criteria, entry/exit conditions, and acceptance criteria aligned with [[Requirements Engineering]] artefacts.
+    - Generating test cases from equivalence partitions, boundary values, decision tables, and use-case scenarios.
+  - **Functional Testing**
+    - [[Software Testing]] executed at unit, integration, system, and acceptance levels to verify functional correctness.
+    - [[Regression Testing]] suites prevent previously fixed defects from re-emerging across release cycles.
+  - **Non-Functional Testing**
+    - Performance, load, and stress testing against throughput and latency requirements.
+    - Security testing including penetration testing and vulnerability scanning (feeds into [[Risk Management]]).
+    - Accessibility testing against WCAG standards.
+  - **Static Analysis and Code Quality**
+    - [[Static Analysis]] tools (e.g. SonarQube, ESLint, mypy) detect bugs, code smells, and security vulnerabilities without execution.
+    - [[Code Review]] processes enforce coding standards and distribute knowledge.
+  - **Test Automation**
+    - [[Test Automation]] frameworks (e.g. Selenium, Cypress, pytest, JUnit) enable fast, repeatable validation inside [[Continuous Integration]] pipelines.
+    - Shift-left strategies move test execution earlier in the development cycle to reduce remediation cost.
+  - **AI/ML-Specific QA**
+    - Evaluation of model performance on representative held-out datasets using metrics appropriate to the task (accuracy, F1, AUC-ROC, BLEU, etc.).
+    - [[Fairness in AI]] auditing: demographic parity, equalised odds, and counterfactual fairness checks across protected attribute groups.
+    - [[Adversarial Testing]]: red-teaming, robustness benchmarks, and prompt-injection testing for language models.
+    - Data quality checks ([[Data Validation]]): schema validation, distribution monitoring, and label-consistency audits.
+    - Model drift detection in production to trigger retraining when distributional shift degrades performance.
+  - **Formal Methods**
+    - [[Formal Verification]] techniques (model checking, theorem proving) provide mathematical guarantees for safety-critical components.
+    - Contract-based design (Design by Contract) embeds pre/post-conditions as executable QA artefacts.
+  - **Process Audits**
+    - ISO/IEC 25010 quality model audits assess product characteristics: functional suitability, reliability, usability, efficiency, maintainability, portability, security.
+    - CMMI, Agile QA retrospectives, and Six Sigma process reviews identify systemic quality risks.
+
+- ### Applications and Use Cases
+  - **Enterprise Software Development** — QA gates within Jira/Azure DevOps workflows enforce test coverage thresholds and static-analysis scores before merge, feeding [[Continuous Delivery]] pipelines.
+  - **Safety-Critical Systems** — Aerospace (DO-178C), automotive (ISO 26262), and medical devices (IEC 62304) mandate rigorous QA artefacts including traceability matrices, code coverage metrics, and hazard analysis.
+  - **AI Model Deployment** — MLOps teams run pre-deployment QA checklists covering accuracy benchmarks, fairness metrics, latency SLAs, and adversarial robustness scores before promoting a model to production. [[Model Governance]] dashboards track these over time.
+  - **Financial Systems** — QA in algorithmic trading and credit-risk models includes backtesting, stress testing, and model-risk management reviews mandated by SR 11-7 (US Federal Reserve) and EBA guidelines.
+  - **Spatial Computing and XR** — [[Observability]] hooks and frame-rate regression testing validate that spatial computing applications meet perceptual quality thresholds (frame time, tracking accuracy, rendering fidelity) across hardware configurations.
+  - **Blockchain and Smart Contracts** — Formal verification and audit-driven QA processes validate smart contract logic against specification before deployment to immutable ledgers, where defects cannot be patched post-release.
+  - **Open-Source Projects** — Community-driven QA through CI bots (GitHub Actions), mandatory review policies, and fuzz-testing pipelines maintain quality without centralised QA teams.
+
+- ### Relationships
+  - hasPart:: [[Software Testing]]
+  - hasPart:: [[Code Review]]
+  - hasPart:: [[Test Automation]]
+  - hasPart:: [[Continuous Integration]]
+  - requires:: [[Requirements Engineering]]
+  - requires:: [[Version Control]]
+  - requires:: [[Data Validation]]
+  - enables:: [[Risk Management]]
+  - enables:: [[Continuous Delivery]]
+  - enables:: [[Compliance Framework]]
+  - enables:: [[Model Governance]]
+  - uses:: [[Adversarial Testing]]
+  - uses:: [[Regression Testing]]
+  - uses:: [[Static Analysis]]
+  - uses:: [[Formal Verification]]
+  - supports:: [[MLOps]]
+  - supports:: [[DevOps]]
+  - supports:: [[AI Safety]]
+  - supports:: [[Fairness in AI]]
+  - standardizedBy:: [[ISO/IEC 25010]]
+  - standardizedBy:: [[ISO/IEC 42001]]
+  - standardizedBy:: [[IEEE 829]]
+  - contrastsWith:: [[Quality Control]]
+  - bridges-to:: [[Model Evaluation]]
+  - bridges-to:: [[Explainability]]
+  - relatedTo:: [[Technical Debt]]
+  - relatedTo:: [[Observability]]
+
+- ### Standards and Governance Context
+  - **ISO/IEC 25010:2023** — Defines the Systems and Software Quality Model with eight top-level quality characteristics and thirty-one sub-characteristics used to specify, measure, and evaluate product quality.
+  - **ISO/IEC 42001:2023** — AI Management System standard mandating documented QA processes, risk controls, and performance monitoring for organisations developing or deploying AI.
+  - **IEEE 829** — Standard for Software and System Test Documentation specifying structure of test plans, design specifications, case and procedure specifications, incident reports, and summary reports.
+  - **EU AI Act (2024)** — For high-risk AI systems, requires technical documentation demonstrating that QA activities were conducted, including accuracy evaluation, robustness testing, and cybersecurity testing.
+  - **ISTQB (International Software Testing Qualifications Board)** — De facto global certification body providing the Foundations, Advanced, and Expert syllabus levels that standardise QA practitioner knowledge.
+  - **CMMI (Capability Maturity Model Integration)** — Process-improvement framework that benchmarks organisational QA capability across five maturity levels; commonly used in defence and government contracting.
+  - **Six Sigma DMAIC** — Data-driven QA improvement methodology (Define, Measure, Analyse, Improve, Control) widely applied in enterprise software and hardware manufacturing contexts.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:QualityAssurance
   - owl-role:: Concept
 
-- ### Relationships
-  - uses:: [[Software Testing]]
-  - supports:: [[Risk Management]]
-  - supports:: [[Compliance Framework]]
-  - relatedTo:: [[Adversarial Testing]]
-  - relatedTo:: [[Software Engineering]]
-
-- ### Content
-  # Quality Assurance
-
-  Quality Assurance in AI and software contexts encompasses the full lifecycle of activities that verify systems behave correctly, safely, and fairly before and after deployment. In traditional software, QA covers requirements verification, functional testing, regression testing, and performance benchmarking. For AI systems, the scope expands to include model evaluation on held-out test sets, bias and fairness auditing across demographic groups, adversarial robustness testing, data quality validation, and ongoing drift monitoring in production. Regulatory frameworks such as the EU AI Act and ISO/IEC 42001 increasingly mandate documented QA processes for high-risk AI systems, requiring evidence of systematic testing, risk-adjusted controls, and traceable model cards. Automated CI/CD pipelines integrate QA gates that block model deployments failing accuracy or fairness thresholds.
-
-  #### Related Concepts
-  - [[Software Testing]]
-  - [[Adversarial Testing]]
-  - [[Risk Management]]
-  - [[Compliance Framework]]
-
-  ## Sources
-
 - ### Provenance
-  - sources::
-  - migration-date:: 2026-04-26T00:00:00Z
+  - sources:: ISO/IEC 25010:2023; ISO/IEC 42001:2023; IEEE Std 829; ISTQB Foundation Level Syllabus v4.0; EU AI Act (Regulation EU 2024/1689); Humble, J. & Farley, D. — Continuous Delivery (2010)
+  - updated:: 2026-06-13

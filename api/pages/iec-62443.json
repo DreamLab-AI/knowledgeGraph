@@ -4,8 +4,8 @@
   "slug": "iec-62443",
   "public": true,
   "classIri": "urn:ngm:class:iec-62443",
-  "domain": "standards",
-  "definition": "IEC 62443 is a series of standards addressing cybersecurity for industrial automation and control systems.",
+  "domain": "security",
+  "definition": "IEC 62443 is a multi-part international standards series developed by IEC Technical Committee 65 (in collaboration with ISA99) that defines requirements, policies, and lifecycle processes for securing Industrial Automation and Control Systems (IACS) against cyber threats. It establishes a risk-based framework covering security management systems, security policies and procedures, system and component requirements, and security levels (SL 1\u20134) that grade protection against progressively sophisticated threat actors. The standard addresses all stakeholders in the IACS lifecycle \u2014 asset owners, system integrators, and product suppliers \u2014 assigning distinct roles, responsibilities, and conformance obligations to each. IEC 62443 is widely adopted in sectors such as energy, water, chemicals, manufacturing, and critical national infrastructure as the authoritative basis for operational technology (OT) cybersecurity governance.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:technical-standard",
@@ -13,21 +13,148 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.73,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:security-management-system",
+        "label": "Security Management System"
+      },
+      {
+        "id": "urn:ngm:class:security-level",
+        "label": "Security Level"
+      },
+      {
+        "id": "urn:ngm:class:security-zone",
+        "label": "Security Zone"
+      },
+      {
+        "id": "urn:ngm:class:conduit",
+        "label": "Conduit"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "id": "urn:ngm:class:vulnerability-management",
+        "label": "Vulnerability Management"
+      },
+      {
+        "id": "urn:ngm:class:patch-management",
+        "label": "Patch Management"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:industrial-cybersecurity",
+        "label": "Industrial Cybersecurity"
+      },
+      {
+        "id": "urn:ngm:class:critical-infrastructure-protection",
+        "label": "Critical Infrastructure Protection"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-security",
+        "label": "Supply Chain Security"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:defense-in-depth",
+        "label": "Defense in Depth"
+      },
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "id": "urn:ngm:class:network-segmentation",
+        "label": "Network Segmentation"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:cybersecurity-governance",
+        "label": "Cybersecurity Governance"
+      },
+      {
+        "id": "urn:ngm:class:risk-based-security",
+        "label": "Risk-Based Security"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:nist-sp-800-82",
+        "label": "NIST SP 800-82"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-27001",
+        "label": "ISO/IEC 27001"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:it-security",
+        "label": "IT Security"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
     "uses": [],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "supports": [
+      {
+        "id": "urn:ngm:class:scada-security",
+        "label": "SCADA Security"
+      },
+      {
+        "id": "urn:ngm:class:industrial-control-system",
+        "label": "Industrial Control System"
+      },
+      {
+        "id": "urn:ngm:class:operational-technology",
+        "label": "Operational Technology"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iec",
+        "label": "IEC"
+      },
+      {
+        "id": "urn:ngm:class:isa",
+        "label": "ISA"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:ot-cybersecurity-framework",
+        "label": "OT Cybersecurity Framework"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:nerc-cip",
+        "label": "NERC CIP"
+      },
+      {
+        "id": "urn:ngm:class:nis2-directive",
+        "label": "NIS2 Directive"
+      },
+      {
+        "id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
+      },
+      {
+        "id": "urn:ngm:class:iec-61511",
+        "label": "IEC 61511"
+      }
+    ]
   },
   "wikilinks": [
     {

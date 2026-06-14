@@ -4,17 +4,17 @@
   "slug": "sustainability-reporting",
   "public": true,
   "classIri": "urn:ngm:class:sustainability-reporting",
-  "domain": "blockchain",
-  "definition": "Sustainability reporting is the structured practice of disclosing an organisation's environmental, social, and governance (ESG) performance data to investors, regulators, and wider stakeholders in accordance with recognised frameworks such as GRI, TCFD, ISSB, and the EU Corporate Sustainability Reporting Directive (CSRD). High-quality sustainability disclosure requires consistent data collection across scope 1, 2, and 3 emissions, reliable carbon accounting methodologies, and assurance processes comparable to financial audit. Blockchain-based provenance mechanisms and tokenised carbon credits are increasingly used to enhance the integrity and verifiability of reported ESG claims.",
+  "domain": "governance",
+  "definition": "Sustainability reporting is the structured, standardised practice through which organisations disclose their environmental, social, and governance (ESG) performance to investors, regulators, and other stakeholders. It encompasses the measurement, aggregation, and public presentation of data covering greenhouse gas emissions (Scope 1, 2, and 3), resource use, labour practices, board diversity, and supply chain impacts in conformance with frameworks such as GRI, ISSB IFRS S1/S2, TCFD, and the EU Corporate Sustainability Reporting Directive (CSRD). The discipline bridges quantitative carbon accounting, qualitative narrative disclosure, and third-party assurance to enable comparable, decision-useful ESG information. Emerging technologies including AI-assisted data collection, blockchain-based provenance, and real-time sensor integration are reshaping how organisations assemble and verify material sustainability data.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:bc-governance-and-regulation",
-      "label": "BC Governance and Regulation"
+      "id": "urn:ngm:class:corporate-governance",
+      "label": "Corporate Governance"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [
@@ -25,30 +25,140 @@
       {
         "id": "urn:ngm:class:data-governance",
         "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:materiality-assessment",
+        "label": "Materiality Assessment"
+      },
+      {
+        "id": "urn:ngm:class:audit-and-assurance",
+        "label": "Audit and Assurance"
       }
     ],
-    "enables": [],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [
+    "enables": [
+      {
+        "id": "urn:ngm:class:esg-investment",
+        "label": "ESG Investment"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
       {
         "id": "urn:ngm:class:transparency",
         "label": "Transparency"
+      },
+      {
+        "id": "urn:ngm:class:stakeholder-engagement",
+        "label": "Stakeholder Engagement"
       }
     ],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:scope-3-emissions",
+        "label": "Scope 3 Emissions"
+      },
+      {
+        "id": "urn:ngm:class:emission-factor-databases",
+        "label": "Emission Factor Databases"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:esg-framework",
+        "label": "ESG Framework"
+      },
+      {
+        "id": "urn:ngm:class:tcfd",
+        "label": "TCFD"
+      },
+      {
+        "id": "urn:ngm:class:global-reporting-initiative",
+        "label": "Global Reporting Initiative"
+      },
+      {
+        "id": "urn:ngm:class:csrd",
+        "label": "CSRD"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:greenwashing",
+        "label": "Greenwashing"
+      },
+      {
+        "id": "urn:ngm:class:voluntary-disclosure",
+        "label": "Voluntary Disclosure"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain-sustainability",
+        "label": "Blockchain Sustainability"
+      },
+      {
+        "id": "urn:ngm:class:ai-for-sustainability",
+        "label": "AI for Sustainability"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "uses": [
       {
         "id": "urn:ngm:class:carbon-footprint-measurement",
         "label": "Carbon Footprint Measurement"
       },
       {
-        "id": "urn:ngm:class:blockchain-sustainability",
-        "label": "Blockchain Sustainability"
+        "id": "urn:ngm:class:life-cycle-assessment",
+        "label": "Life Cycle Assessment"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-transparency",
+        "label": "Supply Chain Transparency"
+      },
+      {
+        "id": "urn:ngm:class:data-quality-management",
+        "label": "Data Quality Management"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:issb",
+        "label": "ISSB"
+      },
+      {
+        "id": "urn:ngm:class:global-reporting-initiative",
+        "label": "Global Reporting Initiative"
+      },
+      {
+        "id": "urn:ngm:class:ifrs-s2",
+        "label": "IFRS S2"
+      },
+      {
+        "id": "urn:ngm:class:european-sustainability-reporting-standards",
+        "label": "European Sustainability Reporting Standards"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:climate-risk",
+        "label": "Climate Risk"
+      },
+      {
+        "id": "urn:ngm:class:net-zero",
+        "label": "Net Zero"
+      },
+      {
+        "id": "urn:ngm:class:carbon-credits",
+        "label": "Carbon Credits"
+      },
+      {
+        "id": "urn:ngm:class:double-materiality",
+        "label": "Double Materiality"
       }
     ]
   },

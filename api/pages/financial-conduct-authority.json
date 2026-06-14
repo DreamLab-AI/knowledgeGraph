@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:financial-conduct-authority",
   "domain": "governance",
-  "definition": "The conduct regulator for financial services firms and markets in the United Kingdom, responsible for protecting consumers, maintaining market integrity and promoting competition.",
+  "definition": "The Financial Conduct Authority (FCA) is the independent conduct and prudential regulator for financial services firms and markets in the United Kingdom, established under the Financial Services Act 2012 as successor to the Financial Services Authority. It is responsible for protecting consumers from harm, maintaining the integrity of UK financial markets, and promoting effective competition in the interests of consumers. The FCA authorises and supervises approximately 50,000 financial services firms, sets binding conduct rules through the FCA Handbook, and exercises enforcement powers including fines, prohibition orders, and market bans. Its remit has expanded to include cryptoasset registration, sustainability-related disclosure requirements, and Consumer Duty obligations.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:financial-regulation",
@@ -13,26 +13,139 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.75,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:financial-services-authorisation",
+        "label": "Financial Services Authorisation"
+      },
+      {
+        "id": "urn:ngm:class:approved-persons-regime",
+        "label": "Approved Persons Regime"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:securities-regulation",
         "label": "Securities Regulation"
+      },
+      {
+        "id": "urn:ngm:class:consumer-protection",
+        "label": "Consumer Protection"
+      },
+      {
+        "id": "urn:ngm:class:market-integrity",
+        "label": "Market Integrity"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:prudential-regulation-authority",
+        "label": "Prudential Regulation Authority"
+      },
+      {
+        "id": "urn:ngm:class:financial-policy-committee",
+        "label": "Financial Policy Committee"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:financial-services-act-2012",
+        "label": "Financial Services Act 2012"
+      },
+      {
+        "id": "urn:ngm:class:consumer-duty",
+        "label": "Consumer Duty"
+      },
+      {
+        "id": "urn:ngm:class:senior-managers-certification-regime",
+        "label": "Senior Managers and Certification Regime"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:prudential-regulation-authority",
+        "label": "Prudential Regulation Authority"
+      },
+      {
+        "id": "urn:ngm:class:securities-exchange-commission",
+        "label": "Securities and Exchange Commission"
+      },
+      {
+        "id": "urn:ngm:class:european-securities-markets-authority",
+        "label": "European Securities and Markets Authority"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:cryptoasset-regulation",
+        "label": "Cryptoasset Regulation"
+      },
+      {
+        "id": "urn:ngm:class:regtech",
+        "label": "RegTech"
+      },
+      {
+        "id": "urn:ngm:class:open-banking",
+        "label": "Open Banking"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:fca-handbook",
+        "label": "FCA Handbook"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-sandbox",
+        "label": "Regulatory Sandbox"
+      },
+      {
+        "id": "urn:ngm:class:supervisory-technology",
+        "label": "Supervisory Technology"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
+      },
+      {
+        "id": "urn:ngm:class:market-abuse-regulation",
+        "label": "Market Abuse Regulation"
+      },
+      {
+        "id": "urn:ngm:class:financial-crime-prevention",
+        "label": "Financial Crime Prevention"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:bank-of-england",
+        "label": "Bank of England"
+      },
+      {
+        "id": "urn:ngm:class:hm-treasury",
+        "label": "HM Treasury"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:financial-ombudsman-service",
+        "label": "Financial Ombudsman Service"
+      },
+      {
+        "id": "urn:ngm:class:financial-services-compensation-scheme",
+        "label": "Financial Services Compensation Scheme"
+      },
+      {
+        "id": "urn:ngm:class:payment-systems-regulator",
+        "label": "Payment Systems Regulator"
+      }
+    ]
   },
   "wikilinks": [
     {

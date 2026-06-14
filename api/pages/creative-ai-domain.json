@@ -4,7 +4,7 @@
   "slug": "creative-ai-domain",
   "public": true,
   "classIri": "urn:ngm:class:creative-ai-domain",
-  "domain": "creative-ai",
+  "domain": "ai",
   "definition": "The Creative AI Domain covers the application of artificial intelligence to artistic and design tasks across image, music, writing and interactive media. Its scope includes computational creativity, style transfer, generative art and human-machine co-creation. It is an applied sub-area of the Artificial Intelligence Domain that builds on generative methods. The boundary excludes the underlying model training, which belongs to the Generative Modelling Domain.",
   "subClassOf": [
     {

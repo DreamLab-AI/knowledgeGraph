@@ -55,7 +55,7 @@ public:: true
   "@type": "Class",
   "label": "Variational Autoencoder",
   "definition": "A generative model that pairs an encoder mapping inputs to a probability distribution over a latent space with a decoder that reconstructs inputs, trained to maximise a variational lower bound on the data likelihood.",
-  "domain": "deep-learning",
+  "domain": "machine-learning",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

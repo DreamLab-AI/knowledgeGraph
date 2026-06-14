@@ -4,7 +4,7 @@
   "slug": "cryptographic-layer",
   "public": true,
   "classIri": "urn:ngm:class:cryptographic-layer",
-  "domain": "cryptographic",
+  "domain": "security",
   "definition": "The Cryptographic Layer is the stratum that provides confidentiality, integrity, and authenticity primitives to the layers above. It sits above the Hardware Layer, which supplies entropy and acceleration, and below identity, consensus, and security strata that depend on its guarantees. It contains ciphers, hash functions, signature schemes, and key management.",
   "subClassOf": [
     {

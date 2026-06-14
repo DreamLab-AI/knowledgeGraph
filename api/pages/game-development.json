@@ -4,20 +4,54 @@
   "slug": "game-development",
   "public": true,
   "classIri": "urn:ngm:class:game-development",
-  "domain": "artificial-intelligence",
-  "definition": "Game development is the multidisciplinary practice of designing, programming, and shipping interactive software across entertainment and serious-games domains, encompassing game design, art production, audio, narrative scripting, engine programming, and quality assurance. The field is increasingly AI-augmented: procedural content generation automates the creation of levels, terrain, and assets; reinforcement learning trains non-player characters (NPCs) with adaptive behaviour; and generative AI accelerates 2D/3D asset production. Game engines such as Unity and Unreal Engine provide integrated rendering, physics, audio, and scripting runtimes that underpin the production pipeline.",
+  "domain": "spatial-computing",
+  "definition": "Game development is the multidisciplinary engineering and creative practice of designing, building, and publishing interactive software experiences, spanning the full production pipeline from concept and pre-production through asset creation, engine programming, quality assurance, and live operations. It integrates disciplines including game design, real-time rendering, audio engineering, narrative scripting, physics simulation, and network programming into a unified production workflow centred on a game engine runtime. The field increasingly leverages machine learning for procedural content generation, NPC behaviour training via reinforcement learning, and generative AI for accelerating art and dialogue pipelines. Game development techniques have generalised beyond entertainment into spatial computing, robotics simulation, digital twins, and serious-games applications.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ai-application",
-      "label": "AI Application"
+      "id": "urn:ngm:class:interactive-software-development",
+      "label": "Interactive Software Development"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:game-design",
+        "label": "Game Design"
+      },
+      {
+        "id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "id": "urn:ngm:class:audio-engineering",
+        "label": "Audio Engineering"
+      },
+      {
+        "id": "urn:ngm:class:quality-assurance",
+        "label": "Quality Assurance"
+      },
+      {
+        "id": "urn:ngm:class:game-physics",
+        "label": "Game Physics"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:graphics-processing-unit",
+        "label": "Graphics Processing Unit"
+      },
+      {
+        "id": "urn:ngm:class:software-development-kit",
+        "label": "Software Development Kit"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:simulation",
@@ -26,12 +60,46 @@
       {
         "id": "urn:ngm:class:npc-interaction",
         "label": "NPC Interaction"
+      },
+      {
+        "id": "urn:ngm:class:serious-games",
+        "label": "Serious Games"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:physics-engine",
+        "label": "Physics Engine"
+      },
+      {
+        "id": "urn:ngm:class:asset-pipeline",
+        "label": "Asset Pipeline"
+      }
+    ],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:robotics-simulation",
+        "label": "Robotics Simulation"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:procedural-content-generation",
@@ -42,8 +110,16 @@
         "label": "Reinforcement Learning"
       },
       {
-        "id": "urn:ngm:class:game-engine",
-        "label": "Game Engine"
+        "id": "urn:ngm:class:shader-programming",
+        "label": "Shader Programming"
+      },
+      {
+        "id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
       }
     ],
     "supports": [],
@@ -51,8 +127,20 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:real-time-rendering",
-        "label": "Real-Time Rendering"
+        "id": "urn:ngm:class:computer-graphics",
+        "label": "Computer Graphics"
+      },
+      {
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human-Computer Interaction"
+      },
+      {
+        "id": "urn:ngm:class:virtual-world",
+        "label": "Virtual World"
+      },
+      {
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
       }
     ]
   },

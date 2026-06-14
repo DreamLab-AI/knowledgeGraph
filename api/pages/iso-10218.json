@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:iso-10218",
   "domain": "robotics",
-  "definition": "ISO 10218 is a two-part international safety standard published by the International Organisation for Standardisation that specifies requirements for the design, construction, and safeguarding of industrial robots and robot systems. Part 1 addresses the robot itself and requires manufacturers to conduct risk assessments and implement safety-rated stop functions, speed and force limitation, and workspace monitoring. Part 2 addresses the integration of robots into workcells, covering safety-rated control functions, safeguarding devices, and the responsibilities of system integrators.",
+  "definition": "ISO 10218 is a two-part international safety standard published by the International Organisation for Standardisation specifying mandatory requirements for the design, construction, and safeguarding of industrial robots and robotic systems. Part 1 (ISO 10218-1) governs the robot unit itself, requiring manufacturers to implement safety-rated monitored stop, speed and force limitation, workspace monitoring, and control-reliable safety stop circuits before market placement. Part 2 (ISO 10218-2) governs robot system integration into workcells, requiring formal risk assessments per ISO 12100, safety control architecture documentation per ISO 13849 performance levels, and comprehensive declarations of conformity by system integrators. Together the two parts form the normative safety foundation for industrial robotics globally and are the prerequisite for CE marking of robot workcells in European markets under the EU Machinery Directive.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-safety-and-standards",
@@ -13,21 +13,74 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [
+    "hasPart": [
       {
-        "id": "urn:ngm:class:human-robot-interaction",
-        "label": "Human Robot Interaction"
+        "id": "urn:ngm:class:iso-10218-1",
+        "label": "ISO 10218-1"
+      },
+      {
+        "id": "urn:ngm:class:iso-10218-2",
+        "label": "ISO 10218-2"
       }
     ],
-    "enables": [],
-    "dependsOn": [],
-    "implements": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
+      },
+      {
+        "id": "urn:ngm:class:safety-integrity-level",
+        "label": "Safety Integrity Level"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:ce-marking",
+        "label": "CE Marking"
+      },
+      {
+        "id": "urn:ngm:class:collaborative-robot-deployment",
+        "label": "Collaborative Robot Deployment"
+      },
+      {
+        "id": "urn:ngm:class:human-robot-collaboration",
+        "label": "Human Robot Collaboration"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:iso-12100",
+        "label": "ISO 12100"
+      },
+      {
+        "id": "urn:ngm:class:iso-13849",
+        "label": "ISO 13849"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:eu-machinery-directive",
+        "label": "EU Machinery Directive"
+      }
+    ],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-systems",
+        "label": "Autonomous Systems"
+      }
+    ],
     "uses": [],
     "supports": [
       {
@@ -37,22 +90,39 @@
       {
         "id": "urn:ngm:class:collaborative-systems-modality-robot",
         "label": "Collaborative Robot"
+      },
+      {
+        "id": "urn:ngm:class:industrial-automation",
+        "label": "Industrial Automation"
       }
     ],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:machinery-safety-standards",
+        "label": "Machinery Safety Standards"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:iso-ts-15066",
         "label": "ISO TS 15066"
       },
       {
-        "id": "urn:ngm:class:functional-safety",
-        "label": "Functional Safety"
+        "id": "urn:ngm:class:ansi-ria-r15-06",
+        "label": "ANSI RIA R15.06"
       },
       {
-        "id": "urn:ngm:class:risk-assessment",
-        "label": "Risk Assessment"
+        "id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human Robot Interaction"
+      },
+      {
+        "id": "urn:ngm:class:iec-62061",
+        "label": "IEC 62061"
+      },
+      {
+        "id": "urn:ngm:class:robot-workcell",
+        "label": "Robot Workcell"
       }
     ]
   },

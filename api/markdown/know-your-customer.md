@@ -1,14 +1,90 @@
 - ### Definition
-  - [[Know Your Customer]] (KYC) is a mandated compliance process requiring regulated entities — banks, exchanges, investment firms, cryptocurrency platforms, and increasingly other businesses — to verify the identity of clients before establishing a relationship and to monitor their activity thereafter. The process typically includes identity document verification, sanctions screening, politically exposed person (PEP) checks, beneficial ownership disclosure, and risk-scoring to determine the level of ongoing due diligence required. KYC is a foundational component of [[Anti-Money Laundering]] (AML) frameworks and is mandated by the Financial Action Task Force (FATF) recommendations adopted by over 200 jurisdictions.
+  - [[Know Your Customer]] (KYC) is a mandated compliance process requiring regulated entities — banks, exchanges, investment firms, cryptocurrency platforms, and increasingly other businesses — to verify the identity of clients before establishing a relationship and to monitor their activity thereafter. The process is a foundational pillar of [[Anti-Money Laundering]] (AML) frameworks globally, sitting within [[Compliance]] obligations enforced by the [[Financial Action Task Force]] and implemented through national legislation. KYC encompasses [[Digital Identity Verification]], [[Biometric Verification]], [[Sanctions Screening]], [[Beneficial Ownership]] disclosure, [[Politically Exposed Person]] (PEP) checks, and risk-tiered ongoing monitoring — all enabled increasingly by [[Machine Learning]] and [[RegTech]] solutions.
+
+- ### Overview
+  - KYC exists to close the information gap between regulated institutions and their clients, ensuring that financial services are not used as conduits for [[Money Laundering]], terrorist financing, or other financial crimes. When an institution accepts a new customer, it must establish that person's or entity's true identity, understand the purpose of the business relationship, and assess the risk that relationship poses.
+  - The requirement has roots in the US Bank Secrecy Act (1970), which first imposed record-keeping and reporting obligations on financial institutions. The [[Financial Action Task Force]], established in 1989 by the G7, produced the 40 Recommendations that became the de-facto global standard, subsequently adopted by over 200 jurisdictions through the FATF's Global Network of associate members.
+  - KYC is not a one-time event but an ongoing cycle: initial onboarding checks, periodic review, and event-driven re-verification (e.g., when a customer's transaction patterns change unexpectedly). The intensity of due diligence scales with customer risk tier — standard, enhanced, or simplified — allowing institutions to calibrate operational cost against regulatory obligation.
+  - The RegTech sector has matured around KYC, with specialised providers offering API-accessible identity orchestration, reducing onboarding times from days to minutes whilst improving accuracy through automation.
+
+- ### Key Components
+  - #### Identity Verification
+    - **Document verification** — optical character recognition ([[Optical Character Recognition]]) extracts data from passports, national identity cards, and driving licences; format-validation logic checks against issuing authority templates to detect tampering or forgery.
+    - **[[Biometric Verification]]** — liveness detection (passive or active challenge) compares a selfie or short video against the document photograph using [[Facial Recognition]] algorithms, guarding against identity spoofing with printed images or masks.
+    - **Database cross-referencing** — extracted identity data is checked against issuing-country databases where accessible, credit reference agencies, and utility records to confirm the person exists and lives where stated.
+  - #### Risk Classification
+    - **[[Sanctions Screening]]** — real-time and batch matching against OFAC (US), UN, EU, HMT (UK), and OFSI consolidated lists to identify restricted or prohibited parties.
+    - **[[Politically Exposed Person]] (PEP) checks** — identifying customers who hold or have held prominent public functions, or their immediate family and known associates, triggering enhanced due diligence.
+    - **Adverse media screening** — natural language processing scans news sources for negative coverage associated with the customer's name or associated entities.
+    - **Risk scoring** — aggregating signals (jurisdiction, industry, transaction type, ownership structure) into a composite [[Risk Assessment]] score that determines monitoring frequency and thresholds for suspicious activity reports (SARs).
+  - #### [[Beneficial Ownership]]
+    - Identifying ultimate beneficial owners (UBOs) behind corporate structures is a critical KYC component, preventing complex ownership chains from being used to obscure the true controller of funds. Jurisdictions enforce beneficial ownership registers (e.g., Companies House in the UK, FinCEN's BOI register in the US post-2024 Corporate Transparency Act).
+  - #### Ongoing Monitoring
+    - Transaction monitoring systems flag anomalies against expected customer behaviour profiles, using rules-based and [[Machine Learning]]-driven models. Trigger events prompt re-KYC: changes in beneficial ownership, entering sanctioned jurisdictions, or threshold-crossing transactions.
+
+- ### Mechanisms
+  - **Customer onboarding flow** — document capture (web/mobile SDK), liveness check, identity orchestration across data sources, risk scoring, compliance decision (approve / review / decline).
+  - **Periodic review** — scheduled re-verification at intervals determined by risk tier; high-risk customers may require annual refresh; standard customers every three to five years.
+  - **Event-driven re-KYC** — triggered by changes in beneficial ownership, adverse media hits, sanctions list additions, or unusual transaction patterns flagged by [[Anti-Money Laundering]] monitoring.
+  - **[[Zero-Knowledge Proof]] integration (emerging)** — allows a customer to prove they have passed KYC without disclosing the underlying identity data; the verifier receives a cryptographic attestation rather than raw documents, preserving [[Privacy by Design]] whilst satisfying regulatory requirements.
+  - **[[Verifiable Credential]] and [[Decentralised Identity]]** — W3C standards enabling portable, cryptographically signed KYC attestations issued by one regulated institution and presented to another, reducing duplication and friction; still in regulatory sandbox phase across most jurisdictions.
+  - **FATF Travel Rule** — Recommendation 16 requires virtual asset service providers (VASPs) to transmit originator and beneficiary identity information alongside transfers above threshold values, analogous to SWIFT messaging requirements for traditional wire transfers.
+
+- ### Applications and Use Cases
+  - **Retail banking** — current account and savings account opening, mortgage and loan applications, mandatory refresh cycles.
+  - **Investment and brokerage** — securities regulations (MiFID II in the EU, FINRA in the US) require suitability assessments layered on top of KYC identity checks.
+  - **Cryptocurrency exchanges** — EU Markets in Crypto-Assets ([[MiCA]]) regulation mandates KYC for all crypto-asset service providers; equivalent requirements exist under US FinCEN rules and FATF guidance for VASPs.
+  - **Insurance** — KYC applies at policy inception for higher-value products; Solvency II and local insurance codes specify scope.
+  - **Payments and e-money** — electronic money institutions, payment service providers, and open banking participants conduct KYC proportionate to transaction value and risk (lighter-touch for small prepaid instruments under EU AMLD5 thresholds).
+  - **Corporate onboarding** — KYC for legal entities involves document packs (certificate of incorporation, articles of association, shareholder registers), UBO identification, and director verification, often requiring months for complex multinational structures.
+  - **RegTech API services** — third-party providers (Onfido, Jumio, Trulioo, Veriff, Sumsub, LexisNexis Risk Solutions) offer modular KYC pipelines integrated into onboarding portals via REST APIs, enabling banks and fintechs to outsource identity orchestration.
+  - **Shared KYC utilities** — industry consortia (e.g., Swift's KYC Registry for correspondent banking) allow institutions to share verified corporate KYC data, reducing duplicate data collection and cost.
 
 - ### Relationships
-  - KYC requires [[Digital Identity Verification]] and [[Biometric Verification]] to confirm customer identity against government-issued documents and liveness detection. It enables [[Anti-Money Laundering]] controls and underpins [[AML KYC Compliance]] programmes. KYC sits within broader [[Compliance Framework|compliance frameworks]] governed by [[Financial Regulation]], and is increasingly intersecting with [[Digital Identity]] systems including [[Decentralised Identity (DID)|decentralised identity]] and [[Verifiable Credential|verifiable credentials]].
+  - requires:: [[Digital Identity Verification]]
+  - requires:: [[Biometric Verification]]
+  - requires:: [[Document Verification]]
+  - requires:: [[Risk Assessment]]
+  - enables:: [[Anti-Money Laundering]]
+  - enables:: [[AML KYC Compliance]]
+  - enables:: [[Fraud Prevention]]
+  - enables:: [[Financial Inclusion]]
+  - uses:: [[Optical Character Recognition]]
+  - uses:: [[Facial Recognition]]
+  - uses:: [[Machine Learning]]
+  - uses:: [[Zero-Knowledge Proof]]
+  - dependsOn:: [[Digital Identity]]
+  - dependsOn:: [[Sanctions Screening]]
+  - dependsOn:: [[Beneficial Ownership]]
+  - relatedTo:: [[Compliance Framework]]
+  - relatedTo:: [[Financial Regulation]]
+  - relatedTo:: [[RegTech]]
+  - relatedTo:: [[Politically Exposed Person]]
+  - standardizedBy:: [[Financial Action Task Force]]
+  - standardizedBy:: [[Basel Committee on Banking Supervision]]
+  - contrastsWith:: [[Privacy by Design]]
+  - contrastsWith:: [[Anonymous Transaction]]
+  - bridges-to:: [[Decentralised Identity]]
+  - bridges-to:: [[Verifiable Credential]]
+  - bridges-to:: [[Self-Sovereign Identity]]
 
-- ### Content
-  - The formal regulatory requirement for financial institutions to verify customer identity has roots in the United States Bank Secrecy Act (1970) and developed into globally coordinated standards through the FATF, established in 1989. The term "Know Your Customer" became standardised in the 1990s as regulators responded to high-profile money laundering cases. The EU's Anti-Money Laundering Directives, particularly AMLD5 (2018) and AMLD6 (2021), extended KYC obligations to virtual currency exchanges and crypto-asset service providers, reflecting the growing role of digital assets in the financial system.
+- ### Standards and Regulatory Context
+  - **[[Financial Action Task Force]] (FATF)** — the intergovernmental body setting global AML/CFT standards; Recommendations 10–12 specify CDD (Customer Due Diligence) obligations; Recommendation 16 covers the Travel Rule; Recommendation 15 addresses virtual assets and VASPs. Countries are peer-reviewed (Mutual Evaluation Reports) and placed on grey or black lists for non-compliance.
+  - **EU Anti-Money Laundering Directives (AMLD)** — the EU's legislative framework; AMLD5 (2018) extended KYC to cryptocurrency exchanges and custodian wallet providers; AMLD6 (2021) broadened predicate offences and increased criminal liability; the proposed EU AML Regulation (2024) would create a directly applicable EU-wide rulebook enforced by the new EU Anti-Money Laundering Authority (AMLA).
+  - **US Bank Secrecy Act / FinCEN rules** — the foundational US statute; FinCEN's Customer Due Diligence Rule (2018) codified beneficial ownership requirements for US financial institutions; the Corporate Transparency Act (2021, effective 2024) required millions of US entities to file BOI reports with FinCEN.
+  - **[[Basel Committee on Banking Supervision]]** — the BCBS Customer Due Diligence paper and subsequent guidance integrate KYC into broader Basel III risk management frameworks for correspondent banking.
+  - **Markets in Crypto-Assets ([[MiCA]])** — EU Regulation 2023/1114, fully applicable from December 2024; mandates KYC for all CASPs (Crypto-Asset Service Providers) operating in the EU.
+  - **SWIFT KYC Registry** — an industry utility enabling correspondent banks to share standardised KYC documents, reducing duplication in correspondent banking relationships.
+  - **W3C Verifiable Credentials and DID standards** — emerging technical standards enabling privacy-preserving, portable KYC attestations; increasingly referenced in regulatory sandbox guidance from the FCA (UK), MAS (Singapore), and BIS.
 
-  - Technically, KYC involves multiple verification layers. Document verification uses optical character recognition (OCR) and machine vision to extract and validate data from passports, driving licences, and national identity cards against issuing authority formats. Biometric liveness detection — typically selfie-based facial comparison — guards against spoofing with static images. Data is cross-referenced against global watchlists (OFAC, UN sanctions), PEP databases, and adverse media. Risk scoring models classify customers into tiers (standard, enhanced, high-risk) that determine monitoring frequency and thresholds for suspicious activity reporting.
+- ### Challenges and Tensions
+  - **Privacy vs. surveillance** — comprehensive identity collection creates honeypots for data breaches; regulators in some jurisdictions require data minimisation principles, creating tension with exhaustive KYC data retention obligations.
+  - **Financial exclusion** — strict KYC requirements disproportionately affect populations without formal identity documents (the "unbanked"), particularly in developing economies; FATF has acknowledged proportionality and tiered approaches as mitigants.
+  - **De-risking** — banks exiting entire markets or customer categories (e.g., remittance firms, correspondent banking relationships with smaller jurisdictions) to avoid high KYC costs or perceived risk, reducing financial access.
+  - **Duplication** — each institution independently collecting and verifying the same identity data imposes enormous aggregate cost; shared KYC utilities and portable credentials are industry responses.
+  - **Synthetic identity fraud** — AI-generated deepfake documents and spoofed biometrics challenge traditional KYC verification; counter-measures include injection attack detection and hardware attestation.
+  - **Cross-border consistency** — divergent national implementations of FATF recommendations create compliance complexity for multinational institutions operating across many jurisdictions.
 
-  - The KYC industry has grown into a specialised RegTech sector, with providers such as Onfido, Jumio, Trulioo, and Veriff offering API-accessible identity verification services. Banks and cryptocurrency exchanges integrate these into onboarding flows. Blockchain-based decentralised identity and verifiable credential standards (W3C DIDs, Verifiable Credentials) are being explored as a means to enable reusable, privacy-preserving KYC attestations, potentially allowing a user to pass KYC once and carry a cryptographic credential accepted by multiple institutions without re-sharing raw identity documents.
-
-  - In 2024–2025 KYC faces dual pressure: tightening regulations (the EU's Markets in Crypto-Assets regulation, MiCA, mandating KYC for all crypto-asset service providers) and user experience demands for frictionless onboarding. AI-driven identity verification reduces manual review and fraud, whilst privacy-enhancing technologies such as zero-knowledge proofs are being standardised to allow selective disclosure of KYC attributes without revealing the underlying identity data. The FATF "Travel Rule" — requiring originator and beneficiary information to accompany virtual asset transfers — remains a significant compliance engineering challenge for the crypto sector.
+- ### Provenance
+  - sources:: FATF 40 Recommendations; EU AMLD5/AMLD6; US Bank Secrecy Act; Basel BCBS CDD Guidance; EU MiCA Regulation 2023/1114; W3C Verifiable Credentials Data Model; FinCEN CDD Rule 2018
+  - updated:: 2026-06-13

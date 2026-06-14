@@ -4,19 +4,27 @@
   "slug": "cognitive-architecture",
   "public": true,
   "classIri": "urn:ngm:class:cognitive-architecture",
-  "domain": "infrastructure",
-  "definition": "Cognitive Architecture is the overarching computational design that specifies how a reasoning agent perceives, represents, stores, and acts upon knowledge. In AI contexts it defines the interplay between symbolic reasoning, neural learning subsystems, memory stores, and planning mechanisms that together produce intelligent behaviour. Cognitive architectures such as ACT-R, SOAR, and neural-symbolic hybrids inform the design of agentic AI systems, autonomous robots, and adaptive human-computer interfaces.",
+  "domain": "artificial-intelligence",
+  "definition": "A cognitive architecture is a formal specification of the fixed computational structures, memory systems, and control mechanisms that together constitute a general-purpose intelligent agent, independent of any particular task or domain. It prescribes how perception, attention, memory retrieval, reasoning, learning, and action selection are integrated into a unified processing cycle, providing a theoretical and engineering framework for building systems that exhibit adaptive, goal-directed behaviour. Classical examples include ACT-R (Adaptive Control of Thought\u2013Rational), SOAR, and LIDA; contemporary variants extend these principles to neural-symbolic hybrids, transformer-based agent frameworks, and large language model scaffolding systems. Cognitive architectures serve simultaneously as psychological theories of the human mind and as blueprints for artificial intelligence systems.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:infra-computing-and-cloud",
-      "label": "Computing and Cloud"
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.3,
-  "maturity": "emerging",
+  "qualityScore": 0.72,
+  "maturity": "established",
   "relationships": {
     "hasPart": [
+      {
+        "id": "urn:ngm:class:working-memory",
+        "label": "Working Memory"
+      },
+      {
+        "id": "urn:ngm:class:long-term-memory",
+        "label": "Long-Term Memory"
+      },
       {
         "id": "urn:ngm:class:reasoning",
         "label": "Reasoning"
@@ -24,9 +32,30 @@
       {
         "id": "urn:ngm:class:planning-and-scheduling",
         "label": "Planning and Scheduling"
+      },
+      {
+        "id": "urn:ngm:class:perception",
+        "label": "Perception"
+      },
+      {
+        "id": "urn:ngm:class:action-selection",
+        "label": "Action Selection"
       }
     ],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      },
+      {
+        "id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:agentic-ai",
@@ -35,20 +64,75 @@
       {
         "id": "urn:ngm:class:symbolic-reasoning",
         "label": "Symbolic Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-agents",
+        "label": "Autonomous Agents"
+      },
+      {
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human-Computer Interaction"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:narrow-ai",
+        "label": "Narrow AI"
+      },
+      {
+        "id": "urn:ngm:class:task-specific-model",
+        "label": "Task-Specific Model"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:brain-computer-interface",
+        "label": "Brain-Computer Interface"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:production-rules",
+        "label": "Production Rules"
+      },
+      {
+        "id": "urn:ngm:class:neural-networks",
+        "label": "Neural Networks"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:knowledge-representation",
-        "label": "Knowledge Representation"
+        "id": "urn:ngm:class:general-intelligence",
+        "label": "General Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:computational-neuroscience",
+        "label": "Computational Neuroscience"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-science",
+        "label": "Cognitive Science"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
       }
     ]
   },

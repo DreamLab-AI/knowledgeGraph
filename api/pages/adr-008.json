@@ -4,7 +4,7 @@
   "slug": "adr-008",
   "public": true,
   "classIri": "urn:ngm:class:adr-008",
-  "domain": "software-architecture",
+  "domain": "infrastructure",
   "definition": "An architecture decision record numbered 008, documenting a specific architectural choice within a project together with its context, options considered, and consequences. ADRs form a chronological log of design decisions.",
   "subClassOf": [
     {

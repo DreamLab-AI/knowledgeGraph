@@ -1,29 +1,88 @@
 - ### Definition
-  - Regulatory Technology (RegTech) applies digital tools—including AI, machine learning, and distributed ledger systems—to automate and streamline regulatory compliance processes such as KYC/AML checks, audit trail generation, risk reporting, and consent management. In spatial-computing and metaverse contexts, RegTech addresses jurisdiction-sensitive data flows, real-time content moderation, and smart-contract-based enforcement of platform governance rules.
+  - Regulatory Technology (RegTech) is the application of digital tools—including [[Artificial Intelligence]], [[Machine Learning]], [[Natural Language Processing]], [[Distributed Ledger Technology]], and [[Cloud Computing]]—to automate and improve regulatory compliance processes across financial services and adjacent industries. It reduces the cost and latency of meeting obligations imposed by frameworks such as [[Anti-Money Laundering]] directives, [[Data Protection Regulation]], and prudential capital rules, while simultaneously providing regulators with higher-quality, machine-readable data. RegTech sits at the intersection of legal obligation, [[Data Governance]], and algorithmic automation, and is increasingly applied in [[Decentralised Finance]], [[Open Banking]], and [[AI Governance]] contexts.
 
-- ### Semantic Classification
-  - owl-class:: spatial-computing:RegulatoryTechnology
-  - owl-role:: concept
+- ### Overview
+  - RegTech emerged as a distinct sub-sector of [[FinTech]] following the wave of post-financial-crisis regulation (Basel III, MiFID II, EMIR, Dodd-Frank) that dramatically increased the volume and complexity of compliance obligations for financial institutions.
+  - Rather than growing compliance headcount linearly with regulatory burden, RegTech firms offer software platforms that automate ingestion of regulatory text, map obligations to internal controls, monitor transactions in real time, and produce standardised regulatory reports.
+  - The term was popularised by the UK's [[Financial Conduct Authority]] (FCA) around 2015, and the FCA's regulatory sandbox has been a key accelerator of RegTech adoption globally.
+  - A related but distinct concept is [[Supervisory Technology]] (SupTech), which refers to technology adopted by regulators themselves—central banks and supervisory authorities—to improve oversight efficiency. RegTech and SupTech are complementary and increasingly co-designed.
+  - The maturity of the sector is now **established**: major global banks, insurers, and asset managers routinely procure RegTech solutions for KYC, transaction surveillance, XBRL reporting, and stress-testing automation.
+
+- ### Key Components
+  - #### Identity and Onboarding
+    - [[Know Your Customer]] (KYC) — automated identity verification using document scanning, biometric matching, and sanctions-list screening.
+    - [[Anti-Money Laundering]] (AML) — transaction monitoring models trained on historical suspicious-activity patterns, producing alerts prioritised by risk score.
+    - Customer Due Diligence (CDD) and Enhanced Due Diligence (EDD) workflows integrated with global watchlists (OFAC, UN, EU consolidated list).
+    - [[Identity Management]] infrastructure including decentralised identity standards ([[Decentralised Identifiers]], [[Verifiable Credentials]]).
+  - #### Regulatory Reporting
+    - [[Regulatory Reporting]] pipelines producing structured outputs in XBRL (eXtensible Business Reporting Language) and ISO 20022 message formats.
+    - Automated mapping from internal ledger data to supervisory schemas (e.g. EBA COREP/FINREP, ECB BIRD, SEC EDGAR).
+    - Near-real-time position and trade reporting to repositories under EMIR, SFTR, and CFTC Part 45.
+  - #### Risk and Surveillance
+    - [[Risk Management]] platforms covering credit, market, liquidity, and operational risk with automated limit-breach alerting.
+    - Conduct-surveillance tools applying [[Natural Language Processing]] to communications (voice, chat, e-mail) to detect market abuse and mis-selling.
+    - Network-graph analytics for detecting structuring, layering, and placement patterns in [[Anti-Money Laundering]] typologies.
+  - #### Policy and Contract Automation
+    - [[Smart Contracts]] encoding compliance logic on distributed ledgers, enabling automatic blocking of non-compliant transactions.
+    - Regulatory-text-parsing tools using [[Natural Language Processing]] to extract obligations, thresholds, and deadlines from legislation and supervisory guidance.
+    - Consent lifecycle management systems for [[Data Protection Regulation]] compliance, tracking user permissions across data processing activities.
+  - #### Audit and Explainability
+    - Immutable [[Audit Trail]] generation using append-only logs or distributed ledger anchoring.
+    - [[Algorithmic Auditing]] capabilities enabling post-hoc inspection of automated decisions for fairness, accuracy, and regulatory defensibility.
+    - Model risk management tooling to satisfy supervisory model validation requirements (SR 11-7, EBA ML guidelines).
+
+- ### Applications and Use Cases
+  - **Financial crime compliance** — major global banks deploy real-time transaction monitoring across millions of daily payments, using machine-learning models to reduce false-positive alert rates while maintaining recall on genuine suspicious activity.
+  - **Capital and prudential reporting** — automated XBRL filing platforms generate Basel III COREP returns from ledger data, reducing manual intervention and submission error rates.
+  - **[[Open Banking]] compliance** — [[Application Programming Interface]] security and consent management platforms ensure TPP access complies with PSD2 and equivalent open-finance frameworks.
+  - **[[Decentralised Finance]] (DeFi) governance** — on-chain compliance modules embed jurisdiction checks and [[Anti-Money Laundering]] screening into DEX smart contracts, bridging decentralised protocols with traditional regulatory expectations.
+  - **[[AI Governance]] and model compliance** — as frameworks such as the EU AI Act impose transparency and auditability requirements on algorithmic systems, RegTech tooling is extended to document AI model lineage, fairness metrics, and human-oversight controls.
+  - **Insurance and conduct** — suitability checking, product governance, and claims-fraud detection automated through [[Machine Learning]] models governed by RegTech audit wrappers.
+  - **Crypto asset regulation** — travel-rule compliance platforms transmit originator and beneficiary data for virtual asset transfers between VASPs, meeting FATF Recommendation 16 obligations.
+  - **Regulatory sandbox operations** — [[Regulatory Sandbox]] platforms manage cohort intake, test-parameter tracking, and outcome reporting for innovation facilitators at the FCA, MAS, DFSA, and ASIC.
 
 - ### Relationships
-  - supports [[Compliance Framework]]
-  - supports [[Data Protection Regulation]]
-  - uses [[Smart Contracts]]
-  - uses [[Machine Learning Discipline]]
-  - relatedTo [[Governance Framework]]
+  - hasPart:: [[Know Your Customer]]
+  - hasPart:: [[Anti-Money Laundering]]
+  - hasPart:: [[Regulatory Reporting]]
+  - hasPart:: [[Risk Management]]
+  - uses:: [[Machine Learning]]
+  - uses:: [[Natural Language Processing]]
+  - uses:: [[Smart Contracts]]
+  - uses:: [[Cloud Computing]]
+  - uses:: [[Application Programming Interface]]
+  - supports:: [[Compliance Framework]]
+  - supports:: [[Data Protection Regulation]]
+  - supports:: [[Financial Regulation]]
+  - supports:: [[Open Banking]]
+  - requires:: [[Data Governance]]
+  - requires:: [[Identity Management]]
+  - requires:: [[Audit Trail]]
+  - enables:: [[Automated Compliance]]
+  - enables:: [[Regulatory Sandbox]]
+  - enables:: [[Supervisory Technology]]
+  - dependsOn:: [[Data Standardisation]]
+  - dependsOn:: [[Application Programming Interface]]
+  - contrastsWith:: [[Manual Compliance]]
+  - contrastsWith:: [[Legal Technology]]
+  - bridges-to:: [[Decentralised Finance]]
+  - bridges-to:: [[AI Governance]]
+  - bridges-to:: [[Distributed Ledger Technology]]
+  - relatedTo:: [[Governance Framework]]
+  - relatedTo:: [[FinTech]]
+  - relatedTo:: [[Algorithmic Auditing]]
 
-- ### Content
-
-  ## Overview
-
-  Regulatory Technology automates compliance workflows that would otherwise require manual legal and administrative effort. In the metaverse domain, RegTech tools are applied to monitor in-world transactions for anti-money-laundering signals, enforce age-gating and content-moderation policies, and generate immutable audit trails for regulatory reporting. Smart-contract-based enforcement allows compliance rules to be embedded directly into platform logic rather than applied as post-hoc manual review.
-
-  #### Related Concepts
-  - [[Compliance Framework]]
-  - [[Data Protection Regulation]]
-  - [[Smart Contracts]]
-  - [[Governance Framework]]
+- ### Standards and Context
+  - **FATF Guidance** — the Financial Action Task Force has published guidance on the digital transformation of AML/CFT supervision, explicitly endorsing RegTech and SupTech tools.
+  - **ISO 20022** — global financial messaging standard increasingly mandated for high-value payment systems (TARGET2, CHAPS, SWIFT MX migration), forming the backbone of structured regulatory reporting.
+  - **XBRL / iXBRL** — eXtensible Business Reporting Language mandated by EBA, ESMA, SEC, and HMRC for structured financial and regulatory filings.
+  - **eIDAS / eIDAS 2.0** — EU framework for electronic identification and trust services, underpinning digital KYC and remote onboarding.
+  - **EU AI Act (2024)** — classifies certain AML/financial-scoring models as high-risk AI systems, imposing transparency, audit, and human-oversight requirements directly on RegTech deployments.
+  - **PSD2 / Open Finance** — Payment Services Directive 2 and successor open-finance frameworks mandate API-based account access and consent management, driving a distinct RegTech sub-sector.
+  - **Basel III / IV** — prudential capital and liquidity rules issued by the Basel Committee on Banking Supervision, generating substantial demand for automated regulatory-capital calculation and COREP reporting.
+  - **MiFID II / MiFIR** — EU markets regulation requiring real-time transaction reporting, best-execution monitoring, and communications surveillance—all primary RegTech use cases.
+  - Key industry bodies: Financial Data and Technology Association (FDATA), Global Legal Entity Identifier Foundation (GLEIF), International RegTech Association (IRTA), Cambridge Centre for Alternative Finance (CCAF).
 
 - ### Provenance
-  - sources::
-  - migration-date:: 2026-04-26T00:00:00Z
+  - sources:: FCA RegTech publications; FATF Digital Transformation Guidance; Basel Committee on Banking Supervision; EU AI Act (2024); ISO 20022 Standard; EBA COREP/FINREP taxonomy documentation; GLEIF LEI data standards.
+  - updated:: 2026-06-13

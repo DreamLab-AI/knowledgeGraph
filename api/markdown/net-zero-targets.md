@@ -1,11 +1,96 @@
 - ### Definition
-  - [[Net Zero Targets]] are time-bound pledges to achieve balance between anthropogenic greenhouse gas emissions and removals, typically by 2050 for corporate actors and nation-states, aligned with the [[Paris Agreement]]'s temperature goals and operationalised through [[Net Zero Target Setting]] frameworks.
+  - [[Net Zero Targets]] are formal, time-bound commitments by nation-states, corporations, subnational governments, and other entities to reduce gross [[Greenhouse Gas Emissions]] as deeply as technically and economically feasible, and to balance any residual emissions with equivalent verified [[Carbon Removal]], thereby reaching net-zero atmospheric impact by a specified date. They are calibrated against the [[Paris Agreement]]'s temperature thresholds and operationalised through rigorous [[Carbon Accounting]] frameworks, with credibility hinging on near-term absolute reduction milestones, transparent scope boundaries, and independent [[Third-Party Verification]].
+
+- ### Overview
+  - Net Zero Targets emerged as the dominant climate governance instrument following the IPCC Special Report on Global Warming of 1.5 °C (2018), which concluded that global net-zero CO₂ emissions by approximately 2050 is a necessary condition for limiting warming to 1.5 °C above pre-industrial levels.
+  - The concept distinguishes between:
+    - **Carbon neutrality**: a broader, offset-heavy claim that does not require deep emissions reductions
+    - **Net zero**: a more rigorous standard requiring at minimum 90% absolute reduction before permitting residual offset use
+    - **Climate positive / net negative**: going beyond net zero to actively remove more carbon than emitted
+  - Targets operate at multiple scales: national (enshrined in law or Nationally Determined Contributions), sectoral, corporate, and city/regional levels.
+  - The significance of net zero targets lies in their capacity to restructure long-term capital allocation, procurement decisions, infrastructure investment, and regulatory expectations across entire economies.
+
+- ### Key Components
+  - **Scope boundaries**: credible targets cover [[Scope 1 Emissions]] (direct), [[Scope 2 Emissions]] (purchased energy), and [[Scope 3 Emissions]] (value chain) — the last being the largest and most difficult to measure
+  - **Interim milestones**: near-term (2025, 2030) absolute reduction targets prevent "back-loading" and signal genuine decarbonisation trajectories
+  - **Residual emissions**: a small fraction of emissions (typically 5–10%) considered technically unavoidable in hard-to-abate sectors, which must be balanced by high-quality [[Carbon Removal]]
+  - **Carbon removal pathways**: nature-based solutions ([[Reforestation]], soil carbon, [[Blue Carbon]]), and engineered removals ([[Direct Air Capture]], [[Biochar]], [[Enhanced Rock Weathering]])
+  - **Verification and accountability**: independent assurance bodies, [[Science Based Targets Initiative]] (SBTi) certification, and mandatory [[Climate Risk Disclosure]] under frameworks such as [[IFRS Sustainability Standards]] (IFRS S2) and TCFD
+  - **Value chain decarbonisation**: electrification of heat and transport, [[Green Hydrogen]] for hard-to-abate sectors, fuel switching, and [[Energy Efficiency]] improvements
+
+- ### Mechanisms
+  - **Target-setting frameworks**:
+    - [[Science Based Targets Initiative]] (SBTi) Corporate Net-Zero Standard mandates at least 90% absolute reduction by 2050 with 50% interim reduction by 2030
+    - Race to Zero campaign (UN Climate Champions) sets common minimum criteria for non-state actors
+    - ISO 14068 (2023) provides an international standard for carbon neutrality claims
+    - [[IPCC]] 1.5 °C pathways provide the scientific underpinning
+  - **Governance instruments**:
+    - [[Nationally Determined Contributions]] (NDCs) — national climate plans submitted under the [[Paris Agreement]]
+    - Net-zero legislation (e.g., UK Climate Change Act 2008 amended 2019, EU Climate Law 2021)
+    - Corporate disclosure mandates: SEC climate rule, EU CSRD, ISSB IFRS S2
+  - **Financial mechanisms**:
+    - [[Green Finance]] instruments: green bonds, sustainability-linked loans, transition finance
+    - [[Glasgow Financial Alliance for Net Zero]] (GFANZ) — portfolio alignment commitments by banks and asset managers
+    - [[Voluntary Carbon Market]] — purchase of carbon credits to address residual emissions
+    - Carbon pricing mechanisms: [[Emissions Trading Systems]], carbon taxes
+
+- ### Applications and Use Cases
+  - **National government targets**: Sweden (2045, net negative), UK (2050), EU (2050 enshrined in EU Climate Law), China (2060 carbon neutrality)
+  - **Corporate targets**: multinational corporations setting SBTi-aligned targets to satisfy investor ESG mandates, supply chain requirements, and regulatory obligations
+  - **Financial sector portfolio alignment**: asset managers using [[Paris-Aligned Benchmarks]] and net-zero investment frameworks to reposition portfolios
+  - **Procurement and supply chains**: large corporates imposing net-zero requirements on suppliers, creating cascading decarbonisation incentives through [[Scope 3 Emissions]] accounting
+  - **Infrastructure planning**: long-lived capital assets (power plants, buildings, transport networks) being redesigned or retired early to meet net-zero trajectories
+  - **City and regional targets**: C40 Cities and other networks committing to net-zero municipal operations and wider jurisdictional targets
+  - **Legal accountability**: net-zero targets increasingly subject to climate litigation where governments or corporations fail to act consistently with stated commitments
 
 - ### Relationships
-  - Net Zero Targets are a subset of [[Climate Commitments]] that depend on [[Carbon Offsetting]] from the [[Voluntary Carbon Market]] for residual emissions and are shaped by [[Climate Policy]] frameworks; they collectively drive [[Climate Change Mitigation]] investment and are anchored in the science of the [[Paris Agreement]].
+  - partOf:: [[Climate Policy]]
+  - partOf:: [[Sustainable Development]]
+  - requires:: [[Carbon Accounting]]
+  - requires:: [[Greenhouse Gas Emissions]]
+  - requires:: [[Third-Party Verification]]
+  - enables:: [[Climate Change Mitigation]]
+  - enables:: [[Green Finance]]
+  - enables:: [[Low-Carbon Transition]]
+  - uses:: [[Carbon Offsetting]]
+  - uses:: [[Science Based Targets]]
+  - uses:: [[Carbon Removal]]
+  - dependsOn:: [[Renewable Energy]]
+  - dependsOn:: [[Energy Efficiency]]
+  - dependsOn:: [[Voluntary Carbon Market]]
+  - standardizedBy:: [[Paris Agreement]]
+  - standardizedBy:: [[Science Based Targets Initiative]]
+  - standardizedBy:: [[IFRS Sustainability Standards]]
+  - contrastsWith:: [[Carbon Neutrality]]
+  - contrastsWith:: [[Climate Pledges]]
+  - relatedTo:: [[Nationally Determined Contributions]]
+  - relatedTo:: [[Scope 3 Emissions]]
+  - relatedTo:: [[Just Transition]]
+  - relatedTo:: [[Greenwashing]]
+  - bridges-to:: [[ESG Reporting]]
+  - bridges-to:: [[Climate Risk Disclosure]]
 
-- ### Content
-  - The concept of net zero entered mainstream policy vocabulary following the IPCC Special Report on Global Warming of 1.5 °C (SR1.5) in 2018, which concluded that reaching net-zero CO₂ emissions by around 2050 globally is a necessary condition for the 1.5 °C pathway. Sweden was among the first nations to enshrine net zero in law in 2017, followed by the UK (2019), the EU, and over 140 countries in subsequent years. Corporate net-zero pledges proliferated after 2020, with the Science Based Targets initiative (SBTi) becoming the dominant third-party validation framework.
-  - Net zero is achieved through a two-track strategy: first, deep decarbonisation of value chains via electrification, fuel switching, and energy efficiency; second, addressing residual emissions through high-quality carbon removals, including nature-based solutions and engineered approaches such as direct air capture. Rigorous target-setting requires scope 3 (value chain) emissions accounting, transparent interim milestones, and independent third-party verification. The SBTi's Corporate Net-Zero Standard mandates at least 90% absolute reduction before reliance on offsets.
-  - Net zero targets are significant because they restructure capital allocation globally: banks and asset managers are increasingly aligning lending and investment portfolios with 1.5 °C-compatible trajectories through initiatives like the Glasgow Financial Alliance for Net Zero (GFANZ). Corporate targets accelerate procurement of renewable energy, green hydrogen, and low-carbon materials, and are increasingly scrutinised under mandatory climate disclosure regimes such as the ISSB's IFRS S2 standard and the SEC's climate disclosure rule. Targets that lack near-term interim milestones or rely heavily on offsets attract accusations of greenwashing.
-  - In 2024–2025, net zero governance is undergoing stress testing. The SBTi's internal debate over the role of voluntary carbon markets in corporate targets made headlines in 2024, reflecting broader tensions between ambition and practicality. Several large corporations have quietly weakened or withdrawn targets in response to economic pressures and political backlash, particularly in the United States. Simultaneously, the EU's Green Claims Directive and UK FCA guidance are imposing greater legal accountability on net-zero marketing claims, while advances in high-durability removal credits (biochar, enhanced rock weathering) are expanding the supply of credible offsets.
+- ### Standards and Context
+  - **Paris Agreement (2015)**: the foundational multilateral treaty requiring parties to pursue efforts to limit warming to 1.5 °C; net zero by mid-century is the implied scientific necessity
+  - **IPCC Sixth Assessment Report (AR6, 2021–2022)**: quantified 1.5 °C-consistent pathways; reinforced the centrality of rapid deep emissions reduction and carbon dioxide removal
+  - **SBTi Corporate Net-Zero Standard**: the dominant voluntary corporate target-setting framework; mandates 90%+ absolute reduction and limits offset use to residual emissions only
+  - **ISO 14064 series**: international standards for greenhouse gas quantification, monitoring, and verification at organisational and project levels
+  - **ISO 14068 (2023)**: international standard for carbon neutrality claims — provides methodology for carbon footprint calculation, reduction planning, and offset quality requirements
+  - **IFRS S2 (Climate-related Disclosures)**: issued by the ISSB, requires disclosure of climate-related risks and opportunities including transition plans aligned with net-zero commitments
+  - **EU Corporate Sustainability Reporting Directive (CSRD)**: mandates EU companies to report on sustainability matters including climate targets and transition plans under ESRS standards
+  - **EU Green Claims Directive (proposed)**: would impose substantiation requirements on net-zero marketing claims to prevent [[Greenwashing]]
+  - **UK Transition Plan Taskforce (TPT)**: developed a gold standard disclosure framework for corporate net-zero transition plans
+  - **Integrity Council for the Voluntary Carbon Market (ICVCM)**: established Core Carbon Principles to improve credibility of credits used for residual emissions offsetting
+
+- ### Challenges and Tensions
+  - **Greenwashing risk**: targets without credible near-term milestones, robust scope coverage, or independent verification attract scrutiny and legal exposure under emerging [[Green Finance]] regulation
+  - **Scope 3 data quality**: value chain emissions are difficult to measure accurately, particularly for financial institutions with large investment portfolios
+  - **Offset integrity**: quality of [[Voluntary Carbon Market]] credits highly variable; high-profile scandals (e.g., REDD+ overcrediting investigations) have undermined confidence
+  - **Hard-to-abate sectors**: aviation, shipping, steel, cement, and agriculture face technological constraints that make near-term deep reductions costly
+  - **Political durability**: net-zero commitments can be weakened or reversed by changes in government; lack of statutory enshrinement creates fragility
+  - **Just Transition**: rapid decarbonisation timelines risk disproportionate impacts on fossil-fuel-dependent communities and developing nations unless managed through [[Just Transition]] mechanisms
+  - **Carbon removal scaling**: engineered removal technologies such as [[Direct Air Capture]] remain expensive and unscaled; over-reliance on future removal to justify delayed action is a recognised risk
+
+- ### Provenance
+  - sources:: IPCC SR1.5 (2018); IPCC AR6 WG3 (2022); SBTi Corporate Net-Zero Standard v1.1 (2023); ISO 14068:2023; IFRS S2 (2023); NewClimate Institute Net Zero Stocktake reports; Energy & Climate Intelligence Unit Net Zero Tracker
+  - updated:: 2026-06-13

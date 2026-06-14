@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:open-zeppelin-governor",
   "domain": "blockchain",
-  "definition": "OpenZeppelin Governor is a modular, security-audited Solidity smart-contract framework that provides the core infrastructure for deploying on-chain governance systems on EVM-compatible blockchains. It implements a proposal lifecycle\u2014proposal creation, voting delay, voting period, quorum check, and timelock-guarded execution\u2014with pluggable modules for vote counting strategies (simple, bravo, fractional), token-based voting power sources (ERC-20 with EIP-5805 checkpointing or ERC-721), and timelock controller integration. Governor is used as the governance layer by major DeFi protocols and DAOs to manage protocol parameter changes, treasury disbursements, and contract upgrades.",
+  "definition": "OpenZeppelin Governor is a modular, security-audited Solidity smart-contract framework that provides the core infrastructure for deploying on-chain governance systems on EVM-compatible blockchains, succeeding the Compound Governor Bravo pattern. It implements a canonical proposal lifecycle \u2014 proposal creation, configurable voting delay, voting period, quorum validation, and timelock-guarded execution \u2014 with pluggable extension modules for vote-counting strategies (simple majority, Bravo-style, fractional), token-based voting-power sources (ERC-20 with EIP-5805 checkpointing or ERC-721), and TimelockController integration. The framework is maintained by the OpenZeppelin security team as part of OpenZeppelin Contracts, has undergone multiple third-party audits, and is adopted as the de facto governance standard by major decentralised autonomous organisations and DeFi protocols including Uniswap, ENS, and Compound.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-governance-and-regulation",
@@ -13,11 +13,24 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:solidity",
+        "label": "Solidity"
+      },
+      {
+        "id": "urn:ngm:class:ethereum-virtual-machine",
+        "label": "Ethereum Virtual Machine"
+      },
+      {
+        "id": "urn:ngm:class:vote-delegation",
+        "label": "Vote Delegation"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:dao-governance",
@@ -26,17 +39,60 @@
       {
         "id": "urn:ngm:class:voting-mechanism",
         "label": "Voting Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:treasury-management",
+        "label": "Treasury Management"
+      },
+      {
+        "id": "urn:ngm:class:protocol-upgrade",
+        "label": "Protocol Upgrade"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:openzeppelin-contracts",
+        "label": "OpenZeppelin Contracts"
+      },
+      {
+        "id": "urn:ngm:class:eip-5805",
+        "label": "EIP-5805"
+      },
+      {
+        "id": "urn:ngm:class:eip-712",
+        "label": "EIP-712"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:on-chain-governance",
         "label": "On-chain Governance"
+      },
+      {
+        "id": "urn:ngm:class:compound-governor-bravo",
+        "label": "Compound Governor Bravo"
       }
     ],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:multisig-wallet",
+        "label": "Multisig Wallet"
+      },
+      {
+        "id": "urn:ngm:class:optimistic-governance",
+        "label": "Optimistic Governance"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:collective-intelligence",
+        "label": "Collective Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:liquid-democracy",
+        "label": "Liquid Democracy"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:smart-contract",
@@ -45,12 +101,50 @@
       {
         "id": "urn:ngm:class:governance-token",
         "label": "Governance Token"
+      },
+      {
+        "id": "urn:ngm:class:erc-20",
+        "label": "ERC-20"
+      },
+      {
+        "id": "urn:ngm:class:erc-721",
+        "label": "ERC-721"
+      },
+      {
+        "id": "urn:ngm:class:timelock-controller",
+        "label": "TimelockController"
       }
     ],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "id": "urn:ngm:class:defi-protocol",
+        "label": "DeFi Protocol"
+      },
+      {
+        "id": "urn:ngm:class:upgradeable-proxy",
+        "label": "Upgradeable Proxy"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:quorum-fraction",
+        "label": "Quorum Fraction"
+      },
+      {
+        "id": "urn:ngm:class:snapshot-voting",
+        "label": "Snapshot Voting"
+      },
+      {
+        "id": "urn:ngm:class:token-weighted-voting",
+        "label": "Token-Weighted Voting"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

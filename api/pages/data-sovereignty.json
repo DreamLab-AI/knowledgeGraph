@@ -4,17 +4,17 @@
   "slug": "data-sovereignty",
   "public": true,
   "classIri": "urn:ngm:class:data-sovereignty",
-  "domain": "infrastructure",
-  "definition": "Data sovereignty is the legal and political principle that digital data is subject to the laws, governance structures, and enforcement jurisdiction of the nation or region in which it originates or is processed. It encompasses requirements such as data localisation (mandating that data remain physically within specified borders), restrictions on cross-border data flows, and the right of governments to compel access for regulatory or security purposes. Data sovereignty directly shapes cloud architecture decisions, AI training dataset curation, and multinational data-sharing agreements.",
+  "domain": "governance",
+  "definition": "Data sovereignty is the legal and political principle that digital data is subject to the laws, governance structures, and enforcement jurisdiction of the nation, region, or community in which it originates or is processed. It encompasses requirements such as data localisation (mandating that data remain physically within specified geographic boundaries), restrictions on cross-border data flows, and the right of governments or communities to compel access for regulatory, security, or cultural-preservation purposes. Data sovereignty directly shapes cloud architecture decisions, AI training dataset curation, federated system design, and multinational data-sharing agreements. It intersects with \u2014 yet is conceptually distinct from \u2014 privacy rights, data protection law, and cybersecurity, being principally concerned with jurisdictional control rather than individual rights.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:infra-legal-and-regulatory",
-      "label": "Infra Legal and Regulatory"
+      "id": "urn:ngm:class:data-governance",
+      "label": "Data Governance"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.76,
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [
@@ -23,32 +23,115 @@
         "label": "Regulatory Compliance"
       },
       {
-        "id": "urn:ngm:class:data-governance",
-        "label": "Data Governance"
+        "id": "urn:ngm:class:data-localisation",
+        "label": "Data Localisation"
+      },
+      {
+        "id": "urn:ngm:class:jurisdiction",
+        "label": "Jurisdiction"
       }
     ],
-    "enables": [],
-    "dependsOn": [],
-    "implements": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:sovereign-cloud",
+        "label": "Sovereign Cloud"
+      },
+      {
+        "id": "urn:ngm:class:indigenous-data-sovereignty",
+        "label": "Indigenous Data Sovereignty"
+      },
+      {
+        "id": "urn:ngm:class:national-ai-strategy",
+        "label": "National AI Strategy"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:data-residency",
+        "label": "Data Residency"
+      },
+      {
+        "id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      }
+    ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:localisation",
-        "label": "Localisation"
+        "id": "urn:ngm:class:data-free-flow",
+        "label": "Data Free Flow"
+      },
+      {
+        "id": "urn:ngm:class:cloud-portability",
+        "label": "Cloud Portability"
       }
     ],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:confidential-computing",
+        "label": "Confidential Computing"
+      },
+      {
+        "id": "urn:ngm:class:homomorphic-encryption",
+        "label": "Homomorphic Encryption"
+      }
+    ],
+    "supports": [
       {
         "id": "urn:ngm:class:privacy",
         "label": "Privacy"
       },
       {
-        "id": "urn:ngm:class:data-protection",
-        "label": "Data Protection"
+        "id": "urn:ngm:class:digital-autonomy",
+        "label": "Digital Autonomy"
+      },
+      {
+        "id": "urn:ngm:class:national-security",
+        "label": "National Security"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-iec-27701",
+        "label": "ISO/IEC 27701"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      },
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:cross-border-data-flows",
+        "label": "Cross-Border Data Flows"
       }
     ]
   },

@@ -4,7 +4,7 @@
   "slug": "gpu",
   "public": true,
   "classIri": "urn:ngm:class:gpu",
-  "domain": "general",
+  "domain": "infrastructure",
   "definition": "A GPU (Graphics Processing Unit) is a highly parallel processor optimised for the throughput-oriented computation required to render images and to accelerate data-parallel workloads.",
   "subClassOf": [
     {

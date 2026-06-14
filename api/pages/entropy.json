@@ -4,7 +4,7 @@
   "slug": "entropy",
   "public": true,
   "classIri": "urn:ngm:class:entropy",
-  "domain": "information-theory",
+  "domain": "machine-learning",
   "definition": "A measure of disorder or uncertainty. In thermodynamics it quantifies the unavailable energy in a system, and in information theory it quantifies the average uncertainty or information content of a source.",
   "subClassOf": [
     {

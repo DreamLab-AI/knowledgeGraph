@@ -4,7 +4,7 @@
   "slug": "visa",
   "public": true,
   "classIri": "urn:ngm:class:visa",
-  "domain": "general",
+  "domain": "finance",
   "definition": "Visa is a multinational payment technology company that operates one of the largest electronic payment networks, connecting cardholders, merchants, and banks. It is headquartered in the United States.",
   "subClassOf": [
     {

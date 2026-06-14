@@ -4,8 +4,8 @@
   "slug": "java-script",
   "public": true,
   "classIri": "urn:ngm:class:java-script",
-  "domain": "software-engineering",
-  "definition": "JavaScript is a high-level programming language standardised as ECMAScript, originally created for web browsers and now used for client-side, server-side, and tooling code.",
+  "domain": "infrastructure",
+  "definition": "JavaScript is a high-level, dynamically typed, interpreted programming language standardised as ECMAScript by ECMA International, originally designed by Brendan Eich at Netscape in 1995 to add interactivity to web pages. It features first-class functions, prototype-based object orientation, event-driven and asynchronous programming via the event loop, and runs natively in all major web browsers as the sole client-side scripting language. Beyond browsers, server-side runtimes such as Node.js and Deno have extended JavaScript into backend services, command-line tooling, and cloud functions, making it one of the most widely deployed programming languages across the full web stack.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:programming-language",
@@ -13,21 +13,130 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
-  "maturity": "established",
+  "qualityScore": 0.75,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:dom-api",
+        "label": "DOM API"
+      },
+      {
+        "id": "urn:ngm:class:node-js",
+        "label": "Node.js"
+      },
+      {
+        "id": "urn:ngm:class:web-assembly",
+        "label": "WebAssembly"
+      },
+      {
+        "id": "urn:ngm:class:typescript",
+        "label": "TypeScript"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:javascript-engine",
+        "label": "JavaScript Engine"
+      },
+      {
+        "id": "urn:ngm:class:event-loop",
+        "label": "Event Loop"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:web-application",
+        "label": "Web Application"
+      },
+      {
+        "id": "urn:ngm:class:single-page-application",
+        "label": "Single Page Application"
+      },
+      {
+        "id": "urn:ngm:class:progressive-web-app",
+        "label": "Progressive Web App"
+      },
+      {
+        "id": "urn:ngm:class:serverless-computing",
+        "label": "Serverless Computing"
+      }
+    ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:ecmascript",
+        "label": "ECMAScript"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:python",
+        "label": "Python"
+      },
+      {
+        "id": "urn:ngm:class:webassembly",
+        "label": "WebAssembly"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:prototype-chain",
+        "label": "Prototype Chain"
+      },
+      {
+        "id": "urn:ngm:class:asynchronous-programming",
+        "label": "Asynchronous Programming"
+      },
+      {
+        "id": "urn:ngm:class:json",
+        "label": "JSON"
+      },
+      {
+        "id": "urn:ngm:class:rest-api",
+        "label": "REST API"
+      }
+    ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ecmascript",
+        "label": "ECMAScript"
+      },
+      {
+        "id": "urn:ngm:class:ecma-international",
+        "label": "ECMA International"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:html",
+        "label": "HTML"
+      },
+      {
+        "id": "urn:ngm:class:css",
+        "label": "CSS"
+      },
+      {
+        "id": "urn:ngm:class:web-browser",
+        "label": "Web Browser"
+      },
+      {
+        "id": "urn:ngm:class:npm",
+        "label": "NPM"
+      }
+    ]
   },
   "wikilinks": [
     {

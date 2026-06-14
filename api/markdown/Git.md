@@ -63,7 +63,7 @@ public:: true
   "@type": "Class",
   "label": "Git",
   "definition": "Git is a distributed version control system that tracks changes to files and coordinates work across multiple contributors. It was created by Linus Torvalds for Linux kernel development.",
-  "domain": "general",
+  "domain": "distributed-collaboration",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

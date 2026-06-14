@@ -20,39 +20,182 @@ public:: true
   "@id": "urn:ngm:class:zigbee",
   "@type": "Class",
   "label": "Zigbee",
-  "definition": "Zigbee is a low-power, low-data-rate wireless mesh networking protocol built on the IEEE 802.15.4 physical and MAC layer standard, designed for battery-powered IoT devices in home automation, industrial monitoring, and building management applications. Maintained by the Connectivity Standards Alliance, it supports mesh topologies that extend range through device-to-device relay whilst consuming minimal power.",
+  "definition": "Zigbee is a low-power, low-data-rate wireless mesh networking protocol stack built atop the IEEE 802.15.4 physical and MAC layer standard, designed for battery-operated IoT sensors, actuators, and control devices in home automation, industrial monitoring, and building management. Maintained by the Connectivity Standards Alliance (formerly the Zigbee Alliance), it defines application-layer profiles, mesh routing, and AES-128 security on top of IEEE 802.15.4, supporting coordinator, router, and sleepy end-device roles within self-healing mesh topologies. Operating predominantly at 2.4 GHz (globally) as well as 868 MHz and 915 MHz regional bands, Zigbee targets data rates up to 250 kbps and enables coin-cell battery lifetimes of years, making it a foundational IoT wireless technology that coexists and increasingly converges with Thread and the Matter smart-home standard.",
   "domain": "infrastructure",
   "maturity": "mature",
   "subClassOf": [{"@id": "urn:ngm:class:ieee-802-15-4", "label": "IEEE 802.15.4"}],
   "relations": {
-    "relatedTo": [
-      {"@id": "urn:ngm:class:matter-protocol", "label": "Matter Protocol"},
-      {"@id": "urn:ngm:class:bluetooth-low-energy", "label": "Bluetooth Low Energy"},
-      {"@id": "urn:ngm:class:sensor", "label": "Sensor"}
+    "hasPart": [
+      {"@id": "urn:ngm:class:zigbee-coordinator", "label": "Zigbee Coordinator"},
+      {"@id": "urn:ngm:class:zigbee-router", "label": "Zigbee Router"},
+      {"@id": "urn:ngm:class:zigbee-end-device", "label": "Zigbee End Device"}
     ],
-    "uses": [
-      {"@id": "urn:ngm:class:ieee", "label": "IEEE"},
-      {"@id": "urn:ngm:class:sensor-technology", "label": "Sensor Technology"}
+    "partOf": [
+      {"@id": "urn:ngm:class:iot-protocol-stack", "label": "IoT Protocol Stack"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:ieee-802-15-4", "label": "IEEE 802.15.4"},
+      {"@id": "urn:ngm:class:aes-128", "label": "AES-128"}
     ],
     "enables": [
-      {"@id": "urn:ngm:class:sensor-data", "label": "Sensor Data"}
+      {"@id": "urn:ngm:class:home-automation", "label": "Home Automation"},
+      {"@id": "urn:ngm:class:building-automation", "label": "Building Automation"},
+      {"@id": "urn:ngm:class:wireless-sensor-network", "label": "Wireless Sensor Network"},
+      {"@id": "urn:ngm:class:smart-metering", "label": "Smart Metering"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:mesh-networking", "label": "Mesh Networking"},
+      {"@id": "urn:ngm:class:ism-band", "label": "ISM Band"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:mesh-routing", "label": "Mesh Routing"},
+      {"@id": "urn:ngm:class:aodv-routing", "label": "AODV Routing"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:aes-encryption", "label": "AES Encryption"},
+      {"@id": "urn:ngm:class:direct-sequence-spread-spectrum", "label": "Direct Sequence Spread Spectrum"},
+      {"@id": "urn:ngm:class:csma-ca", "label": "CSMA-CA"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:sensor-data", "label": "Sensor Data"},
+      {"@id": "urn:ngm:class:over-the-air-update", "label": "Over-the-Air Update"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:connectivity-standards-alliance", "label": "Connectivity Standards Alliance"},
+      {"@id": "urn:ngm:class:ieee", "label": "IEEE"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:bluetooth-low-energy", "label": "Bluetooth Low Energy"},
+      {"@id": "urn:ngm:class:z-wave", "label": "Z-Wave"},
+      {"@id": "urn:ngm:class:thread-protocol", "label": "Thread Protocol"},
+      {"@id": "urn:ngm:class:wi-fi-halow", "label": "Wi-Fi HaLow"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:matter-protocol", "label": "Matter Protocol"},
+      {"@id": "urn:ngm:class:smart-home", "label": "Smart Home"},
+      {"@id": "urn:ngm:class:industrial-iot", "label": "Industrial IoT"},
+      {"@id": "urn:ngm:class:lpwan", "label": "LPWAN"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:ip-networking", "label": "IP Networking"},
+      {"@id": "urn:ngm:class:cloud-iot-platform", "label": "Cloud IoT Platform"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:ieee-802-15-4-zigbee", "label": "IEEE 802.15.4 Zigbee"}
+  ],
+  "quality": 0.74,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-13T00:00:00Z",
+    "inferenceRule": "ManualEnrichment"
+  }
 }
 ```
 
 - ### Definition
-  - [[Zigbee]] is a wireless communication protocol specification maintained by the Connectivity Standards Alliance (formerly the Zigbee Alliance), operating on top of the [[IEEE 802.15.4]] physical and MAC layer. It targets low-power, low-data-rate applications with mesh topology support, allowing battery-operated [[Sensor]] devices and actuators to form self-healing networks covering areas larger than any single radio hop. Its 2.4 GHz (global), 868 MHz (Europe), and 915 MHz (Americas) channel options balance range, interference avoidance, and data rate requirements for diverse IoT use cases.
+  - [[Zigbee]] is a specification for a suite of high-level wireless communication protocols built on top of [[IEEE 802.15.4]], targeting low-power, low-data-rate [[Wireless Sensor Network]] applications. Maintained by the [[Connectivity Standards Alliance]] (formerly the Zigbee Alliance), it defines [[Mesh Networking]] topology with three device roles — coordinator, router, and end device — and applies [[AES Encryption]] at the network and application layers. Its design philosophy prioritises multi-year [[Battery]] life, self-healing mesh coverage, and interoperability across certified vendors, making it one of the most widely deployed sub-GHz and 2.4 GHz short-range protocols in [[Home Automation]], [[Building Automation]], and [[Industrial IoT]] environments.
+
+- ### Overview
+  - Zigbee emerged from work at the IEEE on [[IEEE 802.15.4]] (ratified 2003) and the founding of the ZigBee Alliance, which published the first Zigbee specification in 2004. The standard occupies a deliberate design point between Bluetooth and Wi-Fi: it offers far lower power consumption than [[Wi-Fi]] and greater network scale than [[Bluetooth Low Energy]], at the cost of lower data throughput.
+  - The protocol is optimised for control-and-status traffic: turning lights on, reading temperature, reporting occupancy. Maximum over-the-air data rate is 250 kbps at 2.4 GHz, but effective application throughput is much lower after MAC overhead and mesh routing. This is adequate for its core use cases.
+  - A Zigbee network (PAN — Personal Area Network) can support up to 65,000 nodes. Mains-powered routers relay traffic between battery-powered end devices and the single coordinator node that bootstraps the network. This hierarchy enables remarkable scalability in large buildings or warehouse environments.
+  - The [[Connectivity Standards Alliance]] maintains Zigbee alongside the newer [[Matter Protocol]] standard. Matter uses Zigbee-related hardware silicon and concepts but replaces the proprietary application layer with an IP-native stack over [[Thread Protocol]] or Wi-Fi, so the two protocols are complementary rather than purely competitive.
+
+- ### Key Components
+  - **Device Roles**
+    - [[Zigbee Coordinator]] — exactly one per PAN; selects channel and PAN ID, stores security keys, bootstraps the network. Typically mains-powered.
+    - [[Zigbee Router]] — mains-powered nodes that participate in mesh routing, extending range and providing redundant paths. Routers relay packets for sleepy end devices.
+    - [[Zigbee End Device]] — battery-powered leaf nodes that sleep between polling cycles, maximising battery life; communicate only with their parent router or coordinator.
+  - **Layer Architecture**
+    - Physical and MAC: provided by [[IEEE 802.15.4]], using [[Direct Sequence Spread Spectrum]] and [[CSMA-CA]] media access.
+    - Network Layer (NWK): defines [[Mesh Routing]] using a hybrid tree/[[AODV Routing]] scheme; assigns 16-bit short addresses within the PAN.
+    - Application Support Sublayer (APS): handles binding, group addressing, and end-to-end [[AES-128]] security for application payloads.
+    - Application Layer: device profiles (Zigbee Home Automation, Zigbee Light Link, Zigbee Pro, Zigbee Green Power) define attribute models, clusters, and interoperability rules across vendors.
+  - **Security Model**
+    - Network-layer key distributed by the Trust Centre (the coordinator role).
+    - Application-layer link keys for end-to-end confidentiality between specific devices.
+    - [[AES-128]] counter mode encryption with MIC integrity check.
+    - Zigbee 3.0 unified the previously fragmented profile security models into a single mandatory security baseline.
+  - **Radio Bands and Channels**
+    - 2.4 GHz ISM band: 16 channels (11–26), globally available, 250 kbps.
+    - 868 MHz: 1 channel in Europe, 20 kbps (legacy).
+    - 915 MHz: 10 channels in North America, 40 kbps (legacy).
+    - Channel agility and energy scanning allow networks to avoid interference from [[Wi-Fi]] and [[Bluetooth]] operating in the 2.4 GHz [[ISM Band]].
+
+- ### Applications and Use Cases
+  - **Smart Home and Residential**
+    - Lighting control: Zigbee is the native protocol for Philips Hue, IKEA TRÅDFRI, and many other smart bulb ecosystems. Hundreds of millions of Zigbee-enabled luminaires have shipped.
+    - Smart plugs, thermostats, door and window sensors, motion detectors, and smoke/CO alarms.
+    - Integration hubs (Home Assistant with a USB Zigbee coordinator dongle, Samsung SmartThings, Amazon Echo with Zigbee hub) expose Zigbee devices as IP-accessible endpoints.
+  - **Building Automation and HVAC**
+    - Wireless HVAC zone controllers and occupancy sensors in commercial buildings.
+    - Automated blind and shading systems.
+    - Energy monitoring and sub-metering in multi-tenant buildings.
+  - **Smart Metering and Energy**
+    - [[Smart Metering]] (Smart Energy Profile 2 / HAN — Home Area Network) for electricity, gas, and water meters with in-home displays.
+    - Demand-response systems linking utilities to customer-premises equipment.
+  - **Industrial IoT and Asset Tracking**
+    - Wireless instrument networks in process plants where running cables is impractical.
+    - Environmental monitoring in cold-chain logistics.
+    - [[Industrial IoT]] deployments in factories, warehouses, and agricultural operations.
+  - **Healthcare**
+    - Patient environment monitoring (temperature, humidity) in hospitals.
+    - Medical device connectivity for non-critical, low-data-rate parameters.
+  - **Retail and Hospitality**
+    - Electronic shelf labels (ESL) in large retail environments.
+    - Room automation in hotels (lighting, blinds, HVAC) on a single low-cost mesh.
 
 - ### Relationships
-  - Zigbee is a subclass of [[IEEE 802.15.4]] networking and competes and coexists with [[Bluetooth Low Energy]] in the short-range, low-power IoT space. The [[Matter Protocol]] (IP-based smart home standard) uses Zigbee hardware stacks as one of its supported physical layers, bridging Zigbee devices into IP-native home networks. Zigbee's core utility lies in enabling [[Sensor Data]] collection from [[Sensor Technology]] deployments in buildings and industrial environments without battery-replacement overhead.
+  - requires:: [[IEEE 802.15.4]]
+  - requires:: [[AES-128]]
+  - implements:: [[Mesh Routing]]
+  - implements:: [[AODV Routing]]
+  - uses:: [[AES Encryption]]
+  - uses:: [[Direct Sequence Spread Spectrum]]
+  - uses:: [[CSMA-CA]]
+  - enables:: [[Home Automation]]
+  - enables:: [[Building Automation]]
+  - enables:: [[Wireless Sensor Network]]
+  - enables:: [[Smart Metering]]
+  - supports:: [[Sensor Data]]
+  - supports:: [[Over-the-Air Update]]
+  - standardizedBy:: [[Connectivity Standards Alliance]]
+  - standardizedBy:: [[IEEE]]
+  - partOf:: [[IoT Protocol Stack]]
+  - hasPart:: [[Zigbee Coordinator]]
+  - hasPart:: [[Zigbee Router]]
+  - hasPart:: [[Zigbee End Device]]
+  - dependsOn:: [[Mesh Networking]]
+  - dependsOn:: [[ISM Band]]
+  - contrastsWith:: [[Bluetooth Low Energy]]
+  - contrastsWith:: [[Z-Wave]]
+  - contrastsWith:: [[Thread Protocol]]
+  - contrastsWith:: [[Wi-Fi HaLow]]
+  - relatedTo:: [[Matter Protocol]]
+  - relatedTo:: [[Smart Home]]
+  - relatedTo:: [[Industrial IoT]]
+  - relatedTo:: [[LPWAN]]
+  - bridges-to:: [[IP Networking]]
+  - bridges-to:: [[Cloud IoT Platform]]
 
-- ### Content
-  - The IEEE 802.15.4 standard, published in 2003, defined the physical and MAC layers that Zigbee builds upon. The Zigbee specification itself was first released in 2004 by what was then the ZigBee Alliance. Early adoption centred on smart metering and industrial automation, where the combination of mesh routing, AES-128 security, and coin-cell battery lifetimes measured in years provided a compelling alternative to proprietary protocols and wired sensor buses.
+- ### Standards and Context
+  - **IEEE 802.15.4** — the foundational physical and MAC layer standard ratified in 2003; also underlies [[Thread Protocol]], ISA100.11a, WirelessHART, and MiWi. Zigbee defines layers above it.
+  - **Connectivity Standards Alliance (CSA)** — formerly the Zigbee Alliance; rebranded in 2021 upon launching the [[Matter Protocol]] initiative. CSA maintains Zigbee 3.0 and the Dotdot data model.
+  - **Zigbee 3.0** — released 2016; unified the previously fragmented application profiles (HA, LL, ZLL) into a single interoperable standard with mandatory security baseline.
+  - **Zigbee Green Power** — ultra-low-power extension enabling energy-harvesting devices (kinetic switches, solar-powered sensors) that require no battery at all.
+  - **Dotdot / Zigbee Cluster Library (ZCL)** — the attribute and command model used by Zigbee device profiles; now also the data model underpinning [[Matter Protocol]], providing semantic continuity between generations.
+  - **Thread Protocol** — a competing/complementary IEEE 802.15.4-based mesh protocol that is natively IP (IPv6/6LoWPAN) and is the wireless transport selected for [[Matter Protocol]] rather than Zigbee's proprietary NWK layer. Many silicon vendors (Silicon Labs EM35x/EFR32, NXP JN516x/K32W, Texas Instruments CC253x/CC26x2) produce dual-stack chips supporting both.
+  - **Matter Protocol** — CSA's converged smart-home standard (formerly Project CHIP); uses [[Thread Protocol]] and Wi-Fi as transports; imports the Dotdot ZCL cluster model from Zigbee. Zigbee Bridge devices can expose existing Zigbee networks into Matter fabric, preserving installed bases.
+  - **Wi-SUN** — another IEEE 802.15.4g-based standard targeting larger-scale utility and smart-city mesh networks, competing in the smart-metering segment.
 
-  - Zigbee's mesh architecture comprises three device roles: coordinators (one per network, managing formation), routers (mains-powered devices that relay traffic), and end devices (battery-powered leaf nodes that sleep most of the time). The mesh routing protocol uses a tree-based addressing scheme supplemented by ad-hoc on-demand routing, providing redundant paths and automatic rerouting around failed nodes. Maximum data rates are 250 kbps at 2.4 GHz, adequate for sensor telemetry and control commands but not for streaming media.
+- ### Competitive Landscape
+  - [[Z-Wave]] — a proprietary 900 MHz mesh protocol from Silicon Labs; fewer interference issues with Wi-Fi at 2.4 GHz but smaller ecosystem and higher chip cost.
+  - [[Bluetooth Low Energy]] — favoured for direct-to-phone connectivity and wearables; weaker mesh performance at scale but native smartphone support without a separate hub.
+  - [[Thread Protocol]] — technically similar (both IEEE 802.15.4 mesh) but natively IPv6; positioned as the future Zigbee replacement in new designs.
+  - [[Wi-Fi HaLow]] (IEEE 802.11ah) — sub-GHz Wi-Fi for IoT; higher power than Zigbee but longer range and direct IP connectivity.
+  - [[LPWAN]] technologies (LoRaWAN, Sigfox, NB-IoT) — target much longer ranges (km-scale) at the cost of higher latency and lower data rates; complementary to Zigbee for wide-area deployments.
 
-  - The Zigbee ecosystem spans hundreds of certified device profiles — Zigbee Home Automation, Zigbee Light Link, Zigbee Pro — enabling interoperability across vendors within a profile. Integration hubs (Philips Hue Bridge, Samsung SmartThings, Home Assistant with Zigbee coordinators) translate Zigbee device events into IP-accessible APIs, bridging the protocol into broader smart home and building automation platforms.
-
-  - In 2024–2025, Zigbee's role is evolving under pressure from the [[Matter Protocol]], which abstracts over Zigbee, Thread, Wi-Fi, and Ethernet to provide a unified IP-based application layer. Many Zigbee device manufacturers are developing Matter bridges or dual-stack devices that support both protocols simultaneously. Despite this transition, Zigbee's installed base — estimated at hundreds of millions of devices — ensures its relevance in retrofit and legacy integration scenarios for many years to come.
+- ### Provenance
+  - sources:: IEEE 802.15.4-2020 standard; Zigbee 3.0 specification (Connectivity Standards Alliance, 2016); CSA Matter specification v1.x; Silicon Labs AN1003 Zigbee network architecture note; Texas Instruments CC2530 Zigbee reference design documentation.
+  - updated:: 2026-06-13

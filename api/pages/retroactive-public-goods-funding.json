@@ -5,24 +5,76 @@
   "public": true,
   "classIri": "urn:ngm:class:retroactive-public-goods-funding",
   "domain": "blockchain",
-  "definition": "Retroactive Public Goods Funding (RetroPGF) is a capital allocation mechanism that rewards contributors to open-source software, protocol infrastructure, or public-benefit projects after they have demonstrably created value, rather than distributing speculative upfront grants based on predicted future impact. By funding proven outcomes rather than promises, RetroPGF reduces misallocation risk and aligns incentives for contributors who can work on public goods in anticipation of eventual recognition. It operates through a trusted allocator \u2014 typically a DAO committee or a network of badge holders \u2014 who evaluate demonstrated impact and distribute funds from a treasury accordingly.",
+  "definition": "Retroactive Public Goods Funding (RetroPGF) is a capital allocation mechanism that rewards contributors to open-source software, protocol infrastructure, or public-benefit projects after they have demonstrably created value, rather than distributing speculative upfront grants based on predicted future impact. By funding proven outcomes rather than promises, RetroPGF reduces misallocation risk and aligns incentives so that contributors can invest effort in public goods with confidence that eventual recognition is possible. Evaluation is typically performed by a trusted body \u2014 such as a DAO committee, a citizen house of badge holders, or an expert panel \u2014 who assess demonstrated impact and distribute treasury funds accordingly. The mechanism was pioneered by Vitalik Buterin and operationalised at scale by the Optimism Collective, making it one of the most influential experiments in decentralised public goods economics.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:bc-defi-and-economics",
-      "label": "DeFi and Economics"
+      "id": "urn:ngm:class:public-goods-funding",
+      "label": "Public Goods Funding"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
+  "qualityScore": 0.72,
   "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:impact-evaluation",
+        "label": "Impact Evaluation"
+      },
+      {
+        "id": "urn:ngm:class:sybil-resistance",
+        "label": "Sybil Resistance"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:open-source-sustainability",
+        "label": "Open Source Sustainability"
+      },
+      {
+        "id": "urn:ngm:class:protocol-revenue-distribution",
+        "label": "Protocol Revenue Distribution"
+      },
+      {
+        "id": "urn:ngm:class:contributor-incentive-alignment",
+        "label": "Contributor Incentive Alignment"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:quadratic-funding",
+        "label": "Quadratic Funding"
+      },
+      {
+        "id": "urn:ngm:class:prospective-grant-funding",
+        "label": "Prospective Grant Funding"
+      },
+      {
+        "id": "urn:ngm:class:token-launch",
+        "label": "Token Launch"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:open-source-software",
+        "label": "Open Source Software"
+      },
+      {
+        "id": "urn:ngm:class:commons-governance",
+        "label": "Commons Governance"
+      },
+      {
+        "id": "urn:ngm:class:impact-investing",
+        "label": "Impact Investing"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:dao",
@@ -31,14 +83,30 @@
       {
         "id": "urn:ngm:class:treasury-management",
         "label": "Treasury Management"
+      },
+      {
+        "id": "urn:ngm:class:impact-attestation",
+        "label": "Impact Attestation"
+      },
+      {
+        "id": "urn:ngm:class:quadratic-voting",
+        "label": "Quadratic Voting"
+      },
+      {
+        "id": "urn:ngm:class:on-chain-governance",
+        "label": "On-Chain Governance"
       }
     ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [
       {
-        "id": "urn:ngm:class:knowledge-graph-publication-classifier-goods-funding",
+        "id": "urn:ngm:class:public-goods-funding",
         "label": "Public Goods Funding"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-governance",
+        "label": "Decentralised Governance"
       }
     ],
     "relatedTo": [
@@ -47,8 +115,24 @@
         "label": "Quadratic Funding"
       },
       {
-        "id": "urn:ngm:class:smart-contract",
-        "label": "Smart Contract"
+        "id": "urn:ngm:class:optimism-collective",
+        "label": "Optimism Collective"
+      },
+      {
+        "id": "urn:ngm:class:gitcoin-grants",
+        "label": "Gitcoin Grants"
+      },
+      {
+        "id": "urn:ngm:class:mechanism-design",
+        "label": "Mechanism Design"
+      },
+      {
+        "id": "urn:ngm:class:coordination-failure",
+        "label": "Coordination Failure"
+      },
+      {
+        "id": "urn:ngm:class:ethereum-ecosystem",
+        "label": "Ethereum Ecosystem"
       }
     ]
   },

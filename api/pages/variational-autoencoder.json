@@ -4,7 +4,7 @@
   "slug": "variational-autoencoder",
   "public": true,
   "classIri": "urn:ngm:class:variational-autoencoder",
-  "domain": "deep-learning",
+  "domain": "machine-learning",
   "definition": "A generative model that pairs an encoder mapping inputs to a probability distribution over a latent space with a decoder that reconstructs inputs, trained to maximise a variational lower bound on the data likelihood.",
   "subClassOf": [
     {

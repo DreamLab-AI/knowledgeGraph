@@ -4,30 +4,182 @@
   "slug": "centralised-database",
   "public": true,
   "classIri": "urn:ngm:class:centralised-database",
-  "domain": "general",
-  "definition": "A database in which data is stored and managed at a single location or under a single controlling authority, in contrast to distributed or decentralised storage.",
+  "domain": "data",
+  "definition": "A centralised database is a data management system in which all data is stored, administered, and accessed through a single physical or logical location under a single controlling authority. It provides a unified, authoritative view of data with strong consistency guarantees, simplified access control, and a single point of administration. All read and write operations are routed to this central node or cluster, making it the canonical source of truth for the entire system. The centralised model contrasts with distributed and decentralised architectures by sacrificing geographic fault-tolerance and autonomy in exchange for consistency, reduced coordination overhead, and operational simplicity.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:distributed-systems",
-      "label": "Distributed Systems"
+      "id": "urn:ngm:class:database-management-system",
+      "label": "Database Management System"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
-  "maturity": "established",
+  "qualityScore": 0.72,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:relational-database",
+        "label": "Relational Database"
+      },
+      {
+        "id": "urn:ngm:class:query-engine",
+        "label": "Query Engine"
+      },
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "id": "urn:ngm:class:transaction-management",
+        "label": "Transaction Management"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:data-storage",
+        "label": "Data Storage"
+      },
+      {
+        "id": "urn:ngm:class:backup-and-recovery",
+        "label": "Backup and Recovery"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:acid-compliance",
+        "label": "ACID Compliance"
+      },
+      {
+        "id": "urn:ngm:class:data-consistency",
+        "label": "Data Consistency"
+      },
+      {
+        "id": "urn:ngm:class:centralised-access-control",
+        "label": "Centralised Access Control"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:server-infrastructure",
+        "label": "Server Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:operating-system",
+        "label": "Operating System"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:sql",
+        "label": "SQL"
+      },
+      {
+        "id": "urn:ngm:class:acid-transactions",
+        "label": "ACID Transactions"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:distributed-database",
+        "label": "Distributed Database"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-storage",
+        "label": "Decentralised Storage"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:data-lake",
+        "label": "Data Lake"
+      },
+      {
+        "id": "urn:ngm:class:cloud-storage",
+        "label": "Cloud Storage"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:indexing",
+        "label": "Indexing"
+      },
+      {
+        "id": "urn:ngm:class:query-optimisation",
+        "label": "Query Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:replication",
+        "label": "Replication"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:audit-logging",
+        "label": "Audit Logging"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-iec-9075",
+        "label": "ISO/IEC 9075 (SQL Standard)"
+      },
+      {
+        "id": "urn:ngm:class:ansi-sql",
+        "label": "ANSI SQL"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:information-system",
+        "label": "Information System"
+      },
+      {
+        "id": "urn:ngm:class:data-management",
+        "label": "Data Management"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:data-warehouse",
+        "label": "Data Warehouse"
+      },
+      {
+        "id": "urn:ngm:class:nosql-database",
+        "label": "NoSQL Database"
+      },
+      {
+        "id": "urn:ngm:class:single-point-of-failure",
+        "label": "Single Point of Failure"
+      },
+      {
+        "id": "urn:ngm:class:cap-theorem",
+        "label": "CAP Theorem"
+      }
+    ]
   },
   "wikilinks": [
     {

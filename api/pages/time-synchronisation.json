@@ -5,19 +5,53 @@
   "public": true,
   "classIri": "urn:ngm:class:time-synchronisation",
   "domain": "infrastructure",
-  "definition": "Time synchronisation is the process of aligning the clocks of networked devices to a common reference so that distributed computations, transactions, and logs share a consistent temporal frame. It is achieved through hierarchical protocols such as the Network Time Protocol (NTP), which provides millisecond-level accuracy over the internet, and the Precision Time Protocol (PTP / IEEE 1588), which achieves sub-microsecond accuracy within local networks using hardware timestamping. Accurate time synchronisation is foundational to consensus algorithms, cryptographic certificate validation, distributed transaction ordering, and real-time control systems.",
+  "definition": "Time synchronisation is the process of coordinating the clocks of networked devices to a shared reference time so that distributed computations, transactions, events, and audit logs share a consistent and ordered temporal frame. It is realised through layered protocols including the Network Time Protocol (NTP / RFC 5905), which delivers millisecond-level accuracy over wide-area networks via a stratum hierarchy anchored to atomic or GPS reference clocks, and the Precision Time Protocol (PTP / IEEE 1588-2019), which exploits hardware timestamping in network interface cards and PTP-aware switches to achieve sub-microsecond accuracy on local and carrier-grade networks. Accurate time synchronisation is foundational to distributed consensus algorithms, cryptographic certificate validation, financial transaction sequencing, telecommunications frequency synchronisation, and industrial real-time control; conversely, clock skew and drift are root causes of ordering anomalies, replay attacks, split-brain conditions, and regulatory non-compliance.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:infra-network-and-comms",
-      "label": "Network and Communication"
+      "id": "urn:ngm:class:network-protocol",
+      "label": "Network Protocol"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:network-time-protocol",
+        "label": "Network Time Protocol"
+      },
+      {
+        "id": "urn:ngm:class:precision-time-protocol",
+        "label": "Precision Time Protocol"
+      },
+      {
+        "id": "urn:ngm:class:clock-drift",
+        "label": "Clock Drift"
+      },
+      {
+        "id": "urn:ngm:class:stratum-hierarchy",
+        "label": "Stratum Hierarchy"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:reference-clock",
+        "label": "Reference Clock"
+      },
+      {
+        "id": "urn:ngm:class:gps-receiver",
+        "label": "GPS Receiver"
+      },
+      {
+        "id": "urn:ngm:class:atomic-clock",
+        "label": "Atomic Clock"
+      },
+      {
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:consensus-protocol",
@@ -26,20 +60,84 @@
       {
         "id": "urn:ngm:class:distributed-system",
         "label": "Distributed System"
+      },
+      {
+        "id": "urn:ngm:class:event-ordering",
+        "label": "Event Ordering"
+      },
+      {
+        "id": "urn:ngm:class:digital-certificate",
+        "label": "Digital Certificate"
+      },
+      {
+        "id": "urn:ngm:class:audit-logging",
+        "label": "Audit Logging"
       }
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:network-protocol",
-        "label": "Network Protocol"
+        "id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:timestamp",
+        "label": "Timestamp"
       }
     ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:logical-clock",
+        "label": "Logical Clock"
+      },
+      {
+        "id": "urn:ngm:class:vector-clock",
+        "label": "Vector Clock"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:cryptographic-protocol",
+        "label": "Cryptographic Protocol"
+      },
+      {
+        "id": "urn:ngm:class:iot-device-management",
+        "label": "IoT Device Management"
+      }
+    ],
     "uses": [],
-    "supports": [],
-    "standardizedBy": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:real-time-system",
+        "label": "Real-Time System"
+      },
+      {
+        "id": "urn:ngm:class:financial-trading-infrastructure",
+        "label": "Financial Trading Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:industrial-automation",
+        "label": "Industrial Automation"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      },
+      {
+        "id": "urn:ngm:class:ieee",
+        "label": "IEEE"
+      },
+      {
+        "id": "urn:ngm:class:itu-t",
+        "label": "ITU-T"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -47,8 +145,20 @@
         "label": "Network Synchronization"
       },
       {
-        "id": "urn:ngm:class:timestamp",
-        "label": "Timestamp"
+        "id": "urn:ngm:class:clock-skew",
+        "label": "Clock Skew"
+      },
+      {
+        "id": "urn:ngm:class:latency",
+        "label": "Latency"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
       }
     ]
   },

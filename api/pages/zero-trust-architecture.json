@@ -4,17 +4,17 @@
   "slug": "zero-trust-architecture",
   "public": true,
   "classIri": "urn:ngm:class:zero-trust-architecture",
-  "domain": "infrastructure",
-  "definition": "Zero Trust Architecture (ZTA) is a cybersecurity paradigm that abandons the notion of a trusted network perimeter and instead requires explicit, continuous verification of every principal (user, device, service) and every request, regardless of its network origin. Grounded in the principle of least-privilege access, ZTA evaluates contextual signals \u2014 identity, device health posture, location, and behavioural risk \u2014 at each access decision point, enforced by policy engines and micro-segmentation. The model was formalised in NIST SP 800-207 and is increasingly mandated by government and enterprise security frameworks as a response to lateral movement threats and cloud-native architectures that dissolve traditional perimeter boundaries.",
+  "domain": "security",
+  "definition": "Zero Trust Architecture (ZTA) is a cybersecurity paradigm that abandons the notion of a trusted network perimeter and instead requires explicit, continuous verification of every principal \u2014 user, device, or service \u2014 for every request regardless of network origin. Grounded in least-privilege access, ZTA evaluates contextual signals including identity assertions, device health posture, behavioural risk, and data sensitivity at each access decision point, enforced by a Policy Decision Point and Policy Enforcement Point pair operating across micro-segmented environments. Formalised in NIST SP 800-207, ZTA has become the dominant enterprise security reference model in response to the dissolution of traditional perimeter boundaries by cloud-native, remote-work, and supply-chain threat vectors.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:infra-security-and-identity",
-      "label": "Security and Identity"
+      "id": "urn:ngm:class:cybersecurity",
+      "label": "Cybersecurity"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [
@@ -25,13 +25,61 @@
       {
         "id": "urn:ngm:class:identity-and-access-management",
         "label": "Identity and Access Management"
+      },
+      {
+        "id": "urn:ngm:class:multi-factor-authentication",
+        "label": "Multi-Factor Authentication"
+      },
+      {
+        "id": "urn:ngm:class:device-attestation",
+        "label": "Device Attestation"
       }
     ],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:least-privilege-access",
+        "label": "Least Privilege Access"
+      },
+      {
+        "id": "urn:ngm:class:continuous-monitoring",
+        "label": "Continuous Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:just-in-time-access",
+        "label": "Just-in-Time Access"
+      }
+    ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:software-defined-perimeter",
+        "label": "Software-Defined Perimeter"
+      },
+      {
+        "id": "urn:ngm:class:secure-access-service-edge",
+        "label": "Secure Access Service Edge"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:perimeter-security",
+        "label": "Perimeter Security"
+      },
+      {
+        "id": "urn:ngm:class:virtual-private-network",
+        "label": "Virtual Private Network"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-driven-threat-detection",
+        "label": "AI-Driven Threat Detection"
+      },
+      {
+        "id": "urn:ngm:class:federated-identity",
+        "label": "Federated Identity"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:policy-engine",
@@ -40,15 +88,53 @@
       {
         "id": "urn:ngm:class:access-control",
         "label": "Access Control"
+      },
+      {
+        "id": "urn:ngm:class:micro-segmentation",
+        "label": "Micro-Segmentation"
+      },
+      {
+        "id": "urn:ngm:class:mutual-tls",
+        "label": "Mutual TLS"
+      },
+      {
+        "id": "urn:ngm:class:behavioural-analytics",
+        "label": "Behavioural Analytics"
       }
     ],
-    "supports": [],
-    "standardizedBy": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:cloud-security",
+        "label": "Cloud Security"
+      },
+      {
+        "id": "urn:ngm:class:privileged-access-management",
+        "label": "Privileged Access Management"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:nist-sp-800-207",
+        "label": "NIST SP 800-207"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
         "id": "urn:ngm:class:confidential-computing",
         "label": "Confidential Computing"
+      },
+      {
+        "id": "urn:ngm:class:endpoint-detection-and-response",
+        "label": "Endpoint Detection and Response"
+      },
+      {
+        "id": "urn:ngm:class:security-information-and-event-management",
+        "label": "Security Information and Event Management"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-security",
+        "label": "Supply Chain Security"
       }
     ]
   },

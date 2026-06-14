@@ -4,8 +4,8 @@
   "slug": "interaction-design",
   "public": true,
   "classIri": "urn:ngm:class:interaction-design",
-  "domain": "web",
-  "definition": "Interaction design is the practice of defining and shaping the behaviour of interactive systems \u2014 how they respond to user inputs, how they communicate state, and how they guide users through tasks \u2014 with the goal of creating products that are usable, efficient, and satisfying. It encompasses the design of interaction flows, feedback mechanisms, affordances, timing, and error recovery patterns across digital and physical interfaces. Interaction design is distinguished from graphic or visual design by its focus on dynamic behaviour over time rather than static visual composition, and from software engineering by its concern for the human experience of system use rather than the technical implementation of system function.",
+  "domain": "spatial-computing",
+  "definition": "Interaction design (IxD) is the practice of defining and shaping the dynamic behaviour of interactive systems \u2014 determining how they respond to user inputs, communicate state and feedback, and guide users through task sequences \u2014 with the goal of creating products that are usable, efficient, and satisfying across diverse contexts. It encompasses the design of interaction flows, affordances, timing, error recovery patterns, and multi-modal input modalities across digital, physical, spatial, and conversational interfaces. Interaction design is distinguished from visual design by its focus on behaviour over time rather than static composition, and from software engineering by its concern for the human experience of system use rather than technical implementation. As interactive surfaces expand into AR, VR, voice, and AI-mediated interfaces, the field continuously develops new design vocabularies, prototyping methods, and evaluation heuristics to address emergent interaction paradigms.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:human-computer-interaction",
@@ -13,11 +13,41 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.74,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:interaction-flow",
+        "label": "Interaction Flow"
+      },
+      {
+        "id": "urn:ngm:class:affordance",
+        "label": "Affordance"
+      },
+      {
+        "id": "urn:ngm:class:feedback-mechanism",
+        "label": "Feedback Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:error-recovery",
+        "label": "Error Recovery"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cognitive-science",
+        "label": "Cognitive Science"
+      },
+      {
+        "id": "urn:ngm:class:user-research",
+        "label": "User Research"
+      },
+      {
+        "id": "urn:ngm:class:prototyping",
+        "label": "Prototyping"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:product-design",
@@ -30,29 +60,59 @@
       {
         "id": "urn:ngm:class:inclusive-design",
         "label": "Inclusive Design"
+      },
+      {
+        "id": "urn:ngm:class:conversational-interface",
+        "label": "Conversational Interface"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:spatial-user-interface",
+        "label": "Spatial User Interface"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-interface",
+        "label": "Natural Language Interface"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-interaction",
+        "label": "Multimodal Interaction"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:information-architecture",
         "label": "Information Architecture"
       },
       {
-        "id": "urn:ngm:class:feedback-mechanism",
-        "label": "Feedback Mechanism"
+        "id": "urn:ngm:class:mental-model",
+        "label": "Mental Model"
       },
       {
-        "id": "urn:ngm:class:cognitive-science",
-        "label": "Cognitive Science"
+        "id": "urn:ngm:class:task-analysis",
+        "label": "Task Analysis"
+      },
+      {
+        "id": "urn:ngm:class:wireframing",
+        "label": "Wireframing"
       }
     ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human Computer Interaction"
+      },
+      {
+        "id": "urn:ngm:class:user-experience-design",
+        "label": "User Experience Design"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:user-experience",
@@ -69,6 +129,10 @@
       {
         "id": "urn:ngm:class:usability-testing",
         "label": "Usability Testing"
+      },
+      {
+        "id": "urn:ngm:class:design-system",
+        "label": "Design System"
       }
     ]
   },

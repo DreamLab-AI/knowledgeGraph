@@ -4,7 +4,7 @@
   "slug": "wi-fi",
   "public": true,
   "classIri": "urn:ngm:class:wi-fi",
-  "domain": "general",
+  "domain": "infrastructure",
   "definition": "Wi-Fi is a family of wireless networking technologies based on the IEEE 802.11 standards that allow devices to connect to a local area network and the internet. It is managed by the Wi-Fi Alliance.",
   "subClassOf": [
     {

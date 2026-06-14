@@ -4,34 +4,86 @@
   "slug": "knowledge-management",
   "public": true,
   "classIri": "urn:ngm:class:knowledge-management",
-  "domain": "spatial-computing",
-  "definition": "Knowledge Management is the systematic practice of capturing, organising, sharing, and applying the collective knowledge of an organisation or platform to improve decision-making and innovation. In AI-augmented and spatial computing contexts it encompasses knowledge graphs, ontologies, semantic search, and retrieval-augmented generation pipelines that make tacit and explicit knowledge discoverable and reusable by both human users and autonomous agents.",
+  "domain": "data",
+  "definition": "Knowledge Management (KM) is the systematic discipline of identifying, capturing, organising, storing, sharing, and applying the collective explicit and tacit knowledge assets of an organisation or distributed community to improve decision-making, innovation, and operational effectiveness. It integrates organisational theory, information science, and technology \u2014 spanning knowledge repositories, ontologies, semantic search, and communities of practice \u2014 to prevent knowledge loss, enable reuse, and accelerate learning. Modern KM increasingly employs AI-augmented techniques such as knowledge graphs, retrieval-augmented generation, and large language model reasoning to make both structured and unstructured knowledge discoverable and actionable by human and autonomous agents alike. It is a mature field with established frameworks (SECI, DIKW hierarchy, Cynefin) and dedicated standards bodies.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:sc-content-and-assets",
-      "label": "Content and Assets"
+      "id": "urn:ngm:class:information-management",
+      "label": "Information Management"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "emerging",
+  "qualityScore": 0.72,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:knowledge-repository",
+        "label": "Knowledge Repository"
+      },
+      {
+        "id": "urn:ngm:class:community-of-practice",
+        "label": "Community of Practice"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-audit",
+        "label": "Knowledge Audit"
+      },
+      {
+        "id": "urn:ngm:class:lessons-learned",
+        "label": "Lessons Learned"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:metadata",
+        "label": "Metadata"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:retrieval-augmented-generation",
         "label": "Retrieval-Augmented Generation"
       },
       {
-        "id": "urn:ngm:class:semantic-web-linked-data-standard",
-        "label": "Semantic Web"
+        "id": "urn:ngm:class:organisational-learning",
+        "label": "Organisational Learning"
+      },
+      {
+        "id": "urn:ngm:class:decision-support-system",
+        "label": "Decision Support System"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:data-management",
+        "label": "Data Management"
+      },
+      {
+        "id": "urn:ngm:class:document-management",
+        "label": "Document Management"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:semantic-web-linked-data-standard",
+        "label": "Semantic Web"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:knowledge-graph",
@@ -40,6 +92,18 @@
       {
         "id": "urn:ngm:class:knowledge-representation",
         "label": "Knowledge Representation"
+      },
+      {
+        "id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "id": "urn:ngm:class:taxonomy",
+        "label": "Taxonomy"
+      },
+      {
+        "id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
       }
     ],
     "supports": [],
@@ -47,8 +111,16 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:ontology",
-        "label": "Ontology"
+        "id": "urn:ngm:class:information-architecture",
+        "label": "Information Architecture"
+      },
+      {
+        "id": "urn:ngm:class:enterprise-search",
+        "label": "Enterprise Search"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
       }
     ]
   },

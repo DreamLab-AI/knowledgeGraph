@@ -63,7 +63,7 @@ public:: true
   "@type": "Class",
   "label": "VeChain",
   "definition": "VeChain is a public blockchain platform oriented toward supply-chain management and enterprise applications. It uses a proof-of-authority consensus model in which a limited set of authorised validators produce blocks, prioritising throughput and predictability for business use. The platform employs a dual-token design, separating the asset used to hold value from the token used to pay for transaction costs.",
-  "domain": "vechain",
+  "domain": "blockchain",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

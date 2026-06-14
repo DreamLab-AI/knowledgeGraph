@@ -1,14 +1,68 @@
 - ### Definition
-  - Content-addressed storage is a storage model that identifies data by a [[Cryptographic Hash]] of its contents, using [[Merkle Tree]] structures to enable efficient integrity verification, and forming the foundational storage layer for systems such as [[IPFS]] and [[Arweave]].
+  - Content-addressed storage (CAS) is a storage paradigm in which data is identified and retrieved by a [[Cryptographic Hash]] of its contents rather than by a file path or network location. Because the identifier is computed deterministically from the data, identical content always produces the same address, enabling automatic [[Data Deduplication]] and [[Tamper Evidence]] without trust in any intermediary. CAS forms the foundational retrieval model for systems such as [[IPFS]], [[Git]], [[Arweave]], and [[Filecoin]], and underpins [[Blockchain Data Layer]] off-chain references where a smart contract need only store a compact hash to commit verifiably to arbitrary data.
+
+- ### Overview
+  - Content-addressed storage inverts the conventional naming relationship between data and identity. In traditional [[Location-Addressed Storage]], a URL or file path designates where data lives — the same path may return different data at different times, and the same data may exist at many paths simultaneously. In a content-addressed system, the path *is* the data: the address H(data) is computed by a [[Hash Function]] such as SHA-256 or Blake3, and any node that recomputes the hash from received bytes can verify correctness independently.
+  - This self-certifying property is fundamental to decentralised and trustless architectures. No certificate authority, central registry, or DNS resolver is required; any peer holding the bytes can serve them verifiably. The practical implications are:
+    - **Integrity**: data corruption or tampering is detected automatically on retrieval.
+    - **Deduplication**: identical content stored by millions of peers occupies one logical slot in the address space.
+    - **Cacheability**: content at a given address is immutable, so any cache is always correct.
+    - **Censorship resistance**: data can be served by any reachable peer without relying on the original publisher's infrastructure.
+
+- ### Key Mechanisms
+  - **[[Hash Function]] application** — A write operation computes `address = H(data)` using a collision-resistant function. SHA-1 was used in early [[Git]]; SHA-256 and Blake3 are prevalent in modern systems. The [[Content Identifier]] (CID) format used by [[IPFS]] encodes the hash function, hash length, and digest in a self-describing multiformat.
+  - **[[Merkle Tree]] structures** — For structured or hierarchical data, each internal node hashes its children, producing a root hash that commits to the entire dataset. Partial inclusion proofs require only O(log n) hashes, enabling efficient [[Cryptographic Verification]] of individual chunks within large files or state tries.
+  - **[[Distributed Hash Table]] (DHT)** — In peer-to-peer CAS networks, a DHT maps content addresses to the network locations of peers that hold the corresponding data, enabling routing without a central directory. [[IPFS]] uses the Kademlia DHT variant.
+  - **[[KZG Commitment]]** — A polynomial commitment scheme used in Ethereum's danksharding design (EIP-4844) to commit to blob data via a constant-size proof, extending content addressing to zero-knowledge-friendly primitives and bridging CAS into [[Zero-Knowledge Proof]] workflows.
+  - **Chunking and block graphs** — Large files are split into fixed or variable-size chunks, each independently addressed. A root block references child blocks by their hashes, forming a directed acyclic graph (DAG) akin to a [[Merkle Tree]]. [[IPFS]] implements this as UnixFS over IPLD (InterPlanetary Linked Data).
+
+- ### Applications and Use Cases
+  - **[[Version Control]]** — [[Git]] pioneered production CAS: every blob, tree, commit, and tag is identified by its SHA-1 (SHA-256 in newer repos) hash. Distributed collaboration across millions of developers relies on this model for conflict-free merging and branch integrity.
+  - **[[Decentralized Storage]] networks** — [[IPFS]] provides a global peer-to-peer CAS layer; [[Filecoin]] adds economic incentives for persistent pinning; [[Arweave]] encodes permanent storage in a blockchain-based endowment model. Together they form the decentralised web storage stack.
+  - **Blockchain off-chain data** — Smart contracts on Ethereum, Solana, and similar platforms store only hashes on-chain, with the corresponding data served via [[IPFS]] or centralised gateways. This pattern, called content-addressed off-chain storage, keeps on-chain costs minimal while preserving verifiability.
+  - **AI/ML dataset and model versioning** — Tools such as DVC (Data Version Control) and Hugging Face Hub apply CAS to large numerical datasets and model weights, enabling [[Reproducible Builds]] of training pipelines and [[Verifiable Provenance]] for AI artefacts. [[Model Registry]] systems increasingly adopt CAS to track lineage.
+  - **[[Dataset Versioning]]** — Scientific data repositories (e.g. Zenodo, Software Heritage) use content addressing to archive immutable snapshots of research artefacts, ensuring long-term reproducibility independent of institutional URL stability.
+  - **Backup and deduplication** — Enterprise backup systems (Veeam, Restic, Borg) use CAS internally for block-level deduplication, significantly reducing storage footprint for incremental backups without relying on file-path metadata.
+  - **Container image layers** — Docker and OCI container images are stored as content-addressed layers; the image manifest references layer digests, ensuring that pulling an image by digest always retrieves the exact same filesystem layers regardless of registry state.
+  - **Software supply chain** — Package managers such as npm (integrity field), Nix, and Guix use content hashes to pin dependencies, forming the cryptographic backbone of [[Reproducible Builds]] and supply-chain attestation.
 
 - ### Relationships
-  - Content-addressed storage depends on [[Cryptographic Hash]] functions (typically SHA-256 or Blake3) to generate deterministic content identifiers (CIDs), organises hierarchical data using [[Merkle Tree]] structures for efficient partial verification, and implements the [[Content Addressing]] retrieval model. It enables [[Data Availability]] guarantees by allowing any node holding the data to serve it verifiably, and supports [[Cryptographic Verification]] without trusted intermediaries. It is the architectural basis for [[Decentralized Storage]] and [[Distributed Storage]] networks.
+  - uses:: [[Cryptographic Hash]]
+  - uses:: [[Merkle Tree]]
+  - uses:: [[Content Addressing]]
+  - uses:: [[Distributed Hash Table]]
+  - uses:: [[KZG Commitment]]
+  - enables:: [[Data Availability]]
+  - enables:: [[Cryptographic Verification]]
+  - enables:: [[Data Deduplication]]
+  - enables:: [[Tamper Evidence]]
+  - enables:: [[Reproducible Builds]]
+  - enables:: [[Verifiable Provenance]]
+  - implements:: [[IPFS]]
+  - implements:: [[Git]]
+  - implements:: [[Arweave]]
+  - implements:: [[Filecoin]]
+  - requires:: [[Hash Function]]
+  - requires:: [[Content Identifier]]
+  - supports:: [[Decentralized Storage]]
+  - supports:: [[Distributed Storage]]
+  - supports:: [[Peer-to-Peer Network]]
+  - supports:: [[Version Control]]
+  - contrastsWith:: [[Location-Addressed Storage]]
+  - contrastsWith:: [[Object Storage]]
+  - bridges-to:: [[Blockchain Data Layer]]
+  - bridges-to:: [[Dataset Versioning]]
+  - bridges-to:: [[Model Registry]]
+  - relatedTo:: [[Zero-Knowledge Proof]]
+  - relatedTo:: [[Data Integrity]]
 
-- ### Content
-  - The concept of content-addressing predates the internet—Linus Torvalds applied it systematically in Git in 2005, where every commit, tree, and blob is identified by its SHA-1 hash, enabling distributed version control without a central authority. Academic work on content-addressable network (CAN) overlays and distributed hash tables (DHTs) in the early 2000s established the theoretical basis for large-scale peer-to-peer retrieval.
+- ### Standards & Context
+  - **Multiformats / CID** — The Content Identifier (CID) specification, maintained by the IPFS / Protocol Labs ecosystem, defines a self-describing format encoding the codec, hash function, and digest. CIDv1 uses multibase encoding and is the standard reference format across IPLD-based systems.
+  - **IPLD (InterPlanetary Linked Data)** — A data model and codec family for content-addressed structured data. IPLD defines DAG-CBOR, DAG-JSON, and DAG-PB codecs, enabling typed links between content-addressed blocks and forming the semantic layer atop raw CAS.
+  - **OCI Image Specification** — The Open Container Initiative (OCI) Image Specification mandates content addressing for image layers using SHA-256 digests, making CAS a de facto standard in cloud-native infrastructure.
+  - **Ethereum EIP-4844 (Proto-Danksharding)** — Introduced blob-carrying transactions whose data is committed via KZG polynomial commitments; the blob sidecar is pruned after a retention window but the commitment (a form of content address) remains on-chain permanently.
+  - **Software Heritage** — An international initiative archiving all public source code using SHA-1/SHA-256 content addresses, providing a [[Verifiable Provenance]] layer for the global software commons.
 
-  - In a content-addressed system, a write operation computes H(data) = address, then stores the data at that address across one or more nodes. A read operation takes an address, retrieves data from any node holding it, recomputes the hash, and rejects the data if the hash does not match—ensuring tamper-evidence without trusting the serving node. Merkle trees extend this to structured data: each internal node hashes its children, allowing a root hash to commit to an entire dataset while enabling efficient proof of inclusion for individual chunks.
-
-  - Content-addressed storage is significant in decentralised web and blockchain contexts because it severs the dependency between data location and data identity, enabling censorship-resistant publishing (IPFS), permanent storage incentivised by blockchain payments (Filecoin, Arweave), and verifiable off-chain data references in smart contract systems. It also enables efficient deduplication in backup and scientific data repositories.
-
-  - In 2024–2025, content-addressed storage is seeing rapid adoption in AI infrastructure for reproducible dataset and model versioning (DVC, Hugging Face datasets), in Ethereum's danksharding roadmap where blob data is addressed by KZG commitments, and in decentralised AI training pipelines that require verifiable provenance for training data. CID-based interoperability is maturing across IPFS, Filecoin, and Ethereum, creating a unified verifiable storage substrate.
+- ### Provenance
+  - sources:: IPFS documentation (docs.ipfs.tech); Git internals documentation (git-scm.com); Ethereum EIP-4844 specification; OCI Image Specification; Protocol Labs IPLD documentation; Restic backup documentation
+  - updated:: 2026-06-13

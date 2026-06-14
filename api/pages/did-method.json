@@ -4,8 +4,8 @@
   "slug": "did-method",
   "public": true,
   "classIri": "urn:ngm:class:did-method",
-  "domain": "identity",
-  "definition": "A specification that defines how a particular type of decentralised identifier is created, resolved, updated, and deactivated. Each method describes the syntax and operations for DIDs anchored to a specific system such as a blockchain or registry.",
+  "domain": "security",
+  "definition": "A DID Method is a specification that defines how a particular type of Decentralised Identifier (DID) is created, resolved, updated, and deactivated, encoding the syntax rules and CRUD semantics for identifiers anchored to a specific verifiable data registry, ledger, or peer-to-peer network. Each method is identified by a unique method name embedded in the DID string (e.g. did:web, did:key, did:ion), and must provide a compliant DID Resolver that retrieves the corresponding DID Document containing public keys and service endpoints. DID Methods are standardised through the W3C DID Core specification and registered in the DIF DID Method Registry, enabling interoperable self-sovereign identity across heterogeneous systems. The diversity of methods reflects trade-offs between decentralisation guarantees, key management complexity, ledger dependency, and resolver performance.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:decentralized-identity",
@@ -13,31 +13,125 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.75,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:decentralized-identity",
-        "label": "Decentralized Identity"
+        "id": "urn:ngm:class:decentralized-identifier",
+        "label": "Decentralised Identifier"
+      },
+      {
+        "id": "urn:ngm:class:did-document",
+        "label": "DID Document"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-data-registry",
+        "label": "Verifiable Data Registry"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
       }
     ],
     "enables": [
       {
+        "id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self-Sovereign Identity"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      },
+      {
         "id": "urn:ngm:class:digital-identity",
         "label": "Digital Identity"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-authentication",
+        "label": "Decentralised Authentication"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:w3c-did-core",
+        "label": "W3C DID Core"
+      },
+      {
+        "id": "urn:ngm:class:did-resolution-protocol",
+        "label": "DID Resolution Protocol"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:oauth",
+        "label": "OAuth"
+      },
+      {
+        "id": "urn:ngm:class:centralised-identity-provider",
+        "label": "Centralised Identity Provider"
+      },
+      {
+        "id": "urn:ngm:class:x-509-certificate",
+        "label": "X.509 Certificate"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:ipfs",
+        "label": "IPFS"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cryptographic-key-pair",
+        "label": "Cryptographic Key Pair"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "id": "urn:ngm:class:content-addressing",
+        "label": "Content Addressing"
+      }
+    ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:w3c",
+        "label": "W3C"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-identity-foundation",
+        "label": "Decentralized Identity Foundation"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:decentralized-identity",
+        "label": "Decentralized Identity"
+      },
+      {
+        "id": "urn:ngm:class:did-resolver",
+        "label": "DID Resolver"
+      },
+      {
+        "id": "urn:ngm:class:identity-wallet",
+        "label": "Identity Wallet"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
+    ]
   },
   "wikilinks": [
     {

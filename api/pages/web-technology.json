@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:web-technology",
   "domain": "infrastructure",
-  "definition": "The distributed infrastructure, protocols, and frameworks underpinning the World Wide Web and decentralised Web3 applications, including content-addressed storage (IPFS), blockchain naming systems (ENS), decentralised identity (DIDs), and smart-contract-governed application hosting that shifts data ownership from centralised providers to users.",
+  "definition": "Web Technology encompasses the protocols, standards, frameworks, and distributed infrastructure that enable the authoring, delivery, and interaction of resources on the World Wide Web and its decentralised successors. It spans the foundational internet protocols (HTTP/HTTPS, DNS, TLS), client-side and server-side execution environments (browsers, JavaScript runtimes, WebAssembly), and the emerging Web3 stack (content-addressed storage, blockchain naming, decentralised identity) that shifts data sovereignty from centralised operators to individual users. Together these layers define how information is addressed, transmitted, rendered, and secured across heterogeneous networked devices at planetary scale.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-computing-and-cloud",
@@ -13,10 +13,30 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "emerging",
+  "qualityScore": 0.72,
+  "maturity": "established",
   "relationships": {
     "hasPart": [
+      {
+        "id": "urn:ngm:class:http",
+        "label": "HTTP"
+      },
+      {
+        "id": "urn:ngm:class:html",
+        "label": "HTML"
+      },
+      {
+        "id": "urn:ngm:class:css",
+        "label": "CSS"
+      },
+      {
+        "id": "urn:ngm:class:javascript",
+        "label": "JavaScript"
+      },
+      {
+        "id": "urn:ngm:class:webassembly",
+        "label": "WebAssembly"
+      },
       {
         "id": "urn:ngm:class:ipfs",
         "label": "IPFS"
@@ -30,7 +50,20 @@
         "label": "Web3"
       }
     ],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:dns",
+        "label": "DNS"
+      },
+      {
+        "id": "urn:ngm:class:tls",
+        "label": "TLS"
+      },
+      {
+        "id": "urn:ngm:class:tcp-ip",
+        "label": "TCP/IP"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:decentralised-identity",
@@ -39,12 +72,42 @@
       {
         "id": "urn:ngm:class:content-addressing",
         "label": "Content Addressing"
+      },
+      {
+        "id": "urn:ngm:class:progressive-web-app",
+        "label": "Progressive Web App"
+      },
+      {
+        "id": "urn:ngm:class:real-time-communication",
+        "label": "Real-Time Communication"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:native-application",
+        "label": "Native Application"
+      },
+      {
+        "id": "urn:ngm:class:centralized-cloud",
+        "label": "Centralised Cloud"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:smart-contract",
@@ -53,12 +116,46 @@
       {
         "id": "urn:ngm:class:decentralized-storage",
         "label": "Decentralized Storage"
+      },
+      {
+        "id": "urn:ngm:class:rest-api",
+        "label": "REST API"
+      },
+      {
+        "id": "urn:ngm:class:graphql",
+        "label": "GraphQL"
       }
     ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:w3c",
+        "label": "W3C"
+      },
+      {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      },
+      {
+        "id": "urn:ngm:class:whatwg",
+        "label": "WHATWG"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:web-browser",
+        "label": "Web Browser"
+      },
+      {
+        "id": "urn:ngm:class:web-server",
+        "label": "Web Server"
+      },
+      {
+        "id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

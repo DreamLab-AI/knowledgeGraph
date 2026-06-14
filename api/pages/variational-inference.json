@@ -4,40 +4,103 @@
   "slug": "variational-inference",
   "public": true,
   "classIri": "urn:ngm:class:variational-inference",
-  "domain": "artificial-intelligence",
-  "definition": "Variational inference is a Bayesian machine learning method that approximates complex, intractable posterior distributions using a simpler parameterised family by optimising the evidence lower bound (ELBO) via gradient-based methods. Rather than sampling from the posterior as in Markov chain Monte Carlo approaches, variational inference reframes posterior estimation as an optimisation problem, making it tractable for large-scale models. It is the foundational inference mechanism underlying Variational Autoencoders and is widely applied in probabilistic topic modelling, latent variable models, and Bayesian deep learning.",
+  "domain": "machine-learning",
+  "definition": "Variational inference (VI) is a family of algorithms in Bayesian machine learning that approximates intractable posterior distributions p(z|x) by positing a simpler, tractable family of distributions q(z; \u03c6) and optimising its parameters to minimise the Kullback-Leibler divergence from the true posterior, equivalently maximising the Evidence Lower BOund (ELBO) on the log marginal likelihood. By recasting probabilistic inference as an optimisation problem rather than a sampling problem, VI achieves scalability to large datasets and high-dimensional latent spaces that Markov Chain Monte Carlo methods cannot easily reach. The reparameterisation trick enables gradient-based ELBO optimisation through stochastic estimates, making VI the foundational inference engine for Variational Autoencoders, hierarchical generative models, and probabilistic programming systems. VI trades posterior exactness for computational tractability, and is the preferred method wherever fast, amortised, or online Bayesian inference is required.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique"
+      "id": "urn:ngm:class:bayesian-inference",
+      "label": "Bayesian Inference"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.75,
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
         "id": "urn:ngm:class:bayesian-inference",
         "label": "Bayesian Inference"
+      },
+      {
+        "id": "urn:ngm:class:kullback-leibler-divergence",
+        "label": "Kullback-Leibler Divergence"
+      },
+      {
+        "id": "urn:ngm:class:evidence-lower-bound",
+        "label": "Evidence Lower Bound"
+      },
+      {
+        "id": "urn:ngm:class:probabilistic-graphical-model",
+        "label": "Probabilistic Graphical Model"
       }
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:vae",
-        "label": "VAE"
+        "id": "urn:ngm:class:variational-autoencoder",
+        "label": "Variational Autoencoder"
       },
       {
         "id": "urn:ngm:class:generative-model",
         "label": "Generative Model"
+      },
+      {
+        "id": "urn:ngm:class:probabilistic-programming",
+        "label": "Probabilistic Programming"
+      },
+      {
+        "id": "urn:ngm:class:amortised-inference",
+        "label": "Amortised Inference"
+      },
+      {
+        "id": "urn:ngm:class:latent-diffusion-model",
+        "label": "Latent Diffusion Model"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:markov-chain-monte-carlo",
+        "label": "Markov Chain Monte Carlo"
+      },
+      {
+        "id": "urn:ngm:class:expectation-propagation",
+        "label": "Expectation Propagation"
+      },
+      {
+        "id": "urn:ngm:class:laplace-approximation",
+        "label": "Laplace Approximation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:neural-network-architecture",
+        "label": "Neural Network Architecture"
+      },
+      {
+        "id": "urn:ngm:class:information-theory",
+        "label": "Information Theory"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:reparameterisation-trick",
+        "label": "Reparameterisation Trick"
+      },
+      {
+        "id": "urn:ngm:class:stochastic-gradient-descent",
+        "label": "Stochastic Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:mean-field-approximation",
+        "label": "Mean-Field Approximation"
+      },
+      {
+        "id": "urn:ngm:class:normalising-flows",
+        "label": "Normalising Flows"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
@@ -47,8 +110,20 @@
         "label": "Deep Learning"
       },
       {
-        "id": "urn:ngm:class:neural-network-latent-space",
-        "label": "latent space"
+        "id": "urn:ngm:class:latent-variable-model",
+        "label": "Latent Variable Model"
+      },
+      {
+        "id": "urn:ngm:class:probabilistic-topic-modelling",
+        "label": "Probabilistic Topic Modelling"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-deep-learning",
+        "label": "Bayesian Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:expectation-maximisation",
+        "label": "Expectation-Maximisation"
       }
     ]
   },

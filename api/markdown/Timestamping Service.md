@@ -55,7 +55,7 @@ public:: true
   "@type": "Class",
   "label": "Timestamping Service",
   "definition": "A timestamping service is a system that issues verifiable proof that a piece of data existed at or before a particular time, often using cryptographic methods.",
-  "domain": "cryptography",
+  "domain": "security",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

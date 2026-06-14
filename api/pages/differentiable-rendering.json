@@ -4,8 +4,8 @@
   "slug": "differentiable-rendering",
   "public": true,
   "classIri": "urn:ngm:class:differentiable-rendering",
-  "domain": "artificial-intelligence",
-  "definition": "Differentiable rendering is a class of rendering algorithms that formulate the image formation process in a manner that admits the computation of gradients of pixel values with respect to scene parameters \u2014 including geometry, materials, lighting, and camera pose. By backpropagating through the rendering pipeline, these methods enable gradient-based optimisation to reconstruct 3D scenes from 2D observations, train neural scene representations, and perform inverse rendering. Differentiable rendering forms a bridge between classical computer graphics and deep learning, enabling end-to-end training of 3D-aware generative and perception models.",
+  "domain": "machine-learning",
+  "definition": "Differentiable rendering is a class of algorithms that reformulate the image-formation pipeline so that pixel values are differentiable with respect to scene parameters \u2014 including geometry, surface materials, lighting, and camera pose. By enabling backpropagation through the rendering process, these methods support gradient-based optimisation for inverse rendering, scene reconstruction from 2D observations, and end-to-end training of 3D-aware neural models. The field bridges classical computer graphics with deep learning, treating rendering as a learnable, differentiable module within a larger neural architecture.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-technique",
@@ -13,11 +13,20 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
+  "qualityScore": 0.74,
   "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:automatic-differentiation",
+        "label": "Automatic Differentiation"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning-framework",
+        "label": "Deep Learning Framework"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:3-d-reconstruction",
@@ -26,12 +35,55 @@
       {
         "id": "urn:ngm:class:neural-radiance-field",
         "label": "Neural Radiance Field"
+      },
+      {
+        "id": "urn:ngm:class:inverse-rendering",
+        "label": "Inverse Rendering"
+      },
+      {
+        "id": "urn:ngm:class:object-pose-estimation",
+        "label": "Object Pose Estimation"
+      },
+      {
+        "id": "urn:ngm:class:3-d-generative-model",
+        "label": "3D Generative Model"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:volumetric-rendering",
+        "label": "Volumetric Rendering"
+      },
+      {
+        "id": "urn:ngm:class:physically-based-rendering",
+        "label": "Physically Based Rendering"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:classical-rendering",
+        "label": "Classical Rendering"
+      },
+      {
+        "id": "urn:ngm:class:non-differentiable-simulation",
+        "label": "Non-Differentiable Simulation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-driving",
+        "label": "Autonomous Driving"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:gradient-descent",
@@ -40,6 +92,18 @@
       {
         "id": "urn:ngm:class:ray-tracing",
         "label": "Ray Tracing"
+      },
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "id": "urn:ngm:class:rasterisation",
+        "label": "Rasterisation"
+      },
+      {
+        "id": "urn:ngm:class:monte-carlo-integration",
+        "label": "Monte Carlo Integration"
       }
     ],
     "supports": [],
@@ -53,6 +117,18 @@
       {
         "id": "urn:ngm:class:computer-vision",
         "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:neural-scene-representation",
+        "label": "Neural Scene Representation"
+      },
+      {
+        "id": "urn:ngm:class:implicit-neural-representation",
+        "label": "Implicit Neural Representation"
+      },
+      {
+        "id": "urn:ngm:class:bidirectional-reflectance-distribution-function",
+        "label": "Bidirectional Reflectance Distribution Function"
       }
     ]
   },

@@ -5,38 +5,164 @@
   "public": true,
   "classIri": "urn:ngm:class:manipulator",
   "domain": "robotics",
-  "definition": "A manipulator is a robot consisting of a series of segments, typically moving in a serial or parallel kinematic chain, with an end-effector for performing tasks.",
+  "definition": "A manipulator is a mechanically programmable device comprising a series of rigid links connected by actuated joints arranged in a serial or parallel kinematic chain, capable of displacing objects or tools through a defined workspace. The distal end carries an end-effector that interfaces directly with the task environment, enabling grasping, welding, assembly, or other physical interactions. Manipulators are parameterised by their degrees of freedom, workspace geometry, payload capacity, and control architecture, and are the foundational actuator subsystem in industrial, collaborative, and service robots. The ISO 8373:2021 standard defines a manipulator as the machine mechanism of a robot.",
   "subClassOf": [
-    {
-      "id": "urn:ngm:class:robo-robot-type",
-      "label": "Robot Type"
-    },
     {
       "id": "urn:ngm:class:robot",
       "label": "Robot"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "established",
+  "qualityScore": 0.74,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:end-effector",
+        "label": "End-Effector"
+      },
+      {
+        "id": "urn:ngm:class:joint",
+        "label": "Joint"
+      },
+      {
+        "id": "urn:ngm:class:link",
+        "label": "Link"
+      },
+      {
+        "id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      },
+      {
+        "id": "urn:ngm:class:wrist",
+        "label": "Wrist"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:robot-controller",
+        "label": "Robot Controller"
+      },
+      {
+        "id": "urn:ngm:class:kinematic-model",
+        "label": "Kinematic Model"
+      },
+      {
+        "id": "urn:ngm:class:trajectory-planning",
+        "label": "Trajectory Planning"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:pick-and-place",
+        "label": "Pick and Place"
+      },
+      {
+        "id": "urn:ngm:class:assembly-automation",
+        "label": "Assembly Automation"
+      },
+      {
+        "id": "urn:ngm:class:teleoperation",
+        "label": "Teleoperation"
+      },
+      {
+        "id": "urn:ngm:class:robot-welding",
+        "label": "Robot Welding"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:forward-kinematics",
+        "label": "Forward Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:inverse-kinematics",
+        "label": "Inverse Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:iso-8373-2021",
+        "label": "ISO 8373:2021"
+      },
+      {
+        "id": "urn:ngm:class:denavit-hartenberg-convention",
+        "label": "Denavit-Hartenberg Convention"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:mobile-robot",
+        "label": "Mobile Robot"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-mobile-manipulator",
+        "label": "Autonomous Mobile Manipulator"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:force-torque-sensor",
+        "label": "Force-Torque Sensor"
+      },
+      {
+        "id": "urn:ngm:class:servo-motor",
+        "label": "Servo Motor"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:human-robot-collaboration",
+        "label": "Human-Robot Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:flexible-manufacturing",
+        "label": "Flexible Manufacturing"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [
       {
-        "id": "urn:ngm:class:robot-rb-0001",
-        "label": "Robot (RB-0001)"
+        "id": "urn:ngm:class:robot",
+        "label": "Robot"
+      },
+      {
+        "id": "urn:ngm:class:robotic-system",
+        "label": "Robotic System"
       }
     ],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:collaborative-robot",
+        "label": "Collaborative Robot"
+      },
+      {
+        "id": "urn:ngm:class:parallel-robot",
+        "label": "Parallel Robot"
+      },
+      {
+        "id": "urn:ngm:class:redundant-manipulator",
+        "label": "Redundant Manipulator"
+      }
+    ]
   },
   "wikilinks": [
     {

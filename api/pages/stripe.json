@@ -4,8 +4,8 @@
   "slug": "stripe",
   "public": true,
   "classIri": "urn:ngm:class:stripe",
-  "domain": "general",
-  "definition": "Stripe is a company that provides payment processing infrastructure and software for online and in-person transactions.",
+  "domain": "finance",
+  "definition": "Stripe is a financial technology company founded in 2010 that provides programmable payment infrastructure, APIs, and financial services software enabling businesses to accept online and in-person payments, manage subscriptions, issue cards, and access embedded financial tooling. It operates as a payment service provider and merchant acquirer, abstracting the complexity of card networks, banking rails, and compliance into developer-friendly interfaces. Stripe's platform spans payment processing, revenue management, fraud detection, tax computation, and banking-as-a-service, making it a foundational layer of the internet economy. Its products serve businesses ranging from independent developers to large enterprises across more than 135 countries.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:payment-network",
@@ -13,31 +13,134 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:payment-api",
+        "label": "Payment API"
+      },
+      {
+        "id": "urn:ngm:class:fraud-detection",
+        "label": "Fraud Detection"
+      },
+      {
+        "id": "urn:ngm:class:subscription-billing",
+        "label": "Subscription Billing"
+      },
+      {
+        "id": "urn:ngm:class:card-issuing",
+        "label": "Card Issuing"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:payment-network",
         "label": "Payment Network"
+      },
+      {
+        "id": "urn:ngm:class:banking-rail",
+        "label": "Banking Rail"
+      },
+      {
+        "id": "urn:ngm:class:kyc-aml-compliance",
+        "label": "KYC/AML Compliance"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:financial-services",
         "label": "Financial Services"
+      },
+      {
+        "id": "urn:ngm:class:e-commerce",
+        "label": "E-Commerce"
+      },
+      {
+        "id": "urn:ngm:class:marketplace-platform",
+        "label": "Marketplace Platform"
+      },
+      {
+        "id": "urn:ngm:class:embedded-finance",
+        "label": "Embedded Finance"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:paypal",
+        "label": "PayPal"
+      },
+      {
+        "id": "urn:ngm:class:adyen",
+        "label": "Adyen"
+      },
+      {
+        "id": "urn:ngm:class:square",
+        "label": "Square"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:rest-api",
+        "label": "REST API"
+      },
+      {
+        "id": "urn:ngm:class:webhook",
+        "label": "Webhook"
+      },
+      {
+        "id": "urn:ngm:class:tokenisation",
+        "label": "Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      },
+      {
+        "id": "urn:ngm:class:open-banking",
+        "label": "Open Banking"
+      }
+    ],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:financial-services",
+        "label": "Financial Services"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:merchant-acquiring",
+        "label": "Merchant Acquiring"
+      },
+      {
+        "id": "urn:ngm:class:payment-gateway",
+        "label": "Payment Gateway"
+      },
+      {
+        "id": "urn:ngm:class:pci-dss",
+        "label": "PCI DSS"
+      }
+    ]
   },
   "wikilinks": [
     {

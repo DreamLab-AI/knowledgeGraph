@@ -4,8 +4,8 @@
   "slug": "remote-work",
   "public": true,
   "classIri": "urn:ngm:class:remote-work",
-  "domain": "infrastructure",
-  "definition": "Remote work is a work arrangement in which employees perform their job duties from a location outside the traditional office \u2014 typically from home, co-working spaces, or while travelling \u2014 using digital communication and collaboration tools to maintain productivity and team cohesion. It encompasses fully remote models, hybrid arrangements combining in-office and remote days, and asynchronous-first cultures that decouple work from synchronous presence. The practice has been normalised at scale since the COVID-19 pandemic, reshaping organisational design, real estate strategies, and talent acquisition globally.",
+  "domain": "distributed-collaboration",
+  "definition": "Remote work is a work arrangement in which employees perform their professional duties from locations outside the traditional employer premises \u2014 including home offices, co-working spaces, or while travelling \u2014 using digital communication, collaboration, and productivity tools to maintain output and team cohesion. It encompasses fully remote models, hybrid arrangements that blend in-office and remote days, and asynchronous-first organisational cultures that decouple productive work from synchronous physical presence. The practice spans individual contributor roles through entire distributed organisations and intersects deeply with workforce management, digital infrastructure provisioning, cybersecurity policy, and organisational design. Remote work has become a core dimension of modern knowledge-work governance, influencing talent acquisition geographically, commercial real estate demand, and the architecture of digital workplace platforms.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:distributed-work",
@@ -13,11 +13,24 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.75,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:identity-and-access-management",
+        "label": "Identity and Access Management"
+      },
+      {
+        "id": "urn:ngm:class:endpoint-security",
+        "label": "Endpoint Security"
+      },
+      {
+        "id": "urn:ngm:class:digital-communication-infrastructure",
+        "label": "Digital Communication Infrastructure"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:distributed-collaboration",
@@ -26,12 +39,55 @@
       {
         "id": "urn:ngm:class:asynchronous-collaboration",
         "label": "Asynchronous Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:global-talent-acquisition",
+        "label": "Global Talent Acquisition"
+      },
+      {
+        "id": "urn:ngm:class:work-life-integration",
+        "label": "Work-Life Integration"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:broadband-internet",
+        "label": "Broadband Internet"
+      },
+      {
+        "id": "urn:ngm:class:cloud-storage",
+        "label": "Cloud Storage"
+      },
+      {
+        "id": "urn:ngm:class:project-management-software",
+        "label": "Project Management Software"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:collocated-work",
+        "label": "Collocated Work"
+      },
+      {
+        "id": "urn:ngm:class:open-plan-office",
+        "label": "Open-Plan Office"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-meeting-assistant",
+        "label": "AI Meeting Assistant"
+      },
+      {
+        "id": "urn:ngm:class:virtual-reality-workspace",
+        "label": "Virtual Reality Workspace"
+      },
+      {
+        "id": "urn:ngm:class:zero-trust-security",
+        "label": "Zero-Trust Security"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:collaboration-platform",
@@ -44,6 +100,18 @@
       {
         "id": "urn:ngm:class:digital-workplace-platform",
         "label": "Digital Workplace Platform"
+      },
+      {
+        "id": "urn:ngm:class:video-conferencing",
+        "label": "Video Conferencing"
+      },
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:virtual-private-network",
+        "label": "Virtual Private Network"
       }
     ],
     "supports": [],
@@ -65,6 +133,18 @@
       {
         "id": "urn:ngm:class:workforce-management",
         "label": "Workforce Management"
+      },
+      {
+        "id": "urn:ngm:class:hybrid-work",
+        "label": "Hybrid Work"
+      },
+      {
+        "id": "urn:ngm:class:organisational-design",
+        "label": "Organisational Design"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
       }
     ]
   },

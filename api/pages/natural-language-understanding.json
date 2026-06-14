@@ -4,20 +4,50 @@
   "slug": "natural-language-understanding",
   "public": true,
   "classIri": "urn:ngm:class:natural-language-understanding",
-  "domain": "artificial-intelligence",
-  "definition": "Natural Language Understanding (NLU) is the subfield of Natural Language Processing concerned with enabling machines to comprehend the meaning, intent, and pragmatic context of human language beyond surface-level syntax. NLU tasks include semantic role labelling, named entity recognition, coreference resolution, intent classification, and entailment inference, all of which require models to build structured representations of utterance meaning. Modern NLU systems are predominantly built on large pre-trained Transformer architectures such as BERT and its derivatives, which learn contextualised word representations from large corpora.",
+  "domain": "ai",
+  "definition": "Natural Language Understanding (NLU) is the subfield of Natural Language Processing dedicated to enabling machines to comprehend the meaning, intent, and pragmatic context of human language input beyond surface-level syntax. Core NLU tasks include semantic role labelling, named entity recognition, coreference resolution, intent classification, relation extraction, and natural language inference, all requiring models to construct structured semantic representations of utterance meaning. Modern NLU systems are predominantly built on large pre-trained Transformer architectures such as BERT and its derivatives, which learn contextualised word representations from massive corpora via self-supervised objectives. NLU serves as the comprehension layer in conversational AI, information extraction pipelines, question answering systems, and dialogue management frameworks.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ai-research-area",
-      "label": "AI Research Area"
+      "id": "urn:ngm:class:natural-language-processing",
+      "label": "Natural Language Processing"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:named-entity-recognition",
+        "label": "Named Entity Recognition"
+      },
+      {
+        "id": "urn:ngm:class:semantic-role-labelling",
+        "label": "Semantic Role Labelling"
+      },
+      {
+        "id": "urn:ngm:class:coreference-resolution",
+        "label": "Coreference Resolution"
+      },
+      {
+        "id": "urn:ngm:class:intent-classification",
+        "label": "Intent Classification"
+      },
+      {
+        "id": "urn:ngm:class:relation-extraction",
+        "label": "Relation Extraction"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:semantic-parsing",
+        "label": "Semantic Parsing"
+      },
+      {
+        "id": "urn:ngm:class:syntactic-parsing",
+        "label": "Syntactic Parsing"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:question-answering",
@@ -26,20 +56,54 @@
       {
         "id": "urn:ngm:class:sentiment-analysis",
         "label": "Sentiment Analysis"
+      },
+      {
+        "id": "urn:ngm:class:dialogue-management",
+        "label": "Dialogue Management"
+      },
+      {
+        "id": "urn:ngm:class:information-extraction",
+        "label": "Information Extraction"
+      },
+      {
+        "id": "urn:ngm:class:machine-translation",
+        "label": "Machine Translation"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:natural-language-generation",
+        "label": "Natural Language Generation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-ai",
+        "label": "Multimodal AI"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:transformer",
         "label": "Transformer"
       },
       {
-        "id": "urn:ngm:class:named-entity-recognition",
-        "label": "Named Entity Recognition"
+        "id": "urn:ngm:class:word-embedding",
+        "label": "Word Embedding"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
       }
     ],
     "supports": [],
@@ -48,9 +112,26 @@
       {
         "id": "urn:ngm:class:natural-language-processing",
         "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:computational-linguistics",
+        "label": "Computational Linguistics"
       }
     ],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:conversational-ai",
+        "label": "Conversational AI"
+      },
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

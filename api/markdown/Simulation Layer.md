@@ -63,7 +63,7 @@ public:: true
   "@type": "Class",
   "label": "Simulation Layer",
   "definition": "The Simulation Layer is the cross-cutting stratum that models system or environment behaviour to test and predict outcomes without acting on the real world. It sits above compute and model strata it uses and supports research, evaluation, and planning. It contains simulators, environment models, and the scenarios run within them.",
-  "domain": "simulation",
+  "domain": "infrastructure",
   "maturity": "emerging",
   "qualityScore": 0.7,
   "subClassOf": [

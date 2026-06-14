@@ -4,8 +4,8 @@
   "slug": "distributed-hash-table",
   "public": true,
   "classIri": "urn:ngm:class:distributed-hash-table",
-  "domain": "infrastructure",
-  "definition": "A distributed hash table (DHT) is a decentralised data structure that partitions a key-value store across a set of participating nodes so that each node is responsible for only a fraction of the total keyspace, with lookups routed through a structured overlay network in O(log n) hops without any central coordinator. Nodes join and leave dynamically, and the system automatically rebalances responsibility for keys through a consistent hashing or XOR-metric routing algorithm. DHTs are the foundational lookup and routing primitive of peer-to-peer networks, enabling applications such as decentralised content addressing, bootstrapping, and peer discovery.",
+  "domain": "distributed-systems",
+  "definition": "A distributed hash table (DHT) is a decentralised data structure that partitions a key-value store across a set of participating nodes so that each node is responsible for only a fraction of the total keyspace, with lookups routed through a structured overlay network in O(log n) hops without any central coordinator. Nodes join and leave dynamically, and the system rebalances key responsibility through consistent hashing or an XOR-metric routing algorithm, tolerating high churn without degrading availability. DHTs form the foundational lookup and routing primitive of peer-to-peer networks, underpinning decentralised content addressing, peer discovery, and distributed storage at global scale.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:distributed-system",
@@ -13,11 +13,37 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.74,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:routing-table",
+        "label": "Routing Table"
+      },
+      {
+        "id": "urn:ngm:class:keyspace-partition",
+        "label": "Keyspace Partition"
+      },
+      {
+        "id": "urn:ngm:class:node-identifier",
+        "label": "Node Identifier"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:consistent-hashing",
+        "label": "Consistent Hashing"
+      },
+      {
+        "id": "urn:ngm:class:network-node",
+        "label": "Network Node"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:ipfs",
@@ -30,37 +56,111 @@
       {
         "id": "urn:ngm:class:distributed-storage",
         "label": "Distributed Storage"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-peer-discovery",
+        "label": "Decentralised Peer Discovery"
+      },
+      {
+        "id": "urn:ngm:class:censorship-resistant-communication",
+        "label": "Censorship-Resistant Communication"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:structured-overlay-network",
+        "label": "Structured Overlay Network"
+      },
+      {
+        "id": "urn:ngm:class:bootstrap-protocol",
+        "label": "Bootstrap Protocol"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:kademlia-dht",
+        "label": "Kademlia DHT"
+      },
+      {
+        "id": "urn:ngm:class:chord-protocol",
+        "label": "Chord Protocol"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:centralised-index",
+        "label": "Centralised Index"
+      },
+      {
+        "id": "urn:ngm:class:unstructured-overlay-network",
+        "label": "Unstructured Overlay Network"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-identifier",
+        "label": "Decentralised Identifier"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:libp2p",
         "label": "libp2p"
       },
       {
-        "id": "urn:ngm:class:hash-function",
-        "label": "Hash Function"
+        "id": "urn:ngm:class:xor-metric",
+        "label": "XOR Metric"
+      },
+      {
+        "id": "urn:ngm:class:k-bucket",
+        "label": "k-Bucket"
       }
     ],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
+    "supports": [
       {
-        "id": "urn:ngm:class:kademlia-dht",
-        "label": "Kademlia DHT"
+        "id": "urn:ngm:class:bittorrent",
+        "label": "BitTorrent"
       },
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "id": "urn:ngm:class:filecoin",
+        "label": "Filecoin"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
       {
         "id": "urn:ngm:class:peer-to-peer-network",
         "label": "Peer-to-Peer Network"
       },
       {
+        "id": "urn:ngm:class:overlay-network",
+        "label": "Overlay Network"
+      }
+    ],
+    "relatedTo": [
+      {
         "id": "urn:ngm:class:gossip-protocol",
         "label": "Gossip Protocol"
+      },
+      {
+        "id": "urn:ngm:class:eclipse-attack",
+        "label": "Eclipse Attack"
+      },
+      {
+        "id": "urn:ngm:class:sybil-attack",
+        "label": "Sybil Attack"
+      },
+      {
+        "id": "urn:ngm:class:replication",
+        "label": "Replication"
       }
     ]
   },

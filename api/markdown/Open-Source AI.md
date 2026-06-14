@@ -28,52 +28,175 @@ alias:: Open Source AI
   "@id": "urn:ngm:class:open-source-ai",
   "@type": "Class",
   "label": "Open-Source AI",
-  "definition": "Open-Source AI refers to artificial intelligence models, training datasets, evaluation benchmarks, and software tooling whose weights, source code, data pipelines, and training procedures are publicly released under licences that permit inspection, reproduction, modification, and redistribution. The degree of openness varies considerably: some releases provide weights only (open-weights), others include full training code and data (fully open), while a further subset additionally discloses evaluation methodology and safety assessments. Open-source AI accelerates scientific reproducibility, enables community fine-tuning and red-teaming, and reduces barriers to deployment—but also raises governance questions about dual-use risk and safety assurance that closed-release pipelines handle through access controls.",
+  "definition": "Open-Source AI denotes artificial intelligence systems—including model weights, training code, datasets, evaluation benchmarks, and inference tooling—released under licences that permit public inspection, reproduction, modification, and redistribution. The degree of openness varies widely: fully open releases expose weights, training data, and procedures; open-weights releases share weights and inference code while withholding training data; and open-API systems expose neither. This transparency gradient determines reproducibility, auditability, and dual-use risk, and is formalised by frameworks such as the OSI Open Source AI Definition. Open-source AI accelerates community safety research, enables fine-tuning on proprietary data, and reduces vendor lock-in, while simultaneously raising governance questions about capability proliferation and misuse.",
   "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:ai-research-area",
-      "label": "AI Research Area"
+      "@id": "urn:ngm:class:open-source-software",
+      "label": "Open Source Software"
     }
   ],
+  "sameAs": [
+    {"@id": "urn:ngm:class:open-weights-ai", "label": "Open-Weights AI"},
+    {"@id": "urn:ngm:class:open-ai-ecosystem", "label": "Open AI Ecosystem"}
+  ],
   "relations": {
-    "relatedTo": [
+    "hasPart": [
       {"@id": "urn:ngm:class:model-weights", "label": "Model Weights"},
+      {"@id": "urn:ngm:class:training-dataset", "label": "Training Dataset"},
+      {"@id": "urn:ngm:class:inference-engine", "label": "Inference Engine"},
+      {"@id": "urn:ngm:class:evaluation-benchmark", "label": "Evaluation Benchmark"}
+    ],
+    "partOf": [
       {"@id": "urn:ngm:class:open-source-software", "label": "Open Source Software"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:open-source-licence", "label": "Open Source Licence"},
+      {"@id": "urn:ngm:class:compute-infrastructure", "label": "Compute Infrastructure"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:fine-tuning", "label": "Fine Tuning"},
-      {"@id": "urn:ngm:class:benchmark-standard", "label": "Benchmark Standard"}
+      {"@id": "urn:ngm:class:red-teaming", "label": "Red Teaming"},
+      {"@id": "urn:ngm:class:model-quantisation", "label": "Model Quantisation"},
+      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"},
+      {"@id": "urn:ngm:class:edge-ai", "label": "Edge AI"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:large-language-model", "label": "Large Language Model"},
+      {"@id": "urn:ngm:class:neural-network-architecture", "label": "Neural Network Architecture"}
     ],
     "supports": [
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"}
+      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
+      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},
+      {"@id": "urn:ngm:class:scientific-reproducibility", "label": "Scientific Reproducibility"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:osi-open-source-ai-definition", "label": "OSI Open Source AI Definition"},
+      {"@id": "urn:ngm:class:eu-ai-act", "label": "EU AI Act"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:proprietary-ai", "label": "Proprietary AI"},
+      {"@id": "urn:ngm:class:closed-source-model", "label": "Closed-Source Model"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:model-hub", "label": "Model Hub"},
+      {"@id": "urn:ngm:class:community-fine-tuning", "label": "Community Fine-Tuning"},
+      {"@id": "urn:ngm:class:dual-use-risk", "label": "Dual-Use Risk"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"},
+      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}
     ]
   },
-  "qualityScore": 0.75,
-  "maturity": "emerging"
+  "quality": 0.74,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-13T00:00:00Z",
+    "inferenceRule": "ManualEnrichment"
+  }
 }
 ```
 
-
 - ### Definition
-  - Open-Source AI refers to artificial intelligence models, training datasets, evaluation benchmarks, and software tooling whose weights, source code, data pipelines, and training procedures are publicly released under licences that permit inspection, reproduction, modification, and redistribution. The degree of openness varies considerably: some releases provide weights only (open-weights), others include full training code and data (fully open), while a further subset additionally discloses evaluation methodology and safety assessments. Open-source AI accelerates scientific reproducibility, enables community fine-tuning and red-teaming, and reduces barriers to deployment—but also raises governance questions about dual-use risk and safety assurance that closed-release pipelines handle through access controls.
+  - Open-Source AI refers to artificial intelligence systems—spanning [[Model Weights]], [[Training Dataset]], [[Evaluation Benchmark]], inference tooling, and supporting code—released under licences that permit public inspection, reproduction, modification, and redistribution. The concept is closely allied to [[Open Source Software]] principles but extends them into the specific challenges of machine learning: reproducibility requires access not just to code but to training data, compute environments, and hyperparameter configurations. The degree of openness varies considerably—from fully open stacks that expose every artefact, to open-weights releases that share parameters while withholding training data, to proprietary [[Large Language Model]] APIs that expose nothing. This gradient is formalised in frameworks such as the [[OSI Open Source AI Definition]] and shapes how regulators such as the [[EU AI Act]] classify obligations for [[AI Governance]].
+
+- ### Overview
+  - Open-Source AI emerged as a distinct movement when large-scale [[Neural Network Architecture]] research produced artefacts—weights, checkpoints, tokenisers—that were themselves valuable independently of the training code. Early community models such as GPT-J and BLOOM demonstrated that publicly released weights enabled a wave of downstream experimentation impossible with API-only access. Since then, model families including LLaMA, Mistral, Falcon, Gemma, and Phi have anchored a broad ecosystem of derivative fine-tunes, quantised variants, and specialised adaptations.
+  - The movement matters for several interconnected reasons:
+    - **Scientific reproducibility**: peer-reviewed AI claims can only be independently verified if the evaluated system is accessible. Open releases anchor [[Scientific Reproducibility]] in machine learning research.
+    - **Safety and red-teaming**: community [[Red Teaming]] of publicly accessible models has surfaced vulnerabilities and biases that closed-API testing misses, feeding back into improved safety alignment.
+    - **Sovereignty and vendor independence**: organisations deploying AI in air-gapped, regulated, or resource-constrained environments depend on open models to avoid cloud-API lock-in.
+    - **Equity of access**: open weights lower the cost of entry for researchers, startups, and public-sector bodies in lower-resource settings.
+  - These benefits must be weighed against [[Dual-Use Risk]]: frontier-capability open models lower the barrier for misuse, making capability thresholds and staged-release policies a live policy question.
+
+- ### Key Components
+  - **Model weights and checkpoints**
+    - The numerical parameters of a trained neural network; the central artefact of any open-weights release. See [[Model Weights]].
+  - **Training code and pipelines**
+    - Scripts, frameworks, and data loaders needed to reproduce training from scratch. Full openness requires this layer; open-weights releases often omit it.
+  - **Training datasets**
+    - Curated corpora (text, image, multimodal) used during pre-training and instruction-tuning. Dataset openness is the most contested dimension—most frontier models withhold training data even when releasing weights. See [[Training Dataset]].
+  - **Evaluation benchmarks**
+    - Standardised tests (e.g. MMLU, HellaSwag, HumanEval) for measuring capability, safety, and alignment. Open benchmarks enable [[Evaluation Benchmark]] comparison across proprietary and open models.
+  - **Inference engines**
+    - Optimised runtimes (llama.cpp, vLLM, Ollama, TensorRT-LLM) that run open model weights efficiently on consumer or server hardware. See [[Inference Engine]] and [[Model Quantisation]].
+  - **Fine-tuning frameworks**
+    - Tools (LoRA, QLoRA, PEFT, Axolotl) enabling adaptation of a base model to downstream tasks without full retraining. Central to the [[Fine Tuning]] ecosystem that open weights unlock.
+  - **Licences**
+    - Legal instruments governing use and redistribution. Permissive licences (Apache 2.0, MIT) contrast with use-restricted licences (LLaMA community licence, Gemma Terms of Service) that limit commercial or governmental use. See [[Open Source Licence]].
+  - **Model cards and datasheets**
+    - Documentation artefacts disclosing intended use, training procedure, known limitations, and safety evaluations. Required by several governance frameworks as a transparency minimum.
+  - **Model hubs**
+    - Centralised repositories (Hugging Face Hub, Ollama Library, Kaggle Models) that distribute open weights, datasets, and evaluation results. See [[Model Hub]].
+
+- ### Applications and Use Cases
+  - **Domain-specific fine-tuning**
+    - Organisations fine-tune open base models on proprietary corpora (legal, medical, financial) to create specialised assistants without sharing sensitive data with external API providers. See [[Community Fine-Tuning]].
+  - **Edge and on-device deployment**
+    - Quantised open models (4-bit, 8-bit GGUF formats) run on consumer GPUs, mobile devices, and embedded systems, enabling [[Edge AI]] without cloud connectivity.
+  - **Federated and privacy-preserving learning**
+    - Open architectures enable [[Federated Learning]] across distributed data owners, with shared model weights but no raw data centralisation.
+  - **Safety and alignment research**
+    - Academic and independent safety researchers use open models as the primary substrate for interpretability, mechanistic analysis, jailbreak research, and adversarial robustness studies. Open access is a prerequisite for this work.
+  - **Regulatory auditing**
+    - Open-weight models that disclose training procedures can be audited by third-party assessors, enabling conformity assessments under the [[EU AI Act]] and emerging national AI standards.
+  - **Academic benchmarking**
+    - Reproducible AI research requires open models for apples-to-apples comparison; community [[Evaluation Benchmark]] leaderboards depend on uniform access to evaluated systems.
+  - **Multilingual and low-resource NLP**
+    - Community-led open projects (BLOOM, MaLA-500, Aya) extend coverage to languages underserved by commercially driven closed models.
+  - **Creative and generative tooling**
+    - Open image, audio, and video generation models (Stable Diffusion, Whisper, MusicGen) have seeded large creative-tool ecosystems inaccessible under closed-API terms.
+  - **Sovereign AI infrastructure**
+    - National AI programmes in France, UAE, UAE, South Korea, and others have built sovereign [[Large Language Model]] capability on open foundations to reduce strategic dependence on US or Chinese proprietary platforms.
+
+- ### Relationships
+  - hasPart:: [[Model Weights]]
+  - hasPart:: [[Training Dataset]]
+  - hasPart:: [[Inference Engine]]
+  - hasPart:: [[Evaluation Benchmark]]
+  - partOf:: [[Open Source Software]]
+  - requires:: [[Open Source Licence]]
+  - requires:: [[Compute Infrastructure]]
+  - enables:: [[Fine Tuning]]
+  - enables:: [[Red Teaming]]
+  - enables:: [[Model Quantisation]]
+  - enables:: [[Federated Learning]]
+  - enables:: [[Edge AI]]
+  - dependsOn:: [[Large Language Model]]
+  - dependsOn:: [[Neural Network Architecture]]
+  - supports:: [[AI Governance]]
+  - supports:: [[AI Safety]]
+  - supports:: [[Scientific Reproducibility]]
+  - standardizedBy:: [[OSI Open Source AI Definition]]
+  - standardizedBy:: [[EU AI Act]]
+  - contrastsWith:: [[Proprietary AI]]
+  - contrastsWith:: [[Closed-Source Model]]
+  - relatedTo:: [[Model Hub]]
+  - relatedTo:: [[Community Fine-Tuning]]
+  - relatedTo:: [[Dual-Use Risk]]
+  - bridges-to:: [[Distributed Collaboration]]
+  - bridges-to:: [[Regulatory Compliance]]
+
+- ### Standards and Governance Context
+  - **OSI Open Source AI Definition (OSAID)**
+    - The Open Source Initiative published a formal definition of Open Source AI distinguishing fully open systems (weights + data + code) from partial releases. The OSAID shapes procurement language, regulatory interpretation, and community labelling practices. See [[OSI Open Source AI Definition]].
+  - **EU AI Act**
+    - The EU AI Act (Regulation 2024/1689) creates a tiered obligation regime. General-purpose AI models with genuinely open weights and parameters benefit from reduced documentation obligations compared to closed frontier models, provided cumulative training compute remains below defined thresholds. See [[EU AI Act]] and [[Regulatory Compliance]].
+  - **NIST AI Risk Management Framework**
+    - NIST RMF guidance on transparency and accountability is directly applicable to open-source AI evaluation; the framework encourages open documentation of model cards and datasheets as risk controls.
+  - **Capability thresholds and staged release**
+    - Policy debate has converged on the concept of evaluating models against capability benchmarks before unrestricted open release—particularly for models with potential for biological, chemical, radiological, or cybersecurity misuse. This intersects with [[AI Safety]] and [[Dual-Use Risk]].
+  - **Licence compatibility**
+    - Combining open-source model weights with datasets or tooling carrying incompatible licences creates legal uncertainty. The [[Open Source Licence]] landscape for AI includes Apache 2.0, MIT, GPL variants, Creative Commons for data, and bespoke restrictive licences (LLaMA community, Gemma) that do not meet the OSI Open Source Definition.
+  - **Watermarking and provenance**
+    - Emerging technical standards (C2PA, SynthID) for provenance tracking of AI-generated content are being extended to open-model outputs as a mitigation for misuse without restricting access.
 
 - ### Semantic Classification
   - owl-class:: open-source-ai:Open-Source AI
   - owl-role:: Concept
 
-- ### Relationships
-  - relatedTo [[Model Weights]]
-  - relatedTo [[Open Source Software]]
-  - enables [[Fine Tuning]]
-  - enables [[Benchmark Standard]]
-  - supports [[AI Governance]]
-
-- ### Content
-  - Open-source AI exists on a spectrum of openness. Fully open releases include model weights, training data, data processing code, training scripts, hyperparameter configurations, and evaluation results under licences that permit unrestricted use. Open-weights releases—such as many large language model families—provide weights and inference code but retain proprietary training data and procedures. This distinction matters for reproducibility, auditability, and legal compliance: EU AI Act provisions treat open-source general-purpose AI models with genuinely open weights differently from closed proprietary systems with respect to documentation obligations.
-  - The practical benefits of open-source AI include community-driven safety research through red-teaming, adaptation to domain-specific tasks via fine-tuning on local or proprietary datasets without API dependency, and deployment in air-gapped environments where cloud API access is not available. Open-source model families such as LLaMA, Mistral, Falcon, and various multimodal architectures have catalysed a broad ecosystem of derivative models, fine-tuning frameworks, quantisation tools, and inference engines.
-  - Governance of open-source AI is an active policy debate. Concerns about dual-use misuse of frontier-capability open-weight models have led some researchers and policy bodies to propose tiered access mechanisms, capability evaluations before public release, and watermarking obligations. Conversely, proponents argue that openness enables broader safety scrutiny and distributes AI capability more equitably. Frameworks such as the OSI Open Source AI Definition attempt to standardise what constitutes genuine openness, influencing how regulators and procurement bodies classify AI systems.
-
 - ### Provenance
   - sources::
+  - updated:: 2026-06-13
   - migration-date:: 2026-05-19T00:00:00Z

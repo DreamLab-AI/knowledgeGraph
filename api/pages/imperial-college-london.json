@@ -4,30 +4,138 @@
   "slug": "imperial-college-london",
   "public": true,
   "classIri": "urn:ngm:class:imperial-college-london",
-  "domain": "imperial-college-london",
-  "definition": "Imperial College London is a public research university in London specialising in science, engineering, medicine and business. Founded in 1907 through the merger of several colleges and granted independent university status in 2007, it is consistently ranked among the leading universities worldwide. It is known for research strength in areas including artificial intelligence, bioengineering, climate science and public health. The college is a member of the Russell Group of research-intensive UK universities.",
+  "domain": "ai",
+  "definition": "Imperial College London is a public research university in South Kensington, London, specialising in science, engineering, medicine, and business, founded in 1907 through the merger of the Royal College of Science, the Royal School of Mines, and the City and Guilds College. It gained full independence from the University of London on its centenary in 2007, and is consistently ranked among the world's top universities for STEM disciplines. The college is internationally recognised for research across artificial intelligence, machine learning, bioengineering, robotics, quantum computing, climate science, and computational biology. As a founding member of the Russell Group and a partner in numerous global research consortia, Imperial serves as a key node in the United Kingdom's knowledge and innovation infrastructure.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:owl-thing",
-      "label": "owl:Thing"
+      "id": "urn:ngm:class:research-institution",
+      "label": "Research Institution"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:department-of-computing",
+        "label": "Department of Computing"
+      },
+      {
+        "id": "urn:ngm:class:faculty-of-medicine",
+        "label": "Faculty of Medicine"
+      },
+      {
+        "id": "urn:ngm:class:white-city-innovation-district",
+        "label": "White City Innovation District"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:research-funding",
+        "label": "Research Funding"
+      },
+      {
+        "id": "urn:ngm:class:high-performance-computing",
+        "label": "High Performance Computing"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:technology-transfer",
+        "label": "Technology Transfer"
+      },
+      {
+        "id": "urn:ngm:class:open-science",
+        "label": "Open Science"
+      },
+      {
+        "id": "urn:ngm:class:spin-out-company",
+        "label": "Spin-out Company"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-research",
+        "label": "Blockchain Research"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence-research",
+        "label": "Artificial Intelligence Research"
+      },
+      {
+        "id": "urn:ngm:class:open-source-software",
+        "label": "Open Source Software"
+      },
+      {
+        "id": "urn:ngm:class:interdisciplinary-research",
+        "label": "Interdisciplinary Research"
+      }
+    ],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:russell-group",
+        "label": "Russell Group"
+      },
+      {
+        "id": "urn:ngm:class:united-kingdom-research-base",
+        "label": "United Kingdom Research Base"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:university-of-cambridge",
+        "label": "University of Cambridge"
+      },
+      {
+        "id": "urn:ngm:class:university-of-edinburgh",
+        "label": "University of Edinburgh"
+      },
+      {
+        "id": "urn:ngm:class:oxford-university",
+        "label": "University of Oxford"
+      },
+      {
+        "id": "urn:ngm:class:alan-turing-institute",
+        "label": "Alan Turing Institute"
+      },
+      {
+        "id": "urn:ngm:class:ukri",
+        "label": "UKRI"
+      }
+    ]
   },
   "wikilinks": [
     {

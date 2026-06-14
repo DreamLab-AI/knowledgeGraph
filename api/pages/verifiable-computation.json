@@ -4,7 +4,7 @@
   "slug": "verifiable-computation",
   "public": true,
   "classIri": "urn:ngm:class:verifiable-computation",
-  "domain": "cryptographic",
+  "domain": "security",
   "definition": "Techniques that let a party outsource a computation and receive a proof that the result is correct, allowing efficient verification without redoing the work.",
   "subClassOf": [
     {

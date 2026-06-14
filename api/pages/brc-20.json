@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:brc-20",
   "domain": "blockchain",
-  "definition": "An experimental token standard on Bitcoin that records fungible token operations as JSON inscriptions using ordinal theory.",
+  "definition": "BRC-20 is an experimental fungible token standard on the Bitcoin blockchain that encodes deploy, mint, and transfer operations as JSON-formatted Ordinals inscriptions written onto individual satoshis. Token balances are not enforced by Bitcoin consensus rules but are instead computed off-chain by indexers that parse inscription data in sequential ordinal order. Proposed by the pseudonymous developer @domo in March 2023, BRC-20 was the first widely adopted approach to creating transferable fungible tokens natively on Bitcoin without requiring a sidechain or layer-2 network. Its simplicity and permissionless nature drove rapid experimentation but also exposed limitations around scalability, indexer consensus, and on-chain fee pressure.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:token-standard",
@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "emerging",
   "relationships": {
     "hasPart": [],
@@ -21,23 +21,121 @@
       {
         "id": "urn:ngm:class:ordinals",
         "label": "Ordinals"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol",
+        "label": "Bitcoin Proof-of-Work Protocol"
+      },
+      {
+        "id": "urn:ngm:class:segwit",
+        "label": "SegWit"
+      },
+      {
+        "id": "urn:ngm:class:taproot",
+        "label": "Taproot"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:fungible-token",
         "label": "Fungible Token"
+      },
+      {
+        "id": "urn:ngm:class:token-minting",
+        "label": "Token Minting"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-exchange",
+        "label": "Decentralised Exchange"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:ordinals-indexer",
+        "label": "Ordinals Indexer"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-node",
+        "label": "Bitcoin Node"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:erc-20",
+        "label": "ERC-20"
+      },
+      {
+        "id": "urn:ngm:class:spl-token",
+        "label": "SPL Token"
+      },
+      {
+        "id": "urn:ngm:class:runes-protocol",
+        "label": "Runes Protocol"
+      },
+      {
+        "id": "urn:ngm:class:src-20",
+        "label": "SRC-20"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:tokenisation",
+        "label": "Tokenisation"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:json",
+        "label": "JSON"
+      },
+      {
+        "id": "urn:ngm:class:satoshi",
+        "label": "Satoshi"
+      },
+      {
+        "id": "urn:ngm:class:inscription",
+        "label": "Inscription"
+      },
+      {
+        "id": "urn:ngm:class:utxo-model",
+        "label": "UTXO Model"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:bitcoin-ecosystem",
+        "label": "Bitcoin Ecosystem"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:non-fungible-token",
+        "label": "Non-Fungible Token"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "id": "urn:ngm:class:layer-2-protocol",
+        "label": "Layer-2 Protocol"
+      },
+      {
+        "id": "urn:ngm:class:mempool",
+        "label": "Mempool"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-script",
+        "label": "Bitcoin Script"
+      }
+    ]
   },
   "wikilinks": [
     {

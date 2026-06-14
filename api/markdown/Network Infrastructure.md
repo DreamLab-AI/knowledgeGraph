@@ -38,9 +38,9 @@ alias:: NetworkInfrastructure
   "@id": "urn:ngm:class:network-infrastructure",
   "@type": "Class",
   "label": "Network Infrastructure",
-  "definition": "Network Infrastructure comprises the physical and logical communication systems — fibre, wireless, routing, and switching equipment, alongside software-defined networking layers — that enable data transmission for real-time collaboration and distributed computing. Modern network infrastructure integrates 5G/6G wireless, SD-WAN, content delivery networks, and multi-access edge computing to support low-latency, high-bandwidth applications such as immersive XR experiences and autonomous systems.",
+  "definition": "Network Infrastructure is the integrated ensemble of physical hardware, logical software layers, and communication protocols that enable data transmission, interconnection, and service delivery across computing environments. It encompasses wired and wireless transmission media, routing and switching equipment, software-defined networking (SDN) control planes, and edge computing nodes that collectively form the backbone of digital communication. Modern network infrastructure is characterised by convergence across 5G/6G mobile networks, fibre optic backbones, satellite constellations, and multi-access edge computing (MEC) to deliver low-latency, high-throughput connectivity. It underpins virtually all digital services — from cloud computing and AI inference to immersive spatial experiences, autonomous systems, and distributed enterprise collaboration.",
   "domain": "infrastructure",
-  "maturity": "emerging",
+  "maturity": "mature",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-network-and-comms",
@@ -48,24 +48,62 @@ alias:: NetworkInfrastructure
     }
   ],
   "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
+      {"@id": "urn:ngm:class:software-defined-networking", "label": "Software-Defined Networking"},
+      {"@id": "urn:ngm:class:content-delivery-network", "label": "Content Delivery Network"},
+      {"@id": "urn:ngm:class:network-component", "label": "Network Component"},
+      {"@id": "urn:ngm:class:network-protocol", "label": "Network Protocol"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:digital-infrastructure", "label": "Digital Infrastructure"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:physical-layer", "label": "Physical Layer"},
+      {"@id": "urn:ngm:class:network-security", "label": "Network Security"},
+      {"@id": "urn:ngm:class:identity-and-access-management", "label": "Identity and Access Management"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:cloud-computing", "label": "Cloud Computing"},
+      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"},
+      {"@id": "urn:ngm:class:real-time-communication", "label": "Real-Time Communication"},
+      {"@id": "urn:ngm:class:internet-of-things", "label": "Internet of Things"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:telecommunications-infrastructure", "label": "Telecommunications Infrastructure"},
+      {"@id": "urn:ngm:class:power-infrastructure", "label": "Power Infrastructure"}
+    ],
     "supports": [
       {"@id": "urn:ngm:class:spatial-computing-paradigm", "label": "Spatial Computing"},
-      {"@id": "urn:ngm:class:ai-infrastructure", "label": "AI Infrastructure"}
+      {"@id": "urn:ngm:class:ai-infrastructure", "label": "AI Infrastructure"},
+      {"@id": "urn:ngm:class:autonomous-systems", "label": "Autonomous Systems"}
     ],
-    "hasPart": [
-      {"@id": "urn:ngm:class:network-component", "label": "Network Component"},
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"}
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:ieee-802", "label": "IEEE 802 Standards"},
+      {"@id": "urn:ngm:class:ietf", "label": "IETF"},
+      {"@id": "urn:ngm:class:3gpp", "label": "3GPP"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:overlay-network", "label": "Overlay Network"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"},
+      {"@id": "urn:ngm:class:blockchain-network", "label": "Blockchain Network"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:telecommunications-infrastructure", "label": "Telecommunications Infrastructure"},
-      {"@id": "urn:ngm:class:cybersecurity", "label": "Cybersecurity"}
+      {"@id": "urn:ngm:class:cybersecurity", "label": "Cybersecurity"},
+      {"@id": "urn:ngm:class:network-topology", "label": "Network Topology"},
+      {"@id": "urn:ngm:class:quality-of-service", "label": "Quality of Service"}
     ]
   },
-  "quality": 0.35,
+  "sameAs": [
+    {"@id": "urn:ngm:class:communications-infrastructure", "label": "Communications Infrastructure"}
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-13T00:00:00Z",
+    "inferenceRule": "ManualEnrichment"
   }
 }
 ```
@@ -89,35 +127,124 @@ alias:: NetworkInfrastructure
 }
 ```
 
-
 - ### Definition
-  - Network Infrastructure comprises the physical and logical communication systems — fibre, wireless, routing, and switching equipment, alongside software-defined networking layers — that enable data transmission for real-time collaboration and distributed computing. Modern network infrastructure integrates 5G/6G wireless, SD-WAN, content delivery networks, and multi-access edge computing to support low-latency, high-bandwidth applications such as immersive XR experiences and autonomous systems.
+  - Network Infrastructure is the integrated ensemble of physical hardware, logical software layers, and communication protocols that together enable data transmission, service interconnection, and digital communication at scale. It spans wired and wireless transmission media, [[Routing]] and switching equipment, [[Software-Defined Networking]] control planes, [[Edge Computing]] nodes, and the [[Network Protocol]] stacks that bind them into coherent systems. Modern deployments are characterised by convergence across 5G/6G mobile networks, fibre optic backbones, satellite constellations, and [[Multi-Access Edge Computing]], providing the low-latency, high-bandwidth backbone required by [[Cloud Computing]], [[Distributed Systems]], [[Spatial Computing]], and [[AI Infrastructure]] alike.
 
-- ### Semantic Classification
-  - owl-class:: infrastructure:NetworkInfrastructure
-  - owl-role:: Concept
+- ### Overview
+  - Network Infrastructure constitutes the foundational layer of the digital economy — it is the prerequisite for all networked services, from enterprise applications and [[Internet of Things]] deployments to immersive virtual environments and real-time AI inference pipelines.
+  - Its significance lies not merely in connectivity but in the quality attributes it delivers: bandwidth, latency, reliability, security, and scalability. As application demands have shifted from text-based services to real-time video, collaborative spatial environments, and machine-to-machine communication, infrastructure has evolved accordingly.
+  - The field has undergone three major transitions:
+    - From circuit-switched telephony to packet-switched IP networks (1980s–2000s)
+    - From hardware-defined static networks to software-defined, programmable fabrics (2010s)
+    - From centralised data-centre architectures to distributed, edge-native topologies (2020s onward)
+  - Today's network infrastructure is shaped by the demand for ultra-reliable low-latency communication (URLLC), massive machine-type communication (mMTC), and enhanced mobile broadband (eMBB) — the three service categories defined by [[3GPP]] for 5G NR and beyond.
+
+- ### Key Components
+  - #### Transmission Media
+    - **Fibre optic cable** — dominant backbone medium; single-mode fibre supports terabit-scale transmission over intercontinental distances; underpins submarine cable networks linking continents.
+    - **Copper (Ethernet, DSL)** — still prevalent in last-mile access and data-centre patch cabling; Cat6A/Cat8 supports 25–40 Gbps over short distances.
+    - **Wireless (Wi-Fi, 5G NR, 6G)** — [[5G Networks]] deliver peak downlink rates exceeding 20 Gbps with sub-millisecond latency in mmWave bands; Wi-Fi 7 (IEEE 802.11be) supports multi-link operation and 46 Gbps theoretical throughput.
+    - **Satellite (LEO constellations)** — operators such as Starlink and OneWeb provide global coverage with latencies of 20–40 ms, bridging unserved geographies and enabling mobile maritime and aviation connectivity.
+  - #### Routing and Switching
+    - [[Network Topology]] is instantiated via routers (layer 3, IP forwarding) and switches (layer 2, MAC forwarding); modern platforms blur this boundary with multi-layer switching.
+    - **Spine-leaf architecture** — dominant in hyperscale data centres; provides predictable, equal-cost multi-path (ECMP) routing and horizontal scalability.
+    - **Border Gateway Protocol (BGP)** — the inter-domain routing protocol of the public internet; used by over 900,000 autonomous systems globally.
+    - **MPLS (Multi-Protocol Label Switching)** — label-switched forwarding used in carrier networks for traffic engineering and VPN services.
+  - #### Software-Defined Networking (SDN)
+    - [[Software-Defined Networking]] decouples the control plane (routing decisions) from the data plane (packet forwarding), centralising policy in a logically unified controller.
+    - OpenFlow, P4, and gRPC-based APIs (gNMI/gNOI) allow programmatic reconfiguration of forwarding behaviour without replacing hardware.
+    - SDN enables rapid network virtualisation, automated failover, and fine-grained [[Quality of Service]] enforcement.
+  - #### Network Functions Virtualisation (NFV)
+    - NFV replaces dedicated hardware appliances (firewalls, load balancers, WAN optimisers) with software virtual network functions (VNFs) running on commodity compute.
+    - Integrates with [[Cloud Computing]] platforms; reduces capex and enables elastic scaling.
+  - #### SD-WAN
+    - Software-Defined Wide Area Networking aggregates multiple WAN links (MPLS, broadband, 5G) and applies application-aware routing policies.
+    - Used by enterprises to replace or augment legacy MPLS with zero-touch provisioning and centralised orchestration.
+  - #### Content Delivery Networks (CDN)
+    - [[Content Delivery Network]] distributes cached content across geographically distributed points-of-presence (PoPs), reducing round-trip latency for end users.
+    - Critical for [[Real-Time Communication]], video streaming, and [[Spatial Computing]] asset delivery; major providers include Cloudflare, Akamai, and Fastly.
+  - #### Edge Computing Infrastructure
+    - [[Edge Computing]] places compute and storage resources at or near the network edge — within base stations (MEC), enterprise premises (on-prem edge), or regional micro-data-centres.
+    - Reduces the latency of AI inference, video analytics, and AR/VR rendering by eliminating round-trips to centralised cloud data centres.
+    - [[Multi-Access Edge Computing]] (MEC), standardised by [[ETSI]], integrates compute directly into 5G radio access network (RAN) infrastructure.
+  - #### Network Security Layer
+    - [[Network Security]] encompasses firewalls, intrusion detection/prevention systems (IDS/IPS), DDoS mitigation, and encrypted tunnels (IPsec, WireGuard, TLS 1.3).
+    - Zero-trust network access (ZTNA) replaces perimeter-based models by authenticating and authorising every request regardless of source network; tied to [[Identity and Access Management]].
+    - Quantum-safe cryptography (NIST PQC standards, 2024) is beginning to be deployed in critical network infrastructure to resist future quantum attacks.
+  - #### Network Management and Orchestration
+    - [[Network Topology]] management relies on platforms such as OpenConfig, NETCONF/YANG, and intent-based networking (IBN) controllers.
+    - AI-driven operations (AIOps) apply [[Machine Learning]] to anomaly detection, capacity planning, and self-healing configuration; bridges to [[AI Infrastructure]].
+    - Digital twins of network infrastructure enable simulation-driven planning and pre-deployment validation.
+
+- ### Applications and Use Cases
+  - #### Enterprise and Cloud Services
+    - Private and hybrid cloud connectivity relies on network infrastructure to bind on-premises data centres with hyperscaler regions (AWS Direct Connect, Azure ExpressRoute, Google Cloud Interconnect).
+    - Global enterprises deploy SD-WAN to manage hundreds of branch sites with centralised policy and visibility, replacing rigid legacy MPLS circuits.
+  - #### Immersive and Spatial Computing
+    - [[Spatial Computing]] applications — XR headsets, holographic telepresence, virtual production — require sustained low-latency (< 20 ms), high-bandwidth (> 1 Gbps) connectivity to stream scene geometry, volumetric video, and rendering outputs.
+    - [[Edge Computing]] co-located with 5G RAN reduces round-trip time for split-rendering architectures where cloud GPUs process complex scenes and stream frames to thin clients.
+  - #### AI and Machine Learning Pipelines
+    - Large-scale [[Distributed Systems]] training of AI models requires specialised network fabrics: InfiniBand or RoCEv2 (RDMA over Converged Ethernet) providing 200–400 Gbps per port within GPU clusters.
+    - [[Federated Learning]] distributes model training across edge devices and data silos; network infrastructure quality directly determines convergence speed and data freshness.
+    - [[AI Infrastructure]] inference serving at scale depends on CDN-like edge deployment of model weights and low-latency API gateways.
+  - #### Internet of Things
+    - [[Internet of Things]] deployments rely on diverse access technologies: NB-IoT and LTE-M for low-power sensor networks, Wi-Fi 6 for dense indoor environments, and private 5G for industrial automation.
+    - Time-Sensitive Networking (TSN, IEEE 802.1 series) provides deterministic latency guarantees required by industrial IoT and robotic control loops.
+  - #### Blockchain and Decentralised Networks
+    - [[Blockchain Network]] nodes rely on peer-to-peer overlay networks built atop standard internet infrastructure; transaction propagation latency directly affects consensus performance.
+    - Decentralised storage (IPFS, Filecoin) and computation networks impose unique traffic patterns — content-addressed routing, gossip protocols — that network infrastructure must accommodate.
+  - #### Public Safety and Critical Infrastructure
+    - Mission-critical push-to-talk (MCPTT) services, first-responder networks (FirstNet in the US), and utility SCADA systems demand [[Quality of Service]] guarantees and resilience that general-purpose internet cannot provide.
+    - Network slicing in 5G SA (Standalone) architecture allows isolation of critical-service slices with guaranteed SLAs.
 
 - ### Relationships
-  - supports:: [[Spatial Computing Paradigm]]
-  - supports:: [[AI Infrastructure]]
-  - hasPart:: [[Network Component]]
   - hasPart:: [[Edge Computing]]
-  - relatedTo:: [[Telecommunications Infrastructure]]
+  - hasPart:: [[Software-Defined Networking]]
+  - hasPart:: [[Content Delivery Network]]
+  - hasPart:: [[Network Component]]
+  - hasPart:: [[Network Protocol]]
+  - partOf:: [[Digital Infrastructure]]
+  - requires:: [[Physical Layer]]
+  - requires:: [[Network Security]]
+  - requires:: [[Identity and Access Management]]
+  - enables:: [[Cloud Computing]]
+  - enables:: [[Distributed Systems]]
+  - enables:: [[Real-Time Communication]]
+  - enables:: [[Internet of Things]]
+  - dependsOn:: [[Telecommunications Infrastructure]]
+  - dependsOn:: [[Power Infrastructure]]
+  - supports:: [[Spatial Computing]]
+  - supports:: [[AI Infrastructure]]
+  - supports:: [[Autonomous Systems]]
+  - standardizedBy:: [[IEEE 802 Standards]]
+  - standardizedBy:: [[IETF]]
+  - standardizedBy:: [[3GPP]]
+  - contrastsWith:: [[Overlay Network]]
+  - bridges-to:: [[Federated Learning]]
+  - bridges-to:: [[Blockchain Network]]
   - relatedTo:: [[Cybersecurity]]
+  - relatedTo:: [[Network Topology]]
+  - relatedTo:: [[Quality of Service]]
 
-- ### Content
-
-  ## Definition
-
-  Network Infrastructure comprises the physical and logical communication systems enabling data transmission for telecollaboration, including fiber optic cables, wireless networks, routing equipment, and network protocols. Modern collaboration infrastructure leverages 5G and emerging 6G networks providing ultra-low latency (sub-10ms), high bandwidth (multi-gigabit), and massive connectivity for immersive experiences. Key components include software-defined wide area networks (SD-WAN) optimizing traffic across multiple connections, content delivery networks (CDNs) caching media assets near users, and quality of service (QoS) mechanisms prioritizing real-time traffic. Network architectures employ multi-access edge computing (MEC) placing compute resources at network edges, network slicing reserving dedicated resources for collaboration services, and zero-trust security models verifying every connection. Advanced implementations integrate time-sensitive networking (TSN) guaranteeing deterministic latency for industrial collaboration, satellite networks (Starlink, OneWeb) providing global coverage, and quantum key distribution (QKD) ensuring cryptographically secure communications. The convergence of networking technologies enables hybrid architectures combining public internet, private networks, and direct peering for optimal performance, resilience, and cost efficiency in global telecollaboration systems.
-
-  #### References
-  - 3GPP. (2024). "5G Advanced and 6G Standards for Real-Time Communication." https://www.3gpp.org/
-  - IETF. (2024). "Internet Engineering Task Force Network Protocols." https://www.ietf.org/
-  - IEEE 802. (2024). "LAN/MAN Networking Standards." https://www.ieee802.org/
-  - ETSI. (2024). "Multi-Access Edge Computing Specifications." https://www.etsi.org/technologies/multi-access-edge-computing
-  - ITU-T. (2024). "Telecommunications Standardization Sector." https://www.itu.int/en/ITU-T/
+- ### Standards and Context
+  - #### Key Standards Bodies
+    - **[[IETF]]** (Internet Engineering Task Force) — publishes RFCs defining foundational internet protocols: IP, TCP, BGP, TLS, HTTP, QUIC, and hundreds of extensions. Working groups address routing security (RPKI), network virtualisation, and emerging transport protocols.
+    - **[[IEEE 802 Standards]]** — the 802 Working Group family defines Ethernet (802.3), Wi-Fi (802.11), and Time-Sensitive Networking (802.1Q/Qbv/Qcc). IEEE 802.11be (Wi-Fi 7) and 802.3df (800G Ethernet) represent the current generation.
+    - **[[3GPP]]** (3rd Generation Partnership Project) — produces the specifications for 4G LTE, 5G NR, and 5G Advanced (Release 18+); coordinates core network, radio access, and security standards across global telco ecosystem.
+    - **ETSI** — European Telecommunications Standards Institute; leads NFV, MEC (Multi-Access Edge Computing), and network slicing specifications; hosts the Open Source MANO (OSM) project.
+    - **ITU-T** — UN's International Telecommunication Union standardisation sector; coordinates international interconnection, numbering, and emerging 6G framework studies (IMT-2030).
+    - **MEF** (Metro Ethernet Forum) — defines carrier Ethernet services, SD-WAN standards (MEF 70.x), and LSO (Lifecycle Service Orchestration) APIs for automated service provisioning.
+  - #### Regulatory Context
+    - Network infrastructure is classified as critical national infrastructure (CNI) in most jurisdictions, subject to government oversight, security mandates, and resilience requirements.
+    - Spectrum allocation for 5G and beyond is governed by national regulators (Ofcom, FCC, BNetzA) in coordination with ITU-R World Radiocommunication Conferences (WRC).
+    - The EU's European Electronic Communications Code (EECC) and US CHIPS & Science Act both include provisions shaping the geography of network infrastructure investment.
+  - #### Emerging Directions
+    - **Open RAN (O-RAN)** — disaggregates radio access network hardware and software, enabling multi-vendor interoperability and programmable RAN control via the O-RAN Alliance's xApp/rApp architecture.
+    - **Quantum networking** — quantum key distribution (QKD) networks and, longer term, quantum repeater-based entanglement distribution are being prototyped for ultra-secure links; bridges to [[Quantum Computing]].
+    - **6G** — ITU-R IMT-2030 framework targets terabit-scale peak rates, sub-100-microsecond latency, integrated sensing and communication (ISAC), and AI-native air interface design; commercial deployment anticipated late 2030s.
+    - **Deterministic networking** — IETF DetNet working group and IEEE TSN extend packet networks with bounded latency guarantees for industrial and real-time control applications.
 
 - ### Provenance
-  - sources::
+  - sources:: [[3GPP]], [[IETF]], [[IEEE 802 Standards]], [[ETSI]], [[ITU-T]]
+  - updated:: 2026-06-13
   - migration-date:: 2026-04-26T00:00:00Z

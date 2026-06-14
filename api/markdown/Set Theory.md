@@ -55,7 +55,7 @@ public:: true
   "@type": "Class",
   "label": "Set Theory",
   "definition": "The branch of mathematical logic that studies collections of objects called sets, providing a foundational language for most of modern mathematics.",
-  "domain": "mathematics",
+  "domain": "machine-learning",
   "maturity": "mature",
   "qualityScore": 0.7,
   "subClassOf": [

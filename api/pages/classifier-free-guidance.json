@@ -5,33 +5,89 @@
   "public": true,
   "classIri": "urn:ngm:class:classifier-free-guidance",
   "domain": "artificial-intelligence",
-  "definition": "Classifier-Free Guidance (CFG) is a conditional generation technique for diffusion models that steers the denoising trajectory towards a specified condition (e.g., a text prompt) by computing a weighted extrapolation between a conditional score estimate and an unconditional score estimate produced by the same model. Unlike classifier guidance, which requires a separate differentiable classifier, CFG trains a single model jointly on conditional and unconditional objectives (using null conditioning with a fixed probability), eliminating the need for an auxiliary network whilst achieving superior sample fidelity and prompt adherence. The guidance scale hyperparameter controls the trade-off between sample diversity and condition alignment.",
+  "definition": "Classifier-Free Guidance (CFG) is a conditional generation technique for diffusion models that steers the denoising trajectory towards a specified condition by computing a weighted extrapolation between a conditional score estimate and an unconditional score estimate produced by the same single model. Unlike classifier guidance, which requires a separately trained differentiable classifier, CFG trains one network jointly on conditional and unconditional objectives by randomly replacing conditioning inputs with a null embedding during training. At inference, the guided score is: score_guided = score_unconditional + w * (score_conditional - score_unconditional), where w is the guidance scale hyperparameter controlling the trade-off between sample diversity and condition alignment. CFG has become the dominant conditioning mechanism across text-to-image, text-to-video, and audio generation systems.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique"
+      "id": "urn:ngm:class:conditional-generation",
+      "label": "Conditional Generation"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:denoising-diffusion-probabilistic-model",
+        "label": "Denoising Diffusion Probabilistic Model"
+      },
+      {
+        "id": "urn:ngm:class:guidance-scale",
+        "label": "Guidance Scale"
+      },
+      {
+        "id": "urn:ngm:class:conditioning-signal",
+        "label": "Conditioning Signal"
+      }
+    ],
     "enables": [
+      {
+        "id": "urn:ngm:class:text-to-image",
+        "label": "Text-to-Image"
+      },
       {
         "id": "urn:ngm:class:image-generation",
         "label": "Image Generation"
       },
       {
-        "id": "urn:ngm:class:text-to-image",
-        "label": "Text-to-Image"
+        "id": "urn:ngm:class:text-to-video",
+        "label": "Text-to-Video"
+      },
+      {
+        "id": "urn:ngm:class:audio-generation",
+        "label": "Audio Generation"
+      },
+      {
+        "id": "urn:ngm:class:negative-prompting",
+        "label": "Negative Prompting"
+      },
+      {
+        "id": "urn:ngm:class:prompt-adherence",
+        "label": "Prompt Adherence"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:score-based-generative-model",
+        "label": "Score-Based Generative Model"
+      },
+      {
+        "id": "urn:ngm:class:dropout-training",
+        "label": "Dropout Training"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:classifier-guidance",
+        "label": "Classifier Guidance"
+      },
+      {
+        "id": "urn:ngm:class:unconditional-generation",
+        "label": "Unconditional Generation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
+      },
+      {
+        "id": "urn:ngm:class:reward-model",
+        "label": "Reward Model"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:diffusion-model",
@@ -40,15 +96,52 @@
       {
         "id": "urn:ngm:class:latent-diffusion",
         "label": "Latent Diffusion"
+      },
+      {
+        "id": "urn:ngm:class:score-function",
+        "label": "Score Function"
+      },
+      {
+        "id": "urn:ngm:class:null-conditioning",
+        "label": "Null Conditioning"
+      },
+      {
+        "id": "urn:ngm:class:variational-autoencoder",
+        "label": "Variational Autoencoder"
       }
     ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:generative-model",
         "label": "Generative Model"
+      },
+      {
+        "id": "urn:ngm:class:stable-diffusion",
+        "label": "Stable Diffusion"
+      },
+      {
+        "id": "urn:ngm:class:controlnet",
+        "label": "ControlNet"
+      },
+      {
+        "id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      },
+      {
+        "id": "urn:ngm:class:sampling-algorithm",
+        "label": "Sampling Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:clip",
+        "label": "CLIP"
       }
     ]
   },

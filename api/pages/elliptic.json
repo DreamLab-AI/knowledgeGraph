@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:elliptic",
   "domain": "blockchain",
-  "definition": "Elliptic is a company that provides blockchain analytics and compliance tools for tracing cryptocurrency transactions and assessing risk.",
+  "definition": "Elliptic is a blockchain analytics and financial crime compliance company that provides software tools to trace, analyse, and risk-score cryptocurrency transactions across multiple blockchain networks. Its technology maps on-chain flows to real-world entities \u2014 exchanges, darknet markets, ransomware wallets, and sanctioned addresses \u2014 enabling financial institutions, crypto businesses, and law enforcement to detect and prevent money laundering, terrorist financing, and sanctions evasion. Elliptic's transaction monitoring and wallet screening solutions are used by regulated virtual-asset service providers globally to satisfy AML/CFT obligations under frameworks such as the FATF Travel Rule and MiCA.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:blockchain-analytics",
@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
@@ -21,23 +21,112 @@
       {
         "id": "urn:ngm:class:blockchain-analytics",
         "label": "Blockchain Analytics"
+      },
+      {
+        "id": "urn:ngm:class:graph-analysis",
+        "label": "Graph Analysis"
+      },
+      {
+        "id": "urn:ngm:class:on-chain-data",
+        "label": "On-Chain Data"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:anti-money-laundering",
         "label": "Anti-Money Laundering"
+      },
+      {
+        "id": "urn:ngm:class:transaction-monitoring",
+        "label": "Transaction Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:sanctions-screening",
+        "label": "Sanctions Screening"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:cryptocurrency-forensics",
+        "label": "Cryptocurrency Forensics"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:chainalysis",
+        "label": "Chainalysis"
+      },
+      {
+        "id": "urn:ngm:class:ciphertrace",
+        "label": "CipherTrace"
+      },
+      {
+        "id": "urn:ngm:class:trm-labs",
+        "label": "TRM Labs"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:financial-crime-compliance",
+        "label": "Financial Crime Compliance"
+      },
+      {
+        "id": "urn:ngm:class:law-enforcement-intelligence",
+        "label": "Law Enforcement Intelligence"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:heuristic-clustering",
+        "label": "Heuristic Clustering"
+      },
+      {
+        "id": "urn:ngm:class:entity-attribution",
+        "label": "Entity Attribution"
+      },
+      {
+        "id": "urn:ngm:class:risk-scoring",
+        "label": "Risk Scoring"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:fatf-travel-rule",
+        "label": "FATF Travel Rule"
+      },
+      {
+        "id": "urn:ngm:class:virtual-asset-service-provider",
+        "label": "Virtual Asset Service Provider"
+      },
+      {
+        "id": "urn:ngm:class:financial-institution",
+        "label": "Financial Institution"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:know-your-customer",
+        "label": "Know Your Customer"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:dark-web-monitoring",
+        "label": "Dark Web Monitoring"
+      }
+    ]
   },
   "wikilinks": [
     {

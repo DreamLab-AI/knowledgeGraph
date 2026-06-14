@@ -4,7 +4,7 @@
   "slug": "numerical-methods",
   "public": true,
   "classIri": "urn:ngm:class:numerical-methods",
-  "domain": "mathematics",
+  "domain": "machine-learning",
   "definition": "Techniques for obtaining approximate solutions to mathematical problems that cannot be solved exactly, using finite sequences of arithmetic operations.",
   "subClassOf": [
     {

@@ -4,8 +4,8 @@
   "slug": "etsi-gr-arf-010",
   "public": true,
   "classIri": "urn:ngm:class:etsi-gr-arf-010",
-  "domain": "standards",
-  "definition": "ETSI GR ARF 010 is a group report from the ETSI Augmented Reality Framework activity, addressing interoperability requirements and architecture for augmented reality systems.",
+  "domain": "spatial-computing",
+  "definition": "ETSI GR ARF 010 is a Group Report produced by the ETSI Industry Specification Group on Augmented Reality Framework (ISG ARF), defining architectural concepts, terminology, and interoperability requirements for augmented reality systems. It specifies a reference architecture that decouples AR content pipelines, tracking subsystems, and rendering layers to enable multi-vendor interoperability. The report addresses how AR devices, services, and platforms should communicate using standardised interfaces covering world anchoring, coordinate systems, and content delivery. It serves as a foundational normative reference for the broader ARF specification suite, informing subsequent standards such as ETSI GS ARF 003.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:technical-standard",
@@ -13,26 +13,121 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:ar-reference-architecture",
+        "label": "AR Reference Architecture"
+      },
+      {
+        "id": "urn:ngm:class:world-anchor",
+        "label": "World Anchor"
+      },
+      {
+        "id": "urn:ngm:class:coordinate-reference-system",
+        "label": "Coordinate Reference System"
+      },
+      {
+        "id": "urn:ngm:class:ar-tracking-subsystem",
+        "label": "AR Tracking Subsystem"
+      }
+    ],
     "requires": [
+      {
+        "id": "urn:ngm:class:spatial-tracking",
+        "label": "Spatial Tracking"
+      },
+      {
+        "id": "urn:ngm:class:pose-estimation",
+        "label": "Pose Estimation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:ar-interoperability",
+        "label": "AR Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:multi-vendor-ar",
+        "label": "Multi-Vendor AR"
+      },
+      {
+        "id": "urn:ngm:class:persistent-ar-content",
+        "label": "Persistent AR Content"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:augmented-reality-framework",
+        "label": "Augmented Reality Framework"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:openxr",
+        "label": "OpenXR"
+      },
+      {
+        "id": "urn:ngm:class:arcore",
+        "label": "ARCore"
+      },
+      {
+        "id": "urn:ngm:class:arkit",
+        "label": "ARKit"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:5g-network-slicing",
+        "label": "5G Network Slicing"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [
       {
         "id": "urn:ngm:class:etsi",
         "label": "ETSI"
+      },
+      {
+        "id": "urn:ngm:class:etsi-isg-arf",
+        "label": "ETSI ISG ARF"
       }
     ],
-    "enables": [],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:etsi-gs-arf-003",
+        "label": "ETSI GS ARF 003"
+      },
+      {
+        "id": "urn:ngm:class:openxr",
+        "label": "OpenXR"
+      },
+      {
+        "id": "urn:ngm:class:3gpp",
+        "label": "3GPP"
+      },
+      {
+        "id": "urn:ngm:class:xr-architecture",
+        "label": "XR Architecture"
+      },
+      {
+        "id": "urn:ngm:class:spatial-web",
+        "label": "Spatial Web"
+      }
+    ]
   },
   "wikilinks": [
     {

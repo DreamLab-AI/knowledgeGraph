@@ -4,40 +4,126 @@
   "slug": "nearest-neighbor-search",
   "public": true,
   "classIri": "urn:ngm:class:nearest-neighbor-search",
-  "domain": "spatial-computing",
-  "definition": "An algorithmic technique used in vector databases to find data points most similar to a query vector by computing distance metrics like cosine similarity or Euclidean distance, with approximate mods (ANN) trading minor accuracy for millisecond-scale retrieval from s of objects.",
+  "domain": "machine-learning",
+  "definition": "Nearest Neighbor Search (NNS) is an algorithmic problem and family of techniques for finding the point(s) in a dataset most similar to a given query point, as measured by a distance or similarity metric such as Euclidean distance, cosine similarity, or inner product. Exact NNS guarantees retrieval of the true closest point but scales poorly in high dimensions, while Approximate Nearest Neighbor (ANN) methods trade a bounded loss in recall for dramatically faster query latency and memory efficiency. Foundational index structures \u2014 including KD-Trees, Ball Trees, Locality-Sensitive Hashing, Inverted File Indexes, and Hierarchical Navigable Small World graphs \u2014 each make different trade-offs between construction cost, query speed, recall, and support for dynamic updates. NNS is a core primitive of modern machine learning pipelines, powering vector database retrieval, recommendation systems, semantic search, image recognition, and retrieval-augmented generation.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:sc-content-and-assets",
-      "label": "Content and Assets"
+      "id": "urn:ngm:class:search-algorithm",
+      "label": "Search Algorithm"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.74,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:approximate-nearest-neighbor",
+        "label": "Approximate Nearest Neighbor"
+      },
+      {
+        "id": "urn:ngm:class:hnsw",
+        "label": "HNSW"
+      },
+      {
+        "id": "urn:ngm:class:locality-sensitive-hashing",
+        "label": "Locality-Sensitive Hashing"
+      },
+      {
+        "id": "urn:ngm:class:inverted-file-index",
+        "label": "Inverted File Index"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:vector-embedding",
+        "label": "Vector Embedding"
+      },
+      {
+        "id": "urn:ngm:class:distance-metric",
+        "label": "Distance Metric"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:semantic-search",
         "label": "Semantic Search"
+      },
+      {
+        "id": "urn:ngm:class:recommendation-system",
+        "label": "Recommendation System"
+      },
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "id": "urn:ngm:class:image-retrieval",
+        "label": "Image Retrieval"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:vector-database",
+        "label": "Vector Database"
+      },
+      {
+        "id": "urn:ngm:class:embedding-model",
+        "label": "Embedding Model"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:exact-search",
+        "label": "Exact Search"
+      },
+      {
+        "id": "urn:ngm:class:keyword-search",
+        "label": "Keyword Search"
+      }
+    ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:search-algorithm",
-        "label": "Search Algorithm"
+        "id": "urn:ngm:class:spatial-indexing",
+        "label": "Spatial Indexing"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph-embedding",
+        "label": "Knowledge Graph Embedding"
       }
     ],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cosine-similarity",
+        "label": "Cosine Similarity"
+      },
+      {
+        "id": "urn:ngm:class:euclidean-distance",
+        "label": "Euclidean Distance"
+      },
+      {
+        "id": "urn:ngm:class:kd-tree",
+        "label": "KD-Tree"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:faiss",
+        "label": "FAISS"
+      },
+      {
+        "id": "urn:ngm:class:dimensionality-reduction",
+        "label": "Dimensionality Reduction"
+      },
+      {
+        "id": "urn:ngm:class:quantisation",
+        "label": "Quantisation"
+      }
+    ]
   },
   "wikilinks": [
     {

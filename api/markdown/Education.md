@@ -47,7 +47,7 @@ public:: true
   "@type": "Class",
   "label": "Education",
   "definition": "Education is the structured process of facilitating learning, knowledge and skills through teaching, study and training. It occurs in formal institutions and through informal and online means.",
-  "domain": "education",
+  "domain": "governance",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

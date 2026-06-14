@@ -4,30 +4,135 @@
   "slug": "university-of-manchester",
   "public": true,
   "classIri": "urn:ngm:class:university-of-manchester",
-  "domain": "university-of-manchester",
-  "definition": "The University of Manchester is a public research university in Manchester, England, formed in 2004 by the merger of the Victoria University of Manchester and UMIST, with institutional roots dating to 1824. It is a member of the Russell Group and has a strong record in physics, engineering, computing and materials science. The university is the site of early computing history, including the Manchester Baby, the first stored-program electronic computer, and of the isolation of graphene. It has been associated with a large number of Nobel laureates across its history.",
+  "domain": "ai",
+  "definition": "The University of Manchester is a public research university in Manchester, England, formed in 2004 by the merger of the Victoria University of Manchester and UMIST, with institutional roots tracing to 1824. It is a founding member of the Russell Group and a global leader in artificial intelligence, machine learning, materials science, and computer science, housing the Alan Turing Institute affiliate node and the Department of Computer Science where early stored-program computing was pioneered. The university produced the Manchester Baby (1948), the first operational stored-program electronic computer, and its researchers isolated graphene in 2004. It is consistently ranked among the world's top 30 research universities and has produced over 25 Nobel laureates across physics, chemistry, economics, and medicine.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:owl-thing",
-      "label": "owl:Thing"
+      "id": "urn:ngm:class:research-university",
+      "label": "Research University"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.74,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:department-of-computer-science",
+        "label": "Department of Computer Science"
+      },
+      {
+        "id": "urn:ngm:class:alan-turing-institute",
+        "label": "Alan Turing Institute"
+      },
+      {
+        "id": "urn:ngm:class:manchester-institute-of-biotechnology",
+        "label": "Manchester Institute of Biotechnology"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:research-funding",
+        "label": "Research Funding"
+      },
+      {
+        "id": "urn:ngm:class:high-performance-computing",
+        "label": "High Performance Computing"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:machine-learning-research",
+        "label": "Machine Learning Research"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:private-research-institution",
+        "label": "Private Research Institution"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:graphene",
+        "label": "Graphene"
+      },
+      {
+        "id": "urn:ngm:class:stored-program-computer",
+        "label": "Stored-Program Computer"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:open-science",
+        "label": "Open Science"
+      },
+      {
+        "id": "urn:ngm:class:technology-transfer",
+        "label": "Technology Transfer"
+      },
+      {
+        "id": "urn:ngm:class:data-science",
+        "label": "Data Science"
+      }
+    ],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:russell-group",
+        "label": "Russell Group"
+      },
+      {
+        "id": "urn:ngm:class:n8-research-partnership",
+        "label": "N8 Research Partnership"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:university-of-cambridge",
+        "label": "University of Cambridge"
+      },
+      {
+        "id": "urn:ngm:class:imperial-college-london",
+        "label": "Imperial College London"
+      },
+      {
+        "id": "urn:ngm:class:university-of-edinburgh",
+        "label": "University of Edinburgh"
+      },
+      {
+        "id": "urn:ngm:class:alan-turing",
+        "label": "Alan Turing"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ]
   },
   "wikilinks": [
     {

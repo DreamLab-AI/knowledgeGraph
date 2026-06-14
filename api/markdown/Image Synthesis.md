@@ -55,7 +55,7 @@ public:: true
   "@type": "Class",
   "label": "Image Synthesis",
   "definition": "The generation of images from models or descriptions rather than direct capture, including rendering from scene data and machine learning models that produce images from learned distributions.",
-  "domain": "general",
+  "domain": "ai",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

@@ -4,8 +4,8 @@
   "slug": "nvidia-h-100",
   "public": true,
   "classIri": "urn:ngm:class:nvidia-corporation-h-100",
-  "domain": "computing",
-  "definition": "The NVIDIA H100 is a data-centre GPU based on the Hopper architecture, designed for AI training and inference and high-performance computing. It introduced a Transformer Engine and FP8 support for large model workloads.",
+  "domain": "ai",
+  "definition": "The NVIDIA H100 is a data-centre GPU accelerator built on the Hopper microarchitecture (GH100 die), designed for AI model training, large-scale inference, and high-performance computing workloads. It introduced a dedicated Transformer Engine with FP8 mixed-precision support, fourth-generation NVLink interconnect, and high-bandwidth HBM3 memory, enabling substantially faster training of large language models and other deep-learning workloads compared to its predecessor, the A100. The H100 is manufactured on TSMC N4 process technology and is available in PCIe and SXM5 form factors, the latter optimised for dense multi-GPU server nodes. Its combination of raw compute throughput and high-speed GPU-to-GPU interconnect made it the de-facto standard accelerator for generative AI infrastructure from 2023 onwards.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:gpu",
@@ -13,30 +13,147 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.75,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:transformer-engine",
+        "label": "Transformer Engine"
+      },
+      {
+        "id": "urn:ngm:class:nvlink",
+        "label": "NVLink"
+      },
+      {
+        "id": "urn:ngm:class:high-bandwidth-memory",
+        "label": "High-Bandwidth Memory"
+      },
+      {
+        "id": "urn:ngm:class:nvswitch",
+        "label": "NVSwitch"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:high-bandwidth-memory",
+        "label": "High-Bandwidth Memory"
+      },
+      {
+        "id": "urn:ngm:class:cuda",
+        "label": "CUDA"
+      }
+    ],
     "enables": [
       {
-        "id": "urn:ngm:class:gpu-cluster",
-        "label": "GPU Cluster"
+        "id": "urn:ngm:class:large-language-model-training",
+        "label": "Large Language Model Training"
       },
       {
         "id": "urn:ngm:class:gpu-computing",
         "label": "GPU Computing"
+      },
+      {
+        "id": "urn:ngm:class:ai-inference",
+        "label": "AI Inference"
+      },
+      {
+        "id": "urn:ngm:class:high-performance-computing",
+        "label": "High-Performance Computing"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:hopper-architecture",
+        "label": "Hopper Architecture"
+      },
+      {
+        "id": "urn:ngm:class:cuda",
+        "label": "CUDA"
+      },
+      {
+        "id": "urn:ngm:class:nvidia-software-stack",
+        "label": "NVIDIA Software Stack"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:fp8-precision",
+        "label": "FP8 Precision"
+      },
+      {
+        "id": "urn:ngm:class:mixed-precision-training",
+        "label": "Mixed Precision Training"
+      },
+      {
+        "id": "urn:ngm:class:tensor-core",
+        "label": "Tensor Core"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:nvidia-a100",
+        "label": "NVIDIA A100"
+      },
+      {
+        "id": "urn:ngm:class:amd-instinct-mi300x",
+        "label": "AMD Instinct MI300X"
+      },
+      {
+        "id": "urn:ngm:class:google-tpu-v4",
+        "label": "Google TPU v4"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
+      },
+      {
+        "id": "urn:ngm:class:ai-data-centre",
+        "label": "AI Data Centre"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:pcie-5",
+        "label": "PCIe 5"
+      },
+      {
+        "id": "urn:ngm:class:infiniband",
+        "label": "InfiniBand"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:dgx-h100",
+        "label": "DGX H100"
+      },
+      {
+        "id": "urn:ngm:class:gpu-cluster",
+        "label": "GPU Cluster"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:nvidia-h200",
+        "label": "NVIDIA H200"
+      },
+      {
+        "id": "urn:ngm:class:nvidia-corporation",
+        "label": "NVIDIA Corporation"
+      },
+      {
+        "id": "urn:ngm:class:ai-accelerator",
+        "label": "AI Accelerator"
+      }
+    ]
   },
   "wikilinks": [
     {

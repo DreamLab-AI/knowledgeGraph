@@ -5,38 +5,121 @@
   "public": true,
   "classIri": "urn:ngm:class:creator-royalties",
   "domain": "blockchain",
-  "definition": "Creator royalties are payments made to the original creator of a digital asset, such as an NFT, on subsequent resales of that asset.",
+  "definition": "Creator royalties are automatic, programmable payments directed to the original creator of a digital asset \u2014 typically an NFT \u2014 each time that asset is resold on a secondary market. Encoded in smart contract logic or enforced through marketplace policy, royalties provide creators with a fraction of every subsequent transaction price, extending their economic participation beyond the initial sale. The mechanism is foundational to sustainable creator economies on blockchain platforms, though enforcement remains contested between on-chain protocol enforcement and off-chain marketplace compliance. Debate centres on whether royalty obligations can be made non-bypassable at the token-transfer level or rely on voluntary marketplace co-operation.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:nft",
-      "label": "NFT"
+      "id": "urn:ngm:class:digital-rights-management",
+      "label": "Digital Rights Management"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.74,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
         "id": "urn:ngm:class:nft",
         "label": "NFT"
       },
       {
-        "id": "urn:ngm:class:smart-contract",
-        "label": "Smart Contract"
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
       }
     ],
-    "enables": [],
-    "dependsOn": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:creator-economy",
+        "label": "Creator Economy"
+      },
+      {
+        "id": "urn:ngm:class:programmable-revenue",
+        "label": "Programmable Revenue"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-marketplace",
+        "label": "Decentralised Marketplace"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:nft-marketplace",
+        "label": "NFT Marketplace"
+      },
+      {
+        "id": "urn:ngm:class:token-transfer",
+        "label": "Token Transfer"
+      },
+      {
+        "id": "urn:ngm:class:on-chain-governance",
+        "label": "On-Chain Governance"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:traditional-copyright",
+        "label": "Traditional Copyright"
+      },
+      {
+        "id": "urn:ngm:class:zero-royalty-marketplace",
+        "label": "Zero-Royalty Marketplace"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:digital-ownership",
+        "label": "Digital Ownership"
+      },
+      {
+        "id": "urn:ngm:class:creator-monetisation",
+        "label": "Creator Monetisation"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:eip-2981",
+        "label": "EIP-2981"
+      },
+      {
+        "id": "urn:ngm:class:operator-filter-registry",
+        "label": "Operator Filter Registry"
+      },
+      {
+        "id": "urn:ngm:class:token-standard",
+        "label": "Token Standard"
+      }
+    ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ethereum-improvement-proposal",
+        "label": "Ethereum Improvement Proposal"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:intellectual-property",
+        "label": "Intellectual Property"
+      },
+      {
+        "id": "urn:ngm:class:royalty-splitting",
+        "label": "Royalty Splitting"
+      },
+      {
+        "id": "urn:ngm:class:secondary-market",
+        "label": "Secondary Market"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
+    ]
   },
   "wikilinks": [
     {

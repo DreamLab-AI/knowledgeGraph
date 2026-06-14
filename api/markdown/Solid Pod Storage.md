@@ -67,7 +67,7 @@ public:: true
   "@type": "Class",
   "label": "Solid Pod Storage",
   "definition": "Solid Pod Storage refers to the personal online data stores used in the Solid project, a web specification initiated by Tim Berners-Lee for decentralising data ownership. A Pod is a user-controlled storage space that holds data as linked-data resources, with access governed by the user rather than the applications that consume it. Applications authenticate against a Pod and read or write data only with the owner's permission, separating data from the services built on top of it.",
-  "domain": "solid-pod-storage",
+  "domain": "infrastructure",
   "maturity": "developing",
   "qualityScore": 0.7,
   "subClassOf": [

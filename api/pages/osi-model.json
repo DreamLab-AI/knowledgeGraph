@@ -4,8 +4,8 @@
   "slug": "osi-model",
   "public": true,
   "classIri": "urn:ngm:class:osi-model",
-  "domain": "artificial-intelligence",
-  "definition": "The OSI model is a conceptual framework that divides network communication into seven layers, from the physical medium to the application. It provides a reference for describing how protocols interact across a network.",
+  "domain": "infrastructure",
+  "definition": "The OSI (Open Systems Interconnection) Model is a conceptual reference framework developed by ISO that partitions network communication functions into seven hierarchical layers: Physical, Data Link, Network, Transport, Session, Presentation, and Application. Each layer has a well-defined responsibility and communicates with the layer immediately above and below it through standardised interfaces, enabling interoperability between heterogeneous systems from different vendors. Originally published as ISO/IEC 7498-1 in 1984, the model does not describe a concrete protocol stack but provides a universal vocabulary and design template for networking protocols. It remains the canonical educational and diagnostic framework for understanding where specific protocols, devices, and services operate within a network.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:network-architecture",
@@ -13,26 +13,136 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
-  "maturity": "established",
+  "qualityScore": 0.75,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:physical-layer",
+        "label": "Physical Layer"
+      },
+      {
+        "id": "urn:ngm:class:data-link-layer",
+        "label": "Data Link Layer"
+      },
+      {
+        "id": "urn:ngm:class:network-layer",
+        "label": "Network Layer"
+      },
+      {
+        "id": "urn:ngm:class:transport-layer",
+        "label": "Transport Layer"
+      },
+      {
+        "id": "urn:ngm:class:session-layer",
+        "label": "Session Layer"
+      },
+      {
+        "id": "urn:ngm:class:presentation-layer",
+        "label": "Presentation Layer"
+      },
+      {
+        "id": "urn:ngm:class:application-layer",
+        "label": "Application Layer"
+      }
+    ],
     "requires": [
+      {
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      },
+      {
+        "id": "urn:ngm:class:layered-architecture",
+        "label": "Layered Architecture"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:protocol-interoperability",
+        "label": "Protocol Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:network-troubleshooting",
+        "label": "Network Troubleshooting"
+      },
+      {
+        "id": "urn:ngm:class:vendor-neutrality",
+        "label": "Vendor Neutrality"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:standardisation",
+        "label": "Standardisation"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:separation-of-concerns",
+        "label": "Separation of Concerns"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:tcp-ip-model",
+        "label": "TCP/IP Model"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:encapsulation",
+        "label": "Encapsulation"
+      },
+      {
+        "id": "urn:ngm:class:protocol-data-unit",
+        "label": "Protocol Data Unit"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso",
+        "label": "ISO"
+      },
+      {
+        "id": "urn:ngm:class:iec",
+        "label": "IEC"
+      }
+    ],
+    "partOf": [
       {
         "id": "urn:ngm:class:network-architecture",
         "label": "Network Architecture"
       }
     ],
-    "enables": [],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:rest-api",
+        "label": "REST API"
+      },
+      {
+        "id": "urn:ngm:class:firewall",
+        "label": "Firewall"
+      },
+      {
+        "id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      },
+      {
+        "id": "urn:ngm:class:internet-protocol",
+        "label": "Internet Protocol"
+      }
+    ]
   },
   "wikilinks": [
     {

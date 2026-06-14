@@ -4,8 +4,8 @@
   "slug": "settlement",
   "public": true,
   "classIri": "urn:ngm:class:settlement",
-  "domain": "blockchain",
-  "definition": "The final and irreversible transfer of an asset from one party to another that discharges the obligation arising from a trade or payment.",
+  "domain": "finance",
+  "definition": "Settlement is the final, legally binding transfer of an asset or funds from one party to another that extinguishes the obligation arising from a trade, payment, or contract. In traditional financial markets, settlement follows trade execution after a defined delay (e.g. T+2) during which counterparty risk persists; in distributed ledger systems, settlement occurs when a transaction achieves irreversible confirmation according to the network's consensus rules. Achieving settlement finality is the core objective of payment and securities clearing infrastructure, as it determines when legal title definitively passes and operational risk is eliminated. The shift towards real-time gross settlement (RTGS), delivery-versus-payment (DvP), and atomic settlement on distributed ledgers represents a decades-long effort to compress settlement latency and reduce systemic risk.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:financial-infrastructure-domain",
@@ -13,26 +13,126 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
-  "maturity": "established",
+  "qualityScore": 0.74,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:settlement-finality",
+        "label": "Settlement Finality"
+      },
+      {
+        "id": "urn:ngm:class:delivery-versus-payment",
+        "label": "Delivery Versus Payment"
+      },
+      {
+        "id": "urn:ngm:class:netting",
+        "label": "Netting"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:clearing",
+        "label": "Clearing"
+      },
+      {
+        "id": "urn:ngm:class:counterparty-risk-management",
+        "label": "Counterparty Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:liquidity",
+        "label": "Liquidity"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:atomic-settlement",
         "label": "Atomic Settlement"
+      },
+      {
+        "id": "urn:ngm:class:cross-border-settlement",
+        "label": "Cross-Border Settlement"
+      },
+      {
+        "id": "urn:ngm:class:securities-transfer",
+        "label": "Securities Transfer"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:payment-system",
+        "label": "Payment System"
+      },
+      {
+        "id": "urn:ngm:class:central-securities-depository",
+        "label": "Central Securities Depository"
+      },
+      {
+        "id": "urn:ngm:class:central-bank",
+        "label": "Central Bank"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:real-time-gross-settlement",
+        "label": "Real-Time Gross Settlement"
+      },
+      {
+        "id": "urn:ngm:class:deferred-net-settlement",
+        "label": "Deferred Net Settlement"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:clearing",
+        "label": "Clearing"
+      },
+      {
+        "id": "urn:ngm:class:trade-execution",
+        "label": "Trade Execution"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:financial-infrastructure-domain",
+        "label": "Financial Infrastructure Domain"
+      },
+      {
+        "id": "urn:ngm:class:post-trade-processing",
+        "label": "Post-Trade Processing"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:systemic-risk",
+        "label": "Systemic Risk"
+      },
+      {
+        "id": "urn:ngm:class:correspondent-banking",
+        "label": "Correspondent Banking"
+      },
+      {
+        "id": "urn:ngm:class:tokenisation",
+        "label": "Tokenisation"
+      }
+    ]
   },
   "wikilinks": [
     {

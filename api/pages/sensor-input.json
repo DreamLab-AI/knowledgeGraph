@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:sensor-input",
   "domain": "robotics",
-  "definition": "Sensor input refers to the raw or pre-processed signals acquired from physical or virtual transducers that convert observable environmental quantities\u2014position, force, temperature, light intensity, pressure, chemical concentration\u2014into electrical or digital representations suitable for computation. It constitutes the primary interface between an autonomous system and its environment, providing the perceptual foundation for state estimation, feedback control, and situational awareness. Sensor inputs vary by modality, sampling rate, resolution, and noise characteristics, and effective use requires calibration, filtering, and often fusion with complementary modalities to produce reliable world-state estimates.",
+  "definition": "Sensor input refers to the raw or pre-processed signals acquired from physical or virtual transducers that convert observable environmental quantities\u2014position, force, temperature, light intensity, pressure, chemical concentration\u2014into electrical or digital representations suitable for computation. It constitutes the primary interface between an autonomous or intelligent system and its environment, providing the perceptual foundation for state estimation, feedback control, and situational awareness. Effective use of sensor input requires calibration, filtering, and often fusion with complementary modalities to produce reliable world-state estimates, and the quality and latency of sensor inputs directly constrain the operational envelope of any system that must perceive and respond to the physical world. Sensor inputs vary by modality, sampling rate, resolution, noise characteristics, and temporal precision, spanning domains from robotics and autonomous vehicles to spatial computing, industrial IoT, and embodied AI.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sensor",
@@ -13,33 +13,90 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:signal-conditioning",
+        "label": "Signal Conditioning"
+      },
+      {
+        "id": "urn:ngm:class:analogue-to-digital-conversion",
+        "label": "Analogue-to-Digital Conversion"
+      },
+      {
+        "id": "urn:ngm:class:sensor-calibration",
+        "label": "Sensor Calibration"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:real-time-computation",
+        "label": "Real-Time Computation"
+      },
+      {
+        "id": "urn:ngm:class:digital-signal-processing",
+        "label": "Digital Signal Processing"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:sensor-fusion",
         "label": "Sensor Fusion"
       },
       {
-        "id": "urn:ngm:class:perception-system",
-        "label": "Perception System"
-      }
-    ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [
-      {
-        "id": "urn:ngm:class:digital-signal-processing",
-        "label": "Digital Signal Processing"
+        "id": "urn:ngm:class:state-estimation",
+        "label": "State Estimation"
       },
       {
-        "id": "urn:ngm:class:real-time-computation",
-        "label": "Real-Time Computation"
+        "id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:transducer",
+        "label": "Transducer"
+      },
+      {
+        "id": "urn:ngm:class:embedded-system",
+        "label": "Embedded System"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:actuator-output",
+        "label": "Actuator Output"
+      },
+      {
+        "id": "urn:ngm:class:synthetic-data",
+        "label": "Synthetic Data"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:embodied-ai",
+        "label": "Embodied AI"
+      },
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:kalman-filter",
+        "label": "Kalman Filter"
+      },
+      {
+        "id": "urn:ngm:class:interrupt-driven-io",
+        "label": "Interrupt-Driven I/O"
       }
     ],
     "supports": [
@@ -50,22 +107,35 @@
       {
         "id": "urn:ngm:class:autonomous-system",
         "label": "Autonomous System"
+      },
+      {
+        "id": "urn:ngm:class:machine-vision",
+        "label": "Machine Vision"
       }
     ],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:perception-system",
+        "label": "Perception System"
+      },
+      {
+        "id": "urn:ngm:class:sensor-system",
+        "label": "Sensor System"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:sensor-data",
         "label": "Sensor Data"
       },
       {
-        "id": "urn:ngm:class:sensor-system",
-        "label": "Sensor System"
+        "id": "urn:ngm:class:noise-model",
+        "label": "Noise Model"
       },
       {
-        "id": "urn:ngm:class:sensor-technology",
-        "label": "Sensor Technology"
+        "id": "urn:ngm:class:data-acquisition",
+        "label": "Data Acquisition"
       }
     ]
   },

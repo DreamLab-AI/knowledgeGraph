@@ -4,7 +4,7 @@
   "slug": "applied-mathematics",
   "public": true,
   "classIri": "urn:ngm:class:applied-mathematics",
-  "domain": "mathematics",
+  "domain": "machine-learning",
   "definition": "Applied mathematics is the use of mathematical methods to solve problems in science, engineering, economics and industry. It includes areas such as modelling, numerical analysis and optimisation.",
   "subClassOf": [
     {

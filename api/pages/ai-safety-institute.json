@@ -4,8 +4,8 @@
   "slug": "ai-safety-institute",
   "public": true,
   "classIri": "urn:ngm:class:ai-safety-institute",
-  "domain": "ai-safety",
-  "definition": "An AI Safety Institute is a government body established to evaluate and research the safety of advanced AI models. The United Kingdom established the first such institute in 2023, later renamed the AI Security Institute.",
+  "domain": "governance",
+  "definition": "An AI Safety Institute (AISI) is a state-backed organisation established to evaluate, test, and research the capabilities and safety risks of advanced AI systems, particularly frontier models. Such bodies conduct pre-deployment and post-deployment evaluations, develop standardised benchmarks for dangerous capability elicitation, and advise governments on AI risk policy. The UK established the world's first AISI in November 2023 at the Bletchley Park AI Safety Summit; the US, Japan, Canada, and other nations subsequently established counterpart bodies. The UK later renamed its institute the AI Security Institute (DSIT) to reflect an expanded emphasis on national-security-relevant AI risks.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-safety",
@@ -13,26 +13,113 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.75,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:frontier-ai",
+        "label": "Frontier AI"
+      },
+      {
+        "id": "urn:ngm:class:ai-evaluation",
+        "label": "AI Evaluation"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:ai-alignment",
         "label": "AI Alignment"
+      },
+      {
+        "id": "urn:ngm:class:ai-policy",
+        "label": "AI Policy"
+      },
+      {
+        "id": "urn:ngm:class:international-ai-coordination",
+        "label": "International AI Coordination"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:ai-ethics-board",
+        "label": "AI Ethics Board"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:national-security",
+        "label": "National Security"
+      },
+      {
+        "id": "urn:ngm:class:standards-body",
+        "label": "Standards Body"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:red-teaming",
+        "label": "Red Teaming"
+      },
+      {
+        "id": "urn:ngm:class:capability-evaluation",
+        "label": "Capability Evaluation"
+      },
+      {
+        "id": "urn:ngm:class:benchmarking",
+        "label": "Benchmarking"
+      },
+      {
+        "id": "urn:ngm:class:interpretability",
+        "label": "Interpretability"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-risk-assessment",
+        "label": "AI Risk Assessment"
+      },
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      }
+    ],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:government-ai-policy",
+        "label": "Government AI Policy"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:existential-ai-risk",
+        "label": "Existential AI Risk"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety-summit",
+        "label": "AI Safety Summit"
+      },
+      {
+        "id": "urn:ngm:class:bletchley-declaration",
+        "label": "Bletchley Declaration"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      }
+    ]
   },
   "wikilinks": [
     {

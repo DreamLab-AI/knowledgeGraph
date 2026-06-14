@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:classification",
   "domain": "machine-learning",
-  "definition": "A supervised learning task in which a model assigns inputs to one of a fixed set of discrete categories.",
+  "definition": "Classification is a supervised machine learning task in which a model learns a mapping from input features to a discrete set of predefined category labels, using labelled training examples to optimise decision boundaries. At inference time the model assigns each unseen input to one or more categories by applying a learned discriminant function or probabilistic scoring rule. The task encompasses binary, multi-class, and multi-label variants, and underpins applications ranging from image recognition and natural language understanding to medical diagnosis and fraud detection. Performance is evaluated with metrics such as accuracy, precision, recall, F1-score, and the area under the receiver-operating-characteristic curve, selected according to class imbalance and the relative cost of false positives versus false negatives.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:supervised-learning",
@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.75,
   "maturity": "mature",
   "relationships": {
     "hasPart": [],
@@ -21,23 +21,124 @@
       {
         "id": "urn:ngm:class:supervised-learning",
         "label": "Supervised Learning"
+      },
+      {
+        "id": "urn:ngm:class:labelled-dataset",
+        "label": "Labelled Dataset"
+      },
+      {
+        "id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
+      },
+      {
+        "id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:object-detection",
         "label": "Object Detection"
+      },
+      {
+        "id": "urn:ngm:class:sentiment-analysis",
+        "label": "Sentiment Analysis"
+      },
+      {
+        "id": "urn:ngm:class:image-recognition",
+        "label": "Image Recognition"
+      },
+      {
+        "id": "urn:ngm:class:spam-filtering",
+        "label": "Spam Filtering"
+      },
+      {
+        "id": "urn:ngm:class:medical-diagnosis",
+        "label": "Medical Diagnosis"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "id": "urn:ngm:class:cross-validation",
+        "label": "Cross Validation"
+      },
+      {
+        "id": "urn:ngm:class:hyperparameter-tuning",
+        "label": "Hyperparameter Tuning"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:regression",
+        "label": "Regression"
+      },
+      {
+        "id": "urn:ngm:class:clustering",
+        "label": "Clustering"
+      },
+      {
+        "id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:robotic-perception",
+        "label": "Robotic Perception"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:decision-tree",
+        "label": "Decision Tree"
+      },
+      {
+        "id": "urn:ngm:class:support-vector-machine",
+        "label": "Support Vector Machine"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:naive-bayes",
+        "label": "Naive Bayes"
+      },
+      {
+        "id": "urn:ngm:class:logistic-regression",
+        "label": "Logistic Regression"
+      },
+      {
+        "id": "urn:ngm:class:random-forest",
+        "label": "Random Forest"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:statistical-learning-theory",
+        "label": "Statistical Learning Theory"
+      },
+      {
+        "id": "urn:ngm:class:probabilistic-inference",
+        "label": "Probabilistic Inference"
+      },
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      }
+    ]
   },
   "wikilinks": [
     {

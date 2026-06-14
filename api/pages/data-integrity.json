@@ -4,20 +4,33 @@
   "slug": "data-integrity",
   "public": true,
   "classIri": "urn:ngm:class:data-integrity",
-  "domain": "infrastructure",
-  "definition": "Data integrity is the property that data remains accurate, consistent, and unaltered throughout its entire lifecycle\u2014spanning creation, storage, transmission, and processing\u2014without authorised modification. It is enforced through a combination of technical controls including cryptographic hash functions, digital signatures, Merkle trees, and immutable audit trails, as well as procedural controls such as access management and change-control workflows. Violations of data integrity\u2014whether from storage errors, transmission corruption, or malicious tampering\u2014can have cascading consequences in systems that rely on the data for decision-making.",
+  "domain": "data",
+  "definition": "Data integrity is the property guaranteeing that data remains accurate, complete, consistent, and unaltered throughout its entire lifecycle\u2014spanning creation, storage, transmission, and processing\u2014except through authorised operations. It is enforced through a layered combination of technical controls including cryptographic hash functions, digital signatures, Merkle trees, access control mechanisms, and ACID-compliant transactions, as well as procedural controls such as change-control workflows, audit trails, and immutable logging. Violations\u2014whether from storage errors, transmission corruption, software bugs, or deliberate tampering\u2014can propagate silently and have cascading consequences in any system relying on the data for decision-making or compliance.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:infra-data-management",
-      "label": "Data Management"
+      "id": "urn:ngm:class:data-quality",
+      "label": "Data Quality"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "mature",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      },
+      {
+        "id": "urn:ngm:class:write-ahead-logging",
+        "label": "Write-Ahead Logging"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:audit-trail",
@@ -26,12 +39,55 @@
       {
         "id": "urn:ngm:class:immutability",
         "label": "Immutability"
+      },
+      {
+        "id": "urn:ngm:class:data-provenance",
+        "label": "Data Provenance"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:acid-transactions",
+        "label": "ACID Transactions"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:erasure-coding",
+        "label": "Erasure Coding"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:data-corruption",
+        "label": "Data Corruption"
+      },
+      {
+        "id": "urn:ngm:class:eventual-consistency",
+        "label": "Eventual Consistency"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-provenance",
+        "label": "Supply Chain Provenance"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:hash-function",
@@ -40,10 +96,31 @@
       {
         "id": "urn:ngm:class:merkle-tree",
         "label": "Merkle Tree"
+      },
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:checksum",
+        "label": "Checksum"
+      },
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
       }
     ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-27001",
+        "label": "ISO 27001"
+      },
+      {
+        "id": "urn:ngm:class:nist-cybersecurity-framework",
+        "label": "NIST Cybersecurity Framework"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -51,8 +128,20 @@
         "label": "Distributed Ledger"
       },
       {
-        "id": "urn:ngm:class:fault-tolerance",
-        "label": "Fault Tolerance"
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:information-security",
+        "label": "Information Security"
+      },
+      {
+        "id": "urn:ngm:class:referential-integrity",
+        "label": "Referential Integrity"
+      },
+      {
+        "id": "urn:ngm:class:data-lineage",
+        "label": "Data Lineage"
       }
     ]
   },

@@ -59,7 +59,7 @@ public:: true
   "@type": "Class",
   "label": "Process Layer",
   "definition": "The Process Layer is the cross-cutting stratum that defines the ordered activities and workflows by which work is carried out. It sits above the Organisational structure that staffs it and supports operational execution. It contains process definitions, workflows, hand-offs, and the rules that sequence activity.",
-  "domain": "process",
+  "domain": "infrastructure",
   "maturity": "emerging",
   "qualityScore": 0.7,
   "subClassOf": [

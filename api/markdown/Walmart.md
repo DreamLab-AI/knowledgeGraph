@@ -47,7 +47,7 @@ public:: true
   "@type": "Class",
   "label": "Walmart",
   "definition": "Walmart is a multinational retail company operating a chain of stores and e-commerce services, and an early adopter of blockchain-based supply chain traceability.",
-  "domain": "general",
+  "domain": "supply-chain",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

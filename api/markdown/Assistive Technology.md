@@ -43,7 +43,7 @@ public:: true
   "@type": "Class",
   "label": "Assistive Technology",
   "definition": "Assistive technology is equipment or software that helps people with disabilities perform tasks they would otherwise find difficult. Examples include screen readers, hearing aids and alternative input devices.",
-  "domain": "accessibility",
+  "domain": "standards",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

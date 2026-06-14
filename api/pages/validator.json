@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:validator",
   "domain": "blockchain",
-  "definition": "A network participant in a proof-of-stake system that proposes and attests to blocks, committing stake that can be slashed for misbehaviour.",
+  "definition": "A validator is a network participant in a proof-of-stake blockchain that is responsible for proposing new blocks, attesting to the validity of blocks proposed by others, and participating in the finality mechanism of the network. Validators commit a quantity of cryptocurrency as collateral (stake), which is subject to slashing \u2014 partial or total confiscation \u2014 if the validator behaves dishonestly or fails liveness requirements. Through their collective attestations and proposals, validators form the active set that drives consensus and maintains the canonical chain history.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:consensus-protocol",
@@ -13,31 +13,120 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.75,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:attestation",
+        "label": "Attestation"
+      },
+      {
+        "id": "urn:ngm:class:block-proposal",
+        "label": "Block Proposal"
+      },
+      {
+        "id": "urn:ngm:class:validator-committee",
+        "label": "Validator Committee"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:proof-of-stake",
         "label": "Proof of Stake"
+      },
+      {
+        "id": "urn:ngm:class:staking",
+        "label": "Staking"
+      },
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-key",
+        "label": "Cryptographic Key"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:consensus-mechanism",
         "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:block-finality",
+        "label": "Block Finality"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-network",
+        "label": "Decentralised Network"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:slashing",
+        "label": "Slashing"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      },
+      {
+        "id": "urn:ngm:class:block",
+        "label": "Block"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:miner",
+        "label": "Miner"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-work",
+        "label": "Proof of Work"
+      },
+      {
+        "id": "urn:ngm:class:light-client",
+        "label": "Light Client"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ]
   },
   "wikilinks": [
     {

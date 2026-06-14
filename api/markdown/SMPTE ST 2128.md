@@ -47,7 +47,7 @@ public:: true
   "@type": "Class",
   "label": "SMPTE ST 2128",
   "definition": "SMPTE ST 2128 is a standard from the Society of Motion Picture and Television Engineers in the area of professional media and video signalling. It forms part of the SMPTE family of broadcast and production standards.",
-  "domain": "media",
+  "domain": "standards",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

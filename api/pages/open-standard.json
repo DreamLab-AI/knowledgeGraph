@@ -4,35 +4,137 @@
   "slug": "open-standard",
   "public": true,
   "classIri": "urn:ngm:class:open-standard",
-  "domain": "infrastructure",
-  "definition": "Open Standard is a technology infrastructure concept and a type of infrastructure.",
+  "domain": "standards",
+  "definition": "An open standard is a publicly accessible specification for a technology, protocol, format, or interface that is developed through a transparent, consensus-based process and can be implemented and used without discriminatory restrictions. Open standards enable interoperability between systems from different vendors by providing a shared, stable technical baseline. They are maintained by recognised standards bodies and are typically available royalty-free or under FRAND (Fair, Reasonable And Non-Discriminatory) licensing terms. Open standards contrast with proprietary specifications controlled by a single vendor and are foundational to open, competitive ecosystems.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:infra-legal-and-regulatory",
-      "label": "Legal and Regulatory"
+      "id": "urn:ngm:class:technical-specification",
+      "label": "Technical Specification"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.72,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
-    "implements": [
+    "hasPart": [
       {
-        "id": "urn:ngm:class:technology-infrastructure-domain",
-        "label": "infrastructure"
+        "id": "urn:ngm:class:specification-document",
+        "label": "Specification Document"
+      },
+      {
+        "id": "urn:ngm:class:conformance-test-suite",
+        "label": "Conformance Test Suite"
+      },
+      {
+        "id": "urn:ngm:class:reference-implementation",
+        "label": "Reference Implementation"
       }
     ],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:consensus-process",
+        "label": "Consensus Process"
+      },
+      {
+        "id": "urn:ngm:class:intellectual-property-policy",
+        "label": "Intellectual Property Policy"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:vendor-neutrality",
+        "label": "Vendor Neutrality"
+      },
+      {
+        "id": "urn:ngm:class:ecosystem-competition",
+        "label": "Ecosystem Competition"
+      },
+      {
+        "id": "urn:ngm:class:data-portability",
+        "label": "Data Portability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:proprietary-format",
+        "label": "Proprietary Format"
+      },
+      {
+        "id": "urn:ngm:class:closed-specification",
+        "label": "Closed Specification"
+      },
+      {
+        "id": "urn:ngm:class:vendor-lock-in",
+        "label": "Vendor Lock-in"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:openxr",
+        "label": "OpenXR"
+      },
+      {
+        "id": "urn:ngm:class:gltf",
+        "label": "glTF"
+      },
+      {
+        "id": "urn:ngm:class:webxr",
+        "label": "WebXR"
+      }
+    ],
     "uses": [],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:standards-development-organisation",
+        "label": "Standards Development Organisation"
+      },
+      {
+        "id": "urn:ngm:class:w3c",
+        "label": "W3C"
+      },
+      {
+        "id": "urn:ngm:class:iso",
+        "label": "ISO"
+      },
+      {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      },
+      {
+        "id": "urn:ngm:class:ieee",
+        "label": "IEEE"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:open-source-software",
+        "label": "Open Source Software"
+      },
+      {
+        "id": "urn:ngm:class:protocol",
+        "label": "Protocol"
+      },
+      {
+        "id": "urn:ngm:class:api",
+        "label": "API"
+      },
+      {
+        "id": "urn:ngm:class:frand-licensing",
+        "label": "FRAND Licensing"
+      },
+      {
+        "id": "urn:ngm:class:digital-sovereignty",
+        "label": "Digital Sovereignty"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

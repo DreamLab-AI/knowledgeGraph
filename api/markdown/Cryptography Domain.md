@@ -99,7 +99,7 @@ public:: true
   "@type": "Class",
   "label": "Cryptography Domain",
   "definition": "The Cryptography Domain classifies concepts concerned with the mathematical and computational techniques that secure information and authenticate parties. It covers primitives (encryption, hashing, signatures), protocols built from those primitives, and the assumptions that underpin their security. As a subject classification under the Cryptographic Domain, it scopes the theory and algorithms rather than the wider security operations or governance that consume them.",
-  "domain": "cryptography",
+  "domain": "security",
   "maturity": "emerging",
   "qualityScore": 0.7,
   "subClassOf": [

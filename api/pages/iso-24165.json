@@ -4,8 +4,8 @@
   "slug": "iso-24165",
   "public": true,
   "classIri": "urn:ngm:class:iso-24165",
-  "domain": "standards",
-  "definition": "ISO 24165 specifies a Digital Token Identifier for the unique identification of digital tokens, including the structure and assignment of the identifier.",
+  "domain": "blockchain",
+  "definition": "ISO 24165 is an international standard specifying the Digital Token Identifier (DTI), a universal system for uniquely identifying digital tokens regardless of the distributed ledger or blockchain platform on which they reside. It defines the structure, syntax, and assignment procedures of the DTI, enabling interoperability across exchanges, regulators, financial institutions, and infrastructure providers. The standard is maintained by the Digital Token Identifier Foundation (DTIF) as the Registration Authority under ISO, and addresses persistent identification needs for cryptocurrencies, stablecoins, tokenised assets, and other on-chain instruments. ISO 24165 complements financial instrument identification standards such as ISIN and FIGI by providing blockchain-native unambiguous references usable in regulatory reporting, settlement, and data aggregation.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:technical-standard",
@@ -13,26 +13,133 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.74,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:digital-token-identifier",
+        "label": "Digital Token Identifier"
+      },
+      {
+        "id": "urn:ngm:class:registration-authority",
+        "label": "Registration Authority"
+      }
+    ],
     "requires": [
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "id": "urn:ngm:class:digital-token",
+        "label": "Digital Token"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-reporting",
+        "label": "Regulatory Reporting"
+      },
+      {
+        "id": "urn:ngm:class:financial-data-aggregation",
+        "label": "Financial Data Aggregation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:unique-identifier",
+        "label": "Unique Identifier"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:isin",
+        "label": "ISIN"
+      },
+      {
+        "id": "urn:ngm:class:figi",
+        "label": "FIGI"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:financial-instrument",
+        "label": "Financial Instrument"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cryptographic-hash",
+        "label": "Cryptographic Hash"
+      },
+      {
+        "id": "urn:ngm:class:namespace",
+        "label": "Namespace"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      },
+      {
+        "id": "urn:ngm:class:tokenised-asset",
+        "label": "Tokenised Asset"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso",
+        "label": "ISO"
+      },
+      {
+        "id": "urn:ngm:class:digital-token-identifier-foundation",
+        "label": "Digital Token Identifier Foundation"
+      }
+    ],
+    "partOf": [
       {
         "id": "urn:ngm:class:iso",
         "label": "ISO"
       }
     ],
-    "enables": [],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:lei",
+        "label": "Legal Entity Identifier"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:asset-tokenisation",
+        "label": "Asset Tokenisation"
+      }
+    ]
   },
   "wikilinks": [
     {

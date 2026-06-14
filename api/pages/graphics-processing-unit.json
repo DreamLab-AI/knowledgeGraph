@@ -4,7 +4,7 @@
   "slug": "graphics-processing-unit",
   "public": true,
   "classIri": "urn:ngm:class:graphics-processing-unit",
-  "domain": "general",
+  "domain": "infrastructure",
   "definition": "A Graphics Processing Unit is a parallel processor designed to accelerate the rendering of images and other data-parallel workloads through many concurrent execution units.",
   "subClassOf": [
     {

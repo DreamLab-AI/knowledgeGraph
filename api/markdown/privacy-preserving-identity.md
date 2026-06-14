@@ -1,14 +1,93 @@
 - ### Definition
-  - [[Privacy-Preserving Identity]] is a [[Digital Identity]] paradigm that uses [[Zero-Knowledge Proof]] and [[Selective Disclosure]] cryptography to allow individuals to prove attributes or credentials to verifiers without exposing underlying personal data, supporting [[Privacy-Preserving Authentication]] while maintaining auditability.
+  - [[Privacy-Preserving Identity]] is a [[Digital Identity]] paradigm that employs cryptographic techniques — principally [[Zero-Knowledge Proof]], [[Selective Disclosure]], and unlinkable credential schemes — to enable individuals to assert verified attributes to relying parties without exposing unnecessary personal data. Rooted in David Chaum's foundational work on anonymous credentials and later formalised through Camenisch-Lysyanskaya (CL) signatures, the field has matured into deployable standards including [[W3C Verifiable Credentials]], [[Decentralized Identifiers]], and [[SD-JWT]]. The core privacy property is *minimal disclosure*: a holder reveals only the predicates a verifier requires (e.g. "over 18") rather than raw attributes (e.g. date of birth), and presentations are unlinkable so that no issuer-verifier collusion or cross-session tracking is possible. This reconciles the competing demands of [[Privacy-Preserving Authentication]] and regulatory [[Know Your Customer]] compliance without a central identity broker.
+
+- ### Overview
+  - Privacy-preserving identity emerged from academic cryptography in the 1980s–2000s and has accelerated into production deployments during the 2020s, driven by GDPR-era data minimisation mandates, [[Self-Sovereign Identity]] movements, and the European Digital Identity Wallet mandate under [[eIDAS 2.0]].
+  - The fundamental tension it resolves is between two incompatible goals of classical identity systems:
+    - **Authentication strength** — verifiers need high assurance that a credential is genuine and belongs to the presenter.
+    - **Privacy** — holders must not sacrifice control over their personal data or enable surveillance by issuers, verifiers, or infrastructure providers.
+  - Classical [[Federated Identity]] systems (OAuth2, SAML, OpenID Connect) delegate authentication to an identity provider (IdP) who learns every relying party the user visits, creating a single point of surveillance. Privacy-preserving alternatives eliminate the IdP from the presentation flow entirely.
+  - The key insight is that cryptographic proofs can substitute for data: instead of showing a passport, a holder computes a proof that "this credential was signed by a trusted authority AND the birthdate field satisfies age > 18" — revealing nothing else.
+
+- ### Key Mechanisms
+  - **[[Zero-Knowledge Proof]] (ZKP)** — allows a prover to convince a verifier of a predicate's truth without revealing any witness. Applied to identity, this means proving "I hold a valid government credential" without revealing the credential or the subject's identity.
+  - **[[Selective Disclosure]]** — credential formats where individual attributes can be revealed or hidden independently. BBS+ signatures and SD-JWT both support this; the former provides stronger unlinkability guarantees.
+  - **[[BBS+ Signatures]]** — a pairing-based multi-message signature scheme that enables constant-size unlinkable proofs of subsets of signed messages. Standardised through IETF drafts and used in W3C DID-based credential ecosystems.
+  - **[[zk-SNARK]] / zk-STARK circuits** — succinct non-interactive proofs enabling arbitrary predicate proofs (range proofs, set membership, hashing constraints) over credential fields, used in high-assurance or on-chain verification contexts.
+  - **[[Cryptographic Commitment]]** — allows a prover to commit to a value without revealing it; used in CL signatures and Pedersen-commitment-based credential schemes to bind credential attributes to the holder without linkable identifiers.
+  - **[[Trusted Execution Environment]] (TEE)** — hardware-backed secure enclaves (Intel SGX, ARM TrustZone, Apple Secure Enclave) that hold credential key material and perform signing operations in isolation, providing a tamper-resistant trust anchor for [[Digital Identity Wallet]] applications.
+  - **[[Decentralized Identifiers]] (DIDs)** — W3C-standardised self-controlled identifiers whose DID documents are resolvable from [[Blockchain]] ledgers or peer-to-peer registries, removing reliance on central certificate authorities.
+
+- ### Credential Formats & Protocols
+  - **W3C Verifiable Credentials (VC) Data Model** — JSON-LD-based format for issuer-signed credential claims; defines issuer, subject, and verifier roles; supports multiple proof formats including JSON Web Signature (JWS), BBS+, and zk-SNARK proofs.
+  - **SD-JWT (Selective Disclosure for JWTs)** — IETF draft format combining JWT with a salted hash commitment structure, enabling selective disclosure of individual claims while retaining compatibility with existing OAuth2 infrastructure. Adopted by the EUDIW technical specification.
+  - **ISO/IEC 18013-5 (mDL)** — mobile driving licence standard using CBOR and COSE signatures with selective disclosure; deployed in iOS/Android digital wallet integrations in multiple jurisdictions.
+  - **Idemix (Identity Mixer)** — IBM's anonymous credential system based on CL signatures, offering multi-show unlinkability and pseudonymous authentication; used in Hyperledger Fabric.
+  - **U-Prove** — Microsoft Research anonymous credential tokens providing one-show unlinkability with minimal computational overhead; contributed to IETF.
+
+- ### Applications & Use Cases
+  - **Age verification** — online platforms can verify "user is 18+" without learning name, birthdate, or identity. Deployed by European telcos and content platforms under national age assurance regulations.
+  - **Financial KYC / AML** — regulated entities can receive proof of KYC completion from a trusted KYC provider without receiving raw identity documents, reducing data liability. The [[Know Your Customer]] predicate is disclosed; personal data is not.
+  - **Healthcare credential verification** — clinician professional licences, vaccination certificates, and insurance eligibility are provable without exposing full health records. Piloted under EU COVID-19 Digital Certificate infrastructure.
+  - **Cross-border identity portability** — [[eIDAS 2.0]] mandates that EU citizens can use a national digital identity wallet to authenticate across member state services with selective attribute disclosure.
+  - **Web3 / DeFi pseudonymous compliance** — users prove regulatory compliance (not sanctioned, accredited investor status) to DeFi protocols on-chain using [[zk-SNARK]] identity proofs without doxxing their wallet-to-identity link.
+  - **Enterprise workforce identity** — employees authenticate to SaaS services proving role membership without central SSO providers logging every access.
+  - **Metaverse and spatial computing** — [[Trusted Execution Environment]]-backed identity in [[Metaverse]] environments enables age-gating and creator royalty attribution without linking persistent pseudonymous avatars to real-world identities.
 
 - ### Relationships
-  - Privacy-preserving identity systems are built on [[Verifiable Credentials]] and [[Decentralized Identifiers]] as specified by the W3C, stored in [[Digital Identity Wallet]] applications. [[Zero-Knowledge Proof]] schemes such as BBS+ signatures and zk-SNARKs enable [[Selective Disclosure]] of credential attributes. The approach is closely related to [[Decentralized Identity]] architectures and is supported by standards from [[W3C Verifiable Credentials]]. [[Cryptographic Commitment]] schemes enable unlinkable presentations across different verifiers, preventing correlation.
+  - uses:: [[Zero-Knowledge Proof]]
+  - uses:: [[Selective Disclosure]]
+  - uses:: [[Verifiable Credentials]]
+  - uses:: [[Decentralized Identifiers]]
+  - uses:: [[BBS+ Signatures]]
+  - uses:: [[zk-SNARK]]
+  - uses:: [[Trusted Execution Environment]]
+  - enables:: [[Privacy-Preserving Authentication]]
+  - enables:: [[Identity Verification]]
+  - enables:: [[Anonymous Credential]]
+  - enables:: [[Age Verification]]
+  - enables:: [[Self-Sovereign Identity]]
+  - requires:: [[Cryptographic Commitment]]
+  - requires:: [[Public Key Infrastructure]]
+  - requires:: [[Digital Signature]]
+  - dependsOn:: [[Decentralized Identity]]
+  - dependsOn:: [[Digital Identity Wallet]]
+  - implements:: [[W3C Verifiable Credentials]]
+  - implements:: [[SD-JWT]]
+  - implements:: [[eIDAS 2.0]]
+  - supports:: [[GDPR Compliance]]
+  - supports:: [[Know Your Customer]]
+  - standardizedBy:: [[W3C]]
+  - standardizedBy:: [[IETF]]
+  - contrastsWith:: [[Federated Identity]]
+  - contrastsWith:: [[Centralised Identity]]
+  - bridges-to:: [[Blockchain]]
+  - bridges-to:: [[Secure Multi-Party Computation]]
+  - relatedTo:: [[Unlinkability]]
+  - relatedTo:: [[Data Minimisation]]
 
-- ### Content
-  - The intellectual lineage of privacy-preserving identity begins with David Chaum's 1985 anonymous credentials paper, which proposed credential systems where users could prove properties (e.g., "over 18") without revealing which specific credential was used or enabling issuer-verifier correlation. CL signatures (Camenisch-Lysyanskaya, 2001) formalised this with efficient unlinkable multi-show proofs. IBM's Identity Mixer (Idemix) and Microsoft's U-Prove built practical systems, though adoption was limited by ecosystem fragmentation and performance constraints.
+- ### Standards & Context
+  - **W3C Verifiable Credentials Data Model 2.0** — core credential format, controlled identifiers (DIDs), and proof formats. Published as W3C Recommendation.
+  - **W3C DID Core 1.0** — Decentralized Identifiers specification, W3C Recommendation, underpinning portable credential subjects.
+  - **IETF SD-JWT** — `draft-ietf-oauth-selective-disclosure-jwt`; selective disclosure extension to RFC 7519 (JWT).
+  - **IETF BBS Signature Scheme** — `draft-irtf-cfrg-bbs-signatures`; cryptographic specification for BBS+ from the CFRG working group.
+  - **ISO/IEC 18013-5** — mDL (mobile driving licence) with selective disclosure; adopted by Apple Wallet, Google Wallet.
+  - **ISO/IEC 29101** — privacy architecture framework for identity management systems.
+  - **eIDAS 2.0 (Regulation EU 2024/1183)** — mandates European Digital Identity Wallet (EUDIW) with selective disclosure and [[Privacy-Preserving Authentication]] for all EU member states.
+  - **NIST SP 800-63-4** — US digital identity guidelines covering assurance levels and privacy requirements for authentication.
+  - **OpenID for Verifiable Credentials (OID4VC)** — suite of OpenID Foundation specifications (OID4VCI, OID4VP) layering VC issuance and presentation over OAuth2 / OpenID Connect infrastructure; adopted by EUDIW architecture.
+  - Relevant regulators include the European Data Protection Board (EDPB), UK ICO, and NIST, all of which require data minimisation principles that privacy-preserving identity directly implements.
 
-  - Modern privacy-preserving identity architectures combine three layers. At the credential layer, the W3C Verifiable Credentials standard defines a JSON-LD format for issuer-signed claims. At the presentation layer, BBS+ signatures enable selective disclosure of individual credential attributes with a constant-size proof regardless of the number of attributes hidden, while zk-SNARK circuits enable arbitrary predicate proofs (e.g., "age > 18" without revealing birthdate). At the transport layer, Decentralized Identifiers (DIDs) provide resolvable, self-controlled identifiers not bound to any central registry.
+- ### Historical Lineage
+  - **1985** — David Chaum's "Security Without Identification" proposes anonymous credential systems; introduces blinded signatures.
+  - **2001** — Camenisch and Lysyanskaya publish CL signatures enabling efficient multi-show unlinkable credential proofs.
+  - **2004** — IBM Identity Mixer (Idemix) implements CL signatures; Microsoft U-Prove tokens introduced.
+  - **2015** — Decentralized Identity Foundation (DIF) formed; early DID drafts circulate.
+  - **2019** — W3C Verifiable Credentials Working Group publishes first Candidate Recommendation.
+  - **2021** — BBS+ signatures gain traction in DIF and IETF CFRG; Hyperledger AnonCreds adopts BBS+.
+  - **2022** — EU Digital Identity Wallet Architecture and Reference Framework (ARF) published; SD-JWT IETF draft initiated.
+  - **2024** — eIDAS 2.0 published as EU law; ISO 18013-5 widely deployed in Apple/Google wallets; OID4VC profiles stabilised.
 
-  - Key application domains include age verification and content access without central tracking, financial KYC compliance with minimal data sharing, healthcare credential verification (vaccination status, professional licences), cross-border identity portability, and pseudonymous authentication in Web3 protocols. The European Digital Identity Wallet (EUDIW) regulation (eIDAS 2.0) mandates selective disclosure credential support across EU member states, driving broad deployment from 2025 onward.
-
-  - As of 2024-2025, the IETF and W3C are standardising SD-JWT (Selective Disclosure for JWTs) as a pragmatic near-term format with partial unlinkability, while BBS+-based credentials are advancing through IETF drafts. The tension between strong privacy guarantees (unlinkability, zero-knowledge) and regulatory transparency requirements (anti-money laundering, sanctions screening) remains the central design challenge. Hardware-backed identity wallets using secure enclaves are emerging as the trust anchor, with TEE-based remote attestation enabling privacy-preserving proof of device integrity.
+- ### Provenance
+  - sources:: W3C VC Data Model 2.0; IETF SD-JWT and BBS+ drafts; ISO/IEC 18013-5; eIDAS 2.0 Regulation; Camenisch & Lysyanskaya (2001); Chaum (1985); NIST SP 800-63-4; OpenID Foundation OID4VC specifications
+  - updated:: 2026-06-13

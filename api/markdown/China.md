@@ -43,7 +43,7 @@ public:: true
   "@type": "Class",
   "label": "China",
   "definition": "A country in East Asia and the world's most populous nation for much of recent history, with a large economy and significant influence in technology, manufacturing, and digital currency policy.",
-  "domain": "geography",
+  "domain": "governance",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

@@ -4,7 +4,7 @@
   "slug": "statistical-learning-theory",
   "public": true,
   "classIri": "urn:ngm:class:statistical-learning-theory",
-  "domain": "mathematics",
+  "domain": "machine-learning",
   "definition": "A framework that studies the conditions under which algorithms can generalise from finite training data to unseen data, providing theoretical bounds on prediction error.",
   "subClassOf": [
     {

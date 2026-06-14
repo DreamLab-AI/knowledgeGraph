@@ -4,8 +4,8 @@
   "slug": "dns",
   "public": true,
   "classIri": "urn:ngm:class:dns",
-  "domain": "general",
-  "definition": "The Domain Name System, a hierarchical and distributed naming system that resolves human-readable domain names into IP addresses and other resource records.",
+  "domain": "infrastructure",
+  "definition": "The Domain Name System (DNS) is a hierarchical, distributed naming system and directory service that translates human-readable domain names into IP addresses and other resource records required for locating internet services. Operating as a global, federated database partitioned into zones, DNS uses a delegation tree rooted at thirteen authoritative root-server clusters and propagates queries recursively through top-level domain, second-level domain, and sub-domain name servers. It is defined in RFC 1034 and RFC 1035 and extended by DNSSEC (RFC 4033-4035) to provide cryptographic integrity verification of responses, mitigating cache poisoning, spoofing, and man-in-the-middle attacks against the resolution chain.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:application-layer",
@@ -13,31 +13,133 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
-  "maturity": "established",
+  "qualityScore": 0.75,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:dns-resolver",
+        "label": "DNS Resolver"
+      },
+      {
+        "id": "urn:ngm:class:authoritative-name-server",
+        "label": "Authoritative Name Server"
+      },
+      {
+        "id": "urn:ngm:class:dns-zone",
+        "label": "DNS Zone"
+      },
+      {
+        "id": "urn:ngm:class:dns-record",
+        "label": "DNS Record"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:network-protocol",
         "label": "Network Protocol"
+      },
+      {
+        "id": "urn:ngm:class:udp",
+        "label": "UDP"
+      },
+      {
+        "id": "urn:ngm:class:tcp",
+        "label": "TCP"
+      },
+      {
+        "id": "urn:ngm:class:ip-addressing",
+        "label": "IP Addressing"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:http",
         "label": "HTTP"
+      },
+      {
+        "id": "urn:ngm:class:email-delivery",
+        "label": "Email Delivery"
+      },
+      {
+        "id": "urn:ngm:class:tls",
+        "label": "TLS"
+      },
+      {
+        "id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
+      },
+      {
+        "id": "urn:ngm:class:service-discovery",
+        "label": "Service Discovery"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:dnssec",
+        "label": "DNSSEC"
+      },
+      {
+        "id": "urn:ngm:class:dns-over-https",
+        "label": "DNS over HTTPS"
+      },
+      {
+        "id": "urn:ngm:class:dns-over-tls",
+        "label": "DNS over TLS"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:decentralised-naming",
+        "label": "Decentralised Naming"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-naming",
+        "label": "Blockchain Naming"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
+    ],
     "uses": [],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      },
+      {
+        "id": "urn:ngm:class:icann",
+        "label": "ICANN"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:load-balancing",
+        "label": "Load Balancing"
+      },
+      {
+        "id": "urn:ngm:class:anycast-routing",
+        "label": "Anycast Routing"
+      },
+      {
+        "id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      },
+      {
+        "id": "urn:ngm:class:caching",
+        "label": "Caching"
+      }
+    ]
   },
   "wikilinks": [
     {

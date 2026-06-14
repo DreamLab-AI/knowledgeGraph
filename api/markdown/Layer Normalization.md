@@ -59,7 +59,7 @@ public:: true
   "@type": "Class",
   "label": "Layer Normalization",
   "definition": "A neural network technique that normalises the activations across the features of a single training example, stabilising and accelerating training. It is widely used in transformer architectures where it normalises each token's representation independently of the batch.",
-  "domain": "general",
+  "domain": "machine-learning",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [

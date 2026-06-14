@@ -5,42 +5,102 @@
   "public": true,
   "classIri": "urn:ngm:class:anthropic",
   "domain": "artificial-intelligence",
-  "definition": "Anthropic is an AI safety company founded in 2021 that develops large language models under the Claude family brand, with research programmes centred on constitutional AI, mechanistic interpretability, and scalable oversight. The company occupies the position of a safety-focused frontier AI laboratory, publishing research on alignment and interpretability while deploying Claude models commercially via API and consumer products. Anthropic's Constitutional AI (CAI) approach trains models to follow a set of principles using AI feedback rather than solely human labelling, aiming to reduce harmful outputs systematically.",
+  "definition": "Anthropic is a frontier AI safety company founded in 2021 by Dario Amodei, Daniela Amodei, and colleagues formerly at OpenAI, whose primary mission is the responsible development and maintenance of advanced AI for the long-term benefit of humanity. The company develops and deploys the Claude family of large language models, distinguished by a Constitutional AI training methodology that uses AI self-critique and revision against explicit principles to systematically reduce harmful outputs. Anthropic's research agenda spans mechanistic interpretability, scalable oversight, red-teaming, and the Responsible Scaling Policy \u2014 a formal commitment tying capability advancement to mandatory safety evaluations at defined dangerous-capability thresholds. As a public-benefit corporation, Anthropic occupies a distinctive position among frontier AI laboratories by integrating commercial model deployment with open publication of alignment and interpretability research.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ai-governance-and-ethics",
-      "label": "AI Governance and Ethics"
+      "id": "urn:ngm:class:ai-safety-research",
+      "label": "AI Safety Research"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
-  "maturity": "emerging",
+  "qualityScore": 0.74,
+  "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:constitutional-ai-training-methodology",
+        "label": "Constitutional AI"
+      },
+      {
+        "id": "urn:ngm:class:responsible-scaling-policy",
+        "label": "Responsible Scaling Policy"
+      },
+      {
+        "id": "urn:ngm:class:mechanistic-interpretability",
+        "label": "Mechanistic Interpretability"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:claude-model-family",
+        "label": "Claude Model Family"
+      },
+      {
+        "id": "urn:ngm:class:model-api",
+        "label": "Model API"
+      },
+      {
+        "id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:openai",
+        "label": "OpenAI"
+      },
+      {
+        "id": "urn:ngm:class:google-deepmind",
+        "label": "Google DeepMind"
+      },
+      {
+        "id": "urn:ngm:class:meta-ai",
+        "label": "Meta AI"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      },
+      {
+        "id": "urn:ngm:class:model-cards",
+        "label": "Model Cards"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:large-language-models",
         "label": "Large Language Models"
       },
       {
-        "id": "urn:ngm:class:rlhf",
-        "label": "RLHF"
+        "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "id": "urn:ngm:class:red-teaming",
+        "label": "Red Teaming"
       }
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:ai-safety-research",
-        "label": "AI Safety Research"
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
       },
       {
-        "id": "urn:ngm:class:constitutional-ai-training-methodology",
-        "label": "Constitutional AI"
+        "id": "urn:ngm:class:scalable-oversight",
+        "label": "Scalable Oversight"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
       }
     ],
     "standardizedBy": [],
@@ -49,6 +109,22 @@
       {
         "id": "urn:ngm:class:interpretability",
         "label": "Interpretability"
+      },
+      {
+        "id": "urn:ngm:class:superposition-hypothesis",
+        "label": "Superposition Hypothesis"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety-evaluation",
+        "label": "AI Safety Evaluation"
+      },
+      {
+        "id": "urn:ngm:class:frontier-ai",
+        "label": "Frontier AI"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance-and-ethics",
+        "label": "AI Governance and Ethics"
       }
     ]
   },

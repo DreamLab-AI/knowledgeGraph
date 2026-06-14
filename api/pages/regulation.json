@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:regulation",
   "domain": "governance",
-  "definition": "Regulation is the use of rules and authority by government or designated bodies to direct, constrain or oversee the conduct of activities.",
+  "definition": "Regulation is the systematic use of authoritative rules, standards, and enforcement mechanisms by governments, inter-governmental bodies, or designated agencies to direct, constrain, or oversee the conduct of individuals, organisations, and systems within a defined domain. It encompasses the full lifecycle from rule-making and publication through monitoring, inspection, and sanctioning of non-compliance. Regulation is distinct from voluntary standards in that it carries legal force and can result in penalties, licence revocation, or other coercive consequences for non-conformance. In technical domains such as AI, data systems, and critical infrastructure, regulation increasingly intersects with algorithmic accountability, risk classification, and mandatory transparency obligations.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:governance",
@@ -13,26 +13,140 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
-  "maturity": "established",
+  "qualityScore": 0.74,
+  "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [
+    "hasPart": [
       {
         "id": "urn:ngm:class:regulatory-frameworks",
         "label": "Regulatory Frameworks"
+      },
+      {
+        "id": "urn:ngm:class:enforcement",
+        "label": "Enforcement"
+      },
+      {
+        "id": "urn:ngm:class:rule-making",
+        "label": "Rule-Making"
+      },
+      {
+        "id": "urn:ngm:class:supervisory-authority",
+        "label": "Supervisory Authority"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      },
+      {
+        "id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      },
+      {
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:consumer-protection",
+        "label": "Consumer Protection"
+      },
+      {
+        "id": "urn:ngm:class:market-integrity",
+        "label": "Market Integrity"
+      },
+      {
+        "id": "urn:ngm:class:systemic-risk-management",
+        "label": "Systemic Risk Management"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:legislation",
+        "label": "Legislation"
+      },
+      {
+        "id": "urn:ngm:class:standards",
+        "label": "Standards"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:policy",
+        "label": "Policy"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:self-regulation",
+        "label": "Self-Regulation"
+      },
+      {
+        "id": "urn:ngm:class:deregulation",
+        "label": "Deregulation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-accountability",
+        "label": "Algorithmic Accountability"
+      },
+      {
+        "id": "urn:ngm:class:data-sovereignty",
+        "label": "Data Sovereignty"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "id": "urn:ngm:class:impact-assessment",
+        "label": "Impact Assessment"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      },
+      {
+        "id": "urn:ngm:class:safety",
+        "label": "Safety"
+      }
+    ],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "id": "urn:ngm:class:public-policy",
+        "label": "Public Policy"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:audit",
+        "label": "Audit"
+      },
+      {
+        "id": "urn:ngm:class:certification",
+        "label": "Certification"
+      },
+      {
+        "id": "urn:ngm:class:licensing",
+        "label": "Licensing"
+      }
+    ]
   },
   "wikilinks": [
     {

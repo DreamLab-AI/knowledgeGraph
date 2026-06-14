@@ -4,7 +4,7 @@
   "slug": "content-delivery",
   "public": true,
   "classIri": "urn:ngm:class:content-delivery",
-  "domain": "networking",
+  "domain": "infrastructure",
   "definition": "Content delivery is the distribution of digital media such as web pages, video and software to end users, typically optimised for speed and reliability. It is commonly accelerated by content delivery networks.",
   "subClassOf": [
     {

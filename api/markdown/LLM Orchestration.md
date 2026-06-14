@@ -51,7 +51,7 @@ public:: true
   "@type": "Class",
   "label": "LLM Orchestration",
   "definition": "The coordination of multiple calls to one or more large language models, together with tools, retrieval and control logic, to accomplish a task that a single prompt cannot reliably handle.",
-  "domain": "natural-language-processing",
+  "domain": "ai",
   "maturity": "growing",
   "qualityScore": 0.7,
   "subClassOf": [

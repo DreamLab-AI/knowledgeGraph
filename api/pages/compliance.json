@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:compliance",
   "domain": "governance",
-  "definition": "Compliance is the organisational practice of adhering to laws, regulations, standards, and internal policies that govern the conduct of systems, processes, and personnel. It encompasses the identification of applicable obligations, the implementation of controls to satisfy them, and continuous monitoring to verify ongoing conformance.",
+  "definition": "Compliance is the organisational practice of adhering to laws, regulations, standards, and internal policies that govern the conduct of systems, processes, and personnel. It encompasses the identification of applicable obligations, the implementation of controls to satisfy them, continuous monitoring to verify ongoing conformance, and documented evidence to demonstrate that conformance to internal and external stakeholders. Modern compliance programmes span regulatory domains including data protection, financial services, cybersecurity, environmental obligations, and increasingly AI-specific requirements.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:governance",
@@ -13,10 +13,23 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.72,
   "maturity": "mature",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      },
+      {
+        "id": "urn:ngm:class:compliance-monitoring",
+        "label": "Compliance Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:control",
+        "label": "Control"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:audit",
@@ -25,27 +38,31 @@
       {
         "id": "urn:ngm:class:risk-assessment",
         "label": "Risk Assessment"
-      }
-    ],
-    "enables": [],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [
-      {
-        "id": "urn:ngm:class:compliance-framework",
-        "label": "Compliance Framework"
       },
       {
         "id": "urn:ngm:class:audit-trail",
         "label": "Audit Trail"
+      },
+      {
+        "id": "urn:ngm:class:policy",
+        "label": "Policy"
       }
     ],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
+    "enables": [
+      {
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "id": "urn:ngm:class:trust",
+        "label": "Trust"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-approval",
+        "label": "Regulatory Approval"
+      }
+    ],
+    "dependsOn": [
       {
         "id": "urn:ngm:class:governance-framework",
         "label": "Governance Framework"
@@ -53,6 +70,68 @@
       {
         "id": "urn:ngm:class:data-protection",
         "label": "Data Protection"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:regulation",
+        "label": "Regulation"
+      },
+      {
+        "id": "urn:ngm:class:standard",
+        "label": "Standard"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:non-conformance",
+        "label": "Non-Conformance"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:grc-platform",
+        "label": "GRC Platform"
+      },
+      {
+        "id": "urn:ngm:class:identity-and-access-management",
+        "label": "Identity and Access Management"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ethics",
+        "label": "Ethics"
+      },
+      {
+        "id": "urn:ngm:class:certification",
+        "label": "Certification"
+      },
+      {
+        "id": "urn:ngm:class:reporting",
+        "label": "Reporting"
       }
     ]
   },

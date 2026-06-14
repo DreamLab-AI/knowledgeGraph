@@ -4,7 +4,7 @@
   "slug": "open-api-specification",
   "public": true,
   "classIri": "urn:ngm:class:open-api-specification",
-  "domain": "web",
+  "domain": "infrastructure",
   "definition": "The OpenAPI Specification (OAS) is a language-agnostic, machine-readable standard for describing RESTful HTTP APIs using a structured JSON or YAML document that defines endpoints, request/response schemas, authentication methods, and parameter types. Governed by the OpenAPI Initiative (a Linux Foundation project), it enables automated generation of client SDKs, server stubs, interactive documentation, and contract-based testing from a single source of truth. Originally derived from the Swagger specification, OAS version 3.x is now the dominant industry standard for API description. It promotes interoperability by allowing API consumers to understand a service's capabilities without access to its source code.",
   "subClassOf": [
     {

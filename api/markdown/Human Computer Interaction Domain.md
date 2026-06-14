@@ -83,7 +83,7 @@ public:: true
   "@type": "Class",
   "label": "Human Computer Interaction Domain",
   "definition": "The Human Computer Interaction Domain classifies concepts concerning the design, evaluation and study of interfaces between people and computational systems. It covers how users perceive, reason about and act upon technology, and how systems should present information and accept input. As a top-level subject axis it connects cognitive and behavioural concerns with the engineering of interactive systems.",
-  "domain": "human-computer-interaction",
+  "domain": "infrastructure",
   "maturity": "emerging",
   "qualityScore": 0.7,
   "subClassOf": [
