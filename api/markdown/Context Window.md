@@ -58,8 +58,8 @@ public:: true
   "domain": "artificial-intelligence",
   "maturity": "emerging",
   "subClassOf": {
-    "@id": "urn:ngm:class:model-hyperparameter",
-    "label": "Model Hyperparameter"
+    "@id": "urn:ngm:class:ai-model-architecture",
+    "label": "AI Model Architecture"
   },
   "relations": {
     "partOf": [
@@ -91,6 +91,7 @@ public:: true
       {"@id": "urn:ngm:class:recurrent-neural-network", "label": "Recurrent Neural Network"}
     ],
     "relatedTo": [
+      {"@id": "urn:ngm:class:model-hyperparameter", "label": "Model Hyperparameter"},
       {"@id": "urn:ngm:class:language-modeling", "label": "Language Modeling"},
       {"@id": "urn:ngm:class:prompt-engineering", "label": "Prompt Engineering"},
       {"@id": "urn:ngm:class:context-engineering", "label": "Context Engineering"},

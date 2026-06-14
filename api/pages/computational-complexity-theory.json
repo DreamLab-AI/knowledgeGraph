@@ -8,8 +8,8 @@
   "definition": "The study of the resources, principally time and memory, required to solve computational problems, and the classification of problems according to their inherent difficulty into complexity classes such as P, NP, PSPACE, and EXPTIME.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:theoretical-computer-science",
-      "label": "Theoretical Computer Science"
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "Ai Research Area"
     }
   ],
   "entityType": "Class",
@@ -130,6 +130,10 @@
       {
         "id": "urn:ngm:class:randomized-algorithms",
         "label": "Randomized Algorithms"
+      },
+      {
+        "id": "urn:ngm:class:theoretical-computer-science",
+        "label": "Theoretical Computer Science"
       }
     ]
   },

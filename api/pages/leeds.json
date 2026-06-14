@@ -8,8 +8,8 @@
   "definition": "Leeds is a major city and metropolitan district in West Yorkshire, England, constituting one of the largest urban economies in the United Kingdom outside London. It is distinguished by its concentration of financial and professional services, a substantial legal sector, a growing health-data and digital technology cluster, and two research-intensive universities. As a principal node of the Northern Powerhouse agenda, Leeds anchors cross-Pennine connectivity and regional economic governance, and hosts significant infrastructure assets including a large rail interchange, innovation campuses, and regulated financial institutions.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:urban-centre",
-      "label": "Urban Centre"
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Legal and Regulatory"
     }
   ],
   "entityType": "Class",
@@ -123,6 +123,10 @@
       {
         "id": "urn:ngm:class:yorkshire",
         "label": "Yorkshire"
+      },
+      {
+        "id": "urn:ngm:class:urban-centre",
+        "label": "Urban Centre"
       }
     ]
   },

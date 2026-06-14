@@ -8,8 +8,8 @@
   "definition": "The Hyperledger Foundation is an open-source collaborative initiative hosted by the Linux Foundation, founded in December 2015, that stewards a portfolio of enterprise-grade distributed ledger frameworks, identity toolkits, and interoperability libraries. Its flagship projects include Hyperledger Fabric (a modular permissioned DLT with pluggable consensus and chaincode-based smart contracts), Hyperledger Besu (an Ethereum-compatible client for public and private enterprise networks), Hyperledger Aries (a decentralised identity and verifiable credentials stack), and Hyperledger Cacti (a cross-ledger interoperability framework). The Foundation operates under an open-governance model with a Technical Steering Committee, project lifecycle governance (Incubation, Graduated, Dormant), and membership tiers spanning major technology vendors, financial institutions, and government bodies worldwide.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:open-source-foundation",
-      "label": "Open Source Foundation"
+      "id": "urn:ngm:class:bc-governance-and-regulation",
+      "label": "Governance and Regulation"
     }
   ],
   "entityType": "Class",
@@ -140,6 +140,10 @@
       {
         "id": "urn:ngm:class:open-source-software",
         "label": "Open Source Software"
+      },
+      {
+        "id": "urn:ngm:class:open-source-foundation",
+        "label": "Open Source Foundation"
       }
     ]
   },

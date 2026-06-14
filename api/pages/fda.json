@@ -8,8 +8,8 @@
   "definition": "The Food and Drug Administration (FDA) is a United States federal regulatory agency within the Department of Health and Human Services responsible for protecting public health by ensuring the safety, efficacy, and security of human and veterinary drugs, biological products, medical devices, the nation's food supply, cosmetics, and products that emit radiation. The agency enforces the Federal Food, Drug, and Cosmetic Act alongside a portfolio of additional statutes, conducting pre-market review and post-market surveillance across its regulated domains. Its approval pathways \u2014 including New Drug Applications, Biologics License Applications, and Premarket Approval \u2014 establish globally influential benchmarks that shape international pharmaceutical regulation, medical-device standards, and increasingly the governance of AI-enabled diagnostics and digital health software.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:regulatory-agency",
-      "label": "Regulatory Agency"
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Infra Legal and Regulatory"
     }
   ],
   "entityType": "Class",
@@ -137,6 +137,10 @@
       }
     ],
     "relatedTo": [
+      {
+        "id": "urn:ngm:class:regulatory-agency",
+        "label": "Regulatory Agency"
+      },
       {
         "id": "urn:ngm:class:drug-regulation",
         "label": "Drug Regulation"

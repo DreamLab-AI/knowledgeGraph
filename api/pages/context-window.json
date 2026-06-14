@@ -8,8 +8,8 @@
   "definition": "The maximum sequence length that a language model can process in a single forward pass, measured in tokens; it determines how much prior context the model can attend to during generation or understanding tasks and directly bounds memory, coherence, and long-range reasoning capabilities.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:model-hyperparameter",
-      "label": "Model Hyperparameter"
+      "id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture"
     }
   ],
   "entityType": "Class",
@@ -107,6 +107,10 @@
       }
     ],
     "relatedTo": [
+      {
+        "id": "urn:ngm:class:model-hyperparameter",
+        "label": "Model Hyperparameter"
+      },
       {
         "id": "urn:ngm:class:language-modeling",
         "label": "Language Modeling"

@@ -32,8 +32,8 @@ public:: true
   "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:empirical-machine-learning",
-      "label": "Empirical Machine Learning"
+      "@id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area"
     }
   ],
   "relations": {
@@ -72,7 +72,8 @@ public:: true
       {"@id": "urn:ngm:class:power-law", "label": "Power Law"},
       {"@id": "urn:ngm:class:irreducible-loss", "label": "Irreducible Loss"},
       {"@id": "urn:ngm:class:data-efficiency", "label": "Data Efficiency"},
-      {"@id": "urn:ngm:class:model-compression", "label": "Model Compression"}
+      {"@id": "urn:ngm:class:model-compression", "label": "Model Compression"},
+      {"@id": "urn:ngm:class:empirical-machine-learning", "label": "Empirical Machine Learning"}
     ],
     "bridgesTo": [
       {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},

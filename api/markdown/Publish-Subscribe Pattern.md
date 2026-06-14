@@ -51,8 +51,8 @@ public:: true
   "maturity": "mature",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:messaging-pattern",
-      "label": "Messaging Pattern"
+      "@id": "urn:ngm:class:infra-software-engineering",
+      "label": "Infra Software Engineering"
     }
   ],
   "relations": {
@@ -190,6 +190,10 @@ public:: true
       {
         "@id": "urn:ngm:class:cqrs",
         "label": "CQRS"
+      },
+      {
+        "@id": "urn:ngm:class:messaging-pattern",
+        "label": "Messaging Pattern"
       }
     ]
   },

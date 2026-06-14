@@ -46,8 +46,8 @@ public:: true
   "domain": "machine-learning",
   "maturity": "established",
   "subClassOf": {
-    "@id": "urn:ngm:class:sequence-representation",
-    "label": "Sequence Representation"
+    "@id": "urn:ngm:class:ai-model-architecture",
+    "label": "AI Model Architecture"
   },
   "relations": {
     "partOf": [
@@ -92,7 +92,8 @@ public:: true
     "relatedTo": [
       {"@id": "urn:ngm:class:word-embedding", "label": "Word Embedding"},
       {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
-      {"@id": "urn:ngm:class:sequence-length-extrapolation", "label": "Sequence Length Extrapolation"}
+      {"@id": "urn:ngm:class:sequence-length-extrapolation", "label": "Sequence Length Extrapolation"},
+      {"@id": "urn:ngm:class:sequence-representation", "label": "Sequence Representation"}
     ],
     "bridgesTo": [
       {"@id": "urn:ngm:class:spatial-encoding", "label": "Spatial Encoding"}

@@ -56,8 +56,8 @@ elevatedFrom:: [[Google]]
   "maturity": "mature",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:artificial-intelligence-company",
-      "label": "Artificial Intelligence Company"
+      "@id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
     }
   ],
   "relations": {
@@ -176,6 +176,10 @@ elevatedFrom:: [[Google]]
       }
     ],
     "relatedTo": [
+      {
+        "@id": "urn:ngm:class:artificial-intelligence-company",
+        "label": "Artificial Intelligence Company"
+      },
       {
         "@id": "urn:ngm:class:large-language-model",
         "label": "Large Language Model"

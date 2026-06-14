@@ -75,8 +75,8 @@ public:: true
   "maturity": "emerging",
   "qualityScore": 0.72,
   "subClassOf": {
-    "@id": "urn:ngm:class:threat",
-    "label": "Threat"
+    "@id": "urn:ngm:class:infra-security-and-identity",
+    "label": "Infra Security And Identity"
   },
   "relations": {
     "requires": [
@@ -117,7 +117,8 @@ public:: true
       {"@id": "urn:ngm:class:risk", "label": "Risk"},
       {"@id": "urn:ngm:class:adversarial-robustness", "label": "Adversarial Robustness"},
       {"@id": "urn:ngm:class:incident-response", "label": "Incident Response"},
-      {"@id": "urn:ngm:class:intrusion-detection", "label": "Intrusion Detection"}
+      {"@id": "urn:ngm:class:intrusion-detection", "label": "Intrusion Detection"},
+      {"@id": "urn:ngm:class:threat", "label": "Threat"}
     ],
     "bridgesTo": [
       {"@id": "urn:ngm:class:adversarial-machine-learning", "label": "Adversarial Machine Learning"},

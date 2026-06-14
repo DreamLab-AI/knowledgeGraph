@@ -25,7 +25,7 @@ alias:: Open AI
   "definition": "OpenAI is an American artificial intelligence research and deployment organisation founded in December 2015 with the stated mission of ensuring that artificial general intelligence (AGI) benefits all of humanity. Originally incorporated as a non-profit, it restructured into a capped-profit hybrid in 2019 to attract large-scale investment while retaining mission-oriented governance. OpenAI is responsible for the GPT series of large language models, the DALL-E image generation systems, the Codex code-generation model, the Whisper speech-recognition model, the Sora video-generation model, and the ChatGPT conversational interface, as well as foundational research in reinforcement learning from human feedback (RLHF) and AI alignment. Through its API platform and strategic partnership with Microsoft, it has become a central commercial and research force in the global AI industry.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:ai-research-organisation", "label": "AI Research Organisation"}],
+  "subClassOf": [{"@id": "urn:ngm:class:ai-research-area", "label": "AI Research Area"}],
   "relations": {
     "hasPart": [
       {"@id": "urn:ngm:class:gpt", "label": "GPT"},
@@ -65,7 +65,8 @@ alias:: Open AI
     "relatedTo": [
       {"@id": "urn:ngm:class:open-source-ai", "label": "Open Source AI"},
       {"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"},
-      {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"}
+      {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"},
+      {"@id": "urn:ngm:class:ai-research-organisation", "label": "AI Research Organisation"}
     ],
     "bridgesTo": [
       {"@id": "urn:ngm:class:ai-regulation", "label": "AI Regulation"},

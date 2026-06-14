@@ -8,8 +8,8 @@
   "definition": "The Spatial Computing Paradigm is a computing model in which digital information is spatially anchored to, overlaid upon, or blended with the physical world through continuous environmental sensing, three-dimensional scene understanding, and multimodal human-computer interaction. It unifies augmented reality, virtual reality, and mixed reality under a shared architectural concern: maintaining persistent, geometrically consistent digital layers that track real-world coordinates across sessions, devices, and users. Core enabling technologies include simultaneous localisation and mapping (SLAM), depth sensing, object recognition, and spatial anchoring. The paradigm underpins transformative applications across manufacturing, healthcare, education, retail, and collaborative design by dissolving the boundary between physical and digital information spaces.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:computing-paradigm",
-      "label": "Computing Paradigm"
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
     }
   ],
   "entityType": "Class",
@@ -135,6 +135,10 @@
     ],
     "partOf": [],
     "relatedTo": [
+      {
+        "id": "urn:ngm:class:computing-paradigm",
+        "label": "Computing Paradigm"
+      },
       {
         "id": "urn:ngm:class:ar-cloud",
         "label": "AR Cloud"

@@ -8,8 +8,8 @@
   "definition": "Scalability is the fundamental system property describing the capacity to handle increasing workloads\u2014in throughput, data volume, concurrency, or geographic reach\u2014by adding resources without proportionate degradation in performance, cost efficiency, or reliability. It encompasses both vertical scaling (augmenting the capacity of existing nodes) and horizontal scaling (adding more nodes to a distributed cluster), each with distinct architectural implications governed by coordination overhead, data partitioning strategies, and consistency trade-offs. In distributed systems, achieving linear or near-linear scalability requires careful attention to the CAP theorem and its practical refinement, PACELC, which explicitly models the latency\u2013consistency tension even in partition-free conditions. Scalability is a first-order design concern in cloud-native architectures, blockchain networks, edge computing platforms, and AI inference pipelines serving large or rapidly growing user populations.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:system-properties",
-      "label": "System Properties"
+      "id": "urn:ngm:class:infra-software-engineering",
+      "label": "Infra Software Engineering"
     }
   ],
   "entityType": "Class",
@@ -155,6 +155,10 @@
       {
         "id": "urn:ngm:class:distributed-architecture",
         "label": "Distributed Architecture"
+      },
+      {
+        "id": "urn:ngm:class:system-properties",
+        "label": "System Properties"
       }
     ]
   },

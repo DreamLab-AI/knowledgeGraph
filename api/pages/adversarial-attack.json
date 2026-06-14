@@ -8,8 +8,8 @@
   "definition": "An Adversarial Attack is a deliberate attempt to manipulate an AI system by crafting malicious inputs or exploiting model vulnerabilities to cause misclassification, extract confidential information, degrade performance, or subvert intended behaviour. Attack classes include evasion, poisoning, model extraction, inversion, and backdoor, across white-box, black-box, and grey-box threat models.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ai-security-threat",
-      "label": "AI Security Threat"
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "Ai Governance And Ethics"
     }
   ],
   "entityType": "Class",
@@ -121,6 +121,10 @@
       {
         "id": "urn:ngm:class:adversarial-training",
         "label": "Adversarial Training"
+      },
+      {
+        "id": "urn:ngm:class:ai-security-threat",
+        "label": "AI Security Threat"
       }
     ]
   },

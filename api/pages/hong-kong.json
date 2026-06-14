@@ -8,8 +8,8 @@
   "definition": "Hong Kong is a Special Administrative Region (SAR) of the People's Republic of China, operating under the 'one country, two systems' framework that preserves a distinct legal, financial, and regulatory order. It functions as one of the world's leading international financial centres, hosting a deep capital market, extensive banking sector, and a highly active financial technology ecosystem. The Hong Kong Monetary Authority (HKMA) has conducted prominent pilots in central bank digital currency, cross-border wholesale settlement, and tokenised asset infrastructure, including through the BIS Innovation Hub centre established in the territory. Hong Kong's regulatory regime, common-law courts, and open capital account make it a critical interface between global finance and the broader Chinese economy.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:financial-centre",
-      "label": "Financial Centre"
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Legal and Regulatory"
     }
   ],
   "entityType": "Class",
@@ -124,6 +124,10 @@
       {
         "id": "urn:ngm:class:correspondent-banking",
         "label": "Correspondent Banking"
+      },
+      {
+        "id": "urn:ngm:class:financial-centre",
+        "label": "Financial Centre"
       }
     ]
   },

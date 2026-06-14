@@ -32,8 +32,8 @@ public:: true
   "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:digital-media-standards",
-      "label": "Digital Media Standards"
+      "@id": "urn:ngm:class:sc-standards-and-interop",
+      "label": "Sc Standards And Interop"
     }
   ],
   "relations": {
@@ -80,7 +80,8 @@ public:: true
     "relatedTo": [
       {"@id": "urn:ngm:class:open-media-alliance", "label": "Open Media Alliance"},
       {"@id": "urn:ngm:class:w3c-verifiable-credentials", "label": "W3C Verifiable Credentials"},
-      {"@id": "urn:ngm:class:joint-development-foundation", "label": "Joint Development Foundation"}
+      {"@id": "urn:ngm:class:joint-development-foundation", "label": "Joint Development Foundation"},
+      {"@id": "urn:ngm:class:digital-media-standards", "label": "Digital Media Standards"}
     ]
   },
   "sameAs": [

@@ -32,8 +32,8 @@ public:: true
   "maturity": "mature",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:cryptographic-hardware",
-      "label": "Cryptographic Hardware"
+      "@id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Infra Security and Identity"
     }
   ],
   "relations": {
@@ -70,6 +70,7 @@ public:: true
       {"@id": "urn:ngm:class:trusted-platform-module", "label": "Trusted Platform Module"}
     ],
     "relatedTo": [
+      {"@id": "urn:ngm:class:cryptographic-hardware", "label": "Cryptographic Hardware"},
       {"@id": "urn:ngm:class:cryptography", "label": "Cryptography"},
       {"@id": "urn:ngm:class:zero-trust-architecture", "label": "Zero Trust Architecture"},
       {"@id": "urn:ngm:class:secure-element", "label": "Secure Element"},

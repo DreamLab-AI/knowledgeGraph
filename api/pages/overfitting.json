@@ -8,8 +8,8 @@
   "definition": "Overfitting is a phenomenon in machine learning where a model learns the training data too precisely\u2014including noise and spurious correlations\u2014resulting in poor generalisation to unseen data. It corresponds to high variance and low bias in the bias-variance tradeoff, and is mitigated through regularisation, dropout, early stopping, and data augmentation.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:machine-learning-phenomenon",
-      "label": "Machine Learning Phenomenon"
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area"
     }
   ],
   "entityType": "Class",
@@ -82,6 +82,10 @@
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
+      {
+        "id": "urn:ngm:class:machine-learning-phenomenon",
+        "label": "Machine Learning Phenomenon"
+      },
       {
         "id": "urn:ngm:class:dropout",
         "label": "Dropout"

@@ -8,8 +8,8 @@
   "definition": "Retrieval-Augmented Generation (RAG) is an AI inference architecture that augments large language model generation by dynamically retrieving semantically relevant passages from an external knowledge store at query time, concatenating them into the model context window before the response is produced. A retriever component\u2014typically a dense bi-encoder backed by a vector database\u2014embeds both the query and document corpus into a shared latent space and selects the top-k most similar chunks via approximate nearest-neighbour search. This non-parametric memory mechanism decouples factual knowledge from frozen model weights, dramatically reducing hallucination rates, enabling post-deployment knowledge updates without retraining, and providing fine-grained source attribution for generated claims. RAG has become the dominant architectural pattern for enterprise knowledge-intensive natural language processing applications, including question answering, customer support, legal research, and medical information retrieval.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ai-inference-architecture",
-      "label": "AI Inference Architecture"
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
     }
   ],
   "entityType": "Class",
@@ -137,6 +137,10 @@
       {
         "id": "urn:ngm:class:agentic-ai",
         "label": "Agentic AI"
+      },
+      {
+        "id": "urn:ngm:class:ai-inference-architecture",
+        "label": "AI Inference Architecture"
       }
     ]
   },

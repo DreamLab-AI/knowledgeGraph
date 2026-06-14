@@ -8,8 +8,8 @@
   "definition": "The Ethereum Foundation is a non-profit organisation, registered in Switzerland, that supports the development of the Ethereum protocol and its surrounding research and developer community. It funds core protocol research, client development, security audits and educational initiatives, but does not control the network, which is maintained by a decentralised set of clients, validators and contributors. The Foundation was established around the 2014 to 2015 launch of Ethereum.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:blockchain-protocol-foundation",
-      "label": "Blockchain Protocol Foundation"
+      "id": "urn:ngm:class:bc-governance-and-regulation",
+      "label": "BC Governance and Regulation"
     }
   ],
   "entityType": "Class",
@@ -126,6 +126,10 @@
       }
     ],
     "relatedTo": [
+      {
+        "id": "urn:ngm:class:blockchain-protocol-foundation",
+        "label": "Blockchain Protocol Foundation"
+      },
       {
         "id": "urn:ngm:class:web3-foundation",
         "label": "Web3 Foundation"

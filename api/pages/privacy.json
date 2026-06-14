@@ -8,8 +8,8 @@
   "definition": "The protection of personal information and individual autonomy in digital and AI systems, encompassing data minimization, purpose limitation, transparency, consent management, and individual control over how personal data is collected, processed, stored, and shared; grounded in legal frameworks (GDPR, AI Act) and technical mechanisms (encryption, differential privacy, zero-knowledge proofs) across the full data lifecycle.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:data-rights",
-      "label": "Data Rights"
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Infra Legal And Regulatory"
     }
   ],
   "entityType": "Class",
@@ -134,6 +134,10 @@
       {
         "id": "urn:ngm:class:digital-rights",
         "label": "Digital Rights"
+      },
+      {
+        "id": "urn:ngm:class:data-rights",
+        "label": "Data Rights"
       }
     ]
   },

@@ -23,7 +23,7 @@ public:: true
   "definition": "NeurIPS (Neural Information Processing Systems) is the premier annual international conference on machine learning, computational neuroscience, and artificial intelligence, held each December and governed by the NeurIPS Foundation. Founded in 1987 at the intersection of neuroscience and statistical learning theory, it has evolved into the most selective and impactful peer-reviewed publication venue in AI, shaping research agendas across deep learning, reinforcement learning, probabilistic modelling, generative AI, and AI ethics. Accepted papers undergo rigorous double-blind peer review and are freely available via the NeurIPS Proceedings archive, with acceptance rates typically below 26 percent in recent years. The conference serves as a primary mechanism for the global dissemination, validation, and agenda-setting of foundational machine learning research.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:academic-conference", "label": "Academic Conference"}],
+  "subClassOf": [{"@id": "urn:ngm:class:ai-research-area", "label": "AI Research Area"}],
   "sameAs": [
     {"@id": "urn:ngm:class:neural-information-processing-systems", "label": "Neural Information Processing Systems"},
     {"@id": "urn:ngm:class:neurips-conference", "label": "NeurIPS Conference"}
@@ -36,7 +36,8 @@ public:: true
       {"@id": "urn:ngm:class:benchmark-standard", "label": "Benchmark Standard"},
       {"@id": "urn:ngm:class:evaluation-benchmarks-and-leaderboards", "label": "Evaluation Benchmarks and Leaderboards"},
       {"@id": "urn:ngm:class:computational-neuroscience", "label": "Computational Neuroscience"},
-      {"@id": "urn:ngm:class:ai-research", "label": "AI Research"}
+      {"@id": "urn:ngm:class:ai-research", "label": "AI Research"},
+      {"@id": "urn:ngm:class:academic-conference", "label": "Academic Conference"}
     ],
     "contrastsWith": [
       {"@id": "urn:ngm:class:icml", "label": "ICML"},

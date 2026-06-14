@@ -8,8 +8,8 @@
   "definition": "Decision making is the cognitive and computational process of selecting a course of action from a set of available alternatives by evaluating options against objectives, constraints, and uncertainty. It spans normative models of rational choice (expected utility, Bayesian reasoning), descriptive behavioural accounts that document systematic biases, and computational frameworks such as Markov Decision Processes and reinforcement learning that formalise sequential choice under uncertainty. In artificial intelligence, decision making underpins agent planning, autonomous systems, and large-scale optimisation, bridging probability theory, control theory, and game theory into operational policies.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:cognitive-process",
-      "label": "Cognitive Process"
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area"
     }
   ],
   "entityType": "Class",
@@ -119,6 +119,10 @@
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
+      {
+        "id": "urn:ngm:class:cognitive-process",
+        "label": "Cognitive Process"
+      },
       {
         "id": "urn:ngm:class:cognitive-science",
         "label": "Cognitive Science"

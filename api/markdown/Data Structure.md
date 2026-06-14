@@ -69,8 +69,8 @@ alias:: DataStructure
     "inferenceRule": "RelationEnrichment"
   },
   "subClassOf": {
-    "@id": "urn:ngm:class:computational-abstraction",
-    "label": "Computational Abstraction"
+    "@id": "urn:ngm:class:infra-software-engineering",
+    "label": "Infra Software Engineering"
   },
   "sameAs": [
     {"@id": "urn:ngm:class:abstract-data-type", "label": "Abstract Data Type"},
@@ -118,6 +118,7 @@ alias:: DataStructure
       {"@id": "urn:ngm:class:ontology", "label": "Ontology"}
     ],
     "relatedTo": [
+      {"@id": "urn:ngm:class:computational-abstraction", "label": "Computational Abstraction"},
       {"@id": "urn:ngm:class:tensor-operations", "label": "Tensor Operations"},
       {"@id": "urn:ngm:class:memory-optimization", "label": "Memory Optimization"},
       {"@id": "urn:ngm:class:graph-theory", "label": "Graph Theory"},

@@ -8,8 +8,8 @@
   "definition": "Data Management is the disciplined set of practices, architectures, and technologies for acquiring, validating, storing, organising, protecting, and retiring data across its full lifecycle. It encompasses data modelling, quality assurance, metadata governance, access control, and lineage tracking to ensure data assets remain accurate, discoverable, and trustworthy. In AI and distributed-systems contexts it additionally covers ingestion pipelines, versioned feature stores, reproducible training datasets, and consent frameworks. Effective data management underpins regulatory compliance, interoperability, and the reliability of analytical and machine-learning workloads.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:information-management",
-      "label": "Information Management"
+      "id": "urn:ngm:class:infra-data-management",
+      "label": "Infra Data Management"
     }
   ],
   "entityType": "Class",
@@ -115,6 +115,10 @@
     ],
     "partOf": [],
     "relatedTo": [
+      {
+        "id": "urn:ngm:class:information-management",
+        "label": "Information Management"
+      },
       {
         "id": "urn:ngm:class:distributed-system",
         "label": "Distributed System"

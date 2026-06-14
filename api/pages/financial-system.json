@@ -8,8 +8,8 @@
   "definition": "The network of institutions, markets, instruments, and infrastructure that facilitate the creation, transfer, and management of financial value. In the context of the metaverse and blockchain ecosystems, financial systems include both traditional payment rails and decentralised protocols enabling programmable value exchange, digital asset custody, and cross-border settlement.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:economic-system",
-      "label": "Economic System"
+      "id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "BC DeFi and Economics"
     }
   ],
   "entityType": "Class",
@@ -124,6 +124,10 @@
     ],
     "partOf": [],
     "relatedTo": [
+      {
+        "id": "urn:ngm:class:economic-system",
+        "label": "Economic System"
+      },
       {
         "id": "urn:ngm:class:blockchain-economics",
         "label": "Blockchain Economics"

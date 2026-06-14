@@ -59,8 +59,8 @@ public:: true
   "maturity": "mature",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:regulatory-agency",
-      "label": "Regulatory Agency"
+      "@id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Infra Legal and Regulatory"
     }
   ],
   "relations": {
@@ -183,6 +183,10 @@ public:: true
       }
     ],
     "relatedTo": [
+      {
+        "@id": "urn:ngm:class:regulatory-agency",
+        "label": "Regulatory Agency"
+      },
       {
         "@id": "urn:ngm:class:drug-regulation",
         "label": "Drug Regulation"

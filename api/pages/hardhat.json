@@ -8,8 +8,8 @@
   "definition": "Hardhat is a professional Ethereum development environment that provides a comprehensive toolchain for compiling, deploying, testing, and debugging Solidity smart contracts. It ships with Hardhat Network, an in-process Ethereum node implementation designed for local development that supports forking mainnet state and emitting Solidity stack traces on failure. Hardhat's plugin architecture integrates tightly with ethers.js and Waffle, and its tasks system allows developers to automate bespoke deployment and verification workflows. It has become the dominant development framework in the Ethereum ecosystem, displacing earlier tools such as Truffle.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:blockchain-development-toolchain",
-      "label": "Blockchain Development Toolchain"
+      "id": "urn:ngm:class:bc-network-component",
+      "label": "BC Network Component"
     }
   ],
   "entityType": "Class",
@@ -128,6 +128,10 @@
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
+      {
+        "id": "urn:ngm:class:blockchain-development-toolchain",
+        "label": "Blockchain Development Toolchain"
+      },
       {
         "id": "urn:ngm:class:remix-ide",
         "label": "Remix IDE"

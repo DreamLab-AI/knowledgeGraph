@@ -47,8 +47,8 @@ public:: true
   "maturity": "mature",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:software-abstraction",
-      "label": "Software Abstraction"
+      "@id": "urn:ngm:class:infra-software-engineering",
+      "label": "Infra Software Engineering"
     }
   ],
   "relations": {
@@ -97,6 +97,7 @@ public:: true
       {"@id": "urn:ngm:class:webgpu", "label": "WebGPU"}
     ],
     "relatedTo": [
+      {"@id": "urn:ngm:class:software-abstraction", "label": "Software Abstraction"},
       {"@id": "urn:ngm:class:hardware", "label": "Hardware"},
       {"@id": "urn:ngm:class:memory-management", "label": "Memory Management"},
       {"@id": "urn:ngm:class:interrupt-handling", "label": "Interrupt Handling"}

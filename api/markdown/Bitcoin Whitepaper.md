@@ -55,8 +55,8 @@ public:: true
   "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:cryptocurrency-technical-specification",
-      "label": "Cryptocurrency Technical Specification"
+      "@id": "urn:ngm:class:bc-protocol-and-consensus",
+      "label": "Bc Protocol And Consensus"
     }
   ],
   "relations": {
@@ -158,6 +158,10 @@ public:: true
       {
         "@id": "urn:ngm:class:lightning-network",
         "label": "Lightning Network"
+      },
+      {
+        "@id": "urn:ngm:class:cryptocurrency-technical-specification",
+        "label": "Cryptocurrency Technical Specification"
       }
     ],
     "bridgesTo": [

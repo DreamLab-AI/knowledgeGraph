@@ -8,8 +8,8 @@
   "definition": "Access control is a fundamental security mechanism that regulates which users, systems, or processes can view, use, or modify resources within a computing environment. It encompasses the policies, procedures, and technologies that govern the granting and restricting of access rights, ensuring that only authorised entities can perform specific actions on protected resources based on their identity, role, or attributes.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:security-mechanism",
-      "label": "Security Mechanism"
+      "id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Infra Security And Identity"
     }
   ],
   "entityType": "Class",
@@ -140,6 +140,10 @@
       {
         "id": "urn:ngm:class:multi-factor-authentication",
         "label": "Multi-Factor Authentication"
+      },
+      {
+        "id": "urn:ngm:class:security-mechanism",
+        "label": "Security Mechanism"
       }
     ]
   },

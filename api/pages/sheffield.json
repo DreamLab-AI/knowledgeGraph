@@ -8,8 +8,8 @@
   "definition": "Sheffield is a metropolitan city in South Yorkshire, England, historically renowned as the Steel City for its dominance in cutlery, tool-making, and crucible steel production from the 18th century onwards. Today it operates as a major centre for advanced manufacturing, materials science, robotics research, and digital innovation, anchored by the University of Sheffield and Sheffield Hallam University. The city hosts the Advanced Manufacturing Research Centre (AMRC) \u2014 a globally recognised aerospace and industrial manufacturing cluster \u2014 as well as the Nuclear AMRC and a growing technology and data economy. Sheffield participates in the Northern Powerhouse initiative and is developing smart city infrastructure and innovation-district strategies aligned with Catapult programmes and UK industrial strategy.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:urban-innovation-cluster",
-      "label": "Urban Innovation Cluster"
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Infra Computing And Cloud"
     }
   ],
   "entityType": "Class",
@@ -125,6 +125,10 @@
       {
         "id": "urn:ngm:class:industry-4-0",
         "label": "Industry 4.0"
+      },
+      {
+        "id": "urn:ngm:class:urban-innovation-cluster",
+        "label": "Urban Innovation Cluster"
       }
     ]
   },

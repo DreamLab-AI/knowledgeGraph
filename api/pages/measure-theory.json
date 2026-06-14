@@ -8,8 +8,8 @@
   "definition": "Measure Theory is the branch of mathematical analysis that studies measures, which assign a consistent notion of size, length, area, volume or probability to subsets of a space. It provides the rigorous foundation for the Lebesgue integral, which generalises the Riemann integral and handles a wider class of functions and limiting operations. It is the formal basis of modern probability theory, where a probability is a measure of total mass one.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:mathematical-analysis",
-      "label": "Mathematical Analysis"
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area"
     }
   ],
   "entityType": "Class",
@@ -147,6 +147,10 @@
       {
         "id": "urn:ngm:class:fourier-analysis",
         "label": "Fourier Analysis"
+      },
+      {
+        "id": "urn:ngm:class:mathematical-analysis",
+        "label": "Mathematical Analysis"
       }
     ]
   },

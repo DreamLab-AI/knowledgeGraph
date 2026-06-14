@@ -33,8 +33,8 @@ alias:: VisualOdometry
   "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:ego-motion-estimation",
-      "label": "Ego-Motion Estimation"
+      "@id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
     }
   ],
   "sameAs": [
@@ -76,6 +76,7 @@ alias:: VisualOdometry
       {"@id": "urn:ngm:class:gps-localisation", "label": "GPS Localisation"}
     ],
     "relatedTo": [
+      {"@id": "urn:ngm:class:ego-motion-estimation", "label": "Ego-Motion Estimation"},
       {"@id": "urn:ngm:class:loop-closure-detection", "label": "Loop Closure Detection"},
       {"@id": "urn:ngm:class:place-recognition", "label": "Place Recognition"},
       {"@id": "urn:ngm:class:point-cloud-processing", "label": "Point Cloud Processing"},

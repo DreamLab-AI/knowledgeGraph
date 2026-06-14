@@ -48,8 +48,8 @@ alias:: SignalProcessing
   "maturity": "mature",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:data",
-      "label": "Data"
+      "@id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
     }
   ],
   "relations": {
@@ -92,7 +92,8 @@ alias:: SignalProcessing
       {"@id": "urn:ngm:class:feature-extraction", "label": "Feature Extraction"},
       {"@id": "urn:ngm:class:noise-reduction", "label": "Noise Reduction"},
       {"@id": "urn:ngm:class:data-compression", "label": "Data Compression"},
-      {"@id": "urn:ngm:class:render-pipeline", "label": "Render Pipeline"}
+      {"@id": "urn:ngm:class:render-pipeline", "label": "Render Pipeline"},
+      {"@id": "urn:ngm:class:data", "label": "Data"}
     ]
   },
   "sameAs": [

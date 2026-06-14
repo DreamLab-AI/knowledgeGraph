@@ -8,8 +8,8 @@
   "definition": "The University of Oxford is a collegiate research university located in Oxford, England, widely regarded as one of the world's foremost institutions of higher education and research. Founded in the twelfth century, it comprises forty-four autonomous colleges and a network of academic departments spanning the humanities, sciences, social sciences, and engineering. Oxford is a leading site of research in artificial intelligence, machine learning, computer vision, natural language processing, and computational biology, and plays a central role in UK and global AI policy, ethics, and governance discourse. Its Future of Humanity Institute and Oxford Internet Institute are internationally recognised centres for the study of transformative technologies and their societal implications.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:research-institution",
-      "label": "Research Institution"
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area"
     }
   ],
   "entityType": "Class",
@@ -97,6 +97,10 @@
       }
     ],
     "relatedTo": [
+      {
+        "id": "urn:ngm:class:research-institution",
+        "label": "Research Institution"
+      },
       {
         "id": "urn:ngm:class:alan-turing-institute",
         "label": "Alan Turing Institute"

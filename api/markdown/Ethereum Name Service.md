@@ -56,8 +56,8 @@ public:: true
   "qualityScore": 0.7,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:decentralised-naming-system",
-      "label": "Decentralised Naming System"
+      "@id": "urn:ngm:class:bc-network-component",
+      "label": "BC Network Component"
     }
   ],
   "relations": {
@@ -136,6 +136,10 @@ public:: true
       }
     ],
     "relatedTo": [
+      {
+        "@id": "urn:ngm:class:decentralised-naming-system",
+        "label": "Decentralised Naming System"
+      },
       {
         "@id": "urn:ngm:class:decentralised-autonomous-organisation",
         "label": "Decentralised Autonomous Organisation"

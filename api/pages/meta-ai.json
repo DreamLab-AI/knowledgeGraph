@@ -8,8 +8,8 @@
   "definition": "Meta AI is the artificial intelligence research and applied AI division of Meta Platforms, Inc., encompassing the Fundamental AI Research (FAIR) laboratory for long-horizon academic research and multiple applied AI teams that embed machine-learning capabilities into Meta products including Facebook, Instagram, and WhatsApp. The division is best known for its open-weight large language model series LLaMA, the zero-shot image segmentation model Segment Anything (SAM), the multimodal joint-embedding model ImageBind, and early contributions to the broader AI ecosystem including the PyTorch deep-learning framework and fastText word embeddings. Meta AI's open-weight release strategy has materially shaped the open-source AI ecosystem by enabling community fine-tuning, on-device deployment, and proliferation of derivative models without dependence on proprietary inference APIs.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ai-research-organisation",
-      "label": "AI Research Organisation"
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area"
     }
   ],
   "entityType": "Class",
@@ -151,6 +151,10 @@
       {
         "id": "urn:ngm:class:open-weight-model",
         "label": "Open-Weight Model"
+      },
+      {
+        "id": "urn:ngm:class:ai-research-organisation",
+        "label": "AI Research Organisation"
       }
     ]
   },

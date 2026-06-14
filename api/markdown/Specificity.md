@@ -51,8 +51,8 @@ public:: true
   "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:classification-metric",
-      "label": "Classification Metric"
+      "@id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
     }
   ],
   "relations": {
@@ -81,6 +81,10 @@ public:: true
       }
     ],
     "relatedTo": [
+      {
+        "@id": "urn:ngm:class:classification-metric",
+        "label": "Classification Metric"
+      },
       {
         "@id": "urn:ngm:class:recall",
         "label": "Recall"

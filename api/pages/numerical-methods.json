@@ -8,8 +8,8 @@
   "definition": "Techniques for obtaining approximate solutions to mathematical problems that cannot be solved exactly, using finite sequences of arithmetic operations; encompassing root-finding, interpolation, quadrature, linear-system solvers, ODE/PDE integrators, and optimisation routines with explicit control over accuracy, stability, and computational cost.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:computational-mathematics",
-      "label": "Computational Mathematics"
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area"
     }
   ],
   "entityType": "Class",
@@ -138,6 +138,10 @@
       {
         "id": "urn:ngm:class:parallel-computing",
         "label": "Parallel Computing"
+      },
+      {
+        "id": "urn:ngm:class:computational-mathematics",
+        "label": "Computational Mathematics"
       }
     ]
   },

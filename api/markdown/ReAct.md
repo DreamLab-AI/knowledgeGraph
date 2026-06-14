@@ -32,8 +32,8 @@ public:: true
   "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:prompting-technique",
-      "label": "Prompting Technique"
+      "@id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
     }
   ],
   "sameAs": [
@@ -77,7 +77,8 @@ public:: true
       {"@id": "urn:ngm:class:reasoning", "label": "Reasoning"},
       {"@id": "urn:ngm:class:planning-and-scheduling", "label": "Planning and Scheduling"},
       {"@id": "urn:ngm:class:multi-agent-system", "label": "Multi-Agent System"},
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"}
+      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
+      {"@id": "urn:ngm:class:prompting-technique", "label": "Prompting Technique"}
     ],
     "bridgesTo": [
       {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},

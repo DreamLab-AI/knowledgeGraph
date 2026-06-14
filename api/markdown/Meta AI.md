@@ -32,8 +32,8 @@ public:: true
   "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:ai-research-organisation",
-      "label": "AI Research Organisation"
+      "@id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area"
     }
   ],
   "relations": {
@@ -78,7 +78,8 @@ public:: true
       {"@id": "urn:ngm:class:fine-tuning", "label": "Fine Tuning"},
       {"@id": "urn:ngm:class:zero-shot-learning", "label": "Zero-Shot Learning"},
       {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},
-      {"@id": "urn:ngm:class:open-weight-model", "label": "Open-Weight Model"}
+      {"@id": "urn:ngm:class:open-weight-model", "label": "Open-Weight Model"},
+      {"@id": "urn:ngm:class:ai-research-organisation", "label": "AI Research Organisation"}
     ],
     "bridgesTo": [
       {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},

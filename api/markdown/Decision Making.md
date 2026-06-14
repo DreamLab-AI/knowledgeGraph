@@ -52,8 +52,8 @@ public:: true
   "qualityScore": 0.7,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:cognitive-process",
-      "label": "Cognitive Process"
+      "@id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area"
     }
   ],
   "relations": {
@@ -93,6 +93,7 @@ public:: true
       {"@id": "urn:ngm:class:supply-chain-management", "label": "Supply Chain Management"}
     ],
     "relatedTo": [
+      {"@id": "urn:ngm:class:cognitive-process", "label": "Cognitive Process"},
       {"@id": "urn:ngm:class:cognitive-science", "label": "Cognitive Science"},
       {"@id": "urn:ngm:class:control-theory", "label": "Control Theory"},
       {"@id": "urn:ngm:class:risk-assessment", "label": "Risk Assessment"}

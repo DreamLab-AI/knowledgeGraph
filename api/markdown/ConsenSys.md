@@ -52,8 +52,8 @@ public:: true
   "qualityScore": 0.7,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:blockchain-software-company",
-      "label": "Blockchain Software Company"
+      "@id": "urn:ngm:class:bc-network-component",
+      "label": "Bc Network Component"
     }
   ],
   "relations": {
@@ -169,6 +169,10 @@ public:: true
       {
         "@id": "urn:ngm:class:token-standard",
         "label": "Token Standard"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-software-company",
+        "label": "Blockchain Software Company"
       }
     ]
   },

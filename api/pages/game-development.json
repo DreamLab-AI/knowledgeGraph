@@ -8,8 +8,8 @@
   "definition": "Game development is the multidisciplinary engineering and creative practice of designing, building, and publishing interactive software experiences, spanning the full production pipeline from concept and pre-production through asset creation, engine programming, quality assurance, and live operations. It integrates disciplines including game design, real-time rendering, audio engineering, narrative scripting, physics simulation, and network programming into a unified production workflow centred on a game engine runtime. The field increasingly leverages machine learning for procedural content generation, NPC behaviour training via reinforcement learning, and generative AI for accelerating art and dialogue pipelines. Game development techniques have generalised beyond entertainment into spatial computing, robotics simulation, digital twins, and serious-games applications.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:interactive-software-development",
-      "label": "Interactive Software Development"
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "SC Content and Assets"
     }
   ],
   "entityType": "Class",
@@ -126,6 +126,10 @@
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
+      {
+        "id": "urn:ngm:class:interactive-software-development",
+        "label": "Interactive Software Development"
+      },
       {
         "id": "urn:ngm:class:computer-graphics",
         "label": "Computer Graphics"

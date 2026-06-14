@@ -111,8 +111,8 @@ alias:: BC-0427-hyperledger-besu
   "domain": "blockchain",
   "maturity": "draft",
   "subClassOf": {
-    "@id": "urn:ngm:class:enterprise-blockchain-client",
-    "label": "Enterprise Blockchain Client"
+    "@id": "urn:ngm:class:bc-network-component",
+    "label": "Network Component"
   },
   "relations": {
     "implements": [
@@ -229,6 +229,10 @@ alias:: BC-0427-hyperledger-besu
       {
         "@id": "urn:ngm:class:blockchain",
         "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:enterprise-blockchain-client",
+        "label": "Enterprise Blockchain Client"
       }
     ]
   },

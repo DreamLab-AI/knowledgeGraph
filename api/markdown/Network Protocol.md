@@ -66,8 +66,8 @@ public:: true
   "domain": "infrastructure",
   "maturity": "emerging",
   "subClassOf": {
-    "@id": "urn:ngm:class:communication-standard",
-    "label": "Communication Standard"
+    "@id": "urn:ngm:class:infra-network-and-comms",
+    "label": "Infra Network And Comms"
   },
   "relations": {
     "hasPart": [
@@ -204,6 +204,10 @@ public:: true
       {
         "@id": "urn:ngm:class:latency",
         "label": "Latency"
+      },
+      {
+        "@id": "urn:ngm:class:communication-standard",
+        "label": "Communication Standard"
       }
     ]
   },

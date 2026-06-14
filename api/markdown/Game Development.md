@@ -32,8 +32,8 @@ public:: true
   "maturity": "mature",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:interactive-software-development",
-      "label": "Interactive Software Development"
+      "@id": "urn:ngm:class:sc-content-and-assets",
+      "label": "SC Content and Assets"
     }
   ],
   "sameAs": [
@@ -72,6 +72,7 @@ public:: true
       {"@id": "urn:ngm:class:asset-pipeline", "label": "Asset Pipeline"}
     ],
     "relatedTo": [
+      {"@id": "urn:ngm:class:interactive-software-development", "label": "Interactive Software Development"},
       {"@id": "urn:ngm:class:computer-graphics", "label": "Computer Graphics"},
       {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human-Computer Interaction"},
       {"@id": "urn:ngm:class:virtual-world", "label": "Virtual World"},

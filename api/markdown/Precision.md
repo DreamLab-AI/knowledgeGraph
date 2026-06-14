@@ -86,8 +86,8 @@ public:: true
   "domain": "artificial-intelligence",
   "maturity": "draft",
   "subClassOf": {
-    "@id": "urn:ngm:class:classification-metric",
-    "label": "Classification Metric"
+    "@id": "urn:ngm:class:ai-technique",
+    "label": "AI Technique"
   },
   "quality": 0.72,
   "provenance": {
@@ -224,6 +224,10 @@ public:: true
       {
         "@id": "urn:ngm:class:model-card",
         "label": "Model Card"
+      },
+      {
+        "@id": "urn:ngm:class:classification-metric",
+        "label": "Classification Metric"
       }
     ]
   }

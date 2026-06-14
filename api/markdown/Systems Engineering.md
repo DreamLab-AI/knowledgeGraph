@@ -23,8 +23,8 @@
   "quality": 0.74,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:engineering-methodology",
-      "label": "Engineering Methodology"
+      "@id": "urn:ngm:class:infra-software-engineering",
+      "label": "Software Engineering"
     }
   ],
   "relations": {
@@ -71,6 +71,7 @@
       {"@id": "urn:ngm:class:cyber-physical-systems", "label": "Cyber-Physical Systems"}
     ],
     "relatedTo": [
+      {"@id": "urn:ngm:class:engineering-methodology", "label": "Engineering Methodology"},
       {"@id": "urn:ngm:class:systems-thinking", "label": "Systems Thinking"},
       {"@id": "urn:ngm:class:complexity-theory", "label": "Complexity Theory"},
       {"@id": "urn:ngm:class:lifecycle-management", "label": "Lifecycle Management"}

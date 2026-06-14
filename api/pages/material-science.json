@@ -8,8 +8,8 @@
   "definition": "Material Science is the interdisciplinary field that studies the structure, properties, processing, and performance of matter across all classes \u2014 metals, ceramics, polymers, semiconductors, and composites \u2014 connecting atomic-scale arrangement to macroscopic behaviour. It integrates principles from physics, chemistry, and engineering to enable the rational design of materials with tailored properties. Computational methods including density functional theory, molecular dynamics simulation, and machine-learning-driven property prediction increasingly complement experimental synthesis and characterisation. The field underpins virtually every technology sector, from microelectronics and energy storage to biomedical implants and advanced manufacturing.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:engineering-discipline",
-      "label": "Engineering Discipline"
+      "id": "urn:ngm:class:infra-software-engineering",
+      "label": "Infra Software Engineering"
     }
   ],
   "entityType": "Class",
@@ -134,6 +134,10 @@
       {
         "id": "urn:ngm:class:materials-informatics",
         "label": "Materials Informatics"
+      },
+      {
+        "id": "urn:ngm:class:engineering-discipline",
+        "label": "Engineering Discipline"
       }
     ]
   },

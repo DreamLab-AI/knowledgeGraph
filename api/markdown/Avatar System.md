@@ -70,8 +70,8 @@ public:: true
   "domain": "spatial-computing",
   "maturity": "draft",
   "subClassOf": {
-    "@id": "urn:ngm:class:virtual-character-system",
-    "label": "Virtual Character System"
+    "@id": "urn:ngm:class:sc-content-and-assets",
+    "label": "Sc Content And Assets"
   },
   "relations": {
     "hasPart": [
@@ -218,6 +218,10 @@ public:: true
       {
         "@id": "urn:ngm:class:augmented-reality",
         "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-character-system",
+        "label": "Virtual Character System"
       }
     ]
   },

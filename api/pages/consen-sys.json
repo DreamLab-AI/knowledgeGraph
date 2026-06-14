@@ -8,8 +8,8 @@
   "definition": "ConsenSys is a Brooklyn-founded blockchain software company, established in 2014 by Ethereum co-founder Joseph Lubin, that builds developer tooling, infrastructure, and end-user products for the Ethereum ecosystem. Its product portfolio spans the MetaMask browser wallet, the Infura node-as-a-service API network, the Truffle and Hardhat-adjacent development suite, and the Linea zkEVM Layer 2 network. ConsenSys acts as a principal driver of Ethereum protocol adoption by providing the production-grade infrastructure on which the majority of decentralised application front-ends depend. The company also engages in enterprise blockchain consulting and contributes to Ethereum standards through active participation in the Ethereum Foundation and EIP processes.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:blockchain-software-company",
-      "label": "Blockchain Software Company"
+      "id": "urn:ngm:class:bc-network-component",
+      "label": "Bc Network Component"
     }
   ],
   "entityType": "Class",
@@ -131,6 +131,10 @@
       {
         "id": "urn:ngm:class:token-standard",
         "label": "Token Standard"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-software-company",
+        "label": "Blockchain Software Company"
       }
     ]
   },

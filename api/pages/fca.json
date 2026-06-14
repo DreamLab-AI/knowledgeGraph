@@ -8,8 +8,8 @@
   "definition": "The Financial Conduct Authority (FCA) is the UK's statutory conduct regulator for financial services and markets, established under the Financial Services and Markets Act 2000 and reconstituted by the Financial Services Act 2012. Operating independently of government and funded by industry fees, it authorises firms, supervises conduct across retail and wholesale markets, and enforces anti-money-laundering obligations. In the digital asset sphere the FCA registers crypto-asset businesses under the Money Laundering Regulations, regulates crypto financial promotions, and coordinates with the Bank of England and HM Treasury on emerging regulatory frameworks for stablecoins, custody, and tokenised finance.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:financial-regulator",
-      "label": "Financial Regulator"
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Infra Legal and Regulatory"
     }
   ],
   "entityType": "Class",
@@ -119,6 +119,10 @@
     ],
     "partOf": [],
     "relatedTo": [
+      {
+        "id": "urn:ngm:class:financial-regulator",
+        "label": "Financial Regulator"
+      },
       {
         "id": "urn:ngm:class:financial-regulation",
         "label": "Financial Regulation"

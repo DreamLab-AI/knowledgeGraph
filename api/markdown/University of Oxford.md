@@ -55,8 +55,8 @@ public:: true
   "maturity": "mature",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:research-institution",
-      "label": "Research Institution"
+      "@id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area"
     }
   ],
   "relations": {
@@ -111,6 +111,10 @@ public:: true
       }
     ],
     "relatedTo": [
+      {
+        "@id": "urn:ngm:class:research-institution",
+        "label": "Research Institution"
+      },
       {
         "@id": "urn:ngm:class:alan-turing-institute",
         "label": "Alan Turing Institute"

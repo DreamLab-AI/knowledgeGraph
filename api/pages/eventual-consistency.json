@@ -8,8 +8,8 @@
   "definition": "Eventual consistency is a consistency model for distributed data stores that guarantees that, in the absence of new updates, all replicas of a given data item will eventually converge to the same value. The model deliberately relaxes the requirement for immediate, global agreement in favour of higher availability and tolerance of network partitions, as described by the CAP theorem. Reads may transiently return stale data, and divergent replicas are reconciled through background propagation, gossip protocols, or explicit conflict resolution strategies such as last-write-wins or multi-version concurrency control. It is foundational to the design of large-scale internet-facing systems including DNS, distributed caches, and wide-area NoSQL databases.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:consistency-model",
-      "label": "Consistency Model"
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Infra Computing and Cloud"
     }
   ],
   "entityType": "Class",
@@ -106,6 +106,10 @@
       }
     ],
     "relatedTo": [
+      {
+        "id": "urn:ngm:class:consistency-model",
+        "label": "Consistency Model"
+      },
       {
         "id": "urn:ngm:class:nosql-database",
         "label": "NoSQL Database"

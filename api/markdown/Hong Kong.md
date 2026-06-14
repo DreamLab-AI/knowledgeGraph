@@ -56,8 +56,8 @@ public:: true
   "qualityScore": 0.7,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:financial-centre",
-      "label": "Financial Centre"
+      "@id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Legal and Regulatory"
     }
   ],
   "relations": {
@@ -167,6 +167,10 @@ public:: true
       {
         "@id": "urn:ngm:class:correspondent-banking",
         "label": "Correspondent Banking"
+      },
+      {
+        "@id": "urn:ngm:class:financial-centre",
+        "label": "Financial Centre"
       }
     ]
   },

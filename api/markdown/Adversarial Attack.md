@@ -55,8 +55,8 @@ public:: true
   "maturity": "emerging",
   "qualityScore": 0.72,
   "subClassOf": {
-    "@id": "urn:ngm:class:ai-security-threat",
-    "label": "AI Security Threat"
+    "@id": "urn:ngm:class:ai-governance-and-ethics",
+    "label": "Ai Governance And Ethics"
   },
   "sameAs": [
     {
@@ -164,6 +164,10 @@ public:: true
       {
         "@id": "urn:ngm:class:adversarial-training",
         "label": "Adversarial Training"
+      },
+      {
+        "@id": "urn:ngm:class:ai-security-threat",
+        "label": "AI Security Threat"
       }
     ],
     "bridgesTo": [

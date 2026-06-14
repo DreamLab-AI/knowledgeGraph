@@ -8,8 +8,8 @@
   "definition": "A training strategy that presents examples to a model in a meaningful order, typically progressing from easy to difficult, mimicking how humans learn. Curriculum learning improves convergence speed, final performance, and generalisation by structuring the learning progression rather than relying on random example ordering.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:training-strategy",
-      "label": "Training Strategy"
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
     }
   ],
   "entityType": "Class",
@@ -111,6 +111,10 @@
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
+      {
+        "id": "urn:ngm:class:training-strategy",
+        "label": "Training Strategy"
+      },
       {
         "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"

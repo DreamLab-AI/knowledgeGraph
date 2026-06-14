@@ -47,8 +47,8 @@ public:: true
   "maturity": "emerging",
   "qualityScore": 0.7,
   "subClassOf": {
-    "@id": "urn:ngm:class:machine-learning-phenomenon",
-    "label": "Machine Learning Phenomenon"
+    "@id": "urn:ngm:class:ai-research-area",
+    "label": "AI Research Area"
   },
   "quality": 0.72,
   "provenance": {
@@ -108,6 +108,10 @@ public:: true
       }
     ],
     "relatedTo": [
+      {
+        "@id": "urn:ngm:class:machine-learning-phenomenon",
+        "label": "Machine Learning Phenomenon"
+      },
       {
         "@id": "urn:ngm:class:dropout",
         "label": "Dropout"

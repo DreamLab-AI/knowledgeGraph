@@ -8,8 +8,8 @@
   "definition": "Hardware Abstraction is the software engineering principle and architectural practice of interposing a uniform programmatic interface layer between high-level software and the physical characteristics of underlying hardware components, enabling software to operate independently of specific hardware implementations. The abstraction layer translates generic API calls into vendor-specific or device-specific commands, shielding operating systems, runtimes, and applications from the diversity of processor architectures, memory subsystems, I/O controllers, graphics units, and peripheral devices. This principle underpins portability, vendor independence, and long-term maintainability of system software stacks across the full spectrum of computing platforms, from embedded microcontrollers to cloud server farms to spatial-computing headsets. Hardware Abstraction Layers (HALs) are the canonical realisation of this principle in operating systems, device driver frameworks, and graphics APIs.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:software-abstraction",
-      "label": "Software Abstraction"
+      "id": "urn:ngm:class:infra-software-engineering",
+      "label": "Infra Software Engineering"
     }
   ],
   "entityType": "Class",
@@ -141,6 +141,10 @@
       }
     ],
     "relatedTo": [
+      {
+        "id": "urn:ngm:class:software-abstraction",
+        "label": "Software Abstraction"
+      },
       {
         "id": "urn:ngm:class:hardware",
         "label": "Hardware"

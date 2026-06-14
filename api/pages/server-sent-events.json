@@ -8,8 +8,8 @@
   "definition": "Server-Sent Events (SSE) is a W3C and WHATWG-standardised unidirectional server-to-client push protocol layered atop HTTP/1.1 and HTTP/2, enabling servers to emit a continuous stream of newline-delimited text events to browser or API clients over a single persistent connection. Each event record may carry optional 'id', 'event', 'data', and 'retry' fields; clients reconnect automatically using the last-received event id as a cursor. SSE is consumed via the browser's EventSource API and is the dominant transport for streaming large-language-model inference outputs in APIs such as OpenAI and Anthropic, as well as in the Model Context Protocol (MCP) transport layer.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:streaming-protocol",
-      "label": "Streaming Protocol"
+      "id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Infra Network And Comms"
     }
   ],
   "entityType": "Class",
@@ -131,6 +131,10 @@
       {
         "id": "urn:ngm:class:chunked-transfer-encoding",
         "label": "Chunked Transfer Encoding"
+      },
+      {
+        "id": "urn:ngm:class:streaming-protocol",
+        "label": "Streaming Protocol"
       }
     ]
   },

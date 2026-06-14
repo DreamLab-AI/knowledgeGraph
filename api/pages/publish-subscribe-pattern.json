@@ -8,8 +8,8 @@
   "definition": "A messaging design pattern in which message producers (publishers) emit typed events to named topics or channels without direct knowledge of consumers, and message consumers (subscribers) declare interest in specific topics to receive matching events asynchronously. A broker or event bus mediates delivery, fully decoupling senders from receivers in space, time, and control flow. This architectural separation enables independent scaling, fault isolation, and runtime addition or removal of participants without coordination. Pub/Sub underpins event-driven architectures, stream processing systems, and reactive microservices.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:messaging-pattern",
-      "label": "Messaging Pattern"
+      "id": "urn:ngm:class:infra-software-engineering",
+      "label": "Infra Software Engineering"
     }
   ],
   "entityType": "Class",
@@ -150,6 +150,10 @@
       {
         "id": "urn:ngm:class:cqrs",
         "label": "CQRS"
+      },
+      {
+        "id": "urn:ngm:class:messaging-pattern",
+        "label": "Messaging Pattern"
       }
     ]
   },

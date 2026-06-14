@@ -8,8 +8,8 @@
   "definition": "Information provided by human evaluators about model outputs, typically in the form of rankings, ratings, demonstrations, or corrections. Human feedback serves as the training signal for aligning AI systems with human preferences and values, enabling learning of complex objectives that are difficult to specify formally.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:training-signal",
-      "label": "Training Signal"
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
     }
   ],
   "entityType": "Class",
@@ -136,6 +136,10 @@
       {
         "id": "urn:ngm:class:instruction-following",
         "label": "Instruction Following"
+      },
+      {
+        "id": "urn:ngm:class:training-signal",
+        "label": "Training Signal"
       }
     ]
   },

@@ -8,8 +8,8 @@
   "definition": "The University of Edinburgh is a public research university in Edinburgh, Scotland, founded by royal charter in 1582, making it one of the oldest universities in the English-speaking world and the sixth-oldest in the United Kingdom. It is a member of the Russell Group and is internationally recognised for research in informatics, artificial intelligence, machine learning, natural language processing, medicine, and the humanities. Its School of Informatics is among the largest and most influential computer science and AI research centres in Europe, with foundational contributions to neural networks, probabilistic programming, and language modelling. The university's research ecosystem spans industry partnerships, spin-out companies, and national research institutes including the Alan Turing Institute.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:research-university",
-      "label": "Research University"
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area"
     }
   ],
   "entityType": "Class",
@@ -124,6 +124,10 @@
       }
     ],
     "relatedTo": [
+      {
+        "id": "urn:ngm:class:research-university",
+        "label": "Research University"
+      },
       {
         "id": "urn:ngm:class:university-of-cambridge",
         "label": "University of Cambridge"

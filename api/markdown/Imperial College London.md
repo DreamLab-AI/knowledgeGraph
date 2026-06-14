@@ -52,8 +52,8 @@ public:: true
   "qualityScore": 0.72,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:research-institution",
-      "label": "Research Institution"
+      "@id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area"
     }
   ],
   "relations": {
@@ -91,7 +91,8 @@ public:: true
       {"@id": "urn:ngm:class:university-of-edinburgh", "label": "University of Edinburgh"},
       {"@id": "urn:ngm:class:oxford-university", "label": "University of Oxford"},
       {"@id": "urn:ngm:class:alan-turing-institute", "label": "Alan Turing Institute"},
-      {"@id": "urn:ngm:class:ukri", "label": "UKRI"}
+      {"@id": "urn:ngm:class:ukri", "label": "UKRI"},
+      {"@id": "urn:ngm:class:research-institution", "label": "Research Institution"}
     ],
     "bridgesTo": [
       {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},

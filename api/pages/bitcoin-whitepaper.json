@@ -8,8 +8,8 @@
   "definition": "The October 2008 technical paper by pseudonymous author Satoshi Nakamoto, titled 'Bitcoin: A Peer-to-Peer Electronic Cash System', which introduced the design of a decentralised digital currency that eliminates reliance on trusted third parties. It proposed a chain of cryptographically linked blocks secured by proof-of-work consensus to prevent double-spending without a central authority. The paper synthesised prior work on digital cash, cryptographic hash functions, and distributed timestamps into a coherent, deployable protocol that was subsequently realised in the January 2009 Bitcoin genesis block launch.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:cryptocurrency-technical-specification",
-      "label": "Cryptocurrency Technical Specification"
+      "id": "urn:ngm:class:bc-protocol-and-consensus",
+      "label": "Bc Protocol And Consensus"
     }
   ],
   "entityType": "Class",
@@ -133,6 +133,10 @@
       {
         "id": "urn:ngm:class:lightning-network",
         "label": "Lightning Network"
+      },
+      {
+        "id": "urn:ngm:class:cryptocurrency-technical-specification",
+        "label": "Cryptocurrency Technical Specification"
       }
     ]
   },

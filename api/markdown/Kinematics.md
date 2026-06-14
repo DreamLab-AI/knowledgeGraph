@@ -47,8 +47,8 @@ public:: true
   "maturity": "mature",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:mechanics",
-      "label": "Mechanics"
+      "@id": "urn:ngm:class:robo-navigation-and-planning",
+      "label": "Navigation and Planning"
     }
   ],
   "relations": {
@@ -91,7 +91,8 @@ public:: true
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:biomechanics", "label": "Biomechanics"},
-      {"@id": "urn:ngm:class:autonomous-vehicles", "label": "Autonomous Vehicles"}
+      {"@id": "urn:ngm:class:autonomous-vehicles", "label": "Autonomous Vehicles"},
+      {"@id": "urn:ngm:class:mechanics", "label": "Mechanics"}
     ]
   },
   "sameAs": [

@@ -8,8 +8,8 @@
   "definition": "Distributed machine learning paradigm enabling collaborative model training across decentralized data sources without centralizing sensitive information; model updates are aggregated from local computations whilst raw data remains on-device, preserving privacy and enabling cross-organizational learning.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:distributed-learning",
-      "label": "Distributed Learning"
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
     }
   ],
   "entityType": "Class",
@@ -119,6 +119,10 @@
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
+      {
+        "id": "urn:ngm:class:distributed-learning",
+        "label": "Distributed Learning"
+      },
       {
         "id": "urn:ngm:class:distributed-systems",
         "label": "Distributed Systems"

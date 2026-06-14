@@ -8,8 +8,8 @@
   "definition": "A structured specification defining metadata elements, their semantics, syntax, and relationships for describing and managing information resources. Metadata schemas establish standardised vocabularies and constraints that enable interoperability, discovery, and governance across data ecosystems through predefined sets of descriptive attributes tailored for specific domains or resource types.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:data-standard",
-      "label": "Data Standard"
+      "id": "urn:ngm:class:infra-data-management",
+      "label": "Infra Data Management"
     }
   ],
   "entityType": "Class",
@@ -153,6 +153,10 @@
       {
         "id": "urn:ngm:class:open-metadata",
         "label": "Open Metadata"
+      },
+      {
+        "id": "urn:ngm:class:data-standard",
+        "label": "Data Standard"
       }
     ]
   },

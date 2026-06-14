@@ -8,8 +8,8 @@
   "definition": "Layer 2 Networks are secondary protocols constructed atop a base blockchain (Layer 1) that execute transactions off the main chain, batching or compressing them before posting commitments back to Layer 1 for final settlement and security. They address the fundamental scalability trilemma by separating execution from consensus, enabling higher throughput and lower fees without compromising the decentralisation or security guarantees of the underlying chain. Primary architectural families include optimistic rollups, zero-knowledge rollups, state channels, and sidechains, each making different trade-offs between latency, data availability, and trust assumptions. Settlement finality and fraud or validity proof mechanisms determine the trust model and the withdrawal period users must endure before funds are considered unconditionally settled.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:blockchain-scaling",
-      "label": "Blockchain Scaling"
+      "id": "urn:ngm:class:bc-protocol-and-consensus",
+      "label": "Protocol and Consensus"
     }
   ],
   "entityType": "Class",
@@ -134,6 +134,10 @@
       {
         "id": "urn:ngm:class:blockchain-interoperability",
         "label": "Blockchain Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-scaling",
+        "label": "Blockchain Scaling"
       }
     ]
   },

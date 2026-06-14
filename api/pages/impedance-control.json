@@ -8,8 +8,8 @@
   "definition": "A robot control strategy that dynamically modulates mechanical compliance (stiffness, damping, and inertia) to regulate the dynamic relationship between force and motion at the robot end-effector, enabling compliant and safe interaction with objects, surfaces, and humans without requiring explicit force feedback in all configurations.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:compliant-motion-control",
-      "label": "Compliant Motion Control"
+      "id": "urn:ngm:class:robo-actuation-and-control",
+      "label": "Actuation and Control"
     }
   ],
   "entityType": "Class",
@@ -160,6 +160,10 @@
       {
         "id": "urn:ngm:class:surgical-robotics",
         "label": "Surgical Robotics"
+      },
+      {
+        "id": "urn:ngm:class:compliant-motion-control",
+        "label": "Compliant Motion Control"
       }
     ]
   },

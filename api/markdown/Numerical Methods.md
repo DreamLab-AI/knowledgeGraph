@@ -60,8 +60,8 @@ public:: true
   "qualityScore": 0.7,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:computational-mathematics",
-      "label": "Computational Mathematics"
+      "@id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area"
     }
   ],
   "relations": {
@@ -183,6 +183,10 @@ public:: true
       {
         "@id": "urn:ngm:class:parallel-computing",
         "label": "Parallel Computing"
+      },
+      {
+        "@id": "urn:ngm:class:computational-mathematics",
+        "label": "Computational Mathematics"
       }
     ]
   },

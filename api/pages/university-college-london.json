@@ -8,8 +8,8 @@
   "definition": "University College London (UCL) is a public research university in Bloomsbury, London, England, and the founding college of the federal University of London. It is one of the world's leading multidisciplinary universities, ranked consistently among the global top ten, with particular strength in computer science, artificial intelligence, machine learning, neuroscience, and biomedical engineering. UCL is a founding partner of the Alan Turing Institute \u2014 the UK national institute for data science and AI \u2014 and hosts major research groups in deep learning, natural language processing, reinforcement learning, and computational statistics. Its Computer Science and Engineering faculties supply significant research output and graduate talent to the UK and global AI ecosystem.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:research-university",
-      "label": "Research University"
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area"
     }
   ],
   "entityType": "Class",
@@ -115,6 +115,10 @@
       }
     ],
     "relatedTo": [
+      {
+        "id": "urn:ngm:class:research-university",
+        "label": "Research University"
+      },
       {
         "id": "urn:ngm:class:deepmind",
         "label": "DeepMind"

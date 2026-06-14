@@ -52,8 +52,8 @@ public:: true
   "qualityScore": 0.74,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:smart-contract-development-framework",
-      "label": "Smart Contract Development Framework"
+      "@id": "urn:ngm:class:bc-network-component",
+      "label": "BC Network Component"
     }
   ],
   "relations": {
@@ -178,6 +178,10 @@ public:: true
       }
     ],
     "relatedTo": [
+      {
+        "@id": "urn:ngm:class:smart-contract-development-framework",
+        "label": "Smart Contract Development Framework"
+      },
       {
         "@id": "urn:ngm:class:vyper",
         "label": "Vyper"

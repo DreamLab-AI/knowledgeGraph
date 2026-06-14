@@ -55,8 +55,8 @@ alias:: Event-Driven Architecture
   "domain": "distributed-systems",
   "maturity": "draft",
   "subClassOf": {
-    "@id": "urn:ngm:class:software-architecture-pattern",
-    "label": "Software Architecture Pattern"
+    "@id": "urn:ngm:class:infra-software-engineering",
+    "label": "Infra Software Engineering"
   },
   "relations": {
     "hasPart": [
@@ -103,6 +103,7 @@ alias:: Event-Driven Architecture
       {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
     ],
     "relatedTo": [
+      {"@id": "urn:ngm:class:software-architecture-pattern", "label": "Software Architecture Pattern"},
       {"@id": "urn:ngm:class:saga-pattern", "label": "Saga Pattern"},
       {"@id": "urn:ngm:class:observability", "label": "Observability"}
     ]

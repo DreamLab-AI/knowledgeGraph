@@ -23,7 +23,7 @@ public:: true
   "definition": "Hyperparameter tuning is the systematic process of searching over the configuration space of parameters that govern the training process of a machine learning model — distinct from the learnable parameters updated during training itself. Common hyperparameters include learning rate, batch size, network depth and width, regularisation coefficients, dropout rate, optimiser choice, and architectural decisions such as kernel size or number of attention heads. The tuning process employs search strategies — including grid search, random search, Bayesian optimisation, population-based methods, and evolutionary algorithms — to identify configurations that maximise model performance on a held-out validation set while controlling for overfitting. Efficient hyperparameter optimisation is critical to practical machine learning deployment because model generalisation is often highly sensitive to these configuration choices, and naive exhaustive search is computationally intractable in high-dimensional spaces.",
   "domain": "machine-learning",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:machine-learning-optimisation", "label": "Machine Learning Optimisation"}],
+  "subClassOf": [{"@id": "urn:ngm:class:ai-technique", "label": "AI Technique"}],
   "relations": {
     "partOf": [
       {"@id": "urn:ngm:class:machine-learning-pipeline", "label": "Machine Learning Pipeline"},
@@ -59,7 +59,8 @@ public:: true
       {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"},
       {"@id": "urn:ngm:class:meta-learning", "label": "Meta-Learning"},
       {"@id": "urn:ngm:class:experiment-tracking", "label": "Experiment Tracking"},
-      {"@id": "urn:ngm:class:distributed-training", "label": "Distributed Training"}
+      {"@id": "urn:ngm:class:distributed-training", "label": "Distributed Training"},
+      {"@id": "urn:ngm:class:machine-learning-optimisation", "label": "Machine Learning Optimisation"}
     ],
     "bridgesTo": [
       {"@id": "urn:ngm:class:mlops", "label": "MLOps"},

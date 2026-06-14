@@ -24,8 +24,8 @@ alias:: EmbeddedSystems
   "quality": 0.72,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:computing-systems",
-      "label": "Computing Systems"
+      "@id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Infra Computing and Cloud"
     }
   ],
   "relations": {
@@ -78,6 +78,7 @@ alias:: EmbeddedSystems
       {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
     ],
     "relatedTo": [
+      {"@id": "urn:ngm:class:computing-systems", "label": "Computing Systems"},
       {"@id": "urn:ngm:class:control-system", "label": "Control System"},
       {"@id": "urn:ngm:class:hardware-security", "label": "Hardware Security"}
     ]

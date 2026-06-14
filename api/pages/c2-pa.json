@@ -8,8 +8,8 @@
   "definition": "C2PA (Coalition for Content Provenance and Authenticity) is a cross-industry open technical standards body and specification that cryptographically binds signed provenance metadata \u2014 covering capture origin, editing history, and AI generation disclosure \u2014 to digital media assets including images, video, audio, and documents. Founded by Adobe, Arm, BBC, Intel, Microsoft, and Truepic under the Joint Development Foundation, the C2PA specification defines the manifest container format (JUMBF/ISO 19566-5), assertion vocabularies, COSE-based signing mechanism, X.509 PKI trust model, and the resulting Content Credentials artefact. C2PA consolidates two prior initiatives \u2014 Adobe's Content Authenticity Initiative (CAI) and the BBC-led Project Origin \u2014 into a single interoperable standard for end-to-end media provenance across capture, editing, distribution, and verification stages.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:digital-media-standards",
-      "label": "Digital Media Standards"
+      "id": "urn:ngm:class:sc-standards-and-interop",
+      "label": "Sc Standards And Interop"
     }
   ],
   "entityType": "Class",
@@ -143,6 +143,10 @@
       {
         "id": "urn:ngm:class:joint-development-foundation",
         "label": "Joint Development Foundation"
+      },
+      {
+        "id": "urn:ngm:class:digital-media-standards",
+        "label": "Digital Media Standards"
       }
     ]
   },

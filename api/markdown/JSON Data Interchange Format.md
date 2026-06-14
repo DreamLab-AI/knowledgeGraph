@@ -39,8 +39,8 @@ elevatedFrom:: [[json]]
   "maturity": "mature",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:data-serialisation-format",
-      "label": "Data Serialisation Format"
+      "@id": "urn:ngm:class:infra-data-management",
+      "label": "Data Management"
     }
   ],
   "relations": {
@@ -84,7 +84,8 @@ elevatedFrom:: [[json]]
       {"@id": "urn:ngm:class:data-interchange", "label": "Data Interchange"},
       {"@id": "urn:ngm:class:serialisation", "label": "Serialisation"},
       {"@id": "urn:ngm:class:data-format", "label": "Data Format"},
-      {"@id": "urn:ngm:class:javascript", "label": "JavaScript"}
+      {"@id": "urn:ngm:class:javascript", "label": "JavaScript"},
+      {"@id": "urn:ngm:class:data-serialisation-format", "label": "Data Serialisation Format"}
     ]
   },
   "sameAs": [

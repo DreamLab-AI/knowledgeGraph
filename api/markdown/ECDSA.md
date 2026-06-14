@@ -70,8 +70,8 @@ public:: true
   "domain": "security",
   "maturity": "established",
   "subClassOf": {
-    "@id": "urn:ngm:class:digital-signature-algorithm",
-    "label": "Digital Signature Algorithm"
+    "@id": "urn:ngm:class:infra-security-and-identity",
+    "label": "Infra Security and Identity"
   },
   "relations": {
     "uses": [
@@ -118,6 +118,7 @@ public:: true
       {"@id": "urn:ngm:class:schnorr-signature", "label": "Schnorr Signature"}
     ],
     "relatedTo": [
+      {"@id": "urn:ngm:class:digital-signature-algorithm", "label": "Digital Signature Algorithm"},
       {"@id": "urn:ngm:class:cryptographic-protocol", "label": "Cryptographic Protocol"},
       {"@id": "urn:ngm:class:secp256k1", "label": "secp256k1"},
       {"@id": "urn:ngm:class:p-256-curve", "label": "P-256 Curve"}

@@ -74,8 +74,8 @@ public:: true
   "domain": "data",
   "maturity": "emerging",
   "subClassOf": {
-    "@id": "urn:ngm:class:data-standard",
-    "label": "Data Standard"
+    "@id": "urn:ngm:class:infra-data-management",
+    "label": "Infra Data Management"
   },
   "relations": {
     "hasPart": [
@@ -214,6 +214,10 @@ public:: true
       {
         "@id": "urn:ngm:class:open-metadata",
         "label": "Open Metadata"
+      },
+      {
+        "@id": "urn:ngm:class:data-standard",
+        "label": "Data Standard"
       }
     ]
   },

@@ -90,8 +90,8 @@ public:: true
   "domain": "robotics",
   "maturity": "draft",
   "subClassOf": {
-    "@id": "urn:ngm:class:compliant-motion-control",
-    "label": "Compliant Motion Control"
+    "@id": "urn:ngm:class:robo-actuation-and-control",
+    "label": "Actuation and Control"
   },
   "relations": {
     "requires": [
@@ -220,6 +220,10 @@ public:: true
       {
         "@id": "urn:ngm:class:surgical-robotics",
         "label": "Surgical Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:compliant-motion-control",
+        "label": "Compliant Motion Control"
       }
     ],
     "bridgesTo": [

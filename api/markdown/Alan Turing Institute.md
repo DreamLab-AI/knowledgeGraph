@@ -59,8 +59,8 @@ public:: true
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": {
-    "@id": "urn:ngm:class:research-institute",
-    "label": "Research Institute"
+    "@id": "urn:ngm:class:ai-research-area",
+    "label": "Ai Research Area"
   },
   "relations": {
     "hasPart": [
@@ -177,6 +177,10 @@ public:: true
       {
         "@id": "urn:ngm:class:ai-governance",
         "label": "AI Governance"
+      },
+      {
+        "@id": "urn:ngm:class:research-institute",
+        "label": "Research Institute"
       }
     ]
   },

@@ -43,8 +43,8 @@ alias:: ProceduralGeneration
   "maturity": "mature",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:algorithmic-content-creation",
-      "label": "Algorithmic Content Creation"
+      "@id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Sc Content And Assets"
     }
   ],
   "sameAs": [
@@ -95,7 +95,8 @@ alias:: ProceduralGeneration
     "relatedTo": [
       {"@id": "urn:ngm:class:computational-creativity", "label": "Computational Creativity"},
       {"@id": "urn:ngm:class:generative-design", "label": "Generative Design"},
-      {"@id": "urn:ngm:class:metaverse-content-pipeline", "label": "Metaverse Content Pipeline"}
+      {"@id": "urn:ngm:class:metaverse-content-pipeline", "label": "Metaverse Content Pipeline"},
+      {"@id": "urn:ngm:class:algorithmic-content-creation", "label": "Algorithmic Content Creation"}
     ]
   },
   "quality": 0.74,

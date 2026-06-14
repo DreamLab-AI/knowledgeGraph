@@ -23,7 +23,7 @@ public:: true
   "definition": "The Enterprise Ethereum Alliance (EEA) is an industry consortium founded in February 2017 that develops open, blockchain-based specifications for enterprise deployments of Ethereum technology. It standardises the interfaces between private, consortium, and public Ethereum networks, enabling organisations to build interoperable enterprise applications that can bridge permissioned and permissionless environments. The EEA's Client Specification defines conformance requirements for enterprise Ethereum clients, covering private transaction management, permissioning, token standards, and off-chain compute. Membership spans over two hundred organisations including JP Morgan, Microsoft, Accenture, Intel, and ConsenSys, making it one of the largest blockchain standards bodies in the world.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": {"@id": "urn:ngm:class:blockchain-standards-body", "label": "Blockchain Standards Body"},
+  "subClassOf": {"@id": "urn:ngm:class:bc-governance-and-regulation", "label": "BC Governance and Regulation"},
   "relations": {
     "hasPart": [
       {"@id": "urn:ngm:class:eea-client-specification", "label": "EEA Client Specification"},
@@ -72,6 +72,7 @@ public:: true
       {"@id": "urn:ngm:class:supply-chain-management", "label": "Supply Chain Management"}
     ],
     "relatedTo": [
+      {"@id": "urn:ngm:class:blockchain-standards-body", "label": "Blockchain Standards Body"},
       {"@id": "urn:ngm:class:enterprise-blockchain", "label": "Enterprise Blockchain"},
       {"@id": "urn:ngm:class:hyperledger-besu", "label": "Hyperledger Besu"}
     ]

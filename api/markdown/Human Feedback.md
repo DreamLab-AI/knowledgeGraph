@@ -50,8 +50,8 @@ public:: true
   "domain": "artificial-intelligence",
   "maturity": "emerging",
   "subClassOf": {
-    "@id": "urn:ngm:class:training-signal",
-    "label": "Training Signal"
+    "@id": "urn:ngm:class:ai-technique",
+    "label": "AI Technique"
   },
   "relations": {
     "enables": [
@@ -97,7 +97,8 @@ public:: true
     "relatedTo": [
       {"@id": "urn:ngm:class:model-performance", "label": "Model Performance"},
       {"@id": "urn:ngm:class:bias-mitigation", "label": "Bias Mitigation"},
-      {"@id": "urn:ngm:class:instruction-following", "label": "Instruction Following"}
+      {"@id": "urn:ngm:class:instruction-following", "label": "Instruction Following"},
+      {"@id": "urn:ngm:class:training-signal", "label": "Training Signal"}
     ]
   },
   "sameAs": [

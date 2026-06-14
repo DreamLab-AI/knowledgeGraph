@@ -8,8 +8,8 @@
   "definition": "Ready Player Me (RPM) is a cross-application avatar platform that enables users to create a single personalised 3D humanoid avatar and deploy it across hundreds of games, social VR environments, and virtual worlds via an open SDK and REST API. Founded in 2021 by Wolf3D, it provides a browser-based avatar creator, glTF-compliant avatar meshes, morph-target facial animation, and an OAuth-based identity layer so that the same avatar persona persists across compatible applications. By decoupling avatar creation from any single platform, RPM acts as a shared identity infrastructure for the emerging spatial internet, addressing avatar fragmentation across [[Metaverse]] ecosystems.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:avatar-platform",
-      "label": "Avatar Platform"
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Sc Platform And Environment"
     }
   ],
   "entityType": "Class",
@@ -139,6 +139,10 @@
       {
         "id": "urn:ngm:class:avatar-sdk",
         "label": "Avatar SDK"
+      },
+      {
+        "id": "urn:ngm:class:avatar-platform",
+        "label": "Avatar Platform"
       }
     ]
   },

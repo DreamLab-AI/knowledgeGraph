@@ -122,8 +122,8 @@ public:: true
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": {
-    "@id": "urn:ngm:class:environmental-impact",
-    "label": "Environmental Impact"
+    "@id": "urn:ngm:class:bc-governance-and-regulation",
+    "label": "Bc Governance And Regulation"
   },
   "relations": {
     "hasPart": [
@@ -236,6 +236,10 @@ public:: true
       {
         "@id": "urn:ngm:class:layer-2-scaling",
         "label": "Layer 2 Scaling"
+      },
+      {
+        "@id": "urn:ngm:class:environmental-impact",
+        "label": "Environmental Impact"
       }
     ],
     "bridgesTo": [

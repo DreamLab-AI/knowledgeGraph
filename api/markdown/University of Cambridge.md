@@ -56,8 +56,8 @@ public:: true
   "qualityScore": 0.75,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:research-institution",
-      "label": "Research Institution"
+      "@id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area"
     }
   ],
   "relations": {
@@ -84,6 +84,7 @@ public:: true
       {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"}
     ],
     "relatedTo": [
+      {"@id": "urn:ngm:class:research-institution", "label": "Research Institution"},
       {"@id": "urn:ngm:class:imperial-college-london", "label": "Imperial College London"},
       {"@id": "urn:ngm:class:university-of-edinburgh", "label": "University of Edinburgh"},
       {"@id": "urn:ngm:class:university-of-manchester", "label": "University of Manchester"},

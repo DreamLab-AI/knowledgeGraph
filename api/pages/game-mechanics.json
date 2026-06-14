@@ -8,8 +8,8 @@
   "definition": "The formal rules, feedback systems, and interaction patterns that govern player agency, emergent behaviour, and progression within a game, simulation, or interactive virtual environment. Game mechanics define the space of possible player actions and their consequences through structures such as reward loops, resource management, collision and physics constraints, NPC behaviour trees, and win or loss conditions. In metaverse and blockchain-enabled contexts, mechanics are increasingly encoded in smart contracts, enabling transparent, tamper-resistant enforcement and player-owned economies. The discipline draws on systems theory, behavioural psychology, and human-computer interaction to produce engaging, balanced, and culturally durable play experiences.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:interactive-system-design",
-      "label": "Interactive System Design"
+      "id": "urn:ngm:class:sc-interaction",
+      "label": "SC Interaction"
     }
   ],
   "entityType": "Class",
@@ -127,6 +127,10 @@
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
+      {
+        "id": "urn:ngm:class:interactive-system-design",
+        "label": "Interactive System Design"
+      },
       {
         "id": "urn:ngm:class:gamification",
         "label": "Gamification"

@@ -8,8 +8,8 @@
   "definition": "The European Commission is the politically independent executive body of the European Union, holding the exclusive right of legislative initiative and responsible for proposing legislation, implementing decisions of the Council of the European Union, managing the EU budget, and upholding EU treaties and law across all 27 member states. In the technology domain it has authored landmark regulatory frameworks including the EU AI Act, the Data Governance Act, the Digital Markets Act, and the Digital Services Act, constituting the most comprehensive digital governance agenda of any jurisdiction. It also directs research funding through Horizon Europe, coordinates AI standardisation mandates to CEN-CENELEC and ETSI, and operates cross-border digital infrastructure such as the European Blockchain Services Infrastructure.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:regulatory-body",
-      "label": "Regulatory Body"
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Infra Legal and Regulatory"
     }
   ],
   "entityType": "Class",
@@ -115,6 +115,10 @@
     ],
     "partOf": [],
     "relatedTo": [
+      {
+        "id": "urn:ngm:class:regulatory-body",
+        "label": "Regulatory Body"
+      },
       {
         "id": "urn:ngm:class:artificial-intelligence",
         "label": "Artificial Intelligence"

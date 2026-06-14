@@ -72,8 +72,8 @@ public:: true
   "qualityScore": 0.7,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:mathematical-analysis",
-      "label": "Mathematical Analysis"
+      "@id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area"
     }
   ],
   "relations": {
@@ -205,6 +205,10 @@ public:: true
       {
         "@id": "urn:ngm:class:fourier-analysis",
         "label": "Fourier Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:mathematical-analysis",
+        "label": "Mathematical Analysis"
       }
     ]
   },

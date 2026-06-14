@@ -47,8 +47,8 @@ public:: true
   "maturity": "emerging",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:token-offering",
-      "label": "Token Offering"
+      "@id": "urn:ngm:class:bc-token-and-asset",
+      "label": "Bc Token And Asset"
     }
   ],
   "relations": {
@@ -81,7 +81,8 @@ public:: true
       {"@id": "urn:ngm:class:digital-asset", "label": "Digital Asset"},
       {"@id": "urn:ngm:class:decentralized-finance", "label": "Decentralised Finance"},
       {"@id": "urn:ngm:class:capital-markets", "label": "Capital Markets"},
-      {"@id": "urn:ngm:class:tokenomics", "label": "Tokenomics"}
+      {"@id": "urn:ngm:class:tokenomics", "label": "Tokenomics"},
+      {"@id": "urn:ngm:class:token-offering", "label": "Token Offering"}
     ],
     "standardizedBy": [
       {"@id": "urn:ngm:class:erc-1400", "label": "ERC-1400"},

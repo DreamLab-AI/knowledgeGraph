@@ -8,8 +8,8 @@
   "definition": "JSON Schema is an IETF-standardised declarative vocabulary for annotating and validating the structure, data types, required fields, and value constraints of JSON documents. It defines a set of keywords \u2014 including type, properties, required, additionalProperties, format, pattern, minimum, maximum, and combiners such as allOf, anyOf, and oneOf \u2014 that together constitute a machine-readable contract between data producers and consumers. Originally developed as a series of Internet-Drafts, the 2020-12 dialect is the most widely implemented stable revision. JSON Schema underpins REST API documentation via OpenAPI, event-driven API documentation via AsyncAPI, configuration validation in Kubernetes CRDs and Helm charts, and verifiable credential subject validation in decentralised identity ecosystems.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:schema-language",
-      "label": "Schema Language"
+      "id": "urn:ngm:class:infra-data-management",
+      "label": "Data Management"
     }
   ],
   "entityType": "Class",
@@ -134,6 +134,10 @@
       {
         "id": "urn:ngm:class:graphql-schema",
         "label": "GraphQL Schema"
+      },
+      {
+        "id": "urn:ngm:class:schema-language",
+        "label": "Schema Language"
       }
     ]
   },

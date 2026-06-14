@@ -50,7 +50,7 @@ public:: true
   "domain": "data",
   "maturity": "mature",
   "subClassOf": [
-    {"@id": "urn:ngm:class:information-management", "label": "Information Management"}
+    {"@id": "urn:ngm:class:infra-data-management", "label": "Infra Data Management"}
   ],
   "relations": {
     "hasPart": [
@@ -77,6 +77,7 @@ public:: true
       {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"}
     ],
     "relatedTo": [
+      {"@id": "urn:ngm:class:information-management", "label": "Information Management"},
       {"@id": "urn:ngm:class:distributed-system", "label": "Distributed System"},
       {"@id": "urn:ngm:class:data-architecture", "label": "Data Architecture"},
       {"@id": "urn:ngm:class:etl", "label": "ETL"}

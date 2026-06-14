@@ -47,8 +47,8 @@ public:: true
   "maturity": "mature",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:computing-system",
-      "label": "Computing System"
+      "@id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Infra Computing and Cloud"
     }
   ],
   "relations": {
@@ -92,6 +92,7 @@ public:: true
       {"@id": "urn:ngm:class:decentralised-autonomous-organisation", "label": "Decentralised Autonomous Organisation"}
     ],
     "relatedTo": [
+      {"@id": "urn:ngm:class:computing-system", "label": "Computing System"},
       {"@id": "urn:ngm:class:sharding", "label": "Sharding"},
       {"@id": "urn:ngm:class:service-mesh", "label": "Service Mesh"}
     ]

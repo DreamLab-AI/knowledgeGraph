@@ -56,8 +56,8 @@ public:: true
   "qualityScore": 0.72,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:research-university",
-      "label": "Research University"
+      "@id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area"
     }
   ],
   "relations": {
@@ -95,6 +95,7 @@ public:: true
       {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"}
     ],
     "relatedTo": [
+      {"@id": "urn:ngm:class:research-university", "label": "Research University"},
       {"@id": "urn:ngm:class:university-of-cambridge", "label": "University of Cambridge"},
       {"@id": "urn:ngm:class:imperial-college-london", "label": "Imperial College London"},
       {"@id": "urn:ngm:class:university-of-manchester", "label": "University of Manchester"},

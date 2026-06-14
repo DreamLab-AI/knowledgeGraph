@@ -8,8 +8,8 @@
   "definition": "Procedural Generation is the algorithmic creation of digital content \u2014 including terrain, geometry, textures, vegetation, buildings, soundscapes, quests, and narrative elements \u2014 using mathematical functions, noise algorithms, grammars, and rule-based systems rather than entirely manual authoring. It enables scalable world-building by deriving arbitrarily large, varied outputs from compact parametric seeds, making it foundational to games, simulation, virtual environments, and generative design workflows. Modern procedural generation incorporates machine-learning-guided heuristics alongside classical stochastic sampling, bridging traditional algorithmic design with contemporary AI-driven content synthesis. The technique trades artist-authoring effort for computational cost while preserving statistical variety and stylistic coherence.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:algorithmic-content-creation",
-      "label": "Algorithmic Content Creation"
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Sc Content And Assets"
     }
   ],
   "entityType": "Class",
@@ -143,6 +143,10 @@
       {
         "id": "urn:ngm:class:metaverse-content-pipeline",
         "label": "Metaverse Content Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-content-creation",
+        "label": "Algorithmic Content Creation"
       }
     ]
   },

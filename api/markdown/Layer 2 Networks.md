@@ -52,8 +52,8 @@ public:: true
   "qualityScore": 0.74,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:blockchain-scaling",
-      "label": "Blockchain Scaling"
+      "@id": "urn:ngm:class:bc-protocol-and-consensus",
+      "label": "Protocol and Consensus"
     }
   ],
   "relations": {
@@ -161,6 +161,10 @@ public:: true
       {
         "@id": "urn:ngm:class:blockchain-interoperability",
         "label": "Blockchain Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-scaling",
+        "label": "Blockchain Scaling"
       }
     ],
     "bridgesTo": [

@@ -8,8 +8,8 @@
   "definition": "A network protocol is a set of established rules that specify how to format, send, and receive data between networked devices, enabling diverse communication systems to interact using standard procedures. Protocols are organized into layered architectures (OSI, TCP/IP) and govern addressing, routing, error detection, session management, and application-layer services.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:communication-standard",
-      "label": "Communication Standard"
+      "id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Infra Network And Comms"
     }
   ],
   "entityType": "Class",
@@ -150,6 +150,10 @@
       {
         "id": "urn:ngm:class:latency",
         "label": "Latency"
+      },
+      {
+        "id": "urn:ngm:class:communication-standard",
+        "label": "Communication Standard"
       }
     ]
   },

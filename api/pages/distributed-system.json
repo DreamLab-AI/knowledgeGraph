@@ -8,8 +8,8 @@
   "definition": "A distributed system is a collection of autonomous computing nodes interconnected by a network, coordinating their actions through message passing to appear as a single coherent system to end users or applications. The architecture is governed by fundamental trade-offs formalised in the CAP theorem \u2014 a system can guarantee at most two of consistency, availability, and partition tolerance simultaneously. Correctness in the presence of node failures and malicious actors is addressed by Byzantine Fault Tolerance protocols and consensus mechanisms such as Paxos, Raft, and Practical Byzantine Fault Tolerance. Canonical instantiations span peer-to-peer networks, blockchain ledgers, microservices architectures, distributed databases, and large-scale cloud infrastructure.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:computing-system",
-      "label": "Computing System"
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Infra Computing and Cloud"
     }
   ],
   "entityType": "Class",
@@ -135,6 +135,10 @@
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
+      {
+        "id": "urn:ngm:class:computing-system",
+        "label": "Computing System"
+      },
       {
         "id": "urn:ngm:class:sharding",
         "label": "Sharding"

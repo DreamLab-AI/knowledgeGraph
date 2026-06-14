@@ -32,8 +32,8 @@ public:: true
   "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:regulatory-body",
-      "label": "Regulatory Body"
+      "@id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Infra Legal and Regulatory"
     }
   ],
   "relations": {
@@ -67,6 +67,7 @@ public:: true
       {"@id": "urn:ngm:class:european-blockchain-services-infrastructure", "label": "European Blockchain Services Infrastructure"}
     ],
     "relatedTo": [
+      {"@id": "urn:ngm:class:regulatory-body", "label": "Regulatory Body"},
       {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
       {"@id": "urn:ngm:class:risk-based-regulation", "label": "Risk-Based Regulation"},
       {"@id": "urn:ngm:class:conformity-assessment", "label": "Conformity Assessment"},

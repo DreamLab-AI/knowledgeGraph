@@ -51,8 +51,8 @@ public:: true
   "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:avatar-platform",
-      "label": "Avatar Platform"
+      "@id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Sc Platform And Environment"
     }
   ],
   "relations": {
@@ -176,6 +176,10 @@ public:: true
       {
         "@id": "urn:ngm:class:avatar-sdk",
         "label": "Avatar SDK"
+      },
+      {
+        "@id": "urn:ngm:class:avatar-platform",
+        "label": "Avatar Platform"
       }
     ]
   },

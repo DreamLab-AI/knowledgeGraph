@@ -8,8 +8,8 @@
   "definition": "His Majesty's Revenue and Customs (HMRC) is the non-ministerial department of the UK government responsible for the administration and collection of taxes, payment of certain state benefits, and enforcement of customs regulations. Formed in 2005 by the merger of the Inland Revenue and HM Customs and Excise, HMRC operates the UK's tax self-assessment regime, Pay As You Earn (PAYE) system, and Making Tax Digital (MTD) programme. It also issues authoritative guidance on the taxation of cryptoassets, financial instruments, and cross-border transactions, making it a central regulatory reference for UK digital finance and compliance obligations.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:regulatory-body",
-      "label": "Regulatory Body"
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Infra Legal and Regulatory"
     }
   ],
   "entityType": "Class",
@@ -120,6 +120,10 @@
       }
     ],
     "relatedTo": [
+      {
+        "id": "urn:ngm:class:regulatory-body",
+        "label": "Regulatory Body"
+      },
       {
         "id": "urn:ngm:class:fca",
         "label": "FCA"

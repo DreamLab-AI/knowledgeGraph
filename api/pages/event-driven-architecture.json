@@ -8,8 +8,8 @@
   "definition": "A software architecture pattern built from decoupled services that publish, consume, and route events representing state changes, enabling real-time responsiveness, independent scaling, and resilient distributed systems.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:software-architecture-pattern",
-      "label": "Software Architecture Pattern"
+      "id": "urn:ngm:class:infra-software-engineering",
+      "label": "Infra Software Engineering"
     }
   ],
   "entityType": "Class",
@@ -137,6 +137,10 @@
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
+      {
+        "id": "urn:ngm:class:software-architecture-pattern",
+        "label": "Software Architecture Pattern"
+      },
       {
         "id": "urn:ngm:class:saga-pattern",
         "label": "Saga Pattern"

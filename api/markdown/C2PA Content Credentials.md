@@ -32,8 +32,8 @@ public:: true
   "maturity": "emerging",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:digital-provenance",
-      "label": "Digital Provenance"
+      "@id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Infra Security And Identity"
     }
   ],
   "relations": {
@@ -74,7 +74,8 @@ public:: true
       {"@id": "urn:ngm:class:open-content-authenticity-initiative", "label": "Open Content Authenticity Initiative"},
       {"@id": "urn:ngm:class:iptc-photo-metadata", "label": "IPTC Photo Metadata"},
       {"@id": "urn:ngm:class:exif-metadata", "label": "EXIF Metadata"},
-      {"@id": "urn:ngm:class:w3c-verifiable-credentials", "label": "W3C Verifiable Credentials"}
+      {"@id": "urn:ngm:class:w3c-verifiable-credentials", "label": "W3C Verifiable Credentials"},
+      {"@id": "urn:ngm:class:digital-provenance", "label": "Digital Provenance"}
     ],
     "bridgesTo": [
       {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},

@@ -8,8 +8,8 @@
   "definition": "Systems Engineering is an interdisciplinary methodology for designing, integrating, and managing complex systems over their entire lifecycle, from concept definition through disposal. It applies structured processes \u2014 requirements analysis, functional decomposition, architecture definition, interface control, verification, and validation \u2014 to ensure that the emergent behaviour of integrated subsystems meets overall system objectives within defined cost, schedule, and performance constraints. Systems Engineering is distinguished from narrower disciplines by its holistic perspective: it treats the system as a whole rather than optimising individual components in isolation. Governing standards include ISO/IEC/IEEE 15288 (Systems and Software Life Cycle Processes) and the INCOSE Systems Engineering Handbook.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:engineering-methodology",
-      "label": "Engineering Methodology"
+      "id": "urn:ngm:class:infra-software-engineering",
+      "label": "Software Engineering"
     }
   ],
   "entityType": "Class",
@@ -140,6 +140,10 @@
     ],
     "partOf": [],
     "relatedTo": [
+      {
+        "id": "urn:ngm:class:engineering-methodology",
+        "label": "Engineering Methodology"
+      },
       {
         "id": "urn:ngm:class:systems-thinking",
         "label": "Systems Thinking"

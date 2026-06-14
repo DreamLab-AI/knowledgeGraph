@@ -67,8 +67,8 @@ public:: true
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": {
-    "@id": "urn:ngm:class:artificial-intelligence-research-laboratory",
-    "label": "Artificial Intelligence Research Laboratory"
+    "@id": "urn:ngm:class:ai-research-area",
+    "label": "AI Research Area"
   },
   "relations": {
     "requires": [
@@ -170,6 +170,10 @@ public:: true
       }
     ],
     "relatedTo": [
+      {
+        "@id": "urn:ngm:class:artificial-intelligence-research-laboratory",
+        "label": "Artificial Intelligence Research Laboratory"
+      },
       {
         "@id": "urn:ngm:class:artificial-general-intelligence",
         "label": "Artificial General Intelligence"

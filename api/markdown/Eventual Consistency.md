@@ -51,8 +51,8 @@ public:: true
   "maturity": "mature",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:consistency-model",
-      "label": "Consistency Model"
+      "@id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Infra Computing and Cloud"
     }
   ],
   "sameAs": [
@@ -137,6 +137,10 @@ public:: true
       }
     ],
     "relatedTo": [
+      {
+        "@id": "urn:ngm:class:consistency-model",
+        "label": "Consistency Model"
+      },
       {
         "@id": "urn:ngm:class:nosql-database",
         "label": "NoSQL Database"

@@ -23,7 +23,7 @@ public:: true
   "definition": "Nostr (Notes and Other Stuff Transmitted by Relays) is an open, censorship-resistant social-messaging protocol in which user identity is a secp256k1 cryptographic key pair and all user activity consists of signed JSON events published to one or more relay servers over WebSocket connections. The protocol has no central authority: identity is purely the public key, relays are interchangeable infrastructure that store and forward events without requiring account registration, and clients subscribe using filter objects to receive matching events. Nostr Improvement Proposals (NIPs) extend the core event-kind system to cover short-form notes, long-form articles, encrypted direct messages, Lightning Network zap payments, community moderation, and decentralised identity verification. Its radical simplicity, cryptographic self-sovereignty, and tight integration with the Bitcoin and Lightning ecosystem have made Nostr the dominant open social layer for value-aligned decentralised communication.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:decentralised-protocol", "label": "Decentralised Protocol"}],
+  "subClassOf": [{"@id": "urn:ngm:class:infra-network-and-comms", "label": "Infra Network And Comms"}],
   "relations": {
     "uses": [
       {"@id": "urn:ngm:class:public-key-cryptography", "label": "Public-Key Cryptography"},
@@ -64,7 +64,8 @@ public:: true
     "relatedTo": [
       {"@id": "urn:ngm:class:did-nostr-identity", "label": "DID Nostr Identity"},
       {"@id": "urn:ngm:class:value-for-value", "label": "Value-for-Value"},
-      {"@id": "urn:ngm:class:peer-to-peer-network", "label": "Peer-to-Peer Network"}
+      {"@id": "urn:ngm:class:peer-to-peer-network", "label": "Peer-to-Peer Network"},
+      {"@id": "urn:ngm:class:decentralised-protocol", "label": "Decentralised Protocol"}
     ],
     "bridgesTo": [
       {"@id": "urn:ngm:class:agent-to-agent-communication", "label": "Agent-to-Agent Communication"},

@@ -48,8 +48,8 @@ public:: true
   "qualityScore": 0.7,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:application-software",
-      "label": "Application Software"
+      "@id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Sc Platform And Environment"
     }
   ],
   "quality": 0.72,
@@ -199,6 +199,10 @@ public:: true
       {
         "@id": "urn:ngm:class:model-based-systems-engineering",
         "label": "Model-Based Systems Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:application-software",
+        "label": "Application Software"
       }
     ]
   }

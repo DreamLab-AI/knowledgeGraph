@@ -56,8 +56,8 @@ public:: true
   "qualityScore": 0.72,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:research-university",
-      "label": "Research University"
+      "@id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area"
     }
   ],
   "relations": {
@@ -143,6 +143,10 @@ public:: true
       {
         "@id": "urn:ngm:class:ukri",
         "label": "UKRI"
+      },
+      {
+        "@id": "urn:ngm:class:research-university",
+        "label": "Research University"
       }
     ],
     "bridgesTo": [

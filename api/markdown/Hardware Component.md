@@ -47,8 +47,8 @@ public:: true
   "maturity": "mature",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:physical-system",
-      "label": "Physical System"
+      "@id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Infra Computing and Cloud"
     }
   ],
   "relations": {
@@ -101,6 +101,7 @@ public:: true
       {"@id": "urn:ngm:class:ai-accelerator", "label": "AI Accelerator"}
     ],
     "relatedTo": [
+      {"@id": "urn:ngm:class:physical-system", "label": "Physical System"},
       {"@id": "urn:ngm:class:printed-circuit-board", "label": "Printed Circuit Board"},
       {"@id": "urn:ngm:class:system-on-chip", "label": "System-on-Chip"},
       {"@id": "urn:ngm:class:field-programmable-gate-array", "label": "Field-Programmable Gate Array"}

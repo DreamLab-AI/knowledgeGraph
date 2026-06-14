@@ -47,8 +47,8 @@ public:: true
   "maturity": "emerging",
   "qualityScore": 0.72,
   "subClassOf": {
-    "@id": "urn:ngm:class:economic-system",
-    "label": "Economic System"
+    "@id": "urn:ngm:class:bc-defi-and-economics",
+    "label": "BC DeFi and Economics"
   },
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
@@ -161,6 +161,10 @@ public:: true
       }
     ],
     "relatedTo": [
+      {
+        "@id": "urn:ngm:class:economic-system",
+        "label": "Economic System"
+      },
       {
         "@id": "urn:ngm:class:blockchain-economics",
         "label": "Blockchain Economics"

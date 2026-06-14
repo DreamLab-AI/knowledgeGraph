@@ -45,8 +45,8 @@ alias:: SpatialComputing
   "quality": 0.74,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:computing-paradigm",
-      "label": "Computing Paradigm"
+      "@id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
     }
   ],
   "sameAs": [
@@ -100,6 +100,7 @@ alias:: SpatialComputing
       {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"}
     ],
     "relatedTo": [
+      {"@id": "urn:ngm:class:computing-paradigm", "label": "Computing Paradigm"},
       {"@id": "urn:ngm:class:ar-cloud", "label": "AR Cloud"},
       {"@id": "urn:ngm:class:spatial-web", "label": "Spatial Web"},
       {"@id": "urn:ngm:class:holographic-display", "label": "Holographic Display"}

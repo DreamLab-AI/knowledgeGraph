@@ -8,8 +8,8 @@
   "definition": "A coordinate system is a mathematical framework that assigns a unique ordered tuple of numbers to every point in a geometric space, enabling unambiguous specification of position, orientation, and scale. Coordinate systems establish reference frames \u2014 world, camera, object, and sensor frames \u2014 that must be composed via rigid-body or affine transforms to map quantities from one frame into another. In spatial computing, robotics, and computer vision, multiple overlapping coordinate frames coexist and their consistent management is essential for rendering, navigation, and perception tasks. The choice of convention (handedness, axis orientation, unit) and the algebraic formalism used (homogeneous matrices, quaternions, dual quaternions, Lie group elements) profoundly affects numerical stability and interoperability across software stacks.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:mathematical-framework",
-      "label": "Mathematical Framework"
+      "id": "urn:ngm:class:sc-display-and-rendering",
+      "label": "SC Display and Rendering"
     }
   ],
   "entityType": "Class",
@@ -133,6 +133,10 @@
     ],
     "partOf": [],
     "relatedTo": [
+      {
+        "id": "urn:ngm:class:mathematical-framework",
+        "label": "Mathematical Framework"
+      },
       {
         "id": "urn:ngm:class:projection-model",
         "label": "Projection Model"

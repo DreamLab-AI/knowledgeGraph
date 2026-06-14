@@ -32,8 +32,8 @@ public:: true
   "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:financial-regulator",
-      "label": "Financial Regulator"
+      "@id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Infra Legal and Regulatory"
     }
   ],
   "sameAs": [
@@ -66,6 +66,7 @@ public:: true
       {"@id": "urn:ngm:class:financial-promotion", "label": "Financial Promotion"}
     ],
     "relatedTo": [
+      {"@id": "urn:ngm:class:financial-regulator", "label": "Financial Regulator"},
       {"@id": "urn:ngm:class:financial-regulation", "label": "Financial Regulation"},
       {"@id": "urn:ngm:class:prudential-regulation-authority", "label": "Prudential Regulation Authority"},
       {"@id": "urn:ngm:class:hm-treasury", "label": "HM Treasury"},

@@ -56,8 +56,8 @@ public:: true
   "qualityScore": 0.72,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:sovereign-entity",
-      "label": "Sovereign Entity"
+      "@id": "urn:ngm:class:bc-governance-and-regulation",
+      "label": "BC Governance and Regulation"
     }
   ],
   "relations": {
@@ -118,6 +118,10 @@ public:: true
       }
     ],
     "relatedTo": [
+      {
+        "@id": "urn:ngm:class:sovereign-entity",
+        "label": "Sovereign Entity"
+      },
       {
         "@id": "urn:ngm:class:monetary-policy",
         "label": "Monetary Policy"

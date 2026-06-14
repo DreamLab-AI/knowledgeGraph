@@ -8,8 +8,8 @@
   "definition": "Knowledge Management (KM) is the systematic discipline of identifying, capturing, organising, storing, sharing, and applying the collective explicit and tacit knowledge assets of an organisation or distributed community to improve decision-making, innovation, and operational effectiveness. It integrates organisational theory, information science, and technology \u2014 spanning knowledge repositories, ontologies, semantic search, and communities of practice \u2014 to prevent knowledge loss, enable reuse, and accelerate learning. Modern KM increasingly employs AI-augmented techniques such as knowledge graphs, retrieval-augmented generation, and large language model reasoning to make both structured and unstructured knowledge discoverable and actionable by human and autonomous agents alike. It is a mature field with established frameworks (SECI, DIKW hierarchy, Cynefin) and dedicated standards bodies.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:information-management",
-      "label": "Information Management"
+      "id": "urn:ngm:class:infra-data-management",
+      "label": "Data Management"
     }
   ],
   "entityType": "Class",
@@ -121,6 +121,10 @@
       {
         "id": "urn:ngm:class:natural-language-processing",
         "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:information-management",
+        "label": "Information Management"
       }
     ]
   },

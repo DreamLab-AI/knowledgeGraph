@@ -8,8 +8,8 @@
   "definition": "Foundry is a fast, modular, and portable Ethereum application development toolkit written in Rust, comprising four core tools: Forge (test framework), Cast (EVM interaction CLI), Anvil (local testnet node), and Chisel (Solidity REPL). It enables developers to write, compile, fuzz-test, and deploy Solidity and Vyper smart contracts entirely from the command line, with tests written directly in Solidity rather than JavaScript. Foundry has become the dominant professional-grade smart-contract development environment on Ethereum-compatible chains, replacing earlier JavaScript-based toolchains such as Hardhat and Truffle for many teams. Its architecture emphasises speed through native compilation and parallelised test execution, deterministic reproducibility via pinned dependencies, and deep EVM-level inspection through cheatcodes and traces.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:smart-contract-development-framework",
-      "label": "Smart Contract Development Framework"
+      "id": "urn:ngm:class:bc-network-component",
+      "label": "BC Network Component"
     }
   ],
   "entityType": "Class",
@@ -140,6 +140,10 @@
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
+      {
+        "id": "urn:ngm:class:smart-contract-development-framework",
+        "label": "Smart Contract Development Framework"
+      },
       {
         "id": "urn:ngm:class:vyper",
         "label": "Vyper"

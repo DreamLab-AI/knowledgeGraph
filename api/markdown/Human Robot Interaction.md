@@ -151,8 +151,8 @@ alias:: Human-Robot Interaction, HumanRobotInteraction
   "domain": "robotics",
   "maturity": "draft",
   "subClassOf": {
-    "@id": "urn:ngm:class:interaction-paradigm",
-    "label": "Interaction Paradigm"
+    "@id": "urn:ngm:class:robo-human-robot-interaction",
+    "label": "Human-Robot Interaction"
   },
   "relations": {
     "hasPart": [
@@ -273,6 +273,10 @@ alias:: Human-Robot Interaction, HumanRobotInteraction
       {
         "@id": "urn:ngm:class:intent-recognition",
         "label": "Intent Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:interaction-paradigm",
+        "label": "Interaction Paradigm"
       }
     ]
   },

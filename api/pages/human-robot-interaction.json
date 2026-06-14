@@ -8,8 +8,8 @@
   "definition": "Interdisciplinary field studying how humans and robots communicate, collaborate, and interact safely and effectively in shared physical and virtual spaces. HRI combines robotics engineering, AI, human factors engineering, and cognitive science to design systems with natural interaction modalities including gesture recognition, natural language processing, and haptic feedback.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:interaction-paradigm",
-      "label": "Interaction Paradigm"
+      "id": "urn:ngm:class:robo-human-robot-interaction",
+      "label": "Human-Robot Interaction"
     }
   ],
   "entityType": "Class",
@@ -136,6 +136,10 @@
       {
         "id": "urn:ngm:class:intent-recognition",
         "label": "Intent Recognition"
+      },
+      {
+        "id": "urn:ngm:class:interaction-paradigm",
+        "label": "Interaction Paradigm"
       }
     ]
   },

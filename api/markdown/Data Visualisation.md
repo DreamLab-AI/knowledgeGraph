@@ -52,8 +52,8 @@ public:: true
   "quality": 0.74,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:information-design",
-      "label": "Information Design"
+      "@id": "urn:ngm:class:infra-data-management",
+      "label": "Infra Data Management"
     }
   ],
   "sameAs": [
@@ -108,6 +108,7 @@ public:: true
       {"@id": "urn:ngm:class:explainable-ai", "label": "Explainable AI"}
     ],
     "relatedTo": [
+      {"@id": "urn:ngm:class:information-design", "label": "Information Design"},
       {"@id": "urn:ngm:class:scientific-visualisation", "label": "Scientific Visualisation"},
       {"@id": "urn:ngm:class:visual-analytics", "label": "Visual Analytics"}
     ]

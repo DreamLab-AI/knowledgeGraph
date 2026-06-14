@@ -10,14 +10,6 @@
     {
       "id": "urn:ngm:class:bc-governance-and-regulation",
       "label": "Governance and Regulation"
-    },
-    {
-      "id": "urn:ngm:class:collective-decision-making",
-      "label": "Collective Decision Making"
-    },
-    {
-      "id": "urn:ngm:class:bc-governance-and-regulation",
-      "label": "BC Governance And Regulation"
     }
   ],
   "entityType": "Class",
@@ -126,7 +118,12 @@
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:collective-decision-making",
+        "label": "Collective Decision Making"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:agora-forum",

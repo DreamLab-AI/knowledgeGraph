@@ -8,8 +8,8 @@
   "definition": "King's College London (KCL) is a public research university in central London, founded in 1829 by King George IV and the Duke of Wellington, and one of the oldest and largest constituent colleges of the University of London. KCL is a Russell Group institution with world-leading research programmes spanning medicine, health sciences, law, humanities, natural sciences, and security studies. It is a major contributor to UK artificial intelligence and digital health research, hosting institutes including the King's Institute for Artificial Intelligence and maintaining close collaboration with NHS Foundation Trusts. KCL is a founding partner of the Alan Turing Institute and a participant in numerous UKRI and Wellcome Trust-funded data science and machine learning initiatives.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:research-university",
-      "label": "Research University"
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area"
     }
   ],
   "entityType": "Class",
@@ -122,6 +122,10 @@
       {
         "id": "urn:ngm:class:ukri",
         "label": "UKRI"
+      },
+      {
+        "id": "urn:ngm:class:research-university",
+        "label": "Research University"
       }
     ]
   },

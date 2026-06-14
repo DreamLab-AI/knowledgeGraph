@@ -8,8 +8,8 @@
   "definition": "DeepMind is an artificial intelligence research laboratory owned by Google (Alphabet), headquartered in London, known for pioneering work in reinforcement learning, deep learning, and scientific AI applications including AlphaGo, AlphaFold, Gemini, and Gato.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:artificial-intelligence-research-laboratory",
-      "label": "Artificial Intelligence Research Laboratory"
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area"
     }
   ],
   "entityType": "Class",
@@ -119,6 +119,10 @@
       }
     ],
     "relatedTo": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence-research-laboratory",
+        "label": "Artificial Intelligence Research Laboratory"
+      },
       {
         "id": "urn:ngm:class:artificial-general-intelligence",
         "label": "Artificial General Intelligence"

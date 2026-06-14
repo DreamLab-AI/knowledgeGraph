@@ -33,8 +33,8 @@ alias:: Retrieval Augmented Generation, RAG, Retrieval-Augmented LLM
   "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:ai-inference-architecture",
-      "label": "AI Inference Architecture"
+      "@id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
     }
   ],
   "sameAs": [
@@ -76,7 +76,8 @@ alias:: Retrieval Augmented Generation, RAG, Retrieval-Augmented LLM
       {"@id": "urn:ngm:class:information-retrieval", "label": "Information Retrieval"},
       {"@id": "urn:ngm:class:prompt-engineering", "label": "Prompt Engineering"},
       {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
-      {"@id": "urn:ngm:class:agentic-ai", "label": "Agentic AI"}
+      {"@id": "urn:ngm:class:agentic-ai", "label": "Agentic AI"},
+      {"@id": "urn:ngm:class:ai-inference-architecture", "label": "AI Inference Architecture"}
     ],
     "bridgesTo": [
       {"@id": "urn:ngm:class:enterprise-search", "label": "Enterprise Search"},

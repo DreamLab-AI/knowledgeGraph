@@ -52,8 +52,8 @@ public:: true
   "qualityScore": 0.72,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:blockchain-development-toolchain",
-      "label": "Blockchain Development Toolchain"
+      "@id": "urn:ngm:class:bc-network-component",
+      "label": "BC Network Component"
     }
   ],
   "relations": {
@@ -166,6 +166,10 @@ public:: true
       }
     ],
     "relatedTo": [
+      {
+        "@id": "urn:ngm:class:blockchain-development-toolchain",
+        "label": "Blockchain Development Toolchain"
+      },
       {
         "@id": "urn:ngm:class:remix-ide",
         "label": "Remix IDE"

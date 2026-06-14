@@ -56,8 +56,8 @@ public:: true
   "qualityScore": 0.7,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:regulatory-body",
-      "label": "Regulatory Body"
+      "@id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Infra Legal and Regulatory"
     }
   ],
   "relations": {
@@ -134,6 +134,10 @@ public:: true
       }
     ],
     "relatedTo": [
+      {
+        "@id": "urn:ngm:class:regulatory-body",
+        "label": "Regulatory Body"
+      },
       {
         "@id": "urn:ngm:class:fca",
         "label": "FCA"

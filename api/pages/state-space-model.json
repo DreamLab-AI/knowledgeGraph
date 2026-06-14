@@ -8,8 +8,8 @@
   "definition": "A State Space Model (SSM) is a mathematical framework that represents a dynamical system through a hidden (latent) state vector whose evolution over discrete or continuous time is governed by linear or learnable recurrence equations, paired with an output equation mapping states to observations. Originally formalised in control theory and signal processing \u2014 with the Kalman filter as a canonical inference algorithm \u2014 SSMs have been re-parameterised as structured sequence layers in deep learning, enabling sub-quadratic scaling in sequence length as an alternative to self-attention. Modern deep SSM variants such as S4, Mamba, and RWKV exploit diagonal or low-rank structure in the state transition matrix to achieve hardware-efficient training and inference on long sequences.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:sequence-model",
-      "label": "Sequence Model"
+      "id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture"
     }
   ],
   "entityType": "Class",
@@ -111,6 +111,10 @@
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
+      {
+        "id": "urn:ngm:class:sequence-model",
+        "label": "Sequence Model"
+      },
       {
         "id": "urn:ngm:class:neural-network",
         "label": "Neural Network"

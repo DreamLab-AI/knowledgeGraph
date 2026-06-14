@@ -63,8 +63,8 @@ public:: true
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": {
-    "@id": "urn:ngm:class:distributed-systems-theorem",
-    "label": "Distributed Systems Theorem"
+    "@id": "urn:ngm:class:infra-computing-and-cloud",
+    "label": "Infra Computing And Cloud"
   },
   "relations": {
     "hasPart": [
@@ -153,6 +153,10 @@ public:: true
       {
         "@id": "urn:ngm:class:nosql-database",
         "label": "NoSQL Database"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-systems-theorem",
+        "label": "Distributed Systems Theorem"
       }
     ],
     "bridgesTo": [

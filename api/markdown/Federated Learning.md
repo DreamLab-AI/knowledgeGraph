@@ -127,8 +127,8 @@ alias:: FederatedLearning
   "domain": "machine-learning",
   "maturity": "emerging",
   "subClassOf": {
-    "@id": "urn:ngm:class:distributed-learning",
-    "label": "Distributed Learning"
+    "@id": "urn:ngm:class:ai-technique",
+    "label": "AI Technique"
   },
   "relations": {
     "uses": [
@@ -167,6 +167,7 @@ alias:: FederatedLearning
       {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
     ],
     "relatedTo": [
+      {"@id": "urn:ngm:class:distributed-learning", "label": "Distributed Learning"},
       {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"},
       {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"},
       {"@id": "urn:ngm:class:homomorphic-encryption", "label": "Homomorphic Encryption"}

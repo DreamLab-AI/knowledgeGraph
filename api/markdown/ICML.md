@@ -23,7 +23,7 @@ public:: true
   "definition": "The International Conference on Machine Learning (ICML) is the premier annual academic conference for machine learning research, organised by the International Machine Learning Society (IMLS) since 1980. ICML serves as the primary venue for disseminating foundational and applied advances across supervised learning, unsupervised learning, reinforcement learning, deep learning, optimisation, and the theory of machine learning. Proceedings are published through the open-access Proceedings of Machine Learning Research (PMLR), making ICML papers freely available and widely cited. Together with NeurIPS and ICLR, ICML forms the trifecta of elite machine learning publication venues that shape research directions and career trajectories across academia and industry globally.",
   "domain": "machine-learning",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:academic-conference", "label": "Academic Conference"}],
+  "subClassOf": [{"@id": "urn:ngm:class:ai-research-area", "label": "AI Research Area"}],
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
@@ -33,7 +33,8 @@ public:: true
       {"@id": "urn:ngm:class:ai-safety-research", "label": "AI Safety Research"},
       {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
       {"@id": "urn:ngm:class:neurips", "label": "NeurIPS"},
-      {"@id": "urn:ngm:class:iclr", "label": "ICLR"}
+      {"@id": "urn:ngm:class:iclr", "label": "ICLR"},
+      {"@id": "urn:ngm:class:academic-conference", "label": "Academic Conference"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:machine-learning-research", "label": "Machine Learning Research"},

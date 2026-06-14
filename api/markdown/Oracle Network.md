@@ -32,8 +32,8 @@ public:: true
   "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:decentralised-infrastructure",
-      "label": "Decentralised Infrastructure"
+      "@id": "urn:ngm:class:bc-network-component",
+      "label": "BC Network Component"
     }
   ],
   "relations": {
@@ -71,7 +71,8 @@ public:: true
     "relatedTo": [
       {"@id": "urn:ngm:class:blockchain-oracle", "label": "Blockchain Oracle"},
       {"@id": "urn:ngm:class:decentralised-autonomous-organisation", "label": "Decentralised Autonomous Organisation"},
-      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"}
+      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"},
+      {"@id": "urn:ngm:class:decentralised-infrastructure", "label": "Decentralised Infrastructure"}
     ],
     "bridgesTo": [
       {"@id": "urn:ngm:class:iot-sensor-network", "label": "IoT Sensor Network"},

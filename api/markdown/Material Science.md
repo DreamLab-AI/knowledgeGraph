@@ -56,8 +56,8 @@ public:: true
   "qualityScore": 0.72,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:engineering-discipline",
-      "label": "Engineering Discipline"
+      "@id": "urn:ngm:class:infra-software-engineering",
+      "label": "Infra Software Engineering"
     }
   ],
   "relations": {
@@ -175,6 +175,10 @@ public:: true
       {
         "@id": "urn:ngm:class:materials-informatics",
         "label": "Materials Informatics"
+      },
+      {
+        "@id": "urn:ngm:class:engineering-discipline",
+        "label": "Engineering Discipline"
       }
     ]
   },

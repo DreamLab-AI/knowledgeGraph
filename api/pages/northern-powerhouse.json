@@ -8,8 +8,8 @@
   "definition": "The Northern Powerhouse is a United Kingdom government economic policy framework, formally launched in 2014, designed to rebalance national prosperity by co-ordinating investment, infrastructure, and devolved governance across the cities and regions of northern England. It operates through a combination of city-region devolution deals, major transport programmes such as Northern Powerhouse Rail, targeted innovation investment in science and technology clusters, and streamlined inward investment promotion. The initiative links major urban centres including Manchester, Leeds, Sheffield, Newcastle, and Liverpool under a shared economic development narrative, seeking to raise productivity and close the long-standing North-South divide in the United Kingdom economy.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:regional-economic-policy",
-      "label": "Regional Economic Policy"
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Infra Legal And Regulatory"
     }
   ],
   "entityType": "Class",
@@ -127,6 +127,10 @@
       {
         "id": "urn:ngm:class:productivity-gap",
         "label": "Productivity Gap"
+      },
+      {
+        "id": "urn:ngm:class:regional-economic-policy",
+        "label": "Regional Economic Policy"
       }
     ]
   },

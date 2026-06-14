@@ -8,8 +8,8 @@
   "definition": "A Security Token Offering (STO) is a regulated capital-raising mechanism in which blockchain-based digital tokens representing ownership rights, equity interests, debt obligations, revenue participation, or other financial entitlements are issued and sold to investors in compliance with applicable securities law. STOs require issuers to satisfy jurisdictional regulatory frameworks \u2014 such as the SEC's Regulation D or Regulation S exemptions in the United States, or MiFID II and EU prospectus rules in Europe \u2014 including investor accreditation verification, Know Your Customer and Anti-Money Laundering checks, and mandatory disclosure obligations. Unlike Initial Coin Offerings, which frequently issued utility tokens, STOs embed compliance logic directly into programmable smart contracts on distributed ledger platforms, automating transfer restrictions, cap-table management, and dividend or interest distributions. The STO model bridges traditional capital markets infrastructure with blockchain-based asset tokenisation, enabling fractional ownership of previously illiquid assets such as real estate, private equity, and infrastructure funds.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:token-offering",
-      "label": "Token Offering"
+      "id": "urn:ngm:class:bc-token-and-asset",
+      "label": "Bc Token And Asset"
     }
   ],
   "entityType": "Class",
@@ -133,6 +133,10 @@
       {
         "id": "urn:ngm:class:tokenomics",
         "label": "Tokenomics"
+      },
+      {
+        "id": "urn:ngm:class:token-offering",
+        "label": "Token Offering"
       }
     ]
   },

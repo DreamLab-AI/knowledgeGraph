@@ -8,8 +8,8 @@
   "definition": "The University of Manchester is a public research university in Manchester, England, formed in 2004 by the merger of the Victoria University of Manchester and UMIST, with institutional roots tracing to 1824. It is a founding member of the Russell Group and a global leader in artificial intelligence, machine learning, materials science, and computer science, housing the Alan Turing Institute affiliate node and the Department of Computer Science where early stored-program computing was pioneered. The university produced the Manchester Baby (1948), the first operational stored-program electronic computer, and its researchers isolated graphene in 2004. It is consistently ranked among the world's top 30 research universities and has produced over 25 Nobel laureates across physics, chemistry, economics, and medicine.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:research-university",
-      "label": "Research University"
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area"
     }
   ],
   "entityType": "Class",
@@ -112,6 +112,10 @@
       }
     ],
     "relatedTo": [
+      {
+        "id": "urn:ngm:class:research-university",
+        "label": "Research University"
+      },
       {
         "id": "urn:ngm:class:university-of-cambridge",
         "label": "University of Cambridge"

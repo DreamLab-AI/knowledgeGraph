@@ -43,8 +43,8 @@ public:: true
   "maturity": "emerging",
   "qualityScore": 0.7,
   "subClassOf": {
-    "@id": "urn:ngm:class:system-property",
-    "label": "System Property"
+    "@id": "urn:ngm:class:infra-software-engineering",
+    "label": "Infra Software Engineering"
   },
   "quality": 0.70,
   "provenance": {
@@ -155,6 +155,10 @@ public:: true
       {
         "@id": "urn:ngm:class:security-by-design",
         "label": "Security by Design"
+      },
+      {
+        "@id": "urn:ngm:class:system-property",
+        "label": "System Property"
       }
     ],
     "bridgesTo": [

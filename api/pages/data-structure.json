@@ -8,8 +8,8 @@
   "definition": "A data structure is an organizational scheme for efficiently storing, accessing, and manipulating data, encompassing arrays, trees, graphs, hash tables, and tensors that underpin algorithmic computation and machine learning systems.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:computational-abstraction",
-      "label": "Computational Abstraction"
+      "id": "urn:ngm:class:infra-software-engineering",
+      "label": "Infra Software Engineering"
     }
   ],
   "entityType": "Class",
@@ -125,6 +125,10 @@
       }
     ],
     "relatedTo": [
+      {
+        "id": "urn:ngm:class:computational-abstraction",
+        "label": "Computational Abstraction"
+      },
       {
         "id": "urn:ngm:class:tensor-operations",
         "label": "Tensor Operations"

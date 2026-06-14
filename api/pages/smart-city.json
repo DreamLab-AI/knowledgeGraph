@@ -8,8 +8,8 @@
   "definition": "A smart city uses networked sensors, data platforms and analytics to manage urban systems such as transport, energy and public services, often paired with spatial digital twins and governed by open data standards and citizen-centric policies.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:urban-infrastructure",
-      "label": "Urban Infrastructure"
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud"
     }
   ],
   "entityType": "Class",
@@ -124,6 +124,10 @@
     ],
     "partOf": [],
     "relatedTo": [
+      {
+        "id": "urn:ngm:class:urban-infrastructure",
+        "label": "Urban Infrastructure"
+      },
       {
         "id": "urn:ngm:class:urban-computing",
         "label": "Urban Computing"

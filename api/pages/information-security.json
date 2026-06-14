@@ -8,8 +8,8 @@
   "definition": "Information Security addresses the protection of data, systems, models, and AI infrastructure from unauthorised access, adversarial attacks, privacy breaches, and malicious exploitation. Security measures encompass differential privacy, federated learning, robust training methods, secure multi-party computation, and encryption to ensure confidentiality, integrity, and availability of systems and data as critical infrastructure.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:cybersecurity",
-      "label": "Cybersecurity"
+      "id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Security and Identity"
     }
   ],
   "entityType": "Class",

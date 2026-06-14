@@ -8,8 +8,8 @@
   "definition": "A standards body is a formal organisation that develops, publishes, and maintains technical specifications, protocols, and reference implementations through structured, consensus-based processes involving multiple stakeholders. Such bodies define interoperability requirements that enable products and services from different vendors to work together reliably, and they may operate at national, regional, or international scope. Governance structures typically include member organisations, technical working groups, public review periods, and intellectual-property licensing frameworks (e.g. royalty-free or FRAND). Well-known examples include ISO, IEC, IEEE, W3C, IETF, NIST, Khronos Group, and the Open Geospatial Consortium.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:governance-institution",
-      "label": "Governance Institution"
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Legal and Regulatory"
     }
   ],
   "entityType": "Class",
@@ -121,6 +121,10 @@
       }
     ],
     "relatedTo": [
+      {
+        "id": "urn:ngm:class:governance-institution",
+        "label": "Governance Institution"
+      },
       {
         "id": "urn:ngm:class:policy-framework",
         "label": "Policy Framework"

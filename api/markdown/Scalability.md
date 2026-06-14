@@ -24,7 +24,7 @@ public:: true
   "domain": "infrastructure",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:system-properties", "label": "System Properties"}
+    {"@id": "urn:ngm:class:infra-software-engineering", "label": "Infra Software Engineering"}
   ],
   "relations": {
     "hasPart": [
@@ -69,7 +69,8 @@ public:: true
       {"@id": "urn:ngm:class:performance-optimization", "label": "Performance Optimization"},
       {"@id": "urn:ngm:class:resilience", "label": "Resilience"},
       {"@id": "urn:ngm:class:availability", "label": "Availability"},
-      {"@id": "urn:ngm:class:distributed-architecture", "label": "Distributed Architecture"}
+      {"@id": "urn:ngm:class:distributed-architecture", "label": "Distributed Architecture"},
+      {"@id": "urn:ngm:class:system-properties", "label": "System Properties"}
     ],
     "bridgesTo": [
       {"@id": "urn:ngm:class:blockchain-scalability", "label": "Blockchain Scalability"},

@@ -8,8 +8,8 @@
   "definition": "The Ethereum Name Service (ENS) is a decentralised, open-source naming protocol deployed on Ethereum that maps human-readable names (e.g. 'alice.eth') to machine-readable identifiers including wallet addresses, content hashes, and arbitrary metadata stored on-chain. It operates through a hierarchy of smart contracts \u2014 a central registry recording ownership and resolver assignments, and resolver contracts that translate names to resources according to standardised ERC specifications. ENS names are minted as ERC-721 non-fungible tokens, granting cryptographic ownership without reliance on a centralised registrar, and extending DNS-compatible reverse resolution so on-chain addresses can be presented as readable identities. The protocol has become the dominant blockchain naming infrastructure on Ethereum, with millions of registered names and integrations across wallets, browsers, and decentralised applications.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:decentralised-naming-system",
-      "label": "Decentralised Naming System"
+      "id": "urn:ngm:class:bc-network-component",
+      "label": "BC Network Component"
     }
   ],
   "entityType": "Class",
@@ -111,6 +111,10 @@
     ],
     "partOf": [],
     "relatedTo": [
+      {
+        "id": "urn:ngm:class:decentralised-naming-system",
+        "label": "Decentralised Naming System"
+      },
       {
         "id": "urn:ngm:class:decentralised-autonomous-organisation",
         "label": "Decentralised Autonomous Organisation"

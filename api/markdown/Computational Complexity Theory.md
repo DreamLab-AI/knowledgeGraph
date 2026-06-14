@@ -60,8 +60,8 @@ public:: true
   "qualityScore": 0.7,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:theoretical-computer-science",
-      "label": "Theoretical Computer Science"
+      "@id": "urn:ngm:class:ai-research-area",
+      "label": "Ai Research Area"
     }
   ],
   "relations": {
@@ -161,6 +161,10 @@ public:: true
       {
         "@id": "urn:ngm:class:randomized-algorithms",
         "label": "Randomized Algorithms"
+      },
+      {
+        "@id": "urn:ngm:class:theoretical-computer-science",
+        "label": "Theoretical Computer Science"
       }
     ],
     "bridgesTo": [

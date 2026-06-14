@@ -56,8 +56,8 @@ public:: true
   "qualityScore": 0.75,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:sequence-model",
-      "label": "Sequence Model"
+      "@id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture"
     }
   ],
   "sameAs": [
@@ -152,6 +152,10 @@ public:: true
       }
     ],
     "relatedTo": [
+      {
+        "@id": "urn:ngm:class:sequence-model",
+        "label": "Sequence Model"
+      },
       {
         "@id": "urn:ngm:class:neural-network",
         "label": "Neural Network"

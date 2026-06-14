@@ -60,8 +60,8 @@ public:: true
   "qualityScore": 0.7,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:regional-economic-policy",
-      "label": "Regional Economic Policy"
+      "@id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Infra Legal And Regulatory"
     }
   ],
   "relations": {
@@ -173,6 +173,10 @@ public:: true
       {
         "@id": "urn:ngm:class:productivity-gap",
         "label": "Productivity Gap"
+      },
+      {
+        "@id": "urn:ngm:class:regional-economic-policy",
+        "label": "Regional Economic Policy"
       }
     ]
   },

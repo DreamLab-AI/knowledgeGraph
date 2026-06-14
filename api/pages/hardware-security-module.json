@@ -8,8 +8,8 @@
   "definition": "A Hardware Security Module (HSM) is a dedicated, tamper-evident and tamper-resistant hardware appliance that generates, stores, and manages cryptographic keys in a physically protected environment, performing sensitive cryptographic operations\u2014such as digital signing, bulk encryption, key derivation, and random-number generation\u2014entirely within its secure boundary so that plaintext key material is never exposed to the host system. HSMs are validated against formal security standards including FIPS 140-2/140-3 (Levels 1\u20134) and Common Criteria EAL4+, and are mandated by payment card schemes (PCI-DSS, PCI-P2PE), certificate authority trust frameworks, and government PKI and national-security infrastructures. They are available as PCIe cards, rack-mounted network appliances, USB tokens, and cloud-hosted dedicated services, all exposing a standardised PKCS#11 (Cryptoki) API. Unlike software keystores or Trusted Execution Environments, HSMs respond to physical tamper events by irreversibly zeroing all stored key material, making them the highest-assurance key-custody mechanism in mainstream deployment.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:cryptographic-hardware",
-      "label": "Cryptographic Hardware"
+      "id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Infra Security and Identity"
     }
   ],
   "entityType": "Class",
@@ -130,6 +130,10 @@
     ],
     "partOf": [],
     "relatedTo": [
+      {
+        "id": "urn:ngm:class:cryptographic-hardware",
+        "label": "Cryptographic Hardware"
+      },
       {
         "id": "urn:ngm:class:cryptography",
         "label": "Cryptography"

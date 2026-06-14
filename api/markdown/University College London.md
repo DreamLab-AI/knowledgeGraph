@@ -56,8 +56,8 @@ public:: true
   "qualityScore": 0.7,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:research-university",
-      "label": "Research University"
+      "@id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area"
     }
   ],
   "relations": {
@@ -132,6 +132,10 @@ public:: true
       }
     ],
     "relatedTo": [
+      {
+        "@id": "urn:ngm:class:research-university",
+        "label": "Research University"
+      },
       {
         "@id": "urn:ngm:class:deepmind",
         "label": "DeepMind"

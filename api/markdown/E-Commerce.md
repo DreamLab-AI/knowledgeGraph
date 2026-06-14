@@ -50,7 +50,7 @@ public:: true
   "domain": "finance",
   "maturity": "mature",
   "subClassOf": [
-    {"@id": "urn:ngm:class:digital-marketplace", "label": "Digital Marketplace"}
+    {"@id": "urn:ngm:class:sc-platform-and-environment", "label": "Platform and Environment"}
   ],
   "relations": {
     "hasPart": [

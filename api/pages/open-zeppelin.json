@@ -8,8 +8,8 @@
   "definition": "OpenZeppelin is an open-source framework and security company that provides battle-tested, audited smart contract libraries for Ethereum and EVM-compatible blockchains, most notably the OpenZeppelin Contracts library. It implements widely adopted token standards (ERC-20, ERC-721, ERC-1155), access control patterns, proxy upgrade mechanisms, and governance primitives used as foundational building blocks across decentralised finance, NFT platforms, and DAO infrastructure. Beyond libraries, OpenZeppelin offers professional security auditing services, the Defender operations platform for smart contract monitoring and automation, and open tooling that lowers the barrier to secure on-chain development.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:smart-contract-framework",
-      "label": "Smart Contract Framework"
+      "id": "urn:ngm:class:bc-protocol-and-consensus",
+      "label": "BC Protocol And Consensus"
     }
   ],
   "entityType": "Class",
@@ -148,6 +148,10 @@
       {
         "id": "urn:ngm:class:formal-verification",
         "label": "Formal Verification"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract-framework",
+        "label": "Smart Contract Framework"
       }
     ]
   },

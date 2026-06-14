@@ -8,8 +8,8 @@
   "definition": "An oracle network is a decentralised infrastructure layer composed of independent node operators that collectively fetch, validate, aggregate, and deliver off-chain data \u2014 such as asset prices, weather readings, sports outcomes, or IoT sensor readings \u2014 to smart contracts executing on a blockchain. Because deterministic blockchain ledgers cannot natively make external HTTP requests or access off-chain databases, oracle networks serve as the cryptoeconomically-secured bridge between on-chain logic and real-world state. Node operators are aligned to honest reporting through staking, slashing, and reputation mechanisms, while aggregation techniques such as median computation and time-weighted average pricing reduce susceptibility to individual node manipulation. Oracle networks underpin critical decentralised finance primitives including lending protocols, synthetic assets, prediction markets, insurance products, cross-chain bridges, and real-world asset settlement.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:decentralised-infrastructure",
-      "label": "Decentralised Infrastructure"
+      "id": "urn:ngm:class:bc-network-component",
+      "label": "BC Network Component"
     }
   ],
   "entityType": "Class",
@@ -134,6 +134,10 @@
       {
         "id": "urn:ngm:class:zero-knowledge-proof",
         "label": "Zero-Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-infrastructure",
+        "label": "Decentralised Infrastructure"
       }
     ]
   },

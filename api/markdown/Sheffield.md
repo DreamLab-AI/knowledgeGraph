@@ -56,8 +56,8 @@ public:: true
   "qualityScore": 0.7,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:urban-innovation-cluster",
-      "label": "Urban Innovation Cluster"
+      "@id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Infra Computing And Cloud"
     }
   ],
   "relations": {
@@ -151,6 +151,10 @@ public:: true
       {
         "@id": "urn:ngm:class:industry-4-0",
         "label": "Industry 4.0"
+      },
+      {
+        "@id": "urn:ngm:class:urban-innovation-cluster",
+        "label": "Urban Innovation Cluster"
       }
     ],
     "bridgesTo": [

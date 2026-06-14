@@ -52,8 +52,8 @@ public:: true
   "qualityScore": 0.75,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:cryptographic-proof-model",
-      "label": "Cryptographic Proof Model"
+      "@id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Infra Security And Identity"
     }
   ],
   "relations": {
@@ -151,6 +151,10 @@ public:: true
       {
         "@id": "urn:ngm:class:indistinguishability-obfuscation",
         "label": "Indistinguishability Obfuscation"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-proof-model",
+        "label": "Cryptographic Proof Model"
       }
     ],
     "bridgesTo": [

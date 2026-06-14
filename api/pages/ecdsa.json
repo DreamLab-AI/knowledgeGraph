@@ -8,8 +8,8 @@
   "definition": "Elliptic Curve Digital Signature Algorithm (ECDSA) is a cryptographic primitive that uses elliptic curve mathematics to generate and verify digital signatures, underpinning transaction authentication in Bitcoin, Ethereum, and most public blockchain networks. ECDSA provides non-repudiation, integrity verification, and ownership proof with compact key sizes relative to RSA equivalents.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:digital-signature-algorithm",
-      "label": "Digital Signature Algorithm"
+      "id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Infra Security and Identity"
     }
   ],
   "entityType": "Class",
@@ -153,6 +153,10 @@
     ],
     "partOf": [],
     "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-signature-algorithm",
+        "label": "Digital Signature Algorithm"
+      },
       {
         "id": "urn:ngm:class:cryptographic-protocol",
         "label": "Cryptographic Protocol"

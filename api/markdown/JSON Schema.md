@@ -32,8 +32,8 @@ public:: true
   "maturity": "mature",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:schema-language",
-      "label": "Schema Language"
+      "@id": "urn:ngm:class:infra-data-management",
+      "label": "Data Management"
     }
   ],
   "relations": {
@@ -72,7 +72,8 @@ public:: true
       {"@id": "urn:ngm:class:json-data-interchange-format-ld", "label": "JSON-LD"},
       {"@id": "urn:ngm:class:data-format", "label": "Data Format"},
       {"@id": "urn:ngm:class:open-api-specification", "label": "OpenAPI Specification"},
-      {"@id": "urn:ngm:class:graphql-schema", "label": "GraphQL Schema"}
+      {"@id": "urn:ngm:class:graphql-schema", "label": "GraphQL Schema"},
+      {"@id": "urn:ngm:class:schema-language", "label": "Schema Language"}
     ],
     "bridgesTo": [
       {"@id": "urn:ngm:class:decentralised-identity", "label": "Decentralised Identity"},

@@ -8,8 +8,8 @@
   "definition": "E-Commerce (electronic commerce) is the commercial exchange of goods, services, and information conducted over digital networks, encompassing business-to-consumer (B2C), business-to-business (B2B), consumer-to-consumer (C2C), and direct-to-consumer (D2C) transaction models. It relies on integrated layers of digital payment infrastructure, identity and authentication, logistics coordination, and data-driven personalisation to operate at scale. Modern e-commerce platforms leverage cloud infrastructure, recommendation engines, and APIs to connect buyers, sellers, and fulfilment networks globally. It is a mature commercial domain that continues to evolve through mobile-first experiences, conversational commerce, and blockchain-based payment rails.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:digital-marketplace",
-      "label": "Digital Marketplace"
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
     }
   ],
   "entityType": "Class",

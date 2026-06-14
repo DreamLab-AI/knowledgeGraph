@@ -8,8 +8,8 @@
   "definition": "Specificity (also called the True Negative Rate or TNR) is the proportion of actual negative instances that a binary classifier or diagnostic test correctly identifies as negative, computed as TN / (TN + FP). It quantifies a model's ability to avoid false positives, complementing sensitivity (recall) in characterising the full operating behaviour of a classifier. Together with sensitivity, specificity defines the two axes of the Receiver Operating Characteristic (ROC) curve, enabling principled threshold selection across tasks ranging from medical diagnostics to spam filtering and anomaly detection.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:classification-metric",
-      "label": "Classification Metric"
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
     }
   ],
   "entityType": "Class",
@@ -90,6 +90,10 @@
       }
     ],
     "relatedTo": [
+      {
+        "id": "urn:ngm:class:classification-metric",
+        "label": "Classification Metric"
+      },
       {
         "id": "urn:ngm:class:recall",
         "label": "Recall"

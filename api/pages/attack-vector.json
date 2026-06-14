@@ -8,8 +8,8 @@
   "definition": "A specific path, method, or mechanism that a threat actor uses to gain unauthorised access, exploit vulnerabilities, or cause damage to a system, network, or organisation. Attack vectors span network-based exploitation, social engineering, supply-chain compromise, and AI-specific techniques such as prompt injection or model poisoning, and are categorised by access method, target layer, and sophistication.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:threat",
-      "label": "Threat"
+      "id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Infra Security And Identity"
     }
   ],
   "entityType": "Class",
@@ -143,6 +143,10 @@
       {
         "id": "urn:ngm:class:intrusion-detection",
         "label": "Intrusion Detection"
+      },
+      {
+        "id": "urn:ngm:class:threat",
+        "label": "Threat"
       }
     ]
   },

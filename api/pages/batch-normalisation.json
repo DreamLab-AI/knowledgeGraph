@@ -8,8 +8,8 @@
   "definition": "A technique that normalises layer inputs within a mini-batch to zero mean and unit variance, stabilising training dynamics, enabling higher learning rates, and acting as a form of regularisation in deep neural networks. Introduced by Ioffe and Szegedy (2015), it reduces internal covariate shift and has become a standard component in convolutional and other deep learning architectures.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:normalisation-technique",
-      "label": "Normalisation Technique"
+      "id": "urn:ngm:class:ai-technique",
+      "label": "Ai Technique"
     }
   ],
   "entityType": "Class",
@@ -131,6 +131,10 @@
       {
         "id": "urn:ngm:class:optimisation-landscape-smoothing",
         "label": "Optimisation Landscape Smoothing"
+      },
+      {
+        "id": "urn:ngm:class:normalisation-technique",
+        "label": "Normalisation Technique"
       }
     ]
   },

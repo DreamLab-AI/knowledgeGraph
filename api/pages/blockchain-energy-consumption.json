@@ -8,8 +8,8 @@
   "definition": "The electrical power and computational resources consumed by blockchain networks during transaction validation, block creation, and network security operations, varying significantly across consensus mechanisms from energy-intensive Proof-of-Work (Bitcoin: ~140 TWh/year, 0.65% of global electricity) to energy-efficient Proof-of-Stake (Ethereum post-Merge: 99.95% reduction), with ongoing research into sustainable consensus algorithms, renewable energy mining, carbon credit tokenization, and environmental impact measurement frameworks.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:environmental-impact",
-      "label": "Environmental Impact"
+      "id": "urn:ngm:class:bc-governance-and-regulation",
+      "label": "Bc Governance And Regulation"
     }
   ],
   "entityType": "Class",
@@ -147,6 +147,10 @@
       {
         "id": "urn:ngm:class:layer-2-scaling",
         "label": "Layer 2 Scaling"
+      },
+      {
+        "id": "urn:ngm:class:environmental-impact",
+        "label": "Environmental Impact"
       }
     ]
   },

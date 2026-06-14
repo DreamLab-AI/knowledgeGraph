@@ -66,10 +66,6 @@ public:: true
     {
       "@id": "urn:ngm:class:bc-network-component",
       "label": "Network Component"
-    },
-    {
-      "@id": "urn:ngm:class:digital-wallet",
-      "label": "Digital Wallet"
     }
   ],
   "relations": {

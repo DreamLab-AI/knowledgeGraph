@@ -8,8 +8,8 @@
   "definition": "The Random Oracle Model (ROM) is a theoretical framework in cryptography that idealises a cryptographic hash function as a publicly accessible, truly random function: for every distinct input the oracle returns an independent, uniformly random output, while repeated queries return the same value. Introduced formally by Bellare and Rogaway in 1993, the ROM enables security proofs for practical schemes such as RSA-OAEP, ECDSA, and Schnorr signatures that cannot currently be proved secure under standard computational assumptions alone. Because no concrete hash function perfectly instantiates a random oracle, ROM proofs are treated as strong heuristic evidence rather than unconditional guarantees, and pathological counterexamples exist that are ROM-secure but concretely insecure under any hash instantiation.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:cryptographic-proof-model",
-      "label": "Cryptographic Proof Model"
+      "id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Infra Security And Identity"
     }
   ],
   "entityType": "Class",
@@ -129,6 +129,10 @@
       {
         "id": "urn:ngm:class:indistinguishability-obfuscation",
         "label": "Indistinguishability Obfuscation"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-proof-model",
+        "label": "Cryptographic Proof Model"
       }
     ]
   },

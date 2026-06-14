@@ -71,8 +71,8 @@ public:: true
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": {
-    "@id": "urn:ngm:class:layer-2-scaling-solution",
-    "label": "Layer-2 Scaling Solution"
+    "@id": "urn:ngm:class:bc-protocol-and-consensus",
+    "label": "Bc Protocol And Consensus"
   },
   "relations": {
     "requires": [
@@ -207,6 +207,10 @@ public:: true
       {
         "@id": "urn:ngm:class:plasma",
         "label": "Plasma"
+      },
+      {
+        "@id": "urn:ngm:class:layer-2-scaling-solution",
+        "label": "Layer-2 Scaling Solution"
       }
     ]
   },

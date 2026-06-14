@@ -32,8 +32,8 @@ public:: true
   "maturity": "emerging",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:ai-standards-framework",
-      "label": "AI Standards Framework"
+      "@id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
     }
   ],
   "relations": {
@@ -71,6 +71,7 @@ public:: true
       {"@id": "urn:ngm:class:ai-conformity-assessment", "label": "AI Conformity Assessment"}
     ],
     "relatedTo": [
+      {"@id": "urn:ngm:class:ai-standards-framework", "label": "AI Standards Framework"},
       {"@id": "urn:ngm:class:ai-governance-and-ethics", "label": "AI Governance and Ethics"},
       {"@id": "urn:ngm:class:cen-cenelec", "label": "CEN-CENELEC"},
       {"@id": "urn:ngm:class:ieee-standards", "label": "IEEE Standards"},

@@ -8,8 +8,8 @@
   "definition": "Compound is an algorithmic, autonomous interest-rate protocol built on Ethereum that enables users to supply crypto assets to liquidity pools and earn continuously accruing interest, or borrow assets against over-collateralised positions at algorithmically determined rates. Interest rates adjust dynamically based on the utilisation ratio of each asset pool, eliminating the need for bilateral loan negotiation or centralised intermediaries. Supplied assets are represented as cTokens \u2014 ERC-20 tokens whose exchange rate appreciates with every block as interest accrues \u2014 which can themselves be used as collateral or freely traded. Governance of protocol parameters is conducted on-chain through the COMP token and the Compound Governor Bravo smart-contract system, making it one of the earliest fully decentralised autonomous lending protocols in the DeFi ecosystem.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:decentralised-finance-protocol",
-      "label": "Decentralised Finance Protocol"
+      "id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "Bc Defi And Economics"
     }
   ],
   "entityType": "Class",
@@ -139,6 +139,10 @@
       {
         "id": "urn:ngm:class:autonomous-market-operations",
         "label": "Autonomous Market Operations"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance-protocol",
+        "label": "Decentralised Finance Protocol"
       }
     ]
   },

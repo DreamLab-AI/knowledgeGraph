@@ -33,8 +33,8 @@ alias:: HyperledgerFoundation
   "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:open-source-foundation",
-      "label": "Open Source Foundation"
+      "@id": "urn:ngm:class:bc-governance-and-regulation",
+      "label": "Governance and Regulation"
     }
   ],
   "relations": {
@@ -82,7 +82,8 @@ alias:: HyperledgerFoundation
     "relatedTo": [
       {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
       {"@id": "urn:ngm:class:blockchain-governance", "label": "Blockchain Governance"},
-      {"@id": "urn:ngm:class:open-source-software", "label": "Open Source Software"}
+      {"@id": "urn:ngm:class:open-source-software", "label": "Open Source Software"},
+      {"@id": "urn:ngm:class:open-source-foundation", "label": "Open Source Foundation"}
     ]
   },
   "sameAs": [

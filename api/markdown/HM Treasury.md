@@ -47,8 +47,8 @@ public:: true
   "maturity": "mature",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:government-institution",
-      "label": "Government Institution"
+      "@id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Infra Legal and Regulatory"
     }
   ],
   "relations": {
@@ -155,6 +155,10 @@ public:: true
       }
     ],
     "relatedTo": [
+      {
+        "@id": "urn:ngm:class:government-institution",
+        "label": "Government Institution"
+      },
       {
         "@id": "urn:ngm:class:prudential-regulation-authority",
         "label": "Prudential Regulation Authority"

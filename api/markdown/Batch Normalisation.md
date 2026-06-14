@@ -55,8 +55,8 @@ public:: true
   "maturity": "emerging",
   "qualityScore": 0.72,
   "subClassOf": {
-    "@id": "urn:ngm:class:normalisation-technique",
-    "label": "Normalisation Technique"
+    "@id": "urn:ngm:class:ai-technique",
+    "label": "Ai Technique"
   },
   "sameAs": [
     {
@@ -176,6 +176,10 @@ public:: true
       {
         "@id": "urn:ngm:class:optimisation-landscape-smoothing",
         "label": "Optimisation Landscape Smoothing"
+      },
+      {
+        "@id": "urn:ngm:class:normalisation-technique",
+        "label": "Normalisation Technique"
       }
     ],
     "bridgesTo": [

@@ -60,8 +60,8 @@ public:: true
   "qualityScore": 0.7,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:blockchain-protocol-foundation",
-      "label": "Blockchain Protocol Foundation"
+      "@id": "urn:ngm:class:bc-governance-and-regulation",
+      "label": "BC Governance and Regulation"
     }
   ],
   "relations": {
@@ -164,6 +164,10 @@ public:: true
       }
     ],
     "relatedTo": [
+      {
+        "@id": "urn:ngm:class:blockchain-protocol-foundation",
+        "label": "Blockchain Protocol Foundation"
+      },
       {
         "@id": "urn:ngm:class:web3-foundation",
         "label": "Web3 Foundation"

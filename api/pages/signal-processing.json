@@ -8,8 +8,8 @@
   "definition": "Signal processing is the mathematical and engineering discipline concerned with the representation, analysis, transformation, synthesis, filtering, and compression of signals \u2014 time-varying or spatially varying quantities such as audio, video, sensor telemetry, radio-frequency waveforms, biomedical readings, and seismic data. It encompasses both continuous (analogue) and discrete (digital) domains, applying techniques from Fourier analysis, linear algebra, probability theory, and optimisation to extract information, remove noise, encode data, and control systems. Digital signal processing (DSP) executes these operations on sampled data using algorithms implemented in hardware or software, making it foundational to telecommunications, audio engineering, image processing, radar, and AI feature extraction pipelines. Modern signal processing increasingly fuses classical deterministic methods with statistical and machine-learning approaches, enabling adaptive filters, compressed sensing, and deep neural network-based feature representations.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:data",
-      "label": "Data"
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
     }
   ],
   "entityType": "Class",
@@ -134,6 +134,10 @@
       {
         "id": "urn:ngm:class:render-pipeline",
         "label": "Render Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:data",
+        "label": "Data"
       }
     ]
   },

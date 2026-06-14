@@ -56,8 +56,8 @@ public:: true
   "qualityScore": 0.72,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:urban-region",
-      "label": "Urban Region"
+      "@id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Infra Computing And Cloud"
     }
   ],
   "relations": {
@@ -139,6 +139,10 @@ public:: true
       {
         "@id": "urn:ngm:class:graphene",
         "label": "Graphene"
+      },
+      {
+        "@id": "urn:ngm:class:urban-region",
+        "label": "Urban Region"
       }
     ],
     "bridgesTo": [

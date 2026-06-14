@@ -609,17 +609,15 @@ public:: true
     {
       "@id": "urn:ngm:class:bc-governance-and-regulation",
       "label": "Governance and Regulation"
-    },
-    {
-      "@id": "urn:ngm:class:collective-decision-making",
-      "label": "Collective Decision Making"
-    },
-    {
-      "@id": "urn:ngm:class:bc-governance-and-regulation",
-      "label": "BC Governance And Regulation"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:collective-decision-making",
+        "label": "Collective Decision Making"
+      }
+    ],
     "hasPart": [
       {
         "@id": "urn:ngm:class:delegate",

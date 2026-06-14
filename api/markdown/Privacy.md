@@ -198,8 +198,8 @@ public:: true
   "domain": "governance",
   "maturity": "emerging",
   "subClassOf": {
-    "@id": "urn:ngm:class:data-rights",
-    "label": "Data Rights"
+    "@id": "urn:ngm:class:infra-legal-and-regulatory",
+    "label": "Infra Legal And Regulatory"
   },
   "relations": {
     "requires": [
@@ -235,7 +235,8 @@ public:: true
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:cybersecurity", "label": "Cybersecurity"},
-      {"@id": "urn:ngm:class:digital-rights", "label": "Digital Rights"}
+      {"@id": "urn:ngm:class:digital-rights", "label": "Digital Rights"},
+      {"@id": "urn:ngm:class:data-rights", "label": "Data Rights"}
     ],
     "bridgesTo": [
       {"@id": "urn:ngm:class:cypherpunk", "label": "Cypherpunk"},

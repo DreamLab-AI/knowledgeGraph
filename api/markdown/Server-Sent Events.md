@@ -32,8 +32,8 @@ public:: true
   "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:streaming-protocol",
-      "label": "Streaming Protocol"
+      "@id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Infra Network And Comms"
     }
   ],
   "relations": {
@@ -73,7 +73,8 @@ public:: true
     "relatedTo": [
       {"@id": "urn:ngm:class:api-gateway", "label": "API Gateway"},
       {"@id": "urn:ngm:class:reverse-proxy", "label": "Reverse Proxy"},
-      {"@id": "urn:ngm:class:chunked-transfer-encoding", "label": "Chunked Transfer Encoding"}
+      {"@id": "urn:ngm:class:chunked-transfer-encoding", "label": "Chunked Transfer Encoding"},
+      {"@id": "urn:ngm:class:streaming-protocol", "label": "Streaming Protocol"}
     ],
     "bridgesTo": [
       {"@id": "urn:ngm:class:agentic-ai", "label": "Agentic AI"},

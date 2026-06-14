@@ -60,8 +60,8 @@ elevatedFrom:: [[multimodal]]
       "label": "AI Research Area"
     },
     {
-      "@id": "urn:ngm:class:multimodal-ai-architecture-ai-architecture-ai",
-      "label": "Multimodal AI"
+      "@id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture"
     }
   ],
   "relations": {
@@ -75,7 +75,8 @@ elevatedFrom:: [[multimodal]]
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:diffusion-models", "label": "Diffusion Models"},
-      {"@id": "urn:ngm:class:speech-recognition", "label": "Speech Recognition"}
+      {"@id": "urn:ngm:class:speech-recognition", "label": "Speech Recognition"},
+      {"@id": "urn:ngm:class:multimodal-ai-architecture-ai-architecture-ai", "label": "Multimodal AI"}
     ]
   },
   "quality": 0.5,

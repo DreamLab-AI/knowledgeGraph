@@ -55,8 +55,8 @@ public:: true
   "maturity": "mature",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:knowledge-based-systems",
-      "label": "Knowledge-Based Systems"
+      "@id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
     }
   ],
   "relations": {
@@ -180,6 +180,10 @@ public:: true
       {
         "@id": "urn:ngm:class:constraint-satisfaction",
         "label": "Constraint Satisfaction"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-based-systems",
+        "label": "Knowledge-Based Systems"
       }
     ]
   },

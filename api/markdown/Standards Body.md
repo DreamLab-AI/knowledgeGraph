@@ -42,8 +42,8 @@ public:: true
   "maturity": "mature",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:governance-institution",
-      "label": "Governance Institution"
+      "@id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Legal and Regulatory"
     }
   ],
   "sameAs": [
@@ -160,6 +160,10 @@ public:: true
       }
     ],
     "relatedTo": [
+      {
+        "@id": "urn:ngm:class:governance-institution",
+        "label": "Governance Institution"
+      },
       {
         "@id": "urn:ngm:class:policy-framework",
         "label": "Policy Framework"

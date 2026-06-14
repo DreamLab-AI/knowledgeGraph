@@ -64,8 +64,8 @@ public:: true
     "inferenceRule": "RelationEnrichment"
   },
   "subClassOf": {
-    "@id": "urn:ngm:class:cybersecurity",
-    "label": "Cybersecurity"
+    "@id": "urn:ngm:class:infra-security-and-identity",
+    "label": "Security and Identity"
   },
   "sameAs": [
     {

@@ -8,8 +8,8 @@
   "definition": "CVPR (Conference on Computer Vision and Pattern Recognition) is the premier annual peer-reviewed academic conference for computer vision and pattern recognition research, co-sponsored by IEEE and the Computer Vision Foundation (CVF). It is consistently ranked among the most impactful venues in artificial intelligence, serving as the primary publication channel for breakthroughs in image recognition, object detection, semantic segmentation, generative modelling, video understanding, and 3D vision. The conference has been held annually since 1983 and its open-access proceedings, published through the CVF, represent a foundational evidence base for both academic research and applied AI development.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:academic-conference",
-      "label": "Academic Conference"
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area"
     }
   ],
   "entityType": "Class",
@@ -110,6 +110,10 @@
     ],
     "partOf": [],
     "relatedTo": [
+      {
+        "id": "urn:ngm:class:academic-conference",
+        "label": "Academic Conference"
+      },
       {
         "id": "urn:ngm:class:iccv",
         "label": "ICCV"

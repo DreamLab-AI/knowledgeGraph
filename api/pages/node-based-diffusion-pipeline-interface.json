@@ -8,8 +8,8 @@
   "definition": "A node-based diffusion pipeline interface is a visual programming environment that models a generative diffusion inference graph as a directed acyclic graph of interconnected functional nodes, where each node encapsulates a discrete operation such as model loading, text conditioning, latent sampling, or image decoding, and edges carry tensor data between nodes. This paradigm exposes the full computational structure of a diffusion pipeline as an inspectable, composable, and reproducible artefact rather than a hidden implementation detail. Tools such as ComfyUI exemplify this pattern: workflows are serialised as JSON graphs that can be version-controlled, shared, and deployed as production automation. The approach bridges visual dataflow programming traditions with modern deep-learning inference, enabling practitioners to compose multi-model, multi-stage generation pipelines without writing procedural code.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:visual-programming-environment",
-      "label": "Visual Programming Environment"
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
     }
   ],
   "entityType": "Class",
@@ -163,6 +163,10 @@
       {
         "id": "urn:ngm:class:animatediff",
         "label": "AnimateDiff"
+      },
+      {
+        "id": "urn:ngm:class:visual-programming-environment",
+        "label": "Visual Programming Environment"
       }
     ]
   },

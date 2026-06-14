@@ -8,8 +8,8 @@
   "definition": "Embedded Systems are specialised computing systems designed and deployed to perform dedicated functions within larger mechanical, electronic, or cyber-physical host devices, operating under strict resource constraints, real-time deadlines, and tight hardware-software coupling. They comprise microcontrollers, microprocessors, FPGAs, ASICs, sensors, actuators, and the firmware or RTOS environments that orchestrate them. Unlike general-purpose computers, embedded systems are optimised for a specific task domain \u2014 motor control, signal processing, network communication, or safety-critical actuation \u2014 and must satisfy reliability, power-budget, thermal, and often functional-safety requirements simultaneously. They form the foundational computational layer beneath robotics, industrial automation, consumer electronics, automotive ECUs, medical devices, and the Internet of Things.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:computing-systems",
-      "label": "Computing Systems"
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Infra Computing and Cloud"
     }
   ],
   "entityType": "Class",
@@ -150,6 +150,10 @@
     ],
     "partOf": [],
     "relatedTo": [
+      {
+        "id": "urn:ngm:class:computing-systems",
+        "label": "Computing Systems"
+      },
       {
         "id": "urn:ngm:class:control-system",
         "label": "Control System"

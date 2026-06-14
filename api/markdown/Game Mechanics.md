@@ -48,8 +48,8 @@ public:: true
   "qualityScore": 0.73,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:interactive-system-design",
-      "label": "Interactive System Design"
+      "@id": "urn:ngm:class:sc-interaction",
+      "label": "SC Interaction"
     }
   ],
   "sameAs": [
@@ -95,6 +95,7 @@ public:: true
       {"@id": "urn:ngm:class:procedural-content-generation", "label": "Procedural Content Generation"}
     ],
     "relatedTo": [
+      {"@id": "urn:ngm:class:interactive-system-design", "label": "Interactive System Design"},
       {"@id": "urn:ngm:class:gamification", "label": "Gamification"},
       {"@id": "urn:ngm:class:user-experience-design", "label": "User Experience Design"},
       {"@id": "urn:ngm:class:avatar-system", "label": "Avatar System"}

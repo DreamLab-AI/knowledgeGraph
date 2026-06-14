@@ -8,8 +8,8 @@
   "definition": "Kinematics is the branch of mechanics that studies the geometry and mathematics of motion \u2014 positions, velocities, accelerations, and trajectories of bodies \u2014 without consideration of the forces or torques that cause that motion. In robotics and spatial computing, it encompasses forward kinematics (mapping joint-space parameters to Cartesian end-effector pose via homogeneous transformation matrices and Denavit-Hartenberg conventions) and inverse kinematics (solving the reverse mapping from desired pose to joint configurations). Kinematic analysis underpins motion planning, trajectory generation, workspace characterisation, collision avoidance, and animation systems across robotics, biomechanics, computer graphics, and autonomous vehicles.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:mechanics",
-      "label": "Mechanics"
+      "id": "urn:ngm:class:robo-navigation-and-planning",
+      "label": "Navigation and Planning"
     }
   ],
   "entityType": "Class",
@@ -134,6 +134,10 @@
       {
         "id": "urn:ngm:class:autonomous-vehicles",
         "label": "Autonomous Vehicles"
+      },
+      {
+        "id": "urn:ngm:class:mechanics",
+        "label": "Mechanics"
       }
     ]
   },

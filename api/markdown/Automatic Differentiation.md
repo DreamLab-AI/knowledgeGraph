@@ -23,7 +23,7 @@ public:: true
   "definition": "Automatic differentiation (AD) is a family of computational techniques for evaluating the derivative of a function specified by a computer program, by systematically applying the chain rule to elementary arithmetic operations rather than through symbolic algebra or finite-difference approximation. It operates in two principal modes: forward mode, which propagates tangent values alongside primal values, and reverse mode (backpropagation), which accumulates gradients in a backward pass over a recorded computation graph. AD produces machine-precision derivatives at a cost linear in the number of program operations, making it the computational backbone of modern deep learning frameworks.",
   "domain": "machine-learning",
   "maturity": "established",
-  "subClassOf": {"@id": "urn:ngm:class:numerical-method", "label": "Numerical Method"},
+  "subClassOf": {"@id": "urn:ngm:class:ai-technique", "label": "Ai Technique"},
   "relations": {
     "hasPart": [
       {"@id": "urn:ngm:class:forward-mode-differentiation", "label": "Forward Mode Differentiation"},
@@ -59,7 +59,8 @@ public:: true
       {"@id": "urn:ngm:class:optimisation", "label": "Optimisation"},
       {"@id": "urn:ngm:class:stochastic-gradient-descent", "label": "Stochastic Gradient Descent"},
       {"@id": "urn:ngm:class:loss-function", "label": "Loss Function"},
-      {"@id": "urn:ngm:class:just-in-time-compilation", "label": "Just-In-Time Compilation"}
+      {"@id": "urn:ngm:class:just-in-time-compilation", "label": "Just-In-Time Compilation"},
+      {"@id": "urn:ngm:class:numerical-method", "label": "Numerical Method"}
     ],
     "bridgesTo": [
       {"@id": "urn:ngm:class:differentiable-rendering", "label": "Differentiable Rendering"},

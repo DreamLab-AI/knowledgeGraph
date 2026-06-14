@@ -8,8 +8,8 @@
   "definition": "Application software that constructs, parameterises, and executes computational models of physical, biological, social, or engineered systems, enabling controlled experimentation and behaviour observation across time steps without manipulating real-world systems. Simulation software encompasses physics engines, agent-based modelling frameworks, discrete-event simulators, and real-time digital twin environments, serving domains ranging from aerospace engineering and molecular biology to urban planning and immersive training. Unlike general-purpose scientific computing, simulation software provides domain-specific abstraction layers, visualisation pipelines, and scenario management tools that allow non-specialists to configure and run experiments at scale. The field intersects spatial computing, machine learning, and high-performance computing as simulations grow to planetary scale and real-time fidelity.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:application-software",
-      "label": "Application Software"
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Sc Platform And Environment"
     }
   ],
   "entityType": "Class",
@@ -148,6 +148,10 @@
       {
         "id": "urn:ngm:class:model-based-systems-engineering",
         "label": "Model-Based Systems Engineering"
+      },
+      {
+        "id": "urn:ngm:class:application-software",
+        "label": "Application Software"
       }
     ]
   },

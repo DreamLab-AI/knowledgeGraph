@@ -8,8 +8,8 @@
   "definition": "The ETSI Domain Taxonomy is a hierarchical classification framework produced by the European Telecommunications Standards Institute for systematically organising AI-related technical specifications, standards, and work items across application domains such as transportation, healthcare, telecommunications, and public safety. It provides a controlled vocabulary and structured ontology enabling consistent referencing of AI standards across ETSI technical committees and supports cross-domain applicability analysis. The taxonomy underpins ETSI's AI standardisation roadmap and aligns with CEN-CENELEC and ISO/IEC JTC 1/SC 42 standardisation activities. As a living classification instrument, it maps broad application sectors down to specific sub-domains, allowing AI systems and standards to receive multiple domain affiliations and enabling gap analysis across the European standardisation ecosystem.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ai-standards-framework",
-      "label": "AI Standards Framework"
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
     }
   ],
   "entityType": "Class",
@@ -129,6 +129,10 @@
       }
     ],
     "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-standards-framework",
+        "label": "AI Standards Framework"
+      },
       {
         "id": "urn:ngm:class:ai-governance-and-ethics",
         "label": "AI Governance and Ethics"

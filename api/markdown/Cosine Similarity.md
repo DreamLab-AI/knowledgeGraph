@@ -23,7 +23,7 @@ public:: true
   "definition": "Cosine Similarity is a metric that measures the cosine of the angle between two non-zero vectors in an inner product space, yielding a value in [−1, 1] that quantifies directional similarity independently of vector magnitude. It is the dominant similarity measure for comparing high-dimensional sparse and dense vector representations of text, images, and other data in information retrieval and machine learning systems.",
   "domain": "machine-learning",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:vector-similarity-measure", "label": "Vector Similarity Measure"}],
+  "subClassOf": [{"@id": "urn:ngm:class:ai-technique", "label": "AI Technique"}],
   "relations": {
     "partOf": [
       {"@id": "urn:ngm:class:information-retrieval", "label": "Information Retrieval"},
@@ -59,6 +59,7 @@ public:: true
       {"@id": "urn:ngm:class:hyperbolic-embedding", "label": "Hyperbolic Embedding"}
     ],
     "relatedTo": [
+      {"@id": "urn:ngm:class:vector-similarity-measure", "label": "Vector Similarity Measure"},
       {"@id": "urn:ngm:class:embedding-search", "label": "Embedding Search"},
       {"@id": "urn:ngm:class:tf-idf", "label": "TF-IDF"},
       {"@id": "urn:ngm:class:matryoshka-representation-learning", "label": "Matryoshka Representation Learning"}

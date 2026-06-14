@@ -52,8 +52,8 @@ public:: true
   "qualityScore": 0.74,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:smart-contract-framework",
-      "label": "Smart Contract Framework"
+      "@id": "urn:ngm:class:bc-protocol-and-consensus",
+      "label": "BC Protocol And Consensus"
     }
   ],
   "relations": {
@@ -177,6 +177,10 @@ public:: true
       {
         "@id": "urn:ngm:class:formal-verification",
         "label": "Formal Verification"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract-framework",
+        "label": "Smart Contract Framework"
       }
     ],
     "bridgesTo": [

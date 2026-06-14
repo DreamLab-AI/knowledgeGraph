@@ -23,7 +23,7 @@ public:: true
   "definition": "A store of value is any asset that retains purchasing power over time, enabling the owner to defer consumption and retrieve real wealth in the future with minimal loss to inflation, confiscation, or degradation. Classical monetary theory identifies store-of-value function alongside medium-of-exchange and unit-of-account as the three primary functions of money, though assets can serve one function without the others.",
   "domain": "finance",
   "maturity": "mature",
-  "subClassOf": {"@id": "urn:ngm:class:monetary-function", "label": "Monetary Function"},
+  "subClassOf": {"@id": "urn:ngm:class:bc-defi-and-economics", "label": "DeFi and Economics"},
   "relations": {
     "hasPart": [
       {"@id": "urn:ngm:class:scarcity", "label": "Scarcity"},
@@ -65,6 +65,7 @@ public:: true
       {"@id": "urn:ngm:class:tokenisation-of-assets", "label": "Tokenisation of Assets"}
     ],
     "relatedTo": [
+      {"@id": "urn:ngm:class:monetary-function", "label": "Monetary Function"},
       {"@id": "urn:ngm:class:hard-money", "label": "Hard Money"},
       {"@id": "urn:ngm:class:inflation-hedge", "label": "Inflation Hedge"},
       {"@id": "urn:ngm:class:gold-standard", "label": "Gold Standard"},

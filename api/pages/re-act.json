@@ -8,8 +8,8 @@
   "definition": "ReAct (Reasoning and Acting) is a prompting paradigm for large language models that interleaves free-form reasoning traces (Thought steps) with structured external action calls in a single output sequence, enabling models to dynamically plan multi-step tasks, observe the results of tool invocations, and revise their reasoning accordingly. The framework produces an alternating Thought\u2013Action\u2013Observation loop that grounds model inference in real-world feedback, contrasting with pure chain-of-thought prompting (reasoning without action) and pure action-only agents (action without transparent reasoning). Originally demonstrated by Yao et al. (2022) on knowledge-intensive QA and interactive decision benchmarks, ReAct has become the foundational interaction primitive underpinning modern agentic AI systems, tool-augmented LLMs, and multi-agent orchestration frameworks.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:prompting-technique",
-      "label": "Prompting Technique"
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
     }
   ],
   "entityType": "Class",
@@ -138,6 +138,10 @@
       {
         "id": "urn:ngm:class:reinforcement-learning",
         "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:prompting-technique",
+        "label": "Prompting Technique"
       }
     ]
   },

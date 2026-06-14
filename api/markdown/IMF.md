@@ -23,7 +23,7 @@ public:: true
   "definition": "The International Monetary Fund (IMF) is an intergovernmental organisation of 190 member countries, established in 1944 under the Bretton Woods Agreement, whose core mandate is to foster global monetary cooperation, secure exchange rate stability, facilitate balanced international trade, and provide financial assistance and policy advice to members experiencing balance-of-payments difficulties. The Fund operates as the world's primary multilateral lender of last resort for sovereign balance-of-payments crises, deploying conditional lending programmes backed by Special Drawing Rights (SDR) quotas contributed by members. Beyond crisis finance, the IMF conducts macroeconomic surveillance through bilateral Article IV consultations, publishes the World Economic Outlook and Global Financial Stability Report, and delivers technical assistance in fiscal, monetary, and financial-sector policy domains. Since 2017 the IMF has expanded into digital asset governance, publishing classification frameworks for crypto assets, CBDC design handbooks, and a Finternet unified-ledger vision that positions it as a de-facto norm-setter for sovereign digital money.",
   "domain": "governance",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:intergovernmental-organisation", "label": "Intergovernmental Organisation"}],
+  "subClassOf": [{"@id": "urn:ngm:class:infra-legal-and-regulatory", "label": "Legal and Regulatory"}],
   "relations": {
     "partOf": [
       {"@id": "urn:ngm:class:bretton-woods-system", "label": "Bretton Woods System"},
@@ -63,7 +63,8 @@ public:: true
       {"@id": "urn:ngm:class:world-trade-organization", "label": "World Trade Organization"},
       {"@id": "urn:ngm:class:g20", "label": "G20"},
       {"@id": "urn:ngm:class:global-financial-stability-report", "label": "Global Financial Stability Report"},
-      {"@id": "urn:ngm:class:world-economic-outlook", "label": "World Economic Outlook"}
+      {"@id": "urn:ngm:class:world-economic-outlook", "label": "World Economic Outlook"},
+      {"@id": "urn:ngm:class:intergovernmental-organisation", "label": "Intergovernmental Organisation"}
     ],
     "bridgesTo": [
       {"@id": "urn:ngm:class:finternet", "label": "Finternet"},

@@ -8,8 +8,8 @@
   "definition": "El Salvador is a Central American nation-state that in September 2021 became the first country in the world to adopt Bitcoin as legal tender alongside the United States dollar, enacting the Bitcoin Law (Ley Bitcoin). The policy required all businesses capable of providing the technology to accept Bitcoin for goods and services, deployed the government-issued Chivo Wallet to facilitate adoption, and established the Lightning Network as the primary payment rail for low-value retail transactions. El Salvador serves in this knowledge graph as a primary real-world case study for sovereign-level cryptocurrency adoption, digital-currency monetary policy, and the intersection of blockchain infrastructure with national governance.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:sovereign-entity",
-      "label": "Sovereign Entity"
+      "id": "urn:ngm:class:bc-governance-and-regulation",
+      "label": "BC Governance and Regulation"
     }
   ],
   "entityType": "Class",
@@ -111,6 +111,10 @@
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
+      {
+        "id": "urn:ngm:class:sovereign-entity",
+        "label": "Sovereign Entity"
+      },
       {
         "id": "urn:ngm:class:monetary-policy",
         "label": "Monetary Policy"

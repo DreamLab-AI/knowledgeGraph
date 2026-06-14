@@ -59,8 +59,8 @@ public:: true
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": {
-    "@id": "urn:ngm:class:urban-infrastructure",
-    "label": "Urban Infrastructure"
+    "@id": "urn:ngm:class:infra-computing-and-cloud",
+    "label": "Computing and Cloud"
   },
   "relations": {
     "requires": [
@@ -162,6 +162,10 @@ public:: true
       }
     ],
     "relatedTo": [
+      {
+        "@id": "urn:ngm:class:urban-infrastructure",
+        "label": "Urban Infrastructure"
+      },
       {
         "@id": "urn:ngm:class:urban-computing",
         "label": "Urban Computing"

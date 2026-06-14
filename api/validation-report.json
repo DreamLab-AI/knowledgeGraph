@@ -2,11 +2,11 @@
   "total_pages": 5975,
   "pages_with_ontology": 5975,
   "public_pages": 5961,
-  "total_issues": 971,
+  "total_issues": 969,
   "errors": 0,
-  "warnings": 971,
+  "warnings": 969,
   "by_code": {
-    "MULTI_PARENT": 971
+    "MULTI_PARENT": 969
   },
   "issues": [
     {
@@ -907,7 +907,7 @@
       "path": "ComfyUI for Fashion and Brands.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): AI Application, Fashion Technology, ComfyUI"
+      "message": "Multiple parents (2): AI Application, ComfyUI"
     },
     {
       "path": "Communication Software.md",
@@ -1082,12 +1082,6 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (3): Network Component, BC Network Component, BC Network Component"
-    },
-    {
-      "path": "Cryptocurrency Storage.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): Network Component, Digital Wallet"
     },
     {
       "path": "Cryptocurrency.md",
@@ -1328,12 +1322,6 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (3): Token and Asset, Blockchain Entity, EconomicMechanism"
-    },
-    {
-      "path": "Delegate Democracy.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Governance and Regulation, Collective Decision Making, BC Governance And Regulation"
     },
     {
       "path": "Delegated Proof of Stake.md",
@@ -3145,7 +3133,7 @@
       "path": "Multimodal AI Architecture.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): AI Research Area, Multimodal AI"
+      "message": "Multiple parents (2): AI Research Area, AI Model Architecture"
     },
     {
       "path": "Multirotor UAV.md",

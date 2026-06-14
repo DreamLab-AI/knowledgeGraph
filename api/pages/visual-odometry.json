@@ -8,8 +8,8 @@
   "definition": "Visual odometry (VO) is a technique for incrementally estimating the six-degree-of-freedom pose (position and orientation) of a camera-equipped agent by detecting and tracking salient features across consecutive image frames and computing the relative camera motion between them via geometric constraints such as the essential or fundamental matrix. It provides ego-motion estimation without relying on GPS, wheel encoders, or external beacons, making it applicable in GPS-denied environments such as indoor spaces, underground tunnels, and planetary surfaces. Scale ambiguity in monocular configurations is resolved by stereo baselines or depth cameras; drift is bounded by fusing inertial measurements (visual-inertial odometry) or by applying loop-closure detection within a full SLAM pipeline.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ego-motion-estimation",
-      "label": "Ego-Motion Estimation"
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
     }
   ],
   "entityType": "Class",
@@ -131,6 +131,10 @@
       }
     ],
     "relatedTo": [
+      {
+        "id": "urn:ngm:class:ego-motion-estimation",
+        "label": "Ego-Motion Estimation"
+      },
       {
         "id": "urn:ngm:class:loop-closure-detection",
         "label": "Loop Closure Detection"

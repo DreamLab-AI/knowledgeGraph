@@ -24,7 +24,7 @@ public:: true
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:decentralised-finance-protocol", "label": "Decentralised Finance Protocol"}
+    {"@id": "urn:ngm:class:bc-defi-and-economics", "label": "Bc Defi And Economics"}
   ],
   "relations": {
     "partOf": [
@@ -65,7 +65,8 @@ public:: true
       {"@id": "urn:ngm:class:total-value-locked", "label": "Total Value Locked"},
       {"@id": "urn:ngm:class:liquidation", "label": "Liquidation"},
       {"@id": "urn:ngm:class:collateral-factor", "label": "Collateral Factor"},
-      {"@id": "urn:ngm:class:autonomous-market-operations", "label": "Autonomous Market Operations"}
+      {"@id": "urn:ngm:class:autonomous-market-operations", "label": "Autonomous Market Operations"},
+      {"@id": "urn:ngm:class:decentralised-finance-protocol", "label": "Decentralised Finance Protocol"}
     ],
     "bridgesTo": [
       {"@id": "urn:ngm:class:algorithmic-market-design", "label": "Algorithmic Market Design"},

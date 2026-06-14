@@ -8,8 +8,8 @@
   "definition": "The United Kingdom's national institute for data science and artificial intelligence, founded in 2015 and headquartered in London, convening research across partner universities and applying AI and data science methods to challenges in health, defence, security, and the public sector.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:research-institute",
-      "label": "Research Institute"
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "Ai Research Area"
     }
   ],
   "entityType": "Class",
@@ -132,6 +132,10 @@
       {
         "id": "urn:ngm:class:ai-governance",
         "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:research-institute",
+        "label": "Research Institute"
       }
     ]
   },

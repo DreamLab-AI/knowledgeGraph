@@ -75,8 +75,8 @@ public:: true
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": {
-    "@id": "urn:ngm:class:layer-two-protocol",
-    "label": "Layer Two Protocol"
+    "@id": "urn:ngm:class:bc-protocol-and-consensus",
+    "label": "Bc Protocol And Consensus"
   },
   "relations": {
     "hasPart": [
@@ -201,6 +201,10 @@ public:: true
       {
         "@id": "urn:ngm:class:watchtower-service",
         "label": "Watchtower Service"
+      },
+      {
+        "@id": "urn:ngm:class:layer-two-protocol",
+        "label": "Layer Two Protocol"
       }
     ]
   },

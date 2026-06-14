@@ -24,7 +24,7 @@ elevatedFrom:: [[ComfyUI]]
   "definition": "A node-based diffusion pipeline interface is a visual programming environment that models a generative diffusion inference graph as a directed acyclic graph of interconnected functional nodes, where each node encapsulates a discrete operation such as model loading, text conditioning, latent sampling, or image decoding, and edges carry tensor data between nodes. This paradigm exposes the full computational structure of a diffusion pipeline as an inspectable, composable, and reproducible artefact rather than a hidden implementation detail. Tools such as ComfyUI exemplify this pattern: workflows are serialised as JSON graphs that can be version-controlled, shared, and deployed as production automation. The approach bridges visual dataflow programming traditions with modern deep-learning inference, enabling practitioners to compose multi-model, multi-stage generation pipelines without writing procedural code.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:visual-programming-environment", "label": "Visual Programming Environment"}],
+  "subClassOf": [{"@id": "urn:ngm:class:ai-application", "label": "AI Application"}],
   "relations": {
     "uses": [
       {"@id": "urn:ngm:class:stable-diffusion-image-model", "label": "Stable Diffusion"},
@@ -61,7 +61,8 @@ elevatedFrom:: [[ComfyUI]]
       {"@id": "urn:ngm:class:machine-learning-discipline-pipeline", "label": "Machine Learning Pipeline"},
       {"@id": "urn:ngm:class:dataflow-programming", "label": "Dataflow Programming"},
       {"@id": "urn:ngm:class:ip-adapter", "label": "IP-Adapter"},
-      {"@id": "urn:ngm:class:animatediff", "label": "AnimateDiff"}
+      {"@id": "urn:ngm:class:animatediff", "label": "AnimateDiff"},
+      {"@id": "urn:ngm:class:visual-programming-environment", "label": "Visual Programming Environment"}
     ],
     "contrastsWith": [
       {"@id": "urn:ngm:class:webui-form-based-interface", "label": "WebUI Form-Based Interface"},

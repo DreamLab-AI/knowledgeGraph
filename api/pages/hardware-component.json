@@ -8,8 +8,8 @@
   "definition": "A Hardware Component is a discrete physical element \u2014 such as a processor, memory module, sensor, display panel, network interface, or power management unit \u2014 that constitutes a functional building block within a computing or electronic system. Hardware components are characterised by their electrical specifications, mechanical form factor, thermal envelope, and interface standards, and their selection and integration collectively determine the throughput, latency, energy efficiency, and reliability of the host system. They are manufactured to industry or bespoke specifications and may be field-replaceable or permanently integrated at the board or package level. In the context of embedded, edge, and spatial-computing systems, the choice of hardware components directly constrains the achievable computational workloads, sensor modalities, and communication bandwidths.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:physical-system",
-      "label": "Physical System"
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Infra Computing and Cloud"
     }
   ],
   "entityType": "Class",
@@ -150,6 +150,10 @@
       }
     ],
     "relatedTo": [
+      {
+        "id": "urn:ngm:class:physical-system",
+        "label": "Physical System"
+      },
       {
         "id": "urn:ngm:class:printed-circuit-board",
         "label": "Printed Circuit Board"

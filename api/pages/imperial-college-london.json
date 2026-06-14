@@ -8,8 +8,8 @@
   "definition": "Imperial College London is a public research university in South Kensington, London, specialising in science, engineering, medicine, and business, founded in 1907 through the merger of the Royal College of Science, the Royal School of Mines, and the City and Guilds College. It gained full independence from the University of London on its centenary in 2007, and is consistently ranked among the world's top universities for STEM disciplines. The college is internationally recognised for research across artificial intelligence, machine learning, bioengineering, robotics, quantum computing, climate science, and computational biology. As a founding member of the Russell Group and a partner in numerous global research consortia, Imperial serves as a key node in the United Kingdom's knowledge and innovation infrastructure.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:research-institution",
-      "label": "Research Institution"
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area"
     }
   ],
   "entityType": "Class",
@@ -134,6 +134,10 @@
       {
         "id": "urn:ngm:class:ukri",
         "label": "UKRI"
+      },
+      {
+        "id": "urn:ngm:class:research-institution",
+        "label": "Research Institution"
       }
     ]
   },

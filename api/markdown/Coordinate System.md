@@ -50,7 +50,7 @@ public:: true
   "domain": "spatial-computing",
   "maturity": "mature",
   "subClassOf": [
-    {"@id": "urn:ngm:class:mathematical-framework", "label": "Mathematical Framework"}
+    {"@id": "urn:ngm:class:sc-display-and-rendering", "label": "SC Display and Rendering"}
   ],
   "relations": {
     "hasPart": [
@@ -96,6 +96,7 @@ public:: true
       {"@id": "urn:ngm:class:world-model", "label": "World Model"}
     ],
     "relatedTo": [
+      {"@id": "urn:ngm:class:mathematical-framework", "label": "Mathematical Framework"},
       {"@id": "urn:ngm:class:projection-model", "label": "Projection Model"},
       {"@id": "urn:ngm:class:euclidean-geometry", "label": "Euclidean Geometry"}
     ]

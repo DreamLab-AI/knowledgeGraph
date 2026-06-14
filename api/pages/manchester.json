@@ -8,8 +8,8 @@
   "definition": "Manchester is a major metropolitan city in North West England and the economic centre of the Greater Manchester Combined Authority, encompassing one of the United Kingdom's largest urban technology and digital economy clusters. The city hosts a dense concentration of universities, research institutes, data centres, fintech firms, and AI startups, anchored by institutions such as the University of Manchester and Manchester Metropolitan University. As a founding pillar of the Northern Powerhouse initiative, Manchester serves as a model for post-industrial urban regeneration built on knowledge industries, advanced manufacturing, and distributed digital infrastructure. It is a primary node in the UK's regional connectivity fabric, with major fibre, rail, and aviation links enabling distributed collaboration across the northern city-regions.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:urban-region",
-      "label": "Urban Region"
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Infra Computing And Cloud"
     }
   ],
   "entityType": "Class",
@@ -118,6 +118,10 @@
       {
         "id": "urn:ngm:class:graphene",
         "label": "Graphene"
+      },
+      {
+        "id": "urn:ngm:class:urban-region",
+        "label": "Urban Region"
       }
     ]
   },

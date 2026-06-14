@@ -8,8 +8,8 @@
   "definition": "The CAP Theorem states that a distributed data store cannot simultaneously guarantee all three of consistency, availability and partition tolerance. When a network partition occurs and messages between nodes are lost or delayed, a system must choose between remaining available, by serving possibly stale data, and remaining consistent, by refusing requests it cannot safely satisfy. Formulated by Eric Brewer and later proved formally by Gilbert and Lynch, it frames a fundamental trade-off in distributed systems design.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:distributed-systems-theorem",
-      "label": "Distributed Systems Theorem"
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Infra Computing And Cloud"
     }
   ],
   "entityType": "Class",
@@ -117,6 +117,10 @@
       {
         "id": "urn:ngm:class:nosql-database",
         "label": "NoSQL Database"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems-theorem",
+        "label": "Distributed Systems Theorem"
       }
     ]
   },

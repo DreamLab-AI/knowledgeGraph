@@ -47,8 +47,8 @@ public:: true
   "maturity": "mature",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:information-management",
-      "label": "Information Management"
+      "@id": "urn:ngm:class:infra-data-management",
+      "label": "Data Management"
     }
   ],
   "relations": {
@@ -86,7 +86,8 @@ public:: true
     "relatedTo": [
       {"@id": "urn:ngm:class:information-architecture", "label": "Information Architecture"},
       {"@id": "urn:ngm:class:enterprise-search", "label": "Enterprise Search"},
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
+      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
+      {"@id": "urn:ngm:class:information-management", "label": "Information Management"}
     ]
   },
   "sameAs": [

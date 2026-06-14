@@ -56,8 +56,8 @@ public:: true
   "qualityScore": 0.73,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:urban-centre",
-      "label": "Urban Centre"
+      "@id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Legal and Regulatory"
     }
   ],
   "relations": {
@@ -149,6 +149,10 @@ public:: true
       {
         "@id": "urn:ngm:class:yorkshire",
         "label": "Yorkshire"
+      },
+      {
+        "@id": "urn:ngm:class:urban-centre",
+        "label": "Urban Centre"
       }
     ],
     "bridgesTo": [

@@ -52,8 +52,8 @@ alias:: DataGovernance
   "maturity": "mature",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:information-governance",
-      "label": "Information Governance"
+      "@id": "urn:ngm:class:infra-data-management",
+      "label": "Infra Data Management"
     }
   ],
   "relations": {
@@ -146,6 +146,10 @@ alias:: DataGovernance
       }
     ],
     "relatedTo": [
+      {
+        "@id": "urn:ngm:class:information-governance",
+        "label": "Information Governance"
+      },
       {
         "@id": "urn:ngm:class:master-data-management",
         "label": "Master Data Management"

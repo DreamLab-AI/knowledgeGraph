@@ -8,8 +8,8 @@
   "definition": "Data Governance is a system of policies, processes, roles, and standards that establish accountability and control over an organisation's data assets throughout their lifecycle. It defines who may take what actions with which data, under what circumstances, and using what methods, ensuring data quality, consistency, security, and regulatory compliance. Effective data governance bridges technical data management practices with organisational strategy, aligning data stewardship with business objectives and legal obligations. It is foundational to trustworthy analytics, AI model training, and interoperability across enterprise systems.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:information-governance",
-      "label": "Information Governance"
+      "id": "urn:ngm:class:infra-data-management",
+      "label": "Infra Data Management"
     }
   ],
   "entityType": "Class",
@@ -123,6 +123,10 @@
     ],
     "partOf": [],
     "relatedTo": [
+      {
+        "id": "urn:ngm:class:information-governance",
+        "label": "Information Governance"
+      },
       {
         "id": "urn:ngm:class:master-data-management",
         "label": "Master Data Management"

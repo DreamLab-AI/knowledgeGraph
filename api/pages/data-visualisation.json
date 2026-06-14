@@ -8,8 +8,8 @@
   "definition": "Data Visualisation is the systematic practice of encoding data attributes into perceptual channels \u2014 position, colour, size, shape, and motion \u2014 to enable rapid human comprehension of patterns, trends, anomalies, and relational structures within datasets. It encompasses both static and interactive representations, spanning two-dimensional charts, network graphs, geospatial maps, and immersive three-dimensional scenes rendered in augmented or virtual reality environments. Effective data visualisation integrates principles from information design, cognitive psychology, and computer graphics, requiring rendering infrastructure, data pipelines, and interaction paradigms suited to the display medium. In the context of real-time analytics and spatial computing, visualisation systems must handle streaming data, high-dimensionality reduction, and multi-user collaborative viewing at interactive frame rates.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:information-design",
-      "label": "Information Design"
+      "id": "urn:ngm:class:infra-data-management",
+      "label": "Infra Data Management"
     }
   ],
   "entityType": "Class",
@@ -132,6 +132,10 @@
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
+      {
+        "id": "urn:ngm:class:information-design",
+        "label": "Information Design"
+      },
       {
         "id": "urn:ngm:class:scientific-visualisation",
         "label": "Scientific Visualisation"
