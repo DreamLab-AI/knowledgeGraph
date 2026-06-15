@@ -1,0 +1,123 @@
+{
+  "id": "urn:visionflow:page:business-rules-engine",
+  "title": "Business Rules Engine",
+  "slug": "business-rules-engine",
+  "public": true,
+  "classIri": "urn:ngm:class:business-rules-engine",
+  "domain": "governance",
+  "definition": "A Business Rules Engine (BRE) is a software component that externalises and executes business logic as declarative rules separate from application code. Rules are authored by domain experts in natural-language-like syntax and evaluated against facts at runtime using algorithms such as the Rete network. BREs enable non-technical stakeholders to modify organisational policies without redeploying software, making them a key enabler of agile governance and compliance automation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:governance",
+      "label": "Governance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:rule-repository",
+        "label": "Rule Repository"
+      },
+      {
+        "id": "urn:ngm:class:inference-engine",
+        "label": "Inference Engine"
+      },
+      {
+        "id": "urn:ngm:class:fact-model",
+        "label": "Fact Model"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:compliance-automation",
+        "label": "Compliance Automation"
+      },
+      {
+        "id": "urn:ngm:class:policy-enforcement",
+        "label": "Policy Enforcement"
+      },
+      {
+        "id": "urn:ngm:class:decision-management",
+        "label": "Decision Management"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      },
+      {
+        "id": "urn:ngm:class:reasoning-engine",
+        "label": "Reasoning Engine"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:hardcoded-logic",
+        "label": "Hardcoded Logic"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-decision-system",
+        "label": "AI Decision System"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:rete-algorithm",
+        "label": "Rete Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:decision-table",
+        "label": "Decision Table"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:dmn",
+        "label": "DMN"
+      },
+      {
+        "id": "urn:ngm:class:drools",
+        "label": "Drools"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:workflow-automation",
+        "label": "Workflow Automation"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

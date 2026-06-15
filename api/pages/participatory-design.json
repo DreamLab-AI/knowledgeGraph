@@ -1,0 +1,99 @@
+{
+  "id": "urn:visionflow:page:participatory-design",
+  "title": "Participatory Design",
+  "slug": "participatory-design",
+  "public": true,
+  "classIri": "urn:ngm:class:participatory-design",
+  "domain": "governance",
+  "definition": "Participatory Design is a design methodology in which end-users, stakeholders, and affected communities are actively involved as co-designers throughout the design process rather than being passive subjects of research. Originating in Scandinavian workplace democracy movements of the 1970s, it prioritises the experiential knowledge of participants and seeks to produce systems that genuinely serve their needs. In digital technology and AI contexts, it is applied to ensure that systems reflect diverse human values and avoid embedding biases of the designer.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:governance",
+      "label": "Governance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:co-design-workshop",
+        "label": "Co-Design Workshop"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:inclusive-design",
+        "label": "Inclusive Design"
+      },
+      {
+        "id": "urn:ngm:class:technology-adoption",
+        "label": "Technology Adoption"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:stakeholder-engagement",
+        "label": "Stakeholder Engagement"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:human-centred-design",
+        "label": "Human-Centred Design"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:expert-driven-design",
+        "label": "Expert-Driven Design"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai",
+        "label": "Artificial Intelligence"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:user-research",
+        "label": "User Research"
+      },
+      {
+        "id": "urn:ngm:class:prototyping",
+        "label": "Prototyping"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:policy",
+        "label": "Policy"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human-Computer Interaction"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

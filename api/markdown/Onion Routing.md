@@ -39,7 +39,7 @@ alias:: OnionRouting, onion-routing
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
+        "@id": "urn:ngm:class:public-key-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
@@ -87,7 +87,7 @@ alias:: OnionRouting, onion-routing
         "label": "Encryption"
       },
       {
-        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
+        "@id": "urn:ngm:class:public-key-cryptography",
         "label": "Public-Key Cryptography"
       },
       {

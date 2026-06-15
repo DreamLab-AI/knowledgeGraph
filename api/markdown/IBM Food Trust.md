@@ -139,7 +139,7 @@ public:: true
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-blockchain",
+        "@id": "urn:ngm:class:public-blockchain",
         "label": "Public Blockchain"
       },
       {

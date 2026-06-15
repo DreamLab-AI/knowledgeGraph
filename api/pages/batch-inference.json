@@ -1,0 +1,107 @@
+{
+  "id": "urn:visionflow:page:batch-inference",
+  "title": "Batch Inference",
+  "slug": "batch-inference",
+  "public": true,
+  "classIri": "urn:ngm:class:batch-inference",
+  "domain": "machine-learning",
+  "definition": "The process of applying a trained machine learning model to a collection of inputs simultaneously rather than processing each input individually in real time. Batch inference amortises per-request overhead by grouping inputs into tensors that saturate GPU or accelerator memory bandwidth, significantly reducing per-sample latency at scale. It is the dominant serving pattern for offline analytics, embedding generation, and large-scale data enrichment pipelines where latency deadlines are relaxed. Contrast with online inference, which prioritises low single-request latency over throughput.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:gpu-computing",
+        "label": "GPU Computing"
+      },
+      {
+        "id": "urn:ngm:class:tensor-processing",
+        "label": "Tensor Processing"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:model-serving",
+        "label": "Model Serving"
+      },
+      {
+        "id": "urn:ngm:class:embedding-generation",
+        "label": "Embedding Generation"
+      },
+      {
+        "id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:machine-learning-infrastructure",
+        "label": "Machine Learning Infrastructure"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:inference-pipeline",
+        "label": "Inference Pipeline"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:online-inference",
+        "label": "Online Inference"
+      },
+      {
+        "id": "urn:ngm:class:streaming-inference",
+        "label": "Streaming Inference"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning-framework",
+        "label": "Deep Learning Framework"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:throughput-optimisation",
+        "label": "Throughput Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:model-quantisation",
+        "label": "Model Quantisation"
+      },
+      {
+        "id": "urn:ngm:class:distributed-training",
+        "label": "Distributed Training"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

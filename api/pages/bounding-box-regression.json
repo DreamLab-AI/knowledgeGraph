@@ -1,0 +1,106 @@
+{
+  "id": "urn:visionflow:page:bounding-box-regression",
+  "title": "Bounding Box Regression",
+  "slug": "bounding-box-regression",
+  "public": true,
+  "classIri": "urn:ngm:class:bounding-box-regression",
+  "domain": "machine-learning",
+  "definition": "Bounding Box Regression is the supervised learning task within object detection of predicting the precise coordinates of axis-aligned rectangular boxes that tightly enclose detected objects. A model outputs four continuous values \u2014 typically centre x, centre y, width, and height relative to an anchor \u2014 and is trained using smooth-L1 or IoU-based loss functions that penalise deviation from ground-truth boxes. It is jointly trained with an object classification head and combined with [[Non Maximum Suppression]] to produce the final detections. Accurate regression is critical for downstream tasks such as instance segmentation and 3-D pose estimation that consume the predicted boxes.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:object-detection",
+      "label": "Object Detection"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:non-maximum-suppression",
+        "label": "Non Maximum Suppression"
+      },
+      {
+        "id": "urn:ngm:class:heatmap-regression",
+        "label": "Heatmap Regression"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:regression",
+        "label": "Regression"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:object-detection-and-tracking",
+        "label": "Object Detection and Tracking"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision-system",
+        "label": "Computer Vision System"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:regression-testing",
+        "label": "Regression Testing"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:regression",
+        "label": "Regression"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision-task",
+        "label": "Computer Vision Task"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:real-time-ai-inference",
+        "label": "Real-Time AI Inference"
+      },
+      {
+        "id": "urn:ngm:class:real-time-ai",
+        "label": "Real-Time AI"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:bounding-volume",
+        "label": "Bounding Volume"
+      },
+      {
+        "id": "urn:ngm:class:bounding-volume-hierarchy",
+        "label": "Bounding Volume Hierarchy"
+      },
+      {
+        "id": "urn:ngm:class:gaussian-process-regression",
+        "label": "Gaussian Process Regression"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

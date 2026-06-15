@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:non-maximum-suppression",
+  "title": "Non Maximum Suppression",
+  "slug": "non-maximum-suppression",
+  "public": true,
+  "classIri": "urn:ngm:class:non-maximum-suppression",
+  "domain": "machine-learning",
+  "definition": "Non-Maximum Suppression (NMS) is a post-processing algorithm used in object detection to eliminate redundant overlapping bounding box proposals by retaining only the highest-confidence detection and discarding lower-confidence boxes that exceed a predefined intersection-over-union (IoU) threshold. The procedure iteratively selects the detection with the highest class score, suppresses all remaining boxes that sufficiently overlap with it, and repeats until no candidates remain. NMS is a critical component of single-stage and two-stage detectors including YOLO, SSD, and Faster R-CNN families. Soft-NMS and class-agnostic variants address edge cases where multiple legitimate objects are densely packed.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:object-detection",
+      "label": "Object Detection"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:bounding-box-regression",
+        "label": "Bounding Box Regression"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:bounding-box-regression",
+        "label": "Bounding Box Regression"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:object-detection",
+        "label": "Object Detection"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision-task",
+        "label": "Computer Vision Task"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:object-detection",
+        "label": "Object Detection"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:object-detection-and-tracking",
+        "label": "Object Detection and Tracking"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:computer-vision-system",
+        "label": "Computer Vision System"
+      },
+      {
+        "id": "urn:ngm:class:real-time-ai-inference",
+        "label": "Real-Time AI Inference"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:heatmap-regression",
+        "label": "Heatmap Regression"
+      },
+      {
+        "id": "urn:ngm:class:bounding-volume",
+        "label": "Bounding Volume"
+      },
+      {
+        "id": "urn:ngm:class:bounding-volume-hierarchy",
+        "label": "Bounding Volume Hierarchy"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

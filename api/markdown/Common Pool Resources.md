@@ -23,19 +23,42 @@ public:: true
   "definition": "Natural or human-made resources that are non-excludable to a defined community but rival in consumption, meaning one actor's use diminishes availability for others. Classic examples include fisheries, groundwater, pastures, and shared spectrum; digital analogues include shared compute pools and open training datasets. Sustainable governance requires institutions that constrain extraction without full privatisation or state control.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:resource-management", "label": "Resource Management"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:resource-management",
+      "label": "Resource Management"
+    }
+  ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:collective-governance", "label": "Collective Governance"},
-      {"@id": "urn:ngm:class:polycentric-governance", "label": "Polycentric Governance"}
+      {
+        "@id": "urn:ngm:class:collective-governance",
+        "label": "Collective Governance"
+      },
+      {
+        "@id": "urn:ngm:class:polycentric-governance",
+        "label": "Polycentric Governance"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:collective-action", "label": "Collective Action"},
-      {"@id": "urn:ngm:class:knowledge-graph-publication-classifier-goods-funding", "label": "Public Goods Funding"},
-      {"@id": "urn:ngm:class:property-rights", "label": "Property Rights"}
+      {
+        "@id": "urn:ngm:class:collective-action",
+        "label": "Collective Action"
+      },
+      {
+        "@id": "urn:ngm:class:public-goods-funding",
+        "label": "Public Goods Funding"
+      },
+      {
+        "@id": "urn:ngm:class:property-rights",
+        "label": "Property Rights"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:community-governance", "label": "Community Governance"}
+      {
+        "@id": "urn:ngm:class:community-governance",
+        "label": "Community Governance"
+      }
     ]
   },
   "quality": 0.8

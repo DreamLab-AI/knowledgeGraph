@@ -1,0 +1,128 @@
+{
+  "id": "urn:visionflow:page:model-serialisation",
+  "title": "Model Serialisation",
+  "slug": "model-serialisation",
+  "public": true,
+  "classIri": "urn:ngm:class:model-serialisation",
+  "domain": "artificial-intelligence",
+  "definition": "Model serialisation is the process of converting a trained machine learning model \u2014 including its architecture definition, learned weights, and associated metadata \u2014 into a persistent, portable file format that can be stored, transferred, and subsequently loaded to restore the model to an operational state. Serialisation enables reproducibility, deployment across different environments, and sharing of pre-trained models through repositories. Common formats include ONNX for cross-framework portability, SafeTensors for security, PyTorch checkpoint files, and framework-native formats such as TensorFlow SavedModel.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:checkpoint",
+        "label": "Checkpoint"
+      },
+      {
+        "id": "urn:ngm:class:model-metadata",
+        "label": "Model Metadata"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:file-format",
+        "label": "File Format"
+      },
+      {
+        "id": "urn:ngm:class:model-architecture",
+        "label": "Model Architecture"
+      },
+      {
+        "id": "urn:ngm:class:weight-storage",
+        "label": "Weight Storage"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:model-portability",
+        "label": "Model Portability"
+      },
+      {
+        "id": "urn:ngm:class:model-versioning",
+        "label": "Model Versioning"
+      },
+      {
+        "id": "urn:ngm:class:inference-engine",
+        "label": "Inference Engine"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:storage-system",
+        "label": "Storage System"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:just-in-time-compilation",
+        "label": "Just In Time Compilation"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:onnx",
+        "label": "Onnx"
+      },
+      {
+        "id": "urn:ngm:class:safetensors",
+        "label": "Safetensors"
+      },
+      {
+        "id": "urn:ngm:class:pickle-format",
+        "label": "Pickle Format"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:model-serving",
+        "label": "Model Serving"
+      },
+      {
+        "id": "urn:ngm:class:experiment-reproducibility",
+        "label": "Experiment Reproducibility"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:onnx",
+        "label": "Onnx"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:model-deployment",
+        "label": "Model Deployment"
+      },
+      {
+        "id": "urn:ngm:class:model-registry",
+        "label": "Model Registry"
+      },
+      {
+        "id": "urn:ngm:class:mlops",
+        "label": "Mlops"
+      },
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "checkpoints",
+      "label": "Checkpoints"
+    }
+  ]
+}

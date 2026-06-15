@@ -1,0 +1,92 @@
+{
+  "id": "urn:visionflow:page:think-aloud-protocol",
+  "title": "Think Aloud Protocol",
+  "slug": "think-aloud-protocol",
+  "public": true,
+  "classIri": "urn:ngm:class:think-aloud-protocol",
+  "domain": "spatial-computing",
+  "definition": "The Think Aloud Protocol is a qualitative usability research method in which participants verbalise their thought processes continuously while performing tasks with a system or interface. Originating in cognitive psychology, it provides direct access to users' mental models, expectations, and confusion points. The method is widely used in human-computer interaction research and UX design to uncover usability issues that observation alone cannot reveal. Two variants exist: concurrent think-aloud (verbalising during the task) and retrospective think-aloud (recalling thoughts after completing it).",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:spatial-computing",
+      "label": "Spatial Computing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:usability-testing",
+        "label": "Usability Testing"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-walkthrough",
+        "label": "Cognitive Walkthrough"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:usability-evaluation",
+        "label": "Usability Evaluation"
+      },
+      {
+        "id": "urn:ngm:class:interaction-design",
+        "label": "Interaction Design"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:user-research",
+        "label": "User Research"
+      },
+      {
+        "id": "urn:ngm:class:task-analysis",
+        "label": "Task Analysis"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:session-recording",
+        "label": "Session Recording"
+      },
+      {
+        "id": "urn:ngm:class:verbal-protocol-analysis",
+        "label": "Verbal Protocol Analysis"
+      },
+      {
+        "id": "urn:ngm:class:eye-tracking",
+        "label": "Eye Tracking"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:user-centred-design",
+        "label": "User-Centred Design"
+      },
+      {
+        "id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

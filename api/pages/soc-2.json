@@ -1,0 +1,114 @@
+{
+  "id": "urn:visionflow:page:soc-2",
+  "title": "Soc 2",
+  "slug": "soc-2",
+  "public": true,
+  "classIri": "urn:ngm:class:soc-2",
+  "domain": "security",
+  "definition": "SOC 2 (System and Organisation Controls 2) is an auditing standard developed by the American Institute of Certified Public Accountants (AICPA) that evaluates the controls of service organisations relevant to security, availability, processing integrity, confidentiality, and privacy. A SOC 2 report, issued by an independent CPA, is widely used by cloud service providers and SaaS companies to demonstrate trustworthiness to enterprise customers. Type I reports assess design at a point in time; Type II reports assess operating effectiveness over a period.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:security",
+      "label": "Security"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:trust-services-criteria",
+        "label": "Trust Services Criteria"
+      },
+      {
+        "id": "urn:ngm:class:control-environment",
+        "label": "Control Environment"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:security-audit",
+        "label": "Security Audit"
+      },
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "id": "urn:ngm:class:incident-response",
+        "label": "Incident Response"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:vendor-trust",
+        "label": "Vendor Trust"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:iso-27001",
+        "label": "ISO 27001"
+      },
+      {
+        "id": "urn:ngm:class:soc-1",
+        "label": "SOC 1"
+      },
+      {
+        "id": "urn:ngm:class:pci-dss",
+        "label": "PCI DSS"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:saas",
+        "label": "SaaS"
+      },
+      {
+        "id": "urn:ngm:class:enterprise-software",
+        "label": "Enterprise Software"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:aicpa",
+        "label": "AICPA"
+      },
+      {
+        "id": "urn:ngm:class:trust-services-criteria",
+        "label": "Trust Services Criteria"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cloud-security",
+        "label": "Cloud Security"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "cross-platform-compliance-hub",
+      "label": "Cross-Platform Compliance Hub"
+    }
+  ]
+}

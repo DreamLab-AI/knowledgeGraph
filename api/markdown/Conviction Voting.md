@@ -622,7 +622,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-goods-funding",
+        "@id": "urn:ngm:class:public-goods-funding",
         "label": "Continuous Public Goods Funding"
       }
     ],
@@ -656,7 +656,7 @@ public:: true
         "label": "Common-Pool Resource Management"
       },
       {
-        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-goods-funding",
+        "@id": "urn:ngm:class:public-goods-funding",
         "label": "Public Goods Funding"
       }
     ]

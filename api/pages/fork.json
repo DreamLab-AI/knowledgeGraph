@@ -1,0 +1,107 @@
+{
+  "id": "urn:visionflow:page:fork",
+  "title": "Fork",
+  "slug": "fork",
+  "public": true,
+  "classIri": "urn:ngm:class:fork",
+  "domain": "blockchain",
+  "definition": "A Fork in the context of blockchain and distributed systems is a divergence in the protocol rules or chain history that results in two or more distinct execution paths from a common ancestor state. Hard forks introduce backward-incompatible rule changes requiring all participants to upgrade, potentially creating a permanently divergent chain. Soft forks introduce backward-compatible tightening of rules. Forks can be planned governance events (protocol upgrades) or unintended consequences of network partitions or competing miner/validator behaviour.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:hard-fork",
+        "label": "Hard Fork"
+      },
+      {
+        "id": "urn:ngm:class:soft-fork",
+        "label": "Soft Fork"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:social-consensus",
+        "label": "Social Consensus"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:protocol-upgrade",
+        "label": "Protocol Upgrade"
+      },
+      {
+        "id": "urn:ngm:class:network-partition",
+        "label": "Network Partition"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:merge",
+        "label": "Merge"
+      },
+      {
+        "id": "urn:ngm:class:backward-compatibility",
+        "label": "Backward Compatibility"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cryptographic-hash",
+        "label": "Cryptographic Hash"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-data",
+        "label": "Blockchain Data"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "blockchain-network",
+      "label": "Blockchain Network"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

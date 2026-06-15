@@ -1,0 +1,109 @@
+{
+  "id": "urn:visionflow:page:shadow-mapping",
+  "title": "Shadow Mapping",
+  "slug": "shadow-mapping",
+  "public": true,
+  "classIri": "urn:ngm:class:shadow-mapping",
+  "domain": "spatial-computing",
+  "definition": "Shadow Mapping is a real-time computer graphics technique for rendering shadows by rendering the scene from the perspective of each light source into a depth texture (the shadow map), then comparing scene-point depth values against that map during the main render pass to determine visibility. It is the dominant method for dynamic shadows in games and real-time rendering engines due to its GPU efficiency and flexibility. Artefacts such as shadow acne and perspective aliasing are mitigated through techniques like bias adjustment, percentage-closer filtering, and cascaded shadow maps. The technique is fundamental to photorealistic rendering in spatial computing and XR applications.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:spatial-computing",
+      "label": "Spatial Computing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:depth-buffer",
+        "label": "Depth Buffer"
+      },
+      {
+        "id": "urn:ngm:class:shader",
+        "label": "Shader"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:photorealistic-rendering",
+        "label": "Photorealistic Rendering"
+      },
+      {
+        "id": "urn:ngm:class:dynamic-lighting",
+        "label": "Dynamic Lighting"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:rasterisation",
+        "label": "Rasterisation"
+      },
+      {
+        "id": "urn:ngm:class:graphics-pipeline",
+        "label": "Graphics Pipeline"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:ray-tracing",
+        "label": "Ray Tracing"
+      },
+      {
+        "id": "urn:ngm:class:shadow-volumes",
+        "label": "Shadow Volumes"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:gpu",
+        "label": "Gpu"
+      },
+      {
+        "id": "urn:ngm:class:texture-mapping",
+        "label": "Texture Mapping"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:rasterisation",
+        "label": "Rasterisation"
+      },
+      {
+        "id": "urn:ngm:class:depth-buffer",
+        "label": "Depth Buffer"
+      },
+      {
+        "id": "urn:ngm:class:global-illumination",
+        "label": "Global Illumination"
+      },
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

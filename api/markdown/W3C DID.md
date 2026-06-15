@@ -58,7 +58,7 @@ public:: true
         "label": "Verifiable Data Registry"
       },
       {
-        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
+        "@id": "urn:ngm:class:public-key-cryptography",
         "label": "Public Key Cryptography"
       },
       {
@@ -116,7 +116,7 @@ public:: true
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
+        "@id": "urn:ngm:class:public-key-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {

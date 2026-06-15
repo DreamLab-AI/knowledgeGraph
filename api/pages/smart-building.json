@@ -1,0 +1,126 @@
+{
+  "id": "urn:visionflow:page:smart-building",
+  "title": "Smart Building",
+  "slug": "smart-building",
+  "public": true,
+  "classIri": "urn:ngm:class:smart-building",
+  "domain": "spatial-computing",
+  "definition": "A Smart Building is a facility that integrates networked sensors, actuators, control systems, and analytical software to automatically optimise energy consumption, occupant comfort, security, and operational efficiency in real time. Building systems \u2014 HVAC, lighting, access control, fire detection, lifts, and power distribution \u2014 are connected through a building management system (BMS) and increasingly exposed through open protocols such as BACnet, Modbus, MQTT, and OPC-UA to enable data-driven control strategies. Machine learning models analyse sensor streams to predict occupancy, detect anomalies, and schedule maintenance proactively. Smart buildings are fundamental nodes in [[Smart City]] infrastructure, integrating with district energy grids, electric vehicle charging, and urban mobility platforms.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:building-automation",
+      "label": "Building Automation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:iot-sensor",
+        "label": "IoT Sensor"
+      },
+      {
+        "id": "urn:ngm:class:building-automation",
+        "label": "Building Automation"
+      },
+      {
+        "id": "urn:ngm:class:iot-infrastructure",
+        "label": "IoT Infrastructure"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:iot-security",
+        "label": "Iot Security"
+      },
+      {
+        "id": "urn:ngm:class:real-time-data-processing",
+        "label": "Real-Time Data Processing"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:smart-city-infrastructure",
+        "label": "Smart City Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:iot-ai-integration",
+        "label": "IoT AI Integration"
+      },
+      {
+        "id": "urn:ngm:class:real-time-control",
+        "label": "Real-Time Control"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:iot-integration",
+        "label": "IoT Integration"
+      },
+      {
+        "id": "urn:ngm:class:industrial-iot",
+        "label": "Industrial IoT"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:smart-city",
+        "label": "Smart City"
+      },
+      {
+        "id": "urn:ngm:class:building-information-modelling",
+        "label": "Building Information Modelling"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:iot-sensor-network",
+        "label": "Iot Sensor Network"
+      },
+      {
+        "id": "urn:ngm:class:iot-device",
+        "label": "IoT Device"
+      },
+      {
+        "id": "urn:ngm:class:real-time-analytics",
+        "label": "Real-Time Analytics"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:smart-city",
+        "label": "Smart City"
+      },
+      {
+        "id": "urn:ngm:class:smart-grid",
+        "label": "Smart Grid"
+      },
+      {
+        "id": "urn:ngm:class:smart-home",
+        "label": "Smart Home"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:smart-home-automation",
+        "label": "Smart Home Automation"
+      },
+      {
+        "id": "urn:ngm:class:iot",
+        "label": "IoT"
+      },
+      {
+        "id": "urn:ngm:class:cyber-physical-systems",
+        "label": "Cyber Physical Systems"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

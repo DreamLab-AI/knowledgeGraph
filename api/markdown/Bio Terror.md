@@ -642,10 +642,6 @@ public:: true
       {
         "@id": "urn:ngm:class:pandemic-preparedness",
         "label": "Pandemic Preparedness"
-      },
-      {
-        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-health-surveillance",
-        "label": "Public Health Surveillance"
       }
     ],
     "standardizedBy": [

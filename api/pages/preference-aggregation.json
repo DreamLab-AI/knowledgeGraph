@@ -1,0 +1,112 @@
+{
+  "id": "urn:visionflow:page:preference-aggregation",
+  "title": "Preference Aggregation",
+  "slug": "preference-aggregation",
+  "public": true,
+  "classIri": "urn:ngm:class:preference-aggregation",
+  "domain": "governance",
+  "definition": "The process of combining individual preferences, rankings, or utility functions from multiple stakeholders into a collective or social preference ordering for decision-making purposes. Preference aggregation methods range from simple majority voting to sophisticated social choice mechanisms, each making different assumptions about preference structure and interpersonal comparability. Arrow's impossibility theorem establishes fundamental limits on consistent aggregation. The field is central to voting theory, mechanism design, and collaborative governance.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:governance",
+      "label": "Governance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:voting-mechanism",
+        "label": "Voting Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:social-choice-theory",
+        "label": "Social Choice Theory"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:policy-formation",
+        "label": "Policy Formation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:data-collection",
+        "label": "Data Collection"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:collective-decision-making",
+        "label": "Collective Decision-Making"
+      },
+      {
+        "id": "urn:ngm:class:democratic-governance",
+        "label": "Democratic Governance"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:individual-decision-making",
+        "label": "Individual Decision-Making"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:utility-function",
+        "label": "Utility Function"
+      },
+      {
+        "id": "urn:ngm:class:ranking-algorithm",
+        "label": "Ranking Algorithm"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:fairness",
+        "label": "Fairness"
+      },
+      {
+        "id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:mechanism-design",
+        "label": "Mechanism Design"
+      },
+      {
+        "id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-autonomous-organization",
+        "label": "Decentralized Autonomous Organization"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "bias-in-large-language-models",
+      "label": "Bias in Large Language Models"
+    }
+  ]
+}

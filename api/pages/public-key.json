@@ -3,7 +3,7 @@
   "title": "Public Key",
   "slug": "public-key",
   "public": true,
-  "classIri": "urn:ngm:class:knowledge-graph-publication-classifier-key",
+  "classIri": "urn:ngm:class:public-key",
   "domain": "security",
   "definition": "The publicly shareable component of an asymmetric key pair, derived from the private key via elliptic curve or RSA mathematics, used to derive wallet addresses, verify digital signatures, and enable encrypted communication without transmitting secret material.",
   "subClassOf": [
@@ -111,7 +111,7 @@
     ],
     "partOf": [
       {
-        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
+        "id": "urn:ngm:class:public-key-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {

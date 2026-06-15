@@ -722,7 +722,7 @@ public:: true
         "label": "Polycentric Governance"
       },
       {
-        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-goods-funding",
+        "@id": "urn:ngm:class:public-goods-funding",
         "label": "Public Goods Funding"
       }
     ],

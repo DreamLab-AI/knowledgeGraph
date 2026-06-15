@@ -467,7 +467,7 @@ public:: true
       "label": "Governance and Regulation"
     },
     {
-      "@id": "urn:ngm:class:knowledge-graph-publication-classifier-goods-funding",
+      "@id": "urn:ngm:class:public-goods-funding",
       "label": "Public Goods Funding"
     }
   ],
@@ -542,7 +542,7 @@ public:: true
         "label": "Incentive Compatibility"
       },
       {
-        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-goods-funding",
+        "@id": "urn:ngm:class:public-goods-funding",
         "label": "Public Goods Funding"
       },
       {

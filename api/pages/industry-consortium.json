@@ -1,0 +1,95 @@
+{
+  "id": "urn:visionflow:page:industry-consortium",
+  "title": "Industry Consortium",
+  "slug": "industry-consortium",
+  "public": true,
+  "classIri": "urn:ngm:class:industry-consortium",
+  "domain": "ai",
+  "definition": "An Industry Consortium is a collaborative alliance of multiple independent organisations within the same sector that pool resources, expertise, and influence to pursue shared objectives such as standards development, research, or market promotion. Consortia typically operate under a formal governance charter and may produce specifications, reference implementations, or advocacy positions. They differ from regulatory bodies in that membership is voluntary and outputs are generally non-binding unless adopted by standards organisations.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:governance",
+      "label": "Governance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:working-group",
+        "label": "Working Group"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:standardisation",
+        "label": "Standardisation"
+      },
+      {
+        "id": "urn:ngm:class:collaborative-research",
+        "label": "Collaborative Research"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:regulatory-body",
+        "label": "Regulatory Body"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:policy",
+        "label": "Policy"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:technology-adoption",
+        "label": "Technology Adoption"
+      },
+      {
+        "id": "urn:ngm:class:ai",
+        "label": "Artificial Intelligence"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:standards",
+        "label": "Standards"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
+      },
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

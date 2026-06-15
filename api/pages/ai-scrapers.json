@@ -60,10 +60,6 @@
         "label": "Network Connectivity"
       },
       {
-        "id": "urn:ngm:class:knowledge-graph-publication-classifier-web-content",
-        "label": "Public Web Content"
-      },
-      {
         "id": "urn:ngm:class:storage-pipeline",
         "label": "Storage Pipeline"
       },

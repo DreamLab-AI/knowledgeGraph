@@ -135,7 +135,7 @@ public:: true
         "label": "Smart Contract"
       },
       {
-        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-blockchain",
+        "@id": "urn:ngm:class:public-blockchain",
         "label": "Public Blockchain"
       }
     ],

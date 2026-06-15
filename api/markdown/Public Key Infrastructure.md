@@ -35,7 +35,7 @@ alias:: Public-Key Infrastructure, PublicKeyInfrastructure
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
+  "@id": "urn:ngm:class:public-key-infrastructure",
   "@type": "Class",
   "label": "Public Key Infrastructure",
   "definition": "Public Key Infrastructure (PKI) is the integrated set of roles, policies, hardware, software, and procedures used to create, manage, distribute, use, store, and revoke digital certificates and manage public-key encryption. PKI binds public keys to verified entity identities through a hierarchical trust chain anchored by Certificate Authorities (CAs), enabling secure authentication, data integrity, and confidential communication across distributed and internet-scale systems. It forms the foundational security layer for TLS/HTTPS, code signing, S/MIME email encryption, VPN access, and emerging decentralised identity frameworks. PKI standards are governed principally by IETF RFCs (X.509, PKIX), NIST guidelines, CA/Browser Forum Baseline Requirements, and ISO/IEC 27001 family controls.",

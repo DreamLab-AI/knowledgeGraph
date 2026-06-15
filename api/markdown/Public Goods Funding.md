@@ -24,7 +24,7 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:knowledge-graph-publication-classifier-goods-funding",
+  "@id": "urn:ngm:class:public-goods-funding",
   "@type": "Class",
   "label": "Public Goods Funding",
   "definition": "Public goods funding encompasses the mechanisms, institutions, and coordination protocols that allocate capital toward resources which are non-excludable and non-rival — goods whose consumption by one party does not diminish availability to others and from which no party can be practically excluded. In open digital ecosystems, this addresses a structural market failure: rational actors under-invest in shared infrastructure because they can free-ride on others' contributions. Blockchain-native primitives such as quadratic funding, retroactive grants, and DAO-managed treasuries have revived and extended classical public economics, enabling transparent, on-chain allocation of capital toward open-source software, protocol research, and collective knowledge commons. The field sits at the intersection of mechanism design, cryptoeconomics, and welfare economics, driving continuous innovation in sybil resistance, matching fund architecture, and governance legitimacy.",

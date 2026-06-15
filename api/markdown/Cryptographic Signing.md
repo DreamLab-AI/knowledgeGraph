@@ -23,18 +23,38 @@ public:: true
   "definition": "Cryptographic signing is the process of producing a verifiable proof of authorship and integrity over a message or document using a private key, such that anyone holding the corresponding public key can confirm the signature without being able to forge it. It underpins authentication, non-repudiation, software-supply-chain integrity, and blockchain transaction authorisation. Signing schemes include RSA, ECDSA, EdDSA, and Schnorr, each defining how a hash of the message is transformed under the signer's secret key into a compact, publicly verifiable signature.",
   "domain": "security",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:cryptographic-primitive", "label": "Cryptographic Primitive"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:cryptographic-primitive",
+      "label": "Cryptographic Primitive"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"},
-      {"@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography", "label": "Public-Key Cryptography"},
-      {"@id": "urn:ngm:class:hash-function", "label": "Hash Function"}
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "@id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public-Key Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:key-management", "label": "Key Management"}
+      {
+        "@id": "urn:ngm:class:key-management",
+        "label": "Key Management"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:cryptographic-protocol", "label": "Cryptographic Protocol"}
+      {
+        "@id": "urn:ngm:class:cryptographic-protocol",
+        "label": "Cryptographic Protocol"
+      }
     ]
   },
   "quality": 0.8

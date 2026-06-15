@@ -1,0 +1,122 @@
+{
+  "id": "urn:visionflow:page:formative-assessment",
+  "title": "Formative Assessment",
+  "slug": "formative-assessment",
+  "public": true,
+  "classIri": "urn:ngm:class:formative-assessment",
+  "domain": "spatial-computing",
+  "definition": "Formative assessment is an ongoing, low-stakes evaluation practice used by educators and learners to monitor understanding and progress during the learning process rather than at its conclusion, with the explicit purpose of informing instructional adjustments and learner self-regulation. Unlike summative assessment, formative assessment results are used to guide immediate pedagogical decisions \u2014 providing feedback, identifying misconceptions, and adapting content difficulty \u2014 rather than to assign grades or certifications. In spatial computing and XR learning environments, formative assessment can be embedded invisibly in simulation tasks, analysing performance traces in real time.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:spatial-computing",
+      "label": "Spatial Computing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:performance-trace",
+        "label": "Performance Trace"
+      },
+      {
+        "id": "urn:ngm:class:diagnostic-feedback",
+        "label": "Diagnostic Feedback"
+      },
+      {
+        "id": "urn:ngm:class:learning-objective",
+        "label": "Learning Objective"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:adaptive-learning",
+        "label": "Adaptive Learning"
+      },
+      {
+        "id": "urn:ngm:class:personalised-education",
+        "label": "Personalised Education"
+      },
+      {
+        "id": "urn:ngm:class:learning-analytics",
+        "label": "Learning Analytics"
+      },
+      {
+        "id": "urn:ngm:class:feedback-loop",
+        "label": "Feedback Loop"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:learning-management-system",
+        "label": "Learning Management System"
+      },
+      {
+        "id": "urn:ngm:class:data-analytics",
+        "label": "Data Analytics"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:summative-assessment",
+        "label": "Summative Assessment"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:learner-model",
+        "label": "Learner Model"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-tracing",
+        "label": "Knowledge Tracing"
+      },
+      {
+        "id": "urn:ngm:class:xapi",
+        "label": "Xapi"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:xr-training",
+        "label": "Xr Training"
+      },
+      {
+        "id": "urn:ngm:class:intelligent-tutoring-system",
+        "label": "Intelligent Tutoring System"
+      },
+      {
+        "id": "urn:ngm:class:competency-based-education",
+        "label": "Competency Based Education"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:xapi",
+        "label": "Xapi"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:educational-technology",
+        "label": "Educational Technology"
+      },
+      {
+        "id": "urn:ngm:class:simulation-based-learning",
+        "label": "Simulation Based Learning"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

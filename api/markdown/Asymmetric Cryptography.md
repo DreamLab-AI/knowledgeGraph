@@ -32,7 +32,7 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key",
+        "@id": "urn:ngm:class:public-key",
         "label": "Public Key"
       },
       {
@@ -60,7 +60,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
+        "@id": "urn:ngm:class:public-key-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {

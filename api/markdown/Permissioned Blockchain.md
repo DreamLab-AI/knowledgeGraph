@@ -195,7 +195,7 @@ alias:: BC-0029-permissioned-blockchain, BC-0429-permissioned-blockchain, Permis
         "label": "Cryptographic Hashing"
       },
       {
-        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
+        "@id": "urn:ngm:class:public-key-infrastructure",
         "label": "Public Key Infrastructure"
       }
     ],
@@ -211,7 +211,7 @@ alias:: BC-0029-permissioned-blockchain, BC-0429-permissioned-blockchain, Permis
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-blockchain",
+        "@id": "urn:ngm:class:public-blockchain",
         "label": "Public Blockchain"
       },
       {

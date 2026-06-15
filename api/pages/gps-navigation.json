@@ -1,0 +1,122 @@
+{
+  "id": "urn:visionflow:page:gps-navigation",
+  "title": "Gps Navigation",
+  "slug": "gps-navigation",
+  "public": true,
+  "classIri": "urn:ngm:class:gps-navigation",
+  "domain": "robotics",
+  "definition": "GPS navigation is the use of the Global Positioning System \u2014 a satellite-based radio navigation system operated by the United States government \u2014 to determine the precise position, velocity, and time of a receiver anywhere on or near Earth. A GPS receiver calculates its location by measuring the time of arrival of signals from at least four satellites and applying trilateration. It is widely used in autonomous robots, vehicles, aircraft, and mobile devices as a primary or complementary localisation sensor.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:robotics",
+      "label": "Robotics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:gnss-receiver",
+        "label": "Gnss Receiver"
+      },
+      {
+        "id": "urn:ngm:class:satellite-signal",
+        "label": "Satellite Signal"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:satellite-communication",
+        "label": "Satellite Communication"
+      },
+      {
+        "id": "urn:ngm:class:atomic-clock",
+        "label": "Atomic Clock"
+      },
+      {
+        "id": "urn:ngm:class:spectrum-allocation",
+        "label": "Spectrum Allocation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicle"
+      },
+      {
+        "id": "urn:ngm:class:drone-navigation",
+        "label": "Drone Navigation"
+      },
+      {
+        "id": "urn:ngm:class:geofencing",
+        "label": "Geofencing"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:inertial-navigation",
+        "label": "Inertial Navigation"
+      },
+      {
+        "id": "urn:ngm:class:visual-odometry",
+        "label": "Visual Odometry"
+      },
+      {
+        "id": "urn:ngm:class:lidar-slam",
+        "label": "Lidar Slam"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:trilateration",
+        "label": "Trilateration"
+      },
+      {
+        "id": "urn:ngm:class:kalman-filter",
+        "label": "Kalman Filter"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:robot-localisation",
+        "label": "Robot Localisation"
+      },
+      {
+        "id": "urn:ngm:class:fleet-management",
+        "label": "Fleet Management"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:gnss",
+        "label": "Gnss"
+      },
+      {
+        "id": "urn:ngm:class:dead-reckoning",
+        "label": "Dead Reckoning"
+      },
+      {
+        "id": "urn:ngm:class:real-time-kinematic",
+        "label": "Real-Time Kinematic"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "aerial-robot",
+      "label": "Aerial Robot"
+    }
+  ]
+}

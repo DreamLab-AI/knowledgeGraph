@@ -23,18 +23,38 @@ public:: true
   "definition": "A cryptographic library is a software package that implements cryptographic primitives and protocols — encryption, hashing, signing, key exchange, and random-number generation — behind a programming interface that application developers can use without reimplementing the underlying mathematics. Well-designed libraries such as OpenSSL, libsodium, BoringSSL, and the Rust RustCrypto suite emphasise constant-time implementations, safe defaults, and resistance to misuse. The correctness and side-channel resistance of these libraries is critical, since flaws propagate to every application that depends on them.",
   "domain": "security",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:cryptographic-protocol", "label": "Cryptographic Protocol"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:cryptographic-protocol",
+      "label": "Cryptographic Protocol"
+    }
+  ],
   "relations": {
     "implements": [
-      {"@id": "urn:ngm:class:encryption", "label": "Encryption"},
-      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"},
-      {"@id": "urn:ngm:class:hash-function", "label": "Hash Function"}
+      {
+        "@id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "@id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography", "label": "Public-Key Cryptography"}
+      {
+        "@id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public-Key Cryptography"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:key-management", "label": "Key Management"}
+      {
+        "@id": "urn:ngm:class:key-management",
+        "label": "Key Management"
+      }
     ]
   },
   "quality": 0.8

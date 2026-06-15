@@ -83,7 +83,7 @@ alias:: EllipticCurveCryptography
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
+        "@id": "urn:ngm:class:public-key-cryptography",
         "label": "Public Key Cryptography"
       }
     ],
@@ -125,7 +125,7 @@ alias:: EllipticCurveCryptography
         "label": "Private Key"
       },
       {
-        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key",
+        "@id": "urn:ngm:class:public-key",
         "label": "Public Key"
       }
     ],

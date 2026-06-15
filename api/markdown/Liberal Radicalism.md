@@ -23,14 +23,28 @@ public:: true
   "definition": "Liberal Radicalism (LR) is a mechanism-design framework, introduced by Buterin, Hitzig, and Weyl, for optimally funding public goods through a matching scheme in which contributions are pooled and the matching amount allocated to each project grows with the square of the sum of the square roots of individual contributions. This mathematical structure rewards the breadth of support — the number of distinct contributors — over the concentration of large donations, aligning funding with collective preference. It is the theoretical basis for quadratic funding as deployed in real-world grants programmes.",
   "domain": "governance",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:mechanism-design", "label": "Mechanism Design"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:mechanism-design",
+      "label": "Mechanism Design"
+    }
+  ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:quadratic-funding", "label": "Quadratic Funding"},
-      {"@id": "urn:ngm:class:knowledge-graph-publication-classifier-goods-funding", "label": "Public Goods Funding"}
+      {
+        "@id": "urn:ngm:class:quadratic-funding",
+        "label": "Quadratic Funding"
+      },
+      {
+        "@id": "urn:ngm:class:public-goods-funding",
+        "label": "Public Goods Funding"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:quadratic-voting", "label": "Quadratic Voting"}
+      {
+        "@id": "urn:ngm:class:quadratic-voting",
+        "label": "Quadratic Voting"
+      }
     ]
   },
   "quality": 0.8

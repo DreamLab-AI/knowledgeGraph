@@ -935,7 +935,7 @@ alias:: BC-0457-decentralized-identifiers
         "label": "Key Management System"
       },
       {
-        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
+        "@id": "urn:ngm:class:public-key-cryptography",
         "label": "Public-Key Cryptography"
       },
       {

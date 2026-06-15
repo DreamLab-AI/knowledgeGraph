@@ -1,0 +1,131 @@
+{
+  "id": "urn:visionflow:page:two-way-peg",
+  "title": "Two Way Peg",
+  "slug": "two-way-peg",
+  "public": true,
+  "classIri": "urn:ngm:class:two-way-peg",
+  "domain": "blockchain",
+  "definition": "A two-way peg (2WP) is a blockchain mechanism that enables assets to be transferred bidirectionally between a parent chain and a sidechain, with the asset supply conserved across both chains. When an asset is locked on the parent chain, an equivalent representation is minted on the sidechain; when returned to the parent chain, the sidechain representation is burned and the original asset is unlocked. Two-way pegs are the foundational primitive for sidechain interoperability, enabling specialised execution environments whilst tethering their native asset to a more secure base layer.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:lock-and-mint",
+        "label": "Lock and Mint"
+      },
+      {
+        "id": "urn:ngm:class:burn-and-release",
+        "label": "Burn and Release"
+      },
+      {
+        "id": "urn:ngm:class:federation",
+        "label": "Federation"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-proof",
+        "label": "Cryptographic Proof"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:layer-2-scaling",
+        "label": "Layer 2 Scaling"
+      },
+      {
+        "id": "urn:ngm:class:cross-chain-interoperability",
+        "label": "Cross-Chain Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:sidechain",
+        "label": "Sidechain"
+      },
+      {
+        "id": "urn:ngm:class:cross-chain-bridge",
+        "label": "Cross-Chain Bridge"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:one-way-peg",
+        "label": "One Way Peg"
+      },
+      {
+        "id": "urn:ngm:class:wrapped-token",
+        "label": "Wrapped Token"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:threshold-signature",
+        "label": "Threshold Signature"
+      },
+      {
+        "id": "urn:ngm:class:merkle-proof",
+        "label": "Merkle Proof"
+      },
+      {
+        "id": "urn:ngm:class:spv-verification",
+        "label": "SPV Verification"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:atomic-swap",
+        "label": "Atomic Swap"
+      },
+      {
+        "id": "urn:ngm:class:optimistic-rollup",
+        "label": "Optimistic Rollup"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-rollup",
+        "label": "Zero Knowledge Rollup"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "layer2",
+      "label": "Layer2"
+    },
+    {
+      "slug": "lightning-and-similar-l2",
+      "label": "Lightning and Similar L2"
+    },
+    {
+      "slug": "sidechain",
+      "label": "Sidechain"
+    }
+  ]
+}

@@ -422,7 +422,7 @@ public:: true
         "label": "Ethereum Smart Contract Platform"
       },
       {
-        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-blockchain",
+        "@id": "urn:ngm:class:public-blockchain",
         "label": "Public Blockchain"
       },
       {

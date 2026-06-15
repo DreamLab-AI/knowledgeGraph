@@ -76,7 +76,7 @@ alias:: PublicBlockchain
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:knowledge-graph-publication-classifier-blockchain",
+  "@id": "urn:ngm:class:public-blockchain",
   "@type": "Class",
   "label": "Public Blockchain",
   "definition": "A permissionless, decentralised distributed ledger network in which any party may participate, validate transactions, and inspect the chain state without requiring authorisation. Public blockchains such as Bitcoin and Ethereum achieve censorship resistance and immutability through global state replication and open consensus mechanisms, at the cost of reduced transaction throughput and higher energy consumption relative to permissioned alternatives.",
@@ -125,7 +125,7 @@ alias:: PublicBlockchain
         "label": "Proof of Stake"
       },
       {
-        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
+        "@id": "urn:ngm:class:public-key-cryptography",
         "label": "Public Key Cryptography"
       }
     ],

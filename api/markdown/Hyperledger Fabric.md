@@ -137,7 +137,7 @@ alias:: BC-0067-hyperledger-fabric, BC-0426-hyperledger-fabric, HyperledgerFabri
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
+        "@id": "urn:ngm:class:public-key-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
@@ -191,7 +191,7 @@ alias:: BC-0067-hyperledger-fabric, BC-0426-hyperledger-fabric, HyperledgerFabri
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-blockchain",
+        "@id": "urn:ngm:class:public-blockchain",
         "label": "Public Blockchain"
       },
       {

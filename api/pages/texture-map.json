@@ -1,0 +1,128 @@
+{
+  "id": "urn:visionflow:page:texture-map",
+  "title": "Texture Map",
+  "slug": "texture-map",
+  "public": true,
+  "classIri": "urn:ngm:class:texture-map",
+  "domain": "spatial-computing",
+  "definition": "A Texture Map is a 2D image applied to the surface of a 3D model to add visual detail such as colour, roughness, normals, or emissive properties without increasing polygon count. Texture maps are indexed via UV coordinates that establish a correspondence between surface points and image pixels. They are a foundational component of real-time and offline rendering pipelines.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:spatial-computing",
+      "label": "Spatial Computing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:uv-mapping",
+        "label": "UV Mapping"
+      },
+      {
+        "id": "urn:ngm:class:mipmap",
+        "label": "Mipmap"
+      },
+      {
+        "id": "urn:ngm:class:normal-map",
+        "label": "Normal Map"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:uv-mapping",
+        "label": "UV Mapping"
+      },
+      {
+        "id": "urn:ngm:class:3d-model",
+        "label": "3D Model"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:physically-based-rendering",
+        "label": "Physically Based Rendering"
+      },
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:procedural-material",
+        "label": "Procedural Material"
+      },
+      {
+        "id": "urn:ngm:class:implicit-neural-representation",
+        "label": "Implicit Neural Representation"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:rasterisation",
+        "label": "Rasterisation"
+      },
+      {
+        "id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:xr",
+        "label": "XR"
+      },
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:gltf",
+        "label": "glTF"
+      },
+      {
+        "id": "urn:ngm:class:3d-asset-standard",
+        "label": "3D Asset Standard"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:3d-asset",
+        "label": "3D Asset"
+      },
+      {
+        "id": "urn:ngm:class:material",
+        "label": "Material"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:3d-content-creation",
+        "label": "3D Content Creation"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "3-d-scene-exchange-protocol-sxp",
+      "label": "3D Scene Exchange Protocol (SXP)"
+    }
+  ]
+}

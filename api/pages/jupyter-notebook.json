@@ -1,0 +1,115 @@
+{
+  "id": "urn:visionflow:page:jupyter-notebook",
+  "title": "Jupyter Notebook",
+  "slug": "jupyter-notebook",
+  "public": true,
+  "classIri": "urn:ngm:class:jupyter-notebook",
+  "domain": "artificial-intelligence",
+  "definition": "An open-source interactive computing document format and execution environment that combines live code cells, rich text narrative, mathematical equations, visualisations, and widgets in a single shareable document. Jupyter Notebooks execute code through kernels (most commonly IPython for Python), enabling iterative, exploratory data analysis with immediate output inline. The format is widely adopted across data science, machine learning research, and scientific computing communities as a primary medium for reproducible research and educational content.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:kernel",
+        "label": "Kernel"
+      },
+      {
+        "id": "urn:ngm:class:web-browser",
+        "label": "Web Browser"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:exploratory-data-analysis",
+        "label": "Exploratory Data Analysis"
+      },
+      {
+        "id": "urn:ngm:class:reproducible-research",
+        "label": "Reproducible Research"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-experimentation",
+        "label": "Machine Learning Experimentation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:integrated-development-environment",
+        "label": "Integrated Development Environment"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:python",
+        "label": "Python"
+      },
+      {
+        "id": "urn:ngm:class:interactive-computing",
+        "label": "Interactive Computing"
+      },
+      {
+        "id": "urn:ngm:class:data-visualisation",
+        "label": "Data Visualisation"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:collaboration",
+        "label": "Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:documentation",
+        "label": "Documentation"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:open-source",
+        "label": "Open Source"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:data",
+        "label": "Data"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:data-science",
+        "label": "Data Science"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning-framework",
+        "label": "Deep Learning Framework"
+      },
+      {
+        "id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "fast-ai",
+      "label": "fast.ai"
+    }
+  ]
+}

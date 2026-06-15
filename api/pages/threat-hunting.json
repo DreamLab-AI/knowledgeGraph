@@ -1,0 +1,118 @@
+{
+  "id": "urn:visionflow:page:threat-hunting",
+  "title": "Threat Hunting",
+  "slug": "threat-hunting",
+  "public": true,
+  "classIri": "urn:ngm:class:threat-hunting",
+  "domain": "security",
+  "definition": "Threat hunting is a proactive cybersecurity practice in which analysts iteratively search through networks, endpoints, and data repositories for hidden adversarial activity that has evaded automated detection. Unlike reactive incident response, threat hunting is hypothesis-driven, combining threat intelligence, behavioural analytics, and expert intuition to identify indicators of compromise or attack techniques before they manifest as confirmed incidents. The discipline reduces dwell time and surfaces novel attacker tradecraft for which signatures do not yet exist.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:security",
+      "label": "Security"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:hypothesis-generation",
+        "label": "Hypothesis Generation"
+      },
+      {
+        "id": "urn:ngm:class:indicator-of-compromise",
+        "label": "Indicator of Compromise"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:security-operations-centre",
+        "label": "Security Operations Centre"
+      },
+      {
+        "id": "urn:ngm:class:log-management",
+        "label": "Log Management"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:incident-response",
+        "label": "Incident Response"
+      },
+      {
+        "id": "urn:ngm:class:threat-intelligence",
+        "label": "Threat Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:cyber-resilience",
+        "label": "Cyber Resilience"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:threat-intelligence-platform",
+        "label": "Threat Intelligence Platform"
+      },
+      {
+        "id": "urn:ngm:class:network-traffic-analysis",
+        "label": "Network Traffic Analysis"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:security-information-and-event-management",
+        "label": "Security Information and Event Management"
+      },
+      {
+        "id": "urn:ngm:class:intrusion-detection-system",
+        "label": "Intrusion Detection System"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:behavioural-analytics",
+        "label": "Behavioural Analytics"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:endpoint-detection-and-response",
+        "label": "Endpoint Detection and Response"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:red-team",
+        "label": "Red Team"
+      },
+      {
+        "id": "urn:ngm:class:penetration-testing",
+        "label": "Penetration Testing"
+      },
+      {
+        "id": "urn:ngm:class:mitre-attack",
+        "label": "MITRE ATT&CK"
+      },
+      {
+        "id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

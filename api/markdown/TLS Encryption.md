@@ -48,7 +48,7 @@ public:: true
         "label": "Certificate Authority"
       },
       {
-        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
+        "@id": "urn:ngm:class:public-key-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
@@ -102,7 +102,7 @@ public:: true
     ],
     "dependsOn": [
       {
-        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
+        "@id": "urn:ngm:class:public-key-cryptography",
         "label": "Public Key Cryptography"
       },
       {

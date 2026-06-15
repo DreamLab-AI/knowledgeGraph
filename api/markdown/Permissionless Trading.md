@@ -72,7 +72,7 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-blockchain",
+        "@id": "urn:ngm:class:public-blockchain",
         "label": "Public Blockchain"
       },
       {

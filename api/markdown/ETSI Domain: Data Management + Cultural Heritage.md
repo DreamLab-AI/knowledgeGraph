@@ -146,7 +146,7 @@ public:: true
         "label": "Long-Term Preservation"
       },
       {
-        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-access",
+        "@id": "urn:ngm:class:public-access",
         "label": "Public Access"
       }
     ],

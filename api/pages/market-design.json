@@ -1,0 +1,128 @@
+{
+  "id": "urn:visionflow:page:market-design",
+  "title": "Market Design",
+  "slug": "market-design",
+  "public": true,
+  "classIri": "urn:ngm:class:market-design",
+  "domain": "governance",
+  "definition": "Market design is the applied economics discipline concerned with constructing, analysing, and improving the rules, mechanisms, and institutions that govern the exchange of goods, services, and assets in real-world markets. Drawing on game theory, mechanism design, and matching theory, market designers identify failures in existing markets \u2014 such as the absence of money in matching markets, thickness problems, or congestion \u2014 and engineer interventions that produce efficient, stable, and fair outcomes. Prominent applications include kidney exchange programmes, school choice systems, spectrum auctions, and electricity markets.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:governance",
+      "label": "Governance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:auction-mechanism",
+        "label": "Auction Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:clearing-mechanism",
+        "label": "Clearing Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:price-discovery",
+        "label": "Price Discovery"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:spectrum-allocation",
+        "label": "Spectrum Allocation"
+      },
+      {
+        "id": "urn:ngm:class:carbon-market",
+        "label": "Carbon Market"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-exchange",
+        "label": "Decentralised Exchange"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:information-theory",
+        "label": "Information Theory"
+      },
+      {
+        "id": "urn:ngm:class:behavioural-economics",
+        "label": "Behavioural Economics"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:central-planning",
+        "label": "Central Planning"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      },
+      {
+        "id": "urn:ngm:class:defi",
+        "label": "Defi"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:incentive-alignment",
+        "label": "Incentive Alignment"
+      },
+      {
+        "id": "urn:ngm:class:strategyproof-mechanism",
+        "label": "Strategyproof Mechanism"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:regulatory-framework",
+        "label": "Regulatory Framework"
+      },
+      {
+        "id": "urn:ngm:class:platform-economics",
+        "label": "Platform Economics"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:standards",
+        "label": "Standards"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:mechanism-design",
+        "label": "Mechanism Design"
+      },
+      {
+        "id": "urn:ngm:class:auction-theory",
+        "label": "Auction Theory"
+      },
+      {
+        "id": "urn:ngm:class:matching-theory",
+        "label": "Matching Theory"
+      },
+      {
+        "id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "economics",
+      "label": "Economics"
+    }
+  ]
+}

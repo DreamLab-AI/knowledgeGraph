@@ -23,20 +23,46 @@ public:: true
   "definition": "A Nostr Relay is a server that implements the Nostr protocol, accepting signed event objects from clients, storing them, and forwarding them to subscribed clients according to filter criteria. Relays are the infrastructure backbone of the Nostr decentralised social network: because there is no central server or consensus chain, the network's availability and censorship-resistance derive entirely from the federated mesh of independently operated relays. Relays communicate with clients over persistent WebSocket connections using a simple JSON message format.",
   "domain": "infrastructure",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:nostr-protocol", "label": "Nostr Protocol"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:nostr-protocol",
+      "label": "Nostr Protocol"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:nostr", "label": "Nostr"},
-      {"@id": "urn:ngm:class:relayer", "label": "Relayer"},
-      {"@id": "urn:ngm:class:federated-identity", "label": "Federated Identity"}
+      {
+        "@id": "urn:ngm:class:nostr",
+        "label": "Nostr"
+      },
+      {
+        "@id": "urn:ngm:class:relayer",
+        "label": "Relayer"
+      },
+      {
+        "@id": "urn:ngm:class:federated-identity",
+        "label": "Federated Identity"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:web-socket-protocol", "label": "WebSocket Protocol"},
-      {"@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography", "label": "Public-Key Cryptography"}
+      {
+        "@id": "urn:ngm:class:web-socket-protocol",
+        "label": "WebSocket Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public-Key Cryptography"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:decentralized-identity", "label": "Decentralized Identity"},
-      {"@id": "urn:ngm:class:did-nostr-identity", "label": "DID Nostr Identity"}
+      {
+        "@id": "urn:ngm:class:decentralized-identity",
+        "label": "Decentralized Identity"
+      },
+      {
+        "@id": "urn:ngm:class:did-nostr-identity",
+        "label": "DID Nostr Identity"
+      }
     ]
   },
   "quality": 0.8

@@ -25,7 +25,7 @@ public:: true
   "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
+      "@id": "urn:ngm:class:public-key-infrastructure",
       "label": "Public Key Infrastructure"
     }
   ],
@@ -76,7 +76,7 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
+        "@id": "urn:ngm:class:public-key-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
@@ -112,7 +112,7 @@ public:: true
         "label": "TLS 1.3"
       },
       {
-        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
+        "@id": "urn:ngm:class:public-key-cryptography",
         "label": "Public-Key Cryptography"
       }
     ],

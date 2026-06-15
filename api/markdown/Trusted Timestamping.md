@@ -23,15 +23,32 @@ public:: true
   "definition": "Trusted timestamping is the process of securely recording the time at which a piece of data existed, using a trusted third party that cryptographically binds a hash of the data to an authoritative time and signs the result. Standardised by RFC 3161, it produces a timestamp token that proves data integrity and existence-by-time without revealing the data, and is used in digital signatures, legal record-keeping, intellectual-property protection, and regulatory compliance. It establishes a verifiable temporal ordering that survives even after signing keys expire.",
   "domain": "security",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:timestamping-service", "label": "Timestamping Service"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:timestamping-service",
+      "label": "Timestamping Service"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:timestamp-authority", "label": "Timestamp Authority"},
-      {"@id": "urn:ngm:class:hash-function", "label": "Hash Function"},
-      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"}
+      {
+        "@id": "urn:ngm:class:timestamp-authority",
+        "label": "Timestamp Authority"
+      },
+      {
+        "@id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography", "label": "Public-Key Cryptography"}
+      {
+        "@id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public-Key Cryptography"
+      }
     ]
   },
   "quality": 0.8

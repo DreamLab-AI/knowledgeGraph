@@ -1,0 +1,111 @@
+{
+  "id": "urn:visionflow:page:error-handling",
+  "title": "Error Handling",
+  "slug": "error-handling",
+  "public": true,
+  "classIri": "urn:ngm:class:error-handling",
+  "domain": "infrastructure",
+  "definition": "Error Handling is the set of mechanisms, patterns, and strategies in software and systems design for detecting, reporting, and recovering from anomalous conditions that deviate from expected operation. It encompasses exception mechanisms, error codes, retry logic, circuit breakers, fallback strategies, and graceful degradation. Robust error handling is essential to system reliability, security, and maintainability, and is a prerequisite for fault-tolerant distributed systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:exception-handling",
+        "label": "Exception Handling"
+      },
+      {
+        "id": "urn:ngm:class:retry-logic",
+        "label": "Retry Logic"
+      },
+      {
+        "id": "urn:ngm:class:circuit-breaker",
+        "label": "Circuit Breaker"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:logging",
+        "label": "Logging"
+      },
+      {
+        "id": "urn:ngm:class:observability",
+        "label": "Observability"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:graceful-degradation",
+        "label": "Graceful Degradation"
+      },
+      {
+        "id": "urn:ngm:class:resilience",
+        "label": "Resilience"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:programming-language",
+        "label": "Programming Language"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:happy-path",
+        "label": "Happy Path"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
+    ],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:reliability",
+        "label": "Reliability"
+      },
+      {
+        "id": "urn:ngm:class:security",
+        "label": "Security"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:debugging",
+        "label": "Debugging"
+      },
+      {
+        "id": "urn:ngm:class:testing",
+        "label": "Testing"
+      },
+      {
+        "id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "data-pipeline",
+      "label": "Data Pipeline"
+    }
+  ]
+}

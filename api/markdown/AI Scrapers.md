@@ -376,10 +376,6 @@ public:: true
         "label": "Network Connectivity"
       },
       {
-        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-web-content",
-        "label": "Public Web Content"
-      },
-      {
         "@id": "urn:ngm:class:storage-pipeline",
         "label": "Storage Pipeline"
       },
@@ -533,7 +529,10 @@ public:: true
       }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:ai-infrastructure", "label": "AI Infrastructure"}
+      {
+        "@id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
+      }
     ]
   },
   "quality": 0.52,

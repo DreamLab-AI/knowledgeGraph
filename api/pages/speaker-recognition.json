@@ -1,0 +1,115 @@
+{
+  "id": "urn:visionflow:page:speaker-recognition",
+  "title": "Speaker Recognition",
+  "slug": "speaker-recognition",
+  "public": true,
+  "classIri": "urn:ngm:class:speaker-recognition",
+  "domain": "ai",
+  "definition": "The automated identification or verification of a person's identity based on characteristics of their voice derived from acoustic speech signals. Speaker recognition encompasses two sub-tasks: speaker verification (confirming a claimed identity) and speaker identification (determining who among a set of known speakers produced a given utterance). Systems extract speaker-discriminative features such as MFCCs, i-vectors, or x-vectors from audio, then compare these against enrolled speaker models using distance metrics or neural classifiers. It is distinct from speech recognition, which transcribes words rather than identifies speakers.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai",
+      "label": "AI"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:speaker-embedding",
+        "label": "Speaker Embedding"
+      },
+      {
+        "id": "urn:ngm:class:speaker-model",
+        "label": "Speaker Model"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:audio-processing",
+        "label": "Audio Processing"
+      },
+      {
+        "id": "urn:ngm:class:voice-activity-detection",
+        "label": "Voice Activity Detection"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:biometric-authentication",
+        "label": "Biometric Authentication"
+      },
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
+      },
+      {
+        "id": "urn:ngm:class:voice-activity-detection",
+        "label": "Voice Activity Detection"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:feature-extraction",
+        "label": "Feature Extraction"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:security",
+        "label": "Security"
+      },
+      {
+        "id": "urn:ngm:class:personalisation",
+        "label": "Personalisation"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:speech-processing",
+        "label": "Speech Processing"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:biometric-authentication",
+        "label": "Biometric Authentication"
+      },
+      {
+        "id": "urn:ngm:class:voice-assistant",
+        "label": "Voice Assistant"
+      },
+      {
+        "id": "urn:ngm:class:speaker-diarisation",
+        "label": "Speaker Diarisation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

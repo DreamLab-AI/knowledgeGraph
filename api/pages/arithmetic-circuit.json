@@ -1,0 +1,108 @@
+{
+  "id": "urn:visionflow:page:arithmetic-circuit",
+  "title": "Arithmetic Circuit",
+  "slug": "arithmetic-circuit",
+  "public": true,
+  "classIri": "urn:ngm:class:arithmetic-circuit",
+  "domain": "security",
+  "definition": "A directed acyclic graph (DAG) of addition and multiplication gates over a field, used to represent polynomial computations in a form amenable to cryptographic proof systems. Arithmetic circuits are the canonical intermediate representation for zero-knowledge proof schemes such as zk-SNARKs and STARKs: a computation is first expressed as an arithmetic circuit, then compiled into a system of polynomial constraints (R1CS or Plonkish), and finally proved using a cryptographic proving system. The complexity of a circuit is characterised by its depth (for parallelism) and size (gate count).",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:security",
+      "label": "Security"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:logic-gate",
+        "label": "Logic Gate"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:finite-field-arithmetic",
+        "label": "Finite Field Arithmetic"
+      },
+      {
+        "id": "urn:ngm:class:polynomial-commitment",
+        "label": "Polynomial Commitment"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:zk-snark",
+        "label": "zk-SNARK"
+      },
+      {
+        "id": "urn:ngm:class:zk-stark",
+        "label": "zk-STARK"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-computation",
+        "label": "Verifiable Computation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:cryptographic-protocol",
+        "label": "Cryptographic Protocol"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:boolean-circuit",
+        "label": "Boolean Circuit"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:constraint-system",
+        "label": "Constraint System"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:privacy-preserving-computation",
+        "label": "Privacy-Preserving Computation"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:boolean-circuit",
+        "label": "Boolean Circuit"
+      },
+      {
+        "id": "urn:ngm:class:homomorphic-encryption",
+        "label": "Homomorphic Encryption"
+      },
+      {
+        "id": "urn:ngm:class:secure-multi-party-computation",
+        "label": "Secure Multi-Party Computation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

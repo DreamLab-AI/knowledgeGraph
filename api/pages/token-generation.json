@@ -1,0 +1,109 @@
+{
+  "id": "urn:visionflow:page:token-generation",
+  "title": "Token Generation",
+  "slug": "token-generation",
+  "public": true,
+  "classIri": "urn:ngm:class:token-generation",
+  "domain": "artificial-intelligence",
+  "definition": "Token generation is the autoregressive process by which a language model produces output tokens one at a time, sampling from a probability distribution over the vocabulary conditioned on the input context and all previously generated tokens. Each forward pass through the model produces logits over the vocabulary; a sampling strategy \u2014 greedy decoding, temperature sampling, top-k, or nucleus sampling \u2014 selects the next token, which is appended to the context for the subsequent step. Token generation is the primary inference workload of large language models and determines output quality, latency, and throughput.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:logit-computation",
+        "label": "Logit Computation"
+      },
+      {
+        "id": "urn:ngm:class:decoding-algorithm",
+        "label": "Decoding Algorithm"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:conversational-ai",
+        "label": "Conversational Ai"
+      },
+      {
+        "id": "urn:ngm:class:ai-agent",
+        "label": "Ai Agent"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "id": "urn:ngm:class:tokenisation",
+        "label": "Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:gpu-acceleration",
+        "label": "Gpu Acceleration"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:encoder-model",
+        "label": "Encoder Model"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:autoregressive-model",
+        "label": "Autoregressive Model"
+      },
+      {
+        "id": "urn:ngm:class:sampling-strategy",
+        "label": "Sampling Strategy"
+      },
+      {
+        "id": "urn:ngm:class:kv-cache",
+        "label": "Kv Cache"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:text-generation",
+        "label": "Text Generation"
+      },
+      {
+        "id": "urn:ngm:class:code-generation",
+        "label": "Code Generation"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:inference-engine",
+        "label": "Inference Engine"
+      },
+      {
+        "id": "urn:ngm:class:dynamic-batching",
+        "label": "Dynamic Batching"
+      },
+      {
+        "id": "urn:ngm:class:speculative-decoding",
+        "label": "Speculative Decoding"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}
