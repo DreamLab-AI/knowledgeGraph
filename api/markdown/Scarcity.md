@@ -2,11 +2,11 @@ public:: true
 
 # Scarcity
 
-```json
+```json-ld
 {"@context": "https://narrativegoldmine.com/ns/v1", "@id": "urn:visionflow:page:scarcity", "@type": "Page", "title": "Scarcity", "vc:slug": "scarcity", "vc:public": true, "vc:schemaVersion": 2, "vc:outboundWikilinks": []}
 ```
 
-```json
+```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
   "@id": "urn:ngm:class:scarcity",

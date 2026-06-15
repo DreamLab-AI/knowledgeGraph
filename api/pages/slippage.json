@@ -1,0 +1,95 @@
+{
+  "id": "urn:visionflow:page:slippage",
+  "title": "Slippage",
+  "slug": "slippage",
+  "public": true,
+  "classIri": "urn:ngm:class:slippage",
+  "domain": "blockchain",
+  "definition": "Slippage is the difference between the expected price of a trade and the price at which it actually executes, arising from price movement and limited liquidity between order submission and settlement. On automated-market-maker decentralised exchanges slippage is a direct function of trade size relative to pool depth, and traders set a slippage tolerance to bound acceptable execution price. Excessive slippage can be exploited through front-running and other maximal-extractable-value strategies.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:decentralized-exchange",
+      "label": "Decentralized Exchange"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:trade-execution",
+        "label": "Trade Execution"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:mev",
+        "label": "MEV"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:liquidity",
+        "label": "Liquidity"
+      },
+      {
+        "id": "urn:ngm:class:liquidity-pool",
+        "label": "Liquidity Pool"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:liquidity",
+        "label": "Liquidity"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:market-microstructure",
+        "label": "Market Microstructure"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:order-book",
+        "label": "Order Book"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:market-maker",
+        "label": "Market Maker"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:trade-execution",
+        "label": "Trade Execution"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:decentralized-exchange",
+        "label": "Decentralized Exchange"
+      },
+      {
+        "id": "urn:ngm:class:liquidity",
+        "label": "Liquidity"
+      },
+      {
+        "id": "urn:ngm:class:trade-execution",
+        "label": "Trade Execution"
+      },
+      {
+        "id": "urn:ngm:class:mev",
+        "label": "MEV"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

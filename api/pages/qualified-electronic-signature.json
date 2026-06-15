@@ -1,0 +1,112 @@
+{
+  "id": "urn:visionflow:page:qualified-electronic-signature",
+  "title": "Qualified Electronic Signature",
+  "slug": "qualified-electronic-signature",
+  "public": true,
+  "classIri": "urn:ngm:class:qualified-electronic-signature",
+  "domain": "security",
+  "definition": "A qualified electronic signature (QES) is the highest-assurance class of electronic signature defined by the European Union's eIDAS regulation, created with a qualified signature-creation device and backed by a qualified certificate issued by an accredited trust service provider. It is legally equivalent to a handwritten signature across the EU and provides strong guarantees of signer identity and document integrity. QES underpins cross-border legal acts requiring the highest evidentiary weight.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:electronic-signature",
+      "label": "Electronic Signature"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:biometric-authentication",
+        "label": "Biometric Authentication"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:certificate-authority",
+        "label": "Certificate Authority"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:eidas-regulation",
+        "label": "eIDAS Regulation"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:electronic-signature",
+        "label": "Electronic Signature"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:eidas-regulation",
+        "label": "eIDAS Regulation"
+      },
+      {
+        "id": "urn:ngm:class:electronic-signature",
+        "label": "Electronic Signature"
+      },
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

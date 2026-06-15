@@ -2,11 +2,11 @@ public:: true
 
 # Canary Deployment
 
-```json
+```json-ld
 {"@context": "https://narrativegoldmine.com/ns/v1", "@id": "urn:visionflow:page:canary-deployment", "@type": "Page", "title": "Canary Deployment", "vc:slug": "canary-deployment", "vc:public": true, "vc:schemaVersion": 2, "vc:outboundWikilinks": []}
 ```
 
-```json
+```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
   "@id": "urn:ngm:class:canary-deployment",

@@ -2,11 +2,11 @@ public:: true
 
 # Capital Efficiency
 
-```json
+```json-ld
 {"@context": "https://narrativegoldmine.com/ns/v1", "@id": "urn:visionflow:page:capital-efficiency", "@type": "Page", "title": "Capital Efficiency", "vc:slug": "capital-efficiency", "vc:public": true, "vc:schemaVersion": 2, "vc:outboundWikilinks": []}
 ```
 
-```json
+```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
   "@id": "urn:ngm:class:capital-efficiency",

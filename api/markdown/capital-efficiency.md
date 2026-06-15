@@ -1,0 +1,37 @@
+- ### Definition
+  - Capital efficiency is the degree to which deployed capital is put to productive use to generate returns or provide a service, maximising output per unit of locked or committed funds. In decentralised finance it describes designs such as concentrated liquidity and over-collateralisation tuning that let liquidity providers and protocols achieve more depth or yield from less capital. Higher capital efficiency reduces idle assets and lowers the cost of providing liquidity and credit.
+  - Related concepts: [[Decentralised Finance]], [[Liquidity]], [[Liquidity Pool]], [[Market Maker]], [[Trade Execution]], [[Collateral]]
+- ### Overview
+  - Capital efficiency is a defining design goal of modern decentralised-finance protocols. Concentrated-liquidity automated market makers, isolated lending markets and dynamic collateral models all seek to extract more useful liquidity and yield from each unit of capital, at the cost of added complexity and risk.
+- ### Key aspects
+  - Concentrating liquidity within active price ranges
+  - Collateralisation ratios that balance safety and utilisation
+  - Yield generation per unit of locked value
+  - The trade-off between efficiency and risk exposure
+- ### Applications
+  - Concentrated-liquidity automated market makers
+  - Lending-protocol collateral optimisation
+  - Yield-strategy and vault design
+  - Treasury and balance-sheet management
+- ### Relationships
+  - subClassOf:: [[Decentralised Finance]]
+  - partOf:: [[Decentralised Finance]]
+  - enables:: [[Liquidity]]
+  - enables:: [[Liquidity Pool]]
+  - supports:: [[Market Maker]]
+  - supports:: [[Trade Execution]]
+  - requires:: [[Liquidity]]
+  - requires:: [[Collateral]]
+  - uses:: [[Decentralized Exchange]]
+  - dependsOn:: [[Liquidity Pool]]
+  - relatedTo:: [[Decentralised Finance]]
+  - relatedTo:: [[Liquidity]]
+  - relatedTo:: [[Risk Management]]
+  - relatedTo:: [[Collateral]]
+  - contrastsWith:: [[Risk Management]]
+  - bridgesTo:: [[Market Microstructure]]
+- ### Provenance
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation
+  - generatedAt:: 2026-06-15T00:00:00Z
+  - updated:: 2026-06-15

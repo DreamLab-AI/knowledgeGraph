@@ -496,6 +496,11 @@
       "qualityScore": 0.72
     },
     {
+      "slug": "corporate-sustainability-reporting-directive",
+      "title": "Corporate Sustainability Reporting Directive",
+      "qualityScore": 0.62
+    },
+    {
       "slug": "corporate-sustainability-reporting",
       "title": "Corporate Sustainability Reporting",
       "qualityScore": 0.62
@@ -3206,6 +3211,11 @@
       "slug": "canaan",
       "title": "Canaan",
       "qualityScore": 0.6
+    },
+    {
+      "slug": "capital-efficiency",
+      "title": "Capital Efficiency",
+      "qualityScore": 0.62
     },
     {
       "slug": "carbon-credit-token",
@@ -6383,6 +6393,11 @@
       "qualityScore": 0.6
     },
     {
+      "slug": "proof-of-personhood",
+      "title": "Proof Of Personhood",
+      "qualityScore": 0.62
+    },
+    {
       "slug": "proof-of-reserve",
       "title": "Proof Of Reserve",
       "qualityScore": 0.62
@@ -6941,6 +6956,11 @@
       "slug": "slashing",
       "title": "Slashing",
       "qualityScore": 0.75
+    },
+    {
+      "slug": "slippage",
+      "title": "Slippage",
+      "qualityScore": 0.62
     },
     {
       "slug": "smart-contract-audit",
@@ -18209,6 +18229,11 @@
       "qualityScore": 0.0
     },
     {
+      "slug": "image-captioning",
+      "title": "Image Captioning",
+      "qualityScore": 0.62
+    },
+    {
       "slug": "image-editing",
       "title": "Image Editing",
       "qualityScore": 0.8
@@ -21451,6 +21476,11 @@
       "qualityScore": 0.74
     },
     {
+      "slug": "control-loop",
+      "title": "Control Loop",
+      "qualityScore": 0.62
+    },
+    {
       "slug": "convergence-concept",
       "title": "Convergence Concept",
       "qualityScore": 0.0
@@ -21524,6 +21554,11 @@
       "slug": "cryptography-security-and-privacy",
       "title": "Cryptography Security and Privacy",
       "qualityScore": 0.52
+    },
+    {
+      "slug": "css",
+      "title": "Css",
+      "qualityScore": 0.62
     },
     {
       "slug": "curated-research-link-repository",
@@ -30134,6 +30169,11 @@
       "qualityScore": 0.72
     },
     {
+      "slug": "digital-onboarding",
+      "title": "Digital Onboarding",
+      "qualityScore": 0.62
+    },
+    {
       "slug": "digital-signature-verification",
       "title": "Digital Signature Verification",
       "qualityScore": 0.72
@@ -30266,6 +30306,11 @@
     {
       "slug": "firewall",
       "title": "Firewall",
+      "qualityScore": 0.62
+    },
+    {
+      "slug": "forensic-analysis",
+      "title": "Forensic Analysis",
       "qualityScore": 0.62
     },
     {
@@ -30872,6 +30917,11 @@
       "slug": "public-key-cryptography",
       "title": "Public-Key Cryptography",
       "qualityScore": 0.75
+    },
+    {
+      "slug": "qualified-electronic-signature",
+      "title": "Qualified Electronic Signature",
+      "qualityScore": 0.62
     },
     {
       "slug": "quantum-cryptography",
@@ -32546,6 +32596,11 @@
       "qualityScore": 0.72
     },
     {
+      "slug": "scarcity",
+      "title": "Scarcity",
+      "qualityScore": 0.62
+    },
+    {
       "slug": "secondary-market",
       "title": "Secondary Market",
       "qualityScore": 0.62
@@ -33512,6 +33567,11 @@
     {
       "slug": "calculus",
       "title": "Calculus",
+      "qualityScore": 0.62
+    },
+    {
+      "slug": "canary-deployment",
+      "title": "Canary Deployment",
       "qualityScore": 0.62
     },
     {

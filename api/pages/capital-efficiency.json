@@ -1,0 +1,108 @@
+{
+  "id": "urn:visionflow:page:capital-efficiency",
+  "title": "Capital Efficiency",
+  "slug": "capital-efficiency",
+  "public": true,
+  "classIri": "urn:ngm:class:capital-efficiency",
+  "domain": "blockchain",
+  "definition": "Capital efficiency is the degree to which deployed capital is put to productive use to generate returns or provide a service, maximising output per unit of locked or committed funds. In decentralised finance it describes designs such as concentrated liquidity and over-collateralisation tuning that let liquidity providers and protocols achieve more depth or yield from less capital. Higher capital efficiency reduces idle assets and lowers the cost of providing liquidity and credit.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:decentralised-finance",
+      "label": "Decentralised Finance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:liquidity",
+        "label": "Liquidity"
+      },
+      {
+        "id": "urn:ngm:class:collateral",
+        "label": "Collateral"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:liquidity",
+        "label": "Liquidity"
+      },
+      {
+        "id": "urn:ngm:class:liquidity-pool",
+        "label": "Liquidity Pool"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:liquidity-pool",
+        "label": "Liquidity Pool"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:market-microstructure",
+        "label": "Market Microstructure"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:decentralized-exchange",
+        "label": "Decentralized Exchange"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:market-maker",
+        "label": "Market Maker"
+      },
+      {
+        "id": "urn:ngm:class:trade-execution",
+        "label": "Trade Execution"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:liquidity",
+        "label": "Liquidity"
+      },
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:collateral",
+        "label": "Collateral"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "liquidity-provision",
+      "label": "Liquidity Provision"
+    }
+  ]
+}

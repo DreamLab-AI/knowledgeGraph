@@ -1,0 +1,112 @@
+{
+  "id": "urn:visionflow:page:canary-deployment",
+  "title": "Canary Deployment",
+  "slug": "canary-deployment",
+  "public": true,
+  "classIri": "urn:ngm:class:canary-deployment",
+  "domain": "machine-learning",
+  "definition": "Canary deployment is a progressive release strategy in which a new version of a service or model is exposed to a small subset of traffic before being rolled out more widely. Operators monitor health, performance and quality metrics on the canary cohort, promoting the release only if it behaves acceptably and otherwise rolling back. It limits the blast radius of a faulty change and is widely used in continuous delivery pipelines and in serving machine-learning models.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:continuous-deployment",
+      "label": "Continuous Deployment"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:observability",
+        "label": "Observability"
+      },
+      {
+        "id": "urn:ngm:class:a-b-testing",
+        "label": "A/B Testing"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:observability",
+        "label": "Observability"
+      },
+      {
+        "id": "urn:ngm:class:continuous-integration",
+        "label": "Continuous Integration"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:continuous-deployment",
+        "label": "Continuous Deployment"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:ci-cd",
+        "label": "CI/CD"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:continuous-deployment",
+        "label": "Continuous Deployment"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:a-b-testing",
+        "label": "A/B Testing"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
+      },
+      {
+        "id": "urn:ngm:class:observability",
+        "label": "Observability"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:site-reliability-engineering",
+        "label": "Site Reliability Engineering"
+      },
+      {
+        "id": "urn:ngm:class:devops",
+        "label": "DevOps"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:continuous-deployment",
+        "label": "Continuous Deployment"
+      },
+      {
+        "id": "urn:ngm:class:ci-cd",
+        "label": "CI/CD"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:a-b-testing",
+        "label": "A/B Testing"
+      },
+      {
+        "id": "urn:ngm:class:devops",
+        "label": "DevOps"
+      },
+      {
+        "id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

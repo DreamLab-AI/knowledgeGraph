@@ -1,0 +1,100 @@
+{
+  "id": "urn:visionflow:page:css",
+  "title": "Css",
+  "slug": "css",
+  "public": true,
+  "classIri": "urn:ngm:class:css",
+  "domain": "infrastructure",
+  "definition": "Cascading Style Sheets (CSS) is the standard language for describing the presentation of documents written in markup languages such as HTML, controlling layout, colour, typography and responsive behaviour. It separates content from presentation, with rules that cascade and inherit according to specificity and source order. Maintained as a family of W3C specifications, CSS is a foundational web technology alongside HTML and JavaScript.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:web-standard",
+      "label": "Web Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:html",
+        "label": "HTML"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:html",
+        "label": "HTML"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:html",
+        "label": "HTML"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:web-standard",
+        "label": "Web Standard"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:w3c",
+        "label": "W3C"
+      },
+      {
+        "id": "urn:ngm:class:web-standard",
+        "label": "Web Standard"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:web-standard",
+        "label": "Web Standard"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:html",
+        "label": "HTML"
+      },
+      {
+        "id": "urn:ngm:class:web-standard",
+        "label": "Web Standard"
+      },
+      {
+        "id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
+      },
+      {
+        "id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

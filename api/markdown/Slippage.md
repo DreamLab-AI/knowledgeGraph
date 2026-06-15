@@ -2,11 +2,11 @@ public:: true
 
 # Slippage
 
-```json
+```json-ld
 {"@context": "https://narrativegoldmine.com/ns/v1", "@id": "urn:visionflow:page:slippage", "@type": "Page", "title": "Slippage", "vc:slug": "slippage", "vc:public": true, "vc:schemaVersion": 2, "vc:outboundWikilinks": []}
 ```
 
-```json
+```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
   "@id": "urn:ngm:class:slippage",

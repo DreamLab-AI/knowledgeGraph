@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:scarcity",
+  "title": "Scarcity",
+  "slug": "scarcity",
+  "public": true,
+  "classIri": "urn:ngm:class:scarcity",
+  "domain": "finance",
+  "definition": "Scarcity is the economic condition in which a resource is limited relative to demand for it, giving rise to value, price and the need for allocation choices. In monetary and token economics scarcity is often engineered through fixed or capped supply, issuance schedules or burning mechanisms to support a store-of-value proposition. It is the foundational premise from which supply-and-demand pricing dynamics emerge.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:monetary-policy",
+      "label": "Monetary Policy"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:inflation",
+        "label": "Inflation"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:monetary-policy",
+        "label": "Monetary Policy"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:market-microstructure",
+        "label": "Market Microstructure"
+      },
+      {
+        "id": "urn:ngm:class:liquidity",
+        "label": "Liquidity"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:monetary-policy",
+        "label": "Monetary Policy"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:inflation",
+        "label": "Inflation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      }
+    ],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:market-maker",
+        "label": "Market Maker"
+      },
+      {
+        "id": "urn:ngm:class:collateral",
+        "label": "Collateral"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:monetary-policy",
+        "label": "Monetary Policy"
+      },
+      {
+        "id": "urn:ngm:class:token",
+        "label": "Token"
+      },
+      {
+        "id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

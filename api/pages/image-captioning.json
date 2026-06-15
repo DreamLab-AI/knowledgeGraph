@@ -1,0 +1,112 @@
+{
+  "id": "urn:visionflow:page:image-captioning",
+  "title": "Image Captioning",
+  "slug": "image-captioning",
+  "public": true,
+  "classIri": "urn:ngm:class:image-captioning",
+  "domain": "artificial-intelligence",
+  "definition": "Image captioning is the artificial-intelligence task of generating a natural-language description of the content of an image. It sits at the intersection of computer vision and natural-language generation, typically pairing a visual encoder that extracts image features with a language decoder that produces a fluent sentence. Modern systems use attention mechanisms and large vision-language models to ground the generated text in salient regions of the image.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:computer-vision",
+      "label": "Computer Vision"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      },
+      {
+        "id": "urn:ngm:class:scene-understanding",
+        "label": "Scene Understanding"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:object-detection",
+        "label": "Object Detection"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:object-detection",
+        "label": "Object Detection"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:object-detection",
+        "label": "Object Detection"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:scene-understanding",
+        "label": "Scene Understanding"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

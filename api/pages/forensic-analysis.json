@@ -1,0 +1,117 @@
+{
+  "id": "urn:visionflow:page:forensic-analysis",
+  "title": "Forensic Analysis",
+  "slug": "forensic-analysis",
+  "public": true,
+  "classIri": "urn:ngm:class:forensic-analysis",
+  "domain": "security",
+  "definition": "Forensic analysis is the disciplined investigation of digital systems and data to reconstruct events, attribute actions and preserve evidence to an evidentiary standard. In security it follows an incident to determine how a breach occurred, what was affected and who was responsible, maintaining a defensible chain of custody throughout. It draws on log analysis, memory and disk examination, and timeline reconstruction.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:incident-response",
+      "label": "Incident Response"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      },
+      {
+        "id": "urn:ngm:class:incident-response",
+        "label": "Incident Response"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:root-cause-analysis",
+        "label": "Root Cause Analysis"
+      },
+      {
+        "id": "urn:ngm:class:threat-detection",
+        "label": "Threat Detection"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:incident-response",
+        "label": "Incident Response"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:threat-detection",
+        "label": "Threat Detection"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:root-cause-analysis",
+        "label": "Root Cause Analysis"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      },
+      {
+        "id": "urn:ngm:class:siem",
+        "label": "SIEM"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      },
+      {
+        "id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:incident-response",
+        "label": "Incident Response"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      },
+      {
+        "id": "urn:ngm:class:threat-detection",
+        "label": "Threat Detection"
+      },
+      {
+        "id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      },
+      {
+        "id": "urn:ngm:class:root-cause-analysis",
+        "label": "Root Cause Analysis"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "audit-trail",
+      "label": "Audit Trail"
+    }
+  ]
+}

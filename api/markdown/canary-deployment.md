@@ -1,0 +1,39 @@
+- ### Definition
+  - Canary deployment is a progressive release strategy in which a new version of a service or model is exposed to a small subset of traffic before being rolled out more widely. Operators monitor health, performance and quality metrics on the canary cohort, promoting the release only if it behaves acceptably and otherwise rolling back. It limits the blast radius of a faulty change and is widely used in continuous delivery pipelines and in serving machine-learning models.
+  - Related concepts: [[Continuous Deployment]], [[CI/CD]], [[Observability]], [[A/B Testing]], [[Continuous Integration]], [[Site Reliability Engineering]]
+- ### Overview
+  - The term borrows from the canary in a coal mine: the small exposed cohort acts as an early-warning sensor for problems. Canary deployment is a cornerstone of progressive delivery and is equally applicable to web services and to machine-learning model serving, where new model versions are shadowed or partially routed before full promotion.
+- ### Mechanisms
+  - Traffic splitting that routes a controlled percentage to the new version
+  - Metric collection on error rate, latency and business or model-quality signals
+  - Automated promotion or rollback gates based on those metrics
+  - Gradual ramp-up of canary traffic as confidence increases
+- ### Applications
+  - Rolling out web and microservice releases safely
+  - Promoting new machine-learning model versions in serving infrastructure
+  - Validating infrastructure or configuration changes
+  - Reducing incident impact in high-availability systems
+- ### Relationships
+  - subClassOf:: [[Continuous Deployment]]
+  - partOf:: [[Continuous Deployment]]
+  - partOf:: [[CI/CD]]
+  - hasPart:: [[Observability]]
+  - hasPart:: [[A/B Testing]]
+  - requires:: [[Observability]]
+  - requires:: [[Continuous Integration]]
+  - enables:: [[Continuous Deployment]]
+  - supports:: [[Site Reliability Engineering]]
+  - supports:: [[DevOps]]
+  - uses:: [[Kubernetes]]
+  - uses:: [[Observability]]
+  - dependsOn:: [[CI/CD]]
+  - implements:: [[Continuous Deployment]]
+  - relatedTo:: [[A/B Testing]]
+  - relatedTo:: [[DevOps]]
+  - relatedTo:: [[Kubernetes]]
+  - contrastsWith:: [[A/B Testing]]
+- ### Provenance
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation
+  - generatedAt:: 2026-06-15T00:00:00Z
+  - updated:: 2026-06-15

@@ -2,11 +2,11 @@ public:: true
 
 # Forensic Analysis
 
-```json
+```json-ld
 {"@context": "https://narrativegoldmine.com/ns/v1", "@id": "urn:visionflow:page:forensic-analysis", "@type": "Page", "title": "Forensic Analysis", "vc:slug": "forensic-analysis", "vc:public": true, "vc:schemaVersion": 2, "vc:outboundWikilinks": []}
 ```
 
-```json
+```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
   "@id": "urn:ngm:class:forensic-analysis",

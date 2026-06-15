@@ -2,11 +2,11 @@ public:: true
 
 # Digital Onboarding
 
-```json
+```json-ld
 {"@context": "https://narrativegoldmine.com/ns/v1", "@id": "urn:visionflow:page:digital-onboarding", "@type": "Page", "title": "Digital Onboarding", "vc:slug": "digital-onboarding", "vc:public": true, "vc:schemaVersion": 2, "vc:outboundWikilinks": []}
 ```
 
-```json
+```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
   "@id": "urn:ngm:class:digital-onboarding",

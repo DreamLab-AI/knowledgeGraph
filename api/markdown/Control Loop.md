@@ -2,11 +2,11 @@ public:: true
 
 # Control Loop
 
-```json
+```json-ld
 {"@context": "https://narrativegoldmine.com/ns/v1", "@id": "urn:visionflow:page:control-loop", "@type": "Page", "title": "Control Loop", "vc:slug": "control-loop", "vc:public": true, "vc:schemaVersion": 2, "vc:outboundWikilinks": []}
 ```
 
-```json
+```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
   "@id": "urn:ngm:class:control-loop",
